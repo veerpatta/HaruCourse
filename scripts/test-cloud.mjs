@@ -6,7 +6,9 @@ import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/
 
 // Integration tests intentionally run against local disposable data only.
 const base = "http://127.0.0.1:8787";
-const keys = JSON.parse(readFileSync(".test-secrets/access-keys.json", "utf8"));
+const keys = JSON.parse(
+  readFileSync(".test-secrets/login-credentials.json", "utf8"),
+);
 const checks = [];
 async function call(
   path,
@@ -23,8 +25,8 @@ async function call(
     redirect: "manual",
   });
 }
-async function signin(key) {
-  const r = await call("/api/login", { method: "POST", body: { key } });
+async function signin(credentials) {
+  const r = await call("/api/login", { method: "POST", body: credentials });
   assert.equal(r.status, 200, await r.clone().text());
   return r.headers.get("set-cookie").split(";")[0];
 }
@@ -32,6 +34,61 @@ const learner = await signin(keys.haru);
 const creator = await signin(keys.creator);
 assert.equal((await call("/api/progress")).status, 401);
 assert.equal((await call("/api/progress", { cookie: learner })).status, 200);
+const tester = await signin(keys.test);
+for (const username of ["haru", "itsme", "unknown"])
+  assert.equal(
+    (
+      await call("/api/login", {
+        method: "POST",
+        body: { username, password: "" },
+      })
+    ).status,
+    401,
+  );
+const testBefore = await (
+  await call("/api/progress", { cookie: tester })
+).json();
+const haruBefore = await (
+  await call("/api/progress", { cookie: learner })
+).json();
+assert.equal(
+  (
+    await call("/api/progress", {
+      method: "PUT",
+      cookie: tester,
+      body: {
+        expectedRevision: testBefore.revision,
+        record: {
+          version: 1,
+          notes: "Isolated test workspace",
+          submission: "",
+          minutes: 0,
+          status: "practicing",
+          updatedAt: "",
+        },
+      },
+    })
+  ).status,
+  200,
+);
+assert.deepEqual(
+  await (await call("/api/progress", { cookie: learner })).json(),
+  haruBefore,
+);
+assert.equal(
+  (
+    await call("/api/feedback", {
+      method: "POST",
+      cookie: tester,
+      body: { id: randomUUID(), revision: 1, body: "Cannot review Haru" },
+    })
+  ).status,
+  403,
+);
+await call("/api/logout", { method: "POST", cookie: tester });
+checks.push(
+  "password rejection, password-free test login, isolated test writes and denied creator access",
+);
 checks.push("login and unauthenticated record denial");
 let current = await (await call("/api/progress", { cookie: learner })).json();
 const record = {

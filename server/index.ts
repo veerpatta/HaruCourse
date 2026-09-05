@@ -13,6 +13,7 @@ import {
   saveFeedback,
 } from "./data";
 import {
+  credentialsSchema,
   bodyJson,
   cookie,
   cookieName,
@@ -69,7 +70,7 @@ async function authorize(request: Request, env: Env) {
     const csrf = token();
     // Bind the random form token to these exact OAuth parameters, preventing their substitution on POST.
     const bound = await hash(csrf + request.url);
-    const content = `<p><strong>${escapeHtml(client.clientName || "Unnamed AI client")}</strong> is requesting access to your course.</p><p class="muted">Client: ${escapeHtml(authRequest.clientId)}</p><ul><li>Read lessons, progress, work references, and feedback.</li>${scopes.includes("course:write") ? "<li>Save AI feedback. A learner connection can also update practice when requested.</li>" : ""}</ul><p>${user ? `Signed in as <strong>${escapeHtml(user.name)}</strong>.` : "Enter your private course access key. Your AI app will receive scoped tokens, never this key."}</p><form method="post" action="${escapeHtml(new URL(request.url).pathname + new URL(request.url).search)}"><input type="hidden" name="csrf" value="${csrf}">${user ? "" : '<label for="key">Course access key</label><input id="key" name="key" type="password" autocomplete="off" required maxlength="128">'}<button name="decision" value="allow">Allow these permissions</button><button class="secondary" name="decision" value="deny" formnovalidate>Cancel</button></form><p class="muted">You can revoke AI connections from the course app. AI critique remains distinct from a creator assessment.</p>`;
+    const content = `<p><strong>${escapeHtml(client.clientName || "Unnamed AI client")}</strong> is requesting access to your course.</p><p class="muted">Client: ${escapeHtml(authRequest.clientId)}</p><ul><li>Read lessons, progress, work references, and feedback.</li>${scopes.includes("course:write") ? "<li>Save AI feedback. A learner connection can also update practice when requested.</li>" : ""}</ul><p>${user ? `Signed in as <strong>${escapeHtml(user.name)}</strong>.` : "Sign in with your course username and password. The test account needs no password."}</p><form method="post" action="${escapeHtml(new URL(request.url).pathname + new URL(request.url).search)}"><input type="hidden" name="csrf" value="${csrf}">${user ? "" : '<label for="username">Username</label><input id="username" name="username" autocomplete="username" required maxlength="40"><label for="password">Password (leave blank for test)</label><input id="password" name="password" type="password" autocomplete="current-password" maxlength="128">'}<button name="decision" value="allow">Allow these permissions</button><button class="secondary" name="decision" value="deny" formnovalidate>Cancel</button></form><p class="muted">You can revoke AI connections from the course app. AI critique remains distinct from a creator assessment.</p>`;
     return formPage("Connect your course", content, {
       "set-cookie": `${csrfName}=${bound}; HttpOnly; SameSite=Lax; Path=/; Max-Age=600${secure}`,
     });
@@ -100,7 +101,10 @@ async function authorize(request: Request, env: Env) {
     const signed = await login(
       request,
       env,
-      z.string().min(32).max(128).parse(form.get("key")),
+      credentialsSchema.parse({
+        username: form.get("username"),
+        password: form.get("password") || "",
+      }),
     );
     user = signed.user;
     sessionRaw = signed.raw;
@@ -129,11 +133,8 @@ const defaultHandler: ExportedHandler<Env> = {
       return json({ ok: true, version: "0.2.0" });
     if (path === "/api/login" && request.method === "POST") {
       sameOrigin(request);
-      const { key } = z
-        .object({ key: z.string().min(32).max(128) })
-        .strict()
-        .parse(await bodyJson(request));
-      const signed = await login(request, env, key);
+      const credentials = credentialsSchema.parse(await bodyJson(request));
+      const signed = await login(request, env, credentials);
       return json({ user: signed.user }, 200, {
         "set-cookie": cookie(request, signed.raw),
       });

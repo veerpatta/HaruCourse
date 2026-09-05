@@ -27,7 +27,7 @@ Cloudflare configuration validation: `npm.cmd run check:deploy`. Deployment comm
 - Practice reflection, work reference, actual minutes, and review-readiness stored in this browser.
 - Markdown review export and validated JSON backup import/export.
 - Install manifest and offline app shell/course content after a successful initial online load.
-- Private-key sign-in, explicit cloud save/load with conflict protection, versioned creator/AI feedback, and revocable OAuth MCP access.
+- Username/password sign-in, explicit cloud save/load with conflict protection, versioned creator/AI feedback, and revocable OAuth MCP access.
 - No paid AI API calls; a connected AI client supplies its own model.
 
 Saving a work reference does not upload the file. Ready for review is self-reported, not an assessment or notification. Local progress synchronizes only when you explicitly save/load cloud records; clearing browser data removes local drafts. Export a backup regularly. Deployment serves public course content, so do not place private submissions or credentials in the repository.

@@ -1,3 +1,5 @@
+import { timingSafeEqual } from "node:crypto";
+import { z } from "zod";
 import { HttpError, activeUser } from "./data";
 import type { User } from "../shared/record";
 
@@ -80,7 +82,39 @@ export async function session(
     .first<{ user_id: string }>();
   return row ? activeUser(env, row.user_id) : null;
 }
-export async function login(request: Request, env: Env, accessKey: string) {
+export const credentialsSchema = z
+  .object({
+    username: z.string().trim().toLowerCase().min(1).max(40),
+    password: z.string().max(128).default(""),
+  })
+  .strict();
+export async function passwordHash(password: string, salt: string) {
+  const key = await crypto.subtle.importKey(
+    "raw",
+    new TextEncoder().encode(password),
+    "PBKDF2",
+    false,
+    ["deriveBits"],
+  );
+  const bits = await crypto.subtle.deriveBits(
+    {
+      name: "PBKDF2",
+      hash: "SHA-256",
+      salt: new TextEncoder().encode(salt),
+      iterations: 100000,
+    },
+    key,
+    256,
+  );
+  return Array.from(new Uint8Array(bits))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
+export async function login(
+  request: Request,
+  env: Env,
+  credentials: z.infer<typeof credentialsSchema>,
+) {
   const now = Date.now();
   const bucket = await hash(
     (request.headers.get("CF-Connecting-IP") || "local") +
@@ -97,12 +131,33 @@ export async function login(request: Request, env: Env, accessKey: string) {
       429,
       "Too many sign-in attempts. Try again in ten minutes.",
     );
-  const user = await env.DB.prepare(
-    "SELECT id,name,role FROM users WHERE access_hash=? AND active=1",
+  const row = await env.DB.prepare(
+    "SELECT id,name,role,password_hash,password_salt FROM users WHERE username=? AND active=1",
   )
-    .bind(await hash(accessKey))
-    .first<User>();
-  if (!user) throw new HttpError(401, "That access key is not valid.");
+    .bind(credentials.username)
+    .first<
+      User & { password_hash: string | null; password_salt: string | null }
+    >();
+  // Only the explicitly provisioned test learner may sign in without a password.
+  const testLogin =
+    row?.id === "test" &&
+    row.role === "learner" &&
+    credentials.username === "test" &&
+    credentials.password === "";
+  const actual = await passwordHash(
+    credentials.password,
+    row?.password_salt || "unknown-user-dummy-salt",
+  );
+  const expected = row?.password_hash || "0".repeat(64);
+  const valid =
+    expected.length === actual.length &&
+    timingSafeEqual(
+      new TextEncoder().encode(expected),
+      new TextEncoder().encode(actual),
+    );
+  if (!row || (!testLogin && !valid))
+    throw new HttpError(401, "Username or password is incorrect.");
+  const user: User = { id: row.id, name: row.name, role: row.role };
   const raw = token();
   await env.DB.batch([
     env.DB.prepare(

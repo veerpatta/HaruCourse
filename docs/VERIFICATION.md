@@ -45,3 +45,9 @@ Screenshots live outside the repository in the Codex visualization directory. No
 - Chromium verified creator sign-in, empty learner record, sign-out, mobile width 390 without overflow, and zero console errors/warnings.
 - Production learner progress was left untouched. Hosted write flows have not been exercised; their local integration tests passed. Learner-specific AI-client compatibility and native installation remain acceptance tasks.
 - Deployment explicitly authorized through the CLI. No paid-plan upgrade performed; billing access is still unavailable.
+
+## Username login — 6 September 2026
+
+Replaced access-key sign-in with username/password authentication in the app and OAuth consent. Production credentials are in Git-ignored `.secrets/login-credentials.json`; D1 stores salted hashes. `test` is a password-free learner with separately owned cloud records.
+
+Local integration tests passed for wrong/empty-password rejection, test login, test-write isolation, role denial, existing save/feedback behavior, and OAuth/MCP regression checks. Hosted API login, authorized progress read, and logout passed for all three accounts. Chromium verified the password-free test form and empty separate test record. Production deployment version: a7f4e018-c601-4e57-b7e6-6d881ae4a976.

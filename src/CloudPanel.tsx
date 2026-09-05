@@ -48,7 +48,8 @@ export function CloudPanel({
   onLoad: (record: RecordData) => void;
 }) {
   const [user, setUser] = useState<User | null>(null);
-  const [access, setAccess] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const [cloud, setCloud] = useState<CloudRecord | null>(null);
   const [feedback, setFeedback] = useState<Feedback[]>([]);
   const [connections, setConnections] = useState<Connection[]>([]);
@@ -140,9 +141,10 @@ export function CloudPanel({
             e.preventDefault();
             void action(async () => {
               const value = await api<{ user: User }>("/api/login", "POST", {
-                key: access.trim(),
+                username: username.trim(),
+                password,
               });
-              setAccess("");
+              setPassword("");
               setUser(value.user);
               setCloud(null);
               setMessage(
@@ -152,33 +154,49 @@ export function CloudPanel({
           }}
         >
           <p>
-            Sign in with your private course key to share progress between
+            Sign in with your username and password to share progress between
             devices. Your current notebook stays local until you choose to save
             it to the cloud.
           </p>
-          <label htmlFor="course-key">Private course access key</label>
-          <div className="actions">
-            <input
-              id="course-key"
-              type="password"
-              autoComplete="off"
-              value={access}
-              onChange={(e) => setAccess(e.target.value)}
-              required
-              minLength={32}
-              maxLength={128}
-            />
-            <button className="primary" disabled={busy}>
-              {busy ? "Signing in…" : "Sign in"}
-            </button>
-          </div>
-          <small>
-            Your course creator provides the key. Never paste it into an AI
-            conversation.
-          </small>
+          <label htmlFor="course-username">Username</label>
+          <input
+            id="course-username"
+            autoComplete="username"
+            value={username}
+            onChange={(e) => {
+              setUsername(e.target.value);
+              setPassword("");
+            }}
+            required
+            maxLength={40}
+          />
+          <label htmlFor="course-password">Password</label>
+          <input
+            id="course-password"
+            type="password"
+            autoComplete="current-password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required={username.trim().toLowerCase() !== "test"}
+            disabled={username.trim().toLowerCase() === "test"}
+            maxLength={128}
+          />
+          <p className="muted">
+            For testing, enter test and leave the password blank. This is a
+            shared test workspace; use sample work only.
+          </p>
+          <button className="primary" disabled={busy}>
+            {busy ? "Signing in…" : "Sign in"}
+          </button>
         </form>
       ) : (
         <>
+          {user.id === "test" && (
+            <p className="notice">
+              Shared test account · practice here is separate from Haru’s cloud
+              records.
+            </p>
+          )}
           <p>
             {user.role === "creator"
               ? "Review Haru’s saved work and leave feedback against the exact version you read."
