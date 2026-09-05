@@ -937,3 +937,124 @@ footer {
     scroll-behavior: auto !important;
   }
 }
+.cloud-panel {
+  margin-top: 24px;
+}
+.cloud-panel h2,
+.connections h3 {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.cloud-panel .section-heading {
+  margin-top: 0;
+}
+.cloud-login label,
+.review-form label,
+.import-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 14px;
+}
+.cloud-login input,
+.review-form textarea {
+  font: inherit;
+  padding: 12px;
+  border: 1px solid #c8d4bd;
+  border-radius: 6px;
+  min-width: 0;
+  background: #fafbf5;
+  color: #263d38;
+}
+.cloud-login input {
+  flex: 1;
+}
+.cloud-login small,
+.connection small,
+.feedback-item small {
+  display: block;
+  font-size: 11px;
+  color: #68795e;
+}
+.cloud-login .actions {
+  margin-top: 8px;
+}
+.cloud-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+.record-preview,
+.feedback-item p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.record-preview {
+  max-height: 250px;
+  overflow: auto;
+  background: #f4f5ec;
+  padding: 16px;
+  border-radius: 8px;
+}
+.review-form textarea {
+  width: 100%;
+  display: block;
+  margin: 8px 0 12px;
+}
+.feedback-item {
+  border-top: 1px solid #e0e5d5;
+  padding: 15px 0;
+}
+.feedback-item p {
+  font-size: 13px;
+}
+.connections {
+  border-top: 1px solid #e0e5d5;
+  margin-top: 25px;
+  padding-top: 10px;
+}
+.connections code {
+  display: block;
+  padding: 12px;
+  background: #eff2e6;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+}
+.connection {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 13px;
+}
+.cloud-panel button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.import-label {
+  margin: 16px 0 8px;
+}
+#backup-import {
+  font-size: 11px;
+  max-width: 100%;
+}
+@media (max-width: 760px) {
+  .cloud-grid {
+    grid-template-columns: 1fr;
+  }
+  .cloud-panel .section-heading {
+    flex-wrap: wrap;
+  }
+  .cloud-login .actions {
+    flex-direction: column;
+  }
+  .cloud-login input {
+    width: 100%;
+  }
+  .connections code {
+    font-size: 11px;
+  }
+}

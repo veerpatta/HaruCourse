@@ -9,7 +9,13 @@ precacheAndRoute(self.__WB_MANIFEST);
 cleanupOutdatedCaches();
 registerRoute(
   new NavigationRoute(createHandlerBoundToURL("/index.html"), {
-    denylist: [/^\/api\//, /^\/mcp(?:\/|$)/],
+    denylist: [
+      /^\/api\//,
+      /^\/mcp(?:\/|\?|$)/,
+      /^\/authorize(?:\?|$)/,
+      /^\/oauth\//,
+      /^\/\.well-known\//,
+    ],
   }),
 );
 // Leave a new worker waiting until all existing app windows are closed.

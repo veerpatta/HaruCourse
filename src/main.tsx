@@ -17,16 +17,10 @@ import {
 } from "lucide-react";
 import { registerSW } from "virtual:pwa-register";
 import { baseline, levels } from "./course";
+import { CloudPanel } from "./CloudPanel";
+import { recordSchema, type RecordData } from "../shared/record";
 import "./style.css";
 
-type RecordData = {
-  version: 1;
-  notes: string;
-  submission: string;
-  minutes: number;
-  status: "not-started" | "practicing" | "ready-for-review";
-  updatedAt: string;
-};
 type InstallPrompt = Event & {
   prompt(): Promise<void>;
   userChoice: Promise<{ outcome: string }>;
@@ -45,20 +39,7 @@ function readRecord(): RecordData {
   try {
     const raw = localStorage.getItem(key);
     if (!raw) return empty;
-    const value = JSON.parse(raw);
-    if (
-      value.version !== 1 ||
-      typeof value.notes !== "string" ||
-      typeof value.submission !== "string" ||
-      !Number.isFinite(value.minutes) ||
-      value.minutes < 0 ||
-      !["not-started", "practicing", "ready-for-review"].includes(
-        value.status,
-      ) ||
-      typeof value.updatedAt !== "string"
-    )
-      throw new Error("Invalid record");
-    return value;
+    return recordSchema.parse(JSON.parse(raw));
   } catch {
     loadProblem = true;
     return empty;
@@ -110,6 +91,12 @@ function App() {
       });
   }, []);
   function save(status = record.status) {
+    if (!recordSchema.safeParse({ ...record, status }).success) {
+      setMessage(
+        "Use whole minutes from 0 to 1440, and add a reflection and work reference before marking work ready.",
+      );
+      return;
+    }
     if (
       status === "ready-for-review" &&
       (!record.notes.trim() || !record.submission.trim())
@@ -551,8 +538,8 @@ function App() {
                       <Download size={16} /> Export review package
                     </button>
                     <p className="muted">
-                      Direct AI connections are planned. This export works
-                      without connecting an account.
+                      You can also connect a compatible AI app below. This
+                      export works without connecting an account.
                     </p>
                   </section>
                   <section className="card backup-card">
@@ -573,9 +560,63 @@ function App() {
                     >
                       Download progress backup <Download size={16} />
                     </button>
+                    <label className="import-label" htmlFor="backup-import">
+                      Restore a progress backup
+                    </label>
+                    <input
+                      id="backup-import"
+                      type="file"
+                      accept="application/json,.json"
+                      onChange={async (e) => {
+                        const file = e.target.files?.[0];
+                        e.target.value = "";
+                        if (!file) return;
+                        try {
+                          if (file.size > 65536)
+                            throw new Error(
+                              "Backup must be smaller than 64 KB.",
+                            );
+                          const imported = recordSchema.parse(
+                            JSON.parse(await file.text()),
+                          );
+                          download(
+                            "haru-before-import.json",
+                            JSON.stringify(record, null, 2),
+                            "application/json",
+                          );
+                          localStorage.setItem(key, JSON.stringify(imported));
+                          setRecord(imported);
+                          setMessage(
+                            "Backup restored locally. Your previous draft was downloaded. Cloud records were not changed.",
+                          );
+                        } catch {
+                          setMessage(
+                            "Could not restore this backup. Check its format and size; existing work was preserved.",
+                          );
+                        }
+                      }}
+                    />
                   </section>
                 </div>
               </div>
+              <CloudPanel
+                record={record}
+                onLoad={(next) => {
+                  download(
+                    "haru-before-cloud-load.json",
+                    JSON.stringify(record, null, 2),
+                    "application/json",
+                  );
+                  setRecord(next);
+                  try {
+                    localStorage.setItem(key, JSON.stringify(next));
+                  } catch {
+                    setMessage(
+                      "Cloud record loaded in memory, but local storage failed. Download a backup before leaving.",
+                    );
+                  }
+                }}
+              />
             </>
           ) : (
             <>
