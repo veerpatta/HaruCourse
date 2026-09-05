@@ -1,5 +1,7 @@
 # Haru Course
 
+[Complete project plan](PROJECT-PLAN.md) — agreed scope, implementation status, curriculum blueprint, roadmap, and continuation checklist.
+
 An installable, responsive Product Design learning app for Haru, built by the course creator. React, TypeScript, Vite, and a generated offline service worker; with a Cloudflare Worker, D1 progress storage, and OAuth-protected MCP. Live app: https://harucourse.raj-39e.workers.dev. Hosted login and read-only OAuth MCP are verified.
 
 ## Run locally
