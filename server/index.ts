@@ -140,8 +140,16 @@ const defaultHandler: ExportedHandler<Env> = {
       });
     }
     const user = await session(request, env);
-    if (path === "/api/session" && request.method === "GET")
-      return json({ user });
+    if (path === "/api/session" && request.method === "GET") {
+      const saved = user
+        ? await env.DB.prepare(
+            "SELECT expires_at FROM sessions WHERE token_hash=?",
+          )
+            .bind(await hash(cookieValue(request, cookieName(request))))
+            .first<{ expires_at: number }>()
+        : null;
+      return json({ user, expiresAt: saved?.expires_at || null });
+    }
     if (!user) throw new HttpError(401, "Sign in to access cloud records.");
     if (!["GET", "HEAD"].includes(request.method)) sameOrigin(request);
     if (path === "/api/logout" && request.method === "POST") {

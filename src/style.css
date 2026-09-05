@@ -1058,3 +1058,43 @@ footer {
     font-size: 11px;
   }
 }
+
+.login-page {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+  max-width: 1120px;
+  margin: auto;
+  padding: 48px 28px;
+}
+.login-intro h1 {
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.1;
+  margin: 24px 0;
+  color: #244638;
+}
+.login-intro p {
+  max-width: 360px;
+  line-height: 1.8;
+}
+.login-content .cloud-login input {
+  width: 100%;
+  display: block;
+  margin: 8px 0 16px;
+}
+.login-content .cloud-login button {
+  width: 100%;
+  justify-content: center;
+}
+@media (max-width: 760px) {
+  .login-page {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 32px 20px;
+  }
+  .login-intro h1 {
+    margin: 16px 0;
+  }
+}

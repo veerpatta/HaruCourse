@@ -18,7 +18,7 @@ import {
 import { registerSW } from "virtual:pwa-register";
 import { baseline, levels } from "./course";
 import { CloudPanel } from "./CloudPanel";
-import { recordSchema, type RecordData } from "../shared/record";
+import { recordSchema, type RecordData, type User } from "../shared/record";
 import "./style.css";
 
 type InstallPrompt = Event & {
@@ -35,9 +35,9 @@ const empty: RecordData = {
   updatedAt: "",
 };
 let loadProblem = false;
-function readRecord(): RecordData {
+function readRecord(storageKey = key): RecordData {
   try {
-    const raw = localStorage.getItem(key);
+    const raw = localStorage.getItem(storageKey) || (storageKey === `${key}:haru` ? localStorage.getItem(key) : null);
     if (!raw) return empty;
     return recordSchema.parse(JSON.parse(raw));
   } catch {
@@ -53,8 +53,15 @@ function download(name: string, text: string, type = "text/markdown") {
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
-function App() {
-  const [record, setRecord] = useState(readRecord);
+function App({
+  user,
+  onSession,
+}: {
+  user: User;
+  onSession: (user: User | null) => void;
+}) {
+  const key = `harucourse:baseline:v1:${user.id}`;
+  const [record, setRecord] = useState(() => readRecord(key));
   const [tab, setTab] = useState("Today");
   const [lesson, setLesson] = useState(false);
   const [message, setMessage] = useState(
@@ -600,6 +607,8 @@ function App() {
                 </div>
               </div>
               <CloudPanel
+                initialUser={user}
+                onSession={onSession}
                 record={record}
                 onLoad={(next) => {
                   download(
@@ -697,8 +706,105 @@ function App() {
     </div>
   );
 }
+function SessionGate() {
+  const [user, setUser] = useState<User | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const rememberedKey = "harucourse:remembered-session";
+  function changeSession(next: User | null) {
+    setUser(next);
+    try {
+      localStorage.removeItem(rememberedKey);
+    } catch {}
+    if (next) void restore();
+  }
+  async function restore() {
+    let networkFailed = false;
+    setLoading(true);
+    setError("");
+    try {
+      const response = await fetch("/api/session", {
+        cache: "no-store",
+        credentials: "same-origin",
+      }).catch((error) => {
+        networkFailed = true;
+        throw error;
+      });
+      if (!response.ok)
+        throw new Error(
+          "Could not check your session. Connect to the internet and try again.",
+        );
+      const value = await response.json();
+      setUser(value.user);
+      try {
+        if (value.user)
+          localStorage.setItem(
+            rememberedKey,
+            JSON.stringify({ user: value.user, expiresAt: value.expiresAt }),
+          );
+        else localStorage.removeItem(rememberedKey);
+      } catch {}
+    } catch {
+      try {
+        const cached = JSON.parse(
+          localStorage.getItem(rememberedKey) || "null",
+        );
+        if (
+          networkFailed &&
+          cached?.expiresAt > Date.now() &&
+          typeof cached.user?.id === "string" &&
+          ["learner", "creator"].includes(cached.user.role)
+        ) {
+          setUser(cached.user);
+          return;
+        }
+      } catch {}
+      setError("Connect to the internet to restore your saved sign-in.");
+    } finally {
+      setLoading(false);
+    }
+  }
+  useEffect(() => {
+    void restore();
+  }, []);
+  if (user) return <App key={user.id} user={user} onSession={changeSession} />;
+  return (
+    <main className="login-page">
+      <div className="login-intro">
+        <span className="eyebrow">HARU / DESIGN PRACTICE</span>
+        <h1>
+          A little practice.
+          <br />A new perspective.
+        </h1>
+        <p>
+          Your personal space to learn, make, and grow as a product designer.
+        </p>
+      </div>
+      <div className="login-content">
+        {loading ? (
+          <section className="card" role="status">
+            Restoring your session…
+          </section>
+        ) : error ? (
+          <section className="card">
+            <p role="alert">{error}</p>
+            <button className="primary" onClick={() => void restore()}>
+              Try again
+            </button>
+          </section>
+        ) : (
+          <CloudPanel
+            record={empty}
+            onLoad={() => {}}
+            onSession={changeSession}
+          />
+        )}
+      </div>
+    </main>
+  );
+}
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <SessionGate />
   </StrictMode>,
 );

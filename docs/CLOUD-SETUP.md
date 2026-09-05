@@ -36,3 +36,5 @@ For recreation in a different verified account (the current account already has 
 The MCP address is the hosted origin followed by `/mcp`. Localhost is suitable for local SDK tests, but a remote AI service cannot reach this machine’s localhost. Production secrets, seed files, `.wrangler` state, and QA data are Git-ignored.
 
 Key rotation/recovery is currently an administrator database operation: replace the user’s password hash and salt, delete their sessions, and revoke their OAuth grants. Disabling the user (`active = 0`) immediately prevents API/MCP access, including existing tokens. A self-service recovery screen and content publishing editor are future work.
+
+The app asks for login before opening the course and remembers sessions for 30 days. Returning online visits verify the cookie; cached lessons/local drafts can open offline while the remembered session is unexpired. Sign out clears remembered access. Passwords are never cached. Close and reopen existing app windows to activate a newly deployed service worker.

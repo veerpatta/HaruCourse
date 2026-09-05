@@ -51,3 +51,11 @@ Screenshots live outside the repository in the Codex visualization directory. No
 Replaced access-key sign-in with username/password authentication in the app and OAuth consent. Production credentials are in Git-ignored `.secrets/login-credentials.json`; D1 stores salted hashes. `test` is a password-free learner with separately owned cloud records.
 
 Local integration tests passed for wrong/empty-password rejection, test login, test-write isolation, role denial, existing save/feedback behavior, and OAuth/MCP regression checks. Hosted API login, authorized progress read, and logout passed for all three accounts. Chromium verified the password-free test form and empty separate test record. Production deployment version: a7f4e018-c601-4e57-b7e6-6d881ae4a976.
+
+## Login-first remembered sessions — 6 September 2026
+
+The course now opens at a login gate before rendering the learner workspace. An HttpOnly session cookie persists for 30 days. Online visits validate it with the server; a cached, expiry-bounded profile permits public lessons and local drafts during a network outage, without granting access to cloud APIs. Passwords/tokens are never stored in localStorage. Signing out clears the remembered profile and returns to login. Local notebooks are scoped by user ID; Haru retains access to her legacy draft.
+
+Chromium verified fresh login gate, successful login, online reload, offline reload after caching, logout, and signed-out reload. Build and TypeScript checks passed. Offline testing deliberately produces a network-disconnected console entry.
+
+Hosted login gate, remembered session after reload, and logout also passed on deployment dc820b20-e5d0-4ae4-bdf9-5d952d3ddff1.

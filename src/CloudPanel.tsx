@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   Cloud,
   LogOut,
@@ -43,11 +43,15 @@ type Connection = {
 export function CloudPanel({
   record,
   onLoad,
+  initialUser = null,
+  onSession,
 }: {
+  initialUser?: User | null;
+  onSession: (user: User | null) => void;
   record: RecordData;
   onLoad: (record: RecordData) => void;
 }) {
-  const [user, setUser] = useState<User | null>(null);
+  const [user, setUser] = useState<User | null>(initialUser);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [cloud, setCloud] = useState<CloudRecord | null>(null);
@@ -57,17 +61,6 @@ export function CloudPanel({
   const [message, setMessage] = useState("");
   const [busy, setBusy] = useState(false);
   const [reviewId, setReviewId] = useState(() => crypto.randomUUID());
-  useEffect(() => {
-    let active = true;
-    api<{ user: User | null }>("/api/session")
-      .then((v) => {
-        if (active) setUser(v.user);
-      })
-      .catch(() => {});
-    return () => {
-      active = false;
-    };
-  }, []);
   async function action(fn: () => Promise<void>) {
     setBusy(true);
     setMessage("");
@@ -104,7 +97,7 @@ export function CloudPanel({
             <Cloud size={21} />{" "}
             {user
               ? `${user.name} · ${user.role === "creator" ? "Creator review" : "Cloud progress"}`
-              : "Take your practice with you."}
+              : "Sign in to your course."}
           </h2>
         </div>
         {user && (
@@ -115,6 +108,7 @@ export function CloudPanel({
               action(async () => {
                 await api("/api/logout", "POST");
                 setUser(null);
+                onSession(null);
                 setCloud(null);
                 setFeedback([]);
                 setConnections([]);
@@ -146,6 +140,7 @@ export function CloudPanel({
               });
               setPassword("");
               setUser(value.user);
+              onSession(value.user);
               setCloud(null);
               setMessage(
                 "Signed in. Refresh cloud records to compare them with your local notebook.",
@@ -154,9 +149,9 @@ export function CloudPanel({
           }}
         >
           <p>
-            Sign in with your username and password to share progress between
-            devices. Your current notebook stays local until you choose to save
-            it to the cloud.
+            Welcome back. Sign in once on this device to continue your design
+            journey. You’ll stay signed in for 30 days, unless you sign out or
+            clear browser data.
           </p>
           <label htmlFor="course-username">Username</label>
           <input
