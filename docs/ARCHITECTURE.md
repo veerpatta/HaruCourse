@@ -10,6 +10,6 @@ The official Workers OAuth provider uses KV for grants and token state. The Stre
 
 No server-side model calls are made. Design critique requires actual image evidence in the connected AI client; a saved private file reference alone is insufficient. There is no file-upload storage, email service, public registration, content publishing editor, or automatic synchronization.
 
-The target remains zero additional cost within provider free allowances. Hosting awaits account-plan confirmation. See [setup and release prerequisites](CLOUD-SETUP.md). Local SDK/browser tests do not establish hosted availability, native device installation, or compatibility with the learner’s particular AI account.
+The target remains zero additional cost within provider free allowances. Hosting is live at https://harucourse.raj-39e.workers.dev after explicit CLI deployment authorization; billing-plan visibility remains unavailable. See [setup and release prerequisites](CLOUD-SETUP.md). Local SDK/browser tests do not establish hosted availability, native device installation, or compatibility with the learner’s particular AI account.
 
-Next work: publish the hosted app after Free-plan confirmation, verify an actual AI connection, and produce the first complete week of lessons with checked resources and assessment rubrics.
+Next work: verify the learner’s actual AI-client connection and produce the first complete week of lessons with checked resources and assessment rubrics.

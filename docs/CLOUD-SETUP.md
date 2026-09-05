@@ -21,9 +21,11 @@ Two private random access keys represent the creator and learner. D1 stores hash
 
 Creators review a specific saved revision and cannot overwrite learner progress. MCP uses browser consent, PKCE S256, and read/write scopes. AI feedback is visibly labelled and cannot establish mastery. Revoke AI connections from My practice. Work references do not upload images; attach actual design evidence in the AI client.
 
-## Hosted release prerequisites
+## Hosted deployment
 
-Deployment has not occurred. Confirm Workers Free in the intended Cloudflare account before creating resources; never upgrade a plan for this project. Free allowances are bounded and service can be unavailable when exhausted. No custom domain or paid model API is required.
+Deployed with the user-authorized CLI on 6 September 2026 to https://harucourse.raj-39e.workers.dev in account raj@vpps.co.in. No plan upgrade was performed. CLI billing access is unavailable, so the account plan and zero billing have not been independently certified. Free allowances are bounded and service can be unavailable when exhausted. No custom domain or paid model API is required.
+
+For recreation in a different verified account (the current account already has these resources):
 
 1. Create a D1 database named `harucourse` and KV namespace for OAuth in the verified account.
 2. Replace the placeholder database/namespace IDs in `wrangler.jsonc` with those returned IDs.

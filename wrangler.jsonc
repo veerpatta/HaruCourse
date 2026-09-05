@@ -1,6 +1,8 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "harucourse",
+  "account_id": "39e91e2ba839bd5beb121d2453ee1d54",
+  "workers_dev": true,
   "main": "server/index.ts",
   "compatibility_date": "2026-09-05",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
@@ -9,12 +11,12 @@
     {
       "binding": "DB",
       "database_name": "harucourse",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "b13a76b1-5ac2-46b6-9410-caef701874b8",
       "migrations_dir": "migrations",
     },
   ],
   "kv_namespaces": [
-    { "binding": "OAUTH_KV", "id": "00000000000000000000000000000000" },
+    { "binding": "OAUTH_KV", "id": "801191448b0e4a8985aa1bf6aba46962" },
   ],
   "assets": {
     "binding": "ASSETS",

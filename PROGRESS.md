@@ -5,7 +5,7 @@
 - The user is the course creator; Haru is the learner. References to learner background describe her.
 - GitHub repository: https://github.com/veerpatta/HaruCourse.
 - App direction: installable PWA, free-tier Cloudflare hosting, D1 and authenticated MCP.
-- Local notebook plus explicit cloud synchronization and creator review are implemented; deployment is pending.
+- Local notebook plus explicit cloud synchronization and creator review are implemented; hosting is live.
 
 - Prepare for India plus international remote roles.
 - Keep lessons and records in local course files initially.
@@ -18,7 +18,7 @@
 - App foundation implemented on `codex/course-app-foundation`: dashboard, level map, baseline, browser-local practice records, review/backup exports, install manifest, and offline service worker.
 - Verified locally: TypeScript/build, Cloudflare dry run, desktop/mobile rendering, required review fields, save/reload, export contents, and offline reload/navigation. No browser console errors reported.
 - Cloud milestone implemented and verified locally: authenticated learner/creator roles, D1 revision history, conflict-safe saves, versioned feedback, backup import, OAuth PKCE, scoped MCP tools, and connection revocation.
-- Cloudflare deployment awaits Free-plan confirmation. Actual device installation and connection from the learner’s AI account still need acceptance checks.
+- Cloudflare deployed via the authorized CLI on 6 September 2026: https://harucourse.raj-39e.workers.dev. Hosted learner/creator login and OAuth MCP reads passed. Actual device installation and connection from the learner’s AI account still need acceptance checks. Billing-plan visibility remains unavailable; no plan upgrade was performed.
 
 - Blueprint v0.1: drafted; workload and module allocation provisional.
 - Initial source check: completed; representative hiring research still pending.

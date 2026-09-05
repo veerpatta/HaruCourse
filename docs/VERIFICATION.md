@@ -34,3 +34,14 @@ Full Worker preview at `http://127.0.0.1:8787`, local D1/KV, Chromium through Pl
 - Desktop and mobile screenshots inspected; mobile 390 × 844 had no horizontal overflow. No browser console errors were reported during the learner/creator flow.
 
 Screenshots live outside the repository in the Codex visualization directory. No remote resources have been created. Hosted acceptance, actual device installation, and the learner’s own AI-account connection remain unverified. Free-plan confirmation is required before deployment.
+
+
+## Hosted acceptance — 6 September 2026
+
+- URL: https://harucourse.raj-39e.workers.dev
+- Worker version: fe26a389-047d-4cc3-aec1-4c41dac8eb89.
+- D1 migration applied and production user hashes seeded; credentials remain in Git-ignored .secrets/access-keys.json.
+- Hosted learner/creator authentication, unauthenticated denial, OAuth discovery, PKCE exchange, consent CSRF, actual MCP SDK initialization/tool listing/progress read passed. Verification grant revoked and sessions signed out afterward.
+- Chromium verified creator sign-in, empty learner record, sign-out, mobile width 390 without overflow, and zero console errors/warnings.
+- Production learner progress was left untouched. Hosted write flows have not been exercised; their local integration tests passed. Learner-specific AI-client compatibility and native installation remain acceptance tasks.
+- Deployment explicitly authorized through the CLI. No paid-plan upgrade performed; billing access is still unavailable.
