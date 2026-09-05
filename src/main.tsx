@@ -1,3 +1,5 @@
+import { LearningStudio } from "./LearningStudio";
+import { usePractice } from "./usePractice";
 import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
@@ -37,7 +39,9 @@ const empty: RecordData = {
 let loadProblem = false;
 function readRecord(storageKey = key): RecordData {
   try {
-    const raw = localStorage.getItem(storageKey) || (storageKey === `${key}:haru` ? localStorage.getItem(key) : null);
+    const raw =
+      localStorage.getItem(storageKey) ||
+      (storageKey === `${key}:haru` ? localStorage.getItem(key) : null);
     if (!raw) return empty;
     return recordSchema.parse(JSON.parse(raw));
   } catch {
@@ -61,8 +65,14 @@ function App({
   onSession: (user: User | null) => void;
 }) {
   const key = `harucourse:baseline:v1:${user.id}`;
-  const [record, setRecord] = useState(() => readRecord(key));
-  const [tab, setTab] = useState("Today");
+  const {
+    record,
+    setRecord,
+    status: syncStatus,
+    conflict,
+    resolve,
+  } = usePractice(user, baseline.id, key);
+  const [tab, setTab] = useState("Lessons");
   const [lesson, setLesson] = useState(false);
   const [message, setMessage] = useState(
     loadProblem
@@ -117,7 +127,7 @@ function App({
     try {
       localStorage.setItem(key, JSON.stringify(next));
       setRecord(next);
-      setMessage("Saved on this device.");
+      setMessage("Draft saved; automatic cloud sync is running.");
     } catch {
       setMessage(
         "This browser could not save your work. Download a backup before leaving.",
@@ -139,6 +149,7 @@ function App({
     );
   }
   const nav = [
+    { name: "Lessons", icon: BookOpen },
     { name: "Today", icon: LayoutGrid },
     { name: "Course map", icon: Map },
     { name: "My practice", icon: PencilLine },
@@ -206,10 +217,24 @@ function App({
           </span>
           <span className="device-status">
             <span className={online ? "online-dot" : "offline-dot"} />
-            {online ? "On-device storage" : "Offline · local practice"}
+            {online ? "Cloud sync enabled" : "Offline · local practice"}
           </span>
         </header>
         <main id="main">
+          {tab !== "Lessons" && (
+            <p className="notice" role="status">
+              Baseline: {syncStatus}
+            </p>
+          )}
+          {conflict && (
+            <section className="card">
+              <p>A newer baseline version exists. Your draft is preserved.</p>
+              <button onClick={() => resolve(true)}>
+                Back up draft and use cloud
+              </button>
+              <button onClick={() => resolve(false)}>Keep my draft</button>
+            </section>
+          )}
           {message && (
             <div className="notice" role="status">
               {message}
@@ -285,6 +310,8 @@ function App({
                 </section>
               </div>
             </>
+          ) : tab === "Lessons" ? (
+            <LearningStudio user={user} />
           ) : tab === "Today" ? (
             <>
               <div className="greeting">
@@ -410,8 +437,7 @@ function App({
                 620 planned hours, built around real work and thoughtful
                 iteration.
                 <br />
-                The baseline is available now. Later lessons are being
-                developed.
+                Week 1 is available in Lessons. Later weeks are being developed.
               </p>
               <div className="level-list">
                 {levels.map((level, i) => (
@@ -529,7 +555,7 @@ function App({
                   </div>
                   <p className="muted">
                     Marking work ready does not grade it or send it to a mentor.
-                    Save again after any changes.
+                    Changes save automatically.
                   </p>
                 </form>
                 <div>
@@ -552,8 +578,9 @@ function App({
                   <section className="card backup-card">
                     <h3>Your work belongs to you.</h3>
                     <p>
-                      Progress is stored in this browser. Download a backup
-                      before clearing browser data or switching devices.
+                      Your draft saves on this device and syncs online
+                      automatically. Wait for “Saved online” before clearing
+                      browser data. Backups give you an extra copy.
                     </p>
                     <button
                       className="text-button"
@@ -594,7 +621,7 @@ function App({
                           localStorage.setItem(key, JSON.stringify(imported));
                           setRecord(imported);
                           setMessage(
-                            "Backup restored locally. Your previous draft was downloaded. Cloud records were not changed.",
+                            "Backup restored. Your previous draft was downloaded; the restored record will sync automatically.",
                           );
                         } catch {
                           setMessage(

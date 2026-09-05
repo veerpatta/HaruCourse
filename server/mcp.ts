@@ -1,3 +1,5 @@
+import { z } from "zod";
+import { lessons } from "../src/lessons";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
 import { WorkerEntrypoint } from "cloudflare:workers";
@@ -38,45 +40,65 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
         };
       }
     };
+    const lessonIdSchema = z
+      .string()
+      .refine(
+        (id) => id === baseline.id || lessons.some((l) => l.id === id),
+        "Unknown lesson",
+      )
+      .default(baseline.id);
+    const inputSchema = { lessonId: lessonIdSchema };
+    const findLesson = (id: string) =>
+      lessons.find((l) => l.id === id) || baseline;
     if (scopes.includes("course:read")) {
       server.registerTool(
         "get_progress",
         {
           description:
-            "Read the authorized learner’s current baseline and cloud revision.",
-          inputSchema: {},
+            "Read the authorized learner’s record and revision for a lesson. Defaults to baseline.",
+          inputSchema,
           annotations: { readOnlyHint: true },
         },
-        () => safe(() => progress(this.env, user)),
+        ({ lessonId }) => safe(() => progress(this.env, user, lessonId)),
       );
       server.registerTool(
         "get_lesson",
         {
           description:
-            "Read the available baseline lesson and planned roadmap. Later lessons are not yet published.",
-          inputSchema: {},
+            "Read a published lesson and the available lesson catalog.",
+          inputSchema,
           annotations: { readOnlyHint: true },
         },
-        async () => result({ baseline, levels }),
+        async ({ lessonId }) =>
+          result({
+            lesson: findLesson(lessonId),
+            publishedLessons: lessons.map((l) => ({
+              id: l.id,
+              title: l.title,
+              day: l.day,
+            })),
+            levels,
+          }),
       );
       server.registerTool(
         "get_review_rubric",
         {
           description: "Read the assessment criteria before reviewing work.",
-          inputSchema: {},
+          inputSchema,
           annotations: { readOnlyHint: true },
         },
-        async () => result({ lessonId: baseline.id, rubric: baseline.rubric }),
+        async ({ lessonId }) =>
+          result({ lessonId, rubric: findLesson(lessonId).rubric }),
       );
       server.registerTool(
         "get_feedback",
         {
           description:
             "Read saved AI and creator feedback, with submission versions.",
-          inputSchema: {},
+          inputSchema,
           annotations: { readOnlyHint: true },
         },
-        () => safe(() => listFeedback(this.env, user)),
+        ({ lessonId }) => safe(() => listFeedback(this.env, user, lessonId)),
       );
     }
     if (scopes.includes("course:write")) {
@@ -85,15 +107,17 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
         {
           description:
             "Save AI-generated critique against an existing submission revision. Supply a new UUID id for each review; reuse it only for an exact retry. This does not award mastery.",
-          inputSchema: feedbackSchema,
+          inputSchema: feedbackSchema.extend(inputSchema),
           annotations: {
             readOnlyHint: false,
             destructiveHint: false,
             idempotentHint: true,
           },
         },
-        ({ revision, body, id }) =>
-          safe(() => saveFeedback(this.env, user, revision, body, id, "ai")),
+        ({ revision, body, id, lessonId }) =>
+          safe(() =>
+            saveFeedback(this.env, user, revision, body, id, "ai", lessonId),
+          ),
       );
       if (user.role === "learner")
         server.registerTool(
@@ -101,15 +125,17 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
           {
             description:
               "Update the learner’s full practice record only when requested. Read progress first and supply expectedRevision; conflicts never overwrite a newer record. Minutes are the total for this exercise, not an increment.",
-            inputSchema: saveSchema,
+            inputSchema: saveSchema.extend(inputSchema),
             annotations: {
               readOnlyHint: false,
               destructiveHint: false,
               idempotentHint: false,
             },
           },
-          ({ record, expectedRevision }) =>
-            safe(() => saveProgress(this.env, user, record, expectedRevision)),
+          ({ record, expectedRevision, lessonId }) =>
+            safe(() =>
+              saveProgress(this.env, user, record, expectedRevision, lessonId),
+            ),
         );
     }
     const transport = new WebStandardStreamableHTTPServerTransport({

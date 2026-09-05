@@ -59,3 +59,9 @@ The course now opens at a login gate before rendering the learner workspace. An 
 Chromium verified fresh login gate, successful login, online reload, offline reload after caching, logout, and signed-out reload. Build and TypeScript checks passed. Offline testing deliberately produces a network-disconnected console entry.
 
 Hosted login gate, remembered session after reload, and logout also passed on deployment dc820b20-e5d0-4ae4-bdf9-5d952d3ddff1.
+
+## Automatic saving and published Week 1
+
+Build and local integration tests passed, including lesson ID validation, per-lesson persistence, baseline isolation, course summary, and prior authentication/OAuth/MCP tests. Chromium verified automatic write without pressing Save, reload recovery, offline edit/reconnect, isolated lesson records, and conflict preserving the local draft. Seven authored lessons each total 120 minutes; Days 6 and 7 are optional. Three linked primary references checked on 6 September 2026.
+
+Hosted test-account verification passed: a note entered without pressing Save produced D1 lesson record `week1-day1-v1`, revision 1, confirmed with a remote SQL read. Reload restored the note. Mobile 390 × 844 had no horizontal overflow. Haru’s records were not used for write testing. Source references and the complete first-week material are preserved in WEEK-01.md. Later weeks and file uploads remain unfinished.

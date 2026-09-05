@@ -38,3 +38,7 @@ The MCP address is the hosted origin followed by `/mcp`. Localhost is suitable f
 Key rotation/recovery is currently an administrator database operation: replace the user’s password hash and salt, delete their sessions, and revoke their OAuth grants. Disabling the user (`active = 0`) immediately prevents API/MCP access, including existing tokens. A self-service recovery screen and content publishing editor are future work.
 
 The app asks for login before opening the course and remembers sessions for 30 days. Returning online visits verify the cookie; cached lessons/local drafts can open offline while the remembered session is unexpired. Sign out clears remembered access. Passwords are never cached. Close and reopen existing app windows to activate a newly deployed service worker.
+
+## Automatic practice saving
+
+Baseline and published lesson records load from the cloud when opened and save edits automatically, with a short delay. Each lesson owns its own notes, reference, minutes, status, and revision history. Pending local drafts are retained across reloads; an open lesson retries after reconnection. A different cloud revision prompts a copy choice rather than an overwrite. The course summary totals published lesson records, and creator/MCP feedback can target a lesson ID. Work-reference fields do not upload files.

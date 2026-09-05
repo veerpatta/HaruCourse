@@ -192,6 +192,39 @@ assert.equal(
 const reviews = await (await call("/api/feedback", { cookie: learner })).json();
 assert.equal(reviews.feedback.filter((f) => f.id === feedback.id).length, 1);
 checks.push("versioned creator feedback and retry deduplication");
+const lessonPath = "/api/progress?lessonId=week1-day5-v1";
+const previousLesson = await (
+  await call(lessonPath, { cookie: learner })
+).json();
+assert.equal(
+  (
+    await call(lessonPath, {
+      method: "PUT",
+      cookie: learner,
+      body: {
+        record: { ...record, notes: "Separate lesson evidence" },
+        expectedRevision: previousLesson.revision,
+      },
+    })
+  ).status,
+  200,
+);
+assert.equal(
+  (await (await call("/api/progress", { cookie: learner })).json()).revision,
+  current.revision,
+);
+assert.equal(
+  (await call("/api/progress?lessonId=unknown", { cookie: learner })).status,
+  404,
+);
+assert.ok(
+  (
+    await (await call("/api/course-records", { cookie: learner })).json()
+  ).records.some((r) => r.lessonId === "week1-day5-v1"),
+);
+checks.push(
+  "per-lesson persistence, baseline isolation, catalog validation and course summary",
+);
 const unauth = await call("/mcp");
 assert.equal(unauth.status, 401);
 assert.match(

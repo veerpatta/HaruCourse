@@ -52,3 +52,5 @@
 When resuming, read this record and the latest submitted work. A message such as “Day 7 completed” triggers evidence review; it does not automatically establish mastery.
 
 - Username login added: Haru (`haru`), creator (`itsme`), and isolated shared test learner (`test`, password-free). Credentials are private in `.secrets/login-credentials.json`; old key login is retired.
+
+- Published Week 1 in the app and `WEEK-01.md`, with five core/two optional lessons and separate records. Practice now auto-loads and saves with visible status, local draft recovery, and conflict resolution. Creator review and MCP support lesson IDs. Full later-week content remains pending.

@@ -27,11 +27,15 @@ export async function activeUser(env: Env, id: string): Promise<User> {
   if (!user) throw new HttpError(401, "Please sign in again.");
   return user;
 }
-export async function progress(env: Env, user: User): Promise<CloudRecord> {
+export async function progress(
+  env: Env,
+  user: User,
+  lessonId = baseline.id,
+): Promise<CloudRecord> {
   const row = await env.DB.prepare(
     "SELECT record_json,revision FROM progress WHERE user_id=? AND lesson_id=?",
   )
-    .bind(learnerId(user), baseline.id)
+    .bind(learnerId(user), lessonId)
     .first<{ record_json: string; revision: number }>();
   return row
     ? {
@@ -45,6 +49,7 @@ export async function saveProgress(
   user: User,
   value: RecordData,
   expectedRevision: number,
+  lessonId = baseline.id,
 ): Promise<CloudRecord> {
   if (user.role !== "learner")
     throw new HttpError(
@@ -61,18 +66,12 @@ export async function saveProgress(
       ? await env.DB.prepare(
           "INSERT INTO progress(user_id,lesson_id,revision,record_json,updated_at) VALUES (?,?,1,?,?) ON CONFLICT DO NOTHING RETURNING revision",
         )
-          .bind(user.id, baseline.id, encoded, record.updatedAt)
+          .bind(user.id, lessonId, encoded, record.updatedAt)
           .first<{ revision: number }>()
       : await env.DB.prepare(
           "UPDATE progress SET revision=revision+1,record_json=?,updated_at=? WHERE user_id=? AND lesson_id=? AND revision=? RETURNING revision",
         )
-          .bind(
-            encoded,
-            record.updatedAt,
-            user.id,
-            baseline.id,
-            expectedRevision,
-          )
+          .bind(encoded, record.updatedAt, user.id, lessonId, expectedRevision)
           .first<{ revision: number }>();
   if (!result)
     throw new HttpError(
@@ -81,12 +80,16 @@ export async function saveProgress(
     );
   return { record, revision: expectedRevision + 1 };
 }
-export async function listFeedback(env: Env, user: User): Promise<Feedback[]> {
+export async function listFeedback(
+  env: Env,
+  user: User,
+  lessonId = baseline.id,
+): Promise<Feedback[]> {
   return (
     await env.DB.prepare(
       "SELECT id,revision,author_id,source,body,created_at FROM feedback WHERE user_id=? AND lesson_id=? ORDER BY created_at DESC LIMIT 100",
     )
-      .bind(learnerId(user), baseline.id)
+      .bind(learnerId(user), lessonId)
       .all<Feedback>()
   ).results;
 }
@@ -97,6 +100,7 @@ export async function saveFeedback(
   body: string,
   id: string,
   source: "creator" | "ai",
+  lessonId = baseline.id,
 ) {
   if (source === "creator" && user.role !== "creator")
     throw new HttpError(403, "Creator access is required for a mentor review.");
@@ -104,7 +108,7 @@ export async function saveFeedback(
   const submission = await env.DB.prepare(
     "SELECT revision FROM submission_history WHERE user_id=? AND lesson_id=? AND revision=?",
   )
-    .bind(target, baseline.id, revision)
+    .bind(target, lessonId, revision)
     .first();
   if (!submission)
     throw new HttpError(
@@ -115,7 +119,7 @@ export async function saveFeedback(
   await env.DB.prepare(
     "INSERT INTO feedback(id,user_id,lesson_id,revision,author_id,source,body,created_at) VALUES (?,?,?,?,?,?,?,?) ON CONFLICT(id) DO NOTHING",
   )
-    .bind(id, target, baseline.id, revision, user.id, source, body, createdAt)
+    .bind(id, target, lessonId, revision, user.id, source, body, createdAt)
     .run();
   const result = await env.DB.prepare(
     "SELECT id,revision,author_id,source,body,created_at FROM feedback WHERE id=? AND user_id=? AND author_id=? AND source=? AND revision=? AND body=?",

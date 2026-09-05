@@ -45,10 +45,10 @@ The detailed curriculum blueprint, coverage, portfolio strategy, assessment rule
 | Accounts | `haru` is the learner; `itsme` is the creator; `test` is a shared password-free learner with separate cloud records. |
 | Credentials | Requested credentials live only in Git-ignored `.secrets/login-credentials.json`. D1 stores salted password hashes. Old key login is retired. |
 | Persistence | HttpOnly, Secure production session cookie lasts 30 days. Offline profile cache is expiry-bounded and cannot authorize cloud API access. Logout clears remembered entry. |
-| Course | Responsive dashboard, seven-level map, and baseline diagnostic. Later daily lessons remain planned. |
+| Course | Responsive dashboard, seven-level map, baseline diagnostic, and published Week 1. Later weeks remain planned. |
 | Notebook | Per-account local draft with reflection, work reference, minutes, and readiness. Haru can recover the legacy draft. |
 | Backups | Markdown review export and validated JSON import/export; replacement downloads the previous draft first. |
-| Cloud records | Explicit refresh/save/load with revision conflicts instead of silent overwrites; immutable submission history. |
+| Cloud records | Automatic save/load for baseline and each published lesson, with local drafts, revision conflicts, and immutable history. |
 | Reviews | Creator feedback belongs to the exact submission revision. Creator cannot overwrite learner progress. |
 | AI access | OAuth PKCE consent, scoped MCP tools, visible AI feedback, and connection revocation. |
 | Offline/install | Install manifest and cached public lesson/app content; browser installation support depends on device. |
@@ -225,3 +225,7 @@ This is an initial evidence pass, not a completed September 2026 hiring-market s
 Next research pass: collect approximately 15–20 employer postings across India and remote roles explicitly open to India, including junior/unlevelled roles; record seniority, location, required vs preferred skills, portfolio evidence, and observation date. Separate recurring requirements from isolated preferences. Validate current tool capabilities and curate one core resource plus one fallback per lesson. Keep enduring principles separate from dated workflow notes.
 
 The resource library will distinguish required reading from reference material, include a small prioritized book list, and allocate a bounded weekly current-awareness session rather than daily content consumption.
+
+## Implementation update — automatic practice and Week 1
+
+Published `WEEK-01.md` and matching app lessons: five core sessions plus two optional days. Each includes teaching, a worked example, two-hour tasks, deliverables, understanding checks, review criteria, and checked references. The app starts in Lessons. Baseline and lesson records auto-load and save; offline drafts remain local and reconnect while open. Conflicts require an explicit copy choice. Creator feedback and MCP now accept published lesson IDs. The remaining roadmap begins with Month 1’s later weeks, assessments, and resource expansion; the full 620-hour course is still not authored.

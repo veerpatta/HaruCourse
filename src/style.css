@@ -1098,3 +1098,65 @@ footer {
     margin: 16px 0;
   }
 }
+
+.lesson-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 24px 0;
+}
+.lesson-choice {
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+  width: 100%;
+}
+.lesson-choice:hover {
+  border-color: #426b50;
+}
+.lesson-reading {
+  max-width: 850px;
+  margin: 24px 0;
+  padding: 28px;
+}
+.lesson-reading p {
+  line-height: 1.85;
+}
+.lesson-reading label {
+  display: block;
+  margin: 20px 0 8px;
+}
+.lesson-reading textarea,
+.lesson-reading input,
+.lesson-reading select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd7c4;
+  border-radius: 8px;
+  background: #fff;
+  color: #243e32;
+  font: inherit;
+}
+.lesson-reading details {
+  padding: 16px 0;
+  border-bottom: 1px solid #dde4d4;
+}
+.lesson-reading summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+@media (max-width: 760px) {
+  .lesson-list {
+    grid-template-columns: 1fr;
+  }
+  .lesson-reading {
+    padding: 20px;
+  }
+}
+.lesson-reading + .lesson-reading {
+  margin-top: 24px;
+}
+#main > .text-button + .eyebrow {
+  display: block;
+  margin-top: 18px;
+}

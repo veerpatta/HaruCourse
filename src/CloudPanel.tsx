@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Cloud,
   LogOut,
@@ -143,7 +143,7 @@ export function CloudPanel({
               onSession(value.user);
               setCloud(null);
               setMessage(
-                "Signed in. Refresh cloud records to compare them with your local notebook.",
+                "Signed in. Refresh feedback and connections to compare them with your local notebook.",
               );
             });
           }}
@@ -195,7 +195,7 @@ export function CloudPanel({
           <p>
             {user.role === "creator"
               ? "Review Haru’s saved work and leave feedback against the exact version you read."
-              : "Cloud saving is explicit: refresh, compare, then save. A newer version on another device will never be silently overwritten."}
+              : "Practice now saves automatically. This panel shows the baseline review history and your AI connections."}
           </p>
           <button
             className="secondary"
@@ -228,51 +228,6 @@ export function CloudPanel({
                       Saved: {cloud.record.updatedAt}
                     </p>
                   </>
-                )}
-                {user.role === "learner" && (
-                  <div className="actions">
-                    <button
-                      className="primary"
-                      disabled={busy}
-                      onClick={() =>
-                        action(async () => {
-                          const parsed = recordSchema.safeParse(record);
-                          if (!parsed.success)
-                            throw new Error(
-                              "Check your notebook: use whole minutes and add reflection/work reference before marking it ready.",
-                            );
-                          const result = await api<CloudRecord>(
-                            "/api/progress",
-                            "PUT",
-                            {
-                              record: parsed.data,
-                              expectedRevision: cloud.revision,
-                            },
-                          );
-                          setCloud(result);
-                          setMessage(
-                            `Saved cloud version ${result.revision}. Your local notebook is unchanged.`,
-                          );
-                        })
-                      }
-                    >
-                      <Upload size={15} /> Save this draft to cloud
-                    </button>
-                    {cloud.record && (
-                      <button
-                        className="secondary"
-                        disabled={busy}
-                        onClick={() => {
-                          onLoad(cloud.record!);
-                          setMessage(
-                            "Cloud copy loaded into your notebook. Your previous draft was downloaded first.",
-                          );
-                        }}
-                      >
-                        <Download size={15} /> Load cloud copy
-                      </button>
-                    )}
-                  </div>
                 )}
                 {user.role === "creator" && cloud.revision > 0 && (
                   <form

@@ -1,3 +1,5 @@
+import { lessons } from "../src/lessons";
+import { baseline } from "../src/course";
 import {
   OAuthProvider,
   AuthorizationError,
@@ -158,16 +160,40 @@ const defaultHandler: ExportedHandler<Env> = {
         .run();
       return json({ ok: true }, 200, { "set-cookie": cookie(request, "", 0) });
     }
+    const lessonId =
+      new URL(request.url).searchParams.get("lessonId") || baseline.id;
+    if (![baseline.id, ...lessons.map((l) => l.id)].includes(lessonId))
+      throw new HttpError(404, "Lesson not found.");
+    if (path === "/api/course-records" && request.method === "GET") {
+      const rows = await env.DB.prepare(
+        "SELECT lesson_id,revision,record_json FROM progress WHERE user_id=?",
+      )
+        .bind(user.role === "creator" ? "haru" : user.id)
+        .all();
+      return json({
+        records: rows.results.map((row) => ({
+          lessonId: row.lesson_id,
+          revision: row.revision,
+          record: JSON.parse(row.record_json as string),
+        })),
+      });
+    }
     if (path === "/api/progress" && request.method === "GET")
-      return json(await progress(env, user));
+      return json(await progress(env, user, lessonId));
     if (path === "/api/progress" && request.method === "PUT") {
       const value = saveSchema.parse(await bodyJson(request));
       return json(
-        await saveProgress(env, user, value.record, value.expectedRevision),
+        await saveProgress(
+          env,
+          user,
+          value.record,
+          value.expectedRevision,
+          lessonId,
+        ),
       );
     }
     if (path === "/api/feedback" && request.method === "GET")
-      return json({ feedback: await listFeedback(env, user) });
+      return json({ feedback: await listFeedback(env, user, lessonId) });
     if (path === "/api/feedback" && request.method === "POST") {
       const value = feedbackSchema.parse(await bodyJson(request));
       return json(
@@ -178,6 +204,7 @@ const defaultHandler: ExportedHandler<Env> = {
           value.body,
           value.id,
           "creator",
+          lessonId,
         ),
         201,
       );
