@@ -22,6 +22,8 @@ Verified on 6 September 2026: npm run docs:generate and npm run test:content pas
 
 Not re-run this session, because no persistence, authentication or synchronization code changed: the offline queue, service-worker reload, second-device and cross-account isolation matrix. The nonfatal Workbox inlineDynamicImports deprecation remains. No deployment was performed and no hosted verification was repeated.
 
+Closed a latent gap found during review: the API and the MCP tools validated only that a lesson ID existed, never that its module was published, so a lesson drafted for a still-planned module would have become reachable the moment its file was imported. src/lessons.ts now exports isPublishedLesson, publishedLessons and publishedLessonIds; the learning-position route, the lesson-scoped route guard, the MCP lesson schema, findLesson, the publishedLessons listing and the studio all gate on that set. npm run test:content asserts the gate against a synthetic catalog covering a published module, a planned module, an unknown module and a legacy week lesson, and separately asserts that every authored lesson currently belongs to a published module. The check was mutation-tested: forcing the gate to always allow makes test:content fail with "a lesson in a planned module must never be exposed", and restoring it passes. The ten-check backend suite and the new-lesson probe both pass against the gated server.
+
 Still pending: m05 onward, formal scored assessment and repair software, the richer tracker fields, market positioning sources, a real multi-employer hiring study at m20, an executed authenticated tool workflow, and project briefs. Do not describe these as complete.
 
 ---

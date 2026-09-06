@@ -1,5 +1,5 @@
 import { sections } from "../shared/position";
-import { lessons } from "../src/lessons";
+import { publishedLessonIds } from "../src/lessons";
 import { baseline } from "../src/course";
 import {
   OAuthProvider,
@@ -179,7 +179,7 @@ const defaultHandler: ExportedHandler<Env> = {
         })
         .strict()
         .parse(await bodyJson(request));
-      if (!lessons.some((l) => l.id === input.lessonId))
+      if (!publishedLessonIds.has(input.lessonId))
         throw new HttpError(404, "Lesson not found.");
       const result = await env.DB.prepare(
         `INSERT INTO learning_positions(user_id,lesson_id,section_id,revision,updated_at)
@@ -218,7 +218,7 @@ const defaultHandler: ExportedHandler<Env> = {
     }
     const lessonId =
       new URL(request.url).searchParams.get("lessonId") || baseline.id;
-    if (![baseline.id, ...lessons.map((l) => l.id)].includes(lessonId))
+    if (lessonId !== baseline.id && !publishedLessonIds.has(lessonId))
       throw new HttpError(404, "Lesson not found.");
     if (path === "/api/course-records" && request.method === "GET") {
       const rows = await env.DB.prepare(

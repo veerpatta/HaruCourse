@@ -4,13 +4,17 @@ import { canPoll, onActivityResume } from "./activity";
 import { sections } from "../shared/position";
 import { modules } from "./modules";
 import { useEffect, useState } from "react";
-import { lessons, type Lesson } from "./lessons";
+import {
+  publishedLessons as lessons,
+  moduleIdOf,
+  type Lesson,
+} from "./lessons";
 // `week` stays the grouping key because saved records, bookmarks and the
 // legacy documents all use it. Everything shown to the reader — the module
 // name, its number and its level — comes from src/modules.ts instead, so
 // publishing another module never needs an edit here.
 function moduleOf(lesson: Lesson) {
-  return modules.find((m) => m.id === (lesson.module || `m0${lesson.week || 1}`));
+  return modules.find((m) => m.id === moduleIdOf(lesson));
 }
 function moduleOfWeek(week: number) {
   const first = lessons.find((l) => (l.week || 1) === week);

@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { lessons } from "../src/lessons";
+import { publishedLessons, publishedLessonIds } from "../src/lessons";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
 import { WorkerEntrypoint } from "cloudflare:workers";
@@ -43,13 +43,13 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
     const lessonIdSchema = z
       .string()
       .refine(
-        (id) => id === baseline.id || lessons.some((l) => l.id === id),
+        (id) => id === baseline.id || publishedLessonIds.has(id),
         "Unknown lesson",
       )
       .default(baseline.id);
     const inputSchema = { lessonId: lessonIdSchema };
     const findLesson = (id: string) =>
-      lessons.find((l) => l.id === id) || baseline;
+      publishedLessons.find((l) => l.id === id) || baseline;
     if (scopes.includes("course:read")) {
       server.registerTool(
         "get_progress",
@@ -72,7 +72,7 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
         async ({ lessonId }) =>
           result({
             lesson: findLesson(lessonId),
-            publishedLessons: lessons.map((l) => ({
+            publishedLessons: publishedLessons.map((l) => ({
               id: l.id,
               title: l.title,
               lessonNumber: l.day,
@@ -95,7 +95,8 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
             // Lessons authored under the m03/m04 contract also carry what each
             // score means and the bounded repair for a criterion below 2. A
             // reviewer that only sees the names cannot assign a score.
-            criteria: lessons.find((l) => l.id === lessonId)?.criteria,
+            criteria: publishedLessons.find((l) => l.id === lessonId)
+              ?.criteria,
             scores: [
               "0 absent",
               "1 needs support",

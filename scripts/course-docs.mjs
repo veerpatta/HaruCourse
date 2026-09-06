@@ -7,7 +7,9 @@ registerHooks({
   },
 });
 const { modules } = await import("../src/modules.ts");
-const { lessons } = await import("../src/lessons.ts");
+const { lessons, publishedLessonIds, isPublishedLesson } = await import(
+  "../src/lessons.ts"
+);
 const catalog = readFileSync("RESOURCE-LIBRARY.md", "utf8");
 const ids = new Set([...catalog.matchAll(/^\| (R\d+) \|/gm)].map((m) => m[1]));
 assert.equal(ids.size, 49);
@@ -77,6 +79,40 @@ for (const l of lessons) {
     l.criteria.map((c) => c.criterion),
     `Lesson ${l.id} rubric does not match its criteria names`,
   );
+}
+// The API, the MCP tools and the studio all gate on publishedLessonIds
+// rather than on a lesson merely existing. Prove that gate actually consults
+// module status, using a synthetic catalog so nothing unpublished ships.
+{
+  const catalog = [
+    { id: "m03", status: "published" },
+    { id: "m99", status: "planned" },
+  ];
+  assert.equal(
+    isPublishedLesson({ module: "m03" }, catalog),
+    true,
+    "a lesson in a published module must be exposed",
+  );
+  assert.equal(
+    isPublishedLesson({ module: "m99" }, catalog),
+    false,
+    "a lesson in a planned module must never be exposed",
+  );
+  assert.equal(
+    isPublishedLesson({ module: "m404" }, catalog),
+    false,
+    "a lesson naming an unknown module must never be exposed",
+  );
+  assert.equal(
+    isPublishedLesson({ week: 1 }, catalog),
+    false,
+    "legacy week lessons must still be resolved through the catalog",
+  );
+  for (const l of lessons)
+    assert(
+      publishedLessonIds.has(l.id),
+      `Lesson ${l.id} is authored but its module is not published; publish the module or remove the import`,
+    );
 }
 function output(path, text) {
   if (process.argv.includes("--check"))
