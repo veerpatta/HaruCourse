@@ -12,7 +12,9 @@
     "preview": "vite preview --host 127.0.0.1",
     "check:deploy": "npm run build && wrangler deploy --dry-run",
     "deploy": "npm run build && wrangler deploy",
-    "test:cloud": "node scripts/test-cloud.mjs"
+    "test:cloud": "node scripts/test-cloud.mjs",
+    "docs:generate": "node scripts/course-docs.mjs",
+    "test:content": "node scripts/course-docs.mjs --check"
   },
   "dependencies": {
     "@cloudflare/workers-oauth-provider": "^0.10.3",

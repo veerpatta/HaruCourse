@@ -77,7 +77,7 @@ export const baseline = {
     {
       minutes: 10,
       title: "Reflect and save",
-      text: "What felt easy, unfamiliar, or uncertain? Record your actual time. Stop at two hours even if unfinished.",
+      text: "What felt easy, unfamiliar, or uncertain? Record your actual time. Pause whenever needed and return to unfinished work.",
     },
   ],
   rubric: [

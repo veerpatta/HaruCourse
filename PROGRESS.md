@@ -1,3 +1,19 @@
+# Self-paced release — 6 September 2026
+
+Current plan: PROJECT-PLAN.md. Start future authoring with AGENTS.md. Earlier entries below are historical and their calendar proposals are superseded by COURSE-REQUIREMENTS.md.
+
+Implemented: Levels → Modules → Lessons, no completion deadline; two renamed published modules with twelve stable lesson IDs. Full 21-module map (including baseline) covers all 17 areas. RESOURCE-LIBRARY.md has 28 verified public readings, three separately qualified candidate tool workflows, an unavailable retrieval and explicit advanced research gaps. Required learning excludes paid access; tools have local alternatives. The course is mapped, not fully authored.
+
+Added account-owned reading position with stable sections, server revisions/timestamps, offline queue and conflict protection independent of draft synchronization. Creator browsing uses the creator bookmark. Continue falls back from bookmark to unfinished practice to first core. Cumulative minutes no longer have a 1440-minute cap. Existing practice and feedback schema/IDs stay intact.
+
+Verification completed locally: content coverage/prerequisites/resource IDs/generated-doc consistency; TypeScript/client/worker build; backend authentication/CSRF/concurrency/feedback/OAuth/MCP suite plus bookmark isolation and stale revision checks. Browser: first login, read-only section save, reload, second isolated browser context, offline reconnection, stale offline conflict preserving server, missing lesson/section fallback using mocked GET responses, mobile 390x844 without horizontal overflow. Offline/conflict tests deliberately cause network/409 console entries. Original vision SHA256 remains 2DE612EE9517A761ACEF52507D25FDD83B65DC22BE1C9F76F84816B20033F26C. Nonfatal Workbox inlineDynamicImports deprecation remains.
+
+Production migration 0003_learning_positions applied. Hosted verification and final release identifier are recorded in docs/VERIFICATION-SELF-PACED.md.
+
+Still pending: deeper advanced subtopic research, authenticated optional tool workflow tests, detailed m03 onward lessons, formal scored assessment/remediation software, richer tracker and representative current India/remote hiring evidence. See RESOURCE-LIBRARY.md for specific research gaps; do not describe these as complete.
+
+---
+
 # Planning and progress record
 
 ## Confirmed decisions — 5 September 2026

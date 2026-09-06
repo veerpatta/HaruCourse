@@ -13,18 +13,21 @@ export type Lesson = {
   check: { question: string; answer: string }[];
   rubric: string[];
   portfolio: string;
-  resource: { title: string; url: string };
+  resource: { id: string; title: string; url: string };
 };
 const design = {
   title: "Design Council: the Double Diamond",
+  id: "R01",
   url: "https://www.designcouncil.org.uk/resources/the-double-diamond/",
 };
 const research = {
   title: "GOV.UK: using in-depth interviews",
+  id: "R27",
   url: "https://www.gov.uk/service-manual/user-research/using-in-depth-interviews",
 };
 const access = {
   title: "W3C: introduction to web accessibility",
+  id: "R28",
   url: "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
 };
 const week1: Lesson[] = [
@@ -65,7 +68,7 @@ const week1: Lesson[] = [
       {
         minutes: 10,
         title: "Reflect",
-        text: "Save your evidence and reflection. Stop at two hours even if unfinished.",
+        text: "Save your evidence and reflection. Pause whenever needed and return to unfinished work.",
       },
     ],
     deliverable:
@@ -106,7 +109,7 @@ const week1: Lesson[] = [
       {
         minutes: 20,
         title: "Review",
-        text: "Underline unverified explanations in yesterday’s notes.",
+        text: "Underline unverified explanations in the previous lesson’s notes.",
       },
       {
         minutes: 25,
@@ -168,7 +171,7 @@ const week1: Lesson[] = [
       {
         minutes: 35,
         title: "Write",
-        text: "Choose one Day 2 uncertainty. Draft six open questions and two neutral follow-ups. Remove predictions and leading language.",
+        text: "Choose one Lesson 2 uncertainty. Draft six open questions and two neutral follow-ups. Remove predictions and leading language.",
       },
       {
         minutes: 35,
@@ -292,7 +295,7 @@ const week1: Lesson[] = [
       {
         minutes: 15,
         title: "Critique",
-        text: "Compare against Day 4’s flow and add one missing state.",
+        text: "Compare against Lesson 4’s flow and add one missing state.",
       },
       {
         minutes: 10,
@@ -331,7 +334,7 @@ const week1: Lesson[] = [
     teach: [
       "Useful critique links an observation to task impact. “Messy” is vague. “Materials appear after commitment, so people may reserve before understanding preparation” gives a concrete concern.",
       "Separate severity from taste. Fix primary-task blockers before decoration. Choose one bounded repair and describe how you would check whether it helps.",
-      "Keep the previous version to explain iteration. This is an optional day; rest or catch up if five core sessions fill your capacity.",
+      "Keep the previous version to explain iteration. This is an optional lesson; rest or catch up if five core sessions fill your capacity.",
     ],
     example:
       "Replace an unexplained disabled Reserve button with availability information and another date. Check whether a visitor can identify the next step.",
@@ -339,7 +342,7 @@ const week1: Lesson[] = [
       {
         minutes: 20,
         title: "Review",
-        text: "Choose one weak criterion from the week.",
+        text: "Choose one weak criterion from the module.",
       },
       {
         minutes: 25,
@@ -383,12 +386,12 @@ const week1: Lesson[] = [
     id: "week1-day7-v1",
     day: 7,
     optional: true,
-    title: "Explain decisions and plan next week",
+    title: "Explain decisions and plan your next steps",
     why: "Practice the written communication needed for remote collaboration.",
     teach: [
       "A decision story connects context, evidence, alternatives, choice, and next check. Explain one trade-off rather than narrating every screen or activity.",
       "Match claims to evidence. A concept can show reasoning and craft, but not a production conversion gain. Distinguish proposals, observations, and untested outcomes.",
-      "Review actual hours before adding work. Reduce scope if the week was too heavy. Rest is valid on this optional day; next steps should follow gaps rather than tool trends.",
+      "Review actual hours before adding work. Reduce scope if the work felt too heavy. Rest is valid on this optional lesson; next steps should follow gaps rather than tool trends.",
     ],
     example:
       "“I moved materials before reservation because preparation is the reported concern. A checkbox records a click, not comprehension. I still need to observe visitors using the summary.”",
@@ -416,7 +419,7 @@ const week1: Lesson[] = [
       {
         minutes: 10,
         title: "Save",
-        text: "Save the note and plan. Do not infer mastery from one week.",
+        text: "Save the note and plan. Do not infer mastery from one module.",
       },
     ],
     deliverable: "A decision note and plan for the next five core sessions.",

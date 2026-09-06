@@ -5,7 +5,7 @@ export const recordSchema = z
     version: z.literal(1),
     notes: z.string().max(20000),
     submission: z.string().max(2000),
-    minutes: z.number().int().min(0).max(1440),
+    minutes: z.number().int().min(0).max(Number.MAX_SAFE_INTEGER),
     status: z.enum(["not-started", "practicing", "ready-for-review"]),
     updatedAt: z.string().max(40),
   })

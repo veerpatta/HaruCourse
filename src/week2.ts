@@ -1,14 +1,17 @@
 import type { Lesson } from "./lessons";
 const synthesis = {
   title: "GOV.UK: analyse a research session",
+  id: "R04",
   url: "https://www.gov.uk/service-manual/user-research/analyse-a-research-session",
 };
 const testing = {
   title: "GOV.UK: moderated usability testing",
+  id: "R05",
   url: "https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing",
 };
 const discovery = {
   title: "GOV.UK: how discovery works",
+  id: "R07",
   url: "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works",
 };
 export const week2: Lesson[] = [
@@ -22,15 +25,15 @@ export const week2: Lesson[] = [
       "Start with a decision, not a method. If you need to understand how people prepare for a workshop, a conversation about a recent visit can reveal context. If you need to know whether a materials summary is understandable, observe someone using it. A survey does not automatically answer either question well.",
       "Write a research question as an uncertainty: “When do attendees look for preparation instructions?” Then name the evidence that would help and the choice it would influence. This makes it easier to avoid collecting interesting but irrelevant information.",
       "Recruit people with experience related to the task, rather than choosing only whoever is easiest to reach. For this small practice study, one willing adult with a recent booking experience can help rehearse your method, but cannot represent the whole audience. Document that limitation.",
-      "Keep participant access separate from study quality. If nobody is available this week, improve the plan and do a clearly labelled self-walkthrough. Do not turn a fictional persona or an AI-generated interview into participant evidence. Never collect private booking or payment details for this exercise.",
+      "Keep participant access separate from study quality. If nobody is available during this module, improve the plan and do a clearly labelled self-walkthrough. Do not turn a fictional persona or an AI-generated interview into participant evidence. Never collect private booking or payment details for this exercise.",
     ],
     example:
       "Decision: whether preparation information belongs before reservation or in a reminder. Question: when do attendees decide what to pack? Evidence: a recent attendee’s sequence of actions, with a follow-up about where they looked for information. Limitation: one person may have an unusual routine.",
     steps: [
       {
         minutes: 20,
-        title: "Reconnect to Week 1",
-        text: "Read your Day 5 output and unresolved questions. Choose one decision you still cannot justify.",
+        title: "Reconnect to Module 1",
+        text: "Read your Lesson 5 output and unresolved questions. Choose one decision you still cannot justify.",
       },
       {
         minutes: 25,
@@ -40,7 +43,7 @@ export const week2: Lesson[] = [
       {
         minutes: 30,
         title: "Prepare materials",
-        text: "Adapt your Week 1 interview guide or create a task scenario. Include a voluntary-consent introduction and a note-taking template.",
+        text: "Adapt your Module 1 interview guide or create a task scenario. Include a voluntary-consent introduction and a note-taking template.",
       },
       {
         minutes: 30,
@@ -161,7 +164,7 @@ export const week2: Lesson[] = [
       {
         minutes: 20,
         title: "Review evidence",
-        text: "Read yesterday’s findings and limitations. Choose one that affects the workshop flow.",
+        text: "Read the previous lesson’s findings and limitations. Choose one that affects the workshop flow.",
       },
       {
         minutes: 30,
@@ -220,12 +223,12 @@ export const week2: Lesson[] = [
       {
         minutes: 20,
         title: "Specify states",
-        text: "Use Day 3’s hypothesis to list necessary screens and actions. Include one relevant recovery path.",
+        text: "Use Lesson 3’s hypothesis to list necessary screens and actions. Include one relevant recovery path.",
       },
       {
         minutes: 50,
         title: "Build",
-        text: "Use paper or your existing design tool to connect the task. Use the Week 1 layouts as a starting point; avoid learning a new tool today.",
+        text: "Use paper or your existing design tool to connect the task. Use the Module 1 layouts as a starting point; avoid learning a new tool during this exercise.",
       },
       {
         minutes: 20,
@@ -299,7 +302,7 @@ export const week2: Lesson[] = [
       {
         minutes: 20,
         title: "Report and submit",
-        text: "Write a brief evidence–decision–revision summary, add output references, and request creator review. Record real minutes; stop at two hours.",
+        text: "Write a brief evidence–decision–revision summary, add output references, and request creator review. Record real minutes; split practice across sessions as needed.",
       },
     ],
     deliverable:

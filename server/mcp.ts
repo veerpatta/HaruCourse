@@ -75,7 +75,8 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
             publishedLessons: lessons.map((l) => ({
               id: l.id,
               title: l.title,
-              day: l.day,
+              lessonNumber: l.day,
+                moduleId: `m0${l.week || 1}`,
             })),
             levels,
           }),

@@ -35,6 +35,98 @@ const creator = await signin(keys.creator);
 assert.equal((await call("/api/progress")).status, 401);
 assert.equal((await call("/api/progress", { cookie: learner })).status, 200);
 const tester = await signin(keys.test);
+const haruPositionBefore = await (
+  await call("/api/learning-position", { cookie: learner })
+).json();
+const testPositionBefore = await (
+  await call("/api/learning-position", { cookie: tester })
+).json();
+assert.equal((await call("/api/learning-position")).status, 401);
+const positionBody = {
+  lessonId: "week2-day3-v1",
+  sectionId: "check",
+  expectedRevision: testPositionBefore.position?.revision || 0,
+};
+const savePosition = await call("/api/learning-position", {
+  method: "PUT",
+  cookie: tester,
+  body: positionBody,
+});
+assert.equal(savePosition.status, 200);
+const positionSaved = await savePosition.json();
+assert.equal(
+  positionSaved.position.revision,
+  positionBody.expectedRevision + 1,
+);
+assert.equal(positionSaved.position.sectionId, "check");
+assert.equal(
+  (
+    await call("/api/learning-position", {
+      method: "PUT",
+      cookie: tester,
+      body: positionBody,
+    })
+  ).status,
+  409,
+);
+assert.deepEqual(
+  await (await call("/api/learning-position", { cookie: tester })).json(),
+  positionSaved,
+);
+assert.equal(
+  (
+    await call("/api/learning-position", {
+      method: "PUT",
+      cookie: tester,
+      body: { ...positionBody, lessonId: "removed" },
+    })
+  ).status,
+  404,
+);
+assert.equal(
+  (
+    await call("/api/learning-position", {
+      method: "PUT",
+      cookie: tester,
+      body: { ...positionBody, sectionId: "removed" },
+    })
+  ).status,
+  400,
+);
+assert.equal(
+  (
+    await call("/api/learning-position", {
+      method: "PUT",
+      cookie: tester,
+      origin: "https://evil.example",
+      body: positionBody,
+    })
+  ).status,
+  403,
+);
+const creatorPosition = await (
+  await call("/api/learning-position", { cookie: creator })
+).json();
+assert.equal(
+  (
+    await call("/api/learning-position", {
+      method: "PUT",
+      cookie: creator,
+      body: {
+        ...positionBody,
+        expectedRevision: creatorPosition.position?.revision || 0,
+      },
+    })
+  ).status,
+  200,
+);
+assert.deepEqual(
+  await (await call("/api/learning-position", { cookie: learner })).json(),
+  haruPositionBefore,
+);
+checks.push(
+  "reading bookmark authentication, revision conflict, invalid targets, CSRF and creator/test isolation",
+);
 for (const username of ["haru", "itsme", "unknown"])
   assert.equal(
     (
@@ -62,7 +154,7 @@ assert.equal(
           version: 1,
           notes: "Isolated test workspace",
           submission: "",
-          minutes: 0,
+          minutes: 1500,
           status: "practicing",
           updatedAt: "",
         },
@@ -225,12 +317,32 @@ assert.ok(
 checks.push(
   "per-lesson persistence, baseline isolation, catalog validation and course summary",
 );
-const week2Path='/api/progress?lessonId=week2-day1-v1';
-const week2Previous=await (await call(week2Path,{cookie:learner})).json();
-assert.equal((await call(week2Path,{method:'PUT',cookie:learner,body:{record:{...record,notes:'Week 2 independent evidence'},expectedRevision:week2Previous.revision}})).status,200);
-assert.equal((await (await call(week2Path,{cookie:creator})).json()).record.notes,'Week 2 independent evidence');
-assert.equal((await (await call('/api/progress',{cookie:learner})).json()).revision,current.revision);
-checks.push('Week 2 persistence and creator visibility without changing baseline');
+const week2Path = "/api/progress?lessonId=week2-day1-v1";
+const week2Previous = await (await call(week2Path, { cookie: learner })).json();
+assert.equal(
+  (
+    await call(week2Path, {
+      method: "PUT",
+      cookie: learner,
+      body: {
+        record: { ...record, notes: "Week 2 independent evidence" },
+        expectedRevision: week2Previous.revision,
+      },
+    })
+  ).status,
+  200,
+);
+assert.equal(
+  (await (await call(week2Path, { cookie: creator })).json()).record.notes,
+  "Week 2 independent evidence",
+);
+assert.equal(
+  (await (await call("/api/progress", { cookie: learner })).json()).revision,
+  current.revision,
+);
+checks.push(
+  "Week 2 persistence and creator visibility without changing baseline",
+);
 const unauth = await call("/mcp");
 assert.equal(unauth.status, 401);
 assert.match(

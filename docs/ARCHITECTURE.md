@@ -1,3 +1,9 @@
+## Self-paced update — 6 September 2026
+
+The current content authority/synchronization table is in COURSE-AUTHORING.md. Modules are defined once in src/modules.ts and rendered by the app; the blueprint and legacy WEEK markdown views are generated. The course has no deadline.
+
+GET/PUT /api/learning-position is authenticated and always uses the signed-in user ID, including creators. D1 learning_positions stores lesson_id, section_id, revision and server updated_at. PUT uses expectedRevision compare-and-swap; stale writes receive 409 with current position. The independent harucourse:position:<userId> offline queue retains a pending location and server base revision. Conflict keeps the server location; practice drafts retain their separate conflict workflow. Stable sections are learn, practice-plan, check and practice. Bookmark navigation never changes submission or feedback data. Cumulative practice minutes accept nonnegative safe integers.
+
 # Application architecture
 
 React, TypeScript, and Vite render the installable course PWA. Course material lives in `src/course.ts` and the root planning Markdown files. The baseline and Weeks 1–2 are published. The published lessons include teaching, examples, exercises, understanding checks, and per-lesson work records; later weeks remain planned.

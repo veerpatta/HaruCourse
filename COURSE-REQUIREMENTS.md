@@ -10,9 +10,9 @@ Build on Applied Arts, past UI/UX study, and visual/marketing experience without
 
 ## Non-negotiable teaching requirements
 
-- Organize the complete journey as Level → Month → Week → Day, with prerequisites and progressively harder practice.
-- Keep core days to two hours and weekly core work to ten hours, allowing optional practice up to fourteen. Reforecast from actual pace; do not force an arbitrary graduation date.
-- Every day specifies what, why, exact learning/practice instructions, time, exercise, assignment where relevant, deliverable, understanding check, portfolio connection, and a direct resource.
+- Organize the journey as Levels → Modules → Lessons; see the generated module map in COURSE-BLUEPRINT.md.
+- No completion deadline or daily requirement. Two hours is a suggested session; split and revisit lessons freely. Effort estimates are not gates.
+- Every lesson follows docs/COURSE-AUTHORING.md and approved resources in RESOURCE-LIBRARY.md.
 - Increase practical work over time: learn, practice, build, critique, iterate, and ship when feasible. Readings support assignments rather than replace teaching.
 - Teach across products and industries. The workshop example is an introductory practice context, not a portfolio specialization or the only future domain.
 - Develop approximately three to five strong portfolio projects progressively. Three core projects are the current proposal; add a fourth/fifth only when a concrete evidence gap justifies them.
@@ -28,7 +28,7 @@ Status meanings: **Intro only** = some published exposure, not full coverage; **
 
 | Brief requirement | Intended place | Present evidence | Remaining production work |
 |---|---|---|---|
-| 1. Design foundations | Level 1, targeted refresh | Intro only: hierarchy and critique in Week 1 | Diagnostic-driven typography, color, spacing, grids, composition, Gestalt, and communication exercises |
+| 1. Design foundations | Level 1, targeted refresh | Intro only: hierarchy and critique in Module 1 | Diagnostic-driven typography, color, spacing, grids, composition, Gestalt, and communication exercises |
 | 2. UX foundations | Levels 1–2 | Intro only: UX/UI, error prevention and task reasoning | Mental models, cognition, affordances/signifiers, feedback, recognition/recall, UX laws and their limitations |
 | 3. Product thinking | Levels 1, 2, 5 | Intro only: goals, assumptions, options and hypotheses | Value, market fit, strategy, MVPs, roadmaps, metrics and experiments with decision exercises |
 | 4. UX research | Level 2, deeper work in Level 5 | Intro only: interviews, consent, synthesis, small usability loop | Qualitative/quantitative selection, desk/competitive research, recruitment, surveys, observation, contextual/diary methods, JTBD, journeys and reporting |
@@ -50,12 +50,12 @@ Status meanings: **Intro only** = some published exposure, not full coverage; **
 
 | Requirement | Current state | What must be authored or implemented |
 |---|---|---|
-| Complete monthly/weekly/daily roadmap | High-level 620-hour blueprint; Weeks 1–2 published | Map every month/week to competencies, then publish detailed days in coherent batches; keep proposed scheduling adjustable |
+| Complete self-paced module roadmap | High-level 620-hour blueprint; Modules 1–2 published | The full module map now covers all 17 areas; publish detailed lessons in prerequisite order |
 | Dedicated tool training | Priority sketch only | Evaluate Figma, FigJam, Illustrator, Photoshop, After Effects, ProtoPie, Framer, Webflow, Notion, Miro, Jira, Confluence, analytics/behavior tools, AI and handoff tools. For each: essential/important/useful/optional, reason, target level, path, exercises, mini-project and curriculum placement. Do not require all of them |
 | Progressive portfolio | Three project categories proposed | Complete each brief's problem, context, users, business, research, competition, synthesis, conditional personas/JTBD, journey, IA, flows, wireframes, prototype, UI, system, testing, iteration, solution, honest metrics, reflection and case-study structure |
-| Current resources | A few primary references attached to introductory lessons | Curated library by topic: purpose, value, level, free/paid status, direct link, checked date and free fallback; include diverse formats only when useful |
+| Current resources | Whole-course public reading pairs cataloged; advanced subtopic and tool workflow gaps recorded in RESOURCE-LIBRARY.md | Curated library by topic: purpose, value, level, free/paid status, direct link, checked date and free fallback; include diverse formats only when useful |
 | Book list | Not authored | Small Must Read / Highly Recommended / Advanced / Reference list with reading budgets and free alternatives/access paths |
-| Stay Current system | Sustainable principle noted | Concrete daily/weekly/monthly routine, selected people/publications/communities, time cap, and a test for evidence versus promotional trend claims |
+| Stay Current system | Sustainable principle noted | Optional session/module/portfolio-checkpoint routine, selected people/publications/communities, time cap, and a test for evidence versus promotional trend claims |
 | Career preparation | Initial target and transition principles | Evidence-backed junior/mid-level expectations, resume, LinkedIn, case studies, letters, networking/outreach drafts, communities and interview practice across required formats |
 | Whole-program tracker | Partial system: account-owned notes, reference, actual minutes, readiness, revisions and feedback | Add date/session history, resources completed, assignment identity, portfolio contributions, tool skills, confidence, quiz scores, revision needs and assessment records; provide portable exports |
 | Assessment and remediation | Rubric guidance and text feedback; no formal pass/repair workflow | Creator assessment tied to submitted revision, dimension scores, outcome, repair task, recheck, and evidence gates; quizzes/tool tests/presentations supplement practical work |
@@ -66,8 +66,8 @@ Status meanings: **Intro only** = some published exposure, not full coverage; **
 The direction is aligned, but the deliverable is substantially incomplete. Twelve published lessons represent an introduction, not the complete Product Design curriculum. The platform has received more implementation attention than the content and assessment programs; future milestones should rebalance toward those requirements.
 
 1. Finish the dated 2026 hiring/tool evidence pass before claiming market alignment or fixing career-level conclusions. Existing enduring official references are useful but are not a representative hiring study.
-2. Use Weeks 1–2 as an initial practice loop. Do not infer proficiency in research, accessibility, systems or prototyping from a brief introductory exercise.
-3. Establish the month/week competency map before filling later weeks opportunistically. Explain deliberate revisiting at greater depth.
+2. Use Modules 1–2 as an initial practice loop. Do not infer proficiency in research, accessibility, systems or prototyping from a brief introductory exercise.
+3. Use the complete module competency map before filling later lessons. Explain deliberate revisiting at greater depth.
 4. Introduce an appropriate design-tool learning path and dedicated web foundations rather than leaving every exercise indefinitely at “paper or a familiar tool.” Keep free alternatives.
 5. Plan different contexts for the core portfolio projects once participant access is known. Do not count the workshop practice as a finished portfolio project.
 6. Implement formal creator assessment and richer tracking before presenting assessed completion totals. The app's current zero-assessed label reflects a missing workflow, not an assessment of the learner.
@@ -79,18 +79,19 @@ The direction is aligned, but the deliverable is substantially incomplete. Twelv
 - Target India plus international remote roles, checking India eligibility per vacancy.
 - Local course Markdown remains available; delivery now includes the Cloudflare-hosted installable app, backend and MCP.
 - Required hosting/software should incur no additional cost within free allowances; no paid model API is required. Account billing remains unverified through the CLI.
-- Five core two-hour days plus optional catch-up/rest preserves the stated 10–14 hour range. The first week's seven-day view does not impose fourteen mandatory hours.
+- Refinement approved 6 September 2026: self-paced modules supersede calendar schedules in the unchanged original. No deadlines, mandatory cadence, graduation forecast or cumulative effort cap.
 - Three core portfolio projects satisfy the original three-to-five range; extras need a reason.
 - The 620-hour estimate is provisional and includes project/iteration hours. Adjust it based on actual evidence and pace.
 - Requested account details are in local `.secrets`; never copy passwords into this brief or other tracked documents.
 
 ## Next production order
 
-1. Produce the hiring evidence table, role-level comparison, and required-skill coverage check; record observation dates and limitations.
-2. Complete a month/week map with prerequisites, assessment milestones and integrated tool/web training. Reconcile it with the 620-hour estimate.
-3. Write Month 1 Weeks 3–4 and the first meaningful creator assessment/repair workflow.
-4. Produce detailed core project briefs, the prioritized tool roadmap, and resource/book/current-awareness library.
-5. Expand later lessons in mapped batches, with increasing practical independence and portfolio evidence.
-6. Add whole-program tracker fields and career exercises when their prerequisites are taught.
+1. Follow the mapped prerequisite sequence in COURSE-BLUEPRINT.md; review RESOURCE-LIBRARY.md gaps before writing m03/m04.
+2. Validate optional tool workflows against free accounts before making any tool-specific task required; retain equivalent free local exercises.
+3. Author detailed lessons using the contract, then add formal creator assessment and repair workflow.
+4. Develop three complete project briefs and later modules, followed by dated India/remote hiring research and career exercises.
+5. Keep richer tracker fields and assessments explicitly pending until implemented and verified.
 
-See [authoring standards](docs/COURSE-AUTHORING.md), [project plan](PROJECT-PLAN.md), and [progress record](PROGRESS.md). This order may change with explicit user steering or diagnostic evidence; the broad purpose and evidence requirements remain.
+## Continuation contract
+
+Authenticated GET/PUT /api/learning-position stores the signed-in account's lesson, stable section, revision and server timestamp. Creator browsing has its own bookmark. Continue learning uses a valid bookmark, then the latest unfinished practice, then the first core lesson. Unknown section falls back to Learn; unavailable lesson falls through to practice/core. Offline bookmarks have their own cache/queue; a stale revision keeps the newer server position. Draft conflict resolution is separate. Reading, readiness, elapsed time and navigation do not imply assessed completion. Existing IDs, record versions, submissions, feedback and storage keys remain stable.

@@ -1,15 +1,28 @@
+import { usePosition } from "./usePosition";
+import { sections } from "../shared/position";
+import { modules } from "./modules";
+const moduleNames = modules
+  .filter((m) => ["m01", "m02"].includes(m.id))
+  .map((m) => m.title);
 import { useEffect, useState } from "react";
 import { lessons, type Lesson } from "./lessons";
 import { usePractice } from "./usePractice";
 import type { User, RecordData, Feedback } from "../shared/record";
 export function LearningStudio({ user }: { user: User }) {
+  const bookmark = usePosition(user.id);
+  const [section, setSection] = useState("learn");
   const [selected, select] = useState<string | null>(null);
   const [week, setWeek] = useState(1);
   const weeks = [...new Set(lessons.map((l) => l.week || 1))];
-  function open(id: string) {
+  function open(id: string, target = "learn") {
     const l = lessons.find((l) => l.id === id);
     if (l) {
       setWeek(l.week || 1);
+      const safe = sections.includes(target as (typeof sections)[number])
+        ? target
+        : "learn";
+      setSection(safe);
+      bookmark.remember(id, safe);
       select(id);
       window.scrollTo(0, 0);
     }
@@ -51,6 +64,8 @@ export function LearningStudio({ user }: { user: User }) {
       <LessonReader
         key={item.id}
         lesson={item}
+        section={section}
+        remember={bookmark.remember}
         user={user}
         back={() => select(null)}
         next={lessons[lessons.findIndex((l) => l.id === item.id) + 1]}
@@ -71,24 +86,18 @@ export function LearningStudio({ user }: { user: User }) {
       (a, b) => Date.parse(b.record.updatedAt) - Date.parse(a.record.updatedAt),
     )[0];
   const resume =
+    lessons.find((l) => l.id === bookmark.position?.lessonId) ||
     lessons.find((l) => l.id === recent?.lessonId) ||
-    lessons.find(
-      (l) =>
-        !l.optional &&
-        !records.some(
-          (r) => r.lessonId === l.id && r.record.status === "ready-for-review",
-        ),
-    );
+    lessons.find((l) => !l.optional);
   return (
     <>
-      <span className="eyebrow">LEVEL 1 · MONTH 1 · WEEK {week}</span>
+      <span className="eyebrow">LEVEL 1 · MODULE {week}</span>
       <h1>Your next step in design.</h1>
       <p className="intro">
-        Five core sessions per week · 10 hours. Bring the previous session’s
-        output. Week 1 has two optional practice days; use Week 2’s remaining
-        days for catch-up or rest.
+        Learn at your own pace. Two hours is a suggested session, with no daily
+        requirement or completion deadline. Pause and return whenever you need.
       </p>
-      <div className="actions" aria-label="Choose a week">
+      <div className="actions" aria-label="Choose a module">
         {weeks.map((w) => (
           <button
             className={w === week ? "primary" : "secondary"}
@@ -96,21 +105,35 @@ export function LearningStudio({ user }: { user: User }) {
             key={w}
             onClick={() => setWeek(w)}
           >
-            Week {w}
+            {moduleNames[w - 1]}
           </button>
         ))}
       </div>
       {resume && (
         <section className="card continue-card">
           <span className="eyebrow">
-            {recent ? "RETURN TO YOUR PRACTICE" : "NEXT CORE SESSION"}
+            {bookmark.position
+              ? "CONTINUE READING"
+              : recent
+                ? "RETURN TO YOUR PRACTICE"
+                : "FIRST CORE LESSON"}
           </span>
           <h2>{resume.title}</h2>
           <p>
-            Week {resume.week || 1} · Day {resume.day}. Based on saved practice,
-            not an assessment of mastery.
+            Module {resume.week || 1} · Lesson {resume.day}. Your saved place or
+            suggested next step, not an assessment of mastery.
           </p>
-          <button className="primary" onClick={() => open(resume.id)}>
+          <button
+            className="primary"
+            onClick={() =>
+              open(
+                resume.id,
+                bookmark.position?.lessonId === resume.id
+                  ? bookmark.position.sectionId
+                  : "learn",
+              )
+            }
+          >
             Continue learning →
           </button>
         </section>
@@ -124,6 +147,7 @@ export function LearningStudio({ user }: { user: User }) {
         }{" "}
         awaiting review · 0 assessed completions
       </div>
+      <p role="status">{bookmark.status}</p>
       {error && <p role="status">{error}</p>}
       <div className="lesson-list">
         {weekLessons.map((l) => {
@@ -135,7 +159,8 @@ export function LearningStudio({ user }: { user: User }) {
               onClick={() => open(l.id)}
             >
               <span className="eyebrow">
-                DAY {l.day} · {l.optional ? "OPTIONAL" : "CORE"} · 120 MIN
+                LESSON {l.day} · {l.optional ? "OPTIONAL" : "CORE"} · ~120 MIN
+                EFFORT
               </span>
               <h2>{l.title}</h2>
               <p>{l.why}</p>
@@ -150,26 +175,47 @@ export function LearningStudio({ user }: { user: User }) {
         })}
       </div>
       <p className="notice">
-        Weeks 1 and 2 are published and ready to study. Later weeks of the
-        620-hour program are still being authored; the level map is the roadmap,
-        not a claim of complete course content.
+        The first two modules are published and ready to study. Later modules of
+        the 620-hour program are still being authored; the level map is the
+        roadmap, not a claim of complete course content.
       </p>
     </>
   );
 }
 function LessonReader({
   lesson,
+  section,
+  remember,
   user,
   back,
   next,
   open,
 }: {
   lesson: Lesson;
+  section: string;
+  remember: (lessonId: string, sectionId: string) => void;
   user: User;
   back: () => void;
   next?: Lesson;
   open: (id: string) => void;
 }) {
+  useEffect(() => {
+    (
+      document.getElementById(section) || document.getElementById("learn")
+    )?.scrollIntoView();
+    const observe = () => {
+      const current = [...sections]
+        .reverse()
+        .find(
+          (id) =>
+            (document.getElementById(id)?.getBoundingClientRect().top ??
+              Infinity) <= 180,
+        );
+      if (current) remember(lesson.id, current);
+    };
+    window.addEventListener("scroll", observe, { passive: true });
+    return () => window.removeEventListener("scroll", observe);
+  }, [lesson.id, section]);
   const practice = usePractice(
     user,
     lesson.id,
@@ -202,15 +248,15 @@ function LessonReader({
         ← All lessons
       </button>
       <span className="eyebrow">
-        MONTH 1 · WEEK {lesson.week || 1} · DAY {lesson.day}
+        LEVEL 1 · MODULE {lesson.week || 1} · LESSON {lesson.day}
         {lesson.optional ? " · OPTIONAL" : ""}
       </span>
       <h1>{lesson.title}</h1>
       <p className="muted">
         {lesson.week === 2 && lesson.day === 1
-          ? "Before you start: bring your Week 1 flow, screens, and unresolved questions."
+          ? "Before you start: bring your Product Design Foundations flow, screens, and unresolved questions."
           : lesson.day > 1
-            ? "Before you start: bring the previous day’s output and reflection."
+            ? "Before you start: bring the previous lesson’s output and reflection."
             : "Start here; no prior lesson is required."}
       </p>
       <p className="intro">{lesson.why}</p>
@@ -235,7 +281,19 @@ function LessonReader({
           </button>
         </section>
       )}
-      <article className="card lesson-reading">
+      <nav aria-label="Lesson sections">
+        {sections.map((id) => (
+          <a
+            key={id}
+            href={`#${id}`}
+            onClick={() => remember(lesson.id, id)}
+            style={{ marginRight: 16 }}
+          >
+            {id.replaceAll("-", " ")}
+          </a>
+        ))}
+      </nav>
+      <article id="learn" className="card lesson-reading">
         <h2>Learn</h2>
         {lesson.teach.map((t) => (
           <p key={t}>{t}</p>
@@ -248,12 +306,12 @@ function LessonReader({
           </a>
         </p>
         <small>
-          Reference checked 6 September 2026. Use the reading within today’s
-          time budget.
+          Reference checked 6 September 2026. Split the reading across sessions
+          as needed.
         </small>
       </article>
-      <section className="card lesson-reading">
-        <h2>Your two-hour session</h2>
+      <section id="practice-plan" className="card lesson-reading">
+        <h2>Your practice plan</h2>
         <ol>
           {lesson.steps.map((s) => (
             <li key={s.title}>
@@ -269,11 +327,11 @@ function LessonReader({
         <h3>Portfolio connection</h3>
         <p>{lesson.portfolio}</p>
         <p>
-          Stop at 120 minutes. Note what remains rather than extending the core
-          session.
+          Pause after any step. Save your work and return here. Times are
+          optional effort estimates across as many sessions as you need.
         </p>
       </section>
-      <section className="card lesson-reading">
+      <section id="check" className="card lesson-reading">
         <h2>Check your understanding</h2>
         {lesson.check.map((q) => (
           <details key={q.question}>
@@ -293,7 +351,7 @@ function LessonReader({
           submission state; it does not mark the lesson mastered.
         </p>
       </section>
-      <section className="card lesson-reading">
+      <section id="practice" className="card lesson-reading">
         <h2>
           {user.role === "creator"
             ? "Review Haru’s practice"
@@ -333,7 +391,7 @@ function LessonReader({
           id="lesson-minutes"
           type="number"
           min={0}
-          max={1440}
+          max={Number.MAX_SAFE_INTEGER}
           step={1}
           value={record.minutes}
           disabled={user.role === "creator"}
@@ -430,7 +488,7 @@ function LessonReader({
         <section className="card continue-card">
           <h2>Next: {next.title}</h2>
           <p>
-            Week {next.week || 1} · Day {next.day}
+            Module {next.week || 1} · Lesson {next.day}
             {next.optional ? " · Optional" : ""}. Moving ahead does not mark
             this lesson complete.
           </p>

@@ -1,3 +1,4 @@
+import { sections } from "../shared/position";
 import { lessons } from "../src/lessons";
 import { baseline } from "../src/course";
 import {
@@ -159,6 +160,61 @@ const defaultHandler: ExportedHandler<Env> = {
         .bind(await hash(cookieValue(request, cookieName(request))))
         .run();
       return json({ ok: true }, 200, { "set-cookie": cookie(request, "", 0) });
+    }
+    if (path === "/api/learning-position") {
+      const read = () =>
+        env.DB.prepare(
+          "SELECT lesson_id AS lessonId, section_id AS sectionId, revision, updated_at AS updatedAt FROM learning_positions WHERE user_id=?",
+        )
+          .bind(user.id)
+          .first();
+      if (request.method === "GET") return json({ position: await read() });
+      if (request.method !== "PUT")
+        throw new HttpError(405, "Method not allowed.");
+      const input = z
+        .object({
+          lessonId: z.string(),
+          sectionId: z.enum(sections),
+          expectedRevision: z.number().int().min(0),
+        })
+        .strict()
+        .parse(await bodyJson(request));
+      if (!lessons.some((l) => l.id === input.lessonId))
+        throw new HttpError(404, "Lesson not found.");
+      const result = await env.DB.prepare(
+        `INSERT INTO learning_positions(user_id,lesson_id,section_id,revision,updated_at)
+        SELECT ?,?,?,1,? WHERE ?=0
+        ON CONFLICT(user_id) DO UPDATE SET lesson_id=excluded.lesson_id,section_id=excluded.section_id,revision=learning_positions.revision+1,updated_at=excluded.updated_at
+        WHERE learning_positions.revision=?`,
+      )
+        .bind(
+          user.id,
+          input.lessonId,
+          input.sectionId,
+          new Date().toISOString(),
+          input.expectedRevision,
+          input.expectedRevision,
+        )
+        .run();
+      // An update with a nonzero revision needs its own compare-and-swap path.
+      if (input.expectedRevision > 0) {
+        const update = await env.DB.prepare(
+          "UPDATE learning_positions SET lesson_id=?,section_id=?,revision=revision+1,updated_at=? WHERE user_id=? AND revision=?",
+        )
+          .bind(
+            input.lessonId,
+            input.sectionId,
+            new Date().toISOString(),
+            user.id,
+            input.expectedRevision,
+          )
+          .run();
+        return json(
+          { position: await read() },
+          update.meta.changes ? 200 : 409,
+        );
+      }
+      return json({ position: await read() }, result.meta.changes ? 200 : 409);
     }
     const lessonId =
       new URL(request.url).searchParams.get("lessonId") || baseline.id;

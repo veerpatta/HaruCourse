@@ -1,3 +1,4 @@
+import { modules } from "./modules";
 import { LearningStudio } from "./LearningStudio";
 import { usePractice } from "./usePractice";
 import { StrictMode, useEffect, useState } from "react";
@@ -110,7 +111,7 @@ function App({
   function save(status = record.status) {
     if (!recordSchema.safeParse({ ...record, status }).success) {
       setMessage(
-        "Use whole minutes from 0 to 1440, and add a reflection and work reference before marking work ready.",
+        "Use whole minutes from zero upwards, and add a reflection and work reference before marking work ready.",
       );
       return;
     }
@@ -150,7 +151,7 @@ function App({
   }
   const nav = [
     { name: "Lessons", icon: BookOpen },
-    { name: "Today", icon: LayoutGrid },
+    { name: "Dashboard", icon: LayoutGrid },
     { name: "Course map", icon: Map },
     { name: "My practice", icon: PencilLine },
     { name: "Progress", icon: TrendingUp },
@@ -165,7 +166,7 @@ function App({
           className="brand"
           href="#"
           onClick={() => {
-            setTab("Today");
+            setTab("Dashboard");
             setLesson(false);
           }}
         >
@@ -312,7 +313,7 @@ function App({
             </>
           ) : tab === "Lessons" ? (
             <LearningStudio user={user} />
-          ) : tab === "Today" ? (
+          ) : tab === "Dashboard" ? (
             <>
               <div className="greeting">
                 <div>
@@ -393,20 +394,13 @@ function App({
                     not a streak.
                   </h3>
                   <p>
-                    Five focused sessions a week. Room to catch up. Permission
-                    to rest.
+                    Choose when to study. Pause after any step and return to
+                    your saved section.
                   </p>
-                  <div
-                    className="week"
-                    aria-label="Suggested schedule: five practice days, one flexible day, one rest day"
-                  >
-                    {["M", "T", "W", "T", "F", "S", "S"].map((d, i) => (
-                      <span key={i} className={i < 5 ? "study-day" : ""}>
-                        {d}
-                      </span>
-                    ))}
-                  </div>
-                  <small>10 core hours · flexible weekends</small>
+                  <small>
+                    No completion deadline. Two hours is an optional session
+                    guide.
+                  </small>
                 </section>
               </div>
               <div className="section-heading">
@@ -437,8 +431,22 @@ function App({
                 620 planned hours, built around real work and thoughtful
                 iteration.
                 <br />
-                Week 1 is available in Lessons. Later weeks are being developed.
+                Two introductory modules are available in Lessons. Further
+                modules are planned.
               </p>
+              <section className="card">
+                <h2>Modules in order</h2>
+                <ol>
+                  {modules.map((m) => (
+                    <li key={m.id}>
+                      <strong>
+                        Level {m.level} · {m.title}
+                      </strong>{" "}
+                      — {m.status}. {m.output}
+                    </li>
+                  ))}
+                </ol>
+              </section>
               <div className="level-list">
                 {levels.map((level, i) => (
                   <article className="card level-row" key={level.title}>
@@ -528,14 +536,14 @@ function App({
                     id="minutes"
                     type="number"
                     min="0"
-                    max="1440"
+                    max={Number.MAX_SAFE_INTEGER}
                     step="1"
                     value={record.minutes}
                     onChange={(e) =>
                       setRecord({
                         ...record,
                         minutes: Math.min(
-                          1440,
+                          Number.MAX_SAFE_INTEGER,
                           Math.max(0, Number(e.target.value)),
                         ),
                       })

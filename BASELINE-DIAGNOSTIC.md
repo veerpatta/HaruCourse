@@ -1,3 +1,5 @@
+> Self-paced refinement (6 September 2026): all times below are optional effort guides. Split this diagnostic across sessions; no deadline or hard stop applies.
+
 # Baseline diagnostic — 120 minutes
 
 Purpose: identify your starting point and avoid unnecessary repetition. This is not a pass/fail exam or a portfolio assignment. No preparation is required. Use paper or a familiar tool; unfamiliar Figma controls should not obscure your design reasoning.
