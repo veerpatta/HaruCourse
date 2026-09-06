@@ -167,7 +167,7 @@ export const modules = [
     primary: "R17",
     alternative: "R06",
     output: "Tokens, components, variants, documentation and version change",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m14",
