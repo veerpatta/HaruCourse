@@ -14,7 +14,7 @@ const { baselineLesson } = await import('../src/course.ts');
 const { readingSelections } = await import('../src/reading.ts');
 const catalog = readFileSync("RESOURCE-LIBRARY.md", "utf8");
 const ids = new Set([...catalog.matchAll(/^\| (R\d+) \|/gm)].map((m) => m[1]));
-assert.equal(ids.size, 62);
+assert.equal(ids.size, 63);
 const seen = new Set();
 for (const m of modules) {
   assert(!seen.has(m.id));
@@ -220,6 +220,31 @@ for (const l of [baselineLesson, ...lessons.filter(l => !l.module)]) {
   }
   assert.equal(l.deliverable, l.outputs.join("; "));
   if (l.id !== baselineLesson.id) assert(readingSelections[l.resource.id]);
+}
+// Modules authored directly in the guided shape hold themselves to the same
+// concise standard as the rewritten legacy lessons. m03-m07 reach the app
+// through adaptPublished and keep their longer prose in `explanation`, so they
+// are exempt here by design rather than by oversight.
+for (const l of lessons.filter((l) => l.guided)) {
+  assert(
+    l.prerequisite && l.outputs.length && l.repairs.length,
+    `Guided lesson ${l.id} needs a prerequisite, outputs and repairs`,
+  );
+  assert(
+    l.teach.every((t) => t.length <= 240),
+    `Keep essential teaching concise: ${l.id}`,
+  );
+  assert(
+    l.outputs.every((t) => t.length <= 240),
+    `Keep each named output concise: ${l.id}`,
+  );
+  for (const s of l.steps) {
+    assert(s.instructions.length, `Guided step needs instructions: ${l.id}`);
+    assert(
+      s.instructions.every((t) => t.length <= 240),
+      `Keep each action concise: ${l.id} / ${s.title}`,
+    );
+  }
 }
 output(
   "BASELINE-DIAGNOSTIC.md",

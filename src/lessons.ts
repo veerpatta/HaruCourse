@@ -3,6 +3,7 @@ import { module4 } from './module4';
 import { module5 } from './module5';
 import { module6 } from './module6';
 import { module7 } from './module7';
+import { module8 } from './module8';
 import { modules } from './modules';
 import { adaptPublished, type Lesson } from './teaching';
 import { week2 } from "./week2";
@@ -685,6 +686,7 @@ export const lessons = [
   ...module5.map(adaptPublished),
   ...module6.map(adaptPublished),
   ...module7.map(adaptPublished),
+  ...module8,
 ];
 
 // A lesson's owning module. Legacy lessons predate the `module` field and are

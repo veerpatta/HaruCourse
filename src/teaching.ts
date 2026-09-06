@@ -42,6 +42,11 @@ export type LegacyLesson = {
   freeToolPath?: string;
   resources?: AssignedResource[];
   criteria?: Criterion[];
+  // Set by modules authored directly in the guided Learn -> Do -> Check shape
+  // rather than bridged through adaptPublished. It is what lets the content
+  // checker hold new lessons to the concise standard while leaving m03-m07,
+  // which predate it, exempt by design.
+  guided?: true;
 };
 export type Lesson = Omit<LegacyLesson, "steps"> & {
   id: string;

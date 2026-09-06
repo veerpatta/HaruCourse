@@ -106,7 +106,7 @@ export const modules = [
     primary: "R06",
     alternative: "R03",
     output: "Responsive UI, content, grids and local components",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m09",
