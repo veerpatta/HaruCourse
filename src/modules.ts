@@ -255,6 +255,6 @@ export const modules = [
     alternative: "R22",
     output:
       "Role evidence matrix, resume, profile, outreach drafts and interview practice",
-    status: "planned",
+    status: "published",
   },
 ];
