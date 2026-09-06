@@ -65,3 +65,9 @@ Hosted login gate, remembered session after reload, and logout also passed on de
 Build and local integration tests passed, including lesson ID validation, per-lesson persistence, baseline isolation, course summary, and prior authentication/OAuth/MCP tests. Chromium verified automatic write without pressing Save, reload recovery, offline edit/reconnect, isolated lesson records, and conflict preserving the local draft. Seven authored lessons each total 120 minutes; Days 6 and 7 are optional. Three linked primary references checked on 6 September 2026.
 
 Hosted test-account verification passed: a note entered without pressing Save produced D1 lesson record `week1-day1-v1`, revision 1, confirmed with a remote SQL read. Reload restored the note. Mobile 390 × 844 had no horizontal overflow. Haru’s records were not used for write testing. Source references and the complete first-week material are preserved in WEEK-01.md. Later weeks and file uploads remain unfinished.
+
+## Week 2 and course navigation
+
+Validated five unique Week 2 lesson IDs, 120 minutes per session, teaching and review criteria. Local integration tests passed including Week 2 writes, creator visibility, baseline isolation, and OAuth/MCP regression. Chromium passed week filtering, autosave, continuation after reload from the saved record, next-lesson navigation, and no mobile horizontal overflow at 390px. Source links were checked against primary GOV.UK guidance on 6 September 2026.
+
+Hosted Week 2 release verified on 6 September 2026: five lessons visible, test-account autosave succeeded, and Continue learning restored the saved Week 2 reflection after reload. The guiding prompt was preserved byte-for-byte (matching SHA-256); links among the original vision, requirements, authoring standards and project plan were validated.

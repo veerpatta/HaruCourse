@@ -1,6 +1,8 @@
+import { week2 } from "./week2";
 export type Lesson = {
   id: string;
   day: number;
+  week?: number;
   title: string;
   optional?: boolean;
   why: string;
@@ -25,7 +27,7 @@ const access = {
   title: "W3C: introduction to web accessibility",
   url: "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
 };
-export const lessons: Lesson[] = [
+const week1: Lesson[] = [
   {
     id: "week1-day1-v1",
     day: 1,
@@ -434,3 +436,5 @@ export const lessons: Lesson[] = [
     resource: design,
   },
 ];
+
+export const lessons: Lesson[] = [...week1, ...week2];

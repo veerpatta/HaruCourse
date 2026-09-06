@@ -1160,3 +1160,7 @@ footer {
   display: block;
   margin-top: 18px;
 }
+.continue-card {
+  margin: 24px 0;
+  padding: 24px;
+}

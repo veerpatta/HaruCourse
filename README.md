@@ -1,5 +1,7 @@
 # Haru Course
 
+[Original course vision](COURSE-VISION-ORIGINAL.md) · [Requirements and alignment](COURSE-REQUIREMENTS.md) · [Authoring standards](docs/COURSE-AUTHORING.md)
+
 [Complete project plan](PROJECT-PLAN.md) — agreed scope, implementation status, curriculum blueprint, roadmap, and continuation checklist.
 
 An installable, responsive Product Design learning app for Haru, built by the course creator. React, TypeScript, Vite, and a generated offline service worker; with a Cloudflare Worker, D1 progress storage, and OAuth-protected MCP. Live app: https://harucourse.raj-39e.workers.dev. Hosted login and read-only OAuth MCP are verified.
@@ -25,7 +27,7 @@ Cloudflare configuration validation: `npm.cmd run check:deploy`. Deployment comm
 ## Current app scope
 
 - Responsive learner dashboard and full high-level course map.
-- Baseline plus seven published Week 1 lessons (five core, two optional); later weeks clearly marked as planned.
+- Baseline plus 12 published lessons across Weeks 1–2 (ten core, two optional); later weeks clearly marked as planned.
 - Practice reflection, work reference, actual minutes, and review-readiness stored in this browser.
 - Markdown review export and validated JSON backup import/export.
 - Install manifest and offline app shell/course content after a successful initial online load.

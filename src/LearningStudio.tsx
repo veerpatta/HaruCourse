@@ -4,6 +4,16 @@ import { usePractice } from "./usePractice";
 import type { User, RecordData, Feedback } from "../shared/record";
 export function LearningStudio({ user }: { user: User }) {
   const [selected, select] = useState<string | null>(null);
+  const [week, setWeek] = useState(1);
+  const weeks = [...new Set(lessons.map((l) => l.week || 1))];
+  function open(id: string) {
+    const l = lessons.find((l) => l.id === id);
+    if (l) {
+      setWeek(l.week || 1);
+      select(id);
+      window.scrollTo(0, 0);
+    }
+  }
   const [records, setRecords] = useState<
     { lessonId: string; record: RecordData }[]
   >([]);
@@ -43,20 +53,68 @@ export function LearningStudio({ user }: { user: User }) {
         lesson={item}
         user={user}
         back={() => select(null)}
+        next={lessons[lessons.findIndex((l) => l.id === item.id) + 1]}
+        open={open}
       />
     );
+  const weekLessons = lessons.filter((l) => (l.week || 1) === week);
   const weekRecords = records.filter((r) =>
-    lessons.some((l) => l.id === r.lessonId),
+    weekLessons.some((l) => l.id === r.lessonId),
   );
+  const recent = records
+    .filter(
+      (r) =>
+        r.record.status === "practicing" &&
+        lessons.some((l) => l.id === r.lessonId),
+    )
+    .sort(
+      (a, b) => Date.parse(b.record.updatedAt) - Date.parse(a.record.updatedAt),
+    )[0];
+  const resume =
+    lessons.find((l) => l.id === recent?.lessonId) ||
+    lessons.find(
+      (l) =>
+        !l.optional &&
+        !records.some(
+          (r) => r.lessonId === l.id && r.record.status === "ready-for-review",
+        ),
+    );
   return (
     <>
-      <span className="eyebrow">LEVEL 1 · MONTH 1 · WEEK 1</span>
-      <h1>Start your design practice.</h1>
+      <span className="eyebrow">LEVEL 1 · MONTH 1 · WEEK {week}</span>
+      <h1>Your next step in design.</h1>
       <p className="intro">
-        Five core sessions · 10 hours. Days 6 and 7 are optional practice or
-        rest. Work through the days in order; bring the previous day’s output
-        with you.
+        Five core sessions per week · 10 hours. Bring the previous session’s
+        output. Week 1 has two optional practice days; use Week 2’s remaining
+        days for catch-up or rest.
       </p>
+      <div className="actions" aria-label="Choose a week">
+        {weeks.map((w) => (
+          <button
+            className={w === week ? "primary" : "secondary"}
+            aria-pressed={w === week}
+            key={w}
+            onClick={() => setWeek(w)}
+          >
+            Week {w}
+          </button>
+        ))}
+      </div>
+      {resume && (
+        <section className="card continue-card">
+          <span className="eyebrow">
+            {recent ? "RETURN TO YOUR PRACTICE" : "NEXT CORE SESSION"}
+          </span>
+          <h2>{resume.title}</h2>
+          <p>
+            Week {resume.week || 1} · Day {resume.day}. Based on saved practice,
+            not an assessment of mastery.
+          </p>
+          <button className="primary" onClick={() => open(resume.id)}>
+            Continue learning →
+          </button>
+        </section>
+      )}
       <div className="notice">
         {weekRecords.reduce((sum, r) => sum + r.record.minutes, 0)} minutes
         recorded ·{" "}
@@ -68,13 +126,13 @@ export function LearningStudio({ user }: { user: User }) {
       </div>
       {error && <p role="status">{error}</p>}
       <div className="lesson-list">
-        {lessons.map((l) => {
+        {weekLessons.map((l) => {
           const saved = records.find((r) => r.lessonId === l.id)?.record;
           return (
             <button
               className="card lesson-choice"
               key={l.id}
-              onClick={() => select(l.id)}
+              onClick={() => open(l.id)}
             >
               <span className="eyebrow">
                 DAY {l.day} · {l.optional ? "OPTIONAL" : "CORE"} · 120 MIN
@@ -92,9 +150,9 @@ export function LearningStudio({ user }: { user: User }) {
         })}
       </div>
       <p className="notice">
-        This week is published and ready to study. Later weeks of the 620-hour
-        program are still being authored; the level map is the roadmap, not a
-        claim of complete course content.
+        Weeks 1 and 2 are published and ready to study. Later weeks of the
+        620-hour program are still being authored; the level map is the roadmap,
+        not a claim of complete course content.
       </p>
     </>
   );
@@ -103,10 +161,14 @@ function LessonReader({
   lesson,
   user,
   back,
+  next,
+  open,
 }: {
   lesson: Lesson;
   user: User;
   back: () => void;
+  next?: Lesson;
+  open: (id: string) => void;
 }) {
   const practice = usePractice(
     user,
@@ -140,10 +202,17 @@ function LessonReader({
         ← All lessons
       </button>
       <span className="eyebrow">
-        MONTH 1 · WEEK 1 · DAY {lesson.day}
+        MONTH 1 · WEEK {lesson.week || 1} · DAY {lesson.day}
         {lesson.optional ? " · OPTIONAL" : ""}
       </span>
       <h1>{lesson.title}</h1>
+      <p className="muted">
+        {lesson.week === 2 && lesson.day === 1
+          ? "Before you start: bring your Week 1 flow, screens, and unresolved questions."
+          : lesson.day > 1
+            ? "Before you start: bring the previous day’s output and reflection."
+            : "Start here; no prior lesson is required."}
+      </p>
       <p className="intro">{lesson.why}</p>
       <p className="notice" role="status">
         {user.role === "creator" ? "Haru’s saved work · " : ""}
@@ -357,6 +426,19 @@ function LessonReader({
           <p>No feedback yet.</p>
         )}
       </section>
+      {next && (
+        <section className="card continue-card">
+          <h2>Next: {next.title}</h2>
+          <p>
+            Week {next.week || 1} · Day {next.day}
+            {next.optional ? " · Optional" : ""}. Moving ahead does not mark
+            this lesson complete.
+          </p>
+          <button className="secondary" onClick={() => open(next.id)}>
+            Open next lesson →
+          </button>
+        </section>
+      )}
     </>
   );
 }

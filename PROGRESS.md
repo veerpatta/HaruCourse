@@ -54,3 +54,9 @@ When resuming, read this record and the latest submitted work. A message such as
 - Username login added: Haru (`haru`), creator (`itsme`), and isolated shared test learner (`test`, password-free). Credentials are private in `.secrets/login-credentials.json`; old key login is retired.
 
 - Published Week 1 in the app and `WEEK-01.md`, with five core/two optional lessons and separate records. Practice now auto-loads and saves with visible status, local draft recovery, and conflict resolution. Creator review and MCP support lesson IDs. Full later-week content remains pending.
+
+- Week 2 published: five two-hour core lessons on research planning, evidence synthesis, prioritization, prototyping, and a small testing/revision loop. Added week selection, saved-work continuation, and next-lesson navigation. Material preserved in WEEK-02.md.
+
+## Guiding brief reaffirmed — 6 September 2026
+
+The original request is preserved in COURSE-VISION-ORIGINAL.md. COURSE-REQUIREMENTS.md maps all 17 curriculum areas and supporting programs, records current gaps, and sets the updated production order. docs/COURSE-AUTHORING.md defines daily lessons, tools, project briefs, assessment, resource and publication requirements. The broad apprenticeship remains the purpose; workshops are only an introductory example. Current work is aligned but incomplete. No full 2026 hiring study or learner mastery is claimed.

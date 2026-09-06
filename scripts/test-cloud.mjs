@@ -225,6 +225,12 @@ assert.ok(
 checks.push(
   "per-lesson persistence, baseline isolation, catalog validation and course summary",
 );
+const week2Path='/api/progress?lessonId=week2-day1-v1';
+const week2Previous=await (await call(week2Path,{cookie:learner})).json();
+assert.equal((await call(week2Path,{method:'PUT',cookie:learner,body:{record:{...record,notes:'Week 2 independent evidence'},expectedRevision:week2Previous.revision}})).status,200);
+assert.equal((await (await call(week2Path,{cookie:creator})).json()).record.notes,'Week 2 independent evidence');
+assert.equal((await (await call('/api/progress',{cookie:learner})).json()).revision,current.revision);
+checks.push('Week 2 persistence and creator visibility without changing baseline');
 const unauth = await call("/mcp");
 assert.equal(unauth.status, 401);
 assert.match(

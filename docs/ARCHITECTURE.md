@@ -1,6 +1,6 @@
 # Application architecture
 
-React, TypeScript, and Vite render the installable course PWA. Course material lives in `src/course.ts` and the root planning Markdown files. The baseline and Week 1 are published. Week 1 includes teaching, examples, exercises, understanding checks, and per-lesson work records; later weeks remain planned.
+React, TypeScript, and Vite render the installable course PWA. Course material lives in `src/course.ts` and the root planning Markdown files. The baseline and Weeks 1–2 are published. The published lessons include teaching, examples, exercises, understanding checks, and per-lesson work records; later weeks remain planned.
 
 The service worker caches public app content. Authentication, API, OAuth consent, and MCP routes bypass the app shell and cache. Offline drafts remain in localStorage. JSON backup import validates data and downloads the previous draft before replacing it.
 

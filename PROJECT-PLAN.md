@@ -2,6 +2,12 @@
 
 Updated: 6 September 2026. This is the main continuation document for the course and its web app. It records agreed decisions, implemented work, remaining work, and acceptance criteria. Planned lessons are not represented as completed content or learner achievements.
 
+## Guiding brief and current priority
+
+The user has reaffirmed [the original course vision](COURSE-VISION-ORIGINAL.md) as the guiding idea. It is preserved verbatim. Read [COURSE-REQUIREMENTS.md](COURSE-REQUIREMENTS.md) for the complete coverage matrix, agreed refinements, candid gap review, and latest production order. Read [authoring standards](docs/COURSE-AUTHORING.md) before writing lessons. Explicit later user changes may refine the plan; do not silently substitute a narrow or tool-led course.
+
+**Priority update:** the current production order in COURSE-REQUIREMENTS.md supersedes older “Next” labels below: hiring/tool evidence, whole-course month/week mapping, then later Month 1 teaching and assessment. Weeks 1–2 are an introductory loop, not full competency coverage. Backend/MCP implementation is not a substitute for curriculum, portfolio and mentoring work.
+
 ## 1. Purpose and people
 
 Build a practical, broad Product Design apprenticeship for Haru, with the repository owner acting as course creator and mentor. Prepare her for India and international remote opportunities that accept applicants based in India. Her Applied Arts/UI-UX academic background and roughly five years in graphic design, communication, marketing, and social media are starting strengths; recent sales work is adjacent experience, not product-design seniority. Rebuild current UX/product knowledge and give dedicated support for web fundamentals.
@@ -229,3 +235,7 @@ The resource library will distinguish required reading from reference material, 
 ## Implementation update — automatic practice and Week 1
 
 Published `WEEK-01.md` and matching app lessons: five core sessions plus two optional days. Each includes teaching, a worked example, two-hour tasks, deliverables, understanding checks, review criteria, and checked references. The app starts in Lessons. Baseline and lesson records auto-load and save; offline drafts remain local and reconnect while open. Conflicts require an explicit copy choice. Creator feedback and MCP now accept published lesson IDs. The remaining roadmap begins with Month 1’s later weeks, assessments, and resource expansion; the full 620-hour course is still not authored.
+
+## Implementation update — Week 2 and continuation
+
+Weeks 1–2 now contain 12 published lessons: ten core sessions and two optional Week 1 sessions. Week 2 builds from a research decision through synthesis, prioritization, a testable prototype, and an evidence-bounded revision report. Each session is 120 minutes; these hours remain inside the existing curriculum budget. WEEK-02.md preserves the full material. Week filters, continuation from saved practice, and next-lesson navigation are implemented. Navigation does not award completion or mastery. Next content work: Weeks 3–4; formal creator assessment remains a separate milestone.
