@@ -1,6 +1,6 @@
 # Minimal course verification — 6 September 2026
 
-**Release state: integrated and locally verified; deployment pending.** The initial simplification was committed as 0e2d7b4, then integrated with newer main-branch publications and session logging. No new migration.
+**Release state: deployed and hosted acceptance passed.** Code commit `4904230` on main integrates the initial simplification (`0e2d7b4`) with newer publications and session logging. Worker version `b18804cd-40f4-4d3a-990f-fc003a148b45` serves https://harucourse.raj-39e.workers.dev. No migration was needed.
 
 ## Implemented
 
@@ -39,8 +39,16 @@ Use CLOUD-SETUP.md with disposable local credentials, build, and start `npm.cmd 
 
 Browser scripts and screenshots are ignored under `output/playwright/`: verify-minimal.js, verify-offline.js, verify-creator.js, verify-fallbacks.js and verify-final.js; minimal-desktop.png, minimal-mobile.png and minimal-mobile-do.png. Initial browser checks were corrected to wait for asynchronous record hydration and to review a populated local fixture before declaring their results.
 
-Native installation, a full assistive-technology audit, the learner’s actual AI client and this revision’s hosted acceptance remain unverified. No real participant exercise was performed. Formal scored assessment, formal remediation workflow, modules after m04 and existing research gaps remain pending. Use only the hosted test account if this revision is released.
+Native installation, a full assistive-technology audit and the learner’s actual AI client remain unverified. No real participant exercise was performed. Formal scored assessment, formal remediation workflow, modules after m04 and existing research gaps remain pending. Hosted writes for this release used only the test account.
 
 ## Integrated main-branch acceptance
 
 All four published module choices, original and rich guided readers, notes/section restoration, timer controls, My work history, browser Back/Forward and mobile widths 320/390px passed. Screenshot review confirms timer and bottom navigation remain reachable. New module Markdown remains derived from the upstream rich contract. The backend suite includes optional session/confidence compatibility. Build and deployment dry run pass, with nonfatal large-bundle and Workbox deprecation warnings. Remote migration listing: none pending.
+
+## Hosted release acceptance
+
+Deployed 6 September 2026 from code commit `4904230`; live script `index-CIBJddct.js` matches the local production build. Wrangler reported successful asset/Worker publication and no pending D1 migrations. Hosted Chromium verified all four published module choices, original and rich guided sections, Start/Pause/Finish, My work history, browser Back/Forward, Check/Your work restoration and 320/390px overflow checks. Desktop/mobile captures are in ignored output/playwright/hosted-*.png.
+
+Only username `test` was used for hosted writes. API readback confirmed sample notes, a two-minute session entry and confidence 3; reload retained notes and selected Your work section. No real learner account was signed into or written during hosted QA. The first automated run edited before remote hydration and correctly encountered a protected draft conflict; the test draft was explicitly retained. Acceptance was rerun waiting for record hydration and settled bookmark saves. No JavaScript page exceptions occurred; protected 409 responses are recorded separately from runtime failures.
+
+Earlier local offline/conflict/feedback evidence remains above; this release did not repeat a hosted OAuth authorization or native installation. The newer m03/m04 resource verification evidence is retained from its upstream publication, not claimed as a new authenticated tool test.
