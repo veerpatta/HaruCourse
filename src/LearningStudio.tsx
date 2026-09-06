@@ -3,11 +3,29 @@ import { navigate, useNavigation } from "./navigation";
 import { canPoll, onActivityResume } from "./activity";
 import { sections } from "../shared/position";
 import { modules } from "./modules";
-const moduleNames = modules
-  .filter((m) => ["m01", "m02"].includes(m.id))
-  .map((m) => m.title);
 import { useEffect, useState } from "react";
 import { lessons, type Lesson } from "./lessons";
+// `week` stays the grouping key because saved records, bookmarks and the
+// legacy documents all use it. Everything shown to the reader — the module
+// name, its number and its level — comes from src/modules.ts instead, so
+// publishing another module never needs an edit here.
+function moduleOf(lesson: Lesson) {
+  return modules.find((m) => m.id === (lesson.module || `m0${lesson.week || 1}`));
+}
+function moduleOfWeek(week: number) {
+  const first = lessons.find((l) => (l.week || 1) === week);
+  return first && moduleOf(first);
+}
+function moduleLabel(lesson: Lesson) {
+  const owner = moduleOf(lesson);
+  return owner ? owner.id.replace(/^m0?/, "") : String(lesson.week || 1);
+}
+function effortMinutes(lesson: Lesson) {
+  return lesson.steps.reduce((total, step) => total + step.minutes, 0);
+}
+const authoredModules = modules.filter((m) =>
+  lessons.some((l) => moduleOf(l)?.id === m.id),
+);
 import { usePractice } from "./usePractice";
 import type { User, RecordData, Feedback } from "../shared/record";
 export function LearningStudio({ user }: { user: User }) {
@@ -100,7 +118,10 @@ export function LearningStudio({ user }: { user: User }) {
     lessons.find((l) => !l.optional);
   return (
     <>
-      <span className="eyebrow">LEVEL 1 · MODULE {week}</span>
+      <span className="eyebrow">
+        LEVEL {moduleOfWeek(week)?.level ?? 1} · MODULE{" "}
+        {moduleOfWeek(week)?.id.replace(/^m0?/, "") ?? week}
+      </span>
       <h1>Your next step in design.</h1>
       <p className="intro">
         Learn at your own pace. Two hours is a suggested session, with no daily
@@ -114,7 +135,7 @@ export function LearningStudio({ user }: { user: User }) {
             key={w}
             onClick={() => setWeek(w)}
           >
-            {moduleNames[w - 1]}
+            {moduleOfWeek(w)?.title ?? `Module ${w}`}
           </button>
         ))}
       </div>
@@ -129,8 +150,8 @@ export function LearningStudio({ user }: { user: User }) {
           </span>
           <h2>{resume.title}</h2>
           <p>
-            Module {resume.week || 1} · Lesson {resume.day}. Your saved place or
-            suggested next step, not an assessment of mastery.
+            Module {moduleLabel(resume)} · Lesson {resume.day}. Your saved place
+            or suggested next step, not an assessment of mastery.
           </p>
           <button
             className="primary"
@@ -168,8 +189,8 @@ export function LearningStudio({ user }: { user: User }) {
               onClick={() => open(l.id)}
             >
               <span className="eyebrow">
-                LESSON {l.day} · {l.optional ? "OPTIONAL" : "CORE"} · ~120 MIN
-                EFFORT
+                LESSON {l.day} · {l.optional ? "OPTIONAL" : "CORE"} · ~
+                {effortMinutes(l)} MIN EFFORT
               </span>
               <h2>{l.title}</h2>
               <p>{l.why}</p>
@@ -184,9 +205,11 @@ export function LearningStudio({ user }: { user: User }) {
         })}
       </div>
       <p className="notice">
-        The first two modules are published and ready to study. Later modules of
-        the 620-hour program are still being authored; the level map is the
-        roadmap, not a claim of complete course content.
+        {authoredModules.length} modules ({lessons.length} lessons) are
+        published and ready to study. The remaining{" "}
+        {modules.filter((m) => m.status === "planned").length} modules of the
+        620-hour program are still being authored; the level map is the roadmap,
+        not a claim of complete course content.
       </p>
     </>
   );
@@ -261,17 +284,25 @@ function LessonReader({
         ← All lessons
       </button>
       <span className="eyebrow">
-        LEVEL 1 · MODULE {lesson.week || 1} · LESSON {lesson.day}
+        LEVEL {moduleOf(lesson)?.level ?? 1} · MODULE {moduleLabel(lesson)} ·
+        LESSON {lesson.day}
         {lesson.optional ? " · OPTIONAL" : ""}
       </span>
       <h1>{lesson.title}</h1>
       <p className="muted">
-        {lesson.week === 2 && lesson.day === 1
-          ? "Before you start: bring your Product Design Foundations flow, screens, and unresolved questions."
-          : lesson.day > 1
-            ? "Before you start: bring the previous lesson’s output and reflection."
-            : "Start here; no prior lesson is required."}
+        {lesson.bringForward
+          ? `Before you start: ${lesson.bringForward}`
+          : lesson.week === 2 && lesson.day === 1
+            ? "Before you start: bring your Product Design Foundations flow, screens, and unresolved questions."
+            : lesson.day > 1
+              ? "Before you start: bring the previous lesson’s output and reflection."
+              : "Start here; no prior lesson is required."}
       </p>
+      {lesson.objective && (
+        <p className="muted">
+          What this lesson asks you to produce: {lesson.objective}
+        </p>
+      )}
       <p className="intro">{lesson.why}</p>
       <p className="notice" role="status">
         {user.role === "creator" ? "Haru’s saved work · " : ""}
@@ -311,13 +342,40 @@ function LessonReader({
         {lesson.teach.map((t) => (
           <p key={t}>{t}</p>
         ))}
+        {lesson.misconception && (
+          <>
+            <h3>A common misconception</h3>
+            <p>{lesson.misconception}</p>
+          </>
+        )}
         <h3>Worked example</h3>
         <p>{lesson.example}</p>
-        <p>
-          <a href={lesson.resource.url} target="_blank" rel="noreferrer">
-            Read: {lesson.resource.title} ↗
-          </a>
-        </p>
+        {lesson.resources ? (
+          <>
+            <h3>Assigned reading</h3>
+            <ul>
+              {lesson.resources.map((r) => (
+                <li key={r.id}>
+                  <a href={r.url} target="_blank" rel="noreferrer">
+                    {r.id}: {r.title} ↗
+                  </a>
+                  <br />
+                  <small>
+                    {r.section} {r.purpose} About {r.minutes} min. {r.limits} If
+                    it is unavailable, use {r.fallbackId} from the resource
+                    library.
+                  </small>
+                </li>
+              ))}
+            </ul>
+          </>
+        ) : (
+          <p>
+            <a href={lesson.resource.url} target="_blank" rel="noreferrer">
+              Read: {lesson.resource.title} ↗
+            </a>
+          </p>
+        )}
         <small>
           Reference checked 6 September 2026. Split the reading across sessions
           as needed.
@@ -337,6 +395,12 @@ function LessonReader({
         </ol>
         <h3>Expected output</h3>
         <p>{lesson.deliverable}</p>
+        {lesson.freeToolPath && (
+          <>
+            <h3>Free tool path</h3>
+            <p>{lesson.freeToolPath}</p>
+          </>
+        )}
         <h3>Portfolio connection</h3>
         <p>{lesson.portfolio}</p>
         <p>
@@ -353,11 +417,40 @@ function LessonReader({
           </details>
         ))}
         <h3>Review criteria</h3>
-        <ul>
-          {lesson.rubric.map((r) => (
-            <li key={r}>{r}</li>
-          ))}
-        </ul>
+        {lesson.criteria ? (
+          <>
+            {lesson.criteria.map((c) => (
+              <details key={c.criterion}>
+                <summary>{c.criterion}</summary>
+                <p>Adequate evidence: {c.evidence}</p>
+                <ul>
+                  {c.levels.map((text, score) => (
+                    <li key={score}>
+                      <strong>{score}</strong> — {text}
+                    </li>
+                  ))}
+                </ul>
+                <p>
+                  <strong>If below 2:</strong> {c.remediation}
+                </p>
+                <p>
+                  <strong>Show at recheck:</strong> {c.recheck}
+                </p>
+              </details>
+            ))}
+            <p>
+              Scoring is a review judgement about work you submit. Nothing here
+              computes, stores or displays a score, and reading these criteria
+              does not record progress against them.
+            </p>
+          </>
+        ) : (
+          <ul>
+            {lesson.rubric.map((r) => (
+              <li key={r}>{r}</li>
+            ))}
+          </ul>
+        )}
         <p>
           Self-check each criterion: 0 absent, 1 needs help, 2 independently
           adequate, 3 strong trade-off reasoning. Ready for review is a
@@ -501,7 +594,7 @@ function LessonReader({
         <section className="card continue-card">
           <h2>Next: {next.title}</h2>
           <p>
-            Module {next.week || 1} · Lesson {next.day}
+            Module {moduleLabel(next)} · Lesson {next.day}
             {next.optional ? " · Optional" : ""}. Moving ahead does not mark
             this lesson complete.
           </p>

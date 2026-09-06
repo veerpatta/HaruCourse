@@ -76,7 +76,7 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
               id: l.id,
               title: l.title,
               lessonNumber: l.day,
-                moduleId: `m0${l.week || 1}`,
+              moduleId: l.module || `m0${l.week || 1}`,
             })),
             levels,
           }),
@@ -89,7 +89,21 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
           annotations: { readOnlyHint: true },
         },
         async ({ lessonId }) =>
-          result({ lessonId, rubric: findLesson(lessonId).rubric }),
+          result({
+            lessonId,
+            rubric: findLesson(lessonId).rubric,
+            // Lessons authored under the m03/m04 contract also carry what each
+            // score means and the bounded repair for a criterion below 2. A
+            // reviewer that only sees the names cannot assign a score.
+            criteria: lessons.find((l) => l.id === lessonId)?.criteria,
+            scores: [
+              "0 absent",
+              "1 needs support",
+              "2 independently adequate",
+              "3 strong reasoning and tradeoffs",
+            ],
+            note: "Scores are the reviewer’s judgement about submitted work. This service does not compute, store or return any score, and reading a lesson never establishes mastery.",
+          }),
       );
       server.registerTool(
         "get_feedback",

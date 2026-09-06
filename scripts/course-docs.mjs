@@ -10,7 +10,7 @@ const { modules } = await import("../src/modules.ts");
 const { lessons } = await import("../src/lessons.ts");
 const catalog = readFileSync("RESOURCE-LIBRARY.md", "utf8");
 const ids = new Set([...catalog.matchAll(/^\| (R\d+) \|/gm)].map((m) => m[1]));
-assert.equal(ids.size, 28);
+assert.equal(ids.size, 49);
 const seen = new Set();
 for (const m of modules) {
   assert(!seen.has(m.id));
@@ -27,6 +27,57 @@ for (let area = 1; area <= 17; area++)
 for (const l of lessons)
   assert(ids.has(l.resource.id), `Unknown lesson resource ${l.id}`);
 assert.equal(new Set(lessons.map((l) => l.id)).size, lessons.length);
+// Lessons written against the m03/m04 contract carry a module, assigned
+// resources and scored criteria. Legacy lessons carry none of that, so each
+// rule below only applies where the richer field is present.
+for (const l of lessons) {
+  if (!l.module) continue;
+  const owner = modules.find((m) => m.id === l.module);
+  assert(owner, `Lesson ${l.id} names unknown module ${l.module}`);
+  assert.equal(
+    owner.status,
+    "published",
+    `Lesson ${l.id} belongs to unpublished module ${l.module}`,
+  );
+  for (const area of l.areas || [])
+    assert(
+      owner.areas.includes(area),
+      `Lesson ${l.id} claims area ${area} outside module ${l.module}`,
+    );
+  assert(l.resources?.length, `Lesson ${l.id} has no assigned resources`);
+  for (const r of l.resources) {
+    assert(ids.has(r.id), `Lesson ${l.id} assigns unknown resource ${r.id}`);
+    assert(
+      ids.has(r.fallbackId),
+      `Lesson ${l.id} names unknown fallback ${r.fallbackId}`,
+    );
+    assert(r.section && r.purpose && r.minutes && r.limits, `Lesson ${l.id} resource ${r.id} is missing contract fields`);
+  }
+  assert(
+    l.resources.some((r) => r.id === l.resource.id),
+    `Lesson ${l.id} primary resource is not in its assigned list`,
+  );
+  assert(l.objective && l.bringForward && l.misconception && l.freeToolPath, `Lesson ${l.id} is missing a contract field`);
+  assert(l.criteria?.length, `Lesson ${l.id} has no scored criteria`);
+  for (const c of l.criteria) {
+    assert.equal(
+      c.levels.length,
+      4,
+      `Lesson ${l.id} criterion "${c.criterion}" needs all four scores`,
+    );
+    assert(
+      c.evidence && c.remediation && c.recheck,
+      `Lesson ${l.id} criterion "${c.criterion}" is missing evidence, remediation or recheck`,
+    );
+  }
+  // The flat rubric is what older readers and the app's check section render,
+  // so it must stay the exact list of criterion names rather than drifting.
+  assert.deepEqual(
+    l.rubric,
+    l.criteria.map((c) => c.criterion),
+    `Lesson ${l.id} rubric does not match its criteria names`,
+  );
+}
 function output(path, text) {
   if (process.argv.includes("--check"))
     assert.equal(
@@ -36,17 +87,28 @@ function output(path, text) {
     );
   else writeFileSync(path, text);
 }
+const authored = modules.filter((m) =>
+  lessons.some((l) => (l.module || `m0${l.week || 1}`) === m.id),
+);
+const authoredDetail = authored
+  .map(
+    (m) =>
+      `${m.id} ${lessons.filter((l) => (l.module || `m0${l.week || 1}`) === m.id).length}`,
+  )
+  .join(", ");
 output(
   "COURSE-BLUEPRINT.md",
-  `# Self-paced curriculum blueprint\n\nGenerated from src/modules.ts; edit that source, then run npm run docs:generate. See COURSE-REQUIREMENTS.md for the 17-area definitions and RESOURCE-LIBRARY.md for exact resources, verification and open gaps.\n\nLevels → Modules → Lessons. No completion deadline. Effort estimates are optional planning information, including iteration and project work. Two hours is a suggested session, not a daily commitment or gate. Navigation and readiness never establish mastery.\n\n| Module | Level | Title | Optional effort hours | Prerequisites | Areas | Primary / alternative | Status | Output |\n|---|---|---|---|---|---|---|---|---|\n${modules.map((m) => `| ${m.id} | ${m.level} | ${m.title} | ${m.hours} | ${m.prerequisites.join(", ") || "None"} | ${m.areas.join(", ")} | ${m.primary} / ${m.alternative} | ${m.status} | ${m.output} |`).join("\n")}\n\nTotal provisional effort: ${modules.reduce((n, m) => n + m.hours, 0)} hours. Published means available to study, not assessed complete. m00 is the baseline; m01/m02 contain twelve introductory lessons. Other modules are mapped, not yet authored.\n\nAt each module review, request artifacts, score the lesson criteria (0 absent, 1 needs help, 2 independent, 3 strong reasoning), identify a repair and recheck the revised artifact. Formal scored assessment software is still pending. No time-based lock is permitted. See docs/COURSE-AUTHORING.md for the full lesson contract and RESOURCE-LIBRARY.md for portfolio, tool, book, career and current-awareness programs.\n`,
+  `# Self-paced curriculum blueprint\n\nGenerated from src/modules.ts; edit that source, then run npm run docs:generate. See COURSE-REQUIREMENTS.md for the 17-area definitions and RESOURCE-LIBRARY.md for exact resources, verification and open gaps.\n\nLevels → Modules → Lessons. No completion deadline. Effort estimates are optional planning information, including iteration and project work. Two hours is a suggested session, not a daily commitment or gate. Navigation and readiness never establish mastery.\n\n| Module | Level | Title | Optional effort hours | Prerequisites | Areas | Primary / alternative | Status | Output |\n|---|---|---|---|---|---|---|---|---|\n${modules.map((m) => `| ${m.id} | ${m.level} | ${m.title} | ${m.hours} | ${m.prerequisites.join(", ") || "None"} | ${m.areas.join(", ")} | ${m.primary} / ${m.alternative} | ${m.status} | ${m.output} |`).join("\n")}\n\nTotal provisional effort: ${modules.reduce((n, m) => n + m.hours, 0)} hours. Published means available to study, not assessed complete. m00 is the baseline exercise; ${authored.length} modules carry ${lessons.length} authored lessons (${authoredDetail}). The remaining ${modules.length - authored.length - 1} modules are mapped, not yet authored.\n\nAt each module review, request artifacts, score the lesson criteria (0 absent, 1 needs help, 2 independent, 3 strong reasoning), identify a repair and recheck the revised artifact. m03 and m04 state those four scores and a bounded repair per criterion; the earlier modules carry criteria names only. Formal scored assessment software is still pending, so no score recorded anywhere is produced or stored by the app. No time-based lock is permitted. See docs/COURSE-AUTHORING.md for the full lesson contract and RESOURCE-LIBRARY.md for portfolio, tool, book, career and current-awareness programs.\n`,
 );
+// Modules 1 and 2 keep their original filenames and template so existing links
+// and saved records stay valid. Do not fold this into the module loop below.
 for (const week of [1, 2]) {
   const module = modules.find((m) => m.id === `m0${week}`);
   output(
     `WEEK-0${week}.md`,
     `# ${module.title}\n\nGenerated from src/lessons.ts and src/week2.ts. Legacy filename retained for existing links. Level 1 · Module ${week}. No deadlines; split any lesson across sessions.\n\n` +
       lessons
-        .filter((l) => (l.week || 1) === week)
+        .filter((l) => !l.module && (l.week || 1) === week)
         .map(
           (l) =>
             `## Lesson ${l.day}: ${l.title}\n\nStable ID: ${l.id}. ${l.optional ? "Optional" : "Core"}.\n\n${l.why}\n\n### Learn\n\n${l.teach.join("\n\n")}\n\n### Worked example\n\n${l.example}\n\n### Practice and pause points\n\n${l.steps.map((s) => `- ${s.title} (~${s.minutes} min): ${s.text}`).join("\n")}\n\nPause after any step; save the artifact and next action.\n\n### Output\n\n${l.deliverable}\n\n### Checks\n\n${l.check.map((q) => `- ${q.question} Answer: ${q.answer}`).join("\n")}\n\n### Rubric\n\n${l.rubric.map((r) => `- ${r}`).join("\n")}\n\nIf a criterion is missing, revise that part and request a recheck.\n\n### Portfolio contribution\n\n${l.portfolio}\n\nResource ${l.resource.id}: [${l.resource.title}](${l.resource.url}). Module approved pair: ${module.primary} / ${module.alternative}; catalog restrictions apply.\n`,
@@ -54,6 +116,30 @@ for (const week of [1, 2]) {
         .join("\n"),
   );
 }
+// Modules authored under the full lesson contract get a module-named document
+// carrying the objective, misconception, free tool path, scored criteria and
+// remediation that the legacy template has nowhere to put.
+const scores = [
+  "0 absent",
+  "1 needs support",
+  "2 independently adequate",
+  "3 strong reasoning and tradeoffs",
+];
+for (const module of modules) {
+  const own = lessons.filter((l) => l.module === module.id);
+  if (!own.length) continue;
+  const source = `src/module${Number(module.id.slice(1))}.ts`;
+  output(
+    `MODULE-${module.id.slice(1)}.md`,
+    `# ${module.title}\n\nGenerated from ${source}; edit that source, then run npm run docs:generate. Level ${module.level} · Module ${module.id} · requirement areas ${module.areas.join(", ")}. Optional effort ${module.hours} hours across ${own.length} lessons. No deadlines; split any lesson across sessions and return to it without penalty.\n\nPrerequisite: ${module.prerequisites.join(", ") || "none"}. This is guidance for meaningful practice, not a lock. Module approved resource pair: ${module.primary} / ${module.alternative}. Every resource restriction in RESOURCE-LIBRARY.md applies; required exercises never depend on a candidate tool workflow.\n\nEach criterion below is scored ${scores.join(", ")}. A score is a review judgement about a submitted artifact; the app records practice and feedback but does not compute, store or display any score. Reading, navigation and elapsed time never establish mastery.\n\n` +
+      own
+        .map(
+          (l) =>
+            `## Lesson ${l.day}: ${l.title}\n\nStable ID: ${l.id}. ${l.optional ? "Optional" : "Core"}. Areas ${(l.areas || module.areas).join(", ")}. Optional effort ~${l.steps.reduce((n, s) => n + s.minutes, 0)} min.\n\n**Objective.** ${l.objective}\n\n**Bring forward.** ${l.bringForward}\n\n${l.why}\n\n### Learn\n\n${l.teach.join("\n\n")}\n\n**Common misconception.** ${l.misconception}\n\n### Worked example\n\n${l.example}\n\n### Practice and pause points\n\n${l.steps.map((s) => `- ${s.title} (~${s.minutes} min): ${s.text}`).join("\n")}\n\nPause after any step; save the artifact and next action.\n\n**Free tool path.** ${l.freeToolPath}\n\n### Output\n\n${l.deliverable}\n\n### Checks\n\n${l.check.map((q) => `- ${q.question} Answer: ${q.answer}`).join("\n")}\n\n### Rubric and remediation\n\n${l.criteria.map((c) => `**${c.criterion}**\n\nAdequate evidence: ${c.evidence}\n\n${c.levels.map((text, score) => `- ${score} — ${text}`).join("\n")}\n\nIf below 2: ${c.remediation} Show at recheck: ${c.recheck}`).join("\n\n")}\n\n### Portfolio contribution\n\n${l.portfolio}\n\n### Assigned resources\n\n${l.resources.map((r) => `- ${r.id}: [${r.title}](${r.url}) — ${r.section} Purpose: ${r.purpose} Effort: ${r.minutes} min. ${r.limits} Fallback: ${r.fallbackId}.`).join("\n")}\n`,
+        )
+        .join("\n"),
+  );
+}
 console.log(
-  "Course coverage, prerequisite order, resource IDs and generated documents checked.",
+  "Course coverage, prerequisite order, resource IDs, lesson contract fields and generated documents checked.",
 );

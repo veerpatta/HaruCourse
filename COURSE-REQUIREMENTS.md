@@ -28,14 +28,14 @@ Status meanings: **Intro only** = some published exposure, not full coverage; **
 
 | Brief requirement | Intended place | Present evidence | Remaining production work |
 |---|---|---|---|
-| 1. Design foundations | Level 1, targeted refresh | Intro only: hierarchy and critique in Module 1 | Diagnostic-driven typography, color, spacing, grids, composition, Gestalt, and communication exercises |
-| 2. UX foundations | Levels 1–2 | Intro only: UX/UI, error prevention and task reasoning | Mental models, cognition, affordances/signifiers, feedback, recognition/recall, UX laws and their limitations |
-| 3. Product thinking | Levels 1, 2, 5 | Intro only: goals, assumptions, options and hypotheses | Value, market fit, strategy, MVPs, roadmaps, metrics and experiments with decision exercises |
+| 1. Design foundations | Level 1, targeted refresh | m03 published: type scale, readability, colour meaning, measured contrast, Gestalt grouping, spacing scale, layout reflow, tokens and a rebuild critique | Composition and communication exercises beyond screen systems; diagnostic-driven adjustment once a baseline is reviewed |
+| 2. UX foundations | Levels 1–2 | m04 published: mental and conceptual models, recognition/recall and memory demand, affordances, signifiers and feedback, slips versus mistakes, UX laws with counterexamples | Deeper interaction cognition alongside m09 and m11; none of this is assessed |
+| 3. Product thinking | Levels 1, 2, 5 | Intro only, extended by m04: need statements, value with costs and constraints, and a riskiest-assumption test with a pre-written stopping rule | Market fit, strategy, roadmaps, metrics and experiments remain m15 and m17 work |
 | 4. UX research | Level 2, deeper work in Level 5 | Intro only: interviews, consent, synthesis, small usability loop | Qualitative/quantitative selection, desk/competitive research, recruitment, surveys, observation, contextual/diary methods, JTBD, journeys and reporting |
 | 5. Information architecture | Levels 2–3 | Intro only: labels and ordering | Taxonomy, sitemap, card sorting, tree testing, app/web navigation, complex information exercises |
 | 6. User flows | Levels 2–3, 5 | Intro only: reservation flow and exceptions | Authentication, onboarding, checkout, search, permissions and complex workflow practice |
 | 7. Wireframing | Levels 1–3 | Intro only: paper/familiar-tool screens | Progressive low/mid/high fidelity, tablet/narrow/wide layout, interaction-state assignments |
-| 8. UI design | Level 3 | Intro only: hierarchy, forms and responsive annotations | Complete component/state repertoire: navigation, modals, tables, charts, dashboards, notifications and polish |
+| 8. UI design | Level 3 | Intro only, with m03 foundations: one component specified across default, hover, focus, disabled and loading states from a token sheet | Complete component/state repertoire: navigation, modals, tables, charts, dashboards, notifications and polish. m03 is a foundations pass, not a component library |
 | 9. Design systems | Dedicated Level 4 module | Planned | Tokens, variables, Auto Layout, properties, variants, architecture, documentation, governance and a full assessed system project |
 | 10. Responsive/web design | Dedicated Levels 3–4 | Intro only: two-width sketches | Web concepts, HTML/CSS, modest JavaScript/API literacy, browser tools, accessibility, responsive patterns and handoff; not software-engineer training |
 | 11. Interaction design | Level 3, advanced Level 5 | Intro only: states and recovery | Microinteractions, gestures, navigation behavior, motion, transitions and reduced-motion practice |
@@ -50,20 +50,20 @@ Status meanings: **Intro only** = some published exposure, not full coverage; **
 
 | Requirement | Current state | What must be authored or implemented |
 |---|---|---|
-| Complete self-paced module roadmap | High-level 620-hour blueprint; Modules 1–2 published | The full module map now covers all 17 areas; publish detailed lessons in prerequisite order |
+| Complete self-paced module roadmap | High-level 620-hour blueprint; m00 baseline plus m01–m04 published, 30 authored lessons | The full module map covers all 17 areas; publish the remaining 16 modules in prerequisite order, starting at m05 |
 | Dedicated tool training | Priority sketch only | Evaluate Figma, FigJam, Illustrator, Photoshop, After Effects, ProtoPie, Framer, Webflow, Notion, Miro, Jira, Confluence, analytics/behavior tools, AI and handoff tools. For each: essential/important/useful/optional, reason, target level, path, exercises, mini-project and curriculum placement. Do not require all of them |
 | Progressive portfolio | Three project categories proposed | Complete each brief's problem, context, users, business, research, competition, synthesis, conditional personas/JTBD, journey, IA, flows, wireframes, prototype, UI, system, testing, iteration, solution, honest metrics, reflection and case-study structure |
-| Current resources | Whole-course public reading pairs cataloged; advanced subtopic and tool workflow gaps recorded in RESOURCE-LIBRARY.md | Curated library by topic: purpose, value, level, free/paid status, direct link, checked date and free fallback; include diverse formats only when useful |
+| Current resources | 49 verified public readings. Of the eight recorded subtopic gaps, six are sourced and two are partial: market positioning lacks a verified free source, and hiring has two dated vacancy captures that are explicitly not a study. Authenticated tool workflows remain open but nothing depends on them, since R49 gives an account-free vector path | Find a verified market-positioning source; run the multi-employer hiring pass by hand at m20; keep per-row purpose, level, cost status, link, checked date and fallback current at each release |
 | Book list | Not authored | Small Must Read / Highly Recommended / Advanced / Reference list with reading budgets and free alternatives/access paths |
 | Stay Current system | Sustainable principle noted | Optional session/module/portfolio-checkpoint routine, selected people/publications/communities, time cap, and a test for evidence versus promotional trend claims |
 | Career preparation | Initial target and transition principles | Evidence-backed junior/mid-level expectations, resume, LinkedIn, case studies, letters, networking/outreach drafts, communities and interview practice across required formats |
 | Whole-program tracker | Partial system: account-owned notes, reference, actual minutes, readiness, revisions and feedback | Add date/session history, resources completed, assignment identity, portfolio contributions, tool skills, confidence, quiz scores, revision needs and assessment records; provide portable exports |
-| Assessment and remediation | Rubric guidance and text feedback; no formal pass/repair workflow | Creator assessment tied to submitted revision, dimension scores, outcome, repair task, recheck, and evidence gates; quizzes/tool tests/presentations supplement practical work |
+| Assessment and remediation | m03/m04 lessons state four score descriptions, a bounded repair and a recheck per criterion, and the MCP rubric tool returns them. Still no software: nothing computes, stores or displays a score | Creator assessment tied to a submitted revision, recorded dimension scores, outcome, repair task, recheck and evidence gates; quizzes/tool tests/presentations supplement practical work |
 | Long-term mentoring | Lesson/feedback/MCP support | On “Day N completed,” request missing evidence, review, explain gaps, assign bounded repair and adjust next work. Do not only advance a pointer |
 
 ## Alignment judgment and corrections
 
-The direction is aligned, but the deliverable is substantially incomplete. Twelve published lessons represent an introduction, not the complete Product Design curriculum. The platform has received more implementation attention than the content and assessment programs; future milestones should rebalance toward those requirements.
+The direction is aligned, but the deliverable is substantially incomplete. Thirty published lessons across four modules cover Level 1 and represent an introduction, not the complete Product Design curriculum: sixteen modules and every Level 2 area upward are unauthored. Written criteria and remediation are not an assessment system, and no learner work has been assessed. Future milestones should continue rebalancing toward content and assessment rather than platform.
 
 1. Finish the dated 2026 hiring/tool evidence pass before claiming market alignment or fixing career-level conclusions. Existing enduring official references are useful but are not a representative hiring study.
 2. Use Modules 1–2 as an initial practice loop. Do not infer proficiency in research, accessibility, systems or prototyping from a brief introductory exercise.
@@ -86,7 +86,7 @@ The direction is aligned, but the deliverable is substantially incomplete. Twelv
 
 ## Next production order
 
-1. Follow the mapped prerequisite sequence in COURSE-BLUEPRINT.md; review RESOURCE-LIBRARY.md gaps before writing m03/m04.
+1. Follow the mapped prerequisite sequence in COURSE-BLUEPRINT.md. m03 and m04 are authored and published; m05 is next, and its diary/JTBD and sampling resources are now catalogued.
 2. Validate optional tool workflows against free accounts before making any tool-specific task required; retain equivalent free local exercises.
 3. Author detailed lessons using the contract, then add formal creator assessment and repair workflow.
 4. Develop three complete project briefs and later modules, followed by dated India/remote hiring research and career exercises.

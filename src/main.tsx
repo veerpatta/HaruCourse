@@ -468,8 +468,10 @@ function App({
                 620 planned hours, built around real work and thoughtful
                 iteration.
                 <br />
-                Two introductory modules are available in Lessons. Further
-                modules are planned.
+                {modules.filter((m) => m.status === "published").length} modules
+                are available in Lessons, including the baseline. The remaining{" "}
+                {modules.filter((m) => m.status === "planned").length} are
+                mapped and not yet authored.
               </p>
               <section className="card">
                 <h2>Modules in order</h2>

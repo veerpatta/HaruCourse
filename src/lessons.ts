@@ -1,4 +1,27 @@
 import { week2 } from "./week2";
+import { module3 } from "./module3";
+import { module4 } from "./module4";
+// A single rubric line, scored 0-3. `levels` is indexed by the score, so
+// levels[2] is what independently adequate work actually looks like, and
+// `remediation` is the bounded repair for anything below it. The twelve
+// lessons authored before this structure existed keep the flat `rubric` list.
+export type Criterion = {
+  criterion: string;
+  evidence: string;
+  levels: [string, string, string, string];
+  remediation: string;
+  recheck: string;
+};
+export type AssignedResource = {
+  id: string;
+  title: string;
+  url: string;
+  section: string;
+  purpose: string;
+  minutes: string;
+  limits: string;
+  fallbackId: string;
+};
 export type Lesson = {
   id: string;
   day: number;
@@ -14,6 +37,18 @@ export type Lesson = {
   rubric: string[];
   portfolio: string;
   resource: { id: string; title: string; url: string };
+  // Everything below arrived with the m03/m04 lesson contract. The earlier
+  // lessons omit these fields, so every reader must tolerate their absence
+  // rather than assume the richer shape.
+  module?: string;
+  level?: number;
+  areas?: number[];
+  objective?: string;
+  bringForward?: string;
+  misconception?: string;
+  freeToolPath?: string;
+  resources?: AssignedResource[];
+  criteria?: Criterion[];
 };
 const design = {
   title: "Design Council: the Double Diamond",
@@ -440,4 +475,4 @@ const week1: Lesson[] = [
   },
 ];
 
-export const lessons: Lesson[] = [...week1, ...week2];
+export const lessons: Lesson[] = [...week1, ...week2, ...module3, ...module4];
