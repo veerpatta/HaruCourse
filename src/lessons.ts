@@ -1,6 +1,7 @@
 import { week2 } from "./week2";
 import { module3 } from "./module3";
 import { module4 } from "./module4";
+import { module5 } from "./module5";
 import { modules } from "./modules";
 // A single rubric line, scored 0-3. `levels` is indexed by the score, so
 // levels[2] is what independently adequate work actually looks like, and
@@ -476,7 +477,13 @@ const week1: Lesson[] = [
   },
 ];
 
-export const lessons: Lesson[] = [...week1, ...week2, ...module3, ...module4];
+export const lessons: Lesson[] = [
+  ...week1,
+  ...week2,
+  ...module3,
+  ...module4,
+  ...module5,
+];
 
 // A lesson's owning module. Legacy lessons predate the `module` field and are
 // identified by their compatibility week number instead.

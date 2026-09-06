@@ -1,6 +1,6 @@
 # Visual foundations refresh
 
-Generated from src/module3.ts; edit that source, then run npm run docs:generate. Level 1 · Module m03 · requirement areas 1, 8. Optional effort 20 hours across 10 lessons. No deadlines; split any lesson across sessions and return to it without penalty.
+Generated from src/module3.ts; edit that source, then run npm run docs:generate. Level 1 · Module m03 · requirement areas 1, 8. Optional effort 20 hours across 10 lessons, which is the sum of the lesson steps themselves. No deadlines; split any lesson across sessions and return to it without penalty.
 
 Prerequisite: m01. This is guidance for meaningful practice, not a lock. Module approved resource pair: R03 / R06. Every resource restriction in RESOURCE-LIBRARY.md applies; required exercises never depend on a candidate tool workflow.
 

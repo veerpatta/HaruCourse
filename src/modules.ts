@@ -70,7 +70,7 @@ export const modules = [
     alternative: "R04",
     output:
       "Desk and competitive research, interviews, observation, survey/diary plan, JTBD and journey",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m06",
