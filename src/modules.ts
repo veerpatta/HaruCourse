@@ -119,7 +119,7 @@ export const modules = [
     alternative: "R02",
     output:
       "State transitions, keyboard behavior and reduced-motion alternative",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m10",
