@@ -217,7 +217,7 @@ export const modules = [
     alternative: "R07",
     output:
       "B2B roles, consumer tradeoffs, service blueprint and stakeholder decisions",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m18",
