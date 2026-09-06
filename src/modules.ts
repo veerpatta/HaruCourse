@@ -143,7 +143,7 @@ export const modules = [
     primary: "R14",
     alternative: "R10",
     output: "Forms, contrast, focus, semantics and assistive-technology checks",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m12",
