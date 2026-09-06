@@ -242,7 +242,7 @@ export const modules = [
     primary: "R22",
     alternative: "R23",
     output: "Three evidence-based case studies and presentation",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m20",
