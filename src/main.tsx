@@ -1,10 +1,11 @@
+import { navigate as navigateHistory, useNavigation } from './navigation';
 import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { registerSW } from "virtual:pwa-register";
 import { BookOpen, Map, PencilLine } from "lucide-react";
 import { modules } from "./modules";
 import { levels, baseline } from "./course";
-import { lessons } from "./lessons";
+import { publishedLessons as lessons } from "./lessons";
 import { LearningStudio } from "./LearningStudio";
 import { CloudPanel } from "./CloudPanel";
 import { AccountBackup } from "./AccountBackup";
@@ -19,9 +20,10 @@ function App({
   user: User;
   onSession: (user: User | null) => void;
 }) {
-  const [tab, setTab] = useState("Learn");
+  const navigation = useNavigation();
+  const tab = navigation.tab;
   const [navigationVersion, setNavigationVersion] = useState(0);
-  const [target, setTarget] = useState<{ id: string; section: string }>();
+  const target = navigation.lesson ? {id:navigation.lesson, section:navigation.section || "learn"} : undefined;
   const [message, setMessage] = useState("");
   const [online, setOnline] = useState(navigator.onLine);
   useEffect(() => {
@@ -45,14 +47,12 @@ function App({
     };
   }, []);
   function navigate(name: string) {
-    setTab(name);
-    setTarget(undefined);
+    navigateHistory({tab:name,lesson:null,baseline:false});
     setNavigationVersion((v) => v + 1);
     window.scrollTo(0, 0);
   }
   function open(id: string) {
-    setTarget({ id, section: "learn" });
-    setTab("Learn");
+    navigateHistory({tab:"Learn",lesson:id,baseline:false,section:"learn"});
     window.scrollTo(0, 0);
   }
   return (
@@ -112,7 +112,7 @@ function App({
               user={user}
               mode={tab}
               target={target}
-              clearTarget={() => setTarget(undefined)}
+              clearTarget={() => navigateHistory({lesson:null,baseline:false})}
             />
           )}
           {tab === "Course map" && (

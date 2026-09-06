@@ -1,11 +1,11 @@
 # Minimal course verification — 6 September 2026
 
-**Release state: implemented and verified locally; not deployed or committed by this change.** No remote database writes, migration, paid service or new module. The live site still serves the earlier release.
+**Release state: integrated and locally verified; deployment pending.** The initial simplification was committed as 0e2d7b4, then integrated with newer main-branch publications and session logging. No new migration.
 
 ## Implemented
 
 - Three destinations: Learn, Course map and My work; Account contains utilities.
-- A shared four-section reader for the baseline and all twelve published lessons.
+- A shared four-section reader for the baseline and the original twelve published lessons; the eighteen newer m03/m04 lessons also use the reader while retaining their detailed source contract.
 - Individually authored concept bullets, numbered action lists, outputs, prerequisites and repair guidance; optional examples, explanations, reading and effort details.
 - Explicit section bookmarks, existing continuation fallbacks, unchanged draft keys and record versions, preserved creator/learner isolation.
 - Lesson-labelled backup/review exports; matching imports preserve a downloaded prior copy. Legacy baseline backups and matching lesson conflict filenames remain supported.
@@ -39,4 +39,8 @@ Use CLOUD-SETUP.md with disposable local credentials, build, and start `npm.cmd 
 
 Browser scripts and screenshots are ignored under `output/playwright/`: verify-minimal.js, verify-offline.js, verify-creator.js, verify-fallbacks.js and verify-final.js; minimal-desktop.png, minimal-mobile.png and minimal-mobile-do.png. Initial browser checks were corrected to wait for asynchronous record hydration and to review a populated local fixture before declaring their results.
 
-Native installation, a full assistive-technology audit, the learner’s actual AI client and this revision’s hosted acceptance remain unverified. No real participant exercise was performed. Formal scored assessment, deeper per-criterion remediation, later modules and existing research gaps remain pending. Use only the hosted test account if this revision is released.
+Native installation, a full assistive-technology audit, the learner’s actual AI client and this revision’s hosted acceptance remain unverified. No real participant exercise was performed. Formal scored assessment, formal remediation workflow, modules after m04 and existing research gaps remain pending. Use only the hosted test account if this revision is released.
+
+## Integrated main-branch acceptance
+
+All four published module choices, original and rich guided readers, notes/section restoration, timer controls, My work history, browser Back/Forward and mobile widths 320/390px passed. Screenshot review confirms timer and bottom navigation remain reachable. New module Markdown remains derived from the upstream rich contract. The backend suite includes optional session/confidence compatibility. Build and deployment dry run pass, with nonfatal large-bundle and Workbox deprecation warnings. Remote migration listing: none pending.

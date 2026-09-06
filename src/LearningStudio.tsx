@@ -1,8 +1,14 @@
+import { navigate as navigateHistory, useNavigation } from './navigation';
+import { canPoll, onActivityResume } from './activity';
+import { useTimer } from './useTimer';
+import { practiceTotals } from './useCourseRecords';
+import { humanDate, humanDuration, statusLabel } from './labels';
+import { SessionTimer, SessionLog, TimeAdjust, ConfidencePicker } from './SessionTimer';
 import { useEffect, useState } from "react";
 import { usePosition } from "./usePosition";
 import { sections } from "../shared/position";
 import { modules } from "./modules";
-import { lessons, type Lesson } from "./lessons";
+import { publishedLessons as lessons, type Lesson } from "./lessons";
 import { baseline, baselineLesson } from "./course";
 import { usePractice } from "./usePractice";
 import { readingSelections } from "./reading";
@@ -30,8 +36,8 @@ export function LearningStudio({
   clearTarget: () => void;
 }) {
   const bookmark = usePosition(user.id);
-  const [selected, select] = useState(target?.id || "");
-  const [section, setSection] = useState(target?.section || "learn");
+  const {lesson: selected} = useNavigation();
+  const [section, setSection] = useState(bookmark.position?.lessonId === selected ? bookmark.position.sectionId : target?.section || "learn");
   const [browsedWeek, setWeek] = useState<number | null>(null);
   const week =
     browsedWeek ??
@@ -42,21 +48,6 @@ export function LearningStudio({
   >([]);
   const [error, setError] = useState("");
   const [loaded, setLoaded] = useState(false);
-  useEffect(() => {
-    if (
-      target?.id &&
-      target.id !== baseline.id &&
-      lessons.some((l) => l.id === target.id)
-    ) {
-      const safe = sections.includes(
-        target.section as (typeof sections)[number],
-      )
-        ? target.section
-        : "learn";
-      bookmark.remember(target.id, safe);
-    }
-    // A map selection is an explicit navigation event, independent of scroll/sync renders.
-  }, [target?.id, target?.section]);
   useEffect(() => {
     let active = true;
     async function refresh() {
@@ -109,10 +100,12 @@ export function LearningStudio({
       }
     }
     void refresh();
-    const timer = setInterval(refresh, 5000);
+    const timer = setInterval(() => {if(canPoll()) void refresh()}, 5000);
+    const resume = onActivityResume(() => void refresh());
     return () => {
       active = false;
       clearInterval(timer);
+      resume();
     };
   }, [user.id, user.role]);
   function open(id: string, targetSection = "learn") {
@@ -121,7 +114,7 @@ export function LearningStudio({
       ? targetSection
       : "learn";
     setSection(safe);
-    select(id);
+    navigateHistory({lesson:id,section:safe});
     if (id !== baseline.id) bookmark.remember(id, safe);
     window.scrollTo(0, 0);
   }
@@ -138,7 +131,7 @@ export function LearningStudio({
         remember={bookmark.remember}
         user={user}
         back={() => {
-          select("");
+          navigateHistory({lesson:null});
           clearTarget();
         }}
         next={
@@ -166,7 +159,12 @@ export function LearningStudio({
     return (
       <>
         <h1>My work</h1>
-        <p>Open a draft or review its feedback.</p>
+          <p>Open a draft or review its feedback.</p>
+          <details className="teaching-detail">
+            <summary>Practice history · {humanDuration(practiceTotals(records).minutes)}</summary>
+            <ul>{practiceTotals(records).sessions.map((s) => <li key={`${s.lessonId}:${s.startedAt}`}>{humanDate(s.startedAt)} · {lessons.find((l) => l.id === s.lessonId)?.title || "Baseline"} · {humanDuration(s.minutes)}</li>)}</ul>
+            {!practiceTotals(records).sessions.length && <p>No sessions recorded yet.</p>}
+          </details>
         {!loaded && <p role="status">Loading saved work…</p>}
         {error && <p role="status">{error}</p>}
         <div className="compact-list">
@@ -190,7 +188,7 @@ export function LearningStudio({
                   onClick={() => open(l.id, "practice")}
                 >
                   <strong>{l.title}</strong>
-                  <span>{saved.status.replaceAll("-", " ")} →</span>
+                  <span>{statusLabel(saved.status)} →</span>
                 </button>
               );
             })}
@@ -237,9 +235,9 @@ export function LearningStudio({
         onChange={(e) => setWeek(Number(e.target.value))}
       >
         {modules
-          .filter((m) => m.id === "m01" || m.id === "m02")
+          .filter((m) => lessons.some(l => (l.module || `m0${l.week || 1}`) === m.id))
           .map((m, i) => (
-            <option value={i + 1} key={m.id}>
+            <option value={Number(m.id.slice(1))} key={m.id}>
               {m.title}
             </option>
           ))}
@@ -288,7 +286,8 @@ export function LessonReader({
   next?: Lesson;
   open: (id: string) => void;
 }) {
-  const [activeSection, setActiveSection] = useState(section);
+  const [activeSection, setActiveSection] = useState(sections.includes(section as typeof sections[number]) ? section : "learn");
+  useEffect(() => {if(lesson.id !== "baseline-v1") remember(lesson.id, activeSection)}, [lesson.id]);
   function go(id: string) {
     setActiveSection(id);
     if (lesson.id !== "baseline-v1") remember(lesson.id, id);
@@ -305,6 +304,7 @@ export function LessonReader({
       : `harucourse:lesson:${user.id}:${lesson.id}`,
   );
   const { record, setRecord, status, conflict, resolve } = practice;
+  const timer = useTimer({storageKey:`harucourse:timer:${user.id}:${lesson.id}`,enabled:user.role === "learner",active:true,setRecord});
   const [feedback, setFeedback] = useState<Feedback[]>([]),
     [review, setReview] = useState(""),
     [message, setMessage] = useState("");
@@ -328,10 +328,12 @@ export function LessonReader({
             );
         });
     void refresh();
-    const timer = setInterval(refresh, 10000);
+    const refreshTimer = setInterval(() => {if(canPoll()) void refresh()}, 10000);
+    const stopWatching = onActivityResume(refresh);
     return () => {
       active = false;
-      clearInterval(timer);
+      clearInterval(refreshTimer);
+      stopWatching();
     };
   }, [endpoint]);
   return (
@@ -342,7 +344,7 @@ export function LessonReader({
       <span className="eyebrow">
         {lesson.id === "baseline-v1"
           ? "LEVEL 0 · BASELINE"
-          : `LEVEL 1 · MODULE ${lesson.week || 1} · LESSON ${lesson.day}`}
+          : `LEVEL ${lesson.level ?? 1} · MODULE ${lesson.week || 1} · LESSON ${lesson.day}`}
         {lesson.optional ? " · OPTIONAL" : ""}
       </span>
       <h1>{lesson.title}</h1>
@@ -351,6 +353,7 @@ export function LessonReader({
         {user.role === "creator" ? "Haru’s saved work · " : ""}
         {status}
       </p>
+      <SessionTimer timer={timer} record={record} role={user.role} steps={lesson.steps}/>
       {conflict && (
         <section className="card">
           <h2>Two versions need your choice</h2>
@@ -395,6 +398,7 @@ export function LessonReader({
             <li key={t}>{t}</li>
           ))}
         </ul>
+        {lesson.misconception && <details><summary>Common misconception</summary><p>{lesson.misconception}</p></details>}
         {lesson.example && (
           <details>
             <summary>Worked example</summary>
@@ -411,7 +415,7 @@ export function LessonReader({
             </ul>
           </details>
         )}
-        {lesson.resource.url && (
+        {lesson.resources?.length ? <details><summary>Assigned reading and free alternatives</summary>{lesson.resources.map(r=><article key={r.id}><h3><a href={r.url} target="_blank" rel="noreferrer">{r.title}</a></h3><p>{r.section}</p><p>{r.purpose}</p><p>{r.limits} Fallback: {r.fallbackId}. Optional reading: {r.minutes} minutes.</p></article>)}</details> : lesson.resource.url && (
           <details>
             <summary>Reading and free alternative</summary>
             <p>
@@ -446,10 +450,12 @@ export function LessonReader({
             <li key={t}>{t}</li>
           ))}
         </ul>
+        {lesson.freeToolPath && <p>{lesson.freeToolPath}</p>}
         <ol className="instruction-steps">
-          {lesson.steps.map((s) => (
+          {lesson.steps.map((s, i) => (
             <li key={s.title}>
               <h3>{s.title}</h3>
+              {user.role === "learner" && <button className="text-button" aria-pressed={timer.snapshot.step === i+1} onClick={()=>timer.markStep(timer.snapshot.step === i+1 ? null : i+1)}>Track this step</button>}
               <ul>
                 {s.instructions.map((t) => (
                   <li key={t}>{t}</li>
@@ -494,6 +500,7 @@ export function LessonReader({
             <li key={r}>{r}</li>
           ))}
         </ul>
+        {lesson.criteria?.map(c=><details key={c.criterion}><summary>{c.criterion}: evidence and repair</summary><p>{c.evidence}</p><ul>{c.levels.map((t,i)=><li key={i}>{i}: {t}</li>)}</ul><p>{c.remediation}</p><p>Recheck: {c.recheck}</p></details>)}
         <details>
           <summary>Need to revise?</summary>
           <ul>
@@ -555,19 +562,10 @@ export function LessonReader({
           Files are not uploaded by entering a reference. Share screenshots or
           PDFs with your reviewer separately.
         </small>
-        <label htmlFor="lesson-minutes">Actual minutes (optional)</label>
-        <input
-          id="lesson-minutes"
-          type="number"
-          min={0}
-          max={Number.MAX_SAFE_INTEGER}
-          step={1}
-          value={record.minutes}
-          disabled={user.role === "creator"}
-          onChange={(e) =>
-            setRecord((r) => ({ ...r, minutes: Number(e.target.value) }))
-          }
-        />
+        <details><summary>Time, sessions and confidence</summary>
+          <SessionLog sessions={record.sessions || []} steps={lesson.steps}/>
+          {user.role === 'learner' && <><TimeAdjust minutes={record.minutes} onAdd={timer.addMinutes} onSetTotal={timer.setTotal}/><ConfidencePicker value={record.confidence} onChange={timer.setConfidence}/></>}
+        </details>
         {user.role === "learner" && (
           <>
             <label htmlFor="lesson-status">Practice status</label>
@@ -654,6 +652,7 @@ export function LessonReader({
           <p>No feedback yet.</p>
         )}
       </section>
+      <div className="timer-clearance" aria-hidden="true"/>
       <div className="reader-actions">
         <button
           className="secondary"

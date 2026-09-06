@@ -7,7 +7,7 @@
 - Verify content/build, local backend and browser persistence before recording completion. No database migration or new module is part of this milestone.
 - Release state and actual checks: PROGRESS.md and docs/VERIFICATION-MINIMAL.md.
 
-The earlier milestone below is historical context. Resume m03/m04 authoring only after this simplification is verified.
+The earlier milestone below is historical context. Modules m03/m04 were published in parallel and are preserved in this integrated release; continue future authoring from the current blueprint.
 
 # HaruCourse project plan
 

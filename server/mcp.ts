@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { lessons } from "../src/lessons";
+import { publishedLessons, publishedLessonIds } from "../src/lessons";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
 import { WorkerEntrypoint } from "cloudflare:workers";
@@ -43,13 +43,13 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
     const lessonIdSchema = z
       .string()
       .refine(
-        (id) => id === baseline.id || lessons.some((l) => l.id === id),
+        (id) => id === baseline.id || publishedLessonIds.has(id),
         "Unknown lesson",
       )
       .default(baseline.id);
     const inputSchema = { lessonId: lessonIdSchema };
     const findLesson = (id: string) =>
-      lessons.find((l) => l.id === id) || baseline;
+      publishedLessons.find((l) => l.id === id) || baseline;
     if (scopes.includes("course:read")) {
       server.registerTool(
         "get_progress",
@@ -72,11 +72,11 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
         async ({ lessonId }) =>
           result({
             lesson: findLesson(lessonId),
-            publishedLessons: lessons.map((l) => ({
+            publishedLessons: publishedLessons.map((l) => ({
               id: l.id,
               title: l.title,
               lessonNumber: l.day,
-                moduleId: `m0${l.week || 1}`,
+              moduleId: l.module || `m0${l.week || 1}`,
             })),
             levels,
           }),
@@ -89,7 +89,22 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
           annotations: { readOnlyHint: true },
         },
         async ({ lessonId }) =>
-          result({ lessonId, rubric: findLesson(lessonId).rubric }),
+          result({
+            lessonId,
+            rubric: findLesson(lessonId).rubric,
+            // Lessons authored under the m03/m04 contract also carry what each
+            // score means and the bounded repair for a criterion below 2. A
+            // reviewer that only sees the names cannot assign a score.
+            criteria: publishedLessons.find((l) => l.id === lessonId)
+              ?.criteria,
+            scores: [
+              "0 absent",
+              "1 needs support",
+              "2 independently adequate",
+              "3 strong reasoning and tradeoffs",
+            ],
+            note: "Scores are the reviewer’s judgement about submitted work. This service does not compute, store or return any score, and reading a lesson never establishes mastery.",
+          }),
       );
       server.registerTool(
         "get_feedback",
@@ -125,7 +140,7 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
           "save_practice",
           {
             description:
-              "Update the learner’s full practice record only when requested. Read progress first and supply expectedRevision; conflicts never overwrite a newer record. Minutes are the total for this exercise, not an increment.",
+              "Update the learner’s full practice record only when requested. Read progress first and supply expectedRevision; conflicts never overwrite a newer record. Minutes are the total for this exercise, not an increment. Preserve the optional sessions log and confidence rating from get_progress when writing back; the app’s timer maintains them and omitting them erases them.",
             inputSchema: saveSchema.extend(inputSchema),
             annotations: {
               readOnlyHint: false,

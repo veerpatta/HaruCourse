@@ -9,8 +9,8 @@ Levels → Modules → Lessons. Learn → Do → Check → Your work uses concis
 | m00 | 0 | Find your starting point | 10 | None | 1 | R01 / R02 | published | Baseline flow, reflection and diagnostic review |
 | m01 | 1 | Product Design Foundations | 14 | m00 | 1, 2, 3, 6, 7 | R01 / R02 | published | Workshop flow and three screens; optional critique lessons |
 | m02 | 1 | Evidence to a Testable Design | 10 | m01 | 3, 4, 10 | R04 / R05 | published | Consent plan, findings, hypothesis, test and revision |
-| m03 | 1 | Visual foundations refresh | 20 | m01 | 1, 8 | R03 / R06 | planned | Typography, color, spacing, grid and Gestalt comparison |
-| m04 | 1 | UX reasoning and product value | 16 | m02 | 2, 3 | R02 / R07 | planned | Mental models, cognition, value proposition and MVP tradeoffs |
+| m03 | 1 | Visual foundations refresh | 20 | m01 | 1, 8 | R03 / R06 | published | Typography, color, spacing, grid and Gestalt comparison |
+| m04 | 1 | UX reasoning and product value | 16 | m02 | 2, 3 | R02 / R07 | published | Mental models, cognition, value proposition and MVP tradeoffs |
 | m05 | 2 | Research methods and synthesis | 45 | m04 | 4 | R08 / R04 | planned | Desk and competitive research, interviews, observation, survey/diary plan, JTBD and journey |
 | m06 | 2 | Information architecture | 25 | m05 | 5 | R09 / R10 | planned | Taxonomy, sitemap, card sort and manual tree test |
 | m07 | 2 | Flows and wireframes | 30 | m06 | 6, 7 | R11 / R12 | planned | Onboarding, search, permissions, checkout and failure paths |
@@ -28,6 +28,6 @@ Levels → Modules → Lessons. Learn → Do → Check → Your work uses concis
 | m19 | 6 | Portfolio and storytelling | 45 | m18 | 17 | R22 / R23 | planned | Three evidence-based case studies and presentation |
 | m20 | 6 | India and remote career preparation | 35 | m19 | 17 | R23 / R22 | planned | Role evidence matrix, resume, profile, outreach drafts and interview practice |
 
-Total provisional effort: 620 hours. Published means available to study, not assessed complete. m00 is the baseline; m01/m02 contain twelve introductory lessons. Other modules are mapped, not yet authored.
+Total provisional effort: 620 hours. Published means available to study, not assessed complete. m00 is the baseline exercise; 4 modules carry 30 authored lessons (m01 7, m02 5, m03 10, m04 8). The remaining 16 modules are mapped, not yet authored.
 
-At each module review, request artifacts, score the lesson criteria (0 absent, 1 needs help, 2 independent, 3 strong reasoning), identify a repair and recheck the revised artifact. Formal scored assessment software is still pending. No time-based lock is permitted. See docs/COURSE-AUTHORING.md for the full lesson contract and RESOURCE-LIBRARY.md for portfolio, tool, book, career and current-awareness programs.
+At each module review, request artifacts, score the lesson criteria (0 absent, 1 needs help, 2 independent, 3 strong reasoning), identify a repair and recheck the revised artifact. m03 and m04 state those four scores and a bounded repair per criterion; the earlier modules carry criteria names only. Formal scored assessment software is still pending, so no score recorded anywhere is produced or stored by the app. No time-based lock is permitted. See docs/COURSE-AUTHORING.md for the full lesson contract and RESOURCE-LIBRARY.md for portfolio, tool, book, career and current-awareness programs.

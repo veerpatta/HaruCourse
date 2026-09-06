@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { canPoll, onActivityResume } from "./activity";
 import type { Position } from "../shared/position";
 type Cache = { position: Position | null; dirty: boolean };
 export function usePosition(userId: string) {
@@ -17,7 +18,8 @@ export function usePosition(userId: string) {
   };
   const state = useRef<Cache>(initial());
   const [position, show] = useState(state.current.position);
-  const [status, setStatus] = useState("Reading position saved on this device");
+  // Only a cross-device conflict is worth a sentence; routine saves are silent.
+  const [status, setStatus] = useState("");
   const busy = useRef(false);
   function store(value: Cache) {
     state.current = value;
@@ -48,11 +50,11 @@ export function usePosition(userId: string) {
       if (r.status === 409) {
         store({ position: data.position, dirty: false });
         setStatus(
-          "A newer cloud reading position was kept. Continue learning uses that position.",
+          "Continue learning will pick up where you left off on your other device.",
         );
       } else if (state.current === snapshot) {
         store({ position: data.position, dirty: false });
-        setStatus("Reading position saved to your account");
+        setStatus("");
       } else if (data.position) {
         store({
           position: {
@@ -63,21 +65,23 @@ export function usePosition(userId: string) {
         });
       }
     } catch {
-      setStatus(
-        "Reading position saved on this device; will sync when connected",
-      );
+      // Offline or unreachable: the position is already on this device and
+      // the next successful sync carries it. Nothing to tell the reader.
     } finally {
       busy.current = false;
     }
   }
   useEffect(() => {
     void sync();
-    const timer = setInterval(() => void sync(), 2000);
-    const online = () => void sync();
-    window.addEventListener("online", online);
+    // A dirty position is already persisted locally, so deferring the sync until
+    // the app is online and on screen loses nothing.
+    const timer = setInterval(() => {
+      if (canPoll()) void sync();
+    }, 2000);
+    const stopWatching = onActivityResume(() => void sync());
     return () => {
       clearInterval(timer);
-      window.removeEventListener("online", online);
+      stopWatching();
     };
   }, [key]);
   function remember(lessonId: string, sectionId: string) {

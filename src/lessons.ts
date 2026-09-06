@@ -1,3 +1,7 @@
+import { module3 } from './module3';
+import { module4 } from './module4';
+import { modules } from './modules';
+import { adaptPublished, type Lesson } from './teaching';
 import { week2 } from "./week2";
 import { withLegacyText } from "./teaching";
 export type { Lesson } from "./teaching";
@@ -670,4 +674,27 @@ const week1 = [
     ],
   },
 ];
-export const lessons = [...week1.map(withLegacyText), ...week2];
+export const lessons = [...week1.map(withLegacyText), ...week2, ...module3.map(adaptPublished), ...module4.map(adaptPublished)];
+
+// A lesson's owning module. Legacy lessons predate the `module` field and are
+// identified by their compatibility week number instead.
+export function moduleIdOf(lesson: Pick<Lesson, "module" | "week">) {
+  return lesson.module || `m0${lesson.week || 1}`;
+}
+// Authoring a lesson file is not the same as publishing its module. Callers
+// that expose lessons — the API, the MCP tools and the studio — must gate on
+// this rather than on mere existence in `lessons`, or a lesson drafted for a
+// still-planned module becomes reachable the moment its file is imported.
+// The catalog is a parameter so this stays testable with a synthetic module.
+export function isPublishedLesson(
+  lesson: Pick<Lesson, "module" | "week">,
+  catalog: { id: string; status: string }[] = modules,
+) {
+  return (
+    catalog.find((m) => m.id === moduleIdOf(lesson))?.status === "published"
+  );
+}
+export const publishedLessons: Lesson[] = lessons.filter((l) =>
+  isPublishedLesson(l),
+);
+export const publishedLessonIds = new Set(publishedLessons.map((l) => l.id));

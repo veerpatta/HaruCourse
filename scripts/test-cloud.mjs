@@ -167,6 +167,79 @@ assert.deepEqual(
   await (await call("/api/progress", { cookie: learner })).json(),
   haruBefore,
 );
+// The timer's optional fields: they round-trip, the old six-field shape is
+// still accepted afterwards and comes back without them, and the bounds and
+// strictness the schema promises are enforced server-side.
+const timed = {
+  version: 1,
+  notes: "Isolated test workspace",
+  submission: "",
+  minutes: 1555,
+  status: "practicing",
+  updatedAt: "",
+  sessions: [
+    { startedAt: "2026-09-06T10:00:00.000Z", minutes: 25, step: 3 },
+    { startedAt: "2026-09-06T11:00:00.000Z", minutes: 30, manual: true },
+  ],
+  confidence: 4,
+};
+let testNow = await (await call("/api/progress", { cookie: tester })).json();
+assert.equal(
+  (
+    await call("/api/progress", {
+      method: "PUT",
+      cookie: tester,
+      body: { expectedRevision: testNow.revision, record: timed },
+    })
+  ).status,
+  200,
+);
+testNow = await (await call("/api/progress", { cookie: tester })).json();
+assert.deepEqual(testNow.record.sessions, timed.sessions);
+assert.equal(testNow.record.confidence, 4);
+const summary = await (
+  await call("/api/course-records", { cookie: tester })
+).json();
+const baselineRow = summary.records.find((r) => r.lessonId === "baseline-v1");
+assert.deepEqual(baselineRow?.record.sessions, timed.sessions);
+const rejects = async (patch) =>
+  assert.equal(
+    (
+      await call("/api/progress", {
+        method: "PUT",
+        cookie: tester,
+        body: { expectedRevision: testNow.revision, record: { ...timed, ...patch } },
+      })
+    ).status,
+    400,
+  );
+await rejects({ sessions: [{ startedAt: "x", minutes: 1.5 }] });
+await rejects({
+  sessions: Array.from({ length: 51 }, () => ({ startedAt: "x", minutes: 1 })),
+});
+await rejects({ confidence: 6 });
+await rejects({ sessions: [{ startedAt: "x", minutes: 1, extra: true }] });
+const { sessions: _s, confidence: _c, ...plain } = timed;
+assert.equal(
+  (
+    await call("/api/progress", {
+      method: "PUT",
+      cookie: tester,
+      body: { expectedRevision: testNow.revision, record: plain },
+    })
+  ).status,
+  200,
+);
+testNow = await (await call("/api/progress", { cookie: tester })).json();
+assert(!("sessions" in testNow.record), "old shape must come back without sessions");
+assert(!("confidence" in testNow.record), "old shape must come back without confidence");
+assert.deepEqual(
+  await (await call("/api/progress", { cookie: learner })).json(),
+  haruBefore,
+);
+checks.push(
+  "session log and confidence round-trip, old record shape still accepted, out-of-range and unknown fields rejected",
+);
 assert.equal(
   (
     await call("/api/feedback", {

@@ -45,7 +45,7 @@ export const modules = [
     primary: "R03",
     alternative: "R06",
     output: "Typography, color, spacing, grid and Gestalt comparison",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m04",
@@ -57,7 +57,7 @@ export const modules = [
     primary: "R02",
     alternative: "R07",
     output: "Mental models, cognition, value proposition and MVP tradeoffs",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m05",

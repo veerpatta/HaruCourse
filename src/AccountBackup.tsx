@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { baseline } from "./course";
-import { lessons } from "./lessons";
+import { publishedLessons as lessons } from "./lessons";
 import { usePractice } from "./usePractice";
 import { recordSchema, type User } from "../shared/record";
 

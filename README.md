@@ -37,8 +37,8 @@ Cloudflare configuration validation: `npm.cmd run check:deploy`. Deployment comm
 ## Current app scope
 
 - Responsive Learn screen, expandable course map and saved-work list.
-- Baseline plus 12 published lessons across Modules 1–2 (ten core, two optional); later modules clearly marked as planned.
-- Practice reflection, work reference, actual minutes, and review-readiness stored in this browser.
+- Baseline plus 30 published lessons across Modules 1–4; later modules clearly marked as planned.
+- Practice reflection, work reference, optional session timer, confidence and review-readiness, with local recovery and account synchronization.
 - Markdown review export and validated JSON backup import/export.
 - Install manifest and offline app shell/course content after a successful initial online load.
 - Username/password sign-in, automatic cloud saving with conflict protection, versioned creator/AI feedback, and revocable OAuth MCP access.
