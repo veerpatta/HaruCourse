@@ -8,6 +8,7 @@
 - Apply this standard to every future lesson and course extension in this repository. Concision must not remove the instructions needed to do the work.
 - Reading, navigation, elapsed time and readiness do not establish mastery. Preserve learner records, feedback and account-owned bookmarks.
 - Original vision remains immutable. Implementation and release evidence belong in PROGRESS.md and the verification documents.
+- Mobile refinement: use a compact header, sticky section controls, comfortable touch targets and enough scroll clearance for fixed controls. Keep the idle timer inline; float it during an active or paused session.
 
 # Course requirements and alignment review
 

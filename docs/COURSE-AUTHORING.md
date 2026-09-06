@@ -1,5 +1,7 @@
 # Course authoring contract
 
+Mobile layouts keep sections reachable while scrolling, use touch targets of at least 44px, and leave Back/Next clear of active timers and bottom navigation. Keep idle timers in normal flow. Verify 320px and 390px layouts, long references, focus transitions and desktop. Browser focus emulation is not proof of native soft-keyboard behavior.
+
 Read root AGENTS.md first. All lessons belong to the mapped self-paced sequence. No calendar obligations or inferred assessed completion.
 
 ## Authority and synchronization

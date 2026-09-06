@@ -1,3 +1,9 @@
+# Mobile usability follow-up — 6 September 2026
+
+Compacted the phone header; made section controls sticky and more readable; kept the idle timer inline and active/paused timer above bottom navigation; removed redundant blank clearance; widened Back/Next touch targets; tightened cards/map indentation and allowed account rows to wrap. Desktop structure and persistence behavior remain unchanged.
+
+Local Chromium checks passed at 320/390/768/1440px, including timer placement, Next clearance, sticky sections, notes focus, map and Account backups. Build passed with existing warnings. Evidence and release state: docs/VERIFICATION-MOBILE.md. This follow-up has not been deployed; the earlier hosted release is recorded below.
+
 # Integrated simplification release — 6 September 2026
 
 The simplified navigation and original twelve lesson rewrites now integrate the newer main-branch m03/m04 publication and session timer. All 30 published lessons and the baseline use the guided reader. The 18 newer lessons retain their source teaching, rubric, resource restrictions and repair instructions; these were adapted for the reader, not individually rewritten in this pass. Session logs, confidence, publication gates, mobile bottom navigation and browser history remain supported.

@@ -59,7 +59,7 @@ export function SessionTimer({
         : `${humanDuration(record.minutes)} recorded so far`;
   return (
     <div
-      className={`session-timer${running ? " is-running" : ""}${
+      className={`session-timer${hasSession ? " has-session" : ""}${running ? " is-running" : ""}${
         keyboardOpen ? " keyboard-open" : ""
       }`}
       role="group"
