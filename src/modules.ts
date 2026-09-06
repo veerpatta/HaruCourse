@@ -82,7 +82,7 @@ export const modules = [
     primary: "R09",
     alternative: "R10",
     output: "Taxonomy, sitemap, card sort and manual tree test",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m07",
@@ -94,7 +94,7 @@ export const modules = [
     primary: "R11",
     alternative: "R12",
     output: "Onboarding, search, permissions, checkout and failure paths",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m08",

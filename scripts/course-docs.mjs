@@ -12,7 +12,7 @@ const { lessons, publishedLessonIds, isPublishedLesson } = await import(
 );
 const catalog = readFileSync("RESOURCE-LIBRARY.md", "utf8");
 const ids = new Set([...catalog.matchAll(/^\| (R\d+) \|/gm)].map((m) => m[1]));
-assert.equal(ids.size, 59);
+assert.equal(ids.size, 62);
 const seen = new Set();
 for (const m of modules) {
   assert(!seen.has(m.id));
@@ -174,7 +174,9 @@ for (const module of modules) {
   const effort =
     lessonHours === module.hours
       ? `Optional effort ${module.hours} hours across ${own.length} lessons, which is the sum of the lesson steps themselves.`
-      : `Optional effort ${module.hours} hours across ${own.length} lessons: ${lessonHours} hours of lesson steps, and the remainder for the fieldwork, waiting, recruitment and iteration this module's output needs outside them.`;
+      : lessonHours < module.hours
+        ? `Optional effort ${module.hours} hours across ${own.length} lessons: ${lessonHours} hours of lesson steps, and the remainder for the fieldwork, waiting, recruitment and iteration this module's output needs outside them.`
+        : `Optional effort ${module.hours} hours across ${own.length} lessons, but the lesson steps alone come to ${lessonHours} hours: the module estimate is low and should be re-set from real pace rather than trusted.`;
   output(
     `MODULE-${module.id.slice(1)}.md`,
     `# ${module.title}\n\nGenerated from ${source}; edit that source, then run npm run docs:generate. Level ${module.level} · Module ${module.id} · requirement areas ${module.areas.join(", ")}. ${effort} No deadlines; split any lesson across sessions and return to it without penalty.\n\nPrerequisite: ${module.prerequisites.join(", ") || "none"}. This is guidance for meaningful practice, not a lock. Module approved resource pair: ${module.primary} / ${module.alternative}. Every resource restriction in RESOURCE-LIBRARY.md applies; required exercises never depend on a candidate tool workflow.\n\nEach criterion below is scored ${scores.join(", ")}. A score is a review judgement about a submitted artifact; the app records practice and feedback but does not compute, store or display any score. Reading, navigation and elapsed time never establish mastery.\n\n` +
