@@ -1,3 +1,14 @@
+# Current milestone — minimalist course
+
+- Implement the approved concise lesson format for the baseline and all twelve published lessons.
+- Merge Dashboard/Lessons into Learn; add compact My work, expandable Course map and Account utilities.
+- Preserve all existing record and bookmark interfaces; explicitly select guided sections.
+- Generate baseline and lesson Markdown from shared app/MCP teaching; make this the future authoring standard.
+- Verify content/build, local backend and browser persistence before recording completion. No database migration or new module is part of this milestone.
+- Release state and actual checks: PROGRESS.md and docs/VERIFICATION-MINIMAL.md.
+
+The earlier milestone below is historical context. Resume m03/m04 authoring only after this simplification is verified.
+
 # HaruCourse project plan
 
 Updated 6 September 2026. The educational authority is COURSE-REQUIREMENTS.md and the unchanged COURSE-VISION-ORIGINAL.md. The full sequence is COURSE-BLUEPRINT.md; resource research, comparisons, supporting programs and gaps are in RESOURCE-LIBRARY.md. Future agents start at AGENTS.md.

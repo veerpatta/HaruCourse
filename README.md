@@ -1,3 +1,13 @@
+## Concise course experience
+
+- **Learn:** continue your saved lesson or choose a compact lesson row.
+- **Course map:** expand levels and modules; Published and Planned are distinct.
+- **My work:** open saved baseline/lesson notes and versioned feedback.
+- **Account:** sign out, manage AI connections, export/restore lesson backups and find installation help.
+- Lessons use **Learn → Do → Check → Your work**, one section at a time. Detailed explanations are optional.
+
+Baseline and lesson Markdown are generated with `npm.cmd run docs:generate`. Future content follows [the authoring contract](docs/COURSE-AUTHORING.md). Current implementation verification and local/hosted state: [minimal experience checks](docs/VERIFICATION-MINIMAL.md).
+
 # Haru Course
 
 [Original course vision](COURSE-VISION-ORIGINAL.md) · [Requirements and alignment](COURSE-REQUIREMENTS.md) · [Authoring standards](docs/COURSE-AUTHORING.md)
@@ -26,7 +36,7 @@ Cloudflare configuration validation: `npm.cmd run check:deploy`. Deployment comm
 
 ## Current app scope
 
-- Responsive learner dashboard and full high-level course map.
+- Responsive Learn screen, expandable course map and saved-work list.
 - Baseline plus 12 published lessons across Modules 1–2 (ten core, two optional); later modules clearly marked as planned.
 - Practice reflection, work reference, actual minutes, and review-readiness stored in this browser.
 - Markdown review export and validated JSON backup import/export.

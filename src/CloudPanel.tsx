@@ -45,7 +45,9 @@ export function CloudPanel({
   onLoad,
   initialUser = null,
   onSession,
+  accountOnly = false,
 }: {
+  accountOnly?: boolean;
   initialUser?: User | null;
   onSession: (user: User | null) => void;
   record: RecordData;
@@ -75,6 +77,11 @@ export function CloudPanel({
     }
   }
   async function refresh() {
+    if (accountOnly) {
+      const grants = await api<{ items: Connection[] }>("/api/connections");
+      setConnections(grants.items || []);
+      return;
+    }
     const [saved, reviews, grants] = await Promise.all([
       api<CloudRecord>("/api/progress"),
       api<{ feedback: Feedback[] }>("/api/feedback"),
@@ -92,12 +99,8 @@ export function CloudPanel({
     <section className="card cloud-panel">
       <div className="section-heading">
         <div>
-          <span className="eyebrow">YOUR CONNECTED WORKSPACE</span>
           <h2>
-            <Cloud size={21} />{" "}
-            {user
-              ? `${user.name} · ${user.role === "creator" ? "Creator review" : "Cloud progress"}`
-              : "Sign in to your course."}
+            <Cloud size={21} /> {user ? user.name : "Sign in to your course."}
           </h2>
         </div>
         {user && (
@@ -148,11 +151,7 @@ export function CloudPanel({
             });
           }}
         >
-          <p>
-            Welcome back. Sign in once on this device to continue your design
-            journey. You’ll stay signed in for 30 days, unless you sign out or
-            clear browser data.
-          </p>
+          <p>Sign in to continue your course.</p>
           <label htmlFor="course-username">Username</label>
           <input
             id="course-username"
@@ -192,18 +191,24 @@ export function CloudPanel({
               records.
             </p>
           )}
-          <p>
-            {user.role === "creator"
-              ? "Review Haru’s saved work and leave feedback against the exact version you read."
-              : "Practice now saves automatically. This panel shows the baseline review history and your AI connections."}
-          </p>
+          {!accountOnly && (
+            <p>
+              {user.role === "creator"
+                ? "Review Haru’s saved work and leave feedback against the exact version you read."
+                : "Practice now saves automatically. This panel shows the baseline review history and your AI connections."}
+            </p>
+          )}
           <button
             className="secondary"
             disabled={busy}
             onClick={() => action(refresh)}
           >
             <RefreshCw size={15} />{" "}
-            {busy ? "Working…" : "Refresh cloud records"}
+            {busy
+              ? "Working…"
+              : accountOnly
+                ? "Refresh connections"
+                : "Refresh cloud records"}
           </button>
           {cloud && (
             <div className="cloud-grid">

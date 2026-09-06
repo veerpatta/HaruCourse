@@ -215,9 +215,12 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
     if (useCloud) {
       const a = document.createElement("a");
       const u = URL.createObjectURL(
-        new Blob([JSON.stringify(current.current, null, 2)], {
-          type: "application/json",
-        }),
+        new Blob(
+          [JSON.stringify({ lessonId, record: current.current }, null, 2)],
+          {
+            type: "application/json",
+          },
+        ),
       );
       a.href = u;
       a.download = lessonId + "-before-conflict.json";

@@ -1,3 +1,17 @@
+# Minimal course experience — 6 September 2026
+
+Implemented locally: Learn, Course map and My work navigation; Account utilities; one-section-at-a-time Learn → Do → Check → Your work for the baseline and all twelve published lessons. Teaching now uses concise concepts, exact action lists, output checklists, explicit prerequisites and lesson-specific repairs. Examples and deeper reasoning are optional details. All current course Markdown views and the future authoring contract are updated.
+
+Preserved: original vision checksum, published lesson IDs, record versions, storage keys, feedback revisions and account-owned bookmarks. Explicit section selection replaces scroll observation. Baseline keeps its original record and does not replace the published-lesson bookmark. Backups carry lesson IDs; compatible legacy baseline and matching conflict files remain supported.
+
+Checks passed: documentation generation/content validation, TypeScript/Vite/PWA build, local backend/OAuth/MCP suite, desktop/mobile and keyboard checks, read-only reload, saved work, offline reload/reconnection, second-context restoration, stale bookmark and draft conflicts, creator isolation and version-tied review, bookmark fallbacks, matching/mismatched backup handling. Six assigned public reading sources were rechecked. Full evidence: docs/VERIFICATION-MINIMAL.md.
+
+Release state: not deployed, committed or pushed in this revision. No remote learner records changed and no migration was introduced. Existing nonfatal Workbox warning remains. Formal assessment, later modules, native installation and authenticated optional-tool gaps remain pending.
+
+Earlier entries below describe historical releases; use the current authoring contract for all future content.
+
+---
+
 # Self-paced release — 6 September 2026
 
 Current plan: PROJECT-PLAN.md. Start future authoring with AGENTS.md. Earlier entries below are historical and their calendar proposals are superseded by COURSE-REQUIREMENTS.md.

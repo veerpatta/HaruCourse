@@ -1,3 +1,14 @@
+## Latest agreed refinement — concise course experience, 6 September 2026
+
+- Preserve the cream, green, serif design language on mobile and desktop.
+- Use Learn, Course map and My work; Account contains connections, backups and installation help.
+- Present Learn → Do → Check → Your work one section at a time, with direct access and Back/Next controls.
+- Show the outcome, prerequisites, essential concepts, exact actions and output lists in concise language. Expand examples, explanation, optional effort and portfolio context on demand.
+- Rewrite the baseline and all twelve published lessons; preserve their IDs, competency intent, evidence requirements and free paths.
+- Apply this standard to every future lesson and course extension in this repository. Concision must not remove the instructions needed to do the work.
+- Reading, navigation, elapsed time and readiness do not establish mastery. Preserve learner records, feedback and account-owned bookmarks.
+- Original vision remains immutable. Implementation and release evidence belong in PROGRESS.md and the verification documents.
+
 # Course requirements and alignment review
 
 Reviewed 6 September 2026 against [the original user brief](COURSE-VISION-ORIGINAL.md). This file translates the brief into production requirements; it does not replace the preserved original. Later explicit user decisions can refine these requirements. Update this record when they do.

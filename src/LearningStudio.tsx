@@ -1,64 +1,134 @@
+import { useEffect, useState } from "react";
 import { usePosition } from "./usePosition";
 import { sections } from "../shared/position";
 import { modules } from "./modules";
-const moduleNames = modules
-  .filter((m) => ["m01", "m02"].includes(m.id))
-  .map((m) => m.title);
-import { useEffect, useState } from "react";
 import { lessons, type Lesson } from "./lessons";
+import { baseline, baselineLesson } from "./course";
 import { usePractice } from "./usePractice";
-import type { User, RecordData, Feedback } from "../shared/record";
-export function LearningStudio({ user }: { user: User }) {
+import { readingSelections } from "./reading";
+import {
+  recordSchema,
+  type User,
+  type RecordData,
+  type Feedback,
+} from "../shared/record";
+export const sectionLabels = {
+  learn: "Learn",
+  "practice-plan": "Do",
+  check: "Check",
+  practice: "Your work",
+};
+export function LearningStudio({
+  user,
+  mode = "Learn",
+  target,
+  clearTarget,
+}: {
+  user: User;
+  mode?: string;
+  target?: { id: string; section: string };
+  clearTarget: () => void;
+}) {
   const bookmark = usePosition(user.id);
-  const [section, setSection] = useState("learn");
-  const [selected, select] = useState<string | null>(null);
-  const [week, setWeek] = useState(1);
-  const weeks = [...new Set(lessons.map((l) => l.week || 1))];
-  function open(id: string, target = "learn") {
-    const l = lessons.find((l) => l.id === id);
-    if (l) {
-      setWeek(l.week || 1);
-      const safe = sections.includes(target as (typeof sections)[number])
-        ? target
-        : "learn";
-      setSection(safe);
-      bookmark.remember(id, safe);
-      select(id);
-      window.scrollTo(0, 0);
-    }
-  }
+  const [selected, select] = useState(target?.id || "");
+  const [section, setSection] = useState(target?.section || "learn");
+  const [browsedWeek, setWeek] = useState<number | null>(null);
+  const week =
+    browsedWeek ??
+    lessons.find((l) => l.id === bookmark.position?.lessonId)?.week ??
+    1;
   const [records, setRecords] = useState<
     { lessonId: string; record: RecordData }[]
   >([]);
   const [error, setError] = useState("");
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    if (
+      target?.id &&
+      target.id !== baseline.id &&
+      lessons.some((l) => l.id === target.id)
+    ) {
+      const safe = sections.includes(
+        target.section as (typeof sections)[number],
+      )
+        ? target.section
+        : "learn";
+      bookmark.remember(target.id, safe);
+    }
+    // A map selection is an explicit navigation event, independent of scroll/sync renders.
+  }, [target?.id, target?.section]);
   useEffect(() => {
     let active = true;
-    const refresh = () =>
-      fetch("/api/course-records", { cache: "no-store" })
-        .then(async (r) => {
-          if (!r.ok) throw Error();
-          return r.json();
-        })
-        .then((v) => {
-          if (active) {
-            setRecords(v.records);
-            setError("");
+    async function refresh() {
+      let saved: { lessonId: string; record: RecordData }[] = [];
+      try {
+        const r = await fetch("/api/course-records", { cache: "no-store" });
+        if (!r.ok) throw Error();
+        saved = (await r.json()).records;
+        if (active) setError("");
+      } catch {
+        if (active)
+          setError(
+            user.role === "creator"
+              ? "Reconnect to load Haru’s saved work."
+              : "Cloud list unavailable. Showing saved work on this device.",
+          );
+      }
+      // Include pending/offline drafts without replacing newer cloud summaries with clean caches.
+      if (user.role !== "creator")
+        for (const l of [baseline, ...lessons]) {
+          const key =
+            l.id === baseline.id
+              ? `harucourse:baseline:v1:${user.id}`
+              : `harucourse:lesson:${user.id}:${l.id}`;
+          try {
+            const raw =
+              localStorage.getItem(key) ||
+              (user.id === "haru" && l.id === baseline.id
+                ? localStorage.getItem("harucourse:baseline:v1")
+                : null);
+            const parsed = recordSchema.safeParse(JSON.parse(raw || "null"));
+            const pending = JSON.parse(
+              localStorage.getItem(key + ":sync") || "null",
+            )?.dirty;
+            if (
+              parsed.success &&
+              (pending || !saved.some((r) => r.lessonId === l.id))
+            )
+              saved = [
+                ...saved.filter((r) => r.lessonId !== l.id),
+                { lessonId: l.id, record: parsed.data },
+              ];
+          } catch {
+            /* Keep cloud summaries when device data cannot be read. */
           }
-        })
-        .catch(() => {
-          if (active)
-            setError(
-              "Cloud summary unavailable. Your lesson drafts remain on this device.",
-            );
-        });
+        }
+      if (active) {
+        setRecords(saved);
+        setLoaded(true);
+      }
+    }
     void refresh();
     const timer = setInterval(refresh, 5000);
     return () => {
       active = false;
       clearInterval(timer);
     };
-  }, []);
-  const item = lessons.find((l) => l.id === selected);
+  }, [user.id, user.role]);
+  function open(id: string, targetSection = "learn") {
+    if (![baseline, ...lessons].some((l) => l.id === id)) return;
+    const safe = sections.includes(targetSection as (typeof sections)[number])
+      ? targetSection
+      : "learn";
+    setSection(safe);
+    select(id);
+    if (id !== baseline.id) bookmark.remember(id, safe);
+    window.scrollTo(0, 0);
+  }
+  const item =
+    selected === baseline.id
+      ? baselineLesson
+      : lessons.find((l) => l.id === selected);
   if (item)
     return (
       <LessonReader
@@ -67,15 +137,18 @@ export function LearningStudio({ user }: { user: User }) {
         section={section}
         remember={bookmark.remember}
         user={user}
-        back={() => select(null)}
-        next={lessons[lessons.findIndex((l) => l.id === item.id) + 1]}
+        back={() => {
+          select("");
+          clearTarget();
+        }}
+        next={
+          item.id === baseline.id
+            ? lessons[0]
+            : lessons[lessons.findIndex((l) => l.id === item.id) + 1]
+        }
         open={open}
       />
     );
-  const weekLessons = lessons.filter((l) => (l.week || 1) === week);
-  const weekRecords = records.filter((r) =>
-    weekLessons.some((l) => l.id === r.lessonId),
-  );
   const recent = records
     .filter(
       (r) =>
@@ -88,101 +161,117 @@ export function LearningStudio({ user }: { user: User }) {
   const resume =
     lessons.find((l) => l.id === bookmark.position?.lessonId) ||
     lessons.find((l) => l.id === recent?.lessonId) ||
-    lessons.find((l) => !l.optional);
+    lessons.find((l) => !l.optional)!;
+  if (mode === "My work")
+    return (
+      <>
+        <h1>My work</h1>
+        <p>Open a draft or review its feedback.</p>
+        {!loaded && <p role="status">Loading saved work…</p>}
+        {error && <p role="status">{error}</p>}
+        <div className="compact-list">
+          {[baseline, ...lessons]
+            .filter((l) =>
+              records.some(
+                (r) =>
+                  r.lessonId === l.id &&
+                  (r.record.notes ||
+                    r.record.submission ||
+                    r.record.minutes ||
+                    r.record.status !== "not-started"),
+              ),
+            )
+            .map((l) => {
+              const saved = records.find((r) => r.lessonId === l.id)!.record;
+              return (
+                <button
+                  className="lesson-row"
+                  key={l.id}
+                  onClick={() => open(l.id, "practice")}
+                >
+                  <strong>{l.title}</strong>
+                  <span>{saved.status.replaceAll("-", " ")} →</span>
+                </button>
+              );
+            })}
+        </div>
+        {loaded &&
+          !records.some(
+            (r) =>
+              r.record.notes ||
+              r.record.submission ||
+              r.record.minutes ||
+              r.record.status !== "not-started",
+          ) && <p>No saved work yet. Open a lesson to begin.</p>}
+      </>
+    );
   return (
     <>
-      <span className="eyebrow">LEVEL 1 · MODULE {week}</span>
-      <h1>Your next step in design.</h1>
-      <p className="intro">
-        Learn at your own pace. Two hours is a suggested session, with no daily
-        requirement or completion deadline. Pause and return whenever you need.
+      <span className="eyebrow">YOUR COURSE</span>
+      <h1>Learn</h1>
+      <section className="feature-card">
+        <span className="pill">YOUR NEXT STEP</span>
+        <h2>{resume.title}</h2>
+        <button
+          className="light-button"
+          onClick={() =>
+            open(
+              resume.id,
+              bookmark.position?.lessonId === resume.id
+                ? bookmark.position.sectionId
+                : "learn",
+            )
+          }
+        >
+          Continue learning →
+        </button>
+      </section>
+      <p className="save-status" role="status">
+        {bookmark.status}
       </p>
-      <div className="actions" aria-label="Choose a module">
-        {weeks.map((w) => (
-          <button
-            className={w === week ? "primary" : "secondary"}
-            aria-pressed={w === week}
-            key={w}
-            onClick={() => setWeek(w)}
-          >
-            {moduleNames[w - 1]}
-          </button>
-        ))}
-      </div>
-      {resume && (
-        <section className="card continue-card">
-          <span className="eyebrow">
-            {bookmark.position
-              ? "CONTINUE READING"
-              : recent
-                ? "RETURN TO YOUR PRACTICE"
-                : "FIRST CORE LESSON"}
-          </span>
-          <h2>{resume.title}</h2>
-          <p>
-            Module {resume.week || 1} · Lesson {resume.day}. Your saved place or
-            suggested next step, not an assessment of mastery.
-          </p>
-          <button
-            className="primary"
-            onClick={() =>
-              open(
-                resume.id,
-                bookmark.position?.lessonId === resume.id
-                  ? bookmark.position.sectionId
-                  : "learn",
-              )
-            }
-          >
-            Continue learning →
-          </button>
-        </section>
-      )}
-      <div className="notice">
-        {weekRecords.reduce((sum, r) => sum + r.record.minutes, 0)} minutes
-        recorded ·{" "}
-        {
-          weekRecords.filter((r) => r.record.status === "ready-for-review")
-            .length
-        }{" "}
-        awaiting review · 0 assessed completions
-      </div>
-      <p role="status">{bookmark.status}</p>
       {error && <p role="status">{error}</p>}
-      <div className="lesson-list">
-        {weekLessons.map((l) => {
-          const saved = records.find((r) => r.lessonId === l.id)?.record;
-          return (
+      <label htmlFor="module-choice">Browse a module</label>
+      <select
+        id="module-choice"
+        value={week}
+        onChange={(e) => setWeek(Number(e.target.value))}
+      >
+        {modules
+          .filter((m) => m.id === "m01" || m.id === "m02")
+          .map((m, i) => (
+            <option value={i + 1} key={m.id}>
+              {m.title}
+            </option>
+          ))}
+      </select>
+      <div className="compact-list">
+        {lessons
+          .filter((l) => (l.week || 1) === week)
+          .map((l) => (
             <button
-              className="card lesson-choice"
+              className="lesson-row"
               key={l.id}
               onClick={() => open(l.id)}
             >
-              <span className="eyebrow">
-                LESSON {l.day} · {l.optional ? "OPTIONAL" : "CORE"} · ~120 MIN
-                EFFORT
-              </span>
-              <h2>{l.title}</h2>
-              <p>{l.why}</p>
               <span>
-                {saved
-                  ? `${saved.minutes} min · ${saved.status.replaceAll("-", " ")}`
-                  : "Not started"}{" "}
-                →
+                Lesson {l.day}
+                {l.optional ? " · Optional" : ""}
               </span>
+              <strong>{l.title}</strong>
+              <span aria-hidden="true">→</span>
             </button>
-          );
-        })}
+          ))}
       </div>
-      <p className="notice">
-        The first two modules are published and ready to study. Later modules of
-        the 620-hour program are still being authored; the level map is the
-        roadmap, not a claim of complete course content.
+      <button className="text-button" onClick={() => open(baseline.id)}>
+        Open starting-point diagnostic →
+      </button>
+      <p className="muted">
+        Study at your own pace. Later modules are on the Course map.
       </p>
     </>
   );
 }
-function LessonReader({
+export function LessonReader({
   lesson,
   section,
   remember,
@@ -199,32 +288,27 @@ function LessonReader({
   next?: Lesson;
   open: (id: string) => void;
 }) {
+  const [activeSection, setActiveSection] = useState(section);
+  function go(id: string) {
+    setActiveSection(id);
+    if (lesson.id !== "baseline-v1") remember(lesson.id, id);
+  }
   useEffect(() => {
-    (
-      document.getElementById(section) || document.getElementById("learn")
-    )?.scrollIntoView();
-    const observe = () => {
-      const current = [...sections]
-        .reverse()
-        .find(
-          (id) =>
-            (document.getElementById(id)?.getBoundingClientRect().top ??
-              Infinity) <= 180,
-        );
-      if (current) remember(lesson.id, current);
-    };
-    window.addEventListener("scroll", observe, { passive: true });
-    return () => window.removeEventListener("scroll", observe);
-  }, [lesson.id, section]);
+    document.getElementById(activeSection)?.focus();
+    window.scrollTo(0, 0);
+  }, [activeSection]);
   const practice = usePractice(
     user,
     lesson.id,
-    `harucourse:lesson:${user.id}:${lesson.id}`,
+    lesson.id === "baseline-v1"
+      ? `harucourse:baseline:v1:${user.id}`
+      : `harucourse:lesson:${user.id}:${lesson.id}`,
   );
   const { record, setRecord, status, conflict, resolve } = practice;
   const [feedback, setFeedback] = useState<Feedback[]>([]),
     [review, setReview] = useState(""),
     [message, setMessage] = useState("");
+  const [feedbackError, setFeedbackError] = useState("");
   const endpoint = "/api/feedback?lessonId=" + lesson.id;
   useEffect(() => {
     let active = true;
@@ -232,9 +316,17 @@ function LessonReader({
       fetch(endpoint, { cache: "no-store" })
         .then((r) => (r.ok ? r.json() : Promise.reject()))
         .then((v) => {
-          if (active) setFeedback(v.feedback);
+          if (active) {
+            setFeedback(v.feedback);
+            setFeedbackError("");
+          }
         })
-        .catch(() => {});
+        .catch(() => {
+          if (active)
+            setFeedbackError(
+              "Feedback unavailable. Reconnect to load the latest review.",
+            );
+        });
     void refresh();
     const timer = setInterval(refresh, 10000);
     return () => {
@@ -248,19 +340,14 @@ function LessonReader({
         ← All lessons
       </button>
       <span className="eyebrow">
-        LEVEL 1 · MODULE {lesson.week || 1} · LESSON {lesson.day}
+        {lesson.id === "baseline-v1"
+          ? "LEVEL 0 · BASELINE"
+          : `LEVEL 1 · MODULE ${lesson.week || 1} · LESSON ${lesson.day}`}
         {lesson.optional ? " · OPTIONAL" : ""}
       </span>
       <h1>{lesson.title}</h1>
-      <p className="muted">
-        {lesson.week === 2 && lesson.day === 1
-          ? "Before you start: bring your Product Design Foundations flow, screens, and unresolved questions."
-          : lesson.day > 1
-            ? "Before you start: bring the previous lesson’s output and reflection."
-            : "Start here; no prior lesson is required."}
-      </p>
       <p className="intro">{lesson.why}</p>
-      <p className="notice" role="status">
+      <p className="save-status" role="status">
         {user.role === "creator" ? "Haru’s saved work · " : ""}
         {status}
       </p>
@@ -281,58 +368,120 @@ function LessonReader({
           </button>
         </section>
       )}
-      <nav aria-label="Lesson sections">
-        {sections.map((id) => (
-          <a
+      <nav className="section-tabs" aria-label="Lesson sections">
+        {sections.map((id, i) => (
+          <button
             key={id}
-            href={`#${id}`}
-            onClick={() => remember(lesson.id, id)}
-            style={{ marginRight: 16 }}
+            aria-current={activeSection === id ? "step" : undefined}
+            className={activeSection === id ? "primary" : "secondary"}
+            onClick={() => go(id)}
           >
-            {id.replaceAll("-", " ")}
-          </a>
+            {i + 1}. {sectionLabels[id]}
+          </button>
         ))}
       </nav>
-      <article id="learn" className="card lesson-reading">
+      <article
+        id="learn"
+        tabIndex={-1}
+        hidden={activeSection !== "learn"}
+        className="lesson-reading"
+      >
         <h2>Learn</h2>
-        {lesson.teach.map((t) => (
-          <p key={t}>{t}</p>
-        ))}
-        <h3>Worked example</h3>
-        <p>{lesson.example}</p>
         <p>
-          <a href={lesson.resource.url} target="_blank" rel="noreferrer">
-            Read: {lesson.resource.title} ↗
-          </a>
+          <strong>Bring:</strong> {lesson.prerequisite}
         </p>
-        <small>
-          Reference checked 6 September 2026. Split the reading across sessions
-          as needed.
-        </small>
+        <ul>
+          {lesson.teach.map((t) => (
+            <li key={t}>{t}</li>
+          ))}
+        </ul>
+        {lesson.example && (
+          <details>
+            <summary>Worked example</summary>
+            <p>{lesson.example}</p>
+          </details>
+        )}
+        {lesson.explanation.length > 0 && (
+          <details>
+            <summary>Why this works</summary>
+            <ul>
+              {lesson.explanation.map((t) => (
+                <li key={t}>{t}</li>
+              ))}
+            </ul>
+          </details>
+        )}
+        {lesson.resource.url && (
+          <details>
+            <summary>Reading and free alternative</summary>
+            <p>
+              <a href={lesson.resource.url} target="_blank" rel="noreferrer">
+                {lesson.resource.title} ↗
+              </a>
+            </p>
+            <p>Read: {readingSelections[lesson.resource.id]?.selection}.</p>
+            <p className="muted">
+              About {readingSelections[lesson.resource.id]?.minutes} minutes, at
+              your pace. Public reading checked 6 September 2026; no account,
+              card or trial.
+            </p>
+            <p>
+              If unavailable, use this lesson’s concepts and worked example to
+              complete the local exercise. Paper and local notes are sufficient;
+              no paid tool is required.
+            </p>
+          </details>
+        )}
       </article>
-      <section id="practice-plan" className="card lesson-reading">
-        <h2>Your practice plan</h2>
-        <ol>
+      <section
+        id="practice-plan"
+        tabIndex={-1}
+        hidden={activeSection !== "practice-plan"}
+        className="lesson-reading"
+      >
+        <h2>Do</h2>
+        <h3>Make these</h3>
+        <ul>
+          {lesson.outputs.map((t) => (
+            <li key={t}>{t}</li>
+          ))}
+        </ul>
+        <ol className="instruction-steps">
           {lesson.steps.map((s) => (
             <li key={s.title}>
-              <h3>
-                {s.minutes} min · {s.title}
-              </h3>
-              <p>{s.text}</p>
+              <h3>{s.title}</h3>
+              <ul>
+                {s.instructions.map((t) => (
+                  <li key={t}>{t}</li>
+                ))}
+              </ul>
             </li>
           ))}
         </ol>
-        <h3>Expected output</h3>
-        <p>{lesson.deliverable}</p>
-        <h3>Portfolio connection</h3>
-        <p>{lesson.portfolio}</p>
-        <p>
-          Pause after any step. Save your work and return here. Times are
-          optional effort estimates across as many sessions as you need.
+        <p className="muted">
+          Pause after any step. Save the artifact and your next action in Your
+          work.
         </p>
+        <details>
+          <summary>Optional effort and portfolio context</summary>
+          <ul>
+            {lesson.steps.map((s) => (
+              <li key={s.title}>
+                {s.title}: about {s.minutes} minutes
+              </li>
+            ))}
+          </ul>
+          <p>No deadline. Split the work across sessions.</p>
+          <p>{lesson.portfolio}</p>
+        </details>
       </section>
-      <section id="check" className="card lesson-reading">
-        <h2>Check your understanding</h2>
+      <section
+        id="check"
+        tabIndex={-1}
+        hidden={activeSection !== "check"}
+        className="lesson-reading"
+      >
+        <h2>Check</h2>
         {lesson.check.map((q) => (
           <details key={q.question}>
             <summary>{q.question}</summary>
@@ -345,19 +494,39 @@ function LessonReader({
             <li key={r}>{r}</li>
           ))}
         </ul>
-        <p>
-          Self-check each criterion: 0 absent, 1 needs help, 2 independently
-          adequate, 3 strong trade-off reasoning. Ready for review is a
-          submission state; it does not mark the lesson mastered.
-        </p>
+        <details>
+          <summary>Need to revise?</summary>
+          <ul>
+            {lesson.repairs.map((r) => (
+              <li key={r}>{r}</li>
+            ))}
+          </ul>
+          <p>
+            Show the revised artifact and the criterion it addresses at recheck.
+          </p>
+        </details>
+        <details>
+          <summary>How review works</summary>
+          <p>
+            0 absent · 1 needs support · 2 independently adequate · 3 strong
+            reasoning and trade-offs.
+          </p>
+          <p>
+            Ready for review is a request state, not assessed completion. Formal
+            scored assessment is not implemented.
+          </p>
+        </details>
       </section>
-      <section id="practice" className="card lesson-reading">
+      <section
+        id="practice"
+        tabIndex={-1}
+        hidden={activeSection !== "practice"}
+        className="lesson-reading"
+      >
         <h2>
-          {user.role === "creator"
-            ? "Review Haru’s practice"
-            : "Your practice · saves automatically"}
+          {user.role === "creator" ? "Review Haru’s practice" : "Your work"}
         </h2>
-        <label htmlFor="lesson-notes">Reflection and assignment notes</label>
+        <label htmlFor="lesson-notes">Notes and next action</label>
         <textarea
           id="lesson-notes"
           rows={8}
@@ -386,7 +555,7 @@ function LessonReader({
           Files are not uploaded by entering a reference. Share screenshots or
           PDFs with your reviewer separately.
         </small>
-        <label htmlFor="lesson-minutes">Actual minutes</label>
+        <label htmlFor="lesson-minutes">Actual minutes (optional)</label>
         <input
           id="lesson-minutes"
           type="number"
@@ -470,6 +639,7 @@ function LessonReader({
         )}
         {message && <p role="status">{message}</p>}
         <h3>Feedback</h3>
+        {feedbackError && <p role="status">{feedbackError}</p>}
         {feedback.length ? (
           feedback.map((f) => (
             <article key={f.id}>
@@ -484,19 +654,56 @@ function LessonReader({
           <p>No feedback yet.</p>
         )}
       </section>
-      {next && (
-        <section className="card continue-card">
-          <h2>Next: {next.title}</h2>
-          <p>
-            Module {next.week || 1} · Lesson {next.day}
-            {next.optional ? " · Optional" : ""}. Moving ahead does not mark
-            this lesson complete.
-          </p>
-          <button className="secondary" onClick={() => open(next.id)}>
-            Open next lesson →
+      <div className="reader-actions">
+        <button
+          className="secondary"
+          onClick={() =>
+            activeSection === "learn"
+              ? back()
+              : go(
+                  sections[
+                    sections.indexOf(
+                      activeSection as (typeof sections)[number],
+                    ) - 1
+                  ],
+                )
+          }
+        >
+          ← Back
+        </button>
+        {activeSection !== "practice" ? (
+          <button
+            className="primary"
+            onClick={() =>
+              go(
+                sections[
+                  sections.indexOf(activeSection as (typeof sections)[number]) +
+                    1
+                ],
+              )
+            }
+          >
+            Next:{" "}
+            {
+              sectionLabels[
+                sections[
+                  sections.indexOf(activeSection as (typeof sections)[number]) +
+                    1
+                ]
+              ]
+            }{" "}
+            →
           </button>
-        </section>
-      )}
+        ) : next ? (
+          <button className="secondary" onClick={() => open(next.id)}>
+            Next lesson →
+          </button>
+        ) : (
+          <button className="secondary" onClick={back}>
+            All lessons
+          </button>
+        )}
+      </div>
     </>
   );
 }

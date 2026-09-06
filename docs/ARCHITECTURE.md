@@ -1,3 +1,14 @@
+## Minimal reader update — 6 September 2026
+
+- Learn and My work share LearningStudio and a single LessonReader, including the baseline; Course map expands levels/modules. Account contains utilities.
+- Lessons retain published IDs and legacy MCP fields. Structured prerequisites, outputs, instructions, explanations and repairs live in the teaching sources; withLegacyText derives compatibility text.
+- All teaching Markdown, including the baseline, is generated from those sources. Reading selections reference RESOURCE-LIBRARY.md IDs.
+- The reader retains mounted draft state across hidden sections. Explicit section selection replaces scroll tracking and maps Learn/Do/Check/Your work to the existing server IDs.
+- Published-lesson continuation still uses bookmark → latest unfinished practice → first core. Baseline browsing leaves that bookmark intact. Creator bookmarks belong to the creator; learner records remain read-only to creators.
+- My work includes cloud records and the signed-in learner’s pending local drafts. Local creator caches never masquerade as learner summaries.
+- Backups now carry {lessonId, record}; mismatched imports are rejected. Older plain RecordData imports support baseline and lesson backups whose filenames match the selected stable ID. No D1 migration or record-version change.
+- The implementation does not add formal assessment. See VERIFICATION-MINIMAL.md for actual checks and release state.
+
 ## Self-paced update — 6 September 2026
 
 The current content authority/synchronization table is in COURSE-AUTHORING.md. Modules are defined once in src/modules.ts and rendered by the app; the blueprint and legacy WEEK markdown views are generated. The course has no deadline.
@@ -18,4 +29,4 @@ No server-side model calls are made. Design critique requires actual image evide
 
 The target remains zero additional cost within provider free allowances. Hosting is live at https://harucourse.raj-39e.workers.dev after explicit CLI deployment authorization; billing-plan visibility remains unavailable. See [setup and release prerequisites](CLOUD-SETUP.md). Local SDK/browser tests do not establish hosted availability, native device installation, or compatibility with the learner’s particular AI account.
 
-Next work: verify the learner’s actual AI-client connection and produce the first complete week of lessons with checked resources and assessment rubrics.
+Next work: follow PROJECT-PLAN.md for mapped m03/m04 authoring, deeper assessment and remaining AI-client acceptance.
