@@ -140,7 +140,7 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
           "save_practice",
           {
             description:
-              "Update the learner’s full practice record only when requested. Read progress first and supply expectedRevision; conflicts never overwrite a newer record. Minutes are the total for this exercise, not an increment.",
+              "Update the learner’s full practice record only when requested. Read progress first and supply expectedRevision; conflicts never overwrite a newer record. Minutes are the total for this exercise, not an increment. Preserve the optional sessions log and confidence rating from get_progress when writing back; the app’s timer maintains them and omitting them erases them.",
             inputSchema: saveSchema.extend(inputSchema),
             annotations: {
               readOnlyHint: false,

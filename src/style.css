@@ -894,7 +894,9 @@ footer {
   }
   .stats span {
     margin: 0;
-    font-size: 8px;
+    /* Was 8px, which silently overrode the 11px rule above that says 8-9px is
+       unreadable on a phone. Keep the readable size. */
+    font-size: 11px;
   }
   .stats strong {
     font-size: 13px;
@@ -1236,4 +1238,272 @@ footer {
 .continue-card {
   margin: 24px 0;
   padding: 24px;
+}
+
+/* Session timer. One control per lesson: Start, Pause, Finish, plus which
+   step is being worked on. It writes the record only when time is folded in,
+   so its own state is local and cheap to render every second. */
+.session-timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 64px;
+  padding: 12px 18px;
+  margin: 18px 0 22px;
+  background: #fffefb;
+  border: 1px solid #e1e5d9;
+  border-radius: 12px;
+  position: sticky;
+  top: 12px;
+  z-index: 5;
+}
+.session-timer-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 2px;
+}
+.session-timer-clock {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #214e46;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+}
+.session-timer-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #4f8a5b;
+  animation: timer-pulse 1.6s ease-in-out infinite;
+}
+@keyframes timer-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+.session-timer-sub {
+  font-size: 12px;
+  color: #59734f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.session-timer-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.session-timer-actions button {
+  min-height: 44px;
+  min-width: 44px;
+}
+.session-timer-actions .primary {
+  min-width: 96px;
+  justify-content: center;
+}
+.timer-live {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.timer-clearance {
+  display: none;
+}
+.inline-clock {
+  font-weight: 500;
+  color: #4f8a5b;
+  font-variant-numeric: tabular-nums;
+}
+.session-summary h2 {
+  margin-top: 8px;
+}
+
+/* Practice plan rows. On a learner's screen each row is a button that marks
+   the current step; for the creator it is plain. Either way it is the same
+   .step layout the baseline already used. */
+.practice-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.practice-steps .step {
+  padding: 0;
+}
+.step-pick {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  padding: 14px 6px;
+  margin: 0;
+  background: none;
+  border: 0;
+  border-left: 3px solid transparent;
+  border-radius: 8px;
+  text-align: left;
+  color: inherit;
+  font: inherit;
+  min-height: 56px;
+}
+button.step-pick:hover {
+  background: #f3f5ee;
+}
+button.step-pick[aria-pressed="true"] {
+  background: #eef3e6;
+  border-left-color: #214e46;
+}
+button.step-pick[aria-pressed="true"] .step-number {
+  background: #214e46;
+  color: #fff;
+}
+.step-pick h3 {
+  margin: 0 0 4px;
+}
+.step-pick p {
+  margin: 0;
+  font-size: 14px;
+}
+.session-log .step-number {
+  font-size: 11px;
+}
+.session-row p {
+  font-weight: 600;
+  color: #214e46;
+}
+
+/* Confidence: five equal targets, labelled at the ends only. */
+.confidence-wrap {
+  margin: 10px 0 4px;
+}
+.confidence {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+.confidence button {
+  min-height: 44px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  background: #fcfbf7;
+  border: 1px solid #d5dccc;
+  border-radius: 9px;
+  color: #315849;
+}
+.confidence button[aria-checked="true"] {
+  background: #214e46;
+  border-color: #214e46;
+  color: #fff;
+}
+.confidence-ends {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  letter-spacing: 0.6px;
+  color: #7b8374;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.time-adjust {
+  margin: 18px 0 8px;
+}
+.time-adjust summary,
+.lesson-reading details > summary,
+.practice-form details > summary,
+.backup-card > summary,
+.connections > summary {
+  cursor: pointer;
+  font-weight: 600;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.time-adjust-row {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 6px 0 10px;
+}
+.time-adjust-row label {
+  flex-basis: 100%;
+  margin: 0;
+}
+.time-adjust-row input {
+  width: 120px;
+  font-size: 16px;
+  margin: 0;
+}
+.time-adjust-total {
+  display: inline;
+}
+.time-adjust-total > summary {
+  display: inline;
+  min-height: 0;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+@media (max-width: 760px) {
+  /* Directly above the bottom tab bar (6px padding + 52px buttons + inset),
+     so both stay reachable with one thumb. Hidden while a field has focus,
+     because a fixed bar over a soft keyboard floats or is covered; the
+     practice heading shows the time inline meanwhile. */
+  .session-timer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: calc(68px + max(10px, env(safe-area-inset-bottom)));
+    margin: 0;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 10px max(16px, env(safe-area-inset-right)) 10px
+      max(16px, env(safe-area-inset-left));
+    z-index: 19;
+    box-shadow: 0 -6px 18px rgba(38, 61, 56, 0.06);
+  }
+  .session-timer.keyboard-open {
+    display: none;
+  }
+  .session-timer-clock {
+    font-size: 24px;
+  }
+  .session-timer-actions .primary {
+    min-width: 88px;
+  }
+  .session-summary {
+    position: static;
+  }
+  .timer-clearance {
+    display: block;
+    height: 84px;
+  }
+  .confidence {
+    gap: 6px;
+  }
+  .time-adjust-row input {
+    width: 100px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .session-timer-dot {
+    animation: none;
+  }
 }

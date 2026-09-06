@@ -9,6 +9,15 @@ import {
   moduleIdOf,
   type Lesson,
 } from "./lessons";
+import { practiceTotals, useCourseRecords } from "./useCourseRecords";
+import { formatClock, humanDuration, sectionLabel, statusLabel } from "./labels";
+import { useTimer } from "./useTimer";
+import {
+  ConfidencePicker,
+  PracticeSteps,
+  SessionTimer,
+  TimeAdjust,
+} from "./SessionTimer";
 // `week` stays the grouping key because saved records, bookmarks and the
 // legacy documents all use it. Everything shown to the reader — the module
 // name, its number and its level — comes from src/modules.ts instead, so
@@ -54,41 +63,7 @@ export function LearningStudio({ user }: { user: User }) {
       window.scrollTo(0, 0);
     }
   }
-  const [records, setRecords] = useState<
-    { lessonId: string; record: RecordData }[]
-  >([]);
-  const [error, setError] = useState("");
-  useEffect(() => {
-    let active = true;
-    const refresh = () =>
-      fetch("/api/course-records", { cache: "no-store" })
-        .then(async (r) => {
-          if (!r.ok) throw Error();
-          return r.json();
-        })
-        .then((v) => {
-          if (active) {
-            setRecords(v.records);
-            setError("");
-          }
-        })
-        .catch(() => {
-          if (active)
-            setError(
-              "Cloud summary unavailable. Your lesson drafts remain on this device.",
-            );
-        });
-    void refresh();
-    const timer = setInterval(() => {
-      if (canPoll()) void refresh();
-    }, 5000);
-    const stopWatching = onActivityResume(() => void refresh());
-    return () => {
-      active = false;
-      clearInterval(timer);
-      stopWatching();
-    };
-  }, []);
+  const { records, error } = useCourseRecords(user);
   const item = lessons.find((l) => l.id === selected);
   if (item)
     return (
@@ -104,9 +79,7 @@ export function LearningStudio({ user }: { user: User }) {
       />
     );
   const weekLessons = lessons.filter((l) => (l.week || 1) === week);
-  const weekRecords = records.filter((r) =>
-    weekLessons.some((l) => l.id === r.lessonId),
-  );
+  const totals = practiceTotals(records);
   const recent = records
     .filter(
       (r) =>
@@ -131,31 +104,20 @@ export function LearningStudio({ user }: { user: User }) {
         Learn at your own pace. Two hours is a suggested session, with no daily
         requirement or completion deadline. Pause and return whenever you need.
       </p>
-      <div className="actions" aria-label="Choose a module">
-        {weeks.map((w) => (
-          <button
-            className={w === week ? "primary" : "secondary"}
-            aria-pressed={w === week}
-            key={w}
-            onClick={() => setWeek(w)}
-          >
-            {moduleOfWeek(w)?.title ?? `Module ${w}`}
-          </button>
-        ))}
-      </div>
       {resume && (
         <section className="card continue-card">
           <span className="eyebrow">
             {bookmark.position
-              ? "CONTINUE READING"
+              ? "PICK UP WHERE YOU LEFT OFF"
               : recent
                 ? "RETURN TO YOUR PRACTICE"
-                : "FIRST CORE LESSON"}
+                : "START HERE"}
           </span>
           <h2>{resume.title}</h2>
           <p>
-            Module {moduleLabel(resume)} · Lesson {resume.day}. Your saved place
-            or suggested next step, not an assessment of mastery.
+            Module {moduleLabel(resume)} · Lesson {resume.day} · about{" "}
+            {humanDuration(effortMinutes(resume))}. Your saved place, not a
+            measure of how far you have come.
           </p>
           <button
             className="primary"
@@ -172,16 +134,28 @@ export function LearningStudio({ user }: { user: User }) {
           </button>
         </section>
       )}
-      <div className="notice">
-        {weekRecords.reduce((sum, r) => sum + r.record.minutes, 0)} minutes
-        recorded ·{" "}
-        {
-          weekRecords.filter((r) => r.record.status === "ready-for-review")
-            .length
-        }{" "}
-        awaiting review · 0 assessed completions
+      <div className="actions" aria-label="Choose a module">
+        {weeks.map((w) => (
+          <button
+            className={w === week ? "primary" : "secondary"}
+            aria-pressed={w === week}
+            key={w}
+            onClick={() => setWeek(w)}
+          >
+            {moduleOfWeek(w)?.title ?? `Module ${w}`}
+          </button>
+        ))}
       </div>
-      <p role="status">{bookmark.status}</p>
+      <div className="notice">
+        {humanDuration(totals.minutes)} of practice recorded across the course
+        {totals.started
+          ? ` · ${totals.started} lesson${totals.started === 1 ? "" : "s"} in progress`
+          : ""}
+        {totals.ready
+          ? ` · ${totals.ready} ready for review`
+          : ""}
+      </div>
+      {bookmark.status && <p role="status">{bookmark.status}</p>}
       {error && <p role="status">{error}</p>}
       <div className="lesson-list">
         {weekLessons.map((l) => {
@@ -193,15 +167,15 @@ export function LearningStudio({ user }: { user: User }) {
               onClick={() => open(l.id)}
             >
               <span className="eyebrow">
-                LESSON {l.day} · {l.optional ? "OPTIONAL" : "CORE"} · ~
-                {effortMinutes(l)} MIN EFFORT
+                LESSON {l.day} · {l.optional ? "OPTIONAL" : "CORE"} · ABOUT{" "}
+                {humanDuration(effortMinutes(l)).toUpperCase()}
               </span>
               <h2>{l.title}</h2>
               <p>{l.why}</p>
               <span>
-                {saved
-                  ? `${saved.minutes} min · ${saved.status.replaceAll("-", " ")}`
-                  : "Not started"}{" "}
+                {saved && saved.status !== "not-started"
+                  ? `${humanDuration(saved.minutes)} practised · ${statusLabel(saved.status)}`
+                  : "Start when you're ready"}{" "}
                 →
               </span>
             </button>
@@ -258,6 +232,15 @@ function LessonReader({
     `harucourse:lesson:${user.id}:${lesson.id}`,
   );
   const { record, setRecord, status, conflict, resolve } = practice;
+  // Declared after usePractice so its unmount fold runs while the practice
+  // hook can still persist and flush it.
+  const timer = useTimer({
+    storageKey: `harucourse:timer:${user.id}:${lesson.id}`,
+    enabled: user.role === "learner",
+    active: true,
+    setRecord,
+  });
+  const learner = user.role === "learner";
   const [feedback, setFeedback] = useState<Feedback[]>([]),
     [review, setReview] = useState(""),
     [message, setMessage] = useState("");
@@ -282,6 +265,7 @@ function LessonReader({
       stopWatching();
     };
   }, [endpoint]);
+  const readyBlocked = !record.notes.trim() || !record.submission.trim();
   return (
     <>
       <button className="text-button" onClick={back}>
@@ -312,20 +296,28 @@ function LessonReader({
         {user.role === "creator" ? "Haru’s saved work · " : ""}
         {status}
       </p>
+      <SessionTimer
+        timer={timer}
+        record={record}
+        role={user.role}
+        steps={lesson.steps}
+      />
       {conflict && (
         <section className="card">
-          <h2>Two versions need your choice</h2>
+          <h2>Which version do you want to keep?</h2>
           <p>
-            Another device saved a different version. Your draft is preserved.
+            This lesson was also edited on another device or tab. Nothing here
+            has been lost.
           </p>
           <pre className="record-preview">
-            Cloud: {conflict.record?.notes || "Empty record"}
+            The other version’s notes:{" "}
+            {conflict.record?.notes || "(no notes yet)"}
           </pre>
           <button className="secondary" onClick={() => resolve(true)}>
-            Back up my draft and use cloud
+            Use the other version (a copy of this one is downloaded first)
           </button>
           <button className="secondary" onClick={() => resolve(false)}>
-            Keep my draft and save it
+            Keep this device’s version
           </button>
         </section>
       )}
@@ -337,7 +329,7 @@ function LessonReader({
             href={`#${id}`}
             onClick={() => remember(lesson.id, id)}
           >
-            {id.replaceAll("-", " ")}
+            {sectionLabel(id)}
           </a>
         ))}
       </nav>
@@ -387,16 +379,26 @@ function LessonReader({
       </article>
       <section id="practice-plan" className="card lesson-reading">
         <h2>Your practice plan</h2>
-        <ol>
-          {lesson.steps.map((s) => (
-            <li key={s.title}>
-              <h3>
-                {s.minutes} min · {s.title}
-              </h3>
-              <p>{s.text}</p>
-            </li>
-          ))}
-        </ol>
+        {learner && (
+          <p className="muted">
+            Tap a step while the timer runs to record time against it. Steps
+            are guidance, not a checklist — nothing here marks a step done.
+          </p>
+        )}
+        <PracticeSteps
+          steps={lesson.steps}
+          current={timer.snapshot.step}
+          canPick={learner}
+          onPick={timer.markStep}
+          sessions={record.sessions}
+        />
+        <p className="muted">
+          About {humanDuration(effortMinutes(lesson))} in total, across as many
+          sessions as you need.
+          {record.minutes
+            ? ` ${humanDuration(record.minutes)} recorded so far.`
+            : ""}
+        </p>
         <h3>Expected output</h3>
         <p>{lesson.deliverable}</p>
         {lesson.freeToolPath && (
@@ -407,10 +409,6 @@ function LessonReader({
         )}
         <h3>Portfolio connection</h3>
         <p>{lesson.portfolio}</p>
-        <p>
-          Pause after any step. Save your work and return here. Times are
-          optional effort estimates across as many sessions as you need.
-        </p>
       </section>
       <section id="check" className="card lesson-reading">
         <h2>Check your understanding</h2>
@@ -457,8 +455,7 @@ function LessonReader({
         )}
         <p>
           Self-check each criterion: 0 absent, 1 needs help, 2 independently
-          adequate, 3 strong trade-off reasoning. Ready for review is a
-          submission state; it does not mark the lesson mastered.
+          adequate, 3 strong trade-off reasoning.
         </p>
       </section>
       <section id="practice" className="card lesson-reading">
@@ -466,6 +463,12 @@ function LessonReader({
           {user.role === "creator"
             ? "Review Haru’s practice"
             : "Your practice · saves automatically"}
+          {learner && timer.snapshot.running && (
+            <span className="inline-clock">
+              {" "}
+              · {formatClock(timer.snapshot.elapsedMs)} running
+            </span>
+          )}
         </h2>
         <label htmlFor="lesson-notes">Reflection and assignment notes</label>
         <textarea
@@ -482,7 +485,9 @@ function LessonReader({
             }))
           }
         />
-        <label htmlFor="lesson-reference">Work reference or share link</label>
+        <label htmlFor="lesson-reference">
+          Link to your work (Figma, Drive, or a file name)
+        </label>
         <input
           id="lesson-reference"
           value={record.submission}
@@ -493,25 +498,26 @@ function LessonReader({
           }
         />
         <small>
-          Files are not uploaded by entering a reference. Share screenshots or
-          PDFs with your reviewer separately.
+          Files stay where you keep them. This saves the link or name, not the
+          file — share screenshots or PDFs with your reviewer separately.
         </small>
-        <label htmlFor="lesson-minutes">Actual minutes</label>
-        <input
-          id="lesson-minutes"
-          type="number"
-          min={0}
-          max={Number.MAX_SAFE_INTEGER}
-          step={1}
-          value={record.minutes}
-          disabled={user.role === "creator"}
-          onChange={(e) =>
-            setRecord((r) => ({ ...r, minutes: Number(e.target.value) }))
-          }
-        />
-        {user.role === "learner" && (
+        {learner && (
           <>
-            <label htmlFor="lesson-status">Practice status</label>
+            <TimeAdjust
+              minutes={record.minutes}
+              onAdd={timer.addMinutes}
+              onSetTotal={timer.setTotal}
+            />
+            <h3>How confident do you feel about this work?</h3>
+            <ConfidencePicker
+              value={record.confidence}
+              onChange={timer.setConfidence}
+            />
+            <small>
+              A note to yourself, not a grade. Your reviewer sees it alongside
+              your work.
+            </small>
+            <label htmlFor="lesson-status">Where is this lesson up to?</label>
             <select
               id="lesson-status"
               value={record.status}
@@ -523,14 +529,25 @@ function LessonReader({
               }
             >
               <option value="not-started">Not started</option>
-              <option value="practicing">Practicing</option>
-              <option
-                value="ready-for-review"
-                disabled={!record.notes.trim() || !record.submission.trim()}
-              >
+              <option value="practicing">In progress</option>
+              <option value="ready-for-review" disabled={readyBlocked}>
                 Ready for review
               </option>
             </select>
+            {readyBlocked && (
+              <small>
+                Add notes and a link to your work to mark it ready for review.
+              </small>
+            )}
+            <details>
+              <summary>How reviews work</summary>
+              <p>
+                Marking work ready for review tells your reviewer it is worth a
+                look. It does not grade it, send it anywhere, or mark the lesson
+                as finished. Your reviewer reads your notes and your linked work
+                against the criteria above, then writes feedback here.
+              </p>
+            </details>
           </>
         )}
         {user.role === "creator" && (
@@ -607,6 +624,7 @@ function LessonReader({
           </button>
         </section>
       )}
+      {learner && <div className="timer-clearance" aria-hidden />}
     </>
   );
 }

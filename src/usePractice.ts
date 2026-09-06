@@ -51,7 +51,7 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
       return true;
     } catch {
       setStatus(
-        "Device storage unavailable. Keep this window open until saved online.",
+        "This device can’t store your work right now. Keep this window open until it says Saved online.",
       );
       return false;
     }
@@ -74,7 +74,7 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
     render(current.current);
     persist();
     setStatus(
-      navigator.onLine ? "Saving…" : "Saved on device · waiting for connection",
+      navigator.onLine ? "Saving…" : "Saved on this device — it will upload when you’re back online",
     );
   }
   async function hydrate() {
@@ -83,15 +83,17 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
       if (!r.ok)
         throw Error(
           r.status === 401
-            ? "Sign in again to sync."
-            : "Cloud unavailable. Your draft stays on this device.",
+            ? "Sign in again to keep saving online."
+            : "Couldn’t reach the server. Your work is safe on this device.",
         );
       const remote: CloudRecord = await r.json();
       if (!active.current) return;
       if (dirty.current && remote.revision !== revision.current) {
         blocked.current = true;
         setConflict(remote);
-        setStatus("Another version exists. Choose which copy to keep.");
+        setStatus(
+          "This lesson was also edited somewhere else. Choose which version to keep.",
+        );
         ready.current = true;
         return;
       }
@@ -118,13 +120,13 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
     )
       return;
     if (!navigator.onLine) {
-      setStatus("Saved on device · waiting for connection");
+      setStatus("Saved on this device — it will upload when you’re back online");
       return;
     }
     const parsed = recordSchema.safeParse(current.current);
     if (!parsed.success) {
       setStatus(
-        "Draft kept on device. Add required evidence or correct minutes to sync.",
+        "Kept on this device. To mark it ready for review, add your notes and a link to your work.",
       );
       return;
     }
@@ -147,8 +149,8 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
       if (!r.ok)
         throw Error(
           r.status === 401
-            ? "Sign in again to sync."
-            : "Sync failed · retrying with your draft preserved",
+            ? "Sign in again to keep saving online."
+            : "Couldn’t save online just now — will keep trying. Your work is safe on this device.",
         );
       const saved: CloudRecord = await r.json();
       revision.current = saved.revision;
@@ -161,12 +163,17 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
       else {
         try {
           const local = JSON.parse(localStorage.getItem(storageKey) || "null");
+          // A save finishing after unmount must not overwrite a newer instance
+          // of the same lesson, so it only re-persists when every field it
+          // sent still matches what the device holds — the timer's fields too.
           if (
             local &&
             local.notes === parsed.data.notes &&
             local.submission === parsed.data.submission &&
             local.minutes === parsed.data.minutes &&
-            local.status === parsed.data.status
+            local.status === parsed.data.status &&
+            local.confidence === parsed.data.confidence &&
+            (local.sessions?.length ?? 0) === (parsed.data.sessions?.length ?? 0)
           )
             persist();
         } catch {}
@@ -174,7 +181,11 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
       if (active.current) setStatus(dirty.current ? "Saving…" : "Saved online");
     } catch (e) {
       if (active.current)
-        setStatus(e instanceof Error ? e.message : "Sync failed");
+        setStatus(
+          e instanceof Error
+            ? e.message
+            : "Couldn’t save online — will keep trying.",
+        );
     } finally {
       saving.current = false;
     }

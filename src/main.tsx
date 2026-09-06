@@ -1,7 +1,7 @@
 import { modules } from "./modules";
 import { LearningStudio } from "./LearningStudio";
 import { navigate, useNavigation } from "./navigation";
-import { usePractice } from "./usePractice";
+import { emptyRecord, usePractice } from "./usePractice";
 import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
@@ -9,7 +9,6 @@ import {
   ArrowRight,
   BookOpen,
   Check,
-  Circle,
   Clock3,
   Download,
   LayoutGrid,
@@ -23,6 +22,17 @@ import { registerSW } from "virtual:pwa-register";
 import { baseline, levels } from "./course";
 import { CloudPanel } from "./CloudPanel";
 import { recordSchema, type RecordData, type User } from "../shared/record";
+import { useTimer } from "./useTimer";
+import {
+  ConfidencePicker,
+  PracticeSteps,
+  SessionLog,
+  SessionTimer,
+  TimeAdjust,
+} from "./SessionTimer";
+import { practiceTotals, useCourseRecords } from "./useCourseRecords";
+import { humanDate, humanDuration, statusLabel } from "./labels";
+import { publishedLessons } from "./lessons";
 import "./style.css";
 
 type InstallPrompt = Event & {
@@ -30,26 +40,23 @@ type InstallPrompt = Event & {
   userChoice: Promise<{ outcome: string }>;
 };
 const key = "harucourse:baseline:v1";
-const empty: RecordData = {
-  version: 1,
-  notes: "",
-  submission: "",
-  minutes: 0,
-  status: "not-started",
-  updatedAt: "",
-};
 let loadProblem = false;
 function readRecord(storageKey = key): RecordData {
   try {
     const raw =
       localStorage.getItem(storageKey) ||
       (storageKey === `${key}:haru` ? localStorage.getItem(key) : null);
-    if (!raw) return empty;
+    if (!raw) return emptyRecord;
     return recordSchema.parse(JSON.parse(raw));
   } catch {
     loadProblem = true;
-    return empty;
+    return emptyRecord;
   }
+}
+// The lesson a logged session belongs to, for the Progress page.
+function lessonTitle(lessonId: string) {
+  if (lessonId === baseline.id) return baseline.title;
+  return publishedLessons.find((l) => l.id === lessonId)?.title ?? lessonId;
 }
 function download(name: string, text: string, type = "text/markdown") {
   const url = URL.createObjectURL(new Blob([text], { type }));
@@ -75,9 +82,20 @@ function App({
     resolve,
   } = usePractice(user, baseline.id, key);
   const { tab, baseline: lesson } = useNavigation();
+  // The baseline timer lives here, beside its practice record, so it survives
+  // switching between the baseline page and the My practice notebook. It
+  // pauses itself whenever neither is on screen.
+  const timer = useTimer({
+    storageKey: `harucourse:timer:${user.id}:${baseline.id}`,
+    enabled: user.role === "learner",
+    active: lesson || tab === "My practice",
+    setRecord,
+  });
+  const { records: courseRecords } = useCourseRecords(user);
+  const totals = practiceTotals(courseRecords);
   const [message, setMessage] = useState(
     loadProblem
-      ? "Saved data could not be read. Existing storage has not been overwritten. Export any recoverable work before saving again."
+      ? "Saved work on this device could not be read. Nothing was overwritten — download a backup before saving again."
       : "",
   );
   const [prompt, setPrompt] = useState<InstallPrompt | null>(null);
@@ -105,23 +123,23 @@ function App({
         onNeedRefresh: () => setUpdate(true),
         onRegisterError: () =>
           setMessage(
-            "Offline setup did not finish. You can continue online and try reloading later.",
+            "Offline mode isn’t ready yet. Everything works while you’re online; try reopening the app later.",
           ),
       });
   }, []);
   function save(status = record.status) {
-    if (!recordSchema.safeParse({ ...record, status }).success) {
-      setMessage(
-        "Use whole minutes from zero upwards, and add a reflection and work reference before marking work ready.",
-      );
-      return;
-    }
     if (
       status === "ready-for-review" &&
       (!record.notes.trim() || !record.submission.trim())
     ) {
       setMessage(
-        "Add a reflection and a reference to your work before marking it ready for review.",
+        "Add your notes and a link to your work before marking it ready for review.",
+      );
+      return;
+    }
+    if (!recordSchema.safeParse({ ...record, status }).success) {
+      setMessage(
+        "Something in this record could not be saved. Check that the total time is whole minutes.",
       );
       return;
     }
@@ -129,22 +147,25 @@ function App({
     try {
       localStorage.setItem(key, JSON.stringify(next));
       setRecord(next);
-      setMessage("Draft saved; automatic cloud sync is running.");
+      setMessage("Saved. It will upload automatically.");
     } catch {
       setMessage(
         "This browser could not save your work. Download a backup before leaving.",
       );
     }
   }
-  const statusLabel = {
-    "not-started": "Not started",
-    practicing: "In practice",
-    "ready-for-review": "Ready for review",
-  }[record.status];
   function exportReview() {
+    const sessions = (record.sessions ?? [])
+      .map(
+        (s) =>
+          `- ${humanDate(s.startedAt)} · ${s.minutes} min${
+            s.manual ? " (added by hand)" : s.step ? ` · step ${s.step}` : ""
+          }`,
+      )
+      .join("\n");
     download(
       "haru-baseline-review.md",
-      `# Haru Course — review package\n\nLesson: ${baseline.id}\nStatus: ${statusLabel} (self-reported; not assessed)\nTime: ${record.minutes} minutes\n\n## Brief\n${baseline.brief}\n\n## Expected work\n${baseline.deliverable}\n\n## Review rubric\n${baseline.rubric.map((r) => "- " + r).join("\n")}\n\n## Learner reflection\n${record.notes || "Not provided"}\n\n## Submission reference\n${record.submission || "Not provided"}\n\n## Instructions for reviewer\nAsk for actual screenshots or files if the reference is inaccessible. Do not infer visual quality from a URL. Identify strengths, specific issues, supporting evidence, and a bounded revision exercise. Label AI feedback. Do not claim this assessment has been saved to the course.\n`,
+      `# Haru Course — review package\n\nLesson: ${baseline.id}\nStatus: ${statusLabel(record.status)} (self-reported; not assessed)\nTime: ${record.minutes} minutes total${record.confidence ? `\nConfidence: ${record.confidence}/5 (self-rated)` : ""}\n\n## Sessions\n${sessions || "None logged"}\n\n## Brief\n${baseline.brief}\n\n## Expected work\n${baseline.deliverable}\n\n## Review rubric\n${baseline.rubric.map((r) => "- " + r).join("\n")}\n\n## Learner reflection\n${record.notes || "Not provided"}\n\n## Submission reference\n${record.submission || "Not provided"}\n\n## Instructions for reviewer\nAsk for actual screenshots or files if the reference is inaccessible. Do not infer visual quality from a URL. Identify strengths, specific issues, supporting evidence, and a bounded revision exercise. Label AI feedback. Do not claim this assessment has been saved to the course.\n`,
     );
     setMessage(
       "Review package downloaded. Attach your design files when asking for feedback.",
@@ -218,22 +239,28 @@ function App({
           </span>
           <span className="device-status">
             <span className={online ? "online-dot" : "offline-dot"} />
-            {online ? "Cloud sync enabled" : "Offline · local practice"}
+            {online ? "Online · saves automatically" : "Offline · saving on this device"}
           </span>
         </header>
         <main id="main">
-          {tab !== "Lessons" && (
+          {(lesson || tab === "My practice") && (
             <p className="notice" role="status">
-              Baseline: {syncStatus}
+              {syncStatus}
             </p>
           )}
           {conflict && (
             <section className="card">
-              <p>A newer baseline version exists. Your draft is preserved.</p>
-              <button onClick={() => resolve(true)}>
-                Back up draft and use cloud
+              <h2>Which version do you want to keep?</h2>
+              <p>
+                Your baseline was also edited on another device or tab. Nothing
+                here has been lost.
+              </p>
+              <button className="secondary" onClick={() => resolve(true)}>
+                Use the other version (a copy of this one is downloaded first)
               </button>
-              <button onClick={() => resolve(false)}>Keep my draft</button>
+              <button className="secondary" onClick={() => resolve(false)}>
+                Keep this device’s version
+              </button>
             </section>
           )}
           {message && (
@@ -280,9 +307,15 @@ function App({
               >
                 ← Back to {tab.toLowerCase()}
               </button>
-              <div className="eyebrow">LEVEL 0 · BASELINE · 120 MINUTES</div>
+              <div className="eyebrow">LEVEL 0 · BASELINE · ABOUT 2 HOURS</div>
               <h1>{baseline.title}</h1>
               <p className="intro">{baseline.purpose}</p>
+              <SessionTimer
+                timer={timer}
+                record={record}
+                role={user.role}
+                steps={baseline.steps}
+              />
               <section className="card lesson-brief">
                 <span className="eyebrow">YOUR BRIEF</span>
                 <h2>A better workshop reservation</h2>
@@ -295,19 +328,20 @@ function App({
               </section>
               <div className="lesson-layout">
                 <section className="card">
-                  <h2>Your two-hour session</h2>
-                  {baseline.steps.map((step, i) => (
-                    <div className="step" key={step.title}>
-                      <span className="step-number">{i + 1}</span>
-                      <div>
-                        <h3>
-                          {step.title}
-                          <small>{step.minutes} min</small>
-                        </h3>
-                        <p>{step.text}</p>
-                      </div>
-                    </div>
-                  ))}
+                  <h2>Your session, step by step</h2>
+                  {user.role === "learner" && (
+                    <p className="muted">
+                      Tap a step while the timer runs to record time against
+                      it. Nothing here marks a step done.
+                    </p>
+                  )}
+                  <PracticeSteps
+                    steps={baseline.steps}
+                    current={timer.snapshot.step}
+                    canPick={user.role === "learner"}
+                    onPick={timer.markStep}
+                    sessions={record.sessions}
+                  />
                   <p className="muted">
                     This diagnostic informs your learning plan. It is not a
                     final portfolio project.
@@ -370,9 +404,16 @@ function App({
               </div>
               <div className="stats">
                 <div>
-                  <span>YOUR PACE</span>
+                  <span>PRACTICE SO FAR</span>
                   <strong>
-                    2 hours <small>/ session</small>
+                    {humanDuration(totals.minutes)}
+                    {totals.sessions.length ? (
+                      <small>
+                        {" "}
+                        / {totals.sessions.length} session
+                        {totals.sessions.length === 1 ? "" : "s"}
+                      </small>
+                    ) : null}
                   </strong>
                 </div>
                 <div>
@@ -384,6 +425,24 @@ function App({
                   <strong>A portfolio with purpose</strong>
                 </div>
               </div>
+              {totals.started > 0 && (
+                <section className="card continue-card">
+                  <span className="eyebrow">PICK UP WHERE YOU LEFT OFF</span>
+                  <h2>Your lessons are waiting.</h2>
+                  <p>
+                    {totals.started} lesson{totals.started === 1 ? "" : "s"} in
+                    progress. Your saved place is one tap away.
+                  </p>
+                  <button
+                    className="primary"
+                    onClick={() =>
+                      navigate({ tab: "Lessons", baseline: false, lesson: null })
+                    }
+                  >
+                    Continue learning →
+                  </button>
+                </section>
+              )}
               <div className="section-heading">
                 <h2>A good place to begin</h2>
                 <span>LEVEL 0 · FIND YOUR STARTING POINT</span>
@@ -410,7 +469,7 @@ function App({
                       Open baseline exercise <ArrowUpRight size={18} />
                     </button>
                     <span>
-                      <Clock3 size={15} /> 120 min
+                      <Clock3 size={15} /> About 2 hours
                     </span>
                   </div>
                   <div className="feature-art" aria-hidden="true">
@@ -537,8 +596,16 @@ function App({
                 >
                   <div className="section-heading">
                     <h2>Baseline reflection</h2>
-                    <span className="pill pale">{statusLabel}</span>
+                    <span className="pill pale">
+                      {statusLabel(record.status)}
+                    </span>
                   </div>
+                  <SessionTimer
+                    timer={timer}
+                    record={record}
+                    role={user.role}
+                    steps={baseline.steps}
+                  />
                   <label htmlFor="notes">
                     What did you learn? What needs work?
                   </label>
@@ -547,63 +614,68 @@ function App({
                     rows={7}
                     maxLength={20000}
                     value={record.notes}
+                    disabled={user.role === "creator"}
                     onChange={(e) =>
-                      setRecord({ ...record, notes: e.target.value })
+                      setRecord((r) => ({ ...r, notes: e.target.value }))
                     }
                     placeholder="Capture your assumptions, decisions, and questions…"
                   />
                   <label htmlFor="submission">
-                    Link or reference to your work
+                    Link to your work (Figma, Drive, or a file name)
                   </label>
                   <input
                     id="submission"
                     maxLength={2000}
                     value={record.submission}
+                    disabled={user.role === "creator"}
                     onChange={(e) =>
-                      setRecord({ ...record, submission: e.target.value })
+                      setRecord((r) => ({ ...r, submission: e.target.value }))
                     }
                     placeholder="Figma link, shared file, or a local filename"
                   />
                   <small>
-                    Files stay where you keep them. This app saves the
-                    reference, not the file.
+                    Files stay where you keep them. This app saves the link or
+                    name, not the file.
                   </small>
-                  <label htmlFor="minutes">
-                    Actual practice time (minutes)
-                  </label>
-                  <input
-                    id="minutes"
-                    type="number"
-                    min="0"
-                    max={Number.MAX_SAFE_INTEGER}
-                    step="1"
-                    value={record.minutes}
-                    onChange={(e) =>
-                      setRecord({
-                        ...record,
-                        minutes: Math.min(
-                          Number.MAX_SAFE_INTEGER,
-                          Math.max(0, Number(e.target.value)),
-                        ),
-                      })
-                    }
-                  />
-                  <div className="actions">
-                    <button className="primary" type="submit">
-                      Save practice <Check size={17} />
-                    </button>
-                    <button
-                      className="secondary"
-                      type="button"
-                      onClick={() => save("ready-for-review")}
-                    >
-                      Ready for review
-                    </button>
-                  </div>
-                  <p className="muted">
-                    Marking work ready does not grade it or send it to a mentor.
-                    Changes save automatically.
-                  </p>
+                  {user.role === "learner" && (
+                    <>
+                      <TimeAdjust
+                        minutes={record.minutes}
+                        onAdd={timer.addMinutes}
+                        onSetTotal={timer.setTotal}
+                      />
+                      <h3>How confident do you feel about this work?</h3>
+                      <ConfidencePicker
+                        value={record.confidence}
+                        onChange={timer.setConfidence}
+                      />
+                      <small>
+                        A note to yourself, not a grade. Your reviewer sees it
+                        alongside your work.
+                      </small>
+                      <div className="actions">
+                        <button className="primary" type="submit">
+                          Save practice <Check size={17} />
+                        </button>
+                        <button
+                          className="secondary"
+                          type="button"
+                          onClick={() => save("ready-for-review")}
+                        >
+                          Ready for review
+                        </button>
+                      </div>
+                      <details>
+                        <summary>How reviews work</summary>
+                        <p>
+                          Marking work ready tells your reviewer it is worth a
+                          look. It does not grade it, send it anywhere, or mark
+                          the exercise finished. Changes save automatically
+                          either way.
+                        </p>
+                      </details>
+                    </>
+                  )}
                 </form>
                 <div>
                   <section className="card">
@@ -622,12 +694,12 @@ function App({
                       export works without connecting an account.
                     </p>
                   </section>
-                  <section className="card backup-card">
-                    <h3>Your work belongs to you.</h3>
+                  <details className="card backup-card">
+                    <summary>Your work belongs to you — backups</summary>
                     <p>
-                      Your draft saves on this device and syncs online
-                      automatically. Wait for “Saved online” before clearing
-                      browser data. Backups give you an extra copy.
+                      Your work saves on this device and uploads automatically.
+                      Wait for “Saved online” before clearing browser data. A
+                      backup is an extra copy you keep yourself.
                     </p>
                     <button
                       className="text-button"
@@ -639,10 +711,10 @@ function App({
                         )
                       }
                     >
-                      Download progress backup <Download size={16} />
+                      Download a backup <Download size={16} />
                     </button>
                     <label className="import-label" htmlFor="backup-import">
-                      Restore a progress backup
+                      Restore from a backup file
                     </label>
                     <input
                       id="backup-import"
@@ -668,7 +740,7 @@ function App({
                           localStorage.setItem(key, JSON.stringify(imported));
                           setRecord(imported);
                           setMessage(
-                            "Backup restored. Your previous draft was downloaded; the restored record will sync automatically.",
+                            "Backup restored. A copy of what was here before was downloaded first; the restored work will upload automatically.",
                           );
                         } catch {
                           setMessage(
@@ -677,7 +749,7 @@ function App({
                         }
                       }}
                     />
-                  </section>
+                  </details>
                 </div>
               </div>
               <CloudPanel
@@ -706,46 +778,110 @@ function App({
               <div className="eyebrow">EVIDENCE OVER CHECKMARKS</div>
               <h1>Small steps. Real growth.</h1>
               <p className="intro">
-                Practice is self-reported. Competency comes from reviewed work.
+                Time and confidence are what you recorded. Competency comes
+                from reviewed work.
               </p>
               <div className="stats">
                 <div>
-                  <span>RECORDED PRACTICE</span>
+                  <span>PRACTICE SO FAR</span>
+                  <strong>{humanDuration(totals.minutes)}</strong>
+                </div>
+                <div>
+                  <span>LESSONS IN PROGRESS</span>
                   <strong>
-                    {record.minutes} <small>minutes</small>
+                    {totals.started}{" "}
+                    <small>of {publishedLessons.length + 1}</small>
                   </strong>
                 </div>
                 <div>
-                  <span>AWAITING REVIEW</span>
+                  <span>READY FOR REVIEW</span>
                   <strong>
-                    {record.status === "ready-for-review" ? 1 : 0}{" "}
-                    <small>assignment</small>
-                  </strong>
-                </div>
-                <div>
-                  <span>ASSESSED MODULES</span>
-                  <strong>
-                    0 <small>so far</small>
+                    {totals.ready}{" "}
+                    <small>
+                      {totals.ready === 1 ? "lesson" : "lessons"}
+                    </small>
                   </strong>
                 </div>
               </div>
               <section className="card">
                 <div className="section-heading">
+                  <h2>Your sessions</h2>
+                  <span>
+                    {totals.sessions.length
+                      ? `${totals.sessions.length} recorded`
+                      : "NONE YET"}
+                  </span>
+                </div>
+                {totals.sessions.length ? (
+                  <ol className="practice-steps session-log">
+                    {totals.sessions.slice(0, 30).map((s, i) => (
+                      <li
+                        className="step session-row"
+                        key={`${s.lessonId}-${s.startedAt}-${s.step ?? 0}-${i}`}
+                      >
+                        <span className="step-number">{s.step ?? "·"}</span>
+                        <div>
+                          <h3>
+                            {humanDate(s.startedAt)}
+                            <small>
+                              {lessonTitle(s.lessonId)}
+                              {s.manual
+                                ? " · added by hand"
+                                : s.step
+                                  ? ` · step ${s.step}`
+                                  : ""}
+                            </small>
+                          </h3>
+                          <p>{humanDuration(s.minutes)}</p>
+                        </div>
+                      </li>
+                    ))}
+                  </ol>
+                ) : (
+                  <p>
+                    Start the timer on any lesson and your sessions will appear
+                    here, with the date, the lesson and how long you spent.
+                  </p>
+                )}
+                {totals.sessions.length > 30 && (
+                  <details>
+                    <summary>Show earlier sessions</summary>
+                    <SessionLog sessions={totals.sessions.slice(30)} limit={200} />
+                  </details>
+                )}
+              </section>
+              <section className="card">
+                <div className="section-heading">
+                  <h2>How you felt about your work</h2>
+                </div>
+                {courseRecords.some((r) => r.record.confidence) ? (
+                  <ul className="rubric">
+                    {courseRecords
+                      .filter((r) => r.record.confidence)
+                      .map((r) => (
+                        <li key={r.lessonId}>
+                          {lessonTitle(r.lessonId)} — {r.record.confidence} of 5
+                        </li>
+                      ))}
+                  </ul>
+                ) : (
+                  <p>
+                    After a session, rate how confident you feel from 1 to 5.
+                    It is a note to yourself, and it helps your reviewer know
+                    where to look.
+                  </p>
+                )}
+              </section>
+              <section className="card">
+                <div className="section-heading">
                   <h2>Your starting point</h2>
-                  <span className="pill pale">{statusLabel}</span>
+                  <span className="pill pale">{statusLabel(record.status)}</span>
                 </div>
                 <p>
                   {record.updatedAt
-                    ? `Last saved ${new Date(record.updatedAt).toLocaleString()}.`
+                    ? `Baseline last saved ${new Date(record.updatedAt).toLocaleString()}.`
                     : "Start your baseline exercise to begin a record of your practice."}
                 </p>
-                <ul className="rubric">
-                  {baseline.rubric.map((r) => (
-                    <li key={r}>
-                      <Circle size={13} /> {r} — not assessed
-                    </li>
-                  ))}
-                </ul>
                 <button
                   className="primary"
                   onClick={() =>
@@ -872,7 +1008,7 @@ function SessionGate() {
           </section>
         ) : (
           <CloudPanel
-            record={empty}
+            record={emptyRecord}
             onLoad={() => {}}
             onSession={changeSession}
           />

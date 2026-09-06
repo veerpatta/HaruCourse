@@ -14,6 +14,7 @@ import {
   type CloudRecord,
   type Feedback,
 } from "../shared/record";
+import { humanDuration, statusLabel } from "./labels";
 
 async function api<T>(
   path: string,
@@ -195,7 +196,7 @@ export function CloudPanel({
           <p>
             {user.role === "creator"
               ? "Review Haru’s saved work and leave feedback against the exact version you read."
-              : "Practice now saves automatically. This panel shows the baseline review history and your AI connections."}
+              : "Your practice saves automatically. This shows your baseline’s review history, and any AI apps you have chosen to connect."}
           </p>
           <button
             className="secondary"
@@ -210,14 +211,22 @@ export function CloudPanel({
               <div>
                 <h3>
                   {cloud.record
-                    ? `Cloud version ${cloud.revision}`
-                    : "No cloud record yet"}
+                    ? `Saved online · version ${cloud.revision}`
+                    : "Nothing saved online yet"}
                 </h3>
                 {cloud.record && (
                   <>
                     <p>
-                      <strong>{cloud.record.minutes} minutes</strong> ·{" "}
-                      {cloud.record.status.replaceAll("-", " ")}
+                      <strong>{humanDuration(cloud.record.minutes)}</strong> ·{" "}
+                      {statusLabel(cloud.record.status)}
+                      {cloud.record.sessions?.length
+                        ? ` · ${cloud.record.sessions.length} session${
+                            cloud.record.sessions.length === 1 ? "" : "s"
+                          }`
+                        : ""}
+                      {cloud.record.confidence
+                        ? ` · confidence ${cloud.record.confidence}/5`
+                        : ""}
                     </p>
                     <p className="record-preview">
                       {cloud.record.notes || "No reflection yet."}
@@ -289,20 +298,23 @@ export function CloudPanel({
               </div>
             </div>
           )}
-          <div className="connections">
-            <h3>
-              <ShieldCheck size={18} /> Connect an AI app
-            </h3>
+          <details
+            className="connections"
+            open={user.role === "creator" || connections.length > 0}
+          >
+            <summary>
+              <ShieldCheck size={18} /> Advanced: connect an AI app
+            </summary>
             <p>
-              Use this MCP server address in a compatible AI app. Sign in and
-              approve the requested permissions in the browser. Model access
-              depends on your AI account.
+              Optional. If you use an AI assistant that supports connections,
+              give it this address, then sign in and approve what it may read.
+              Nothing here is needed to do the course.
             </p>
             <code>{location.origin}/mcp</code>
             <p className="muted">
-              Your AI can read the brief and work reference; attach actual
-              design screenshots when needed. AI feedback cannot mark a skill as
-              mastered.
+              A connected AI can read the brief and your work link; attach
+              actual design screenshots when needed. AI feedback cannot mark a
+              skill as mastered.
             </p>
             {connections.map((c) => (
               <div className="connection" key={c.id}>
@@ -327,7 +339,7 @@ export function CloudPanel({
                 </button>
               </div>
             ))}
-          </div>
+          </details>
         </>
       )}
     </section>
