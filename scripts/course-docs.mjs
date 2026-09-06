@@ -14,7 +14,7 @@ const { baselineLesson } = await import('../src/course.ts');
 const { readingSelections } = await import('../src/reading.ts');
 const catalog = readFileSync("RESOURCE-LIBRARY.md", "utf8");
 const ids = new Set([...catalog.matchAll(/^\| (R\d+) \|/gm)].map((m) => m[1]));
-assert.equal(ids.size, 68);
+assert.equal(ids.size, 69);
 const seen = new Set();
 for (const m of modules) {
   assert(!seen.has(m.id));

@@ -204,7 +204,7 @@ export const modules = [
     alternative: "R19",
     output:
       "Human control, uncertainty, failure, privacy and evaluation prototype",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m17",

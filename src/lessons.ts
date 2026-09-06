@@ -11,6 +11,7 @@ import { module12 } from './module12';
 import { module13 } from './module13';
 import { module14 } from './module14';
 import { module15 } from './module15';
+import { module16 } from './module16';
 import { modules } from './modules';
 import { adaptPublished, type Lesson } from './teaching';
 import { week2 } from "./week2";
@@ -701,6 +702,7 @@ export const lessons = [
   ...module13,
   ...module14,
   ...module15,
+  ...module16,
 ];
 
 // A lesson's owning module. Legacy lessons predate the `module` field and are
