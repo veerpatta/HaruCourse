@@ -24,10 +24,10 @@ Levels → Modules → Lessons. Learn → Do → Check → Your work uses concis
 | m15 | 5 | Analytics and experiments | 30 | m14 | 14 | R20 / R07 | published | Metric tree, funnel, experiment and uncertainty report |
 | m16 | 5 | AI-assisted work and AI products | 30 | m15 | 15 | R21 / R19 | published | Human control, uncertainty, failure, privacy and evaluation prototype |
 | m17 | 5 | Strategy and complex systems | 40 | m16 | 3, 17 | R19 / R07 | published | B2B roles, consumer tradeoffs, service blueprint and stakeholder decisions |
-| m18 | 5 | Independent product project | 40 | m17 | 4, 10, 17 | R19 / R22 | planned | End-to-end third project with critique, repair and measured limitations |
+| m18 | 5 | Independent product project | 40 | m17 | 4, 10, 17 | R19 / R22 | published | End-to-end third project with critique, repair and measured limitations |
 | m19 | 6 | Portfolio and storytelling | 45 | m18 | 17 | R22 / R23 | planned | Three evidence-based case studies and presentation |
 | m20 | 6 | India and remote career preparation | 35 | m19 | 17 | R23 / R22 | planned | Role evidence matrix, resume, profile, outreach drafts and interview practice |
 
-Total provisional effort: 620 hours. Published means available to study, not assessed complete. m00 is the baseline exercise; 17 modules carry 188 authored lessons (m01 7, m02 5, m03 10, m04 8, m05 13, m06 12, m07 13, m08 12, m09 12, m10 12, m11 12, m12 12, m13 12, m14 12, m15 12, m16 12, m17 12). The remaining 3 modules are mapped, not yet authored.
+Total provisional effort: 620 hours. Published means available to study, not assessed complete. m00 is the baseline exercise; 18 modules carry 200 authored lessons (m01 7, m02 5, m03 10, m04 8, m05 13, m06 12, m07 13, m08 12, m09 12, m10 12, m11 12, m12 12, m13 12, m14 12, m15 12, m16 12, m17 12, m18 12). The remaining 2 modules are mapped, not yet authored.
 
 At each module review, request artifacts, score the lesson criteria (0 absent, 1 needs help, 2 independent, 3 strong reasoning), identify a repair and recheck the revised artifact. Every module authored under the lesson contract states those four scores and a bounded repair per criterion; m01 and m02 predate it and carry criteria names only. Formal scored assessment software is still pending, so no score recorded anywhere is produced or stored by the app. No time-based lock is permitted. See docs/COURSE-AUTHORING.md for the full lesson contract and RESOURCE-LIBRARY.md for portfolio, tool, book, career and current-awareness programs.

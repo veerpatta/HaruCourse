@@ -230,7 +230,7 @@ export const modules = [
     alternative: "R22",
     output:
       "End-to-end third project with critique, repair and measured limitations",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m19",
