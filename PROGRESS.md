@@ -14,6 +14,8 @@ Verified on 6 September 2026, detail in docs/VERIFICATION.md: schema compatibili
 
 Not verified in a browser, stated plainly: the creator’s read-only timer summary (creator sign-in needs a password the agent does not enter; the server 403 on creator writes is covered by the suite), a real second-device conflict involving the timer (one browser profile; the concurrent-write 409 is covered by the suite and the timer writes through the same path as typing), and the baseline page in a browser (same hook and component, exercised on lessons). Two environment facts affected this session and are recorded so nobody repeats them: port 8787 on this machine is held by an unrelated dev server that the pane fell through to once the Worker exited, so pane evidence from that port was discarded and the Worker was rerun on 8788; and wrangler’s dev proxy exits on “Network connection lost” when the pane freezes a hidden tab mid-poll, which Node traffic never triggers. A .claude/launch.json entry now runs the Worker on 8788.
 
+Deployed to production on 6 September 2026 as Worker version 87ba6e41-1ce2-4c56-8a01-1ce9aedead4f; no migration was required. Hosted health, bundle identity and a test-account round-trip of sessions and confidence passed, with the fractional-minutes rejection confirmed on the live API and Haru’s records untouched. Detail in docs/VERIFICATION.md.
+
 Still pending: m05 onward, formal scored assessment and repair software, the remaining tracker fields, the three research gaps above, and project briefs. A timer records effort; it does not and must not establish mastery, drive status, or unlock anything.
 
 ---
