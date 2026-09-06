@@ -18,7 +18,7 @@ Levels → Modules → Lessons. Learn → Do → Check → Your work uses concis
 | m09 | 3 | Interaction and motion | 25 | m08 | 9 | R13 / R02 | published | State transitions, keyboard behavior and reduced-motion alternative |
 | m10 | 3 | Prototyping and evaluation | 35 | m09 | 10 | R12 / R05 | published | Low to high fidelity prototype, test and evidence-led revision |
 | m11 | 3 | Accessible product design | 35 | m08 | 11 | R14 / R10 | published | Forms, contrast, focus, semantics and assistive-technology checks |
-| m12 | 4 | Web foundations and responsive behavior | 35 | m11 | 13 | R15 / R16 | planned | Local HTML/CSS/JS prototype with responsive and error states |
+| m12 | 4 | Web foundations and responsive behavior | 35 | m11 | 13 | R15 / R16 | published | Local HTML/CSS/JS prototype with responsive and error states |
 | m13 | 4 | Design systems | 35 | m12 | 12 | R17 / R06 | planned | Tokens, components, variants, documentation and version change |
 | m14 | 4 | Delivery and collaboration | 30 | m13 | 16 | R18 / R19 | planned | Stories, acceptance criteria, handoff and design QA |
 | m15 | 5 | Analytics and experiments | 30 | m14 | 14 | R20 / R07 | planned | Metric tree, funnel, experiment and uncertainty report |
@@ -28,6 +28,6 @@ Levels → Modules → Lessons. Learn → Do → Check → Your work uses concis
 | m19 | 6 | Portfolio and storytelling | 45 | m18 | 17 | R22 / R23 | planned | Three evidence-based case studies and presentation |
 | m20 | 6 | India and remote career preparation | 35 | m19 | 17 | R23 / R22 | planned | Role evidence matrix, resume, profile, outreach drafts and interview practice |
 
-Total provisional effort: 620 hours. Published means available to study, not assessed complete. m00 is the baseline exercise; 11 modules carry 116 authored lessons (m01 7, m02 5, m03 10, m04 8, m05 13, m06 12, m07 13, m08 12, m09 12, m10 12, m11 12). The remaining 9 modules are mapped, not yet authored.
+Total provisional effort: 620 hours. Published means available to study, not assessed complete. m00 is the baseline exercise; 12 modules carry 128 authored lessons (m01 7, m02 5, m03 10, m04 8, m05 13, m06 12, m07 13, m08 12, m09 12, m10 12, m11 12, m12 12). The remaining 8 modules are mapped, not yet authored.
 
 At each module review, request artifacts, score the lesson criteria (0 absent, 1 needs help, 2 independent, 3 strong reasoning), identify a repair and recheck the revised artifact. Every module authored under the lesson contract states those four scores and a bounded repair per criterion; m01 and m02 predate it and carry criteria names only. Formal scored assessment software is still pending, so no score recorded anywhere is produced or stored by the app. No time-based lock is permitted. See docs/COURSE-AUTHORING.md for the full lesson contract and RESOURCE-LIBRARY.md for portfolio, tool, book, career and current-awareness programs.

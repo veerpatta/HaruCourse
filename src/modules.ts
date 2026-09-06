@@ -155,7 +155,7 @@ export const modules = [
     primary: "R15",
     alternative: "R16",
     output: "Local HTML/CSS/JS prototype with responsive and error states",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m13",
