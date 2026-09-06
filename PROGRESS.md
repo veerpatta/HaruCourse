@@ -1,3 +1,14 @@
+# Production deployment of the complete curriculum — 6 September 2026
+
+Deployed after the curriculum was finished and the section audit corrected. `npm run check:deploy` was run first and the build and dry run were clean; `wrangler d1 migrations list harucourse --remote` reported nothing to apply, since this release changes content and not schema.
+
+Deployed to https://harucourse.raj-39e.workers.dev, version 5a3c76f3-16de-4a0a-85ce-f33df139a8c9, worker startup 55 ms, 3754 KiB uploaded (831 KiB gzipped) across four changed assets.
+
+Verified against production immediately afterwards, read-only: the index returns 200, /api/health reports version 0.2.0, /api/progress without a session is refused with 401, and sw.js, manifest.webmanifest and the MCP OAuth discovery document all return 200. The served bundle is 2246033 bytes and contains m18-l06-v1, m19-l01-v1, m20-l12-v1 and the m20 module title, confirming the deployed asset is this build rather than a cached earlier one. No production write was made and no account was signed in.
+
+The size is the honest caveat on this release. The main chunk is about 2.2 MB uncompressed, and installed users will download it once as a precached service-worker asset. On a low-end phone the parse cost is real. Splitting the modules into per-module precached chunks remains the proper fix and has not been done.
+
+---
 # Curriculum complete: m18, m19 and m20 authored, and a section audit that should have run earlier — 6 September 2026
 
 Current plan: PROJECT-PLAN.md. Start future authoring with AGENTS.md.
