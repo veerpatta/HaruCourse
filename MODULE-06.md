@@ -313,7 +313,7 @@ Two schemes with their breakages is stronger portfolio evidence than one polishe
 ### Assigned resources
 
 - R31: [Laws of UX](https://lawsofux.com/) — The assigned pages only: law-of-proximity, law-of-common-region, millers-law and cognitive-load. Purpose: Explains why grouping reduces scanning effort and where the popular chunk limit comes from. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. The site publishes no caveats, so the limits are supplied by this lesson: the seven-item rule in particular is stated far more confidently than its evidence supports and must not be used as a design target. A printed poster is sold and also offered as a free download; no purchase is required. Fallback: R02.
-- R09: [NN/g: card sorting](https://www.nngroup.com/articles/card-sorting-definition/) — The passages on organisation schemes and on what a sort reveals about how people expect material to be grouped. Purpose: Connects your two schemes to what the coming card sort can actually test. Effort: 15–25 min. Free reading, no account. Verified 2026-09-06. It is a method article, not a taxonomy textbook; the scheme comparison here is the course's own. Fallback: R10.
+- R09: [NN/g: card sorting](https://www.nngroup.com/articles/card-sorting-definition/) — The passages on what a sort reveals about how people expect material to be grouped. Purpose: Connects your two schemes to what the coming card sort can actually test. Effort: 15–25 min. Free reading, no account. Verified 2026-09-06. It is a method article, not a taxonomy textbook; the scheme comparison here is the course's own. Fallback: R10.
 
 ## Lesson 4: Depth, breadth and the sitemap
 

@@ -560,7 +560,7 @@ export const module6: Lesson[] = [
       {
         ...cardSort,
         section:
-          "The passages on organisation schemes and on what a sort reveals about how people expect material to be grouped.",
+          "The passages on what a sort reveals about how people expect material to be grouped.",
         purpose:
           "Connects your two schemes to what the coming card sort can actually test.",
         minutes: "15–25",
