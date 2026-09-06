@@ -1416,7 +1416,7 @@ export const module13: Lesson[] = [
         section:
           "Two component pages, read for the guidance a published component has to carry.",
         purpose:
-          "Shows a working example of a route in, at a scale larger than yours.",
+          "Shows what a contribution has to produce before a component is published.",
         minutes: "20–30 selected",
         limits:
           "Free reading, no account. Verified 2026-09-06. Its governance suits a large organisation; scale it down deliberately rather than copying it.",
@@ -2391,7 +2391,7 @@ export const module13: Lesson[] = [
         section:
           "Two component pages, read for how usage guidance is stated and would have to be revised.",
         purpose:
-          "Shows removal handled as a first-class change rather than a quiet deletion.",
+          "Shows the documentation a removal or replacement would have to update.",
         minutes: "20–30 selected",
         limits:
           "Free reading, no account. Verified 2026-09-06. Larger scale than yours; take the practice and reduce the ceremony.",

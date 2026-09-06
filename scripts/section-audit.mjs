@@ -1,5 +1,6 @@
-// Prints every assigned resource section beside its catalog row's recorded
-// selection, grouped by resource. The rule that a lesson's `section` must stay
+// Prints every assigned resource section and purpose beside its catalog row's
+// recorded selection, grouped by resource. The rule that a lesson's `section`
+// and the `purpose` beside it must stay
 // inside the row's recorded selection cannot be asserted automatically — it is
 // a judgement about meaning — so this script does not fail a build. It puts the
 // two strings next to each other so the judgement can actually be made.
@@ -25,7 +26,10 @@ const byResource = {};
 for (const l of lessons) {
   if (!l.module || (only.size && !only.has(l.module))) continue;
   for (const r of l.resources || [])
-    (byResource[r.id] ||= []).push(`${l.id}: ${r.section}`);
+    (byResource[r.id] ||= []).push(
+      `${l.id}: ${r.section}
+      purpose: ${r.purpose}`,
+    );
 }
 for (const id of Object.keys(byResource).sort()) {
   console.log(`\n### ${id} — recorded selection: ${selection[id]}`);

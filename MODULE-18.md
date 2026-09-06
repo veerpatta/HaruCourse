@@ -1033,7 +1033,7 @@ The limitations page is the single most persuasive document in a junior portfoli
 
 ### Assigned resources
 
-- R59: [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings) — Structuring findings: headline, essential facts, why it matters, supporting evidence. Purpose: Grounds the discipline of stating limits alongside findings. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. Institutional context; the honesty about scope transfers directly. Fallback: R04.
+- R59: [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings) — Structuring findings: headline, essential facts, why it matters, supporting evidence. Purpose: Gives the reporting structure the limits page has to sit inside. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. Institutional context; the honesty about scope transfers directly. Fallback: R04.
 - R04: [GOV.UK: analyse a research session](https://www.gov.uk/service-manual/user-research/analyse-a-research-session) — Separating what was observed from what was inferred. Purpose: Supports the split between what you do not know and what the design lacks. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. Written for session analysis; applied here to the whole project. Fallback: R08.
 
 ## Lesson 11: Retrospective across three projects

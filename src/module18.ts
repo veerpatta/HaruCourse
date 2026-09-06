@@ -1965,8 +1965,10 @@ export const module18: Lesson[] = [
     resources: [
       {
         ...sharing,
-        section: "Structuring findings: headline, essential facts, why it matters, supporting evidence.",
-        purpose: "Grounds the discipline of stating limits alongside findings.",
+        section:
+          "Structuring findings: headline, essential facts, why it matters, supporting evidence.",
+        purpose:
+          "Gives the reporting structure the limits page has to sit inside.",
         minutes: "20–30",
         limits:
           "Free reading, no account. Verified 2026-09-06. Institutional context; the honesty about scope transfers directly.",
