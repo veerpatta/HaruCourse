@@ -1,5 +1,6 @@
 import { modules } from "./modules";
 import { LearningStudio } from "./LearningStudio";
+import { navigate, useNavigation } from "./navigation";
 import { usePractice } from "./usePractice";
 import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
@@ -73,8 +74,7 @@ function App({
     conflict,
     resolve,
   } = usePractice(user, baseline.id, key);
-  const [tab, setTab] = useState("Lessons");
-  const [lesson, setLesson] = useState(false);
+  const { tab, baseline: lesson } = useNavigation();
   const [message, setMessage] = useState(
     loadProblem
       ? "Saved data could not be read. Existing storage has not been overwritten. Export any recoverable work before saving again."
@@ -82,6 +82,7 @@ function App({
   );
   const [prompt, setPrompt] = useState<InstallPrompt | null>(null);
   const [update, setUpdate] = useState(false);
+  const [installDismissed, setInstallDismissed] = useState(false);
   const [online, setOnline] = useState(navigator.onLine);
   useEffect(() => {
     const install = (event: Event) => {
@@ -165,9 +166,9 @@ function App({
         <a
           className="brand"
           href="#"
-          onClick={() => {
-            setTab("Dashboard");
-            setLesson(false);
+          onClick={(event) => {
+            event.preventDefault();
+            navigate({ tab: "Dashboard", baseline: false, lesson: null });
           }}
         >
           <span className="brand-mark">h.</span>
@@ -182,8 +183,7 @@ function App({
               key={name}
               aria-current={tab === name ? "page" : undefined}
               onClick={() => {
-                setTab(name);
-                setLesson(false);
+                navigate({ tab: name, baseline: false, lesson: null });
                 setMessage("");
               }}
             >
@@ -247,9 +247,37 @@ function App({
               reopen the app to update.
             </div>
           )}
+          {prompt && !installDismissed && (
+            <div className="notice install-notice">
+              <span>
+                Install Haru Course for a full-screen app and offline lessons.
+              </span>
+              <span className="install-actions">
+                <button
+                  className="primary"
+                  onClick={async () => {
+                    await prompt.prompt();
+                    await prompt.userChoice;
+                    setPrompt(null);
+                  }}
+                >
+                  <Download size={15} /> Install
+                </button>
+                <button
+                  className="text-button"
+                  onClick={() => setInstallDismissed(true)}
+                >
+                  Not now
+                </button>
+              </span>
+            </div>
+          )}
           {lesson ? (
             <>
-              <button className="text-button" onClick={() => setLesson(false)}>
+              <button
+                className="text-button"
+                onClick={() => navigate({ baseline: false })}
+              >
                 ← Back to {tab.toLowerCase()}
               </button>
               <div className="eyebrow">LEVEL 0 · BASELINE · 120 MINUTES</div>
@@ -301,10 +329,13 @@ function App({
                   </p>
                   <button
                     className="primary"
-                    onClick={() => {
-                      setTab("My practice");
-                      setLesson(false);
-                    }}
+                    onClick={() =>
+                      navigate({
+                        tab: "My practice",
+                        baseline: false,
+                        lesson: null,
+                      })
+                    }
                   >
                     Save your practice <ArrowRight size={17} />
                   </button>
@@ -372,7 +403,7 @@ function App({
                     <button
                       className="light-button"
                       onClick={() => {
-                        setLesson(true);
+                        navigate({ baseline: true });
                         if (record.status === "not-started") save("practicing");
                       }}
                     >
@@ -407,7 +438,13 @@ function App({
                 <h2>The journey ahead</h2>
                 <button
                   className="text-button"
-                  onClick={() => setTab("Course map")}
+                  onClick={() =>
+                    navigate({
+                      tab: "Course map",
+                      baseline: false,
+                      lesson: null,
+                    })
+                  }
                 >
                   Explore the course <ArrowRight size={16} />
                 </button>
@@ -461,7 +498,7 @@ function App({
                     {i === 0 ? (
                       <button
                         className="secondary"
-                        onClick={() => setLesson(true)}
+                        onClick={() => navigate({ baseline: true })}
                       >
                         Open baseline <ArrowRight size={16} />
                       </button>
@@ -709,9 +746,13 @@ function App({
                 </ul>
                 <button
                   className="primary"
-                  onClick={() => {
-                    setTab("My practice");
-                  }}
+                  onClick={() =>
+                    navigate({
+                      tab: "My practice",
+                      baseline: false,
+                      lesson: null,
+                    })
+                  }
                 >
                   Open practice notebook <ArrowRight size={16} />
                 </button>

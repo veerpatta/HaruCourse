@@ -10,7 +10,6 @@ export default defineConfig({
       srcDir: "src",
       filename: "sw.js",
       registerType: "prompt",
-      includeAssets: ["icon-192.png", "icon-512.png"],
       manifest: {
         id: "/",
         name: "Haru Course — Product Design",
@@ -20,6 +19,8 @@ export default defineConfig({
         theme_color: "#214e46",
         background_color: "#f7f6f1",
         display: "standalone",
+        orientation: "portrait",
+        categories: ["education", "productivity"],
         start_url: "/",
         scope: "/",
         icons: [
@@ -45,6 +46,9 @@ export default defineConfig({
       },
       injectManifest: {
         globPatterns: ["**/*.{js,css,html,png,svg,webmanifest}"],
+        // The plugin already injects the manifest and the icons it references;
+        // globbing them again only duplicated the precache entries.
+        globIgnores: ["manifest.webmanifest", "icon-192.png", "icon-512.png"],
       },
     }),
   ],

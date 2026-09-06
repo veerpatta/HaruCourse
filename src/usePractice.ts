@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type SetStateAction } from "react";
+import { canPoll, onActivityResume } from "./activity";
 import {
   recordSchema,
   type RecordData,
@@ -196,18 +197,22 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
     if (user.role === "creator") dirty.current = false;
     void hydrate();
     const interval = setInterval(() => {
-      if (!ready.current) void hydrate();
-      else void flush();
+      // The read is skipped while offline or backgrounded. flush() keeps running
+      // so a draft still saves when the app is put away mid-edit; it has its own
+      // navigator.onLine guard.
+      if (!ready.current) {
+        if (canPoll()) void hydrate();
+      } else void flush();
     }, 2000);
     const reconnect = () => {
       if (!ready.current) void hydrate();
       else void flush();
     };
-    window.addEventListener("online", reconnect);
+    const stopWatching = onActivityResume(reconnect);
     return () => {
       active.current = false;
       clearInterval(interval);
-      window.removeEventListener("online", reconnect);
+      stopWatching();
     };
   }, []);
   function resolve(useCloud: boolean) {

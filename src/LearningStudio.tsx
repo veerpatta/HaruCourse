@@ -1,4 +1,6 @@
 import { usePosition } from "./usePosition";
+import { navigate, useNavigation } from "./navigation";
+import { canPoll, onActivityResume } from "./activity";
 import { sections } from "../shared/position";
 import { modules } from "./modules";
 const moduleNames = modules
@@ -11,7 +13,10 @@ import type { User, RecordData, Feedback } from "../shared/record";
 export function LearningStudio({ user }: { user: User }) {
   const bookmark = usePosition(user.id);
   const [section, setSection] = useState("learn");
-  const [selected, select] = useState<string | null>(null);
+  // Which lesson is open is history-backed so Back leaves the reader; the
+  // section within a lesson deliberately is not, or leaving one lesson would
+  // take four Back presses.
+  const { lesson: selected } = useNavigation();
   const [week, setWeek] = useState(1);
   const weeks = [...new Set(lessons.map((l) => l.week || 1))];
   function open(id: string, target = "learn") {
@@ -23,7 +28,7 @@ export function LearningStudio({ user }: { user: User }) {
         : "learn";
       setSection(safe);
       bookmark.remember(id, safe);
-      select(id);
+      navigate({ lesson: id });
       window.scrollTo(0, 0);
     }
   }
@@ -52,10 +57,14 @@ export function LearningStudio({ user }: { user: User }) {
             );
         });
     void refresh();
-    const timer = setInterval(refresh, 5000);
+    const timer = setInterval(() => {
+      if (canPoll()) void refresh();
+    }, 5000);
+    const stopWatching = onActivityResume(() => void refresh());
     return () => {
       active = false;
       clearInterval(timer);
+      stopWatching();
     };
   }, []);
   const item = lessons.find((l) => l.id === selected);
@@ -67,7 +76,7 @@ export function LearningStudio({ user }: { user: User }) {
         section={section}
         remember={bookmark.remember}
         user={user}
-        back={() => select(null)}
+        back={() => navigate({ lesson: null })}
         next={lessons[lessons.findIndex((l) => l.id === item.id) + 1]}
         open={open}
       />
@@ -236,10 +245,14 @@ function LessonReader({
         })
         .catch(() => {});
     void refresh();
-    const timer = setInterval(refresh, 10000);
+    const timer = setInterval(() => {
+      if (canPoll()) void refresh();
+    }, 10000);
+    const stopWatching = onActivityResume(() => void refresh());
     return () => {
       active = false;
       clearInterval(timer);
+      stopWatching();
     };
   }, [endpoint]);
   return (
@@ -281,13 +294,13 @@ function LessonReader({
           </button>
         </section>
       )}
-      <nav aria-label="Lesson sections">
+      <nav className="section-nav" aria-label="Lesson sections">
         {sections.map((id) => (
           <a
             key={id}
+            className="section-link"
             href={`#${id}`}
             onClick={() => remember(lesson.id, id)}
-            style={{ marginRight: 16 }}
           >
             {id.replaceAll("-", " ")}
           </a>

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { canPoll, onActivityResume } from "./activity";
 import type { Position } from "../shared/position";
 type Cache = { position: Position | null; dirty: boolean };
 export function usePosition(userId: string) {
@@ -72,12 +73,15 @@ export function usePosition(userId: string) {
   }
   useEffect(() => {
     void sync();
-    const timer = setInterval(() => void sync(), 2000);
-    const online = () => void sync();
-    window.addEventListener("online", online);
+    // A dirty position is already persisted locally, so deferring the sync until
+    // the app is online and on screen loses nothing.
+    const timer = setInterval(() => {
+      if (canPoll()) void sync();
+    }, 2000);
+    const stopWatching = onActivityResume(() => void sync());
     return () => {
       clearInterval(timer);
-      window.removeEventListener("online", online);
+      stopWatching();
     };
   }, [key]);
   function remember(lessonId: string, sectionId: string) {
