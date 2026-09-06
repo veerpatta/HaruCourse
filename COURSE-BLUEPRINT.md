@@ -2,7 +2,7 @@
 
 Generated from src/modules.ts; edit that source, then run npm run docs:generate. See COURSE-REQUIREMENTS.md for the 17-area definitions and RESOURCE-LIBRARY.md for exact resources, verification and open gaps.
 
-Levels → Modules → Lessons. No completion deadline. Effort estimates are optional planning information, including iteration and project work. Two hours is a suggested session, not a daily commitment or gate. Navigation and readiness never establish mastery.
+Levels → Modules → Lessons. Learn → Do → Check → Your work uses concise instructions with optional detail. No completion deadline. Effort estimates are optional planning information, including iteration and project work. Two hours is a suggested session, not a daily commitment or gate. Navigation and readiness never establish mastery.
 
 | Module | Level | Title | Optional effort hours | Prerequisites | Areas | Primary / alternative | Status | Output |
 |---|---|---|---|---|---|---|---|---|

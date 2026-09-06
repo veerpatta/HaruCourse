@@ -1,4 +1,4 @@
-import type { Lesson } from "./lessons";
+import type { LegacyLesson as Lesson } from "./teaching";
 // Module 3 refreshes visual foundations for screens. Haru already has Applied
 // Arts training, so the teaching deliberately targets what changes when a
 // layout must reflow, respect a reader's own text settings and survive

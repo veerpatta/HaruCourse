@@ -1,4 +1,4 @@
-import type { Lesson } from "./lessons";
+import type { LegacyLesson as Lesson } from "./teaching";
 // Module 4 turns the evidence habits from Module 2 into reasoning about people
 // and value. Areas 2 and 3: cognition on one side, worth and tradeoffs on the
 // other. It deliberately stops short of strategy and metrics, which are m15

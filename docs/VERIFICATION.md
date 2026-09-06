@@ -1,3 +1,5 @@
+> Historical verification: the results below describe their named releases. For the current concise reader and navigation, see [VERIFICATION-MINIMAL.md](VERIFICATION-MINIMAL.md).
+
 # Foundation verification — 5 September 2026
 
 Production preview at `http://127.0.0.1:4173`, Chromium via Playwright CLI. Initial rendering also checked with agent-browser.

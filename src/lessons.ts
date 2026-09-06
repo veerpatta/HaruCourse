@@ -1,117 +1,27 @@
+import { module3 } from './module3';
+import { module4 } from './module4';
+import { module5 } from './module5';
+import { module6 } from './module6';
+import { module7 } from './module7';
+import { modules } from './modules';
+import { adaptPublished, type Lesson } from './teaching';
 import { week2 } from "./week2";
-import { module3 } from "./module3";
-import { module4 } from "./module4";
-import { module5 } from "./module5";
-import { module6 } from "./module6";
-import { module7 } from "./module7";
-import { modules } from "./modules";
-// A single rubric line, scored 0-3. `levels` is indexed by the score, so
-// levels[2] is what independently adequate work actually looks like, and
-// `remediation` is the bounded repair for anything below it. The twelve
-// lessons authored before this structure existed keep the flat `rubric` list.
-export type Criterion = {
-  criterion: string;
-  evidence: string;
-  levels: [string, string, string, string];
-  remediation: string;
-  recheck: string;
-};
-export type AssignedResource = {
-  id: string;
-  title: string;
-  url: string;
-  section: string;
-  purpose: string;
-  minutes: string;
-  limits: string;
-  fallbackId: string;
-};
-export type Lesson = {
-  id: string;
-  day: number;
-  week?: number;
-  title: string;
-  optional?: boolean;
-  why: string;
-  teach: string[];
-  example: string;
-  steps: { minutes: number; title: string; text: string }[];
-  deliverable: string;
-  check: { question: string; answer: string }[];
-  rubric: string[];
-  portfolio: string;
-  resource: { id: string; title: string; url: string };
-  // Everything below arrived with the m03/m04 lesson contract. The earlier
-  // lessons omit these fields, so every reader must tolerate their absence
-  // rather than assume the richer shape.
-  module?: string;
-  level?: number;
-  areas?: number[];
-  objective?: string;
-  bringForward?: string;
-  misconception?: string;
-  freeToolPath?: string;
-  resources?: AssignedResource[];
-  criteria?: Criterion[];
-};
-const design = {
-  title: "Design Council: the Double Diamond",
-  id: "R01",
-  url: "https://www.designcouncil.org.uk/resources/the-double-diamond/",
-};
-const research = {
-  title: "GOV.UK: using in-depth interviews",
-  id: "R27",
-  url: "https://www.gov.uk/service-manual/user-research/using-in-depth-interviews",
-};
-const access = {
-  title: "W3C: introduction to web accessibility",
-  id: "R28",
-  url: "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
-};
-const week1: Lesson[] = [
+import { withLegacyText } from "./teaching";
+export type { Lesson } from "./teaching";
+const week1 = [
   {
     id: "week1-day1-v1",
     day: 1,
     title: "From screens to product problems",
     why: "Use your visual-design experience while learning to judge whether a product helps someone accomplish a task.",
     teach: [
-      "A product helps someone accomplish a goal repeatedly. Product design connects that goal to a viable service and an experience people can use. The screen is one part: instructions, waiting, support, and recovery also shape the experience.",
-      "UX concerns the whole experience of a task. UI concerns its controls, information, and presentation. Product design also asks which problem deserves attention and how a response fits business and technical constraints. Job titles overlap; judge actual responsibilities.",
-      "Your graphic-design skills help communicate clearly, but product decisions need evidence about use. A beautiful booking screen can fail if people cannot tell whether payment succeeded. Separate an output (a screen) from an outcome (people understand their booking status).",
-      "Designers explore and explain alternatives. Product managers coordinate priorities; engineers investigate feasibility and build behavior; researchers reduce uncertainty about people. Collaboration begins before polished mockups.",
+      "Product design connects a user goal to a usable, viable service.",
+      "UX is the whole task experience; UI is the controls and presentation.",
+      "A screen is an output. Helping someone finish a task is an outcome.",
+      "Designers explore options with product managers, engineers and researchers.",
     ],
     example:
       "“Make Reserve bigger” is a proposed solution. People might instead struggle to find availability or understand the price. These are hypotheses until you collect evidence.",
-    steps: [
-      {
-        minutes: 25,
-        title: "Learn",
-        text: "Read the lesson and linked process overview. Define product design, UX, and UI in your own words.",
-      },
-      {
-        minutes: 20,
-        title: "Observe",
-        text: "Complete one task in a familiar app. Record the starting situation, goal, and actions without collecting private information.",
-      },
-      {
-        minutes: 45,
-        title: "Separate evidence",
-        text: "Make an observed / inferred / unknown table with five entries. Add a user goal and a possible business goal.",
-      },
-      {
-        minutes: 20,
-        title: "Compare",
-        text: "Propose one visual and one behavioral improvement. Explain how you would check each.",
-      },
-      {
-        minutes: 10,
-        title: "Reflect",
-        text: "Save your evidence and reflection. Pause whenever needed and return to unfinished work.",
-      },
-    ],
-    deliverable:
-      "A task walkthrough, five evidence/assumption entries, two goals, and two improvement hypotheses.",
     check: [
       {
         question: "Is a larger button a problem statement?",
@@ -129,7 +39,73 @@ const week1: Lesson[] = [
       "One trade-off beyond appearance",
     ],
     portfolio: "Process practice, not a validated case study.",
-    resource: design,
+    resource: {
+      title: "Design Council: the Double Diamond",
+      id: "R01",
+      url: "https://www.designcouncil.org.uk/resources/the-double-diamond/",
+    },
+    explanation: [
+      "A product helps someone accomplish a goal repeatedly. Product design connects that goal to a viable service and an experience people can use. The screen is one part: instructions, waiting, support, and recovery also shape the experience.",
+      "UX concerns the whole experience of a task. UI concerns its controls, information, and presentation. Product design also asks which problem deserves attention and how a response fits business and technical constraints. Job titles overlap; judge actual responsibilities.",
+      "Your graphic-design skills help communicate clearly, but product decisions need evidence about use. A beautiful booking screen can fail if people cannot tell whether payment succeeded. Separate an output (a screen) from an outcome (people understand their booking status).",
+      "Designers explore and explain alternatives. Product managers coordinate priorities; engineers investigate feasibility and build behavior; researchers reduce uncertainty about people. Collaboration begins before polished mockups.",
+    ],
+    prerequisite:
+      "No earlier lesson needed. Use a familiar app and a blank note.",
+    outputs: [
+      "One task walkthrough",
+      "Five observed / inferred / unknown entries",
+      "One user goal and one possible business goal",
+      "Two improvement hypotheses and ways to check them",
+    ],
+    repairs: [
+      "If the goal names a screen, rewrite it as something the person needs to accomplish.",
+      "If an inference reads as fact, move it to the inferred column and name the missing evidence.",
+      "If both improvements are visual, add a change to task behavior and a way to check it.",
+    ],
+    steps: [
+      {
+        minutes: 25,
+        title: "Learn",
+        instructions: [
+          "Read the Double Diamond overview.",
+          "Write one sentence each defining product design, UX and UI.",
+        ],
+      },
+      {
+        minutes: 20,
+        title: "Observe",
+        instructions: [
+          "Choose one task in a familiar app.",
+          "Record the starting situation, goal and actions; omit private information.",
+        ],
+      },
+      {
+        minutes: 45,
+        title: "Separate evidence",
+        instructions: [
+          "Create three columns: observed, inferred, unknown.",
+          "Add five entries from your walkthrough.",
+          "Write the user goal and a possible business goal.",
+        ],
+      },
+      {
+        minutes: 20,
+        title: "Compare",
+        instructions: [
+          "Propose one visual improvement and one behavior improvement.",
+          "For each, name an observation that would show whether it helps.",
+        ],
+      },
+      {
+        minutes: 10,
+        title: "Reflect",
+        instructions: [
+          "Save the walkthrough, table and hypotheses.",
+          "Add one unresolved question and your next action.",
+        ],
+      },
+    ],
   },
   {
     id: "week1-day2-v1",
@@ -137,42 +113,13 @@ const week1: Lesson[] = [
     title: "Frame the problem before the feature",
     why: "Avoid polishing a solution to the wrong problem.",
     teach: [
-      "A useful frame describes a person, situation, unmet goal, and consequence. “Attendees need to know what to bring before leaving home” leaves room for alternatives. “Attendees need a checkbox” already chooses a feature.",
-      "A stakeholder report is a lead, not proof of frequency or cause. Assumptions are not necessarily false; they are claims that still need checking. Write what would change your mind.",
-      "Expand options before narrowing them. Discover and define focus on understanding the problem; develop and deliver focus on responses. These are modes of work, not mandatory one-way stages.",
-      "Distinguish constraints such as time or device access from preferences. Investigate assumptions that combine weak evidence with serious consequences if wrong.",
+      "Frame the person, situation, unmet goal and consequence before choosing a feature.",
+      "A stakeholder report suggests a problem; it does not prove its cause.",
+      "Explore alternatives before narrowing the response.",
+      "Check assumptions with serious consequences and weak evidence first.",
     ],
     example:
       "A reminder, materials summary, and checkbox are different responses to workshop preparation. A click on a checkbox does not prove comprehension.",
-    steps: [
-      {
-        minutes: 20,
-        title: "Review",
-        text: "Underline unverified explanations in the previous lesson’s notes.",
-      },
-      {
-        minutes: 25,
-        title: "Frame",
-        text: "Write three person–situation–goal–consequence statements for workshop attendance. Remove feature names.",
-      },
-      {
-        minutes: 35,
-        title: "Prioritize uncertainty",
-        text: "List six assumptions, their consequences, and your confidence. Pick two to investigate and describe disconfirming evidence.",
-      },
-      {
-        minutes: 30,
-        title: "Explore",
-        text: "Sketch three different responses. Note a constraint and weakness for each.",
-      },
-      {
-        minutes: 10,
-        title: "Decide",
-        text: "Choose the next investigation and explain why.",
-      },
-    ],
-    deliverable:
-      "Three problem frames, six assumptions, three alternatives, and an investigation decision.",
     check: [
       {
         question: "Which assumption should be investigated first?",
@@ -186,7 +133,73 @@ const week1: Lesson[] = [
       "Alternatives compared against constraints",
     ],
     portfolio: "Keep the decision log as early reasoning evidence.",
-    resource: design,
+    resource: {
+      title: "Design Council: the Double Diamond",
+      id: "R01",
+      url: "https://www.designcouncil.org.uk/resources/the-double-diamond/",
+    },
+    explanation: [
+      "A useful frame describes a person, situation, unmet goal, and consequence. “Attendees need to know what to bring before leaving home” leaves room for alternatives. “Attendees need a checkbox” already chooses a feature.",
+      "A stakeholder report is a lead, not proof of frequency or cause. Assumptions are not necessarily false; they are claims that still need checking. Write what would change your mind.",
+      "Expand options before narrowing them. Discover and define focus on understanding the problem; develop and deliver focus on responses. These are modes of work, not mandatory one-way stages.",
+      "Distinguish constraints such as time or device access from preferences. Investigate assumptions that combine weak evidence with serious consequences if wrong.",
+    ],
+    prerequisite:
+      "Bring Lesson 1’s walkthrough and evidence table. Use workshop preparation as the practice context.",
+    outputs: [
+      "Three problem frames",
+      "Six assumptions and two priority uncertainties",
+      "Three alternatives with constraints and weaknesses",
+      "One investigation decision",
+    ],
+    repairs: [
+      "If the frame prescribes a feature, remove it and state the unmet goal.",
+      "If the priority has no rationale, compare the cost of being wrong for two assumptions.",
+      "If nothing could change your mind, add one concrete disconfirming observation.",
+    ],
+    steps: [
+      {
+        minutes: 20,
+        title: "Review",
+        instructions: [
+          "Read your earlier notes.",
+          "Mark explanations you have not verified.",
+        ],
+      },
+      {
+        minutes: 25,
+        title: "Frame",
+        instructions: [
+          "Write three person–situation–goal–consequence statements about workshop attendance.",
+          "Remove feature names such as checkbox or reminder.",
+        ],
+      },
+      {
+        minutes: 35,
+        title: "Prioritize uncertainty",
+        instructions: [
+          "List six assumptions with consequences and confidence.",
+          "Choose two to investigate.",
+          "For each, name evidence that would change your mind.",
+        ],
+      },
+      {
+        minutes: 30,
+        title: "Explore",
+        instructions: [
+          "Sketch three different responses to the workshop preparation problem.",
+          "For each, note a constraint and a weakness.",
+        ],
+      },
+      {
+        minutes: 10,
+        title: "Decide",
+        instructions: [
+          "Choose the next investigation and explain why.",
+          "Save the frames, assumptions and alternatives.",
+        ],
+      },
+    ],
   },
   {
     id: "week1-day3-v1",
@@ -194,42 +207,13 @@ const week1: Lesson[] = [
     title: "Ask about real experiences",
     why: "Learn from people without steering them toward your preferred answer.",
     teach: [
-      "Begin with the uncertainty an interview should reduce. A research question guides your study; a participant question is the plain-language prompt used in conversation.",
-      "Ask about a recent specific experience. “Tell me about your last class booking” invites an account of behavior. “Would you use our helpful reminder?” invites prediction and agreement. Follow up without supplying the answer.",
-      "Explain the purpose, voluntary participation, and use of notes. Ask permission before recording. Avoid unnecessary identifying data and do not paste private research into AI tools.",
-      "One conversation does not establish prevalence. Separate quotations from interpretations. Label role-play as practice; never invent participants or findings when someone is unavailable.",
+      "A research question states an uncertainty; an interview question starts a conversation.",
+      "Ask about a recent experience instead of predicting future behavior.",
+      "Explain consent and note use before beginning; ask permission before recording.",
+      "One conversation cannot establish how common a behavior is.",
     ],
     example:
       "Replace “Was checkout confusing because the button was hidden?” with “What happened when you tried to finish?” Then ask what the person expected.",
-    steps: [
-      {
-        minutes: 25,
-        title: "Prepare",
-        text: "Read the lesson and interview guide. Draft a purpose statement and consent introduction.",
-      },
-      {
-        minutes: 35,
-        title: "Write",
-        text: "Choose one Lesson 2 uncertainty. Draft six open questions and two neutral follow-ups. Remove predictions and leading language.",
-      },
-      {
-        minutes: 35,
-        title: "Practice",
-        text: "With consent, hold a 15-minute practice conversation and organize notes. If nobody is available, rehearse your guide and identify weaknesses; do not fabricate answers.",
-      },
-      {
-        minutes: 15,
-        title: "Distinguish",
-        text: "Separate observations, interpretations, and follow-ups. Mark evidence not collected when applicable.",
-      },
-      {
-        minutes: 10,
-        title: "Improve",
-        text: "Rewrite one weak question and save your guide.",
-      },
-    ],
-    deliverable:
-      "Research objective, consent introduction, question guide, labelled notes, and revised questions.",
     check: [
       {
         question: "What if no participant is available?",
@@ -243,7 +227,74 @@ const week1: Lesson[] = [
       "Consent and limitations explicit",
     ],
     portfolio: "Count research findings only when actually collected.",
-    resource: research,
+    resource: {
+      title: "GOV.UK: using in-depth interviews",
+      id: "R27",
+      url: "https://www.gov.uk/service-manual/user-research/using-in-depth-interviews",
+    },
+    explanation: [
+      "Begin with the uncertainty an interview should reduce. A research question guides your study; a participant question is the plain-language prompt used in conversation.",
+      "Ask about a recent specific experience. “Tell me about your last class booking” invites an account of behavior. “Would you use our helpful reminder?” invites prediction and agreement. Follow up without supplying the answer.",
+      "Explain the purpose, voluntary participation, and use of notes. Ask permission before recording. Avoid unnecessary identifying data and do not paste private research into AI tools.",
+      "One conversation does not establish prevalence. Separate quotations from interpretations. Label role-play as practice; never invent participants or findings when someone is unavailable.",
+    ],
+    prerequisite:
+      "Bring Lesson 2’s two priority uncertainties and a place to take notes.",
+    outputs: [
+      "Research objective and consent introduction",
+      "Six open questions and two neutral follow-ups",
+      "Labelled notes or an explicit evidence gap",
+      "One improved question",
+    ],
+    repairs: [
+      "If the questions miss the uncertainty, connect each question to the decision it informs.",
+      "Replace a leading question with “What happened when…?” and rehearse it.",
+      "If consent or source type is missing, document it; do not retrospectively invent consent or answers.",
+    ],
+    steps: [
+      {
+        minutes: 25,
+        title: "Prepare",
+        instructions: [
+          "Read the interview reference.",
+          "Write the study purpose and a voluntary-consent introduction.",
+        ],
+      },
+      {
+        minutes: 35,
+        title: "Write",
+        instructions: [
+          "Choose one uncertainty from Lesson 2.",
+          "Draft six questions about recent experience and two neutral follow-ups.",
+          "Remove leading language and predictions.",
+        ],
+      },
+      {
+        minutes: 35,
+        title: "Practice",
+        instructions: [
+          "With consent, hold a 15-minute practice conversation.",
+          "If nobody is available, rehearse the guide and mark “No participant evidence collected.”",
+          "Exclude identifying details and private research from AI tools.",
+        ],
+      },
+      {
+        minutes: 15,
+        title: "Distinguish",
+        instructions: [
+          "Separate observations, interpretations and follow-up questions.",
+          "Keep actual quotations distinct from your explanation.",
+        ],
+      },
+      {
+        minutes: 10,
+        title: "Improve",
+        instructions: [
+          "Rewrite one weak question.",
+          "Save your guide, labelled notes and next research question.",
+        ],
+      },
+    ],
   },
   {
     id: "week1-day4-v1",
@@ -251,42 +302,13 @@ const week1: Lesson[] = [
     title: "Map the task and its failures",
     why: "A usable flow helps people recover when things go wrong.",
     teach: [
-      "A task flow shows actions and decisions from a trigger to an outcome. Start before the first screen: what brings someone here and what will count as done?",
-      "The happy path assumes success. Real flows also need empty, loading, error, permission, and interrupted states. Explain what happened and the next action; preserve input when retrying where possible.",
-      "Information architecture groups and labels content so people can find it. Use task language rather than internal department names, and show prerequisites before the decision that needs them.",
-      "Screen names alone do not explain transitions. A confirmation screen does not answer what happens when payment takes time, the last seat disappears, or someone closes the browser.",
+      "A task flow connects a trigger, actions, decisions and an outcome.",
+      "Every failure needs an explanation and a next action.",
+      "Group and label information using the visitor’s task language.",
+      "Show price and preparation requirements before commitment.",
     ],
     example:
       "Workshop full → explain availability → offer another date. A payment timeout should distinguish checking status from confirmed failure to reduce accidental repeat payments.",
-    steps: [
-      {
-        minutes: 20,
-        title: "Define",
-        text: "Write the reservation trigger, successful outcome, and information needed before committing.",
-      },
-      {
-        minutes: 40,
-        title: "Map",
-        text: "Draw the workshop happy path with labelled actions, decisions, price, and materials.",
-      },
-      {
-        minutes: 35,
-        title: "Recover",
-        text: "Add full workshop, invalid input, and interrupted confirmation branches. Write a message and next action for each.",
-      },
-      {
-        minutes: 15,
-        title: "Walk through",
-        text: "Trace every branch aloud as a first-time visitor. Mark missing information and dead ends.",
-      },
-      {
-        minutes: 10,
-        title: "Revise",
-        text: "Repair a dead end and explain the change.",
-      },
-    ],
-    deliverable:
-      "One annotated flow with three failures and recovery messages.",
     check: [
       {
         question: "What is missing from a list of screens?",
@@ -300,7 +322,73 @@ const week1: Lesson[] = [
       "Prerequisites before commitment",
     ],
     portfolio: "Early untested flow evidence for the practice project.",
-    resource: design,
+    resource: {
+      title: "Design Council: the Double Diamond",
+      id: "R01",
+      url: "https://www.designcouncil.org.uk/resources/the-double-diamond/",
+    },
+    explanation: [
+      "A task flow shows actions and decisions from a trigger to an outcome. Start before the first screen: what brings someone here and what will count as done?",
+      "The happy path assumes success. Real flows also need empty, loading, error, permission, and interrupted states. Explain what happened and the next action; preserve input when retrying where possible.",
+      "Information architecture groups and labels content so people can find it. Use task language rather than internal department names, and show prerequisites before the decision that needs them.",
+      "Screen names alone do not explain transitions. A confirmation screen does not answer what happens when payment takes time, the last seat disappears, or someone closes the browser.",
+    ],
+    prerequisite:
+      "Bring your workshop problem frame and interview notes or labelled evidence gaps. Use paper or a familiar drawing tool.",
+    outputs: [
+      "One annotated reservation flow",
+      "Three failure branches with recovery messages",
+      "One repaired dead end and explanation",
+    ],
+    repairs: [
+      "If the flow is only screen names, label the actions and decisions between them.",
+      "If an exception ends without help, add its next action and recovery destination.",
+      "If required information appears too late, move it before commitment and retrace the path.",
+    ],
+    steps: [
+      {
+        minutes: 20,
+        title: "Define",
+        instructions: [
+          "Write the reservation trigger and successful outcome.",
+          "List information needed before committing.",
+        ],
+      },
+      {
+        minutes: 40,
+        title: "Map",
+        instructions: [
+          "Draw the successful reservation path.",
+          "Label actions and decisions.",
+          "Place price and materials before the reservation decision.",
+        ],
+      },
+      {
+        minutes: 35,
+        title: "Recover",
+        instructions: [
+          "Add branches for a full workshop, invalid input and interrupted confirmation.",
+          "Write a message and next action for each.",
+          "Preserve entered values where possible; check uncertain payment status before retrying.",
+        ],
+      },
+      {
+        minutes: 15,
+        title: "Walk through",
+        instructions: [
+          "Trace every branch aloud as a first-time visitor.",
+          "Mark missing information and dead ends.",
+        ],
+      },
+      {
+        minutes: 10,
+        title: "Revise",
+        instructions: [
+          "Repair one dead end.",
+          "Save the flow and explain what changed.",
+        ],
+      },
+    ],
   },
   {
     id: "week1-day5-v1",
@@ -308,42 +396,13 @@ const week1: Lesson[] = [
     title: "Make the interface understandable",
     why: "Turn the flow into screens that support different abilities and device widths.",
     teach: [
-      "Hierarchy expresses what matters for the next decision. Size, spacing, grouping, language, and contrast work together. Do not rely on color alone for essential meaning.",
-      "Responsive design means reflow and priority, not shrinking a desktop layout. Explain what stacks, wraps, stays visible, and moves. Longer labels and larger text reveal hidden assumptions.",
-      "Accessibility concerns whether people can perceive, understand, navigate, and operate the experience. A mockup can specify labels and focus order; implemented keyboard and screen-reader behavior require runtime testing.",
-      "Use persistent input labels, plain instructions, nearby error messages, and a logical reading order. Explain how to correct an error and retain entered values. Record what you checked and what remains untested.",
+      "Hierarchy helps someone make the next decision.",
+      "Responsive layouts reflow content instead of shrinking it.",
+      "Persistent labels, clear errors and logical reading order support access.",
+      "Mockups specify accessibility intent; runtime tests verify implemented behavior.",
     ],
     example:
       "The Email label stays visible after typing. The materials summary stays before Reserve on mobile instead of disappearing into a desktop sidebar.",
-    steps: [
-      {
-        minutes: 25,
-        title: "Learn",
-        text: "Read the lesson and W3C introduction. Choose three considerations relevant to your flow.",
-      },
-      {
-        minutes: 45,
-        title: "Sketch",
-        text: "Create workshop details and reservation screens at narrow and wide widths using paper or a familiar tool. Prioritize content before decoration.",
-      },
-      {
-        minutes: 25,
-        title: "Specify",
-        text: "Annotate labels, reading/focus order, recovery, and stacking. Identify checks requiring code.",
-      },
-      {
-        minutes: 15,
-        title: "Critique",
-        text: "Compare against Lesson 4’s flow and add one missing state.",
-      },
-      {
-        minutes: 10,
-        title: "Submit",
-        text: "Reference the flow/screens and explain the main unresolved issue. Mark ready only when evidence is present.",
-      },
-    ],
-    deliverable:
-      "Two screens at two widths, behavior/accessibility annotations, and an error state.",
     check: [
       {
         question: "Does a mockup prove keyboard accessibility?",
@@ -362,7 +421,77 @@ const week1: Lesson[] = [
       "Evidence-bounded accessibility claims",
     ],
     portfolio: "Creator review is required before portfolio-ready claims.",
-    resource: access,
+    resource: {
+      title: "W3C: introduction to web accessibility",
+      id: "R28",
+      url: "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
+    },
+    explanation: [
+      "Hierarchy expresses what matters for the next decision. Size, spacing, grouping, language, and contrast work together. Do not rely on color alone for essential meaning.",
+      "Responsive design means reflow and priority, not shrinking a desktop layout. Explain what stacks, wraps, stays visible, and moves. Longer labels and larger text reveal hidden assumptions.",
+      "Accessibility concerns whether people can perceive, understand, navigate, and operate the experience. A mockup can specify labels and focus order; implemented keyboard and screen-reader behavior require runtime testing.",
+      "Use persistent input labels, plain instructions, nearby error messages, and a logical reading order. Explain how to correct an error and retain entered values. Record what you checked and what remains untested.",
+    ],
+    prerequisite:
+      "Bring Lesson 4’s flow. Use paper or a familiar tool; no new software is required.",
+    outputs: [
+      "Details and reservation screens at narrow and wide widths",
+      "Reading order, labels, recovery and stacking annotations",
+      "One error state",
+      "An unresolved issue for review",
+    ],
+    repairs: [
+      "If the next action is hard to find, reorder information around the task.",
+      "If mobile is just a smaller desktop, show what stacks and wraps.",
+      "If an error has no recovery, add corrective text and retained input.",
+      "Replace any accessibility pass claim with the specific checks performed and still needed.",
+    ],
+    steps: [
+      {
+        minutes: 25,
+        title: "Learn",
+        instructions: [
+          "Read the W3C accessibility introduction.",
+          "Choose three considerations that affect your flow.",
+        ],
+      },
+      {
+        minutes: 45,
+        title: "Sketch",
+        instructions: [
+          "Sketch workshop details and reservation screens at two widths.",
+          "Keep preparation information before Reserve.",
+          "Use spacing, grouping and words; do not rely on color alone.",
+        ],
+      },
+      {
+        minutes: 25,
+        title: "Specify",
+        instructions: [
+          "Annotate persistent labels, reading/focus order and stacking.",
+          "Explain how errors retain input and can be corrected.",
+          "List keyboard and screen-reader checks that need implementation.",
+        ],
+      },
+      {
+        minutes: 15,
+        title: "Critique",
+        instructions: [
+          "Compare the screens against your flow.",
+          "Add one missing error state.",
+          "Try longer labels and larger text.",
+        ],
+      },
+      {
+        minutes: 10,
+        title: "Submit",
+        instructions: [
+          "Save the flow and screen references.",
+          "Name the main unresolved issue.",
+          "Add notes and a work reference before selecting Ready for review.",
+        ],
+      },
+    ],
   },
   {
     id: "week1-day6-v1",
@@ -371,41 +500,12 @@ const week1: Lesson[] = [
     title: "Critique and repair one weak point",
     why: "Use optional catch-up time to improve evidence, not add more tools.",
     teach: [
-      "Useful critique links an observation to task impact. “Messy” is vague. “Materials appear after commitment, so people may reserve before understanding preparation” gives a concrete concern.",
-      "Separate severity from taste. Fix primary-task blockers before decoration. Choose one bounded repair and describe how you would check whether it helps.",
-      "Keep the previous version to explain iteration. This is an optional lesson; rest or catch up if five core sessions fill your capacity.",
+      "Useful critique connects a specific observation to task impact.",
+      "Prioritize a task blocker before a matter of taste.",
+      "Keep the original so the change can be explained.",
     ],
     example:
       "Replace an unexplained disabled Reserve button with availability information and another date. Check whether a visitor can identify the next step.",
-    steps: [
-      {
-        minutes: 20,
-        title: "Review",
-        text: "Choose one weak criterion from the module.",
-      },
-      {
-        minutes: 25,
-        title: "Critique",
-        text: "Write observation, impact, evidence, and uncertainty. Request creator input if available.",
-      },
-      {
-        minutes: 45,
-        title: "Repair",
-        text: "Revise one flow or screen while retaining the original.",
-      },
-      {
-        minutes: 20,
-        title: "Compare",
-        text: "Explain the change and remaining uncertainty.",
-      },
-      {
-        minutes: 10,
-        title: "Save",
-        text: "Reference both versions. Resting instead does not count as a failed required lesson.",
-      },
-    ],
-    deliverable:
-      "A before/after repair with specific critique and limitations.",
     check: [
       {
         question: "What makes feedback actionable?",
@@ -419,7 +519,70 @@ const week1: Lesson[] = [
       "Limitations preserved",
     ],
     portfolio: "Potential iteration evidence with an honest explanation.",
-    resource: access,
+    resource: {
+      title: "W3C: introduction to web accessibility",
+      id: "R28",
+      url: "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
+    },
+    explanation: [
+      "Useful critique links an observation to task impact. “Messy” is vague. “Materials appear after commitment, so people may reserve before understanding preparation” gives a concrete concern.",
+      "Separate severity from taste. Fix primary-task blockers before decoration. Choose one bounded repair and describe how you would check whether it helps.",
+      "Keep the previous version to explain iteration. This is an optional lesson; rest or catch up if five core sessions fill your capacity.",
+    ],
+    prerequisite:
+      "Optional. Bring one flow or screen from Lessons 1–5 and its review criteria.",
+    outputs: [
+      "One critique with evidence and uncertainty",
+      "Before and after versions",
+      "A next check",
+    ],
+    repairs: [
+      "If the critique is taste-based, identify the affected task.",
+      "If the change does not address the issue, revise the relevant flow or screen only.",
+      "If the repair is called proven, state the test still needed.",
+    ],
+    steps: [
+      {
+        minutes: 20,
+        title: "Review",
+        instructions: [
+          "Choose one weak criterion from the module.",
+          "Identify the flow or screen that shows it.",
+        ],
+      },
+      {
+        minutes: 25,
+        title: "Critique",
+        instructions: [
+          "Write the observation, task impact, evidence and uncertainty.",
+          "Ask for creator input if available.",
+        ],
+      },
+      {
+        minutes: 45,
+        title: "Repair",
+        instructions: [
+          "Keep a copy of the original.",
+          "Repair only the chosen issue.",
+        ],
+      },
+      {
+        minutes: 20,
+        title: "Compare",
+        instructions: [
+          "Compare both versions.",
+          "Explain the change and how you would check whether it helps.",
+        ],
+      },
+      {
+        minutes: 10,
+        title: "Save",
+        instructions: [
+          "Save both references and remaining limitations.",
+          "Skip this optional lesson whenever you prefer.",
+        ],
+      },
+    ],
   },
   {
     id: "week1-day7-v1",
@@ -428,40 +591,12 @@ const week1: Lesson[] = [
     title: "Explain decisions and plan your next steps",
     why: "Practice the written communication needed for remote collaboration.",
     teach: [
-      "A decision story connects context, evidence, alternatives, choice, and next check. Explain one trade-off rather than narrating every screen or activity.",
-      "Match claims to evidence. A concept can show reasoning and craft, but not a production conversion gain. Distinguish proposals, observations, and untested outcomes.",
-      "Review actual hours before adding work. Reduce scope if the work felt too heavy. Rest is valid on this optional lesson; next steps should follow gaps rather than tool trends.",
+      "Explain context, evidence, alternatives, choice and next check.",
+      "A concept shows reasoning; it cannot prove production impact.",
+      "Choose your next practice from evidence gaps, not tool trends.",
     ],
     example:
       "“I moved materials before reservation because preparation is the reported concern. A checkbox records a click, not comprehension. I still need to observe visitors using the summary.”",
-    steps: [
-      {
-        minutes: 20,
-        title: "Select",
-        text: "Gather evidence for one decision.",
-      },
-      {
-        minutes: 35,
-        title: "Write",
-        text: "Write one page: context, evidence, options, choice, trade-off, next check.",
-      },
-      {
-        minutes: 25,
-        title: "Present",
-        text: "Explain it aloud in five minutes, review the explanation, and repeat once.",
-      },
-      {
-        minutes: 30,
-        title: "Plan",
-        text: "List actual hours, an evidence-backed strength, two gaps, and one bounded repair. Request review.",
-      },
-      {
-        minutes: 10,
-        title: "Save",
-        text: "Save the note and plan. Do not infer mastery from one module.",
-      },
-    ],
-    deliverable: "A decision note and plan for the next five core sessions.",
     check: [
       {
         question: "What can an unshipped concept demonstrate?",
@@ -475,18 +610,81 @@ const week1: Lesson[] = [
       "Gap-based next steps",
     ],
     portfolio: "Rehearsal for a future case-study presentation.",
-    resource: design,
+    resource: {
+      title: "Design Council: the Double Diamond",
+      id: "R01",
+      url: "https://www.designcouncil.org.uk/resources/the-double-diamond/",
+    },
+    explanation: [
+      "A decision story connects context, evidence, alternatives, choice, and next check. Explain one trade-off rather than narrating every screen or activity.",
+      "Match claims to evidence. A concept can show reasoning and craft, but not a production conversion gain. Distinguish proposals, observations, and untested outcomes.",
+      "Review actual hours before adding work. Reduce scope if the work felt too heavy. Rest is valid on this optional lesson; next steps should follow gaps rather than tool trends.",
+    ],
+    prerequisite:
+      "Optional. Bring one design decision, its alternatives and supporting artifacts from Module 1.",
+    outputs: [
+      "A one-page decision note",
+      "One evidence-backed strength and two gaps",
+      "One bounded repair and next learning action",
+    ],
+    repairs: [
+      "If there is no alternative, add one and explain why it was not chosen.",
+      "If impact is unmeasured, label the intended outcome as untested.",
+      "If the next step is vague, name the artifact and specific gap to repair.",
+    ],
+    steps: [
+      {
+        minutes: 20,
+        title: "Select",
+        instructions: [
+          "Choose one decision.",
+          "Gather its evidence and artifact references.",
+        ],
+      },
+      {
+        minutes: 35,
+        title: "Write",
+        instructions: [
+          "Write six short headings: context, evidence, options, choice, trade-off, next check.",
+          "Add concise bullets under each; keep it to one page.",
+        ],
+      },
+      {
+        minutes: 25,
+        title: "Present",
+        instructions: [
+          "Explain the decision aloud in five minutes.",
+          "Identify unclear reasoning and try once more.",
+        ],
+      },
+      {
+        minutes: 30,
+        title: "Plan",
+        instructions: [
+          "Record one evidenced strength and two gaps.",
+          "Choose one small repair; reduce scope if needed.",
+          "Request creator review.",
+        ],
+      },
+      {
+        minutes: 10,
+        title: "Save",
+        instructions: [
+          "Save the decision note and next action.",
+          "Record actual time only if useful; this lesson is optional.",
+        ],
+      },
+    ],
   },
 ];
-
-export const lessons: Lesson[] = [
-  ...week1,
+export const lessons = [
+  ...week1.map(withLegacyText),
   ...week2,
-  ...module3,
-  ...module4,
-  ...module5,
-  ...module6,
-  ...module7,
+  ...module3.map(adaptPublished),
+  ...module4.map(adaptPublished),
+  ...module5.map(adaptPublished),
+  ...module6.map(adaptPublished),
+  ...module7.map(adaptPublished),
 ];
 
 // A lesson's owning module. Legacy lessons predate the `module` field and are

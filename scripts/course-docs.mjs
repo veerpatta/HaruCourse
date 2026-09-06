@@ -10,6 +10,8 @@ const { modules } = await import("../src/modules.ts");
 const { lessons, publishedLessonIds, isPublishedLesson } = await import(
   "../src/lessons.ts"
 );
+const { baselineLesson } = await import('../src/course.ts');
+const { readingSelections } = await import('../src/reading.ts');
 const catalog = readFileSync("RESOURCE-LIBRARY.md", "utf8");
 const ids = new Set([...catalog.matchAll(/^\| (R\d+) \|/gm)].map((m) => m[1]));
 assert.equal(ids.size, 62);
@@ -84,7 +86,9 @@ for (const l of lessons) {
 // rather than on a lesson merely existing. Prove that gate actually consults
 // module status, using a synthetic catalog so nothing unpublished ships.
 {
-  const catalog = [
+  const { baselineLesson } = await import('../src/course.ts');
+const { readingSelections } = await import('../src/reading.ts');
+const catalog = [
     { id: "m03", status: "published" },
     { id: "m99", status: "planned" },
   ];
@@ -134,27 +138,105 @@ const authoredDetail = authored
   .join(", ");
 output(
   "COURSE-BLUEPRINT.md",
-  `# Self-paced curriculum blueprint\n\nGenerated from src/modules.ts; edit that source, then run npm run docs:generate. See COURSE-REQUIREMENTS.md for the 17-area definitions and RESOURCE-LIBRARY.md for exact resources, verification and open gaps.\n\nLevels → Modules → Lessons. No completion deadline. Effort estimates are optional planning information, including iteration and project work. Two hours is a suggested session, not a daily commitment or gate. Navigation and readiness never establish mastery.\n\n| Module | Level | Title | Optional effort hours | Prerequisites | Areas | Primary / alternative | Status | Output |\n|---|---|---|---|---|---|---|---|---|\n${modules.map((m) => `| ${m.id} | ${m.level} | ${m.title} | ${m.hours} | ${m.prerequisites.join(", ") || "None"} | ${m.areas.join(", ")} | ${m.primary} / ${m.alternative} | ${m.status} | ${m.output} |`).join("\n")}\n\nTotal provisional effort: ${modules.reduce((n, m) => n + m.hours, 0)} hours. Published means available to study, not assessed complete. m00 is the baseline exercise; ${authored.length} modules carry ${lessons.length} authored lessons (${authoredDetail}). The remaining ${modules.length - authored.length - 1} modules are mapped, not yet authored.\n\nAt each module review, request artifacts, score the lesson criteria (0 absent, 1 needs help, 2 independent, 3 strong reasoning), identify a repair and recheck the revised artifact. Every module authored under the lesson contract states those four scores and a bounded repair per criterion; m01 and m02 predate it and carry criteria names only. Formal scored assessment software is still pending, so no score recorded anywhere is produced or stored by the app. No time-based lock is permitted. See docs/COURSE-AUTHORING.md for the full lesson contract and RESOURCE-LIBRARY.md for portfolio, tool, book, career and current-awareness programs.\n`,
+  `# Self-paced curriculum blueprint\n\nGenerated from src/modules.ts; edit that source, then run npm run docs:generate. See COURSE-REQUIREMENTS.md for the 17-area definitions and RESOURCE-LIBRARY.md for exact resources, verification and open gaps.\n\nLevels → Modules → Lessons. Learn → Do → Check → Your work uses concise instructions with optional detail. No completion deadline. Effort estimates are optional planning information, including iteration and project work. Two hours is a suggested session, not a daily commitment or gate. Navigation and readiness never establish mastery.\n\n| Module | Level | Title | Optional effort hours | Prerequisites | Areas | Primary / alternative | Status | Output |\n|---|---|---|---|---|---|---|---|---|\n${modules.map((m) => `| ${m.id} | ${m.level} | ${m.title} | ${m.hours} | ${m.prerequisites.join(", ") || "None"} | ${m.areas.join(", ")} | ${m.primary} / ${m.alternative} | ${m.status} | ${m.output} |`).join("\n")}\n\nTotal provisional effort: ${modules.reduce((n, m) => n + m.hours, 0)} hours. Published means available to study, not assessed complete. m00 is the baseline exercise; ${authored.length} modules carry ${lessons.length} authored lessons (${authoredDetail}). The remaining ${modules.length - authored.length - 1} modules are mapped, not yet authored.\n\nAt each module review, request artifacts, score the lesson criteria (0 absent, 1 needs help, 2 independent, 3 strong reasoning), identify a repair and recheck the revised artifact. Every module authored under the lesson contract states those four scores and a bounded repair per criterion; m01 and m02 predate it and carry criteria names only. Formal scored assessment software is still pending, so no score recorded anywhere is produced or stored by the app. No time-based lock is permitted. See docs/COURSE-AUTHORING.md for the full lesson contract and RESOURCE-LIBRARY.md for portfolio, tool, book, career and current-awareness programs.\n`,
 );
-// Modules 1 and 2 keep their original filenames and template so existing links
-// and saved records stay valid. Do not fold this into the module loop below.
+function list(items) {
+  return items.map((s) => "- " + s).join("\n");
+}
+function details(title, content) {
+  return `<details>\n<summary>${title}</summary>\n\n${content}\n\n</details>`;
+}
+function lessonDoc(l) {
+  const reading = readingSelections[l.resource.id];
+  return `## ${l.id === "baseline-v1" ? "Baseline" : "Lesson " + l.day}: ${l.title}
+
+Stable ID: ${l.id}. ${l.optional ? "Optional" : "Core"}.
+
+${l.why}
+
+### Learn
+
+Bring: ${l.prerequisite}
+
+${list(l.teach)}
+
+${l.example ? details("Worked example", l.example) : ""}
+
+${l.explanation.length ? details("Why this works", list(l.explanation)) : ""}
+
+${reading ? details("Reading and free alternative", `[${l.resource.title}](${l.resource.url}) (${l.resource.id}).\n\nRead: ${reading.selection}. About ${reading.minutes} minutes.\n\nPublic reading checked 2026-09-06; no account, card or trial. If unavailable, complete the local exercise with this lesson’s concepts and example. Paper and local notes are sufficient. Catalog restrictions apply.`) : ""}
+
+### Do
+
+Make these:
+
+${list(l.outputs)}
+
+${l.steps.map((step, i) => `#### ${i + 1}. ${step.title}\n\n${list(step.instructions)}`).join("\n\n")}
+
+Pause after any step. Save the artifact and next action in Your work.
+
+${details("Optional effort and portfolio context", list(l.steps.map((s) => `${s.title}: about ${s.minutes} minutes`)) + "\n\nNo deadline; split work across sessions.\n\n" + l.portfolio)}
+
+### Check
+
+${l.check.map((q) => details(q.question, q.answer)).join("\n\n")}
+
+Review criteria:
+
+${list(l.rubric)}
+
+${details("Need to revise?", list(l.repairs) + "\n\nShow the revised artifact and criterion at recheck.")}
+
+${details("How review works", "0 absent · 1 needs support · 2 independently adequate · 3 strong reasoning and trade-offs. Ready for review is not assessed completion. Formal scored assessment is not implemented.")}
+
+### Your work
+
+- Save notes and your next action.
+- Add a work reference; this does not upload the file.
+- Record actual minutes if useful.
+- Select Ready for review only after adding notes and a work reference.
+- Read version-specific feedback and revise the artifact.
+`;
+}
+// Prevent accidental loss of legacy identities or the new teaching contract.
+assert.deepEqual(
+  lessons.slice(0, 12).map((l) => l.id),
+  [
+    ...Array.from({ length: 7 }, (_, i) => `week1-day${i + 1}-v1`),
+    ...Array.from({ length: 5 }, (_, i) => `week2-day${i + 1}-v1`),
+  ],
+);
+for (const l of [baselineLesson, ...lessons.filter(l => !l.module)]) {
+  assert(l.prerequisite && l.outputs.length && l.repairs.length);
+  assert(
+    l.teach.every((t) => t.length <= 240),
+    `Keep essential teaching concise: ${l.id}`,
+  );
+  for (const s of l.steps) {
+    assert(s.instructions.length);
+    assert(s.instructions.every((t) => t.length <= 240));
+    assert.equal(s.text, s.instructions.join(" "));
+  }
+  assert.equal(l.deliverable, l.outputs.join("; "));
+  if (l.id !== baselineLesson.id) assert(readingSelections[l.resource.id]);
+}
+output(
+  "BASELINE-DIAGNOSTIC.md",
+  "# Starting-point diagnostic\n\nGenerated from src/course.ts. No preparation, deadline or pass/fail grade.\n\n" +
+    lessonDoc(baselineLesson),
+);
 for (const week of [1, 2]) {
   const module = modules.find((m) => m.id === `m0${week}`);
   output(
     `WEEK-0${week}.md`,
     `# ${module.title}\n\nGenerated from src/lessons.ts and src/week2.ts. Legacy filename retained for existing links. Level 1 · Module ${week}. No deadlines; split any lesson across sessions.\n\n` +
       lessons
-        .filter((l) => !l.module && (l.week || 1) === week)
-        .map(
-          (l) =>
-            `## Lesson ${l.day}: ${l.title}\n\nStable ID: ${l.id}. ${l.optional ? "Optional" : "Core"}.\n\n${l.why}\n\n### Learn\n\n${l.teach.join("\n\n")}\n\n### Worked example\n\n${l.example}\n\n### Practice and pause points\n\n${l.steps.map((s) => `- ${s.title} (~${s.minutes} min): ${s.text}`).join("\n")}\n\nPause after any step; save the artifact and next action.\n\n### Output\n\n${l.deliverable}\n\n### Checks\n\n${l.check.map((q) => `- ${q.question} Answer: ${q.answer}`).join("\n")}\n\n### Rubric\n\n${l.rubric.map((r) => `- ${r}`).join("\n")}\n\nIf a criterion is missing, revise that part and request a recheck.\n\n### Portfolio contribution\n\n${l.portfolio}\n\nResource ${l.resource.id}: [${l.resource.title}](${l.resource.url}). Module approved pair: ${module.primary} / ${module.alternative}; catalog restrictions apply.\n`,
-        )
+        .filter((l) => (l.week || 1) === week)
+        .map(lessonDoc)
         .join("\n"),
   );
 }
-// Modules authored under the full lesson contract get a module-named document
-// carrying the objective, misconception, free tool path, scored criteria and
-// remediation that the legacy template has nowhere to put.
 const scores = [
   "0 absent",
   "1 needs support",
@@ -183,7 +265,7 @@ for (const module of modules) {
       own
         .map(
           (l) =>
-            `## Lesson ${l.day}: ${l.title}\n\nStable ID: ${l.id}. ${l.optional ? "Optional" : "Core"}. Areas ${(l.areas || module.areas).join(", ")}. Optional effort ~${l.steps.reduce((n, s) => n + s.minutes, 0)} min.\n\n**Objective.** ${l.objective}\n\n**Bring forward.** ${l.bringForward}\n\n${l.why}\n\n### Learn\n\n${l.teach.join("\n\n")}\n\n**Common misconception.** ${l.misconception}\n\n### Worked example\n\n${l.example}\n\n### Practice and pause points\n\n${l.steps.map((s) => `- ${s.title} (~${s.minutes} min): ${s.text}`).join("\n")}\n\nPause after any step; save the artifact and next action.\n\n**Free tool path.** ${l.freeToolPath}\n\n### Output\n\n${l.deliverable}\n\n### Checks\n\n${l.check.map((q) => `- ${q.question} Answer: ${q.answer}`).join("\n")}\n\n### Rubric and remediation\n\n${l.criteria.map((c) => `**${c.criterion}**\n\nAdequate evidence: ${c.evidence}\n\n${c.levels.map((text, score) => `- ${score} — ${text}`).join("\n")}\n\nIf below 2: ${c.remediation} Show at recheck: ${c.recheck}`).join("\n\n")}\n\n### Portfolio contribution\n\n${l.portfolio}\n\n### Assigned resources\n\n${l.resources.map((r) => `- ${r.id}: [${r.title}](${r.url}) — ${r.section} Purpose: ${r.purpose} Effort: ${r.minutes} min. ${r.limits} Fallback: ${r.fallbackId}.`).join("\n")}\n`,
+            `## Lesson ${l.day}: ${l.title}\n\nStable ID: ${l.id}. ${l.optional ? "Optional" : "Core"}. Areas ${(l.areas || module.areas).join(", ")}. Optional effort ~${l.steps.reduce((n, s) => n + s.minutes, 0)} min.\n\n**Objective.** ${l.objective}\n\n**Bring forward.** ${l.bringForward}\n\n${l.why}\n\n### Learn\n\n${(l.explanation || l.teach).join("\n\n")}\n\n**Common misconception.** ${l.misconception}\n\n### Worked example\n\n${l.example}\n\n### Practice and pause points\n\n${l.steps.map((s) => `- ${s.title} (~${s.minutes} min): ${s.text}`).join("\n")}\n\nPause after any step; save the artifact and next action.\n\n**Free tool path.** ${l.freeToolPath}\n\n### Output\n\n${l.deliverable}\n\n### Checks\n\n${l.check.map((q) => `- ${q.question} Answer: ${q.answer}`).join("\n")}\n\n### Rubric and remediation\n\n${l.criteria.map((c) => `**${c.criterion}**\n\nAdequate evidence: ${c.evidence}\n\n${c.levels.map((text, score) => `- ${score} — ${text}`).join("\n")}\n\nIf below 2: ${c.remediation} Show at recheck: ${c.recheck}`).join("\n\n")}\n\n### Portfolio contribution\n\n${l.portfolio}\n\n### Assigned resources\n\n${l.resources.map((r) => `- ${r.id}: [${r.title}](${r.url}) — ${r.section} Purpose: ${r.purpose} Effort: ${r.minutes} min. ${r.limits} Fallback: ${r.fallbackId}.`).join("\n")}\n`,
         )
         .join("\n"),
   );

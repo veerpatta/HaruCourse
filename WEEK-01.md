@@ -10,50 +10,140 @@ Use your visual-design experience while learning to judge whether a product help
 
 ### Learn
 
-A product helps someone accomplish a goal repeatedly. Product design connects that goal to a viable service and an experience people can use. The screen is one part: instructions, waiting, support, and recovery also shape the experience.
+Bring: No earlier lesson needed. Use a familiar app and a blank note.
 
-UX concerns the whole experience of a task. UI concerns its controls, information, and presentation. Product design also asks which problem deserves attention and how a response fits business and technical constraints. Job titles overlap; judge actual responsibilities.
+- Product design connects a user goal to a usable, viable service.
+- UX is the whole task experience; UI is the controls and presentation.
+- A screen is an output. Helping someone finish a task is an outcome.
+- Designers explore options with product managers, engineers and researchers.
 
-Your graphic-design skills help communicate clearly, but product decisions need evidence about use. A beautiful booking screen can fail if people cannot tell whether payment succeeded. Separate an output (a screen) from an outcome (people understand their booking status).
-
-Designers explore and explain alternatives. Product managers coordinate priorities; engineers investigate feasibility and build behavior; researchers reduce uncertainty about people. Collaboration begins before polished mockups.
-
-### Worked example
+<details>
+<summary>Worked example</summary>
 
 “Make Reserve bigger” is a proposed solution. People might instead struggle to find availability or understand the price. These are hypotheses until you collect evidence.
 
-### Practice and pause points
+</details>
 
-- Learn (~25 min): Read the lesson and linked process overview. Define product design, UX, and UI in your own words.
-- Observe (~20 min): Complete one task in a familiar app. Record the starting situation, goal, and actions without collecting private information.
-- Separate evidence (~45 min): Make an observed / inferred / unknown table with five entries. Add a user goal and a possible business goal.
-- Compare (~20 min): Propose one visual and one behavioral improvement. Explain how you would check each.
-- Reflect (~10 min): Save your evidence and reflection. Pause whenever needed and return to unfinished work.
+<details>
+<summary>Why this works</summary>
 
-Pause after any step; save the artifact and next action.
+- A product helps someone accomplish a goal repeatedly. Product design connects that goal to a viable service and an experience people can use. The screen is one part: instructions, waiting, support, and recovery also shape the experience.
+- UX concerns the whole experience of a task. UI concerns its controls, information, and presentation. Product design also asks which problem deserves attention and how a response fits business and technical constraints. Job titles overlap; judge actual responsibilities.
+- Your graphic-design skills help communicate clearly, but product decisions need evidence about use. A beautiful booking screen can fail if people cannot tell whether payment succeeded. Separate an output (a screen) from an outcome (people understand their booking status).
+- Designers explore and explain alternatives. Product managers coordinate priorities; engineers investigate feasibility and build behavior; researchers reduce uncertainty about people. Collaboration begins before polished mockups.
 
-### Output
+</details>
 
-A task walkthrough, five evidence/assumption entries, two goals, and two improvement hypotheses.
+<details>
+<summary>Reading and free alternative</summary>
 
-### Checks
+[Design Council: the Double Diamond](https://www.designcouncil.org.uk/resources/the-double-diamond/) (R01).
 
-- Is a larger button a problem statement? Answer: No. It prescribes a response. First identify who struggles, with what task, and what evidence shows the difficulty.
-- Can a polished screen prove a better outcome? Answer: No. Craft and user outcomes need different evidence.
+Read: How to use the Double Diamond: Discover, Define, Develop and Deliver. About 20–30 minutes.
 
-### Rubric
+Public reading checked 2026-09-06; no account, card or trial. If unavailable, complete the local exercise with this lesson’s concepts and example. Paper and local notes are sufficient. Catalog restrictions apply.
+
+</details>
+
+### Do
+
+Make these:
+
+- One task walkthrough
+- Five observed / inferred / unknown entries
+- One user goal and one possible business goal
+- Two improvement hypotheses and ways to check them
+
+#### 1. Learn
+
+- Read the Double Diamond overview.
+- Write one sentence each defining product design, UX and UI.
+
+#### 2. Observe
+
+- Choose one task in a familiar app.
+- Record the starting situation, goal and actions; omit private information.
+
+#### 3. Separate evidence
+
+- Create three columns: observed, inferred, unknown.
+- Add five entries from your walkthrough.
+- Write the user goal and a possible business goal.
+
+#### 4. Compare
+
+- Propose one visual improvement and one behavior improvement.
+- For each, name an observation that would show whether it helps.
+
+#### 5. Reflect
+
+- Save the walkthrough, table and hypotheses.
+- Add one unresolved question and your next action.
+
+Pause after any step. Save the artifact and next action in Your work.
+
+<details>
+<summary>Optional effort and portfolio context</summary>
+
+- Learn: about 25 minutes
+- Observe: about 20 minutes
+- Separate evidence: about 45 minutes
+- Compare: about 20 minutes
+- Reflect: about 10 minutes
+
+No deadline; split work across sessions.
+
+Process practice, not a validated case study.
+
+</details>
+
+### Check
+
+<details>
+<summary>Is a larger button a problem statement?</summary>
+
+No. It prescribes a response. First identify who struggles, with what task, and what evidence shows the difficulty.
+
+</details>
+
+<details>
+<summary>Can a polished screen prove a better outcome?</summary>
+
+No. Craft and user outcomes need different evidence.
+
+</details>
+
+Review criteria:
 
 - A specific task and user goal
 - Observations separated from assumptions
 - One trade-off beyond appearance
 
-If a criterion is missing, revise that part and request a recheck.
+<details>
+<summary>Need to revise?</summary>
 
-### Portfolio contribution
+- If the goal names a screen, rewrite it as something the person needs to accomplish.
+- If an inference reads as fact, move it to the inferred column and name the missing evidence.
+- If both improvements are visual, add a change to task behavior and a way to check it.
 
-Process practice, not a validated case study.
+Show the revised artifact and criterion at recheck.
 
-Resource R01: [Design Council: the Double Diamond](https://www.designcouncil.org.uk/resources/the-double-diamond/). Module approved pair: R01 / R02; catalog restrictions apply.
+</details>
+
+<details>
+<summary>How review works</summary>
+
+0 absent · 1 needs support · 2 independently adequate · 3 strong reasoning and trade-offs. Ready for review is not assessed completion. Formal scored assessment is not implemented.
+
+</details>
+
+### Your work
+
+- Save notes and your next action.
+- Add a work reference; this does not upload the file.
+- Record actual minutes if useful.
+- Select Ready for review only after adding notes and a work reference.
+- Read version-specific feedback and revise the artifact.
 
 ## Lesson 2: Frame the problem before the feature
 
@@ -63,49 +153,133 @@ Avoid polishing a solution to the wrong problem.
 
 ### Learn
 
-A useful frame describes a person, situation, unmet goal, and consequence. “Attendees need to know what to bring before leaving home” leaves room for alternatives. “Attendees need a checkbox” already chooses a feature.
+Bring: Bring Lesson 1’s walkthrough and evidence table. Use workshop preparation as the practice context.
 
-A stakeholder report is a lead, not proof of frequency or cause. Assumptions are not necessarily false; they are claims that still need checking. Write what would change your mind.
+- Frame the person, situation, unmet goal and consequence before choosing a feature.
+- A stakeholder report suggests a problem; it does not prove its cause.
+- Explore alternatives before narrowing the response.
+- Check assumptions with serious consequences and weak evidence first.
 
-Expand options before narrowing them. Discover and define focus on understanding the problem; develop and deliver focus on responses. These are modes of work, not mandatory one-way stages.
-
-Distinguish constraints such as time or device access from preferences. Investigate assumptions that combine weak evidence with serious consequences if wrong.
-
-### Worked example
+<details>
+<summary>Worked example</summary>
 
 A reminder, materials summary, and checkbox are different responses to workshop preparation. A click on a checkbox does not prove comprehension.
 
-### Practice and pause points
+</details>
 
-- Review (~20 min): Underline unverified explanations in the previous lesson’s notes.
-- Frame (~25 min): Write three person–situation–goal–consequence statements for workshop attendance. Remove feature names.
-- Prioritize uncertainty (~35 min): List six assumptions, their consequences, and your confidence. Pick two to investigate and describe disconfirming evidence.
-- Explore (~30 min): Sketch three different responses. Note a constraint and weakness for each.
-- Decide (~10 min): Choose the next investigation and explain why.
+<details>
+<summary>Why this works</summary>
 
-Pause after any step; save the artifact and next action.
+- A useful frame describes a person, situation, unmet goal, and consequence. “Attendees need to know what to bring before leaving home” leaves room for alternatives. “Attendees need a checkbox” already chooses a feature.
+- A stakeholder report is a lead, not proof of frequency or cause. Assumptions are not necessarily false; they are claims that still need checking. Write what would change your mind.
+- Expand options before narrowing them. Discover and define focus on understanding the problem; develop and deliver focus on responses. These are modes of work, not mandatory one-way stages.
+- Distinguish constraints such as time or device access from preferences. Investigate assumptions that combine weak evidence with serious consequences if wrong.
 
-### Output
+</details>
 
-Three problem frames, six assumptions, three alternatives, and an investigation decision.
+<details>
+<summary>Reading and free alternative</summary>
 
-### Checks
+[Design Council: the Double Diamond](https://www.designcouncil.org.uk/resources/the-double-diamond/) (R01).
 
-- Which assumption should be investigated first? Answer: One with weak evidence whose failure would materially change the design or harm users.
+Read: How to use the Double Diamond: Discover, Define, Develop and Deliver. About 20–30 minutes.
 
-### Rubric
+Public reading checked 2026-09-06; no account, card or trial. If unavailable, complete the local exercise with this lesson’s concepts and example. Paper and local notes are sufficient. Catalog restrictions apply.
+
+</details>
+
+### Do
+
+Make these:
+
+- Three problem frames
+- Six assumptions and two priority uncertainties
+- Three alternatives with constraints and weaknesses
+- One investigation decision
+
+#### 1. Review
+
+- Read your earlier notes.
+- Mark explanations you have not verified.
+
+#### 2. Frame
+
+- Write three person–situation–goal–consequence statements about workshop attendance.
+- Remove feature names such as checkbox or reminder.
+
+#### 3. Prioritize uncertainty
+
+- List six assumptions with consequences and confidence.
+- Choose two to investigate.
+- For each, name evidence that would change your mind.
+
+#### 4. Explore
+
+- Sketch three different responses to the workshop preparation problem.
+- For each, note a constraint and a weakness.
+
+#### 5. Decide
+
+- Choose the next investigation and explain why.
+- Save the frames, assumptions and alternatives.
+
+Pause after any step. Save the artifact and next action in Your work.
+
+<details>
+<summary>Optional effort and portfolio context</summary>
+
+- Review: about 20 minutes
+- Frame: about 25 minutes
+- Prioritize uncertainty: about 35 minutes
+- Explore: about 30 minutes
+- Decide: about 10 minutes
+
+No deadline; split work across sessions.
+
+Keep the decision log as early reasoning evidence.
+
+</details>
+
+### Check
+
+<details>
+<summary>Which assumption should be investigated first?</summary>
+
+One with weak evidence whose failure would materially change the design or harm users.
+
+</details>
+
+Review criteria:
 
 - Needs without prescribed features
 - A way to reduce uncertainty
 - Alternatives compared against constraints
 
-If a criterion is missing, revise that part and request a recheck.
+<details>
+<summary>Need to revise?</summary>
 
-### Portfolio contribution
+- If the frame prescribes a feature, remove it and state the unmet goal.
+- If the priority has no rationale, compare the cost of being wrong for two assumptions.
+- If nothing could change your mind, add one concrete disconfirming observation.
 
-Keep the decision log as early reasoning evidence.
+Show the revised artifact and criterion at recheck.
 
-Resource R01: [Design Council: the Double Diamond](https://www.designcouncil.org.uk/resources/the-double-diamond/). Module approved pair: R01 / R02; catalog restrictions apply.
+</details>
+
+<details>
+<summary>How review works</summary>
+
+0 absent · 1 needs support · 2 independently adequate · 3 strong reasoning and trade-offs. Ready for review is not assessed completion. Formal scored assessment is not implemented.
+
+</details>
+
+### Your work
+
+- Save notes and your next action.
+- Add a work reference; this does not upload the file.
+- Record actual minutes if useful.
+- Select Ready for review only after adding notes and a work reference.
+- Read version-specific feedback and revise the artifact.
 
 ## Lesson 3: Ask about real experiences
 
@@ -115,49 +289,134 @@ Learn from people without steering them toward your preferred answer.
 
 ### Learn
 
-Begin with the uncertainty an interview should reduce. A research question guides your study; a participant question is the plain-language prompt used in conversation.
+Bring: Bring Lesson 2’s two priority uncertainties and a place to take notes.
 
-Ask about a recent specific experience. “Tell me about your last class booking” invites an account of behavior. “Would you use our helpful reminder?” invites prediction and agreement. Follow up without supplying the answer.
+- A research question states an uncertainty; an interview question starts a conversation.
+- Ask about a recent experience instead of predicting future behavior.
+- Explain consent and note use before beginning; ask permission before recording.
+- One conversation cannot establish how common a behavior is.
 
-Explain the purpose, voluntary participation, and use of notes. Ask permission before recording. Avoid unnecessary identifying data and do not paste private research into AI tools.
-
-One conversation does not establish prevalence. Separate quotations from interpretations. Label role-play as practice; never invent participants or findings when someone is unavailable.
-
-### Worked example
+<details>
+<summary>Worked example</summary>
 
 Replace “Was checkout confusing because the button was hidden?” with “What happened when you tried to finish?” Then ask what the person expected.
 
-### Practice and pause points
+</details>
 
-- Prepare (~25 min): Read the lesson and interview guide. Draft a purpose statement and consent introduction.
-- Write (~35 min): Choose one Lesson 2 uncertainty. Draft six open questions and two neutral follow-ups. Remove predictions and leading language.
-- Practice (~35 min): With consent, hold a 15-minute practice conversation and organize notes. If nobody is available, rehearse your guide and identify weaknesses; do not fabricate answers.
-- Distinguish (~15 min): Separate observations, interpretations, and follow-ups. Mark evidence not collected when applicable.
-- Improve (~10 min): Rewrite one weak question and save your guide.
+<details>
+<summary>Why this works</summary>
 
-Pause after any step; save the artifact and next action.
+- Begin with the uncertainty an interview should reduce. A research question guides your study; a participant question is the plain-language prompt used in conversation.
+- Ask about a recent specific experience. “Tell me about your last class booking” invites an account of behavior. “Would you use our helpful reminder?” invites prediction and agreement. Follow up without supplying the answer.
+- Explain the purpose, voluntary participation, and use of notes. Ask permission before recording. Avoid unnecessary identifying data and do not paste private research into AI tools.
+- One conversation does not establish prevalence. Separate quotations from interpretations. Label role-play as practice; never invent participants or findings when someone is unavailable.
 
-### Output
+</details>
 
-Research objective, consent introduction, question guide, labelled notes, and revised questions.
+<details>
+<summary>Reading and free alternative</summary>
 
-### Checks
+[GOV.UK: using in-depth interviews](https://www.gov.uk/service-manual/user-research/using-in-depth-interviews) (R27).
 
-- What if no participant is available? Answer: Improve the guide and arrange a later conversation. Mark evidence missing rather than inventing findings.
+Read: Steps to follow: plan sessions, design the interview and conduct the interview. About 30–45 minutes.
 
-### Rubric
+Public reading checked 2026-09-06; no account, card or trial. If unavailable, complete the local exercise with this lesson’s concepts and example. Paper and local notes are sufficient. Catalog restrictions apply.
+
+</details>
+
+### Do
+
+Make these:
+
+- Research objective and consent introduction
+- Six open questions and two neutral follow-ups
+- Labelled notes or an explicit evidence gap
+- One improved question
+
+#### 1. Prepare
+
+- Read the interview reference.
+- Write the study purpose and a voluntary-consent introduction.
+
+#### 2. Write
+
+- Choose one uncertainty from Lesson 2.
+- Draft six questions about recent experience and two neutral follow-ups.
+- Remove leading language and predictions.
+
+#### 3. Practice
+
+- With consent, hold a 15-minute practice conversation.
+- If nobody is available, rehearse the guide and mark “No participant evidence collected.”
+- Exclude identifying details and private research from AI tools.
+
+#### 4. Distinguish
+
+- Separate observations, interpretations and follow-up questions.
+- Keep actual quotations distinct from your explanation.
+
+#### 5. Improve
+
+- Rewrite one weak question.
+- Save your guide, labelled notes and next research question.
+
+Pause after any step. Save the artifact and next action in Your work.
+
+<details>
+<summary>Optional effort and portfolio context</summary>
+
+- Prepare: about 25 minutes
+- Write: about 35 minutes
+- Practice: about 35 minutes
+- Distinguish: about 15 minutes
+- Improve: about 10 minutes
+
+No deadline; split work across sessions.
+
+Count research findings only when actually collected.
+
+</details>
+
+### Check
+
+<details>
+<summary>What if no participant is available?</summary>
+
+Improve the guide and arrange a later conversation. Mark evidence missing rather than inventing findings.
+
+</details>
+
+Review criteria:
 
 - Questions address uncertainty
 - Neutral questions about experience
 - Consent and limitations explicit
 
-If a criterion is missing, revise that part and request a recheck.
+<details>
+<summary>Need to revise?</summary>
 
-### Portfolio contribution
+- If the questions miss the uncertainty, connect each question to the decision it informs.
+- Replace a leading question with “What happened when…?” and rehearse it.
+- If consent or source type is missing, document it; do not retrospectively invent consent or answers.
 
-Count research findings only when actually collected.
+Show the revised artifact and criterion at recheck.
 
-Resource R27: [GOV.UK: using in-depth interviews](https://www.gov.uk/service-manual/user-research/using-in-depth-interviews). Module approved pair: R01 / R02; catalog restrictions apply.
+</details>
+
+<details>
+<summary>How review works</summary>
+
+0 absent · 1 needs support · 2 independently adequate · 3 strong reasoning and trade-offs. Ready for review is not assessed completion. Formal scored assessment is not implemented.
+
+</details>
+
+### Your work
+
+- Save notes and your next action.
+- Add a work reference; this does not upload the file.
+- Record actual minutes if useful.
+- Select Ready for review only after adding notes and a work reference.
+- Read version-specific feedback and revise the artifact.
 
 ## Lesson 4: Map the task and its failures
 
@@ -167,49 +426,133 @@ A usable flow helps people recover when things go wrong.
 
 ### Learn
 
-A task flow shows actions and decisions from a trigger to an outcome. Start before the first screen: what brings someone here and what will count as done?
+Bring: Bring your workshop problem frame and interview notes or labelled evidence gaps. Use paper or a familiar drawing tool.
 
-The happy path assumes success. Real flows also need empty, loading, error, permission, and interrupted states. Explain what happened and the next action; preserve input when retrying where possible.
+- A task flow connects a trigger, actions, decisions and an outcome.
+- Every failure needs an explanation and a next action.
+- Group and label information using the visitor’s task language.
+- Show price and preparation requirements before commitment.
 
-Information architecture groups and labels content so people can find it. Use task language rather than internal department names, and show prerequisites before the decision that needs them.
-
-Screen names alone do not explain transitions. A confirmation screen does not answer what happens when payment takes time, the last seat disappears, or someone closes the browser.
-
-### Worked example
+<details>
+<summary>Worked example</summary>
 
 Workshop full → explain availability → offer another date. A payment timeout should distinguish checking status from confirmed failure to reduce accidental repeat payments.
 
-### Practice and pause points
+</details>
 
-- Define (~20 min): Write the reservation trigger, successful outcome, and information needed before committing.
-- Map (~40 min): Draw the workshop happy path with labelled actions, decisions, price, and materials.
-- Recover (~35 min): Add full workshop, invalid input, and interrupted confirmation branches. Write a message and next action for each.
-- Walk through (~15 min): Trace every branch aloud as a first-time visitor. Mark missing information and dead ends.
-- Revise (~10 min): Repair a dead end and explain the change.
+<details>
+<summary>Why this works</summary>
 
-Pause after any step; save the artifact and next action.
+- A task flow shows actions and decisions from a trigger to an outcome. Start before the first screen: what brings someone here and what will count as done?
+- The happy path assumes success. Real flows also need empty, loading, error, permission, and interrupted states. Explain what happened and the next action; preserve input when retrying where possible.
+- Information architecture groups and labels content so people can find it. Use task language rather than internal department names, and show prerequisites before the decision that needs them.
+- Screen names alone do not explain transitions. A confirmation screen does not answer what happens when payment takes time, the last seat disappears, or someone closes the browser.
 
-### Output
+</details>
 
-One annotated flow with three failures and recovery messages.
+<details>
+<summary>Reading and free alternative</summary>
 
-### Checks
+[Design Council: the Double Diamond](https://www.designcouncil.org.uk/resources/the-double-diamond/) (R01).
 
-- What is missing from a list of screens? Answer: Actions, conditions, transitions, and recovery that explain how a person reaches the outcome.
+Read: How to use the Double Diamond: Discover, Define, Develop and Deliver. About 20–30 minutes.
 
-### Rubric
+Public reading checked 2026-09-06; no account, card or trial. If unavailable, complete the local exercise with this lesson’s concepts and example. Paper and local notes are sufficient. Catalog restrictions apply.
+
+</details>
+
+### Do
+
+Make these:
+
+- One annotated reservation flow
+- Three failure branches with recovery messages
+- One repaired dead end and explanation
+
+#### 1. Define
+
+- Write the reservation trigger and successful outcome.
+- List information needed before committing.
+
+#### 2. Map
+
+- Draw the successful reservation path.
+- Label actions and decisions.
+- Place price and materials before the reservation decision.
+
+#### 3. Recover
+
+- Add branches for a full workshop, invalid input and interrupted confirmation.
+- Write a message and next action for each.
+- Preserve entered values where possible; check uncertain payment status before retrying.
+
+#### 4. Walk through
+
+- Trace every branch aloud as a first-time visitor.
+- Mark missing information and dead ends.
+
+#### 5. Revise
+
+- Repair one dead end.
+- Save the flow and explain what changed.
+
+Pause after any step. Save the artifact and next action in Your work.
+
+<details>
+<summary>Optional effort and portfolio context</summary>
+
+- Define: about 20 minutes
+- Map: about 40 minutes
+- Recover: about 35 minutes
+- Walk through: about 15 minutes
+- Revise: about 10 minutes
+
+No deadline; split work across sessions.
+
+Early untested flow evidence for the practice project.
+
+</details>
+
+### Check
+
+<details>
+<summary>What is missing from a list of screens?</summary>
+
+Actions, conditions, transitions, and recovery that explain how a person reaches the outcome.
+
+</details>
+
+Review criteria:
 
 - Clear primary outcome
 - Three recoverable exceptions
 - Prerequisites before commitment
 
-If a criterion is missing, revise that part and request a recheck.
+<details>
+<summary>Need to revise?</summary>
 
-### Portfolio contribution
+- If the flow is only screen names, label the actions and decisions between them.
+- If an exception ends without help, add its next action and recovery destination.
+- If required information appears too late, move it before commitment and retrace the path.
 
-Early untested flow evidence for the practice project.
+Show the revised artifact and criterion at recheck.
 
-Resource R01: [Design Council: the Double Diamond](https://www.designcouncil.org.uk/resources/the-double-diamond/). Module approved pair: R01 / R02; catalog restrictions apply.
+</details>
+
+<details>
+<summary>How review works</summary>
+
+0 absent · 1 needs support · 2 independently adequate · 3 strong reasoning and trade-offs. Ready for review is not assessed completion. Formal scored assessment is not implemented.
+
+</details>
+
+### Your work
+
+- Save notes and your next action.
+- Add a work reference; this does not upload the file.
+- Record actual minutes if useful.
+- Select Ready for review only after adding notes and a work reference.
+- Read version-specific feedback and revise the artifact.
 
 ## Lesson 5: Make the interface understandable
 
@@ -219,51 +562,145 @@ Turn the flow into screens that support different abilities and device widths.
 
 ### Learn
 
-Hierarchy expresses what matters for the next decision. Size, spacing, grouping, language, and contrast work together. Do not rely on color alone for essential meaning.
+Bring: Bring Lesson 4’s flow. Use paper or a familiar tool; no new software is required.
 
-Responsive design means reflow and priority, not shrinking a desktop layout. Explain what stacks, wraps, stays visible, and moves. Longer labels and larger text reveal hidden assumptions.
+- Hierarchy helps someone make the next decision.
+- Responsive layouts reflow content instead of shrinking it.
+- Persistent labels, clear errors and logical reading order support access.
+- Mockups specify accessibility intent; runtime tests verify implemented behavior.
 
-Accessibility concerns whether people can perceive, understand, navigate, and operate the experience. A mockup can specify labels and focus order; implemented keyboard and screen-reader behavior require runtime testing.
-
-Use persistent input labels, plain instructions, nearby error messages, and a logical reading order. Explain how to correct an error and retain entered values. Record what you checked and what remains untested.
-
-### Worked example
+<details>
+<summary>Worked example</summary>
 
 The Email label stays visible after typing. The materials summary stays before Reserve on mobile instead of disappearing into a desktop sidebar.
 
-### Practice and pause points
+</details>
 
-- Learn (~25 min): Read the lesson and W3C introduction. Choose three considerations relevant to your flow.
-- Sketch (~45 min): Create workshop details and reservation screens at narrow and wide widths using paper or a familiar tool. Prioritize content before decoration.
-- Specify (~25 min): Annotate labels, reading/focus order, recovery, and stacking. Identify checks requiring code.
-- Critique (~15 min): Compare against Lesson 4’s flow and add one missing state.
-- Submit (~10 min): Reference the flow/screens and explain the main unresolved issue. Mark ready only when evidence is present.
+<details>
+<summary>Why this works</summary>
 
-Pause after any step; save the artifact and next action.
+- Hierarchy expresses what matters for the next decision. Size, spacing, grouping, language, and contrast work together. Do not rely on color alone for essential meaning.
+- Responsive design means reflow and priority, not shrinking a desktop layout. Explain what stacks, wraps, stays visible, and moves. Longer labels and larger text reveal hidden assumptions.
+- Accessibility concerns whether people can perceive, understand, navigate, and operate the experience. A mockup can specify labels and focus order; implemented keyboard and screen-reader behavior require runtime testing.
+- Use persistent input labels, plain instructions, nearby error messages, and a logical reading order. Explain how to correct an error and retain entered values. Record what you checked and what remains untested.
 
-### Output
+</details>
 
-Two screens at two widths, behavior/accessibility annotations, and an error state.
+<details>
+<summary>Reading and free alternative</summary>
 
-### Checks
+[W3C: introduction to web accessibility](https://www.w3.org/WAI/fundamentals/accessibility-intro/) (R28).
 
-- Does a mockup prove keyboard accessibility? Answer: No. It specifies intent. Test the implemented interaction.
-- Why use a persistent label? Answer: It identifies the value after typing, when a placeholder is no longer visible.
+Read: What is Web Accessibility, Making the Web Accessible, and Evaluating Accessibility. About 20–30 minutes.
 
-### Rubric
+Public reading checked 2026-09-06; no account, card or trial. If unavailable, complete the local exercise with this lesson’s concepts and example. Paper and local notes are sufficient. Catalog restrictions apply.
+
+</details>
+
+### Do
+
+Make these:
+
+- Details and reservation screens at narrow and wide widths
+- Reading order, labels, recovery and stacking annotations
+- One error state
+- An unresolved issue for review
+
+#### 1. Learn
+
+- Read the W3C accessibility introduction.
+- Choose three considerations that affect your flow.
+
+#### 2. Sketch
+
+- Sketch workshop details and reservation screens at two widths.
+- Keep preparation information before Reserve.
+- Use spacing, grouping and words; do not rely on color alone.
+
+#### 3. Specify
+
+- Annotate persistent labels, reading/focus order and stacking.
+- Explain how errors retain input and can be corrected.
+- List keyboard and screen-reader checks that need implementation.
+
+#### 4. Critique
+
+- Compare the screens against your flow.
+- Add one missing error state.
+- Try longer labels and larger text.
+
+#### 5. Submit
+
+- Save the flow and screen references.
+- Name the main unresolved issue.
+- Add notes and a work reference before selecting Ready for review.
+
+Pause after any step. Save the artifact and next action in Your work.
+
+<details>
+<summary>Optional effort and portfolio context</summary>
+
+- Learn: about 25 minutes
+- Sketch: about 45 minutes
+- Specify: about 25 minutes
+- Critique: about 15 minutes
+- Submit: about 10 minutes
+
+No deadline; split work across sessions.
+
+Creator review is required before portfolio-ready claims.
+
+</details>
+
+### Check
+
+<details>
+<summary>Does a mockup prove keyboard accessibility?</summary>
+
+No. It specifies intent. Test the implemented interaction.
+
+</details>
+
+<details>
+<summary>Why use a persistent label?</summary>
+
+It identifies the value after typing, when a placeholder is no longer visible.
+
+</details>
+
+Review criteria:
 
 - Task-based hierarchy
 - Explained responsive behavior
 - Labels and recovery
 - Evidence-bounded accessibility claims
 
-If a criterion is missing, revise that part and request a recheck.
+<details>
+<summary>Need to revise?</summary>
 
-### Portfolio contribution
+- If the next action is hard to find, reorder information around the task.
+- If mobile is just a smaller desktop, show what stacks and wraps.
+- If an error has no recovery, add corrective text and retained input.
+- Replace any accessibility pass claim with the specific checks performed and still needed.
 
-Creator review is required before portfolio-ready claims.
+Show the revised artifact and criterion at recheck.
 
-Resource R28: [W3C: introduction to web accessibility](https://www.w3.org/WAI/fundamentals/accessibility-intro/). Module approved pair: R01 / R02; catalog restrictions apply.
+</details>
+
+<details>
+<summary>How review works</summary>
+
+0 absent · 1 needs support · 2 independently adequate · 3 strong reasoning and trade-offs. Ready for review is not assessed completion. Formal scored assessment is not implemented.
+
+</details>
+
+### Your work
+
+- Save notes and your next action.
+- Add a work reference; this does not upload the file.
+- Record actual minutes if useful.
+- Select Ready for review only after adding notes and a work reference.
+- Read version-specific feedback and revise the artifact.
 
 ## Lesson 6: Critique and repair one weak point
 
@@ -273,47 +710,129 @@ Use optional catch-up time to improve evidence, not add more tools.
 
 ### Learn
 
-Useful critique links an observation to task impact. “Messy” is vague. “Materials appear after commitment, so people may reserve before understanding preparation” gives a concrete concern.
+Bring: Optional. Bring one flow or screen from Lessons 1–5 and its review criteria.
 
-Separate severity from taste. Fix primary-task blockers before decoration. Choose one bounded repair and describe how you would check whether it helps.
+- Useful critique connects a specific observation to task impact.
+- Prioritize a task blocker before a matter of taste.
+- Keep the original so the change can be explained.
 
-Keep the previous version to explain iteration. This is an optional lesson; rest or catch up if five core sessions fill your capacity.
-
-### Worked example
+<details>
+<summary>Worked example</summary>
 
 Replace an unexplained disabled Reserve button with availability information and another date. Check whether a visitor can identify the next step.
 
-### Practice and pause points
+</details>
 
-- Review (~20 min): Choose one weak criterion from the module.
-- Critique (~25 min): Write observation, impact, evidence, and uncertainty. Request creator input if available.
-- Repair (~45 min): Revise one flow or screen while retaining the original.
-- Compare (~20 min): Explain the change and remaining uncertainty.
-- Save (~10 min): Reference both versions. Resting instead does not count as a failed required lesson.
+<details>
+<summary>Why this works</summary>
 
-Pause after any step; save the artifact and next action.
+- Useful critique links an observation to task impact. “Messy” is vague. “Materials appear after commitment, so people may reserve before understanding preparation” gives a concrete concern.
+- Separate severity from taste. Fix primary-task blockers before decoration. Choose one bounded repair and describe how you would check whether it helps.
+- Keep the previous version to explain iteration. This is an optional lesson; rest or catch up if five core sessions fill your capacity.
 
-### Output
+</details>
 
-A before/after repair with specific critique and limitations.
+<details>
+<summary>Reading and free alternative</summary>
 
-### Checks
+[W3C: introduction to web accessibility](https://www.w3.org/WAI/fundamentals/accessibility-intro/) (R28).
 
-- What makes feedback actionable? Answer: A concrete observation, task impact, evidence or uncertainty, and a bounded next action.
+Read: What is Web Accessibility, Making the Web Accessible, and Evaluating Accessibility. About 20–30 minutes.
 
-### Rubric
+Public reading checked 2026-09-06; no account, card or trial. If unavailable, complete the local exercise with this lesson’s concepts and example. Paper and local notes are sufficient. Catalog restrictions apply.
+
+</details>
+
+### Do
+
+Make these:
+
+- One critique with evidence and uncertainty
+- Before and after versions
+- A next check
+
+#### 1. Review
+
+- Choose one weak criterion from the module.
+- Identify the flow or screen that shows it.
+
+#### 2. Critique
+
+- Write the observation, task impact, evidence and uncertainty.
+- Ask for creator input if available.
+
+#### 3. Repair
+
+- Keep a copy of the original.
+- Repair only the chosen issue.
+
+#### 4. Compare
+
+- Compare both versions.
+- Explain the change and how you would check whether it helps.
+
+#### 5. Save
+
+- Save both references and remaining limitations.
+- Skip this optional lesson whenever you prefer.
+
+Pause after any step. Save the artifact and next action in Your work.
+
+<details>
+<summary>Optional effort and portfolio context</summary>
+
+- Review: about 20 minutes
+- Critique: about 25 minutes
+- Repair: about 45 minutes
+- Compare: about 20 minutes
+- Save: about 10 minutes
+
+No deadline; split work across sessions.
+
+Potential iteration evidence with an honest explanation.
+
+</details>
+
+### Check
+
+<details>
+<summary>What makes feedback actionable?</summary>
+
+A concrete observation, task impact, evidence or uncertainty, and a bounded next action.
+
+</details>
+
+Review criteria:
 
 - Task-impact priority
 - Repair addresses the issue
 - Limitations preserved
 
-If a criterion is missing, revise that part and request a recheck.
+<details>
+<summary>Need to revise?</summary>
 
-### Portfolio contribution
+- If the critique is taste-based, identify the affected task.
+- If the change does not address the issue, revise the relevant flow or screen only.
+- If the repair is called proven, state the test still needed.
 
-Potential iteration evidence with an honest explanation.
+Show the revised artifact and criterion at recheck.
 
-Resource R28: [W3C: introduction to web accessibility](https://www.w3.org/WAI/fundamentals/accessibility-intro/). Module approved pair: R01 / R02; catalog restrictions apply.
+</details>
+
+<details>
+<summary>How review works</summary>
+
+0 absent · 1 needs support · 2 independently adequate · 3 strong reasoning and trade-offs. Ready for review is not assessed completion. Formal scored assessment is not implemented.
+
+</details>
+
+### Your work
+
+- Save notes and your next action.
+- Add a work reference; this does not upload the file.
+- Record actual minutes if useful.
+- Select Ready for review only after adding notes and a work reference.
+- Read version-specific feedback and revise the artifact.
 
 ## Lesson 7: Explain decisions and plan your next steps
 
@@ -323,44 +842,127 @@ Practice the written communication needed for remote collaboration.
 
 ### Learn
 
-A decision story connects context, evidence, alternatives, choice, and next check. Explain one trade-off rather than narrating every screen or activity.
+Bring: Optional. Bring one design decision, its alternatives and supporting artifacts from Module 1.
 
-Match claims to evidence. A concept can show reasoning and craft, but not a production conversion gain. Distinguish proposals, observations, and untested outcomes.
+- Explain context, evidence, alternatives, choice and next check.
+- A concept shows reasoning; it cannot prove production impact.
+- Choose your next practice from evidence gaps, not tool trends.
 
-Review actual hours before adding work. Reduce scope if the work felt too heavy. Rest is valid on this optional lesson; next steps should follow gaps rather than tool trends.
-
-### Worked example
+<details>
+<summary>Worked example</summary>
 
 “I moved materials before reservation because preparation is the reported concern. A checkbox records a click, not comprehension. I still need to observe visitors using the summary.”
 
-### Practice and pause points
+</details>
 
-- Select (~20 min): Gather evidence for one decision.
-- Write (~35 min): Write one page: context, evidence, options, choice, trade-off, next check.
-- Present (~25 min): Explain it aloud in five minutes, review the explanation, and repeat once.
-- Plan (~30 min): List actual hours, an evidence-backed strength, two gaps, and one bounded repair. Request review.
-- Save (~10 min): Save the note and plan. Do not infer mastery from one module.
+<details>
+<summary>Why this works</summary>
 
-Pause after any step; save the artifact and next action.
+- A decision story connects context, evidence, alternatives, choice, and next check. Explain one trade-off rather than narrating every screen or activity.
+- Match claims to evidence. A concept can show reasoning and craft, but not a production conversion gain. Distinguish proposals, observations, and untested outcomes.
+- Review actual hours before adding work. Reduce scope if the work felt too heavy. Rest is valid on this optional lesson; next steps should follow gaps rather than tool trends.
 
-### Output
+</details>
 
-A decision note and plan for the next five core sessions.
+<details>
+<summary>Reading and free alternative</summary>
 
-### Checks
+[Design Council: the Double Diamond](https://www.designcouncil.org.uk/resources/the-double-diamond/) (R01).
 
-- What can an unshipped concept demonstrate? Answer: Work you produced and tests you actually ran, with limitations—not unobserved production outcomes.
+Read: How to use the Double Diamond: Discover, Define, Develop and Deliver. About 20–30 minutes.
 
-### Rubric
+Public reading checked 2026-09-06; no account, card or trial. If unavailable, complete the local exercise with this lesson’s concepts and example. Paper and local notes are sufficient. Catalog restrictions apply.
+
+</details>
+
+### Do
+
+Make these:
+
+- A one-page decision note
+- One evidence-backed strength and two gaps
+- One bounded repair and next learning action
+
+#### 1. Select
+
+- Choose one decision.
+- Gather its evidence and artifact references.
+
+#### 2. Write
+
+- Write six short headings: context, evidence, options, choice, trade-off, next check.
+- Add concise bullets under each; keep it to one page.
+
+#### 3. Present
+
+- Explain the decision aloud in five minutes.
+- Identify unclear reasoning and try once more.
+
+#### 4. Plan
+
+- Record one evidenced strength and two gaps.
+- Choose one small repair; reduce scope if needed.
+- Request creator review.
+
+#### 5. Save
+
+- Save the decision note and next action.
+- Record actual time only if useful; this lesson is optional.
+
+Pause after any step. Save the artifact and next action in Your work.
+
+<details>
+<summary>Optional effort and portfolio context</summary>
+
+- Select: about 20 minutes
+- Write: about 35 minutes
+- Present: about 25 minutes
+- Plan: about 30 minutes
+- Save: about 10 minutes
+
+No deadline; split work across sessions.
+
+Rehearsal for a future case-study presentation.
+
+</details>
+
+### Check
+
+<details>
+<summary>What can an unshipped concept demonstrate?</summary>
+
+Work you produced and tests you actually ran, with limitations—not unobserved production outcomes.
+
+</details>
+
+Review criteria:
 
 - Clear choice and alternative
 - Evidence-matched claims
 - Gap-based next steps
 
-If a criterion is missing, revise that part and request a recheck.
+<details>
+<summary>Need to revise?</summary>
 
-### Portfolio contribution
+- If there is no alternative, add one and explain why it was not chosen.
+- If impact is unmeasured, label the intended outcome as untested.
+- If the next step is vague, name the artifact and specific gap to repair.
 
-Rehearsal for a future case-study presentation.
+Show the revised artifact and criterion at recheck.
 
-Resource R01: [Design Council: the Double Diamond](https://www.designcouncil.org.uk/resources/the-double-diamond/). Module approved pair: R01 / R02; catalog restrictions apply.
+</details>
+
+<details>
+<summary>How review works</summary>
+
+0 absent · 1 needs support · 2 independently adequate · 3 strong reasoning and trade-offs. Ready for review is not assessed completion. Formal scored assessment is not implemented.
+
+</details>
+
+### Your work
+
+- Save notes and your next action.
+- Add a work reference; this does not upload the file.
+- Record actual minutes if useful.
+- Select Ready for review only after adding notes and a work reference.
+- Read version-specific feedback and revise the artifact.

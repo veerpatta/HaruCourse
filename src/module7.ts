@@ -1,4 +1,4 @@
-import type { Lesson } from "./lessons";
+import type { LegacyLesson as Lesson } from "./teaching";
 // Module 7 joins area 6 (flows) to area 7 (wireframes) deliberately: a flow
 // nobody has drawn screens for hides its hardest moments, and screens drawn
 // without a flow invent a happy path. The module needs no new catalog rows —

@@ -1,3 +1,5 @@
+> Historical verification: the results below describe their named releases. For the current concise reader and navigation, see [VERIFICATION-MINIMAL.md](VERIFICATION-MINIMAL.md).
+
 # Self-paced release verification
 
 Verified 6 September 2026. Cloudflare Worker version: 96e835de-ded1-4f0a-b3c9-dcd30fee6aa7. Live: https://harucourse.raj-39e.workers.dev. D1 migration 0003_learning_positions applied locally and remotely.

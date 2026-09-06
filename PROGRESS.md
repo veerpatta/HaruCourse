@@ -1,3 +1,8 @@
+# Level 2 authoring merged with the minimal-interface release — 6 September 2026
+
+Two lines of work happened in parallel on 6 September and are joined here. The interface line simplified the reader to Learn → Do → Check → Your work, moved the lesson type into src/teaching.ts and added adaptPublished; the authoring line wrote m05, m06 and m07. The merge kept both: m03 through m07 stay in the legacy contract shape and reach the app through adaptPublished, exactly as m03 and m04 already did, so no authored lesson was rewritten and no lesson ID changed. From m08 onward, new modules are authored directly in the concise Learn → Do → Check shape, with the deeper prose in explanation and details. docs/COURSE-AUTHORING.md records that split.
+
+---
 # Level 2 complete: m06 and m07 authored and published — 6 September 2026
 
 Current plan: PROJECT-PLAN.md. Start future authoring with AGENTS.md. This entry continues the one below it; together they publish Level 2.
@@ -43,7 +48,32 @@ Not done this session, stated plainly: no deployment, no hosted verification, no
 
 Still pending: m06 onward, and m06 in particular needs a verified tree-testing source before its lesson can be written, since the catalog's structural-IA row states it does not cover card-sort or tree-test methodology. Also pending: formal scored assessment and repair software, the remaining tracker fields, market positioning sources, a real multi-employer hiring study at m20, an executed authenticated tool workflow, and project briefs.
 
----
+---# Mobile usability follow-up — 6 September 2026
+
+Compacted the phone header; made section controls sticky and more readable; kept the idle timer inline and active/paused timer above bottom navigation; removed redundant blank clearance; widened Back/Next touch targets; tightened cards/map indentation and allowed account rows to wrap. Desktop structure and persistence behavior remain unchanged.
+
+Local Chromium checks passed at 320/390/768/1440px, including timer placement, Next clearance, sticky sections, notes focus, map and Account backups. Build passed with existing warnings. Evidence and release state: docs/VERIFICATION-MOBILE.md. This follow-up has not been deployed; the earlier hosted release is recorded below.
+
+# Integrated simplification release — 6 September 2026
+
+The simplified navigation and original twelve lesson rewrites now integrate the newer main-branch m03/m04 publication and session timer. All 30 published lessons and the baseline use the guided reader. The 18 newer lessons retain their source teaching, rubric, resource restrictions and repair instructions; these were adapted for the reader, not individually rewritten in this pass. Session logs, confidence, publication gates, mobile bottom navigation and browser history remain supported.
+
+Integrated checks: generated content, build, deploy dry run and full local backend suite pass. Browser checks cover all four module choices, rich and original guided sections, notes and section reload, timer Start/Pause/Finish, My work history, Back/Forward and 320/390px overflow. Fixed timer visibility after leaving a mobile text field. Remote migration listing reports no pending migrations. Code commit `4904230` is pushed to main and deployed as Worker `b18804cd-40f4-4d3a-990f-fc003a148b45` at https://harucourse.raj-39e.workers.dev. Hosted test-account acceptance passed: guided navigation, responsive layout, history, timer controls, draft/session/confidence API readback, section reload and exact production asset match. No migration was needed; hosted QA wrote only test-account records. See docs/VERIFICATION-MINIMAL.md for evidence and limits.
+
+The entries below are historical snapshots, including the original local-only simplification check.
+
+# Minimal course experience — 6 September 2026
+
+Implemented locally: Learn, Course map and My work navigation; Account utilities; one-section-at-a-time Learn → Do → Check → Your work for the baseline and all twelve published lessons. Teaching now uses concise concepts, exact action lists, output checklists, explicit prerequisites and lesson-specific repairs. Examples and deeper reasoning are optional details. All current course Markdown views and the future authoring contract are updated.
+
+Preserved: original vision checksum, published lesson IDs, record versions, storage keys, feedback revisions and account-owned bookmarks. Explicit section selection replaces scroll observation. Baseline keeps its original record and does not replace the published-lesson bookmark. Backups carry lesson IDs; compatible legacy baseline and matching conflict files remain supported.
+
+Checks passed: documentation generation/content validation, TypeScript/Vite/PWA build, local backend/OAuth/MCP suite, desktop/mobile and keyboard checks, read-only reload, saved work, offline reload/reconnection, second-context restoration, stale bookmark and draft conflicts, creator isolation and version-tied review, bookmark fallbacks, matching/mismatched backup handling. Six assigned public reading sources were rechecked. Full evidence: docs/VERIFICATION-MINIMAL.md.
+
+Release state: not deployed, committed or pushed in this revision. No remote learner records changed and no migration was introduced. Existing nonfatal Workbox warning remains. Formal assessment, later modules, native installation and authenticated optional-tool gaps remain pending.
+
+Earlier entries below describe historical releases; use the current authoring contract for all future content.
+
 # Session timer, session log and plain-language pass — 6 September 2026
 
 Current plan: PROJECT-PLAN.md. Start future authoring with AGENTS.md. This entry supersedes the two below where they disagree about how practice time is recorded.
@@ -92,6 +122,7 @@ Not re-run this session, because no persistence, authentication or synchronizati
 Closed a latent gap found during review: the API and the MCP tools validated only that a lesson ID existed, never that its module was published, so a lesson drafted for a still-planned module would have become reachable the moment its file was imported. src/lessons.ts now exports isPublishedLesson, publishedLessons and publishedLessonIds; the learning-position route, the lesson-scoped route guard, the MCP lesson schema, findLesson, the publishedLessons listing and the studio all gate on that set. npm run test:content asserts the gate against a synthetic catalog covering a published module, a planned module, an unknown module and a legacy week lesson, and separately asserts that every authored lesson currently belongs to a published module. The check was mutation-tested: forcing the gate to always allow makes test:content fail with "a lesson in a planned module must never be exposed", and restoring it passes. The ten-check backend suite and the new-lesson probe both pass against the gated server.
 
 Still pending: m05 onward, formal scored assessment and repair software, the richer tracker fields, market positioning sources, a real multi-employer hiring study at m20, an executed authenticated tool workflow, and project briefs. Do not describe these as complete.
+
 
 ---
 

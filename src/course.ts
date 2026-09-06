@@ -1,3 +1,4 @@
+import { withLegacyText } from "./teaching";
 export const levels = [
   {
     title: "Find your starting point",
@@ -41,53 +42,102 @@ export const levels = [
   },
 ];
 
-export const baseline = {
+export const baselineLesson = withLegacyText({
   id: "baseline-v1",
-  title: "Start with what you know.",
-  purpose:
-    "Discover your strengths and the gaps we should work on. This is a starting point, not a pass/fail exam.",
-  brief:
-    "A community workshop website lets people find an event and reserve a place. People sometimes arrive without understanding what materials to bring. The organizer proposes a mandatory “I have read the instructions” checkbox. You have no research or analytics yet. Treat this as a stakeholder report, not a verified explanation.",
+  day: 0,
+  title: "Find your starting point",
+  why: "Show how you frame, investigate and explain a design problem.",
+  prerequisite:
+    "No preparation. Use paper or a familiar tool and a blank note.",
+  teach: [
+    "Context: a workshop website lets people find an event and reserve a place.",
+    "Stakeholder report: some attendees arrive without knowing what materials to bring.",
+    "Proposed response: a mandatory “I have read the instructions” checkbox.",
+    "Evidence available: no research or analytics. Treat the report as unverified; do not invent findings.",
+  ],
+  explanation: [],
+  example: "",
+  outputs: [
+    "Problem note with labelled assumptions",
+    "One-page research plan with five neutral questions",
+    "Task flow with one failure and recovery",
+    "Two annotated wireframes: key information/reservation at mobile and desktop widths",
+    "Decision notes and reflection",
+  ],
   steps: [
     {
-      minutes: 15,
       title: "Frame the problem",
-      text: "Write the user goal, organizer goal, known facts, and assumptions. Label the assumptions.",
+      minutes: 15,
+      instructions: [
+        "Write the user goal and organizer goal.",
+        "Separate known facts from assumptions.",
+      ],
     },
     {
-      minutes: 20,
       title: "Plan your investigation",
-      text: "Identify who you would speak with and draft five neutral interview questions. Keep the plan to one page.",
-    },
-    {
-      minutes: 25,
-      title: "Map the task",
-      text: "Sketch the path from finding a workshop to confirming a reservation. Include one failure and a way to recover.",
-    },
-    {
-      minutes: 30,
-      title: "Sketch two screens",
-      text: "Show the key information and reservation screen on mobile and desktop. Use paper or a familiar tool.",
-    },
-    {
       minutes: 20,
-      title: "Explain your decisions",
-      text: "Describe information priority, two accessibility considerations, and an alternative to the checkbox.",
+      instructions: [
+        "Name who you would speak with.",
+        "Draft five neutral interview questions.",
+        "Keep the plan to one page.",
+      ],
     },
     {
-      minutes: 10,
+      title: "Map the task",
+      minutes: 25,
+      instructions: [
+        "Sketch the path from finding a workshop to confirming a reservation.",
+        "Add one failure and a recovery path.",
+      ],
+    },
+    {
+      title: "Sketch two screens",
+      minutes: 30,
+      instructions: [
+        "Show key information and reservation at mobile and desktop widths.",
+        "Use paper or a familiar tool.",
+      ],
+    },
+    {
+      title: "Explain your decisions",
+      minutes: 20,
+      instructions: [
+        "Annotate information priority and two accessibility considerations.",
+        "Explain one alternative to the checkbox.",
+      ],
+    },
+    {
       title: "Reflect and save",
-      text: "What felt easy, unfamiliar, or uncertain? Record your actual time. Pause whenever needed and return to unfinished work.",
+      minutes: 10,
+      instructions: [
+        "Note what felt easy, unfamiliar or uncertain.",
+        "List tools you use and whether you can access interview participants.",
+        "Save readable images or a PDF in your own files.",
+        "Add the work reference and next action in Your work.",
+      ],
     },
   ],
+  check: [],
   rubric: [
-    "Separate assumptions from evidence",
-    "Ask neutral research questions",
-    "Create a coherent flow with recovery",
-    "Explain mobile and desktop behaviour",
-    "Make hierarchy and accessibility intentional",
-    "Connect decisions to user and business goals",
+    "Assumptions separated from evidence",
+    "Five neutral research questions",
+    "Coherent flow with recovery",
+    "Explained mobile and desktop behavior",
+    "Intentional hierarchy and accessibility",
+    "Decisions linked to user and business goals",
   ],
-  deliverable:
-    "A short problem note, research plan, task flow, two annotated wireframes, and a reflection. Keep images or PDFs in your own files and add a reference below.",
+  repairs: [
+    "If a claim has no evidence, mark it as an assumption.",
+    "If a flow ends at a failure, show a recovery action.",
+    "If a decision lacks reasoning, annotate the goal it supports.",
+    "Bring unfinished work and uncertainties to review; do not add invented results.",
+  ],
+  portfolio:
+    "Diagnostic practice, not a pass/fail exam or a portfolio project. Creator review informs the next practice and any exemptions.",
+  resource: { id: "", title: "", url: "" },
+});
+export const baseline = {
+  ...baselineLesson,
+  purpose: baselineLesson.why,
+  brief: baselineLesson.teach.join(" "),
 };

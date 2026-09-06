@@ -1,4 +1,4 @@
-import type { Lesson } from "./lessons";
+import type { LegacyLesson as Lesson } from "./teaching";
 // Module 5 is the first module where the learner produces evidence from other
 // people rather than from her own screens. Two things shape the teaching. The
 // first is that Haru works alone, without a research team, a recruitment

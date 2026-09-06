@@ -1,4 +1,4 @@
-import type { Lesson } from "./lessons";
+import type { LegacyLesson as Lesson } from "./teaching";
 // Module 6 turns the research from m05 into a structure. The through-line is
 // that information architecture is judged by whether people find things, not
 // by whether the diagram is tidy, so every lesson either produces evidence

@@ -16,7 +16,7 @@ function useKeyboardOpen() {
       t instanceof Element && t.matches("textarea, input, select");
     const focusIn = (e: FocusEvent) => {
       if (timer) clearTimeout(timer);
-      if (field(e.target)) setOpen(true);
+      setOpen(field(e.target));
     };
     const focusOut = () => {
       timer = setTimeout(() => setOpen(false), 100);
@@ -59,7 +59,7 @@ export function SessionTimer({
         : `${humanDuration(record.minutes)} recorded so far`;
   return (
     <div
-      className={`session-timer${running ? " is-running" : ""}${
+      className={`session-timer${hasSession ? " has-session" : ""}${running ? " is-running" : ""}${
         keyboardOpen ? " keyboard-open" : ""
       }`}
       role="group"

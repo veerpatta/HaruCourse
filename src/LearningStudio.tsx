@@ -1,70 +1,127 @@
+import { navigate as navigateHistory, useNavigation } from './navigation';
+import { canPoll, onActivityResume } from './activity';
+import { useTimer } from './useTimer';
+import { practiceTotals } from './useCourseRecords';
+import { humanDate, humanDuration, statusLabel } from './labels';
+import { SessionTimer, SessionLog, TimeAdjust, ConfidencePicker } from './SessionTimer';
+import { useEffect, useState } from "react";
 import { usePosition } from "./usePosition";
-import { navigate, useNavigation } from "./navigation";
-import { canPoll, onActivityResume } from "./activity";
 import { sections } from "../shared/position";
 import { modules } from "./modules";
-import { useEffect, useState } from "react";
-import {
-  publishedLessons as lessons,
-  moduleIdOf,
-  type Lesson,
-} from "./lessons";
-import { practiceTotals, useCourseRecords } from "./useCourseRecords";
-import { formatClock, humanDuration, sectionLabel, statusLabel } from "./labels";
-import { useTimer } from "./useTimer";
-import {
-  ConfidencePicker,
-  PracticeSteps,
-  SessionTimer,
-  TimeAdjust,
-} from "./SessionTimer";
-// `week` stays the grouping key because saved records, bookmarks and the
-// legacy documents all use it. Everything shown to the reader — the module
-// name, its number and its level — comes from src/modules.ts instead, so
-// publishing another module never needs an edit here.
-function moduleOf(lesson: Lesson) {
-  return modules.find((m) => m.id === moduleIdOf(lesson));
-}
-function moduleOfWeek(week: number) {
-  const first = lessons.find((l) => (l.week || 1) === week);
-  return first && moduleOf(first);
-}
-function moduleLabel(lesson: Lesson) {
-  const owner = moduleOf(lesson);
-  return owner ? owner.id.replace(/^m0?/, "") : String(lesson.week || 1);
-}
-function effortMinutes(lesson: Lesson) {
-  return lesson.steps.reduce((total, step) => total + step.minutes, 0);
-}
-const authoredModules = modules.filter((m) =>
-  lessons.some((l) => moduleOf(l)?.id === m.id),
-);
+import { publishedLessons as lessons, type Lesson } from "./lessons";
+import { baseline, baselineLesson } from "./course";
 import { usePractice } from "./usePractice";
-import type { User, RecordData, Feedback } from "../shared/record";
-export function LearningStudio({ user }: { user: User }) {
+import { readingSelections } from "./reading";
+import {
+  recordSchema,
+  type User,
+  type RecordData,
+  type Feedback,
+} from "../shared/record";
+export const sectionLabels = {
+  learn: "Learn",
+  "practice-plan": "Do",
+  check: "Check",
+  practice: "Your work",
+};
+export function LearningStudio({
+  user,
+  mode = "Learn",
+  target,
+  clearTarget,
+}: {
+  user: User;
+  mode?: string;
+  target?: { id: string; section: string };
+  clearTarget: () => void;
+}) {
   const bookmark = usePosition(user.id);
-  const [section, setSection] = useState("learn");
-  // Which lesson is open is history-backed so Back leaves the reader; the
-  // section within a lesson deliberately is not, or leaving one lesson would
-  // take four Back presses.
-  const { lesson: selected } = useNavigation();
-  const [week, setWeek] = useState(1);
-  const weeks = [...new Set(lessons.map((l) => l.week || 1))];
-  function open(id: string, target = "learn") {
-    const l = lessons.find((l) => l.id === id);
-    if (l) {
-      setWeek(l.week || 1);
-      const safe = sections.includes(target as (typeof sections)[number])
-        ? target
-        : "learn";
-      setSection(safe);
-      bookmark.remember(id, safe);
-      navigate({ lesson: id });
-      window.scrollTo(0, 0);
+  const {lesson: selected} = useNavigation();
+  const [section, setSection] = useState(bookmark.position?.lessonId === selected ? bookmark.position.sectionId : target?.section || "learn");
+  const [browsedWeek, setWeek] = useState<number | null>(null);
+  const week =
+    browsedWeek ??
+    lessons.find((l) => l.id === bookmark.position?.lessonId)?.week ??
+    1;
+  const [records, setRecords] = useState<
+    { lessonId: string; record: RecordData }[]
+  >([]);
+  const [error, setError] = useState("");
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    let active = true;
+    async function refresh() {
+      let saved: { lessonId: string; record: RecordData }[] = [];
+      try {
+        const r = await fetch("/api/course-records", { cache: "no-store" });
+        if (!r.ok) throw Error();
+        saved = (await r.json()).records;
+        if (active) setError("");
+      } catch {
+        if (active)
+          setError(
+            user.role === "creator"
+              ? "Reconnect to load Haru’s saved work."
+              : "Cloud list unavailable. Showing saved work on this device.",
+          );
+      }
+      // Include pending/offline drafts without replacing newer cloud summaries with clean caches.
+      if (user.role !== "creator")
+        for (const l of [baseline, ...lessons]) {
+          const key =
+            l.id === baseline.id
+              ? `harucourse:baseline:v1:${user.id}`
+              : `harucourse:lesson:${user.id}:${l.id}`;
+          try {
+            const raw =
+              localStorage.getItem(key) ||
+              (user.id === "haru" && l.id === baseline.id
+                ? localStorage.getItem("harucourse:baseline:v1")
+                : null);
+            const parsed = recordSchema.safeParse(JSON.parse(raw || "null"));
+            const pending = JSON.parse(
+              localStorage.getItem(key + ":sync") || "null",
+            )?.dirty;
+            if (
+              parsed.success &&
+              (pending || !saved.some((r) => r.lessonId === l.id))
+            )
+              saved = [
+                ...saved.filter((r) => r.lessonId !== l.id),
+                { lessonId: l.id, record: parsed.data },
+              ];
+          } catch {
+            /* Keep cloud summaries when device data cannot be read. */
+          }
+        }
+      if (active) {
+        setRecords(saved);
+        setLoaded(true);
+      }
     }
+    void refresh();
+    const timer = setInterval(() => {if(canPoll()) void refresh()}, 5000);
+    const resume = onActivityResume(() => void refresh());
+    return () => {
+      active = false;
+      clearInterval(timer);
+      resume();
+    };
+  }, [user.id, user.role]);
+  function open(id: string, targetSection = "learn") {
+    if (![baseline, ...lessons].some((l) => l.id === id)) return;
+    const safe = sections.includes(targetSection as (typeof sections)[number])
+      ? targetSection
+      : "learn";
+    setSection(safe);
+    navigateHistory({lesson:id,section:safe});
+    if (id !== baseline.id) bookmark.remember(id, safe);
+    window.scrollTo(0, 0);
   }
-  const { records, error } = useCourseRecords(user);
-  const item = lessons.find((l) => l.id === selected);
+  const item =
+    selected === baseline.id
+      ? baselineLesson
+      : lessons.find((l) => l.id === selected);
   if (item)
     return (
       <LessonReader
@@ -73,13 +130,18 @@ export function LearningStudio({ user }: { user: User }) {
         section={section}
         remember={bookmark.remember}
         user={user}
-        back={() => navigate({ lesson: null })}
-        next={lessons[lessons.findIndex((l) => l.id === item.id) + 1]}
+        back={() => {
+          navigateHistory({lesson:null});
+          clearTarget();
+        }}
+        next={
+          item.id === baseline.id
+            ? lessons[0]
+            : lessons[lessons.findIndex((l) => l.id === item.id) + 1]
+        }
         open={open}
       />
     );
-  const weekLessons = lessons.filter((l) => (l.week || 1) === week);
-  const totals = practiceTotals(records);
   const recent = records
     .filter(
       (r) =>
@@ -92,107 +154,122 @@ export function LearningStudio({ user }: { user: User }) {
   const resume =
     lessons.find((l) => l.id === bookmark.position?.lessonId) ||
     lessons.find((l) => l.id === recent?.lessonId) ||
-    lessons.find((l) => !l.optional);
+    lessons.find((l) => !l.optional)!;
+  if (mode === "My work")
+    return (
+      <>
+        <h1>My work</h1>
+          <p>Open a draft or review its feedback.</p>
+          <details className="teaching-detail">
+            <summary>Practice history · {humanDuration(practiceTotals(records).minutes)}</summary>
+            <ul>{practiceTotals(records).sessions.map((s) => <li key={`${s.lessonId}:${s.startedAt}`}>{humanDate(s.startedAt)} · {lessons.find((l) => l.id === s.lessonId)?.title || "Baseline"} · {humanDuration(s.minutes)}</li>)}</ul>
+            {!practiceTotals(records).sessions.length && <p>No sessions recorded yet.</p>}
+          </details>
+        {!loaded && <p role="status">Loading saved work…</p>}
+        {error && <p role="status">{error}</p>}
+        <div className="compact-list">
+          {[baseline, ...lessons]
+            .filter((l) =>
+              records.some(
+                (r) =>
+                  r.lessonId === l.id &&
+                  (r.record.notes ||
+                    r.record.submission ||
+                    r.record.minutes ||
+                    r.record.status !== "not-started"),
+              ),
+            )
+            .map((l) => {
+              const saved = records.find((r) => r.lessonId === l.id)!.record;
+              return (
+                <button
+                  className="lesson-row"
+                  key={l.id}
+                  onClick={() => open(l.id, "practice")}
+                >
+                  <strong>{l.title}</strong>
+                  <span>{statusLabel(saved.status)} →</span>
+                </button>
+              );
+            })}
+        </div>
+        {loaded &&
+          !records.some(
+            (r) =>
+              r.record.notes ||
+              r.record.submission ||
+              r.record.minutes ||
+              r.record.status !== "not-started",
+          ) && <p>No saved work yet. Open a lesson to begin.</p>}
+      </>
+    );
   return (
     <>
-      <span className="eyebrow">
-        LEVEL {moduleOfWeek(week)?.level ?? 1} · MODULE{" "}
-        {moduleOfWeek(week)?.id.replace(/^m0?/, "") ?? week}
-      </span>
-      <h1>Your next step in design.</h1>
-      <p className="intro">
-        Learn at your own pace. Two hours is a suggested session, with no daily
-        requirement or completion deadline. Pause and return whenever you need.
+      <span className="eyebrow">YOUR COURSE</span>
+      <h1>Learn</h1>
+      <section className="feature-card">
+        <span className="pill">YOUR NEXT STEP</span>
+        <h2>{resume.title}</h2>
+        <button
+          className="light-button"
+          onClick={() =>
+            open(
+              resume.id,
+              bookmark.position?.lessonId === resume.id
+                ? bookmark.position.sectionId
+                : "learn",
+            )
+          }
+        >
+          Continue learning →
+        </button>
+      </section>
+      <p className="save-status" role="status">
+        {bookmark.status}
       </p>
-      {resume && (
-        <section className="card continue-card">
-          <span className="eyebrow">
-            {bookmark.position
-              ? "PICK UP WHERE YOU LEFT OFF"
-              : recent
-                ? "RETURN TO YOUR PRACTICE"
-                : "START HERE"}
-          </span>
-          <h2>{resume.title}</h2>
-          <p>
-            Module {moduleLabel(resume)} · Lesson {resume.day} · about{" "}
-            {humanDuration(effortMinutes(resume))}. Your saved place, not a
-            measure of how far you have come.
-          </p>
-          <button
-            className="primary"
-            onClick={() =>
-              open(
-                resume.id,
-                bookmark.position?.lessonId === resume.id
-                  ? bookmark.position.sectionId
-                  : "learn",
-              )
-            }
-          >
-            Continue learning →
-          </button>
-        </section>
-      )}
-      <div className="actions" aria-label="Choose a module">
-        {weeks.map((w) => (
-          <button
-            className={w === week ? "primary" : "secondary"}
-            aria-pressed={w === week}
-            key={w}
-            onClick={() => setWeek(w)}
-          >
-            {moduleOfWeek(w)?.title ?? `Module ${w}`}
-          </button>
-        ))}
-      </div>
-      <div className="notice">
-        {humanDuration(totals.minutes)} of practice recorded across the course
-        {totals.started
-          ? ` · ${totals.started} lesson${totals.started === 1 ? "" : "s"} in progress`
-          : ""}
-        {totals.ready
-          ? ` · ${totals.ready} ready for review`
-          : ""}
-      </div>
-      {bookmark.status && <p role="status">{bookmark.status}</p>}
       {error && <p role="status">{error}</p>}
-      <div className="lesson-list">
-        {weekLessons.map((l) => {
-          const saved = records.find((r) => r.lessonId === l.id)?.record;
-          return (
+      <label htmlFor="module-choice">Browse a module</label>
+      <select
+        id="module-choice"
+        value={week}
+        onChange={(e) => setWeek(Number(e.target.value))}
+      >
+        {modules
+          .filter((m) => lessons.some(l => (l.module || `m0${l.week || 1}`) === m.id))
+          .map((m, i) => (
+            <option value={Number(m.id.slice(1))} key={m.id}>
+              {m.title}
+            </option>
+          ))}
+      </select>
+      <div className="compact-list">
+        {lessons
+          .filter((l) => (l.week || 1) === week)
+          .map((l) => (
             <button
-              className="card lesson-choice"
+              className="lesson-row"
               key={l.id}
               onClick={() => open(l.id)}
             >
-              <span className="eyebrow">
-                LESSON {l.day} · {l.optional ? "OPTIONAL" : "CORE"} · ABOUT{" "}
-                {humanDuration(effortMinutes(l)).toUpperCase()}
-              </span>
-              <h2>{l.title}</h2>
-              <p>{l.why}</p>
               <span>
-                {saved && saved.status !== "not-started"
-                  ? `${humanDuration(saved.minutes)} practised · ${statusLabel(saved.status)}`
-                  : "Start when you're ready"}{" "}
-                →
+                Lesson {l.day}
+                {l.optional ? " · Optional" : ""}
               </span>
+              <strong>{l.title}</strong>
+              <span aria-hidden="true">→</span>
             </button>
-          );
-        })}
+          ))}
       </div>
-      <p className="notice">
-        {authoredModules.length} modules ({lessons.length} lessons) are
-        published and ready to study. The remaining{" "}
-        {modules.filter((m) => m.status === "planned").length} modules of the
-        620-hour program are still being authored; the level map is the roadmap,
-        not a claim of complete course content.
+      <button className="text-button" onClick={() => open(baseline.id)}>
+        Open starting-point diagnostic →
+      </button>
+      <p className="muted">
+        Study at your own pace. Later modules are on the Course map.
       </p>
     </>
   );
 }
-function LessonReader({
+export function LessonReader({
   lesson,
   section,
   remember,
@@ -209,41 +286,29 @@ function LessonReader({
   next?: Lesson;
   open: (id: string) => void;
 }) {
+  const [activeSection, setActiveSection] = useState(sections.includes(section as typeof sections[number]) ? section : "learn");
+  useEffect(() => {if(lesson.id !== "baseline-v1") remember(lesson.id, activeSection)}, [lesson.id]);
+  function go(id: string) {
+    setActiveSection(id);
+    if (lesson.id !== "baseline-v1") remember(lesson.id, id);
+  }
   useEffect(() => {
-    (
-      document.getElementById(section) || document.getElementById("learn")
-    )?.scrollIntoView();
-    const observe = () => {
-      const current = [...sections]
-        .reverse()
-        .find(
-          (id) =>
-            (document.getElementById(id)?.getBoundingClientRect().top ??
-              Infinity) <= 180,
-        );
-      if (current) remember(lesson.id, current);
-    };
-    window.addEventListener("scroll", observe, { passive: true });
-    return () => window.removeEventListener("scroll", observe);
-  }, [lesson.id, section]);
+    document.getElementById(activeSection)?.focus();
+    window.scrollTo(0, 0);
+  }, [activeSection]);
   const practice = usePractice(
     user,
     lesson.id,
-    `harucourse:lesson:${user.id}:${lesson.id}`,
+    lesson.id === "baseline-v1"
+      ? `harucourse:baseline:v1:${user.id}`
+      : `harucourse:lesson:${user.id}:${lesson.id}`,
   );
   const { record, setRecord, status, conflict, resolve } = practice;
-  // Declared after usePractice so its unmount fold runs while the practice
-  // hook can still persist and flush it.
-  const timer = useTimer({
-    storageKey: `harucourse:timer:${user.id}:${lesson.id}`,
-    enabled: user.role === "learner",
-    active: true,
-    setRecord,
-  });
-  const learner = user.role === "learner";
+  const timer = useTimer({storageKey:`harucourse:timer:${user.id}:${lesson.id}`,enabled:user.role === "learner",active:true,setRecord});
   const [feedback, setFeedback] = useState<Feedback[]>([]),
     [review, setReview] = useState(""),
     [message, setMessage] = useState("");
+  const [feedbackError, setFeedbackError] = useState("");
   const endpoint = "/api/feedback?lessonId=" + lesson.id;
   useEffect(() => {
     let active = true;
@@ -251,167 +316,178 @@ function LessonReader({
       fetch(endpoint, { cache: "no-store" })
         .then((r) => (r.ok ? r.json() : Promise.reject()))
         .then((v) => {
-          if (active) setFeedback(v.feedback);
+          if (active) {
+            setFeedback(v.feedback);
+            setFeedbackError("");
+          }
         })
-        .catch(() => {});
+        .catch(() => {
+          if (active)
+            setFeedbackError(
+              "Feedback unavailable. Reconnect to load the latest review.",
+            );
+        });
     void refresh();
-    const timer = setInterval(() => {
-      if (canPoll()) void refresh();
-    }, 10000);
-    const stopWatching = onActivityResume(() => void refresh());
+    const refreshTimer = setInterval(() => {if(canPoll()) void refresh()}, 10000);
+    const stopWatching = onActivityResume(refresh);
     return () => {
       active = false;
-      clearInterval(timer);
+      clearInterval(refreshTimer);
       stopWatching();
     };
   }, [endpoint]);
-  const readyBlocked = !record.notes.trim() || !record.submission.trim();
   return (
     <>
       <button className="text-button" onClick={back}>
         ← All lessons
       </button>
       <span className="eyebrow">
-        LEVEL {moduleOf(lesson)?.level ?? 1} · MODULE {moduleLabel(lesson)} ·
-        LESSON {lesson.day}
+        {lesson.id === "baseline-v1"
+          ? "LEVEL 0 · BASELINE"
+          : `LEVEL ${lesson.level ?? 1} · MODULE ${lesson.week || 1} · LESSON ${lesson.day}`}
         {lesson.optional ? " · OPTIONAL" : ""}
       </span>
       <h1>{lesson.title}</h1>
-      <p className="muted">
-        {lesson.bringForward
-          ? `Before you start: ${lesson.bringForward}`
-          : lesson.week === 2 && lesson.day === 1
-            ? "Before you start: bring your Product Design Foundations flow, screens, and unresolved questions."
-            : lesson.day > 1
-              ? "Before you start: bring the previous lesson’s output and reflection."
-              : "Start here; no prior lesson is required."}
-      </p>
-      {lesson.objective && (
-        <p className="muted">
-          What this lesson asks you to produce: {lesson.objective}
-        </p>
-      )}
       <p className="intro">{lesson.why}</p>
-      <p className="notice" role="status">
+      <p className="save-status" role="status">
         {user.role === "creator" ? "Haru’s saved work · " : ""}
         {status}
       </p>
-      <SessionTimer
-        timer={timer}
-        record={record}
-        role={user.role}
-        steps={lesson.steps}
-      />
+      <SessionTimer timer={timer} record={record} role={user.role} steps={lesson.steps}/>
       {conflict && (
         <section className="card">
-          <h2>Which version do you want to keep?</h2>
+          <h2>Two versions need your choice</h2>
           <p>
-            This lesson was also edited on another device or tab. Nothing here
-            has been lost.
+            Another device saved a different version. Your draft is preserved.
           </p>
           <pre className="record-preview">
-            The other version’s notes:{" "}
-            {conflict.record?.notes || "(no notes yet)"}
+            Cloud: {conflict.record?.notes || "Empty record"}
           </pre>
           <button className="secondary" onClick={() => resolve(true)}>
-            Use the other version (a copy of this one is downloaded first)
+            Back up my draft and use cloud
           </button>
           <button className="secondary" onClick={() => resolve(false)}>
-            Keep this device’s version
+            Keep my draft and save it
           </button>
         </section>
       )}
-      <nav className="section-nav" aria-label="Lesson sections">
-        {sections.map((id) => (
-          <a
+      <nav className="section-tabs" aria-label="Lesson sections">
+        {sections.map((id, i) => (
+          <button
             key={id}
-            className="section-link"
-            href={`#${id}`}
-            onClick={() => remember(lesson.id, id)}
+            aria-current={activeSection === id ? "step" : undefined}
+            className={activeSection === id ? "primary" : "secondary"}
+            onClick={() => go(id)}
           >
-            {sectionLabel(id)}
-          </a>
+            {i + 1}. {sectionLabels[id]}
+          </button>
         ))}
       </nav>
-      <article id="learn" className="card lesson-reading">
+      <article
+        id="learn"
+        tabIndex={-1}
+        hidden={activeSection !== "learn"}
+        className="lesson-reading"
+      >
         <h2>Learn</h2>
-        {lesson.teach.map((t) => (
-          <p key={t}>{t}</p>
-        ))}
-        {lesson.misconception && (
-          <>
-            <h3>A common misconception</h3>
-            <p>{lesson.misconception}</p>
-          </>
+        <p>
+          <strong>Bring:</strong> {lesson.prerequisite}
+        </p>
+        <ul>
+          {lesson.teach.map((t) => (
+            <li key={t}>{t}</li>
+          ))}
+        </ul>
+        {lesson.misconception && <details><summary>Common misconception</summary><p>{lesson.misconception}</p></details>}
+        {lesson.example && (
+          <details>
+            <summary>Worked example</summary>
+            <p>{lesson.example}</p>
+          </details>
         )}
-        <h3>Worked example</h3>
-        <p>{lesson.example}</p>
-        {lesson.resources ? (
-          <>
-            <h3>Assigned reading</h3>
+        {lesson.explanation.length > 0 && (
+          <details>
+            <summary>Why this works</summary>
             <ul>
-              {lesson.resources.map((r) => (
-                <li key={r.id}>
-                  <a href={r.url} target="_blank" rel="noreferrer">
-                    {r.id}: {r.title} ↗
-                  </a>
-                  <br />
-                  <small>
-                    {r.section} {r.purpose} About {r.minutes} min. {r.limits} If
-                    it is unavailable, use {r.fallbackId} from the resource
-                    library.
-                  </small>
-                </li>
+              {lesson.explanation.map((t) => (
+                <li key={t}>{t}</li>
               ))}
             </ul>
-          </>
-        ) : (
-          <p>
-            <a href={lesson.resource.url} target="_blank" rel="noreferrer">
-              Read: {lesson.resource.title} ↗
-            </a>
-          </p>
+          </details>
         )}
-        <small>
-          Reference checked 6 September 2026. Split the reading across sessions
-          as needed.
-        </small>
+        {lesson.resources?.length ? <details><summary>Assigned reading and free alternatives</summary>{lesson.resources.map(r=><article key={r.id}><h3><a href={r.url} target="_blank" rel="noreferrer">{r.title}</a></h3><p>{r.section}</p><p>{r.purpose}</p><p>{r.limits} Fallback: {r.fallbackId}. Optional reading: {r.minutes} minutes.</p></article>)}</details> : lesson.resource.url && (
+          <details>
+            <summary>Reading and free alternative</summary>
+            <p>
+              <a href={lesson.resource.url} target="_blank" rel="noreferrer">
+                {lesson.resource.title} ↗
+              </a>
+            </p>
+            <p>Read: {readingSelections[lesson.resource.id]?.selection}.</p>
+            <p className="muted">
+              About {readingSelections[lesson.resource.id]?.minutes} minutes, at
+              your pace. Public reading checked 6 September 2026; no account,
+              card or trial.
+            </p>
+            <p>
+              If unavailable, use this lesson’s concepts and worked example to
+              complete the local exercise. Paper and local notes are sufficient;
+              no paid tool is required.
+            </p>
+          </details>
+        )}
       </article>
-      <section id="practice-plan" className="card lesson-reading">
-        <h2>Your practice plan</h2>
-        {learner && (
-          <p className="muted">
-            Tap a step while the timer runs to record time against it. Steps
-            are guidance, not a checklist — nothing here marks a step done.
-          </p>
-        )}
-        <PracticeSteps
-          steps={lesson.steps}
-          current={timer.snapshot.step}
-          canPick={learner}
-          onPick={timer.markStep}
-          sessions={record.sessions}
-        />
+      <section
+        id="practice-plan"
+        tabIndex={-1}
+        hidden={activeSection !== "practice-plan"}
+        className="lesson-reading"
+      >
+        <h2>Do</h2>
+        <h3>Make these</h3>
+        <ul>
+          {lesson.outputs.map((t) => (
+            <li key={t}>{t}</li>
+          ))}
+        </ul>
+        {lesson.freeToolPath && <p>{lesson.freeToolPath}</p>}
+        <ol className="instruction-steps">
+          {lesson.steps.map((s, i) => (
+            <li key={s.title}>
+              <h3>{s.title}</h3>
+              {user.role === "learner" && <button className="text-button" aria-pressed={timer.snapshot.step === i+1} onClick={()=>timer.markStep(timer.snapshot.step === i+1 ? null : i+1)}>Track this step</button>}
+              <ul>
+                {s.instructions.map((t) => (
+                  <li key={t}>{t}</li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ol>
         <p className="muted">
-          About {humanDuration(effortMinutes(lesson))} in total, across as many
-          sessions as you need.
-          {record.minutes
-            ? ` ${humanDuration(record.minutes)} recorded so far.`
-            : ""}
+          Pause after any step. Save the artifact and your next action in Your
+          work.
         </p>
-        <h3>Expected output</h3>
-        <p>{lesson.deliverable}</p>
-        {lesson.freeToolPath && (
-          <>
-            <h3>Free tool path</h3>
-            <p>{lesson.freeToolPath}</p>
-          </>
-        )}
-        <h3>Portfolio connection</h3>
-        <p>{lesson.portfolio}</p>
+        <details>
+          <summary>Optional effort and portfolio context</summary>
+          <ul>
+            {lesson.steps.map((s) => (
+              <li key={s.title}>
+                {s.title}: about {s.minutes} minutes
+              </li>
+            ))}
+          </ul>
+          <p>No deadline. Split the work across sessions.</p>
+          <p>{lesson.portfolio}</p>
+        </details>
       </section>
-      <section id="check" className="card lesson-reading">
-        <h2>Check your understanding</h2>
+      <section
+        id="check"
+        tabIndex={-1}
+        hidden={activeSection !== "check"}
+        className="lesson-reading"
+      >
+        <h2>Check</h2>
         {lesson.check.map((q) => (
           <details key={q.question}>
             <summary>{q.question}</summary>
@@ -419,58 +495,45 @@ function LessonReader({
           </details>
         ))}
         <h3>Review criteria</h3>
-        {lesson.criteria ? (
-          <>
-            {lesson.criteria.map((c) => (
-              <details key={c.criterion}>
-                <summary>{c.criterion}</summary>
-                <p>Adequate evidence: {c.evidence}</p>
-                <ul>
-                  {c.levels.map((text, score) => (
-                    <li key={score}>
-                      <strong>{score}</strong> — {text}
-                    </li>
-                  ))}
-                </ul>
-                <p>
-                  <strong>If below 2:</strong> {c.remediation}
-                </p>
-                <p>
-                  <strong>Show at recheck:</strong> {c.recheck}
-                </p>
-              </details>
-            ))}
-            <p>
-              Scoring is a review judgement about work you submit. Nothing here
-              computes, stores or displays a score, and reading these criteria
-              does not record progress against them.
-            </p>
-          </>
-        ) : (
+        <ul>
+          {lesson.rubric.map((r) => (
+            <li key={r}>{r}</li>
+          ))}
+        </ul>
+        {lesson.criteria?.map(c=><details key={c.criterion}><summary>{c.criterion}: evidence and repair</summary><p>{c.evidence}</p><ul>{c.levels.map((t,i)=><li key={i}>{i}: {t}</li>)}</ul><p>{c.remediation}</p><p>Recheck: {c.recheck}</p></details>)}
+        <details>
+          <summary>Need to revise?</summary>
           <ul>
-            {lesson.rubric.map((r) => (
+            {lesson.repairs.map((r) => (
               <li key={r}>{r}</li>
             ))}
           </ul>
-        )}
-        <p>
-          Self-check each criterion: 0 absent, 1 needs help, 2 independently
-          adequate, 3 strong trade-off reasoning.
-        </p>
+          <p>
+            Show the revised artifact and the criterion it addresses at recheck.
+          </p>
+        </details>
+        <details>
+          <summary>How review works</summary>
+          <p>
+            0 absent · 1 needs support · 2 independently adequate · 3 strong
+            reasoning and trade-offs.
+          </p>
+          <p>
+            Ready for review is a request state, not assessed completion. Formal
+            scored assessment is not implemented.
+          </p>
+        </details>
       </section>
-      <section id="practice" className="card lesson-reading">
+      <section
+        id="practice"
+        tabIndex={-1}
+        hidden={activeSection !== "practice"}
+        className="lesson-reading"
+      >
         <h2>
-          {user.role === "creator"
-            ? "Review Haru’s practice"
-            : "Your practice · saves automatically"}
-          {learner && timer.snapshot.running && (
-            <span className="inline-clock">
-              {" "}
-              · {formatClock(timer.snapshot.elapsedMs)} running
-            </span>
-          )}
+          {user.role === "creator" ? "Review Haru’s practice" : "Your work"}
         </h2>
-        <label htmlFor="lesson-notes">Reflection and assignment notes</label>
+        <label htmlFor="lesson-notes">Notes and next action</label>
         <textarea
           id="lesson-notes"
           rows={8}
@@ -485,9 +548,7 @@ function LessonReader({
             }))
           }
         />
-        <label htmlFor="lesson-reference">
-          Link to your work (Figma, Drive, or a file name)
-        </label>
+        <label htmlFor="lesson-reference">Work reference or share link</label>
         <input
           id="lesson-reference"
           value={record.submission}
@@ -498,26 +559,16 @@ function LessonReader({
           }
         />
         <small>
-          Files stay where you keep them. This saves the link or name, not the
-          file — share screenshots or PDFs with your reviewer separately.
+          Files are not uploaded by entering a reference. Share screenshots or
+          PDFs with your reviewer separately.
         </small>
-        {learner && (
+        <details><summary>Time, sessions and confidence</summary>
+          <SessionLog sessions={record.sessions || []} steps={lesson.steps}/>
+          {user.role === 'learner' && <><TimeAdjust minutes={record.minutes} onAdd={timer.addMinutes} onSetTotal={timer.setTotal}/><ConfidencePicker value={record.confidence} onChange={timer.setConfidence}/></>}
+        </details>
+        {user.role === "learner" && (
           <>
-            <TimeAdjust
-              minutes={record.minutes}
-              onAdd={timer.addMinutes}
-              onSetTotal={timer.setTotal}
-            />
-            <h3>How confident do you feel about this work?</h3>
-            <ConfidencePicker
-              value={record.confidence}
-              onChange={timer.setConfidence}
-            />
-            <small>
-              A note to yourself, not a grade. Your reviewer sees it alongside
-              your work.
-            </small>
-            <label htmlFor="lesson-status">Where is this lesson up to?</label>
+            <label htmlFor="lesson-status">Practice status</label>
             <select
               id="lesson-status"
               value={record.status}
@@ -529,25 +580,14 @@ function LessonReader({
               }
             >
               <option value="not-started">Not started</option>
-              <option value="practicing">In progress</option>
-              <option value="ready-for-review" disabled={readyBlocked}>
+              <option value="practicing">Practicing</option>
+              <option
+                value="ready-for-review"
+                disabled={!record.notes.trim() || !record.submission.trim()}
+              >
                 Ready for review
               </option>
             </select>
-            {readyBlocked && (
-              <small>
-                Add notes and a link to your work to mark it ready for review.
-              </small>
-            )}
-            <details>
-              <summary>How reviews work</summary>
-              <p>
-                Marking work ready for review tells your reviewer it is worth a
-                look. It does not grade it, send it anywhere, or mark the lesson
-                as finished. Your reviewer reads your notes and your linked work
-                against the criteria above, then writes feedback here.
-              </p>
-            </details>
           </>
         )}
         {user.role === "creator" && (
@@ -597,6 +637,7 @@ function LessonReader({
         )}
         {message && <p role="status">{message}</p>}
         <h3>Feedback</h3>
+        {feedbackError && <p role="status">{feedbackError}</p>}
         {feedback.length ? (
           feedback.map((f) => (
             <article key={f.id}>
@@ -611,20 +652,57 @@ function LessonReader({
           <p>No feedback yet.</p>
         )}
       </section>
-      {next && (
-        <section className="card continue-card">
-          <h2>Next: {next.title}</h2>
-          <p>
-            Module {moduleLabel(next)} · Lesson {next.day}
-            {next.optional ? " · Optional" : ""}. Moving ahead does not mark
-            this lesson complete.
-          </p>
-          <button className="secondary" onClick={() => open(next.id)}>
-            Open next lesson →
+      <div className="timer-clearance" aria-hidden="true"/>
+      <div className="reader-actions">
+        <button
+          className="secondary"
+          onClick={() =>
+            activeSection === "learn"
+              ? back()
+              : go(
+                  sections[
+                    sections.indexOf(
+                      activeSection as (typeof sections)[number],
+                    ) - 1
+                  ],
+                )
+          }
+        >
+          ← Back
+        </button>
+        {activeSection !== "practice" ? (
+          <button
+            className="primary"
+            onClick={() =>
+              go(
+                sections[
+                  sections.indexOf(activeSection as (typeof sections)[number]) +
+                    1
+                ],
+              )
+            }
+          >
+            Next:{" "}
+            {
+              sectionLabels[
+                sections[
+                  sections.indexOf(activeSection as (typeof sections)[number]) +
+                    1
+                ]
+              ]
+            }{" "}
+            →
           </button>
-        </section>
-      )}
-      {learner && <div className="timer-clearance" aria-hidden />}
+        ) : next ? (
+          <button className="secondary" onClick={() => open(next.id)}>
+            Next lesson →
+          </button>
+        ) : (
+          <button className="secondary" onClick={back}>
+            All lessons
+          </button>
+        )}
+      </div>
     </>
   );
 }

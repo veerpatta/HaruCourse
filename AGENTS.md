@@ -1,3 +1,7 @@
+## Latest design instruction — 6 September 2026
+
+Keep the established cream/green/serif style. Use concise teaching and a guided Learn → Do → Check → Your work reader for existing and future lessons. Show exact actions and expected outputs; put deeper explanation in optional details. Main navigation is Learn, Course map and My work; Account holds utilities. Follow docs/COURSE-AUTHORING.md for the shared content model and generated baseline/lesson documents. Preserve original vision, IDs, records and bookmarks.
+
 # HaruCourse agent instructions
 
 Before authoring or changing behavior, read in order:

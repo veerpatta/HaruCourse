@@ -14,7 +14,6 @@ import {
   type CloudRecord,
   type Feedback,
 } from "../shared/record";
-import { humanDuration, statusLabel } from "./labels";
 
 async function api<T>(
   path: string,
@@ -46,7 +45,9 @@ export function CloudPanel({
   onLoad,
   initialUser = null,
   onSession,
+  accountOnly = false,
 }: {
+  accountOnly?: boolean;
   initialUser?: User | null;
   onSession: (user: User | null) => void;
   record: RecordData;
@@ -76,6 +77,11 @@ export function CloudPanel({
     }
   }
   async function refresh() {
+    if (accountOnly) {
+      const grants = await api<{ items: Connection[] }>("/api/connections");
+      setConnections(grants.items || []);
+      return;
+    }
     const [saved, reviews, grants] = await Promise.all([
       api<CloudRecord>("/api/progress"),
       api<{ feedback: Feedback[] }>("/api/feedback"),
@@ -93,12 +99,8 @@ export function CloudPanel({
     <section className="card cloud-panel">
       <div className="section-heading">
         <div>
-          <span className="eyebrow">YOUR CONNECTED WORKSPACE</span>
           <h2>
-            <Cloud size={21} />{" "}
-            {user
-              ? `${user.name} · ${user.role === "creator" ? "Creator review" : "Cloud progress"}`
-              : "Sign in to your course."}
+            <Cloud size={21} /> {user ? user.name : "Sign in to your course."}
           </h2>
         </div>
         {user && (
@@ -149,11 +151,7 @@ export function CloudPanel({
             });
           }}
         >
-          <p>
-            Welcome back. Sign in once on this device to continue your design
-            journey. You’ll stay signed in for 30 days, unless you sign out or
-            clear browser data.
-          </p>
+          <p>Sign in to continue your course.</p>
           <label htmlFor="course-username">Username</label>
           <input
             id="course-username"
@@ -193,40 +191,38 @@ export function CloudPanel({
               records.
             </p>
           )}
-          <p>
-            {user.role === "creator"
-              ? "Review Haru’s saved work and leave feedback against the exact version you read."
-              : "Your practice saves automatically. This shows your baseline’s review history, and any AI apps you have chosen to connect."}
-          </p>
+          {!accountOnly && (
+            <p>
+              {user.role === "creator"
+                ? "Review Haru’s saved work and leave feedback against the exact version you read."
+                : "Practice now saves automatically. This panel shows the baseline review history and your AI connections."}
+            </p>
+          )}
           <button
             className="secondary"
             disabled={busy}
             onClick={() => action(refresh)}
           >
             <RefreshCw size={15} />{" "}
-            {busy ? "Working…" : "Refresh cloud records"}
+            {busy
+              ? "Working…"
+              : accountOnly
+                ? "Refresh connections"
+                : "Refresh cloud records"}
           </button>
           {cloud && (
             <div className="cloud-grid">
               <div>
                 <h3>
                   {cloud.record
-                    ? `Saved online · version ${cloud.revision}`
-                    : "Nothing saved online yet"}
+                    ? `Cloud version ${cloud.revision}`
+                    : "No cloud record yet"}
                 </h3>
                 {cloud.record && (
                   <>
                     <p>
-                      <strong>{humanDuration(cloud.record.minutes)}</strong> ·{" "}
-                      {statusLabel(cloud.record.status)}
-                      {cloud.record.sessions?.length
-                        ? ` · ${cloud.record.sessions.length} session${
-                            cloud.record.sessions.length === 1 ? "" : "s"
-                          }`
-                        : ""}
-                      {cloud.record.confidence
-                        ? ` · confidence ${cloud.record.confidence}/5`
-                        : ""}
+                      <strong>{cloud.record.minutes} minutes</strong> ·{" "}
+                      {cloud.record.status.replaceAll("-", " ")}
                     </p>
                     <p className="record-preview">
                       {cloud.record.notes || "No reflection yet."}
@@ -298,23 +294,20 @@ export function CloudPanel({
               </div>
             </div>
           )}
-          <details
-            className="connections"
-            open={user.role === "creator" || connections.length > 0}
-          >
-            <summary>
-              <ShieldCheck size={18} /> Advanced: connect an AI app
-            </summary>
+          <div className="connections">
+            <h3>
+              <ShieldCheck size={18} /> Connect an AI app
+            </h3>
             <p>
-              Optional. If you use an AI assistant that supports connections,
-              give it this address, then sign in and approve what it may read.
-              Nothing here is needed to do the course.
+              Use this MCP server address in a compatible AI app. Sign in and
+              approve the requested permissions in the browser. Model access
+              depends on your AI account.
             </p>
             <code>{location.origin}/mcp</code>
             <p className="muted">
-              A connected AI can read the brief and your work link; attach
-              actual design screenshots when needed. AI feedback cannot mark a
-              skill as mastered.
+              Your AI can read the brief and work reference; attach actual
+              design screenshots when needed. AI feedback cannot mark a skill as
+              mastered.
             </p>
             {connections.map((c) => (
               <div className="connection" key={c.id}>
@@ -339,7 +332,7 @@ export function CloudPanel({
                 </button>
               </div>
             ))}
-          </details>
+          </div>
         </>
       )}
     </section>

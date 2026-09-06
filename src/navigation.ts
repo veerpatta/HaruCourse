@@ -9,9 +9,10 @@ export type NavState = {
   baseline: boolean;
   // A course lesson id opened inside the learning studio.
   lesson: string | null;
+  section?: string;
 };
 
-const initial: NavState = { tab: "Lessons", baseline: false, lesson: null };
+const initial: NavState = { tab: "Learn", baseline: false, lesson: null };
 const marker = "harucourse:nav";
 
 type Entry = NavState & { [marker]: true; scrollY: number };
@@ -21,7 +22,8 @@ function read(state: unknown): NavState {
   const value = state as Record<string, unknown>;
   if (value[marker] !== true) return initial;
   return {
-    tab: typeof value.tab === "string" ? value.tab : initial.tab,
+    tab: typeof value.tab === "string" ? ({Lessons:"Learn", Dashboard:"Learn", "My practice":"My work", Progress:"My work"} as Record<string,string>)[value.tab] || value.tab : initial.tab,
+    section: typeof value.section === "string" ? value.section : "learn",
     baseline: value.baseline === true,
     lesson: typeof value.lesson === "string" ? value.lesson : null,
   };
@@ -38,7 +40,7 @@ function entry(state: NavState, scrollY: number): Entry {
 }
 
 function same(a: NavState, b: NavState) {
-  return a.tab === b.tab && a.baseline === b.baseline && a.lesson === b.lesson;
+  return a.tab === b.tab && a.baseline === b.baseline && a.lesson === b.lesson && a.section === b.section;
 }
 
 let current: NavState =

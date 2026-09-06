@@ -1,0 +1,88 @@
+export type Criterion = {
+  criterion: string;
+  evidence: string;
+  levels: [string, string, string, string];
+  remediation: string;
+  recheck: string;
+};
+export type AssignedResource = {
+  id: string;
+  title: string;
+  url: string;
+  section: string;
+  purpose: string;
+  minutes: string;
+  limits: string;
+  fallbackId: string;
+};
+export type LegacyLesson = {
+  id: string;
+  day: number;
+  week?: number;
+  title: string;
+  optional?: boolean;
+  why: string;
+  teach: string[];
+  example: string;
+  steps: { minutes: number; title: string; text: string }[];
+  deliverable: string;
+  check: { question: string; answer: string }[];
+  rubric: string[];
+  portfolio: string;
+  resource: { id: string; title: string; url: string };
+  // Everything below arrived with the m03/m04 lesson contract. The earlier
+  // lessons omit these fields, so every reader must tolerate their absence
+  // rather than assume the richer shape.
+  module?: string;
+  level?: number;
+  areas?: number[];
+  objective?: string;
+  bringForward?: string;
+  misconception?: string;
+  freeToolPath?: string;
+  resources?: AssignedResource[];
+  criteria?: Criterion[];
+};
+export type Lesson = Omit<LegacyLesson, "steps"> & {
+  id: string;
+  day: number;
+  week?: number;
+  title: string;
+  optional?: boolean;
+  why: string;
+  teach: string[];
+  explanation: string[];
+  example: string;
+  prerequisite: string;
+  outputs: string[];
+  repairs: string[];
+  steps: {
+    minutes: number;
+    title: string;
+    instructions: string[];
+    text: string;
+  }[];
+  deliverable: string;
+  check: { question: string; answer: string }[];
+  rubric: string[];
+  portfolio: string;
+  resource: { id: string; title: string; url: string };
+};
+export function withLegacyText(
+  l: Omit<Lesson, "deliverable" | "steps"> & {
+    steps: Omit<Lesson["steps"][number], "text">[];
+  },
+): Lesson {
+  return {
+    ...l,
+    deliverable: l.outputs.join("; "),
+    steps: l.steps.map((s) => ({ ...s, text: s.instructions.join(" ") })),
+  };
+}
+
+export function adaptPublished(l: LegacyLesson): Lesson {
+  return {...l, prerequisite: l.bringForward || 'Bring the preceding lesson output.',
+    outputs: [l.deliverable], repairs: (l.criteria || []).map(c => c.remediation),
+    explanation: l.teach, teach: [l.objective || l.why],
+    steps: l.steps.map(s => ({...s, instructions: [s.text]}))};
+}

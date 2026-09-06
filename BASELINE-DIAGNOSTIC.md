@@ -1,32 +1,125 @@
-> Self-paced refinement (6 September 2026): all times below are optional effort guides. Split this diagnostic across sessions; no deadline or hard stop applies.
+# Starting-point diagnostic
 
-# Baseline diagnostic — 120 minutes
+Generated from src/course.ts. No preparation, deadline or pass/fail grade.
 
-Purpose: identify your starting point and avoid unnecessary repetition. This is not a pass/fail exam or a portfolio assignment. No preparation is required. Use paper or a familiar tool; unfamiliar Figma controls should not obscure your design reasoning.
+## Baseline: Find your starting point
 
-## Brief
+Stable ID: baseline-v1. Core.
 
-A community workshop website lets people find an event and reserve a place. People sometimes arrive without understanding what materials they need to bring. The organizer proposes adding a mandatory checkbox saying “I have read the instructions.”
+Show how you frame, investigate and explain a design problem.
 
-You have no research or analytics yet. Treat the problem statement as a stakeholder report, not a verified explanation. Do not invent findings.
+### Learn
 
-## Session
+Bring: No preparation. Use paper or a familiar tool and a blank note.
 
-| Time | Task | Output |
-|---|---|---|
-| 0–15 min | Describe the user goal, organizer goal, what is known, and what remains assumed | Short problem note with labelled assumptions |
-| 15–35 min | Plan how to investigate; draft five neutral questions and identify who to speak with | Research plan of at most one page |
-| 35–60 min | Sketch the path from finding a workshop to confirming a reservation; include one failure and recovery | Task flow |
-| 60–90 min | Sketch the key information/reservation screen on mobile and desktop | Two annotated wireframes |
-| 90–110 min | Explain information priority, two accessibility considerations, and one alternative to the proposed checkbox | Decision notes |
-| 110–120 min | Record what felt easy, unfamiliar, or uncertain; report actual time | Reflection |
+- Context: a workshop website lets people find an event and reserve a place.
+- Stakeholder report: some attendees arrive without knowing what materials to bring.
+- Proposed response: a mandatory “I have read the instructions” checkbox.
+- Evidence available: no research or analytics. Treat the report as unverified; do not invent findings.
 
-Save notes and sketches in a new `submissions/baseline/` folder when you do the exercise. Export sketches as readable images or a PDF if needed. Stop at two hours even if incomplete; unfinished work also helps calibrate workload.
 
-## Review criteria
 
-The mentor will look for separation of assumptions and evidence, neutral research questions, coherent task flow, recovery, responsive reasoning, clear hierarchy, accessibility awareness, and explanations tied to goals. Self-rate each 0–3 using the blueprint rubric. These ratings are provisional until the work is reviewed.
 
-Also record which tools you currently use, whether you can access people for interviews, and any existing work you want assessed. Private client work is unnecessary; a redacted description can establish context.
 
-Result: a personalized skills map, any foundation exemptions, and targeted additions to the first month. No completion is recorded until you submit the work.
+
+
+### Do
+
+Make these:
+
+- Problem note with labelled assumptions
+- One-page research plan with five neutral questions
+- Task flow with one failure and recovery
+- Two annotated wireframes: key information/reservation at mobile and desktop widths
+- Decision notes and reflection
+
+#### 1. Frame the problem
+
+- Write the user goal and organizer goal.
+- Separate known facts from assumptions.
+
+#### 2. Plan your investigation
+
+- Name who you would speak with.
+- Draft five neutral interview questions.
+- Keep the plan to one page.
+
+#### 3. Map the task
+
+- Sketch the path from finding a workshop to confirming a reservation.
+- Add one failure and a recovery path.
+
+#### 4. Sketch two screens
+
+- Show key information and reservation at mobile and desktop widths.
+- Use paper or a familiar tool.
+
+#### 5. Explain your decisions
+
+- Annotate information priority and two accessibility considerations.
+- Explain one alternative to the checkbox.
+
+#### 6. Reflect and save
+
+- Note what felt easy, unfamiliar or uncertain.
+- List tools you use and whether you can access interview participants.
+- Save readable images or a PDF in your own files.
+- Add the work reference and next action in Your work.
+
+Pause after any step. Save the artifact and next action in Your work.
+
+<details>
+<summary>Optional effort and portfolio context</summary>
+
+- Frame the problem: about 15 minutes
+- Plan your investigation: about 20 minutes
+- Map the task: about 25 minutes
+- Sketch two screens: about 30 minutes
+- Explain your decisions: about 20 minutes
+- Reflect and save: about 10 minutes
+
+No deadline; split work across sessions.
+
+Diagnostic practice, not a pass/fail exam or a portfolio project. Creator review informs the next practice and any exemptions.
+
+</details>
+
+### Check
+
+
+
+Review criteria:
+
+- Assumptions separated from evidence
+- Five neutral research questions
+- Coherent flow with recovery
+- Explained mobile and desktop behavior
+- Intentional hierarchy and accessibility
+- Decisions linked to user and business goals
+
+<details>
+<summary>Need to revise?</summary>
+
+- If a claim has no evidence, mark it as an assumption.
+- If a flow ends at a failure, show a recovery action.
+- If a decision lacks reasoning, annotate the goal it supports.
+- Bring unfinished work and uncertainties to review; do not add invented results.
+
+Show the revised artifact and criterion at recheck.
+
+</details>
+
+<details>
+<summary>How review works</summary>
+
+0 absent · 1 needs support · 2 independently adequate · 3 strong reasoning and trade-offs. Ready for review is not assessed completion. Formal scored assessment is not implemented.
+
+</details>
+
+### Your work
+
+- Save notes and your next action.
+- Add a work reference; this does not upload the file.
+- Record actual minutes if useful.
+- Select Ready for review only after adding notes and a work reference.
+- Read version-specific feedback and revise the artifact.

@@ -1,3 +1,11 @@
+## Minimal lesson presentation — 6 September 2026
+
+- Assigned resources remain supporting reading; in-app concepts, examples and exact actions provide the local free exercise path.
+- Show the assigned section, purpose, optional reading effort and access restrictions under Reading and free alternative. Keep essential consent and evidence rules beside the task.
+- Reopened for this revision: R01, R04, R05, R07, R27 and R28. All six returned public article content without login, card or trial; their assigned sections were inspected. This is reading access, not authenticated software QA.
+- src/reading.ts contains the named selections used by the reader and generator, referencing the catalog IDs below. If unavailable, complete the local task with the lesson concepts/example; the catalog fallback remains further reading.
+- No new paid dependency or required tool workflow was introduced. Existing candidate-tool and advanced-research gaps remain open.
+
 # Resource library
 
 Canonical researched catalog. Review date: **2026-09-06**. The entire 17-area map has a primary and an alternative; this is a researched starting path, not a claim that every advanced subtopic or tool workflow is finished. See the explicit gaps below before authoring.
