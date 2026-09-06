@@ -215,7 +215,8 @@ export const module19: Lesson[] = [
     resources: [
       {
         ...portfolioProcess,
-        section: "The five-step portfolio process and what reviewers look for.",
+        section:
+          "The five steps, and what 204 surveyed hiring professionals said they look for.",
         purpose:
           "Establishes what a portfolio is for before any of it is written.",
         minutes: "30–45",
@@ -402,7 +403,7 @@ export const module19: Lesson[] = [
     resources: [
       {
         ...portfolioProcess,
-        section: "Selecting projects and deciding what each one shows.",
+        section: "Step 1: taking inventory of every project before choosing.",
         purpose: "Guides the audit toward what a portfolio actually needs.",
         minutes: "30–45",
         limits:
@@ -590,7 +591,7 @@ export const module19: Lesson[] = [
     resources: [
       {
         ...portfolioProcess,
-        section: "Choosing which projects to include and what each demonstrates.",
+        section: "Step 2: choosing three to five projects as detailed case studies.",
         purpose: "Supports assigning one job per case study.",
         minutes: "30–45",
         limits:
@@ -787,7 +788,8 @@ export const module19: Lesson[] = [
       },
       {
         ...portfolioProcess,
-        section: "What a case study should contain and in what order.",
+        section:
+          "The case study contents: problem, role, how you reached the solution, effect, concepts not pursued and what you learned.",
         purpose: "Grounds the case study structure in published guidance.",
         minutes: "30–45",
         limits:
@@ -1356,7 +1358,8 @@ export const module19: Lesson[] = [
       },
       {
         ...portfolioProcess,
-        section: "How work is presented and what reviewers expect to see.",
+        section:
+          "Including sketches, whiteboards and research documentation rather than final screens alone.",
         purpose: "Grounds the choice of what to show and what to omit.",
         minutes: "30–45",
         limits:
@@ -1535,9 +1538,9 @@ export const module19: Lesson[] = [
     resources: [
       {
         ...charts,
-        section: "When a chart helps, and rules for honest axes and labelling.",
+        section: "Rules for honest axes, gridlines and direct labelling.",
         purpose:
-          "Prevents small counts being charted in ways that imply more than they show.",
+          "Sets the drawing rules for any chart made from these counts.",
         minutes: "45–60 selected",
         limits:
           "Free reading, no account; published 19 May 2022. Verified 2026-09-06. It tells you how to draw a chart honestly, not which analysis to run.",
@@ -1920,7 +1923,7 @@ export const module19: Lesson[] = [
       },
       {
         ...portfolioProcess,
-        section: "Presenting work and talking through a case study.",
+        section: "Physical artefacts and talking through your process.",
         purpose: "Connects the written case study to the spoken version.",
         minutes: "30–45",
         limits:
@@ -2289,7 +2292,7 @@ export const module19: Lesson[] = [
     resources: [
       {
         ...portfolioProcess,
-        section: "Reviewing and finishing a portfolio before sharing it.",
+        section: "Step 5: getting feedback and iterating before sharing.",
         purpose: "Frames the final check and the decision to publish.",
         minutes: "30–45",
         limits:

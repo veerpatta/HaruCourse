@@ -797,7 +797,7 @@ export const module20: Lesson[] = [
       },
       {
         ...portfolioProcess,
-        section: "What counts as portfolio evidence of a skill.",
+        section: "The case study contents that show a skill was actually exercised.",
         purpose: "Sets the standard for marking a cell evidenced.",
         minutes: "30–45",
         limits:
@@ -975,7 +975,8 @@ export const module20: Lesson[] = [
     resources: [
       {
         ...portfolioProcess,
-        section: "What evidence of a skill looks like to a reviewer.",
+        section:
+          "What 204 surveyed hiring professionals said they look for in evidence.",
         purpose: "Sets the bar the new artefact has to clear.",
         minutes: "30–45",
         limits:
@@ -1175,7 +1176,8 @@ export const module20: Lesson[] = [
       },
       {
         ...wcag,
-        section: "Criteria for text alternatives and readable documents.",
+        section:
+          "The text alternative criteria and the guidelines under Understandable, at levels A and AA.",
         purpose:
           "Explains why an extractable, plainly structured document is the accessible choice.",
         minutes: "60–90 selected",
@@ -1364,7 +1366,8 @@ export const module20: Lesson[] = [
       },
       {
         ...portfolioProcess,
-        section: "How to describe yourself and your work concisely.",
+        section:
+          "Prioritising the top three things your portfolio should communicate.",
         purpose: "Shapes a short profile that points at evidence.",
         minutes: "30–45",
         limits:
@@ -1541,7 +1544,7 @@ export const module20: Lesson[] = [
     resources: [
       {
         ...portfolioProcess,
-        section: "Framing your background and what your work demonstrates.",
+        section: "Stating your role and the constraints you worked under.",
         purpose: "Supports an evidence-led account of a career change.",
         minutes: "30–45",
         limits:
@@ -1920,7 +1923,7 @@ export const module20: Lesson[] = [
     resources: [
       {
         ...portfolioProcess,
-        section: "Presenting a case study and answering questions about it.",
+        section: "Talking through your process using process artefacts.",
         purpose: "Supports the walkthrough half of the practice.",
         minutes: "30–45",
         limits:
@@ -2108,7 +2111,7 @@ export const module20: Lesson[] = [
     resources: [
       {
         ...shapeUp,
-        section: "Appetite, fixed time with variable scope, and scope cutting.",
+        section: "Setting the appetite, and fixed time with variable scope.",
         purpose:
           "Supplies the reasoning for fixing the time and cutting the scope of a take-home.",
         minutes: "45–60 selected",

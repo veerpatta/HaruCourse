@@ -416,7 +416,7 @@ The matrix is the working document for the rest of this module and for the month
 ### Assigned resources
 
 - R23: [GitLab: Product Designer role](https://handbook.gitlab.com/job-description-library/product/product-designer/) — Responsibilities and requirements as one employer states them. Purpose: Provides a worked example of requirements to match evidence against. Effort: 30–45 min. Free reading, no account. Verified 2026-09-06. One employer; your matrix rows must come from your own captures, not from this page. Fallback: R22.
-- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — What counts as portfolio evidence of a skill. Purpose: Sets the standard for marking a cell evidenced. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
+- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — The case study contents that show a skill was actually exercised. Purpose: Sets the standard for marking a cell evidenced. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
 
 ## Lesson 5: Closing one gap with real work
 
@@ -518,7 +518,7 @@ A gap closed with dated work, with the matrix showing the before and after, is s
 
 ### Assigned resources
 
-- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — What evidence of a skill looks like to a reviewer. Purpose: Sets the bar the new artefact has to clear. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context; the evidence standard transfers. Fallback: R23.
+- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — What 204 surveyed hiring professionals said they look for in evidence. Purpose: Sets the bar the new artefact has to clear. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context; the evidence standard transfers. Fallback: R23.
 - R66: [W3C: How to Meet WCAG 2.2 (quick reference)](https://www.w3.org/WAI/WCAG22/quickref/) — The criteria relevant to whichever artefact you are producing. Purpose: Supports closing an accessibility gap with a defensible check. Effort: 60–90 selected min. Free reading, no account. Verified 2026-09-06. A filterable index, not a course; reading a criterion is not conformance, and a self-check is not testing with disabled people. Fallback: R41.
 
 ## Lesson 6: A resume where every line survives a question
@@ -622,7 +622,7 @@ The resume and its trace to the matrix are one artefact; keeping them together m
 ### Assigned resources
 
 - R23: [GitLab: Product Designer role](https://handbook.gitlab.com/job-description-library/product/product-designer/) — The language an employer uses for responsibilities. Purpose: Provides published vocabulary for describing what you did without inflating it. Effort: 30–45 min. Free reading, no account. Verified 2026-09-06. One employer; borrow the precision, not the seniority language, and never claim its levels. Fallback: R22.
-- R66: [W3C: How to Meet WCAG 2.2 (quick reference)](https://www.w3.org/WAI/WCAG22/quickref/) — Criteria for text alternatives and readable documents. Purpose: Explains why an extractable, plainly structured document is the accessible choice. Effort: 60–90 selected min. Free reading, no account. Verified 2026-09-06. Written for web content rather than documents; the reasoning about real text transfers, the criteria are not a document standard. Fallback: R41.
+- R66: [W3C: How to Meet WCAG 2.2 (quick reference)](https://www.w3.org/WAI/WCAG22/quickref/) — The text alternative criteria and the guidelines under Understandable, at levels A and AA. Purpose: Explains why an extractable, plainly structured document is the accessible choice. Effort: 60–90 selected min. Free reading, no account. Verified 2026-09-06. Written for web content rather than documents; the reasoning about real text transfers, the criteria are not a document standard. Fallback: R41.
 
 ## Lesson 7: A public profile, and what does not go on it
 
@@ -727,7 +727,7 @@ The profile is a public artefact and is read as a writing sample, so it is worth
 ### Assigned resources
 
 - R54: [GOV.UK: managing research data and participant privacy](https://www.gov.uk/service-manual/user-research/managing-user-research-data-participant-privacy) — Treating information about people as personal data, and what may be shared. Purpose: Governs what you publish about participants, clients and colleagues. Effort: 15–25 min. Free reading, no account; published 5 November 2018. Verified 2026-09-06. UK GDPR framing, written for research data rather than profiles; the principle transfers, the jurisdiction does not. Fallback: R53.
-- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — How to describe yourself and your work concisely. Purpose: Shapes a short profile that points at evidence. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
+- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Prioritising the top three things your portfolio should communicate. Purpose: Shapes a short profile that points at evidence. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
 
 ## Lesson 8: The transition story, told without embellishment
 
@@ -831,7 +831,7 @@ The transition account is reused in the profile, in outreach and in the first mi
 
 ### Assigned resources
 
-- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Framing your background and what your work demonstrates. Purpose: Supports an evidence-led account of a career change. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context; the framing advice transfers. Fallback: R23.
+- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Stating your role and the constraints you worked under. Purpose: Supports an evidence-led account of a career change. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context; the framing advice transfers. Fallback: R23.
 - R23: [GitLab: Product Designer role](https://handbook.gitlab.com/job-description-library/product/product-designer/) — The responsibilities the role actually involves. Purpose: Keeps the transfer claims tied to what the work requires rather than to enthusiasm. Effort: 30–45 min. Free reading, no account. Verified 2026-09-06. One employer's description; other roles differ and this establishes nothing about the market. Fallback: R22.
 
 ## Lesson 9: Writing to a person, one at a time
@@ -1041,7 +1041,7 @@ The practice recordings are private working material, but the prepared examples 
 
 ### Assigned resources
 
-- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Presenting a case study and answering questions about it. Purpose: Supports the walkthrough half of the practice. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
+- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Talking through your process using process artefacts. Purpose: Supports the walkthrough half of the practice. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
 - R23: [GitLab: Product Designer role](https://handbook.gitlab.com/job-description-library/product/product-designer/) — The stages of the hiring process and what each examines. Purpose: Shapes what the practice interview should cover. Effort: 30–45 min. Free reading, no account. Verified 2026-09-06. One employer's process; others differ substantially, and this is not evidence about hiring in India. Fallback: R22.
 
 ## Lesson 11: Exercises, take-homes and saying no
@@ -1146,7 +1146,7 @@ A take-home submission that fits the stated time and explains its cuts is portfo
 
 ### Assigned resources
 
-- R47: [Ryan Singer: Shape Up](https://basecamp.com/shapeup/webbook) — Appetite, fixed time with variable scope, and scope cutting. Purpose: Supplies the reasoning for fixing the time and cutting the scope of a take-home. Effort: 45–60 selected min. Free to read online; a print edition is sold and is not required. Verified 2026-09-06. One company's internal process; take the appetite reasoning, not the ceremony. Fallback: R07.
+- R47: [Ryan Singer: Shape Up](https://basecamp.com/shapeup/webbook) — Setting the appetite, and fixed time with variable scope. Purpose: Supplies the reasoning for fixing the time and cutting the scope of a take-home. Effort: 45–60 selected min. Free to read online; a print edition is sold and is not required. Verified 2026-09-06. One company's internal process; take the appetite reasoning, not the ceremony. Fallback: R07.
 - R23: [GitLab: Product Designer role](https://handbook.gitlab.com/job-description-library/product/product-designer/) — The exercise and interview stages the employer describes. Purpose: Shows what kind of exercise an employer may set and why. Effort: 30–45 min. Free reading, no account. Verified 2026-09-06. One employer's process; the presence of an exercise there says nothing about prevalence elsewhere. Fallback: R22.
 
 ## Lesson 12: Running the search as a practice

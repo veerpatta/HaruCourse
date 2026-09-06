@@ -2178,7 +2178,7 @@ export const module16: Lesson[] = [
       },
       {
         ...standard,
-        section: "The points on accountability and on solving whole problems.",
+        section: "The points on solving a whole problem for users and on having a multidisciplinary team.",
         purpose:
           "Connects the mapping to the delivery accountability discussed in m14.",
         minutes: "20–30 selected",
@@ -2376,7 +2376,7 @@ export const module16: Lesson[] = [
       },
       {
         ...standard,
-        section: "The points on solving whole problems and on proportionality.",
+        section: "The point on solving a whole problem for users.",
         purpose:
           "Frames refusal as serving the outcome rather than resisting technology.",
         minutes: "20–30 selected",

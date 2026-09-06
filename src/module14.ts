@@ -221,7 +221,7 @@ export const module14: Lesson[] = [
       {
         ...standard,
         section:
-          "The points on solving whole problems, iterating frequently, making the service accessible and defining success.",
+          "The points on solving a whole problem for users, iterating and improving frequently, making sure everyone can use the service, and defining what success looks like.",
         purpose:
           "Names the outcomes a delivery process is supposed to protect.",
         minutes: "60 selected",
@@ -1784,7 +1784,7 @@ export const module14: Lesson[] = [
       {
         ...standard,
         section:
-          "The points on solving whole problems and defining what success looks like.",
+          "The points on solving a whole problem for users and defining what success looks like.",
         purpose:
           "Gives a shared vocabulary for arguing about outcomes rather than outputs.",
         minutes: "45 selected",
@@ -1983,7 +1983,7 @@ export const module14: Lesson[] = [
       {
         ...standard,
         section:
-          "The points on multidisciplinary teams and iterating frequently.",
+          "The points on having a multidisciplinary team and iterating and improving frequently.",
         purpose:
           "Frames these meetings as the mechanism by which iteration actually happens.",
         minutes: "30 selected",

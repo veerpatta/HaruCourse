@@ -106,7 +106,7 @@ A delivery map with change points is a useful interview artefact: it shows you u
 
 ### Assigned resources
 
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on solving whole problems, iterating frequently, making the service accessible and defining success. Purpose: Names the outcomes a delivery process is supposed to protect. Effort: 60 selected min. Free reading, no account. Verified 2026-09-06. Written for UK government services with statutory obligations; the outcomes transfer, the compliance context does not. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on solving a whole problem for users, iterating and improving frequently, making sure everyone can use the service, and defining what success looks like. Purpose: Names the outcomes a delivery process is supposed to protect. Effort: 60 selected min. Free reading, no account. Verified 2026-09-06. Written for UK government services with statutory obligations; the outcomes transfer, the compliance context does not. Fallback: R07.
 - R18: [Atlassian: user stories](https://www.atlassian.com/agile/project-management/user-stories) — How work is described so it can be planned and built. Purpose: Introduces the unit of delivery work the rest of this module uses. Effort: 25–40 min. Free reading, no account. Verified 2026-09-06. Vendor-published but tool-neutral in content; no Jira subscription is required or implied. Fallback: R26.
 
 ## Lesson 2: Writing work that can be built
@@ -930,7 +930,7 @@ The two versions of the same argument, with the honest weakness, show that you c
 
 ### Assigned resources
 
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on solving whole problems and defining what success looks like. Purpose: Gives a shared vocabulary for arguing about outcomes rather than outputs. Effort: 45 selected min. Free reading, no account. Verified 2026-09-06. Written for government services with different accountability; translate rather than quote. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on solving a whole problem for users and defining what success looks like. Purpose: Gives a shared vocabulary for arguing about outcomes rather than outputs. Effort: 45 selected min. Free reading, no account. Verified 2026-09-06. Written for government services with different accountability; translate rather than quote. Fallback: R07.
 - R47: [Ryan Singer: Shape Up](https://basecamp.com/shapeup/webbook) — Setting the appetite and deciding what not to build. Purpose: Supplies the language for offering a smaller version rather than defending the whole. Effort: 45–60 selected min. Free to read online; print edition sold and not required. Verified 2026-09-06. One company's process, and not a market-positioning source. Fallback: R07.
 
 ## Lesson 10: Meetings that decide something
@@ -1033,7 +1033,7 @@ A critique problem list beside a review decision record demonstrates that you ca
 
 ### Assigned resources
 
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on multidisciplinary teams and iterating frequently. Purpose: Frames these meetings as the mechanism by which iteration actually happens. Effort: 30 selected min. Free reading, no account. Verified 2026-09-06. It does not prescribe meeting formats; the critique-versus-review distinction is the course's own. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on having a multidisciplinary team and iterating and improving frequently. Purpose: Frames these meetings as the mechanism by which iteration actually happens. Effort: 30 selected min. Free reading, no account. Verified 2026-09-06. It does not prescribe meeting formats; the critique-versus-review distinction is the course's own. Fallback: R07.
 - R12: [GOV.UK: making prototypes](https://www.gov.uk/service-manual/design/making-prototypes) — Using a prototype to get a decision rather than approval. Purpose: Connects the artefact you bring to the kind of meeting you are running. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. Government context; the framing transfers. Fallback: R05.
 
 ## Lesson 11: Release, and knowing whether it worked

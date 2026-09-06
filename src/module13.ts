@@ -1414,7 +1414,7 @@ export const module13: Lesson[] = [
       {
         ...components,
         section:
-          "How a published system describes its own contribution process, where it does.",
+          "Two component pages, read for the guidance a published component has to carry.",
         purpose:
           "Shows a working example of a route in, at a scale larger than yours.",
         minutes: "20–30 selected",
@@ -2389,7 +2389,7 @@ export const module13: Lesson[] = [
       {
         ...components,
         section:
-          "How a published system communicates deprecation and removal, where it does.",
+          "Two component pages, read for how usage guidance is stated and would have to be revised.",
         purpose:
           "Shows removal handled as a first-class change rather than a quiet deletion.",
         minutes: "20–30 selected",

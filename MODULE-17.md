@@ -107,7 +107,7 @@ An inferred strategy with its implied choices is a strong piece of thinking to s
 ### Assigned resources
 
 - R47: [Ryan Singer: Shape Up](https://basecamp.com/shapeup/webbook) — Setting the appetite, fixed time with variable scope, and the betting table. Purpose: Supplies a concrete account of strategy as recurring choices under constraint. Effort: 60–90 selected min. Free to read online; a print edition is sold and not required. Verified 2026-09-06. It teaches scope strategy and deciding what not to build. It is explicitly not a market-positioning source, and this course has no verified free source for positioning. Fallback: R07.
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on solving whole problems and on scope. Purpose: Gives an outcome-based frame for judging whether a pattern of choices serves anyone. Effort: 30–45 selected min. Free reading, no account. Verified 2026-09-06. Public-service obligations differ from commercial ones; take the outcome framing. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The point on solving a whole problem for users. Purpose: Gives an outcome-based frame for judging whether a pattern of choices serves anyone. Effort: 30–45 selected min. Free reading, no account. Verified 2026-09-06. Public-service obligations differ from commercial ones; take the outcome framing. Fallback: R07.
 
 ## Lesson 2: How this product survives
 
@@ -313,7 +313,7 @@ A blueprint that changed a front-stage promise is strong evidence of service thi
 ### Assigned resources
 
 - R58: [GOV.UK: creating an experience map](https://www.gov.uk/service-manual/user-research/creating-an-experience-map) — The four steps and the layers of what people do, think and feel. Purpose: Supplies the front-stage foundation the blueprint extends. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06; published 21 February 2017. It explicitly does not cover service blueprints or back-stage process, so the lower layers in this lesson are the course's own extension. Fallback: R04.
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on whole problems and on multidisciplinary teams. Purpose: Grounds the argument that operations and interface are one experience. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public-service framing; the staffing constraints in a small business are the course's own emphasis. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on solving a whole problem for users and on having a multidisciplinary team. Purpose: Grounds the argument that operations and interface are one experience. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public-service framing; the staffing constraints in a small business are the course's own emphasis. Fallback: R07.
 
 ## Lesson 4: When the buyer is not the user
 
@@ -416,7 +416,7 @@ Role conflicts with a designed resolution are exactly the material business-to-b
 ### Assigned resources
 
 - R44: [Google Cloud: IAM overview](https://docs.cloud.google.com/iam/docs/overview) — Principals, roles, permissions, inheritance and least privilege. Purpose: Supplies precise vocabulary for describing multi-role products. Effort: 15–25 min. Free reading, no account. Verified 2026-09-06. Cloud infrastructure documentation, not a role-based interface pattern library: every interface decision here is the course's own. Fallback: R19.
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on whole problems and on serving all users. Purpose: Supports designing for the person who did not choose the product. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public services have no buyer-user split of this kind; the application is the course's own. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on solving a whole problem for users and on making sure everyone can use the service. Purpose: Supports designing for the person who did not choose the product. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public services have no buyer-user split of this kind; the application is the course's own. Fallback: R07.
 
 ## Lesson 5: Systems that push back
 
@@ -518,7 +518,7 @@ A traced loop with a structural response is systems thinking made concrete, and 
 
 ### Assigned resources
 
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on solving whole problems and on iterating with evidence. Purpose: Frames second-order effects as part of solving the problem rather than as surprises. Effort: 30–45 selected min. Free reading, no account. Verified 2026-09-06. It does not teach systems modelling; the loops and delays here are the course's own. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on solving a whole problem for users and on iterating and improving frequently. Purpose: Frames second-order effects as part of solving the problem rather than as surprises. Effort: 30–45 selected min. Free reading, no account. Verified 2026-09-06. It does not teach systems modelling; the loops and delays here are the course's own. Fallback: R07.
 - R36: [NN/g: preventing user errors](https://www.nngroup.com/articles/user-mistakes/) — Slips, mistakes and how design shapes behaviour. Purpose: Supports the argument that structure changes behaviour where warnings do not. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. Written about individual errors rather than system loops; the extension is this lesson's. Fallback: R02.
 
 ## Lesson 6: Stakeholders and their actual interests
@@ -622,7 +622,7 @@ A stakeholder map by accountability, with a rational account of opposition, demo
 ### Assigned resources
 
 - R48: [GitLab job families: product design management](https://handbook.gitlab.com/job-families/product/product-design-management/) — The management levels' descriptions of stakeholder influence and strategic partnership. Purpose: Shows how one employer describes the stakeholder work expected at senior levels. Effort: 30–45 min. Free reading, no account. Verified 2026-09-06. One employer's published expectations, not a market standard, and its performance measures are its own. Fallback: R23.
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The point on multidisciplinary teams and shared accountability. Purpose: Frames stakeholder work as shared responsibility rather than persuasion. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public-sector governance; the accountability mapping here is the course's own. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The point on having a multidisciplinary team. Purpose: Frames stakeholder work as shared responsibility rather than persuasion. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public-sector governance; the accountability mapping here is the course's own. Fallback: R07.
 
 ## Lesson 7: Deciding without enough information
 
@@ -828,7 +828,7 @@ A documented gap with an assessed and rejected source is unusual and demonstrate
 ### Assigned resources
 
 - R47: [Ryan Singer: Shape Up](https://basecamp.com/shapeup/webbook) — The chapters on appetite and deciding what not to build, re-read as the strategy content this course can verify. Purpose: Marks the boundary between what is sourced here and what is not. Effort: 45–60 selected min. Free to read online; print edition sold and not required. Verified 2026-09-06. It is explicitly not a positioning or segmentation source, which is the gap this lesson addresses. Fallback: R07.
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on understanding users and whole problems, as the alternative footing for strategic argument. Purpose: Gives a verified basis for strategic reasoning that does not depend on positioning theory. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public-service framing with no market context, which is precisely why the gap remains. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on understanding users and their needs and on solving a whole problem for users, as the alternative footing for strategic argument. Purpose: Gives a verified basis for strategic reasoning that does not depend on positioning theory. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public-service framing with no market context, which is precisely why the gap remains. Fallback: R07.
 
 ## Lesson 9: Consumer and enterprise, and the trade between them
 
@@ -931,7 +931,7 @@ Two versions of one feature with structural reasoning is a compact way to show y
 ### Assigned resources
 
 - R44: [Google Cloud: IAM overview](https://docs.cloud.google.com/iam/docs/overview) — Roles, inheritance and least privilege. Purpose: Supplies the vocabulary for the administrative surface a business product needs. Effort: 15–25 min. Free reading, no account. Verified 2026-09-06. Infrastructure documentation rather than an interface pattern library; the administrator's task design is the course's own. Fallback: R19.
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on accountability and on whole problems. Purpose: Grounds auditability and obligation as design surfaces rather than compliance chores. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public-sector obligations differ from commercial ones; take the framing. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on having a multidisciplinary team and on solving a whole problem for users. Purpose: Grounds auditability and obligation as design surfaces rather than compliance chores. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public-sector obligations differ from commercial ones; take the framing. Fallback: R07.
 
 ## Lesson 10: Pressure, patterns and where you stop
 
@@ -1034,7 +1034,7 @@ A refusal with an honest alternative designed is a strong ethical artefact and a
 ### Assigned resources
 
 - R36: [NN/g: preventing user errors](https://www.nngroup.com/articles/user-mistakes/) — How design shapes behaviour, and the difference between preventing errors and exploiting them. Purpose: Supports the argument that these patterns work by causing failure rather than by persuading. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. It is about error prevention rather than manipulative patterns; the naming and the refusals here are the course's own. Fallback: R02.
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on treating people fairly and solving whole problems. Purpose: Gives a stated standard to cite rather than only a personal preference. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public-service obligations; a commercial product has no equivalent obligation, which is why the written limits matter. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on making sure everyone can use the service and on solving a whole problem for users. Purpose: Gives a stated standard to cite rather than only a personal preference. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public-service obligations; a commercial product has no equivalent obligation, which is why the written limits matter. Fallback: R07.
 
 ## Lesson 11: Influence without authority
 
@@ -1137,7 +1137,7 @@ A comparison against published expectations, with the read-about items honestly 
 ### Assigned resources
 
 - R48: [GitLab job families: product design management](https://handbook.gitlab.com/job-families/product/product-design-management/) — One management level's expectations: strategic partnership, stakeholder influence, team development and how success is measured. Purpose: Supplies specific published expectations to compare your artefacts against. Effort: 30–45 min. Free reading, no account. Verified 2026-09-06. One employer's published expectations, not a market standard; its performance measures are its own and this course has no second comparable source. Fallback: R23.
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on multidisciplinary teams and shared accountability. Purpose: Frames influence as part of a team's shared accountability rather than as personal advancement. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public-sector context; the leadership behaviours here come from the job-family source and this course's own framing. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The point on having a multidisciplinary team. Purpose: Frames influence as part of a team's shared accountability rather than as personal advancement. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public-sector context; the leadership behaviours here come from the job-family source and this course's own framing. Fallback: R07.
 
 ## Lesson 12: A strategy note for your project
 
@@ -1240,4 +1240,4 @@ A two-page strategy note with real exclusions and honest constraints is a senior
 ### Assigned resources
 
 - R47: [Ryan Singer: Shape Up](https://basecamp.com/shapeup/webbook) — Appetite, betting and deciding what not to build. Purpose: Supplies the framing for choices, exclusions and bounded commitments. Effort: 45–60 selected min. Free to read online; print edition sold and not required. Verified 2026-09-06. Scope strategy rather than market positioning, which this course still cannot source. Fallback: R07.
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on whole problems, iteration and defining success. Purpose: Keeps the note connected to outcomes rather than to intentions. Effort: 30–45 selected min. Free reading, no account. Verified 2026-09-06. Public-service framing; the commercial constraints in your note are your own. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on solving a whole problem for users, iterating and improving frequently, and defining what success looks like. Purpose: Keeps the note connected to outcomes rather than to intentions. Effort: 30–45 selected min. Free reading, no account. Verified 2026-09-06. Public-service framing; the commercial constraints in your note are your own. Fallback: R07.

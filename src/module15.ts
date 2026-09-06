@@ -1407,7 +1407,7 @@ export const module15: Lesson[] = [
       },
       {
         ...standard,
-        section: "The points on data, privacy and security where they apply.",
+        section: "The point on creating a secure service which protects users' privacy.",
         purpose:
           "Places collection decisions inside a stated set of obligations.",
         minutes: "20–30 selected",
@@ -1998,7 +1998,7 @@ export const module15: Lesson[] = [
       {
         ...standard,
         section:
-          "The points on iterating and on treating people fairly.",
+          "The points on iterating and improving frequently and on making sure everyone can use the service.",
         purpose:
           "Supports the ethical refusal with a stated standard rather than only a preference.",
         minutes: "20–30 selected",

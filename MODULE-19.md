@@ -106,7 +106,7 @@ The claims and their evidence map is the plan for the whole module; every later 
 
 ### Assigned resources
 
-- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — The five-step portfolio process and what reviewers look for. Purpose: Establishes what a portfolio is for before any of it is written. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. Written for a US hiring market; the reasoning transfers, the market does not. Fallback: R23.
+- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — The five steps, and what 204 surveyed hiring professionals said they look for. Purpose: Establishes what a portfolio is for before any of it is written. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. Written for a US hiring market; the reasoning transfers, the market does not. Fallback: R23.
 - R23: [GitLab: Product Designer role](https://handbook.gitlab.com/job-description-library/product/product-designer/) — Responsibilities and what the hiring process looks at. Purpose: Gives one published account of what an employer says it wants. Effort: 30–45 min. Free reading, no account. Verified 2026-09-06. One employer's published expectations; this is not a representative India hiring study and must not be read as one. Fallback: R22.
 
 ## Lesson 2: Auditing what you actually kept
@@ -209,7 +209,7 @@ The audit table is the boundary of what the portfolio can honestly claim, and ke
 
 ### Assigned resources
 
-- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Selecting projects and deciding what each one shows. Purpose: Guides the audit toward what a portfolio actually needs. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. Assumes professional projects; yours are course and self-directed work, which must be labelled as such. Fallback: R23.
+- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Step 1: taking inventory of every project before choosing. Purpose: Guides the audit toward what a portfolio actually needs. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. Assumes professional projects; yours are course and self-directed work, which must be labelled as such. Fallback: R23.
 - R59: [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings) — Structuring findings: headline, essential facts, why it matters, supporting evidence. Purpose: Supplies the structure the audit is preparing evidence for. Effort: 15–25 min. Free reading, no account; published 24 May 2016. Verified 2026-09-06. It does not cover anonymising what you share, so pair it with R54. Fallback: R04.
 
 ## Lesson 3: Deciding what each case study is for
@@ -312,7 +312,7 @@ The three promises are the contract each case study has to keep, and the last le
 
 ### Assigned resources
 
-- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Choosing which projects to include and what each demonstrates. Purpose: Supports assigning one job per case study. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
+- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Step 2: choosing three to five projects as detailed case studies. Purpose: Supports assigning one job per case study. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
 - R23: [GitLab: Product Designer role](https://handbook.gitlab.com/job-description-library/product/product-designer/) — The responsibilities a designer is expected to cover. Purpose: Helps spread the three jobs across different responsibilities. Effort: 30–45 min. Free reading, no account. Verified 2026-09-06. One employer's expectations; treat it as an example, not as the market. Fallback: R22.
 
 ## Lesson 4: The case study skeleton
@@ -416,7 +416,7 @@ This is the first of the three case studies and the template for the other two.
 ### Assigned resources
 
 - R59: [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings) — Structuring a findings deck: headline, essential facts, why it matters, supporting evidence. Purpose: Supplies a proven structure for evidence-led writing. Effort: 15–25 min. Free reading, no account; published 24 May 2016. Verified 2026-09-06. Written for internal findings rather than a public portfolio; the ordering transfers, the audience differs. Fallback: R04.
-- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — What a case study should contain and in what order. Purpose: Grounds the case study structure in published guidance. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
+- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — The case study contents: problem, role, how you reached the solution, effect, concepts not pursued and what you learned. Purpose: Grounds the case study structure in published guidance. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
 
 ## Lesson 5: Stating your role without inflating it
 
@@ -725,7 +725,7 @@ A captioned image set where every picture argues something is the difference bet
 ### Assigned resources
 
 - R63: [UK Analysis Function: data visualisation charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/) — Direct labelling over legends, contrast, alternative text and publishing the underlying data. Purpose: Sets the standard for any chart or diagram shown in a case study. Effort: 45–60 selected min. Free reading, no account; published 19 May 2022. Verified 2026-09-06. It excludes interactive visualisations and dashboards and states its conventions are for government statistics. Fallback: R29.
-- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — How work is presented and what reviewers expect to see. Purpose: Grounds the choice of what to show and what to omit. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
+- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Including sketches, whiteboards and research documentation rather than final screens alone. Purpose: Grounds the choice of what to show and what to omit. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
 
 ## Lesson 8: Writing the outcome when there is no outcome
 
@@ -827,7 +827,7 @@ An honest outcome section is the part of a junior portfolio most likely to be te
 
 ### Assigned resources
 
-- R63: [UK Analysis Function: data visualisation charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/) — When a chart helps, and rules for honest axes and labelling. Purpose: Prevents small counts being charted in ways that imply more than they show. Effort: 45–60 selected min. Free reading, no account; published 19 May 2022. Verified 2026-09-06. It tells you how to draw a chart honestly, not which analysis to run. Fallback: R29.
+- R63: [UK Analysis Function: data visualisation charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/) — Rules for honest axes, gridlines and direct labelling. Purpose: Sets the drawing rules for any chart made from these counts. Effort: 45–60 selected min. Free reading, no account; published 19 May 2022. Verified 2026-09-06. It tells you how to draw a chart honestly, not which analysis to run. Fallback: R29.
 - R59: [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings) — Headline, essential facts and supporting evidence. Purpose: Shapes an outcome statement that can be acted on and checked. Effort: 15–25 min. Free reading, no account; published 24 May 2016. Verified 2026-09-06. Internal findings context; a portfolio audience is external and less forgiving. Fallback: R04.
 
 ## Lesson 9: Making the portfolio itself usable
@@ -1034,7 +1034,7 @@ A recorded walkthrough is portfolio evidence in its own right and preparation fo
 ### Assigned resources
 
 - R59: [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings) — Show and tells and structuring what you present so it can be acted on. Purpose: Shapes the spoken structure and its ordering. Effort: 15–25 min. Free reading, no account; published 24 May 2016. Verified 2026-09-06. Written for internal show and tells; a hiring conversation is a different audience with the same structural needs. Fallback: R04.
-- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Presenting work and talking through a case study. Purpose: Connects the written case study to the spoken version. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
+- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Physical artefacts and talking through your process. Purpose: Connects the written case study to the spoken version. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
 
 ## Lesson 11: Answering the questions you would rather avoid
 
@@ -1239,5 +1239,5 @@ This is the portfolio itself: three case studies, one recorded walkthrough, a pr
 
 ### Assigned resources
 
-- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Reviewing and finishing a portfolio before sharing it. Purpose: Frames the final check and the decision to publish. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context; the finishing discipline transfers. Fallback: R23.
+- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Step 5: getting feedback and iterating before sharing. Purpose: Frames the final check and the decision to publish. Effort: 30–45 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context; the finishing discipline transfers. Fallback: R23.
 - R54: [GOV.UK: managing research data and participant privacy](https://www.gov.uk/service-manual/user-research/managing-user-research-data-participant-privacy) — Retention, storage and what may be shared. Purpose: Final guard on participant material before anything is published. Effort: 15–25 min. Free reading, no account; published 5 November 2018. Verified 2026-09-06. UK GDPR framing only; check Indian requirements from a primary source. Fallback: R53.

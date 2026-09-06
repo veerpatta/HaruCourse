@@ -1137,7 +1137,7 @@ A risk map with unowned questions named is a professional artefact and an unusua
 ### Assigned resources
 
 - R69: [NIST: AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) — The four functions and the trustworthiness framing. Purpose: Supplies the structure this mapping walks. Effort: 30–45 selected min. Free access, no account; AI RMF 1.0 released 26 January 2023. Verified 2026-09-06. Voluntary organisational guidance: not law, not certification, and it says nothing about interface design. Fallback: R21.
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on accountability and on solving whole problems. Purpose: Connects the mapping to the delivery accountability discussed in m14. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Government obligations; take the accountability framing. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on solving a whole problem for users and on having a multidisciplinary team. Purpose: Connects the mapping to the delivery accountability discussed in m14. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Government obligations; take the accountability framing. Fallback: R07.
 
 ## Lesson 12: When not to use it
 
@@ -1240,4 +1240,4 @@ A prepared argument against an AI feature, with an alternative and a change cond
 ### Assigned resources
 
 - R21: [Google PAIR: People + AI Guidebook](https://pair.withgoogle.com/guidebook-v2/) — The chapters on deciding whether AI adds value and on user needs. Purpose: Supports the case that a stated problem, not novelty, justifies the approach. Effort: 45–60 selected min. Free reading, no account. Verified 2026-09-06. Written by a company that builds AI products; read the value question critically rather than as neutral advice. Fallback: R19.
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on solving whole problems and on proportionality. Purpose: Frames refusal as serving the outcome rather than resisting technology. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Government obligations; the refusal criteria here are the course's own. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The point on solving a whole problem for users. Purpose: Frames refusal as serving the outcome rather than resisting technology. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Government obligations; the refusal criteria here are the course's own. Fallback: R07.

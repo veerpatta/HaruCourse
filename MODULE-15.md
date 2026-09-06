@@ -725,7 +725,7 @@ An instrumentation plan with documented refusals is unusual in a design portfoli
 ### Assigned resources
 
 - R20: [GOV.UK: measuring success](https://www.gov.uk/service-manual/measuring-success) — Choosing what to measure and why. Purpose: Keeps the event list tied to questions rather than to availability. Effort: 30–45 selected min. Free reading, no account. Verified 2026-09-06. It does not address data-protection obligations, which differ by jurisdiction and are not verified here for India. Fallback: R07.
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on data, privacy and security where they apply. Purpose: Places collection decisions inside a stated set of obligations. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. UK government obligations; check Indian requirements from a primary source before implementing anything. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The point on creating a secure service which protects users' privacy. Purpose: Places collection decisions inside a stated set of obligations. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. UK government obligations; check Indian requirements from a primary source before implementing anything. Fallback: R07.
 
 ## Lesson 8: Time, cohorts and the number that moved by itself
 
@@ -1034,7 +1034,7 @@ A written refusal to measure something, with the reasoning, is a strong signal o
 ### Assigned resources
 
 - R07: [GOV.UK: discovery phase](https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works) — Deciding what to do next under uncertainty and what a discovery is trying to establish. Purpose: Frames measurement as one option among several for reducing uncertainty. Effort: 30–45 min. Free reading, no account. Verified 2026-09-06; published 18 November 2016. It prefers primary fieldwork and does not discuss experiment economics, which is this lesson's own. Fallback: R19.
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on iterating and on treating people fairly. Purpose: Supports the ethical refusal with a stated standard rather than only a preference. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Government obligations; the ethical reasoning here is the course's own. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on iterating and improving frequently and on making sure everyone can use the service. Purpose: Supports the ethical refusal with a stated standard rather than only a preference. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Government obligations; the ethical reasoning here is the course's own. Fallback: R07.
 
 ## Lesson 11: A measurement plan you could actually run
 

@@ -232,7 +232,7 @@ export const module17: Lesson[] = [
       {
         ...standard,
         section:
-          "The points on solving whole problems and on scope.",
+          "The point on solving a whole problem for users.",
         purpose:
           "Gives an outcome-based frame for judging whether a pattern of choices serves anyone.",
         minutes: "30–45 selected",
@@ -624,7 +624,7 @@ export const module17: Lesson[] = [
       },
       {
         ...standard,
-        section: "The points on whole problems and on multidisciplinary teams.",
+        section: "The points on solving a whole problem for users and on having a multidisciplinary team.",
         purpose:
           "Grounds the argument that operations and interface are one experience.",
         minutes: "20–30 selected",
@@ -822,7 +822,7 @@ export const module17: Lesson[] = [
       },
       {
         ...standard,
-        section: "The points on whole problems and on serving all users.",
+        section: "The points on solving a whole problem for users and on making sure everyone can use the service.",
         purpose:
           "Supports designing for the person who did not choose the product.",
         minutes: "20–30 selected",
@@ -1009,7 +1009,7 @@ export const module17: Lesson[] = [
       {
         ...standard,
         section:
-          "The points on solving whole problems and on iterating with evidence.",
+          "The points on solving a whole problem for users and on iterating and improving frequently.",
         purpose:
           "Frames second-order effects as part of solving the problem rather than as surprises.",
         minutes: "30–45 selected",
@@ -1216,7 +1216,7 @@ export const module17: Lesson[] = [
       },
       {
         ...standard,
-        section: "The point on multidisciplinary teams and shared accountability.",
+        section: "The point on having a multidisciplinary team.",
         purpose:
           "Frames stakeholder work as shared responsibility rather than persuasion.",
         minutes: "20–30 selected",
@@ -1609,7 +1609,7 @@ export const module17: Lesson[] = [
       {
         ...standard,
         section:
-          "The points on understanding users and whole problems, as the alternative footing for strategic argument.",
+          "The points on understanding users and their needs and on solving a whole problem for users, as the alternative footing for strategic argument.",
         purpose:
           "Gives a verified basis for strategic reasoning that does not depend on positioning theory.",
         minutes: "20–30 selected",
@@ -1804,7 +1804,7 @@ export const module17: Lesson[] = [
       },
       {
         ...standard,
-        section: "The points on accountability and on whole problems.",
+        section: "The points on having a multidisciplinary team and on solving a whole problem for users.",
         purpose:
           "Grounds auditability and obligation as design surfaces rather than compliance chores.",
         minutes: "20–30 selected",
@@ -2000,7 +2000,7 @@ export const module17: Lesson[] = [
       },
       {
         ...standard,
-        section: "The points on treating people fairly and solving whole problems.",
+        section: "The points on making sure everyone can use the service and on solving a whole problem for users.",
         purpose:
           "Gives a stated standard to cite rather than only a personal preference.",
         minutes: "20–30 selected",
@@ -2196,7 +2196,7 @@ export const module17: Lesson[] = [
       },
       {
         ...standard,
-        section: "The points on multidisciplinary teams and shared accountability.",
+        section: "The point on having a multidisciplinary team.",
         purpose:
           "Frames influence as part of a team's shared accountability rather than as personal advancement.",
         minutes: "20–30 selected",
@@ -2394,7 +2394,7 @@ export const module17: Lesson[] = [
       {
         ...standard,
         section:
-          "The points on whole problems, iteration and defining success.",
+          "The points on solving a whole problem for users, iterating and improving frequently, and defining what success looks like.",
         purpose:
           "Keeps the note connected to outcomes rather than to intentions.",
         minutes: "30–45 selected",

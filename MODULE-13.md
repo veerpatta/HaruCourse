@@ -725,7 +725,7 @@ Governance is what distinguishes a design system from a component folder, and a 
 ### Assigned resources
 
 - R18: [Atlassian: user stories](https://www.atlassian.com/agile/project-management/user-stories) — How a request is written so it can be judged: who, what and why. Purpose: Gives a shape for proposals that makes them decidable rather than conversational. Effort: 25–40 min. Free reading, no account. Verified 2026-09-06. About agile stories rather than design-system governance; no subscription is required or implied. Fallback: R26.
-- R17: [GOV.UK Design System: components](https://design-system.service.gov.uk/components/) — How a published system describes its own contribution process, where it does. Purpose: Shows a working example of a route in, at a scale larger than yours. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Its governance suits a large organisation; scale it down deliberately rather than copying it. Fallback: R06.
+- R17: [GOV.UK Design System: components](https://design-system.service.gov.uk/components/) — Two component pages, read for the guidance a published component has to carry. Purpose: Shows a working example of a route in, at a scale larger than yours. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Its governance suits a large organisation; scale it down deliberately rather than copying it. Fallback: R06.
 
 ## Lesson 8: Versions and breaking changes
 
@@ -1239,5 +1239,5 @@ A review that removes things, with the reasoning, is the clearest signal that yo
 
 ### Assigned resources
 
-- R17: [GOV.UK Design System: components](https://design-system.service.gov.uk/components/) — How a published system communicates deprecation and removal, where it does. Purpose: Shows removal handled as a first-class change rather than a quiet deletion. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Larger scale than yours; take the practice and reduce the ceremony. Fallback: R06.
+- R17: [GOV.UK Design System: components](https://design-system.service.gov.uk/components/) — Two component pages, read for how usage guidance is stated and would have to be revised. Purpose: Shows removal handled as a first-class change rather than a quiet deletion. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Larger scale than yours; take the practice and reduce the ceremony. Fallback: R06.
 - R67: [Semantic Versioning 2.0.0](https://semver.org/) — The rules for breaking changes and the minimal deprecation guidance. Purpose: Classifies removal correctly and sets the deprecation period. Effort: 10–15 min. Free reading, no account, CC BY 3.0. Verified 2026-09-06. It recommends at least one minor release before removal and says nothing about how to announce it. Fallback: R18.

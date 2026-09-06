@@ -821,7 +821,7 @@ export const module18: Lesson[] = [
       },
       {
         ...standard,
-        section: "The point on solving whole problems.",
+        section: "The point on solving a whole problem for users.",
         purpose:
           "Keeps the single chosen problem framed as a whole rather than a feature.",
         minutes: "20–30 selected",
@@ -1017,7 +1017,7 @@ export const module18: Lesson[] = [
       },
       {
         ...standard,
-        section: "The point on making the service accessible to everyone.",
+        section: "The point on making sure everyone can use the service.",
         purpose:
           "Holds the accessibility work in scope when time pressure arrives.",
         minutes: "20–30 selected",
@@ -1202,7 +1202,7 @@ export const module18: Lesson[] = [
     resources: [
       {
         ...usability,
-        section: "Planning, running and moderating sessions.",
+        section: "Planning and running sessions.",
         purpose: "Supplies the testing discipline for the independent project.",
         minutes: "30–45",
         limits:
@@ -1390,7 +1390,7 @@ export const module18: Lesson[] = [
     resources: [
       {
         ...standard,
-        section: "The points on iteration and on team working.",
+        section: "The points on iterating and improving frequently and on having a multidisciplinary team.",
         purpose:
           "Frames critique as part of the delivery loop rather than a review event.",
         minutes: "20–30 selected",
@@ -1400,7 +1400,8 @@ export const module18: Lesson[] = [
       },
       {
         ...portfolio,
-        section: "What reviewers look for in a case study.",
+        section:
+          "What 204 surveyed hiring professionals said they look for, including what was left out and why.",
         purpose:
           "Explains why the defence record is worth keeping for the portfolio.",
         minutes: "15–25",
@@ -1592,9 +1593,9 @@ export const module18: Lesson[] = [
         title: "Analysis Function: data visualisation charts",
         id: "R63",
         url: "https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/",
-        section: "When a chart helps and when a sentence is better.",
+        section: "Rules for axes, gridlines and direct labelling over legends.",
         purpose:
-          "Prevents charting two numbers, which overstates a small result.",
+          "Sets the rules for drawing any chart you make from these counts.",
         minutes: "20–30",
         limits:
           "Free reading, no account. Verified 2026-09-06. UK government guidance; the reasoning about small numbers is general.",
@@ -1773,7 +1774,7 @@ export const module18: Lesson[] = [
     resources: [
       {
         ...standard,
-        section: "The points on operating the service and on support.",
+        section: "The point on operating a reliable service.",
         purpose:
           "Frames handover and continued operation as part of the design.",
         minutes: "20–30 selected",
@@ -1964,7 +1965,7 @@ export const module18: Lesson[] = [
     resources: [
       {
         ...sharing,
-        section: "Being clear about what research does and does not show.",
+        section: "Structuring findings: headline, essential facts, why it matters, supporting evidence.",
         purpose: "Grounds the discipline of stating limits alongside findings.",
         minutes: "20–30",
         limits:
@@ -2164,7 +2165,7 @@ export const module18: Lesson[] = [
       },
       {
         ...portfolio,
-        section: "Showing growth and process across projects.",
+        section: "Step 1: taking inventory of your projects and what each taught you.",
         purpose:
           "Connects the retrospective to what the next module will build.",
         minutes: "15–25",
@@ -2346,7 +2347,7 @@ export const module18: Lesson[] = [
     resources: [
       {
         ...sharing,
-        section: "Making findings findable and reusable afterwards.",
+        section: "Formats for sharing findings, from show and tells to a research wall.",
         purpose: "Shapes how the project record is assembled and stored.",
         minutes: "20–30",
         limits:

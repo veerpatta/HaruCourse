@@ -416,7 +416,7 @@ The not-building list with reasons is one of the most persuasive pages in a case
 ### Assigned resources
 
 - R47: [Ryan Singer: Shape Up](https://basecamp.com/shapeup/webbook) — Appetite, fixed time with variable scope, and risks and rabbit holes. Purpose: Supplies the scoping discipline for an independent project. Effort: 60–90 selected min. Free to read online; print edition sold and not required. Verified 2026-09-06. Scope strategy, not positioning. Fallback: R07.
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The point on solving whole problems. Purpose: Keeps the single chosen problem framed as a whole rather than a feature. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public-service framing; your project is commercial and small. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The point on solving a whole problem for users. Purpose: Keeps the single chosen problem framed as a whole rather than a feature. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Public-service framing; your project is commercial and small. Fallback: R07.
 
 ## Lesson 5: Design it, using everything you have
 
@@ -519,7 +519,7 @@ The system-mismatch list is unusual and valuable: it shows a designer who notice
 ### Assigned resources
 
 - R12: [GOV.UK: making prototypes](https://www.gov.uk/service-manual/design/making-prototypes) — Choosing fidelity and what each level can answer. Purpose: Keeps the design work proportionate to the project's appetite. Effort: 25–40 min. Free reading, no account. Verified 2026-09-06. Government context; the system reuse and mismatch recording are the course's own. Fallback: R05.
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The point on making the service accessible to everyone. Purpose: Holds the accessibility work in scope when time pressure arrives. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. A statutory obligation there; here it is a standard you are choosing to hold. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The point on making sure everyone can use the service. Purpose: Holds the accessibility work in scope when time pressure arrives. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. A statutory obligation there; here it is a standard you are choosing to hold. Fallback: R07.
 
 ## Lesson 6: Build it, test it, repair it
 
@@ -621,7 +621,7 @@ A build-test-repair loop run alone, with one failed repair reported, is the stro
 
 ### Assigned resources
 
-- R05: [GOV.UK: moderated usability testing](https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing) — Planning, running and moderating sessions. Purpose: Supplies the testing discipline for the independent project. Effort: 30–45 min. Free reading, no account. Verified 2026-09-06. Assumes a note-taker; alone, choose recording or notes as in m10. Fallback: R12.
+- R05: [GOV.UK: moderated usability testing](https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing) — Planning and running sessions. Purpose: Supplies the testing discipline for the independent project. Effort: 30–45 min. Free reading, no account. Verified 2026-09-06. Assumes a note-taker; alone, choose recording or notes as in m10. Fallback: R12.
 - R12: [GOV.UK: making prototypes](https://www.gov.uk/service-manual/design/making-prototypes) — What a prototype at each fidelity can support. Purpose: Keeps the claims from this build bounded to what it can show. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. A rough running page is not a product; state what it fakes. Fallback: R05.
 
 ## Lesson 7: Getting critique you did not choose
@@ -724,8 +724,8 @@ A critique record showing both what you changed and what you defended is evidenc
 
 ### Assigned resources
 
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on iteration and on team working. Purpose: Frames critique as part of the delivery loop rather than a review event. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Assumes a team; alone, the critique has to be sought deliberately. Fallback: R07.
-- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — What reviewers look for in a case study. Purpose: Explains why the defence record is worth keeping for the portfolio. Effort: 15–25 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. Aimed at a US hiring market. Fallback: R23.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on iterating and improving frequently and on having a multidisciplinary team. Purpose: Frames critique as part of the delivery loop rather than a review event. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Assumes a team; alone, the critique has to be sought deliberately. Fallback: R07.
+- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — What 204 surveyed hiring professionals said they look for, including what was left out and why. Purpose: Explains why the defence record is worth keeping for the portfolio. Effort: 15–25 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. Aimed at a US hiring market. Fallback: R23.
 
 ## Lesson 8: Measuring what this project can actually measure
 
@@ -828,7 +828,7 @@ A before and after in counts, with conditions and confounds named, is rare in ju
 ### Assigned resources
 
 - R59: [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings) — Reporting findings so they can be acted on and checked. Purpose: Shapes the honest reporting of a small measurement. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. Written for teams with stakeholders; here the audience is one shop owner and your portfolio reader. Fallback: R04.
-- R63: [Analysis Function: data visualisation charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/) — When a chart helps and when a sentence is better. Purpose: Prevents charting two numbers, which overstates a small result. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. UK government guidance; the reasoning about small numbers is general. Fallback: R59.
+- R63: [Analysis Function: data visualisation charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/) — Rules for axes, gridlines and direct labelling over legends. Purpose: Sets the rules for drawing any chart you make from these counts. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. UK government guidance; the reasoning about small numbers is general. Fallback: R59.
 
 ## Lesson 9: Leaving something behind that survives you
 
@@ -930,7 +930,7 @@ A handover package is the artefact most junior portfolios lack entirely, and it 
 
 ### Assigned resources
 
-- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on operating the service and on support. Purpose: Frames handover and continued operation as part of the design. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Assumes a permanent team; here it is one shop owner, so the standard is adapted rather than met. Fallback: R07.
+- R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The point on operating a reliable service. Purpose: Frames handover and continued operation as part of the design. Effort: 20–30 selected min. Free reading, no account. Verified 2026-09-06. Assumes a permanent team; here it is one shop owner, so the standard is adapted rather than met. Fallback: R07.
 - R12: [GOV.UK: making prototypes](https://www.gov.uk/service-manual/design/making-prototypes) — What a prototype is and is not fit for. Purpose: Keeps the handover honest about what was built and its limits. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. Government context; the caution about prototypes in real use is the relevant part. Fallback: R05.
 
 ## Lesson 10: Writing the limitations page
@@ -1033,7 +1033,7 @@ The limitations page is the single most persuasive document in a junior portfoli
 
 ### Assigned resources
 
-- R59: [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings) — Being clear about what research does and does not show. Purpose: Grounds the discipline of stating limits alongside findings. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. Institutional context; the honesty about scope transfers directly. Fallback: R04.
+- R59: [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings) — Structuring findings: headline, essential facts, why it matters, supporting evidence. Purpose: Grounds the discipline of stating limits alongside findings. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. Institutional context; the honesty about scope transfers directly. Fallback: R04.
 - R04: [GOV.UK: analyse a research session](https://www.gov.uk/service-manual/user-research/analyse-a-research-session) — Separating what was observed from what was inferred. Purpose: Supports the split between what you do not know and what the design lacks. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. Written for session analysis; applied here to the whole project. Fallback: R08.
 
 ## Lesson 11: Retrospective across three projects
@@ -1137,7 +1137,7 @@ A retrospective across three projects shows a trajectory rather than a snapshot,
 ### Assigned resources
 
 - R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The point on iterating and improving frequently. Purpose: Frames the retrospective as part of practice rather than a reflection exercise. Effort: 15–25 selected min. Free reading, no account. Verified 2026-09-06. Aimed at teams and services; applied here to your own practice. Fallback: R07.
-- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Showing growth and process across projects. Purpose: Connects the retrospective to what the next module will build. Effort: 15–25 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
+- R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Step 1: taking inventory of your projects and what each taught you. Purpose: Connects the retrospective to what the next module will build. Effort: 15–25 min. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
 
 ## Lesson 12: Assembling the project record
 
@@ -1239,5 +1239,5 @@ This record is the raw material for the next module. Everything the portfolio ca
 
 ### Assigned resources
 
-- R59: [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings) — Making findings findable and reusable afterwards. Purpose: Shapes how the project record is assembled and stored. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. Assumes shared team storage; adapt to your own two locations. Fallback: R04.
+- R59: [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings) — Formats for sharing findings, from show and tells to a research wall. Purpose: Shapes how the project record is assembled and stored. Effort: 20–30 min. Free reading, no account. Verified 2026-09-06. Assumes shared team storage; adapt to your own two locations. Fallback: R04.
 - R53: [GOV.UK: getting informed consent](https://www.gov.uk/service-manual/user-research/getting-users-consent-for-research) — How consent records should be stored and separated. Purpose: Keeps consent material out of anything shareable. Effort: 15–25 min. Free reading, no account. Verified 2026-09-06; last updated 5 November 2018. UK jurisdiction; check Indian requirements from a primary source. Fallback: R54.
