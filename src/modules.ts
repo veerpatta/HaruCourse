@@ -131,7 +131,7 @@ export const modules = [
     primary: "R12",
     alternative: "R05",
     output: "Low to high fidelity prototype, test and evidence-led revision",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m11",
