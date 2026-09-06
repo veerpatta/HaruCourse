@@ -191,7 +191,7 @@ export const modules = [
     primary: "R20",
     alternative: "R07",
     output: "Metric tree, funnel, experiment and uncertainty report",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m16",
