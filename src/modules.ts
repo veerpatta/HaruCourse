@@ -179,7 +179,7 @@ export const modules = [
     primary: "R18",
     alternative: "R19",
     output: "Stories, acceptance criteria, handoff and design QA",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m15",
