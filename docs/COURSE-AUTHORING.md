@@ -1,3 +1,13 @@
+## Practical apprenticeship authority — 6 September 2026
+
+This refinement supersedes earlier instructions to leave the original lessons unchanged. Keep original IDs and competencies; apply concrete setup and task support to all published lessons. `src/apprenticeship.ts` is the authored activity authority, enriched into shared Lesson objects by `withApprenticeship`; `src/journey.ts` owns workspace instructions, project briefs and module artifact handoffs. The baseline imports only its independent workspace inventory. The shared optional `apprenticeship` type is in `src/teaching.ts`; all currently published lessons must populate it.
+
+Every activity names its mission, tools, setup, copyable starter, two progressive hints, adequate evidence, output filename, save steps and next use. The diagnostic has no hints or AI support. Activities must be individually chosen for the competency, not generated from a repeating exercise pattern. Preserve the original teaching, outputs, criteria and repairs; templates assist those tasks rather than replace them.
+
+When AI helps, provide lesson context, an explicit learner-input placeholder, a bounded request, a response format, a learner-owned revision and an equivalent non-AI activity. Use simulations only as simulations. No manufactured interviews, quotes or outcomes. Keep AI optional and separate from assessed completion. Teach basic free visual-tool controls before use; keep hosted workflows optional until tested through export.
+
+`WORKSPACE-GUIDE.md` and `PORTFOLIO-PATH.md` are generated from journey content. All lesson Markdown includes the same activity material as the app and MCP. Run docs:generate, test:content and build after edits. Check templates, copy fallback, keyboard access, narrow layouts and cached offline access. Preserve storage and bookmarks. Do not add an assessment schema, external synchronization or AI API as part of lesson authoring.
+
 # Course authoring contract
 
 Mobile layouts keep sections reachable while scrolling, use touch targets of at least 44px, and leave Back/Next clear of active timers and bottom navigation. Keep idle timers in normal flow. Verify 320px and 390px layouts, long references, focus transitions and desktop. Browser focus emulation is not proof of native soft-keyboard behavior.

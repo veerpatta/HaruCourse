@@ -1,3 +1,11 @@
+## Practical apprenticeship refinement — 6 September 2026
+
+The approved implementation adds concrete workspace setup, individually authored activity briefs, copyable starter templates, progressive hints, explicit save instructions and artifact handoffs to the baseline and all 30 published lessons. The diagnostic remains independent, with an inventory template and no hints or AI coaching. Essential setup must remain visible; concise presentation must not remove actionable instructions.
+
+Optional lesson-specific text-chat rehearsals support the learner's own first attempt. Every prompt has a non-AI alternative, bounded response, evidence restrictions and a learner-owned revision. No paid model, API, upload or subscription is required. AI does not establish mastery or substitute for research.
+
+Three project packs offer two briefs each, selected around real participant access. The Course map connects starting evidence, challenge, tools, saved work and later use across all 21 modules. m05 onward remains planned. Foundation artifacts build an evidence bank rather than automatically becoming case studies. Formal assessment and external-file synchronization remain unimplemented.
+
 ## Latest agreed refinement — concise course experience, 6 September 2026
 
 - Preserve the cream, green, serif design language on mobile and desktop.

@@ -32,6 +32,87 @@ Weight and case do work that size cannot. A heavier weight separates a label fro
 
 A workshop detail screen designed with eight sizes was rebuilt with five: 32/24/16/14/12. The title dropped from 40 to 32 and moved to a heavier weight, the two “supporting” sizes were merged into one 14, and the metadata row became 12 in a heavier weight instead of a lighter grey. At 390 px wide the title now holds one line, the date and price line is readable at arm's length, and the section headings are still obviously headings — with three fewer sizes to maintain.
 
+#### Typography comparison bench
+
+Rebuild one workshop screen with two candidate type scales. Compare hierarchy at narrow width and with enlarged text before choosing.
+
+**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+
+- Starting material: The three screens and workshop flow you produced in Product Design Foundations. You will re-typeset one of those screens rather than starting a new design.
+- Create HaruCourse/Practice/m03-l01-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+- Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# A type scale that survives the screen
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Text role | Size | Weight | Line height | Narrow-width result | Enlarged-text result | Decision
+--- | --- | --- | --- | --- | --- | ---
+[heading / body / label] | [value and unit] | [value] | [value] | [observation] | [observation] | [reason]
+
+## Output checklist
+- [ ] A type scale table of five or six steps with size, weight and job; one screen re-typeset with it; the same screen at narrow width and at enlarged text; and a short note of what broke.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+<details>
+<summary>Optional Figma Starter route (workflow not authenticated)</summary>
+
+- Optional route: open figma.com and sign in to a free Starter account. Decline upgrades and trials. If an assigned control is unavailable, use the paper route; no paid feature is required.
+- Create a Design file in Drafts and rename it with the lesson ID. Use the Frame tool (F) to draw a screen boundary; set its width and height in the right panel. A frame groups one screen’s content.
+- Use Text (T) for actual labels and Rectangle (R) for control boundaries. Select a layer to edit text size, fill and dimensions in the right panel. Start with these tools, not plugins or generated UI.
+- Duplicate the frame before revising. Name the frames Before and After, or use the state IDs from your flow. For layout comparisons, duplicate again and change width; reposition content deliberately. A static frame does not prove browser reflow.
+- To export, select the frame, find Export in the right panel, add an export setting, choose PNG and export. Open the downloaded image to check readable labels and uncropped content; keep it beside work.md.
+- This route is documented but has not been tested in a signed-in Starter account for this release. Paper is the supported introductory route until that workflow is verified. Deeper components and prototyping training belongs to mapped later modules.
+
+</details>
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Inventory roles before choosing sizes; two labels serving the same role should not drift accidentally.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Use the longest heading in both comparisons. Record whether you tested actual reflow or only a paper approximation.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m03-l01-v1/work.md. Keep source observations separate from interpretations.
+- Keep labelled paper originals or save readable images as before-01.jpg and after-01.jpg in the same folder. Preserve any editable digital source.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** The scale gives explicit values and shows what happened in both hard cases, with the testing method labelled.
+
+**Bring forward:** Bring the chosen scale and original screen into the readability experiment.
+
+
 ### Practice and pause points
 
 - Read and inventory (~20 min): Read the assigned typography section. Then list every distinct text size, weight and colour already present in one of your Module 1 screens. Most people find more than they expected; write the real count.
@@ -133,6 +214,87 @@ Real content changes all of these numbers. Placeholder text has even word length
 ### Worked example
 
 A workshop description set at 16 px across a full 1280 px container ran to about 140 characters a line. Readers testing the page kept re-reading lines. Constraining the text column to roughly 65 characters and setting line height to 1.5 fixed the re-reading without changing the font, the size or the colour. On the phone the measure was already narrow, so the same block needed line height nearer 1.4 and a larger gap between paragraphs instead.
+
+#### Worst-content stress test
+
+Test a long title, paragraph and action label in your screen. Compare two text-column widths without shortening the content to hide problems.
+
+**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+
+- Starting material: The type scale and re-typeset screen from the previous lesson, plus at least one paragraph of real content — not placeholder text.
+- Create HaruCourse/Practice/m03-l02-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+- Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Readability: measure, leading and the small screen
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Content sample | Column width | Line height | Wrapping / clipping | Change | Reason
+--- | --- | --- | --- | --- | ---
+[paste your longest text] | [value] | [value] | [what happened] | [adjustment] | [why]
+
+## Output checklist
+- [ ] One content block with stated measure, line height and block spacing values, a worst-case content list, narrow and enlarged renderings, and a reason for each value.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+<details>
+<summary>Optional Figma Starter route (workflow not authenticated)</summary>
+
+- Optional route: open figma.com and sign in to a free Starter account. Decline upgrades and trials. If an assigned control is unavailable, use the paper route; no paid feature is required.
+- Create a Design file in Drafts and rename it with the lesson ID. Use the Frame tool (F) to draw a screen boundary; set its width and height in the right panel. A frame groups one screen’s content.
+- Use Text (T) for actual labels and Rectangle (R) for control boundaries. Select a layer to edit text size, fill and dimensions in the right panel. Start with these tools, not plugins or generated UI.
+- Duplicate the frame before revising. Name the frames Before and After, or use the state IDs from your flow. For layout comparisons, duplicate again and change width; reposition content deliberately. A static frame does not prove browser reflow.
+- To export, select the frame, find Export in the right panel, add an export setting, choose PNG and export. Open the downloaded image to check readable labels and uncropped content; keep it beside work.md.
+- This route is documented but has not been tested in a signed-in Starter account for this release. Paper is the supported introductory route until that workflow is verified. Deeper components and prototyping training belongs to mapped later modules.
+
+</details>
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Use the same content in both versions so you are comparing layout rather than writing.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Look for a button label that wraps poorly and a paragraph whose lines are hard to track; adjust one variable at a time.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m03-l02-v1/work.md. Keep source observations separate from interpretations.
+- Keep labelled paper originals or save readable images as before-01.jpg and after-01.jpg in the same folder. Preserve any editable digital source.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** Before/after examples show readable content at both widths and document the effect of measure and leading.
+
+**Bring forward:** Keep the readable layout as the base for color decisions.
+
 
 ### Practice and pause points
 
@@ -237,6 +399,87 @@ Colour also carries convention, and convention is regional and contextual rather
 
 A booking list showed status as a coloured dot: green confirmed, amber pending, red cancelled. In greyscale all three dots became mid-grey circles and the list became unreadable. The repair was not a new palette but a second channel: each dot kept its colour and gained a distinct shape and the status word beside it. The colour still helps people who can use it, and no longer carries the meaning alone.
 
+#### Color meaning repair
+
+Imagine a status list whose only distinction is a red or green dot. Redesign its meaning with text and shape as well as color, then apply that lesson to your screen.
+
+**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+
+- Starting material: Your re-typeset screen and worst-case content list. You will recolour that screen, not design a new one.
+- Create HaruCourse/Practice/m03-l03-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+- Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Colour that carries meaning, not decoration
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Meaning | Color value | Text / shape cue | Grayscale result | Cultural assumption | Repair
+--- | --- | --- | --- | --- | ---
+[status meaning] | [hex] | [visible cue] | [still understandable?] | [assumption] | [change]
+
+## Output checklist
+- [ ] A palette table of role, value and meaning; the recoloured screen; a greyscale version; and a list of information that failed the greyscale test with the second channel you added for each.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+<details>
+<summary>Optional Figma Starter route (workflow not authenticated)</summary>
+
+- Optional route: open figma.com and sign in to a free Starter account. Decline upgrades and trials. If an assigned control is unavailable, use the paper route; no paid feature is required.
+- Create a Design file in Drafts and rename it with the lesson ID. Use the Frame tool (F) to draw a screen boundary; set its width and height in the right panel. A frame groups one screen’s content.
+- Use Text (T) for actual labels and Rectangle (R) for control boundaries. Select a layer to edit text size, fill and dimensions in the right panel. Start with these tools, not plugins or generated UI.
+- Duplicate the frame before revising. Name the frames Before and After, or use the state IDs from your flow. For layout comparisons, duplicate again and change width; reposition content deliberately. A static frame does not prove browser reflow.
+- To export, select the frame, find Export in the right panel, add an export setting, choose PNG and export. Open the downloaded image to check readable labels and uncropped content; keep it beside work.md.
+- This route is documented but has not been tested in a signed-in Starter account for this release. Paper is the supported introductory route until that workflow is verified. Deeper components and prototyping training belongs to mapped later modules.
+
+</details>
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Cover the colored mark and check whether the status remains understandable.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Color associations depend on context. Label your assumption rather than calling a color universally positive.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m03-l03-v1/work.md. Keep source observations separate from interpretations.
+- Keep labelled paper originals or save readable images as before-01.jpg and after-01.jpg in the same folder. Preserve any editable digital source.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** Status meaning survives without hue, with semantic roles and exact candidate color values recorded.
+
+**Bring forward:** Bring the foreground/background pairs to measured contrast checking.
+
+
 ### Practice and pause points
 
 - Read and list roles (~25 min): Read the assigned colour material. Then write the roles your screen actually needs — surface, text, secondary text, action, and each status — before opening any colour picker.
@@ -337,7 +580,88 @@ Contrast is a floor for legibility, not a proof of readability. A screen can pas
 
 ### Worked example
 
-A workshop card used mid-grey #999999 body text on white — about 2.8:1, below the 4.5:1 floor. Rather than abandon the grey, the palette kept it for a large 24 px heading, where the 3:1 large-text threshold applies and it passes, and body text moved to a darker grey that measures about 7:1. The visual softness the designer wanted was preserved exactly where it was legitimate, and removed where it was not.
+A workshop card used mid-grey #999999 body text on white — about 2.8:1, below the 4.5:1 floor. That grey also fails the 3:1 large-text threshold, so enlarging it alone cannot repair the contrast. The designer darkened the heading color until a new measurement exceeded 3:1, and moved body text to a darker grey that measures about 7:1. The visual softness the designer wanted was preserved exactly where it was legitimate, and removed where it was not.
+
+#### Contrast evidence lab
+
+Measure the actual foreground/background pairs in your design, repair failing pairs and measure them again. A visual impression is not a ratio.
+
+**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+
+- Starting material: Your palette table and recoloured screen from the previous lesson.
+- Create HaruCourse/Practice/m03-l04-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+- Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Contrast you can defend
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Use | Foreground hex | Background hex | Text size / weight | Ratio | Applicable criterion | Repair ratio | Tool / date
+--- | --- | --- | --- | --- | --- | --- | ---
+[body text] | [#......] | [#......] | [actual values] | [measured] | [assigned criterion] | [remeasured] | [method]
+
+## Output checklist
+- [ ] A contrast table covering every text and essential non-text element with colour, background, size, threshold and measured ratio, before and after repair, plus a note on your own reading test.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+<details>
+<summary>Optional Figma Starter route (workflow not authenticated)</summary>
+
+- Optional route: open figma.com and sign in to a free Starter account. Decline upgrades and trials. If an assigned control is unavailable, use the paper route; no paid feature is required.
+- Create a Design file in Drafts and rename it with the lesson ID. Use the Frame tool (F) to draw a screen boundary; set its width and height in the right panel. A frame groups one screen’s content.
+- Use Text (T) for actual labels and Rectangle (R) for control boundaries. Select a layer to edit text size, fill and dimensions in the right panel. Start with these tools, not plugins or generated UI.
+- Duplicate the frame before revising. Name the frames Before and After, or use the state IDs from your flow. For layout comparisons, duplicate again and change width; reposition content deliberately. A static frame does not prove browser reflow.
+- To export, select the frame, find Export in the right panel, add an export setting, choose PNG and export. Open the downloaded image to check readable labels and uncropped content; keep it beside work.md.
+- This route is documented but has not been tested in a signed-in Starter account for this release. Paper is the supported introductory route until that workflow is verified. Deeper components and prototyping training belongs to mapped later modules.
+
+</details>
+
+Use the offline contrast calculator in this lesson’s Do section. It accepts opaque six-digit sRGB colors; classification and exceptions come from R30. Record exact input values and the unrounded-threshold result, not only the displayed ratio.
+
+<details>
+<summary>Hint 1</summary>
+
+Read the assigned W3C criterion before selecting a threshold; text and non-text uses differ.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+For paper work, specify candidate hex pairs and measure them in the supplied local calculator. Do not measure photographed swatches as exact design colors.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m03-l04-v1/work.md. Keep source observations separate from interpretations.
+- Keep labelled paper originals or save readable images as before-01.jpg and after-01.jpg in the same folder. Preserve any editable digital source.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** Every claimed pass names values, method and applicable criterion; repairs have new measurements.
+
+**Bring forward:** Save approved pairs for the token sheet. A contrast check alone is not a full accessibility audit.
+
 
 ### Practice and pause points
 
@@ -349,7 +673,7 @@ A workshop card used mid-grey #999999 body text on white — about 2.8:1, below 
 
 Pause after any step; save the artifact and next action.
 
-**Free tool path.** Free contrast checkers run in any browser and need no account; browser developer tools also report a ratio when you inspect text. If you are working on paper, take a photo of your screen or swatches, and compare against printed reference pairs — record that your method was approximate rather than presenting an unmeasured number as measured.
+**Free tool path.** Use the local contrast calculator in this lesson’s Do section: enter the six-digit foreground and background hex values, record the ratio and compare with the applicable assigned criterion. It works offline without an account. For paper work, specify intended hex pairs and measure those; a photograph or printed swatch does not establish exact design-color contrast. Transparent or image backgrounds need separate effective-color checks.
 
 ### Output
 
@@ -441,6 +765,87 @@ These principles describe how perception tends to work; they do not tell you wha
 ### Worked example
 
 A workshop detail screen listed date, time, location, price, instructor and materials as six evenly spaced lines, and readers kept missing the materials note. Regrouping without changing a single word: date and time drew together as one “when” group, location stood alone, price and instructor became a “details” pair, and materials moved into its own region with a shared background. Total height changed by a few pixels; the materials line stopped being missed by the two people asked to find it — which is a signal, not a finding.
+
+#### Cut-and-sort layout experiment
+
+Cut workshop information into separate paper pieces and regroup it using space first. Compare two groupings without rewriting any words.
+
+**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+
+- Starting material: Your recoloured, contrast-repaired screen, and the densest screen from your Module 1 set.
+- Create HaruCourse/Practice/m03-l05-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+- Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Gestalt grouping, and where it stops working
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Information group | Intended relationship | Space / region / border | Possible misreading | Counterexample
+--- | --- | --- | --- | ---
+[group] | [relationship] | [chosen cue] | [risk] | [when cue misleads]
+
+## Output checklist
+- [ ] The dense screen before and after regrouping, a note of which grouping tool each group required and why, and one worked counterexample where a principle misleads.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+<details>
+<summary>Optional Figma Starter route (workflow not authenticated)</summary>
+
+- Optional route: open figma.com and sign in to a free Starter account. Decline upgrades and trials. If an assigned control is unavailable, use the paper route; no paid feature is required.
+- Create a Design file in Drafts and rename it with the lesson ID. Use the Frame tool (F) to draw a screen boundary; set its width and height in the right panel. A frame groups one screen’s content.
+- Use Text (T) for actual labels and Rectangle (R) for control boundaries. Select a layer to edit text size, fill and dimensions in the right panel. Start with these tools, not plugins or generated UI.
+- Duplicate the frame before revising. Name the frames Before and After, or use the state IDs from your flow. For layout comparisons, duplicate again and change width; reposition content deliberately. A static frame does not prove browser reflow.
+- To export, select the frame, find Export in the right panel, add an export setting, choose PNG and export. Open the downloaded image to check readable labels and uncropped content; keep it beside work.md.
+- This route is documented but has not been tested in a signed-in Starter account for this release. Paper is the supported introductory route until that workflow is verified. Deeper components and prototyping training belongs to mapped later modules.
+
+</details>
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Move pieces closer before drawing boxes around them.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Try grouping an unrelated item by proximity. This exposes why a visual principle is not proof of the correct information structure.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m03-l05-v1/work.md. Keep source observations separate from interpretations.
+- Keep labelled paper originals or save readable images as before-01.jpg and after-01.jpg in the same folder. Preserve any editable digital source.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** The comparison explains both the intended grouping and a case where its cue could mislead.
+
+**Bring forward:** Use your preferred grouping to define repeatable spacing.
+
 
 ### Practice and pause points
 
@@ -544,6 +949,87 @@ Space interacts with the reader's text settings. If gaps are fixed distances whi
 
 A booking list used gaps of 6, 8, 10, 12, 13, 16, 18, 20 and 24 px, with no rule. Replacing them with a scale of 4, 8, 16, 24, 40 forced the question of what each gap was for: 8 inside a row between label and value, 16 between rows, 40 between the list and the next section. The screen became one pixel shorter overall and immediately readable as a list of items rather than a wall of text — and the engineer implementing it had five values instead of nine.
 
+#### Spacing system cleanup
+
+Inventory gaps in one screen, choose a small spacing scale and rebuild the layout using named gaps instead of isolated adjustments.
+
+**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+
+- Starting material: The regrouped screen from the previous lesson and your type scale.
+- Create HaruCourse/Practice/m03-l06-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+- Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Spacing as a system
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Gap location | Old value | Scale token | New value | Relationship communicated | Exception reason
+--- | --- | --- | --- | --- | ---
+[between two elements] | [measurement] | [name] | [value] | [relationship] | [if needed]
+
+## Output checklist
+- [ ] A named spacing scale with base unit and rule; a before and after gap audit; and a per-group table showing inside gap versus surrounding gap.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+<details>
+<summary>Optional Figma Starter route (workflow not authenticated)</summary>
+
+- Optional route: open figma.com and sign in to a free Starter account. Decline upgrades and trials. If an assigned control is unavailable, use the paper route; no paid feature is required.
+- Create a Design file in Drafts and rename it with the lesson ID. Use the Frame tool (F) to draw a screen boundary; set its width and height in the right panel. A frame groups one screen’s content.
+- Use Text (T) for actual labels and Rectangle (R) for control boundaries. Select a layer to edit text size, fill and dimensions in the right panel. Start with these tools, not plugins or generated UI.
+- Duplicate the frame before revising. Name the frames Before and After, or use the state IDs from your flow. For layout comparisons, duplicate again and change width; reposition content deliberately. A static frame does not prove browser reflow.
+- To export, select the frame, find Export in the right panel, add an export setting, choose PNG and export. Open the downloaded image to check readable labels and uncropped content; keep it beside work.md.
+- This route is documented but has not been tested in a signed-in Starter account for this release. Paper is the supported introductory route until that workflow is verified. Deeper components and prototyping training belongs to mapped later modules.
+
+</details>
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Measure gaps between content edges consistently; do not switch between baselines and bounding boxes.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+An exception is acceptable when you can explain the relationship it serves.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m03-l06-v1/work.md. Keep source observations separate from interpretations.
+- Keep labelled paper originals or save readable images as before-01.jpg and after-01.jpg in the same folder. Preserve any editable digital source.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** A compact scale accounts for the rebuilt screen, with intentional exceptions documented.
+
+**Bring forward:** Bring spacing tokens to the responsive grid exercise.
+
+
 ### Practice and pause points
 
 - Audit the real gaps (~20 min): Measure and list every distinct vertical gap in your screen. Write the actual count; a large number is the normal starting point, not a failure.
@@ -645,6 +1131,87 @@ Alignment does most of the work a grid gets credit for. A consistent left edge s
 ### Worked example
 
 A workshop list was designed at 1280 px as a three-column card grid with filters in a left sidebar. Narrowing it gradually, the cards became unreadably squeezed at around 900 px, so the grid dropped to two columns there; below about 620 px the filters could no longer sit beside the list, so they moved above it as a single collapsed control, and the card grid became one column. Neither number came from a device — both came from the point at which the content stopped reading.
+
+#### Responsive constraint challenge
+
+Arrange the same content at narrow, middle and wide widths. Decide where the structure must change because content no longer fits.
+
+**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+
+- Starting material: Your spacing scale and the regrouped screen. You will keep the content identical and change only its arrangement.
+- Create HaruCourse/Practice/m03-l07-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+- Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Grid and layout structure that reflows
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Width | Columns | Outer margin | Gap | Content failure | Structural change | Reading order
+--- | --- | --- | --- | --- | --- | ---
+[width and unit] | [count] | [value] | [value] | [what stops working] | [your response] | [sequence]
+
+## Output checklist
+- [ ] A stated column, gutter and margin structure; the same content at narrow, medium and wide widths; a change-point table giving each width and the content reason; and the narrow reading order.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+<details>
+<summary>Optional Figma Starter route (workflow not authenticated)</summary>
+
+- Optional route: open figma.com and sign in to a free Starter account. Decline upgrades and trials. If an assigned control is unavailable, use the paper route; no paid feature is required.
+- Create a Design file in Drafts and rename it with the lesson ID. Use the Frame tool (F) to draw a screen boundary; set its width and height in the right panel. A frame groups one screen’s content.
+- Use Text (T) for actual labels and Rectangle (R) for control boundaries. Select a layer to edit text size, fill and dimensions in the right panel. Start with these tools, not plugins or generated UI.
+- Duplicate the frame before revising. Name the frames Before and After, or use the state IDs from your flow. For layout comparisons, duplicate again and change width; reposition content deliberately. A static frame does not prove browser reflow.
+- To export, select the frame, find Export in the right panel, add an export setting, choose PNG and export. Open the downloaded image to check readable labels and uncropped content; keep it beside work.md.
+- This route is documented but has not been tested in a signed-in Starter account for this release. Paper is the supported introductory route until that workflow is verified. Deeper components and prototyping training belongs to mapped later modules.
+
+</details>
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Use the spacing scale, but let content failure explain the change point.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Paper frames model layout intent; mark real browser behavior as untested unless you actually resize a working page.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m03-l07-v1/work.md. Keep source observations separate from interpretations.
+- Keep labelled paper originals or save readable images as before-01.jpg and after-01.jpg in the same folder. Preserve any editable digital source.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** Three layouts preserve task priority and explain content-driven changes rather than merely shrinking everything.
+
+**Bring forward:** Add grid decisions and their limits to the token documentation.
+
 
 ### Practice and pause points
 
@@ -748,6 +1315,98 @@ Tokens are also where your accessibility work becomes durable. If your contrast 
 
 A first sheet listed twenty-two colours by hex with no names. Rewritten as nine role-named tokens with usage notes, it exposed three problems immediately: two hexes were doing the same job and could merge, one grey had no role at all and was deleted, and the pairing note revealed that the secondary text colour had never been checked against the raised surface — where it measured 3.1:1 and failed. The sheet found a defect the screen review had missed.
 
+#### Handoff documentation desk
+
+Combine your type, color and spacing decisions into a token sheet that another person could use without asking which value you meant.
+
+**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+
+- Starting material: Your type scale, palette, contrast table, spacing scale and layout structure.
+- Create HaruCourse/Practice/m03-l08-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# A token sheet somebody else could build from
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Token name | Value and unit | Semantic role | Use | Avoid | Evidence reference
+--- | --- | --- | --- | --- | ---
+[role-based name] | [exact value] | [meaning] | [where] | [misuse] | [earlier test]
+
+## Output checklist
+- [ ] A token sheet of role-named type, colour and spacing tokens with values, usage notes and prohibitions; a permitted-pairing contrast check; and the list of gaps found by the build-it test.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Name a purpose such as text-muted instead of a particular location such as left-gray.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+A value without a unit or usage rule leaves implementation decisions unresolved.
+
+</details>
+
+<details>
+<summary>Optional AI rehearsal</summary>
+
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: A token sheet somebody else could build from.
+Task: Combine your type, color and spacing decisions into a token sheet that another person could use without asking which value you meant.
+Act as an engineer reading only my token table. Ask about one ambiguous value or usage rule at a time; do not invent implementation requirements.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant table rows and describe the artifact in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Hide your screen and try drawing one component from the token sheet alone. Record every missing instruction.
+
+</details>
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m03-l08-v1/work.md. Keep source observations separate from interpretations.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** Tokens have unambiguous values, roles and examples, including links to contrast and layout evidence.
+
+**Bring forward:** Use this sheet to specify the component states in the next lesson.
+
+
 ### Practice and pause points
 
 - Convert decisions to named tokens (~30 min): Write every type, colour and spacing decision as a name, a value and a one-line role. Use role-based names throughout.
@@ -850,6 +1509,87 @@ This is a foundations pass, not the complete component repertoire. You are provi
 
 A primary button was specified once, in default. Building its states from the token sheet exposed four undocumented decisions: focus had no token at all, hover reused a colour that failed against the raised surface, disabled had been drawn at 40 per cent opacity so its label became unreadable, and there was no loading appearance despite the booking action taking two seconds. Four states, four gaps — none visible in the original screen.
 
+#### Component state storyboard
+
+Specify one component across default, hover, focus, disabled and loading states, using the token sheet rather than introducing unexplained values.
+
+**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+
+- Starting material: Your token sheet and the gap list from the build-it test.
+- Create HaruCourse/Practice/m03-l09-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+- Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Applying the system to one component set
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+State | Trigger | Visible label / cue | Token references | Available action | Accessibility intent
+--- | --- | --- | --- | --- | ---
+[state] | [event] | [actual text or cue] | [names] | [action] | [intent, not tested behavior]
+
+## Output checklist
+- [ ] One component specified in all its states, a state table giving state, triggering condition and tokens used, the new tokens added to the sheet, and the disabled-state explanation text.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+<details>
+<summary>Optional Figma Starter route (workflow not authenticated)</summary>
+
+- Optional route: open figma.com and sign in to a free Starter account. Decline upgrades and trials. If an assigned control is unavailable, use the paper route; no paid feature is required.
+- Create a Design file in Drafts and rename it with the lesson ID. Use the Frame tool (F) to draw a screen boundary; set its width and height in the right panel. A frame groups one screen’s content.
+- Use Text (T) for actual labels and Rectangle (R) for control boundaries. Select a layer to edit text size, fill and dimensions in the right panel. Start with these tools, not plugins or generated UI.
+- Duplicate the frame before revising. Name the frames Before and After, or use the state IDs from your flow. For layout comparisons, duplicate again and change width; reposition content deliberately. A static frame does not prove browser reflow.
+- To export, select the frame, find Export in the right panel, add an export setting, choose PNG and export. Open the downloaded image to check readable labels and uncropped content; keep it beside work.md.
+- This route is documented but has not been tested in a signed-in Starter account for this release. Paper is the supported introductory route until that workflow is verified. Deeper components and prototyping training belongs to mapped later modules.
+
+</details>
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Draw the states in a row so changes can be compared directly.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Hover cannot carry information needed on touch. A focus drawing documents intent; it does not prove working keyboard access.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m03-l09-v1/work.md. Keep source observations separate from interpretations.
+- Keep labelled paper originals or save readable images as before-01.jpg and after-01.jpg in the same folder. Preserve any editable digital source.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** Each state has a trigger, visible response and named tokens, with specification distinguished from runtime testing.
+
+**Bring forward:** Bring the state set and token sheet into the module rebuild review.
+
+
 ### Practice and pause points
 
 - Choose the component and enumerate states (~20 min): Pick one component your screen genuinely needs. List every state it will really have, including the condition that produces each one.
@@ -951,6 +1691,87 @@ Visual craft has real limits worth naming. A refreshed screen can improve legibi
 ### Worked example
 
 A rebuilt workshop detail screen needed six values not on the token sheet — a focus colour on a dark surface, two spacing values for a dense metadata row, and three type sizes for a table. The heuristic review then found four issues, only one of which the visual refresh had addressed: the error message still appeared far from the field that caused it, which is a visibility-of-status problem no palette can fix. The write-up recorded one improvement, three unresolved issues and zero measured outcomes.
+
+#### Independent craft review
+
+Rebuild your original screen with the system you developed, then defend the changes using your saved comparisons and measurements.
+
+**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+
+- Starting material: Your original Module 1 screen, the token sheet, the component state table and every artefact from this module.
+- Create HaruCourse/Practice/m03-l10-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+- Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Rebuild and critique: what the system changed
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Before reference | After reference | Intended improvement | Evidence | Trade-off | Unverified claim | Next test
+--- | --- | --- | --- | --- | --- | ---
+[original] | [revision] | [specific change] | [test reference] | [cost] | [limit] | [check]
+
+## Output checklist
+- [ ] The rebuilt screen, a log of every value not covered by the token sheet, a heuristic review of both versions, the three-column change table, and the list of issues visual work cannot fix with the module that addresses each.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+<details>
+<summary>Optional Figma Starter route (workflow not authenticated)</summary>
+
+- Optional route: open figma.com and sign in to a free Starter account. Decline upgrades and trials. If an assigned control is unavailable, use the paper route; no paid feature is required.
+- Create a Design file in Drafts and rename it with the lesson ID. Use the Frame tool (F) to draw a screen boundary; set its width and height in the right panel. A frame groups one screen’s content.
+- Use Text (T) for actual labels and Rectangle (R) for control boundaries. Select a layer to edit text size, fill and dimensions in the right panel. Start with these tools, not plugins or generated UI.
+- Duplicate the frame before revising. Name the frames Before and After, or use the state IDs from your flow. For layout comparisons, duplicate again and change width; reposition content deliberately. A static frame does not prove browser reflow.
+- To export, select the frame, find Export in the right panel, add an export setting, choose PNG and export. Open the downloaded image to check readable labels and uncropped content; keep it beside work.md.
+- This route is documented but has not been tested in a signed-in Starter account for this release. Paper is the supported introductory route until that workflow is verified. Deeper components and prototyping training belongs to mapped later modules.
+
+</details>
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Choose which evidence best supports each decision; do not repeat every exercise in the presentation.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+A polished comparison is a craft artifact. A full case study also needs a real problem, research, testing and honest outcomes.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m03-l10-v1/work.md. Keep source observations separate from interpretations.
+- Keep labelled paper originals or save readable images as before-01.jpg and after-01.jpg in the same folder. Preserve any editable digital source.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** The review traces changes to the system and evidence while identifying remaining usability questions.
+
+**Bring forward:** File selected comparisons in your evidence bank; reuse the method, not unsupported outcomes, in Project 1.
+
 
 ### Practice and pause points
 

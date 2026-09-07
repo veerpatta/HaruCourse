@@ -47,6 +47,78 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 
 ### Do
 
+#### Research planning desk
+
+Choose a real uncertainty from Module 1 and plan the smallest ethical study that could change your decision.
+
+**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+
+- Starting material: Bring Module 1 Lesson 5’s flow, screens and unresolved questions.
+- Create HaruCourse/Practice/week2-day1-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Choose the evidence you need
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Decision | Uncertainty | Method and why | Participant access | Consent | Task / question | Limitation
+--- | --- | --- | --- | --- | --- | ---
+[decision at risk] | [unknown] | [method] | [reachable adults, no names here] | [consent plan] | [neutral task] | [boundary]
+
+## Output checklist
+- [ ] One-page study plan
+- [ ] Session guide and consent introduction
+- [ ] Note-taking template
+- [ ] Participant-access status
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Choose the question before the method; an interview about past behavior and a prototype task answer different questions.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+If access is missing, record who is needed and prepare materials. A self-pilot only checks the materials.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/week2-day1-v1/work.md. Keep source observations separate from interpretations.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** The method fits the uncertainty and includes consent, neutral tasks, recruitment status and limits.
+
+**Bring forward:** Bring actual anonymized notes to synthesis; otherwise use clearly labelled practice notes without asserting findings.
+
+
 Make these:
 
 - One-page study plan
@@ -194,6 +266,101 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 
 ### Do
 
+#### Evidence sorting room
+
+Cut or copy individual observations into separate notes, group them, then trace every proposed finding back to its source.
+
+**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+
+- Starting material: Bring consented notes, or use the four explicitly simulated notes in the worked example.
+- Create HaruCourse/Practice/week2-day2-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Turn notes into traceable findings
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Note ID | Session ID / synthetic label | Observation | Group | Interpretation | Design implication | Counterevidence
+--- | --- | --- | --- | --- | --- | ---
+N01 | [source] | [one observation] | [working label] | [your interpretation] | [possible response] | [contradiction or missing evidence]
+
+## Output checklist
+- [ ] Observation table with source IDs and source type
+- [ ] Two tentative findings with supporting and contrary evidence
+- [ ] Confidence and unanswered questions
+- [ ] One possible design implication
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Keep one observation per note. Give notes IDs before moving them into groups.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+A group title is a hypothesis about a pattern. Keep contradictory notes visible instead of discarding them.
+
+</details>
+
+<details>
+<summary>Optional AI rehearsal</summary>
+
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Turn notes into traceable findings.
+Task: Cut or copy individual observations into separate notes, group them, then trace every proposed finding back to its source.
+Inspect my anonymized evidence chain. Ask which source supports one interpretation and identify a possible alternative explanation; do not invent notes.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant table rows and describe the artifact in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Pick your strongest claim and trace it backward to a note. Write one other explanation for that same note.
+
+</details>
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/week2-day2-v1/work.md. Keep source observations separate from interpretations.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** A reviewer can follow an implication back through an interpretation to a specific source note.
+
+**Bring forward:** Carry the evidence chains and their limitations into opportunity selection.
+
+
 Make these:
 
 - Observation table with source IDs and source type
@@ -339,6 +506,78 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 
 ### Do
 
+#### Opportunity decision table
+
+Compare three changes against your evidence, select a small opportunity and write the observation that could disprove its value.
+
+**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+
+- Starting material: Bring Lesson 2’s findings and their limitations.
+- Create HaruCourse/Practice/week2-day3-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Choose a small, testable opportunity
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Option | Evidence IDs | Benefit hypothesis | Effort / risk | Test | Signal to reconsider
+--- | --- | --- | --- | --- | ---
+[option] | [note IDs] | [expected change] | [constraint] | [neutral task] | [observable result]
+
+## Output checklist
+- [ ] Comparison of three different options
+- [ ] One choice with trade-off and excluded scope
+- [ ] Hypothesis, success signal and counter-evidence
+- [ ] Neutral task scenario
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+A large feature list makes it harder to learn which change mattered.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Write your reconsideration signal before testing, so an inconvenient result cannot quietly disappear.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/week2-day3-v1/work.md. Keep source observations separate from interpretations.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** The selected opportunity is smaller than the whole product and has an evidence link and a disconfirming signal.
+
+**Bring forward:** Bring the chosen hypothesis and test task into prototyping.
+
+
 Make these:
 
 - Comparison of three different options
@@ -476,6 +715,90 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 </details>
 
 ### Do
+
+#### Paper prototype theatre
+
+Build only the states needed to test your chosen hypothesis. Act as the system by swapping paper screens after the person indicates an action.
+
+**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+
+- Starting material: Bring Lesson 3’s hypothesis and Module 1 layouts. Use paper or your existing tool.
+- Create HaruCourse/Practice/week2-day4-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+- Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Build a prototype that can answer a question
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+State ID | Visible content | Trigger | Next state | What this prototype can / cannot test
+--- | --- | --- | --- | ---
+S01 | [actual content] | [person’s action] | [state ID] | [scope boundary]
+
+## Output checklist
+- [ ] Prototype and interaction map
+- [ ] One working recovery path
+- [ ] Neutral scenario and reset state
+- [ ] Known limitations
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+<details>
+<summary>Optional Figma Starter route (workflow not authenticated)</summary>
+
+- Optional route: open figma.com and sign in to a free Starter account. Decline upgrades and trials. If an assigned control is unavailable, use the paper route; no paid feature is required.
+- Create a Design file in Drafts and rename it with the lesson ID. Use the Frame tool (F) to draw a screen boundary; set its width and height in the right panel. A frame groups one screen’s content.
+- Use Text (T) for actual labels and Rectangle (R) for control boundaries. Select a layer to edit text size, fill and dimensions in the right panel. Start with these tools, not plugins or generated UI.
+- Duplicate the frame before revising. Name the frames Before and After, or use the state IDs from your flow. For layout comparisons, duplicate again and change width; reposition content deliberately. A static frame does not prove browser reflow.
+- To export, select the frame, find Export in the right panel, add an export setting, choose PNG and export. Open the downloaded image to check readable labels and uncropped content; keep it beside work.md.
+- This route is documented but has not been tested in a signed-in Starter account for this release. Paper is the supported introductory route until that workflow is verified. Deeper components and prototyping training belongs to mapped later modules.
+
+</details>
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Write the neutral task on a separate card; do not include the button label they should press.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Prepare failure and recovery cards before the pilot. A paper prototype cannot establish keyboard or screen-reader behavior.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/week2-day4-v1/work.md. Keep source observations separate from interpretations.
+- Keep labelled paper originals or save readable images as before-01.jpg and after-01.jpg in the same folder. Preserve any editable digital source.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** The pilot can proceed without designing missing screens mid-session; scope and evidence limits are explicit.
+
+**Bring forward:** Save a numbered screen set, task script and pilot corrections for evaluation.
+
 
 Make these:
 
@@ -615,6 +938,90 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 </details>
 
 ### Do
+
+#### Observe, change, compare
+
+Run the consented task if a participant is available. Preserve the first design, repair one observed issue and explain the remaining uncertainty.
+
+**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+
+- Starting material: Bring Lesson 4’s prototype, scenario and note template, plus your consent plan.
+- Create HaruCourse/Practice/week2-day5-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+- Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Observe, revise, and report honestly
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Session / source | Task | Observed action | Interpretation | Severity reason | Revision reference | Recheck / limitation
+--- | --- | --- | --- | --- | --- | ---
+[anonymous ID or SELF-PILOT] | [task] | [actual action] | [possible reason] | [consequence] | [before and after] | [next test]
+
+## Output checklist
+- [ ] Consented session notes or labelled self-pilot notes
+- [ ] Two observations with possible explanations
+- [ ] One before/after revision
+- [ ] Evidence–decision–revision report and next check
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+<details>
+<summary>Optional Figma Starter route (workflow not authenticated)</summary>
+
+- Optional route: open figma.com and sign in to a free Starter account. Decline upgrades and trials. If an assigned control is unavailable, use the paper route; no paid feature is required.
+- Create a Design file in Drafts and rename it with the lesson ID. Use the Frame tool (F) to draw a screen boundary; set its width and height in the right panel. A frame groups one screen’s content.
+- Use Text (T) for actual labels and Rectangle (R) for control boundaries. Select a layer to edit text size, fill and dimensions in the right panel. Start with these tools, not plugins or generated UI.
+- Duplicate the frame before revising. Name the frames Before and After, or use the state IDs from your flow. For layout comparisons, duplicate again and change width; reposition content deliberately. A static frame does not prove browser reflow.
+- To export, select the frame, find Export in the right panel, add an export setting, choose PNG and export. Open the downloaded image to check readable labels and uncropped content; keep it beside work.md.
+- This route is documented but has not been tested in a signed-in Starter account for this release. Paper is the supported introductory route until that workflow is verified. Deeper components and prototyping training belongs to mapped later modules.
+
+</details>
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Let the person attempt the task before helping. Record help given because it changes what you can conclude.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+With no participant, report a self-pilot and recruitment gap. Do not turn your own expectation into a usability finding.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/week2-day5-v1/work.md. Keep source observations separate from interpretations.
+- Keep labelled paper originals or save readable images as before-01.jpg and after-01.jpg in the same folder. Preserve any editable digital source.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** The report separates observations from explanations, shows a traceable revision and avoids improvement percentages without measurements.
+
+**Bring forward:** Keep this practice evidence for Module 4 reasoning and future research planning; it is not yet a complete portfolio case study.
+
 
 Make these:
 

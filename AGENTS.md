@@ -1,3 +1,7 @@
+## Practical apprenticeship refinement — 6 September 2026
+
+Use the activity authority in src/apprenticeship.ts and journey authority in src/journey.ts alongside the existing teaching. Every published lesson needs concrete workspace setup, a starter, hints, save instructions and an artifact handoff; the diagnostic gets no coaching or AI. AI rehearsals are optional, text-only and paired with a non-AI route. Keep future modules planned until authored. Generate workspace and portfolio documents with the lesson documents; see docs/COURSE-AUTHORING.md.
+
 ## Latest design instruction — 6 September 2026
 
 Keep the established cream/green/serif style. Use concise teaching and a guided Learn → Do → Check → Your work reader for existing and future lessons. Show exact actions and expected outputs; put deeper explanation in optional details. Main navigation is Learn, Course map and My work; Account holds utilities. Follow docs/COURSE-AUTHORING.md for the shared content model and generated baseline/lesson documents. Preserve original vision, IDs, records and bookmarks.

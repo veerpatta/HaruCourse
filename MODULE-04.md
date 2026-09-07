@@ -32,6 +32,98 @@ Mismatches are findable but not guessable. Card sorting shows you how people exp
 
 On the workshop service, several people expected “my bookings” to include workshops they had merely saved, because that is how their shopping apps behave. The product's model separated saved from booked, which is defensible. The mismatch showed up as people reporting a booking they had never made. The chosen response was to conform partially — one list, with booked and saved clearly labelled within it — rather than to teach a distinction no one arrived expecting.
 
+#### Expectation mismatch investigation
+
+Compare what someone may expect in your workshop flow with what the interface actually does. Separate observed expectations from your hypotheses.
+
+**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+
+- Starting material: Your Module 2 findings, hypothesis and the revision you made after testing. The contradictions you find here should be grounded in what you observed there, not invented.
+- Create HaruCourse/Practice/m04-l01-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Mental models and the model you are actually building
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Situation | Expected behavior | Evidence / hypothesis | Actual design behavior | Mismatch | Revision / test
+--- | --- | --- | --- | --- | ---
+[point in flow] | [expectation] | [source] | [specified response] | [difference] | [next action]
+
+## Output checklist
+- [ ] The reader's model with each line marked observed or assumed, your design's implied model in its real labels, three named contradictions with consequences, and one conform-or-teach decision with its cost.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+A familiar icon does not establish what this person believes it does.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Write the system rule in plain language, then check whether visible feedback communicates that rule.
+
+</details>
+
+<details>
+<summary>Optional AI rehearsal</summary>
+
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Mental models and the model you are actually building.
+Task: Compare what someone may expect in your workshop flow with what the interface actually does. Separate observed expectations from your hypotheses.
+Challenge one hypothesized expectation in my table. Ask what evidence could distinguish it from another mental model.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant table rows and describe the artifact in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Write a second plausible expectation for the same situation and identify how a real task observation could distinguish them.
+
+</details>
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m04-l01-v1/work.md. Keep source observations separate from interpretations.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** Each proposed mismatch has a source label and a design or research response.
+
+**Bring forward:** Bring the mismatch points to the memory-demand audit.
+
+
 ### Practice and pause points
 
 - Read and extract (~25 min): Read the assigned article. Write, in your own words, the difference between the model a reader brings and the conceptual model an interface communicates.
@@ -133,6 +225,87 @@ The classic “about seven items” figure is widely quoted and widely over-appl
 ### Worked example
 
 A booking flow asked for a reference code on screen four that had been shown on screen two, with no way back that preserved the entered data. Every observed participant either scrolled back and lost their input or guessed. The fix required no new feature: the code was displayed inline on screen four beside the field. The demand for recall disappeared, and so did the error.
+
+#### Interruption challenge
+
+Stop halfway through the flow, hide the preceding screen and resume. Identify information you must remember, then redesign two demands as visible choices or context.
+
+**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+
+- Starting material: The flow you tested in Module 2 and the mental-model contradictions from the previous lesson.
+- Create HaruCourse/Practice/m04-l02-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+- Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Recognition, recall and what you are asking people to remember
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Step | Information needed | Visible / remembered | Interruption consequence | Proposed cue | Trade-off
+--- | --- | --- | --- | --- | ---
+[step] | [detail] | [mode] | [risk] | [cue] | [cost]
+
+## Output checklist
+- [ ] A memory-demand audit naming each demand and its two screens, interruption marks, two demands converted to recognition with their costs, and one unremovable demand with its justification.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+<details>
+<summary>Optional Figma Starter route (workflow not authenticated)</summary>
+
+- Optional route: open figma.com and sign in to a free Starter account. Decline upgrades and trials. If an assigned control is unavailable, use the paper route; no paid feature is required.
+- Create a Design file in Drafts and rename it with the lesson ID. Use the Frame tool (F) to draw a screen boundary; set its width and height in the right panel. A frame groups one screen’s content.
+- Use Text (T) for actual labels and Rectangle (R) for control boundaries. Select a layer to edit text size, fill and dimensions in the right panel. Start with these tools, not plugins or generated UI.
+- Duplicate the frame before revising. Name the frames Before and After, or use the state IDs from your flow. For layout comparisons, duplicate again and change width; reposition content deliberately. A static frame does not prove browser reflow.
+- To export, select the frame, find Export in the right panel, add an export setting, choose PNG and export. Open the downloaded image to check readable labels and uncropped content; keep it beside work.md.
+- This route is documented but has not been tested in a signed-in Starter account for this release. Paper is the supported introductory route until that workflow is verified. Deeper components and prototyping training belongs to mapped later modules.
+
+</details>
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Run this as a self-walkthrough and label it accordingly, not as evidence about all users.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Showing everything can create clutter. Decide which detail is needed at this step.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m04-l02-v1/work.md. Keep source observations separate from interpretations.
+- Keep labelled paper originals or save readable images as before-01.jpg and after-01.jpg in the same folder. Preserve any editable digital source.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** Two changes reduce specific memory demands while explaining the extra information they introduce.
+
+**Bring forward:** Keep the revised screens for the control and feedback audit.
+
 
 ### Practice and pause points
 
@@ -237,6 +410,87 @@ Removing signifiers is a recurring cost of visual minimalism. Flat controls with
 
 A workshop card had its whole surface clickable, with the title in body-text colour and no other cue. On desktop, hovering revealed a subtle shade change; on a phone nothing indicated interactivity at all, and observed readers tapped the price text and then the image before finding it. Adding a coloured, weightier title and a visible chevron closed the execution gulf. Separately, the tap produced no immediate response during a slow load, so a pressed state was added to close the evaluation gulf.
 
+#### Control and feedback audit
+
+Inventory controls and trace action to response. Find one that looks usable but gives unclear feedback, then specify a repair for touch and keyboard intent.
+
+**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+
+- Starting material: Your flow and the memory-demand audit. Use the same screens so the analysis accumulates.
+- Create HaruCourse/Practice/m04-l03-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+- Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Affordances, signifiers and feedback
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Control | Possible action | Signifier | Feedback | Touch behavior | Repair | Tested / specified
+--- | --- | --- | --- | --- | --- | ---
+[control] | [action] | [cue] | [response] | [no hover assumption] | [change] | [label]
+
+## Output checklist
+- [ ] A three-column affordance, signifier and feedback inventory with blanks left visible, touch-availability marks, and two repairs each stating what the reader can now tell.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+<details>
+<summary>Optional Figma Starter route (workflow not authenticated)</summary>
+
+- Optional route: open figma.com and sign in to a free Starter account. Decline upgrades and trials. If an assigned control is unavailable, use the paper route; no paid feature is required.
+- Create a Design file in Drafts and rename it with the lesson ID. Use the Frame tool (F) to draw a screen boundary; set its width and height in the right panel. A frame groups one screen’s content.
+- Use Text (T) for actual labels and Rectangle (R) for control boundaries. Select a layer to edit text size, fill and dimensions in the right panel. Start with these tools, not plugins or generated UI.
+- Duplicate the frame before revising. Name the frames Before and After, or use the state IDs from your flow. For layout comparisons, duplicate again and change width; reposition content deliberately. A static frame does not prove browser reflow.
+- To export, select the frame, find Export in the right panel, add an export setting, choose PNG and export. Open the downloaded image to check readable labels and uncropped content; keep it beside work.md.
+- This route is documented but has not been tested in a signed-in Starter account for this release. Paper is the supported introductory route until that workflow is verified. Deeper components and prototyping training belongs to mapped later modules.
+
+</details>
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Distinguish the action possible from the visible cue suggesting it.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Ask what the person sees while waiting and after failure, not just after success.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m04-l03-v1/work.md. Keep source observations separate from interpretations.
+- Keep labelled paper originals or save readable images as before-01.jpg and after-01.jpg in the same folder. Preserve any editable digital source.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** The weakest control has an explicit action, cue and response, including non-hover use.
+
+**Bring forward:** Bring ambiguous or failed actions into error classification.
+
+
 ### Practice and pause points
 
 - Read and define (~25 min): Read the assigned article's opening sections. Write your own one-line definitions of affordance, signifier and the two gulfs, with a screen example of each.
@@ -338,6 +592,87 @@ Blaming the reader is the default failure of error analysis, and it hides inside
 ### Worked example
 
 Two failures from one test looked identical and were not. One participant tapped “Reserve” before choosing a date, then said “oh, I meant to pick Saturday” — a slip, fixed by disabling the button until a date is selected. Another chose the Saturday session believing it was the beginners' one, because both were titled “Weekend Workshop” — a mistake, unaffected by any button state, fixed by distinguishing the titles and showing the level on the card.
+
+#### Error recovery workshop
+
+Classify failures as slips or mistakes, rewrite blameful messages and design prevention plus recovery for one of each.
+
+**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+
+- Starting material: Your Module 2 session notes and every failure, hesitation or wrong turn you recorded there.
+- Create HaruCourse/Practice/m04-l04-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+- Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Slips, mistakes and designing for the error you caused
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Failure / source | Intended action | Slip / mistake and why | Prevention | Recovery message | Next action
+--- | --- | --- | --- | --- | ---
+[observed failure or hypothetical scenario] | [intent] | [reasoning] | [design] | [your text] | [action]
+
+## Output checklist
+- [ ] A classification table of observed failures with slips, mistakes and unclassified rows; blame-free rewrites alongside the originals; and one prevention and one recovery for each class with reasoning.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+<details>
+<summary>Optional Figma Starter route (workflow not authenticated)</summary>
+
+- Optional route: open figma.com and sign in to a free Starter account. Decline upgrades and trials. If an assigned control is unavailable, use the paper route; no paid feature is required.
+- Create a Design file in Drafts and rename it with the lesson ID. Use the Frame tool (F) to draw a screen boundary; set its width and height in the right panel. A frame groups one screen’s content.
+- Use Text (T) for actual labels and Rectangle (R) for control boundaries. Select a layer to edit text size, fill and dimensions in the right panel. Start with these tools, not plugins or generated UI.
+- Duplicate the frame before revising. Name the frames Before and After, or use the state IDs from your flow. For layout comparisons, duplicate again and change width; reposition content deliberately. A static frame does not prove browser reflow.
+- To export, select the frame, find Export in the right panel, add an export setting, choose PNG and export. Open the downloaded image to check readable labels and uncropped content; keep it beside work.md.
+- This route is documented but has not been tested in a signed-in Starter account for this release. Paper is the supported introductory route until that workflow is verified. Deeper components and prototyping training belongs to mapped later modules.
+
+</details>
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Do not infer intent from a click alone. Mark uncertain classifications.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+A useful message explains the issue and a recoverable next step without blaming the person.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m04-l04-v1/work.md. Keep source observations separate from interpretations.
+- Keep labelled paper originals or save readable images as before-01.jpg and after-01.jpg in the same folder. Preserve any editable digital source.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** Prevention and recovery respond to different failure causes and preserve useful user input where possible.
+
+**Bring forward:** Use a recovery decision as a test case for the UX-law counterexample exercise.
+
 
 ### Practice and pause points
 
@@ -441,6 +776,98 @@ Every law is a hypothesis in your specific context. The honest form is: this pri
 
 A filter panel with eleven options was cut to four, citing Hick's law. Task time got worse: the two most-used filters had been removed, so people scrolled the full list instead of filtering. The law was real; the situation was wrong, because these were not comparable alternatives but tools for narrowing a search. Restoring the two and grouping the rest under a “more filters” control served both the principle and the task.
 
+#### Break the rule debate
+
+Apply three assigned UX laws to one decision, then deliberately find a situation where each recommendation would be misleading.
+
+**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+
+- Starting material: Any decision from this module you found hard to justify, plus the screens you have been working on.
+- Create HaruCourse/Practice/m04-l05-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# UX laws and where they stop applying
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Law | Prediction for my design | Boundary / counterexample | Testable claim | Evidence needed
+--- | --- | --- | --- | ---
+[assigned law] | [prediction] | [condition] | [specific claim] | [observation]
+
+## Output checklist
+- [ ] Three law summaries with their assumed situations, an application to one real decision including a conflict, three concrete counterexamples from your own product, and three testable claim rewrites.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+A principle suggests what to investigate; it does not supply a result.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Reducing options may hide a necessary choice. Ask what your simplification removes.
+
+</details>
+
+<details>
+<summary>Optional AI rehearsal</summary>
+
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: UX laws and where they stop applying.
+Task: Apply three assigned UX laws to one decision, then deliberately find a situation where each recommendation would be misleading.
+Debate my application of a UX law. Ask for its boundary conditions and a counterexample. Do not declare a universal winning design.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant table rows and describe the artifact in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Argue the opposite recommendation in three sentences, then write the observation that would help choose.
+
+</details>
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m04-l05-v1/work.md. Keep source observations separate from interpretations.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** Each law has a meaningful boundary and a claim that can be checked in this context.
+
+**Bring forward:** Keep the contextual reasoning when converting feature requests to needs.
+
+
 ### Practice and pause points
 
 - Read three law pages (~25 min): Read the assigned pages for Fitts's law, Hick's law and Jakob's law. For each write the regularity it describes and the situation it assumes.
@@ -542,6 +969,75 @@ The rule that keeps this honest is that a need without research is an assumption
 ### Worked example
 
 The organiser asked for a mandatory “I have read the instructions” checkbox. Converted: as an organiser, I need attendees to arrive with the right materials, so that sessions start on time. That reframing put three responses on the table — the checkbox, a materials summary on the confirmation screen, and a reminder the day before — and made it obvious that the checkbox is the only one that produces no evidence about whether anyone read anything.
+
+#### Request translation studio
+
+Translate feature requests into needs that allow several solutions. Use your existing requests and label supplied or invented practice requests as hypothetical.
+
+**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+
+- Starting material: Your Module 2 findings and any requests, suggestions or stakeholder asks you have collected since.
+- Create HaruCourse/Practice/m04-l06-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# From requests to user needs
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Request / source | Person | Situation | Needed outcome | Evidence status | Alternative responses
+--- | --- | --- | --- | --- | ---
+[request] | [person] | [context] | [need without feature] | [real / hypothesis] | [options]
+
+## Output checklist
+- [ ] A five-row table giving each original request, its need statement, its evidence source or assumption label, plus two testing questions and one need belonging to a non-primary user.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+A need statement describes what someone must accomplish, not the control they asked for.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Keep the original request beside the translation so you can explain what changed.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m04-l06-v1/work.md. Keep source observations separate from interpretations.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** Needs retain the person’s goal while allowing different responses and exposing evidence gaps.
+
+**Bring forward:** Bring the needs and alternatives into value-under-constraint decisions.
+
 
 ### Practice and pause points
 
@@ -645,6 +1141,98 @@ Discovery work exists to make this argument honest before anyone builds. Its pur
 
 For the need “attendees arrive with the right materials”, three responses were compared against doing nothing. A checkbox costs almost nothing to build and produces no change in behaviour and no evidence. A materials summary on the confirmation screen costs a little and reaches everyone who books. A day-before reminder reaches people at the right moment, costs a message channel and ongoing support, and fails for anyone whose contact details are wrong. The summary won on cost per unit of benefit, with the reminder recorded as the next candidate if evidence showed timing mattered more than availability.
 
+#### Stakeholder constraint rehearsal
+
+Compare who gains and who pays for your proposal. Introduce the fictional constraint “no additional staff capacity” and revise your value proposition.
+
+**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+
+- Starting material: Your need statements with their evidence marks, and the contradictions and error findings from earlier in this module.
+- Create HaruCourse/Practice/m04-l07-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Value under constraint: who gains, who pays
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Current workaround | User gain | Organization gain | Cost bearer | Constraint | Trade-off | Evidence status
+--- | --- | --- | --- | --- | --- | ---
+[baseline] | [benefit hypothesis] | [benefit hypothesis] | [who does extra work] | [constraint] | [choice] | [source]
+
+## Output checklist
+- [ ] A baseline description of today's behaviour, a value proposition with an explicit comparison, a three-part cost list, and a constraint list marked fixed or changeable.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Include learning, maintenance and support effort alongside money.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+A fictional constraint trains reasoning. Do not present it as a real organizer requirement.
+
+</details>
+
+<details>
+<summary>Optional AI rehearsal</summary>
+
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Value under constraint: who gains, who pays.
+Task: Compare who gains and who pays for your proposal. Introduce the fictional constraint “no additional staff capacity” and revise your value proposition.
+Role-play a fictional organizer with no extra staff capacity. Ask one concrete cost question at a time; stay within this constraint and invent no evidence.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant table rows and describe the artifact in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Write a short objection from the person who bears the extra work, then revise the proposal or explain why its value justifies the cost.
+
+</details>
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m04-l07-v1/work.md. Keep source observations separate from interpretations.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** The proposition compares with the current workaround and makes costs and trade-offs visible.
+
+**Bring forward:** Bring the highest-cost uncertainty to the smallest-test brief.
+
+
 ### Practice and pause points
 
 - Read discovery's purpose (~25 min): Read the assigned page. Write what discovery is for, including what deciding not to continue means.
@@ -746,6 +1334,75 @@ Every small build has a boundary, and naming it is part of the deliverable. A pr
 ### Worked example
 
 The riskiest assumption behind the materials summary was that attendees look for preparation information at all before travelling — not that a summary would be readable. The smallest build was therefore not a summary screen but a one-question message sent to five people who had recently booked, asking what they did before attending. The stopping rule was written first: if fewer than two described looking for information beforehand, the summary drops down the list and the reminder becomes the candidate instead. The result could not establish frequency across all attendees, and the write-up said so.
+
+#### Independent smallest-test brief
+
+Choose the riskiest assumption and design the smallest test that could change your decision. Write the stopping rule before any results exist.
+
+**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+
+- Starting material: Your value proposition, cost list, constraint list and the assumptions marked in your need statements.
+- Create HaruCourse/Practice/m04-l08-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
+- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# The smallest thing that could change your decision
+
+Source labels: real observation / hypothesis / simulation / self-pilot
+
+Assumption | Consequence if wrong | Current evidence | Smallest test | Stop / revise signal | Cannot conclude | Next step
+--- | --- | --- | --- | --- | --- | ---
+[claim] | [consequence] | [source or none] | [bounded test] | [prewritten rule] | [boundary] | [action]
+
+## Output checklist
+- [ ] A ranked assumption list with reasoning, a description of the smallest build with each element justified, a stopping rule written before building, and a boundary list mapping unanswerable questions to later modules.
+
+## Decision and revision
+My decision:
+Evidence reference:
+Alternative rejected and why:
+Before / after files:
+What remains untested:
+AI suggestion accepted or rejected and why (if used):
+Next action when I return:
+
+```
+
+</details>
+
+
+
+
+
+<details>
+<summary>Hint 1</summary>
+
+Test the assumption with the greatest combination of consequence and uncertainty, not the easiest screen to polish.
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+A small exploratory test cannot estimate a market-wide conversion rate. State the decision it can inform.
+
+</details>
+
+
+
+**Save:**
+
+- Save your filled template as HaruCourse/Practice/m04-l08-v1/work.md. Keep source observations separate from interpretations.
+- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
+- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
+
+**Adequate evidence:** The brief has a prewritten reconsideration rule, a feasible evidence plan and clear boundaries on conclusions.
+
+**Bring forward:** Use this brief and your evidence bank when choosing Project 1 in m05. Recruitment gaps remain explicit; request creator review.
+
 
 ### Practice and pause points
 

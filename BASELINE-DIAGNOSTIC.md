@@ -25,6 +25,53 @@ Bring: No preparation. Use paper or a familiar tool and a blank note.
 
 ### Do
 
+#### Independent starting-point diagnostic
+
+Attempt the existing brief using your current knowledge. Save unfinished work and uncertainties for review; do not prepare with a model answer or AI coaching.
+
+**Where to work:** Paper, pencil and a local text editor or a tool you already know.
+
+- Create HaruCourse/Practice/baseline-v1 in Documents.
+- Save a blank note as work.md. Label sheets with the task name and keep them together.
+
+<details>
+<summary>Copyable starter template</summary>
+
+```text
+# Baseline work inventory
+
+Problem note file:
+Research plan file:
+Flow file:
+Wireframes file:
+Decision notes file:
+Unfinished work:
+Tools used:
+Participant access:
+Next action:
+
+```
+
+</details>
+
+
+
+
+
+
+
+
+
+**Save:**
+
+- Save your notes and readable images or a PDF in the baseline folder.
+- Record the location in Your work with uncertainties and your next action. The reference does not upload the files.
+
+**Adequate evidence:** Submit the requested artifacts and explain what you could not yet do. This diagnostic informs guidance; it is not a pass/fail exam.
+
+**Bring forward:** Keep the original diagnostic unchanged as a starting-point reference. Begin the published foundations lessons after your attempt.
+
+
 Make these:
 
 - Problem note with labelled assumptions

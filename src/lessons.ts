@@ -1,4 +1,5 @@
 import { module3 } from './module3';
+import { withApprenticeship } from './apprenticeship';
 import { module4 } from './module4';
 import { modules } from './modules';
 import { adaptPublished, type Lesson } from './teaching';
@@ -81,7 +82,7 @@ const week1 = [
         minutes: 45,
         title: "Separate evidence",
         instructions: [
-          "Create three columns: observed, inferred, unknown.",
+          "Use the starter table to label each entry observed, inferred or unknown.",
           "Add five entries from your walkthrough.",
           "Write the user goal and a possible business goal.",
         ],
@@ -674,7 +675,7 @@ const week1 = [
     ],
   },
 ];
-export const lessons = [...week1.map(withLegacyText), ...week2, ...module3.map(adaptPublished), ...module4.map(adaptPublished)];
+export const lessons = [...week1.map(withLegacyText), ...week2, ...module3.map(adaptPublished), ...module4.map(adaptPublished)].map(withApprenticeship);
 
 // A lesson's owning module. Legacy lessons predate the `module` field and are
 // identified by their compatibility week number instead.

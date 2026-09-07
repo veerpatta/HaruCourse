@@ -1,3 +1,9 @@
+# Practical apprenticeship milestone — 6 September 2026
+
+Implement the approved baseline/30-lesson activity guidance, free workspace setup, optional copyable AI rehearsals, three two-choice project brief packs and the complete module artifact path. Preserve existing teaching, identities, records and bookmarks. Source authorities and future authoring requirements are in docs/COURSE-AUTHORING.md. Validation and release status are recorded in docs/VERIFICATION-APPRENTICESHIP.md and PROGRESS.md.
+
+This milestone does not author m05 onward, implement formal assessment, synchronize external files or deploy a model API. Earlier milestone entries below remain historical.
+
 # Current milestone — minimalist course
 
 - Implement the approved concise lesson format for the baseline and all twelve published lessons.

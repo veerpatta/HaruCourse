@@ -1,3 +1,12 @@
+## Practical workflow evidence — 6 September 2026
+
+Reopened the official [Figma Starter overview](https://help.figma.com/hc/en-us/articles/13838684089751-Starter-plan-overview), [ChatGPT free-tier FAQ](https://help.openai.com/en/articles/9275245-using-chatgpt-s-free-tier-faq), [Gemini access limits](https://support.google.com/gemini/answer/16275805?hl=en) and [W3C contrast minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html). Public body text was retrieved. Figma confirms free Starter access with limitations; ChatGPT and Gemini document free text access and product-dependent limits. No named model, fixed quota or paid capability is required by the lessons.
+
+- T01 remains a candidate authenticated workflow. The new optional guide covers a Design draft, frames, text, rectangles, duplicate comparisons and PNG export. A signed-in Starter exercise was not executed. No paid libraries, Dev Mode, plugins or AI credits are assigned.
+- Optional chatbot rehearsals use only text pasted by the learner and include a complete non-AI alternative. No signed-in ChatGPT/Gemini exercise was executed; public documentation is access evidence, not model-response validation.
+- R30 now has an in-app offline calculator for opaque sRGB foreground/background pairs. It does not test transparency, image backgrounds, semantics or general accessibility. Test evidence belongs in the apprenticeship verification record. A mistaken example claiming that 2.8:1 passes 3:1 was corrected.
+- No other assigned reading URLs or cost restrictions changed in this milestone. Earlier per-resource verification remains dated as recorded; this is not a claim of a new complete catalog re-audit.
+
 ## Minimal lesson presentation — 6 September 2026
 
 - Assigned resources remain supporting reading; in-app concepts, examples and exact actions provide the local free exercise path.

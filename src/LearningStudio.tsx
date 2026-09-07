@@ -5,13 +5,14 @@ import { practiceTotals } from './useCourseRecords';
 import { humanDate, humanDuration, statusLabel } from './labels';
 import { SessionTimer, SessionLog, TimeAdjust, ConfidencePicker } from './SessionTimer';
 import { useEffect, useState } from "react";
-import { usePosition } from "./usePosition";
+import type { usePosition } from "./usePosition";
 import { sections } from "../shared/position";
 import { modules } from "./modules";
 import { publishedLessons as lessons, type Lesson } from "./lessons";
 import { baseline, baselineLesson } from "./course";
 import { usePractice } from "./usePractice";
 import { readingSelections } from "./reading";
+import { ApprenticeshipPanel, SaveHandoff, WorkspaceGuide } from './ApprenticeshipPanel';
 import {
   recordSchema,
   type User,
@@ -26,18 +27,19 @@ export const sectionLabels = {
 };
 export function LearningStudio({
   user,
+  bookmark,
   mode = "Learn",
   target,
   clearTarget,
 }: {
   user: User;
+  bookmark: ReturnType<typeof usePosition>;
   mode?: string;
   target?: { id: string; section: string };
   clearTarget: () => void;
 }) {
-  const bookmark = usePosition(user.id);
-  const {lesson: selected} = useNavigation();
-  const [section, setSection] = useState(bookmark.position?.lessonId === selected ? bookmark.position.sectionId : target?.section || "learn");
+  const {lesson: selected, section: navigationSection} = useNavigation();
+  const section = navigationSection || target?.section || (bookmark.position?.lessonId === selected ? bookmark.position.sectionId : "learn");
   const [browsedWeek, setWeek] = useState<number | null>(null);
   const week =
     browsedWeek ??
@@ -113,7 +115,6 @@ export function LearningStudio({
     const safe = sections.includes(targetSection as (typeof sections)[number])
       ? targetSection
       : "learn";
-    setSection(safe);
     navigateHistory({lesson:id,section:safe});
     if (id !== baseline.id) bookmark.remember(id, safe);
     window.scrollTo(0, 0);
@@ -287,9 +288,11 @@ export function LessonReader({
   open: (id: string) => void;
 }) {
   const [activeSection, setActiveSection] = useState(sections.includes(section as typeof sections[number]) ? section : "learn");
+  useEffect(() => { setActiveSection(sections.includes(section as typeof sections[number]) ? section : "learn"); }, [section]);
   useEffect(() => {if(lesson.id !== "baseline-v1") remember(lesson.id, activeSection)}, [lesson.id]);
   function go(id: string) {
     setActiveSection(id);
+    navigateHistory({section:id});
     if (lesson.id !== "baseline-v1") remember(lesson.id, id);
   }
   useEffect(() => {
@@ -390,6 +393,7 @@ export function LessonReader({
         className="lesson-reading"
       >
         <h2>Learn</h2>
+        <WorkspaceGuide />
         <p>
           <strong>Bring:</strong> {lesson.prerequisite}
         </p>
@@ -450,6 +454,7 @@ export function LessonReader({
             <li key={t}>{t}</li>
           ))}
         </ul>
+        {lesson.apprenticeship && <ApprenticeshipPanel key={lesson.id} activity={lesson.apprenticeship} contrast={lesson.id === 'm03-l04-v1'} />}
         {lesson.freeToolPath && <p>{lesson.freeToolPath}</p>}
         <ol className="instruction-steps">
           {lesson.steps.map((s, i) => (
@@ -464,6 +469,7 @@ export function LessonReader({
             </li>
           ))}
         </ol>
+        {lesson.apprenticeship && <SaveHandoff activity={lesson.apprenticeship} />}
         <p className="muted">
           Pause after any step. Save the artifact and your next action in Your
           work.

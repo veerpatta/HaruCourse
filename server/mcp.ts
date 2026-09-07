@@ -4,6 +4,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
 import { WorkerEntrypoint } from "cloudflare:workers";
 import { baseline, levels } from "../src/course";
+import { workspaceGuide, figmaGuide, milestones, projectPacks, projectStart, caseStudySections } from '../src/journey';
 import { feedbackSchema, saveSchema } from "../shared/record";
 import {
   activeUser,
@@ -79,6 +80,10 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
               moduleId: l.module || `m0${l.week || 1}`,
             })),
             levels,
+            workspaceGuide,
+            figmaGuide,
+            milestones,
+            portfolio: { projectStart, projectPacks, caseStudySections },
           }),
       );
       server.registerTool(

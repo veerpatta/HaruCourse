@@ -530,7 +530,7 @@ export const module3: Lesson[] = [
     misconception:
       "“Grey placeholder text inside a form field is fine because it is only a hint.” Placeholder text is real text that a reader must read to know what to type, and it is not a decorative or inactive case. If it is too faint to read it fails, and the more robust fix is usually a visible label rather than a darker hint.",
     example:
-      "A workshop card used mid-grey #999999 body text on white — about 2.8:1, below the 4.5:1 floor. Rather than abandon the grey, the palette kept it for a large 24 px heading, where the 3:1 large-text threshold applies and it passes, and body text moved to a darker grey that measures about 7:1. The visual softness the designer wanted was preserved exactly where it was legitimate, and removed where it was not.",
+      "A workshop card used mid-grey #999999 body text on white — about 2.8:1, below the 4.5:1 floor. That grey also fails the 3:1 large-text threshold, so enlarging it alone cannot repair the contrast. The designer darkened the heading color until a new measurement exceeded 3:1, and moved body text to a darker grey that measures about 7:1. The visual softness the designer wanted was preserved exactly where it was legitimate, and removed where it was not.",
     steps: [
       {
         minutes: 25,
@@ -559,7 +559,7 @@ export const module3: Lesson[] = [
       },
     ],
     freeToolPath:
-      "Free contrast checkers run in any browser and need no account; browser developer tools also report a ratio when you inspect text. If you are working on paper, take a photo of your screen or swatches, and compare against printed reference pairs — record that your method was approximate rather than presenting an unmeasured number as measured.",
+      "Use the local contrast calculator in this lesson’s Do section: enter the six-digit foreground and background hex values, record the ratio and compare with the applicable assigned criterion. It works offline without an account. For paper work, specify intended hex pairs and measure those; a photograph or printed swatch does not establish exact design-color contrast. Transparent or image backgrounds need separate effective-color checks.",
     deliverable:
       "A contrast table covering every text and essential non-text element with colour, background, size, threshold and measured ratio, before and after repair, plus a note on your own reading test.",
     check: [

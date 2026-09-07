@@ -1,3 +1,14 @@
+export type Apprenticeship = {
+  activity: string;
+  mission: string;
+  workspace: { tools: string; setup: string[]; file: string; save: string[] };
+  starter: string;
+  hints: string[];
+  adequate: string;
+  handoff: string;
+  ai?: { purpose: string; setup: string[]; prompt: string; followUp: string; alternative: string };
+  visual?: boolean;
+};
 export type Criterion = {
   criterion: string;
   evidence: string;
@@ -44,6 +55,7 @@ export type LegacyLesson = {
   criteria?: Criterion[];
 };
 export type Lesson = Omit<LegacyLesson, "steps"> & {
+  apprenticeship?: Apprenticeship;
   id: string;
   day: number;
   week?: number;

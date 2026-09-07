@@ -12,6 +12,16 @@ const { lessons, publishedLessonIds, isPublishedLesson } = await import(
 );
 const { baselineLesson } = await import('../src/course.ts');
 const { readingSelections } = await import('../src/reading.ts');
+const { activities } = await import('../src/apprenticeship.ts');
+const { contrastRatio } = await import('../src/contrast.ts');
+assert.equal(contrastRatio('#000000', '#ffffff'), 21);
+assert.equal(contrastRatio('#123456', '#123456'), 1);
+assert.equal(contrastRatio('#ffffff', '#000000'), 21);
+assert.equal(contrastRatio('#xyzxyz', '#ffffff'), null);
+assert.equal(contrastRatio('#fff', '#ffffff'), null);
+assert(contrastRatio('#777777', '#ffffff') < 4.5, 'Do not round a failing ratio up to a pass');
+assert(contrastRatio('#767676', '#ffffff') >= 4.5);
+const { workspaceGuide, figmaGuide, milestones, projectPacks, projectStart, caseStudySections } = await import('../src/journey.ts');
 const catalog = readFileSync("RESOURCE-LIBRARY.md", "utf8");
 const ids = new Set([...catalog.matchAll(/^\| (R\d+) \|/gm)].map((m) => m[1]));
 assert.equal(ids.size, 49);
@@ -146,6 +156,11 @@ function list(items) {
 function details(title, content) {
   return `<details>\n<summary>${title}</summary>\n\n${content}\n\n</details>`;
 }
+function activityDoc(l) {
+  const a = l.apprenticeship;
+  assert(a, `Missing activity ${l.id}`);
+  return `#### ${a.activity}\n\n${a.mission}\n\n**Where to work:** ${a.workspace.tools}\n\n${list(a.workspace.setup)}\n\n${details('Copyable starter template', '```text\n' + a.starter + '\n```')}\n\n${a.visual ? details('Optional Figma Starter route (workflow not authenticated)', list(figmaGuide)) : ''}\n\n${l.id === 'm03-l04-v1' ? 'Use the offline contrast calculator in this lesson’s Do section. It accepts opaque six-digit sRGB colors; classification and exceptions come from R30. Record exact input values and the unrounded-threshold result, not only the displayed ratio.' : ''}\n\n${a.hints.map((h, i) => details('Hint ' + (i + 1), h)).join('\n\n')}\n\n${a.ai ? details('Optional AI rehearsal', a.ai.purpose + '\n\n' + list(a.ai.setup) + '\n\n```text\n' + a.ai.prompt + '\n```\n\n' + a.ai.followUp + '\n\nWithout AI or at a usage limit: ' + a.ai.alternative) : ''}\n\n**Save:**\n\n${list(a.workspace.save)}\n\n**Adequate evidence:** ${a.adequate}\n\n**Bring forward:** ${a.handoff}\n`;
+}
 function lessonDoc(l) {
   const reading = readingSelections[l.resource.id];
   return `## ${l.id === "baseline-v1" ? "Baseline" : "Lesson " + l.day}: ${l.title}
@@ -167,6 +182,8 @@ ${l.explanation.length ? details("Why this works", list(l.explanation)) : ""}
 ${reading ? details("Reading and free alternative", `[${l.resource.title}](${l.resource.url}) (${l.resource.id}).\n\nRead: ${reading.selection}. About ${reading.minutes} minutes.\n\nPublic reading checked 2026-09-06; no account, card or trial. If unavailable, complete the local exercise with this lesson’s concepts and example. Paper and local notes are sufficient. Catalog restrictions apply.`) : ""}
 
 ### Do
+
+${activityDoc(l)}
 
 Make these:
 
@@ -253,11 +270,31 @@ for (const module of modules) {
       own
         .map(
           (l) =>
-            `## Lesson ${l.day}: ${l.title}\n\nStable ID: ${l.id}. ${l.optional ? "Optional" : "Core"}. Areas ${(l.areas || module.areas).join(", ")}. Optional effort ~${l.steps.reduce((n, s) => n + s.minutes, 0)} min.\n\n**Objective.** ${l.objective}\n\n**Bring forward.** ${l.bringForward}\n\n${l.why}\n\n### Learn\n\n${(l.explanation || l.teach).join("\n\n")}\n\n**Common misconception.** ${l.misconception}\n\n### Worked example\n\n${l.example}\n\n### Practice and pause points\n\n${l.steps.map((s) => `- ${s.title} (~${s.minutes} min): ${s.text}`).join("\n")}\n\nPause after any step; save the artifact and next action.\n\n**Free tool path.** ${l.freeToolPath}\n\n### Output\n\n${l.deliverable}\n\n### Checks\n\n${l.check.map((q) => `- ${q.question} Answer: ${q.answer}`).join("\n")}\n\n### Rubric and remediation\n\n${l.criteria.map((c) => `**${c.criterion}**\n\nAdequate evidence: ${c.evidence}\n\n${c.levels.map((text, score) => `- ${score} — ${text}`).join("\n")}\n\nIf below 2: ${c.remediation} Show at recheck: ${c.recheck}`).join("\n\n")}\n\n### Portfolio contribution\n\n${l.portfolio}\n\n### Assigned resources\n\n${l.resources.map((r) => `- ${r.id}: [${r.title}](${r.url}) — ${r.section} Purpose: ${r.purpose} Effort: ${r.minutes} min. ${r.limits} Fallback: ${r.fallbackId}.`).join("\n")}\n`,
+            `## Lesson ${l.day}: ${l.title}\n\nStable ID: ${l.id}. ${l.optional ? "Optional" : "Core"}. Areas ${(l.areas || module.areas).join(", ")}. Optional effort ~${l.steps.reduce((n, s) => n + s.minutes, 0)} min.\n\n**Objective.** ${l.objective}\n\n**Bring forward.** ${l.bringForward}\n\n${l.why}\n\n### Learn\n\n${(l.explanation || l.teach).join("\n\n")}\n\n**Common misconception.** ${l.misconception}\n\n### Worked example\n\n${l.example}\n\n${activityDoc(l)}\n\n### Practice and pause points\n\n${l.steps.map((s) => `- ${s.title} (~${s.minutes} min): ${s.text}`).join("\n")}\n\nPause after any step; save the artifact and next action.\n\n**Free tool path.** ${l.freeToolPath}\n\n### Output\n\n${l.deliverable}\n\n### Checks\n\n${l.check.map((q) => `- ${q.question} Answer: ${q.answer}`).join("\n")}\n\n### Rubric and remediation\n\n${l.criteria.map((c) => `**${c.criterion}**\n\nAdequate evidence: ${c.evidence}\n\n${c.levels.map((text, score) => `- ${score} — ${text}`).join("\n")}\n\nIf below 2: ${c.remediation} Show at recheck: ${c.recheck}`).join("\n\n")}\n\n### Portfolio contribution\n\n${l.portfolio}\n\n### Assigned resources\n\n${l.resources.map((r) => `- ${r.id}: [${r.title}](${r.url}) — ${r.section} Purpose: ${r.purpose} Effort: ${r.minutes} min. ${r.limits} Fallback: ${r.fallbackId}.`).join("\n")}\n`,
         )
         .join("\n"),
   );
 }
+// All published lessons, including the diagnostic, must have a usable handoff.
+assert.equal(Object.keys(activities).length, lessons.length);
+for (const l of [baselineLesson, ...lessons]) {
+  const a = l.apprenticeship;
+  assert(a?.mission && a.activity && a.adequate && a.handoff, `Incomplete activity ${l.id}`);
+  assert(a.workspace.tools && a.workspace.setup.length >= 2 && a.workspace.save.length >= 2);
+  assert(a.workspace.file.includes(l.id), `Unstable artifact path ${l.id}`);
+  assert(a.starter.includes('Next action'));
+  if (l.id === baselineLesson.id) { assert(!a.ai); assert.equal(a.hints.length, 0); }
+  else { assert.equal(a.hints.length, 2); assert(a.starter.includes('Output checklist')); }
+  if (a.ai) assert(a.ai.prompt.includes(l.title) && a.ai.followUp && a.ai.alternative && a.ai.setup.length);
+}
+for (const m of modules) assert(milestones[m.id]?.start && milestones[m.id]?.later);
+assert.equal(projectPacks.length, 3);
+for (const p of projectPacks) {
+  assert.equal(p.choices.length, 2);
+  for (const c of p.choices) assert(c.context && c.users && c.access && c.constraints && c.questions.length);
+}
+output('WORKSPACE-GUIDE.md', '# Set up your workspace\n\nGenerated from src/journey.ts.\n\n' + list(workspaceGuide) + '\n\n## Optional Figma Starter route\n\n' + list(figmaGuide) + '\n');
+output('PORTFOLIO-PATH.md', '# Practical learning and portfolio path\n\nGenerated from src/journey.ts. Briefs are available; m05 onward lessons remain planned.\n\n' + projectStart + '\n\n' + projectPacks.map(p => `## ${p.title} (${p.modules})\n\n${p.choices.map(c => `### ${c.title}\n\n${c.context}\n\nPeople: ${c.users}\n\nAccess: ${c.access}\n\nConstraints: ${c.constraints}\n\n${list(c.questions)}`).join('\n\n')}\n\n### Milestone fragments\n\n${list(p.milestones)}`).join('\n\n') + '\n\n## Case-study sections\n\n' + list(caseStudySections) + '\n\n## Full module handoffs\n\n' + modules.map(m => { const j = milestones[m.id]; return `### ${m.id}: ${m.title} (${m.status})\n\nStart: ${j.start}\n\nChallenge: ${j.challenge}\n\nTools: ${j.tools}\n\nSave: ${j.save}\n\nLater use: ${j.later}`; }).join('\n\n') + '\n');
 console.log(
   "Course coverage, prerequisite order, resource IDs, lesson contract fields and generated documents checked.",
 );

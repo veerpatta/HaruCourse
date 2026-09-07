@@ -7,8 +7,10 @@ import { modules } from "./modules";
 import { levels, baseline } from "./course";
 import { publishedLessons as lessons } from "./lessons";
 import { LearningStudio } from "./LearningStudio";
+import { usePosition } from './usePosition';
 import { CloudPanel } from "./CloudPanel";
 import { AccountBackup } from "./AccountBackup";
+import { WorkspaceGuide, PortfolioPath, JourneyMilestone } from './ApprenticeshipPanel';
 import { emptyRecord as empty } from "./usePractice";
 import type { User } from "../shared/record";
 import "./style.css";
@@ -21,6 +23,7 @@ function App({
   onSession: (user: User | null) => void;
 }) {
   const navigation = useNavigation();
+  const bookmark = usePosition(user.id);
   const tab = navigation.tab;
   const [navigationVersion, setNavigationVersion] = useState(0);
   const target = navigation.lesson ? {id:navigation.lesson, section:navigation.section || "learn"} : undefined;
@@ -110,6 +113,7 @@ function App({
             <LearningStudio
               key={tab + ":" + (target?.id || "") + ":" + navigationVersion}
               user={user}
+              bookmark={bookmark}
               mode={tab}
               target={target}
               clearTarget={() => navigateHistory({lesson:null,baseline:false})}
@@ -119,6 +123,8 @@ function App({
             <>
               <h1>Course map</h1>
               <p>Levels → Modules → Lessons. Study at your own pace.</p>
+              <WorkspaceGuide />
+              <PortfolioPath />
               <div className="course-map">
                 {levels.map((level, i) => (
                   <details key={level.title}>
@@ -138,6 +144,7 @@ function App({
                             </span>
                           </summary>
                           <p>{m.output}</p>
+                          <JourneyMilestone id={m.id} />
                           <p className="muted">
                             Bring:{" "}
                             {m.prerequisites

@@ -1,4 +1,5 @@
 import { withLegacyText } from "./teaching";
+import { diagnosticWorkspace } from './apprenticeship';
 export const levels = [
   {
     title: "Find your starting point",
@@ -43,6 +44,7 @@ export const levels = [
 ];
 
 export const baselineLesson = withLegacyText({
+  apprenticeship: diagnosticWorkspace,
   id: "baseline-v1",
   day: 0,
   title: "Find your starting point",

@@ -508,6 +508,16 @@ const data = await readOnly.sdk.callTool({
 });
 assert.ok(!data.isError, JSON.stringify(data));
 assert.equal(JSON.parse(data.content[0].text).revision, current.revision);
+const lessonResponse = await readOnly.sdk.callTool({name: 'get_lesson', arguments: {lessonId: 'week1-day1-v1'}});
+assert.ok(!lessonResponse.isError);
+const teaching = JSON.parse(lessonResponse.content[0].text);
+assert.equal(teaching.lesson.apprenticeship.activity, 'Design detective');
+assert.ok(teaching.lesson.apprenticeship.ai.prompt.includes('From screens to product problems'));
+assert.equal(teaching.portfolio.projectPacks.length, 3);
+assert.equal(Object.keys(teaching.milestones).length, 21);
+const diagnosticResponse = await readOnly.sdk.callTool({name: 'get_lesson', arguments: {lessonId: 'baseline-v1'}});
+assert.ok(!JSON.parse(diagnosticResponse.content[0].text).lesson.apprenticeship.ai);
+checks.push('MCP shares activity templates, optional prompts, independent baseline and full portfolio path');
 await readOnly.sdk.close();
 checks.push(
   "OAuth discovery, PKCE exchange, consent CSRF, SDK initialization, read-only tools",

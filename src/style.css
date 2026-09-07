@@ -1813,3 +1813,12 @@ select:focus-visible {
   .connection { flex-wrap: wrap; }
   .confidence button { min-width: 44px; min-height: 44px; }
 }
+/* Practical learning materials use the established course surfaces and type. */
+.apprenticeship, .save-handoff { margin-block: 1.25rem; }
+.work-material textarea { width: 100%; box-sizing: border-box; white-space: pre-wrap; overflow-wrap: anywhere; font-family: monospace; font-size: .875rem; }
+.workspace-guide, .portfolio-path { margin-block: 1rem; }
+.workspace-guide li, .apprenticeship li, .portfolio-path li { margin-block: .55rem; }
+.journey-milestone dt { font-weight: 700; margin-top: .6rem; }
+.journey-milestone dd { margin-left: 0; overflow-wrap: anywhere; }
+.apprenticeship, .save-handoff, .portfolio-path { overflow-wrap: anywhere; min-width: 0; }
+.work-material button { min-height: 44px; }
