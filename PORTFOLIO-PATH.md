@@ -1,6 +1,6 @@
 # Practical learning and portfolio path
 
-> Experience refinement is planned lesson by lesson; it is not yet implemented. See [the agreed learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for guided practice, worksheets, videos, free-tier constraints and current refinement status. Existing teaching and diagnostic independence remain in force.
+> Experience refinement is applied lesson by lesson. See [the agreed learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for guided practice, worksheets, videos, free-tier constraints and the refinement ledger that records which lessons carry the guided worksheet. Existing teaching and diagnostic independence remain in force.
 
 Generated from src/journey.ts. Briefs are available. Publication status is derived from the current module catalog below; published does not mean assessed.
 

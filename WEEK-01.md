@@ -1,6 +1,6 @@
 # Product Design Foundations
 
-> Experience refinement is planned lesson by lesson; it is not yet implemented. See [the agreed learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for guided practice, worksheets, videos, free-tier constraints and current refinement status. Existing teaching and diagnostic independence remain in force.
+> Experience refinement is applied lesson by lesson. See [the agreed learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for guided practice, worksheets, videos, free-tier constraints and the refinement ledger that records which lessons carry the guided worksheet. Existing teaching and diagnostic independence remain in force.
 
 Generated from src/lessons.ts and src/week2.ts. Legacy filename retained for existing links. Level 1 · Module 1. No deadlines; split any lesson across sessions.
 
@@ -18,6 +18,8 @@ Bring: No earlier lesson needed. Use a familiar app and a blank note.
 - UX is the whole task experience; UI is the controls and presentation.
 - A screen is an output. Helping someone finish a task is an outcome.
 - Designers explore options with product managers, engineers and researchers.
+
+How this lesson works: Do has 5 short steps with an in-app worksheet that saves as you type; Learn remembers which step you were on.
 
 <details>
 <summary>Worked example</summary>
@@ -53,42 +55,197 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 
 Investigate finding an event in an app you already use. Stop before booking or payment. Follow one task, not the whole app.
 
-**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
 
 - Starting material: No earlier lesson needed. Use a familiar app and a blank note.
 - Create HaruCourse/Practice/week1-day1-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 
+</details>
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Optional video paired with step 1</summary>
 
-```text
-# From screens to product problems
+[Jonathan Ball explains the Double Diamond](https://vimeo.com/857497488) — Design Council (Vimeo), 2 min 57 s, English (UK), English (United Kingdom) subtitles, publisher-authored. Whole video. The part to watch closely runs from 0:27 to 1:53.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+What to notice:
 
-Step | What I saw or did | Observed / inferred / unknown | Goal affected | How to check
---- | --- | --- | --- | ---
-1 | [name the starting page and action] | [choose a label] | [goal] | [missing evidence]
+- 0:27–0:53 — He draws a straight line from brief to result, then asks: have I been asked to solve the right problem?
+- 0:54–1:04 — Discover and Define exist to produce a better brief, not a screen.
+- 1:17–1:32 — The small loops are make, test, learn: early, rough and repeated.
+- 2:34–2:53 — A straight line from brief to delivery is, in his words, a one-star project; asking whether it is the right problem is what improves the result.
 
-## Output checklist
-- [ ] One task walkthrough
-- [ ] Five observed / inferred / unknown entries
-- [ ] One user goal and one possible business goal
-- [ ] Two improvement hypotheses and ways to check them
+**Then:** Straight after watching, fill “Product design is…” below. If it helps, use his question: was the app built to solve the right problem?
 
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
+**Without the video:** No video needed: the Double Diamond page (R01) says the same in four short paragraphs, Discover, Define, Develop, Deliver. Read those, then write your three sentences.
 
-```
+A whiteboard sketch, drawn in portrait, with no app interface shown. The written Double Diamond page (R01) uses the same four stage names. Public Vimeo page, no account. Needs an internet connection; it is not cached for offline use. Vimeo shows its own sign-up banner, which you can ignore. Checked 7 September 2026.
 
 </details>
+
+#### 1. Learn
+
+- Read the Double Diamond overview.
+- Write one sentence each defining product design, UX and UI.
+
+**You should end up with:** Three sentences in your own words: product design, UX and UI. No quotation needed.
+
+Worksheet fields for this step:
+
+- Product design is… — Try: what it connects, and for whom.
+- UX is… — The whole task, from first need to finished.
+- UI is… — The controls and the presentation on the screen.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Product design:** Deciding which problem a service should solve and shaping the whole service so people can use it and the business can run it.
+- **UX (user experience):** Everything a person goes through to finish a task, including waiting, instructions and recovering from mistakes.
+- **UI (user interface):** The controls, words and layout on the screen itself.
+- **Output versus outcome:** A screen is an output. A person finishing the task is an outcome.
+
+Stuck starting? Begin the first sentence with “Product design is deciding…” and finish it however feels true to you.
+
+Is it enough? Each sentence names something a person is trying to do, not just a screen.
+
+</details>
+
+#### 2. Observe
+
+- Choose one task in a familiar app.
+- Record the starting situation, goal and actions; omit private information.
+
+**You should end up with:** The app, the one task, where you started and a short list of what you did.
+
+Worksheet fields for this step:
+
+- The app — Any app that lists events, shows, classes or bookings.
+- The one task you followed
+- Where you started — The first screen you saw when you began the task.
+- What you did, one action per line — Leave out anything private: names, addresses, payment details.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Task:** One thing the person is trying to get done, with a clear end. “Find a class on Saturday” is a task; “use the app” is not.
+- **Walkthrough:** Doing the task yourself, slowly, and writing down each action as you go.
+
+Stuck starting? Pick the app you used most recently that lists events or bookings. Do the task once without writing, then once more while writing.
+
+Is it enough? Someone else could repeat your actions from the list without asking you anything.
+
+</details>
+
+#### 3. Separate evidence
+
+- Use the starter table to label each entry observed, inferred or unknown.
+- Add five entries from your walkthrough.
+- Write the user goal and a possible business goal.
+
+**You should end up with:** Five entries, each labelled observed, inferred or unknown, plus one user goal and one possible business goal.
+
+Worksheet fields for this step:
+
+- Entry 1 · What I saw or did — Something you can point to on the screen, or an action you took. One entry per line of the table.
+- Entry 1 · Observed, inferred or unknown? (observed / inferred / unknown) — Observed: you saw it. Inferred: your guess about why. Unknown: you cannot tell from the screen.
+- Entry 1 · Which goal does this affect?
+- Entry 1 · How could you check it? — What would you watch for, or whom would you ask, to find out whether your reading is right?
+- Entry 2 · What I saw or did
+- Entry 2 · Observed, inferred or unknown? (observed / inferred / unknown)
+- Entry 2 · Which goal does this affect?
+- Entry 2 · How could you check it?
+- Entry 3 · What I saw or did
+- Entry 3 · Observed, inferred or unknown? (observed / inferred / unknown)
+- Entry 3 · Which goal does this affect?
+- Entry 3 · How could you check it?
+- Entry 4 · What I saw or did
+- Entry 4 · Observed, inferred or unknown? (observed / inferred / unknown)
+- Entry 4 · Which goal does this affect?
+- Entry 4 · How could you check it?
+- Entry 5 · What I saw or did
+- Entry 5 · Observed, inferred or unknown? (observed / inferred / unknown)
+- Entry 5 · Which goal does this affect?
+- Entry 5 · How could you check it?
+- The user goal, without naming a screen or button — What does the person need to have happened by the end?
+- One possible business goal — A guess is fine; label it as one in your head.
+
+<details>
+<summary>Example</summary>
+
+Example (made up, not your research): “Sponsored results appear above the class I searched for” is observed. “People probably skip them” is inferred. “Whether anyone books a sponsored class” is unknown.
+
+</details>
+
+<details>
+<summary>Help with this step</summary>
+
+- **Observed:** You saw it or did it. You could point to it on the screen.
+- **Inferred:** Your reading of why something is there or how others behave. It may be right; it is not yet evidence.
+- **Unknown:** You cannot tell from the screen alone. Naming it is the point.
+
+Stuck starting? Take the first action from your list and write what was on the screen at that moment. Label it. Then the next action.
+
+Is it enough? At least one entry is inferred or unknown. If all five are observed, you have not yet written down a guess, and everyone has guesses.
+
+</details>
+
+#### 4. Compare
+
+- Propose one visual improvement and one behavior improvement.
+- For each, name an observation that would show whether it helps.
+
+**You should end up with:** Two improvements, one visual and one about behaviour, each with an observation that would show whether it helped.
+
+Worksheet fields for this step:
+
+- A visual improvement
+- What would show whether it helped? — Something you could watch or count, not an opinion.
+- A change to how the task behaves — Not colour or size: what happens, in what order, or what the app remembers.
+- What would show whether it helped?
+
+<details>
+<summary>Help with this step</summary>
+
+- **Hypothesis:** A change you believe would help, stated so that something you could see would prove it wrong.
+- **Behaviour improvement:** A change in what the app does, asks or remembers, rather than how it looks.
+
+Stuck starting? Look at your inferred and unknown entries. Each one is a place an improvement could be tested.
+
+Is it enough? Each check names something you could watch or count, not “people would like it more”.
+
+</details>
+
+#### 5. Reflect
+
+- Save the walkthrough, table and hypotheses.
+- Add one unresolved question and your next action.
+
+**You should end up with:** One question you could not answer from the screen, and your next action. The worksheet is saved as you type.
+
+Worksheet fields for this step:
+
+- One question you could not answer from the screen
+- Your next action when you return — One line. It is what the Learn page will remind you of.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Reread your unknown entries; one of them is your question.
+
+Is it enough? Your next action is a single line you could act on in five minutes when you return.
+
+</details>
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 

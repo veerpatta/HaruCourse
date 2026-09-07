@@ -1,6 +1,6 @@
 # Current milestone — guided learning refinement, 7 September 2026
 
-The active roadmap is [docs/LEARNING-EXPERIENCE-PLAN.md](docs/LEARNING-EXPERIENCE-PLAN.md). First implement the shared practice UI and `week1-day1-v1`, verify save/resume and beginner usability, then refine the existing lessons individually in prerequisite order. Do not batch-rewrite the curriculum. Track every lesson and the next stable ID in the plan ledger, with actual verification/release evidence in PROGRESS.md.
+The active roadmap is [docs/LEARNING-EXPERIENCE-PLAN.md](docs/LEARNING-EXPERIENCE-PLAN.md). The shared practice UI and `week1-day1-v1` are implemented and locally verified (7 September 2026); next is Haru's pilot observation, then refining the existing lessons individually in prerequisite order. Do not batch-rewrite the curriculum. Track every lesson and the next stable ID in the plan ledger, with actual verification/release evidence in PROGRESS.md.
 
 Priorities: editable worksheets, visual step guidance, explicit practice route, contextual help and a verified relevant video plus action where useful. Browser-side activities and modest bounded text saves protect free allowances. File uploads and formal scored assessment remain later separately designed milestones. All 224 lessons are already published; publication does not establish refinement or mastery.
 

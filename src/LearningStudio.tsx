@@ -13,12 +13,30 @@ import { baseline, baselineLesson } from "./course";
 import { usePractice } from "./usePractice";
 import { readingSelections } from "./reading";
 import { ApprenticeshipPanel, SaveHandoff, WorkspaceGuide } from './ApprenticeshipPanel';
+import { PracticeGuide, WorksheetSummary } from './PracticeGuide';
+import { resumeStep } from './worksheet';
 import {
   recordSchema,
+  worksheetFilled,
   type User,
   type RecordData,
   type Feedback,
 } from "../shared/record";
+// Whether the device reports a connection; the video block and save copy use
+// it. The record hook keeps its own guard, this is only for wording.
+function useOnline() {
+  const [online, setOnline] = useState(navigator.onLine);
+  useEffect(() => {
+    const update = () => setOnline(navigator.onLine);
+    window.addEventListener("online", update);
+    window.addEventListener("offline", update);
+    return () => {
+      window.removeEventListener("online", update);
+      window.removeEventListener("offline", update);
+    };
+  }, []);
+  return online;
+}
 export const sectionLabels = {
   learn: "Learn",
   "practice-plan": "Do",
@@ -156,6 +174,14 @@ export function LearningStudio({
     lessons.find((l) => l.id === bookmark.position?.lessonId) ||
     lessons.find((l) => l.id === recent?.lessonId) ||
     lessons.find((l) => !l.optional)!;
+  // For a lesson with guided steps, name the exact step to reopen so the
+  // learner continues the unfinished action rather than the section alone.
+  const resumeRecord = records.find((r) => r.lessonId === resume.id)?.record;
+  const resumeGuide =
+    resume.apprenticeship?.guide && resumeRecord?.guide
+      ? resumeStep(resume, resumeRecord)
+      : null;
+  const resumeTitle = resumeGuide ? resume.steps[resumeGuide - 1]?.title : null;
   if (mode === "My work")
     return (
       <>
@@ -211,18 +237,28 @@ export function LearningStudio({
       <section className="feature-card">
         <span className="pill">YOUR NEXT STEP</span>
         <h2>{resume.title}</h2>
+        {resumeGuide && resumeTitle && (
+          <p className="resume-step">
+            You were on step {resumeGuide} · {resumeTitle}.
+            {resumeRecord?.worksheet?.["next-action"]?.trim()
+              ? ` Your note: ${resumeRecord.worksheet["next-action"].trim()}`
+              : ""}
+          </p>
+        )}
         <button
           className="light-button"
           onClick={() =>
             open(
               resume.id,
-              bookmark.position?.lessonId === resume.id
-                ? bookmark.position.sectionId
-                : "learn",
+              resumeGuide
+                ? "practice-plan"
+                : bookmark.position?.lessonId === resume.id
+                  ? bookmark.position.sectionId
+                  : "learn",
             )
           }
         >
-          Continue learning →
+          {resumeGuide ? `Continue at step ${resumeGuide} →` : "Continue learning →"}
         </button>
       </section>
       <p className="save-status" role="status">
@@ -308,6 +344,8 @@ export function LessonReader({
   );
   const { record, setRecord, status, conflict, resolve } = practice;
   const timer = useTimer({storageKey:`harucourse:timer:${user.id}:${lesson.id}`,enabled:user.role === "learner",active:true,setRecord});
+  const online = useOnline();
+  const guided = !!lesson.apprenticeship?.guide?.length;
   const [feedback, setFeedback] = useState<Feedback[]>([]),
     [review, setReview] = useState(""),
     [message, setMessage] = useState("");
@@ -402,6 +440,12 @@ export function LessonReader({
             <li key={t}>{t}</li>
           ))}
         </ul>
+        {guided && (
+          <p className="guide-expect">
+            <strong>How this lesson works:</strong> Do has {lesson.steps.length} short steps with a worksheet you fill in
+            here. It saves as you type, and Learn will remember which step you were on.
+          </p>
+        )}
         {lesson.misconception && <details><summary>Common misconception</summary><p>{lesson.misconception}</p></details>}
         {lesson.example && (
           <details>
@@ -454,8 +498,21 @@ export function LessonReader({
             <li key={t}>{t}</li>
           ))}
         </ul>
-        {lesson.apprenticeship && <ApprenticeshipPanel key={lesson.id} activity={lesson.apprenticeship} contrast={lesson.id === 'm03-l04-v1'} />}
+        {lesson.apprenticeship && <ApprenticeshipPanel key={lesson.id} activity={lesson.apprenticeship} contrast={lesson.id === 'm03-l04-v1'} guided={guided} />}
         {lesson.freeToolPath && <p>{lesson.freeToolPath}</p>}
+        {guided && lesson.apprenticeship ? (
+          <PracticeGuide
+            lesson={lesson}
+            activity={lesson.apprenticeship}
+            record={record}
+            setRecord={setRecord}
+            readOnly={user.role !== "learner"}
+            status={status}
+            online={online}
+            trackedStep={timer.snapshot.step}
+            onTrack={user.role === "learner" ? timer.markStep : undefined}
+          />
+        ) : (
         <ol className="instruction-steps">
           {lesson.steps.map((s, i) => (
             <li key={s.title}>
@@ -469,6 +526,7 @@ export function LessonReader({
             </li>
           ))}
         </ol>
+        )}
         {lesson.apprenticeship && <SaveHandoff activity={lesson.apprenticeship} practiceOnly={!lesson.module || Number(lesson.module.slice(1)) <= 4} />}
         <p className="muted">
           Pause after any step. Save the artifact and your next action in Your
@@ -539,6 +597,16 @@ export function LessonReader({
         <h2>
           {user.role === "creator" ? "Review Haru’s practice" : "Your work"}
         </h2>
+        {guided && (
+          <>
+            <WorksheetSummary lesson={lesson} record={record} />
+            {user.role === "learner" && (
+              <p className="muted">
+                Your answers live in the worksheet under Do. Use the notes below for anything the worksheet did not ask.
+              </p>
+            )}
+          </>
+        )}
         <label htmlFor="lesson-notes">Notes and next action</label>
         <textarea
           id="lesson-notes"
@@ -567,6 +635,7 @@ export function LessonReader({
         <small>
           Files are not uploaded by entering a reference. Share screenshots or
           PDFs with your reviewer separately.
+          {guided ? " If you filled the worksheet in this app, you can leave this blank." : ""}
         </small>
         <details><summary>Time, sessions and confidence</summary>
           <SessionLog sessions={record.sessions || []} steps={lesson.steps}/>
@@ -589,7 +658,10 @@ export function LessonReader({
               <option value="practicing">Practicing</option>
               <option
                 value="ready-for-review"
-                disabled={!record.notes.trim() || !record.submission.trim()}
+                disabled={
+                  !(record.notes.trim() || worksheetFilled(record.worksheet)) ||
+                  !(record.submission.trim() || worksheetFilled(record.worksheet))
+                }
               >
                 Ready for review
               </option>

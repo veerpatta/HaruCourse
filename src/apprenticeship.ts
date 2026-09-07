@@ -1,5 +1,6 @@
-import type { Apprenticeship, Lesson } from './teaching';
+import type { Apprenticeship, GuideStep, Lesson, WorksheetField, WorksheetSection } from './teaching';
 import { milestones } from './journey';
+import { videoSelections } from './reading';
 
 // Authored activity material, keyed by permanent lesson identity. The reader,
 // Markdown generator and MCP all receive the same enriched Lesson object.
@@ -7,7 +8,111 @@ type Activity = {
   activity: string; mission: string; columns: string; first: string;
   hints: [string, string]; adequate: string; handoff: string;
   visual?: boolean; coach?: string; alternative?: string;
+  // Guided-practice refinement (docs/LEARNING-EXPERIENCE-PLAN.md), added one
+  // lesson at a time. `guide` aligns by index with the lesson's steps.
+  route?: { recommended: string; alternative: string };
+  worksheet?: WorksheetSection[];
+  guide?: GuideStep[];
+  video?: { id: string; then: string; written: string };
 };
+
+// Five evidence rows for the first lesson's table. Each row is four ordinary
+// fields rather than a Markdown table, so it can be filled on a phone.
+const LABELS = ['observed', 'inferred', 'unknown'];
+const evidenceRows = (count: number): WorksheetField[] => Array.from({ length: count }, (_, i) => i + 1).flatMap((n) => {
+  return [
+    { id: `entry-${n}-saw`, label: `Entry ${n} · What I saw or did`, kind: 'long' as const,
+      hint: n === 1 ? 'Something you can point to on the screen, or an action you took. One entry per line of the table.' : undefined,
+      example: n === 1 ? 'Example (made up, not your research): The home screen shows a search box labelled Find events and a list titled This weekend.' : undefined },
+    { id: `entry-${n}-label`, label: `Entry ${n} · Observed, inferred or unknown?`, kind: 'choice' as const, options: LABELS,
+      hint: n === 1 ? 'Observed: you saw it. Inferred: your guess about why. Unknown: you cannot tell from the screen.' : undefined },
+    { id: `entry-${n}-goal`, label: `Entry ${n} · Which goal does this affect?`, kind: 'short' as const,
+      example: n === 1 ? 'Example (made up): Finding an event nearby this weekend.' : undefined },
+    { id: `entry-${n}-check`, label: `Entry ${n} · How could you check it?`, kind: 'short' as const,
+      hint: n === 1 ? 'What would you watch for, or whom would you ask, to find out whether your reading is right?' : undefined,
+      example: n === 1 ? 'Example (made up): Watch whether I use the search box or scroll the list first.' : undefined },
+  ];
+});
+
+const detectiveWorksheet: WorksheetSection[] = [
+  { id: 'words', title: 'Three sentences in your own words', intro: 'Short is fine. These are for you, not for a reviewer.', fields: [
+    { id: 'define-product-design', label: 'Product design is…', kind: 'short', hint: 'Try: what it connects, and for whom.', example: 'Example (made up): Product design is deciding what a service should help someone do, and shaping it so it actually works for them.' },
+    { id: 'define-ux', label: 'UX is…', kind: 'short', hint: 'The whole task, from first need to finished.' },
+    { id: 'define-ui', label: 'UI is…', kind: 'short', hint: 'The controls and the presentation on the screen.' },
+  ] },
+  { id: 'walkthrough', title: 'Your walkthrough', intro: 'One app you already use, one task, stopping before any booking or payment.', fields: [
+    { id: 'app', label: 'The app', kind: 'short', hint: 'Any app that lists events, shows, classes or bookings.' },
+    { id: 'task', label: 'The one task you followed', kind: 'short', example: 'Example (made up): Find a pottery class near me next Saturday.' },
+    { id: 'start', label: 'Where you started', kind: 'short', hint: 'The first screen you saw when you began the task.' },
+    { id: 'actions', label: 'What you did, one action per line', kind: 'long', hint: 'Leave out anything private: names, addresses, payment details.', example: 'Example (made up):\nOpened the app to the home screen.\nTapped the search box and typed pottery.\nScrolled past three sponsored results.\nOpened the first class and looked for the date.' },
+  ] },
+  { id: 'evidence', title: 'Evidence table: five entries', intro: 'One entry for each thing you noticed. Label it honestly; unknown is a good label.', fields: [
+    ...evidenceRows(5),
+    { id: 'user-goal', label: 'The user goal, without naming a screen or button', kind: 'short', hint: 'What does the person need to have happened by the end?', example: 'Example (made up): Know which class fits Saturday and whether there is a place left.' },
+    { id: 'business-goal', label: 'One possible business goal', kind: 'short', hint: 'A guess is fine; label it as one in your head.', example: 'Example (made up): More bookings completed on the first visit.' },
+  ] },
+  { id: 'compare', title: 'Two improvements and how to check them', intro: 'One about looks, one about how the task behaves. Each needs an observation that would show whether it helped.', fields: [
+    { id: 'visual-improvement', label: 'A visual improvement', kind: 'short', example: 'Example (made up): Make the date and price the same size as the class title.' },
+    { id: 'visual-check', label: 'What would show whether it helped?', kind: 'short', hint: 'Something you could watch or count, not an opinion.' },
+    { id: 'behavior-improvement', label: 'A change to how the task behaves', kind: 'short', hint: 'Not colour or size: what happens, in what order, or what the app remembers.', example: 'Example (made up): Ask for the date before showing results, so sold-out classes are hidden.' },
+    { id: 'behavior-check', label: 'What would show whether it helped?', kind: 'short' },
+  ] },
+  { id: 'reflect', title: 'Reflect', fields: [
+    { id: 'open-question', label: 'One question you could not answer from the screen', kind: 'short', example: 'Example (made up): Do other people notice the sponsored results, or only me?' },
+    { id: 'next-action', label: 'Your next action when you return', kind: 'short', hint: 'One line. It is what the Learn page will remind you of.' },
+  ] },
+];
+
+const detectiveGuide: GuideStep[] = [
+  { expect: 'Three sentences in your own words: product design, UX and UI. No quotation needed.',
+    fields: ['define-product-design', 'define-ux', 'define-ui'], video: 'VID01',
+    terms: [
+      { term: 'Product design', meaning: 'Deciding which problem a service should solve and shaping the whole service so people can use it and the business can run it.' },
+      { term: 'UX (user experience)', meaning: 'Everything a person goes through to finish a task, including waiting, instructions and recovering from mistakes.' },
+      { term: 'UI (user interface)', meaning: 'The controls, words and layout on the screen itself.' },
+      { term: 'Output versus outcome', meaning: 'A screen is an output. A person finishing the task is an outcome.' },
+    ],
+    start: 'Begin the first sentence with “Product design is deciding…” and finish it however feels true to you.',
+    enough: 'Each sentence names something a person is trying to do, not just a screen.' },
+  { expect: 'The app, the one task, where you started and a short list of what you did.',
+    fields: ['app', 'task', 'start', 'actions'],
+    terms: [
+      { term: 'Task', meaning: 'One thing the person is trying to get done, with a clear end. “Find a class on Saturday” is a task; “use the app” is not.' },
+      { term: 'Walkthrough', meaning: 'Doing the task yourself, slowly, and writing down each action as you go.' },
+    ],
+    start: 'Pick the app you used most recently that lists events or bookings. Do the task once without writing, then once more while writing.',
+    enough: 'Someone else could repeat your actions from the list without asking you anything.' },
+  { expect: 'Five entries, each labelled observed, inferred or unknown, plus one user goal and one possible business goal.',
+    fields: [
+      'entry-1-saw', 'entry-1-label', 'entry-1-goal', 'entry-1-check',
+      'entry-2-saw', 'entry-2-label', 'entry-2-goal', 'entry-2-check',
+      'entry-3-saw', 'entry-3-label', 'entry-3-goal', 'entry-3-check',
+      'entry-4-saw', 'entry-4-label', 'entry-4-goal', 'entry-4-check',
+      'entry-5-saw', 'entry-5-label', 'entry-5-goal', 'entry-5-check',
+      'user-goal', 'business-goal',
+    ],
+    example: 'Example (made up, not your research): “Sponsored results appear above the class I searched for” is observed. “People probably skip them” is inferred. “Whether anyone books a sponsored class” is unknown.',
+    terms: [
+      { term: 'Observed', meaning: 'You saw it or did it. You could point to it on the screen.' },
+      { term: 'Inferred', meaning: 'Your reading of why something is there or how others behave. It may be right; it is not yet evidence.' },
+      { term: 'Unknown', meaning: 'You cannot tell from the screen alone. Naming it is the point.' },
+    ],
+    start: 'Take the first action from your list and write what was on the screen at that moment. Label it. Then the next action.',
+    enough: 'At least one entry is inferred or unknown. If all five are observed, you have not yet written down a guess, and everyone has guesses.' },
+  { expect: 'Two improvements, one visual and one about behaviour, each with an observation that would show whether it helped.',
+    fields: ['visual-improvement', 'visual-check', 'behavior-improvement', 'behavior-check'],
+    terms: [
+      { term: 'Hypothesis', meaning: 'A change you believe would help, stated so that something you could see would prove it wrong.' },
+      { term: 'Behaviour improvement', meaning: 'A change in what the app does, asks or remembers, rather than how it looks.' },
+    ],
+    start: 'Look at your inferred and unknown entries. Each one is a place an improvement could be tested.',
+    enough: 'Each check names something you could watch or count, not “people would like it more”.' },
+  { expect: 'One question you could not answer from the screen, and your next action. The worksheet is saved as you type.',
+    fields: ['open-question', 'next-action'],
+    start: 'Reread your unknown entries; one of them is your question.',
+    enough: 'Your next action is a single line you could act on in five minutes when you return.' },
+];
+
 export const activities: Record<string, Activity> = {
   'week1-day1-v1': {
     activity: 'Design detective',
@@ -18,7 +123,18 @@ export const activities: Record<string, Activity> = {
     adequate: 'Five traceable entries distinguish your own walkthrough from claims about other users; both proposed improvements name a way to check them.',
     handoff: 'Bring this table to problem framing. If you investigated another domain, keep it as practice and begin the workshop brief separately; do not transfer its findings.',
     coach: 'Ask me to defend one evidence label at a time. Spot an unsupported assumption without rewriting my table.',
-    alternative: 'Cover the label column. Re-label each entry and explain which entries another observer could verify.'
+    alternative: 'Cover the label column. Re-label each entry and explain which entries another observer could verify.',
+    route: {
+      recommended: 'Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.',
+      alternative: 'Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.',
+    },
+    worksheet: detectiveWorksheet,
+    guide: detectiveGuide,
+    video: {
+      id: 'VID01',
+      then: 'Straight after watching, fill “Product design is…” below. If it helps, use his question: was the app built to solve the right problem?',
+      written: 'No video needed: the Double Diamond page (R01) says the same in four short paragraphs, Discover, Define, Develop, Deliver. Read those, then write your three sentences.',
+    },
   },
   'week1-day2-v1': {
     activity: 'Make three, defend one',
@@ -323,6 +439,10 @@ export function withApprenticeship(l: Lesson): Lesson {
         'For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.',
       ],
     }, starter, hints: a.hints, adequate: a.adequate, handoff: a.handoff,
+    ...(a.route ? { route: a.route } : {}),
+    ...(a.worksheet ? { worksheet: a.worksheet } : {}),
+    ...(a.guide ? { guide: a.guide } : {}),
+    ...(a.video ? { video: { ...videoSelections[a.video.id], ...a.video } } : {}),
     ...(a.coach ? { ai: {
       purpose: 'Optional: attempt the work first, then use a free text chat for a focused rehearsal.',
       setup: ['Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.', 'Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.', 'Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.'],

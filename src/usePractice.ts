@@ -173,7 +173,9 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
             local.minutes === parsed.data.minutes &&
             local.status === parsed.data.status &&
             local.confidence === parsed.data.confidence &&
-            (local.sessions?.length ?? 0) === (parsed.data.sessions?.length ?? 0)
+            (local.sessions?.length ?? 0) === (parsed.data.sessions?.length ?? 0) &&
+            JSON.stringify(local.worksheet ?? null) === JSON.stringify(parsed.data.worksheet ?? null) &&
+            JSON.stringify(local.guide ?? null) === JSON.stringify(parsed.data.guide ?? null)
           )
             persist();
         } catch {}

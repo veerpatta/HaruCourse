@@ -253,6 +253,121 @@ assert.equal(
   ).status,
   403,
 );
+// Guided worksheet and step position (7 September 2026): both optional and
+// bounded, saved through the same revisioned record as notes, so a stale
+// write still conflicts, a second session reads the same version, an older
+// record shape still round-trips, and Haru's records stay untouched.
+{
+  const lessonId = "week1-day1-v1";
+  const path = "/api/progress?lessonId=" + lessonId;
+  const haruStart = await (await call(path, { cookie: learner })).json();
+  const before = await (await call(path, { cookie: tester })).json();
+  const legacy = {
+    version: 1,
+    notes: "QA: legacy shape before the worksheet existed",
+    submission: "",
+    minutes: 0,
+    status: "practicing",
+    updatedAt: "",
+  };
+  const r0 = await call(path, {
+    method: "PUT",
+    cookie: tester,
+    body: { record: legacy, expectedRevision: before.revision },
+  });
+  assert.equal(r0.status, 200, await r0.clone().text());
+  let rev = (await r0.json()).revision;
+  const worksheet = {
+    "define-product-design": "QA: deciding what a service should help someone do.",
+    "entry-1-label": "observed",
+    "next-action": "QA: fill entry 2",
+  };
+  const guided = {
+    ...legacy,
+    worksheet,
+    guide: { step: 3, done: [1, 2] },
+  };
+  const r1 = await call(path, {
+    method: "PUT",
+    cookie: tester,
+    body: { record: guided, expectedRevision: rev },
+  });
+  assert.equal(r1.status, 200, await r1.clone().text());
+  const saved = await r1.json();
+  assert.equal(saved.revision, rev + 1);
+  assert.deepEqual(saved.record.worksheet, worksheet);
+  assert.deepEqual(saved.record.guide, { step: 3, done: [1, 2] });
+  rev = saved.revision;
+  // A second signed-in session (another device) reads the same version.
+  const second = await signin(keys.test);
+  const other = await (await call(path, { cookie: second })).json();
+  assert.equal(other.revision, rev);
+  assert.deepEqual(other.record.worksheet, worksheet);
+  // A stale write from the first session is refused and the server keeps
+  // the newer answers.
+  const r2 = await call(path, {
+    method: "PUT",
+    cookie: second,
+    body: { record: { ...guided, worksheet: { ...worksheet, "define-ux": "QA: from device two" } }, expectedRevision: rev },
+  });
+  assert.equal(r2.status, 200);
+  rev = (await r2.json()).revision;
+  const stale = await call(path, {
+    method: "PUT",
+    cookie: tester,
+    body: { record: { ...guided, worksheet: { "define-ux": "QA: stale overwrite" } }, expectedRevision: rev - 1 },
+  });
+  assert.equal(stale.status, 409);
+  const kept = await (await call(path, { cookie: tester })).json();
+  assert.equal(kept.revision, rev);
+  assert.equal(kept.record.worksheet["define-ux"], "QA: from device two");
+  // Bounds: bad key, oversized value, too many fields, unknown guide field.
+  for (const bad of [
+    { ...guided, worksheet: { "Bad Key!": "x" } },
+    { ...guided, worksheet: { "define-ux": "x".repeat(2001) } },
+    { ...guided, worksheet: Object.fromEntries(Array.from({ length: 41 }, (_, i) => [`f-${i}`, "x"])) },
+    { ...guided, guide: { step: 3, done: [1], extra: true } },
+    { ...guided, guide: { step: 0, done: [] } },
+  ]) {
+    const r = await call(path, {
+      method: "PUT",
+      cookie: tester,
+      body: { record: bad, expectedRevision: rev },
+    });
+    assert.equal(r.status, 400, JSON.stringify(bad).slice(0, 80));
+  }
+  // Ready for review: a filled worksheet can stand in for a work reference,
+  // but an empty record still cannot be marked ready.
+  const ready = await call(path, {
+    method: "PUT",
+    cookie: tester,
+    body: { record: { ...guided, submission: "", status: "ready-for-review" }, expectedRevision: rev },
+  });
+  assert.equal(ready.status, 200, await ready.clone().text());
+  rev = (await ready.json()).revision;
+  const notReady = await call(path, {
+    method: "PUT",
+    cookie: tester,
+    body: { record: { ...legacy, notes: "", status: "ready-for-review" }, expectedRevision: rev },
+  });
+  assert.equal(notReady.status, 400);
+  // The old shape still writes over a guided record (an older client), and
+  // the worksheet is simply absent afterwards rather than corrupt.
+  const back = await call(path, {
+    method: "PUT",
+    cookie: tester,
+    body: { record: legacy, expectedRevision: rev },
+  });
+  assert.equal(back.status, 200);
+  const after = await (await call(path, { cookie: tester })).json();
+  assert.equal(after.record.worksheet, undefined);
+  assert.equal((await call(path, { cookie: creator, method: "PUT", body: { record: guided, expectedRevision: after.revision } })).status, 403);
+  assert.deepEqual(await (await call(path, { cookie: learner })).json(), haruStart);
+  await call("/api/logout", { method: "POST", cookie: second });
+  checks.push(
+    "guided worksheet and step position round-trip, second-session read, stale conflict, bounds, review gating, legacy write and Haru isolation",
+  );
+}
 await call("/api/logout", { method: "POST", cookie: tester });
 checks.push(
   "password rejection, password-free test login, isolated test writes and denied creator access",

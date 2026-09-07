@@ -2,6 +2,7 @@ import { useState } from "react";
 import { baseline } from "./course";
 import { publishedLessons as lessons } from "./lessons";
 import { usePractice } from "./usePractice";
+import { worksheetBody } from "./worksheet";
 import { recordSchema, type User } from "../shared/record";
 
 function download(name: string, value: string, type = "application/json") {
@@ -76,7 +77,7 @@ function BackupRecord({ user, id }: { user: User; id: string }) {
           onClick={() =>
             download(
               `${id}-review.md`,
-              `# ${lesson.title}\n\nLesson: ${id}\nStatus: ${record.status} (self-reported, not assessed)\n\n## Task\n${lesson.steps.map((s) => `- ${s.text}`).join("\n")}\n\n## Output\n${lesson.outputs.map((s) => `- ${s}`).join("\n")}\n\n## Criteria\n${lesson.rubric.map((s) => `- ${s}`).join("\n")}\n\n## Notes\n${record.notes}\n\n## Work reference\n${record.submission}\n\nAsk for actual artifacts when references are inaccessible. Label AI critique and identify a bounded repair.\n`,
+              `# ${lesson.title}\n\nLesson: ${id}\nStatus: ${record.status} (self-reported, not assessed)\n\n## Task\n${lesson.steps.map((s) => `- ${s.text}`).join("\n")}\n\n## Output\n${lesson.outputs.map((s) => `- ${s}`).join("\n")}\n\n## Criteria\n${lesson.rubric.map((s) => `- ${s}`).join("\n")}\n\n## Notes\n${record.notes}\n\n## Work reference\n${record.submission}\n${lesson.apprenticeship?.worksheet?.length ? `\n# Worksheet answers\n\n${worksheetBody(lesson, record)}` : ""}\nAsk for actual artifacts when references are inaccessible. Label AI critique and identify a bounded repair.\n`,
               "text/markdown",
             )
           }

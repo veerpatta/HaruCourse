@@ -1,3 +1,53 @@
+// One editable field of an in-app worksheet. `id` is the key stored in the
+// learner's record (shared/record.ts worksheetSchema), so it is permanent
+// once a lesson ships: rename the label, never the id. `example` text is
+// always synthetic and must say so in the text itself.
+export type WorksheetField = {
+  id: string;
+  label: string;
+  kind: "short" | "long" | "choice";
+  options?: string[];
+  hint?: string;
+  example?: string;
+};
+export type WorksheetSection = {
+  id: string;
+  title: string;
+  intro?: string;
+  fields: WorksheetField[];
+};
+// Guidance for one practice step, aligned by index with Lesson.steps. The
+// step's `instructions` remain the actions; this adds what the learner should
+// have at the end, an optional labelled example, word explanations, a way to
+// start and a way to judge whether it is enough. `fields` names the
+// worksheet fields filled during this step.
+export type GuideStep = {
+  expect: string;
+  fields?: string[];
+  example?: string;
+  terms?: { term: string; meaning: string }[];
+  start?: string;
+  enough?: string;
+  video?: string;
+};
+// A verified video segment paired with an immediate action. The catalog row
+// (RESOURCE-LIBRARY.md) holds the access evidence; src/reading.ts holds the
+// selection under the same id; the lesson supplies only `then`.
+export type VideoSelection = {
+  title: string;
+  publisher: string;
+  url: string;
+  embedUrl: string;
+  duration: string;
+  language: string;
+  captions: string;
+  segment: string;
+  notice: string[];
+  differences: string;
+  access: string;
+  checked: string;
+};
+export type VideoAction = VideoSelection & { id: string; then: string; written: string };
 export type Apprenticeship = {
   activity: string;
   mission: string;
@@ -8,6 +58,11 @@ export type Apprenticeship = {
   handoff: string;
   ai?: { purpose: string; setup: string[]; prompt: string; followUp: string; alternative: string };
   visual?: boolean;
+  // Present only on lessons refined under docs/LEARNING-EXPERIENCE-PLAN.md.
+  route?: { recommended: string; alternative: string };
+  worksheet?: WorksheetSection[];
+  guide?: GuideStep[];
+  video?: VideoAction;
 };
 export type Criterion = {
   criterion: string;

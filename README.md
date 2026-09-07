@@ -1,6 +1,6 @@
 ## Current improvement plan — 7 September 2026
 
-[Guided learning experience plan](docs/LEARNING-EXPERIENCE-PLAN.md): improve the existing course lesson by lesson with clearer practice steps, editable worksheets, contextual help, optional verified videos, interactive exercises and easier save/resume. Preserve the established visual style and existing records. Start with shared UI and the first foundations lesson, then validate the pilot. Use browser-side exercises and bounded text synchronization within existing Cloudflare free allowances. This is a documented plan; new features are not yet implemented.
+[Guided learning experience plan](docs/LEARNING-EXPERIENCE-PLAN.md): improve the existing course lesson by lesson with clearer practice steps, editable worksheets, contextual help, optional verified videos, interactive exercises and easier save/resume. Preserve the established visual style and existing records. Start with shared UI and the first foundations lesson, then validate the pilot. Use browser-side exercises and bounded text synchronization within existing Cloudflare free allowances. The shared guided-practice UI and the first lesson (`week1-day1-v1`: steps, in-app worksheet, help, optional verified video, resume) are implemented; the plan's ledger and PROGRESS.md record which lessons are refined and what was verified.
 
 ## Concise course experience
 

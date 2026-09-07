@@ -17,7 +17,7 @@ npx.cmd wrangler d1 execute harucourse --local --file .test-secrets/seed.sql
 npm.cmd run dev:cloud
 ```
 
-Open http://127.0.0.1:8787 and open Learn or My work. Read `.test-secrets/login-credentials.json` privately to sign in as `haru`, `itsme` (creator), or `test` (no password). The generator refuses to overwrite existing keys; skip generation/seeding when reusing an initialized database. With the server running, `npm.cmd run test:cloud` exercises authentication, ownership, concurrent saves, versioned feedback, OAuth, the real MCP SDK, token downscoping, and revocation. It writes synthetic practice records into the local test database.
+Open http://127.0.0.1:8787 and open Learn or My work. Read `.test-secrets/login-credentials.json` privately to sign in as `haru`, `itsme` (creator), or `test` (no password). The generator refuses to overwrite existing keys; skip generation/seeding when reusing an initialized database. With the server running, `npm.cmd run test:cloud` exercises authentication, ownership, concurrent saves, versioned feedback, OAuth, the real MCP SDK, token downscoping, and revocation, plus the guided worksheet and step-position fields: round-trip, second-session read, stale-revision conflict, bounds, review gating, an older-shape write and Haru isolation. It writes synthetic practice records into the local test database. On this machine port 8787 may be held by another server; `.claude/launch.json` runs the Worker on 8788, and the suite is pointed at it with `HARU_TEST_BASE=http://localhost:8788` (use `localhost`, not `127.0.0.1`, so the MCP resource check matches the registered host).
 
 ## Data and access
 

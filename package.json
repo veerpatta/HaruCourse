@@ -14,7 +14,8 @@
     "deploy": "npm run build && wrangler deploy",
     "test:cloud": "node scripts/test-cloud.mjs",
     "docs:generate": "node scripts/course-docs.mjs",
-    "test:content": "node scripts/course-docs.mjs --check"
+    "test:content": "node scripts/course-docs.mjs --check",
+    "test:worksheet": "node scripts/test-worksheet.mjs"
   },
   "dependencies": {
     "@cloudflare/workers-oauth-provider": "^0.10.3",

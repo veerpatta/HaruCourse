@@ -11,8 +11,9 @@ const { lessons, publishedLessonIds, isPublishedLesson } = await import(
   "../src/lessons.ts"
 );
 const { baselineLesson } = await import('../src/course.ts');
-const { readingSelections } = await import('../src/reading.ts');
+const { readingSelections, videoSelections } = await import('../src/reading.ts');
 const { activities } = await import('../src/apprenticeship.ts');
+const { WORKSHEET_FIELD_CAP, worksheetFieldId } = await import('../shared/record.ts');
 const { contrastRatio } = await import('../src/contrast.ts');
 assert.equal(contrastRatio('#000000', '#ffffff'), 21);
 assert.equal(contrastRatio('#123456', '#123456'), 1);
@@ -131,7 +132,7 @@ const catalog = [
 function output(path, text) {
   // Keep generated course views connected to the plan without rewriting teaching.
   const titleEnd = text.indexOf("\n");
-  const planNote = "\n\n> Experience refinement is planned lesson by lesson; it is not yet implemented. See [the agreed learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for guided practice, worksheets, videos, free-tier constraints and current refinement status. Existing teaching and diagnostic independence remain in force.";
+  const planNote = "\n\n> Experience refinement is applied lesson by lesson. See [the agreed learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for guided practice, worksheets, videos, free-tier constraints and the refinement ledger that records which lessons carry the guided worksheet. Existing teaching and diagnostic independence remain in force.";
   text = text.slice(0, titleEnd) + planNote + text.slice(titleEnd);
   if (process.argv.includes("--check"))
     assert.equal(
@@ -163,10 +164,36 @@ function list(items) {
 function details(title, content) {
   return `<details>\n<summary>${title}</summary>\n\n${content}\n\n</details>`;
 }
+// Guided practice (docs/LEARNING-EXPERIENCE-PLAN.md): the same route,
+// worksheet, step guidance and video-action pair the app renders, so the
+// generated document and the MCP lesson stay one source.
+function guidedDoc(l) {
+  const a = l.apprenticeship;
+  if (!a.guide) return "";
+  const video = a.video
+    ? `${details(
+        `Optional video paired with step ${a.guide.findIndex((g) => g.video === a.video.id) + 1}`,
+        `[${a.video.title}](${a.video.url}) — ${a.video.publisher}, ${a.video.duration}, ${a.video.language}, ${a.video.captions}. ${a.video.segment}\n\nWhat to notice:\n\n${list(a.video.notice)}\n\n**Then:** ${a.video.then}\n\n**Without the video:** ${a.video.written}\n\n${a.video.differences} ${a.video.access} Checked ${a.video.checked}.`,
+      )}\n\n`
+    : "";
+  const steps = l.steps
+    .map((s, i) => {
+      const g = a.guide[i];
+      const fields = (g.fields || []).map((id) => {
+        const f = a.worksheet.flatMap((w) => w.fields).find((f) => f.id === id);
+        return `- ${f.label}${f.kind === "choice" ? ` (${f.options.join(" / ")})` : ""}${f.hint ? ` — ${f.hint}` : ""}`;
+      });
+      return `#### ${i + 1}. ${s.title}\n\n${list(s.instructions)}\n\n**You should end up with:** ${g.expect}\n\n${g.fields?.length ? `Worksheet fields for this step:\n\n${fields.join("\n")}\n\n` : ""}${g.example ? details("Example", g.example) + "\n\n" : ""}${g.terms?.length || g.start || g.enough ? details("Help with this step", (g.terms || []).map((t) => `- **${t.term}:** ${t.meaning}`).join("\n") + (g.start ? `\n\nStuck starting? ${g.start}` : "") + (g.enough ? `\n\nIs it enough? ${g.enough}` : "")) : ""}`;
+    })
+    .join("\n\n");
+  return `**Where to practise:** ${a.route.recommended}\n\n${details("Work in a file on your computer instead", a.route.alternative + "\n\nTools: " + a.workspace.tools + "\n\n" + list(a.workspace.setup))}\n\n${video}${steps}\n\nA ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.\n\n`;
+}
 function activityDoc(l) {
   const a = l.apprenticeship;
   assert(a, `Missing activity ${l.id}`);
-  return `#### ${a.activity}\n\n${a.mission}\n\n**Where to work:** ${a.workspace.tools}\n\n${list(a.workspace.setup)}\n\n${details('Copyable starter template', '```text\n' + a.starter + '\n```')}\n\n${a.visual ? details('Optional Figma Starter route (workflow not authenticated)', list(figmaGuide)) : ''}\n\n${l.id === 'm03-l04-v1' ? 'Use the offline contrast calculator in this lesson’s Do section. It accepts opaque six-digit sRGB colors; classification and exceptions come from R30. Record exact input values and the unrounded-threshold result, not only the displayed ratio.' : ''}\n\n${a.hints.map((h, i) => details('Hint ' + (i + 1), h)).join('\n\n')}\n\n${a.ai ? details('Optional AI rehearsal', a.ai.purpose + '\n\n' + list(a.ai.setup) + '\n\n```text\n' + a.ai.prompt + '\n```\n\n' + a.ai.followUp + '\n\nWithout AI or at a usage limit: ' + a.ai.alternative) : ''}\n\n**Save:**\n\n${list(a.workspace.save)}\n\n**Adequate evidence:** ${a.adequate}\n\n**Bring forward:** ${a.handoff}\n`;
+  const guided = !!a.guide;
+  const setup = guided ? "" : `**Where to work:** ${a.workspace.tools}\n\n${list(a.workspace.setup)}\n\n${details('Copyable starter template', '```text\n' + a.starter + '\n```')}\n\n`;
+  return `#### ${a.activity}\n\n${a.mission}\n\n${setup}${guidedDoc(l)}${a.visual ? details('Optional Figma Starter route (workflow not authenticated)', list(figmaGuide)) : ''}\n\n${l.id === 'm03-l04-v1' ? 'Use the offline contrast calculator in this lesson’s Do section. It accepts opaque six-digit sRGB colors; classification and exceptions come from R30. Record exact input values and the unrounded-threshold result, not only the displayed ratio.' : ''}\n\n${a.hints.map((h, i) => details('Hint ' + (i + 1), h)).join('\n\n')}\n\n${a.ai ? details('Optional AI rehearsal', a.ai.purpose + '\n\n' + list(a.ai.setup) + '\n\n```text\n' + a.ai.prompt + '\n```\n\n' + a.ai.followUp + '\n\nWithout AI or at a usage limit: ' + a.ai.alternative) : ''}\n\n**Save:**\n\n${list(a.workspace.save)}\n\n**Adequate evidence:** ${a.adequate}\n\n**Bring forward:** ${a.handoff}\n`;
 }
 function lessonDoc(l) {
   const reading = readingSelections[l.resource.id];
@@ -181,7 +208,7 @@ ${l.why}
 Bring: ${l.prerequisite}
 
 ${list(l.teach)}
-
+${l.apprenticeship?.guide ? `\nHow this lesson works: Do has ${l.steps.length} short steps with an in-app worksheet that saves as you type; Learn remembers which step you were on.\n` : ""}
 ${l.example ? details("Worked example", l.example) : ""}
 
 ${l.explanation.length ? details("Why this works", list(l.explanation)) : ""}
@@ -327,10 +354,45 @@ for (const l of [baselineLesson, ...lessons]) {
   assert(a.workspace.tools && a.workspace.setup.length >= 2 && a.workspace.save.length >= 2);
   assert(a.workspace.file.includes(l.id), `Unstable artifact path ${l.id}`);
   assert(a.starter.includes('Next action'));
-  if (l.id === baselineLesson.id) { assert(!a.ai); assert.equal(a.hints.length, 0); }
+  if (l.id === baselineLesson.id) { assert(!a.ai); assert.equal(a.hints.length, 0); assert(!a.guide && !a.worksheet && !a.video && !a.route, 'The diagnostic gets no guided coaching'); }
   else { assert.equal(a.hints.length, 2); assert(a.starter.includes('Output checklist')); }
   if (a.ai) assert(a.ai.prompt.includes(l.title) && a.ai.followUp && a.ai.alternative && a.ai.setup.length);
 }
+// Guided-practice contract for refined lessons (docs/LEARNING-EXPERIENCE-PLAN.md).
+// Worksheet ids are record keys, so they must be stable, unique and bounded;
+// every step names only fields that exist; examples say they are made up;
+// a video is assigned only from the catalog's verified video table.
+const videoIds = new Set([...catalog.matchAll(/^\| (VID\d+) \|/gm)].map((m) => m[1]));
+for (const l of lessons) {
+  const a = l.apprenticeship;
+  if (!a.guide && !a.worksheet && !a.video && !a.route) continue;
+  assert(a.guide && a.worksheet && a.route, `Guided lesson ${l.id} needs route, worksheet and guide together`);
+  assert.equal(a.guide.length, l.steps.length, `Guide for ${l.id} must align with its steps`);
+  const fields = a.worksheet.flatMap((s) => s.fields);
+  const ids = fields.map((f) => f.id);
+  assert.equal(new Set(ids).size, ids.length, `Duplicate worksheet field id in ${l.id}`);
+  assert(ids.length <= WORKSHEET_FIELD_CAP, `${l.id} declares more than ${WORKSHEET_FIELD_CAP} worksheet fields`);
+  for (const f of fields) {
+    assert(worksheetFieldId.safeParse(f.id).success, `Bad worksheet id ${f.id} in ${l.id}`);
+    assert(f.label && f.label.length <= 240, `Worksheet label too long: ${l.id} / ${f.id}`);
+    assert(["short", "long", "choice"].includes(f.kind) && (f.kind !== "choice" || f.options?.length), `Bad field kind ${l.id} / ${f.id}`);
+    if (f.example) assert(/made up/.test(f.example), `Label synthetic example as made up: ${l.id} / ${f.id}`);
+  }
+  const named = new Set();
+  for (const g of a.guide) {
+    assert(g.expect && g.expect.length <= 240, `Guide step in ${l.id} needs a concise expected output`);
+    for (const id of g.fields || []) { assert(ids.includes(id), `Guide in ${l.id} names unknown field ${id}`); named.add(id); }
+    if (g.example) assert(/made up/.test(g.example), `Label synthetic example as made up: ${l.id}`);
+    if (g.video) assert(a.video && a.video.id === g.video, `Guide in ${l.id} names a video the lesson does not carry`);
+  }
+  for (const id of ids) assert(named.has(id), `Worksheet field ${id} in ${l.id} belongs to no step`);
+  if (a.video) {
+    assert(videoIds.has(a.video.id), `${l.id} assigns video ${a.video.id} that RESOURCE-LIBRARY.md does not record`);
+    assert(a.video.url && a.video.embedUrl && a.video.segment && a.video.notice.length && a.video.then && a.video.written && a.video.captions && a.video.checked, `Video ${a.video.id} is missing verification fields`);
+    assert(a.guide.some((g) => g.video === a.video.id), `Video ${a.video.id} in ${l.id} is not paired with a step`);
+  }
+}
+for (const id of Object.keys(videoSelections)) assert(videoIds.has(id), `Video selection ${id} has no catalog row`);
 for (const m of modules) assert(milestones[m.id]?.start && milestones[m.id]?.later);
 assert.equal(projectPacks.length, 3);
 for (const p of projectPacks) {

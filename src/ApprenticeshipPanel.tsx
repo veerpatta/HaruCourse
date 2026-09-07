@@ -24,14 +24,8 @@ export function WorkspaceGuide() {
   </details>;
 }
 
-export function ApprenticeshipPanel({ activity, contrast = false }: { activity: Apprenticeship; contrast?: boolean }) {
-  return <section className="apprenticeship" aria-label="Activity workspace">
-    <h3>{activity.activity}</h3><p>{activity.mission}</p>
-    <h4>Where to work</h4><p>{activity.workspace.tools}</p>
-    <ol>{activity.workspace.setup.map(s => <li key={s}>{s}</li>)}</ol>
-    <CopyMaterial title="Your starter template" label="Copy template" text={activity.starter} />
-    {activity.visual && <details><summary>Optional Figma Starter walkthrough</summary><ol>{figmaGuide.map(s => <li key={s}>{s}</li>)}</ol><a href="https://help.figma.com/hc/en-us/articles/13838684089751-Starter-plan-overview" target="_blank" rel="noreferrer">Starter plan documentation</a></details>}
-    {contrast && <ContrastCalculator />}
+export function ApprenticeshipPanel({ activity, contrast = false, guided = false }: { activity: Apprenticeship; contrast?: boolean; guided?: boolean }) {
+  const hints = <>
     {activity.hints.map((hint, i) => <details key={hint}><summary>Hint {i + 1}{i === 0 ? ' · a nudge' : ' · more help'}</summary><p>{hint}</p></details>)}
     {activity.ai && <details><summary>Optional AI rehearsal · try it yourself first</summary>
       <p>{activity.ai.purpose} Use any free text chatbot you already have access to. No uploads or paid features are needed.</p>
@@ -40,6 +34,33 @@ export function ApprenticeshipPanel({ activity, contrast = false }: { activity: 
       <CopyMaterial title="Lesson AI prompt" label="Copy AI prompt" text={activity.ai.prompt} />
       <p>{activity.ai.followUp}</p><h4>Without AI, or if you hit a limit</h4><p>{activity.ai.alternative}</p>
     </details>}
+  </>;
+  // A guided lesson recommends the in-app worksheet, keeps the local-file
+  // route one disclosure away, and moves hints below the steps so the first
+  // thing a learner sees is the first thing to do.
+  if (guided && activity.route) return <section className="apprenticeship" aria-label="Activity workspace">
+    <h3>{activity.activity}</h3><p>{activity.mission}</p>
+    <section className="practice-route" aria-label="Where to practise">
+      <h4>Where to practise</h4>
+      <p><strong>Recommended:</strong> {activity.route.recommended}</p>
+      <details><summary>Work in a file on your computer instead</summary>
+        <p>{activity.route.alternative}</p>
+        <p><strong>Tools:</strong> {activity.workspace.tools}</p>
+        <ol>{activity.workspace.setup.map(s => <li key={s}>{s}</li>)}</ol>
+        <CopyMaterial title="Your starter template" label="Copy template" text={activity.starter} />
+      </details>
+    </section>
+    {contrast && <ContrastCalculator />}
+    <details className="guided-hints"><summary>Hints and optional rehearsal</summary>{hints}</details>
+  </section>;
+  return <section className="apprenticeship" aria-label="Activity workspace">
+    <h3>{activity.activity}</h3><p>{activity.mission}</p>
+    <h4>Where to work</h4><p>{activity.workspace.tools}</p>
+    <ol>{activity.workspace.setup.map(s => <li key={s}>{s}</li>)}</ol>
+    <CopyMaterial title="Your starter template" label="Copy template" text={activity.starter} />
+    {activity.visual && <details><summary>Optional Figma Starter walkthrough</summary><ol>{figmaGuide.map(s => <li key={s}>{s}</li>)}</ol><a href="https://help.figma.com/hc/en-us/articles/13838684089751-Starter-plan-overview" target="_blank" rel="noreferrer">Starter plan documentation</a></details>}
+    {contrast && <ContrastCalculator />}
+    {hints}
   </section>;
 }
 

@@ -1,6 +1,19 @@
 # Guided learning experience plan
 
-Approved 7 September 2026. Status: documented; implementation has not started. This is the current improvement plan, alongside the unchanged original vision and COURSE-REQUIREMENTS.md. It refines the existing 224 lessons; it does not reset the curriculum or learner progress.
+Approved 7 September 2026. Status: the shared guided-practice UI and the first lesson pilot (`week1-day1-v1`) are implemented and locally verified on 7 September 2026; see the refinement ledger and PROGRESS.md for exact checks and release state. This is the current improvement plan, alongside the unchanged original vision and COURSE-REQUIREMENTS.md. It refines the existing 224 lessons; it does not reset the curriculum or learner progress.
+
+## Worksheet and step state (implemented 7 September 2026)
+
+One authority, no second progress source: worksheet answers and the guided-step position live inside the existing per-lesson practice record (`shared/record.ts`), so they use the same local-first draft, 800 ms debounced upload, revision compare-and-swap, 409 conflict choice, immutable `submission_history` rows, feedback-by-revision, backup download/import and creator read-only rules as notes. No D1 column, migration, storage key or record version changed.
+
+| Field | Shape and bound | Meaning |
+|---|---|---|
+| `worksheet` (optional) | Object keyed by field id `^[a-z0-9][a-z0-9-]{0,39}$`; at most 40 fields, 2,000 characters each, 24,000 in all | Answers to the fields the lesson's activity authority declares in `src/apprenticeship.ts`. An answer whose field a later content revision no longer declares is kept, not dropped. Empty answers are removed from the object |
+| `guide` (optional) | `{ step?: 1–99, done: number[] ≤ 99 }`, strict | `step` is the step to reopen on return; `done` is the steps ticked. A navigation aid only: nothing reads it as competence, completion, mastery or a score |
+
+Compatibility: both fields are optional, so every record and backup written before them parses to exactly itself; a record written by an older client simply lacks them. Account isolation is unchanged (keys and rows are per user; creators cannot write). `Ready for review` now accepts a filled worksheet in place of a work reference or notes; an empty record still cannot be marked ready. The MCP `save_practice` description tells AI clients to preserve both fields. Export review and the downloadable worksheet copy render the answers as plain Markdown in the browser; nothing is uploaded or generated server-side.
+
+Cost profile: every save is still one bounded text row, written only after typing pauses or on an explicit tick, so a lesson's worksheet costs the same order of D1 writes as its notes did. Videos are external links or click-to-load Vimeo embeds; nothing is proxied. The build after this pilot is about 2.33 MB uncompressed (677 kB gzip), roughly 26 kB more than the previous release; per-module splitting remains the unfixed size work.
 
 ## Intended outcome
 
@@ -85,8 +98,9 @@ This ledger tracks experience refinement, not publication or learner assessment.
 | Scope | Status | Verification / release | Next |
 |---|---|---|---|
 | Plan and documentation | Documented 7 September 2026 | See PROGRESS.md for actual checks; no app release | Pilot |
-| Shared UI + week1-day1-v1 | Planned | Not implemented or tested | Inspect and implement pilot |
-| Haru pilot observation | Pending | No learner study conducted | Use pilot tasks above |
-| Remaining lessons | Planned for sequential refinement | No blanket completion claim | Determine next stable ID from authoritative lesson order after pilot |
+| Shared UI + week1-day1-v1 | Implemented 7 September 2026 on branch `guided-pilot-week1-day1`: route, five guided steps with expected outputs, 35-field worksheet, help, labelled examples, VID01 video-action pair, downloadable copy, Your work summary, exact-step resume | Content, build, worksheet unit and thirteen-group backend checks pass locally; browser checks for save, reload, resume, offline/reconnect, conflict, 320/390/desktop layout and diagnostic regression pass with the local test account. Evidence: docs/VERIFICATION-GUIDED.md. Committed on the branch; not merged, deployed or hosted-verified | Haru pilot, then merge/deploy under existing authorization |
+| Haru pilot observation | Pending | No learner study conducted | Use the walkthrough in PROGRESS.md; record friction and open questions here |
+| week1-day2-v1 (Frame the problem before the feature) | Next in authoritative order | Not refined; carries the shared reader only | Inspect after the pilot; author route, worksheet, guide and any verified video for its own competency |
+| Remaining lessons | Planned for sequential refinement | No blanket completion claim; the shared component does not mark them refined | Continue in lesson order after week1-day2-v1 |
 
 For each completed lesson add stable ID, what changed, test evidence, commit/release status and next lesson. Keep historical verification documents unchanged; append new dated evidence for this work.

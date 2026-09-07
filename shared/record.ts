@@ -17,6 +17,41 @@ export type SessionEntry = z.infer<typeof sessionSchema>;
 // documented invariant is sum(sessions) <= minutes, never equality.
 export const SESSION_CAP = 50;
 
+// In-app worksheet answers, keyed by the field ids the lesson's activity
+// authority declares (src/apprenticeship.ts). Bounded so a record stays a
+// small text row: at most WORKSHEET_FIELD_CAP fields, each at most
+// WORKSHEET_VALUE_CAP characters, WORKSHEET_TOTAL_CAP characters in all. A
+// field the lesson no longer declares is kept, never dropped, so an older
+// answer survives a content revision until the learner clears it.
+export const WORKSHEET_FIELD_CAP = 40;
+export const WORKSHEET_VALUE_CAP = 2000;
+export const WORKSHEET_TOTAL_CAP = 24000;
+export const worksheetFieldId = z.string().regex(/^[a-z0-9][a-z0-9-]{0,39}$/);
+export const worksheetSchema = z
+  .record(worksheetFieldId, z.string().max(WORKSHEET_VALUE_CAP))
+  .refine((w) => Object.keys(w).length <= WORKSHEET_FIELD_CAP, {
+    message: `A worksheet holds at most ${WORKSHEET_FIELD_CAP} fields.`,
+  })
+  .refine(
+    (w) =>
+      Object.values(w).reduce((n, v) => n + v.length, 0) <= WORKSHEET_TOTAL_CAP,
+    { message: `A worksheet holds at most ${WORKSHEET_TOTAL_CAP} characters.` },
+  );
+export type Worksheet = z.infer<typeof worksheetSchema>;
+// Where the learner is in the guided practice steps. `step` is the 1-based
+// step to reopen on return; `done` is the steps she has ticked. Both are a
+// navigation aid only: nothing reads them as competence, completion or a
+// score, and a ticked step can be unticked freely.
+export const guideSchema = z
+  .object({
+    step: z.number().int().min(1).max(99).optional(),
+    done: z.array(z.number().int().min(1).max(99)).max(99),
+  })
+  .strict();
+export type GuideState = z.infer<typeof guideSchema>;
+export const worksheetFilled = (w?: Worksheet | null) =>
+  !!w && Object.values(w).some((v) => v.trim());
+
 export const recordSchema = z
   .object({
     version: z.literal(1),
@@ -31,14 +66,21 @@ export const recordSchema = z
     // parses on every load path, including the server's read of D1.
     sessions: z.array(sessionSchema).max(SESSION_CAP).optional(),
     confidence: z.number().int().min(1).max(5).optional(),
+    // Added for the guided-practice pilot (7 September 2026). Optional for the
+    // same reason: every record and backup written before them still parses to
+    // exactly itself, and `version` stays 1 because nothing existing changed.
+    worksheet: worksheetSchema.optional(),
+    guide: guideSchema.optional(),
   })
   .strict()
   .refine(
     (r) =>
       r.status !== "ready-for-review" ||
-      (!!r.notes.trim() && !!r.submission.trim()),
+      ((!!r.notes.trim() || worksheetFilled(r.worksheet)) &&
+        (!!r.submission.trim() || worksheetFilled(r.worksheet))),
     {
-      message: "A reflection and work reference are required for review.",
+      message:
+        "A reflection and either a work reference or a filled worksheet are required for review.",
     },
   );
 export type RecordData = z.infer<typeof recordSchema>;
