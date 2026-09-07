@@ -8,7 +8,7 @@ The demonstrations lead with the mistake throughout: a brief turned into six agr
 
 Checks: content, worksheet, both typechecks and build pass; main chunk 2,767.39 kB uncompressed, 802.17 kB gzip. All thirteen backend groups pass; no schema, storage or API change. In the browser with the test account, lessons 1, 6 and 13 show the visible teaching, the objective, the demonstration, the supplied case, the save route and three checks with no feedback before answering; a lesson 1 research question saved online at revision 1 and the reveal produced the next; nothing overflows at 320 px. Evidence: [docs/VERIFICATION-GUIDED.md](docs/VERIFICATION-GUIDED.md).
 
-Haru has still not used any lesson. Forty-eight lessons now follow a pattern no learner has tested. Next open stable ID in the audit register: m06-l01-v1.
+Haru has still not used any lesson. Forty-eight lessons now follow a pattern no learner has tested. Release state: commit 1f42314 is on main and deployed as Cloudflare version 5b17e918-6c91-45e7-a368-20a3422aa17b; no migration exists to apply. The hosted bundle is 2,767,395 bytes with SHA256 ce835102...9047, identical to the local build, and carries the m05 demonstrations. Next open stable ID in the audit register: m06-l01-v1.
 
 # Module 4 given guided practice — 7 September 2026
 

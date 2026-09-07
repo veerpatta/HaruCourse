@@ -1,3 +1,11 @@
+# Module 5 given guided practice — 7 September 2026
+
+All thirteen research lessons carry the pattern: a route, a worksheet of 9 to 14 fields, one demonstration, one supplied case, three answer-first checks with a bounded repair, an improvement-made field and route-specific saving. Nine reveal repeated rows a few at a time. The module’s no-participant problem is handled by honest status choices in the interview, observation and diary lessons, by supplied practice notes in the analysis lessons, and by three checks that refuse to let supplied material be reported as research.
+
+Checks: docs:generate, test:content, test:worksheet, both typechecks and build pass; main chunk 2,767.39 kB uncompressed, 802.17 kB gzip, about 109 kB above the Module 4 release. All thirteen backend groups pass; no schema, storage or API changed. In the browser with the test account, lessons 1, 6 and 13 render the visible teaching, the objective, the demonstration, the supplied case, the save block with no generic file list, and three checks with no feedback before answering; each opens with one to three fields; a lesson 1 research question saved online at revision 1 and the reveal produced the next; nothing overflows at 320 px. The other ten were verified through the content checker and a runtime read of their shape.
+
+Release: commit 1f42314 deployed 7 September 2026 as Cloudflare version 5b17e918-6c91-45e7-a368-20a3422aa17b. Hosted probe with cache-busting: served index-DxbcQ6Gd.js is 2,767,395 bytes, SHA256 ce8351026d22cd70984c180e75d2c85eecbbdc448116c55157962d83f4449047, identical to the local build; health 0.2.0. Haru has not used any of it.
+
 # Module 4 given guided practice — 7 September 2026
 
 All eight lessons carry the pattern: a route, a worksheet of 10 to 16 fields, one demonstration, one supplied case, three answer-first checks with a bounded repair, an improvement-made field and route-specific saving. Five reveal repeated rows a few at a time. One continuous made-up booking example carries the module’s abstract ideas, which is what the audit asked for.
