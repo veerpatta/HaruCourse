@@ -43,7 +43,7 @@ When AI helps, provide lesson context, an explicit learner-input placeholder, a 
 Use `BEGINNER-LESSON-AUDIT.md` as the row-by-row implementation register. Every refined teaching lesson uses the following learning sequence inside the existing Learn → Do → Check → Your work reader:
 
 1. **See it:** state one observable outcome and demonstrate one complete, labelled reasoning chain. Show the uncertainty, trade-off and a likely wrong turn, not only a polished result.
-2. **Try it with help:** give a small supplied case. Ask for one decision at a time, provide contextual terms and let the learner compare their reason with explanatory feedback.
+2. **Try it with help:** give supplied material the learner works on before touching their own. Ask for one decision at a time, provide contextual terms and let the learner compare their reason with explanatory feedback. Two shapes carry this beat: `supported`, one case with one question, and `sorter`, three to eight short lines each labelled from the same small set. Use `sorter` where the whole lesson turns on one distinction and one supported attempt would be too thin. A refined lesson must carry at least one of the two, and the content checker enforces it.
 3. **Try it yourself:** apply the same reasoning to the learner's artefact. Reveal repeated rows progressively. Do not use a large worksheet as a substitute for instruction.
 4. **Check the reason:** collect a choice or short explanation before showing the answer. Diagnose the likely misconception and distinguish a plausible answer from an evidenced one.
 5. **Improve your work:** direct one bounded repair tied to the learner's answer and name what to show again. This is formative feedback, not a stored score.

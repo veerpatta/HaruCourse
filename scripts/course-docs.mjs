@@ -186,6 +186,18 @@ function guidedDoc(l) {
     `**See it first.** ${d.scenario}\n\n${d.beats.map((b) => `- **${b.label}:** ${b.text}`).join("\n")}\n\n**The wrong turn:** ${d.wrongTurn}\n\n**What it costs:** ${d.tradeoff}\n\n**Still unknown:** ${d.uncertainty}\n\n`;
   const supportedDoc = (s) =>
     `**Try it with help.** ${s.material}\n\n${s.question}\n\n${s.options.map((o) => `- ${o.correct ? "**" + o.label + "**" : o.label} — ${o.feedback}`).join("\n")}\n\n**Then:** ${s.then}\n\n`;
+  // The sorter is several supplied lines labelled from one small set. The
+  // Markdown shows every line with its defensible label and the explanation
+  // for each option, so the document says what the app says.
+  const sorterDoc = (t) =>
+    `**Try it with help.** ${t.intro}\n\n${t.items
+      .map(
+        (it) =>
+          `- ${it.text}\n${t.options
+            .map((o) => `  - ${o === it.answer ? "**" + o + "**" : o} — ${it.feedback[o]}`)
+            .join("\n")}`,
+      )
+      .join("\n")}\n\n**Then:** ${t.then}\n\n**What to watch for:** ${t.pattern}\n\n`;
   const steps = l.steps
     .map((s, i) => {
       const g = a.guide[i];
@@ -193,7 +205,7 @@ function guidedDoc(l) {
         const f = a.worksheet.flatMap((w) => w.fields).find((f) => f.id === id);
         return `- ${f.label}${f.kind === "choice" ? ` (${f.options.join(" / ")})` : ""}${f.hint ? ` — ${f.hint}` : ""}`;
       });
-      return `#### ${i + 1}. ${s.title}\n\n${g.demo ? demoDoc(g.demo) : ""}${list(s.instructions)}\n\n**You should end up with:** ${g.expect}\n\n${g.supported ? supportedDoc(g.supported) : ""}${g.fields?.length ? `Worksheet fields for this step${g.reveal ? ", revealed a few at a time in the app" : ""}:\n\n${fields.join("\n")}\n\n` : ""}${g.example ? details("Example", g.example) + "\n\n" : ""}${g.terms?.length || g.start || g.enough ? details("Help with this step", (g.terms || []).map((t) => `- **${t.term}:** ${t.meaning}`).join("\n") + (g.start ? `\n\nStuck starting? ${g.start}` : "") + (g.enough ? `\n\nIs it enough? ${g.enough}` : "")) : ""}`;
+      return `#### ${i + 1}. ${s.title}\n\n${g.demo ? demoDoc(g.demo) : ""}${list(s.instructions)}\n\n**You should end up with:** ${g.expect}\n\n${g.supported ? supportedDoc(g.supported) : ""}${g.sorter ? sorterDoc(g.sorter) : ""}${g.fields?.length ? `Worksheet fields for this step${g.reveal ? ", revealed a few at a time in the app" : ""}:\n\n${fields.join("\n")}\n\n` : ""}${g.example ? details("Example", g.example) + "\n\n" : ""}${g.terms?.length || g.start || g.enough ? details("Help with this step", (g.terms || []).map((t) => `- **${t.term}:** ${t.meaning}`).join("\n") + (g.start ? `\n\nStuck starting? ${g.start}` : "") + (g.enough ? `\n\nIs it enough? ${g.enough}` : "")) : ""}`;
     })
     .join("\n\n");
   const save = a.saveRoute
@@ -411,17 +423,19 @@ for (const id of Object.keys(videoSelections)) assert(videoIds.has(id), `Video s
 // must be answerable with exactly one defensible option and must explain every
 // option, including the plausible wrong ones; a repair must send the learner
 // back to their own artefact; save instructions must cover all four questions.
+// The interface already says whether the answer held up, so feedback that
+// opens with its own verdict reads as a stutter ("That one holds up. Yes.").
+const noVerdict = (text, where) =>
+  assert(
+    !/^(yes|no|right|correct|wrong|not quite|not yet|nearly|almost)\b[.,]/i.test(text),
+    `${where} should explain rather than repeat the verdict the interface already shows`,
+  );
 const oneCorrect = (options, where) => {
   assert(options.length >= 2, `${where} needs at least two options`);
   assert.equal(options.filter((o) => o.correct).length, 1, `${where} needs exactly one defensible option`);
   for (const o of options) {
     assert(o.label && o.feedback, `${where} option "${o.label}" needs a label and an explanation`);
-    // The interface already says whether the answer held up, so feedback that
-    // opens with its own verdict reads as a stutter ("That one holds up. Yes.").
-    assert(
-      !/^(yes|no|right|correct|wrong|not quite|not yet|nearly|almost)\b[.,]/i.test(o.feedback),
-      `${where} option "${o.label}" should explain rather than repeat the verdict the interface already shows`,
-    );
+    noVerdict(o.feedback, `${where} option "${o.label}"`);
   }
 };
 for (const l of lessons) {
@@ -438,6 +452,22 @@ for (const l of lessons) {
     if (g.supported) {
       assert(g.supported.material && g.supported.question && g.supported.then, `${where} supported practice needs supplied material, a question and a next move`);
       oneCorrect(g.supported.options, `${where} supported practice`);
+    }
+    if (g.sorter) {
+      const t = g.sorter;
+      assert(/made up|made-up/.test(t.intro), `${where} sorter must say its material is made up`);
+      assert(t.then && t.pattern, `${where} sorter needs a next move and a closing observation`);
+      assert(t.options.length >= 2, `${where} sorter needs at least two labels`);
+      assert(t.items.length >= 3 && t.items.length <= 8, `${where} sorter needs three to eight lines`);
+      assert.equal(new Set(t.items.map((it) => it.id)).size, t.items.length, `${where} sorter line ids must be unique`);
+      for (const it of t.items) {
+        assert(it.text, `${where} sorter line ${it.id} needs text`);
+        assert(t.options.includes(it.answer), `${where} sorter line ${it.id} answers with a label it does not offer`);
+        for (const o of t.options) {
+          assert(it.feedback[o], `${where} sorter line ${it.id} must explain the label "${o}"`);
+          noVerdict(it.feedback[o], `${where} sorter line ${it.id} label "${o}"`);
+        }
+      }
     }
     if (g.reveal) {
       assert(g.fields?.length, `${where} cannot reveal fields it does not have`);
@@ -456,11 +486,19 @@ for (const l of lessons) {
   // A lesson carrying active checks must not leave the learner with only the
   // reveal-style questions; both may exist, the active ones lead.
   if (a.checks?.length) assert(a.route && a.worksheet, `${l.id} checks require the guided contract`);
+  // "Try it with help" is a required beat, not an optional one. It may be a
+  // single supplied case or a set of supplied lines, and a refined lesson
+  // must carry at least one of the two.
+  if (a.checks?.length)
+    assert(
+      a.guide.some((g) => g.supported || g.sorter),
+      `${l.id} needs a supported case or a sorter before it asks for unaided work`,
+    );
 }
 {
   const a = baselineLesson.apprenticeship;
   assert(!a.checks && !a.saveRoute, 'The diagnostic gets no guided checks or route coaching');
-  assert(!(a.guide || []).some((g) => g.demo || g.supported), 'The diagnostic gets no worked demonstration');
+  assert(!(a.guide || []).some((g) => g.demo || g.supported || g.sorter), 'The diagnostic gets no worked demonstration');
 }
 for (const m of modules) assert(milestones[m.id]?.start && milestones[m.id]?.later);
 assert.equal(projectPacks.length, 3);

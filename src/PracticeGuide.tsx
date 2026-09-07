@@ -1,5 +1,5 @@
 import { useId, useState, type SetStateAction } from "react";
-import type { ActiveCheck, Apprenticeship, Choice, Demonstration, GuideStep, Lesson, SupportedPractice, VideoAction, WorksheetField } from "./teaching";
+import type { ActiveCheck, Apprenticeship, Choice, Demonstration, GuideStep, LabelPractice, Lesson, SupportedPractice, VideoAction, WorksheetField } from "./teaching";
 import type { RecordData } from "../shared/record";
 import { WORKSHEET_VALUE_CAP } from "../shared/record";
 import { downloadText, filledCount, resumeStep, worksheetFields, worksheetMarkdown } from "./worksheet";
@@ -196,6 +196,65 @@ function ChoiceQuestion({
       )}
       <p className="muted">Your answer here is not saved, marked or scored. It decides what to change next.</p>
     </div>
+  );
+}
+
+// Several supplied lines, each labelled from the same options, each answered
+// before its explanation appears. Radios rather than dragging, so it works on
+// a keyboard and on a phone. Nothing here is saved, counted or scored: the
+// closing line names the usual mistake instead of reporting a tally.
+function EvidenceSorter({ sorter }: { sorter: LabelPractice }) {
+  const name = useId();
+  const [picked, setPicked] = useState<Record<string, string>>({});
+  const answered = sorter.items.filter((i) => picked[i.id]).length;
+  return (
+    <section className="try-help sorter" aria-label="Sort the supplied notes">
+      <h4>Try it with help</h4>
+      <p className="supplied-material">{sorter.intro}</p>
+      <ol className="sorter-items">
+        {sorter.items.map((item) => {
+          const chosen = picked[item.id];
+          const right = chosen === item.answer;
+          return (
+            <li key={item.id} className="sorter-item">
+              <fieldset>
+                <legend>{item.text}</legend>
+                {sorter.options.map((option) => (
+                  <label key={option} className="choice-option">
+                    <input
+                      type="radio"
+                      name={`${name}-${item.id}`}
+                      checked={chosen === option}
+                      onChange={() => setPicked((p) => ({ ...p, [item.id]: option }))}
+                    />
+                    <span>{option}</span>
+                  </label>
+                ))}
+              </fieldset>
+              {chosen && (
+                <div className={`choice-feedback${right ? " is-right" : ""}`} role="status">
+                  <p>
+                    <strong>{right ? "That one holds up." : "Not quite."}</strong>{" "}
+                    {item.feedback[chosen]}
+                  </p>
+                </div>
+              )}
+            </li>
+          );
+        })}
+      </ol>
+      {answered === sorter.items.length && (
+        <p className="sorter-pattern" role="status">
+          <strong>The pattern:</strong> {sorter.pattern}
+        </p>
+      )}
+      <p>
+        <strong>Then:</strong> {sorter.then}
+      </p>
+      <p className="muted">
+        Nothing here is saved, marked or scored. Change any answer as often as you like.
+      </p>
+    </section>
   );
 }
 
@@ -473,9 +532,10 @@ export function PracticeGuide({
                   </details>
                 )}
                 {g?.supported && <TryWithHelp supported={g.supported} />}
+                {g?.sorter && <EvidenceSorter sorter={g.sorter} />}
                 {g?.fields?.length ? (
                   <div className="worksheet" role="group" aria-label={`Worksheet for step ${n}`}>
-                    <h4>{g.demo || g.supported ? "Try it yourself" : "Fill in"}</h4>
+                    <h4>{g.demo || g.supported || g.sorter ? "Try it yourself" : "Fill in"}</h4>
                     <StepFields
                       step={g}
                       byId={byId}

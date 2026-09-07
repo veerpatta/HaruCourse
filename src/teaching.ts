@@ -37,6 +37,25 @@ export type SupportedPractice = {
   options: Choice[];
   then: string;
 };
+// A richer form of "Try it with help": several supplied lines, each labelled
+// from the same small set of options, each with its own explanation for every
+// option. It exists because a lesson whose whole point is one distinction
+// deserves more than one supported attempt at it. Answers live in component
+// state only — nothing is saved, counted or scored, so `pattern` names the
+// mistake people usually make rather than reporting a tally.
+export type LabelItem = {
+  id: string;
+  text: string;
+  answer: string;
+  feedback: Record<string, string>;
+};
+export type LabelPractice = {
+  intro: string;
+  options: string[];
+  items: LabelItem[];
+  then: string;
+  pattern: string;
+};
 // "Check the reason": the learner answers first, then reads why. `repair`
 // sends one specific issue back into their own artefact. Nothing computes or
 // stores a score; this is formative only and the answer is not saved.
@@ -71,6 +90,7 @@ export type GuideStep = {
   video?: string;
   demo?: Demonstration;
   supported?: SupportedPractice;
+  sorter?: LabelPractice;
   // `count` bounds the repeated block; fields after it always show.
   reveal?: { first: number; group: number; count?: number; addLabel: string; note: string };
 };
