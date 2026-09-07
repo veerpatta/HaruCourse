@@ -38,70 +38,161 @@ A brief said “make the workshop booking better.” Written out, it contained e
 
 Turn a vague brief into at most five ranked research questions, each written as something you need to learn rather than something you will say to a participant, and each naming the decision that changes if the answer comes back the other way.
 
-**Where to work:** Paper, sticky notes or one plain text file. This lesson deliberately needs no board, no template and no account; a numbered list in a text file is easier to re-rank than a wall of notes and travels between devices without an export.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Paper, sticky notes or one plain text file. This lesson deliberately needs no board, no template and no account; a numbered list in a text file is easier to re-rank than a wall of notes and travels between devices without an export.
 
 - Starting material: The riskiest assumption and stopping rule you wrote in UX reasoning and product value, and the assumption list from Evidence to a Testable Design. Those are your raw material; you are about to sort them into questions worth someone's time.
 - Create HaruCourse/Practice/m05-l01-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Decide what the study has to answer
+#### 1. Read and separate
 
-Input artifact: The riskiest assumption and stopping rule you wrote in UX reasoning and product value, and the assumption list from Evidence to a Testable Design. Those are your raw material; you are about to sort them into questions worth someone's time.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A ranked list of at most five research questions, each with the decision it would change and the evidence that would close it, plus a dated “not this study” list with a reason per line.
-
-## 1. Read and separate
 - Read the assigned page on capturing research questions. Then write, in your own words, the difference between a question you need answered and a question you would say aloud. Keep this note; you will use it in the interview lesson.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Your own sentence separating a research question from an interview question.
 
-## 2. Empty the brief
-- Write every question hiding in your brief and your assumption list, one per line, without editing. Aim for at least twelve. Include the ones you think are obvious; obvious questions are often the untested ones.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- The difference between a research question and something you say to a participant
 
-## 3. Attach a decision to each
-- Beside every question write the decision it would change and what you would do if the answer were the opposite of your expectation. Mark any line where both answers lead to the same action.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Research question:** What you need to learn. You never say it out loud to a participant.
+- **Interview question:** What you actually ask, designed to get at the research question sideways.
 
-## 4. Group, rank and cut to five
-- Group near-duplicates into one question with the better wording. Rank what remains by decision impact. Keep the top five. Move the rest to a “not this study” list with one line each saying why, so you do not rediscover them next week.
+Stuck starting? Write one of each about the same topic and put them side by side.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Test for closure and pause
-- For each of your five, write the evidence that would end the question. Rewrite any question whose evidence you cannot describe. Save the ranked five, the decisions and the not-this-study list; the next lesson pairs each question with a method.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Questions are things to learn, not things to say: [evidence reference]
-- Every question names the decision it would change: [evidence reference]
-- The list is ranked and cut to five with the rest recorded: [evidence reference]
-- Each question states the evidence that would close it: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? The research question could not be asked directly without leading the answer.
 
 </details>
+
+#### 2. Empty the brief
+
+- Write every question hiding in your brief and your assumption list, one per line, without editing. Aim for at least twelve. Include the ones you think are obvious; obvious questions are often the untested ones.
+
+**You should end up with:** Every question hiding in the brief, listed without editing.
+
+Worksheet fields for this step:
+
+- Everything you do not know — Write badly and quickly. Editing while listing is how the interesting ones get lost.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Set a timer for ten minutes and write badly.
+
+Is it enough? The list is longer than five and includes at least one you are slightly embarrassed by.
+
+</details>
+
+#### 3. Attach a decision to each
+
+**See it first.** Made-up example. Turning a brief into questions, and discovering that two of them changed nothing.
+
+- **What the brief said:** “Find out how attendees feel about the booking experience.” Broad, agreeable, and unanswerable.
+- **My first list:** Six questions, including “do people like the design?” and “is the site easy to use?”. Both felt like research.
+- **The test I applied:** For each: what would I do differently depending on the answer? For those two, nothing. There is no version of “they like it less” that tells me what to change.
+- **What survived:** “When do people decide what to bring?” If the answer is the morning of the class, the details page is the wrong place entirely and a message on the day is right.
+- **What that gave me:** Three questions instead of six, each attached to a decision I am actually facing. The session got shorter and far more useful.
+
+**The wrong turn:** The wrong turn is keeping the broad, pleasant questions. They are easy to ask, everyone answers them, and no answer changes anything you would do.
+
+**What it costs:** A short ranked list feels narrow, and you will worry about missing something. It is what makes an hour with a person worth the hour.
+
+**Still unknown:** Still unknown: whether the ranked order is right. It is a judgement about consequence, and it can be revised as you learn.
+
+- Beside every question write the decision it would change and what you would do if the answer were the opposite of your expectation. Mark any line where both answers lead to the same action.
+
+**You should end up with:** Five questions, each naming the decision that would change.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Question 1 · and the decision that changes if the answer comes back the other way
+- Question 2 · and the decision that changes if the answer comes back the other way
+- Question 3 · and the decision that changes if the answer comes back the other way
+- Question 4 · and the decision that changes if the answer comes back the other way
+- Question 5 · and the decision that changes if the answer comes back the other way
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take each raw question and finish the sentence “if the answer is X, I will …”.
+
+Is it enough? Every question names a decision you are genuinely facing.
+
+</details>
+
+#### 4. Group, rank and cut to five
+
+- Group near-duplicates into one question with the better wording. Rank what remains by decision impact. Keep the top five. Move the rest to a “not this study” list with one line each saying why, so you do not rediscover them next week.
+
+**You should end up with:** Five ranked, with a reason for the top one and what you cut.
+
+Worksheet fields for this step:
+
+- Your five in order, with the reason for the top one — Rank by how much the decision matters and how little you already know.
+- What you cut, and why it can wait
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Rank by consequence first, then by how little you already know.
+
+Is it enough? The cut list exists; if nothing was cut, the list was not long enough.
+
+</details>
+
+#### 5. Test for closure and pause
+
+- For each of your five, write the evidence that would end the question. Rewrite any question whose evidence you cannot describe. Save the ranked five, the decisions and the not-this-study list; the next lesson pairs each question with a method.
+
+**You should end up with:** What evidence would end each question, and the repair the Check questions asked for.
+
+**Try it with help.** Two supplied questions. A: “How do attendees feel about the booking process?” B: “What did attendees do the last time they needed to know what to bring?”
+
+Which one could actually be closed by evidence, and why?
+
+- **B, because an account of what someone did either contains the answer or does not.** — It asks about a specific past episode. Two or three accounts and you know something; you can also tell when you have enough.
+- A, because you can ask people how they feel and record it. — You can collect feelings and no amount of them closes the question, because there is no state of the evidence that would settle it.
+- Both, provided you interview enough people. — Numbers do not fix an unclosable question. A hundred feelings still leave you without a decision.
+- Neither: qualitative questions never close. — They do close, when they ask about something specific that happened. B is closable precisely because it is about events.
+
+**Then:** Rewrite any of your own five that nothing could settle, so it asks about something that happened.
+
+Worksheet fields for this step:
+
+- For each: the evidence that would settle it — A question nothing could settle is not yet a research question.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? For each question ask what you would need to see or hear to stop asking it.
+
+Is it enough? No question remains that nothing could settle.
+
+</details>
+
+**Save and continue.** Saved for you: Your questions, decisions and ranking save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. Keep your Module 4 assumption list to hand; several questions come from it. What your creator sees: Your creator reads the five questions and the decision beside each. The decisions are what show the study is worth running. Your next action: Open Your work and choose Ready for review. The next lesson pairs each question with a method you could actually run.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -241,70 +332,159 @@ Five questions were paired as follows. What stops someone reserving in one sitti
 
 Pair each of your five questions with one method you could genuinely run alone this month, and state for each pairing the specific claim that method will not license you to make.
 
-**Where to work:** A five-row table on paper or in a text file: question, kind, method, cost, cannot-tell-me. No research platform, scheduling tool or transcript service is involved anywhere in this module; everything is doable with a notebook, a phone and consent.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A five-row table on paper or in a text file: question, kind, method, cost, cannot-tell-me. No research platform, scheduling tool or transcript service is involved anywhere in this module; everything is doable with a notebook, a phone and consent.
 
 - Starting material: The ranked five questions with their decisions and closure evidence from the previous lesson.
 - Create HaruCourse/Practice/m05-l02-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Choose a method that can actually answer it
+#### 1. Read the method pages
 
-Input artifact: The ranked five questions with their decisions and closure evidence from the previous lesson.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A method plan pairing each question with one method, its cost and access conditions, and an explicit exclusion sentence per pairing, plus a list of questions left unanswerable with reasons.
-
-## 1. Read the method pages
 - Read the assigned manual sections on choosing between methods. For each method named, write one sentence on the kind of uncertainty it addresses.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One line per method saying what kind of question it suits.
 
-## 2. Classify your five
-- Label each of your questions as behaviour, experience and reasoning, frequency, or ability to operate. Some will resist a single label; split those into two questions rather than forcing one.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- For each method named in the reading: the question type it suits
 
-## 3. Pair and cost
-- Assign one method per question. Beside each write what it will cost you in hours, how many people it needs, and what has to be true for it to happen at all — access, consent, a device, a quiet room.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Behaviour question:** What people do. Best answered by watching, not asking.
+- **Frequency question:** How often or how many. Needs numbers and a reachable population, which you rarely have.
 
-## 4. Write the exclusions
-- For each pairing write the sentence “this cannot tell me …”. Be specific: name the claim you will be tempted to make and are forbidding yourself now.
+Stuck starting? Read the assigned sections and write one line per method before looking at your own questions.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Decide the plan and pause
-- Choose the two methods you will actually run in this module and mark the rest as not-run, with the reason. Record any question left with no available method as an open gap. Save the plan.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Each question is classified by the kind of uncertainty it holds: [evidence reference]
-- Methods are chosen for fit and are runnable alone: [evidence reference]
-- Every pairing carries a specific exclusion: [evidence reference]
-- Unanswerable questions are recorded rather than downgraded: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Each line names the question type rather than describing the method’s steps.
 
 </details>
+
+#### 2. Classify your five
+
+- Label each of your questions as behaviour, experience and reasoning, frequency, or ability to operate. Some will resist a single label; split those into two questions rather than forcing one.
+
+**You should end up with:** Each of your five labelled by question type.
+
+Worksheet fields for this step:
+
+- Each question labelled: behaviour, experience and reasoning, frequency, or ability to complete — The label decides the method more than your preference does.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask of each question: is this about what people do, what they experienced, how many, or whether they can finish?
+
+Is it enough? At least two different labels appear.
+
+</details>
+
+#### 3. Pair and cost
+
+**See it first.** Made-up example. Choosing methods for two questions and cutting the plan in half.
+
+- **What I planned:** Interviews, a survey, a diary study and two usability sessions. Four methods, which felt thorough.
+- **The cost when I wrote it down:** About forty hours, eleven participants, and a survey that needed a list of email addresses I do not have.
+- **What each would actually answer:** The survey question was “how often does this happen”, and I have no reachable population, so any number would be from whoever happened to reply.
+- **What I cut:** The survey and the diary. Marked not-run, with what would have to change: a list of past attendees, and a participant willing to log for a week.
+- **What I kept:** Three interviews and one observation. Two methods, run properly, against the two ranked questions that matter most.
+
+**The wrong turn:** The wrong turn is planning four methods because four sounds rigorous. Four thin methods produce less than one run properly, and the thinness is invisible until you try to write the findings.
+
+**What it costs:** Cutting two methods means two questions stay unanswered this month. Recording them as not-run keeps them visible instead of pretending they were covered.
+
+**Still unknown:** Still unknown: how common any of this is. No method in the plan can answer that, and the exclusions say so.
+
+- Assign one method per question. Beside each write what it will cost you in hours, how many people it needs, and what has to be true for it to happen at all — access, consent, a device, a quiet room.
+
+**You should end up with:** One method per question, with hours, people and access.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Pairing 1 · question, method, hours, people needed, and what you would need access to
+- Pairing 2 · question, method, hours, people needed, and what you would need access to
+- Pairing 3 · question, method, hours, people needed, and what you would need access to
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the hours honestly, including writing up. Sessions take about twice as long as the session itself.
+
+Is it enough? Each pairing names how many people it needs and whether you can reach them.
+
+</details>
+
+#### 4. Write the exclusions
+
+- For each pairing write the sentence “this cannot tell me …”. Be specific: name the claim you will be tempted to make and are forbidding yourself now.
+
+**You should end up with:** For each pairing, the specific claim it will not license.
+
+**Try it with help.** A supplied pairing from the same made-up study: three interviews about what people did before their last class, chosen to answer “when do people decide what to bring?”
+
+Which exclusion is the one worth writing down?
+
+- **It cannot tell you how common any pattern is, and “most people” will be the tempting phrase.** — Naming the sentence you will be tempted to write is what makes the exclusion useful later, when you are drafting the report.
+- It cannot tell you what people think of the current design. — True and not the temptation. Nobody writes an unsupported claim about the design from an interview about last week.
+- It cannot produce statistically significant results. — Correct and abstract. The practical risk is the word “most”, not a significance test you were never going to run.
+- It cannot be generalised beyond the three participants. — A textbook version of the same point. Writing the specific sentence you would be tempted to write is far more useful.
+
+**Then:** Write each of your own exclusions as the sentence you will be tempted to write and must not.
+
+Worksheet fields for this step:
+
+- For each pairing: “this cannot tell me …” — Name the specific claim you will be tempted to make from it.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? For each pairing, imagine writing the report and catch the overclaim before you make it.
+
+Is it enough? Each exclusion names a specific sentence, not a general limitation.
+
+</details>
+
+#### 5. Decide the plan and pause
+
+- Choose the two methods you will actually run in this module and mark the rest as not-run, with the reason. Record any question left with no available method as an open gap. Save the plan.
+
+**You should end up with:** What you will run, what you will not, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- The two methods you will run this month
+- The rest, marked not-run, with what would have to change
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Choose the two attached to your highest-ranked questions, not the two that are easiest.
+
+Is it enough? The not-run list says what would have to change for each.
+
+</details>
+
+**Save and continue.** Saved for you: The classification, pairings and exclusions save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. What your creator sees: Your creator reads the pairings, the costs and the exclusions. The not-run list shows the plan was scoped rather than wished. Your next action: Open Your work and choose Ready for review. The next lesson looks at evidence that already exists before you ask anyone anything.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -444,70 +624,157 @@ Before interviewing anyone about workshop bookings, an hour of desk work produce
 
 Produce a dated desk-research note from evidence that already exists, and a structured comparison of two or three rival flows attempting one identical task, ending in a written list of what the comparison did not establish.
 
-**Where to work:** A browser and a text file. Screenshots are useful and cost nothing; a phone camera pointed at your own screen is fine if capture is awkward. No competitor-analysis platform, keyword tool or paid report is required anywhere in this lesson.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A browser and a text file. Screenshots are useful and cost nothing; a phone camera pointed at your own screen is fine if capture is awkward. No competitor-analysis platform, keyword tool or paid report is required anywhere in this lesson.
 
 - Starting material: Your method plan and the questions you marked as gaps. Some of those gaps close for free with evidence that already exists, and you should find that out before spending anyone's afternoon.
 - Create HaruCourse/Practice/m05-l03-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Look before you ask: desk and competitive review
+#### 1. Read the competitive method
 
-Input artifact: Your method plan and the questions you marked as gaps. Some of those gaps close for free with evidence that already exists, and you should find that out before spending anyone's afternoon.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A dated desk-research note with sourced items, a step-by-step comparison of one identical task across two or three services including one from another category, a list of checkable hypotheses, and an explicit statement of what was not established.
-
-## 1. Read the competitive method
 - Read the assigned article. Note the difference between a competitive review and a competitive test, and copy down its statement of what competitive evaluation does not address.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The difference between reviewing rivals and testing them with people.
 
-## 2. Gather existing evidence
-- Spend a fixed thirty minutes collecting what already exists about your problem: reviews, support pages, forum threads, published reports, anything already held. Record source, URL and retrieval date for every item. Stop at thirty minutes even if it is going well.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- The difference between a competitive review and a competitive test
 
-## 3. Run the comparison
-- Pick one task a person must complete and attempt it yourself on two or three services, at least one from outside your own category. Record each step, each moment of doubt, and where each service places the information the task needs.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Competitive review:** You attempting the task yourself and describing what happened. No participants, so no findings about people.
 
-## 4. Extract hypotheses, not conclusions
-- Write what this makes you suspect, phrased as claims you could check with people. Mark each one with whether desk evidence alone could ever confirm it.
+Stuck starting? Read the assigned article and write the distinction in one line.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Write the limits and pause
-- Write what this work did not establish: proportions, causes, outcomes, and anything about business performance. Update your question list — some questions may now be answered, and others may have appeared. Save the note with its dated sources.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Existing evidence is gathered and sourced with dates: [evidence reference]
-- The comparison uses one identical task across services: [evidence reference]
-- At least one comparator is outside the obvious category: [evidence reference]
-- The write-up separates hypotheses from established facts: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Your line says what a review cannot produce.
 
 </details>
+
+#### 2. Gather existing evidence
+
+- Spend a fixed thirty minutes collecting what already exists about your problem: reviews, support pages, forum threads, published reports, anything already held. Record source, URL and retrieval date for every item. Stop at thirty minutes even if it is going well.
+
+**You should end up with:** Thirty minutes of existing evidence, each source dated.
+
+Worksheet fields for this step:
+
+- Thirty minutes of existing evidence: reviews, support questions, complaints, anything written down — Date each source. Stop at thirty minutes.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Set a timer. Look at reviews, forum questions and anything the studio already receives.
+
+Is it enough? You stopped at thirty minutes and dated what you found.
+
+</details>
+
+#### 3. Run the comparison
+
+**See it first.** Made-up example. Comparing how three booking sites handle the total cost of a class.
+
+- **What I set out to do:** Look at three competitors and note what they do well, so I could adopt the best patterns.
+- **Why that failed:** I was cataloguing screens. Everything looked considered, because a finished interface always does.
+- **What worked instead:** One task on all three: find the total cost including materials. Suddenly they were comparable, and two of them could not do it at all.
+- **What I nearly concluded:** “Two of three hide the total, so hiding it must work commercially.” I have no idea whether it works; I only know they do it.
+- **What I wrote:** A suspicion to check with people: that a total appearing late is common enough that readers expect to hunt for it. Marked as a suspicion.
+
+**The wrong turn:** The wrong turn is treating a competitor’s pattern as evidence that it works. You are seeing their output, not their results, and often not even their intention.
+
+**What it costs:** One task across three services tells you far less than a full tour and it is comparable, which the tour never is.
+
+**Still unknown:** Still unknown: why any of them made these choices, and whether it serves them. Nothing observable from outside can say.
+
+- Pick one task a person must complete and attempt it yourself on two or three services, at least one from outside your own category. Record each step, each moment of doubt, and where each service places the information the task needs.
+
+**You should end up with:** One identical task attempted on two or three services, described step by step.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- The one task you attempted on each
+- Service 1 · what happened, step by step
+- Service 2 · what happened, step by step
+- Service 3 · what happened (optional)
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Choose a task your own service must support, then do it on each rival without stopping to admire anything.
+
+Is it enough? The same task was attempted on every service, and at least one failed it.
+
+</details>
+
+#### 4. Extract hypotheses, not conclusions
+
+- Write what this makes you suspect, phrased as claims you could check with people. Mark each one with whether desk evidence alone could ever confirm it.
+
+**You should end up with:** Suspicions phrased as claims you could check, not conclusions.
+
+**Try it with help.** A supplied observation from the same made-up review: two of three services show the total only at the payment step.
+
+Which sentence may you write?
+
+- **It is common for the total to appear late, which makes me suspect readers expect to hunt for it — worth checking with people.** — It reports what you saw, names it as a suspicion, and says what would settle it. That is exactly what a review can produce.
+- Showing the total late is the industry standard and works commercially. — You have seen two examples and no results. Neither “standard” nor “works” follows from what is on the screen.
+- Users are used to hunting for the total, so it is not a problem. — A claim about people from a review with no people in it, and it dismisses the very thing you were investigating.
+
+**Then:** Rewrite each of your own observations as a suspicion with the check attached.
+
+Worksheet fields for this step:
+
+- Claims you could check with people, marked as suspicions not findings
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take each thing you noticed and finish “this makes me suspect …, which I could check by …”.
+
+Is it enough? Nothing is written as a conclusion about people.
+
+</details>
+
+#### 5. Write the limits and pause
+
+- Write what this work did not establish: proportions, causes, outcomes, and anything about business performance. Update your question list — some questions may now be answered, and others may have appeared. Save the note with its dated sources.
+
+**You should end up with:** What the review did not establish, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Proportions, causes, outcomes, and anything about their business
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? List proportions, causes and outcomes first; a review reaches none of them.
+
+Is it enough? The limits mention that you cannot see their results or their reasons.
+
+</details>
+
+**Save and continue.** Saved for you: Your desk note, comparison and suspicions save as you type, on this device first and then online. Kept outside the app: Screenshots of rival services stay in your own folder. Do not republish them; they are for your own comparison. What your creator sees: Your creator reads the suspicions and the limits. The limits are what stop a review being quoted as research. Your next action: Open Your work and choose Ready for review. The next lesson writes a screener and a recruitment plan with honest lead times.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -647,70 +914,160 @@ A screener drafted as “Do you find booking classes online confusing?” recrui
 
 Write a screener that selects for relevant experience without revealing the answer you want, plus a recruitment plan with honest lead times, an incentive decision, and a written statement of who your route will systematically miss.
 
-**Where to work:** The screener is a short written list you can use over a phone call, a message or in person. Free form tools exist and none is required; a message thread and a notebook are sufficient, and for a study of this size they are usually faster.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: The screener is a short written list you can use over a phone call, a message or in person. Free form tools exist and none is required; a message thread and a notebook are sufficient, and for a study of this size they are usually faster.
 
 - Starting material: Your method plan. The two methods you chose determine how many people you need and what they must have done recently.
 - Create HaruCourse/Practice/m05-l04-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Find the right people, and say who you could not reach
+#### 1. Read the recruitment guidance
 
-Input artifact: Your method plan. The two methods you chose determine how many people you need and what they must have done recently.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A screener of four to six neutral, experience-based questions; a recruitment plan with route, realistic dates, an incentive decision and a fallback; and a written exclusion statement naming who this route will miss.
-
-## 1. Read the recruitment guidance
 - Read the assigned page. Write down the lead times it states and the accommodations it names for disabled participants, then write what you will do instead of using an agency.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The lead times and accommodations the guidance states.
 
-## 2. Write the criteria
-- From your questions, write the two or three things a participant must have recently done. Write also who you specifically want to include who is unlike you, and what would make taking part possible for them.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- The lead times it states, and the accommodations it names
 
-## 3. Draft and de-bias the screener
-- Write four to six screening questions. Then read each one asking “does this tell them what I want to hear?” Rewrite every question that does. Remove any question you would not use to include or exclude someone.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
 
-## 4. Plan the route, the time and the offer
-- Write where you will find people, how long that will take starting from today, what you will offer for their time, and what you will say if they ask what happens to their answers. Include a fallback route in case the first produces nobody.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+Stuck starting? Read the assigned page and write the numbers down rather than remembering them.
 
-## 5. Write who you will miss and pause
-- Write the sentence that will appear in your report about who this route systematically excludes. Save the screener, the plan and that sentence together; the consent lesson follows and must be completed before you contact anyone.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Screening criteria are based on recent relevant experience: [evidence reference]
-- Screener questions do not signal the desired answer: [evidence reference]
-- The plan has real dates, a route, a fallback and an offer: [evidence reference]
-- The exclusion statement names who this route misses: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? You have at least one lead time in days.
 
 </details>
+
+#### 2. Write the criteria
+
+- From your questions, write the two or three things a participant must have recently done. Write also who you specifically want to include who is unlike you, and what would make taking part possible for them.
+
+**You should end up with:** Two or three things a participant must have recently done, and why recency matters.
+
+Worksheet fields for this step:
+
+- The two or three things a participant must have recently done — Recent and specific. Not demographics.
+- Why recency matters for your questions
+
+<details>
+<summary>Help with this step</summary>
+
+- **Screening criterion:** A recent behaviour that makes someone’s account relevant. Age, job and gender are almost never criteria.
+
+Stuck starting? Write the criteria from your questions, not from who is easy to find.
+
+Is it enough? Every criterion is something a person did, with a time bound.
+
+</details>
+
+#### 3. Draft and de-bias the screener
+
+**See it first.** Made-up example. Writing a screener and finding it recruited exactly the wrong people.
+
+- **My first question:** “Have you ever been frustrated trying to find out what to bring to a class?” Direct and efficient.
+- **What it does:** It tells the reader the study is about frustration with materials lists. Anyone who wants to take part now knows the right answer.
+- **Who I would have got:** People with a grievance to share, which is a real group and not the group I said I wanted.
+- **The rewrite:** “In the last three months, which of these have you done?” with a list of activities, only one of which qualifies. It selects on behaviour and reveals nothing.
+- **What I added:** A question about what they did most recently, so I could tell a vivid memory from a reconstruction.
+
+**The wrong turn:** The wrong turn is screening on the opinion you are investigating. It recruits people who already agree with your hypothesis and calls it a sample.
+
+**What it costs:** Behavioural screeners take longer to write and reject more people. That rejection is the screener working.
+
+**Still unknown:** Still unknown: whether people who never got as far as booking would say something different. This route cannot reach them, and the report has to say so.
+
+- Write four to six screening questions. Then read each one asking “does this tell them what I want to hear?” Rewrite every question that does. Remove any question you would not use to include or exclude someone.
+
+**You should end up with:** Four to six screening questions that do not reveal the answer you want.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Screening question 1 — Then read it back asking: does this tell them what I want to hear?
+- Screening question 2
+- Screening question 3
+- Screening question 4
+- What you changed after reading each one back
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the questions, then read each one back as though you were an eager volunteer.
+
+Is it enough? No question names the topic of the study.
+
+</details>
+
+#### 4. Plan the route, the time and the offer
+
+- Write where you will find people, how long that will take starting from today, what you will offer for their time, and what you will say if they ask what happens to their answers. Include a fallback route in case the first produces nobody.
+
+**You should end up with:** Where you will find people, honest lead time from today, and the incentive decision.
+
+Worksheet fields for this step:
+
+- Where you will find people, and how long that takes starting today — Count from today, not from when you would like to start.
+- What you will offer, and why that amount — Or why nothing, and what that changes about who says yes.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Count the days from today including the ones where nobody replies.
+
+Is it enough? The lead time is a date, not “a few days”.
+
+</details>
+
+#### 5. Write who you will miss and pause
+
+- Write the sentence that will appear in your report about who this route systematically excludes. Save the screener, the plan and that sentence together; the consent lesson follows and must be completed before you contact anyone.
+
+**You should end up with:** The sentence about who your route excludes, and the repair the Check questions asked for.
+
+**Try it with help.** A supplied plan from the same made-up study: recruit three people from the studio’s mailing list of past attendees.
+
+Which exclusion sentence is the useful one?
+
+- **Everyone recruited had already booked successfully at least once, so people who abandoned booking are absent from the study.** — It names a specific group whose absence changes what the findings can mean, which is precisely the risk with a list of past customers.
+- The sample is small and not statistically representative. — True of every study this size and it names nobody. The useful version says who is missing and why it matters.
+- People without email are excluded. — A real exclusion and a minor one here compared with the fact that everyone succeeded at the task you are studying.
+
+**Then:** Write your own sentence naming a group whose absence would change how the findings should be read.
+
+Worksheet fields for this step:
+
+- The sentence that will appear in your report about who this route systematically excludes
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask who could not possibly be reached by this route, and who would never volunteer.
+
+Is it enough? The sentence names a group and says what their absence changes.
+
+</details>
+
+**Save and continue.** Saved for you: The criteria, screener and plan save as you type, on this device first and then online. Kept outside the app: No participant’s name or contact detail belongs here. Keep any contact list in your own private folder. What your creator sees: Your creator reads the screener and the exclusion sentence. The exclusion sentence travels into the report. Your next action: Open Your work and choose Ready for review. The next lesson writes the consent introduction and the data plan.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -850,70 +1207,156 @@ A one-minute spoken introduction that worked: “Thanks for doing this. I am lea
 
 Write a consent introduction you can read aloud in under a minute, and a written data plan naming what you will collect, where it will live, who can see it, when it will be deleted and how one person's data could be removed on request.
 
-**Where to work:** A text file for the introduction and the plan, folders on your own device for the data, and paper for consent if you prefer a signature. No consent platform, cloud drive or transcription service is required, and for a study this size a device you physically control is the simpler and safer choice.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A text file for the introduction and the plan, folders on your own device for the data, and paper for consent if you prefer a signature. No consent platform, cloud drive or transcription service is required, and for a study this size a device you physically control is the simpler and safer choice.
 
 - Starting material: Your screener and recruitment plan. Nobody is contacted until this lesson is finished, because consent has to exist before the first message, not before the first recording.
 - Create HaruCourse/Practice/m05-l05-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Consent, privacy and a data plan you will keep
+#### 1. Read both pages
 
-Input artifact: Your screener and recruitment plan. Nobody is contacted until this lesson is finished, because consent has to exist before the first message, not before the first recording.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A spoken consent introduction under one minute; a written data plan covering collection, storage, access, retention, deletion and per-participant removal; scripted responses to four difficult moments; and a stated jurisdiction limitation.
-
-## 1. Read both pages
 - Read the consent page and the data and privacy page. List what a participant must understand before agreeing, and list what counts as personal data in your own study.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A list of what a participant must understand before agreeing.
 
-## 2. Write the introduction
-- Write a consent introduction in your own spoken voice, under one minute read aloud. It must cover purpose, duration, recording, who sees it, deletion, and the right to stop or skip. Read it aloud and cut anything you stumble over.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- Everything they must understand before agreeing
 
-## 3. Write the data plan
-- Write what you will collect, where each thing lives, who has access, how long you keep it, and the deletion date. Name your files so that one participant can be removed without touching the others.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Informed consent:** They understand what will happen, what is recorded and what it is for, and they agree freely and can withdraw.
 
-## 4. Rehearse the hard moments
-- Write what you will say if someone asks to see the notes, asks not to be recorded, goes quiet on a sensitive topic, or withdraws two weeks later. Rehearse the withdrawal one aloud; it is the one people handle badly under pressure.
+Stuck starting? Read both assigned pages and list what they say a person must be told.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Check the jurisdiction and pause
-- Write one line stating that the guidance you used is UK-based and that you have not verified Indian requirements, and what you will check before recruiting beyond practice participants. Save the introduction, the plan and that line together.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- The introduction covers everything a participant must understand: [evidence reference]
-- The data plan names storage, retention and deletion: [evidence reference]
-- One participant could be removed without destroying the study: [evidence reference]
-- The jurisdiction limitation is stated rather than assumed away: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? The list includes withdrawal, not only permission to start.
 
 </details>
+
+#### 2. Write the introduction
+
+**See it first.** Made-up example. Writing a consent introduction that nobody could listen to.
+
+- **My first version:** Four sentences of careful phrasing about data controllers, lawful basis and retention periods. Accurate and about ninety seconds.
+- **What happened when I read it aloud:** It sounded like a form being read at someone. The person would agree to end it, which is not consent.
+- **What I kept:** I am practising research for a course. Twenty minutes. I take written notes, no recording unless you say yes. Nothing goes anywhere with your name on it. Skip anything, stop any time.
+- **What I cut:** The legal vocabulary. It protected me rather than informing them, and it was the part that made the whole thing unlistenable.
+
+**The wrong turn:** The wrong turn is writing for protection rather than understanding. A dense introduction produces agreement without comprehension, which is the opposite of what it is for.
+
+**What it costs:** Plain language means fewer defensible phrases on the page. It means the person actually knows what they agreed to.
+
+**Still unknown:** Still unknown: whether they will remember they can stop, halfway through. Saying it again at the midpoint costs nothing.
+
+- Write a consent introduction in your own spoken voice, under one minute read aloud. It must cover purpose, duration, recording, who sees it, deletion, and the right to stop or skip. Read it aloud and cut anything you stumble over.
+
+**You should end up with:** A consent introduction in your own voice, timed under a minute.
+
+Worksheet fields for this step:
+
+- Written in your own spoken voice, under a minute read aloud — Who you are, what it is for, how long, what you record, that they can skip or stop, and what happens to the notes.
+- How long it actually took to read aloud, and what you cut
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write it, read it aloud with a timer, then cut whatever made you wince.
+
+Is it enough? It is under a minute and contains no legal vocabulary.
+
+</details>
+
+#### 3. Write the data plan
+
+- Write what you will collect, where each thing lives, who has access, how long you keep it, and the deletion date. Name your files so that one participant can be removed without touching the others.
+
+**You should end up with:** What you collect, where it lives, who sees it, when it goes, and how to remove one person.
+
+**Try it with help.** A supplied data plan from the same made-up study: “Notes stored in one document on my laptop, named by session number. Audio deleted after transcription. Kept until the course ends.”
+
+What is missing that matters most?
+
+- **How one person’s data could be removed if they asked, which a single combined document makes difficult.** — Withdrawal is part of consent. If everything lives in one file with no way to isolate a person, you have promised something you cannot do.
+- A backup policy for the laptop. — Worth having and not part of what you promised the participant.
+- The exact date the course ends. — Useful precision, and the removal question is the one that could break a promise.
+
+**Then:** Check your own plan: if someone withdrew tomorrow, could you actually remove their material?
+
+Worksheet fields for this step:
+
+- What you will collect
+- Where each thing lives, and who can see it
+- When it is deleted, and how one person’s data could be removed on request — If you cannot remove one person’s data, say so and change how you store it.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write what you collect first; the rest follows from it.
+
+Is it enough? Removing one person is possible with the storage you described.
+
+</details>
+
+#### 4. Rehearse the hard moments
+
+- Write what you will say if someone asks to see the notes, asks not to be recorded, goes quiet on a sensitive topic, or withdraws two weeks later. Rehearse the withdrawal one aloud; it is the one people handle badly under pressure.
+
+**You should end up with:** What you will say in four difficult moments.
+
+Worksheet fields for this step:
+
+- What you will say if they ask to see the notes, refuse recording, go quiet, or say something upsetting
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the words, not the intention. You will need them under pressure.
+
+Is it enough? Each answer is a sentence you could actually say.
+
+</details>
+
+#### 5. Check the jurisdiction and pause
+
+- Write one line stating that the guidance you used is UK-based and that you have not verified Indian requirements, and what you will check before recruiting beyond practice participants. Save the introduction, the plan and that line together.
+
+**You should end up with:** The jurisdiction line, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- One line stating the guidance is UK-based and that Indian requirements are not verified here
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? State plainly which guidance you followed and what you have not checked.
+
+Is it enough? The line does not claim compliance with any law.
+
+</details>
+
+**Save and continue.** Saved for you: The introduction, data plan and prepared answers save as you type, on this device first and then online. Kept outside the app: Consent records and any audio stay in your own private folder, never in this worksheet. What your creator sees: Your creator reads the introduction and the data plan. The removal-on-request line is the one that catches most plans out. Your next action: Open Your work and choose Ready for review. The next lesson runs the interview itself.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1053,70 +1496,161 @@ In one session the participant said “the payment was fine, it just took a whil
 
 Run at least one consented interview about a recent specific episode and produce raw notes in which what was said, what you inferred and what you want to follow up are visibly separate, plus a guide revised from what actually happened.
 
-**Where to work:** Paper, a pen and the voice recorder already on your phone, used only with consent. No transcription service, research platform or AI summariser is used: transcripts are not required for a study of this size, and the write-up you do yourself is where the analysis begins.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Paper, a pen and the voice recorder already on your phone, used only with consent. No transcription service, research platform or AI summariser is used: transcripts are not required for a study of this size, and the write-up you do yourself is where the analysis begins.
 
 - Starting material: The interview guide you wrote in Product Design Foundations, your ranked questions, your consent introduction and your data plan. The old guide is a draft to be rebuilt, not a finished instrument.
 - Create HaruCourse/Practice/m05-l06-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Interviews that produce evidence, not agreement
+#### 1. Rebuild the guide
 
-Input artifact: The interview guide you wrote in Product Design Foundations, your ranked questions, your consent introduction and your data plan. The old guide is a draft to be rebuilt, not a finished instrument.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A one-page interview guide, raw notes with said, inferred and follow-up visibly separated, a note of what was reconstructed from memory, and a revised guide with a written reason for each change.
-
-## 1. Rebuild the guide
 - Read the assigned interview page and the note-taking page. Rewrite your guide as: warm-up, the recent episode walked through in order, two or three probes tied to your ranked questions, and a closing invitation. Keep it to one side of paper.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A guide with a warm-up, episode questions and a closing question.
 
-## 2. Prepare the record
-- Set up your three-column note structure — said, inferred, follow up — and decide now whether you are recording. Check your consent introduction is to hand and your files are named per participant.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- Warm-up: the easy opening question
+- The episode questions: what happened, last time — Ask for one specific occasion, then follow it with their own words.
+- The closing question — Usually: is there anything I should have asked?
 
-## 3. Run the interview
-- Run one session of about thirty minutes with consent. Ask for episodes, follow with their words, and use silence at least three times deliberately. If nobody is available, run it with a practice participant, label it rehearsal, and record the recruitment gap; never invent a participant or an answer.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Episode:** One specific occasion that actually happened. Asking about episodes gets you events; asking in general gets you self-description.
 
-## 4. Write up immediately
-- Within an hour, complete the three columns. Mark anything you are reconstructing from memory rather than from a note or recording, because that distinction matters later.
+Stuck starting? Rewrite your Module 2 or lesson 1 questions as “tell me about the last time…”.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Revise the guide and pause
-- Write the three questions that worked, the one that failed and why, and the thing you wish you had followed. Revise the guide for the next session. Save both versions.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- The guide is built around a recent specific episode: [evidence reference]
-- Follow-ups use the participant's words, not the interviewer's: [evidence reference]
-- Said, inferred and follow-up are separated in the record: [evidence reference]
-- The guide is revised from what actually happened: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Every substantive question points at one occasion.
 
 </details>
+
+#### 2. Prepare the record
+
+- Set up your three-column note structure — said, inferred, follow up — and decide now whether you are recording. Check your consent introduction is to hand and your files are named per participant.
+
+**You should end up with:** A three-column note structure and a decision about recording.
+
+Worksheet fields for this step:
+
+- Your three columns: said, inferred, follow up
+- Whether you will record audio, and what you will do if they say no
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Draw the three columns before the session, not during it.
+
+Is it enough? You know what you will do if they decline recording.
+
+</details>
+
+#### 3. Run the interview
+
+**See it first.** Made-up example. An interview that flowed beautifully and produced nothing.
+
+- **How it felt:** Easy and warm. We agreed about almost everything and I came out feeling the study was going well.
+- **What the notes contained:** Twelve lines, nine of which were her agreeing with something I had said. Three were about her own experience.
+- **What I had been doing:** Filling silences. Every time she paused I offered a possibility, and she took it, because that is what polite people do.
+- **What changed in the next session:** I asked, then stopped talking. It was uncomfortable for about four seconds each time, and the notes doubled.
+
+**The wrong turn:** The wrong turn is treating a smooth conversation as a good interview. A good interview is often slightly awkward, because one person is doing most of the talking and it is not you.
+
+**What it costs:** Silence feels rude and produces the material. Filling it feels kind and produces your own opinions read back to you.
+
+**Still unknown:** Still unknown: how much of the first session was salvageable. Reconstruction after the fact is marked as such and trusted less.
+
+- Run one session of about thirty minutes with consent. Ask for episodes, follow with their words, and use silence at least three times deliberately. If nobody is available, run it with a practice participant, label it rehearsal, and record the recruitment gap; never invent a participant or an answer.
+
+**You should end up with:** An honest session status and notes with what was said kept apart from what you concluded.
+
+Worksheet fields for this step:
+
+- What actually happened (A consented interview took place / Rehearsal only: no participant available) — Both are complete answers to this lesson.
+- Said · in their words, as close as you can
+- Inferred · your reading of it
+- Follow up · what you would ask next time
+- Anything you wrote from memory rather than at the time — Mark it. Reconstruction is normal and it is weaker evidence.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? If nobody is available, choose rehearsal, read the guide aloud, and note where you stumbled.
+
+Is it enough? The said column contains more of their words than yours.
+
+</details>
+
+#### 4. Write up immediately
+
+- Within an hour, complete the three columns. Mark anything you are reconstructing from memory rather than from a note or recording, because that distinction matters later.
+
+**You should end up with:** What worked, what failed and what you wish you had asked.
+
+**Try it with help.** A supplied exchange from the same made-up session. You: “Was it hard to find what to bring?” Her: “Yeah, a bit, I suppose.”
+
+What went wrong, and what would you ask instead?
+
+- **It offered the answer and got agreement; ask instead what she did when she wanted to know what to bring.** — “A bit, I suppose” is the sound of someone being agreeable. The replacement asks for an event and cannot be answered with a shrug.
+- Nothing went wrong; she confirmed the difficulty. — She confirmed your suggestion. That is not the same as reporting her experience.
+- It was too short; a longer question would give more context. — Length is not the fault. The fault is that the answer was inside the question.
+
+**Then:** Find the equivalent question in your own guide and rewrite it as an episode question.
+
+Worksheet fields for this step:
+
+- The three questions that worked
+- The one that failed, and why
+- What you wish you had asked
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Look for the answers that were short and agreeable; the question before each is usually the failure.
+
+Is it enough? The failed question is named and rewritten.
+
+</details>
+
+#### 5. Revise the guide and pause
+
+- Write the three questions that worked, the one that failed and why, and the thing you wish you had followed. Revise the guide for the next session. Save both versions.
+
+**You should end up with:** The revised guide and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Update the guide now, while you remember what happened.
+
+Is it enough? The guide differs from the one you started with.
+
+</details>
+
+**Save and continue.** Saved for you: The guide, notes and revisions save as you type, on this device first and then online. Kept outside the app: Audio and consent records stay in your own private folder. No name or contact detail belongs in this worksheet. What your creator sees: Your creator reads the three columns and the revision. The failed question is the most useful entry. Your next action: Open Your work and choose Ready for review. The next lesson watches a task where it actually happens.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1256,70 +1790,160 @@ An observation of one person booking a class at home produced three things no in
 
 Run one consented observation of a real task in its own setting with a stated observation stance, and produce a record containing at least three things you saw that nobody would have told you in an interview.
 
-**Where to work:** A notebook, a watch or phone clock for timings, and photographs only where consented. No screen-recording software, eye tracker or observation platform is required; for a single session, a pen and honest timings outperform a tool you are still learning to operate.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A notebook, a watch or phone clock for timings, and photographs only where consented. No screen-recording software, eye tracker or observation platform is required; for a single session, a pen and honest timings outperform a tool you are still learning to operate.
 
 - Starting material: Your interview notes and follow-up list. The best observation targets are usually the moments an interviewee skipped over as unremarkable.
 - Create HaruCourse/Practice/m05-l07-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Watch the task where it actually happens
+#### 1. Read and choose a stance
 
-Input artifact: Your interview notes and follow-up list. The best observation targets are usually the moments an interviewee skipped over as unremarkable.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] An observation record with stated stance, a timed sequence of actions including waits and interruptions, environment notes, at least three things an interview would not have produced, and a written limitations paragraph.
-
-## 1. Read and choose a stance
 - Read the assigned page. Choose silent observation, observation with brief questions, or think-aloud, and write what each of the other two would have given you and what your choice will distort.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A chosen stance and what it will distort.
 
-## 2. Prepare the guide and the consent
-- Write a short checklist of what you are watching for, drawn from your questions and your interview follow-ups. Extend your consent introduction to cover being in their space, photography and other people present.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- Silent, with brief questions, or think-aloud (Silent observation / Observation with brief questions / Think-aloud)
+- Why that stance, and what it will distort — Think-aloud changes what people do; silence loses the reasons.
 
-## 3. Observe
-- Watch one real task end to end with consent. Note actions, timings, environment, interruptions and anything done outside the screen. Do not help unless the person is stuck in a way that distresses them; if you help, write down that you did and when.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Think-aloud:** Asking someone to narrate as they work. It reveals reasoning and changes the pace and care of what they do.
 
-## 4. Record what nobody would have told you
-- Immediately afterwards, write the three or more things you saw that would not have come out of an interview. For each, write why it would have been skipped: too ordinary, too embarrassing, too automatic to notice.
+Stuck starting? Choose silence unless you specifically need the reasoning.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. State the limits and pause
-- Write the stance you used, what it distorted, what a second observer would have added, and the fact that this is one person in one setting. Save the record with your interview notes.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- A stance was chosen deliberately and its distortion named: [evidence reference]
-- The record includes environment, timings and interruptions: [evidence reference]
-- Three or more observations could not have come from an interview: [evidence reference]
-- Limits of one observer and one setting are stated: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? The distortion is named before the session, not after.
 
 </details>
+
+#### 2. Prepare the guide and the consent
+
+- Write a short checklist of what you are watching for, drawn from your questions and your interview follow-ups. Extend your consent introduction to cover being in their space, photography and other people present.
+
+**You should end up with:** A short watch list and consent that covers the setting.
+
+Worksheet fields for this step:
+
+- A short checklist drawn from your questions and interview gaps
+- Consent in this setting: who else is present, and what you will not record — Other people, other customers, anything on a screen that is not yours to see.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Draw the list from what your interviews could not reach.
+
+Is it enough? The consent note says what you will not record about other people.
+
+</details>
+
+#### 3. Observe
+
+**See it first.** Made-up example. Observing a booking and watching the wrong thing.
+
+- **What I prepared for:** Watching her use the site: which buttons, which order, where she hesitated.
+- **What actually happened:** She did it standing in the studio doorway, on a phone with 8 per cent battery, while the receptionist answered a question halfway through.
+- **What that explained:** She skipped the materials section not because it was hidden but because she was standing up, interrupted, and running out of battery.
+- **What I would never have learned by asking:** She would have said it was fine. Nobody reports their own battery level as a reason for a decision.
+
+**The wrong turn:** The wrong turn is treating observation as watching someone use an interface. Most of what you are there for happens around it: the setting, the interruptions, the other things they are doing.
+
+**What it costs:** Recording the environment produces messy notes that are harder to summarise. They are the notes that explain the behaviour.
+
+**Still unknown:** Still unknown: how typical that setting is. One observation shows what can happen, not what usually happens.
+
+- Watch one real task end to end with consent. Note actions, timings, environment, interruptions and anything done outside the screen. Do not help unless the person is stuck in a way that distresses them; if you help, write down that you did and when.
+
+**You should end up with:** An honest status, then actions, environment and workarounds.
+
+Worksheet fields for this step:
+
+- What actually happened (A consented observation took place / No observation possible: recorded as a gap)
+- Actions and timings
+- The setting: interruptions, other people, what else was going on — Most of what you are there for happens outside the screen.
+- Anything they did that the design did not intend
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the environment before the actions; it is the part you will forget.
+
+Is it enough? The notes contain at least one thing about the setting, not the screen.
+
+</details>
+
+#### 4. Record what nobody would have told you
+
+- Immediately afterwards, write the three or more things you saw that would not have come out of an interview. For each, write why it would have been skipped: too ordinary, too embarrassing, too automatic to notice.
+
+**You should end up with:** Three things you saw that an interview would not have produced.
+
+**Try it with help.** A supplied observation from the same made-up session: she opened the class page, went back to the list, opened it again, then chose a different class.
+
+Which write-up is worth keeping?
+
+- **She returned to the list and reopened the page before switching classes; the reason is not visible and she did not mention it afterwards.** — It records the behaviour precisely and marks the reason as unknown, which is exactly what an observation can and cannot deliver.
+- She was confused by the class page and gave up on it. — Confusion and giving up are interpretations. She may have been comparing, or checking a date.
+- The class page failed to convince her, so it needs stronger content. — A conclusion and a recommendation, neither of which the observation supports.
+
+**Then:** Write your own three the same way: the behaviour precisely, the reason marked unknown unless she told you.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Thing 1 you saw that would not come out of an interview
+- Thing 2
+- Thing 3
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Look for things people would not think to mention: timing, repetition, what they did with their other hand.
+
+Is it enough? Each entry is behaviour, with any reason marked as unknown.
+
+</details>
+
+#### 5. State the limits and pause
+
+- Write the stance you used, what it distorted, what a second observer would have added, and the fact that this is one person in one setting. Save the record with your interview notes.
+
+**You should end up with:** Your stance, its distortion, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Your stance, what it distorted, and what a second observer would have added
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask what a second observer sitting elsewhere would have noticed that you did not.
+
+Is it enough? The limits name the distortion your stance introduced.
+
+</details>
+
+**Save and continue.** Saved for you: The stance, notes and limits save as you type, on this device first and then online. Kept outside the app: Photographs of a setting, if any, stay in your own private folder and must not show other people without their agreement. What your creator sees: Your creator reads the three things an interview would not have produced. Those justify the method. Your next action: Open Your work and choose Ready for review. The next lesson designs a one-week diary study you could actually run.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1459,70 +2083,158 @@ A one-week protocol on booking weekend classes: event-contingent, entry whenever
 
 Write a one-week logging protocol with an entry template, a prompt schedule, an honest burden estimate and a dropout plan, and either run it with a consenting participant or submit the protocol together with the recorded recruitment gap.
 
-**Where to work:** A messaging app the participant already has, or paper if they prefer, plus your own notes file. No diary-study platform is required and most are unaffordable; the medium the person already opens twenty times a day will beat a better tool they have to remember to open.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A messaging app the participant already has, or paper if they prefer, plus your own notes file. No diary-study platform is required and most are unaffordable; the medium the person already opens twenty times a day will beat a better tool they have to remember to open.
 
 - Starting material: Your questions about anything that happens over time, across days or in more than one sitting. Interviews compress those into a summary; a diary does not.
 - Create HaruCourse/Practice/m05-l08-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# A diary study you could actually run
+#### 1. Read and choose a trigger
 
-Input artifact: Your questions about anything that happens over time, across days or in more than one sitting. Interviews compress those into a summary; a diary does not.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A one-week protocol with trigger type and its blind spot, an entry template timed at under two minutes, a prompt schedule, a stated burden and offer, a dropout and withdrawal plan, and a closing-conversation plan — plus either the collected entries or a dated recruitment gap.
-
-## 1. Read and choose a trigger
 - Read the assigned article. Choose event, interval or signal triggering for your question, and write what your choice will systematically miss.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A trigger type chosen for your question.
 
-## 2. Design the entry
-- Write an entry template of no more than four short prompts, in a medium the participant already uses daily. Time yourself completing it as if you were them; if it takes over two minutes, cut a prompt.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- Event, interval or signal triggering (Event: when the thing happens / Interval: at a fixed time / Signal: when I send a prompt)
+- Why that fits your question
 
-## 3. Write the protocol
-- Write the duration, the prompt schedule, what you will send on day one, the burden estimate you will tell the participant, and what you offer for their time. Add your consent introduction, extended for a study that continues over days.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Event triggering:** They log when the thing happens. Best for infrequent events, and it relies on them remembering to log.
 
-## 4. Plan for dropout and closure
-- Write your minimum acceptable data, your response to silence, your rule for late or reconstructed entries, and your withdrawal procedure. Draft the closing conversation: how you will read the entries first and build questions from them.
+Stuck starting? Ask whether your question is about moments that happen, or about a daily state.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Run or record the gap, then pause
-- If a participant consents, send day one and start. If not, record what you attempted, when and what you will try next, and submit the protocol as the deliverable. Do not write example entries and present them as data, even as illustrations, unless every one is clearly labelled as invented.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- The trigger type is chosen for the question and its blind spot named: [evidence reference]
-- The entry is short enough to survive a busy day: [evidence reference]
-- Burden, offer and dropout are planned in advance: [evidence reference]
-- The closing conversation is planned from the entries: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? The reason names the shape of the behaviour, not your convenience.
 
 </details>
+
+#### 2. Design the entry
+
+**See it first.** Made-up example. Designing a diary entry that nobody would complete twice.
+
+- **My first template:** Nine questions including a five-point scale, in a shared spreadsheet I would set up for them.
+- **The burden when I tried it:** I filled it in myself once. Six minutes, and I was motivated. On day three a real participant would stop.
+- **What I cut it to:** Four prompts, sent and answered by text message, because that is what she already uses all day.
+- **What I gave up:** The scale, and the tidy spreadsheet I could have analysed quickly. The analysis is now my problem rather than hers.
+
+**The wrong turn:** The wrong turn is designing the entry for your analysis. Every field you add is paid daily by someone who is doing you a favour.
+
+**What it costs:** Four free-text prompts by text message are messier to analyse and are the ones that actually arrive on day five.
+
+**Still unknown:** Still unknown: whether four prompts is still too many. The first two days will say, and the protocol allows shortening it.
+
+- Write an entry template of no more than four short prompts, in a medium the participant already uses daily. Time yourself completing it as if you were them; if it takes over two minutes, cut a prompt.
+
+**You should end up with:** An entry template of at most four prompts in a medium they already use.
+
+Worksheet fields for this step:
+
+- No more than four short prompts, in a medium they already use — A text message, a note app, a photo. Not a new tool they must install.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Fill in your own template once and time yourself, then cut it.
+
+Is it enough? The medium is something they already use every day.
+
+</details>
+
+#### 3. Write the protocol
+
+- Write the duration, the prompt schedule, what you will send on day one, the burden estimate you will tell the participant, and what you offer for their time. Add your consent introduction, extended for a study that continues over days.
+
+**You should end up with:** Duration, schedule, day-one message and an honest burden estimate.
+
+Worksheet fields for this step:
+
+- Duration, prompt schedule, and what you send on day one
+- Your honest burden estimate, in minutes per day — Then double it. Diary studies always cost the participant more than the designer thinks.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the day-one message as you would actually send it.
+
+Is it enough? The burden estimate is per day and you have doubled your first guess.
+
+</details>
+
+#### 4. Plan for dropout and closure
+
+- Write your minimum acceptable data, your response to silence, your rule for late or reconstructed entries, and your withdrawal procedure. Draft the closing conversation: how you will read the entries first and build questions from them.
+
+**You should end up with:** Minimum data, a response to silence, and a rule for late entries.
+
+**Try it with help.** A supplied situation from the same made-up study: the participant logs on days one and two, then nothing for three days.
+
+What is the right response?
+
+- **One friendly reminder that makes stopping easy, then accept whatever you have.** — Two days of real entries is usable. Repeated chasing turns a favour into an obligation and produces entries written to satisfy you.
+- Send a daily reminder until they resume. — That is pressure. The entries it produces are compliance, not behaviour.
+- Ask them to reconstruct the missing days. — Reconstruction from three days ago is memory, and it will be smoothed towards what they think you want.
+
+**Then:** Write your own silence rule now, before it happens, and make it easy for them to stop.
+
+Worksheet fields for this step:
+
+- Your minimum acceptable data
+- What you do after two days of silence — One reminder, then stop. Chasing is pressure.
+- Your rule for late or reconstructed entries
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Decide the minimum data first; it tells you when silence is survivable.
+
+Is it enough? Your silence rule ends with accepting what you have.
+
+</details>
+
+#### 5. Run or record the gap, then pause
+
+- If a participant consents, send day one and start. If not, record what you attempted, when and what you will try next, and submit the protocol as the deliverable. Do not write example entries and present them as data, even as illustrations, unless every one is clearly labelled as invented.
+
+**You should end up with:** Either day one sent, or a dated gap, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- What happened (A participant consented and day one has been sent / No participant: protocol submitted with a dated gap)
+- If nobody consented: what you attempted, when, and what you would change
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? If nobody consented, write what you attempted and when.
+
+Is it enough? The status matches reality.
+
+</details>
+
+**Save and continue.** Saved for you: The protocol, template and dropout plan save as you type, on this device first and then online. Kept outside the app: Entries a participant sends stay in your own private folder. Do not paste their messages here. What your creator sees: Your creator reads the protocol and the burden estimate. The dropout plan shows whether the study respects the participant. Your next action: Open Your work and choose Ready for review. The next lesson writes a survey and states what a number can carry.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1662,70 +2374,158 @@ A draft survey opened with “How frustrating do you find booking classes online
 
 Write a questionnaire of at most eight questions that survives a wording review, and state in advance the population you can actually reach, the counts you will report instead of percentages, and the interval you would have to attach to any rate.
 
-**Where to work:** A free form tool is convenient and not required; the same eight questions work as a message you send and tally by hand, and at twenty responses hand-tallying is quicker than learning a tool's export. If you use a form service, check that it does not require respondents to sign in, since that alone will skew who replies.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A free form tool is convenient and not required; the same eight questions work as a message you send and tally by hand, and at twenty responses hand-tallying is quicker than learning a tool's export. If you use a form service, check that it does not require respondents to sign in, since that alone will skew who replies.
 
 - Starting material: Your remaining questions of the “how many” or “how often” kind, and the exclusion sentences you wrote when choosing methods. A survey is where those exclusions are most often forgotten.
 - Create HaruCourse/Practice/m05-l09-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Surveys: wording, and what a number can carry
+#### 1. Read the ten practices
 
-Input artifact: Your remaining questions of the “how many” or “how often” kind, and the exclusion sentences you wrote when choosing methods. A survey is where those exclusions are most often forgotten.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A questionnaire of at most eight reviewed questions with the pre-review wording preserved, a written statement of the reachable and unreachable population, a reporting rule for counts and intervals, and notes from a two-person pilot.
-
-## 1. Read the ten practices
 - Read the assigned article on question wording and the article on intervals. Write the four practices you are most likely to break, given your own draft or your instincts.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Four wording practices and what an interval is for.
 
-## 2. Draft and then cut
-- Draft your questionnaire, then cut it to at most eight questions by removing anything you would not act on. Write beside each survivor the decision it serves.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- The four wording practices you most need, and what an interval is for
 
-## 3. Run a wording review
-- Check every question against the ten practices: leading language, prediction, double-barrelled, unbalanced scale, missing or overlapping options, no opt-out. Rewrite each failure and keep the original beside it.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Interval:** The range a rate could plausibly be, given how many people answered. With small numbers it is so wide that the rate carries almost nothing.
 
-## 4. Define the reachable population
-- Write exactly who can receive this and who cannot. Then write your reporting rule: counts not percentages below a number you choose now, and an interval attached to any rate you do report.
+Stuck starting? Read both assigned articles and write the four you most often break.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Pilot with two people and pause
-- Have two people complete it in front of you and note every question they hesitated over or interpreted differently from your intention. Fix those, then save the questionnaire, the population statement and the reporting rule.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Every question survives a wording review: [evidence reference]
-- The questionnaire is cut to what will be acted on: [evidence reference]
-- The reachable population is defined before sending: [evidence reference]
-- The reporting rule prevents small counts becoming rates: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? You named an interval’s purpose without needing a formula.
 
 </details>
+
+#### 2. Draft and then cut
+
+**See it first.** Made-up example. Drafting a survey and cutting it in half.
+
+- **My first draft:** Fourteen questions, including age, how often they attend classes, and how satisfied they are out of five.
+- **The test I applied:** For each: what would I do differently depending on the answer? Age and satisfaction survived nothing.
+- **Why they were there:** Age because surveys have demographics, and satisfaction because it produces a number that looks like a result.
+- **What was left:** Six questions, all about what people did before their last class, each attached to a decision I am facing.
+
+**The wrong turn:** The wrong turn is including questions because surveys usually have them. Every extra question costs completion and buys nothing you would act on.
+
+**What it costs:** A six-question survey looks slight and it gets finished, which a fourteen-question one does not.
+
+**Still unknown:** Still unknown: how many people will answer at all. That decides whether any of it can be reported as more than counts.
+
+- Draft your questionnaire, then cut it to at most eight questions by removing anything you would not act on. Write beside each survivor the decision it serves.
+
+**You should end up with:** At most eight questions, each with what you would do with the answer.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Question 1 · and what you would do with the answer — If you cannot say what you would do differently, cut it.
+- Question 2 · and what you would do with the answer
+- Question 3 · and what you would do with the answer
+- Question 4 · and what you would do with the answer
+- Question 5 · and what you would do with the answer
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Draft freely, then cut by asking what you would do with each answer.
+
+Is it enough? Every remaining question names an action it would inform.
+
+</details>
+
+#### 3. Run a wording review
+
+- Check every question against the ten practices: leading language, prediction, double-barrelled, unbalanced scale, missing or overlapping options, no opt-out. Rewrite each failure and keep the original beside it.
+
+**You should end up with:** The wording review, with what you changed.
+
+**Try it with help.** A supplied question from the same made-up survey: “How likely would you be to use a helpful reminder about what to bring, and would you prefer it by email or text?”
+
+How many separate problems does it have?
+
+- **Three: it asks for a prediction, it calls the reminder helpful, and it asks two questions at once.** — Predictions are unreliable, “helpful” tells them the answer, and a double-barrelled question cannot be answered cleanly by anyone who wants neither.
+- One: it is double-barrelled. — That is the visible fault. The prediction and the loaded adjective are doing quieter damage.
+- None, provided you offer a “neither” option. — A neither option helps with the second half and does nothing about predicting or about the word helpful.
+
+**Then:** Run every one of your own questions past the same three tests.
+
+Worksheet fields for this step:
+
+- What you changed: leading language, predictions, double-barrelled questions, assumed knowledge
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read each question aloud and listen for the answer hiding inside it.
+
+Is it enough? No question predicts the future or contains a judgement word.
+
+</details>
+
+#### 4. Define the reachable population
+
+- Write exactly who can receive this and who cannot. Then write your reporting rule: counts not percentages below a number you choose now, and an interval attached to any rate you do report.
+
+**You should end up with:** Exactly who can receive it, and the counts-not-percentages rule.
+
+Worksheet fields for this step:
+
+- Exactly who can receive it, and who cannot
+- Your reporting rule: counts, not percentages, and why
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the actual list or channel you would send it through.
+
+Is it enough? The reporting rule commits to counts with a denominator.
+
+</details>
+
+#### 5. Pilot with two people and pause
+
+- Have two people complete it in front of you and note every question they hesitated over or interpreted differently from your intention. Fix those, then save the questionnaire, the population statement and the reporting rule.
+
+**You should end up with:** Two people piloting it in front of you, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Every question they hesitated over or interpreted differently from you
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Watch them complete it and note every pause, not just what they say afterwards.
+
+Is it enough? At least one question was interpreted differently from how you meant it.
+
+</details>
+
+**Save and continue.** Saved for you: The questionnaire, review and pilot notes save as you type, on this device first and then online. Kept outside the app: Responses stay wherever you collect them, in your own private folder. Do not paste identifying answers here. What your creator sees: Your creator reads the questions and the reporting rule. The reporting rule is what stops the numbers being overstated later. Your next action: Open Your work and choose Ready for review. The next lesson turns everything you have collected into findings.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1865,70 +2665,157 @@ Four interviews, one observation and twenty-two survey responses produced fourte
 
 Convert your raw material into at most seven findings, each carrying how many people showed it, the evidence behind it, your confidence, the decision it informs, and any evidence that contradicts it.
 
-**Where to work:** Sticky notes or cut paper on a table, or one text file with one observation per line that you re-sort by cutting and pasting. Physical cards are easier to regroup and easier to photograph as evidence of the process; a shared online board adds nothing at this scale and cannot be worked on a bus.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Sticky notes or cut paper on a table, or one text file with one observation per line that you re-sort by cutting and pasting. Physical cards are easier to regroup and easier to photograph as evidence of the process; a shared online board adds nothing at this scale and cannot be worked on a bus.
 
 - Starting material: Everything collected so far: interview notes, the observation record, any diary entries or survey responses, and the desk-research note. Analysis is the point at which these become one study rather than four activities.
 - Create HaruCourse/Practice/m05-l10-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# From a pile of notes to findings you can defend
+#### 1. Read and re-read your raw material
 
-Input artifact: Everything collected so far: interview notes, the observation record, any diary entries or survey responses, and the desk-research note. Analysis is the point at which these become one study rather than four activities.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] At most seven findings, each with participant counts, evidence, confidence, the decision it informs and contradicting evidence; plus an open-questions list and the discarded candidate findings with reasons.
-
-## 1. Read and re-read your raw material
 - Read the assigned analysis page. Then read all your notes straight through once without writing anything, to re-familiarise yourself before you start sorting.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What stands out after reading everything once, before extracting anything.
 
-## 2. Extract observations
-- Write each observation on its own line or card, in the participant's terms, with a participant label. Do not interpret yet. Include the boring ones and anything that surprised you.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- After reading everything once without writing: what stands out? — Do this before extracting anything. It is the only time you see the whole.
 
-## 3. Group, then name
-- Put together observations that seem to belong, then name each group from what is inside it. Rename any group named after a feature or a solution. Note which groups you expected and which you did not.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
 
-## 4. Write the findings with their evidence
-- For each group, write a finding sentence with the count of participants, the evidence, your confidence, the decision it informs, and any contradicting evidence. Cut to at most seven.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+Stuck starting? Read straight through without a pen. It is the only pass where you see the shape.
 
-## 5. Falsify and pause
-- For each finding, write what in the notes would have to be different for it to be false. Move anything that fails this test to an open-questions list. Save the findings, the open questions and the discarded candidates.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Observations, interpretations and decisions are kept separate: [evidence reference]
-- Groups are named from their contents, not from solutions: [evidence reference]
-- Findings count participants and state confidence: [evidence reference]
-- Contradicting evidence is preserved and addressed: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? You wrote impressions, knowing they may not survive the extraction.
 
 </details>
+
+#### 2. Extract observations
+
+- Write each observation on its own line or card, in the participant's terms, with a participant label. Do not interpret yet. Include the boring ones and anything that surprised you.
+
+**You should end up with:** Observations, one per line, in the participant’s terms with a label.
+
+Worksheet fields for this step:
+
+- Each observation in the participant’s terms, with a participant label — P1, P2, or the supplied practice notes. One thing per line.
+
+<details>
+<summary>Help with this step</summary>
+
+- **In their terms:** Using the words they used. Translating into your vocabulary quietly imports your interpretation.
+
+Stuck starting? Go line by line through the notes and split anything containing “because”.
+
+Is it enough? Every line carries a participant label.
+
+</details>
+
+#### 3. Group, then name
+
+- Put together observations that seem to belong, then name each group from what is inside it. Rename any group named after a feature or a solution. Note which groups you expected and which you did not.
+
+**You should end up with:** Groups named from what is inside them, with any renaming recorded.
+
+Worksheet fields for this step:
+
+- Your groups, each named from what is inside it — Name the group after you have put things in it, not before.
+- Any group you renamed once you saw what was in it
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Put two related observations together, then let the name come from them.
+
+Is it enough? At least one group was renamed after you saw its contents.
+
+</details>
+
+#### 4. Write the findings with their evidence
+
+**See it first.** Made-up example. Turning a theme into a finding, and finding out it was not one.
+
+- **The theme I had:** “Preparation anxiety.” It felt insightful and everyone I described it to nodded.
+- **What happened when I wrote the count:** Two of three participants. The third had done the class before and prepared without thinking about it.
+- **What happened when I wrote the decision:** I could not name one. “People feel anxious” does not tell me where to put the materials list.
+- **The finding I kept:** Three of three looked for the materials list after booking rather than before. Countable, evidenced, and it names exactly which decision it changes.
+
+**The wrong turn:** The wrong turn is stopping at the theme. Themes are a byproduct; the purpose is a statement you could defend, with a count and a decision attached.
+
+**What it costs:** The countable finding is duller and less quotable than “preparation anxiety”. It is the one that survives being questioned.
+
+**Still unknown:** Still unknown: whether the pattern holds beyond three people. The count says three, and the report must not say more.
+
+- For each group, write a finding sentence with the count of participants, the evidence, your confidence, the decision it informs, and any contradicting evidence. Cut to at most seven.
+
+**You should end up with:** At most seven findings, each with count, evidence, confidence and the decision it informs.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Finding 1 · the sentence, how many people showed it, the evidence, your confidence, and the decision it informs
+- Finding 2 · the sentence, how many people showed it, the evidence, your confidence, and the decision it informs
+- Finding 3 · the sentence, how many people showed it, the evidence, your confidence, and the decision it informs
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take a group and write the sentence you would defend if challenged.
+
+Is it enough? Every finding names a number of people and a decision.
+
+</details>
+
+#### 5. Falsify and pause
+
+- For each finding, write what in the notes would have to be different for it to be false. Move anything that fails this test to an open-questions list. Save the findings, the open questions and the discarded candidates.
+
+**You should end up with:** What would make each finding false, and anything demoted as a result.
+
+**Try it with help.** A supplied finding from the same made-up study: “Participants find the booking flow confusing.”
+
+What is wrong with it as a finding?
+
+- **No count, no evidence, and nothing in the notes could make it false, so it cannot be defended or acted on.** — A finding that nothing could contradict is an impression. Adding the count and the falsifier usually reveals it needs rewriting entirely.
+- It should say how many participants, and is otherwise fine. — A count helps and “confusing” still names no behaviour and no decision.
+- It needs a recommendation attached. — Attaching a recommendation to an unsupported finding compounds the problem.
+
+**Then:** Apply the falsification test to each of your own findings and demote anything that fails.
+
+Worksheet fields for this step:
+
+- For each finding: what in the notes would have to be different
+- Anything you demoted to an assumption as a result
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? For each finding, finish “this would be wrong if the notes showed …”.
+
+Is it enough? Anything nothing could falsify has been demoted or rewritten.
+
+</details>
+
+**Save and continue.** Saved for you: Your observations, groups and findings save as you type, on this device first and then online. Kept outside the app: Raw notes stay in your own private folder. Only anonymised observations belong here. What your creator sees: Your creator reads the findings with their counts and confidence. The falsification line shows the analysis was tested rather than assembled. Your next action: Open Your work and choose Ready for review. The next lesson writes jobs and needs from these findings.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2068,70 +2955,158 @@ From four interviews and one observation: “When I am considering a paid weeken
 
 Write three job statements with functional and emotional success criteria and three need statements from your own evidence, each labelled as evidenced or assumed, and identify which of them would still be true if the product were rebuilt from nothing.
 
-**Where to work:** Written statements in a text file or on paper. Templates and canvases exist and add nothing here; the difficulty is entirely in whether the sentence rests on evidence, which no template can supply.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Written statements in a text file or on paper. Templates and canvases exist and add nothing here; the difficulty is entirely in whether the sentence rests on evidence, which no template can supply.
 
 - Starting material: Your findings table with its counts and confidence. Jobs and needs are written from evidence you hold, and anything written from expectation must be labelled as such.
 - Create HaruCourse/Practice/m05-l11-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Jobs, needs and the sentence that survives a redesign
+#### 1. Read both, including the criticisms
 
-Input artifact: Your findings table with its counts and confidence. Jobs and needs are written from evidence you hold, and anything written from expectation must be labelled as such.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Three job statements with functional and emotional success criteria and cited findings, three solution-free need statements, an evidenced or assumed label on each, and a reflection engaging with the method's stated weaknesses.
-
-## 1. Read both, including the criticisms
 - Read the jobs article, including its stated weaknesses, and the need-statement page. Write the two weaknesses most likely to affect your own study.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What each lens is for and the weaknesses its own article states.
 
-## 2. Draft the jobs
-- From your findings, draft three job statements in situation–motivation–outcome form. For each, write functional and emotional success criteria. Cite the finding each one rests on.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- What each lens is for, and the weaknesses the article itself states
 
-## 3. Draft the needs
-- Write three need statements naming person, need and reason, with no solution in the sentence. Delete any solution that has crept in and check what survives.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Altitude:** How far above the current design a statement sits. Too low and it dies when the design changes; too high and it guides nothing.
 
-## 4. Label and test the altitude
-- Mark each statement evidenced or assumed with its source. Then test the altitude: would this still be true if the product were rebuilt from nothing, and does it still guide a decision? Rewrite anything too high or too low.
+Stuck starting? Read both, including the criticisms, and write them down rather than skipping them.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Write the reflection and pause
-- Write what this framing loses about the people in your study, engaging with the article's stated weaknesses. Save the statements, the labels and the reflection.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Jobs state situation, motivation, outcome and both kinds of success: [evidence reference]
-- Need statements contain no solution: [evidence reference]
-- Every statement is labelled evidenced or assumed with a source: [evidence reference]
-- The reflection engages with the method's stated weaknesses: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? You recorded at least one stated weakness of each lens.
 
 </details>
+
+#### 2. Draft the jobs
+
+- From your findings, draft three job statements in situation–motivation–outcome form. For each, write functional and emotional success criteria. Cite the finding each one rests on.
+
+**You should end up with:** Three job statements with functional and emotional success criteria.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Job 1 · situation, motivation, outcome, plus what functional and emotional success look like
+- Job 2 · situation, motivation, outcome, plus what functional and emotional success look like
+- Job 3 · situation, motivation, outcome, plus what functional and emotional success look like
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take a finding and ask what the person was trying to accomplish when it happened.
+
+Is it enough? The emotional criterion is not simply “feel confident”.
+
+</details>
+
+#### 3. Draft the needs
+
+- Write three need statements naming person, need and reason, with no solution in the sentence. Delete any solution that has crept in and check what survives.
+
+**You should end up with:** Three need statements with no solution in them.
+
+Worksheet fields for this step:
+
+- Need 1 · person, need, reason, no solution
+- Need 2
+- Need 3
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write person, need, reason, then delete any noun that names a feature.
+
+Is it enough? None of the three could be satisfied by only one response.
+
+</details>
+
+#### 4. Label and test the altitude
+
+**See it first.** Made-up example. Writing a job statement that would not survive a redesign.
+
+- **What I wrote:** “When I am on the class details page, I want the materials list to be visible, so that I know what to bring.”
+- **The altitude test:** Rebuild the product from nothing and there may be no class details page. The statement dies with the page it names.
+- **What was underneath:** When I book a class I have never attended, I want to know what I am expected to bring, so that I can arrive able to start with everyone else.
+- **What the higher version permits:** A message on the day, a line on the ticket, or the studio keeping spares. The lower version had already chosen the page.
+
+**The wrong turn:** The wrong turn is writing the statement in terms of your current screens. It reads as insight and has quietly fixed the answer.
+
+**What it costs:** Higher statements are vaguer and harder to act on immediately. They are the ones still true after the next redesign.
+
+**Still unknown:** Still unknown: whether the emotional criterion is real for anyone other than the one participant who described it.
+
+- Mark each statement evidenced or assumed with its source. Then test the altitude: would this still be true if the product were rebuilt from nothing, and does it still guide a decision? Rewrite anything too high or too low.
+
+**You should end up with:** Every statement labelled and tested for altitude.
+
+**Try it with help.** Two supplied statements. A: “When I open the app, I want the search bar at the top, so that I can find classes quickly.” B: “When I have a free evening, I want to find something worth attending nearby, so that I do not waste the evening deciding.”
+
+Which is at the right altitude, and why?
+
+- **B, because it would still be true if the product were rebuilt with no search bar at all.** — It describes the person’s situation and outcome. A search bar is one possible response, and so is a curated list or a notification.
+- A, because it is specific and immediately actionable. — It is actionable because it already contains the answer, which is the problem. It cannot lead anywhere you had not already decided.
+- Both, since they operate at different levels usefully. — A is not a level of need; it is a design decision wearing the format.
+
+**Then:** Apply the same test to each of your own six statements and raise any that name a screen.
+
+Worksheet fields for this step:
+
+- Each statement marked evidenced (with its source) or assumed
+- Which of them would still be true if the product were rebuilt from nothing — A statement that dies with your current design was written at the wrong altitude.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? For each statement, imagine the product rebuilt from nothing and ask whether the sentence survives.
+
+Is it enough? No statement names a page, a field or a control.
+
+</details>
+
+#### 5. Write the reflection and pause
+
+- Write what this framing loses about the people in your study, engaging with the article's stated weaknesses. Save the statements, the labels and the reflection.
+
+**You should end up with:** What the framing loses, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- What this framing loses about the people in your study, engaging with the article’s own criticisms
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Reread your notes and find a person whose situation does not fit either framing.
+
+Is it enough? The reflection engages with a specific criticism, not a general caveat.
+
+</details>
+
+**Save and continue.** Saved for you: Your jobs, needs and labels save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. What your creator sees: Your creator reads the altitude test and the labels. Statements that survive a rebuild are the ones worth carrying forward. Your next action: Open Your work and choose Ready for review. The next lesson maps the journey with every stage marked by its evidence.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2271,70 +3246,156 @@ A workshop journey mapped in seven stages: hears about it from a friend (reporte
 
 Produce an experience map of one journey with stages over time and layers for what people do, think and feel, in which every stage is marked as observed, reported or assumed.
 
-**Where to work:** A long sheet of paper, or several sheets joined, with sticky notes for layers — this is faster than any tool and photographs well. If you prefer digital, a table in a text file with one column per stage and one row per layer holds the same information and survives being read on a phone. No mapping tool or template purchase is involved.
+**Where to practise:** Draw the journey map with its evidence marks on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: A long sheet of paper, or several sheets joined, with sticky notes for layers — this is faster than any tool and photographs well. If you prefer digital, a table in a text file with one column per stage and one row per layer holds the same information and survives being read on a phone. No mapping tool or template purchase is involved.
 
 - Starting material: Your findings, jobs and needs. A map is a way of arranging evidence in time; it is not a way of generating evidence you did not collect.
 - Create HaruCourse/Practice/m05-l12-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Map the journey you can actually evidence
+#### 1. Read and prepare
 
-Input artifact: Your findings, jobs and needs. A map is a way of arranging evidence in time; it is not a way of generating evidence you did not collect.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A working experience map with stages from before the product to after it, three layers, evidence marks on every entry, and a simplified shareable version carrying the marks and a one-line statement of participants, place and period.
-
-## 1. Read and prepare
 - Read the assigned page. Lay out your findings, notes and quotations where you can see them all; the map is built from these and from nothing else.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Stages that start before your product and end after it.
 
-## 2. Set the stages
-- Write the stages people actually pass through, starting before the product and ending after it. Use their language for the stage names. Do not place anything else yet.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- Starting before the product and ending after it — The first stage is usually something that happens in their life, not on your screen.
 
-## 3. Build the layers
-- Add what people do, then what they think, then what they feel — one complete pass per layer. Attach a quotation or note reference wherever you can.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Stage:** A period in the person’s experience, not a screen in your flow.
 
-## 4. Mark the evidence
-- Mark every stage and every layer entry observed, reported or assumed. Count the assumed marks; if they outnumber the rest, the map is a hypothesis and must be labelled as one.
+Stuck starting? Begin with what happens before they have heard of you.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Make the shareable version and pause
-- Produce a simplified version that keeps the evidence marks and adds one line stating participants, place and period. Save both versions.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Stages run from before the product to after it: [evidence reference]
-- All three layers are built from cited evidence: [evidence reference]
-- Every entry is marked observed, reported or assumed: [evidence reference]
-- The shareable version keeps the marks and states its scope: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? At least two stages involve no product at all.
 
 </details>
+
+#### 2. Set the stages
+
+- Write the stages people actually pass through, starting before the product and ending after it. Use their language for the stage names. Do not place anything else yet.
+
+**You should end up with:** Three layers, each completed in one pass across all stages.
+
+Worksheet fields for this step:
+
+- What people do, stage by stage
+- What they think, stage by stage
+- What they feel, stage by stage
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Do the doing layer across every stage before starting the thinking layer.
+
+Is it enough? You resisted filling one stage completely before moving on.
+
+</details>
+
+#### 3. Build the layers
+
+**See it first.** Made-up example. Marking a journey map and discovering what it really was.
+
+- **What the map looked like:** Seven stages, three layers, neatly filled. It looked like the output of a substantial study.
+- **What the marking found:** Of twenty-one entries, four were observed, five reported and twelve assumed. More than half was me.
+- **Where the assumptions clustered:** The feeling layer, almost entirely. I had inferred emotion from behaviour and written it as though someone had told me.
+- **What I did:** Kept the map, kept the marks, and added a line saying it is drawn from three interviews and one observation, so most of the feeling layer is inferred.
+
+**The wrong turn:** The wrong turn is a complete, confident map. Completeness is easy to produce and hides the ratio of evidence to invention.
+
+**What it costs:** A marked map looks patchy and is honest about where it may be wrong, which is where someone should look first.
+
+**Still unknown:** Still unknown: nearly everything in the feeling layer. That is the case for the next study, not a reason to delete it.
+
+- Add what people do, then what they think, then what they feel — one complete pass per layer. Attach a quotation or note reference wherever you can.
+
+**You should end up with:** Every entry marked, with the assumed entries counted.
+
+Worksheet fields for this step:
+
+- Each stage and layer entry marked observed, reported or assumed
+- How many entries are assumed, out of how many — Count them. A map that is mostly assumed is a hypothesis, and should say so.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Mark the doing layer first; it is where most of the observed entries are.
+
+Is it enough? The count is a real number and you did not adjust the map to improve it.
+
+</details>
+
+#### 4. Mark the evidence
+
+- Mark every stage and every layer entry observed, reported or assumed. Count the assumed marks; if they outnumber the rest, the map is a hypothesis and must be labelled as one.
+
+**You should end up with:** A shareable version that keeps the marks and states participant numbers.
+
+**Try it with help.** A supplied map from the same made-up study, drawn from three interviews, with a deep dip in the feeling layer at the payment stage.
+
+What may the shareable version claim about that dip?
+
+- **That it is inferred from three accounts, not measured, and that the low point is not automatically where to focus.** — Emotional dips are usually inferred, and the lowest point in a booking journey is often something you cannot change, such as parting with money.
+- That payment is the biggest problem and should be the priority. — The dip is inferred and may be an unavoidable feature of paying for something. Priority needs a decision, not a low point.
+- That the emotional low point indicates where redesign will have most impact. — This is the common misreading. Impact depends on what you could change and what it would cost, not on where the line is lowest.
+
+**Then:** Write your own shareable line so that nobody can read a priority off the shape of the map.
+
+Worksheet fields for this step:
+
+- A simplified version that keeps the evidence marks, plus one line stating participant numbers and dates
+- Where the map lives
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Simplify by removing detail, never by removing the marks.
+
+Is it enough? The shareable version names how many people and when.
+
+</details>
+
+#### 5. Make the shareable version and pause
+
+- Produce a simplified version that keeps the evidence marks and adds one line stating participants, place and period. Save both versions.
+
+**You should end up with:** The map saved, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Check that nothing in the shareable version claims more than the marks allow.
+
+Is it enough? The evidence marks survived simplification.
+
+</details>
+
+**Save and continue.** Saved for you: Your stages, layers and marks save as you type, on this device first and then online. Kept outside the app: The drawn map stays in your own folder. Name it here so the marks and the drawing stay together. What your creator sees: Your creator reads the marks and the assumed count. Those decide how much weight the map can carry. Your next action: Open Your work and choose Ready for review. The last lesson writes the report someone could act on.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2474,70 +3535,156 @@ A one-page report: three headline findings, each a sentence — “people confir
 
 Produce a findings report of at most one page or six slides, structured so each finding leads with its headline and carries its evidence, with a limitations section, a recommended next step and an anonymisation check completed before anything is shared.
 
-**Where to work:** One page of plain text or Markdown, or a handful of slides in any free editor. A read-aloud version matters more than layout here: if you cannot say each finding in one sentence, the finding is not finished, and no amount of formatting will fix that.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: One page of plain text or Markdown, or a handful of slides in any free editor. A read-aloud version matters more than layout here: if you cannot say each finding in one sentence, the finding is not finished, and no amount of formatting will fix that.
 
 - Starting material: Your findings table, the marked experience map, your jobs and needs, and every limitation you have written along the way. This lesson assembles them; it does not soften them.
 - Create HaruCourse/Practice/m05-l13-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Report findings someone can act on
+#### 1. Read the sharing guidance
 
-Input artifact: Your findings table, the marked experience map, your jobs and needs, and every limitation you have written along the way. This lesson assembles them; it does not soften them.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A findings report of at most one page or six slides using the headline structure, a limitations section naming participants, route, exclusions, numbers and period, one recommendation, one explicit non-recommendation, and a completed anonymisation check.
-
-## 1. Read the sharing guidance
 - Read the assigned page and note its structure for presenting a finding. Re-read the anonymisation section of the data page; the sharing page does not cover it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The structure the guidance gives for a finding.
 
-## 2. Write the findings
-- Write each finding as headline, essential facts, why it matters and evidence. Cut to the number that fits one page or six slides — usually three to five.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- The structure the guidance gives for presenting a finding
 
-## 3. Write the limitations
-- Assemble who took part, recruitment route, exclusions, numbers, period and what the study cannot establish. Reuse your exclusion sentences from the method plan verbatim.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
 
-## 4. Recommend, and say what not to do
-- Write one recommended next step tied to a specific finding, and one thing the evidence says not to build, with the reason. Note which findings are not yet strong enough to act on.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+Stuck starting? Read the assigned page and write the four parts down.
 
-## 5. Anonymisation check and pause
-- Read the report as though you were a participant's colleague. Remove anything identifying, including distinctive quotations. Then save it, and file the raw material where it can be produced if questioned.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Findings lead with the headline and carry their evidence: [evidence reference]
-- Limitations name participants, route, exclusions and period: [evidence reference]
-- A recommendation and a non-recommendation are both stated: [evidence reference]
-- An anonymisation check was completed before sharing: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? You have the structure in front of you before writing.
 
 </details>
+
+#### 2. Write the findings
+
+**See it first.** Made-up example. Writing a report nobody would act on, then cutting it.
+
+- **What I produced first:** Four pages: method, participant profiles, a themes section, then findings on page three.
+- **What happened to it:** The studio owner read the first page and asked me what I wanted her to do. Everything she needed was on page three.
+- **What I cut:** The method narrative and the profiles. They protected me from the accusation of being unrigorous, and they cost the reader the finding.
+- **What the second version was:** One page. Three findings, each with its headline first, then the facts and the evidence. Limitations at the bottom. One recommendation.
+
+**The wrong turn:** The wrong turn is thoroughness. Length reduces the chance of action, and the parts that get cut are usually the ones defending the researcher.
+
+**What it costs:** A one-page report leaves out work you did. The work is not the deliverable; the decision it enables is.
+
+**Still unknown:** Still unknown: whether the recommendation is right. It is tied to one finding and the limitations say what it rests on.
+
+- Write each finding as headline, essential facts, why it matters and evidence. Cut to the number that fits one page or six slides — usually three to five.
+
+**You should end up with:** Findings written headline-first, cut to what you can support.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Finding 1 · headline, facts, why it matters, evidence — The headline is the finding itself, not a topic.
+- Finding 2 · headline, facts, why it matters, evidence
+- Finding 3 · headline, facts, why it matters, evidence
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the headline of your strongest finding as a full sentence stating what is true.
+
+Is it enough? Each headline states the finding rather than naming a topic.
+
+</details>
+
+#### 3. Write the limitations
+
+- Assemble who took part, recruitment route, exclusions, numbers, period and what the study cannot establish. Reuse your exclusion sentences from the method plan verbatim.
+
+**You should end up with:** Limitations assembled in one place.
+
+Worksheet fields for this step:
+
+- Who took part, the recruitment route, exclusions, numbers, period, and what the study cannot say
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Copy the exclusion sentence from your recruitment plan; it belongs here.
+
+Is it enough? The section names numbers, dates and who is missing.
+
+</details>
+
+#### 4. Recommend, and say what not to do
+
+- Write one recommended next step tied to a specific finding, and one thing the evidence says not to build, with the reason. Note which findings are not yet strong enough to act on.
+
+**You should end up with:** One recommendation tied to a finding, and one thing not to do.
+
+**Try it with help.** A supplied pair from the same made-up study. A: “Improve the booking experience.” B: “Show the materials list on the confirmation screen, because all three participants looked for it after booking; do not build the reminder email yet, since nobody in this study mentioned email at all.”
+
+Why is B usable?
+
+- **It names one action tied to a stated finding, and it stops a build that this evidence does not support.** — A recommendation that also says what not to do is more useful, because it protects the team from acting on the assumption the study did not test.
+- Because it is longer and more detailed. — Length is not the virtue. Specificity tied to evidence is.
+- Because it mentions all three participants. — The count helps and the usefulness comes from naming an action and a non-action.
+
+**Then:** Write your own pair the same way: one step tied to a finding, one thing the evidence says to hold off.
+
+Worksheet fields for this step:
+
+- One recommended next step, tied to a specific finding
+- One thing the evidence says not to do — Usually something that was about to be built on an assumption this study did not support.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take your strongest finding and write the smallest action it justifies.
+
+Is it enough? The not-to-do names something someone was about to build.
+
+</details>
+
+#### 5. Anonymisation check and pause
+
+- Read the report as though you were a participant's colleague. Remove anything identifying, including distinctive quotations. Then save it, and file the raw material where it can be produced if questioned.
+
+**You should end up with:** The anonymisation check, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- What you removed after reading it as though you were a participant’s colleague — Job titles, unusual details, anything that identifies someone by combination.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+- **Identification by combination:** No single detail identifies someone, but three together do: their role, their city and the class they attended.
+
+Stuck starting? Read it as though you were a participant’s colleague looking for them.
+
+Is it enough? You removed at least one detail, or can say why nothing needed removing.
+
+</details>
+
+**Save and continue.** Saved for you: The report, limitations and recommendation save as you type, on this device first and then online. Kept outside the app: If you produce slides, keep them in your own folder and name them here. The anonymisation check applies to those too. What your creator sees: Your creator reads the findings, the limitations and the not-to-do. The limitations decide how much the rest can be trusted. Your next action: Open Your work and choose Ready for review. This closes the research module; the findings feed the structure work in the next one.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 

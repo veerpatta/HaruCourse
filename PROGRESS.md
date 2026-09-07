@@ -1,3 +1,15 @@
+# Module 5 given guided practice — 7 September 2026
+
+All thirteen research lessons now carry the beginner pattern: a route, a worksheet of 9 to 14 fields, one failure-first demonstration, one supplied case answered before feedback, three answer-first checks with a bounded repair, an `improvement-made` field and route-specific saving. Nine reveal repeated rows a few at a time.
+
+The audit's worry about this module was that it asks for professional research depth from someone who may have nobody to talk to. That is now answered in the interface rather than in prose. The interview, observation and diary lessons each carry an honest status choice where a dated recruitment gap plus the prepared instrument is a complete answer. The analysis lessons work from the course's supplied practice notes when a session has not happened. No lesson invents a participant, and the checks in three of them refuse to let supplied material be reported as research.
+
+The demonstrations lead with the mistake throughout: a brief turned into six agreeable questions, two of which changed nothing; four planned methods costed at forty hours and cut to two; a competitor tour replaced by one identical task; a screener that recruited people with a grievance; a consent introduction written to protect the researcher rather than inform the participant; an interview that flowed beautifully and recorded nine lines of the researcher's own suggestions; an observation where the setting, not the screen, explained the behaviour; a nine-question diary entry cut to four prompts; a fourteen-question survey cut to six; a theme that dissolved once a count and a decision were written beside it; a job statement written at the altitude of the current screens; a journey map that was twelve parts invention out of twenty-one; and a four-page report whose findings sat on page three.
+
+Checks: content, worksheet, both typechecks and build pass; main chunk 2,767.39 kB uncompressed, 802.17 kB gzip. All thirteen backend groups pass; no schema, storage or API change. In the browser with the test account, lessons 1, 6 and 13 show the visible teaching, the objective, the demonstration, the supplied case, the save route and three checks with no feedback before answering; a lesson 1 research question saved online at revision 1 and the reveal produced the next; nothing overflows at 320 px. Evidence: [docs/VERIFICATION-GUIDED.md](docs/VERIFICATION-GUIDED.md).
+
+Haru has still not used any lesson. Forty-eight lessons now follow a pattern no learner has tested. Next open stable ID in the audit register: m06-l01-v1.
+
 # Module 4 given guided practice — 7 September 2026
 
 All eight UX-reasoning lessons now carry the beginner pattern: a route, a worksheet of 10 to 16 fields, one failure-first demonstration, one supplied case answered before feedback, three answer-first checks with a bounded repair, an improvement-made field and route-specific saving. Five reveal repeated rows a few at a time. The audit warned that this module’s ideas are abstract, so one continuous made-up booking example carries all of them.
