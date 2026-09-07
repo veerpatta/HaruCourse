@@ -1,3 +1,7 @@
+## Latest agreed plan — 7 September 2026
+
+Read [docs/LEARNING-EXPERIENCE-PLAN.md](docs/LEARNING-EXPERIENCE-PLAN.md) after the authorities listed below. Implement the agreed guided practice, in-app worksheets, contextual help, optional verified video-action pairs and clearer work/resume flow one lesson at a time. Start with shared UI and `week1-day1-v1`; preserve the independent baseline. Keep browser-side exercises, bounded cloud saves and external video/file links within existing free allowances. Uploads, paid services and formal scored assessment are separate deferred work. Track refinement separately from publication and learner progress. This planning update does not implement features. All 224 teaching lessons are already published; refine them rather than treating later modules as unauthored.
+
 ## Practical apprenticeship refinement — 6 September 2026
 
 Use the activity authority in src/apprenticeship.ts and journey authority in src/journey.ts alongside the existing teaching. Every published lesson needs concrete workspace setup, a starter, hints, save instructions and an artifact handoff; the diagnostic gets no coaching or AI. AI rehearsals are optional, text-only and paired with a non-AI route. Keep future modules planned until authored. Generate workspace and portfolio documents with the lesson documents; see docs/COURSE-AUTHORING.md.

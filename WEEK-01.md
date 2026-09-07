@@ -1,5 +1,7 @@
 # Product Design Foundations
 
+> Experience refinement is planned lesson by lesson; it is not yet implemented. See [the agreed learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for guided practice, worksheets, videos, free-tier constraints and current refinement status. Existing teaching and diagnostic independence remain in force.
+
 Generated from src/lessons.ts and src/week2.ts. Legacy filename retained for existing links. Level 1 · Module 1. No deadlines; split any lesson across sessions.
 
 ## Lesson 1: From screens to product problems

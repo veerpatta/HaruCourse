@@ -1,5 +1,7 @@
 # Set up your workspace
 
+> Experience refinement is planned lesson by lesson; it is not yet implemented. See [the agreed learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for guided practice, worksheets, videos, free-tier constraints and current refinement status. Existing teaching and diagnostic independence remain in force.
+
 Generated from src/journey.ts.
 
 - In Documents, create HaruCourse with Practice, Projects and Evidence folders. Keep one folder per lesson inside Practice; keep each project inside Projects.

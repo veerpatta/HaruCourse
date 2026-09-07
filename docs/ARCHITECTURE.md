@@ -1,3 +1,9 @@
+## Planned learning experience architecture — 7 September 2026
+
+[LEARNING-EXPERIENCE-PLAN.md](LEARNING-EXPERIENCE-PLAN.md) defines the next milestone, not current behavior. Reuse the shared reader and authoritative lesson/activity/journey model for guided practice and context-specific help. Keep exercises and downloadable outputs in the browser. Editable worksheets need bounded account-scoped drafts integrated with current revision/conflict handling, backup/import/export and immutable submissions; document the schema before implementation. Step-resume state must not change existing section bookmark meaning or infer mastery.
+
+Preserve static-first asset routing and private API/auth cache exclusions. Direct click-to-load YouTube embeds need a written offline route. Begin My work improvements with text and external references; no file-upload storage or server-side AI is added by this plan. Preserve OAuth KV's current role. Monitor bundle growth and recheck actual account usage before claiming free-tier headroom. Existing architecture details below describe shipped behavior; the plan's ledger tracks future implementation.
+
 ## Minimal reader update — 6 September 2026
 
 - Learn and My work share LearningStudio and a single LessonReader, including the baseline; Course map expands levels/modules. Account contains utilities.
@@ -17,7 +23,7 @@ GET/PUT /api/learning-position is authenticated and always uses the signed-in us
 
 # Application architecture
 
-React, TypeScript, and Vite render the installable course PWA. Course material lives in `src/course.ts` and the root planning Markdown files. The baseline and Weeks 1–2 are published. The published lessons include teaching, examples, exercises, understanding checks, and per-lesson work records; later weeks remain planned.
+React, TypeScript, and Vite render the installable course PWA. Teaching lives in the authoritative TypeScript sources listed in COURSE-AUTHORING.md; course Markdown is generated. The baseline and 224 lessons across m01–m20 are published, including teaching, examples, exercises, understanding checks and per-lesson work records. Experience refinement remains a separate planned milestone.
 
 The service worker caches public app content. Authentication, API, OAuth consent, and MCP routes bypass the app shell and cache. Offline drafts remain in localStorage. JSON backup import validates data and downloads the previous draft before replacing it.
 
@@ -29,4 +35,4 @@ No server-side model calls are made. Design critique requires actual image evide
 
 The target remains zero additional cost within provider free allowances. Hosting is live at https://harucourse.raj-39e.workers.dev after explicit CLI deployment authorization; billing-plan visibility remains unavailable. See [setup and release prerequisites](CLOUD-SETUP.md). Local SDK/browser tests do not establish hosted availability, native device installation, or compatibility with the learner’s particular AI account.
 
-Next work: follow PROJECT-PLAN.md for mapped m03/m04 authoring, deeper assessment and remaining AI-client acceptance.
+Next work: follow PROJECT-PLAN.md and LEARNING-EXPERIENCE-PLAN.md for the shared UI/first-lesson pilot and sequential refinement. Formal scored assessment and remaining AI-client acceptance are not implied complete.

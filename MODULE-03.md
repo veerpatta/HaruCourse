@@ -1,5 +1,7 @@
 # Visual foundations refresh
 
+> Experience refinement is planned lesson by lesson; it is not yet implemented. See [the agreed learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for guided practice, worksheets, videos, free-tier constraints and current refinement status. Existing teaching and diagnostic independence remain in force.
+
 Generated from src/module3.ts; edit that source, then run npm run docs:generate. Level 1 · Module m03 · requirement areas 1, 8. Optional effort 20 hours across 10 lessons, which is the sum of the lesson steps themselves. No deadlines; split any lesson across sessions and return to it without penalty.
 
 Prerequisite: m01. This is guidance for meaningful practice, not a lock. Module approved resource pair: R03 / R06. Every resource restriction in RESOURCE-LIBRARY.md applies; required exercises never depend on a candidate tool workflow.

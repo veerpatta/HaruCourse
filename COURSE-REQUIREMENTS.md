@@ -1,3 +1,9 @@
+## Latest agreed refinement — guided learning, 7 September 2026
+
+The user approved [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md): practical step guidance, editable in-app worksheets, explicit practice destinations, optional verified videos paired with action, browser-based experiments, contextual help, examples that build independence, clearer My work and resume. Keep the cream/green/serif UI, existing navigation, course sequence, diagnostic independence and learner records. Implement lesson by lesson beginning with `week1-day1-v1` and the reusable UI it needs; observe the pilot with Haru before broad rollout when she is available. Candidate Hindi explanations, file uploads and formal scored review are not part of the first implementation.
+
+Zero additional hosting cost within existing free allowances is a design constraint, not a certified bill. Prefer browser computation, bounded text saves and direct YouTube/external work links; do not introduce hosted video, paid AI or paid services. The plan owns the delivery sequence, free-tier details and refinement ledger. New features remain planned until evidence is recorded in PROGRESS.md.
+
 ## Practical apprenticeship refinement — 6 September 2026
 
 The approved implementation adds concrete workspace setup, individually authored activity briefs, copyable starter templates, progressive hints, explicit save instructions and artifact handoffs to the baseline and the original 30 lessons. Integration on 7 September preserves the 194 later lessons now published on main; their workspace templates and handoffs derive from their existing authored tasks, free routes and criteria. The diagnostic remains independent, with an inventory template and no hints or AI coaching. Essential setup must remain visible; concise presentation must not remove actionable instructions.

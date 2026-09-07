@@ -1,5 +1,7 @@
 # Practical learning and portfolio path
 
+> Experience refinement is planned lesson by lesson; it is not yet implemented. See [the agreed learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for guided practice, worksheets, videos, free-tier constraints and current refinement status. Existing teaching and diagnostic independence remain in force.
+
 Generated from src/journey.ts. Briefs are available. Publication status is derived from the current module catalog below; published does not mean assessed.
 
 Choose one brief per pack after listing whom you can ethically reach. Record the choice and reason in Projects/project-N/brief.md. Keep source-log.md, decisions.md and case-study.md beside it. With no participants yet, continue desk research and clearly labelled design exploration, record the recruitment gap and postpone user-evidence claims. Do not invent quotes, findings or impact.

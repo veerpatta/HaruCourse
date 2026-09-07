@@ -1,5 +1,7 @@
 # Interface craft and design tools
 
+> Experience refinement is planned lesson by lesson; it is not yet implemented. See [the agreed learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for guided practice, worksheets, videos, free-tier constraints and current refinement status. Existing teaching and diagnostic independence remain in force.
+
 Generated from src/module8.ts; edit that source, then run npm run docs:generate. Level 3 · Module m08 · requirement areas 8. Optional effort 35 hours across 12 lessons: 24 hours of lesson steps, and the remainder for the fieldwork, waiting, recruitment and iteration this module's output needs outside them. No deadlines; split any lesson across sessions and return to it without penalty.
 
 Prerequisite: m03, m07. This is guidance for meaningful practice, not a lock. Module approved resource pair: R06 / R03. Every resource restriction in RESOURCE-LIBRARY.md applies; required exercises never depend on a candidate tool workflow.

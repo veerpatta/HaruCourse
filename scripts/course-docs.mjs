@@ -129,6 +129,10 @@ const catalog = [
     );
 }
 function output(path, text) {
+  // Keep generated course views connected to the plan without rewriting teaching.
+  const titleEnd = text.indexOf("\n");
+  const planNote = "\n\n> Experience refinement is planned lesson by lesson; it is not yet implemented. See [the agreed learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for guided practice, worksheets, videos, free-tier constraints and current refinement status. Existing teaching and diagnostic independence remain in force.";
+  text = text.slice(0, titleEnd) + planNote + text.slice(titleEnd);
   if (process.argv.includes("--check"))
     assert.equal(
       readFileSync(path, "utf8").replaceAll("\r\n", "\n"),

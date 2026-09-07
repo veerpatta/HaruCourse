@@ -1,3 +1,9 @@
+## Guided learning resource policy — 7 September 2026
+
+See [the agreed experience plan](docs/LEARNING-EXPERIENCE-PLAN.md). Add optional video-action pairs lesson by lesson, using one bounded relevant segment, exact URL/title/publisher, language/caption status, timestamps, what to notice, immediate exercise, interface differences, access restrictions and an original written alternative. Verify playback/segment separately from public text retrieval; verify authenticated free tool use through export separately again. Never invent timestamps. Existing R IDs and selections remain authoritative; update catalog/checker structure deliberately when adding resources.
+
+The Figma/NN-g/web.dev links in the plan are research candidates, not newly approved required assignments. Figma's auto-layout guide flags changed controls; its linked video's playback was not verified. Choose prerequisite-appropriate material for each lesson rather than adding a generic playlist. Use direct YouTube links or click-to-load embeds; do not proxy or host videos on Cloudflare. Offline exercises must have a written route. No new assigned resources were added by this planning update.
+
 ## Practical workflow evidence — 6 September 2026
 
 Reopened the official [Figma Starter overview](https://help.figma.com/hc/en-us/articles/13838684089751-Starter-plan-overview), [ChatGPT free-tier FAQ](https://help.openai.com/en/articles/9275245-using-chatgpt-s-free-tier-faq), [Gemini access limits](https://support.google.com/gemini/answer/16275805?hl=en) and [W3C contrast minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html). Public body text was retrieved. Figma confirms free Starter access with limitations; ChatGPT and Gemini document free text access and product-dependent limits. No named model, fixed quota or paid capability is required by the lessons.

@@ -1,3 +1,11 @@
+# Current milestone — guided learning refinement, 7 September 2026
+
+The active roadmap is [docs/LEARNING-EXPERIENCE-PLAN.md](docs/LEARNING-EXPERIENCE-PLAN.md). First implement the shared practice UI and `week1-day1-v1`, verify save/resume and beginner usability, then refine the existing lessons individually in prerequisite order. Do not batch-rewrite the curriculum. Track every lesson and the next stable ID in the plan ledger, with actual verification/release evidence in PROGRESS.md.
+
+Priorities: editable worksheets, visual step guidance, explicit practice route, contextual help and a verified relevant video plus action where useful. Browser-side activities and modest bounded text saves protect free allowances. File uploads and formal scored assessment remain later separately designed milestones. All 224 lessons are already published; publication does not establish refinement or mastery.
+
+Implementation has not begun in this documentation milestone. Earlier production queues below are historical and are superseded by this current milestone where they describe already-authored modules as future work.
+
 # Practical apprenticeship milestone — 6 September 2026
 
 Implement the approved baseline/30-lesson activity guidance, free workspace setup, optional copyable AI rehearsals, three two-choice project brief packs and the complete module artifact path. Preserve existing teaching, identities, records and bookmarks. Source authorities and future authoring requirements are in docs/COURSE-AUTHORING.md. Validation and release status are recorded in docs/VERIFICATION-APPRENTICESHIP.md and PROGRESS.md.

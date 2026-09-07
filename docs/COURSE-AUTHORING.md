@@ -1,3 +1,9 @@
+## Guided experience authoring refinement — 7 September 2026
+
+Apply [LEARNING-EXPERIENCE-PLAN.md](LEARNING-EXPERIENCE-PLAN.md) one lesson at a time, starting with `week1-day1-v1`. The plan owns improvement scope, cost constraints, delivery order and refinement ledger; this document remains the content/authority contract. Add clear practice destinations, manageable actions, adequate output examples, contextual help and original written equivalents for optional verified videos. Prefer editable ordinary-language worksheets over requiring Markdown syntax or handwritten SVG in introductory design work. Keep the diagnostic uncoached and AI optional, text-only and paired with non-AI work.
+
+New interaction/worksheet data must have one shared authority and additive compatible persistence when needed, including backups and account isolation. Do not add state as an undocumented second progress source. Preserve lesson IDs, record versions, section IDs and feedback associations. Shared UI improvement does not mark all lessons individually refined. The document generator inserts a plan reference into generated course views; generated teaching remains derived from the same lesson sources. Run existing content/build checks and meaningful persistence/browser checks when behavior changes.
+
 ## Integrated publication status — 7 September 2026
 
 The original 30 activities are individually authored in src/apprenticeship.ts. Later published modules retain their authoritative teaching and derive their workspace template, hints, adequate evidence and handoff from those tasks, criteria and free routes. All 224 published lessons now expose the common workspace contract. The module catalog alone determines publication status; never hard-code m05 onward as planned. This integration does not certify every free hosted tool or learner assessment.

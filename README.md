@@ -1,3 +1,7 @@
+## Current improvement plan — 7 September 2026
+
+[Guided learning experience plan](docs/LEARNING-EXPERIENCE-PLAN.md): improve the existing course lesson by lesson with clearer practice steps, editable worksheets, contextual help, optional verified videos, interactive exercises and easier save/resume. Preserve the established visual style and existing records. Start with shared UI and the first foundations lesson, then validate the pilot. Use browser-side exercises and bounded text synchronization within existing Cloudflare free allowances. This is a documented plan; new features are not yet implemented.
+
 ## Concise course experience
 
 - **Learn:** continue your saved lesson or choose a compact lesson row.
@@ -37,7 +41,7 @@ Cloudflare configuration validation: `npm.cmd run check:deploy`. Deployment comm
 ## Current app scope
 
 - Responsive Learn screen, expandable course map and saved-work list.
-- Baseline plus 30 published lessons across Modules 1–4; later modules clearly marked as planned.
+- Baseline plus 224 published lessons across Modules 1–20; experience refinement is a separate planned milestone.
 - Practice reflection, work reference, optional session timer, confidence and review-readiness, with local recovery and account synchronization.
 - Markdown review export and validated JSON backup import/export.
 - Install manifest and offline app shell/course content after a successful initial online load.
@@ -55,7 +59,7 @@ Personal course for a designer transitioning from Applied Arts, graphic design, 
 - Target: India plus international remote opportunities.
 - Delivery: installable Cloudflare app with local Markdown course views.
 - Pace: no deadline or daily requirement; two hours is optional session guidance.
-- Status: initial app foundation; curriculum planning continues and no learner assessments have been completed.
+- Status: all mapped teaching modules are authored; formal scored assessment software and the new experience refinement remain pending.
 
 ## Start here
 
@@ -63,7 +67,7 @@ Personal course for a designer transitioning from Applied Arts, graphic design, 
 2. [Baseline diagnostic](BASELINE-DIAGNOSTIC.md) — a diagnostic that can span sessions to personalize the plan.
 3. [Planning and progress record](PROGRESS.md) — decisions and next production steps.
 
-The blueprint is a planning estimate, not the complete daily curriculum. Lessons, resource library, tool exercises, and the full tracker will be produced in the next stages. Save assignment files alongside the course so future reviews can use actual evidence.
+The blueprint maps the published self-paced curriculum; effort estimates remain provisional. The resource library distinguishes verified reading from unverified tool workflows. Save assignment files alongside the course so future reviews can use actual evidence. The new plan improves the existing lessons without resetting them.
 
 ## Course authoring
 

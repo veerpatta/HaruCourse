@@ -1,3 +1,11 @@
+# Guided learning plan documented — 7 September 2026
+
+Recorded the approved next milestone in [docs/LEARNING-EXPERIENCE-PLAN.md](docs/LEARNING-EXPERIENCE-PLAN.md): shared practice UI and first-lesson pilot, editable worksheets, explicit practice routes, optional verified video-action pairs, contextual help, browser experiments, clearer work/resume and sequential lesson refinement. The plan separates later uploads/formal assessment from the initial free-tier implementation, includes Cloudflare constraints and official pricing references, and starts a refinement ledger distinct from publication and learner progress.
+
+Updated agent instructions, requirements, active project plan, resource policy, README, authoring, architecture and cloud setup. Corrected stale current summaries that described published modules as future work. The documentation generator now links the plan from all generated course/workspace/portfolio views without changing lesson teaching. Added [the reusable implementation prompt](docs/IMPLEMENTATION-PROMPT.md). Preserved COURSE-VISION-ORIGINAL.md and historical verification records.
+
+Checks: docs:generate and test:content pass; build passes. Existing large-chunk warning (main JavaScript about 2.30 MB uncompressed) and service-worker bundler deprecation warning remain. This is documentation/generator work only: no lesson interaction, backend schema, resource assignment, account data or Cloudflare binding changed. No browser study, hosted write QA, live billing/usage verification or deployment was performed. All planned experience features remain unimplemented; the next task is the shared UI plus week1-day1-v1 pilot.
+
 # Practical apprenticeship integration — 7 September 2026
 
 Merged the saved apprenticeship work with current main, preserving all 224 published lessons and upstream resource audits. The original 30 lessons have custom activity briefs; the later lessons derive workspace support from their authored tasks and criteria. Added copyable templates, optional free text-chat rehearsals with non-AI alternatives, workspace setup, three two-choice project brief packs, module artifact handoffs and an offline contrast calculator. Corrected one contrast example and section/bookmark remount behavior without changing storage schemas.

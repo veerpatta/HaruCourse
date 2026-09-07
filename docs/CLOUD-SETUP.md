@@ -1,3 +1,9 @@
+## Free-tier constraints for planned improvements — 7 September 2026
+
+Follow [LEARNING-EXPERIENCE-PLAN.md](LEARNING-EXPERIENCE-PLAN.md) for current official limit references and implementation boundaries. Retain static assets, existing Workers APIs, D1 and OAuth KV. Run exercises in the browser; save bounded text after a pause or explicit action; avoid per-keystroke requests and new polling. Use direct YouTube video delivery and external portfolio file references. No new bucket, video service, AI inference or billing-plan change is required for the pilot.
+
+Before a behavioral release, recheck provider limits and inspect account plan/usage where accessible, including other apps sharing allowances. Document inaccessible billing/usage evidence. Do not claim a verified zero bill from successful builds or configuration. Keep authentication and APIs outside public caches; test-account-only hosted writes and all existing secret/deployment rules still apply. This documentation milestone adds no bindings or migrations and does not deploy.
+
 # Cloud setup
 
 The full app runs locally without a paid service. Node/npm and Wrangler are installed through the project dependencies. Local keys below are test credentials only.
