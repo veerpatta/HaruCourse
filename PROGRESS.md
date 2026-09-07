@@ -1,3 +1,11 @@
+# Hidden teaching restored across m03-m07 — 7 September 2026
+
+The audit's largest single finding, fixed as one shared repair. The adapter that brings the legacy-shape modules into the reader put only the lesson objective in the visible Learn list and moved every authored teaching paragraph into the field the reader renders inside a "Why this works" disclosure. Fifty-six lessons across m03 to m07 opened with one sentence and hid 224 paragraphs of teaching, median 431 characters each, behind a click. The teaching is now in the visible path, the objective appears above it as "What you will produce", and the duplicate disclosure is gone.
+
+The generated Markdown is byte-identical: the text did not change, only where the app shows it. Content, worksheet, both typechecks and build pass; the browser check on m03, m05 and m07 shows four visible teaching paragraphs, the objective above them, no "Why this works" duplicate and no overflow at 320 px.
+
+This is a shared repair and it does not refine those lessons. All 56 still need their demonstration, supported attempt, active check and guided practice, and their audit rows stay open with that note.
+
 # Module 2 given guided practice — 7 September 2026
 
 Module 2 had no guided practice at all: all five lessons sent the learner to a text file with a seven-column table. Each of `week2-day1-v1` to `week2-day5-v1` now has a route, a worksheet sized to the evidence, one demonstration, one supplied case answered before feedback, three answer-first checks with a bounded repair, an `improvement-made` field and route-specific saving. Field counts are 17, 32, 20, 19 and 19, and each lesson opens with two to four fields rather than a full form.

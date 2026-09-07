@@ -432,6 +432,11 @@ export function LessonReader({
       >
         <h2>Learn</h2>
         <WorkspaceGuide />
+        {lesson.objective && (
+          <p className="lesson-objective">
+            <strong>What you will produce:</strong> {lesson.objective}
+          </p>
+        )}
         <p>
           <strong>Bring:</strong> {lesson.prerequisite}
         </p>

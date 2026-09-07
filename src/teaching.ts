@@ -200,8 +200,15 @@ export function withLegacyText(
 }
 
 export function adaptPublished(l: LegacyLesson): Lesson {
+  // The teaching goes in the visible path. This adapter used to show only the
+  // objective and push every authored paragraph into `explanation`, which the
+  // reader renders inside a "Why this works" disclosure: 56 lessons across
+  // m03-m07 opened with a single line and hid the lesson behind a click
+  // (docs/BEGINNER-LESSON-AUDIT.md, "core teaching hidden"). The objective is
+  // not lost — the reader shows it as what the lesson produces — and
+  // `explanation` is left empty so the same text is never printed twice.
   return {...l, prerequisite: l.bringForward || 'Bring the preceding lesson output.',
     outputs: [l.deliverable], repairs: (l.criteria || []).map(c => c.remediation),
-    explanation: l.teach, teach: [l.objective || l.why],
+    explanation: [], teach: l.teach,
     steps: l.steps.map(s => ({...s, instructions: [s.text]}))};
 }

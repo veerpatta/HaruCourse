@@ -1912,3 +1912,4 @@ select:focus-visible {
   .see-it, .try-help, .save-route { padding: 12px; }
   .update-notice .primary { width: 100%; }
 }
+.lesson-objective { padding: 10px 12px; background: #eeefdf; border-radius: 8px; }
