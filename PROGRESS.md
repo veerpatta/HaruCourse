@@ -8,7 +8,9 @@ One structural fix was needed: guided material now merges in both authoring path
 
 Checks: content, worksheet, both typechecks and build pass; main chunk 2,580.59 kB uncompressed, 750.36 kB gzip. All thirteen backend groups pass; no schema, storage or API change. In the browser with the test account, lessons 1, 4 and 10 show the restored visible teaching, the objective, the demonstration, the supplied case, the save route and three checks with no feedback before answering; a lesson 1 scale step saved online at revision 1 and the reveal produced the next step; nothing overflows at 320 px. Evidence: [docs/VERIFICATION-GUIDED.md](docs/VERIFICATION-GUIDED.md).
 
-Haru has still not used any lesson. Twenty-seven lessons now follow a pattern no learner has tested. Next open stable ID in the audit register: `m04-l01-v1`.
+Haru has still not used any lesson. Twenty-seven lessons now follow a pattern no learner has tested.
+
+Release state: commit cc9c9da is on main and deployed as Cloudflare version ec427973-d23f-47ef-803c-ebff45f8a1dc; no migration exists to apply. The hosted bundle matches the local build by SHA256 and carries the new material. Next open stable ID in the audit register: `m04-l01-v1`.
 
 # Hidden teaching restored across m03-m07 — 7 September 2026
 
