@@ -1,4 +1,5 @@
 import type { Apprenticeship, Lesson } from './teaching';
+import { milestones } from './journey';
 
 // Authored activity material, keyed by permanent lesson identity. The reader,
 // Markdown generator and MCP all receive the same enriched Lesson object.
@@ -302,7 +303,7 @@ export const activities: Record<string, Activity> = {
 
 export function withApprenticeship(l: Lesson): Lesson {
   const a = activities[l.id];
-  if (!a) throw new Error(`Missing apprenticeship activity: ${l.id}`);
+  if (!a) return withPublishedWorkspace(l);
   const file = `HaruCourse/Practice/${l.id}/work.md`;
   const starter = `# ${l.title}\n\nSource labels: real observation / hypothesis / simulation / self-pilot\n\n${a.columns}\n${a.columns.split('|').map(() => '---').join(' | ')}\n${a.first}\n\n## Output checklist\n${l.outputs.map(o => `- [ ] ${o}`).join('\n')}\n\n## Decision and revision\nMy decision:\nEvidence reference:\nAlternative rejected and why:\nBefore / after files:\nWhat remains untested:\nAI suggestion accepted or rejected and why (if used):\nNext action when I return:\n`;
   const apprenticeship: Apprenticeship = {
@@ -331,6 +332,38 @@ export function withApprenticeship(l: Lesson): Lesson {
     }} : {}),
   };
   return { ...l, apprenticeship };
+}
+
+// Later modules were authored on main while the original 30-lesson redesign
+// was in progress. Keep their authored task, free route, rubric and repairs;
+// derive workspace support from those authorities instead of inventing a
+// second assignment or dropping the newly published lessons during merge.
+function withPublishedWorkspace(l: Lesson): Lesson {
+  const module = l.module;
+  if (!module || !l.freeToolPath || !l.criteria?.length || !milestones[module]) throw new Error(`Missing activity or complete published contract: ${l.id}`);
+  const folder = `HaruCourse/Practice/${l.id}`;
+  const prompts = l.steps.map((s, i) => `## ${i + 1}. ${s.title}\n${s.instructions.map(t => '- ' + t).join('\n')}\n\nMy work / artifact reference:\nEvidence status and source:\nDecision and reason:\n`);
+  return { ...l, apprenticeship: {
+    activity: l.title,
+    mission: l.objective || l.why,
+    workspace: {
+      tools: l.freeToolPath,
+      setup: [
+        `Starting material: ${l.prerequisite}`,
+        `Create ${folder} in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.`,
+        'Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.',
+      ], file: `${folder}/work.md`,
+      save: [
+        `Save the filled note as ${folder}/work.md. Save each requested artifact with its task name in the same folder and list its exact filename in the note.`,
+        'Preserve the original, revision and any test observations separately. Export readable images or a PDF only where suitable; working prototypes also need their source files.',
+        'Add the artifact reference, decision, evidence limits and next action in Your work. A local path does not upload the work; share only anonymized artifacts when remote review is needed.',
+      ],
+    },
+    starter: `# ${l.title}\n\nInput artifact: ${l.prerequisite}\nSource labels: real observation / hypothesis / simulation / self-pilot\n\n## Output checklist\n${l.outputs.map(o => '- [ ] ' + o).join('\n')}\n\n${prompts.join('\n')}\n## Review and handoff\n${l.criteria.map(c => `- ${c.criterion}: [evidence reference]`).join('\n')}\nWhat remains untested:\nNext action when I return:\n`,
+    hints: [l.criteria[0].remediation, l.criteria.length > 1 ? l.criteria[1].remediation : l.misconception || l.repairs[0]],
+    adequate: l.criteria.map(c => `${c.criterion}: ${c.evidence}`).join(' '),
+    handoff: `${l.portfolio} Module handoff: ${milestones[module].later}`,
+  }};
 }
 
 export const diagnosticWorkspace: Apprenticeship = {

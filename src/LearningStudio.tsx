@@ -469,7 +469,7 @@ export function LessonReader({
             </li>
           ))}
         </ol>
-        {lesson.apprenticeship && <SaveHandoff activity={lesson.apprenticeship} />}
+        {lesson.apprenticeship && <SaveHandoff activity={lesson.apprenticeship} practiceOnly={!lesson.module || Number(lesson.module.slice(1)) <= 4} />}
         <p className="muted">
           Pause after any step. Save the artifact and your next action in Your
           work.

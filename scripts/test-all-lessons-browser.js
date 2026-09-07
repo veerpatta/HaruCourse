@@ -8,7 +8,7 @@ async (page) => {
   const session = await page.evaluate(async () => (await fetch('/api/session')).json());
   if (session.user?.id !== 'test') throw Error('Use the isolated test account');
   await page.getByRole('button',{name:'Learn',exact:true}).click();
-  for(const mod of ['1','2','3','4']) {
+  for(const mod of await page.getByRole('combobox',{name:'Browse a module',exact:true}).locator('option').evaluateAll(options => options.map(o => o.value))) {
     await page.getByRole('combobox',{name:'Browse a module',exact:true}).selectOption(mod);
     const count=await page.locator('.compact-list .lesson-row').count();
     for(let i=0;i<count;i++) {

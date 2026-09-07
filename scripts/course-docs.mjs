@@ -24,7 +24,7 @@ assert(contrastRatio('#767676', '#ffffff') >= 4.5);
 const { workspaceGuide, figmaGuide, milestones, projectPacks, projectStart, caseStudySections } = await import('../src/journey.ts');
 const catalog = readFileSync("RESOURCE-LIBRARY.md", "utf8");
 const ids = new Set([...catalog.matchAll(/^\| (R\d+) \|/gm)].map((m) => m[1]));
-assert.equal(ids.size, 49);
+assert.equal(ids.size, 69);
 const seen = new Set();
 for (const m of modules) {
   assert(!seen.has(m.id));
@@ -146,9 +146,12 @@ const authoredDetail = authored
       `${m.id} ${lessons.filter((l) => (l.module || `m0${l.week || 1}`) === m.id).length}`,
   )
   .join(", ");
+// m00, the baseline diagnostic, is deliberately outside the lesson files, so
+// it is excluded from the authored count rather than reported as a gap.
+const remaining = modules.length - authored.length - 1;
 output(
   "COURSE-BLUEPRINT.md",
-  `# Self-paced curriculum blueprint\n\nGenerated from src/modules.ts; edit that source, then run npm run docs:generate. See COURSE-REQUIREMENTS.md for the 17-area definitions and RESOURCE-LIBRARY.md for exact resources, verification and open gaps.\n\nLevels → Modules → Lessons. Learn → Do → Check → Your work uses concise instructions with optional detail. No completion deadline. Effort estimates are optional planning information, including iteration and project work. Two hours is a suggested session, not a daily commitment or gate. Navigation and readiness never establish mastery.\n\n| Module | Level | Title | Optional effort hours | Prerequisites | Areas | Primary / alternative | Status | Output |\n|---|---|---|---|---|---|---|---|---|\n${modules.map((m) => `| ${m.id} | ${m.level} | ${m.title} | ${m.hours} | ${m.prerequisites.join(", ") || "None"} | ${m.areas.join(", ")} | ${m.primary} / ${m.alternative} | ${m.status} | ${m.output} |`).join("\n")}\n\nTotal provisional effort: ${modules.reduce((n, m) => n + m.hours, 0)} hours. Published means available to study, not assessed complete. m00 is the baseline exercise; ${authored.length} modules carry ${lessons.length} authored lessons (${authoredDetail}). The remaining ${modules.length - authored.length - 1} modules are mapped, not yet authored.\n\nAt each module review, request artifacts, score the lesson criteria (0 absent, 1 needs help, 2 independent, 3 strong reasoning), identify a repair and recheck the revised artifact. m03 and m04 state those four scores and a bounded repair per criterion; the earlier modules carry criteria names only. Formal scored assessment software is still pending, so no score recorded anywhere is produced or stored by the app. No time-based lock is permitted. See docs/COURSE-AUTHORING.md for the full lesson contract and RESOURCE-LIBRARY.md for portfolio, tool, book, career and current-awareness programs.\n`,
+  `# Self-paced curriculum blueprint\n\nGenerated from src/modules.ts; edit that source, then run npm run docs:generate. See COURSE-REQUIREMENTS.md for the 17-area definitions and RESOURCE-LIBRARY.md for exact resources, verification and open gaps.\n\nLevels → Modules → Lessons. Learn → Do → Check → Your work uses concise instructions with optional detail. No completion deadline. Effort estimates are optional planning information, including iteration and project work. Two hours is a suggested session, not a daily commitment or gate. Navigation and readiness never establish mastery.\n\n| Module | Level | Title | Optional effort hours | Prerequisites | Areas | Primary / alternative | Status | Output |\n|---|---|---|---|---|---|---|---|---|\n${modules.map((m) => `| ${m.id} | ${m.level} | ${m.title} | ${m.hours} | ${m.prerequisites.join(", ") || "None"} | ${m.areas.join(", ")} | ${m.primary} / ${m.alternative} | ${m.status} | ${m.output} |`).join("\n")}\n\nTotal provisional effort: ${modules.reduce((n, m) => n + m.hours, 0)} hours. Published means available to study, not assessed complete. m00 is the baseline exercise; ${authored.length} modules carry ${lessons.length} authored lessons (${authoredDetail}). ${remaining === 0 ? "Every mapped module is now authored." : `The remaining ${remaining} ${remaining === 1 ? "module is" : "modules are"} mapped, not yet authored.`}\n\nAt each module review, request artifacts, score the lesson criteria (0 absent, 1 needs help, 2 independent, 3 strong reasoning), identify a repair and recheck the revised artifact. Every module authored under the lesson contract states those four scores and a bounded repair per criterion; m01 and m02 predate it and carry criteria names only. Formal scored assessment software is still pending, so no score recorded anywhere is produced or stored by the app. No time-based lock is permitted. See docs/COURSE-AUTHORING.md for the full lesson contract and RESOURCE-LIBRARY.md for portfolio, tool, book, career and current-awareness programs.\n`,
 );
 function list(items) {
   return items.map((s) => "- " + s).join("\n");
@@ -238,6 +241,31 @@ for (const l of [baselineLesson, ...lessons.filter(l => !l.module)]) {
   assert.equal(l.deliverable, l.outputs.join("; "));
   if (l.id !== baselineLesson.id) assert(readingSelections[l.resource.id]);
 }
+// Modules authored directly in the guided shape hold themselves to the same
+// concise standard as the rewritten legacy lessons. m03-m07 reach the app
+// through adaptPublished and keep their longer prose in `explanation`, so they
+// are exempt here by design rather than by oversight.
+for (const l of lessons.filter((l) => l.guided)) {
+  assert(
+    l.prerequisite && l.outputs.length && l.repairs.length,
+    `Guided lesson ${l.id} needs a prerequisite, outputs and repairs`,
+  );
+  assert(
+    l.teach.every((t) => t.length <= 240),
+    `Keep essential teaching concise: ${l.id}`,
+  );
+  assert(
+    l.outputs.every((t) => t.length <= 240),
+    `Keep each named output concise: ${l.id}`,
+  );
+  for (const s of l.steps) {
+    assert(s.instructions.length, `Guided step needs instructions: ${l.id}`);
+    assert(
+      s.instructions.every((t) => t.length <= 240),
+      `Keep each action concise: ${l.id} / ${s.title}`,
+    );
+  }
+}
 output(
   "BASELINE-DIAGNOSTIC.md",
   "# Starting-point diagnostic\n\nGenerated from src/course.ts. No preparation, deadline or pass/fail grade.\n\n" +
@@ -264,9 +292,21 @@ for (const module of modules) {
   const own = lessons.filter((l) => l.module === module.id);
   if (!own.length) continue;
   const source = `src/module${Number(module.id.slice(1))}.ts`;
+  // The module's hour estimate covers the fieldwork, waiting and iteration its
+  // output needs, not only the lesson steps. Where the two differ, say so:
+  // otherwise a reader divides hours by lessons and gets a per-lesson figure
+  // that contradicts every lesson's own step total.
+  const lessonHours =
+    own.reduce((n, l) => n + l.steps.reduce((a, s) => a + s.minutes, 0), 0) / 60;
+  const effort =
+    lessonHours === module.hours
+      ? `Optional effort ${module.hours} hours across ${own.length} lessons, which is the sum of the lesson steps themselves.`
+      : lessonHours < module.hours
+        ? `Optional effort ${module.hours} hours across ${own.length} lessons: ${lessonHours} hours of lesson steps, and the remainder for the fieldwork, waiting, recruitment and iteration this module's output needs outside them.`
+        : `Optional effort ${module.hours} hours across ${own.length} lessons, but the lesson steps alone come to ${lessonHours} hours: the module estimate is low and should be re-set from real pace rather than trusted.`;
   output(
     `MODULE-${module.id.slice(1)}.md`,
-    `# ${module.title}\n\nGenerated from ${source}; edit that source, then run npm run docs:generate. Level ${module.level} · Module ${module.id} · requirement areas ${module.areas.join(", ")}. Optional effort ${module.hours} hours across ${own.length} lessons. No deadlines; split any lesson across sessions and return to it without penalty.\n\nPrerequisite: ${module.prerequisites.join(", ") || "none"}. This is guidance for meaningful practice, not a lock. Module approved resource pair: ${module.primary} / ${module.alternative}. Every resource restriction in RESOURCE-LIBRARY.md applies; required exercises never depend on a candidate tool workflow.\n\nEach criterion below is scored ${scores.join(", ")}. A score is a review judgement about a submitted artifact; the app records practice and feedback but does not compute, store or display any score. Reading, navigation and elapsed time never establish mastery.\n\n` +
+    `# ${module.title}\n\nGenerated from ${source}; edit that source, then run npm run docs:generate. Level ${module.level} · Module ${module.id} · requirement areas ${module.areas.join(", ")}. ${effort} No deadlines; split any lesson across sessions and return to it without penalty.\n\nPrerequisite: ${module.prerequisites.join(", ") || "none"}. This is guidance for meaningful practice, not a lock. Module approved resource pair: ${module.primary} / ${module.alternative}. Every resource restriction in RESOURCE-LIBRARY.md applies; required exercises never depend on a candidate tool workflow.\n\nEach criterion below is scored ${scores.join(", ")}. A score is a review judgement about a submitted artifact; the app records practice and feedback but does not compute, store or display any score. Reading, navigation and elapsed time never establish mastery.\n\n` +
       own
         .map(
           (l) =>
@@ -276,7 +316,7 @@ for (const module of modules) {
   );
 }
 // All published lessons, including the diagnostic, must have a usable handoff.
-assert.equal(Object.keys(activities).length, lessons.length);
+for (const id of Object.keys(activities)) assert(lessons.some(l => l.id === id), `Orphan authored activity ${id}`);
 for (const l of [baselineLesson, ...lessons]) {
   const a = l.apprenticeship;
   assert(a?.mission && a.activity && a.adequate && a.handoff, `Incomplete activity ${l.id}`);
@@ -294,7 +334,7 @@ for (const p of projectPacks) {
   for (const c of p.choices) assert(c.context && c.users && c.access && c.constraints && c.questions.length);
 }
 output('WORKSPACE-GUIDE.md', '# Set up your workspace\n\nGenerated from src/journey.ts.\n\n' + list(workspaceGuide) + '\n\n## Optional Figma Starter route\n\n' + list(figmaGuide) + '\n');
-output('PORTFOLIO-PATH.md', '# Practical learning and portfolio path\n\nGenerated from src/journey.ts. Briefs are available; m05 onward lessons remain planned.\n\n' + projectStart + '\n\n' + projectPacks.map(p => `## ${p.title} (${p.modules})\n\n${p.choices.map(c => `### ${c.title}\n\n${c.context}\n\nPeople: ${c.users}\n\nAccess: ${c.access}\n\nConstraints: ${c.constraints}\n\n${list(c.questions)}`).join('\n\n')}\n\n### Milestone fragments\n\n${list(p.milestones)}`).join('\n\n') + '\n\n## Case-study sections\n\n' + list(caseStudySections) + '\n\n## Full module handoffs\n\n' + modules.map(m => { const j = milestones[m.id]; return `### ${m.id}: ${m.title} (${m.status})\n\nStart: ${j.start}\n\nChallenge: ${j.challenge}\n\nTools: ${j.tools}\n\nSave: ${j.save}\n\nLater use: ${j.later}`; }).join('\n\n') + '\n');
+output('PORTFOLIO-PATH.md', '# Practical learning and portfolio path\n\nGenerated from src/journey.ts. Briefs are available. Publication status is derived from the current module catalog below; published does not mean assessed.\n\n' + projectStart + '\n\n' + projectPacks.map(p => `## ${p.title} (${p.modules})\n\n${p.choices.map(c => `### ${c.title}\n\n${c.context}\n\nPeople: ${c.users}\n\nAccess: ${c.access}\n\nConstraints: ${c.constraints}\n\n${list(c.questions)}`).join('\n\n')}\n\n### Milestone fragments\n\n${list(p.milestones)}`).join('\n\n') + '\n\n## Case-study sections\n\n' + list(caseStudySections) + '\n\n## Full module handoffs\n\n' + modules.map(m => { const j = milestones[m.id]; return `### ${m.id}: ${m.title} (${m.status})\n\nStart: ${j.start}\n\nChallenge: ${j.challenge}\n\nTools: ${j.tools}\n\nSave: ${j.save}\n\nLater use: ${j.later}`; }).join('\n\n') + '\n');
 console.log(
   "Course coverage, prerequisite order, resource IDs, lesson contract fields and generated documents checked.",
 );

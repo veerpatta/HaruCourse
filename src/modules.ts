@@ -70,7 +70,7 @@ export const modules = [
     alternative: "R04",
     output:
       "Desk and competitive research, interviews, observation, survey/diary plan, JTBD and journey",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m06",
@@ -82,7 +82,7 @@ export const modules = [
     primary: "R09",
     alternative: "R10",
     output: "Taxonomy, sitemap, card sort and manual tree test",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m07",
@@ -94,7 +94,7 @@ export const modules = [
     primary: "R11",
     alternative: "R12",
     output: "Onboarding, search, permissions, checkout and failure paths",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m08",
@@ -106,7 +106,7 @@ export const modules = [
     primary: "R06",
     alternative: "R03",
     output: "Responsive UI, content, grids and local components",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m09",
@@ -119,7 +119,7 @@ export const modules = [
     alternative: "R02",
     output:
       "State transitions, keyboard behavior and reduced-motion alternative",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m10",
@@ -131,7 +131,7 @@ export const modules = [
     primary: "R12",
     alternative: "R05",
     output: "Low to high fidelity prototype, test and evidence-led revision",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m11",
@@ -143,7 +143,7 @@ export const modules = [
     primary: "R14",
     alternative: "R10",
     output: "Forms, contrast, focus, semantics and assistive-technology checks",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m12",
@@ -155,7 +155,7 @@ export const modules = [
     primary: "R15",
     alternative: "R16",
     output: "Local HTML/CSS/JS prototype with responsive and error states",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m13",
@@ -167,7 +167,7 @@ export const modules = [
     primary: "R17",
     alternative: "R06",
     output: "Tokens, components, variants, documentation and version change",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m14",
@@ -179,7 +179,7 @@ export const modules = [
     primary: "R18",
     alternative: "R19",
     output: "Stories, acceptance criteria, handoff and design QA",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m15",
@@ -191,7 +191,7 @@ export const modules = [
     primary: "R20",
     alternative: "R07",
     output: "Metric tree, funnel, experiment and uncertainty report",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m16",
@@ -204,7 +204,7 @@ export const modules = [
     alternative: "R19",
     output:
       "Human control, uncertainty, failure, privacy and evaluation prototype",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m17",
@@ -217,7 +217,7 @@ export const modules = [
     alternative: "R07",
     output:
       "B2B roles, consumer tradeoffs, service blueprint and stakeholder decisions",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m18",
@@ -230,7 +230,7 @@ export const modules = [
     alternative: "R22",
     output:
       "End-to-end third project with critique, repair and measured limitations",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m19",
@@ -242,7 +242,7 @@ export const modules = [
     primary: "R22",
     alternative: "R23",
     output: "Three evidence-based case studies and presentation",
-    status: "planned",
+    status: "published",
   },
   {
     id: "m20",
@@ -255,6 +255,6 @@ export const modules = [
     alternative: "R22",
     output:
       "Role evidence matrix, resume, profile, outreach drafts and interview practice",
-    status: "planned",
+    status: "published",
   },
 ];

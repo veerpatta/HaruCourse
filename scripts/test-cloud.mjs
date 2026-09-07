@@ -5,7 +5,10 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 
 // Integration tests intentionally run against local disposable data only.
-const base = "http://127.0.0.1:8787";
+// 8787 is held by an unrelated dev server on at least one development
+// machine, so the port is overridable rather than hard-coded; probing the
+// wrong server silently produced discarded evidence once already.
+const base = process.env.HARU_TEST_BASE || "http://127.0.0.1:8787";
 const keys = JSON.parse(
   readFileSync(".test-secrets/login-credentials.json", "utf8"),
 );

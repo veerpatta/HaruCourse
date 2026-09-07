@@ -46,6 +46,15 @@ export default defineConfig({
       },
       injectManifest: {
         globPatterns: ["**/*.{js,css,html,png,svg,webmanifest}"],
+        // The lessons are the app: every module is authored as TypeScript and
+        // bundled, so the main chunk grew past Workbox's 2 MiB default as the
+        // curriculum was written. Precaching it is the point — the course has
+        // to open on a phone with no connection — so the limit is raised
+        // rather than the content being dropped from the precache. The cost is
+        // a large first download and a slower parse on a low-end phone, which
+        // is a real trade and worth revisiting by splitting the modules into
+        // per-module chunks that are precached individually.
+        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         // The plugin already injects the manifest and the icons it references;
         // globbing them again only duplicated the precache entries.
         globIgnores: ["manifest.webmanifest", "icon-192.png", "icon-512.png"],

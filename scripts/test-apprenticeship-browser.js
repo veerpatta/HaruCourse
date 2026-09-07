@@ -7,6 +7,7 @@ async (page) => {
     await page.getByRole('textbox', {name:'Username',exact:true}).fill('test');
     await page.getByRole('button', {name:'Sign in',exact:true}).click();
   }
+  await page.getByRole('button', {name:'Learn',exact:true}).waitFor();
   const session = await page.evaluate(async () => (await fetch('/api/session')).json());
   if (session.user?.id !== 'test') throw Error('Use the isolated test account');
   await page.getByRole('button', {name:'Learn',exact:true}).click();
@@ -57,7 +58,7 @@ async (page) => {
   await page.context().setOffline(false);
   await page.getByRole('button',{name:'Course map',exact:true}).click();
   await page.getByText('Your three-project portfolio path',{exact:true}).click();
-  assert(await page.getByText('Briefs are ready to explore;', {exact:false}).isVisible(),'Portfolio map distinguishes briefs from unpublished lessons');
+  assert(await page.getByText('Briefs are ready to explore.', {exact:false}).isVisible(),'Portfolio map explains current publication and practice status');
   for(const width of [320,390,1280]) {
     await page.setViewportSize({width,height:900});
     await page.locator('.portfolio-path details').evaluateAll(nodes=>nodes.forEach(n=>n.open=true));

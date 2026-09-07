@@ -1,6 +1,6 @@
 # Practical learning and portfolio path
 
-Generated from src/journey.ts. Briefs are available; m05 onward lessons remain planned.
+Generated from src/journey.ts. Briefs are available. Publication status is derived from the current module catalog below; published does not mean assessed.
 
 Choose one brief per pack after listing whom you can ethically reach. Record the choice and reason in Projects/project-N/brief.md. Keep source-log.md, decisions.md and case-study.md beside it. With no participants yet, continue desk research and clearly labelled design exploration, record the recruitment gap and postpone user-evidence claims. Do not invent quotes, findings or impact.
 
@@ -188,7 +188,7 @@ Save: Needs, costs and a smallest-test brief
 
 Later use: Choose a reachable Project 1 audience in m05
 
-### m05: Research methods and synthesis (planned)
+### m05: Research methods and synthesis (published)
 
 Start: Practice evidence bank and participant-access inventory
 
@@ -200,7 +200,7 @@ Save: Research plan, source log, synthesis and problem fragment
 
 Later use: Inform m06 structure; recruitment gaps stay visible
 
-### m06: Information architecture (planned)
+### m06: Information architecture (published)
 
 Start: Project 1 findings and content
 
@@ -212,7 +212,7 @@ Save: Taxonomy, alternatives and findability observations
 
 Later use: Build task flows in m07
 
-### m07: Flows and wireframes (planned)
+### m07: Flows and wireframes (published)
 
 Start: Project 1 information structure
 
@@ -224,7 +224,7 @@ Save: Flows, wireframes and rejected alternatives
 
 Later use: Build the interface in m08
 
-### m08: Interface craft and design tools (planned)
+### m08: Interface craft and design tools (published)
 
 Start: Project 1 wireframes and m03 craft evidence
 
@@ -236,7 +236,7 @@ Save: UI states, layout decisions and editable source
 
 Later use: Support interaction and accessibility in m09–m11
 
-### m09: Interaction and motion (planned)
+### m09: Interaction and motion (published)
 
 Start: Project 1 UI states
 
@@ -248,7 +248,7 @@ Save: Transitions, feedback and reduced-motion intent
 
 Later use: Choose prototype fidelity in m10
 
-### m10: Prototyping and evaluation (planned)
+### m10: Prototyping and evaluation (published)
 
 Start: Project 1 interactions
 
@@ -260,7 +260,7 @@ Save: Consented test notes and revision fragment
 
 Later use: Bring unresolved issues to m11
 
-### m11: Accessible product design (planned)
+### m11: Accessible product design (published)
 
 Start: Project 1 UI and test evidence
 
@@ -272,7 +272,7 @@ Save: Accessibility evidence and Project 1 draft case study
 
 Later use: Transfer learning to responsive web Project 2
 
-### m12: Web foundations and responsive behavior (planned)
+### m12: Web foundations and responsive behavior (published)
 
 Start: Project 1 reflection and a new reachable audience
 
@@ -284,7 +284,7 @@ Save: Responsive prototype and problem/evidence fragment
 
 Later use: Extract reusable decisions in m13
 
-### m13: Design systems (planned)
+### m13: Design systems (published)
 
 Start: Project 2 responsive prototype
 
@@ -296,7 +296,7 @@ Save: System, usage rules, states and change history
 
 Later use: Prepare delivery in m14
 
-### m14: Delivery and collaboration (planned)
+### m14: Delivery and collaboration (published)
 
 Start: Project 2 prototype and system
 
@@ -308,7 +308,7 @@ Save: Handoff packet, QA findings and revisions
 
 Later use: Define measurement questions in m15
 
-### m15: Analytics and experiments (planned)
+### m15: Analytics and experiments (published)
 
 Start: Project 2 goals and QA evidence
 
@@ -320,7 +320,7 @@ Save: Metric tree, uncertainty report and Project 2 draft
 
 Later use: Avoid unsupported impact claims in all case studies
 
-### m16: AI-assisted work and AI products (planned)
+### m16: AI-assisted work and AI products (published)
 
 Start: Two project reflections and a new audience
 
@@ -332,7 +332,7 @@ Save: Problem brief, evaluation scenarios and control design
 
 Later use: Expand roles and service constraints in m17
 
-### m17: Strategy and complex systems (planned)
+### m17: Strategy and complex systems (published)
 
 Start: Project 3 initial design and research questions
 
@@ -344,7 +344,7 @@ Save: Role matrix, service blueprint and strategic choices
 
 Later use: Scope independent delivery in m18
 
-### m18: Independent product project (planned)
+### m18: Independent product project (published)
 
 Start: Project 3 scoped brief and evidence
 
@@ -356,7 +356,7 @@ Save: Third project evidence, iteration and draft case study
 
 Later use: Curate all three projects in m19
 
-### m19: Portfolio and storytelling (planned)
+### m19: Portfolio and storytelling (published)
 
 Start: Three draft case studies and evidence banks
 
@@ -368,7 +368,7 @@ Save: Three case studies and portfolio presentation
 
 Later use: Tailor evidence to real roles in m20
 
-### m20: India and remote career preparation (planned)
+### m20: India and remote career preparation (published)
 
 Start: Portfolio and current role evidence
 

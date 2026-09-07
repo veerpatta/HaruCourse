@@ -1,6 +1,6 @@
 # UX reasoning and product value
 
-Generated from src/module4.ts; edit that source, then run npm run docs:generate. Level 1 · Module m04 · requirement areas 2, 3. Optional effort 16 hours across 8 lessons. No deadlines; split any lesson across sessions and return to it without penalty.
+Generated from src/module4.ts; edit that source, then run npm run docs:generate. Level 1 · Module m04 · requirement areas 2, 3. Optional effort 16 hours across 8 lessons, which is the sum of the lesson steps themselves. No deadlines; split any lesson across sessions and return to it without penalty.
 
 Prerequisite: m02. This is guidance for meaningful practice, not a lock. Module approved resource pair: R02 / R07. Every resource restriction in RESOURCE-LIBRARY.md applies; required exercises never depend on a candidate tool workflow.
 

@@ -1,6 +1,22 @@
 import { module3 } from './module3';
 import { withApprenticeship } from './apprenticeship';
 import { module4 } from './module4';
+import { module5 } from './module5';
+import { module6 } from './module6';
+import { module7 } from './module7';
+import { module8 } from './module8';
+import { module9 } from './module9';
+import { module10 } from './module10';
+import { module11 } from './module11';
+import { module12 } from './module12';
+import { module13 } from './module13';
+import { module14 } from './module14';
+import { module15 } from './module15';
+import { module16 } from './module16';
+import { module17 } from './module17';
+import { module18 } from './module18';
+import { module19 } from './module19';
+import { module20 } from './module20';
 import { modules } from './modules';
 import { adaptPublished, type Lesson } from './teaching';
 import { week2 } from "./week2";
@@ -675,7 +691,28 @@ const week1 = [
     ],
   },
 ];
-export const lessons = [...week1.map(withLegacyText), ...week2, ...module3.map(adaptPublished), ...module4.map(adaptPublished)].map(withApprenticeship);
+export const lessons = [
+  ...week1.map(withLegacyText),
+  ...week2,
+  ...module3.map(adaptPublished),
+  ...module4.map(adaptPublished),
+  ...module5.map(adaptPublished),
+  ...module6.map(adaptPublished),
+  ...module7.map(adaptPublished),
+  ...module8,
+  ...module9,
+  ...module10,
+  ...module11,
+  ...module12,
+  ...module13,
+  ...module14,
+  ...module15,
+  ...module16,
+  ...module17,
+  ...module18,
+  ...module19,
+  ...module20,
+].map(withApprenticeship);
 
 // A lesson's owning module. Legacy lessons predate the `module` field and are
 // identified by their compatibility week number instead.

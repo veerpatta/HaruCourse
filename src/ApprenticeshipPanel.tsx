@@ -2,6 +2,7 @@ import { contrastRatio } from './contrast';
 import { useState } from 'react';
 import type { Apprenticeship } from './teaching';
 import { workspaceGuide, figmaGuide, milestones, projectPacks, projectStart, caseStudySections } from './journey';
+import { modules } from './modules';
 
 export function CopyMaterial({ title, text, label }: { title: string; text: string; label: string }) {
   const [status, setStatus] = useState('');
@@ -42,12 +43,12 @@ export function ApprenticeshipPanel({ activity, contrast = false }: { activity: 
   </section>;
 }
 
-export function SaveHandoff({ activity }: { activity: Apprenticeship }) {
+export function SaveHandoff({ activity, practiceOnly }: { activity: Apprenticeship; practiceOnly: boolean }) {
   return <section className="save-handoff"><h3>Save and bring forward</h3>
     <ul>{activity.workspace.save.map(s => <li key={s}>{s}</li>)}</ul>
     <p><strong>Adequate evidence:</strong> {activity.adequate}</p>
     <p><strong>Next use:</strong> {activity.handoff}</p>
-    <p>Foundation work builds an evidence bank. A useful practice artifact is not automatically a finished portfolio case study.</p>
+    {practiceOnly && <p>Foundation work builds an evidence bank. A useful practice artifact is not automatically a finished portfolio case study.</p>}
   </section>;
 }
 
@@ -62,7 +63,7 @@ export function JourneyMilestone({ id }: { id: string }) {
 
 export function PortfolioPath() {
   return <details className="portfolio-path"><summary>Your three-project portfolio path</summary>
-    <p>Briefs are ready to explore; detailed lessons from m05 onward are still planned. Foundation exercises remain practice.</p>
+    <p>Briefs are ready to explore. {modules.filter(m => m.status === 'published').length} modules including the baseline are published; the Course map shows any remaining planned work. Foundation exercises remain practice.</p>
     <p>{projectStart}</p>
     {projectPacks.map(pack => <details key={pack.id}><summary>{pack.title} · {pack.modules}</summary>
       <p>Choose one of these two briefs. Keep the choice and your reasons in your external project notebook.</p>
