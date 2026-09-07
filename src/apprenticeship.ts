@@ -38,9 +38,9 @@ const evidenceRows = (count: number): WorksheetField[] => Array.from({ length: c
 
 const detectiveWorksheet: WorksheetSection[] = [
   { id: 'words', title: 'Three sentences in your own words', intro: 'Short is fine. These are for you, not for a reviewer.', fields: [
-    { id: 'define-product-design', label: 'Product design is…', kind: 'short', hint: 'Try: what it connects, and for whom.', example: 'Example (made up): Product design is deciding what a service should help someone do, and shaping it so it actually works for them.' },
-    { id: 'define-ux', label: 'UX is…', kind: 'short', hint: 'The whole task, from first need to finished.' },
-    { id: 'define-ui', label: 'UI is…', kind: 'short', hint: 'The controls and the presentation on the screen.' },
+    { id: 'define-product-design', label: 'Product design is…', kind: 'short', hint: 'Try: what it decides, and who it is for.', example: 'Example (made up): Product design is deciding what a service should help someone do, and shaping it so it actually works for them.' },
+    { id: 'define-ux', label: 'UX is…', kind: 'short', hint: 'The whole task, from the moment somebody needs something to the moment it is done.' },
+    { id: 'define-ui', label: 'UI is…', kind: 'short', hint: 'The buttons, words and layout a person actually looks at.' },
   ] },
   { id: 'walkthrough', title: 'Your walkthrough', intro: 'One app you already use, one task, stopping before any booking or payment.', fields: [
     { id: 'app', label: 'The app', kind: 'short', hint: 'Any app that lists events, shows, classes or bookings.' },
@@ -51,13 +51,13 @@ const detectiveWorksheet: WorksheetSection[] = [
   { id: 'evidence', title: 'Evidence table: five entries', intro: 'One entry for each thing you noticed. Label it honestly; unknown is a good label.', fields: [
     ...evidenceRows(5),
     { id: 'user-goal', label: 'The user goal, without naming a screen or button', kind: 'short', hint: 'What does the person need to have happened by the end?', example: 'Example (made up): Know which class fits Saturday and whether there is a place left.' },
-    { id: 'business-goal', label: 'One possible business goal', kind: 'short', hint: 'A guess is fine; label it as one in your head.', example: 'Example (made up): More bookings completed on the first visit.' },
+    { id: 'business-goal', label: 'One thing the company behind the app probably wants', kind: 'short', hint: 'The app is run by someone who needs it to work for them too: more bookings, fewer phone calls, fewer refunds. A guess is fine here.', example: 'Example (made up): more people finishing a booking on their first visit, so staff answer fewer questions by phone.' },
   ] },
   { id: 'compare', title: 'Two improvements and how to check them', intro: 'One about looks, one about how the task behaves. Each needs an observation that would show whether it helped.', fields: [
     { id: 'visual-improvement', label: 'A visual improvement', kind: 'short', example: 'Example (made up): Make the date and price the same size as the class title.' },
-    { id: 'visual-check', label: 'What would show whether it helped?', kind: 'short', hint: 'Something you could watch or count, not an opinion.' },
+    { id: 'visual-check', label: 'How would you know the look change helped?', kind: 'short', hint: 'Name something you could watch someone do. “It looks better” is not something you can watch.' },
     { id: 'behavior-improvement', label: 'A change to how the task behaves', kind: 'short', hint: 'Not colour or size: what happens, in what order, or what the app remembers.', example: 'Example (made up): Ask for the date before showing results, so sold-out classes are hidden.' },
-    { id: 'behavior-check', label: 'What would show whether it helped?', kind: 'short' },
+    { id: 'behavior-check', label: 'How would you know the behaviour change helped?', kind: 'short', hint: 'Again, something you could watch. It should be possible for the answer to be no.' },
   ] },
   { id: 'reflect', title: 'Reflect', fields: [
     { id: 'open-question', label: 'One question you could not answer from the screen', kind: 'short', example: 'Example (made up): Do other people notice the sponsored results, or only me?' },
@@ -158,18 +158,50 @@ const detectiveGuide: GuideStep[] = [
       tradeoff: 'Splitting one thought into three lines is slower and can feel pedantic. It pays off when someone asks “how do you know?”, because the answer is already written down.',
       uncertainty: 'Still unknown: whether the sponsored cards affect what anyone books. One walkthrough by one person cannot show that.',
     },
-    supported: {
-      material: 'Here is a line from someone else’s notes, before any labelling. They walked through the app themselves and did not speak to anyone: “The date picker opens on today, so people have to scroll forward to next Saturday and some of them give up.”',
-      question: 'How should this one line be split before it goes in the table?',
-      options: [
-        { label: 'Observed: the picker opens on today. Inferred: people give up. That second part needs checking.', correct: true, feedback: 'The first half is on the screen and anyone could confirm it. The second half is a claim about other people that this walkthrough cannot support — so it goes under inferred with a way to check it.' },
-        { label: 'All observed: they watched it happen while using the app.', feedback: 'They watched themselves. Nothing in a solo walkthrough shows what other people do, so “some of them give up” cannot be observed here.' },
-        { label: 'All inferred: the whole line is an opinion until someone else confirms it.', feedback: 'Too cautious, and it loses something useful. That the picker opens on today is a fact about the screen; keeping it under observed is what makes the guess beside it checkable.' },
-        { label: 'Unknown: nobody has data on drop-off, so it cannot be used.', feedback: 'Unknown is for things the screen cannot tell you and you have no reading of. Here half the line is visible fact and the other half is a reading, so “unknown” would throw away both.' },
+    sorter: {
+      intro: 'Six lines from someone else’s notes, all made up for practice. She walked through a class-booking app on her own and spoke to nobody. Label each line the way you would label your own.',
+      options: ['observed', 'inferred', 'unknown'],
+      items: [
+        { id: 'sponsored', text: 'The first two cards in the list say “Sponsored” in small grey letters.', answer: 'observed',
+          feedback: {
+            observed: 'You could point at it. Anyone opening the same screen would see the same two cards, which is what makes it observed.',
+            inferred: 'Nothing is being worked out here. The words are on the screen, so this one is simply seen.',
+            unknown: 'The screen answers this completely. Unknown is for things it cannot tell you.',
+          } },
+        { id: 'skip', text: 'People skip past the sponsored cards without reading them.', answer: 'inferred',
+          feedback: {
+            observed: 'She only watched herself. What other people do is never visible from one person’s walkthrough, however likely it feels.',
+            inferred: 'That is the honest label. It may well be true, and it is her reading of other people rather than something she saw.',
+            unknown: 'She does have a reading here, so inferred keeps it visible as something to go and check. Unknown would throw the idea away.',
+          } },
+        { id: 'price', text: 'The total price is not shown until the payment step.', answer: 'observed',
+          feedback: {
+            observed: 'She followed the task and the price appeared where it appeared. That is a fact about the screens.',
+            inferred: 'No interpretation is involved. She reached the payment step and saw where the number first arrived.',
+            unknown: 'She walked the whole task, so this one is settled.',
+          } },
+        { id: 'tricked', text: 'The late price makes people feel tricked.', answer: 'inferred',
+          feedback: {
+            observed: 'Feelings belong to other people, and nobody was asked. The late price is observed; how it lands is not.',
+            inferred: 'A reasonable reading, and still a reading. Written down as inferred, it becomes a question worth asking someone.',
+            unknown: 'She has a clear guess, so inferred is more useful. It says what to check rather than giving up on it.',
+          } },
+        { id: 'refund', text: 'Whether the class can be cancelled for a refund.', answer: 'unknown',
+          feedback: {
+            observed: 'Nothing on the screens said this. If it had, she could point at it.',
+            inferred: 'Inferred means she has a reading of it. Here she has nothing at all to read, only a blank.',
+            unknown: 'The screen never mentions it and she has no idea either way. Naming that blank is the whole point of the label.',
+          } },
+        { id: 'picker', text: 'The date picker is confusing.', answer: 'inferred',
+          feedback: {
+            observed: 'Confusing is a judgement, not a thing on the screen. What she could point at is that the picker opens on today.',
+            inferred: 'A judgement of her own, which is what inferred means. It is worth splitting too: write what the picker does, then keep “confusing” as her reading of it.',
+            unknown: 'She used the picker, so she is not without information. This is her conclusion about it.',
+          } },
       ],
-      then: 'Do the same to your own first entry: put the part you could point to in “What I saw or did”, and let the label carry your reading of why.',
+      then: 'Now do the same with your own first entry. Put the part you could point at in “What I saw or did”, and let the label carry your reading of why.',
+      pattern: 'Look back at the two hardest lines, skipping the cards and feeling tricked. In both, half the sentence is on the screen and half is about somebody else. The sponsored cards are there to see; the skipping is not. The late price is there to see; the feeling is not.',
     },
-    example: 'Example (made up, not your research): “Sponsored results appear above the class I searched for” is observed. “People probably skip them” is inferred. “Whether anyone books a sponsored class” is unknown.',
     terms: [
       { term: 'Observed', meaning: 'You saw it or did it. You could point to it on the screen.' },
       { term: 'Inferred', meaning: 'Your reading of why something is there or how others behave. It may be right; it is not yet evidence.' },
@@ -179,6 +211,19 @@ const detectiveGuide: GuideStep[] = [
     enough: 'At least one entry is inferred or unknown. If all five are observed, you have not yet written down a guess, and everyone has guesses.' },
   { expect: 'Two improvements, one visual and one about behaviour, each with an observation that would show whether it helped.',
     fields: ['visual-improvement', 'visual-check', 'behavior-improvement', 'behavior-check'],
+    demo: {
+      scenario: 'Made-up example. Writing the “how would I know?” line for one improvement, and throwing the first version away.',
+      beats: [
+        { label: 'The improvement', text: 'Show the total cost, including materials, on the class card instead of at the payment step.' },
+        { label: 'What I wrote first', text: '“I would know it helped because people would like it more.” I was pleased with it for about a minute.' },
+        { label: 'Why it is useless', text: 'There is no version of the world where I could see that. Whatever happened next, I could read it as people liking it more.' },
+        { label: 'What I changed it to', text: 'Ask two people to find what Saturday’s class would cost them in total, and watch whether they go to the payment step to find out.' },
+        { label: 'What makes that different', text: 'It could come out badly. If they still go to payment, the change did not do its job, and I will have to admit it.' },
+      ],
+      wrongTurn: 'The wrong turn is a check that cannot fail. “People would like it more” sounds like a measure and quietly guarantees a pass.',
+      tradeoff: 'The watchable version is narrower and slightly awkward to arrange. It is the only kind that can tell you that you were wrong.',
+      uncertainty: 'Still unknown: whether finding the cost faster makes anyone more likely to book. That is a much bigger question than this check.',
+    },
     terms: [
       { term: 'Hypothesis', meaning: 'A change you believe would help, stated so that something you could see would prove it wrong.' },
       { term: 'Behaviour improvement', meaning: 'A change in what the app does, asks or remembers, rather than how it looks.' },
@@ -1529,14 +1574,14 @@ const observing: Guided = {
 export const activities: Record<string, Activity> = {
   'week1-day1-v1': {
     activity: 'Design detective',
-    mission: 'Investigate finding an event in an app you already use. Stop before booking or payment. Follow one task, not the whole app.',
+    mission: 'Follow one task in an app you already use, such as finding a class or an event. Stop before booking or paying. One task, not the whole app.',
     columns: 'Step | What I saw or did | Observed / inferred / unknown | Goal affected | How to check',
     first: '1 | [name the starting page and action] | [choose a label] | [goal] | [missing evidence]',
-    hints: ['An observation describes something you can point to on screen. It does not explain why other people behave that way.', 'If you wrote “people are confused,” replace it with the exact label or behavior you noticed, then put confusion under inferred.'],
-    adequate: 'Five traceable entries distinguish your own walkthrough from claims about other users; both proposed improvements name a way to check them.',
-    handoff: 'Bring this table to problem framing. If you investigated another domain, keep it as practice and begin the workshop brief separately; do not transfer its findings.',
+    hints: ['If you can point at it on the screen, it is observed. Why anybody behaves a certain way is never on the screen.', 'If you wrote “people are confused”, write down the exact words or the step you saw instead, and keep confusion as your reading of it.'],
+    adequate: 'Five entries where anyone can tell which parts came from your own walkthrough and which are your reading of other people. Both improvements say how you would know they helped.',
+    handoff: 'Keep this table. Lesson 2 starts from it. If you followed a task outside the course brief, keep it as practice and start the brief separately rather than carrying these findings across.',
     coach: 'Ask me to defend one evidence label at a time. Spot an unsupported assumption without rewriting my table.',
-    alternative: 'Cover the label column. Re-label each entry and explain which entries another observer could verify.',
+    alternative: 'Cover the label column. Label each entry again, then say which ones somebody else could check for themselves.',
     route: {
       recommended: 'Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.',
       alternative: 'Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.',

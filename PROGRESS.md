@@ -1,3 +1,17 @@
+# Lesson one rewritten and given an evidence sorter — 7 September 2026
+
+The creator judged lesson one good but unfinished, and asked for plainer English and more to practise on. Both are done, and nothing else changed.
+
+Every sentence a learner reads in `week1-day1-v1` was rewritten. The lesson used to open with "Product design connects a user goal to a usable, viable service" and used UX and UI without ever expanding them. It now opens by telling her that her eye already knows when a screen looks right and that this lesson adds the other half. UX and UI are spelled out where they first appear. Observed, inferred and unknown are introduced in Learn, so she meets the lesson's central distinction before step 3 asks her to use it rather than during it. "Viable" is gone. The two improvement checks, which both read "What would show whether it helped?" and printed twice in the downloadable copy, now say which change they are about.
+
+Step 3 practises that distinction six times instead of once. Six supplied, explicitly made-up note lines are each labelled observed, inferred or unknown, and every label on every line has its own explanation, so a plausible wrong answer teaches rather than just failing. It replaced the single supported case, which became its first line, and a step example that repeated the demonstration. Step 4 gained a demonstration of an unfalsifiable "how would I know?" line being thrown away. Nothing in the sorter is saved, marked or scored.
+
+`GuideStep.sorter` is available to any lesson, and the content checker holds it to the same standard as the supported case: material labelled made up, three to eight lines, an answer from the offered labels, an explanation for every label, and no feedback that repeats the verdict the interface already shows. A refined lesson must now carry one of the two before it asks for unaided work.
+
+Checks: content, worksheet, both typechecks and build pass; only `WEEK-01.md` changed among generated documents; main chunk 2,773.52 kB uncompressed, 804.18 kB gzip, 6.13 kB above the last release. All thirteen backend groups pass; no schema, storage or API change. The lesson was read back at runtime as well as built, which is the check that caught a whole module rendering nothing earlier in this work. In the browser with the test account: the sorter gives per-line feedback only after a choice and corrects itself when the answer changes, the closing observation waits for all six, the practice record is byte-identical before and after answering them, a worksheet answer saved online and survived a reload with the reveal intact, and nothing overflows at 320 or 390 px with 44 px option rows and a visible focus ring. No screenshots: the browser pane would not paint while the window was hidden. Evidence: [docs/VERIFICATION-GUIDED.md](docs/VERIFICATION-GUIDED.md).
+
+Haru has still not used lesson one. That remains the open item on its audit row, and it is the thing that should decide whether this sorter and this language standard spread to the other lessons.
+
 # Module 5 given guided practice — 7 September 2026
 
 All thirteen research lessons now carry the beginner pattern: a route, a worksheet of 9 to 14 fields, one failure-first demonstration, one supplied case answered before feedback, three answer-first checks with a bounded repair, an `improvement-made` field and route-specific saving. Nine reveal repeated rows a few at a time.
