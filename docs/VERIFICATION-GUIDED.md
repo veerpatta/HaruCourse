@@ -1,3 +1,11 @@
+# Module 4 given guided practice — 7 September 2026
+
+All eight lessons carry the pattern: a route, a worksheet of 10 to 16 fields, one demonstration, one supplied case, three answer-first checks with a bounded repair, an improvement-made field and route-specific saving. Five reveal repeated rows a few at a time. One continuous made-up booking example carries the module’s abstract ideas, which is what the audit asked for.
+
+Checks: docs:generate, test:content, test:worksheet, both typechecks and build pass; main chunk 2,658.42 kB uncompressed, 771.75 kB gzip. All thirteen backend groups pass; no schema, storage or API changed. In the browser with the test account, lessons 1, 5 and 8 render the visible teaching, the objective, the demonstration, the supplied case, the save block with no generic file list, and three checks with no feedback before answering; each opens with one to three fields; a lesson 1 contradiction saved online at revision 1 and the reveal produced the next; nothing overflows at 320 px. Lessons 2, 3, 4, 6 and 7 were verified through the content checker and a runtime read of their shape.
+
+Release: commit 3d064fb deployed 7 September 2026 as Cloudflare version 0575f532-d39f-4f62-94f0-6c8d5bc0f09a. Hosted probe with cache-busting: served index-D7OCSS4n.js is 2,658,428 bytes, SHA256 ede28391ed11dee6bcc827c17a3563850ac192225b89b46fd5fd0f98288d4b5b, identical to the local build; health 0.2.0. Haru has not used any of it.
+
 # Module 3 given guided practice — 7 September 2026
 
 All ten m03 lessons carry the pattern: a paper-first route, a worksheet of 10 to 16 fields, one demonstration, one supplied case, three answer-first checks with a bounded repair, an `improvement-made` field and route-specific saving. Seven reveal repeated rows a few at a time. The audit asked that visual measurement be teachable without assuming HTML, CSS or token knowledge, so every measurement is a count taken on paper with a ruler, and lesson 4 uses the offline contrast calculator that already existed in that lesson.

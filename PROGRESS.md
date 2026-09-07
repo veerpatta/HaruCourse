@@ -6,7 +6,7 @@ The demonstrations again lead with the mistake: a reader’s mental model writte
 
 Checks: content, worksheet, both typechecks and build pass; main chunk 2,658.42 kB uncompressed, 771.75 kB gzip. All thirteen backend groups pass; no schema, storage or API change. In the browser with the test account, lessons 1, 5 and 8 show the visible teaching, the objective, the demonstration, the supplied case, the save route and three checks with no feedback before answering; a lesson 1 contradiction saved online at revision 1 and the reveal produced the next; nothing overflows at 320 px. Evidence: [docs/VERIFICATION-GUIDED.md](docs/VERIFICATION-GUIDED.md).
 
-Haru has still not used any lesson. Thirty-five lessons now follow a pattern no learner has tested. Next open stable ID in the audit register: m05-l01-v1.
+Haru has still not used any lesson. Thirty-five lessons now follow a pattern no learner has tested. Release state: commit 3d064fb is on main and deployed as Cloudflare version 0575f532-d39f-4f62-94f0-6c8d5bc0f09a; no migration exists to apply. The hosted bundle is 2,658,428 bytes with SHA256 ede28391...4b5b, identical to the local build, and carries the m04 demonstrations. Next open stable ID in the audit register: m05-l01-v1.
 
 # Module 3 given guided practice — 7 September 2026
 
