@@ -1,3 +1,13 @@
+# Module 4 given guided practice — 7 September 2026
+
+All eight UX-reasoning lessons now carry the beginner pattern: a route, a worksheet of 10 to 16 fields, one failure-first demonstration, one supplied case answered before feedback, three answer-first checks with a bounded repair, an improvement-made field and route-specific saving. Five reveal repeated rows a few at a time. The audit warned that this module’s ideas are abstract, so one continuous made-up booking example carries all of them.
+
+The demonstrations again lead with the mistake: a reader’s mental model written from the designer’s own understanding and corrected from session notes; a memory audit that found nothing until arrows were drawn from where information appears to where it is needed; an inventory whose feedback column was blank, and why filling it would have hidden the finding; a failure classified as a slip because slips are comfortable, then reclassified as a mistake from what the participant said; Hick’s law applied to options that were not interchangeable, removing the only evening classes; a request rewritten while quietly keeping the solution inside it; a baseline written as “there is no way to do this” and corrected to the workaround it must actually beat; and a three-week build cut to a printed card that tests the assumption underneath it.
+
+Checks: content, worksheet, both typechecks and build pass; main chunk 2,658.42 kB uncompressed, 771.75 kB gzip. All thirteen backend groups pass; no schema, storage or API change. In the browser with the test account, lessons 1, 5 and 8 show the visible teaching, the objective, the demonstration, the supplied case, the save route and three checks with no feedback before answering; a lesson 1 contradiction saved online at revision 1 and the reveal produced the next; nothing overflows at 320 px. Evidence: [docs/VERIFICATION-GUIDED.md](docs/VERIFICATION-GUIDED.md).
+
+Haru has still not used any lesson. Thirty-five lessons now follow a pattern no learner has tested. Next open stable ID in the audit register: m05-l01-v1.
+
 # Module 3 given guided practice — 7 September 2026
 
 All ten visual-foundations lessons now carry the beginner pattern. Each has a paper-first route, a worksheet of 10 to 16 fields, one failure-first demonstration, one supplied case answered before feedback, three answer-first checks with a bounded repair, an `improvement-made` field and route-specific saving. Seven of the ten reveal repeated rows a few at a time. Nothing assumes HTML, CSS or token knowledge: measurements are counts on paper, and lesson 4 uses the offline contrast calculator that was already there.

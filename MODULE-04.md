@@ -38,39 +38,161 @@ On the workshop service, several people expected “my bookings” to include wo
 
 Compare what someone may expect in your workshop flow with what the interface actually does. Separate observed expectations from your hypotheses.
 
-**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
 
 - Starting material: Your Module 2 findings, hypothesis and the revision you made after testing. The contradictions you find here should be grounded in what you observed there, not invented.
 - Create HaruCourse/Practice/m04-l01-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 
+</details>
+
+#### 1. Read and extract
+
+- Read the assigned article. Write, in your own words, the difference between the model a reader brings and the conceptual model an interface communicates.
+
+**You should end up with:** Your own sentence distinguishing the reader’s model from the model your design implies.
+
+Worksheet fields for this step:
+
+- The difference between the model a reader brings and the model your design implies
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Mental models and the model you are actually building
+- **Mental model:** What a person already believes about how something works, built from everything else they have used.
+- **Conceptual model:** What your design implies is true, whether or not you intended it. The labels and structure make the claim.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Read the assigned article and write the difference as you would explain it to a friend.
 
-Situation | Expected behavior | Evidence / hypothesis | Actual design behavior | Mismatch | Revision / test
---- | --- | --- | --- | --- | ---
-[point in flow] | [expectation] | [source] | [specified response] | [difference] | [next action]
-
-## Output checklist
-- [ ] The reader's model with each line marked observed or assumed, your design's implied model in its real labels, three named contradictions with consequences, and one conform-or-teach decision with its cost.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Neither sentence uses the word “user” as a way of avoiding saying who.
 
 </details>
+
+#### 2. Write the reader's model
+
+**See it first.** Made-up example. Writing the reader’s model for a class booking, and catching myself writing my own.
+
+- **My first attempt:** “She understands that Reserve starts a booking and that payment comes later.” Confident, tidy, and entirely mine.
+- **Where it came from:** I designed the flow, so I know payment comes later. Nothing a first-time reader sees on that screen tells her so.
+- **What my session notes actually held:** One participant asked, before pressing anything, “does this charge me now?” That is the only real evidence I have about this belief.
+- **What I wrote instead:** She expects Reserve might charge immediately, and hesitates because the screen does not say. Marked: reported, one participant.
+- **Why the difference matters:** The first version had no contradiction to find. The second one names the exact gap the next step is looking for.
+
+**The wrong turn:** The wrong turn is writing your own understanding and labelling it the reader’s. It produces a model with no friction in it, which is the one thing it cannot be.
+
+**What it costs:** The honest version is shorter and thinner, because most of what you believe about the reader is unevidenced. That thinness is the finding.
+
+**Still unknown:** Still unknown: whether other people share that hesitation. One participant cannot say how common it is.
+
+- For one task in your Module 2 work, write what you believe a first-time reader assumes: where things live, what an action will do, what happens next. Mark each line as observed in your testing or assumed.
+
+**You should end up with:** One task, what a first-time reader assumes, and which parts you actually observed.
+
+Worksheet fields for this step:
+
+- The one task you are examining
+- Where they expect things to live, what they expect an action to do, and what they expect to happen next — Write it as beliefs, not as complaints.
+- Which parts of that came from your Module 2 sessions, and which are your guess — Mark each line observed, reported or assumed.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Open your Module 2 notes before writing anything, and take the beliefs from there.
+
+Is it enough? Every line is marked observed, reported or assumed, and at least one is assumed.
+
+</details>
+
+#### 3. Write your design's model
+
+- Write what your design actually implies, using its real labels and structure. Do not soften it; write what the interface says, not what you meant.
+
+**You should end up with:** What the interface actually claims, in its own labels.
+
+Worksheet fields for this step:
+
+- Using its real labels and structure, what does the interface say is true? — Do not soften it. Write what the labels claim, not what you meant.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read your screen aloud as if the labels were promises, and write down what they promise.
+
+Is it enough? You wrote at least one thing the design implies that you did not intend.
+
+</details>
+
+#### 4. Find the contradictions
+
+- Place the two side by side and identify three specific contradictions. For each, note the consequence for the reader and whether you saw it happen or are predicting it.
+
+**You should end up with:** Three contradictions, each with the consequence for the reader.
+
+**Try it with help.** A supplied pair from the same made-up project. Reader’s model: “the list shows classes near me.” Design’s model: the list shows all classes in the city, ordered by the studio’s promotion agreement.
+
+What is the consequence worth writing down?
+
+- **She judges distance from the order, so she may travel across the city believing it was the closest option.** — The consequence is a wrong action taken confidently, which is the expensive kind. Ordering carries a meaning nobody declared.
+- The list is not sorted the way she expects, which is mildly confusing. — “Mildly confusing” is a feeling, not a consequence. Name what she does because of the mismatch.
+- The promotion agreement is unfair to other studios. — That may be true and it is a business ethics question, not a contradiction between two models of how the thing works.
+- She will learn the real order after using it a few times. — Possibly, and the first time is where the cost lands. Design for the first time and record what the learning costs.
+
+**Then:** Write each of your own contradictions the same way: what she believes, what the design does, and what she does because of the gap.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Contradiction 1 · what disagrees, and what it costs the reader
+- Contradiction 2 · what disagrees, and what it costs the reader
+- Contradiction 3 · what disagrees, and what it costs the reader
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Put the two lists side by side and look for the first line where they disagree.
+
+Is it enough? Each consequence names something the reader does, not how they feel.
+
+</details>
+
+#### 5. Choose and record
+
+- For one contradiction, decide whether to conform or to teach, and write the cost of your choice. Save all three artefacts.
+
+**You should end up with:** One decision to conform or teach, its cost, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- For one contradiction: will you change the design to match the expectation, or teach the reader the new model?
+- What that choice costs — Teaching costs attention and is often ignored. Conforming can cost a feature you wanted.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+- **Conform or teach:** Either change the design to match what people already believe, or accept that you must teach them something new and pay the cost of doing it.
+
+Stuck starting? Take the contradiction with the worst consequence and ask which is cheaper: changing the design, or changing the reader.
+
+Is it enough? The cost is written down even if you chose the easier option.
+
+</details>
+
+**Save and continue.** Saved for you: Both models, the contradictions and your decision save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. Keep your Module 2 notes to hand; the evidence marks depend on them. What your creator sees: Your creator reads both models and the contradictions. The evidence marks are what show whether the reader’s model came from sessions or from you. Your next action: Open Your work and choose Ready for review. The next lesson audits the same flow for everything it asks the reader to remember.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -232,40 +354,164 @@ A booking flow asked for a reference code on screen four that had been shown on 
 
 Stop halfway through the flow, hide the preceding screen and resume. Identify information you must remember, then redesign two demands as visible choices or context.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Draw the flow with arrows from where information appears to where it is needed on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: The flow you tested in Module 2 and the mental-model contradictions from the previous lesson.
 - Create HaruCourse/Practice/m04-l02-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Read and separate the two modes
+
+- Read the assigned article. Write three places in any product you use where recognition is offered and three where recall is demanded.
+
+**You should end up with:** Three examples of each mode from products you actually use.
+
+Worksheet fields for this step:
+
+- Three places in products you use where the answer is shown to you
+- Three places where you have to produce it from memory
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Recognition, recall and what you are asking people to remember
+- **Recognition:** The answer is in front of you and you pick it. Far easier and far more reliable.
+- **Recall:** You must produce the answer from memory with no cue. Fragile, and it fails completely under interruption.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Open two apps on your phone and look for a field you have to fill from memory.
 
-Step | Information needed | Visible / remembered | Interruption consequence | Proposed cue | Trade-off
---- | --- | --- | --- | --- | ---
-[step] | [detail] | [mode] | [risk] | [cue] | [cost]
-
-## Output checklist
-- [ ] A memory-demand audit naming each demand and its two screens, interruption marks, two demands converted to recognition with their costs, and one unremovable demand with its justification.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? The examples are specific screens, not categories of app.
 
 </details>
+
+#### 2. Audit your flow
+
+**See it first.** Made-up example. Auditing a booking flow for what it asks people to carry.
+
+- **What I looked for first:** Form fields. There were only two, so I concluded the flow made almost no memory demands.
+- **What I missed:** The materials list appears on the details screen and is never shown again. To pack for the class she must remember it from a screen she saw last week.
+- **The second one:** The class start time appears before booking and not on the confirmation. She has to hold it, or go back and find the class again.
+- **How I found them:** I drew an arrow from where each piece of information appears to where it is actually needed. Every long arrow is a demand.
+- **What that changed:** The confirmation screen went from a thank-you to a summary: date, time, address and what to bring, all shown rather than remembered.
+
+**The wrong turn:** The wrong turn is looking only at input fields. Most memory demands are about information the design showed once and then took away.
+
+**What it costs:** Showing everything again costs space on the confirmation screen, which had been pleasantly minimal. Minimal is not the goal; being able to act is.
+
+**Still unknown:** Still unknown: whether people go back to find the materials list or simply guess. Worth watching in a session.
+
+- Walk your flow screen by screen. List everything the reader must remember, carry forward, or produce without a cue. Note which screen created the demand and which one collects it.
+
+**You should end up with:** Every demand your flow makes, naming the screen where the information appears and the screen where it is needed.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Demand 1 · what must be remembered, from which screen to which
+- Demand 2 · what must be remembered, from which screen to which
+- Demand 3 · what must be remembered, from which screen to which
+- Demand 4 · what must be remembered, from which screen to which
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Lay your screens in order and draw an arrow wherever information is needed later than it appears.
+
+Is it enough? Each demand names two screens, not one.
+
+</details>
+
+#### 3. Add the interruption
+
+- For each demand, ask what happens if the reader is interrupted for ten minutes between the two screens. Mark the demands that do not survive it.
+
+**You should end up with:** What happens to each demand under a ten-minute interruption.
+
+Worksheet fields for this step:
+
+- For each demand: what happens if the reader is interrupted between the two screens? — A phone call, a child, a bus stop. Mark which demands fail.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Interruption test:** Asking what survives ten minutes of real life between two screens. It separates a mild demand from a broken one.
+
+Stuck starting? Take each demand and imagine the phone ringing between the two screens.
+
+Is it enough? At least one demand is marked as failing.
+
+</details>
+
+#### 4. Convert two demands
+
+- Choose two demands — ideally the two that fail interruption — and redesign them into recognition: show the value, offer a list, or remove the need entirely. Record what each change costs in space or steps.
+
+**You should end up with:** Two demands converted into recognition, with their costs.
+
+**Try it with help.** A supplied demand from the same made-up flow: the reader chooses a class on one screen, and three screens later must type the class name into a “which class?” field to confirm.
+
+Which conversion actually removes the memory demand?
+
+- **Show the chosen class name and time on the confirming screen, with an option to change it.** — The answer is now in front of her and she checks rather than produces. The change option keeps her in control without asking her to remember.
+- Add a hint under the field reading “the class you selected earlier”. — That names what to remember without supplying it. The demand is unchanged.
+- Add a confirmation dialogue asking “are you sure this is the right class?” — She still has no way to check. Confirming something you cannot verify is not a check.
+- Let her open the class list in a new tab to look it up. — Better than nothing and it moves the work to her: she must leave the task, find the class and come back holding the answer.
+
+**Then:** Convert your own two demands by showing the value where it is needed, not by labelling what should be remembered.
+
+Worksheet fields for this step:
+
+- Conversion 1 · the demand, and how the value is now shown or offered
+- Conversion 2 · the demand, and how the value is now shown or offered
+- What each conversion costs, in space or complexity
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the demands that failed the interruption test first.
+
+Is it enough? In both conversions the reader can see the answer at the moment it is needed.
+
+</details>
+
+#### 5. Record and pause
+
+- Save the audit table, the interruption marks and the two conversions. Note one demand you could not remove and why.
+
+**You should end up with:** One demand you could not remove, where the flow lives, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- One demand you could not remove, and why
+- Where the annotated flow lives
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Look for something only the reader knows, such as a password or a personal preference.
+
+Is it enough? The reason names why showing it is impossible or wrong, not merely inconvenient.
+
+</details>
+
+**Save and continue.** Saved for you: The audit, the interruption results and your conversions save as you type, on this device first and then online. Kept outside the app: The annotated flow with its arrows stays on paper or in your own folder. Name it here so the drawing and the table stay together. What your creator sees: Your creator reads the demands, the interruption marks and the conversions. The unremovable one is the interesting entry. Your next action: Open Your work and choose Ready for review. The next lesson inventories what each control affords, signals and confirms.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -416,40 +662,164 @@ A workshop card had its whole surface clickable, with the title in body-text col
 
 Inventory controls and trace action to response. Find one that looks usable but gives unclear feedback, then specify a repair for touch and keyboard intent.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Draw the screen with three columns written beside each control on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: Your flow and the memory-demand audit. Use the same screens so the analysis accumulates.
 - Create HaruCourse/Practice/m04-l03-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Read and define
+
+- Read the assigned article's opening sections. Write your own one-line definitions of affordance, signifier and the two gulfs, with a screen example of each.
+
+**You should end up with:** One-line definitions in your own words.
+
+Worksheet fields for this step:
+
+- Affordance, signifier, and feedback — One line each, without using the other two words.
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Affordances, signifiers and feedback
+- **Affordance:** What the thing makes possible: a button affords pressing, a text field affords typing.
+- **Signifier:** What tells the reader the affordance exists. Without it the possibility is invisible.
+- **Feedback:** What tells the reader the action happened, and what happened.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Write the three sentences before looking at your screen, so the inventory is not shaped to fit them.
 
-Control | Possible action | Signifier | Feedback | Touch behavior | Repair | Tested / specified
---- | --- | --- | --- | --- | --- | ---
-[control] | [action] | [cue] | [response] | [no hover assumption] | [change] | [label]
-
-## Output checklist
-- [ ] A three-column affordance, signifier and feedback inventory with blanks left visible, touch-availability marks, and two repairs each stating what the reader can now tell.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Each sentence could be understood by someone who has not read the article.
 
 </details>
+
+#### 2. Inventory the controls
+
+**See it first.** Made-up example. Inventorying a booking screen and finding the empty column.
+
+- **What I expected to find:** A few weak signifiers. My buttons look like buttons, so I thought the inventory would be quick and reassuring.
+- **The first two rows:** Reserve: affords holding a place, signalled by a filled rectangle with a verb, feedback… I stopped there.
+- **What was in the feedback column:** Nothing. Pressing Reserve does nothing visible until the next screen appears, which on a slow connection can take seconds.
+- **Why I nearly filled it in:** I wrote “the next screen appears” and deleted it. That is the result arriving, not feedback that the press registered.
+- **What the blank told me:** This is why people press twice. The blank was the finding, and filling it in would have hidden it.
+
+**The wrong turn:** The wrong turn is filling every cell because an empty table looks unfinished. The empty cells are the entire value of the exercise.
+
+**What it costs:** Leaving blanks makes the inventory look sparse and unimpressive. It is what makes the next step obvious.
+
+**Still unknown:** Still unknown: how long the wait actually is on a slow connection. Worth measuring before deciding what the feedback should be.
+
+- For every interactive element on your screen, write three columns: what it affords, what signifies that, and what feedback follows the action. Leave cells blank where nothing exists — blanks are the finding.
+
+**You should end up with:** Every interactive element inventoried across all three columns, with blanks left as blanks.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Control 1 · affords / signalled by / feedback — Leave a column blank if there is nothing there. A blank is a finding.
+- Control 2 · affords / signalled by / feedback
+- Control 3 · affords / signalled by / feedback
+- Control 4 · affords / signalled by / feedback
+- Control 5 · affords / signalled by / feedback
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Print the screen and write three short columns beside each control.
+
+Is it enough? At least one cell is blank and stayed blank.
+
+</details>
+
+#### 3. Test on touch
+
+- Check every signifier that depends on hover or a cursor change. Mark each as unavailable on touch, and note what remains for a reader on a phone.
+
+**You should end up with:** Every hover-dependent signifier marked, with what remains on touch.
+
+Worksheet fields for this step:
+
+- Every signifier that needs hover or a cursor change, and what remains without it — Hover does not exist on a phone, which is where much of your audience will be.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Touch:** No hover, no cursor change, and a fingertip roughly the size of a small coin. Anything signalled only by pointer behaviour does not exist there.
+
+Stuck starting? Go through the inventory and mark anything that only appears when a mouse is over it.
+
+Is it enough? Each marked item says what a touch reader sees instead.
+
+</details>
+
+#### 4. Repair the weakest
+
+- Choose the control with the weakest signifier and the one with the weakest feedback. Repair both, writing what a reader can now tell that they could not before.
+
+**You should end up with:** The weakest signifier and the weakest feedback repaired, each stating what the reader can now tell.
+
+**Try it with help.** A supplied row from the same made-up screen: a link in body text reading “see what to bring”, styled in the same colour and weight as the surrounding text, underlined only on hover.
+
+What is the smallest sound repair?
+
+- **Give it a persistent underline, so it is identifiable as a link without a pointer.** — It restores the signifier on every device without adding anything new to the screen, and it is the convention readers already know.
+- Change its colour so it stands out from the body text. — Better than nothing and colour alone is exactly the failure the colour lesson warned about. It also fails in greyscale.
+- Turn it into a button so it is obviously interactive. — A button is a much heavier element for an inline reference and changes the reading of the sentence around it.
+- Add a hint elsewhere saying which words are links. — That asks the reader to hold a rule in mind, which is precisely the memory demand the previous lesson was removing.
+
+**Then:** Repair your own weakest signifier the same way: restore the cue where the reader is, without adding a new element.
+
+Worksheet fields for this step:
+
+- The weakest signifier · what you changed, and what the reader can now tell before acting
+- The weakest feedback · what you changed, and what the reader can now tell after acting
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Pick the control whose signifier column was thinnest, then the one whose feedback column was blank.
+
+Is it enough? Each repair says what the reader can tell that they could not before.
+
+</details>
+
+#### 5. Record and pause
+
+- Save the three-column inventory with its blanks, the touch marks, and the two repairs. Note any signifier you removed for visual reasons and what it cost.
+
+**You should end up with:** Any signifier removed for tidiness, where the screen lives, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Any signifier you removed for tidiness, and what it was doing — Underlines, borders and shadows are often removed because they look busy.
+- Where the annotated screen lives
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Think about what you took away because the screen looked busy.
+
+Is it enough? If you removed nothing, say so; if you did, name what it was signalling.
+
+</details>
+
+**Save and continue.** Saved for you: The inventory, touch marks and repairs save as you type, on this device first and then online. Kept outside the app: The annotated printout stays in your own folder; name it here. Nothing is uploaded. What your creator sees: Your creator reads the inventory, especially the blanks. Those are what show the analysis was honest. Your next action: Open Your work and choose Ready for review. The next lesson classifies the failures you observed in Module 2.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -599,40 +969,165 @@ Two failures from one test looked identical and were not. One participant tapped
 
 Classify failures as slips or mistakes, rewrite blameful messages and design prevention plus recovery for one of each.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: Your Module 2 session notes and every failure, hesitation or wrong turn you recorded there.
 - Create HaruCourse/Practice/m04-l04-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Read and classify the concepts
+
+- Read the assigned article's sections on slips and mistakes. Write the distinguishing question you will use: was the intention correct?
+
+**You should end up with:** The question you will use to classify, written in your own words.
+
+Worksheet fields for this step:
+
+- The question you will use to tell a slip from a mistake — It is about the intention, not the outcome.
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Slips, mistakes and designing for the error you caused
+- **Slip:** The intention was right and the action came out wrong: a mistyped digit, the wrong button pressed by accident.
+- **Mistake:** The intention itself was wrong, usually because the person’s model of the system was wrong. Doing it more carefully would not help.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Write the question as something you could ask about any failure in ten seconds.
 
-Failure / source | Intended action | Slip / mistake and why | Prevention | Recovery message | Next action
---- | --- | --- | --- | --- | ---
-[observed failure or hypothetical scenario] | [intent] | [reasoning] | [design] | [your text] | [action]
-
-## Output checklist
-- [ ] A classification table of observed failures with slips, mistakes and unclassified rows; blame-free rewrites alongside the originals; and one prevention and one recovery for each class with reasoning.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? The question is about intention, not about how bad the outcome was.
 
 </details>
+
+#### 2. Classify your observed failures
+
+**See it first.** Made-up example. Classifying two failures from a session, and getting the first one wrong.
+
+- **The observation:** She pressed Reserve, then immediately pressed Back. My note said “misclick”.
+- **Why I classified it as a slip:** It looked like an accident, and slips are the comfortable category: they suggest the design is fine and the finger was clumsy.
+- **What she actually said:** “I wanted to see if there were places left.” Her intention was to check availability, and Reserve was the only thing that looked like it would tell her.
+- **The reclassification:** A mistake. Her model of what Reserve does was wrong, and the design gave her nothing else to press.
+- **What that changed in the repair:** A confirmation dialogue would have caught nothing. Showing places remaining on the card removes the reason to press at all.
+
+**The wrong turn:** The wrong turn is classifying by how it looked. Slips are comfortable because they blame the finger; mistakes point at your model of the system.
+
+**What it costs:** Classifying honestly produces more mistakes than slips, and mistakes are harder to fix than adding a warning.
+
+**Still unknown:** Still unknown: whether other people share that model of the button. One session cannot say how common it is.
+
+- Take every failure from your Module 2 notes and classify it. Where you cannot tell, record it as unclassified and write what you would have needed to ask at the time.
+
+**You should end up with:** Every failure from your Module 2 notes classified, with unclassifiable ones kept.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Failure 1 · what happened, and slip, mistake or unclassified
+- Failure 2 · what happened, and slip, mistake or unclassified
+- Failure 3 · what happened, and slip, mistake or unclassified
+- Failure 4 · what happened, and slip, mistake or unclassified
+- For anything unclassified: what you would need to know
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take each failure and ask what the person was trying to do at that moment.
+
+Is it enough? At least one is classified as a mistake, or you can say why none is.
+
+</details>
+
+#### 3. Rewrite the blame out
+
+- Rewrite each observation so the design is the subject. Keep both versions so the difference is visible.
+
+**You should end up with:** Each observation rewritten with the design as the subject, keeping both versions.
+
+**Try it with help.** A supplied note from the same made-up session: “The participant carelessly skipped the materials section and then complained she did not know what to bring.”
+
+Which rewrite is useful?
+
+- **The materials section sat below the Reserve button at this width, so it was not encountered before the decision, and nothing referred to it afterwards.** — It names what the design did, where, and what followed. It is checkable and it points straight at a repair.
+- The participant did not read the materials section, which is common behaviour. — Softer wording, same blame, and now with a claim about people in general that one session cannot support.
+- The materials section needs to be more prominent. — That is a repair, not an observation. Written here it hides what actually happened.
+- The participant was in a hurry, which affected her reading. — Speculation about her state, and unfalsifiable. It also excuses the layout.
+
+**Then:** Rewrite each of your own observations so the design is the subject and the sentence could be checked by someone else.
+
+Worksheet fields for this step:
+
+- Each observation rewritten with the design as the subject, keeping the original beside it
+
+<details>
+<summary>Help with this step</summary>
+
+- **Blame:** Any word that makes the person the cause: careless, lazy, did not bother, failed to notice.
+
+Stuck starting? Underline every word in your notes that describes the person rather than the screen.
+
+Is it enough? No rewritten line contains a judgement about the person.
+
+</details>
+
+#### 4. Design prevention and recovery
+
+- For one slip and one mistake, design a prevention and a recovery each. Prefer constraints and defaults over warnings, and undo over confirmation. State why for each choice.
+
+**You should end up with:** A prevention and a recovery for one slip and one mistake.
+
+Worksheet fields for this step:
+
+- For one slip · the prevention — Prefer a constraint or a default over a warning.
+- For that slip · the recovery
+- For one mistake · the prevention — A mistake is a wrong intention, so the fix is usually information or a clearer model, not a guard.
+- For that mistake · the recovery
+
+<details>
+<summary>Help with this step</summary>
+
+- **Constraint:** Making the wrong action impossible or harder, rather than warning about it.
+- **Recovery:** What the person can do after the failure. Undo is usually worth more than a confirmation.
+
+Stuck starting? For the slip, ask what would make the wrong action physically harder; for the mistake, ask what information was missing.
+
+Is it enough? Neither intervention relies on the reader being more careful.
+
+</details>
+
+#### 5. Record and pause
+
+- Save the classification table, the rewritten observations and the four designs. Note any failure you could not classify and what that costs you.
+
+**You should end up with:** A failure you could not resolve, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- A failure you could not classify or design for, and why
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Look for the failure where you still cannot tell what she was trying to do.
+
+Is it enough? The entry says what you would need to observe to classify it.
+
+</details>
+
+**Save and continue.** Saved for you: The classification, rewrites and interventions save as you type, on this device first and then online. Kept outside the app: Your Module 2 session notes stay in your own private folder. Nothing here should identify a participant. What your creator sees: Your creator reads the classifications and the rewritten observations. The unclassified entries show where the evidence ran out. Your next action: Open Your work and choose Ready for review. The next lesson is optional and tests three named laws against your own work.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -782,39 +1277,161 @@ A filter panel with eleven options was cut to four, citing Hick's law. Task time
 
 Apply three assigned UX laws to one decision, then deliberately find a situation where each recommendation would be misleading.
 
-**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
 
 - Starting material: Any decision from this module you found hard to justify, plus the screens you have been working on.
 - Create HaruCourse/Practice/m04-l05-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 
+</details>
+
+#### 1. Read three law pages
+
+- Read the assigned pages for Fitts's law, Hick's law and Jakob's law. For each write the regularity it describes and the situation it assumes.
+
+**You should end up with:** Each law with the regularity it describes and the situation it assumes.
+
+Worksheet fields for this step:
+
+- Fitts · the regularity it describes, and the situation it assumes
+- Hick · the regularity it describes, and the situation it assumes
+- Jakob · the regularity it describes, and the situation it assumes
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# UX laws and where they stop applying
+- **Assumed situation:** The conditions under which the regularity was observed. Outside them the law is a slogan.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Read the three pages and write the assumption before the recommendation.
 
-Law | Prediction for my design | Boundary / counterexample | Testable claim | Evidence needed
---- | --- | --- | --- | ---
-[assigned law] | [prediction] | [condition] | [specific claim] | [observation]
-
-## Output checklist
-- [ ] Three law summaries with their assumed situations, an application to one real decision including a conflict, three concrete counterexamples from your own product, and three testable claim rewrites.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Each entry names a condition that could fail to hold.
 
 </details>
+
+#### 2. Apply them to one decision
+
+- Take one unresolved decision from your work. Write what each of the three laws suggests. Note where two of them disagree.
+
+**You should end up with:** One decision, what each law suggests, and where two disagree.
+
+Worksheet fields for this step:
+
+- The decision you have found hard to justify
+- What each of the three suggests you do
+- Where two of them disagree, and what the disagreement is about — A real conflict is more useful than three principles that happen to agree.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Choose the decision you have changed your mind about more than once.
+
+Is it enough? The conflict is stated as a disagreement about what matters, not as a tie.
+
+</details>
+
+#### 3. Break each one
+
+**See it first.** Made-up example. Breaking Hick’s law on a class list.
+
+- **What the law suggested:** Fewer options means faster choosing, so cut the list from nine classes to three.
+- **What I did first:** Chose the three most popular. It felt decisive and the screen looked calmer immediately.
+- **What broke:** Two of the nine were the only evening classes. Anyone who works during the day now has nothing, and no way to discover that evening classes exist.
+- **Why the law did not apply:** It describes choosing among comparable options. These were not comparable: they differed on the one dimension that decided everything.
+- **What I did instead:** Kept all nine and grouped them by time of day. Choosing is still fast, because the grouping does the reduction without removing anything.
+
+**The wrong turn:** The wrong turn is applying the law to a set of options that are not interchangeable. Removing an option someone needs does not speed up their decision; it ends it.
+
+**What it costs:** Keeping nine options means a longer screen, which is what the law was trying to avoid. Grouping pays most of that back.
+
+**Still unknown:** Still unknown: whether the grouping labels match how people actually think about time of day. That is a question for a person.
+
+- For each law, construct a specific situation from your own product where following it would make the design worse. Describe the situation, the harm and why the law does not apply there.
+
+**You should end up with:** A specific counterexample for each law, taken from your own product.
+
+**Try it with help.** A supplied application of Jakob’s law from the same made-up project: “Other booking sites put the price at the top right, so ours should too, because people expect it there.”
+
+When would following that make the design worse?
+
+- **When the price at the top is incomplete, because materials are charged separately, so the familiar position teaches a wrong number.** — Conventions carry meaning as well as position. Matching the position while changing the meaning is worse than being unfamiliar.
+- It would never be worse; matching conventions always reduces effort. — It reduces effort when the convention means the same thing. When it does not, familiarity makes the wrong reading more confident.
+- When your design is more innovative than the sites you are copying. — Innovation is not a reason on its own. The reason is whether the convention’s meaning holds in your case.
+- When you have no competitors to copy. — Readers bring expectations from every site they use, not only from competitors.
+
+**Then:** Write your own three counterexamples the same way: name the situation in your product where the assumption fails.
+
+Worksheet fields for this step:
+
+- Following Fitts would make it worse when…
+- Following Hick would make it worse when…
+- Following Jakob would make it worse when…
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? For each law, ask what it assumes and then find the place in your product where that assumption is false.
+
+Is it enough? Each counterexample names a real element of your own work.
+
+</details>
+
+#### 4. Convert to testable claims
+
+- Rewrite each application as: the principle suggests X, which predicts readers will do Y, which I could check by Z. Make each Z something you could actually do.
+
+**You should end up with:** Each application rewritten as a prediction you could check.
+
+Worksheet fields for this step:
+
+- Rewrite each application: the principle suggests X, which predicts readers will do Y, which I could check by Z
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Finish “this predicts readers will …, which I could check by …”.
+
+Is it enough? Every check names something observable, not a satisfaction question.
+
+</details>
+
+#### 5. Decide and record
+
+- Resolve your decision, stating which principle you followed, which you overrode and why. Save the three counterexamples.
+
+**You should end up with:** Your resolved decision, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Your decision, which principle you followed and which you overrode
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Say which principle you overrode and why the other mattered more here.
+
+Is it enough? The resolution names a principle you deliberately did not follow.
+
+</details>
+
+**Save and continue.** Saved for you: Your applications, counterexamples and resolution save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. This lesson is optional and produces no artefact the later lessons depend on. What your creator sees: Your creator reads the counterexamples and the resolution. The counterexamples show whether the principles are being used or merely cited. Your next action: Open Your work and choose Ready for review, or move on. The next lesson turns requests into need statements.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -976,39 +1593,165 @@ The organiser asked for a mandatory “I have read the instructions” checkbox.
 
 Translate feature requests into needs that allow several solutions. Use your existing requests and label supplied or invented practice requests as hypothetical.
 
-**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
 
 - Starting material: Your Module 2 findings and any requests, suggestions or stakeholder asks you have collected since.
 - Create HaruCourse/Practice/m04-l06-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 
+</details>
+
+#### 1. Read the need statement format
+
+- Read the assigned page. Write the format with its optional parts, and note the difference the so-that clause makes.
+
+**You should end up with:** The format written out, with what the so-that clause adds.
+
+Worksheet fields for this step:
+
+- The format, its optional parts, and what the so-that clause changes
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# From requests to user needs
+- **Need statement:** Who, what they need, and so that what. The last part is the outcome, and it is what stops the statement being a feature.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Read the assigned page and write the format with an example of your own.
 
-Request / source | Person | Situation | Needed outcome | Evidence status | Alternative responses
---- | --- | --- | --- | --- | ---
-[request] | [person] | [context] | [need without feature] | [real / hypothesis] | [options]
-
-## Output checklist
-- [ ] A five-row table giving each original request, its need statement, its evidence source or assumption label, plus two testing questions and one need belonging to a non-primary user.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Your note says what changes when the so-that clause is missing.
 
 </details>
+
+#### 2. Collect the requests
+
+- Gather five real requests, suggestions or asks — from your Module 2 sessions, from the organiser brief, or from your own backlog. Write each in the words it arrived in.
+
+**You should end up with:** Five real requests in the words they were actually said.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Request 1 · as it was actually said, and who said it — Keep the original wording, including the solution it names.
+- Request 2 · as it was actually said, and who said it
+- Request 3 · as it was actually said, and who said it
+- Request 4 · as it was actually said, and who said it
+- Request 5 · as it was actually said, and who said it
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Look through your session notes and the brief before inventing any.
+
+Is it enough? Each request names who said it.
+
+</details>
+
+#### 3. Convert to needs
+
+**See it first.** Made-up example. Converting a stakeholder request, and finding out it had no outcome behind it.
+
+- **The request:** “Add a reminder email the day before.” Clear, reasonable, and already a solution.
+- **My first rewrite:** “Attendees need a reminder email so that they remember the class.” I had moved the words around and kept the email.
+- **What the so-that clause exposed:** Remembering the class is not the outcome; turning up prepared is. Once I wrote that, the email stopped being the obvious answer.
+- **The need I kept:** A first-time attendee needs to know what to bring in time to gather it, so that she can take part from the start.
+- **The one that would not resolve:** Another request was “make the site feel more premium”. I could not write a so-that clause without inventing one, so I recorded the difficulty instead.
+
+**The wrong turn:** The wrong turn is rewriting the sentence while keeping the solution inside it. It looks like a need and it has already decided the answer.
+
+**What it costs:** Some requests will not convert, and saying so can be awkward with the person who made it. Recording the difficulty is more useful than a fabricated outcome.
+
+**Still unknown:** Still unknown: whether attendees would read a reminder at all. That assumption now sits in the evidence column.
+
+- Rewrite each as a need statement with no solution in it. Where the so-that is hard to write, record that difficulty rather than inventing an outcome.
+
+**You should end up with:** Each request rewritten as a need with no solution in it, and any difficulty recorded.
+
+**Try it with help.** A supplied conversion from the same made-up project: “Attendees need a materials checklist on the booking page so that they can see the materials checklist before booking.”
+
+What is wrong with it?
+
+- **The so-that clause repeats the solution, so the statement has no outcome and cannot be met any other way.** — A circular outcome is the commonest failure. It looks complete and permits exactly one answer, which is the one you started with.
+- It is too specific about the page. — Specificity is not the fault; the fault is that the outcome restates the feature rather than naming what changes for the person.
+- Nothing: it names who, what and why. — It names who and what twice. The why is missing, disguised as a repetition.
+- It should say “users” rather than “attendees”. — The opposite: naming who they are is better. “Users” is the vaguer word.
+
+**Then:** Check each of your own so-that clauses: if it repeats the need, the outcome is missing.
+
+Worksheet fields for this step:
+
+- Need 1 · with no solution in it
+- Need 2
+- Need 3
+- Need 4
+- Need 5
+- Any so-that clause you found hard to write, and why — Difficulty here usually means the request has no outcome behind it. Record that rather than inventing one.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the who first, then what they need, then force yourself to finish “so that…”.
+
+Is it enough? No need statement contains a page, a button, an email or a feature.
+
+</details>
+
+#### 4. Mark the evidence
+
+- For each need, record the evidence source or mark it as an assumption. For the two most consequential assumptions, write the smallest question that would test them.
+
+**You should end up with:** An evidence source or an assumption label for every need, and the consequence of the two riskiest assumptions being wrong.
+
+Worksheet fields for this step:
+
+- For each need: the evidence source, or the word assumption
+- For the two most consequential assumptions: what would happen if each is wrong
+
+<details>
+<summary>Help with this step</summary>
+
+- **Assumption:** A need nobody has evidenced. Marking it is not a weakness; leaving it unmarked is.
+
+Stuck starting? Go through the needs and try to name the session or note behind each.
+
+Is it enough? At least one need is marked assumption, and its consequence is written down.
+
+</details>
+
+#### 5. Widen and save
+
+- Add one need belonging to someone other than the primary user. Save the request-to-need table with its evidence column.
+
+**You should end up with:** A need belonging to someone other than the primary user, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- One need belonging to someone other than the primary user — The person who runs the class, the person who answers the phone, the person who cleans up afterwards.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask who else touches this service and what the design costs them.
+
+Is it enough? The other person is named by role and their need is not simply “fewer questions”.
+
+</details>
+
+**Save and continue.** Saved for you: The requests, needs and evidence marks save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. Do not paste session notes containing a participant’s name into this worksheet. What your creator sees: Your creator reads the needs and the evidence column. The assumptions and the unconvertible requests are the most informative entries. Your next action: Open Your work and choose Ready for review. The next lesson writes a value proposition for your strongest need and states what it costs.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1147,39 +1890,160 @@ For the need “attendees arrive with the right materials”, three responses we
 
 Compare who gains and who pays for your proposal. Introduce the fictional constraint “no additional staff capacity” and revise your value proposition.
 
-**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
 
 - Starting material: Your need statements with their evidence marks, and the contradictions and error findings from earlier in this module.
 - Create HaruCourse/Practice/m04-l07-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 
+</details>
+
+#### 1. Read discovery's purpose
+
+- Read the assigned page. Write what discovery is for, including what deciding not to continue means.
+
+**You should end up with:** What discovery is for, including what stopping means.
+
+Worksheet fields for this step:
+
+- What discovery is for, including what deciding not to continue means
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Value under constraint: who gains, who pays
+- **Discovery:** Finding out whether a problem is worth solving and how. Deciding not to continue is a successful outcome, not a failure.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Read the assigned page and write what a decision not to continue would mean here.
 
-Current workaround | User gain | Organization gain | Cost bearer | Constraint | Trade-off | Evidence status
---- | --- | --- | --- | --- | --- | ---
-[baseline] | [benefit hypothesis] | [benefit hypothesis] | [who does extra work] | [constraint] | [choice] | [source]
-
-## Output checklist
-- [ ] A baseline description of today's behaviour, a value proposition with an explicit comparison, a three-part cost list, and a constraint list marked fixed or changeable.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Your note treats stopping as a legitimate result.
 
 </details>
+
+#### 2. Establish the baseline
+
+**See it first.** Made-up example. Writing the baseline for the materials problem, and getting it wrong first.
+
+- **My first baseline:** “Currently there is no way to find out what to bring.” Clean, and it made my proposal look essential.
+- **Why it was false:** People manage. They text a friend, they ask at reception, or they turn up and borrow. The problem is real and it is not a vacuum.
+- **What the accurate version changed:** My response now has to beat texting a friend, which is fast, personal and already trusted. That is a higher bar than beating nothing.
+- **What it exposed:** The studio already lends aprons. For a large part of the need, the workaround is entirely adequate and my proposal adds a screen for nothing.
+- **What survived:** The narrower need: things the studio cannot lend, like a sketchbook, where arriving without it costs the first twenty minutes.
+
+**The wrong turn:** The wrong turn is describing the baseline as nothing. It makes the proposition look necessary and hides the workaround it actually has to beat.
+
+**What it costs:** An accurate baseline shrinks the proposal, which is less exciting to present. It is what stops you building something people already have a better answer for.
+
+**Still unknown:** Still unknown: how many people use the borrow-an-apron route. One session cannot say, and the proposition should not pretend otherwise.
+
+- For your strongest need, write what people do today, including doing nothing. Describe the workaround accurately rather than dismissively.
+
+**You should end up with:** Your strongest need and an accurate description of what people do today.
+
+Worksheet fields for this step:
+
+- Your strongest need, copied with its evidence mark
+- What people actually do today, including doing nothing — Describe the workaround accurately. It is your real competitor.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask what someone did the last time they had this problem, and write that.
+
+Is it enough? The baseline includes at least one thing that already works reasonably well.
+
+</details>
+
+#### 3. Write the proposition
+
+- State who it is for, what changes, and why this response rather than the alternatives. Compare against the baseline explicitly.
+
+**You should end up with:** Who it is for, what changes, and why this response compared with the baseline.
+
+Worksheet fields for this step:
+
+- Who it is for
+- What changes for them
+- Why this response rather than the alternatives, compared with the baseline — Compare. An assertion that it is better is not a comparison.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the comparison as “compared with texting a friend, this…”.
+
+Is it enough? The why-this line mentions the baseline explicitly.
+
+</details>
+
+#### 4. Write the costs
+
+- List costs to the reader, to the organisation, and to anyone the response does not serve or actively disadvantages. Be specific.
+
+**You should end up with:** Costs to the reader, to the organisation, and to anyone it does not serve.
+
+**Try it with help.** A supplied proposal from the same made-up project: replace the printed materials sheet at reception with a link in the confirmation email, because it is cheaper to keep up to date.
+
+Which cost is most easily missed and most important to record?
+
+- **The cost to people who do not use email or do not have a phone with them, who previously got the sheet at reception.** — Removing the old route disadvantages a group that used it. That cost is invisible in the proposal because those people are not the ones being designed for.
+- The cost to the organisation of writing the email content. — Real and small, and it is the cost the organisation will notice by itself.
+- The cost to the reader of opening an email. — Worth noting and minor compared with losing the only route you had.
+- There is no cost: the proposal is cheaper and more current. — Cheaper for the studio, and the saving is paid by whoever relied on the sheet.
+
+**Then:** Write your own third column the same way: who used the old route, and what happens to them.
+
+Worksheet fields for this step:
+
+- Cost to the reader — Attention, steps, a decision they now have to make.
+- Cost to the organisation — Money, staff time, maintenance, something they must keep up to date.
+- Cost to anyone it does not serve, or actively disadvantages
+
+<details>
+<summary>Help with this step</summary>
+
+- **Cost bearer:** Whoever pays for the change in money, time, attention or lost access. It is rarely only the organisation.
+
+Stuck starting? Write the third column first; it is the one that gets skipped.
+
+Is it enough? The third column names a real group, not “edge cases”.
+
+</details>
+
+#### 5. List constraints and save
+
+- Write your constraints and mark each as fixed or changeable with what changing it would require. Save all four artefacts.
+
+**You should end up with:** Constraints separated from preferences, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Each constraint, marked fixed or changeable, with what changing it would require — A preference is not a constraint. Say which is which.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+- **Constraint:** Something that genuinely cannot change now, with a reason. If it could change given a decision, it is a preference.
+
+Stuck starting? For each constraint, ask what it would take to change it. If you can answer, it is changeable.
+
+Is it enough? At least one thing you first called a constraint is marked changeable.
+
+</details>
+
+**Save and continue.** Saved for you: The baseline, proposition, costs and constraints save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file, and no invented market figures or demand numbers belong in it. What your creator sees: Your creator reads the baseline and the third cost column. Those two show whether the proposition was tested against reality. Your next action: Open Your work and choose Ready for review. The last lesson defines the smallest build that could change your decision.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1341,39 +2205,159 @@ The riskiest assumption behind the materials summary was that attendees look for
 
 Choose the riskiest assumption and design the smallest test that could change your decision. Write the stopping rule before any results exist.
 
-**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
 
 - Starting material: Your value proposition, cost list, constraint list and the assumptions marked in your need statements.
 - Create HaruCourse/Practice/m04-l08-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 
+</details>
+
+#### 1. Read and rank
+
+- Read the assigned page on testing riskiest assumptions. Then rank your assumptions by evidence strength against consequence, and pick the top one.
+
+**You should end up with:** Assumptions ranked by evidence strength against consequence, and the riskiest named.
+
+Worksheet fields for this step:
+
+- Each assumption: how strong the evidence is, and what it would cost to be wrong — Rank by the two together, not by which is easiest to check.
+- The riskiest one
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# The smallest thing that could change your decision
+- **Riskiest assumption:** The one where you know least and being wrong costs most. Not the one that is quickest to check.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Bring the assumption marks from the need statements and put the consequence beside each.
 
-Assumption | Consequence if wrong | Current evidence | Smallest test | Stop / revise signal | Cannot conclude | Next step
---- | --- | --- | --- | --- | --- | ---
-[claim] | [consequence] | [source or none] | [bounded test] | [prewritten rule] | [boundary] | [action]
-
-## Output checklist
-- [ ] A ranked assumption list with reasoning, a description of the smallest build with each element justified, a stopping rule written before building, and a boundary list mapping unanswerable questions to later modules.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? The riskiest is not simply the easiest to test.
 
 </details>
+
+#### 2. Design the smallest build
+
+**See it first.** Made-up example. Designing the smallest build for “nobody reads anything we send before the class”.
+
+- **What I proposed first:** A booking flow with the materials list on the details page, a confirmation email and a reminder. Three weeks of work.
+- **What it would have told me:** Whether that whole system produced better-prepared attendees. If not, I would not know which part failed.
+- **The assumption underneath:** That people receive and read what we send before the class. Everything else depends on it and nothing tests it.
+- **The smallest build:** A printed card handed over at booking, listing what to bring. No screens at all. If people arrive prepared, receiving works and the channel is the question.
+- **What I removed:** The email, the reminder, the details page redesign. Each was there because it was on the plan, not because it tested the assumption.
+
+**The wrong turn:** The wrong turn is treating the smallest build as version one of the product. Then it is a release plan, and a release with no stated uncertainty cannot fail, so it cannot inform anything.
+
+**What it costs:** A printed card feels like a step backwards from the app you are meant to be designing. It answers the question in a week rather than a quarter.
+
+**Still unknown:** Still unknown: whether a card works at scale, or whether people who read a card would read a screen. Neither is what this build is for.
+
+- Describe the smallest thing that could resolve that assumption. Justify why each element is necessary and remove anything that is not.
+
+**You should end up with:** The smallest build that could resolve it, with every element justified.
+
+Worksheet fields for this step:
+
+- What you would make — A paper prototype, a manual process behind a form, or a written message are all legitimate.
+- Why each element is necessary, and what you removed
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask what the cheapest possible thing is that would change your mind about the riskiest assumption.
+
+Is it enough? Every element of the build is there because removing it would stop the test working.
+
+</details>
+
+#### 3. Write the stopping rule first
+
+- Before building anything, write what result continues, what redirects, and what stops the work. Make the thresholds concrete.
+
+**You should end up with:** A stopping rule written before anything is built.
+
+**Try it with help.** Two supplied stopping rules for the same made-up card test. Rule A: “If attendees seem better prepared, continue.” Rule B: “If at least twelve of the next twenty bookers arrive with the listed items, continue; if six to eleven, redirect to finding out what stopped the rest; if five or fewer, stop and investigate whether preparation is the real problem.”
+
+Why is B the usable rule?
+
+- **Its thresholds are concrete, so a disappointing result cannot be reinterpreted as encouraging afterwards.** — Written in advance with numbers, it constrains your future self. “Seem better prepared” can be read as success in almost any outcome.
+- Because it uses numbers, and numbers are more scientific. — Numbers alone prove nothing. What matters is that the thresholds were fixed before the result arrived.
+- Because twenty bookers is a statistically valid sample. — It is not, and it does not need to be. This is a decision rule for your own work, not a claim about a population.
+- B is worse, because it might stop a promising direction on a small sample. — That risk is real and it is why the rule has a redirect band. Without any rule, nothing ever stops.
+
+**Then:** Write your own three bands now, before building, and make them concrete enough to hold you to them.
+
+Worksheet fields for this step:
+
+- What result continues the work
+- What result redirects it
+- What result stops it — Concrete enough that you could not argue your way past it afterwards.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Stopping rule:** What result would make you stop, decided before you have the result. Written afterwards it is a justification.
+
+Stuck starting? Write the stop band first; it is the one you will not want to write later.
+
+Is it enough? You could not argue past any of the three bands after the fact.
+
+</details>
+
+#### 4. Name the boundary
+
+- Write what this build cannot tell you, and map each unanswerable question to the module that addresses it. Include anything about demand, frequency or scale.
+
+**You should end up with:** What the build cannot tell you, mapped to where those questions belong.
+
+Worksheet fields for this step:
+
+- The questions this build cannot answer, and which module addresses each
+- If any real person is involved: what you will tell them, and what you will not collect — Leave this if nobody else is involved.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? List what someone might wrongly conclude from a good result.
+
+Is it enough? Each unanswerable question names the module or activity that would address it.
+
+</details>
+
+#### 5. Submit and request review
+
+- Save the ranking, the build description, the stopping rule and the boundary. Record actual minutes and set the practice status to ready for review with references to your outputs.
+
+**You should end up with:** The work saved, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read the stopping rule once more and check you would still accept it if the result were bad.
+
+Is it enough? Nothing in the record claims a result you have not obtained.
+
+</details>
+
+**Save and continue.** Saved for you: The ranking, the build, the stopping rule and the boundary save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. If you build something physical, keep it and name it in Your work. What your creator sees: Your creator reads the stopping rule and the boundary. A stopping rule written before the build is the part worth his attention. Your next action: Open Your work and choose Ready for review. This closes the module; your assumptions and stopping rule carry into the research modules.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
