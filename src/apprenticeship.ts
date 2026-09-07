@@ -113,6 +113,284 @@ const detectiveGuide: GuideStep[] = [
     enough: 'Your next action is a single line you could act on in five minutes when you return.' },
 ];
 
+// Guided material for the rest of Module 1, one entry per lesson, authored
+// against each lesson's own steps and outputs. Field ids are record keys.
+type Guided = Pick<Activity, 'route' | 'worksheet' | 'guide'>;
+const paperRoute = (what: string): Activity['route'] => ({
+  recommended: `Draw ${what} on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.`,
+  alternative: 'Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.',
+});
+const textRoute: Activity['route'] = {
+  recommended: 'Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.',
+  alternative: 'Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.',
+};
+const numbered = (prefix: string, label: (n: number) => string, count: number, kind: 'short' | 'long', extra: (n: number) => Partial<WorksheetField> = () => ({})): WorksheetField[] =>
+  Array.from({ length: count }, (_, i) => ({ id: `${prefix}-${i + 1}`, label: label(i + 1), kind, ...extra(i + 1) }));
+
+const framing: Guided = {
+  route: textRoute,
+  worksheet: [
+    { id: 'review', title: 'Explanations you have not verified', intro: 'From your Lesson 1 table: the inferred or unknown entries that still read like facts.', fields: numbered('unverified', (n) => `Unverified explanation ${n}`, 2, 'short', (n) => (n === 1 ? { example: 'Example (made up): Attendees skip the materials list because it is below the fold.' } : {})) },
+    { id: 'frames', title: 'Three problem frames', intro: 'Person, situation, unmet goal and consequence. No feature names: not checkbox, reminder, app or button.', fields: numbered('frame', (n) => `Frame ${n}`, 3, 'long', (n) => (n === 1 ? { hint: 'One sentence each for who, when, what they need and what goes wrong if they do not get it.', example: 'Example (made up): A first-time attendee, the evening before a pottery workshop, needs to know what to bring, otherwise she arrives without an apron and loses the first twenty minutes.' } : {})) },
+    { id: 'assumptions', title: 'Six assumptions', intro: 'Each one: the claim, what happens if it is wrong, and your confidence (low, medium or high).', fields: [
+      ...numbered('assumption', (n) => `Assumption ${n}`, 6, 'short', (n) => (n === 1 ? { example: 'Example (made up): Attendees read the confirmation email · if wrong, nobody sees the list · confidence low.' } : {})),
+      { id: 'priority-1', label: 'First uncertainty to investigate', kind: 'short', hint: 'The one where being wrong costs most and you know least.' },
+      { id: 'priority-1-evidence', label: 'What evidence would change your mind about it?', kind: 'short', example: 'Example (made up): Three attendees say they never open the confirmation email.' },
+      { id: 'priority-2', label: 'Second uncertainty to investigate', kind: 'short' },
+      { id: 'priority-2-evidence', label: 'What evidence would change your mind about it?', kind: 'short' },
+    ] },
+    { id: 'explore', title: 'Three different responses', intro: 'Try one information change, one process change and one interface change. Each gets a constraint and a weakness.', fields: [1, 2, 3].flatMap((n) => [
+      { id: `option-${n}`, label: `Response ${n}`, kind: 'short' as const, ...(n === 1 ? { example: 'Example (made up): Print the materials list on the ticket.' } : {}) },
+      { id: `option-${n}-constraint`, label: `Response ${n} · a constraint it must respect`, kind: 'short' as const, ...(n === 1 ? { hint: 'Money, staff time, the venue, what the organiser will accept.' } : {}) },
+      { id: `option-${n}-weakness`, label: `Response ${n} · its weakness`, kind: 'short' as const },
+    ]) },
+    { id: 'decide', title: 'Decide', fields: [
+      { id: 'decision', label: 'The next investigation you will do', kind: 'long', hint: 'Which uncertainty, with whom, and what you will look for.' },
+      { id: 'decision-reason', label: 'Why this one first', kind: 'short' },
+    ] },
+  ],
+  guide: [
+    { expect: 'Two explanations from Lesson 1 that you wrote down but never checked.', fields: ['unverified-1', 'unverified-2'],
+      terms: [{ term: 'Verified', meaning: 'You saw it happen, or someone told you it happened to them. Everything else is a guess, however sensible.' }],
+      start: 'Open your Lesson 1 worksheet and look only at the rows labelled inferred or unknown.', enough: 'Each line is something you believe about other people, not something you observed yourself.' },
+    { expect: 'Three frames, each naming a person, a situation, an unmet goal and a consequence, with no feature words.', fields: ['frame-1', 'frame-2', 'frame-3'],
+      terms: [{ term: 'Problem frame', meaning: 'A description of who is stuck, when, and what it costs them. It does not say what to build.' }, { term: 'Feature', meaning: 'A thing you could build: a reminder, a checkbox, a page. If a frame contains one, it has jumped to a solution.' }],
+      start: 'Write “A [kind of person], [when], needs [goal], otherwise [what goes wrong].” three times with different people or moments.', enough: 'You could hand each frame to another designer and they could propose something you did not think of.' },
+    { expect: 'Six assumptions with consequence and confidence, and the two you will investigate with what would change your mind.',
+      fields: ['assumption-1', 'assumption-2', 'assumption-3', 'assumption-4', 'assumption-5', 'assumption-6', 'priority-1', 'priority-1-evidence', 'priority-2', 'priority-2-evidence'],
+      example: 'Example (made up): “The organiser sends the list a week before” has low confidence and a serious consequence, so it goes first; “attendees own an apron” is low-consequence and waits.',
+      terms: [{ term: 'Assumption', meaning: 'Something your frames depend on that you have not checked.' }, { term: 'Disconfirming evidence', meaning: 'What you would have to see to conclude you were wrong. If nothing could, it is not an investigation.' }],
+      start: 'Take each frame and ask “this is only a problem if…”; the ending is an assumption.', enough: 'The two priorities are the ones where being wrong costs most and you know least, and each has something concrete that could disprove it.' },
+    { expect: 'Three different responses, each with a constraint and a weakness.', fields: ['option-1', 'option-1-constraint', 'option-1-weakness', 'option-2', 'option-2-constraint', 'option-2-weakness', 'option-3', 'option-3-constraint', 'option-3-weakness'],
+      terms: [{ term: 'Information change', meaning: 'Change what people are told, or when.' }, { term: 'Process change', meaning: 'Change what the organiser or venue does, without any screen.' }, { term: 'Interface change', meaning: 'Change something on the screen.' }],
+      start: 'Write the information change first; it is usually the cheapest and shows whether a screen is needed at all.', enough: 'No two responses are variations of the same idea, and every weakness is one you would say to the organiser.' },
+    { expect: 'One chosen investigation and the reason it comes first. The worksheet is saved as you type.', fields: ['decision', 'decision-reason'],
+      start: 'Pick the priority uncertainty from step 3 and name a person you could actually ask.', enough: 'The reason compares the cost of being wrong, not which response you like.' },
+  ],
+};
+
+const interviewing: Guided = {
+  route: textRoute,
+  worksheet: [
+    { id: 'prepare', title: 'Purpose and consent', fields: [
+      { id: 'purpose', label: 'What this conversation is for, in one sentence', kind: 'short', example: 'Example (made up): To learn what people did the last time they prepared for a workshop, so I know whether the materials list is the real problem.' },
+      { id: 'consent-intro', label: 'What you will say before starting', kind: 'long', hint: 'Who you are, what the notes are for, that they can stop or skip any question, and whether you will record. Ask before recording.', example: 'Example (made up): I am practising interviewing for a design course. I will take written notes, no recording unless you agree, and nothing will be shared with your name. You can stop at any time.' },
+    ] },
+    { id: 'write', title: 'Your questions', intro: 'About a recent real experience, never about a feature you have in mind.', fields: [
+      { id: 'uncertainty', label: 'The uncertainty from Lesson 2 these questions serve', kind: 'short' },
+      ...numbered('question', (n) => `Question ${n}`, 6, 'short', (n) => (n === 1 ? { hint: 'Start with “Tell me about the last time…” or “What happened when…”.', example: 'Example (made up): Tell me about the last workshop or class you went to. How did you get ready for it?' } : {})),
+      { id: 'followup-1', label: 'Neutral follow-up 1', kind: 'short', example: 'Example (made up): What did you expect to happen then?' },
+      { id: 'followup-2', label: 'Neutral follow-up 2', kind: 'short', hint: 'A follow-up that works after any answer: “Can you say more about that?”' },
+    ] },
+    { id: 'practice', title: 'The conversation', fields: [
+      { id: 'session-status', label: 'What actually happened', kind: 'choice', options: ['Real conversation with a consenting adult', 'Rehearsal only: no participant evidence collected'], hint: 'Choose honestly. A rehearsal is useful and is not participant evidence.' },
+      { id: 'observations', label: 'What the person said or did (observations only)', kind: 'long', hint: 'No names or identifying details. If you were not given permission to quote, paraphrase.' },
+      { id: 'interpretations', label: 'What you think it means (interpretations)', kind: 'long' },
+      { id: 'quotes', label: 'Exact words worth keeping, if consented', kind: 'long', hint: 'Leave empty if you did not ask permission to quote.' },
+    ] },
+    { id: 'distinguish', title: 'Follow-up questions', fields: [
+      { id: 'followups-next', label: 'Questions the conversation raised for next time', kind: 'long' },
+    ] },
+    { id: 'improve', title: 'Improve one question', fields: [
+      { id: 'weak-question', label: 'The weakest question, as written', kind: 'short' },
+      { id: 'improved-question', label: 'The same question, rewritten', kind: 'short', example: 'Example (made up): Before: Would a reminder have helped? After: What happened the day before the class?' },
+      { id: 'next-research-question', label: 'Your next research question', kind: 'short' },
+    ] },
+  ],
+  guide: [
+    { expect: 'One-sentence purpose and the consent words you will actually say.', fields: ['purpose', 'consent-intro'],
+      terms: [{ term: 'Consent', meaning: 'The person knows what you are doing with their words and agrees, before you start. It can be withdrawn at any point.' }, { term: 'Research question', meaning: 'What you are uncertain about. You do not ask it out loud; it decides what you ask.' }],
+      start: 'Copy the example consent introduction and change every phrase until it sounds like you.', enough: 'Someone hearing the introduction would know they can stop, and whether they are being recorded.' },
+    { expect: 'Six open questions about a recent experience and two neutral follow-ups.', fields: ['uncertainty', 'question-1', 'question-2', 'question-3', 'question-4', 'question-5', 'question-6', 'followup-1', 'followup-2'],
+      example: 'Example (made up): Leading: “Was the materials list hard to find?” Open: “How did you find out what to bring?”',
+      terms: [{ term: 'Leading question', meaning: 'A question that contains the answer you hope for. “Was it confusing?” tells them it was confusing.' }, { term: 'Open question', meaning: 'One that cannot be answered yes or no and does not name your idea.' }],
+      start: 'Write “Tell me about the last time you…” six times and finish each with a different moment from the experience.', enough: 'No question mentions a feature, a screen or the future; each can be answered by telling a story.' },
+    { expect: 'Honest status, then observations kept apart from interpretations. A rehearsal with no participant is a valid result.',
+      fields: ['session-status', 'observations', 'interpretations', 'quotes'],
+      terms: [{ term: 'Observation', meaning: 'What was said or done, as close to their words as you can.' }, { term: 'Interpretation', meaning: 'Your reading of why. Keep it in its own box so nobody mistakes it for what they said.' }],
+      start: 'If nobody is available today, read the questions aloud, note where you stumbled, choose “Rehearsal only” and leave observations empty.', enough: 'Every line in observations could be checked against what was said; nothing private or identifying is written down.' },
+    { expect: 'The questions the conversation raised, separated from what you observed.', fields: ['followups-next'],
+      start: 'Reread the interpretations box; each guess is a follow-up question.', enough: 'Each item is a question, not a conclusion.' },
+    { expect: 'One rewritten question and your next research question. The worksheet is saved as you type.', fields: ['weak-question', 'improved-question', 'next-research-question'],
+      start: 'Pick the question you felt awkward asking; that is usually the leading one.', enough: 'The rewrite asks about a past event and would work with a stranger.' },
+  ],
+};
+
+const flowMapping: Guided = {
+  route: paperRoute('the reservation flow'),
+  worksheet: [
+    { id: 'define', title: 'Define the task', fields: [
+      { id: 'trigger', label: 'What starts the reservation (the trigger)', kind: 'short', example: 'Example (made up): A visitor taps a workshop in the Saturday list.' },
+      { id: 'outcome', label: 'The successful outcome', kind: 'short', hint: 'What is true for the person at the end, not which screen shows.' },
+      { id: 'info-before', label: 'Information the person needs before committing', kind: 'long', hint: 'Price, date and time, what to bring, refund rule, how many places are left.' },
+    ] },
+    { id: 'map', title: 'The successful path, as drawn', intro: 'One line per box on your paper: the node ID, the person’s action, what appears next.', fields: [
+      { id: 'path', label: 'Boxes on the successful path', kind: 'long', example: 'Example (made up):\nA · taps Saturday pottery · sees details with price and materials\nB · taps Reserve · sees a date and name form\nC · submits · sees a confirmation with what to bring' },
+      { id: 'decisions', label: 'The decision points, and what decides them', kind: 'short', hint: 'Diamonds on paper: places left? payment confirmed?' },
+    ] },
+    { id: 'recover', title: 'Three failures and their recoveries', fields: [
+      { id: 'fail-full', label: 'Workshop full · the message the person sees', kind: 'short', example: 'Example (made up): Saturday is full. Two places are left on Sunday at 11.' },
+      { id: 'fail-full-next', label: 'Workshop full · the next action offered', kind: 'short' },
+      { id: 'fail-input', label: 'Invalid input · the message', kind: 'short', hint: 'Say what was wrong and how to fix it; keep what they typed.' },
+      { id: 'fail-input-next', label: 'Invalid input · the next action', kind: 'short' },
+      { id: 'fail-interrupt', label: 'Interrupted confirmation · the message', kind: 'short', hint: 'Distinguish “we are checking” from “this failed” so nobody pays twice.' },
+      { id: 'fail-interrupt-next', label: 'Interrupted confirmation · the next action', kind: 'short' },
+    ] },
+    { id: 'walk', title: 'Walk it through', fields: [
+      { id: 'walkthrough-findings', label: 'What a first-time visitor would miss or get stuck on', kind: 'long', hint: 'Trace every branch aloud. Write each stumble as one line.' },
+      { id: 'dead-end', label: 'The dead end you chose to repair', kind: 'short' },
+    ] },
+    { id: 'revise', title: 'Revise and save', fields: [
+      { id: 'repair', label: 'What changed, and why', kind: 'long' },
+      { id: 'photo-reference', label: 'File name or location of the paper flow (photo or scan)', kind: 'short', hint: 'A name only; nothing is uploaded here.' },
+    ] },
+  ],
+  guide: [
+    { expect: 'A trigger, a successful outcome and the list of what the person needs to know before committing.', fields: ['trigger', 'outcome', 'info-before'],
+      terms: [{ term: 'Trigger', meaning: 'The moment the task starts, from the person’s side.' }, { term: 'Commitment', meaning: 'The point after which backing out costs something: paying, or promising a place.' }],
+      start: 'Write the outcome as “She has a place on Saturday and knows what to bring.”', enough: 'Everything in the information list appears somewhere before the Reserve action in the next step.' },
+    { expect: 'The successful path on paper, and its boxes and decision points recorded here.', fields: ['path', 'decisions'],
+      example: 'Example (made up): A box is a state the person is in; an arrow is what they do to leave it. “Details page” is a box; “taps Reserve” is an arrow.',
+      terms: [{ term: 'Node', meaning: 'One box: a state the person is in. Give each a letter so the failures can point back to it.' }, { term: 'Decision', meaning: 'A point where the path splits depending on something the person or the system knows.' }],
+      start: 'Draw the trigger box at the top left and the outcome box at the bottom right, then fill the shortest path between them.', enough: 'Price and materials appear before the Reserve arrow, and every arrow has a label.' },
+    { expect: 'Three failure branches, each with a message and a next action.', fields: ['fail-full', 'fail-full-next', 'fail-input', 'fail-input-next', 'fail-interrupt', 'fail-interrupt-next'],
+      terms: [{ term: 'Recovery', meaning: 'What the person can do next without starting over: change a date, fix a field, check a status.' }, { term: 'Dead end', meaning: 'A box with no arrow out except going back to the start.' }],
+      start: 'Take the confirmation box and ask “what if the connection dropped right here?”', enough: 'Each next action is something the person can do, not something the system will do for them.' },
+    { expect: 'A list of stumbles found by tracing every branch aloud, and the one dead end you will repair.', fields: ['walkthrough-findings', 'dead-end'],
+      start: 'Read each box aloud as if you had never seen the app, and stop wherever you have to explain.', enough: 'At least one finding is missing information rather than a missing arrow.' },
+    { expect: 'What changed on the sheet and why, plus where the photo lives. The worksheet is saved as you type.', fields: ['repair', 'photo-reference'],
+      start: 'Redraw only the repaired branch on a fresh sheet; keep the original.', enough: 'Someone reading the change could find the branch on the original sheet.' },
+  ],
+};
+
+const screenMaking: Guided = {
+  route: paperRoute('the two screens at two widths'),
+  worksheet: [
+    { id: 'learn', title: 'Three accessibility considerations', intro: 'From the W3C introduction: the three that affect your flow most.', fields: numbered('consideration', (n) => `Consideration ${n} and where it touches your flow`, 3, 'short', (n) => (n === 1 ? { example: 'Example (made up): People using a screen reader hear the page in order, so the materials list must come before Reserve in the code order, not only visually.' } : {})) },
+    { id: 'sketch', title: 'The screens, as drawn', intro: 'For each, list what is on it from top to bottom. Preparation information stays before Reserve.', fields: [
+      { id: 'details-narrow', label: 'Workshop details · narrow (phone)', kind: 'long', example: 'Example (made up):\nTitle and date\nPrice\nWhat to bring\nPlaces left\nReserve button' },
+      { id: 'details-wide', label: 'Workshop details · wide (desktop)', kind: 'long', hint: 'Same content; say what sits beside what.' },
+      { id: 'reservation-narrow', label: 'Reservation form · narrow', kind: 'long' },
+      { id: 'reservation-wide', label: 'Reservation form · wide', kind: 'long' },
+    ] },
+    { id: 'specify', title: 'Annotations', fields: [
+      { id: 'reading-order', label: 'Reading and focus order', kind: 'long', hint: 'Number the elements in the order a keyboard or screen reader would meet them.' },
+      { id: 'persistent-labels', label: 'Which labels stay visible while typing, and why', kind: 'short' },
+      { id: 'stacking', label: 'What stacks, wraps or moves between wide and narrow', kind: 'long', hint: 'Content reflows; it does not shrink.' },
+      { id: 'error-recovery', label: 'How an error keeps what was typed and says how to fix it', kind: 'short' },
+      { id: 'checks-needed', label: 'Keyboard and screen-reader checks that still need a built version', kind: 'long', hint: 'A drawing cannot prove these. List them as still to do.' },
+    ] },
+    { id: 'critique', title: 'Critique', fields: [
+      { id: 'error-state', label: 'The error state you added', kind: 'long', example: 'Example (made up): Email field empty on submit: red text under the field, “Enter the email address for your confirmation”, typed name kept.' },
+      { id: 'longer-labels', label: 'What broke with longer labels or larger text, and what you changed', kind: 'short' },
+    ] },
+    { id: 'submit', title: 'Save', fields: [
+      { id: 'unresolved', label: 'The main unresolved issue for review', kind: 'short' },
+      { id: 'photo-reference', label: 'File names or location of the screen sketches', kind: 'short', hint: 'Names only; nothing is uploaded here.' },
+    ] },
+  ],
+  guide: [
+    { expect: 'Three considerations from the reading, each tied to a place in your flow.', fields: ['consideration-1', 'consideration-2', 'consideration-3'],
+      terms: [{ term: 'Screen reader', meaning: 'Software that reads the page aloud in code order, so order and labels matter more than position.' }, { term: 'Persistent label', meaning: 'A label that stays visible after typing, unlike placeholder text that disappears.' }],
+      start: 'Read only the “Making the Web Accessible” part first and pick the three lines that mention something your screens contain.', enough: 'Each consideration names an element on your sketch, not a general principle.' },
+    { expect: 'Four sketches on paper (two screens at two widths), recorded here top to bottom.', fields: ['details-narrow', 'details-wide', 'reservation-narrow', 'reservation-wide'],
+      terms: [{ term: 'Hierarchy', meaning: 'What you see first, second and third. It should follow the next decision the person has to make.' }, { term: 'Reflow', meaning: 'Content rearranging into one column on a phone rather than shrinking the desktop layout.' }],
+      start: 'Draw the phone version first; the wide version is the same list placed side by side.', enough: 'What to bring and the price appear above Reserve at both widths.' },
+    { expect: 'Order, labels, stacking, error recovery, and an honest list of checks that need a built version.', fields: ['reading-order', 'persistent-labels', 'stacking', 'error-recovery', 'checks-needed'],
+      terms: [{ term: 'Focus order', meaning: 'The sequence the Tab key moves through. It should match the reading order.' }],
+      start: 'Number every element on the phone sketch in the order you would want it read aloud.', enough: 'Nothing here claims the screens are accessible; it says what was designed and what still needs testing.' },
+    { expect: 'One added error state and one change from trying longer labels or larger text.', fields: ['error-state', 'longer-labels'],
+      start: 'Rewrite one label twice as long on the sketch and see what it collides with.', enough: 'The error says what was wrong and how to fix it, and the typed values survive.' },
+    { expect: 'The unresolved issue and where the sketches live. The worksheet is saved as you type.', fields: ['unresolved', 'photo-reference'],
+      start: 'Choose the issue you would most want a second opinion on, not the smallest one.', enough: 'Your work has a reference or the worksheet is filled, so Ready for review is available.' },
+  ],
+};
+
+const repairClinic: Guided = {
+  route: paperRoute('the repaired screen or flow'),
+  worksheet: [
+    { id: 'review', title: 'Choose the weak point', fields: [
+      { id: 'criterion', label: 'The review criterion you are weakest on', kind: 'short', hint: 'Pick from any Module 1 lesson’s review criteria.' },
+      { id: 'artifact', label: 'The flow or screen that shows it', kind: 'short' },
+    ] },
+    { id: 'critique', title: 'The critique', fields: [
+      { id: 'observation', label: 'What you can point to', kind: 'long', example: 'Example (made up): The Reserve button is greyed out on the full workshop with no text explaining why.' },
+      { id: 'task-impact', label: 'What it stops the person doing', kind: 'short' },
+      { id: 'evidence', label: 'The evidence for this, and its source label', kind: 'short', hint: 'Observed in your walkthrough, said by a participant, or a heuristic risk?' },
+      { id: 'uncertainty', label: 'What you are not sure about', kind: 'short' },
+    ] },
+    { id: 'repair', title: 'The repair', fields: [
+      { id: 'original-reference', label: 'Where the untouched original is kept', kind: 'short' },
+      { id: 'repair', label: 'What you changed, and only that', kind: 'long' },
+    ] },
+    { id: 'compare', title: 'Compare', fields: [
+      { id: 'comparison', label: 'Before and after, side by side', kind: 'long', hint: 'What a visitor sees first in each version, and what they can do next.' },
+      { id: 'check', label: 'How you would check whether it helps', kind: 'short', example: 'Example (made up): Watch two people reach the full workshop and see whether they find the other date without help.' },
+    ] },
+    { id: 'save', title: 'Save', fields: [
+      { id: 'limitations', label: 'What this repair still does not prove', kind: 'long' },
+    ] },
+  ],
+  guide: [
+    { expect: 'One criterion and the artefact that shows the weakness.', fields: ['criterion', 'artifact'],
+      terms: [{ term: 'Task blocker', meaning: 'Something that stops the person finishing. It comes before anything that is merely ugly.' }],
+      start: 'Reread the Check section of each Module 1 lesson and choose the criterion you skipped.', enough: 'The artefact is one screen or one branch, not the whole module.' },
+    { expect: 'An observation, its effect on the task, the evidence with its label, and what remains uncertain.', fields: ['observation', 'task-impact', 'evidence', 'uncertainty'],
+      terms: [{ term: 'Heuristic', meaning: 'A rule of thumb from experience. It flags a risk; it cannot prove anyone failed.' }, { term: 'Taste', meaning: 'A preference about looks. Keep it out unless it affects the task.' }],
+      start: 'Write the observation as if describing a photo to someone on the phone.', enough: 'The evidence line names a source: your walkthrough, a participant, or a heuristic.' },
+    { expect: 'The original kept safe and one bounded change.', fields: ['original-reference', 'repair'],
+      start: 'Copy or photograph the original before touching it.', enough: 'Everything you changed serves the one criterion; nothing else moved.' },
+    { expect: 'A before/after comparison and a concrete way to check it.', fields: ['comparison', 'check'],
+      start: 'Put both sheets next to each other and describe the first thing you notice in each.', enough: 'The check is something you could watch or count, not “it looks clearer”.' },
+    { expect: 'What still needs testing. The worksheet is saved as you type.', fields: ['limitations'],
+      start: 'Finish the sentence “This repair would be proven wrong if…”.', enough: 'The repair is described as untested, not as fixed.' },
+  ],
+};
+
+const decisionNote: Guided = {
+  route: textRoute,
+  worksheet: [
+    { id: 'select', title: 'The decision', fields: [
+      { id: 'decision', label: 'One decision from Module 1', kind: 'short', example: 'Example (made up): Putting what to bring above the Reserve button.' },
+      { id: 'artifact-refs', label: 'The artefacts that show it', kind: 'short', hint: 'File names or worksheet steps.' },
+    ] },
+    { id: 'write', title: 'The one-page note', intro: 'Short bullets under each heading; a page at most.', fields: [
+      { id: 'context', label: 'Context', kind: 'long' },
+      { id: 'evidence', label: 'Evidence, with its source labels', kind: 'long', hint: 'Observed, reported by a participant, or assumed. Say which.' },
+      { id: 'options', label: 'Options considered', kind: 'long' },
+      { id: 'choice', label: 'The choice', kind: 'long' },
+      { id: 'trade-off', label: 'The trade-off', kind: 'long' },
+      { id: 'next-check', label: 'The next check', kind: 'long', example: 'Example (made up): I still need to watch a visitor use the summary; until then the benefit is untested.' },
+    ] },
+    { id: 'present', title: 'Say it aloud', fields: [
+      { id: 'unclear', label: 'Where the reasoning was unclear when spoken', kind: 'short' },
+    ] },
+    { id: 'plan', title: 'Plan', fields: [
+      { id: 'strength', label: 'One strength with the evidence behind it', kind: 'short' },
+      { id: 'gap-1', label: 'Gap 1', kind: 'short' },
+      { id: 'gap-2', label: 'Gap 2', kind: 'short' },
+      { id: 'repair', label: 'One small repair (reduce scope until it fits a session)', kind: 'short' },
+      { id: 'next-action', label: 'Your next learning action', kind: 'short' },
+    ] },
+  ],
+  guide: [
+    { expect: 'One decision and the artefacts that show it.', fields: ['decision', 'artifact-refs'],
+      terms: [{ term: 'Decision', meaning: 'A place where you could have done something else and chose not to.' }],
+      start: 'Pick the decision you would find hardest to defend; it will teach the most.', enough: 'Each artefact reference points at something that exists.' },
+    { expect: 'Six short sections: context, evidence, options, choice, trade-off, next check.', fields: ['context', 'evidence', 'options', 'choice', 'trade-off', 'next-check'],
+      example: 'Example (made up): “I moved materials before reservation because preparation is the reported concern. A checkbox records a click, not comprehension. I still need to observe visitors using the summary.”',
+      terms: [{ term: 'Trade-off', meaning: 'What you gave up or made worse by choosing this.' }, { term: 'Concept', meaning: 'An unshipped design. It can show reasoning; it cannot show impact.' }],
+      start: 'Fill Evidence first; if it is thin, the Choice section should say so.', enough: 'No sentence claims people will prefer it; every claim has a source label.' },
+    { expect: 'The place your spoken explanation went unclear.', fields: ['unclear'],
+      start: 'Set a five-minute timer and explain the note to an empty chair, then once more to a person if you can.', enough: 'You noticed at least one place you reached for a design word instead of an observation.' },
+    { expect: 'One evidenced strength, two gaps, one bounded repair and a next action.', fields: ['strength', 'gap-1', 'gap-2', 'repair', 'next-action'],
+      terms: [{ term: 'Gap', meaning: 'Something a reviewer would ask for that you cannot yet show.' }],
+      start: 'Look at the Module 1 review criteria; the two you cannot evidence are your gaps.', enough: 'The repair names an artefact and fits in one sitting.' },
+    { expect: 'The note is saved; time is recorded only if useful. This lesson is optional.', fields: [],
+      start: 'Choose Ready for review in Your work if you want creator input on the note.', enough: 'Nothing more is required; stopping here is fine.' },
+  ],
+};
+
 export const activities: Record<string, Activity> = {
   'week1-day1-v1': {
     activity: 'Design detective',
@@ -145,7 +423,8 @@ export const activities: Record<string, Activity> = {
     adequate: 'Three different approaches address the same need; the two priority uncertainties have consequences and disconfirming evidence.',
     handoff: 'Keep the two priority uncertainties open for the interview lesson.',
     coach: 'Role-play a workshop organizer in an explicitly fictional rehearsal. Ask why my preferred option is worth its cost; do not invent customer findings.',
-    alternative: 'Write the organizer’s objection “We cannot add ongoing staff work.” Reconsider your three options and defend a choice.'
+    alternative: 'Write the organizer’s objection “We cannot add ongoing staff work.” Reconsider your three options and defend a choice.',
+    ...framing,
   },
   'week1-day3-v1': {
     activity: 'Interview rehearsal and field mission',
@@ -156,7 +435,8 @@ export const activities: Record<string, Activity> = {
     adequate: 'Questions invite past experiences; consent and withdrawal are explained; notes distinguish real participation from rehearsal.',
     handoff: 'Use anonymized observations in your flow; keep recruitment gaps visible.',
     coach: 'Review my interview questions for leading wording. Ask me to repair one question at a time. Do not answer as a real participant or supply research findings.',
-    alternative: 'Underline words that suggest an answer, remove them, and rehearse the question aloud without explaining your proposed solution.'
+    alternative: 'Underline words that suggest an answer, remove them, and rehearse the question aloud without explaining your proposed solution.',
+    ...interviewing,
   },
   'week1-day4-v1': {
     activity: 'Paper flow laboratory', visual: true,
@@ -165,7 +445,8 @@ export const activities: Record<string, Activity> = {
     first: 'A | [starting action] | [what appears] | [node ID] | [alternative route] | [source or assumption]',
     hints: ['Use one box per state and label arrows with the action that changes state.', 'A failure box needs a next action: revise, retry, leave safely or choose another option.'],
     adequate: 'A reader can trace the path and recover from failure without guessing what an arrow means.',
-    handoff: 'Bring the numbered flow to the three-screen interface exercise.'
+    handoff: 'Bring the numbered flow to the three-screen interface exercise.',
+    ...flowMapping,
   },
   'week1-day5-v1': {
     activity: 'Screen construction workshop', visual: true,
@@ -174,7 +455,8 @@ export const activities: Record<string, Activity> = {
     first: '[screen name and node] | [verb + object] | [actual content] | [feedback] | [goal supported]',
     hints: ['Draw screen boundaries first, then place the information needed before the main action.', 'Cover your annotations and try following only the visible labels. Add missing feedback where you must explain aloud.'],
     adequate: 'Three screens trace to the flow, with legible labels, feedback and a reason for information priority.',
-    handoff: 'Save the original screens before critique so revisions remain comparable.'
+    handoff: 'Save the original screens before critique so revisions remain comparable.',
+    ...screenMaking,
   },
   'week1-day6-v1': {
     activity: 'Repair clinic', visual: true,
@@ -185,7 +467,8 @@ export const activities: Record<string, Activity> = {
     adequate: 'The before/after pair addresses a named concern with a bounded change and a testable expectation.',
     handoff: 'Use the comparison in your decision presentation.',
     coach: 'Question whether my repair addresses the stated concern. Ask for one counterexample and leave the redesign to me.',
-    alternative: 'Try to describe a situation where your repair would make the task harder. Record how you would check that risk.'
+    alternative: 'Try to describe a situation where your repair would make the task harder. Record how you would check that risk.',
+    ...repairClinic,
   },
   'week1-day7-v1': {
     activity: 'Design review rehearsal',
@@ -196,7 +479,8 @@ export const activities: Record<string, Activity> = {
     adequate: 'A one-page account connects a decision to evidence and acknowledges two gaps without claiming measured impact.',
     handoff: 'Bring the evidence gaps into Module 2 research planning.',
     coach: 'Act as a review audience. Ask one question about the weakest evidence link in my decision note. Do not score or rewrite my presentation.',
-    alternative: 'Record or speak the presentation once. Note where you cannot point to supporting work, then repair that sentence.'
+    alternative: 'Record or speak the presentation once. Note where you cannot point to supporting work, then repair that sentence.',
+    ...decisionNote,
   },
   'week2-day1-v1': {
     activity: 'Research planning desk',

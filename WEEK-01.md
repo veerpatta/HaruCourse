@@ -414,6 +414,8 @@ Bring: Bring Lesson 1’s walkthrough and evidence table. Use workshop preparati
 - Explore alternatives before narrowing the response.
 - Check assumptions with serious consequences and weak evidence first.
 
+How this lesson works: Do has 5 short steps with an in-app worksheet that saves as you type; Learn remembers which step you were on.
+
 <details>
 <summary>Worked example</summary>
 
@@ -448,42 +450,165 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 
 Use the diagnostic workshop report: attendees may not know what to bring. Explore three responses without treating that report as proven.
 
-**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
 
 - Starting material: Bring Lesson 1’s walkthrough and evidence table. Use workshop preparation as the practice context.
 - Create HaruCourse/Practice/week1-day2-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 
+</details>
+
+#### 1. Review
+
+- Read your earlier notes.
+- Mark explanations you have not verified.
+
+**You should end up with:** Two explanations from Lesson 1 that you wrote down but never checked.
+
+Worksheet fields for this step:
+
+- Unverified explanation 1
+- Unverified explanation 2
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Frame the problem before the feature
+- **Verified:** You saw it happen, or someone told you it happened to them. Everything else is a guess, however sensible.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Open your Lesson 1 worksheet and look only at the rows labelled inferred or unknown.
 
-Person and situation | Unmet goal and consequence | Assumption | Option | Constraint | Evidence needed
---- | --- | --- | --- | --- | ---
-[attendee situation] | [goal, without naming a feature] | [unverified claim] | [your option] | [restriction] | [test]
-
-## Output checklist
-- [ ] Three problem frames
-- [ ] Six assumptions and two priority uncertainties
-- [ ] Three alternatives with constraints and weaknesses
-- [ ] One investigation decision
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Each line is something you believe about other people, not something you observed yourself.
 
 </details>
+
+#### 2. Frame
+
+- Write three person–situation–goal–consequence statements about workshop attendance.
+- Remove feature names such as checkbox or reminder.
+
+**You should end up with:** Three frames, each naming a person, a situation, an unmet goal and a consequence, with no feature words.
+
+Worksheet fields for this step:
+
+- Frame 1 — One sentence each for who, when, what they need and what goes wrong if they do not get it.
+- Frame 2
+- Frame 3
+
+<details>
+<summary>Help with this step</summary>
+
+- **Problem frame:** A description of who is stuck, when, and what it costs them. It does not say what to build.
+- **Feature:** A thing you could build: a reminder, a checkbox, a page. If a frame contains one, it has jumped to a solution.
+
+Stuck starting? Write “A [kind of person], [when], needs [goal], otherwise [what goes wrong].” three times with different people or moments.
+
+Is it enough? You could hand each frame to another designer and they could propose something you did not think of.
+
+</details>
+
+#### 3. Prioritize uncertainty
+
+- List six assumptions with consequences and confidence.
+- Choose two to investigate.
+- For each, name evidence that would change your mind.
+
+**You should end up with:** Six assumptions with consequence and confidence, and the two you will investigate with what would change your mind.
+
+Worksheet fields for this step:
+
+- Assumption 1
+- Assumption 2
+- Assumption 3
+- Assumption 4
+- Assumption 5
+- Assumption 6
+- First uncertainty to investigate — The one where being wrong costs most and you know least.
+- What evidence would change your mind about it?
+- Second uncertainty to investigate
+- What evidence would change your mind about it?
+
+<details>
+<summary>Example</summary>
+
+Example (made up): “The organiser sends the list a week before” has low confidence and a serious consequence, so it goes first; “attendees own an apron” is low-consequence and waits.
+
+</details>
+
+<details>
+<summary>Help with this step</summary>
+
+- **Assumption:** Something your frames depend on that you have not checked.
+- **Disconfirming evidence:** What you would have to see to conclude you were wrong. If nothing could, it is not an investigation.
+
+Stuck starting? Take each frame and ask “this is only a problem if…”; the ending is an assumption.
+
+Is it enough? The two priorities are the ones where being wrong costs most and you know least, and each has something concrete that could disprove it.
+
+</details>
+
+#### 4. Explore
+
+- Sketch three different responses to the workshop preparation problem.
+- For each, note a constraint and a weakness.
+
+**You should end up with:** Three different responses, each with a constraint and a weakness.
+
+Worksheet fields for this step:
+
+- Response 1
+- Response 1 · a constraint it must respect — Money, staff time, the venue, what the organiser will accept.
+- Response 1 · its weakness
+- Response 2
+- Response 2 · a constraint it must respect
+- Response 2 · its weakness
+- Response 3
+- Response 3 · a constraint it must respect
+- Response 3 · its weakness
+
+<details>
+<summary>Help with this step</summary>
+
+- **Information change:** Change what people are told, or when.
+- **Process change:** Change what the organiser or venue does, without any screen.
+- **Interface change:** Change something on the screen.
+
+Stuck starting? Write the information change first; it is usually the cheapest and shows whether a screen is needed at all.
+
+Is it enough? No two responses are variations of the same idea, and every weakness is one you would say to the organiser.
+
+</details>
+
+#### 5. Decide
+
+- Choose the next investigation and explain why.
+- Save the frames, assumptions and alternatives.
+
+**You should end up with:** One chosen investigation and the reason it comes first. The worksheet is saved as you type.
+
+Worksheet fields for this step:
+
+- The next investigation you will do — Which uncertainty, with whom, and what you will look for.
+- Why this one first
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Pick the priority uncertainty from step 3 and name a person you could actually ask.
+
+Is it enough? The reason compares the cost of being wrong, not which response you like.
+
+</details>
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -645,6 +770,8 @@ Bring: Bring Lesson 2’s two priority uncertainties and a place to take notes.
 - Explain consent and note use before beginning; ask permission before recording.
 - One conversation cannot establish how common a behavior is.
 
+How this lesson works: Do has 5 short steps with an in-app worksheet that saves as you type; Learn remembers which step you were on.
+
 <details>
 <summary>Worked example</summary>
 
@@ -679,42 +806,158 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 
 Prepare questions about a recent real event experience, then invite a consenting adult you can reach. A rehearsal tests your questions, not your hypothesis.
 
-**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
 
 - Starting material: Bring Lesson 2’s two priority uncertainties and a place to take notes.
 - Create HaruCourse/Practice/week1-day3-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 
+</details>
+
+#### 1. Prepare
+
+- Read the interview reference.
+- Write the study purpose and a voluntary-consent introduction.
+
+**You should end up with:** One-sentence purpose and the consent words you will actually say.
+
+Worksheet fields for this step:
+
+- What this conversation is for, in one sentence
+- What you will say before starting — Who you are, what the notes are for, that they can stop or skip any question, and whether you will record. Ask before recording.
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Ask about real experiences
+- **Consent:** The person knows what you are doing with their words and agrees, before you start. It can be withdrawn at any point.
+- **Research question:** What you are uncertain about. You do not ask it out loud; it decides what you ask.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Copy the example consent introduction and change every phrase until it sounds like you.
 
-Question | What uncertainty it addresses | Neutral follow-up | Session ID | Observation | Interpretation
---- | --- | --- | --- | --- | ---
-[ask about a specific past occasion] | [uncertainty] | [follow-up] | [anonymous ID or REHEARSAL] | [leave blank until session] | [separate inference]
-
-## Output checklist
-- [ ] Research objective and consent introduction
-- [ ] Six open questions and two neutral follow-ups
-- [ ] Labelled notes or an explicit evidence gap
-- [ ] One improved question
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Someone hearing the introduction would know they can stop, and whether they are being recorded.
 
 </details>
+
+#### 2. Write
+
+- Choose one uncertainty from Lesson 2.
+- Draft six questions about recent experience and two neutral follow-ups.
+- Remove leading language and predictions.
+
+**You should end up with:** Six open questions about a recent experience and two neutral follow-ups.
+
+Worksheet fields for this step:
+
+- The uncertainty from Lesson 2 these questions serve
+- Question 1 — Start with “Tell me about the last time…” or “What happened when…”.
+- Question 2
+- Question 3
+- Question 4
+- Question 5
+- Question 6
+- Neutral follow-up 1
+- Neutral follow-up 2 — A follow-up that works after any answer: “Can you say more about that?”
+
+<details>
+<summary>Example</summary>
+
+Example (made up): Leading: “Was the materials list hard to find?” Open: “How did you find out what to bring?”
+
+</details>
+
+<details>
+<summary>Help with this step</summary>
+
+- **Leading question:** A question that contains the answer you hope for. “Was it confusing?” tells them it was confusing.
+- **Open question:** One that cannot be answered yes or no and does not name your idea.
+
+Stuck starting? Write “Tell me about the last time you…” six times and finish each with a different moment from the experience.
+
+Is it enough? No question mentions a feature, a screen or the future; each can be answered by telling a story.
+
+</details>
+
+#### 3. Practice
+
+- With consent, hold a 15-minute practice conversation.
+- If nobody is available, rehearse the guide and mark “No participant evidence collected.”
+- Exclude identifying details and private research from AI tools.
+
+**You should end up with:** Honest status, then observations kept apart from interpretations. A rehearsal with no participant is a valid result.
+
+Worksheet fields for this step:
+
+- What actually happened (Real conversation with a consenting adult / Rehearsal only: no participant evidence collected) — Choose honestly. A rehearsal is useful and is not participant evidence.
+- What the person said or did (observations only) — No names or identifying details. If you were not given permission to quote, paraphrase.
+- What you think it means (interpretations)
+- Exact words worth keeping, if consented — Leave empty if you did not ask permission to quote.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Observation:** What was said or done, as close to their words as you can.
+- **Interpretation:** Your reading of why. Keep it in its own box so nobody mistakes it for what they said.
+
+Stuck starting? If nobody is available today, read the questions aloud, note where you stumbled, choose “Rehearsal only” and leave observations empty.
+
+Is it enough? Every line in observations could be checked against what was said; nothing private or identifying is written down.
+
+</details>
+
+#### 4. Distinguish
+
+- Separate observations, interpretations and follow-up questions.
+- Keep actual quotations distinct from your explanation.
+
+**You should end up with:** The questions the conversation raised, separated from what you observed.
+
+Worksheet fields for this step:
+
+- Questions the conversation raised for next time
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Reread the interpretations box; each guess is a follow-up question.
+
+Is it enough? Each item is a question, not a conclusion.
+
+</details>
+
+#### 5. Improve
+
+- Rewrite one weak question.
+- Save your guide, labelled notes and next research question.
+
+**You should end up with:** One rewritten question and your next research question. The worksheet is saved as you type.
+
+Worksheet fields for this step:
+
+- The weakest question, as written
+- The same question, rewritten
+- Your next research question
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Pick the question you felt awkward asking; that is usually the leading one.
+
+Is it enough? The rewrite asks about a past event and would work with a stranger.
+
+</details>
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -877,6 +1120,8 @@ Bring: Bring your workshop problem frame and interview notes or labelled evidenc
 - Group and label information using the visitor’s task language.
 - Show price and preparation requirements before commitment.
 
+How this lesson works: Do has 5 short steps with an in-app worksheet that saves as you type; Learn remembers which step you were on.
+
 <details>
 <summary>Worked example</summary>
 
@@ -911,42 +1156,155 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 
 Lay out the workshop reservation journey on paper. Trace a normal route, then inject “no places left” and draw how the person recovers.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Draw the reservation flow on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: Bring your workshop problem frame and interview notes or labelled evidence gaps. Use paper or a familiar drawing tool.
 - Create HaruCourse/Practice/week1-day4-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Define
+
+- Write the reservation trigger and successful outcome.
+- List information needed before committing.
+
+**You should end up with:** A trigger, a successful outcome and the list of what the person needs to know before committing.
+
+Worksheet fields for this step:
+
+- What starts the reservation (the trigger)
+- The successful outcome — What is true for the person at the end, not which screen shows.
+- Information the person needs before committing — Price, date and time, what to bring, refund rule, how many places are left.
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Map the task and its failures
+- **Trigger:** The moment the task starts, from the person’s side.
+- **Commitment:** The point after which backing out costs something: paying, or promising a place.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Write the outcome as “She has a place on Saturday and knows what to bring.”
 
-Node ID | Person’s action | System response | Next node | Failure and recovery | Evidence / assumption
---- | --- | --- | --- | --- | ---
-A | [starting action] | [what appears] | [node ID] | [alternative route] | [source or assumption]
-
-## Output checklist
-- [ ] One annotated reservation flow
-- [ ] Three failure branches with recovery messages
-- [ ] One repaired dead end and explanation
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Everything in the information list appears somewhere before the Reserve action in the next step.
 
 </details>
+
+#### 2. Map
+
+- Draw the successful reservation path.
+- Label actions and decisions.
+- Place price and materials before the reservation decision.
+
+**You should end up with:** The successful path on paper, and its boxes and decision points recorded here.
+
+Worksheet fields for this step:
+
+- Boxes on the successful path
+- The decision points, and what decides them — Diamonds on paper: places left? payment confirmed?
+
+<details>
+<summary>Example</summary>
+
+Example (made up): A box is a state the person is in; an arrow is what they do to leave it. “Details page” is a box; “taps Reserve” is an arrow.
+
+</details>
+
+<details>
+<summary>Help with this step</summary>
+
+- **Node:** One box: a state the person is in. Give each a letter so the failures can point back to it.
+- **Decision:** A point where the path splits depending on something the person or the system knows.
+
+Stuck starting? Draw the trigger box at the top left and the outcome box at the bottom right, then fill the shortest path between them.
+
+Is it enough? Price and materials appear before the Reserve arrow, and every arrow has a label.
+
+</details>
+
+#### 3. Recover
+
+- Add branches for a full workshop, invalid input and interrupted confirmation.
+- Write a message and next action for each.
+- Preserve entered values where possible; check uncertain payment status before retrying.
+
+**You should end up with:** Three failure branches, each with a message and a next action.
+
+Worksheet fields for this step:
+
+- Workshop full · the message the person sees
+- Workshop full · the next action offered
+- Invalid input · the message — Say what was wrong and how to fix it; keep what they typed.
+- Invalid input · the next action
+- Interrupted confirmation · the message — Distinguish “we are checking” from “this failed” so nobody pays twice.
+- Interrupted confirmation · the next action
+
+<details>
+<summary>Help with this step</summary>
+
+- **Recovery:** What the person can do next without starting over: change a date, fix a field, check a status.
+- **Dead end:** A box with no arrow out except going back to the start.
+
+Stuck starting? Take the confirmation box and ask “what if the connection dropped right here?”
+
+Is it enough? Each next action is something the person can do, not something the system will do for them.
+
+</details>
+
+#### 4. Walk through
+
+- Trace every branch aloud as a first-time visitor.
+- Mark missing information and dead ends.
+
+**You should end up with:** A list of stumbles found by tracing every branch aloud, and the one dead end you will repair.
+
+Worksheet fields for this step:
+
+- What a first-time visitor would miss or get stuck on — Trace every branch aloud. Write each stumble as one line.
+- The dead end you chose to repair
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read each box aloud as if you had never seen the app, and stop wherever you have to explain.
+
+Is it enough? At least one finding is missing information rather than a missing arrow.
+
+</details>
+
+#### 5. Revise
+
+- Repair one dead end.
+- Save the flow and explain what changed.
+
+**You should end up with:** What changed on the sheet and why, plus where the photo lives. The worksheet is saved as you type.
+
+Worksheet fields for this step:
+
+- What changed, and why
+- File name or location of the paper flow (photo or scan) — A name only; nothing is uploaded here.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Redraw only the repaired branch on a fresh sheet; keep the original.
+
+Is it enough? Someone reading the change could find the branch on the original sheet.
+
+</details>
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -1096,6 +1454,8 @@ Bring: Bring Lesson 4’s flow. Use paper or a familiar tool; no new software is
 - Persistent labels, clear errors and logical reading order support access.
 - Mockups specify accessibility intent; runtime tests verify implemented behavior.
 
+How this lesson works: Do has 5 short steps with an in-app worksheet that saves as you type; Learn remembers which step you were on.
+
 <details>
 <summary>Worked example</summary>
 
@@ -1130,43 +1490,150 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 
 Turn your numbered flow into three paper screens. Use real labels and content so another person can follow the task without your narration.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Draw the two screens at two widths on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: Bring Lesson 4’s flow. Use paper or a familiar tool; no new software is required.
 - Create HaruCourse/Practice/week1-day5-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Learn
+
+- Read the W3C accessibility introduction.
+- Choose three considerations that affect your flow.
+
+**You should end up with:** Three considerations from the reading, each tied to a place in your flow.
+
+Worksheet fields for this step:
+
+- Consideration 1 and where it touches your flow
+- Consideration 2 and where it touches your flow
+- Consideration 3 and where it touches your flow
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Make the interface understandable
+- **Screen reader:** Software that reads the page aloud in code order, so order and labels matter more than position.
+- **Persistent label:** A label that stays visible after typing, unlike placeholder text that disappears.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Read only the “Making the Web Accessible” part first and pick the three lines that mention something your screens contain.
 
-Screen / flow node | Main action | Information needed | State / error | Why this order
---- | --- | --- | --- | ---
-[screen name and node] | [verb + object] | [actual content] | [feedback] | [goal supported]
-
-## Output checklist
-- [ ] Details and reservation screens at narrow and wide widths
-- [ ] Reading order, labels, recovery and stacking annotations
-- [ ] One error state
-- [ ] An unresolved issue for review
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Each consideration names an element on your sketch, not a general principle.
 
 </details>
+
+#### 2. Sketch
+
+- Sketch workshop details and reservation screens at two widths.
+- Keep preparation information before Reserve.
+- Use spacing, grouping and words; do not rely on color alone.
+
+**You should end up with:** Four sketches on paper (two screens at two widths), recorded here top to bottom.
+
+Worksheet fields for this step:
+
+- Workshop details · narrow (phone)
+- Workshop details · wide (desktop) — Same content; say what sits beside what.
+- Reservation form · narrow
+- Reservation form · wide
+
+<details>
+<summary>Help with this step</summary>
+
+- **Hierarchy:** What you see first, second and third. It should follow the next decision the person has to make.
+- **Reflow:** Content rearranging into one column on a phone rather than shrinking the desktop layout.
+
+Stuck starting? Draw the phone version first; the wide version is the same list placed side by side.
+
+Is it enough? What to bring and the price appear above Reserve at both widths.
+
+</details>
+
+#### 3. Specify
+
+- Annotate persistent labels, reading/focus order and stacking.
+- Explain how errors retain input and can be corrected.
+- List keyboard and screen-reader checks that need implementation.
+
+**You should end up with:** Order, labels, stacking, error recovery, and an honest list of checks that need a built version.
+
+Worksheet fields for this step:
+
+- Reading and focus order — Number the elements in the order a keyboard or screen reader would meet them.
+- Which labels stay visible while typing, and why
+- What stacks, wraps or moves between wide and narrow — Content reflows; it does not shrink.
+- How an error keeps what was typed and says how to fix it
+- Keyboard and screen-reader checks that still need a built version — A drawing cannot prove these. List them as still to do.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Focus order:** The sequence the Tab key moves through. It should match the reading order.
+
+Stuck starting? Number every element on the phone sketch in the order you would want it read aloud.
+
+Is it enough? Nothing here claims the screens are accessible; it says what was designed and what still needs testing.
+
+</details>
+
+#### 4. Critique
+
+- Compare the screens against your flow.
+- Add one missing error state.
+- Try longer labels and larger text.
+
+**You should end up with:** One added error state and one change from trying longer labels or larger text.
+
+Worksheet fields for this step:
+
+- The error state you added
+- What broke with longer labels or larger text, and what you changed
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Rewrite one label twice as long on the sketch and see what it collides with.
+
+Is it enough? The error says what was wrong and how to fix it, and the typed values survive.
+
+</details>
+
+#### 5. Submit
+
+- Save the flow and screen references.
+- Name the main unresolved issue.
+- Add notes and a work reference before selecting Ready for review.
+
+**You should end up with:** The unresolved issue and where the sketches live. The worksheet is saved as you type.
+
+Worksheet fields for this step:
+
+- The main unresolved issue for review
+- File names or location of the screen sketches — Names only; nothing is uploaded here.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Choose the issue you would most want a second opinion on, not the smallest one.
+
+Is it enough? Your work has a reference or the worksheet is filled, so Ready for review is available.
+
+</details>
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -1327,6 +1794,8 @@ Bring: Optional. Bring one flow or screen from Lessons 1–5 and its review crit
 - Prioritize a task blocker before a matter of taste.
 - Keep the original so the change can be explained.
 
+How this lesson works: Do has 5 short steps with an in-app worksheet that saves as you type; Learn remembers which step you were on.
+
 <details>
 <summary>Worked example</summary>
 
@@ -1360,42 +1829,140 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 
 Choose one weak point in your screens. Preserve the original, make one focused repair and explain what still needs testing.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Draw the repaired screen or flow on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: Optional. Bring one flow or screen from Lessons 1–5 and its review criteria.
 - Create HaruCourse/Practice/week1-day6-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Review
+
+- Choose one weak criterion from the module.
+- Identify the flow or screen that shows it.
+
+**You should end up with:** One criterion and the artefact that shows the weakness.
+
+Worksheet fields for this step:
+
+- The review criterion you are weakest on — Pick from any Module 1 lesson’s review criteria.
+- The flow or screen that shows it
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Critique and repair one weak point
+- **Task blocker:** Something that stops the person finishing. It comes before anything that is merely ugly.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Reread the Check section of each Module 1 lesson and choose the criterion you skipped.
 
-Location | Heuristic concern | Evidence | Before | Repair | Expected difference | Next check
---- | --- | --- | --- | --- | --- | ---
-[screen and control] | [principle] | [observation, not a verdict] | [reference] | [your change] | [hypothesis] | [check]
-
-## Output checklist
-- [ ] One critique with evidence and uncertainty
-- [ ] Before and after versions
-- [ ] A next check
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? The artefact is one screen or one branch, not the whole module.
 
 </details>
+
+#### 2. Critique
+
+- Write the observation, task impact, evidence and uncertainty.
+- Ask for creator input if available.
+
+**You should end up with:** An observation, its effect on the task, the evidence with its label, and what remains uncertain.
+
+Worksheet fields for this step:
+
+- What you can point to
+- What it stops the person doing
+- The evidence for this, and its source label — Observed in your walkthrough, said by a participant, or a heuristic risk?
+- What you are not sure about
+
+<details>
+<summary>Help with this step</summary>
+
+- **Heuristic:** A rule of thumb from experience. It flags a risk; it cannot prove anyone failed.
+- **Taste:** A preference about looks. Keep it out unless it affects the task.
+
+Stuck starting? Write the observation as if describing a photo to someone on the phone.
+
+Is it enough? The evidence line names a source: your walkthrough, a participant, or a heuristic.
+
+</details>
+
+#### 3. Repair
+
+- Keep a copy of the original.
+- Repair only the chosen issue.
+
+**You should end up with:** The original kept safe and one bounded change.
+
+Worksheet fields for this step:
+
+- Where the untouched original is kept
+- What you changed, and only that
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Copy or photograph the original before touching it.
+
+Is it enough? Everything you changed serves the one criterion; nothing else moved.
+
+</details>
+
+#### 4. Compare
+
+- Compare both versions.
+- Explain the change and how you would check whether it helps.
+
+**You should end up with:** A before/after comparison and a concrete way to check it.
+
+Worksheet fields for this step:
+
+- Before and after, side by side — What a visitor sees first in each version, and what they can do next.
+- How you would check whether it helps
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Put both sheets next to each other and describe the first thing you notice in each.
+
+Is it enough? The check is something you could watch or count, not “it looks clearer”.
+
+</details>
+
+#### 5. Save
+
+- Save both references and remaining limitations.
+- Skip this optional lesson whenever you prefer.
+
+**You should end up with:** What still needs testing. The worksheet is saved as you type.
+
+Worksheet fields for this step:
+
+- What this repair still does not prove
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Finish the sentence “This repair would be proven wrong if…”.
+
+Is it enough? The repair is described as untested, not as fixed.
+
+</details>
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -1565,6 +2132,8 @@ Bring: Optional. Bring one design decision, its alternatives and supporting arti
 - A concept shows reasoning; it cannot prove production impact.
 - Choose your next practice from evidence gaps, not tool trends.
 
+How this lesson works: Do has 5 short steps with an in-app worksheet that saves as you type; Learn remembers which step you were on.
+
 <details>
 <summary>Worked example</summary>
 
@@ -1598,41 +2167,147 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 
 Present one decision using your own artifacts. Explain it aloud, notice where you rely on unsupported claims, then revise the note.
 
-**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
 
 - Starting material: Optional. Bring one design decision, its alternatives and supporting artifacts from Module 1.
 - Create HaruCourse/Practice/week1-day7-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 
+</details>
+
+#### 1. Select
+
+- Choose one decision.
+- Gather its evidence and artifact references.
+
+**You should end up with:** One decision and the artefacts that show it.
+
+Worksheet fields for this step:
+
+- One decision from Module 1
+- The artefacts that show it — File names or worksheet steps.
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Explain decisions and plan your next steps
+- **Decision:** A place where you could have done something else and chose not to.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Pick the decision you would find hardest to defend; it will teach the most.
 
-Context | Evidence reference | Alternatives | Decision | Trade-off | Next check
---- | --- | --- | --- | --- | ---
-[bounded task] | [artifact + location] | [options considered] | [choice] | [cost] | [missing evidence]
-
-## Output checklist
-- [ ] A one-page decision note
-- [ ] One evidence-backed strength and two gaps
-- [ ] One bounded repair and next learning action
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Each artefact reference points at something that exists.
 
 </details>
+
+#### 2. Write
+
+- Write six short headings: context, evidence, options, choice, trade-off, next check.
+- Add concise bullets under each; keep it to one page.
+
+**You should end up with:** Six short sections: context, evidence, options, choice, trade-off, next check.
+
+Worksheet fields for this step:
+
+- Context
+- Evidence, with its source labels — Observed, reported by a participant, or assumed. Say which.
+- Options considered
+- The choice
+- The trade-off
+- The next check
+
+<details>
+<summary>Example</summary>
+
+Example (made up): “I moved materials before reservation because preparation is the reported concern. A checkbox records a click, not comprehension. I still need to observe visitors using the summary.”
+
+</details>
+
+<details>
+<summary>Help with this step</summary>
+
+- **Trade-off:** What you gave up or made worse by choosing this.
+- **Concept:** An unshipped design. It can show reasoning; it cannot show impact.
+
+Stuck starting? Fill Evidence first; if it is thin, the Choice section should say so.
+
+Is it enough? No sentence claims people will prefer it; every claim has a source label.
+
+</details>
+
+#### 3. Present
+
+- Explain the decision aloud in five minutes.
+- Identify unclear reasoning and try once more.
+
+**You should end up with:** The place your spoken explanation went unclear.
+
+Worksheet fields for this step:
+
+- Where the reasoning was unclear when spoken
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Set a five-minute timer and explain the note to an empty chair, then once more to a person if you can.
+
+Is it enough? You noticed at least one place you reached for a design word instead of an observation.
+
+</details>
+
+#### 4. Plan
+
+- Record one evidenced strength and two gaps.
+- Choose one small repair; reduce scope if needed.
+- Request creator review.
+
+**You should end up with:** One evidenced strength, two gaps, one bounded repair and a next action.
+
+Worksheet fields for this step:
+
+- One strength with the evidence behind it
+- Gap 1
+- Gap 2
+- One small repair (reduce scope until it fits a session)
+- Your next learning action
+
+<details>
+<summary>Help with this step</summary>
+
+- **Gap:** Something a reviewer would ask for that you cannot yet show.
+
+Stuck starting? Look at the Module 1 review criteria; the two you cannot evidence are your gaps.
+
+Is it enough? The repair names an artefact and fits in one sitting.
+
+</details>
+
+#### 5. Save
+
+- Save the decision note and next action.
+- Record actual time only if useful; this lesson is optional.
+
+**You should end up with:** The note is saved; time is recorded only if useful. This lesson is optional.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Choose Ready for review in Your work if you want creator input on the note.
+
+Is it enough? Nothing more is required; stopping here is fine.
+
+</details>
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
