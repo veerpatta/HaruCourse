@@ -16,11 +16,51 @@ export type WorksheetSection = {
   intro?: string;
   fields: WorksheetField[];
 };
+// "See it": one complete made-up example that shows the reasoning rather than
+// the finished answer — including the turn the author nearly took and got
+// wrong, what the choice cost, and what stayed unknown. Always labelled as
+// invented; never presented as anyone's research.
+export type Demonstration = {
+  scenario: string;
+  beats: { label: string; text: string }[];
+  wrongTurn: string;
+  tradeoff: string;
+  uncertainty: string;
+};
+// "Try it with help": one small supplied case, answered before any feedback
+// appears. Every option explains why it is right or wrong, so a plausible
+// wrong answer teaches rather than just failing.
+export type Choice = { label: string; correct?: true; feedback: string };
+export type SupportedPractice = {
+  material: string;
+  question: string;
+  options: Choice[];
+  then: string;
+};
+// "Check the reason": the learner answers first, then reads why. `repair`
+// sends one specific issue back into their own artefact. Nothing computes or
+// stores a score; this is formative only and the answer is not saved.
+export type ActiveCheck = {
+  question: string;
+  options: Choice[];
+  repair: string;
+  recheck: string;
+};
+// "Save and continue" for the route the lesson actually recommends, so the
+// in-app worksheet is not contradicted by generic file instructions.
+export type SaveRoute = {
+  auto: string;
+  external: string;
+  creator: string;
+  next: string;
+};
 // Guidance for one practice step, aligned by index with Lesson.steps. The
 // step's `instructions` remain the actions; this adds what the learner should
 // have at the end, an optional labelled example, word explanations, a way to
 // start and a way to judge whether it is enough. `fields` names the
-// worksheet fields filled during this step.
+// worksheet fields filled during this step. `reveal` keeps a repeated set of
+// fields from arriving all at once: only `first` are shown until the learner
+// asks for the next group.
 export type GuideStep = {
   expect: string;
   fields?: string[];
@@ -29,6 +69,10 @@ export type GuideStep = {
   start?: string;
   enough?: string;
   video?: string;
+  demo?: Demonstration;
+  supported?: SupportedPractice;
+  // `count` bounds the repeated block; fields after it always show.
+  reveal?: { first: number; group: number; count?: number; addLabel: string; note: string };
 };
 // A verified video segment paired with an immediate action. The catalog row
 // (RESOURCE-LIBRARY.md) holds the access evidence; src/reading.ts holds the
@@ -63,6 +107,9 @@ export type Apprenticeship = {
   worksheet?: WorksheetSection[];
   guide?: GuideStep[];
   video?: VideoAction;
+  // Present only on lessons refined against docs/BEGINNER-LESSON-AUDIT.md.
+  checks?: ActiveCheck[];
+  saveRoute?: SaveRoute;
 };
 export type Criterion = {
   criterion: string;

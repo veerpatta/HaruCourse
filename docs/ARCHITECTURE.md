@@ -2,6 +2,12 @@
 
 Implemented for `week1-day1-v1` and available to any lesson whose activity carries the guided contract: `src/PracticeGuide.tsx` renders one open step at a time with the lesson's actions, expected output, the worksheet fields for that step, a labelled synthetic example, word explanations, a way to start and a way to judge enough, plus an optional click-to-load Vimeo segment paired with an immediate action and a written route. Answers and the step position are two optional fields of the existing practice record (schema and bounds in LEARNING-EXPERIENCE-PLAN.md), so they travel through `usePractice` unchanged: local first, debounced upload, revision conflicts, immutable history, backups and creator read-only review. The Learn page names the exact step to reopen. Ticked steps are a navigation aid and are never read as competence. The diagnostic carries none of it. No binding, migration, storage key, polling interval or service-worker rule changed; the video is an external embed loaded only on click and never proxied.
 
+## Beginner teaching layer — 7 September 2026
+
+`BEGINNER-LESSON-AUDIT.md` is the content-quality register for every published lesson. The guided data shape is only delivery support; a lesson is beginner-ready only after its visible teaching, supported attempt, independent attempt, active check, repair and route-specific continuation have been reviewed and verified. The next UI work includes answer-before-feedback checks and route-aware save guidance. These remain navigation/teaching features and must not be read as scores or mastery.
+
+Pre-web interaction lessons need static, cacheable playgrounds or downloadable starters rather than an implicit coding prerequisite. They should run in the browser, carry no private data and require no server write. Participant/team alternatives are authored content branches, not synthetic evidence stored as research.
+
 ## Planned learning experience architecture — 7 September 2026
 
 [LEARNING-EXPERIENCE-PLAN.md](LEARNING-EXPERIENCE-PLAN.md) defines the milestone the pilot above began. Reuse the shared reader and authoritative lesson/activity/journey model for guided practice and context-specific help. Keep exercises and downloadable outputs in the browser. Editable worksheets need bounded account-scoped drafts integrated with current revision/conflict handling, backup/import/export and immutable submissions; document the schema before implementation. Step-resume state must not change existing section bookmark meaning or infer mastery.
@@ -27,7 +33,7 @@ GET/PUT /api/learning-position is authenticated and always uses the signed-in us
 
 # Application architecture
 
-React, TypeScript, and Vite render the installable course PWA. Teaching lives in the authoritative TypeScript sources listed in COURSE-AUTHORING.md; course Markdown is generated. The baseline and 224 lessons across m01–m20 are published, including teaching, examples, exercises, understanding checks and per-lesson work records. Experience refinement remains a separate planned milestone.
+React, TypeScript, and Vite render the installable course PWA. Teaching lives in the authoritative TypeScript sources listed in COURSE-AUTHORING.md; course Markdown is generated. The baseline and 224 lessons across m01–m20 are published, including teaching, examples, exercises, understanding checks and per-lesson work records. The beginner audit is complete; lesson-by-lesson teaching repairs and learner validation remain active work.
 
 The service worker caches public app content. Authentication, API, OAuth consent, and MCP routes bypass the app shell and cache. Offline drafts remain in localStorage. JSON backup import validates data and downloads the previous draft before replacing it.
 
@@ -39,4 +45,4 @@ No server-side model calls are made. Design critique requires actual image evide
 
 The target remains zero additional cost within provider free allowances. Hosting is live at https://harucourse.raj-39e.workers.dev after explicit CLI deployment authorization; billing-plan visibility remains unavailable. See [setup and release prerequisites](CLOUD-SETUP.md). Local SDK/browser tests do not establish hosted availability, native device installation, or compatibility with the learner’s particular AI account.
 
-Next work: follow PROJECT-PLAN.md and LEARNING-EXPERIENCE-PLAN.md for the shared UI/first-lesson pilot and sequential refinement. Formal scored assessment and remaining AI-client acceptance are not implied complete.
+Next work: follow PROJECT-PLAN.md, BEGINNER-LESSON-AUDIT.md and LEARNING-EXPERIENCE-PLAN.md for update/save repair, the reopened Day 1 teaching pilot and sequential refinement. Formal scored assessment and remaining AI-client acceptance are not implied complete.

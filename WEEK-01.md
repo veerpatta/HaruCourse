@@ -1,6 +1,6 @@
 # Product Design Foundations
 
-> Experience refinement is applied lesson by lesson. See [the agreed learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for guided practice, worksheets, videos, free-tier constraints and the refinement ledger that records which lessons carry the guided worksheet. Existing teaching and diagnostic independence remain in force.
+> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Published, worksheet-enabled, teaching-refined, learner-validated and assessed are separate states.
 
 Generated from src/lessons.ts and src/week2.ts. Legacy filename retained for existing links. Level 1 · Module 1. No deadlines; split any lesson across sessions.
 
@@ -92,6 +92,20 @@ A whiteboard sketch, drawn in portrait, with no app interface shown. The written
 
 #### 1. Learn
 
+**See it first.** Made-up example. A pottery studio says: “Bookings drop off on the last screen. Make the Reserve button bigger.” Here is how a product designer thinks about that sentence before touching the button.
+
+- **What I can point to:** The studio has numbers showing people leave on the last screen. That part is real: it is counted, not guessed.
+- **What the sentence assumes:** “Make the button bigger” assumes people could not find or press it. Nobody has said that. It is one explanation out of several.
+- **What else would fit the same numbers:** They might not know what to bring, or the price might appear only at the end, or they might want to check a date with someone first.
+- **What I would write instead:** A person booking a first class, on the last screen, needs to be sure what the evening costs and what to bring, otherwise she stops and asks a friend. That is a goal, not a control.
+- **What I would do next:** Watch two people reach that screen and say what they are looking for. Only then choose between a bigger button, an earlier price, or a materials line.
+
+**The wrong turn:** The turn I nearly took was accepting the button. It is the easiest thing to do, it sounds decisive, and if the real trouble is the price it changes nothing while looking like progress.
+
+**What it costs:** Writing the goal instead of the fix costs time and can feel evasive when someone wants an answer today. What it buys is that several repairs can now compete on evidence.
+
+**Still unknown:** Still unknown: why people actually leave. The numbers show where, never why.
+
 - Read the Double Diamond overview.
 - Write one sentence each defining product design, UX and UI.
 
@@ -145,13 +159,38 @@ Is it enough? Someone else could repeat your actions from the list without askin
 
 #### 3. Separate evidence
 
+**See it first.** Made-up example. One entry from someone else’s walkthrough of a class-booking app, written out with the thinking left in.
+
+- **What I saw or did:** On the results list, the first two cards say “Sponsored” in small grey text above the class title. I scrolled past them to the class I had searched for.
+- **What I nearly wrote:** “Sponsored results annoy people and waste their time.” It felt obviously true as I typed it.
+- **Why I changed it:** I can point to the cards on the screen. I cannot point to anybody being annoyed — I only know that I scrolled past. So the card is observed and the annoyance is my reading.
+- **How I split it:** Observed: two sponsored cards sit above the searched class. Inferred: people scroll past them. Unknown: whether anyone books one.
+- **How I would check it:** Watch two people search for a named class and see whether they stop on the sponsored cards or scroll straight past.
+
+**The wrong turn:** The wrong turn is writing the interesting sentence — the one about people being annoyed — under observed, because it is the sentence you want to act on.
+
+**What it costs:** Splitting one thought into three lines is slower and can feel pedantic. It pays off when someone asks “how do you know?”, because the answer is already written down.
+
+**Still unknown:** Still unknown: whether the sponsored cards affect what anyone books. One walkthrough by one person cannot show that.
+
 - Use the starter table to label each entry observed, inferred or unknown.
 - Add five entries from your walkthrough.
 - Write the user goal and a possible business goal.
 
 **You should end up with:** Five entries, each labelled observed, inferred or unknown, plus one user goal and one possible business goal.
 
-Worksheet fields for this step:
+**Try it with help.** Here is a line from someone else’s notes, before any labelling. They walked through the app themselves and did not speak to anyone: “The date picker opens on today, so people have to scroll forward to next Saturday and some of them give up.”
+
+How should this one line be split before it goes in the table?
+
+- **Observed: the picker opens on today. Inferred: people give up. That second part needs checking.** — The first half is on the screen and anyone could confirm it. The second half is a claim about other people that this walkthrough cannot support — so it goes under inferred with a way to check it.
+- All observed: they watched it happen while using the app. — They watched themselves. Nothing in a solo walkthrough shows what other people do, so “some of them give up” cannot be observed here.
+- All inferred: the whole line is an opinion until someone else confirms it. — Too cautious, and it loses something useful. That the picker opens on today is a fact about the screen; keeping it under observed is what makes the guess beside it checkable.
+- Unknown: nobody has data on drop-off, so it cannot be used. — Unknown is for things the screen cannot tell you and you have no reading of. Here half the line is visible fact and the other half is a reading, so “unknown” would throw away both.
+
+**Then:** Do the same to your own first entry: put the part you could point to in “What I saw or did”, and let the label carry your reading of why.
+
+Worksheet fields for this step, revealed a few at a time in the app:
 
 - Entry 1 · What I saw or did — Something you can point to on the screen, or an action you took. One entry per line of the table.
 - Entry 1 · Observed, inferred or unknown? (observed / inferred / unknown) — Observed: you saw it. Inferred: your guess about why. Unknown: you cannot tell from the screen.
@@ -227,23 +266,26 @@ Is it enough? Each check names something you could watch or count, not “people
 - Save the walkthrough, table and hypotheses.
 - Add one unresolved question and your next action.
 
-**You should end up with:** One question you could not answer from the screen, and your next action. The worksheet is saved as you type.
+**You should end up with:** One question you could not answer from the screen, your next action, and the one change the Check questions sent you back to make.
 
 Worksheet fields for this step:
 
 - One question you could not answer from the screen
 - Your next action when you return — One line. It is what the Learn page will remind you of.
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
 
 <details>
 <summary>Help with this step</summary>
 
 
 
-Stuck starting? Reread your unknown entries; one of them is your question.
+Stuck starting? Reread your unknown entries; one of them is your question. Answer the three Check questions before filling the last box, so you know what to change.
 
-Is it enough? Your next action is a single line you could act on in five minutes when you return.
+Is it enough? Your next action is a single line you could act on in five minutes when you return, and the last box names one answer you actually changed.
 
 </details>
+
+**Save and continue.** Saved for you: Everything you type in the worksheet saves by itself: first on this device, then online a moment later. The line above the steps tells you which, and says “Saved online” when it has reached the server. Kept outside the app: Nothing is uploaded from your computer. If you kept anything outside the app — a photo of a sketch, a text file — it stays where it is; write its file name in Your work so you can find it again. What your creator sees: Your creator can read this worksheet, your notes and your work reference. He cannot change them, and he sees them only as they are saved. Choosing Ready for review in Your work is how you say a version is ready to be read. Your next action: Open Your work, read your worksheet answers back, add anything the worksheet did not ask for, then choose Ready for review. Lesson 2 starts from this same walkthrough, so keep it.
 
 A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
@@ -352,6 +394,38 @@ Process practice, not a validated case study.
 </details>
 
 ### Check
+
+**A friend says: “The fix is obvious — make the Reserve button bigger.” Is that a problem statement?**
+
+- **No. It names a repair before saying who is stuck and how anyone would know.** — It may even be the right repair, but it skips the part that tells you whether it is: who struggled, with what task, and what you saw.
+- Yes, because a small button is a real usability problem. — Size might be the cause, or the price might be unclear, or the date might be missing. A problem statement names the person and the difficulty, so more than one repair can compete.
+- Yes, as long as you tested the bigger button afterwards. — Testing a repair only tells you whether that repair worked. It cannot tell you what people were actually struggling with, because you never wrote it down.
+
+Improve your work: Reread your user goal in step 3. If it names a screen, a button or a page, rewrite it as something the person needs to have happen, then note the change in step 5.
+
+At recheck: The user goal reads as an outcome for a person, and your two improvements are still ways of reaching it rather than the goal itself.
+
+**Your walkthrough screen looks well made and you finished the task easily. What does that prove about other people?**
+
+- **Nothing yet. You are one person who already knows the app.** — You brought knowledge a first-time visitor does not have. Craft and outcomes need different evidence, and yours is one walkthrough.
+- That the design works, because a real task was completed. — It shows the task can be completed by you, today, knowing what you know. That is worth recording, and it is not evidence about anyone else.
+- That the visual design is good enough to leave alone. — A screen can look well made and still hide the price or the date. Ease for you is not evidence about a person seeing it for the first time.
+
+Improve your work: Look at your five entries in step 3. Any line that describes what other people do or feel belongs under inferred or unknown, not observed. Change one and say why in step 5.
+
+At recheck: At least one entry is labelled inferred or unknown, and its “how could you check it” column names something you could watch.
+
+**You wrote: “People skip the sponsored results.” You did not watch anyone else use the app. Which label is honest?**
+
+- **Inferred — it is your reading of why, and it may well be right.** — Inferred is not a lesser answer; it is the honest one, and it tells you exactly what to go and find out.
+- Observed, because you saw the sponsored results yourself. — You observed that sponsored results appear. “People skip them” is a claim about other people’s behaviour, which the screen cannot show you.
+- Unknown, because you have no data at all. — Unknown is for things you cannot tell from the screen and have no reading of at all. Here you do have a reading, so inferred keeps it visible as something to check.
+
+Improve your work: Pick the entry you were least sure about, set its label honestly, and write in its check column what you would watch to find out. Record the change in step 5.
+
+At recheck: Every entry label matches the kind of thing it is, and no claim about other people sits under observed.
+
+Answer each question in the app before its explanation appears. Answers are not saved or scored.
 
 <details>
 <summary>Is a larger button a problem statement?</summary>

@@ -1876,3 +1876,39 @@ select:focus-visible {
   .guide-step-body { padding: 4px 12px 14px; }
   .guide-step-actions .primary, .guide-step-actions .secondary { flex: 1 1 100%; }
 }
+
+/* See it → Try it with help → Check the reason. Same cream and green surfaces;
+   the demonstration and the supplied case sit in the visible path. */
+.see-it { margin: 4px 0 16px; padding: 14px 16px; border: 1px solid #c8d4bd; border-left: 4px solid #567e48; border-radius: 10px; background: #f9faf3; }
+.see-it h4, .try-help h4 { margin: 0 0 8px; font-family: Georgia, "Times New Roman", serif; font-size: 17px; font-weight: 400; text-transform: none; letter-spacing: 0; color: #214e46; }
+.see-it-scenario, .supplied-material { font-style: italic; color: #40574c; }
+.see-it-beats { margin: 10px 0; padding-left: 20px; }
+.see-it-beats > li { margin-block: .5rem; }
+.see-it p { margin: 8px 0 0; }
+.try-help { margin: 16px 0; padding: 14px 16px; border: 1px solid #d7dfd0; border-radius: 10px; background: #fffefb; }
+.supplied-material { padding: 10px 12px; margin: 0 0 12px; background: #eeefdf; border-radius: 8px; }
+.choice-question fieldset { border: 0; padding: 0; margin: 0 0 10px; min-width: 0; }
+.choice-question legend { padding: 0; font-weight: 550; font-size: 16px; color: #264b3e; }
+.check-legend { font-family: Georgia, "Times New Roman", serif; font-size: 17px; font-weight: 400; }
+.choice-option { display: flex; align-items: flex-start; gap: 10px; margin: 10px 0 0; font-weight: 400; min-height: 44px; padding: 6px 0; cursor: pointer; }
+.choice-option:focus-within { outline: 3px solid #567e48; outline-offset: 2px; border-radius: 6px; }
+.choice-option input { margin-top: 4px; width: 20px; height: 20px; flex: none; accent-color: #214e46; }
+.choice-feedback { margin: 12px 0 0; padding: 12px 14px; border-radius: 8px; background: #f3f2ea; border-left: 4px solid #bb7235; }
+.choice-feedback.is-right { background: #eaf0e1; border-left-color: #567e48; }
+.choice-feedback p { margin: 0 0 8px; }
+.choice-feedback p:last-child { margin-bottom: 0; }
+.active-checks { margin: 8px 0 20px; }
+.active-check { padding: 16px 0; border-bottom: 1px solid #d7dfd0; }
+.reveal-more { margin: 4px 0 14px; }
+.reveal-more .muted { margin-top: 6px; }
+.save-route { margin: 18px 0; padding: 14px 16px; border: 1px solid #c8d4bd; border-radius: 10px; background: #fdfcf8; }
+.save-route h3 { margin: 0 0 8px; font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
+.save-route dt { font-weight: 600; margin-top: 10px; font-size: 14px; }
+.save-route dd { margin: 2px 0 0; }
+.update-notice { display: block; }
+.update-notice p { margin: 0 0 10px; font-size: 14px; }
+.update-notice .muted { margin: 10px 0 0; }
+@media (max-width: 760px) {
+  .see-it, .try-help, .save-route { padding: 12px; }
+  .update-notice .primary { width: 100%; }
+}

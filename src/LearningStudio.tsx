@@ -13,7 +13,7 @@ import { baseline, baselineLesson } from "./course";
 import { usePractice } from "./usePractice";
 import { readingSelections } from "./reading";
 import { ApprenticeshipPanel, SaveHandoff, WorkspaceGuide } from './ApprenticeshipPanel';
-import { PracticeGuide, WorksheetSummary } from './PracticeGuide';
+import { ActiveChecks, PracticeGuide, SaveAndContinue, WorksheetSummary } from './PracticeGuide';
 import { resumeStep } from './worksheet';
 import {
   recordSchema,
@@ -527,6 +527,7 @@ export function LessonReader({
           ))}
         </ol>
         )}
+        {lesson.apprenticeship?.saveRoute && <SaveAndContinue activity={lesson.apprenticeship} />}
         {lesson.apprenticeship && <SaveHandoff activity={lesson.apprenticeship} practiceOnly={!lesson.module || Number(lesson.module.slice(1)) <= 4} />}
         <p className="muted">
           Pause after any step. Save the artifact and your next action in Your
@@ -552,12 +553,27 @@ export function LessonReader({
         className="lesson-reading"
       >
         <h2>Check</h2>
-        {lesson.check.map((q) => (
-          <details key={q.question}>
-            <summary>{q.question}</summary>
-            <p>{q.answer}</p>
-          </details>
-        ))}
+        {lesson.apprenticeship?.checks?.length ? (
+          <>
+            <ActiveChecks checks={lesson.apprenticeship.checks} />
+            <details>
+              <summary>More questions and answers</summary>
+              {lesson.check.map((q) => (
+                <div key={q.question}>
+                  <h3>{q.question}</h3>
+                  <p>{q.answer}</p>
+                </div>
+              ))}
+            </details>
+          </>
+        ) : (
+          lesson.check.map((q) => (
+            <details key={q.question}>
+              <summary>{q.question}</summary>
+              <p>{q.answer}</p>
+            </details>
+          ))
+        )}
         <h3>Review criteria</h3>
         <ul>
           {lesson.rubric.map((r) => (

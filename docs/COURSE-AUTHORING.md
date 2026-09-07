@@ -1,3 +1,17 @@
+## Beginner teaching contract — 7 September 2026
+
+A lesson refined against `docs/BEGINNER-LESSON-AUDIT.md` adds these optional members to its `src/apprenticeship.ts` entry, on top of the guided contract below. `npm run test:content` enforces every rule named here.
+
+| Member | Shape | Rules |
+|---|---|---|
+| `guide[i].demo` | `scenario`, `beats[]` of `{label, text}`, `wrongTurn`, `tradeoff`, `uncertainty` | The "See it" demonstration, rendered in the visible path rather than a disclosure. At least three beats. The scenario must say it is made up. Show the reasoning and the turn the author nearly took wrongly, never a finished answer alone |
+| `guide[i].supported` | `material`, `question`, `options[]`, `then` | "Try it with help": one small supplied case. Exactly one option is `correct`; every option, especially a plausible wrong one, explains itself. Feedback appears only after the learner answers |
+| `guide[i].reveal` | `{first, group, count?, addLabel, note}` | Repeated rows arrive `group` at a time. A field already holding an answer always stays visible, so a saved worksheet reopens intact. Fields after `count` always show |
+| `checks` | `ActiveCheck[]` of `question`, `options[]`, `repair`, `recheck` | "Check the reason" and "Improve your work". The learner answers before any feedback; the answer is held in component state only and is never saved, marked or scored. `repair` must send one specific change back into the learner's own artefact, and the lesson should carry a field where that change is recorded |
+| `saveRoute` | `{auto, external, creator, next}` | "Save and continue" for the route the lesson actually recommends. When present, the generic local-file save list is suppressed so the two cannot contradict each other; those steps stay inside the "work in a file instead" disclosure |
+
+Option feedback must explain rather than restate the verdict the interface already shows; the checker rejects feedback that opens with "Yes", "No", "Not quite" and similar. The diagnostic carries none of these members. Worksheet field IDs are record keys: add freely, rename never — `npm run test:worksheet` pins the IDs shipped with a lesson.
+
 ## Guided practice contract — 7 September 2026
 
 A refined lesson adds four optional members to its entry in `src/apprenticeship.ts`, which `withApprenticeship` passes through to the shared `Apprenticeship` type in `src/teaching.ts`: `route` (the recommended practice destination and the local-file alternative), `worksheet` (sections of fields with `id`, `label`, `kind` short/long/choice, optional `hint` and `example`), `guide` (one entry per lesson step: `expect`, the `fields` filled in that step, optional `example`, `terms`, `start`, `enough` and `video`), and `video` (`id` of a row in the catalog's video table plus the lesson's own `then` and `written`). The per-ID video selection lives in `src/reading.ts` beside the reading selections; the catalog row holds the evidence. Field ids are record keys: stable once shipped, renamed never. Every example must say it is made up. `npm run test:content` enforces alignment, uniqueness, bounds, labelling and the diagnostic's exclusion; the generator renders the same material into the lesson Markdown, and the MCP lesson object carries it unchanged. `src/PracticeGuide.tsx` renders it for any lesson that carries it; a lesson without it keeps the plain step list.
@@ -23,6 +37,25 @@ When AI helps, provide lesson context, an explicit learner-input placeholder, a 
 `WORKSPACE-GUIDE.md` and `PORTFOLIO-PATH.md` are generated from journey content. All lesson Markdown includes the same activity material as the app and MCP. Run docs:generate, test:content and build after edits. Check templates, copy fallback, keyboard access, narrow layouts and cached offline access. Preserve storage and bookmarks. Do not add an assessment schema, external synchronization or AI API as part of lesson authoring.
 
 # Course authoring contract
+
+## Beginner teaching sequence — 7 September 2026
+
+Use `BEGINNER-LESSON-AUDIT.md` as the row-by-row implementation register. Every refined teaching lesson uses the following learning sequence inside the existing Learn → Do → Check → Your work reader:
+
+1. **See it:** state one observable outcome and demonstrate one complete, labelled reasoning chain. Show the uncertainty, trade-off and a likely wrong turn, not only a polished result.
+2. **Try it with help:** give a small supplied case. Ask for one decision at a time, provide contextual terms and let the learner compare their reason with explanatory feedback.
+3. **Try it yourself:** apply the same reasoning to the learner's artefact. Reveal repeated rows progressively. Do not use a large worksheet as a substitute for instruction.
+4. **Check the reason:** collect a choice or short explanation before showing the answer. Diagnose the likely misconception and distinguish a plausible answer from an evidenced one.
+5. **Improve your work:** direct one bounded repair tied to the learner's answer and name what to show again. This is formative feedback, not a stored score.
+6. **Save and continue:** state exactly what the app saved, what an external file/reference means, what the reviewer can see and the next action on return. Match these instructions to the route the learner chose.
+
+Every new idea requested by the task must be taught visibly or point to a prerequisite where the learner practised it. Keep essential definitions and one worked demonstration in the primary path; optional details can deepen them. Avoid assuming that reading a linked page supplies a different concept.
+
+When a task needs a tool, begin from a known screen or supplied starter. Name the controls, the expected visible result and recovery from at least one common failure. Before m12, do not require the learner to author HTML, CSS, JavaScript or SVG. A provided playground may demonstrate behaviour, while paper remains valid only for what paper can actually test.
+
+When a task needs a participant, team, engineer, live build, public portfolio or prior artefact, define the readiness condition and the honest no-access output. Supplied cases and rehearsals must be labelled. They can demonstrate method and reasoning; they cannot become participant findings, business impact or shipped work.
+
+Preserve every shipped worksheet field ID and saved answer. Prefer fewer fields and progressive reveal. A lesson is not marked refined until its specific audit row has been reviewed, content checks pass and relevant learner-facing behavior has been inspected. Shared UI, generated Markdown or a filled worksheet cannot close multiple audit rows by itself.
 
 Mobile layouts keep sections reachable while scrolling, use touch targets of at least 44px, and leave Back/Next clear of active timers and bottom navigation. Keep idle timers in normal flow. Verify 320px and 390px layouts, long references, focus transitions and desktop. Browser focus emulation is not proof of native soft-keyboard behavior.
 

@@ -1,3 +1,31 @@
+# Beginner teaching revision: delivery fix and week1-day1-v1 — 7 September 2026
+
+## Delivery defect, diagnosed and fixed
+
+Reproduction was attempted first and could not be completed here: the app's browser pane refuses every service-worker registration ("An unknown error occurred when fetching the script", raised for `/sw.js` even though the worker serves it as 200 `text/javascript`, 16,915 bytes, locally and hosted), and the separate real-browser tool was disconnected during the session. The defect was therefore established from the artefact, which is unambiguous: the built `dist/sw.js` contained zero occurrences of `skipWaiting` and no `message` listener, and `src/main.tsx` called `registerSW({onNeedRefresh})` while discarding the returned update function. An installed worker had no activation path from the page, so the notice was advice the learner could not act on, and a second open tab prevented the "close and reopen" route from ever completing.
+
+Fix: `src/sw.js` answers `{type:"SKIP_WAITING"}`; the page keeps the update function and renders an "Update now" button; `src/updates.ts` reads the `:sync` sidecars and refuses to swap while any practice draft is still marked dirty, naming how many lessons are still saving. Nothing reloads on its own. Verified: the rebuilt `dist/sw.js` contains the listener, the button renders, and `unsavedDrafts`/`updateMessage` are unit-tested. **Not verified: the actual waiting-to-active swap.** The creator should confirm it once in a real browser — open the app, deploy, wait for the notice, press Update now and check the lesson content changes.
+
+## week1-day1-v1 revised to the audit pattern
+
+See it: two demonstrations in the visible path, one on the "make the button bigger" request and one on a single evidence row, each with the wrong turn the author nearly took, what the choice costs and what stays unknown. Both are labelled made up, and the checker enforces that label. Try it with help: one supplied note line with four options, all explained, answered before any feedback appears. Try it yourself: the five evidence entries now arrive one at a time behind "Add the next entry" instead of twenty fields at once; the two goal fields stay visible throughout. Check the reason: three questions replace the reveal-only pair, each taking an answer first, explaining every plausible wrong option, and naming one bounded repair plus what to show at recheck; the old question-and-answer pair remains under "More questions and answers". Improve your work: each repair points at a specific field, and a new `improvement-made` field records what changed. Save and continue: a four-part block covering what saved by itself, what stays outside the app, what the creator can see and the exact next action, with the contradictory generic file steps suppressed and kept inside the "work in a file instead" disclosure.
+
+All 35 field IDs shipped on 7 September 2026 are unchanged; `scripts/test-worksheet.mjs` now pins them by name and fails if one is renamed or dropped. Check answers are held in component state only: nothing about them is saved, marked or scored.
+
+## Checks run
+
+- `docs:generate`, `test:content`, `test:worksheet` and `build` pass. The checker gained rules for demonstrations, supplied cases, reveal bounds, checks, save routes, one-defensible-option, feedback that explains rather than repeating the verdict, and the diagnostic carrying none of it. Main chunk 2,372.54 kB uncompressed, 689.75 kB gzip, about 16 kB above the previous release.
+- All thirteen backend groups pass against the local Worker. The record schema did not change; `improvement-made` is one more key in the existing bounded worksheet object.
+- Browser, local Worker on 8788, test account only: the demonstration renders in the visible path with its beats; the supplied case shows no feedback until answered, distinguishes the defensible option, and clears feedback when the answer changes; step 3 opens with one entry plus the two goals and reveals the next entry on request; a reload reopens step 3 with the filled entry still visible and the unfilled one still behind the button; typing offline reports device-only saving with the server untouched and uploads on reconnect at the next revision; a stale write from another session produces the two-version card, and "Keep my draft and save it" saves at the next revision with the typed value intact and the card gone. At 320 px and 390 px nothing exceeds the viewport with every step and disclosure expanded, choice rows are 65 px and buttons 44 px, and focusing a radio outlines the whole option row.
+- One false alarm worth recording: an earlier conflict run appeared to leave the tab stuck at "Saving your chosen draft…" with fields missing. A clean re-run showed the conflict path is sound; the first run was polluted by repeated raw writes from the test itself racing the app's own save loop.
+
+## Not verified
+
+- Haru has not used any of this. No learner validation is claimed.
+- The live service-worker update swap, for the reason above.
+- Keyboard activation by real key presses: the pane's synthetic key events do not reach the page, so Enter and Space on the step headings and radios rest on native button and input semantics plus the observed focus ring.
+- No creator browser sign-in, no real second device, no native soft-keyboard or assistive-technology run, no billing or usage figures.
+
 # Guided practice pilot verification — 7 September 2026
 
 ## Scope

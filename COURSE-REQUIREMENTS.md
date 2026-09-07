@@ -1,4 +1,12 @@
-## Latest agreed refinement — guided learning, 7 September 2026
+## Latest agreed refinement — beginner teaching quality across all lessons, 7 September 2026
+
+The user approved an all-course beginner review after the Day 1 pilot showed that an editable worksheet alone does not close the teaching gap. `docs/BEGINNER-LESSON-AUDIT.md` records the 224-lesson audit. Keep the existing course map and evidence discipline, but refine every lesson through **See it → Try it with help → Try it yourself → Check the reason → Improve your work → Save and continue**. Each requested skill must be visibly taught or tied to a practised prerequisite; finished examples must expose reasoning and likely mistakes, not only the answer.
+
+Checks must collect the learner's reason before showing feedback and lead to a bounded repair of the learner's work. Tool tasks must start from a known screen or supplied starter, name exact controls and expected results, and include recovery. Participant, team, engineer, live-build and prior-artifact dependencies require honest alternate practice routes. The alternate route must preserve the competency and never turn supplied or simulated material into claimed research. Saving, review and resume instructions must match the selected practice route.
+
+Experience refinement, learner validation and formal assessment remain separate. The first implementation task is to repair delivery of the current update and conflicting save guidance, then revise Day 1 without renaming its shipped worksheet field IDs. Validate with Haru before using it as the repeating pattern.
+
+## Guided learning refinement — 7 September 2026
 
 The user approved [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md): practical step guidance, editable in-app worksheets, explicit practice destinations, optional verified videos paired with action, browser-based experiments, contextual help, examples that build independence, clearer My work and resume. Keep the cream/green/serif UI, existing navigation, course sequence, diagnostic independence and learner records. Implement lesson by lesson beginning with `week1-day1-v1` and the reusable UI it needs; observe the pilot with Haru before broad rollout when she is available. Candidate Hindi explanations, file uploads and formal scored review are not part of the first implementation.
 

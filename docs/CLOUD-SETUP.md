@@ -6,6 +6,8 @@ Before a behavioral release, recheck provider limits and inspect account plan/us
 
 # Cloud setup
 
+Beginner teaching improvements should prefer static, browser-side examples and downloadable starters already covered by the app's asset delivery. Do not add a server write for checking an answer, revealing feedback, manipulating a playground or stepping through a demonstration. Any new persisted worksheet fields remain bounded inside the existing practice record and must preserve its conflict, backup, submission and account-isolation rules. See `BEGINNER-LESSON-AUDIT.md` and `COURSE-AUTHORING.md`.
+
 The full app runs locally without a paid service. Node/npm and Wrangler are installed through the project dependencies. Local keys below are test credentials only.
 
 ```powershell

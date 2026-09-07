@@ -1,4 +1,4 @@
-import type { Apprenticeship, GuideStep, Lesson, WorksheetField, WorksheetSection } from './teaching';
+import type { ActiveCheck, Apprenticeship, GuideStep, Lesson, WorksheetField, WorksheetSection } from './teaching';
 import { milestones } from './journey';
 import { videoSelections } from './reading';
 
@@ -14,6 +14,8 @@ type Activity = {
   worksheet?: WorksheetSection[];
   guide?: GuideStep[];
   video?: { id: string; then: string; written: string };
+  checks?: ActiveCheck[];
+  saveRoute?: Apprenticeship['saveRoute'];
 };
 
 // Five evidence rows for the first lesson's table. Each row is four ordinary
@@ -60,12 +62,63 @@ const detectiveWorksheet: WorksheetSection[] = [
   { id: 'reflect', title: 'Reflect', fields: [
     { id: 'open-question', label: 'One question you could not answer from the screen', kind: 'short', example: 'Example (made up): Do other people notice the sponsored results, or only me?' },
     { id: 'next-action', label: 'Your next action when you return', kind: 'short', hint: 'One line. It is what the Learn page will remind you of.' },
+    { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long', hint: 'The Check section sends you back to one specific answer. Write which one you changed and why.', example: 'Example (made up): I had written “people find the date confusing” as observed. Nobody told me that, so I moved it to inferred and added “ask two friends to find the date” as the check.' },
   ] },
+];
+
+// Two questions the learner answers before any feedback, plus one that targets
+// the misconception the old reveal-only Check could not catch: treating a
+// confident guess as something observed. Each repair points at one field the
+// learner already filled. Nothing is scored or stored.
+const detectiveChecks: ActiveCheck[] = [
+  {
+    question: 'A friend says: “The fix is obvious — make the Reserve button bigger.” Is that a problem statement?',
+    options: [
+      { label: 'No. It names a repair before saying who is stuck and how anyone would know.', correct: true, feedback: 'It may even be the right repair, but it skips the part that tells you whether it is: who struggled, with what task, and what you saw.' },
+      { label: 'Yes, because a small button is a real usability problem.', feedback: 'Size might be the cause, or the price might be unclear, or the date might be missing. A problem statement names the person and the difficulty, so more than one repair can compete.' },
+      { label: 'Yes, as long as you tested the bigger button afterwards.', feedback: 'Testing a repair only tells you whether that repair worked. It cannot tell you what people were actually struggling with, because you never wrote it down.' },
+    ],
+    repair: 'Reread your user goal in step 3. If it names a screen, a button or a page, rewrite it as something the person needs to have happen, then note the change in step 5.',
+    recheck: 'The user goal reads as an outcome for a person, and your two improvements are still ways of reaching it rather than the goal itself.',
+  },
+  {
+    question: 'Your walkthrough screen looks well made and you finished the task easily. What does that prove about other people?',
+    options: [
+      { label: 'Nothing yet. You are one person who already knows the app.', correct: true, feedback: 'You brought knowledge a first-time visitor does not have. Craft and outcomes need different evidence, and yours is one walkthrough.' },
+      { label: 'That the design works, because a real task was completed.', feedback: 'It shows the task can be completed by you, today, knowing what you know. That is worth recording, and it is not evidence about anyone else.' },
+      { label: 'That the visual design is good enough to leave alone.', feedback: 'A screen can look well made and still hide the price or the date. Ease for you is not evidence about a person seeing it for the first time.' },
+    ],
+    repair: 'Look at your five entries in step 3. Any line that describes what other people do or feel belongs under inferred or unknown, not observed. Change one and say why in step 5.',
+    recheck: 'At least one entry is labelled inferred or unknown, and its “how could you check it” column names something you could watch.',
+  },
+  {
+    question: 'You wrote: “People skip the sponsored results.” You did not watch anyone else use the app. Which label is honest?',
+    options: [
+      { label: 'Inferred — it is your reading of why, and it may well be right.', correct: true, feedback: 'Inferred is not a lesser answer; it is the honest one, and it tells you exactly what to go and find out.' },
+      { label: 'Observed, because you saw the sponsored results yourself.', feedback: 'You observed that sponsored results appear. “People skip them” is a claim about other people’s behaviour, which the screen cannot show you.' },
+      { label: 'Unknown, because you have no data at all.', feedback: 'Unknown is for things you cannot tell from the screen and have no reading of at all. Here you do have a reading, so inferred keeps it visible as something to check.' },
+    ],
+    repair: 'Pick the entry you were least sure about, set its label honestly, and write in its check column what you would watch to find out. Record the change in step 5.',
+    recheck: 'Every entry label matches the kind of thing it is, and no claim about other people sits under observed.',
+  },
 ];
 
 const detectiveGuide: GuideStep[] = [
   { expect: 'Three sentences in your own words: product design, UX and UI. No quotation needed.',
     fields: ['define-product-design', 'define-ux', 'define-ui'], video: 'VID01',
+    demo: {
+      scenario: 'Made-up example. A pottery studio says: “Bookings drop off on the last screen. Make the Reserve button bigger.” Here is how a product designer thinks about that sentence before touching the button.',
+      beats: [
+        { label: 'What I can point to', text: 'The studio has numbers showing people leave on the last screen. That part is real: it is counted, not guessed.' },
+        { label: 'What the sentence assumes', text: '“Make the button bigger” assumes people could not find or press it. Nobody has said that. It is one explanation out of several.' },
+        { label: 'What else would fit the same numbers', text: 'They might not know what to bring, or the price might appear only at the end, or they might want to check a date with someone first.' },
+        { label: 'What I would write instead', text: 'A person booking a first class, on the last screen, needs to be sure what the evening costs and what to bring, otherwise she stops and asks a friend. That is a goal, not a control.' },
+        { label: 'What I would do next', text: 'Watch two people reach that screen and say what they are looking for. Only then choose between a bigger button, an earlier price, or a materials line.' },
+      ],
+      wrongTurn: 'The turn I nearly took was accepting the button. It is the easiest thing to do, it sounds decisive, and if the real trouble is the price it changes nothing while looking like progress.',
+      tradeoff: 'Writing the goal instead of the fix costs time and can feel evasive when someone wants an answer today. What it buys is that several repairs can now compete on evidence.',
+      uncertainty: 'Still unknown: why people actually leave. The numbers show where, never why.',
+    },
     terms: [
       { term: 'Product design', meaning: 'Deciding which problem a service should solve and shaping the whole service so people can use it and the business can run it.' },
       { term: 'UX (user experience)', meaning: 'Everything a person goes through to finish a task, including waiting, instructions and recovering from mistakes.' },
@@ -91,6 +144,31 @@ const detectiveGuide: GuideStep[] = [
       'entry-5-saw', 'entry-5-label', 'entry-5-goal', 'entry-5-check',
       'user-goal', 'business-goal',
     ],
+    reveal: { first: 4, group: 4, count: 20, addLabel: 'Add the next entry', note: 'One entry at a time. Finish this one, then ask for the next; five is the target, and you can stop and come back.' },
+    demo: {
+      scenario: 'Made-up example. One entry from someone else’s walkthrough of a class-booking app, written out with the thinking left in.',
+      beats: [
+        { label: 'What I saw or did', text: 'On the results list, the first two cards say “Sponsored” in small grey text above the class title. I scrolled past them to the class I had searched for.' },
+        { label: 'What I nearly wrote', text: '“Sponsored results annoy people and waste their time.” It felt obviously true as I typed it.' },
+        { label: 'Why I changed it', text: 'I can point to the cards on the screen. I cannot point to anybody being annoyed — I only know that I scrolled past. So the card is observed and the annoyance is my reading.' },
+        { label: 'How I split it', text: 'Observed: two sponsored cards sit above the searched class. Inferred: people scroll past them. Unknown: whether anyone books one.' },
+        { label: 'How I would check it', text: 'Watch two people search for a named class and see whether they stop on the sponsored cards or scroll straight past.' },
+      ],
+      wrongTurn: 'The wrong turn is writing the interesting sentence — the one about people being annoyed — under observed, because it is the sentence you want to act on.',
+      tradeoff: 'Splitting one thought into three lines is slower and can feel pedantic. It pays off when someone asks “how do you know?”, because the answer is already written down.',
+      uncertainty: 'Still unknown: whether the sponsored cards affect what anyone books. One walkthrough by one person cannot show that.',
+    },
+    supported: {
+      material: 'Here is a line from someone else’s notes, before any labelling. They walked through the app themselves and did not speak to anyone: “The date picker opens on today, so people have to scroll forward to next Saturday and some of them give up.”',
+      question: 'How should this one line be split before it goes in the table?',
+      options: [
+        { label: 'Observed: the picker opens on today. Inferred: people give up. That second part needs checking.', correct: true, feedback: 'The first half is on the screen and anyone could confirm it. The second half is a claim about other people that this walkthrough cannot support — so it goes under inferred with a way to check it.' },
+        { label: 'All observed: they watched it happen while using the app.', feedback: 'They watched themselves. Nothing in a solo walkthrough shows what other people do, so “some of them give up” cannot be observed here.' },
+        { label: 'All inferred: the whole line is an opinion until someone else confirms it.', feedback: 'Too cautious, and it loses something useful. That the picker opens on today is a fact about the screen; keeping it under observed is what makes the guess beside it checkable.' },
+        { label: 'Unknown: nobody has data on drop-off, so it cannot be used.', feedback: 'Unknown is for things the screen cannot tell you and you have no reading of. Here half the line is visible fact and the other half is a reading, so “unknown” would throw away both.' },
+      ],
+      then: 'Do the same to your own first entry: put the part you could point to in “What I saw or did”, and let the label carry your reading of why.',
+    },
     example: 'Example (made up, not your research): “Sponsored results appear above the class I searched for” is observed. “People probably skip them” is inferred. “Whether anyone books a sponsored class” is unknown.',
     terms: [
       { term: 'Observed', meaning: 'You saw it or did it. You could point to it on the screen.' },
@@ -107,10 +185,10 @@ const detectiveGuide: GuideStep[] = [
     ],
     start: 'Look at your inferred and unknown entries. Each one is a place an improvement could be tested.',
     enough: 'Each check names something you could watch or count, not “people would like it more”.' },
-  { expect: 'One question you could not answer from the screen, and your next action. The worksheet is saved as you type.',
-    fields: ['open-question', 'next-action'],
-    start: 'Reread your unknown entries; one of them is your question.',
-    enough: 'Your next action is a single line you could act on in five minutes when you return.' },
+  { expect: 'One question you could not answer from the screen, your next action, and the one change the Check questions sent you back to make.',
+    fields: ['open-question', 'next-action', 'improvement-made'],
+    start: 'Reread your unknown entries; one of them is your question. Answer the three Check questions before filling the last box, so you know what to change.',
+    enough: 'Your next action is a single line you could act on in five minutes when you return, and the last box names one answer you actually changed.' },
 ];
 
 // Guided material for the rest of Module 1, one entry per lesson, authored
@@ -408,6 +486,13 @@ export const activities: Record<string, Activity> = {
     },
     worksheet: detectiveWorksheet,
     guide: detectiveGuide,
+    checks: detectiveChecks,
+    saveRoute: {
+      auto: 'Everything you type in the worksheet saves by itself: first on this device, then online a moment later. The line above the steps tells you which, and says “Saved online” when it has reached the server.',
+      external: 'Nothing is uploaded from your computer. If you kept anything outside the app — a photo of a sketch, a text file — it stays where it is; write its file name in Your work so you can find it again.',
+      creator: 'Your creator can read this worksheet, your notes and your work reference. He cannot change them, and he sees them only as they are saved. Choosing Ready for review in Your work is how you say a version is ready to be read.',
+      next: 'Open Your work, read your worksheet answers back, add anything the worksheet did not ask for, then choose Ready for review. Lesson 2 starts from this same walkthrough, so keep it.',
+    },
     video: {
       id: 'VID01',
       then: 'Straight after watching, fill “Product design is…” below. If it helps, use his question: was the app built to solve the right problem?',
@@ -727,6 +812,8 @@ export function withApprenticeship(l: Lesson): Lesson {
     ...(a.worksheet ? { worksheet: a.worksheet } : {}),
     ...(a.guide ? { guide: a.guide } : {}),
     ...(a.video ? { video: { ...videoSelections[a.video.id], ...a.video } } : {}),
+    ...(a.checks ? { checks: a.checks } : {}),
+    ...(a.saveRoute ? { saveRoute: a.saveRoute } : {}),
     ...(a.coach ? { ai: {
       purpose: 'Optional: attempt the work first, then use a free text chat for a focused rehearsal.',
       setup: ['Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.', 'Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.', 'Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.'],

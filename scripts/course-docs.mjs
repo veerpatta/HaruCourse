@@ -15,6 +15,7 @@ const { readingSelections, videoSelections } = await import('../src/reading.ts')
 const { activities } = await import('../src/apprenticeship.ts');
 const { WORKSHEET_FIELD_CAP, worksheetFieldId } = await import('../shared/record.ts');
 const { contrastRatio } = await import('../src/contrast.ts');
+const beginnerAudit = readFileSync('docs/BEGINNER-LESSON-AUDIT.md', 'utf8');
 assert.equal(contrastRatio('#000000', '#ffffff'), 21);
 assert.equal(contrastRatio('#123456', '#123456'), 1);
 assert.equal(contrastRatio('#ffffff', '#000000'), 21);
@@ -42,6 +43,11 @@ for (let area = 1; area <= 17; area++)
 for (const l of lessons)
   assert(ids.has(l.resource.id), `Unknown lesson resource ${l.id}`);
 assert.equal(new Set(lessons.map((l) => l.id)).size, lessons.length);
+const auditedLessonIds = [...beginnerAudit.matchAll(/^\| ([a-z0-9-]+-v1) \|/gm)].map(m => m[1]);
+assert.equal(new Set(auditedLessonIds).size, auditedLessonIds.length, 'Beginner audit has a duplicate lesson row');
+assert.equal(auditedLessonIds.length, lessons.length, 'Beginner audit must contain one row per published lesson');
+for (const l of lessons)
+  assert(auditedLessonIds.includes(l.id), `Beginner audit is missing ${l.id}`);
 // Lessons written against the m03/m04 contract carry a module, assigned
 // resources and scored criteria. Legacy lessons carry none of that, so each
 // rule below only applies where the richer field is present.
@@ -132,7 +138,7 @@ const catalog = [
 function output(path, text) {
   // Keep generated course views connected to the plan without rewriting teaching.
   const titleEnd = text.indexOf("\n");
-  const planNote = "\n\n> Experience refinement is applied lesson by lesson. See [the agreed learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for guided practice, worksheets, videos, free-tier constraints and the refinement ledger that records which lessons carry the guided worksheet. Existing teaching and diagnostic independence remain in force.";
+  const planNote = "\n\n> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Published, worksheet-enabled, teaching-refined, learner-validated and assessed are separate states.";
   text = text.slice(0, titleEnd) + planNote + text.slice(titleEnd);
   if (process.argv.includes("--check"))
     assert.equal(
@@ -176,6 +182,10 @@ function guidedDoc(l) {
         `[${a.video.title}](${a.video.url}) — ${a.video.publisher}, ${a.video.duration}, ${a.video.language}, ${a.video.captions}. ${a.video.segment}\n\nWhat to notice:\n\n${list(a.video.notice)}\n\n**Then:** ${a.video.then}\n\n**Without the video:** ${a.video.written}\n\n${a.video.differences} ${a.video.access} Checked ${a.video.checked}.`,
       )}\n\n`
     : "";
+  const demoDoc = (d) =>
+    `**See it first.** ${d.scenario}\n\n${d.beats.map((b) => `- **${b.label}:** ${b.text}`).join("\n")}\n\n**The wrong turn:** ${d.wrongTurn}\n\n**What it costs:** ${d.tradeoff}\n\n**Still unknown:** ${d.uncertainty}\n\n`;
+  const supportedDoc = (s) =>
+    `**Try it with help.** ${s.material}\n\n${s.question}\n\n${s.options.map((o) => `- ${o.correct ? "**" + o.label + "**" : o.label} — ${o.feedback}`).join("\n")}\n\n**Then:** ${s.then}\n\n`;
   const steps = l.steps
     .map((s, i) => {
       const g = a.guide[i];
@@ -183,10 +193,13 @@ function guidedDoc(l) {
         const f = a.worksheet.flatMap((w) => w.fields).find((f) => f.id === id);
         return `- ${f.label}${f.kind === "choice" ? ` (${f.options.join(" / ")})` : ""}${f.hint ? ` — ${f.hint}` : ""}`;
       });
-      return `#### ${i + 1}. ${s.title}\n\n${list(s.instructions)}\n\n**You should end up with:** ${g.expect}\n\n${g.fields?.length ? `Worksheet fields for this step:\n\n${fields.join("\n")}\n\n` : ""}${g.example ? details("Example", g.example) + "\n\n" : ""}${g.terms?.length || g.start || g.enough ? details("Help with this step", (g.terms || []).map((t) => `- **${t.term}:** ${t.meaning}`).join("\n") + (g.start ? `\n\nStuck starting? ${g.start}` : "") + (g.enough ? `\n\nIs it enough? ${g.enough}` : "")) : ""}`;
+      return `#### ${i + 1}. ${s.title}\n\n${g.demo ? demoDoc(g.demo) : ""}${list(s.instructions)}\n\n**You should end up with:** ${g.expect}\n\n${g.supported ? supportedDoc(g.supported) : ""}${g.fields?.length ? `Worksheet fields for this step${g.reveal ? ", revealed a few at a time in the app" : ""}:\n\n${fields.join("\n")}\n\n` : ""}${g.example ? details("Example", g.example) + "\n\n" : ""}${g.terms?.length || g.start || g.enough ? details("Help with this step", (g.terms || []).map((t) => `- **${t.term}:** ${t.meaning}`).join("\n") + (g.start ? `\n\nStuck starting? ${g.start}` : "") + (g.enough ? `\n\nIs it enough? ${g.enough}` : "")) : ""}`;
     })
     .join("\n\n");
-  return `**Where to practise:** ${a.route.recommended}\n\n${details("Work in a file on your computer instead", a.route.alternative + "\n\nTools: " + a.workspace.tools + "\n\n" + list(a.workspace.setup))}\n\n${video}${steps}\n\nA ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.\n\n`;
+  const save = a.saveRoute
+    ? `\n**Save and continue.** Saved for you: ${a.saveRoute.auto} Kept outside the app: ${a.saveRoute.external} What your creator sees: ${a.saveRoute.creator} Your next action: ${a.saveRoute.next}\n`
+    : "";
+  return `**Where to practise:** ${a.route.recommended}\n\n${details("Work in a file on your computer instead", a.route.alternative + "\n\nTools: " + a.workspace.tools + "\n\n" + list(a.workspace.setup))}\n\n${video}${steps}\n${save}\nA ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.\n\n`;
 }
 function activityDoc(l) {
   const a = l.apprenticeship;
@@ -231,7 +244,7 @@ ${details("Optional effort and portfolio context", list(l.steps.map((s) => `${s.
 
 ### Check
 
-${l.check.map((q) => details(q.question, q.answer)).join("\n\n")}
+${(l.apprenticeship?.checks || []).map((c) => `**${c.question}**\n\n${c.options.map((o) => `- ${o.correct ? "**" + o.label + "**" : o.label} — ${o.feedback}`).join("\n")}\n\nImprove your work: ${c.repair}\n\nAt recheck: ${c.recheck}`).join("\n\n")}${l.apprenticeship?.checks?.length ? "\n\nAnswer each question in the app before its explanation appears. Answers are not saved or scored.\n\n" : ""}${l.check.map((q) => details(q.question, q.answer)).join("\n\n")}
 
 Review criteria:
 
@@ -393,6 +406,62 @@ for (const l of lessons) {
   }
 }
 for (const id of Object.keys(videoSelections)) assert(videoIds.has(id), `Video selection ${id} has no catalog row`);
+// Beginner teaching contract (docs/BEGINNER-LESSON-AUDIT.md). A demonstration
+// must show reasoning and be labelled invented; a supported case and a check
+// must be answerable with exactly one defensible option and must explain every
+// option, including the plausible wrong ones; a repair must send the learner
+// back to their own artefact; save instructions must cover all four questions.
+const oneCorrect = (options, where) => {
+  assert(options.length >= 2, `${where} needs at least two options`);
+  assert.equal(options.filter((o) => o.correct).length, 1, `${where} needs exactly one defensible option`);
+  for (const o of options) {
+    assert(o.label && o.feedback, `${where} option "${o.label}" needs a label and an explanation`);
+    // The interface already says whether the answer held up, so feedback that
+    // opens with its own verdict reads as a stutter ("That one holds up. Yes.").
+    assert(
+      !/^(yes|no|right|correct|wrong|not quite|not yet|nearly|almost)\b[.,]/i.test(o.feedback),
+      `${where} option "${o.label}" should explain rather than repeat the verdict the interface already shows`,
+    );
+  }
+};
+for (const l of lessons) {
+  const a = l.apprenticeship;
+  if (!a.guide) continue;
+  for (const [i, g] of a.guide.entries()) {
+    const where = `${l.id} step ${i + 1}`;
+    if (g.demo) {
+      assert(/made.up|Made.up|invented/.test(g.demo.scenario), `${where} demonstration must say it is made up`);
+      assert(g.demo.beats.length >= 3, `${where} demonstration needs at least three reasoning beats`);
+      for (const b of g.demo.beats) assert(b.label && b.text, `${where} demonstration beat needs a label and text`);
+      assert(g.demo.wrongTurn && g.demo.tradeoff && g.demo.uncertainty, `${where} demonstration needs a wrong turn, a trade-off and what stays unknown`);
+    }
+    if (g.supported) {
+      assert(g.supported.material && g.supported.question && g.supported.then, `${where} supported practice needs supplied material, a question and a next move`);
+      oneCorrect(g.supported.options, `${where} supported practice`);
+    }
+    if (g.reveal) {
+      assert(g.fields?.length, `${where} cannot reveal fields it does not have`);
+      assert(g.reveal.first >= 1 && g.reveal.group >= 1, `${where} reveal needs a positive first group`);
+      assert((g.reveal.count ?? g.fields.length) <= g.fields.length, `${where} reveal count exceeds its fields`);
+      assert(g.reveal.addLabel && g.reveal.note, `${where} reveal needs a button label and a note`);
+    }
+  }
+  for (const c of a.checks || []) {
+    oneCorrect(c.options, `${l.id} check "${c.question}"`);
+    assert(c.repair && c.recheck, `${l.id} check "${c.question}" needs a bounded repair and a recheck line`);
+  }
+  if (a.saveRoute)
+    for (const key of ['auto', 'external', 'creator', 'next'])
+      assert(a.saveRoute[key], `${l.id} save route is missing ${key}`);
+  // A lesson carrying active checks must not leave the learner with only the
+  // reveal-style questions; both may exist, the active ones lead.
+  if (a.checks?.length) assert(a.route && a.worksheet, `${l.id} checks require the guided contract`);
+}
+{
+  const a = baselineLesson.apprenticeship;
+  assert(!a.checks && !a.saveRoute, 'The diagnostic gets no guided checks or route coaching');
+  assert(!(a.guide || []).some((g) => g.demo || g.supported), 'The diagnostic gets no worked demonstration');
+}
 for (const m of modules) assert(milestones[m.id]?.start && milestones[m.id]?.later);
 assert.equal(projectPacks.length, 3);
 for (const p of projectPacks) {

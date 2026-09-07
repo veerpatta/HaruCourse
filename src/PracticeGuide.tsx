@@ -1,5 +1,5 @@
 import { useId, useState, type SetStateAction } from "react";
-import type { Apprenticeship, GuideStep, Lesson, VideoAction, WorksheetField } from "./teaching";
+import type { ActiveCheck, Apprenticeship, Choice, Demonstration, GuideStep, Lesson, SupportedPractice, VideoAction, WorksheetField } from "./teaching";
 import type { RecordData } from "../shared/record";
 import { WORKSHEET_VALUE_CAP } from "../shared/record";
 import { downloadText, filledCount, resumeStep, worksheetFields, worksheetMarkdown } from "./worksheet";
@@ -111,6 +111,210 @@ export function VideoActionBlock({ video, online }: { video: VideoAction; online
         </p>
       </details>
     </section>
+  );
+}
+
+// "See it": the reasoning in the visible path, not hidden behind a disclosure.
+// Everything in it is invented and says so, so it can never read as research.
+function SeeIt({ demo }: { demo: Demonstration }) {
+  return (
+    <section className="see-it" aria-label="Worked example">
+      <h4>See it first</h4>
+      <p className="see-it-scenario">{demo.scenario}</p>
+      <ol className="see-it-beats">
+        {demo.beats.map((b) => (
+          <li key={b.label}>
+            <strong>{b.label}:</strong> {b.text}
+          </li>
+        ))}
+      </ol>
+      <p>
+        <strong>The wrong turn:</strong> {demo.wrongTurn}
+      </p>
+      <p>
+        <strong>What it costs:</strong> {demo.tradeoff}
+      </p>
+      <p>
+        <strong>Still unknown:</strong> {demo.uncertainty}
+      </p>
+    </section>
+  );
+}
+
+// Answer-before-feedback, shared by "Try it with help" and the Check section.
+// The choice lives in component state only: it is formative, never a score,
+// and nothing about it is saved or sent anywhere.
+function ChoiceQuestion({
+  question,
+  options,
+  legendClass,
+  children,
+}: {
+  question: string;
+  options: Choice[];
+  legendClass?: string;
+  children?: (chosen: Choice) => React.ReactNode;
+}) {
+  const name = useId();
+  const [picked, setPicked] = useState<number | null>(null);
+  const [shown, setShown] = useState<number | null>(null);
+  const chosen = shown === null ? null : options[shown];
+  return (
+    <div className="choice-question">
+      <fieldset>
+        <legend className={legendClass}>{question}</legend>
+        {options.map((o, i) => (
+          <label key={o.label} className="choice-option">
+            <input
+              type="radio"
+              name={name}
+              checked={picked === i}
+              onChange={() => {
+                setPicked(i);
+                setShown(null);
+              }}
+            />
+            <span>{o.label}</span>
+          </label>
+        ))}
+      </fieldset>
+      <button
+        type="button"
+        className="secondary"
+        disabled={picked === null}
+        onClick={() => setShown(picked)}
+      >
+        {shown === null ? "Show me why" : "Check again"}
+      </button>
+      {chosen && (
+        <div className={`choice-feedback${chosen.correct ? " is-right" : ""}`} role="status">
+          <p>
+            <strong>{chosen.correct ? "That one holds up." : "Not quite."}</strong> {chosen.feedback}
+          </p>
+          {children?.(chosen)}
+        </div>
+      )}
+      <p className="muted">Your answer here is not saved, marked or scored. It decides what to change next.</p>
+    </div>
+  );
+}
+
+function TryWithHelp({ supported }: { supported: SupportedPractice }) {
+  return (
+    <section className="try-help" aria-label="Try it with help">
+      <h4>Try it with help</h4>
+      <p className="supplied-material">{supported.material}</p>
+      <ChoiceQuestion question={supported.question} options={supported.options} />
+      <p>
+        <strong>Then:</strong> {supported.then}
+      </p>
+    </section>
+  );
+}
+
+// "Check the reason" and "Improve your work" together: answer first, read why,
+// then take one named repair back into your own worksheet.
+export function ActiveChecks({ checks }: { checks: ActiveCheck[] }) {
+  return (
+    <section className="active-checks" aria-label="Check your reasoning">
+      <p className="muted">
+        Answer each one before reading the explanation. Every answer, including the ones that do not
+        hold up, tells you something to change.
+      </p>
+      {checks.map((c) => (
+        <article key={c.question} className="active-check">
+          <ChoiceQuestion question={c.question} options={c.options} legendClass="check-legend">
+            {() => (
+              <>
+                <p>
+                  <strong>Improve your work:</strong> {c.repair}
+                </p>
+                <p className="muted">At recheck: {c.recheck}</p>
+              </>
+            )}
+          </ChoiceQuestion>
+        </article>
+      ))}
+    </section>
+  );
+}
+
+// Save and continue for the route the lesson actually recommends.
+export function SaveAndContinue({ activity }: { activity: Apprenticeship }) {
+  const s = activity.saveRoute;
+  if (!s) return null;
+  return (
+    <section className="save-route" aria-label="Save and continue">
+      <h3>Save and continue</h3>
+      <dl>
+        <dt>Saved for you</dt>
+        <dd>{s.auto}</dd>
+        <dt>Kept outside the app</dt>
+        <dd>{s.external}</dd>
+        <dt>What your creator sees</dt>
+        <dd>{s.creator}</dd>
+        <dt>Your next action</dt>
+        <dd>{s.next}</dd>
+      </dl>
+    </section>
+  );
+}
+
+// Repeated rows arrive one at a time. Fields already holding an answer stay
+// visible, so a saved worksheet reopens showing everything the learner wrote;
+// the rest wait behind one button. Field ids never change.
+function StepFields({
+  step,
+  byId,
+  record,
+  setField,
+  readOnly,
+}: {
+  step: GuideStep;
+  byId: Map<string, WorksheetField>;
+  record: RecordData;
+  setField: (id: string, value: string) => void;
+  readOnly: boolean;
+}) {
+  const fields = step.fields ?? [];
+  const reveal = step.reveal;
+  const [extra, setExtra] = useState(0);
+  const block = Math.min(reveal?.count ?? fields.length, fields.length);
+  let shown = fields.length;
+  if (reveal) {
+    let filledTo = 0;
+    fields.slice(0, block).forEach((id, i) => {
+      if ((record.worksheet?.[id] ?? "").trim()) filledTo = i + 1;
+    });
+    const covered = Math.ceil(filledTo / reveal.group) * reveal.group;
+    shown = Math.min(block, Math.max(reveal.first, covered) + extra * reveal.group);
+  }
+  const render = (id: string) => {
+    const f = byId.get(id);
+    if (!f) return null;
+    return (
+      <Field
+        key={id}
+        field={f}
+        value={record.worksheet?.[id] ?? ""}
+        onChange={(v) => setField(id, v)}
+        readOnly={readOnly}
+      />
+    );
+  };
+  return (
+    <>
+      {fields.slice(0, shown).map(render)}
+      {reveal && shown < block && (
+        <div className="reveal-more">
+          <button type="button" className="secondary" onClick={() => setExtra((n) => n + 1)}>
+            {reveal.addLabel}
+          </button>
+          <p className="muted">{reveal.note}</p>
+        </div>
+      )}
+      {fields.slice(block).map(render)}
+    </>
   );
 }
 
@@ -247,6 +451,7 @@ export function PracticeGuide({
                 </button>
               </h3>
               <div id={`guide-step-${n}`} hidden={!isOpen} className="guide-step-body">
+                {g?.demo && <SeeIt demo={g.demo} />}
                 <h4>Do this</h4>
                 <ul>
                   {s.instructions.map((t) => (
@@ -267,22 +472,17 @@ export function PracticeGuide({
                     <p>{g.example}</p>
                   </details>
                 )}
+                {g?.supported && <TryWithHelp supported={g.supported} />}
                 {g?.fields?.length ? (
                   <div className="worksheet" role="group" aria-label={`Worksheet for step ${n}`}>
-                    <h4>Fill in</h4>
-                    {g.fields.map((id) => {
-                      const f = byId.get(id);
-                      if (!f) return null;
-                      return (
-                        <Field
-                          key={id}
-                          field={f}
-                          value={record.worksheet?.[id] ?? ""}
-                          onChange={(v) => setField(id, v)}
-                          readOnly={readOnly}
-                        />
-                      );
-                    })}
+                    <h4>{g.demo || g.supported ? "Try it yourself" : "Fill in"}</h4>
+                    <StepFields
+                      step={g}
+                      byId={byId}
+                      record={record}
+                      setField={setField}
+                      readOnly={readOnly}
+                    />
                   </div>
                 ) : null}
                 {g && <StepHelp step={g} activity={activity} />}

@@ -1,6 +1,6 @@
 ## Current improvement plan — 7 September 2026
 
-[Guided learning experience plan](docs/LEARNING-EXPERIENCE-PLAN.md): improve the existing course lesson by lesson with clearer practice steps, editable worksheets, contextual help, optional verified videos, interactive exercises and easier save/resume. Preserve the established visual style and existing records. Start with shared UI and the first foundations lesson, then validate the pilot. Use browser-side exercises and bounded text synchronization within existing Cloudflare free allowances. The shared guided-practice UI and the first lesson (`week1-day1-v1`: steps, in-app worksheet, help, optional verified video, resume) are implemented; the plan's ledger and PROGRESS.md record which lessons are refined and what was verified.
+[Beginner lesson audit](docs/BEGINNER-LESSON-AUDIT.md) records the review of all 224 published lessons. [Guided learning experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) turns it into sequential work: See it → Try it with help → Try it yourself → Check the reason → Improve your work → Save and continue. The shared worksheet UI and seven Module 1 worksheets are implemented, but implementation does not establish that their teaching is beginner-ready. Day 1 is the next teaching pilot; preserve existing records and validate it with Haru before repeating the pattern.
 
 ## Concise course experience
 
@@ -41,7 +41,7 @@ Cloudflare configuration validation: `npm.cmd run check:deploy`. Deployment comm
 ## Current app scope
 
 - Responsive Learn screen, expandable course map and saved-work list.
-- Baseline plus 224 published lessons across Modules 1–20; experience refinement is a separate planned milestone.
+- Baseline plus 224 published lessons across Modules 1–20; the all-lesson beginner audit tracks experience refinement separately.
 - Practice reflection, work reference, optional session timer, confidence and review-readiness, with local recovery and account synchronization.
 - Markdown review export and validated JSON backup import/export.
 - Install manifest and offline app shell/course content after a successful initial online load.
@@ -59,7 +59,7 @@ Personal course for a designer transitioning from Applied Arts, graphic design, 
 - Target: India plus international remote opportunities.
 - Delivery: installable Cloudflare app with local Markdown course views.
 - Pace: no deadline or daily requirement; two hours is optional session guidance.
-- Status: all mapped teaching modules are authored; formal scored assessment software and the new experience refinement remain pending.
+- Status: all mapped teaching modules are authored; the 224-lesson beginner audit is complete, while lesson repairs, Haru validation and formal scored assessment remain pending.
 
 ## Start here
 

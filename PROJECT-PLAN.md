@@ -1,4 +1,12 @@
-# Current milestone — guided learning refinement, 7 September 2026
+# Current milestone — beginner teaching quality across all lessons, 7 September 2026
+
+The all-course review is [docs/BEGINNER-LESSON-AUDIT.md](docs/BEGINNER-LESSON-AUDIT.md). It records a row for all 224 published lessons and replaces “add a worksheet” as the definition of refinement. The target teaching path is See it → Try it with help → Try it yourself → Check the reason → Improve your work → Save and continue, presented inside Learn → Do → Check → Your work.
+
+Proceed in this order: diagnose adoption of the already-deployed app update and remove conflicting in-app/file save directions; revise `week1-day1-v1` while preserving its field IDs and learner records; observe Haru using it without verbal help; refine the remaining Module 1 lessons; then continue from Module 2 in prerequisite order. Before m08–m11, supply the interactive starters those lessons need without expecting the learner to know HTML before m12. The audit, refinement ledger and PROGRESS.md must agree on each lesson's teaching, functional and release state.
+
+The audit itself is documentation, not proof of learner understanding. All lessons remain published. Do not batch-mark lessons complete and do not infer mastery from worksheet completion, revealed answers, time or confidence.
+
+# Previous milestone — guided learning refinement, 7 September 2026
 
 The active roadmap is [docs/LEARNING-EXPERIENCE-PLAN.md](docs/LEARNING-EXPERIENCE-PLAN.md). The shared practice UI and `week1-day1-v1` are implemented and locally verified (7 September 2026); next is Haru's pilot observation, then refining the existing lessons individually in prerequisite order. Do not batch-rewrite the curriculum. Track every lesson and the next stable ID in the plan ledger, with actual verification/release evidence in PROGRESS.md.
 

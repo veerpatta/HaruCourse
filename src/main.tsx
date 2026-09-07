@@ -12,6 +12,7 @@ import { CloudPanel } from "./CloudPanel";
 import { AccountBackup } from "./AccountBackup";
 import { WorkspaceGuide, PortfolioPath, JourneyMilestone } from './ApprenticeshipPanel';
 import { emptyRecord as empty } from "./usePractice";
+import { unsavedDrafts, updateMessage } from "./updates";
 import type { User } from "../shared/record";
 import "./style.css";
 
@@ -28,22 +29,25 @@ function App({
   const [navigationVersion, setNavigationVersion] = useState(0);
   const target = navigation.lesson ? {id:navigation.lesson, section:navigation.section || "learn"} : undefined;
   const [message, setMessage] = useState("");
+  // Set when a newer course version is installed and waiting. Holding the
+  // activation function here is the whole point: without it the notice was
+  // advice the learner could not act on.
+  const [applyUpdate, setApplyUpdate] = useState<(() => void) | null>(null);
+  const [updateNote, setUpdateNote] = useState("");
   const [online, setOnline] = useState(navigator.onLine);
   useEffect(() => {
     const update = () => setOnline(navigator.onLine);
     window.addEventListener("online", update);
     window.addEventListener("offline", update);
-    if (import.meta.env.PROD)
-      registerSW({
-        onNeedRefresh: () =>
-          setMessage(
-            "Course update available. Wait for your work to save, then close and reopen the app.",
-          ),
+    if (import.meta.env.PROD) {
+      const updateSW = registerSW({
+        onNeedRefresh: () => setApplyUpdate(() => () => void updateSW(true)),
         onRegisterError: () =>
           setMessage(
             "Offline setup failed. Continue online and try reloading later.",
           ),
       });
+    }
     return () => {
       window.removeEventListener("online", update);
       window.removeEventListener("offline", update);
@@ -108,6 +112,29 @@ function App({
             <p className="notice" role="status">
               {message}
             </p>
+          )}
+          {applyUpdate && (
+            <div className="notice update-notice" role="status">
+              <p>{updateNote || updateMessage(unsavedDrafts(localStorage).length)}</p>
+              <button
+                className="primary"
+                onClick={() => {
+                  const pending = unsavedDrafts(localStorage);
+                  if (pending.length) {
+                    setUpdateNote(updateMessage(pending.length));
+                    return;
+                  }
+                  setUpdateNote("Updating… the app will reload itself.");
+                  applyUpdate();
+                }}
+              >
+                Update now
+              </button>
+              <p className="muted">
+                Nothing updates until you press this. Your saved work, notes and worksheets stay
+                exactly as they are.
+              </p>
+            </div>
           )}
           {(tab === "Learn" || tab === "My work") && (
             <LearningStudio

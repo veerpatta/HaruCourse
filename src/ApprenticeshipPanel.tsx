@@ -65,6 +65,15 @@ export function ApprenticeshipPanel({ activity, contrast = false, guided = false
 }
 
 export function SaveHandoff({ activity, practiceOnly }: { activity: Apprenticeship; practiceOnly: boolean }) {
+  // A lesson with its own route-specific save block must not also print the
+  // generic local-file steps here: the two contradicted each other, and the
+  // learner could not tell which one applied. Those steps stay available
+  // inside the "work in a file instead" disclosure.
+  if (activity.saveRoute) return <section className="save-handoff">
+    <p><strong>Adequate evidence:</strong> {activity.adequate}</p>
+    <p><strong>Next use:</strong> {activity.handoff}</p>
+    {practiceOnly && <p>Foundation work builds an evidence bank. A useful practice artifact is not automatically a finished portfolio case study.</p>}
+  </section>;
   return <section className="save-handoff"><h3>Save and bring forward</h3>
     <ul>{activity.workspace.save.map(s => <li key={s}>{s}</li>)}</ul>
     <p><strong>Adequate evidence:</strong> {activity.adequate}</p>

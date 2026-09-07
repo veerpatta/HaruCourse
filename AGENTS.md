@@ -1,6 +1,10 @@
-## Guided practice pilot — 7 September 2026
+## Beginner teaching implementation — 7 September 2026
 
-The shared guided-practice UI (`src/PracticeGuide.tsx`) and the first refined lesson, `week1-day1-v1`, are implemented; the plan's refinement ledger records which lessons carry the guided contract and PROGRESS.md records the actual checks and release state. Refine the next lesson by following the per-lesson checklist in docs/LEARNING-EXPERIENCE-PLAN.md and the guided practice contract in docs/COURSE-AUTHORING.md; do not mark a lesson refined because the shared component exists. Worksheet field ids are record keys and must never be renamed. Verify a video's playback or publisher subtitle track before assigning it; never invent timestamps.
+`week1-day1-v1` is revised against the audit and is the reference for the pattern; see the beginner teaching contract in docs/COURSE-AUTHORING.md for the `demo`, `supported`, `reveal`, `checks` and `saveRoute` members and the rules the content checker enforces. Update delivery is fixed (the worker answers `SKIP_WAITING`; the notice carries an Update now button that waits for unsaved drafts), but the live update swap still needs one confirmation in a real browser. Do not refine the next lesson before Haru has been observed using Day 1 without coaching; record what she does, not what she should do.
+
+## Guided practice implementation — 7 September 2026
+
+The shared guided-practice UI (`src/PracticeGuide.tsx`) and Module 1 worksheets are implemented. The all-course audit has reopened their beginner teaching review: worksheet-enabled does not mean teaching-refined or learner-validated. Follow the current audit and ledger, starting again with `week1-day1-v1`. Worksheet field ids are record keys and must never be renamed. Verify a video's playback or publisher subtitle track before assigning it; never invent timestamps.
 
 ## Latest agreed plan — 7 September 2026
 
@@ -16,12 +20,18 @@ Keep the established cream/green/serif style. Use concise teaching and a guided 
 
 # HaruCourse agent instructions
 
+## Beginner teaching audit — 7 September 2026
+
+Read `docs/BEGINNER-LESSON-AUDIT.md` before refining any lesson. It is the all-224-lesson gap register and the current implementation baseline. A refined lesson must teach through **See it → Try it with help → Try it yourself → Check the reason → Improve your work → Save and continue**, while the interface keeps Learn → Do → Check → Your work. Do not count a worksheet or shared component as completed teaching. Preserve shipped worksheet field IDs. Keep the learner's required work small enough to understand, reveal repeated rows progressively, make checks collect a reason before feedback, and make save/review instructions match the chosen route.
+
+Do not assume access to participants, a team, an engineer, a working prototype or prior artifact. Provide an honest practice route that preserves the competency and labels supplied or simulated material. Tool lessons need a known starting screen or downloadable starter, exact controls, expected visible result and recovery from a common failure. Fix and validate lessons one at a time; update the audit row, refinement ledger and PROGRESS.md with actual evidence. Haru's observed use remains separate from agent or creator QA.
+
 Before authoring or changing behavior, read in order:
 1. COURSE-VISION-ORIGINAL.md (preserved source; never rewrite it).
 2. COURSE-REQUIREMENTS.md, especially the latest agreed refinements and 17-area matrix.
 3. COURSE-BLUEPRINT.md and src/modules.ts (complete sequence and prerequisites).
 4. RESOURCE-LIBRARY.md (approved IDs, free restrictions, verification scope and open research).
-5. PROJECT-PLAN.md, PROGRESS.md and docs/COURSE-AUTHORING.md.
+5. PROJECT-PLAN.md, PROGRESS.md, docs/BEGINNER-LESSON-AUDIT.md and docs/COURSE-AUTHORING.md.
 
 Explicit user refinements override earlier scheduling text. Use Levels → Modules → Lessons, no deadlines; two hours is optional session guidance. Preserve all published lesson IDs, record versions, local-storage keys and feedback associations. Never infer mastery from reading, time or readiness. Creator browsing must not change learner progress or bookmark.
 

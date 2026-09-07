@@ -21,7 +21,7 @@ assert.ok(md.includes("(not filled yet)"));
 assert.ok(md.includes("Steps ticked as a navigation aid: 1"));
 assert.ok(md.includes("(worksheet kept in the app)"));
 assert.ok(!md.includes("|"), "no table syntax in the downloadable copy");
-assert.deepEqual(filledCount(lesson, rec.worksheet), { filled: 2, total: 35 });
+assert.deepEqual(filledCount(lesson, rec.worksheet), { filled: 2, total: 36 });
 assert.ok(worksheetBody(lesson, base).includes("## Reflect"));
 // A record whose worksheet field the lesson no longer declares still parses and is kept.
 const stale = recordSchema.parse({ ...base, worksheet: { "retired-field": "kept" } });
@@ -31,3 +31,25 @@ assert.ok(!recordSchema.safeParse({ ...base, status: "ready-for-review" }).succe
 assert.ok(recordSchema.safeParse({ ...base, status: "ready-for-review", worksheet: { "next-action": "x" } }).success);
 assert.ok(recordSchema.safeParse({ ...base, status: "ready-for-review", notes: "n", submission: "s" }).success);
 console.log("worksheet helpers and schema gating: ok");
+
+// Shipped worksheet field ids are record keys: a rename silently orphans a
+// learner's saved answer. These 35 ids went out with the week1-day1-v1 pilot
+// on 7 September 2026 and must keep existing exactly as written.
+const shipped = [
+  "define-product-design", "define-ux", "define-ui",
+  "app", "task", "start", "actions",
+  ...[1, 2, 3, 4, 5].flatMap((n) => [`entry-${n}-saw`, `entry-${n}-label`, `entry-${n}-goal`, `entry-${n}-check`]),
+  "user-goal", "business-goal",
+  "visual-improvement", "visual-check", "behavior-improvement", "behavior-check",
+  "open-question", "next-action",
+];
+const present = new Set(lesson.apprenticeship.worksheet.flatMap(s => s.fields).map(f => f.id));
+for (const id of shipped) assert.ok(present.has(id), `shipped worksheet field ${id} must not be renamed or removed`);
+assert.equal(shipped.length, 35);
+// Every field a step names must exist, and every field must belong to a step.
+const stepFields = new Set(lesson.apprenticeship.guide.flatMap(g => g.fields || []));
+for (const id of present) assert.ok(stepFields.has(id), `field ${id} belongs to no step`);
+// Progressive reveal must never hide an answer the learner already wrote.
+const step3 = lesson.apprenticeship.guide[2];
+assert.ok(step3.reveal && step3.reveal.count === 20 && step3.reveal.first === 4);
+console.log("shipped field ids preserved and reveal bounded: ok");
