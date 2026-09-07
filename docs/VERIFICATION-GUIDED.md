@@ -25,10 +25,16 @@ The R01 Double Diamond page links two videos. The YouTube embed (5FpKuJSCbx0) is
   - Focus: the step heading is a real button with `aria-expanded`; it receives a visible focus outline when tabbed to. The desktop pane's synthetic key presses did not reach the focused button, so Enter and Space activation were not observed there; the handler was exercised through the button's click path and relies on native button semantics.
   - Diagnostic regression: opening the baseline showed the plain six-step list, no route, worksheet, video or hints, and left the published-lesson bookmark on `week1-day1-v1`.
 
+## Release state
+
+Commit 8b88e6f was fast-forwarded to main, pushed, and deployed on 7 September 2026 with the user-authorized CLI to https://harucourse.raj-39e.workers.dev as Cloudflare version 76cbe14f-35f4-46f2-953b-250d7d8da9a8 (upload 3818.70 KiB, 851.86 KiB gzip, four changed assets, Worker startup 54 ms). `wrangler d1 migrations list` and `apply` against the remote database both reported nothing to apply, as expected for a release with no schema change.
+
+Hosted checks from Node immediately afterwards: the index returns 200; the served `index-C6QA4rI_.js` is 2,328,809 bytes and its SHA256 843c50b43ea89733d9a71b4a6dec5a42dc8add497260fd6f54000f358bb0f172 matches the local build exactly, and it contains the VID01 embed URL, the worksheet field ids and the step-tick label; /api/health reports 0.2.0; /api/progress without a session is refused with 401; sw.js, the manifest and the MCP resource document return 200. Signed in only as the password-free test account: a guided record with a worksheet answer and `guide: {step: 2, done: [1]}` saved at the next revision and read back identically, and a record with a malformed worksheet key was refused with 400. The QA note is labelled as such in the test account's lesson 1 notes. No real learner account was signed into or written; Haru's records were not touched. No hosted browser session was run, so the hosted UI is attested by the bundle identity and the API rather than by a rendered page.
+
 ## Not done, stated plainly
 
 - No learner study: Haru has not tried the pilot. The walkthrough for her is in PROGRESS.md.
 - No creator sign-in in the browser (the generated local creator password is not typed by the agent); creator read-only behaviour is covered by the backend 403 and by the `readOnly` rendering path, not by a browser observation.
 - No native soft-keyboard, assistive-technology, installed-app or real second-device test; the second device was a second session on the same machine.
-- No deployment, hosted write, live billing or usage inspection. Local checks do not establish hosted availability.
+- No live billing or usage inspection; CLI billing access remains unavailable, so the free-tier statements are ceilings, not a measured bill.
 - The video was verified through page metadata and its subtitle file, not watched in full by a person.
