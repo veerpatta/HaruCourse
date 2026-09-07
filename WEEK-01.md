@@ -564,6 +564,20 @@ Is it enough? Each line is something you believe about other people, not somethi
 
 #### 2. Frame
 
+**See it first.** Made-up example. The workshop report says only: “Attendees turn up unprepared.” Here is the frame being written, including the version that had to be thrown away.
+
+- **What the report actually says:** People arrive without materials. That is the symptom somebody noticed. It does not say who, when, or what they were doing beforehand.
+- **My first attempt:** “Attendees need a reminder email with the materials list the day before.” I wrote it in about four seconds.
+- **Why I threw it away:** It decides that the answer is an email. If nobody opens the email, or if the list only exists in the organiser’s head, that frame cannot lead anywhere useful.
+- **The frame I kept:** A first-time attendee, the evening before, cannot tell what to bring, so she arrives without an apron and loses the first twenty minutes of a two-hour class.
+- **What that opens up:** Now an email, a line on the ticket, a text message, or the studio simply keeping spare aprons are all candidates, and they can be compared.
+
+**The wrong turn:** The wrong turn is the fast one: writing the response you already have in mind and calling it the problem. It feels productive and it quietly closes every other option.
+
+**What it costs:** The longer frame takes more thought and can sound like avoiding the question when someone wants a fix today. It buys you the ability to be wrong about the fix without being wrong about the work.
+
+**Still unknown:** Still unknown: whether attendees ever see the confirmation email, and whether the studio can supply spares. Both are assumptions for the next step.
+
 - Write three person–situation–goal–consequence statements about workshop attendance.
 - Remove feature names such as checkbox or reminder.
 
@@ -595,7 +609,18 @@ Is it enough? You could hand each frame to another designer and they could propo
 
 **You should end up with:** Six assumptions with consequence and confidence, and the two you will investigate with what would change your mind.
 
-Worksheet fields for this step:
+**Try it with help.** A supplied pair from the same made-up workshop. Assumption A: “Attendees read the confirmation email.” Nobody has checked; if it is wrong, every message you send is unread. Assumption B: “Attendees would prefer a printed list to a text message.” Nobody has checked; if it is wrong, you send the same information in a slightly different form.
+
+Which one do you investigate first, and why?
+
+- **A, because being wrong about it breaks every other response you might choose.** — Both are unchecked, so uncertainty does not separate them. Consequence does: if the email is never read, a better-worded email cannot help, and neither can anything else delivered that way.
+- B, because preference questions are quick to ask people. — Speed is a real consideration, but here it buys the cheap answer. You would learn a format preference while still not knowing whether any message arrives.
+- Neither: ask about both in the same conversation to save time. — Reasonable in practice, and it still needs an order. Asked together, the preference question usually eats the time, because people find it easier to answer than recalling what they actually did.
+- A, because printed lists cost money and email is free. — The right assumption for the wrong reason. Cost belongs in the response comparison, not in deciding which uncertainty threatens the work most.
+
+**Then:** Apply the same test to your own six: for each, ask what breaks if it is wrong, then pick the two where the damage is worst and the evidence thinnest.
+
+Worksheet fields for this step, revealed a few at a time in the app:
 
 - Assumption 1
 - Assumption 2
@@ -664,23 +689,26 @@ Is it enough? No two responses are variations of the same idea, and every weakne
 - Choose the next investigation and explain why.
 - Save the frames, assumptions and alternatives.
 
-**You should end up with:** One chosen investigation and the reason it comes first. The worksheet is saved as you type.
+**You should end up with:** One chosen investigation, the reason it comes first, and the change the Check questions sent you back to make.
 
 Worksheet fields for this step:
 
 - The next investigation you will do — Which uncertainty, with whom, and what you will look for.
 - Why this one first
+- What you changed after the Check questions — The Check section sends you back to one answer. Name which one and why you changed it.
 
 <details>
 <summary>Help with this step</summary>
 
 
 
-Stuck starting? Pick the priority uncertainty from step 3 and name a person you could actually ask.
+Stuck starting? Pick the priority uncertainty from step 3 and name a person you could actually ask. Answer the Check questions before the last box.
 
-Is it enough? The reason compares the cost of being wrong, not which response you like.
+Is it enough? The reason compares the cost of being wrong, not which response you like, and the last box names one answer you actually changed.
 
 </details>
+
+**Save and continue.** Saved for you: Your frames, assumptions and responses save as you type: on this device first, then online. The line above the steps says “Saved online” once the server has them. Kept outside the app: Nothing is uploaded. If you sketched the responses on paper, keep the sheet and write its file name or location in Your work so you can find it beside the frames. What your creator sees: Your creator can read this worksheet, your notes and your work reference once you choose Ready for review in Your work. He cannot edit them. Your next action: Open Your work, add anything the worksheet did not ask for, then choose Ready for review. Lesson 3 turns your first priority uncertainty into interview questions, so keep it where you can see it.
 
 A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
@@ -789,6 +817,38 @@ Keep the decision log as early reasoning evidence.
 </details>
 
 ### Check
+
+**Which of these is a problem frame rather than a disguised feature?**
+
+- **A first-time attendee, the evening before, cannot tell what to bring, so she arrives without materials and misses the start.** — It names a person, a moment, what she needs and what it costs her. A reminder, a printed list or a phone call could all answer it, which is exactly the point.
+- Attendees need a reminder email the day before the workshop. — This is one answer wearing the clothes of a problem. Written this way, only one response can ever win, and you never find out whether email is read at all.
+- The booking page needs a clearer materials section. — It names a page and a section, so it has already decided that the trouble is on that screen. The person may never reach that screen.
+
+Improve your work: Reread your three frames in step 2. If any of them contains a feature word — reminder, email, checkbox, page, button — rewrite it as what the person needs to have happen, then record the change in step 5.
+
+At recheck: Each frame names a person and a moment, and someone else could propose a response you had not thought of.
+
+**Two assumptions are both unverified. Which do you investigate first?**
+
+- **The one where being wrong would do the most damage and you have the least evidence.** — Consequence and uncertainty together. An assumption you are confident about, or one that costs nothing if wrong, can wait however interesting it is.
+- The one that is quickest and cheapest to check. — Tempting, and sometimes it is the same assumption. On its own it leads you to answer easy questions while the expensive one stays untested.
+- The one your three responses all depend on. — Closer, because a shared dependency raises the consequence. Still incomplete: if you already have good evidence for it, checking again buys little.
+
+Improve your work: Look at your two priority uncertainties in step 3. If either was chosen because it was easy, swap it for the one with the worse consequence, and say why in step 5.
+
+At recheck: Each priority names what would happen if you were wrong, and each has evidence that could disprove it.
+
+**You write beside an assumption: “Nothing could really disprove this.” What does that tell you?**
+
+- **It is not an investigation yet — it needs a specific thing you could see that would change your mind.** — An assumption nothing could contradict cannot be tested, only defended. Naming what would change your mind is what turns it into work you can do.
+- It is a strong assumption, so you can safely build on it. — Unfalsifiable is not the same as well supported. It usually means the claim is vague rather than certain.
+- It should be deleted from the list. — Deleting it hides it. Sharpen it instead until you can say what evidence would count against it.
+
+Improve your work: Take the priority uncertainty with the weakest evidence line and replace it with one concrete observation that would change your mind. Record it in step 5.
+
+At recheck: Both evidence lines name something a person could say or do, not a feeling.
+
+Answer each question in the app before its explanation appears. Answers are not saved or scored.
 
 <details>
 <summary>Which assumption should be investigated first?</summary>
@@ -921,13 +981,27 @@ Is it enough? Someone hearing the introduction would know they can stop, and whe
 
 #### 2. Write
 
+**See it first.** Made-up example. The uncertainty is “attendees may never see the materials list”. Here is one question being written and repaired.
+
+- **The uncertainty:** I do not know whether anything I send before a class is read. Everything else depends on it.
+- **My first question:** “Did you read the confirmation email before the class?” It is short and it points straight at what I want to know.
+- **Why it fails:** It can be answered yes or no, and it invites the tidy answer. People remember being organised more often than they were, especially when a stranger is asking.
+- **The repair:** “Think about the last class you booked. Walk me through the evening before — what did you do?” Now the email either appears in their story or it does not.
+- **The follow-up I hold ready:** “What did you expect to happen then?” It works after any answer and does not steer.
+
+**The wrong turn:** The wrong turn is asking directly about the thing you care about. It looks efficient and it teaches the person what you want to hear.
+
+**What it costs:** The story question takes longer and can wander. In exchange you find out what they actually did, including the parts you would never have asked about.
+
+**Still unknown:** Still unknown after one conversation: how common any of this is. One person’s evening is one person’s evening.
+
 - Choose one uncertainty from Lesson 2.
 - Draft six questions about recent experience and two neutral follow-ups.
 - Remove leading language and predictions.
 
 **You should end up with:** Six open questions about a recent experience and two neutral follow-ups.
 
-Worksheet fields for this step:
+Worksheet fields for this step, revealed a few at a time in the app:
 
 - The uncertainty from Lesson 2 these questions serve
 - Question 1 — Start with “Tell me about the last time…” or “What happened when…”.
@@ -965,6 +1039,17 @@ Is it enough? No question mentions a feature, a screen or the future; each can b
 - Exclude identifying details and private research from AI tools.
 
 **You should end up with:** Honest status, then observations kept apart from interpretations. A rehearsal with no participant is a valid result.
+
+**Try it with help.** A supplied line from someone else’s notes, written straight after a real consented conversation: “She looked for the price, couldn’t find it on the first screen, went back twice, and said ‘I never know what these things cost until the end’ — she was clearly frustrated by the whole booking process.”
+
+How should this be split between observations and interpretations?
+
+- **Observed: she searched for the price, returned twice, and said that sentence. Inferred: that she was frustrated by the process as a whole.** — Her actions and her words are what you can point to. “Clearly frustrated by the whole process” is your reading, and it stretches one moment into a verdict on everything.
+- All observed: her behaviour and her frustration were both visible in the room. — You saw behaviour and heard a sentence. Frustration is a reasonable interpretation of them, but writing it as observed removes the step where someone could disagree with you.
+- Observed: the quotation only. Everything else is your summary of what she did. — Too strict. Actions you watched — searching, going back twice — are as observable as the words; describing them is not interpretation.
+- Inferred: memory is unreliable, so notes written afterwards are all interpretation. — Notes written immediately are the normal record of a session. Treating everything as interpretation would leave you nothing to reason from.
+
+**Then:** Split your own notes the same way: what you could point to on one side, your reading of it on the other, and the exact words only if you were given permission to keep them.
 
 Worksheet fields for this step:
 
@@ -1012,24 +1097,27 @@ Is it enough? Each item is a question, not a conclusion.
 - Rewrite one weak question.
 - Save your guide, labelled notes and next research question.
 
-**You should end up with:** One rewritten question and your next research question. The worksheet is saved as you type.
+**You should end up with:** One rewritten question, your next research question, and the change the Check questions sent you back to make.
 
 Worksheet fields for this step:
 
 - The weakest question, as written
 - The same question, rewritten
 - Your next research question
+- What you changed after the Check questions — Name the question or note you changed, and why.
 
 <details>
 <summary>Help with this step</summary>
 
 
 
-Stuck starting? Pick the question you felt awkward asking; that is usually the leading one.
+Stuck starting? Pick the question you felt awkward asking; that is usually the leading one. Answer the Check questions before the last box.
 
-Is it enough? The rewrite asks about a past event and would work with a stranger.
+Is it enough? The rewrite asks about a past event and would work with a stranger, and the last box names one thing you actually changed.
 
 </details>
+
+**Save and continue.** Saved for you: Your purpose, consent wording, questions and notes save as you type, on this device first and then online. Watch for “Saved online” above the steps. Kept outside the app: Nothing is uploaded, and no participant’s name, contact details or recording belongs in this worksheet. Keep any consent record or audio in your own private folder and refer to it only by a file name. What your creator sees: Your creator can read the worksheet, your notes and your work reference once you choose Ready for review. Write your notes so that a person reading them cannot identify the participant. Your next action: Open Your work and choose Ready for review. Lesson 4 takes the task you asked about and maps it, including the moments where it goes wrong, so keep your observations to hand.
 
 A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
@@ -1139,6 +1227,40 @@ Count research findings only when actually collected.
 </details>
 
 ### Check
+
+**Which question is most likely to tell you what actually happened?**
+
+- **Tell me about the last class you signed up for. What did you do the evening before?** — It asks about one real occasion the person can remember, and it does not tell them which part you care about, so the surprising detail has room to arrive.
+- Would a reminder the day before have helped you prepare? — It hands over the answer. Most people say yes to a helpful-sounding thing, and you learn what they predict about themselves rather than what they did.
+- Do you usually find booking pages confusing? — It asks for a general habit and a judgement at once. “Usually” answers are reconstructions, and “confusing” invites agreement with your own suspicion.
+- How important is it to you to know what to bring? — Almost nobody says it is unimportant. Importance questions produce flat, agreeable answers that cannot separate one situation from another.
+
+Improve your work: Read your six questions in step 2 aloud. Rewrite any that name a feature, ask for a prediction, or contain the word you hope to hear, then record the change in step 5.
+
+At recheck: Every question can be answered by telling a story about one occasion, and none of them mentions your idea.
+
+**You rehearsed the questions alone because nobody was available. What may you write in your notes?**
+
+- **That you rehearsed, what felt awkward to ask, and that no participant evidence exists yet.** — A rehearsal tests your questions, which is real work worth recording. What it cannot produce is anything about other people, so the honest note says so plainly.
+- Your own answers to the questions, marked as a first data point. — You already know your own design and intentions, so your answers cannot stand in for a participant’s. Recording them as data quietly turns your assumptions into findings.
+- A likely answer based on what people in your position usually say. — That is an invented participant. Once it is written down it will be quoted later as though someone said it.
+- Nothing — an interview without a participant is a failure. — Too harsh, and it hides useful work. The guide, the consent wording and the awkward questions you found are the output; the recruitment gap is a dated fact, not a failure.
+
+Improve your work: Check the session-status choice in step 3. If it says a real conversation happened, be sure someone actually consented; if not, choose rehearsal and empty the observations box, then say what you changed in step 5.
+
+At recheck: The status matches what happened, and nothing in the observations box is something you supplied yourself.
+
+**Halfway through, the person mentions something upsetting about a family member. What do you do?**
+
+- **Stop the topic, remind them they can skip anything or stop, and leave it out of your notes.** — Consent is a running permission, not a form signed once. The material is not yours to keep simply because it was said while you were listening.
+- Write it down carefully — it is honest context about their life. — It may well be true and relevant, and it was still shared in a moment they did not choose. Keeping it in notes you may show someone else breaks the terms they agreed to.
+- Keep going and decide afterwards whether to include it. — Deciding later means it is already written down. The moment to protect them is while it is happening, not while you edit.
+
+Improve your work: Reread your consent wording in step 1. If it does not say plainly that they can skip a question or stop at any time, add that sentence and note it in step 5.
+
+At recheck: The consent introduction names what the notes are for, that they can stop, and whether anything is recorded.
+
+Answer each question in the app before its explanation appears. Answers are not saved or scored.
 
 <details>
 <summary>What if no participant is available?</summary>
@@ -1273,6 +1395,20 @@ Is it enough? Everything in the information list appears somewhere before the Re
 
 #### 2. Map
 
+**See it first.** Made-up example. The first three boxes of a reservation flow, drawn twice because the first attempt was a list of screens.
+
+- **My first attempt:** Home → Details → Reserve → Payment → Confirmation. Five boxes, five arrows, no words on the arrows.
+- **Why it taught me nothing:** Every box is a place, not a state, and nothing says what moves the person along. It is a sitemap wearing a flow’s clothes.
+- **The redraw:** A · looking at Saturday’s list — taps a class → B · reading the class details, price and materials visible — taps Reserve → C · filling name and date.
+- **What the redraw exposed:** Between B and C there is a decision I had not drawn: are there places left? Until I drew the arrow labels, that question had nowhere to live.
+- **Where the information had to move:** The price sat on the payment screen in my first sketch. Because commitment happens at Reserve, it had to move up to B.
+
+**The wrong turn:** The wrong turn is drawing the screens you expect to design. It produces a tidy diagram that hides every decision and every failure.
+
+**What it costs:** Labelled states and arrows take longer and look messier. They pay for themselves the moment you ask what happens when something goes wrong, because there is somewhere to attach the answer.
+
+**Still unknown:** Still unknown: whether people look for the price before or after they choose a date. The flow assumes before, which is a guess worth checking.
+
 - Draw the successful reservation path.
 - Label actions and decisions.
 - Place price and materials before the reservation decision.
@@ -1283,13 +1419,6 @@ Worksheet fields for this step:
 
 - Boxes on the successful path
 - The decision points, and what decides them — Diamonds on paper: places left? payment confirmed?
-
-<details>
-<summary>Example</summary>
-
-Example (made up): A box is a state the person is in; an arrow is what they do to leave it. “Details page” is a box; “taps Reserve” is an arrow.
-
-</details>
 
 <details>
 <summary>Help with this step</summary>
@@ -1311,7 +1440,18 @@ Is it enough? Price and materials appear before the Reserve arrow, and every arr
 
 **You should end up with:** Three failure branches, each with a message and a next action.
 
-Worksheet fields for this step:
+**Try it with help.** A supplied branch from the same made-up flow. The person types an email address without an @ and presses Reserve. Someone has drafted three versions of what happens next.
+
+Which one handles the failure properly?
+
+- **“That email address is missing an @. Check it and press Reserve again.” The name and date they typed stay on screen.** — It says what is wrong, where, and what to do, and it does not punish them by emptying the form. Everything they can act on is in one place.
+- “Invalid input. Please try again.” The form is cleared so they can start cleanly. — Two failures at once: it does not say which field or what is wrong with it, and clearing the form makes the person retype work they had already done correctly.
+- The Reserve button quietly does nothing until the address is valid. — The person presses a button and the world does not change, so they cannot tell whether the app is broken, slow, or waiting for them.
+- “That email address is missing an @.” No further instruction, since the problem is now obvious. — Close, and it stops one step short. It names the fault without saying what to do, and it does not promise that their other answers survived.
+
+**Then:** Write your own three branches the same way: name what is wrong, say what the person does next, and state what is preserved.
+
+Worksheet fields for this step, revealed a few at a time in the app:
 
 - Workshop full · the message the person sees
 - Workshop full · the next action offered
@@ -1360,23 +1500,26 @@ Is it enough? At least one finding is missing information rather than a missing 
 - Repair one dead end.
 - Save the flow and explain what changed.
 
-**You should end up with:** What changed on the sheet and why, plus where the photo lives. The worksheet is saved as you type.
+**You should end up with:** What changed on the sheet and why, where the photo lives, and the change the Check questions sent you back to make.
 
 Worksheet fields for this step:
 
 - What changed, and why
 - File name or location of the paper flow (photo or scan) — A name only; nothing is uploaded here.
+- What you changed after the Check questions — Name the branch or box you changed, and why.
 
 <details>
 <summary>Help with this step</summary>
 
 
 
-Stuck starting? Redraw only the repaired branch on a fresh sheet; keep the original.
+Stuck starting? Redraw only the repaired branch on a fresh sheet; keep the original. Answer the Check questions before the last box.
 
-Is it enough? Someone reading the change could find the branch on the original sheet.
+Is it enough? Someone reading the change could find the branch on the original sheet, and the last box names one thing you actually changed.
 
 </details>
+
+**Save and continue.** Saved for you: Everything you type here saves by itself, on this device first and then online. The sheet you drew does not: it stays on your table until you photograph it. Kept outside the app: The photo or scan of the flow lives in your own folder. Write its file name in the last step so you can find it later; entering a name does not upload the picture, and nobody else can open it from here. What your creator sees: Your creator reads what you typed, not the drawing. If you want him to see the sheet, share the photo the way you normally share files and put the same file name in Your work. Your next action: Open Your work and choose Ready for review. Lesson 5 turns this flow into screens, so keep the sheet and its numbering.
 
 A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
@@ -1473,6 +1616,38 @@ Early untested flow evidence for the practice project.
 </details>
 
 ### Check
+
+**A visitor reaches “Sorry, this workshop is full.” The box has no arrow leaving it. What is wrong?**
+
+- **It is a dead end: the person is told the bad news with nothing they can do next.** — A failure is only handled when the person can act — see another date, join a waiting list, or leave knowing where they stand. A message alone stops the flow.
+- Nothing: the workshop really is full, so the flow has finished honestly. — Honest, and unfinished. The task was to get a place; being told no ends this route but not the need, and the flow should show where that need goes.
+- The message should be softer so people are less disappointed. — Wording matters and it is not the structural problem. A gently worded dead end is still a dead end.
+
+Improve your work: Look at your three failure branches in step 3. Any whose next action is only a message needs a real action the person can take. Change one and record it in step 5.
+
+At recheck: Every failure box has an arrow out of it, and each next action is something the person does rather than something the system says.
+
+**Your flow shows: Home → Details → Reserve → Payment → Confirmation. What is missing?**
+
+- **The actions and decisions between the screens, and what the person needed to know before committing.** — That is a list of places, not a flow. What turns one box into the next, and what has to be true before Reserve, is where the design decisions live.
+- Nothing: the five screens cover the whole task from start to finish. — They cover the happy path only, and even there the arrows are unlabelled, so anyone reading it has to guess what causes each move.
+- The visual design of each screen. — Not at this stage. A flow is about order, decisions and recovery; how the screens look comes later and cannot fix a missing decision.
+
+Improve your work: Reread your successful path in step 2. If your boxes are screen names, label each arrow with the action that causes the move, and make sure the price and what to bring appear before the Reserve arrow. Note the change in step 5.
+
+At recheck: Every arrow carries an action, and the information list from step 1 appears before commitment.
+
+**Payment is submitted and the connection drops before any answer arrives. What should the flow do?**
+
+- **Say clearly that the result is not yet known and offer a way to check, keeping what was entered.** — Unknown is a real state and deserves its own box. Telling someone it failed when it may have succeeded is how people pay twice.
+- Show a failure message so the person can try again straight away. — This is the expensive mistake. You do not know it failed, and a confident retry can produce a second booking and a second charge.
+- Retry automatically in the background until it succeeds. — Silent retries hide the state from the person and can repeat the charge. Any retry has to be their decision, after they know where things stand.
+
+Improve your work: Check your interrupted-confirmation branch in step 3. If its message says the booking failed, rewrite it as an unknown state with a way to check, then record it in step 5.
+
+At recheck: The interrupted branch distinguishes “we are checking” from “this failed”, and keeps the entered values.
+
+Answer each question in the app before its explanation appears. Answers are not saved or scored.
 
 <details>
 <summary>What is missing from a list of screens?</summary>
@@ -1607,6 +1782,20 @@ Is it enough? Each consideration names an element on your sketch, not a general 
 
 #### 2. Sketch
 
+**See it first.** Made-up example. Ordering the workshop details screen for a phone, with the arrangement that had to be undone.
+
+- **My first order:** A large photograph of the studio, the class title, a paragraph about the teacher, then price, then what to bring, then Reserve.
+- **The question that broke it:** What does she have to decide on this screen? Whether this class, on this date, at this price, is one she can turn up to prepared.
+- **What that changes:** The photograph and the teacher’s biography are reassurance, not decisions. They can sit below the button; the date, price and materials cannot.
+- **The order I kept:** Title and date, price, what to bring, places left, Reserve — then the photograph and the biography underneath for anyone still deciding.
+- **What the wide version does:** The same order, with the photograph moved beside the details instead of above them. Nothing shrinks; the column simply becomes two.
+
+**The wrong turn:** The wrong turn is arranging the screen by what looks handsome. A big photograph at the top makes a good first impression and pushes the only information she needs below the fold.
+
+**What it costs:** Leading with plain facts makes the page less striking, and the studio may not like it. It buys a person who can decide without scrolling back and forth.
+
+**Still unknown:** Still unknown: whether the photograph actually helps anyone choose. It stays on the page, lower down, until there is a reason to say otherwise.
+
 - Sketch workshop details and reservation screens at two widths.
 - Keep preparation information before Reserve.
 - Use spacing, grouping and words; do not rely on color alone.
@@ -1639,6 +1828,17 @@ Is it enough? What to bring and the price appear above Reserve at both widths.
 - List keyboard and screen-reader checks that need implementation.
 
 **You should end up with:** Order, labels, stacking, error recovery, and an honest list of checks that need a built version.
+
+**Try it with help.** A supplied phone sketch of the reservation form, made up for practice. Down the page: the heading “Reserve your place”, then Name, then Email, then a note reading “We will send your materials list here”, then the Date chooser, then the Reserve button. The note about the materials list is drawn in small grey text beside the Email field.
+
+What should the reading and focus order annotation say about that grey note?
+
+- **It must come before the Email field in the order, because it explains what the address will be used for.** — Anyone hearing the page read aloud, or tabbing through it, meets the field before the note if it is placed beside it. The explanation only helps if it arrives first.
+- It can sit anywhere, because it is only a hint rather than a label. — Position is exactly what decides whether a hint is heard in time. A hint met after the answer has been typed is decoration.
+- It should be removed, because a field with a visible label needs no further text. — The label says what to type; this note says why it is wanted, which changes whether someone is willing to give it.
+- It should become placeholder text inside the Email field to save space. — That is two problems: it disappears the moment typing starts, and small grey text inside a field is the least readable place on the screen.
+
+**Then:** Number every element on your own sketch in the order you would want it read aloud, and check that each explanation arrives before the thing it explains.
 
 Worksheet fields for this step:
 
@@ -1689,23 +1889,26 @@ Is it enough? The error says what was wrong and how to fix it, and the typed val
 - Name the main unresolved issue.
 - Add notes and a work reference before selecting Ready for review.
 
-**You should end up with:** The unresolved issue and where the sketches live. The worksheet is saved as you type.
+**You should end up with:** The unresolved issue, where the sketches live, and the change the Check questions sent you back to make.
 
 Worksheet fields for this step:
 
 - The main unresolved issue for review
 - File names or location of the screen sketches — Names only; nothing is uploaded here.
+- What you changed after the Check questions — Name the screen or annotation you changed, and why.
 
 <details>
 <summary>Help with this step</summary>
 
 
 
-Stuck starting? Choose the issue you would most want a second opinion on, not the smallest one.
+Stuck starting? Choose the issue you would most want a second opinion on, not the smallest one. Answer the Check questions before the last box.
 
-Is it enough? Your work has a reference or the worksheet is filled, so Ready for review is available.
+Is it enough? Your work has a reference or the worksheet is filled, and the last box names one thing you actually changed.
 
 </details>
+
+**Save and continue.** Saved for you: What you type here saves by itself, first on this device and then online. Your sketches do not: they stay on paper until you photograph them. Kept outside the app: Keep the sheets and any photographs in your own folder and write the file names in the last step. Naming a file here does not upload it or let anyone else open it. What your creator sees: Your creator reads the descriptions and annotations you typed. Share the photographs the way you normally share files if you want him to see the drawings themselves. Your next action: Open Your work, name the unresolved issue you most want read, and choose Ready for review. Lesson 6 repairs one weak point from these screens, so keep the originals unchanged.
 
 A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
@@ -1805,6 +2008,38 @@ Creator review is required before portfolio-ready claims.
 </details>
 
 ### Check
+
+**Your annotations say the screens are keyboard accessible. What do the sketches actually establish?**
+
+- **What you intend: the order, the labels and the recovery. Whether it works can only be known once it is built and tested.** — A drawing records a design decision. Focus order, announcement and keyboard traps are properties of running code, so the honest note names the checks still to do.
+- That the design is accessible, since the reading order and labels are specified. — Specifying them is necessary and not sufficient. A build can ignore the order, mislabel a field, or trap focus in a dialog, and only testing reveals it.
+- Nothing about accessibility at all, so the annotations are pointless. — Too far the other way. The annotations are what a developer builds from and what a tester checks against; they just are not evidence of the result.
+
+Improve your work: Reread your annotations in step 3. Replace any sentence that claims the screens are accessible with the specific checks that still need a built version, and record the change in step 5.
+
+At recheck: No annotation claims a result; the list of checks still needed names keyboard and screen-reader steps.
+
+**On the phone version you shrink the whole desktop layout so everything still fits. What is wrong with that?**
+
+- **Shrinking makes text and targets smaller; the content should reflow into one column and keep its size.** — Reflow rearranges what is there so it stays readable and tappable. Scaling down keeps the arrangement and takes away legibility and touch targets.
+- Nothing, as long as the person can pinch to zoom. — Zooming shifts the work onto the reader, and a zoomed page usually requires sideways scrolling to read a single line.
+- It is wrong only if the text falls below twelve pixels. — A size threshold is not the issue. Even at a readable size, a scaled desktop layout puts the price and the button in places built for a wide screen.
+
+Improve your work: Look at your narrow and wide descriptions in step 2. If the narrow one is the wide one made smaller, rewrite it as a single column in the order the person needs, and say what changed in step 5.
+
+At recheck: The narrow version states what stacks and what moves, and the materials and price still sit above Reserve.
+
+**A label sits inside the field as grey placeholder text and disappears when typing starts. Why replace it?**
+
+- **Once it is gone the person cannot check what the field was for, and an error message has nothing to point at.** — The label is needed most while filling in and while correcting. A placeholder removes it exactly then, and it usually fails contrast as well.
+- Placeholders are always forbidden in accessible design. — Placeholders are fine as an extra hint beside a real label. The problem is using one as the only label.
+- Because grey text looks unfinished. — Appearance is not the reason. The reason is that the information vanishes at the moment it is needed.
+
+Improve your work: Check your persistent-label annotation in step 3. If any field relies on placeholder text alone, give it a visible label that stays, then record it in step 5.
+
+At recheck: Every field keeps a visible label while being typed into, and the error text can name it.
+
+Answer each question in the app before its explanation appears. Answers are not saved or scored.
 
 <details>
 <summary>Does a mockup prove keyboard accessibility?</summary>
@@ -1944,6 +2179,20 @@ Is it enough? The artefact is one screen or one branch, not the whole module.
 
 #### 2. Critique
 
+**See it first.** Made-up example. One weak point being written up, starting from the sentence that was not usable.
+
+- **What I wrote first:** “The confirmation screen is weak.” I knew what I meant and nobody else could have acted on it.
+- **What I could actually point to:** After Reserve, the screen says “Thank you” and nothing else. No date, no address, no mention of what to bring.
+- **What it stops the person doing:** She cannot check she booked the right evening, and she has nowhere to look for the materials list she was told about.
+- **How I labelled my evidence:** Observed in my own walkthrough. Nobody else has used it, so “people would feel unsure” stays inferred.
+- **What I still do not know:** Whether the confirmation email covers this. If it does, the screen may matter less than I think, and that changes the repair.
+
+**The wrong turn:** The wrong turn is the confident summary — “this screen is weak” — which sounds like expertise and gives nobody a way to check or repair it.
+
+**What it costs:** Writing it out takes four lines instead of one, and it can feel laborious for something you already understand. It is what lets someone disagree with you specifically rather than generally.
+
+**Still unknown:** Still unknown: whether anyone reads the confirmation screen at all, or goes straight to their email.
+
 - Write the observation, task impact, evidence and uncertainty.
 - Ask for creator input if available.
 
@@ -1998,6 +2247,17 @@ Is it enough? Everything you changed serves the one criterion; nothing else move
 
 **You should end up with:** A before/after comparison and a concrete way to check it.
 
+**Try it with help.** A supplied pair from the same made-up repair. Before: the confirmation screen says only “Thank you”. After: it shows the class name, the date and time, the address, and one line saying what to bring, with the same “Thank you” heading.
+
+Which way of checking whether the repair helped is worth writing down?
+
+- **Watch two people finish a booking and see whether they can say, without scrolling back, which evening they are coming and what to bring.** — It names who, what they do, and what you would see. It could also come out badly, which is what makes it a check rather than a demonstration.
+- Ask two people whether the new screen is clearer than the old one. — Shown two versions by the person who made them, people tend to prefer the newer one. You learn about politeness rather than about the task.
+- Count how much longer people spend on the confirmation screen. — Longer could mean reading carefully or being lost, and the number cannot tell you which. A measure you cannot interpret is not yet a check.
+- Compare the two screens against the usability heuristics again. — Useful for deciding what to try; it cannot report what happened. Re-reading a rule tells you about the design, not about a person using it.
+
+**Then:** Write your own check the same way: a person, a task, and the specific thing you would watch for that could show the repair did not help.
+
 Worksheet fields for this step:
 
 - Before and after, side by side — What a visitor sees first in each version, and what they can do next.
@@ -2019,22 +2279,25 @@ Is it enough? The check is something you could watch or count, not “it looks c
 - Save both references and remaining limitations.
 - Skip this optional lesson whenever you prefer.
 
-**You should end up with:** What still needs testing. The worksheet is saved as you type.
+**You should end up with:** What still needs testing, and the change the Check questions sent you back to make.
 
 Worksheet fields for this step:
 
 - What this repair still does not prove
+- What you changed after the Check questions — Name the part of the critique or repair you changed, and why.
 
 <details>
 <summary>Help with this step</summary>
 
 
 
-Stuck starting? Finish the sentence “This repair would be proven wrong if…”.
+Stuck starting? Finish the sentence “This repair would be proven wrong if…”, then answer the Check questions before the last box.
 
-Is it enough? The repair is described as untested, not as fixed.
+Is it enough? The repair is described as untested, not as fixed, and the last box names one thing you actually changed.
 
 </details>
+
+**Save and continue.** Saved for you: Your critique, repair description and limitations save as you type, on this device first and then online. Kept outside the app: The before and after artefacts stay in your own folder or on paper. Keep the original untouched and give the two versions names you can tell apart, then write those names here. What your creator sees: Your creator reads the critique, the repair and the limitations. He can only see the artefacts themselves if you share them the way you normally share files. Your next action: Open Your work and choose Ready for review. This lesson is optional, so stopping here is a complete answer; Lesson 7 explains one decision in writing.
 
 A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
@@ -2152,6 +2415,39 @@ Potential iteration evidence with an honest explanation.
 </details>
 
 ### Check
+
+**Which critique can somebody act on?**
+
+- **On the full workshop, Reserve is greyed out with no explanation, so the visitor cannot tell whether to wait or look at another date.** — It points at one thing on the screen and says what it stops the person doing. Someone else could find it and judge whether the repair worked.
+- The reservation screen feels cluttered and a bit dated. — It records an impression without naming what is affected. Two people can disagree about it forever and nothing changes for the visitor.
+- Users are confused by the booking flow. — It sounds like evidence and is a guess about other people. Unless you watched someone, the honest version says what you saw and marks the confusion as inferred.
+- The button colour does not match the studio’s brand. — A real observation about consistency, and no stated effect on the task. It may be worth fixing later; it is not the weak point this lesson is for.
+
+Improve your work: Reread your observation and task-impact boxes in step 2. If the critique names a feeling rather than something on the screen, rewrite it and record the change in step 5.
+
+At recheck: The observation could be verified by someone looking at your artefact, and the impact names a task the person cannot finish.
+
+**You repaired the disabled button and also changed the type scale, the spacing and the photograph. What has that cost you?**
+
+- **You can no longer tell which change did anything, so neither version teaches you much.** — A comparison only works when one thing moved. Bundling changes feels efficient and destroys the reason for keeping a before version at all.
+- Nothing, as long as the screen is better overall. — “Better overall” is the judgement you were trying to test. Without a bounded change you are back to taste.
+- Only time, since the extra changes were quick. — The cost is not effort but explanation: you have lost the ability to say why the screen improved.
+
+Improve your work: Look at your repair box in step 3. If it lists changes beyond the one criterion, undo the extras on the copy or state plainly that this is a redesign rather than a bounded repair. Say what you did in step 5.
+
+At recheck: The repair changes one named thing, and the original is untouched and findable.
+
+**After the repair you write: “This fixes the problem.” Why is that too strong?**
+
+- **You have changed the design, not observed anyone using it; until someone does, the improvement is intended rather than shown.** — A repair is a hypothesis with better reasoning behind it. Saying so keeps the next test honest and stops the claim hardening into a fact.
+- Because no design is ever finished. — True and unhelpfully general. The specific problem is that nothing yet distinguishes your intention from the result.
+- It is fine if the heuristic clearly supports the change. — A heuristic flags a risk; it cannot report that a person succeeded. It is the reason for trying, not evidence of the outcome.
+
+Improve your work: Reread your limitations box in step 5. If any sentence claims the problem is fixed, rewrite it as what you would need to watch to find out, then note the change.
+
+At recheck: The record separates what you changed from what remains untested, and names one observation that would settle it.
+
+Answer each question in the app before its explanation appears. Answers are not saved or scored.
 
 <details>
 <summary>What makes feedback actionable?</summary>
@@ -2281,12 +2577,26 @@ Is it enough? Each artefact reference points at something that exists.
 
 #### 2. Write
 
+**See it first.** Made-up example. The evidence and choice sections of a one-page note, written twice.
+
+- **My first evidence line:** “Research showed that attendees want to know what to bring.” It sounded solid and I was pleased with it.
+- **What was actually behind it:** One conversation with one person who mentioned an apron, plus my own walkthrough. That is not research showing anything.
+- **The line I kept:** One participant said she did not know what to bring (reported, one person). I could not find the materials list before booking (observed, my walkthrough). Whether this is common is assumed.
+- **How the choice section changed:** It went from “so we should show materials earlier” to “I moved materials above Reserve on the strength of one account and my own walkthrough; if the next two conversations do not mention it, I would reconsider.”
+- **What the reader can now do:** Disagree with the strength of the evidence rather than with my taste, which is a far more useful argument to have.
+
+**The wrong turn:** The wrong turn is the word “research”. It converts one conversation into an authority, and once written it is repeated in the next document without the caveat.
+
+**What it costs:** The honest version makes your case look weaker, and it is the version that survives someone asking how you know. It also tells you exactly what to do next.
+
+**Still unknown:** Still unknown: how common the problem is. One account cannot say, and the note has to survive that.
+
 - Write six short headings: context, evidence, options, choice, trade-off, next check.
 - Add concise bullets under each; keep it to one page.
 
 **You should end up with:** Six short sections: context, evidence, options, choice, trade-off, next check.
 
-Worksheet fields for this step:
+Worksheet fields for this step, revealed a few at a time in the app:
 
 - Context
 - Evidence, with its source labels — Observed, reported by a participant, or assumed. Say which.
@@ -2320,6 +2630,17 @@ Is it enough? No sentence claims people will prefer it; every claim has a source
 - Identify unclear reasoning and try once more.
 
 **You should end up with:** The place your spoken explanation went unclear.
+
+**Try it with help.** A supplied paragraph from someone else’s decision note, made up for practice: “Attendees want to know what to bring. I watched two people miss the materials line at the bottom of the page. Moving it above Reserve will reduce no-shows, and the studio agrees it is worth trying.”
+
+Which sentence needs a source label most urgently before this note is shared?
+
+- **“Moving it above Reserve will reduce no-shows” — a prediction about an outcome nobody has measured.** — It is the only sentence that claims a result, and results are what get repeated in later documents. It should say what is expected and how it would be checked.
+- “Attendees want to know what to bring” — a general claim about people. — It does need a label, and it is the softer problem: a reader can see it is a summary. The outcome claim will be quoted as a fact.
+- “I watched two people miss the materials line” — a small sample. — Small, and honestly stated. It already says who and what was observed; two people is a limitation to note, not an unlabelled claim.
+- “The studio agrees it is worth trying” — an opinion presented as support. — Worth attributing, and it is not evidence about people using the design, so nobody is likely to mistake it for one.
+
+**Then:** Read your own six sections and mark each claim observed, reported or assumed. Any sentence about an outcome needs the check that would test it.
 
 Worksheet fields for this step:
 
@@ -2368,18 +2689,24 @@ Is it enough? The repair names an artefact and fits in one sitting.
 - Save the decision note and next action.
 - Record actual time only if useful; this lesson is optional.
 
-**You should end up with:** The note is saved; time is recorded only if useful. This lesson is optional.
+**You should end up with:** The note is saved, and the change the Check questions sent you back to make. This lesson is optional.
+
+Worksheet fields for this step:
+
+- What you changed after the Check questions — Name the sentence or section you changed, and why.
 
 <details>
 <summary>Help with this step</summary>
 
 
 
-Stuck starting? Choose Ready for review in Your work if you want creator input on the note.
+Stuck starting? Answer the Check questions, make the one repair each points at, then say here what you changed. Choose Ready for review in Your work if you want creator input.
 
-Is it enough? Nothing more is required; stopping here is fine.
+Is it enough? The last box names one sentence you actually changed. Nothing more is required; stopping here is fine.
 
 </details>
+
+**Save and continue.** Saved for you: The whole note saves as you type, on this device first and then online. There is nothing else to press. Kept outside the app: If you would rather write the page in your own document, do that and keep the file; then paste the six sections here or put the file name in Your work, so the note and its review stay together. What your creator sees: Your creator reads the note, the strength, the two gaps and your next action once you choose Ready for review. This is the piece he can respond to most usefully, because it shows your reasoning rather than the artefact alone. Your next action: Open Your work and choose Ready for review. This lesson is optional and it closes Module 1; Module 2 begins by choosing what evidence you need next, which your two gaps already point at.
 
 A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
@@ -2487,6 +2814,38 @@ Rehearsal for a future case-study presentation.
 </details>
 
 ### Check
+
+**Your note ends: “This change will make booking much easier for users.” What is wrong with that sentence?**
+
+- **Nothing has been built or used, so the outcome is intended rather than observed; it should say what you expect and how you would find out.** — An unshipped design can show reasoning. Written as a result, the sentence will be quoted back at you later as though it had been measured.
+- Nothing, as long as the reasoning behind it is sound. — Sound reasoning is why the change is worth trying. It is not a report of what happened, and the sentence is written as one.
+- It should name the percentage improvement expected. — That would be worse: an invented number is harder to challenge than a vague claim and no more true.
+
+Improve your work: Reread your choice and next-check sections in step 2. Rewrite any sentence that states an outcome as an expectation with the observation that would test it, then record the change in step 5.
+
+At recheck: No sentence claims a result; the next check names something you could watch.
+
+**Your note gives one option and the choice you made. What is missing?**
+
+- **A real alternative and the reason you set it aside — otherwise the reader cannot tell whether a decision was made at all.** — A decision means something else could have happened. Without the rejected option the note reads as a description of what you built.
+- Nothing, if the choice was obviously correct. — An obviously correct choice is the easiest to write an alternative for, and the reason it was obvious is worth stating.
+- A list of every idea you considered. — Too much. One serious alternative with the reason it lost is more useful than an exhaustive list nobody reads.
+
+Improve your work: Look at your options section in step 2. Add one alternative you genuinely considered and the reason you did not take it, then note the change in step 5.
+
+At recheck: The note names at least one alternative and why it was set aside, and the trade-off says what the choice cost.
+
+**Reading it aloud, you find yourself saying “it just feels more intuitive.” What does that tell you?**
+
+- **That part of the note has no evidence behind it and needs the observation or reasoning that made you believe it.** — Words like intuitive, clean and obvious mark the places where the argument stopped. Saying it aloud is the quickest way to find them.
+- That the design is working, since it feels natural to you. — It feels natural to the person who made it, who knows where everything is. That is the least reliable reader you have.
+- That you should remove the sentence and move on. — Deleting hides the gap. Either supply the reason or say plainly that this part is a preference.
+
+Improve your work: Take the sentence that felt weakest when spoken and either give it a source label or mark it as an untested preference, then record what you changed in step 5.
+
+At recheck: Every claim in the note carries a source: observed, reported, assumed, or an explicit preference.
+
+Answer each question in the app before its explanation appears. Answers are not saved or scored.
 
 <details>
 <summary>What can an unshipped concept demonstrate?</summary>

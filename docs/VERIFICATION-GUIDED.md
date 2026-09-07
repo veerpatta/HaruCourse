@@ -1,3 +1,13 @@
+# Module 1 lessons 2 to 7 revised to the beginner pattern — 7 September 2026
+
+The same six-part shape as Day 1, authored per lesson against its own steps and outputs. Each of `week1-day2-v1` to `week1-day7-v1` now carries one demonstration in the visible path that shows the reasoning and the turn its author nearly took wrongly, one supplied case answered before any feedback with every option explained, three checks that take an answer first and each send one bounded repair into the learner's own worksheet, a new `improvement-made` field recording that repair, and a four-part save-and-continue block that replaces the generic file instructions. Lessons 2, 3, 4 and 7 also reveal repeated rows a few at a time: assumptions one by one, interview questions in pairs, failure branches one by one, note sections two at a time.
+
+The demonstrations are deliberately failure-first: a problem frame written as a feature and thrown away; a leading interview question repaired into a story question; a screen list redrawn as states and decisions once the missing "are there places left?" decision appeared; a phone screen reordered when the photograph was pushed below the price; a vague "this screen is weak" critique made pointable; an evidence line that claimed "research showed" rewritten as one participant plus one walkthrough. Every scenario says it is made up, which the content checker enforces.
+
+Field counts after the change: 36, 27, 20, 16, 17, 12 and 15. No shipped field ID was renamed; the worksheet test pins Day 1's 35 by name.
+
+Checks: docs:generate, test:content, test:worksheet, both typechecks and build pass; main chunk 2,418.06 kB uncompressed, 702.70 kB gzip, about 46 kB above the Day 1 release. All thirteen backend groups pass; no schema, storage or API changed. In the browser with the test account, all six lessons render their demonstration, supplied case, save-and-continue block with no generic file list, and three checks showing no feedback until answered; a lesson 2 assumption saved online at the next revision and the reveal produced the next assumption on request; nothing overflows at 320 px with every step and disclosure expanded. Lessons 3 to 7 were exercised through that sweep rather than filled in individually. Haru has not used any of them, and her observation on Day 1 may still change this pattern.
+
 # Beginner teaching revision: delivery fix and week1-day1-v1 — 7 September 2026
 
 ## Delivery defect, diagnosed and fixed
