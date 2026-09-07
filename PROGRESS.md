@@ -6,6 +6,8 @@ The generated Markdown is byte-identical: the text did not change, only where th
 
 This is a shared repair and it does not refine those lessons. All 56 still need their demonstration, supported attempt, active check and guided practice, and their audit rows stay open with that note.
 
+Release state: commit 3e6cd37 is on main and deployed as Cloudflare version 7b76bf81-8bc0-4355-8fd0-954acf7ae24b; no migration exists to apply. The served bundle is 2,478,917 bytes with SHA256 470144055eba...3686, identical to the local build, and contains the restored m03 teaching, the objective label, the Module 2 material and the update button. One caution for future probes: the first hosted read returned a cached index.html still naming the previous asset, so a hosted check should request the page with cache-busting before concluding anything about a deploy.
+
 # Module 2 given guided practice — 7 September 2026
 
 Module 2 had no guided practice at all: all five lessons sent the learner to a text file with a seven-column table. Each of `week2-day1-v1` to `week2-day5-v1` now has a route, a worksheet sized to the evidence, one demonstration, one supplied case answered before feedback, three answer-first checks with a bounded repair, an `improvement-made` field and route-specific saving. Field counts are 17, 32, 20, 19 and 19, and each lesson opens with two to four fields rather than a full form.
