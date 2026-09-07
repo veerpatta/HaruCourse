@@ -8,6 +8,8 @@ Field counts after the change: 36, 27, 20, 16, 17, 12 and 15. No shipped field I
 
 Checks: docs:generate, test:content, test:worksheet, both typechecks and build pass; main chunk 2,418.06 kB uncompressed, 702.70 kB gzip, about 46 kB above the Day 1 release. All thirteen backend groups pass; no schema, storage or API changed. In the browser with the test account, all six lessons render their demonstration, supplied case, save-and-continue block with no generic file list, and three checks showing no feedback until answered; a lesson 2 assumption saved online at the next revision and the reveal produced the next assumption on request; nothing overflows at 320 px with every step and disclosure expanded. Lessons 3 to 7 were exercised through that sweep rather than filled in individually. Haru has not used any of them, and her observation on Day 1 may still change this pattern.
 
+Release: commit dd0a9d1 deployed 7 September 2026 as Cloudflare version 5949840c-3935-4c2e-9fd4-131a2f4c9a67 after a clean dry run; no migration exists to apply. Hosted probe: served index-HGYGQHXG.js is 2,418,066 bytes, SHA256 a87f6fce1c603623256fc2ffff9aac45a5e6cd47a81763a7fe60907e2e39912e, identical to the local build, and carries each lesson’s demonstration and supplied-case text; health 0.2.0; 401 without a session; the test account saved and read back a lesson 6 improvement-made answer with its guide position at revision 1. Haru’s records were untouched.
+
 # Beginner teaching revision: delivery fix and week1-day1-v1 — 7 September 2026
 
 ## Delivery defect, diagnosed and fixed
