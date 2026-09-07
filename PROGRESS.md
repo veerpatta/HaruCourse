@@ -1,3 +1,15 @@
+# Module 3 given guided practice — 7 September 2026
+
+All ten visual-foundations lessons now carry the beginner pattern. Each has a paper-first route, a worksheet of 10 to 16 fields, one failure-first demonstration, one supplied case answered before feedback, three answer-first checks with a bounded repair, an `improvement-made` field and route-specific saving. Seven of the ten reveal repeated rows a few at a time. Nothing assumes HTML, CSS or token knowledge: measurements are counts on paper, and lesson 4 uses the offline contrast calculator that was already there.
+
+The demonstrations teach by showing the mistake. Seven text sizes cut to five, where the wrong turn was enlarging the title until it wrapped and pushed the price off the screen. A line length judged by eye and then counted at 101 characters. A greyscale test finding two status colours identical after every contrast check had passed. Measuring the placeholder text everyone skips. Reaching for cards before diagnosing what the reader already groups. Twelve accidental gaps found with a ruler, and the flat screen that uniform spacing produced. Abandoning device widths to find a change point where a title actually collided. Tokens named after appearance that became lies when a value changed. A disabled state built from opacity that communicated nothing. An unsupportable conversion claim rewritten as what was measured.
+
+One structural fix was needed: guided material now merges in both authoring paths, so a lesson with an authored activity entry and a lesson with a derived workspace reach the same shape. Without it the ten lessons compiled and silently rendered nothing.
+
+Checks: content, worksheet, both typechecks and build pass; main chunk 2,580.59 kB uncompressed, 750.36 kB gzip. All thirteen backend groups pass; no schema, storage or API change. In the browser with the test account, lessons 1, 4 and 10 show the restored visible teaching, the objective, the demonstration, the supplied case, the save route and three checks with no feedback before answering; a lesson 1 scale step saved online at revision 1 and the reveal produced the next step; nothing overflows at 320 px. Evidence: [docs/VERIFICATION-GUIDED.md](docs/VERIFICATION-GUIDED.md).
+
+Haru has still not used any lesson. Twenty-seven lessons now follow a pattern no learner has tested. Next open stable ID in the audit register: `m04-l01-v1`.
+
 # Hidden teaching restored across m03-m07 — 7 September 2026
 
 The audit's largest single finding, fixed as one shared repair. The adapter that brings the legacy-shape modules into the reader put only the lesson objective in the visible Learn list and moved every authored teaching paragraph into the field the reader renders inside a "Why this works" disclosure. Fifty-six lessons across m03 to m07 opened with one sentence and hid 224 paragraphs of teaching, median 431 characters each, behind a click. The teaching is now in the visible path, the objective appears above it as "What you will produce", and the duplicate disclosure is gone.

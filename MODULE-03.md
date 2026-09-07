@@ -38,40 +38,166 @@ A workshop detail screen designed with eight sizes was rebuilt with five: 32/24/
 
 Rebuild one workshop screen with two candidate type scales. Compare hierarchy at narrow width and with enlarged text before choosing.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Draw the type ladder and the re-typeset screen on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: The three screens and workshop flow you produced in Product Design Foundations. You will re-typeset one of those screens rather than starting a new design.
 - Create HaruCourse/Practice/m03-l01-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Read and inventory
+
+- Read the assigned typography section. Then list every distinct text size, weight and colour already present in one of your Module 1 screens. Most people find more than they expected; write the real count.
+
+**You should end up with:** A count of the text sizes already on your screen, and what they are.
+
+Worksheet fields for this step:
+
+- How many different text sizes are on your screen now? — Count them, do not estimate. Most first screens have far more than anyone intends.
+- The sizes, weights and colours you found
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# A type scale that survives the screen
+- **Type scale:** The short list of sizes you allow yourself, each with a job. Anything not on the list is not used.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Go through the screen naming each piece of text aloud and write its size beside it.
 
-Text role | Size | Weight | Line height | Narrow-width result | Enlarged-text result | Decision
---- | --- | --- | --- | --- | --- | ---
-[heading / body / label] | [value and unit] | [value] | [value] | [observation] | [observation] | [reason]
-
-## Output checklist
-- [ ] A type scale table of five or six steps with size, weight and job; one screen re-typeset with it; the same screen at narrow width and at enlarged text; and a short note of what broke.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? The count is a real number you arrived at by looking, not a guess.
 
 </details>
+
+#### 2. Choose the scale
+
+**See it first.** Made-up example. Cutting seven sizes down to five on a class details screen.
+
+- **What I had:** 28, 22, 18, 17, 16, 15 and 13. The 17 and 16 existed because two screens were designed a week apart.
+- **My first instinct:** Keep them all and make the title 32 so the hierarchy is “stronger”. Bigger felt like clearer.
+- **Why that failed:** At 390 px the 32 title wrapped to three lines and pushed the price off the screen. The page looked shoutier and told me less.
+- **What I did instead:** Five steps: 24 semibold for the class name, 18 medium for section headings, 16 regular for body, 14 for the supporting line, 12 for labels.
+- **Where the strength came from:** Weight and space, not size. The 24 with a clear gap beneath it reads as a title more reliably than a 32 that wraps.
+
+**The wrong turn:** The wrong turn is treating size as the only volume control. It is the one that costs the most on a small screen.
+
+**What it costs:** Five steps means two things that felt slightly different now look the same. Usually nobody notices, and you should record what you gave up in case they do.
+
+**Still unknown:** Still unknown: whether the 14 and 12 are distinguishable to someone reading in bright sunlight. That is a contrast and size question for later lessons.
+
+- Decide five or six steps. For each, write the size, the weight and the one job it does. Any size you cannot give a job to is removed at this step, not later.
+
+**You should end up with:** Five or six steps, each with a size, a weight and one stated job.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Step 1 · size, weight, and the one job it does — If you cannot name the job, the step does not belong on the ladder.
+- Step 2 · size, weight, and the one job it does
+- Step 3 · size, weight, and the one job it does
+- Step 4 · size, weight, and the one job it does
+- Step 5 · size, weight, and the one job it does
+- Step 6 · size, weight, and the one job it does
+
+<details>
+<summary>Help with this step</summary>
+
+- **Weight:** How heavy the letters are: regular, medium, semibold. A cheap way to signal importance without taking space.
+- **Job:** What that step is for on this screen. “Big” is not a job; “the class name, once per screen” is.
+
+Stuck starting? Write the body text step first, then the title, then fill between them.
+
+Is it enough? Every step names something on your screen that uses it.
+
+</details>
+
+#### 3. Re-typeset one screen
+
+- Apply the scale to your chosen screen. Where two old sizes collapse into one new step, note what you lost and whether it mattered.
+
+**You should end up with:** What collapsed when you applied the ladder, and what earned its own step.
+
+Worksheet fields for this step:
+
+- Which old sizes collapsed into one step, and what you lost
+- Anything you kept separate, and why it earned its own step
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Go through the screen replacing each old size with its nearest step, and write down every time it hurt.
+
+Is it enough? You can say what was lost, not just that the screen is tidier.
+
+</details>
+
+#### 4. Test the two hard cases
+
+- Redraw or re-render the same screen at roughly 390 px wide, then again with the base text size increased by about 150 per cent. Record exactly what breaks: wrapping, truncation, overlap, a control pushed off screen.
+
+**You should end up with:** What broke at narrow width and with enlarged text, in specific terms.
+
+**Try it with help.** A supplied narrow-width result from the same made-up screen: at 390 px the class name wraps to two lines, the price and the date now sit below the fold, and the section heading and the body text look the same size at a glance.
+
+Which of these is the most serious problem to fix first?
+
+- **The price and date falling below the fold, because the reader now cannot make the decision without scrolling.** — It is the only one that stops the task. A wrapped title is untidy; missing information is a decision the reader cannot make.
+- The class name wrapping to two lines, because it looks careless. — Wrapping is normal on a phone and often fine. Judged by the reader’s task rather than the look, it costs almost nothing.
+- The heading and body looking similar, because the hierarchy has collapsed. — A real problem and second in line: it slows reading, while the missing price stops the decision entirely.
+- All three equally, since they all appeared at the same width. — Appearing together does not make them equally costly. Ranking by what the reader cannot do is what makes the next hour useful.
+
+**Then:** Rank your own breakages the same way: what stops the task first, what slows it, what merely looks wrong.
+
+Worksheet fields for this step:
+
+- At about 390 px wide: what broke? — Wrapping titles, a heading pushing content off the screen, two steps that now look identical.
+- With text about 150 per cent larger: what broke? — On paper, letter the same screen with everything a step bigger and see what collides.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Enlarged text:** The reader’s own setting, not yours. Many people run their phone text well above default, and a layout that assumes otherwise breaks for them daily.
+
+Stuck starting? Do the narrow case first: redraw the same content in a column about a third the width.
+
+Is it enough? Each note names what broke and where, not “it looked bad”.
+
+</details>
+
+#### 5. Record and pause
+
+- Save the scale table, the before and after screen, and your breakage notes. Write the one change you would make next. Stop here if the session is over; the next lesson continues from this artefact.
+
+**You should end up with:** Your next change, where the artefacts are, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- The one change you would make next
+- Where the ladder and the two versions live — File names or “paper, in my folder”. Nothing is uploaded.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Choose the change that fixes the most serious breakage you listed.
+
+Is it enough? The next change is one thing you could do in twenty minutes.
+
+</details>
+
+**Save and continue.** Saved for you: The ladder, the breakage notes and your next change save as you type, on this device first and then online. Kept outside the app: The drawings stay on paper or in your own folder. Photograph them if you like and write the file name here; naming a file does not upload it. What your creator sees: Your creator reads the ladder and what broke. Share the photographs the way you normally share files if you want him to see the screens themselves. Your next action: Open Your work and choose Ready for review. The next lesson sets line length and leading on this same screen, so keep the ladder.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -221,40 +347,163 @@ A workshop description set at 16 px across a full 1280 px container ran to about
 
 Test a long title, paragraph and action label in your screen. Compare two text-column widths without shortening the content to hide problems.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Draw the ruled column and the stress test on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: The type scale and re-typeset screen from the previous lesson, plus at least one paragraph of real content — not placeholder text.
 - Create HaruCourse/Practice/m03-l02-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Gather worst-case content
+
+- Collect the real strings your screen must hold: the longest title you can justify, a full instructor name, a date, a price, and one empty state. Write them down; you will use them for the rest of the module.
+
+**You should end up with:** The real strings your screen must hold, including the longest title and an empty state.
+
+Worksheet fields for this step:
+
+- The longest title you can justify
+- A full instructor name, a date, a price, and one empty state — Empty state: what the screen says when there are no classes that week.
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Readability: measure, leading and the small screen
+- **Worst-case content:** The real strings that will stress the layout: the longest name, the empty week, the price with a currency symbol.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Look at a real class listing somewhere and copy the longest title you find.
 
-Content sample | Column width | Line height | Wrapping / clipping | Change | Reason
---- | --- | --- | --- | --- | ---
-[paste your longest text] | [value] | [value] | [what happened] | [adjustment] | [why]
-
-## Output checklist
-- [ ] One content block with stated measure, line height and block spacing values, a worst-case content list, narrow and enlarged renderings, and a reason for each value.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Nothing in the list is placeholder text like “Lorem ipsum” or “Class name”.
 
 </details>
+
+#### 2. Set the measure
+
+**See it first.** Made-up example. Setting the line length for a class description, by counting rather than by eye.
+
+- **What I did first:** I looked at the paragraph and thought “that reads fine”. The column was the width of the page because that is where the margin happened to be.
+- **What counting showed:** Three full lines came to 104, 98 and 101 characters. An average of 101, which is far past the band where the eye reliably finds the start of the next line.
+- **What the symptom was:** Rereading the same line. I had noticed it and blamed the font, because the number was invisible until I counted it.
+- **What I changed:** I narrowed the column until the count came to about 68 characters, which meant a wider margin on the wide layout and nothing at all on the phone.
+- **What stayed:** The phone column was already about 40 characters, which is short but unavoidable at that width, so leading matters more there than measure.
+
+**The wrong turn:** The wrong turn is judging line length by how the block looks. A wide column looks generous and efficient, and the cost only shows up in rereading.
+
+**What it costs:** A narrower column means more scrolling and more white space, which can look empty to a client. It is the trade that makes long text readable.
+
+**Still unknown:** Still unknown: how this reads for someone using a large text setting, where the count drops sharply. That is the stress test two steps from now.
+
+- Set a maximum width for your body text and count the characters on a full line. Record the number. Adjust until it sits in the comfortable band, and note what constrains you.
+
+**You should end up with:** A counted character-per-line figure and the width you chose.
+
+Worksheet fields for this step:
+
+- Characters on a full line, averaged over three lines — Count them. Include spaces.
+- The width you settled on, and why
+
+<details>
+<summary>Help with this step</summary>
+
+- **Measure:** The number of characters on a line. It is a count, not an impression, and it is what decides whether the eye finds the next line.
+
+Stuck starting? Rule a column, letter one real paragraph inside it, and count the characters on three full lines.
+
+Is it enough? The number in the box came from counting.
+
+</details>
+
+#### 3. Tune leading and block spacing
+
+- Choose line height as a ratio for body, headings and small text. Then set the gap between paragraphs so it clearly exceeds the gap between lines. Write both values.
+
+**You should end up with:** Line heights as ratios, and a paragraph gap clearly larger than the line gap.
+
+**Try it with help.** A supplied block from the same made-up screen: body text at 16 with line height 1.9, paragraph gaps the same size as one line, and headings at 20 with line height 1.9 as well.
+
+What is the main problem with these values?
+
+- **The paragraph gap does not exceed the line gap, so the paragraphs stop reading as separate units.** — When the space between paragraphs equals the space between lines, the block becomes an undifferentiated column of sentences. That is the most damaging of the three.
+- The body line height of 1.9 is too loose on its own. — Loose, and the real damage comes from the paragraph gap failing to beat it. Fix the relationship first and 1.9 may be merely airy.
+- The headings should have more line height than the body, not the same. — The opposite: large text usually needs a tighter ratio, because the gaps grow with the size. Either way it is not the main fault here.
+- Nothing: generous spacing is easier to read. — Up to a point. Past it, lines stop cohering into paragraphs and a phone screen holds almost nothing, which costs the reader more than the air gains.
+
+**Then:** Set your own paragraph gap by comparing it with your line gap, not by choosing a number that looks pleasant.
+
+Worksheet fields for this step:
+
+- Body line height, as a ratio of the text size
+- Heading and small-text line heights — Headings usually need less than body text, not more.
+- The gap between paragraphs, and how it compares with the gap between lines — It has to be clearly larger, or paragraphs stop being paragraphs.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Line height:** The distance from one line to the next, written as a ratio of the text size so it scales with it.
+
+Stuck starting? Write the body ratio first, then set the paragraph gap so it is visibly bigger than one line.
+
+Is it enough? You can state the paragraph gap as “clearly more than one line” and see it on the page.
+
+</details>
+
+#### 4. Stress it
+
+- Render the block at about 390 px wide and again at enlarged text with your worst-case strings. Record every place the reading breaks down, including anything that now scrolls when it did not before.
+
+**You should end up with:** What broke at narrow width and with enlarged text, using the real strings.
+
+Worksheet fields for this step:
+
+- At about 390 px with your worst-case strings: what breaks?
+- With enlarged text: what breaks?
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Put the longest title into the narrow column first; it usually breaks something immediately.
+
+Is it enough? Each note names the string and what it did, such as a title taking four lines or a price wrapping away from its label.
+
+</details>
+
+#### 5. Decide and save
+
+- Write your final values with a one-line reason each. Save the artefact and note the next unresolved question. Pause here if needed.
+
+**You should end up with:** Final values with reasons, your open question, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Your final values, one line of reasoning each
+- The question you have not answered
+- Where the ruled column and renderings live
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write each value as “X, because …” and delete any reason that is only about appearance.
+
+Is it enough? Every value has a reason about reading rather than looks.
+
+</details>
+
+**Save and continue.** Saved for you: Your counts, values and reasons save as you type, on this device first and then online. Kept outside the app: The ruled column and any renderings stay in your own folder. Write the file name here so you can find them beside the numbers. What your creator sees: Your creator reads the values and the reasoning. The counted measure is the part worth his attention, because it is the one people usually estimate. Your next action: Open Your work and choose Ready for review. The next lesson recolours this same screen, so keep it as it stands.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -405,40 +654,164 @@ A booking list showed status as a coloured dot: green confirmed, amber pending, 
 
 Imagine a status list whose only distinction is a red or green dot. Redesign its meaning with text and shape as well as color, then apply that lesson to your screen.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Draw the recoloured screen and its greyscale copy on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: Your re-typeset screen and worst-case content list. You will recolour that screen, not design a new one.
 - Create HaruCourse/Practice/m03-l03-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Read and list roles
+
+- Read the assigned colour material. Then write the roles your screen actually needs — surface, text, secondary text, action, and each status — before opening any colour picker.
+
+**You should end up with:** The roles your screen needs, each with one value.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Role 1 · what it is for, then the value you chose — Surface, body text, secondary text, the main action, and one status such as full or cancelled.
+- Role 2 · what it is for, then the value you chose
+- Role 3 · what it is for, then the value you chose
+- Role 4 · what it is for, then the value you chose
+- Role 5 · what it is for, then the value you chose
+- Role 6 · what it is for, then the value you chose
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Colour that carries meaning, not decoration
+- **Role:** What a colour is for: a surface, a body text, an action, a status. Not a name like “the blue”.
+- **Status colour:** A colour carrying information, such as full, cancelled or confirmed. These are the ones that fail the greyscale test.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? List the roles before opening any colour picker; the list is usually shorter than you expect.
 
-Meaning | Color value | Text / shape cue | Grayscale result | Cultural assumption | Repair
---- | --- | --- | --- | --- | ---
-[status meaning] | [hex] | [visible cue] | [still understandable?] | [assumption] | [change]
-
-## Output checklist
-- [ ] A palette table of role, value and meaning; the recoloured screen; a greyscale version; and a list of information that failed the greyscale test with the second channel you added for each.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Every colour on your screen appears in the list with a stated job.
 
 </details>
+
+#### 2. Choose values
+
+- Assign one value to each role. Record each as a value plus its role and, where relevant, its lightness relative to its neighbours. Any colour without a role is dropped now.
+
+**You should end up with:** How many colours you removed, and where you wanted to add one back.
+
+Worksheet fields for this step:
+
+- How many colours you removed, and which you were tempted to add back
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Apply the palette and count what disappeared.
+
+Is it enough? You noted at least one place the palette felt too small; that is where the next lesson starts.
+
+</details>
+
+#### 3. Recolour the screen
+
+**See it first.** Made-up example. Running the greyscale test on a class list and finding out what the colour was carrying.
+
+- **What I believed:** The palette was fine: I had checked the contrast of every colour against its background and everything passed.
+- **What the photocopy showed:** The red “Full” label and the green “2 places left” label came out as almost exactly the same grey. Side by side, they were indistinguishable.
+- **Why contrast had not caught it:** Contrast asks whether text can be read against its background. It never asks whether two pieces of information can be told apart from each other.
+- **What I added:** The word itself carries it: “Full” and “2 places left” already differ in text, so I made the label text the channel and used colour only as reinforcement.
+- **The one that was harder:** The primary and secondary buttons were the same shape and size, distinguished only by fill. I gave the secondary an outline and left the fill to the primary.
+
+**The wrong turn:** The wrong turn is assuming a contrast check covers colour dependence. They are different failures and the first one hides the second.
+
+**What it costs:** Adding a word or an outline makes the screen slightly busier than a pure colour system. It is what keeps the information available to a reader who cannot separate those hues.
+
+**Still unknown:** Still unknown: whether the greys I chose are far enough apart in lightness for the remaining distinctions. That is the next lesson’s measurement.
+
+- Apply the palette to your screen from the previous lessons. Count the colours you removed and note where you were tempted to add one back.
+
+**You should end up with:** Everything that becomes indistinguishable without colour, with a second channel for each.
+
+**Try it with help.** A supplied pair from the same made-up screen. Version A distinguishes a cancelled class from a running one by colouring the title red instead of dark grey. Version B keeps both titles dark grey and adds the word “Cancelled” before the title, with a lighter strike through the date.
+
+Which version survives the greyscale test, and why?
+
+- **B, because the distinction is carried by a word and a mark, not by hue alone.** — Remove the colour and B still reads correctly. A becomes two identically grey titles, and the information is simply gone.
+- A, provided the red passes contrast against the background. — Passing contrast means the red text is readable. It says nothing about whether a reader can tell it apart from the dark grey title beside it.
+- Both, since a reader can click through to find out. — That makes the reader do extra work to recover information the screen already had, and only if they suspect something is different.
+- Neither: only an icon is a reliable second channel. — A word is often the most reliable channel of all, and it needs no legend. Icons help, and they are not the only answer.
+
+**Then:** Apply the same test to each of your own failures: what would still be true with the colour removed?
+
+Worksheet fields for this step:
+
+- What you can no longer tell apart
+- Failure 1 · the second channel you added — A word, an icon, a shape, an underline, or a real difference in lightness.
+- Failure 2 · the second channel you added
+
+<details>
+<summary>Help with this step</summary>
+
+- **Second channel:** Another way the same information reaches the reader: a word, a shape, an icon, a position, or a clear difference in lightness.
+
+Stuck starting? Photocopy the screen in black and white, or photograph it and turn the colour off. Then read it as if for the first time.
+
+Is it enough? Nothing on the screen depends on hue alone to be understood.
+
+</details>
+
+#### 4. The greyscale test
+
+- View or redraw the screen with all colour removed. Write down every piece of information you can no longer determine. For each, add a second channel — word, icon, shape or position — and record the change.
+
+**You should end up with:** One colour meaning you are not certain your reader shares.
+
+Worksheet fields for this step:
+
+- One colour meaning you are not sure your reader shares — Red for danger, green for go, and much else, is learned rather than universal.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Convention:** A learned association, not a fact. Red for danger and green for success are widespread in some places and not universal.
+
+Stuck starting? Look at your status colours and ask who taught you what they mean.
+
+Is it enough? The doubt names a specific colour and the meaning you are relying on.
+
+</details>
+
+#### 5. Record and pause
+
+- Save the palette table, the coloured and greyscale versions, and your repair list. Note one colour meaning you are unsure your audience shares.
+
+**You should end up with:** Where the two versions live, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Where the coloured and greyscale versions live
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Keep the coloured and greyscale copies together; the pair is the evidence.
+
+Is it enough? Both versions exist and are named.
+
+</details>
+
+**Save and continue.** Saved for you: Your roles, values and greyscale findings save as you type, on this device first and then online. Kept outside the app: The coloured and greyscale versions stay in your own folder. Keep them together and name both here. What your creator sees: Your creator reads the palette roles and the greyscale failures. The repair list is the part that shows the reasoning. Your next action: Open Your work and choose Ready for review. The next lesson measures the contrast of this palette, so keep the values exactly as recorded.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -588,40 +961,164 @@ A workshop card used mid-grey #999999 body text on white — about 2.8:1, below 
 
 Measure the actual foreground/background pairs in your design, repair failing pairs and measure them again. A visual impression is not a ratio.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Use the contrast calculator in this lesson: enter each pair of six-digit hex values, read the ratio, and record it in the table below. It works offline and needs no account.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: Your palette table and recoloured screen from the previous lesson.
 - Create HaruCourse/Practice/m03-l04-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Read the thresholds and exceptions
+
+- Read the assigned understanding page. Write the two thresholds and the three exceptions in your own words, including what counts as large text.
+
+**You should end up with:** The two thresholds and the exceptions, written in your own words.
+
+Worksheet fields for this step:
+
+- Normal text needs at least…
+- Large text needs at least… and “large” means… — Say the size and weight that qualify, not just the ratio.
+- The exceptions, in your own words — Which text is exempt, and why placeholder text is not one of them.
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Contrast you can defend
+- **Contrast ratio:** A number comparing the lightness of two colours, from 1 (identical) to 21 (black on white).
+- **Large text:** A defined size and weight above which a lower ratio is allowed. Write the actual definition; guessing it is how failures pass.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Read the assigned page and write each threshold as a sentence you could say to someone else.
 
-Use | Foreground hex | Background hex | Text size / weight | Ratio | Applicable criterion | Repair ratio | Tool / date
---- | --- | --- | --- | --- | --- | --- | ---
-[body text] | [#......] | [#......] | [actual values] | [measured] | [assigned criterion] | [remeasured] | [method]
-
-## Output checklist
-- [ ] A contrast table covering every text and essential non-text element with colour, background, size, threshold and measured ratio, before and after repair, plus a note on your own reading test.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Your definition of large text names a size and a weight.
 
 </details>
+
+#### 2. Measure everything
+
+**See it first.** Made-up example. Measuring the awkward element on a booking form rather than the easy ones.
+
+- **What I measured first:** The headings and body text. Both were dark grey on near-white and passed comfortably, which felt like progress.
+- **What I nearly skipped:** The placeholder text inside the email field, a light grey hint reading “you@example.com”. It looked like decoration.
+- **Why I measured it anyway:** A reader has to read it to know what to type, so it is real text doing real work. It came out at 2.4 against the field background.
+- **What I did about it:** Darkening the hint would have helped and kept a weakness: the hint disappears the moment typing starts. I added a visible label above the field and kept the hint as an example.
+- **What that changed in the table:** The row now records the label, not the placeholder, as the thing carrying the instruction — and the label passes at 7.1.
+
+**The wrong turn:** The wrong turn is measuring only the text that looks like content. The failures live in hints, disabled labels, small print and anything sitting over an image.
+
+**What it costs:** Adding a visible label costs vertical space on a phone, which is exactly what the earlier lessons were protecting. It buys an instruction that survives typing.
+
+**Still unknown:** Still unknown: the effective contrast of anything over a photograph, which varies pixel by pixel and needs a separate check.
+
+- Build a table listing every text element on your screen: its colour, its actual background, its size and weight, the applicable threshold and the measured ratio. Include placeholder text, disabled states and any text over an image.
+
+**You should end up with:** Every text element measured, including placeholder text and anything over an image.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Element 1 · what it is, its colour, its background, its size, the threshold and the measured ratio — Use the calculator for the ratio. Record the number it gives, not a rounded version.
+- Element 2 · what it is, its colour, its background, its size, the threshold and the measured ratio
+- Element 3 · what it is, its colour, its background, its size, the threshold and the measured ratio
+- Element 4 · what it is, its colour, its background, its size, the threshold and the measured ratio
+- Element 5 · what it is, its colour, its background, its size, the threshold and the measured ratio
+
+<details>
+<summary>Help with this step</summary>
+
+- **Effective background:** What is actually behind the text after transparency and images are flattened. Measure that, not the colour you intended.
+
+Stuck starting? List the elements first, then measure them in order. The calculator is in this section.
+
+Is it enough? The table includes at least one element you were tempted to skip.
+
+</details>
+
+#### 3. Repair the failures
+
+- For each failing row, choose a repair: darken the text, lighten the background, enlarge the text so the large-text threshold applies, or add a solid backing behind text on an image. Record which repair you chose and why.
+
+**You should end up with:** A repair for each failure, with the new ratio, keeping the palette’s intent.
+
+**Try it with help.** A supplied failing row from the same made-up screen: a secondary link, #7a8b80 on #fffefb, 14 regular, needs 4.5, measured 3.1.
+
+Which repair is soundest?
+
+- **Darken the link colour until it passes, keeping it recognisably the same hue.** — It fixes the failure at its source and keeps the palette’s intent: the link still reads as the secondary colour, just darker.
+- Enlarge the link to 19 semibold so the large-text threshold applies. — Legitimate in principle and wrong here: a secondary link enlarged past the body text now outranks the content it sits beside.
+- Change the background of the whole screen to pure white. — It buys a fraction of a ratio point and changes every other element on the screen to fix one link.
+- Make the link black, which certainly passes. — It passes and removes the distinction between a link and body text, which is information the reader was using.
+
+**Then:** Choose repairs for your own failures the same way: fix the element, keep what the colour was doing.
+
+Worksheet fields for this step:
+
+- For each failure: what you changed and the new ratio — Darken the text, lighten the background, enlarge the text so the large-text threshold applies, or put a solid backing behind it.
+- How you kept the palette’s intent while repairing — Repairs that flatten every colour to black on white pass the check and lose the design.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the worst-failing row first; it usually forces the largest decision.
+
+Is it enough? Every failing row has a new measured ratio beside it.
+
+</details>
+
+#### 4. Read it yourself
+
+- Read the repaired screen at arm's length, and if possible outdoors or with the screen brightness lowered. Note anything that still reads poorly despite passing, and anything you over-corrected into harshness.
+
+**You should end up with:** What your own eyes find that the numbers did not.
+
+Worksheet fields for this step:
+
+- At arm’s length, with the brightness low or outdoors: what still reads poorly? — The numbers are a floor, not a promise. Your own eyes find things they miss.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the screen to a window, or turn the brightness down, and read it at arm’s length.
+
+Is it enough? You noted at least one thing that passes the number and still reads poorly, or said plainly that nothing did.
+
+</details>
+
+#### 5. Record and pause
+
+- Save the measurement table before and after, and write one sentence separating what the numbers establish from what they do not.
+
+**You should end up with:** One sentence bounding what the numbers show, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- One sentence separating what the numbers establish from what they do not
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Finish “these measurements establish … and they do not establish …”.
+
+Is it enough? The sentence does not claim the screen is accessible.
+
+</details>
+
+**Save and continue.** Saved for you: The table, the repairs and your reading notes save as you type, on this device first and then online. The calculator itself stores nothing. Kept outside the app: The before and after screens stay in your own folder. Record the hex pairs here rather than relying on a photograph, which cannot establish exact colours. What your creator sees: Your creator reads the measurements, the repairs and your bounding sentence. The awkward rows are the ones worth his attention. Your next action: Open Your work and choose Ready for review. The next lesson regroups the densest screen you have, using space before anything else.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -772,40 +1269,163 @@ A workshop detail screen listed date, time, location, price, instructor and mate
 
 Cut workshop information into separate paper pieces and regroup it using space first. Compare two groupings without rewriting any words.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Draw the dense screen before and after regrouping on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: Your recoloured, contrast-repaired screen, and the densest screen from your Module 1 set.
 - Create HaruCourse/Practice/m03-l05-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Read the assigned law pages
+
+- Read the proximity, similarity, common region, Prägnanz and uniform connectedness pages. For each, write the one sentence you would use to explain it to an engineer.
+
+**You should end up with:** Five principles in your own sentences.
+
+Worksheet fields for this step:
+
+- Proximity, similarity, common region, Prägnanz and uniform connectedness — one sentence each — Write them as you would say them to someone who has never heard the words.
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Gestalt grouping, and where it stops working
+- **Proximity:** Things near each other are read as belonging together. The cheapest and strongest tool you have.
+- **Common region:** Things inside the same enclosed area are read as a set, even when they are far apart.
+- **Uniform connectedness:** Things joined by a line or a shared block are read as connected, which can override proximity.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Read the assigned pages and write each sentence without using the principle’s own name in it.
 
-Information group | Intended relationship | Space / region / border | Possible misreading | Counterexample
---- | --- | --- | --- | ---
-[group] | [relationship] | [chosen cue] | [risk] | [when cue misleads]
-
-## Output checklist
-- [ ] The dense screen before and after regrouping, a note of which grouping tool each group required and why, and one worked counterexample where a principle misleads.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Someone who has never read the pages could follow each sentence.
 
 </details>
+
+#### 2. Diagnose the dense screen
+
+**See it first.** Made-up example. Diagnosing a dense class list before touching it.
+
+- **What I was about to do:** Put every class in a bordered card. It is the reflex, and it looks organised in a screenshot.
+- **What I did instead:** Printed the screen and circled, in pencil, what my eye grouped in the first second without reading.
+- **What the circles showed:** The price of the first class had drifted closer to the second title than to its own. My eye grouped it downward, with the wrong class.
+- **Why that mattered:** No border would have fixed it, because the fault was distance. Boxing the wrong grouping just makes the wrong grouping official.
+- **What fixed it:** Six points of space moved from inside the block to between the blocks. One change, no new lines, nothing enclosed.
+
+**The wrong turn:** The wrong turn is reaching for cards before diagnosing. When everything is a card, common region stops distinguishing anything and the screen gains borders that cost space on a phone.
+
+**What it costs:** Diagnosing first costs ten minutes and produces no visible progress. It is what stops you decorating a grouping problem instead of solving it.
+
+**Still unknown:** Still unknown: whether another reader groups it the way I do. The question in the last step is how to find out.
+
+- On your densest screen, draw around what you believe the reader groups together at a glance. Mark every place where your intended grouping and the perceived grouping differ.
+
+**You should end up with:** The groups a reader actually sees, and every place that disagrees with what you meant.
+
+Worksheet fields for this step:
+
+- Circle the groups you think a reader sees at a glance, and list them here — What the screen currently says, not what you meant it to say.
+- Where your intended grouping and the perceived grouping disagree
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Print or redraw the screen and circle what you group at a glance, before you read any of it.
+
+Is it enough? The mismatch list names distances or arrangements, not opinions about style.
+
+</details>
+
+#### 3. Re-group with the cheapest tool first
+
+- Fix each mismatch using space first. Only where space fails, add a shared background. Only where that fails, add a border. Record which tool each group needed.
+
+**You should end up with:** Each group fixed with the cheapest tool that worked, and a reason wherever you used a border.
+
+**Try it with help.** A supplied problem from the same made-up screen: a class title, its date, its price and a Reserve button all sit with identical gaps between them, so the button reads as another line of information rather than the action.
+
+What is the cheapest tool that fixes it?
+
+- **Space: tighten the gaps between title, date and price, and open a clearly larger gap before the button.** — Proximity does the whole job. The three facts become one group and the button separates itself as something different, with nothing added to the screen.
+- A shared background behind the title, date and price. — It would work and it adds a surface, a colour decision and padding for something space alone can solve.
+- A border around the whole class block. — The most expensive option: a new line on the screen, more vertical space on a phone, and the same fix space would have produced.
+- Make the button a different colour so it stands out. — Colour distinguishes it and leaves the grouping unchanged, so the button still reads as a member of the same list.
+
+**Then:** Fix your own mismatches in the same order, and only record a border where you can say what space failed to do.
+
+Worksheet fields for this step:
+
+- Group 1 · what you changed and which tool it needed
+- Group 2 · what you changed and which tool it needed
+- Group 3 · what you changed and which tool it needed
+- Anywhere you reached for a border, and why space was not enough
+
+<details>
+<summary>Help with this step</summary>
+
+- **Cheapest tool:** The one that adds least to the screen. Space costs nothing; a background costs a surface; a border costs a line and padding.
+
+Stuck starting? Take your worst mismatch and try moving things before adding anything.
+
+Is it enough? Every border you used has a written reason.
+
+</details>
+
+#### 4. Build the counterexample
+
+- Construct one small case where following a grouping principle produces the wrong reading — for example similarity making an unrelated element look like a status, or a card hiding the one item the task needs. Show it and explain the failure.
+
+**You should end up with:** One case where following a principle gives the wrong reading.
+
+Worksheet fields for this step:
+
+- One case where following a principle produces the wrong reading — For example, similarity making an unrelated element look like part of a set.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Look for two things that look alike but are not related, or two related things forced apart by a container.
+
+Is it enough? The counterexample is from your own screen, not a textbook.
+
+</details>
+
+#### 5. Record and pause
+
+- Save the before, the after, the tool-per-group note and the counterexample. Write the question you would ask another person to test your grouping.
+
+**You should end up with:** A question to test your grouping with a person, where the versions live, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- The question you would ask another person to test your grouping
+- Where the before and after live
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write a question that can be answered in one glance, without reading the screen closely.
+
+Is it enough? The question could be answered wrongly; that is what makes it a test.
+
+</details>
+
+**Save and continue.** Saved for you: Your diagnosis, tools and counterexample save as you type, on this device first and then online. Kept outside the app: The printed screen with your pencil circles is the evidence; keep it and name it here. Nothing is uploaded. What your creator sees: Your creator reads the mismatch list and which tool each group needed. The borders you justified are the interesting part. Your next action: Open Your work and choose Ready for review. The next lesson turns the spacing you just used by eye into a named scale.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -955,40 +1575,162 @@ A booking list used gaps of 6, 8, 10, 12, 13, 16, 18, 20 and 24 px, with no rule
 
 Inventory gaps in one screen, choose a small spacing scale and rebuild the layout using named gaps instead of isolated adjustments.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Draw the gap audit and the regrouped screen on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: The regrouped screen from the previous lesson and your type scale.
 - Create HaruCourse/Practice/m03-l06-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Audit the real gaps
+
+**See it first.** Made-up example. Auditing the spacing on a class list that felt “roughly consistent”.
+
+- **What I expected:** Four or five gaps. The screen looked orderly and I had been reasonably careful.
+- **What the ruler found:** Twelve distinct values, including a 7 and an 8 four centimetres apart, and a 14 that existed because something had been nudged.
+- **Where they came from:** None of them were decisions. They were the residue of dragging things until the screen looked balanced on one particular day.
+- **What I nearly did:** Set every gap to 16 for consistency. The screen went flat immediately: nothing grouped, because everything was equally far from everything else.
+- **What consistency actually meant:** Six values with jobs: 4 and 8 inside groups, 16 and 24 between them, 32 around sections. Deliberately unequal, from a short list.
+
+**The wrong turn:** The wrong turn is making every gap the same. It satisfies the word consistent and destroys the grouping the previous lesson built.
+
+**What it costs:** A scale means some gaps snap to a value that is slightly wrong for their spot. In exchange every gap becomes a decision you can defend.
+
+**Still unknown:** Still unknown: whether 4 and 8 are distinguishable enough on a phone to separate anything. Worth checking at narrow width.
+
+- Measure and list every distinct vertical gap in your screen. Write the actual count; a large number is the normal starting point, not a failure.
+
+**You should end up with:** A counted number of distinct gaps and the list of values.
+
+Worksheet fields for this step:
+
+- How many distinct vertical gaps are on the screen now? — Measure with a ruler and count. A large number is the normal starting point.
+- The values you found
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Spacing as a system
+- **Spacing scale:** A short list of allowed gaps, each with a use. Anything not on the list is not used.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Measure every vertical gap on a printout and write down each distinct value.
 
-Gap location | Old value | Scale token | New value | Relationship communicated | Exception reason
---- | --- | --- | --- | --- | ---
-[between two elements] | [measurement] | [name] | [value] | [relationship] | [if needed]
-
-## Output checklist
-- [ ] A named spacing scale with base unit and rule; a before and after gap audit; and a per-group table showing inside gap versus surrounding gap.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? The count came from measuring, and it is probably larger than you expected.
 
 </details>
+
+#### 2. Define the scale
+
+- Choose four to seven values and give each a name and a typical use. State your base unit and the rule that generates the rest.
+
+**You should end up with:** A base unit, a rule, and four to seven named values.
+
+Worksheet fields for this step:
+
+- Your base unit and the rule that generates the rest
+- Four to seven values, each with a name and a typical use — Name them by use: inside a group, between groups, around a section.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Base unit:** The smallest step. Everything else is a multiple of it, which is what makes the values look related.
+
+Stuck starting? Pick a base of 4 or 8 and write multiples until you have five or six useful sizes.
+
+Is it enough? Each value has a name describing its use, not its size.
+
+</details>
+
+#### 3. Apply and resolve conflicts
+
+- Map every existing gap to the nearest scale value. Where two different purposes collapse to the same value, decide which one moves and record why.
+
+**You should end up with:** Every old gap mapped onto the scale, with conflicts resolved deliberately.
+
+Worksheet fields for this step:
+
+- Where two different purposes collapsed onto the same value, and which one you moved
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Go through the audit list and write the scale value each one becomes.
+
+Is it enough? Where two purposes wanted the same value, you recorded which one moved and why.
+
+</details>
+
+#### 4. Prove the grouping rule
+
+- For each group on the screen, record the inside gap and the surrounding gap. Any group where the outside gap is not clearly larger is a defect; fix it and record the change.
+
+**You should end up with:** For each group, the inside gap and the surrounding gap, with the outside clearly larger.
+
+**Try it with help.** A supplied measurement from the same made-up screen: inside the class block, title to date is 12 and date to price is 12; the gap between one class block and the next is also 12.
+
+What does that produce, and what is the fix?
+
+- **An undifferentiated list where the price could belong to either class; open the between-block gap to a larger scale value.** — Equal gaps give the eye nothing to group with. Widening the outside gap is the whole repair, and it costs one scale value.
+- A clean, consistent rhythm; nothing needs fixing. — It is consistent and unreadable. Consistency means the same values used for the same purposes, deliberately unequal where the purposes differ.
+- A grouping problem best fixed with a divider line between classes. — A line would work and buys with a new element what one larger gap gives free.
+- Tighten the inside gaps to 4 so the blocks are denser. — This also works, by widening the ratio from the other side. Check it still reads comfortably at enlarged text before choosing it.
+
+**Then:** Measure your own groups and make sure the outside gap wins in every one.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Group 1 · inside gap vs surrounding gap
+- Group 2 · inside gap vs surrounding gap
+- Group 3 · inside gap vs surrounding gap
+- Any group where the outside gap was not clearly larger, and what you did
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Measure one group first: the gap between its own items, then the gap to whatever is next.
+
+Is it enough? No group has an outside gap equal to or smaller than its inside gap.
+
+</details>
+
+#### 5. Record and pause
+
+- Save the scale, the before and after gap audit, and the grouping proof table. Note where you deliberately chose higher density and why.
+
+**You should end up with:** Where you chose density deliberately, where the audits live, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Anywhere you deliberately chose tighter spacing, and why — A dense list can be right. Say what made it right here.
+- Where the before and after audits live
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Look for a list where tighter spacing helps scanning, and say why.
+
+Is it enough? Any tight spacing is a decision with a reason, not a leftover.
+
+</details>
+
+**Save and continue.** Saved for you: The audit, the scale and the proof table save as you type, on this device first and then online. Kept outside the app: The measured printout stays in your own folder; name it here so the numbers and the drawing stay together. What your creator sees: Your creator reads the scale and the grouping proof. The proof table is what shows the system working rather than being declared. Your next action: Open Your work and choose Ready for review. The next lesson arranges this screen in columns and finds where it has to change.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -1138,40 +1880,163 @@ A workshop list was designed at 1280 px as a three-column card grid with filters
 
 Arrange the same content at narrow, middle and wide widths. Decide where the structure must change because content no longer fits.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Draw the same content at three widths on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: Your spacing scale and the regrouped screen. You will keep the content identical and change only its arrangement.
 - Create HaruCourse/Practice/m03-l07-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Define the structure
+
+- State your columns, gutters and margins at the widest layout, using values from your spacing scale where they apply. Draw the structure over your screen.
+
+**You should end up with:** Columns, gutters and margins stated as values.
+
+Worksheet fields for this step:
+
+- Columns, gutters and margins, in values — Use your spacing scale where it applies.
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Grid and layout structure that reflows
+- **Gutter:** The gap between columns. It is what stops two columns of text reading as one.
+- **Margin:** The space from the content to the edge of the screen.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Draw the structure over your widest sketch in pencil before deciding anything.
 
-Width | Columns | Outer margin | Gap | Content failure | Structural change | Reading order
---- | --- | --- | --- | --- | --- | ---
-[width and unit] | [count] | [value] | [value] | [what stops working] | [your response] | [sequence]
-
-## Output checklist
-- [ ] A stated column, gutter and margin structure; the same content at narrow, medium and wide widths; a change-point table giving each width and the content reason; and the narrow reading order.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? The values come from your spacing scale wherever they can.
 
 </details>
+
+#### 2. Find the change points by narrowing
+
+**See it first.** Made-up example. Finding where a class list has to change, without starting from device sizes.
+
+- **What I planned to do:** Design for mobile, tablet and desktop: 390, 768 and 1280. Three neat sketches.
+- **Why I stopped:** Those are three samples from a continuous range. Everything between them is untested, and readers sit everywhere in that range.
+- **What I did instead:** Started wide and narrowed slowly, watching for the first thing that stopped reading well.
+- **The first real failure:** At about 700 the longest class title collided with the price beside it. Nothing to do with a tablet; it was the length of that particular string.
+- **What that gave me:** A change point with a reason: the two-column row becomes one column when the title can no longer hold its line. The number came from the content.
+
+**The wrong turn:** The wrong turn is starting from device widths. It produces three tidy layouts and guarantees that the widths between them were never looked at.
+
+**What it costs:** Narrowing gradually is slower and gives untidy numbers like 700. Those numbers are the ones tied to your actual content.
+
+**Still unknown:** Still unknown: how this behaves with a much longer title in another language. Worth testing before treating the change point as settled.
+
+- Narrow the layout gradually. Each time the content stops reading well, record the approximate width and exactly what failed. Do not start from a list of devices.
+
+**You should end up with:** Three change points found by narrowing, each with the content failure that caused it.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Change point 1 · roughly what width, and exactly what failed
+- Change point 2 · roughly what width, and exactly what failed
+- Change point 3 · roughly what width, and exactly what failed
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the widest sketch and cover it progressively from the right, watching what breaks first.
+
+Is it enough? Every change point names the content that failed, not a device.
+
+</details>
+
+#### 3. Design the reflow
+
+- For each change point, decide the new arrangement and the resulting order. Write the reading order at the narrow width and confirm the primary action is not buried.
+
+**You should end up with:** The arrangement after each change, the narrow reading order, and where the main action sits.
+
+**Try it with help.** A supplied narrow layout from the same made-up screen, ordered top to bottom: photograph, class title, instructor biography, date and time, price, what to bring, Reserve button, related classes.
+
+What is the most important change to the order?
+
+- **Move the instructor biography below Reserve, so date, price and materials reach the reader before the decision.** — The order is what a person reads and what a screen reader announces. Everything needed to decide should arrive before the control that acts on the decision.
+- Move the photograph to the bottom, since it carries no information. — Worth considering and it is not the costly problem. The photograph is one scroll; the biography sits between the reader and the facts they need.
+- Move Reserve to the top so it is always reachable. — It puts the action before the information the action depends on, which invites a decision made without the price.
+- Nothing: on a phone people scroll, so order matters less. — Order matters more on a phone, because only a little is visible at once and the sequence is the whole experience.
+
+**Then:** Number your own narrow order and check that everything needed to decide arrives before the action.
+
+Worksheet fields for this step:
+
+- For each change point: the new arrangement
+- The reading order at the narrowest width, top to bottom — Number it. This is the order a screen reader and a keyboard will follow too.
+- Where the main action sits at the narrow width, and whether it is reachable without hunting
+
+<details>
+<summary>Help with this step</summary>
+
+- **Reading order:** The sequence of the content as it will actually be read, including by a keyboard and a screen reader.
+
+Stuck starting? Write the narrow order as a numbered list before drawing it.
+
+Is it enough? The main action comes after the information needed to take it.
+
+</details>
+
+#### 4. Check the edges
+
+- At all three widths, check that shared left edges align. Mark every element that breaks alignment and either fix it or record why the break is deliberate.
+
+**You should end up with:** Which shared left edges hold at every width, and any break you kept deliberately.
+
+Worksheet fields for this step:
+
+- At all three widths: which shared left edges hold, and which break
+- Any break you kept on purpose, and why
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Lay a ruler down the left edge of each rendering and mark anything that does not meet it.
+
+Is it enough? Every break is either fixed or recorded with a reason.
+
+</details>
+
+#### 5. Record and pause
+
+- Save the three renderings, the change-point table with reasons, and the narrow reading order. Note any arrangement you are unsure about.
+
+**You should end up with:** The arrangement you are least sure about, where the renderings live, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- The arrangement you are least sure about
+- Where the three renderings live
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Choose the change point you guessed at rather than derived.
+
+Is it enough? The uncertainty names a specific width and arrangement.
+
+</details>
+
+**Save and continue.** Saved for you: The structure, change points and reading order save as you type, on this device first and then online. Kept outside the app: The three renderings stay in your own folder. Name them here so the widths and the drawings stay together. What your creator sees: Your creator reads the change-point reasons and the narrow reading order. The reasons are what distinguish this from three sketches. Your next action: Open Your work and choose Ready for review. The next lesson turns every decision from this module into a named token sheet.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -1321,39 +2186,166 @@ A first sheet listed twenty-two colours by hex with no names. Rewritten as nine 
 
 Combine your type, color and spacing decisions into a token sheet that another person could use without asking which value you meant.
 
-**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
 
 - Starting material: Your type scale, palette, contrast table, spacing scale and layout structure.
 - Create HaruCourse/Practice/m03-l08-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 
+</details>
+
+#### 1. Convert decisions to named tokens
+
+**See it first.** Made-up example. Naming the first few tokens, and renaming them once.
+
+- **My first names:** dark-green, light-grey, big-heading, small-gap. They described what I could see, which felt honest.
+- **Where that failed:** When I darkened the secondary text for contrast, the token called light-grey was no longer light or grey, and every note referring to it became misleading.
+- **What I renamed them to:** action-surface, text-secondary, type-title, space-inside. Each says what it is for, so the value can change without the name lying.
+- **The one I nearly left out:** space-inside and space-between looked like the same idea. They are the grouping rule from the spacing lesson, and separating them is what makes it enforceable.
+- **What the sheet became:** Fourteen names, each with a value and one sentence of role. Shorter than I expected, because most of the screen reuses a few decisions.
+
+**The wrong turn:** The wrong turn is naming tokens after their appearance. The name outlives the value, and an appearance name becomes a lie the first time you adjust anything.
+
+**What it costs:** Role names are less immediately readable: you have to learn that action-surface is the green. That cost is paid once and saves every later revision.
+
+**Still unknown:** Still unknown: whether these names make sense to anyone else. The build-it test is what finds out.
+
+- Write every type, colour and spacing decision as a name, a value and a one-line role. Use role-based names throughout.
+
+**You should end up with:** Every type, colour and spacing decision written as a named token with a value and a role.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Token 1 · name, value, role — Name by role, not by appearance: text-primary, not dark-grey.
+- Token 2 · name, value, role
+- Token 3 · name, value, role
+- Token 4 · name, value, role
+- Token 5 · name, value, role
+- Token 6 · name, value, role
+- Token 7 · name, value, role
+- Token 8 · name, value, role
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# A token sheet somebody else could build from
+- **Token:** A named decision: a name, a value and a role. The name is what other work refers to.
+- **Role name:** A name describing the job, such as text-secondary, rather than the appearance, such as light-grey.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Start with the type scale from lesson 1; those five steps are already tokens waiting for names.
 
-Token name | Value and unit | Semantic role | Use | Avoid | Evidence reference
---- | --- | --- | --- | --- | ---
-[role-based name] | [exact value] | [meaning] | [where] | [misuse] | [earlier test]
-
-## Output checklist
-- [ ] A token sheet of role-named type, colour and spacing tokens with values, usage notes and prohibitions; a permitted-pairing contrast check; and the list of gaps found by the build-it test.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? No token name mentions a colour, a size or a direction.
 
 </details>
+
+#### 2. Add usage and prohibitions
+
+- For each token, note where it is used and, where relevant, one thing it must not be used for. Include permitted text-on-surface pairings.
+
+**You should end up with:** Usage notes, prohibitions and the permitted text-on-surface pairings.
+
+Worksheet fields for this step:
+
+- The prohibitions worth writing down
+- The permitted text-on-surface pairings — Which text token may sit on which surface token.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Prohibition:** Where a token must not be used. It prevents the most common misuse better than any amount of description.
+
+Stuck starting? For each colour token, ask what someone might reasonably use it for that would be wrong.
+
+Is it enough? At least two tokens carry a prohibition with a reason.
+
+</details>
+
+#### 3. Re-check pairings against contrast
+
+- Take every permitted text-on-surface pairing and confirm it against your contrast table. Add any missing pair, measure it, and record failures as prohibitions.
+
+**You should end up with:** Every permitted pairing measured against your contrast table, with failures turned into prohibitions.
+
+**Try it with help.** A supplied sheet from the same made-up project. It permits text-secondary on surface-raised, but the contrast table from lesson 4 has no row for that pair: it measured text-secondary on surface-base only.
+
+What should happen to that pairing?
+
+- **Measure it now; until it is measured it is not permitted.** — An unmeasured pairing is an assumption that the raised surface is close enough to the base. That is exactly the sort of drift a sheet exists to prevent.
+- Allow it, since text-secondary passed on the base surface. — A raised surface is a different colour. Passing on one background says nothing about another.
+- Prohibit it, because it was not measured. — Prohibiting without measuring throws away a pairing that may be perfectly good. Measure first, then decide.
+- Allow it with a note that it is unverified. — A permitted-with-doubt pairing will be used as permitted. The note will not travel with it.
+
+**Then:** Go through your own permitted list and measure anything your contrast table does not already cover.
+
+Worksheet fields for this step:
+
+- Each permitted pairing against your contrast table: measured ratio and result — Any pairing you have not measured is not yet permitted.
+- Pairings that failed and are now prohibited
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? List the pairings first, then check each against the table from lesson 4.
+
+Is it enough? Every permitted pairing has a measured ratio beside it.
+
+</details>
+
+#### 4. The build-it test
+
+- Hand the sheet to another person, or set it aside and return to it, then rebuild one small component using only the sheet. Record every decision you had to invent because the sheet did not specify it.
+
+**You should end up with:** A rebuild from the sheet alone, and every gap it exposed.
+
+Worksheet fields for this step:
+
+- Every decision you had to make that the sheet did not specify
+- What you added to the sheet as a result
+
+<details>
+<summary>Help with this step</summary>
+
+- **Build-it test:** Rebuilding something using only the sheet. Every decision you have to invent is a gap in the specification.
+
+Stuck starting? Set the screen aside, take only the sheet, and rebuild one button from it.
+
+Is it enough? The gap list is not empty; a first sheet always has gaps.
+
+</details>
+
+#### 5. Repair and save
+
+- Add the missing specifications the test revealed. Save the sheet and the list of gaps it exposed.
+
+**You should end up with:** Where the sheet lives, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Where the token sheet lives
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Add the missing specifications the test revealed before saving.
+
+Is it enough? The sheet now answers the questions that stopped you during the rebuild.
+
+</details>
+
+**Save and continue.** Saved for you: The token list, prohibitions and gap findings save as you type, on this device first and then online. Kept outside the app: If you keep the sheet as its own document, name the file here so the sheet and this record stay together. What your creator sees: Your creator reads the token names, the prohibitions and the gaps the build-it test exposed. The gaps are the most useful part. Your next action: Open Your work and choose Ready for review. The next lesson builds one component in all of its states using only this sheet.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1515,40 +2507,166 @@ A primary button was specified once, in default. Building its states from the to
 
 Specify one component across default, hover, focus, disabled and loading states, using the token sheet rather than introducing unexplained values.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Draw the component in each of its states on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: Your token sheet and the gap list from the build-it test.
 - Create HaruCourse/Practice/m03-l09-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Choose the component and enumerate states
+
+- Pick one component your screen genuinely needs. List every state it will really have, including the condition that produces each one.
+
+**You should end up with:** One component and every state it really has, each with its condition.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- The component you chose, and why your screen needs it
+- State 1 · its name and the condition that produces it — Default, hover, focus, pressed, loading, disabled, error — whichever your component really has.
+- State 2 · its name and the condition that produces it
+- State 3 · its name and the condition that produces it
+- State 4 · its name and the condition that produces it
+- State 5 · its name and the condition that produces it
+- State 6 · its name and the condition that produces it
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Applying the system to one component set
+- **State:** How the component looks and behaves under one condition. The condition is part of the specification.
+- **Focus:** Where the keyboard currently is. It is not the same as hover, and it must be visible.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Write default first, then ask what happens on the keyboard, on a slow connection, and when the action is unavailable.
 
-State | Trigger | Visible label / cue | Token references | Available action | Accessibility intent
---- | --- | --- | --- | --- | ---
-[state] | [event] | [actual text or cue] | [names] | [action] | [intent, not tested behavior]
-
-## Output checklist
-- [ ] One component specified in all its states, a state table giving state, triggering condition and tokens used, the new tokens added to the sheet, and the disabled-state explanation text.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Every state names the condition that produces it, not just the appearance.
 
 </details>
+
+#### 2. Build each state from tokens only
+
+- Specify each state using only tokens from your sheet. Every time you cannot, stop and record the missing token rather than inventing a value silently.
+
+**You should end up with:** Each state built from tokens only, with every missing token recorded rather than invented.
+
+Worksheet fields for this step:
+
+- For each state: the tokens it uses
+- Every token you needed and did not have — Record it rather than inventing a value silently. These go back into the sheet.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the default state and write the token name for every value it uses.
+
+Is it enough? Nowhere did you write a raw value; where you wanted to, the token is on the missing list.
+
+</details>
+
+#### 3. Design the focus appearance
+
+- Give keyboard focus its own visible treatment and token. Check it is distinguishable from hover and visible against every surface the component sits on.
+
+**You should end up with:** A focus appearance with its own token, distinguishable from hover and visible on every surface.
+
+**Try it with help.** A supplied focus treatment from the same made-up project: on focus the button’s background lightens slightly, which is also exactly what happens on hover.
+
+What is wrong with that, and what is the smallest fix?
+
+- **Focus and hover are indistinguishable, so a keyboard user cannot tell where they are; give focus its own visible outline offset from the control.** — Focus needs to be unmistakable and must not depend on a mouse being present. An outline sitting just outside the control works on every surface.
+- Nothing: a lightened background is visible, which is what focus needs. — Visible is not enough if it means two different things. A mouse user hovering and a keyboard user focusing see the same thing.
+- Remove the hover effect so the lightening only means focus. — That solves the ambiguity by removing useful mouse feedback, and the focus signal remains a subtle background change.
+- Rely on the browser default focus ring. — A reasonable starting point and it often fails against particular surfaces, which is why the lesson asks you to check it against each one.
+
+**Then:** Give your own focus state a token of its own and check it against every surface the component sits on.
+
+Worksheet fields for this step:
+
+- What focus looks like, and which token carries it — It must differ from hover, and be visible against every surface the component sits on.
+- Where you checked it, and against which surfaces
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Draw the focused state beside the hovered one and ask whether you could tell them apart across the room.
+
+Is it enough? Focus differs from hover in kind, not only in degree.
+
+</details>
+
+#### 4. Make disabled comprehensible
+
+**See it first.** Made-up example. Specifying the disabled Reserve button on a full class.
+
+- **What I did first:** Took the default button and set it to 40 per cent opacity. One line, done.
+- **What that produced:** The label became unreadable, the background turned into an unpredictable blend of the button and whatever was behind it, and the control still looked pressable.
+- **The worse problem:** It said nothing. A reader sees a faded button and cannot tell whether the class is full, whether they must sign in, or whether the page is broken.
+- **What I specified instead:** Its own tokens: surface-muted for the background, text-disabled for the label, no border. Deliberately flat, so it does not read as pressable.
+- **The words that did the real work:** Beneath it: “Saturday is full. Sunday at 11 has two places.” The state explains itself and offers the next move.
+
+**The wrong turn:** The wrong turn is treating disabled as a visual effect. Opacity is cheap to apply and communicates nothing, while quietly breaking contrast.
+
+**What it costs:** Its own tokens mean two more entries on the sheet and a sentence to write for each disabled case. It is what turns a dead end into a next step.
+
+**Still unknown:** Still unknown: whether the explanation is noticed where it sits. That is a question for a person, not for the sheet.
+
+- Specify disabled with its own tokens, then write the words that tell the reader why the control is unavailable and where those words appear.
+
+**You should end up with:** A disabled state with its own tokens, and words explaining why the control is unavailable.
+
+Worksheet fields for this step:
+
+- The tokens disabled uses (not the default at reduced opacity)
+- The words telling the reader why it is unavailable, and where they appear
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the sentence a reader needs before you choose any colour.
+
+Is it enough? The disabled state does not rely on opacity and the reader is told why.
+
+</details>
+
+#### 5. Document and save
+
+- Write the state table: state, condition, tokens used, notes. Save it with the new tokens you had to add.
+
+**You should end up with:** Where the state table lives, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Where the state table lives
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the table as state, condition, tokens used, notes.
+
+Is it enough? The new tokens you needed have been added to the sheet from lesson 8.
+
+</details>
+
+**Save and continue.** Saved for you: The state list, tokens and disabled wording save as you type, on this device first and then online. Kept outside the app: The drawn states stay in your own folder; name them here. If you built the component in a local HTML file, keep that file too and name it. What your creator sees: Your creator reads the state table, the focus treatment and the disabled wording. The missing-token list shows how the sheet is maturing. Your next action: Open Your work and choose Ready for review. The last lesson rebuilds a whole Module 1 screen from the sheet and compares the two honestly.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -1698,40 +2816,160 @@ A rebuilt workshop detail screen needed six values not on the token sheet — a 
 
 Rebuild your original screen with the system you developed, then defend the changes using your saved comparisons and measurements.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Draw the rebuilt screen beside the original on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: Your original Module 1 screen, the token sheet, the component state table and every artefact from this module.
 - Create HaruCourse/Practice/m03-l10-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Rebuild from the system
+
+- Rebuild the whole screen using only your token sheet and component specifications. Log every moment you had to reach past them.
+
+**You should end up with:** The rebuilt screen, and every place the sheet could not carry you.
+
+Worksheet fields for this step:
+
+- Which Module 1 screen you rebuilt
+- Anything you could not build from the sheet and component work alone — Every one of these is a gap in the system, not a failure of the screen.
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Rebuild and critique: what the system changed
 
-Source labels: real observation / hypothesis / simulation / self-pilot
 
-Before reference | After reference | Intended improvement | Evidence | Trade-off | Unverified claim | Next test
---- | --- | --- | --- | --- | --- | ---
-[original] | [revision] | [specific change] | [test reference] | [cost] | [limit] | [check]
+Stuck starting? Put the original out of sight and rebuild from the sheet and the state table.
 
-## Output checklist
-- [ ] The rebuilt screen, a log of every value not covered by the token sheet, a heuristic review of both versions, the three-column change table, and the list of issues visual work cannot fix with the module that addresses each.
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? The gap list is honest; a system that covered everything on its first outing is unlikely.
 
 </details>
+
+#### 2. Heuristic review of both versions
+
+**See it first.** Made-up example. Comparing the two versions of a class details screen after the rebuild.
+
+- **What I wanted to write:** “The new version is much clearer and will convert better.” I believed it and it was two claims, both unsupported.
+- **What I could actually support:** Every text element now meets its contrast threshold, the measure is 68 characters rather than 101, and each group’s outside gap exceeds its inside gap. Those are measured.
+- **What the heuristics found:** Both versions are silent while the booking is confirmed. The system work never touched it, because it is a behaviour rather than a surface.
+- **What that told me:** The rebuild improved craft and left one real usability problem untouched. Saying so is more useful than a claim about conversion.
+- **The honest summary:** The screen is measurably more legible and better grouped. Nobody has used either version, so nothing is known about outcomes.
+
+**The wrong turn:** The wrong turn is letting the visible improvement stand in for evidence about people. The new screen looks better to the person who made it, which is the weakest possible test.
+
+**What it costs:** The honest summary is less impressive and it is the one that survives a reviewer asking how you know.
+
+**Still unknown:** Still unknown: whether anyone finds the price faster. That needs a person and a task, which is Module 2 work.
+
+- Review the original and the rebuild against the ten heuristics. Record each issue with the heuristic it violates and the specific element it concerns.
+
+**You should end up with:** Three heuristics applied to both versions.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Heuristic 1 · what it names, and what each version does about it
+- Heuristic 2 · what it names, and what each version does about it
+- Heuristic 3 · what it names, and what each version does about it
+
+<details>
+<summary>Help with this step</summary>
+
+- **Heuristic:** A rule of thumb from experience. It identifies a risk worth checking; it cannot report that a person failed.
+
+Stuck starting? Choose the three heuristics most relevant to a booking screen and apply each to both versions.
+
+Is it enough? At least one heuristic finds a problem the rebuild did not fix.
+
+</details>
+
+#### 3. Separate the columns
+
+- Build a three-column table: what changed, what a reader would experience differently, and what you cannot know without evidence. Fill all three honestly.
+
+**You should end up with:** Craft improvements with evidence, and outcome claims rewritten honestly.
+
+**Try it with help.** Three supplied sentences from the same made-up write-up. A: “Every text element now meets its contrast threshold, measured with the calculator.” B: “The line length is now 68 characters, counted over three lines.” C: “The redesign makes the screen easier to use.”
+
+Which sentence cannot be supported by anything in this module, and why?
+
+- **C, because ease of use is a claim about people and nobody has used either version.** — A and B report measurements you took. C reports an outcome that would need a person attempting a task, which this module never did.
+- A, because contrast measurements are only estimates. — They are calculated from stated colour values, so within their scope they are exact. What they do not establish is readability in every condition.
+- B, because character counts vary by content. — The count is of your real content, over three lines, and it is reported as such. It is a measurement with a stated method.
+- None: all three follow from careful work. — Careful work supports A and B. C requires evidence of a different kind entirely, and this module produced none of it.
+
+**Then:** Sort your own sentences the same way: what you measured, and what would need a person.
+
+Worksheet fields for this step:
+
+- What genuinely improved in the craft, and how you can tell — Measured contrast, a counted measure, a proven grouping gap: things with evidence behind them.
+- Anything you were tempted to claim about outcomes, rewritten honestly
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? List what you measured in this module first; those are the claims you can keep.
+
+Is it enough? No sentence claims a change in what people will do.
+
+</details>
+
+#### 4. Name what craft did not fix
+
+- List the issues from the review that visual work cannot resolve, and say which later module addresses each one.
+
+**You should end up with:** What is still wrong that a design system cannot fix.
+
+Worksheet fields for this step:
+
+- What is still wrong with the screen that a design system cannot fix — Wrong information, a missing step, an unanswered question about the reader.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Look for a missing step, missing information, or a question about the reader that no amount of craft answers.
+
+Is it enough? The list contains at least one thing that needs research or a behaviour change rather than a token.
+
+</details>
+
+#### 5. Submit and request review
+
+- Save all artefacts, record your actual minutes, and set the practice status to ready for review with references to your outputs.
+
+**You should end up with:** Where both versions live, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Where the original and the rebuild live
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Keep the original and the rebuild side by side; the pair is the evidence.
+
+Is it enough? Both versions exist, are named, and the original is unchanged.
+
+</details>
+
+**Save and continue.** Saved for you: The critique, the claims and the unresolved list save as you type, on this device first and then online. Kept outside the app: The original and the rebuild stay in your own folder. Keep the original untouched; the pair is what makes the comparison meaningful. What your creator sees: Your creator reads the critique, what you could measure and what you deliberately did not claim. The unresolved list is the most useful part of the module. Your next action: Open Your work and choose Ready for review. This closes the visual foundations module; the reasoning modules build on the same screens.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
