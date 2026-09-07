@@ -19,6 +19,8 @@ Bring: Bring Module 1 Lesson 5’s flow, screens and unresolved questions.
 - Recruit for relevant experience, with voluntary participation.
 - A rehearsal or self-walkthrough is not participant research.
 
+How this lesson works: Do has 5 short steps with an in-app worksheet that saves as you type; Learn remembers which step you were on.
+
 <details>
 <summary>Worked example</summary>
 
@@ -53,42 +55,178 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 
 Choose a real uncertainty from Module 1 and plan the smallest ethical study that could change your decision.
 
-**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
 
 - Starting material: Bring Module 1 Lesson 5’s flow, screens and unresolved questions.
 - Create HaruCourse/Practice/week2-day1-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 
+</details>
+
+#### 1. Reconnect to Module 1
+
+**See it first.** Made-up example. Choosing what to study after Module 1, starting from the wrong end.
+
+- **Where I started:** I wrote “I want to interview people about the booking screen.” A method, a subject, and no reason.
+- **The question that stopped me:** If someone answered, what would I do differently? I had no answer, which meant any result would be interesting and useless.
+- **The decision underneath:** I had put what to bring on the details screen instead of in a message after booking. I chose that in ten seconds and cannot defend it.
+- **What that makes the question:** When do people decide what to take, and where do they look? If it is on the morning of the class, the details screen is the wrong place entirely.
+- **What it rules out:** Asking “is this screen clear?”. It cannot change where the information belongs, and people say yes to be kind.
+
+**The wrong turn:** The wrong turn is starting with the method. Interviews sound like research, so it is easy to arrange one and only afterwards notice that no answer would change anything.
+
+**What it costs:** Naming the decision first makes the study smaller and less impressive. It also makes it worth running.
+
+**Still unknown:** Still unknown: whether anyone reads a message after booking at all. That is a second question, not this one.
+
+- Review your Module 1 flow and screens.
+- Choose one decision you cannot yet justify.
+
+**You should end up with:** One decision from Module 1 that you cannot yet defend, and what it costs the person if you choose wrongly.
+
+Worksheet fields for this step:
+
+- The decision
+- What happens if you get it wrong — For the person, not for you.
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Choose the evidence you need
+- **Decision:** A choice you have already made or are about to make, where you could reasonably have done something else.
+- **Uncertainty:** The thing you do not know that makes the decision a gamble.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Open your Module 1 screens and find something you placed without being able to say why.
 
-Decision | Uncertainty | Method and why | Participant access | Consent | Task / question | Limitation
---- | --- | --- | --- | --- | --- | ---
-[decision at risk] | [unknown] | [method] | [reachable adults, no names here] | [consent plan] | [neutral task] | [boundary]
-
-## Output checklist
-- [ ] One-page study plan
-- [ ] Session guide and consent introduction
-- [ ] Note-taking template
-- [ ] Participant-access status
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? You can say what you would do differently depending on the answer.
 
 </details>
+
+#### 2. Plan the study
+
+- Write the decision and research question.
+- Name a suitable method, participant criteria and useful evidence.
+
+**You should end up with:** A research question, a method with a reason, who would count as relevant, and what evidence would satisfy you.
+
+**Try it with help.** A supplied pair from the same made-up project. Question A: “Where do people look for what to bring, and when?” Question B: “Can a first-time visitor tell, from this screen, what the class costs in total?”
+
+Which method fits which question?
+
+- **A needs an interview about a recent booking; B needs watching someone attempt the task on the screen.** — A is about what happened around the booking, over days, in places your screen cannot see. B is about what this screen does to someone in the next two minutes, which you can watch.
+- Both need interviews, because you want to understand people’s thinking. — For B an interview gets you a recollection or a guess. Watching someone hunt for the total is far more reliable than asking whether they could find it.
+- Both need a task, because watching behaviour always beats asking. — Watching cannot reach last Tuesday evening. A is about a sequence that already happened elsewhere, and only an account of it can reach that.
+- A survey would answer both more cheaply. — A survey collects what people say they usually do, which is the least reliable version of A, and it cannot observe anyone failing to find a total.
+
+**Then:** Apply the same test to your own question: does it ask about something that already happened elsewhere, or about what this screen does to someone now?
+
+Worksheet fields for this step:
+
+- The research question — What you do not know, written so an answer would change the decision above.
+- Interview about the past, or watch someone do a task? (Interview about a recent experience / Watch someone attempt a task / Both, in one short session)
+- Why that method answers this question — An interview reaches what happened before and around; watching reaches what the screen does to someone now.
+- Who would count as a relevant person — Describe the experience they need, not a name.
+- What you would need to hear or see to be satisfied
+
+<details>
+<summary>Help with this step</summary>
+
+- **Method:** How you get evidence: asking about the past, or watching someone do something now.
+- **Recruitment criteria:** The experience a person needs for their answers to be relevant. Not their name, age or job.
+
+Stuck starting? Write the question as “I do not know…” and finish it, then choose the method that could actually reach it.
+
+Is it enough? The reason names what the method reaches that the other one cannot.
+
+</details>
+
+#### 3. Prepare materials
+
+- Adapt your interview guide or write a neutral task scenario.
+- Add voluntary consent and how notes will be used.
+- Create columns for actions, quotes, observations and interpretations.
+
+**You should end up with:** Consent wording you would actually say, the task or questions, and the headings for your notes.
+
+Worksheet fields for this step:
+
+- Your consent introduction, word for word — Who you are, what the notes are for, that they can skip or stop, and whether anything is recorded.
+- The task or the opening questions — A task states a goal without naming buttons. Questions ask about a real recent occasion.
+- The headings you will use while taking notes
+
+<details>
+<summary>Help with this step</summary>
+
+- **Consent:** They know what you are doing with their words and agree before you start, and can stop at any time.
+- **Neutral task:** A goal with no route in it. “Find a class you could attend on Saturday and see what it would cost you” names no button.
+
+Stuck starting? Write the consent sentences first; they are the part you will be most nervous about saying.
+
+Is it enough? Nothing in the task tells the person where to click, and the consent wording says they can stop.
+
+</details>
+
+#### 4. Arrange or rehearse
+
+- If possible, invite a willing adult with relevant recent experience without pressure.
+- Rehearse the session aloud.
+- If nobody is available, record the recruitment gap; never invent an interview.
+
+**You should end up with:** An honest recruitment status, and either a dated gap or what rehearsing aloud taught you.
+
+Worksheet fields for this step:
+
+- Where recruitment stands today (Someone has agreed / Asked, waiting for a reply / Nobody available: rehearsal only) — Choose honestly. Rehearsal only is a real, recordable outcome.
+- If nobody is available, who would you need and how might you reach them? — Dating the gap is the finding. Leave it if someone has agreed.
+- What reading it aloud taught you — Which sentence was awkward, which question you wanted to answer for them.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Recruitment gap:** A dated record that nobody was available. It is a real result of the work, not a failure to report.
+- **Self-pilot:** Running your own materials past yourself. It checks the materials; it tells you nothing about other people.
+
+Stuck starting? If you are unsure whether to ask someone, write the message you would send. Deciding is easier once it exists.
+
+Is it enough? The status matches reality, and if nobody is available the plan is still finished and ready.
+
+</details>
+
+#### 5. Review and save
+
+- Identify one way the plan could bias results and revise it.
+- Save the plan and access status.
+- Exclude private booking and payment details.
+
+**You should end up with:** One way the plan could push the answer, what you changed, the limitation you accept, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- One way your plan could push the answer
+- What you changed because of it
+- What this study cannot tell you, however it goes
+- What you changed after the Check questions — Name which answer you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask what answer you are hoping for; the bias is usually whatever makes that answer easy to give.
+
+Is it enough? The limitation names something the study cannot establish even if it goes perfectly.
+
+</details>
+
+**Save and continue.** Saved for you: The plan, consent wording, questions and access status save as you type, on this device first and then online. Kept outside the app: No participant’s name, contact details or recording belongs here. Keep any consent record in your own private folder and refer to it only by a file name. What your creator sees: Your creator can read the plan and the recruitment status once you choose Ready for review. A plan with nobody available is a complete answer to this lesson. Your next action: Open Your work and choose Ready for review. Lesson 2 turns notes into findings, and it supplies practice notes if your session has not happened yet.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -175,6 +313,39 @@ A research-plan artifact; keep proposed evidence distinct from collected evidenc
 
 ### Check
 
+**You have a willing participant on Saturday and no study plan yet. What do you decide first?**
+
+- **The decision the evidence could change, then the question, then the method.** — The order matters because it is what stops you collecting interesting material that changes nothing. A session without a decision behind it is a pleasant conversation.
+- The method, since you only have one session and interviews fit most things. — Choosing the method first quietly decides what you can learn. Some questions cannot be reached by asking at all.
+- The questions, so you are ready when they arrive. — Questions written before you know the decision tend to be about your screen. They produce agreement rather than evidence.
+
+Improve your work: Reread your question in step 2. If it could be answered without changing your decision in step 1, rewrite it so an answer would move you, then record the change in step 5.
+
+At recheck: The question names something you do not know, and each possible answer leads somewhere different.
+
+**One person tells you they never open confirmation emails. What have you established?**
+
+- **That at least one person with relevant experience does not, which is enough to make you stop assuming everyone does.** — One account cannot say how common it is, and it is real evidence that the behaviour exists. That is usually enough to change a design you were about to build on the opposite assumption.
+- That most people do not read confirmation emails. — One person cannot support “most”. Written that way it will be repeated later without the caveat, and it will be treated as a number.
+- Nothing: a single participant is not a sample. — Too dismissive. One clear account of a behaviour is a fact about the world; what it cannot give you is prevalence.
+- That your email design needs work. — That jumps to a repair. If nobody opens it, better wording is not the answer, and you would have skipped past the finding.
+
+Improve your work: Check the limitation box in step 5. If it does not say that this study cannot establish how common anything is, add that sentence and note it in step 5.
+
+At recheck: The limitation distinguishes what one or two accounts can show from what they cannot.
+
+**The easiest people to recruit are two designers you know. Why is that a problem worth writing down?**
+
+- **They read screens professionally, so their fluency is not typical, and the plan should record that limit.** — Convenience is not disqualifying, and it does shape what you can conclude. Recording who you actually reached is what keeps the finding honest later.
+- It is not a problem, since anyone can attempt a booking task. — Anyone can attempt it, and a designer will notice conventions a first-time visitor never sees, which is exactly what you were trying to observe.
+- You should cancel and wait for perfect participants. — Waiting for the ideal participant usually means no evidence at all. Run it and record who they were.
+
+Improve your work: Reread your criteria in step 2. If they describe who is easy to reach rather than the experience needed, rewrite them, and note in step 5 what you would record about whoever you actually get.
+
+At recheck: The criteria name the experience that makes an answer relevant, and the limitation says who you actually reached.
+
+Answer each question in the app before its explanation appears. Answers are not saved or scored.
+
 <details>
 <summary>Should you select the method before stating the uncertainty?</summary>
 
@@ -238,6 +409,8 @@ Bring: Bring consented notes, or use the four explicitly simulated notes in the 
 - Retain contradictions; frequency alone does not determine severity.
 - Keep simulated training data separate from real research.
 
+How this lesson works: Do has 5 short steps with an in-app worksheet that saves as you type; Learn remembers which step you were on.
+
 <details>
 <summary>Worked example</summary>
 
@@ -272,42 +445,190 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 
 Cut or copy individual observations into separate notes, group them, then trace every proposed finding back to its source.
 
-**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
 
 - Starting material: Bring consented notes, or use the four explicitly simulated notes in the worked example.
 - Create HaruCourse/Practice/week2-day2-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 
+</details>
+
+#### 1. Read and distinguish
+
+- Read the analysis reference.
+- Write your own definitions of observation, interpretation and recommendation.
+
+**You should end up with:** Your own sentences for observation, interpretation and recommendation.
+
+Worksheet fields for this step:
+
+- An observation is… — Something that happened, that another person could have seen too.
+- An interpretation is…
+- A recommendation is…
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Turn notes into traceable findings
+- **Observation:** What happened. Another person in the room would have seen the same thing.
+- **Interpretation:** What you think it meant. Reasonable, and still yours rather than theirs.
+- **Recommendation:** What to change. It should arrive last, attached to a finding.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Write each as “… is when …”. Plain is better than clever here.
 
-Note ID | Session ID / synthetic label | Observation | Group | Interpretation | Design implication | Counterevidence
---- | --- | --- | --- | --- | --- | ---
-N01 | [source] | [one observation] | [working label] | [your interpretation] | [possible response] | [contradiction or missing evidence]
-
-## Output checklist
-- [ ] Observation table with source IDs and source type
-- [ ] Two tentative findings with supporting and contrary evidence
-- [ ] Confidence and unanswered questions
-- [ ] One possible design implication
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Your observation sentence contains no word like because, confused or wanted.
 
 </details>
+
+#### 2. Extract
+
+**See it first.** Made-up example. One line of raw notes being turned into an entry, using the supplied practice notes.
+
+- **The raw line:** “S2 was searching her email on the bus because she had not bothered to check before leaving.”
+- **What I can actually point to:** She searched her confirmation email during the journey. That is the part another person in the room would have seen.
+- **What I nearly kept:** “Because she had not bothered.” That is a judgement about her character, and it was mine, not hers.
+- **The entry I wrote:** N02 · S2 searched the confirmation email during the journey to the class. Source: S2, supplied practice note.
+- **Where the rest went:** “Maybe preparation happens on the way” became an interpretation attached to a finding, where someone can disagree with it.
+
+**The wrong turn:** The wrong turn is keeping the explanation inside the observation. It reads as one solid fact, and later nobody can tell which half was seen and which half was guessed.
+
+**What it costs:** Splitting produces more lines and duller reading. It is what lets a reader trace a finding back and challenge exactly one link.
+
+**Still unknown:** Still unknown: whether she usually prepares later, or whether that day was unusual. One note cannot say.
+
+- Choose real consented notes or expand the simulated example.
+- Assign each observation an ID.
+- Label the table “Real session” or “Simulated training data.”
+
+**You should end up with:** Six numbered observations, each with the note or session it came from, labelled real or supplied.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Which notes are you working from? (My own consented session notes / The supplied practice notes (simulated training data) / Both, kept separate) — This label travels with every finding you write below.
+- N01 · what happened — One thing only. If a line contains “because” or “so”, the second half is probably an interpretation.
+- N01 · source — The session or supplied note it came from: S1, S2, or your own anonymous ID.
+- N02 · what happened
+- N02 · source
+- N03 · what happened
+- N03 · source
+- N04 · what happened
+- N04 · source
+- N05 · what happened
+- N05 · source
+- N06 · what happened
+- N06 · source
+
+<details>
+<summary>Help with this step</summary>
+
+- **Simulated training data:** Practice notes supplied by this course. Useful for learning the method; never presentable as research you did.
+- **Note ID:** A number so a finding can point at its source. Without it, findings float free.
+
+Stuck starting? If you have no session of your own, choose the supplied notes and expand the four S1 to S4 lines into separate entries.
+
+Is it enough? Every entry could be checked against a source, and none contains the word because.
+
+</details>
+
+#### 3. Group
+
+- Group related observations into two possible themes.
+- Keep an exception or contradiction visible.
+
+**You should end up with:** Two named groups with their note numbers, and the note that refuses to fit.
+
+Worksheet fields for this step:
+
+- Group 1 · a name for the pattern — A guess about what these notes have in common. It can be wrong.
+- Group 1 · the note numbers in it
+- Group 2 · a name for the pattern
+- Group 2 · the note numbers in it
+- The note that does not fit either group — Keep it. The exception is usually where the real finding is.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Contradiction:** A note that argues against the pattern you are forming. It stays visible; it is not a mistake in the data.
+
+Stuck starting? Read your entries and put two of them together that feel related; the reason you put them together is the group name.
+
+Is it enough? At least one note sits outside both groups and is still written down.
+
+</details>
+
+#### 4. Build an evidence chain
+
+- Write two tentative findings.
+- For each, list supporting IDs, counter-evidence, confidence and one unanswered question.
+
+**You should end up with:** Two findings, each with supporting numbers, counter-evidence, a confidence level, and the question none of it answers.
+
+**Try it with help.** Supplied practice notes. S1 looked for the materials list the evening before. S2 searched the confirmation email on the journey. S3 brought supplies from a previous class without checking. S4 noticed the list before booking and borrowed an item.
+
+Which finding do these four notes actually support?
+
+- **People prepare at different moments, from before booking to the journey itself, so no single moment can be assumed.** — It holds all four accounts, including S3 who did not check at all, and it says something a design has to answer: the information cannot live at one moment only.
+- Nobody reads the instructions before a class. — S4 read them before booking. One counter-example is enough to sink a claim written as “nobody”, and it was in front of you.
+- People want a reminder the day before the class. — Nobody said this. It is a recommendation dressed as a finding, and it fits only two of the four accounts.
+- Most people prepare at the last minute. — Two of four is not “most”, and four accounts cannot establish proportions at all. The word most is doing work the evidence cannot support.
+
+**Then:** Write your own two findings the same way: they must survive every note you have, including the one that did not fit.
+
+Worksheet fields for this step:
+
+- Finding 1
+- Finding 1 · note numbers that support it
+- Finding 1 · what argues against it — If nothing does, look again; you may have written a summary rather than a finding.
+- Finding 1 · how sure are you? (One account only / Two or more accounts agree / Accounts disagree)
+- Finding 2
+- Finding 2 · note numbers that support it
+- Finding 2 · what argues against it
+- Finding 2 · how sure are you? (One account only / Two or more accounts agree / Accounts disagree)
+- The question these notes cannot answer
+
+<details>
+<summary>Help with this step</summary>
+
+- **Counter-evidence:** What argues against your finding. A finding with none is usually a summary of the notes you liked.
+
+Stuck starting? Take a group name and ask what it would mean if it were true of everyone in that group.
+
+Is it enough? Each finding names its supporting numbers, and neither uses most, all or nobody.
+
+</details>
+
+#### 5. Explain and save
+
+- Write one possible design implication.
+- Save the table and evidence chain without calling the implication proven.
+
+**You should end up with:** One possible implication written as possible, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- A possible design implication — Possible. It follows from a finding; it is not proven by it.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Finish the sentence “If that is right, then the design would have to…”.
+
+Is it enough? The implication is a consequence of a finding, not a feature you already wanted to build.
+
+</details>
+
+**Save and continue.** Saved for you: Your entries, groups and findings save as you type, on this device first and then online. Kept outside the app: Keep any raw session notes in your own private folder. Nothing here should carry a participant’s name, and nothing is uploaded. What your creator sees: Your creator can read the entries, findings and their counter-evidence once you choose Ready for review. The source label travels with them. Your next action: Open Your work and choose Ready for review. Lesson 3 turns one of these findings into a small change worth testing.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -415,6 +736,40 @@ A synthesis exercise; real study findings require real evidence.
 
 ### Check
 
+**Which of these belongs in the observation column?**
+
+- **S2 searched the confirmation email during the journey.** — It says what happened and nothing about why. Anyone reading it can check it against the source note.
+- S2 was disorganised about preparing for the class. — That is a judgement about a person. It cannot be checked, and it will quietly become the reason for a design decision later.
+- Add a reminder the day before. — A recommendation, and the furthest thing from an observation. It belongs at the end, attached to a finding with sources.
+- People prepare at the last minute. — A finding, and a shaky one. It generalises several notes into a claim about people, which is a later step and needs its counter-evidence.
+
+Improve your work: Reread your six entries in step 2. Move anything containing because, wanted, or a judgement about the person into an interpretation or a finding, then record the change in step 5.
+
+At recheck: Every entry describes what happened and could be traced to its source.
+
+**Five notes support your finding and one contradicts it. What do you do with the sixth?**
+
+- **Keep it visible beside the finding and say what it means for your confidence.** — The exception is where you learn something. Hiding it makes the finding look stronger and makes you worse at predicting what happens next.
+- Leave it out: five against one is a clear pattern. — Counting notes is not measuring. With six accounts, one clear counter-example matters more than the tally.
+- Change the finding until everything agrees. — That usually produces something so vague it cannot be wrong. Better to keep a sharp finding and state where it fails.
+- Start again with different groups. — Regrouping to escape a contradiction is how you end up with tidy findings nobody can use.
+
+Improve your work: Check the counter-evidence boxes in step 4. If either says none, look again for the note that does not fit and write it in, then say what changed in step 5.
+
+At recheck: Each finding names what argues against it, and its confidence reflects that.
+
+**You used the supplied practice notes. How may this work appear later in a portfolio?**
+
+- **Clearly labelled as a training exercise with supplied notes, never as interviews you conducted.** — The method is genuinely yours to show. The participants are not, and a reader who discovers that later will doubt everything else you wrote.
+- As research findings, since the analysis work was real. — The analysis was real and the sources were invented. Presented as findings, the claim about people is false regardless of how careful the method was.
+- It should not appear at all. — It can appear, labelled. A worked synthesis with supplied notes shows exactly the skill a reviewer wants to see.
+
+Improve your work: Check the source label in step 2 and the wording of your findings. If a finding reads as though real people said it, add the supplied-notes label to the finding itself, then record the change in step 5.
+
+At recheck: The source type is set, and any finding drawn from supplied notes says so where it is written.
+
+Answer each question in the app before its explanation appears. Answers are not saved or scored.
+
 <details>
 <summary>Is “add a reminder” an observation?</summary>
 
@@ -478,6 +833,8 @@ Bring: Bring Lesson 2’s findings and their limitations.
 - A score remains an estimate unless measured.
 - A hypothesis needs an observable signal and evidence that could weaken it.
 
+How this lesson works: Do has 5 short steps with an in-app worksheet that saves as you type; Learn remembers which step you were on.
+
 <details>
 <summary>Worked example</summary>
 
@@ -512,42 +869,176 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 
 Compare three changes against your evidence, select a small opportunity and write the observation that could disprove its value.
 
-**Where to work:** A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
 
 - Starting material: Bring Lesson 2’s findings and their limitations.
 - Create HaruCourse/Practice/week2-day3-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 
+</details>
+
+#### 1. Review evidence
+
+- Choose one finding affecting the workshop flow.
+- Keep its source type and limitations attached.
+
+**You should end up with:** One finding from Lesson 2 with its limits still attached.
+
+Worksheet fields for this step:
+
+- The finding — Copy it from Lesson 2, with its source label.
+- What it cannot tell you
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Choose a small, testable opportunity
+- **Opportunity:** A better outcome for the person, stated without naming what you would build.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Choose the finding that would most change your Module 1 screens if it were true.
 
-Option | Evidence IDs | Benefit hypothesis | Effort / risk | Test | Signal to reconsider
---- | --- | --- | --- | --- | ---
-[option] | [note IDs] | [expected change] | [constraint] | [neutral task] | [observable result]
-
-## Output checklist
-- [ ] Comparison of three different options
-- [ ] One choice with trade-off and excluded scope
-- [ ] Hypothesis, success signal and counter-evidence
-- [ ] Neutral task scenario
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? The limits line survives the copy: you have not quietly upgraded a one-account finding.
 
 </details>
+
+#### 2. Explore three options
+
+**See it first.** Made-up example. Turning the finding “people prepare at different moments” into options, badly and then better.
+
+- **My first three:** A materials list on the details page, a materials list in the confirmation email, and a materials list in a reminder. Three places for one thing.
+- **Why that is one option:** Every version assumes the answer is to send a list, and only argues about where. If the assumption is wrong, all three fail together and I learn nothing.
+- **The finding again:** People prepare at different moments, including not at all. S3 simply reused what she had from a previous class.
+- **Three that differ:** Show total cost and materials before booking; let someone add the list to their calendar for the day they choose; have the studio keep spares so nothing is needed in advance.
+- **What that buys:** The third one has no screen at all. If it works best, I have learned something no amount of interface polish would have found.
+
+**The wrong turn:** The wrong turn is three variations of one idea. It feels like a comparison and it has already decided the answer.
+
+**What it costs:** Genuinely different options are harder to think of and one usually falls outside what you can build. Keeping it in the comparison is what stops the screen being assumed.
+
+**Still unknown:** Still unknown: whether the studio would agree to keep spares. That is a constraint to check, not a reason to drop the option.
+
+- Describe three different responses.
+- For each, estimate task impact, uncertainty and effort with reasons.
+
+**You should end up with:** Three responses that differ in kind, each with an expected effect and an effort estimate you can justify.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Option 1 · the change — Describe the outcome for the person, not the component you would build.
+- Option 1 · what it would do for the person, and why you think so
+- Option 1 · effort and risk, with your reason — An estimate. Say what it rests on, so a reader knows it is not a measurement.
+- Option 2 · the change
+- Option 2 · what it would do for the person, and why you think so
+- Option 2 · effort and risk, with your reason
+- Option 3 · the change
+- Option 3 · what it would do for the person, and why you think so
+- Option 3 · effort and risk, with your reason
+
+<details>
+<summary>Help with this step</summary>
+
+- **Effort estimate:** Your guess at the work involved. It stays an estimate unless something measured it, so write the reason beside it.
+- **Task impact:** What changes for the person trying to finish, not how much of the screen changes.
+
+Stuck starting? Write one option with no screen in it. If you cannot, the finding may be about a screen you already decided on.
+
+Is it enough? No two options would succeed or fail for the same reason.
+
+</details>
+
+#### 3. Select
+
+- Choose one response and explain the trade-off.
+- List what you leave outside the test.
+
+**You should end up with:** One choice, what it costs, and what you are leaving out.
+
+Worksheet fields for this step:
+
+- Your choice
+- What it costs, or what it gives up
+- What you are deliberately leaving out of this test — Everything unrelated to the one thing you want to learn.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Scope:** What this test covers. Everything else is written down as excluded so the result stays interpretable.
+
+Stuck starting? Choose the option whose result would change your next decision most, not the one you most want to build.
+
+Is it enough? The excluded list contains something you would have enjoyed doing.
+
+</details>
+
+#### 4. Write the test
+
+- Write: “If [change], [person/context] can [observable behavior].”
+- Add a success signal and counter-evidence.
+- Write a goal-based task without naming the desired route.
+
+**You should end up with:** A hypothesis with something you could watch, a success signal, a disconfirming signal written in advance, and a neutral task.
+
+**Try it with help.** Two supplied hypotheses for the same made-up change. A: “If the total cost appears before the form, first-time visitors will like the booking experience more.” B: “If the total cost appears before the form, a first-time visitor can say what the evening will cost, including materials, without scrolling back.”
+
+Which one can a short session actually test, and why?
+
+- **B, because it names something you could watch someone do or fail to do.** — You can hand someone the task and see whether they can answer without going back. It can also come out badly, which is what makes it a test.
+- A, because liking the experience is what ultimately matters. — Liking is real and you cannot observe it, and asked directly people are kind to the person who made the thing. Nothing in a session would settle it.
+- Both, if you ask a satisfaction question at the end. — Adding a rating to B does not make A testable; it adds a number with no meaning to a session of one or two people.
+- Neither: a prototype cannot test anything about cost. — It can test whether the information can be found and understood, which is precisely what B claims. What it cannot test is whether more people would book.
+
+**Then:** Write yours in the same shape, then write the disconfirming signal before you test anything.
+
+Worksheet fields for this step:
+
+- If [change], then [who] can [something you could watch]
+- What you would see if it worked
+- What you would see if it did not — Write this now, before testing. Afterwards it is much harder to be honest about it.
+- The task you will give someone, with no route in it — A goal, not instructions. No button names.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Disconfirming signal:** What you would see if the change did not help. Writing it first is what stops an inconvenient result being explained away.
+
+Stuck starting? Fill in “If … then … can …” and make the last part something a person in the room could see.
+
+Is it enough? Both signals name observable behaviour, and the task names no button.
+
+</details>
+
+#### 5. Record
+
+- Save the comparison, scope and test question.
+- Name the prototype behavior needed to examine it.
+
+**You should end up with:** What the prototype must be able to do, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- The behaviour the prototype needs for this test — The smallest set of screens and states that lets someone attempt the task.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Walk your task in your head and list every screen the person would have to reach.
+
+Is it enough? The list is the smallest set that lets someone attempt the task, including one thing going wrong.
+
+</details>
+
+**Save and continue.** Saved for you: Your comparison, choice, hypothesis and task save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. If you sketched an option on paper, keep the sheet and name it in Your work. What your creator sees: Your creator can read the three options, the choice and both signals once you choose Ready for review. The disconfirming signal is the part worth his attention. Your next action: Open Your work and choose Ready for review. Lesson 4 builds only the states your task needs, so keep the task wording exactly as you wrote it.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -632,6 +1123,38 @@ A prioritization decision with explicit assumptions.
 
 ### Check
 
+**You score three options for effort out of five and pick the lowest. Is that measured evidence?**
+
+- **No. It is your estimate written as a number, and it should keep the reason beside it.** — Numbers look decided. Unless something measured the effort, the score is a judgement, and the reason is the part a reader can argue with.
+- Yes, if you use the same scale for all three. — A consistent scale makes estimates comparable with each other. It does not turn any of them into a measurement.
+- Yes, effort estimates are standard practice in product teams. — They are standard and they are still estimates. Teams that forget this build plans on numbers nobody checked.
+
+Improve your work: Reread your effort lines in step 2. Add the reason behind each estimate, and record the change in step 5.
+
+At recheck: Every effort estimate names what it rests on, and none is presented as a measurement.
+
+**Your hypothesis says “users will find it easier”. What is missing?**
+
+- **Something you could watch: what a person would do or say that would show it, and what would show the opposite.** — Easier is a summary of an experience, not an event. Without an observable version, any session can be read as a success.
+- A number, such as a percentage improvement. — A number you cannot collect is worse than a vague claim, because it looks rigorous. One or two people cannot produce a rate.
+- Nothing, as long as you ask them afterwards whether it was easier. — Asked by the person who designed it, most people say yes. That answer cannot separate a good change from a polite participant.
+
+Improve your work: Rewrite your hypothesis in step 4 so its last part is something you could see, then fill the disconfirming signal and note the change in step 5.
+
+At recheck: The hypothesis ends in observable behaviour and has a signal that would show it failing.
+
+**Your chosen change grew to include a new results page, a filter and a rewritten confirmation. Why does that hurt?**
+
+- **Whatever happens, you will not know which part caused it.** — One session with three changes gives you one impression and no way to attribute it. Cutting scope is what makes a small test worth running.
+- It takes too long to build in paper. — Effort is a real cost and not the main one. Even if it were quick, the result would still be uninterpretable.
+- It does not hurt: testing more of the design gives more feedback. — You get more reactions and less knowledge. More surface means more explanations for every observation.
+
+Improve your work: Look at your scope in step 3. Move everything not needed to observe your signal into the excluded list, then record what you cut in step 5.
+
+At recheck: The excluded list is longer than it was, and what remains is the smallest thing that could show the signal.
+
+Answer each question in the app before its explanation appears. Answers are not saved or scored.
+
 <details>
 <summary>Does assigning an effort score make it measured evidence?</summary>
 
@@ -688,6 +1211,8 @@ Bring: Bring Lesson 3’s hypothesis and Module 1 layouts. Use paper or your exi
 - Use labelled example content, never private payment data.
 - A self-pilot checks the prototype; it does not prove first-time usability.
 
+How this lesson works: Do has 5 short steps with an in-app worksheet that saves as you type; Learn remembers which step you were on.
+
 <details>
 <summary>Worked example</summary>
 
@@ -722,43 +1247,177 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 
 Build only the states needed to test your chosen hypothesis. Act as the system by swapping paper screens after the person indicates an action.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Draw the screens your task needs on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: Bring Lesson 3’s hypothesis and Module 1 layouts. Use paper or your existing tool.
 - Create HaruCourse/Practice/week2-day4-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Specify states
+
+**See it first.** Made-up example. Deciding what to build for the task “find out what Saturday’s class would cost you in total”.
+
+- **What I planned to build:** Home, search, filters, class list, details, booking form, payment, confirmation, plus a sign-in screen. Nine screens.
+- **The task again:** Find out what Saturday’s class would cost you in total. Nobody has to book anything to answer that.
+- **What survived:** The class list, the details screen with cost and materials, and the first step of the booking form so I can see whether they go looking there.
+- **What goes wrong on purpose:** One card that says the Saturday class is full, because that is when people find out whether the total was clear enough to compare with Sunday.
+- **What I wrote on the unbuilt parts:** “Sign in does nothing — assume you are signed in.” Said once at the start, it stops the session becoming about missing screens.
+
+**The wrong turn:** The wrong turn is building the product rather than the question. Nine screens takes an evening, and eight of them cannot affect the result.
+
+**What it costs:** A small prototype looks unimpressive and someone may wander somewhere you have not drawn. Saying so in advance costs one sentence.
+
+**Still unknown:** Still unknown: whether people would behave the same with a real payment at the end. Paper cannot reach that and the notes should say so.
+
+- List the screens and actions needed for your hypothesis.
+- Include one relevant recovery path.
+
+**You should end up with:** The hypothesis, the screens the task needs, and one thing going wrong.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- The hypothesis you are testing — Copy it from Lesson 3 so the build stays honest.
+- S01 · what is on this screen — Real words, not “headline here”. Invented content is fine and should be labelled.
+- S01 · what the person does to leave it, and where they arrive
+- S02 · what is on this screen
+- S02 · what the person does to leave it, and where they arrive
+- S03 · what is on this screen
+- S03 · what the person does to leave it, and where they arrive
+- S04 · what is on this screen
+- S04 · what the person does to leave it, and where they arrive
+- The one thing that goes wrong, and how they recover — A full class, a mistyped email, a dropped connection. Draw the card before the session, not during it.
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Build a prototype that can answer a question
+- **Fidelity:** How finished a prototype looks and behaves. Choose the least that can answer your question.
+- **State:** One screen as the person sees it at one moment, including empty, full and error versions.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? Walk your task in your head and write down only the screens you actually pass through.
 
-State ID | Visible content | Trigger | Next state | What this prototype can / cannot test
---- | --- | --- | --- | ---
-S01 | [actual content] | [person’s action] | [state ID] | [scope boundary]
-
-## Output checklist
-- [ ] Prototype and interaction map
-- [ ] One working recovery path
-- [ ] Neutral scenario and reset state
-- [ ] Known limitations
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? Every screen you listed is needed to attempt the task, and one shows something going wrong.
 
 </details>
+
+#### 2. Build
+
+- Connect paper screens by swapping sheets, or link screens in your existing tool.
+- Reuse Module 1 layouts.
+- Label invented content and out-of-scope actions.
+
+**You should end up with:** Invented content marked as invented, and a plan for actions that will not work.
+
+Worksheet fields for this step:
+
+- Which content is invented, and how it is marked — Prices, names and dates you made up. Never a real card number or a real person’s details.
+- Actions that will not work, and what you will say if someone tries
+
+<details>
+<summary>Help with this step</summary>
+
+- **Out of scope:** Something the prototype cannot do. Named in advance it is a boundary; discovered mid-session it is a broken test.
+
+Stuck starting? Look at every price, name and date on your cards and ask where the number came from.
+
+Is it enough? No real payment details or real people appear anywhere, and each dead control has a sentence ready.
+
+</details>
+
+#### 3. Pilot
+
+- Walk the primary and recovery paths yourself.
+- Repair broken links and missing content.
+- Label this check as a self-pilot.
+
+**You should end up with:** What broke when you walked it yourself, and what you fixed. This is a self-pilot, not a test with a person.
+
+**Try it with help.** A supplied self-pilot from the same made-up prototype. Walking the task, the author found: the class list card had no prices on it; pressing Reserve led to a card that did not exist yet; and the full-class card said “Sorry, full” with nothing else on it.
+
+Which of those three is not a prototype bug to fix before the session?
+
+- **The full-class card: its emptiness is a design problem worth watching someone hit.** — A missing price and a missing card stop the session working at all. A bare failure message is the design as it stands, and what someone does when they meet it is exactly what you want to see.
+- The missing prices: the person can ask you what things cost. — Asking you turns the facilitator into part of the interface, and the task was about finding the cost. That has to be on the card.
+- The missing card after Reserve: you can describe it aloud instead. — Describing it aloud means you are designing during the session and the person is reacting to your narration rather than the design.
+- All three should be fixed, since a session should run smoothly. — Smoothness is not the goal. Fixing the bare failure card would remove the very moment most likely to teach you something.
+
+**Then:** Separate your own findings the same way: repair what stops the task, and leave the design weaknesses in place to be observed.
+
+Worksheet fields for this step:
+
+- What broke when you walked the task yourself — Missing screens, cards you had to invent mid-walk, a step with nowhere to go.
+- What you fixed before anyone else sees it
+
+<details>
+<summary>Help with this step</summary>
+
+- **Self-pilot:** Walking your own prototype to find broken links and missing screens. It checks the materials, never the design.
+
+Stuck starting? Do the task yourself, slowly, and stop every time you have to explain something to yourself.
+
+Is it enough? Nothing is missing that would force you to invent a screen while someone is watching.
+
+</details>
+
+#### 4. Prepare the scenario
+
+- Write a goal-based task without button or route instructions.
+- Prepare the starting state so the task can be repeated.
+
+**You should end up with:** The task in the exact words you will say, and how you reset between attempts.
+
+Worksheet fields for this step:
+
+- The task, word for word — A goal and a situation. No button names, no route.
+- How you put everything back for the next attempt
+
+<details>
+<summary>Help with this step</summary>
+
+- **Neutral task:** A goal with a situation and no route. If it contains a button name, you have given away the answer.
+
+Stuck starting? Read your Lesson 3 task aloud and cross out every word that names part of the interface.
+
+Is it enough? Someone could attempt the task without you saying anything else.
+
+</details>
+
+#### 5. Save
+
+- Save the prototype reference, interaction map and scenario.
+- List simulated behavior and checks the prototype cannot establish.
+
+**You should end up with:** What this prototype cannot establish, where the screens are, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- What a paper prototype cannot establish — Keyboard and screen-reader behaviour, real payment, speed, anything a server does.
+- Where the screens live (file name or “paper, in my folder”)
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? List everything a person might reasonably conclude from a paper session that would be wrong.
+
+Is it enough? The list names keyboard and screen-reader behaviour and anything requiring a server.
+
+</details>
+
+**Save and continue.** Saved for you: What you type here saves by itself, on this device first and then online. The cards themselves stay on your table. Kept outside the app: Keep the numbered screens and the task card in your own folder. Photograph them if you like and write the file name here; naming a file does not upload it. What your creator sees: Your creator reads the state list, the task and the limitations. Share photographs the way you normally share files if you want him to see the cards. Your next action: Open Your work and choose Ready for review. Lesson 5 runs the task with a person if you have one, and honestly as a self-pilot if you do not.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -855,6 +1514,38 @@ A prototype with a reason for its fidelity and scope.
 
 ### Check
 
+**Your paper prototype works well in the session. What may you claim from that?**
+
+- **That the intended behaviour made sense to that person on paper, which says nothing about a built version.** — Paper reaches comprehension and sequence. Speed, keyboard access, screen-reader output and anything a server does are all outside what you just saw.
+- That the design works and can be built as drawn. — A built version introduces waiting, errors, focus order and states you never drew. Those are where designs usually fail.
+- That the flow is accessible, since you read every card aloud. — Reading aloud is you, not the technology. Whether a screen reader would announce it in that order is a property of code you have not written.
+
+Improve your work: Reread your limitations in step 5. If it does not name keyboard and screen-reader behaviour and anything a server would do, add them and note the change.
+
+At recheck: The limitations distinguish what paper showed from what only a build could show.
+
+**Your task card says: “Use the filter to find Saturday’s pottery class and press Reserve.” What is wrong?**
+
+- **It contains the route, so you will watch someone follow instructions rather than find their way.** — Naming the filter and the button hands over both decisions you wanted to observe. The session becomes a test of whether they can follow directions.
+- Nothing: being specific stops the person getting lost. — Getting lost is the finding. If you steer them past it, you have removed the only part that could have taught you something.
+- It is too long for someone to remember. — Length is a small matter; you can leave the card with them. The route inside it is the problem.
+
+Improve your work: Rewrite your task in step 4 as a goal and a situation with no interface words, then record the change in step 5.
+
+At recheck: The task names no button, link or filter, and still says what a good outcome would be for the person.
+
+**You have one evening. Do you spend it drawing more screens or on the failure card and the reset?**
+
+- **The failure card and the reset, because the session collapses without them.** — A missing failure card means improvising mid-session; no reset means the second attempt is not comparable. Extra screens rarely change what you learn.
+- More screens, so the person can explore naturally. — Exploration is pleasant and it is not the task. More surface makes every observation harder to attribute.
+- Neither: colour and typography make people take it seriously. — Polish on paper mostly buys politeness. People criticise a rough sketch more freely, which is what you want.
+
+Improve your work: Check step 1 and step 4: if you have no failure card or no reset, add them before any session, then note it in step 5.
+
+At recheck: One failure card exists with a recovery, and the reset lets a second person start from the same place.
+
+Answer each question in the app before its explanation appears. Answers are not saved or scored.
+
 <details>
 <summary>Can a clickable prototype demonstrate real server behavior?</summary>
 
@@ -911,6 +1602,8 @@ Bring: Bring Lesson 4’s prototype, scenario and note template, plus your conse
 - Keep the original and repair one issue with meaningful task impact.
 - A revision needs another check; a small session cannot prove business impact.
 
+How this lesson works: Do has 5 short steps with an in-app worksheet that saves as you type; Learn remembers which step you were on.
+
 <details>
 <summary>Worked example</summary>
 
@@ -945,43 +1638,178 @@ Public reading checked 2026-09-06; no account, card or trial. If unavailable, co
 
 Run the consented task if a participant is available. Preserve the first design, repair one observed issue and explain the remaining uncertainty.
 
-**Where to work:** Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
+**Where to practise:** Draw the before and after versions of the screen you repair on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Optional Figma Starter route below.
 
 - Starting material: Bring Lesson 4’s prototype, scenario and note template, plus your consent plan.
 - Create HaruCourse/Practice/week2-day5-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
 
+</details>
+
+#### 1. Prepare
+
+- Check the prototype, task and note template.
+- Confirm voluntary consent before involving a participant.
+- Remove personal data.
+
+**You should end up with:** An honest session type, and the consent words if someone is taking part.
+
+Worksheet fields for this step:
+
+- What is actually happening (A consenting adult is taking part / Self-pilot only: nobody was available) — Choose honestly. A self-pilot is a complete answer to this lesson.
+- If someone is taking part, what you said before starting — Voluntary, can stop, what the notes are for, no recording without asking.
+
 <details>
-<summary>Copyable starter template</summary>
+<summary>Help with this step</summary>
 
-```text
-# Observe, revise, and report honestly
+- **Consent:** Agreement given before you start, which they can withdraw at any moment without explaining.
+- **Self-pilot:** You attempting your own task. It checks the materials and cannot produce a finding about other people.
 
-Source labels: real observation / hypothesis / simulation / self-pilot
+Stuck starting? If nobody is available, choose self-pilot now and keep going. The lesson works either way.
 
-Session / source | Task | Observed action | Interpretation | Severity reason | Revision reference | Recheck / limitation
---- | --- | --- | --- | --- | --- | ---
-[anonymous ID or SELF-PILOT] | [task] | [actual action] | [possible reason] | [consequence] | [before and after] | [next test]
-
-## Output checklist
-- [ ] Consented session notes or labelled self-pilot notes
-- [ ] Two observations with possible explanations
-- [ ] One before/after revision
-- [ ] Evidence–decision–revision report and next check
-
-## Decision and revision
-My decision:
-Evidence reference:
-Alternative rejected and why:
-Before / after files:
-What remains untested:
-AI suggestion accepted or rejected and why (if used):
-Next action when I return:
-
-```
+Is it enough? The status matches what is really happening today.
 
 </details>
+
+#### 2. Observe or pilot
+
+**See it first.** Made-up example. Two lines from a session, written first the way that hides what happened.
+
+- **What I wrote at the time:** “She was confused by the materials section and struggled with the booking.” Two conclusions and no events.
+- **What I could actually see:** She read the materials line, asked whether “materials supplied” included a sketchbook, and went back to the class list twice.
+- **The help I nearly did not record:** After two minutes I said “the details are on the class page”. She found it immediately afterwards.
+- **Why that matters:** Without that line the notes say she completed the task. With it, they say she completed it after being told where to look, which is a different result entirely.
+- **Where the reason went:** “The summary may be ambiguous” moved to interpretations, where someone can disagree with me without disagreeing about what happened.
+
+**The wrong turn:** The wrong turn is writing “confused”. It feels like an observation because you were there, and it cannot be checked by anyone who was not.
+
+**What it costs:** Behavioural notes are longer and duller to write in the moment. They are the only kind that still means something a week later.
+
+**Still unknown:** Still unknown: whether the sketchbook question is common or particular to her. One session cannot say.
+
+- Run a short consented session or a labelled self-pilot if nobody is available.
+- Record help, dead ends and the task outcome.
+- Leave participant findings unconfirmed after a self-pilot.
+
+**You should end up with:** Two observations, any help you gave, and how the attempt ended.
+
+Worksheet fields for this step:
+
+- Observation 1 · what they did or said
+- Observation 2 · what they did or said
+- Any help you gave, and when — Record it. Help changes what the outcome can mean.
+- How the attempt ended (Finished without help / Finished after help from me / Did not finish / Self-pilot: not applicable)
+
+<details>
+<summary>Help with this step</summary>
+
+- **Assisted completion:** Finishing after you intervened. It is not the same result as finishing alone, and the notes must show which happened.
+
+Stuck starting? Let them work. Wait longer than feels comfortable before saying anything, and write down whatever you say.
+
+Is it enough? Nothing in the observation boxes is a word like confused, frustrated or careless.
+
+</details>
+
+#### 3. Interpret
+
+- Write two observations and possible explanations separately.
+- Retain contrary evidence and limitations.
+
+**You should end up with:** A possible reason for each observation, anything arguing against it, and which one matters more.
+
+**Try it with help.** A supplied line from someone else’s session: “The participant clicked Reserve twice, then said ‘I don’t know if that worked’. The facilitator confirmed the booking had gone through.”
+
+How should this be recorded?
+
+- **Observed: two presses and that sentence. Assisted: the facilitator confirmed it. Interpretation: the button gave no visible feedback.** — All three parts are separated, so a reader can see what happened, what you did, and what you concluded. The missing feedback is a strong reading and it is still a reading.
+- Observed: the participant was unsure whether the booking worked. — Unsure is your interpretation of the sentence and the second press. Close to certain, and still not what you saw.
+- Finding: the confirmation is broken and needs a loading state. — That is a recommendation built on one moment, and it skips both the observation and the fact that you intervened.
+- Observed: the participant double-clicked, which is normal behaviour for older users. — It adds a claim about a whole group from one person, and it explains away the very thing you should be curious about.
+
+**Then:** Split your own two observations the same way, and make sure any help you gave is recorded beside the outcome rather than inside it.
+
+Worksheet fields for this step:
+
+- A possible reason for observation 1
+- A possible reason for observation 2
+- Anything that argues against your reading
+- Which of the two matters more for finishing the task, and why
+
+<details>
+<summary>Help with this step</summary>
+
+- **Severity:** How much an issue affects finishing the task. Not how annoying it looked, and not how often it happened in one session.
+
+Stuck starting? For each observation write “this might be because…” and stop before proposing a fix.
+
+Is it enough? The severity reason names the consequence for the person, not your preference.
+
+</details>
+
+#### 4. Repair
+
+- Keep the original and make one bounded repair.
+- Explain the expected change and what remains untested.
+
+**You should end up with:** The original kept, one bounded change, and what you expect versus what stays untested.
+
+Worksheet fields for this step:
+
+- Where the untouched original is
+- The one thing you changed — One. Everything else stays as it was so the comparison means something.
+- What you expect to be different, and what stays untested
+
+<details>
+<summary>Help with this step</summary>
+
+- **Bounded repair:** One change addressing one issue, so the before and after can be compared.
+
+Stuck starting? Copy or photograph the original first, then change exactly one thing.
+
+Is it enough? A reader could name the single difference between the two versions.
+
+</details>
+
+#### 5. Report and submit
+
+- Write short bullets under Evidence, Decision, Revision and Next check.
+- Add both artifact references and request creator review.
+- Save any unfinished next action.
+
+**You should end up with:** Four short sections, where the versions live, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Evidence — What you saw, with the session type beside it.
+- Decision
+- Revision
+- Next check — Who would you watch, doing what, to find out whether the repair helped?
+- Where the before and after versions live
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write Evidence first and put the session type in its first sentence.
+
+Is it enough? No sentence claims the repair worked, and the next check names who would do what.
+
+</details>
+
+**Save and continue.** Saved for you: Your notes, interpretations and report save as you type, on this device first and then online. Kept outside the app: Keep the before and after screens, and any consent record, in your own private folder. No participant name or contact detail belongs in this worksheet, and nothing is uploaded. What your creator sees: Your creator reads the report, the observations and the limits once you choose Ready for review. This is practice evidence for later reasoning, not a portfolio case study. Your next action: Open Your work and choose Ready for review. This closes Module 2; Module 3 returns to visual foundations with the evidence you have gathered.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 <details>
 <summary>Optional Figma Starter route (workflow not authenticated)</summary>
@@ -1078,6 +1906,39 @@ A complete small practice loop, not a validated business-impact case study.
 </details>
 
 ### Check
+
+**The participant finished the task after you told her where the details were. How should the outcome read?**
+
+- **Finished after help, with the help itself recorded and quoted.** — The same words that helped her would not be there in real use. Recording them is what stops a rescued attempt being counted as a success.
+- Finished, since she completed it and the help was minor. — Minor help still supplied the missing piece. Reported as a completion, it makes the design look like it worked when you made it work.
+- Did not finish, because she needed help. — Too severe and it loses information. She did finish; the honest record says what it took.
+
+Improve your work: Check the help and outcome boxes in step 2. If you helped and the outcome says finished without help, correct it and record the change in step 5.
+
+At recheck: The outcome names whether help was given, and the help is written down where it happened.
+
+**After the repair you write: “This fixes the problem.” What is the honest version?**
+
+- **That you changed the design in response to evidence, and it needs another check before anyone can say it helped.** — A repair is a response, not a result. The next check is the sentence that keeps it that way and tells you what to do next.
+- It is fine: the change directly addresses what you observed. — Addressing an observation is the reason to try it. Whether it works for the next person is unknown until someone else meets it.
+- It is fine if the participant agreed the new version was better. — Shown two versions by the person who made them, agreement is close to guaranteed and tells you very little.
+
+Improve your work: Reread your Revision and Next check sections in step 5. Rewrite any claim of a fix as an expectation with the observation that would test it, then note the change.
+
+At recheck: The report separates what changed from what remains untested, and the next check names a person and a task.
+
+**Nobody was available, so you ran the task yourself. What can the report say?**
+
+- **That it was a self-pilot, what it found about the materials, and that no participant evidence exists yet.** — A self-pilot finds broken paths, missing cards and unclear wording, which is real and worth reporting. It cannot tell you what a first-time visitor would do.
+- That the flow works, since you completed it without difficulty. — You designed it, so you know where everything is. Your fluency is the least informative result available.
+- The findings you would expect a participant to have produced. — That is an invented participant. Once written it gets quoted, and everything else you report becomes suspect.
+- Nothing, since the lesson needs a participant. — The lesson is complete with a self-pilot honestly reported. A dated recruitment gap is a result, not a failure.
+
+Improve your work: Check the session type in step 1 and the Evidence section in step 5. Make sure the session type appears in the first sentence of the report, then record the change.
+
+At recheck: A reader learns in the first line whether a participant took part, and no conclusion outruns that.
+
+Answer each question in the app before its explanation appears. Answers are not saved or scored.
 
 <details>
 <summary>Does a revision prove the issue is fixed?</summary>

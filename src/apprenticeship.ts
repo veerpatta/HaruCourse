@@ -865,6 +865,667 @@ const decisionNote: Guided = {
   ],
 };
 
+
+// ---------------------------------------------------------------------------
+// Module 2, refined 7 September 2026 against docs/BEGINNER-LESSON-AUDIT.md.
+// These five lessons had no guided practice at all: they sent the learner to a
+// text file with a seven-column table. Each now has a route, a worksheet sized
+// to the evidence, one demonstration, one supplied case and answer-first
+// checks. Participant access is the running theme, so every lesson makes the
+// no-participant route an honest recorded outcome rather than a failure.
+// ---------------------------------------------------------------------------
+
+const studyPlan: Guided = {
+  route: textRoute,
+  worksheet: [
+    { id: 'reconnect', title: 'The decision you cannot yet justify', intro: 'From your Module 1 flow and screens.', fields: [
+      { id: 'decision', label: 'The decision', kind: 'short', example: 'Example (made up): whether what to bring belongs on the details screen or in a message after booking.' },
+      { id: 'decision-stake', label: 'What happens if you get it wrong', kind: 'short', hint: 'For the person, not for you.' },
+    ] },
+    { id: 'plan', title: 'The study, in one page', fields: [
+      { id: 'question', label: 'The research question', kind: 'short', hint: 'What you do not know, written so an answer would change the decision above.', example: 'Example (made up): when do people decide what to take to a class, and where do they look?' },
+      { id: 'method', label: 'Interview about the past, or watch someone do a task?', kind: 'choice', options: ['Interview about a recent experience', 'Watch someone attempt a task', 'Both, in one short session'] },
+      { id: 'method-why', label: 'Why that method answers this question', kind: 'long', hint: 'An interview reaches what happened before and around; watching reaches what the screen does to someone now.' },
+      { id: 'criteria', label: 'Who would count as a relevant person', kind: 'short', hint: 'Describe the experience they need, not a name.', example: 'Example (made up): anyone who has booked a class, course or workshop in the last few months.' },
+      { id: 'useful-evidence', label: 'What you would need to hear or see to be satisfied', kind: 'long' },
+    ] },
+    { id: 'materials', title: 'What you will say and how you will take notes', fields: [
+      { id: 'consent-intro', label: 'Your consent introduction, word for word', kind: 'long', hint: 'Who you are, what the notes are for, that they can skip or stop, and whether anything is recorded.' },
+      { id: 'task-or-questions', label: 'The task or the opening questions', kind: 'long', hint: 'A task states a goal without naming buttons. Questions ask about a real recent occasion.' },
+      { id: 'note-columns', label: 'The headings you will use while taking notes', kind: 'short', example: 'Example (made up): what they did · their words · what I think it means · what I still need to ask.' },
+    ] },
+    { id: 'access', title: 'Who you can actually reach', fields: [
+      { id: 'access-status', label: 'Where recruitment stands today', kind: 'choice', options: ['Someone has agreed', 'Asked, waiting for a reply', 'Nobody available: rehearsal only'], hint: 'Choose honestly. Rehearsal only is a real, recordable outcome.' },
+      { id: 'access-gap', label: 'If nobody is available, who would you need and how might you reach them?', kind: 'long', hint: 'Dating the gap is the finding. Leave it if someone has agreed.' },
+      { id: 'rehearsal-notes', label: 'What reading it aloud taught you', kind: 'long', hint: 'Which sentence was awkward, which question you wanted to answer for them.' },
+    ] },
+    { id: 'review', title: 'One way this could mislead you', fields: [
+      { id: 'bias', label: 'One way your plan could push the answer', kind: 'long', example: 'Example (made up): I would be showing my own screen and asking if it is clear, so agreeing is the polite answer.' },
+      { id: 'bias-fix', label: 'What you changed because of it', kind: 'short' },
+      { id: 'limitation', label: 'What this study cannot tell you, however it goes', kind: 'short' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long', hint: 'Name which answer you changed and why.' },
+    ] },
+  ],
+  guide: [
+    { expect: 'One decision from Module 1 that you cannot yet defend, and what it costs the person if you choose wrongly.',
+      fields: ['decision', 'decision-stake'],
+      demo: {
+        scenario: 'Made-up example. Choosing what to study after Module 1, starting from the wrong end.',
+        beats: [
+          { label: 'Where I started', text: 'I wrote “I want to interview people about the booking screen.” A method, a subject, and no reason.' },
+          { label: 'The question that stopped me', text: 'If someone answered, what would I do differently? I had no answer, which meant any result would be interesting and useless.' },
+          { label: 'The decision underneath', text: 'I had put what to bring on the details screen instead of in a message after booking. I chose that in ten seconds and cannot defend it.' },
+          { label: 'What that makes the question', text: 'When do people decide what to take, and where do they look? If it is on the morning of the class, the details screen is the wrong place entirely.' },
+          { label: 'What it rules out', text: 'Asking “is this screen clear?”. It cannot change where the information belongs, and people say yes to be kind.' },
+        ],
+        wrongTurn: 'The wrong turn is starting with the method. Interviews sound like research, so it is easy to arrange one and only afterwards notice that no answer would change anything.',
+        tradeoff: 'Naming the decision first makes the study smaller and less impressive. It also makes it worth running.',
+        uncertainty: 'Still unknown: whether anyone reads a message after booking at all. That is a second question, not this one.',
+      },
+      terms: [
+        { term: 'Decision', meaning: 'A choice you have already made or are about to make, where you could reasonably have done something else.' },
+        { term: 'Uncertainty', meaning: 'The thing you do not know that makes the decision a gamble.' },
+      ],
+      start: 'Open your Module 1 screens and find something you placed without being able to say why.',
+      enough: 'You can say what you would do differently depending on the answer.' },
+    { expect: 'A research question, a method with a reason, who would count as relevant, and what evidence would satisfy you.',
+      fields: ['question', 'method', 'method-why', 'criteria', 'useful-evidence'],
+      supported: {
+        material: 'A supplied pair from the same made-up project. Question A: “Where do people look for what to bring, and when?” Question B: “Can a first-time visitor tell, from this screen, what the class costs in total?”',
+        question: 'Which method fits which question?',
+        options: [
+          { label: 'A needs an interview about a recent booking; B needs watching someone attempt the task on the screen.', correct: true, feedback: 'A is about what happened around the booking, over days, in places your screen cannot see. B is about what this screen does to someone in the next two minutes, which you can watch.' },
+          { label: 'Both need interviews, because you want to understand people’s thinking.', feedback: 'For B an interview gets you a recollection or a guess. Watching someone hunt for the total is far more reliable than asking whether they could find it.' },
+          { label: 'Both need a task, because watching behaviour always beats asking.', feedback: 'Watching cannot reach last Tuesday evening. A is about a sequence that already happened elsewhere, and only an account of it can reach that.' },
+          { label: 'A survey would answer both more cheaply.', feedback: 'A survey collects what people say they usually do, which is the least reliable version of A, and it cannot observe anyone failing to find a total.' },
+        ],
+        then: 'Apply the same test to your own question: does it ask about something that already happened elsewhere, or about what this screen does to someone now?',
+      },
+      terms: [
+        { term: 'Method', meaning: 'How you get evidence: asking about the past, or watching someone do something now.' },
+        { term: 'Recruitment criteria', meaning: 'The experience a person needs for their answers to be relevant. Not their name, age or job.' },
+      ],
+      start: 'Write the question as “I do not know…” and finish it, then choose the method that could actually reach it.',
+      enough: 'The reason names what the method reaches that the other one cannot.' },
+    { expect: 'Consent wording you would actually say, the task or questions, and the headings for your notes.',
+      fields: ['consent-intro', 'task-or-questions', 'note-columns'],
+      terms: [
+        { term: 'Consent', meaning: 'They know what you are doing with their words and agree before you start, and can stop at any time.' },
+        { term: 'Neutral task', meaning: 'A goal with no route in it. “Find a class you could attend on Saturday and see what it would cost you” names no button.' },
+      ],
+      start: 'Write the consent sentences first; they are the part you will be most nervous about saying.',
+      enough: 'Nothing in the task tells the person where to click, and the consent wording says they can stop.' },
+    { expect: 'An honest recruitment status, and either a dated gap or what rehearsing aloud taught you.',
+      fields: ['access-status', 'access-gap', 'rehearsal-notes'],
+      terms: [
+        { term: 'Recruitment gap', meaning: 'A dated record that nobody was available. It is a real result of the work, not a failure to report.' },
+        { term: 'Self-pilot', meaning: 'Running your own materials past yourself. It checks the materials; it tells you nothing about other people.' },
+      ],
+      start: 'If you are unsure whether to ask someone, write the message you would send. Deciding is easier once it exists.',
+      enough: 'The status matches reality, and if nobody is available the plan is still finished and ready.' },
+    { expect: 'One way the plan could push the answer, what you changed, the limitation you accept, and the repair the Check questions asked for.',
+      fields: ['bias', 'bias-fix', 'limitation', 'improvement-made'],
+      start: 'Ask what answer you are hoping for; the bias is usually whatever makes that answer easy to give.',
+      enough: 'The limitation names something the study cannot establish even if it goes perfectly.' },
+  ],
+  checks: [
+    {
+      question: 'You have a willing participant on Saturday and no study plan yet. What do you decide first?',
+      options: [
+        { label: 'The decision the evidence could change, then the question, then the method.', correct: true, feedback: 'The order matters because it is what stops you collecting interesting material that changes nothing. A session without a decision behind it is a pleasant conversation.' },
+        { label: 'The method, since you only have one session and interviews fit most things.', feedback: 'Choosing the method first quietly decides what you can learn. Some questions cannot be reached by asking at all.' },
+        { label: 'The questions, so you are ready when they arrive.', feedback: 'Questions written before you know the decision tend to be about your screen. They produce agreement rather than evidence.' },
+      ],
+      repair: 'Reread your question in step 2. If it could be answered without changing your decision in step 1, rewrite it so an answer would move you, then record the change in step 5.',
+      recheck: 'The question names something you do not know, and each possible answer leads somewhere different.',
+    },
+    {
+      question: 'One person tells you they never open confirmation emails. What have you established?',
+      options: [
+        { label: 'That at least one person with relevant experience does not, which is enough to make you stop assuming everyone does.', correct: true, feedback: 'One account cannot say how common it is, and it is real evidence that the behaviour exists. That is usually enough to change a design you were about to build on the opposite assumption.' },
+        { label: 'That most people do not read confirmation emails.', feedback: 'One person cannot support “most”. Written that way it will be repeated later without the caveat, and it will be treated as a number.' },
+        { label: 'Nothing: a single participant is not a sample.', feedback: 'Too dismissive. One clear account of a behaviour is a fact about the world; what it cannot give you is prevalence.' },
+        { label: 'That your email design needs work.', feedback: 'That jumps to a repair. If nobody opens it, better wording is not the answer, and you would have skipped past the finding.' },
+      ],
+      repair: 'Check the limitation box in step 5. If it does not say that this study cannot establish how common anything is, add that sentence and note it in step 5.',
+      recheck: 'The limitation distinguishes what one or two accounts can show from what they cannot.',
+    },
+    {
+      question: 'The easiest people to recruit are two designers you know. Why is that a problem worth writing down?',
+      options: [
+        { label: 'They read screens professionally, so their fluency is not typical, and the plan should record that limit.', correct: true, feedback: 'Convenience is not disqualifying, and it does shape what you can conclude. Recording who you actually reached is what keeps the finding honest later.' },
+        { label: 'It is not a problem, since anyone can attempt a booking task.', feedback: 'Anyone can attempt it, and a designer will notice conventions a first-time visitor never sees, which is exactly what you were trying to observe.' },
+        { label: 'You should cancel and wait for perfect participants.', feedback: 'Waiting for the ideal participant usually means no evidence at all. Run it and record who they were.' },
+      ],
+      repair: 'Reread your criteria in step 2. If they describe who is easy to reach rather than the experience needed, rewrite them, and note in step 5 what you would record about whoever you actually get.',
+      recheck: 'The criteria name the experience that makes an answer relevant, and the limitation says who you actually reached.',
+    },
+  ],
+  saveRoute: {
+    auto: 'The plan, consent wording, questions and access status save as you type, on this device first and then online.',
+    external: 'No participant’s name, contact details or recording belongs here. Keep any consent record in your own private folder and refer to it only by a file name.',
+    creator: 'Your creator can read the plan and the recruitment status once you choose Ready for review. A plan with nobody available is a complete answer to this lesson.',
+    next: 'Open Your work and choose Ready for review. Lesson 2 turns notes into findings, and it supplies practice notes if your session has not happened yet.',
+  },
+};
+
+const synthesis: Guided = {
+  route: textRoute,
+  worksheet: [
+    { id: 'define', title: 'Three words in your own sentences', fields: [
+      { id: 'define-observation', label: 'An observation is…', kind: 'short', hint: 'Something that happened, that another person could have seen too.' },
+      { id: 'define-interpretation', label: 'An interpretation is…', kind: 'short' },
+      { id: 'define-recommendation', label: 'A recommendation is…', kind: 'short' },
+    ] },
+    { id: 'source', title: 'Where your notes come from', fields: [
+      { id: 'source-type', label: 'Which notes are you working from?', kind: 'choice', options: ['My own consented session notes', 'The supplied practice notes (simulated training data)', 'Both, kept separate'], hint: 'This label travels with every finding you write below.' },
+    ] },
+    { id: 'extract', title: 'One observation per line', intro: 'Give each a number so a finding can point back to it. Six is plenty.', fields: [
+      ...[1, 2, 3, 4, 5, 6].flatMap((n) => [
+        { id: `note-${n}`, label: `N0${n} · what happened`, kind: 'long' as const,
+          ...(n === 1 ? { hint: 'One thing only. If a line contains “because” or “so”, the second half is probably an interpretation.', example: 'Example (made up, from the supplied notes): S1 looked for the materials list the evening before the class.' } : {}) },
+        { id: `note-${n}-source`, label: `N0${n} · source`, kind: 'short' as const,
+          ...(n === 1 ? { hint: 'The session or supplied note it came from: S1, S2, or your own anonymous ID.' } : {}) },
+      ]),
+    ] },
+    { id: 'group', title: 'Two possible patterns', fields: [
+      { id: 'group-1', label: 'Group 1 · a name for the pattern', kind: 'short', hint: 'A guess about what these notes have in common. It can be wrong.' },
+      { id: 'group-1-notes', label: 'Group 1 · the note numbers in it', kind: 'short' },
+      { id: 'group-2', label: 'Group 2 · a name for the pattern', kind: 'short' },
+      { id: 'group-2-notes', label: 'Group 2 · the note numbers in it', kind: 'short' },
+      { id: 'contradiction', label: 'The note that does not fit either group', kind: 'long', hint: 'Keep it. The exception is usually where the real finding is.', example: 'Example (made up): S4 noticed the list before booking and borrowed an item, which contradicts “nobody reads instructions”.' },
+    ] },
+    { id: 'findings', title: 'Two findings you could defend', fields: [
+      { id: 'finding-1', label: 'Finding 1', kind: 'long' },
+      { id: 'finding-1-support', label: 'Finding 1 · note numbers that support it', kind: 'short' },
+      { id: 'finding-1-against', label: 'Finding 1 · what argues against it', kind: 'short', hint: 'If nothing does, look again; you may have written a summary rather than a finding.' },
+      { id: 'finding-1-confidence', label: 'Finding 1 · how sure are you?', kind: 'choice', options: ['One account only', 'Two or more accounts agree', 'Accounts disagree'] },
+      { id: 'finding-2', label: 'Finding 2', kind: 'long' },
+      { id: 'finding-2-support', label: 'Finding 2 · note numbers that support it', kind: 'short' },
+      { id: 'finding-2-against', label: 'Finding 2 · what argues against it', kind: 'short' },
+      { id: 'finding-2-confidence', label: 'Finding 2 · how sure are you?', kind: 'choice', options: ['One account only', 'Two or more accounts agree', 'Accounts disagree'] },
+      { id: 'unanswered', label: 'The question these notes cannot answer', kind: 'short' },
+    ] },
+    { id: 'implication', title: 'One thing this might mean for the design', fields: [
+      { id: 'implication', label: 'A possible design implication', kind: 'long', hint: 'Possible. It follows from a finding; it is not proven by it.' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
+    ] },
+  ],
+  guide: [
+    { expect: 'Your own sentences for observation, interpretation and recommendation.',
+      fields: ['define-observation', 'define-interpretation', 'define-recommendation'],
+      terms: [
+        { term: 'Observation', meaning: 'What happened. Another person in the room would have seen the same thing.' },
+        { term: 'Interpretation', meaning: 'What you think it meant. Reasonable, and still yours rather than theirs.' },
+        { term: 'Recommendation', meaning: 'What to change. It should arrive last, attached to a finding.' },
+      ],
+      start: 'Write each as “… is when …”. Plain is better than clever here.',
+      enough: 'Your observation sentence contains no word like because, confused or wanted.' },
+    { expect: 'Six numbered observations, each with the note or session it came from, labelled real or supplied.',
+      fields: ['source-type', 'note-1', 'note-1-source', 'note-2', 'note-2-source', 'note-3', 'note-3-source', 'note-4', 'note-4-source', 'note-5', 'note-5-source', 'note-6', 'note-6-source'],
+      reveal: { first: 3, group: 2, count: 13, addLabel: 'Add another observation', note: 'One at a time. Six is plenty; four is enough to find a pattern and a contradiction.' },
+      demo: {
+        scenario: 'Made-up example. One line of raw notes being turned into an entry, using the supplied practice notes.',
+        beats: [
+          { label: 'The raw line', text: '“S2 was searching her email on the bus because she had not bothered to check before leaving.”' },
+          { label: 'What I can actually point to', text: 'She searched her confirmation email during the journey. That is the part another person in the room would have seen.' },
+          { label: 'What I nearly kept', text: '“Because she had not bothered.” That is a judgement about her character, and it was mine, not hers.' },
+          { label: 'The entry I wrote', text: 'N02 · S2 searched the confirmation email during the journey to the class. Source: S2, supplied practice note.' },
+          { label: 'Where the rest went', text: '“Maybe preparation happens on the way” became an interpretation attached to a finding, where someone can disagree with it.' },
+        ],
+        wrongTurn: 'The wrong turn is keeping the explanation inside the observation. It reads as one solid fact, and later nobody can tell which half was seen and which half was guessed.',
+        tradeoff: 'Splitting produces more lines and duller reading. It is what lets a reader trace a finding back and challenge exactly one link.',
+        uncertainty: 'Still unknown: whether she usually prepares later, or whether that day was unusual. One note cannot say.',
+      },
+      terms: [
+        { term: 'Simulated training data', meaning: 'Practice notes supplied by this course. Useful for learning the method; never presentable as research you did.' },
+        { term: 'Note ID', meaning: 'A number so a finding can point at its source. Without it, findings float free.' },
+      ],
+      start: 'If you have no session of your own, choose the supplied notes and expand the four S1 to S4 lines into separate entries.',
+      enough: 'Every entry could be checked against a source, and none contains the word because.' },
+    { expect: 'Two named groups with their note numbers, and the note that refuses to fit.',
+      fields: ['group-1', 'group-1-notes', 'group-2', 'group-2-notes', 'contradiction'],
+      terms: [{ term: 'Contradiction', meaning: 'A note that argues against the pattern you are forming. It stays visible; it is not a mistake in the data.' }],
+      start: 'Read your entries and put two of them together that feel related; the reason you put them together is the group name.',
+      enough: 'At least one note sits outside both groups and is still written down.' },
+    { expect: 'Two findings, each with supporting numbers, counter-evidence, a confidence level, and the question none of it answers.',
+      fields: ['finding-1', 'finding-1-support', 'finding-1-against', 'finding-1-confidence', 'finding-2', 'finding-2-support', 'finding-2-against', 'finding-2-confidence', 'unanswered'],
+      supported: {
+        material: 'Supplied practice notes. S1 looked for the materials list the evening before. S2 searched the confirmation email on the journey. S3 brought supplies from a previous class without checking. S4 noticed the list before booking and borrowed an item.',
+        question: 'Which finding do these four notes actually support?',
+        options: [
+          { label: 'People prepare at different moments, from before booking to the journey itself, so no single moment can be assumed.', correct: true, feedback: 'It holds all four accounts, including S3 who did not check at all, and it says something a design has to answer: the information cannot live at one moment only.' },
+          { label: 'Nobody reads the instructions before a class.', feedback: 'S4 read them before booking. One counter-example is enough to sink a claim written as “nobody”, and it was in front of you.' },
+          { label: 'People want a reminder the day before the class.', feedback: 'Nobody said this. It is a recommendation dressed as a finding, and it fits only two of the four accounts.' },
+          { label: 'Most people prepare at the last minute.', feedback: 'Two of four is not “most”, and four accounts cannot establish proportions at all. The word most is doing work the evidence cannot support.' },
+        ],
+        then: 'Write your own two findings the same way: they must survive every note you have, including the one that did not fit.',
+      },
+      terms: [{ term: 'Counter-evidence', meaning: 'What argues against your finding. A finding with none is usually a summary of the notes you liked.' }],
+      start: 'Take a group name and ask what it would mean if it were true of everyone in that group.',
+      enough: 'Each finding names its supporting numbers, and neither uses most, all or nobody.' },
+    { expect: 'One possible implication written as possible, and the repair the Check questions asked for.',
+      fields: ['implication', 'improvement-made'],
+      start: 'Finish the sentence “If that is right, then the design would have to…”.',
+      enough: 'The implication is a consequence of a finding, not a feature you already wanted to build.' },
+  ],
+  checks: [
+    {
+      question: 'Which of these belongs in the observation column?',
+      options: [
+        { label: 'S2 searched the confirmation email during the journey.', correct: true, feedback: 'It says what happened and nothing about why. Anyone reading it can check it against the source note.' },
+        { label: 'S2 was disorganised about preparing for the class.', feedback: 'That is a judgement about a person. It cannot be checked, and it will quietly become the reason for a design decision later.' },
+        { label: 'Add a reminder the day before.', feedback: 'A recommendation, and the furthest thing from an observation. It belongs at the end, attached to a finding with sources.' },
+        { label: 'People prepare at the last minute.', feedback: 'A finding, and a shaky one. It generalises several notes into a claim about people, which is a later step and needs its counter-evidence.' },
+      ],
+      repair: 'Reread your six entries in step 2. Move anything containing because, wanted, or a judgement about the person into an interpretation or a finding, then record the change in step 5.',
+      recheck: 'Every entry describes what happened and could be traced to its source.',
+    },
+    {
+      question: 'Five notes support your finding and one contradicts it. What do you do with the sixth?',
+      options: [
+        { label: 'Keep it visible beside the finding and say what it means for your confidence.', correct: true, feedback: 'The exception is where you learn something. Hiding it makes the finding look stronger and makes you worse at predicting what happens next.' },
+        { label: 'Leave it out: five against one is a clear pattern.', feedback: 'Counting notes is not measuring. With six accounts, one clear counter-example matters more than the tally.' },
+        { label: 'Change the finding until everything agrees.', feedback: 'That usually produces something so vague it cannot be wrong. Better to keep a sharp finding and state where it fails.' },
+        { label: 'Start again with different groups.', feedback: 'Regrouping to escape a contradiction is how you end up with tidy findings nobody can use.' },
+      ],
+      repair: 'Check the counter-evidence boxes in step 4. If either says none, look again for the note that does not fit and write it in, then say what changed in step 5.',
+      recheck: 'Each finding names what argues against it, and its confidence reflects that.',
+    },
+    {
+      question: 'You used the supplied practice notes. How may this work appear later in a portfolio?',
+      options: [
+        { label: 'Clearly labelled as a training exercise with supplied notes, never as interviews you conducted.', correct: true, feedback: 'The method is genuinely yours to show. The participants are not, and a reader who discovers that later will doubt everything else you wrote.' },
+        { label: 'As research findings, since the analysis work was real.', feedback: 'The analysis was real and the sources were invented. Presented as findings, the claim about people is false regardless of how careful the method was.' },
+        { label: 'It should not appear at all.', feedback: 'It can appear, labelled. A worked synthesis with supplied notes shows exactly the skill a reviewer wants to see.' },
+      ],
+      repair: 'Check the source label in step 2 and the wording of your findings. If a finding reads as though real people said it, add the supplied-notes label to the finding itself, then record the change in step 5.',
+      recheck: 'The source type is set, and any finding drawn from supplied notes says so where it is written.',
+    },
+  ],
+  saveRoute: {
+    auto: 'Your entries, groups and findings save as you type, on this device first and then online.',
+    external: 'Keep any raw session notes in your own private folder. Nothing here should carry a participant’s name, and nothing is uploaded.',
+    creator: 'Your creator can read the entries, findings and their counter-evidence once you choose Ready for review. The source label travels with them.',
+    next: 'Open Your work and choose Ready for review. Lesson 3 turns one of these findings into a small change worth testing.',
+  },
+};
+
+const opportunity: Guided = {
+  route: textRoute,
+  worksheet: [
+    { id: 'evidence', title: 'The finding you are working from', fields: [
+      { id: 'finding', label: 'The finding', kind: 'long', hint: 'Copy it from Lesson 2, with its source label.' },
+      { id: 'finding-limits', label: 'What it cannot tell you', kind: 'short' },
+    ] },
+    { id: 'options', title: 'Three genuinely different responses', intro: 'One at a time. They must differ in kind, not in wording.', fields: [1, 2, 3].flatMap((n) => [
+      { id: `option-${n}`, label: `Option ${n} · the change`, kind: 'short' as const,
+        ...(n === 1 ? { hint: 'Describe the outcome for the person, not the component you would build.', example: 'Example (made up): the total cost, including materials, is visible before the booking form.' } : {}) },
+      { id: `option-${n}-impact`, label: `Option ${n} · what it would do for the person, and why you think so`, kind: 'long' as const },
+      { id: `option-${n}-effort`, label: `Option ${n} · effort and risk, with your reason`, kind: 'short' as const,
+        ...(n === 1 ? { hint: 'An estimate. Say what it rests on, so a reader knows it is not a measurement.' } : {}) },
+    ]) },
+    { id: 'select', title: 'The one you will test', fields: [
+      { id: 'choice', label: 'Your choice', kind: 'short' },
+      { id: 'tradeoff', label: 'What it costs, or what it gives up', kind: 'long' },
+      { id: 'out-of-scope', label: 'What you are deliberately leaving out of this test', kind: 'long', hint: 'Everything unrelated to the one thing you want to learn.' },
+    ] },
+    { id: 'hypothesis', title: 'What you expect, and what would change your mind', fields: [
+      { id: 'hypothesis', label: 'If [change], then [who] can [something you could watch]', kind: 'long', example: 'Example (made up): if the total cost appears before the form, a first-time visitor can say what the evening will cost without scrolling back.' },
+      { id: 'signal', label: 'What you would see if it worked', kind: 'short' },
+      { id: 'counter-signal', label: 'What you would see if it did not', kind: 'short', hint: 'Write this now, before testing. Afterwards it is much harder to be honest about it.' },
+      { id: 'task', label: 'The task you will give someone, with no route in it', kind: 'long', hint: 'A goal, not instructions. No button names.' },
+    ] },
+    { id: 'record', title: 'What the prototype must do', fields: [
+      { id: 'prototype-needs', label: 'The behaviour the prototype needs for this test', kind: 'long', hint: 'The smallest set of screens and states that lets someone attempt the task.' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
+    ] },
+  ],
+  guide: [
+    { expect: 'One finding from Lesson 2 with its limits still attached.', fields: ['finding', 'finding-limits'],
+      terms: [{ term: 'Opportunity', meaning: 'A better outcome for the person, stated without naming what you would build.' }],
+      start: 'Choose the finding that would most change your Module 1 screens if it were true.',
+      enough: 'The limits line survives the copy: you have not quietly upgraded a one-account finding.' },
+    { expect: 'Three responses that differ in kind, each with an expected effect and an effort estimate you can justify.',
+      fields: ['option-1', 'option-1-impact', 'option-1-effort', 'option-2', 'option-2-impact', 'option-2-effort', 'option-3', 'option-3-impact', 'option-3-effort'],
+      reveal: { first: 3, group: 3, count: 9, addLabel: 'Add another option', note: 'One option at a time. Three is the target, and they should not be variations of each other.' },
+      demo: {
+        scenario: 'Made-up example. Turning the finding “people prepare at different moments” into options, badly and then better.',
+        beats: [
+          { label: 'My first three', text: 'A materials list on the details page, a materials list in the confirmation email, and a materials list in a reminder. Three places for one thing.' },
+          { label: 'Why that is one option', text: 'Every version assumes the answer is to send a list, and only argues about where. If the assumption is wrong, all three fail together and I learn nothing.' },
+          { label: 'The finding again', text: 'People prepare at different moments, including not at all. S3 simply reused what she had from a previous class.' },
+          { label: 'Three that differ', text: 'Show total cost and materials before booking; let someone add the list to their calendar for the day they choose; have the studio keep spares so nothing is needed in advance.' },
+          { label: 'What that buys', text: 'The third one has no screen at all. If it works best, I have learned something no amount of interface polish would have found.' },
+        ],
+        wrongTurn: 'The wrong turn is three variations of one idea. It feels like a comparison and it has already decided the answer.',
+        tradeoff: 'Genuinely different options are harder to think of and one usually falls outside what you can build. Keeping it in the comparison is what stops the screen being assumed.',
+        uncertainty: 'Still unknown: whether the studio would agree to keep spares. That is a constraint to check, not a reason to drop the option.',
+      },
+      terms: [
+        { term: 'Effort estimate', meaning: 'Your guess at the work involved. It stays an estimate unless something measured it, so write the reason beside it.' },
+        { term: 'Task impact', meaning: 'What changes for the person trying to finish, not how much of the screen changes.' },
+      ],
+      start: 'Write one option with no screen in it. If you cannot, the finding may be about a screen you already decided on.',
+      enough: 'No two options would succeed or fail for the same reason.' },
+    { expect: 'One choice, what it costs, and what you are leaving out.', fields: ['choice', 'tradeoff', 'out-of-scope'],
+      terms: [{ term: 'Scope', meaning: 'What this test covers. Everything else is written down as excluded so the result stays interpretable.' }],
+      start: 'Choose the option whose result would change your next decision most, not the one you most want to build.',
+      enough: 'The excluded list contains something you would have enjoyed doing.' },
+    { expect: 'A hypothesis with something you could watch, a success signal, a disconfirming signal written in advance, and a neutral task.',
+      fields: ['hypothesis', 'signal', 'counter-signal', 'task'],
+      supported: {
+        material: 'Two supplied hypotheses for the same made-up change. A: “If the total cost appears before the form, first-time visitors will like the booking experience more.” B: “If the total cost appears before the form, a first-time visitor can say what the evening will cost, including materials, without scrolling back.”',
+        question: 'Which one can a short session actually test, and why?',
+        options: [
+          { label: 'B, because it names something you could watch someone do or fail to do.', correct: true, feedback: 'You can hand someone the task and see whether they can answer without going back. It can also come out badly, which is what makes it a test.' },
+          { label: 'A, because liking the experience is what ultimately matters.', feedback: 'Liking is real and you cannot observe it, and asked directly people are kind to the person who made the thing. Nothing in a session would settle it.' },
+          { label: 'Both, if you ask a satisfaction question at the end.', feedback: 'Adding a rating to B does not make A testable; it adds a number with no meaning to a session of one or two people.' },
+          { label: 'Neither: a prototype cannot test anything about cost.', feedback: 'It can test whether the information can be found and understood, which is precisely what B claims. What it cannot test is whether more people would book.' },
+        ],
+        then: 'Write yours in the same shape, then write the disconfirming signal before you test anything.',
+      },
+      terms: [{ term: 'Disconfirming signal', meaning: 'What you would see if the change did not help. Writing it first is what stops an inconvenient result being explained away.' }],
+      start: 'Fill in “If … then … can …” and make the last part something a person in the room could see.',
+      enough: 'Both signals name observable behaviour, and the task names no button.' },
+    { expect: 'What the prototype must be able to do, and the repair the Check questions asked for.',
+      fields: ['prototype-needs', 'improvement-made'],
+      start: 'Walk your task in your head and list every screen the person would have to reach.',
+      enough: 'The list is the smallest set that lets someone attempt the task, including one thing going wrong.' },
+  ],
+  checks: [
+    {
+      question: 'You score three options for effort out of five and pick the lowest. Is that measured evidence?',
+      options: [
+        { label: 'No. It is your estimate written as a number, and it should keep the reason beside it.', correct: true, feedback: 'Numbers look decided. Unless something measured the effort, the score is a judgement, and the reason is the part a reader can argue with.' },
+        { label: 'Yes, if you use the same scale for all three.', feedback: 'A consistent scale makes estimates comparable with each other. It does not turn any of them into a measurement.' },
+        { label: 'Yes, effort estimates are standard practice in product teams.', feedback: 'They are standard and they are still estimates. Teams that forget this build plans on numbers nobody checked.' },
+      ],
+      repair: 'Reread your effort lines in step 2. Add the reason behind each estimate, and record the change in step 5.',
+      recheck: 'Every effort estimate names what it rests on, and none is presented as a measurement.',
+    },
+    {
+      question: 'Your hypothesis says “users will find it easier”. What is missing?',
+      options: [
+        { label: 'Something you could watch: what a person would do or say that would show it, and what would show the opposite.', correct: true, feedback: 'Easier is a summary of an experience, not an event. Without an observable version, any session can be read as a success.' },
+        { label: 'A number, such as a percentage improvement.', feedback: 'A number you cannot collect is worse than a vague claim, because it looks rigorous. One or two people cannot produce a rate.' },
+        { label: 'Nothing, as long as you ask them afterwards whether it was easier.', feedback: 'Asked by the person who designed it, most people say yes. That answer cannot separate a good change from a polite participant.' },
+      ],
+      repair: 'Rewrite your hypothesis in step 4 so its last part is something you could see, then fill the disconfirming signal and note the change in step 5.',
+      recheck: 'The hypothesis ends in observable behaviour and has a signal that would show it failing.',
+    },
+    {
+      question: 'Your chosen change grew to include a new results page, a filter and a rewritten confirmation. Why does that hurt?',
+      options: [
+        { label: 'Whatever happens, you will not know which part caused it.', correct: true, feedback: 'One session with three changes gives you one impression and no way to attribute it. Cutting scope is what makes a small test worth running.' },
+        { label: 'It takes too long to build in paper.', feedback: 'Effort is a real cost and not the main one. Even if it were quick, the result would still be uninterpretable.' },
+        { label: 'It does not hurt: testing more of the design gives more feedback.', feedback: 'You get more reactions and less knowledge. More surface means more explanations for every observation.' },
+      ],
+      repair: 'Look at your scope in step 3. Move everything not needed to observe your signal into the excluded list, then record what you cut in step 5.',
+      recheck: 'The excluded list is longer than it was, and what remains is the smallest thing that could show the signal.',
+    },
+  ],
+  saveRoute: {
+    auto: 'Your comparison, choice, hypothesis and task save as you type, on this device first and then online.',
+    external: 'Nothing here needs a file. If you sketched an option on paper, keep the sheet and name it in Your work.',
+    creator: 'Your creator can read the three options, the choice and both signals once you choose Ready for review. The disconfirming signal is the part worth his attention.',
+    next: 'Open Your work and choose Ready for review. Lesson 4 builds only the states your task needs, so keep the task wording exactly as you wrote it.',
+  },
+};
+
+const prototyping: Guided = {
+  route: paperRoute('the screens your task needs'),
+  worksheet: [
+    { id: 'states', title: 'The screens this test needs', intro: 'One at a time. Only what the task requires, plus one thing going wrong.', fields: [
+      { id: 'hypothesis-carried', label: 'The hypothesis you are testing', kind: 'short', hint: 'Copy it from Lesson 3 so the build stays honest.' },
+      ...[1, 2, 3, 4].flatMap((n) => [
+        { id: `state-${n}`, label: `S0${n} · what is on this screen`, kind: 'long' as const,
+          ...(n === 1 ? { hint: 'Real words, not “headline here”. Invented content is fine and should be labelled.', example: 'Example (made up): S01 · class list for Saturday, three classes with times and prices.' } : {}) },
+        { id: `state-${n}-trigger`, label: `S0${n} · what the person does to leave it, and where they arrive`, kind: 'short' as const },
+      ]),
+      { id: 'recovery', label: 'The one thing that goes wrong, and how they recover', kind: 'long', hint: 'A full class, a mistyped email, a dropped connection. Draw the card before the session, not during it.' },
+    ] },
+    { id: 'build', title: 'What you actually made', fields: [
+      { id: 'invented-content', label: 'Which content is invented, and how it is marked', kind: 'short', hint: 'Prices, names and dates you made up. Never a real card number or a real person’s details.' },
+      { id: 'out-of-scope-actions', label: 'Actions that will not work, and what you will say if someone tries', kind: 'long', example: 'Example (made up): the Sign in link does nothing; I will say “assume you are already signed in”.' },
+    ] },
+    { id: 'pilot', title: 'Your own walk-through', fields: [
+      { id: 'pilot-findings', label: 'What broke when you walked the task yourself', kind: 'long', hint: 'Missing screens, cards you had to invent mid-walk, a step with nowhere to go.' },
+      { id: 'pilot-fixes', label: 'What you fixed before anyone else sees it', kind: 'short' },
+    ] },
+    { id: 'scenario', title: 'The task you will read out', fields: [
+      { id: 'scenario', label: 'The task, word for word', kind: 'long', hint: 'A goal and a situation. No button names, no route.' },
+      { id: 'reset', label: 'How you put everything back for the next attempt', kind: 'short' },
+    ] },
+    { id: 'save', title: 'What this cannot show', fields: [
+      { id: 'limitations', label: 'What a paper prototype cannot establish', kind: 'long', hint: 'Keyboard and screen-reader behaviour, real payment, speed, anything a server does.' },
+      { id: 'photo-reference', label: 'Where the screens live (file name or “paper, in my folder”)', kind: 'short' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
+    ] },
+  ],
+  guide: [
+    { expect: 'The hypothesis, the screens the task needs, and one thing going wrong.',
+      fields: ['hypothesis-carried', 'state-1', 'state-1-trigger', 'state-2', 'state-2-trigger', 'state-3', 'state-3-trigger', 'state-4', 'state-4-trigger', 'recovery'],
+      reveal: { first: 3, group: 2, count: 9, addLabel: 'Add the next screen', note: 'One screen at a time. Most tasks need three or four, not the whole product.' },
+      demo: {
+        scenario: 'Made-up example. Deciding what to build for the task “find out what Saturday’s class would cost you in total”.',
+        beats: [
+          { label: 'What I planned to build', text: 'Home, search, filters, class list, details, booking form, payment, confirmation, plus a sign-in screen. Nine screens.' },
+          { label: 'The task again', text: 'Find out what Saturday’s class would cost you in total. Nobody has to book anything to answer that.' },
+          { label: 'What survived', text: 'The class list, the details screen with cost and materials, and the first step of the booking form so I can see whether they go looking there.' },
+          { label: 'What goes wrong on purpose', text: 'One card that says the Saturday class is full, because that is when people find out whether the total was clear enough to compare with Sunday.' },
+          { label: 'What I wrote on the unbuilt parts', text: '“Sign in does nothing — assume you are signed in.” Said once at the start, it stops the session becoming about missing screens.' },
+        ],
+        wrongTurn: 'The wrong turn is building the product rather than the question. Nine screens takes an evening, and eight of them cannot affect the result.',
+        tradeoff: 'A small prototype looks unimpressive and someone may wander somewhere you have not drawn. Saying so in advance costs one sentence.',
+        uncertainty: 'Still unknown: whether people would behave the same with a real payment at the end. Paper cannot reach that and the notes should say so.',
+      },
+      terms: [
+        { term: 'Fidelity', meaning: 'How finished a prototype looks and behaves. Choose the least that can answer your question.' },
+        { term: 'State', meaning: 'One screen as the person sees it at one moment, including empty, full and error versions.' },
+      ],
+      start: 'Walk your task in your head and write down only the screens you actually pass through.',
+      enough: 'Every screen you listed is needed to attempt the task, and one shows something going wrong.' },
+    { expect: 'Invented content marked as invented, and a plan for actions that will not work.',
+      fields: ['invented-content', 'out-of-scope-actions'],
+      terms: [{ term: 'Out of scope', meaning: 'Something the prototype cannot do. Named in advance it is a boundary; discovered mid-session it is a broken test.' }],
+      start: 'Look at every price, name and date on your cards and ask where the number came from.',
+      enough: 'No real payment details or real people appear anywhere, and each dead control has a sentence ready.' },
+    { expect: 'What broke when you walked it yourself, and what you fixed. This is a self-pilot, not a test with a person.',
+      fields: ['pilot-findings', 'pilot-fixes'],
+      supported: {
+        material: 'A supplied self-pilot from the same made-up prototype. Walking the task, the author found: the class list card had no prices on it; pressing Reserve led to a card that did not exist yet; and the full-class card said “Sorry, full” with nothing else on it.',
+        question: 'Which of those three is not a prototype bug to fix before the session?',
+        options: [
+          { label: 'The full-class card: its emptiness is a design problem worth watching someone hit.', correct: true, feedback: 'A missing price and a missing card stop the session working at all. A bare failure message is the design as it stands, and what someone does when they meet it is exactly what you want to see.' },
+          { label: 'The missing prices: the person can ask you what things cost.', feedback: 'Asking you turns the facilitator into part of the interface, and the task was about finding the cost. That has to be on the card.' },
+          { label: 'The missing card after Reserve: you can describe it aloud instead.', feedback: 'Describing it aloud means you are designing during the session and the person is reacting to your narration rather than the design.' },
+          { label: 'All three should be fixed, since a session should run smoothly.', feedback: 'Smoothness is not the goal. Fixing the bare failure card would remove the very moment most likely to teach you something.' },
+        ],
+        then: 'Separate your own findings the same way: repair what stops the task, and leave the design weaknesses in place to be observed.',
+      },
+      terms: [{ term: 'Self-pilot', meaning: 'Walking your own prototype to find broken links and missing screens. It checks the materials, never the design.' }],
+      start: 'Do the task yourself, slowly, and stop every time you have to explain something to yourself.',
+      enough: 'Nothing is missing that would force you to invent a screen while someone is watching.' },
+    { expect: 'The task in the exact words you will say, and how you reset between attempts.',
+      fields: ['scenario', 'reset'],
+      terms: [{ term: 'Neutral task', meaning: 'A goal with a situation and no route. If it contains a button name, you have given away the answer.' }],
+      start: 'Read your Lesson 3 task aloud and cross out every word that names part of the interface.',
+      enough: 'Someone could attempt the task without you saying anything else.' },
+    { expect: 'What this prototype cannot establish, where the screens are, and the repair the Check questions asked for.',
+      fields: ['limitations', 'photo-reference', 'improvement-made'],
+      start: 'List everything a person might reasonably conclude from a paper session that would be wrong.',
+      enough: 'The list names keyboard and screen-reader behaviour and anything requiring a server.' },
+  ],
+  checks: [
+    {
+      question: 'Your paper prototype works well in the session. What may you claim from that?',
+      options: [
+        { label: 'That the intended behaviour made sense to that person on paper, which says nothing about a built version.', correct: true, feedback: 'Paper reaches comprehension and sequence. Speed, keyboard access, screen-reader output and anything a server does are all outside what you just saw.' },
+        { label: 'That the design works and can be built as drawn.', feedback: 'A built version introduces waiting, errors, focus order and states you never drew. Those are where designs usually fail.' },
+        { label: 'That the flow is accessible, since you read every card aloud.', feedback: 'Reading aloud is you, not the technology. Whether a screen reader would announce it in that order is a property of code you have not written.' },
+      ],
+      repair: 'Reread your limitations in step 5. If it does not name keyboard and screen-reader behaviour and anything a server would do, add them and note the change.',
+      recheck: 'The limitations distinguish what paper showed from what only a build could show.',
+    },
+    {
+      question: 'Your task card says: “Use the filter to find Saturday’s pottery class and press Reserve.” What is wrong?',
+      options: [
+        { label: 'It contains the route, so you will watch someone follow instructions rather than find their way.', correct: true, feedback: 'Naming the filter and the button hands over both decisions you wanted to observe. The session becomes a test of whether they can follow directions.' },
+        { label: 'Nothing: being specific stops the person getting lost.', feedback: 'Getting lost is the finding. If you steer them past it, you have removed the only part that could have taught you something.' },
+        { label: 'It is too long for someone to remember.', feedback: 'Length is a small matter; you can leave the card with them. The route inside it is the problem.' },
+      ],
+      repair: 'Rewrite your task in step 4 as a goal and a situation with no interface words, then record the change in step 5.',
+      recheck: 'The task names no button, link or filter, and still says what a good outcome would be for the person.',
+    },
+    {
+      question: 'You have one evening. Do you spend it drawing more screens or on the failure card and the reset?',
+      options: [
+        { label: 'The failure card and the reset, because the session collapses without them.', correct: true, feedback: 'A missing failure card means improvising mid-session; no reset means the second attempt is not comparable. Extra screens rarely change what you learn.' },
+        { label: 'More screens, so the person can explore naturally.', feedback: 'Exploration is pleasant and it is not the task. More surface makes every observation harder to attribute.' },
+        { label: 'Neither: colour and typography make people take it seriously.', feedback: 'Polish on paper mostly buys politeness. People criticise a rough sketch more freely, which is what you want.' },
+      ],
+      repair: 'Check step 1 and step 4: if you have no failure card or no reset, add them before any session, then note it in step 5.',
+      recheck: 'One failure card exists with a recovery, and the reset lets a second person start from the same place.',
+    },
+  ],
+  saveRoute: {
+    auto: 'What you type here saves by itself, on this device first and then online. The cards themselves stay on your table.',
+    external: 'Keep the numbered screens and the task card in your own folder. Photograph them if you like and write the file name here; naming a file does not upload it.',
+    creator: 'Your creator reads the state list, the task and the limitations. Share photographs the way you normally share files if you want him to see the cards.',
+    next: 'Open Your work and choose Ready for review. Lesson 5 runs the task with a person if you have one, and honestly as a self-pilot if you do not.',
+  },
+};
+
+const observing: Guided = {
+  route: paperRoute('the before and after versions of the screen you repair'),
+  worksheet: [
+    { id: 'prepare', title: 'Before you start', fields: [
+      { id: 'session-status', label: 'What is actually happening', kind: 'choice', options: ['A consenting adult is taking part', 'Self-pilot only: nobody was available'], hint: 'Choose honestly. A self-pilot is a complete answer to this lesson.' },
+      { id: 'consent-confirmed', label: 'If someone is taking part, what you said before starting', kind: 'long', hint: 'Voluntary, can stop, what the notes are for, no recording without asking.' },
+    ] },
+    { id: 'observe', title: 'What happened', intro: 'Behaviour first. Reasons come in the next step.', fields: [
+      { id: 'observation-1', label: 'Observation 1 · what they did or said', kind: 'long', example: 'Example (made up): she asked whether “materials supplied” included a sketchbook, then went back to the class list.' },
+      { id: 'observation-2', label: 'Observation 2 · what they did or said', kind: 'long' },
+      { id: 'help-given', label: 'Any help you gave, and when', kind: 'long', hint: 'Record it. Help changes what the outcome can mean.', example: 'Example (made up): after two minutes I said “the details are on the class page”, which is how she found it.' },
+      { id: 'task-outcome', label: 'How the attempt ended', kind: 'choice', options: ['Finished without help', 'Finished after help from me', 'Did not finish', 'Self-pilot: not applicable'] },
+    ] },
+    { id: 'interpret', title: 'What it might mean', fields: [
+      { id: 'explanation-1', label: 'A possible reason for observation 1', kind: 'long' },
+      { id: 'explanation-2', label: 'A possible reason for observation 2', kind: 'long' },
+      { id: 'contrary', label: 'Anything that argues against your reading', kind: 'short' },
+      { id: 'severity', label: 'Which of the two matters more for finishing the task, and why', kind: 'long' },
+    ] },
+    { id: 'repair', title: 'One bounded change', fields: [
+      { id: 'original-kept', label: 'Where the untouched original is', kind: 'short' },
+      { id: 'repair', label: 'The one thing you changed', kind: 'long', hint: 'One. Everything else stays as it was so the comparison means something.' },
+      { id: 'expected-change', label: 'What you expect to be different, and what stays untested', kind: 'long' },
+    ] },
+    { id: 'report', title: 'The short report', fields: [
+      { id: 'report-evidence', label: 'Evidence', kind: 'long', hint: 'What you saw, with the session type beside it.' },
+      { id: 'report-decision', label: 'Decision', kind: 'short' },
+      { id: 'report-revision', label: 'Revision', kind: 'short' },
+      { id: 'report-next-check', label: 'Next check', kind: 'short', hint: 'Who would you watch, doing what, to find out whether the repair helped?' },
+      { id: 'photo-reference', label: 'Where the before and after versions live', kind: 'short' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
+    ] },
+  ],
+  guide: [
+    { expect: 'An honest session type, and the consent words if someone is taking part.',
+      fields: ['session-status', 'consent-confirmed'],
+      terms: [
+        { term: 'Consent', meaning: 'Agreement given before you start, which they can withdraw at any moment without explaining.' },
+        { term: 'Self-pilot', meaning: 'You attempting your own task. It checks the materials and cannot produce a finding about other people.' },
+      ],
+      start: 'If nobody is available, choose self-pilot now and keep going. The lesson works either way.',
+      enough: 'The status matches what is really happening today.' },
+    { expect: 'Two observations, any help you gave, and how the attempt ended.',
+      fields: ['observation-1', 'observation-2', 'help-given', 'task-outcome'],
+      demo: {
+        scenario: 'Made-up example. Two lines from a session, written first the way that hides what happened.',
+        beats: [
+          { label: 'What I wrote at the time', text: '“She was confused by the materials section and struggled with the booking.” Two conclusions and no events.' },
+          { label: 'What I could actually see', text: 'She read the materials line, asked whether “materials supplied” included a sketchbook, and went back to the class list twice.' },
+          { label: 'The help I nearly did not record', text: 'After two minutes I said “the details are on the class page”. She found it immediately afterwards.' },
+          { label: 'Why that matters', text: 'Without that line the notes say she completed the task. With it, they say she completed it after being told where to look, which is a different result entirely.' },
+          { label: 'Where the reason went', text: '“The summary may be ambiguous” moved to interpretations, where someone can disagree with me without disagreeing about what happened.' },
+        ],
+        wrongTurn: 'The wrong turn is writing “confused”. It feels like an observation because you were there, and it cannot be checked by anyone who was not.',
+        tradeoff: 'Behavioural notes are longer and duller to write in the moment. They are the only kind that still means something a week later.',
+        uncertainty: 'Still unknown: whether the sketchbook question is common or particular to her. One session cannot say.',
+      },
+      terms: [
+        { term: 'Assisted completion', meaning: 'Finishing after you intervened. It is not the same result as finishing alone, and the notes must show which happened.' },
+      ],
+      start: 'Let them work. Wait longer than feels comfortable before saying anything, and write down whatever you say.',
+      enough: 'Nothing in the observation boxes is a word like confused, frustrated or careless.' },
+    { expect: 'A possible reason for each observation, anything arguing against it, and which one matters more.',
+      fields: ['explanation-1', 'explanation-2', 'contrary', 'severity'],
+      supported: {
+        material: 'A supplied line from someone else’s session: “The participant clicked Reserve twice, then said ‘I don’t know if that worked’. The facilitator confirmed the booking had gone through.”',
+        question: 'How should this be recorded?',
+        options: [
+          { label: 'Observed: two presses and that sentence. Assisted: the facilitator confirmed it. Interpretation: the button gave no visible feedback.', correct: true, feedback: 'All three parts are separated, so a reader can see what happened, what you did, and what you concluded. The missing feedback is a strong reading and it is still a reading.' },
+          { label: 'Observed: the participant was unsure whether the booking worked.', feedback: 'Unsure is your interpretation of the sentence and the second press. Close to certain, and still not what you saw.' },
+          { label: 'Finding: the confirmation is broken and needs a loading state.', feedback: 'That is a recommendation built on one moment, and it skips both the observation and the fact that you intervened.' },
+          { label: 'Observed: the participant double-clicked, which is normal behaviour for older users.', feedback: 'It adds a claim about a whole group from one person, and it explains away the very thing you should be curious about.' },
+        ],
+        then: 'Split your own two observations the same way, and make sure any help you gave is recorded beside the outcome rather than inside it.',
+      },
+      terms: [{ term: 'Severity', meaning: 'How much an issue affects finishing the task. Not how annoying it looked, and not how often it happened in one session.' }],
+      start: 'For each observation write “this might be because…” and stop before proposing a fix.',
+      enough: 'The severity reason names the consequence for the person, not your preference.' },
+    { expect: 'The original kept, one bounded change, and what you expect versus what stays untested.',
+      fields: ['original-kept', 'repair', 'expected-change'],
+      terms: [{ term: 'Bounded repair', meaning: 'One change addressing one issue, so the before and after can be compared.' }],
+      start: 'Copy or photograph the original first, then change exactly one thing.',
+      enough: 'A reader could name the single difference between the two versions.' },
+    { expect: 'Four short sections, where the versions live, and the repair the Check questions asked for.',
+      fields: ['report-evidence', 'report-decision', 'report-revision', 'report-next-check', 'photo-reference', 'improvement-made'],
+      start: 'Write Evidence first and put the session type in its first sentence.',
+      enough: 'No sentence claims the repair worked, and the next check names who would do what.' },
+  ],
+  checks: [
+    {
+      question: 'The participant finished the task after you told her where the details were. How should the outcome read?',
+      options: [
+        { label: 'Finished after help, with the help itself recorded and quoted.', correct: true, feedback: 'The same words that helped her would not be there in real use. Recording them is what stops a rescued attempt being counted as a success.' },
+        { label: 'Finished, since she completed it and the help was minor.', feedback: 'Minor help still supplied the missing piece. Reported as a completion, it makes the design look like it worked when you made it work.' },
+        { label: 'Did not finish, because she needed help.', feedback: 'Too severe and it loses information. She did finish; the honest record says what it took.' },
+      ],
+      repair: 'Check the help and outcome boxes in step 2. If you helped and the outcome says finished without help, correct it and record the change in step 5.',
+      recheck: 'The outcome names whether help was given, and the help is written down where it happened.',
+    },
+    {
+      question: 'After the repair you write: “This fixes the problem.” What is the honest version?',
+      options: [
+        { label: 'That you changed the design in response to evidence, and it needs another check before anyone can say it helped.', correct: true, feedback: 'A repair is a response, not a result. The next check is the sentence that keeps it that way and tells you what to do next.' },
+        { label: 'It is fine: the change directly addresses what you observed.', feedback: 'Addressing an observation is the reason to try it. Whether it works for the next person is unknown until someone else meets it.' },
+        { label: 'It is fine if the participant agreed the new version was better.', feedback: 'Shown two versions by the person who made them, agreement is close to guaranteed and tells you very little.' },
+      ],
+      repair: 'Reread your Revision and Next check sections in step 5. Rewrite any claim of a fix as an expectation with the observation that would test it, then note the change.',
+      recheck: 'The report separates what changed from what remains untested, and the next check names a person and a task.',
+    },
+    {
+      question: 'Nobody was available, so you ran the task yourself. What can the report say?',
+      options: [
+        { label: 'That it was a self-pilot, what it found about the materials, and that no participant evidence exists yet.', correct: true, feedback: 'A self-pilot finds broken paths, missing cards and unclear wording, which is real and worth reporting. It cannot tell you what a first-time visitor would do.' },
+        { label: 'That the flow works, since you completed it without difficulty.', feedback: 'You designed it, so you know where everything is. Your fluency is the least informative result available.' },
+        { label: 'The findings you would expect a participant to have produced.', feedback: 'That is an invented participant. Once written it gets quoted, and everything else you report becomes suspect.' },
+        { label: 'Nothing, since the lesson needs a participant.', feedback: 'The lesson is complete with a self-pilot honestly reported. A dated recruitment gap is a result, not a failure.' },
+      ],
+      repair: 'Check the session type in step 1 and the Evidence section in step 5. Make sure the session type appears in the first sentence of the report, then record the change.',
+      recheck: 'A reader learns in the first line whether a participant took part, and no conclusion outruns that.',
+    },
+  ],
+  saveRoute: {
+    auto: 'Your notes, interpretations and report save as you type, on this device first and then online.',
+    external: 'Keep the before and after screens, and any consent record, in your own private folder. No participant name or contact detail belongs in this worksheet, and nothing is uploaded.',
+    creator: 'Your creator reads the report, the observations and the limits once you choose Ready for review. This is practice evidence for later reasoning, not a portfolio case study.',
+    next: 'Open Your work and choose Ready for review. This closes Module 2; Module 3 returns to visual foundations with the evidence you have gathered.',
+  },
+};
+
 export const activities: Record<string, Activity> = {
   'week1-day1-v1': {
     activity: 'Design detective',
@@ -970,7 +1631,8 @@ export const activities: Record<string, Activity> = {
     first: '[decision at risk] | [unknown] | [method] | [reachable adults, no names here] | [consent plan] | [neutral task] | [boundary]',
     hints: ['Choose the question before the method; an interview about past behavior and a prototype task answer different questions.', 'If access is missing, record who is needed and prepare materials. A self-pilot only checks the materials.'],
     adequate: 'The method fits the uncertainty and includes consent, neutral tasks, recruitment status and limits.',
-    handoff: 'Bring actual anonymized notes to synthesis; otherwise use clearly labelled practice notes without asserting findings.'
+    handoff: 'Bring actual anonymized notes to synthesis; otherwise use clearly labelled practice notes without asserting findings.',
+    ...studyPlan,
   },
   'week2-day2-v1': {
     activity: 'Evidence sorting room',
@@ -981,7 +1643,8 @@ export const activities: Record<string, Activity> = {
     adequate: 'A reviewer can follow an implication back through an interpretation to a specific source note.',
     handoff: 'Carry the evidence chains and their limitations into opportunity selection.',
     coach: 'Inspect my anonymized evidence chain. Ask which source supports one interpretation and identify a possible alternative explanation; do not invent notes.',
-    alternative: 'Pick your strongest claim and trace it backward to a note. Write one other explanation for that same note.'
+    alternative: 'Pick your strongest claim and trace it backward to a note. Write one other explanation for that same note.',
+    ...synthesis,
   },
   'week2-day3-v1': {
     activity: 'Opportunity decision table',
@@ -990,7 +1653,8 @@ export const activities: Record<string, Activity> = {
     first: '[option] | [note IDs] | [expected change] | [constraint] | [neutral task] | [observable result]',
     hints: ['A large feature list makes it harder to learn which change mattered.', 'Write your reconsideration signal before testing, so an inconvenient result cannot quietly disappear.'],
     adequate: 'The selected opportunity is smaller than the whole product and has an evidence link and a disconfirming signal.',
-    handoff: 'Bring the chosen hypothesis and test task into prototyping.'
+    handoff: 'Bring the chosen hypothesis and test task into prototyping.',
+    ...opportunity,
   },
   'week2-day4-v1': {
     activity: 'Paper prototype theatre', visual: true,
@@ -999,7 +1663,8 @@ export const activities: Record<string, Activity> = {
     first: 'S01 | [actual content] | [person’s action] | [state ID] | [scope boundary]',
     hints: ['Write the neutral task on a separate card; do not include the button label they should press.', 'Prepare failure and recovery cards before the pilot. A paper prototype cannot establish keyboard or screen-reader behavior.'],
     adequate: 'The pilot can proceed without designing missing screens mid-session; scope and evidence limits are explicit.',
-    handoff: 'Save a numbered screen set, task script and pilot corrections for evaluation.'
+    handoff: 'Save a numbered screen set, task script and pilot corrections for evaluation.',
+    ...prototyping,
   },
   'week2-day5-v1': {
     activity: 'Observe, change, compare', visual: true,
@@ -1008,7 +1673,8 @@ export const activities: Record<string, Activity> = {
     first: '[anonymous ID or SELF-PILOT] | [task] | [actual action] | [possible reason] | [consequence] | [before and after] | [next test]',
     hints: ['Let the person attempt the task before helping. Record help given because it changes what you can conclude.', 'With no participant, report a self-pilot and recruitment gap. Do not turn your own expectation into a usability finding.'],
     adequate: 'The report separates observations from explanations, shows a traceable revision and avoids improvement percentages without measurements.',
-    handoff: 'Keep this practice evidence for Module 4 reasoning and future research planning; it is not yet a complete portfolio case study.'
+    handoff: 'Keep this practice evidence for Module 4 reasoning and future research planning; it is not yet a complete portfolio case study.',
+    ...observing,
   },
   'm03-l01-v1': {
     activity: 'Typography comparison bench', visual: true,
