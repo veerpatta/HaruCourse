@@ -26,6 +26,8 @@ All 35 field IDs shipped on 7 September 2026 are unchanged; `scripts/test-worksh
 - Keyboard activation by real key presses: the pane's synthetic key events do not reach the page, so Enter and Space on the step headings and radios rest on native button and input semantics plus the observed focus ring.
 - No creator browser sign-in, no real second device, no native soft-keyboard or assistive-technology run, no billing or usage figures.
 
+Release: commit 13680f1 deployed 7 September 2026 as Cloudflare version bee4d436-1f5a-4e2a-9efa-cb14ec30e0bb after a clean dry run; no migration exists to apply. Hosted probe from Node: served index-DLjjMOLm.js is 2,372,543 bytes, SHA256 2b374410265af0a9a05468a76a2678d6e532320b07080f55164daf8025587f53, identical to the local build, and contains the demonstration heading, the supplied-case button, the reveal label, the improvement field, the save-and-continue block and the Update now button; /sw.js is 17,010 bytes and now contains both skipWaiting and a message listener; health reports 0.2.0; an unauthenticated read is refused with 401; the test account saved and read back an improvement-made answer with guide {step: 5, done: [1, 2]} at revision 6. Haru’s records were untouched. The live update swap remains the one open check.
+
 # Guided practice pilot verification — 7 September 2026
 
 ## Scope
