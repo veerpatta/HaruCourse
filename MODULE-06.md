@@ -55,6 +55,20 @@ Tools: A spreadsheet if you have one, or a plain text table, or index cards — 
 
 #### 1. Set the boundary
 
+**See it first.** Made-up example. Setting the boundary for a bicycle repair shop by drawing it round a menu section, and watching two of the three tasks walk straight out of it.
+
+- **What I drew first:** Everything under the Repairs tab. It was a tidy edge and I could point at it on the screen.
+- **Where it came apart:** The first task, book a repair, sat inside. The second, find out whether the bike is ready, lived in a message the mechanic sends by hand. The third, know what a repair will cost, lived on a printed sheet by the till.
+- **What I nearly did instead:** Widen it to the whole site. Then I was listing the shop’s history page and a photo gallery from years ago, and the list would still not have ended.
+- **What I drew in the end:** A boundary round the three tasks: everything a person touches from deciding to bring a bike in to riding it away again. Then I named the first thing just outside it, which was hiring a bike for the weekend.
+- **What that changed:** The mechanic’s message and the price sheet came inside as items. Nine pages under the Repairs tab that serve none of the three tasks went out, with one line saying why.
+
+**The wrong turn:** The wrong turn is taking the boundary from the navigation, because the edge is already drawn there and somebody else drew it. It is the quickest boundary to write, and it quietly limits your inventory to what has already been published.
+
+**What it costs:** A boundary drawn round tasks cuts across the product, so you cannot point at it on a screen and have to describe it in a sentence every time. Somebody will also ask why pages sitting inside the section are missing from your list.
+
+**Still unknown:** Still unknown: whether these are the right three tasks. They came from a few conversations, and a fourth task nobody happened to mention would put its own answers outside the line you have just drawn.
+
 - Read the assigned needs page. Write which product area you are inventorying and where its edges are, then list the three tasks from your research that this area has to support.
 
 **You should end up with:** The product area you are inventorying, where its edges are, and the three tasks from your research that it has to support.
@@ -188,7 +202,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Check question:** A short question after the steps that tests one judgement from this lesson. Answering it wrongly sends you back with a specific thing to go and fix.
+- **Repair:** The fix a Check question asks for. You make it in the earlier box, then say here what you changed.
+- **Items nobody needed:** Rows that answer none of the tasks in your boundary. Counting them shows how much the product is carrying for its own sake.
 
 Stuck starting? Count the rows first. The other two counts come from marks you have already made.
 
@@ -531,6 +547,20 @@ Is it enough? No conflict has been settled by which word you happen to prefer.
 
 #### 5. Read it cold and pause
 
+**See it first.** Made-up example. Reading my own proposed labels cold for a swimming pool, finding nothing wrong with any of them, and realising I had been remembering rather than reading.
+
+- **What I did:** I covered every column but the proposed labels and read down the list. I could say what was inside each one, so I moved on.
+- **Why that was suspicious:** I had written those labels that morning. I was not reading the words at all; I was recognising the row each one came from.
+- **What I did instead:** I left them overnight, then read them bottom to top, asking one question of each: what would I expect to find here if I had never seen this project.
+- **What failed the second time:** “Getting ready” could have meant the pool getting ready or a swimmer getting ready. “Your sessions” could have meant the ones already swum, the ones booked, or both, and I had meant only the ones booked.
+- **What I wrote down:** Three labels marked as failing, each with the wrong thing it had made me expect. Naming the wrong expectation is what told me which word to change.
+
+**The wrong turn:** The wrong turn is doing the cold read straight after writing the labels. Nothing feels wrong, because you are recognising your own rows rather than reading the words, and a clean read is quietly what you were hoping for.
+
+**What it costs:** Leaving the labels overnight and reading them backwards costs you a day, and you still are not a stranger: the read is colder, not cold. It also turns up failures in labels you were pleased with.
+
+**Still unknown:** Still unknown: whether the labels that survived are readable by anybody else. Your own second reading catches the vague ones, and only somebody arriving without the table can catch the rest.
+
 - Read only your proposed labels, as a stranger scanning a menu. Mark any label that leaves you unable to say what is inside. Save the table.
 
 **You should end up with:** The labels that failed the cold read, your sample line, where the table lives, and the repair the Check questions asked for.
@@ -545,7 +575,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Cold read:** Reading only the proposed labels, with every other column covered, as somebody who does not know what is inside them.
+- **Sample line:** One sentence saying how many people your notes cover, how they were found, and who is missing. It travels with the table wherever the table goes.
 
 Stuck starting? Cover every column but the proposed labels and read down the list once, quickly, as a stranger scanning a menu.
 
@@ -781,6 +812,20 @@ Is it enough? Every group name came from its contents rather than from a name yo
 
 #### 3. Group by scheme two
 
+**See it first.** Made-up example. Sorting the same thirty-eight cards a second time for a community centre, and producing the first grouping wearing new names.
+
+- **What I did:** I left the task piles where they were, moved a handful of cards between them, and renamed the piles Rooms, Money, Getting here and Help.
+- **What it looked like:** Four groups with new names on a tidy table. It took a few minutes and I felt efficient.
+- **What gave it away:** The hesitations were the same cards in the same two places as the first time. A different rule ought to be awkward somewhere else.
+- **What I did instead:** I swept the whole table together, shuffled, and dealt from nothing, deciding each card only by what it is about rather than by what somebody is doing.
+- **What came out:** Six groups rather than four, and the deposit rules left Booking a room to sit in with the money. That move is what broke the topic scheme in the next step.
+
+**The wrong turn:** The wrong turn is editing the first grouping instead of starting again. The cards are already in piles, moving a few of them takes minutes, and from the outside the result is hard to tell apart from a second scheme.
+
+**What it costs:** Dealing from nothing throws away an hour of sorting you have already done, and the second set of groups will usually please you less than the first. That is the cost of the second grouping being independent rather than a rewording of the first.
+
+**Still unknown:** Still unknown: whether a third rule would suit this material better than either. You are choosing between two shapes you made yourself, and the card sort is where somebody who is not you gets a say.
+
 - Re-sort the same cards under a different scheme — topic, audience or an exact scheme where it suits the material. Record the hesitations again.
 
 **You should end up with:** A second grouping of the same cards under a different rule, named, with its own hesitations recorded.
@@ -869,7 +914,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Carrying forward:** Choosing one grouping to build on in the next lesson. The other one is photographed and kept rather than thrown away.
+- **Tree test:** A later test where people are shown only your group names and asked to find something. It is where a structure that sends people the wrong way becomes visible.
+- **Trade-off note:** A written sentence naming who pays for your choice, what they pay, and what a later test would show. A verdict with no cost written beside it is not one.
 
 Stuck starting? Choose the scheme whose breakage you would rather live with, and say why in one sentence.
 
@@ -1081,6 +1128,20 @@ Is it enough? You have said what each shape costs without repeating a number tha
 
 #### 2. Draw the sitemap
 
+**See it first.** Made-up example. Counting how deep each of three tasks reaches on my own sitemap of a small theatre, and getting every count too low.
+
+- **What I wrote first:** Two levels for all three tasks. I had drawn the map an hour earlier and could see the route to each thing without moving my finger.
+- **Why that was wrong:** I was counting my own route. I already knew the refund rule sat under Your visit, so the choice at level one was not a choice for me at all.
+- **What I did instead:** I traced each task with a finger and made a mark wherever the map offered more than one plausible way down, whether or not I knew which one was right.
+- **What the counts became:** Book a ticket stayed at two. Find out about step-free access went to three. Find out whether a ticket can be refunded went to four, and two of those points were guesses rather than choices.
+- **The phone check:** I covered everything but level two with a sheet of paper. Seven labels side by side, no parent in sight, and three of them meant nothing without the group name that had scrolled away above them.
+
+**The wrong turn:** The wrong turn is counting depth by walking your own route, because you drew the map and already know where everything sits. Every task comes out shallow, and the shape looks better than it is.
+
+**What it costs:** Marking every uncertain point rather than every level gives you larger numbers that are harder to defend, and somebody will say you are being hard on your own work. You cannot show that the guesses are guesses until a tree test, so the honest count is the uncomfortable one.
+
+**Still unknown:** Still unknown: which of the points you marked really are guesses for somebody else. You marked them by imagining that you did not know, and that is the one thing you cannot actually do.
+
 - Draw your chosen scheme with every level, every group and every item's position. Count the levels each of your three research tasks must pass through.
 
 **You should end up with:** Your map drawn with every level, how deep each of your three tasks reaches, and what level two looks like on a phone.
@@ -1119,7 +1180,8 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Summary sentence:** One sentence beginning “this contains …” that says what is actually inside a group. If it could describe three different groups, it has not worked.
+- **Vague group:** A level-two group you cannot summarise in one sentence. It usually exists because two or three items had nowhere else to go.
 
 Stuck starting? For each group write “this contains …” and list the actual items before you attempt the summary.
 
@@ -1155,7 +1217,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Lifting:** Moving an item up a level so a person meets it sooner. What you lift should come from your research rather than from what interests you.
+- **Parent:** The group an item sits inside. Lifting an item out of one saves a step and loses whatever the parent was holding together.
+- **Crowding:** So many labels side by side at one level that the row stops being scannable and becomes a wall of reading.
 
 Stuck starting? Take the four items your research showed people need most, put them at level one, then re-place everything else around them.
 
@@ -1191,7 +1255,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Uncertain decision:** A point where a person has to guess which way to go. Two of these cost her more than four choices she is sure about.
+- **Favouring a task:** A shape is not better in general. It is better for some tasks and worse for others, so the comparison is made one task at a time.
 
 Stuck starting? Walk each task through both maps with your finger, marking every point where you would be unsure.
 
@@ -1433,7 +1498,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Hesitation:** A moment when someone slows down, changes their mind, or handles the same card more than once. Write the card and the movement, not the word hesitation.
+- **Participant:** Someone who agreed beforehand to take part. You cannot be one in your own study, because you already know how the structure is meant to work.
+- **In their words:** Copying a pile name exactly as the person said or wrote it, awkward phrasing and all. A name you tidy up becomes a name you invented.
 
 Stuck starting? Say “there are no wrong groups, and I am interested in how you think about these”, then stop talking and write.
 
@@ -1442,6 +1509,20 @@ Is it enough? Someone reading your notes could describe the session without aski
 </details>
 
 #### 3. Run the closed sort
+
+**See it first.** Made-up example. Running a closed sort where every card found a home, and only afterwards noticing that I had left nobody any way to refuse.
+
+- **What I set up:** Six group names from my own structure, written large and laid across the table. Forty-three item cards handed over a few at a time.
+- **What I said:** “Put each card in the group it belongs to.” Every card landed somewhere. The sheet I filled in looked complete and looked like work.
+- **What I noticed the next morning:** Two cards had gone down after a long pause and a shrug, and my sheet recorded only the group name. The pause was nowhere on it.
+- **What I changed for the second sitting:** I added a seventh space marked “does not belong in any of these”, said out loud that using it was a real answer, and wrote a line beside every card that took more than a moment.
+- **What that gave me:** The refund rule card sitting in the seventh space with the words “it is not really about money” beside it. My tidy version could not have produced that line at all.
+
+**The wrong turn:** The wrong turn is telling the person that every card has to go somewhere. It fills the sheet, it feels like a finished piece of work, and it quietly turns doubt into a placement you can no longer see.
+
+**What it costs:** A refusal space costs you completeness. You end up holding items with no home and no instruction about where they should live, and that is an unfinished structure you have to come back to with a different method.
+
+**Still unknown:** Still unknown: whether a card was refused because your group names are wrong or because the item does not belong in the product at all. A closed sort cannot separate those two.
 
 - With another participant, or the same one after a break, lay out your chosen groups and ask where each card goes. Record every card they place slowly, question or refuse to place.
 
@@ -1455,7 +1536,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Placement:** One card going into one group. How it got there matters as much as where it landed, so record the speed and the muttering beside it.
+- **Supplied groups:** The categories you write out before a closed sort begins. They come from your own structure, which is the thing being put to the test.
+- **Refusal:** A person saying that a card fits none of your groups. Write it down as a result rather than talking them into a pile.
 
 Stuck starting? Lay your chosen groups out first, then hand the cards over one small pile at a time.
 
@@ -1509,7 +1592,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Session record:** The written account of one sitting with one person, built from the photographs and the rough notes together, on the same day.
+- **Quotation:** A person’s exact words inside quotation marks, unchanged. It is the part of your notes that still means something to a reader who was not there.
+- **Conclusion:** Your own reading of what you watched. It is worth keeping and it needs its own line, because nobody else can check it the way they can check a movement.
 
 Stuck starting? Write the record from the photographs and the rough notes together, in that order, before you interpret anything.
 
@@ -1775,7 +1860,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Agreement:** An item that everybody placed the same way, and placed easily. Both halves of that have to be true before you write the word.
+- **Disagreement:** An item that people placed in different groups. Write the counts, then write what you think the split means and who was on each side.
+- **Ambiguous:** An item placed the same way by everybody, but slowly or after second thoughts. It is the pattern people miss, and it warns you about a label before a tree test does.
 
 Stuck starting? Read down each row and ask two questions: did they all place it the same way, and did any of them take their time.
 
@@ -1784,6 +1871,20 @@ Is it enough? Every item carries one of the three labels, and every disagreement
 </details>
 
 #### 3. Revise the structure
+
+**See it first.** Made-up example. Writing one traced change that turned out to be three changes hiding behind a single true sentence.
+
+- **What the table showed:** All four participants put “change my booking” and “cancel my booking” in different piles. A plain disagreement, with both piles named in their own words.
+- **What I wrote in the box as one change:** Split changing from cancelling. While I was in there I also renamed the group above them to “Booking admin” and moved the payments items underneath it.
+- **The trace sentence I put beside it:** “Four of four put changing and cancelling in different piles.” Entirely true, and it covered about a third of what I had actually done.
+- **What I saw reading it back:** Nobody had touched the name of the group above, and nobody had gone anywhere near the payments cards. Two of my three moves rested on my own taste.
+- **What I did about it:** Cut the entry back to the split alone, moved the rename and the payments move to the preferences list, and wrote beside each one what a participant would have to do for it to come off that list.
+
+**The wrong turn:** The wrong turn is letting one true trace sentence stand for everything you altered at the same sitting. The sentence is honest, the change around it is not, and you will not notice because you wrote both in the same minute.
+
+**What it costs:** One change per box makes your revision look thin: three small moves instead of the nine you can see are needed. The thin list is the one you can defend line by line when somebody asks where each move came from.
+
+**Still unknown:** Still unknown: whether the split is the right split. Four people separating two cards tells you they are not the same thing, and tells you nothing about what the two new groups should be called.
 
 - Change your chosen sitemap from the analysis. For each change write the trace sentence naming the item, the participants and what they did.
 
@@ -1799,7 +1900,8 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Trace sentence:** The sentence beside a change naming the item, which participants, and what they actually did. If you cannot finish it, the change is not led by evidence.
+- **Revision:** Your structure as it stands after these changes, kept beside the old version so anybody can see what moved and read why.
 
 Stuck starting? Begin with the disagreement you understand best and finish the sentence “this moved because participants … did …”.
 
@@ -1821,7 +1923,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Preference:** A change you want to make because you think it is better. Allowed, often sensible, and not a finding.
+- **Evidence:** Something a participant did or said that you wrote down at the time. Your memory of an afternoon does not qualify.
 
 Stuck starting? Go through the changes you did not write in the last step and ask which participant did what to prompt each one.
 
@@ -1855,7 +1958,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Sample line:** One sentence saying how many people took part, how you found them, and how far the results may be pushed. It travels with the results everywhere they appear.
+- **Exploratory:** A word saying the work was done to find out what is going on, not to settle anything. It is the honest label for a sort with a handful of people.
+- **Rate:** A share written as a percentage or a fraction of a whole. It invites comparison with other rates, which is why a handful of people belongs in a count instead.
 
 Stuck starting? Write the count, then the recruitment route, then the word exploratory, in one sentence.
 
@@ -2098,7 +2203,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Task:** A short description of a situation and a goal, with no word from your tree inside it. It describes a moment, not a destination.
+- **Accepted answer:** The place, or places, you decided beforehand would count as arriving. Deciding afterwards is how a person talks themselves into a success.
+- **Leading:** Wording that hands over the answer, usually by using a word the person can already see on the sheet in front of them.
 
 Stuck starting? Take a moment from your m05 notes and write what the person was holding, worrying about and trying to do.
 
@@ -2131,7 +2238,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Path:** Every choice a person made, in order, including the ones they took back. It is the whole of what happened, not only where they finished.
+- **Backtracking:** Going back up a level after choosing a branch. In a real product, somebody who does this twice often leaves instead of trying again.
+- **Rehearsal:** You running the test on yourself to check that the tasks are clear. It never counts as a result, because you already know the tree.
 
 Stuck starting? Ask for consent, explain that you are testing the words and not the person, and answer every question with “where would you look?”.
 
@@ -2140,6 +2249,20 @@ Is it enough? Every task and every person has a first choice and a path recorded
 </details>
 
 #### 4. Record confidence
+
+**See it first.** Made-up example. Asking people how sure they were, and collecting six yeses that meant nothing at all.
+
+- **How I asked it:** “Are you sure that is right?” after each task, with a column on my sheet for yes or no. It took three seconds and fitted the table beautifully.
+- **What came back:** Yes, every time, from the first person. A straight line of yeses down the column, and I nearly wrote that everybody was confident in the structure.
+- **Why the question was broken:** “Are you sure that is right?” tells a person there is a right answer and hints that I already know it. The polite reply to that is yes, and I had asked for the polite reply.
+- **What I asked the second person instead:** “How sure are you that this is the place, and what would you do next?” She said fairly sure, and that she would have looked in Get help first if this had not worked.
+- **What I stopped doing:** I had only been asking after the tasks that went badly. Asking after every task is the only thing that makes somebody who is certain and in the wrong place visible at all.
+
+**The wrong turn:** The wrong turn is the yes-or-no confidence question. It is quick to ask, quick to write down, and it carries your own opinion inside it, so people answer the opinion rather than the question.
+
+**What it costs:** Answers in their own words will not line up in a column and cannot be added up. You are left with sentences you have to sit and read, and no tidy figure to put anywhere.
+
+**Still unknown:** Still unknown: what somebody who says fairly sure would do in a real product with a price on the page. Sitting at a table with paper costs her nothing, so this is a guess about her behaviour rather than a measure of it.
 
 - After each task ask how sure they are they have arrived. Record the answer in their words. A confident wrong answer and an unsure right one are different results and lead to different changes.
 
@@ -2153,7 +2276,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Confidence:** How sure a person is that they have arrived, written in their own words rather than turned into a number.
+- **Confidently wrong:** Somebody who is certain and is in the wrong place. It is the most serious result this test gives you, because nothing about the feeling prompts them to look further.
+- **Unsure and right:** Somebody who arrives and doubts it. They found the thing and the words gave them no reassurance, which is a smaller trouble with the same cause.
 
 Stuck starting? Ask the confidence question straight after each task, before you move the sheets.
 
@@ -2176,7 +2301,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Sample line:** One sentence saying how many people took part, how you found them, who is missing, and whether any of it was a rehearsal.
+- **Recruitment:** How you went about finding people, written down plainly, including the kind of person you never managed to reach.
+- **Raw table:** The results exactly as you wrote them down, before any reading or tidying. The next lesson works from this, so it has to survive untouched.
 
 Stuck starting? Write the raw table out fully before you interpret anything. The next lesson does the interpreting.
 
@@ -2414,7 +2541,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Top level:** The first sheet, holding the small set of names a person chooses between before anything else is visible to them.
+- **Scatter:** First choices spread across several branches instead of gathering on one. It says the top-level names are not telling people what sits inside them.
+- **Failed task:** A task where the person never reached any of the answers you decided to accept before the session started.
 
 Stuck starting? Sort the results table by the first-choice column and read the failed rows in two piles.
 
@@ -2469,7 +2598,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Wrong label:** The item sits in the group people expect, and the name of that group does not tell them what is inside it. The repair is a rename, in their words.
+- **Wrong grouping:** The item sits somewhere people do not go looking for it. The repair is a move, or listing it in two places and keeping both up to date.
+- **Missing item:** Nothing anywhere in the material answers the question the person arrived with. Renaming and moving both fail, because there is nothing there to find.
 
 Stuck starting? Take the failure you are surest about and write the path first, then the cause it points to.
 
@@ -2478,6 +2609,20 @@ Is it enough? Any cause you cannot support with a path or a quotation is written
 </details>
 
 #### 4. Change one thing and re-test
+
+**See it first.** Made-up example. Re-testing one renamed label with the same two people, and learning nothing whatever about the label.
+
+- **The change:** One sheet, one label. “Booking admin” became “Change or cancel a booking”, and nothing else on the tree moved.
+- **Who I asked:** The same two people from the first round. They had agreed once already, they lived nearby, and the whole thing took ten minutes.
+- **What happened:** Both went straight to it on the first task. I wrote “the change worked, two of two” and felt rather pleased with the afternoon.
+- **What I had forgotten:** I had shown them both where the thing lived at the end of the first session, a week earlier. They were not reading the new label. They were remembering the answer I gave them.
+- **What went in the record instead:** “Change made. Re-tested with two people who had already seen the structure, so this cannot be read as evidence about the label.” Then finding two fresh people went on the list for the following week.
+
+**The wrong turn:** The wrong turn is re-testing with the people you already have. They are willing, they are quick, and they are the only people in the world who cannot tell you whether a new label reads clearly.
+
+**What it costs:** Fresh people are the thing you have least of, and holding to this often means the change goes into the record as untested. An untested change you have labelled honestly is worth more than a tested-looking one you cannot trust.
+
+**Still unknown:** Still unknown, even with two fresh people: whether the new label works for somebody who has never thought about booking a class at all. Two is two.
 
 - Make exactly one change aimed at your clearest diagnosis. Re-test the affected tasks with at least two people who have not seen the structure. Record first clicks and confidence again.
 
@@ -2492,7 +2637,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **One change:** A single alteration you can describe in one sentence: one label, or one move. Two at once and the re-test cannot tell you which of them did anything.
+- **Re-test:** Running only the tasks the change was aimed at, with people who have not seen the structure before.
+- **Untested:** The honest word for a change nobody has tried yet. Use it rather than calling the change an improvement.
 
 Stuck starting? Choose the diagnosis you are surest about and change that one thing on one sheet.
 
@@ -2515,7 +2662,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Outcome:** One sentence saying what the change did, with the counts of people inside it. Two of two says more than better.
+- **Remaining failures:** The failures you did not address, each still carrying the cause you named for it. They are the start of the next round rather than an admission.
 
 Stuck starting? Write the outcome sentence with the counts inside it before you write anything else.
 
@@ -2730,6 +2878,20 @@ Is it enough? No two blind-spot sentences are the same.
 
 #### 2. List your unexplained failures
 
+**See it first.** Made-up example. Writing the list of unexplained failures for a class-booking site, and quietly leaving off the three I thought I had already explained.
+
+- **What I had:** Six moments across my notes where somebody did not find something. Three of them went onto the list. Three I left off, because I already had a reason for each one.
+- **The reasons I had:** One person was in a hurry. One was holding a phone in the other hand. One of them was my own fault, because I had worded the task badly. Each of those felt like an explanation.
+- **What made me look again:** Writing the source beside the three I had kept, I noticed the three I had dropped had no source beside their reasons. The reasons were mine. Nobody had said any of them.
+- **What went back on the list:** Two of the three. The person in a hurry took the same wrong branch as somebody unhurried a week earlier, so being in a hurry did not choose the branch.
+- **What stayed off, and how it reads now:** The badly worded task stayed off, with a line saying the task itself was at fault and has to be rewritten before that moment means anything.
+
+**The wrong turn:** The wrong turn is treating a reason you invented for a failure as an explanation of it. It is tempting because a reason closes that line, and a list of three feels finished a great deal sooner than a list of six.
+
+**What it costs:** Keeping the ones you thought you had explained gives you more symptoms than your plan can possibly cover, so you will have to leave some untested and say plainly which. You buy a shorter list of tests with a longer list of symptoms.
+
+**Still unknown:** Still unknown: whether the reasons you kept hold up either. A source line tells you where a symptom came from. It does not tell you that your reading of it was the only reading available.
+
 - List every finding from your sort and tree test that you could not diagnose, plus anything from your m05 research about people not finding things.
 
 **You should end up with:** Every finding from your sort, your tree test and your research that you could not explain, with where each one came from.
@@ -2742,7 +2904,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Symptom:** What you saw somebody do, or fail to do, written down with no reason attached to it.
+- **Source:** Where a symptom came from: which session, which test, or your own walk through the product.
+- **Rehearsal:** A walk through your own product, done by you alone. It produces suspicions worth testing, and never findings.
 
 Stuck starting? Read your session notes for every moment somebody could not find something, including the ones you assumed you understood.
 
@@ -2780,7 +2944,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Suspected cause:** The single thing you think is at fault, named before you pick a test. The test follows the cause, not the other way round.
+- **Variable:** Anything present that could be causing a failure. A test that leaves several of them in play cannot tell you which one acted.
+- **Diagnostic plan:** The table you are building here: symptom, suspected cause, test, roughly how many people, and what it costs you.
 
 Stuck starting? Take the symptom you understand least and write two possible causes for it before you write any test.
 
@@ -2837,7 +3003,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Next test sentence:** The one line naming what you would run, why, and what result would send you somewhere else instead.
+- **Repair:** The change the Check questions ask you to make to your own work. Writing down what you changed is part of the step.
 
 Stuck starting? Write “I will run … because I suspect …, and if I see … I will run … instead”.
 
@@ -3097,7 +3264,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Page title:** The single heading at the top saying what this page is. Everything else on the page sits inside it.
+- **Level:** How deep a heading sits in the outline. A level is a claim that this section is inside the one above it, never a choice about size.
+- **Skipping a level:** Jumping straight to a deeper level with nothing in between. It tells anybody reading the outline that a section is missing.
 
 Stuck starting? Write the page title first, then list the sections in the order they appear on the page, before worrying about levels.
 
@@ -3106,6 +3275,20 @@ Is it enough? No level is skipped, and every heading came from your labelling ta
 </details>
 
 #### 3. Mark the regions and the navigation kinds
+
+**See it first.** Made-up example. Marking the regions on a class page sketch, and calling a whole strip navigation because it ran along the top.
+
+- **What I drew:** Five boxes on the paper sketch: banner, navigation, main content, a side area, footer. It took about four minutes and looked tidy.
+- **What I put in the navigation box:** Everything in the top strip. The menu, the sign-in link, the language chooser, and the “Book a place” button that had been sitting up there since the first sketch.
+- **Why that felt right:** They are all in one row, they are all links, and they all look like navigation to me. The box followed the shape of the design rather than what anything did.
+- **Where it fell over:** I imagined somebody asking to jump straight to the main content. Booking is the thing this page is for, and I had put it outside the main content. Sign in and language are not about where you are in the structure at all.
+- **What the sketch says now:** Sign in and language sit in the banner as utility. The navigation box holds the menu and nothing else. “Book a place” has moved inside the main content, because it is the page’s own action.
+
+**The wrong turn:** The wrong turn is marking regions by where things sit on the screen. One strip along the top looks like a single thing, and it usually holds three different kinds that somebody moving by region needs kept apart.
+
+**What it costs:** Splitting that strip means your sketch no longer matches the neat row you designed, and anyone reading it will ask why three boxes cover something that looks like one. What you gain is a jump to the main content that lands on the thing the page exists to do.
+
+**Still unknown:** Still unknown: whether somebody who moves by region would draw the line between banner and navigation where you drew it. That is a question for a person who works that way, and no such session has happened.
 
 - Identify the banner, navigation, main content, any complementary area and the footer. Then label each navigation element global, local, contextual or utility, and note anything sitting in the wrong one.
 
@@ -3156,7 +3339,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Preliminary check:** A quick check you can run on your own before any session: the page title in the browser tab, the heading order, and reaching everything with the Tab key.
+- **Tab order:** The order things are reached when somebody presses the Tab key rather than pointing at them. If it jumps about, the page is hard to use without a mouse.
+- **Verdict:** A judgement written instead of an observation. Write what each check showed, because a verdict hides the thing you actually saw.
 
 Stuck starting? Read the headings to one other person and ask them what the page is about before you tell them.
 
@@ -3180,7 +3365,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Screen reader:** Software that reads a page aloud and lets somebody move through it by heading or by region. It is how a heading outline gets used in practice.
+- **Artefact:** The thing this step leaves behind: here the outline, the region sketch and the check results. Where each one lives matters more than how it looks.
+- **Not run:** A check you skipped, recorded plainly as skipped. Recorded as though it had happened, it makes everything else in the note untrustworthy.
 
 Stuck starting? List the preliminary checks and put run, not applicable or not run beside each. Then write the one sentence about who did not take part.
 
@@ -3394,6 +3581,20 @@ Is it enough? Your two examples are different actions, not the same action descr
 
 #### 2. Build the query list
 
+**See it first.** Made-up example. Building a twenty-query list from interview notes, and tidying every phrase into the words the site already uses.
+
+- **What I had:** Five sets of interview notes and a blank page headed twenty queries. I did not open the notes.
+- **What I wrote:** Class fees. Class times. Cancellation policy. Equipment list. Twenty tidy lines in half an hour, and every one of them sounded like a search.
+- **What was wrong with them:** Those are my headings. Nobody in the notes had said cancellation policy. Two people had asked whether they could get their money back, and one had asked what happens if she is ill.
+- **What the notes gave me instead:** I went back through with a pen and copied phrases exactly as written down. Nine of my twenty tidy lines turned out to have no person behind them at all.
+- **What the list looks like now:** The awkward ones, kept as spoken: what do I need to bring, is there parking, can my daughter come with me. Three of those are phrases I would never have written.
+
+**The wrong turn:** The wrong turn is writing the query list from memory instead of from the notes. Your own wording arrives faster, and it is already the wording your pages use, so every query on that list would have found something.
+
+**What it costs:** Copying phrases exactly gives you a messy list: repeats, half-sentences, two people asking the same thing in different words, and no clean way to sort it into three kinds. What it buys is a list that is able to fail, which is the only kind worth running.
+
+**Still unknown:** Still unknown: whether people type the words they say. A phrase somebody spoke aloud in an interview may become three words in a search box, and nobody here has been watched typing.
+
 - Take at least twenty words and phrases your participants actually used, verbatim. Mark which are names of things, which are descriptions and which are questions.
 
 **You should end up with:** At least twenty queries in your participants’ own words, sorted into names, descriptions and questions.
@@ -3406,7 +3607,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Query:** The words a person actually puts into a search box. Yours stay a guess about theirs until you copy them from your notes.
+- **Word for word:** Copied exactly as the person said it, awkward wording and all. A tidied phrase is your vocabulary standing in for theirs.
+- **Description:** A phrase describing the thing rather than naming it, such as the one with the wheels. People reach for these when they do not know your name for it.
 
 Stuck starting? Go through your interview notes with a pen and copy out every phrase somebody used for something they were looking for.
 
@@ -3443,7 +3646,10 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Find-in-page:** Your browser’s own search of the page you are looking at, opened with Ctrl and F. It is enough to run queries by hand with no search engine anywhere.
+- **Vocabulary gap:** The thing exists and can be reached, and your words for it are not the person’s words.
+- **Unreachable content:** The answer exists somewhere, in an email or in somebody’s head, but nowhere a person can get to on their own.
+- **Failure class:** The one cause you give a failed query. One cause per failure, so that each fix lands on the actual fault.
 
 Stuck starting? Take the first query and search your content for that exact phrase before you allow yourself to think of a better one.
 
@@ -3477,7 +3683,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Filter:** A control that takes things out of a list rather than finding them. It works on categories you already decided in your structure.
+- **Empty combination:** Two or more filter choices that between them leave nothing. The person has to see which choice emptied the list and undo only that one.
+- **Dead end:** A screen offering nothing to do but repeat the thing that has just failed. It is what a zero-results screen exists to prevent.
 
 Stuck starting? Write the zero-results screen first, while the failures from step 3 are still in front of you.
 
@@ -3500,7 +3708,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Content wording:** The words on the page itself. Adding the words people use is a fix that needs no search engine at all.
+- **Missing item:** A thing that does not exist anywhere yet. No wording and no search reaches it, so somebody has to write it from nothing.
+- **Search behaviour:** What a search does with a query: near spellings, word endings, and words you have told it mean the same. It is the only fix here that needs an engine.
 
 Stuck starting? Take the vocabulary gaps first; they are usually fixed by adding the words people use to the page itself.
 
@@ -3740,7 +3950,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Wrap:** Text carrying on to a second line because it ran out of width. Nothing is lost, and the row it sits in becomes taller.
+- **Overflow:** Text running past the edge of the space it is in, so part of it cannot be seen or reached at all.
+- **Indic script:** A writing system used across India, such as Devanagari for Hindi. Its letters carry marks above and below the line that Latin letters do not.
 
 Stuck starting? List every place each label appears — menu, button, tab, heading — before you pad anything.
 
@@ -3810,6 +4022,20 @@ Is it enough? Each line in both boxes names a label and what happened to it, and
 
 #### 4. Repair and re-check
 
+**See it first.** Made-up example. Shortening a cut-off label so it fits the button, and losing the word that told it apart from the item beside it.
+
+- **What was broken:** At about 320 px, “Change or cancel a booking” stopped at “Change or cancel a…” on the button. It was the worst break on the list, so I repaired it first.
+- **What I changed it to:** “Manage booking”. Eleven characters shorter, it fits at every width I tried, and it still fits with a third more characters added.
+- **What I had not noticed:** The item beside it was “Manage your account”. Two neighbours now opened with the same word, and my card sort had shown people separating changing from cancelling.
+- **What the shorter label stopped saying:** Somebody who wants their money back cannot tell from “Manage booking” whether cancelling is something this product allows at all. The fit was repaired and the meaning had gone.
+- **What I did instead:** Two items: “Change a booking” and “Cancel a booking”. Each is short enough for the button, and each keeps the word doing the telling apart.
+
+**The wrong turn:** The wrong turn is shortening a label to whatever fits. The fit is the visible problem and it is gone in seconds, while the word you dropped was carrying the whole difference between that label and its neighbour.
+
+**What it costs:** Splitting one item into two makes the menu longer, and that is a real cost: more to read, more to scan past, and one more line for a translator to handle. You pay for it with the space you were trying to save.
+
+**Still unknown:** Still unknown: whether two separate items read as two separate actions to somebody meeting them fresh. Your sort showed people separating the ideas. It did not show anybody meeting these particular words on a button.
+
 - Fix what broke, preferring shorter distinct labels over truncation and giving rows room to grow. Re-run the two worst cases to confirm the repair.
 
 **You should end up with:** Repairs that keep the word telling each label apart, with the two worst cases run again.
@@ -3823,7 +4049,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **The word that tells it apart:** The one word separating a label from its neighbour: change against cancel, book against browse. It is the word a shortened label usually loses.
+- **Splitting a label:** Turning one item into two when no short version keeps both meanings. It lengthens the menu and it keeps the difference.
+- **Re-check:** Running your two worst breaks again after the repair, to see whether the repair held. A repair with no second result written down is a hope.
 
 Stuck starting? Start with whatever was cut off, since that is the break that removes meaning rather than moving it.
 
@@ -3848,7 +4076,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Change note:** A short record of every structural decision with its evidence beside it. It is what lets somebody else pick your structure up without you in the room.
+- **Evidence:** The session, sort or test a decision came from, named so a reader can go and look. A decision with an empty evidence line is a guess.
+- **Guess:** A decision made without evidence, or a test you could not run. Written down as a guess it stays useful; written as a finding it costs the note its credibility.
 
 Stuck starting? Work backwards through the module, one line per decision, and leave the evidence column empty where there is none.
 

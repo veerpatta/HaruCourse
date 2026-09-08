@@ -104,7 +104,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Spine:** The single path from one entry point to one successful ending. It is drawn first, and everything else hangs off it.
+- **Key:** The small note on the page saying which mark means which kind of node. Without it the drawing only works for the person who drew it.
+- **State:** Something your system is holding while nobody is doing anything, such as a place held or a payment pending. It is a node in its own right, not a gap between nodes.
 
 Stuck starting? Write the successful ending first, then work backwards to the entry point you have the best evidence for.
 
@@ -149,6 +151,20 @@ Is it enough? At least two entry points, and at least two endings that are not s
 
 #### 4. Mark prerequisites and waits
 
+**See it first.** Made-up example. Marking prerequisites along a drawn booking flow, and finding one step that asked for something nobody could be holding yet.
+
+- **What I marked first:** I went along the spine writing the obvious ones: signed in, class chosen, date chosen. Every note was about the person, and every note was true.
+- **The step I walked straight past:** “Enter your booking reference to add a second person.” I had left no prerequisite beside it, because it read as an ordinary step rather than a fork.
+- **What that reference needs:** A reference only exists once a payment has gone through. My flow asked for one two boxes before payment, so the only person who could pass that step was someone who had already booked.
+- **The waits I had not drawn at all:** The card being checked, and the message carrying the reference. Both were plain arrows on my page, and both are minutes long on a slow evening.
+- **What I changed:** Adding a second person moved to after the confirmation. Two waiting nodes went in, each with a note of what the screen says while nothing appears to be happening.
+
+**The wrong turn:** The wrong turn is marking prerequisites only where a step visibly asks for something. The step that asks for a thing your own system has not produced yet reads perfectly, because you already know the reference exists.
+
+**What it costs:** Moving that step after the confirmation means anyone booking for two people now goes round the flow twice, and they will say so. You take that over a step that cannot be finished at all.
+
+**Still unknown:** Still unknown: how long the message carrying the reference actually takes to arrive. The flow can show that a wait sits there; only sending real messages says whether it is seconds or minutes.
+
 - For each step write what must be true and what the person must be holding. Add a node for every wait, including anything depending on another person.
 
 **You should end up with:** A prerequisite note on every step, the step that asks for something the person cannot have yet, and a node for every wait.
@@ -187,7 +203,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Stopping point:** A place on the flow where somebody is likely to give up. Named from something you watched, not from something you fear.
+- **Source:** The thing standing behind a claim: a session you sat through, a message somebody sent, a line in your notes. A hunch is not a source.
+- **Repair:** The change a Check question asks you to make to your own work, written down along with what you altered.
 
 Stuck starting? Go back to your research notes and your test results, and find the moments where people actually stopped rather than the ones that feel risky.
 
@@ -458,7 +476,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Must-know:** Something without which the very next action is impossible or unsafe. Not something that would merely be handy to have on file.
+- **Can-wait:** Anything that still works if it is asked for later. Most of a first run turns out to belong here.
+- **Impossible-without reason:** The sentence you write beside a must-know item naming the action it unblocks. If you cannot write that sentence, the item is not must-know.
 
 Stuck starting? Write the whole list first, in any order, then go through it once asking the impossible-without question of each line.
 
@@ -492,6 +512,20 @@ Is it enough? The after count is lower than the before count, or you have writte
 </details>
 
 #### 4. Write the empty states
+
+**See it first.** Made-up example. Writing the empty state for a bookings list, and producing a small tour instead of a screen.
+
+- **What I wrote first:** “You have no bookings yet. Browse classes, filter by day and price, save the ones you like, and manage everything from here later.” Four sentences and four separate ideas.
+- **Why it felt right:** The screen was empty and that seemed wasteful. There was room going spare, and I still had things I wanted people to know.
+- **What I had actually written:** The tour I had just taken out of the first run, moved to a quieter page. Same list of features, same person with no reason to read any of it.
+- **The three questions I held it to:** What is this page. Why is it empty. What is the one thing that fills it. Mine answered the first, half of the second, and offered four actions rather than one.
+- **What replaced it:** “Nothing booked yet. Your classes will show here, with the date and the address. Find a class.” One line each, and a single button.
+
+**The wrong turn:** The wrong turn is treating an empty screen as spare room. It is the one moment somebody is reading a page for a reason of their own, and filling it with everything wastes exactly that.
+
+**What it costs:** Three short lines leave out the filtering, the saving and the reminders, and somebody on your team will ask where all of that went. It goes to the moment the person is doing it, and until then nobody is told it exists.
+
+**Still unknown:** Still unknown: whether “Find a class” is the action people want from this page, or whether most arrive here hunting for a booking they think they already made. The wording cannot settle that on its own.
 
 - Write the wording for every empty state in the flow: what appears here, why, and the one action that produces the first item. Use your m06 labels.
 
@@ -530,7 +564,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Cost of deferring:** What you give up by asking later: thinner records, or a flow that has to stop and ask somebody midway through something else.
+- **Repair:** The change a Check question asks you to make to your own work, written down along with what you altered.
 
 Stuck starting? For each deferred item finish the sentence “because we waited, this goes wrong …”.
 
@@ -769,7 +804,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Account:** A record a person creates and signs back into. It is a decision somebody made, not a step every product has to have.
+- **No-account path:** The route through your product for somebody who never registers. It has to reach the same ending, and you have to be able to describe how.
+- **Registration wall:** A sign-up screen placed before the thing a person came for. It is paid for in people who turn round, and it is rarely counted.
 
 Stuck starting? Write the benefits list before you draw anything. If every line on it is about your records, the requirement comes out.
 
@@ -813,6 +850,20 @@ Is it enough? Every recovery route on the flow works without the lost factor, an
 
 #### 4. Write every message
 
+**See it first.** Made-up example. Writing the error messages for a sign-in form, and finding that one of them could not tell anybody what to do next.
+
+- **What I wrote first:** A single message under the form: “Those details are not right. Please try again.” It covered every failure at once, which felt efficient.
+- **What it was covering:** A mistyped phone number, a code that had run out, a code typed into the wrong box, and a number that was never registered. Four situations, one sentence.
+- **The rule I had set myself in step 1:** Every error sits beside the field it concerns. Mine sat under both fields, which means it sat beside neither of them.
+- **What I found while splitting it:** The run-out code is not a field error at all. Nothing the person types will fix it, so that message needs a button that sends a fresh code.
+- **What I wrote instead:** Beside the number: “We could not find this number. Check it, or use the email you registered with.” Beside the code: “This code has run out.” with “Send a new code” under it. Whichever fails, the number stays in the box.
+
+**The wrong turn:** The wrong turn is one message for every failure, usually chosen because it feels safer not to say which half went wrong. It is safe and it is useless, and the person retypes both halves in the dark.
+
+**What it costs:** Naming which field failed does tell somebody poking at your form which numbers are registered. That is a genuine cost, and you weigh it against everybody shut out by a sentence that says nothing at all.
+
+**Still unknown:** Still unknown: whether “run out” is even the right phrase for a person who waited two minutes. The wording is written down; only watching somebody read it says whether it lands.
+
 - Write the exact wording for each error and confirmation: what happened, what to do next, and what was kept. Attach each error to its field.
 
 **You should end up with:** Label, instruction, error wording and preserved input for every field, each error attached to one field. Wording only, never real credentials.
@@ -827,7 +878,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Instruction:** The short line beside a field saying what shape the answer takes, shown before anyone types rather than after they get it wrong.
+- **Preserved input:** What somebody typed still sitting in the box after a failed attempt. Clearing a form makes one small slip cost the whole entry again.
+- **Credentials:** The things a person uses to prove who they are. In this lesson you write only the wording around them, never any real ones.
 
 Stuck starting? Write the error before the label. The error is where the thinking is, and it usually tells you what the instruction should have said.
 
@@ -851,7 +904,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Shared device:** A phone or computer more than one person opens. Ordinary in a household, and ordinary anywhere a phone is handed over for a minute.
+- **Staying signed in:** Your product keeping somebody signed in after they close it. That is a choice, and it belongs in plain view rather than assumed on their behalf.
+- **Repair:** The change a Check question asks you to make to your own work, written down along with what you altered.
 
 Stuck starting? Walk the flow twice on one device as two different people, and write down everything the second person can see.
 
@@ -1080,7 +1135,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Action:** One specific thing somebody does, such as cancelling a place or taking a payment. Written as a doing word, never as the name of a screen.
+- **Action list:** Everything anyone does in your product, gathered on one page before any of it is matched to anybody.
+- **Off-screen action:** Something already done by message, by phone or at the door. It belongs on the list even though no screen exists for it yet.
 
 Stuck starting? Go through your flow and write down every arrow that somebody has to do. Then add the things done by phone.
 
@@ -1116,7 +1173,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Matrix:** A grid with the actions down the side and the roles across the top. It exists so that the gaps become visible.
+- **Cell:** One square where an action meets a role. It carries exactly one of three marks, and nothing else.
+- **Undecided:** The mark for a cell nobody has ever actually settled. A cell you filled in while drawing the grid is undecided, however sure it felt.
 
 Stuck starting? Write the actions down the side first, then add one role column at a time.
 
@@ -1171,7 +1230,10 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Unavailable action:** Something a person cannot do in the role they are holding right now. Each one has to look like something on the screen.
+- **Hidden:** The control is not drawn at all. Fair where the person has no path to it and never will.
+- **Disabled with a reason:** The control is visible and cannot be used, with a sentence saying who can. Without the sentence it reads as the product being broken.
+- **Route to ask:** The control is visible and hands the request on to somebody who is allowed. Useful where the person is the one being asked.
 
 Stuck starting? Take the not-allowed cell you are least comfortable with and ask whether that person already knows the action exists.
 
@@ -1180,6 +1242,20 @@ Is it enough? No box says only “hidden” or only “disabled”. Every disabl
 </details>
 
 #### 5. Test the overlap and pause
+
+**See it first.** Made-up example. Walking my own permission matrix as one person holding two roles, and finding the product could not decide which one she was.
+
+- **Who I walked as:** The made-up owner also teaches one class a week. On my grid she is the owner, and she is also a teacher. Both rows are hers at the same moment.
+- **What I had assumed:** That holding two roles means holding the sum of both. More access, never less, so nothing could go wrong on the way.
+- **The first contradiction:** Teachers may see the names on their own class. Owners may see every name. Her class list and her class page therefore show different sets of names, reached from the same screen.
+- **The second:** Teachers may not see what anybody paid. Owners may. So the payment column turns up on her own class, which is the one class where she is standing in front of those people.
+- **What I wrote down:** Neither is a broken rule. Both are questions nobody has answered: which role is she in on her own class page, and does the product ever say which one it is showing her.
+
+**The wrong turn:** The wrong turn is walking the grid one role at a time, because each row reads faultlessly on its own. Every row can be right and the combination still argue with itself.
+
+**What it costs:** Deciding that one role wins on a given screen makes the product predictable and takes something away from her that the sum of her two roles would have given. You have to say which thing, and she will notice it going.
+
+**Still unknown:** Still unknown: whether she wants to see the payments at all while she is teaching. That is hers to say, and until she says it the matrix should carry the question rather than an answer.
 
 - Walk the flow as one person holding two roles. Record every contradiction. Save the matrix, the state decisions and the messages.
 
@@ -1194,7 +1270,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Overlap:** One person holding two roles at once, such as an owner who also teaches. Ordinary, and the place where models usually fall apart.
+- **Contradiction:** Two rules that are each sensible and cannot both be shown on the same screen. Write it down rather than picking a side on the spot.
+- **Repair:** The change a Check question asks you to make to your own work, written down along with what you altered.
 
 Stuck starting? Take the most likely double role in your product and complete one whole task as that person, slowly.
 
@@ -1435,7 +1513,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Loop:** A flow that comes back to where it started rather than running to an end. Browsing is a loop, because most of it is returning.
+- **Return arrow:** The arrow from an opened item back to the list of results. It carries most of the work on this screen and is almost never drawn.
+- **Preserved state:** Everything that has to be exactly as she left it when she comes back: her words, her narrowing, her sort order, her place in the list.
 
 Stuck starting? Draw the boxes you already have, then draw the arrow from the item back to the results and write on the arrow itself.
 
@@ -1444,6 +1524,20 @@ Is it enough? The preserved list names specific things rather than “the state�
 </details>
 
 #### 3. Design the result item
+
+**See it first.** Made-up example. Choosing the fields for one result card, and finding that most of them were there because the database happened to hold them.
+
+- **My first card:** Title, teacher, level, date, time, length, place, distance, price, places left, and a photograph. Eleven things, and it looked full rather than useful.
+- **The question I then asked:** For each field: what does this decide while somebody compares this row against the one underneath it? Not what does it tell them. What does it settle.
+- **What failed that question:** Length and level. Nobody in my notes had raised either while choosing; both came up afterwards, once a class was already open in front of them.
+- **What survived, in order:** Day and time first, because that is what people said aloud before anything else. Then the price, then how far away it is, then whether places are left.
+- **What I left off on purpose:** The teacher’s name. It matters enormously to somebody who has been before and means nothing to a first-timer, so it moved to the class page rather than the row.
+
+**The wrong turn:** The wrong turn is putting on the card whatever you happen to have. Every field is already sitting there, none of them look expensive, and the row quietly turns into something nobody can scan.
+
+**What it costs:** Five fields make the row scannable and take the teacher’s name away from returning people, which was their quickest way to choose. Some of them will open more classes than they used to.
+
+**Still unknown:** Still unknown: whether “places left” helps somebody or merely hurries them. It reads as useful, it may be pressure, and a drawing cannot tell those two apart.
 
 - Decide what appears on a result, using what your participants actually compared on. Write the fields in priority order and say what you deliberately left out.
 
@@ -1494,7 +1588,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Filter:** One narrowing somebody has applied, such as Saturday or under five hundred. Several together can rule out everything without any one of them looking wrong.
+- **No-results screen:** What she sees when nothing matches. It has real work to do: name the narrowing responsible and offer something to press.
+- **Route out:** The thing a person can act on when a screen has nothing for them. Without it the screen is a dead end however kindly it is worded.
 
 Stuck starting? Choose two filter combinations on your own product: one that would return nothing, one that would return far too much.
 
@@ -1517,7 +1613,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Candidate:** One of the few things somebody is still choosing between. Holding them is the product’s job, because holding them in her head is what makes her give up.
+- **Shortlist:** A place she adds things to as she goes, and can come back to. The heaviest of the usual answers, and the one that survives leaving and returning.
+- **Compare view:** Two or three things put side by side on purpose. Lighter than a shortlist, and it only helps once she already knows which two.
 
 Stuck starting? Write what a person is trying to hold in mind, and for how long. Then choose the smallest thing that removes that burden.
 
@@ -1757,7 +1855,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Review screen:** The last screen before the action, showing everything being agreed to in one place.
+- **Change route:** The way to alter one item from the review screen without starting the booking again.
+- **Total:** The whole amount, with nothing added after it. If a number can still grow on a later screen, it was never a total.
 
 Stuck starting? List everything she cannot change after the button, then check that each one appears on the screen before it.
 
@@ -1814,7 +1914,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Throttling:** Slowing your own browser down on purpose, using its own tools, so you can watch a page arrive the way somebody on a poor connection sees it.
+- **Cache:** The copy your browser keeps of things it has already fetched. Turning it off makes the load honest, like a first visit.
+- **Sequence:** The order the parts of the screen arrived in. Written down with rough seconds beside it, that is evidence rather than an impression.
 
 Stuck starting? No prototype yet? Open any comparable live booking page in your browser, turn on a slow profile in the browser’s own tools, disable the cache, and load it while watching. That is honest evidence about timing, and it needs no account.
 
@@ -1823,6 +1925,20 @@ Is it enough? You have a sequence and rough seconds written down, and you have s
 </details>
 
 #### 5. Prevent the double action and pause
+
+**See it first.** Made-up example. Deciding where a booking confirmation lives afterwards, and putting it somewhere that lasted exactly as long as one browser tab.
+
+- **Where I put it:** On the screen straight after the payment. Class, date, address and a reference, all in one place. It looked like a complete record because it had everything on it.
+- **What I did while looking at it:** I took a screenshot of my own screen. That is the whole finding: the person is trying to keep this, and a screen is not a thing that can be kept.
+- **Where it goes:** She closes the tab, or the phone runs out of battery, or she arrives at the studio with no signal. Nothing I had written said where the confirmation existed apart from that one screen.
+- **What I added:** The same confirmation sent as a message and as an email, both carrying the reference. The reference alone is enough to find the booking over the phone, and anyone signed in finds it again under Your bookings.
+- **What that did to the repeat question:** The sentence became: if a request arrives twice with the same reference, the second one changes nothing and returns the first confirmation. A resent form and a reopened tab both land on the booking she already has.
+
+**The wrong turn:** The wrong turn is treating the confirmation screen as the record. It is the most convincing screen in the whole flow, so it is the easiest place to stop, and it lasts exactly as long as one tab.
+
+**What it costs:** A confirmation that lives in three places has to be written three times and kept in agreement, and every later change to the booking now has to reach all three. That is real work, and it is what makes the confirmation survive the tab closing.
+
+**Still unknown:** Still unknown: whether a reference somebody has to read out over the phone is one anybody can read out. A code holding both a letter O and a zero is a question for somebody trying it, not for me.
 
 - Write how a repeated identical request is prevented from doing anything twice, and where the confirmation lives after the tab closes. Save the review, the states and the throttling notes.
 
@@ -2095,7 +2211,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Node:** One point on your flow: a screen, a decision, or a wait. The sweep visits each one in turn.
+- **Changed meanwhile:** A failure caused by somebody else acting while your person was still deciding. Almost nobody finds these by imagining.
+- **Leaving and coming back:** Somebody stopping partway and returning later, perhaps days later, on a different phone.
 
 Stuck starting? Put your flow in front of you and take the first question all the way along it before you look at the second.
 
@@ -2134,7 +2252,10 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Prevention:** Changing the design so the failure cannot happen, or becomes much harder to reach.
+- **Recovery:** What you give somebody once it has happened: an honest state, their work kept, and a route onwards.
+- **Undo:** A short window in which an action can be taken back. It costs nothing to the person who never needed it.
+- **Confirmation dialogue:** A box asking whether she is sure. Worth it once, for something truly irreversible; used often, it teaches people to press through without reading.
 
 Stuck starting? Take the case that worries you most and fill its row before you choose the other four.
 
@@ -2143,6 +2264,20 @@ Is it enough? Every row names a response and a reason, and no row classified as 
 </details>
 
 #### 4. Write the messages
+
+**See it first.** Made-up example. Writing the message for a class cancelled by the studio while somebody was on the payment screen, and apologising without answering anything.
+
+- **My first message:** “Sorry, something went wrong. Please try again.” It was polite, it fitted on one line, and it took about ten seconds to write.
+- **Reading it as her:** She has just pressed pay. Try again what? The class she was paying for no longer exists, so the one action I offered her was the one action that could not work.
+- **The three things missing:** What happened, what it means for her money and her held place, and what to do next. My sentence had none of them, and “something went wrong” hid the fact that we had cancelled the class ourselves.
+- **What I wrote instead:** “We have cancelled this class. Nothing has been taken from your account. Everything you typed is saved, and the same class runs again on two later dates — or we can tell you when new dates go up.”
+- **What it cost me to write:** Two decisions I had been quietly avoiding. Whether a payment already taken comes back automatically or on request, and whether telling somebody about new dates is a thing the product can actually do.
+
+**The wrong turn:** The wrong turn is reaching for an apology. It sounds kind, it commits to nothing, and it leaves her holding the same three questions she had before she read it.
+
+**What it costs:** A message saying we cancelled it names you as the cause, in words she can screenshot and forward to somebody. It is also the only version she can act on, and the only one that stops her paying again.
+
+**Still unknown:** Still unknown: whether offering later dates helps here or reads as a sales line at the worst possible moment. Somebody would have to read it back to you to settle that.
 
 - For each case write what happened, what it means for the person and what to do next. No message may use system vocabulary or leave the money question unanswered.
 
@@ -2178,7 +2313,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Harm:** What the person has lost by the time they notice. Money and lost work rank above time, and time ranks above tidiness.
+- **Likelihood:** How often a failure happens. It decides between two cases that do equal harm, and nothing else.
 
 Stuck starting? Ask of each case: what has this person lost by the time they notice? Money and work rank above time, and time ranks above tidiness.
 
@@ -2390,6 +2526,20 @@ Is it enough? The “can” list includes what is on the screen and in what orde
 
 #### 2. List the screens and their jobs
 
+**See it first.** Made-up example. Listing the screens for one branch of a class-booking flow, and writing job sentences that all had the word and in them.
+
+- **The list I made:** Seven screens, written from memory in about five minutes: results, class detail, review, payment, pending, confirmed, failed.
+- **The job sentences:** “This screen lets someone narrow the list and compare classes.” “This screen lets someone read about the class and book it.” Three of the seven held an and, and I read that as the screens being useful.
+- **Taking the worst one apart:** Narrowing and comparing want opposite things. Narrowing wants the choices at the top of the screen; comparing wants the same four facts on every row, where the eye can run straight down them.
+- **What I decided:** Comparing is the job. The narrowing controls became one line at the top saying what is being shown, and the rows were drawn for the four facts people were choosing between.
+- **What the split handed me:** A state I had never listed. Narrowing can produce nothing at all, and there was no empty-results screen anywhere on my list or on my flow.
+
+**The wrong turn:** The wrong turn is reading the word and as thoroughness. A screen with two jobs has had no ordering decision made about it, and the drawing will settle that by whatever happens to fit.
+
+**What it costs:** Choosing one job serves the other one worse. Narrowing now costs an extra tap, and anybody facing a long list of results will feel that every single time.
+
+**Still unknown:** Still unknown: whether comparing really is the main job here. It depends on how many results a search usually returns, and nobody has decided yet what a search returns.
+
 - From one branch of your flow, list every screen including the exception states. Write the single job of each in one sentence.
 
 **You should end up with:** Every screen and state in one branch of your flow, each with its single job.
@@ -2403,7 +2553,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Branch:** One route through your flow from beginning to end, including the places where it goes wrong.
+- **State:** The same screen in a different situation: empty, loading, failed. It is not a separate screen, and it still needs drawing.
+- **Single job:** The one thing a screen lets a person do. If the sentence needs the word and, you are probably looking at two screens or at an ordering nobody has decided.
 
 Stuck starting? Copy the branch off your flow first, states and all, before you write a single job.
 
@@ -2475,7 +2627,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Content order:** The top-to-bottom sequence of what is on a screen. On a narrow screen it is most of the design.
+- **Supporting material:** The parts that help once a decision has been made rather than helping to make it: descriptions, photographs, reassurance.
 
 Stuck starting? Choose the screen you are least sure about, not the one you like best.
 
@@ -2498,7 +2651,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Frame:** One drawn screen or state. A branch needs one for every state in it, including the dull ones.
+- **Walking the branch:** Reading your flow node by node with the frames beside you, ticking each state off as you find the frame that belongs to it.
 
 Stuck starting? Walk the branch screen by screen with your flow beside you, ticking off each state as you find its frame.
 
@@ -2737,7 +2891,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Never-move:** The elements a person is tracking through the whole task. They stay visible and reachable at every width.
+- **Priority:** Which things come first because of what a person is doing on the screen, rather than because of how they look.
+- **Hiding:** Leaving something out at narrow width. It takes that thing away from the people most likely to be on a phone, so each one needs a reason written beside it.
 
 Stuck starting? Ask what a person is holding in mind through the whole task. Those are your never-move elements.
 
@@ -2781,6 +2937,20 @@ Is it enough? Both narrow drawings begin with the never-move elements, and every
 
 #### 4. Test the hard cases
 
+**See it first.** Made-up example. Running the longest-label case on a class detail screen, and writing down that nothing broke.
+
+- **What I recorded first:** “Longest label: nothing broke.” It was true of the drawing in front of me, and it took no time at all.
+- **Which label I had used:** The one already on the frame. I had chosen it while drawing, which means I had chosen one that fitted.
+- **The real longest one:** From my m06 table: “Beginners’ wheel throwing, Saturday morning, six weeks”. I wrote it into every place the class name appears, including the action and the confirmed screen.
+- **What broke, named:** The name ran to three lines and pushed the price below the fold at narrow width. The action, which repeated the name, wrapped onto two lines and lost its shape. On the confirmed screen the name was cut short at the same point as the class after it, so the two could not be told apart.
+- **What I wrote instead of cramped:** Those three, each with the width it happened at, and the rule that came out of them: the action never repeats the class name.
+
+**The wrong turn:** The wrong turn is checking with the label you drew with. It is the label that fitted, which is exactly why it is on the frame, so the check passes quietly every time.
+
+**What it costs:** A layout that survives the longest name gives that name room it does not usually need, so at wide width the screen looks emptier than you would like it to, and somebody will say so.
+
+**Still unknown:** Still unknown: whether anything at all limits how long a class name can be. Until somebody writes that rule down, the longest one in the table is only the longest so far.
+
 - Check the longest label, the enlarged-text case from your m03 work, and what happens when an image fails to load. Record what breaks.
 
 **You should end up with:** What broke with the longest label, with enlarged text, and with no image, named specifically.
@@ -2817,7 +2987,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Behaviour note:** A written instruction saying what happens at each width, in words somebody could build from without asking you.
+- **Width:** Narrow, medium and wide mean a phone, a tablet and a large screen. Say which you mean, since a note that only says smaller can be built two different ways.
 
 Stuck starting? Write each note in the form “at narrow, X moves above Y, Z is hidden, the action stays visible”.
 
@@ -3062,7 +3233,10 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Trigger:** What puts the thing into this state.
+- **Exit:** What takes it out again. A row with a blank exit is a state somebody can be stuck in.
+- **Disabled:** Not yet. Something has to happen first, and the sentence beside it says what.
+- **Unavailable:** Not for you, or not now. Nothing she does on this screen will change it, so it needs a route to somewhere else.
 
 Stuck starting? Fill the exit column first on every row. It is the one that exposes the states you had not decided.
 
@@ -3095,7 +3269,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Partly loaded:** Some of the screen has arrived and some has not. It needs a design of its own, because it is what people on a slow connection see first.
+- **Permission denied:** The screen exists but this person may not see it. It should say who may, and what she can do instead.
+- **Offline:** No connection at all. Say what is still usable, and what happens to anything she has already typed.
 
 Stuck starting? Place the wording you already wrote in your exception table, rather than writing it twice.
 
@@ -3104,6 +3280,20 @@ Is it enough? Every screen state has content of its own, not merely a spinner or
 </details>
 
 #### 4. Find the dead ends
+
+**See it first.** Made-up example. Hunting for dead ends in a state table where every exit cell already had words in it.
+
+- **Why I nearly skipped this step:** Every row had something written in the exit column. Nothing was blank, so the table looked finished.
+- **The first one I actually tested:** Unavailable said “ended by choosing another date”. On that screen there were no other dates to choose. They lived on the previous screen, and going back re-ran the search from empty.
+- **What I had really written:** A wish rather than an exit. An exit is only real if the thing it names can be reached from inside the state itself.
+- **Two more of the same shape:** Error said “ended by trying again”, and trying again with the same details fails in the same way. The success state after cancelling said nothing at all, and left her looking at one empty list.
+- **What I changed:** The unavailable row now carries the other dates inside the state. The error row names the one thing to change before trying again. The success state says where she is going next and puts her there.
+
+**The wrong turn:** The wrong turn is filling the exit column with the action you hope she will take. It reads as complete, because every cell has words in it, and none of it has been tested from where she is standing.
+
+**What it costs:** Real exits push more into states you would rather keep small. The full state now carries a list of dates, which makes it a busier thing to design, to write and to build than a grey line of text.
+
+**Still unknown:** Still unknown: whether the error exit is right. You cannot always tell somebody what to change, and saying nothing specific there may turn out to be the only honest thing to say.
 
 - Check every state has a way out and every loading state has a defined end, including timeout. Fix any state a person could be stuck in.
 
@@ -3116,7 +3306,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Dead end:** A state with no way out: nothing to press, and nothing that ends it.
+- **Timeout:** The point at which you decide the waiting has gone on too long, and what she sees then. Without one, loading has no end.
 
 Stuck starting? Read down the exit column of both tables and stop at every gap.
 
@@ -3139,7 +3330,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Greyscale:** The same screens with the colour taken out. Anything carried by colour alone disappears, which is the reason for looking.
+- **Second signal:** A second way of carrying the same meaning: a word, a small icon, a heavier border.
 
 Stuck starting? Photocopy or photograph the states in greyscale and look for any pair you can no longer tell apart.
 
@@ -3364,7 +3556,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Node:** One point in the flow: usually a screen a person sees, sometimes a decision the system makes.
+- **Transition:** One arrow between two nodes, meaning one move from one place to the next. The condition on it says when that move happens.
+- **Wait state:** A node where the person is waiting for something that has not finished yet, such as a payment being checked. It is easy to leave undrawn because nobody presses anything there.
 
 Stuck starting? Lay the flow out flat and put each frame beside the node it belongs to before you write anything.
 
@@ -3414,6 +3608,20 @@ Is it enough? Each annotation says something the picture does not, in words some
 
 #### 4. List what is still open
 
+**See it first.** Made-up example. Writing the open-questions list for a made-up wireflow about reporting a broken street light, and quietly leaving off the questions that made me look unfinished.
+
+- **What I put on the list:** Four tidy questions: the wording of one button, whether the map pin should sit on the kerb or the pavement, two label choices. All of them small, and all of them things I could settle in an afternoon.
+- **What I left off:** That I had no idea what happens after somebody reports a light. I had drawn a thank-you screen and moved on. Writing that down felt like admitting there was a hole in the middle of the flow.
+- **Why the silence was the problem:** The sheet does not mark which parts are decided. Anything absent from the open list reads as settled, so leaving the question off turned my guess into an instruction to whoever builds it.
+- **What I added instead:** One line saying that nobody has decided whether the reporter ever hears anything again, and that the thank-you screen is a guess rather than a decision. Then two more of the same kind.
+- **What the list became:** Seven questions instead of four, three of them large, with a version line above them: v2, 4 March, added the after-report question and the two refund states.
+
+**The wrong turn:** The tempting error is listing only the questions you already know how to answer. A short, tidy list looks like a design that is nearly finished, and that is exactly why it is hard to resist writing one.
+
+**What it costs:** A long open list makes the artefact look less resolved than it did, and somebody will ask whether you have done enough work. You are trading the appearance of finish for a reader who knows which parts not to build on.
+
+**Still unknown:** Still unknown: whether anything should be sent to the reporter at all. Writing the question down does not answer it. It only stops the thank-you screen being read as a decision somebody made.
+
 - Write the open-questions list on the artefact: guessed labels, undecided permissions, unwritten content, untested assumptions. Date and version the whole thing.
 
 **You should end up with:** The open-questions list as it will appear on the artefact, with a date and a version.
@@ -3426,7 +3634,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Open question:** Something the sheet does not settle, written on the sheet itself so that nobody builds on it by accident.
+- **Assumption:** Something you have taken to be true without checking. On an artefact it belongs in the open questions rather than in the drawing.
+- **Version line:** A short line saying which version this is, the date, and what changed since the last one. It tells a reader whether the copy in their hand is the one being discussed.
 
 Stuck starting? Collect the guesses from your m06 change note and the undecided cells from your permission matrix first; they are already written.
 
@@ -3768,6 +3978,20 @@ Is it enough? Each record has an expectation written before a change, not only w
 
 #### 4. Record the undrawn moments
 
+**See it first.** Made-up example. Invented practice notes from a paper test of a repeat prescription order, written up afterwards as though the task had simply gone fine.
+
+- **What the note said:** Against task two, three words: completed, no help. It was true, and it was the entire record of that task.
+- **What those three words covered over:** In the same made-up notes, the person had opened the same screen twice looking for the strength, said that she thought it was the right one, and only then ordered. The task finished. She never became sure.
+- **The rule I started using:** Finishing is not the test. Wherever what a person expected and what the sheet did were different, that is a row in the mismatch list, even when the task ends well.
+- **What went into the boxes instead:** Two mismatch rows, each with what she expected the screen to tell her and what it told her. One undrawn row: she reached for the last order to compare against, and no such screen exists.
+- **What that changed:** The undrawn list grew by one thing I had never designed, and it had been completely invisible while the note read completed.
+
+**The wrong turn:** The tempting error is recording outcomes instead of expectations. Outcomes are quick to write, they mostly say the design worked, and a page of them makes the session look like a good afternoon.
+
+**What it costs:** Recording every mismatch turns three short sessions into an uncomfortably long list, and some rows will be that one person rather than the design. Three people cannot tell you which is which, so you carry all of them into the ranking.
+
+**Still unknown:** Still unknown: whether her doubt came from the wording or from the strength being missing on the card. The notes say what she reached for and what she said, and they stop there.
+
 - Immediately write every place a participant tried something you had not designed, with what they expected. These are your missing screens and interactions.
 
 **You should end up with:** Everything people reached for that you had not drawn, and every place expectation and outcome did not match.
@@ -3780,7 +4004,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Mismatch:** A place where what the person expected and what actually happened were not the same, whether or not they got stuck.
+- **Completion:** The person reached the end of the task. On its own it is not a result, because it says nothing about whether they understood what they were doing.
 
 Stuck starting? Write this immediately after each session, before the details go soft.
 
@@ -3804,7 +4029,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Harm:** What a problem costs the person: the task they cannot finish, the money, the time, the thing they lose.
+- **Frequency:** How many people met a problem. It is not the same as harm, and it is the thing that quietly takes over a ranking if you let it.
+- **Sample:** Who you actually tested with and how you found them. It decides what your findings can be said about, and what they cannot.
 
 Stuck starting? For each problem write what it costs the person, then sort by that column alone.
 
@@ -4044,7 +4271,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Repair:** A change made to answer one problem you found, rather than a general tidy-up of everything you notice while you are in there.
+- **Attribution:** Being able to say which change caused which result. It only holds if nothing else moved between the two tests.
+- **Version line:** A short line on the sheet saying which version it is, the date, and what changed. Mark it as you make each repair, not at the end.
 
 Stuck starting? Change one thing, mark the version line, then change the second.
 
@@ -4088,6 +4317,20 @@ Is it enough? Every prediction has an outcome beside it, and any that did not ho
 
 #### 4. Write the decision record
 
+**See it first.** Made-up example. Writing the decision record for a made-up wireflow, and dressing three of my own preferences up as evidence.
+
+- **What my first four entries had in common:** Each one ended with the words based on testing. Only one of the four had anything from a session behind it.
+- **The entry that was really evidence:** Preserving the list of results on return. That change was made because of something that happened in front of me, and the entry can name what it was.
+- **What the other three were:** Preferences. I put the summary at the top of the screen because I like it there, and nobody had ever looked at that screen while I watched.
+- **What I wrote instead:** Three entries whose evidence line reads: none, my judgement, untested. Nothing else about those decisions changed, and I did not undo any of them.
+- **What the rejected alternative was for:** Each entry now names the thing I did not do and why. Six months later that is the part nobody can reconstruct from the drawing, because a drawing only shows what was chosen.
+
+**The wrong turn:** The tempting error is writing based on testing under a decision that merely happened after a test. It is nearly true, it reads well, and it lets one small piece of evidence spread itself over the whole record.
+
+**What it costs:** An honest record shows how thin the evidence is: one entry with a session behind it and three saying none. A reader can now see exactly how much of the design is your taste, which is uncomfortable and is the whole point of keeping the record.
+
+**Still unknown:** Still unknown: whether those three untested decisions are any good. Marking them as judgement does not improve them. It stops the next person treating them as settled.
+
 - For every significant decision in this module write what was decided, the evidence, the rejected alternatives and what is untested. Include the decisions your test contradicted.
 
 **You should end up with:** One entry per significant decision: what was decided, the evidence, the rejected alternative and what is untested.
@@ -4126,7 +4369,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Known and unfixed:** A problem you have found, decided not to repair, and written down with the reason. It is a normal state for a real product rather than an admission.
+- **Recruitment gap:** A dated note of the people you tried to reach for a session and could not. It is a result about your evidence, not a failure to tidy away.
+- **Assistive technology:** Tools people use to work a screen in another way, such as a screen reader that speaks it aloud. Paper cannot tell you anything about how the design behaves with them.
 
 Stuck starting? List everything a real product meets that a paper test with a handful of people did not.
 

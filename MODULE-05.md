@@ -88,7 +88,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Brief:** The short statement of what you have been asked to do. It is usually written by somebody who already knows what they meant.
+- **Assumption:** Something you are treating as true without having checked it. Most briefs are made mostly of these.
 
 Stuck starting? Set a timer for ten minutes and write badly.
 
@@ -127,7 +128,8 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Decision:** A choice you are facing now and could genuinely make either way. If nothing you do changes with the answer, there is no decision attached.
+- **Summary judgement:** A question that asks for an overall verdict, such as whether something is easy or good. It collects opinions and settles nothing.
 
 Stuck starting? Take each raw question and finish the sentence “if the answer is X, I will …”.
 
@@ -136,6 +138,20 @@ Is it enough? Every question names a decision you are genuinely facing.
 </details>
 
 #### 4. Group, rank and cut to five
+
+**See it first.** Made-up example. Ranking five questions and putting the most interesting one on top instead of the one most turns on.
+
+- **My first order:** I ranked them by how much I wanted to know the answer. The question about why people choose a Saturday class went straight to the top, because I was curious about it.
+- **What was sitting underneath:** Fourth on the list was the one about when people decide what to bring. Dull to me, and the only one that changes the page I am about to redraw this month.
+- **The test that fixed it:** For each question I asked what happens if I never learn the answer. For the Saturday one: nothing, this quarter. For the fourth one: I redraw the page blind.
+- **The reorder:** The dull one went first. Curiosity moved down to fourth, where it can still be a tangent if a session runs short of material.
+- **What I cut, and wrote down:** Two questions came off the list. I kept a line each saying why they can wait, so that cutting them was a decision I made rather than something that quietly happened.
+
+**The wrong turn:** The wrong turn is ranking by curiosity. Your own interest feels exactly like importance, and it reliably promotes the question whose answer changes nothing you are doing this month.
+
+**What it costs:** Ranking by consequence puts a dull question first, and the opening minutes of a session are the freshest ones you will get. You spend them on something you did not want to ask.
+
+**Still unknown:** Still unknown: whether the two you cut were the right two. Nothing in the ranking proves it, and you find out only if a decision later turns out to have needed one of them.
 
 - Group near-duplicates into one question with the better wording. Rank what remains by decision impact. Keep the top five. Move the rest to a “not this study” list with one line each saying why, so you do not rediscover them next week.
 
@@ -149,7 +165,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Consequence:** How much turns on the answer. A question with high consequence changes something big, or something soon.
+- **Cut list:** The questions you have deliberately set aside, written down so that setting them aside was a choice rather than an oversight.
 
 Stuck starting? Rank by consequence first, then by how little you already know.
 
@@ -182,7 +199,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Closure:** The point at which a question stops. A question has closure if you can name the evidence that would settle it.
+- **Repair:** The specific change a Check question asks you to make to work you have already written, rather than a note to do better next time.
 
 Stuck starting? For each question ask what you would need to see or hear to stop asking it.
 
@@ -394,6 +412,20 @@ Is it enough? Each line names the question type rather than describing the metho
 
 #### 2. Classify your five
 
+**See it first.** Made-up example. Labelling five questions by type, and giving one the label that suited the method I had already picked.
+
+- **The question:** “How do people work out what to bring to a class?” I labelled it experience and reasoning, because I had already decided I was going to interview people.
+- **What I had actually done:** I chose the label to fit the method instead of choosing the method to fit the label. At that point the label was doing no work at all.
+- **Reading the question again:** Working out what to bring is something a person does: opening a page, scrolling, giving up, messaging a friend. That is behaviour, and behaviour is watched rather than recalled.
+- **What changed:** The pairing became one observation with a short interview after it, rather than three interviews asking people to remember a small thing they did weeks ago.
+- **The one that kept its label:** Another question was genuinely about reasoning, which was why they chose that class at all. No amount of watching reaches that. Two labels, two methods.
+
+**The wrong turn:** The wrong turn is labelling backwards from the method you are comfortable with. Interviews are the one method most people can run alone, so every question quietly turns into a question about reasoning.
+
+**What it costs:** Observation needs somebody willing to be watched doing an ordinary thing, which is harder to arrange than a conversation and usually has to be fitted around their day rather than yours.
+
+**Still unknown:** Still unknown: whether what somebody does while you watch is what they do when nobody is there. Being observed changes the doing, and no label repairs that.
+
 - Label each of your questions as behaviour, experience and reasoning, frequency, or ability to operate. Some will resist a single label; split those into two questions rather than forcing one.
 
 **You should end up with:** Each of your five labelled by question type.
@@ -405,7 +437,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Experience and reasoning question:** What something was like for somebody, and why they did what they did. You have to ask, because none of it is visible.
+- **Ability to complete question:** Whether a person can finish a task with the thing in front of them. You answer it by watching somebody try.
 
 Stuck starting? Ask of each question: is this about what people do, what they experienced, how many, or whether they can finish?
 
@@ -442,7 +475,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Pairing:** One question set beside the single method you would use to answer it, with the cost of running it written next to it.
+- **Access:** Whatever you would need permission or an introduction to reach: a list of past customers, a room, an hour of somebody’s working day.
+- **Write-up:** The time after a session spent turning notes into something readable. It is usually about as long as the session itself.
 
 Stuck starting? Write the hours honestly, including writing up. Sessions take about twice as long as the session itself.
 
@@ -474,7 +509,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Exclusion:** A sentence saying what this method will not let you claim, written down before you run it.
+- **Overclaim:** Saying more than your evidence carries, usually by turning a few accounts into a statement about people in general.
 
 Stuck starting? For each pairing, imagine writing the report and catch the overclaim before you make it.
 
@@ -497,7 +533,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Not-run:** A method you have deliberately not scheduled, recorded together with what would have to change for you to run it.
+- **Repair:** The specific change a Check question asks you to make to work you have already written, rather than a note to do better next time.
 
 Stuck starting? Choose the two attached to your highest-ranked questions, not the two that are easiest.
 
@@ -708,6 +745,20 @@ Is it enough? Your line says what a review cannot produce.
 
 #### 2. Gather existing evidence
 
+**See it first.** Made-up example. Half an hour of desk research that produced a pile of complaints I could not use.
+
+- **What I gathered:** Twenty minutes of public reviews of three booking services, copied into one note. I kept the angry ones, because they said the most.
+- **What I had built:** A collection of the loudest voices. People write in public when something goes badly or unusually well, so the quiet middle was missing entirely.
+- **The dating problem:** Nothing I had copied carried a date. One complaint described a step that no longer exists on that service, and I could not tell which of the others were about versions I will never see.
+- **What I did instead:** Same thirty minutes. Every entry dated, three calm reviews kept alongside the angry ones, and one line under each saying where it came from.
+- **How I labelled the note:** A sentence at the top: this is what people chose to write in public, not what happened. It sits above the note so that it is read first.
+
+**The wrong turn:** The wrong turn is keeping only the strong reactions, because they are vivid and read like findings. They are the cheapest evidence you will ever gather and the least representative.
+
+**What it costs:** Dating everything and keeping the calm entries eats into the thirty minutes, so you cover fewer sources. You end with a thinner note that you can still trust in a month.
+
+**Still unknown:** Still unknown: what the people who wrote nothing experienced, which is very nearly everybody. No amount of desk research reaches them.
+
 - Spend a fixed thirty minutes collecting what already exists about your problem: reviews, support pages, forum threads, published reports, anything already held. Record source, URL and retrieval date for every item. Stop at thirty minutes even if it is going well.
 
 **You should end up with:** Thirty minutes of existing evidence, each source dated.
@@ -719,7 +770,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Desk research:** Looking at evidence that already exists rather than making new evidence. Reviews, support messages, forum questions, anything already written down.
+- **Source:** One place a piece of existing evidence came from, written down with its date so you can tell how old it is.
 
 Stuck starting? Set a timer. Look at reviews, forum questions and anything the studio already receives.
 
@@ -757,7 +809,8 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Identical task:** The same job attempted on each service, so that what happens on one can be set against what happens on another.
+- **Step-by-step account:** A plain record of what you did and what the service did back, in order, with no judgement added along the way.
 
 Stuck starting? Choose a task your own service must support, then do it on each rival without stopping to admire anything.
 
@@ -788,7 +841,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Hypothesis:** A suspicion written down in a form that something could check. It is a starting point, not a result.
+- **Conclusion:** A statement you are treating as settled. A review with no people in it cannot produce one about people.
 
 Stuck starting? Take each thing you noticed and finish “this makes me suspect …, which I could check by …”.
 
@@ -810,7 +864,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Limits:** The written list of what this piece of work did not establish, kept beside the work so that it travels wherever the work goes.
+- **Proportion:** How much of a group does something, such as two in three. Looking at a handful of services can never give you one.
 
 Stuck starting? List proportions, causes and outcomes first; a review reaches none of them.
 
@@ -1011,7 +1066,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Lead time:** The number of days between asking for people and having them booked in. Counted from today, including the days when nobody replies.
+- **Accommodation:** A change you make so that somebody can take part: a different time, a phone call instead of video, longer to answer a question.
 
 Stuck starting? Read the assigned page and write the numbers down rather than remembering them.
 
@@ -1072,7 +1128,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Screener:** The short set of questions you send before booking anybody, used to decide who takes part.
+- **Leading question:** One whose wording points at the answer you are hoping for, so the reply tells you about your wording rather than about them.
+- **De-bias:** Reading each question back to see whether it gives away what you want to hear, and rewriting it when it does.
 
 Stuck starting? Write the questions, then read each one back as though you were an eager volunteer.
 
@@ -1081,6 +1139,20 @@ Is it enough? No question names the topic of the study.
 </details>
 
 #### 4. Plan the route, the time and the offer
+
+**See it first.** Made-up example. Choosing what to offer participants, and quietly deciding who they would be.
+
+- **What I offered:** A free class at the studio. It costs the studio very little, it feels generous, and it looked like an obvious fit.
+- **Who that actually reaches:** It is worth something only to somebody who already wants to come to the studio. Anyone who tried once and gave up is being offered more of the thing that put them off.
+- **The second problem:** It only pays out if they come back, so the offer is doing the studio’s recruitment at the same time as mine. That is a reason to say yes that has nothing to do with the study.
+- **What I changed:** A small voucher for a shop anybody uses, the same amount for everybody, handed over whether or not they finish the session.
+- **The lead time beside it:** Then I counted days from today rather than from when I would like to begin: two days to write the message, a week where nobody replies, two days to book. That gives a date.
+
+**The wrong turn:** The wrong turn is offering something from your own service, because it is cheap and it feels warm. It pays most to the people who already like you, who are the group you least need to hear from.
+
+**What it costs:** A voucher is real money out of a small budget, so it buys fewer sessions than the free class would have. You are trading the number of participants for which participants you get.
+
+**Still unknown:** Still unknown: whether the amount is right. Too little and only the very willing reply, too much and people take part for the money. You cannot tell from inside your own plan.
 
 - Write where you will find people, how long that will take starting from today, what you will offer for their time, and what you will say if they ask what happens to their answers. Include a fallback route in case the first produces nobody.
 
@@ -1094,7 +1166,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Incentive:** What you offer in return for somebody’s time. It changes who says yes, so the choice is part of the sample.
+- **Recruitment route:** The particular way you reach people: a mailing list, a noticeboard, a friend asking a colleague.
 
 Stuck starting? Count the days from today including the ones where nobody replies.
 
@@ -1126,7 +1199,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Systematic exclusion:** A group your route could never reach, absent for a reason rather than by chance.
+- **Convenience sample:** People recruited because they were easy for you to reach rather than because they were the right people to ask.
 
 Stuck starting? Ask who could not possibly be reached by this route, and who would never volunteer.
 
@@ -1362,7 +1436,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Consent introduction:** The short thing you say aloud at the start of a session, before anything is recorded or asked.
+- **Withdrawal:** Somebody deciding to stop, or to have their material taken back out, after they had already agreed.
 
 Stuck starting? Write it, read it aloud with a timer, then cut whatever made you wince.
 
@@ -1395,7 +1470,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Data plan:** A written note of what you collect, where it lives, who can see it, when it goes, and how one person’s material could be taken out of it.
+- **Retention:** How long you keep something before deleting it, decided in advance rather than whenever you happen to remember.
+- **Anonymise:** Take out the details that would let a reader work out who said it, including the ones that are not names.
 
 Stuck starting? Write what you collect first; the rest follows from it.
 
@@ -1404,6 +1481,20 @@ Is it enough? Removing one person is possible with the storage you described.
 </details>
 
 #### 4. Rehearse the hard moments
+
+**See it first.** Made-up example. Rehearsing the hard moments and finding that I had written intentions instead of words.
+
+- **What I wrote first:** Four lines: stay calm, reassure them, be open about the notes, move on gently. On the page it looked like preparation.
+- **Reading it back:** Not one of those is a sentence I could say to a person. Under pressure I would be composing from nothing, which is exactly when the wrong thing comes out.
+- **The moment that broke it:** They ask to see the notes. My intention said be open. My notes had a line in them reading “seemed confused by the obvious”, which I could not hand to anybody.
+- **What I changed first:** Not the sentence, the notes. I now write what somebody did and said, and keep any verdict of mine on a separate line, marked as mine.
+- **The words I ended with:** “Yes, of course. Here is everything I have written. Tell me if I have got anything wrong.” Short enough to say while handing the page across.
+
+**The wrong turn:** The wrong turn is writing what you intend to do instead of what you will say. Intentions cost nothing to write, they feel like readiness, and they leave you silent at the moment you needed a sentence.
+
+**What it costs:** Notes with no verdicts in them are longer and duller to reread, and the quick judgement you used to write in the margin was doing real work. That work now falls to you afterwards, when the session has gone cold.
+
+**Still unknown:** Still unknown: whether you will reach these words when it actually happens. Rehearsal tells you the sentence exists. It does not tell you that you will find it while somebody is upset in front of you.
 
 - Write what you will say if someone asks to see the notes, asks not to be recorded, goes quiet on a sensitive topic, or withdraws two weeks later. Rehearse the withdrawal one aloud; it is the one people handle badly under pressure.
 
@@ -1416,7 +1507,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Hard moment:** A point in a session where what you say next matters and you will have no time to think: a refusal, a long silence, a request to see your notes.
+- **Rehearsal:** Saying the words out loud before the session, so that under pressure you are remembering rather than composing.
 
 Stuck starting? Write the words, not the intention. You will need them under pressure.
 
@@ -1438,7 +1530,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Jurisdiction:** The country whose rules apply to what you are doing. Guidance written for one place may not hold in another.
+- **Compliance:** Meeting a legal requirement. Saying which guidance you followed is not the same as claiming this.
 
 Stuck starting? State plainly which guidance you followed and what you have not checked.
 
@@ -1628,6 +1721,20 @@ Tools: Paper, a pen and the voice recorder already on your phone, used only with
 
 #### 1. Rebuild the guide
 
+**See it first.** Made-up example. A guide full of sensible questions that could not produce a single event.
+
+- **What I wrote first:** How do you usually prepare for a class? What would make preparing easier? Do you find the current information clear?
+- **What I heard reading them aloud:** Every question asks her to summarise herself or to design something for me. Not one asks about a thing that happened.
+- **Why that matters:** An answer about what someone usually does is their theory of themselves, tidied up. You get a policy instead of an occasion.
+- **The rewrite:** Tell me about the last class you booked. Then: walk me through what you did between booking it and turning up.
+- **The one I left alone:** The closing question, is there anything I should have asked. It points at no occasion and it still earns its place.
+
+**The wrong turn:** The tempting error is asking what would help. It sounds considerate, and it invites her to invent a solution, which is your job and which she has no way of testing.
+
+**What it costs:** Episode questions buy you one occasion in detail and lose you the other twenty. You are trading breadth for something that actually happened.
+
+**Still unknown:** Still unknown: whether the last time was a typical time. She may reach for the occasion she remembers, and people remember the ones that went wrong.
+
 - Read the assigned interview page and the note-taking page. Rewrite your guide as: warm-up, the recent episode walked through in order, two or three probes tied to your ranked questions, and a closing invitation. Keep it to one side of paper.
 
 **You should end up with:** A guide with a warm-up, episode questions and a closing question.
@@ -1663,7 +1770,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Inferred:** Your reading of what was said, rather than the words themselves. Keeping it in its own column is what stops a conclusion being quoted later as something the person told you.
+- **Follow up:** The question you would ask next time, written down while you still remember why you wanted to ask it.
+- **Audio consent:** Someone’s agreement to be recorded, asked for separately from their agreement to be interviewed. They may say yes to one and no to the other.
 
 Stuck starting? Draw the three columns before the session, not during it.
 
@@ -1701,7 +1810,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Session status:** A plain statement of what actually happened: a real interview, or a rehearsal with nobody there.
+- **Rehearsal:** Reading your guide aloud with no participant. It finds wording that carries the answer inside it, and questions nobody could answer.
+- **Reconstruction:** Notes written later from memory rather than at the time. Memory tidies, usually towards what you expected, so reconstructed notes are weaker and are marked as such.
 
 Stuck starting? If nobody is available, choose rehearsal, read the guide aloud, and note where you stumbled.
 
@@ -1734,7 +1845,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Leading question:** A question with the answer already inside it, so agreeing is the easiest thing the other person can do.
+- **Write-up:** Turning rough notes into a readable record, done the same day while you can still tell what your own shorthand meant.
 
 Stuck starting? Look for the answers that were short and agreeable; the question before each is usually the failure.
 
@@ -1755,7 +1867,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Revised guide:** The version you would use next time, changed by what happened in the session rather than by rethinking it at your desk.
+- **Repair:** The specific fix a Check question asks for, made in the step it names rather than noted as an intention.
 
 Stuck starting? Update the guide now, while you remember what happened.
 
@@ -1967,6 +2080,20 @@ Is it enough? The distortion is named before the session, not after.
 
 #### 2. Prepare the guide and the consent
 
+**See it first.** Made-up example. Consent taken from the one person in the room who was easiest to ask.
+
+- **What I arranged:** She agreed by message to be watched doing the task at her desk. I thought consent was settled.
+- **What the setting turned out to contain:** A colleague at the next desk, someone waiting to be served, and a screen with other people’s names on it.
+- **What my notes would have held:** Half of the interesting moments involve somebody who never agreed to anything and does not know I am writing.
+- **What I wrote before going:** A line saying what I would not record: no names from the screen, other people described only by role, no photographs of anyone.
+- **What I did on arrival:** I told the colleague what I was there for and offered to stop writing while he was involved. It took about twenty seconds to ask.
+
+**The wrong turn:** The tempting error is treating consent as one person’s yes. She is the one you recruited, so she is the one you ask, and everybody else in the room quietly becomes material.
+
+**What it costs:** Describing other people only by role costs you detail you will later wish you had, and an interruption you cannot record properly is still part of the situation you came to understand.
+
+**Still unknown:** Still unknown: whether the colleague behaved differently once he had been told. Asking is the right thing to do and it does change the setting.
+
 - Write a short checklist of what you are watching for, drawn from your questions and your interview follow-ups. Extend your consent introduction to cover being in their space, photography and other people present.
 
 **You should end up with:** A short watch list and consent that covers the setting.
@@ -1979,7 +2106,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Watch list:** A short list of what you mean to notice, written before you go. Short, because a long one turns the session into ticking boxes.
+- **Consent:** Someone’s agreement, given once they know what you will do with what you see. It can be withdrawn at any moment, including halfway through.
+- **Setting:** The place and circumstances the task happens in: who else is there, what else is going on, and what the person is doing at the same time.
 
 Stuck starting? Draw the list from what your interviews could not reach.
 
@@ -2016,7 +2145,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Workaround:** Something the person does that the design did not intend, usually because it is quicker or because the intended way does not fit their situation.
+- **Environment:** What was going on around the task: interruptions, other people, noise, the state of the device in their hand.
 
 Stuck starting? Write the environment before the actions; it is the part you will forget.
 
@@ -2049,7 +2179,8 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Behaviour:** What the person did, written so plainly that anyone else watching would have recorded the same line.
+- **Interpretation:** Your explanation of why they did it. It belongs in the notes, marked as yours, and never inside the description of what happened.
 
 Stuck starting? Look for things people would not think to mention: timing, repetition, what they did with their other hand.
 
@@ -2071,7 +2202,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Distortion:** The way your presence and your chosen stance changed what you saw. Every stance has one, and naming it is part of the record.
+- **Limits:** A short statement of what this session cannot tell you, written so that a reader does not take it for more than it is.
 
 Stuck starting? Ask what a second observer sitting elsewhere would have noticed that you did not.
 
@@ -2261,6 +2393,20 @@ Tools: A messaging app the participant already has, or paper if they prefer, plu
 
 #### 1. Read and choose a trigger
 
+**See it first.** Made-up example. A trigger chosen to suit my week rather than her behaviour.
+
+- **What I chose first:** One entry each evening at nine, for seven days. Predictable, easy to prompt, easy to follow up.
+- **What I was actually asking about:** Booking a class, which happens perhaps twice a week and takes four minutes.
+- **What that plan would have produced:** Five evenings of nothing much, and two evenings of recall about something that happened hours earlier.
+- **What I changed it to:** She logs when she books, whenever that is, even if the entry is one line.
+- **What I kept from the first plan:** The evening prompt, cut down to one line: anything today? It catches the bookings she forgot to log at the time.
+
+**The wrong turn:** The tempting error is choosing a fixed daily entry because it gives you a tidy row per day. Regular material is comfortable to receive and it is not the shape of the thing you are studying.
+
+**What it costs:** Logging at the moment depends on her remembering, so silence becomes ambiguous: you cannot tell a day with no booking from a day she simply did not write.
+
+**Still unknown:** Still unknown: whether twice a week is right. If the thing turns out to be rarer than that, a single week may contain none of it at all.
+
 - Read the assigned article. Choose event, interval or signal triggering for your question, and write what your choice will systematically miss.
 
 **You should end up with:** A trigger type chosen for your question.
@@ -2307,7 +2453,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Entry template:** The few prompts a participant answers each time. It is the whole instrument, so every extra line is paid for daily by someone doing you a favour.
+- **Prompt:** One question in the entry, short enough to answer on a phone while standing up.
+- **Medium:** Where the entries are written: a text message, a note app, a photograph. Something they already use, never a tool they must install for you.
 
 Stuck starting? Fill in your own template once and time yourself, then cut it.
 
@@ -2329,7 +2477,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Protocol:** The written plan for the study: how long it runs, when prompts go out, what you send on the first day, and what you are asking of the participant.
+- **Day-one message:** The first message a participant receives. It sets the tone, so write it out in full before anyone has agreed to anything.
+- **Burden:** What the study costs the participant in time and attention, counted in minutes per day. Estimate it, then double it, because you know what your own prompts mean and they do not.
 
 Stuck starting? Write the day-one message as you would actually send it.
 
@@ -2362,7 +2512,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Dropout:** A participant stopping partway through. It is ordinary, it is not a failure on their part, and the plan should assume it will happen.
+- **Minimum data:** The smallest amount you decided in advance would still be worth having. Setting it early is what stops you chasing entries you do not need.
+- **Late entry:** An entry written some time after the event rather than at it. Mark it, because it is memory, and memory smooths.
 
 Stuck starting? Decide the minimum data first; it tells you when silence is survivable.
 
@@ -2385,7 +2537,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Recruitment gap:** A dated note saying you could not find a participant, what you tried and when. It is a finding about access, not a blank.
+- **Repair:** The specific fix a Check question asks for, made in the step it names rather than promised for later.
 
 Stuck starting? If nobody consented, write what you attempted and when.
 
@@ -2624,7 +2777,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Questionnaire:** The set of questions itself, as distinct from the survey, which is the whole exercise of sending it out and reading what comes back.
+- **Demographic question:** A question about who somebody is rather than what they did: age, role, how long they have been coming. Worth asking only if you would act differently depending on the answer.
+- **Completion:** Whether people reach the end. Every question you add costs some of it, which is why cutting is design rather than tidying.
 
 Stuck starting? Draft freely, then cut by asking what you would do with each answer.
 
@@ -2655,7 +2810,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Wording review:** A pass over every question looking only at how it is phrased, done before anyone answers, because wording cannot be fixed once the answers are in.
+- **Double-barrelled:** A question that asks two things at once, so an answer of yes cannot be read as an answer to either one.
+- **Leading:** Wording that tells the reader which answer you are hoping for, usually through a judgement word such as helpful or easy.
 
 Stuck starting? Read each question aloud and listen for the answer hiding inside it.
 
@@ -2664,6 +2821,20 @@ Is it enough? No question predicts the future or contains a judgement word.
 </details>
 
 #### 4. Define the reachable population
+
+**See it first.** Made-up example. A population defined as the people I wanted to describe rather than the people who could receive it.
+
+- **What I wrote first:** Population: people who book fitness classes. Method: post the link in two online groups.
+- **The question that broke it:** How many people could receive this? I could not say, not even roughly, and a rate needs a number to be out of.
+- **What that does to the numbers:** Any share I reported would be a share of whoever felt strongly enough to click, out of a total nobody knows.
+- **What I wrote instead:** The studio mailing list, and the people on it who have agreed to be contacted. Small, countable, and describable in one sentence.
+- **The reporting rule that followed:** Counts only, with the number of repliers always attached, so nobody can read a share out of it later.
+
+**The wrong turn:** The tempting error is naming the group you want your findings to be about. A population defined by ambition sounds broader and it quietly removes the number that makes any rate mean something.
+
+**What it costs:** Naming the real list makes the survey visibly narrow, and somebody will ask whether that is all you have. It also rules out the sweeping sentence you were hoping to write.
+
+**Still unknown:** Still unknown: who on the named list will actually reply. Even a defined population produces repliers who chose themselves, so the counts describe repliers, not the list.
 
 - Write exactly who can receive this and who cannot. Then write your reporting rule: counts not percentages below a number you choose now, and an interval attached to any rate you do report.
 
@@ -2677,7 +2848,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Reachable population:** The people who can actually receive your questionnaire, named as a list or a channel, rather than the people you would like your findings to be about.
+- **Denominator:** The number a count is out of. Without it, a share describes nothing.
+- **Self-selected:** Answers coming only from the people who chose to reply, who tend to be the ones with something to say.
 
 Stuck starting? Write the actual list or channel you would send it through.
 
@@ -2699,7 +2872,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Pilot:** Two people filling in the questionnaire in front of you before it goes anywhere, so you can watch where they pause.
+- **Repair:** The specific fix a Check question asks for, made in the step it names.
 
 Stuck starting? Watch them complete it and note every pause, not just what they say afterwards.
 
@@ -2900,7 +3074,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Raw material:** Everything you collected before you did anything to it: notes, recordings, photographs, or the practice notes supplied with the course.
+- **Synthesis:** The work of turning raw material into statements you could defend. It is a stage of its own, not a summary written at the end.
 
 Stuck starting? Read straight through without a pen. It is the only pass where you see the shape.
 
@@ -2931,6 +3106,20 @@ Is it enough? Every line carries a participant label.
 
 #### 3. Group, then name
 
+**See it first.** Made-up example. Groups named before I had looked inside any of them.
+
+- **How I started:** Three headings written down first: navigation, content, trust. They are the headings I always use.
+- **How the sorting went:** Fast. Every line landed somewhere within a second, which should have worried me sooner than it did.
+- **What was inside trust:** Someone asking a friend to check a date, someone rereading a price, someone waiting to see whether a payment had gone through. Three different things filed under one word.
+- **What I did about it:** Emptied that group back onto the pile, put two lines together that belonged together, and waited for a name to come out of them: checking with another person before committing.
+- **What the rename told me:** The group I brought was a category from my own head. The one that emerged was a description of what people did.
+
+**The wrong turn:** The tempting error is naming the groups first. Named groups sort quickly and feel organised, and every observation gets pulled towards the nearest label instead of towards the lines it actually belongs with.
+
+**What it costs:** Letting the names come last leaves a long untidy middle stage with observations sitting in no group at all, and the groups you end up with rarely match the sections your report was going to have.
+
+**Still unknown:** Still unknown: whether somebody else sorting the same lines would have made the same groups. Grouping is a judgement, and two careful people produce different ones.
+
 - Put together observations that seem to belong, then name each group from what is inside it. Rename any group named after a feature or a solution. Note which groups you expected and which you did not.
 
 **You should end up with:** Groups named from what is inside them, with any renaming recorded.
@@ -2943,7 +3132,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Group:** A set of observations you have put together because they seem to be about the same thing. It stays a working guess until you can name it from what is inside.
+- **Renaming:** Changing a group’s name once you can see its contents. It is a sign the grouping is doing work rather than confirming what you already believed.
 
 Stuck starting? Put two related observations together, then let the name come from them.
 
@@ -2979,7 +3169,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Finding:** A statement you could defend to someone who read the same material and expected something else. It carries a count, its evidence, your confidence and the decision it informs.
+- **Count:** How many people showed the thing, written as a number of participants out of the number you had. It is what stops a one-person account reading like a pattern.
+- **Confidence:** How much weight the evidence bears: seen in every account, seen once, or contradicted somewhere. Say it in words, such as consistent across all three.
 
 Stuck starting? Take a group and write the sentence you would defend if challenged.
 
@@ -3012,7 +3204,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Falsify:** To ask what in the notes would have to be different for a statement to be wrong. Anything nothing could contradict is an impression.
+- **Demote:** Moving a statement from a finding to an assumption when it cannot carry the weight, so that it stays visible instead of quietly disappearing.
+- **Assumption:** Something you believe but have not evidenced. Labelling it as one is what keeps it from being used later as though it were a finding.
 
 Stuck starting? For each finding, finish “this would be wrong if the notes showed …”.
 
