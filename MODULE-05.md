@@ -212,7 +212,30 @@ For each question write the sentence “if the answer is X I will …, and if it
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Decide what the study has to answer.
+Task: Turn a vague brief into at most five ranked research questions, each written as something you need to learn rather than something you will say to a participant, and each naming the decision that changes if the answer comes back the other way.
+Challenge one thing at a time, and start with the mistake this lesson is about: “We will work out what matters once we start talking to people.” You will not. Without a ranked list, a conversation drifts to whatever the participant most enjoys discussing, which is usually the last annoying thing that happened to them rather than the thing your decision depends on. Ranking beforehand is what lets you follow an interesting tangent deliberately, knowing what you are trading away.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the corrected five with the participant prompts separated out and ask whether questions are things to learn, not things to say. Look at the five completed if-then sentences and ask whether every question names the decision it would change. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -504,7 +527,30 @@ For each method write the first three concrete steps required to start it. Any m
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Choose a method that can actually answer it.
+Task: Pair each of your five questions with one method you could genuinely run alone this month, and state for each pairing the specific claim that method will not license you to make.
+Challenge one thing at a time, and start with the mistake this lesson is about: “More methods means better research.” Running four thin methods badly produces less than running one properly, and it produces the particular failure where each thin result is used to shore up the others. Two methods chosen because they answer different kinds of question — one to see behaviour, one to hear reasoning — is the useful pairing; four because a checklist listed four is not.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the relabelled list with splits shown and ask whether each question is classified by the kind of uncertainty it holds. Look at the revised plan with first steps for each method and ask whether methods are chosen for fit and are runnable alone. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -794,7 +840,30 @@ Write the task as one sentence containing a person, a goal and a stopping condit
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Look before you ask: desk and competitive review.
+Task: Produce a dated desk-research note from evidence that already exists, and a structured comparison of two or three rival flows attempting one identical task, ending in a written list of what the comparison did not establish.
+Challenge one thing at a time, and start with the mistake this lesson is about: “Competitors have solved this, so copying their pattern is the safe choice.” You are seeing their output, not their reasoning, their constraints or their results. The pattern you are admiring may be a compromise forced by a legacy system, a decision that tested badly and has not yet been changed, or a deliberate trade that suits their business and not yours. Borrow the question the pattern answers; verify the answer yourself.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the sourced and dated note and ask whether existing evidence is gathered and sourced with dates. Look at the task sentence and the re-run comparison and ask whether the comparison uses one identical task across services. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -1087,7 +1156,30 @@ Read each question aloud and ask what answer would please you. Rewrite any quest
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Find the right people, and say who you could not reach.
+Task: Write a screener that selects for relevant experience without revealing the answer you want, plus a recruitment plan with honest lead times, an incentive decision, and a written statement of who your route will systematically miss.
+Challenge one thing at a time, and start with the mistake this lesson is about: “Friends and family will do for a first study.” They will, for practice, and they are the wrong evidence for a decision — they know you, they want to be helpful, they will soften criticism, and they share more of your assumptions than a stranger would. The move is not to refuse them; it is to use them for rehearsal, mark every finding from them as such, and record in the report that the sample was convenience-recruited from the researcher's own network.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the rewritten criteria with recency windows and ask whether screening criteria are based on recent relevant experience. Look at the revised screener with the rejected wording shown and ask whether screener questions do not signal the desired answer. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -1376,7 +1468,30 @@ List every piece of information you intend to collect and write the question it 
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Consent, privacy and a data plan you will keep.
+Task: Write a consent introduction you can read aloud in under a minute, and a written data plan naming what you will collect, where it will live, who can see it, when it will be deleted and how one person's data could be removed on request.
+Challenge one thing at a time, and start with the mistake this lesson is about: “It is only a small study with people I know, so consent is overkill.” The size of the study is irrelevant to the person in it, and knowing you makes it harder for them to refuse, not easier. Familiarity raises the standard: say explicitly that they can stop, that you will not be offended, and that their answers will not be attributed to them by name.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the revised script with its read-aloud time and ask whether the introduction covers everything a participant must understand. Look at the plan with the justification column and ask whether the data plan names storage, retention and deletion. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -1670,7 +1785,30 @@ Go through your notes and underline every noun in your follow-ups that the parti
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Interviews that produce evidence, not agreement.
+Task: Run at least one consented interview about a recent specific episode and produce raw notes in which what was said, what you inferred and what you want to follow up are visibly separate, plus a guide revised from what actually happened.
+Challenge one thing at a time, and start with the mistake this lesson is about: “A good interview flows like a conversation.” A good interview is often slightly awkward, because one person is talking far more than the other, silences are being allowed to sit, and the interviewer keeps returning to a detail the participant considers unremarkable. Comfortable, balanced conversation usually means you have been contributing your own views, which are now in the participant's answers.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the rewritten guide with probes mapped to questions and ask whether the guide is built around a recent specific episode. Look at the annotated notes with corrected follow-ups and ask whether follow-ups use the participant's words, not the interviewer's. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -1963,7 +2101,30 @@ Reconstruct the timings you did not take from any recording or from memory, mark
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Watch the task where it actually happens.
+Task: Run one consented observation of a real task in its own setting with a stated observation stance, and produce a record containing at least three things you saw that nobody would have told you in an interview.
+Challenge one thing at a time, and start with the mistake this lesson is about: “Observation just means watching someone use the interface.” Most of what you are there for happens outside the screen: the phone handed to a relative, the amount checked against a note on paper, the message sent to confirm with someone else before paying, the wait to see whether a payment went through. If your record only contains taps, you ran a usability test in the wrong setting.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the stance note with the comparison and ask whether A stance was chosen deliberately and its distortion named. Look at the timed sequence with environment notes and ask whether the record includes environment, timings and interruptions. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -2254,7 +2415,30 @@ Complete your own template while standing up, in a hurry, on a phone. Cut whatev
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: A diary study you could actually run.
+Task: Write a one-week logging protocol with an entry template, a prompt schedule, an honest burden estimate and a dropout plan, and either run it with a consenting participant or submit the protocol together with the recorded recruitment gap.
+Challenge one thing at a time, and start with the mistake this lesson is about: “A week of entries from one person is too small to be worth running.” Small is the normal size for a diary study, and its value is not prevalence but sequence: it shows the order things happened in, the gaps between them and what came between the intention and the action. What it cannot support is any statement about how often this happens across people, and that limit belongs on the study, not in the way of running it.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the trigger choice with its blind spot and any mitigation and ask whether the trigger type is chosen for the question and its blind spot named. Look at the cut template with your timing and ask whether the entry is short enough to survive a busy day. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -2545,7 +2729,30 @@ Write the decision each question serves. Delete every question whose decision is
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Surveys: wording, and what a number can carry.
+Task: Write a questionnaire of at most eight questions that survives a wording review, and state in advance the population you can actually reach, the counts you will report instead of percentages, and the interval you would have to attach to any rate.
+Challenge one thing at a time, and start with the mistake this lesson is about: “A survey gives me quantitative evidence, so it is more objective than the interviews.” The numbers are precise, not accurate. A precisely counted answer to a leading question asked of a self-selected group is more misleading than four honest conversations, because precision invites trust that the sampling does not deserve.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the annotated questionnaire with both versions and ask whether every question survives a wording review. Look at the cut questionnaire with decisions and the removed list and ask whether the questionnaire is cut to what will be acted on. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -2835,7 +3042,30 @@ Rename every group without using a noun for anything you might build. If a name 
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: From a pile of notes to findings you can defend.
+Task: Convert your raw material into at most seven findings, each carrying how many people showed it, the evidence behind it, your confidence, the decision it informs, and any evidence that contradicts it.
+Challenge one thing at a time, and start with the mistake this lesson is about: “Synthesis means finding the themes.” Themes are a byproduct. The purpose is to arrive at statements you could defend to someone who read the same raw material and started from a different expectation. If a finding cannot survive the question “what in the notes would have to be different for this to be false?”, it is a summary of your impressions arranged as bullet points.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the three-line split for every finding and ask whether observations, interpretations and decisions are kept separate. Look at the renamed groups with the expected/emergent marking and ask whether groups are named from their contents, not from solutions. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -3126,7 +3356,30 @@ Underline every noun that could be built. Remove it, then read the sentence agai
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Jobs, needs and the sentence that survives a redesign.
+Task: Write three job statements with functional and emotional success criteria and three need statements from your own evidence, each labelled as evidenced or assumed, and identify which of them would still be true if the product were rebuilt from nothing.
+Challenge one thing at a time, and start with the mistake this lesson is about: “Jobs to be done replaces personas and is more rigorous because it is about behaviour.” It is a different lens with its own failure modes, and the article says so. The rigour comes from whether the statements are drawn from evidence, not from which format they are written in — a job statement invented in a meeting is exactly as unfounded as a persona invented in a meeting, and looks more scientific, which makes it worse.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the three completed jobs with both criteria and ask whether jobs state situation, motivation, outcome and both kinds of success. Look at the rewritten statements with removals shown and ask whether need statements contain no solution. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -3415,7 +3668,30 @@ Go through the thinking and feeling layers and attach a reference to each entry.
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Map the journey you can actually evidence.
+Task: Produce an experience map of one journey with stages over time and layers for what people do, think and feel, in which every stage is marked as observed, reported or assumed.
+Challenge one thing at a time, and start with the mistake this lesson is about: “The map's low point is where to focus.” Sometimes. The lowest emotional point in a booking journey is often the waiting after payment, which may be cheap to fix with a status message, while the expensive problem sits earlier at a stage everyone reported as fine because they did not realise what they had missed. Use the map to locate candidates; use your findings and their counts to choose.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the extended stage sequence and ask whether stages run from before the product to after it. Look at the referenced layers and ask whether all three layers are built from cited evidence. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -3704,7 +3980,30 @@ Collect the exclusion sentences you wrote when choosing methods and the recruitm
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Report findings someone can act on.
+Task: Produce a findings report of at most one page or six slides, structured so each finding leads with its headline and carries its evidence, with a limitations section, a recommended next step and an anonymisation check completed before anything is shared.
+Challenge one thing at a time, and start with the mistake this lesson is about: “A thorough report is a complete report.” Length reduces the chance of action. Six findings with evidence and one clear recommendation will change more than thirty pages, and the discipline of cutting is where you discover which findings you actually believe. Keep the full material available for anyone who asks; do not make reading it the price of understanding the study.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the restructured report and ask whether findings lead with the headline and carry their evidence. Look at the complete limitations section and ask whether limitations name participants, route, exclusions and period. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 

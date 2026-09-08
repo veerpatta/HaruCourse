@@ -238,7 +238,7 @@ const detectiveGuide: GuideStep[] = [
 
 // Guided material for the rest of Module 1, one entry per lesson, authored
 // against each lesson's own steps and outputs. Field ids are record keys.
-type Guided = Pick<Activity, 'route' | 'worksheet' | 'guide' | 'checks' | 'saveRoute'>;
+type Guided = Pick<Activity, 'route' | 'worksheet' | 'guide' | 'checks' | 'saveRoute' | 'video'>;
 const paperRoute = (what: string): Activity['route'] => ({
   recommended: `Draw ${what} on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.`,
   alternative: 'Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.',
@@ -1632,6 +1632,8 @@ export const activities: Record<string, Activity> = {
     first: 'A | [starting action] | [what appears] | [node ID] | [alternative route] | [source or assumption]',
     hints: ['Use one box per state and label arrows with the action that changes state.', 'A failure box needs a next action: revise, retry, leave safely or choose another option.'],
     adequate: 'A reader can trace the path and recover from failure without guessing what an arrow means.',
+    coach: 'Ask me what each arrow means and what happens after the failure I injected. Do not redraw my flow; make me say where a person ends up when there are no places left.',
+    alternative: 'Cover your labels and hand the sheet to yourself an hour later. Trace the failure route with a finger. Anywhere you have to remember what an arrow meant, write the meaning on the sheet.',
     handoff: 'Bring the numbered flow to the three-screen interface exercise.',
     ...flowMapping,
   },
@@ -1642,6 +1644,8 @@ export const activities: Record<string, Activity> = {
     first: '[screen name and node] | [verb + object] | [actual content] | [feedback] | [goal supported]',
     hints: ['Draw screen boundaries first, then place the information needed before the main action.', 'Cover your annotations and try following only the visible labels. Add missing feedback where you must explain aloud.'],
     adequate: 'Three screens trace to the flow, with legible labels, feedback and a reason for information priority.',
+    coach: 'Ask me to read one screen aloud as though I had never seen it. Challenge any label that only makes sense because I drew it. Do not write my labels for me.',
+    alternative: 'Give the three screens to someone with no explanation, or reread them cold tomorrow. Note every place a word had to be explained; those are the labels to rewrite.',
     handoff: 'Save the original screens before critique so revisions remain comparable.',
     ...screenMaking,
   },
@@ -1676,6 +1680,8 @@ export const activities: Record<string, Activity> = {
     first: '[decision at risk] | [unknown] | [method] | [reachable adults, no names here] | [consent plan] | [neutral task] | [boundary]',
     hints: ['Choose the question before the method; an interview about past behavior and a prototype task answer different questions.', 'If access is missing, record who is needed and prepare materials. A self-pilot only checks the materials.'],
     adequate: 'The method fits the uncertainty and includes consent, neutral tasks, recruitment status and limits.',
+    coach: 'Ask me what decision changes depending on what I find, and what I would do if nobody replies. Challenge any plan that cannot produce a wrong answer.',
+    alternative: 'For each planned question write the two answers you might get and what you would do differently for each. If both lead to the same action, cut the question.',
     handoff: 'Bring actual anonymized notes to synthesis; otherwise use clearly labelled practice notes without asserting findings.',
     ...studyPlan,
   },
@@ -1698,6 +1704,8 @@ export const activities: Record<string, Activity> = {
     first: '[option] | [note IDs] | [expected change] | [constraint] | [neutral task] | [observable result]',
     hints: ['A large feature list makes it harder to learn which change mattered.', 'Write your reconsideration signal before testing, so an inconvenient result cannot quietly disappear.'],
     adequate: 'The selected opportunity is smaller than the whole product and has an evidence link and a disconfirming signal.',
+    coach: 'Ask me which evidence sits behind each of the three changes, and what I would have to see to abandon the one I picked. Do not choose for me.',
+    alternative: 'Write the disconfirming observation for your chosen opportunity first, then check whether anything you already hold contradicts it. If nothing could contradict it, the opportunity is not yet a claim.',
     handoff: 'Bring the chosen hypothesis and test task into prototyping.',
     ...opportunity,
   },
@@ -1708,6 +1716,8 @@ export const activities: Record<string, Activity> = {
     first: 'S01 | [actual content] | [person’s action] | [state ID] | [scope boundary]',
     hints: ['Write the neutral task on a separate card; do not include the button label they should press.', 'Prepare failure and recovery cards before the pilot. A paper prototype cannot establish keyboard or screen-reader behavior.'],
     adequate: 'The pilot can proceed without designing missing screens mid-session; scope and evidence limits are explicit.',
+    coach: 'Ask me which states I built and which I left out, and what I will do when the person taps something I did not draw. Do not design the missing screens.',
+    alternative: 'Walk your own task twice, once deliberately going somewhere you did not draw. Write what you would say as the system, and add only the state that removes the guess.',
     handoff: 'Save a numbered screen set, task script and pilot corrections for evaluation.',
     ...prototyping,
   },
@@ -1718,6 +1728,8 @@ export const activities: Record<string, Activity> = {
     first: '[anonymous ID or SELF-PILOT] | [task] | [actual action] | [possible reason] | [consequence] | [before and after] | [next test]',
     hints: ['Let the person attempt the task before helping. Record help given because it changes what you can conclude.', 'With no participant, report a self-pilot and recruitment gap. Do not turn your own expectation into a usability finding.'],
     adequate: 'The report separates observations from explanations, shows a traceable revision and avoids improvement percentages without measurements.',
+    coach: 'Ask me to separate what I saw from what I concluded, one line at a time. Challenge any percentage or any claim about people I did not observe.',
+    alternative: 'Reread your report and mark each sentence as observed or concluded. Every conclusion needs the observation it rests on written next to it, or it comes out.',
     handoff: 'Keep this practice evidence for Module 4 reasoning and future research planning; it is not yet a complete portfolio case study.',
     ...observing,
   },
@@ -1893,6 +1905,46 @@ export const activities: Record<string, Activity> = {
   }
 };
 
+// The optional AI rehearsal used to be gated on an authored `coach` line, so
+// every lesson without one silently had none — 94 refined lessons, including
+// all of m03 onward. `coachedAi` keeps the authored wording where it exists and
+// otherwise derives the coaching instruction from the lesson's own
+// misconception and the non-AI exercise from its own criteria. Both are
+// existing authorities, so no second assignment is invented. A lesson with
+// neither returns nothing rather than being given filler.
+// Guided material keyed by lesson id. `video` is stored as its catalog id plus
+// the lesson's own pairing text; it is resolved against videoSelections here so
+// the reader always receives a complete VideoAction. Before this existed no
+// lesson from m03 onward could carry a video at all, because only the authored
+// activity path resolved one.
+function guidedMaterial(l: Lesson): Partial<Apprenticeship> {
+  const g = guidedLessons[l.id];
+  if (!g) return {};
+  const { video, ...rest } = g;
+  return { ...rest, ...(video ? { video: { ...videoSelections[video.id], ...video } } : {}) };
+}
+const AI_SETUP = ['Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.', 'Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.', 'Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.'];
+const AI_RULES = 'Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.';
+function coachedAi(l: Lesson, task: string, coach?: string, alternative?: string): Pick<Apprenticeship, 'ai'> {
+  const instruction = coach
+    || (l.misconception ? `Challenge one thing at a time, and start with the mistake this lesson is about: ${l.misconception}` : '');
+  // `recheck` names the artefact to look at and `criterion` is the question to
+  // ask of it, so they are joined in that order rather than concatenated.
+  const lower = (t: string) => (/^[A-Z][a-z]/.test(t) ? t[0].toLowerCase() + t.slice(1) : t);
+  const without = alternative
+    || (l.criteria?.length
+      ? `Without any chat: mark your own work against the lesson's own standard, one criterion at a time. ${l.criteria.slice(0, 2).map(c => `Look at ${lower(c.recheck.trim().replace(/\.$/, ''))} and ask whether ${lower(c.criterion.trim())}.`).join(' ')} Anything you cannot show, write down as untested rather than assuming it holds.`
+      : '');
+  if (!instruction || !without) return {};
+  return { ai: {
+    purpose: 'Optional: attempt the work first, then use a free text chat for a focused rehearsal.',
+    setup: AI_SETUP,
+    prompt: `I am rebuilding my Product Design skills. Lesson: ${l.title}.\nTask: ${task}\n${instruction}\n${AI_RULES}\n\nMy own first attempt (replace this placeholder before sending):\n[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]`,
+    followUp: 'Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.',
+    alternative: without,
+  } };
+}
+
 export function withApprenticeship(l: Lesson): Lesson {
   const a = activities[l.id];
   if (!a) return withPublishedWorkspace(l);
@@ -1924,14 +1976,8 @@ export function withApprenticeship(l: Lesson): Lesson {
     // A lesson whose guided material lives in `guidedLessons` rather than in
     // its activity entry merges here, so both authoring routes reach the same
     // Apprenticeship shape.
-    ...(guidedLessons[l.id] || {}),
-    ...(a.coach ? { ai: {
-      purpose: 'Optional: attempt the work first, then use a free text chat for a focused rehearsal.',
-      setup: ['Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.', 'Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.', 'Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.'],
-      prompt: `I am rebuilding my Product Design skills. Lesson: ${l.title}.\nTask: ${a.mission}\n${a.coach}\nAsk one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.\n\nMy own first attempt (replace this placeholder before sending):\n[Paste only the relevant table rows and describe the artifact in text. No private participant or account details.]`,
-      followUp: 'Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.',
-      alternative: a.alternative!,
-    }} : {}),
+    ...guidedMaterial(l),
+    ...coachedAi(l, a.mission, a.coach, a.alternative),
   };
   return { ...l, apprenticeship };
 }
@@ -2058,6 +2104,7 @@ export const guidedLessons: Record<string, Guided> = {
     },
   },
   'm03-l02-v1': {
+    video: { id: "VID09", then: "Straight after watching, write your worst-case line at the size you think it should be, then again one step larger. The video is about text having to grow; your measure has to survive that.", written: "No video needed: set your longest real line, then reread it with the text one step larger and note what collides. The point is the same and paper can make it." },
     route: paperRoute('the ruled column and the stress test'),
     worksheet: [
       { id: 'worst', title: 'The content that will actually appear', intro: 'Real strings, not placeholder text.', fields: [
@@ -2085,7 +2132,7 @@ export const guidedLessons: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'The real strings your screen must hold, including the longest title and an empty state.',
+      { video: "VID09", expect: 'The real strings your screen must hold, including the longest title and an empty state.',
         fields: ['longest-title', 'other-strings'],
         terms: [{ term: 'Worst-case content', meaning: 'The real strings that will stress the layout: the longest name, the empty week, the price with a currency symbol.' }],
         start: 'Look at a real class listing somewhere and copy the longest title you find.',
@@ -2284,6 +2331,7 @@ export const guidedLessons: Record<string, Guided> = {
     },
   },
   'm03-l04-v1': {
+    video: { id: "VID08", then: "Straight after watching, list every place on your screen where colour alone carries meaning, before you measure anything. The video names links, icons and buttons as well as text.", written: "No video needed: the assigned thresholds page says the same in text. List the coloured elements first, then measure." },
     route: {
       recommended: 'Use the contrast calculator in this lesson: enter each pair of six-digit hex values, read the ratio, and record it in the table below. It works offline and needs no account.',
       alternative: 'Prefer a file on your computer? Use the local text-file route below with the copyable starter, and note the file location in Your work.',
@@ -2311,7 +2359,7 @@ export const guidedLessons: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'The two thresholds and the exceptions, written in your own words.',
+      { video: "VID08", expect: 'The two thresholds and the exceptions, written in your own words.',
         fields: ['threshold-normal', 'threshold-large', 'exceptions'],
         terms: [
           { term: 'Contrast ratio', meaning: 'A number comparing the lightness of two colours, from 1 (identical) to 21 (black on white).' },
@@ -5513,6 +5561,7 @@ export const guidedLessons: Record<string, Guided> = {
     },
   },
   'm06-l02-v1': {
+    video: { id: "VID05", then: "Straight after watching, write down every word in your current labels that is jargon, an acronym, or a word only your team uses. That list is where this lesson starts.", written: "No video needed: read your own labels aloud to somebody outside the project and note every word you have to explain. Same list, no connection required." },
     route: textRoute,
     worksheet: [
       { id: 'worst', title: 'The three worst labels you have', fields: [
@@ -5543,7 +5592,7 @@ export const guidedLessons: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'The three worst labels in your inventory, each with the reason it fails.',
+      { video: "VID05", expect: 'The three worst labels in your inventory, each with the reason it fails.',
         fields: ['worst-labels'],
         terms: [
           { term: 'Internal word', meaning: 'A label naming a department or a system rather than a thing a person wants: “Resources”, “Portal”, “My Account”.' },
@@ -6194,6 +6243,7 @@ export const guidedLessons: Record<string, Guided> = {
     },
   },
   'm06-l10-v1': {
+    video: { id: "VID06", then: "Straight after watching, write your page’s headings as a plain indented list with nothing else on the page. The video says headings and navigation carry the structure; this is you writing that structure down.", written: "No video needed: the assigned structure tutorial covers the same ground in text. Write the heading outline first, then read it back with everything else covered." },
     route: paperRoute('the page with its regions marked'),
     worksheet: [
       { id: 'rule', title: 'The heading rule in your own words', fields: [
@@ -6222,7 +6272,7 @@ export const guidedLessons: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'The heading rule in your own words, and the one page you are going to work on.', fields: ['heading-rule', 'page-chosen'],
+      { video: "VID06", expect: 'The heading rule in your own words, and the one page you are going to work on.', fields: ['heading-rule', 'page-chosen'],
         terms: [
           { term: 'Heading outline', meaning: 'The page title and its section headings, in order, read on their own. Some people use it as their whole way of moving around a page.' },
           { term: 'Region', meaning: 'A named large area of a page: the banner, the navigation, the main content, a side area, the footer. Naming them lets someone jump straight to the content.' },
@@ -8083,6 +8133,7 @@ export const guidedLessons: Record<string, Guided> = {
     },
   },
   'm08-l03-v1': {
+    video: { id: "VID03", then: "Straight after watching, mark the smallest thing on your screen somebody has to hit, and measure it. The video argues for larger targets; the measurement is yours.", written: "No video needed: find the smallest control on your screen and measure it against your own fingertip on the paper. Record the number either way." },
     route: paperRoute('the three action levels at real size and their greyscale photograph'),
     worksheet: [
       { id: 'audit', title: 'Every action you have drawn', fields: [
@@ -8117,7 +8168,7 @@ export const guidedLessons: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'Every action across your screens with its current emphasis, and any screen carrying more than one main action.',
+      { video: "VID03", expect: 'Every action across your screens with its current emphasis, and any screen carrying more than one main action.',
         fields: ['actions-listed', 'two-primaries'],
         terms: [
           { term: 'Primary action', meaning: 'The outcome the screen exists to produce. One per screen; two means the screen has two jobs.' },
@@ -8243,6 +8294,7 @@ export const guidedLessons: Record<string, Guided> = {
     },
   },
   'm08-l10-v1': {
+    video: { id: "VID10", then: "Straight after watching, write your chart’s alternative text without looking at the chart. If you cannot, the text is describing the picture rather than carrying the finding.", written: "No video needed: cover your chart and write the sentence you would say to somebody on the telephone. That is the alternative text." },
     route: paperRoute('the chart and the counts printed beneath it'),
     worksheet: [
       { id: 'conventions', title: 'The rules you are working to', intro: 'From the assigned chart guidance, before you draw anything.', fields: [
@@ -8302,7 +8354,7 @@ export const guidedLessons: Record<string, Guided> = {
         },
         start: 'Rule the axis first and mark zero before you plot anything. It is much harder to talk yourself into cutting it later.',
         enough: 'Every value can be read off the chart without going to a key, and each colour has a measured number beside it.' },
-      { expect: 'Alternative text carrying the comparison, the values and the sample, with the counts published beneath.',
+      { video: "VID10", expect: 'Alternative text carrying the comparison, the values and the sample, with the counts published beneath.',
         fields: ['sample-line', 'alt-text', 'underlying-numbers'],
         terms: [{ term: 'Alternative text', meaning: 'The words offered in place of a picture. Its job is to carry the information, not to describe the drawing.' }],
         supported: {
@@ -10098,6 +10150,7 @@ export const guidedLessons: Record<string, Guided> = {
     },
   },
   'm08-l08-v1': {
+    video: { id: "VID04", then: "Straight after watching, find the message a person is most likely to miss, and write what they would do next if they missed it.", written: "No video needed: gather your existing messages first and read each one as somebody who does not know what just happened. The gap shows up the same way." },
     route: textRoute,
     worksheet: [
       { id: 'collect', title: 'Every message you already wrote', fields: [
@@ -10126,7 +10179,7 @@ export const guidedLessons: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'Every message you already have, sorted into the four types, with the consequential ones marked.',
+      { video: "VID04", expect: 'Every message you already have, sorted into the four types, with the consequential ones marked.',
         fields: ['message-list', 'consequence-marks'],
         terms: [
           { term: 'Toast', meaning: 'A small message that appears in a corner and fades on its own. It reaches only someone who was looking at that corner at that moment.' },
@@ -10347,6 +10400,7 @@ export const guidedLessons: Record<string, Guided> = {
     },
   },
   'm09-l05-v1': {
+    video: { id: "VID07", then: "Straight after watching, take one gesture from your list and write how somebody would do the same thing by speaking, or by pressing something visible. If there is no answer, that gesture has no alternative yet.", written: "No video needed: for each gesture, name the visible control that does the same job. Anything with no visible control is the gap this step exists to find." },
     route: textRoute,
     worksheet: [
       { id: 'gestures', title: 'What your design asks people to do with their hands', fields: [
@@ -10381,7 +10435,7 @@ export const guidedLessons: Record<string, Guided> = {
         ],
         start: 'Walk one task in your design and write down every place you imagined a finger moving rather than tapping.',
         enough: 'Every gesture is marked invented or conventional, and you can say which ones have no button anywhere.' },
-      { expect: 'A visible control written beside every gesture, and any gesture you removed with what it was for.',
+      { video: "VID07", expect: 'A visible control written beside every gesture, and any gesture you removed with what it was for.',
         fields: ['gesture-pairs', 'gestures-removed'],
         demo: {
           scenario: 'Made-up example. Pairing a swipe with a visible control, after first deciding the swipe was fine on its own.',
@@ -10466,6 +10520,7 @@ export const guidedLessons: Record<string, Guided> = {
     },
   },
   'm09-l06-v1': {
+    video: { id: "VID02", then: "Straight after watching, try your own product or the nearest real page using only the keyboard, and write where you got stuck before you write any table.", written: "No video needed: put the mouse out of reach and do one task on a real page with the keyboard alone. Write where you got stuck; that is the same starting point." },
     route: textRoute,
     worksheet: [
       { id: 'patterns', title: 'What the pattern actually says', fields: [
@@ -10490,7 +10545,7 @@ export const guidedLessons: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'Two components chosen, one simple and one made of parts, with each pattern’s keyboard section rewritten in your own words.',
+      { video: "VID02", expect: 'Two components chosen, one simple and one made of parts, with each pattern’s keyboard section rewritten in your own words.',
         fields: ['component-choice', 'pattern-notes'],
         terms: [
           { term: 'Composite component', meaning: 'One control made of several smaller ones: a date grid, a set of tabs, a menu. It behaves as one thing from outside and has its own inside.' },
@@ -13524,7 +13579,8 @@ function withPublishedWorkspace(l: Lesson): Lesson {
     // worksheet, demonstrations, supported case, checks and save route here.
     // The derived workspace above stays as the local-file alternative, so the
     // authored task, criteria and handoff remain the single authority.
-    ...(guidedLessons[l.id] || {}),
+    ...guidedMaterial(l),
+    ...coachedAi(l, l.objective || l.deliverable),
   }};
 }
 

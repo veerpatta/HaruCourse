@@ -227,7 +227,30 @@ Use the longest heading in both comparisons. Record whether you tested actual re
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: A type scale that survives the screen.
+Task: Rebuild one workshop screen with two candidate type scales. Compare hierarchy at narrow width and with enlarged text before choosing.
+Challenge one thing at a time, and start with the mistake this lesson is about: “A bigger heading means a stronger hierarchy.” Not on a narrow screen. If the title grows until it wraps onto three lines and pushes the first paragraph below the fold, the reader now sees only a large phrase and no content, and the page reads as less organised, not more. Contrast in weight and space is usually the cheaper instrument.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the corrected table and the marked-up screen showing each element's step and ask whether the scale is explicit and each step has a stated job. Look at the narrow rendering plus a one-line note of which variable fixed the hierarchy and ask whether hierarchy holds at narrow width. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -360,6 +383,25 @@ Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Opt
 - Create HaruCourse/Practice/m03-l02-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+</details>
+
+<details>
+<summary>Optional video paired with step 1</summary>
+
+[Web Accessibility Perspectives: Customizable Text](https://www.w3.org/WAI/perspective-videos/customizable/) — W3C Web Accessibility Initiative, 39 s, English, English captions plus French and Bahasa Indonesia subtitles, all publisher-authored; an audio-described version is offered on the same page. Whole video, 39 seconds. Watch from 0:09 to 0:34.
+
+What to notice:
+
+- 0:09–0:17 — Customisation is not always a preference; sometimes it is a necessity.
+- 0:17–0:22 — Being able to adjust the text is crucial with low vision and dyslexia.
+- 0:22–0:34 — Properly built pages let text change size, spacing, font and colour without losing function or clarity.
+
+**Then:** Straight after watching, write your worst-case line at the size you think it should be, then again one step larger. The video is about text having to grow; your measure has to survive that.
+
+**Without the video:** No video needed: set your longest real line, then reread it with the text one step larger and note what collides. The point is the same and paper can make it.
+
+Generic pages with text being resized, not your layout. It shows that text must be able to grow; finding what collides when it does is your own stress test. Public W3C page and a YouTube video, no account. The W3C page carries the publisher’s own full transcript in text, so the video is optional and the reading route loses nothing. The embed is click-to-load and uses youtube-nocookie. Needs a connection; not cached for offline use. Checked 7 September 2026.
 
 </details>
 
@@ -533,7 +575,30 @@ Look for a button label that wraps poorly and a paragraph whose lines are hard t
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Readability: measure, leading and the small screen.
+Task: Test a long title, paragraph and action label in your screen. Compare two text-column widths without shortening the content to hide problems.
+Challenge one thing at a time, and start with the mistake this lesson is about: “Generous line height always reads better.” Past a point it does the opposite: the lines stop cohering into a paragraph and the block reads as a list of separate sentences. Very loose leading also pushes content below the fold on a phone, which costs the reader more than the extra air gains them.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the three counts, the average and the final width and ask whether measure is measured, not estimated. Look at the two measured gaps and the restated ratio and ask whether line height and block spacing are stated as related decisions. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -841,7 +906,30 @@ Color associations depend on context. Label your assumption rather than calling 
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Colour that carries meaning, not decoration.
+Task: Imagine a status list whose only distinction is a red or green dot. Redesign its meaning with text and shape as well as color, then apply that lesson to your screen.
+Challenge one thing at a time, and start with the mistake this lesson is about: “I checked the contrast, so my colour use is accessible.” Contrast and colour-dependence are two different failures. A red error message and a green success message can both pass contrast against white and still be indistinguishable from each other to a reader with red–green colour vision deficiency, because the problem is that the hue is the only difference.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the completed table and a screen using only its entries and ask whether every colour has a stated role. Look at the greyscale before, the repair list and the greyscale after and ask whether no information depends on colour alone. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -974,6 +1062,27 @@ Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Opt
 - Create HaruCourse/Practice/m03-l04-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
 - Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
 - Draw and label each screen or state on a separate sheet. Keep the original before changing it. If photographing, use even light and check that all labels are readable.
+
+</details>
+
+<details>
+<summary>Optional video paired with step 1</summary>
+
+[Web Accessibility Perspectives: Colors with Good Contrast](https://www.w3.org/WAI/perspective-videos/contrast/) — W3C Web Accessibility Initiative, 55 s, English, English captions plus French and Bahasa Indonesia subtitles, all publisher-authored; an audio-described version is offered on the same page. Whole video, 55 seconds. Watch from 0:15 to 0:50.
+
+What to notice:
+
+- 0:15–0:20 — Poor contrast makes navigating, reading and interacting a real pain.
+- 0:20–0:30 — Enough contrast is needed between foreground and background, and not only for text: links, icons and buttons too.
+- 0:30–0:34 — If it is important enough to be seen, it needs to be clear.
+- 0:34–0:41 — It is essential for people with low contrast sensitivity, which becomes more common with age.
+- 0:48–0:50 — It also helps in different lighting conditions.
+
+**Then:** Straight after watching, list every place on your screen where colour alone carries meaning, before you measure anything. The video names links, icons and buttons as well as text.
+
+**Without the video:** No video needed: the assigned thresholds page says the same in text. List the coloured elements first, then measure.
+
+Generic scenes and pages, not your palette. It gives no numbers; the thresholds and the measuring are your own step. Public W3C page and a YouTube video, no account. The W3C page carries the publisher’s own full transcript in text, so the video is optional and the reading route loses nothing. The embed is click-to-load and uses youtube-nocookie. Needs a connection; not cached for offline use. Checked 7 September 2026.
 
 </details>
 
@@ -1148,7 +1257,30 @@ For paper work, specify candidate hex pairs and measure them in the supplied loc
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Contrast you can defend.
+Task: Measure the actual foreground/background pairs in your design, repair failing pairs and measure them again. A visual impression is not a ratio.
+Challenge one thing at a time, and start with the mistake this lesson is about: “Grey placeholder text inside a form field is fine because it is only a hint.” Placeholder text is real text that a reader must read to know what to type, and it is not a decorative or inactive case. If it is too faint to read it fails, and the more robust fix is usually a visible label rather than a darker hint.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the completed table with the awkward cases present and ask whether every text element is measured, including the awkward ones. Look at the table with thresholds and justifications per row and ask whether the correct threshold is applied per element. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -1455,7 +1587,30 @@ Try grouping an unrelated item by proximity. This exposes why a visual principle
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Gestalt grouping, and where it stops working.
+Task: Cut workshop information into separate paper pieces and regroup it using space first. Compare two groupings without rewriting any words.
+Challenge one thing at a time, and start with the mistake this lesson is about: “Cards make a layout organised.” Cards make a layout enclosed, which is different. When everything is a card, common region no longer distinguishes anything, the screen gains borders and padding that cost vertical space on a phone, and the actual hierarchy — what matters most — becomes invisible because every item is presented as a peer.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the marked-up before image and the numbered mismatch list and ask whether perceived grouping was diagnosed before it was changed. Look at the border-free version, the failures found and the restored set and ask whether the cheapest sufficient tool was used per group. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -1760,7 +1915,30 @@ An exception is acceptable when you can explain the relationship it serves.
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Spacing as a system.
+Task: Inventory gaps in one screen, choose a small spacing scale and rebuild the layout using named gaps instead of isolated adjustments.
+Challenge one thing at a time, and start with the mistake this lesson is about: “Consistent spacing means the same gap everywhere.” Uniform gaps destroy grouping — that is precisely the flat, unreadable screen from the last lesson. Consistency means the same small set of values used for the same purposes, deliberately unequal where the purposes differ.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the completed scale definition and ask whether A generated scale with named values and uses. Look at the after audit with every value on the scale and ask whether every gap in the screen maps to the scale. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -2066,7 +2244,30 @@ Paper frames model layout intent; mark real browser behavior as untested unless 
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Grid and layout structure that reflows.
+Task: Arrange the same content at narrow, middle and wide widths. Decide where the structure must change because content no longer fits.
+Challenge one thing at a time, and start with the mistake this lesson is about: “Design for mobile, tablet and desktop.” Those are three arbitrary samples from a continuous range, and designing only at three widths guarantees that everything between them is untested. Design the behaviour between the changes, and use specific widths only as places to check.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the stated structure with its relationship to the scale and ask whether structure is stated in values, not sketched vaguely. Look at the change-point table with observed failures per row and ask whether change points come from content failures. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -2381,7 +2582,7 @@ Act as an engineer reading only my token table. Ask about one ambiguous value or
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
 
 My own first attempt (replace this placeholder before sending):
-[Paste only the relevant table rows and describe the artifact in text. No private participant or account details.]
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
 ```
 
 Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
@@ -2696,7 +2897,30 @@ Hover cannot carry information needed on touch. A focus drawing documents intent
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Applying the system to one component set.
+Task: Specify one component across default, hover, focus, disabled and loading states, using the token sheet rather than introducing unexplained values.
+Challenge one thing at a time, and start with the mistake this lesson is about: “The disabled state is just the default at reduced opacity.” Reducing opacity uniformly changes the background as well as the text, can produce an unpredictable composite over whatever is behind it, and often makes the label unreadable while leaving the control looking pressable. Specify a disabled state with its own tokens instead.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the extended state table with conditions and ask whether all real states are enumerated with their conditions. Look at the state table with token names and the updated sheet and ask whether states are built from tokens, with gaps recorded not invented. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 
@@ -2999,7 +3223,30 @@ A polished comparison is a craft artifact. A full case study also needs a real p
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Rebuild and critique: what the system changed.
+Task: Rebuild your original screen with the system you developed, then defend the changes using your saved comparisons and measurements.
+Challenge one thing at a time, and start with the mistake this lesson is about: “The redesign is a portfolio case study.” It is a craft artefact. A case study needs a problem, evidence about people, decisions traceable to that evidence, a test and honest measurement. A before-and-after image with no participant is a visual comparison, and presenting it as a case study is the most common way portfolios lose credibility.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Without any chat: mark your own work against the lesson's own standard, one criterion at a time. Look at the exception log with a resolution for each entry and ask whether the rebuild used the system and logged every exception. Look at the rewritten issue list and ask whether heuristic issues are specific and attributed. Anything you cannot show, write down as untested rather than assuming it holds.
+
+</details>
 
 **Save:**
 

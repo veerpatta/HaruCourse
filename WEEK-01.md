@@ -351,7 +351,7 @@ Ask me to defend one evidence label at a time. Spot an unsupported assumption wi
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
 
 My own first attempt (replace this placeholder before sending):
-[Paste only the relevant table rows and describe the artifact in text. No private participant or account details.]
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
 ```
 
 Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
@@ -774,7 +774,7 @@ Role-play a workshop organizer in an explicitly fictional rehearsal. Ask why my 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
 
 My own first attempt (replace this placeholder before sending):
-[Paste only the relevant table rows and describe the artifact in text. No private participant or account details.]
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
 ```
 
 Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
@@ -1183,7 +1183,7 @@ Review my interview questions for leading wording. Ask me to repair one question
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
 
 My own first attempt (replace this placeholder before sending):
-[Paste only the relevant table rows and describe the artifact in text. No private participant or account details.]
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
 ```
 
 Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
@@ -1579,7 +1579,30 @@ A failure box needs a next action: revise, retry, leave safely or choose another
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Map the task and its failures.
+Task: Lay out the workshop reservation journey on paper. Trace a normal route, then inject “no places left” and draw how the person recovers.
+Ask me what each arrow means and what happens after the failure I injected. Do not redraw my flow; make me say where a person ends up when there are no places left.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Cover your labels and hand the sheet to yourself an hour later. Trace the failure route with a finger. Anywhere you have to remember what an arrow meant, write the meaning on the sheet.
+
+</details>
 
 **Save:**
 
@@ -1968,7 +1991,30 @@ Cover your annotations and try following only the visible labels. Add missing fe
 
 </details>
 
+<details>
+<summary>Optional AI rehearsal</summary>
 
+Optional: attempt the work first, then use a free text chat for a focused rehearsal.
+
+- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
+- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
+- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
+
+```text
+I am rebuilding my Product Design skills. Lesson: Make the interface understandable.
+Task: Turn your numbered flow into three paper screens. Use real labels and content so another person can follow the task without your narration.
+Ask me to read one screen aloud as though I had never seen it. Challenge any label that only makes sense because I drew it. Do not write my labels for me.
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+
+My own first attempt (replace this placeholder before sending):
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
+```
+
+Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
+
+Without AI or at a usage limit: Give the three screens to someone with no explanation, or reread them cold tomorrow. Note every place a word had to be explained; those are the labels to rewrite.
+
+</details>
 
 **Save:**
 
@@ -2373,7 +2419,7 @@ Question whether my repair addresses the stated concern. Ask for one counterexam
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
 
 My own first attempt (replace this placeholder before sending):
-[Paste only the relevant table rows and describe the artifact in text. No private participant or account details.]
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
 ```
 
 Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
@@ -2772,7 +2818,7 @@ Act as a review audience. Ask one question about the weakest evidence link in my
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
 
 My own first attempt (replace this placeholder before sending):
-[Paste only the relevant table rows and describe the artifact in text. No private participant or account details.]
+[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
 ```
 
 Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
