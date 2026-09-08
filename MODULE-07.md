@@ -38,70 +38,166 @@ A booking flow redrawn with all four node kinds grew from six boxes to nineteen.
 
 Draw one end-to-end flow with every entry point, decision, system state and exit marked, and list the three moments where a person is most likely to stop — with the evidence for each.
 
-**Where to work:** Paper and a pencil, photographed. Boxes and arrows drawn by hand are faster to change than any diagram tool, and at this stage changing it often is the point. If you want it digital later, an indented text list of steps with their decisions works and diffs cleanly.
+**Where to practise:** Draw the flow with its entry points, decisions, states and exits on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper and a pencil, photographed. Boxes and arrows drawn by hand are faster to change than any diagram tool, and at this stage changing it often is the point. If you want it digital later, an indented text list of steps with their decisions works and diffs cleanly.
 
 - Starting material: Your m06 structure and change note, and the m05 journey map. The map showed the journey as experience over time; a flow states it precisely enough to build.
 - Create HaruCourse/Practice/m07-l01-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Draw the flow, including how people arrive and leave
+#### 1. Read the multi-step patterns
 
-Input artifact: Your m06 structure and change note, and the m05 journey map. The map showed the journey as experience over time; a flow states it precisely enough to build.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A one-page flow using distinct notation for actions, decisions, states and exits, showing every evidenced entry point and every ending, with prerequisites and waits marked and three evidenced stopping points named.
-
-## 1. Read the multi-step patterns
 - Read the assigned patterns for tasks that take several steps. Note how each handles progress, review and returning later.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Short notes on how the assigned patterns handle progress, review and returning later, and the four kinds of node in your own words.
 
-## 2. Draw the spine
-- Draw the main path from a real entry point to a successful outcome, using distinct shapes for actions, decisions, states and exits. Keep it to one page.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- What the assigned patterns do about progress, review and coming back later — Three short notes are enough. You are collecting structure here, not wording.
+- Action, decision, state and exit, each in a sentence of your own
 
-## 3. Add the other entries and exits
-- Add every entry point you have evidence for, and every way the flow can end, including abandonment, expiry and moving to a phone call.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Flow:** A drawing of a whole task, precise enough to build from. It says what happens, where the path forks, and how it ends.
+- **Node:** One box on the flow. Every node is an action, a decision, a state or an exit.
 
-## 4. Mark prerequisites and waits
-- For each step write what must be true and what the person must be holding. Add a node for every wait, including anything depending on another person.
+Stuck starting? Read one pattern and write the single question it answers about a task that takes several steps.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Name the stopping points and pause
-- Mark the three places a person is most likely to stop, and write the evidence for each — an observation, a quotation, a tree-test failure. Save the flow.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Actions, decisions, states and exits are distinguished: [evidence reference]
-- Every evidenced entry point and ending appears: [evidence reference]
-- Prerequisites and waits are marked on the flow: [evidence reference]
-- Stopping points are named with evidence: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? You can say what each of the four words means without looking back at the lesson.
 
 </details>
+
+#### 2. Draw the spine
+
+**See it first.** Made-up example. Drawing the spine of a booking flow and finding that six of my nine boxes were not steps at all.
+
+- **What I drew first:** Nine boxes: home, class list, class page, date picker, details form, payment, confirmation, my bookings, done. It looked like a flow.
+- **What was wrong with it:** Every box was a screen name. Nothing said what the person was doing, what forked, or what the system was doing while they waited.
+- **The test I applied:** I tried to write action, decision, state or exit beside each box. Six of the nine took none of the four words.
+- **What replaced them:** “Class page” became an action, “choose a date”, plus a system decision, “is a place still free?”, plus a state, “place held for ten minutes”.
+- **What that gave me:** Fourteen nodes instead of nine, and two of the new ones were states nobody had drawn: place held, and payment pending. Both needed a message.
+
+**The wrong turn:** The wrong turn is drawing screens. A list of screen names is quick to draw and hides every fork and every wait, which is where the design work actually is.
+
+**What it costs:** Naming the four kinds makes the page busier and slower to draw. It also makes it a thing someone can argue with, which a row of screen names never is.
+
+**Still unknown:** Still unknown: whether a ten-minute hold is the right length. The flow can show that a hold exists; only watching someone can say whether ten minutes is enough.
+
+- Draw the main path from a real entry point to a successful outcome, using distinct shapes for actions, decisions, states and exits. Keep it to one page.
+
+**You should end up with:** A spine from one real entry point to one successful ending, every node labelled with one of the four words, and a key.
+
+Worksheet fields for this step:
+
+- Your spine written out as a list of nodes, each labelled action, decision, state or exit — If a node will not take one of the four words, it is probably a screen name rather than a step.
+- Your key: the shape or mark you used for each of the four kinds
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the successful ending first, then work backwards to the entry point you have the best evidence for.
+
+Is it enough? Every node carries one of the four words, and the key on the page says which mark means which.
+
+</details>
+
+#### 3. Add the other entries and exits
+
+- Add every entry point you have evidence for, and every way the flow can end, including abandonment, expiry and moving to a phone call.
+
+**You should end up with:** Every entry point you have evidence for, every ending including the unsuccessful ones, and the decisions the person never sees.
+
+**Try it with help.** Six made up endings, recorded over one week at a small class-booking service. A: booked and paid. B: rang the provider and booked by phone. C: the held place expired while she was deciding. D: closed the tab at the price. E: booked for someone else and never came back. F: the payment failed and she tried again the next day.
+
+Your flow currently ends at A only. Which ending belongs on it next, and why?
+
+- **B, because ringing the provider is how this service most often ends, and a flow that cannot show it is describing a different product.** — The endings that happen most are the ones the design has to account for. Drawing B forces a decision about what the screen says to someone who is about to pick up the phone.
+- D, because abandoning at the price is the ending that costs money. — Abandonment does belong on the flow, and you have no evidence yet that it happens more often than the phone call. Draw both, and put the evidenced one first.
+- None of them, because these are endings rather than steps. — An exit is one of the four kinds of node. A flow with a single ending is a happy path, and the other five endings are where people actually are.
+- All six at once, so that nothing is missed. — Six at once on one page usually produces a drawing nobody can read. Add the evidenced endings first, and let the rest wait until each has a source.
+
+**Then:** Add every ending you have evidence for to your own flow, and write the source beside each one.
+
+Worksheet fields for this step:
+
+- Every entry point you have evidence for, with the evidence beside each — A search result on a class page, a forwarded link, a return three days later on a different phone. The home page is one entry, not the entry.
+- Every way the flow can end, including abandonment, expiry and moving to a phone call
+- The decisions the person never sees, and where they sit on the flow
+
+<details>
+<summary>Help with this step</summary>
+
+- **Entry point:** Where a person actually arrives from. You rarely control it, and it is almost never only the home page.
+- **System decision:** A fork the system makes and the person never sees, such as whether a place is still free. It still shapes everything after it.
+
+Stuck starting? List how each person in your research actually arrived, and how each session actually ended. Put every one on the page.
+
+Is it enough? At least two entry points, and at least two endings that are not success, each with a source.
+
+</details>
+
+#### 4. Mark prerequisites and waits
+
+- For each step write what must be true and what the person must be holding. Add a node for every wait, including anything depending on another person.
+
+**You should end up with:** A prerequisite note on every step, the step that asks for something the person cannot have yet, and a node for every wait.
+
+Worksheet fields for this step:
+
+- For each step: what must be true, and what the person must be holding — Finish the sentence “to do this they must already have …” for every step, including the ones that look obvious.
+- The step that asks for something the person cannot have yet — There is usually one. If you find none, look again at the steps that ask for a reference, a payment method, or a decision from someone else.
+- Every wait on the flow, including waits on another person
+
+<details>
+<summary>Help with this step</summary>
+
+- **Prerequisite:** What has to be true, and what the person has to be holding, before a step can happen at all.
+
+Stuck starting? Go through the flow writing “to do this they must already have …” beside each step, then find every place where the system or another person takes time.
+
+Is it enough? Every wait has its own node, including any wait on a second person, and you can name the step that asks too early.
+
+</details>
+
+#### 5. Name the stopping points and pause
+
+- Mark the three places a person is most likely to stop, and write the evidence for each — an observation, a quotation, a tree-test failure. Save the flow.
+
+**You should end up with:** Three stopping points with a source for each, a note of where the flow lives, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Stopping point 1 · where a person is most likely to stop, and the evidence for it
+- Stopping point 2 · where a person is most likely to stop, and the evidence for it
+- Stopping point 3 · where a person is most likely to stop, and the evidence for it
+- Where the flow itself lives — File names or “paper, in my folder”. Nothing is uploaded.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Go back to your research notes and your test results, and find the moments where people actually stopped rather than the ones that feel risky.
+
+Is it enough? Each stopping point names an observation, a quotation or a test result, rather than a worry.
+
+</details>
+
+**Save and continue.** Saved for you: Your node list, entries, exits, prerequisites and stopping points save as you type, on this device first and then online. Kept outside the app: The flow itself stays on paper or in your own folder. Photograph it and write the file name here; naming a file does not upload it. What your creator sees: Your creator reads the four kinds of node, the endings that are not success, and the three stopping points with their sources. Share the photograph the way you normally share files. Your next action: Open Your work and choose Ready for review. The next lesson takes the entry points on this flow and designs the first run for someone who knows nothing.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -241,70 +337,187 @@ A first-run flow that asked for name, phone number, interests and notification p
 
 Design an onboarding path that lets someone reach a first real outcome without setup they do not yet need, and list every piece of information you deferred with the moment it becomes necessary.
 
-**Where to work:** Sketched screens on paper with the empty-state wording written out in full. Writing the words before drawing is the whole technique here, and it needs nothing but a pen.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Sketched screens on paper with the empty-state wording written out in full. Writing the words before drawing is the whole technique here, and it needs nothing but a pen.
 
 - Starting material: Your flow and the entry points on it. Onboarding is not a separate product: it is the first pass through the same flow by someone who knows nothing.
 - Create HaruCourse/Practice/m07-l02-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# First run: what must be learned now and what can wait
+#### 1. Read on recognition and patterns
 
-Input artifact: Your flow and the entry points on it. Onboarding is not a separate product: it is the first pass through the same flow by someone who knows nothing.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A first-run path reaching a real outcome with minimum prerequisites, a two-column must-know and can-wait split, a deferral list with triggers and costs, and written wording for every empty state.
-
-## 1. Read on recognition and patterns
 - Read the assigned article on recognition versus recall and the patterns for starting a multi-step task. Note what each says about reducing what a person has to remember.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Your own short account of recognition and recall, and one thing in your product that currently relies on someone remembering.
 
-## 2. Split must-know from can-wait
-- List everything your product currently asks for or explains at the start. Split it into what makes the next action possible and what does not. Be strict; the second list should be longer.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- What recognition and recall mean for your first run, in your own words — Two or three sentences. Then name one thing in your product that currently relies on someone remembering.
 
-## 3. Design the shortest path to a first outcome
-- Redraw the first-run path so someone reaches a real outcome with the minimum they must know. Mark where each deferred item now gets asked for and what it buys the person there.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Recognition:** Knowing something when you see it. Cheap, because the thing itself is doing the reminding.
+- **Recall:** Producing something from memory with nothing in front of you. Expensive, and the reason a tour is forgotten by the second screen.
+- **First run:** The first pass through your flow by someone who knows nothing about the product. It is not a separate product.
 
-## 4. Write the empty states
-- Write the wording for every empty state in the flow: what appears here, why, and the one action that produces the first item. Use your m06 labels.
+Stuck starting? Write one sentence about a product you use where you always have to remember something rather than see it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Record the cost and pause
-- Write what deferring each item costs — less complete records, an interruption later, a support question — and which deferrals you are least sure about. Save the path and the deferral list.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Must-know and can-wait are separated strictly: [evidence reference]
-- A first real outcome is reachable with minimum prerequisites: [evidence reference]
-- Every empty state has written wording: [evidence reference]
-- Deferrals record their trigger and their cost: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? You have named one place in your own product where the person is being asked to remember.
 
 </details>
+
+#### 2. Split must-know from can-wait
+
+**See it first.** Made-up example. Splitting a first-run list into must-know and can-wait, and finding my must-know list was mostly my own convenience.
+
+- **What the product asked for:** Name, phone number, nine interest boxes and two notification settings, all before a single class was shown.
+- **My first split:** I put name, phone number and interests under must-know. It felt obviously right; how else would anyone know who had booked?
+- **The test I applied:** For each item: which action becomes impossible or unsafe without it, right now? For interests, none. For the phone number at that point, none either.
+- **What was actually must-know:** What a class costs, and that the name typed is shown to the teacher. Two things, and neither of them is a form.
+- **What that gave me:** A first-time visitor could see prices and reach the booking step with nothing asked. The phone number moved to the moment a place is held, where it buys them a cancellation message.
+
+**The wrong turn:** The wrong turn is reading “we need this in our records” as “the person needs this now”. Those are different sentences, and only one of them belongs on the must-know list.
+
+**What it costs:** Deferring means less complete records and some flows that interrupt later. That cost is real, and writing it down is better than pretending the deferral was free.
+
+**Still unknown:** Still unknown: whether asking for the number at the holding step loses more people than asking at the start. That is a question for a test, not for the split.
+
+- List everything your product currently asks for or explains at the start. Split it into what makes the next action possible and what does not. Be strict; the second list should be longer.
+
+**You should end up with:** Two lists, with must-know limited to what makes the next action possible or safe, and an impossible-without reason beside each must-know item.
+
+**Try it with help.** Six lines from the first run of a made-up class-booking product. Each is something the product asks for or explains before a person has booked anything. Label each one the way you would label your own.
+
+- What a class costs, including anything added at the payment step.
+  - **needed now** — Money is the clearest case there is. Nobody can decide whether to go further without it, and a price that appears late is a common reason people stop.
+  - defer — Deferring the price is what produces a person who reaches the payment step and leaves. The cost has to be visible before the effort is spent.
+  - never ask — This is not a request, it is something you tell people. Telling them early is the whole point of it.
+- That the name you type is shown to the teacher and to the other people in the class.
+  - **needed now** — Anything about who else sees their details belongs before they type. Someone who finds out afterwards has lost a choice they might have made differently.
+  - defer — By the time it would be mentioned the name is already shared. Deferral works for requests, not for consequences a person cannot undo.
+  - never ask — Saying nothing is the version that goes wrong. It is one short sentence beside the field.
+- A phone number, asked on the first screen, before any class has been looked at.
+  - needed now — Nothing on the first screen is impossible without it. Browsing, comparing and reading a price all work with no number at all.
+  - **defer** — It buys the person something at the moment a place is held, because that is when you can tell them if the class is cancelled. Asked earlier it is a cost with no benefit.
+  - never ask — It does earn its place eventually. Removing it entirely leaves you no way to reach someone whose class was cancelled.
+- A nine-box checklist of the kinds of class you like, on the second screen.
+  - needed now — The person can find a class by looking at the list. A checklist filled in before they have seen anything is a guess about themselves.
+  - **defer** — A second booking is the natural moment. By then they know what the classes are, so the answer is worth something to them as well as to you.
+  - never ask — It may still be worth asking once there is a reason to. Settle that on the deferral list rather than deleting it now.
+- A date of birth, asked at sign-up, used nowhere else in the product.
+  - needed now — Nothing depends on it. If you cannot name the action it makes possible, it does not belong on the must-know list.
+  - defer — Deferring keeps alive a request that has no moment to be asked in. A deferral with no trigger and no cost is usually a request to remove.
+  - **never ask** — The test is what it does for anyone. Nothing uses it, so the honest move is taking it out rather than moving it later.
+- A password, in a product where every booking is found again with a reference and a phone number.
+  - needed now — The booking works without it, so nothing is impossible without it. It is a wall placed in front of the thing people came for.
+  - defer — Deferring is better than asking at the start, and the question underneath is whether an account is needed at all. The next lesson takes that up.
+  - **never ask** — Where a reference and a phone number already find a booking, a password adds a way to fail rather than a way in.
+
+**Then:** Put every item on your own first-run list under one of the three labels. Anything you cannot defend as needed now moves.
+
+**What to watch for:** The question is never “is this useful?”. It is “which action becomes impossible or unsafe right now without it?”. If nothing does, it is not needed now.
+
+Worksheet fields for this step:
+
+- Must-know: without this the next action is impossible or unsafe — Be strict. Cost, commitment, and who else sees their details are the usual honest members of this list.
+- Can-wait: everything else, with nothing removed yet — This list should be the longer of the two. If it is not, the split has not been strict enough.
+- For each must-know item: the action that becomes impossible or unsafe without it
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the whole list first, in any order, then go through it once asking the impossible-without question of each line.
+
+Is it enough? The can-wait list is longer than the must-know list, and every must-know item names the action it makes possible.
+
+</details>
+
+#### 3. Design the shortest path to a first outcome
+
+- Redraw the first-run path so someone reaches a real outcome with the minimum they must know. Mark where each deferred item now gets asked for and what it buys the person there.
+
+**You should end up with:** A redrawn first-run path reaching a real outcome, the prerequisites counted before and after, and every deferred item with its new moment.
+
+Worksheet fields for this step:
+
+- Screens and fields before the first real outcome, counted on the old path
+- Screens and fields before the first real outcome, counted on the new path
+- The redrawn first-run path, written out step by step — Say what a first-time visitor can see and do at each step, before anything at all is asked of them.
+- Each deferred item, the moment it is now asked for, and what it buys the person there
+
+<details>
+<summary>Help with this step</summary>
+
+- **First real outcome:** Something the person actually came for: a class seen with its full price, a place held, a booking made. Not a completed profile.
+- **Deferral:** Moving a request to the moment it buys the person something, and writing down both that moment and what waiting costs you.
+
+Stuck starting? Count the old path first, honestly, including every field. The number is usually higher than you expect.
+
+Is it enough? The after count is lower than the before count, or you have written plainly why it could not be.
+
+</details>
+
+#### 4. Write the empty states
+
+- Write the wording for every empty state in the flow: what appears here, why, and the one action that produces the first item. Use your m06 labels.
+
+**You should end up with:** Wording for every empty state in the flow: what appears here, why, and the one action that produces the first item.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Empty state 1 · the screen, and its full wording
+- Empty state 2 · the screen, and its full wording
+- Empty state 3 · the screen, and its full wording
+- Empty state 4 · the screen, and its full wording
+
+<details>
+<summary>Help with this step</summary>
+
+- **Empty state:** A screen with no content in it yet. It teaches more than any tour, because the person is looking at it for a reason of their own.
+
+Stuck starting? List every screen that can be empty before you write any wording. The list is longer than most people expect.
+
+Is it enough? Each one says what appears, why, and one action, in words a person would use.
+
+</details>
+
+#### 5. Record the cost and pause
+
+- Write what deferring each item costs — less complete records, an interruption later, a support question — and which deferrals you are least sure about. Save the path and the deferral list.
+
+**You should end up with:** What deferring each item costs, which deferral you trust least, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- What deferring each item costs you: less complete records, an interruption later, a support question
+- The deferral you are least sure about, and why
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? For each deferred item finish the sentence “because we waited, this goes wrong …”.
+
+Is it enough? Every deferred item has a cost written against it, or has been removed instead.
+
+</details>
+
+**Save and continue.** Saved for you: Your two lists, the counts, the empty-state wording and the deferral list save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. Keep the flow from the previous lesson beside you; the first run is one pass through it by someone who knows nothing. What your creator sees: Your creator reads the before and after counts and the deferral list. The counts are the part you can show anyone, because they describe your design rather than making a claim about users. Your next action: Open Your work and choose Ready for review. The next lesson designs the account paths for whatever you deferred to “when they have an account”.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -444,70 +657,165 @@ A booking product asked people to register before seeing a price. Rebuilt: no ac
 
 Design the sign-in, sign-up and recovery paths for your product, including the shared-device and lost-access cases, with every form field labelled, every error message written and the recovery path shown to work without the thing that was lost.
 
-**Where to work:** Paper screens with the real message wording written on them. If you want to check the field behaviour, a single local HTML file with labelled inputs shows you what happens on a failed submission without any framework or account.
+**Where to practise:** Draw the sign-up, sign-in and recovery paths added to your flow on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper screens with the real message wording written on them. If you want to check the field behaviour, a single local HTML file with labelled inputs shows you what happens on a failed submission without any framework or account.
 
 - Starting material: Your flow and the deferral list. Whatever you deferred to “when they have an account” now needs an account path that people can actually complete.
 - Create HaruCourse/Practice/m07-l03-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Getting in and getting back in
+#### 1. Read the forms guidance
 
-Input artifact: Your flow and the deferral list. Whatever you deferred to “when they have an account” now needs an account path that people can actually complete.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Sign-up, sign-in and recovery paths drawn on the flow, a stated purpose for the account with a no-account path, written wording for every error and confirmation attached to its field, and a recorded shared-device walkthrough with the changes it forced.
-
-## 1. Read the forms guidance
 - Read the assigned sections on labels, instructions, validation and user notifications. List the rules you will apply to every field.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The rules you will hold every field to: a visible label, an instruction, an error tied to the field, and input that survives a failed attempt.
 
-## 2. Decide what the account is for
-- Write what an account gives the person, and design the path for someone who never creates one. If nothing on your list benefits the person, remove the requirement.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- The rules you will apply to every field: its label, its instruction, its error, and what survives a failed attempt — Wording rules only. Do not write any real password, code, reference or account detail anywhere in this worksheet.
 
-## 3. Draw sign-up, sign-in and recovery
-- Draw all three paths on your flow, including at least one recovery route that does not depend on the lost factor, and the ending for someone with nothing left — a route to a person.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Persistent label:** A label that stays visible while the person types. A placeholder that vanishes as soon as typing starts is not a label.
+- **Field-level error:** A message beside the field it concerns. An error that could apply to two fields has not yet told anyone anything.
+- **Factor:** One thing a person uses to prove who they are: a phone that receives a code, an inbox, a booking reference.
 
-## 4. Write every message
-- Write the exact wording for each error and confirmation: what happened, what to do next, and what was kept. Attach each error to its field.
+Stuck starting? Write the four rules as four short lines you could hold any drawn screen up against.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Walk the shared device and pause
-- Walk the flow as someone using a family member's phone: what stays signed in, who receives the code, what the next person sees. Record the changes this forces. Save the paths and the messages.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Every field has a persistent label and a field-level error: [evidence reference]
-- Recovery works without the lost factor: [evidence reference]
-- The shared-device case is designed, not assumed away: [evidence reference]
-- The account's purpose is stated or the requirement removed: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Each rule is specific enough that checking a screen against it gives you a yes or a no.
 
 </details>
+
+#### 2. Decide what the account is for
+
+**See it first.** Made-up example. Designing a sign-up screen for a booking product, then finding the product did not need accounts at all.
+
+- **What I designed first:** A registration screen in front of the class list: name, phone number, password, confirm password. It was the tidiest screen in the set.
+- **Why it felt right:** Every product I had used asked me to register, so registering felt like the first step rather than a decision somebody had made.
+- **The question I had not asked:** What does the account give the person? I wrote the list: see history, change a booking, not re-enter details.
+- **What the list showed:** All three are things a booking reference and a phone number already do. The account was serving the records, not the person.
+- **What replaced it:** No account to browse or book. A reference plus a phone number to find a booking later. An optional account for people who book often, offered after a second booking.
+
+**The wrong turn:** The wrong turn is designing the sign-up screen before asking what the account is for. The screen is easy to draw, and the question is the actual work.
+
+**What it costs:** Without accounts you know less about who is booking, and some people will mislay their reference. You take that in exchange for the bookings a registration wall costs you.
+
+**Still unknown:** Still unknown: how many people lose the reference, and what they do next. The recovery path has to answer that either way.
+
+- Write what an account gives the person, and design the path for someone who never creates one. If nothing on your list benefits the person, remove the requirement.
+
+**You should end up with:** What the account gives the person, one benefit at a time, and a working path for someone who never creates one.
+
+Worksheet fields for this step:
+
+- What an account gives the person, listed one benefit at a time — Write what it does for them, not for your records. If the list comes out empty, that is the finding.
+- The path for someone who never creates an account
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the benefits list before you draw anything. If every line on it is about your records, the requirement comes out.
+
+Is it enough? Someone who never creates an account can still complete the thing they came for, and you can say how.
+
+</details>
+
+#### 3. Draw sign-up, sign-in and recovery
+
+- Draw all three paths on your flow, including at least one recovery route that does not depend on the lost factor, and the ending for someone with nothing left — a route to a person.
+
+**You should end up with:** Sign-up, sign-in and recovery drawn on the flow, with at least one recovery route that avoids the lost factor, and an ending for someone with nothing.
+
+**Try it with help.** A made up sign-in path. A person registered with a phone number and signs in with a code sent by message. She has since changed her number, so the code reaches a phone she no longer has, and she does not remember whether she ever added an email address.
+
+Which of these is a recovery path, rather than the same wall drawn again?
+
+- **Confirm the booking with its reference and the class date, then let her set a new number, with a route to a person if she has no reference either.** — It uses something she can still produce, and it names what happens when she can produce nothing. Both halves are needed, and a route to a person belongs on the flow.
+- Send the code to the old number again, in case the first message was delayed. — The number is exactly what she has lost, so the second message arrives where the first one did. Repeating a step is not a different factor.
+- Ask her the security question she chose when she registered. — This can work, and only where she was actually asked to set one and remembers the answer. If you cannot promise that, it is one more thing she may not have.
+- Tell her to create a new account with her new number. — Her bookings stay with the old account, so the thing she came for is still out of reach. A new account moves the problem rather than solving it.
+
+**Then:** Draw at least one recovery route on your own flow that uses something other than the lost factor, and draw the ending for someone who has nothing left.
+
+Worksheet fields for this step:
+
+- Sign-up and sign-in, written out as the nodes you added to the flow
+- The recovery route that does not depend on the thing that was lost — Name the lost factor first, then the route. If the route uses the lost factor, it is the same wall drawn twice.
+- The ending for someone who genuinely has nothing left — A way to reach a person is a legitimate part of the design. Put it on the flow rather than leaving it to a support inbox.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Recovery path:** The route back in for someone who has lost a factor. If it needs the lost factor, it is not a recovery path.
+
+Stuck starting? Name the factor first: what does a person on your flow use to prove who they are? Then design for having lost exactly that.
+
+Is it enough? Every recovery route on the flow works without the lost factor, and the ending for someone with nothing is drawn rather than assumed.
+
+</details>
+
+#### 4. Write every message
+
+- Write the exact wording for each error and confirmation: what happened, what to do next, and what was kept. Attach each error to its field.
+
+**You should end up with:** Label, instruction, error wording and preserved input for every field, each error attached to one field. Wording only, never real credentials.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Field 1 · its label, its instruction, its error wording, and what stays on screen after a failed attempt
+- Field 2 · its label, its instruction, its error wording, and what stays on screen after a failed attempt
+- Field 3 · its label, its instruction, its error wording, and what stays on screen after a failed attempt
+- Field 4 · its label, its instruction, its error wording, and what stays on screen after a failed attempt
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the error before the label. The error is where the thinking is, and it usually tells you what the instruction should have said.
+
+Is it enough? No error could apply to two fields, and each one says what happened, what to do next, and what was kept.
+
+</details>
+
+#### 5. Walk the shared device and pause
+
+- Walk the flow as someone using a family member's phone: what stays signed in, who receives the code, what the next person sees. Record the changes this forces. Save the paths and the messages.
+
+**You should end up with:** The shared-device walk, the changes it forced, a note of where the paths live, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Walking the flow on a family member’s phone: what stays signed in, who receives the code, what the next person sees
+- The changes the shared-device walk forced
+- Where the drawn paths live — File names or “paper, in my folder”. Nothing is uploaded.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Walk the flow twice on one device as two different people, and write down everything the second person can see.
+
+Is it enough? The walk names at least one thing the second person should not have seen, and the change that removes it.
+
+</details>
+
+**Save and continue.** Saved for you: Your account purpose, the three paths, the message wording and the shared-device notes save as you type, on this device first and then online. Kept outside the app: The drawn paths stay on paper or in your own folder. Photograph them and write the file name here; naming a file does not upload it. What your creator sees: Your creator reads the recovery route and the shared-device walk. Those two are the parts most portfolios do not have at all. Your next action: Open Your work and choose Ready for review. The next lesson takes the same flow and asks who may see and do what.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -647,70 +955,187 @@ A class provider had three real roles. Customers book and manage their own booki
 
 Produce a two-role permission matrix for your product and design what each role sees when an action is unavailable, distinguishing hidden, visible-but-disabled and visible-with-a-route-to-ask.
 
-**Where to work:** A grid on paper or in a text table, with the message wording written beside it. No permissions tooling is involved; the artefact is a matrix and a set of written messages.
+**Where to practise:** Draw the permission matrix and the wording for every unavailable action on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: A grid on paper or in a text table, with the message wording written beside it. No permissions tooling is involved; the artefact is a matrix and a set of written messages.
 
 - Starting material: Your flow, including anywhere a second person appears — someone booking for another person, an owner managing classes, a colleague with partial access.
 - Create HaruCourse/Practice/m07-l04-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Who may see and do what
+#### 1. Read the permission model
 
-Input artifact: Your flow, including anywhere a second person appears — someone booking for another person, an owner managing classes, a colleague with partial access.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A permission matrix of at least two roles against every action with undecided cells marked, a hidden, disabled or ask decision for every not-allowed cell with written wording, and a recorded dual-role walkthrough.
-
-## 1. Read the permission model
 - Read the assigned overview for the vocabulary: principals, permissions, roles, hierarchy, inheritance and least privilege. Write each in one sentence of your own.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The permission words written in your own sentences, and least privilege said about your own product.
 
-## 2. List the real roles and actions
-- List the kinds of people in your product from your research, and every action anyone can take. Include the actions currently done by message or in person.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- Principal, permission, role, hierarchy and inheritance, each in one sentence of your own
+- Least privilege, said in one line about your own product — The smallest set of things a person needs in order to do their job, and nothing beyond it.
 
-## 3. Build the matrix
-- Draw actions against roles and mark each cell allowed, not allowed, or undecided. The undecided cells are the finding; write what would settle each one.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Principal:** Whoever is acting at this moment. A person, usually, signed in as somebody.
+- **Permission:** One specific thing that may be done, such as cancelling a place.
+- **Role:** A named bundle of permissions, such as helper. People hold roles; roles hold permissions.
+- **Inheritance:** Access given higher up carries down. Someone allowed to manage a class can usually manage its bookings.
+- **Least privilege:** Give the smallest set that lets someone do their job, and nothing spare.
 
-## 4. Design the unavailable states
-- For each not-allowed cell, choose hidden, disabled with an explanation, or a route to ask. Write the message wording for every disabled and ask case.
+Stuck starting? Take each word and finish the sentence “in my product, this means …”.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Test the overlap and pause
-- Walk the flow as one person holding two roles. Record every contradiction. Save the matrix, the state decisions and the messages.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- The matrix covers real roles and every action: [evidence reference]
-- Undecided cells are marked rather than guessed: [evidence reference]
-- Each unavailable action has a designed state and wording: [evidence reference]
-- The dual-role case was walked and its contradictions recorded: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Each sentence names something real in your product rather than repeating the reading.
 
 </details>
+
+#### 2. List the real roles and actions
+
+- List the kinds of people in your product from your research, and every action anyone can take. Include the actions currently done by message or in person.
+
+**You should end up with:** Two real roles from your research, and every action anyone takes — including the ones currently done by message or at the door.
+
+Worksheet fields for this step:
+
+- Role 1 · who they are and what they came to do
+- Role 2 · who they are and what they came to do
+- Every action anyone can take, including the ones done by message or in person — Cancelling by message and taking a name at the door are actions. Write them down even though no screen exists for them yet.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Go through your flow and write down every arrow that somebody has to do. Then add the things done by phone.
+
+Is it enough? At least one action on the list has no screen at all yet.
+
+</details>
+
+#### 3. Build the matrix
+
+**See it first.** Made-up example. Filling in a permission grid in four minutes, then finding that two cells had been decided by nobody but me.
+
+- **My first grid:** Nine actions against three roles. Twenty-seven cells, filled in about four minutes. It looked authoritative because it had no gaps.
+- **The question I then asked:** For each cell: who decided this, and when? Most had a real answer. The owner has always been the one who issues refunds.
+- **The first cell with no answer:** Can a helper cancel someone’s place? I had written no. In real life the owner does it daily by message, and the helper is the one standing there being asked.
+- **The second:** Can the owner book herself onto her own class? I had not thought about it at all. She does it most weeks, and my grid quietly said she could not.
+- **What I did instead of guessing:** Marked both undecided and wrote what would settle each: an afternoon watching who actually cancels, and one question to the owner about her own bookings.
+
+**The wrong turn:** The wrong turn is filling every cell, because a grid with no gaps feels finished. A confident tick you invented is worse than a blank, since nobody will question it later.
+
+**What it costs:** Marked gaps look unfinished and you will want to tidy them away. They are the finding, and they are what makes the grid honest to anyone reading it.
+
+**Still unknown:** Still unknown: whether the owner would want helpers cancelling at all. That is her decision rather than mine, and the matrix should say so until she makes it.
+
+- Draw actions against roles and mark each cell allowed, not allowed, or undecided. The undecided cells are the finding; write what would settle each one.
+
+**You should end up with:** A grid of actions against roles, every cell marked allowed, not allowed or undecided, with what would settle each undecided one.
+
+Worksheet fields for this step:
+
+- The matrix written out, one row per action
+- Every undecided cell, and what would settle it — A cell is undecided if the only person who ever decided it is you, just now.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the actions down the side first, then add one role column at a time.
+
+Is it enough? Every cell carries one of the three marks, and at least one says undecided.
+
+</details>
+
+#### 4. Design the unavailable states
+
+- For each not-allowed cell, choose hidden, disabled with an explanation, or a route to ask. Write the message wording for every disabled and ask case.
+
+**You should end up with:** For each not-allowed cell: hidden, disabled with a reason, or a route to ask — and the exact words for the last two.
+
+**Try it with help.** Six unavailable actions from a made-up class-booking product. For each, decide what the person should see: nothing at all, the control disabled with a reason, or the control with a way to ask somebody who can.
+
+- A customer is looking at a class page. The controls for changing that class’s date, price and number of places.
+  - **hidden** — She has no path to these controls and never will. Showing them would only make the product look as though it were refusing her something she cannot want.
+  - disabled with a reason — A greyed-out row of management controls on every class page tells a customer nothing she can use, and leaves her wondering what she is missing.
+  - a route to ask — Nobody is going to grant a customer the right to change the price of a class. Offering a request invents a question with no answer at the other end.
+- A customer opens her own booking. The class starts in two hours and free cancellation closed a day ago. The cancel control.
+  - hidden — This is the classic mistake. She knows cancelling exists, so a missing control reads as a broken page, and she rings the shop to find out what happened.
+  - **disabled with a reason** — She needs to see that the control exists and why it is unavailable now. “Free cancellation closed at 10am yesterday” answers the question she actually has.
+  - a route to ask — The deadline has already passed and the rule is the product’s own. A request route sends her away to wait and come back to the same answer.
+- A helper is looking at a booking a customer wants refunded. Only the owner issues refunds, and customers ask the helper first because she is the one at the door.
+  - hidden — She is standing in front of the person asking for the money back. Hiding the control does not remove the request, it removes her way of passing it on.
+  - disabled with a reason — Better than hiding, and it still leaves her to work out what to do next while somebody waits. Somebody can grant this, so name who.
+  - **a route to ask** — “Only the owner can issue refunds — send her this booking” turns a dead end into the message she was about to write anyway.
+- A customer already has a place on Saturday’s class and opens it again. The product allows one place per person per class. The book control.
+  - hidden — A class page with no way to book looks sold out or faulty. She has forgotten she booked, and this page is the only thing that can remind her.
+  - **disabled with a reason** — “You already have a place on this class” is the whole answer, and it arrives in the one place she was looking.
+  - a route to ask — There is nothing for her to ask for. She has what she wanted already, and a request route implies she does not.
+- A helper has the day’s attendance list. Phone numbers are kept from helpers. Two people have not arrived and she would normally ring them.
+  - hidden — She cannot tell the numbers exist, so she assumes the product does not hold them and rings the owner to ask for something the product already has.
+  - disabled with a reason — It tells her the numbers exist and stops there. She still has to invent the next step, in the ten minutes before the class starts.
+  - **a route to ask** — “Numbers are with the owner — ask her to send today’s list” names the action she was going to take and saves her working it out.
+- A helper is on the attendance screen. The total money taken for the day.
+  - **hidden** — Takings are no part of taking attendance. Least privilege here is simply not putting the figure on a screen the helper uses.
+  - disabled with a reason — A greyed-out money figure invites her to wonder what it is and whether she ought to have it. She had no reason to know it was there.
+  - a route to ask — A request route suggests this is something a helper might reasonably be given. It is not part of the job she came to do.
+
+**Then:** Now do the same for each not-allowed cell in your own matrix, and write the exact words for every disabled and every ask case.
+
+**What to watch for:** Look at the two hardest lines, the late cancel and the day’s takings, and ask one question of each cell: does this person already know the action exists? The customer knows cancelling exists, so hiding it looks like a fault. The helper had no reason to know the takings figure existed, so showing it greyed out only raises a question. Hide when there is no path and no reason to know. Disable with a reason when they know and nobody can change it. Offer a route when somebody can.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Unavailable action 1 · the cell, the choice and the wording
+- Unavailable action 2 · the cell, the choice and the wording
+- Unavailable action 3 · the cell, the choice and the wording
+- Unavailable action 4 · the cell, the choice and the wording
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the not-allowed cell you are least comfortable with and ask whether that person already knows the action exists.
+
+Is it enough? No box says only “hidden” or only “disabled”. Every disabled and ask case carries its sentence.
+
+</details>
+
+#### 5. Test the overlap and pause
+
+- Walk the flow as one person holding two roles. Record every contradiction. Save the matrix, the state decisions and the messages.
+
+**You should end up with:** A walkthrough as one person holding two roles, every contradiction written down, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- The double role you walked, and the task you completed as that person — The owner who is also an attendee, or the helper who books classes herself.
+- Every moment the interface disagreed with itself — Write each one as what you saw: shown her own class as a customer, then refused a place on it.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the most likely double role in your product and complete one whole task as that person, slowly.
+
+Is it enough? You have written what you saw at each contradiction, or said plainly that you found none and how you looked.
+
+</details>
+
+**Save and continue.** Saved for you: The matrix, the undecided cells and your wording save as you type, on this device first and then online. Kept outside the app: The grid itself can stay on paper or in a plain text file in your own folder. Write the file name here; naming a file does not upload it. What your creator sees: Your creator reads the matrix with the undecided cells still visible, and the wording for each unavailable action. The gaps are the interesting part, not the ticks. Your next action: Open Your work and choose Ready for review. The next lesson designs the browse and search loop, so keep your flow to hand.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -850,70 +1275,167 @@ The browse flow was redrawn as a loop after an observation showed a participant 
 
 Design the browse-and-search flow through to a chosen item, including refinement, returning to results without losing them, and the paths for no results and too many results.
 
-**Where to work:** Paper screens for the list, the detail and the return, with the filter state written on each so you can see what survives. Cutting the result item out as a small card and laying three side by side is the quickest way to test whether it carries enough to compare.
+**Where to practise:** Draw the browse loop, the result card and the two extreme states on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper screens for the list, the detail and the return, with the filter state written on each so you can see what survives. Cutting the result item out as a small card and laying three side by side is the quickest way to test whether it carries enough to compare.
 
 - Starting material: Your m06 search and filter work and your structure. That lesson designed what search should find; this one designs the journey around it.
 - Create HaruCourse/Practice/m07-l05-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Search, refine and get back to where you were
+#### 1. Read on memory and status
 
-Input artifact: Your m06 search and filter work and your structure. That lesson designed what search should find; this one designs the journey around it.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A browse-and-search flow drawn as a loop with the preserved state named on the return step, a prioritised result-item content list with deliberate omissions, designed too-many and no-results states, and a candidate-holding mechanism with its justification.
-
-## 1. Read on memory and status
 - Read the assigned article on recognition and recall and the heuristics on system status and user control. Note what each implies for returning to a result set.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What the reading on memory and status implies for the moment somebody comes back to a list, and one rule you will hold yourself to.
 
-## 2. Draw the loop
-- Draw the flow as a loop rather than a line: express, see, narrow, open, judge, return or finish. Mark exactly what must be preserved on the return step.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- What recognition, recall and system status say about returning to a set of results
+- One rule you will hold yourself to on the return step — Something you could check by walking your own flow in five minutes.
 
-## 3. Design the result item
-- Decide what appears on a result, using what your participants actually compared on. Write the fields in priority order and say what you deliberately left out.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Recognition:** Seeing something and knowing it. Cheap for people, because the answer is on the screen.
+- **Recall:** Holding something in your head and producing it later. Expensive, and it fails quietly.
+- **System status:** The product telling a person what is true now: what is filtered, what is loading, how many results there are.
 
-## 4. Handle both extremes
-- Design the too-many-results and no-results states: what is suggested, what is shown about which filter caused it, and what route out exists that does not need the same words.
+Stuck starting? Write one sentence about what a person is carrying in her head while she compares, then ask which parts your screen could carry instead.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Add a way to hold candidates, then pause
-- Design the lightest mechanism that lets someone compare without remembering — shortlist, compare, or recently viewed. Record why you chose that one. Save the loop and the states.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- The flow is drawn as a loop with a designed return: [evidence reference]
-- Result content comes from what people compared on: [evidence reference]
-- Too many and no results are both designed: [evidence reference]
-- A candidate-holding mechanism is chosen and justified: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Your rule is something you could test on your own flow this afternoon.
 
 </details>
+
+#### 2. Draw the loop
+
+**See it first.** Made-up example. Drawing the browse flow as a straight line, then finding out what the back arrow actually costs.
+
+- **What I drew first:** Search, results, class page, book. Four boxes in a row with one arrow between each. It matched the screens we already had.
+- **What I had left out:** The arrow going back. I had drawn opening a result and never drawn returning from it, although returning is the commonest thing anyone does there.
+- **Where I noticed:** Walking it myself: Saturday, under five hundred, near me. Opened the third class, went back, and the list was the whole list again with none of my narrowing.
+- **What that produced:** I stopped comparing. I booked the class I could still remember rather than the best one, which is a decision my own drawing had made for me.
+- **What I drew instead:** A loop, with the return arrow labelled: the same words, the same filters, the same sort, the same place in the list, and the ones already opened marked as seen.
+
+**The wrong turn:** The wrong turn is drawing the flow as a line because the screens sit in a line. The back arrow carries most of the work and almost never gets drawn at all.
+
+**What it costs:** Naming everything the return must restore gives you a longer, less tidy note, and something an engineer will push back on. Writing it down is the only way any of it survives being built.
+
+**Still unknown:** Still unknown: how long the narrowing should survive. Coming back an hour later, or on a different phone, is a separate question this lesson does not settle.
+
+- Draw the flow as a loop rather than a line: express, see, narrow, open, judge, return or finish. Mark exactly what must be preserved on the return step.
+
+**You should end up with:** The flow drawn as a loop rather than a line, with the return arrow drawn and everything it must restore named.
+
+Worksheet fields for this step:
+
+- Your loop, stage by stage, including the arrow that goes back
+- Exactly what must be restored when someone returns to results — The search words, the filters, the sort order, the place in the list, and which results she has already opened.
+- What you actually lost when you searched, opened the third result and went back
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Draw the boxes you already have, then draw the arrow from the item back to the results and write on the arrow itself.
+
+Is it enough? The preserved list names specific things rather than “the state”.
+
+</details>
+
+#### 3. Design the result item
+
+- Decide what appears on a result, using what your participants actually compared on. Write the fields in priority order and say what you deliberately left out.
+
+**You should end up with:** The fields on one result, in priority order, each traced to something you watched — and what you left off on purpose.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Result field 1 · what it is and the observation it came from
+- Result field 2 · what it is and the observation it came from
+- Result field 3 · what it is and the observation it came from
+- Result field 4 · what it is and the observation it came from
+- Result field 5 · what it is and the observation it came from
+- What you deliberately left off a result, and why — Something left off on purpose is a decision. Something forgotten is not.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Result item:** One row or card in a list. It exists so somebody can compare it with the ones above and below without opening any of them.
+
+Stuck starting? Reread your m05 notes for the attributes people mentioned aloud while choosing. Those are your first fields.
+
+Is it enough? Every field names the observation behind it, and the omissions box is not empty.
+
+</details>
+
+#### 4. Handle both extremes
+
+- Design the too-many-results and no-results states: what is suggested, what is shown about which filter caused it, and what route out exists that does not need the same words.
+
+**You should end up with:** A designed screen for too many results and a designed screen for none, each naming the filter responsible and offering a way out.
+
+**Try it with help.** A made up filter combination on a class-booking product. “Saturday morning”, “under 500”, “within 2 km” and “beginner” together return nothing at all. Six classes match if the distance filter alone is removed.
+
+What should the empty screen do first?
+
+- **Name the distance filter as the one that emptied the list, offer to remove it, and show that six classes are waiting.** — It says what happened, why, and gives one action with a visible reward. She does not have to take filters off one at a time to find the culprit.
+- Say “No results found” and leave the filters alone so she can adjust them herself. — Accurate, and it hands her the whole search back to work out. She has four filters and no way of knowing which one did it.
+- Clear all the filters automatically and show everything again. — That removes the emptiness by throwing away the work she did. Three of her four filters were fine and she now has to rebuild them from memory.
+- Show the nearest matches anyway, without saying which filter was relaxed. — Quietly ignoring a filter is worse than an empty list, because she believes the results still meet what she asked for and may book something an hour away.
+
+**Then:** Write your own no-results screen the same way: which filter, what to remove, what is waiting. Then do the too-many screen, where the job is the opposite — suggest the narrowing that helps most and show the count before she commits to it.
+
+Worksheet fields for this step:
+
+- The too-many-results screen: the narrowing you suggest, and the counts you show before she commits
+- The no-results screen: which filter caused it, what can be removed, and the route out that does not need the same words
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Choose two filter combinations on your own product: one that would return nothing, one that would return far too much.
+
+Is it enough? Each screen names a specific filter and offers one action, not a general apology.
+
+</details>
+
+#### 5. Add a way to hold candidates, then pause
+
+- Design the lightest mechanism that lets someone compare without remembering — shortlist, compare, or recently viewed. Record why you chose that one. Save the loop and the states.
+
+**You should end up with:** A chosen way to hold candidates with the reason and what you rejected, plus the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- The lightest mechanism that lets someone compare without remembering (A shortlist she adds to / A compare view for two or three / Recently viewed, kept visible / Something else, described below)
+- Why that one, and what you rejected — Name what she is trying to hold in mind, and for how long.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write what a person is trying to hold in mind, and for how long. Then choose the smallest thing that removes that burden.
+
+Is it enough? You can say what you rejected and why, not only what you chose.
+
+</details>
+
+**Save and continue.** Saved for you: The loop, the preserved list, the result fields and the two extreme states save as you type, on this device first and then online. Kept outside the app: The drawings stay on paper or in your own folder. Cutting three result cards out and laying them side by side is worth doing before you write the field list; photograph them and note the file name here. What your creator sees: Your creator reads the preserved-state list and the field list with its sources. Those two are what show this came from watching somebody rather than from a pattern library. Your next action: Open Your work and choose Ready for review. The next lesson takes the chosen item through to commitment, payment and the wait afterwards.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1053,70 +1575,164 @@ The commitment step became a review screen listing class, date, time, place, tot
 
 Design the commitment step through to confirmation, including a review before committing, every state the wait can be in, and what a person sees when they do not know whether their money left.
 
-**Where to work:** Paper screens with the full message wording, plus any browser's own developer tools for the throttling check — no account, extension or paid service. If you have no prototype yet, throttle any comparable live page and record what a slow connection does to feedback timing.
+**Where to practise:** Draw the review screen and the four states of the wait on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper screens with the full message wording, plus any browser's own developer tools for the throttling check — no account, extension or paid service. If you have no prototype yet, throttle any comparable live page and record what a slow connection does to feedback timing.
 
 - Starting material: Your flow with its wait nodes, and any m05 evidence about payment — the observed session, anything a participant said about not knowing whether something worked.
 - Create HaruCourse/Practice/m07-l06-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Commitment, payment and the uncertain wait
+#### 1. Read the review pattern
 
-Input artifact: Your flow with its wait nodes, and any m05 evidence about payment — the observed session, anything a participant said about not knowing whether something worked.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A review screen listing every commitment with change routes and an exact total, written screens for pending, confirmed, failed and unknown states, throttled-connection observations, and a stated mechanism for preventing a duplicate action plus where the confirmation lives afterwards.
-
-## 1. Read the review pattern
 - Read the assigned check-answers pattern and the error-prevention article. Note what the pattern shows before commitment and how it lets people change each part.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What the review pattern puts in front of somebody before an irreversible step, and one error it would prevent in your own flow.
 
-## 2. Design the review screen
-- List everything being committed to, including money, time, place and any deadline or held place. Design the review with a change route for each item and the exact total on the button.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- What the check-answers pattern shows before the irreversible step, and how it lets people change each part
+- One error a review screen would prevent in your own flow
 
-## 3. Design the four wait states
-- Write the screen and message for pending, confirmed, failed and unknown. For unknown, state what is true, what not to do, when they will hear and how to check.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Irreversible step:** The action a person cannot take back on their own. Everything before it is still a draft.
+- **Commitment:** Anything she is agreeing to and cannot undo. Money is one kind; a deadline and a held place are others.
 
-## 4. Throttle and watch
-- Load your prototype or a comparable page on a slow throttled connection with the cache disabled. Record what appears first, how long the feedback gap is, and what you would do differently.
+Stuck starting? Read the pattern and write down the two things it does: it shows everything, and it lets each part be changed from where it is shown.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Prevent the double action and pause
-- Write how a repeated identical request is prevented from doing anything twice, and where the confirmation lives after the tab closes. Save the review, the states and the throttling notes.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Everything committed to is shown before the commitment: [evidence reference]
-- Pending, confirmed, failed and unknown are all designed: [evidence reference]
-- The design was checked on a throttled connection: [evidence reference]
-- Duplicate actions are prevented beyond disabling a button: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Your prevented error is a specific thing somebody in your flow could get wrong today.
 
 </details>
+
+#### 2. Design the review screen
+
+**See it first.** Made-up example. Writing a review screen for a class booking, and finding two commitments that were not money at all.
+
+- **My first review screen:** Class name, date, price and a Pay button. Four lines. It looked complete because it had a number on it.
+- **What I had left off:** A materials charge of 150 that appeared on the following screen. The total on my button was not the total, which is the one thing a total must be.
+- **The two that were not money:** The place is held for twenty minutes and then released, and cancellation is free only until the day before. Neither appeared on any screen anywhere.
+- **Why that is the same problem:** A commitment is anything she cannot undo afterwards. A deadline she never saw is as much a surprise as a charge she never saw.
+- **What the screen became:** Class, date, time, place, what is included, the cancellation deadline in plain words, a total of 850 with nothing added later, and a change link beside every line.
+
+**The wrong turn:** The wrong turn is treating the review screen as a price summary. Everything she is agreeing to belongs there, including the parts that cost her time rather than money.
+
+**What it costs:** A fuller review screen looks heavier and some people will scroll straight past it. It is the last place a surprise can still be prevented, which is worth the weight.
+
+**Still unknown:** Still unknown: whether the cancellation wording is actually understood. That needs somebody reading it back to you, which belongs to a later lesson.
+
+- List everything being committed to, including money, time, place and any deadline or held place. Design the review with a change route for each item and the exact total on the button.
+
+**You should end up with:** A review screen listing every commitment, a change route beside each, and the exact total on the action.
+
+Worksheet fields for this step:
+
+- Everything the person is agreeing to, including anything that is not money — A place held for twenty minutes and a cancellation deadline are commitments too.
+- How each item can be changed from this screen without starting again
+- The exact words and amount on the action
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? List everything she cannot change after the button, then check that each one appears on the screen before it.
+
+Is it enough? The number on the button is the last number she will ever see for this booking.
+
+</details>
+
+#### 3. Design the four wait states
+
+- Write the screen and message for pending, confirmed, failed and unknown. For unknown, state what is true, what not to do, when they will hear and how to check.
+
+**You should end up with:** Written screens for unknown, pending, failed and confirmed, each answering what happened to the money.
+
+**Try it with help.** A made up situation. She taps Pay on a slow connection. The request leaves the phone and nothing comes back. Ninety seconds later the screen still shows a turning circle, and she does not know whether 850 has left her account.
+
+What should that screen say?
+
+- **What is known so far, that she must not pay again, when she will hear, and a reference she can quote.** — Unknown is a state she is standing in, not an error. Telling her what is true and what not to do is what prevents a second payment made out of anxiety.
+- “Payment failed. Please try again.” — You do not know that it failed. If it did not, she pays twice, and a message that guesses in the reassuring direction costs her real money.
+- Keep the circle turning until an answer arrives, so that nothing untrue is said. — Saying nothing is itself a message, and after ninety seconds it reads as broken. She closes the tab, and now nobody has told her where her money is.
+- “Something went wrong. Contact support.” — It answers none of the three things she needs: what happened to the money, what she should not do next, and when she will know.
+
+**Then:** Write your own unknown state first, in her words. Then check that pending, failed and confirmed each answer the money question too.
+
+Worksheet fields for this step:
+
+- Unknown: the request left and no answer came back. What is true, what not to do, when they will hear, how to check
+- Pending: submitted and not yet confirmed. What is happening and what she should do meanwhile
+- Failed: what it says, and how it is clear that nothing has been taken — Say plainly that no money left, and keep everything she had already typed.
+- Confirmed: what it says, and what she is given to keep
+
+<details>
+<summary>Help with this step</summary>
+
+- **Unknown state:** The request left and no answer came back. Not a failure and not a success, and the person is in it whether or not you designed it.
+
+Stuck starting? Write the unknown state as though speaking to somebody who has just paid and seen nothing for a minute and a half.
+
+Is it enough? Each of the four says what happened to her money, in words she would use herself.
+
+</details>
+
+#### 4. Throttle and watch
+
+- Load your prototype or a comparable page on a slow throttled connection with the cache disabled. Record what appears first, how long the feedback gap is, and what you would do differently.
+
+**You should end up with:** A slow, throttled load watched with the cache disabled, with the sequence and the rough timings written down.
+
+Worksheet fields for this step:
+
+- What appeared first, and how long the gap between the action and any feedback lasted — Write the sequence and the rough seconds, not the impression. Say what you loaded if it was not your own prototype.
+- What you would change because of what you saw
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? No prototype yet? Open any comparable live booking page in your browser, turn on a slow profile in the browser’s own tools, disable the cache, and load it while watching. That is honest evidence about timing, and it needs no account.
+
+Is it enough? You have a sequence and rough seconds written down, and you have said what you loaded if it was not your own design.
+
+</details>
+
+#### 5. Prevent the double action and pause
+
+- Write how a repeated identical request is prevented from doing anything twice, and where the confirmation lives after the tab closes. Save the review, the states and the throttling notes.
+
+**You should end up with:** How a repeated identical request is stopped from doing anything twice, where the confirmation lives afterwards, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- The sentence you would say to an engineer about what happens when the same request arrives twice
+- Where the confirmation lives after the tab closes, and how it is found again — A reference and a phone number is a route. So is a message that arrives on the phone.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+- **Repeated request:** The same action arriving twice because somebody pressed back, resent a form or reopened a tab. Not a second decision.
+
+Stuck starting? Write the sentence you would say to an engineer, beginning “if the same request arrives twice, then …”.
+
+Is it enough? The mechanism describes what happens to the second request, not what happens to the button.
+
+</details>
+
+**Save and continue.** Saved for you: The review list, the four states, the throttling notes and your duplicate-request sentence save as you type, on this device first and then online. Kept outside the app: The screens themselves stay on paper or in your own folder. Photograph the four wait states together and note the file name here; naming a file does not upload it. What your creator sees: Your creator reads the four wait states side by side. The unknown one is the interesting artefact, so leave it first. Your next action: Open Your work and choose Ready for review. The next lesson turns the whole flow into an exception table, and your four states are the start of it.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1256,70 +1872,185 @@ An exception table for a booking flow reached nineteen rows. Slips: wrong date t
 
 Produce an exception table for your whole flow listing at least twelve failure cases, each classified as a slip or a mistake, with its prevention, its message and its recovery route.
 
-**Where to work:** A table on paper or in a text file with one row per failure. Writing the message text in full is the required part — an exception table listing cases without their wording is a list of problems rather than a design.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A table on paper or in a text file with one row per failure. Writing the message text in full is the required part — an exception table listing cases without their wording is a list of problems rather than a design.
 
 - Starting material: Your complete flow with its states and waits. Every decision point and every wait is a place something can go wrong; this lesson makes that list exhaustive rather than intuitive.
 - Create HaruCourse/Practice/m07-l07-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# The paths where things go wrong
+#### 1. Read on slips and mistakes
 
-Input artifact: Your complete flow with its states and waits. Every decision point and every wait is a place something can go wrong; this lesson makes that list exhaustive rather than intuitive.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] An exception table of at least twelve cases, each classified slip or mistake, with the chosen response and its reason, full message wording covering what happened, what it means and what to do next, and a harm ranking with three cases marked to fix first.
-
-## 1. Read on slips and mistakes
 - Read the assigned article on preventing user errors and the recovery heuristic. Write the difference between a slip and a mistake in your own words, with one example from your own flow for each.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Your own sentence separating a slip from a mistake, with one of each taken from your flow.
 
-## 2. Walk every node with four questions
-- At each node ask: wrong input, system failure, person leaves and returns, someone else changed something. Write down every case, including the ones that seem unlikely.
+**Try it with help.** Six failure lines from a class-booking product, all made up for practice. Label each one the way you will label your own.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- She meant to book the eleven o’clock class and tapped the ten o’clock one, which sat directly above it in the list.
+  - **slip** — She knew which class she wanted and her finger landed on the row above. Design answers this one: more space between rows, and the day and time repeated where she confirms.
+  - mistake — Her belief was sound. She wanted the eleven o’clock and knew it was the eleven o’clock; only the tap went astray.
+  - system fault — The product did exactly what it was asked to do. The failure sits between her intention and her finger.
+- He left the payment screen and went for lunch, because he believed the place was already his once he had chosen it.
+  - slip — Nothing slipped. He did the thing he intended to do, which was to stop, and he stopped because of what he believed.
+  - **mistake** — He acted on a wrong model of what the product had done. The answer is to name the state as held rather than booked, on the screen and in the message, with the time it expires.
+  - system fault — The place expiring is the product working as designed. What failed is that nobody told him it would.
+- The payment service did not answer, so the product never learned whether the money had left her account.
+  - slip — She did nothing wrong with her hands or her attention. She pressed the right button, once.
+  - mistake — Her belief was accurate right up to the moment the answer failed to arrive. Nothing she understood about the product was wrong.
+  - **system fault** — This is neither her hand nor her belief. It is your side failing, and it is answered by a state she can be told about honestly rather than by a prevention.
+- She typed nine digits of her ten-digit phone number and pressed continue without noticing.
+  - **slip** — She knows her own number. The count went wrong in the typing, which is the ordinary shape of a slip, and a forgiving format with an echo of what was entered catches it.
+  - mistake — A wrong belief would be thinking the number was not needed at all. She meant to enter it correctly and did not.
+  - system fault — Accepting nine digits in silence is a design failure worth fixing, and the failure described here still began in her typing.
+- He cancelled the day before the class expecting his money back, because nothing had told him the deadline was three days.
+  - slip — He cancelled the booking he meant to cancel, at the time he meant to cancel it. The action went exactly as he planned.
+  - **mistake** — He was working from a belief about the rules that the product never corrected. State the deadline where he commits, in plain words, and the belief never forms.
+  - system fault — The rule itself worked. The gap is that it was never said out loud anywhere he would see it.
+- The price of the class changed while she sat on the review screen, and the screen went on showing the old total.
+  - slip — She was not doing anything at that moment. The screen went out of date underneath her without any action of hers.
+  - mistake — Her belief was correct when she formed it, and something outside her made it wrong. That is a different problem from a wrong model.
+  - **system fault** — Somebody else changed something while she was deciding. These are the cases the fourth question exists to catch, and almost nobody finds them by imagination.
 
-## 3. Classify and choose the response
-- Mark each case slip or mistake, then choose prevention, undo, confirmation or recovery only — with a reason. Prefer undo to confirmation where the action can be reversed.
+**Then:** Now write your own sentence above, and put one case of each kind from your flow beside it. You will label the whole list in step 3.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**What to watch for:** Look at the two hardest lines, the lunch and the refund. In both, the person did exactly what they meant to do, and what they meant rested on something the product never told them. That is the test: ask what they believed at the moment they acted. If the belief was sound and only the action went astray, it is a slip.
 
-## 4. Write the messages
-- For each case write what happened, what it means for the person and what to do next. No message may use system vocabulary or leave the money question unanswered.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- The difference between a slip and a mistake, in your own words, with one of each from your flow — A slip is a failure of the hand or the attention. A mistake is a failure of belief.
 
-## 5. Rank and pause
-- Rank the cases by how much harm they do, not by how likely they are. Mark the three you would fix first. Save the table.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Slip:** The person knew what they wanted and the hand or the interface betrayed them. Prevented by design: bigger targets, sensible defaults, forgiving formats.
+- **Mistake:** The person did the wrong thing believing it was right. Prevented by telling them what is true before they act.
+- **System fault:** Neither hand nor belief. Your side failed, or something changed underneath them. Answered by an honest state and a route out.
 
-## Review and handoff
-- At least twelve cases generated systematically, not by intuition: [evidence reference]
-- Each case is classified slip or mistake: [evidence reference]
-- Responses are chosen with a stated reason: [evidence reference]
-- Every message says what happened, what it means and what to do: [evidence reference]
-What remains untested:
-Next action when I return:
+Stuck starting? Write one of each about the same screen and put them side by side.
 
-```
+Is it enough? Both of your own cases come from your flow, and you can say which part of each one failed: the hand or the belief.
 
 </details>
+
+#### 2. Walk every node with four questions
+
+- At each node ask: wrong input, system failure, person leaves and returns, someone else changed something. Write down every case, including the ones that seem unlikely.
+
+**You should end up with:** Every failure the four questions produce, grouped by the question that found it, at least twelve in all.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Wrong input: every case where what someone enters or chooses is not what they meant — Dates, amounts, phone numbers, and any list where two rows sit close together.
+- System failure: every case where your side does not answer, answers late, or answers badly
+- Leaving and coming back: every case where someone stops partway and returns later — A held place expiring, a session ending, a link opened three days later on a different phone.
+- Changed meanwhile: every case where somebody else altered something while this person was deciding
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Put your flow in front of you and take the first question all the way along it before you look at the second.
+
+Is it enough? The changed-meanwhile list is not empty, and at least one case surprised you.
+
+</details>
+
+#### 3. Classify and choose the response
+
+**See it first.** Made-up example. Classifying nineteen failures for a booking flow, and reaching for a confirmation dialogue on almost every one.
+
+- **What I had:** Nineteen cases from the four questions. Twelve looked like careless taps and seven looked like people believing something untrue.
+- **What I did first:** I marked nearly everything a slip and wrote “add a confirmation dialogue” beside each. It felt thorough and it took ten minutes.
+- **Why that failed:** Counting them up, one person booking one class would meet four dialogues. Three of the four guard actions that could simply be undone, and every one of them teaches her to press through without reading.
+- **What I changed:** Undo for cancelling a booking, for five minutes. A confirmation kept for the single action that genuinely cannot be reversed. Nothing at all on the trivial ones.
+- **What the classification was for:** The seven mistakes never needed a dialogue in the first place. They needed a sentence saying what was true before she acted: a held place named as held, a deadline stated on the review screen.
+
+**The wrong turn:** The wrong turn is answering every failure with a confirmation dialogue. It is the cheapest thing to write, it looks careful, and it makes rare slips slightly less likely at the price of interrupting everybody constantly.
+
+**What it costs:** Undo costs a conversation with whoever builds it, and a window of time where the action is not yet final. That is a real cost, and it is smaller than the cost of training people to click through warnings.
+
+**Still unknown:** Still unknown: whether five minutes is the right window. It is a guess about how long someone takes to notice, and it can be revised once anybody uses it.
+
+- Mark each case slip or mistake, then choose prevention, undo, confirmation or recovery only — with a reason. Prefer undo to confirmation where the action can be reversed.
+
+**You should end up with:** Five rows in full: what fails, slip or mistake or system fault, the response and the reason for it.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Case 1 · what fails and where, slip or mistake or system fault, the response you chose and why
+- Case 2 · what fails and where, slip or mistake or system fault, the response you chose and why
+- Case 3 · what fails and where, slip or mistake or system fault, the response you chose and why
+- Case 4 · what fails and where, slip or mistake or system fault, the response you chose and why
+- Case 5 · what fails and where, slip or mistake or system fault, the response you chose and why
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the case that worries you most and fill its row before you choose the other four.
+
+Is it enough? Every row names a response and a reason, and no row classified as a mistake is answered by a confirmation alone.
+
+</details>
+
+#### 4. Write the messages
+
+- For each case write what happened, what it means for the person and what to do next. No message may use system vocabulary or leave the money question unanswered.
+
+**You should end up with:** Full wording for the two hardest messages: what happened, what it means for the person, what to do next.
+
+Worksheet fields for this step:
+
+- The message for the case that does the most harm, written out in full
+- The message for the case where someone cannot tell whether their money left — Say what is true so far, say plainly not to pay again, say when they will hear and how to check without this page.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Message wording:** The exact sentences a person reads, written out. A row saying “show an error” is a note about a message, not a message.
+
+Stuck starting? Write the money one first, as though to someone who has just paid and seen nothing at all.
+
+Is it enough? Neither message uses a system word, and both answer what happened to the money or the work.
+
+</details>
+
+#### 5. Rank and pause
+
+- Rank the cases by how much harm they do, not by how likely they are. Mark the three you would fix first. Save the table.
+
+**You should end up with:** Your cases ranked by harm rather than likelihood, three marked to fix first, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Your cases in order of how much harm each one does, with the three you would fix first marked — Harm, not likelihood. A rare case that loses someone money outranks a common one that costs a moment.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask of each case: what has this person lost by the time they notice? Money and work rank above time, and time ranks above tidiness.
+
+Is it enough? The top three are the three that cost the person most, and the last box names one thing you actually changed.
+
+</details>
+
+**Save and continue.** Saved for you: Your four lists, your five rows, the messages and the ranking save as you type, on this device first and then online. Kept outside the app: The full table of twelve or more cases lives wherever you are keeping it, on paper or in a text file. Note where it is in the ranking box so you can find it again. What your creator sees: Your creator reads the five rows and the two messages. The messages are what show the table is a design rather than a list of problems. Your next action: Open Your work and choose Ready for review. The next lesson turns one branch of the flow into wireframes, and the exception states from this table become frames of their own.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1459,70 +2190,164 @@ One branch — find a class, review it, commit, wait, confirm — produced nine 
 
 Turn one branch of your flow into low-fidelity wireframes for every screen it touches, each carrying its real content in priority order and none carrying visual styling.
 
-**Where to work:** Paper, a pencil and one pen weight for emphasis. This is the recommended route, not a fallback: hand-drawn frames stay low fidelity by nature, which keeps feedback on structure. If you prefer digital, use a plain shape tool without a component library, and if you want a vector version later, hand-written SVG needs only a text editor.
+**Where to practise:** Draw the wireframes for one branch, including its exception states on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper, a pencil and one pen weight for emphasis. This is the recommended route, not a fallback: hand-drawn frames stay low fidelity by nature, which keeps feedback on structure. If you prefer digital, use a plain shape tool without a component library, and if you want a vector version later, hand-written SVG needs only a text editor.
 
 - Starting material: Your flow, your exception table and your m06 labels. The wireframes take their words from the labelling table, not from new invention.
 - Create HaruCourse/Practice/m07-l08-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# From flow to low-fidelity wireframes
+#### 1. Read on prototype fidelity
 
-Input artifact: Your flow, your exception table and your m06 labels. The wireframes take their words from the labelling table, not from new invention.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Low-fidelity wireframes for every screen and state in one branch, each with its job written at the top and real content in priority order, one screen drawn in two content orders with a comparison, and a list of open content decisions.
-
-## 1. Read on prototype fidelity
 - Read the assigned page on making prototypes and choosing fidelity. Write what a low-fidelity artefact can answer and what it cannot.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Two short lists: what a rough frame can settle, and what it cannot.
 
-## 2. List the screens and their jobs
-- From one branch of your flow, list every screen including the exception states. Write the single job of each in one sentence.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- What a low-fidelity frame can settle, and what it cannot — Two short lists. If they come out the same length, one of them is wrong.
 
-## 3. Draw with real content
-- Draw each screen using real labels and real message wording, ordered by priority. Mark anything you do not yet know as an open decision rather than inventing it.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Low fidelity:** Boxes, real words and relative sizes. No colour, no type choices, no icons, no borrowed components.
+- **Fidelity:** How finished a drawing looks. It is a choice, and a rougher drawing gets you better answers about structure.
 
-## 4. Draw one screen two ways
-- Take the screen you are least sure about and draw a second version with a different content order. Note what each favours.
+Stuck starting? Write the “cannot” list first. It is shorter and it is the one that keeps you honest.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Check against the flow and pause
-- Walk the branch screen by screen and confirm every state in your flow has a frame and every prerequisite is available when asked for. Save the set with the open decisions listed.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Every screen and state in the branch has a frame: [evidence reference]
-- Real content is used and unknowns are marked: [evidence reference]
-- Each screen states its single job: [evidence reference]
-- One screen is drawn in two content orders and compared: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? The “can” list includes what is on the screen and in what order, and the “cannot” list includes how it feels and where the eye goes.
 
 </details>
+
+#### 2. List the screens and their jobs
+
+- From one branch of your flow, list every screen including the exception states. Write the single job of each in one sentence.
+
+**You should end up with:** Every screen and state in one branch of your flow, each with its single job.
+
+Worksheet fields for this step:
+
+- Every screen and state in this branch, including the ones from your exception table
+- The single job of each screen, one sentence each — Finish “this screen lets someone …”. If you need the word and, you may be looking at two screens.
+- Any screen that turned out to have two jobs, and what you did about it
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Copy the branch off your flow first, states and all, before you write a single job.
+
+Is it enough? The list contains states as well as screens, and every job sentence names one thing.
+
+</details>
+
+#### 3. Draw with real content
+
+**See it first.** Made-up example. Drawing a class detail screen with placeholder text, and finding nothing wrong with it.
+
+- **What I drew first:** Nine grey boxes with ruled lines standing in for the text, a large rectangle for a photograph, and a button. It looked like a screen and it took four minutes.
+- **Why it felt finished:** Every box was the size I wanted it to be, because I chose the sizes. Nothing was too long, because nothing was real.
+- **What happened when I wrote the real words:** The class name from my m06 table was “Beginners’ wheel throwing, Saturday morning, six weeks”, which ran to three lines. The price needed “per person, materials included”. The what-to-bring line I had never written at all.
+- **What that changed:** The photograph moved below the book action, because the four things people compared on no longer fitted above it. The description, which had been second, went last.
+- **What I wrote on the frame:** Two boxes said “unknown — needs a decision”: what happens to the deposit, and whether the six weeks can be joined late. Both were real gaps, and both had been hidden by a ruled grey line.
+
+**The wrong turn:** The wrong turn is filling the boxes with plausible text so the frame reads well. It hides the long label, the missing sentence and the qualifier the price needs, which are the three things the frame exists to find.
+
+**What it costs:** Real content is slower and the frame looks worse for it. It looks worse because it is showing you the problem.
+
+**Still unknown:** Still unknown: whether the description belongs on this screen at all. That is a question for somebody reading it, not for a pencil.
+
+- Draw each screen using real labels and real message wording, ordered by priority. Mark anything you do not yet know as an open decision rather than inventing it.
+
+**You should end up with:** Frames drawn with real words in priority order, with every unknown marked rather than filled.
+
+Worksheet fields for this step:
+
+- How many frames you drew, and where they are — Paper in a folder is a perfectly good answer. Nothing is uploaded.
+- For the screen that matters most: its content in the order you drew it, top to bottom
+- Everything you did not know the words for, marked as an open decision rather than invented — Write “unknown — needs a decision” on the frame itself, so the gap stays visible to anyone reading it.
+- Anything you were tempted to style, and left plain instead
+
+<details>
+<summary>Help with this step</summary>
+
+- **Real content:** The actual labels from your m06 table and the actual message wording from your exception table. Where you do not know the words, the frame says so.
+
+Stuck starting? Draw the frame for the screen you know best, and write the words before you draw the boxes round them.
+
+Is it enough? No frame carries invented text, and every gap says “unknown — needs a decision”.
+
+</details>
+
+#### 4. Draw one screen two ways
+
+- Take the screen you are least sure about and draw a second version with a different content order. Note what each favours.
+
+**You should end up with:** Two content orders for one screen, and a stated reason for the one you kept.
+
+**Try it with help.** A supplied class detail screen, made up for practice, drawn two ways. Version A: photograph, description, class name, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.
+
+Which version is the better starting point, and for what reason?
+
+- **Version B, because the things a person compares on come before the action and everything else follows.** — The order matches what someone is doing on this screen, which is deciding whether to book. The description is supporting material and sits where supporting material belongs.
+- Version A, because the photograph draws people in and the description explains the class. — That order serves someone who has already decided and is enjoying the page. Anyone still comparing has to scroll past the pleasant part to reach the price.
+- Neither can be judged until there is a visual design. — Colour and type change how an order feels, not what the order is. This is the one question a plain frame answers better than a finished screen.
+- Version B on a phone, and version A on a wide screen. — Width changes the arrangement rather than the priority. If price and date matter most, they matter most at every width, which is the next lesson.
+
+**Then:** Now draw your own least certain screen a second way, and write what each order favours in the box below.
+
+Worksheet fields for this step:
+
+- Version A: the content order you drew first, top to bottom
+- Version B: the same content in a different order
+- Which order you kept, what each one favours, and what the other one served better
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Choose the screen you are least sure about, not the one you like best.
+
+Is it enough? You can say what the order you rejected served better, rather than only that you preferred the other.
+
+</details>
+
+#### 5. Check against the flow and pause
+
+- Walk the branch screen by screen and confirm every state in your flow has a frame and every prerequisite is available when asked for. Save the set with the open decisions listed.
+
+**You should end up with:** The branch walked against the flow, where the frames live, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Walking the branch: any state with no frame, and any screen asking for something the person cannot have yet
+- Where the frames live — File names or “paper, in my folder”. Naming a file does not upload it.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Walk the branch screen by screen with your flow beside you, ticking off each state as you find its frame.
+
+Is it enough? Every state has a frame, and no screen asks for something the person could not possibly have yet.
+
+</details>
+
+**Save and continue.** Saved for you: Your screen list, content order, open decisions and comparison save as you type, on this device first and then online. Kept outside the app: The frames stay on paper or in your own folder. Photograph them if you like and write the file name here; naming a file does not upload it. What your creator sees: Your creator reads the job sentences, the open decisions and the two content orders. The open decisions are what show the frames were drawn honestly. Your next action: Open Your work and choose Ready for review. The next lesson takes two of these screens to three widths, so keep the frames and the content order.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1662,70 +2487,163 @@ The class detail screen at three widths. Narrow: title, date and time, price, wh
 
 Take two screens to mid fidelity at narrow, medium and wide widths, stating for each what reflows, what changes priority, what is hidden and what must never move.
 
-**Where to work:** Paper at three sizes — a phone-width column, a half sheet and a full sheet — is enough, and drawing the narrow one first is the point. If you prefer to see real reflow, a single local HTML file with a few CSS rules shows it honestly at every width with no account, install or design tool.
+**Where to practise:** Draw the two screens at narrow, medium and wide on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper at three sizes — a phone-width column, a half sheet and a full sheet — is enough, and drawing the narrow one first is the point. If you prefer to see real reflow, a single local HTML file with a few CSS rules shows it honestly at every width with no account, install or design tool.
 
 - Starting material: Your low-fidelity frames and the m03 type scale and spacing work. Mid fidelity means real proportions and real text lengths, still without final visual design.
 - Create HaruCourse/Practice/m07-l09-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# The same screen at three widths
+#### 1. Read on responsive layout
 
-Input artifact: Your low-fidelity frames and the m03 type scale and spacing work. Mid fidelity means real proportions and real text lengths, still without final visual design.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Two screens drawn at three widths with real text at its longest, a written never-move, may-reprioritise and may-hide rule set with justified hides, results from the long-label, enlarged-text and failed-image checks, and behaviour notes a developer could work from.
-
-## 1. Read on responsive layout
 - Read the assigned responsive chapters and the layout and spacing guidance. Note the difference between reflowing content and scaling a layout.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Your own sentence on the difference between content reflowing and a layout being scaled down.
 
-## 2. Write the rules first
-- Before drawing, write which elements must never move, which may change priority and which may be hidden. Justify every hide.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- The difference between content reflowing and a layout being scaled down, in your own words — One example of each from something you have used this week on a phone.
 
-## 3. Draw narrow, then wide
-- Draw both screens at a narrow width first, then medium, then wide, using real text at its longest. Keep the never-move elements visible in all three.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Reflow:** Content re-orders and re-groups as the width changes. A row of cards becomes a column; a side panel moves below.
+- **Scaling:** The same arrangement made smaller. It keeps the wide layout’s priorities and squeezes them, which is how a price ends up below the fold.
 
-## 4. Test the hard cases
-- Check the longest label, the enlarged-text case from your m03 work, and what happens when an image fails to load. Record what breaks.
+Stuck starting? Open one page you use often on a phone and on a larger screen, and write down what moved rather than what shrank.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Write the behaviour notes and pause
-- For each screen write what reflows, what changes priority and what is hidden at each width, in words a developer could implement from. Save the three versions and the notes.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Rules for never-move, reprioritise and hide are written first: [evidence reference]
-- Both screens are drawn at three widths with real text: [evidence reference]
-- Long labels, enlarged text and a failed image were checked: [evidence reference]
-- Behaviour notes are specific enough to implement from: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Your two examples are about order and grouping, not about size.
 
 </details>
+
+#### 2. Write the rules first
+
+**See it first.** Made-up example. Writing the never-move rules for a class detail screen, and protecting the wrong things.
+
+- **What I wrote first:** Never move: the class name and the photograph. Everything else could go wherever it fitted, including the price.
+- **Why I wrote it:** The name and the photograph are what the page looks like. I was protecting the identity of the screen rather than what anyone was doing on it.
+- **What the narrow drawing showed:** With the name running to three lines and the photograph beneath it, the price and the date landed below the fold. She came to find out when it is and what it costs, and both were out of sight.
+- **What I changed the rule to:** Never move: price, date and time, remaining places, and the book action. The photograph moved onto the may-hide list, and the name stayed but was shortened.
+- **What the hide list cost me:** I had put the related classes list on may-hide as well. Asked honestly, a first-time visitor is the person most likely to want it, so it moved to the end of the narrow layout instead of disappearing.
+
+**The wrong turn:** The wrong turn is protecting the parts that make the page look like itself. The things that must not move are the things a person is tracking, and they are usually plainer than the things you are proud of.
+
+**What it costs:** Fixing four elements in the hierarchy takes decisions away from you on every screen afterwards. That is what a rule is for, and it will feel restrictive the first time it stops you.
+
+**Still unknown:** Still unknown: whether remaining places belongs on that list at all. Nobody has said out loud that they track it; it is there because it changes.
+
+- Before drawing, write which elements must never move, which may change priority and which may be hidden. Justify every hide.
+
+**You should end up with:** Three written rules, made before you draw: never move, may change priority, may be hidden with a reason.
+
+Worksheet fields for this step:
+
+- What must never move: the things a person is tracking, visible and reachable at every width
+- What may change position or order as the width changes
+- What may be hidden at narrow width, with a justification for each one — If something is unnecessary on a phone, ask honestly whether it is necessary anywhere.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask what a person is holding in mind through the whole task. Those are your never-move elements.
+
+Is it enough? Every entry on the hide list has a reason beside it, and nothing needed to complete the task is on it.
+
+</details>
+
+#### 3. Draw narrow, then wide
+
+- Draw both screens at a narrow width first, then medium, then wide, using real text at its longest. Keep the never-move elements visible in all three.
+
+**You should end up with:** Both screens drawn narrow first, then medium, then wide, with real text at its longest.
+
+**Try it with help.** A supplied narrow layout of a made-up class detail screen, top to bottom: photograph, class name over three lines, description, date and time, price, book action, related classes.
+
+What is the first thing to change, and why?
+
+- **Move date, time and price above the description, so she can decide without scrolling past a block of text.** — They are the things she came for, and on a narrow screen anything below a long description is effectively out of sight. Nothing else on the list stops her deciding.
+- Make the photograph smaller so more fits above the fold. — Shrinking it keeps something she did not come for in a position she has to read past. Its position is the problem rather than its size.
+- Shorten the class name so it fits on one line. — Worth doing, and it wins one line. The decision information is still four items further down.
+- Hide the related classes list, since it matters least. — That frees space at the bottom, which is not where the space is needed, and it takes something away from the first-time visitor who is most likely to be on a phone.
+
+**Then:** Now read your own narrow drawings top to bottom and move anything a person is tracking above the first long block of text.
+
+Worksheet fields for this step:
+
+- The narrow layout for both screens, top to bottom — Use your longest real label everywhere it appears, not the average one.
+- What changes at medium width, and what stays exactly where it was
+- What changes at wide width, and where the never-move things sit
+
+<details>
+<summary>Help with this step</summary>
+
+- **Above the fold:** What is visible before anyone scrolls. On a narrow screen it is very little, which is what makes the order matter so much.
+
+Stuck starting? Draw the narrow version from your never-move list, not from a wide version you already like.
+
+Is it enough? Both narrow drawings begin with the never-move elements, and every label is the longest real one you have.
+
+</details>
+
+#### 4. Test the hard cases
+
+- Check the longest label, the enlarged-text case from your m03 work, and what happens when an image fails to load. Record what breaks.
+
+**You should end up with:** What broke with the longest label, with enlarged text, and with no image, named specifically.
+
+Worksheet fields for this step:
+
+- With your longest real label everywhere it appears: what broke? — Name what overlaps, what truncates, what gets pushed off the screen. Not “it looks cramped”.
+- With text about 150 per cent larger: what broke? — On paper, letter the same screen a step larger throughout and see what collides.
+- With the image missing entirely: what broke?
+
+<details>
+<summary>Help with this step</summary>
+
+- **Enlarged text:** The reader’s own setting, not yours. Many people run their phone text well above the default, and a layout that assumes otherwise fails for them every day.
+
+Stuck starting? Do the longest label first: write it into every place it appears and see what it displaces.
+
+Is it enough? Each note names a specific collision or truncation, or says plainly that nothing broke and how you checked.
+
+</details>
+
+#### 5. Write the behaviour notes and pause
+
+- For each screen write what reflows, what changes priority and what is hidden at each width, in words a developer could implement from. Save the three versions and the notes.
+
+**You should end up with:** Behaviour notes somebody could build from, where the drawings live, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Per screen and per width: what reflows, what changes priority, what is hidden, in words somebody could build from
+- Where the six drawings live — File names or “paper, in my folder”. Naming a file does not upload it.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write each note in the form “at narrow, X moves above Y, Z is hidden, the action stays visible”.
+
+Is it enough? Nothing in the notes could be decided two different ways by somebody reading them.
+
+</details>
+
+**Save and continue.** Saved for you: Your three rules, the layouts, the three checks and the behaviour notes save as you type, on this device first and then online. Kept outside the app: The six drawings stay on paper or in your own folder. Photograph them if you like and write the file name here; naming a file does not upload it. What your creator sees: Your creator reads the rules and the behaviour notes. The rules written before the drawing are what show the priority question was answered honestly. Your next action: Open Your work and choose Ready for review. The next lesson specifies one component and one screen in every state they can be in, using these same layouts.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1865,70 +2783,166 @@ The book-a-place button was specified in eight states. Default. Focus, with a vi
 
 Specify one interactive component and one whole screen in every state they can occupy — default, focus, loading, empty, error, success, disabled and unavailable — with what triggers each and what the person can do in it.
 
-**Where to work:** A state table plus a small sketch per state; photocopying or photographing in greyscale is the cheapest way to run the colour check. A local HTML file with a few CSS rules lets you check real focus behaviour, which paper cannot show — record it as untested if you do not build it.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A state table plus a small sketch per state; photocopying or photographing in greyscale is the cheapest way to run the colour check. A local HTML file with a few CSS rules lets you check real focus behaviour, which paper cannot show — record it as untested if you do not build it.
 
 - Starting material: Your wireframes, your exception table and the m03 component state work. This lesson makes states a deliverable rather than something discovered during development.
 - Create HaruCourse/Practice/m07-l10-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Every state a component can be in
+#### 1. Enumerate the states
 
-Input artifact: Your wireframes, your exception table and the m03 component state work. This lesson makes states a deliverable rather than something discovered during development.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] State tables for one component and one screen, each row giving trigger, appearance, available actions and exit; a greyscale check; a keyboard focus check or a statement that it was not verified; and a list of any dead ends found and fixed.
-
-## 1. Enumerate the states
 - Read the assigned heuristics on status and error recovery. List every state your chosen component and screen can be in; aim for completeness before judging which matter.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Two lists, one for the component and one for the screen, complete before anything is judged.
 
-## 2. Specify the component
-- For each component state write the trigger, what changes visually, what the person can do and what ends it. Ensure no state is signalled by colour alone and that focus is visible.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- Two lists: every state your component can be in, and every state your screen can be in — Aim for completeness first. Anything that does not apply gets the reason it does not, rather than silence.
 
-## 3. Specify the screen
-- Do the same for the whole screen, including empty, partially loaded, error, permission-denied, offline and success. Place the wording from your exception table.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **State:** A situation the thing can be in, with its own appearance and its own set of things a person can do. It is behaviour, not decoration.
+- **Focus:** Where the keyboard currently is. Without a visible focus state the product cannot be used without a mouse, however it looks.
+- **Empty state:** The screen with nothing in it yet. It is doing more teaching than any tour, and it is the one nobody draws.
 
-## 4. Find the dead ends
-- Check every state has a way out and every loading state has a defined end, including timeout. Fix any state a person could be stuck in.
+Stuck starting? Work through the standard list and mark each state applicable or not. Write the reason beside every not.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Check greyscale and keyboard, then pause
-- View the states in greyscale and confirm each is still distinguishable. Walk the screen by keyboard order and confirm focus is always visible. Record what you could not verify on paper.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Component and screen states are both enumerated completely: [evidence reference]
-- Each state has a trigger, an appearance, actions and an exit: [evidence reference]
-- Disabled and unavailable are distinguished and explained: [evidence reference]
-- Greyscale and focus checks were run or explicitly not verified: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Nothing on either list was excluded silently.
 
 </details>
+
+#### 2. Specify the component
+
+**See it first.** Made-up example. Specifying a book-a-place button, and greying it out without ever saying why.
+
+- **What I had:** Three states: default, pressed and disabled. Disabled was a grey button, and that was the whole of the specification.
+- **What the grey button said:** Nothing. I sat with it for a minute and could not tell whether the class was full, whether I had missed a step, or whether the product had broken.
+- **What I found when I split it:** It was doing two jobs. Before a date is chosen it means not yet. When the class is full it means not for you, not now, which is a different sentence and a different route.
+- **What I wrote instead:** Disabled: triggered by no date chosen, with “choose a date first” beside it, ended by choosing a date. Unavailable: triggered by the class being full, with “this class is full, see other dates”, ended by choosing another date.
+- **What that produced:** Eight rows instead of three. Focus arrived because I had to say how a keyboard user knows where she is, and the timeout arrived because I had to say what ends loading when nothing comes back.
+
+**The wrong turn:** The wrong turn is treating disabled as a look rather than a sentence. A grey control with no explanation is read as a broken product, and it is the commonest state failure there is.
+
+**What it costs:** Splitting disabled into two states means two sets of wording and two triggers to agree with whoever builds it. It is more work than one grey rule, and it is the difference between a person waiting and a person leaving.
+
+**Still unknown:** Still unknown: whether the reason should sit beside the button or replace its label. That needs somebody reading it, not more thinking.
+
+- For each component state write the trigger, what changes visually, what the person can do and what ends it. Ensure no state is signalled by colour alone and that focus is visible.
+
+**You should end up with:** Eight rows for the component, each with a trigger, what changes, what she can do, and what ends it.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Default · trigger, what changes, what she can do, what ends it
+- Focus · trigger, what changes, what she can do, what ends it — This is how a keyboard user knows where they are. Never signal it with colour alone.
+- Loading · trigger, what changes, what she can do, what ends it — Two endings, not one: the answer arriving, and the timeout when no answer comes.
+- Empty · trigger, what changes, what she can do, what ends it, or the reason it does not apply
+- Error · trigger, what changes, what she can do, what ends it — Keep everything she had already entered. Losing it is the reliable way to make someone give up.
+- Success · trigger, what changes, what she can do, what ends it
+- Disabled, meaning not yet · trigger, the sentence saying what must happen first, what ends it
+- Unavailable, meaning not for you or not now · trigger, the sentence and the route out, what ends it
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Fill the exit column first on every row. It is the one that exposes the states you had not decided.
+
+Is it enough? No state is signalled by colour alone, and disabled and unavailable have different triggers and different sentences.
+
+</details>
+
+#### 3. Specify the screen
+
+- Do the same for the whole screen, including empty, partially loaded, error, permission-denied, offline and success. Place the wording from your exception table.
+
+**You should end up with:** The screen’s states, with the empty one written out in full.
+
+**Try it with help.** A supplied empty screen from a made-up class-booking product. The bookings list, for someone who has never booked anything, shows the heading “Your bookings”, a large grey area and a plus icon in the corner.
+
+What is the most useful thing to add first?
+
+- **A sentence saying what will appear here and the one action that produces the first item.** — The empty state is the first teaching this person gets. “Your bookings appear here — find a class to make your first one” gives the model and the next step in one line.
+- An illustration, so the space does not look broken. — It fills the space and says nothing. She still does not know what this list is for or how to start it.
+- A message saying the list is empty. — That is the one thing already obvious from looking. It uses the space without adding anything to it.
+- A larger, clearer plus button. — The action only helps once she knows what it will do. Size does not explain it.
+
+**Then:** Now write your own empty state in the box below, in three parts: what appears here, why, and the one action that starts it.
+
+Worksheet fields for this step:
+
+- Each screen state: what triggers it, what appears, what she can do, what ends it — Empty, partly loaded, loaded, error, permission denied, offline, and success after an action.
+- The empty state written out in full: what will appear here, why, and the one action that produces the first item
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Place the wording you already wrote in your exception table, rather than writing it twice.
+
+Is it enough? Every screen state has content of its own, not merely a spinner or a blank panel.
+
+</details>
+
+#### 4. Find the dead ends
+
+- Check every state has a way out and every loading state has a defined end, including timeout. Fix any state a person could be stuck in.
+
+**You should end up with:** Every state that had no way out, every loading state with no defined end, and what you did about each.
+
+Worksheet fields for this step:
+
+- Any state with no way out, any loading state with no defined end, and what you did about each — Include the timeout: what she sees when the waiting has gone on too long, and what she can do then.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read down the exit column of both tables and stop at every gap.
+
+Is it enough? There is no state left in which a person could be stuck with nothing to press.
+
+</details>
+
+#### 5. Check greyscale and keyboard, then pause
+
+- View the states in greyscale and confirm each is still distinguishable. Walk the screen by keyboard order and confirm focus is always visible. Record what you could not verify on paper.
+
+**You should end up with:** The greyscale result, the focus check or its honest limit, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- In greyscale: any two states you could no longer tell apart, and the second signal you added
+- Keyboard focus: what you checked, or a plain statement of what you could not verify on paper — An honest “not verified, because these are drawings” is a real answer. Say what would settle it.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Photocopy or photograph the states in greyscale and look for any pair you can no longer tell apart.
+
+Is it enough? Every state survives the colour being removed, and the focus box either records a check or says plainly what was not verified.
+
+</details>
+
+**Save and continue.** Saved for you: Your two lists, the eight component rows, the screen states and the two checks save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. Keep your exception table to hand; most of the screen wording comes straight from it. What your creator sees: Your creator reads the disabled and unavailable rows and the empty state. Those three are where state work is usually thin, so they are the ones worth showing first. Your next action: Open Your work and choose Ready for review. Module 8 builds the interface, and these state tables are what it gets built from.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2068,70 +3082,166 @@ The wireflow assembled from a booking branch was one long sheet: nineteen nodes,
 
 Combine the flow, the screens and the state specifications into a single annotated wireflow, and have it read by someone who was not involved, recording every question they had to ask you.
 
-**Where to work:** Paper laid out on a table and photographed in sections, or a single Markdown document with the screens as images and the annotations as text — the second is easier to version and reads well on a phone. No handoff platform is involved anywhere in this module.
+**Where to practise:** Draw the wireflow with each screen placed at its node on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper laid out on a table and photographed in sections, or a single Markdown document with the screens as images and the annotations as text — the second is easier to version and reads well on a phone. No handoff platform is involved anywhere in this module.
 
 - Starting material: The flow, the wireframes at three widths, the exception table and the state specifications. This lesson joins them; it should not require new design decisions, and anywhere it does is a gap worth finding.
 - Create HaruCourse/Practice/m07-l11-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# The wireflow: one artefact someone else could build from
+#### 1. Read on prototype purpose
 
-Input artifact: The flow, the wireframes at three widths, the exception table and the state specifications. This lesson joins them; it should not require new design decisions, and anywhere it does is a gap worth finding.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] One dated, versioned wireflow with screens at their nodes, conditions on every transition, annotations for the non-visible behaviour, an open-questions list, and a recorded list of the questions an uninvolved reader had to ask.
-
-## 1. Read on prototype purpose
 - Read the assigned prototype guidance and the patterns you used. Note what a shared artefact has to carry that a conversation does not.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Your own sentence about what a page has to carry that a meeting does not.
 
-## 2. Assemble the wireflow
-- Place each screen at its node, label every transition with its condition, and include the exception states. Keep it on one sheet or one continuous document.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- What a shared artefact has to carry that a conversation does not — Picture the person who builds this two weeks after the meeting, working from the page and a memory of what you said.
 
-## 3. Annotate the invisible
-- Add annotations for required and optional fields, submission behaviour, back behaviour, preserved state, timeouts, never-move elements and failure handling.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Wireflow:** The flow diagram with the screen a person sees placed at each node, and the conditions written on the arrows between them.
+- **Handover:** Giving the work to whoever builds it. It happens on the page, not in the room.
 
-## 4. List what is still open
-- Write the open-questions list on the artefact: guessed labels, undecided permissions, unwritten content, untested assumptions. Date and version the whole thing.
+Stuck starting? Write down the last thing you explained out loud about your design, then ask whether the sheet says it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Have it read, then pause
-- Give it to someone who was not involved and ask them to talk through what happens. Record every question they ask without answering until they finish. Save the artefact and the question list.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Screens, transitions and conditions are in one artefact: [evidence reference]
-- Non-visible behaviour is annotated: [evidence reference]
-- Open questions are listed on the artefact: [evidence reference]
-- An uninvolved reader's questions were recorded: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Your sentence names something a conversation cannot do: survive two weeks and three people.
 
 </details>
+
+#### 2. Assemble the wireflow
+
+- Place each screen at its node, label every transition with its condition, and include the exception states. Keep it on one sheet or one continuous document.
+
+**You should end up with:** The wireflow assembled: nodes counted, screens attached, and every arrow you could not label written down.
+
+Worksheet fields for this step:
+
+- How many nodes, and how many of them have a screen attached — Count both. A node with no screen is either a gap or a state you never drew.
+- Arrows you could not label with a condition — Write the arrow and the rule that is missing. Each one is a decision nobody has made.
+- Which states from your exception table are on the sheet, and which are missing
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Lay the flow out flat and put each frame beside the node it belongs to before you write anything.
+
+Is it enough? Every arrow either carries a condition or appears in the unlabelled list.
+
+</details>
+
+#### 3. Annotate the invisible
+
+**See it first.** Made-up example. Annotating a booking wireflow, starting with the things that were already visible.
+
+- **What I annotated first:** Notes saying “goes to the payment screen”, beside an arrow that already pointed at the payment screen. Fifteen of them.
+- **What I was asked instead:** Whether the held place survives closing the browser. Nothing on the sheet said, and nothing on it could have.
+- **The test I started using:** Would this note still be true and useful if the picture were gone? If the answer is already drawn, it is a caption rather than an annotation.
+- **What replaced them:** Required and optional per field, what submission does, what back does, what is preserved on return, the twenty-minute hold, and what a failed request shows.
+- **What that gave me:** Eleven notes carrying rules, and one of them turned out to be a rule nobody had ever actually decided.
+
+**The wrong turn:** The wrong turn is captioning your own drawing. It feels like thorough documentation and it tells the reader nothing they could not already see.
+
+**What it costs:** Rules take longer to write than captions, and some of them force a decision you were comfortable leaving open. That is the annotation doing its job.
+
+**Still unknown:** Still unknown: whether twenty minutes is the right hold. Written down as a rule it is at least arguable, which it was not while it lived in my head.
+
+- Add annotations for required and optional fields, submission behaviour, back behaviour, preserved state, timeouts, never-move elements and failure handling.
+
+**You should end up with:** Annotations that carry rules rather than captions, one at a time.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Annotation 1 · where it sits, what is invisible there, and the rule — Required and optional, what submission does, what back does, what is preserved on return, timeouts, never-move elements, what a failed request shows.
+- Annotation 2 · where it sits, what is invisible there, and the rule
+- Annotation 3 · where it sits, what is invisible there, and the rule
+- Annotation 4 · where it sits, what is invisible there, and the rule
+- Annotation 5 · where it sits, what is invisible there, and the rule
+
+<details>
+<summary>Help with this step</summary>
+
+- **Annotation:** A written rule about behaviour you cannot draw: what is required, what happens next, what is kept, what fails.
+- **Preserved state:** What is still there when a person comes back: their filters, their place in a list, what they had typed.
+
+Stuck starting? Take one screen and ask what an engineer would have to guess. Write the guess as a rule.
+
+Is it enough? Each annotation says something the picture does not, in words someone could build from.
+
+</details>
+
+#### 4. List what is still open
+
+- Write the open-questions list on the artefact: guessed labels, undecided permissions, unwritten content, untested assumptions. Date and version the whole thing.
+
+**You should end up with:** The open-questions list as it will appear on the artefact, with a date and a version.
+
+Worksheet fields for this step:
+
+- The open-questions list as it appears on the artefact — Guessed labels, undecided permission cells, content nobody has written, assumptions nobody has tested.
+- The version line: date, version, and what changed since the last one
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Collect the guesses from your m06 change note and the undecided cells from your permission matrix first; they are already written.
+
+Is it enough? Every guess on the sheet appears on the list, and the version line says what changed.
+
+</details>
+
+#### 5. Have it read, then pause
+
+- Give it to someone who was not involved and ask them to talk through what happens. Record every question they ask without answering until they finish. Save the artefact and the question list.
+
+**You should end up with:** An honest record of who read it and every question they had to ask, plus the repair the Check questions asked for.
+
+**Try it with help.** A supplied moment from the same made-up handover. A friend who had never seen the project read the wireflow aloud and stopped at the payment screen to ask what “pending” means. She read everything else without stopping.
+
+What does her question tell you?
+
+- **The word is doing work the artefact never explains, so she has found a gap on the page.** — A reader stops where the page stops carrying her. The repair belongs on the page: a plainer word, or an annotation saying what that state means to a person.
+- She lacks the background to read a wireflow, so the question does not count. — Someone who read everything else without stopping is reading it perfectly well. Discounting her question throws away the only thing the read produced.
+- You should explain it to her, then carry on with the read. — Explaining ends the finding. The person building from this in two weeks will meet the same word with nobody sitting beside them.
+- It is a wording problem for later, not a wireflow problem. — The word appears on the artefact and on the screen, so it is both. Recording it as a question keeps it attached to the place it was found.
+
+**Then:** Write out every question your own reader asked, then mark which are changes to the page and which are changes to the design.
+
+Worksheet fields for this step:
+
+- Who actually read it (Someone not involved read it / Someone who already knows the project read it: rehearsal read / Nobody available: dated gap recorded) — Choose honestly. A rehearsal read is useful work and it is not the same test.
+- Every question they had to ask, and what each one will change — Write them all down before you answer any of them.
+- If nobody was available: who you could not reach, the date, and where the finished artefact is waiting — Dating the gap is a real result. Leave this empty if someone read it.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+- **Rehearsal read:** Someone who already knows the project reading it. It catches missing conditions and it cannot show you what a stranger sees.
+
+Stuck starting? Hand it over and say only “tell me what happens”. Then keep your hands still and write.
+
+Is it enough? Every question is written down, and the status matches who actually read it.
+
+</details>
+
+**Save and continue.** Saved for you: Your annotations, open questions and reader questions save as you type, on this device first and then online. Kept outside the app: The sheet stays on paper or in your own folder. Photograph it in sections and write the file names here; naming a file does not upload it. What your creator sees: Your creator reads the annotations and the reader questions. The questions someone had to ask are the most useful part, so leave them in full. Your next action: Open Your work and choose Ready for review. The next lesson walks two tasks through these same frames with someone else at the table.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2271,70 +3381,187 @@ Three sessions, two tasks, printed frames on a table. All three participants tri
 
 Run a moderated paper prototype test of two tasks with at least three participants, recording where each person hesitated, what they expected next and every place they went somewhere you had not drawn.
 
-**Where to work:** Printed or hand-drawn frames, a table and a pen. Moving paper by hand is the whole method and it costs nothing; a clickable prototype adds nothing at this fidelity and takes an evening you could spend running a third session.
+**Where to practise:** Draw the paper frames and the two task cards on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Printed or hand-drawn frames, a table and a pen. Moving paper by hand is the whole method and it costs nothing; a clickable prototype adds nothing at this fidelity and takes an evening you could spend running a third session.
 
 - Starting material: The wireflow and the open-questions list. Test the tasks your open questions bear on, not the parts you are confident about.
 - Create HaruCourse/Practice/m07-l12-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Walk it with someone: the paper prototype test
+#### 1. Prepare the tasks and the kit
 
-Input artifact: The wireflow and the open-questions list. Test the tasks your open questions bear on, not the parts you are confident about.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Two task scenarios tied to open questions, session records for at least three participants covering expectation, action, outcome and hesitation, a list of undrawn interactions people attempted, and a problem list ranked by harm with the sample stated.
-
-## 1. Prepare the tasks and the kit
 - Read the assigned session guidance. Write two task scenarios aimed at your open questions, print or lay out your frames, and extend your consent introduction to cover a design session.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Two task scenarios aimed at open questions, and consent wording you would actually say out loud.
 
-## 2. Rehearse being the computer
-- Run the tasks yourself, moving the paper as the design dictates. Note anywhere you would have to improvise a screen; draw those before the first session.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- Task 1 · the situation, the goal, and the open question it aims at
+- Task 2 · the situation, the goal, and the open question it aims at — No control names. If the wording says which thing to press, it is an instruction rather than a task.
+- Your consent wording for a design session, word for word — Who you are, that you are testing the paper and not them, that they can stop at any time, and what happens to your notes.
 
-## 3. Run three sessions
-- With consent, run both tasks with three participants. Ask what they expect before each change, wait during hesitation, and never explain. Record expectation, action, outcome and doubt.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Task scenario:** A situation and a goal, with no route in it. “Book the Saturday class for two people and find the total” names nothing to press.
+- **Moderated session:** You sit with one person, give them a task, and watch. You do not teach, and you do not defend.
 
-## 4. Record the undrawn moments
-- Immediately write every place a participant tried something you had not designed, with what they expected. These are your missing screens and interactions.
+Stuck starting? Take two items off your open-questions list and write the situation in which a person would meet each one.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Rank by harm and pause
-- List the problems and rank them by harm, not frequency. Note the participant count and route. If nobody consented, record the gap and keep the tasks and kit as the deliverable.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Tasks are scenarios aimed at open questions: [evidence reference]
-- Expectation and hesitation are recorded, not just outcomes: [evidence reference]
-- Undrawn interactions people attempted are captured: [evidence reference]
-- Problems are ranked by harm with the sample stated: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Neither task names a control, and the consent wording says they can stop.
 
 </details>
+
+#### 2. Rehearse being the computer
+
+**See it first.** Made-up example. Rehearsing a paper test alone, and finding out what I do when someone goes quiet.
+
+- **What I planned to say:** A task, then nothing. I had written “say nothing” at the top of my notes in capital letters.
+- **What happened in the rehearsal:** I ran it past my sister as practice. She stopped over the review sheet for about four seconds and I said “the total is at the bottom”.
+- **Why that was the whole test:** Those four seconds were the only thing the rehearsal produced, and I filled them in. I now know nothing about whether the total is findable.
+- **What I changed:** A rule: count ten silently before speaking, and if I do speak, ask what they expected rather than tell them where anything is.
+- **What the rehearsal was worth:** It found two screens I would have had to improvise, and it taught me my own reflex. It says nothing about anyone but me, and my notes say so.
+
+**The wrong turn:** The wrong turn is treating a pause as an awkward silence to be filled. It is the moment the design is failing to say something, and it lasts about four seconds.
+
+**What it costs:** Waiting is uncomfortable for both of you, and some people feel tested rather than helped. Saying at the start that you are testing the paper and not them is what buys the silence.
+
+**Still unknown:** Still unknown: whether the total is findable at all. A rehearsal with my sister cannot answer that, and the ranked list will not pretend otherwise.
+
+- Run the tasks yourself, moving the paper as the design dictates. Note anywhere you would have to improvise a screen; draw those before the first session.
+
+**You should end up with:** The screens you had to improvise, now drawn, and the three things you will not do in a session.
+
+**Try it with help.** Six moments from a paper session, all made up for practice. Every one of them is a pause. Decide what each pause was: a hesitation to wait through, a place the moderator rescued the person, or a real dead end in the design.
+
+- She stops over the review sheet for five seconds, then puts her finger on the total and carries on.
+  - **hesitation** — She was reading. The pause ended by itself and she found what she was looking for, which is what makes it a hesitation rather than a failure.
+  - rescue — Nobody said anything to her. A rescue needs a moderator who spoke, pointed or moved a sheet.
+  - dead end — A dead end is a pause that does not end without help. This one ended on its own inside five seconds.
+- He turns the sheet over looking for the price, and the moderator says “it is on the front, at the bottom”.
+  - hesitation — It might have been one, and now nobody will ever know, because the moderator ended the pause before he did.
+  - **rescue** — The moderator supplied the answer, so the finding is gone. Write down what he was doing when it happened; that part is still worth having.
+  - dead end — It may well have become one. The rescue arrived first, so this session cannot show it.
+- She taps the price on the class card expecting it to open, nothing is drawn there, and the moderator stays quiet.
+  - hesitation — A hesitation ends when the person finds their way. Here there is nothing to find, because that screen was never drawn.
+  - rescue — Nobody helped her, which is precisely why the finding survived. The silence is what let this one show itself.
+  - **dead end** — She reached for something that does not exist. That is the most valuable result a paper test gives you, and it belongs on the undrawn list as well.
+- He sits over the pending screen for nearly a minute, reads it twice, then asks “has it taken my money or not?”.
+  - hesitation — A minute, a re-read and a question at the end is not a pause he came out of. The screen never answered him.
+  - rescue — The moderator did not speak. He broke the silence himself, which makes his question a finding rather than a rescue.
+  - **dead end** — The screen is on the table in front of him and it still does not say what happened to his money. Write his sentence down word for word.
+- She pauses, says “I am just deciding between the two Saturdays”, and then picks one.
+  - **hesitation** — She told you what the pause was: a decision of her own. Comparing takes time, and that time is not a fault in the design.
+  - rescue — Nothing was offered to her. She narrated the pause and came out of it herself.
+  - dead end — The design gave her both options and she chose one. A dead end is where the design stops, not where the person thinks.
+- He asks “what does this do?” about the change link, and the moderator answers “it takes you back to edit it”.
+  - hesitation — His question opened a pause that was never allowed to run. What he expected the link to do is now unrecorded.
+  - **rescue** — The answer should have been a question: what do you expect it to do. Hand the question back, every time.
+  - dead end — It cannot be shown to be one. The moderator answered, so nobody knows whether he would have got there alone.
+
+**Then:** Go through your own notes afterwards and mark every pause with one of these three. The rescues are the findings you gave away.
+
+**What to watch for:** The pattern is that a pause only tells you something if you let it finish. Wait, then ask what they expected. Never say what the thing does.
+
+Worksheet fields for this step:
+
+- Screens you had to improvise while running it yourself, now drawn — Anywhere you reached for a frame that did not exist. Draw it before the first session.
+- The three things you will not do during a session
+
+<details>
+<summary>Help with this step</summary>
+
+- **Being the computer:** You move the paper and show only what the design would show. You respond as it would, and you explain nothing.
+- **Undrawn interaction:** Something a person reaches for that you never designed. It shows the parts of the flow that exist only in your head.
+
+Stuck starting? Run both tasks yourself, moving the paper with your hands, and stop the moment you reach for a frame that is not there.
+
+Is it enough? Nothing has to be improvised on the day, and your three rules are written where you can see them.
+
+</details>
+
+#### 3. Run three sessions
+
+- With consent, run both tasks with three participants. Ask what they expect before each change, wait during hesitation, and never explain. Record expectation, action, outcome and doubt.
+
+**You should end up with:** An honest session status, and a record for each person: what they expected, what they did, what happened and where they paused.
+
+Worksheet fields for this step:
+
+- What actually happened (Three consenting participants / One or two consenting participants / Rehearsal only with someone who knows the project / Nobody available: dated gap recorded) — Choose honestly. A rehearsal tests your kit and your own reflexes; it is not research.
+- Session 1 · what they expected before each change, what they did, what happened, and where they paused
+- Session 2 · what they expected before each change, what they did, what happened, and where they paused
+- Session 3 · what they expected before each change, what they did, what happened, and where they paused
+
+<details>
+<summary>Help with this step</summary>
+
+- **Expectation:** What they think will happen, asked before the sheet changes. The gap between that and what happens is where most problems live.
+- **Formative test:** A test run to find problems, not to measure anything. No scores, no success rates, no comparison.
+
+Stuck starting? Read your consent wording, give task one, and then put your pen on the paper and your mouth shut.
+
+Is it enough? Each record has an expectation written before a change, not only what happened after it.
+
+</details>
+
+#### 4. Record the undrawn moments
+
+- Immediately write every place a participant tried something you had not designed, with what they expected. These are your missing screens and interactions.
+
+**You should end up with:** Everything people reached for that you had not drawn, and every place expectation and outcome did not match.
+
+Worksheet fields for this step:
+
+- Everything a participant reached for that you had not drawn, with what they expected it to do — Every moment you had to say “that does not do anything” is a row here.
+- Every place what they expected and what happened did not match — A task finished anxiously is a mismatch, not a success.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write this immediately after each session, before the details go soft.
+
+Is it enough? The undrawn list has at least one row, or you can say plainly that nobody reached for anything missing.
+
+</details>
+
+#### 5. Rank by harm and pause
+
+- List the problems and rank them by harm, not frequency. Note the participant count and route. If nobody consented, record the gap and keep the tasks and kit as the deliverable.
+
+**You should end up with:** The problems in harm order with the sample stated, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- The problems in order of harm, with what each one costs the person — Harm is what it stops, what it costs in money or time, and what it loses. Not how often you saw it.
+- How many people, how you found them, and what that limits
+- If nobody consented: who you could not reach, the date, and where the prepared kit is — Dating the gap is a real result. Leave this empty if sessions happened.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? For each problem write what it costs the person, then sort by that column alone.
+
+Is it enough? The order is by cost to the person, and the sample line says who these three people were.
+
+</details>
+
+**Save and continue.** Saved for you: Your tasks, session records and ranking save as you type, on this device first and then online. Kept outside the app: The frames stay on paper. Photograph the table between sessions if you like, with no faces in shot, and write the file names here; naming a file does not upload it. What your creator sees: Your creator reads the undrawn list and the ranking. The things people reached for that you never drew are the part worth talking about. Your next action: Open Your work and choose Ready for review. The next lesson repairs the top two problems, re-tests them with someone new, and writes the module record.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2474,70 +3701,166 @@ The two highest-harm problems were repaired: results were preserved on return, a
 
 Repair the two highest-harm problems from your test, re-test them with someone new, and write a decision record for the whole module stating each significant decision, its evidence, its alternatives and what remains untested.
 
-**Where to work:** A written record in plain text or Markdown, one entry per decision. Keeping it as text means it can be searched, versioned and pasted into a case study later; a decision record inside a design file is one you will not find when you need it.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A written record in plain text or Markdown, one entry per decision. Keeping it as text means it can be searched, versioned and pasted into a case study later; a decision record inside a design file is one you will not find when you need it.
 
 - Starting material: The ranked problem list, the wireflow and every open question. This lesson closes the module the way m05 and m06 closed: with a repair that was checked and a record another person could act on.
 - Create HaruCourse/Practice/m07-l13-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Repair, re-test and write the decision record
+#### 1. Choose and predict
 
-Input artifact: The ranked problem list, the wireflow and every open question. This lesson closes the module the way m05 and m06 closed: with a repair that was checked and a record another person could act on.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Choosing which two problems to repair, and picking the wrong two first.
 
-## Output checklist
-- [ ] Two repairs with predictions written in advance, re-test records from at least one new participant, a decision record covering every significant decision with evidence, alternatives and untested aspects, and a written statement of what the module did not establish.
+- **What I chose first:** The two wordings: a deadline written as a date, and a word on the pending screen nobody understood. Ten minutes each.
+- **Why it felt right:** By lunchtime two problems were struck off and the list looked shorter. Progress you can see is very hard to argue with.
+- **What was still at the top:** The lost filtered results. One participant had rebuilt her search, given up, and booked the third class she could see. That one changed what somebody bought.
+- **What the ranking was actually for:** Not to order the work by effort. To order it by what each problem costs a person, so the afternoon goes on the one that costs most.
+- **What I did instead:** Repaired the results and the deadline wording. Wrote the pending word down as known and unfixed, with a note that it is a ten-minute job whenever there is a spare ten minutes.
 
-## 1. Choose and predict
+**The wrong turn:** The wrong turn is repairing by how quick it is. The quick fixes are quick because they are small, and small is usually cheap to the person too.
+
+**What it costs:** Working on the structural one means the list shrinks more slowly, and you finish the day with visible problems still on it. That is the honest state of a real product.
+
+**Still unknown:** Still unknown: whether preserving the results is enough on its own. The prediction is written down before the re-test so that it can be shown wrong.
+
 - Take the top two problems by harm. For each write what you will change and what should happen in the re-test if the change works.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The top two problems by harm, each with the change you will make and a prediction written before you test it.
 
-## 2. Repair
-- Make the two changes in the wireflow and any affected screens and states. Change nothing else, so the re-test can attribute the result.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- Your problems in harm order, with the top two marked for repair — If the top two also happen to be the quickest, check the ranking again rather than your luck.
+- Repair 1 · what you will change, and what should happen in the re-test if it works
+- Repair 2 · what you will change, and what should happen in the re-test if it works — Write it before you change anything. A prediction written afterwards cannot be shown wrong.
 
-## 3. Re-test with someone new
-- Run the affected tasks with at least one and preferably two people who have not seen the design. Record expectation, action, outcome and doubt as before.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Harm:** What a problem costs the person: the task they cannot finish, the money, the time, the work they lose. Not how often you saw it.
+- **Prediction:** What should happen in the re-test if your repair worked, written before the sessions so the result can contradict it.
 
-## 4. Write the decision record
-- For every significant decision in this module write what was decided, the evidence, the rejected alternatives and what is untested. Include the decisions your test contradicted.
+Stuck starting? Read your ranking again and cover the effort column with your hand.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. State the limits and pause
-- Write what this module established and what it did not — volume, real content, connection, participants unlike yours, assistive technology. Save the record with the wireflow.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- The two highest-harm problems were repaired, not the easiest: [evidence reference]
-- Predictions were written before the re-test: [evidence reference]
-- The decision record carries evidence, alternatives and gaps: [evidence reference]
-- The limits of what was established are stated plainly: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Both predictions describe something a person would visibly do, not a feeling they would have.
 
 </details>
+
+#### 2. Repair
+
+- Make the two changes in the wireflow and any affected screens and states. Change nothing else, so the re-test can attribute the result.
+
+**You should end up with:** The two changes made in the wireflow, and a note of what you left alone.
+
+Worksheet fields for this step:
+
+- The two changes as they now appear in the wireflow, screen by screen
+- What you deliberately did not change, so the re-test can attribute the result
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Change one thing, mark the version line, then change the second.
+
+Is it enough? Nothing outside the two repairs moved, so the re-test can be attributed.
+
+</details>
+
+#### 3. Re-test with someone new
+
+- Run the affected tasks with at least one and preferably two people who have not seen the design. Record expectation, action, outcome and doubt as before.
+
+**You should end up with:** An honest re-test status, the session record, and each prediction beside what actually happened.
+
+**Try it with help.** A supplied re-test result from the same made-up project. The prediction was that nobody would ask how many days the deadline is, once it read “free to cancel until Thursday 10 am — 3 days before the class”. Both new participants asked anyway, and neither could see the class date on that screen.
+
+What goes in the record?
+
+- **That the prediction did not hold, and that the question came from the missing class date rather than the deadline wording.** — The prediction and the outcome sit side by side, and the reason names a different problem. That entry is worth more than a repair that simply worked.
+- That the deadline wording still needs work, so repair it again now. — Repairing again in the same breath assumes the first diagnosis was right. They asked because the date was missing, so more wording will not answer them.
+- Nothing, because a repair that changed nothing is not worth an entry. — A repair that failed tells you the diagnosis was wrong, which is the single most useful thing this re-test produced.
+- That the re-test was inconclusive and needs more people. — The result is clear rather than thin. Both people asked, both for the same visible reason, and more people would tell you the same thing at a cost.
+
+**Then:** Write your own predictions and outcomes side by side, and name the reason wherever an outcome surprised you.
+
+Worksheet fields for this step:
+
+- Who re-tested it (Two people who had not seen the design / One person who had not seen the design / Someone who saw the first test: rehearsal re-test / Nobody available: dated gap recorded) — Choose honestly. Someone who saw the first version can only tell you what they remember.
+- What each person expected, did, met and doubted on the repaired tasks
+- Each prediction beside what actually happened, including any that did not hold — A repair that did not work is the most useful entry in the whole record.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Fresh participant:** Someone who has not seen the design. Anyone who has can only tell you what they remember, not whether it is clearer.
+
+Stuck starting? Run only the two affected tasks. There is no reason to walk the whole thing again.
+
+Is it enough? Every prediction has an outcome beside it, and any that did not hold says why.
+
+</details>
+
+#### 4. Write the decision record
+
+- For every significant decision in this module write what was decided, the evidence, the rejected alternatives and what is untested. Include the decisions your test contradicted.
+
+**You should end up with:** One entry per significant decision: what was decided, the evidence, the rejected alternative and what is untested.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Decision 1 · what was decided, the evidence, the alternative you rejected, and what is untested — An entry with an empty evidence part is a guess, and should say so.
+- Decision 2 · what was decided, the evidence, the alternative you rejected, and what is untested
+- Decision 3 · what was decided, the evidence, the alternative you rejected, and what is untested
+- Decision 4 · what was decided, the evidence, the alternative you rejected, and what is untested
+
+<details>
+<summary>Help with this step</summary>
+
+- **Decision record:** A plain list of what you decided and why, kept as text so it can be searched, versioned and pasted into a case study later.
+
+Stuck starting? Walk the wireflow from the first node and stop at every place you chose between two things.
+
+Is it enough? Entries with nothing in the evidence part are marked as guesses rather than left looking settled.
+
+</details>
+
+#### 5. State the limits and pause
+
+- Write what this module established and what it did not — volume, real content, connection, participants unlike yours, assistive technology. Save the record with the wireflow.
+
+**You should end up with:** What the module did not establish, what is known and unfixed, where the record lives, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- What this module did not establish — Volume, real content, a real connection, people unlike your participants, assistive technology. Add any recruitment gap and its date.
+- Problems you know about and are not fixing, with why — A known unfixed problem is a normal state for a real product. Write it down rather than tidying it away.
+- Where the full decision record lives — A file name or a folder. Plain text or Markdown, so you can search it later. Naming a file does not upload it.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? List everything a real product meets that a paper test with a handful of people did not.
+
+Is it enough? Someone reading the record could say exactly what your evidence covers and where it stops.
+
+</details>
+
+**Save and continue.** Saved for you: Your predictions, re-test notes and decision entries save as you type, on this device first and then online. Kept outside the app: Keep the full decision record as a plain text or Markdown file in your own folder and write its name here. Text is what you will be able to search and paste into a case study later. What your creator sees: Your creator reads the predictions beside the outcomes, and the known-unfixed list. A repair that did not work is the entry worth discussing. Your next action: Open Your work and choose Ready for review. Module 8 builds the interface from this record and the wireflow, so keep the two together.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 

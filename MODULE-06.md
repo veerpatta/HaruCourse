@@ -38,70 +38,167 @@ An inventory of a class provider's information reached fifty-three items. Eleven
 
 Produce a content inventory of at least forty items for one real product area, each row carrying its current label, what it actually is, who needs it and whether anything makes it findable today.
 
-**Where to work:** A spreadsheet if you have one, or a plain text table, or index cards — cards are genuinely better for the next four lessons because you will be sorting them by hand. Write each item on a card now and you will not have to transcribe later. No IA or content-audit tool is required.
+**Where to practise:** Draw the inventory as a table or a deck of cards on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: A spreadsheet if you have one, or a plain text table, or index cards — cards are genuinely better for the next four lessons because you will be sorting them by hand. Write each item on a card now and you will not have to transcribe later. No IA or content-audit tool is required.
 
 - Starting material: Your m05 findings, your marked experience map and your raw interview notes. The notes matter most here, because they contain the words people used for things — which is rarely what the product calls them.
 - Create HaruCourse/Practice/m06-l01-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Inventory what exists and what it is called
+#### 1. Set the boundary
 
-Input artifact: Your m05 findings, your marked experience map and your raw interview notes. The notes matter most here, because they contain the words people used for things — which is rarely what the product calls them.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A content inventory of at least forty items with current label, plain-language description, who needs it, and how it is reachable today; a marked list of collisions; and counts of items, collisions and items nobody needed.
-
-## 1. Set the boundary
 - Read the assigned needs page. Write which product area you are inventorying and where its edges are, then list the three tasks from your research that this area has to support.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The product area you are inventorying, where its edges are, and the three tasks from your research that it has to support.
 
-## 2. List everything
-- Work through the product, the support material, your notes and any messages, adding one row per item: current label, what it actually is, who needs it and when. Do not organise anything yet.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- The product area you are inventorying, and where its edges are — Name what is inside, then name the first thing that is just outside it.
+- The three tasks from your research that this area has to support
 
-## 3. Add the reachability column
-- For each item, record how a person reaches it today: main navigation, one page deep, search only, email only, or by asking a human. Mark the items your research showed people actually needed.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Content inventory:** A flat list of everything a person might need, one row each. Not a list of pages, and not a structure.
+- **Boundary:** What counts as inside this area and what is next door. Without one the list grows all evening.
 
-## 4. Find the collisions
-- Mark duplicates, contradictions, items sharing a label and items with no owner. Write a one-line note for each collision; several will turn out to be content problems rather than structure problems.
+Stuck starting? Name the area in one sentence, then write the first thing that is just outside it. If m05 gave you no participants, take the three tasks from real messages people have already sent you and label them as your own reading rather than research.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Count and pause
-- Count the items, the collisions and the items nobody needed. Save the inventory as a table; every later lesson in this module works from it.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- The inventory covers answers, not only pages: [evidence reference]
-- Every item carries a plain-language description: [evidence reference]
-- Reachability today is recorded per item: [evidence reference]
-- Collisions are identified and counted: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Someone else could read your boundary and tell whether a given item belongs inside it.
 
 </details>
+
+#### 2. List everything
+
+**See it first.** Made-up example. Writing the first rows of an inventory for a class provider, and finding that the label and the thing were not the same.
+
+- **What I wrote first:** A row saying label “Details”, and under what it actually is, “Details”. Ten minutes of that and I had a list of menu items, not an inventory.
+- **What made me stop:** Three separate rows said “Details”. One was the class description, one was the venue address, one was the refund terms.
+- **The sentence I used:** For each row I finished “this tells someone …”. “Details” could not finish it. “This tells someone what the class covers and who it suits” could.
+- **What that turned up:** Two rows I could not finish at all. One was a PDF from 2019 nobody had opened. One was a page whose contents I had guessed from its name.
+- **What the list became:** Fifty-three rows, only eleven of them pages. The rest were answers living in emails, in a message the owner retyped each week, and in her head.
+
+**The wrong turn:** The wrong turn is copying the label into the description column. It fills the row, it takes no time, and it hides every place where the name and the contents have come apart.
+
+**What it costs:** A plain sentence per row is slow, and forty rows is a long evening. It is what makes the collisions visible before you draw anything at all.
+
+**Still unknown:** Still unknown: whether the items nobody mentioned are unused or merely unmentioned. A handful of conversations cannot settle that, and those rows stay on the list marked as such.
+
+- Work through the product, the support material, your notes and any messages, adding one row per item: current label, what it actually is, who needs it and when. Do not organise anything yet.
+
+**You should end up with:** Five rows worked out here, each with its current label, one plain sentence saying what it actually is, and who needs it and when.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Item 1 · its current label, then what it actually is in one plain sentence, then who needs it and when — Finish the sentence “this tells someone …”. If you cannot finish it, open the thing and read it.
+- Item 2 · label, what it actually is, who needs it and when
+- Item 3 · label, what it actually is, who needs it and when
+- Item 4 · label, what it actually is, who needs it and when
+- Item 5 · label, what it actually is, who needs it and when
+
+<details>
+<summary>Help with this step</summary>
+
+- **Plain-language description:** One sentence in your own words finishing “this tells someone …”. It is the test of whether the label matches the contents.
+- **Item:** Anything a person might need to know, whether or not it is a page. An answer inside an email is an item.
+
+Stuck starting? Start with something that is not a page: an answer you know lives in a message or in somebody’s head.
+
+Is it enough? No description repeats its own label, and every row names a person and a moment.
+
+</details>
+
+#### 3. Add the reachability column
+
+- For each item, record how a person reaches it today: main navigation, one page deep, search only, email only, or by asking a human. Mark the items your research showed people actually needed.
+
+**You should end up with:** A route recorded for every item in your list, with the ask-a-person and email-only cases named here.
+
+Worksheet fields for this step:
+
+- How many items sit in each route: main navigation, one page deep, search only, email only, or by asking a person
+- The items reachable only by asking a person or only from an email, and which of them your research showed people needed — This is where the real problems announce themselves. Renaming a menu cannot fix any of them.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Reachability:** What a person has to do today to get to the thing: the menu, a deep page, search, an email, or asking someone.
+
+Stuck starting? Open the product as though you had never seen it and try to reach three items you know are in there.
+
+Is it enough? Every item in your table has a route, and the ones that need a human are separated out.
+
+</details>
+
+#### 4. Find the collisions
+
+- Mark duplicates, contradictions, items sharing a label and items with no owner. Write a one-line note for each collision; several will turn out to be content problems rather than structure problems.
+
+**You should end up with:** Up to four collisions written out: which rows are involved, what kind of collision it is, and your one-line note on each.
+
+**Try it with help.** Four supplied rows from the same made-up inventory. Row A: “What to bring”, a sentence inside a PDF. Row B: “What to bring”, a different sentence in the confirmation email, naming one item the PDF does not. Row C: “Details”, the venue address. Row D: “Details”, the refund terms.
+
+Which pair should your note call a content problem rather than a structure problem?
+
+- **A and B, because the two versions say different things and no arrangement of pages decides which is right.** — The two copies disagree with each other. Until somebody decides what a person should actually bring, moving them or merging them only hides the disagreement.
+- C and D, because two unrelated things are sharing one label. — That pair is real, and it is a naming and structure problem. Give each its own plain label and it is solved, which is not true of the pair that disagrees.
+- Both pairs, since both are duplicates. — Only one pair is a duplicate. C and D are different things wearing the same name, which is the opposite situation and takes a different fix.
+- Neither, because you cannot tell until the structure is drawn. — The flat list is exactly where this shows. Drawing a structure first would place the two versions of what to bring in two places and settle nothing.
+
+**Then:** Go through your own collisions and mark each one content or structure, so you know which ones need a decision about the words before anything moves.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Collision 1 · the rows involved, what kind of collision it is, and your one-line note
+- Collision 2 · the rows involved, what kind, and your note
+- Collision 3 · the rows involved, what kind, and your note
+- Collision 4 · the rows involved, what kind, and your note
+
+<details>
+<summary>Help with this step</summary>
+
+- **Collision:** Two rows that fight: one label on different things, two answers that disagree, or the same thing written twice.
+
+Stuck starting? Sort your table by label and read for repeats, then sort by description and read for the same thing under two names. The two passes find different collisions.
+
+Is it enough? Each collision names which rows and what kind, not only that something is wrong.
+
+</details>
+
+#### 5. Count and pause
+
+- Count the items, the collisions and the items nobody needed. Save the inventory as a table; every later lesson in this module works from it.
+
+**You should end up with:** Your three counts, where the full inventory lives, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Your three counts: items, collisions, and items nobody in your research ever needed
+- Where the full inventory lives — A file name, or “index cards, in the blue box”. Nothing is uploaded.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Count the rows first. The other two counts come from marks you have already made.
+
+Is it enough? The counts are numbers you arrived at by counting, and the location is specific enough to find next week.
+
+</details>
+
+**Save and continue.** Saved for you: The boundary, your worked rows, the routes, the collisions and the counts save as you type, on this device first and then online. Kept outside the app: The full inventory stays in your own spreadsheet, text file or card box. Write where it lives here; naming a file does not upload it. What your creator sees: Your creator reads the counts, the collisions and a few of your rows. The plain-language column is the part worth his attention, because it is the one people skip. Your next action: Open Your work and choose Ready for review. The next lesson sets your participants’ words against these labels, so keep the inventory to hand.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -241,70 +338,181 @@ A menu item called “Resources” contained what to bring, directions and the c
 
 Produce a labelling table for at least fifteen items, each showing the current label, the words participants used, the label you propose and the evidence for it, with every guessed label marked as a guess.
 
-**Where to work:** A four-column table on paper or in a text file. Write the proposed labels onto the cards from lesson 1, since the card sort in lesson 5 must use the items rather than your new labels — keep the new labels on the back so you do not lead your participants.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A four-column table on paper or in a text file. Write the proposed labels onto the cards from lesson 1, since the card sort in lesson 5 must use the items rather than your new labels — keep the new labels on the back so you do not lead your participants.
 
 - Starting material: Your inventory and your m05 interview notes. The notes are the source of vocabulary; a label you invented at your desk is a hypothesis and must be marked as one.
 - Create HaruCourse/Practice/m06-l02-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Labels in the words people actually use
+#### 1. Read the heuristic and the sorting guidance
 
-Input artifact: Your inventory and your m05 interview notes. The notes are the source of vocabulary; a label you invented at your desk is a hypothesis and must be marked as one.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A labelling table of at least fifteen items with current label, verbatim participant vocabulary, proposed label and evidence; guessed labels marked as guesses; and a written note per vocabulary conflict.
-
-## 1. Read the heuristic and the sorting guidance
 - Read the assigned heuristic on matching the user's language and the card-sorting notes on labels. Write the three worst labels in your inventory and why each fails.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The three worst labels in your inventory, each with the reason it fails.
 
-## 2. Harvest vocabulary
-- Read every interview note and record each word participants used for things in your inventory, verbatim, with who said it. Do not paraphrase into your own vocabulary as you go.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- The three worst labels in your inventory, and the reason each one fails — Three kinds recur: the internal word that names a department, the clever word invented for character, and the abstract word that is accurate and empty.
 
-## 3. Build the labelling table
-- For at least fifteen items, write current label, participant words, proposed label and the evidence. Where no participant ever mentioned the item, write your proposed label and mark it a guess.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Internal word:** A label naming a department or a system rather than a thing a person wants: “Resources”, “Portal”, “My Account”.
+- **Abstract word:** A label that is technically accurate and empty: “Information”, “Details”, “More”. Nobody can tell what is inside it.
 
-## 4. Resolve or record the conflicts
-- Where participants disagreed, decide what the disagreement means: two audiences, two things, or too little evidence. Record the decision and what would settle it.
+Stuck starting? Read down your inventory labels and mark every one you could not explain to a stranger in five words.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Read it cold and pause
-- Read only your proposed labels, as a stranger scanning a menu. Mark any label that leaves you unable to say what is inside. Save the table.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Vocabulary is harvested verbatim from real notes: [evidence reference]
-- Proposed labels are specific enough to scan: [evidence reference]
-- Guessed labels are marked as guesses: [evidence reference]
-- Vocabulary conflicts are interpreted, not resolved by preference: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Each of the three names the kind of failure, not only that you dislike the word.
 
 </details>
+
+#### 2. Harvest vocabulary
+
+**See it first.** Made-up example. Reading five sets of interview notes for vocabulary, and throwing away the first pass.
+
+- **What I did first:** I read the notes and wrote down what each participant meant. “She wanted the materials list.” Tidy, quick, and entirely in my own words.
+- **What went wrong:** Nobody had said “materials list”. That was my phrase, arrived at while reading, and by the second page I could no longer tell which words were theirs.
+- **The second pass:** I read again and copied only what was inside quotation marks, exactly, with a participant label beside each: “the list of things I need”, P2. “what I have to bring”, P4.
+- **What the awkward one showed:** One person said “the kit”. It was ugly and I nearly smoothed it away. She had done a class elsewhere where that was the word, which is a fact about her, not about her phrasing.
+- **What I ended with:** Nineteen phrases from five people, attributed, plus a list of eleven items nobody had ever mentioned. Both halves were useful and only one of them was evidence.
+
+**The wrong turn:** The wrong turn is paraphrasing as you read. It feels like note-taking, and it quietly replaces the participant’s vocabulary with yours, which is the exact vocabulary this lesson exists to get away from.
+
+**What it costs:** Copying verbatim is slower and leaves you holding awkward phrases you would never have chosen. Those are the ones carrying the information.
+
+**Still unknown:** Still unknown: whether the words your few people used are the words anyone else would use. A handful of people gives you candidates, not a vocabulary.
+
+- Read every interview note and record each word participants used for things in your inventory, verbatim, with who said it. Do not paraphrase into your own vocabulary as you go.
+
+**You should end up with:** Four vocabulary lines copied out exactly from your notes, each attributed to a participant.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Vocabulary 1 · the item, the exact words a participant used for it, and who said it
+- Vocabulary 2 · the item, the exact words, and who said it
+- Vocabulary 3 · the item, the exact words, and who said it
+- Vocabulary 4 · the item, the exact words, and who said it
+
+<details>
+<summary>Help with this step</summary>
+
+- **Verbatim:** The exact words, in the order they were said, with nothing improved. Anything you smooth is yours rather than theirs.
+
+Stuck starting? Put the inventory beside the notes and mark every noun a participant used for a thing on your list. If m05 produced no participants at all, say so in the sample box and take your words from real messages people have already sent you, marking every row with no quotation as a guess. A rehearsal with yourself is never written down as research.
+
+Is it enough? Every phrase is in somebody else’s words, with a participant label beside it.
+
+</details>
+
+#### 3. Build the labelling table
+
+- For at least fifteen items, write current label, participant words, proposed label and the evidence. Where no participant ever mentioned the item, write your proposed label and mark it a guess.
+
+**You should end up with:** Three worked rows of the labelling table, and a count of how many of your fifteen are guesses.
+
+**Try it with help.** Six label lines from a made-up practice set. Each names a proposed label and the reason the designer wrote beside it. Decide whether that reason is a participant’s own words or the designer’s own guess.
+
+- Proposed label “What to bring”. The reason says: two participants said “the list of things I need”.
+  - **evidenced** — Two people supplied the words and the label sits close to them. That is exactly what the evidence column is for.
+  - guess — Two participants said this in their own words, so the row is not yours. Marking it a guess would hide the strongest row you have.
+- Proposed label “Where it is”. The reason says: one participant asked “where is it, exactly?” while talking about her first visit.
+  - **evidenced** — A participant’s own question supplies the words, attributed to her, about this item. Short evidence is still evidence.
+  - guess — One person is thin, and it is still a real quotation about this item. Write the count beside it rather than demoting it.
+- Proposed label “Your toolbox”. The reason says: it sounds friendlier than “Account”.
+  - evidenced — Nothing in the notes is quoted here. Sounding friendly is the designer’s ear, and the designer uses the product every day.
+  - **guess** — The only reason given is how the word sounds. A clever word is unsearchable too, so this row earns the mark twice over.
+- Proposed label “What happens if I cannot come”. The reason says: one participant used almost those words and the designer shortened them.
+  - **evidenced** — The words came from a participant, and shortening somebody’s phrase is not inventing it. Keep the original beside the label.
+  - guess — Editing a participant’s phrase for length does not make it yours. It would become a guess if you replaced the idea rather than the word count.
+- Proposed label “Photos from past classes”. The reason says: nobody mentioned the page, and it plainly contains photographs.
+  - evidenced — Nobody said anything about this item, so there is no participant word behind it. Describing the contents accurately is a different thing from being evidenced.
+  - **guess** — It is a sensible, plain label that no participant supplied. Marked as a guess it stays available to test in the card sort.
+- Proposed label “Classes”, chosen over “Workshops”. The reason says: two participants said “class”, two said “workshop”, and the designer picked the one first-timers used.
+  - evidenced — Each word is evidenced and the choice between them is not. Four people splitting two and two cannot show you which audience uses which, so the reason for picking is still a hypothesis.
+  - **guess** — Both words have evidence behind them, so the words are not the guess. The claim that first-timers use one and returning people the other is the guess, and the label rests on it.
+
+**Then:** Go down your own evidence column. Any cell you cannot fill with a participant’s word makes that row a guess, and the mark stays until somebody says otherwise.
+
+**What to watch for:** The question is never whether the label is good. It is whether somebody outside your own head supplied it.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Row 1 · current label, participant words, your proposed label, and the evidence or the word guess
+- Row 2 · current label, participant words, proposed label, evidence or guess
+- Row 3 · current label, participant words, proposed label, evidence or guess
+- How many of your fifteen rows are guesses — A high number is not a failure. An unmarked guess is.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Evidence column:** A participant’s own words, with who said them. If you cannot fill it, the row is a guess.
+- **Guess:** A label you thought of yourself. Allowed, useful, and only dangerous when it is not marked.
+
+Stuck starting? Do a row you have a quotation for first, so you can see what a filled evidence cell looks like.
+
+Is it enough? Every row is either quoted or marked, with nothing in between.
+
+</details>
+
+#### 4. Resolve or record the conflicts
+
+- Where participants disagreed, decide what the disagreement means: two audiences, two things, or too little evidence. Record the decision and what would settle it.
+
+**You should end up with:** Your vocabulary conflicts, each with an interpretation and a sentence naming what would settle it.
+
+Worksheet fields for this step:
+
+- Conflict 1 · the two words, who used each, what you think the disagreement means, and what would settle it — Two words for one thing often means two audiences, and sometimes it means the thing is two things.
+- Conflict 2 · the two words, who used each, what it means, and what would settle it
+- Any conflict you are leaving unsettled, and why nothing you have distinguishes the two groups
+
+<details>
+<summary>Help with this step</summary>
+
+- **Conflict:** Two participants using different words for one thing. It is information about them, not a tie for you to break.
+
+Stuck starting? For each conflict write who used which word, and what else you know about those people, before you write what it means.
+
+Is it enough? No conflict has been settled by which word you happen to prefer.
+
+</details>
+
+#### 5. Read it cold and pause
+
+- Read only your proposed labels, as a stranger scanning a menu. Mark any label that leaves you unable to say what is inside. Save the table.
+
+**You should end up with:** The labels that failed the cold read, your sample line, where the table lives, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Reading only your proposed labels: the ones that leave you unable to say what is inside
+- How many participants your notes cover, how they were recruited, and who is missing — This sentence travels with the table wherever it goes.
+- Where the full labelling table lives
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Cover every column but the proposed labels and read down the list once, quickly, as a stranger scanning a menu.
+
+Is it enough? You can say what is inside each surviving label without looking at the other columns.
+
+</details>
+
+**Save and continue.** Saved for you: Your worst-label notes, harvested phrases, rows, conflicts and sample line save as you type, on this device first and then online. Kept outside the app: The full fifteen-row table stays in your own file, or on the backs of your cards. Write where it lives here so the two stay together. What your creator sees: Your creator reads the vocabulary column and the guess marks. The marks are the part worth his attention, because they are what make the rest believable. Your next action: Open Your work and choose Ready for review. The next lesson groups the items rather than the labels, so keep the card faces showing the items.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -444,70 +652,168 @@ The class provider's fifty-three items were grouped twice. By topic: Classes, Bo
 
 Group your inventory under two different organisation schemes, write the specific case where each one breaks, and decide which to carry forward with the trade-off recorded.
 
-**Where to work:** The cards from lesson 1 on a table, photographed after each scheme. Physical sorting is faster than any tool and the photograph is your record. If you must work digitally, an indented list in a text file is enough; avoid diagram tools at this stage, since they make a structure look finished before it has been tested.
+**Where to practise:** Draw both groupings of your cards on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: The cards from lesson 1 on a table, photographed after each scheme. Physical sorting is faster than any tool and the photograph is your record. If you must work digitally, an indented list in a text file is enough; avoid diagram tools at this stage, since they make a structure look finished before it has been tested.
 
 - Starting material: The inventory and the labelling table. You are grouping the items, not the labels: a group is a claim about what belongs together, and it can be right while the label on it is wrong.
 - Create HaruCourse/Practice/m06-l03-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Organisation schemes and where they break
+#### 1. Read on grouping and load
 
-Input artifact: The inventory and the labelling table. You are grouping the items, not the labels: a group is a claim about what belongs together, and it can be right while the label on it is wrong.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] The same inventory grouped under two named schemes with photographs or lists of each, a written breakage case per scheme naming an item and a person, a decision per collision, and a recorded choice with its trade-off.
-
-## 1. Read on grouping and load
 - Read the assigned pages on proximity, common region and cognitive load. Note what each says and, for the grouping laws, note that the source publishes no limits — the caution is the course's.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What the assigned pages say about proximity, common region and cognitive load, plus an honest note about item limits.
 
-## 2. Group by scheme one
-- Sort your cards into a task-based scheme. Name each group from what fell into it. Record any item you hesitated over for more than a few seconds.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- What the assigned pages say about proximity, common region and cognitive load — One line per idea, in your own words, before you touch the cards.
+- What you will say about item limits, given that the source publishes none
 
-## 3. Group by scheme two
-- Re-sort the same cards under a different scheme — topic, audience or an exact scheme where it suits the material. Record the hesitations again.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Proximity:** Things placed near each other are read as belonging together, before anyone reads a word of them.
+- **Common region:** A shared box, panel or background does the same job as closeness, and does it more strongly.
 
-## 4. Break both on purpose
-- For each scheme, write the specific item and the specific person for whom it fails. Then decide each collision: duplicate, cross-link or restructure, with the reason.
+Stuck starting? Write one line per idea in your own words before you look at your cards at all.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Choose and record, then pause
-- Choose the scheme you will carry forward. Write what you gave up and which tasks the loss affects, so the tree test can look for it. Save both groupings.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Two genuinely different schemes were built from the same items: [evidence reference]
-- Each scheme's breakage names an item and a person: [evidence reference]
-- Collisions are decided deliberately: [evidence reference]
-- The chosen scheme records what was given up: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Your note about limits says the source publishes none, rather than repeating a number you have heard.
 
 </details>
+
+#### 2. Group by scheme one
+
+- Sort your cards into a task-based scheme. Name each group from what fell into it. Record any item you hesitated over for more than a few seconds.
+
+**You should end up with:** A task-based grouping of every card, each group named from what fell into it, with every hesitation recorded.
+
+Worksheet fields for this step:
+
+- Your task-based groups, each named from what fell into it
+- Every card you held for more than a few seconds, and the two places it nearly went
+
+<details>
+<summary>Help with this step</summary>
+
+- **Organisation scheme:** The rule deciding which items go together: by task, by topic, by audience, or an exact one such as alphabetical.
+- **Hesitation:** A card you held for a few seconds. It marks a place where the scheme is not deciding for you.
+
+Stuck starting? Deal the cards face up and make piles without naming them. Name each pile only when nothing is left in your hand.
+
+Is it enough? Every group name came from its contents rather than from a name you had in mind before you started.
+
+</details>
+
+#### 3. Group by scheme two
+
+- Re-sort the same cards under a different scheme — topic, audience or an exact scheme where it suits the material. Record the hesitations again.
+
+**You should end up with:** A second grouping of the same cards under a different rule, named, with its own hesitations recorded.
+
+Worksheet fields for this step:
+
+- Which scheme you used for the second sort, and why it suits this material — By topic, by audience, or an exact scheme such as alphabetical or chronological.
+- Your second set of groups, each named from what fell into it
+- The cards you hesitated over this time, and where they nearly went
+
+<details>
+<summary>Help with this step</summary>
+
+- **Exact scheme:** Alphabetical, chronological or geographic. Everyone agrees where an item goes, which helps only when the person already knows its name.
+
+Stuck starting? Sweep the cards together and deal again from nothing. Editing the first grouping is not a second scheme.
+
+Is it enough? Somebody reading only the group names could tell which rule you were following.
+
+</details>
+
+#### 4. Break both on purpose
+
+**See it first.** Made-up example. Breaking two groupings of the same fifty-three cards on purpose, after first writing something useless.
+
+- **What I wrote first:** “No scheme is perfect and both of these overlap a bit.” True, agreeable, and it told me nothing to do on Monday morning.
+- **What I did instead:** I took one task from the research and walked it through the task scheme holding a specific person in mind: a first-timer, the night before her first class.
+- **Where it stopped:** “What to bring” sat under Get ready for a class. She was still on the class page deciding whether to book, and that is where she wanted it.
+- **The second scheme:** By topic, the cancellation policy sat under Booking. Nobody in the research had gone looking under Booking; they went looking under the money.
+- **What the two cases gave me:** Two sentences, each naming an item and a person. The topic scheme broke worse, and I could say exactly where, which is what made the choice defensible.
+
+**The wrong turn:** The wrong turn is conceding in general that every scheme overlaps. It sounds mature, it costs nothing, and it leaves you with no case anyone could test later.
+
+**What it costs:** Naming a specific breakage commits you to a claim somebody can prove wrong. That is the point of it; a vague concession can never be checked at all.
+
+**Still unknown:** Still unknown: whether the person you imagined resembles anyone real. The card sort and the tree test are where that gets checked.
+
+- For each scheme, write the specific item and the specific person for whom it fails. Then decide each collision: duplicate, cross-link or restructure, with the reason.
+
+**You should end up with:** A breakage case per scheme naming an item and a person, and a written decision for each item that belongs in two places.
+
+Worksheet fields for this step:
+
+- Scheme one breaks: the specific item, the specific kind of person, and the situation they are in
+- Scheme two breaks: the specific item, the specific kind of person, and the situation
+- Collision 1 · the item, its two candidate homes, and your choice of duplicate, cross-link or restructure, with the reason
+- Collision 2 · the item, both homes, your choice and the reason
+- Collision 3 · the item, both homes, your choice and the reason
+
+<details>
+<summary>Help with this step</summary>
+
+- **Cross-link:** The item lives in one place and is linked from the other. It costs an extra click and keeps a single copy.
+- **Restructure:** Changing the groups so the collision stops existing. Usually right when the same collision keeps coming back.
+
+Stuck starting? Walk one research task through one scheme while holding a specific person in mind, and stop at the first place you hesitate. If m05 gave you nobody, use a person described in a real message you already have, and mark the case as your own reasoning rather than research.
+
+Is it enough? Each breakage names a thing, a person and a moment, and no decision box says only that the item is difficult.
+
+</details>
+
+#### 5. Choose and record, then pause
+
+- Choose the scheme you will carry forward. Write what you gave up and which tasks the loss affects, so the tree test can look for it. Save both groupings.
+
+**You should end up with:** The scheme you are carrying forward, what you gave up, where the groupings live, and the repair the Check questions asked for.
+
+**Try it with help.** A supplied decision from the same made-up project. The task scheme was carried forward, and “what to bring” is cross-linked from the class page rather than duplicated, so a person looking for it while choosing a class needs one extra click.
+
+Which way of recording that trade-off is worth writing down?
+
+- **“People deciding whether to book will now need one extra click to reach what to bring, and I will see it in the tree test as hesitation on the class page.”** — It names who pays, what they pay, and the specific thing a later test could show. That last part is what turns a note into a prediction.
+- “The task scheme is better overall, although it has some drawbacks.” — It records a verdict and no cost. In three weeks nobody, including you, could say what was given up or check whether it mattered.
+- “Cross-linking is a compromise between duplicating and restructuring.” — That describes the method rather than the consequence. It is true of every cross-link ever made and says nothing about this one.
+- “We can revisit this if people complain about it.” — Complaints arrive only from the few who bother. The tree test is a few days away and would show the hesitation whether or not anybody spoke up.
+
+**Then:** Write your own trade-off as “people doing … will now have to …, and I will see it in the tree test as …”. If you cannot finish that sentence, the cost is not yet understood.
+
+Worksheet fields for this step:
+
+- The scheme you are carrying forward
+- What you gave up, which tasks the loss affects, and how a tree test would show it — Finish the sentence “people doing … will now have to …, and I will see it in the tree test as …”.
+- Where the two groupings and their photographs live
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Choose the scheme whose breakage you would rather live with, and say why in one sentence.
+
+Is it enough? The trade-off names who pays and what a later test would show.
+
+</details>
+
+**Save and continue.** Saved for you: Your group names, hesitations, breakages, decisions and trade-off save as you type, on this device first and then online. Kept outside the app: The cards and photographs stay in your own folder. Photograph each grouping before you disturb the table, and write the file names here. What your creator sees: Your creator reads the two breakage cases and the trade-off. Two schemes with their failures show more than one tidy structure ever could. Your next action: Open Your work and choose Ready for review. The next lesson draws your chosen scheme as a sitemap and then a shallower version of it, so keep both groupings.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -647,70 +953,166 @@ The task scheme drawn out came to three levels: Get ready for a class → Practi
 
 Draw a sitemap of your chosen scheme showing every level, then produce a shallower alternative for the same content and state which tasks each shape favours.
 
-**Where to work:** Paper and pencil, drawn wide rather than pretty; a phone photograph is the record. If you want it digital, an indented text list is a sitemap and is far easier to re-order than boxes in a diagram tool. Nothing here needs a diagramming account.
+**Where to practise:** Draw the sitemap and its shallower alternative on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper and pencil, drawn wide rather than pretty; a phone photograph is the record. If you want it digital, an indented text list is a sitemap and is far easier to re-order than boxes in a diagram tool. Nothing here needs a diagramming account.
 
 - Starting material: The scheme you chose and its recorded trade-off. A sitemap is that scheme drawn with its levels made explicit, which is when the depth problems become visible.
 - Create HaruCourse/Practice/m06-l04-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Depth, breadth and the sitemap
+#### 1. Read on choices and load
 
-Input artifact: The scheme you chose and its recorded trade-off. A sitemap is that scheme drawn with its levels made explicit, which is when the depth problems become visible.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Two sitemaps of the same content at different depths, a one-sentence summary per level-two group with vague containers marked, click-depth counts for three tasks, and a written comparison stating which shape favours which task.
-
-## 1. Read on choices and load
 - Read the assigned pages on the cost of choices and on cognitive load. Write what each says about the effort of choosing, and note that the source publishes no limits.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What the reading says about the effort of choosing, in your own words, including what it does not claim about a maximum.
 
-## 2. Draw the sitemap
-- Draw your chosen scheme with every level, every group and every item's position. Count the levels each of your three research tasks must pass through.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- What the reading says about the effort of choosing and of scanning, and what it does not claim about a maximum number of options — Two or three sentences. The second half matters: the source publishes no limit, and the caution about that is the course’s, not theirs.
 
-## 3. Interrogate level two
-- For each level-two group, write one sentence summarising its contents. Mark any group you cannot summarise; those are your vague containers.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Sitemap:** Your grouping drawn with its levels made explicit, so you can see how far down each thing sits.
+- **Depth and breadth:** Depth is how many levels a person passes through. Breadth is how many options sit side by side at one level.
 
-## 4. Build the shallower alternative
-- Produce a second sitemap for the same content that is one level shallower, lifting the most-needed items. Note what became crowded and what became harder to find.
+Stuck starting? Write one sentence on what breadth costs a reader and one on what depth costs, then add what the source stays silent about.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Compare on tasks and pause
-- For each of your three tasks, state which shape favours it and why. Choose the version to test in lesson 7 and record the choice. Save both maps.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Both sitemaps cover the same content at different depths: [evidence reference]
-- Level-two groups are summarised and vague containers marked: [evidence reference]
-- Depth is considered for a small screen: [evidence reference]
-- The comparison is made on tasks, not on tidiness: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? You have said what each shape costs without repeating a number that nobody published.
 
 </details>
+
+#### 2. Draw the sitemap
+
+- Draw your chosen scheme with every level, every group and every item's position. Count the levels each of your three research tasks must pass through.
+
+**You should end up with:** Your map drawn with every level, how deep each of your three tasks reaches, and what level two looks like on a phone.
+
+Worksheet fields for this step:
+
+- How many levels your map has, and how many groups sit at level one
+- Each of your three research tasks, and how many levels it has to pass through — Walk each task across the drawing with your finger and count the places where you had to choose.
+- What level two looks like on a phone, once level one has scrolled off the screen — Cover everything but one level with a sheet of paper and read what is left. If you cannot tell where you are, neither can a reader.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Level one:** The groups a person sees first, before choosing anything.
+- **Level two:** What sits inside a level-one group. Usually where vague containers accumulate.
+
+Stuck starting? Draw level one across the top of a wide sheet, then hang each group’s contents beneath it.
+
+Is it enough? Every item from your chosen scheme has a position, and the three task counts are real numbers you arrived at by tracing.
+
+</details>
+
+#### 3. Interrogate level two
+
+- For each level-two group, write one sentence summarising its contents. Mark any group you cannot summarise; those are your vague containers.
+
+**You should end up with:** A one-sentence summary for each level-two group, with any group you cannot summarise marked vague.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Level-two group 1 · its name, one sentence saying what is inside, and the word vague if you cannot write that sentence
+- Level-two group 2 · its name, one sentence saying what is inside, and the word vague if you cannot write that sentence
+- Level-two group 3 · its name, one sentence saying what is inside, and the word vague if you cannot write that sentence
+- Level-two group 4 · its name, one sentence saying what is inside, and the word vague if you cannot write that sentence
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? For each group write “this contains …” and list the actual items before you attempt the summary.
+
+Is it enough? Each box either says plainly what is inside or says vague. A summary that could describe three different groups is a vague one.
+
+</details>
+
+#### 4. Build the shallower alternative
+
+**See it first.** Made-up example. Flattening a three-level map, and finding out the flat version was worse for one of the three tasks.
+
+- **What I started with:** Three levels. Get ready for a class, then Practical information, then What to bring. Every item had a home and the drawing looked orderly.
+- **What I did first:** I lifted everything to level one. Nineteen labels across the top, on the grounds that nothing should be more than one choice away.
+- **Why that failed:** Nineteen labels is a wall of reading, not a menu. On a phone the list ran past two screens, and the thing people needed most sat fourteenth.
+- **What I did instead:** I lifted only the four items my research showed people needed, gave each a plain label at level one, and left the rare material one level down.
+- **What it cost:** Someone browsing everything about a class now meets four separate entries instead of one tidy parent. Nobody in my research had ever browsed that way, so I accepted it and wrote it down.
+
+**The wrong turn:** The wrong turn is treating shallow as a goal in itself. Flat helps only while the reader can still scan the row, and nineteen options stop being a row.
+
+**What it costs:** The shallower map gives up the parent that held related things together. Someone who wanted to read around a subject now has to find the pieces separately.
+
+**Still unknown:** Still unknown: whether four is the right number to lift. Only a tree test can show where people actually stop, and that is a later lesson.
+
+- Produce a second sitemap for the same content that is one level shallower, lifting the most-needed items. Note what became crowded and what became harder to find.
+
+**You should end up with:** A second map of the same content, one level shallower, with what you lifted and what that cost.
+
+Worksheet fields for this step:
+
+- Which items you lifted to level one, and why those ones — Lift what your research showed people need, not what you find interesting.
+- What became crowded, and what became harder to find — Something always gets worse. If nothing did, the second map is probably the first map redrawn.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the four items your research showed people need most, put them at level one, then re-place everything else around them.
+
+Is it enough? Every item exists in both maps, and you can name something the shallower one made worse.
+
+</details>
+
+#### 5. Compare on tasks and pause
+
+- For each of your three tasks, state which shape favours it and why. Choose the version to test in lesson 7 and record the choice. Save both maps.
+
+**You should end up with:** Which shape favours each task, your chosen shape with what it costs, where the drawings live, and the repair the Check questions asked for.
+
+**Try it with help.** Two supplied maps of the same made-up content. Map A has four groups at level one and three levels in total. Map B has eight groups at level one and two levels in total. Supplied task: a person booked a class for Saturday, something has come up, and she wants to know whether she can get her money back.
+
+Which shape favours this task, and on what grounds?
+
+- **Map B, because the refund rule can sit at level one where she reads it instead of guessing what a parent group contains.** — She arrives with one specific need and little patience. A visible label removes the guess, and the guess is the part that loses people.
+- Map A, because four groups are easier to scan than eight. — Scanning eight short labels takes seconds. Choosing between four vague parents and then choosing again takes longer and can go wrong at either step.
+- Map A, because three levels give the content room to be organised properly. — Room to organise serves the person drawing the map. This task is judged by whether one worried person finds one rule.
+- Neither: the content is the same, so the shape cannot affect the task. — Same content, different number of decisions. The shape changes how many uncertain choices the task costs, which is exactly what is being compared.
+
+**Then:** Do this for each of your three tasks and expect the answer to change between them. A shape that wins every task usually means the tasks were too alike.
+
+Worksheet fields for this step:
+
+- For each of your three tasks: which shape favours it, and why — Count uncertain decisions rather than clicks. Expect the answer to differ between tasks.
+- Which shape you will take into the tree test (The deeper map / The shallower map)
+- What you gave up, which task it affects, and what a tree test would show if it matters — Finish the sentence “people doing … will now have to …, and I would see it as …”.
+- Where both drawings live — File names or “paper, in my folder”. Naming a file does not upload it.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Walk each task through both maps with your finger, marking every point where you would be unsure.
+
+Is it enough? The chosen shape is named alongside a task it disadvantages, not presented as the obvious answer.
+
+</details>
+
+**Save and continue.** Saved for you: Your notes, the level-two summaries and the comparison save as you type, on this device first and then online. Kept outside the app: Both drawings stay on paper or in your own folder. Photograph them if you like and write the file name in the last box; naming a file does not upload it. What your creator sees: Your creator reads the comparison and the recorded cost. Share the photographs the way you normally share files if you want him to see the maps themselves. Your next action: Open Your work and choose Ready for review. The next lesson puts your inventory cards in front of people and asks them to group them.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -850,70 +1252,187 @@ An open sort with four participants used forty-three cards. Three of the four ma
 
 Run at least one open and one closed card sort with consenting participants using physical or hand-written cards, and record each participant's groups, their own group names and everything they said while hesitating.
 
-**Where to work:** Index cards or paper cut into squares, a table and a phone camera. This is the required route: online sorting platforms are paid at the sizes that matter and add nothing at four participants, while a physical sort lets you see the hesitation that carries most of the information.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Index cards or paper cut into squares, a table and a phone camera. This is the required route: online sorting platforms are paid at the sizes that matter and add nothing at four participants, while a physical sort lets you see the hesitation that carries most of the information.
 
 - Starting material: The cards from your inventory, your consent introduction from m05 and your recruitment route. The cards must show the item, not your proposed label, or you will be testing your own wording back at yourself.
 - Create HaruCourse/Practice/m06-l05-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Run a card sort on paper
+#### 1. Prepare the cards and the script
 
-Input artifact: The cards from your inventory, your consent introduction from m05 and your recruitment route. The cards must show the item, not your proposed label, or you will be testing your own wording back at yourself.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Photographs and written records of at least one open and one closed sort, each with participant groups and names, card placements, hesitations and quotations, plus a sample statement naming how many people sorted and who is missing.
-
-## 1. Prepare the cards and the script
 - Read the assigned method sections. Write or print thirty to fifty cards showing item descriptions, not your labels. Extend your consent introduction to cover a sorting session and photographs of the cards.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Your card set counted and checked, and the sentences you will say before anyone starts.
 
-## 2. Run the open sort
-- With consent, ask a participant to group the cards however makes sense to them and name each group in their own words. Ask them to think aloud. Write down hesitations, moved cards and exact phrases. Photograph the final arrangement.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- How many cards you made, and where the card set lives — Thirty to fifty is workable. Past about sixty people tire and the last piles get made carelessly.
+- Two cards you rewrote because the face hinted where the card belonged, before and after
+- The sentences you will say before starting: what the session is, that nothing about it is a test of them, that you will photograph the cards, and that they can stop at any point — Extend the introduction you wrote in m05 rather than starting again.
 
-## 3. Run the closed sort
-- With another participant, or the same one after a break, lay out your chosen groups and ask where each card goes. Record every card they place slowly, question or refuse to place.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Open sort:** You hand over the cards and the person makes their own groups and names them. Run it while the structure is still open.
+- **Closed sort:** You supply the groups and the person decides where each card goes. It tests categories you have already chosen.
+- **Consent:** The person understands what will happen, agrees to it beforehand, and can stop without explaining why.
 
-## 4. Capture the record
-- Immediately write up each session: participant label, groups with their names, card placements, hesitations and quotations. Photograph everything before you disturb the table.
+Stuck starting? Deal the cards out and read only the faces. Any card whose wording points at a group has to be rewritten.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Note the sample and pause
-- Write how many people sorted, how they were recruited and who is missing. If nobody consented, record the recruitment gap and run the sort with yourself as a rehearsal, labelled as such and never counted as data.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Cards show items in plain words, not proposed labels: [evidence reference]
-- Both an open and a closed sort were run with consent: [evidence reference]
-- Hesitations and quotations are recorded, not only final groups: [evidence reference]
-- The sample is stated wherever results appear: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? No card face carries a group name or one of your proposed labels, and you could say the consent sentences aloud without reading them.
 
 </details>
+
+#### 2. Run the open sort
+
+**See it first.** Made-up example. Running an open sort and writing down a conclusion instead of what happened.
+
+- **What I set up:** Forty-three cards on a kitchen table, one person who had agreed beforehand, and a phone ready to photograph the piles.
+- **What I wrote at the time:** “She found the cancellation cards confusing.” One line, written while she was still sorting, and it felt like a finding.
+- **Why it was useless a week later:** I could not say what she had done. Confusing was my word for something I had watched and never described.
+- **What I should have written:** She picked up the cancellation policy card three times, put it with the money cards, moved it to the cancelling pile, then moved it back. She said “this depends on whose fault it is”.
+- **What that gave me:** Two facts and one quotation, all of which survive being read by someone who was not there. Confusing is still available as my reading, on its own line, with my name on it.
+
+**The wrong turn:** The wrong turn is writing the interpretation while the person is still in the room. It is the sentence you want to act on, it takes ten seconds, and it destroys the evidence underneath it.
+
+**What it costs:** Writing what happened is slower and your notes read duller. It is what lets a change be traced to a person rather than to your memory of an afternoon.
+
+**Still unknown:** Still unknown: why she thought about fault at all. One sort with one person cannot tell you, and it is worth asking the next person.
+
+- With consent, ask a participant to group the cards however makes sense to them and name each group in their own words. Ask them to think aloud. Write down hesitations, moved cards and exact phrases. Photograph the final arrangement.
+
+**You should end up with:** The open sort recorded: how it actually happened, the groups and names in their words, and every hesitation.
+
+Worksheet fields for this step:
+
+- How the open sort actually happened (A person consented and sorted the cards / Nobody has consented yet, so I sorted them myself as a rehearsal) — Answer this before you write anything else about the session. It decides what the rest of the record is allowed to claim.
+- The groups they made and the name they gave each, in their words — Copy the names exactly, including the awkward ones. A name you tidy up is a name you invented.
+- Every card moved twice, every pause, and the exact words spoken while hesitating
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Say “there are no wrong groups, and I am interested in how you think about these”, then stop talking and write.
+
+Is it enough? Someone reading your notes could describe the session without asking you a single question.
+
+</details>
+
+#### 3. Run the closed sort
+
+- With another participant, or the same one after a break, lay out your chosen groups and ask where each card goes. Record every card they place slowly, question or refuse to place.
+
+**You should end up with:** The closed sort recorded: how it actually happened, and every card placed slowly, questioned or refused.
+
+Worksheet fields for this step:
+
+- How the closed sort actually happened (A person consented and placed the cards / Nobody has consented yet, so I placed them myself as a rehearsal)
+- Every card placed slowly, questioned or refused, and what was said about each — A card placed instantly and a card placed after twenty seconds are different results, even when they land in the same group.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Lay your chosen groups out first, then hand the cards over one small pile at a time.
+
+Is it enough? The slow placements are written down separately from the fast ones.
+
+</details>
+
+#### 4. Capture the record
+
+- Immediately write up each session: participant label, groups with their names, card placements, hesitations and quotations. Photograph everything before you disturb the table.
+
+**You should end up with:** A written record of each session, three of your own lines split into did, said and concluded, and where the photographs live.
+
+**Try it with help.** Six lines from a card-sort write-up, all made up for practice. They come from one session with one person. Sort each line by what it actually is.
+
+- She picked up the cancellation policy card, put it with the money cards, then moved it to the cancelling pile.
+  - **what she did** — It describes her hands. Anyone watching would have written down the same movement, which is what makes it usable later.
+  - what she said — She was silent through this one. The record here is of movement, which is why it belongs under doing.
+  - your conclusion — There is no judgement in it yet. Keeping it as an action is what lets you draw a conclusion later and still show your working.
+- “This depends on whose fault it is,” she said, holding the card above the table.
+  - what she did — Holding the card is doing, and the sentence is the valuable half. Keep the quotation as speech and note the holding beside it.
+  - **what she said** — Her exact words, inside quotation marks. That is the form that survives being read by someone else in six months.
+  - your conclusion — You have added nothing of your own. The words are hers, and that is precisely what makes them worth keeping.
+- The cancellation cards confused her.
+  - what she did — Confusion is not a movement. What she did was move one card twice; confused is your reading of that movement.
+  - what she said — She never used the word. Putting your word into the speech column is how a quotation quietly becomes yours.
+  - **your conclusion** — It may well be true, and it is yours. On its own line it stays a claim you can go and check with the next person.
+- She made a pile and wrote “stuff before the class” on a note beside it.
+  - **what she did** — She built something and named it. Both are actions you watched, and the wording of the name is hers rather than yours.
+  - what she said — She wrote it rather than speaking it. Filing it as an action keeps the pile and its name together, which is where the value is.
+  - your conclusion — Nothing here is your interpretation. The pile exists and the words are on the note.
+- The split over the cancellation policy means there are two kinds of customer.
+  - what she did — One person cannot split. This is a reading of a pattern across sessions, which makes it yours rather than hers.
+  - what she said — She spoke about fault, not about kinds of customer. The leap from the first to the second is yours.
+  - **your conclusion** — A reasonable idea and an unproven one. On its own line it becomes something the next session could test.
+- She placed the directions card in under two seconds without looking up.
+  - **what she did** — Speed is behaviour and you watched it happen. Recording it keeps a confident placement different from a resigned one.
+  - what she said — She said nothing at all here. The speed is the whole of the evidence.
+  - your conclusion — You have not yet said what the speed means. Keeping the fact separate leaves the meaning open for later.
+
+**Then:** Take three lines from your own notes and split them the same way. Any line that will not split is already a conclusion.
+
+**What to watch for:** Doing and saying can be checked by someone who was not in the room. Your conclusion cannot, so it needs its own line and your name on it.
+
+Worksheet fields for this step:
+
+- The write-up of each session: participant label, groups with their names, card placements, hesitations and quotations — Use a label such as P1, never a name. Anonymity is part of what you promised.
+- Three lines from your notes, each split into what they did, what they said, and what you concluded — Any line that will not split is already a conclusion wearing the clothes of an observation.
+- Where the photographs live — File names or “on my phone, in the card sort album”. Nothing is uploaded from here.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the record from the photographs and the rough notes together, in that order, before you interpret anything.
+
+Is it enough? Each session has a participant label, named groups, hesitations and at least one exact phrase.
+
+</details>
+
+#### 5. Note the sample and pause
+
+- Write how many people sorted, how they were recruited and who is missing. If nobody consented, record the recruitment gap and run the sort with yourself as a rehearsal, labelled as such and never counted as data.
+
+**You should end up with:** How many people sorted and who is missing, the recruitment gap if there is one, your rehearsal label, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- How many people sorted, how you found them, and who is missing — This sentence goes at the top of the record, not the bottom, and travels with the results everywhere.
+- If nobody consented: what you tried, on which dates, and what you will try next — A dated gap plus the prepared cards and the script is a complete answer to this lesson. It is a real finding about access.
+- The words written on every rehearsal artefact so it can never be read as research
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+- **Rehearsal:** You running the method on yourself to practise it. It shows you can run the session and it is never evidence about anybody.
+- **Recruitment gap:** A dated written note of who you asked, when, and what you will try next. It is an honest finding about access, not a failure to hide.
+
+Stuck starting? Write the count first, then the route you used to find people, then the kind of person you never reached.
+
+Is it enough? A stranger reading only this box could tell whether any participant was involved.
+
+</details>
+
+**Save and continue.** Saved for you: The card notes, session records and sample line save as you type, on this device first and then online. Kept outside the app: The photographs stay on your phone or in your own folder. Write the file names in the photograph box; naming a file does not upload it. Keep participant names out of every file name. What your creator sees: Your creator reads the session records and the sample line. If nobody consented, he reads the dated gap and the rehearsal instead, and that is a complete submission. Your next action: Open Your work and choose Ready for review. The next lesson turns these records into counts, without turning four people into a percentage.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1053,70 +1572,165 @@ Item-by-item analysis of four sorts produced eleven agreements, six disagreement
 
 Analyse your sorts into a written list of agreements, disagreements and ambiguous items, expressed as counts of participants, and revise your structure with each change traced to what a participant actually did.
 
-**Where to work:** A table on paper or in a text file with one row per item. Avoid similarity matrices and clustering diagrams entirely at this sample size — not because the tools are unavailable, but because their output would be more confident than your evidence.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A table on paper or in a text file with one row per item. Avoid similarity matrices and clustering diagrams entirely at this sample size — not because the tools are unavailable, but because their output would be more confident than your evidence.
 
 - Starting material: The sort photographs, session notes and your two sitemaps. Both the sorts and the maps are inputs; neither wins automatically.
 - Create HaruCourse/Practice/m06-l06-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Read a card sort without overclaiming
+#### 1. Build the item table
 
-Input artifact: The sort photographs, session notes and your two sitemaps. Both the sorts and the maps are inputs; neither wins automatically.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] An item-by-item table with per-participant placements and hesitations, a classification into agreement, disagreement and ambiguity with interpretations, a revised sitemap with a trace sentence per change, a separate preferences list, and a sample line.
-
-## 1. Build the item table
 - Read the assigned analysis sections. Make one row per item and one column per participant, filling in where each card went and marking hesitations.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A table with one row per item and one column per participant, three rows written out in full, and any placement you could not recover.
 
-## 2. Classify the patterns
-- Label each item agreement, disagreement or ambiguous. For each disagreement write what you think it means: two audiences, two items, or too little evidence.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- How many items are in your table, and how many participants have a column
+- Three rows written out in full, each naming where every participant put the item and where anyone hesitated
+- Any placement you could not recover from the photographs or the notes — Leave the cell blank and say so here. A reconstructed placement is an invented one.
 
-## 3. Revise the structure
-- Change your chosen sitemap from the analysis. For each change write the trace sentence naming the item, the participants and what they did.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Item-by-item analysis:** Reading the sort one card at a time across all participants, rather than one person’s piles at a time.
+- **Placement:** Where one participant put one card, plus whether they arrived there quickly or slowly.
 
-## 4. Separate preference from evidence
-- List every change you wanted to make that no participant's behaviour supports. Keep them in a separate preferences list; do not smuggle them into the evidence-led changes.
+Stuck starting? Lay the photographs side by side and work down one card at a time, filling the whole row before you move on.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Write the sample line and pause
-- Write the sentence that will accompany these results everywhere: how many people, recruited how, and that the sort is exploratory. Save the table, the revised map and the preferences list.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Analysis is item by item with per-participant placements: [evidence reference]
-- Agreement, disagreement and ambiguity are distinguished: [evidence reference]
-- Every structural change carries a trace to participant behaviour: [evidence reference]
-- Counts are used and percentages avoided: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Every row has a cell for every participant, blank where the placement is genuinely unrecoverable.
 
 </details>
+
+#### 2. Classify the patterns
+
+**See it first.** Made-up example. Classifying four sorts, and turning three people into a percentage before catching it.
+
+- **What the rows said:** Twenty-one items, four participants. Three of the four put the refund rule with the money cards. One put it with cancelling.
+- **What I wrote first:** “75 per cent of users group the refund rule with payment.” It looked like a result and it fitted neatly on one line.
+- **Why it was wrong:** Four people are not a sample of users. The sentence promised something about everybody, from evidence about four, and the number lent it a confidence nothing had earned.
+- **What I wrote instead:** “Three of four put the refund rule with the money cards. One put it with cancelling. Two of the three hesitated first.” Longer, duller, and true.
+- **What the count showed that the rate hid:** Two of the three hesitated. A clean rate buries that; the count with the hesitations beside it made the item ambiguous rather than agreed, which changed what I did next.
+
+**The wrong turn:** The wrong turn is the arithmetic. It takes one second, it makes the finding sound stronger, and it converts four people into a claim about a population you never met.
+
+**What it costs:** Counts read as small and unimpressive, and somebody will ask whether that is really all you have. It is, and saying so plainly is what keeps the rest of your findings believable.
+
+**Still unknown:** Still unknown: whether the money grouping holds for anyone who has never cancelled anything. None of the four had, and a count cannot cover a person you did not meet.
+
+- Label each item agreement, disagreement or ambiguous. For each disagreement write what you think it means: two audiences, two items, or too little evidence.
+
+**You should end up with:** Each item labelled agreement, disagreement or ambiguous, with counts and an interpretation written for every disagreement.
+
+Worksheet fields for this step:
+
+- How many of your items fell into each of the three patterns
+- Each disagreement, with what you think it means: two audiences, two items, or too little evidence — Look at who placed it which way and what else you know about them. If nothing distinguishes them, say so rather than deciding.
+- The items placed consistently but slowly, and what the hesitation looked or sounded like — This is the pattern people miss, and it predicts a wrong first click better than a clean split does.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read down each row and ask two questions: did they all place it the same way, and did any of them take their time.
+
+Is it enough? Every item carries one of the three labels, and every disagreement carries a sentence saying what you think it means.
+
+</details>
+
+#### 3. Revise the structure
+
+- Change your chosen sitemap from the analysis. For each change write the trace sentence naming the item, the participants and what they did.
+
+**You should end up with:** Each change to your structure with a sentence naming the item, the participants and what they did.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Change 1 · what moved, and the sentence naming the item, the participants and what they did
+- Change 2 · what moved, and the sentence naming the item, the participants and what they did
+- Change 3 · what moved, and the sentence naming the item, the participants and what they did
+- Change 4 · what moved, and the sentence naming the item, the participants and what they did
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Begin with the disagreement you understand best and finish the sentence “this moved because participants … did …”.
+
+Is it enough? No change is left whose trace sentence you cannot complete.
+
+</details>
+
+#### 4. Separate preference from evidence
+
+- List every change you wanted to make that no participant's behaviour supports. Keep them in a separate preferences list; do not smuggle them into the evidence-led changes.
+
+**You should end up with:** Every change you wanted that no participant’s behaviour supports, kept on its own list.
+
+Worksheet fields for this step:
+
+- Every change you want to make that no participant’s behaviour supports — These are allowed and often sensible. They are simply not findings, and this list is where they say so.
+- The one you most wanted to move onto the evidence list, and why it stays here
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Go through the changes you did not write in the last step and ask which participant did what to prompt each one.
+
+Is it enough? The preferences list is not empty. If it is, you have probably filed a preference as a finding.
+
+</details>
+
+#### 5. Write the sample line and pause
+
+- Write the sentence that will accompany these results everywhere: how many people, recruited how, and that the sort is exploratory. Save the table, the revised map and the preferences list.
+
+**You should end up with:** The sentence that goes with these results everywhere, what your search for rates turned up, and the repair the Check questions asked for.
+
+**Try it with help.** A supplied made-up result. Four people sorted twenty-one cards. Three put the refund rule with the money cards and one put it with cancelling, and two of the three hesitated before placing it. Four sentences were drafted for the write-up.
+
+Which sentence can honestly carry this result?
+
+- **Three of four participants put the refund rule with the money cards, two of them hesitating first; one put it with cancelling.** — It is a count of people and it keeps the hesitation in. A reader sees exactly what happened, and exactly how little of it there is.
+- 75 per cent of participants group the refund rule with payment. — The same four people, dressed as a rate. A rate invites comparison with other rates, and there is nothing here worth comparing.
+- Most users expect the refund rule to sit with payment. — Users is a far bigger word than participants, and most is a claim about a population. Four people in one afternoon support neither.
+- The refund rule belongs with the money cards. — That is your decision, not the evidence. Write the decision separately so a reader can see what it rests on and disagree with it if they wish.
+
+**Then:** Read your own write-up for sentences of the second and third kind, and rewrite each as a count of people with the hesitations kept in.
+
+Worksheet fields for this step:
+
+- How many people sorted, how you found them, and that a sort this size is exploratory — Write it once and copy it wherever these results appear, including any slide or portfolio page.
+- What you found when you searched your write-up for the per cent sign and for anything drawn as a distance
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the count, then the recruitment route, then the word exploratory, in one sentence.
+
+Is it enough? The sample line could be pasted beside any result in this lesson and still be accurate.
+
+</details>
+
+**Save and continue.** Saved for you: The item table notes, the classifications, the traced changes and the sample line save as you type, on this device first and then online. Kept outside the app: The full table can stay in a text file or on paper if it is easier to work with there. Write the file name in the last section; naming a file does not upload it. What your creator sees: Your creator reads the traced changes and the preferences list side by side. The preferences list is the part that shows the discipline, so do not thin it out before submitting. Your next action: Open Your work and choose Ready for review. The next lesson puts the revised structure in front of people as a paper tree and gives them tasks to find things in it.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1256,70 +1870,165 @@ Six tasks with three participants, on paper. Task: “you booked a class for Sat
 
 Run a paper tree test of your revised structure with at least three participants and six tasks, recording for every task the first choice, the full path, whether they backtracked and where they said they would stop.
 
-**Where to work:** Sheets of paper, one per level, revealed in order — this is the required route. The platforms the assigned article names are paid, and at three to five participants they would add remote convenience and nothing else; running it by hand also lets you hear the hesitation, which the tool records only as elapsed time.
+**Where to practise:** Draw the tree one level per sheet and the six task cards on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Sheets of paper, one per level, revealed in order — this is the required route. The platforms the assigned article names are paid, and at three to five participants they would add remote convenience and nothing else; running it by hand also lets you hear the hesitation, which the tool records only as elapsed time.
 
 - Starting material: Your revised sitemap and the ambiguous items from the sort analysis. The tasks should aim at the places you are least sure of, not at the places you are proud of.
 - Create HaruCourse/Practice/m06-l07-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Tree test the structure by hand
+#### 1. Read and build the paper tree
 
-Input artifact: Your revised sitemap and the ambiguous items from the sort analysis. The tasks should aim at the places you are least sure of, not at the places you are proud of.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A paper tree, six written tasks with their pre-defined correct answers, and a results table recording first choice, path, backtracking, stopping point and stated confidence for every task and participant, with the sample stated.
-
-## 1. Read and build the paper tree
 - Read the assigned article on running a tree test. Write your structure onto sheets, one per level, so you can reveal it a level at a time without showing what is below.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A paper tree with one sheet per level, copied from your revised structure without improving anything on the way.
 
-## 2. Write six tasks and their answers
-- Write six task scenarios with a situation and a goal, avoiding the label you are testing. Write the correct answer for each, including acceptable alternatives, before you run anything.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- What is written on each sheet, level by level — Copy the labels exactly as they stand in your revised structure. Do not improve them while you copy.
+- How you will keep the lower sheets out of sight — Face down in a pile, or in an envelope. A person who glimpses the second level has already been given the answer.
 
-## 3. Run the test
-- With consent, run all six tasks with at least three participants. For every task record first choice, path, backtracking and where they said they would stop. Ask nothing that guides them; answer questions with “where would you look?”
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Tree test:** A test of the words alone. You show the structure a level at a time, with no page design, no pictures and no search box, and ask a person where they would go.
+- **First choice:** The very first branch a person picks. It is where the structure works or fails, and everything after it is recovery.
 
-## 4. Record confidence
-- After each task ask how sure they are they have arrived. Record the answer in their words. A confident wrong answer and an unsure right one are different results and lead to different changes.
+Stuck starting? Write the top level on one sheet. Then give every group on it a sheet of its own.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Capture and pause
-- Write the raw results into one table before you interpret anything, and note the participant count and route. The next lesson interprets them. If nobody consented, record the gap and keep the tasks and the paper tree as the deliverable.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Tasks state a situation and avoid the tested label: [evidence reference]
-- Correct answers were defined before running: [evidence reference]
-- First choice, path, backtracking and confidence are all recorded: [evidence reference]
-- The sample is stated and no benchmark is claimed: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? You can reveal one level at a time without the next one showing.
 
 </details>
+
+#### 2. Write six tasks and their answers
+
+**See it first.** Made-up example. Writing six tree-test tasks, and finding that the first three handed people the answer.
+
+- **What I wrote first:** “Find the cancellation policy.” Six tasks in that shape, taken straight off my own sitemap.
+- **Why it looked fine:** Each one named a real thing in the tree, so I thought I was testing whether people could reach it.
+- **What happened in the room:** The word “cancel” was on the top sheet. The first person read it back to me and pointed. I had tested her eyesight.
+- **What I wrote instead:** “You booked a class for Saturday and something has come up. Where would you go?” The word cancel never appears.
+- **What that cost me:** Two of the six tasks now had more than one reasonable answer, so I had to decide and write the second acceptable answer before running anything.
+
+**The wrong turn:** The wrong turn is writing tasks from the sitemap, because the labels are sitting in front of you. A task carrying the label of its target tests matching, not finding.
+
+**What it costs:** A situation-shaped task takes longer to write and often has two reasonable answers. You have to settle both in advance, which is slower and is the only thing that makes the result readable.
+
+**Still unknown:** Still unknown: whether these situations are ones your people actually meet. They came from your m05 notes, and those were a few people.
+
+- Write six task scenarios with a situation and a goal, avoiding the label you are testing. Write the correct answer for each, including acceptable alternatives, before you run anything.
+
+**You should end up with:** Six tasks, each a situation with a goal, and the answer you accept written down before anyone sits with you.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Task 1 · the situation, the goal, and the answer you will accept — Describe a moment, not a destination. If the sentence names a label from your tree, it is not a task yet.
+- Task 2 · the situation, the goal, and the answer you will accept
+- Task 3 · the situation, the goal, and the answer you will accept
+- Task 4 · the situation, the goal, and the answer you will accept
+- Task 5 · the situation, the goal, and the answer you will accept
+- Task 6 · the situation, the goal, and the answer you will accept
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take a moment from your m05 notes and write what the person was holding, worrying about and trying to do.
+
+Is it enough? No task contains a word that appears anywhere on your sheets.
+
+</details>
+
+#### 3. Run the test
+
+- With consent, run all six tasks with at least three participants. For every task record first choice, path, backtracking and where they said they would stop. Ask nothing that guides them; answer questions with “where would you look?”
+
+**You should end up with:** Every task run with each person, recording the first choice and the whole path, not only whether they arrived.
+
+**Try it with help.** A supplied made-up record of one task with one person. She chose “Get help” first, went back to the top, then chose “Change or cancel”, then reached the target on the second sheet. She arrived.
+
+What is the most important thing to write in your table about this task?
+
+- **That her first choice was “Get help”, and that she went back to the top before reaching the target.** — The first choice is where the structure either works or fails, and a return to the top says a top-level label pointed her the wrong way. Neither is visible in a count of successes.
+- That she arrived, because the task was completed. — Arriving hides the two moves before it. In a real product a person who backs out of a wrong branch often leaves instead of trying again.
+- How long she took, so you can compare it with the other tasks. — Time is easy to record and hard to read with three people. The route she took says the same thing more plainly and cannot be mistaken for a score.
+- That the target sat on the second sheet, so the second level is the problem. — How deep the target sits is a fact about your tree rather than about her. Her return to the top points at the level above, which is the opposite conclusion.
+
+**Then:** Give your own table a column for first choice and a column for the whole path, and fill both before you write down whether the person arrived.
+
+Worksheet fields for this step:
+
+- How this run actually happened (Three or more people took part, with consent / One or two people took part, with consent, and the gap is recorded / Nobody was available: I ran it on myself as a rehearsal, labelled as a rehearsal and never counted as a result)
+- For every task and every person: the first choice, the whole path, whether they went back up, and where they said they would stop — Write the first choice before you write the outcome. It is the column you cannot recover afterwards.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask for consent, explain that you are testing the words and not the person, and answer every question with “where would you look?”.
+
+Is it enough? Every task and every person has a first choice and a path recorded. If nobody consented, choose the rehearsal option, run it on yourself, and label every sheet and every line rehearsal so it can never be read as research.
+
+</details>
+
+#### 4. Record confidence
+
+- After each task ask how sure they are they have arrived. Record the answer in their words. A confident wrong answer and an unsure right one are different results and lead to different changes.
+
+**You should end up with:** How sure each person was that they had arrived, written in their own words.
+
+Worksheet fields for this step:
+
+- After each task, how sure they were that they had arrived, in their own words — Ask “how sure are you that this is the right place?” and write the answer down as said.
+- Any task where somebody was sure and wrong, or unsure and right
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask the confidence question straight after each task, before you move the sheets.
+
+Is it enough? A confident wrong answer and an unsure right one are marked as different results, because they lead to different changes.
+
+</details>
+
+#### 5. Capture and pause
+
+- Write the raw results into one table before you interpret anything, and note the participant count and route. The next lesson interprets them. If nobody consented, record the gap and keep the tasks and the paper tree as the deliverable.
+
+**You should end up with:** The sample line, where the sheets and the table live, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- How many people took part, how you found them, who is missing, and whether any of this was a rehearsal — This sentence travels with the results everywhere they appear, so write it once and keep it at the top.
+- Where the sheets, the task cards and the table live — File names or “paper, in my folder”. Nothing is uploaded.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the raw table out fully before you interpret anything. The next lesson does the interpreting.
+
+Is it enough? The count of people appears at the top of the results, not at the bottom.
+
+</details>
+
+**Save and continue.** Saved for you: Your tasks, results table and confidence notes save as you type, on this device first and then online. Kept outside the app: The sheets and cards stay on paper. Photograph the tree and the table if you like and write the file name here; naming a file does not upload it. What your creator sees: Your creator reads the six tasks and the first-choice column. Those two together show whether the test could have told you anything. Your next action: Open Your work and choose Ready for review. The next lesson reads these results and changes exactly one thing.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1459,70 +2168,183 @@ Six tasks, three participants. Diagnosis by first click: four of six tasks had c
 
 Turn your tree-test results into a diagnosis per failed task — a wrong label, a wrong grouping or a missing item — then make one bounded change, re-test it with at least two people, and report what happened including if it did not help.
 
-**Where to work:** The same paper tree with one sheet rewritten. Keep the original sheets: a before-and-after pair of paper trees with results attached is the artefact, and it costs nothing to preserve.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: The same paper tree with one sheet rewritten. Keep the original sheets: a before-and-after pair of paper trees with results attached is the artefact, and it costs nothing to preserve.
 
 - Starting material: The tree-test results table and the structure you tested. Do not change anything before this lesson: a diagnosis written after several simultaneous edits explains nothing.
 - Create HaruCourse/Practice/m06-l08-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Interpret the tree test and change one thing
+#### 1. Read the interpretation guidance
 
-Input artifact: The tree-test results table and the structure you tested. Do not change anything before this lesson: a diagnosis written after several simultaneous edits explains nothing.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A first-click split of failed tasks, a written diagnosis per failure with supporting paths and quotations, one bounded change re-tested with at least two new participants, and an honest report of the outcome including any remaining failures.
-
-## 1. Read the interpretation guidance
 - Read the assigned article on interpreting results. Note the four measures it discusses and write, for your own data, which you can honestly report at your sample size.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Which measures your own results can honestly carry at this number of people, written before you interpret anything.
 
-## 2. Split by first click
-- Sort your failed tasks into those where level one was correct and those where it scattered. Write what each group implies about where the fault lies.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- The measures the article discusses, and which of them your own numbers can carry — Write the ones you can report as counts of people, and the ones you would have to invent a rate for.
 
-## 3. Diagnose each failure
-- For each failed task write the cause: wrong label, wrong grouping or missing item. Support each diagnosis with the paths and the quotations from the session.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **First click:** The first branch a person chose on the top sheet, before any recovery.
+- **Success rate:** The share of tasks people completed. It is useful with many participants and misleading with three, so report counts of people instead.
 
-## 4. Change one thing and re-test
-- Make exactly one change aimed at your clearest diagnosis. Re-test the affected tasks with at least two people who have not seen the structure. Record first clicks and confidence again.
+Stuck starting? List the four measures the article names, then put a yes or a no beside each for your own data.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Report honestly and pause
-- Write what the change did, including if it did not help or made things worse. List the remaining failures and their diagnoses for the next round. Save both versions of the structure.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Failures are split by first click before diagnosis: [evidence reference]
-- Each failure has a named cause with supporting evidence: [evidence reference]
-- Exactly one change was made and re-tested: [evidence reference]
-- The outcome is reported honestly, including no improvement: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Anything you marked yes can be written as a count of people rather than a rate.
 
 </details>
+
+#### 2. Split by first click
+
+**See it first.** Made-up example. Reading a bad-looking tree test as a broken structure, and finding that the top of it was fine.
+
+- **What the table looked like:** Four of six tasks failed with three people. My first thought was that the structure was wrong and I should start again.
+- **What I nearly did:** I sketched a whole new top level over lunch, with different groups and different names, and felt much better for an hour.
+- **What the first choices said:** In four of the six tasks, all three people chose correctly on the top sheet. They failed one level down.
+- **Where the failures actually sat:** Three of those four died at the same second-level label, “Booking admin”. Nobody could say what was inside it.
+- **What I did instead:** Left the top alone and rewrote one label. The structure I nearly threw away had been doing its job.
+
+**The wrong turn:** The wrong turn is reading a count of failures as a verdict on the whole structure. Failures concentrate, and a redesign discards the parts that were working.
+
+**What it costs:** Keeping a structure you have just watched fail feels like defending it. It costs you the satisfaction of a fresh start, and it keeps the risks you had already tested away.
+
+**Still unknown:** Still unknown: whether the top level survives tasks you did not write. Six tasks with three people cannot cover a structure.
+
+- Sort your failed tasks into those where level one was correct and those where it scattered. Write what each group implies about where the fault lies.
+
+**You should end up with:** Your failed tasks sorted into the ones where the top level was chosen correctly and the ones where the first choices scattered.
+
+Worksheet fields for this step:
+
+- Which failed tasks had a correct first choice, and which scattered across branches
+- What each of those two groups tells you about where the fault cannot be — Finish the sentence “because they chose correctly at the top, the fault is not …”.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Sort the results table by the first-choice column and read the failed rows in two piles.
+
+Is it enough? Each pile has a written sentence saying where the fault cannot be.
+
+</details>
+
+#### 3. Diagnose each failure
+
+- For each failed task write the cause: wrong label, wrong grouping or missing item. Support each diagnosis with the paths and the quotations from the session.
+
+**You should end up with:** A named cause for each failure — a wrong label, a wrong grouping or a missing item — with the path or the quotation that supports it.
+
+**Try it with help.** Six failed-task lines from somebody else’s tree test, all made up for practice. For each one, name the cause you would write in your own table.
+
+- All three chose “Change or cancel” on the top sheet, then stopped at “Booking admin” and said they could not tell what was inside it.
+  - **wrong label** — The right container, reached correctly, wearing a name that describes a department rather than its contents. Rename it in their words.
+  - wrong grouping — The grouping held. Every one of them chose the branch you intended, so the item is sitting where they expect it.
+  - missing item — The item is there. They reached the container that holds it and were stopped by what it is called.
+- Two people hunted through three branches for the refund rule and gave up. Nothing anywhere in the structure is about refunds.
+  - wrong label — Renaming cannot help when there is nothing behind the name. The search failed because the answer has never been written.
+  - wrong grouping — Moving an item needs an item to move. This one does not exist yet.
+  - **missing item** — The commonest result and the most ignored one. It is a content gap, and no structural change will clear it.
+- All three looked for “What to bring” under “Choose a class” first. It lives under “Get ready”, and two of them never found it.
+  - wrong label — The name says exactly what the thing is, and nobody was confused by it. They were looking somewhere else entirely.
+  - **wrong grouping** — They want it while choosing, and it sits where you filed it for later. Move it, or list it in both places and accept the maintenance.
+  - missing item — It exists, and one of them did reach it. The trouble is where it sits.
+- First choices scattered across three branches on the top sheet. One person said “My account” could mean anything, and another said the same of “Services”.
+  - **wrong label** — Scattering at the top, with people saying out loud that the names tell them nothing, is a top level naming itself rather than its contents.
+  - wrong grouping — A grouping fault usually shows as people agreeing on one wrong branch. Scattering with spoken doubt about the names points at the names.
+  - missing item — They had not decided anything was absent. They could not read the choices in front of them.
+- Two people looked for directions to the venue under “Get help”. It sits under “About us”, and both said afterwards they would have rung the number instead.
+  - wrong label — “About us” is understood perfectly well, which is exactly why nobody expected practical directions inside it.
+  - **wrong grouping** — The item is filed where the organisation thinks about itself, not where a person arrives with that need. Move it, or list it in both.
+  - missing item — The directions exist. They are in a branch nobody visits carrying that question.
+- One person asked whether the deposit comes back if the provider cancels the class. No page, sentence or answer anywhere in the material addresses it.
+  - wrong label — There is no name to change. Nothing in the material speaks to the question at all.
+  - wrong grouping — Nothing can be moved to a better place, because nothing has been written to move.
+  - **missing item** — A question with no answer in the product. Record it as a content gap and hand it to whoever writes the material.
+
+**Then:** Now name the cause for each of your own failed tasks, and write the path or the quotation that supports it beside the name.
+
+**What to watch for:** Look at what separated the hardest lines. When people reached the right branch and stopped, the name was at fault. When they went confidently to a branch that does not hold the item, the grouping was. When nothing in the material answers the question, neither move helps, and the fault is that the answer does not exist.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Failure 1 · the task, the cause you name, and the evidence for it — The cause is one of three: a wrong label, a wrong grouping, or a missing item.
+- Failure 2 · the task, the cause you name, and the evidence for it
+- Failure 3 · the task, the cause you name, and the evidence for it
+- Failure 4 · the task, the cause you name, and the evidence for it
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the failure you are surest about and write the path first, then the cause it points to.
+
+Is it enough? Any cause you cannot support with a path or a quotation is written down as a guess.
+
+</details>
+
+#### 4. Change one thing and re-test
+
+- Make exactly one change aimed at your clearest diagnosis. Re-test the affected tasks with at least two people who have not seen the structure. Record first clicks and confidence again.
+
+**You should end up with:** Exactly one change, and a re-test of only the tasks it was aimed at.
+
+Worksheet fields for this step:
+
+- The single change you made, and the diagnosis it is aimed at — One sheet, one label, one move. If you cannot describe it in a sentence it is more than one change.
+- How the re-test actually happened (Two or more people who had not seen the structure, with consent / One person only, with consent, and the gap recorded / Nobody was available: the change is recorded as untested and never described as an improvement)
+- First choices, paths and confidence from the re-test, for the affected tasks only
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Choose the diagnosis you are surest about and change that one thing on one sheet.
+
+Is it enough? The before and after structures differ in one respect. If nobody was available to re-test, choose the untested option and say so wherever the change appears; running it on yourself is not a re-test, because you wrote the new label.
+
+</details>
+
+#### 5. Report honestly and pause
+
+- Write what the change did, including if it did not help or made things worse. List the remaining failures and their diagnoses for the next round. Save both versions of the structure.
+
+**You should end up with:** What the change did, what is still failing, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- What the change did, including if it did not help or made things worse — Write the counts into the sentence. Two of two, or one of two, says more than better or worse.
+- Every failure you have not addressed, with the diagnosis it still carries
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the outcome sentence with the counts inside it before you write anything else.
+
+Is it enough? Every failure you did not address is still on the list with its diagnosis attached.
+
+</details>
+
+**Save and continue.** Saved for you: Your split, your diagnoses and your outcome save as you type, on this device first and then online. Kept outside the app: Keep both versions of the paper tree, the original sheets and the rewritten one. Note where they live; nothing is uploaded. What your creator sees: Your creator reads the diagnosis for each failure and the outcome sentence. An outcome that says the change did not help is a stronger entry than one that says it did. Your next action: Open Your work and choose Ready for review. The next lesson matches the failures you still cannot explain to the test that would explain them.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1662,70 +2484,166 @@ Four symptoms from one product, each matched to a test. People choosing the wron
 
 Write a diagnostic plan matching four symptoms of people not finding things to the test that would identify each cause, and state for one symptom in your own product which test you would run next and what would make you run a different one.
 
-**Where to work:** Written planning only. A click test needs nothing more than a printed or drawn screen and a pen mark where the person would tap, which is the account-free version of every click-testing service, and works fine with three people.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Written planning only. A click test needs nothing more than a printed or drawn screen and a pen mark where the person would tap, which is the account-free version of every click-testing service, and works fine with three people.
 
 - Starting material: Everything you have run so far and the failures you have not yet explained. This lesson is about the failures your card sort and tree test could not diagnose.
 - Create HaruCourse/Practice/m06-l09-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Choose the right test for the symptom
+#### 1. Read the four methods
 
-Input artifact: Everything you have run so far and the failures you have not yet explained. This lesson is about the failures your card sort and tree test could not diagnose.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A symptom-to-test table with at least four rows carrying cause, test, participant count and cost; a marked separation of findability from discoverability symptoms; and a chosen next test with the result that would change your mind.
-
-## 1. Read the four methods
 - Read the assigned article. For each of the four tests, write in one sentence what it diagnoses and what it cannot see.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One sentence per test on what it identifies, and one on what it is blind to, in your own words.
 
-## 2. List your unexplained failures
-- List every finding from your sort and tree test that you could not diagnose, plus anything from your m05 research about people not finding things.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- For each of the four tests: one sentence on what it identifies, and one on what it cannot see — If two of your blind-spot sentences say the same thing, the tests are not yet separate in your head.
+- The cheaper move before any test: which of your failures might just be a missing or badly written answer
 
-## 3. Match symptom to test
-- Build a table of at least four symptoms, each with the likely cause, the test that would identify it, roughly how many people it needs and what it would cost you in time.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Tree test:** Asks whether the branches themselves send people the right way, with the screen taken away.
+- **Closed card sort:** Hands people your categories and asks where each item goes. It tests whether your names are understood.
+- **Click test:** Shows a real layout, drawn or printed, and asks where the person would tap. It shows which navigation people use and which they walk past.
+- **Usability test:** Watches somebody do the whole task. It shows the most, and tells you the least per person about which single thing is at fault.
 
-## 4. Separate findability from discoverability
-- Mark which of your symptoms are people failing to find something they were looking for, and which are people never knowing it existed. Write why no findability test can address the second.
+Stuck starting? For each test, finish the sentence “this cannot tell me …”.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Choose the next test and pause
-- Choose one symptom and the test you would run next. Write what result would make you abandon that test and run a different one instead. Save the plan.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Each test is matched to what it can and cannot diagnose: [evidence reference]
-- Symptoms come from your own unexplained findings: [evidence reference]
-- Findability and discoverability are distinguished: [evidence reference]
-- The chosen next test states what would change your mind: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? No two blind-spot sentences are the same.
 
 </details>
+
+#### 2. List your unexplained failures
+
+- List every finding from your sort and tree test that you could not diagnose, plus anything from your m05 research about people not finding things.
+
+**You should end up with:** Every finding from your sort, your tree test and your research that you could not explain, with where each one came from.
+
+Worksheet fields for this step:
+
+- Every finding from your sort, your tree test and your m05 research that you could not diagnose
+- Where each symptom came from, and which came from a rehearsal rather than from a person — A symptom you noticed while walking the product yourself is a suspicion. Mark it, and it stays useful.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read your session notes for every moment somebody could not find something, including the ones you assumed you understood.
+
+Is it enough? Every symptom has a source beside it. If your only source is a walkthrough you did alone, keep the symptoms and mark each one as your own suspicion; the plan is still worth writing, and a suspicion is never written up as a finding.
+
+</details>
+
+#### 3. Match symptom to test
+
+**See it first.** Made-up example. Choosing a usability test for every symptom, and learning nothing about any of them.
+
+- **What I planned:** One symptom: people were not reaching the page that lets them cancel. I booked three sessions on the real screens.
+- **Why it felt right:** A usability test shows the whole task, so it looked like the test that would show me everything.
+- **What I got:** Three people struggled in three different ways. One never opened the menu, one opened it and took the wrong branch, one found the branch and could not read the label.
+- **Why that was no use:** Every variable was present at once, so each session pointed at a different cause and nothing separated them.
+- **What I should have asked first:** Which cause do I suspect? If it is the branch, a tree test. If it is the name, a closed sort with two categories. If people never touch the menu, a click test on the layout.
+
+**The wrong turn:** The wrong turn is picking the test that sees the most. It is also the test that tells you the least per person about which single thing is at fault.
+
+**What it costs:** A narrow test asks you to commit to a suspected cause before running, and you can be wrong. It buys you an answer about one thing with three people and twenty minutes each.
+
+**Still unknown:** Still unknown: whether the cause you suspect is the only one. A narrow test that comes back clean sends you to the next suspect rather than to a conclusion.
+
+- Build a table of at least four symptoms, each with the likely cause, the test that would identify it, roughly how many people it needs and what it would cost you in time.
+
+**You should end up with:** At least four symptoms, each with the cause you suspect, the test that would identify it, roughly how many people, and what it would cost you.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Symptom 1 · what happens, the cause you suspect, the test, roughly how many people, and what it costs you — If you can think of two possible causes, write both, then say which one you would test first and why.
+- Symptom 2 · what happens, the cause you suspect, the test, roughly how many people, and what it costs you
+- Symptom 3 · what happens, the cause you suspect, the test, roughly how many people, and what it costs you
+- Symptom 4 · what happens, the cause you suspect, the test, roughly how many people, and what it costs you
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the symptom you understand least and write two possible causes for it before you write any test.
+
+Is it enough? Every row names a cause, and the test named beside it is the one that would separate that cause from the others.
+
+</details>
+
+#### 4. Separate findability from discoverability
+
+- Mark which of your symptoms are people failing to find something they were looking for, and which are people never knowing it existed. Write why no findability test can address the second.
+
+**You should end up with:** Each symptom marked as somebody failing to find a thing, or somebody never knowing it existed, with the reason written for the second kind.
+
+**Try it with help.** A supplied made-up symptom. A fee waiver exists, sits in the menu under a plain name, and in five sessions nobody visited it. When told it existed, every one of them found it in a single move.
+
+Which test would identify the cause here?
+
+- **None of the four, because they all begin by telling the person what to look for, and this is a person who never knew to look.** — Every findability test names the target before it starts. The failure is that nobody wanted the thing yet, so the fix sits in how it is raised during booking rather than in the structure.
+- A tree test, because it takes the layout away and shows whether the branches work. — It would come back clean, because it hands the person the goal. Everyone found it in one move once told, which is that result already.
+- A click test, because people may not be seeing the menu. — Worth asking when people ignore the menu on tasks they are actually trying to do. Here they were not trying, so the component was never the obstacle.
+- A closed card sort, because the name may not be understood. — A sort would check whether the name reads correctly, and the name worked the moment anyone was pointed at it. The gap sits earlier than the name.
+
+**Then:** Mark each of your own symptoms as looking and not finding, or never knowing, and write the reason for every one you mark as never knowing.
+
+Worksheet fields for this step:
+
+- Each symptom marked: a person looking for a thing and not reaching it, or a person who never knew it existed
+- For every symptom you marked as never knowing: why no findability test can reach it, and where the fix would sit instead
+
+<details>
+<summary>Help with this step</summary>
+
+- **Findability:** A person is looking for a specific thing and does not reach it.
+- **Discoverability:** A person never learns the thing exists, so they never go looking for it.
+
+Stuck starting? For each symptom ask whether the person knew the thing existed before they started.
+
+Is it enough? Every symptom marked as never knowing says where the fix would sit instead.
+
+</details>
+
+#### 5. Choose the next test and pause
+
+- Choose one symptom and the test you would run next. Write what result would make you abandon that test and run a different one instead. Save the plan.
+
+**You should end up with:** The test you would run next, the result that would send you to a different one, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- The symptom you chose, the test you would run, and why that one rather than the others — Write it as “I will run … because I suspect …”. A test you cannot finish that sentence for is not chosen yet.
+- The result that would make you abandon that test and run a different one
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write “I will run … because I suspect …, and if I see … I will run … instead”.
+
+Is it enough? The sentence names a suspected cause and a result that would change your mind.
+
+</details>
+
+**Save and continue.** Saved for you: Your four tests, your symptom table and your next-test sentence save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. Keep your tree-test results and your sort analysis to hand, since every symptom should trace back to one of them. What your creator sees: Your creator reads the symptom table and the next-test sentence. Being able to say why not the other three tests is the part that is hard to fake. Your next action: Open Your work and choose Ready for review. The next lesson takes one page inside this structure and makes its shape perceivable.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1865,70 +2783,167 @@ A class page read as headings alone: “Saturday pottery”, “About”, “Det
 
 Express one page of your structure as a heading outline and a set of regions, then check it by reading only the headings aloud and by running the relevant preliminary accessibility checks, recording what you could and could not verify.
 
-**Where to work:** An indented text outline and a sketch of the page with regions drawn on it. If your prototype is a local HTML file, the checks run in any browser with no extension; if it is on paper, run the heading and outline checks by reading and record the keyboard checks as untested rather than assumed.
+**Where to practise:** Draw the page with its regions marked on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: An indented text outline and a sketch of the page with regions drawn on it. If your prototype is a local HTML file, the checks run in any browser with no extension; if it is on paper, run the heading and outline checks by reading and record the keyboard checks as untested rather than assumed.
 
 - Starting material: Your revised structure and one page that sits inside it — ideally the page your tree test showed people reaching. Structure is not only between pages; the same failures happen inside one.
 - Create HaruCourse/Practice/m06-l10-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Structure people can perceive: headings, landmarks and navigation
+#### 1. Read the structure tutorial
 
-Input artifact: Your revised structure and one page that sits inside it — ideally the page your tree test showed people reaching. Structure is not only between pages; the same failures happen inside one.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A correctly nested heading outline for one page, a region map with each navigation element classified, the results of the applicable preliminary checks, and a written statement of what was not verified.
-
-## 1. Read the structure tutorial
 - Read the assigned page-structure tutorial on headings and regions. Write the heading rule in your own words, including what skipping a level does.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The heading rule in your own words, and the one page you are going to work on.
 
-## 2. Write the heading outline
-- Write your chosen page as an outline: page title, then every section heading in order, correctly nested. Use the labels from your labelling table rather than inventing new ones.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- The heading rule, written by you, including what skipping a level does — Headings are an outline, not a size choice. Say what goes wrong when a level is skipped to make something look smaller.
+- The page you are working on, and where it sits in your structure
 
-## 3. Mark the regions and the navigation kinds
-- Identify the banner, navigation, main content, any complementary area and the footer. Then label each navigation element global, local, contextual or utility, and note anything sitting in the wrong one.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Heading outline:** The page title and its section headings, in order, read on their own. Some people use it as their whole way of moving around a page.
+- **Region:** A named large area of a page: the banner, the navigation, the main content, a side area, the footer. Naming them lets someone jump straight to the content.
 
-## 4. Read it aloud and run the checks
-- Read only the headings aloud, in order. Rewrite anything that does not describe its section. Then run the assigned preliminary checks that apply — page title, headings, keyboard access — on your prototype or on the live page.
+Stuck starting? Pick the page your tree test showed people actually reaching. A page nobody visits teaches you less.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Record what you could not verify, then pause
-- Write what the checks did not cover and what you did not test, including that no assistive-technology session with a disabled participant took place. Save the outline, the region map and the check results.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- The heading outline is correctly nested and descriptive: [evidence reference]
-- Regions and navigation kinds are identified: [evidence reference]
-- The heading read-aloud test was actually run: [evidence reference]
-- Unverified checks are stated rather than assumed: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Your rule says what a level means, not only that levels should be in order.
 
 </details>
+
+#### 2. Write the heading outline
+
+**See it first.** Made-up example. Writing the heading outline for a class page, and finding that three of the five headings said nothing.
+
+- **What I started with:** The page already had five headings: “Saturday pottery”, “About”, “Details”, “More info”, “Book”. I copied them into an outline and thought I was finished in four minutes.
+- **What I nearly did next:** I wanted “Details” to look smaller, so I dropped it two levels down. Nothing sat in between. I just liked the size.
+- **Why that was wrong:** A level says what is inside what. Skipping one tells anybody reading the outline that a section is missing, and it fixed nothing: “Details” still did not say what was in it.
+- **The test that caught it:** I read the five headings aloud with the page covered. “About”, “Details” and “More info” could have introduced anything on any page of the site.
+- **What replaced them:** Straight from the labelling table: “What you’ll do”, “What to bring”, “When and where”, “What it costs”, “Book a place”. Same page, five headings, and the outline is now a summary of it.
+
+**The wrong turn:** The wrong turn is choosing a heading level for how big it looks. The level is a claim about what sits inside what, and spending it on size quietly deletes a section from the outline.
+
+**What it costs:** Descriptive headings are longer and the page looks less tidy. You give up a neat column of short words to gain a page someone can skim without reading it.
+
+**Still unknown:** Still unknown: whether these headings work for someone using a screen reader. Reading them aloud yourself is a different test, and no session has been run.
+
+- Write your chosen page as an outline: page title, then every section heading in order, correctly nested. Use the labels from your labelling table rather than inventing new ones.
+
+**You should end up with:** One page title, then every section heading in order, each one inside the heading above it.
+
+Worksheet fields for this step:
+
+- The page title, the single heading at the top
+- Every section heading in order, indented to show what sits inside what — A numbered, indented list is enough. Two spaces of indent shows that a heading belongs inside the one above it.
+- Which headings came from your labelling table, and which you invented today — Anything invented today has no evidence behind it yet. Mark it as a guess, the way you marked labels in lesson 2.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the page title first, then list the sections in the order they appear on the page, before worrying about levels.
+
+Is it enough? No level is skipped, and every heading came from your labelling table or is marked as invented today.
+
+</details>
+
+#### 3. Mark the regions and the navigation kinds
+
+- Identify the banner, navigation, main content, any complementary area and the footer. Then label each navigation element global, local, contextual or utility, and note anything sitting in the wrong one.
+
+**You should end up with:** The five regions named, and every navigation element sorted into one of the four kinds.
+
+Worksheet fields for this step:
+
+- The regions of the page named, and what sits in each one — Banner, main navigation, main content, a side area if there is one, footer. Draw them on your sketch and list them here.
+- Every navigation element, with global, local, contextual or utility written beside it
+- Anything sitting in the wrong region or under the wrong kind
+
+<details>
+<summary>Help with this step</summary>
+
+- **Global navigation:** The menu that says what the whole product contains. It is the same on every page.
+- **Local navigation:** The menu for the section you are in. It changes as you move between sections.
+- **Contextual link:** A link inside the text, pointing at something related to what the person is reading right now.
+- **Utility element:** Sign in, help, language. Always available, and not part of the content hierarchy.
+
+Stuck starting? Draw a box around each region on your sketch and write its name in the margin. Then list every link that is not part of the main content.
+
+Is it enough? Every link outside the main content has one of the four kinds beside it. A link you cannot classify usually belongs somewhere else.
+
+</details>
+
+#### 4. Read it aloud and run the checks
+
+- Read only the headings aloud, in order. Rewrite anything that does not describe its section. Then run the assigned preliminary checks that apply — page title, headings, keyboard access — on your prototype or on the live page.
+
+**You should end up with:** What the headings alone said out loud, what you rewrote, and what the preliminary checks showed.
+
+**Try it with help.** A supplied heading outline from another made-up class page, read aloud with nothing else visible: “Evening wheel throwing”, “Overview”, “What to bring”, “Good to know”, “Book a place”.
+
+Hearing only that, which judgement is the honest one?
+
+- **Two of them, “Overview” and “Good to know”, could sit on any page in the site, so the outline is not yet a summary of this one.** — A heading earns its place by being unmovable. Those two would fit a booking page, a help page or an about page and nobody would notice.
+- The outline is sound, because five headings in order is a sensible shape for a page. — Shape and order are only half of it. An outline can be perfectly nested and still tell a listener nothing about what is on the page.
+- It fails because “What to bring” is too long to be a heading. — Length is the cheapest thing a heading has to spend. That is the one heading here a listener could act on.
+- You cannot judge it without seeing the page design. — Hiding the design is the test. If the outline only makes sense beside the layout, then people who never see the layout have no structure at all.
+
+**Then:** Read your own headings aloud with the page covered, and mark every one that could move to another page unnoticed.
+
+Worksheet fields for this step:
+
+- What your headings alone said when you read them out, and what you rewrote afterwards — Read only the headings, in order, with the page covered. Write what a listener would think the page was about.
+- The preliminary checks you ran, and what each one showed — The page title in the browser tab, the heading order, and reaching everything with the Tab key. Write what each one showed, not a verdict.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read the headings to one other person and ask them what the page is about before you tell them.
+
+Is it enough? Every heading you could move elsewhere unnoticed has been rewritten, and each check has a written result.
+
+</details>
+
+#### 5. Record what you could not verify, then pause
+
+- Write what the checks did not cover and what you did not test, including that no assistive-technology session with a disabled participant took place. Save the outline, the region map and the check results.
+
+**You should end up with:** What you could not check, the sentence about the missing session, where the artefacts live, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Which checks you could not run, and why — Mark each check run, not applicable, or not run. A check you skipped is not a check that passed.
+- Your sentence saying no screen-reader session and no disabled participant took part
+- Where the outline, the region sketch and the check results live — File names, or “paper, in my folder”. Nothing is uploaded.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? List the preliminary checks and put run, not applicable or not run beside each. Then write the one sentence about who did not take part.
+
+Is it enough? A reader can tell exactly which checks happened, and nothing is recorded as passed that was never run.
+
+</details>
+
+**Save and continue.** Saved for you: The outline, the region list and the check results save as you type, on this device first and then online. Kept outside the app: The region sketch stays on paper or in your own folder. Write its file name in step 5; naming a file does not upload it. What your creator sees: Your creator reads the outline and the read-aloud note. The limits you recorded matter as much as the checks that came out clean. Your next action: Open Your work and choose Ready for review. The next lesson takes these same labels into search, where people type their own words at you.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2068,70 +3083,164 @@ Twenty queries taken verbatim from five interviews were run by hand against a cl
 
 Design the search and filtering behaviour for your structure, including what happens with no results, and write the query list that would test it — drawn from words your participants actually used.
 
-**Where to work:** Searching your own content by hand — with a browser's find-in-page, or by reading — and sketching the empty state on paper. No search platform, analytics tool or index is required; the by-hand pass finds the vocabulary problems that tuning a search engine would only mask.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Searching your own content by hand — with a browser's find-in-page, or by reading — and sketching the empty state on paper. No search platform, analytics tool or index is required; the by-hand pass finds the vocabulary problems that tuning a search engine would only mask.
 
 - Starting material: Your labelling table, your inventory and any m05 evidence of people going straight to search. Search is where your labelling failures surface as typed words.
 - Create HaruCourse/Practice/m06-l11-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Search, filters and the zero-results path
+#### 1. Read on prevention and recovery
 
-Input artifact: Your labelling table, your inventory and any m05 evidence of people going straight to search. Search is where your labelling failures surface as typed words.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A list of at least twenty verbatim participant queries with hand-run outcomes and classified failures, filter categories with a stated no-results behaviour, a designed zero-results screen, and a fix per failure class.
-
-## 1. Read on prevention and recovery
 - Read the assigned pages on preventing user errors and on the relevant heuristics. Write the difference between stopping a dead end and helping someone out of one.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Your own sentence on preventing a dead end against getting somebody out of one, and what your notes say about search.
 
-## 2. Build the query list
-- Take at least twenty words and phrases your participants actually used, verbatim. Mark which are names of things, which are descriptions and which are questions.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- The difference between stopping a dead end and helping somebody out of one, in your own words
+- What your practice product offers today (A search box on the site / No search box at all / Only the browser’s own find-in-page)
+- What your m05 notes show about people going straight to search instead of the menu — If your notes say nothing about it, write that. An absence is a real answer here.
 
-## 3. Run the queries by hand
-- For each query, search your content by hand and record whether the right thing would have been found. Classify every failure: vocabulary, unreachable content, or a thing that does not exist.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Zero results:** The screen a person sees when a search or a filter combination returns nothing. It is a screen you design, not an error you allow to happen.
+- **Synonym:** A different word for the same thing. If people say fees and your pages say pricing, either the search knows they are the same or it is broken for those people.
 
-## 4. Design the filters and the empty state
-- Define your filter categories from the structure and state what happens when a combination returns nothing. Then design the zero-results screen: the query shown, nearest matches, a non-search route, and a way to reach a person.
+Stuck starting? Write one example of each: something the design stops happening, and something the design helps somebody recover from.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Decide the fixes and pause
-- For each failure class write the fix: content wording, a missing item, or search behaviour. Note which fixes need no search engine at all. Save the query list, the results and the empty-state design.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Queries are verbatim from participants and classified: [evidence reference]
-- Failures are classified by cause, not lumped together: [evidence reference]
-- The zero-results state is designed, not an error message: [evidence reference]
-- Filter combinations that return nothing are handled: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? Your two examples are different actions, not the same action described twice.
 
 </details>
+
+#### 2. Build the query list
+
+- Take at least twenty words and phrases your participants actually used, verbatim. Mark which are names of things, which are descriptions and which are questions.
+
+**You should end up with:** At least twenty queries in your participants’ own words, sorted into names, descriptions and questions.
+
+Worksheet fields for this step:
+
+- At least twenty phrases your participants used, word for word, one per line — Copy them exactly, including the vague and awkward ones. Your tidier wording is the thing being tested, not the answer.
+- How many are names of things, how many are descriptions, how many are questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Go through your interview notes with a pen and copy out every phrase somebody used for something they were looking for.
+
+Is it enough? Twenty lines exist and at least three of them are phrases you would never have written yourself.
+
+</details>
+
+#### 3. Run the queries by hand
+
+**See it first.** Made-up example. Running twenty queries by hand against a class provider’s pages, and blaming the wrong thing for the failures.
+
+- **What I did:** Twenty phrases taken from five interviews, looked for one by one in the content by hand. Eleven would have found the right thing.
+- **What I wrote first:** “Nine failures. The search needs synonyms.” One sentence, one fix, and it felt like a finding.
+- **Where it fell apart:** Three of the nine were about the cancellation rule, which existed only in a message the owner typed out by hand each time. No list of synonyms reaches a thing nobody has written down.
+- **The three questions I ended up asking:** Does the thing exist? If it exists, can anybody reach it? If they can reach it, do the words match? The first no is the cause.
+- **What that changed:** Four vocabulary gaps, three unreachable answers, two things that did not exist anywhere. Three separate fixes, and only one of them was about search.
+
+**The wrong turn:** The wrong turn is calling every failed query a search problem. It is the fix you can imagine buying, and it leaves the missing content exactly as missing as it was.
+
+**What it costs:** Placing nine failures one at a time takes an afternoon and gives you three pieces of work instead of one. What it buys is fixes that land on the actual fault.
+
+**Still unknown:** Still unknown: whether twenty phrases from five people cover the words other people would type. It is a starting list, not a vocabulary study.
+
+- For each query, search your content by hand and record whether the right thing would have been found. Classify every failure: vocabulary, unreachable content, or a thing that does not exist.
+
+**You should end up with:** Each query run by hand against your own content, with every failure given one cause.
+
+Worksheet fields for this step:
+
+- Query by query: would the right thing have been found? — Search your own content by hand, with find-in-page or by reading. Write found or not found beside each one.
+- Every failed query with its cause: a vocabulary gap, content nobody can reach, or a thing that does not exist
+- The failure you found hardest to place, and how you decided
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the first query and search your content for that exact phrase before you allow yourself to think of a better one.
+
+Is it enough? Every failed query has one cause beside it, and you could say why it is that cause and not the next one.
+
+</details>
+
+#### 4. Design the filters and the empty state
+
+- Define your filter categories from the structure and state what happens when a combination returns nothing. Then design the zero-results screen: the query shown, nearest matches, a non-search route, and a way to reach a person.
+
+**You should end up with:** Filter categories, what an empty combination does, and a zero-results screen that offers a next move.
+
+**Try it with help.** A supplied zero-results screen from another made-up product. It reads: “No results found for wheel throwing beginner. Check your spelling and try again.” Nothing else is on the screen.
+
+What is the most serious thing missing here?
+
+- **Any route that does not need the person to guess a different word — the structure to browse, or a person to ask.** — Everything on that screen sends them back to the box that just failed them. One route that works differently is what turns a dead end into a next move.
+- The spelling advice, which blames the person for the failure. — It reads badly and it comes second. Rewording that sentence still leaves them with only one thing to try.
+- A count of how many results came back, so they know it really is none. — They can already see it is none. A number changes nothing about what they can do next.
+- Nothing serious: the screen names the query, which is the main thing. — Naming the query is genuinely useful, and it is where the screen should start rather than stop. On its own it is a polite dead end.
+
+**Then:** Look at your own zero-results screen and count the routes forward that do not depend on typing another word. If the answer is none, add one.
+
+Worksheet fields for this step:
+
+- Your filter categories, taken from the structure, and the words on each one
+- What happens when a combination returns nothing, and how the person sees which choice caused it
+- Your zero-results screen: the query shown back, the nearest things you do have, a route that does not need the same words, and a way to reach a person — Sketch it if that is easier, then describe it here in four lines.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the zero-results screen first, while the failures from step 3 are still in front of you.
+
+Is it enough? Your empty screen offers at least two ways forward, and one of them does not involve typing.
+
+</details>
+
+#### 5. Decide the fixes and pause
+
+- For each failure class write the fix: content wording, a missing item, or search behaviour. Note which fixes need no search engine at all. Save the query list, the results and the empty-state design.
+
+**You should end up with:** A fix for each failure class, which ones need no search engine, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- The fix for each failure class: content wording, a missing item, or search behaviour
+- Which of your fixes need no search engine at all
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the vocabulary gaps first; they are usually fixed by adding the words people use to the page itself.
+
+Is it enough? Each of your three failure classes has its own fix, and the fixes are different from each other.
+
+</details>
+
+**Save and continue.** Saved for you: The query list, the hand-run results and the empty-state design save as you type, on this device first and then online. Kept outside the app: If you sketched the zero-results screen on paper, keep it in your own folder and describe it in the zero-results box in step 4. What your creator sees: Your creator reads the query list and the failure classes. Twenty real phrases with outcomes beside them says more than a search specification. Your next action: Open Your work and choose Ready for review. The last lesson of the module puts your labels under pressure and closes everything into a change note.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2271,70 +3380,192 @@ Four labels broke under test. “Change or cancel a booking” truncated to “C
 
 Test your labels against a longer translation, an Indic script, a narrow screen and a slow connection, repair what breaks, and publish a change note recording every structural decision, its evidence and what remains untested.
 
-**Where to work:** Padding out label text by hand in a text editor simulates expansion honestly enough for a label set, and any Chromium browser's developer tools throttle the connection and disable the cache with no account. If you cannot render an Indic script in your prototype, write the labels by hand on paper at the same size and record that the digital rendering is untested rather than claiming it passed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Padding out label text by hand in a text editor simulates expansion honestly enough for a label set, and any Chromium browser's developer tools throttle the connection and disable the cache with no account. If you cannot render an Indic script in your prototype, write the labels by hand on paper at the same size and record that the digital rendering is untested rather than claiming it passed.
 
 - Starting material: The whole module: inventory, labels, structure, sort and tree-test results, page outline and search work. This lesson closes it into something another person could pick up.
 - Create HaruCourse/Practice/m06-l12-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Stress-test the labels, then write the change note
+#### 1. Read the internationalization guidance
 
-Input artifact: The whole module: inventory, labels, structure, sort and tree-test results, page outline and search work. This lesson closes it into something another person could pick up.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A tested label set with recorded breakages under expansion, an Indic script, a narrow width and a throttled connection; the repairs made and re-checked; and a change note recording every decision, its evidence, the guesses and the open questions.
-
-## 1. Read the internationalization guidance
 - Read the assigned page on localization versus internationalization and at least two relevant requirements from the India guidelines. Write which of your labels you expect to break and why.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What room to grow means, two India requirements that apply to your labels, and which labels you expect to break.
 
-## 2. Test the labels
-- Render your label set with roughly a third more characters, and with one Indic-script version. Record every wrap, truncation, clipped character and overflow specifically.
+Worksheet fields for this step:
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- What room to grow means for a label set, and two requirements from the India guidelines that apply to yours
+- Which of your labels you expect to break, and why
 
-## 3. Test narrow and slow
-- View the labels at about 320 px, then load the page on a throttled slow connection with the cache disabled and record what appears first and whether it makes sense alone.
+<details>
+<summary>Help with this step</summary>
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+- **Expansion:** Translated text is usually longer than the English it came from, often by about a third. A label set built to the tightest fit has nowhere to put the extra.
+- **Matra:** The vowel mark written above or below a Devanagari letter. If the line height was set for Latin text the mark gets clipped, and the word changes.
 
-## 4. Repair and re-check
-- Fix what broke, preferring shorter distinct labels over truncation and giving rows room to grow. Re-run the two worst cases to confirm the repair.
+Stuck starting? Write your predictions before you test anything. Being wrong about them is the useful part.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## 5. Write the change note and pause
-- Write the note: each decision, its evidence, what you rejected, what is still a guess, what remains untested and what you would test next. Save it with the structure.
-
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
-
-## Review and handoff
-- Labels were tested under expansion and an Indic script: [evidence reference]
-- Narrow width and a throttled connection were both checked: [evidence reference]
-- Repairs favour clearer labels over truncation: [evidence reference]
-- The change note separates evidence from guesses: [evidence reference]
-What remains untested:
-Next action when I return:
-
-```
+Is it enough? You have named specific labels, not a general worry that long labels are risky.
 
 </details>
+
+#### 2. Test the labels
+
+**See it first.** Made-up example. Padding a nine-item label set by a third, writing “nothing broke”, and then actually looking.
+
+- **What I did:** I copied the nine labels into a text file and added about a third more characters to each, the way a Hindi version would run longer.
+- **What I wrote down:** “Nothing broke.” The menu ran down the side of the page, and every longer label simply wrapped onto a second line.
+- **What I had not looked at:** The same labels also sit on buttons and on the tabs across the top. On the button, “Change or cancel a booking” stopped at “Change or cancel a…”.
+- **The second thing I missed:** In Devanagari the menu wrapped without trouble, and one heading lost the marks above its letters, because the row height had been set for Latin text and nothing else.
+- **What the record says now:** Nine labels, four places each label appears, three named breaks: one label cut off on a button, one clipped heading, one row that no longer fits.
+
+**The wrong turn:** The wrong turn is testing a label in the one place you designed it and calling the whole set safe. A label breaks where it is tightest, which is almost never the menu.
+
+**What it costs:** Checking every place a label appears turns a ten-minute test into an hour. It is the difference between a note saying “fine” and a note somebody else can act on.
+
+**Still unknown:** Still unknown: whether a reader of Hindi finds the wrapped two-line version acceptable. Nobody who reads the script has looked at it.
+
+- Render your label set with roughly a third more characters, and with one Indic-script version. Record every wrap, truncation, clipped character and overflow specifically.
+
+**You should end up with:** Every break under a third more characters and under a second script, named one by one.
+
+Worksheet fields for this step:
+
+- With about a third more characters: every wrap, truncation and overflow, named one by one — Pad each label by hand in a text file. Write where it broke and in which place it appears, not that it broke.
+- In an Indic script: clipped marks, missing characters, rows that no longer fit
+- How you produced the second-script version (Rendered on screen / Written by hand on paper / Both)
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? List every place each label appears — menu, button, tab, heading — before you pad anything.
+
+Is it enough? Each break names the label, the place it appears, and what happened to it.
+
+</details>
+
+#### 3. Test narrow and slow
+
+- View the labels at about 320 px, then load the page on a throttled slow connection with the cache disabled and record what appears first and whether it makes sense alone.
+
+**You should end up with:** What broke at about 320 px, and what arrived first on a slow connection.
+
+**Try it with help.** Six break lines from somebody else’s label test, all made up for practice. She tested the same menu four ways. For each line, say which test found it: a length problem, a script problem, a width problem or a speed problem.
+
+- With a third more characters added, “Change or cancel a booking” stops at “Change or cancel a…” on the button.
+  - **length** — The label broke only once it got longer, and the button stayed the size it always was. More text in a fixed space is the length problem.
+  - script — No second script is involved. These are the same Latin letters, simply more of them.
+  - width — The screen was never narrowed. The container stayed put and the text grew into it.
+  - speed — Nothing here is about what arrives first. The whole label was present and did not fit.
+- In Devanagari the marks above two headings are cut off along the top edge of the row.
+  - length — The line is not longer, it is taller. Latin letters rarely ask for the space above that these marks need.
+  - **script** — That is the script problem exactly. A row height set for Latin text clips the marks, and a clipped mark changes the word.
+  - width — The clipping is at the top, not the side. Narrowing the screen would never have found it.
+  - speed — Everything had finished loading. What went wrong is the rendering itself.
+- At about 320 px the row of tabs runs off the right edge, and the last two cannot be seen or reached.
+  - length — The labels are the same length they have always been. It is the space around them that shrank.
+  - script — One script, rendering as it should. The row simply has less room than it needs.
+  - **width** — The narrow screen caused it, and losing the last two tabs entirely is worse than any wrap.
+  - speed — Loading is not involved. It looks the same on any connection.
+- On a throttled connection the page shows its headings for several seconds before any picture appears.
+  - length — No label changed size or wrapped. What changed is the order in which things arrived.
+  - script — The same script throughout, rendering as expected.
+  - width — The width was untouched. This is the same page at the same size, arriving slowly.
+  - **speed** — That is the speed test, and this one is worth keeping: the headings carried the page on their own while the rest was still coming.
+- The Hindi version of the menu runs about a third longer, and every item wraps onto two lines.
+  - **length** — The script rendered as it should and the only trouble is the extra characters. Longer text is a length problem, whichever language made it longer.
+  - script — Tempting, because a translation is what triggered it. Nothing is clipped or missing though, so the script itself is fine.
+  - width — The screen is the width it always was. The text grew rather than the space shrinking.
+  - speed — Loading plays no part. The whole menu is there and takes two lines per item.
+- Half the second-script labels come out as empty boxes, because the lettering in use has no characters for that script.
+  - length — Length has nothing to do with it. Even a one-word label comes out as boxes.
+  - **script** — Lettering that does not contain the script is the plainest script problem there is, and it stays invisible until somebody who reads it looks.
+  - width — The boxes appear at any width. Space is not the constraint.
+  - speed — It loaded. It simply does not have those letters in it.
+
+**Then:** Go back through your own break list and write one of the four words beside every line. Anything you cannot label is usually two problems written as one.
+
+**What to watch for:** Ask what you changed to cause it. More characters is length. A different script is script. Less room is width. A slower connection is speed. If two things changed at once, split the line in two.
+
+Worksheet fields for this step:
+
+- At about 320 px: every label that wrapped, was cut off, or ran off the edge
+- On a throttled connection with the cache off: what arrived first, and whether it made sense on its own — If your page lives only on paper, write that this one could not be run. Do not guess the answer.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Throttling:** Telling your browser to pretend the connection is slow. It sits in the browser’s own developer tools and needs no account and no code.
+- **Cut off:** Text ending in three dots because it did not fit. The end of a label is usually the part that told it apart from its neighbour.
+
+Stuck starting? Do the narrow case first: it needs nothing but a smaller window and takes ten minutes.
+
+Is it enough? Each line in both boxes names a label and what happened to it, and the slow test says plainly whether it was run.
+
+</details>
+
+#### 4. Repair and re-check
+
+- Fix what broke, preferring shorter distinct labels over truncation and giving rows room to grow. Re-run the two worst cases to confirm the repair.
+
+**You should end up with:** Repairs that keep the word telling each label apart, with the two worst cases run again.
+
+Worksheet fields for this step:
+
+- What you changed, label by label, and how the new label keeps the word that tells it apart
+- Any label that turned out to be two items
+- The two worst cases run again, and what happened
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Start with whatever was cut off, since that is the break that removes meaning rather than moving it.
+
+Is it enough? No repaired label depends on being cut short, and the two worst cases have a second result written down.
+
+</details>
+
+#### 5. Write the change note and pause
+
+- Write the note: each decision, its evidence, what you rejected, what is still a guess, what remains untested and what you would test next. Save it with the structure.
+
+**You should end up with:** The change note: each decision with its evidence, what you rejected, what is still a guess, and the repair the Check questions asked for.
+
+Worksheet fields for this step:
+
+- Every structural decision from this module, one line each, with the evidence beside it
+- What you considered and did not do, and why
+- What is still a guess, and what remains untested — Any decision whose evidence line is empty is a guess. So is any test you could not run, including the ones from lesson 10.
+- What you would test next, and with whom
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Work backwards through the module, one line per decision, and leave the evidence column empty where there is none.
+
+Is it enough? Every line either names its evidence or sits in the guesses, and somebody else could pick the structure up from this note alone.
+
+</details>
+
+**Save and continue.** Saved for you: The break lists, the repairs and the change note save as you type, on this device first and then online. Kept outside the app: Hand-written script versions and any screenshots stay in your own folder. Describe them in step 2 rather than uploading anything. What your creator sees: Your creator reads the change note first. The guesses and the untested list are what make the rest of it believable. Your next action: Open Your work and choose Ready for review. Module 7 turns this structure into task flows, and it starts from your change note.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 

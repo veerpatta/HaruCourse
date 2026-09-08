@@ -38,83 +38,175 @@ A booking screen taken from wireframe to interface settled six things: type scal
 
 Take one tested wireframe to interface fidelity and write what the added detail decided, what it hid, and which question can no longer be asked cheaply.
 
-**Where to work:** Paper and coloured pencils, or one local HTML file with a small stylesheet. A design tool is convenient and not required; hand-written SVG or plain CSS produces a real, exportable screen with no account.
+**Where to practise:** Draw the interface-fidelity screen beside its wireframe on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper and coloured pencils, or one local HTML file with a small stylesheet. A design tool is convenient and not required; hand-written SVG or plain CSS produces a real, exportable screen with no account.
 
 - Starting material: One tested m07 screen, its state table and your ranked problem list.
 - Create HaruCourse/Practice/m08-l01-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# What fidelity adds, and what it hides
+#### 1. Choose and read
 
-Input artifact: One tested m07 screen, its state table and your ranked problem list.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] One screen at interface fidelity, beside its wireframe
-- [ ] A list of what the added detail decided
-- [ ] A list of what the detail hid or made quiet
-- [ ] One question you can no longer ask cheaply, and how you would answer it
-
-## 1. Choose and read
 - Pick the m07 screen your paper test raised the most problems about.
 - Read the assigned component guidance for one component that appears on it.
 - Write in one sentence what this version of the screen is for.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The screen you chose, one sentence saying what this version is for, and what the component guidance specifies beyond appearance.
 
-## 2. Raise the fidelity
+Worksheet fields for this step:
+
+- The screen you picked, and the problem your paper test raised about it
+- What this version of the screen is for, in one sentence — Agreeing the content order is one purpose. Agreeing how it should be built is a different one. Say which.
+- The component guidance you read, and what it specifies beyond appearance — States, content rules, and when not to use it. Copy out only the parts that are not about how it looks.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Fidelity:** How settled a drawing is. A wireframe leaves type, colour and spacing open; an interface-fidelity screen closes them.
+- **Wireframe:** The rough version that shows what is on the screen and in what order, without deciding how any of it looks.
+
+Stuck starting? Pick the screen your paper test produced the most notes about, not the one you most want to draw.
+
+Is it enough? The purpose sentence names one decision this version exists to settle.
+
+</details>
+
+#### 2. Raise the fidelity
+
 - Apply your m03 type scale and spacing to the screen.
 - Use real content at its longest, not sample text.
 - Settle the button hierarchy, the price treatment and the state colours.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The screen redrawn with your m03 type scale and spacing, using the real labels at their longest.
 
-## 3. Compare with the wireframe
+Worksheet fields for this step:
+
+- The real strings you used, where each came from, and which one is the longest — Your m06 labelling table holds them. If a label is not written yet, write it now rather than drawing round a gap.
+- What you settled: type steps, spacing, button hierarchy, price treatment, state colours — Write the actual values you used, not that you “applied the scale”.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Type scale:** The short list of sizes you allow yourself, each with a job, from Module 3.
+- **Real content:** The actual words the product will show, at the longest they get. Sample text is always a comfortable length.
+
+Stuck starting? Write the longest real label first and draw the layout around it.
+
+Is it enough? Nothing on the sheet says “Lorem” or “Class name here”.
+
+</details>
+
+#### 3. Compare with the wireframe
+
+**See it first.** Made-up example. Writing the “what it decided” list for a class booking screen, and throwing the first version away.
+
+- **What I put beside each other:** The wireframe on the left, the new screen on the right, both at the same width so the differences were differences and not scale.
+- **My first list:** “It decided the colours and the type.” Two lines, and neither of them tells anybody anything they could argue with.
+- **Why that failed:** A decision is something the wireframe left genuinely open and this version has now closed. “Colours” is a category. “The price is grey and one step smaller than the class name” is a decision.
+- **What I wrote instead:** Six lines, one per difference: the type steps, the price treatment, which button is filled, the spacing rhythm, the image height, and the two state colours.
+- **What I nearly missed:** With real type sizes the availability line sat below the fold and read as grey supporting text. The paper test had shown people hunting for exactly that line.
+
+**The wrong turn:** The wrong turn is listing only what improved. The new screen is nicer to look at, so the list writes itself as praise and records nothing you could act on.
+
+**What it costs:** Keeping the wireframe on the table slows the session and invites people to reopen structure you thought was agreed. That is the point of it.
+
+**Still unknown:** Still unknown: whether the availability line is actually too quiet. One person looking at her own screen, knowing where it is, cannot tell.
+
 - Put both versions side by side.
 - List what the detail decided that the wireframe had left open.
 - List anything that became quiet, cramped or invisible.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Two lists: what the added detail decided, and what it made quiet.
 
-## 4. Test the craft claims
+Worksheet fields for this step:
+
+- What the added detail decided that the wireframe had left open — Every difference between the two sheets is a decision. Name each one as a decision, not as a change.
+- What became quiet, cramped or invisible
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Go difference by difference. For each, finish the sentence “the wireframe left this open, and now it says …”.
+
+Is it enough? Every line in the decided list names a value or a choice, not a category.
+
+</details>
+
+#### 4. Test the craft claims
+
 - View both in greyscale and mark anything you can no longer distinguish.
 - Look from arm's length and name the first three things you see.
 - Check the order matches what the task needs first.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The greyscale result, the first three things you see from arm’s length, and whether that order matches the task.
 
-## 5. Record the trade
+**Try it with help.** A supplied set of results from the same made-up booking screen. In greyscale the “Book a place” button and the “Add to shortlist” button become the same grey. From arm’s length the first three things seen are the photograph, the class name and the price. The availability line, which the paper test showed people hunting for, is not among them.
+
+Which of these is the most serious problem to repair first?
+
+- **The availability line missing from the first three, because the paper test showed that is what people look for.** — The check is measured against the task, not against the picture. Something people were observed hunting for should not need hunting.
+- The two buttons matching in greyscale, because the person cannot tell which action is the main one. — A real problem and second in line. It is repaired by weight or containment, while the missing availability line costs the person the decision itself.
+- The photograph arriving first, because an image should not outrank the content. — An image arriving first is often right on a details screen. Judge it by whether it delays the task, and here it does not.
+- All three equally, because both checks produced failures. — Both checks did produce findings, and a list with no order sends you to the easiest repair rather than the costliest problem.
+
+**Then:** Rank your own two results the same way: what stops the task, what slows it, what only looks wrong.
+
+Worksheet fields for this step:
+
+- In greyscale: what you can no longer tell apart — Photograph the sheet and turn the photograph greyscale on your phone. That is the whole test.
+- From arm’s length: the first three things you see, in order
+- Does that order match what the task needs first?
+
+<details>
+<summary>Help with this step</summary>
+
+- **Greyscale test:** Looking at the screen with the colour removed, to see whether anything you meant to rank still ranks.
+
+Stuck starting? Do the arm’s-length look first, before you know what you are hoping to see.
+
+Is it enough? Each note names a specific element, not “the hierarchy is weaker”.
+
+</details>
+
+#### 5. Record the trade
+
 - Write the question that is now expensive to reopen.
 - Write how you would answer it if you had to.
 - Save both versions together; do not discard the wireframe.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The question fidelity has made expensive, how you would answer it, where both versions live, and the repair the Check questions asked for.
 
-## Review and handoff
-- The screen uses real content and a stated type and spacing scale: [evidence reference]
-- What the detail decided is listed explicitly: [evidence reference]
-- What became quiet or hidden is identified: [evidence reference]
-- The now-expensive question is named with a way to answer it: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The question that is now expensive to reopen — Ask what you would now resist changing. The resistance names the question.
+- The cheapest way you could answer it if you had to
+- Where both versions live, the wireframe and this one — File names or “paper, in my folder”. Nothing is uploaded.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Look down your decided list and mark the one you would most resist undoing.
+
+Is it enough? The route to an answer is something you could do in an afternoon, on paper if necessary.
 
 </details>
+
+**Save and continue.** Saved for you: Your purpose sentence, both lists, the check results and the trade save as you type, on this device first and then online. Kept outside the app: The screen and the wireframe stay on paper or in your own folder. Write where they live; naming a file does not upload it. What your creator sees: Your creator reads the two lists and the expensive question. Share the two images the way you normally share files if you want him to see them side by side. Your next action: Open Your work and choose Ready for review. The next lesson audits this screen and every other one into a component inventory, so keep them all together.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -254,82 +346,192 @@ An audit of nine screens found five button variants: three were the same intent 
 
 Audit your own screens into a component inventory, merge the near-duplicates and record which merges lost a real distinction.
 
-**Where to work:** Print or sketch every screen, cut out each repeated element and group them on a table. Photograph the groups. This is faster than any tool and shows near-duplicates immediately.
+**Where to practise:** Draw the grouped cut-outs, the comparison rows and the merge table on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Print or sketch every screen, cut out each repeated element and group them on a table. Photograph the groups. This is faster than any tool and shows near-duplicates immediately.
 
 - Starting material: All your m07 screens, including error and empty states.
 - Create HaruCourse/Practice/m08-l02-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# The component inventory hiding in your screens
+#### 1. Read one specification
 
-Input artifact: All your m07 screens, including error and empty states.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A component inventory listing every repeated element and its job
-- [ ] A merge table: what was merged and what distinction it carried
-- [ ] A list of merges that lost a distinction, with what now carries it
-- [ ] Job-based names for every component you keep
-
-## 1. Read one specification
 - Read the assigned component page for one component you use.
 - Note what it specifies beyond appearance: states, content rules, when not to use it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What one real component specification says beyond how the component looks.
 
-## 2. Cut and group
+Worksheet fields for this step:
+
+- The component you read about, and what its entry specifies beyond appearance — States, content rules, and when not to use it. Those are the parts you cannot get by looking at a picture.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Component:** A repeated pattern with a job. Not any box you happened to draw twice.
+- **Inventory:** A list of what already exists in your screens, made before you decide what should exist.
+
+Stuck starting? Choose the entry for something you have actually drawn, then copy out only the lines that are not about appearance.
+
+Is it enough? You have at least one rule about when not to use it.
+
+</details>
+
+#### 2. Cut and group
+
 - Lay out every screen you have, including error and empty states.
 - Mark every element that appears more than once.
 - Group the marked elements by what they do, not how they look.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every element that appears more than once, grouped by job, with the exception states included.
 
-## 3. Find the near-duplicates
+Worksheet fields for this step:
+
+- How many screens are on the table, and which error, empty and loading states are among them
+- Every element that appears more than once, grouped by the job it does — Group by what it does, not how it looks. Two things that look alike and do different jobs belong in different groups.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Lay every screen out flat, error and empty ones included, and mark anything you have drawn twice.
+
+Is it enough? The exception states are in the pile rather than in a folder.
+
+</details>
+
+#### 3. Find the near-duplicates
+
+**See it first.** Made-up example. Comparing three card layouts on a table, and nearly merging away the one difference that meant something.
+
+- **What I had on the table:** Three class cards cut out of nine screens, laid side by side because they looked like the same thing drawn on different days.
+- **What I measured:** Two differed by 4px of padding and nothing else. The third had a lighter background and slightly greyer text.
+- **My first move:** I called all three the same card and merged them. It felt like the tidy answer, and the sheet looked better immediately.
+- **Why that was wrong:** The lighter card was the cancelled class. The background was not a drawing accident; it was the only thing carrying the status at a glance.
+- **What I did instead:** Merged the 4px pair into one card. Kept the cancelled one as the same card with a status variant, and wrote the loss line for a different merge where nothing survived.
+
+**The wrong turn:** The wrong turn is treating every difference as untidiness. Tidying is satisfying, it looks like system-building, and it removes meaning without asking anyone.
+
+**What it costs:** Keeping a variant costs you a second thing to specify and maintain. That is the price of the distinction still existing at all.
+
+**Still unknown:** Still unknown: whether the lighter background was doing the work or the word “Cancelled” was. Cut-outs on a table cannot tell you that.
+
 - Within each group, put visually similar items side by side.
 - Record the exact differences: size, weight, padding, colour.
 - Mark each difference accidental or meaningful.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each near-duplicate pair compared with the exact difference measured, and marked accidental or meaningful.
 
-## 4. Merge and record the losses
+**Try it with help.** Six pairs of elements from someone else’s screens, all made up for practice. For each pair, decide whether the two are the same component, genuinely different components, or one component with a variant.
+
+- Two “Book a place” buttons on different screens. Same colour, same weight, same words. One is 44px tall and one is 40px tall, and the two screens were drawn a week apart.
+  - **same component** — Same job, same words, and a four-pixel difference nobody could read anything from. That is one component drawn twice.
+  - different components — Nothing about the job differs. Two components means two jobs, and both of these book a class.
+  - one component with a variant — A variant exists to carry a difference on purpose. Four pixels of height carries nothing, so there is no variant to keep.
+- Three class cards that look different because one class has a two-word name, one has a nine-word name, and one has no photograph.
+  - **same component** — The differences come from the content, not from any decision you made. One card that copes with long names and a missing photograph.
+  - different components — They do the same job on the same list. What changed is what was poured into them.
+  - one component with a variant — A variant would mean you chose to treat these classes differently. Here the content simply differs in length.
+- Two class cards, identical except that the cancelled class sits on a lighter background with greyer text.
+  - same component — This is the merge that quietly costs you something. Merge them and the cancelled status rests entirely on a text label, which is exactly the trap this lesson is about.
+  - different components — The job is the same: show one class in a list. Only the status differs, which is what a variant is for.
+  - **one component with a variant** — Same job, and a deliberate difference carrying the status. Keep it as a variant and write down what the variant means.
+- Two message strips at the top of the page. Same width, same layout. One says the booking failed; the other says the place is held for ten minutes.
+  - same component — Merging them means one wording, one icon and one duration for both. A failure and a countdown do not want the same behaviour.
+  - different components — They sit in the same place and do the same job of announcing something. Splitting them into two components duplicates everything they share.
+  - **one component with a variant** — One message strip with variants for failure and progress. The variant is what carries the different icon, wording and duration.
+- Two things that look like the same filled button. One submits the booking. The other takes the person to a different page about class materials.
+  - same component — They look alike and that is all. One does something and one goes somewhere, which people need to be able to tell apart before they press.
+  - **different components** — Different jobs, so different components. A link that goes somewhere should not wear a button’s clothes.
+  - one component with a variant — A variant is for the same job under different conditions. Going somewhere is not a condition of submitting.
+- Two actions drawn with the same fill and weight. One books a place. The other cancels a booking and releases the place immediately, with no way back.
+  - same component — The drawing matches and the jobs do not. Merging them means the irreversible action inherits the emphasis of the everyday one.
+  - **different components** — A destructive action is its own job. It needs its own placement, its own spacing and its own confirmation, so it is its own component.
+  - one component with a variant — Tempting, and it puts something irreversible one small setting away from something routine. This lesson keeps it separate.
+
+**Then:** Now take your own hardest pair and give it one of these three labels. Write the exact difference on the line first, then decide.
+
+**What to watch for:** Look back at the two hardest, the cancelled card and the two booking buttons. The question is never how big the difference is. It is whether a person could tell anything from it. Four pixels of padding tells nobody anything. A lighter background on a cancelled class tells them the class is off.
+
+Worksheet fields for this step:
+
+- Each near-duplicate pair, with the exact difference measured — Put each pair on one line and measure it. “Slightly different” is not a finding; 4px is.
+- Each difference marked accidental or meaningful, and what tells you which
+
+<details>
+<summary>Help with this step</summary>
+
+- **Near-duplicate:** Two things that are almost the same. The gap between them is the finding, whether it turns out to be an accident or a meaning.
+- **Variant:** One component with a deliberate difference that carries something: a status, a size, a level of emphasis.
+
+Stuck starting? Put one pair side by side and measure the difference before you form an opinion about it.
+
+Is it enough? Every row names a number or a property, and no row says slightly, a bit or roughly.
+
+</details>
+
+#### 4. Merge and record the losses
+
 - Merge accidental variants into one component.
 - For each merge write what distinction the two carried.
 - Write what now carries that distinction, or that nothing does.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The merges you made, what each pair distinguished, and what carries that distinction now.
 
-## 5. Name by job
+Worksheet fields for this step:
+
+- What you merged into what
+- For each merge: the distinction the two versions carried, and what carries it now
+- Merges where nothing now carries the distinction — Write these down even when you think they are fine. They are the candidates for the next test.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? For each merge, ask what a person could tell before that they cannot tell now.
+
+Is it enough? Every merge has an answer, including the ones where the answer is “nothing was lost”.
+
+</details>
+
+#### 5. Name by job
+
 - Rename every component after the job it does.
 - Remove any name describing colour, size or shape.
 - Save the inventory, the merge table and the loss list.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Job-based names for every component you kept, the appearance words you removed, where the inventory lives, and the repair the Check questions asked for.
 
-## Review and handoff
-- Every repeated element is inventoried with its job: [evidence reference]
-- Near-duplicates are compared with exact differences recorded: [evidence reference]
-- Merges that lost a distinction are named: [evidence reference]
-- Components are named by job, not appearance: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Every component you kept, named after the job it does
+- The appearance words you removed from names
+- Where the inventory, the merge table and the loss list live — Photographs of the grouped cut-outs count. Note the file names; nothing is uploaded.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Rename the one with the most decorative name first; the rest follow easily.
+
+Is it enough? No name contains a colour, a size or a shape.
 
 </details>
+
+**Save and continue.** Saved for you: The inventory, the comparison rows, the merge table and the loss list save as you type, on this device first and then online. Kept outside the app: The cut-outs and their groups stay on your table. Photograph the groups and note the file names here; naming a file does not upload it. What your creator sees: Your creator reads the loss list first. It shows whether you reduced on purpose or tidied by instinct. Your next action: Open Your work and choose Ready for review. The next lesson takes the action components out of this inventory and specifies them properly.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -469,83 +671,195 @@ A screen had two filled buttons of equal weight — “Book a place” and “Ad
 
 Specify your action components at three levels of emphasis with measured target sizes and verb-first labels, and prove the hierarchy survives greyscale.
 
-**Where to work:** Draw the three levels at real size on paper, photograph them and convert the photograph to greyscale on your phone. Measure targets with a ruler against your own screen; no plugin or tool is needed.
+**Where to practise:** Draw the three action levels at real size and their greyscale photograph on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Draw the three levels at real size on paper, photograph them and convert the photograph to greyscale on your phone. Measure targets with a ruler against your own screen; no plugin or tool is needed.
 
 - Starting material: Your component inventory and the screens using its actions.
 - Create HaruCourse/Practice/m08-l03-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Actions: hierarchy, targets and labels
+#### 1. Read and audit
 
-Input artifact: Your component inventory and the screens using its actions.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Three action levels specified: primary, secondary and quiet
-- [ ] A greyscale test showing the hierarchy still readable
-- [ ] Measured target sizes and spacing for each level
-- [ ] Verb-first labels for every action on your screens
-
-## 1. Read and audit
 - Read the assigned button guidance and the law page on target size.
 - List every action across your screens and mark its current emphasis.
 - Mark any screen carrying more than one primary action.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every action across your screens with its current emphasis, and any screen carrying more than one main action.
 
-## 2. Specify three levels
+Worksheet fields for this step:
+
+- Each action, the screen it is on, and the emphasis it currently has — One action per line. Write them all down before judging any of them.
+- Screens carrying more than one main action
+
+<details>
+<summary>Help with this step</summary>
+
+- **Primary action:** The outcome the screen exists to produce. One per screen; two means the screen has two jobs.
+- **Target:** The area a finger can actually hit, which is usually larger than the part you drew.
+
+Stuck starting? Go screen by screen and write each action on its own line, including the ones you think are obvious.
+
+Is it enough? Every screen appears in the list, including the ones with only one action on them.
+
+</details>
+
+#### 2. Specify three levels
+
+**See it first.** Made-up example. Defining three levels of emphasis in five minutes, then finding out that colour had been doing all the work.
+
+- **What I wrote first:** Primary is the brand green, secondary is grey, quiet is a text link. It took five minutes and it looked like a specification.
+- **The test:** Drew the three at real size on paper, photographed the sheet, and turned the photograph greyscale on my phone.
+- **What the greyscale showed:** The green and the grey filled buttons became the same mid-grey. Two actions of equal weight, and no way to tell which one the screen was for.
+- **What I changed:** Primary: filled, semibold, full-width container. Secondary: outlined, medium weight, same height as primary. Quiet: no container, regular weight, one step smaller.
+- **What colour ended up doing:** Colour went on last and repeats the ranking rather than making it. Remove it now and the three levels still rank.
+
+**The wrong turn:** The wrong turn is settling the emphasis with colour, because it is the fastest control and it looks convincing on your own screen in good light.
+
+**What it costs:** Three levels separated by weight and containment look plainer than three colours. Plain is what survives greyscale, sunlight, and somebody else changing the palette next year.
+
+**Still unknown:** Still unknown: whether the outlined secondary reads as pressable to a person who has never used the product. That is a question for a test, not for the specification.
+
 - Define primary, secondary and quiet with weight, size and containment.
 - Make each level differ from the next in at least two properties.
 - Add colour last, as reinforcement rather than as the signal.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three levels defined by weight, size and containment, each differing from the next in at least two properties.
 
-## 3. Rewrite the labels
+**Try it with help.** Six actions from someone else’s screens, all made up for practice. Each line says what the screen is for, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one.
+
+- Class details screen, which exists so a person can decide about one class and take it. The action: “Book a place”.
+  - **primary** — It is the outcome the screen exists to produce, so it holds the fill and the weight. One screen, one job, one primary.
+  - secondary — A secondary action is one a person might reasonably take instead. Demote this and the screen is left with no job at all.
+  - quiet — Quiet is for actions that must exist and rarely apply. Booking is the reason the person opened the screen.
+- The same class details screen. The action: “Add to shortlist”, currently drawn as a second filled button of exactly the same weight as booking.
+  - primary — That is the trap the screen is already in. Two filled buttons of equal weight means two primaries, and a person can press one believing she pressed the other.
+  - **secondary** — It is a genuine alternative and it is not what the screen is for. Outline it, keep the height, and let booking hold the fill.
+  - quiet — Quiet would hide a choice people really make. Secondary keeps it available without competing with the booking.
+- The same class details screen. The action: “Share this class”, currently a small text link near the bottom.
+  - primary — Nobody opens a class page in order to share it, and raising it takes attention from the action that pays for the screen.
+  - secondary — Secondary is the alternative to the main outcome. Sharing is not an alternative to booking; it is an extra.
+  - **quiet** — It must exist, it is used rarely, and it costs nothing to leave unshouted. Quiet is exactly right.
+- Payment screen at the end of a booking, which exists to take the payment. The action: “Pay 45 pounds”.
+  - **primary** — The screen has one job and this is it. The label carries the amount so the person is not paying blind.
+  - secondary — Everything else on this screen exists to support the payment. Making the payment secondary leaves nothing for it to be secondary to.
+  - quiet — A quiet payment button is an unfinished booking. This is the outcome the whole flow was building towards.
+- The same payment screen. The action: “Change the date”, which sends the person back one step in the booking.
+  - primary — Going backwards is not what the screen is for, and a filled back-step competes with the payment for attention.
+  - **secondary** — It is the reasonable alternative to paying now, so it stays visible and outlined rather than filled.
+  - quiet — Quiet would bury a correction people need at exactly this moment, when they are checking the details for the last time.
+- Booking detail screen, which exists so a person can check a booking she already holds and change the date if she needs to. The action: “Cancel this booking”, which releases the place immediately.
+  - primary — Consequence is not emphasis. Making the irreversible action the loudest thing on the screen is how it gets pressed by mistake.
+  - secondary — Secondary sits beside the main action and invites comparison. A destructive action wants distance rather than a neighbouring position.
+  - **quiet** — It is rare and it is serious, and its safety comes from separation and a confirmation rather than from weight.
+
+**Then:** Now label every action on your own list from step 1 with one of these three. Any screen that ends up with two primaries goes on your list of screens to split.
+
+**What to watch for:** Look back at the two hardest, the shortlist button and the cancellation. Emphasis is not how much the action matters. It is whether the action is the outcome this screen exists to produce. Shortlisting matters and is not the outcome. Cancelling matters enormously and still is not the outcome of that screen.
+
+Worksheet fields for this step:
+
+- Primary: weight, size and containment
+- Secondary: weight, size and containment
+- Quiet: weight, size and containment
+- Which two properties separate each level from the next, and what colour is doing — If a level differs from its neighbour by colour alone, it is not yet a level.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Containment:** Whether the action sits inside a shape: filled, outlined, or nothing at all. A cheap signal that survives greyscale.
+- **Greyscale test:** Looking at the screen with the colour removed. Anything you can no longer rank was ranked by colour alone.
+
+Stuck starting? Write the quiet level first. It is the easiest to define, and the other two are then differences from it.
+
+Is it enough? Each level differs from its neighbour in two properties before colour is added.
+
+</details>
+
+#### 3. Rewrite the labels
+
 - Rewrite each label to lead with the verb of the person's outcome.
 - Replace every OK, Submit, Yes and No.
 - Pair destructive labels with an explicit safe alternative.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every action label rewritten to lead with the verb of the outcome, and every destructive label paired with a safe alternative.
 
-## 4. Measure and test
+Worksheet fields for this step:
+
+- Each label as it was, and as you rewrote it — Read each one aloud as the sentence “I want to …”. Rewrite any that does not finish it.
+- Each destructive label and the safe alternative beside it
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Start with any label that is OK, Submit, Yes or No, since those carry no outcome anywhere.
+
+Is it enough? Every label finishes the sentence “I want to …” on its own, without the question above it.
+
+</details>
+
+#### 4. Measure and test
+
 - Measure each target's size and the spacing around it at phone size.
 - Increase spacing between actions with sharply different outcomes.
 - View every screen in greyscale and mark anything you cannot rank.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Measured target sizes and spacing at phone size, the spacing you increased, and what greyscale left unrankable.
 
-## 5. Fix and record
+Worksheet fields for this step:
+
+- Measured size and surrounding spacing for each level, at phone size — Print or draw at real size and use a ruler. Estimates are the thing this step exists to replace.
+- Where you increased spacing, and between which two actions
+- In greyscale: which actions you can no longer rank
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Draw or print at real size and try each action with your thumb before reaching for the ruler.
+
+Is it enough? Every number came from measuring, and no line says “looks big enough”.
+
+</details>
+
+#### 5. Fix and record
+
 - Repair the worst greyscale failure by changing weight or containment.
 - Record any screen you split because it had two primaries.
 - Save the specification with the greyscale evidence.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The repaired greyscale failure, any screen you split, and the repair the Check questions asked for.
 
-## Review and handoff
-- Three levels differ in at least two properties each: [evidence reference]
-- One primary action per screen, or the screen was split: [evidence reference]
-- Labels lead with the verb of the outcome: [evidence reference]
-- Targets and spacing are measured, not estimated: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The worst greyscale failure, and the weight or containment change that repaired it
+- Any screen you split because it had two main actions, and the two jobs it was doing
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Change one property at a time and re-photograph, so you know which change did the work.
+
+Is it enough? You can name the property that fixed it, not just that it is fixed.
 
 </details>
+
+**Save and continue.** Saved for you: The action list, the three levels, the labels and the measurements save as you type, on this device first and then online. Kept outside the app: The real-size drawings and the greyscale photograph stay in your own folder. Note the file names here; naming a file does not upload it. What your creator sees: Your creator reads the greyscale photograph beside the specification. The photograph is the evidence; the specification is the claim. Your next action: Open Your work and choose Ready for review. The next lesson takes one form to production quality, and it reuses these three levels for its buttons.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -685,83 +999,176 @@ A booking form used placeholders as labels, validated the phone number on every 
 
 Take one form to production quality with persistent labels, inline help, field-level errors that preserve input, and a keyboard pass recorded honestly.
 
-**Where to work:** Specify the form on paper with the exact wording for label, help and error per field. To test behaviour, one local HTML file with labelled inputs shows tab order and error handling honestly with no framework or account.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Specify the form on paper with the exact wording for label, help and error per field. To test behaviour, one local HTML file with labelled inputs shows tab order and error handling honestly with no framework or account.
 
 - Starting material: One m07 form and the error wording you already wrote.
 - Create HaruCourse/Practice/m08-l04-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Inputs and forms at production quality
+#### 1. Read the requirements
 
-Input artifact: One m07 form and the error wording you already wrote.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A field-by-field table: label, help, error wording and accepted formats
-- [ ] A form specification where input survives a failed submission
-- [ ] A keyboard pass recording what worked and what could not be verified
-- [ ] One prevented error: help moved before the field that caused it
-
-## 1. Read the requirements
 - Read the assigned sections on labels, instructions, validation and notifications.
 - List the rules you will apply to every field.
 - Mark which rules your current form breaks.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The rules you will apply to every field, and the ones your form breaks today.
 
-## 2. Write the field table
+Worksheet fields for this step:
+
+- The rules you will apply to every field on this form — Labels, help text, error wording, accepted formats, and when validation runs. One rule per line.
+- Which of those rules your form breaks today, field by field
+
+<details>
+<summary>Help with this step</summary>
+
+- **Persistent label:** The name of the field, sitting above it and staying visible after the person has typed.
+- **Help text:** A short line under the label saying what you accept, shown before anyone makes the mistake.
+
+Stuck starting? Take one field of your own and write down every rule you would want applied to it. Those are your rules.
+
+Is it enough? Each rule is specific enough that you could tell whether a field obeys it.
+
+</details>
+
+#### 2. Write the field table
+
+**See it first.** Made-up example. Writing the field table for a booking form, starting from a version where the labels were placeholders.
+
+- **What I had:** Six boxes with grey text inside them: Name, Email, Phone, Date, Places, Notes. It looked calm and modern and I was pleased with it.
+- **What I wrote first:** A tidier version of the same thing. I kept the placeholders and spent the time on the spacing between the boxes.
+- **What broke it:** I filled the form in myself and looked away for a minute. Coming back, four boxes held text and not one of them said what the text was.
+- **The rule I took from it:** Every field keeps its name above it, always visible. The grey text either goes, or becomes help under the label where it can stay.
+- **What the row became:** Phone number as the label; “we send the class reminder here, any format is fine” as help; and an error that names the fix rather than restating the rule.
+
+**The wrong turn:** The tempting error is using the placeholder as the label. It is the neatest-looking form you will ever draw, and it erases every label exactly when someone reads back what they entered.
+
+**What it costs:** Persistent labels cost vertical space, so a phone form gets longer and people scroll more. Scrolling is cheaper than re-typing a form you cannot read back.
+
+**Still unknown:** Still unknown: whether the help line under the phone field is read at all. Only watching someone fill the form in would tell you that.
+
 - For each field write its label, its help text and its error wording.
 - State the input formats you will accept without complaint.
 - Delete any field you cannot justify by a decision it serves.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A row for each field: label, help text, error wording and the formats you accept.
 
-## 3. Move help before the mistake
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Field 1 · label, help text, error wording, and the formats you accept — If you cannot say what decision the field serves, delete the field instead of designing it.
+- Field 2 · label, help text, error wording, and the formats you accept
+- Field 3 · label, help text, error wording, and the formats you accept
+- Field 4 · label, help text, error wording, and the formats you accept
+- Field 5 · label, help text, error wording, and the formats you accept
+
+<details>
+<summary>Help with this step</summary>
+
+- **Placeholder:** The grey sample text inside an empty box. It disappears the moment the person types, which is when they need it most.
+
+Stuck starting? Write the label first, then the error, then ask what help would have prevented that error.
+
+Is it enough? Every row names a format you accept without complaint, not only the ones you reject.
+
+</details>
+
+#### 3. Move help before the mistake
+
 - Find each error caused by a rule people could not know.
 - Move that rule under the label as help text.
 - Keep the error message for the case where help was missed.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One rule moved from an error message into help text, and the error you kept anyway.
 
-## 4. Design the failure path
+Worksheet fields for this step:
+
+- The rule you moved out of an error message and into help under the label — Look for any error that teaches a rule the person had no way of knowing before they typed.
+- The error wording you kept for the person who missed the help
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read your error messages aloud and mark any that teach a rule for the first time.
+
+Is it enough? At least one rule now appears before the field rather than after the mistake.
+
+</details>
+
+#### 4. Design the failure path
+
 - Specify that all entered values are preserved after a failed submission.
 - Add a page-level summary that links to the first field with a problem.
 - State when validation runs: on leaving a field, or on submission.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The failure path written out: what survives, what the summary says, and when validation runs.
 
-## 5. Keyboard pass and record
+**Try it with help.** A supplied booking form, made up for practice. Someone fills in six fields, mistypes the card expiry date, and presses Book. The page reloads with a red banner reading “There was a problem. Please try again.” and all six fields empty.
+
+What is the most serious thing wrong with this screen?
+
+- **The six fields were cleared, so one mistake has cost the person five answers that were right.** — Losing the input is the only failure here that takes back work already done. The rest of this screen is irritating; this is the part that makes people give up and ring instead.
+- The banner does not say which field was wrong. — A real problem and the second one to fix. It costs the person a hunt through the form, while the cleared fields cost them the form itself.
+- The message is red, and some people cannot distinguish that. — Carrying meaning in colour alone is a genuine fault, and it matters more once the message actually says something. Here the wording is empty whatever colour it is.
+- The form validated on submission rather than as the person typed. — Validating on submission is a reasonable choice. Checking a half-typed expiry date on every keystroke tells someone they are wrong while they are still working.
+
+**Then:** Write your own failure path so every value survives, the summary names the first field with a problem, and the error sits at that field.
+
+Worksheet fields for this step:
+
+- What the screen shows one second after a failed submission, field by field — Write it as a description of the screen. Anything you do not describe will be decided by whoever builds it.
+- What the summary at the top of the form says, and where it takes the person
+- When validation runs on this form (When the person leaves a field / When the form is submitted / On leaving a field and again on submission / On every keystroke)
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Describe the screen one second after a failed submission, as though you were looking at it.
+
+Is it enough? Nothing a person typed is missing from your description.
+
+</details>
+
+#### 5. Keyboard pass and record
+
 - Tab through the form and note the order and whether focus is visible.
 - Record anything you could not verify without building it.
 - Save the field table and the keyboard notes.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A keyboard pass written down honestly, including what you could not check.
 
-## Review and handoff
-- Every field has a persistent label and stated accepted formats: [evidence reference]
-- Help appears before the mistake it prevents: [evidence reference]
-- Errors sit at the field and input survives failure: [evidence reference]
-- A keyboard pass is recorded, including what was not verified: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The order the keyboard moved through the form, and whether you could see where you were
+- What you could not check without a built version, stated plainly — A named gap is evidence. A guess written as a result is not.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+- **Keyboard pass:** Moving through a form using only the tab key and the arrow keys, writing down where you land and whether you can see it.
+- **Focus:** The place the keyboard is pointing at right now. If you cannot see it, you cannot use the form without a mouse.
+
+Stuck starting? If nothing of yours is built, tab through a booking form on a real site instead, note how it behaves, and then say plainly that yours is untested.
+
+Is it enough? Every keyboard claim is either something you did or something you have marked as unchecked.
 
 </details>
+
+**Save and continue.** Saved for you: The field table, the failure path and the keyboard notes save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. Keep your m07 flow beside you; the wording for each field comes from it. What your creator sees: Your creator reads the field table and the failure path. The failure path is the part an engineer would otherwise decide alone. Your next action: Open Your work and choose Ready for review. The next lesson takes the same product’s navigation to two widths.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -901,83 +1308,174 @@ A phone header held a logo, a search icon and a menu icon; the only route to “
 
 Specify the navigation for your product at narrow and wide widths, showing where you are, what else exists and how to get back, without hiding anything people need.
 
-**Where to work:** Draw both widths on paper at real size, then walk three tasks with a finger and count taps. A local HTML file with a list and a media query shows real collapse behaviour if you want to see it move.
+**Where to practise:** Draw both navigation layouts and the visibility rule on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Draw both widths on paper at real size, then walk three tasks with a finger and count taps. A local HTML file with a list and a media query shows real collapse behaviour if you want to see it move.
 
 - Starting material: Your m06 structure and one screen at interface fidelity.
 - Create HaruCourse/Practice/m08-l05-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Navigation components at two widths
+#### 1. Read and list destinations
 
-Input artifact: Your m06 structure and one screen at interface fidelity.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Navigation specified at narrow and wide widths
-- [ ] A current-location signal that survives greyscale
-- [ ] A stated rule for what stays visible and what collapses
-- [ ] Back behaviour defined for a task step and for a detail view
-
-## 1. Read and list destinations
 - Read the assigned responsive layout chapter.
 - List every destination in your structure and mark the two or three people need most.
 - Note which destinations came from the m06 tree test as high-traffic.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every destination listed, with the two or three people need most marked.
 
-## 2. Design the wide layout
+Worksheet fields for this step:
+
+- Every destination in your structure, with the two or three people need most marked — Take these from your m06 structure. Mark what people came for, not what the organisation would like them to see.
+- The evidence behind those marks, or a plain note that you are guessing
+
+<details>
+<summary>Help with this step</summary>
+
+- **Destination:** A place a person arrives at and recognises. A menu is not a destination; it is a door.
+- **Global navigation:** The small set of destinations available from every screen in the product.
+
+Stuck starting? Copy the top level of your m06 structure straight across, then add anything people reach by some other route.
+
+Is it enough? The marked set is two or three, and you have said whether the marks came from evidence or from judgement.
+
+</details>
+
+#### 2. Design the wide layout
+
+**See it first.** Made-up example. Marking the current section on a wide layout, after the first attempt used colour and nothing else.
+
+- **What I drew first:** Five words across the top with the current one in the brand green. It looked right on my screen, at my desk, in the afternoon.
+- **Why I liked it:** It was quiet. Adding weight or a line underneath felt heavy-handed next to something so clean.
+- **What broke it:** I photographed it and turned the photograph to greyscale on my phone. All five words were the same grey. There was no current section at all.
+- **What replaced it:** The current word in semibold with a thick rule beneath it, and the green kept as reinforcement rather than as the signal.
+- **The check I run now:** Greyscale first, colour second. A location signal that survives greyscale survives most other conditions as well.
+
+**The wrong turn:** The tempting error is letting colour be the location signal, because it is the tidiest one available. It is also the signal that fails in sunlight, in greyscale, and for a large number of readers.
+
+**What it costs:** Weight and a rule are louder than a colour change, so the header looks less delicate than you wanted. That is the price of a header that still works outside your own conditions.
+
+**Still unknown:** Still unknown: whether the rule underneath reads as “you are here” or as “this is a link”. Watching someone use it would settle it; nothing you can see from your own desk will.
+
 - Place global destinations, keeping the set short.
 - Add a current-location signal using weight or an underline, not colour alone.
 - Show where local navigation for a section appears.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A wide layout with a short set of destinations and a location signal that is not colour.
 
-## 3. Design the narrow layout
+Worksheet fields for this step:
+
+- The global destinations on the wide layout, in the order you placed them
+- How the current destination is signalled, using something other than colour
+- Where a section’s own navigation appears on the wide layout
+
+<details>
+<summary>Help with this step</summary>
+
+- **Greyscale:** The same picture with the colour taken out. A phone can do it to a photograph in a few taps.
+
+Stuck starting? Write the destination names down first and cut until there are five or fewer.
+
+Is it enough? You can tell which destination is current with the colour removed.
+
+</details>
+
+#### 3. Design the narrow layout
+
 - Decide what stays visible on a phone and write the rule you used.
 - Collapse only secondary destinations; keep the current task's action visible.
 - Show the menu's open state, not just the closed one.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A narrow layout with a written rule for what stays visible and what collapses.
 
-## 4. Define back
+**Try it with help.** A made-up phone header for a class booking product. It holds a logo, a search icon and a menu icon. Behind the menu sit Find a class, My bookings, Change or cancel a booking, About us, Careers and Terms. Most people using this product are coming back to check a booking they already made.
+
+What should come out from behind the menu?
+
+- **My bookings, because returning to a booking they already hold is what most people came to do.** — The visible set is decided by what people arrived for, and here that is the existing booking. Careers and Terms can stay behind the icon because almost nobody arrives wanting them.
+- Nothing: the icon is understood, so the menu costs almost nothing. — Recognising the icon was never the problem. People do not open a menu to find out what a product offers, so anything essential behind it is effectively gone for anyone who does not already know it is there.
+- Everything, since hiding navigation is always a mistake. — Six visible destinations on a phone header leave no room for the screen itself. A narrow layout needs priority, which means some things do go behind the icon.
+- About us, because it explains the product to newcomers. — It reads as the generous choice and it serves almost nobody. The header is small enough that promoting About us means demoting something people arrived to use.
+
+**Then:** Apply the same test to your own list: promote what people came for, then write down what the menu now costs everything else.
+
+Worksheet fields for this step:
+
+- The rule: what stays visible on a phone, and why those and not others — Write it as a sentence beginning “on a phone, these stay visible because …”.
+- What you put behind the menu, and what that costs someone who does not know it is there
+- What the open menu shows, including how a person closes it
+
+<details>
+<summary>Help with this step</summary>
+
+- **Collapse:** Moving something out of sight behind a control, usually an icon, when the screen is narrow.
+
+Stuck starting? Start from the destinations you marked in step 1 and put those on the header first.
+
+Is it enough? The rule is a sentence someone else could apply to a destination you have not thought of.
+
+</details>
+
+#### 4. Define back
+
 - Write what back does inside a multi-step task.
 - Write what back does from a detail view, including filters and scroll position.
 - Check the design still works if the browser's back button is used instead.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What back does inside a task, from a detail view, and when the browser’s own back is used.
 
-## 5. Test and record
+Worksheet fields for this step:
+
+- What back does inside a multi-step task
+- What back does from a detail view, including filters and scroll position
+- What happens if the browser’s own back button is used instead of yours
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Walk your own flow: go into a detail view, come back, and write down everything you lost on the way.
+
+Is it enough? Each behaviour says what is preserved, not only which screen appears.
+
+</details>
+
+#### 5. Test and record
+
 - Walk three tasks at narrow width and count taps to each.
 - View both layouts in greyscale and confirm the location signal survives.
 - Save both layouts with the visibility rule and back behaviour.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three tasks walked at narrow width, the greyscale result, and the repair the Check questions asked for.
 
-## Review and handoff
-- Navigation answers where am I, what else, how back: [evidence reference]
-- The location signal survives greyscale: [evidence reference]
-- A visibility rule for narrow screens is stated: [evidence reference]
-- Back is defined for a task step and a detail view: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Three tasks walked at narrow width, and the taps each one took
+- Whether you could still tell where you were with the colour removed
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Draw the narrow layout at real size, then walk each task with a finger and count as you go.
+
+Is it enough? Each task has a number beside it, and you know which of the three was worst.
 
 </details>
+
+**Save and continue.** Saved for you: The destination list, the visibility rule and the back behaviours save as you type, on this device first and then online. Kept outside the app: The two layouts stay on paper or in your own folder. Write down where they live; naming a file does not upload it. What your creator sees: Your creator reads the visibility rule and the back behaviours. The rule is the decision; the drawings only show it. Your next action: Open Your work and choose Ready for review. The next lesson takes the lists and tables inside these screens down to phone width.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1117,83 +1615,175 @@ A class list showed eight columns on desktop and scrolled sideways on a phone. R
 
 Design one list and one table for narrow and wide widths, choosing what each row must show, how it is sorted and what happens when the data is long, empty or unusually large.
 
-**Where to work:** Paper and your real data. Write out the ten worst real rows by hand at phone width; the layout problems appear immediately and cost nothing to fix at that stage.
+**Where to practise:** Draw the list at both widths and the hard-case rows on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper and your real data. Write out the ten worst real rows by hand at phone width; the layout problems appear immediately and cost nothing to fix at that stage.
 
 - Starting material: Your m07 result item and a set of real, messy example data.
 - Create HaruCourse/Practice/m08-l06-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Lists, tables and dense data on a small screen
+#### 1. Decide the row content
 
-Input artifact: Your m07 result item and a set of real, messy example data.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Cutting a class list row from eight things to four, after the first version tried to save people a tap.
 
-## Output checklist
-- [ ] A list row specification naming the compared attributes and the omissions
-- [ ] A default sort with the reason stated on screen
-- [ ] A table transformed to records at narrow width
-- [ ] Handling for the longest value, the missing value and the empty list
+- **What I had:** Eight columns in a desktop table: name, teacher, day, time, level, place, price, remaining places.
+- **What I did first:** Kept all eight on the phone and let the table scroll sideways. It felt generous, as though I were hiding nothing from anybody.
+- **What that actually did:** At phone width you see three columns at a time, and never the class name alongside them. Every value had lost the thing it belonged to.
+- **The question that fixed it:** Which of these does someone compare two classes on? Day and time, price, where it is, and whether places are left. Not the level, not the teacher.
+- **What the row became:** Four attributes, the rest moved to the detail view, and a written note of what I removed so I can put something back if I was wrong.
 
-## 1. Decide the row content
+**The wrong turn:** The tempting error is keeping everything, because removing a column feels like withholding. Sideways scrolling is how that decision gets postponed instead of made.
+
+**What it costs:** Four attributes means anyone comparing on the teacher now has to open two detail views. That is a real cost, and it is smaller than nobody being able to compare on anything.
+
+**Still unknown:** Still unknown: whether the level belongs in the row after all. Two sessions is thin evidence, and the omission list is what makes it cheap to change my mind.
+
 - List the attributes your m05 participants compared on.
 - Put those in the row and move everything else to the detail view.
 - Write what you deliberately omitted and why.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The two to four attributes your row carries, each with the reason it earned the space.
 
-## 2. Choose and show the sort
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Attribute 1 · what it is, and the evidence that people compare on it — If your evidence is “it seemed useful”, write that. A guess you have labelled is worth more than a guess you have dressed up.
+- Attribute 2 · what it is, and the evidence that people compare on it
+- Attribute 3 · what it is, and the evidence that people compare on it
+- Attribute 4 · what it is, and the evidence that people compare on it
+
+<details>
+<summary>Help with this step</summary>
+
+- **Row:** One line in a list standing for one thing: a class, an order, a person.
+- **Detail view:** The screen you reach by choosing a row. Everything you left out of the row lives there.
+
+Stuck starting? Write down the attributes people named while choosing, before you look at your table.
+
+Is it enough? Every attribute has a reason beside it, even when the reason is “I am guessing”.
+
+</details>
+
+#### 2. Choose and show the sort
+
 - Choose a default sort that serves the common task.
 - State the sort visibly above the list.
 - Decide which alternative sorts exist, if any, and where they live.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What you left out, the default sort, and the words that show that sort on screen.
 
-## 3. Transform the table
+Worksheet fields for this step:
+
+- What you deliberately left out of the row, and where it went instead
+- The default sort, and the task it serves
+- The words that appear above the list saying how it is sorted
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the sort as a sentence the reader will see, such as “Soonest first”.
+
+Is it enough? The sort is justified by a task, not by the order the data happened to arrive in.
+
+</details>
+
+#### 3. Transform the table
+
 - Draw the table at wide width with numbers right-aligned and text left.
 - Redraw each row as a record at narrow width with a heading and labelled fields.
 - Keep the two most-compared fields visible in both forms.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The table at wide width, and one row redrawn as a record at narrow width.
 
-## 4. Break it with real data
+Worksheet fields for this step:
+
+- The wide table: the columns in order, and which of them are aligned right
+- One row redrawn as a record: the heading, then each field with its label — The two things people compare on most should be findable in both forms.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Record:** A small block standing for one row: an identifying heading, then each remaining value with its own label beneath it.
+
+Stuck starting? Redraw one row as a block before you redraw the whole list.
+
+Is it enough? Every value in the record sits next to a label saying what it is.
+
+</details>
+
+#### 4. Break it with real data
+
 - Lay out the longest real name and the largest real number.
 - Show a missing value as words rather than an empty cell.
 - Design the empty list, saying what will appear and how to start.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The longest name, the largest number, a worded missing value and a designed empty list.
 
-## 5. Check and record
+**Try it with help.** A made-up class list at phone width. Three rows break. One class is called “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”. One has no price recorded, so the cell is blank. One has no places left, shown as “0”.
+
+Which of these should you deal with first, and why?
+
+- **The class with no places left showing “0”, because a number invites the person to try to book it.** — A zero reads as a value among other values, so people tap it and meet a dead end. Words such as “Full, see other dates” stop the wasted trip and offer the next move.
+- The very long class name, because it wraps to four lines and pulls the row apart. — A real problem and the second one to work on. A tall row is untidy; a full class that looks bookable sends someone down a path ending in nothing.
+- The missing price, because a blank cell looks like broken data. — A blank does look broken, and “price on request” is worth writing. It leaves the person uncertain, while the zero actively sends them the wrong way.
+- None of them: these are rare rows and the ordinary ones matter more. — The ordinary rows were never going to break. Rare rows are exactly where a list stops working, and on paper they cost almost nothing to fix.
+
+**Then:** Work through your own hard cases in the same order: what sends someone the wrong way, what leaves them uncertain, what merely looks untidy.
+
+Worksheet fields for this step:
+
+- The longest real name and the largest real number at phone width, and what broke
+- What a missing value says, in words rather than a blank
+- The empty list: what it says, and the one action that starts it
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take your ten worst real rows and lay them out at phone width before you touch the tidy ones.
+
+Is it enough? Nothing in the hard cases is represented by an empty space.
+
+</details>
+
+#### 5. Check and record
+
 - Read the narrow version aloud as records; confirm each field is identifiable.
 - Record any case you could not resolve without more data.
 - Save both widths with the omission list and sort rule.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The narrow version read back as records, anything unresolved, and the repair the Check questions asked for.
 
-## Review and handoff
-- Row content is traced to observed comparison behaviour: [evidence reference]
-- The default sort is chosen and shown: [evidence reference]
-- The narrow form is records, not a shrunken table: [evidence reference]
-- Longest, missing and empty cases are designed: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Reading the narrow version aloud as records: any value you could not name
+- Any case you could not settle without more data
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read one record aloud to yourself, value by value, and stop wherever you cannot say what a value is.
+
+Is it enough? Every value in the record can be named without looking at the wide table.
 
 </details>
+
+**Save and continue.** Saved for you: The row attributes, the sort, the omissions and the hard cases save as you type, on this device first and then online. Kept outside the app: The two layouts stay on paper or in your own folder. Keep the real data you used beside them; the worst rows are the evidence. What your creator sees: Your creator reads the row attributes with their reasons and the hard cases. The omission list shows the decision more clearly than the layout does. Your next action: Open Your work and choose Ready for review. The next lesson decides which interruptions in your product deserve a modal.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1333,83 +1923,195 @@ Three interruptions were reviewed. Cancelling a booking: kept as a confirmation,
 
 Decide for three interruptions in your product whether a modal is justified, design the two that are, and record what the rejected one became instead.
 
-**Where to work:** Paper screens plus a written decision table. If you want to feel the focus trap, a local HTML file with a dialog element shows how dismissal and the escape key behave with no framework.
+**Where to practise:** Draw the two interruptions you keep and what the third became on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper screens plus a written decision table. If you want to feel the focus trap, a local HTML file with a dialog element shows how dismissal and the escape key behave with no framework.
 
 - Starting material: Your m07 exception table and flow.
 - Create HaruCourse/Practice/m08-l07-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Interruptions: modals, sheets and when not to use one
+#### 1. Read and list
 
-Input artifact: Your m07 exception table and flow.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A decision table for three interruptions with the reason for each
-- [ ] Two designed interruptions with dismissal and a safe default
-- [ ] One interruption removed, with what replaced it
-- [ ] A stated rule for when your product uses a modal
-
-## 1. Read and list
 - Read the assigned sections on error prevention and user control.
 - List every point in your flow where the product interrupts.
 - Mark what each interruption prevents, if anything.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A list of every interruption in your flow, each with what it prevents or a plain note that it prevents nothing.
 
-## 2. Decide each one
+Worksheet fields for this step:
+
+- Every point in your flow where the product interrupts — Walk your m07 flow and note each dialogue, prompt, banner and confirmation, including any you copied from another product without deciding.
+- For each interruption: what it prevents, or nothing
+
+<details>
+<summary>Help with this step</summary>
+
+- **Interruption:** Anything that stops the person mid-task to ask or tell them something: a dialogue, a prompt, a banner, a confirmation.
+- **Modal:** A box that covers the screen and must be answered or closed before anything else can be done. It holds the keyboard as well as the eye.
+
+Stuck starting? Walk your own flow slowly and write down every moment something appears that you did not ask for.
+
+Is it enough? At least one line says the interruption prevents nothing. Most flows have one.
+
+</details>
+
+#### 2. Decide each one
+
+**See it first.** Made-up example. Deciding three interruptions in a class-booking product, and getting the easiest one wrong first.
+
+- **What I had:** Three interruptions: a confirmation for cancelling a booking, a confirmation for removing a saved class, and a newsletter prompt over the payment step.
+- **What I wrote first:** Keep all three as dialogues, with firmer wording. A dialogue felt decisive, and firm wording felt like care.
+- **Why the second one failed:** Removing a saved class loses nothing. The dialogue asked a question whose answer was always the same, so people stopped reading it, and it protected nobody.
+- **What replaced it:** The class is removed at once and a line at the top of the list says “Removed. Put it back” for ten seconds. The mistake is now repaired by the person who made it.
+- **What happened to the third:** The newsletter prompt prevented nothing and stole the payment step. It moved to the confirmation screen as a quiet line, and the reason went in writing.
+
+**The wrong turn:** The wrong turn is reaching for a dialogue because it feels decisive. It stops the person, takes their place in the task, and buys protection only when something truly cannot be recovered.
+
+**What it costs:** Undo costs you the comfort of having asked. If the ten seconds pass unnoticed the person has to redo the work, and that is a smaller cost than a question nobody reads.
+
+**Still unknown:** Still unknown: whether ten seconds is long enough for someone who looked away. That needs a test with a person, and no decision table will settle it.
+
 - For each, choose modal, inline, undo or remove.
 - Justify every modal by naming the loss it prevents.
 - Replace any confirmation for a reversible action with undo.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three interruptions, each with a choice — modal, inline, undo or remove — and the loss that justifies it.
 
-## 3. Design the two that stay
+**Try it with help.** Six interruptions from a made-up class-booking product. For each one, decide whether it needs a modal that blocks everything, whether an inline message would do, or whether it deserves a screen of its own.
+
+- Cancelling a booked place. The place is released to someone else immediately and cannot be got back.
+  - **modal** — The loss is immediate and cannot be recovered, which is the one case where stopping the person is worth it. Say what will be lost in the wording.
+  - inline message — An inline message tells someone after the fact, and there is no after the fact here. Once the place is gone it is gone.
+  - own screen — A whole screen is more ceremony than one question needs, and it takes the person out of the list they were working in.
+- Removing a class from a saved list. It can be added again in one tap.
+  - modal — A question with only one sensible answer gets dismissed without reading, and that habit spreads to the dialogues that do matter.
+  - **inline message** — Nothing is lost permanently, so the repair belongs after the action: remove it, then offer to put it back for a few seconds.
+  - own screen — A screen for a one-tap change turns something small into a journey.
+- New booking terms, four paragraphs long, which must be read and accepted before booking again.
+  - modal — A modal covers the screen and holds the keyboard, so it is the worst place for anything a person needs to read carefully or compare with something else.
+  - inline message — A line in the page cannot carry four paragraphs, and accepting them needs a moment of its own.
+  - **own screen** — Long reference text needs room, scrolling and a way back. A screen gives all three, and the person can leave and return.
+- The place held during payment has ninety seconds left before it is released.
+  - modal — Urgency is exactly what tempts you here, and a modal takes the card field away at the moment the person is typing into it.
+  - **inline message** — It belongs at the top of the payment step, staying put and counting down, so it can be read without leaving the task.
+  - own screen — Moving to another screen loses the payment step, which is the thing the deadline is about.
+- Replacing the saved payment card, which needs a card number, an expiry date and a billing address.
+  - modal — Three fields inside a box that traps the keyboard is a small form in a bad room, and the error messages then have nowhere to sit.
+  - inline message — A message tells someone something. It does not collect three fields and check them.
+  - **own screen** — This is a task, not an interruption. A screen gives it space, room for errors and a route back.
+- Leaving a half-written review. The text is not saved anywhere and will be gone.
+  - **modal** — Losing the person’s work is worse than stopping them, which is the whole test. Make carrying on writing the safe default.
+  - inline message — By the time a message could appear the writing is already gone, and nothing can put it back.
+  - own screen — The person is on their way out. Sending them somewhere new is not a way of keeping what they wrote.
+
+**Then:** Now decide your own three the same way, and write the loss beside each one.
+
+**What to watch for:** Look at the two hardest lines: the expiring hold and the new terms. Urgency pulled towards a modal and long reference text pulled towards one too, and both were wrong for the same reason. A modal takes away the screen and the keyboard. That is worth paying only when something unrecoverable is about to be lost, never for reading and never for waiting.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Interruption 1 · what it is, the choice you made, and the loss that justifies it — A modal is only justified when losing the person’s work is worse than stopping them.
+- Interruption 2 · what it is, the choice you made, and the loss that justifies it
+- Interruption 3 · what it is, the choice you made, and the loss that justifies it
+
+<details>
+<summary>Help with this step</summary>
+
+- **Undo:** The action happens, and a message offers to put it back for a stated time. It protects the person who has already made the mistake.
+
+Stuck starting? Take the interruption you are least sure about first, and finish the sentence “without this, the person could lose …”.
+
+Is it enough? Every modal you kept names a loss you could not recover. Everything else has become inline, undo or nothing.
+
+</details>
+
+#### 3. Design the two that stay
+
 - Write the exact wording, naming what will be lost.
 - Make the safe option the default and label both options with verbs.
 - Specify dismissal: a visible control, the escape key, and unchanged work behind.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Both surviving interruptions written out: exact wording, two verb labels, the safe default, and how each one is left.
 
-## 4. Design the replacement
+Worksheet fields for this step:
+
+- First interruption: the exact wording, both option labels, and which one is the safe default — Name what will be lost in the words themselves. Label both options with verbs, so neither of them is “OK”.
+- Second interruption: the exact wording, both option labels, and which one is the safe default
+- How each one is left: the visible control, the escape key, and what happens to the work behind it
+
+<details>
+<summary>Help with this step</summary>
+
+- **Safe default:** The option that changes nothing, placed and worded so that a person answering quickly keeps their work.
+- **Focus:** Where the keyboard is pointing. A modal holds it, which is why nothing behind can be reached until the modal closes.
+
+Stuck starting? Write the sentence naming the loss first. The two option labels come out of it.
+
+Is it enough? Neither option is “OK”, and leaving the box by any route leaves the work behind it untouched.
+
+</details>
+
+#### 4. Design the replacement
+
 - Take the interruption you rejected and design what it becomes.
 - Place any reference content on the page rather than in a dialogue.
 - Check that no two interruptions can now appear at once.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The rejected interruption redesigned as something that does not stop the person, plus a check that no two interruptions can collide.
 
-## 5. Write the rule
+Worksheet fields for this step:
+
+- The interruption you rejected, and the exact thing that replaces it — An undo message, a line on the page, or a screen of its own. Write the wording, not the intention.
+- Which two interruptions could have appeared at once, and what you changed so they cannot
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask where the person would be willing to meet this. Usually it is after the task rather than during it.
+
+Is it enough? The replacement is written as wording on a screen, not as an intention.
+
+</details>
+
+#### 5. Write the rule
+
 - Write one sentence stating when your product uses a modal.
 - Record the rejected interruption and why, so it is not reproposed blindly.
 - Save the decision table and both designs.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A one-sentence rule for using a modal, the rejected interruption on record, where the work lives, and the repair the Check questions asked for.
 
-## Review and handoff
-- Every interruption is justified by the loss it prevents: [evidence reference]
-- Reversible actions use undo rather than confirmation: [evidence reference]
-- Each remaining modal has dismissal and a safe default: [evidence reference]
-- A rule for using modals is written down: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- One sentence saying when this product uses a modal — Test the sentence against the interruption you rejected. If the rule would let it back in, the rule is too weak.
+- The rejected interruption and why, written so nobody proposes it again next month
+- Where the screens and the decision table live — File names or “paper, in my folder”. Nothing is uploaded.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the rule, then read it back against the interruption you rejected.
+
+Is it enough? The rule would not let the interruption you removed back in.
 
 </details>
+
+**Save and continue.** Saved for you: Your interruption list, the three decisions and both designs save as you type, on this device first and then online. Kept outside the app: The screens stay on paper or in your own folder. Note the file name in the last step; naming a file does not upload it. What your creator sees: Your creator reads the decision table and the rejected interruption. The one you removed shows more judgement than the two you styled. Your next action: Open Your work and choose Ready for review. The next lesson designs the messages this product uses to say what just happened.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1549,83 +2251,174 @@ The product had one toast style for everything. Rebuilt into four: a quiet inlin
 
 Design your product's system messages — success, progress, warning and failure — deciding for each where it appears, how long it stays and whether it needs an action.
 
-**Where to work:** Write all four messages out on paper at the position they will appear on the screen sketch. Read each aloud to someone and ask what they would do next; that is the whole test.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Write all four messages out on paper at the position they will appear on the screen sketch. Read each aloud to someone and ask what they would do next; that is the whole test.
 
 - Starting material: Your m07 message wording and state tables.
 - Create HaruCourse/Practice/m08-l08-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Telling people what happened
+#### 1. Collect what you already wrote
 
-Input artifact: Your m07 message wording and state tables.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Four message types specified: success, progress, warning and failure
-- [ ] Placement and duration rules for each type
-- [ ] Wording that carries meaning without colour
-- [ ] A list of which messages require an action and which do not
-
-## 1. Collect what you already wrote
 - Gather every message from your m07 exception table and state specifications.
 - Sort them into success, progress, warning and failure.
 - Mark which concern money, time or lost work.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every message you already have, sorted into the four types, with the consequential ones marked.
 
-## 2. Decide placement and duration
+Worksheet fields for this step:
+
+- Every message from your m07 exception table and state specifications, sorted into success, progress, warning and failure — Copy them across word for word. Rewriting them now hides how thin some of them are.
+- Which of them concern money, a deadline or work that could be lost
+
+<details>
+<summary>Help with this step</summary>
+
+- **Toast:** A small message that appears in a corner and fades on its own. It reaches only someone who was looking at that corner at that moment.
+- **Persistent message:** One that stays until something clears it: the person acts, or the situation it describes ends.
+
+Stuck starting? Copy the messages across word for word before you decide anything about them.
+
+Is it enough? Every message sits in one of the four types, and the money, deadline and lost-work ones are marked.
+
+</details>
+
+#### 2. Decide placement and duration
+
+**See it first.** Made-up example. One toast style used for everything in a class-booking product, and the message that was never delivered.
+
+- **What the product did:** Every message was a small dark box in the bottom-left corner that faded after four seconds. It looked consistent and calm.
+- **What I wrote first:** Keep the one style and improve the wording. Consistency felt like a quality in itself.
+- **Where it broke:** “Your place is held for 10 minutes” appeared while the person was looking at the card field, four inches away. It faded. The deadline existed and nobody had been told.
+- **What I changed:** That message became a banner at the top of the payment step showing the time left, staying until the payment finished or the hold ended.
+- **What stayed a toast:** “Draft saved.” Nothing depends on seeing it, and it happens often enough that a persistent message would turn into noise.
+
+**The wrong turn:** The wrong turn is choosing duration by style rather than by consequence. One treatment for everything looks tidy, and it quietly drops the messages that mattered most.
+
+**What it costs:** Persistent messages take space and have to be cleared, so the screen is busier and someone has to decide what clears each one. That is the price of the message actually arriving.
+
+**Still unknown:** Still unknown: whether four seconds is enough for the routine ones. Reading aloud to one person will not settle it, and lengthening it costs almost nothing if you doubt it.
+
 - Place each message where the change it describes happened.
 - Set duration by consequence: fading only for routine, reversible confirmations.
 - Make anything about money or lost work persist until resolved.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Four types specified: where each appears, how long it stays and what clears it.
 
-## 3. Rewrite for meaning without colour
+**Try it with help.** Three supplied messages from a made-up booking product, all shown the same way: a small box in the bottom-left corner that fades after four seconds. A is “Draft saved.” B is “Your place is held for 10 minutes.” C is “Payment failed. No money has been taken.”
+
+Which of these is still delivered by a box that fades after four seconds?
+
+- **A only. Nothing depends on the person seeing it, and it will happen again.** — A missed save note costs nothing, so the quiet treatment fits. B carries a deadline and C carries money, and both are gone before someone looking at the form could read them.
+- B and C as well. Four seconds is long enough to read a short sentence. — Four seconds is long enough to read one, and only if the person happens to be looking at that corner. During payment they are looking at the card field.
+- None of them. A message that fades has not been delivered at all. — The rule is about consequence rather than fading. For a saved draft, quiet and repeated is the right treatment.
+- C only. People watch for failures. — People watch for a failure once they suspect one. The failure arrives before the suspicion, and a fading box is how someone ends up unsure whether they have been charged.
+
+**Then:** Go back through your own four rows and mark any message that would be gone before it was read.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Success · where it appears, how long it stays, what clears it
+- Progress · where it appears, how long it stays, what clears it
+- Warning · where it appears, how long it stays, what clears it
+- Failure · where it appears, how long it stays, what clears it
+
+<details>
+<summary>Help with this step</summary>
+
+- **Duration:** How long a message stays on screen. It is a decision with a reason behind it, not a default left to whoever builds the screen.
+
+Stuck starting? Put each message where the change it describes happened, then ask what the person loses if they look away.
+
+Is it enough? No message about money, a deadline or unsaved work fades on its own.
+
+</details>
+
+#### 3. Rewrite for meaning without colour
+
 - Rewrite each message as what happened, what it means, what to do.
 - Pair each type with a distinct icon shape as well as a colour.
 - Check every message reads correctly in greyscale.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every message rewritten as what happened, what it means and what to do, with a shape as well as a colour for each type.
 
-## 4. Decide the actions
+Worksheet fields for this step:
+
+- Each message rewritten as what happened, what it means, what to do
+- The distinct icon shape you have given each of the four types
+- What you found when you read them all with the colour taken away — On paper, shade over the colour with a pencil. On a screen, a greyscale photograph does the same job.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Greyscale:** The same design with the colour taken away. It shows what your message says to someone who cannot separate your two colours.
+
+Stuck starting? Rewrite the failure message first; it is the one where a missing sentence hurts most.
+
+Is it enough? With the colour gone, you can still tell good news from bad by the words alone.
+
+</details>
+
+#### 4. Decide the actions
+
 - Mark which messages carry an action and which are informational.
 - Give every failure message a route forward, not just a description.
 - Check that two messages cannot appear in the same place at once.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Which messages need an action, a route forward on every failure, and a rule stopping two messages sharing one place.
 
-## 5. Test aloud and record
+Worksheet fields for this step:
+
+- Which messages need something from the person, and which only inform
+- For each failure: the one thing the person can do now, or who to contact
+- What stops two messages appearing in the same place at once
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? For each failure, write the sentence the person would say next and answer it inside the message.
+
+Is it enough? No failure message ends without something the person can do.
+
+</details>
+
+#### 5. Test aloud and record
+
 - Read each message to someone and ask what they would do next.
 - Rewrite any message that produces a shrug or a wrong answer.
 - Save the four specifications with placement and duration rules.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What happened when the messages were read aloud, and the repair the Check questions asked for.
 
-## Review and handoff
-- Four types are specified with placement and duration: [evidence reference]
-- Consequential messages persist until resolved: [evidence reference]
-- Meaning survives without colour: [evidence reference]
-- Every failure message offers a route forward: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What happened when you read each message aloud and asked what they would do next — If nobody is available, read them aloud yourself after a break and note where you hesitated. Write plainly that no one else heard them.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read each message to one person and ask only “what would you do next?”.
+
+Is it enough? Any message that produced a shrug has been rewritten, or the gap is written down honestly.
 
 </details>
+
+**Save and continue.** Saved for you: The message list, the four specifications and your wording save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. Keep your m07 exception table beside you; most of these messages come from it. What your creator sees: Your creator reads the four rows and the failure wording. The duration column is the part most message sets never have. Your next action: Open Your work and choose Ready for review. The next lesson designs the states these messages appear in: empty, loading and error.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1765,82 +2558,174 @@ The bookings screen showed a blank panel to new people and the same panel when a
 
 Design the empty, loading and error states of two screens so each teaches, reassures or recovers, and check them on a throttled connection.
 
-**Where to work:** Sketch the three empty causes side by side and write the full wording. Use your browser's throttling to watch a comparable real page load slowly and time how long the gap feels.
+**Where to practise:** Draw the three empty states, the loading treatment and the error states on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Sketch the three empty causes side by side and write the full wording. Use your browser's throttling to watch a comparable real page load slowly and time how long the gap feels.
 
 - Starting material: Your m07 state tables and two interface-fidelity screens.
 - Create HaruCourse/Practice/m08-l09-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Empty, loading and error states with craft
+#### 1. List the states you owe
 
-Input artifact: Your m07 state tables and two interface-fidelity screens.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Three empty states distinguished by cause, with full wording
-- [ ] A loading treatment that reserves layout and names what is awaited
-- [ ] Error states that preserve work and offer a route
-- [ ] Throttled-connection observations with one change made
-
-## 1. List the states you owe
 - From your m07 state tables, list every empty, loading and error state on two screens.
 - Mark the cause of each empty state: new, filtered or exhausted.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every empty, loading and error state on your two screens, with the cause of each empty one named.
 
-## 2. Write the empty states
+Worksheet fields for this step:
+
+- Every empty, loading and error state across your two screens — Take them from your m07 state tables. If a state is missing there, it is missing from the design too.
+- For each empty state: the cause — new, filtered or exhausted
+
+<details>
+<summary>Help with this step</summary>
+
+- **Empty state:** What a screen shows when there is nothing to show. It is the first thing a new person meets, and the only thing on the screen to learn from.
+- **Exhausted:** Empty because there genuinely is nothing left: the class is full, or every date has already passed.
+
+Stuck starting? Open your m07 state tables and copy every state across before you write any wording.
+
+Is it enough? Each empty state has one of the three causes beside it.
+
+</details>
+
+#### 2. Write the empty states
+
+**See it first.** Made-up example. One blank panel doing the work of three empty states in a class-booking product.
+
+- **What the screen did:** The bookings list showed a grey box and the words “Nothing here yet.” It showed exactly the same thing when a filter matched nothing.
+- **What I wrote first:** “No bookings found.” Shorter and cleaner, and I thought clean was the goal.
+- **Why that was the worst version:** It is the first screen a new person sees. It had one job — teach her what this list is for — and it spent the space apologising instead.
+- **What replaced it:** “Your bookings appear here once you book a class. Classes run on Saturdays and Wednesdays.” with an action beside it reading “Find a class on Saturday”.
+- **What the filtered case got:** A different sentence entirely: “No classes match Saturday morning under 500. Remove the price filter to see three more.” It names the filter that did it.
+
+**The wrong turn:** The wrong turn is treating an empty screen as a gap to apologise for. It is the one moment where the person has nothing to read but you, and a shrug wastes it.
+
+**What it costs:** Three separate messages are three things to write and keep true as the product changes. One sentence would be cheaper and would teach nobody anything.
+
+**Still unknown:** Still unknown: whether the suggested action offers the right first class. That is a question about what people book first, and this lesson cannot answer it.
+
 - For the new case write what appears, why and the first action.
 - For the filtered case name the filter responsible and offer to remove it.
 - For the exhausted case offer the alternative.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three empty states written out in full, one per cause, each saying what appears here, why it is blank, and how to start.
 
-## 3. Design loading honestly
+**Try it with help.** Two supplied empty states for the same made-up bookings list. A is a grey illustration of an empty box with the words “Nothing here yet.” B is “Your bookings appear here once you book a class. Classes run on Saturdays and Wednesdays.” with an action reading “Find a class on Saturday”.
+
+What is B actually doing that A is not?
+
+- **B says what belongs here, why the screen is blank and the one action that starts it, so the empty screen teaches.** — Those three parts turn a blank area into the clearest lesson in the product. A has the same space and spends it on an apology.
+- B is longer, and a new person needs more words. — Length is not the difference. A long empty state that still fails to say what appears here, or how to begin, teaches nothing.
+- B has an action, and an action is what every empty state needs. — The action helps and is not enough on its own. An action with no explanation of what the list is for leaves a new person guessing.
+- B has no illustration, and illustrations do not belong in empty states. — An illustration is fine beside wording that teaches. What fails in A is the sentence, not the picture.
+
+**Then:** Read your own three empty states back and check each one names what appears here, why it is blank now, and what to do next.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Empty because the person is new · what appears here, why, and the one action that starts it
+- Empty because a filter excluded everything · which filter did it, and the offer to remove it
+- Empty because there is genuinely nothing left · the alternative you offer instead
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the new-person one first, out loud, as if you were explaining the screen to someone standing beside you.
+
+Is it enough? Each of the three could only belong to its own cause.
+
+</details>
+
+#### 3. Design loading honestly
+
 - Reserve the space the content will occupy so nothing jumps.
 - Write what the message says after about three seconds.
 - Say what is being waited for where you know it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A loading treatment that holds the eventual space, and what the screen says at about three seconds and at about fifteen.
 
-## 4. Design the error states
+Worksheet fields for this step:
+
+- How the loading state holds the space the content will take, so nothing jumps when it arrives
+- What the screen says at about three seconds, and at about fifteen — Name what is being waited for wherever you know it. A slow thing needs a sentence, not a faster spinner.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Reserved layout:** Drawing the loading state at the size the real content will take, so nothing shifts under the person’s finger when it arrives.
+
+Stuck starting? Trace the loaded screen and shade the content out. That outline is your loading state.
+
+Is it enough? Nothing on the screen changes position between loading and loaded.
+
+</details>
+
+#### 4. Design the error states
+
 - Specify that entered work is preserved through the failure.
 - Write what happened, what it means and the route forward.
 - Add a retry that does not lose position or filters.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Errors that keep everything the person entered, say what happened and what it means, and a retry that keeps position and filters.
 
-## 5. Throttle and record
+Worksheet fields for this step:
+
+- Everything the person had entered or chosen, specified as preserved through the failure
+- For each error: what happened, what it means, and the route forward
+- What the retry does, and what it keeps: position, filters and anything typed
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Walk one failure in your own flow and write down everything you would lose.
+
+Is it enough? Nothing the person typed or chose appears on the lost list.
+
+</details>
+
+#### 5. Throttle and record
+
 - Load a comparable page on a slow throttled connection with the cache disabled.
 - Record what appeared first and how long the gap lasted.
 - Change one thing because of what you saw, and save the states.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What a slow load actually looked like, one change made because of it, what you could not check, and the repair the Check questions asked for.
 
-## Review and handoff
-- Empty states are distinguished by cause with full wording: [evidence reference]
-- Loading reserves layout and reports what is awaited: [evidence reference]
-- Errors preserve work and offer a route: [evidence reference]
-- A throttled check was run and changed something: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What you saw on a slow connection: what appeared first, what appeared last, and how long the gap lasted — Use the free network-throttling setting in your browser’s own developer tools, with the cache turned off, on a page like the one you are designing. Write times, not impressions.
+- The one thing you changed because of what you saw
+- Anything you could not check because nothing is built, written down as untested rather than assumed
+- Where the state drawings live — File names or “paper, in my folder”. Nothing is uploaded.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+- **Throttling:** A setting in your browser’s own developer tools that pretends the connection is slow. It is free and changes nothing outside that tab.
+
+Stuck starting? Open the developer tools on a page like yours, set the network to a slow profile with the cache turned off, reload, and watch what arrives first.
+
+Is it enough? The notes carry times and an order of arrival, and anything you could not check is written down as untested.
 
 </details>
+
+**Save and continue.** Saved for you: The state list, the three empty states and your throttling notes save as you type, on this device first and then online. Kept outside the app: The drawings stay on paper or in your own folder. Note the file name in the last step; naming a file does not upload it. What your creator sees: Your creator reads the three empty states and the throttling notes. Three states that could not be swapped for one another is the thing to look for. Your next action: Open Your work and choose Ready for review. The next lesson draws one chart from numbers you actually hold.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1980,82 +2865,175 @@ Twenty-two survey responses became a bar chart of “was it clear your payment h
 
 Draw one chart from data you actually hold, following the assigned conventions, and write the alternative text that carries the same information to someone who cannot see it.
 
-**Where to work:** Graph paper and a ruler, photographed, is a legitimate chart and forces you to plot the real values. A spreadsheet works if you have one; no paid tool or plotting library is required.
+**Where to practise:** Draw the chart and the counts printed beneath it on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Graph paper and a ruler, photographed, is a legitimate chart and forces you to plot the real values. A spreadsheet works if you have one; no paid tool or plotting library is required.
 
 - Starting material: A small set of real counts you can honestly attribute.
 - Create HaruCourse/Practice/m08-l10-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Charts that do not mislead
+#### 1. Read the conventions
 
-Input artifact: A small set of real counts you can honestly attribute.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] One chart drawn from data you actually hold, following the conventions
-- [ ] n and the recruitment route stated on the chart
-- [ ] Alternative text carrying the same information as the chart
-- [ ] The underlying numbers published beside it
-
-## 1. Read the conventions
 - Read the assigned chart guidance for the type you plan to use.
 - Write down its rules for axes, gridlines, labelling and contrast.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The drawing rules you are working to, written as instructions to yourself.
 
-## 2. Choose the comparison
+Worksheet fields for this step:
+
+- What the guidance says about axes and gridlines — Write the rules as instructions to yourself, not as a summary of the page.
+- What it says about labelling, legends and colour contrast
+
+<details>
+<summary>Help with this step</summary>
+
+- **Gridline:** A faint line across the chart that helps the eye reach a value. Few and light, or they compete with the data.
+- **Legend:** A key off to one side saying what each colour means. It makes the reader hold two things in mind at once.
+
+Stuck starting? Read the assigned guidance once, then close it and write the rules from memory. Go back for the ones you could not recall.
+
+Is it enough? Each line tells you to do or not do something specific when you pick up the ruler.
+
+</details>
+
+#### 2. Choose the comparison
+
 - Write the one comparison you want a reader to make.
 - Choose the chart type that serves it: amounts across categories, or change over time.
 - Reject the type that would flatter your finding.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One comparison in a sentence, the chart type that serves it, and the type you turned down.
 
-## 3. Draw it honestly
+Worksheet fields for this step:
+
+- The one comparison you want a reader to make
+- The real counts you are using, and where they came from — Your m05 survey answers, your m06 tree-test results, or your own practice log. Real numbers only.
+- The chart type you chose (Bar chart · amounts across categories / Line chart · change over time / Something else, named in the next box)
+- The type you rejected, and how it would have flattered your finding
+
+<details>
+<summary>Help with this step</summary>
+
+- **n:** How many people or things the chart is drawn from. A chart of eight answers is a picture of eight answers.
+
+Stuck starting? Write the sentence you want the reader to leave with. The chart type is whatever makes exactly that sentence visible.
+
+Is it enough? Your counts are real numbers you already hold, not numbers you expect to have later.
+
+</details>
+
+#### 3. Draw it honestly
+
+**See it first.** Made-up example. Drawing one bar chart from twenty-two survey answers, and finding the first draft said something the answers could not support.
+
+- **What I had:** Twenty-two answers to one question: was it clear your payment had gone through? Nine said no, thirteen said yes.
+- **My first draft:** Two bars, with the axis starting at eight because that fitted the graph paper neatly, and a legend in the corner. The nine looked like roughly a third of the thirteen.
+- **What a reader took from it:** She looked at it and said “so hardly anyone was confused”. The cut axis had done that, not the answers.
+- **What I changed:** Axis from zero. The counts written on the bars themselves. Legend deleted. And under the title, in the same ink: 22 people, reached through two WhatsApp groups.
+- **What it cost:** The redrawn chart is duller. Nine against thirteen now looks like what it is, and the picture no longer promises more than twenty-two people can give.
+
+**The wrong turn:** The wrong turn is cutting the axis so the difference is easier to see. On bars the length is the comparison, so a cut axis is not emphasis. It is a different number.
+
+**What it costs:** A full axis and a stated n make a small study look small, and you may stop wanting to show it. That feeling is the finding being honest about its size.
+
+**Still unknown:** Still unknown: whether twenty-two people reached through two group chats resemble anyone else. Nothing in the drawing can fix that, which is why the sample line says it.
+
 - Start the numerical axis at zero for bars.
 - Label directly rather than using a legend where you can.
 - Check the colours against the contrast threshold.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The chart drawn to the rules: axis from zero for bars, direct labels, measured colours.
 
-## 4. Write the alternative text
+Worksheet fields for this step:
+
+- Where your numerical axis starts, and why — For bars the only answer is zero. Write it down anyway, so you notice if it is not.
+- How each value is labelled, and any legend you were able to remove
+- The contrast ratios you measured for the chart colours and their labels, and the checker you used — A free browser-based checker, or the offline calculation from earlier in the course. No plugin needed.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Rule the axis first and mark zero before you plot anything. It is much harder to talk yourself into cutting it later.
+
+Is it enough? Every value can be read off the chart without going to a key, and each colour has a measured number beside it.
+
+</details>
+
+#### 4. Write the alternative text
+
 - Write the comparison and the values, not a description of the picture.
 - State n and how those people were reached.
 - Publish the underlying numbers beneath the chart.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Alternative text carrying the comparison, the values and the sample, with the counts published beneath.
 
-## 5. Test the claim
+**Try it with help.** One made-up chart: of 22 people, 9 were unsure their payment had gone through and 13 were sure. It is two bars with the counts written on them.
+
+Which alternative text carries the same information to someone who cannot see it?
+
+- **Of 22 people reached through two WhatsApp groups, 9 were unsure their payment had gone through and 13 were sure.** — It gives the comparison, both counts and the sample. A reader who never sees the bars can use it exactly as you can.
+- A bar chart showing responses to the payment clarity question. — It names the subject and withholds the answer. The reader learns that a chart exists, which is not what the chart is for.
+- Two vertical bars, the right one taller than the left, with a light grid behind them. — This describes the drawing. Someone could redraw the picture from it and still not know what anybody answered.
+- Most people were sure their payment had gone through. — It carries a conclusion instead of the values, and “most” from thirteen of twenty-two is doing more work than the counts allow.
+
+**Then:** Cover your own chart and read only your alternative text. If you cannot answer the question the chart was drawn to answer, rewrite it with the counts in it.
+
+Worksheet fields for this step:
+
+- The sample line as it appears on the chart: how many people, and how they were reached
+- Your alternative text — The comparison and the values. Not the colours, the shapes or the gridlines.
+- The counts published beside the chart
+
+<details>
+<summary>Help with this step</summary>
+
+- **Alternative text:** The words offered in place of a picture. Its job is to carry the information, not to describe the drawing.
+
+Stuck starting? Write the sentence you would say aloud to someone on the phone who cannot see the page. That sentence is the alternative text.
+
+Is it enough? The text contains the values, the comparison and how many people, and none of the colours.
+
+</details>
+
+#### 5. Test the claim
+
 - Show the chart to someone and ask what it tells them.
 - If they state something your sample cannot support, change the chart or its labels.
 - Save the chart, the alternative text and the numbers.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What a reader took from the chart, anything your data cannot support, and the change the Check questions sent you back to make.
 
-## Review and handoff
-- The chart type matches the comparison: [evidence reference]
-- Axes, labelling and contrast follow the assigned conventions: [evidence reference]
-- n and the recruitment route appear on the chart: [evidence reference]
-- Alternative text carries the information, not the appearance: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What the person you showed it to said it told them — Ask, then write their words down before you explain anything.
+- Anything they claimed your data cannot support, and what you changed
+- Where the chart and the counts live — A file name, or “paper, in my folder”. Nothing is uploaded.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Show it without introducing it. Ask “what does this tell you?” and write the answer down before you say anything.
+
+Is it enough? You have their words, and any claim your numbers cannot carry has been fixed in the chart or its labels.
 
 </details>
+
+**Save and continue.** Saved for you: The comparison, the alternative text and the counts save as you type, on this device first and then online. Kept outside the app: The chart itself stays on your graph paper or in your spreadsheet. Note where it lives in the last step; nothing is uploaded. What your creator sees: Your creator reads the alternative text beside the counts. A chart whose text carries the finding is the part that cannot be faked. Your next action: Open Your work and choose Ready for review. The next lesson names every colour, size and space you use, and measures the ones that carry text.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2195,81 +3173,172 @@ The token sheet came to twenty-two values: five neutrals, three semantic colours
 
 Produce a token sheet for colour, type, space and radius with every value named by role, measured for contrast where it carries text, and applied to one screen without exception.
 
-**Where to work:** A written table is a token sheet. For contrast, any free browser-based checker or your operating system's own tools will do, and you can also compute the ratio in a spreadsheet from the published formula; no paid plugin is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A written table is a token sheet. For contrast, any free browser-based checker or your operating system's own tools will do, and you can also compute the ratio in a spreadsheet from the published formula; no paid plugin is needed.
 
 - Starting material: Your m03 scale, component inventory and one built screen.
 - Create HaruCourse/Practice/m08-l11-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# The token sheet
+#### 1. Collect what you already use
 
-Input artifact: Your m03 scale, component inventory and one built screen.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A token sheet naming every value by role
-- [ ] Measured contrast ratios for every text-on-surface pair
-- [ ] One screen rebuilt using only tokens
-- [ ] A list of exceptions found, each resolved deliberately
-
-## 1. Collect what you already use
 - List every colour, type size, spacing value and radius across your screens.
 - Mark the near-duplicates: two greys within a few percent, two similar gaps.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A count of every colour, type size, spacing value and radius already in use, with the near-duplicates marked.
 
-## 2. Name by role
+Worksheet fields for this step:
+
+- Every colour, type size, spacing value and radius you found, with how many of each kind
+- The near-duplicates, with the exact difference between them — “Slightly different” is not a finding. Two greys three per cent apart, or a 10 and a 12 gap, is.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Token:** A named decision you reuse: surface-raised, text-quiet, space-3. The name is the point; the value behind it can change.
+- **Radius:** How rounded a corner is. Two values are almost always enough for a whole product.
+
+Stuck starting? Go through one screen at a time and write down every value as you meet it. Duplicates only become visible once the list is complete.
+
+Is it enough? The counts are real numbers you arrived at by looking, and the near-duplicate list names the exact difference.
+
+</details>
+
+#### 2. Name by role
+
 - Group the values into roles: surface, text, border, action, status.
 - Name each token after its role, never after its appearance.
 - Cut the set to the smallest that covers your screens.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every value named after the job it does, with the set cut to the smallest that covers your screens.
 
-## 3. Measure contrast
+**Try it with help.** Four made-up names for one value: a mid grey used behind cards and behind the page header. The candidates are light-grey, grey-200, surface-raised and card-background.
+
+Which name is still true after the product gains a dark theme and the value becomes a near-black?
+
+- **surface-raised, because it names what the value is for rather than what it looks like or where it sits.** — The role survives the change. The value behind it becomes near-black and every screen using it stays right with no rename.
+- light-grey, because anyone reading the sheet can picture it at once. — It is the easiest name to read today and the first to become a lie. A token called light-grey holding a near-black is worse than no name at all.
+- grey-200, because the number keeps the greys in order. — A numbered grey survives a value change and says nothing about when to use it, so two people pick different ones for the same job.
+- card-background, because it says exactly where it goes. — It is honest until the header uses it too. A token named after one place it appears leaves you renaming or misusing it as soon as there is a second place.
+
+**Then:** Go through your own names and mark any that describe a colour, a size, a shape or a single place. Rewrite each one as the job it does.
+
+Worksheet fields for this step:
+
+- Colour tokens: role name and value
+- Type tokens: role name, size and weight
+- Spacing and radius tokens: role name and value
+- How many tokens the sheet holds in total — Write the number. If it is more than about twenty-five, look again for near-duplicates.
+- Any name you changed from appearance to role, and what the old name would have broken
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Sort the values into roles first — surface, text, border, action, status — and name them only once the piles exist.
+
+Is it enough? No name mentions a colour, a size or one particular screen, and you can recite the set from memory.
+
+</details>
+
+#### 3. Measure contrast
+
 - Measure every text-on-surface pair you intend to allow.
 - Record the ratio beside each pair on the sheet.
 - Repair or forbid any pair that falls below the threshold.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A measured contrast ratio beside every text-on-surface pair you allow, including the quiet ones.
 
-## 4. Apply without exception
+Worksheet fields for this step:
+
+- Every text-on-surface pair you allow, with its measured ratio and the checker you used — Include the quiet ones: captions, placeholder text, disabled labels, text on tinted panels.
+- Any pair below the threshold, and whether you repaired it or forbade it
+
+<details>
+<summary>Help with this step</summary>
+
+- **Contrast ratio:** A number comparing the lightness of text against what is behind it. Measured with a free checker, never guessed by eye.
+
+Stuck starting? List the pairs before you measure anything. The pairs you forget to list are the ones that fail.
+
+Is it enough? Every pair on the sheet carries a number, and any failure has been repaired or written down as forbidden.
+
+</details>
+
+#### 4. Apply without exception
+
+**See it first.** Made-up example. Rebuilding one booking screen from a token sheet, and finding three values the sheet did not have.
+
+- **Where I started:** A sheet of twenty-two values: five neutrals, three status colours, six type steps, six spacing values and two radii.
+- **What I told myself:** The rebuild would take twenty minutes, because the screen was already made of those values. It was not.
+- **What I had to invent:** A border grey that was on no list, a ten-pixel gap between the heading and the list, and a heading half a step smaller than any type token.
+- **The mistake I nearly made:** Adding all three to the sheet. That would have made twenty-five values and three fresh ways to be inconsistent, and it felt like progress.
+- **What I did instead:** The border grey became an existing neutral, and nobody could tell. The gap moved to the nearest spacing value. The heading was a real missing role, so one step was added on purpose.
+
+**The wrong turn:** The wrong turn is adding a token every time the screen resists. Each one is reasonable on its own, and together they turn a sheet of decisions back into a box of values.
+
+**What it costs:** Forcing a screen onto the nearest token means some spacing ends up a little tighter or looser than you drew it. What you get back is a sheet another person can apply without asking you.
+
+**Still unknown:** Still unknown: whether the added type step earns its place. One screen needed it. If no second screen does, it was an accident with a good story.
+
 - Rebuild one screen using only tokens.
 - List every value you had to invent to finish it.
 - For each, either add a role or change the screen.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One screen rebuilt from tokens alone, with every value you had to invent written down.
 
-## 5. Record and save
+Worksheet fields for this step:
+
+- Which screen you rebuilt using only tokens
+- Every value you had to invent to finish the screen — Write each one down as it happens. They are easy to forget and they are the finding.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Work through the screen element by element and say the token name aloud as you place it. The moment you cannot, write the value down.
+
+Is it enough? The screen is finished and the exception list contains every value you reached for that was not on the sheet.
+
+</details>
+
+#### 5. Record and save
+
 - Write which exceptions revealed a missing role and which were accidents.
 - Save the sheet with the measured numbers and the rebuilt screen.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each exception marked as a missing role or an accident, with what you did, and the change the Check questions asked for.
 
-## Review and handoff
-- Tokens are named by role and the set is small: [evidence reference]
-- Every allowed text pair carries a measured ratio: [evidence reference]
-- One screen is built with no exceptions: [evidence reference]
-- Exceptions found are resolved deliberately and recorded: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Exceptions that revealed a missing role, and the token you added
+- Exceptions that were accidents, and what you changed on the screen instead
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? For each exception ask one question: does a second screen need this? That answer decides which list it belongs in.
+
+Is it enough? Every exception sits in one of the two lists, and each accident names what you changed on the screen instead.
 
 </details>
+
+**Save and continue.** Saved for you: The token names, the measured ratios and the exception list save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. Keep your m03 type scale to hand; several type tokens come straight from it. What your creator sees: Your creator reads the names and the exception list. Names that describe roles, and exceptions resolved on purpose, are what make it a sheet rather than a palette. Your next action: Open Your work and choose Ready for review. The next lesson assembles two whole screens from your components and this sheet, then critiques them against your research.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2409,83 +3478,193 @@ Assembling two screens from the library required inventing three things: a statu
 
 Assemble two complete screens from your components and tokens, run the preliminary checks, and critique the result against your own research evidence rather than taste.
 
-**Where to work:** Paper or a local HTML file, whichever you have been using. If you want the accessibility checks to be real rather than theoretical, a local HTML file lets you check headings, resize and keyboard behaviour with a browser alone.
+**Where to practise:** Draw the two assembled screens, including one non-happy state on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper or a local HTML file, whichever you have been using. If you want the accessibility checks to be real rather than theoretical, a local HTML file lets you check headings, resize and keyboard behaviour with a browser alone.
 
 - Starting material: Your component inventory, token sheet, state and message specifications.
 - Create HaruCourse/Practice/m08-l12-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Assemble, check and critique against evidence
+#### 1. Assemble
 
-Input artifact: Your component inventory, token sheet, state and message specifications.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Two assembled screens using only your components and tokens
-- [ ] A list of everything you had to invent during assembly, each resolved
-- [ ] A finding-by-finding critique against your research
-- [ ] Preliminary check results and a written list of what stays untested
-
-## 1. Assemble
 - Build two complete screens using only your components and tokens.
 - Write down every component, token or state you had to invent.
 - Include at least one non-happy state among the two screens.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Two complete screens built only from your components and tokens, with everything you had to invent listed.
 
-## 2. Resolve the inventions
+Worksheet fields for this step:
+
+- The two screens you assembled, which one carries a non-happy state, and where the drawings live — A non-happy state is empty, loading, an error or a limit reached. One of the two must show one.
+- Everything you had to invent while assembling: components, tokens or states — Write each one down as it happens, before you decide what to do about it.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Assembling:** Building a screen from parts you already have, rather than drawing it fresh. Anything you cannot find is a finding.
+- **Non-happy state:** A screen when things are not going smoothly: empty, loading, an error, or a class already full.
+
+Stuck starting? Lay your inventory and token sheet beside you and build with them open. Reaching past them is the thing you are trying to notice.
+
+Is it enough? Both screens are complete, one of them is a non-happy state, and the invention list is written rather than remembered.
+
+</details>
+
+#### 2. Resolve the inventions
+
+**See it first.** Made-up example. Three things invented while assembling two screens, and getting the first decision wrong.
+
+- **What I invented:** A status pill for a held place, a smaller price treatment, and a gap between a heading and a dense list that was on no sheet.
+- **My first decision:** All three into the library. Assembling had shown I needed them, so they were obviously missing. That took about a minute to decide.
+- **The question that changed it:** For each one: does a second screen need this? Only the status pill did. The other two were needed once, by one screen, on one afternoon.
+- **What happened to the rest:** The price treatment turned out to be an accidental copy of the existing one, four per cent smaller. It went. The gap moved to the nearest token and the screen was fine.
+- **What that left:** One new component with a job, and two small changes to the screens. The library grew by one instead of three.
+
+**The wrong turn:** The wrong turn is treating everything you invent as a gap in the set. Assembling under time pressure invents plenty, and most of it is drift rather than a missing part.
+
+**What it costs:** Changing the screen instead of the set means giving up a size or a spacing you liked. It keeps the set small enough for someone else to use without asking you.
+
+**Still unknown:** Still unknown: whether the status pill is right. One screen needed it, and until a second one does, it is a component with a single use.
+
 - For each invention decide: missing from the set, or unnecessary variation.
 - Add what is genuinely missing and remove the rest.
 - Update the inventory and token sheet accordingly.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each invention decided as a missing part or an unnecessary variation, with the set updated.
 
-## 3. Critique against findings
+Worksheet fields for this step:
+
+- For each invention: missing from the set or unnecessary variation, and what you did about it
+- What you added to the component inventory or the token sheet
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the inventions one at a time and ask only whether a second screen needs it. Decide that before you look at how it turned out.
+
+Is it enough? Every invention has a decision beside it, and the inventory or token sheet shows what you added.
+
+</details>
+
+#### 3. Critique against findings
+
 - List your m05 findings and m07 test results.
 - For each, write whether this screen serves it and how you can tell.
 - Repair the strongest failure you find.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every finding answered in writing, each critique line labelled evidence, guess or taste, and the strongest failure repaired.
 
-## 4. Run the checks
+**Try it with help.** Six made-up critique lines about the same booking screen. For each one, decide whether it is backed by evidence you actually hold, a reasonable guess, or taste. Taste is allowed here. It just has to be named as taste.
+
+- The row does not show how many places are left, and three of the five people in my m05 sessions named remaining places while choosing.
+  - **evidence** — The line names its source and how many people. Anyone can go and check those notes, which is what makes it evidence rather than a strong feeling.
+  - guess — It would be a guess without the session note. The count of people and the named source are what lift it out of guessing.
+  - taste — Nothing here is about how the screen looks. It reports what people did while they were choosing.
+- The button says “Submit”, and in my m07 paper test two people asked what it would do.
+  - **evidence** — Two people asking is a small, dated observation you can point at. Small is fine, as long as the line says it was two.
+  - guess — A guess is what you hold before anyone reacts. Here somebody already did, and you wrote it down at the time.
+  - taste — Disliking the word Submit would be taste. Two people asking what it does is something that happened in front of you.
+- The blue on the primary button feels cold for a pottery studio.
+  - evidence — Nobody has told you the blue feels cold. Until someone does, the only source for this is your own eye.
+  - guess — A guess predicts what a person would do. This describes how a colour feels to you, which is a different kind of claim.
+  - **taste** — A preference about tone, worth keeping as long as it carries the label. Labelled taste does not get to outrank a finding.
+- People will probably miss the date, because it sits below the price.
+  - evidence — Nothing observed is named anywhere in the line. The word probably is doing the work a session note would otherwise do.
+  - **guess** — It predicts behaviour you have not watched. That is fine as long as the word probably stays in and you write down what would settle it.
+  - taste — It is not about liking the layout. It is a claim about what somebody would fail to see.
+- The soft corners on the cards sit oddly next to the square photographs.
+  - evidence — Nobody has looked at this screen except you, so there is nothing here to point at.
+  - guess — A guess would name something a person might do or fail to do. This names a mismatch you can see for yourself.
+  - **taste** — A judgement about how two shapes sit together, with no consequence to a task claimed. Record it and rank it below anything that stops someone.
+- Someone arriving with no bookings would not know where to start from this screen.
+  - evidence — It would be evidence if a new person had tried it in front of you. So far nobody has.
+  - **guess** — A plausible prediction about a person you have not yet watched using this screen. Write it as a guess and name the test that would settle it.
+  - taste — It claims somebody would be stuck, not that the screen looks wrong. That is a claim about behaviour.
+
+**Then:** Go through your own critique line by line and put one of the three labels beside each. Do not delete the taste lines; label them.
+
+**What to watch for:** The label depends on what you can point at. A named source with a count is evidence. A prediction about behaviour nobody has watched is a guess. A judgement about how it looks or feels is taste, and it ranks below the other two.
+
+Worksheet fields for this step:
+
+- Your m05 findings and m07 test results, one per line
+- For each finding: whether this screen serves it, and how you can tell
+- Each line of your critique labelled evidence, guess or taste — Every line gets one label. Taste stays in; it just gets named.
+- The strongest failure you found, and the repair you made
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Put your findings list beside the screen and answer each one in writing before you write any critique of your own. Blank answers are the work.
+
+Is it enough? Every finding has an answer, every critique line has one of the three labels, and the strongest failure has been repaired.
+
+</details>
+
+#### 4. Run the checks
+
 - Run the applicable preliminary checks: title, headings, contrast, resize.
 - Record what passed and what failed with specifics.
 - Note every check you could not run without an implementation.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The checks you could run, with specifics, and the ones you could not run without something built.
 
-## 5. Rank and record
+Worksheet fields for this step:
+
+- Title, headings, contrast and text at a larger size: what passed and what failed, with specifics
+- Every check you could not run without something built, and what passing the others does not prove
+
+<details>
+<summary>Help with this step</summary>
+
+- **Preliminary checks:** A short set you can run alone on a drawing or a page: the title, the heading order, contrast, and text at a larger size.
+
+Stuck starting? Work down the assigned list and mark each check run, failed or not possible. Write the specific failure, not the word failed.
+
+Is it enough? Each failure names what and where, and the not-possible list says plainly what passing the rest does not prove.
+
+</details>
+
+#### 5. Rank and record
+
 - Rank remaining problems by task impact, not by how much they bother you.
 - Write what remains untested about these screens.
 - Save the screens, the critique and the check results together.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Remaining problems ranked by task impact, what stays untested, and the change the Check questions asked for.
 
-## Review and handoff
-- Screens are assembled from the existing set, inventions recorded: [evidence reference]
-- Every invention is resolved as missing or unnecessary: [evidence reference]
-- The critique runs finding by finding against research: [evidence reference]
-- Check results and untested areas are both recorded: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Remaining problems ranked by task impact, with the reason for the top one — Task impact means what would stop someone, not what bothers you most.
+- What remains untested about these screens
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Rank by asking what would stop someone finishing, then what would slow them, then what only bothers you.
+
+Is it enough? The top problem is one that stops a task, and the untested list is written where someone else could read it.
 
 </details>
+
+**Save and continue.** Saved for you: The invention list, the critique with its labels and the check results save as you type, on this device first and then online. Kept outside the app: The two screens stay on your paper or in your own folder. Note where they live in the first step; nothing is uploaded. What your creator sees: Your creator reads the labelled critique and the untested list. Those two together show judgement more clearly than the screens do. Your next action: Open Your work and choose Ready for review. Module 9 takes these screens into interaction and accessibility, and your untested list is the first thing it picks up.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
