@@ -134,7 +134,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Decision:** Something the wireframe genuinely left open that this version has now closed. “Colours” is a category; “the price is grey and one step smaller than the class name” is a decision.
+- **Quiet:** Still on the screen and no longer noticed, because something beside it now carries more weight.
 
 Stuck starting? Go difference by difference. For each, finish the sentence “the wireframe left this open, and now it says …”.
 
@@ -180,6 +181,20 @@ Is it enough? Each note names a specific element, not “the hierarchy is weaker
 
 #### 5. Record the trade
 
+**See it first.** Made-up example. Naming the question fidelity had made expensive on a saved-classes screen, and naming the wrong one.
+
+- **What I wrote first:** “The green on the button is now expensive to reopen.” It was the last decision I made, so it felt like the most committed one.
+- **Why that was wrong:** A colour is one value swapped for another. Nothing else on the sheet moves, it takes half an hour, and nobody has to be talked round.
+- **The test I used instead:** I asked which change would make me sigh, and which one I would argue against rather than simply make. Both answers pointed at the same thing.
+- **What I wrote in the end:** Whether saved classes are a list or a grid. The wireframe left it open, this version closed it, and reopening it redraws every card, every type step and the empty state.
+- **The cheapest route to an answer:** Two paper versions, two people who have seen neither, and one instruction: find the Tuesday class. An afternoon, and nothing gets rebuilt.
+
+**The wrong turn:** The tempting error is naming the decision you made most recently instead of the one that is hardest to undo. Recency feels like commitment, and colour is the cheapest thing on the whole sheet to change.
+
+**What it costs:** Naming the arrangement means saying out loud that the part everyone admired is still open. It reopens a conversation you were quietly hoping to skip, and it can cost you the week you spent drawing it.
+
+**Still unknown:** Still unknown: whether the grid is actually worse than the list. Naming the question tells you what it costs to ask, not what the answer turns out to be.
+
 - Write the question that is now expensive to reopen.
 - Write how you would answer it if you had to.
 - Save both versions together; do not discard the wireframe.
@@ -196,7 +211,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Expensive:** Costly to reopen rather than costly to draw. A question is expensive when answering it differently would undo work you have already settled.
+- **Repair:** The one change a Check question sends you back to make, named precisely enough that you can go and do it.
 
 Stuck starting? Look down your decided list and mark the one you would most resist undoing.
 
@@ -409,6 +425,20 @@ Is it enough? You have at least one rule about when not to use it.
 
 #### 2. Cut and group
 
+**See it first.** Made-up example. Grouping the cut-outs from nine screens by the job they do, and finding the groups had been made by eye instead.
+
+- **How I sorted:** Fast piles: everything with a rounded rectangle in one, everything grey in another, everything small and pill-shaped in a third. Fifteen minutes, and the table looked organised.
+- **The pile that gave it away:** The rounded-rectangle pile held the booking button, a filter chip and the frame round a class photograph. Nothing in it shared a job. It was a pile of one shape.
+- **What I did instead:** Wrote the job on the back of each cut-out first: submits the booking, narrows the list, shows what the class looks like. Then I turned them face down and sorted from the writing.
+- **What the piles did then:** The filter chip landed beside the tag on the class card, because both narrow a list. They look nothing alike, and I would never have put them together by eye.
+- **What was still missing:** No error, empty or loading states were on the table at all. They sit in a separate file and I had never counted them as screens, and two of them carry a way of announcing something that appears nowhere else in the pile.
+
+**The wrong turn:** The tempting error is sorting by shape, because you can do it at speed and the table looks like progress. Shape is the one property you can judge without asking what anything is for.
+
+**What it costs:** Sorting by job is slow, and it puts things that look nothing alike into the same group, so the sheet ends up less tidy than the one your eye would have made. You then have to defend those groups to whoever reads them.
+
+**Still unknown:** Still unknown: whether the filter chip and the card tag really do the same job, or only sound alike once written down. The sentence is yours, and loose wording can make any two things match.
+
 - Lay out every screen you have, including error and empty states.
 - Mark every element that appears more than once.
 - Group the marked elements by what they do, not how they look.
@@ -423,7 +453,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Job:** What an element is for, said as an outcome: submits the booking, narrows the list, shows one class. Never what it looks like.
+- **Exception states:** The versions of a screen people meet when something goes wrong, when there is nothing to show yet, or while the page is still loading.
 
 Stuck starting? Lay every screen out flat, error and empty ones included, and mark anything you have drawn twice.
 
@@ -518,7 +549,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Merge:** Deciding that two things you drew separately are one component from now on, and drawing them the same way everywhere.
+- **Distinction:** Something a person could tell apart before the merge. Write down what carries it now, even when the honest answer is nothing.
 
 Stuck starting? For each merge, ask what a person could tell before that they cannot tell now.
 
@@ -544,7 +576,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Job-based name:** A name that says what the component is for, so it stays true after a repaint: status panel rather than grey box.
+- **Appearance word:** A colour, a size or a shape sitting inside a name. It is the part of the name that starts lying first.
 
 Stuck starting? Rename the one with the most decorative name first; the rest follow easily.
 
@@ -851,6 +884,20 @@ Is it enough? Each level differs from its neighbour in two properties before col
 
 #### 3. Rewrite the labels
 
+**See it first.** Made-up example. Rewriting the two buttons on a leave-the-waiting-list dialogue, and passing the verb rule while still being unanswerable.
+
+- **What I had:** The dialogue asked “Leave the waiting list?” and offered Yes and No. Neither word says what happens after you press it.
+- **My first rewrite:** “Leave” and “Stay”. Both lead with a verb, both fit the button on one line, and I moved on to the next screen.
+- **What broke it:** I covered the question with my hand and read the two buttons on their own, which is what somebody does when she looks back at a screen. “Leave” could mean the page, the class, or the whole app.
+- **What I wrote instead:** “Leave the waiting list” and “Stay on the list”, with the consequence moved into the body of the dialogue: your place goes to the next person waiting.
+- **What the pairing forced:** The safe way out had been a small cross in the corner. A destructive label needs a named alternative beside it at the same size, so the cross became the “Stay on the list” button.
+
+**The wrong turn:** The tempting error is judging a label against the rule rather than against the button. “Leave” starts with a verb, fits on one line and looks tidy, and it only means anything while the question above it is still in view.
+
+**What it costs:** Outcome labels are long. At phone width the pair no longer sits side by side, so the buttons stack, the dialogue grows taller, and the destructive one lands under the thumb unless you order them on purpose.
+
+**Still unknown:** Still unknown: whether “Stay on the list” reads as an action or as doing nothing. Somebody who means to stay may reach for the corner cross out of habit anyway.
+
 - Rewrite each label to lead with the verb of the person's outcome.
 - Replace every OK, Submit, Yes and No.
 - Pair destructive labels with an explicit safe alternative.
@@ -865,7 +912,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Verb-first label:** A label that opens with the doing word of the outcome, so it finishes the sentence “I want to …” without the question above it.
+- **Destructive action:** One that takes something away and cannot be easily undone: releasing a place, deleting a booking.
+- **Safe alternative:** The way out you put beside a destructive action, worded as its own outcome rather than as Cancel.
 
 Stuck starting? Start with any label that is OK, Submit, Yes or No, since those carry no outcome anywhere.
 
@@ -890,7 +939,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Real size:** Drawn or printed at the size a phone actually shows, so a ruler laid on it means something.
+- **Spacing:** The empty distance around an action. It is what stops a finger meant for one action landing on its neighbour.
+- **Unrankable:** What you can no longer put in order once the colour is gone, which tells you colour was doing the ranking on its own.
 
 Stuck starting? Draw or print at real size and try each action with your thumb before reaching for the ruler.
 
@@ -915,7 +966,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Splitting a screen:** Dividing one screen into two when it turns out to be doing two jobs, so each is left with a single main action.
+- **Repair:** The one change a Check question sends you back to make, named precisely enough that you can go and do it.
 
 Stuck starting? Change one property at a time and re-photograph, so you know which change did the work.
 
@@ -1171,6 +1223,20 @@ Is it enough? Every row names a format you accept without complaint, not only th
 
 #### 3. Move help before the mistake
 
+**See it first.** Made-up example. Moving rules out of the error messages on a booking form, and ending up with more advice than form.
+
+- **The one that started it:** Under “How many places” sat an error reading “maximum four places per booking”. Nobody could have known that until they had typed five and been refused.
+- **What I did next:** Went through every field and moved every rule up into help. Six help lines, and the form was now longer than the class description above it.
+- **What broke it:** Read back, the line under “Your name” said “enter your name”. Help that teaches nothing, sitting where the eye goes first, pushing the one line that mattered further down the page.
+- **What I kept:** One moved line only: “up to four places at a time”, under the label. The rest went back to being errors, because they fire on things nobody could get wrong through not knowing.
+- **The error I kept anyway:** Somebody types five without reading. The error stays, and it now names the fix rather than the rule: “you can book up to four places at a time, so choose four or fewer”.
+
+**The wrong turn:** The tempting error is moving every rule into help, because preventing a mistake feels plainly kinder than correcting one. Six lines of advice is how the one line that mattered gets skipped.
+
+**What it costs:** A rule shown before the field is read by everybody, including the many people it will never apply to. You spend their attention to save a few people a correction, and the form gets longer and calmer-looking rather than shorter.
+
+**Still unknown:** Still unknown: which of the rules I sent back to being errors would have been worth preventing. A form only tells you that once somebody hits one.
+
 - Find each error caused by a rule people could not know.
 - Move that rule under the label as help text.
 - Keep the error message for the case where help was missed.
@@ -1185,7 +1251,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Prevention:** Saying a rule before the field, so the mistake never happens. It costs everybody a line of reading to save a few people a correction.
+- **Error wording:** The line a field shows once something has gone wrong. At its best it names the fix rather than restating the rule.
 
 Stuck starting? Read your error messages aloud and mark any that teach a rule for the first time.
 
@@ -1221,7 +1288,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Failure path:** What the form does when a submission is refused: what stays on the screen, what it says, and where it sends the person next.
+- **Validation:** The check that decides whether what somebody typed is acceptable. When it runs matters as much as what it says.
+- **Error summary:** The message at the top of the form after a refused submission. It names the first field with a problem and takes the person straight to it.
 
 Stuck starting? Describe the screen one second after a failed submission, as though you were looking at it.
 
@@ -1537,6 +1606,20 @@ Is it enough? The rule is a sentence someone else could apply to a destination y
 
 #### 4. Define back
 
+**See it first.** Made-up example. Writing down what back does in a class-booking product, after the first version described screens instead of what it keeps.
+
+- **What I wrote first:** One line covering everything: “back goes to the previous screen”. It felt complete, and it took ten seconds to write.
+- **Why it read well:** Every behaviour I could think of seemed to fit under it, so I moved on to the drawing, which was the part I wanted to be doing.
+- **Walking it on paper:** I went into a class from a filtered list, came back, and landed at the top of every class in the city. The filters and the place I had scrolled to were my work, and back had thrown both away.
+- **The second thing it hid:** Inside the three-step booking form, the previous screen is the class list, so back left the task altogether rather than stepping to the question before.
+- **What I wrote instead:** Three behaviours, each naming what is kept: inside the task, back goes one question and holds the answers; from a detail view, back restores the filters and the position; the browser’s own back does the same as the one on the screen.
+
+**The wrong turn:** The tempting error is describing back as a screen rather than as what survives the trip, because a screen is easy to name and preservation is not. It reads like a decision and it leaves every real question open.
+
+**What it costs:** Keeping filters and half-finished answers means holding somebody’s work somewhere, so you now owe a second decision about when it is thrown away. A form that reappears half filled a week later is its own kind of confusion.
+
+**Still unknown:** Still unknown: whether a person returning from a detail view expects the filters they set or a clean list. That is a difference in expectation, and only watching somebody make the trip would settle it.
+
 - Write what back does inside a multi-step task.
 - Write what back does from a detail view, including filters and scroll position.
 - Check the design still works if the browser's back button is used instead.
@@ -1552,7 +1635,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Detail view:** The screen you reach by choosing one thing from a list: one class, one order, one person.
+- **Scroll position:** How far down a list somebody had moved before they left it. Coming back to the top of the list loses it.
+- **Browser back:** The arrow the browser itself provides, at the edge of the window or on the phone. You do not control it, so your product has to behave sensibly when it is used.
 
 Stuck starting? Walk your own flow: go into a detail view, come back, and write down everything you lost on the way.
 
@@ -1577,7 +1662,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Walking a task:** Going through a task on your drawing with a finger, screen by screen, as though you were really doing it.
+- **Tap count:** How many taps a task takes from the first screen to finished. Counting is a way of noticing which task you made hardest.
+- **Repair:** The change a Check question asks you to make, written down beside the step where you made it.
 
 Stuck starting? Draw the narrow layout at real size, then walk each task with a finger and count as you go.
 
@@ -1808,6 +1895,20 @@ Is it enough? Every attribute has a reason beside it, even when the reason is �
 
 #### 2. Choose and show the sort
 
+**See it first.** Made-up example. Choosing the order a class list arrives in, and then noticing that nothing on the screen said what that order was.
+
+- **Where I started:** The rows were decided and the list came out in whatever order the classes had been added, which was nobody’s order at all.
+- **What I chose first:** Alphabetical by class name. It looked tidy, it was easy to explain, and it felt like the order that takes no side.
+- **What it quietly assumed:** Alphabetical serves a person who already knows the name they are looking for. The person I had written down arrives with a free Tuesday evening and no name in mind.
+- **What I changed it to:** Soonest first, because the first question is what can I get to this week. The top of the list is now answering that question rather than the alphabet.
+- **The part I had missed entirely:** Nothing on the screen said the order. I added the words “Soonest first” above the list, with the other two orders beside it so the reader can see there is a choice.
+
+**The wrong turn:** The tempting error is picking an order that is easy to defend to yourself, such as the alphabet or the order the data arrived in, because it looks like no decision at all. It is a decision: whatever sits at the top of a list is read as a recommendation.
+
+**What it costs:** Soonest first pushes the busiest Saturday class far down where fewer people scroll, and anyone who did arrive with a name now has to search rather than scan. You are choosing which reader the top of the list belongs to.
+
+**Still unknown:** Still unknown: whether the words naming the order are read as a label or as something that can be changed. Watching one person try to reorder the list would answer it; my own reading of my own screen will not.
+
 - Choose a default sort that serves the common task.
 - State the sort visibly above the list.
 - Decide which alternative sorts exist, if any, and where they live.
@@ -1823,7 +1924,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Default sort:** The order the list is in before anybody changes it. Most people never change it, so it is the order nearly everyone sees.
+- **Omission:** Something you took out of the row on purpose. Writing it down is what makes it cheap to put back later.
 
 Stuck starting? Write the sort as a sentence the reader will see, such as “Soonest first”.
 
@@ -1883,7 +1985,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Hard case:** A row that breaks the layout rather than filling it: the longest name, the largest number, the value that is not there.
+- **Missing value:** A place where the data has nothing to show. Left blank it reads as broken; worded, it says why it is not there.
+- **Empty list:** What the screen shows when there are no rows at all. It is a screen you design, not a gap you leave.
 
 Stuck starting? Take your ten worst real rows and lay them out at phone width before you touch the tidy ones.
 
@@ -1908,7 +2012,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Reading it back:** Saying each value in the record out loud with its label, and stopping wherever you cannot say what a value is.
+- **Unresolved:** Something you could not settle, written down as a plain question rather than quietly dropped.
+- **Repair:** The change a Check question asks you to make, recorded beside the step where you made it.
 
 Stuck starting? Read one record aloud to yourself, value by value, and stop wherever you cannot say what a value is.
 
@@ -2193,6 +2299,20 @@ Is it enough? Every modal you kept names a loss you could not recover. Everythin
 
 #### 3. Design the two that stay
 
+**See it first.** Made-up example. Writing out the cancellation modal word for word, and finding that one of its two buttons meant two opposite things.
+
+- **What I wrote first:** A heading saying “Are you sure?”, a line saying “This cannot be undone.”, and two buttons: Cancel and OK.
+- **Why it looked finished:** It matched almost every dialogue I have ever answered, so nothing about it asked to be questioned.
+- **Where it fell apart:** I read it aloud. The person is cancelling a booking, and the button called Cancel keeps the booking. OK does not say what it does either, so answering quickly is a coin toss.
+- **What replaced it:** Heading: “Cancel this booking?”. Body: “Your place goes back to the list straight away and cannot be got back.” Buttons: “Keep my booking” and “Cancel the booking”, with the keeping one carrying the focus when the box opens.
+- **How it is left:** Closing with the cross, tapping outside it, or pressing escape all keep the booking. The booking is only released by the button that says so.
+
+**The wrong turn:** The tempting error is reusing the pair of labels every dialogue uses, because they feel settled and nobody argues with them. Those labels describe the box rather than the decision, and here the word Cancel collides with the very thing being cancelled.
+
+**What it costs:** Verb labels are long, so the two buttons stop being the same width and the box looks less tidy. On a narrow screen one label may wrap onto a second line, and you keep it anyway.
+
+**Still unknown:** Still unknown: whether “cannot be got back” is understood as “somebody else may take it within minutes”. Reading it to one person is the cheapest way to find out, and I have not done it yet.
+
 - Write the exact wording, naming what will be lost.
 - Make the safe option the default and label both options with verbs.
 - Specify dismissal: a visible control, the escape key, and unchanged work behind.
@@ -2233,7 +2353,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Inline message:** A message that sits in the page next to the work, leaving everything else reachable while it is there.
+- **Collide:** Two interruptions arriving at the same moment or in the same place, so one covers the other and only one of them is read.
 
 Stuck starting? Ask where the person would be willing to meet this. Usually it is after the task rather than during it.
 
@@ -2259,7 +2380,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **On record:** Written down and kept, with the reason beside it, so the decision can be found later instead of being made again from nothing.
+- **Artefact:** The thing you actually made: the drawn box, the written wording, the page of rules. Say where it lives.
+- **Repair:** The change a Check question asks you to make, recorded beside the step where you made it.
 
 Stuck starting? Write the rule, then read it back against the interruption you rejected.
 
@@ -2570,6 +2693,20 @@ Is it enough? With the colour gone, you can still tell good news from bad by the
 
 #### 4. Decide the actions
 
+**See it first.** Made-up example. Deciding which messages carry an action in a class-booking product, and finding that two of them wanted the same strip of screen.
+
+- **What I decided first:** Every message got something to tap. “Draft saved, view draft.” “Place held, see other dates.” “Payment failed, try again.” Each one looked like help.
+- **What that did to the important one:** Two of those three actions are things nobody wants at that moment. Once every message carries a button, the one action somebody actually needs stops standing out from the others.
+- **The problem underneath it:** The failure and the countdown both live at the top of the payment step. When the card was declined the failure took the strip, the countdown disappeared, and the deadline vanished at the moment it mattered most.
+- **The rule I wrote:** One place holds one message. The failure takes the strip because it stops the task; the countdown moves beside the pay button and keeps counting rather than being replaced.
+- **What the failure says now:** “Payment failed. No money has been taken. Check the card number, or use another card.” One action, and the routine messages lost theirs.
+
+**The wrong turn:** The tempting error is giving every message something to tap, because an action looks like generosity. Actions on messages nothing depends on teach people to skip past the one action that would have saved them.
+
+**What it costs:** Moving the countdown next to the pay button crowds the busiest part of the screen, and it is smaller there than it was as a banner, so it is easier to miss when nothing has gone wrong. That is what never letting two messages share a place costs you.
+
+**Still unknown:** Still unknown: whether the countdown in its new home is noticed at all once a failure has arrived above it. Reading the screen aloud will not settle that; only watching somebody pay would.
+
 - Mark which messages carry an action and which are informational.
 - Give every failure message a route forward, not just a description.
 - Check that two messages cannot appear in the same place at once.
@@ -2585,7 +2722,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Action:** Something to tap inside a message that moves the person on, worded as a verb: “use another card”, not “OK”.
+- **Route forward:** The next thing the person can do, named inside the message rather than left for them to work out.
+- **Collision:** Two messages wanting the same place at the same moment, so one replaces the other and is never seen.
 
 Stuck starting? For each failure, write the sentence the person would say next and answer it inside the message.
 
@@ -2609,7 +2748,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Reading aloud:** Saying each message to one other person and asking only what they would do next.
+- **Repair:** The change a Check question asks you to make, recorded beside the step where you made it.
 
 Stuck starting? Read each message to one person and ask only “what would you do next?”.
 
@@ -2863,7 +3003,8 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Filtered empty:** A list that is blank only because of a choice the person made, such as a price limit. Naming that choice is what turns the message into a way out.
+- **Action:** The one thing you invite the person to do next, written as the words that would appear on the button.
 
 Stuck starting? Write the new-person one first, out loud, as if you were explaining the screen to someone standing beside you.
 
@@ -2897,6 +3038,20 @@ Is it enough? Nothing on the screen changes position between loading and loaded.
 
 #### 4. Design the error states
 
+**See it first.** Made-up example. An error state on a studio membership form that said the right thing and threw away everything the person had typed.
+
+- **What failed:** Somebody filled in eight fields to join the pottery studio, pressed Join, and the request failed on a weak connection.
+- **What I wrote first:** A calm, honest message: “Something went wrong at our end. Please try again.” I was pleased with the sentence and moved on to the next screen.
+- **What I noticed later:** I drew the screen behind the message. Every field was empty. The message was being polite about a loss it had just caused.
+- **Where the effort had gone:** The whole step had gone into wording, because wording is the part you can see on a drawing. Nothing had gone into what survives the failure.
+- **What replaced it:** The eight answers stay on the screen, the message names the one field the server would not accept, and the retry sends the same form again instead of reloading the page.
+
+**The wrong turn:** The wrong turn is polishing the sentence and calling the error state finished. Wording is the visible part, so it gets the attention, while the thing that actually costs the person happens quietly behind it.
+
+**What it costs:** Keeping everything through a failure means writing down, field by field, what is held and for how long. That is a longer specification for whoever builds it, and some of it will come back as “we cannot keep that”, which you then have to warn about instead.
+
+**Still unknown:** Still unknown: what the wording should say when the failure is on the person’s side of the connection rather than yours. Nothing is built, so you cannot yet watch that failure happen.
+
 - Specify that entered work is preserved through the failure.
 - Write what happened, what it means and the route forward.
 - Add a retry that does not lose position or filters.
@@ -2912,7 +3067,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Error state:** What the screen shows when something has gone wrong: what happened, what it means, and the way forward.
+- **Preserved:** Kept through the failure, so everything typed or chosen is still on the screen when it comes back.
+- **Retry:** The control that repeats the request that failed. It should repeat only that request, not rebuild the whole page.
 
 Stuck starting? Walk one failure in your own flow and write down everything you would lose.
 
@@ -3173,6 +3330,20 @@ Is it enough? Each line tells you to do or not do something specific when you pi
 
 #### 2. Choose the comparison
 
+**See it first.** Made-up example. Choosing the chart type before choosing the comparison, and drawing a trend that never happened.
+
+- **What I held:** Results from my own practice tree test: four tasks, and for each one how many of the eleven people reached the right place. Nine, four, ten and seven.
+- **What I drew first:** A line chart, with the four tasks along the bottom. It looked like the charts I admire, and I decided it in about a minute.
+- **What the line said:** A line joins points because one follows the other. Mine joined four separate tasks, so the picture showed a dip at task two and a recovery afterwards. Nothing dipped and nothing recovered.
+- **The sentence I had skipped:** I had never written the comparison down. Written out, it read: which of the four tasks did fewest people finish. That sentence asks for bars.
+- **What went in the rejected box:** The line chart, with the reason beside it: it invents an order and a movement that four separate tasks do not have.
+
+**The wrong turn:** The wrong turn is picking the chart type from the shape you want on the page. A line is the most flattering shape in the box, and it quietly claims that each value led to the next one.
+
+**What it costs:** Four bars are plainer, take more width, and suggest no story at all. What the chart lets you say has become smaller, and all of it is now supportable.
+
+**Still unknown:** Still unknown: whether task two is genuinely harder, or whether the words in that task confused people. The chart can show which task fewest people finished. It cannot say why.
+
 - Write the one comparison you want a reader to make.
 - Choose the chart type that serves it: amounts across categories, or change over time.
 - Reject the type that would flatter your finding.
@@ -3228,7 +3399,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Axis:** The ruled edge of the chart carrying the numbers each value is read against.
+- **Direct label:** The value written on the bar itself, so nobody has to look away to a key to read it.
+- **Contrast ratio:** A number comparing the lightness of two colours, measured with a free checker rather than judged by eye.
 
 Stuck starting? Rule the axis first and mark zero before you plot anything. It is much harder to talk yourself into cutting it later.
 
@@ -3290,7 +3463,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Claim:** A statement your chart makes about the world. It can only be as large as the numbers you actually hold.
+- **Check questions:** The short set of questions at the end of the lesson. Each one sends you back to a particular box to repair something.
 
 Stuck starting? Show it without introducing it. Ask “what does this tell you?” and write the answer down before you say anything.
 
@@ -3532,7 +3706,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Role name:** A name saying what a value is for, such as surface-raised or text-quiet, rather than what it looks like.
+- **Surface:** The colour a thing sits on: the page behind everything, or a card raised above it.
+- **Status colour:** A colour kept for telling somebody how things stand, such as a warning or a failure, and used for nothing else.
 
 Stuck starting? Sort the values into roles first — surface, text, border, action, status — and name them only once the piles exist.
 
@@ -3541,6 +3717,20 @@ Is it enough? No name mentions a colour, a size or one particular screen, and yo
 </details>
 
 #### 3. Measure contrast
+
+**See it first.** Made-up example. Measuring the contrast on a token sheet, and finding that a pair is not a pair until you say what it sits on.
+
+- **What I listed:** Five pairs: body text on the page, heading on the page, quiet caption on the page, button label on the action colour, and warning text on the warning panel.
+- **What the checker gave me:** The quiet caption came out at 4.6 against the page. Above the threshold, so I wrote the number down and moved on.
+- **What the list had left out:** That same quiet caption also sits on the raised card surface and inside the tinted warning panel. Those are two more pairs, and one of them measures 3.1.
+- **The repair I reached for first:** Darkening the caption on the warning panel only. That is two greys both called text-quiet, one of which the sheet does not mention anywhere.
+- **What I did instead:** One decision written on the sheet: text-quiet darkens once, everywhere, and it is forbidden on the warning panel, where even the darker grey does not reach.
+
+**The wrong turn:** The wrong turn is measuring each colour against the page and treating that one number as the token’s number. A colour has no contrast on its own. It has a ratio against each surface it is allowed to sit on.
+
+**What it costs:** Darkening text-quiet everywhere makes it less quiet, so the gap between a caption and body text narrows on every screen. You gain a number you can defend and you give up some of the calm you drew.
+
+**Still unknown:** Still unknown: whether a pair that reaches the threshold is comfortable outdoors, on a cheap screen, or for somebody who finds small grey text hard. The checker gives you a number, not a promise.
 
 - Measure every text-on-surface pair you intend to allow.
 - Record the ratio beside each pair on the sheet.
@@ -3594,7 +3784,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Exception:** A value you had to reach for that was not on the sheet. Each one is worth writing down at the moment it happens.
+- **Missing role:** A job your screens genuinely do that no token covers yet. It earns a new token.
 
 Stuck starting? Work through the screen element by element and say the token name aloud as you place it. The moment you cannot, write the value down.
 
@@ -3618,7 +3809,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Accident:** A value that drifted in by hand while you were drawing and does nothing an existing token could not do.
+- **Check questions:** The short set of questions at the end of the lesson. Each one points you back to a particular box to repair something.
 
 Stuck starting? For each exception ask one question: does a second screen need this? That answer decides which list it belongs in.
 
@@ -3861,7 +4053,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Invention:** Anything you had to make up part way through building, because the set you were working from did not have it.
+- **Unnecessary variation:** A part or value that does the same job as one you already have, only slightly differently.
+- **Inventory:** Your written list of the components you already hold, with what each one is for.
 
 Stuck starting? Take the inventions one at a time and ask only whether a second screen needs it. Decide that before you look at how it turned out.
 
@@ -3918,7 +4112,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Evidence:** A line you can point at a note for, naming the session or test it came from and how many people were involved.
+- **Guess:** A prediction about what somebody would do that nobody has watched yet. It stays in, with the word guess beside it.
+- **Taste:** A judgement about how something looks or feels. It is allowed, and it sits below the other two.
 
 Stuck starting? Put your findings list beside the screen and answer each one in writing before you write any critique of your own. Blank answers are the work.
 
@@ -3952,6 +4148,20 @@ Is it enough? Each failure names what and where, and the not-possible list says 
 
 #### 5. Rank and record
 
+**See it first.** Made-up example. Ranking the problems left on two assembled screens, and putting the easiest one at the top.
+
+- **What was left:** Seven problems: a corner radius that did not match, a heading two steps too large, no way back from the confirmation screen, and four smaller things.
+- **How I ranked them:** By what I could fix that afternoon. The radius went first because it took a minute. The missing route back went third because it did not.
+- **What that list told a reader:** It read as a list of what I felt like doing. Somebody picking it up would have started with the corners and might never have reached the trap.
+- **The question that reordered it:** Which of these would stop somebody finishing what they came for? Only one did. With no route back, a person who reaches the confirmation by mistake is stuck on it.
+- **What the top became:** The missing route back, with one line of reason beside it. The radius dropped to sixth, still written down, still true, and no longer pretending to be urgent.
+
+**The wrong turn:** The wrong turn is ranking by what is fixable today. It feels like momentum, and it reliably buries the one problem that is expensive precisely because it matters.
+
+**What it costs:** A list led by something you cannot finish quickly looks like slower progress, and the small tidy fixes now sit below the line where they may never be done at all. You are choosing an honest order over a satisfying afternoon.
+
+**Still unknown:** Still unknown: whether the ranking is right. Task impact is your reading of what would stop somebody, and until a person tries these screens it stays a careful guess rather than a measurement.
+
 - Rank remaining problems by task impact, not by how much they bother you.
 - Write what remains untested about these screens.
 - Save the screens, the critique and the check results together.
@@ -3967,7 +4177,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Task impact:** How much a problem gets in the way of somebody finishing what they came to do, rather than how much it bothers you.
+- **Untested:** Written down as not yet checked, so that nobody reading this later mistakes silence for a pass.
 
 Stuck starting? Rank by asking what would stop someone finishing, then what would slow them, then what only bothers you.
 
