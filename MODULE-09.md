@@ -38,82 +38,201 @@ An audit of the booking flow found eleven animations. Four were feedback and sta
 
 Audit every animation you have proposed or seen in your product, classify each as feedback, continuity, attention or decoration, and remove the ones that answer no question.
 
-**Where to work:** The audit is written work. Where you need to see a transition, a local HTML file with a few CSS rules shows real timing honestly; guessing at durations on paper is where most bad motion decisions are made.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: The audit is written work. Where you need to see a transition, a local HTML file with a few CSS rules shows real timing honestly; guessing at durations on paper is where most bad motion decisions are made.
 
 - Starting material: Your m08 screens and state specifications.
 - Create HaruCourse/Practice/m09-l01-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# What motion is actually for
+#### 1. List what moves
 
-Input artifact: Your m08 screens and state specifications.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] An audit listing every animation with the question it answers
-- [ ] A classification: feedback, continuity, attention or decoration
-- [ ] A removal list with the time each removal gives back
-- [ ] A stated rule for when your product animates
-
-## 1. List what moves
 - List every animation in your designs, including ones you assumed.
 - Include page transitions, hovers, presses and anything that fades.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A list of everything in your designs that changes over time, including movement you have only imagined.
 
-## 2. Ask what each answers
+Worksheet fields for this step:
+
+- Every animation in your designs, one per line — Walk one whole task slowly. Presses, hovers, screen changes, anything that fades, anything that loads.
+- The ones you assumed rather than drew
+
+<details>
+<summary>Help with this step</summary>
+
+- **Animation:** Anything that changes over time rather than all at once: a fade, a slide, a colour easing in, a spinning shape.
+- **Millisecond:** A thousandth of a second. Motion is written in milliseconds because the useful range is 100 to 400 of them.
+
+Stuck starting? Walk one booking from start to finish and say out loud what changes at each tap.
+
+Is it enough? You have caught the quiet ones: hover states, presses, loading, and the change between screens.
+
+</details>
+
+#### 2. Ask what each answers
+
+**See it first.** Made-up example. Auditing eleven animations in a booking app, and getting the first classification wrong.
+
+- **What I listed first:** Eleven animations, written down as effects: fade, slide, bounce, shimmer. A list of techniques rather than of purposes.
+- **My first classification:** I called the screen slide continuity, because the new screen came in from the right. It sounded like an explanation.
+- **The question that broke it:** Continuity answers “where did this come from?”. Nothing was to the right a moment earlier. There was no “there” for it to come from.
+- **What it actually was:** Decoration, charging about 400 milliseconds on every screen change. Decoration is allowed. Decoration that makes you wait is not.
+- **What removing it gave back:** About 1.6 seconds across a four-screen booking. The flow felt faster straight away, and nothing looked broken without the slide.
+
+**The wrong turn:** The wrong turn is naming the label from the movement. A slide always sounds like continuity, which is exactly why the expensive ones survive an audit.
+
+**What it costs:** Classifying by the person’s question is slower, and it will make some of your favourite work look pointless. That is the finding, not a failure of the method.
+
+**Still unknown:** Still unknown: whether the durations you are estimating match what a real device does. Until something runs on a phone, these remain considered guesses.
+
 - For each, write the question a person is asking at that moment.
 - Classify it as feedback, continuity, attention or decoration.
 - Mark any that answers nothing.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each animation paired with the question a person is asking at that moment, then marked feedback, continuity, attention or decoration.
 
-## 3. Count the cost
+**Try it with help.** Six animations from a made-up booking app. For each one, decide which question it answers for the person in that moment.
+
+- The Book button darkens the instant your finger lands on it, before anything has been sent.
+  - **feedback** — The person acted and the product answered inside the same moment. That is what “did that work?” needs.
+  - continuity — Nothing arrived from anywhere. The button stayed where it was and only changed its appearance.
+  - attention — Attention motion reports a change the person did not cause. This one is caused by their own finger.
+  - decoration — It answers a real question. Remove it and a slow connection leaves the press unacknowledged.
+- The filter panel grows out of the filter button that opened it, and shrinks back into that button when it closes.
+  - feedback — The press is already acknowledged by the button itself. This one is about the panel’s place, not about the press.
+  - **continuity** — It shows where the panel came from and where it will go back to, so the person does not have to remember.
+  - attention — The person opened the panel, so nothing is being reported to them that they did not ask for.
+  - decoration — Take it away and the panel appears from nowhere. Something is lost, so it is not decoration.
+- While you are reading, the remaining-places number changes from 3 to 2 and glows once as it does.
+  - feedback — Feedback answers an action the person has just taken. Nobody took an action here.
+  - continuity — Nothing travelled from one place to another. The number changed where it stood.
+  - **attention** — The person did not cause this and would otherwise miss it. The glow answers “what changed?”.
+  - decoration — Without it the number changes in silence and someone books a place that has already gone.
+- Tapping a class row expands it into the full detail view, and the row stays visible beneath the top of it.
+  - feedback — The tap needs its own acknowledgement, and that should arrive sooner than this movement can.
+  - **continuity** — The detail view comes out of the row it belongs to, so the way back is obvious without reading anything.
+  - attention — The person caused this by tapping. Attention motion is for changes they did not cause.
+  - decoration — It carries the link between the row and the detail. Removing it costs the person that link.
+- After you press Pay, the label becomes “Paying” and a small dot pulses beside it until the reply arrives.
+  - **feedback** — It answers “did that work?” at once, and keeps answering it for as long as the person is waiting.
+  - continuity — Nothing moved from anywhere. The control changed in place.
+  - attention — The person pressed Pay, so this is a reply to them rather than news about something else.
+  - decoration — Take it away and a slow connection leaves four silent seconds, which is where second presses come from.
+- Every screen slides in from the right when you navigate, and you cannot read anything for about 400 milliseconds.
+  - feedback — The tap was already acknowledged by the control. This begins afterwards and only delays the result.
+  - continuity — Continuity needs a place the content came from. An invented direction is not a place.
+  - attention — The person asked for the new screen, so nothing is being reported to them.
+  - **decoration** — Nothing was to the right a moment earlier, so it explains nothing, and it charges 400 milliseconds every single time.
+
+**Then:** Now label your own list the same way, and mark every item that answers nothing.
+
+**What to watch for:** The pattern: ask the person’s question first and let the label follow. Feedback answers “did that work?”. Continuity answers “where did this come from?”. Attention answers “what changed?”. Anything left over is decoration.
+
+Worksheet fields for this step:
+
+- For each animation: the question the person is asking at that moment, and its kind
+- The ones that answer no question at all
+
+<details>
+<summary>Help with this step</summary>
+
+- **Feedback motion:** Answers “did that work?” inside the moment of acting.
+- **Continuity motion:** Answers “where did this come from?” when something appears, grows or moves.
+- **Attention motion:** Answers “what changed?” for something the person did not cause.
+- **Decoration:** Answers nothing. Allowed, but only where it is free and does not repeat.
+
+Stuck starting? Take the first animation on your list and finish the sentence “at this moment the person is wondering …”.
+
+Is it enough? Every line has a question beside it, and the ones with no question are marked.
+
+</details>
+
+#### 3. Count the cost
+
 - Estimate the delay each animation adds before the next action is possible.
 - Add up the delay across one complete task.
 - Mark anything that moves an element the person is about to tap.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** An estimated delay for each animation, a total across one complete task, and anything that moves under a finger.
 
-## 4. Cut and justify
+Worksheet fields for this step:
+
+- For each animation: how long before the next action is possible, in milliseconds — Where you do not know, say “one elephant” out loud. That is roughly one second, and it is enough to judge by.
+- The total delay added across one complete task
+- Anything that moves an element the person is about to tap
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Count only the time before the next action is possible, not the whole length of the movement.
+
+Is it enough? The total is a number you can say out loud, and it either surprised you or it did not.
+
+</details>
+
+#### 4. Cut and justify
+
 - Remove every animation that answers nothing and costs time.
 - Keep decoration only where it delays nothing and does not repeat.
 - Write one sentence justifying each animation you keep.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every animation that answers nothing and costs time removed, with one sentence justifying each one you kept.
 
-## 5. Write the rule
+Worksheet fields for this step:
+
+- What you removed, and the time each removal gives back
+- One sentence for each animation you kept, naming the question it answers
+- Any decoration you kept, and why it costs nothing
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Start with the most expensive item on your cost list, not the ugliest one.
+
+Is it enough? Nothing survives on the grounds that it looks current, and every kept item names its question.
+
+</details>
+
+#### 5. Write the rule
+
 - Write when your product animates and when it does not.
 - Record the total time your removals gave back across one task.
 - Save the audit, the rule and the removal list.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A written rule for when your product animates, the time your removals gave back, and the repair the Check questions asked for.
 
-## Review and handoff
-- Every animation is listed with the question it answers: [evidence reference]
-- Each is classified into one of the four kinds: [evidence reference]
-- The time cost across one task is counted: [evidence reference]
-- A rule for when the product animates is written: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- When your product animates, and when it does not — Write it so it would settle an argument you are not in the room for.
+- The total time your removals gave back across one task
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the rule, then test it against the animation you cut. If the rule would have allowed it, tighten the rule.
+
+Is it enough? The rule would settle a proposal made by someone who has not read this lesson.
 
 </details>
+
+**Save and continue.** Saved for you: The list, the classification, the costs and the rule save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. Keep your Module 8 screens and state notes to hand; most of the list comes from them. What your creator sees: Your creator reads the removals and the rule. The removals are the part that shows judgement, so leave the reasons in. Your next action: Open Your work and choose Ready for review. The next lesson takes the feedback items and specifies how each control acknowledges a press.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -253,81 +372,172 @@ The book button did nothing visible until the server replied, which on a throttl
 
 Specify press, hover and focus feedback for three controls so that every action is acknowledged immediately, and separate acknowledgement from the result that follows later.
 
-**Where to work:** A local HTML file with three buttons and a few CSS rules shows press, hover and focus honestly, including what happens on a touch screen if you open it on your phone. Paper cannot show feedback timing.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local HTML file with three buttons and a few CSS rules shows press, hover and focus honestly, including what happens on a touch screen if you open it on your phone. Paper cannot show feedback timing.
 
 - Starting material: Your m08 action components and their state tables.
 - Create HaruCourse/Practice/m09-l02-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Immediate feedback and the feel of a control
+#### 1. Read and separate
 
-Input artifact: Your m08 action components and their state tables.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. A Book button that stayed silent for four seconds, and the two people in an invented walkthrough who pressed it twice.
 
-## Output checklist
-- [ ] Press, hover and focus feedback specified for three controls
-- [ ] The three moments separated: press, acknowledgement, outcome
-- [ ] A list of anything currently hover-only, with its touch route
-- [ ] A tab pass recording where focus was invisible
+- **What I specified:** One line: press Book, the booking is made. It looked complete, because on my own machine the reply came back before my finger lifted.
+- **What the line hid:** On a five-year-old phone on a slow connection the reply took about four seconds. In those four seconds nothing on the screen changed at all.
+- **What that produced:** In a made-up walkthrough, two people pressed the button a second time. From where they were sitting, the first press had not happened.
+- **What I had confused:** I had written one moment where there are three: the press, the acknowledgement and the outcome. The middle one was simply missing.
+- **What replaced it:** Darken under the finger. Label becomes “Booking…” and the control stops accepting presses. The result message arrives when the reply does.
 
-## 1. Read and separate
+**The wrong turn:** The wrong turn is judging the wait on your own machine. A reply that feels instant to you is the four seconds that decide whether someone books twice.
+
+**What it costs:** Three moments is more to specify and more to build than one line, and most of the time the middle one is on screen for a blink. The blink is what prevents the duplicate booking.
+
+**Still unknown:** Still unknown: how long the wait really is for your users. Until something runs on a real connection, four seconds is an assumption rather than a measurement.
+
 - Read the assigned status heuristic and the keyboard pattern for one component you use.
 - Write the three moments for one control: press, acknowledgement, outcome.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One control written as three separate moments, and an honest answer about what a four-second wait looks like today.
 
-## 2. Specify the feedback
+Worksheet fields for this step:
+
+- For one control: the press, the acknowledgement and the outcome, as three separate lines
+- What the person sees if the reply takes four seconds — If the honest answer is “nothing”, that is the finding this lesson exists for.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Acknowledgement:** The immediate sign that the press registered. It is not the result, and it must not pretend to be.
+- **Outcome:** What actually happened, which may arrive seconds later or not at all.
+
+Stuck starting? Write the three moments as three lines, then read the middle one aloud. If it is empty, the person meets silence.
+
+Is it enough? The acknowledgement line describes something visible that does not claim the outcome.
+
+</details>
+
+#### 2. Specify the feedback
+
 - For three controls, specify what changes on press, on hover and on focus.
 - Make each state distinguishable without colour.
 - Give the acknowledgement a label change, not only a spinner.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Press, hover and focus specified for three controls, each state separable without colour, and each acknowledgement carrying a change of words.
 
-## 3. Remove hover dependence
+**Try it with help.** A supplied made up case. Pressing Book sends a request that takes about four seconds on a slow connection. Four proposals for what the person sees during those four seconds.
+
+Which proposal acknowledges the press without claiming an outcome that has not happened?
+
+- **The button darkens on touch, its label becomes “Booking…”, it stops accepting presses, and the result message replaces it when the reply arrives.** — The press, the acknowledgement and the outcome stay separate, and the person can always tell which of the three they are in.
+- The confirmation message appears the moment Book is pressed, and is taken away again if the booking turns out to have failed. — This tells the person something that is not yet true. Removing a confirmation afterwards is far worse than a short honest wait.
+- A spinning shape covers the whole screen until the reply arrives. — It does acknowledge the press, and it also takes the screen away, so the person cannot re-read what they are booking while they wait.
+- Nothing changes, because four seconds is short and the message will arrive on its own. — Four silent seconds is where second presses come from, and a second press can make a second booking.
+
+**Then:** Write the middle moment for each of your three controls, and give it a change of words rather than only a shape that spins.
+
+Worksheet fields for this step:
+
+- Control 1 · what changes on press, on hover and on focus
+- Control 2 · what changes on press, on hover and on focus
+- Control 3 · what changes on press, on hover and on focus
+- Which states you could still tell apart with the colour taken out — Photocopy the states in black and white, or look at them through a greyscale filter on your phone.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Hover:** A pointer resting on something without pressing. It does not exist on a touch screen, so nothing essential can live there.
+- **Focus:** Where the keyboard currently is. Its outline is how a keyboard user knows their place, not styling to be tidied away.
+
+Stuck starting? Do the press row for all three controls first, then hover, then focus. Doing one control end to end hides the inconsistencies.
+
+Is it enough? Each state is separable with the colour taken out, and each acknowledgement changes words as well as appearance.
+
+</details>
+
+#### 3. Remove hover dependence
+
 - List everything currently revealed only on hover.
 - Give each a route that works on touch.
 - Delete any hover-only control that turns out to be unnecessary.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A list of everything currently revealed only on hover, each given a route that works on a touch screen or deleted.
 
-## 4. Test focus and touch
+Worksheet fields for this step:
+
+- Everything currently revealed only when a pointer rests on it
+- For each: the route that works on touch, or the note that you deleted it
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Open your design on your phone and try every action you can name. Anything you cannot reach is hidden behind hover.
+
+Is it enough? Nothing essential is left that only a pointer can find.
+
+</details>
+
+#### 4. Test focus and touch
+
 - Tab through your controls and record where focus is invisible.
 - Open the same page on a phone and check every control is reachable.
 - Repair the worst failure you find.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A recorded keyboard pass naming where focus was invisible, a phone pass naming what you could not reach, and one repair.
 
-## 5. Record
+Worksheet fields for this step:
+
+- Where the keyboard stops, in order, and where you could not see the focus — Where nothing is built, number the stops on a printed screen and mark every row untested.
+- What you could not reach when you opened the same design on a phone
+- The worst failure you found, and what you changed
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Where nothing is built, print the screen and number the stops in the order a keyboard would reach them, then mark every row untested.
+
+Is it enough? The notes say what you saw, not what you intended.
+
+</details>
+
+#### 5. Record
+
 - Write what you could not verify without a full implementation.
 - Save the specifications with the tab-pass results.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** An honest note of what you could not verify without a build, and the repair the Check questions asked for.
 
-## Review and handoff
-- Press, hover and focus are specified for three controls: [evidence reference]
-- Acknowledgement is separated from outcome: [evidence reference]
-- Nothing essential depends on hover: [evidence reference]
-- A tab pass is recorded with failures named: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What you could not verify without something built and running
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write two short lists: what you observed on your own device, and what you have not established at all.
+
+Is it enough? Nothing untested is written as though it had been tested.
 
 </details>
+
+**Save and continue.** Saved for you: The three moments, the control specifications and the test notes save as you type, on this device first and then online. Kept outside the app: Keep your Module 8 action specification and state tables open beside this; the three controls should come from there. What your creator sees: Your creator reads the three-moment specification and the keyboard pass. The untested rows are as useful to him as the tested ones. Your next action: Open Your work and choose Ready for review. The next lesson takes the continuity items from lesson 1 and gives each a duration and an easing.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -467,82 +677,171 @@ Three transitions were designed. The filter panel scales and fades from the filt
 
 Design three transitions that show where content came from or went, each with a stated duration and easing, and prove each one is doing explanatory work rather than filling time.
 
-**Where to work:** A local HTML file with CSS transitions lets you feel durations honestly and change them in seconds. Paper storyboards work for the spatial relationship; they cannot tell you whether 400ms is too slow, and it usually is.
+**Where to practise:** Draw the start and end frames of your three transitions on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: A local HTML file with CSS transitions lets you feel durations honestly and change them in seconds. Paper storyboards work for the spatial relationship; they cannot tell you whether 400ms is too slow, and it usually is.
 
 - Starting material: Your audit's continuity items and the screens they occur on.
 - Create HaruCourse/Practice/m09-l03-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Transitions that explain a change
+#### 1. Read and map the relationships
 
-Input artifact: Your audit's continuity items and the screens they occur on.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Three transitions specified with origin, duration and easing
-- [ ] A stated reason for each: what relationship it explains
-- [ ] One rejected transition with the reason recorded
-- [ ] A rule for what your product fades and what it moves
-
-## 1. Read and map the relationships
 - Read the assigned animation guidance for duration and easing vocabulary.
 - For each continuity item from your audit, write what caused it and where it goes.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each continuity item from your audit mapped to what caused it and where it returns, with the placeless ones marked as fades.
 
-## 2. Design three
+Worksheet fields for this step:
+
+- For each item: what caused it, and where it goes when it is dismissed
+- The ones with no place on screen to come from or return to — These are the fades. Nothing moved, so nothing should appear to travel.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Transition:** The change between two states of a screen, described by where it starts, where it ends and how long it takes.
+- **Easing:** How the speed changes across the movement. Entering fast then settling reads as arrival; a steady speed reads as machinery.
+
+Stuck starting? For each item finish two sentences: “this came from …” and “when it closes it goes back to …”.
+
+Is it enough? Anything you could not finish both sentences for is sitting in the fade list.
+
+</details>
+
+#### 2. Design three
+
+**See it first.** Made-up example. Three transitions for a booking app, and the one that was a slide pretending to be an explanation.
+
+- **What I designed first:** The confirmation screen sliding in from the right over 400 milliseconds, softened at both ends. It looked expensive and I was pleased with it.
+- **The question I had skipped:** Where did the confirmation come from? Nowhere. The payment screen had never been sitting to its left.
+- **What the slide was doing:** Claiming a direction that does not exist, and charging 400 milliseconds for the claim. It read as smooth and it taught nothing.
+- **What replaced it:** A plain fade of 120 milliseconds. Honest, because nothing moved from anywhere, and short enough to be over before you look for it.
+- **What the other two kept:** The filter panel scales out of the filter button over about 200 milliseconds. The detail view expands from its row over about 250 milliseconds, with the row staying put beneath.
+
+**The wrong turn:** The wrong turn is choosing the movement first and finding the relationship afterwards. A slide always looks like an explanation, which is how the empty ones survive.
+
+**What it costs:** Fades look plainer than slides, and a screen of fades can seem flat next to a competitor’s reel. Flat and fast is the better trade.
+
+**Still unknown:** Still unknown: whether 200 milliseconds reads as connected on a slow phone, where frames arrive unevenly. That needs a device you may not own yet.
+
 - Specify origin, movement, duration and easing for each.
 - Set duration from the distance and size, not from a single house value.
 - Make dismissal reverse the entry so the relationship holds both ways.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three transitions specified with an origin, a movement, a duration in milliseconds, an easing, and an exit that reverses the entry.
 
-## 3. Test the timings
+Worksheet fields for this step:
+
+- Transition 1 · origin, movement, duration, easing and exit
+- Transition 2 · origin, movement, duration, easing and exit
+- Transition 3 · origin, movement, duration, easing and exit
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the origin before the duration. A transition with no origin does not need a number, it needs a fade.
+
+Is it enough? Each exit is the entry run backwards, so the relationship holds in both directions.
+
+</details>
+
+#### 3. Test the timings
+
 - Build the transitions roughly in a local file or storyboard the frames.
 - Try each at half and double your chosen duration.
 - Keep the shortest that still reads as connected.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each transition tried at half and at double your duration, with the shortest one that still reads as connected kept.
 
-## 4. Reject one and sequence the rest
+**Try it with help.** A supplied made up timing test. The same panel transition was tried at three durations. At 100 milliseconds the panel seemed to appear rather than travel. At 200 the travel was visible and the panel was ready before the hand had moved. At 400 the person was waiting for it.
+
+Which duration do you keep, and on what grounds?
+
+- **200 milliseconds, because it is the shortest one where the travel is still visible enough to show where the panel came from.** — Duration is set by the work the movement has to do. The shortest that still explains is the right one, and here that is the middle value.
+- 100 milliseconds, because faster is always better. — Faster is usually better and is not a rule. At 100 the panel arrives without showing its journey, so the time is spent and the explanation never lands.
+- 400 milliseconds, because the movement is easier to follow. — Easier to follow stops being useful once the relationship has landed. Everything after that point is the person waiting.
+- Any of the three, since the difference is too small for a person to notice. — The gap between 100 and 400 milliseconds is roughly the gap between instant and slow. It is one of the few timing differences almost everybody feels.
+
+**Then:** Run the same test on your own three, and write down which route you used: drawn frames flicked by hand, or a free prototyping tool.
+
+Worksheet fields for this step:
+
+- For each transition: what happened at half your duration and at double it — Draw the start and end frames and flick between them, or build it in a free prototyping tool. Say which route you used.
+- The duration you kept for each, and why it is the shortest that still reads as connected
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Draw the first and last frame of each transition, then flick between them at the speed you intend and at half that speed.
+
+Is it enough? Each duration has a reason attached that is about distance and legibility, not about a house number.
+
+</details>
+
+#### 4. Reject one and sequence the rest
+
 - Find a transition that explains nothing and remove it.
 - Check no two transitions run at once in the same view.
 - Sequence or drop where they compete.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One transition removed with its cost and what it explained recorded, and no two transitions running at once in the same view.
 
-## 5. Write the rule
+Worksheet fields for this step:
+
+- The transition you removed, what it cost, and what it explained
+- Anywhere two transitions ran at once, and how you sequenced or dropped them
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Find the one that delays the most and explains the least. That is almost always the rejection.
+
+Is it enough? The rejection note says what the transition cost, not only that you did not like it.
+
+</details>
+
+#### 5. Write the rule
+
 - Write when your product moves something and when it simply fades.
 - Record the rejected transition and why.
 - Save the three specifications with their timings.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A rule for what your product moves and what it fades, where the frames live, and the repair the Check questions asked for.
 
-## Review and handoff
-- Each transition states the relationship it explains: [evidence reference]
-- Duration follows distance and was tested at two speeds: [evidence reference]
-- Dismissal reverses entry: [evidence reference]
-- One transition was rejected with the reason recorded: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- When your product moves something, and when it simply fades
+- Where the frames and timings live — File names or “paper, in my folder”. Naming a file does not upload it.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Test your rule against the transition you rejected. If the rule would have allowed it, the rule is too loose.
+
+Is it enough? The rule decides a case you have not met yet.
 
 </details>
+
+**Save and continue.** Saved for you: The relationship map, the three specifications, the timing tests and the rule save as you type, on this device first and then online. Kept outside the app: The frames stay on paper or in your own folder. Photograph them if you like and write the file name in step 5; naming a file does not upload it. What your creator sees: Your creator reads the three specifications and the rejection. Show the rejected transition beside the ones you kept. Your next action: Open Your work and choose Ready for review. The next lesson turns on the reduced-motion setting and gives every one of these a second version.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -682,82 +981,191 @@ With the setting on, three of the five kept animations needed alternatives. The 
 
 Turn on your own device's reduced-motion setting, design an alternative for every animation you kept, and state which are essential enough to survive in a reduced form.
 
-**Where to work:** Your own device: the assigned page lists where the setting lives on Windows, macOS, iOS, Android and Linux. A local HTML file with a reduced-motion media query shows both versions side by side with no account or tooling.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Your own device: the assigned page lists where the setting lives on Windows, macOS, iOS, Android and Linux. A local HTML file with a reduced-motion media query shows both versions side by side with no account or tooling.
 
 - Starting material: Your animation audit and the three transitions you designed.
 - Create HaruCourse/Practice/m09-l04-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Reduced motion is not an afterthought
+#### 1. Turn it on and read
 
-Input artifact: Your animation audit and the three transitions you designed.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Turning the reduced-motion setting on for the first time, and assuming it meant switching every animation off.
 
-## Output checklist
-- [ ] The reduced-motion setting turned on and what changed recorded
-- [ ] An alternative specified for every kept animation
-- [ ] A list of essential motion with its reduced form
-- [ ] Anything removed entirely, with the reason
+- **What I assumed:** Reduced motion means no motion. One rule, easy to write: when the setting is on, nothing animates anywhere.
+- **What that did:** The pulsing dot beside the Book button went too. With the setting on, pressing Book produced four silent seconds and no sign that anything was happening.
+- **What I had missed:** The request is for less movement, not for less information. That dot was carrying the only news the person had while they waited.
+- **What the rule became:** Three outcomes instead of one. Some animations survive in a smaller, gentler form. Some become an instant change. Some go entirely.
+- **What the dot became:** A small dot fading between two shades in one place, beside the words “Booking…”, rather than a shape travelling across the button.
 
-## 1. Turn it on and read
+**The wrong turn:** The wrong turn is treating the setting as an off switch. It strips the explanation out along with the decoration, and the person who asked for less movement ends up with less information than everybody else.
+
+**What it costs:** Two versions of each animation is twice the specification, and most of your users will never see half of it. It is a few minutes each, and it is the difference between a quieter product and a silent one.
+
+**Still unknown:** Still unknown: whether your reduced versions are comfortable for people who need the setting. Turning it on yourself shows what changes; it does not tell you how it feels to them.
+
 - Read the assigned page and find the setting on your own device.
 - Turn it on and note which apps visibly change behaviour.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The reduced-motion setting turned on, on a named device, with a note of what visibly changed.
 
-## 2. Classify your motion
+Worksheet fields for this step:
+
+- The device you used, and where the setting lives on it
+- What visibly changed once the setting was on — Open two or three apps you use daily and watch what stops moving. If nothing changes, write that too, with today’s date.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Reduced motion:** A setting in every major operating system by which a person asks for less movement. It is a request from them, not a preference you grant.
+- **Parallax:** Two layers moving at different speeds as you scroll, so one appears to sit behind the other. It is the pattern most likely to cause harm.
+
+Stuck starting? Find the setting on your own device first, then open two apps you use daily and watch what stops moving.
+
+Is it enough? You have named the device and written what you actually saw, including “nothing visibly changed” if that is the truth.
+
+</details>
+
+#### 2. Classify your motion
+
 - Mark each kept animation essential, explanatory or decorative.
 - For essential motion, design a smaller local version.
 - For explanatory motion, design a fade that preserves the meaning.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every kept animation given one of three outcomes, and each one that survives written out in both its full and its reduced form.
 
-## 3. Cut the risky patterns
+**Try it with help.** Six animations from the same made up booking app. The reduced-motion setting is on. For each one, decide what should happen to it.
+
+- A dot that pulses beside the Book button while the request is on its way.
+  - **survives reduced** — It carries the only news the person has while they wait. Make it smaller and keep it in one place, and keep it.
+  - becomes instant — There is no end state to jump to. The whole point of it is the time in between, and that time has not finished yet.
+  - disappears — Remove it and the person meets silence, which is the thing feedback exists to prevent.
+- The filter panel scaling out of the filter button over 200 milliseconds.
+  - **survives reduced** — The panel’s origin is worth keeping, so replace the travel with a short fade in place and leave the button marked as open.
+  - becomes instant — Appearing with no change at all loses the link to the button, and that link was the work the animation was doing.
+  - disappears — The movement can go; the explanation it carried cannot. Something quieter has to take its place.
+- The photograph at the top of the class page drifting at a different speed from the text as you scroll.
+  - survives reduced — There is no gentler version of a large area sliding under the reader’s eyes while they are trying to read.
+  - becomes instant — There is no end state to arrive at. The effect exists only for as long as the person keeps scrolling.
+  - **disappears** — Large, continuous, unrequested movement is the pattern most likely to make someone feel ill. Cut it first, then ask whether it earns its place at all.
+- The underline sliding along the tab bar to the tab you have just chosen.
+  - survives reduced — A fade would do no harm, and it is not needed here: the end state alone says which tab is chosen.
+  - **becomes instant** — The underline’s final position is the whole message. Put it there at once and nothing has been lost.
+  - disappears — The underline itself has to stay, or nothing shows which tab is chosen. It is the travel that goes, not the mark.
+- The password field shaking from side to side when the password is wrong.
+  - survives reduced — A smaller shake is still a shake. Repeating movement is the kind to remove rather than to shrink.
+  - becomes instant — There is no end state here. Nothing is left behind once the shaking stops.
+  - **disappears** — A repeating side-to-side movement is exactly what this setting exists to stop, and the message beside the field already says what is wrong.
+- The remaining-places number counting down from 5 to 4 over half a second.
+  - survives reduced — Counting through 5 and 4 adds nothing the final number does not already say.
+  - **becomes instant** — The number that matters is 4. Show it at once, and mark the change some other way if the person needs to notice it.
+  - disappears — The number has to change, or somebody books a place that has gone. It is the counting that goes, not the change.
+
+**Then:** Work down your own kept list and give every animation one of these three outcomes, then write both versions of the ones that survive.
+
+**What to watch for:** The pattern: ask what the person learns from the animation. If they learn something nothing else tells them, it survives in a gentler form, usually a fade. If the end state alone tells them, it becomes instant. If they learn nothing, it goes. Reduced is not removed.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Animation 1 · the full version, what the person learns from it, and its reduced version
+- Animation 2 · the full version, what the person learns from it, and its reduced version
+- Animation 3 · the full version, what the person learns from it, and its reduced version
+- Animation 4 · the full version, what the person learns from it, and its reduced version
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the animation you would defend hardest and write what a person learns from it, in one sentence, before you design anything.
+
+Is it enough? Every surviving animation has a reduced version that teaches the same thing without large movement.
+
+</details>
+
+#### 3. Cut the risky patterns
+
 - Identify anything moving a large area, repeating, or parallax.
 - Remove those entirely under the setting.
 - Ask whether each is worth keeping even without the setting.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Everything that moves a large area, repeats or drifts on scroll listed and removed under the setting, with the reason recorded.
 
-## 4. Test with the setting on
+Worksheet fields for this step:
+
+- Anything that moves a large area, repeats, or drifts as the person scrolls
+- What you removed entirely under the setting, and the reason
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Go through your kept list once looking only for size, repetition and scroll-linked drift. Ignore everything else on this pass.
+
+Is it enough? Each removal has a reason, and you have asked of each whether it earns its place even with the setting off.
+
+</details>
+
+#### 4. Test with the setting on
+
 - Walk one complete task with reduced motion enabled.
 - Record anything that became confusing because a relationship was lost.
 - Repair by adding a gentler change, not by restoring the movement.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One complete task walked with the setting on, with anything that became confusing named and repaired by a gentler change.
 
-## 5. Record honestly
+Worksheet fields for this step:
+
+- What you saw walking one complete task with the setting on
+- Anything that became confusing because a relationship was lost, and the gentler change you added — Repair by adding a quieter change, never by putting the movement back.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Walk the task once without stopping and note where you lost track, then walk it again and write down why.
+
+Is it enough? Every repair is a quieter change rather than the movement put back.
+
+</details>
+
+#### 5. Record honestly
+
 - Write the device and setting you tested with.
 - State that your own test is not testing with affected users.
 - Save both versions of every animation.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** An honest statement of what your own test does not establish, and the repair the Check questions asked for.
 
-## Review and handoff
-- The setting was turned on and the test recorded: [evidence reference]
-- Every kept animation has a reduced alternative: [evidence reference]
-- Essential motion survives in a reduced form: [evidence reference]
-- Large-area and repeating motion is removed under the setting: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What your own test does not tell you — Turning the setting on yourself shows what changes. It does not tell you how the result feels to someone who needs it.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write one sentence saying plainly that testing the setting on yourself is not testing with people who rely on it.
+
+Is it enough? Nothing in your notes reads as evidence about people you have not spoken to.
 
 </details>
+
+**Save and continue.** Saved for you: The device note, both versions of each animation, the removals and the limits save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. Keep your lesson 3 transition specifications open beside this, since each one needs its reduced pair. What your creator sees: Your creator reads the paired specifications and the honest limit at the end. The limit is the part that makes the rest believable. Your next action: Open Your work and choose Ready for review. The next lesson looks at gestures and what people can actually discover without being told.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -897,83 +1305,173 @@ The shortlist row used swipe-left to remove, with no visible control. Three peop
 
 Specify the gestures your product uses, give every one a visible alternative, and record which were discoverable when someone tried the product without being told.
 
-**Where to work:** Paper prototypes work for discoverability: hand someone the printed screen and ask them to do the task, then watch what they reach for. For real gesture behaviour, open a local HTML page on your own phone.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Paper prototypes work for discoverability: hand someone the printed screen and ask them to do the task, then watch what they reach for. For real gesture behaviour, open a local HTML page on your own phone.
 
 - Starting material: Your m08 list components and the flows using them.
 - Create HaruCourse/Practice/m09-l05-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Gestures and what people can discover
+#### 1. List the gestures
 
-Input artifact: Your m08 list components and the flows using them.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A list of every gesture with its visible alternative
-- [ ] Discoverability results from three people who were not told
-- [ ] Destructive gestures specified with undo or confirmation
-- [ ] Any gesture removed for being unconventional or one-handed-impossible
-
-## 1. List the gestures
 - List every gesture your design uses or assumes.
 - Mark which are platform conventions and which you invented.
 - Mark which are the only route to their action.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every gesture in your design listed, with the invented ones marked and the ones that are the only route flagged.
 
-## 2. Add visible alternatives
+Worksheet fields for this step:
+
+- Every gesture your design uses or assumes, and whether you invented it — Include swipes, long presses, pinches, pull-to-refresh and drags. Include the ones you have only imagined so far.
+- Which gestures are the only way to reach their action — If no button, menu item or link does the same job, the gesture goes here.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Gesture:** An action done with a finger that has no control on the screen: a swipe, a pinch, a long press, a two-finger anything.
+- **Platform convention:** A gesture the person’s phone already uses everywhere else, so they may arrive knowing it. Pull down to refresh is one.
+
+Stuck starting? Walk one task in your design and write down every place you imagined a finger moving rather than tapping.
+
+Is it enough? Every gesture is marked invented or conventional, and you can say which ones have no button anywhere.
+
+</details>
+
+#### 2. Add visible alternatives
+
+**See it first.** Made-up example. Pairing a swipe with a visible control, after first deciding the swipe was fine on its own.
+
+- **What the design had:** Swipe left on a shortlist row to remove it. No button, no menu, nothing on the row. It looked wonderfully clean.
+- **What I wrote first:** “Swiping to remove is a standard pattern, so people will find it.” I added a small hint the first time the list opens and called it solved.
+- **Why that failed:** The hint appears once, to somebody who is not yet removing anything. By the time she wants to remove a class, the hint was weeks ago.
+- **What I did instead:** Every row got a quiet remove control that is always there. The swipe stayed as a shortcut for anyone who already knows it.
+- **What the pairing cost:** The row is busier by one small control. It is now the only version of the row that works for somebody who has never met a swipe.
+
+**The wrong turn:** The wrong turn is teaching the gesture instead of pairing it. A hint, a tour or a little animation all assume the person is watching at the one moment you chose.
+
+**What it costs:** A visible control takes space and makes the row less clean. Clean was always being paid for by the people who could not find the action.
+
+**Still unknown:** Still unknown: whether the quiet control is quiet enough to stay out of the way, or so quiet that it reads as decoration.
+
 - Give every gesture a visible control that does the same thing.
 - Keep the gesture as an accelerator where it matches convention.
 - Remove any invented gesture that has no clear benefit.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A visible control written beside every gesture, and any gesture you removed with what it was for.
 
-## 3. Test discoverability
+Worksheet fields for this step:
+
+- Each gesture, beside the visible control that does the same job
+- Any gesture you removed, and what it was for
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? For each gesture, design the control somebody would use if they had never heard of the gesture. That control is the real route.
+
+Is it enough? No line in your list has an empty control column.
+
+</details>
+
+#### 3. Test discoverability
+
 - Ask three people to complete the action without telling them how.
 - Record what each reached for first.
 - Note anyone who gave up or used a longer route.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What three people reached for when nobody told them how, or the supplied results with the gap dated.
 
-## 4. Make destruction recoverable
+**Try it with help.** Supplied made-up results. Three people were each asked to remove a class from a shortlist and told nothing else. The first pressed and held the row. The second opened the class page and looked for a control there. The third tapped the row twice, then said she would delete the whole shortlist and start again. Nobody swiped.
+
+What do these three attempts tell you about the swipe?
+
+- **The swipe is a shortcut for people who already know it, and the real route is whatever those three could find.** — Three people wanted the action and none of them found the gesture. That makes the gesture an extra, and it makes the visible control the actual design.
+- They needed a hint, so a short tip on first use would fix it. — A tip arrives once, before anybody wants to remove anything. All three were already trying, and none of them had a tip in mind.
+- Three people is too few to conclude anything. — Three is small for counting how often something happens. It is plenty for showing that a hidden action can be missed, which is all this claims.
+- The swipe should be deleted, since nobody used it. — Nobody found it, which is not the same as nobody wanting it. Kept as a shortcut beside a visible control it costs nothing and helps the people who do know.
+
+**Then:** Read your own records the same way. For each gesture, write whether it is now a shortcut or still the only route to its action.
+
+Worksheet fields for this step:
+
+- How you found out (Three people tried it without being told / One or two people tried it / Nobody was available: I used the supplied made-up results and dated the gap)
+- What each person reached for first, in the order they tried things — Write what they touched, not what you think they meant. Note anyone who gave up or took a longer route.
+- What that tells you about each gesture
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask anyone to hand: a flatmate, a colleague, a family member. Say the goal only, then say nothing at all while they try. If nobody is free today, use the supplied results above as practice, write today’s date, and record that discoverability is untested.
+
+Is it enough? Each attempt names what the person touched first. A rehearsal with supplied material is written down as untested, never as research.
+
+</details>
+
+#### 4. Make destruction recoverable
+
 - For each destructive gesture, specify undo with a stated window.
 - Reserve confirmation for actions that cannot be undone.
 - Check the undo is reachable one-handed.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Undo specified for every destructive gesture, with a window, the wording, and a place a thumb can reach.
 
-## 5. Record
+Worksheet fields for this step:
+
+- For each destructive gesture: what happens, how long undo lasts, and the words the person sees
+- Where the undo sits, and whether one thumb can reach it
+
+<details>
+<summary>Help with this step</summary>
+
+- **Slip:** Doing the wrong thing while meaning the right thing. An accidental swipe is a slip, and slips want undo rather than a question.
+- **Undo window:** How many seconds the reversal stays available. Say the number; “briefly” gets built as whatever the developer had that day.
+
+Stuck starting? Write the five seconds after the gesture as a small story: what vanished, what appeared, where it sits, what it says.
+
+Is it enough? Every destructive gesture has either an undo with a stated number of seconds or a reason it cannot be reversed.
+
+</details>
+
+#### 5. Record
+
 - Write which gestures survived and why.
 - Record what a person with one hand free cannot do.
 - Save the specification with the discoverability results.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Which gestures survived, what one-handed use cannot do, and the repair the Check questions asked for.
 
-## Review and handoff
-- Every gesture has a visible alternative: [evidence reference]
-- Discoverability was tested with people who were not told: [evidence reference]
-- Destructive gestures are recoverable: [evidence reference]
-- One-handed and low-dexterity use is considered: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Which gestures survived, and the reason for each
+- What somebody with one hand free, a shaking hand or a cracked screen cannot do, and what they use instead
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Try every gesture with one hand while holding something in the other, then write what you could not manage.
+
+Is it enough? The one-handed note names specific gestures and the route those people use instead.
 
 </details>
+
+**Save and continue.** Saved for you: Your gesture list, the pairs and the discoverability records save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. Keep your m08 list and card components to hand, because the visible controls belong to them. What your creator sees: Your creator reads the pairs and the discoverability records. The record of three people reaching for the wrong thing is the persuasive part, so leave it in even where it is unflattering. Your next action: Open Your work and choose Ready for review. The next lesson writes the same kind of specification for the keyboard, key by key.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1113,82 +1611,173 @@ The date-selection component and the filter panel were specified before building
 
 Write the expected keyboard behaviour for two of your components, key by key, against the assigned pattern, and test any built version against your own specification.
 
-**Where to work:** Writing the table needs nothing. Testing it needs a rough local HTML file and your own keyboard; where nothing is built, record every row as untested rather than assumed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Writing the table needs nothing. Testing it needs a rough local HTML file and your own keyboard; where nothing is built, record every row as untested rather than assumed.
 
 - Starting material: Two components from your inventory, one composite.
 - Create HaruCourse/Practice/m09-l06-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Keyboard behaviour, specified key by key
+#### 1. Read the patterns
 
-Input artifact: Two components from your inventory, one composite.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A key-by-key table for two components
-- [ ] Tab and arrow behaviour distinguished for the composite
-- [ ] Escape behaviour including where focus returns
-- [ ] Test results against the table, or an explicit untested note
-
-## 1. Read the patterns
 - Read the assigned pattern pages for your two components.
 - Copy out their keyboard interaction sections in your own words.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Two components chosen, one simple and one made of parts, with each pattern’s keyboard section rewritten in your own words.
 
-## 2. Write the tables
+Worksheet fields for this step:
+
+- Your two components: one simple, one made of several parts
+- The keyboard section of each assigned pattern, written out in your own words — Copying it word for word teaches you nothing. Rewriting it is where you notice what you did not understand.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Composite component:** One control made of several smaller ones: a date grid, a set of tabs, a menu. It behaves as one thing from outside and has its own inside.
+- **Tab stop:** A place the tab key can land. A composite should be one tab stop, not one per part.
+
+Stuck starting? Pick the plainest control you have and the most complicated one. The gap between them is where this lesson happens.
+
+Is it enough? Your notes are in your own sentences, and you could explain the arrow behaviour to somebody without looking at the page.
+
+</details>
+
+#### 2. Write the tables
+
+**See it first.** Made-up example. Writing a key table for a date picker, and finding the first version unbearable to use.
+
+- **What I wrote first:** One row per day: tab moves to the next date. Thirty-one dates, thirty-one tab stops. Every key was accounted for.
+- **Why it looked right:** Every date was reachable by keyboard. That is exactly the sentence people mean when they say a thing has keyboard support.
+- **What using it was like:** Getting from the picker down to the Book button took thirty-one presses. Reaching the 28th took twenty-eight.
+- **What the pattern said:** One tab stop for the whole grid. Arrow keys move between dates inside it. Home and end jump to the first and last day available.
+- **What the table became:** Six rows instead of thirty-one: tab, arrows, enter, space, home and end, escape. Shorter to write and far shorter to use.
+
+**The wrong turn:** The wrong turn is treating reachable as finished. A tab stop on every element answers the reachability question and makes the component miserable.
+
+**What it costs:** One tab stop means the person has to know the arrows move inside. That is the convention the pattern exists to protect, and it is what the rest of their machine already does.
+
+**Still unknown:** Still unknown: what happens at the edge of the grid, whether the arrows wrap round to the next week or stop dead. The pattern allows both and your table has to choose.
+
 - For each component write one row per key: key, context, expected behaviour.
 - Distinguish what tab does from what the arrow keys do.
 - Include home, end and escape where the pattern uses them.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A table with one row per key: the key, the component, the situation, and the behaviour you expect from it.
 
-## 3. Specify focus movement
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Key row 1 · the key, the component, where the person is, and what must happen — Start with tab, because it is the one that separates your simple component from your composite one.
+- Key row 2 · the key, the component, where the person is, and what must happen
+- Key row 3 · the key, the component, where the person is, and what must happen
+- Key row 4 · the key, the component, where the person is, and what must happen
+- Key row 5 · the key, the component, where the person is, and what must happen
+- Key row 6 · the key, the component, where the person is, and what must happen
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the tab row first for both components. The difference between those two rows is most of the lesson.
+
+Is it enough? Every row says what happens, not what is allowed to happen, and the composite has one tab row rather than many.
+
+</details>
+
+#### 3. Specify focus movement
+
 - State where focus goes when the component opens.
 - State where focus returns when it closes or is cancelled.
 - Check focus never lands somewhere invisible or off screen.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Where focus goes when each component opens, closes and is cancelled, and anywhere it could land unseen.
 
-## 4. Test or mark untested
+Worksheet fields for this step:
+
+- For each component: focus when it opens, when it closes, and when it is cancelled
+- Anywhere focus could land off screen, or on something with no visible outline
+
+<details>
+<summary>Help with this step</summary>
+
+- **Focus:** The one place on the screen that the keyboard is talking to. If a person cannot see it, they have lost their position.
+
+Stuck starting? Write three sentences per component: focus on open, focus on close, focus on escape.
+
+Is it enough? No sentence is missing. Any you leave out will be decided at build time, and usually decided as nothing.
+
+</details>
+
+#### 4. Test or mark untested
+
 - Build a rough version and test every row of the table.
 - Record pass or fail per row with what happened.
 - Where nothing is built, mark every row untested rather than assumed.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every row marked with what actually happened, or marked untested, with what you checked it against.
 
-## 5. Record the gaps
+**Try it with help.** A supplied made-up result. Your table says escape closes the filter panel and returns focus to the Filters button. Tabbing through a comparable panel in a real product, escape did nothing at all, and closing it another way sent focus back to the very top of the page.
+
+What do you write down?
+
+- **Two failed rows against the table, each with what actually happened.** — The table is the specification and the thing you tried is the evidence. Recording the difference is the entire reason for writing the table first.
+- Change the table so escape is optional, since a real product manages without it. — One product doing without something is not a reason for your specification to ask for less. That is how a table stops being a specification and becomes a description.
+- Leave both rows blank until something of your own exists. — A blank row cannot be told apart from a row nobody thought about. Untested is a real result; empty is not.
+- Mark both rows passed, because that behaviour is what you designed. — Designing something does not make it happen. Marking untried rows as passed is the one thing a key table must never do.
+
+**Then:** Go through your own rows and mark each one with what happened, or with the word untested. Leave no row empty.
+
+Worksheet fields for this step:
+
+- What you checked your table against (A real product using the same pattern, tabbed through in my browser / A free prototype I could tab through / Nothing existed to check: every row is untested)
+- Row by row: what actually happened, or the word untested — Write what the keys did, not what they were supposed to do. No row may be left empty.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Open a real product that uses the same pattern, or a free prototype, put the mouse down and walk your rows in order.
+
+Is it enough? Every row carries a result. Where nothing was available to try, every row says untested and the choice above says so too.
+
+</details>
+
+#### 5. Record the gaps
+
 - List the failures as defects for the build, not as design changes.
 - Note where you departed from the pattern and why.
 - Save both tables with their results.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The failures written as defects for the build, your deliberate departures from the pattern, and the repair the Check questions asked for.
 
-## Review and handoff
-- A key-by-key table exists for both components: [evidence reference]
-- Tab and arrow roles are distinguished: [evidence reference]
-- Focus movement on open and close is specified: [evidence reference]
-- Results are recorded, including what was untested: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The failures written as defects for the build, and anywhere you left the pattern on purpose
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Copy each failed row into the defect list and add the expected behaviour beside what happened.
+
+Is it enough? Nothing that failed has quietly become the new design.
 
 </details>
+
+**Save and continue.** Saved for you: Both key tables, the focus sentences and the results save as you type, on this device first and then online. Kept outside the app: Nothing is uploaded. Keep the assigned pattern pages open in a tab while you write; the tables are worth nothing if they drift from the conventions. What your creator sees: Your creator reads the tables and the results column. The untested rows are not a weakness here, they are the honest part. Your next action: Open Your work and choose Ready for review. The next lesson takes the focus sentences further, into what happens when content changes underneath somebody.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1328,81 +1917,189 @@ Four rules were written. Opening the filter panel moves focus to its first contr
 
 Specify focus behaviour for four situations — opening, closing, content replacing, and an error appearing — and check that nothing your product does moves a person's place without telling them.
 
-**Where to work:** A rough local HTML page and your own keyboard. If a screen reader is already on your device — the assigned catalog entry names the free ones — try one step with it, and record that as a preliminary check rather than a test with disabled users.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A rough local HTML page and your own keyboard. If a screen reader is already on your device — the assigned catalog entry names the free ones — try one step with it, and record that as a preliminary check rather than a test with disabled users.
 
 - Starting material: Your key tables and the m08 message specifications.
 - Create HaruCourse/Practice/m09-l07-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Where focus goes when things change
+#### 1. Read and list the moments
 
-Input artifact: Your key tables and the m08 message specifications.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Focus rules for opening, closing, replacing content and errors
-- [ ] A list of places focus currently moves without reason
-- [ ] A visible focus indicator specified for every surface
-- [ ] Tab-through results with any lost-position steps named
-
-## 1. Read and list the moments
 - Re-read the assigned pattern guidance on focus movement.
 - List every moment in your product where content opens, closes, replaces or fails.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A list of every moment in your product where content opens, closes, is replaced or fails.
 
-## 2. Write the four rules
+Worksheet fields for this step:
+
+- Each place in your product where content opens, closes, is replaced, or fails — Panels, dialogues, filters, search results, saved messages, validation errors, a list becoming empty.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Focus:** The one place the keyboard is talking to. It is a person’s place on the screen, and moving it moves them.
+- **Announce:** Say what changed without moving anybody. A short line of text that a screen reader reads out and a sighted person can see.
+
+Stuck starting? Walk one whole task and stop every time the screen is not what it was a second ago.
+
+Is it enough? The list has at least one of each of the four kinds: opening, closing, replacing, failing.
+
+</details>
+
+#### 2. Write the four rules
+
+**See it first.** Made-up example. Writing the rule for replaced content, after first sending focus to the results and throwing somebody out of the filters.
+
+- **The situation:** Somebody picks a date in the filter panel. The list underneath changes from 63 classes to 12.
+- **What I wrote first:** “Move focus to the first result, so she sees straight away that something happened.” It felt helpful and considerate.
+- **What that actually does:** She was halfway down the filters and about to choose a price range. Focus is now in the list and the filters are behind her.
+- **What I wrote instead:** Focus stays exactly where it is. The count is announced: “12 classes match.” She carries on filtering and knows what happened.
+- **The rule underneath:** Move focus to a place the person asked to go. Never move it as a way of telling them something.
+
+**The wrong turn:** The wrong turn is using focus as a notification. Moving somebody’s place is the loudest thing an interface can do, and a count does not deserve it.
+
+**What it costs:** Announcing rather than moving makes the change quieter, and somebody skimming may miss the count. Keeping her place is worth more than the noticing.
+
+**Still unknown:** Still unknown: whether “12 classes match” arrives at the right moment or while she is still pressing keys. That needs somebody who uses a screen reader every day.
+
 - State where focus goes on open and where it returns on close.
 - State whether focus moves when content is replaced, and what is announced.
 - State where focus goes when an error appears.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Four rules, each naming a destination or naming what is announced instead.
 
-## 3. Find unrequested movement
+Worksheet fields for this step:
+
+- Where focus goes when something opens
+- Where focus returns when it closes, and when it is cancelled
+- When content is replaced: whether focus moves, and what is announced instead
+- Where focus goes when an error appears, and where the message sits
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the open rule first. It is the easiest, and the other three are all arguments with it.
+
+Is it enough? Each rule names a specific destination, or says plainly that focus stays and gives the words that are announced.
+
+</details>
+
+#### 3. Find unrequested movement
+
 - Walk your flows looking for focus moving when the person did not ask.
 - Record each and decide whether to remove or justify it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every place focus moves without being asked, each removed or justified, and the one you decided to keep.
 
-## 4. Test the indicator
+**Try it with help.** Six made up situations from a class-booking product. None of these were observed; they are written for practice. For each one, decide what should happen to the person’s place on the screen.
+
+- Tapping Filters opens a filter panel on top of the list.
+  - **move it** — She asked to go there. Focus follows the request into the panel’s first control, so the next key she presses lands where she is looking.
+  - leave it — Focus would stay on the Filters button behind a panel she is now looking at. Her next key press acts on something she cannot see.
+  - leave it and announce — Telling her a panel opened while leaving her outside it gives her the news and not the place. She asked to go in.
+- She presses escape and the filter panel closes.
+  - **move it** — The thing she was standing in has gone. Focus goes back to the Filters button that opened it, which is exactly where she left from.
+  - leave it — There is nothing left to leave it on. Focus inside a closed panel usually falls to the top of the page, and she starts the screen again.
+  - leave it and announce — A closing panel needs a destination more than it needs a sentence. Without one she is somewhere undefined.
+- She picks a date. The list underneath changes from 63 classes to 12.
+  - move it — She is in the middle of filtering. Sending her to the list takes her out of the controls she is still using.
+  - leave it — Silence leaves somebody who cannot see the list with no idea whether the date did anything at all.
+  - **leave it and announce** — Her place is worth keeping and the change is worth knowing. “12 classes match” gives her the second without costing the first.
+- She types a note on a booking, taps elsewhere, and the note saves.
+  - move it — She has already moved on to whatever she tapped. Dragging her back to the note undoes her own decision.
+  - leave it — A save with no word is the one thing an automatic save must never be. She never learns that the note is safe.
+  - **leave it and announce** — She stays where she went, and a short “Saved” tells her the note is no longer only in her head.
+- While she is still typing a postcode, a quiet hint appears under the field saying the format is nearly right.
+  - move it — Moving focus mid-word takes the keyboard away from her. A hint is never worth interrupting typing for.
+  - **leave it** — She is busy and the hint is not urgent. It waits for her, which is what a hint is for.
+  - leave it and announce — Announcing every keystroke’s worth of guidance turns the field into a chatterbox. Save the words for the result when she stops.
+- A photograph three rows below her finishes loading, and the row it sits in stays exactly the same size.
+  - move it — She asked for nothing and nothing changed for her. Focus moving here is the interface fidgeting.
+  - **leave it** — The change is cosmetic, the layout did not shift, and she is unaffected. Doing nothing is the whole answer.
+  - leave it and announce — Announcing a picture she never asked about adds noise. Announcements are for changes that alter what she can do.
+
+**Then:** Now walk your own flows. Write down every moment focus moves, mark each with one of these three, and record what you did about the ones that break your own rules.
+
+**What to watch for:** Look at the two panel lines beside the two quiet ones. Focus moves when the person asked to travel, and only then. It stays put when the change is small, and it stays put with a few words attached when the change matters but she did not ask to go anywhere.
+
+Worksheet fields for this step:
+
+- Every place focus moves without the person doing anything, and what you did about each
+- The one move you decided to keep, and why it is worth it
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take one flow and press tab all the way through it, writing down every jump you did not cause.
+
+Is it enough? Nothing in the list is unresolved: each move is removed or has a reason written beside it.
+
+</details>
+
+#### 4. Test the indicator
+
 - Tab through each screen and watch only the focus indicator.
 - Note any step where you lose track of your position.
 - Check the indicator is visible on every surface colour you use.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The focus outline described against every surface it lands on, and the steps where you lost your position.
 
-## 5. Record honestly
+Worksheet fields for this step:
+
+- The focus outline described against every background colour it can land on
+- The steps where you lost track of your position — Tab slowly through a free prototype or a comparable real page and watch only the outline.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Tab through a free prototype or a comparable real page slowly, watching only the outline and nothing else.
+
+Is it enough? Each lost-position step names the screen and the control, not “somewhere in the middle”.
+
+</details>
+
+#### 5. Record honestly
+
 - Write which rules you could verify and which remain untested.
 - State that your own checks are not testing with disabled users.
 - Save the rules and the tab-through results.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Two separate lists, what you saw and what you have not established, plus the repair the Check questions asked for.
 
-## Review and handoff
-- Focus rules cover open, close, replace and error: [evidence reference]
-- Unrequested focus movement is found and resolved: [evidence reference]
-- The focus indicator is specified for every surface: [evidence reference]
-- Results distinguish what was verified from what was not: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Two lists: what you saw for yourself, and what you have not established
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the seen list first, then move anything you assumed into the second list.
+
+Is it enough? The second list says in plain words that no test with a screen-reader user has been run.
 
 </details>
+
+**Save and continue.** Saved for you: The four rules, the movement list and the tab-through notes save as you type, on this device first and then online. Kept outside the app: Nothing is uploaded. Keep your key tables from the last lesson beside this; the two documents are meant to be read together. What your creator sees: Your creator reads the four rules and the two lists at the end. The list of what you have not established is the part that shows judgement. Your next action: Open Your work and choose Ready for review. The next lesson takes one interaction where people move things about, and specifies it for a mouse, a finger and a keyboard.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1542,82 +2239,171 @@ The shortlist could be reordered by dragging, with no other route. Redesigned: a
 
 Design one direct-manipulation interaction with a keyboard equivalent, a clear drop target, a recovery path, and a stated decision about what it costs people who cannot drag.
 
-**Where to work:** Paper works for the drop-target design: cut a row out and move it around the printed list, asking someone where they expect it to land. The keyboard route is written as a key table like the previous lesson's.
+**Where to practise:** Draw the three drag signals and the drop indicator on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper works for the drop-target design: cut a row out and move it around the printed list, asking someone where they expect it to land. The keyboard route is written as a key table like the previous lesson's.
 
 - Starting material: One arranging or reordering task from your product.
 - Create HaruCourse/Practice/m09-l08-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Direct manipulation: drag, reorder and their consequences
+#### 1. Choose the task and read
 
-Input artifact: One arranging or reordering task from your product.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A drag interaction with pick-up, drag and drop-target signals
-- [ ] A keyboard equivalent specified key by key
-- [ ] Undo after a move, with the message wording
-- [ ] A stated decision about drag versus scroll on touch
-
-## 1. Choose the task and read
 - Choose one arranging task in your product.
 - Read the assigned pattern guidance for a comparable component's keys.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One arranging task chosen, and the keys the assigned pattern gives for a component like it.
 
-## 2. Design the three signals
+Worksheet fields for this step:
+
+- The one arranging task you are designing
+- What the assigned pattern says about the keys for a comparable component
+
+<details>
+<summary>Help with this step</summary>
+
+- **Direct manipulation:** Moving the thing itself rather than telling a control to move it. Dragging a row is direct; choosing “move down” from a menu is not.
+- **Drop target:** The place the thing will land. It has to be visible before the person lets go, not discovered afterwards.
+
+Stuck starting? Pick the smallest arranging task you have. One list of six rows is easier to specify completely than a whole board.
+
+Is it enough? The task is one sentence, and you have the pattern’s keys written down beside it.
+
+</details>
+
+#### 2. Design the three signals
+
+**See it first.** Made-up example. Designing the drag signals for a shortlist, and having to redraw them once the keyboard route was written.
+
+- **What I drew first:** The whole row draggable, no grip. Pick it up anywhere, drop it anywhere. Nothing extra added to the row at all.
+- **Why it looked good:** Nothing to explain and nothing to draw. With a mouse it worked the first time I tried it on paper.
+- **The first crack:** On a phone that same press-and-move is a scroll. The list would have had to guess which one she meant, and guessing means being wrong sometimes.
+- **The second crack:** By keyboard there was nothing to land on. Picking up needs something focused, and a whole row is not a thing the keyboard can hold.
+- **What I drew instead:** A small grip at the left of every row. It is the drag handle for a finger, the focus target for the keyboard, and the mark that says this row moves.
+
+**The wrong turn:** The wrong turn is designing the drag first and leaving the keyboard route for later. It is not a translation of the design; it changes what the design has to contain.
+
+**What it costs:** The grip adds a small mark to every row and costs a little width. It buys the only version of the row that works with a finger, a mouse and a keyboard.
+
+**Still unknown:** Still unknown: whether the grip is read as a grip or as decoration. Somebody who has never reordered a list would have to be watched trying it.
+
 - Show what is draggable, using a handle or an equivalent affordance.
 - Show the item while it is held.
 - Show where it will land with a visible drop indicator.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three signals drawn and described: what can be picked up, what is held, and where it will land.
 
-## 3. Write the keyboard route
+Worksheet fields for this step:
+
+- What shows a row can be picked up at all
+- What the row looks like while it is being held
+- What shows where the row will land if it is released now
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Draw the three moments as three separate sketches: before the pick-up, during, and the instant before release.
+
+Is it enough? Each of the three has its own visible signal, and you could point at it on the paper.
+
+</details>
+
+#### 3. Write the keyboard route
+
 - Specify pick up, move, drop and cancel as keys.
 - State what is announced at each step.
 - Check the route completes the same task, not a reduced version.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A key table that completes the same arrangement as the drag, with what is said at each step.
 
-## 4. Design recovery and touch behaviour
+**Try it with help.** A supplied made-up key table for reordering a list. Space picks the row up. The up and down arrows move it. Space puts it down. Nothing else is written.
+
+What is missing before this route is finished?
+
+- **Escape to abandon the move and put the row back, plus what is said at each step.** — Somebody who picks up a row by accident currently has no way out except to drop it somewhere. A cancel is what makes the route safe to try.
+- Nothing: picking up, moving and dropping completes the task. — It completes the task when everything goes right. It offers nothing at all to the person who started a move she did not mean to start.
+- A modifier key so the arrows jump ten rows at a time. — That is a convenience for long lists rather than the gap. She still cannot get out of a move once she is in one.
+- A confirmation dialogue after the drop. — A move is a slip, so undo suits it better than a question. It also still leaves no way to abandon a pick-up before anything has moved.
+
+**Then:** Add the missing rows to your own table, then write the sentence the person hears at pick-up, at each move and at the drop.
+
+Worksheet fields for this step:
+
+- Pick up, move, drop and cancel, one row per key
+- What is said at each step, in the words the person would actually hear
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Walk the task on paper with your fingers off the mouse: what would you press first, and what would you need to be told?
+
+Is it enough? Any arrangement you could reach by dragging can be reached by the keys, and every key row has an announcement beside it.
+
+</details>
+
+#### 4. Design recovery and touch behaviour
+
 - Specify undo with a window and write the message.
 - Decide how drag and scroll are distinguished on touch.
 - Check the decision does not break scrolling elsewhere.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Undo with a window and its exact wording, and a rule that keeps dragging and scrolling apart on touch.
 
-## 5. Record the cost
+Worksheet fields for this step:
+
+- How long undo lasts and the exact message shown after a move
+- How a finger dragging is told apart from a finger scrolling
+- Where you checked that scrolling the same list still works
+
+<details>
+<summary>Help with this step</summary>
+
+- **Undo window:** How many seconds the reversal stays on screen. Write the number; “a moment” gets built as whatever the developer had that day.
+
+Stuck starting? Write the message first, in the words she reads: what moved, where it went, and how to put it back.
+
+Is it enough? The touch rule names what starts a drag, and you have checked that ordinary scrolling on that same list still works.
+
+</details>
+
+#### 5. Record the cost
+
 - Write who cannot use the drag route and what they use instead.
 - State what remains untested, including any assistive-technology behaviour.
 - Save the specification with the key table.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Who cannot use the drag route, what they use instead, what is untested, and the repair the Check questions asked for.
 
-## Review and handoff
-- All three drag signals are specified: [evidence reference]
-- A keyboard equivalent completes the same task: [evidence reference]
-- A move is reversible with stated wording: [evidence reference]
-- The drag-versus-scroll decision is explicit: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Who cannot use the drag route, what they use instead, and what remains untested
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Name three people who cannot drag: one with a tremor, one on a cracked screen, one using only a keyboard. Write what each of them does instead.
+
+Is it enough? The untested list says plainly that no test with a screen-reader user has been run.
 
 </details>
+
+**Save and continue.** Saved for you: The three signals, the key table, the undo wording and the touch rule save as you type, on this device first and then online. Kept outside the app: The three sketches stay on paper or in your own folder. Photograph them if you like and write the file name in the signals boxes; naming a file does not upload it. What your creator sees: Your creator reads the key table beside the drag sketches. Showing the two together is the point: it says you designed for everybody rather than for the demonstration. Your next action: Open Your work and choose Ready for review. The next lesson turns to scrolling, sticky elements and what a long list costs on a small screen.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1757,83 +2543,176 @@ The class list had a sticky header with a logo, a sticky filter bar and a sticky
 
 Decide what stays fixed while a person scrolls, how a long list ends, and how someone returns to their place after leaving and coming back.
 
-**Where to work:** Paper at phone size, with a window cut out to represent the viewport, shows exactly how much a sticky element costs. A local HTML page shows real scroll and restore behaviour.
+**Where to practise:** Draw the phone-sized viewport with every fixed element measured on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper at phone size, with a window cut out to represent the viewport, shows exactly how much a sticky element costs. A local HTML page shows real scroll and restore behaviour.
 
 - Starting material: Your browse loop and list components.
 - Create HaruCourse/Practice/m09-l09-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Scrolling, sticky elements and long lists
+#### 1. Measure the tax
 
-Input artifact: Your browse loop and list components.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A decision for each sticky element with its height cost
-- [ ] A list ending: a count, a load-more control, or a stated end
-- [ ] Scroll position restoration specified for the browse loop
-- [ ] A rule preventing content moving under a finger
-
-## 1. Measure the tax
 - List every element you intend to keep fixed while scrolling.
 - Measure each one's height at phone size and total them.
 - Express the total as a share of the viewport.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A measured height for every element you want fixed, and the total written as a share of the viewport.
 
-## 2. Justify or drop each
+Worksheet fields for this step:
+
+- The viewport height you are measuring against, at phone size — A common phone leaves you roughly 640 points of usable height. Use a real number and say where it came from.
+- Every element you intend to keep fixed while scrolling, with its measured height
+- The total fixed height, and what share of the viewport it takes
+
+<details>
+<summary>Help with this step</summary>
+
+- **Sticky:** An element that stays put while the rest of the page scrolls under it. It holds its space for the whole session.
+- **Viewport:** The part of the page a person can see at once. On a phone it is small, and everything fixed comes out of it.
+
+Stuck starting? Cut a window the size of a phone screen out of a sheet of paper and hold it over your drawing. Measure whatever never moves.
+
+Is it enough? The total is a number you measured, not one you estimated.
+
+</details>
+
+#### 2. Justify or drop each
+
+**See it first.** Made-up example. Keeping three things fixed on a phone, then measuring what they cost.
+
+- **What I drew first:** A logo header, a filter bar and a book button, all fixed. Everything important, always available. It felt generous.
+- **What the ruler said:** 190 points of a 640 point screen gone before a single class row appeared. Close to a third of what she can see.
+- **The test I applied:** For each one: what is she doing with this while she scrolls? The logo, nothing. The book button belongs to a class she has not chosen yet.
+- **What I changed:** The logo header scrolls away and comes back when she scrolls up. The book button moved to the detail view. The filter summary stayed.
+- **What that gave back:** 126 points, which is about two more class rows visible at every moment of every scroll.
+
+**The wrong turn:** The wrong turn is judging each fixed element on its own. Each one sounds reasonable alone. The cost only appears when you add the heights together.
+
+**What it costs:** A header that scrolls away means one extra flick upward when someone wants the menu. You are trading a rare action against space every person loses on every screen.
+
+**Still unknown:** Still unknown: whether people actually use the filter summary while scrolling. That is something to watch, and nobody has watched it yet.
+
 - For each sticky element, write what the person needs it for while scrolling.
 - Drop anything that fails, or make it return on scroll up instead.
 - Re-measure the remaining total.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A decision for each fixed element, based on what the person does with it while scrolling, and a new total.
 
-## 3. Design the list ending
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Element 1 · what the person needs it for while scrolling, and your decision
+- Element 2 · what the person needs it for while scrolling, and your decision
+- Element 3 · what the person needs it for while scrolling, and your decision
+- Element 4 · what the person needs it for while scrolling, and your decision
+- The new total fixed height after your decisions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the tallest element first and try to write its use during scrolling in one sentence.
+
+Is it enough? Every element has either a stated use during scrolling or a decision to drop it.
+
+</details>
+
+#### 3. Design the list ending
+
 - Choose paging, load-more or infinite loading and state why.
 - Show how many items exist in total.
 - Check the footer remains reachable.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A chosen way for the list to end, the total shown in words, and a footer that can still be reached.
 
-## 4. Specify return and insertion
+**Try it with help.** A supplied made-up design. The class list loads twenty more rows on its own every time the person nears the bottom, for as long as there are results. The footer holds the contact link, the refund policy and the accessibility statement.
+
+What has this design done, and what would you change first?
+
+- **It has removed the end of the page, so the footer is unreachable. Replace the automatic loading with a load-more control.** — The footer sits at the end, and continuous loading means the end keeps moving away. A load-more control gives the page a bottom again.
+- It has slowed the list down, because twenty rows at a time is heavy on a phone. — Weight is worth watching and it is not the failure here. Even a fast loader still pushes the footer out of reach every time.
+- It has done nothing wrong, because those links are also in the menu. — That is a real repair and it is the second one, not the first. If they are only in the footer today, they are gone today.
+- It has buried the policies, so move them above the list where they are seen first. — That puts rarely wanted content in front of the content people came for. The footer is the right place; it just has to be reachable.
+
+**Then:** Try to reach the footer on your own design, or on a comparable page, and write down what happened.
+
+Worksheet fields for this step:
+
+- Paging, a load-more control or continuous loading, and why you chose it — Say what happens at the bottom, and whether the footer can still be reached.
+- Where the total number of items appears, in the exact words you would use
+
+<details>
+<summary>Help with this step</summary>
+
+- **Continuous loading:** More rows arrive on their own as you near the bottom. Often called infinite scroll. The bottom of the page never quite arrives.
+- **Footer:** The strip at the very end of a page. Contact details, refund policies and accessibility statements usually live there.
+
+Stuck starting? Decide what a person should see at the very bottom, then work backwards to how the rows arrive.
+
+Is it enough? You can say how many items exist and how a person reaches the end.
+
+</details>
+
+#### 4. Specify return and insertion
+
 - Specify that returning from a detail view restores position and filters.
 - State where new content is inserted and that nothing moves under a finger.
 - Reserve space for content that is loading.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What is restored when someone comes back, and a rule for where new content is allowed to appear.
 
-## 5. Test on a phone
+Worksheet fields for this step:
+
+- What is restored when someone returns from a detail view — Name each thing separately: the row, the scroll position, the filters, anything typed.
+- Where new or still-loading content is allowed to appear, written as a rule — Include reserved space for anything still loading, so the page does not jump while someone is reading it.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Walk the loop yourself: list, detail, back. Write down everything you lost on the way back.
+
+Is it enough? The insertion rule would settle a case you have not met yet.
+
+</details>
+
+#### 5. Test on a phone
+
 - Scroll your own design or a comparable page on a real phone.
 - Record how much content is visible under the sticky elements.
 - Save the decisions with their measurements.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What a real phone showed you, how much content was left, and the repair the Check questions asked for.
 
-## Review and handoff
-- Sticky elements are justified and their cost measured: [evidence reference]
-- The list has a stated ending and a total: [evidence reference]
-- Position and filters are restored on return: [evidence reference]
-- Nothing moves under a finger about to tap: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What you saw scrolling your own design, or a comparable page, on a real phone
+- How much content was visible below the fixed elements
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Open any long list on your own phone and count how many rows you can see without scrolling.
+
+Is it enough? You wrote what you saw on the device, not what your drawing implies.
 
 </details>
+
+**Save and continue.** Saved for you: Your measurements, decisions and rules save as you type, on this device first and then online. Kept outside the app: The paper viewport and the measured drawing stay in your own folder. Note the file name here if you photograph them; naming a file does not upload it. What your creator sees: Your creator reads the fixed-height total and what you dropped. The measurement is the part that shows this was decided rather than assumed. Your next action: Open Your work and choose Ready for review. The next lesson takes one editable value and removes its save button.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1973,82 +2852,173 @@ The note on a booking saved automatically with no feedback. Redesigned: the valu
 
 Design one in-place edit that shows clearly when it is editable, when it is saving and when it has saved, with a defined behaviour for failure and for leaving mid-edit.
 
-**Where to work:** Write the three states out on paper with the exact wording, then check the transitions in a local HTML file if you want to feel the timing of the saved indicator.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Write the three states out on paper with the exact wording, then check the transitions in a local HTML file if you want to feel the timing of the saved indicator.
 
 - Starting material: One editable value from your product.
 - Create HaruCourse/Practice/m09-l10-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Editing in place and saving without a button
+#### 1. Choose the value and read
 
-Input artifact: One editable value from your product.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Viewing, editing and saved states specified distinctly
-- [ ] A visible save confirmation with its wording and duration
-- [ ] Behaviour for leaving mid-edit, stated and justified
-- [ ] Failure handling that retains the text and offers retry
-
-## 1. Choose the value and read
 - Choose one editable value in your product.
 - Read the assigned status heuristic and error guidance.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One editable value chosen, and a line on what the product owes the person about where her change stands.
 
-## 2. Design the three states
+Worksheet fields for this step:
+
+- The one value you will make editable where it sits
+- From the assigned reading: what a product owes a person about the state of their change
+
+<details>
+<summary>Help with this step</summary>
+
+- **Editing in place:** Changing a value where it sits on the screen, rather than on a separate edit page with its own save button.
+- **Saving on its own:** The change is stored without anyone pressing anything. Often called autosave.
+
+Stuck starting? Choose something small and real: a note, a date, a display name.
+
+Is it enough? The value is one you could draw in three states on a single sheet.
+
+</details>
+
+#### 2. Design the three states
+
+**See it first.** Made-up example. Taking the save button off a booking note, and finding that the person no longer knew she was safe.
+
+- **What I did first:** Removed the save button and let the note store itself when the field lost focus. One less control, and the screen looked calmer.
+- **What she saw:** Nothing. She typed, tapped elsewhere, and the screen looked exactly as it had before she typed a word.
+- **What I had actually removed:** Not a button. The moment she knew her words existed somewhere other than the screen in front of her.
+- **What replaced it:** “Saved 12:04” beside the note for six seconds, fading to a small grey “Saved” that stays until the next edit.
+- **What that cost me:** Three states to draw and to word, instead of one field and a button. Removing a control is only simpler if you pay for it in feedback.
+
+**The wrong turn:** The wrong turn is treating the save button as clutter. It was doing a job, and the job does not disappear when the button does.
+
+**What it costs:** A visible saved state adds words to a quiet screen, and some people will find it fussy. That is the price of removing the control that used to reassure them.
+
+**Still unknown:** Still unknown: whether six seconds is long enough for someone who looks away mid-edit. That needs watching a person, not deciding at a desk.
+
 - Specify how viewing shows that the value is editable.
 - Specify the editing state with a cancel and a done route.
 - Specify the saved state with its wording and how long it shows.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three states written as what a person sees, with the saved wording and how long it stays.
 
-## 3. Decide the leaving case
+Worksheet fields for this step:
+
+- Viewing · how it shows that the value can be changed — Something visible without hovering. Hover does not exist on a phone.
+- Editing · what changes, and how she cancels or finishes
+- Saved · the exact words, and how long they stay before settling
+
+<details>
+<summary>Help with this step</summary>
+
+- **State:** What the same thing looks like at a different moment. One note, three appearances.
+
+Stuck starting? Draw the three side by side on one sheet before you write any wording.
+
+Is it enough? Someone could tell which state they were in from the drawing alone, with the labels covered.
+
+</details>
+
+#### 3. Decide the leaving case
+
 - Choose save on blur, keep a draft, or discard with confirmation.
 - Write the reason for your choice.
 - Specify what the person sees when they return.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A stated behaviour for leaving part way through, the reason for it, and what she meets on her return.
 
-## 4. Design failure
+**Try it with help.** A supplied made-up case. Someone is half way through typing a note on a booking. She taps a notification and the app closes. She comes back four hours later.
+
+Which behaviour would you specify, and what makes it defensible?
+
+- **Keep the half-typed note as a draft, show it in the editing state on her return, and say when it was last changed.** — Her words are kept, and nothing half-finished was stored under her name as though she meant it. The time tells her what she is looking at four hours later.
+- Store what was typed, quietly, as if she had finished. — It keeps her words and it also publishes half a sentence as though it were final. On a shared booking someone else may read it before she does.
+- Throw it away, since she left without finishing. — Leaving is rarely a decision. A notification is not the same as pressing cancel, and discarding is the one outcome she cannot reverse.
+- Ask her to confirm before the app closes. — A tap on a notification does not wait for a question, and a question she never sees settles nothing. Keep the text and ask her later, when she is back.
+
+**Then:** Write your own choice, and beside it the one thing each other choice would have cost her.
+
+Worksheet fields for this step:
+
+- What happens when someone leaves part way through an edit (Save what is there / Keep it as a draft and offer it on return / Discard it, after asking first)
+- Why you chose that, and what the other choices would have cost
+- What she sees when she comes back
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask what she would call the worst outcome, then rule that one out first.
+
+Is it enough? Your reason would still hold up if someone preferred a different choice.
+
+</details>
+
+#### 4. Design failure
+
 - Specify that text is retained locally when a save fails.
 - Write the message: what happened and what to do.
 - Provide retry that does not lose the edit.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Failure specified: where the text is kept, the exact message, and a retry that does not lose the edit.
 
-## 5. Check and record
+Worksheet fields for this step:
+
+- Where the text is kept when a save fails, and what survives a reload
+- The failure message, in the exact words: what happened and what to do
+- How retry works without losing the edit
+
+<details>
+<summary>Help with this step</summary>
+
+- **Kept locally:** Held on her own device, so a reload or a dropped connection does not take the words with it.
+
+Stuck starting? Write the message before the mechanism. The words tell you what the mechanism has to do.
+
+Is it enough? The message says what happened, where the text is, and what to do next.
+
+</details>
+
+#### 5. Check and record
+
 - Check the three states are distinguishable in greyscale.
 - Record what you could not verify without a build.
 - Save the specification with the wording.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The greyscale check, what you could not verify without a build, and the repair the Check questions asked for.
 
-## Review and handoff
-- Viewing, editing and saved are visually distinct: [evidence reference]
-- The save confirmation is specific and timed: [evidence reference]
-- Leaving mid-edit has a stated, justified behaviour: [evidence reference]
-- Failure retains the text and offers a retry: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What happened when you looked at the three states with the colour removed — Print in grey, or turn the colour down on a screenshot until only lightness is left.
+- What you could not check without something built
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Look at the three states with the colour removed and ask which one you are in.
+
+Is it enough? The unverified list names timing and failure behaviour, which a drawing cannot show.
 
 </details>
+
+**Save and continue.** Saved for you: The three states, the wording and the failure message save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. If you drew the three states, keep the sheet in your own folder and note its name. What your creator sees: Your creator reads the saved wording, the leaving behaviour and the failure message. The leaving decision with its reason is the part that shows judgement. Your next action: Open Your work and choose Ready for review. The next lesson gathers every duration and rule from this module onto one sheet.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2188,81 +3158,172 @@ The sheet came to three durations — instant 0ms for state changes, quick 150ms
 
 Produce an interaction sheet naming your durations, easings and interaction rules, and apply it across three components so nothing is decided twice.
 
-**Where to work:** A written table plus the rules. If you want to compare durations honestly, a local HTML file with three buttons using your three values takes ten minutes and settles arguments quickly.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A written table plus the rules. If you want to compare durations honestly, a local HTML file with three buttons using your three values takes ten minutes and settles arguments quickly.
 
 - Starting material: Your m08 token sheet and this module's specifications.
 - Create HaruCourse/Practice/m09-l11-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# An interaction sheet: durations, easings and rules
+#### 1. Collect what you used
 
-Input artifact: Your m08 token sheet and this module's specifications.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Named durations and easings with their numbers
-- [ ] Written interaction rules that would settle a future case
-- [ ] A reduced-motion pairing for every entry
-- [ ] Three components using the sheet, with exceptions resolved
-
-## 1. Collect what you used
 - List every duration and easing across this module's specifications.
 - Mark near-duplicates: values within 50ms of each other.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every duration and easing you used, listed with where it appeared, and the near-duplicates marked.
 
-## 2. Name and cut
+Worksheet fields for this step:
+
+- Every duration and easing across this module’s specifications, with where each one was used
+- Which values sit within 50ms of each other
+
+<details>
+<summary>Help with this step</summary>
+
+- **Duration:** How long a change takes, written in milliseconds. A thousand milliseconds is one second.
+- **Easing:** How the speed changes across that time. Starting fast and settling feels like arriving; an even speed feels mechanical.
+
+Stuck starting? Work backwards through this module’s specifications and copy out every number you find.
+
+Is it enough? The list surprises you with how many values you used without ever deciding on them.
+
+</details>
+
+#### 2. Name and cut
+
+**See it first.** Made-up example. Naming three durations after the screens they were used on, then having to rename all of them six weeks later.
+
+- **What I wrote first:** filter-panel 200ms, detail-view 250ms, confirmation-fade 120ms. Each name said exactly where the value was used.
+- **Why it felt right:** Anyone reading the sheet could see which value belonged to which screen. It looked organised and it read clearly.
+- **What broke it:** The filter panel became a full screen and the detail view became a panel. Two names now pointed at the wrong things.
+- **The question I could not answer:** Someone asked whether a new drawer should use filter-panel or detail-view. The names carried no reason, so there was nothing to decide with.
+- **What replaced them:** instant 0ms for state changes, quick 150ms for small movement, moderate 250ms for panels. The drawer is a panel, so it is moderate. The question answered itself.
+
+**The wrong turn:** The wrong turn is naming a value after the place you first used it. It reads clearly on the day, and it stops meaning anything the moment the screen changes.
+
+**What it costs:** Role names are vaguer than screen names, and you lose the ability to see at a glance where a value is used. What you get is a sheet that survives a redesign.
+
+**Still unknown:** Still unknown: whether three roles is enough. A fourth may be needed, and adding one deliberately with a reason is a different act from inventing one at midnight.
+
 - Group the values into three roles and give each a name and a number.
 - Choose entering, exiting and moving easings.
 - Remove every value that does not fit a role.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three durations and three easings, each named for the role it serves and given a number.
 
-## 3. Write the rules
+Worksheet fields for this step:
+
+- Three named durations: the name, the number, and the role each one serves
+- Your entering, exiting and moving easings, each with what it should feel like — Three is plenty. Entering fast and then settling reads as arrival.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Sort your values into no movement, small movement and larger movement. Those are usually the three roles.
+
+Is it enough? Each name would still make sense if every screen in your product were redrawn.
+
+</details>
+
+#### 3. Write the rules
+
 - Write the rules as sentences a new person could follow.
 - Include what must never move and what never animates.
 - Include the one-thing-at-a-time rule if your audit found competition.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Rules written as sentences, including what must never move and how many things may animate at once.
 
-## 4. Pair with reduced motion
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Rule 1
+- Rule 2 — Include one rule about what must never move, and one about how many things may animate at once in a view.
+- Rule 3
+- Rule 4
+- Rule 5
+
+<details>
+<summary>Help with this step</summary>
+
+- **Rule:** A sentence that decides a case you have not met yet. If it cannot settle a disagreement, it is a preference rather than a rule.
+
+Stuck starting? Take the animation you removed in lesson 1 and write the rule that would have prevented it.
+
+Is it enough? Each rule could settle a proposal without you being in the room.
+
+</details>
+
+#### 4. Pair with reduced motion
+
 - For every duration and pattern, record its reduced-motion alternative.
 - Check the pairs preserve the explanation the original carried.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A reduced-motion alternative for every duration and pattern, checked for whether the meaning survived.
 
-## 5. Apply and record exceptions
+**Try it with help.** A supplied made-up entry from the sheet: moderate 250ms, used where the filter panel enters from the filter button, so the person can see where the panel came from.
+
+Which reduced-motion pair keeps what the movement was explaining?
+
+- **A 120ms fade in place, with the filter button staying marked while the panel is open.** — The movement was saying this came from that. Keeping the button marked says the same thing without moving anything across the screen.
+- Remove the transition entirely, so the panel simply appears. — That deletes the explanation along with the movement. She now has a panel and no idea what produced it.
+- Keep the slide, at 100ms instead of 250ms. — Faster movement is still movement, and speed can make it harder to follow rather than gentler. The request was for less, not quicker.
+- Replace it with a slower 400ms slide, so it feels gentler. — Slow and gentle are not the same thing. A long slide across the screen is the pattern the setting is asking you to stop.
+
+**Then:** Work down your own sheet and write the pair for every row, including the rows where the honest pair is no change at all.
+
+Worksheet fields for this step:
+
+- For each duration and each pattern: its reduced-motion alternative
+- Any pair where the reduced version stopped explaining what the original explained
+
+<details>
+<summary>Help with this step</summary>
+
+- **Reduced motion:** A setting on a person’s own device asking for less movement. Reduced means gentler, not deleted.
+
+Stuck starting? Work down the sheet row by row rather than picking out the interesting ones.
+
+Is it enough? Every row has a pair, and you can say what each pair still tells the person.
+
+</details>
+
+#### 5. Apply and record exceptions
+
 - Apply the sheet to three components without exception.
 - Record every value you had to invent and resolve each deliberately.
 - Save the sheet with the rules and the exception list.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three components respecified from the sheet, every invented value resolved, and the repair the Check questions asked for.
 
-## Review and handoff
-- Durations and easings are named by role with numbers: [evidence reference]
-- Rules are written as sentences that settle cases: [evidence reference]
-- Every entry has a reduced-motion pair: [evidence reference]
-- Three components use the sheet with exceptions resolved: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The three components respecified using only what is on the sheet
+- Every value you had to reach for that was not on the sheet, and how you resolved it — There are two honest resolutions: it fits a role you already have, or the role was genuinely missing and you add it with a reason.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the component you specified in most detail and respecify it using only the names on your sheet.
+
+Is it enough? No component uses a number that is not on the sheet without a recorded reason.
 
 </details>
+
+**Save and continue.** Saved for you: The sheet, the rules and the exception list save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. Keep your m08 token sheet beside this one; they are two halves of the same document. What your creator sees: Your creator reads the rules and the exception list. The exceptions show whether the sheet survived contact with real components. Your next action: Open Your work and choose Ready for review. The next lesson puts these interactions in front of three people on their own phones.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2402,82 +3463,194 @@ Three sessions on the participants' own phones. Two double-tapped the book butto
 
 Test your interactions with at least three people on a real device, rank what you find by harm, repair the worst with a prediction written first, and record what remains untested.
 
-**Where to work:** A rough local HTML page opened on the participants' own phones over a shared connection, or a paper prototype for the parts that are about order rather than timing. No testing platform or device lab is required.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A rough local HTML page opened on the participants' own phones over a shared connection, or a paper prototype for the parts that are about order rather than timing. No testing platform or device lab is required.
 
 - Starting material: Your interaction specifications and, if possible, a rough build.
 - Create HaruCourse/Practice/m09-l12-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Test the interactions and repair one
+#### 1. Plan the sessions
 
-Input artifact: Your interaction specifications and, if possible, a rough build.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Session records from three people on their own devices
-- [ ] A count of double taps and where they happened
-- [ ] One repair with its prediction written beforehand and re-tested
-- [ ] A ranked list of remaining problems and an untested list
-
-## 1. Plan the sessions
 - Read the assigned session guidance and write two tasks.
 - Decide which single aspect each session focuses on.
 - Extend your consent introduction to cover using their device.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Two tasks in the words you will say, one thing each session is watching for, and an honest route for who you can ask.
 
-## 2. Run three sessions
+Worksheet fields for this step:
+
+- The two tasks you will ask for, in the words you will actually say — Say the goal, never the route. “Remove the second class from your shortlist” and not “swipe the row”.
+- The single thing each session is watching for
+- Who you can actually ask, and the honest route if the answer is nobody — If nobody is available, say so plainly and use the rehearsal route in this step. A rehearsal is never written up as research.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Task:** A goal you hand someone. It never names the control, or you have already taught them the answer.
+- **Rehearsal:** You walking the task yourself when nobody is available. It tells you about your design and nothing at all about people.
+
+Stuck starting? Write each task as the sentence a friend would say to you, then take out every word that names a control. If nobody is available at all, run both tasks yourself twice on a phone you did not design on, write it down as a rehearsal, and say plainly that no participant was involved.
+
+Is it enough? Neither task could be completed by following your wording literally.
+
+</details>
+
+#### 2. Run three sessions
+
 - Run the tasks on each participant's own phone where possible.
 - Record double taps, hesitations and anything they could not find.
 - Do not explain gestures or controls during the task.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One written record per person, on their own device where possible, and a count of every repeated action.
 
-## 3. Rank by harm
+Worksheet fields for this step:
+
+- Person 1 · device, what they did, where they hesitated, what they could not find
+- Person 2 · device, what they did, where they hesitated, what they could not find
+- Person 3 · device, what they did, where they hesitated, what they could not find
+- Every moment someone acted twice, and where it happened
+
+<details>
+<summary>Help with this step</summary>
+
+- **Second tap:** Someone pressing the same thing again. It nearly always means nothing told them the first press had worked.
+
+Stuck starting? Say the task, then stop talking. Silence is the instrument.
+
+Is it enough? Each record names a device and describes actions rather than opinions.
+
+</details>
+
+#### 3. Rank by harm
+
+**See it first.** Made-up example. Ranking six findings by how bad they felt, then re-ranking them by what they actually cost.
+
+- **My first order:** Top of the list was the confirmation screen looking unfinished. It had bothered me for a week, and someone finally said it out loud.
+- **What sat below it:** Two people tapping the book button twice. I had put that fourth, because both of them completed the booking anyway.
+- **The question that reordered everything:** What did this cost the person? A second tap can send a second request. An unfinished-looking screen costs nobody anything at all.
+- **The one I nearly lost:** A note that lost its last few characters. Nobody complained, because nobody noticed until much later.
+- **The order I ended with:** The lost text, then the repeated taps, then the person who could not find the remove control, then everything else.
+
+**The wrong turn:** The wrong turn is ranking by how strongly you feel about each finding. The thing that has irritated you all week rises to the top and stays there.
+
+**What it costs:** Ranking by harm means the finding you most want to fix may sit fifth, untouched, for weeks. That is what working on the worst thing first actually costs.
+
+**Still unknown:** Still unknown: how often the lost text happens. Three sessions cannot say, and this ranking is a judgement about consequence rather than frequency.
+
 - List the problems and rank them by what they cost the person.
 - Put duplicate actions and lost work above confusion and slowness.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Everything you found, ordered by what it cost the person, with the worst one named.
 
-## 4. Predict and repair
+**Try it with help.** Six findings from a made-up round of sessions, written for practice. Sort each one: a real harm to the person, a preference you happen to share, or something only you would ever notice.
+
+- Two people tapped the book button a second time, because nothing changed until the server replied.
+  - **harm** — A second tap can send a second request, and she may be charged twice without ever knowing she did it.
+  - shared preference — Nobody chose this. She tapped again because the product told her nothing, which is a defect rather than a taste.
+  - only you noticed — Two participants did it in front of you. It is the most visible thing in your notes.
+- One person’s typed note lost its last few characters when the connection dropped, and she did not notice.
+  - **harm** — Her work disappeared and nothing said so. Not noticing at the time makes it worse rather than smaller.
+  - shared preference — Nothing here is a matter of taste. Her words are gone, whatever anyone would have preferred.
+  - only you noticed — You spotted it and it happened to her. Whose eyes caught it does not change whose work was lost.
+- A person said she would rather the filter panel opened on the left, and you have always thought so too.
+  - harm — She found the filters and used them. Nothing was lost, slowed or repeated.
+  - **shared preference** — One person’s taste, agreeing with yours. That agreement is exactly what makes it easy to promote, and worth marking so it cannot.
+  - only you noticed — She raised it herself, so it is not invisible. It is simply not costing anyone anything.
+- A person said the confirmation screen “could be prettier”, and you had been meaning to redraw it anyway.
+  - harm — She completed the booking and read the confirmation. Nothing about the task failed for her.
+  - **shared preference** — A comment landing on a plan you already had. Marking it stops it jumping the queue on the strength of your agreement.
+  - only you noticed — She said it out loud, so you were not alone in seeing it. The thing to be careful of here is your agreement.
+- The panel enters at 250ms and the drawer at 200ms. Nobody mentioned it, and you found it on your third replay.
+  - harm — Nothing failed, repeated or disappeared. Fifty milliseconds is well below what anyone was working at.
+  - shared preference — Nobody expressed a view on it at all, so there is nothing shared. This one is yours alone.
+  - **only you noticed** — Real, tidy, and belonging on your interaction sheet rather than in this week’s work.
+- The saved marker fades a fraction later on the note field than on the date field, which you saw while stepping through your recording.
+  - harm — Both markers appeared and both said saved. Nobody waited, repeated an action or lost anything.
+  - shared preference — Nobody expressed a preference about it, because nobody saw it happen.
+  - **only you noticed** — A difference of a frame or two, found on a replay. Record it on the sheet and let it wait.
+
+**Then:** Sort your own findings the same way, then rank only the harms against each other.
+
+**What to watch for:** The question is never how strongly you feel about it. It is what it cost the person in front of you. The one that disguises itself best is the preference you happen to share.
+
+Worksheet fields for this step:
+
+- Everything you found, in order of what it cost the person — Repeated actions and lost work sit above confusion. Confusion sits above slowness.
+- The worst one, in a sentence, with who it happened to
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take each finding and try to finish the sentence “this cost her …”. If the sentence will not finish, it is not a harm.
+
+Is it enough? Everything that cost someone a repeated action or lost work sits above everything that did not.
+
+</details>
+
+#### 4. Predict and repair
+
 - Write what the repair should change before making it.
 - Change one thing only.
 - Re-test with at least one person who has not seen it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A prediction written before the change, one change made, and an honest account of the re-test.
 
-## 5. Record what is untested
+Worksheet fields for this step:
+
+- Written before you change anything: what the repair should change, and how you would see it
+- The one thing you changed
+- What happened on the re-test, including if the repair did not help or made something else worse — A repair that failed is a finding. Write it as it happened and leave the prediction beside it, unedited.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Prediction:** What you expect to see afterwards, written down first so that the result is able to disagree with you.
+
+Stuck starting? Write the prediction as something you could watch happening or not happening, then stop and make the change.
+
+Is it enough? The prediction was written before the change and has not been edited since.
+
+</details>
+
+#### 5. Record what is untested
+
 - List every interaction claim you could not verify.
 - State plainly that no test with assistive-technology users was run.
 - Save the records, the ranking and the repair result.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every claim you could not verify, a plain statement about assistive technology, and the repair the Check questions asked for.
 
-## Review and handoff
-- Sessions were run on participants' own devices: [evidence reference]
-- Double taps and lost actions are counted, not interpreted away: [evidence reference]
-- The repair carried a prediction and was re-tested: [evidence reference]
-- The untested list names assistive technology explicitly: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Every interaction claim you could not verify
+- Your plain statement about assistive technology
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Go through your key tables and focus rules marking each row tested or untested. The untested rows are the list.
+
+Is it enough? Nothing in the untested list is written as though it had been checked.
 
 </details>
+
+**Save and continue.** Saved for you: The session records, the ranking and the repair save as you type, on this device first and then online. Kept outside the app: Recordings and photographs stay in your own folder. Note the file names here; naming a file does not upload it. What your creator sees: Your creator reads the ranking, the prediction and the untested list. The untested list is what makes the rest of it believable. Your next action: Open Your work and choose Ready for review. Module 10 asks how much fidelity a prototype actually needs.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 

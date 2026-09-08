@@ -38,83 +38,192 @@ Three questions produced three prototypes. “Do people understand what they are
 
 Write the question your prototype must answer, choose the lowest fidelity that can answer it, and state what that choice makes untestable.
 
-**Where to work:** Paper for order and wording; a folder of linked local HTML files for flow; the same files with throttling for timing. No account, subscription or design platform is required at any fidelity in this module.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Paper for order and wording; a folder of linked local HTML files for flow; the same files with throttling for timing. No account, subscription or design platform is required at any fidelity in this module.
 
 - Starting material: Your open-questions list and current screens.
 - Create HaruCourse/Practice/m10-l01-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Build the cheapest thing that answers the question
+#### 1. Read and list questions
 
-Input artifact: Your open-questions list and current screens.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] One written question per prototype you plan
-- [ ] A chosen fidelity for each, with the reason
-- [ ] An untestable list per prototype
-- [ ] One prototype started at the lowest fidelity that fits
-
-## 1. Read and list questions
 - Read the assigned guidance on choosing prototype fidelity.
 - List the open questions from m07 and m09 you still cannot answer.
 - Mark which are about order, flow or timing.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every question you still cannot answer, each marked as being about wording, about moving between screens, or about waiting and real content.
 
-## 2. Match fidelity to question
+Worksheet fields for this step:
+
+- Every question about this design you still cannot answer — Take them from your Module 7 open questions and your Module 9 interaction notes. Write them all down before you judge any of them.
+- Beside each question: is it about wording and order, about moving between screens, or about waiting and real content?
+
+<details>
+<summary>Help with this step</summary>
+
+- **Prototype:** Something rough you make in order to find out one thing. If you cannot say what it exists to find out, it is an artefact rather than a prototype.
+- **Fidelity:** How close the prototype is to a real product. Paper is low, a clickable set of screens is middling, something that actually runs is high.
+
+Stuck starting? Go back to your open questions and finish this sentence for each: “I still do not know whether …”.
+
+Is it enough? Every question carries one of the three marks, and at least two different marks appear.
+
+</details>
+
+#### 2. Match fidelity to question
+
+**See it first.** Made-up example. Choosing a prototype for a question about wording, and starting far too high.
+
+- **What I set out to build:** A clickable prototype of the whole booking flow. Twelve screens, real photographs, the studio’s colours. It felt like the serious answer.
+- **The question I actually had:** “Do people understand what they are agreeing to before they pay?” That is about the words on two screens and the order those screens come in.
+- **The test I applied:** What could the level below not tell me? Paper could tell me all of it. So the twelve screens were buying me nothing I had asked for.
+- **What I built instead:** Three sheets of paper: the class page, the review page and the payment page, with the real wording on each. An afternoon, not two days.
+- **What it cost me:** Paper cannot tell me whether the wait after paying feels bearable. That went on the untestable list and became a separate question with its own prototype later.
+
+**The wrong turn:** The wrong turn is choosing the fidelity that will look best when you show it. A prototype built to be admired collects comments about photographs and colours, and the question you started with goes unanswered.
+
+**What it costs:** Paper feels unimpressive and you will want to apologise for it. It also gets built in an afternoon, so you can rewrite it after the first person hesitates.
+
+**Still unknown:** Still unknown: whether people read wording differently on paper than on a screen. That is a real risk, and it is smaller than never asking the question at all.
+
 - For each question choose paper, clickable or built.
 - Justify every choice above paper by what paper cannot answer.
 - Reject any fidelity chosen for how it will look.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One fidelity per question, with the cheaper level named and what it could not have told you.
 
-## 3. Write the untestable lists
+**Try it with help.** Six questions from a made-up class-booking project. For each one, decide the cheapest thing that could answer it.
+
+- Do people understand what they are agreeing to before they pay?
+  - **paper** — The question is about the wording and the order of two screens. Sheets of paper carry both, and you can rewrite one in a minute.
+  - clickable — Linking the screens adds nothing, because the person only has to read them in order. You would be paying for screens the question does not need.
+  - built — Nothing here waits, loads or uses real data. A built version would answer it and cost you a fortnight.
+- Can people find the way to change a booking they have already made?
+  - paper — Finding something means looking in several places. On paper you hand over the next sheet, and that is you doing the finding.
+  - **clickable** — Looking for something means moving between screens with nobody helping. Linked screens are exactly what that needs.
+  - built — Real data and real waiting are not part of this question. The click-through answers it, so building is money spent on nothing.
+- After pressing pay, does the wait feel bearable, or do people press again?
+  - paper — Paper cannot wait. You would have to say “imagine four seconds pass”, and imagining a wait is not the same as sitting through one.
+  - clickable — A click-through changes screen the instant it is tapped. The gap is the thing you want to watch, and there is no gap.
+  - **built** — Only something that actually waits shows you what a person does during the wait. This is what the top of the ladder is for.
+- Which of two names do people expect to hold the classes they saved?
+  - **paper** — Two words on two sheets, shown to the same person. Nothing cheaper could answer it and nothing dearer would answer it better.
+  - clickable — You would be building screens in order to hold one word. The word is the whole question.
+  - built — A built version tests the same word at a hundred times the cost.
+- Does the list still work when sixty classes load on a slow connection?
+  - paper — Sixty classes on paper is a pile you lay out at your own speed. The question is about loading and scrolling, which paper does not do.
+  - clickable — A click-through shows a screen that is already there. It cannot show you a long list arriving slowly.
+  - **built** — Loading, waiting and real content volume all need something that actually runs. This is the one on the list that earns it.
+- When a class turns out to be full, can people get from there to something they would book instead?
+  - paper — The person has to leave one screen and reach another without being handed it. Passing the next sheet across removes the question.
+  - **clickable** — A failure screen with ways out of it is exactly what linked screens are for, and it needs no real data at all.
+  - built — Nothing here depends on real prices, real waiting or real places remaining. The click-through answers it.
+
+**Then:** Now do the same with your own questions. For each one, name the cheapest level and what the level below could not have told you.
+
+**What to watch for:** Look back at the two you found hardest. The test is not how important the question is. It is what the person has to do to answer it. Reading words is paper. Going looking is clickable. Waiting, and real amounts of content, are built.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Prototype 1 · the question, the fidelity you chose, and what the cheaper level could not answer
+- Prototype 2 · the question, the fidelity you chose, and what the cheaper level could not answer
+- Prototype 3 · the question, the fidelity you chose, and what the cheaper level could not answer
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take your first question and ask what paper could not tell you. If the answer is nothing, it is a paper prototype.
+
+Is it enough? Every choice above paper names something specific that paper could not have shown you.
+
+</details>
+
+#### 3. Write the untestable lists
+
 - For each prototype write what it cannot establish.
 - Name the claim you would be tempted to make from it.
 - Keep these lists; they go into the report later.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** For each prototype, what it cannot establish and the sentence you would like to claim from it.
 
-## 4. Start the lowest one
+Worksheet fields for this step:
+
+- For each prototype: the list of things it cannot establish — Invented prices, faked waiting, one working path only, three items where there will one day be sixty.
+- For each prototype: the strongest sentence you would like to claim from it, and whether it is allowed
+
+<details>
+<summary>Help with this step</summary>
+
+- **Untestable list:** The written list of what a prototype cannot show, made before you test it. It is the thing that stops you overclaiming afterwards.
+
+Stuck starting? Walk your own prototype and note everything that is pretend: the prices, the waiting, the single path that works.
+
+Is it enough? Each list names a specific sentence you might otherwise have written, not a general limitation.
+
+</details>
+
+#### 4. Start the lowest one
+
 - Build the paper or clickable version for your first question.
 - Include one failure path, not only the happy one.
 - Stop as soon as it can answer the question.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One prototype built at the lowest fidelity that answers its question, including one failure path.
 
-## 5. Record the decision
+Worksheet fields for this step:
+
+- Which question it answers, which fidelity, and how many screens
+- The one failure path you included, and how a person reaches it
+- Where the prototype lives — A folder name, or “paper, in my folder”. Nothing is uploaded.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Failure path:** What a person meets when something goes wrong: the class is full, the payment is refused, nothing matches. Most of what people learn about a service, they learn here.
+
+Stuck starting? Build only the screens the question needs, then add the one failure from your Module 7 exception table.
+
+Is it enough? You could hand it to somebody and they could reach both the ordinary ending and the failure.
+
+</details>
+
+#### 5. Record the decision
+
 - Write why you stopped where you did.
 - Note what you would add if a later question needed it.
 - Save the questions, choices and untestable lists together.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Why you stopped where you did, and the repair the Check questions asked for.
 
-## Review and handoff
-- Each prototype has a written question: [evidence reference]
-- Fidelity is justified by what the level below cannot answer: [evidence reference]
-- An untestable list exists per prototype: [evidence reference]
-- The first prototype stops at the level that answers its question: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Why you stopped where you did, and what you would add if a later question needed it
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Finish this sentence: “I stopped here because the question is already answered, and adding more would only …”.
+
+Is it enough? The note names what you would add, and which later question would make it worth adding.
 
 </details>
+
+**Save and continue.** Saved for you: Your questions, fidelity choices and untestable lists save as you type, on this device first and then online. Kept outside the app: The prototype itself stays with you, on paper or in a folder. Write down where it lives in step 4; nothing is uploaded. What your creator sees: Your creator reads the question beside each fidelity choice, and the untestable lists. Those are what show the prototype was built to learn rather than to show. Your next action: Open Your work and choose Ready for review. The next lesson builds the click-through for the flow you chose here.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -254,82 +363,171 @@ Seven linked files covered browse, detail, review, pay, confirm, a full-class fa
 
 Build a clickable prototype of one flow from linked local files, including one failure path, and record exactly what it fakes.
 
-**Where to work:** A text editor and a browser. One file per screen, links between them, and your real content. Add a stylesheet if you want the fidelity; the point is that it opens on a participant's phone with no account and no install.
+**Where to practise:** Draw the screen list and the click-through you build from it on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: A text editor and a browser. One file per screen, links between them, and your real content. Add a stylesheet if you want the fidelity; the point is that it opens on a participant's phone with no account and no install.
 
 - Starting material: Your chosen flow and its screens.
 - Create HaruCourse/Practice/m10-l02-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# A clickable prototype without an account
+#### 1. Plan the screens
 
-Input artifact: Your chosen flow and its screens.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A clickable prototype of one flow, runnable in a browser
-- [ ] At least one failure path included
-- [ ] Awkward fake data: a long name, a missing value, an edge case
-- [ ] A fakes sheet listing everything that does not really work
-
-## 1. Plan the screens
 - List the screens your chosen flow needs, including one failure.
 - Decide which actions must work and which may be dead.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The screens your flow needs, including one where something goes wrong, and which actions must really work.
 
-## 2. Build the click-through
+Worksheet fields for this step:
+
+- The one flow you are building, in a few words
+- Every screen the flow needs, including at least one where something goes wrong — One line per screen. Take the failure from your Module 7 exception table.
+- Which actions must really work, and which may be dead — Dead means nothing happens when it is tapped. That is allowed, and it goes on the fakes sheet later.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Click-through:** A set of screens joined so that tapping one takes you to the next. On paper you turn the sheets yourself; in a free tool the links do it.
+- **Exception table:** Your Module 7 list of the things that can go wrong in this flow, with what the service should say.
+
+Stuck starting? Walk the flow in your head and write a line for each screen you would see. Then add the one where it goes wrong.
+
+Is it enough? One screen on the list is a failure, and every other screen has a reason to exist.
+
+</details>
+
+#### 2. Build the click-through
+
+**See it first.** Made-up example. Building a click-through of a booking flow, polishing it, and then refusing to change it.
+
+- **What I built first:** Seven screens with the real photographs, the studio’s colours and a soft shadow under every card. Two days of work, and it looked like a product.
+- **What the first session was about:** The person said the photographs were lovely and asked what typeface I had used. Twenty minutes of the hour, gone.
+- **What I would not do:** She hesitated at the review screen. I found I did not want to change that screen, because I had spent a day on it.
+- **What I built the second time:** Seven sheets of paper with the real wording, no photographs, no colour. An afternoon, with me turning the pages.
+- **What that changed:** When the next person hesitated in the same place, I rewrote the sheet between sessions. Four minutes, and the third session tested the new wording.
+
+**The wrong turn:** The wrong turn is making it look finished. A finished-looking prototype collects comments about the surface, and it turns you into someone defending work instead of someone changing it.
+
+**What it costs:** A plain prototype means somebody will say it looks unfinished, and you will feel that. It buys you the ability to change it between one session and the next.
+
+**Still unknown:** Still unknown: whether people behave differently in front of something obviously rough. They may be gentler with it, and no test at this size can settle that.
+
 - Create one file per screen with your real content.
 - Link each action to the screen it should reach.
 - Add the failure path from your exception table.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A working click-through of the flow, with each action reaching the screen it should.
 
-## 3. Make the data awkward
+Worksheet fields for this step:
+
+- How you are building it (Paper screens, with you acting as the computer / A free prototyping tool with the screens linked) — Both are real prototypes. The point of either is that the person taking part needs no account and installs nothing.
+- Each action and the screen it should reach
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Make the screens first with nothing linked. Then join them one action at a time, following your own flow.
+
+Is it enough? You can walk from the first screen to the ordinary ending and to the failure, without touching anything except the screens.
+
+</details>
+
+#### 3. Make the data awkward
+
 - Include one very long name and one missing value.
 - Include one edge case: last place, zero results, or an unusual price.
 - Check the layout survives all three.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Content that includes one very long value, one missing value and one edge case, with what each did to the layout.
 
-## 4. Write the fakes sheet
+Worksheet fields for this step:
+
+- The very long value, the missing value and the edge case you put in, and what each one did to the layout — A class title that runs to three lines, a class with no price shown, a class with one place left.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take your three worst real examples. If you have none, invent the longest title you can imagine somebody typing.
+
+Is it enough? Something moved, wrapped or fell off the screen, and you wrote down what.
+
+</details>
+
+#### 4. Write the fakes sheet
+
 - List every control that does nothing.
 - List every invented value and every faked delay.
 - Note which of these a participant is likely to try.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A fakes sheet listing every dead control, every invented value and every faked wait, and which ones a person is likely to try.
 
-## 5. Open it on a phone
+**Try it with help.** A fakes sheet from a made-up prototype of a class-booking flow. Four rows: the search box does nothing; the account link does nothing; every price is invented; a two-second wait was added before the confirmation screen.
+
+In the session, one person tapped the search box, waited, and said “I think it’s broken”. Which row on that sheet was doing the most work?
+
+- **The search box row, because it was written before the session and turns that moment into a route you had not built.** — Without the row you would write down “person could not finish the task”. With it you write down “person went looking for search, which does not exist yet”. Those two notes lead to different decisions.
+- The invented prices row, because somebody who spots a wrong price stops trusting the rest. — Invented prices are worth recording, and people rarely act on them. The rows that earn their place are the ones a person will try to use.
+- The faked wait row, because a wait you invented is not evidence about the real one. — That row protects a claim you might make weeks later, which is a different job from reading the session correctly while it is happening.
+- None of them, because the sheet is a record for you and does not change what happened. — It changes what you write down, and what you write down is the only part of the session that survives it.
+
+**Then:** Now walk your own prototype and tap everything, including the things you already know are dead. Every non-response is a row.
+
+Worksheet fields for this step:
+
+- Every control that does nothing when a person taps it
+- Every invented value and every faked wait
+- Which of these a person is most likely to try
+
+<details>
+<summary>Help with this step</summary>
+
+- **Fakes sheet:** The written record of everything in the prototype that only pretends to work. It is usually the most useful page you produce in this lesson.
+
+Stuck starting? Go through screen by screen and tap every word, icon and box, not only the ones you built.
+
+Is it enough? Somebody else could read the sheet and predict which taps will do nothing.
+
+</details>
+
+#### 5. Open it on a phone
+
 - Open the prototype on a phone and walk the flow.
 - Fix anything unreachable or unreadable at that size.
 - Save the prototype and the fakes sheet together.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The prototype walked on a phone, with what you fixed, and the repair the Check questions asked for.
 
-## Review and handoff
-- The prototype runs in a browser with no account: [evidence reference]
-- At least one failure path is included: [evidence reference]
-- Data includes long, missing and edge-case values: [evidence reference]
-- A fakes sheet records everything that does not work: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What was unreachable or unreadable at phone size, and what you changed
+- Where the prototype and the fakes sheet live together
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Open it on a phone, or hold the paper sheets at phone size, and do the whole flow without helping yourself.
+
+Is it enough? Nothing in the flow is unreachable or unreadable at that size, and the fakes sheet is stored with the prototype.
 
 </details>
+
+**Save and continue.** Saved for you: The screen list, the links, the awkward content and the fakes sheet save as you type, on this device first and then online. Kept outside the app: The prototype stays with you: paper sheets in a folder, or a link in a free tool. Write down in step 5 where the two of them live together. What your creator sees: Your creator reads the fakes sheet first. It shows you know exactly what your prototype is pretending, which is what makes any later finding believable. Your next action: Open Your work and choose Ready for review. The next lesson writes the tasks you will give people in front of this prototype.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -469,82 +667,193 @@ Five tasks, none naming a control. “You want to do something on Saturday with 
 
 Write five test tasks as situations with a goal and a stopping condition, define success for each in advance, and remove every word that names a control.
 
-**Where to work:** Written work: the tasks on paper or in a text file, with the success definitions beside them. Nothing else is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Written work: the tasks on paper or in a text file, with the success definitions beside them. Nothing else is needed.
 
 - Starting material: Your prototype and its question list.
 - Create HaruCourse/Practice/m10-l03-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Tasks that do not tell people the answer
+#### 1. Read and draft
 
-Input artifact: Your prototype and its question list.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Five tasks stated as situations with goals
-- [ ] A success definition per task, written in advance
-- [ ] One task targeting a failure path
-- [ ] A deliberate task order with contamination noted
-
-## 1. Read and draft
 - Read the assigned guidance on writing tasks for a session.
 - Draft five tasks from the questions your prototype answers.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Five rough tasks, one per question your prototype exists to answer.
 
-## 2. Strip the vocabulary
+Worksheet fields for this step:
+
+- One rough task per question your prototype exists to answer — Write them badly and quickly. All the rewriting happens in the next step.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Task:** One thing you ask a person to get done during a session. It has a situation, a goal and a point at which they stop.
+- **Control:** Anything on the screen a person can operate or read as a signpost: a button, a menu, an icon, a page name.
+
+Stuck starting? Take your first question and finish this sentence: “to find that out, somebody would have to try to …”.
+
+Is it enough? There are five, and each one traces back to a question the prototype exists to answer.
+
+</details>
+
+#### 2. Strip the vocabulary
+
+**See it first.** Made-up example. Writing one task, reading it back, and finding I had told the person where to go.
+
+- **What I wrote first:** “Use the search box to find a pottery class on Saturday, then add it to your basket.”
+- **Why it felt fine:** It is short, it is clear, and anybody could follow it. That turned out to be exactly the problem.
+- **What it was actually testing:** Whether a person can follow instructions. I already know they can. What I wanted to know was whether it would occur to them to search at all.
+- **What I wrote instead:** “You want to do something on Saturday with your sister. Find something you would both be happy with, and stop when you reach the point where you would pay.”
+- **What that gave me:** The first person never searched. She scrolled the whole list instead. That is a finding, and the first wording would have hidden it completely.
+
+**The wrong turn:** The wrong turn is writing the task in the words that are on your own screens, because those are the words in your head. Every one of them hands the person a piece of the answer.
+
+**What it costs:** A task written as a situation is longer and vaguer, and people will ask you what you mean. Saying “whatever you would normally do” is uncomfortable, and it is the whole method.
+
+**Still unknown:** Still unknown: whether the situation you invented is one this person would ever really be in. If it is not, they are acting, and all you can do is watch for it.
+
 - Underline every word in your tasks that appears in the interface.
 - Rewrite each task to describe the situation instead.
 - Check nothing names a button, menu or screen.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each task rewritten as a situation with a goal and a stopping point, naming no control.
 
-## 3. Define success
+**Try it with help.** Six task wordings from a made-up class-booking study. For each one, decide what it does to the person taking part.
+
+- “Open the Manage booking page and cancel Saturday’s class.”
+  - **names a control** — “Manage booking” is printed on the screen. Reading it aloud means you never find out whether anybody would have looked there.
+  - leads them there — It goes further than leading. It gives the exact words to hunt for, so no hunting happens at all.
+  - leaves it to them — Nothing is left to them. The route, the page and the outcome are all in the sentence.
+- “You booked a class for Saturday and now you cannot go. Do whatever you would normally do about it, and stop when you feel it is dealt with.”
+  - names a control — Read it again for words that appear on your screens. Booked, class and Saturday describe her circumstances, not your controls.
+  - leads them there — It says nothing about what exists or where to look. Cancelling, changing and telephoning are all still open to her.
+  - **leaves it to them** — A situation, a goal and a stopping point, with the route left open. That is the shape you are after.
+- “There is a way to change the date of a booking without cancelling it. See if you can find it.”
+  - names a control — No button or page is named. What it gives away is that the thing exists at all.
+  - **leads them there** — Telling the person the feature is there removes the most useful thing you could have watched: whether she expected it to be there.
+  - leaves it to them — The decision has already been taken for her. She is now searching for something you promised is somewhere.
+- “You want to give your sister a class for her birthday. Get as far as the point where you would pay.”
+  - names a control — Nothing in it appears on a screen. Present, birthday and sister all belong to her life rather than your design.
+  - leads them there — It sets a goal without saying anything about how the site works, or even whether it can do this.
+  - **leaves it to them** — A reason, a goal and a clear stopping point. If the site cannot do it at all, you will find that out too.
+- “Tap the filter icon and narrow the list to Saturday mornings under twenty pounds.”
+  - **names a control** — Filter is on the screen and so is the icon. She is now operating your design rather than using it.
+  - leads them there — It does much more than lead. It supplies the control, the order to use it in, and the values to type.
+  - leaves it to them — The only thing left to her is the tapping.
+- “The class you were going to book is full. Find the alternative the site suggests.”
+  - names a control — No control is named. “Alternative” describes an outcome rather than anything printed on a button.
+  - **leads them there** — It promises that a suggestion exists. Whether anybody notices one is exactly what a full-class screen needs testing for.
+  - leaves it to them — She is told there is something there to find, so the decision about what to do next has been made for her.
+
+**Then:** Now read your own five aloud and mark each one the same way. Rewrite anything that is not in the third group.
+
+**What to watch for:** Look back at the two you found hardest. Naming a control is easy to spot, because the word is on your screen. Leading is harder, because the sentence sounds like a situation while quietly promising that something exists. The test is whether the person could still come away believing the feature is not there.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Task 1 · the situation, the goal, and where the person stops — Underline every word that also appears on your screens, then write the task again without any of them.
+- Task 2 · the situation, the goal, and where the person stops
+- Task 3 · the situation, the goal, and where the person stops
+- Task 4 · the situation, the goal, and where the person stops
+- Task 5 · the situation, the goal, and where the person stops
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take your first rough task and cross out every word that also appears on your screens. Write what is left as a situation.
+
+Is it enough? No task names a button, menu, icon or page, and none of them promises that a feature exists.
+
+</details>
+
+#### 3. Define success
+
 - Write the destination that counts as success for each task.
 - List acceptable alternative routes, including workarounds you would note.
 - Decide what counts as abandonment.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A written destination for each task, the alternative routes you would accept, and what counts as giving up.
 
-## 4. Order and prune
+Worksheet fields for this step:
+
+- For each task: the destination that counts as success — Write it before anybody sits down. Afterwards it is a description of what happened.
+- For each task: the other routes you would accept, including workarounds you would note
+- What counts as the person giving up
+
+<details>
+<summary>Help with this step</summary>
+
+- **Workaround:** A route that gets the person there by a way you did not design, such as telephoning. Worth accepting, and always written down as a workaround rather than a success.
+
+Stuck starting? For each task ask what you would be happy to see, then what you would grudgingly accept, then what would make you stop the task.
+
+Is it enough? Every task has a destination and at least one route you did not design.
+
+</details>
+
+#### 4. Order and prune
+
 - Put discovery-sensitive tasks first.
 - Note where an earlier task will teach a later one.
 - Cut to five and record what you removed.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The five in a deliberate order, with a note wherever an earlier task teaches a later one, and what you cut.
 
-## 5. Rehearse
+Worksheet fields for this step:
+
+- Your five in the order you will give them, with the reason for the first one — Whatever depends on discovering something goes first, before another task reveals it.
+- Where an earlier task teaches the answer to a later one
+- What you cut to get down to five
+
+<details>
+<summary>Help with this step</summary>
+
+- **Contamination:** When one task shows the person something a later task was meant to test. The later answer then tells you about your own ordering.
+
+Stuck starting? Read the tasks in order and mark the point at which each control first becomes visible.
+
+Is it enough? Anything that depends on discovering something comes before the task that reveals it, and the cuts are written down.
+
+</details>
+
+#### 5. Rehearse
+
 - Read the tasks aloud to check they sound natural.
 - Time yourself completing all five as the expert.
 - Save the tasks, the success definitions and the order.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The tasks read aloud, timed by you, and the repair the Check questions asked for.
 
-## Review and handoff
-- Tasks describe situations and name no controls: [evidence reference]
-- Success is defined in advance with alternatives: [evidence reference]
-- One task targets a failure path: [evidence reference]
-- Order is deliberate and contamination is noted: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What sounded wrong when you read them aloud, and how long all five took you
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read each task out to the empty room. Anything you would not say to a person out loud is written wrong.
+
+Is it enough? They sound like something one person would say to another, and you know how long all five take.
 
 </details>
+
+**Save and continue.** Saved for you: The tasks, the success definitions and the order save as you type, on this device first and then online. Kept outside the app: Nothing here needs a file. Print the five tasks and the success definitions on one sheet before your first session. What your creator sees: Your creator reads one rejected wording beside its replacement. That pair shows the discipline more clearly than five finished tasks do. Your next action: Open Your work and choose Ready for review. The next lesson recruits the people who will be given these tasks.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -684,83 +993,173 @@ Three participants were recruited through the same route as the m05 study, scree
 
 Recruit at least three participants for a usability session, obtain consent covering recording and their own device, and prepare a session plan you can run alone.
 
-**Where to work:** Message threads for recruitment, a printed consent introduction, the prototype on a phone and a paper note sheet. No scheduling, recording or research platform is required.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Message threads for recruitment, a printed consent introduction, the prototype on a phone and a paper note sheet. No scheduling, recording or research platform is required.
 
 - Starting material: Your m05 screener and consent introduction.
 - Create HaruCourse/Practice/m10-l04-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Recruit, consent and set up the session
+#### 1. Screen and recruit
 
-Input artifact: Your m05 screener and consent introduction.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Recruiting three people, getting two, and writing the third one down as a gap.
 
-## Output checklist
-- [ ] At least three recruited participants with their relevant experience noted
-- [ ] A consent introduction covering recording and device use
-- [ ] A stated solo choice: recording or full notes
-- [ ] A session plan with a short version for a truncated session
+- **Who I asked first:** Three friends who were free on Thursday. It took ten minutes and I felt organised.
+- **The question I had not asked:** What must each of them have done for their hour to be worth anything? None of the three had booked something with a fixed time in years.
+- **What I did instead:** I wrote one line: has booked something with a fixed time and place in the last two months. Then I went back to the group where I found the Module 5 participants.
+- **What actually happened:** Two people said yes. A third said yes and then stopped replying. I waited four days and stopped chasing her.
+- **What I wrote down:** “Two participants, both from one group, both comfortable paying online. A third agreed on 12 March and did not reply after that.” That sentence goes into the report beside the findings.
 
-## 1. Screen and recruit
+**The wrong turn:** The wrong turn is taking whoever is free and then saying nothing about it. The sample is not the problem; the silence about it is, because every finding then reads as though it came from anybody at all.
+
+**What it costs:** Screening loses you people, and two participants feels thin. Two who have actually done the thing tell you more than five who are imagining it.
+
+**Still unknown:** Still unknown: what people outside that one group would have done. Nothing in a study this size can reach them, and the recruitment sentence is what keeps that visible.
+
 - Reuse your m05 screener, adjusted for this study's experience requirement.
 - Recruit at least three people and record their relevant experience.
 - Record who you could not reach.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The one experience each person must have, who you recruited, and a dated record of who you could not reach.
 
-## 2. Extend consent
+Worksheet fields for this step:
+
+- The one experience each person must have for their hour to be worth anything
+- Each person you recruited, and the experience that qualifies them — Reuse your Module 5 screener, adjusted for this study. No names are needed here.
+- Dated: who you approached and could not reach, and what you tried — Write the date, where you asked and what happened. If nobody agreed, this field plus your prepared plan is a complete answer for this lesson.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Screener:** The short set of questions you ask before inviting somebody, to find out whether they have the experience the study needs.
+- **Convenience sample:** People you recruited because they were available. It is allowed, and it must be said out loud in the report, in the same sentence as the findings.
+
+Stuck starting? Write the one experience first, in a single line, before you think about anybody you know.
+
+Is it enough? Either three people are recorded with their qualifying experience, or the dated record says who you asked and what happened.
+
+</details>
+
+#### 2. Extend consent
+
 - Add recording and device use to your consent introduction.
 - State that nothing is installed and no personal data is viewed.
 - State how and when anything captured will be deleted.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A consent introduction covering recording, their own device, what is not installed, and deletion.
 
-## 3. Choose how you will capture
+Worksheet fields for this step:
+
+- The sentences covering recording: what is recorded, who hears it, and that they may say no and still take part
+- The sentences covering their own device: that nothing is installed, and what you will and will not see
+- How and when anything you capture is deleted
+
+<details>
+<summary>Help with this step</summary>
+
+- **Consent:** Agreement to the specific things you named. Agreement to a conversation is not agreement to a recording, and neither is agreement to using their phone.
+
+Stuck starting? Take your Module 5 consent introduction and add two sentences: one about the recording, one about their device.
+
+Is it enough? Somebody reading it aloud would know what is captured, what you will see, and that they can stop at any point.
+
+</details>
+
+#### 3. Choose how you will capture
+
 - Decide between recording with sparse markers or full notes.
 - Prepare the corresponding sheet or recorder.
 - Test the setup on yourself once before the first session.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One capture method chosen, and what you missed when you tried it on yourself.
 
-## 4. Prepare the session
+**Try it with help.** A made up situation. You are running the session on your own. The person has agreed to audio recording. You have five tasks, a fakes sheet to hand, and nobody else in the room.
+
+Which way of capturing the session keeps the most of what you will need afterwards?
+
+- **Record the audio and write sparse markers: the time, the task, and one word for what happened.** — Writing full notes while moderating means you stop watching. The markers exist only so you can find the right moments in the recording later.
+- Write full notes and skip the recording, so nothing depends on the audio. — It is a real choice, and it costs you the moderating. Every minute your head is down is a minute you did not see a hesitation.
+- Record and write nothing at all, then listen back to the whole thing. — Listening to three sessions end to end takes longer than the sessions did, and you still will not find the moment you half-remember.
+- Ask the person to describe what happened at the end, and write that down. — A summary from memory tells you what they concluded, and what somebody concludes is the part that changes most between the moment and the end.
+
+**Then:** Now run one task on yourself using the method you chose, and write down what you missed.
+
+Worksheet fields for this step:
+
+- What you will do during the session (Record the audio and write sparse markers / Write full notes and record nothing / Write from memory straight afterwards, if recording is refused)
+- What you missed when you tried your chosen method on yourself
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Choose by asking what you would rather lose: the second half of a sentence, or the look on somebody’s face.
+
+Is it enough? You have tried the method once and written down what it costs you.
+
+</details>
+
+#### 4. Prepare the session
+
 - Load the prototype on the device you will use.
 - Print the tasks, success definitions and fakes sheet.
 - Write the short version covering the two most important tasks.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Everything loaded, printed and to hand, plus a short version covering the two most important tasks.
 
-## 5. Rehearse and record gaps
+Worksheet fields for this step:
+
+- What is loaded, printed and to hand before the person arrives — The prototype on the device you will use, the tasks, the success definitions, the fakes sheet, a charged phone.
+- The short version: the two tasks you would keep if you had twenty minutes
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Lay out physically what you will need, then write the list from what is in front of you.
+
+Is it enough? The short version names the two tasks and could be run in about twenty minutes.
+
+</details>
+
+#### 5. Rehearse and record gaps
+
 - Run the whole session on yourself, timing it.
 - Note anything you had to improvise and decide it now.
 - If recruitment failed, record the gap and what you tried.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The session run on yourself and timed, what you had to improvise, and the repair the Check questions asked for.
 
-## Review and handoff
-- Participants are screened for relevant experience: [evidence reference]
-- Consent covers recording and device use: [evidence reference]
-- The capture method is chosen and prepared: [evidence reference]
-- A short session version exists for a truncated slot: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- How long the whole session took when you ran it on yourself
+- Anything you had to make up as you went, and what you have now decided instead
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Sit down and run the whole thing on yourself, out loud, from the consent introduction to the last task.
+
+Is it enough? Nothing in the session is still being decided in the moment, and the rehearsal is recorded as a rehearsal rather than as a session.
 
 </details>
+
+**Save and continue.** Saved for you: The screening line, the consent sentences, the capture choice and the session plan save as you type, on this device first and then online. Kept outside the app: Print the consent introduction, the tasks and the fakes sheet before the first session. Keep anything you record off this app and separate from your notes. What your creator sees: Your creator reads the consent introduction and the dated record of who you could not reach. Preparation and an honest gap read better than three participants and no plan. Your next action: Open Your work and choose Ready for review. The next lesson runs the sessions themselves, and asks you to log every time you helped.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -900,82 +1299,194 @@ In the second session the participant stopped at the review screen and said “I
 
 Run three usability sessions in which you ask what people expect, wait through hesitation, and record every time you intervened and why.
 
-**Where to work:** Your prepared materials, a phone recorder if consented, and a note sheet. Nothing else; a moderator with a laptop between them and the participant sees less.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Your prepared materials, a phone recorder if consented, and a note sheet. Nothing else; a moderator with a laptop between them and the participant sees less.
 
 - Starting material: Your prepared session materials and three participants.
 - Create HaruCourse/Practice/m10-l05-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Moderating without rescuing
+#### 1. Rehearse the discipline
 
-Input artifact: Your prepared session materials and three participants.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. A session where I answered a participant’s question and deleted the strongest finding of the study.
 
-## Output checklist
-- [ ] Three session records with expectation before and after each change
-- [ ] A log of every intervention with its timing and wording
-- [ ] Verbatim quotations for the moments that surprised you
-- [ ] A note of which sessions were assisted and from what point
+- **The moment:** She stopped at the review screen, thumb hovering, and said “I suppose I press this?”.
+- **What I said:** “That’s the payment step.” Helpful, quick, and over in a second. She pressed it and carried on.
+- **Why it was wrong:** The answer I gave her was the answer I needed from her. I had just told her what the screen meant, so I could no longer find out what she thought it meant.
+- **The same moment, next session:** I said “what would you expect that to do?” and then said nothing. The silence lasted about six seconds and felt much longer.
+- **What came back:** “Take my money, I think — but I don’t know if the class is definitely mine yet.” That sentence became the strongest finding of the study.
+- **Where I did step in:** Later she became visibly uncomfortable hunting for the cancellation route. After about ninety seconds I helped, wrote down the time and my words, and marked everything after it as assisted.
 
-## 1. Rehearse the discipline
+**The wrong turn:** The wrong turn is answering. It feels like courtesy and it is the one thing only you can do wrong, because the participant cannot un-hear it.
+
+**What it costs:** Waiting is uncomfortable for both of you, and some participants will feel briefly stupid. You reduce that with your opening words, not by rescuing them mid-task.
+
+**Still unknown:** Still unknown: whether ninety seconds was the right point to step in. There is no rule for it, so the time goes in the log and a reader can disagree with me.
+
 - Read the assigned moderation guidance.
 - Write your three standard responses to questions, and practise them aloud.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three sentences you can say without thinking, and the moment you know you will want to step in.
 
-## 2. Run the sessions
+**Try it with help.** Six moments from three sessions, all made up for practice. For each one, decide whether the moderator should wait, ask a neutral question, or has already rescued the participant.
+
+- The participant goes quiet, thumb hovering over the screen. Twenty seconds pass. The moderator says nothing.
+  - **wait** — Silence is the instrument. Twenty seconds of somebody deciding is data you cannot get any other way.
+  - neutral question — A question here would interrupt her while she is still working it out. Ask afterwards what she was weighing up.
+  - rescued — Nothing was supplied. The moderator gave her nothing at all, which is the point.
+- She says “I suppose I press this?”. The moderator says “what would you expect that to do?” and waits.
+  - wait — She has asked a direct question, so pure silence would feel like being ignored. The neutral question keeps the thinking with her and is still an answer of sorts.
+  - **neutral question** — It hands the question straight back without hinting. Her answer is the finding the moment exists to produce.
+  - rescued — No information about the screen was given. She still has to say what she thinks it does.
+- She asks where to cancel a booking. The moderator says “it’s under the little menu at the top”.
+  - wait — Something was said, and what was said was the answer. Waiting would have been the alternative here.
+  - neutral question — A neutral question would be “where would you look for that?”. This one named the control instead.
+  - **rescued** — The location of the cancel route is exactly what the task was testing. Log the words and the time, and mark what follows as assisted.
+- She scrolls up and down the same page three times and sighs. The moderator counts to ten and stays quiet.
+  - **wait** — A sigh is not distress. Repeated scanning is how people search, and the counting keeps the moderator from filling the gap.
+  - neutral question — Asking now interrupts the search. If it goes on and she looks stuck, “what are you looking for at the moment?” is the next move.
+  - rescued — Nothing was offered. The discomfort is the moderator’s, not hers.
+- She pauses before the pay button. The moderator asks “what do you think will happen next?”.
+  - wait — Waiting is fine too, and this is the one place worth speaking. Expectation before a screen changes cannot be recovered afterwards.
+  - **neutral question** — It captures the prediction while she still has it. Once the screen changes, she will describe what she saw instead.
+  - rescued — She is told nothing about what the button does. The question is about her expectation, not the design.
+- She asks “am I doing this right?”. The moderator says “you’re doing fine, that’s exactly it”.
+  - wait — A direct question to you needs some reply. The problem is the content of this one, not that it was answered at all.
+  - neutral question — “There is no wrong way to do this, what were you about to try?” would be the neutral version. This one confirmed her route.
+  - **rescued** — She was told her path was the intended one. Everything after it is her following your approval rather than the design.
+
+**Then:** Read your three standard responses again. Rewrite any of them that supplies information rather than asking for it.
+
+**What to watch for:** The test is simple: does what you are about to say contain any part of the answer? If it does, wait or ask instead.
+
+Worksheet fields for this step:
+
+- The three things you will say when a participant asks you a question — Write them as sentences you can say without thinking. You will need the first one within two minutes.
+- The moment you already know you will want to rescue — Most people have one. Naming it now makes it easier to sit through.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Neutral question:** A question that hands the thinking back to the participant without hinting at an answer.
+- **Rescuing:** Any moment where you supply the answer the session existed to collect. It feels like kindness and it deletes the finding.
+- **Assisted:** The part of a session that follows your help. It still counts as a record, and it no longer counts as the person managing alone.
+
+Stuck starting? Write the sentence you would say if a participant asked you what a button does, then take the answer out of it.
+
+Is it enough? None of your three responses tells the participant anything about the design.
+
+</details>
+
+#### 2. Run the sessions
+
 - Read the consent introduction and confirm agreement before starting.
 - Give each task, then stop speaking.
 - Ask expectation before a change and confirmation after.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Sessions run, or an honest smaller route recorded with a date, plus expectations captured before each screen change.
 
-## 3. Log interventions
+Worksheet fields for this step:
+
+- Which route you are taking (Three sessions with participants / One or two sessions, plus a rehearsal on yourself / A rehearsal only, because nobody was available)
+- Dated note: who you asked, who could not take part, and what you had ready for them — Put today’s date on it. A rehearsal stays labelled a rehearsal and is never written up as research.
+- For each screen change: what the person said would happen, and what did happen
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read the consent introduction aloud and get agreement before anything else. Then give the first task and stop speaking.
+
+Is it enough? Every significant screen change has a predicted outcome and an actual one written beside it.
+
+</details>
+
+#### 3. Log interventions
+
 - Record every time you spoke beyond the task or a neutral probe.
 - Note what you said and what prompted it.
 - Mark where a session became assisted.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every time you spoke beyond the task, with the time and your words, and the point each session became assisted.
 
-## 4. Write up immediately
+Worksheet fields for this step:
+
+- Every time you spoke beyond the task or one of your three responses, with the time and your exact words
+- Where each session became assisted, and what was happening just before
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Go through the recording, or reconstruct honestly, and write down anything you said that was not the task or one of your three responses.
+
+Is it enough? The log includes at least one entry you are not proud of.
+
+</details>
+
+#### 4. Write up immediately
+
 - Within an hour, complete each session record.
 - Separate what was said, what you observed and what you inferred.
 - Mark anything reconstructed from memory.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One record per session, written within the hour, with said, observed and inferred kept apart.
 
-## 5. Review your own moderation
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Record 1 · what was said, what you observed, what you inferred, and anything you reconstructed from memory
+- Record 2 · what was said, what you observed, what you inferred, and anything you reconstructed from memory
+- Record 3 · what was said, what you observed, what you inferred, and anything you reconstructed from memory
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the words you actually heard first. Everything else is either what you watched or what you concluded.
+
+Is it enough? Anything you cannot place under said or observed is marked as inferred or reconstructed.
+
+</details>
+
+#### 5. Review your own moderation
+
 - Read your intervention log and mark the ones that were unnecessary.
 - Write one change for the next session.
 - Save the records and the log together.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The interventions you now think were unnecessary, one change for next time, and the repair the Check questions asked for.
 
-## Review and handoff
-- Expectation is asked before changes and confirmed after: [evidence reference]
-- Interventions are logged with wording and timing: [evidence reference]
-- Sessions are written up immediately with layers separated: [evidence reference]
-- Assisted portions are marked in the record: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The interventions you now think were unnecessary
+- One thing you will do differently in the next session
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read the log as though somebody else had moderated. Mark every entry where waiting would have worked.
+
+Is it enough? Your one change is a specific sentence or pause, not a resolution to be better.
 
 </details>
+
+**Save and continue.** Saved for you: Your responses, logs and session records save as you type, on this device first and then online. Kept outside the app: Keep the recording, if you made one, off this app and somewhere private. Only your written record belongs here. What your creator sees: Your creator reads the intervention log first. Admitting where you spoke is what shows you understand your own presence is part of the data. Your next action: Open Your work and choose Ready for review. The next lesson turns these records into a ranked list of problems.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1115,82 +1626,176 @@ Eleven observations became six problems. Two of three participants could not tel
 
 Turn your session records into a ranked problem list where each problem states how many participants met it, what it cost them, and the evidence behind it.
 
-**Where to work:** Cards or a table: one observation per line, grouped by cause. Photograph the grouping. No analysis software is needed at this size and none would help.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Cards or a table: one observation per line, grouped by cause. Photograph the grouping. No analysis software is needed at this size and none would help.
 
 - Starting material: Your session records and pre-written success definitions.
 - Create HaruCourse/Practice/m10-l06-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# From sessions to ranked problems
+#### 1. Extract observations
 
-Input artifact: Your session records and pre-written success definitions.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A problem list grouped by cause, with participant counts
-- [ ] A ranking by harm with the reasoning stated
-- [ ] Assisted completions marked and excluded from success counts
-- [ ] An open-questions list for observations you cannot explain
-
-## 1. Extract observations
 - Write each observation on its own line with a participant label.
 - Read the assigned analysis guidance before grouping.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every observation on its own line with a person’s label, and an honest statement of what the records are.
 
-## 2. Group by cause
+Worksheet fields for this step:
+
+- What your analysis rests on (Three session records with participants / One or two session records, plus a rehearsal record / Rehearsal records only, because nobody was available)
+- Dated note: who you could not reach, and what you had prepared for them — A rehearsal record can be analysed for practice. It is labelled a rehearsal wherever it appears, and it is never reported as research.
+- Every observation on its own line, each with the label of the person it came from — One thing per line. A line with two things in it will not group cleanly later.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Observation:** One thing that happened, tied to one person. Not yet a problem and not yet explained.
+- **Problem:** A group of observations that you believe share a cause. Several moments can be one problem.
+- **Assisted completion:** A task the person finished after you helped. It is not a success and it is counted separately.
+
+Stuck starting? Go through each record and copy out anything that happened, one line at a time, without deciding yet what it means.
+
+Is it enough? Every line carries a person’s label and describes one thing.
+
+</details>
+
+#### 2. Group by cause
+
 - Put observations that share a likely cause together.
 - Name each group by the cause, not the screen.
 - Mark groups where the shared cause is a guess.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Groups named by the cause you believe is underneath them, with the speculative ones marked as guesses.
 
-## 3. Count and cost
+Worksheet fields for this step:
+
+- Your groups, each named by the likely cause rather than the screen it happened on
+- The groups where the shared cause is your guess
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? For each group finish the sentence “these happened because …”. If you cannot finish it, mark the group a guess or split it.
+
+Is it enough? No group is named after a screen. At least one group is marked as a guess.
+
+</details>
+
+#### 3. Count and cost
+
+**See it first.** Made-up example. Turning eleven observations into six problems, and getting the first ranking wrong.
+
+- **What I had:** Eleven lines across three sessions. Several were the same difficulty seen twice, and I had been treating every line as its own problem.
+- **My first count:** I wrote “six people hesitated at the review screen”. There were three people in the whole study. I had counted incidents and quietly turned them into people.
+- **What I wrote instead:** Three of three hesitated at one word on the review screen. Two of three could not tell whether their place was held before paying.
+- **The cost line:** The hesitation cost seconds and some doubt. Not knowing whether the place was held cost one person a second payment she said she would have made.
+- **What that did to the order:** The hesitation looked far worse in the room, because I watched it three times. The other one cost money, so it went first and the hesitation went second.
+- **What I left alone:** One person kept returning to the shortlist and I have no idea why. It went to open questions rather than into a group I would have invented for it.
+
+**The wrong turn:** The wrong turn is counting incidents. Eleven lines from three people is still three people, and “six hesitations” reads as six people to anyone who was not in the room.
+
+**What it costs:** Ranking by cost puts a quiet problem above a loud one, and the loud one is the one you remember. You will have to argue for the order, which is why the reason sits beside it.
+
+**Still unknown:** Still unknown: whether the top two problems share one cause. They might both come from the same missing message, and three sessions cannot tell me.
+
 - For each problem write how many of how many participants met it.
 - Write what it cost them: time, confusion, money, abandonment.
 - Mark assisted completions separately from unassisted ones.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One row per problem: how many of how many people met it, what it cost them, the evidence, and any assisted completions.
 
-## 4. Rank by harm
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Problem 1 · how many of how many people met it, what it cost them, the evidence, and whether any completion was assisted
+- Problem 2 · how many of how many people met it, what it cost them, the evidence, and whether any completion was assisted
+- Problem 3 · how many of how many people met it, what it cost them, the evidence, and whether any completion was assisted
+- Problem 4 · how many of how many people met it, what it cost them, the evidence, and whether any completion was assisted
+- Problem 5 · how many of how many people met it, what it cost them, the evidence, and whether any completion was assisted
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take one group and write the count as “two of three”, then write the sentence describing what it cost that person.
+
+Is it enough? Every problem has a count of people, a cost, and a line of evidence you could point at.
+
+</details>
+
+#### 4. Rank by harm
+
 - Order the problems by cost to the person.
 - Write why the top problem outranks the second.
 - Check no problem is ranked by how easy it is to fix.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The problems in order of cost to the person, with the reason the top one outranks the second.
 
-## 5. Keep the unexplained
+**Try it with help.** Two supplied problems from the same made-up study. A: all three participants hesitated at the word “Reserve” on the review screen, each read it twice, and one went back a screen before carrying on. Cost: a few seconds and some doubt. B: two of three could not tell whether their place was held before paying, and one said she would have paid a second time.
+
+Which one belongs at the top of the ranking?
+
+- **B, because the cost is money and a payment made twice.** — Losing money is the worst thing that happened to anyone in this study. Ranking is by what it cost the person, and nothing in A costs more than seconds.
+- A, because three of three met it and only two of three met B. — That is ranking by frequency. A common small cost stays below a rare large one, which is why the count and the cost are written in separate parts of the row.
+- A, because the hesitation was visible in every session and B was only what someone said. — How visible a difficulty was is about your seat in the room. A sentence saying “I would have paid again” is evidence of a real cost, even though it was quiet.
+- They rank equally, because both happen on the review screen. — The screen they share is a location, not a cause and not a cost. Two problems on one screen can still sit at opposite ends of the ranking.
+
+**Then:** Read your own order again. Move anything ranked because it looked bad or because it would be quick to fix.
+
+Worksheet fields for this step:
+
+- Your problems in order, worst cost to the person first
+- Why the top problem outranks the second — Say what each one cost the person. If your reason mentions how easy it is to fix, it is the wrong reason.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Sort by what each problem cost the person: money first, then lost work, then abandonment, then time and doubt.
+
+Is it enough? Your reason for the top place names a cost, not a frequency and not a fix.
+
+</details>
+
+#### 5. Keep the unexplained
+
 - Move observations you cannot explain to an open-questions list.
 - Write what would settle each.
 - Save the ranked list and the open questions.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The observations you cannot explain, moved to open questions with what would settle each, and the repair the Check questions asked for.
 
-## Review and handoff
-- Observations are grouped by cause with guesses marked: [evidence reference]
-- Counts are of participants, not incidents: [evidence reference]
-- Ranking is by harm with reasoning: [evidence reference]
-- Assisted completions are separated and unexplained items kept: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Observations you cannot explain, moved here rather than guessed at
+- For each: what would settle it
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Look for the lines you skipped over while grouping. Those are usually the ones you could not explain.
+
+Is it enough? Nothing has been forced into a group to avoid leaving it unexplained.
 
 </details>
+
+**Save and continue.** Saved for you: Your observations, groups, problem rows and ranking save as you type, on this device first and then online. Kept outside the app: If you laid the lines out as cards on a table, photograph the grouping and keep the photograph with your records. What your creator sees: Your creator reads the counts and the ranking reason. Counts of people with assisted completions marked are what make the list credible. Your next action: Open Your work and choose Ready for review. The next lesson decides what this list is allowed to claim.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1330,81 +1935,175 @@ The report's claims section said: three participants, recruited through one grou
 
 Write the claims your study supports and the claims it does not, including a worked interval for one rate you might have been tempted to report.
 
-**Where to work:** Written work plus a spreadsheet or calculator for the interval. The interval reading gives no formulas, so use a published one, show your inputs and state which you used.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Written work plus a spreadsheet or calculator for the interval. The interval reading gives no formulas, so use a published one, show your inputs and state which you used.
 
 - Starting material: Your ranked problem list.
 - Create HaruCourse/Practice/m10-l07-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# What a small test can and cannot claim
+#### 1. Read both quantitative pages
 
-Input artifact: Your ranked problem list.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A claims list your study supports
-- [ ] A cannot-claim list naming the tempting sentences
-- [ ] One worked interval with inputs shown
-- [ ] A statement that severity ranking is your judgement
-
-## 1. Read both quantitative pages
 - Read the assigned sample-size and interval readings.
 - Write what each explicitly excludes.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What each reading says it does not cover, and an honest statement of what your own claims rest on.
 
-## 2. Write the claims
+Worksheet fields for this step:
+
+- For each reading: what it says it does not cover — Both readings are about measuring studies. Write the sentence in each that says so.
+- What your claims rest on (Sessions with three or more participants / One or two sessions, plus a rehearsal on yourself / A rehearsal only, because nobody was available)
+- Dated note: who you could not reach, and what you had prepared for them — If your basis is a rehearsal, every claim below says so. A rehearsal shows the materials work and shows nothing about other people.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Count:** How many of the people you actually sat with did something. Three of five. It can be checked against your records.
+- **Rate:** The same thing turned into a share of a larger group you never met. Sixty per cent. It cannot be checked against anything.
+- **Interval:** The range a rate could plausibly cover, given how few people it came from. At small numbers it is very wide.
+
+Stuck starting? Look for the paragraph in each reading that says which kind of study it is about. Copy the sentence out.
+
+Is it enough? You can say in one line why guidance about measuring studies does not license claims from three sessions.
+
+</details>
+
+#### 2. Write the claims
+
+**See it first.** Made-up example. Writing “60 per cent of users were unsure”, then working out what that number was allowed to mean.
+
+- **What I wrote first:** “60 per cent of users were unsure whether their place was held.” It looked like a result. It looked like something somebody could act on.
+- **What was underneath it:** Three of the five people I sat with. Nothing else at all. The percentage was those same three people wearing a much bigger coat.
+- **The arithmetic, part one:** The published method I used adds two to the top and four to the bottom. Three of five became five of nine, which is 0.56.
+- **The arithmetic, part two:** 0.56 times 0.44 is 0.25. Divided by nine that is 0.027. The square root of 0.027 is 0.17. Multiplied by 1.96, which I rounded to 2, that is 0.33.
+- **What the range came to:** 0.56 minus 0.33 is 0.23, and 0.56 plus 0.33 is 0.89. Somewhere between about a quarter of people and about nine in ten. That is not a finding, it is the whole middle of the range.
+- **What I wrote instead:** “Three of the five people I sat with could not tell whether their place was held before paying.” Smaller, plainer, and true.
+
+**The wrong turn:** The wrong turn is the percentage itself. It is not a rounding choice or a matter of style: it converts five people into a population you never met.
+
+**What it costs:** A count sounds smaller, and somebody will ask “is that all?”. It is all, and unlike the percentage it survives being checked against your records.
+
+**Still unknown:** Still unknown: how common this is among people unlike these five. Nothing in the study reaches them, and no arithmetic can fetch them back.
+
 - Write each finding as a sentence with its participant count.
 - Remove any sentence containing a percentage or the word most.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each finding written as a sentence with a count of people, and no percentage or generalising word anywhere in it.
 
-## 3. Write the cannot-claims
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Claim 1 · the finding, written with how many of how many people met it
+- Claim 2 · the finding, written with how many of how many people met it
+- Claim 3 · the finding, written with how many of how many people met it
+- Claim 4 · the finding, written with how many of how many people met it
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take each problem from your ranked list and write it as “two of three people …” with what they did.
+
+Is it enough? No claim contains a per cent sign, the word most, or the phrase people tend to.
+
+</details>
+
+#### 3. Write the cannot-claims
+
 - List the sentences you would like to write and cannot.
 - Include prevalence, performance, accessibility and other populations.
 - Reuse your prototype's untestable list here.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The sentences you wish you could write, copied out in full, each with the reason this study does not license it.
 
-## 4. Work one interval
+**Try it with help.** Four supplied sentences about the same made-up study. Three of the five people who took part could not tell whether their place was held before paying.
+
+Which sentence can the study support?
+
+- **Three of the five people I sat with could not tell whether their place was held before paying.** — It says what happened, to whom, and how many of them. Anyone can hold it against your records and see whether it stands.
+- Sixty per cent of users could not tell whether their place was held. — The percentage turns five people into everyone, and it hides the five, so the reader cannot judge how much weight to give it.
+- Most people are unsure whether their place is held before paying. — Most is a percentage with the arithmetic left out. It makes the same claim about a population and gives the reader no numbers to argue with.
+- Around sixty per cent, though the sample was small, could not tell whether their place was held. — The hedge sits beside the number rather than replacing it, and the number is what a reader carries away. If it cannot stand alone, it does not go in.
+
+**Then:** Read your own claims again and rewrite any sentence carrying a rate as a count of the people you sat with.
+
+Worksheet fields for this step:
+
+- The sentences you would like to write, copied out in full — Write them as you would actually write them, not as summaries. The temptation lives in the wording.
+- Beside each: why this study does not license it — Cover how common it is, speed, assistive technology, and people unlike your participants.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the strongest sentences you would like to be able to write. Then work out, one at a time, which are licensed.
+
+Is it enough? The list names how common it is, speed, assistive technology and unlike people, and copies out at least one sentence you genuinely wanted.
+
+</details>
+
+#### 4. Work one interval
+
 - Take a rate you were tempted to report and compute its interval.
 - Show the inputs and the method you used.
 - Write one sentence on what the width tells you.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One rate worked through to a range, with your inputs, the published method you used, and a sentence on the width.
 
-## 5. Label your judgements
+Worksheet fields for this step:
+
+- The rate you were tempted to report, the numbers you put in, and the published method you used
+- The range you got, written out
+- One sentence on what that width tells you
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the rate you most wanted to report. Follow the same arithmetic as the demonstration, with your own numbers.
+
+Is it enough? Somebody else could repeat your sum from what you wrote down.
+
+</details>
+
+#### 5. Label your judgements
+
 - State that the severity ranking is your judgement from observation.
 - Name what would make it more than a judgement.
 - Save the claims, cannot-claims and interval work.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A sentence naming the ranking as your judgement, what would make it measured, and the repair the Check questions asked for.
 
-## Review and handoff
-- Claims carry participant counts and no percentages: [evidence reference]
-- The cannot-claim list names specific tempting sentences: [evidence reference]
-- One interval is worked with inputs shown: [evidence reference]
-- Severity is labelled as judgement: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The sentence saying who ranked the problems and on what basis
+- What would have to happen for the ranking to be measured rather than judged
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write who did the ranking and on what basis, in one sentence, and put it above the ranked list.
+
+Is it enough? Nothing in the report implies the ordering was measured.
 
 </details>
+
+**Save and continue.** Saved for you: Your claims, cannot-claims and interval work save as you type, on this device first and then online. Kept outside the app: If you used a spreadsheet for the arithmetic, keep it. The inputs matter more than the answer. What your creator sees: Your creator reads the cannot-claim list first. It is the page that shows you know what your own study is worth. Your next action: Open Your work and choose Ready for review. The next lesson repairs the top problem and tests whether the repair did anything.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1544,83 +2243,176 @@ The top problem was uncertainty about whether a place was held before payment. O
 
 Repair the top-ranked problem, write the prediction before re-testing, run the re-test with new participants, and report the result including a failure.
 
-**Where to work:** Edit the prototype file you already have and re-run the same tasks. Keep the previous version so the before-and-after pair survives.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Edit the prototype file you already have and re-run the same tasks. Keep the previous version so the before-and-after pair survives.
 
 - Starting material: Your ranked problems and a prototype you can change.
 - Create HaruCourse/Practice/m10-l08-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Repair, predict, re-test
+#### 1. Choose and predict
 
-Input artifact: Your ranked problems and a prototype you can change.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Writing the prediction after the re-test, and finding out it was worth nothing.
 
-## Output checklist
-- [ ] One repair addressing the top-ranked problem
-- [ ] A prediction written before the re-test
-- [ ] Re-test records with new participants
-- [ ] An honest result, including any failure or partial outcome
+- **The repair:** The top problem was not knowing whether a place was held. One change: a line on the review screen reading “Your place is held for 10 minutes”, with the time remaining.
+- **What I did first:** I re-tested with two new people, then wrote down what I had expected. It took two minutes and felt like the same exercise.
+- **Why it was not the same:** What I wrote matched what happened. Of course it did. I had just watched it happen, and there was no version of that evening where my note came out wrong.
+- **The second time:** Before the next re-test I wrote it down: neither new person asks whether the place is secured, and neither hesitates before paying. Then I wrote what would count as failing.
+- **What happened:** One did not ask and paid straight away. The other asked anyway, and said the new line looked like an advertisement so she had skimmed past it. Half the prediction held.
+- **What I reported:** A partial result, plus a new problem about how the line looks rather than what it says. The repair was not called validated, because it had not been.
 
-## 1. Choose and predict
+**The wrong turn:** The wrong turn is writing the prediction afterwards. It always fits, because you write it around what you saw, so it can never fail and never teaches you anything.
+
+**What it costs:** A prediction written first can fail where somebody can see it, and you will want to soften the wording. That risk is the only thing that makes the re-test worth running.
+
+**Still unknown:** Still unknown: whether two new people can separate a real improvement from two different personalities. They cannot, and the report says so.
+
 - Take the top-ranked problem and decide the single change.
 - Write what should be observable if the repair works.
 - Write what would count as the repair failing.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The top problem, the single change, what should be observable if it works, and what would count as failing.
 
-## 2. Make one change
+Worksheet fields for this step:
+
+- The top-ranked problem you are repairing
+- The one change you are making, in a sentence — One change. If your sentence contains the word and, you are probably making two.
+- What should be observable if the repair works
+- What would count as the repair failing — Write this now, while you still do not know. It is the half people leave out.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Prediction:** A statement of what you expect to see, written before you see anything. Written afterwards it cannot be wrong, so it tells you nothing.
+- **Partial result:** Part of the prediction held and part did not. It is a real outcome, not a halfway point on the way to success.
+
+Stuck starting? Open your ranked list, take the top row, and write the smallest change that could address it.
+
+Is it enough? Both halves are written: what success would look like and what failure would look like.
+
+</details>
+
+#### 2. Make one change
+
 - Apply the change to a copy of the prototype.
 - Keep the previous version intact.
 - Change nothing else, however tempting.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The old version kept intact, the new version differing in one respect, and a list of what you did not change.
 
-## 3. Re-test
+Worksheet fields for this step:
+
+- Where the old version is, where the new one is, and the single difference between them
+- Everything else you were tempted to change and did not
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Copy the prototype before you touch it. Paper, printed screens or files all work, as long as both versions still exist.
+
+Is it enough? You could show somebody the two versions and they could name the single difference.
+
+</details>
+
+#### 3. Re-test
+
 - Run the affected tasks with at least two new participants.
 - Use the same wording and the same moderation discipline.
 - Record expectation, outcome and hesitation as before.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The re-test run with people who have not seen the prototype, or an honest smaller route recorded with a date.
 
-## 4. Compare with the prediction
+Worksheet fields for this step:
+
+- Which route you are taking (Two or more people who have not seen the prototype / One new person, plus a rehearsal on yourself / A rehearsal only, because nobody new was available)
+- Dated note: who you asked, who could not take part, and what you had ready for them — A rehearsal on yourself cannot test the repair, because you already know the answer. It is still labelled a rehearsal and it never becomes a result.
+- For each re-test: expectation before each change, what happened, and every hesitation
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Use the same task wording and the same moderation discipline as before, or the two rounds are not comparable.
+
+Is it enough? Each record carries the expectation before each change and every hesitation, as the first round did.
+
+</details>
+
+#### 4. Compare with the prediction
+
 - Check the result against what you wrote beforehand.
 - Note anything that changed which you had not predicted.
 - Decide whether the repair is confirmed, partial or failed.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Your prediction set beside what happened, anything you had not predicted, and the outcome named.
 
-## 5. Record and re-rank
+**Try it with help.** A supplied made-up situation. The repair was made and re-tested with two new people, and both finished the task without asking about the held place. The prediction was written down that evening, after the sessions had ended.
+
+What can the report say about this re-test?
+
+- **That both new people finished without asking, and that the prediction was written after the sessions rather than before.** — The observation stands on its own, and dating the prediction honestly tells a reader exactly how much weight to put on the match.
+- That the repair is confirmed, because the result matched the prediction. — A prediction written after the event matches whatever happened. There was never an evening on which that note came out wrong.
+- That the repair is confirmed, because two of two finished. — Two people finishing is a real observation and it is not a test of the repair. With no prior prediction, nothing was ever at risk.
+- Nothing, because the re-test is spoilt. — The sessions happened and the observations are real. What is missing is the prior prediction, so say that plainly and keep everything else.
+
+**Then:** Check when your own prediction was written. If it came after the re-test, mark it so and write a fresh one for the next change.
+
+Worksheet fields for this step:
+
+- Your prediction beside what actually happened, including anything you had not predicted
+- What the re-test showed (Confirmed / Partial / Failed / Cannot say, because the prediction was written afterwards)
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read the prediction before you read the records, so you meet it in the order you wrote it.
+
+Is it enough? Anything that changed which you had not predicted is written down as well.
+
+</details>
+
+#### 5. Record and re-rank
+
 - Write the outcome plainly, including a failure.
 - Add any new problem the repair introduced.
 - Re-rank the remaining problems and save both prototype versions.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The outcome in one sentence with counts, any new problem, the re-ranked list, and the repair the Check questions asked for.
 
-## Review and handoff
-- The repair addresses the top-ranked problem: [evidence reference]
-- Exactly one change was made: [evidence reference]
-- A prediction was written before the re-test: [evidence reference]
-- The outcome is reported honestly, including failure: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The outcome in one sentence, with the counts in it
+- Any new problem the change introduced
+- The remaining problems, re-ranked after this result
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the sentence you would least like to write first. If the repair failed, that sentence is the result.
+
+Is it enough? The outcome sentence would still be true if somebody read your records afterwards.
 
 </details>
+
+**Save and continue.** Saved for you: Your prediction, records and outcome save as you type, on this device first and then online. Kept outside the app: Keep both prototype versions, whether paper or files. The before-and-after pair is the artefact; neither half is worth much alone. What your creator sees: Your creator reads the prediction and its date first, then the outcome. A partial or failed result reported plainly is the strongest thing here. Your next action: Open Your work and choose Ready for review. The next lesson tests the questions a paper or clickable version could never reach.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1760,82 +2552,174 @@ Two questions needed a running page. First: does the pending state stop people p
 
 Test one question that paper and click-throughs cannot answer — timing, a slow connection or real content volume — and record what changed compared with the prototype result.
 
-**Where to work:** A local HTML page, a deliberate delay written into it, and your browser's throttling. This is the whole toolchain; no hosting, account or performance service is required.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local HTML page, a deliberate delay written into it, and your browser's throttling. This is the whole toolchain; no hosting, account or performance service is required.
 
 - Starting material: Your untestable lists and a rough running page.
 - Create HaruCourse/Practice/m10-l09-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Testing what only a running thing can test
+#### 1. Pick the question
 
-Input artifact: Your untestable lists and a rough running page.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] One question tested that lower fidelity could not answer
-- [ ] Results under a slow throttled connection with the cache disabled
-- [ ] A test with realistic content volume
-- [ ] Recorded conditions: device, browser, profile and volume
-
-## 1. Pick the question
 - Choose one item from your untestable lists that a running page can now answer.
 - Write what result would change a decision.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One question that only a waiting or loaded-up thing can answer, and the decision it would change.
 
-## 2. Build the conditions
+Worksheet fields for this step:
+
+- The question from your untestable lists that only a waiting or loaded-up thing can answer, and the decision it would change — If a tidy paper screen could already answer it, choose a different one.
+- Which comfort of the prototype you are removing (Speed — the prototype never makes anyone wait / Tidiness — every name and number in the prototype is neat and short / Length — the prototype holds three items, not sixty) — A prototype is fast, tidy and short. All three of those are lies. Pick the one that matters for your question.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Untestable list:** The list you wrote earlier in this module of what each prototype cannot establish.
+- **Throttling:** Making a browser pretend the connection is slow, so pages arrive at the speed most people actually get.
+
+Stuck starting? Read your untestable lists and mark every item that mentions timing, waiting, real data or the amount of content.
+
+Is it enough? A tidy paper version of your screen could not answer the question you chose.
+
+</details>
+
+#### 2. Build the conditions
+
+**See it first.** Made-up example. Trying to test a payment wait with no build at all, and nearly reporting a rehearsal as research.
+
+- **What I did first:** I clicked through the paper screens and timed myself. About two seconds a screen, no waiting anywhere. I wrote down that the flow felt quick.
+- **Why that was empty:** Nothing in a paper flow can be slow. I had measured my own hand moving cards, not a product.
+- **What I changed:** My sister held the paper screen face down and counted four seconds on her phone before turning it over. That was the whole apparatus.
+- **What appeared:** I pressed the button twice during the second wait, and said out loud “did that work?”. On paper I had never once pressed anything twice.
+- **What I wrote down:** Four seconds, paper screens, a person counting, one person watching. Labelled a rehearsal. It gave me a problem worth testing properly, not a finding.
+
+**The wrong turn:** The wrong turn is reporting the counted wait as a test of loading. Nobody waited for a real page; a person turned a card over.
+
+**What it costs:** The rehearsal costs you any right to speak about real timings. What you get is a problem you did not know existed, for the price of four seconds and a phone.
+
+**Still unknown:** Still unknown: whether four seconds is anything like what people would really get. That needs a page that loads and a slowed connection, which comes later in the course.
+
 - Add a realistic delay where the real system would wait.
 - Load realistic content volume, not three examples.
 - Set a slow throttling profile and disable the cache.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A wait you can time, and content heavy enough to be real.
 
-## 3. Observe first paint and behaviour
+Worksheet fields for this step:
+
+- How you will produce the wait (A running page you already have, with a delay in it and the browser set to a slow profile / A person who holds the screen back for a counted wait, timed on a phone / Both, so the two can be compared) — You do not need a running page. The counted wait is a real option, and this course does not ask you to write code yet.
+- How long the wait is, in seconds, and how you timed it
+- The real content you loaded: the longest names, the largest numbers, and how many items are in the list — Take the worst real examples you can find. Inventing neat ones defeats the whole purpose.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Do the content first. Open your prototype and replace three tidy examples with the longest and largest real ones you can find.
+
+Is it enough? The wait has a number of seconds beside it, and the screen holds as much content as the real thing would.
+
+</details>
+
+#### 3. Observe first paint and behaviour
+
 - Record what appears first and how long the gap lasts.
 - Run the task yourself, then with one or two people.
 - Watch specifically for repeated actions and abandonment.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What appeared first, what people did during the wait, and what the real content broke.
 
-## 4. Compare with the prototype result
+Worksheet fields for this step:
+
+- What appeared first, what appeared last, and how long the gap between them lasted
+- What you and the one or two people with you did during the wait: pressing again, leaving, asking whether it had worked
+- What the real content broke: wrapping, scrolling, things pushed out of sight, sorting that suddenly became necessary
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Run it yourself once with a timer, then once each with one or two people, saying nothing while they wait.
+
+Is it enough? You can describe the wait as a sequence with seconds in it, not as a feeling.
+
+</details>
+
+#### 4. Compare with the prototype result
+
 - Compare what happened here with the click-through result.
 - Record anything that only appeared under real conditions.
 - Add new problems to the ranked list.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The difference between what the prototype said and what happened under real weight.
 
-## 5. Record conditions
+**Try it with help.** Two supplied made up results for the same task. The click-through: three people found the pay button in under ten seconds and none hesitated. The same task with a counted four-second wait and sixty items in the list: two of three pressed pay twice, and one scrolled straight past the class she wanted.
+
+What is the honest thing to record from the pair?
+
+- **Both results, each labelled with the conditions it came from, and the pressing-twice problem added to the ranked list.** — The two results are not in conflict. They answer different questions, and only the conditions written beside each one keep that clear.
+- The second result only, because it was closer to real conditions and replaces the first. — The click-through still tells you the button is findable, which the crowded version cannot show. Throwing it away loses a result you already paid for.
+- The first result only, because the second was a rehearsal with a person counting rather than a real connection. — The rehearsal cannot speak about real timings, and it did show two people pressing twice. That is an observation about behaviour, and it belongs in the list with its label attached.
+- Neither, until you can run the test on a real build. — Waiting for a build leaves you with nothing for weeks. Both results are usable as long as each carries what it was and what it was not.
+
+**Then:** Write your own pair the same way: the prototype result, the waiting or loaded-up result, and the conditions beside each.
+
+Worksheet fields for this step:
+
+- What the paper or click-through result said about this same task
+- What changed under real conditions, and what stayed the same
+- New problems to add to your ranked list, each with how many of how many people met it
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Put the two results side by side before you write anything about either.
+
+Is it enough? Each result has its conditions beside it, and neither has been deleted to make a tidier story.
+
+</details>
+
+#### 5. Record conditions
+
 - Write the device, browser, throttling profile and content volume.
 - State what remains untested even now.
 - Save the results with the conditions.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The conditions written down, the rehearsal labelled, and the repair the Check questions asked for.
 
-## Review and handoff
-- The question needed a running page to answer: [evidence reference]
-- Conditions include throttling and realistic volume: [evidence reference]
-- First paint and behaviour under waiting are recorded: [evidence reference]
-- Device, browser, profile and volume are stated: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Device, browser or method, wait length in seconds, and how many items were in the list
+- If a person held the screen back rather than a page actually loading, write that here as a rehearsal — A rehearsal shows you the shape of a problem. It is never reported as research.
+- What remains untested even now
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the four facts at the top of your results: device, method, seconds, item count.
+
+Is it enough? Someone else could set the same conditions up from your notes alone.
 
 </details>
+
+**Save and continue.** Saved for you: The question, the conditions, the observations and the comparison save as you type, on this device first and then online. Kept outside the app: Keep your untestable lists and your fakes sheet beside you; step 1 and step 5 both draw on them. If you photographed a paper screen loaded with real content, note the file name here. What your creator sees: Your creator reads the conditions record first. It is what turns the result into something more than an impression. Your next action: Open Your work and choose Ready for review. The next lesson designs a task set that could run without you, and works out what that costs.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1975,81 +2859,172 @@ One open question — can people find the change-or-cancel route without help �
 
 Design one unmoderated task set that could run without you, state exactly what it cannot capture, and decide whether it is worth running for your question.
 
-**Where to work:** Written instructions plus your local prototype shared as a link or a file, and answers returned by message. Free unmoderated platforms exist with participant limits; nothing here requires one, and the message route keeps your data in your own hands.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Written instructions plus your local prototype shared as a link or a file, and answers returned by message. Free unmoderated platforms exist with participant limits; nothing here requires one, and the message route keeps your data in your own hands.
 
 - Starting material: Your task set and remaining open questions.
 - Create HaruCourse/Practice/m10-l10-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Unmoderated and remote testing, and their limits
+#### 1. Pick a suitable question
 
-Input artifact: Your task set and remaining open questions.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Sending out the wrong question unmoderated, and getting five answers that explained nothing.
 
-## Output checklist
-- [ ] One unmoderated task set with self-contained instructions
-- [ ] Instructions tested with one person for misreading
-- [ ] A written list of what this method cannot capture
-- [ ] A decision on whether to run it, with the reason
+- **The question I chose:** Why do people hesitate before paying. It was my most interesting open question, so it was the one I sent to five people.
+- **What came back:** Five outcomes. Four paid, one did not. The comment boxes said “fine”, “fine”, “ok”, nothing at all, and “couldn’t see it”.
+- **What I could not do:** Ask the one who stopped what she was thinking. She was gone, and the answer to a why question lives entirely inside that moment.
+- **What I found out later:** One person had walked a route through the flow that does not exist. She had misread the scenario, and I only learned it because she mentioned it in a message a week afterwards.
+- **What I sent the second time:** Can a person find the change-or-cancel route without help. An outcome answers that on its own, and there is no why to lose.
 
-## 1. Pick a suitable question
+**The wrong turn:** The wrong turn is sending your most interesting question, because interesting usually means it asks why. An unmoderated run tells you what happened and never why.
+
+**What it costs:** Keeping the why questions for moderated sessions means fewer people and more of your evenings. It is the only way those questions get answered at all.
+
+**Still unknown:** Still unknown: how many of the five read the scenario the way I meant it. In an unmoderated run you cannot find that out, which is itself a limit worth writing down.
+
 - List your remaining questions and mark each discovery or confirmation.
 - Choose one confirmation question for an unmoderated run.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One confirmation question chosen, with the discovery questions kept back for moderated sessions.
 
-## 2. Write self-contained instructions
+Worksheet fields for this step:
+
+- Every question still open after your sessions, each marked discovery or confirmation — Discovery asks why, or what is going on. Confirmation asks whether a specific thing happens.
+- The one confirmation question you will build the task set around, and why it does not need anyone to explain themselves
+
+<details>
+<summary>Help with this step</summary>
+
+- **Unmoderated test:** The person does the task alone, from written instructions, with you nowhere nearby.
+- **Confirmation question:** A question about whether a specific thing happens, which an outcome on its own can answer.
+
+Stuck starting? Go through your open questions and finish this sentence for each: “what a person did, on its own, would answer this” — or it would not.
+
+Is it enough? The question you chose could be answered by what a person did, with nothing they say.
+
+</details>
+
+#### 2. Write self-contained instructions
+
 - Write the scenario, the goal and how to report the outcome.
 - Remove every word that assumes context only you have.
 - State what to do if something does not work.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Instructions a stranger could follow with you nowhere nearby.
 
-## 3. Test the wording
+Worksheet fields for this step:
+
+- The scenario exactly as the person will read it
+- What you are asking them to do, and how they send the outcome back to you
+- What you tell them to do if something does not work
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write it as though you are messaging someone who has never heard of the project.
+
+Is it enough? Nothing in the instructions assumes anything only you know.
+
+</details>
+
+#### 3. Test the wording
+
 - Ask one person to read the instructions aloud and say what they would do.
 - Rewrite anything they hesitated over.
 - Repeat if the second reading still produces a misreading.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One read-aloud test, with the hesitations and the rewrites recorded.
 
-## 4. Write the limits
+Worksheet fields for this step:
+
+- Where the reader paused, re-read, or described doing something you did not intend
+- What you changed, with the old wording beside the new
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask one person to read it aloud and narrate what they would do next. Say nothing at all while they do it. If there is nobody to ask, read it aloud yourself the next morning and note that no second reader ever saw it.
+
+Is it enough? You rewrote at least one sentence, and the old wording is still visible beside the new one.
+
+</details>
+
+#### 4. Write the limits
+
 - List what this method cannot capture: why, hesitation, interruptions, setting.
 - State how you would follow up on any surprising result.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A specific list of what this method cannot capture, tested against your own strongest finding.
 
-## 5. Decide
+**Try it with help.** A supplied made up unmoderated result. Five people were sent one task: reach the point where you would change a booking. Four reported reaching it, one reported giving up. The comment boxes say “fine”, “fine”, “ok”, nothing, and “couldn’t see it”.
+
+Which limit is the one worth writing down first?
+
+- **You cannot say why the fifth person gave up, and “couldn’t see it” is the whole account you will ever get.** — The one failure is the most interesting line in the result, and the method has already closed the door on explaining it. Naming that is what tells you whether to follow up.
+- Five people is too few to report a rate. — True of every study this size, and it is a limit about counting rather than about this method. An unmoderated run with five hundred people still could not tell you why.
+- You cannot be sure the participants were representative. — A recruitment limit that belongs in your report and would apply just as much to a moderated session.
+- You cannot check whether anyone was interrupted while doing it. — A real limit of the method, and a smaller one than the missing why. Write it second.
+
+**Then:** Write your own limits in the same order: the one that damages your strongest finding goes first.
+
+Worksheet fields for this step:
+
+- What an unmoderated run cannot capture: the why, hesitation, interruptions, the setting, a misread instruction you never hear about
+- Take your strongest finding from the moderated sessions. Would an unmoderated run have produced it? Write the answer and what that tells you.
+- How you would follow up a surprising result
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take your strongest session finding and ask whether an outcome alone would have produced it.
+
+Is it enough? The first limit on your list names something specific that your own study would have lost.
+
+</details>
+
+#### 5. Decide
+
 - Decide whether to run it, and write the reason either way.
 - If you run it, plan how results return to you and where they are stored.
 - Save the task set, the limits and the decision.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A decision either way, with the reason, and the repair the Check questions asked for.
 
-## Review and handoff
-- The question suits an unmoderated method: [evidence reference]
-- Instructions are self-contained and tested for misreading: [evidence reference]
-- The limits are written specifically: [evidence reference]
-- The run-or-not decision is justified: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Your decision (Run it / Do not run it / Run it only after something changes)
+- The reason either way: what you would learn, what it costs, and whether that is worth it for this question
+- If you are running it: where answers arrive and where they are stored. If you have nobody to send it to: today’s date and what you tried.
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write the reason before you write the decision. The reason usually settles it.
+
+Is it enough? Someone reading the reason could reach the same decision, and the not-run case is written just as fully as the run case.
 
 </details>
+
+**Save and continue.** Saved for you: The question list, the instructions, the limits and the decision save as you type, on this device first and then online. Kept outside the app: If you share the prototype as a file or a link, note where it lives. Answers that come back by message belong in your own folder, not in this app. What your creator sees: Your creator reads the limits and the decision. A study you decided not to run, with the reason attached, reads as a method chosen rather than a method collected. Your next action: Open Your work and choose Ready for review. The next lesson turns everything from this module into a report of at most two pages.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2189,82 +3164,174 @@ Two pages. First paragraph: hold the payment work and fix the held-place uncerta
 
 Write an evaluation report of at most two pages that leads with the decision, carries participant counts, states the limits and names one thing not to build.
 
-**Where to work:** Plain text or Markdown, two pages. If you present it aloud, six slides at most; the constraint is what forces the decision to the front.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Plain text or Markdown, two pages. If you present it aloud, six slides at most; the constraint is what forces the decision to the front.
 
 - Starting material: Your ranked problems, repair result and claims lists.
 - Create HaruCourse/Practice/m10-l11-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Report the evaluation and decide what to build
+#### 1. Write the decision first
 
-Input artifact: Your ranked problems, repair result and claims lists.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Writing the report in the order it happened, and watching nobody reach the point.
 
-## Output checklist
-- [ ] A report of at most two pages leading with the decision
-- [ ] Findings with participant counts and evidence
-- [ ] A limits section assembled from your earlier lists
-- [ ] One explicit non-recommendation
+- **What I wrote first:** Nine pages. Method, recruitment, then session by session, then the findings, then what I thought should change, on page eight.
+- **What happened to it:** The two people I asked to read it both stopped somewhere in the third session. Neither could tell me what I wanted changed.
+- **What I had confused:** I was proving I had done the work. A report exists to change a decision, and my decision was buried behind my evidence for it.
+- **The rewrite:** One paragraph at the top: hold the payment work and fix the held-place uncertainty first, because two of three could not tell whether their place was secured.
+- **What it cost:** Nine pages became two. Four sessions of detail went into a folder nobody has opened since, which is where they belong.
 
-## 1. Write the decision first
+**The wrong turn:** The wrong turn is leading with the method, because the method is the part you are least sure of and most want to defend. It is also the part a reader is willing to trust you with.
+
+**What it costs:** Two pages means most of what you did is invisible. What you get is that the one thing you want changed is read by everyone who opens it.
+
+**Still unknown:** Still unknown: whether the change you name is the right one. The report says what the evidence supports, not that you are right.
+
 - Write the single change you would make and why, in one paragraph.
 - Read the assigned sharing guidance for the finding structure.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One paragraph naming the change and its reason, before any method.
 
-## 2. Write the findings
+Worksheet fields for this step:
+
+- The single change you would make and why, in one paragraph, before any method
+- What you are asking to stop or wait while this is fixed
+
+<details>
+<summary>Help with this step</summary>
+
+- **Non-recommendation:** A thing the evidence says not to build. It is a finding in its own right, not an omission.
+
+Stuck starting? Write the sentence “the first thing to change is …, because …” and let the rest of the report grow behind it.
+
+Is it enough? The paragraph names a change and a reason, and mentions no method at all.
+
+</details>
+
+#### 2. Write the findings
+
 - Write each finding as headline, counts, evidence, and what it changes.
 - Cut to the number that fits two pages.
 - Include the repair result, however it turned out.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each finding with its headline, participant count, evidence and what it changes.
 
-## 3. Assemble the limits
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Finding 1 · headline, how many of how many people met it, the evidence, and what it changes
+- Finding 2 · headline, how many of how many people met it, the evidence, and what it changes
+- Finding 3 · headline, how many of how many people met it, the evidence, and what it changes
+- Finding 4 · headline, how many of how many people met it, the evidence, and what it changes
+- The repair you tested, the prediction you wrote first, and how it actually turned out — A partial or failed repair is a result. Write it exactly as it happened.
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the top of your ranked problem list and write it as four short parts.
+
+Is it enough? Every finding says how many of how many people met it, and the repair result is there however it turned out.
+
+</details>
+
+#### 3. Assemble the limits
+
 - Paste in recruitment exclusions, the untestable list and the fakes sheet.
 - Add what remains untested after the running-page test.
 - Keep it as a section, not a footnote.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A limits section assembled from lists you have already written.
 
-## 4. Say what not to build
+Worksheet fields for this step:
+
+- How many people took part, how they were reached, and who was left out — If part of this came from a rehearsal or from supplied practice material, say so here, in the same sentence as the numbers.
+- From your fakes sheet: the controls that did nothing and the values you invented
+- What was never tested at all: the connection, assistive technology, other groups of people
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Open your recruitment notes, your untestable lists and your fakes sheet, and paste them in unchanged.
+
+Is it enough? A reader could tell who was never asked and what did not really work, without asking you.
+
+</details>
+
+#### 4. Say what not to build
+
 - Name one thing the evidence argues against.
 - State what would change your mind about it.
 - Separate expert opinion from tested findings in a short list.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One thing the evidence argues against, with what would reverse it.
 
-## 5. Check and store
+**Try it with help.** A supplied made up study. Three people booked a class. Two could not tell whether their place was held before paying. Nobody forgot about a class they had booked. One person said, unprompted, that she would like a reminder the day before.
+
+Which non-recommendation does this evidence license?
+
+- **Do not build the reminder feature yet, because nobody’s difficulty was forgetting, and one person asking for it is a request rather than a problem.** — The strongest non-recommendation names something you were likely to build anyway. It also carries its own reversal: watch for someone who actually missed a class.
+- Do not build the reminder feature, because reminders are common elsewhere and add nothing new. — The reason has to come from what you saw, not from what other products do. A reader cannot check the second kind of reason at all.
+- Do not build anything until more people have been tested. — That is a recommendation to stop, and it is not what this evidence says. Two of three people meeting one specific problem is enough to act on that one thing.
+- Do not build the held-place message, because only two of three people met the problem. — Two of three met the highest-harm problem in the study. Arguing against the repair you have most support for turns the section into caution rather than a finding.
+
+**Then:** Write your own non-recommendation the same way: the thing, what you saw, and what would reverse it.
+
+Worksheet fields for this step:
+
+- The one thing the evidence argues against building, and why
+- The evidence that would reverse it
+- The short list of things you believe from experience rather than from anything you tested
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Ask what the evidence argues against. If the answer is nothing, the study probably confirmed what you already believed.
+
+Is it enough? The non-recommendation names something you were tempted to build.
+
+</details>
+
+#### 5. Check and store
+
 - Read it as someone who was not there; remove anything they could not follow.
 - Anonymise quotations and check nothing identifies a participant.
 - Save the report and file the raw material where it can be produced.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A report readable by someone who was not there, and the repair the Check questions asked for.
 
-## Review and handoff
-- The decision comes first and fits a paragraph: [evidence reference]
-- Every finding carries participant counts and evidence: [evidence reference]
-- The limits section is specific and assembled from earlier lists: [evidence reference]
-- One non-recommendation is stated with what would change it: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What you removed because a reader who was not there could not follow it
+- Quotations checked for anything that points at a person (Checked: no name, workplace or detail that points at anyone / Not checked yet / No quotations are used)
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Read it aloud once as a person who has never heard of the project.
+
+Is it enough? Nothing in it needs you standing beside it, and no quotation points at a person.
 
 </details>
+
+**Save and continue.** Saved for you: The decision paragraph, the findings, the limits and the non-recommendation save as you type, on this device first and then online. Kept outside the app: The report itself is two pages of plain text on your own computer. Keep the raw session material in a separate private folder and note only where it is. What your creator sees: Your creator reads the opening paragraph, then the limits section. Those two decide whether the rest is worth trusting. Your next action: Open Your work and choose Ready for review. The next lesson gathers the whole first project into one trail and says honestly what it does and does not show.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2404,82 +3471,193 @@ The trail was assembled as one page of links: five research questions; the findi
 
 Assemble the first project into a single evidence trail from research question to tested repair, and write the honest summary of what it does and does not demonstrate.
 
-**Where to work:** One page of plain text linking to your existing artefacts. Nothing new is produced here except the trail and the summary.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: One page of plain text linking to your existing artefacts. Nothing new is produced here except the trail and the summary.
 
 - Starting material: All artefacts from m05 through m10.
 - Create HaruCourse/Practice/m10-l12-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Close the project loop
+#### 1. Assemble the trail
 
-Input artifact: All artefacts from m05 through m10.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Building the trail and finding that my favourite decision had nothing at all behind it.
 
-## Output checklist
-- [ ] A one-page evidence trail from question to tested repair
-- [ ] Decisions marked evidence-led or judgement
-- [ ] A scope statement naming what was built, faked and untouched
-- [ ] A summary using no shipped, validated or measured language
+- **What I expected:** A tidy line from five research questions to a tested repair. I had done every step, so I assumed every step joined up.
+- **Where it broke:** The shortlist. I could not name one thing anyone said or did that led to it. I had wanted it since the first sketch.
+- **What I nearly wrote:** “People needed a way to compare options.” It sounds like a finding. Nobody in my notes compared anything.
+- **What I wrote instead:** “Kept the shortlist. Judgement, not evidence. A task asking someone to choose between two classes would test it.”
+- **What that changed:** The trail gained one honest gap and stopped being a story. Two other decisions turned out to be judgement as well, which was the more useful discovery.
 
-## 1. Assemble the trail
+**The wrong turn:** The wrong turn is writing a research-sounding sentence for a decision you simply liked. It reads well, and it is the one thing a reader can catch you on.
+
+**What it costs:** Marking three decisions as judgement makes the project look less researched than it felt. It is exactly what makes the evidence-led parts believable.
+
+**Still unknown:** Still unknown: whether the shortlist helps anyone at all. Nothing in the project touched it, and the trail now says so.
+
 - List each major design decision in the project.
 - Beside each, name the evidence it came from and where that evidence lives.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each major decision beside the evidence it came from and the place that evidence lives.
 
-## 2. Mark the judgements
+Worksheet fields for this step:
+
+- Each major design decision in the project, and beside it the evidence it came from and where that evidence lives
+- The link in the trail you would least like to be asked about
+
+<details>
+<summary>Help with this step</summary>
+
+- **Evidence trail:** A list linking each design decision back to something you actually observed, and to the file where it is kept.
+
+Stuck starting? Work backwards from the prototype. For each thing on the screen, ask what put it there.
+
+Is it enough? Every decision has either a source and a location, or a blank you have not filled in with a guess.
+
+</details>
+
+#### 2. Mark the judgements
+
 - Mark every decision with no evidence behind it as judgement.
 - For each, write what would test it.
 - Resist inventing a research-sounding reason.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each line of the trail marked by what actually backs it.
 
-## 3. Write the scope statement
+**Try it with help.** Six made up lines from somebody else’s portfolio page. None of them are yours and none of them happened. For each, say what backs it: evidence she holds, a rehearsal or supplied practice material, or nothing at all.
+
+- Three people I recruited from a local craft group tried the booking flow. Two could not tell whether their place was held before paying. The session notes are in the project folder.
+  - **evidence you hold** — Real people, a specific observation, and a file she can produce on request. That is the whole test.
+  - rehearsal or supplied material — The people were recruited and the sessions happened. A rehearsal is when she stands in for a participant herself.
+  - not backed — A count, a specific observation and a location are all named. Everything a reader would need in order to check it is there.
+- I tested the loading wait by asking my flatmate to hold the paper screen face down and count four seconds. She pressed the button twice.
+  - evidence you hold — She did watch a person press twice, and nothing loaded and nothing was slow. Written up as a loading test, this becomes a claim about something that never happened.
+  - **rehearsal or supplied material** — A staged wait with a person counting. It shows the shape of a problem, and the label says what it was.
+  - not backed — Something did happen and she watched it. What it cannot do is stand as a test of a real connection.
+- The new review screen reduced payment confusion by 40 per cent.
+  - evidence you hold — A rate needs a measurement before and a measurement after. Three people cannot make a percentage, and nothing here was measured.
+  - rehearsal or supplied material — A rehearsal could not produce this either. The number has no source anywhere in the trail.
+  - **not backed** — A measured-sounding figure with nothing behind it. This is the sentence that makes a reader doubt every other line on the page.
+- I designed an unmoderated task set, decided not to run it because the question was really a why question, and filed the design with the reason and the date.
+  - **evidence you hold** — The claim is about a decision she made, and she holds the design, the reason and the date.
+  - rehearsal or supplied material — Nothing here stands in for anything. She is reporting a method choice, not a result.
+  - not backed — The artefact exists and she can produce it. The claim goes no further than saying she made the decision.
+- Users prefer the shorter flow.
+  - evidence you hold — Preference was never asked about, and the word users names nobody. Even three people saying it would only license “two of three said”.
+  - rehearsal or supplied material — A rehearsal would still give her a person and a moment. This sentence has neither.
+  - **not backed** — A general claim about people in the plural, with no count, no moment and no file behind it.
+- I practised grouping observations on the made up transcript the course supplied, and the method is the one I then used on my own sessions.
+  - evidence you hold — The transcript was written for practice. Nobody ever said any of it, so nothing in it is an observation she made.
+  - **rehearsal or supplied material** — Supplied practice material, named as supplied. Showing the practice is fine; presenting it as a study would not be.
+  - not backed — It is backed, by material the course gave her. The label only has to say where it came from.
+
+**Then:** Go through your own trail and put one of these three labels beside every line.
+
+**What to watch for:** The question is always the same: what would you hand a reader who asked to see it? A file with real people in it, a staged or supplied thing you must name, or nothing.
+
+Worksheet fields for this step:
+
+- Every decision with nothing behind it, marked judgement, with what would test each one
+- Anything in the trail that came from a rehearsal or from supplied practice material, labelled as what it was
+- The research-sounding reason you were tempted to write for one judgement call
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Take the decisions with no source first. Those are the ones the labels are for.
+
+Is it enough? No line in the trail is unlabelled, and no judgement has been given a research-sounding reason.
+
+</details>
+
+#### 3. Write the scope statement
+
 - State what you built and at what fidelity.
 - State what was faked and what was never tested.
 - State who took part and how they were reached.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A scope statement naming what was built, what was faked and who took part.
 
-## 4. Write the summary
+Worksheet fields for this step:
+
+- What you built, and at what fidelity
+- What was faked, taken from your fakes sheet
+- What you never tested at all
+- Who took part and how they were reached, or the dated gap where nobody did
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Reuse your fakes sheet, your untestable lists and your recruitment notes; they already contain most of the statement.
+
+Is it enough? A reader could tell what you never touched without asking you a single question.
+
+</details>
+
+#### 4. Write the summary
+
 - Summarise the project in one paragraph without outcome claims.
 - Remove the words shipped, validated, proven and any percentage.
 - Name the two things you would do next and why.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One paragraph with no outcome claims, and the two things you would do next.
 
-## 5. File everything
+Worksheet fields for this step:
+
+- The project in one paragraph, with no outcome claims
+- The words you searched for and removed — shipped, validated, proven, improved, and every percentage.
+- The two things you would do next, and why those two
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Write what you did and what you observed. Stop before any sentence about how well it worked.
+
+Is it enough? The paragraph contains no percentage and none of the words on your list.
+
+</details>
+
+#### 5. File everything
+
 - Store the artefacts so each link in the trail can be produced.
 - Keep raw participant material private and separate.
 - Save the trail, scope and summary together.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every link in the trail able to be produced, and the repair the Check questions asked for.
 
-## Review and handoff
-- Each major decision links to its evidence or is marked judgement: [evidence reference]
-- The scope statement names built, faked and untested: [evidence reference]
-- The summary contains no outcome or measurement claims: [evidence reference]
-- Artefacts are filed so each link can be produced: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Where each artefact in the trail lives, so any link in it can be produced
+- Raw participant material (Stored separately from the trail, and private / Not separated yet / There is no raw participant material)
+- What you changed after the Check questions
+
+<details>
+<summary>Help with this step</summary>
+
+
+
+Stuck starting? Walk your own trail and try to open each artefact in turn.
+
+Is it enough? Anything you could not open has been found or marked missing, and raw participant material sits apart from everything else.
 
 </details>
+
+**Save and continue.** Saved for you: The trail, the labels, the scope statement and the summary save as you type, on this device first and then online. Kept outside the app: The trail is one page of plain text linking to artefacts already on your computer. Keep raw participant material in a separate private folder and link only to its location. What your creator sees: Your creator reads the label beside each line, then the scope statement. An honest gap reads better than a smooth story. Your next action: Open Your work and choose Ready for review. That closes the first project. What you do with it next is yours to decide, and nothing here commits you to a particular direction.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 

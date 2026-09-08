@@ -75,6 +75,46 @@ The creator asked for lesson one to be improved further: plainer English, and on
 - Keyboard activation by real key presses, as before: the pane's synthetic key events do not reach the page, so this rests on native radio semantics plus the observed focus ring.
 - The live service-worker update swap, still open from the previous pass.
 
+## Modules 6 to 10 given guided practice — 7 September 2026
+
+Sixty-one lessons across information architecture, flows and wireframes, interface craft, interaction and motion, and prototyping and evaluation now carry the beginner pattern, taking the course from 43 refined lessons to 104.
+
+Each lesson has a route, a worksheet of 11 to 16 fields, one failure-first demonstration with the wrong turn, the trade-off and what stays unknown, one supplied case or one evidence sorter answered before any feedback, three answer-first checks each naming a bounded repair in a field the learner already filled, an `improvement-made` field, and route-specific save and continue. Repeated rows are revealed a few at a time wherever a lesson has four or more.
+
+**Twenty lessons use the evidence sorter** added for lesson one, chosen where a lesson turns on a single distinction worth practising repeatedly rather than once. The clearest case is m09-l01, which already asked the learner to classify every animation as feedback, continuity, attention or decoration; that classification is now the exercise instead of a paragraph about it. The rest: evidenced or guessed labels; what a participant did, said, or what you concluded; a wrong label, a wrong grouping or a missing item; length, script, width or speed; setup needed now, deferred or never asked for; hidden, disabled or a route to ask; slip, mistake or system fault; hesitation, rescue or dead end; same component, different components or one with a variant; primary, secondary or quiet; modal, inline message or its own screen; evidence, guess or taste; survives reduced motion, becomes instant or disappears; move focus, leave it, or leave it and announce; harm, shared preference or only you noticed; paper, clickable or built; names a control, leads them there or leaves it to them; wait, neutral question or rescued; and evidence you hold, rehearsal material or not backed.
+
+**Twenty-five lessons carry an honest no-access route.** A dated statement of who could not be reached, plus the prepared materials, is a complete answer. A rehearsal is labelled a rehearsal in the choice options, the check feedback and the repairs, and no lesson lets one be written up as research.
+
+### How it was built and checked
+
+The contract was written once as a file the authors worked from, naming the teaching shape, the language rules and every rule the checker enforces, including the verdict-stutter rule that lesson one produced. Two tools were added to make sixty-one lessons tractable:
+
+- `npm run audit:guided <module...>` reports every beginner-contract violation across a set of modules at once, instead of the content checker's first failing assertion. It is now a project script. It was proved against m03 and m05, which were already correct, before being trusted on new work.
+- A pre-audit step ran the same rules against each authored fragment before it was spliced, so nothing entered `src/apprenticeship.ts` that was already known to be wrong.
+
+### Checks run
+
+- `docs:generate`, `test:content`, `test:worksheet`, both typechecks and `build` pass. Main chunk 3,558.80 kB uncompressed, 1,026.22 kB gzip, 785 kB above the previous release; this is authored text, and it is the cost of sixty-one lessons of teaching.
+- `audit:guided m06 m07 m08 m09 m10` reports no problems across all sixty-one.
+- All thirteen backend groups pass against the local Worker. No schema, storage or API change: the guided material is authored content, not state.
+- Every lesson was read back at runtime, not merely built. This is the check that caught a whole module rendering nothing earlier in this work, and the auditor now performs it for every lesson by name.
+- Browser, local Worker on 8788, test account only. Verified on m06-l02, m06-l08, m07-l07, m08-l12, m09-l01 and m10-l12: five steps each, the demonstration and the sorter in the right order, the sorter giving per-line feedback only after a choice, a wrong answer returning the explanation for that label on that line, changing to the defensible label swapping the explanation, and the closing observation appearing only once every line is answered. At 320 px nothing overflows, option rows are 44 px and focusing a radio draws the green outline.
+- No lesson before module 12 asks the learner to write HTML, CSS, JavaScript or SVG in its guided material. Checked by pattern across all sixty-one.
+
+### One finding, not fixed
+
+Verifying m09 surfaced a contradiction that predates this work. Thirty-seven lessons before module 12 carry an authored `freeToolPath` — the "Where to work" line the reader prints above the guided route — telling the learner to build a local HTML file with a few CSS rules. Eleven of the twelve m09 lessons say it. The audit rule is that nothing before m12 requires markup, and the guided routes added here say paper and writing, so the reader now shows both. The counts, taken from the lesson data rather than estimated: m03 ×8, m04 ×1, m06 ×1, m07 ×4, m08 ×5, m09 ×11, m10 ×2, m11 ×5.
+
+This was left alone deliberately. `freeToolPath` is authored lesson content with its own authority, and rewriting thirty-seven of them is a content decision for the creator, not a side effect of adding guided practice. It is recorded as an open row in the plan ledger.
+
+### Not verified
+
+- Haru has not used any of it. No learner validation is claimed, for any of the 104 refined lessons.
+- No screenshots. The browser pane would not paint while the application window was hidden; every browser result above comes from the accessibility tree, page text and measured geometry.
+- Six of sixty-one lessons were opened in the browser. The other fifty-five rest on the runtime read-back and the auditor, which check the data reaches the reader but not that every page looks right.
+- The live service-worker update swap, still open. Worth noting that it surfaced here: a stale precached shell made m09-l01 render nothing until the worker was unregistered, which is a local QA hazard rather than a defect in this content.
+- Keyboard activation by real key presses, as before.
+
 ## Delivery defect, diagnosed and fixed
 
 Reproduction was attempted first and could not be completed here: the app's browser pane refuses every service-worker registration ("An unknown error occurred when fetching the script", raised for `/sw.js` even though the worker serves it as 200 `text/javascript`, 16,915 bytes, locally and hosted), and the separate real-browser tool was disconnected during the session. The defect was therefore established from the artefact, which is unambiguous: the built `dist/sw.js` contained zero occurrences of `skipWaiting` and no `message` listener, and `src/main.tsx` called `registerSW({onNeedRefresh})` while discarding the returned update function. An installed worker had no activation path from the page, so the notice was advice the learner could not act on, and a second open tab prevented the "close and reopen" route from ever completing.
