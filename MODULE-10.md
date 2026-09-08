@@ -140,7 +140,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Paper prototype:** The flow drawn or printed on sheets, with you putting the next sheet in front of the person. It is the quickest thing to change.
+- **Clickable prototype:** Screens joined so a person can move between them by tapping, with nothing real behind them.
+- **Built version:** Something that actually runs, so it can load, wait and hold real amounts of content. It is the dearest of the three and the only one that can answer a question about waiting.
 
 Stuck starting? Take your first question and ask what paper could not tell you. If the answer is nothing, it is a paper prototype.
 
@@ -149,6 +151,20 @@ Is it enough? Every choice above paper names something specific that paper could
 </details>
 
 #### 3. Write the untestable lists
+
+**See it first.** Made-up example. Writing what a paper prototype cannot establish, and writing modesty instead of a limit.
+
+- **What I wrote first:** “It is only paper, so it is not the real thing.” I wrote that under all three prototypes and moved on feeling honest.
+- **Why it was no use:** The sentence is true and it stops nothing. Something that vague would let me claim almost anything a fortnight later.
+- **The sentence I nearly wrote:** This was a made-up tool library, and the flow was returning a borrowed drill. After walking it twice myself I very nearly wrote “people find the return date easily”.
+- **What the list should have said:** One item borrowed, never six. The date printed on the only sheet in front of you. One path that works and no way to get lost. Each line names something that made the flow easier than real use will be.
+- **What I could claim instead:** “With one item borrowed and the date on the same sheet, the date was read without hesitation in two run-throughs of my own.” Narrow, and every word of it is mine to defend.
+
+**The wrong turn:** The wrong turn is writing the untestable list as modesty about the prototype rather than as a limit on your own sentences. Modesty is comfortable, it sounds honest, and it constrains nothing you write afterwards.
+
+**What it costs:** Naming the limits leaves you with a narrow claim full of conditions, and somebody will read it and ask whether that is really all you found. You also have to write the list while the prototype still feels promising, which is exactly when you least want to.
+
+**Still unknown:** Still unknown: whether the date was easy to read because of the wording or because there was only one item on the sheet. Nothing but a version with six items on it can separate those two.
 
 - For each prototype write what it cannot establish.
 - Name the claim you would be tempted to make from it.
@@ -213,7 +229,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Stopping note:** The short written reason for building no further, naming what you would add and which later question would make it worth adding.
+- **Repair:** The one change a Check question asks you to make. You make it in the step it belongs to, then write down here that you made it.
 
 Stuck starting? Finish this sentence: “I stopped here because the question is already answered, and adding more would only …”.
 
@@ -403,6 +420,20 @@ Tools: A text editor and a browser. One file per screen, links between them, and
 
 #### 1. Plan the screens
 
+**See it first.** Made-up example. Listing the screens for a collection flow, and choosing the failure that was easiest to draw.
+
+- **The list I wrote:** Six screens for a made-up food co-op collection flow: the slot list, choosing a slot, confirming, the ticket. Then one failure screen, card declined.
+- **Why the declined card appealed:** I had drawn one before and I knew exactly what it said. Ten minutes, and my list had a failure on it, so nothing looked missing.
+- **What my exception table actually said:** The thing that goes wrong in this flow is a slot filling up while somebody is still deciding. A declined card had happened once. I had chosen the failure I could draw rather than the one people meet.
+- **What I swapped it for:** A screen saying the slot has just gone, with two ways onward: the next slot that day, or the same slot tomorrow.
+- **What that did to the must-work column:** Both ways onward now have to really work, because watching which one a person takes is the entire reason that screen exists. The card fields can stay dead.
+
+**The wrong turn:** The wrong turn is choosing the failure you already know how to draw. It is quick, and the screen list ends up with a failure on it, so the plan looks complete while the going-wrong you were least worried about is the only one you can watch.
+
+**What it costs:** The failure that actually happens is one you have never designed, so you are inventing a screen and two ways out of it inside a step that was meant to be planning. Some of that invention will be thrown away after the first session.
+
+**Still unknown:** Still unknown: whether those two ways onward are the two people want. The prototype can show which of the two they take, and it cannot show the third one they were hoping for.
+
 - List the screens your chosen flow needs, including one failure.
 - Decide which actions must work and which may be dead.
 
@@ -456,7 +487,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Link:** The join between one action and the screen it opens. On paper the link is you, turning to that sheet when the person points at it.
+- **Acting as the computer:** The paper way of running a prototype: you watch where the person points and put the next sheet in front of them, saying nothing.
+- **Prototyping tool:** A free program for drawing screens and joining them, which gives you a link to open. The person taking part needs no account and installs nothing.
 
 Stuck starting? Make the screens first with nothing linked. Then join them one action at a time, following your own flow.
 
@@ -479,7 +512,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Edge case:** A value at the far end of what is possible: the last place left, the class with no price, the booking made for today.
+- **Missing value:** A place in the layout where the content simply is not there, which is common in real data and rare in the examples you invent.
+- **Wrapping:** What text does when it will not fit on one line: it runs onto the next and pushes everything below it further down the screen.
 
 Stuck starting? Take your three worst real examples. If you have none, invent the longest title you can imagine somebody typing.
 
@@ -540,7 +575,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Walking it:** Doing the whole flow yourself at phone size, start to finish, without helping yourself past anything that sticks.
+- **Reachable:** Whether a person can actually get to a control with a thumb, rather than it sitting under something or off the edge of the screen.
+- **Repair:** The one change a Check question asks you to make. You make it in the step it belongs to, then write down here that you made it.
 
 Stuck starting? Open it on a phone, or hold the paper sheets at phone size, and do the whole flow without helping yourself.
 
@@ -815,7 +852,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Situation:** The circumstances you hand the person so the task has a reason: who they are with, what they want, and why it is today.
+- **Stopping point:** The sentence telling the person when they are finished, so they are not left guessing whether you want more.
+- **Leading:** Wording that promises a feature exists without naming it, such as “find the waiting list”. It costs you the finding about whether anybody expected one.
 
 Stuck starting? Take your first rough task and cross out every word that also appears on your screens. Write what is left as a situation.
 
@@ -824,6 +863,20 @@ Is it enough? No task names a button, menu, icon or page, and none of them promi
 </details>
 
 #### 3. Define success
+
+**See it first.** Made-up example. Writing what counts as success for one task, and describing my own route instead of the person’s goal.
+
+- **What I wrote first:** “Success: she uses the change-date route and reaches the new confirmation screen.” One line, and it looked like a decision taken in advance.
+- **Why it felt right:** That route is the thing I built and the thing I am anxious about. Writing it down felt like being strict with myself.
+- **What I saw reading it back:** It is written from inside my design. Her goal is not to use a route. It is to not be there on Saturday and to not lose the money.
+- **What I wrote instead:** Destination: the Saturday booking is gone and she says the matter is settled. Routes I would accept: changing the date; cancelling and booking again; finding the telephone number, written down as a workaround.
+- **The line I had been missing:** Giving up: two minutes of looking with nothing tried, or her saying she would sort it out later. Without that line I would let a task run until I could bear it no longer, which is a decision made by me, in the room.
+
+**The wrong turn:** The wrong turn is writing success as the route you designed, because that is the part you are worried about and it is easy to tick. It quietly turns every other way of getting there into a failure.
+
+**What it costs:** Accepting three routes means far fewer clean failures, so a route that is genuinely poor can still pass. You then have to write the workaround down beside the result, and the result reads as weaker than a tidy tick would have.
+
+**Still unknown:** Still unknown: whether “the matter is settled” is something you can see or only something you are told. In a rehearsal on yourself you do not even get that much.
 
 - Write the destination that counts as success for each task.
 - List acceptable alternative routes, including workarounds you would note.
@@ -889,7 +942,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Rehearsal:** Running the tasks out loud with nobody else there. It finds the wording that cannot be said aloud, and it is never written up as research.
+- **Repair:** The one change a Check question asks you to make. You make it in the step it belongs to, then write down here that you made it.
 
 Stuck starting? Read each task out to the empty room. Anything you would not say to a person out loud is written wrong.
 
@@ -1119,6 +1173,20 @@ Is it enough? Either three people are recorded with their qualifying experience,
 
 #### 2. Extend consent
 
+**See it first.** Made-up example. Writing a consent introduction as one friendly sentence, then reading it aloud and finding three things I had not said.
+
+- **What I wrote first:** “I will record this and it stays between us, is that all right?” Short, polite, and out of the way in ten seconds.
+- **Reading it to the empty room:** I asked it the questions a person would ask back. Who hears it. What happens on my phone. When does it go away. My sentence answered none of the three.
+- **The one I could not answer honestly:** I had been planning to send two minutes of the audio to the person reviewing my work. “Stays between us” was not true, and I had almost said it out loud.
+- **What I wrote instead:** Separate sentences. Audio only, not your screen and not your face. Heard by me, and a short clip may go to the person who reviews my work. Nothing is installed on your phone and I see only what you show me on it. Deleted within two weeks, sooner if you ask. You may say no to the recording and still take part.
+- **What that did to the session:** The opening went from ten seconds to about two minutes, so I moved it in front of the timer and stopped treating it as a formality to get past.
+
+**The wrong turn:** The wrong turn is bundling it all into one agreeable sentence. A long introduction feels as though it will make the person nervous, and you want to reach the tasks, so you ask for agreement to a vague whole instead of to each named thing.
+
+**What it costs:** Naming each thing costs you two minutes of a session you may only have an hour of, and some people will say no to the recording once they hear what it is. You are then working from notes on a session you would rather have been able to hear again.
+
+**Still unknown:** Still unknown: whether saying all of it slowly makes people more careful in front of you than a quick sentence would have. A rehearsal on yourself cannot show you that.
+
 - Add recording and device use to your consent introduction.
 - State that nothing is installed and no personal data is viewed.
 - State how and when anything captured will be deleted.
@@ -1169,7 +1237,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Capture:** Everything you keep from a session: the recording, the notes you write during it, and anything you write from memory straight afterwards.
+- **Marker:** A two or three word note with the time beside it, written so you can find that moment in the recording later. It is not a note about what happened.
+- **Moderating:** The job of running the session: watching, staying quiet, and asking only the few questions you decided on beforehand.
 
 Stuck starting? Choose by asking what you would rather lose: the second half of a sentence, or the look on somebody’s face.
 
@@ -1193,7 +1263,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Session pack:** Everything loaded, printed and within reach before the person arrives, so that nothing has to be found while they wait.
+- **Short version:** The twenty-minute plan, naming the two tasks you would keep. It is decided at your desk rather than in the room with somebody watching.
 
 Stuck starting? Lay out physically what you will need, then write the list from what is in front of you.
 
@@ -1218,7 +1289,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Rehearsal:** Running the whole thing on yourself, out loud, from the consent introduction to the last task. It stays labelled a rehearsal and is never written up as research.
+- **Improvising:** Anything you had to make up in the moment because it had not been decided. Each one you notice is a decision to take now, at your desk.
+- **Repair:** The one change a Check question asks you to make. You make it in the step it belongs to, then write down here that you made it.
 
 Stuck starting? Sit down and run the whole thing on yourself, out loud, from the consent introduction to the last task.
 
@@ -1494,7 +1567,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Expectation:** What a person says will happen before it happens. Once the screen changes she will describe what she saw instead, so it cannot be collected afterwards.
+- **Rehearsal:** A run of the whole session on yourself. It shows your materials and tasks work, and it shows nothing at all about other people.
+- **Dated note:** A short written record of who you asked, who could not take part, and what you had ready for them, with the day you wrote it.
 
 Stuck starting? Read the consent introduction aloud and get agreement before anything else. Then give the first task and stop speaking.
 
@@ -1518,7 +1593,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Intervention:** Anything you said beyond the task itself or one of your three prepared responses.
+- **Intervention log:** The running list of those moments, each with the time it happened and your words as you actually said them.
+- **Assisted marker:** The point in a record where your help begins. Everything after it is the person following you rather than following the design.
 
 Stuck starting? Go through the recording, or reconstruct honestly, and write down anything you said that was not the task or one of your three responses.
 
@@ -1527,6 +1604,21 @@ Is it enough? The log includes at least one entry you are not proud of.
 </details>
 
 #### 4. Write up immediately
+
+**See it first.** Made-up example. A session record written three days late, in which my conclusions had quietly become my observations.
+
+- **What I wrote:** “She was confused by the review screen and gave up on cancelling.” It read like a record of what had happened. I filed it and moved on.
+- **Pulling one sentence apart:** Confused is not a thing I watched. What I watched was her reading one line twice, taking her hand away from the screen, and coming back to it.
+- **How little I actually had:** In the whole record, one sentence was in her words. Everything else was my paraphrase, tidied up three days after the evening it came from.
+- **Why three days mattered:** By then I could no longer tell my memory of the room from my explanation of it. Written within the hour, the said part is long and the inferred part is short.
+- **The same moment, in three parts:** Said: “I suppose I press this?”. Observed: she read the line twice, hand away for about four seconds, then returned. Inferred: she was unsure whether the place was already hers.
+- **The part I could not place:** Those four seconds came from memory, not from a recording. They go in marked as reconstructed, so a reader can see which numbers were counted and which were remembered.
+
+**The wrong turn:** The wrong turn is writing “she was confused”. It feels like an observation because you were sure of it at the time, and it is a conclusion with the evidence deleted, so nobody can check it and nobody can disagree with it.
+
+**What it costs:** Three parts make a longer, duller record, and the inferred part often comes out thin and unsatisfying. You give up the confident summary a reader would rather have, and that summary was the part with nothing underneath it.
+
+**Still unknown:** Still unknown: whether the pause was doubt about the screen or doubt about spending the money. The record cannot settle it, and watching her again would not have settled it either.
 
 - Within an hour, complete each session record.
 - Separate what was said, what you observed and what you inferred.
@@ -1543,7 +1635,10 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Said:** The words that came out of the person’s mouth, written as they were spoken rather than summarised.
+- **Observed:** What you watched happen, described so that somebody who was not there could picture it: a pause, a scroll, a hand moving away.
+- **Inferred:** Your explanation of why. It is worth writing and it is kept apart, because it is the part that could be wrong.
+- **Reconstructed:** Anything you put in from memory rather than from a recording or a note made at the time. Marking it lets a reader weigh it accordingly.
 
 Stuck starting? Write the words you actually heard first. Everything else is either what you watched or what you concluded.
 
@@ -1568,7 +1663,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Unnecessary intervention:** One where waiting would have given you the same thing or something better. You can usually only see these afterwards.
+- **Check questions:** The questions at the end of the lesson. Each one names a specific change to make in an earlier step.
+- **Repair:** The change a Check question asks for, made where the work actually is, and then noted here so you can see what shifted.
 
 Stuck starting? Read the log as though somebody else had moderated. Mark every entry where waiting would have worked.
 
@@ -1784,6 +1881,21 @@ Is it enough? Every line carries a person’s label and describes one thing.
 
 #### 2. Group by cause
 
+**See it first.** Made-up example. Sorting nine observations by the screen they happened on, and finishing with three tidy groups and no causes.
+
+- **My first three boxes:** I put every line into “Search list”, “Class page” or “Emails”. It took four minutes and it looked finished.
+- **What was inside one box:** Under “Search list” sat one person scrolling back and forth between two similar classes, and another who thought “Saved” meant she had booked. Two different reasons to stop, in one box.
+- **What the boxes had split:** The same trouble with the word “Saved” turned up again in the reminder email, so it sat in a second box as well. One cause in two places, counted properly in neither.
+- **The sentence test:** I tried to finish “these happened because …” for each box. For “Search list” I could not get past the first word. For “people read Saved as booked” it came out in one go.
+- **The groups I ended with:** “People read Saved as booked” held three lines from two people across two places. “People cannot tell two similar classes apart” held four lines from two people.
+- **The one I marked a guess:** A third group, “the class times are hard to scan”, held three lines. I could finish the sentence for one of them and was inventing it for the other two, so the group carries a guess mark.
+
+**The wrong turn:** The wrong turn is grouping by screen. Every line already names a screen, so the boxes fill themselves in minutes and look orderly. None of them is a problem, because a place is not a reason.
+
+**What it costs:** Groups named by cause cut across screens, so no group points at one thing to change. Whoever makes the change will ask you which screen you mean, and you will have to answer with a list rather than a name.
+
+**Still unknown:** Still unknown: whether the two main groups share one cause underneath, something about words that describe a state rather than an action. Nine lines from three people cannot separate that.
+
 - Put observations that share a likely cause together.
 - Name each group by the cause, not the screen.
 - Mark groups where the shared cause is a guess.
@@ -1798,7 +1910,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Cause:** The reason underneath several observations. You have found one when you can finish the sentence “these happened because …” without inventing anything.
+- **Group:** A set of observations you believe share one cause, named after that cause rather than after the screen they happened on.
+- **Speculative group:** One where the shared cause is still your guess. It stays in the analysis with the guess marked, rather than being quietly presented as settled.
 
 Stuck starting? For each group finish the sentence “these happened because …”. If you cannot finish it, mark the group a guess or split it.
 
@@ -1840,7 +1954,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Count:** How many of the people you sat with met a problem, out of how many there were. Written as “two of three”, never as a share of a bigger group.
+- **Cost:** What the problem actually took from the person: money, work they lost, a task they gave up on, or time and doubt.
+- **Evidence:** The particular line in a record you could point at if somebody asked how you know. A problem without one is a belief.
 
 Stuck starting? Take one group and write the count as “two of three”, then write the sentence describing what it cost that person.
 
@@ -1875,7 +1991,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Ranking:** Your problems put into a single order, worst cost to the person first, with the reason for the top place written beside it.
+- **Frequency:** How many people met a problem. It is worth recording and it is not what the order is built on, because a common small cost still sits below a rare large one.
 
 Stuck starting? Sort by what each problem cost the person: money first, then lost work, then abandonment, then time and doubt.
 
@@ -1900,7 +2017,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Open question:** An observation you cannot explain, kept as a question rather than pushed into the nearest group. It is usually the first question of your next study.
+- **Unexplained observation:** One where you cannot name a cause. Leaving it unexplained is honest; inventing a cause for it makes a finding nobody can trace.
+- **Repair:** The change a Check question asks for, made in the earlier step it names, and then recorded here so the change is visible.
 
 Stuck starting? Look for the lines you skipped over while grouping. Those are usually the ones you could not explain.
 
@@ -2146,7 +2265,8 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Claim:** A sentence your study can actually support, written so that somebody could hold it against your records and see whether it stands.
+- **Generalising word:** A word such as most, users, or the phrase people tend to. It widens a finding to people you never met, without any arithmetic that could be checked.
 
 Stuck starting? Take each problem from your ranked list and write it as “two of three people …” with what they did.
 
@@ -2181,7 +2301,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Cannot-claim:** A sentence you would like to write, copied out in full and kept beside the reason your study does not support it.
+- **Licensed:** A claim is licensed when the evidence you actually gathered reaches it. Anything beyond that reach is unlicensed, however true it may turn out to be.
+- **Assistive technology:** Software or hardware somebody uses to operate a screen, such as a screen reader or a switch. If nobody in your sessions used any, your claims say nothing about it.
 
 Stuck starting? Write the strongest sentences you would like to be able to write. Then work out, one at a time, which are licensed.
 
@@ -2206,7 +2328,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Published method:** An arithmetic recipe somebody worked out and wrote down, which you follow exactly and name, so a reader can look it up and repeat your sum.
+- **Inputs:** The plain numbers you fed into the sum: how many people did the thing, and how many people there were altogether.
+- **Width:** The distance between the two ends of your range. The wider it is, the less the number in the middle is worth saying out loud.
 
 Stuck starting? Take the rate you most wanted to report. Follow the same arithmetic as the demonstration, with your own numbers.
 
@@ -2215,6 +2339,21 @@ Is it enough? Somebody else could repeat your sum from what you wrote down.
 </details>
 
 #### 5. Label your judgements
+
+**See it first.** Made-up example. Putting “Severity: high” beside three problems, then being unable to say where the word had come from.
+
+- **The column I added:** Beside each problem I wrote High, Medium or Low. Set out in a column, in a table, it looked like something that had been measured.
+- **Where the words came from:** From me, on a Tuesday evening, out of what I remembered feeling while I watched. No instrument, no scale, nobody else’s reading to compare with.
+- **The question that broke it:** Somebody asked what made one problem High and another Medium. Every answer I could give was a description of my own memory of the room.
+- **The rescue I tried and dropped:** I began justifying the labels with participant counts. That was worse. It dressed a judgement as arithmetic, and it ordered the list by how many people met a problem rather than by what it cost them.
+- **The sentence I wrote instead:** “I ranked these problems myself, from what each one cost the person in the sessions I ran. Nothing in this order was measured.” It sits directly above the list.
+- **What would make it measured:** The same tasks, a number of people fixed in advance, and completion and time recorded to a rule decided before anybody sat down. I wrote that down too, so the gap is visible rather than implied.
+
+**The wrong turn:** The wrong turn is borrowing the vocabulary of a scale. High, Medium and Low read as figures taken off an instrument, and they are the same opinion in a uniform.
+
+**What it costs:** Naming the order as your own judgement invites a reader to argue with the whole list, and somebody will. You keep every observation underneath it, and you give up the authority those three words were lending you.
+
+**Still unknown:** Still unknown: whether anybody else would put the problems in this order. Nobody else watched the sessions, so there is nothing to hold my order against.
 
 - State that the severity ranking is your judgement from observation.
 - Name what would make it more than a judgement.
@@ -2231,7 +2370,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Judgement:** An order or a label that came out of you rather than out of a procedure. Saying so lets a reader disagree with it without doubting your observations.
+- **Severity:** A word for how bad a problem is. It sounds like a reading and it is somebody’s opinion, whatever scale is used to write it down.
+- **Measured:** Counted by a rule you decided before the sessions began, so it would have come out the same whoever ran them.
 
 Stuck starting? Write who did the ranking and on what basis, in one sentence, and put it above the ranked list.
 
@@ -2477,7 +2618,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Single change:** A change a reader could name in one sentence with no and in it. If your sentence needs an and, you are making two.
+- **Version:** One saved state of the prototype. The old one is kept whole so that the two can be set side by side afterwards.
+- **Tempted list:** Everything else you wanted to change and did not, written down. It is where the next round starts, and it stops the improvements leaking into this one.
 
 Stuck starting? Copy the prototype before you touch it. Paper, printed screens or files all work, as long as both versions still exist.
 
@@ -2502,7 +2645,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Re-test:** Running the same tasks, in the same words, on the changed version. Anything else you alter about the session makes the two rounds impossible to compare.
+- **Fresh participant:** Somebody who has seen neither version. A person who already met the problem cannot show you whether it has gone.
+- **Rehearsal:** A run on yourself. It shows the change works mechanically, and because you already know the answer it can never become a result.
 
 Stuck starting? Use the same task wording and the same moderation discipline as before, or the two rounds are not comparable.
 
@@ -2537,7 +2682,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Comparison:** The prediction set beside what happened, read in that order, so you meet your own words before you meet the records.
+- **Unpredicted result:** Something that changed which you had not written down beforehand. It is kept and reported, and it does not count as the prediction holding.
+- **Outcome label:** The single word you put on the re-test: confirmed, partial, failed, or cannot say. Cannot say is the honest one when the prediction came afterwards.
 
 Stuck starting? Read the prediction before you read the records, so you meet it in the order you wrote it.
 
@@ -2546,6 +2693,21 @@ Is it enough? Anything that changed which you had not predicted is written down 
 </details>
 
 #### 5. Record and re-rank
+
+**See it first.** Made-up example. Re-ranking after a partial result, and quietly crossing off the problem I had just repaired.
+
+- **The result I was holding:** The top problem was that two similar classes looked alike. The repair added the tutor’s name to each row. One of two new people chose straight away; the other still chose the wrong evening.
+- **What I did in two minutes:** I crossed the top problem off, moved everything up one place, and put the new problem at the bottom because it had only just appeared.
+- **Why the crossing off was wrong:** Half the prediction had failed. One of the two still chose wrongly. The problem had got smaller, not gone, and a crossed-off line says gone.
+- **Why the bottom was wrong too:** The new problem was that the tutor names meant nothing to her, and it cost her a booking on an evening she could not attend. New is not a rank. Cost is.
+- **The list I ended with:** The repaired problem stayed on it, marked partly addressed, with both rounds of counts beside it. The new problem came in above two older ones, because it cost more than either.
+- **The line above the list:** One sentence saying this order rests on a re-test with two people, so it is a weaker order than the one it replaced.
+
+**The wrong turn:** The wrong turn is crossing off the problem you have just repaired. It is the reward for the work and it makes the list shorter, which feels like progress. A partial result has not earned it.
+
+**What it costs:** Keeping a partly addressed problem on the list means the list never gets shorter, and it will look to anyone reading as though you finish nothing. The alternative is a list that hides its own failures, which is worth less to everybody, you included.
+
+**Still unknown:** Still unknown: whether the second person’s difficulty is the old problem in a new form or a separate one about names. Two people cannot separate those, so the list carries both readings.
 
 - Write the outcome plainly, including a failure.
 - Add any new problem the repair introduced.
@@ -2563,7 +2725,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Outcome sentence:** One sentence saying what the re-test showed, with the counts of people inside it rather than beside it.
+- **New problem:** One the change itself introduced. It joins the list on what it cost the person, not at the bottom because it arrived last.
+- **Re-ranking:** Putting the remaining problems back into order once the result is in, including any problem the repair only partly addressed.
 
 Stuck starting? Write the sentence you would least like to write first. If the repair failed, that sentence is the result.
 
@@ -2806,7 +2970,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Counted wait:** A wait you make yourself, by holding the screen back while somebody counts the seconds on a clock.
+- **Rehearsal:** A staged stand-in for a test. It shows you the shape of a problem, and it is never written up as research.
 
 Stuck starting? Do the content first. Open your prototype and replace three tidy examples with the longest and largest real ones you can find.
 
@@ -2815,6 +2980,20 @@ Is it enough? The wait has a number of seconds beside it, and the screen holds a
 </details>
 
 #### 3. Observe first paint and behaviour
+
+**See it first.** Made-up example. Watching somebody sit through a wait, filling the silence, and writing down my reading of her face instead of what appeared.
+
+- **What I wrote down:** “The wait felt endless and she got annoyed.” That was the whole of my note from the first run.
+- **What was missing from it:** I could not say what appeared first, what appeared last, or how many seconds sat between the two. I had recorded my reading of her face.
+- **What I did in the room:** About three seconds in I said “it’s just loading”. She stopped, waited politely and did nothing. Whatever she would have done next, I had taken it away from myself.
+- **The second run:** Timer on, mouth shut. The heading and the empty boxes came up, then nothing for six seconds, then the prices. At about four seconds she pressed the button again.
+- **What the loaded-up screen broke:** With sixty classes in the list rather than three, the price summary she was waiting for had moved below the bottom of the screen. It arrived, and she still did not see it.
+
+**The wrong turn:** The wrong turn is filling the silence. A wait is uncomfortable to watch, explaining it is the kind thing to do, and it deletes the only behaviour you came for.
+
+**What it costs:** Saying nothing for six seconds while somebody struggles feels rude, and one or two people will leave thinking you were cold. That silence is the measurement.
+
+**Still unknown:** Still unknown: whether she pressed again because six seconds is too long, or because nothing on the screen said anything was coming. Those are two different repairs, and this run cannot separate them.
 
 - Record what appears first and how long the gap lasts.
 - Run the task yourself, then with one or two people.
@@ -2831,7 +3010,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **First paint:** The moment the first thing appears on the screen, before the rest of the page arrives.
+- **Wrapping:** What a line of text does when it is too long for its space: it carries on to the next line and pushes everything below it further down.
+- **Volume:** The amount of content actually on the screen at once, which is sixty rows rather than the three tidy ones you drew.
 
 Stuck starting? Run it yourself once with a timer, then once each with one or two people, saying nothing while they wait.
 
@@ -2867,7 +3048,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Click-through:** A prototype whose screens are joined up so you can tap from one to the next, with nothing really working behind them.
+- **Ranked list:** Your running list of problems, ordered by how much harm each one does. New problems join it rather than starting a fresh list.
 
 Stuck starting? Put the two results side by side before you write anything about either.
 
@@ -2893,7 +3075,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Conditions:** The facts about how a run was set up: the device, the method, the length of the wait in seconds, and how many items were on the screen.
+- **Check questions:** The few questions at the end of a lesson that send you back to mend one specific thing.
 
 Stuck starting? Write the four facts at the top of your results: device, method, seconds, item count.
 
@@ -3121,6 +3304,20 @@ Is it enough? The question you chose could be answered by what a person did, wit
 
 #### 2. Write self-contained instructions
 
+**See it first.** Made-up example. Writing unmoderated instructions with the screen open beside me, so the task tested whether people could read rather than whether they could find.
+
+- **What I wrote:** “Open My bookings, tap Change booking, and move your Tuesday class to Thursday.” It was short and clear, and I was pleased with it.
+- **What it would have measured:** Five people telling me they can follow three instructions. My question was whether anybody reaches the change route without help, and I had put the route in the instructions.
+- **Why I wrote it that way:** The screen was open in front of me while I typed. Every name on it felt like an ordinary word rather than the answer to my own question.
+- **The rewrite:** “You booked a class for Tuesday and something has come up. Get as far as the point where you would move it to another day. If you cannot get there, tell me where you stopped.”
+- **What I still had to add:** A line saying what to do if something does not work, and a line saying where to send the outcome. I checked that neither of them named a button either.
+
+**The wrong turn:** The wrong turn is naming the buttons, and it is very hard to avoid while the screen sits open beside you. Instructions written that way test reading, and reading was never the thing in doubt.
+
+**What it costs:** A situation with no names in it means one or two of your five will go somewhere else entirely, and you cannot lean over and put them right. Those runs are simply lost, and they are what the useful ones cost you.
+
+**Still unknown:** Still unknown: whether the word change in your scenario means the same thing to a reader as the word on the screen. An unmoderated run can never tell you how somebody read your sentence.
+
 - Write the scenario, the goal and how to report the outcome.
 - Remove every word that assumes context only you have.
 - State what to do if something does not work.
@@ -3136,7 +3333,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Scenario:** The short situation you give a person so the task has a reason, written in their words rather than the product’s.
+- **Leading:** Wording that hands over the answer, so the task tests reading rather than finding.
+- **Self-contained:** Everything needed to do the task sits inside the instructions, because you will not be there to add anything.
 
 Stuck starting? Write it as though you are messaging someone who has never heard of the project.
 
@@ -3160,7 +3359,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Read-aloud test:** Asking one person to read your instructions out loud and say what they would do next, while you say nothing at all.
+- **Hesitation:** A pause, a stumble or a re-read. It marks the exact word that is not working.
 
 Stuck starting? Ask one person to read it aloud and narrate what they would do next. Say nothing at all while they do it. If there is nobody to ask, read it aloud yourself the next morning and note that no second reader ever saw it.
 
@@ -3195,7 +3395,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Limit:** Something your method cannot capture, written down by you before anybody else finds it.
+- **The why:** The reason behind what a person did. An outcome on its own never carries it.
+- **Follow-up:** A later message or session that chases one surprising result you cannot explain.
 
 Stuck starting? Take your strongest session finding and ask whether an outcome alone would have produced it.
 
@@ -3221,7 +3423,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Dated gap:** A line saying, with today’s date, that a study was designed and not run, and what you tried.
+- **Method choice:** The decision to use one kind of study rather than another. The decision itself is worth filing, with its reason beside it.
 
 Stuck starting? Write the reason before you write the decision. The reason usually settles it.
 
@@ -3448,6 +3651,20 @@ Is it enough? The paragraph names a change and a reason, and mentions no method 
 
 #### 2. Write the findings
 
+**See it first.** Made-up example. Merging two different problems into one finding so that the count would look stronger.
+
+- **What I wrote:** “Everyone found the booking flow confusing — three of three.” It went at the top of the findings and it looked settled.
+- **Where the three came from:** Two people could not tell whether their place was held before paying. The third got as far as the dates and gave up, because she could not tell which week she was looking at.
+- **Why I merged them:** Three of three sounds like something nobody will argue with. Two of three sounds like an opinion I would have to defend.
+- **What the merged finding cost:** It named no change at all. Confusing cannot be repaired. The two problems underneath it each had an obvious repair, and my headline had hidden both.
+- **What I wrote instead:** Two findings. Held place, two of three, with what she said, and the review screen has to name what is already secured. Week unclear, one of three, and the date view has to say which week it is showing.
+
+**The wrong turn:** The wrong turn is rolling near-neighbour problems into one headline, because a bigger count feels safer and a soft word like confusing seems to cover everything you saw.
+
+**What it costs:** Split findings are each smaller, and the one-of-three finding will sit at the bottom looking ignorable beside the other. What you get is that each one names a repair somebody could actually make.
+
+**Still unknown:** Still unknown: how common the week problem is. One person met it, and nothing in this study says whether the next ten would.
+
 - Write each finding as headline, counts, evidence, and what it changes.
 - Cut to the number that fits two pages.
 - Include the repair result, however it turned out.
@@ -3465,7 +3682,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Finding:** One problem you saw, written with how many people met it, what they said or did, and what it changes.
+- **Headline:** The one line naming a finding, short enough that a reader can hold it in their head.
+- **Count:** How many of how many people met the problem, written as two numbers. Three people never make a percentage.
 
 Stuck starting? Take the top of your ranked problem list and write it as four short parts.
 
@@ -3490,7 +3709,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Limits section:** The part of the report saying who was not asked, what did not really work, and what was never tested.
+- **Fakes sheet:** The running list you kept of every control that did nothing and every value you invented.
+- **Recruitment:** How you found the people who took part, and therefore who was left out.
 
 Stuck starting? Open your recruitment notes, your untestable lists and your fakes sheet, and paste them in unchanged.
 
@@ -3526,7 +3747,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Reversal:** The evidence that would change your mind, written down at the same time as the decision it would overturn.
+- **Expert opinion:** Something you believe from experience rather than from anything you tested here, labelled so a reader can tell the two apart.
 
 Stuck starting? Ask what the evidence argues against. If the answer is nothing, the study probably confirmed what you already believed.
 
@@ -3551,7 +3773,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Anonymising:** Taking out of a quotation anything that points at the person who said it: a name, a workplace, an unusual detail.
+- **Outsider read:** Reading your own report as somebody who was not there, to find the parts that only work with you standing beside them.
 
 Stuck starting? Read it aloud once as a person who has never heard of the project.
 
@@ -3824,7 +4047,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Judgement call:** A decision you made because it seemed right, with nothing you observed standing behind it.
+- **Rehearsal:** A stand-in for a test that you staged yourself. It shows the shape of a problem and is never reported as research.
+- **Supplied practice material:** The made-up transcripts and results this course gives you to practise on. Nobody ever said any of it.
 
 Stuck starting? Take the decisions with no source first. Those are the ones the labels are for.
 
@@ -3850,7 +4075,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Fidelity:** How close a prototype is to the real thing: paper, a click-through, or something that actually runs.
+- **Scope statement:** The short passage saying what was built, what was faked, what was never touched, and who took part.
+- **Fakes sheet:** The running list of every control that did nothing and every value you made up while building.
 
 Stuck starting? Reuse your fakes sheet, your untestable lists and your recruitment notes; they already contain most of the statement.
 
@@ -3859,6 +4086,20 @@ Is it enough? A reader could tell what you never touched without asking you a si
 </details>
 
 #### 4. Write the summary
+
+**See it first.** Made-up example. Writing the summary in a portfolio voice, and finding almost nothing left once the claims came out.
+
+- **What I wrote first:** “Researched, designed and tested a booking flow, improving clarity for people booking classes.” It read like every portfolio page I had ever admired.
+- **The search:** I searched my own paragraph for shipped, validated, proven, improved and the per cent sign. Four hits in three sentences, and one sentence had nothing left in it once they were gone.
+- **What that told me:** That sentence had been carrying the claim rather than the work. There was no observation underneath it to survive the deletion.
+- **The rewrite:** “Three people tried a paper booking flow. Two could not tell whether their place was held before paying. I changed the review screen and tried it with two more people; one of them still checked twice.”
+- **What I nearly left out:** The last clause. A half-working repair felt like a poor ending, and it is the only line in the paragraph that shows the project could have contradicted me.
+
+**The wrong turn:** The wrong turn is writing the summary in the voice of a finished case study, because that is the voice of every portfolio you have read and it arrives before you have decided anything.
+
+**What it costs:** A summary with no outcome claims cannot compete with one saying a number went up by thirty per cent. You give up the sentence that gets skimmed and remembered, and you get a paragraph where every line can be produced on request.
+
+**Still unknown:** Still unknown: whether the review screen change helps anybody beyond the two people who saw it. The paragraph now says so, rather than implying otherwise.
 
 - Summarise the project in one paragraph without outcome claims.
 - Remove the words shipped, validated, proven and any percentage.
@@ -3875,7 +4116,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Outcome claim:** A sentence saying how well something worked: improved, validated, proven, or any percentage at all.
+- **Banned words:** The short list of words you search your own summary for before you file it, because each one promises more than you can show.
 
 Stuck starting? Write what you did and what you observed. Stop before any sentence about how well it worked.
 
@@ -3900,7 +4142,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **File map:** A list saying where each thing in the trail is kept, so any link in it can be produced when somebody asks.
+- **Raw participant material:** Recordings, notes and anything else with a real person in it, kept apart from the trail and private.
 
 Stuck starting? Walk your own trail and try to open each artefact in turn.
 

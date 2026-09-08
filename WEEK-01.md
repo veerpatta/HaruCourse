@@ -305,7 +305,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Open question:** Something the screen could not tell you. Writing it down is how you remember to go and find out.
+- **Repair:** One specific change to one answer you already wrote, not a rewrite. Each Check question names one.
 
 Stuck starting? Reread your unknown entries; one of them is your question. Answer the three Check questions before filling the last box, so you know what to change.
 

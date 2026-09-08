@@ -1,3 +1,19 @@
+# Every refined lesson brought up to lesson one's standard — 8 September 2026
+
+The creator asked that everything lesson one does be followed through the rest of the course. All 104 refined lessons were measured against it feature by feature instead of guessing. Worksheets, the three answer-first checks, the improvement-made field, the save route, the rubric, the reading and the Learn questions were already everywhere. Four things were not, and two of those turned out to be bugs rather than missing writing.
+
+The optional AI tutor route was reachable only from the older authoring path, so 94 lessons could never show it however they were written. One shared builder now serves both paths, deriving the coaching instruction from each lesson's own misconception and the non-AI exercise from its own criteria. All 104 carry it now. Videos had the same shape of problem: no lesson past Module 2 could carry one at all, because the guided material had no video member and the derived path never resolved a catalog id.
+
+Videos now sit on 10 lessons, up from one. That number is a ceiling, not a place I stopped. The rule here is that a segment is assigned only from a retrieved subtitle track with every timestamp copied from it, and YouTube returns empty caption bodies to both a script and a real browser, which is the same wall recorded against an earlier candidate. Publishers who serve their own caption files can be verified, so eleven W3C Web Accessibility Initiative tracks were retrieved and nine paired where they teach the lesson's own point, from keyboard operation and target size to contrast and text that has to grow. Each is under a minute, optional, click-to-load, and has a full written route.
+
+The other two gaps were writing, and both are closed. Every refined lesson now carries a second failure-first demonstration on the step where its hardest judgement sits, and explains its words on every step: 209 demonstrations and 1126 defined terms across the course, none repeating the mistake already made by its lesson's first demonstration.
+
+Checks: content, worksheet, both typechecks and build pass; `audit:guided` reports no contract violation across m03 to m10; all thirteen backend groups pass with no schema, storage or API change. Every authored fragment was validated before it reached the source. In the browser, a lesson with a video shows the timings copied from its caption file and loads nothing until the button is pressed, and a lesson with the new material shows two demonstrations and help on all five steps. Evidence: [docs/VERIFICATION-GUIDED.md](docs/VERIFICATION-GUIDED.md).
+
+One bug is worth recording because it nearly did damage. The tool that inserts guided material resolved a lesson's guide in two of the three places one can live, and for the eleven week lessons it walked forward to the next lesson's guide instead. It would have written week-one material into Module 3. It now resolves all three and refuses any lesson that does not come back with exactly five steps.
+
+Haru has still not used any lesson. 104 lessons now follow a pattern no learner has tested, and that remains the thing that should decide whether the pattern is right.
+
 # Modules 6 to 10 given guided practice — 7 September 2026
 
 Sixty-one lessons now carry the beginner pattern, taking the course from 43 refined lessons to 104. Information architecture, flows and wireframes, interface craft, interaction and motion, and prototyping and evaluation each got a route, a worksheet of 11 to 16 fields, a failure-first demonstration, one supplied case or one evidence sorter answered before any feedback, three answer-first checks with a bounded repair, an `improvement-made` field and route-specific saving.

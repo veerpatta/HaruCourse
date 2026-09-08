@@ -115,6 +115,39 @@ This was left alone deliberately. `freeToolPath` is authored lesson content with
 - The live service-worker update swap, still open. Worth noting that it surfaced here: a stale precached shell made m09-l01 render nothing until the worker was unregistered, which is a local QA hazard rather than a defect in this content.
 - Keyboard activation by real key presses, as before.
 
+## Every refined lesson measured against lesson one — 8 September 2026
+
+The creator asked that everything lesson one does be carried through the rest of the course, naming the video pairing, the questions, the worksheets and the checks. Rather than assume which parts were missing, all 104 refined lessons were compared against lesson one feature by feature. Worksheets, three answer-first checks, the improvement-made field, the save route, the rubric, the assigned reading and the Learn question-and-answer pair were already present everywhere. Four things were not.
+
+**Two of the four were silent structural gaps, not missing content.** In each case the data could never have reached the reader however well a lesson was written, so nothing failed and nothing appeared.
+
+The optional AI rehearsal was gated on an authored `coach` line that only the older activity path carried. Every lesson deriving its workspace, all of m03 onward, therefore had none, and fourteen older lessons whose activity omitted `coach` had none either: 94 of 104. A single `coachedAi` builder now serves both paths. It keeps authored wording where it exists and otherwise derives the coaching instruction from the lesson's own misconception and the non-AI exercise from its own criteria, so no second assignment is invented. Six week lessons predate both fields and were given an authored coach line and exercise. All 104 now carry it.
+
+A video could not reach a derived lesson at all. `Guided` had no video member, and the derived path never resolved a catalog id against `videoSelections`, so an authored pairing would have arrived as a bare id with no URL and no timings. One `guidedMaterial` helper now resolves it on both paths.
+
+**Videos: 10 of 104, and this is a ceiling rather than a stopping point.** This repository assigns a segment only when the publisher's own subtitle track has been retrieved on the stated date, with every timestamp copied from it and none estimated. YouTube caption bodies return empty to both a script and a real browser, which is the same wall already recorded against the VIDC01 candidate, so no YouTube-hosted video can meet that bar here. Publishers who serve their own caption files can. Eleven W3C Web Accessibility Initiative tracks were retrieved and nine were paired where they teach the lesson's own point: keyboard operation, target size, notifications and feedback, jargon in labels, headings and layout, speech input as an alternative to gestures, contrast, text that must grow, and text to speech for chart alternatives. Each is 33 to 63 seconds, optional, click-to-load on youtube-nocookie, paired with an immediate action and backed by a complete written route. The remaining 94 lessons have no video, and adding one requires finding a publisher who serves captions rather than any change to this code.
+
+**The other two gaps were authoring, and they are closed.** Lesson one carries three worked demonstrations and explains its words on four of its five steps; most lessons carried one demonstration and explained words on one or two steps. Every refined lesson now has a second failure-first demonstration on the step where its hardest judgement sits, and contextual terms on every step. That is 209 demonstrations and 1126 defined terms across the course. No new demonstration repeats the mistake or the scenario of the one already in its lesson.
+
+### Checks run
+
+- `docs:generate`, `test:content`, `test:worksheet`, both typechecks and `build` pass.
+- `audit:guided` reports no beginner-contract violation across m03 to m10.
+- All thirteen backend groups pass against the local Worker. No schema, storage or API change: everything here is authored content or a resolution helper.
+- Every authored fragment was validated before it touched the source, against the same rules plus the banned-word and British-spelling lists.
+- Browser, local Worker on 8788, test account only: a lesson with a paired video shows the timings copied from the caption file, loads no iframe until the button is pressed, then loads only youtube-nocookie, and still offers the written route; a lesson with the new material shows two "See it first" blocks and contextual help on all five steps.
+
+### One bug worth recording
+
+The tool that inserts this material resolved a lesson's guide in only two of the three places one can live. All eleven week lessons keep theirs in a named `Guided` constant that the activity entry spreads, and for those the first version walked forward to the next lesson's guide, which would have written week-one material into Module 3. It now resolves all three and refuses any lesson that does not come back with exactly five steps.
+
+### Not verified
+
+- Haru has not used any of it. No learner validation is claimed for any of the 104 refined lessons.
+- No screenshots; the browser pane would not paint while the window was hidden.
+- A sample of lessons was opened in the browser, not all 104. The rest rest on the runtime read-back and the auditor.
+- The live service-worker update swap, still open from an earlier pass.
+
 ## Delivery defect, diagnosed and fixed
 
 Reproduction was attempted first and could not be completed here: the app's browser pane refuses every service-worker registration ("An unknown error occurred when fetching the script", raised for `/sw.js` even though the worker serves it as 200 `text/javascript`, 16,915 bytes, locally and hosted), and the separate real-browser tool was disconnected during the session. The defect was therefore established from the artefact, which is unambiguous: the built `dist/sw.js` contained zero occurrences of `skipWaiting` and no `message` listener, and `src/main.tsx` called `registerSW({onNeedRefresh})` while discarding the returned update function. An installed worker had no activation path from the page, so the notice was advice the learner could not act on, and a second open tab prevented the "close and reopen" route from ever completing.
