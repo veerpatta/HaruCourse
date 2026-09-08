@@ -157,6 +157,20 @@ Is it enough? Every line has a question beside it, and the ones with no question
 
 #### 3. Count the cost
 
+**See it first.** Made-up example. Costing the motion in a bus timetable app, and getting a total that was far too small.
+
+- **What I wrote down first:** A duration beside each animation. 400 for the screen change, 200 for the panel, 300 for the shimmer while stops load. They added up to 900 milliseconds, which sounded like nothing at all.
+- **What the total hid:** I had counted each animation once, because my list had each animation once. Walking one whole journey lookup, the screen change fires four times and the shimmer fires twice.
+- **The second thing I had missed:** The number I wanted was not how long the movement lasts. It was how long until the next tap is possible, and the panel refuses taps until it has settled.
+- **What the honest count came to:** Around 2.4 seconds of waiting inside one lookup, instead of 900 milliseconds. Same design, same list, a number nearly three times larger.
+- **The cost that is not time:** The results list re-sorts itself as new times arrive, under a thumb already on its way down. That one is not measured in milliseconds. It is measured in taps on the wrong bus.
+
+**The wrong turn:** The wrong turn is totalling the durations once each, straight off the list. It is tempting because the list is already written and the sum takes a minute, and it quietly reports the cost of reading your specification rather than the cost of using your product.
+
+**What it costs:** Counting by walking the task means doing the walk slowly, more than once, and ending up with an estimate you cannot defend to the decimal. You are trading a small tidy number for a larger vague one that happens to be true.
+
+**Still unknown:** Still unknown: whether 2.4 seconds across one lookup actually bothers anybody. You have a total and no evidence about where a person starts to feel it, because nobody has been watched using this.
+
 - Estimate the delay each animation adds before the next action is possible.
 - Add up the delay across one complete task.
 - Mark anything that moves an element the person is about to tap.
@@ -172,7 +186,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Delay:** The gap between finishing one action and being able to start the next. It is usually longer than the movement, because nothing accepts a tap until the movement has settled.
+- **Complete task:** One whole thing a person came to do, from the first tap to the moment they have what they wanted.
+- **Moving target:** Something that changes position while a finger is already travelling towards it.
 
 Stuck starting? Count only the time before the next action is possible, not the whole length of the movement.
 
@@ -197,7 +213,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Justification:** One sentence naming the question this movement answers. If you cannot write the sentence, the movement is not earning the time it takes.
+- **Free:** Costing nobody any waiting. A flourish on a screen where nothing is pending is free; the same flourish in front of a tap is not.
 
 Stuck starting? Start with the most expensive item on your cost list, not the ugliest one.
 
@@ -222,7 +239,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Rule:** A sentence you write down so the same decision gets made the same way in a room you are not in.
+- **Repair:** The one change you made after the Check questions, recorded next to the thing that prompted it.
 
 Stuck starting? Write the rule, then test it against the animation you cut. If the rule would have allowed it, tighten the rule.
 
@@ -488,6 +506,20 @@ Is it enough? Each state is separable with the colour taken out, and each acknow
 
 #### 3. Remove hover dependence
 
+**See it first.** Made-up example. Rescuing three hover-only things in a recipe app, and making the screen worse in the process.
+
+- **What the list came to:** Three things a pointer had to reveal. Delete and Duplicate on each recipe row. The full title in a small label when the title was cut short. A colour change telling you the row could be opened.
+- **My first repair:** Make them permanent. Every row now carried two visible buttons, so a list of twelve recipes carried twenty-four. Delete sat exactly where a thumb rests while scrolling.
+- **What I had actually done:** I had swapped hidden for permanent without asking what each thing was for. Three different jobs, one blunt answer, and a screen nobody could read.
+- **Taking them one at a time:** The cut-short title did not need a label at all; letting the title wrap to two lines removed the problem. Delete and Duplicate went behind one always-visible menu button per row. The colour hint was deleted, because on a phone the whole row is already tappable and nothing tells a finger to wait.
+- **What that left:** One visible control per row instead of two, one thing solved by layout rather than by a control, and one thing honestly removed.
+
+**The wrong turn:** The wrong turn is making the hidden thing permanent. It is tempting because it is a single edit and it plainly does work on touch, and it trades a control nobody could reach for a screen nobody can read, with the destructive action parked under a scrolling thumb.
+
+**What it costs:** A menu costs one extra tap on every single deletion, for the life of the product. It also hides the action from somebody scanning the screen for it, so the first time they will not find it.
+
+**Still unknown:** Still unknown: whether people recognise that menu button as a menu. On your own screen it is obvious, and nobody unfamiliar has yet been handed the phone without being told.
+
 - List everything currently revealed only on hover.
 - Give each a route that works on touch.
 - Delete any hover-only control that turns out to be unnecessary.
@@ -502,7 +534,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Hover-only:** Anything a person can reach or read only while a pointer rests on it. A finger has no resting state, so it is simply absent on a phone.
+- **Tooltip:** A small label that appears beside something when a pointer rests on it, usually to explain an icon or finish a title that was cut short.
+- **Route:** The way somebody on a touch screen still gets to the thing. Every hover-only item needs a route or an honest deletion.
 
 Stuck starting? Open your design on your phone and try every action you can name. Anything you cannot reach is hidden behind hover.
 
@@ -527,7 +561,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Keyboard pass:** Going through a whole screen using the Tab key alone and writing down each stop in the order it comes.
+- **Phone pass:** Opening the same design at phone size and trying to finish the task with one hand, writing down whatever you could not get to.
+- **Reach:** Whether a thumb can actually get to a control on a phone held in one hand, rather than whether the control fits on the screen.
 
 Stuck starting? Where nothing is built, print the screen and number the stops in the order a keyboard would reach them, then mark every row untested.
 
@@ -550,7 +586,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Verify:** To check something against the thing itself running, rather than against your drawing of it.
+- **Build:** A version that actually runs, on a real device, on a real connection, with real timing.
+- **Limit:** A plain sentence saying what your check does not establish, written beside the finding it belongs to.
 
 Stuck starting? Write two short lists: what you observed on your own device, and what you have not established at all.
 
@@ -793,7 +831,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Origin:** The place on screen a thing appears to come from. If you cannot point at it, there is no origin, and the thing should fade rather than travel.
+- **Duration:** How long the movement takes, written in milliseconds so that somebody can argue with the number.
+- **Exit:** How the thing leaves. Running the entry backwards is what tells a person it went back to where it came from.
 
 Stuck starting? Write the origin before the duration. A transition with no origin does not need a number, it needs a fade.
 
@@ -828,7 +868,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Reads as connected:** A person can see that the new thing came out of the old one, without being told so in words.
+- **Frames:** The start and end pictures of a movement, drawn side by side. Flicking between them is a real test when you have nothing to build with.
+- **Prototype:** A rough runnable version made in a free tool, built for no reason other than to feel the timing.
 
 Stuck starting? Draw the first and last frame of each transition, then flick between them at the speed you intend and at half that speed.
 
@@ -837,6 +879,20 @@ Is it enough? Each duration has a reason attached that is about distance and leg
 </details>
 
 #### 4. Reject one and sequence the rest
+
+**See it first.** Made-up example. Three transitions firing together when a note is deleted, and cutting the wrong one of the three.
+
+- **What was happening at once:** Deleting a note ran three movements in the same moment. The row collapsing shut, the rows below sliding up to close the gap, and an undo bar rising from the bottom edge. All of them around 250 milliseconds.
+- **Which one I removed:** The undo bar entrance. I chose it because it was the newest of the three and I was the least attached to it.
+- **What that cost:** The undo bar is the only thing saying the deletion can still be taken back. Removing its entrance did not remove the bar; it made the bar arrive with no announcement, in a corner nobody was looking at.
+- **The question I had skipped:** Which of the three carries the relationship. The row collapsing is what shows this note is the one that went. The rows sliding up say the same fact a second time, more slowly.
+- **What I did instead:** Dropped the slide of the rows below. Kept the row collapsing at 200 milliseconds. Let the undo bar rise 100 milliseconds after that one finishes, so there is one thing to follow, then another.
+
+**The wrong turn:** The wrong turn is choosing what to cut by how attached you are to it. It is tempting because you have to cut something and the newest thing feels cheapest to lose, and the transitions you have lived with longest are exactly the ones you have stopped seeing.
+
+**What it costs:** Sequencing adds the second movement onto the end of the first, so the deletion now takes longer from beginning to end than the version where everything happened together. You are paying time for legibility and there is no arrangement where it is free.
+
+**Still unknown:** Still unknown: whether a 100 millisecond gap reads as after rather than alongside. That judgement was made with your own eyes on your own machine, and a device dropping frames may close the gap.
 
 - Find a transition that explains nothing and remove it.
 - Check no two transitions run at once in the same view.
@@ -852,7 +908,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Sequence:** To run one movement after another instead of together, so there is one thing to follow at a time.
+- **Competing motion:** Two or more movements in the same view at the same moment, each asking for the attention only one of them can have.
+- **Cost:** What is lost by removing something, written down so a later reader can see it was a choice rather than an oversight.
 
 Stuck starting? Find the one that delays the most and explains the least. That is almost always the rejection.
 
@@ -877,7 +935,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Fade:** A change from see-through to solid in place, with no travel. It says this is different now and claims nothing about where it came from.
+- **Move-or-fade rule:** The sentence that settles, for any new change you meet later, whether the product travels it or simply fades it.
 
 Stuck starting? Test your rule against the transition you rejected. If the rule would have allowed it, the rule is too loose.
 
@@ -1152,7 +1211,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Full version:** The movement exactly as you designed it, for people who have not asked for less.
+- **Reduced version:** The same information carried with less travel. Usually something changing in place rather than journeying across the screen.
+- **Essential:** The movement is carrying information that nothing else on the screen carries. Essential things survive in a quieter form; they are never simply switched off.
 
 Stuck starting? Take the animation you would defend hardest and write what a person learns from it, in one sentence, before you design anything.
 
@@ -1161,6 +1222,20 @@ Is it enough? Every surviving animation has a reduced version that teaches the s
 </details>
 
 #### 3. Cut the risky patterns
+
+**See it first.** Made-up example. Sorting the risky motion on a garden shop home page by how big each piece was, and letting the two worst through.
+
+- **How I sorted them:** By size, because size is the thing you can see without thinking. The large header photograph drifting behind the text was plainly the big one, so out it went. Everything small stayed.
+- **The one I kept:** A small badge on the basket icon that pulsed gently, on and on, whether or not anything had changed. Tiny, so it looked harmless.
+- **What size was hiding:** It never stopped. A small movement that repeats forever asks for attention forever, and it sits in the same corner of every screen, so there is nowhere to look away to.
+- **The second thing size hid:** Each product row fading upwards as you scroll is a small movement. Forty rows of it is the whole screen moving, against the direction the person is already moving in.
+- **What went in the end:** The drift, the endless pulse and the rows that move on scroll. Under the setting the badge simply appears with a number on it, and the rows are already there when you arrive at them.
+
+**The wrong turn:** The wrong turn is sorting by the size of each element on its own. It is tempting because size needs no judgement at all, and it waves through the two patterns that actually cause trouble: the one that never ends, and the small one repeated forty times.
+
+**What it costs:** Rows that arrive without an entrance take the only signal you had that more of the list was loading. You now have to say that in words, and words take up space on a page you were trying to keep quiet.
+
+**Still unknown:** Still unknown: where the line sits. Nobody can tell you how many small repeated movements add up to one large one, and you cannot feel it yourself if the setting is not for you.
 
 - Identify anything moving a large area, repeating, or parallax.
 - Remove those entirely under the setting.
@@ -1176,7 +1251,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Large-area motion:** Movement filling much of what a person can see at once, so there is no still part of the screen to rest the eye on.
+- **Looping motion:** A movement that begins again the moment it ends, so the screen is never at rest.
+- **Scroll-triggered motion:** Something that starts moving because the person scrolled, rather than because they asked for it.
 
 Stuck starting? Go through your kept list once looking only for size, repetition and scroll-linked drift. Ignore everything else on this pass.
 
@@ -1200,7 +1277,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Walk:** Going through one whole task yourself, slowly, saying out loud what changes at each step.
+- **Lost relationship:** Something a movement used to explain, which nothing explains now that the movement has gone.
+- **Gentler change:** The quieter replacement you add instead of restoring the movement: a change of words, a change of colour, a mark that stays put.
 
 Stuck starting? Walk the task once without stopping and note where you lost track, then walk it again and write down why.
 
@@ -1224,7 +1303,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Establish:** To show something is true firmly enough that another person could rely on it.
+- **Motion sensitivity:** Dizziness, nausea or headache brought on by movement on a screen. It is the reason the setting exists, and it is not something you can check by having a look yourself.
 
 Stuck starting? Write one sentence saying plainly that testing the setting on yourself is not testing with people who rely on it.
 
@@ -1487,7 +1567,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Visible control:** A button, menu item or link that is on the screen already, without anybody having to do something to reveal it.
+- **Shortcut:** A second, faster route to something that already has a route. If it is the only way to reach the action, it is not a shortcut.
 
 Stuck starting? For each gesture, design the control somebody would use if they had never heard of the gesture. That control is the real route.
 
@@ -1523,7 +1604,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Discoverability:** Whether somebody can work out that an action exists without being told about it.
+- **Prompting:** Saying or doing anything that hints at the answer while somebody is trying. A glance at the right part of the screen counts, which is why you sit still and say nothing.
+- **Untested:** Written down when nobody actually tried it. It is a real result, and it is not the same as leaving the box empty.
 
 Stuck starting? Ask anyone to hand: a flatmate, a colleague, a family member. Say the goal only, then say nothing at all while they try. If nobody is free today, use the supplied results above as practice, write today’s date, and record that discoverability is untested.
 
@@ -1532,6 +1615,20 @@ Is it enough? Each attempt names what the person touched first. A rehearsal with
 </details>
 
 #### 4. Make destruction recoverable
+
+**See it first.** Made-up example. Writing undo for a swipe that removes a class, and putting the undo somewhere her thumb could not reach in time.
+
+- **What I specified first:** The row goes, and a message appears at the top of the screen saying “Removed”, with Undo beside it. It stays three seconds.
+- **Why the top felt right:** That is where messages sit on most of the pages I had been looking at. Three seconds felt like the natural length of a message.
+- **What a phone in one hand does to it:** She swiped with her thumb near the bottom of a tall screen. The undo is at the top, so she has to shuffle the phone up her hand to reach it, and by then it has gone.
+- **What the wording was hiding:** “Removed” does not say what was removed. On a shortlist of six similar classes she cannot tell from the message which one vanished, so she cannot tell whether she wants it back.
+- **What I wrote instead:** The message sits low, near where the swipe happened. It says “Sunrise Flow removed” with Undo beside it, and it stays eight seconds.
+
+**The wrong turn:** The wrong turn is treating undo as wording and forgetting it is a thing somebody has to physically get to. It is tempting because the sentence is the part you can write at a desk, and the reach is the part you only find out about holding a phone.
+
+**What it costs:** A message sitting low covers part of the list, and eight seconds keeps it in the way for longer than three did. The version that stayed out of the way was the version that expired while her hand was still moving.
+
+**Still unknown:** Still unknown: whether eight seconds is long enough for somebody reading slowly, or holding a child, or working out what just happened. Watching people swipe by accident would settle it, and nobody has.
 
 - For each destructive gesture, specify undo with a stated window.
 - Reserve confirmation for actions that cannot be undone.
@@ -1573,7 +1670,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **One-handed use:** Using the product with one thumb while the other hand is holding something. It rules out anything that needs two fingers at once.
+- **Repair:** The change a Check question asked you to make, written down with what it was before and what it is now.
 
 Stuck starting? Try every gesture with one hand while holding something in the other, then write what you could not manage.
 
@@ -1838,7 +1936,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Key row:** One line of the table covering one key in one situation. The same key often needs several rows, because it does different things in different places.
+- **Modifier key:** A key held down while another is pressed, such as shift or control. Shift and tab together move backwards.
+- **Wrap:** What the arrow keys do at the end of a set of things: either carry on round to the other end, or stop dead. Your table has to say which.
 
 Stuck starting? Write the tab row first for both components. The difference between those two rows is most of the lesson.
 
@@ -1847,6 +1947,20 @@ Is it enough? Every row says what happens, not what is allowed to happen, and th
 </details>
 
 #### 3. Specify focus movement
+
+**See it first.** Made-up example. Writing where focus goes for a filter panel, and naming a region instead of naming a control.
+
+- **What I wrote first:** “On open, focus moves to the panel. On close, focus returns to the list.” One sentence each, and I thought this step was finished.
+- **What a panel is to a keyboard:** Nothing. It is a box drawn round some controls. Unless something inside it is named, focus stays on the Filters button behind the panel, and her next key press acts on a screen she cannot see.
+- **What returning to the list did:** The list is sixty rows long. Focus landed at the top of it, so she came out of the panel above everything she had just filtered and had to travel down again.
+- **The one I nearly missed:** On a narrow screen the panel covers the whole page. Sending focus back to the Filters button put her outline above the top of the window, where she could not see it.
+- **What I wrote instead:** On open, focus goes to the date field, which is the first control in the panel. On close and on escape it returns to the Filters button, and the page scrolls that button into view before focus lands on it.
+
+**The wrong turn:** The wrong turn is naming a region. “The panel”, “the list”, “the page” all read like decisions on the page and leave exactly the hole an empty box would have left.
+
+**What it costs:** Naming one control ties the rule to the layout, so rearranging the panel means rewriting every rule that mentions a part of it. A rule loose enough never to need updating is a rule that never said anything.
+
+**Still unknown:** Still unknown: whether scrolling the button back into view is enough for somebody using a magnified screen, who may only ever see a small part of the page at once.
 
 - State where focus goes when the component opens.
 - State where focus returns when it closes or is cancelled.
@@ -1897,7 +2011,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Comparable product:** A real product using the same pattern, borrowed so you have something to press keys on. It stands in for the build you do not have yet.
+- **Untested:** Written against a row nobody has actually tried. It is a result, and it is not the same as an empty box.
 
 Stuck starting? Open a real product that uses the same pattern, or a free prototype, put the mouse down and walk your rows in order.
 
@@ -1921,7 +2036,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Defect:** A written difference between what you specified and what the thing actually does, in a form a developer can pick up and act on.
+- **Deliberate departure:** A place where you knowingly did something the pattern does not, written down with your reason so nobody reads it as a slip.
 
 Stuck starting? Copy each failed row into the defect list and add the expected behaviour beside what happened.
 
@@ -2164,7 +2280,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Destination:** The one named control focus lands on. “The panel” is a place; “the date field” is a destination.
+- **Cancel:** Leaving something without keeping the change, usually by pressing escape. It often needs a different destination from an ordinary close.
+- **Replaced content:** Content that changes underneath somebody while the screen around it stays put, such as a list refiltering or results reloading.
 
 Stuck starting? Write the open rule first. It is the easiest, and the other three are all arguments with it.
 
@@ -2218,7 +2336,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Unrequested movement:** Focus moving somewhere when the person did nothing to ask to go there.
+- **Justified move:** An unrequested move you decided to keep, written down with the reason it is worth interrupting somebody for.
 
 Stuck starting? Take one flow and press tab all the way through it, writing down every jump you did not cause.
 
@@ -2227,6 +2346,20 @@ Is it enough? Nothing in the list is unresolved: each move is removed or has a r
 </details>
 
 #### 4. Test the indicator
+
+**See it first.** Made-up example. Specifying the focus outline as one colour, then losing my own place twice while tabbing through.
+
+- **What I specified:** A two-pixel dark blue outline, everywhere. One sentence, one colour, and I thought the indicator was settled.
+- **Where it vanished:** The banner across the top of the page is that same dark blue. Tabbing on to the button sitting on it, the outline was drawn and there was nothing to see. Present and invisible.
+- **The second place:** Rows in the list already glow faintly when the mouse passes over them. That glow and my outline read as the same mark, so I could not tell where the keyboard was standing from where a mouse had been.
+- **What I wrote instead:** Two lines drawn together, one pale and one dark. Whatever surface it lands on, one of the two shows. Then a line each for the page, the card, the banner and the sticky bar.
+- **What the walk found last:** At the top of a scrolling panel the outline was cut off by the panel edge, because nothing had left room for it. The rule gained a small gap around anything focusable near an edge.
+
+**The wrong turn:** The wrong turn is treating the outline as a colour choice, set once in one place. It is tempting because that is how every other colour in the design behaves.
+
+**What it costs:** A double outline is heavier and louder than the quiet single line the page was designed around. It is the version that survives every surface, and delicacy that disappears is not delicacy.
+
+**Still unknown:** Still unknown: how any of it behaves when somebody turns on their own high-contrast setting or magnifies the page. Neither has been tried here.
 
 - Tab through each screen and watch only the focus indicator.
 - Note any step where you lose track of your position.
@@ -2242,7 +2375,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Focus indicator:** The visible mark showing where the keyboard is standing, usually an outline drawn round the control.
+- **Surface:** Any background a control can sit on: the page, a card, a dark banner, a coloured bar. The outline has to be checked against each one.
+- **Contrast:** How far apart two colours are in lightness. An outline as light as the thing behind it cannot be seen, however bright the colour looks on its own.
 
 Stuck starting? Tab through a free prototype or a comparable real page slowly, watching only the outline and nothing else.
 
@@ -2266,7 +2401,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Established:** Something you watched happen yourself. What you expect, or what ought to be true, is not established.
+- **Screen reader:** Software that reads the screen aloud, used by people who cannot see it. Nothing here counts as tried until somebody who uses one every day has tried it.
 
 Stuck starting? Write the seen list first, then move anything you assumed into the second list.
 
@@ -2509,7 +2645,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Drag handle:** The small mark on a row saying pick me up here, and the only place a drag is allowed to start.
+- **Held state:** How the row looks while it is being carried: lifted, shadowed, or left as a faint gap in the place it came from.
 
 Stuck starting? Draw the three moments as three separate sketches: before the pick-up, during, and the instant before release.
 
@@ -2544,7 +2681,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Announcement:** The short sentence read aloud when something changes, written by you rather than left to whatever the browser decides to say.
+- **Cancel:** Abandoning a move part-way and putting the row back where it started, usually by pressing escape.
+- **Screen reader:** Software that reads the screen aloud for people who cannot see it. It can only say what the design has given it words for.
 
 Stuck starting? Walk the task on paper with your fingers off the mouse: what would you press first, and what would you need to be told?
 
@@ -2553,6 +2692,21 @@ Is it enough? Any arrangement you could reach by dragging can be reached by the 
 </details>
 
 #### 4. Design recovery and touch behaviour
+
+**See it first.** Made-up example. Writing the rule that tells a drag from a scroll on a phone, and choosing a long press that broke ordinary scrolling.
+
+- **What I wrote first:** Press and hold anywhere on a row for a second to pick it up. Nothing new drawn on the row, and the whole touch rule fitted on one line.
+- **Why it was tempting:** A long press is something phones already do elsewhere, so it felt free. It also let the row stay exactly as clean as it was in the sketch.
+- **What it did to scrolling:** A thumb rests on a list for a moment before it flicks. That rest is a hold, so the list kept picking rows up when she only meant to go past them.
+- **Who it failed hardest:** Somebody whose hand shakes cannot flick quickly, so most of her scrolls look like holds. The rule turned her ordinary scrolling into accidental rearranging.
+- **What I wrote instead:** A drag can only begin on the grip. A press anywhere else on the row scrolls, every time, with no timing involved. Then I walked the list top to bottom to check plain scrolling still worked.
+- **What the message ended up saying:** “Item moved. Undo” became “Sunrise Flow moved to third. Undo”, staying ten seconds, because she has to know which row moved and where before she can decide anything.
+
+**The wrong turn:** The wrong turn is buying the drag with time instead of with space. A timed gesture costs no pixels, so it looks free, and it is paid for by every scroll that now has to be measured before it is believed.
+
+**What it costs:** The grip puts a mark on every row and makes the drag slower to start, because her thumb has to find one small place. Scrolling stops being a gamble, and scrolling is the thing she does far more often.
+
+**Still unknown:** Still unknown: whether the grip is big enough for a thumb on a small screen, and what a held row does when it reaches the bottom edge and the list has to scroll underneath it.
 
 - Specify undo with a window and write the message.
 - Decide how drag and scroll are distinguished on touch.
@@ -2593,7 +2747,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Equivalent route:** The other way of finishing the same task, for somebody who cannot drag. It has to be able to reach every arrangement the drag reaches.
+- **Untested:** Written against anything you have not watched somebody actually do. It is a result, and it is not a blank.
 
 Stuck starting? Name three people who cannot drag: one with a tremor, one on a cracked screen, one using only a keyboard. Write what each of them does instead.
 
@@ -2840,7 +2995,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Fixed height:** The vertical space your unmoving elements take up together, before a single row of content appears.
+- **Scrolling away:** An element leaving the screen with the rest of the page, usually returning when the person scrolls back up.
+- **Filter summary:** A short line saying what the list is currently narrowed down to, such as “Tuesdays, beginners”.
 
 Stuck starting? Take the tallest element first and try to write its use during scrolling in one sentence.
 
@@ -2886,6 +3043,20 @@ Is it enough? You can say how many items exist and how a person reaches the end.
 
 #### 4. Specify return and insertion
 
+**See it first.** Made-up example. Writing “she comes back to the same place” as if it were a specification, then finding that the same place had moved.
+
+- **What I wrote:** One line: coming back from a class detail returns her to the same place in the list. It read like a finished decision, so I moved on.
+- **The word I had not settled:** Same place can mean the same distance down the page, or the row she tapped. A page remembers distance. She remembers the row.
+- **Walking it on paper:** I slid my paper window down the drawing, added two new classes at the top the way a live list would, and came back. Same distance down, four rows adrift.
+- **What I changed:** She returns to the row she tapped, lightly marked so she can see where she is. Her filters and anything she typed come back with it, each one named separately.
+- **The rule that had to follow:** New rows may only appear above the first row when she is already at the top. Otherwise they wait behind a small “3 new classes” bar she can tap.
+
+**The wrong turn:** The wrong turn is writing a restore in one clause and believing it is specified. It reads complete because you know which meaning you had in mind, and the two meanings give different answers.
+
+**What it costs:** Holding new rows back means she can sit reading a list that is quietly out of date, and may tap a class that has just filled. You are choosing a page that stays still over a page that stays current.
+
+**Still unknown:** Still unknown: how long an absence should be before restoring her old position stops being kind. Four hours, a day, a week. Nothing here settles that.
+
 - Specify that returning from a detail view restores position and filters.
 - State where new content is inserted and that nothing moves under a finger.
 - Reserve space for content that is loading.
@@ -2900,7 +3071,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Scroll position:** How far down a list a person had travelled before she left it.
+- **Insertion rule:** A sentence saying where new or still-arriving content is allowed to appear, so nothing lands above what somebody is reading.
+- **Reserved space:** A blank area held open at the right size for something still loading, so the page does not jump when it arrives.
 
 Stuck starting? Walk the loop yourself: list, detail, back. Write down everything you lost on the way back.
 
@@ -2925,7 +3098,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Comparable page:** Somebody else’s long list that works like yours, used on a real phone when your own design only exists on paper.
+- **Repair:** The one change you make after the Check questions, written down together with the reason for it.
 
 Stuck starting? Open any long list on your own phone and count how many rows you can see without scrolling.
 
@@ -3204,7 +3378,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Leaving mid-edit:** A person moving away with a change half typed: a notification tapped, a tab closed, a phone going to sleep.
+- **Draft:** A half-finished change held aside rather than stored over the old value, and offered back to her when she returns.
+- **Return view:** What she meets when she comes back: the old value, her draft, or a line telling her which of the two she is looking at.
 
 Stuck starting? Ask what she would call the worst outcome, then rule that one out first.
 
@@ -3213,6 +3389,20 @@ Is it enough? Your reason would still hold up if someone preferred a different c
 </details>
 
 #### 4. Design failure
+
+**See it first.** Made-up example. Writing a failure message that was honest about the failure and silent about her words.
+
+- **What I wrote first:** A small red line saying “Could not save”, with a Retry link beside it. Short, honest, and I was pleased with it.
+- **What she cannot tell from it:** Whether her words still exist anywhere. The message reports the failure and says nothing at all about the text she just typed.
+- **What I watch myself do:** When another product tells me a save failed, I select my text and paste it somewhere safe before I touch anything else. That is a person doing the product’s job for it.
+- **The wording I moved to:** “Not saved yet. Your note is kept on this device. Retry.” The middle sentence is the one carrying the weight.
+- **What retry had to become:** Retry sends whatever is in the field now, not the version that failed. Otherwise the second attempt quietly undoes everything she typed while waiting.
+
+**The wrong turn:** The wrong turn is writing a message that is accurate about what went wrong and quiet about what it means for her. It reads honest, and it leaves her to assume the worst.
+
+**What it costs:** Keeping her text on the device means one version of the note can sit on that phone and not anywhere else. She may open the same booking on a laptop and meet older words. You are trading agreement between devices for losing nothing.
+
+**Still unknown:** Still unknown: what should happen when the retry fails a second and a third time. Nothing decided here says when the product should stop trying and hand the problem back to her.
 
 - Specify that text is retained locally when a save fails.
 - Write the message: what happened and what to do.
@@ -3254,7 +3444,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Greyscale check:** Looking at your drawing with every colour taken out, to see whether the states still tell themselves apart.
+- **Build:** A working version of the product that somebody can actually use, rather than a drawing of one.
+- **Unverified:** Something you wrote down but could not check, usually because it needs timing or a real failure that paper cannot show you.
 
 Stuck starting? Look at the three states with the colour removed and ask which one you are in.
 
@@ -3496,7 +3688,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Role:** The job a value does, such as small movement or a panel arriving, rather than the screen you first happened to use it on.
+- **Near-duplicate:** Two values so close that nobody could tell them apart, such as 200 and 220 milliseconds. One of the two goes.
+- **Entering and exiting:** Movement as something arrives on the screen, and movement as it leaves. The two usually want different easings.
 
 Stuck starting? Sort your values into no movement, small movement and larger movement. Those are usually the three roles.
 
@@ -3505,6 +3699,20 @@ Is it enough? Each name would still make sense if every screen in your product w
 </details>
 
 #### 3. Write the rules
+
+**See it first.** Made-up example. Writing five motion rules, then finding that four of them could not settle a single disagreement.
+
+- **What I wrote:** “Motion should feel calm and purposeful.” Four more in the same voice. The sheet looked considered and I was fond of it.
+- **The test I put them through:** I imagined somebody proposing a badge that spins on the confirmation screen. Would any of my five sentences stop it? They would say their badge was calm and purposeful too.
+- **What a rule has to contain:** Something you can point at and count. A part of the screen, a number, or a thing named as never moving.
+- **What I rewrote them as:** “No row above the line somebody is reading may shift.” And “at most one thing animates in a view at a time; a second waits its turn.”
+- **What happened to the badge:** The proposal now fails on the counting rule, and the conversation is about the rule rather than about taste. Nobody has to win an argument.
+
+**The wrong turn:** The wrong turn is writing rules that describe how you want the product to feel. They are pleasant to read, and every proposal passes them, including the ones you wrote them to prevent.
+
+**What it costs:** A countable rule will one day forbid something that would have been perfectly fine, and you will have to break your own rule in the open and write down why. A vague rule never puts you in that position.
+
+**Still unknown:** Still unknown: whether one thing at a time holds for a screen where several panels arrive together. That case has not come up yet, and it may need an exception with a reason attached.
 
 - Write the rules as sentences a new person could follow.
 - Include what must never move and what never animates.
@@ -3582,7 +3790,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Component:** One reusable part of a product, such as a card, a menu or a button, specified once and used in many places.
+- **Respecify:** Writing a component’s motion out again using only the names on your sheet, instead of the numbers you first reached for.
+- **Exception:** A value you needed that the sheet does not cover, written down with its reason rather than quietly kept.
 
 Stuck starting? Take the component you specified in most detail and respecify it using only the names on your sheet.
 
@@ -3882,7 +4092,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Harm:** Something that cost the person: lost work, an action she had to repeat, money, or time she does not get back.
+- **Finding:** One thing you saw happen, written as the action itself rather than as your explanation of it.
+- **Preference:** Something you would rather were different, which cost the person nothing at all.
 
 Stuck starting? Take each finding and try to finish the sentence “this cost her …”. If the sentence will not finish, it is not a harm.
 
@@ -3891,6 +4103,20 @@ Is it enough? Everything that cost someone a repeated action or lost work sits a
 </details>
 
 #### 4. Predict and repair
+
+**See it first.** Made-up example. Predicting that a changed button would stop the second taps, then changing three things at once and having nothing left to read.
+
+- **The prediction I wrote:** “Nobody taps book a second time.” Written down before I touched the drawing, which was the one part I did in the right order.
+- **What I then changed:** The button says Booking and stops accepting taps, and I moved it up the screen, and I shortened the wait before the confirmation. Three changes in one sitting.
+- **The re-test I could actually run:** Nobody was free that week, so I walked both tasks myself, twice, on an old phone I had never designed on. That is a rehearsal, and I wrote it down as one.
+- **What the rehearsal could not tell me:** Nothing was tapped twice, but I already knew where the button was. And had it gone badly, I could not have said which of my three changes was at fault.
+- **What I recorded instead:** The prediction, the one change I kept, the two I set aside for the next round, and a plain line saying no participant has seen this version.
+
+**The wrong turn:** The wrong turn is making every improvement you can see while the file is open in front of you. Each one is defensible on its own, and together they make the result unreadable.
+
+**What it costs:** One change at a time means the two faults you already know about stay in the product until the next round, where somebody may meet them. You are buying a readable result with time.
+
+**Still unknown:** Still unknown: whether the changed button helps anybody who is not you. Walking your own design cannot answer that, and the answer has to be written down as missing rather than assumed.
 
 - Write what the repair should change before making it.
 - Change one thing only.
@@ -3932,7 +4158,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Assistive technology:** Tools people use to reach a product, such as software that speaks the screen aloud, or a switch pressed instead of a tap.
+- **Screen reader:** Software that reads a screen aloud in order, so somebody can use a product without seeing it.
+- **Untested claim:** A line in your specification written as though it were settled, which you never watched anybody meet.
 
 Stuck starting? Go through your key tables and focus rules marking each row tested or untested. The untested rows are the list.
 
