@@ -104,7 +104,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Observed:** You watched it happen in a session. The strongest mark you can put beside a line.
+- **Reported:** The person said it. That is what they believe or remember, which is not always what they did.
+- **Assumed:** You believe it and have no session behind it. Marking it as such is what keeps the model honest.
 
 Stuck starting? Open your Module 2 notes before writing anything, and take the beliefs from there.
 
@@ -113,6 +115,20 @@ Is it enough? Every line is marked observed, reported or assumed, and at least o
 </details>
 
 #### 3. Write your design's model
+
+**See it first.** Made-up example. Writing down what a booking screen claims, and writing down my own intentions instead.
+
+- **What I wrote first:** “The screen offers a class, shows the price, and lets you reserve a place.” True to what I meant, and not a description of anything on the screen.
+- **Reading the labels aloud:** The button says Reserve. A line above it says eighteen pounds. Nothing joins the two, and nothing anywhere says when the money moves.
+- **What the design therefore claims:** That the price is a fact about the class, and that Reserve is something you do to a class. Both are readable straight off the screen, and neither is what I had in mind.
+- **The claim I did not intend:** “Places left: 3” sits under the price in small grey text, so the design says availability is a detail. It is the first thing several people came to find.
+- **What that gave me:** Two claims I can hold against the reader’s model in the next step. Written as intentions, both would have agreed with her perfectly.
+
+**The wrong turn:** The wrong turn is describing what you meant. You cannot unsee your own reasons, and a screen described by its author never contradicts anybody.
+
+**What it costs:** Reading your own labels as promises is slow and uncomfortable, and it hands you a list of claims you must now either defend or change. Some of them you were fond of.
+
+**Still unknown:** Still unknown: whether a reader notices the small grey line at all. What the design claims and what is read are two different questions.
 
 - Write what your design actually implies, using its real labels and structure. Do not soften it; write what the interface says, not what you meant.
 
@@ -125,7 +141,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Label:** The words on a control or a heading. To a reader they are a promise about what the thing does.
+- **Structure:** What sits inside what, and in what order. Structure makes claims too, whether or not you meant it to.
 
 Stuck starting? Read your screen aloud as if the labels were promises, and write down what they promise.
 
@@ -159,7 +176,8 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Contradiction:** One place where what the reader believes and what the design does disagree.
+- **Consequence:** What the reader does because of the gap. Not how they feel about it.
 
 Stuck starting? Put the two lists side by side and look for the first line where they disagree.
 
@@ -423,7 +441,8 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Demand:** One thing your flow asks the reader to carry from the screen where it appears to the screen where it is needed.
+- **Flow:** The screens in the order a reader actually meets them while doing one task.
 
 Stuck starting? Lay your screens in order and draw an arrow wherever information is needed later than it appears.
 
@@ -432,6 +451,20 @@ Is it enough? Each demand names two screens, not one.
 </details>
 
 #### 3. Add the interruption
+
+**See it first.** Made-up example. Running the interruption test on a booking flow, and passing every single demand.
+
+- **How I ran it first:** I took each demand and asked whether I would still remember it ten minutes later. All four survived comfortably.
+- **Why they survived:** I built the flow. The start time is not something I am holding in mind, it is something I know. The test measured my familiarity with my own work.
+- **What I did instead:** For each demand I wrote out exactly what a reader would have to reproduce, word for word, ten minutes later, with nothing in front of her.
+- **What failed:** The materials list failed outright: a mat, loose clothing and a bottle is three items with no cue. The start time survived as “about eleven”, which is close enough to be wrong.
+- **The one that surprised me:** The studio address. It appears on the details screen and never again. Ten minutes is not its problem; three days is.
+
+**The wrong turn:** The wrong turn is running the test on yourself as the author. You will pass every time, because you are not remembering the flow, you are the person who decided it.
+
+**What it costs:** Writing out what must be reproduced word for word turns a four-line audit into most of a page, and it is slower than it looks. It is the only version that catches the partial failures.
+
+**Still unknown:** Still unknown: whether “about eleven” is good enough in practice, or whether people go back and check anyway. That needs watching rather than reasoning.
 
 - For each demand, ask what happens if the reader is interrupted for ten minutes between the two screens. Mark the demands that do not survive it.
 
@@ -478,7 +511,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Conversion:** Changing a demand so the answer is shown at the moment it is needed, instead of remembered.
+- **Cost:** What the conversion takes from the screen: space, another line, one more thing to read past.
 
 Stuck starting? Take the demands that failed the interruption test first.
 
@@ -501,7 +535,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Unremovable demand:** Something only the reader knows, so no screen can supply it. An email address or a password.
+- **Softening:** Reducing the cost of a demand you cannot remove, such as showing a masked hint of the address they used.
 
 Stuck starting? Look for something only the reader knows, such as a password or a personal preference.
 
@@ -755,7 +790,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Control:** Anything a reader can act on: a button, a link in a sentence, a card, the back arrow.
+- **Inventory:** The list of every control with its three columns either filled in or deliberately left empty.
+- **Blank:** A column with nothing in it. It is a finding about the screen, not an unfinished cell in your table.
 
 Stuck starting? Print the screen and write three short columns beside each control.
 
@@ -764,6 +801,20 @@ Is it enough? At least one cell is blank and stayed blank.
 </details>
 
 #### 3. Test on touch
+
+**See it first.** Made-up example. Checking a booking screen on touch, with a mouse still in my hand.
+
+- **What I did:** Dragged the browser narrow until the layout stacked, looked at it, and marked the screen as fine on touch.
+- **What that actually tested:** The layout at a narrow width. My pointer was still on the page, so every pointer-dependent cue was still appearing for me.
+- **The one that caught me:** The class cards lift slightly when the pointer is over them. That lift is the only thing saying they can be tapped, and on a phone it never happens.
+- **What I did instead:** Opened the same page on a phone, sat on my hands, and asked what tells me this is tappable before I touch anything. For the cards: nothing.
+- **What went in the column:** “Cards — signalled by the hover lift only — on touch nothing remains.” A blank with a note beside it is the finding.
+
+**The wrong turn:** The wrong turn is treating narrow as touch. Width is the easy thing to change, and hover is the thing that disappears, so the test that matters is the one you cannot run with a pointer attached.
+
+**What it costs:** Actually opening it on a phone means getting work in progress onto a phone, which is fiddly and sometimes not possible. Reading the printout and asking what the pointer was doing is second best.
+
+**Still unknown:** Still unknown: whether readers tap the cards anyway because cards elsewhere are tappable. Convention may carry it, and it is not something you can count on.
 
 - Check every signifier that depends on hover or a cursor change. Mark each as unavailable on touch, and note what remains for a reader on a phone.
 
@@ -809,7 +860,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Repair:** The smallest change that restores what was missing, made without adding a new element to the screen where you can.
+- **Convention:** A signal readers already know from everywhere else, such as an underline meaning link. Using one costs the reader nothing to learn.
 
 Stuck starting? Pick the control whose signifier column was thinnest, then the one whose feedback column was blank.
 
@@ -832,7 +884,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Tidying:** Taking visual detail away because the screen looks busy. It is the usual way a signal gets lost.
+- **Decoration:** A visual detail carrying no meaning. Anything doing real work looks like decoration right up to the moment somebody needs it.
 
 Stuck starting? Think about what you took away because the screen looked busy.
 
@@ -1084,7 +1137,8 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Failure:** Any place the reader did not get what she intended, including a hesitation or a wrong turn, not only an outright error.
+- **Unclassified:** Kept as its own answer when you cannot tell what the person intended. It names a question for the next session.
 
 Stuck starting? Take each failure and ask what the person was trying to do at that moment.
 
@@ -1126,6 +1180,20 @@ Is it enough? No rewritten line contains a judgement about the person.
 
 #### 4. Design prevention and recovery
 
+**See it first.** Made-up example. Designing the recovery for one slip, and writing one that only works during office hours.
+
+- **The slip:** She meant to book the Sunday class and tapped the Saturday one, sitting one row above it.
+- **My prevention:** More space between rows, and the day in bold on every row. Sensible, and it makes the wrong tap less likely rather than impossible.
+- **My recovery, first version:** “If you booked the wrong class, email the studio and we will move you.” Written down in the box, it looked like a recovery.
+- **What is wrong with it:** It costs her a message, a wait, and the worry that eighteen pounds has gone. The design tripped her and she does the work of getting up.
+- **What I designed instead:** A Change class link on the confirmation screen, live for as long as the studio can still move somebody, and a plain line saying when that closes.
+
+**The wrong turn:** The wrong turn is counting a support route as a recovery. It exists, it is honest, and it moves the cost of your design’s failure onto the person who tripped over it.
+
+**What it costs:** A change the reader can make herself needs a rule about when it closes and a screen that states it. That is real product work, not a sentence of help text.
+
+**Still unknown:** Still unknown: how long the studio can actually move someone. Until somebody tells you, the recovery has a hole in it, and the honest thing is to say so on the screen.
+
 - For one slip and one mistake, design a prevention and a recovery each. Prefer constraints and defaults over warnings, and undo over confirmation. State why for each choice.
 
 **You should end up with:** A prevention and a recovery for one slip and one mistake.
@@ -1163,7 +1231,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Unresolved:** A failure you could neither classify nor design for. Writing it down is what stops it quietly disappearing.
+- **Repair:** The change a Check question asked you to make, recorded so you can see what the checking actually altered.
 
 Stuck starting? Look for the failure where you still cannot tell what she was trying to do.
 
@@ -1399,7 +1468,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Fitts’s law:** The regularity that a target is quicker to hit when it is bigger and nearer to where the hand already is.
+- **Hick’s law:** The regularity that choosing takes longer as the number of comparable options grows.
+- **Jakob’s law:** The regularity that people expect your product to work like the other products they already use.
 
 Stuck starting? Choose the decision you have changed your mind about more than once.
 
@@ -1447,7 +1518,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Counterexample:** One specific situation in your own work where following the law would make the design worse. A single real case is worth more than a general doubt.
+- **Comparable options:** Options a reader would genuinely weigh against each other. A law about choosing among options says nothing about options that are not interchangeable.
 
 Stuck starting? For each law, ask what it assumes and then find the place in your product where that assumption is false.
 
@@ -1456,6 +1528,20 @@ Is it enough? Each counterexample names a real element of your own work.
 </details>
 
 #### 4. Convert to testable claims
+
+**See it first.** Made-up example. Turning a Fitts application into a claim I could check, and writing a check that could never come back no.
+
+- **The application:** Fitts suggests a target is quicker to hit when it is bigger and closer to the hand, so I moved the Book button to the bottom of the phone screen and made it wider.
+- **My first rewrite:** “This predicts the button is easier to hit, which I could check by asking readers whether it feels easier.” It looked like a testable claim because it named a check.
+- **Why it was not one:** Nobody tells you a large button at the bottom of the screen feels hard to reach. There is no answer that would send me back to the design, so the check has one possible result.
+- **The version that could fail:** It predicts that people reaching for Book stop hitting the Change date link beside it. I could watch five people book on their own phone and count the mis-taps.
+- **What that exposed:** The risk was never the size of the button. It was the neighbour I had put under the same thumb, and my first claim pointed away from it.
+
+**The wrong turn:** The tempting error is writing the check as a question about how the design feels. It is quick, it involves real people so it looks like research, and everyone agrees with you.
+
+**What it costs:** Watching five people book on their own phones costs an afternoon and access you may not have, and the claim it produces is narrow: it covers one button and one mistake. A feelings question could go out this evening and cover everything vaguely.
+
+**Still unknown:** Still unknown: whether mis-taps have anything to do with why people abandon the booking. Someone can hit the button first time and still leave for a reason this claim does not reach.
 
 - Rewrite each application as: the principle suggests X, which predicts readers will do Y, which I could check by Z. Make each Z something you could actually do.
 
@@ -1468,7 +1554,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Testable claim:** An application rewritten so that a real outcome could show it was wrong.
+- **Prediction:** What you expect readers to do if the principle holds here. It has to allow for the possibility that they do not.
+- **Observable:** Something you could watch or count, such as a tap, a wrong turn, or a step somebody skips, rather than an opinion they report.
 
 Stuck starting? Finish “this predicts readers will …, which I could check by …”.
 
@@ -1490,7 +1578,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Override:** Deciding not to follow a principle, with the reason written down. It is different from forgetting the principle was there.
+- **Resolution:** Your decision plus the reasoning behind it: which principle you followed, which you set aside, and what made this case tip that way.
 
 Stuck starting? Say which principle you overrode and why the other mattered more here.
 
@@ -1715,7 +1804,8 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Request:** What somebody asked for, usually with a solution already inside it. The solution is worth keeping, because it shows you what they pictured.
+- **Verbatim:** The exact words somebody used, kept without tidying. Tidying quietly changes what was meant.
 
 Stuck starting? Look through your session notes and the brief before inventing any.
 
@@ -1766,7 +1856,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **So-that clause:** The last part of the statement, naming what changes for the person. Without it you have a feature with somebody’s name attached.
+- **Outcome:** What is different for the person once the need is met. Several different designs could achieve the same outcome, which is the point of naming it.
+- **Solution-free:** Written with no page, button, email or feature in it, so that more than one response could satisfy it.
 
 Stuck starting? Write the who first, then what they need, then force yourself to finish “so that…”.
 
@@ -1775,6 +1867,20 @@ Is it enough? No need statement contains a page, a button, an email or a feature
 </details>
 
 #### 4. Mark the evidence
+
+**See it first.** Made-up example. Marking the evidence behind five needs, and finding that two of my sources were my own memory of a conversation.
+
+- **My first pass:** Four needs marked with a session number and one marked assumption. The column looked strong and I nearly moved on.
+- **What one mark actually was:** Beside the materials need I had written “session 2”. Session 2 was where the studio owner said attendees turn up unprepared. That is her account of other people, not anything an attendee told me.
+- **The re-mark:** It became an assumption, with the source written beside it as the owner’s observation. Her knowledge is still on the page; it is just no longer standing in for evidence about behaviour.
+- **Choosing the two riskiest:** Not the two with the least evidence. The two where being wrong changes what gets built. If people do not read anything before the class, the materials list is in the wrong place entirely.
+- **The consequence I wrote:** “If this is wrong, the list moves off the booking page and onto the morning of the class, and most of what I have planned changes.” That sentence is what makes the mark worth having.
+
+**The wrong turn:** The tempting error is writing a session number beside a need without checking who said it and whether they were speaking about themselves. A source that names a session looks evidenced, and second-hand impressions pass straight through.
+
+**What it costs:** Marking honestly can leave one line in the evidenced column and four in the assumption column, and that page is uncomfortable to show anyone. It also makes the argument for building thinner than it looked yesterday.
+
+**Still unknown:** Still unknown: whether the owner is right. She may be describing exactly what happens. The mark records that nobody has checked, not that she is wrong.
 
 - For each need, record the evidence source or mark it as an assumption. For the two most consequential assumptions, write the smallest question that would test them.
 
@@ -1810,7 +1916,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Primary user:** The person the design is mainly for. Naming them makes it obvious that other people are affected as well.
+- **Role:** Who somebody is in relation to the service, such as the person who runs the class or answers the phone. Naming the role keeps their need specific.
 
 Stuck starting? Ask who else touches this service and what the design costs them.
 
@@ -2046,7 +2153,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Baseline:** What people already do about this problem today, including doing nothing. It is the thing any response has to beat.
+- **Workaround:** The way somebody copes now without your design, such as asking a friend or borrowing at the door. Workarounds are usually fast and already trusted.
 
 Stuck starting? Ask what someone did the last time they had this problem, and write that.
 
@@ -2055,6 +2163,20 @@ Is it enough? The baseline includes at least one thing that already works reason
 </details>
 
 #### 3. Write the proposition
+
+**See it first.** Made-up example. Writing the proposition for the sketchbook problem, and describing the feature instead of the change.
+
+- **My first draft:** “For attendees. A materials list on the booking page. Better than not having one.” Three lines, and every one of them was about the thing I wanted to build.
+- **Who it was really for:** “Attendees” includes the regular who owns everything already and knows what the room has. The person with this problem is someone booking a first class in a craft she has not tried.
+- **Rewriting what changes:** My line described the page. The change for her is that she finds out on the evening she books, while the shops are still open, rather than at the door on the day.
+- **Why this rather than the alternatives:** Texting a friend works well and is faster than anything I could build. A first-timer in an unfamiliar craft has nobody to text. That absence is the whole reason the response exists.
+- **What narrowed:** The proposition now covers first-timers in unfamiliar classes. Regulars gain very little, and I stopped writing sentences that implied they did.
+
+**The wrong turn:** The tempting error is writing the what-changes line as a description of the feature. It reads like a benefit, it takes ten seconds, and nobody can argue with it because it says nothing about a person.
+
+**What it costs:** A proposition for first-timers in unfamiliar classes is small, and somebody will ask whether that is worth building anything for. The wide version sounded like it served everybody and could not be checked against anybody.
+
+**Still unknown:** Still unknown: how many of the studio’s bookings are first classes in an unfamiliar craft. That is a question about numbers, and the proposition should not answer it by implying the group is large.
 
 - State who it is for, what changes, and why this response rather than the alternatives. Compare against the baseline explicitly.
 
@@ -2069,7 +2191,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Value proposition:** A short statement of who a response is for, what changes for them, and why this response rather than what they do now.
+- **Alternative:** Another response that could meet the same need, including a much cheaper one and doing nothing at all.
+- **Comparison:** Setting your response beside the baseline and the alternatives. Saying it is better is an assertion; saying better than what, and in what way, is a comparison.
 
 Stuck starting? Write the comparison as “compared with texting a friend, this…”.
 
@@ -2362,7 +2486,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Smallest build:** The cheapest thing you could make that would change your mind about one assumption. It is not the first version of the product.
+- **Prototype:** Any stand-in made to answer a question, including paper, a printed card, or a conversation held in a fixed order.
+- **Manual process behind a form:** A test where people fill something in and a person, rather than software, does the work behind it. It tells you whether the thing is wanted before anyone builds it.
 
 Stuck starting? Ask what the cheapest possible thing is that would change your mind about the riskiest assumption.
 
@@ -2406,6 +2532,20 @@ Is it enough? You could not argue past any of the three bands after the fact.
 
 #### 4. Name the boundary
 
+**See it first.** Made-up example. Writing what the card test cannot tell me, and finding that my boundary list was a list of excuses.
+
+- **My first boundary list:** “Small numbers, one studio, two weeks.” All true, and all of it about size. It would fit under any small build ever made.
+- **The test I applied instead:** Imagine the result is good. What would somebody read into it that this build does not support? They would read “people arrived prepared” as “our messages work”.
+- **Why that reading is wrong:** The card was handed over in person, at the moment of booking, by someone the reader was already talking to. Nothing here was sent, so nothing here says whether anything sent gets read.
+- **What went on the list instead:** Whether a message received later is read at all. Whether preparation holds once being handed something stops feeling novel. Whether any of this survives a class where the materials are expensive.
+- **Where each one belongs:** The receiving question is the next build. The expensive-materials question goes back to the need statements, because it may be a different need wearing the same words.
+
+**The wrong turn:** The tempting error is filling the boundary with caveats about sample size. They sound careful, they are true of every small build, and because they rule nothing out in particular they let a good result be read as general support.
+
+**What it costs:** A specific boundary makes the build look as though it answers very little, and somebody reading the record may ask why you bothered. It is the only thing that stops a good result being spent on a claim it cannot carry.
+
+**Still unknown:** Still unknown: whether you have thought of the conclusion somebody else will draw. You can only rule out the readings you imagined, and a second reader usually finds one more.
+
 - Write what this build cannot tell you, and map each unanswerable question to the module that addresses it. Include anything about demand, frequency or scale.
 
 **You should end up with:** What the build cannot tell you, mapped to where those questions belong.
@@ -2418,7 +2558,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Boundary:** The edge of what this build can tell you. Outside it, even a very good result is not evidence.
+- **Generalising:** Treating a result from one small situation as though it held everywhere. It is the commonest way a small build gets misused later.
+- **Consent:** The person knows what is about to happen and agrees to it before you observe them. Whoever runs the place can give you permission to be there, and cannot agree on their behalf.
 
 Stuck starting? List what someone might wrongly conclude from a good result.
 
@@ -2439,7 +2581,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Ready for review:** The state you put the work into when you want your creator to read it. Nothing here is marked; he reads what you wrote and replies.
+- **Repair:** The small change a Check question asks you to make, together with the note saying what you changed and why.
 
 Stuck starting? Read the stopping rule once more and check you would still accept it if the result were bad.
 

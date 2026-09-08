@@ -3223,6 +3223,20 @@ Is it enough? You recorded at least one stated weakness of each lens.
 
 #### 2. Draft the jobs
 
+**See it first.** Made-up example. Writing a job statement at my desk and finding that nothing in my notes had put it there.
+
+- **What I wrote:** When I am booking a class after work, I want the whole thing done in under a minute, so that I can get on with my evening. Functional success: the booking is finished. Emotional success: I feel confident.
+- **Where it came from:** Nowhere. I wrote it because it sounded like the sort of thing a busy person would want, and the format made it look as though it had come out of a session.
+- **The test I applied:** I went back through my own notes and asked which line had put that sentence on the page. Speed was mine. What the notes held was somebody stopping to check something before they were willing to commit.
+- **The rewrite:** When I book a class I have not attended, I want to check what I am walking into, so that I can commit without a small worry left over. Functional success: the thing they wanted to check is settled before they pay. Emotional success: they are not still wondering about it on the way there.
+- **What the emotional criterion had to become:** “Feel confident” fitted every job I could think of, which is how I knew it was empty. Naming the particular worry gave me something I could actually look for next time.
+
+**The wrong turn:** The wrong turn is writing the job from your own picture of the person. The format is tidy enough to make an invention look like a finding, and a job invented at a desk is exactly as unfounded as a persona invented at a desk.
+
+**What it costs:** Working only from what your notes hold gives you fewer jobs, and duller ones. Somebody will ask whether that is really all you have, and the honest answer is yes, for now.
+
+**Still unknown:** Still unknown: whether that worry belongs to anyone beyond the one situation you happened to hear about, or whether the emotional half is your reading of it rather than theirs.
+
 - From your findings, draft three job statements in situation–motivation–outcome form. For each, write functional and emotional success criteria. Cite the finding each one rests on.
 
 **You should end up with:** Three job statements with functional and emotional success criteria.
@@ -3236,7 +3250,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Job statement:** A sentence in three parts: the situation someone is in, what they are trying to get done, and the outcome they want.
+- **Functional success:** What would be true in the world if the job went well. Usually something you could see or check.
+- **Emotional success:** How the person would be left feeling if the job went well. Name the particular worry that would be gone, not a general good mood.
 
 Stuck starting? Take a finding and ask what the person was trying to accomplish when it happened.
 
@@ -3259,7 +3275,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Need statement:** A sentence naming a person, what they need, and why. It stops before saying what you would build.
+- **Feature:** A named part of a product: a page, a button, an email. A need with a feature in it has already chosen its own answer.
 
 Stuck starting? Write person, need, reason, then delete any noun that names a feature.
 
@@ -3304,7 +3321,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Evidenced:** You can point to the place in your own notes that the statement came from, and say which session it was.
+- **Assumed:** You believe it but nothing in your material shows it. A legitimate thing to write down, as long as the word travels with it.
+- **Rebuild-from-nothing test:** Imagine the product built again from scratch, with none of the screens it has now, and ask whether the sentence would still be true.
 
 Stuck starting? For each statement, imagine the product rebuilt from nothing and ask whether the sentence survives.
 
@@ -3326,7 +3345,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Framing:** The lens you chose to write in. Every framing shows some things clearly and quietly leaves others out.
+- **General caveat:** A safe remark that would fit any study, such as saying the sample was small. It is not the same as naming what this framing lost about these people.
 
 Stuck starting? Reread your notes and find a person whose situation does not fit either framing.
 
@@ -3516,6 +3536,20 @@ Tools: A long sheet of paper, or several sheets joined, with sticky notes for la
 
 #### 1. Read and prepare
 
+**See it first.** Made-up example. Setting the stages of a journey and finding I had drawn my own screens.
+
+- **What I listed:** Home, search, class page, checkout, confirmation, reminder. Six stages, and every one of them something I had designed.
+- **What that map could show:** Only whether my own flow worked. Anything that happened to a person before they arrived, or after they closed the tab, had nowhere to sit.
+- **What I had left out:** The evening someone decided they wanted to do something new. The friend who mentioned the place. The morning of the class, when what to bring becomes urgent. The week after, when they decide whether to go again.
+- **The rewrite:** Wanting something to do · hearing about it · weighing it up · booking · getting ready · attending · deciding about next time. Two of those seven happen on a screen.
+- **What it changed:** The stages I could say least about turned out to be the ones at each end, and those are where the decision to come and the decision to return are made.
+
+**The wrong turn:** The wrong turn is using your own flow as the spine. It is the version of the journey you know best, it fills in fastest, and it can only ever tell you about the part you already control.
+
+**What it costs:** Stages that sit outside the product are the ones you have least evidence for, so the map gets wider and thinner at once. A good deal of it will end up marked assumed, and it will look weaker than the tidy screen version did.
+
+**Still unknown:** Still unknown: whether these are the stages anybody else would draw. Somebody who arrived by a different route may never pass through the weighing-up stage at all.
+
 - Read the assigned page. Lay out your findings, notes and quotations where you can see them all; the map is built from these and from nothing else.
 
 **You should end up with:** Stages that start before your product and end after it.
@@ -3550,7 +3584,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Layer:** One row that runs the whole width of the map, holding a single kind of information: what people do, what they think, or what they feel.
+- **Pass:** One sweep from the first stage to the last, filling in a single layer. Three layers means three passes, not one stage-by-stage crawl.
 
 Stuck starting? Do the doing layer across every stage before starting the thinking layer.
 
@@ -3585,7 +3620,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Observed:** You watched it happen. The strongest mark, and usually the rarest one on the map.
+- **Reported:** Somebody told you it happened. You are trusting their account, which is reasonable and is not the same as seeing it.
+- **Assumed:** You put it there yourself because it seemed likely. The feeling layer fills up with these without your noticing.
 
 Stuck starting? Mark the doing layer first; it is where most of the observed entries are.
 
@@ -3617,7 +3654,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Shareable version:** The cut-down copy that leaves your desk and gets read without you in the room to explain it.
+- **Participant numbers:** How many people the map was drawn from, and when. Written on the map itself, so it travels with the picture.
 
 Stuck starting? Simplify by removing detail, never by removing the marks.
 
@@ -3638,7 +3676,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Check questions:** The short questions at the end of the lesson. Each one names a repair to make in your own work rather than something to answer for its own sake.
+- **Repair:** The specific small change a Check question asks you to go back and make, which you then record in your own words.
 
 Stuck starting? Check that nothing in the shareable version claims more than the marks allow.
 
@@ -3839,7 +3878,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Finding:** Something your material shows is true, written as a statement rather than as a subject you looked at.
+- **Headline:** The first line of a finding, stating what is true in one full sentence. A reader who stops there should still have the finding.
+- **Evidence:** Where the finding came from: which sessions, and how many people it rests on.
 
 Stuck starting? Read the assigned page and write the four parts down.
 
@@ -3875,7 +3916,8 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Essential facts:** The short account under the headline: what happened, when, and to how many of the people you saw.
+- **What you can support:** The part of a finding your own notes would back up if somebody asked to see them. Anything past that line is a hunch, however likely it feels.
 
 Stuck starting? Write the headline of your strongest finding as a full sentence stating what is true.
 
@@ -3884,6 +3926,20 @@ Is it enough? Each headline states the finding rather than naming a topic.
 </details>
 
 #### 3. Write the limitations
+
+**See it first.** Made-up example. Writing a limitations section that apologised instead of saying anything.
+
+- **What I wrote first:** A small number of people, so the findings may not hold more widely, and further research is recommended. Three lines that could sit under any study ever run.
+- **What happened to it:** It was skipped. It reads as modesty rather than information, so the report gets treated as though it had no limits at all, which is the opposite of what I meant.
+- **The question that fixed it:** Who is missing from this study, and which particular finding gets weaker because they are missing?
+- **What that produced:** Everyone I spoke to had already booked something. Nobody who looked and left is in here, so the finding about what people check before committing rests entirely on people for whom the checking worked.
+- **Where it went:** One place at the bottom, next to the recruitment route and the dates. Naming who is absent is what lets a reader weigh a single finding rather than trusting or dismissing the whole report.
+
+**The wrong turn:** The wrong turn is the general apology. It costs nothing to write, it protects you from the charge of claiming too much, and it tells the reader nothing about which parts of the report to lean on.
+
+**What it costs:** Naming who is missing hands somebody a reason to set a finding aside, and sometimes they will set aside one you believe in. That is the price of being read carefully rather than politely.
+
+**Still unknown:** Still unknown: how different the missing people would have been. You can name the gap; you cannot say what it would have held.
 
 - Assemble who took part, recruitment route, exclusions, numbers, period and what the study cannot establish. Reuse your exclusion sentences from the method plan verbatim.
 
@@ -3896,7 +3952,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Limitations:** One section saying what this study cannot tell anyone, so that nobody has to work it out from silence.
+- **Recruitment route:** How you found the people you spoke to. It decides who could never have turned up, which is often the important thing.
+- **Exclusions:** The people you deliberately left out, and why. Written down, this is information; left out, it looks like an oversight.
 
 Stuck starting? Copy the exclusion sentence from your recruitment plan; it belongs here.
 
@@ -3928,7 +3986,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Recommendation:** One next step, small enough to act on, tied to a finding you actually wrote down.
+- **Not-to-do:** One thing your evidence says to hold off, usually something somebody was about to build on a belief this study did not support.
 
 Stuck starting? Take your strongest finding and write the smallest action it justifies.
 

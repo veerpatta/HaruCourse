@@ -200,6 +200,20 @@ Is it enough? The status matches reality, and if nobody is available the plan is
 
 #### 5. Review and save
 
+**See it first.** Made-up example. Reading a finished study plan back aloud and finding the order that had already decided the answer.
+
+- **The plan I was happy with:** Explain the class, show what it involves, then ask her when she last worked out what to take somewhere.
+- **Why I put it in that order:** So she would know what I meant. It felt like being considerate rather than like shaping anything.
+- **What that order does:** By the time I ask, I have handed her the class, the materials and the moment I care about. Whatever she says next has my words sitting inside it.
+- **What I changed:** The question about her last booking goes first, before I describe anything at all. The screen comes out afterwards, or not at all.
+- **The limitation I still wrote down:** One session with one person cannot say how common anything is, however carefully the order is arranged. That sentence stays in whatever happens.
+
+**The wrong turn:** The wrong turn is explaining the thing first so that the person knows what you mean. It feels like courtesy, and it puts your words in her mouth before she has answered.
+
+**What it costs:** Asking cold means part of the session goes somewhere you did not plan, and you may run out of time before the part you cared about. What you get is an account that was hers before it was yours.
+
+**Still unknown:** Still unknown: whether she would have described that booking the same way on another day. One account carries the day it was told on.
+
 - Identify one way the plan could bias results and revise it.
 - Save the plan and access status.
 - Exclude private booking and payment details.
@@ -216,7 +230,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Bias:** Anything in your plan that makes one answer easier to give than another.
+- **Limitation:** What the study cannot tell you even if it goes perfectly. You write it before you start, not afterwards.
 
 Stuck starting? Ask what answer you are hoping for; the bias is usually whatever makes that answer easy to give.
 
@@ -561,6 +576,20 @@ Is it enough? Every entry could be checked against a source, and none contains t
 
 #### 3. Group
 
+**See it first.** Made-up example. Grouping six practice notes, where the first two groups were sorted by the words inside them.
+
+- **My first two groups:** “Email” and “Website”. Every note that mentioned an email went into one pile and the rest went into the other.
+- **Why it felt right:** Each note went somewhere at once and nothing was left over. It looked finished in about a minute.
+- **What was wrong with it:** Email is where the note happened, not what happened. S2 searching on the journey and S4 reading the list before booking are two places and one behaviour.
+- **The names I ended with:** “Preparing at the last moment” and “Preparing before committing”. Names I could turn out to be wrong about, which is what a group name is for.
+- **The note that would not go in:** S3 brought supplies from an earlier class and checked nothing. It sits outside both groups, written down, and it is the one I keep coming back to.
+
+**The wrong turn:** The wrong turn is grouping by the word that appears in the note. It sorts everything quickly, it never leaves an awkward note over, and it describes your filing rather than the people.
+
+**What it costs:** A group named after a pattern can be wrong, and somebody can say so in front of you. Tidy topic piles cannot be argued with, which is exactly why they teach you nothing.
+
+**Still unknown:** Still unknown: whether “preparing before committing” is one behaviour or two. Four accounts cannot separate them, and the name stays a guess.
+
 - Group related observations into two possible themes.
 - Keep an exception or contradiction visible.
 
@@ -641,7 +670,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Design implication:** Something the design would have to answer if a finding is right. It follows from evidence; it is not proved by it.
+- **Possible:** A word doing real work here. It marks a consequence you are proposing, not a result you observed.
 
 Stuck starting? Finish the sentence “If that is right, then the design would have to…”.
 
@@ -977,6 +1007,21 @@ Is it enough? No two options would succeed or fail for the same reason.
 
 #### 3. Select
 
+**See it first.** Made-up example. Picking one of three options for a village library room-booking page, and picking the wrong one for the wrong reason.
+
+- **The three on the table:** Redraw the results page so rooms are easier to compare. Say on each room whether a key has to be collected from the desk. Let someone ring a number and have the desk book it for them.
+- **The one I reached for:** The results page. I could already see it finished, and being able to picture something felt a great deal like being ready to build it.
+- **The question I had skipped:** Not which one I want to draw. Which answer would change what I do next. If the key is the reason people ring the desk, a prettier results page changes nothing at all.
+- **What I chose instead:** The key line. One sentence on a card, and the dullest of the three by a distance.
+- **The cost, written honestly:** My first attempt said “costs a little extra work”. That is not a cost. The real one: the results page stays ugly for another fortnight and it is the screen anyone opening my folder sees first.
+- **What I left out on purpose:** Filters, photographs of the rooms, and the map. Written down as excluded, because if I quietly slip the map back in I will not know which change did anything.
+
+**The wrong turn:** The wrong turn is choosing the option you most want to draw. It is the one you can already picture, and picturing it feels like readiness rather than preference.
+
+**What it costs:** The choice that teaches you most is often the one with almost nothing to show. You spend the week on a single sentence about keys while the ugly screen stays ugly, and nobody looking through your work will be impressed by it.
+
+**Still unknown:** Still unknown: whether people ring the desk about keys at all. Two accounts pointed that way and two accounts are a reason to test, not a reason to be sure.
+
 - Choose one response and explain the trade-off.
 - List what you leave outside the test.
 
@@ -1051,7 +1096,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Prototype:** The smallest set of screens someone can attempt your task on. It only has to work for that one task, and it may be paper.
+- **Repair:** The change you make after a Check question shows a gap. You write down what you altered, so a reader can see the before and the after.
 
 Stuck starting? Walk your task in your head and list every screen the person would have to reach.
 
@@ -1416,6 +1462,21 @@ Is it enough? Nothing is missing that would force you to invent a screen while s
 
 #### 4. Prepare the scenario
 
+**See it first.** Made-up example. Writing the task card for a parents-evening booking prototype, first with the route inside it and then with nothing left to observe.
+
+- **What I wrote first:** “Use the calendar to pick a slot with Mr Ellis and press Confirm.” It reads like a clear instruction, which is the trouble with it.
+- **Why it looked fine to me:** It describes exactly the thing I wanted to watch. Naming the calendar and the button hands over both decisions before the person has made either.
+- **Over-correcting:** So I wrote “have a look around and tell me what you think”. Now there is nothing to reach and nothing to fail at, and whatever happens I can call it a success.
+- **Where it settled:** “You have two children at the school and one free evening this week. Find out whether you can see both of their teachers on the same night.” A situation, a goal, no part of the screen named.
+- **The reset I had not thought about:** After my own walk-through the confirmation card was face up and one slot was crossed off. The second person would have started from a different prototype without either of us noticing.
+- **What the reset says now:** Cards stacked S01 on top, a clean copy of the slot sheet for each attempt, confirmation card back in the pile. Thirty seconds between attempts, written down so I do not skip it when I am tired.
+
+**The wrong turn:** The wrong turn is putting the control in the task. You want them to reach the part you built, so you point at it, and it feels like being helpful rather than like giving away the answer.
+
+**What it costs:** A task with no route means someone may spend four minutes somewhere you never expected and never arrive at the screen you care about. That silence is the finding, and it is uncomfortable to sit through without rescuing them.
+
+**Still unknown:** Still unknown: whether “one free evening” makes people hurry in a way a real parent would not. The situation you invent shapes what you see, and you cannot take that out of the room.
+
 - Write a goal-based task without button or route instructions.
 - Prepare the starting state so the task can be repeated.
 
@@ -1453,7 +1514,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Limitation:** Something your method could not show, written beside what it did show. It is part of the result, not an apology for it.
+- **Screen reader:** Software that reads a screen aloud, used by people who cannot see it or who find reading hard. Paper cannot tell you what it would say, or in what order.
+- **Server:** A computer elsewhere that stores information and sends it back. Paper has none, so anything that waits, fails or arrives late cannot be tested here.
 
 Stuck starting? List everything a person might reasonably conclude from a paper session that would be wrong.
 
@@ -1826,6 +1889,21 @@ Is it enough? The severity reason names the consequence for the person, not your
 
 #### 4. Repair
 
+**See it first.** Made-up example. Repairing a bike-repair drop-off form after one session, and fixing four things at once with the pen already in hand.
+
+- **What I saw:** She read the line “preferred collection”, left it blank, and went back to the first card twice before carrying on.
+- **What I did within a minute:** Changed the label to “when would you like to collect it”, wrote an example underneath, moved the question above the contact details, and darkened the button while I was there.
+- **Why that ruins the next session:** If the next person sails through, I cannot say which of the four did it. If she stumbles, I cannot say which of the four did that either. Four changes give one impression and no attribution.
+- **The original I nearly lost:** I had rubbed the old label off the same card. Redrawing it from memory is not keeping it, so now the untouched version goes in an envelope before the pen comes out.
+- **What I kept:** One change: the label. The example, the order and the button went on a list headed “not this time”, with the observation each of them was guessing about.
+- **What that list is for:** Three things I am fairly sure are wrong are now written down as guesses instead of quietly done. That is the difference between a note and a decision.
+
+**The wrong turn:** The wrong turn is repairing everything you noticed while you are already sitting there with the pen. It feels efficient, and it removes any chance of saying which change mattered.
+
+**What it costs:** You leave three things you believe are wrong exactly as they are, and the next person will probably hit them. Watching someone struggle with something you already know how to fix is the price of a comparison that means anything.
+
+**Still unknown:** Still unknown: whether the label was the thing that mattered at all. It is the change you can argue for from what you saw, which is not the same as being right.
+
 - Keep the original and make one bounded repair.
 - Explain the expected change and what remains untested.
 
@@ -1868,7 +1946,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Evidence:** Here it means what you actually saw or heard, with the session type beside it. Not what you concluded from it, and not what you expected.
+- **Revision:** The changed version, named or filed so a reader can put it next to the original and see the one difference.
+- **Next check:** The observation that would tell you whether the repair helped. It names a person and a task, and it has not happened yet.
 
 Stuck starting? Write Evidence first and put the session type in its first sentence.
 

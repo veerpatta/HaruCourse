@@ -682,6 +682,20 @@ Is it enough? The two priorities are the ones where being wrong costs most and y
 
 #### 4. Explore
 
+**See it first.** Made-up example. Three responses to the same frame, written quickly, and the discovery that two of them were the same response in different clothes.
+
+- **The frame I was answering:** A first-time attendee, the evening before, cannot tell what to bring. I gave myself ten minutes to write three responses to it.
+- **What I wrote:** Send a reminder email the day before. Send a text message the day before. Move the list to the top of the confirmation email.
+- **Why that is one response, not three:** All three send her words in advance and hope she reads them. If she never looks at her phone the evening before, all three fail together, and comparing them tells me nothing.
+- **The rule that unstuck me:** One change to what she is told, one change to what the studio does, one change on a screen. Three different places, so they cannot all fail for the same reason.
+- **The set I kept, and one honest weakness:** Print the list on the ticket; keep spare aprons in the studio cupboard; show what to bring above the Reserve button. Under the aprons I first wrote “might be popular”, which is not a weakness at all — the real one is that it costs money every term and quietly teaches people not to prepare.
+
+**The wrong turn:** The wrong turn is writing three versions of the idea you already like. It fills the boxes fast and it feels like breadth, but the three collapse for the same reason and the comparison decides nothing.
+
+**What it costs:** Forcing one response into the studio’s hands and one onto a screen means writing at least one you do not believe in. You then have to describe it fairly to the organiser, and she may well choose it.
+
+**Still unknown:** Still unknown: whether the studio can afford spare aprons, or would agree to keep them. Every constraint box is a guess about other people until somebody says yes or no.
+
 - Sketch three different responses to the workshop preparation problem.
 - For each, note a constraint and a weakness.
 
@@ -728,7 +742,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Investigation:** The smallest piece of work that could change your mind about one uncertainty: who you would ask, and what you would look for.
+- **Priority uncertainty:** The one you picked in step 3 because being wrong about it costs most and you know least.
+- **Check questions:** The questions in the Check section. They exist to send you back to one earlier answer and change it before you save.
 
 Stuck starting? Pick the priority uncertainty from step 3 and name a person you could actually ask. Answer the Check questions before the last box.
 
@@ -1100,6 +1116,20 @@ Is it enough? Every line in observations could be checked against what was said;
 
 #### 4. Distinguish
 
+**See it first.** Made-up example. Turning the interpretations box into follow-up questions, and finding that the first list was a list of fixes.
+
+- **What was in my interpretations box:** Three guesses written beside some practice notes: that she looked for the price first, that she may not read anything sent in advance, and that she expected the materials list on the ticket. All three are mine, not hers.
+- **My first list:** Move the price higher. Stop relying on email. Put the list on the ticket. I wrote them in about a minute and felt organised.
+- **Why none of them is a follow-up:** Every line is something I would do. Nobody can answer a to-do list, and each line has already settled what the guess means. My guesses had quietly become decisions.
+- **The repair:** “The last time you booked a class, where did you look first?” Now the price guess can survive or fall, and there is room for an answer I did not predict.
+- **The one I nearly kept:** “Did the hidden price put you off?” It is shaped like a question, so it looked safe. The only thing it can do is agree with me. Rewritten: “What made you go back to the earlier screen?”
+
+**The wrong turn:** The wrong turn is writing what you will change instead of what you still do not know. A fix list looks like progress, and it closes the question you were meant to carry into the next conversation.
+
+**What it costs:** Keeping these as questions leaves the design undecided for another week, and somebody may ask what you have actually produced. What you have is a shorter list of things you would otherwise have built on a guess.
+
+**Still unknown:** Still unknown: whether any of these follow-ups matter to anyone but me. A rehearsal cannot tell you that, and the next conversation may raise something that makes all three look small.
+
 - Separate observations, interpretations and follow-up questions.
 - Keep actual quotations distinct from your explanation.
 
@@ -1112,7 +1142,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Follow-up question:** A question for a later conversation, raised by something you did not understand this time.
+- **Conclusion:** A statement about what is true or what to do. It belongs in a later step, not in this list.
 
 Stuck starting? Reread the interpretations box; each guess is a follow-up question.
 
@@ -1137,7 +1168,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Weak question:** The one you would least like to ask again. Usually it is the one you could hear steering the answer as you said it.
+- **Check questions:** The questions in the Check section. They exist to send you back to one earlier answer and change it before you save.
 
 Stuck starting? Pick the question you felt awkward asking; that is usually the leading one. Answer the Check questions before the last box.
 
@@ -1502,6 +1534,20 @@ Is it enough? Each next action is something the person can do, not something the
 
 #### 4. Walk through
 
+**See it first.** Made-up example. Walking the reservation flow aloud, first as its author, which found nothing, and then again properly.
+
+- **My first walk:** I read the boxes in order, A to F, nodding along. Everything made sense and I found nothing wrong. That should have been the warning.
+- **Why it found nothing:** I know what every box means, so I filled the gaps from memory as I went. The rule I use now: stop wherever I have to say something aloud that is not written on the sheet.
+- **The second walk:** Reading as somebody who has never seen it, I stopped four times. Three were missing arrows. The fourth was a different kind of thing: nothing anywhere says the class cannot be refunded, and by box D she has paid.
+- **Why that one matters most:** A missing arrow is a hole in the drawing. Missing information is a hole in her decision, and she meets it only after the money has gone.
+- **The dead end I chose:** I was drawn to the easy repair, the unlabelled arrow between C and D. I took the refund one instead, because it changes what box B has to say, and the easy one can be fixed in two minutes whenever I reach it.
+
+**The wrong turn:** The wrong turn is walking your own flow as its author. You supply every missing word from memory, the walk goes smoothly, and a smooth walk feels like a finished flow.
+
+**What it costs:** Reading aloud as a stranger is slow and faintly ridiculous, and it hands you a longer fault list the day before you meant to finish. Some faults will stay unrepaired, and the sheet stops looking tidy.
+
+**Still unknown:** Still unknown: whether a first-time visitor stumbles where I did. My imagined stranger is me pretending, and pretending cannot find the things I am unable to un-know.
+
 - Trace every branch aloud as a first-time visitor.
 - Mark missing information and dead ends.
 
@@ -1515,7 +1561,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Walkthrough:** Reading every box and arrow aloud in order, as though you had never seen the flow before.
+- **Branch:** One path out of a decision point, followed to wherever it ends.
+- **Stumble:** Any place where you had to explain something that is not written on the sheet.
 
 Stuck starting? Read each box aloud as if you had never seen the app, and stop wherever you have to explain.
 
@@ -1539,7 +1587,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Repair:** The change you make to one branch, drawn again on a fresh sheet so the first version survives beside it.
+- **Check questions:** The questions in the Check section. They exist to send you back to one earlier answer and change it before you save.
 
 Stuck starting? Redraw only the repaired branch on a fresh sheet; keep the original. Answer the Check questions before the last box.
 
@@ -1912,6 +1961,20 @@ Is it enough? Nothing here claims the screens are accessible; it says what was d
 
 #### 4. Critique
 
+**See it first.** Made-up example. Adding an error state to the reservation sketch, and the two repairs it needed before it was any use.
+
+- **The state I was missing:** Every sketch showed the form filled in neatly. Nothing showed what she sees when she presses Reserve with the email box empty.
+- **My first attempt:** A red outline round the Email box. It reads clearly on the sketch and took one pencil stroke.
+- **Why it is not enough:** The colour is carrying the whole message. Anyone who cannot see the red, or who is hearing the page read aloud, is told nothing — and even seeing it, she is not told what is wanted or whether her typed name survived.
+- **The state I kept:** Under the field, in words: “Enter the email address for your confirmation.” A line at the top says one thing needs attention, the name and date she typed stay where they are, and the outline remains as a second signal rather than the only one.
+- **What the longer label did:** I rewrote “What to bring” as “What to bring to your first session” and it wrapped onto two lines, pushing the Reserve button into the message. My first fix was to set that label in smaller text, which is a way of hiding it. I let it wrap and moved the button down instead.
+
+**The wrong turn:** The wrong turn is letting colour carry the meaning. A red outline looks like a finished error state, costs one stroke to draw, and says nothing at all to somebody who is not looking straight at it.
+
+**What it costs:** Words under the field and a line at the top make the screen busier and taller, and the form stops looking calm on the page. It buys somebody the ability to fix the thing without guessing what is wanted.
+
+**Still unknown:** Still unknown: whether the message is announced when it appears, or whether she is left to hunt for it. A drawing cannot settle that, so it belongs on the list of checks that need a built version.
+
 - Compare the screens against your flow.
 - Add one missing error state.
 - Try longer labels and larger text.
@@ -1926,7 +1989,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Error state:** What the screen shows when something is missing or wrong: the message, where it sits, and what stays on screen.
+- **Collision:** Two things wanting the same space, so one is pushed over the other or off the edge.
 
 Stuck starting? Rewrite one label twice as long on the sketch and see what it collides with.
 
@@ -1951,7 +2015,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Unresolved issue:** The thing you would most want a second opinion on. Naming it is part of the work, not a confession.
+- **Check questions:** The questions in the Check section. They exist to send you back to one earlier answer and change it before you save.
 
 Stuck starting? Choose the issue you would most want a second opinion on, not the smallest one. Answer the Check questions before the last box.
 
@@ -2293,6 +2358,20 @@ Is it enough? The evidence line names a source: your walkthrough, a participant,
 
 #### 3. Repair
 
+**See it first.** Made-up example. One repair to a booking screen, where the first attempt changed something the critique had never named.
+
+- **The concern I had written:** On the full workshop, Reserve is greyed out with no explanation, so a visitor cannot tell whether to wait or to look at another date.
+- **What I did first:** I redrew the whole card: new heading, a photograph of the studio, a warmer tone. The sheet looked better and the grey button was still sitting there unexplained.
+- **The question that caught it:** Which of those changes answers the concern I wrote in step 2? None of them did. I had repaired the thing I disliked, not the thing I had named.
+- **Keeping the original:** I photographed the untouched sheet and called it reserve-before, then worked on a copy called reserve-after. Two minutes, and it made everything after it explainable.
+- **The change I kept:** Under the grey button: “Fully booked. Next session Thursday evening”, with the date as the thing you can press. Nothing else on the sheet moved.
+
+**The wrong turn:** The wrong turn is repairing whatever you dislike most about the screen. It is the change your hand wants to make, it always improves the look, and it can leave the named concern exactly where it was.
+
+**What it costs:** A bounded repair leaves the screen visibly imperfect, and everything you did not touch will keep bothering you each time you look at it. In exchange the two versions differ in one thing, so the comparison can say something.
+
+**Still unknown:** Still unknown: whether the next date is what she wants, or whether she would rather be told when a place frees up. The repair answers one of those and guesses at the other.
+
 - Keep a copy of the original.
 - Repair only the chosen issue.
 
@@ -2306,7 +2385,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Bounded repair:** A change limited to the one concern you named. Everything else on the artefact stays exactly as it was.
+- **Original:** The untouched version, copied or photographed before you change anything. It is what lets you explain the repair later.
 
 Stuck starting? Copy or photograph the original before touching it.
 
@@ -2340,7 +2420,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Before and after:** The two versions side by side, differing in one thing only, so the difference has a cause you can name.
+- **Check:** Something you could watch or count that would show whether the repair helped, including the case where it did not.
 
 Stuck starting? Put both sheets next to each other and describe the first thing you notice in each.
 
@@ -2363,7 +2444,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Limitation:** What this piece of work cannot show, however well it went. Writing it down is part of the work, not an apology.
+- **Untested:** Changed on good reasoning and not yet put in front of anybody. It stays untested until somebody uses it.
 
 Stuck starting? Finish the sentence “This repair would be proven wrong if…”, then answer the Check questions before the last box.
 
@@ -2723,7 +2805,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Source label:** The word you attach to a claim to say where it came from: observed, reported or assumed.
+- **Unsupported claim:** A sentence that sounds like evidence and has nothing behind it. Words like intuitive, clean and obvious usually mark one.
 
 Stuck starting? Set a five-minute timer and explain the note to an empty chair, then once more to a person if you can.
 
@@ -2732,6 +2815,20 @@ Is it enough? You noticed at least one place you reached for a design word inste
 </details>
 
 #### 4. Plan
+
+**See it first.** Made-up example. Writing the plan section of a decision note, where the first two gaps turned out to be a wish list.
+
+- **The strength I claimed first:** “My screens are clear.” I could not point at anything that showed it, so it was a compliment to myself rather than a strength.
+- **The strength I could evidence:** Somebody reading my flow cold could name the next step at every node. That is written down in my Lesson 4 worksheet, so a reader can go and look.
+- **My first two gaps:** “Add more screens” and “make the visuals stronger”. Both were work I already wanted to do, and neither is anything a reader would ask me for.
+- **The gaps I kept:** I have never watched anybody use the flow, and I cannot say how common the materials problem is. Both came straight from the review criteria I could not evidence.
+- **Cutting the repair down:** “Test the whole flow with three people” does not fit one sitting. It became: write the consent wording and one task, and ask one person this week.
+
+**The wrong turn:** The wrong turn is choosing gaps that are really a wish list. They are pleasant to write, they flatter the work already done, and they quietly avoid the question a reader would actually ask.
+
+**What it costs:** Two honest gaps make the note read as though you achieved less, and somebody may take them as an admission that the work is unfinished. What you get back is a next action you did not have to invent.
+
+**Still unknown:** Still unknown: whether one conversation this week could close either gap. Probably not. It is the smallest thing that would move one of them at all.
 
 - Record one evidenced strength and two gaps.
 - Choose one small repair; reduce scope if needed.
@@ -2772,7 +2869,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Repair:** The one change a Check question sends you back to make. It is deliberately small.
+- **Optional lesson:** A lesson you may skip without leaving a hole in the module. Stopping here is a complete answer.
 
 Stuck starting? Answer the Check questions, make the one repair each points at, then say here what you changed. Choose Ready for review in Your work if you want creator input.
 

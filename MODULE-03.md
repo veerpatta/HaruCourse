@@ -119,6 +119,20 @@ Is it enough? Every step names something on your screen that uses it.
 
 #### 3. Re-typeset one screen
 
+**See it first.** Made-up example. Applying the five-step ladder to a class card, and losing something without noticing.
+
+- **How I applied it:** I went through the card replacing each old size with its nearest step. Seven replacements, four minutes, and the card looked calmer straight away.
+- **What I did not write down:** The date had been 15 and the instructor name 16. Both landed on the 14 step. I ticked them off as tidying and moved on.
+- **What I noticed later:** Reading the card cold, I could not tell at a glance which line was the date and which was the name. Same size, same weight, same grey, one above the other.
+- **The repair I nearly made:** Add a sixth step at 15 and put the date back where it was. Two minutes, and the ladder is back towards the pile it started as.
+- **What I did instead:** I asked what the old difference was for. The date has to be found quickly and the name does not, so the date kept the 14 step and gained medium weight and a gap above it. The ladder stayed at five, and the collapse went into the record with what it cost.
+
+**The wrong turn:** The wrong turn is rounding each old size to its nearest step and calling the job done. It is tempting because the screen genuinely does look better afterwards, so nothing prompts you to ask what the old difference was carrying.
+
+**What it costs:** Carrying the date on weight and space rather than size means the two lines are closer in tone than they were, and somebody skimming very fast may still read them as one block. That is the price of holding the ladder at five steps.
+
+**Still unknown:** Still unknown: whether a reader looking for a date finds it any faster in this version. Nothing here was tried with a person, only reasoned about on paper.
+
 - Apply the scale to your chosen screen. Where two old sizes collapse into one new step, note what you lost and whether it mattered.
 
 **You should end up with:** What collapsed when you applied the ladder, and what earned its own step.
@@ -131,7 +145,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Collapse:** Two or more of the old sizes becoming one step of your ladder. The screen gets simpler and a distinction disappears, so each one is worth writing down.
+- **Re-typeset:** Setting the same words again with new type decisions. The content does not change; only the sizes, weights and spacing do.
 
 Stuck starting? Go through the screen replacing each old size with its nearest step, and write down every time it hurt.
 
@@ -187,7 +202,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Artefact:** Something you actually made and can point at: the ladder, the two drawings, the breakage notes. It is what shows the work happened.
+- **Repair:** The one change a Check question asks you to make to your own work. You make it in the worksheet itself rather than noting it for later.
 
 Stuck starting? Choose the change that fixes the most serious breakage you listed.
 
@@ -499,6 +515,20 @@ Is it enough? You can state the paragraph gap as “clearly more than one line�
 
 #### 4. Stress it
 
+**See it first.** Made-up example. Running the narrow-width test on a class description, and building a test that could not fail.
+
+- **How I ran it:** I redrew the card at about a third of the width, and to fit it on the page I lettered everything smaller too. Nothing broke, and I wrote down that it held.
+- **Why nothing broke:** Shrinking the text along with the column keeps the same number of characters on every line. The character count is the whole thing under test, so I had removed it.
+- **The second run:** I ruled a column about 390 px wide and lettered the same paragraph at true size. The longest title took four lines and the price wrapped away from the word it belonged to.
+- **The enlarged case:** Same column, everything a step and a half bigger. The count fell to roughly 26 characters a line, and the empty-state sentence became six short lines that read as a list rather than a sentence.
+- **What I wrote down:** Not “cramped”. “Longest title takes four lines and pushes the date past the card edge”, and “at enlarged size the measure falls to about 26 and the paragraph stops holding together”. Two notes I can act on.
+
+**The wrong turn:** The wrong turn is scaling the text down with the column so the drawing fits the page. It is tempting because it looks like the same screen, smaller, and because a test that passes is quicker than one that does not.
+
+**What it costs:** Drawing at true size means the narrow version will not sit neatly beside the wide one, so you need two sheets and cannot compare them at a glance. That is what a test that can fail costs you.
+
+**Still unknown:** Still unknown: how far a real reader has turned their text size up. A step and a half is a guess, and some people run considerably more than that every day.
+
 - Render the block at about 390 px wide and again at enlarged text with your worst-case strings. Record every place the reading breaks down, including anything that now scrolls when it did not before.
 
 **You should end up with:** What broke at narrow width and with enlarged text, using the real strings.
@@ -511,7 +541,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Stress test:** Putting your layout against the content and the settings most likely to break it, rather than the ones that suit it.
+- **Enlarged text:** The reader’s own text-size setting turned up. It is their choice rather than yours, and many people keep it well above the default.
+- **Wrapping:** A line running out of room and continuing on the next one. Where it happens decides whether a price still sits beside the word it belongs to.
 
 Stuck starting? Put the longest title into the narrow column first; it usually breaks something immediately.
 
@@ -535,7 +567,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Open question:** Something this work has not settled, written down on purpose so that later it is not mistaken for something you knew.
+- **Repair:** The change a Check question asks you to make to your own work. You make it here and record what you did.
 
 Stuck starting? Write each value as “X, because …” and delete any reason that is only about appearance.
 
@@ -737,6 +770,20 @@ Tools: Paper, pencil, ruler, a camera if available, and a local text editor. Opt
 
 #### 1. Read and list roles
 
+**See it first.** Made-up example. Listing the roles for a class list, and finding that the list was really a list of colours.
+
+- **What I wrote first:** Six lines: the teal, the warm grey, the near-black, the cream, the orange and the soft red. A set I liked, with a role written in beside each one afterwards.
+- **Where that went wrong:** I was working backwards from the colours, so every colour found a job. The orange became “accent”, which is not a job. Nothing on the screen needed it.
+- **What I did instead:** I put the colours away and listed what the screen has to say: this is a surface, this is body text, this is quieter text, this is the one thing to press, this class is full.
+- **What the list came to:** Five roles. Two of my six colours had no role at all, and one role, quieter text, had no colour yet, because I had been making it by fading the body colour whenever I needed it.
+- **The awkward one:** The orange kept asking to survive as “brand presence”. I let it go and wrote it into the box for step 2 as the place the palette felt too small.
+
+**The wrong turn:** The wrong turn is starting from the colours you already have and finding a role for each. It is tempting because choosing colours is the enjoyable part, and any colour can be made to sound useful if you name its job late enough.
+
+**What it costs:** A role-first list is duller and shorter than a palette, and it usually costs you a colour you were fond of. It is what stops a screen collecting colours nobody can explain a year later.
+
+**Still unknown:** Still unknown: whether five roles hold once the screen gains a second status, such as a waiting list. New information may need a new role, and that is a decision to take deliberately rather than by reaching for another colour.
+
 - Read the assigned colour material. Then write the roles your screen actually needs — surface, text, secondary text, action, and each status — before opening any colour picker.
 
 **You should end up with:** The roles your screen needs, each with one value.
@@ -775,7 +822,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Palette:** The whole set of colours you allow yourself, each already tied to a role. Anything outside it does not go on the screen.
+- **Decoration:** Colour used because it looks good rather than because it tells the reader something. It is the first thing to remove and the hardest to let go of.
 
 Stuck starting? Apply the palette and count what disappeared.
 
@@ -866,7 +914,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Greyscale copy:** The same screen with the colour taken out, kept beside the coloured one. The two together are the evidence, and neither says much on its own.
+- **Repair:** The change a Check question asks you to make to your own work. You make it now and write down what you did.
 
 Stuck starting? Keep the coloured and greyscale copies together; the pair is the evidence.
 
@@ -1174,7 +1223,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Repair:** The specific edit that takes one failing element above its threshold, written down with the new measured number beside it. A general intention to improve the colours is not a repair.
+- **Palette intent:** What each colour was doing before you touched it. A repair that meets the number and erases the distinction the colour carried has traded one failure for another.
 
 Stuck starting? Take the worst-failing row first; it usually forces the largest decision.
 
@@ -1183,6 +1233,20 @@ Is it enough? Every failing row has a new measured ratio beside it.
 </details>
 
 #### 4. Read it yourself
+
+**See it first.** Made-up example. Reading a printed class list at a window, and nearly repairing the wrong thing.
+
+- **What I expected:** Every row in my table now met its threshold, so I carried the printed screen to the window mostly to confirm it.
+- **What happened:** The 12 point labels under each class were unreadable at arm’s length in the daylight. They had measured 5.2, comfortably above the number they needed.
+- **My first move:** Push every grey towards black. It would certainly help something, and I had already changed three elements before I stopped.
+- **What stopped me:** The label was not failing on its colour. It was failing on its size, and on light washing across the paper. Darkening it would have flattened the palette to fix a fault that was somewhere else.
+- **What I wrote instead:** “12 point labels meet 5.2 and are still unreadable outdoors at arm’s length.” Then one repair: the labels moved up to 14, which is a change to the type ladder rather than to any colour.
+
+**The wrong turn:** The wrong turn is taking what your eyes find as a signal to raise every ratio. It is tempting because darkening is the repair you already know how to make, and it always improves something a little.
+
+**What it costs:** Moving the labels from 12 to 14 costs vertical space and pushes roughly one class per screen off the bottom. That is a real loss, taken because labels nobody can read are a larger one.
+
+**Still unknown:** Still unknown: how the same page reads for eyes that are not mine. One person at one window on one afternoon is a hint about the screen, not a finding about readers.
 
 - Read the repaired screen at arm's length, and if possible outdoors or with the screen brightness lowered. Note anything that still reads poorly despite passing, and anything you over-corrected into harshness.
 
@@ -1195,7 +1259,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Arm’s length:** Holding the page or screen as far away as a reader actually would, rather than close up the way you hold it while working on it.
+- **Floor:** A minimum rather than a target. A ratio that clears its threshold is the least that was acceptable, not evidence that the text reads well.
 
 Stuck starting? Take the screen to a window, or turn the brightness down, and read it at arm’s length.
 
@@ -1217,7 +1282,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Bounding a claim:** Saying plainly what your evidence covers and what it leaves out, in the same sentence, so a measurement is not read later as a promise.
+- **Opaque:** A colour with nothing showing through it. Your measured ratios hold for opaque pairs; text over a photograph or a partly see-through panel is a separate question.
 
 Stuck starting? Finish “these measurements establish … and they do not establish …”.
 
@@ -1468,7 +1534,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Perceived grouping:** What a reader’s eye puts together in the first second, before any of the words are read.
+- **Intended grouping:** What you meant to belong together when you made the screen.
+- **Mismatch:** A place where those two disagree. The mismatch, not the screen’s appearance, is the problem you are fixing.
 
 Stuck starting? Print or redraw the screen and circle what you group at a glance, before you read any of it.
 
@@ -1513,6 +1581,20 @@ Is it enough? Every border you used has a written reason.
 
 #### 4. Build the counterexample
 
+**See it first.** Made-up example. Writing the counterexample for a class list, and finding that the first thing I wrote was not a counterexample at all.
+
+- **My first attempt:** I wrote that the border around the section makes the screen look boxy, and called that a case where common region misleads.
+- **Why it did not count:** That is a complaint about how it looks. A counterexample is where the principle holds perfectly and the reading it produces is still wrong.
+- **Where I looked instead:** At similarity, and at two things sharing a treatment without sharing a purpose. I found small capitalised labels: “Sold out” on one class and “Book now” on another, in the same size and weight.
+- **What the reader gets:** Similarity does exactly what it is meant to do and puts the two labels in one set. So “Sold out” reads as something to press, and the one class that cannot be booked looks the most available on the screen.
+- **What I wrote down:** The pair, the reading it produces, and the fact that following the principle more carefully would not avoid it. The repair is to stop treating the two labels alike.
+
+**The wrong turn:** The wrong turn is writing down something you dislike about the screen and calling it a counterexample. It is easy to find and it fills the box, and it teaches you nothing, because your taste was never what misled the reader.
+
+**What it costs:** Breaking the similarity means “Sold out” and “Book now” no longer look like one family of labels. The screen is less tidy, and you now have two small-label treatments to keep track of instead of one.
+
+**Still unknown:** Still unknown: how many other pairs on the screen share a treatment without sharing a purpose. I found this one by looking, and there is no way to be sure it is the only one.
+
 - Construct one small case where following a grouping principle produces the wrong reading — for example similarity making an unrelated element look like a status, or a card hiding the one item the task needs. Show it and explain the failure.
 
 **You should end up with:** One case where following a principle gives the wrong reading.
@@ -1524,7 +1606,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Counterexample:** A case where a principle holds and the reading it produces is still wrong. It is not a case where you followed the principle badly.
+- **Similarity:** Things that look alike are read as one set, even when they have nothing to do with each other. It is the principle that misleads most often.
 
 Stuck starting? Look for two things that look alike but are not related, or two related things forced apart by a container.
 
@@ -1547,7 +1630,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **At a glance:** The first second of looking, before reading. A test question has to be answerable in that second or it is testing something else.
+- **Before and after:** The two versions of the same screen: the one you diagnosed and the one you regrouped. Keeping both is what makes the change checkable later.
+- **Repair:** The small change a Check question asks you to make. You record what you actually altered, not whether you agreed.
 
 Stuck starting? Write a question that can be answered in one glance, without reading the screen closely.
 
@@ -1806,6 +1891,20 @@ Is it enough? Each value has a name describing its use, not its size.
 
 #### 3. Apply and resolve conflicts
 
+**See it first.** Made-up example. Mapping twelve measured gaps onto a six-value scale, and inventing a thirteenth value to settle a conflict.
+
+- **How the mapping went:** Ten of the twelve gaps snapped without argument. The 7 and the 8 both became 8. The stray 14 became 16 and nothing read worse for it.
+- **Where it stopped:** The gap under a section heading and the gap between two sections both landed on 24. The heading now sat exactly halfway between the section it named and the section above it.
+- **What I did first:** I invented 20 for the heading gap. It looked right within about four seconds, and I nearly moved on.
+- **Why I took it back:** 20 existed on the scale for one element and nothing else. That is precisely how twelve accidental gaps appeared before I started measuring.
+- **What I did instead:** Dropped the heading gap one step down to 16. The heading now clearly attaches to the section below it, and every gap on the screen is still a value I can name.
+
+**The wrong turn:** The wrong turn is inventing a value between two steps of the scale because it looks right. It is one small exception, it settles the problem immediately, and it quietly ends the scale.
+
+**What it costs:** At 16 the heading sits close to its own first line, and with enlarged text it comes near to touching it. You have bought a clear grouping and taken on the job of checking that pairing at large text sizes.
+
+**Still unknown:** Still unknown: whether 16 and 24 read as different enough on a small screen for the heading to attach downward. Two values one step apart are the hardest pair to tell apart.
+
 - Map every existing gap to the nearest scale value. Where two different purposes collapse to the same value, decide which one moves and record why.
 
 **You should end up with:** Every old gap mapped onto the scale, with conflicts resolved deliberately.
@@ -1817,7 +1916,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Mapping:** Replacing each gap you measured with a value from your scale, one at a time.
+- **Conflict:** Two gaps with different jobs that land on the same value, so the reader can no longer tell the jobs apart.
+- **Exception:** A gap you keep off the scale on purpose, written down with its reason. Unwritten exceptions are how the accidents come back.
 
 Stuck starting? Go through the audit list and write the scale value each one becomes.
 
@@ -1852,7 +1953,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Inside gap:** The space between items that belong to the same group.
+- **Surrounding gap:** The space between that group and whatever sits next to it.
+- **Grouping rule:** The surrounding gap must be clearly larger than the inside gap. That difference is the whole of what makes a group visible.
 
 Stuck starting? Measure one group first: the gap between its own items, then the gap to whatever is next.
 
@@ -1875,7 +1978,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Audit:** The measured list of every gap you had before the scale existed. It is what makes the after state comparable to the before.
+- **Density:** How tightly the content is packed. Tight can be the right choice where somebody is scanning a long list rather than reading it.
+- **Repair:** The change a Check question asks you to make, recorded as what you actually altered.
 
 Stuck starting? Look for a list where tighter spacing helps scanning, and say why.
 
@@ -2125,7 +2230,9 @@ Worksheet fields for this step, revealed a few at a time in the app:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Change point:** A width at which the arrangement has to change because the content stopped working. It is named for what failed, never for a device.
+- **Narrowing:** Covering the layout gradually from one side to find where it breaks, instead of jumping between widths you chose in advance.
+- **Content failure:** The specific thing that stopped reading well: a collision, a line that will not fit, a column too narrow for the longest name.
 
 Stuck starting? Take the widest sketch and cover it progressively from the right, watching what breaks first.
 
@@ -2169,6 +2276,20 @@ Is it enough? The main action comes after the information needed to take it.
 
 #### 4. Check the edges
 
+**See it first.** Made-up example. Checking the left edges of a class list, and finding that the check itself had only been done at one width.
+
+- **What I checked:** I laid a ruler down the widest rendering. Every title, date and price met the same line, so I ticked the step off.
+- **What I had not checked:** The narrow rendering. At narrow I had centred the whole class block, because on its own it looked balanced that way.
+- **What centring cost:** The shared left edge that made four items read as one column was gone. Every line started somewhere different, so the eye had nothing to run down.
+- **The break I had flattened:** While tidying I had also pulled the “what to bring” list out to the main edge. That indent was the only thing saying the list belongs to the heading above it, so I put it back.
+- **What the step became:** Three rulers instead of one, and two lines of writing: which edges hold at every width, and the single break that is there on purpose.
+
+**The wrong turn:** The wrong turn is checking alignment only on the layout you spent the most time on. It is the one you can already see in your head, so it is the one your ruler agrees with.
+
+**What it costs:** Keeping the deliberate indent means the left edge is no longer one unbroken line, and anyone reviewing the screen will ask about it. You have to be able to say in a sentence what the indent means.
+
+**Still unknown:** Still unknown: whether a reader uses that indent at all, or takes the list as belonging to its heading from the words alone. Nothing in this step settles it, so the indent stays until somebody is asked.
+
 - At all three widths, check that shared left edges align. Mark every element that breaks alignment and either fix it or record why the break is deliberate.
 
 **You should end up with:** Which shared left edges hold at every width, and any break you kept deliberately.
@@ -2181,7 +2302,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Alignment:** Items sharing an edge, so the eye runs down one line instead of hunting for where each item starts.
+- **Shared left edge:** The invisible vertical line several items begin from. It is the one people notice when it breaks.
+- **Deliberate break:** An item that does not meet the shared edge because the difference carries meaning. Written down, so it is not read later as a slip.
 
 Stuck starting? Lay a ruler down the left edge of each rendering and mark anything that does not meet it.
 
@@ -2204,7 +2327,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Rendering:** One drawing of the screen at one width. The three of them together are the evidence this lesson produces.
+- **Repair:** The change a Check question asks you to make, recorded as what you actually altered.
 
 Stuck starting? Choose the change point you guessed at rather than derived.
 
@@ -2447,6 +2571,20 @@ Is it enough? No token name mentions a colour, a size or a direction.
 
 #### 2. Add usage and prohibitions
 
+**See it first.** Made-up example. Writing prohibitions for a token sheet, and finding that none of the first five forbade anything.
+
+- **What I wrote first:** Five lines in the shape of “text-secondary is for supporting text”. Every one of them true, and not one of them a prohibition.
+- **The test I applied:** For each token: what would somebody reasonably do with this that I would not want? If I could not name it, the line was a description wearing a rule’s clothes.
+- **The one that mattered:** action-surface is the green behind the primary button. The reasonable misuse is a green “confirmed” chip on a booking, which would then look like something to press.
+- **The one I threw away:** “Never use type-title for body text.” Nobody was ever going to. A prohibition against something no one is tempted by only makes the sheet longer to read.
+- **Where pairings came in:** Listing which text token may sit on which surface token is the same exercise from the other side: every pair not on the list is forbidden by not being there.
+
+**The wrong turn:** The wrong turn is writing prohibitions that restate the usage note in the negative. They read like rules and forbid nothing, because they only rule out what nobody would have done.
+
+**What it costs:** A short prohibition list leaves the sheet silent about most misuses, and the first time somebody does something you did not predict it gives them no help at all. Three real ones are worth more than twenty imagined, and they do leave that hole.
+
+**Still unknown:** Still unknown: which misuse you have not thought of. The build-it test finds decisions the sheet fails to specify; it does not find wrong uses of the things it does specify.
+
 - For each token, note where it is used and, where relevant, one thing it must not be used for. Include permitted text-on-surface pairings.
 
 **You should end up with:** Usage notes, prohibitions and the permitted text-on-surface pairings.
@@ -2492,7 +2630,9 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Pairing:** A text colour together with the surface colour behind it. Contrast belongs to the pair, never to one colour on its own.
+- **Contrast ratio:** A number comparing the lightness of text against its background. A free contrast checker gives it to you; there is nothing to work out by hand.
+- **Contrast table:** The record from lesson 4 listing each pair you measured and the ratio it came back with.
 
 Stuck starting? List the pairings first, then check each against the table from lesson 4.
 
@@ -2536,7 +2676,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Token sheet:** The single document naming every decision with its value and its role. It is the thing this lesson produces.
+- **Repair:** The change a Check question asks you to make, recorded as what you actually altered.
 
 Stuck starting? Add the missing specifications the test revealed before saving.
 
@@ -2754,6 +2895,20 @@ Is it enough? Every state names the condition that produces it, not just the app
 
 #### 2. Build each state from tokens only
 
+**See it first.** Made-up example. Building the hover state of a Reserve button from the sheet, and inventing a colour the moment the sheet ran out.
+
+- **Where it went smoothly:** The default state came straight off the sheet: surface-accent for the background, text-on-accent for the label, space-3 inside, radius-2 on the corners. Every value already had a name.
+- **Where it stopped:** Hover needs a slightly darker accent. The sheet has one accent and nothing darker than it.
+- **What I did:** I darkened it by eye until it looked right and wrote that value straight into the drawing. Thirty seconds, and the state looked finished.
+- **What that quietly cost:** The number now exists in one drawing and nowhere else. The next component that needs a hover will be darkened by eye again, slightly differently, and nobody will ever know why the two disagree.
+- **What I did instead:** I left the state marked “needs accent-dark”, put accent-dark on the missing list, and wrote the value I had guessed beside it as a proposal rather than a decision.
+
+**The wrong turn:** The wrong turn is that inventing a value feels like progress and recording a gap feels like stopping. The invented value is the dangerous one precisely because it works here.
+
+**What it costs:** The state stays unfinished until the sheet catches up, and you will collect several of these before it is complete. A drawing with holes in it is harder to show anybody.
+
+**Still unknown:** Still unknown: whether one darker accent covers every case, or whether hover on a muted surface needs its own. That only shows up when you build the second component.
+
 - Specify each state using only tokens from your sheet. Every time you cannot, stop and record the missing token rather than inventing a value silently.
 
 **You should end up with:** Each state built from tokens only, with every missing token recorded rather than invented.
@@ -2766,7 +2921,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Token:** A named entry on your sheet standing for one value, used everywhere that value is needed.
+- **Raw value:** A number or colour written straight into the design instead of a token name. It works in one place and matches nowhere else.
 
 Stuck starting? Take the default state and write the token name for every value it uses.
 
@@ -2799,7 +2955,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Hover:** How a control looks while a pointer is resting on it. There is no hover on a phone.
+- **Surface:** The background a component sits on. The same focus ring can be unmistakable on one surface and invisible on another.
 
 Stuck starting? Draw the focused state beside the hovered one and ask whether you could tell them apart across the room.
 
@@ -2835,7 +2992,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Disabled:** A control that is visible but cannot be used at this moment, and the reason belongs on the screen.
+- **Opacity:** How see-through something is drawn. Below full, whatever sits behind mixes in, so the result is not a colour you chose.
 
 Stuck starting? Write the sentence a reader needs before you choose any colour.
 
@@ -2857,7 +3015,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **State table:** The written record of your component: each state, the condition that produces it, and the tokens it uses.
+- **Condition:** The circumstance that brings a state about, such as the class being full. It is part of the specification, not a side note.
 
 Stuck starting? Write the table as state, condition, tokens used, notes.
 
@@ -3070,7 +3229,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Token sheet:** The list of named values you built in lesson 8: every colour, size and space the system allows.
+- **Gap:** Something the screen needed and the sheet does not contain. It is what the rebuild is for, not a sign the rebuild went badly.
 
 Stuck starting? Put the original out of sight and rebuild from the sheet and the state table.
 
@@ -3140,7 +3300,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Craft improvement:** A change to the surface you can show by measuring, such as contrast or the number of characters in a line.
+- **Outcome claim:** A sentence about what people will do or find easier. It needs a person attempting a task behind it.
 
 Stuck starting? List what you measured in this module first; those are the claims you can keep.
 
@@ -3149,6 +3310,20 @@ Is it enough? No sentence claims a change in what people will do.
 </details>
 
 #### 4. Name what craft did not fix
+
+**See it first.** Made-up example. Listing what the rebuild left unfixed, and filling the list with things the sheet could fix in an afternoon.
+
+- **My first list:** Three items: the button colour still feels heavy, the gap under the heading is tight, the price sits too low on the page.
+- **What I noticed about them:** All three are token decisions. Any of them could be settled with the sheet I already have, which makes them gaps from step 1, not things a system cannot reach.
+- **The question I asked instead:** What is wrong with this screen that no amount of colour, spacing or type would touch?
+- **The first real one:** The screen never says whether Reserve holds a place or takes the money. No token answers that. It needs a decision about the product, and then words.
+- **The second real one:** I do not know whether people arrive knowing which class they want or wanting to browse. The whole structure rests on an answer nobody has looked for.
+
+**The wrong turn:** The wrong turn is filling the list with visual complaints. They are easy to see, they show you are still being critical, and they are the work you already know how to do.
+
+**What it costs:** A list of two real problems looks thinner than a list of six, and neither of the real ones can be fixed this week. Naming them means carrying them.
+
+**Still unknown:** Still unknown: whether the missing sentence about holding against paying is the biggest problem or merely the most visible one. Only somebody attempting the task would say.
 
 - List the issues from the review that visual work cannot resolve, and say which later module addresses each one.
 
@@ -3161,7 +3336,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Design system:** Tokens, components and rules together: everything that decides how the surface looks and behaves.
+- **Unresolved list:** The record of what is still wrong once the rebuild is done, kept visible so it is not quietly dropped.
 
 Stuck starting? Look for a missing step, missing information, or a question about the reader that no amount of craft answers.
 
@@ -3183,7 +3359,8 @@ Worksheet fields for this step:
 <details>
 <summary>Help with this step</summary>
 
-
+- **Original:** The untouched Module 1 screen. It is evidence, so it does not get tidied afterwards.
+- **Pair:** The two versions kept together. Neither one on its own shows what changed.
 
 Stuck starting? Keep the original and the rebuild side by side; the pair is the evidence.
 
