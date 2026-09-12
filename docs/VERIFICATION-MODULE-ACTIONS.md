@@ -81,4 +81,10 @@ Contrast inputs returned 21:1 for black/white and 4.478:1 for #777777/white, cor
 
 Physical iOS/Android keyboard and long-background lifecycle tests, real screen-reader use and Haru's uncoached observation remain separate gaps. Desktop viewport emulation does not establish them. The existing all-course bundle remains large (about 1.62 MB gzipped); module splitting was not added to this teaching release.
 
-Release: pending deployment and hosted verification.
+## Release and hosted verification
+
+Implementation commit `e98b810` was pushed to `main`. Cloudflare deployed version `c88ff667-839a-4967-8306-8c79d535755b` at 100% on 12 September 2026, 18:38 UTC, at https://harucourse.raj-39e.workers.dev. Wrangler dry-run passed; the existing D1/KV bindings were retained and no schema migration was needed.
+
+All 43 hosted test-account records passed complete learning/worksheet round-trips, incomplete-finish rejection, stale-write rejection and reopening on edits. The integration restored original test records, advancing only their revisions/timestamps. Browser QA also used only the test account; Haru's records were not edited.
+
+The live HTML, service worker, JavaScript `index-CO1klV3-.js` and CSS `index-Pskh__dC.css` matched the local build byte-for-byte by SHA-256. Health returned 200 and unauthenticated progress returned 401. The live test workspace showed the 13-lesson Module 5 list and the revised interview action at 390 px, including the explicit rehearsal stop condition. The live contrast calculator fit without horizontal overflow, returned 4.478:1 for #777777/white, and its inputs measured 47.375 px high with 16 px text. No client errors were observed in the hosted QA tab. Temporary browser viewport/network overrides were reset and QA tabs closed.

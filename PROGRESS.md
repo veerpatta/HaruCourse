@@ -6,7 +6,7 @@ Desktop has a readable main column with task context; phones use a bounded overv
 
 Validation passed: generated content, worksheet IDs, learning/timer regressions, all 43 action contracts, both typechecks, build, 13 existing local backend groups and all 43 lesson API round-trips including invalid completion, stale revisions, reopening and restoration. Browser samples covered all five modules at phone, tablet and desktop widths, saved question/action resume, offline repair/reload/reconnect, update delivery and conditional research routes. Full evidence and release metadata: [docs/VERIFICATION-MODULE-ACTIONS.md](docs/VERIFICATION-MODULE-ACTIONS.md). Native phone and Haru observation remain pending.
 
-Release: pending deployment and hosted verification.
+Released: implementation `e98b810` is on `main`; Cloudflare version `c88ff667-839a-4967-8306-8c79d535755b` serves 100% of traffic. Live asset hashes, health/auth checks, all 43 hosted lesson persistence/completion/conflict checks and the final phone-width research/calculator checks passed. The integration restored its original test records. Haru's records were not edited.
 
 # Lesson 1 rebuilt around small actions and reliable tracking — 12 September 2026
 
