@@ -53,8 +53,10 @@ export default defineConfig({
         // rather than the content being dropped from the precache. The cost is
         // a large first download and a slower parse on a low-end phone, which
         // is a real trade and worth revisiting by splitting the modules into
-        // per-module chunks that are precached individually.
-        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
+        // per-module chunks that are precached individually. Raised again on
+        // 12 September 2026, when guided practice for Modules 11 to 20 took
+        // the chunk to 5.41 MiB and the 4 MiB limit began failing the build.
+        maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
         // The plugin already injects the manifest and the icons it references;
         // globbing them again only duplicated the precache entries.
         globIgnores: ["manifest.webmanifest", "icon-192.png", "icon-512.png"],

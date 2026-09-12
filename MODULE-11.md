@@ -38,81 +38,210 @@ Five barriers from the booking product. A person using a screen reader cannot te
 
 Identify five specific barriers in your own product, each naming the person, the situation and the design decision that causes it.
 
-**Where to work:** Your own product and your own eyes, plus the situational tests you can do now: outdoors in daylight, one-handed, with the screen at its dimmest. No tools or purchases are required for this lesson.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Your own product and your own eyes, plus the situational tests you can do now: outdoors in daylight, one-handed, with the screen at its dimmest. No tools or purchases are required for this lesson.
 
 - Starting material: Your current screens and interaction specifications.
 - Create HaruCourse/Practice/m11-l01-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Who is excluded, and by what
+#### 1. Read the introduction
 
-Input artifact: Your current screens and interaction specifications.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Five specific barriers naming person, situation and cause
-- [ ] The design decision behind each barrier
-- [ ] A note of which are permanent, temporary or situational
-- [ ] One barrier you had not previously considered
-
-## 1. Read the introduction
 - Read the assigned accessibility introduction.
 - Write in your own words what makes something a barrier.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One sentence in your own words saying what makes something a barrier, written as a mismatch rather than as a property of a person.
 
-## 2. Walk your product looking for exclusion
+Worksheet fields for this step:
+
+- In your own words: what makes something a barrier? — Write it as something about the meeting between a person and a design, not about the person.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Barrier:** Something in a design that stops a particular person doing a particular thing. It lives in the design, which is why it can be removed.
+- **Assistive technology:** Software or hardware someone uses to reach a product: a screen reader, magnification, voice control, a switch. Most barriers are met by people using none of it.
+
+Stuck starting? Finish this sentence: “something is a barrier when the design …”.
+
+Is it enough? Your sentence names something the design does, and would still make sense if you never used the word disability.
+
+</details>
+
+#### 2. Walk your product looking for exclusion
+
+**See it first.** Made-up example. Writing the first barrier for a class-booking product, and writing a category instead.
+
+- **What I wrote first:** “Blind users cannot use the booking flow.” I wrote it, felt serious about accessibility, and moved to the next line.
+- **Why it was no use on Monday:** I could not act on it. It does not say which screen, which task, or what to change. A fortnight later it would still be sitting there, true and inert.
+- **What I did instead:** I took one task — choose between two classes — and asked at each step what a person hears rather than sees. On the results screen, availability is a coloured dot with no text beside it.
+- **What I wrote in the end:** “A person using a screen reader, choosing between two classes, cannot tell which one is full, because availability is shown only as a red or green dot.” That names a decision I made in Module 8.
+- **What it cost me:** The specific version covers one screen instead of sounding like it covers everything. I need four more, and each one takes a walk through a real task.
+
+**The wrong turn:** The wrong turn is writing the category, because it sounds like more coverage than the specific line does. It reads as serious, it is unarguable, and nothing about the product changes because of it.
+
+**What it costs:** Specific barriers are narrow. Somebody may ask whether five is enough, and five is certainly not all of them. Five you can fix beats twenty you cannot.
+
+**Still unknown:** Still unknown: whether a person using a screen reader would even reach that screen the way I did. Nothing here is testing with disabled people, and this list does not pretend to be.
+
 - Walk one task asking at each step who could not do this.
 - Include vision, hearing, motor, cognitive and language differences.
 - Write each barrier as a person in a situation, not a category.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Five barriers, each naming a person, a situation, the task and the thing that stopped them.
 
-## 3. Name the decisions
+**Try it with help.** Six lines from a made up accessibility review of a tool-library product. For each one, decide what it actually is.
+
+- A person using a screen reader, choosing between two drills, cannot tell which is already out on loan, because that is shown only as a coloured dot.
+  - **a named barrier** — It names the person, the moment, the task and the decision — a dot carrying meaning by colour alone. Every part of it can be changed.
+  - a category — A category would stop at “screen reader users”. This one carries on into the task and the decision, which is the difference.
+  - a repair in disguise — No repair appears here. Several would fit: a text label, a different pattern, a change to the list itself.
+- Older users struggle with the interface.
+  - a named barrier — Nothing here says which screen, which task, or what stopped anybody. Struggling is a summary, not something you can point at.
+  - **a category** — A group of people, a vague verb and no decision. It cannot be fixed because it names nothing to fix.
+  - a repair in disguise — There is no repair in it either. It is the sentence people write when they have not walked a task yet.
+- We should increase all our text to 16px minimum.
+  - a named barrier — It may well be a good change. It does not say who could not read what, so you cannot tell whether it fixes anything.
+  - a category — It names no group of people at all. It jumps straight past the problem to an answer.
+  - **a repair in disguise** — It arrives as a finding and is actually an answer. If the real barrier is contrast rather than size, this changes nothing and looks like progress.
+- Anyone collecting a tool outside cannot read the collection code, because it is grey on white at about 3 to 1.
+  - **a named barrier** — The situation is the disability here: bright light. It names the task, the element and the measurement, so it is fixable and checkable.
+  - a category — No group is named, which is exactly why it works. It describes a situation anybody can be in.
+  - a repair in disguise — It stops before the repair. Darkening the text is one answer; moving the code out of the sunlight is another.
+- The product is not WCAG compliant.
+  - a named barrier — It names no person, no task and no decision. It is a verdict on the whole product rather than a description of anything in it.
+  - **a category** — This is the same shape as “older users struggle”, with a standard in place of a group. It is unarguable and unfixable as written.
+  - a repair in disguise — There is no repair here to disguise. Compliance is an outcome, and this sentence does not say of what.
+- A person with a hand tremor, returning a tool, cannot remove an item from the basket, because swiping is the only route.
+  - **a named barrier** — Person, task, and the decision that caused it: one route, and that route needs a controlled gesture. The fix becomes obvious once it is written this way, which is the point.
+  - a category — It would be a category if it stopped at “people with tremors”. It does not.
+  - a repair in disguise — Adding a visible remove control is the likely repair, and this line deliberately stops short of it.
+
+**Then:** Now write your own five. If a line has no person, no task or no decision in it, it is one of the other two kinds.
+
+**What to watch for:** The two that catch people out are the standard and the pixel value, because both sound more professional than the specific sentence. A category tells you nothing to change. A repair tells you what to change before anyone has said what is wrong.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Barrier 1 · who, in what situation, trying to do what, stopped by what — Finish this sentence: a person who … trying to … cannot, because ….
+- Barrier 2 · who, in what situation, trying to do what, stopped by what
+- Barrier 3 · who, in what situation, trying to do what, stopped by what
+- Barrier 4 · who, in what situation, trying to do what, stopped by what
+- Barrier 5 · who, in what situation, trying to do what, stopped by what
+
+<details>
+<summary>Help with this step</summary>
+
+- **Permanent, temporary, situational:** One person may have low vision always, another after eye surgery, a third only in sunlight. All three meet the same design.
+- **Category:** A group of people named as a shorthand, such as “blind users” or “older users”. It sounds like a finding and cannot be fixed, because it names nobody in particular and no decision at all.
+
+Stuck starting? Pick one task from your own product and walk it slowly, asking at each screen who could not do this.
+
+Is it enough? Every one of the five could be handed to somebody else, who could reproduce it without asking you a question.
+
+</details>
+
+#### 3. Name the decisions
+
+**See it first.** Made-up example. Naming the decision behind a barrier in a tool-library product, and stopping one step too early.
+
+- **The barrier:** A person with a tremor cannot cancel a booking without sometimes hitting delete instead. The two controls sit four pixels apart.
+- **What I wrote as the decision:** “Bad spacing.” Accurate, and useless. It reads like a mistake nobody made, which is why it is comfortable to write.
+- **Where the decision actually lived:** I went back to the component. The pair was copied from the card in Module 8, where the two controls were harmless. The four pixels came with it.
+- **What I wrote instead:** “Inherited from the card component: destructive and primary actions in a tight pair, four pixels apart. Never decided here.”
+- **Why that sentence is worth more:** It tells me the fix belongs in the component rather than on this screen, and that the same pair is probably on three other screens I have not looked at.
+
+**The wrong turn:** The wrong turn is writing the decision as a fault rather than as a choice with an address. A fault gets fixed where you noticed it, and the same barrier stays everywhere else it was copied to.
+
+**What it costs:** Tracing a decision back to the component takes longer than writing “bad spacing”, and it can mean reopening work you thought was finished.
+
+**Still unknown:** Still unknown: how many screens carry the same copied pair. I have not looked, and this lesson is not the place to; it goes on the list for the module review.
+
 - For each barrier, name the design decision that causes it.
 - Mark whether the decision was deliberate or inherited.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** For each barrier, the design decision behind it, and whether you made that decision or inherited it.
 
-## 4. Test the situational cases
+Worksheet fields for this step:
+
+- For each barrier: the design decision that causes it — Point at the screen, the specification or the component where the decision lives.
+- For each decision: did you make it, or did it arrive with something you copied?
+
+<details>
+<summary>Help with this step</summary>
+
+- **Inherited decision:** Something that arrived with a component, a template or a pattern you copied, and was never decided by you. It is still yours now.
+- **Deliberate decision:** Something you chose, usually for a reason you can still remember. These are the ones you can argue with.
+
+Stuck starting? Take your first barrier and ask where the thing that caused it is defined: a screen, a component, or a rule you wrote earlier.
+
+Is it enough? No line reads as a general failing. Each names something with a location you could open.
+
+</details>
+
+#### 4. Test the situational cases
+
 - Try your product outdoors, one-handed, and at lowest brightness.
 - Add any barrier these reveal.
 - Note which barriers apply to more than one group.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three situational tests actually run, any barrier they revealed, and a note of which barriers affect more than one group.
 
-## 5. Record and rank
+Worksheet fields for this step:
+
+- What happened outdoors, one-handed, and at the lowest brightness — Three short lines. If you could not go outdoors, say so and use the brightest light you have.
+- Any barrier these tests added or changed
+- Which barriers affect more than one group
+
+<details>
+<summary>Help with this step</summary>
+
+- **Situational barrier:** The same difficulty arriving from the circumstances rather than the person: sunlight, one hand on a rail, a noisy room, a cracked screen.
+- **Preliminary check:** Something you can run yourself, today, without special equipment. It finds real problems, and it is not testing with disabled people.
+
+Stuck starting? Take your phone outside, or to the brightest window you have, and try the task you walked in step 2.
+
+Is it enough? Each of the three lines says what you actually did and what you actually saw, including “nothing changed” where that is the truth.
+
+</details>
+
+#### 5. Record and rank
+
 - Rank the five barriers by how completely they block the task.
 - Mark the one you had not considered before.
 - Save the list; the rest of the module works from it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The five barriers ranked by how completely they block the task, the one that surprised you marked, and the repair from the Check questions recorded.
 
-## Review and handoff
-- Five barriers name a person, a situation and a task: [evidence reference]
-- Each barrier names the design decision behind it: [evidence reference]
-- Permanent, temporary and situational cases are covered: [evidence reference]
-- Barriers are ranked by how completely they block: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The five barriers in order, most completely blocking first — Ask of each one: can the person finish the task another way? The ones with no other route go first.
+- The one you had not considered before
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Total block:** There is no other route to the outcome, so the person stops. This ranks above anything that is merely slow or unpleasant.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Ask of each barrier: can this person finish the task another way? The ones with no other way go to the top.
+
+Is it enough? The order is defended by routes rather than by how bad each one feels, and the surprise is marked.
 
 </details>
+
+**Save and continue.** Saved for you: Your definition, the five barriers, the decisions and the ranking save as you type, on this device first and then online. Kept outside the app: Screens and prototypes stay where they already are on your computer. If you photographed anything during the situational tests, keep it in your own folder and note the file name here. What your creator sees: Your creator reads the five barriers and the decision beside each one. A barrier traced back to a component you copied reads better than one blamed on nothing. Your next action: Open Your work and choose Ready for review. The next lesson maps these five barriers onto the standard, so keep them exactly as they are.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -275,79 +404,210 @@ Five barriers mapped to five criteria. Colour-only availability mapped to the us
 
 Map your five barriers to specific success criteria at levels A and AA, and record for each what would count as meeting it in your design.
 
-**Where to work:** The quick reference in a browser, filtered to level A and AA. No account, tooling or subscription is involved; the mapping is written work.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: The quick reference in a browser, filtered to level A and AA. No account, tooling or subscription is involved; the mapping is written work.
 
 - Starting material: Your five barriers with their causes.
 - Create HaruCourse/Practice/m11-l02-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Using the standard without drowning in it
+#### 1. Orient in the standard
 
-Input artifact: Your five barriers with their causes.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Each barrier mapped to a named success criterion
-- [ ] What meeting it means in your specific design
-- [ ] A note where no criterion covers your barrier
-- [ ] A stated target level with the reason
-
-## 1. Orient in the standard
 - Open the assigned quick reference and filter to levels A and AA.
 - Write the four principles and one criterion you already meet.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The four principles in your own words, and one criterion you already meet with the reason you know it.
 
-## 2. Map your barriers
+Worksheet fields for this step:
+
+- The four principles, in your own words — Perceivable, operable, understandable, robust. One short line each; you will use them as a filter, not as a quotation.
+- One criterion your design already meets, and how you know
+
+<details>
+<summary>Help with this step</summary>
+
+- **Success criterion:** One numbered statement of something that must be true. It says what, never how, so several designs can meet the same criterion.
+- **Level A, AA, AAA:** Three tiers. A is the floor, AA is the common working target, AAA is adopted criterion by criterion where an audience needs it rather than as a whole.
+- **Quick reference:** The filterable view of the standard. You set the level and the topic, and it shows only the criteria that apply, which is how it becomes usable.
+
+Stuck starting? Open the quick reference, set the filter to levels A and AA, and read only the four principle headings first.
+
+Is it enough? Your four lines are in your own words, and the criterion you already meet names how you know rather than that it feels right.
+
+</details>
+
+#### 2. Map your barriers
+
+**See it first.** Made-up example. Looking for the criterion that covers a swipe-only remove control, and reading the standard the wrong way round.
+
+- **What I did first:** I opened the standard at the top and started reading. Forty minutes later I was in the middle of the second principle, had read about sign language, and had matched nothing.
+- **Why that failed:** Read front to back, the standard is a wall. Nothing in it is written about my product, so every criterion looks either irrelevant or vaguely applicable.
+- **What I changed:** I went back to the barrier and asked one question: what can this person not do? Not see, not work, or not understand? Swiping is working a control, so this is operable.
+- **Where that put me:** Filtered to operable, at levels A and AA, there are far fewer criteria. The keyboard criterion says every function is available from a keyboard. That is exactly my barrier.
+- **What I wrote:** “Swipe-only removal · keyboard, 2.1.1 · every function can be worked from a keyboard.” Two minutes, once I asked the right question first.
+
+**The wrong turn:** The wrong turn is starting in the standard rather than in the barrier. It feels thorough and it produces a compliance pass: a lot of reading, and no change to the thing that excludes somebody.
+
+**What it costs:** Filtering from your barriers means you will not read most of the standard, and there are certainly criteria you are failing that no barrier of yours named. That is a real gap, and it is smaller than the gap left by reading everything and mapping nothing.
+
+**Still unknown:** Still unknown: whether one criterion is enough for this barrier. A swipe-only control may also fail target size or pointer gestures, and I have not checked.
+
 - For each barrier, find the criterion that names it.
 - Record the criterion number and its plain statement.
 - Mark any barrier the standard does not cover.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each of your five barriers matched to a named, numbered criterion, or marked as something the standard does not cover.
 
-## 3. Translate to your design
+**Try it with help.** Six barriers from a made up library-booking product. For each one, decide which principle to filter by first — that is the whole trick to finding the criterion quickly.
+
+- Availability is shown only by a red or green dot, so a person who cannot distinguish the two cannot tell them apart.
+  - **perceivable** — The information never reaches the person. That is the perceivable principle, and it leads straight to the use-of-colour criterion.
+  - operable — Nothing here is about working a control. The person is not trying to do anything yet; they are trying to receive something.
+  - understandable — The meaning would be clear if it arrived. The problem is that it does not arrive.
+- The only way to remove an item is to swipe it, which needs a controlled gesture on a touchscreen.
+  - perceivable — The control is visible and its meaning is clear. The difficulty is entirely in working it.
+  - **operable** — Working a control is the operable principle. Filtered there, the keyboard and pointer-gesture criteria both appear.
+  - understandable — The person knows exactly what they want to do and what will happen. They cannot do it.
+- When a booking fails, the message says “Error 4021” and nothing else.
+  - perceivable — The message is on screen, legible and announced. It reaches the person perfectly well.
+  - operable — No control is involved. The person is stuck on meaning rather than on operation.
+  - **understandable** — Error identification and error suggestion both live under understandable, and both apply here.
+- The booking form clears itself after two minutes of inactivity, with no warning and no way to extend.
+  - perceivable — Everything was visible right up to the moment it disappeared. Perception is not the problem.
+  - **operable** — Time limits sit under operable, alongside keyboard and target size. Anything about whether a person can complete an action in the time allowed belongs here.
+  - understandable — The person understood the form. They ran out of time, which is a different thing.
+- The collection instructions are grey on white and cannot be read outdoors.
+  - **perceivable** — Contrast is the classic perceivable criterion. If the text cannot be distinguished from its background, nothing else matters.
+  - operable — Reading is not operating. No control is involved in this one.
+  - understandable — The words would be perfectly clear if they could be seen.
+- Choosing a collection branch reloads the page and moves the person to a different screen without warning.
+  - perceivable — Everything on both screens is visible and readable. The surprise is the problem, not the perception.
+  - operable — The control worked exactly as built. Nobody was prevented from operating anything.
+  - **understandable** — Predictability lives under understandable: a change of context on selection is the criterion this maps to.
+
+**Then:** Now take your own five barriers and ask the same question of each before you open the standard: cannot receive it, cannot work it, or cannot make sense of it?
+
+**What to watch for:** The two that people mis-sort are the time limit and the unexpected reload, because both feel like the person “could not use it” in a general way. Ask what the person was doing at the moment it went wrong: receiving, working, or making sense.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Barrier 1 · the criterion that names it, its number, and what it says in plain words
+- Barrier 2 · the criterion that names it, its number, and what it says in plain words
+- Barrier 3 · the criterion that names it, its number, and what it says in plain words
+- Barrier 4 · the criterion that names it, its number, and what it says in plain words
+- Barrier 5 · the criterion that names it, its number, and what it says in plain words
+- Any barrier the standard does not cover, and what you will do about it — Some real barriers have no criterion. Record them as product requirements rather than stretching a criterion to fit.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Perceivable:** Can the person receive it at all — see it, hear it, feel it? Contrast, alternative text and colour-only meaning live here.
+- **Operable:** Can the person work it? Keyboard routes, target size, time limits and motion live here.
+- **Understandable:** Can the person make sense of it? Language, predictable behaviour, labels and error help live here.
+
+Stuck starting? Take barrier one and ask which of the three the person could not do: receive it, work it, or make sense of it. Then filter to that principle.
+
+Is it enough? Each of the five names a criterion number, and any barrier with no criterion is marked uncovered rather than forced into one.
+
+</details>
+
+#### 3. Translate to your design
+
+**See it first.** Made-up example. Translating the use-of-colour criterion for a library-booking product, and writing the criterion back to myself twice.
+
+- **What I wrote first:** “Ensure colour is not used as the only visual means of conveying information.” I had copied the criterion, changed one word, and felt I had done the step.
+- **What a builder would do with that:** Ask me which element. The sentence applies to the whole product, so it is a request for judgement rather than an instruction.
+- **What I asked instead:** Which element in my design? The availability dot on the results card. What change? Text beside it.
+- **What I wrote in the end:** “The availability dot on the results card gains the words Places available, 2 left, or Full beside it, at the same size as the class time.” One element, one change, checkable.
+- **What that let me do next:** I could see immediately that the same dot appears in the shortlist and the confirmation, so the translation needed a second line rather than a wider sentence.
+
+**The wrong turn:** The wrong turn is restating the criterion, because it is fast and it looks like the same kind of sentence. The test is whether a person who has never read the standard could act on your line.
+
+**What it costs:** Naming elements means your mapping only covers the screens you named, and someone may point out you have three more. Better to know that than to have one sentence pretending to cover everything.
+
+**Still unknown:** Still unknown: whether the words fit on the card at the narrowest width. That is a layout question and it belongs to the next lesson, not to this one.
+
 - For each criterion write what meeting it means for your specific screens.
 - Name the change required, not the criterion text.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** For each criterion, one sentence naming the element in your own design and the change that would meet it.
 
-## 4. Choose your target
+Worksheet fields for this step:
+
+- For each criterion: what meeting it means in your own screens — Name the element and the change. Do not restate the criterion.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Translation:** Turning “colour is not the only means of conveying information” into “the availability dot gains the word Full beside it”. The criterion is the rule; this is the work.
+- **Restating:** Writing the criterion again in slightly different words. It reads like progress and tells a builder nothing.
+
+Stuck starting? Take your first criterion and finish this sentence: “in this design, meeting this means that …”, naming an element.
+
+Is it enough? Somebody who had not read the standard could carry out every line without asking you what it means.
+
+</details>
+
+#### 4. Choose your target
+
 - State whether you are working to A, AA, or AA plus specific AAA criteria.
 - Record any AAA criterion you adopt and why your audience needs it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A stated target level with a reason, and any AAA criterion you adopt justified by your audience.
 
-## 5. Record the boundary
+Worksheet fields for this step:
+
+- The level you are working to (A / AA / AA plus named AAA criteria)
+- Why that level fits this product and this audience
+- Any AAA criterion you adopt, and the audience reason for it — Leave blank if none. Adopting one is a choice you defend, not a badge.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Working target:** The level you hold your own work to. AA is the common one because it covers the barriers most people meet without demanding things few products can sustain.
+- **Adopting a AAA criterion:** Taking one higher criterion because your particular audience needs it, and saying which audience. It is a considered addition, not a claim to reach AAA.
+
+Stuck starting? Write the level first, then the reason. If you cannot write a reason, the level is inherited rather than chosen.
+
+Is it enough? Your reason mentions this product and these people, not general good practice.
+
+</details>
+
+#### 5. Record the boundary
+
 - Write one sentence separating criteria you have read from conformance you have tested.
 - Save the mapping; later lessons check these one by one.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One sentence separating criteria you have read from conformance nobody has tested, and the repair the Check questions asked for.
 
-## Review and handoff
-- Each barrier maps to a named criterion or is marked uncovered: [evidence reference]
-- Meeting each criterion is stated in terms of your screens: [evidence reference]
-- A target level is chosen with a reason: [evidence reference]
-- The read-versus-tested boundary is stated: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- One sentence separating what you have read from what you have tested
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Conformance:** A claim that a real, finished thing meets every criterion at a level. It rests on testing, so a mapping made during design cannot establish it.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Write what you did today in one clause, and what nobody has done yet in the next.
+
+Is it enough? The sentence would stop a reader quoting this mapping as evidence that the product conforms.
 
 </details>
+
+**Save and continue.** Saved for you: Your principle notes, the five mappings, the translations and the target level save as you type, on this device first and then online. Kept outside the app: The quick reference stays open in your browser and nothing is copied out of it beyond the criterion numbers and your own plain-words summary. What your creator sees: Your creator reads the translation beside each criterion. A line naming an element and a change is the one that shows the standard was used as a tool. Your next action: Open Your work and choose Ready for review. The next lesson takes the structure criteria and checks two of your screens against them.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -510,80 +770,208 @@ The class detail screen had five visual headings and no outline: three were leve
 
 Give two screens a correct heading outline, named regions and a reading order that matches the visual order, and verify each with a check you can run yourself.
 
-**Where to work:** An indented text outline plus a sketch with regions marked. If your prototype is a local HTML file, the browser alone lets you check heading levels and tab order without any extension.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: An indented text outline plus a sketch with regions marked. If your prototype is a local HTML file, the browser alone lets you check heading levels and tab order without any extension.
 
 - Starting material: Two current screens and your m06 heading outline.
 - Create HaruCourse/Practice/m11-l03-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Structure people can navigate
+#### 1. Read and write the outline
 
-Input artifact: Two current screens and your m06 heading outline.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A heading outline per screen with correct nesting
-- [ ] Named regions for banner, navigation, main and footer
-- [ ] A reading-order check with any mismatch fixed
-- [ ] A read-aloud test of the headings alone
-
-## 1. Read and write the outline
 - Read the assigned page-structure sections on headings and regions.
 - Write each screen as an indented outline using your existing labels.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Two screens written as indented outlines, using the labels you already chose in Module 6.
 
-## 2. Fix the levels
+Worksheet fields for this step:
+
+- Screen 1 · the heading outline, indented
+- Screen 2 · the heading outline, indented
+
+<details>
+<summary>Help with this step</summary>
+
+- **Heading outline:** The headings of a screen, in order, with their levels shown by indentation. It is what a person hears when they ask for the structure instead of the text.
+- **Page title:** The single top heading that says what this screen is. One per screen; a second one tells a reader they have arrived somewhere new when they have not.
+
+Stuck starting? Write the screen name on the first line, then indent one step for each section under it.
+
+Is it enough? Both outlines are indented text you could read to somebody, not a list of labels in visual order.
+
+</details>
+
+#### 2. Fix the levels
+
+**See it first.** Made-up example. Fixing the outline of a class detail screen, where the levels had been chosen by how big the text looked.
+
+- **What I found:** Five headings, three of them level one. They were level one because they were set in the large size, and the large size had been chosen because they were important.
+- **Why that is a real problem:** Somebody navigating by structure hears three page titles and concludes they have landed on three different pages. The screen has no shape at all.
+- **The question I used instead:** Is this a section of the thing above it, or is it a new thing? Not: is this big? What to bring is part of the class. Dates is part of the class. Both are level two.
+- **What I changed:** One page title, four level-two sections, and the two month lists under Dates became level three. The visual sizes did not all change; size and level stopped being the same decision.
+- **The heading I rewrote:** Details became What to bring. Details could sit above anything, which is exactly why it was chosen and exactly why it was no use.
+
+**The wrong turn:** The wrong turn is letting visual size decide the level, because in a design tool they are the same act. It produces four level-one headings and an outline that summarises nothing.
+
+**What it costs:** Separating level from size means the outline and the visual hierarchy have to be checked separately, and occasionally a level-two heading is set smaller than a level-three one elsewhere. That is fine, and it does have to be noticed.
+
+**Still unknown:** Still unknown: whether the two month lists should be headings at all, or a single list with dates in it. Both outlines read sensibly, and nothing in this lesson decides between them.
+
 - Check no level is skipped and there is exactly one page title.
 - Rewrite any heading that does not describe its section.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Corrected levels with one page title and no skipped level, and every heading that described nothing rewritten.
 
-## 3. Mark the regions
+**Try it with help.** Six headings from a made up tool-library screen. For each one, decide what kind of heading it is.
+
+- What you need to bring
+  - **describes its own section** — Read on its own it tells you what is underneath. That is the whole test for a heading.
+  - could sit above anything — It could not. It names one specific thing and would be wrong above the opening hours.
+  - describes the whole page — It names one part. A person hearing it knows they are inside something larger.
+- Details
+  - describes its own section — It gives a reader nothing to decide with. Anything at all could be underneath it.
+  - **could sit above anything** — This is the commonest empty heading. It occupies the position of a signpost and points nowhere.
+  - describes the whole page — It is not doing that either. It is not describing anything.
+- Northside Tool Library
+  - describes its own section — Nothing is underneath it in particular. It is naming the place rather than a part of it.
+  - could sit above anything — It is specific. The difficulty is that it is specific about the whole thing.
+  - **describes the whole page** — This is a page title. There should be exactly one, and a second one sends a reader looking for a page they have not left.
+- More information
+  - describes its own section — A reader cannot tell whether it holds opening hours, safety notes or a phone number.
+  - **could sit above anything** — Along with Details and Other, this is a heading written when the writer had not decided what the section was.
+  - describes the whole page — It is too vague to name the page, and it would be an odd page title if it did.
+- If you return a tool late
+  - **describes its own section** — It names a situation, so the reader knows whether to stop here or move on. That is what makes an outline usable.
+  - could sit above anything — It is tied to one specific circumstance and would be wrong above almost everything else on the page.
+  - describes the whole page — It is one case among several the page covers.
+- Borrowing a cordless drill
+  - describes its own section — It could be, on a longer page about borrowing generally. On a page about this one drill it is the subject of the whole thing.
+  - could sit above anything — It is entirely specific, which is why the choice here is between the other two.
+  - **describes the whole page** — On a page about borrowing this drill, this is the page title. Deciding that is the point: the same words are a section heading somewhere else.
+
+**Then:** Now read your own two outlines and mark each heading with one of the three. Anything in the middle group gets rewritten.
+
+**What to watch for:** The last one is the useful case: the same words are a page title on one screen and a section heading on another. A heading level is a statement about where you are, so it depends on the screen rather than on the words.
+
+Worksheet fields for this step:
+
+- Every level you changed, and why — Look for more than one page title, and for a level that jumps from one to three.
+- Every heading you rewrote because it described nothing
+
+<details>
+<summary>Help with this step</summary>
+
+- **Skipped level:** Going from level one to level three with nothing in between. A person navigating by structure hears a gap and cannot tell what the section belongs to.
+- **Empty heading:** A word that would sit equally well above any section: Details, More, Information, Other. It occupies the position of a signpost and points nowhere.
+
+Stuck starting? Cover the content. Read only your headings, and mark every one you could not guess the contents of.
+
+Is it enough? One page title per screen, no skipped level, and no heading left that could sit above anything.
+
+</details>
+
+#### 3. Mark the regions
+
 - Identify banner, navigation, main content, complementary and footer.
 - Check the main content can be reached without passing the navigation.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A region map for each screen and a stated route to the main content that does not go through the navigation.
 
-## 4. Check reading order
+Worksheet fields for this step:
+
+- Screen 1 · banner, navigation, main content, complementary, footer
+- Screen 2 · banner, navigation, main content, complementary, footer
+- How somebody reaches the main content without going through the navigation first
+
+<details>
+<summary>Help with this step</summary>
+
+- **Region:** A named area of the screen: the banner at the top, the navigation, the main content, anything alongside it, and the footer. Naming them lets somebody jump straight to one.
+- **Main content:** The part of this screen that is not repeated on every other screen. Being able to reach it directly is the difference between hearing the menu once and hearing it on every page.
+
+Stuck starting? Sketch each screen as boxes and write the region name inside each box.
+
+Is it enough? Every part of both screens belongs to exactly one region, and the route to the main content is one sentence.
+
+</details>
+
+#### 4. Check reading order
+
+**See it first.** Made-up example. Checking the reading order of a class detail screen and finding the problem in the place that looked best.
+
+- **What I expected:** That the order would be fine. The screen reads top to bottom and nothing about it looks unusual.
+- **What I actually did:** I wrote the content order as a numbered list without looking at the layout, working from the structure rather than the picture.
+- **What the list showed:** The price panel, which sits beside the title, was item fourteen. Everything in the description came before it.
+- **Why that matters:** Somebody meeting the screen one item at a time hears three paragraphs about the class before learning what it costs. Visually the price is the second thing you see.
+- **What I changed:** I moved the price before the description. It looks identical, and it now arrives in both orders at roughly the same point.
+
+**The wrong turn:** The wrong turn is checking the order by looking at the screen, because the screen is the thing that hides the problem. Writing the order out blind is what makes the mismatch visible.
+
+**What it costs:** Writing the order as a list for two screens is dull and takes twenty minutes, and most of it will confirm what you already thought. The one item that does not is the whole return on it.
+
+**Still unknown:** Still unknown: whether anyone actually reads in that order on this screen. I have not watched anybody use it, and nothing in this lesson does.
+
 - Write the order content is actually in, not how it looks.
 - Compare with the visual order and fix any mismatch.
 - Pay attention to sidebars, two-column forms and floating panels.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The content order written as a numbered list, compared with the visual order, and every mismatch fixed or recorded.
 
-## 5. Read the headings aloud
+Worksheet fields for this step:
+
+- The order the content is actually in, as a numbered list — Not how it looks. What order would somebody meet it in if they met one thing at a time.
+- Every place the content order differs from the visual order, and what you did
+
+<details>
+<summary>Help with this step</summary>
+
+- **Reading order:** The order the content is really in, which is the order a person meets it when they cannot see the whole screen at once.
+- **Visual order:** The order the eye takes. Two columns, a floating panel or a sidebar can put these two badly out of step without anything looking wrong.
+
+Stuck starting? Write the numbered list first, from the structure, and only then compare it against the layout.
+
+Is it enough? Every mismatch is either fixed or written down with the reason it stays.
+
+</details>
+
+#### 5. Read the headings aloud
+
 - Read only the headings to another person and ask what the page contains.
 - Rewrite anything they cannot infer.
 - Save the outlines, regions and order notes.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A record of reading only the headings aloud, what the listener said the page contained, and what you rewrote.
 
-## Review and handoff
-- Headings are correctly nested and descriptive: [evidence reference]
-- Regions are named and main content is directly reachable: [evidence reference]
-- Reading order matches visual order: [evidence reference]
-- The read-aloud check was run and changed something: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Who you read the headings to, or how you ran it alone — If nobody was available, read them aloud yourself, write down what they suggest, and say so here. That is an honest result.
+- What they said the page contains
+- What you rewrote afterwards
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **The read-aloud check:** Reading only the headings, in order, to somebody who has not seen the screen. If they cannot say what the page holds, the outline is not doing its job.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Read the headings of screen one aloud, in order, and stop. Ask what the page is about.
+
+Is it enough? You have written what they actually said, including the parts they got wrong, rather than what you hoped they would say.
 
 </details>
+
+**Save and continue.** Saved for you: Both outlines, the region maps, the order list and the read-aloud result save as you type, on this device first and then online. Kept outside the app: Any sketch of the regions stays in your own folder. Note its file name here so you can find it when the module review comes round. What your creator sees: Your creator reads the outlines and the order mismatch you found. A mismatch you found and fixed is worth more than an outline that was right first time. Your next action: Open Your work and choose Ready for review. The next lesson measures the text on these same two screens.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -746,83 +1134,209 @@ Nine text pairs were measured. Three failed: the caption at 3.1:1, the placehold
 
 Measure contrast for every text pair in your design, test the layout at 200 per cent text size, and repair what breaks without removing content.
 
-**Where to work:** Any free browser-based contrast checker, or compute the ratio in a spreadsheet from the published formula. For enlarged text, your browser's own text-size setting shows real reflow with no tooling.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Any free browser-based contrast checker, or compute the ratio in a spreadsheet from the published formula. For enlarged text, your browser's own text-size setting shows real reflow with no tooling.
 
 - Starting material: Your token sheet with its text and surface pairs.
 - Create HaruCourse/Practice/m11-l04-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Text people can actually read
+#### 1. Measure everything
 
-Input artifact: Your token sheet with its text and surface pairs.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Measuring the text on a tool-library card, and listing only the text I had designed on purpose.
 
-## Output checklist
-- [ ] Measured ratios for every text-on-surface pair
-- [ ] Repairs for every failing pair, recorded
-- [ ] A 200 per cent text test with breakages named and fixed
-- [ ] A line-length and spacing decision for body text
+- **What I listed:** Six pairs: the title, the body, the two headings, the button label and the price. All six passed comfortably, and I nearly wrote that the screen was fine.
+- **What made me look again:** The barrier list from lesson one had a line about a collection code nobody could read outdoors, and the code was not among my six.
+- **What I had left out:** Placeholder text in the search box. Helper text under the date field. The disabled label on the unavailable button. The caption under the photograph. None of them felt like text I had designed; all of them are text somebody reads.
+- **What the numbers were:** Placeholder 2.8 to 1, helper 3.4 to 1, disabled label 2.4 to 1, caption 3.1 to 1. Four failures, none of them in my original list.
+- **What I changed about the method:** I stopped listing text and started listing places text sits on a surface, going through the screen area by area rather than from memory.
 
-## 1. Measure everything
+**The wrong turn:** The wrong turn is listing the text you chose rather than the text that is there. Everything you deliberately set is likely to be fine, because you were looking at it when you set it.
+
+**What it costs:** Going area by area is slower and produces a longer, duller list, most of which passes. It is the only way the quiet text gets measured at all.
+
+**Still unknown:** Still unknown: what the caption measures over the lighter part of the photograph. The ratio changes across the image, and a single number does not describe it.
+
 - List every text-on-surface pair, including quiet text.
 - Measure each ratio and record it in the token sheet.
 - Mark every pair below the relevant threshold.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every text-on-surface pair listed, each with a measured ratio, and the failing ones marked with their size.
 
-## 2. Repair the failures
+Worksheet fields for this step:
+
+- Every place text sits on a surface, including the quiet text — Body, headings, captions, placeholder text, disabled labels, text over images, text inside buttons, and anything in a coloured panel.
+- The measured ratio for each pair
+- The pairs below the threshold that applies to them — The threshold depends on size and weight, so write the size beside each failing pair.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Contrast ratio:** A number from 1 to 21 comparing how light the text is against how light its background is. It is calculated, not judged by eye.
+- **Quiet text:** Captions, placeholder text, helper lines and disabled labels. They are set pale on purpose, which is exactly why they fail most often.
+- **Threshold:** The ratio a pair has to reach. Larger and heavier text is allowed a lower one, so the size has to be recorded beside the number.
+
+Stuck starting? Take one screen and go corner to corner, writing down every place text meets a surface before measuring anything.
+
+Is it enough? Your list contains at least one pair you would not have thought of as a design decision.
+
+</details>
+
+#### 2. Repair the failures
+
 - Darken, remove or replace each failing pair.
 - Prefer removing decorative text over dimming meaningful text.
 - Re-measure after each repair.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each failing pair repaired, with the new ratio written beside the old one.
 
-## 3. Enlarge the text
+**Try it with help.** Five failing pairs from a made up tool-library screen. For each one, decide what the right repair is.
+
+- The caption under the photograph, at 3.1 to 1, which says what the photograph shows.
+  - **darken the text** — It carries meaning and it belongs where it is. Darkening it costs nothing but a value in the token sheet.
+  - replace it with something permanent — It is already permanent. Nothing about it appears and disappears.
+  - remove it — It says what the photograph shows, so removing it takes information away from exactly the people who need it most.
+- Placeholder text inside the search box, at 2.8 to 1, which is the only thing telling anyone what to search for.
+  - darken the text — Darkening it makes it look like a value that is already typed, which is the other problem placeholders have. It disappears the moment anybody types, whatever its ratio is.
+  - **replace it with something permanent** — A label above the field, or a hint line under it, says the same thing and stays on screen while the person types. The contrast failure and the disappearing act are fixed by the same change.
+  - remove it — Removing it takes away the only instruction. The instruction needs to move, not to go.
+- A pale word DRAFT across the middle of the page, at 1.4 to 1, left over from an earlier version.
+  - darken the text — Darkening it makes a decorative leftover more prominent than the content, which is the opposite of what anyone wants.
+  - replace it with something permanent — There is nothing to replace it with. It is not telling a reader anything they need.
+  - **remove it** — Decorative text that fails is the easy case. Take it out and the failure and the clutter both go.
+- The label on a Reserve button that cannot be pressed because the class is full, at 2.4 to 1.
+  - **darken the text** — A person has to be able to read what they are not allowed to do, and why. Disabled is a state, not a licence to be unreadable, and a written reason beside it helps more still.
+  - replace it with something permanent — The label is already permanent. What is wrong with it is the colour.
+  - remove it — A control with no readable label tells nobody anything. The person cannot even tell what has been disabled.
+- Helper text under the date field, at 3.4 to 1, repeating the label in different words.
+  - darken the text — Darkening it keeps a line that says nothing new and adds another thing to read.
+  - replace it with something permanent — It is already permanent, and the trouble is that it duplicates the label rather than adding to it.
+  - **remove it** — Text that repeats the label is decorative in practice. Removing it fixes the ratio and shortens the form.
+
+**Then:** Now decide the repair for each of your own failing pairs, and write the new ratio beside the old one.
+
+**What to watch for:** The placeholder is the one worth remembering. When text fails and also disappears, the repair is to move it somewhere permanent rather than to change its colour, because the colour was never the only problem.
+
+Worksheet fields for this step:
+
+- What you did to each failing pair — Darken it, replace it, or remove it. Removing decorative text is a repair; dimming meaningful text is not.
+- The new ratio beside the old one for each repair
+
+<details>
+<summary>Help with this step</summary>
+
+- **Repair by removal:** Taking the text away rather than darkening it. It is the right answer when the text was decorative, or when a permanent label can replace a placeholder.
+- **Disabled label:** The text on a control that cannot be used. If it is unreadable, the person cannot tell what they are not allowed to do, which is worse than no control at all.
+
+Stuck starting? Take the worst ratio first and decide which of the three repairs it needs before you touch any colour.
+
+Is it enough? Every failing pair has a new measured number recorded, not an assumption that the repair worked.
+
+</details>
+
+#### 3. Enlarge the text
+
+**See it first.** Made-up example. Enlarging the text on a tool-library screen, and repairing the test instead of the screen.
+
+- **What broke:** At 200 per cent, the price panel cut off its last line and the header wrapped over the logo. Two clear breakages in about ten seconds.
+- **What I did first:** I set the panel text to a smaller size so it fitted again. The screenshot at 200 per cent then looked perfect.
+- **Why that was worse than doing nothing:** Somebody who needs 200 per cent text now gets that panel at 140 per cent. I had not fixed the layout; I had opted that person out of their own setting.
+- **What the real repair was:** The panel had a fixed height. I let it grow, and let the header stack below the logo instead of beside it once there is no room.
+- **What it cost:** At the largest sizes the screen is a good deal longer and the header takes two lines. Both are correct: more text needs more room.
+
+**The wrong turn:** The wrong turn is shrinking the text to make the test pass, because the screenshot afterwards looks exactly like a fix. It is the one repair that removes the accommodation the person had chosen.
+
+**What it costs:** Letting containers grow makes the enlarged layout much longer and, at some widths, uglier than the design you drew. That is the correct outcome, and it will not look like your original.
+
+**Still unknown:** Still unknown: how it behaves at 400 per cent, which the standard also cares about. I tested one setting and I am saying so rather than implying I tested the range.
+
 - Set text to about 200 per cent and reload the screens.
 - Record every clip, overlap, truncation and horizontal scroll.
 - Fix by letting containers grow rather than shrinking the text.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The screens opened again at about 200 per cent text, every breakage named, and containers changed so the text is not shrunk back.
 
-## 4. Check reading comfort
+Worksheet fields for this step:
+
+- How you enlarged the text, and on what
+- Every clip, overlap, truncation and sideways scroll you saw
+- What you changed, and what the container does now — Let the container grow. Shrinking the text back is not a fix; it is undoing the test.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Reflow:** Content rearranging itself to fit when the text gets bigger: lines rewrap, containers grow, things stack. This is what should happen.
+- **Clipping:** Text being cut off because the box it is in refuses to grow. The words are still there and nobody can read them.
+
+Stuck starting? Turn your browser text size up before you open the screens, so you meet them at the larger size rather than watching them change.
+
+Is it enough? Every breakage is written down concretely, and no fix involves making the text smaller again.
+
+</details>
+
+#### 4. Check reading comfort
+
 - Measure line length at your widest layout and cap it if needed.
 - Check line height and paragraph spacing on the longest text block.
 - Read one screen aloud at arm's length to test the result.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A counted line length at your widest layout, stated spacing values, and what the read-aloud test changed.
 
-## 5. Record
+Worksheet fields for this step:
+
+- Characters per line at your widest layout, counted
+- Your line height and paragraph spacing on the longest block
+- What happened when you read one screen aloud at arm’s length
+
+<details>
+<summary>Help with this step</summary>
+
+- **Measure:** The number of characters on a line. Long lines make the eye lose its place on the way back to the start, which is tiring in a way that has nothing to do with contrast.
+- **Meeting the floor:** Passing the ratio. It means the text is distinguishable, and it does not mean it is comfortable to read for five minutes.
+
+Stuck starting? Count the characters on one full line at your widest layout. Count them; do not estimate.
+
+Is it enough? You have a number rather than an impression, and the read-aloud line says what actually happened.
+
+</details>
+
+#### 5. Record
+
 - Update the token sheet with measured ratios.
 - Write what you could not fix and why.
 - Save the enlarged-text screenshots with the notes.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The token sheet updated with measured ratios, an honest list of what you could not fix, and the repair the Check questions asked for.
 
-## Review and handoff
-- Every text pair carries a measured ratio: [evidence reference]
-- Failing pairs are repaired and re-measured: [evidence reference]
-- A 200 per cent test was run with breakages fixed: [evidence reference]
-- Line length and spacing decisions are recorded: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What you changed in the token sheet
+- What you could not fix, and why — An honest unfixed line with a reason is a result. A quiet omission is not.
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Token sheet:** The record of your values from Module 8. Measured ratios belong in it, so the next person who uses a colour does not have to measure it again.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Open your token sheet and write the measured number beside each colour pair you used today.
+
+Is it enough? Anybody picking up your token sheet would know which pairs are measured and which are not.
 
 </details>
+
+**Save and continue.** Saved for you: Your pair list, ratios, repairs, breakages and comfort measurements save as you type, on this device first and then online. Kept outside the app: Screenshots of the enlarged screens stay in your own folder. Note their file names in step 3 so the module review can find them. What your creator sees: Your creator reads the pairs you nearly left out and the new number beside each old one. Those are what show the measuring was real. Your next action: Open Your work and choose Ready for review. The next lesson looks at everything on these screens whose meaning depends on colour.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -985,82 +1499,212 @@ Four places carried meaning by colour alone. Availability dots — green, amber,
 
 Find every place your design carries meaning by colour, add a second signal to each, and prove the design still works in greyscale and in a colour-vision simulation.
 
-**Where to work:** Greyscale is free: your operating system's accessibility settings, a photocopy, or a phone photo converted to black and white. Colour-vision simulation is available in browser developer tools with no account.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Greyscale is free: your operating system's accessibility settings, a photocopy, or a phone photo converted to black and white. Colour-vision simulation is available in browser developer tools with no account.
 
 - Starting material: Your state and message specifications.
 - Create HaruCourse/Practice/m11-l05-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Never colour alone
+#### 1. Find the colour-only signals
 
-Input artifact: Your state and message specifications.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Looking for colour-only signals on a borrowing product, and looking for the wrong thing.
 
-## Output checklist
-- [ ] A list of every place meaning is carried by colour
-- [ ] A second signal added to each, named
-- [ ] A greyscale pass with any remaining failures
-- [ ] A colour-vision simulation pass with results
+- **How I searched at first:** I scanned each screen for coloured things. Dots, the red error border, the chart. Three found, list finished, twenty minutes.
+- **What that method misses:** Anything whose colour is subtle enough not to catch the eye. A grey-blue label that means optional does not look coloured; it looks like a label.
+- **The question I switched to:** Not “what is coloured?” but “what would somebody no longer know if every colour became the same grey?”. That is a question about meaning rather than about appearance.
+- **What it added:** Two more. The optional labels, which were the only thing separating optional from required fields. And the read and unread rows in the notice list, distinguished by a slightly warmer background.
+- **Why the second search found them:** Both are quiet on purpose. A search for colour skips them precisely because the design made them unobtrusive.
 
-## 1. Find the colour-only signals
+**The wrong turn:** The wrong turn is searching for colour instead of searching for meaning. Bright things get found, quiet distinctions survive the audit, and the list looks complete.
+
+**What it costs:** The meaning question is slower and produces items you will argue with yourself about, such as whether a slightly warmer row background is really carrying anything. Arguing about it is better than never listing it.
+
+**Still unknown:** Still unknown: whether anybody uses the warmer background to tell read from unread, or whether they go by the bold title instead. The greyscale pass will show whether anything is left once colour is gone; it cannot say what people were relying on.
+
 - Walk your screens listing everything whose meaning depends on colour.
 - Check status, charts, required fields, links and errors specifically.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every place meaning depends on colour, with what a reader would miss written out for each.
 
-## 2. Add second signals
+Worksheet fields for this step:
+
+- Every place the meaning depends on colour
+- For each one: what a person misses if every colour became the same grey — Be specific. Not “the status”, but “which of the two classes still has places”.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Colour-only signal:** Anything where the colour is the whole message: a red border meaning error, a green dot meaning available, a coloured line on a chart with a legend.
+- **Second signal:** Something else carrying the same meaning: a word, a shape with a different outline, a position, a weight. The colour stays and stops being the only carrier.
+
+Stuck starting? Walk each screen asking one question: if every colour became the same grey, what would somebody no longer know?
+
+Is it enough? You have checked status, charts, required fields, links and errors by name rather than trusting a general scan.
+
+</details>
+
+#### 2. Add second signals
+
+**See it first.** Made-up example. Adding a second signal to the status dots on a tool-library list, and choosing a signal that was not one.
+
+- **What I added first:** A small circle icon beside each dot: filled for available, filled for out on loan, filled for reserved. Three icons, three colours, one shape.
+- **What I told myself:** That there was now an icon as well as a colour, so the meaning no longer rested on colour alone. That sentence is true and the icon is doing nothing.
+- **What the greyscale view showed:** Three identical grey circles. I had added a second element rather than a second signal, and it had cost me layout space to do it.
+- **What I did instead:** Words: Available, On loan, Reserved, set beside the dot at the same size as the item name. Readable in greyscale, in sunlight, on a monochrome display, and to somebody listening.
+- **What it cost:** The row is wider and the list holds fewer items on a narrow screen. I shortened the item name rather than the status, because the status is the thing people are scanning for.
+
+**The wrong turn:** The wrong turn is adding a shape that is the same shape. It satisfies the sentence “there is more than colour here” while carrying no information at all, and it is easy to do without noticing.
+
+**What it costs:** Words take room, and on a narrow list they push something else out. Something else being pushed out is the decision you are actually making, so make it deliberately.
+
+**Still unknown:** Still unknown: whether On loan is the wording people expect, or whether they would look for Out. That is a wording question for a session with somebody, not something greyscale can settle.
+
 - Add text where possible; it works for every reader including screen readers.
 - Use distinct shapes rather than same-shape different-colour icons.
 - Keep the colour; you are adding, not replacing.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A named second signal for each colour-only place, preferring words where words will fit.
 
-## 3. Greyscale everything
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Signal 1 · the place, and the second signal you added — Text works for everybody, including somebody listening. A shape works only if its outline differs from its neighbours.
+- Signal 2 · the place, and the second signal you added
+- Signal 3 · the place, and the second signal you added
+- Signal 4 · the place, and the second signal you added
+
+<details>
+<summary>Help with this step</summary>
+
+- **Distinct silhouette:** Two icons whose outlines differ when both are black. A circle and a circle in two colours are the same icon to a great many readers.
+- **Direct label:** Putting the name on the thing itself rather than in a key elsewhere. On a chart it removes both the colour dependency and the need to remember.
+
+Stuck starting? Take your first colour-only place and write the word that says what the colour means. Only reach for a shape if the word will not fit.
+
+Is it enough? Each second signal would still carry its meaning if the whole screen were printed in black and white.
+
+</details>
+
+#### 3. Greyscale everything
+
 - View every screen in greyscale.
 - Mark anything you can no longer distinguish or interpret.
 - Repair and re-check.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every screen viewed in greyscale, anything still indistinguishable marked, and repairs checked on a second look.
 
-## 4. Simulate colour-vision differences
+**Try it with help.** Six things from a made up borrowing product. For each one, decide whether greyscale would still carry the meaning.
+
+- A green dot and a red dot, the same size, in the same position on two cards.
+  - survives greyscale — Both become the same medium grey. Nothing distinguishes them once the hue is gone.
+  - **fails greyscale** — Two dots differing only by hue are the classic failure. This is the one the test exists to catch.
+  - survives only because of something else on the screen — There is nothing else here. The dot is the whole signal.
+- A green tick and a red cross, the same size, in the same position.
+  - **survives greyscale** — A tick and a cross have different outlines, so they stay different when both are black. The colour is reinforcing rather than carrying.
+  - fails greyscale — The shapes differ, which is what makes this the acceptable version of the previous line.
+  - survives only because of something else on the screen — It survives on its own, without help from a label or a position.
+- A three-line chart with a colour key underneath naming each line.
+  - survives greyscale — The lines become three greys. The key still names three colours, and now nothing connects a name to a line.
+  - **fails greyscale** — A colour key is the commonest chart failure. Labelling each line directly fixes it and removes the remembering as well.
+  - survives only because of something else on the screen — The key is the something else, and the key is what stops working.
+- Links in the body text, in a different colour and underlined.
+  - **survives greyscale** — The underline is doing the work. In grey the links are still obviously links.
+  - fails greyscale — It would if the underline were removed, which is exactly what many designs do.
+  - survives only because of something else on the screen — The underline is part of the link itself rather than something elsewhere on the screen.
+- Required fields shown by a red label, with a line at the top of the form saying red labels are required.
+  - survives greyscale — In grey, the labels are all the same colour and the person cannot tell which were red.
+  - fails greyscale — It does fail, and the interesting part is why it looked safe: an explanation was provided.
+  - **survives only because of something else on the screen** — The sentence at the top makes it feel handled. It explains a distinction the reader can no longer see, which is worse than no explanation.
+- A field with a red border, an icon of a triangle, and the message The date must be in the future underneath it.
+  - **survives greyscale** — The message is the signal and it is text. The border and the icon are reinforcement.
+  - fails greyscale — The border alone would. With the message present, nothing is lost when the colour goes.
+  - survives only because of something else on the screen — The message is attached to the field rather than being a key elsewhere, which is the difference.
+
+**Then:** Now put your own screens in greyscale and mark every line you can no longer interpret.
+
+**What to watch for:** The required-fields line is the one to remember. A sentence explaining a colour code feels like a second signal and is not: it explains a difference the reader can no longer perceive.
+
+Worksheet fields for this step:
+
+- How you viewed it in greyscale — Your operating system accessibility settings, a photocopy, or a phone photograph converted to black and white. Any of the three is fine.
+- Anything you still could not tell apart or interpret
+- What you repaired, and the result on a second look
+
+<details>
+<summary>Help with this step</summary>
+
+- **Greyscale:** The same screen with all colour removed. It is the fastest accessibility test there is and it catches most colour-only failures in one pass.
+- **Monochrome display:** A real situation, not a hypothetical: e-ink readers, some low-power modes, printing, and photocopies of a printed page.
+
+Stuck starting? Turn greyscale on before you open the screens, so you see them as somebody would rather than watching them change.
+
+Is it enough? You marked what you could not interpret, not only what looked different.
+
+</details>
+
+#### 4. Simulate colour-vision differences
+
 - Run a colour-vision simulation in your browser tools.
 - Check red and green pairs first.
 - Record what changed and what still fails.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A colour-vision simulation actually run, what became hard to tell apart, and anything left unfixed with its reason.
 
-## 5. Record
+Worksheet fields for this step:
+
+- Which simulations you ran, and where
+- What became hard to tell apart, red and green pairs first
+- Anything that still fails, and why you left it
+
+<details>
+<summary>Help with this step</summary>
+
+- **Colour-vision difference:** Reduced ability to tell certain hues apart, most often red from green. It affects roughly one man in twelve, which is far more people than most teams assume.
+- **Simulation:** A filter that shows roughly what a screen looks like with a particular colour-vision difference. It is available in browser developer tools with no account and no purchase.
+
+Stuck starting? Open the results screen, turn on the first simulation, and look at your status colours before anything else.
+
+Is it enough? You checked red and green pairs specifically rather than glancing at the whole screen.
+
+</details>
+
+#### 5. Record
+
 - List the signals you added and where.
 - Note anything you could not fix and why.
 - Save the greyscale and simulation evidence.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A record of the signals you added, and one sentence on why a safe palette alone would not have been enough.
 
-## Review and handoff
-- Every colour-only signal is found and listed: [evidence reference]
-- Each has a perceptible second signal: [evidence reference]
-- A greyscale pass was run and repairs made: [evidence reference]
-- A colour-vision simulation was run and recorded: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The signals you added and where they now appear
+- One sentence on why a safe palette would not have been enough on its own
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Colour-safe palette:** Hues chosen so they are less likely to be confused with one another. It lowers a risk and it carries no meaning of its own.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Finish this sentence: “a safe palette would not have helped the person who …”.
+
+Is it enough? Your sentence names somebody a palette cannot reach: a printed page, a monochrome screen, or somebody listening.
 
 </details>
+
+**Save and continue.** Saved for you: The colour-only list, the signals you added, the greyscale results and the simulation results save as you type, on this device first and then online. Kept outside the app: Greyscale and simulation screenshots stay in your own folder. Note their file names in steps 3 and 4; a before-and-after pair is the most convincing evidence this module produces. What your creator sees: Your creator reads the second signal beside each place and the greyscale result. A signal that survives grey is the thing being checked, not the number of signals added. Your next action: Open Your work and choose Ready for review. The next lesson puts the mouse out of reach and tries to finish a whole task without it.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1223,82 +1867,211 @@ The booking task was attempted with the mouse unplugged. Four failures. The date
 
 Complete one whole task using only a keyboard, record every point where it was impossible or unclear, and repair the worst without adding a mouse-only workaround.
 
-**Where to work:** Unplug the mouse or put it out of reach, and use the tab, arrow, enter, space and escape keys. If your prototype is a local HTML file, this test is fully available with no tooling.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Unplug the mouse or put it out of reach, and use the tab, arrow, enter, space and escape keys. If your prototype is a local HTML file, this test is fully available with no tooling.
 
 - Starting material: Your key tables and, if possible, a rough running page.
 - Create HaruCourse/Practice/m11-l06-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Everything works from a keyboard
+#### 1. Prepare the test
 
-Input artifact: Your key tables and, if possible, a rough running page.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A recorded keyboard-only attempt at one full task
-- [ ] A list of unreachable, unoperable and trapping controls
-- [ ] One repair addressing the most blocking failure
-- [ ] A statement of which key tables were satisfied and which were not
-
-## 1. Prepare the test
 - Open your prototype and put the mouse out of reach.
 - Have your m09 key tables beside you.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The thing you are testing, the one whole task, and your Module 9 key tables to hand, with the mouse genuinely out of reach.
 
-## 2. Attempt the task
+Worksheet fields for this step:
+
+- What you are testing, and where it runs
+- The one whole task you will attempt — Whole means from the first screen to the outcome. Half a task hides the failures in the second half.
+- Which Module 9 key tables you have beside you
+
+<details>
+<summary>Help with this step</summary>
+
+- **Keyboard-only:** Tab and shift-tab to move, arrows inside a group, enter or space to act, escape to leave. No pointer of any kind, including a trackpad.
+- **Key table:** The list you wrote in Module 9 saying which key does what in each control. It is the specification the repair is measured against.
+
+Stuck starting? Put the mouse where you cannot reach it without standing up. Imagining the test does not produce the finding.
+
+Is it enough? The task you named ends in an outcome, and the mouse is genuinely out of reach rather than just unused.
+
+</details>
+
+#### 2. Attempt the task
+
+**See it first.** Made-up example. Attempting a borrowing task with the mouse away, and nearly recording the wrong failure as the worst one.
+
+- **What I found first:** Focus was invisible on the tinted review panel. I wrote it down immediately, because it was annoying and I noticed it at once.
+- **What I found next:** The date picker took focus and then nothing happened. Arrows did nothing, enter did nothing, typing did nothing. No date could be chosen at all.
+- **The thing I nearly got wrong:** I had the invisible focus at the top of my list because it was the first thing that irritated me. The date picker is the one that ends the task.
+- **How I decided:** I asked of each failure whether the task could still finish. Invisible focus is slow and survivable. No date means no booking, ever, by anybody without a pointer.
+- **What I wrote:** Date picker first, as a total block, with the key table rows beside it. Invisible focus second, as a severe difficulty rather than a block.
+
+**The wrong turn:** The wrong turn is ranking by how irritating each failure was during your own attempt. Irritation tracks how often you met the problem, not whether anybody can finish.
+
+**What it costs:** Ranking by blocking means the visible, annoying failure waits while the invisible structural one gets fixed first. That will feel wrong to anybody who watched your attempt.
+
+**Still unknown:** Still unknown: whether somebody using voice control meets the same wall on the date picker. Voice often maps onto keyboard operation, so it may well, and I have not tested it and am not claiming it.
+
 - Complete one full task using only the keyboard.
 - Record every point where you could not proceed or lost your place.
 - Note anywhere focus disappeared or the order jumped.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A written record of the attempt as it happened, with every blocked point and every place focus vanished or jumped.
 
-## 3. Hunt for traps
+**Try it with help.** Six things observed during a made up keyboard-only attempt at a borrowing task. For each one, decide how badly it matters.
+
+- Focus lands on the date field. Arrows, typing and enter all do nothing, and there is no other way to set a date.
+  - **a total block** — No date means no booking, by this route, ever. Nothing else on the list outranks a step the task cannot get past.
+  - a severe difficulty — A difficulty implies a slow or unpleasant route to the outcome. There is no route here at all.
+  - works as intended — Focus arriving is not the same as the control working. This is the failure that looks like success in a tab-order check.
+- Focus is invisible on the tinted review panel, though every control there still responds to the keyboard.
+  - a total block — The task can still be finished, by counting presses and watching what changes. It is horrible and it is possible.
+  - **a severe difficulty** — Working blind for a whole panel is exhausting and error-prone, and it does not end the task. It ranks below anything that does.
+  - works as intended — Being able to see where you are is part of the control working, not an extra.
+- The filter panel takes focus, tab cycles inside it forever, and escape does nothing.
+  - **a total block** — The person cannot even leave and try another way. A trap is the one failure that removes the ability to abandon the attempt.
+  - a severe difficulty — Reloading the page and losing everything entered is not a difficult route to the outcome. It is the absence of one.
+  - works as intended — Cycling within a panel is correct only while there is also a way out.
+- Inside the collection-branch group, tab moves to the group and arrows move between the three branches.
+  - a total block — Every branch can be reached and chosen. Nothing is prevented.
+  - a severe difficulty — This is the expected pattern for a group of related choices, and it is what your Module 9 key table asks for.
+  - **works as intended** — One tab stop for the group, arrows within it. Recording the things that work is part of the test, so the table can be marked honestly.
+- The remove control appears only on hover, so it never receives focus and cannot be reached at all.
+  - **a total block** — A control that does not exist without a pointer cannot be operated without one. The person cannot correct a mistake.
+  - a severe difficulty — There is no slower route to removal. There is no route.
+  - works as intended — Hover is a pointer event. Anything that exists only on hover is invisible to every other way of using the product.
+- After the date panel closes, the next tab goes to the footer instead of back to the date field.
+  - a total block — Shift-tab gets the person back, once they work out what happened. The task survives.
+  - **a severe difficulty** — Losing your place after every panel makes a five-field form exhausting, and people abandon it for that reason. It is still not a block.
+  - works as intended — Focus should return to the control that opened the panel. Landing in the footer is a defect with a clear expected behaviour.
+
+**Then:** Now mark each of your own findings the same way, and let that ranking decide which one you repair in step 4.
+
+**What to watch for:** The two that get misranked are the invisible focus and the trap. Invisible focus is the one you notice most and it does not stop anybody; a trap is quiet until you try to leave, and it strands the person completely.
+
+Worksheet fields for this step:
+
+- What happened, step by step, keys and all — Tab, arrows, enter, space, escape. Say which key you pressed and what the screen did.
+- Every point where you could not proceed
+- Every point where focus vanished or the order jumped
+
+<details>
+<summary>Help with this step</summary>
+
+- **Focus:** Where the keyboard is pointing at this moment. If you cannot see it, you are working blind however well the controls respond.
+- **Reachable but not operable:** Focus lands on a control and no key does anything useful. It is the failure that looks like success, because tab order seems fine.
+
+Stuck starting? Start the task and write the first key you press before you press it. Keep writing as you go.
+
+Is it enough? Somebody else could repeat your attempt from the log, key for key.
+
+</details>
+
+#### 3. Hunt for traps
+
+**See it first.** Made-up example. Hunting for traps in a borrowing product, and finding one only because I stopped testing the happy way round.
+
+- **What I did at first:** I entered the filter panel, used it, and left it by pressing the Apply button. Out cleanly, no trap, on to the next control.
+- **Why that proved nothing:** I left by the route the panel was designed around. A trap is about the routes nobody designed: tab past the end, and escape.
+- **What happened on the second try:** I entered the panel and pressed tab until I ran out of controls. Focus went back to the first control in the panel and stayed there. Tab could never leave.
+- **And escape:** Escape did nothing at all. With no pointer, the only way out of that panel was to reload the page and lose everything already entered.
+- **What I recorded:** A trap, with the two routes tried and the two results, and the expected behaviour from my key table: escape closes and returns focus to the control that opened it.
+
+**The wrong turn:** The wrong turn is leaving each control by its intended exit. Everything passes, because you are testing the path you designed instead of the paths a person actually takes.
+
+**What it costs:** Trying to leave every control two wrong ways is slow and feels pedantic, and most controls will be fine. The one that is not would have stranded somebody completely.
+
+**Still unknown:** Still unknown: whether the panel also traps a screen reader, which has navigation modes of its own. That belongs to the listening lesson, not this one.
+
 - Enter every custom control and try to leave it with tab and escape.
 - Record anything that captures focus.
 - Check dialogues, pickers, menus and embedded content.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every custom control entered and left on purpose, with anything that captured focus written down.
 
-## 4. Repair the worst
+Worksheet fields for this step:
+
+- Each custom control you entered, and how you got out — Dialogues, pickers, menus, anything embedded. Try tab first, then escape.
+- Anything that captured focus and would not release it
+
+<details>
+<summary>Help with this step</summary>
+
+- **Keyboard trap:** A place you can move into and cannot move out of with the keyboard. It is the worst kind of failure, because the person cannot even leave and try something else.
+- **Custom control:** Anything built rather than taken from the browser: a date picker, a menu, a slider, a dialogue. Keyboard support usually disappears exactly here.
+
+Stuck starting? Enter your first custom control, then press tab repeatedly and see where focus goes. Then try escape.
+
+Is it enough? Every custom control has two exit routes recorded, including the ones that worked.
+
+</details>
+
+#### 4. Repair the worst
+
 - Fix the failure that most completely blocks the task.
 - Use your key table as the specification for the fix.
 - Do not accept a pointer-based workaround as a repair.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The most completely blocking failure repaired against your key table, with what now happens written down.
 
-## 5. Record against the tables
+Worksheet fields for this step:
+
+- Which failure you repaired, and why it was the worst — Worst means most completely stops the task, not most irritating.
+- The key table rows you used as the specification for the fix
+- What happens now when you attempt the same point with the keyboard
+
+<details>
+<summary>Help with this step</summary>
+
+- **Total block:** The task cannot be finished by this route at all. It outranks anything slow, confusing or unpleasant.
+- **Pointer workaround:** Fixing a keyboard failure by suggesting the person use a mouse. It is not a repair; it is a restatement of the barrier.
+
+Stuck starting? Take the failure that ends the task and open the key table row that says what should happen instead.
+
+Is it enough? The repair is specified by a key table row, and no part of it assumes a pointer.
+
+</details>
+
+#### 5. Record against the tables
+
 - Mark each key-table row satisfied or failed.
 - List failures as build defects with expected behaviour.
 - Save the results and the repair.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every key table row marked satisfied or failed, and the remaining failures written as defects with expected behaviour.
 
-## Review and handoff
-- A full task was attempted with no pointer: [evidence reference]
-- Unreachable, unoperable and trapping controls are listed: [evidence reference]
-- The most blocking failure was repaired properly: [evidence reference]
-- Key-table rows are marked satisfied or failed: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Each key table row marked satisfied or failed
+- The remaining failures written as defects, each with the expected behaviour — Expected behaviour comes from your key table, so a builder does not have to guess what you wanted.
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Defect:** A written statement of what happens, what should happen, and how to reproduce it. Without the middle part a builder has to guess your intention.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Go down your key table row by row and mark each one from what you actually saw, not from what you intended.
+
+Is it enough? Every failure carries the behaviour you expected, taken from the table rather than invented now.
 
 </details>
+
+**Save and continue.** Saved for you: Your attempt log, the traps, the repair and the table results save as you type, on this device first and then online. Kept outside the app: The build stays on your computer. If you recorded the attempt or photographed the screen, keep it in your own folder and note the file name in step 2. What your creator sees: Your creator reads the attempt log and which failure you ranked first. Ranking a dull structural block above a visible irritation is the judgement being looked for. Your next action: Open Your work and choose Ready for review. The next lesson takes the same keyboard route through your forms.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1461,82 +2234,215 @@ The booking form was rebuilt. Each field gained an associated label, including t
 
 Rebuild one form so every field is labelled, grouped and described accessibly, errors are announced and locatable, and nothing depends on placeholder text or colour.
 
-**Where to work:** A local HTML file with proper labels, groups and hints costs an evening and lets you check the behaviour. On paper, specify each association explicitly and mark the announcement behaviour as untested.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A local HTML file with proper labels, groups and hints costs an evening and lets you check the behaviour. On paper, specify each association explicitly and mark the announcement behaviour as untested.
 
 - Starting material: Your field table and error messages.
 - Create HaruCourse/Practice/m11-l07-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Forms that do not exclude
+#### 1. Read and audit
 
-Input artifact: Your field table and error messages.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A field table with associated labels, hints and error text
-- [ ] Grouped fields where several answer one question
-- [ ] An error summary that links to each problem field
-- [ ] A statement of what was verified and what remains untested
-
-## 1. Read and audit
 - Read the assigned sections on labels, grouping, instructions and errors.
 - Audit your form against each: label, hint, error, grouping.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One form audited field by field for a real label, a hint, an error message and a group.
 
-## 2. Associate everything
+Worksheet fields for this step:
+
+- Which form you are rebuilding, and how many fields it has
+- For each field: does it have a real label, a hint, an error message, and a group? — Four marks per field. A word sitting near the box is not a label until something joins the two.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Associated label:** A label joined to its field, so that reaching the field announces the label and tapping the label moves into the field. A word sitting beside a box is not this.
+- **Standard field:** A plain text box, checkbox or select taken from the browser. It brings keyboard behaviour with it and brings no label, hint, grouping or error text at all.
+
+Stuck starting? List your fields down the page and put four columns beside them before you judge anything.
+
+Is it enough? Every field has four marks, including the ones you are confident about.
+
+</details>
+
+#### 2. Associate everything
+
+**See it first.** Made-up example. Rebuilding the labels on a tool-library request form, and trusting the field type to do the work.
+
+- **What I believed:** The form uses ordinary text boxes and checkboxes rather than anything custom, so I assumed the labelling was already sound.
+- **What I actually checked:** I clicked each visible label word. On four of the six fields, nothing happened: the word was text sitting above a box, with nothing joining them.
+- **Why that matters more than it looks:** Somebody moving through the form by keyboard arrives at an unnamed box. The label is on screen, a line above, and it is not attached to anything.
+- **The one that surprised me:** The three date boxes each had a small label — Day, Month, Year — and nothing anywhere said what date was being asked for. On screen the heading above them made it obvious. Field by field it did not exist.
+- **What I changed:** Four labels joined to their fields, and the three date boxes put into a group named Date you want to collect the tool.
+
+**The wrong turn:** The wrong turn is treating standard fields as if they carried labelling with them. They carry keyboard behaviour, which is the part people notice, and nothing else.
+
+**What it costs:** Grouping the date boxes means the group name is announced before each of the three, which is more words than a sighted reader needs. That repetition is the cost of the boxes making sense at all.
+
+**Still unknown:** Still unknown: whether the group name reads well when announced, or whether it is too long. That needs the listening lesson and a real build.
+
 - Give every field an associated label and hint.
 - Group fields that answer one question, and name the group.
 - Remove any placeholder that was carrying meaning.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every field with an associated label and hint, related fields grouped under one named question, and no placeholder left carrying meaning.
 
-## 3. Rebuild the errors
+Worksheet fields for this step:
+
+- Every field whose label you associated, and what it now says
+- Fields that answer one question together, and the name of the group
+- Every placeholder that was carrying meaning, and where that meaning went — A placeholder disappears as soon as somebody types. Anything it was telling them has to move to a label or a hint.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Group:** Several fields that together answer one question, with the question named once. Without it a person hears three boxes and no idea what they are for.
+- **Hint:** The extra instruction a person needs before they type: the format, the limit, where to find the number. It belongs before the field and joined to it.
+
+Stuck starting? Click each visible label word. If the cursor does not land in the field, the label is not attached.
+
+Is it enough? No meaning in the form now lives in text that disappears when somebody types.
+
+</details>
+
+#### 3. Rebuild the errors
+
 - Rewrite each error to name the fix.
 - Add a summary at the top that links to each problem field.
 - Specify that the summary is announced when it appears.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each error rewritten to name the fix, a summary at the top linking to each problem field, and a stated announcement behaviour.
 
-## 4. Test what you can
+**Try it with help.** Six error messages from a made up tool-library form. For each one, decide what it does for the person reading it.
+
+- Invalid input.
+  - names the fix — Nothing here says what to change or what would be accepted. The person is told only that something is wrong.
+  - **describes the failure only** — It states that a rule was broken, without saying which rule. This is the commonest error message there is.
+  - blames the person — It is impersonal rather than accusing. Useless, and not unkind.
+- The collection date must be today or later.
+  - **names the fix** — The person knows what to type next. Naming the rule and naming the fix are the same act here.
+  - describes the failure only — It goes further than that: the rule is stated in a form the person can act on immediately.
+  - blames the person — It describes the field rather than the person, which is the whole difference.
+- You did not fill this in correctly.
+  - names the fix — Correctly is doing no work. The person still does not know what correct would be.
+  - describes the failure only — It describes the person rather than the field, which is the extra thing it does.
+  - **blames the person** — You is the word to notice. It adds no information and makes a form feel like an accusation.
+- Enter the phone number as ten digits, with no spaces.
+  - **names the fix** — Format, length and what to leave out. The person can act without guessing.
+  - describes the failure only — It does not describe a failure at all. It states what to do.
+  - blames the person — Nothing in it is about the person.
+- Please complete the fields marked in red.
+  - names the fix — It names a location that is unavailable to a good many readers, so for them it names nothing at all.
+  - **describes the failure only** — It says something is missing, and points at it by colour, which is exactly what the previous lesson ruled out.
+  - blames the person — It is polite. Politeness is not the same as being usable.
+- Something went wrong. Please try again.
+  - names the fix — Try again is an instruction to repeat the thing that just failed, so it is not a fix.
+  - **describes the failure only** — It reports that a failure happened and nothing about it. The person has no way to do anything different.
+  - blames the person — It carefully blames nobody, which is its only virtue.
+- The notes field holds 200 characters. You have used 340.
+  - **names the fix** — The limit and the current figure together tell the person exactly how much to remove.
+  - describes the failure only — It would be, if it stopped at the limit. The second number is what makes it actionable.
+  - blames the person — You appears and is doing real work here: it reports a count rather than a judgement.
+
+**Then:** Now rewrite each of your own error messages so it names the fix, and check none of them points at a colour.
+
+**What to watch for:** The red one catches people out because it is polite and specific-sounding. Pointing at a colour is pointing at nothing for a large group of readers, and it is easy to write without noticing.
+
+Worksheet fields for this step:
+
+- Each error message, rewritten to name the fix
+- What the summary at the top says, and what each line links to
+- When the summary is announced, and what happens to focus — Somebody who cannot see the top of the form has to be told the summary appeared, not left to find it.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Error summary:** A short list at the top of the form naming what went wrong, where each line takes the person to the field concerned.
+- **Announced:** The new message is spoken, rather than silently appearing. A message nobody is told about is a message for sighted readers only.
+
+Stuck starting? Take your worst error message and ask what the person types next. If you cannot answer, the message does not name a fix.
+
+Is it enough? No message reports only that something is wrong, and none of them points at a colour or a position.
+
+</details>
+
+#### 4. Test what you can
+
+**See it first.** Made-up example. Testing the rebuilt tool-library form, and writing the word tested against something I had only specified.
+
+- **What I could actually do:** Tab through the form in order, confirm each label reached me before its box, submit with an empty required field, and see the summary appear at the top.
+- **What I wrote at first:** “Errors announced and locatable — tested.” It was in the specification, the summary appeared, and it felt like the same thing.
+- **What I had not done:** Listened. I had seen the summary appear on screen. Whether anybody is told it appeared is a different behaviour, and I had no way to check it that day.
+- **What I wrote instead:** Two lines. Tested: tab order, label association, summary appears and its links move focus to the right field. Untested: whether the summary is announced when it appears.
+- **What that changed later:** The untested line went straight into the handover as a question for the build, instead of being discovered months later by somebody who could not find the errors.
+
+**The wrong turn:** The wrong turn is letting seeing stand in for the behaviour you specified. The summary appearing on screen is exactly what a sighted check can confirm, and the criterion is about the person who is not looking at the screen.
+
+**What it costs:** Splitting the line into tested and untested makes your record look less finished than your colleagues’ records. It is the difference between a specification and a claim.
+
+**Still unknown:** Still unknown: whether the summary is announced at all in a real build. That is the next lesson’s work, and this lesson records it as open rather than guessing.
+
 - Tab through the form and confirm labels and hints are reachable in order.
 - Trigger errors and check the summary and links behave.
 - Record anything you cannot verify without a build.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A tab through the form, errors triggered deliberately, and a named list of what you could not verify without a build.
 
-## 5. Record
+Worksheet fields for this step:
+
+- What you found tabbing through the form, in order
+- What happened when you triggered errors on purpose
+- What you could not check without a real build, named one by one — Announcement behaviour is the usual one. Write it down rather than assuming it works.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Specified but untested:** Something written down as required behaviour that nobody has yet seen working. It is honest and it is not evidence.
+- **Triggering an error:** Submitting bad input on purpose. Forms are almost always tested by people who fill them in correctly, which is why error paths stay broken.
+
+Stuck starting? Submit the form with one required field empty, and watch what happens before reading any of your own notes.
+
+Is it enough? Your untested list names specific behaviours rather than saying testing is incomplete.
+
+</details>
+
+#### 5. Record
+
 - Update the field table with associations and error text.
 - List the untested behaviour explicitly.
 - Save the table and the test notes.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The Module 8 field table updated, and one sentence separating what you verified from what is specified and untested.
 
-## Review and handoff
-- Every field has an associated label and hint: [evidence reference]
-- Related fields are grouped and the group is named: [evidence reference]
-- Errors name fixes and a summary links to each field: [evidence reference]
-- Untested behaviour is recorded rather than assumed: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What changed in your Module 8 field table
+- One sentence separating what you verified from what is specified and untested
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Field table:** The per-field record from Module 8. Labels, hints and error text belong in it, so an engineer builds from one source rather than from three screenshots.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Open your field table and add three columns: label, hint, error text.
+
+Is it enough? Somebody could build the form from the table alone, and would know which behaviours nobody has seen working.
 
 </details>
+
+**Save and continue.** Saved for you: Your audit, the associations, the rewritten errors and the test results save as you type, on this device first and then online. Kept outside the app: A local build of the form stays on your computer. Note the folder in step 1; nothing about the form is uploaded from here. What your creator sees: Your creator reads the error rewrites and the untested list. A short untested list written in specifics is a better result than a long one written in generalities. Your next action: Open Your work and choose Ready for review. The next lesson writes the words that stand in for every image on these screens.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1699,82 +2605,211 @@ Fourteen images and icons were classified. Two were informative: the class photo
 
 Write alternative text for every image and icon in your design, deciding for each whether it carries information, is decorative, or is itself a control.
 
-**Where to work:** Writing. If your prototype is a local HTML file you can add the alt attributes and check them; on paper, write the alt text beside each image in the specification.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Writing. If your prototype is a local HTML file you can add the alt attributes and check them; on paper, write the alt text beside each image in the specification.
 
 - Starting material: Your screens with their images and icons.
 - Create HaruCourse/Practice/m11-l08-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Images, icons and the words that replace them
+#### 1. Inventory and classify
 
-Input artifact: Your screens with their images and icons.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Classifying the images on a tool-library screen, and describing everything because describing felt thorough.
 
-## Output checklist
-- [ ] Every image classified informative, decorative or functional
-- [ ] Alt text written for informative and functional images
-- [ ] Empty alt specified for decorative images
-- [ ] Any text inside images identified and moved out
+- **What I did first:** I wrote alt text for all fourteen images. Every one got a careful sentence, including the paper-texture background and the small divider flourish.
+- **What that produced:** Read aloud, the screen opened with a description of a paper texture, then a decorative rule, then finally the name of the tool. Three sentences of nothing before the content.
+- **What I had confused:** Effort with usefulness. Describing decoration is more work than skipping it, and every word of it is in the reader’s way.
+- **The question I used instead:** If this image vanished, would the reader have lost anything? Paper texture: no. Divider: no. Photograph of the drill in use: yes, it shows the size against a hand.
+- **What I ended with:** Two informative, nine decorative and marked to be skipped, three functional. The screen now reads as its content rather than as an inventory of its graphics.
 
-## 1. Inventory and classify
+**The wrong turn:** The wrong turn is describing everything, because it looks like the thorough option and it is the one most guidance appears to ask for. Every unnecessary description is noise the reader cannot skip.
+
+**What it costs:** Marking nine images to be skipped means a reader is never told the page has a photograph of a workshop. That is the right trade, and it is a real loss of atmosphere.
+
+**Still unknown:** Still unknown: whether the drill photograph is doing what I think. I believe it conveys scale; nobody has told me that, and the alt text I wrote assumes it.
+
 - List every image, icon and illustration in your screens.
 - Classify each informative, decorative or functional.
 - Mark any image containing text.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every image, icon and illustration listed and classified as informative, decorative or functional, with any text inside an image marked.
 
-## 2. Write the informative alt text
+**Try it with help.** Six images from a made up tool-library screen. For each one, decide which of the three kinds it is.
+
+- A photograph of the cordless drill being held, which is the only thing showing how big it is.
+  - **informative** — The scale is available nowhere else on the screen, so the words have to carry it. That is what makes it informative rather than illustrative.
+  - decorative — It would be, if the dimensions were written out beside it. They are not, so removing it loses something.
+  - functional — Nothing happens when you press it. It is not a control.
+- A pale paper texture behind the whole page.
+  - informative — Nobody needs to know the background has a texture in order to borrow a drill.
+  - **decorative** — It is marked so it is skipped in silence. Describing it puts a sentence of nothing in front of the content.
+  - functional — It does nothing when pressed and leads nowhere.
+- A heart outline in the corner of each card, which saves the item to a list.
+  - informative — The shape itself tells the reader nothing worth knowing. What it does is the whole point.
+  - decorative — Skipping it would leave the person unable to find the save control at all.
+  - **functional** — The words become the action rather than the picture: Add to shortlist, not Heart icon.
+- The library logo in the top corner, which takes you to the home page when pressed.
+  - informative — The look of the logo is not information anybody needs to act on.
+  - decorative — It is a control, so skipping it removes the way back to the start.
+  - **functional** — It takes the name of its destination. Home is more use to the reader than Northside Tool Library logo.
+- A small chart showing how many of each tool are available this week.
+  - **informative** — The counts are the information. Words describing the shape of the bars would leave the reader knowing nothing they can use.
+  - decorative — The numbers exist nowhere else on the screen, so skipping it removes them.
+  - functional — Nothing happens when it is pressed.
+- A promotional banner image with the words Free for members this month set inside the picture.
+  - **informative** — It carries a sentence, so it is informative by default. The better answer is to take the words out of the image entirely, and until that happens the alt text has to reproduce them in full.
+  - decorative — Marking it decorative would delete the offer for anybody not looking at the picture.
+  - functional — It may well be a link too, in which case it needs a destination as well. The text inside it is the problem this lesson is about.
+
+**Then:** Now classify your own images. Anything you hesitate over, ask what the reader loses if it disappears.
+
+**What to watch for:** The banner is the one to notice. Text inside an image is invisible to search, translation, enlargement and reading aloud, so the real answer is to move the words out rather than to write them twice.
+
+Worksheet fields for this step:
+
+- Every image, icon and illustration on your screens — Include background patterns, logos, arrows in buttons and anything inside a chart.
+- For each one: informative, decorative, or functional
+- Any image with words inside it — Text inside a picture cannot be searched, translated, enlarged or read aloud.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Informative:** The image tells the reader something they cannot get elsewhere on the screen. The words have to carry that something.
+- **Decorative:** The image adds atmosphere and no information. It is marked so it is skipped silently, which is a decision rather than a lapse.
+- **Functional:** The image is the control. What matters is not what it looks like but what pressing it does.
+
+Stuck starting? Go screen by screen and list every image before you classify any of them.
+
+Is it enough? Every image has exactly one of the three marks, including backgrounds and logos.
+
+</details>
+
+#### 2. Write the informative alt text
+
 - Write what the image tells the reader, not what it looks like.
 - Keep it as short as the information allows.
 - Never start with image of or picture of.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Alt text for each informative image carrying what it tells the reader, and charts carried as information rather than description.
 
-## 3. Name the functional ones
+Worksheet fields for this step:
+
+- For each informative image: the alt text you wrote — Write what it tells the reader, not what it looks like. Never begin with image of.
+- For any chart or diagram: how the information is carried in words — A chart usually needs the numbers, not a description of the shape of the line.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Alt text:** The words that stand in for an image. For some readers it is not a summary of the image; it is the image.
+- **Describing the picture:** Writing what it looks like rather than what it tells you. A common and well-meant way of producing something nobody can use.
+
+Stuck starting? For your first informative image, write what a reader would need to know if it were missing. That is the alt text.
+
+Is it enough? No line begins with image of or picture of, and no chart is described by its shape.
+
+</details>
+
+#### 3. Name the functional ones
+
 - Give each icon control the name of its action or destination.
 - Match the wording to your m08 action labels.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each icon control announcing its action or destination, matching the labels you already wrote in Module 8.
 
-## 4. Handle decoration and embedded text
+Worksheet fields for this step:
+
+- For each icon control: the action or destination it now announces
+- How each one matches the action labels you wrote in Module 8 — If the icon says Filters and the panel says Refine, somebody hears two names for one thing.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Action name:** What pressing it does: Add to shortlist, Filters, Home. It is the only thing about a control the reader needs.
+- **Two names for one thing:** An icon announced as one word while the panel it opens is titled another. It makes a product feel unreliable to anybody who cannot see they are the same control.
+
+Stuck starting? Take each icon and finish the sentence: pressing this does …. That sentence is the name.
+
+Is it enough? No control is named after its shape, and every name matches your Module 8 label.
+
+</details>
+
+#### 4. Handle decoration and embedded text
+
+**See it first.** Made-up example. Handling a promotional banner on a tool-library page, and solving it in the wrong place.
+
+- **What the banner was:** A picture of a workshop with Free for members this month set across it in large type.
+- **What I did first:** I wrote the sentence into the alt text. The words were now available to a screen reader, and I marked the row done.
+- **What was still broken:** Somebody enlarging their text got the banner at its original size, with the offer unchanged and now smaller than everything around it. Somebody translating the page got an English banner on a Hindi page. Nobody searching the site could find the offer.
+- **Where the fix belonged:** The words came out of the image and became real text beside it. The picture stayed as decoration and was marked to be skipped.
+- **What I kept from the first attempt:** One image genuinely could not change: a photograph of a printed safety notice on the workshop wall. Its full text went into the alt text, with a line saying why it stayed.
+
+**The wrong turn:** The wrong turn is fixing text in an image with alt text. It closes the one failure you were thinking about and leaves three others open, and it looks complete from the outside.
+
+**What it costs:** Taking the words out of the picture usually means the banner no longer looks the way it was designed. The layout changes; the offer becomes findable.
+
+**Still unknown:** Still unknown: whether the photographed safety notice is legible enough to transcribe with confidence. I transcribed what I could read and said so rather than paraphrasing it.
+
 - Specify empty alt text for decorative images.
 - Move any text out of images into real text.
 - Where it cannot move, reproduce it fully in the alt text and record why.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Decorative images marked to be skipped, text moved out of images where it could move, and anything that could not move reproduced in full with its reason.
 
-## 5. Test by removal
+Worksheet fields for this step:
+
+- The images you are marking as decorative, so they are skipped rather than announced
+- Text you took out of an image and put into real text
+- Any text that could not move, reproduced in full, with the reason it stayed
+
+<details>
+<summary>Help with this step</summary>
+
+- **Skipped:** Marked so it is passed over silently. It is the correct handling for decoration, and it needs to be specified rather than left to chance.
+- **Text in an image:** Words set inside a picture. They cannot be searched, translated, enlarged with the rest of the text, or read aloud, so they are invisible four different ways.
+
+Stuck starting? List the decorative images first, then go back to the ones with words in them.
+
+Is it enough? Every image with words in it has either been changed or has its full text written out with a reason.
+
+</details>
+
+#### 5. Test by removal
+
 - Read the screen with every image replaced by its alt text.
 - Check nothing essential disappeared and nothing noisy appeared.
 - Save the classification and the alt text.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The screen read through with every image replaced by its words, and whatever that reading changed.
 
-## Review and handoff
-- Every image is classified into one of the three kinds: [evidence reference]
-- Informative alt text carries information, not appearance: [evidence reference]
-- Functional images are named by action: [evidence reference]
-- Text inside images is identified and moved out: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What the screen reads like with every image replaced by its alt text — Read it aloud. You are listening for two things: something missing, and something pointless.
+- What you changed afterwards
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **The removal test:** Reading the screen with each image replaced by its alt text. It is the only way to hear both faults at once: something missing, and something pointless.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Read the whole screen aloud, substituting your alt text wherever an image sits.
+
+Is it enough? You noted both kinds of problem, not only the missing information.
 
 </details>
+
+**Save and continue.** Saved for you: The inventory, the classifications, the alt text and the removal-test notes save as you type, on this device first and then online. Kept outside the app: The images themselves stay in your own folder. Nothing here uploads a picture; the worksheet holds the words that stand in for them. What your creator sees: Your creator reads the classification column and the removal test. Nine images marked decorative on purpose reads better than fourteen careful descriptions. Your next action: Open Your work and choose Ready for review. The next lesson looks at anything that moves, plays or expires.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1937,83 +2972,211 @@ Three problems and three fixes. The class carousel rotated every four seconds wi
 
 Audit your design for motion that plays without asking, media without alternatives, and time limits people cannot control, and specify a fix for each.
 
-**Where to work:** Writing captions and transcripts by hand costs time and no money. Pause controls and timer warnings are specification work; test them in a local HTML file if you have one.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Writing captions and transcripts by hand costs time and no money. Pause controls and timer warnings are specification work; test them in a local HTML file if you have one.
 
 - Starting material: Your m09 motion work and any timed or media elements.
 - Create HaruCourse/Practice/m11-l09-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Motion, media and time limits
+#### 1. Audit automatic motion
 
-Input artifact: Your m09 motion work and any timed or media elements.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Fixing an automatic carousel on a tool-library home page, and managing the problem instead of removing it.
 
-## Output checklist
-- [ ] An audit of automatic motion with a pause or removal decision
-- [ ] Captions or a transcript specified for any media
-- [ ] Time limits with warning, extension and preservation
-- [ ] A confirmation that nothing flashes rapidly
+- **What was there:** Three featured tools rotating every four seconds, with small dots underneath. Nobody had asked for it; it had come with the template.
+- **What I did first:** Added a pause button. That satisfies the criterion, and it took twenty minutes.
+- **What I noticed afterwards:** The pause button is a control somebody has to find, understand and press before they can read a sentence. For anybody who reads slowly, the first four seconds are already lost.
+- **The question I had not asked:** What is the carousel for? Three tools, shown one at a time, on a page with room for three. It existed because the template had one.
+- **What I did instead:** Removed it. Three static cards, all visible, no motion, no pause control, no dots, and a shorter page.
 
-## 1. Audit automatic motion
+**The wrong turn:** The wrong turn is adding a control to manage motion nobody wanted. It passes the criterion, it adds a thing to learn, and it keeps a feature that was never earning its place.
+
+**What it costs:** Removing the carousel means only three tools can be featured instead of an unbounded list. That is a real constraint, and it is a content decision rather than an accessibility one.
+
+**Still unknown:** Still unknown: whether anybody ever looked at the second and third slides. Nothing here measured it, and the argument for removal does not depend on it.
+
 - List everything that moves without the person starting it.
 - For each, decide: remove, or provide a visible pause control.
 - Check the pause is keyboard reachable.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Everything that moves without being started, each either removed or given a keyboard-reachable pause control.
 
-## 2. Handle media
+Worksheet fields for this step:
+
+- Everything that starts moving without the person starting it — Carousels, auto-advancing banners, looping animations, background video, anything that repeats.
+- For each one: removed, or given a visible pause control
+- For each pause control: how somebody reaches it with a keyboard — A pause control that needs a pointer leaves the person with a pointer problem instead of a motion problem.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Automatic motion:** Movement the person did not start and cannot predict. Anything lasting more than a few seconds needs a way to stop it.
+- **Pause control:** A visible, reachable way to stop the movement. Hidden until hover, or pointer-only, and it is not one.
+
+Stuck starting? Sit on each screen for thirty seconds without touching anything and write down what moves.
+
+Is it enough? Every moving thing has a decision, and each decision says removed or names a control somebody can reach without a pointer.
+
+</details>
+
+#### 2. Handle media
+
 - List any audio or video in your product.
 - Specify captions and a transcript, and who will write them.
 - If neither is possible, provide the information in text instead.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Any audio or video listed with captions, a transcript and a named person to write them, or the information carried as text instead.
 
-## 3. Find the time limits
+**Try it with help.** Six situations from a made up tool-library product. For each one, decide what the honest handling is.
+
+- A two-minute safety video on using the bench saw, where everything important is spoken aloud.
+  - captions are enough — Captions cover the person watching. Somebody who wants to check one instruction before switching the saw on has to watch two minutes to find it.
+  - **a transcript is needed too** — Safety instructions are referred back to. A transcript makes them searchable, skimmable and printable, which captions cannot do.
+  - this cannot be fixed with captions at all — The content is spoken, so captions carry it well. The gap is about finding one part again.
+- A video whose automatic captions render the library name as three different things and turn 16 millimetres into 60.
+  - captions are enough — These captions exist and are wrong in ways that change the meaning. Wrong measurements in a workshop are worse than none.
+  - a transcript is needed too — A transcript made from the same automatic text carries the same errors forward.
+  - **this cannot be fixed with captions at all** — Not with these captions. Somebody has to correct them by hand, which is the work this lesson is asking you to name and assign.
+- A silent thirty-second clip showing how to release the chuck, with no narration at all.
+  - captions are enough — There is nothing to caption. Captions carry speech, and this clip has none.
+  - a transcript is needed too — A transcript of silence is empty. What is needed is a written description of what the hands do.
+  - **this cannot be fixed with captions at all** — Visual-only content needs a written description of the actions, which is a different piece of writing from captions.
+- A fifteen-second clip of workshop sounds behind the home page, carrying no information.
+  - **captions are enough** — Nothing is being said and nothing is being conveyed, so a short note that it is ambient sound is the whole obligation. Being able to turn it off matters more.
+  - a transcript is needed too — There is no content to transcribe.
+  - this cannot be fixed with captions at all — There is nothing here that needs fixing beyond letting people stop it.
+- A four-minute interview with a member describing how they used the library, spoken throughout.
+  - captions are enough — Captions serve somebody watching it through. Four minutes is long enough that many people would rather read it in one.
+  - **a transcript is needed too** — Long spoken content is the clearest case for both: captions for watching, a transcript for reading, searching and quoting.
+  - this cannot be fixed with captions at all — The speech carries everything, so captions do work here.
+- A product with no audio or video anywhere in it.
+  - **captions are enough** — The honest answer is that this step is already complete, and writing none is a finished answer rather than a gap.
+  - a transcript is needed too — There is nothing to transcribe. Inventing work here would not help anybody.
+  - this cannot be fixed with captions at all — Nothing is broken. Not every lesson has something to repair in every product.
+
+**Then:** Now decide the handling for your own media, and name who writes each piece of text. If you have none, write none and move on.
+
+**What to watch for:** The two that catch people out are the silent clip and the automatic captions. Captions carry speech, so silence needs a written description instead; and captions that exist but are wrong are worse than absent ones, because everybody assumes the work is done.
+
+Worksheet fields for this step:
+
+- Any audio or video in your product — Write none if there is none. That is a complete answer to this step.
+- For each one: captions, a transcript, and who writes them
+- If neither is possible: how the information appears as text instead
+
+<details>
+<summary>Help with this step</summary>
+
+- **Captions:** The spoken words, timed to the video, including who is speaking and sounds that matter. They serve deaf readers, noisy rooms and anyone watching without sound.
+- **Transcript:** The whole content as text, readable without playing anything. It is also the version that can be searched, translated and skimmed.
+
+Stuck starting? List your media first. If the list is empty, write none and go to the next step.
+
+Is it enough? Every media item names a person who will write the text, or says plainly that nobody has been found yet.
+
+</details>
+
+#### 3. Find the time limits
+
 - List every timeout: held places, sessions, codes, forms.
 - Specify a warning before expiry and an extension where possible.
 - Specify that entered data survives expiry.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every time limit listed with a warning, an extension where possible, and what happens to anything already typed.
 
-## 4. Check flashing and reduced motion
+Worksheet fields for this step:
+
+- Every time limit: held places, sessions, codes, forms, anything that expires
+- For each one: the warning, the extension, and what happens to what was typed
+
+<details>
+<summary>Help with this step</summary>
+
+- **Time limit:** Anything that expires: a held place, a session, a verification code, a form that clears itself. Each one assumes a speed somebody may not have.
+- **Preservation:** Keeping what the person already typed when a limit runs out. Losing it turns a delay into starting again, which is where people give up.
+
+Stuck starting? List everything in your product that expires, including the ones that came with a platform rather than from you.
+
+Is it enough? Each limit says what warning appears, how long before, and what survives the expiry.
+
+</details>
+
+#### 4. Check flashing and reduced motion
+
+**See it first.** Made-up example. Handling reduced motion on a tool-library product, and treating a request as a preference.
+
+- **What my Module 9 pairs said:** Every transition had a reduced version. The sliding panel became a fade, the page change became an instant swap.
+- **The one I kept:** The confirmation animation. A tick that draws itself over half a second, which people liked, and which I argued was too small and too short to trouble anybody.
+- **Why that argument was mine to lose:** The person had already told their own device they did not want motion. My judgement that this particular motion is harmless is a judgement about somebody else’s body, made without them.
+- **What I did:** Gave it a reduced version too: the tick appears complete, with no drawing. The confirmation still reads as a confirmation.
+- **What I noticed while doing it:** It took four minutes. The reason I had kept it was that I liked it, and the reasoning had arrived afterwards.
+
+**The wrong turn:** The wrong turn is deciding, case by case, which motion is small enough to keep. It sounds like careful judgement and it overrides a setting the person has already made.
+
+**What it costs:** Honouring the request everywhere means the reduced-motion version of the product is noticeably plainer, and some of the care you put into the transitions is invisible to those readers.
+
+**Still unknown:** Still unknown: whether the half-second tick would have bothered anybody. Not knowing is the reason to follow the setting rather than a reason to keep it.
+
 - Confirm nothing flashes more than a couple of times per second.
 - Re-check your reduced-motion pairs still cover everything here.
 - Test with the reduced-motion setting enabled.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A check for rapid flashing, and a statement of what your design does when somebody has asked for reduced motion.
 
-## 5. Record
+Worksheet fields for this step:
+
+- What you checked for rapid flashing, and what you found — Rapid flashing can trigger seizures. This is the one item in the module where the consequence is physical harm.
+- What your design does when somebody has asked for reduced motion — Bring your Module 9 reduced-motion pairs. A request from the person is not a preference to override.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Rapid flashing:** Repeated flashes several times a second over a large area. It can trigger seizures, which makes it the one item here where the consequence is physical.
+- **Reduced motion:** A setting the person has already chosen on their own device. Your design reads it and follows it; it is a request, not a suggestion.
+
+Stuck starting? Check your Module 9 pairs and mark any transition that has no reduced version.
+
+Is it enough? No motion is exempt because you judged it small, and the flashing line says what you actually checked.
+
+</details>
+
+#### 5. Record
+
 - Write the decisions and who is responsible for captions.
 - Note anything you could not fix and why.
 - Save the audit with the fixes.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The fixes written out, and anything specified but not yet seen working named as untested.
 
-## Review and handoff
-- Automatic motion is removed or pausable: [evidence reference]
-- Media has checked captions or a transcript: [evidence reference]
-- Time limits warn, extend and preserve: [evidence reference]
-- Flashing and reduced motion are both confirmed: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The three or four fixes, each naming what changed
+- Anything specified that nobody has yet seen working
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Specified but untested:** Written down as required behaviour that nobody has seen working. It belongs in the handover as a question rather than in the record as a result.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Write each fix as what it was and what it is now, in one line.
+
+Is it enough? Somebody reading the summary could tell which fixes exist and which are still descriptions.
 
 </details>
+
+**Save and continue.** Saved for you: The motion audit, the media plan, the time limits and the reduced-motion notes save as you type, on this device first and then online. Kept outside the app: Any video or audio file stays where it already is. Captions and transcripts are writing, so draft them in your own folder and note the file names in step 2. What your creator sees: Your creator reads what you removed as well as what you managed. A carousel deleted is a stronger answer than a carousel with a pause button. Your next action: Open Your work and choose Ready for review. The next lesson listens to the screens you have been looking at.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2176,81 +3339,210 @@ Twenty minutes with VoiceOver on the researcher's own phone. Navigating by headi
 
 Run one task with the screen reader already on your device, record what was announced and what was missing, and state plainly what your own session does and does not establish.
 
-**Where to work:** The screen reader already on your device: NVDA on Windows, VoiceOver on Apple devices, TalkBack on Android. All are free and already installed or freely downloadable; no purchase and no account are involved.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: The screen reader already on your device: NVDA on Windows, VoiceOver on Apple devices, TalkBack on Android. All are free and already installed or freely downloadable; no purchase and no account are involved.
 
 - Starting material: Your structure, alt text and form specifications.
 - Create HaruCourse/Practice/m11-l10-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Listening to your own product
+#### 1. Read and set up
 
-Input artifact: Your structure, alt text and form specifications.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] One task attempted with a screen reader, recorded
-- [ ] A list of what was announced and what was missing
-- [ ] Each failure mapped to the design decision behind it
-- [ ] A statement of what your session does and does not establish
-
-## 1. Read and set up
 - Read the assigned article, including what an occasional tester cannot conclude.
 - Turn on the screen reader for your platform and learn five commands.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The screen reader on your own device running, five commands learned, and whatever went wrong on the way written down.
 
-## 2. Navigate by structure
+Worksheet fields for this step:
+
+- Which screen reader, on which device, and how you turned it on
+- The five commands you learned, written out — Next heading, next link, next form field, read all, stop. Five is enough; fifty is a reason to give up.
+- Anything that went wrong getting started, and how you got past it — The first ten minutes are usually the hardest part. Writing them down helps the next person, including you.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Screen reader:** Software that speaks what is on screen and lets somebody move through it by structure. Every major platform ships one: NVDA on Windows, VoiceOver on Apple, TalkBack on Android.
+- **Five commands:** Next heading, next link, next form field, read all, stop. Learning these five is enough for this lesson; trying to learn the whole set is how people abandon it.
+
+Stuck starting? Turn it on, then immediately find the command that stops it talking. Knowing how to stop makes the rest bearable.
+
+Is it enough? You can move by heading and stop the speech without looking anything up.
+
+</details>
+
+#### 2. Navigate by structure
+
 - Move by heading through one screen and note what you hear.
 - Move by link and by form field.
 - Compare with your written outline.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What you heard moving by heading, link and form field, compared against the outline you wrote earlier in the module.
 
-## 3. Attempt the task
+Worksheet fields for this step:
+
+- What you heard moving heading to heading, in order
+- What you heard moving by link and by form field
+- Where what you heard differed from the outline you wrote in lesson 3
+
+<details>
+<summary>Help with this step</summary>
+
+- **Navigating by structure:** Jumping from heading to heading rather than listening to everything. It is how people actually use these tools, and it is why the outline work in lesson 3 mattered.
+- **Link list:** Moving link to link, hearing only their text. Read this way, three links all called Read more are three identical links.
+
+Stuck starting? Move heading to heading through one screen and write each one down as you hear it, before comparing with anything.
+
+Is it enough? You wrote what you actually heard, including the places where it matched your outline exactly.
+
+</details>
+
+#### 3. Attempt the task
+
+**See it first.** Made-up example. Listening to a tool-library product, and hearing what I expected instead of what was said.
+
+- **What I did at first:** I kept the screen in front of me and listened while I worked. It went smoothly and I found two small problems in ten minutes.
+- **Why it went so smoothly:** I was reading the screen and hearing the speech at the same time. Where the speech was incomplete, my eyes filled the gap without my noticing.
+- **What I changed:** I turned the screen brightness to nothing and did the task again from the speech alone.
+- **What that found:** Applying a filter changed the entire list and said nothing. With the screen visible I had seen the list change and assumed I had heard it. Blind to the screen, I had no idea anything had happened at all.
+- **The second one:** Full and available classes sounded identical, because availability was a coloured dot with nothing to say. I had fixed that on paper in an earlier lesson and never in this build.
+
+**The wrong turn:** The wrong turn is listening with the screen visible. Your eyes complete every announcement, so the product sounds far better than it is and the silences are invisible.
+
+**What it costs:** Working from speech alone in a design you built is slow and frustrating, and you will still know where things are from memory. It is the closest you can honestly get.
+
+**Still unknown:** Still unknown: how much my knowing the design flattered the result even so. Somebody meeting it for the first time, by ear, would meet things I walked past.
+
 - Complete one full task listening rather than looking where you can.
 - Record every silence where something happened.
 - Record anything announced that was noise.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One full task attempted by listening, with every silence and every piece of noise recorded.
 
-## 4. Map failures to decisions
+Worksheet fields for this step:
+
+- What happened as you went, announcement by announcement
+- Every place something happened and nothing was said
+- Every place something was announced that was not worth saying — Filenames, the word button on its own, a decorative image being described, a label read twice.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Silence:** Something changed on screen and nothing was said. It is the failure that is hardest to notice, because nothing draws attention to it.
+- **Noise:** Something announced that helps nobody: a filename, a decorative image, the same label twice. It makes the useful announcements harder to find.
+
+Stuck starting? Turn the screen brightness down as far as it goes, then start the task.
+
+Is it enough? Your log contains at least one silence, because almost every product has one.
+
+</details>
+
+#### 4. Map failures to decisions
+
 - For each failure, name the earlier decision that caused it.
 - Mark which are specification failures and which are build defects.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each failure traced back to the decision that caused it, and marked as missing from the specification or missing from the build.
 
-## 5. Write the boundary
+**Try it with help.** Six findings from a made up screen-reader session on a tool-library product. For each one, decide where the repair belongs.
+
+- The shortlist icon is announced only as button. Your alt-text table says it should announce Add to shortlist.
+  - a specification failure — You wrote it down in the previous lesson, so the decision exists.
+  - **a build defect** — The intended behaviour is specified and absent from the build. It goes to whoever builds it, with the expected wording quoted.
+  - neither — it works — Button on its own tells the person nothing about what pressing it will do.
+- Applying a filter replaces the whole list and announces nothing. Nothing anywhere in your specification says what should be announced.
+  - **a specification failure** — Nobody could build this, because nobody was told what should happen. Writing the announcement is your work before it is anybody else’s.
+  - a build defect — A builder cannot be at fault for not implementing something that was never written down.
+  - neither — it works — A list silently becoming a different list leaves the person with no idea their action did anything.
+- Moving by heading gives exactly the outline you wrote in lesson 3, in the same order.
+  - a specification failure — It was specified and the specification was right.
+  - a build defect — It was built correctly, which is worth recording so the table can be marked honestly.
+  - **neither — it works** — Recording what works is part of the session. A finding list with no successes in it is not a record of what happened.
+- One image is read out as its filename, and your table marks that image as decorative.
+  - a specification failure — The decision was made: skip it. The table says so.
+  - **a build defect** — A decorative image announcing a filename means the empty alt text was not applied. The specification is right and the build is not.
+  - neither — it works — A filename read aloud is noise in front of the content.
+- The three date fields are announced as Day, Month and Year with no mention of what date is being asked for. Your field table has no group named.
+  - **a specification failure** — You noticed this in the forms lesson and fixed it in one place. If the group name is missing from the table, there is nothing for anybody to build.
+  - a build defect — Nothing was left unbuilt; nothing was asked for.
+  - neither — it works — Three boxes with no shared question is exactly the failure the forms lesson was about.
+- The error summary appears and is not announced. Your specification says it should be announced when it appears.
+  - a specification failure — You wrote this behaviour down in the forms lesson, and you also recorded it as untested. Now you have tested it.
+  - **a build defect** — Specified, untested at the time, and now confirmed missing. This is exactly what the untested list was for.
+  - neither — it works — The summary appearing silently is the failure the previous lesson predicted.
+
+**Then:** Now mark each of your own findings the same way, and keep the ones that work.
+
+**What to watch for:** The two kinds go to different people, which is why the mark matters. What catches people out is that a thing you fixed on paper in an earlier lesson can still be a build defect here, and it looks like a new problem when it is an unapplied old decision.
+
+Worksheet fields for this step:
+
+- For each failure: the earlier decision that caused it
+- For each failure: is it missing from your specification, or missing from the build? — The two go to different people. Mixing them means neither gets fixed.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Specification failure:** You never said what should happen, so nobody built it. The repair is yours.
+- **Build defect:** You said what should happen and it was not done. The repair belongs with whoever builds it, and needs a written expected behaviour.
+
+Stuck starting? Take your first failure and ask whether your own documents say what should have happened.
+
+Is it enough? Every finding carries a mark, and the ones that worked are recorded too.
+
+</details>
+
+#### 5. Write the boundary
+
+**See it first.** Made-up example. Writing up a twenty-minute screen-reader session, and writing the boundary in a place nobody would read it.
+
+- **What I found:** Six real failures, each traceable to a decision. It was the most productive twenty minutes of the module.
+- **How I wrote it up:** Six findings on the first page, and a note at the end of the document saying the session was preliminary and no daily screen-reader user had been involved.
+- **What happened to that note:** The findings were quoted in a summary a week later. The note stayed in the document. What travelled was “tested with a screen reader”, which is the sentence I had been careful not to write.
+- **What I changed:** The boundary went into the first paragraph, beside the findings rather than after them: twenty minutes, my own phone, my own eyes, my own design, nobody who uses this daily.
+- **Why that placement is the whole point:** A limitation at the end is a limitation on a document. A limitation in the first line is a limitation on the finding, and the finding is the part that gets repeated.
+
+**The wrong turn:** The wrong turn is putting the boundary at the end, where it reads as thoroughness and travels nowhere. The summary somebody else writes will keep the findings and drop the note.
+
+**What it costs:** Leading with what the session cannot establish makes your work sound smaller in the first sentence somebody reads, and some readers will value it less for that.
+
+**Still unknown:** Still unknown: whether any of the six failures would be the ones a daily user considered important. My ranking is a sighted occasional user’s ranking, and I have said so.
+
 - Record the device, software, version and duration.
 - State that no daily screen-reader user was involved.
 - Save the findings with the boundary statement.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The device, software, version and duration recorded, and a written statement of what your session cannot establish.
 
-## Review and handoff
-- A real screen-reader session was run and recorded: [evidence reference]
-- Missing announcements are listed specifically: [evidence reference]
-- Failures map to earlier design decisions: [evidence reference]
-- The limits of a self-run session are stated plainly: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Device, software, version and how long you spent
+- The sentence saying what this session cannot tell you — You can see the screen and you designed it. Both of those make your session different from a daily user’s.
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Preliminary check:** A session run by somebody who can see the screen and knows the design. It finds real failures and describes nobody’s daily experience.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Write the device, the software, the version and the number of minutes before you write anything about what you found.
+
+Is it enough? The boundary sits beside the findings rather than after them, and it names both things that make your session different: sight, and knowing the design.
 
 </details>
+
+**Save and continue.** Saved for you: Your setup notes, what you heard, the failure map and the boundary statement save as you type, on this device first and then online. Kept outside the app: If you recorded the audio of your session, keep it in your own private folder and note the file name. Nothing is uploaded from here. What your creator sees: Your creator reads the boundary statement first and the findings second. That order is deliberate, and it is how a reviewer will read it too. Your next action: Open Your work and choose Ready for review. The next lesson checks the same product against Indian guidelines, language and connection conditions.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2413,81 +3705,208 @@ Two requirements were compared. The first, on local-language support, exposed th
 
 Check your design against two named requirements from the Indian government guidelines and against language and bandwidth conditions your users will actually meet.
 
-**Where to work:** The guidelines site with its free PDF manual, your browser's throttling, and hand-written text in a second script if your prototype cannot render one. No paid localisation service is required for any of this.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: The guidelines site with its free PDF manual, your browser's throttling, and hand-written text in a second script if your prototype cannot render one. No paid localisation service is required for any of this.
 
 - Starting material: Your label work and current screens.
 - Create HaruCourse/Practice/m11-l11-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Access in the Indian context
+#### 1. Read and choose two requirements
 
-Input artifact: Your label work and current screens.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Two named requirements compared against your design
-- [ ] A language check covering formats, embedded text and plain wording
-- [ ] A script rendering check with line height and clipping
-- [ ] A slow-connection check with a recorded time to usable
-
-## 1. Read and choose two requirements
 - Open the assigned guidelines and choose two requirements relevant to your product.
 - Write each in your own words.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Two requirements from the Indian government guidelines, each written in your own words with the reason you chose it.
 
-## 2. Compare against your design
+Worksheet fields for this step:
+
+- Requirement 1 · what it asks, in your own words, and why you chose it
+- Requirement 2 · what it asks, in your own words, and why you chose it — Choose ones your product actually touches. Two you can act on beat six you cannot.
+
+<details>
+<summary>Help with this step</summary>
+
+- **The Indian guidelines:** Guidelines published for Indian government websites and apps, covering accessibility, local language and mobile use together rather than separately.
+- **Choosing a requirement:** Picking the ones your product actually touches. Two you can act on this week are worth more than a list copied out in full.
+
+Stuck starting? Open the guidelines and look for the sections on language and on mobile before anything else.
+
+Is it enough? Both are in your own words, and each says why this product is affected by it.
+
+</details>
+
+#### 2. Compare against your design
+
 - Check your screens against each requirement.
 - Record where you meet it, where you do not, and what would be needed.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Your screens compared against both requirements, naming where you meet them, where you do not, and what would be needed.
 
-## 3. Check language and formats
+Worksheet fields for this step:
+
+- Requirement 1 · where you meet it, where you do not, and what would be needed
+- Requirement 2 · where you meet it, where you do not, and what would be needed
+
+<details>
+<summary>Help with this step</summary>
+
+- **What would be needed:** The actual change, named. Not “improve language support” but “month names come from a list rather than being written in English”.
+
+Stuck starting? Take requirement one and walk one screen against it before writing anything general.
+
+Is it enough? Each gap names a change somebody could make rather than an area to improve.
+
+</details>
+
+#### 3. Check language and formats
+
+**See it first.** Made-up example. Checking the language readiness of a tool-library product, and deciding it was a job for after launch.
+
+- **What I told myself:** The product is English-only for now. Translation is a later project, so there is nothing to do in this lesson beyond noting it.
+- **What I looked at anyway:** Three things: the navigation labels, the date format, and the promotional banner with its price set inside the picture.
+- **What each one costs later:** The navigation is a row of five short English words with no room to grow; several languages need half again the width. The date is written 03/04, which is two different days depending on where you grew up. The banner is a picture, so translating it means redrawing it.
+- **What the cheap version was:** Let the navigation wrap and give it room. Write dates as 3 April 2026. Take the price out of the image. Three changes, one afternoon, no translator involved.
+- **What I still deferred:** Actual translation, an input method for a second script, and language-dependent sorting. Those are real projects and they are not made harder by today.
+
+**The wrong turn:** The wrong turn is treating language as a switch you flip later. Most of the expense is not the translating; it is the layouts, the images and the formats decided now by somebody who was not thinking about it.
+
+**What it costs:** Giving labels room to grow means the English navigation has more space around it than it strictly needs, and looks slightly less tight today.
+
+**Still unknown:** Still unknown: which languages this product would actually need. I designed for the string lengths to change rather than for a particular language, because I do not know which one.
+
 - Check date, number and address formats against local convention.
 - Find any text embedded in images and move it out.
 - Simplify wording that depends on idiom.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Formats checked against local convention, embedded text moved out, and idiom replaced with plainer wording.
 
-## 4. Check script and connection
+Worksheet fields for this step:
+
+- Date, number and address formats in your design, and what you changed
+- Any text still baked into an image, and where it went
+- Wording that depends on idiom, and the plainer version — Anything that only works if you grew up with the phrase. Get the ball rolling, touch base, a quick heads-up.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Localisation:** Making a product work in another language and convention. Most of its cost is decided during design, by layouts built to English string lengths and text baked into pictures.
+- **Idiom:** A phrase whose meaning is not its words. It reads as friendly to people who grew up with it and as noise to everybody else, including translation.
+
+Stuck starting? Find every date in your product and write it the way you would say it aloud.
+
+Is it enough? No format in your product could be read two ways, and no meaning is left inside a picture.
+
+</details>
+
+#### 4. Check script and connection
+
+**See it first.** Made-up example. Timing a tool-library page on a throttled connection, and timing the wrong moment.
+
+- **What I measured first:** I threw the connection down to slow, loaded the page, and watched the browser’s loading indicator. It stopped at 18 seconds. I wrote 18 seconds down.
+- **What that number describes:** When everything finished arriving, including three photographs below the fold that nobody had scrolled to. It is a number about the page, not about the person.
+- **What I had not noticed:** The search box and the first four tools were readable at about 11 seconds. From then on the person could work while the rest arrived.
+- **The other direction:** On a second page the indicator stopped at 6 seconds and the list was still empty, because the content arrived after the page did. Time to usable there was 9 seconds, and the smaller number was the flattering one.
+- **What I recorded:** Time to usable, with the throttle setting beside it, and a note of what “usable” meant on each page: the search box and the first results.
+
+**The wrong turn:** The wrong turn is timing when loading stops, because that is the number the browser offers you. It can be far too pessimistic or far too optimistic, and it is never about what the person can do.
+
+**What it costs:** Time to usable needs you to decide what usable means on each page and write it down, which is a judgement somebody could disagree with. A number with a definition beats a number without one.
+
+**Still unknown:** Still unknown: how this behaves on a real slow connection rather than a throttled fast one. Throttling models the speed and not the dropouts, and this lesson is not claiming otherwise.
+
 - Render key labels in an Indic script and check for clipping.
 - Increase line height where characters are cut.
 - Load on a throttled connection and time when the page becomes usable.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Key labels rendered in an Indic script with clipping fixed, and a timed load on a throttled connection.
 
-## 5. Record
+**Try it with help.** Six observations from a made up check on a tool-library product. For each one, decide what kind of problem it is.
+
+- The five navigation labels fit exactly, with no room to grow, and the row does not wrap.
+  - **a layout decision made now** — Any language with longer words breaks this, and letting it wrap costs nothing today. It is a decision about the container, not about words.
+  - a translation job for later — The translating is later. The room for the translation is a choice you are making now.
+  - not a problem — It is not a problem in English, which is exactly why it survives until the day it becomes an expensive one.
+- Dates are written 03/04 with no year and no month name.
+  - **a layout decision made now** — It reads as two different days depending on where somebody grew up, today, in English. Writing 3 April 2026 fixes it in a minute.
+  - a translation job for later — Nothing needs translating. The ambiguity is in the format itself.
+  - not a problem — Two readers reading two different days from the same booking is a real problem before anything is translated.
+- A label written in Devanagari has the mark above the character cut off by the line height.
+  - **a layout decision made now** — Line height is set in your own design. A cut matra can change the word, so this is a correctness problem rather than a cosmetic one.
+  - a translation job for later — The text is already there. What is failing is the space you gave it.
+  - not a problem — A vowel mark removed is a different word, not a slightly untidy one.
+- The class list is sorted alphabetically by a rule that assumes Latin letters.
+  - a layout decision made now — Nothing about the layout causes it, and you cannot fix the sorting rule from a design file.
+  - **a translation job for later** — Sorting is language-dependent and genuinely belongs with real language support. Recording it as a known limitation now is the right move.
+  - not a problem — It will produce an order that looks arbitrary to a reader of that language. It is a real limitation, and a deferred one.
+- The offer is set inside a promotional picture.
+  - **a layout decision made now** — Translating a picture means redrawing it, for every language, for ever. Taking the words out now is a design change you can make today.
+  - a translation job for later — It is made far more expensive by leaving it, which is what makes it a decision for now.
+  - not a problem — It is invisible to translation, to search, to enlargement and to anybody listening.
+- A notification on the lock screen names the exact class that was booked.
+  - **a layout decision made now** — On a shared device the lock screen is read by whoever is nearby. Saying “a class you booked” instead is a wording decision available immediately.
+  - a translation job for later — Nothing here is about language at all.
+  - not a problem — It assumes the phone belongs to one person, which is the assumption this lesson is asking you to question.
+
+**Then:** Now go through your own findings and mark each one the same way, so the deferred list is deliberate rather than accidental.
+
+**What to watch for:** The useful split is between what you are deciding now and what you are deferring. Almost everything expensive about later language support is a container, an image or a format chosen today by somebody who was not thinking about it.
+
+Worksheet fields for this step:
+
+- Which labels you rendered in an Indic script, and what happened — If your prototype cannot render one, write the labels by hand on paper at the same size. That is a real check.
+- What you changed about line height or container size
+- How you throttled the connection, and the seconds until the page was usable
+
+<details>
+<summary>Help with this step</summary>
+
+- **Matra:** A vowel mark written above or below the base character in several Indic scripts. A line height set for Latin text cuts them off, and the word becomes a different word.
+- **Time to usable:** Seconds until somebody could actually do something, not until everything has finished loading. It is the number that matters on a slow connection.
+
+Stuck starting? Write three of your labels by hand in an Indic script at the same size, or render them if your prototype can.
+
+Is it enough? You have a number of seconds for the throttled load, not an impression that it felt slow.
+
+</details>
+
+#### 5. Record
+
 - Write what you fixed and what remains.
 - Note where the international guidance and the Indian guidance differ.
 - Save the comparison with the evidence.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What you fixed, what remains, and where the Indian guidance and the international guidance differ for your product.
 
-## Review and handoff
-- Two named requirements are compared with results: [evidence reference]
-- Formats and embedded text are checked and fixed: [evidence reference]
-- A second script was rendered and clipping checked: [evidence reference]
-- Time to usable on a slow connection is recorded: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What you fixed and what remains
+- Where the Indian guidance and the international guidance differ for your product
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Shared device:** One phone used by several people. It changes what private means: lock-screen text, saved details, history and notifications are all read by somebody else.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? List the fixes first, then ask what the international guidance you read earlier did not mention at all.
+
+Is it enough? The differences you name are about this product rather than about the documents in general.
 
 </details>
+
+**Save and continue.** Saved for you: The two requirements, both comparisons, the language checks and the timing save as you type, on this device first and then online. Kept outside the app: A photograph of hand-written script labels stays in your own folder; note its file name in step 4. The guidelines site needs no account and nothing is uploaded to it. What your creator sees: Your creator reads the split between what you decided now and what you deferred. A deliberate deferral with a reason reads far better than a silent one. Your next action: Open Your work and choose Ready for review. The last lesson of the module turns all of this into one honest statement.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2650,81 +4069,210 @@ The statement ran to one page. Tested: keyboard operation of the booking task on
 
 Write an accessibility statement naming what you tested, what you found, what remains unfixed and what you have not tested at all, plus a plan for involving disabled participants.
 
-**Where to work:** One page of plain text. The statement is writing, and the honesty is the whole deliverable.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: One page of plain text. The statement is writing, and the honesty is the whole deliverable.
 
 - Starting material: All check results and your original barrier list.
 - Create HaruCourse/Practice/m11-l12-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# An honest accessibility statement
+#### 1. Collect the evidence
 
-Input artifact: All check results and your original barrier list.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A dated statement of what was tested, with what and on which device
-- [ ] Lists of fixed, unfixed and untested items
-- [ ] A stated target level with no untested conformance claim
-- [ ] A plan for testing with disabled participants, with lead times
-
-## 1. Collect the evidence
 - Gather every check from this module with its date and conditions.
 - Separate results into fixed, unfixed and untested.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every check from this module gathered with its date and conditions, sorted into fixed, not yet fixed and untested.
 
-## 2. Write the statement
+Worksheet fields for this step:
+
+- Every check from this module, with its date and conditions
+- Found and fixed
+- Found and not yet fixed, each with what you intend to do
+
+<details>
+<summary>Help with this step</summary>
+
+- **Conditions:** The device, software, version and circumstances a check was run under. Without them a result cannot be repeated or judged.
+- **Not yet fixed:** A known problem with an intention attached. It is a more useful thing to publish than a promise that everything is fine.
+
+Stuck starting? Go back through the eleven lessons and list every check you actually ran, with its date.
+
+Is it enough? Every item says when and under what conditions, and nothing is listed that you did not do.
+
+</details>
+
+#### 2. Write the statement
+
+**See it first.** Made-up example. Writing the statement for a tool-library product, and waiting until it would be a good one.
+
+- **What I decided at first:** Not to publish yet. Three known problems were still open, and a statement listing them felt like advertising the product’s faults.
+- **Who that decision was for:** Me. The person it affects is somebody deciding whether it is worth attempting to borrow a drill from us at all.
+- **What they get with no statement:** Nothing. They try, they meet the date picker that cannot be operated, they lose twenty minutes, and they cannot tell whether anything else would have worked.
+- **What they get with the honest one:** They know the date picker is broken and being repaired, that keyboard operation of everything else was checked in March, and that nobody has tested with a switch device. They can decide in thirty seconds.
+- **What I published:** One page, dated, with three open problems and their intended dates, and a contact line. It is not a good statement about the product. It is a good statement.
+
+**The wrong turn:** The wrong turn is waiting until everything is fixed, because that day does not arrive and the silence in the meantime costs somebody a wasted afternoon.
+
+**What it costs:** Publishing known problems means anybody can read your faults, including a competitor and a client. That is the cost, and it is smaller than it feels.
+
+**Still unknown:** Still unknown: whether the three open items are the three that matter most. Nobody who uses assistive technology daily has told us, and the statement says so.
+
 - State what was tested, with what software, on which device and when.
 - List the known problems with intended repairs.
 - State the target level and that conformance was not tested.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A statement saying what was tested with what, on which device and when, the known problems, and the target level with no conformance claim.
 
-## 3. Write the untested list
+Worksheet fields for this step:
+
+- What was tested, with what software, on which device, and when — A reader should be able to tell whether their own situation was covered.
+- The known problems, written so somebody deciding whether to try your product can decide
+- The target level, and the sentence saying conformance was not tested
+
+<details>
+<summary>Help with this step</summary>
+
+- **Accessibility statement:** A public page saying what you know about how well your product works for disabled people. Its value comes from what it admits.
+- **Conformance:** A claim that a finished thing meets every criterion at a level, resting on testing. Working to a target and having tested for conformance are different sentences.
+
+Stuck starting? Write the tested paragraph first, with dates. The rest of the statement is easier once that exists.
+
+Is it enough? A reader could tell from the first paragraph whether their own situation was covered by anything you did.
+
+</details>
+
+#### 3. Write the untested list
+
 - Name what you have not examined, including assistive technologies you do not use.
 - Say which untested area you think most likely hides a problem.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A named list of what you have not examined, and which untested area you think most likely hides a problem.
 
-## 4. Plan participant testing
+**Try it with help.** Six sentences from a made up accessibility statement. For each one, decide what it actually claims.
+
+- On 12 March the booking task was completed using only a keyboard on a Windows laptop, with three failures found and two repaired.
+  - **a tested result** — Date, method, device, outcome, and the number still open. A reader can judge it and, in principle, repeat it.
+  - a specified intention — Nothing here is about what should happen. It says what did happen.
+  - an untested claim — It is bounded exactly to what was done and claims nothing beyond it.
+- This product conforms to WCAG 2.2 level AA.
+  - a tested result — Conformance is a claim about every criterion in a tested build. Nothing in this module tested every criterion.
+  - a specified intention — It is not written as an intention. It is written as a fact about the product.
+  - **an untested claim** — This is the sentence the lesson exists to keep out. The honest version says which level you worked to, and that conformance was not tested.
+- Error messages are announced when they appear.
+  - a tested result — The forms lesson recorded this as specified and unverified, and the screen-reader lesson found it was not happening.
+  - **a specified intention** — It describes required behaviour. Written in a statement without that qualifier, it reads as a fact and is not one.
+  - an untested claim — It is closer to this than it looks, which is why the qualifier matters so much in a published document.
+- We have not tested with switch access or voice control.
+  - **a tested result** — It is an accurate report of the state of your knowledge, which is exactly what a statement is for. Naming what you did not do is a result.
+  - a specified intention — Nothing is being promised here.
+  - an untested claim — It claims nothing about the product at all. It describes the testing.
+- The product is fully accessible.
+  - a tested result — No test could establish it. Accessibility is not a state a product reaches and holds.
+  - a specified intention — As an intention it is unfalsifiable, which is worse rather than better.
+  - **an untested claim** — Fully is the word that makes it untestable. It is also the sentence a reader who meets a barrier will remember.
+- Captions for the introduction video are being corrected by hand and will be published by the end of April.
+  - a tested result — Nothing has been tested. The captions do not exist in their corrected form yet.
+  - **a specified intention** — A known problem with a named repair and a date. This is the right shape for the unfixed list.
+  - an untested claim — It claims nothing about the present state beyond that the captions are wrong, which is true.
+
+**Then:** Now read your own draft statement line by line and mark each sentence the same way. Anything in the third group is rewritten or removed.
+
+**What to watch for:** The error-message line is the one worth studying. A sentence describing what should happen reads as a fact once it is published, so a statement has to say tested, specified or untested about every claim it makes.
+
+Worksheet fields for this step:
+
+- Everything you have not examined, including assistive technology you do not use — Switch access, voice control, screen readers on platforms you do not own, braille displays, magnification.
+- Which untested area you think most likely hides a problem, and why
+
+<details>
+<summary>Help with this step</summary>
+
+- **Untested:** Not looked at, by anybody, so far. It is different from tested and failing, and different again from specified and unverified.
+- **Naming the technology:** Switch access, voice control, braille displays, magnification, screen readers on platforms you do not own. A list of names is honest; “further testing needed” is not.
+
+Stuck starting? List the assistive technologies you do not personally use. That list is most of this step.
+
+Is it enough? Every line names something specific, and none of them says further testing is needed.
+
+</details>
+
+#### 4. Plan participant testing
+
+**See it first.** Made-up example. Planning participant testing for a tool-library product, and planning it the way an ordinary session is planned.
+
+- **What I wrote first:** Recruit three participants who use assistive technology, one week, video call, the usual thank-you voucher.
+- **The first thing wrong with it:** One week. Reaching people through an organisation takes longer than a general recruitment call, because there is a person in the middle who has their own work.
+- **The second thing:** Video call, chosen by me. Somebody may need their own device and their own settings, which is exactly the setup worth watching, and a call on my platform may be the least accessible part of the session.
+- **The third thing:** The usual voucher. These participants bring expertise about a technology I do not use, and they are being asked to help fix an exclusion that is mine. Paying them the rate for a general session undervalues both.
+- **What the plan became:** A month’s lead time through two named local organisations, the session on the participant’s own device and platform, accommodations asked about in the invitation, and a fee rather than a voucher.
+
+**The wrong turn:** The wrong turn is planning it as an ordinary usability session with a different recruitment line. Lead time, format and payment all change, and all three decide whether the session happens at all.
+
+**What it costs:** A month and a fee are real costs, and they will be questioned. The alternative is a plan that looks reasonable on paper and never produces a session.
+
+**Still unknown:** Still unknown: whether the organisations I named would want to work this way. They may have their own process and their own view of what is fair, and the plan should bend to it.
+
 - Read the assigned recruitment guidance on lead times and accommodations.
 - Name the organisations or routes you would approach.
 - Write the lead time and what compensation you would offer.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Named routes to disabled participants, a lead time, the accommodations you would prepare, and the compensation you would offer.
 
-## 5. Check the language
+Worksheet fields for this step:
+
+- The organisations or routes you would approach — Local disability organisations, user groups, existing contacts. Naming real routes is the point; you are not required to contact them in this lesson.
+- The lead time you would allow, and the accommodations you would prepare for
+- What compensation you would offer, and why that figure — People are giving you expertise and time. Unpaid testing by disabled people is asking the excluded to fix the exclusion for nothing.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Lead time:** How long before a session you need to start arranging it. Accessible sessions need longer: transport, interpreters, accommodation questions and people’s own schedules.
+- **Accommodation:** What somebody needs in order to take part: a particular format, an interpreter, breaks, their own device, a remote option. Asking in advance is part of the invitation.
+
+Stuck starting? Find two real organisations or groups you could actually approach, and write their names.
+
+Is it enough? The plan names real routes, a lead time in weeks, and a figure you could defend.
+
+</details>
+
+#### 5. Check the language
+
 - Remove any sentence claiming compliance, conformance or full accessibility.
 - Add a contact route for someone who meets a barrier.
 - Save the statement with the evidence behind it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every compliance claim removed, a contact route for somebody who meets a barrier, and the repair the Check questions asked for.
 
-## Review and handoff
-- The statement names what was tested, how and when: [evidence reference]
-- Fixed, unfixed and untested are listed separately: [evidence reference]
-- No untested conformance is claimed: [evidence reference]
-- A participant testing plan names routes, lead times and compensation: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Every sentence you removed because it claimed compliance, conformance or full accessibility
+- How somebody who meets a barrier can tell you
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Contact route:** A way for a person who meets a barrier to tell you, that does not itself require the part of your product that is broken.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Search your draft for the words compliant, conformant, fully and accessible, and read each sentence again.
+
+Is it enough? The contact route works even for somebody blocked by the problem they are reporting.
 
 </details>
+
+**Save and continue.** Saved for you: Your evidence list, the statement, the untested list and the participant plan save as you type, on this device first and then online. Kept outside the app: The published statement will live with your product rather than here. Keep the draft in your own folder too if you prefer, and note where. What your creator sees: Your creator reads the untested list and the open problems first. The statement is the module’s case-study artefact, and its value comes from what it admits. Your next action: Open Your work and choose Ready for review. This closes Module 11. Module 12 starts on web foundations, and the untested list you wrote here is what a real build will begin to answer.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 

@@ -38,80 +38,211 @@ One real class page traced in the network tab: the document arrived in 300ms, th
 
 Trace one real page load from request to rendered content, name each stage, and identify the two stages your design decisions can affect.
 
-**Where to work:** Any Chromium browser's developer tools, which are free and installed already. No account, extension or performance service is required.
+**Where to practise:** Build nothing yet — this lesson watches a page that already exists in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+
+Tools: Any Chromium browser's developer tools, which are free and installed already. No account, extension or performance service is required.
 
 - Starting material: A browser and any page you can load repeatedly.
 - Create HaruCourse/Practice/m12-l01-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# What happens between a tap and a page
+#### 1. Read the sequence
 
-Input artifact: A browser and any page you can load repeatedly.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A traced load with each stage named
-- [ ] A request list with sizes and times
-- [ ] Two design-owned findings from the trace
-- [ ] A note of what appeared first and what the person could do while waiting
-
-## 1. Read the sequence
 - Read the assigned introduction to how the web works.
 - Write the stages of a page load in your own words.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The stages of a page load written in your own words, in order.
 
-## 2. Trace a real load
+Worksheet fields for this step:
+
+- The stages of a page load, in your own words — Ask for it, get it back, read it, ask for the things it mentions, draw it, let the person use it. Six short lines is plenty.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Request:** Your browser asking a server for one file. A page is never one request; it is one request that leads to many more.
+- **Parse:** The browser reading the HTML it received and working out what it says. It is during this that it discovers everything else it has to ask for.
+- **Render:** Drawing the page on screen. It can begin before everything has arrived, which is why what you put first matters so much.
+
+Stuck starting? Write the six stages as six short sentences without looking anything up, then read the assigned introduction and correct them.
+
+Is it enough? Your list says what happens in order, and you could explain it to somebody without using the word optimisation.
+
+</details>
+
+#### 2. Trace a real load
+
+**See it first.** Made-up example. Tracing a tool-library page for the first time, and measuring a page the browser already had.
+
+- **What I did:** Opened developer tools, clicked Network, reloaded the page. Four requests, 40 kilobytes, 200 milliseconds. I wrote it down and thought the page was in excellent shape.
+- **What looked odd:** Four requests for a page with nine photographs on it. The numbers did not match what I could see.
+- **What was happening:** My browser already had almost everything from the last time I looked at the page. It was asking for four things and reusing the rest from its own store.
+- **What I changed:** Ticked Disable cache at the top of the panel, left developer tools open, and reloaded again.
+- **What it actually was:** 21 requests, 2.6 megabytes, 3.1 seconds. The same page, measured as a first-time visitor meets it rather than as I meet it.
+
+**The wrong turn:** The wrong turn is measuring with the cache on, which is the default and which flatters every page you have visited before. The numbers look excellent and describe nobody but you.
+
+**What it costs:** Disabling the cache means every reload is slow while you work, which is tedious. It is the only way the numbers describe a new visitor.
+
+**Still unknown:** Still unknown: what a phone on a real network does with the same page. The desktop numbers are a floor, and the next step makes them more honest rather than making them true.
+
 - Open the network tab, disable the cache and reload a real page.
 - Record the number of requests, the total size and the time.
 - Note which requests are images, fonts, scripts and styles.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One real page load traced, with the number of requests, the total bytes, the time, and how that splits by kind.
 
-## 3. Throttle it
+Worksheet fields for this step:
+
+- Which page you traced, and in which browser
+- How many requests, how many bytes in total, and how long
+- How that splits into documents, styles, fonts, scripts and images — The filter buttons at the top of the network panel do this for you. Write the counts and the biggest item in each group.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Developer tools:** A panel built into your browser. F12 opens it on Windows, or right-click the page and choose Inspect. It is free, already installed, and needs no account.
+- **The network panel:** The tab that lists every request the page made, with its size and how long it took. It shows the real sequence rather than the intended one.
+- **Disable cache:** A tickbox at the top of the network panel. With it off, your browser reuses files it already has and the page looks far faster than it is for a new visitor.
+
+Stuck starting? Press F12, click the Network tab, tick Disable cache, then reload the page with developer tools still open.
+
+Is it enough? Your request count is more than a handful, which means you measured it as a stranger would meet it.
+
+</details>
+
+#### 3. Throttle it
+
 - Set a slow connection profile and reload.
 - Record when the first text appeared and when the page became usable.
 - Note anything that shifted position as it loaded.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The same page reloaded on a throttled connection, with when text first appeared, when it became usable, and anything that moved.
 
-## 4. Find the design-owned costs
+Worksheet fields for this step:
+
+- Which throttling profile you chose
+- When the first readable text appeared
+- When the person could actually do something, and what that something was
+- Anything that jumped or moved as the rest arrived
+
+<details>
+<summary>Help with this step</summary>
+
+- **Throttling:** Telling the browser to pretend the connection is slow. It is a dropdown in the network panel, usually offering profiles like Slow 4G.
+- **Time to usable:** When the person could do something, not when loading stopped. It is the number that describes the experience.
+- **Layout shift:** Content jumping as something arrives late, usually an image with no reserved space. People tap the wrong thing because of it.
+
+Stuck starting? Choose a slow profile in the throttling dropdown, reload, and watch the screen rather than the numbers.
+
+Is it enough? You have two separate times written down, and they are different from one another.
+
+</details>
+
+#### 4. Find the design-owned costs
+
 - List every request that exists because of a design decision.
 - Identify two you could remove or reduce without changing the product.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every request that exists because of a design decision, and two you could reduce without changing what the product does.
 
-## 5. Record
+**Try it with help.** Six requests from a made up trace of a tool-library page. For each one, decide whose decision put it there.
+
+- A third typeface file, 78 kilobytes, used only by the quotation on the home page.
+  - **a design decision** — Somebody chose three typefaces in a design file. Nobody can make the third one free; it can only be removed, and that is a design change.
+  - an engineering decision — How the font is loaded is an engineering matter. That there are three of them is not.
+  - the content itself — The quotation is content. The typeface it is set in is a choice about the quotation.
+- A photograph at the top of the page, 1.8 megabytes, sitting above every piece of text.
+  - **a design decision** — Its size can be reduced by engineering, and its position above all the text is why nothing readable appears until it arrives. The position is a design decision and it dominates.
+  - an engineering decision — Compressing it is theirs. Putting it in front of the words is yours.
+  - the content itself — A decorative header photograph is not what anybody came for.
+- A JavaScript library, 130 kilobytes, providing the date picker and four things nobody uses.
+  - a design decision — You asked for a date picker. Which library provides it is not a design choice.
+  - **an engineering decision** — Choosing, replacing or trimming a library is engineering work, and you can raise it without owning it.
+  - the content itself — Nothing here is content.
+- Nine photographs of the actual tools, one per listing, at 40 kilobytes each.
+  - a design decision — Their size and format are design-adjacent. That people want to see the drill before borrowing it is not a decision anybody is going to reverse.
+  - an engineering decision — Loading them only when scrolled to is an engineering choice, and it does not change that they belong to the page.
+  - **the content itself** — This is what the page is. Weight that is the point of the page is the last thing to attack.
+- An icon font, 96 kilobytes, from which the page uses six icons.
+  - **a design decision** — Six icons do not need a set of four hundred. Which icons the design uses, and whether they come as a set, is yours.
+  - an engineering decision — They may well suggest a better delivery. The number of icons the design depends on is decided before that.
+  - the content itself — Icons decorate and label the content; they are not it.
+- Three tracking scripts, 60 kilobytes together, none of which draws anything.
+  - a design decision — Nothing in the design asked for them, and nothing about them appears on screen.
+  - **an engineering decision** — They arrive through decisions about measurement and tooling. Worth raising, and not yours to remove.
+  - the content itself — They draw nothing and tell the reader nothing.
+
+**Then:** Now mark your own request list the same way, and take your two findings from the design column.
+
+**What to watch for:** The tool photographs are the case to notice. Weight that is the reason the page exists is not the place to economise; the third typeface and the icon set are, because nobody would miss them.
+
+Worksheet fields for this step:
+
+- Every request that exists because of a design decision — Typefaces, photographs, icons, decorative images, anything chosen in a design file rather than written in code.
+- Two you could remove or reduce without changing what the product does
+
+<details>
+<summary>Help with this step</summary>
+
+- **Design-owned cost:** Weight that exists because of a choice made in a design file: a typeface, a photograph, an icon set. Nobody can optimise it away without changing the design.
+- **Engineering-owned cost:** Weight that comes from how the thing was built: libraries, bundles, duplicated code. It is real and it is not yours to change here.
+
+Stuck starting? Go down your request list and mark each row design, engineering or content before choosing anything.
+
+Is it enough? Both findings come from the design column, and you could make either one yourself.
+
+</details>
+
+#### 5. Record
+
+**See it first.** Made-up example. Writing up two findings from a tool-library trace, and writing them as somebody else’s work.
+
+- **What I wrote first:** “Optimise the font loading strategy” and “implement lazy loading for below-the-fold images”. Both are real improvements and both sounded properly technical.
+- **What happened to them:** They went onto an engineering list behind fourteen other things and stayed there. Nobody disagreed with them; nobody had a reason to do them this month.
+- **What I actually had:** Three typefaces loading and two in use. A 1.8 megabyte photograph sitting above every word on the page.
+- **What those look like as design changes:** “Remove the third typeface from the design; it is used once, on the home page quotation.” “Move the header photograph below the first paragraph so the text can be read while it loads.”
+- **What changed:** Both were things I could do in my own file that afternoon. The first needed nobody’s permission; the second needed one conversation about the home page.
+
+**The wrong turn:** The wrong turn is translating your own findings into engineering language, because it sounds more credible. What it does is hand away the two changes you were in a position to make.
+
+**What it costs:** Written as design changes, the findings are smaller and less impressive, and they do not cover the framework or the tracking scripts. Those remain worth raising, by somebody who owns them.
+
+**Still unknown:** Still unknown: how much time either change actually saves. The trace tells me the weight and the order, not what the saving will be once both are done.
+
 - Write the two findings as design changes, not engineering tasks.
 - Save the request list and the timings.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The two findings written as design changes, the evidence saved, and the repair the Check questions asked for.
 
-## Review and handoff
-- The load stages are named in the learner's own words: [evidence reference]
-- A real trace records requests, sizes and times: [evidence reference]
-- A throttled load records first text and time to usable: [evidence reference]
-- Two findings are stated as design changes: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Your two findings written as design changes rather than engineering tasks
+- Where you saved the request list and the timings — A screenshot of the network panel is enough. Note its file name; it stays in your own folder.
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Written as a design change:** Something you can do in your own file: remove the third typeface, move the photograph below the first paragraph, use six icons rather than a set.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Take finding one and finish this sentence: “in the design file, I would …”.
+
+Is it enough? Neither finding needs anybody else in order to be started.
 
 </details>
+
+**Save and continue.** Saved for you: Your stages, the request counts, the timings and the two findings save as you type, on this device first and then online. Kept outside the app: The screenshot of the network panel stays in your own folder. Note its file name in step 5; nothing about the traced page is uploaded. What your creator sees: Your creator reads the two findings and whether they are things you could do yourself. That is the difference between a trace and a complaint. Your next action: Open Your work and choose Ready for review. The next lesson builds one page of your own, in markup that means something.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -274,81 +405,210 @@ The class detail page was rebuilt in semantic HTML: one page title, four section
 
 Build one page of your product in semantic HTML, with the heading outline and regions from m11, and verify the structure without looking at the styling.
 
-**Where to work:** A text editor and a browser. Disabling the stylesheet is a single browser setting or a one-line change; no extension, framework or build tool is needed.
+**Where to practise:** Build one page of your product as a real HTML file in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+
+Tools: A text editor and a browser. Disabling the stylesheet is a single browser setting or a one-line change; no extension, framework or build tool is needed.
 
 - Starting material: Your m11 outline and region map, and a text editor.
 - Create HaruCourse/Practice/m12-l02-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# HTML that means something
+#### 1. Read and plan the markup
 
-Input artifact: Your m11 outline and region map, and a text editor.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] One page in semantic HTML with correct heading levels
-- [ ] Landmarks for banner, navigation, main and footer
-- [ ] Links and buttons used for their correct purposes
-- [ ] A stylesheet-off reading with problems found and fixed
-
-## 1. Read and plan the markup
 - Read the assigned HTML module sections on structure and semantics.
 - Map your m11 outline onto heading elements and landmarks.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Your Module 11 outline carried across with levels, and an element chosen for each piece of content.
 
-## 2. Build the page
+Worksheet fields for this step:
+
+- Your Module 11 outline, with the heading level beside each line — You already decided these levels. This step copies them across rather than deciding them again.
+- For each piece of content: the element whose shape matches it
+
+<details>
+<summary>Help with this step</summary>
+
+- **Semantic element:** One whose name says what the content is: a heading, a list, a table, a button. The name is what assistive technology, search and translation read.
+- **Generic container:** A box with no meaning at all. It is the right choice when something is purely for layout and the wrong one everywhere else.
+- **Landmark:** A named region of the page: banner, navigation, main, footer. It is how somebody jumps past the menu to the content.
+
+Stuck starting? Copy your Module 11 outline into the first field and write the level beside each line before choosing any element.
+
+Is it enough? Every piece of content has an element named, including the ones that are just paragraphs.
+
+</details>
+
+#### 2. Build the page
+
+**See it first.** Made-up example. Building the tool detail page, and using a link for something that was not going anywhere.
+
+- **What I built:** The Reserve control as a link, styled to look like a button. On screen it was indistinguishable from the real thing, and it worked when clicked.
+- **Why I did it:** The link was what the template had. Styling it was one line, and I was thinking about how it looked rather than what it was.
+- **What broke:** From the keyboard, enter activated it and the space bar did nothing. A button responds to both; a link responds only to enter. People who work by keyboard press space on buttons.
+- **What else was wrong:** It was announced as a link, so somebody listening was told they were about to go somewhere. They were about to reserve a drill.
+- **What I changed:** Made it a button. The styling stayed exactly the same and two behaviours came back that I had not written a line of code for.
+
+**The wrong turn:** The wrong turn is choosing the element by how it will look, because styling makes any element look like any other. What you lose is the behaviour that came free with the right one.
+
+**What it costs:** Using the right element sometimes means undoing styling that assumed the wrong one, which is fiddly on a page you have already built.
+
+**Still unknown:** Still unknown: whether anything else on the page is the wrong element underneath its styling. The unstyled reading in the next step is what finds those.
+
 - Write the page using elements that match the content's shape.
 - Use a button for actions and a link for navigation.
 - Include the real content, not placeholder text.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One page built in a file of your own, using real content, with any trouble and its recovery written down.
 
-## 3. Read it without styling
+**Try it with help.** Six controls from a made up tool-library page. For each one, decide what it should be.
+
+- Reserve this drill, which holds the item for two hours and stays on the same page.
+  - **a button** — Something happens and you stay where you are. That is a button, and it responds to both enter and the space bar.
+  - a link — Nobody is going anywhere. Announced as a link, it tells a listener the opposite of what it does.
+  - plain text — It is the main action on the page.
+- See other dates, which opens a different page listing every available slot.
+  - a button — A button says something will happen here. This takes the person somewhere else, which is worth knowing in advance.
+  - **a link** — It goes somewhere, so it is a link, and it can be opened in a new tab like any other.
+  - plain text — It is a route to another page and has to be reachable.
+- A filter control that narrows the list on the same page.
+  - **a button** — It changes what is on this page rather than moving anywhere. The keyboard behaviour that comes with a button is exactly what filtering needs.
+  - a link — This is the commonest version of the mistake, because filters often carry a web address. The person is not navigating; they are acting.
+  - plain text — It has to be operable.
+- The words On loan beside an item, which say its current state.
+  - a button — Nothing happens when you press it, and making it pressable invites people to try.
+  - a link — It leads nowhere.
+  - **plain text** — Status is information. Not everything in a list is a control, and marking information as a control is its own failure.
+- The library logo at the top, which takes you to the home page.
+  - a button — It moves you to another page, which is navigation.
+  - **a link** — A link, announced as Home rather than as the name of the logo file.
+  - plain text — It is the usual route back to the start and has to work.
+- A control that expands the safety notes underneath it, on the same page.
+  - **a button** — It changes this page and goes nowhere. It also needs to say whether it is currently open, which a button can carry and a link cannot.
+  - a link — It is often built as one because it looks like a small piece of text. Nothing about it navigates.
+  - plain text — It has to be operable and announceable.
+
+**Then:** Now go through your own page and check each control against the same question: does it go somewhere, or does it do something?
+
+**What to watch for:** The filter is the one that catches people out, because filters often have a web address behind them. The question is what the person is doing, not what the technology happens to use.
+
+Worksheet fields for this step:
+
+- Where the file lives, and what you called it — A folder of your own, and a name ending in .html. Double-clicking it opens it in your browser; no server is involved.
+- Which real content you used, rather than placeholder text — Real content breaks layouts that placeholder text survives, which is the point of using it.
+- Anything that went wrong and how you got past it — A blank page, text running together, a tag you forgot to close. Writing the recovery down is worth as much as the page.
+
+<details>
+<summary>Help with this step</summary>
+
+- **HTML file:** An ordinary text file whose name ends in .html. Double-click it and your browser opens it. Nothing is installed and no server is running.
+- **Button and link:** A link goes somewhere; a button does something. They behave differently from a keyboard, and swapping them breaks that behaviour silently.
+
+Stuck starting? Make a folder, save a file called index.html in it, type the page, then double-click the file to see it.
+
+Is it enough? The page opens in your browser and shows your own content, however plain it looks.
+
+</details>
+
+#### 3. Read it without styling
+
+**See it first.** Made-up example. Reading a tool-library page unstyled, and putting the styling back one rule at a time.
+
+- **What it looked like:** Without the stylesheet, the three tool names ran together as one paragraph, the price comparison was a wall of numbers, and the status text sat nowhere in particular.
+- **What I did first:** Added a rule giving the tool names some space. It looked right again in about a minute.
+- **Why that was the wrong move:** The names ran together because they were three boxes with no meaning, not because they lacked spacing. My rule fixed my eyes and changed nothing for anybody reading the markup.
+- **What the real repairs were:** The names became a list, which separates them for everybody. The numbers became a table with header cells, so each figure is announced with what it is. The status text moved inside the item it describes.
+- **What happened when I put the stylesheet back:** Two of my old rules were no longer needed at all, because the elements were now doing the work I had been doing by hand.
+
+**The wrong turn:** The wrong turn is repairing the unstyled reading with styling, which is the fastest way to make the symptom disappear and the fault permanent.
+
+**What it costs:** Changing elements on a page you have already styled means some of your rules stop applying and have to be rewritten. Usually there are fewer of them afterwards.
+
+**Still unknown:** Still unknown: whether the table reads well when announced cell by cell. It is correctly marked up, which is not the same as being easy to listen to.
+
 - Disable the stylesheet and read the page top to bottom.
 - Mark anything that loses meaning or order.
 - Fix by changing elements, not by adding styling back.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The page read from top to bottom with the styling off, with everything that lost meaning fixed by changing elements.
 
-## 4. Check headings and landmarks
+Worksheet fields for this step:
+
+- How you turned the styling off — Comment out the stylesheet link, or delete it for a minute and put it back. Both are a single line.
+- Everything that lost its meaning or its order
+- What you changed, by changing elements rather than adding styling back
+
+<details>
+<summary>Help with this step</summary>
+
+- **Unstyled reading:** The page with its stylesheet removed. It is what a screen reader, a search engine, a translation tool and reader mode effectively see.
+- **Fixing by element:** Changing what something is rather than how it looks. Adding styling back hides the problem again without solving it.
+
+Stuck starting? Comment out the stylesheet link, reload, and read the whole page aloud before changing anything.
+
+Is it enough? Every fix in this step changed an element, and none of them added a style rule.
+
+</details>
+
+#### 4. Check headings and landmarks
+
 - Confirm one page title and no skipped levels.
 - Confirm the main content can be reached directly.
 - Run the applicable preliminary checks.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One page title, no skipped levels, main content directly reachable, and the Module 11 checks re-run on a real page.
 
-## 5. Record
+Worksheet fields for this step:
+
+- One page title, no skipped levels: what you found
+- How somebody reaches the main content directly
+- Which Module 11 checks you re-ran on this real page, and what changed — Keyboard, contrast and greyscale all work on a real page in a way they could not on a drawing.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Re-running a check:** Doing on a real page what you could only specify on a drawing. Keyboard operation, contrast and greyscale all become testable here.
+- **Specification catching up with the build:** The moment a decision you wrote down earlier is either confirmed or found to have never been applied.
+
+Stuck starting? Tab through the whole page from the address bar, before running anything else.
+
+Is it enough? At least one Module 11 decision has been confirmed or found missing on the real page.
+
+</details>
+
+#### 5. Record
+
 - List the mistakes the rebuild revealed.
 - Save the page and the unstyled reading notes.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The mistakes the rebuild revealed about your earlier screens, and the repair the Check questions asked for.
 
-## Review and handoff
-- Elements match the content's shape: [evidence reference]
-- Headings and landmarks follow the m11 outline: [evidence reference]
-- Links and buttons are used correctly: [evidence reference]
-- The unstyled reading was run and problems fixed: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The mistakes the rebuild revealed about your earlier screens
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **What the build reveals:** Things a drawing cannot show: a control that cannot be pressed with the space bar, a table with no header cells, a status nobody can hear.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Compare the page you built with the screen you drew, and list where they had to differ.
+
+Is it enough? The list is about your earlier decisions rather than about the difficulty of writing HTML.
 
 </details>
+
+**Save and continue.** Saved for you: Your element plan, the build notes, the unstyled findings and the checks save as you type, on this device first and then online. Kept outside the app: The HTML file lives in your own folder and is never uploaded. Note the folder in step 2 so later lessons can find it; Module 12 builds on this same file. What your creator sees: Your creator reads what the rebuild revealed about your earlier screens. Those findings are the reason this module sits where it does. Your next action: Open Your work and choose Ready for review. The next lesson styles this page using the tokens you wrote in Module 8.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -511,80 +771,209 @@ The class page was styled with the token sheet declared as custom properties at 
 
 Style your semantic page using your m08 tokens as custom properties, and explain in writing why three specific rules produce the layout they do.
 
-**Where to work:** A text editor, a browser and its element inspector. No preprocessor, framework or build step is required, and avoiding them at this stage is deliberate: you are learning what the browser does.
+**Where to practise:** Build a stylesheet for the page you built last lesson in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+
+Tools: A text editor, a browser and its element inspector. No preprocessor, framework or build step is required, and avoiding them at this stage is deliberate: you are learning what the browser does.
 
 - Starting material: Your built page and token sheet.
 - Create HaruCourse/Practice/m12-l03-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# CSS: the box, the flow and the cascade
+#### 1. Read the fundamentals
 
-Input artifact: Your built page and token sheet.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A styled page using custom properties from your token sheet
-- [ ] Written explanations of three rules and why they win
-- [ ] One layout surprise diagnosed with the inspector
-- [ ] A note of what you set once and inherited rather than repeating
-
-## 1. Read the fundamentals
 - Read the assigned CSS sections on the box model, flow and the cascade.
 - Write the box model in your own words with a diagram.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The box model and normal flow written in your own words, with a drawing you made yourself.
 
-## 2. Declare your tokens
+Worksheet fields for this step:
+
+- The box model in your own words — Content, then padding around it, then a border, then margin outside that. Draw it on paper and describe your drawing here.
+- What normal flow does before you change anything
+
+<details>
+<summary>Help with this step</summary>
+
+- **Box model:** Every element is a box: the content, padding inside the edge, the border on the edge, and margin outside it. Almost every width surprise comes from this.
+- **Normal flow:** What the browser does before you tell it anything: blocks stack downward, text wraps along lines. Layout modes are changes to this, not replacements for it.
+- **Box sizing:** Whether a width you set includes the padding and border or sits inside them. Setting it to include them once, at the top, prevents most of the surprises.
+
+Stuck starting? Draw four nested rectangles on paper and label them content, padding, border, margin. Then write what you drew.
+
+Is it enough? You could explain to somebody why a box can end up wider than the width you gave it.
+
+</details>
+
+#### 2. Declare your tokens
+
+**See it first.** Made-up example. Moving a tool-library token sheet into a stylesheet, and renaming everything on the way.
+
+- **What I did:** Declared the colours and spacing at the top, and gave them names that felt natural in code: --grey-light, --pad-small, --font-big.
+- **Why it felt sensible:** The documentation names were longer, and shorter names are quicker to type. Nobody was going to read the stylesheet but me.
+- **What broke a fortnight later:** Somebody asked which token the quiet caption used. The documentation says --surface-quiet. The stylesheet says --grey-light. Neither document mentions the other, and they had already drifted: --grey-light had been darkened and the sheet had not.
+- **What I changed:** Renamed every property to match the documentation exactly, character for character, and left the shorter names nowhere at all.
+- **What that bought:** The stylesheet and the token sheet can now be compared by searching for the same word, which is how anybody will ever notice they have drifted apart.
+
+**The wrong turn:** The wrong turn is renaming tokens for the convenience of typing. It creates two vocabularies for one set of decisions, and they drift quietly because nothing connects them.
+
+**What it costs:** Documentation names are longer and less comfortable to type, and you will resent them for the first afternoon.
+
+**Still unknown:** Still unknown: whether the documentation names are good ones. They are the ones in use, and making the stylesheet agree with them is the fix available today.
+
 - Write your token sheet as custom properties at the top of the stylesheet.
 - Use the same names as your documentation.
 - Style the page referring to them, never to raw values.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Your Module 8 tokens declared as custom properties with the same names, and any raw value you used written down with its reason.
 
-## 3. Diagnose a surprise
+Worksheet fields for this step:
+
+- The custom properties you declared, with the same names as your documentation
+- Any place you used a raw value instead of a token, and why — There are legitimate reasons. Writing them down is how a token sheet stays honest.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Custom property:** A named value you declare once and use everywhere: a colour, a spacing step, a type size. Changing it in one place changes everything that referred to it.
+- **Raw value:** A number typed directly into a rule. Each one is a decision made in a place nobody will look at again.
+
+Stuck starting? Open your Module 8 token sheet beside the stylesheet and copy the names across exactly.
+
+Is it enough? Every name in the stylesheet could be found by searching your documentation for the same word.
+
+</details>
+
+#### 3. Diagnose a surprise
+
 - Find something that does not look as you expected.
 - Use the inspector to see which rule won and what it overrode.
 - Write the explanation before changing anything.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One thing that surprised you, what the inspector showed, and your written explanation, produced before any fix.
 
-## 4. Explain three rules
+**Try it with help.** Six surprises from a made up stylesheet. For each one, decide which of the three ideas explains it.
+
+- A card given a width of 300 pixels measures 340 on screen, and it has 20 pixels of padding on each side.
+  - **the box model** — The width was applied to the content, and the padding was added outside it. Setting box sizing to include padding makes 300 mean 300.
+  - the cascade — Only one rule is setting the width. Nothing is competing.
+  - inheritance — Width is not inherited from anywhere.
+- A heading refuses to change colour, and the inspector shows your rule struck through with another one above it.
+  - the box model — Nothing here is about size or spacing.
+  - **the cascade** — The struck-through rule is the panel telling you it lost. A more particular selector elsewhere is winning, and the inspector names it.
+  - inheritance — The colour is being set directly rather than passed down.
+- You set the typeface once on the root and every paragraph, list and heading uses it without being told.
+  - the box model — Nothing about boxes is involved.
+  - the cascade — No two rules are competing. One rule is reaching many elements.
+  - **inheritance** — Typeface, colour and line height pass down to everything inside. This is the behaviour that makes setting them once at the top the right move.
+- Two stacked paragraphs have a 24-pixel gap between them, though each has a 24-pixel margin above and below.
+  - **the box model** — Vertical margins between stacked blocks collapse into the larger of the two rather than adding up. It is part of how the box behaves in normal flow.
+  - the cascade — Both rules applied exactly as written.
+  - inheritance — Margins are not inherited.
+- A button inside a dark panel keeps the panel’s pale text colour even though the button has a white background.
+  - the box model — Nothing about the box is wrong; the colours are.
+  - the cascade — No rule is competing for the button’s colour. Nothing set one.
+  - **inheritance** — The pale colour is arriving from the panel, because nothing overrode it on the button. Inherited values are easy to miss precisely because no rule mentions them.
+- A colour set in one rule is beaten by a shorter, apparently less particular rule in another file.
+  - the box model — Nothing about boxes is involved.
+  - **the cascade** — Something in that rule is raising its weight, and the inspector will show it. The cascade covers importance and order as well as particularity.
+  - inheritance — Both rules are setting the value directly.
+
+**Then:** Now take your own surprise, guess which of the three it is, and check your guess in the inspector before you change anything.
+
+**What to watch for:** The inherited button colour is the one that catches people out. Nothing in any rule mentions it, so searching the stylesheet finds nothing and the inspector finds it in seconds.
+
+Worksheet fields for this step:
+
+- What did not look the way you expected
+- What the inspector showed: which rule won, and what it crossed out — Select the element, look at the Styles panel. Rules that lost are shown struck through.
+- Your explanation, written before the fix
+
+<details>
+<summary>Help with this step</summary>
+
+- **The inspector:** Select an element in developer tools and the Styles panel lists every rule affecting it, with the ones that lost struck through. It answers which rule won without guessing.
+- **Specificity:** How particular a selector is. A more particular rule beats a less particular one regardless of which came first, which is why order alone does not explain a conflict.
+- **Inheritance:** Some values pass down to everything inside: colour, font, line height. It is why setting them once at the top is usually right.
+
+Stuck starting? Right-click the element that surprised you and choose Inspect. Read the Styles panel before touching the file.
+
+Is it enough? Your explanation was written before the fix and names the actual mechanism.
+
+</details>
+
+#### 4. Explain three rules
+
+**See it first.** Made-up example. Explaining three rules from a tool-library stylesheet, and describing them instead.
+
+- **What I wrote first:** “This rule sets the card padding to the medium spacing step.” Three sentences like that, one per rule, and the step looked finished.
+- **What is missing from it:** It restates the rule in English. Anybody could produce it by reading the line aloud, and it proves nothing about whether I know why the page looks as it does.
+- **The question I had been avoiding:** Why does this rule win? The card padding is set in two places, and I did not know which one was in effect until I inspected it.
+- **What the explanation became:** “The card padding comes from the rule on the card class, not the one on the container, because the class is more particular. Deleting the class rule would give every card the container’s larger padding.”
+- **How I chose the other two:** The ones I was least sure about rather than the ones I was proudest of. Both turned out to be doing something slightly different from what I assumed.
+
+**The wrong turn:** The wrong turn is describing what a rule does, because it reads like an explanation and takes no understanding to write. The test is whether you can say what would change if it were deleted.
+
+**What it costs:** Choosing the rules you are least sure about means the step takes longer and occasionally shows you that part of your stylesheet is doing nothing at all.
+
+**Still unknown:** Still unknown: how many other rules in the file are inert. Three explained is three; the rest are unexamined and I am not implying otherwise.
+
 - Choose three rules in your stylesheet and explain what each does and why.
 - Include one about the cascade and one about inheritance.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three rules from your own stylesheet explained, one about the cascade and one about inheritance.
 
-## 5. Record
+Worksheet fields for this step:
+
+- Rule 1 · what it does and why it wins
+- Rule 2 · one about the cascade
+- Rule 3 · one about inheritance
+
+<details>
+<summary>Help with this step</summary>
+
+- **Explaining a rule:** Saying what it does, what it applies to, and why it wins where two rules meet. It is the difference between a stylesheet you wrote and one you understand.
+
+Stuck starting? Choose the three rules you are least sure about rather than the three you are proudest of.
+
+Is it enough? Somebody could delete each rule and predict, from your explanation, what would change.
+
+</details>
+
+#### 5. Record
+
 - Note anything you set once and inherited rather than repeating.
 - Save the stylesheet and the explanations.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What you set once and let inherit, where the stylesheet lives, and the repair the Check questions asked for.
 
-## Review and handoff
-- The stylesheet uses tokens as custom properties: [evidence reference]
-- Three rules are explained including cascade and inheritance: [evidence reference]
-- One surprise was diagnosed with the inspector: [evidence reference]
-- Values are set once and inherited where sensible: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What you set once at the top and let inherit rather than repeating
+- Where the stylesheet is saved
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Setting it once:** Declaring colour, typeface and line height at the top and letting them reach everything. It is shorter, and it means one change reaches the whole page.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Search your stylesheet for the typeface name. If it appears more than once, you are repeating something inheritance would have carried.
+
+Is it enough? You can name at least one value you set once rather than in several places.
 
 </details>
+
+**Save and continue.** Saved for you: Your box model note, the token declarations, the diagnosis and the three explanations save as you type, on this device first and then online. Kept outside the app: The stylesheet sits beside the HTML file in your own folder. Note where in step 5; the rest of Module 12 works on these same files. What your creator sees: Your creator reads the diagnosis you wrote before the fix. Explaining why a rule won is the thing this lesson is teaching, and the fix is a side effect. Your next action: Open Your work and choose Ready for review. The next lesson makes this page work at every width rather than at the one you designed for.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -747,83 +1136,213 @@ The class page was built narrow first: title, key facts, action, then descriptio
 
 Make your page work from about 320 pixels to a wide screen without horizontal scrolling, using flexible layout rather than fixed breakpoint copies.
 
-**Where to work:** A browser window you can drag, plus the device toolbar for a phone-sized viewport. Everything in this lesson works in a text editor and a browser with no build step.
+**Where to practise:** Build the narrow-first layout for the page you already have in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+
+Tools: A browser window you can drag, plus the device toolbar for a phone-sized viewport. Everything in this lesson works in a text editor and a browser with no build step.
 
 - Starting material: Your three-width drawings and the built page.
 - Create HaruCourse/Practice/m12-l04-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Responsive layout, built rather than drawn
+#### 1. Build narrow first
 
-Input artifact: Your three-width drawings and the built page.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Making a tool-library page responsive, and starting from the layout I had already drawn.
 
-## Output checklist
-- [ ] A page working from about 320 pixels upward
-- [ ] Breakpoints chosen from content, with the reason for each
-- [ ] A slow width sweep with failures found between breakpoints
-- [ ] No horizontal page scrolling at any width
+- **What I did:** Built the wide layout first, because it was the one in my design file, then wrote rules to squeeze it down for narrow screens.
+- **What the narrow version became:** A two-column layout with the columns stacked, in the order they happened to be written. The photograph came second, above the price, because that is where it sat in the wide grid.
+- **What was wrong with that order:** Nobody had decided it. It was a side effect of a layout designed for a different width, and on a phone it put a decorative photograph between the title and the only thing anybody needed.
+- **What I did instead:** Started again at 320 with nothing but the content, in the order I would give it to somebody over the telephone: what it is, the three facts, the action, then the description, then the picture.
+- **What widening became:** A series of decisions about what to promote when there was room, rather than a series of rescues. Two of the wide layout’s columns turned out not to be worth restoring.
 
-## 1. Build narrow first
+**The wrong turn:** The wrong turn is building the wide layout first and squeezing it, because the wide layout already exists in your design file. The narrow order then arrives by accident, and accidents are what people on phones actually meet.
+
+**What it costs:** Starting narrow means throwing away some of the arrangement you already drew, including parts you liked. Two of my columns did not come back.
+
+**Still unknown:** Still unknown: whether my priority order is the right one for this content. It is at least a decided order, which the squeezed version was not.
+
 - Lay out the page at about 320 pixels with content in priority order.
 - Use flexible sizing rather than fixed widths.
 - Check nothing requires horizontal scrolling.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A layout at about 320 pixels with content in priority order, flexible sizing, and nothing scrolling sideways.
 
-## 2. Widen and watch
+Worksheet fields for this step:
+
+- The order the content appears in at the narrowest width
+- Where you used flexible sizing instead of a fixed width, and where you could not
+- Anything causing sideways scrolling at 320 pixels, and what you did — Wide tables, long unbroken words and fixed-width images are the usual three.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Narrow first:** Building the smallest layout before the others. It forces the content into priority order, because there is no room for anything else.
+- **Flexible sizing:** Letting something take the room available rather than a number you chose. Flexible layouts wrap and grow; fixed ones break at sizes you never tested.
+- **Horizontal page scrolling:** Having to drag the whole page sideways to read it. It is never acceptable, at any width, and it usually comes from one stubborn element.
+
+Stuck starting? Open the device toolbar in developer tools and set the width to 320, then look at your page before changing anything.
+
+Is it enough? The narrow layout reads top to bottom in an order you could defend, and nothing scrolls sideways.
+
+</details>
+
+#### 2. Widen and watch
+
+**See it first.** Made-up example. Choosing change points for a tool-library page, and choosing them before looking at anything.
+
+- **What I started with:** Three breakpoints copied from a table of device sizes: phone, tablet, desktop. The page then had three layouts and I considered it responsive.
+- **Where it fell apart:** At about 600 pixels, which is inside the tablet range, the three key facts were each on their own line with an enormous empty column beside them. Nothing was broken and it looked abandoned.
+- **What I did instead:** Set the window narrow and dragged it wider a pixel at a time, watching the content rather than the number.
+- **What the content actually asked for:** About 520, where the key facts had room to sit in a row. About 700, where the description could take a comfortable column width. About 1,000, where a side panel became possible without squeezing the description.
+- **What I noticed about those numbers:** None of them is a device. The middle one is the width at which the longest of my three facts stopped wrapping, which is a fact about my content and nothing else.
+
+**The wrong turn:** The wrong turn is choosing breakpoints from a list of devices, because the list exists and is easy to copy. Devices come in every size and the layout then fails at all the widths between them.
+
+**What it costs:** Content-derived change points look arbitrary written down, and somebody will ask why 520. The answer is that it is where your longest fact stops wrapping, which is a better reason than a phone from 2019.
+
+**Still unknown:** Still unknown: whether 520 survives translation. A longer word in another language moves it, which is an argument for flexible rules rather than for more numbers.
+
 - Drag the window wider slowly.
 - Note each point where the layout becomes uncomfortable.
 - Add a breakpoint only where content demands it, and record why.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Change points found by widening slowly, each recorded with the width you saw and the content reason for it.
 
-## 3. Sweep the whole range
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Change point 1 · the width, what became uncomfortable, and what you changed — Write the width you actually saw it at. It will not be a device name, and that is the point.
+- Change point 2 · the width, what became uncomfortable, and what you changed
+- Change point 3 · the width, what became uncomfortable, and what you changed
+
+<details>
+<summary>Help with this step</summary>
+
+- **Change point:** A width where the content starts to want a different arrangement. It comes from your content, so it lands wherever it lands.
+- **Device breakpoint:** A width named after a phone or tablet. Devices come in every size, people resize windows and split screens, and the names go out of date.
+
+Stuck starting? Drag the window edge slowly from narrow to wide and stop the moment something looks uncomfortable. Write that width down.
+
+Is it enough? Each change point names what became uncomfortable, and none of them is named after a device.
+
+</details>
+
+#### 3. Sweep the whole range
+
 - Drag from narrow to wide in one pass.
 - Record every overlap, clip, orphan and scroll.
 - Fix with flexible rules before adding another breakpoint.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One slow pass across the whole range, with every failure between change points recorded and fixed flexibly where possible.
 
-## 4. Test the hard content
+Worksheet fields for this step:
+
+- Every overlap, clip, orphan and scroll you saw between your change points — Most failures live between breakpoints, because that is where nobody looks.
+- What you fixed with a flexible rule rather than another change point
+
+<details>
+<summary>Help with this step</summary>
+
+- **Sweeping:** Dragging from narrow to wide in one continuous pass. It is the only way to see the widths between your change points, which is where most failures are.
+- **Orphan:** One item left alone on a row because the grid divides badly at that width. It is a wrapping problem, not a reason for another change point.
+
+Stuck starting? Grab the window edge at 320 and drag it to full width in one slow movement, watching the page rather than the ruler.
+
+Is it enough? You found at least one failure that was not at a change point.
+
+</details>
+
+#### 4. Test the hard content
+
 - Use your longest real label and largest real number.
 - Enlarge the text to about 200 per cent and sweep again.
 - Fix what breaks by letting containers grow.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The layout tested with your longest real content and at about 200 per cent text, with fixes made by letting containers grow.
 
-## 5. Record
+**Try it with help.** Six failures from a made up sweep of a tool-library page. For each one, decide what the right repair is.
+
+- At about 840 pixels the card grid leaves one card alone on the last row.
+  - **a flexible rule** — Letting the cards wrap and share the space handles every width, including the ones you did not test.
+  - a new change point — It fixes 840 and leaves 870, 910 and everything else. Orphans appear wherever the division happens to be awkward.
+  - change the content or the element — The cards are fine. It is the arrangement that is rigid.
+- At 320 pixels the schedule table forces the whole page to scroll sideways.
+  - a flexible rule — A table with five columns of real content has a minimum width, and no amount of flexibility gets it under 320.
+  - a new change point — You will need one to make the change, and the change itself is the answer rather than the breakpoint.
+  - **change the content or the element** — It becomes a set of records, one per row, which is the decision your Module 8 work already made. The element changes, not just its width.
+- At about 520 pixels the three key facts have room to sit in a row instead of stacking.
+  - a flexible rule — You could let them wrap, and they would sit awkwardly at two-and-one for a whole range of widths.
+  - **a new change point** — This is what a change point is for: a genuine change of arrangement that the content asks for at a particular width.
+  - change the content or the element — Nothing about the facts needs changing. They need more room.
+- A tool name of one long unbroken word pushes the card wider than the screen.
+  - **a flexible rule** — Allowing long words to break inside the card handles it at every width and for every name you have not seen yet.
+  - a new change point — The word is too long at every width, not at one.
+  - change the content or the element — Renaming the tool to fit a layout is the layout deciding your content.
+- At 200 per cent text the header wraps over the logo, because the header has a fixed height.
+  - **a flexible rule** — Let the header grow. More text needs more room, and a fixed height is a promise your content cannot keep.
+  - a new change point — Text size is not width. A breakpoint cannot see it.
+  - change the content or the element — The words are fine. The box refuses to grow.
+- At about 1,000 pixels there is room for a side panel without squeezing the description.
+  - a flexible rule — A panel that appears gradually is worse than one that appears at a width where it fits.
+  - **a new change point** — A genuine change of arrangement, at a width the content chose. This is the third legitimate one on the page.
+  - change the content or the element — The panel already exists; it now has somewhere to go.
+
+**Then:** Now go through your own sweep findings and mark each one with its repair before you change anything.
+
+**What to watch for:** Two rules of thumb come out of this. A failure that appears at one width and disappears at the next is usually a flexible rule; a failure that is there at every width is content or the wrong element. Only a genuine change of arrangement earns a change point.
+
+Worksheet fields for this step:
+
+- Your longest real label and largest real number, and what they did
+- What happened sweeping again with the text at about 200 per cent
+- What you changed by letting containers grow
+
+<details>
+<summary>Help with this step</summary>
+
+- **Hard content:** Your longest label, your largest number, your most awkward name. Layouts survive placeholder text and fail on real content.
+- **Letting a container grow:** Removing the fixed height or width so the box gets bigger when its content does. It is almost always the correct repair.
+
+Stuck starting? Paste your longest real label into the page, then sweep the width again with the text enlarged.
+
+Is it enough? No fix in this step made text smaller, and no fix added a change point for an orphan.
+
+</details>
+
+#### 5. Record
+
 - List your breakpoints with the content reason for each.
 - Compare the built result with your m07 drawings and note the differences.
 - Save the page and the notes.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Change points listed with content reasons, and a comparison against your Module 7 drawings.
 
-## Review and handoff
-- The page works from about 320 pixels with no horizontal scroll: [evidence reference]
-- Breakpoints are justified by content: [evidence reference]
-- A full width sweep was run and failures fixed: [evidence reference]
-- Long content and enlarged text were tested: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Your change points listed with the content reason for each
+- Where the built result differs from your Module 7 drawings — A drawing that turned out to be impossible is a finding, not a failure.
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Comparing with the drawing:** Checking which of your earlier three-width drawings were possible. A drawing that turns out to be impossible is a finding about drawing, not a failure of the build.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Put your Module 7 drawings beside the built page at the same three widths and look for what differs.
+
+Is it enough? Every change point has a content reason, and the comparison names at least one thing the drawing could not have shown.
 
 </details>
+
+**Save and continue.** Saved for you: Your priority order, change points, sweep findings and hard-content results save as you type, on this device first and then online. Kept outside the app: The page and stylesheet stay in your own folder, and screenshots at your three change points can sit beside them. Note the file names in step 5. What your creator sees: Your creator reads the reason beside each change point. A width chosen because your longest fact stopped wrapping is a real reason; a device name is not. Your next action: Open Your work and choose Ready for review. The next lesson puts real images into this page and measures what they cost.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -986,83 +1505,213 @@ Eleven images were reviewed. The hero photograph was 1.8 MB at 3000 pixels wide,
 
 Put real images into your page at appropriate sizes and formats, produce one icon as hand-written SVG, and measure the weight you saved.
 
-**Where to work:** A text editor for the SVG, following the assigned tutorial, and any free image resizer or your operating system's own export. No hosted design account is required to produce or export vector artwork.
+**Where to practise:** Build the image work for the page you have been building in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+
+Tools: A text editor for the SVG, following the assigned tutorial, and any free image resizer or your operating system's own export. No hosted design account is required to produce or export vector artwork.
 
 - Starting material: Your built page and its images.
 - Create HaruCourse/Practice/m12-l05-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Images that do not cost the page
+#### 1. Audit the images
 
-Input artifact: Your built page and its images.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Images served near their display size, with formats chosen deliberately
-- [ ] One icon written by hand as SVG and styled with tokens
-- [ ] A loading decision per image, with reserved space
-- [ ] Before-and-after page weight and time to usable
-
-## 1. Audit the images
 - List every image with its file size and its display size.
 - Mark any served more than twice its display width.
 - Mark flat graphics currently shipped as photographs.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every image listed with its file size, served width and display width, with the oversized and wrongly formatted ones marked.
 
-## 2. Resize and re-format
+Worksheet fields for this step:
+
+- Each image: its file size, the width it is served at, and the width it is displayed at — The network panel gives the file size; hovering an image in the inspector gives both widths.
+- Any image served at more than twice its display width
+- Any flat graphic currently shipped as a photograph — Icons, logos and diagrams are flat graphics. Saved as photographs they are both larger and blurrier.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Served width:** How many pixels wide the file actually is. A 3000-pixel photograph in a 400-pixel slot sends the person 3000 pixels and throws most of them away.
+- **Flat graphic:** An icon, logo or diagram made of shapes rather than of a photograph. Saved as a photograph it is bigger and softer; as a vector it is tiny and sharp at any size.
+- **Dense screen:** A display packing more pixels into the same space. It is why an image is usually served somewhat wider than its display width, rather than exactly at it.
+
+Stuck starting? Open the network panel, filter to images, and write down the largest three before looking at anything else.
+
+Is it enough? Every image has two widths beside it rather than one.
+
+</details>
+
+#### 2. Resize and re-format
+
+**See it first.** Made-up example. Reducing the images on a tool-library page, and leaving the one that mattered most.
+
+- **What I did first:** Compressed everything. Eleven images squeezed as hard as they would go without looking obviously worse. Total weight fell from 2.4 megabytes to 1.6.
+- **What the timing did:** Time to usable on the slow profile went from about 11 seconds to about 10. Nearly a megabyte saved and almost nothing changed.
+- **Why:** The header photograph was still 900 kilobytes and still sat above every word on the page. Nothing readable could appear until it arrived, so the other ten images were never the delay.
+- **What actually worked:** Re-exporting that one photograph at 720 pixels rather than 3000, which took it to 96 kilobytes. Time to usable fell to about 3 seconds.
+- **What I learned about the order:** The weight above the first screenful is what the person waits for. Everything below it can be large and late without anybody noticing.
+
+**The wrong turn:** The wrong turn is compressing everything evenly, because it feels systematic and the total weight falls impressively. What the person waits for is the handful of things above the fold, and an even squeeze barely touches them.
+
+**What it costs:** Re-exporting at 720 means the photograph is soft if anybody opens it full screen. It is a header image on a listing page, so nobody does, and that is a decision worth stating rather than assuming.
+
+**Still unknown:** Still unknown: how it looks on a very dense screen. I exported somewhat wider than the display width for that reason, and I have not checked it on such a device.
+
 - Export each photograph near its display size, allowing for dense screens.
 - Move flat graphics to a vector format.
 - Re-measure the total page weight.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Photographs re-exported near their display size, flat graphics moved to vector, and the new total weight measured.
 
-## 3. Write an SVG by hand
+Worksheet fields for this step:
+
+- What you exported at what size, and the new file sizes
+- The total page weight after resizing
+
+<details>
+<summary>Help with this step</summary>
+
+- **Re-export:** Producing a new file at the size you actually need, from your original. Keep the original; you will want it again at a different size.
+- **Format:** How the picture is stored. Photographs and flat graphics compress in completely different ways, which is why one format does not suit both.
+
+Stuck starting? Take the largest image above the fold and re-export it at the width it is actually displayed.
+
+Is it enough? You measured the total again rather than assuming the saving.
+
+</details>
+
+#### 3. Write an SVG by hand
+
+**See it first.** Made-up example. Producing an icon as SVG for a tool-library page, and never opening the file.
+
+- **What I did first:** Drew the icon in a graphics tool and exported it as SVG. Technically a vector, technically hand-free, and the file was 41 kilobytes.
+- **What was in those 41 kilobytes:** When I finally opened it in a text editor: the editor’s own identifiers, a comment naming the version, four empty groups, and the shape itself in about two lines.
+- **The other thing I found:** The colour was written into the file as a hex value. Three colour variants existed as three separate files, which is why the icon set had grown to nineteen files.
+- **What writing it by hand gave me:** Under half a kilobyte, one file, and the colour left unset so it takes the colour of the text around it. One icon, three appearances, no extra files.
+- **What I kept from the tool:** The drawing. I opened the exported file, found the two lines that were the shape, and threw the rest away.
+
+**The wrong turn:** The wrong turn is treating SVG as an export format rather than as text. An exported file is a vector and is usually mostly editor bookkeeping, with the colour baked in so every variant needs its own file.
+
+**What it costs:** Hand-writing means learning what the two lines mean, which costs an evening the first time. After that it is faster than exporting.
+
+**Still unknown:** Still unknown: whether taking the colour from the surrounding text works everywhere it is used. It works on the three places I checked, and I have not checked the rest.
+
 - Follow the assigned tutorial to write one icon in a text editor.
 - Give it a title and use your token colours.
 - Check it scales cleanly and is under a few kilobytes.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One icon written by hand as SVG, with a title, a token colour, and a size you measured.
 
-## 4. Decide loading per image
+Worksheet fields for this step:
+
+- Which icon you wrote, and the text of it — Follow the assigned tutorial. It is a text file: you can read it, change a colour and see what happens.
+- The title you gave it, and which token colour it uses
+- Its size in kilobytes, and how it looks when scaled up
+
+<details>
+<summary>Help with this step</summary>
+
+- **SVG:** A picture written as text. You can open it in a text editor, read it, change a colour and see the result, which is true of no other image format.
+- **Title:** A line inside the SVG naming what it is. It is how the icon is announced, and it is the same decision you made in the alternative-text lesson.
+
+Stuck starting? Follow the assigned tutorial and write the simplest icon you use: a circle, a cross, an arrow.
+
+Is it enough? Your icon is a few kilobytes, stays sharp when you scale it up, and takes its colour from a token.
+
+</details>
+
+#### 4. Decide loading per image
+
 - Mark which images may load later and which must not.
 - Reserve space for every image so nothing shifts.
 - Carry the m11 alternative-text decision into the markup.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A loading decision for every image, reserved space so nothing jumps, and your Module 11 alternative-text decisions carried into the markup.
 
-## 5. Measure the result
+**Try it with help.** Six images from a made up tool-library page. For each one, decide how it should load.
+
+- The header photograph, at the very top, above all the text.
+  - **must load immediately** — It is the first thing on screen, so delaying it leaves an empty page. The better question is whether it should be above the text at all.
+  - can load later — Later means after the person has scrolled to it, and they are looking at it now.
+  - should not be an image at all — It is a photograph, which nothing else can be.
+- The eighth tool photograph in a list, three screenfuls down.
+  - must load immediately — Nobody has seen it yet, and loading it now delays what they are looking at.
+  - **can load later** — Below the fold and in a long list is the clearest case for waiting. Reserve its space so the list does not jump.
+  - should not be an image at all — A photograph of the actual tool is the point of the listing.
+- A filter icon shipped as a 12-kilobyte photograph file, displayed at 20 pixels.
+  - must load immediately — Loading it sooner does not fix that it is the wrong kind of file.
+  - can load later — It is in the toolbar at the top, so it is needed at once.
+  - **should not be an image at all** — It is a flat graphic. Written as SVG it is a fraction of the size, sharp at any scale, and can take its colour from a token.
+- The library logo in the header, a flat two-colour mark.
+  - must load immediately — It is at the top, so if it stays a photograph file it does have to load at once.
+  - can load later — It is on screen from the first moment.
+  - **should not be an image at all** — A two-colour mark is exactly what SVG is for, and it will be smaller than a favicon.
+- A chart of availability this week, halfway down the page.
+  - must load immediately — It sits below the first screenful, so waiting costs nobody anything.
+  - **can load later** — Below the fold, with its space reserved. If it were drawn as SVG it would be small enough that the question hardly matters.
+  - should not be an image at all — A chart is a reasonable candidate for SVG, and the loading decision is the one this step is asking for.
+- A decorative paper texture behind the whole page, 240 kilobytes.
+  - must load immediately — It is behind everything, and nothing about the page depends on it arriving.
+  - can load later — It covers the whole page, so it cannot easily wait for a scroll.
+  - **should not be an image at all** — 240 kilobytes for decoration nobody would miss. Either remove it or replace it with something the browser can draw itself.
+
+**Then:** Now make the decision for each of your own images, and write the reason beside it.
+
+**What to watch for:** Two of the six are not loading questions at all. Before deciding when an image arrives, ask whether it should be a photograph file, a vector, or nothing.
+
+Worksheet fields for this step:
+
+- For each image: loads immediately, or loads later, and why — Anything above the first screenful must not wait. Anything below it usually should.
+- How you reserved space so nothing jumps as images arrive
+- How your Module 11 alternative-text decisions reached the markup
+
+<details>
+<summary>Help with this step</summary>
+
+- **Loading later:** Telling the browser an image can wait until the person scrolls near it. It is right for everything below the first screenful and wrong for anything above it.
+- **Reserved space:** Telling the layout how big an image will be before it arrives, so nothing jumps when it does. Without it people tap the wrong thing.
+
+Stuck starting? Scroll your own page and draw a line where the first screenful ends. Everything above it loads immediately.
+
+Is it enough? Every image has a decision and a reason, and nothing jumps when the page loads.
+
+</details>
+
+#### 5. Measure the result
+
 - Re-run the throttled load and record the new timings.
 - Record before-and-after weight.
 - Save the audit and the measurements.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Page weight and time to usable measured before and after, with both traces saved.
 
-## Review and handoff
-- Images are served near their display size in suitable formats: [evidence reference]
-- One icon is hand-written SVG using tokens: [evidence reference]
-- Loading decisions are per image with space reserved: [evidence reference]
-- Weight and timing improvements are measured: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Page weight before and after, and time to usable before and after
+- Where you saved the two traces
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Before and after:** The same measurement, under the same conditions, on either side of a change. Without the conditions matching, the pair proves nothing.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Re-run the throttled load with the same profile you used in lesson 1, so the two numbers can be compared.
+
+Is it enough? Both numbers were measured the same way, and you can say what changed between them.
 
 </details>
+
+**Save and continue.** Saved for you: The image audit, the resizing record, the SVG notes, the loading decisions and both measurements save as you type, on this device first and then online. Kept outside the app: Original images stay in your own folder; keep them, because you will want a different size later. The two network traces can sit beside them. What your creator sees: Your creator reads the before-and-after pair and the conditions beside it. Two numbers measured the same way are the whole evidence here. Your next action: Open Your work and choose Ready for review. The next lesson adds the first behaviour that genuinely needs a script, and asks whether it does.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1225,82 +1874,211 @@ The filter panel was built twice. The first version used a script for showing an
 
 Add one genuinely interactive behaviour to your page with plain JavaScript, keeping it usable when the script fails, and explain what the code does line by line.
 
-**Where to work:** A text editor and a browser console. No framework, build step, package manager or account: plain files are the point at this stage.
+**Where to practise:** Build one interactive behaviour on the page you have been building in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+
+Tools: A text editor and a browser console. No framework, build step, package manager or account: plain files are the point at this stage.
 
 - Starting material: Your built page and an m09 interaction specification.
 - Create HaruCourse/Practice/m12-l06-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Just enough JavaScript
+#### 1. Ask whether you need a script
 
-Input artifact: Your built page and an m09 interaction specification.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Building a filter panel for a tool-library page twice, and building the hard version first.
 
-## Output checklist
-- [ ] One interaction built with plain JavaScript
-- [ ] A line-by-line explanation of what the code does
-- [ ] A native or CSS alternative considered and recorded
-- [ ] A stated behaviour when the script does not run
+- **What I built first:** A show-and-hide panel in JavaScript. About forty lines by the time it worked.
+- **What those forty lines were doing:** Six of them opened and closed the panel. The other thirty-four handled the keyboard, moved focus into the panel and back out, closed it on escape, and announced whether it was open.
+- **What I had not checked:** Whether the browser already had a disclosure element. It does. It opens, closes, works from the keyboard and announces its state, and none of that is written by me.
+- **What the second version was:** The native element, four lines of styling, and no script at all. It behaved better than mine, because mine had got the focus return wrong and I had not noticed.
+- **What genuinely needed a script:** Filtering the list as the options change. About twenty lines, which is a thing the browser has no element for.
 
-## 1. Ask whether you need a script
+**The wrong turn:** The wrong turn is starting from the script, because every example online starts there. Most of the code you then write is re-implementing behaviour that already existed, and re-implementing it slightly wrong.
+
+**What it costs:** Native elements look and behave the way the browser wants until you style them, and some of them are awkward to style. That is a smaller problem than thirty-four lines of keyboard handling you now own.
+
+**Still unknown:** Still unknown: whether the native disclosure animates the way the Module 9 specification asked for. It may not, and that is a conversation about the specification rather than a reason to rebuild it by hand.
+
 - Read the assigned sections on events and DOM changes.
 - For your chosen interaction, find any native or CSS answer first.
 - Record what the native version gives you free.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One interaction chosen, the native or CSS answer looked for, and what that version gives you for nothing.
 
-## 2. Build the interaction
+Worksheet fields for this step:
+
+- Which Module 9 interaction you are building
+- The native or CSS answer you looked for, and what you found — Disclosures, dialogues, details, form validation and hover states all exist without a script.
+- What the native version gives you without writing anything
+
+<details>
+<summary>Help with this step</summary>
+
+- **Native element:** Something the browser already provides: a disclosure, a dialogue, form validation. It arrives with keyboard behaviour and announcements nobody had to write.
+- **Reaching for a script:** The habit of building behaviour by hand because that is how examples online do it. Much of what people script, HTML and CSS already do.
+
+Stuck starting? Search the assigned material for your interaction by name before writing anything.
+
+Is it enough? You looked for a native answer and wrote down what you found, including finding none.
+
+</details>
+
+#### 2. Build the interaction
+
+**See it first.** Made-up example. Building the filter behaviour on a tool-library page, and spending an hour on a page that was doing nothing.
+
+- **What happened:** I wrote the script, reloaded, and nothing at all happened. No movement, no error I could see, no clue.
+- **What I did for the first hour:** Read my own code over and over, changed things that looked suspicious, and reloaded after each change. Nothing improved and the file got worse.
+- **What I should have done first:** Opened the Console tab in developer tools. There was one line of red text: a name I had spelled two different ways, with the file and the line number beside it.
+- **The second thing the console told me:** Once that was fixed, a different message said the element was null. The script was running before the page had finished being read, so the thing it was looking for did not exist yet.
+- **What fixed it:** Moving the script to the end of the page. Two problems, both named by the console, both fixed in five minutes once I read it.
+
+**The wrong turn:** The wrong turn is debugging by staring at your own code, because that is what feels like working. The browser has already told you the file and the line, in a tab most people never open.
+
+**What it costs:** Console messages are written for people who already know the vocabulary, and the first few will not mean much. Reading them badly is still faster than reading your own code hopefully.
+
+**Still unknown:** Still unknown: whether moving the script to the end is the right long-term answer or a convenience. It works, and there are other ways, and this lesson is not the place to choose between them.
+
 - Write the script in plain JavaScript, as short as you can make it.
 - Attach behaviour to real elements rather than replacing them.
 - Test with the keyboard as well as the pointer.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The interaction built in plain JavaScript, attached to real elements, and tested with the keyboard as well as the pointer.
 
-## 3. Explain the code
+Worksheet fields for this step:
+
+- Where the script lives, and how the page loads it
+- What happened when you used it with the keyboard alone
+- Anything that went wrong, and how you got past it — Open the console in developer tools. Red text there usually names the file and the line.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Event:** Something happening: a click, a key, a change. Scripts mostly wait for events and then change something.
+- **The console:** A tab in developer tools where errors appear in red, usually naming the file and the line. It is the first place to look when nothing happens.
+- **Progressive behaviour:** Adding to elements that already work rather than replacing them with things built from scratch. It keeps everything the browser gave you.
+
+Stuck starting? Write the smallest version that does anything at all, load the page, and check the console before adding more.
+
+Is it enough? It works with the keyboard as well as with the pointer, and you have written down what went wrong on the way.
+
+</details>
+
+#### 3. Explain the code
+
 - Write what each line does in plain language.
 - Name the event, the handler and the change.
 - Mark anything you copied and do not yet understand.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every line explained in plain language, with anything you copied and do not understand written down honestly.
 
-## 4. Design the failure
+Worksheet fields for this step:
+
+- What each line does, in plain language — Name the event, the handler and the change. Three ideas cover most of it.
+- Anything you copied and do not yet understand — Writing this down honestly is worth more than pretending. It is also the list to ask an engineer about.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Reading code:** The skill this lesson is actually for. It lets you tell a feasible request from an unreasonable one, follow an estimate, and notice an evasive answer.
+- **Copied and not understood:** A line taken from an example that works and that you cannot explain. Writing it down turns it into a question rather than a gap.
+
+Stuck starting? Go line by line and write what each one does. Where you cannot, say so rather than guessing.
+
+Is it enough? Every line has either an explanation or an honest admission beside it.
+
+</details>
+
+#### 4. Design the failure
+
 - Disable JavaScript and reload the page.
 - Record what still works and what does not.
 - Add a route that works without the script where the task requires it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The page reloaded with JavaScript switched off, what still works recorded, and a route added that works without the script.
 
-## 5. Record
+**Try it with help.** Six behaviours from a made up tool-library page. For each one, decide what it needs.
+
+- Safety notes that expand when a control is pressed, on the same page.
+  - **a native element** — The browser has a disclosure element. It opens, closes, works from the keyboard and announces its state without a line from you.
+  - CSS alone — There are tricks to do it with CSS, and they behave oddly with the keyboard and announce nothing.
+  - a script — This is the case where forty lines get written to re-implement something that already exists.
+- A card that lifts slightly when the pointer is over it.
+  - a native element — It is a visual state rather than a component.
+  - **CSS alone** — A hover state is one rule. Remember it does not exist by touch, which is a design question rather than a technical one.
+  - a script — Watching pointer movement with a script for a visual effect is expensive and unnecessary.
+- The list narrowing as filter options are changed, without reloading.
+  - a native element — The browser has no element that filters a list of your content against your rules.
+  - CSS alone — CSS can hide things it can select. It cannot decide which rows match a set of chosen options.
+  - **a script** — This is the genuine case. Twenty lines, plus a submit button for when the script does not run.
+- Telling somebody a required field is empty when they try to submit.
+  - **a native element** — Marking a field required gives you the check, the message and the focus behaviour without a script. You may want to improve the message; you do not need to build the mechanism.
+  - CSS alone — CSS can style an invalid field and cannot stop a submission.
+  - a script — Written by hand this is where accessible error handling usually goes wrong.
+- A header that stays at the top as the page scrolls.
+  - a native element — It is a positioning behaviour rather than a component.
+  - **CSS alone** — One property. Scripts that do this by watching scroll position are a common and expensive way to reinvent it.
+  - a script — Watching every scroll event to reposition a header is exactly the sort of thing to avoid.
+- A confirmation that appears over the page and takes focus until it is answered.
+  - **a native element** — The browser has a dialogue element that handles focus, escape and the layer above the page. Those three are what hand-built versions get wrong.
+  - CSS alone — CSS can draw it. It cannot manage focus, which is the whole difficulty.
+  - a script — A script opens and closes it, and it should open and close a native dialogue rather than a box built from scratch.
+
+**Then:** Now check your own interaction against the same three options, and record what the native version would have cost or saved.
+
+**What to watch for:** The dialogue and the disclosure are the two most commonly rebuilt by hand, and they are the two where the browser’s version is hardest to beat: focus management and state announcement are exactly what a hand-built version forgets.
+
+Worksheet fields for this step:
+
+- What still works with JavaScript switched off, and what does not — Developer tools can disable JavaScript from the settings panel. Reload after switching it off.
+- The route you added that works without the script
+
+<details>
+<summary>Help with this step</summary>
+
+- **Without the script:** Not only somebody who turned JavaScript off. A slow connection, a blocked file or one error earlier in the page all produce the same result.
+- **Fallback route:** A way to complete the task when the enhancement is not there. For a filter, a submit button that reloads with the filters applied.
+
+Stuck starting? Open the developer tools settings and switch JavaScript off, then reload and try the task.
+
+Is it enough? You know what a person gets when the script does not run, and it is not nothing.
+
+</details>
+
+#### 5. Record
+
 - Write what the native alternative would have cost or saved.
 - Save the code, the explanation and the failure behaviour.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What the native alternative would have cost or saved, where the work is saved, and the repair the Check questions asked for.
 
-## Review and handoff
-- A native or CSS alternative was considered first: [evidence reference]
-- The interaction works with a keyboard: [evidence reference]
-- The code is explained line by line: [evidence reference]
-- Behaviour without the script is specified and tested: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What the native alternative would have cost or saved
+- Where the code and the explanation are saved
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **What it saved:** The lines you did not write, and the behaviour you did not have to get right. Keyboard handling and announcements are the usual two.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Count the lines in your script that are about the behaviour, and the lines that are about the keyboard.
+
+Is it enough? You can say what choosing the native element would have changed, in lines and in behaviour.
 
 </details>
+
+**Save and continue.** Saved for you: Your native-answer notes, the keyboard test, the line-by-line explanation and the failure behaviour save as you type, on this device first and then online. Kept outside the app: The script sits beside your page and stylesheet in your own folder. Nothing is uploaded, and no package manager or build step is involved. What your creator sees: Your creator reads the native alternative you considered and the list of lines you cannot explain. Both are more informative than working code. Your next action: Open Your work and choose Ready for review. The next lesson deals with data that has not arrived yet.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1463,81 +2241,208 @@ The class list was connected to a small public data source. Four branches were b
 
 Fetch data from a public source into your page, and build the loading, empty, error and slow states you specified in m08 so they are real rather than drawn.
 
-**Where to work:** A public data source that needs no key, or a local file of your own realistic data served alongside the page. Nothing here requires an account, a paid API or a backend.
+**Where to practise:** Build the four states of a list that has to wait for its data in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+
+Tools: A public data source that needs no key, or a local file of your own realistic data served alongside the page. Nothing here requires an account, a paid API or a backend.
 
 - Starting material: Your state specifications and the built page.
 - Create HaruCourse/Practice/m12-l07-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Data that arrives later
+#### 1. Fetch something real
 
-Input artifact: Your state specifications and the built page.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Connecting a tool-library list to real data, and building against data I had written myself.
 
-## Output checklist
-- [ ] A page that fetches and renders real data
-- [ ] Loading, content, empty and error branches built with your wording
-- [ ] A slow-wait message and a timeout with a route out
-- [ ] A list of specification errors the build revealed
+- **What I built against:** Six rows of test data I typed out: short names, tidy dates, a photograph for each, every field filled.
+- **What the page looked like:** Immaculate. The cards lined up, every name fitted on one line, and the layout I had drawn in Module 7 came out exactly as drawn.
+- **What the real source returned:** Forty-one rows. Four with no photograph. One name of eleven words. Three dates in a format I had not expected, and two items where the availability field was simply absent.
+- **What broke:** The missing photographs left holes, the long name pushed its card off the grid, and the absent availability rendered as the word undefined in the place where On loan should have been.
+- **What I changed about the method:** Started from the real data, ugly as it was, and built the layout around what actually arrives rather than around what I would have chosen to arrive.
 
-## 1. Fetch something real
+**The wrong turn:** The wrong turn is inventing tidy test data, because you need something to build against and yours is always well-behaved. Every shape you failed to imagine becomes a bug nobody sees until it is in front of a person.
+
+**What it costs:** Building against real data means the page looks bad for the first hour and you will be tempted to tidy the data instead of the design. The data is not yours to tidy.
+
+**Still unknown:** Still unknown: whether forty-one rows is a typical result. It is one request on one day, and the loading state I reserve space for depends on the answer.
+
 - Read the assigned sections on fetching data.
 - Connect your page to a public source or a local data file.
 - Render the content branch first.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Real data arriving in your page and the content branch rendering it, with any trouble and its recovery written down.
 
-## 2. Build the other three branches
+Worksheet fields for this step:
+
+- Where the data comes from — A public source that needs no key, or a file of your own realistic data sitting beside the page. Either is fine; no account is needed.
+- What the content branch renders, and what one real row looks like
+- Anything that went wrong getting the data in, and how you got past it — The console and the network panel between them name almost every failure here.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Fetching:** Asking for data after the page has already loaded, and doing something with it when it comes back. The gap between asking and receiving is what the next three steps are about.
+- **Public source:** Data anybody can request without a key or an account. A file of your own realistic data, sitting beside the page, works just as well for this lesson.
+
+Stuck starting? Render one row from real data before building anything else. Everything after that is states around it.
+
+Is it enough? Real data appears on your page, even if it appears badly.
+
+</details>
+
+#### 2. Build the other three branches
+
+**See it first.** Made-up example. Building the four branches for a tool-library list, and building the one that never happens to me.
+
+- **What I built first:** Content and loading. Both appear constantly while you work, so both got attention and both looked good.
+- **What I put off:** Empty and error. In three days of building, I had seen neither: my test data always returned rows, and my connection never failed.
+- **What I eventually wrote for them:** Two grey lines. “No results.” and “Something went wrong.” It took two minutes and I did not look at them again.
+- **What happened when I forced an error:** The message appeared, and every filter the person had set was gone. Retrying meant setting all four again, which is the moment somebody leaves.
+- **What the branches became:** Empty says what would appear here and offers to widen the dates. Error says what happened, that nothing was lost, and retries with the filters still set. Both took twenty minutes because the wording already existed in my Module 8 sheet.
+
+**The wrong turn:** The wrong turn is building the branches in the order you happen to meet them, which means the two you never see get two minutes at the end. A person on a train meets the error branch more often than some features you will spend a week on.
+
+**What it costs:** Giving empty and error real wording and real behaviour costs most of an afternoon on states that, from your desk, look like they never happen.
+
+**Still unknown:** Still unknown: whether the retry actually helps, or whether the failure that produced it will simply repeat. The design assumes a transient failure, and I have not tested a persistent one.
+
 - Add loading, empty and error branches using your m08 wording.
 - Reserve the space content will occupy.
 - Make the error branch preserve filters and offer retry.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Loading, empty and error branches built with your own Module 8 wording, with space reserved and filters preserved.
 
-## 3. Make it slow and make it fail
+Worksheet fields for this step:
+
+- What loading shows, and how much space it reserves — Reserve the space the content will take, so nothing jumps when it arrives.
+- What empty says, using your Module 8 wording
+- What error says, what it preserves, and how retry works
+
+<details>
+<summary>Help with this step</summary>
+
+- **Branch:** One of the outcomes the page can be in. Four of them exist whether or not you design them: loading, content, empty and error.
+- **Preserving input:** Keeping the filters, the search text and anything typed when something fails. Losing it turns one failure into starting again.
+
+Stuck starting? Open your Module 8 state specifications and copy the wording across before writing any code.
+
+Is it enough? All four branches exist, and the two you never see have the same care as the two you do.
+
+</details>
+
+#### 3. Make it slow and make it fail
+
 - Throttle the connection and watch the loading branch.
 - Force an error by breaking the address or going offline.
 - Add a timeout with its own message and a route out.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The loading branch watched on a throttled connection, an error forced deliberately, and a timeout with a route out.
 
-## 4. Compare with the specification
+**Try it with help.** Six moments from a made up tool-library list waiting for its data. For each one, decide which branch the person should be in.
+
+- The request has been out for 800 milliseconds and nothing has come back yet.
+  - **loading** — Ordinary waiting. Reserve the space, show the placeholder rows, and say nothing extra.
+  - empty — Nothing has come back, which is not the same as nothing existing.
+  - error — Nothing has failed. Announcing a problem this early creates one.
+- The request came back successfully with a list containing no items, because the filters are narrow.
+  - loading — The waiting is over. Leaving a spinner here is the commonest version of this mistake.
+  - **empty** — It worked and there is nothing to show. Say what would appear here and offer the change most likely to help.
+  - error — Calling a successful answer an error sends the person looking for a fault that does not exist.
+- The device has no connection, so the request never leaves.
+  - loading — It will wait for ever, which is the state nobody designs.
+  - empty — It is not that there are no tools. It is that nobody could ask.
+  - **error** — Say what happened, that nothing they typed was lost, and offer to try again when they are back.
+- The request has been out for thirty seconds with no answer and no failure.
+  - loading — Technically true and useless. After thirty seconds a spinner is telling somebody nothing they cannot already see.
+  - empty — Nothing has come back to be empty.
+  - **error** — Time out, say so plainly, and give a route out. Waiting indefinitely is a decision, and it is a bad one.
+- The server answered, and what it answered was that something had gone wrong at its end.
+  - loading — An answer arrived, so the waiting is finished.
+  - empty — There may well be plenty of tools. Nobody managed to find out.
+  - **error** — This is the clearest error case, and it is the one where saying nothing was lost matters most.
+- Four seconds in, the request is still going, and it is going to succeed in another six.
+  - **loading** — Still loading, and long enough that the person deserves a word about it. This is where the slow message earns its place.
+  - empty — Nothing has arrived yet to be empty.
+  - error — Nothing has failed, and calling it a failure at four seconds would be wrong six seconds later.
+
+**Then:** Now force each of these on your own page and check the person lands where you intended.
+
+**What to watch for:** The pair to keep apart is empty and error. Empty means the question was answered and the answer was none; error means nobody got to ask. Sending somebody to the wrong one of those sends them looking for the wrong repair.
+
+Worksheet fields for this step:
+
+- What the loading branch looked like on a throttled connection
+- How you forced an error, and what the person saw — Break the address, or go offline in the network panel. Both take one click.
+- Your timeout message and the route out of it — Waiting for ever is a fifth state nobody designs. Decide what happens at thirty seconds.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Forcing a failure:** Breaking the address, or switching to offline in the network panel. Errors are hard to find by waiting for them and easy to cause on purpose.
+- **The fifth state:** Slow. Not loading and not failed, just still going. Decide what happens at three seconds and at thirty, or the person waits for ever with a spinner.
+
+Stuck starting? Open the network panel, set it to offline, and reload. That is your error branch, whether or not you built one.
+
+Is it enough? You have seen all four branches on your own screen rather than in your specification.
+
+</details>
+
+#### 4. Compare with the specification
+
 - Check each built state against what you specified in m08.
 - Record every place the specification was wrong or incomplete.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each built state compared against your Module 8 specification, with every wrong or incomplete part named.
 
-## 5. Record
+Worksheet fields for this step:
+
+- Every place the Module 8 specification was wrong or incomplete
+
+<details>
+<summary>Help with this step</summary>
+
+- **Specification error:** Something you wrote that turned out to be impossible, wrong or missing once it was built. Finding one is what this step is for.
+
+Stuck starting? Put your Module 8 sheet beside the built page and go state by state, in order.
+
+Is it enough? You found at least one thing the specification got wrong, because almost every specification does.
+
+</details>
+
+#### 5. Record
+
 - Update the specifications to match what the build showed.
 - Save the code and the list of corrections.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The specification updated to match what the build showed, and the repair the Check questions asked for.
 
-## Review and handoff
-- All four branches are built and reachable: [evidence reference]
-- The wording comes from the m08 specifications: [evidence reference]
-- Slow and failed requests are handled with a route out: [evidence reference]
-- Specification errors revealed by the build are recorded: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What you changed in the specification to match what the build showed
+- Where the code and the four states are saved
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Updating the specification:** Correcting the earlier document rather than only the code. Otherwise the next person builds from a description you already know is wrong.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Open the Module 8 document and change it, rather than writing a note about changing it.
+
+Is it enough? Somebody building from your specification today would build what you actually built.
 
 </details>
+
+**Save and continue.** Saved for you: Your data notes, the four branches, the slow and failure observations and the specification corrections save as you type, on this device first and then online. Kept outside the app: The page, the script and any local data file stay in your own folder. Nothing about them is uploaded from here. What your creator sees: Your creator reads the specification errors the build revealed. A specification that survived contact with a build unchanged usually means it was not specific enough to be wrong. Your next action: Open Your work and choose Ready for review. The next lesson builds a form that really submits.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1700,83 +2605,212 @@ The booking form was built with native input types and required attributes, addi
 
 Build one working form with native validation, accessible errors and preserved input, and record what the browser gave you free versus what you had to write.
 
-**Where to work:** A text editor and a browser. Submission can go to a local endpoint or simply be intercepted; nothing here needs a server, a form service or an account.
+**Where to practise:** Build one working form, native behaviour first in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+
+Tools: A text editor and a browser. Submission can go to a local endpoint or simply be intercepted; nothing here needs a server, a form service or an account.
 
 - Starting material: Your field table and error specifications.
 - Create HaruCourse/Practice/m12-l08-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# A form that actually submits
+#### 1. Build with native behaviour
 
-Input artifact: Your field table and error specifications.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Building a tool-request form, and rebuilding what the browser was already doing.
 
-## Output checklist
-- [ ] A working form using native validation where possible
-- [ ] Custom rules only where the platform cannot know them
-- [ ] Errors associated with fields, announced and linked from a summary
-- [ ] A record of what was free and what was hand-written
+- **What I assumed:** That native validation looks crude, so a custom version would be better. I had never actually watched the native one run.
+- **What I tried:** Built the form with types and required attributes and nothing else, then submitted it empty.
+- **What happened:** The browser stopped the submission, moved focus to the first empty field, showed a message beside it and announced it. On my phone the email field brought up a keyboard with an at sign on it.
+- **What I had planned to write:** All of that. The checking, the message, the focus move and the announcement, by hand, for six fields.
+- **What I wrote instead:** Two rules the browser cannot know: that the date must be one on which a class runs, and that the phone number must match one of two local formats. About fifteen lines.
 
-## 1. Build with native behaviour
+**The wrong turn:** The wrong turn is judging native validation by its appearance without watching its behaviour. What looks plain is doing four things, and a custom version that looks better usually does one.
+
+**What it costs:** Native messages are worded by the browser and cannot be rewritten freely, so some of them are vaguer than your own wording would be. You can add your own beside them, which is a smaller job than replacing the mechanism.
+
+**Still unknown:** Still unknown: whether the native wording reads well in every browser your audience uses. It varies, and I have checked two.
+
 - Read the assigned form sections and the accessibility requirements.
 - Build the form with appropriate input types and required fields.
 - Test what the browser does before adding anything.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A form built from appropriate input types and required fields, with what the browser does on its own observed before anything is added.
 
-## 2. Add only what is missing
+Worksheet fields for this step:
+
+- Which input types and required fields you used, and why each — The type changes the keyboard on a phone, the validation and the error message, all without a line from you.
+- What the browser did on its own when you submitted with mistakes in it — Try it before adding anything. Most people never find out what they were about to rebuild.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Input type:** Telling the browser what kind of thing a field holds. It changes the keyboard on a phone, the validation and the error message, without any code.
+- **Native validation:** The checking the browser does itself, including announcing the problem and moving focus. Custom versions routinely omit both of those.
+
+Stuck starting? Build the fields with types and required attributes only, then submit the form empty and watch.
+
+Is it enough? You have written down what the browser did before you added anything.
+
+</details>
+
+#### 2. Add only what is missing
+
 - Identify rules the browser cannot know.
 - Implement those, matching the native presentation.
 - Keep the total custom code as small as you can.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Custom rules written only for what the browser cannot know, matching the native presentation.
 
-## 3. Make errors accessible
+Worksheet fields for this step:
+
+- The rules the browser has no way to know
+- What you wrote for those, and roughly how many lines
+- How your custom errors match the native ones in appearance and behaviour — Two error styles in one form tells the person the two kinds of mistake are different things. They are not.
+
+<details>
+<summary>Help with this step</summary>
+
+- **What the browser cannot know:** Anything about your world: which dates have classes, which formats your region accepts, whether that name is already taken. Everything else it probably already checks.
+- **Matching the presentation:** Making your errors look and behave like the browser’s. Two styles in one form suggests two kinds of mistake, and there is only one kind.
+
+Stuck starting? List the rules you need, then cross off every one the browser already checks.
+
+Is it enough? Everything left on the list is genuinely about your own subject rather than about formats in general.
+
+</details>
+
+#### 3. Make errors accessible
+
+**See it first.** Made-up example. Building the error summary on a tool-request form, and building the half that is easy to see.
+
+- **What I built:** A summary at the top: “There are 3 problems with this form”, with three lines under it naming each field.
+- **What it looked like:** Exactly right. Prominent, clearly worded, using the Module 11 wording, and announced when it appeared because I had specified that.
+- **What happened by keyboard:** The person hears “There are 3 problems”. Then they tab, and tab, and tab, through the header and the navigation, hunting for the first field with something wrong.
+- **What was missing:** The three lines were text, not links. A summary that names problems without taking you to them is an announcement rather than a route.
+- **What I changed:** Each line became a link to its field, and focus moved to the summary when it appeared. Three problems, three key presses, no hunting.
+
+**The wrong turn:** The wrong turn is building the part of the summary you can see and stopping there. It looks complete, it is announced, and it leaves somebody exactly where they were.
+
+**What it costs:** Moving focus to the summary interrupts wherever the person was. On a failed submission that is the right interruption, and on anything less serious it would not be.
+
+**Still unknown:** Still unknown: whether moving focus to the summary or straight to the first bad field is better. I chose the summary because it says how many, and I have not tested the alternative.
+
 - Associate each error with its field.
 - Add a summary that links to each problem field.
 - Ensure the summary is announced when it appears.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every error associated with its field, a summary linking to each problem, and the announcement checked by listening.
 
-## 4. Fail and recover
+Worksheet fields for this step:
+
+- How each error is associated with its field
+- What the summary says and what each line links to
+- How you checked the summary is announced when it appears — The screen reader you used in Module 11 will tell you. Seeing it appear is not the same check.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Association:** The error joined to its field, so reaching the field announces the error. A message sitting near a box is not associated with it.
+- **Announced:** Spoken when it appears, rather than appearing silently. This is the behaviour Module 11 recorded as specified and untested; here you can test it.
+
+Stuck starting? Turn the screen reader back on before you check this step. Seeing the summary appear is not the check.
+
+Is it enough? You listened to a failed submission, rather than watching one.
+
+</details>
+
+#### 4. Fail and recover
+
 - Submit with several errors and confirm nothing is lost.
 - Check focus moves somewhere useful.
 - Test the whole form with the keyboard only.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A failed submission with several mistakes, nothing lost, focus somewhere useful, and the whole form completed by keyboard.
 
-## 5. Record what was free
+**Try it with help.** Six form behaviours from a made up tool-library build. For each one, decide where it came from.
+
+- On a phone, the email field brings up a keyboard with an at sign on it.
+  - **free from the browser** — The input type does this. It is one of the clearest arguments for using the right type rather than a plain box.
+  - written by hand — Nothing you can write from a page changes the keyboard. The type is the only lever.
+  - missing entirely — It is present as soon as the type is right.
+- Submitting with a required field empty stops the submission, moves focus there and announces the problem.
+  - **free from the browser** — Three behaviours from one attribute: stopping, focusing and announcing. These are the three that hand-built validation usually misses.
+  - written by hand — This is what people write by hand, after not checking whether it already happened.
+  - missing entirely — It is there the moment a field is marked required.
+- The form rejects a date on which no class runs.
+  - free from the browser — The browser can check that something is a date. It has no idea which dates have classes.
+  - **written by hand** — This is genuinely yours: a rule about your own subject that nothing else could know.
+  - missing entirely — It has to exist, and it has to be written.
+- A summary appears at the top after a failed submission and is announced when it appears.
+  - free from the browser — The browser handles fields one at a time. A summary of several problems is your own addition.
+  - **written by hand** — Worth writing on a form of any size, and it is the piece most often built to appear silently.
+  - missing entirely — On many forms it is, which is why Module 11 recorded it as specified and untested.
+- After a failed submission the form comes back empty, with everything the person typed gone.
+  - free from the browser — The browser preserves values by default. Losing them takes effort, usually a page reload somebody added.
+  - written by hand — Nobody writes this deliberately. It arrives as a side effect and nobody tests for it.
+  - **missing entirely** — What is missing is the preservation. This is the failure that ends the task rather than delaying it.
+- The same rules are checked again after the form is sent, where the person cannot change them.
+  - free from the browser — Nothing the browser does survives leaving the browser.
+  - written by hand — It is written by hand, and not here: it belongs on the other side, and this lesson does not build one.
+  - **missing entirely** — From this page, yes, and that is the honest answer. Checking in the browser is convenience; the check that counts happens where the person cannot reach it.
+
+**Then:** Now sort your own form the same way, and let the three lists become your record in step 5.
+
+**What to watch for:** The cleared form is the one worth remembering. It is not something anybody built; it is preservation that was lost, usually to a reload, and nobody notices because nobody submits a broken form twice while building.
+
+Worksheet fields for this step:
+
+- What survived a failed submission with several mistakes in it
+- Where focus went after the failed submission
+- What happened completing the whole form with the keyboard alone
+
+<details>
+<summary>Help with this step</summary>
+
+- **Preserved input:** Everything the person typed still being there after a failure. Clearing a form on failure is the single most common way to lose somebody entirely.
+- **Useful focus:** Landing somewhere that helps: the summary, or the first field with a problem. Landing at the top of the page makes the person hunt.
+
+Stuck starting? Fill in half the form, get three things wrong on purpose, and submit it.
+
+Is it enough? Everything you typed is still there, and focus landed somewhere that helps.
+
+</details>
+
+#### 5. Record what was free
+
 - List what the browser provided without code.
 - List what you wrote and why it was necessary.
 - Save the form and the two lists.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Two lists: what the browser provided without code, and what you wrote with the reason it was necessary.
 
-## Review and handoff
-- Native validation is used wherever it can be: [evidence reference]
-- Custom rules exist only where the platform cannot know them: [evidence reference]
-- Errors are associated, announced and linked: [evidence reference]
-- Input survives a failed submission: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Everything the browser provided without any code
+- Everything you wrote, and why it was necessary
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **What was free:** Behaviour you did not write and now depend on. Knowing what it is protects it from being replaced by somebody who did not realise it was there.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Write the free list first. It is usually longer than people expect.
+
+Is it enough? Every item on the written list names a reason the native behaviour could not cover it.
 
 </details>
+
+**Save and continue.** Saved for you: Your input types, custom rules, error handling, recovery notes and the two lists save as you type, on this device first and then online. Kept outside the app: The form file sits with the rest of your build in your own folder. No form service, account or server is involved, and nothing is submitted anywhere. What your creator sees: Your creator reads the two lists at the end. A short written list beside a long free list is the result this lesson is looking for. Your next action: Open Your work and choose Ready for review. The next lesson measures what the whole thing costs on a slow connection.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1939,82 +2973,211 @@ Baseline on a throttled profile with the cache disabled: 2.4 MB, twenty-one requ
 
 Measure your page's weight and time to usable on a slow connection, make three changes, and report the before-and-after with the conditions stated.
 
-**Where to work:** Your browser's network panel and throttling. No performance service, account or paid audit tool is required; the measurements you need are already in the browser.
+**Where to practise:** Build a measured before-and-after on the page you have been building in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+
+Tools: Your browser's network panel and throttling. No performance service, account or paid audit tool is required; the measurements you need are already in the browser.
 
 - Starting material: Your built page and its first trace.
 - Create HaruCourse/Practice/m12-l09-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Making the page fast enough
+#### 1. Measure the baseline
 
-Input artifact: Your built page and its first trace.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Measuring a tool-library page, and starting after the easy win was already in.
 
-## Output checklist
-- [ ] A baseline measurement with conditions recorded
-- [ ] Three changes, each with the reason
-- [ ] An after measurement under identical conditions
-- [ ] One change considered and rejected, with the trade-off
+- **What I did:** Noticed the header photograph was enormous, fixed it, and then sat down to take a baseline. It seemed sensible to measure a page that was not obviously broken.
+- **What I ended up with:** A baseline of 700 kilobytes and four seconds, and after two more changes, 340 kilobytes and three seconds. A real improvement, and a modest-looking one.
+- **What I could not say:** Anything about the change that mattered most. The page had been 2.4 megabytes and eleven seconds that morning, and no record of it existed.
+- **What that cost:** The report showed a page getting slightly faster. The actual story was a page getting three times faster, and the evidence for it had been thrown away before I started.
+- **What I do now:** Take the baseline first, before touching anything, even when the first problem is obvious. It costs two minutes and it is the only number that cannot be recovered later.
 
-## 1. Measure the baseline
+**The wrong turn:** The wrong turn is fixing the obvious thing before measuring, because it feels wasteful to measure something you already know is wrong. The baseline is the one number you cannot go back for.
+
+**What it costs:** Measuring first means recording a figure you already know is bad, and on a page you are showing to somebody that is uncomfortable.
+
+**Still unknown:** Still unknown: how much day-to-day variation there is in these figures. One baseline is one measurement, and I have not taken it twice to find out.
+
 - Load with the cache disabled and a slow profile.
 - Record weight, request count and time to usable.
 - Note which requests block the first render.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A baseline measured with the conditions written down, and the requests that hold up the first render identified.
 
-## 2. Make three changes
+Worksheet fields for this step:
+
+- The conditions: throttling profile, cache setting, device and browser — Write these once and use exactly the same ones afterwards, or the pair proves nothing.
+- Weight, request count and time to usable
+- Which requests hold up the first render — Stylesheets and scripts in the head usually do. The network panel shows what arrives before anything is drawn.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Conditions:** Throttling profile, cache setting, device and browser. A number without them cannot be compared with anything, including your own later number.
+- **Blocking resource:** Something the browser waits for before drawing anything. Stylesheets and scripts in the head usually do, and they are often the whole delay.
+- **Time to usable:** When the person could act, not when loading finished. It needs you to say what usable meant on this page.
+
+Stuck starting? Write the conditions down first, before you take a single number.
+
+Is it enough? Somebody else could reproduce your measurement from what you wrote.
+
+</details>
+
+#### 2. Make three changes
+
 - Reduce the largest design-owned cost first.
 - Remove anything requested and unused.
 - Stop something non-essential from blocking first render.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three changes made one at a time, starting with the largest design-owned cost, each with its reason.
 
-## 3. Measure again
+**Try it with help.** Six candidate changes to a made up tool-library page whose baseline is 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
+
+- Re-export the 1.8 megabyte header photograph at its display width. It sits above every word on the page.
+  - **reduces what the person waits for** — It is above the first line of text, so nothing readable appears until it arrives. This is the one change on the list that moves time to usable on its own.
+  - reduces total weight only — It reduces weight enormously and it also reduces the wait, because of where it sits.
+  - changes nothing measurable — It is three quarters of the page.
+- Compress four photographs in the footer, saving 300 kilobytes.
+  - reduces what the person waits for — Nobody has scrolled to the footer at the moment they are waiting.
+  - **reduces total weight only** — A real saving on the total, and invisible in time to usable. Worth doing and not worth doing first.
+  - changes nothing measurable — The total weight figure moves by 300 kilobytes.
+- Remove the third typeface, used once, which the browser fetches before drawing any text.
+  - **reduces what the person waits for** — Fonts are usually fetched before text is drawn, so an unused one delays every word on the page.
+  - reduces total weight only — It saves weight and it also removes something standing between the person and the first sentence.
+  - changes nothing measurable — Both numbers move.
+- Strip the spaces and line breaks out of the HTML file, saving 3 kilobytes.
+  - reduces what the person waits for — Three kilobytes on a slow connection is a fraction of a second at most, and the file was never the delay.
+  - reduces total weight only — Three kilobytes out of 2,400 will not show in any figure you are recording.
+  - **changes nothing measurable** — It is the sort of change that feels like optimisation and moves nothing. Worth knowing so you do not spend an afternoon on it.
+- Delay the script that renders the list, so the page paints in one second instead of three.
+  - reduces what the person waits for — It makes the frame appear sooner and the list appear later. The person waits longer to do anything.
+  - reduces total weight only — Nothing is removed. The same bytes arrive in a different order.
+  - **changes nothing measurable** — It moves first paint and worsens time to usable, so on the figures that matter here it is not an improvement at all. This is the one to reject in step 4.
+- Replace a 96 kilobyte icon font, fetched in the head, with six hand-written icons.
+  - **reduces what the person waits for** — Fetched in the head means the browser waits for it. Removing it takes something out of the critical path as well as out of the total.
+  - reduces total weight only — It does both, because of where in the page it is requested.
+  - changes nothing measurable — 96 kilobytes on the critical path is several seconds on a slow profile.
+
+**Then:** Now sort your own candidate changes the same way, and take your three from the first group.
+
+**What to watch for:** Where something sits matters as much as how big it is. The same 300 kilobytes above the fold and below it are two completely different changes, and the one that only reorders bytes is not a change at all.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Change 1 · what you did and why
+- Change 2 · what you did and why
+- Change 3 · what you did and why
+
+<details>
+<summary>Help with this step</summary>
+
+- **Design-owned cost:** Weight that exists because of a choice in a design file. It is the part you can act on without anybody’s agreement.
+- **Requested and unused:** Something loading that nothing needs: a third typeface, an icon set for six icons, a stylesheet for a page that no longer exists.
+
+Stuck starting? Take the largest thing above the first screenful and deal with that one first.
+
+Is it enough? Each change has a reason that refers to your own baseline rather than to general advice.
+
+</details>
+
+#### 3. Measure again
+
 - Repeat the load under identical conditions.
 - Record the same three figures.
 - Note anything that got worse.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The same three figures under identical conditions, and anything that got worse.
 
-## 4. Consider and reject one
+Worksheet fields for this step:
+
+- The same three figures under identical conditions
+- Anything that got worse — Something usually does. A page that loads faster and jumps more is not an improvement.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Identical conditions:** The same profile, the same cache setting, the same browser. Change one of them and the pair of numbers is not a comparison.
+- **Something getting worse:** A faster page that now jumps, or one that appears sooner and can be used later. Recording it is what stops a number standing in for the experience.
+
+Stuck starting? Set the throttling profile and the cache tickbox back to exactly what you wrote in step 1.
+
+Is it enough? Both sets of numbers were taken the same way, and you looked for what got worse rather than only for what improved.
+
+</details>
+
+#### 4. Consider and reject one
+
+**See it first.** Made-up example. Improving the numbers on a tool-library page, and improving the wrong one.
+
+- **What I found:** The script that renders the list was blocking the first paint. Delaying it would make the page appear in about a second instead of three.
+- **Why it was tempting:** It is one line, the number moves a lot, and “first paint in one second” is a sentence anybody would be pleased to write.
+- **What the person would get:** A header, a search box and an empty space where the tools are, for four seconds. Then the list. The page appears sooner and becomes usable later.
+- **What I checked:** The two numbers moved in opposite directions. First paint improved by two seconds; time to usable got worse by one.
+- **What I did:** Rejected it, and wrote down why. The list is the page. Making its container arrive early is a measurement rather than an improvement.
+
+**The wrong turn:** The wrong turn is optimising the number that is easiest to move. First paint responds to almost anything, which is why it is so often reported and so often meaningless on its own.
+
+**What it costs:** Keeping the script blocking means the page shows nothing for three seconds, and on a very slow connection that is uncomfortable. A skeleton of the list would be the real answer, and it is more work than one line.
+
+**Still unknown:** Still unknown: whether people prefer an empty frame quickly or a complete page slightly later. Nothing here measured a preference, and the argument rests on when the task can start.
+
 - Identify a change that would improve a number and harm the experience.
 - Write the trade-off and your decision.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One change identified that would improve a number and harm the experience, with the trade-off and your decision.
 
-## 5. Report
+Worksheet fields for this step:
+
+- A change that would improve a number and harm the experience
+- The trade-off, and your decision
+
+<details>
+<summary>Help with this step</summary>
+
+- **Improving a number:** Making a measurement better without making anything better. Delaying the content that is the point of the page is the classic case.
+- **Appearing versus being usable:** A page can paint in one second and be useless for six. Optimising the first at the expense of the second is the commonest bad trade in this work.
+
+Stuck starting? Look for a change that moves a number without letting anybody do anything sooner.
+
+Is it enough? Your rejected change has a number it would improve and a reason you decided against it anyway.
+
+</details>
+
+#### 5. Report
+
 - Write the before and after with the conditions stated once.
 - State what you did not measure, such as real-device performance.
 - Save the report with the traces.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A before-and-after report with the conditions stated once, and a plain list of what you did not measure.
 
-## Review and handoff
-- A baseline is measured with conditions recorded: [evidence reference]
-- Three changes are made, each with a reason: [evidence reference]
-- The after measurement uses identical conditions: [evidence reference]
-- One rejected change is recorded with its trade-off: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Before and after, with the conditions stated once
+- What you did not measure — A real mid-range phone on a real network is the usual gap. Throttling models speed and not dropouts.
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Stating conditions once:** Putting the profile, cache setting and device beside the pair of figures. Without them somebody will quote the number in a context where it means something else.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Write the conditions line first, then the two sets of figures under it.
+
+Is it enough? Nobody could quote your figures without also quoting the conditions.
 
 </details>
+
+**Save and continue.** Saved for you: Your conditions, both sets of figures, the three changes and the rejected one save as you type, on this device first and then online. Kept outside the app: The two network traces stay in your own folder. Note their file names in step 5 so the pair can be checked later. What your creator sees: Your creator reads the rejected change and the conditions line. Both say more about judgement than the improvement does. Your next action: Open Your work and choose Ready for review. The next lesson learns the three panels that have been answering your questions all module.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2177,81 +3340,210 @@ Three problems diagnosed. The card was wider than its container: the inspector s
 
 Diagnose three problems in your own page using the element inspector, the console and the network panel, writing the cause before making any fix.
 
-**Where to work:** The developer tools already in your browser. No account, extension or paid tooling is required for anything in this lesson.
+**Where to practise:** Build three written diagnoses of problems in your own page in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+
+Tools: The developer tools already in your browser. No account, extension or paid tooling is required for anything in this lesson.
 
 - Starting material: Your built page and its known issues.
 - Create HaruCourse/Practice/m12-l10-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Finding out what is actually happening
+#### 1. Learn the three panels
 
-Input artifact: Your built page and its known issues.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Three problems diagnosed with the cause written first
-- [ ] Evidence from the inspector, the console and the network panel
-- [ ] A record of one hypothesis that turned out to be wrong
-- [ ] Fixes made after the diagnosis, not before
-
-## 1. Learn the three panels
 - Read the assigned sections on the browser tools.
 - Write which panel answers which kind of question.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The three panels named with the kind of question each one answers.
 
-## 2. Diagnose a style problem
+Worksheet fields for this step:
+
+- The three panels, and the kind of question each one answers
+
+<details>
+<summary>Help with this step</summary>
+
+- **Inspector:** Select an element and see every rule affecting it, with the losers struck through. It answers why something looks the way it does.
+- **Console:** Where errors appear in red, usually with the file and line number. A page can look perfectly fine and be failing here silently.
+- **Network panel:** Every request the page made, with its status and size. It answers why something is missing, wrong or slow.
+
+Stuck starting? Open all three tabs on your own page and look at each for a minute before writing anything.
+
+Is it enough? You could say, for a new problem, which panel to open first.
+
+</details>
+
+#### 2. Diagnose a style problem
+
+**See it first.** Made-up example. Diagnosing a card that is wider than its container on a tool-library page, and guessing three times first.
+
+- **What I did first:** Guessed. Changed the width, reloaded. Changed the margin, reloaded. Removed a rule I suspected, reloaded. Twenty minutes, three changes, no improvement, and a stylesheet now slightly worse than it started.
+- **What I should have done:** Right-clicked the card and chosen Inspect. The Styles panel lists every rule affecting it, in order, with the ones that lost struck through.
+- **What the panel showed:** One width rule, applying cleanly, nothing struck through. The computed size at the bottom of the panel showed 300 of content and 20 of padding on each side.
+- **The cause, written down before any fix:** The width applies to the content and the padding is added outside it, so a 300 pixel card measures 340. The box model, not a conflict.
+- **Why writing it first mattered:** My guess had been that another rule was winning. Writing the cause forced me to look, and the answer was in a completely different part of the panel from where I had been searching.
+
+**The wrong turn:** The wrong turn is changing things to see what happens, because it feels like progress and each reload takes seconds. Three changes later you have a worse file and the same problem.
+
+**What it costs:** Writing the cause before the fix is slower on the problems you would have guessed right, and those are the minority.
+
+**Still unknown:** Still unknown: whether other cards on other pages have the same arrangement. I fixed one and set box sizing at the top, which probably covers them, and I have not checked.
+
 - Find something that does not look as intended.
 - Use the inspector to see the applied and overridden rules.
 - Write the cause before touching the code.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One style problem reproduced, the inspector evidence recorded, and the cause written before any fix.
 
-## 3. Diagnose a behaviour problem
+Worksheet fields for this step:
+
+- What it looks like, and how you reproduce it
+- What the inspector showed: the applied rule and the overridden ones
+- The cause, written before the fix
+
+<details>
+<summary>Help with this step</summary>
+
+- **Reproducing:** Being able to make it happen again on purpose. A problem you cannot reproduce is not yet understood, however well you can describe it.
+- **Overridden rule:** One shown struck through in the Styles panel. The panel is telling you it lost, and naming what beat it.
+
+Stuck starting? Right-click the element and choose Inspect. Read the Styles panel top to bottom before changing anything.
+
+Is it enough? The cause is written in the worksheet and the file is still untouched.
+
+</details>
+
+#### 3. Diagnose a behaviour problem
+
 - Find something that does not work as intended.
 - Check the console for errors and read the file and line.
 - Write the cause, then fix it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One behaviour problem reproduced, the console message copied exactly, and the cause written before the fix.
 
-## 4. Diagnose a loading problem
+**Try it with help.** Six symptoms from a made up tool-library page. For each one, decide which panel to open first.
+
+- A card is wider than the container it sits in.
+  - **the inspector** — It is a question about applied styles: which rules are in effect and what the computed size is. The inspector answers both in seconds.
+  - the console — Nothing has failed. The page is doing exactly what it was told.
+  - the network panel — Everything arrived. The problem is what happened afterwards.
+- The filter control does nothing at all when pressed, on one page only.
+  - the inspector — It would tell you the control is there and styled. It cannot tell you the script stopped.
+  - **the console** — Nothing happening is the classic silent failure. There is almost certainly red text naming a file and a line.
+  - the network panel — Worth a look if the script file itself never arrived, and the console will tell you that too.
+- One icon shows on your laptop and not on your phone.
+  - the inspector — It will show an element expecting an image. It will not say what came back.
+  - the console — A missing file sometimes appears here, and the status code is in the network panel.
+  - **the network panel** — A 404 for a file whose name differs in capitalisation is the usual answer, because it matters on a server and not on your own machine.
+- The page takes far longer to become usable than you expected.
+  - the inspector — Styles are not the question. Timing is.
+  - the console — It will show errors and not delays.
+  - **the network panel** — What was requested, in what order, how big and how long. This is exactly the panel for it.
+- A heading is the wrong colour, and the rule you wrote for it appears to be correct.
+  - **the inspector** — Your rule will be struck through with the winner above it, or the colour will be arriving by inheritance with no rule at all.
+  - the console — Nothing has failed.
+  - the network panel — The stylesheet arrived, or nothing would be styled.
+- The list is empty, and you are certain the data source has rows in it.
+  - the inspector — An empty list looks the same whatever caused it.
+  - the console — A good second look, because the answer may have arrived and failed to be read. Start with whether it arrived at all.
+  - **the network panel** — Find the request, read its status and open the response. Either nothing came back, or something came back in a shape you did not expect.
+
+**Then:** Now take your own three problems and open the right panel for each before doing anything else.
+
+**What to watch for:** Two of the six could reasonably start in a second panel, and that is fine. The habit worth building is opening one deliberately rather than changing code hopefully.
+
+Worksheet fields for this step:
+
+- What does not work, and how you reproduce it
+- What the console said, including the file and the line — Red text names the file and the line number. Copy it exactly rather than summarising it.
+- The cause, written before the fix
+
+<details>
+<summary>Help with this step</summary>
+
+- **Silent failure:** A page that looks entirely normal while a script has stopped. Nothing on screen says so, and the console says so immediately.
+- **File and line:** The two things at the end of an error message. They turn “something is broken” into a specific place to look.
+
+Stuck starting? Reproduce the problem with the console open, and read whatever appears in red.
+
+Is it enough? You have the exact message, the file and the line written down.
+
+</details>
+
+#### 4. Diagnose a loading problem
+
+**See it first.** Made-up example. Diagnosing a missing tool photograph, and believing the first thing the panel said.
+
+- **The symptom:** One photograph showed as a broken image on the listing page. Every other image on the same page was fine.
+- **What I assumed:** A wrong path. It is nearly always a wrong path, and I had renamed some files that morning.
+- **What the panel actually said:** Status 200. The request succeeded and something came back, which is the opposite of a missing file.
+- **What came back:** Clicking the request and opening the response showed a small page of text: the server saying the image was too large and had been rejected. It had arrived, with a 200, and was not an image.
+- **What the cause turned out to be:** The original 1.8 megabyte photograph, uploaded before the resizing lesson, over a limit nobody had told me about. The fix was the export, not the path.
+
+**The wrong turn:** The wrong turn is reading the symptom and skipping the status. A broken image looks identical whether nothing came back or the wrong thing came back, and those have completely different causes.
+
+**What it costs:** Opening the response for every failing request is slower than assuming, and most of the time the assumption would have been right.
+
+**Still unknown:** Still unknown: what the limit actually is. The message did not say a number, and I have not found where it is configured.
+
 - Look for anything missing or slow.
 - Use the network panel to see the request and its response.
 - Write the cause, then fix it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One loading problem reproduced, the request and its status recorded, and the cause written before the fix.
 
-## 5. Record
+Worksheet fields for this step:
+
+- What is missing or slow, and where
+- What the network panel showed: the request, its status and its size — A status of 404 means the file was not found. 200 means it arrived, whatever it looks like on screen.
+- The cause, written before the fix
+
+<details>
+<summary>Help with this step</summary>
+
+- **Status code:** What the server said: 200 means here it is, 404 means no such file, 500 means something broke at their end. It is the first thing to read.
+- **The response:** What actually came back. Clicking a request shows it, which is how you find out that data arrived in a shape you did not expect.
+
+Stuck starting? Reload with the network panel open and find the request for the thing that is missing.
+
+Is it enough? You know whether it arrived, and if so what it contained.
+
+</details>
+
+#### 5. Record
+
 - Note any hypothesis that proved wrong and what it actually was.
 - Save the three diagnoses with their evidence.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A hypothesis that turned out to be wrong, what it actually was, and the repair the Check questions asked for.
 
-## Review and handoff
-- Three problems are diagnosed using three different panels: [evidence reference]
-- Causes are written before fixes: [evidence reference]
-- Evidence from the tools is recorded: [evidence reference]
-- A wrong hypothesis is recorded honestly: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- A hypothesis that turned out to be wrong, and what it actually was — At least one of the three usually is. Recording it is the point of writing causes before fixes.
+- Where the three diagnoses and their evidence are saved
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Hypothesis:** Your guess at the cause, written down before you look. Writing it is what makes being wrong visible and useful.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Look back at the three causes you wrote and compare each with what you eventually found.
+
+Is it enough? At least one wrong hypothesis is recorded, because guessing right three times out of three is unusual.
 
 </details>
+
+**Save and continue.** Saved for you: Your panel notes and the three diagnoses save as you type, on this device first and then online. Kept outside the app: Screenshots of the inspector, the console and the network panel stay in your own folder. Note the file names in step 5; the evidence is what makes a diagnosis more than an opinion. What your creator sees: Your creator reads the wrong hypothesis. Writing the cause before the fix is what makes it possible to have one, and a lesson with none is usually a lesson where the fixes came first. Your next action: Open Your work and choose Ready for review. The next lesson puts everything from this module together and runs it on a real phone.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2414,81 +3706,208 @@ Four pages were assembled. Three contradictions appeared: two spacing rhythms, t
 
 Assemble your pages into one working responsive prototype with real data, accessible structure and measured performance, and test it on a real phone.
 
-**Where to work:** Your local files opened on your phone over the same network, or copied to it. No hosting, deployment or account is required to test on a real device.
+**Where to practise:** Build the whole prototype, assembled from everything in this module in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+
+Tools: Your local files opened on your phone over the same network, or copied to it. No hosting, deployment or account is required to test on a real device.
 
 - Starting material: Your built pages, data fetching, form and styling.
 - Create HaruCourse/Practice/m12-l11-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# The whole thing, running
+#### 1. Assemble
 
-Input artifact: Your built pages, data fetching, form and styling.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Assembling four tool-library pages, and treating the contradictions as tidying.
 
-## Output checklist
-- [ ] One assembled, running prototype
-- [ ] A list of contradictions found and reconciled
-- [ ] Re-run checks on the assembled result
-- [ ] A real-phone test with findings, and an updated fakes sheet
+- **What I found:** Three contradictions. Two spacing rhythms, two card treatments, and the same action called Reserve on one page and Book on another.
+- **What I did with the first two:** Picked one of each and applied it everywhere. Twenty minutes, and the prototype looked like one product.
+- **What I did with the third:** The same: chose Reserve, changed the other page, moved on. It felt identical to the other two decisions.
+- **Why it was not identical:** Spacing and cards are appearance. Two words for one action is two mental models: on one page the person was holding something for two hours, on the other they were committing to a slot. The wording had drifted because the behaviour had.
+- **What I actually had to decide:** Which behaviour was right, and then make both pages do it. That was a design decision an hour long, not a rename, and it went into the inventory rather than the stylesheet.
 
-## 1. Assemble
+**The wrong turn:** The wrong turn is treating every contradiction as tidying, because most of them are. The one that is not is usually a wording difference, and wording drifts when behaviour has already drifted.
+
+**What it costs:** Chasing the wording contradiction properly cost an hour in a step that was supposed to be assembly, and it changed a specification in an earlier module.
+
+**Still unknown:** Still unknown: whether holding for two hours is the right behaviour at all. Assembly forced the question and did not answer it, and it goes to the module handover as an open decision.
+
 - Bring the pages together with shared styling and navigation.
 - Record every contradiction you have to reconcile.
 - Update the inventory and token sheet accordingly.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The pages assembled with shared styling and navigation, every contradiction recorded, and the inventory updated.
 
-## 2. Re-run the checks
+Worksheet fields for this step:
+
+- Which pages you assembled, and how they share styling and navigation
+- Every contradiction you had to reconcile
+- What you changed in the inventory and token sheet as a result
+
+<details>
+<summary>Help with this step</summary>
+
+- **Assembly:** Putting separately built pages into one thing. It is where contradictions surface, because two pages built a fortnight apart are always slightly two different products.
+- **Contradiction:** Two answers to one question: two spacing rhythms, two card treatments, two words for one action. Each has to be decided rather than averaged.
+
+Stuck starting? Put the pages side by side and look for the same thing done two ways before you merge anything.
+
+Is it enough? Every contradiction is written down, including the ones you resolved in seconds.
+
+</details>
+
+#### 2. Re-run the checks
+
 - Re-check headings, landmarks, contrast and keyboard on the assembled result.
 - Record anything that passed separately and fails together.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Headings, landmarks, contrast and keyboard re-run on the assembled result, with anything that now fails recorded.
 
-## 3. Test on a real phone
+Worksheet fields for this step:
+
+- Headings, landmarks, contrast and keyboard on the assembled result
+- Anything that passed on its own page and fails now — A shared header can break a heading outline; a component moved onto a tinted panel can fail contrast that passed on white.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Passing separately:** Every page being fine on its own. It is not the same as the assembled thing being fine, because the shared parts are new.
+- **Shared header:** The commonest source of a broken outline after assembly: a heading in the header plus a page title on the page makes two page titles.
+
+Stuck starting? Start with the heading outline, because the shared header is the thing most likely to have broken it.
+
+Is it enough? You found at least one thing that passed separately and fails together, or you can say you looked for it.
+
+</details>
+
+#### 3. Test on a real phone
+
+**See it first.** Made-up example. Testing a tool-library prototype on a real phone, and testing it in the least real way possible.
+
+- **What I did:** Opened it on my phone at my desk, held in both hands, propped against the monitor, in good light, on my home network. Completed the task in under a minute and found nothing.
+- **Why that found nothing:** Two hands, a steady position and a fast connection remove almost everything a phone would otherwise show. It was the emulator with a nicer screen.
+- **What I did instead:** Stood up, held it in one hand, and did the task with my thumb while walking to the window.
+- **What that found in four minutes:** The Reserve bar sits under the on-screen keyboard while the notes field is focused. The date control is 44 pixels and still awkward, because it sits where the thumb has least reach. My hand covers the availability line while I tap.
+- **What I could not test that way:** A poor connection. My home network is fast, so the loading states looked as instant as they do on the laptop, and that stays untested.
+
+**The wrong turn:** The wrong turn is testing on a real device in an unreal posture. Two hands at a desk removes reach, occlusion and the keyboard, which are three of the four things the device was going to tell you.
+
+**What it costs:** One-handed testing is slower and you will mistype things, which is the point and is also frustrating when you are trying to check something else.
+
+**Still unknown:** Still unknown: how it behaves on a slow or intermittent connection on a real network. I tested a device, not a network, and the fakes sheet says so.
+
 - Open the prototype on an actual phone.
 - Complete one task by thumb, including a form.
 - Record everything the emulated viewport did not show.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One task completed by thumb on a real phone, with everything the emulated viewport did not show.
 
-## 4. Measure again
+**Try it with help.** Six problems from a made up prototype. For each one, decide what would have found it.
+
+- The sticky Reserve bar sits underneath the on-screen keyboard while a field is focused.
+  - the emulated viewport — It has no on-screen keyboard, so the bar looks perfectly placed at every width.
+  - **only a real phone** — The keyboard covers the bottom third, and sticky bars live there. Ten minutes on a device finds it immediately.
+  - neither — it needs a person — You are the person here, and you will meet it the first time you tap a field.
+- At 320 pixels the schedule table forces the page to scroll sideways.
+  - **the emulated viewport** — It is purely a width problem, and the emulator sets widths perfectly well. This is what it is for.
+  - only a real phone — A phone would show it too, and you do not need one.
+  - neither — it needs a person — Nothing subjective about it.
+- The date control is comfortable with a mouse and awkward with a thumb, though it meets the target size.
+  - the emulated viewport — A pointer clicking a 44 pixel target is accurate in a way a thumb is not. The measurement passes and the experience does not.
+  - **only a real phone** — Reach, accuracy and where the hand covers the screen are all things only a hand shows you.
+  - neither — it needs a person — Your own thumb is enough to find it. Whether it matters to others is a separate question.
+- People do not understand whether Reserve holds the tool or commits them to collecting it.
+  - the emulated viewport — Nothing about the layout is involved.
+  - only a real phone — It reads the same on every device.
+  - **neither — it needs a person** — This is a comprehension question, and it belongs to a session with somebody rather than to any device test.
+- A component that passed contrast on white now sits on a tinted panel and fails.
+  - **the emulated viewport** — Contrast is measurable on any screen. What found it was re-running the check after assembly rather than the device.
+  - only a real phone — A phone adds nothing; the numbers are the same.
+  - neither — it needs a person — It is a measurement, not a judgement.
+- On a real network in a train the page stalls halfway through loading and never recovers.
+  - the emulated viewport — Throttling models a steady slow connection. It does not model dropping out.
+  - **only a real phone** — Real networks fail in ways no profile reproduces. This is the honest limit of everything you measured at your desk.
+  - neither — it needs a person — You can meet it yourself on a train, which is exactly how it gets found.
+
+**Then:** Now record your own phone findings, and mark which ones the emulator had already shown you.
+
+**What to watch for:** The emulator gets width right and everything else wrong. Anything involving a hand, a keyboard covering the screen, or a real network needs a device; anything about comprehension needs a person, and neither device finds it.
+
+Worksheet fields for this step:
+
+- Which phone, and how you opened the prototype on it — Over your own network, or copied onto the device. No hosting or account is needed.
+- The task you completed by thumb, including a form
+- Everything the emulated viewport did not show
+
+<details>
+<summary>Help with this step</summary>
+
+- **Real device:** An actual phone in your hand. The emulated viewport gets the width right and nothing else: no thumb, no keyboard covering the screen, no real network.
+- **On-screen keyboard:** It covers the bottom third of the screen when a field is focused, which is where sticky action bars live. An emulator never shows this.
+
+Stuck starting? Open the prototype on your own phone and complete one task standing up, using only your thumb.
+
+Is it enough? You found something the emulated viewport had not shown you.
+
+</details>
+
+#### 4. Measure again
+
 - Re-run the throttled measurement on the assembled prototype.
 - Record weight, requests and time to usable.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The assembled prototype measured under the same conditions as lesson 9, with what changed recorded.
 
-## 5. Update the fakes sheet
+Worksheet fields for this step:
+
+- Weight, requests and time to usable, under the same conditions as before
+- What changed now that the pages share files
+
+<details>
+<summary>Help with this step</summary>
+
+- **Shared files:** One stylesheet across four pages means the second page loads faster than the first. It also means one change reaches all four.
+
+Stuck starting? Use exactly the throttling profile and cache setting you wrote down in lesson 9.
+
+Is it enough? The figures are comparable with your earlier ones because the conditions match.
+
+</details>
+
+#### 5. Update the fakes sheet
+
 - List everything invented, faked or non-functional.
 - Write one sentence stating this is a prototype, not a product.
 - Save the prototype, the checks and the sheet.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Everything invented, faked or non-functional listed, and one sentence saying this is a prototype rather than a product.
 
-## Review and handoff
-- The prototype is assembled and runs end to end: [evidence reference]
-- Contradictions are recorded and reconciled: [evidence reference]
-- Checks are re-run on the assembled result: [evidence reference]
-- A real-phone test and an updated fakes sheet exist: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Everything invented, faked or not working — Invented data, a payment that goes nowhere, a search box that does nothing, one working path and no others.
+- One sentence saying this is a prototype rather than a product
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Fakes sheet:** The written list of what is invented. Without it somebody plans around a search box that does nothing or a payment that goes nowhere.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Walk the prototype pretending you are somebody else and note everything that would disappoint them.
+
+Is it enough? Somebody could read the sheet and know exactly what they must not rely on.
 
 </details>
+
+**Save and continue.** Saved for you: The contradictions, the re-run checks, the phone findings, the measurements and the fakes sheet save as you type, on this device first and then online. Kept outside the app: The prototype stays in your own folder and on your own phone. Nothing is hosted, deployed or uploaded to produce the device test. What your creator sees: Your creator reads the contradictions and the fakes sheet. A contradiction that turned out to be a design decision is the most useful thing assembly produces. Your next action: Open Your work and choose Ready for review. The last lesson of the module turns all of this into a conversation with an engineer.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2651,80 +4070,207 @@ The handover for the booking feature ran to three pages: the flow with its state
 
 Write a technical handover for one feature, ask three precise questions an engineer would find useful, and record what you now understand that you did not before this module.
 
-**Where to work:** A written document plus your existing artefacts. No handover platform is required; a clear Markdown file with links is better than most of them.
+**Where to practise:** Build a technical handover document for one feature in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+
+Tools: A written document plus your existing artefacts. No handover platform is required; a clear Markdown file with links is better than most of them.
 
 - Starting material: Your prototype, key tables and state specifications.
 - Create HaruCourse/Practice/m12-l12-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Talking to engineers about what you built
+#### 1. Assemble the handover
 
-Input artifact: Your prototype, key tables and state specifications.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Handing over a tool-library booking feature, and handing over the part that was easiest to export.
 
-## Output checklist
-- [ ] A technical handover covering behaviour, states and constraints
-- [ ] Three cost-shaped questions for an engineer
-- [ ] The fakes sheet attached and declared
-- [ ] A written record of what you now understand
+- **What I sent:** Twelve screens, annotated, with spacing and colours marked. It took an afternoon to prepare and it looked thorough.
+- **What came back three days later:** Eleven questions, all of the same kind. What happens if the tool is taken while somebody is filling the form. What the list shows before the data arrives. What happens if the date is a day with no classes.
+- **What the screens had said about any of that:** Nothing. Every screen was a moment when everything had gone right, and eleven of the questions were about the moments when it had not.
+- **What I sent instead:** The flow with its states, the four data branches with their exact wording, the key tables, the responsive rules, and the accessibility notes marked tested or specified.
+- **What that changed:** The questions that came back were about cost rather than about intent, which is the conversation I had wanted in the first place.
 
-## 1. Assemble the handover
+**The wrong turn:** The wrong turn is handing over appearance, because appearance is what a design tool exports and it exports beautifully. Behaviour and states are the part somebody has to build and the part screenshots cannot carry.
+
+**What it costs:** A behaviour document is duller to produce and nobody admires it. It also stops the three days of questions, and the questions were never about the spacing.
+
+**Still unknown:** Still unknown: whether the four branches cover everything that can happen. Eleven questions found the ones I had missed, and there may be more that nobody has thought of yet.
+
 - Collect the flow, states, key tables, responsive rules and accessibility notes.
 - Write them as one document a developer could work from.
 - Include the wording for every message.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One document covering flow, states, key tables, responsive rules and accessibility notes, with exact wording and a tested-versus-specified split.
 
-## 2. Write the questions
+Worksheet fields for this step:
+
+- What the document contains, section by section — Flow with states, component specifications with key tables, the four data branches with wording, responsive rules, accessibility notes with what was tested.
+- Where the exact wording of every message lives in it — If the wording is only in screenshots, somebody will retype it and change it.
+- How the document separates what was tested from what was specified
+
+<details>
+<summary>Help with this step</summary>
+
+- **Handover:** A document somebody could build from. Behaviour and states, not only appearance, because appearance is the part screenshots already carry.
+- **Exact wording:** The messages written as text in the document. Wording that exists only inside a picture gets retyped, and retyped wording drifts.
+
+Stuck starting? List the sections first, then fill them from artefacts you already have rather than writing anything new.
+
+Is it enough? Somebody could build the feature from the document without opening your design file.
+
+</details>
+
+#### 2. Write the questions
+
+**See it first.** Made-up example. Asking an engineer about a held-place timer on a tool-library feature, and asking the question that always gets a yes.
+
+- **What I asked first:** “Is it possible to hold a tool for two hours and show a countdown?” The answer was yes, in about four seconds, and I wrote it down as settled.
+- **What I found out later:** Yes meant yes, and the timer would be accurate on the device that started it and roughly right on any other, because the hold lives in one place and the countdown in another.
+- **Why that mattered:** My design showed the countdown on the confirmation screen, the list and the email. Two of those three would have been wrong by up to a minute, which is a promise breaking rather than a display wobbling.
+- **What I should have asked:** “What would it cost to keep the countdown accurate across devices, and what is the error if we do not?” That is a question with a number in the answer.
+- **What I did with the real answer:** Showed an exact time rather than a countdown in two of the three places. The expensive version was not needed once the question was specific.
+
+**The wrong turn:** The wrong turn is asking whether something is possible, because almost everything is and the answer closes the conversation. Cost and error are where the design decision actually is.
+
+**What it costs:** Cost-shaped questions take longer to answer and sometimes cannot be answered on the spot, so you leave the conversation with less certainty than a yes would have given you.
+
+**Still unknown:** Still unknown: what the actual drift is in seconds. The answer was “up to about a minute”, which was enough to change the design and is not a measurement.
+
 - Write three questions about cost and constraint rather than possibility.
 - Make each specific to a decision in this feature.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three questions about cost and constraint, each tied to a decision in this feature.
 
-## 3. Declare the fakes
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Question 1 · the question, and the decision it would inform
+- Question 2 · the question, and the decision it would inform
+- Question 3 · the question, and the decision it would inform
+
+<details>
+<summary>Help with this step</summary>
+
+- **A cost-shaped question:** One that asks what something would take, or what it forecloses. “Is this possible?” is almost always yes, which is why it tells you nothing.
+- **Constraint:** Something already decided that limits what is cheap now: a data shape, a platform, an existing component. Knowing them early changes what you design.
+
+Stuck starting? Take a decision you have not been able to make and write the question that would settle it.
+
+Is it enough? None of your three questions can be answered with yes.
+
+</details>
+
+#### 3. Declare the fakes
+
 - Attach the fakes sheet and mark anything an engineer might assume works.
 - State what data shape you invented.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Everything an engineer might assume works declared, and the data shape named as invented where it is.
 
-## 4. Ask someone
+Worksheet fields for this step:
+
+- What an engineer might assume works and does not
+- The data shape you invented, and where you got it from — If you made the field names up, say so. Planning around an invented shape is expensive to undo.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Invented data shape:** Field names and structures you made up so the prototype could run. Planning around them is expensive to undo, so they have to be labelled.
+- **Assumed to work:** Anything that looks finished and is not: a search box that does nothing, a payment that goes nowhere, one path that works out of five.
+
+Stuck starting? Open your fakes sheet from the previous lesson and mark anything that looks convincing enough to be assumed.
+
+Is it enough? Nothing in the handover could be planned around by mistake.
+
+</details>
+
+#### 4. Ask someone
+
 - If you can, ask your questions of a developer and record the answers.
 - If not, record that the questions are unasked and what you expect.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The questions asked of somebody, or an honest record that they are unasked with what you expect.
 
-## 5. Write what you learned
+**Try it with help.** Six questions a designer might put to an engineer about a made up booking feature. For each one, decide what kind of answer it will get.
+
+- Is it possible to show a countdown while a tool is held?
+  - a useful answer — You will get an answer in four seconds and learn nothing from it.
+  - **a yes that settles nothing** — Almost everything is possible. The design decision is about cost and accuracy, and this question asks about neither.
+  - a question they cannot answer yet — They can answer it easily. That is the problem.
+- What would it cost to keep that countdown accurate across two devices, and how wrong is it if we do not?
+  - **a useful answer** — It asks for a number and a bound. Either answer changes what you design, which is the test of a good question.
+  - a yes that settles nothing — There is no yes available to it.
+  - a question they cannot answer yet — It is exactly the sort of thing an engineer can estimate, even roughly.
+- What does the current data shape make expensive to change later?
+  - **a useful answer** — It surfaces constraints before you design against them. Answers here often change a whole flow cheaply.
+  - a yes that settles nothing — It cannot be answered with yes.
+  - a question they cannot answer yet — It is one of the things they know best.
+- How long will the whole feature take to build?
+  - a useful answer — You will get a number with no confidence behind it, which is worse than no number.
+  - a yes that settles nothing — It is not a yes-or-no question.
+  - **a question they cannot answer yet** — Not from a handover read once. Sliced into pieces with acceptance criteria, it becomes answerable, and that is a later module.
+- Which of these four states need work on the server rather than in the page?
+  - **a useful answer** — It tells you which parts of your design are cheap to change and which are not, which is what you need before iterating.
+  - a yes that settles nothing — There is no yes.
+  - a question they cannot answer yet — They can, and quickly.
+- Is there a better way to do this?
+  - a useful answer — Occasionally it produces one, and usually it produces a polite pause, because better depends on what you are optimising for.
+  - a yes that settles nothing — It is not really a yes-or-no question, though it often receives a no.
+  - **a question they cannot answer yet** — Not without knowing which constraint you care about. Naming that turns it into one of the useful questions above.
+
+**Then:** Now check your own three questions against the same three kinds, and rewrite any that would get a yes.
+
+**What to watch for:** The two useless shapes are opposite. Is it possible gets an instant yes that settles nothing; how long will it take asks for certainty nobody has yet. The useful ones sit in between and ask what something costs or forecloses.
+
+Worksheet fields for this step:
+
+- Who you asked, or that the questions are unasked — Unasked is an honest answer. Write what you expect the answers to be, so you can compare later.
+- What they said, or what you expect
+
+<details>
+<summary>Help with this step</summary>
+
+- **Unasked:** A complete and honest answer to this step. Writing what you expect lets you compare later, which is more useful than an invented answer.
+
+Stuck starting? Ask if you can. If you cannot, write down the answers you expect and date it.
+
+Is it enough? Either you have answers, or you have written expectations you can check against later.
+
+</details>
+
+#### 5. Write what you learned
+
 - List three things you understand now that you did not before.
 - Include at least one where you were previously wrong.
 - Save the handover, questions and reflection.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three things you understand now that you did not, including at least one where you were previously wrong.
 
-## Review and handoff
-- The handover covers behaviour and states, not only appearance: [evidence reference]
-- Three questions are about cost and constraint: [evidence reference]
-- The fakes are declared explicitly: [evidence reference]
-- The reflection includes something you had been wrong about: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Three things you understand now that you did not before this module
+- At least one where you were previously wrong
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Where you were wrong:** Something you believed before this module and no longer do. It is the most useful item on the list and the hardest to write.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Look back at what you expected at the start of the module and find the first thing that turned out differently.
+
+Is it enough? At least one item is about a belief you had, not about a skill you gained.
 
 </details>
+
+**Save and continue.** Saved for you: Your handover outline, the three questions, the fakes declaration and the reflection save as you type, on this device first and then online. Kept outside the app: The handover document itself is a file in your own folder, alongside the prototype it describes. A clear plain document with links beats any handover platform for this. What your creator sees: Your creator reads the three questions and the thing you were wrong about. Both are better evidence of what this module did than the prototype is. Your next action: Open Your work and choose Ready for review. This closes Module 12. Module 13 turns the components you built into a system somebody else could use.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 

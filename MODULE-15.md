@@ -38,80 +38,207 @@ The tree for the booking product: outcome — people who intend to attend a clas
 
 Build a metric tree for your product connecting one outcome to the behaviours beneath it, and mark which nodes you could observe and which you could not.
 
-**Where to work:** Paper or a text file for the tree. Nothing else; this lesson is reasoning, not tooling.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Paper or a text file for the tree. Nothing else; this lesson is reasoning, not tooling.
 
 - Starting material: Your release plan and research findings.
 - Create HaruCourse/Practice/m15-l01-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# What you are actually trying to measure
+#### 1. Read and state the outcome
 
-Input artifact: Your release plan and research findings.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Naming the outcome for a tool library, and naming something the product does.
 
-## Output checklist
-- [ ] A metric tree from one outcome down to countable events
-- [ ] Outcome and activity metrics distinguished
-- [ ] An observability mark on every node
-- [ ] Two candidate metrics removed for being unactionable
+- **What I wrote:** “People can book tools online.” It is what the product exists to do, it is true, and it took four seconds.
+- **Why it was not an outcome:** It describes the product. If the product disappeared tomorrow, the sentence would simply stop being true, and nothing in it says what anybody was trying to achieve.
+- **The test I applied:** Would this sentence still make sense if the product were a telephone line and a paper ledger? “People can book tools online” would not. The outcome should survive the change.
+- **What I wrote instead:** “People who need a tool for a job get one, use it, and bring it back.” That is true of the phone line, the ledger and the website, and it is what any of them exists to produce.
+- **What that changed underneath:** The tree stopped being about booking and started including collecting and returning, which is where two of the three real problems turned out to be.
 
-## 1. Read and state the outcome
+**The wrong turn:** The wrong turn is describing the product, because the product is the thing in front of you and describing it feels like naming a purpose. A tree built on it can only ever be about the screens you already have.
+
+**What it costs:** An outcome that survives replacing the product is vaguer and harder to count, and somebody will ask what it has to do with this quarter’s work.
+
+**Still unknown:** Still unknown: whether people who fail to borrow simply go and buy one. Nothing in the tree can see somebody who gave up before arriving.
+
 - Read the assigned guidance on defining success.
 - Write the one outcome your product exists to produce.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One outcome written as something that happens to a person, and one of your own outputs named as an output.
 
-## 2. Build the tree downward
+Worksheet fields for this step:
+
+- The one outcome your product exists to produce — Something that happens to a person, not something that happens on a screen.
+- One thing your product does that is an output rather than an outcome
+
+<details>
+<summary>Help with this step</summary>
+
+- **Outcome:** Something that is true for a person afterwards. It is what the product exists for and it is rarely countable directly.
+- **Output:** Something the product does or that exists: a screen shipped, a message sent, a page viewed. Easy to count and not the point.
+
+Stuck starting? Finish this sentence: “this product exists so that people …”, and do not mention a screen.
+
+Is it enough? Your outcome would still make sense if the product were replaced by something completely different.
+
+</details>
+
+#### 2. Build the tree downward
+
 - List the behaviours that produce the outcome.
 - Beneath each, list events that would indicate it.
 - Stop when the leaves are countable in principle.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three branches, each naming a behaviour and the events beneath it that would indicate it.
 
-## 3. Separate outcome from activity
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Branch 1 · the behaviour, and the events beneath it that would indicate it — Stop when the leaves are countable in principle, even if you cannot count them today.
+- Branch 2 · the behaviour, and the events beneath it that would indicate it
+- Branch 3 · the behaviour, and the events beneath it that would indicate it
+
+<details>
+<summary>Help with this step</summary>
+
+- **Metric tree:** An outcome at the top, the behaviours that produce it beneath, and countable events beneath those. It is what connects a number to a reason for caring about it.
+- **Leaf:** The bottom of a branch: something that could be counted in principle, even if nobody can count it today.
+
+Stuck starting? Take the outcome and ask what has to happen for it to be true. Those are your behaviours.
+
+Is it enough? Every leaf is a thing that either happens or does not, rather than a quantity of feeling.
+
+</details>
+
+#### 3. Separate outcome from activity
+
+**See it first.** Made-up example. Building a metric tree for a tool library, and building it up from what was countable.
+
+- **How I started:** With what I could get: page views, searches, time on page, bookings started, bookings completed. Five real numbers, all available.
+- **What I built with them:** A tidy tree, with the countable things at the bottom and increasingly vague headings above them until the top said engagement.
+- **What was wrong with it:** Engagement is not something anybody wants. Nobody comes to a tool library to engage with it; they come to borrow a drill and take it home.
+- **What starting from the top produced:** People who need a tool get one, use it, and bring it back. Beneath that: they find a tool that suits the job; they collect it without a wasted journey; they return it on time.
+- **What happened to my five numbers:** Two connected. Bookings completed sits under collecting without a wasted journey. Duplicate payments sits there too. Searches, page views and time on page connected to nothing, because a search that finds nothing looks identical to one that works.
+
+**The wrong turn:** The wrong turn is building upward from what you can count, because those numbers exist and the outcome does not. It produces a tree whose top is a word nobody outside the team wants.
+
+**What it costs:** Starting from the outcome means most of your tree is unobservable, and the report is much shorter than one built from available numbers.
+
+**Still unknown:** Still unknown: whether people return tools late because they forgot or because the hours are awkward. The tree says the return happens; nothing in it says why.
+
 - Mark each node as outcome or activity.
 - Check every activity node is connected upward to an outcome.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every node marked outcome or activity, with any activity node not connected upward identified.
 
-## 4. Mark observability
+Worksheet fields for this step:
+
+- Each node marked outcome or activity — Activity is something people do. Outcome is something that is true afterwards. Activity is not value.
+- Any activity node not connected upward to an outcome — An unconnected activity metric is the one that gets reported for years without anybody asking what it is for.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Activity metric:** A count of things happening: sessions, clicks, searches. It can rise while the outcome falls, which is why it needs a connection upward.
+- **Unconnected metric:** One nobody can trace to an outcome. It gets reported every month for years, and no value of it ever changes a decision.
+
+Stuck starting? Mark the leaves first; activity and outcome are easiest to tell apart at the bottom.
+
+Is it enough? Every activity node has a path upward to the outcome, or is marked as having none.
+
+</details>
+
+#### 4. Mark observability
+
 - Mark each node observable, askable, or unavailable to you.
 - Note what you would need to observe the unavailable ones.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every node marked observable, askable or unavailable, with what you would need for the unavailable ones.
 
-## 5. Remove the unactionable
+**Try it with help.** Six candidate metrics for a made up tool library. For each one, decide what kind it is.
+
+- The number of people charged twice for one booking, counted from the payment provider’s records.
+  - **an outcome you could observe** — It is a thing that happened to a person, it is bad, and it can be counted today. Every value of it suggests an action.
+  - an activity metric — Nobody set out to pay twice. It is a consequence rather than a behaviour.
+  - not actionable at all — It is one of the few on this list that points straight at work.
+- The number of searches performed each week.
+  - an outcome you could observe — Nothing is true for anybody afterwards. It rises when search works well and when it works badly.
+  - **an activity metric** — A count of people doing something, with no direction. It needs a connection upward, and it usually does not have one.
+  - not actionable at all — It becomes actionable if paired with whether the search found anything, which is the connection it lacks.
+- Average time on the tool detail page.
+  - an outcome you could observe — Nothing about it is an outcome for anybody.
+  - an activity metric — It is one, and the deeper problem is that no value of it implies an action: it goes up when people are interested and when they are lost.
+  - **not actionable at all** — This is the classic metric to remove. Whatever it does, somebody can explain it as good news.
+- The proportion of tools returned by their due date.
+  - **an outcome you could observe** — It is part of the outcome and it is countable from the library’s own records. A fall in it is a reason to look at something.
+  - an activity metric — Returning is a behaviour, and this one sits directly under the outcome rather than floating.
+  - not actionable at all — A change in it would change what somebody does.
+- Whether people arrive knowing what they need to bring.
+  - an outcome you could observe — It is genuinely part of the outcome and it cannot be observed: nothing in any record shows what somebody knew.
+  - an activity metric — It is not a behaviour anybody performs on the product.
+  - **not actionable at all** — Not as a metric. It is askable, which makes it real evidence and not a number, and the tree should mark it that way rather than dropping it.
+- Bookings completed in a single visit rather than across two.
+  - an outcome you could observe — Completing in one visit is convenient and is not itself what anybody wanted; somebody checking with a partner and returning is fine.
+  - **an activity metric** — A behaviour with a plausible connection upward to collecting without a wasted journey. Useful, once that connection is written down.
+  - not actionable at all — It is actionable, as long as nobody treats a return visit as a failure.
+
+**Then:** Now mark your own nodes the same way, and check every askable one says so rather than pretending to be countable.
+
+**What to watch for:** Two different reasons to be unactionable. Time on page can be read as good news whatever it does; arriving prepared is worth knowing and cannot be counted at all. The first is removed, the second is marked askable and kept.
+
+Worksheet fields for this step:
+
+- Each node marked observable, askable, or unavailable to you
+- What you would need in order to observe the unavailable ones
+
+<details>
+<summary>Help with this step</summary>
+
+- **Observable:** You could count it with what you have: a provider’s records, a support log, a count done by hand.
+- **Askable:** You could only find out by asking somebody. It is real evidence and it is not a measurement.
+- **Unavailable:** Neither, today. Saying so is what stops a tree implying data nobody has.
+
+Stuck starting? Go leaf by leaf and ask where the number would actually come from.
+
+Is it enough? Nothing is marked observable unless you could name the record it comes from.
+
+</details>
+
+#### 5. Remove the unactionable
+
 - Remove any metric nobody would act on.
 - Record the two you removed and why.
 - Save the tree.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Two metrics removed for being unactionable, with the reason nobody would act on them.
 
-## Review and handoff
-- The tree starts from an outcome and reaches countable events: [evidence reference]
-- Outcome and activity nodes are distinguished: [evidence reference]
-- Every node is marked observable, askable or unavailable: [evidence reference]
-- Unactionable metrics are removed with reasons: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Two metrics you removed, and why nobody would act on them
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Unactionable:** No value of it would change what anybody does. Usually because it can be read as good news whichever way it moves.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? For each candidate, ask what you would do if it doubled, and what you would do if it halved.
+
+Is it enough? Both removals name what would have happened in each direction, which is why nothing would.
 
 </details>
+
+**Save and continue.** Saved for you: Your outcome, the branches, the marks and the removals save as you type, on this device first and then online. Kept outside the app: A drawn tree on paper is often clearer than a written one. Photograph it, keep it in your own folder, and note the file name here. What your creator sees: Your creator reads the observability marks and the two removals. A tree where everything is observable usually means it was built from the available numbers. Your next action: Open Your work and choose Ready for review. The next lesson counts people through one task and finds out what counting cannot tell you.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -274,78 +401,203 @@ A synthetic funnel for the booking task, clearly labelled: 1,000 reach the class
 
 Build a funnel for one task from explicitly synthetic counts, identify the largest drop, and write three different explanations that the data cannot distinguish between.
 
-**Where to work:** A spreadsheet or a hand-drawn chart with synthetic counts. No analytics account is needed; the catalog's analytics demo account remains optional and unverified for signed-in use.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A spreadsheet or a hand-drawn chart with synthetic counts. No analytics account is needed; the catalog's analytics demo account remains optional and unverified for signed-in use.
 
 - Starting material: Your flow and your usability findings.
 - Create HaruCourse/Practice/m15-l02-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Funnels, and what a drop-off does not tell you
+#### 1. Define the steps
 
-Input artifact: Your flow and your usability findings.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A funnel of one task with clearly labelled synthetic counts
-- [ ] The largest drop identified proportionally
-- [ ] Three explanations the data cannot distinguish
-- [ ] A note of which drops might be correct rather than problems
-
-## 1. Define the steps
 - Take one task from your flow and list its steps in order.
 - Decide what counts as reaching each step.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One task with its steps in order, and a written definition of what counts as reaching each.
 
-## 2. Populate with synthetic counts
+Worksheet fields for this step:
+
+- One task, with its steps in order
+- For each step: what counts as reaching it — Reaching a screen, pressing something, arriving at an outcome. Two people will count differently unless this is written down.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Funnel:** A count of people reaching each step of one task. It shows where people stop and never why.
+- **What counts as reaching:** The definition of each step. Without it, two people count the same thing differently and the numbers cannot be compared.
+
+Stuck starting? Take one task from your own flow and write its steps before thinking about any numbers.
+
+Is it enough? Somebody else could count your funnel and get the same answer.
+
+</details>
+
+#### 2. Populate with synthetic counts
+
+**See it first.** Made-up example. Reading a synthetic funnel for a tool library, and reading the wrong drop as the biggest.
+
+- **The numbers:** Synthetic throughout: 1,000 reach the list, 420 open a tool, 180 begin booking, 96 reach payment, 71 complete.
+- **What I said first:** The biggest problem is the list: we lose 580 people there, more than everywhere else combined.
+- **Why that is the wrong reading:** 580 is the largest number because 1,000 is the largest starting point. Most of a landing audience never wanted to borrow anything today.
+- **What the proportions showed:** 58 per cent at the list, then 57 per cent from opening a tool to beginning a booking, then 47, then 26. The second is nearly as steep and applies to people who had already chosen a tool.
+- **Why that step is the interesting one:** Everybody in it has shown intent. Whatever stops them there is stopping people who wanted the thing, which is not true of the first step at all.
+
+**The wrong turn:** The wrong turn is ranking by the number lost, because that number is the largest and it is at the top. The top of a funnel is where the least committed people are, and losing them is mostly correct.
+
+**What it costs:** Proportional drops make the top of the funnel look less urgent than it feels, and somebody will point out that 580 people is a lot of people.
+
+**Still unknown:** Still unknown: everything about why, and these numbers are invented anyway. The arithmetic is the thing being practised here, not the product.
+
 - Invent plausible counts and label them synthetic.
 - Calculate the proportional drop at each step, not just the absolute.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Invented counts marked synthetic, the proportional drop at each step with your working, and the largest one identified.
 
-## 3. Write competing explanations
+Worksheet fields for this step:
+
+- Your invented counts at each step, marked synthetic
+- The proportional drop at each step, with your working — Proportional drop is the number lost at a step divided by the number who reached it. 420 to 180 loses 240 of 420, which is about 57 per cent.
+- The largest proportional drop, and why it is not simply the largest number lost
+
+<details>
+<summary>Help with this step</summary>
+
+- **Proportional drop:** People lost at a step divided by people who reached it. Going from 420 to 180 loses 240 of 420, about 57 per cent.
+- **Absolute drop:** The raw number lost. The biggest one is usually at the top, where the most people are, which is why it is the wrong thing to rank by.
+- **Synthetic:** Invented for practice. The arithmetic is real and the numbers are not, and every place they appear has to say so.
+
+Stuck starting? Work out the proportion for each step by hand, writing the division you did.
+
+Is it enough? Your largest drop is the largest proportion, and you can say why that is the right ranking.
+
+</details>
+
+#### 3. Write competing explanations
+
+**See it first.** Made-up example. Explaining a drop in a synthetic tool-library funnel, and writing three versions of one explanation.
+
+- **What I wrote:** The price is a surprise; the price appears too late; people do not expect to pay at all. Three lines, and I felt I had covered the possibilities.
+- **What they had in common:** All three are about price. If any of them is right, the work is the same work: show the cost earlier.
+- **Why that is a problem:** Three explanations that imply one piece of work is one explanation written three ways. It feels like breadth and it narrows the investigation to a single hypothesis.
+- **The test I started using:** Would these three send me to do different things? If not, at least two of them are the same.
+- **What the real three became:** The price surprises people at that point. The dates available do not suit them and nothing offers alternatives. They are checking with somebody else and will return, which this funnel counts as a loss. Three different pieces of work, and the third needs data I do not have.
+
+**The wrong turn:** The wrong turn is generating variations of your first idea, because the first idea arrives immediately and the variations arrive easily after it. Three explanations pointing at one fix leave you as narrow as one.
+
+**What it costs:** Genuinely different explanations are harder to think of and make the finding look less conclusive, because now there are three quite separate things to investigate.
+
+**Still unknown:** Still unknown: whether any of the three is right, and the numbers are invented in any case. What the exercise produces is the habit rather than an answer about a product.
+
 - For the largest drop, write three explanations that fit the numbers.
 - State what evidence would separate them.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three explanations for the largest drop that the numbers cannot distinguish, each with the evidence that would separate it.
 
-## 4. Find the healthy drops
+**Try it with help.** Six things somebody said about the same made up drop in a synthetic funnel. For each one, decide what it is.
+
+- The price appears later than people expect, so they stop when they see it.
+  - **an explanation the data allows** — It fits the numbers exactly, and so do two others. That is what makes it an explanation rather than a finding.
+  - a conclusion the data cannot support — It is not being asserted as true; it is one candidate.
+  - something the funnel cannot see at all — The funnel cannot confirm it and the step it describes is inside the funnel.
+- The problem is at this step, so we should redesign this screen.
+  - an explanation the data allows — It skips straight past explanation to a decision.
+  - **a conclusion the data cannot support** — People stopping at a step does not mean the step caused it. The cause may be three screens earlier, which the funnel cannot show.
+  - something the funnel cannot see at all — The step is visible; the causation is not.
+- People are checking with somebody else and will come back tomorrow.
+  - an explanation the data allows — It fits the numbers, and this funnel counts sessions rather than people, so a return would be counted as a new visitor and this explanation is invisible to it.
+  - a conclusion the data cannot support — It is offered as a possibility rather than a conclusion.
+  - **something the funnel cannot see at all** — Without a returning-visitor view, somebody coming back is indistinguishable from somebody leaving for ever.
+- The dates available do not suit them and there is no easy route to alternatives.
+  - **an explanation the data allows** — Consistent with the same numbers as the price explanation, and it implies completely different work.
+  - a conclusion the data cannot support — Nothing is being asserted.
+  - something the funnel cannot see at all — The funnel cannot distinguish it, and it is at least about a step the funnel counts.
+- Our drop here is worse than the industry average, so we are underperforming.
+  - an explanation the data allows — It explains nothing about what happened.
+  - **a conclusion the data cannot support** — Two funnels defined differently are not comparable, and these particular numbers are invented. It is a comparison of two things that were never measured the same way.
+  - something the funnel cannot see at all — The funnel can see its own numbers; what it cannot see is anybody else’s definitions.
+- It is worse on phones than on laptops.
+  - an explanation the data allows — It might well be true and this funnel is not split by device, so nothing in it speaks to the question.
+  - a conclusion the data cannot support — It would become one if asserted; as written it is a claim about a split the data does not have.
+  - **something the funnel cannot see at all** — Any claim about a group the funnel does not separate is invisible to it. Splitting it would be a reasonable next step.
+
+**Then:** Now write your own three explanations, and check none of them is really a conclusion or a claim about something the funnel cannot see.
+
+**What to watch for:** Three different failures. A conclusion asserts cause from position; a claim about returning visitors or devices needs a split the funnel does not have; and an industry comparison compares two definitions nobody has reconciled.
+
+Worksheet fields for this step:
+
+- Three explanations for the largest drop that the numbers cannot tell apart
+- For each: what evidence would separate it from the others
+
+<details>
+<summary>Help with this step</summary>
+
+- **Competing explanation:** A different reason that fits the same numbers exactly. There are always several, and a funnel cannot choose between them.
+- **Separating evidence:** What you would have to observe or ask to tell two explanations apart. It is what turns a funnel into a research question.
+
+Stuck starting? Write three explanations that are as different from each other as you can make them.
+
+Is it enough? The three imply three different pieces of work.
+
+</details>
+
+#### 4. Find the healthy drops
+
 - Identify any step where people leaving is correct.
 - Write what a healthy drop would look like there.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A step where people leaving is correct, with what a healthy drop looks like there.
 
-## 5. Label and record
+Worksheet fields for this step:
+
+- A step where people leaving is the right outcome, and what a healthy drop looks like there
+
+<details>
+<summary>Help with this step</summary>
+
+- **Healthy drop:** People leaving because they should: the tool is the wrong size, the class is not for them. A funnel counts it identically to a failure.
+
+Stuck starting? Look for a step whose job is partly to send people away.
+
+Is it enough? You named what a good drop would look like there, not only that one exists.
+
+</details>
+
+#### 5. Label and record
+
 - Mark every number synthetic on the chart itself.
 - Save the funnel with the explanations.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every number marked synthetic on the chart itself, and the repair the Check questions asked for.
 
-## Review and handoff
-- The funnel's steps match a real task: [evidence reference]
-- Synthetic counts are labelled wherever they appear: [evidence reference]
-- Three competing explanations are written with separating evidence: [evidence reference]
-- Healthy drops are identified: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- How every number is marked synthetic on the chart itself — On the chart, not only in a caption. Charts travel away from their captions.
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Labelling on the chart:** Putting the word synthetic in the chart rather than in a caption. Charts get screenshotted and travel without their captions.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Put the word into the chart title, not underneath it.
+
+Is it enough? A screenshot of your chart alone would still say the numbers are invented.
 
 </details>
+
+**Save and continue.** Saved for you: Your steps, the synthetic counts, the proportions and the explanations save as you type, on this device first and then online. Kept outside the app: A hand-drawn funnel or a spreadsheet stays in your own folder, with the synthetic label on the chart. No analytics account is involved. What your creator sees: Your creator reads the three explanations and the evidence that would separate them. A funnel with one explanation is a conclusion with a chart attached. Your next action: Open Your work and choose Ready for review. The next lesson takes the rates you have been writing and asks what they can support.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -508,78 +760,203 @@ Three rates were reworked. From the m05 survey: 9 of 22 unsure their payment had
 
 Attach an interval to three rates from your own work, and rewrite any claim the interval cannot support.
 
-**Where to work:** A spreadsheet or calculator using a published interval formula, with your inputs shown. The interval reading gives no formulas, so name the one you used.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A spreadsheet or calculator using a published interval formula, with your inputs shown. The interval reading gives no formulas, so name the one you used.
 
 - Starting material: Any counts you hold from earlier modules.
 - Create HaruCourse/Practice/m15-l03-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Rates, intervals and small numbers
+#### 1. Read and gather
 
-Input artifact: Any counts you hold from earlier modules.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Three rates with computed intervals and inputs shown
-- [ ] Any unsupportable claim rewritten as a count
-- [ ] A written rule for when you will report a rate at all
-- [ ] One comparison abandoned or qualified
-
-## 1. Read and gather
 - Read the assigned interval and sample-size readings.
 - Collect three rates you have written or been tempted to write.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three rates gathered with the counts behind them.
 
-## 2. Compute the intervals
+Worksheet fields for this step:
+
+- Three rates you have written or were tempted to write, with the counts behind them — The count is the part that matters. 41 per cent from 9 of 22 and 41 per cent from 410 of 1,000 are different claims.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Rate:** A proportion expressed as a percentage. It hides the count, and the count is what decides how much it can support.
+- **The count behind it:** How many out of how many. Two identical percentages from 22 people and 1,000 people are entirely different claims.
+
+Stuck starting? Go through your own documents and find every percentage you have written.
+
+Is it enough? Each rate has its two numbers beside it.
+
+</details>
+
+#### 2. Compute the intervals
+
+**See it first.** Made-up example. Reporting a survey result from a tool library, and reporting it as a percentage.
+
+- **What I wrote:** “41 per cent of members were unsure whether their payment had gone through.” It looked precise and it fitted neatly into a sentence.
+- **What was behind it:** Nine people out of twenty-two who answered a survey. I knew that; the sentence did not say it.
+- **What the interval was:** Roughly 24 to 61 per cent. So the honest version of my precise-looking claim is somewhere between a quarter and three-fifths.
+- **What happened when somebody checked:** They asked how many people. Once twenty-two was said out loud, the 41 per cent read as false precision, and everything else in the document was read more suspiciously.
+- **What I wrote instead:** “Nine of the twenty-two members who answered the survey were unsure whether their payment had gone through.” Smaller, checkable, and nothing in it can be overturned by asking one question.
+
+**The wrong turn:** The wrong turn is converting a small count to a percentage, because percentages look more professional and fit better in a sentence. At small samples the precision is fictional, and the first reader who asks about the sample stops trusting the rest.
+
+**What it costs:** Counts read as less impressive and invite the question of whether nine people is enough. That question is the right one to be having.
+
+**Still unknown:** Still unknown: whether the twenty-two are like the members who did not answer. The interval covers sampling variation and says nothing about who chose to reply.
+
 - Compute an interval for each rate, showing your inputs.
 - Name the formula or tool you used.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** An interval computed for each rate with the inputs shown and the method named, plus what an interval means in your own words.
 
-## 3. Rewrite the claims
+Worksheet fields for this step:
+
+- The formula or tool you used, named — Any published interval formula for a proportion. Name it so somebody can check your arithmetic.
+- For each rate: the interval, with the inputs you used
+- What the interval means, in your own words — Roughly: the range of true values that would not be surprising, given this many people.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Interval:** The range of true values that would not be surprising, given how many people you asked. Small counts produce wide ranges.
+- **Showing your inputs:** Writing the two counts and the method you used. It lets somebody check the arithmetic rather than trusting it.
+
+Stuck starting? Compute the interval for your smallest count first; it is where the difference is most obvious.
+
+Is it enough? Somebody could recompute each interval from what you wrote.
+
+</details>
+
+#### 3. Rewrite the claims
+
 - Rewrite any claim the interval cannot support.
 - Prefer counts with the sample route stated.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each claim rewritten so the interval supports it, with how those people came to be asked.
 
-## 4. Handle a comparison
+**Try it with help.** Six sentences from a made up tool-library report. For each one, decide whether the numbers behind it support the claim.
+
+- Nine of the twenty-two members who answered the survey were unsure whether their payment had gone through.
+  - **supportable as written** — The count, the denominator and the route are all present. Nothing in it can be overturned by asking one question.
+  - needs the count instead — The count is what it already is.
+  - the interval is not the problem — No interval is being claimed, so none is needed.
+- 41 per cent of members were unsure whether their payment had gone through.
+  - supportable as written — The interval runs from about a quarter to three-fifths, so the second digit is fictional.
+  - **needs the count instead** — Nine of twenty-two says the same thing without implying a precision the sample cannot carry. It also quietly changes members to members who answered.
+  - the interval is not the problem — The interval is exactly the problem here, along with the word members.
+- 67 per cent of participants could not tell the place was held.
+  - supportable as written — Sixty-seven per cent of three people is two people. The percentage is arithmetic dressed as a measurement.
+  - **needs the count instead** — Two of the three people we watched. It is a real and useful finding, stated at the size it is.
+  - the interval is not the problem — An interval on three people would cover almost everything, which is the point.
+- 80 per cent of the forty people who volunteered for our panel found the new flow clearer.
+  - supportable as written — Forty is a reasonable count and the interval is not wide. Who those forty are is the difficulty.
+  - needs the count instead — Thirty-two of forty is better and does not fix it either.
+  - **the interval is not the problem** — People who volunteer for a panel are unlike people who do not, and no arithmetic corrects that. The route has to be stated and the claim narrowed to the panel.
+- Completion rose from 7.1 per cent to 9.4 per cent between the two synthetic funnels.
+  - supportable as written — Both numbers were invented, so the comparison measures nothing at all.
+  - needs the count instead — The counts are invented too.
+  - **the interval is not the problem** — Comparing invented numbers produces an invented difference. The repair is to remove the comparison rather than to qualify it.
+- The payment provider’s records show eleven duplicate payments in March.
+  - **supportable as written** — A complete count from a record, not a sample. There is no interval because nothing was estimated.
+  - needs the count instead — It is already a count.
+  - the interval is not the problem — There is indeed no interval here, because nothing was estimated from a sample. A complete count from a record needs no range around it.
+
+**Then:** Now rewrite your own three, and check each says how the people came to be asked.
+
+**What to watch for:** Not every problem is an interval. A panel of volunteers, a synthetic comparison and a complete count all need different handling, and only one of the three is about sample size.
+
+Worksheet fields for this step:
+
+- Each claim rewritten so the interval supports it — Usually this means the count with the route stated: 9 of 22 people who answered the survey.
+- For each: how those people came to be asked — Recruited how, from where. A rate from people who volunteered is about people who volunteer.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Reporting the count:** Nine of twenty-two, rather than 41 per cent. It is the honest form for small numbers and it invites the right questions.
+- **Sample route:** How those people came to be asked. A rate from volunteers is a rate about volunteers, and no interval fixes that.
+
+Stuck starting? Rewrite the smallest-sample claim first, as a count with its route.
+
+Is it enough? No rewritten claim says more than the numbers behind it allow.
+
+</details>
+
+#### 4. Handle a comparison
+
+**See it first.** Made-up example. Comparing two rates from a tool-library study, and comparing invented ones.
+
+- **What I had:** Completion at 7.1 per cent in one synthetic funnel and 9.4 per cent in another, built a fortnight apart while I was practising the arithmetic.
+- **What I wrote:** Completion rose by 2.3 points between the two versions. It looked like a result and it was the most encouraging line in the document.
+- **What was wrong with it:** Both numbers were invented by me. The difference between two things I made up is a thing I made up, and no interval makes it mean anything.
+- **Why an interval would not have saved it:** I nearly computed one and qualified the comparison instead. That would have dressed an invented difference in real arithmetic, which is worse than leaving it plain.
+- **What I did:** Removed the comparison entirely and wrote one line saying the two funnels were practice material and could not be compared. The document got shorter and stopped containing a false finding.
+
+**The wrong turn:** The wrong turn is qualifying a comparison that should be removed, because qualifying is the move this lesson keeps asking for. Arithmetic applied to invented numbers makes them look measured.
+
+**What it costs:** Removing it left the document with no encouraging line in it, which is an honest description of what the practice material could show.
+
+**Still unknown:** Still unknown: whether the real completion rate is anywhere near either figure. Nothing here measured it, and the document now says so.
+
 - Take a comparison between two rates and examine both intervals.
 - Qualify or abandon the comparison, and say why.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One comparison examined with both intervals, then qualified or abandoned with the reason.
 
-## 5. Write your rule
+Worksheet fields for this step:
+
+- A comparison between two rates, with both intervals
+- Whether you qualified it or abandoned it, and why — Overlapping intervals mean the difference could easily be nothing.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Comparing two rates:** Harder than reporting one. Two wide intervals that overlap mean the difference could easily be nothing at all.
+- **Abandoning a comparison:** A legitimate result. Removing it is better than qualifying it so heavily that nobody reads the qualification.
+
+Stuck starting? Write both intervals down and see whether they overlap before deciding anything.
+
+Is it enough? Your decision names the overlap, or names a different reason such as invented numbers.
+
+</details>
+
+#### 5. Write your rule
+
 - Write when you will report a rate rather than a count.
 - Save the calculations and the rewritten claims.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A written rule for when you will report a rate at all, and the repair the Check questions asked for.
 
-## Review and handoff
-- Three intervals are computed with inputs shown: [evidence reference]
-- Unsupportable claims are rewritten as counts: [evidence reference]
-- A comparison is qualified or abandoned: [evidence reference]
-- A personal rule for reporting rates is written: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Your written rule for when you will report a rate at all
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **A reporting rule:** Your own threshold, written once and applied. It saves the argument every time and it makes your documents consistent.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Pick a count below which you will always report counts, and write it down.
+
+Is it enough? The rule is specific enough that you could apply it without thinking next time.
 
 </details>
+
+**Save and continue.** Saved for you: Your rates, the intervals, the rewrites and your reporting rule save as you type, on this device first and then online. Kept outside the app: A spreadsheet with your interval working stays in your own folder. Keep the inputs visible in it, so the arithmetic can be checked later. What your creator sees: Your creator reads the rewritten claims and the sample routes. A document where every claim shrank is the expected result of this lesson. Your next action: Open Your work and choose Ready for review. The next lesson designs an experiment you almost certainly cannot run.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -742,80 +1119,210 @@ The designed test: hypothesis, that a held-place message reduces duplicate payme
 
 Design one A/B test properly — hypothesis, variants, primary and guardrail metrics, required sample and duration — and then write why you cannot run it and what you will do instead.
 
-**Where to work:** Written design plus a spreadsheet for the sample calculation. No experimentation platform is involved, and none would help without traffic.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Written design plus a spreadsheet for the sample calculation. No experimentation platform is involved, and none would help without traffic.
 
 - Starting material: Your metric tree and an open design question.
 - Create HaruCourse/Practice/m15-l04-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Designing an experiment you cannot run
+#### 1. Read the constraints
 
-Input artifact: Your metric tree and an open design question.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A written hypothesis with its reasoning
-- [ ] One primary metric and at least two guardrails
-- [ ] A required sample and duration estimate with inputs
-- [ ] A written refusal and a qualitative alternative
-
-## 1. Read the constraints
 - Read the assigned A/B testing article.
 - Write its stated limits on traffic, duration and simultaneous changes.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The limits the reading states on traffic, duration and changing more than one thing.
 
-## 2. Write the hypothesis and variants
+Worksheet fields for this step:
+
+- The limits the reading states on traffic, duration and simultaneous changes
+
+<details>
+<summary>Help with this step</summary>
+
+- **A/B test:** Showing two versions to two randomly split groups and comparing one metric. It answers whether, never why.
+- **Simultaneous changes:** More than one difference between the variants. The result then tells you the pair did something, and nothing about which part.
+
+Stuck starting? Read the assigned article looking only for the numbers and the constraints.
+
+Is it enough? You could say, in one sentence, what an experiment needs in order to mean anything.
+
+</details>
+
+#### 2. Write the hypothesis and variants
+
+**See it first.** Made-up example. Writing variants for a tool-library test, and changing two things at once.
+
+- **What I designed:** Version A as it is now. Version B with the held-place message and a redesigned confirmation screen, because both were ready and both were meant to help.
+- **Why that seemed efficient:** One test instead of two, and half the traffic needed. Everything about it looked like a saving.
+- **What a result would have meant:** If duplicates fell, the pair did something. Which of the two, and whether one of them made things worse while the other more than compensated, is unanswerable.
+- **What a null result would have meant:** Even worse: the pair did nothing on balance, which is consistent with one helping and the other harming by the same amount.
+- **What I did instead:** One change: the message. The confirmation redesign goes separately, or ships without a test on the strength of the reasoning behind it.
+
+**The wrong turn:** The wrong turn is bundling two ready changes into one test, because it halves the traffic needed and feels efficient. The result is then uninterpretable in both directions, which costs more than the traffic saved.
+
+**What it costs:** Testing one thing means the other ships untested or waits, and waiting is expensive when traffic is the constraint already.
+
+**Still unknown:** Still unknown: whether the two interact. Separate tests would not show that either, and this is one of the things a small product simply cannot find out.
+
 - State what you expect, why, and what would disprove it.
 - Define exactly one change between the variants.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A hypothesis with its reasoning and what would disprove it, and two variants differing in exactly one thing.
 
-## 3. Choose metrics
+Worksheet fields for this step:
+
+- What you expect, why, and what would disprove it — The why matters. A hypothesis with no reasoning behind it cannot be wrong in an interesting way.
+- The two variants, differing in exactly one thing — Exactly one. Two changes at once produce a result nobody can interpret.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Hypothesis:** What you expect and why. The why is what makes a negative result informative rather than merely disappointing.
+- **Disprovable:** Something that could come back saying no. A hypothesis nothing could contradict is a preference.
+
+Stuck starting? Write the why before the what. The reasoning is what the test is really examining.
+
+Is it enough? Exactly one thing differs between your variants, and you can say what a no would look like.
+
+</details>
+
+#### 3. Choose metrics
+
+**See it first.** Made-up example. Designing a test for a tool library, and choosing the effect size afterwards.
+
+- **What I did first:** Worked out how much traffic we have, then found the effect size that would be detectable with it. About twelve percentage points.
+- **Why that felt sensible:** It made the test feasible. Anything smaller was unreachable, so twelve became the number I designed around.
+- **What it actually meant:** I was committing to only noticing an enormous effect. A message that cut duplicate payments by a third would have come back as no result at all.
+- **What choosing first produced:** The smallest effect worth acting on is about three points, because below that the work costs more than it saves. That number came from the problem rather than from the traffic.
+- **What the honest calculation then showed:** Months of data for three points, at this traffic. The test is not available, which is a finding rather than a failure, and it is the finding the lesson is asking for.
+
+**The wrong turn:** The wrong turn is working backwards from the traffic you have, because it makes the test possible. What it produces is a test that can only detect effects so large you would not need a test to see them.
+
+**What it costs:** Choosing the effect size from the problem usually means concluding that you cannot run the experiment, which is a worse outcome to report and a true one.
+
+**Still unknown:** Still unknown: what the real duplicate-payment rate is. The calculation used a plausible figure, labelled as an assumption, and a different one would change the months considerably.
+
 - Choose one primary metric from your metric tree.
 - Choose guardrails that must not get worse.
 - State the smallest effect that would matter.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One primary metric, at least two guardrails, and the smallest effect that would matter with its reason.
 
-## 4. Estimate the requirement
+Worksheet fields for this step:
+
+- One primary metric, taken from your metric tree
+- At least two guardrails that must not get worse
+- The smallest effect that would matter, and why that size — This number decides how much data you need. Choosing it first is what makes the calculation honest.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Primary metric:** The one the decision rests on. More than one means whichever moves becomes the primary one afterwards.
+- **Guardrail:** Something that must not get worse. It is how you notice that your improvement cost something elsewhere.
+- **Smallest effect that matters:** The difference below which you would do nothing. It decides how much data is needed, which is why it is chosen before the calculation.
+
+Stuck starting? Choose the smallest effect you would act on before looking at any traffic figure.
+
+Is it enough? Your effect size came from the problem rather than from what is detectable.
+
+</details>
+
+#### 4. Estimate the requirement
+
 - Estimate the sample needed for that effect and the duration.
 - Compare with the traffic you actually have.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A sample estimate with your inputs, a duration at your actual traffic, and where that traffic figure comes from.
 
-## 5. Refuse, and plan the alternative
+Worksheet fields for this step:
+
+- The sample needed for that effect, with your inputs and method
+- How long that would take at your actual traffic
+- The traffic you actually have, and where that number comes from — If you do not know, say so and use a plausible figure labelled as an assumption.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Required sample:** How many people each variant needs before a difference of the size you care about could be told apart from noise. Smaller effects need far more people.
+- **Duration:** The sample divided by your weekly traffic. It is the number that usually ends the conversation.
+
+Stuck starting? Do the arithmetic with the numbers you have, and label any assumption as an assumption.
+
+Is it enough? Somebody could check your calculation from the inputs you wrote down.
+
+</details>
+
+#### 5. Refuse, and plan the alternative
+
 - Write why you cannot run it and what would change that.
 - Plan the qualitative alternative and what it can answer.
 - Save the design, the refusal and the alternative.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A written refusal with what would change it, a qualitative alternative, and the confounding named for any before-and-after count.
 
-## Review and handoff
-- A hypothesis states expectation, reasoning and disproof: [evidence reference]
-- One primary metric and guardrails are chosen in advance: [evidence reference]
-- Sample and duration are estimated against real traffic: [evidence reference]
-- A refusal and a qualitative alternative are written: [evidence reference]
-What remains untested:
-Next action when I return:
+**Try it with help.** Six proposals about the same made up experiment at a tool library, where the calculation showed months of data would be needed. For each one, decide what it would produce.
 
-```
+- Run it for two weeks anyway and see what the numbers say.
+  - an honest answer — At this traffic, two weeks cannot distinguish a three-point effect from nothing at all.
+  - **noise that will be read as a result** — Whatever difference appears will be noise, and somebody will act on it. This is the outcome the calculation exists to prevent.
+  - a different question entirely — It is the same question, asked in a way that cannot answer it.
+- Watch three people attempt a booking with each version and record what they do and say.
+  - an honest answer — It is honest about its own scope, and it does not answer how often duplicates happen.
+  - noise that will be read as a result — Nothing about it is dressed as a measurement, as long as nobody reports three people as a rate.
+  - **a different question entirely** — It answers why rather than how much, which is the question that is actually available. Both are worth having and they are not substitutes.
+- Count duplicate payments in the provider’s records for the month before and the month after shipping, and state what else changed.
+  - **an honest answer** — A complete count rather than a sample, with the confounding stated. It is weaker than an experiment and it is not pretending otherwise.
+  - noise that will be read as a result — The risk exists and is managed by naming what else changed in the same sentence.
+  - a different question entirely — It is the same question, answered as well as the situation allows.
+- Test a much bigger change instead, since a larger effect needs less data.
+  - an honest answer — The arithmetic is right and the test now examines something you were not asking about.
+  - noise that will be read as a result — It could produce a real result, about a different change.
+  - **a different question entirely** — Redesigning the question to fit the available data is how you end up testing what is testable rather than what matters.
+- Run it and stop as soon as the difference looks convincing.
+  - an honest answer — Stopping when it looks good guarantees that it will look good at some point, whatever is true.
+  - **noise that will be read as a result** — Checking repeatedly and stopping on a favourable moment manufactures differences out of noise. It is the commonest way a real test produces a false result.
+  - a different question entirely — The question is unchanged; the method has stopped being able to answer it.
+- Ship it to everybody, count duplicates for four weeks, and set a condition that would make you reverse it.
+  - **an honest answer** — It is not an experiment and it does not claim to be. A named signal, a period and a reversal condition is what the release-plan lesson asked for.
+  - noise that will be read as a result — The reversal condition is what keeps it honest: the answer can be no.
+  - a different question entirely — It is the same question with the best method available at this size.
+
+**Then:** Now write your own refusal and choose your alternative from the first group.
+
+**What to watch for:** The two that manufacture results do it differently: running an underpowered test produces noise, and stopping when it looks good produces noise on purpose. The honest answers are the ones that say plainly what they are not.
+
+Worksheet fields for this step:
+
+- Why you cannot run it, and what would change that
+- The qualitative alternative, and what it can and cannot answer
+- For any before-and-after counting: what else could explain a change
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Refusing a test:** Saying it cannot be run and why. It is a professional result, and the alternative is to run one that produces noise somebody will read as a result.
+- **Confounding:** Something else that changed at the same time. A before-and-after count is always confounded by whatever else happened that month.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Write the refusal in one sentence, then say what would have to change for the test to be possible.
+
+Is it enough? Your alternative says what it cannot answer as clearly as what it can.
 
 </details>
+
+**Save and continue.** Saved for you: Your hypothesis, metrics, calculation, refusal and alternative save as you type, on this device first and then online. Kept outside the app: The sample calculation belongs in a spreadsheet in your own folder with its inputs visible, so somebody can check it rather than trust it. What your creator sees: Your creator reads the refusal and the effect size. An experiment designed to be feasible is the commonest thing to find here. Your next action: Open Your work and choose Ready for review. The next lesson reads numbers somebody else produced.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -978,78 +1485,203 @@ A published figure claimed a 30 per cent improvement in completions after a rede
 
 Take a published or supplied set of figures, list the five questions you would need answered before acting on it, and rewrite one of its claims to match what it actually supports.
 
-**Where to work:** Any published report or article with figures. The exercise is reading and writing; no data access is needed.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Any published report or article with figures. The exercise is reading and writing; no data access is needed.
 
 - Starting material: A public report, dashboard screenshot or article with numbers.
 - Create HaruCourse/Practice/m15-l05-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Reading someone else's numbers
+#### 1. Choose the figures
 
-Input artifact: A public report, dashboard screenshot or article with numbers.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Choosing figures to examine, and choosing something too easy.
 
-## Output checklist
-- [ ] Five questions asked of a real set of figures
-- [ ] The answers you could find and the ones you could not
-- [ ] One claim rewritten to match its support
-- [ ] A note of what the chart's presentation emphasised or hid
+- **What I picked first:** An obviously overblown marketing page claiming a 400 per cent improvement, with no numbers behind it at all.
+- **What the exercise produced:** Five questions, five absences, and a rewrite that said nothing could be concluded. It took four minutes and taught me nothing.
+- **Why it was too easy:** Nobody was going to believe it anyway. The claims that matter are the ones that look careful, from people being honest, where the problem is in what got selected.
+- **What I chose instead:** A published case study with real figures, a stated period and a plausible claim, written by somebody who was clearly trying to be accurate.
+- **What that found:** New visitors only, a comparison period containing a holiday, and a campaign running at the same time. None of it hidden, none of it mentioned in the claim, and the rewrite was genuinely harder to write.
 
-## 1. Choose the figures
+**The wrong turn:** The wrong turn is picking an obviously bad claim, because it is satisfying and the questions all come back absent. The skill is reading careful work, where the selection is invisible and the author was not trying to mislead anybody.
+
+**What it costs:** A careful source takes an hour rather than four minutes, and you may end up concluding that the claim mostly holds.
+
+**Still unknown:** Still unknown: whether the author knew about the campaign. Nothing in the report says, and the rewrite treats it as a confound rather than as a concealment.
+
 - Find a public report, article or dashboard image with numbers and a claim.
 - Write the claim exactly as stated.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A real set of figures with a claim, and the claim copied exactly.
 
-## 2. Ask the five questions
+Worksheet fields for this step:
+
+- Where the figures came from — A public report, an article, a dashboard image, a case study. Anything with numbers and a claim attached.
+- The claim, copied exactly as stated — Exactly. Paraphrasing quietly repairs the parts you are about to examine.
+
+<details>
+<summary>Help with this step</summary>
+
+- **A claim:** The sentence the numbers are being used to support. It is what you are examining, rather than the numbers themselves.
+- **Copying exactly:** Writing it word for word. Paraphrasing repairs the vagueness you are about to examine, and then the exercise finds nothing.
+
+Stuck starting? Find something with a percentage and a conclusion in the same paragraph.
+
+Is it enough? The claim is in quotation marks and is somebody else’s wording.
+
+</details>
+
+#### 2. Ask the five questions
+
+**See it first.** Made-up example. Reading a published claim about a redesign, and reading it as arithmetic.
+
+- **The claim:** “Completions rose 30 per cent after the redesign.” A clear number and a clear cause, in one sentence.
+- **What I checked first:** The arithmetic. It was right: the figures given did produce 30 per cent, and I nearly stopped there.
+- **What the who question found:** New visitors only. Returning visitors were excluded, and a redesign is exactly the kind of change that affects the two differently.
+- **What the denominator question found:** Completions per visit rose. Total visits fell over the same period, so the number of completed bookings actually went down.
+- **What the rewritten claim became:** “Completions per visit among new visitors rose over four weeks, during which total visits fell and a campaign ran, so the redesign’s contribution cannot be separated.” Longer, duller, and the only version that is true.
+
+**The wrong turn:** The wrong turn is checking whether the arithmetic is right, because that is the checkable part and it usually is. Everything that makes a number misleading happens before the arithmetic: who was counted, over what period, against what.
+
+**What it costs:** The rewritten claim is three times as long and has no headline in it, which is why the original was written the way it was.
+
+**Still unknown:** Still unknown: whether the redesign helped at all. Nothing in the published figures could separate it from the campaign, and the honest answer is that it is unknown rather than that it did not.
+
 - Ask who, when, what else changed, what the denominator is, and what decision it serves.
 - Record which answers are available and which are absent.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Five questions asked of the figures, each with the answer you could find or a note that it is absent.
 
-## 3. Examine the presentation
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Who was counted, and who was excluded?
+- What period, and is it comparable to what it is compared with? — Holidays, seasons and campaigns all make two periods incomparable.
+- What else changed at the same time? — Almost always something did. An absence of information here is itself an answer.
+- What is the denominator? — A rate can rise because the top grew or because the bottom shrank, and those mean opposite things.
+- What decision is this number being used to justify?
+
+<details>
+<summary>Help with this step</summary>
+
+- **Denominator:** What the number is out of. It is the most commonly missing piece, and a rate can rise because the bottom shrank.
+- **An absent answer:** A finding. If a report does not say who was counted, that is information about the report.
+
+Stuck starting? Ask who was counted first. It changes the meaning of everything after it.
+
+Is it enough? Every question has an answer or the word absent beside it.
+
+</details>
+
+#### 3. Examine the presentation
+
 - Check the chart against the assigned conventions.
 - Note anything that emphasises or hides part of the picture.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Anything in the presentation that emphasises or hides part of the picture.
 
-## 4. Rewrite the claim
+**Try it with help.** Six presentation choices from a made up report. For each one, decide what it does to the reader.
+
+- A bar chart whose vertical axis begins at 68 rather than 0, showing values of 71 and 74.
+  - **makes a small difference look large** — The bars appear to double while the values differ by three. It is the commonest way a chart misleads without stating anything untrue.
+  - hides a comparison — Both values are shown; it is their proportions that are distorted.
+  - reasonable as drawn — It is sometimes defensible for a line chart of a narrow range, and rarely for bars, where length is the whole message.
+- A chart showing the four weeks after a change, with nothing before it.
+  - makes a small difference look large — Nothing about the scale is at fault.
+  - **hides a comparison** — Without the weeks before, a rise cannot be told from a normal fluctuation. Selecting the window is a choice the chart does not announce.
+  - reasonable as drawn — It would be if the previous period were beside it.
+- A chart of percentages with no counts anywhere on it.
+  - makes a small difference look large — The scale may be honest.
+  - **hides a comparison** — Without the counts, a bar built from nine people looks identical to one built from nine hundred. The denominator is the missing comparison.
+  - reasonable as drawn — Percentages alone are readable and not checkable.
+- A line chart of a stable metric with the axis beginning at zero, so the line is almost flat.
+  - makes a small difference look large — It does the opposite: it makes real variation look like nothing.
+  - hides a comparison — Everything is present.
+  - **reasonable as drawn** — It is the conservative choice and it is defensible. Whether it is the most informative is a different question from whether it misleads.
+- Two series on one chart with two different vertical scales, chosen so the lines cross.
+  - **makes a small difference look large** — Two independent scales can be set to produce almost any apparent relationship, including one that does not exist.
+  - hides a comparison — Both series are visible; what is hidden is that they are not comparable.
+  - reasonable as drawn — It is occasionally necessary and it should always be pointed out in the caption.
+- A chart annotated with the date a marketing campaign began, alongside the redesign date.
+  - makes a small difference look large — Nothing about the scale is involved.
+  - hides a comparison — It does the opposite: it shows the reader the confounding rather than leaving them to find it.
+  - **reasonable as drawn** — This is what an honest chart of a confounded period looks like, and it is rare enough to be worth noticing.
+
+**Then:** Now look at your own chosen chart and write down what its presentation does.
+
+**What to watch for:** Two of the six are honest and one of those is generous to the reader. What separates them is whether the thing that would complicate the story is on the chart or left off it.
+
+Worksheet fields for this step:
+
+- Anything in the presentation that emphasises or hides part of the picture — A truncated axis, a selected period, a missing comparison, a chart type that flatters one series.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Truncated axis:** A chart whose scale does not start at zero, making a small difference look large. Sometimes legitimate and always worth noticing.
+- **Selected period:** A window chosen to include or exclude something. The choice is invisible unless you ask what a longer view would show.
+
+Stuck starting? Look at the axis first, then at what period is shown, then at what is missing.
+
+Is it enough? You named something specific about the drawing rather than about the numbers.
+
+</details>
+
+#### 4. Rewrite the claim
+
 - Rewrite it to say only what the figures support.
 - Keep it readable; the point is honesty, not hedging.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The claim rewritten to say only what the figures support, and still readable.
 
-## 5. Record
+Worksheet fields for this step:
+
+- The claim, rewritten to say only what the figures support — Readable, not hedged into meaninglessness. The aim is honesty rather than caution.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Rewriting rather than hedging:** Saying the smaller true thing, rather than the large thing with qualifications attached. Qualifications get dropped when the claim is repeated.
+
+Stuck starting? Write the version you would be willing to defend to somebody who had the underlying data.
+
+Is it enough? Your rewrite is a sentence somebody would actually read.
+
+</details>
+
+#### 5. Record
+
 - Note which question was most revealing.
 - Save the original claim, the questions and the rewrite.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Which question was most revealing and why, and the repair the Check questions asked for.
 
-## Review and handoff
-- Five questions are asked of a real published claim: [evidence reference]
-- Available and unavailable answers are distinguished: [evidence reference]
-- The presentation is checked against chart conventions: [evidence reference]
-- The claim is rewritten to match its support: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Which question was most revealing, and why
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **The most revealing question:** The one that changed your reading most. It is usually who was counted or what the denominator is, and knowing which teaches you where to start next time.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Look back at the five answers and find the one that changed the claim most.
+
+Is it enough? You named a question rather than a fact.
 
 </details>
+
+**Save and continue.** Saved for you: The claim, the five answers, the presentation notes and the rewrite save as you type, on this device first and then online. Kept outside the app: Keep a copy or a screenshot of the original in your own folder, since published pages change and the rewrite needs its original beside it. What your creator sees: Your creator reads the original claim beside your rewrite. The gap between them is the whole result of this lesson. Your next action: Open Your work and choose Ready for review. The next lesson puts a count and an observation about the same thing side by side.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1212,79 +1844,204 @@ The pairing: the synthetic funnel showed the largest drop between opening a clas
 
 Take one quantitative finding and one qualitative finding about the same behaviour, and write what each explains that the other cannot.
 
-**Where to work:** Your existing findings and a written comparison. No new data collection is required.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Your existing findings and a written comparison. No new data collection is required.
 
 - Starting material: One count and one qualitative finding about the same thing.
 - Create HaruCourse/Practice/m15-l06-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Numbers and conversations together
+#### 1. Pair the findings
 
-Input artifact: One count and one qualitative finding about the same thing.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] One quantitative and one qualitative finding about the same behaviour
-- [ ] What each explains that the other cannot
-- [ ] A change proposal that needed both
-- [ ] Any contradiction between them, kept rather than resolved
-
-## 1. Pair the findings
 - Choose one count and one observation about the same behaviour.
 - State what each says on its own.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One count and one observation about the same behaviour, each stated on its own terms.
 
-## 2. Write the gaps
+Worksheet fields for this step:
+
+- The count, and what it says on its own — From your funnel, your provider’s records, or anything you can count. Say if it is synthetic.
+- The observation, and what it says on its own — From your own sessions. One person doing one thing, described as what they did rather than what it means.
+- How you know they are about the same behaviour
+
+<details>
+<summary>Help with this step</summary>
+
+- **Quantitative:** Counting. It shows scale and location: how many, and where.
+- **Qualitative:** Watching and asking. It shows mechanism: what happened and why, for the people you watched.
+
+Stuck starting? Start from whichever you already have and look for its pair.
+
+Is it enough? Both are about the same behaviour rather than about the same screen.
+
+</details>
+
+#### 2. Write the gaps
+
+**See it first.** Made-up example. Pairing a count and an observation at a tool library, and dismissing the one with fewer people in it.
+
+- **What I had:** A synthetic funnel showing the largest drop between opening a tool and starting a booking. And one session where somebody checked the price twice against a screenshot from a friend.
+- **What I did with the observation:** Set it aside. One person, one session, and the funnel was about everybody. The count felt like the serious evidence.
+- **What the count alone produced:** A plan to redesign the booking button, because that is what sits at the step where people stop. Two weeks of work aimed at the nearest visible thing.
+- **What the observation supplied:** A mechanism: the price shown on the listing did not match the price at the next step, so she went back to check. The button was never the problem.
+- **What the two together produced:** Show the same price in both places, earlier. The count said it was worth doing, the observation said what to do, and neither would have produced it alone.
+
+**The wrong turn:** The wrong turn is ranking the evidence by how many people are in it, because that is the obvious comparison and it is the wrong axis. A count with no mechanism produces a redesign of whatever is nearest the drop.
+
+**What it costs:** Acting on one observation means acting on a mechanism you have seen once, and it may be rare. The count is what says the area is worth the work.
+
+**Still unknown:** Still unknown: how many people meet the price mismatch. One person did; the funnel cannot see the reason; and the change is cheap enough that the pair is enough to justify it.
+
 - Write what the count cannot tell you.
 - Write what the observation cannot tell you.
 - Check the two gaps are genuinely different.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What each finding cannot tell you, and how the two gaps differ.
 
-## 3. Propose a change from both
+Worksheet fields for this step:
+
+- What the count cannot tell you
+- What the observation cannot tell you
+- How the two gaps differ — If they are the same gap, the two findings are not complementary and one of them is the wrong pair.
+
+<details>
+<summary>Help with this step</summary>
+
+- **A count without a mechanism:** A problem you cannot fix, because nothing says what causes it. It produces redesigns of whatever is nearest.
+- **A mechanism without a count:** A problem you cannot prioritise, because nothing says how often. It produces work on whatever was most vivid.
+
+Stuck starting? Write what each one cannot tell you before writing anything about what they mean together.
+
+Is it enough? The two gaps are genuinely different: one about why, one about how many.
+
+</details>
+
+#### 3. Propose a change from both
+
 - Write a change that neither finding alone would have produced.
 - State which part of the evidence supports which part of the change.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A change neither finding alone would have produced, with which evidence supports which part.
 
-## 4. Look for contradiction
+**Try it with help.** Six questions about a made up tool library. For each one, decide which kind of evidence can answer it.
+
+- How many people were charged twice last month?
+  - **counting** — A complete count from the payment records. Nothing about watching would produce the number.
+  - watching or asking — You would have to watch an implausible number of people to establish a rate.
+  - neither on its own — The record has it.
+- Why did those people pay a second time?
+  - counting — No count contains a reason. The record shows two payments and nothing about what the person believed.
+  - **watching or asking** — Three conversations would produce a mechanism, which is the thing that tells you what to change.
+  - neither on its own — Asking works here, as long as nobody reports three people as a rate.
+- At which step do most people stop?
+  - **counting** — A funnel answers exactly this and nothing else.
+  - watching or asking — Watching five people tells you where five people stopped.
+  - neither on its own — It is the clearest case for counting there is.
+- Is this worth two weeks of work?
+  - counting — A count says how often. It says nothing about how bad it is when it happens.
+  - watching or asking — An observation says how bad it is for one person and nothing about how many.
+  - **neither on its own** — Prioritising needs both: how often, from counting, and how much harm, from watching. This is the question the pair exists for.
+- Does the phrase place held mean anything to people?
+  - counting — No behaviour distinguishes somebody who understood it from somebody who ignored it.
+  - **watching or asking** — Asking three people to say what it means in their own words answers it in ten minutes.
+  - neither on its own — Asking is sufficient, and the answer applies to the people you asked.
+- Is the problem worse on phones than on laptops?
+  - **counting** — A split by device answers it, if the data has one. Without the split it is unanswerable by any method.
+  - watching or asking — You could watch people on both, and you would need a great many to compare rates.
+  - neither on its own — It is a comparison of frequencies, which is what counting is for.
+
+**Then:** Now write your own change, and say which half of your evidence supports which half of it.
+
+**What to watch for:** The one worth remembering is whether something is worth two weeks. Frequency comes from counting and severity comes from watching, and prioritising needs both, which is why single-method decisions go wrong in two opposite ways.
+
+Worksheet fields for this step:
+
+- A change neither finding alone would have produced
+- Which part of the evidence supports which part of the change
+
+<details>
+<summary>Help with this step</summary>
+
+- **A change that needed both:** One where the count says the area matters and the observation says what to do. Either alone produces a different and usually worse change.
+
+Stuck starting? Write the change first, then go back and label which evidence supports which part.
+
+Is it enough? Removing either finding would change the proposal.
+
+</details>
+
+#### 4. Look for contradiction
+
+**See it first.** Made-up example. Finding a disagreement between a tool-library count and an observation, and explaining it away.
+
+- **The disagreement:** The records show eleven duplicate payments in March. In three sessions, all three people said they would have paid again if they were not being watched, and none of them did.
+- **What I wrote at first:** That the sessions were unrepresentative, and eleven is the real number. It resolved the disagreement and let me move on.
+- **What that discarded:** The most interesting thing in the study. Three of three saying they would have paid again, against eleven recorded, suggests the records are not counting everybody it happens to.
+- **What would explain it:** A second payment made on a different card, or by somebody ringing the library, would not appear as a duplicate in the provider’s records at all.
+- **What I did:** Kept both, wrote the possible explanation, and added one question to the next three sessions: what did you actually do next? The count may be an undercount, which is a finding neither method produced alone.
+
+**The wrong turn:** The wrong turn is resolving a contradiction by declaring one side unrepresentative, because the small sample is always the easier one to dismiss. A disagreement between methods is usually about what each one can see.
+
+**What it costs:** Keeping the contradiction means the report has no single number in it and ends with a question rather than a figure.
+
+**Still unknown:** Still unknown: whether the records undercount, and by how much. Three people cannot establish it, and the next three sessions have a question that might.
+
 - Check whether the two disagree in any respect.
 - If they do, keep both and write what would explain the disagreement.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Any disagreement between the two findings, kept, with what would explain it.
 
-## 5. Record
+Worksheet fields for this step:
+
+- Any respect in which the two disagree — Keep it. A contradiction is a finding, not an error to be resolved by picking the number.
+- What would explain the disagreement
+
+<details>
+<summary>Help with this step</summary>
+
+- **Contradiction:** The two findings disagreeing. It is a finding in itself, and resolving it by picking the number discards the more interesting half.
+
+Stuck starting? Look for the place where the observation suggests something the count does not show.
+
+Is it enough? Any contradiction is written down rather than resolved by preference.
+
+</details>
+
+#### 5. Record
+
 - Write which finding you would have trusted alone, and why that would have been wrong.
 - Save the pairing and the proposal.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One line each on what the count added and what the observation added, and the repair the Check questions asked for.
 
-## Review and handoff
-- Both findings concern the same behaviour: [evidence reference]
-- The gaps of each are stated and genuinely different: [evidence reference]
-- A change proposal draws on both: [evidence reference]
-- Contradictions are kept and explained rather than resolved away: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- In one line each: what the count added and what the observation added
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **What each added:** The specific contribution of each method to this decision. It is the sentence that makes the pairing repeatable.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Write both lines in the form: without this, I would have ….
+
+Is it enough? Neither line could be written about the other method.
 
 </details>
+
+**Save and continue.** Saved for you: Your paired findings, the gaps, the proposal and any contradiction save as you type, on this device first and then online. Kept outside the app: Session notes stay in your own private folder. Nothing identifying anybody belongs in this worksheet. What your creator sees: Your creator reads the contradiction and the two gaps. A pairing with no contradiction and identical gaps usually means the two findings were the same finding. Your next action: Open Your work and choose Ready for review. The next lesson decides what should be recorded about people at all.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1447,78 +2204,203 @@ The plan listed nine events, each tied to a node in the metric tree, with a purp
 
 Write an instrumentation plan naming every event you would record, why, how long it is kept, and at least two things you will deliberately not collect.
 
-**Where to work:** A written plan. Whether it is ever implemented is a separate question; the reasoning is the deliverable.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A written plan. Whether it is ever implemented is a separate question; the reasoning is the deliverable.
 
 - Starting material: Your metric tree and privacy plan.
 - Create HaruCourse/Practice/m15-l07-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# What to record, and what to refuse to record
+#### 1. Derive events from questions
 
-Input artifact: Your metric tree and privacy plan.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] An event list tied to metric-tree questions
-- [ ] A purpose, owner and retention period per event
-- [ ] At least two documented refusals with reasons
-- [ ] One event reduced rather than removed
-
-## 1. Derive events from questions
 - For each observable node in your tree, name the event that would indicate it.
 - Discard any event with no question behind it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** An event for each observable node, derived from the question it answers, with anything unmotivated discarded.
 
-## 2. Add purpose, owner and retention
+Worksheet fields for this step:
+
+- For each observable node in your tree: the event that would indicate it — Start from the question. An event with no question behind it does not go on the list.
+- Events you discarded because nothing was asking for them
+
+<details>
+<summary>Help with this step</summary>
+
+- **Instrumentation plan:** The written list of what gets recorded about people, why, and for how long. Writing it is often the only moment anybody asks whether it should be recorded at all.
+- **Event:** One thing being recorded when it happens. It should exist because a named question needs it, not because it might be useful.
+
+Stuck starting? Take the observable nodes from your tree and write the event each one needs.
+
+Is it enough? Every event on the list can name the question it answers.
+
+</details>
+
+#### 2. Add purpose, owner and retention
+
+**See it first.** Made-up example. Planning what to record for a tool library, and planning to decide later.
+
+- **What I proposed:** Record everything available now and work out what we need once we have some data. It is what everybody suggests and it sounds cautious.
+- **What that produced in three months:** Forty-one events, eleven of which nobody could explain, including the full text of every search and the exact street-level location of every session.
+- **Why nobody removed them:** Removing data feels risky, because somebody might be using it. With no purpose written against each event, nobody could tell whether anybody was.
+- **What it cost:** Three months of holding search text and locations that answered no question, that had to be protected, and that could not be confidently deleted.
+- **What deciding first produced instead:** Nine events, each tied to a node in the tree, each with a purpose, an owner and ninety days. Anything not on the list is not collected, which is a much easier rule to hold.
+
+**The wrong turn:** The wrong turn is collecting first and deciding later, because it is the cautious-sounding option and later never arrives. In the meantime you hold data you cannot justify, cannot confidently delete and must protect.
+
+**What it costs:** Deciding first means that in six months a question will arrive that the data cannot answer, and you will have to wait ninety days to answer it.
+
+**Still unknown:** Still unknown: which question that will be. The cost of waiting for it is smaller and more visible than the cost of holding everything.
+
 - Write why each event is collected and who is responsible.
 - Set a retention period and a deletion mechanism.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A purpose, an owner and a retention period for every event, with a deletion mechanism.
 
-## 3. Assess risk
+Worksheet fields for this step:
+
+- For each event: why it is collected and who is responsible for it
+- How long each is kept, and how it is deleted — A retention period with no deletion mechanism is a wish. Say what actually removes it.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Retention:** How long it is kept before deletion. Data with no retention period is kept for ever by default, which is a decision made by nobody.
+- **Owner:** The person responsible for it. Without a name, nobody reviews it, nobody deletes it, and nobody can answer a question about it.
+
+Stuck starting? Write the purpose and the owner before the retention period; the period follows from what it is for.
+
+Is it enough? Every event has a name against it and a period with a mechanism.
+
+</details>
+
+#### 3. Assess risk
+
 - Mark any free text, location or cross-session identifier.
 - For each, ask whether the answer justifies holding it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Free text, location and cross-session identifiers marked, with a judgement on whether the answer justifies holding each.
 
-## 4. Refuse and reduce
+**Try it with help.** Six proposed events for a made up tool library. For each one, decide what the plan should do with it.
+
+- That a booking was completed, with the date.
+  - **collect it** — It answers a node in the tree directly, contains nothing about anybody, and is the smallest form of the thing.
+  - reduce it — There is very little left to remove.
+  - refuse it — Without it, nothing in the tree can be observed at all.
+- The full text of everything typed into the search box.
+  - collect it — People type names, addresses and all sorts of things into search boxes, and you cannot know in advance what arrives.
+  - reduce it — A reduced version exists — whether a search returned results — and it is a different event answering a different question.
+  - **refuse it** — The question it would answer is what people look for, which is interesting and does not justify holding whatever anybody types.
+- Which specific tool was booked, on every booking.
+  - collect it — Nothing in the tree asks which tool, so it is being collected because it is available.
+  - **reduce it** — Record that a booking happened. The identity of the tool answers no question you have written down, and can be added later if one appears.
+  - refuse it — It is not risky in itself, so refusing it outright is stronger than needed.
+- Precise location at the moment of booking.
+  - collect it — Street-level location is among the most sensitive things you can hold, and nothing in the tree needs it.
+  - reduce it — A coarse area answers the only question that mattered, which makes the reduced version a different and acceptable event.
+  - **refuse it** — Refusing the precise version and recording the coarse one, if anything, is the right shape. The refusal is worth documenting either way.
+- Whether a search returned any results.
+  - **collect it** — It answers a real question — do people find what they came for — and contains nothing about what they typed.
+  - reduce it — It is already the reduced form of the search-text event.
+  - refuse it — It carries no personal content at all.
+- An identifier linking every session by the same person over two years.
+  - collect it — Two years of one person’s history is a different kind of data from a set of events, with different obligations.
+  - **reduce it** — A session identifier that expires, or a ninety-day window, answers the returning-visitor question in the tree without building a two-year history.
+  - refuse it — Refusing entirely loses the returning-visitor distinction, which an earlier lesson showed the funnel genuinely needs.
+
+**Then:** Now mark your own events the same way, and write the reason beside every refusal and reduction.
+
+**What to watch for:** Reducing is the answer more often than refusing. Most risky events have a smaller version that answers the actual question, and finding it is usually five minutes of thinking about what the question was.
+
+Worksheet fields for this step:
+
+- Any free text, location or cross-session identifier, marked
+- For each: whether the answer justifies holding it — Ask what question it answers and what you would do differently with the answer. If neither is clear, it does not justify it.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Free text:** Anything a person types. It can contain names, addresses, health details and anything else, which is why it is the highest-risk thing to record.
+- **Cross-session identifier:** Something linking a person’s visits together. It turns a set of anonymous events into a history of one individual, which is a different decision with different obligations.
+
+Stuck starting? Go through the list and mark anything a person typed, anywhere they were, or anything linking visits.
+
+Is it enough? Every marked item has a judgement rather than a note to think about it later.
+
+</details>
+
+#### 4. Refuse and reduce
+
+**See it first.** Made-up example. Refusing to record something at a tool library, and refusing it on instinct.
+
+- **What I wrote:** No location data. It felt intrusive and I did not want to hold it.
+- **What happened when it was proposed again:** Somebody asked which collection branch people were nearest, which is a reasonable planning question. My refusal said nothing about questions, so it had nothing to say back.
+- **Why the instinct version failed:** A refusal with no reasoning reads as squeamishness. Six weeks later somebody with a good question wins the argument, and the precise version is what gets built.
+- **What I wrote instead:** No precise location. The question is which branch people are nearest, and a coarse area answers it. Precise location answers nothing extra and is among the most sensitive things we could hold.
+- **What that version could do:** It survived the second proposal, because it accepted the question and refused only the part that answered nothing.
+
+**The wrong turn:** The wrong turn is refusing on instinct, because the instinct is usually right and the argument is not written down. A refusal with no question in it loses to the first colleague who has one.
+
+**What it costs:** Naming the question means conceding that the data would be useful for something, which feels like weakening your own position.
+
+**Still unknown:** Still unknown: whether coarse areas are coarse enough. It depends on how thinly people are spread, and the plan says the judgement rather than pretending it is settled.
+
 - Record at least two things you will not collect, with reasons.
 - Reduce one event to the minimum that answers its question.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** At least two documented refusals with reasons, and one event reduced to the minimum that answers its question.
 
-## 5. Check jurisdiction
+Worksheet fields for this step:
+
+- At least two things you will deliberately not collect, with reasons
+- One event reduced to the minimum that answers its question
+
+<details>
+<summary>Help with this step</summary>
+
+- **Documented refusal:** Writing down what you decided not to collect and why. It stops the same thing being proposed as a new idea every quarter.
+- **Reduction:** Keeping the part that answers the question and dropping the rest. It is usually available and usually overlooked.
+
+Stuck starting? For each refusal, write what question it would have answered, so the refusal is arguable rather than squeamish.
+
+Is it enough? Both refusals name a question and say why the answer did not justify the collection.
+
+</details>
+
+#### 5. Check jurisdiction
+
 - Note that legal requirements differ by country and that you have not verified Indian requirements here.
 - Save the plan with the refusals.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A written note that legal requirements differ by country and that you have not verified them here.
 
-## Review and handoff
-- Every event traces to a question in the metric tree: [evidence reference]
-- Purpose, owner and retention are recorded per event: [evidence reference]
-- At least two refusals are documented with reasons: [evidence reference]
-- One event is reduced to the minimum that answers its question: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The note saying legal requirements differ by country and that you have not verified them — This lesson teaches the reasoning. It is not legal advice and the plan should say so.
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Jurisdiction:** Where the rules apply. Requirements differ by country, and this lesson teaches reasoning rather than law.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Write one sentence saying what this plan is and what it is not.
+
+Is it enough? Nobody could mistake the plan for a legal review.
 
 </details>
+
+**Save and continue.** Saved for you: Your event list, purposes, retention periods, refusals and reductions save as you type, on this device first and then online. Kept outside the app: Nothing about real people belongs in this worksheet. The plan describes what would be collected, not any collected data. What your creator sees: Your creator reads the refusals and the reduction. A plan with no refusals in it usually means nothing was examined. Your next action: Open Your work and choose Ready for review. The next lesson looks at a number moving over time and asks what else was happening.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1681,79 +2563,204 @@ The synthetic funnel was extended over eight weeks. Completions rose in week fiv
 
 Take one metric over time, identify what could make it move without any design change, and rework a comparison into a cohort that controls for one of them.
 
-**Where to work:** A spreadsheet with your synthetic counts split by arrival week. No analytics tool is required.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A spreadsheet with your synthetic counts split by arrival week. No analytics tool is required.
 
 - Starting material: Your funnel with its synthetic counts.
 - Create HaruCourse/Practice/m15-l08-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Time, cohorts and the number that moved by itself
+#### 1. Extend the metric over time
 
-Input artifact: Your funnel with its synthetic counts.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Plotting a tool-library metric over time, and plotting two points.
 
-## Output checklist
-- [ ] A metric over time with non-design explanations listed
-- [ ] A cohort comparison replacing a before-and-after one
-- [ ] A statement of what the cohort does and does not control for
-- [ ] One explanation you cannot rule out, named
+- **What I drew:** The month before and the month after. Two bars, the second taller, and the change marked between them.
+- **What it showed:** A clear rise. It is the chart that appears in most before-and-after reports and it is almost impossible to read as anything else.
+- **What eight periods showed instead:** The metric moved by a similar amount in four of the eight weeks, in both directions, with nothing shipped in any of them.
+- **What that did to the two-bar chart:** It became one of several similar movements rather than an event. The rise was still there; what had gone was the reason to think it meant anything.
+- **What I learned about the shape:** Two points always look like a change, because two points always differ. Eight points show what normal variation is, which is the thing you need before you can call anything unusual.
 
-## 1. Extend the metric over time
+**The wrong turn:** The wrong turn is plotting the before and the after, because that is the comparison you care about. Two points cannot show variation, so every difference between them looks like an event.
+
+**What it costs:** Eight periods of synthetic data takes longer to invent and produces a chart with no clear story in it, which is an accurate picture of what a small product usually has.
+
+**Still unknown:** Still unknown: how much variation is normal in the real metric. These numbers are invented, and the habit of looking at the variation before the change is what the exercise is for.
+
 - Plot one metric across at least eight periods, labelled synthetic.
 - Mark when your design change would have shipped.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One metric plotted across at least eight periods, labelled synthetic, with the ship point marked.
 
-## 2. List the other causes
+Worksheet fields for this step:
+
+- The metric, across at least eight periods, labelled synthetic
+- When your design change would have shipped
+
+<details>
+<summary>Help with this step</summary>
+
+- **Over time:** Enough periods to see what normal variation looks like. Two points look like a change; eight show whether it was one.
+- **Marking the ship point:** Putting your change on the chart. It is honest, and it also shows how much movement there was before it.
+
+Stuck starting? Plot eight periods before marking anything, so you see the variation first.
+
+Is it enough? You can see what an ordinary week-to-week wobble looks like in your own numbers.
+
+</details>
+
+#### 2. List the other causes
+
+**See it first.** Made-up example. Reading a rise in completions at a tool library, and attributing it.
+
+- **What I saw:** Completions rose sharply in week five, which is the week the held-place message shipped. The chart looked like a textbook illustration of a change working.
+- **What I wrote:** The message reduced duplicate payments and raised completions. It was the first genuinely encouraging thing in the project.
+- **What I had not asked:** What else happened in week five. It took one conversation to find out: a local festival had ended, and the provider had run a promotion in the same week.
+- **What the earlier weeks showed:** Week two had a rise almost as large, with nothing shipped at all. The ordinary wobble in this metric was bigger than I had assumed.
+- **What I wrote instead:** Completions rose in week five, when the message shipped, a festival ended and a promotion ran. The three cannot be separated, and a similar rise occurred in week two with no change at all.
+
+**The wrong turn:** The wrong turn is reading a rise after a change as a result of the change, because the timing is the most visible fact available. Something else always happened in the same period, and the ordinary variation is usually larger than anybody expects.
+
+**What it costs:** Naming the alternatives means the most encouraging chart in the project stops being evidence, and somebody will feel you have talked yourself out of a success.
+
+**Still unknown:** Still unknown: whether the message did anything at all. The honest position is that nothing here can tell, and the numbers are synthetic in any case.
+
 - List everything else that could move the number in that period.
 - Include seasonality, campaigns, holidays and external events.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Everything else that could move the number listed, with the ones that actually happened in the same period marked.
 
-## 3. Build a cohort
+Worksheet fields for this step:
+
+- Everything else that could move this number in that period — Seasons, holidays, festivals, campaigns, weather, a news story, a price change, a competitor.
+- Which of those actually happened in the same period
+
+<details>
+<summary>Help with this step</summary>
+
+- **Seasonality:** Regular movement caused by the calendar: term times, festivals, weather, paydays. It moves numbers more than most design changes do.
+- **Concurrent change:** Anything else that happened in the same period. There is always at least one, and naming it is the difference between a finding and a coincidence.
+
+Stuck starting? Ask somebody, or check a calendar, before writing anything about your own change.
+
+Is it enough? Your list contains at least one thing that really did happen in the same period.
+
+</details>
+
+#### 3. Build a cohort
+
 - Split people by the period they arrived.
 - Follow each group for the same length of time.
 - Compare like with like rather than period totals.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A cohort comparison replacing a before-and-after one, with the two groups and the follow-up length named.
 
-## 4. State the controls
+**Try it with help.** Six explanations for a rise in a made up tool-library metric during the week a change shipped. For each one, decide what a cohort comparison does to it.
+
+- More of the people that week were returning members, who complete more often than first-time visitors.
+  - **the cohort removes it** — Splitting by arrival period and following each group for the same length of time is exactly what this is for.
+  - the cohort does not touch it — It is the main thing a cohort does control for.
+  - it was never a real alternative — Mix shifts are one of the commonest causes of a period total moving.
+- A local festival ended that week, so more people were at home and doing jobs.
+  - the cohort removes it — Both cohorts still live in their own calendar weeks, and the festival affects one of them.
+  - **the cohort does not touch it** — A cohort controls for who the people are, not for what was happening in the world that week. This is the limit worth stating.
+  - it was never a real alternative — It is entirely plausible and it is why the write-up has to name it.
+- The provider ran a promotion in the same week.
+  - the cohort removes it — A promotion affects the calendar period, so it affects one cohort and not the other.
+  - **the cohort does not touch it** — Concurrent changes are the thing no amount of cohorting fixes, which is why the honest conclusion names them.
+  - it was never a real alternative — It is the strongest competing explanation on the list.
+- People who arrived earlier have had longer to complete a booking, so their totals are higher.
+  - **the cohort removes it** — Following each group for the same fourteen days is what removes it. Without that, earlier groups always look better.
+  - the cohort does not touch it — It is the second thing a cohort is for, after the mix.
+  - it was never a real alternative — It is a real and easy mistake to make in any before-and-after comparison.
+- It is ordinary variation; week two rose almost as much with nothing shipped.
+  - the cohort removes it — A cohort does not make noise smaller.
+  - the cohort does not touch it — True, and the more useful point is different.
+  - **it was never a real alternative** — It is not an alternative explanation at all; it is the observation that there may be nothing to explain. Plotting eight periods is what makes it visible.
+- It rained all week, so fewer people came in person and more booked online.
+  - the cohort removes it — Weather belongs to the calendar week rather than to the group of people.
+  - **the cohort does not touch it** — Anything about the world in that period survives cohorting, which is most of the interesting confounds.
+  - it was never a real alternative — It is a plausible cause and worth listing.
+
+**Then:** Now build your own cohort, and write the two lists: what it controls for and what survives it.
+
+**What to watch for:** A cohort controls for who the people are and how long they have had. It does nothing about what was happening in the world that week, which is where the strongest competing explanations usually live.
+
+Worksheet fields for this step:
+
+- How you split people by the period they arrived — A cohort is a group defined by when they first arrived, followed for the same length of time each.
+- The comparison: which two cohorts, followed for how long
+
+<details>
+<summary>Help with this step</summary>
+
+- **Cohort:** A group defined by when they arrived, followed for the same length of time. It compares like with like instead of comparing two calendar periods.
+- **Mix change:** The proportion of new to returning people shifting between periods. It moves period totals on its own, and a cohort removes it.
+
+Stuck starting? Split your synthetic numbers by the week people first arrived, and follow each group the same number of days.
+
+Is it enough? Both cohorts have been followed for the same length of time.
+
+</details>
+
+#### 4. State the controls
+
 - Write what the cohort controls for.
 - Write what it does not, especially concurrent changes.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What the cohort controls for and what it does not, written as two lists.
 
-## 5. Record
+Worksheet fields for this step:
+
+- What the cohort controls for — Usually the changing mix of new and returning people, and the different lengths of time each group has had.
+- What it does not control for
+
+<details>
+<summary>Help with this step</summary>
+
+- **Controlling for something:** Arranging the comparison so that one cause cannot explain the difference. It is never all of them.
+
+Stuck starting? Write the does-not list first; it is longer and more important.
+
+Is it enough? The second list includes everything about the world in that period.
+
+</details>
+
+#### 5. Record
+
 - Name the explanation you cannot rule out.
 - Save the chart, the cohort and the limitations.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One explanation you cannot rule out named, and the synthetic label placed where it travels.
 
-## Review and handoff
-- Non-design explanations are listed for the movement: [evidence reference]
-- A cohort comparison replaces the period comparison: [evidence reference]
-- What the cohort controls for is stated: [evidence reference]
-- An unrulable-out explanation is named: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The one explanation you cannot rule out, named
+- Where the synthetic label appears
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **What you cannot rule out:** The competing explanation that survives your best comparison. Naming it is usually the most useful sentence in the analysis.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Take the strongest thing from your does-not-control list and name it plainly.
+
+Is it enough? The sentence would stop somebody quoting your cohort as proof.
 
 </details>
+
+**Save and continue.** Saved for you: Your plotted metric, the other causes, the cohort and the controls save as you type, on this device first and then online. Kept outside the app: The spreadsheet with your cohort split stays in your own folder, with the synthetic label in the chart title. What your creator sees: Your creator reads the does-not-control list and the explanation you kept. A cohort presented as a clean result is the thing this lesson exists to prevent. Your next action: Open Your work and choose Ready for review. The next lesson presents all of this to somebody without misleading them.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1916,79 +2923,202 @@ The analysis was presented in three slides. First: the decision — fix the held
 
 Present one analysis to a stakeholder in a page or three slides, with the uncertainty visible, and record which part they remembered afterwards.
 
-**Where to work:** A page of text or three slides in any free editor, with a hand-drawn or spreadsheet chart. Nothing here requires a presentation platform.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A page of text or three slides in any free editor, with a hand-drawn or spreadsheet chart. Nothing here requires a presentation platform.
 
 - Starting material: Your analysis and its limitations.
 - Create HaruCourse/Practice/m15-l09-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Presenting numbers without misleading anyone
+#### 1. Write the decision first
 
-Input artifact: Your analysis and its limitations.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A presentation of at most three slides or one page
-- [ ] Uncertainty shown in the chart itself
-- [ ] A stated condition that would change the conclusion
-- [ ] A note of what the audience remembered
-
-## 1. Write the decision first
 - State the decision the analysis supports in one sentence.
 - Put it at the top, before any method.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The decision the analysis supports, in one sentence, placed before any method.
 
-## 2. Build the chart honestly
+Worksheet fields for this step:
+
+- The decision this analysis supports, in one sentence — At the top, before any method. Somebody reading only this line should know what you are asking for.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Leading with the decision:** Putting what you are asking for first. Method first makes the audience wait, and they decide what they think during the waiting.
+
+Stuck starting? Write the sentence you would say if you had ten seconds.
+
+Is it enough? Somebody reading only that line would know what you want them to do.
+
+</details>
+
+#### 2. Build the chart honestly
+
+**See it first.** Made-up example. Presenting a tool-library analysis, and putting the caveats in the talking.
+
+- **What I showed:** One clean chart with a clear rise, and I explained carefully that the numbers were synthetic, the sample was three people, and a promotion had run in the same week.
+- **How it went:** Well. Everybody understood the caveats, asked good questions, and nobody was misled in the room.
+- **What happened three weeks later:** The chart appeared in somebody else’s summary, with a sentence underneath saying completions rose after the redesign. Not dishonestly: they had the picture and not the conversation.
+- **What the chart had said about itself:** Nothing. A clean axis, two bars and a title. Every limitation lived in a room that no longer existed.
+- **What I do now:** Synthetic in the title, the sample beside the bar, the period on the axis, and the promotion marked on the chart with a line. It is uglier and it survives being screenshotted.
+
+**The wrong turn:** The wrong turn is explaining the caveats aloud, because the explanation lands and the room understands. The caveats stay in the room; the chart goes everywhere.
+
+**What it costs:** A chart carrying its own limitations is busier and less persuasive, which is the correct level of persuasive for what it shows.
+
+**Still unknown:** Still unknown: whether anybody reads the annotations. They at least give somebody quoting it the chance to notice, which a clean chart does not.
+
 - Follow the assigned chart conventions.
 - Put the sample, period and any synthetic label on the chart.
 - Show the interval where a rate appears.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A chart following the assigned conventions, with the sample, period, synthetic label and any interval on the chart itself.
 
-## 3. Write the change condition
+Worksheet fields for this step:
+
+- What the chart shows, and how it follows the assigned conventions
+- What appears on the chart itself: sample, period, synthetic label, interval — On the chart, not in the notes. The chart is what travels.
+- Check: any number shown without its denominator and period
+
+<details>
+<summary>Help with this step</summary>
+
+- **On the chart:** Inside the picture, not in the caption or the notes. Charts get screenshotted and travel without anything around them.
+- **Interval on the chart:** The uncertainty drawn, usually as a range. It is the difference between a number and a measurement.
+
+Stuck starting? Draw the chart, then add everything somebody would need if they saw only the picture.
+
+Is it enough? A screenshot of the chart alone would not mislead anybody.
+
+</details>
+
+#### 3. Write the change condition
+
+**See it first.** Made-up example. Writing a change condition for a tool-library analysis, and writing one that could not happen.
+
+- **What I wrote:** “If the evidence changes, I will revisit this.” It sounded open-minded and it committed me to nothing at all.
+- **Why it is empty:** No particular evidence would trigger it, and no date says when anybody looks. It is a sentence that survives every outcome.
+- **What I nearly wrote instead:** “If duplicate payments do not fall substantially.” Better, and substantially is doing the same work as the first version: nobody can say afterwards whether it happened.
+- **What it became:** “If duplicate payments in the provider’s records are not lower in the month after shipping than in the month before, the cause is elsewhere and the work moves to the payment confirmation.”
+- **What that version does:** It names a source, a period and a next step. Somebody can hold me to it, which is the whole point of writing one.
+
+**The wrong turn:** The wrong turn is writing a condition that cannot fail, because it keeps your options open and sounds properly scientific. A condition nothing could satisfy is not a commitment.
+
+**What it costs:** A real condition means you may have to say in four weeks that your work did not help, in front of the people who approved it.
+
+**Still unknown:** Still unknown: whether a month is long enough, and whether the records capture every duplicate. The earlier contradiction suggested they may not, and the condition is stated in terms of what the records show rather than what happens.
+
 - State what result would change your conclusion.
 - Say when you would look.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A stated result that would change your conclusion, and when you would look.
 
-## 4. Present it
+Worksheet fields for this step:
+
+- The result that would change your conclusion, and when you would look
+
+<details>
+<summary>Help with this step</summary>
+
+- **Change condition:** What would make you say you were wrong. Including it is what separates an analysis from an argument.
+
+Stuck starting? Finish this sentence: “if, in four weeks, … then the cause is elsewhere”.
+
+Is it enough? The condition could actually occur and you have said when you would look.
+
+</details>
+
+#### 4. Present it
+
 - Present to someone who was not involved.
 - Do not narrate the caveats; let the material carry them.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The analysis presented to somebody, or rehearsed and labelled, with what they asked.
 
-## 5. Check what survived
+**Try it with help.** Six things that might appear on a slide about a made up tool-library analysis. For each one, decide whether it should be there.
+
+- Fix the held-place message before touching payment.
+  - **belongs on the slide** — The decision goes first and largest. Somebody who reads only one line should read this one.
+  - belongs in the notes — Notes are for things that support the decision, not for the decision.
+  - should not be shown at all — It is the point of the presentation.
+- Two of the three people we watched could not tell their place was held.
+  - **belongs on the slide** — The count and the sample travel together, which is what stops it becoming 67 per cent in somebody else’s summary.
+  - belongs in the notes — In the notes it separates from the claim immediately.
+  - should not be shown at all — It is the qualitative half of the evidence.
+- The word synthetic in the chart title.
+  - **belongs on the slide** — In the title, so it survives the screenshot. This is the single most important piece of labelling in the module.
+  - belongs in the notes — The notes do not travel with the image.
+  - should not be shown at all — Hiding it would be the failure the whole module is about.
+- The formula used to compute the interval, with its inputs.
+  - belongs on the slide — It is checkable detail rather than something the audience needs while deciding.
+  - **belongs in the notes** — Available to anybody who wants to verify, and out of the way of the decision.
+  - should not be shown at all — It has to be available somewhere, or the interval cannot be checked.
+- A headline reading 67 per cent of participants.
+  - belongs on the slide — Sixty-seven per cent of three people is two people, and the percentage is the part that gets quoted.
+  - belongs in the notes — Anywhere it appears it can be lifted out.
+  - **should not be shown at all** — The earlier lesson settled this: at this sample the rate is arithmetic dressed as a measurement.
+- A marked line on the chart showing when the provider’s promotion ran.
+  - **belongs on the slide** — It is the strongest competing explanation, and on the chart it travels with the picture that would otherwise imply your change caused the rise.
+  - belongs in the notes — A confound in the notes is a confound nobody sees.
+  - should not be shown at all — Leaving it off is what makes the chart misleading.
+
+**Then:** Now check your own slides: everything that would change how somebody reads the chart should be on it.
+
+**What to watch for:** The test is what happens to the picture alone. Anything that would change how somebody reads it belongs inside it; anything that only lets them verify it can live in the notes.
+
+Worksheet fields for this step:
+
+- Who you presented it to, or how you rehearsed it — No stakeholder available: present it to anybody who will listen for five minutes, and label it a rehearsal.
+- What they asked
+
+<details>
+<summary>Help with this step</summary>
+
+- **Rehearsal:** Presenting to somebody who is not going to decide anything. It tests the presentation and it is labelled as a rehearsal.
+- **Their questions:** The best evidence about what the presentation left unclear. Write them down rather than answering and forgetting.
+
+Stuck starting? Present it without apologising for the sample size; the slide already says it.
+
+Is it enough? Their questions are written down in their own words.
+
+</details>
+
+#### 5. Check what survived
+
 - Ask afterwards what they took away.
 - Record any misreading and fix the material rather than explaining again.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What the audience remembered afterwards, and anything remembered more confidently than the evidence supports.
 
-## Review and handoff
-- The decision comes first and fits a sentence: [evidence reference]
-- Sample, period and uncertainty are on the chart: [evidence reference]
-- A condition that would change the conclusion is stated: [evidence reference]
-- What the audience remembered was checked and acted on: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What they remembered afterwards, in their words — Ask a day later if you can. What is remembered is what will be repeated.
+- Anything remembered more confidently than your evidence supports
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **What is remembered:** What will be repeated. It is the only measure of whether the presentation worked, and it is usually two things.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Ask a day later what they took from it, and write their words rather than a summary.
+
+Is it enough? You recorded what they said, including the parts that overstated your evidence.
 
 </details>
+
+**Save and continue.** Saved for you: Your decision sentence, the chart notes, the change condition and what was remembered save as you type, on this device first and then online. Kept outside the app: The slides or the page stay in your own folder. If the chart is going anywhere else, check once more that it says synthetic in its own title. What your creator sees: Your creator reads what the audience remembered. That is the only measure of whether the presentation worked. Your next action: Open Your work and choose Ready for review. The next lesson asks when measuring is the wrong thing to do at all.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2151,78 +3281,203 @@ Two decisions were identified. First: the wording of the held-place message. Che
 
 Identify two decisions in your work that should not wait for data, and write what you would do instead and why that is defensible.
 
-**Where to work:** Written reasoning. This lesson is judgement, not tooling.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Written reasoning. This lesson is judgement, not tooling.
 
 - Starting material: Your metric tree and current decisions.
 - Create HaruCourse/Practice/m15-l10-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# When not to measure
+#### 1. List open decisions
 
-Input artifact: Your metric tree and current decisions.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Judging how reversible a tool-library decision is, and judging it from my own side.
 
-## Output checklist
-- [ ] Two decisions identified as not worth measuring, with reasoning
-- [ ] The cost of measuring compared with the cost of being wrong
-- [ ] What you will do instead, including how you would notice a mistake
-- [ ] One measurement refused on ethical grounds, with the reason
+- **The decision:** Removing a field from the booking form. From where I sat it was one of the most reversible things imaginable: five minutes to put back.
+- **What I meant by reversible:** Easy for me to undo. That is the version of the question everybody answers, because it is the one you can see.
+- **What the other side of it was:** The provider used that field to plan which branch would need staffing on Saturdays. Three weeks without it and the rota is built on guesswork, and the bookings made in those weeks are gone.
+- **What reversible really asks:** Whether the consequences can be undone, not whether the change can. Putting the field back does not recover three weeks of missing information.
+- **What I did:** Moved it to the measure-first list, and the measurement was one conversation with the provider about what the field is for.
 
-## 1. List open decisions
+**The wrong turn:** The wrong turn is judging reversibility by how easy the change is to undo in your own file. What matters is whether the effects can be undone, and those usually land on somebody you have not asked.
+
+**What it costs:** Asking before changing means slower decisions, and sometimes the answer is that nobody uses the field and the conversation was unnecessary.
+
+**Still unknown:** Still unknown: how many other fields are quietly depended on. One conversation found one, and the same question would probably find more.
+
 - List decisions currently waiting for evidence.
 - For each, note how reversible it is.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Decisions currently waiting for evidence, each marked for how reversible it is.
 
-## 2. Compare the costs
+Worksheet fields for this step:
+
+- Decisions currently waiting for evidence
+- For each: how reversible it is, and how you know — Reversible means you could undo it next week without cost to anybody. A wording change usually is; removing a field somebody depends on usually is not.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Reversible decision:** One you could undo next week at no cost to anybody. Most wording and layout decisions are; anything touching data other people rely on usually is not.
+- **Waiting for data:** A decision with its own cost: the current problem continues while everybody feels rigorous.
+
+Stuck starting? List what is currently blocked, then ask of each how hard it would be to undo.
+
+Is it enough? Every decision has a reversibility judgement with a reason.
+
+</details>
+
+#### 2. Compare the costs
+
+**See it first.** Made-up example. Deciding the wording of a tool-library message, and waiting to be sure.
+
+- **What we did:** Held the wording decision until we could test it, because guessing at wording felt unrigorous and testing is what a careful team does.
+- **What testing would have needed:** Traffic we do not have. The earlier calculation put a detectable difference months away, so the honest cost of measuring was several months of delay.
+- **What the delay actually cost:** Three months of the existing message, which we already had reason to think was confusing people into paying twice. The current problem continued while we felt careful.
+- **What the cost of being wrong was:** A worse sentence, visible on one screen, changeable in five minutes, noticeable by asking three people. A week of a slightly worse message, at most.
+- **What we should have done:** Written the clearest version, shipped it, and asked three people the following week. The decision is cheaper to make and reverse than to measure, which is the whole test.
+
+**The wrong turn:** The wrong turn is treating waiting as the cautious option, because deciding without data feels like guessing. Waiting is a decision too, and its cost is that the current version keeps running.
+
+**What it costs:** Deciding without measurement means occasionally shipping something worse, and you will not know which times those were.
+
+**Still unknown:** Still unknown: whether the new wording is better. Three conversations next week will say what people think it means, which is not the same as knowing it reduced anything.
+
 - Estimate the cost of measuring: time, traffic, delay.
 - Estimate the cost of being wrong, including how long the error would persist.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** For each decision, the cost of measuring and the cost of being wrong, including how long an error would persist.
 
-## 3. Decide and plan the alternative
+Worksheet fields for this step:
+
+- For each: the cost of measuring, in time, traffic and delay
+- For each: the cost of being wrong, including how long the error would persist — A wrong wording persists until somebody notices. A wrong removal persists until somebody complains, which may be never.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Cost of measuring:** Time, traffic, delay and the work of running it. At small scale the delay is usually the largest part.
+- **How long the error persists:** The multiplier on being wrong. A mistake noticed in a week costs a week; one nobody can notice costs until somebody complains.
+
+Stuck starting? For each decision, write how long the error would last before anybody could notice it.
+
+Is it enough? Both costs are written as time or money rather than as feelings about risk.
+
+</details>
+
+#### 3. Decide and plan the alternative
+
 - Choose two decisions to make without measurement.
 - Write what you will do instead and how you would notice a mistake.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Two decisions chosen to make without measuring, with what you will do instead and how you would notice a mistake.
 
-## 4. Find the refusal
+**Try it with help.** Six decisions at a made up tool library. For each one, decide what the right approach is.
+
+- The exact wording of the held-place message. Changeable in five minutes.
+  - **decide now and watch** — Cheap to change, cheap to reverse, and no traffic to test it with. Write the clearest version, ship it, and ask three people next week.
+  - measure first — Measuring costs months of delay to settle a five-minute decision.
+  - do not measure this at all — Asking three people afterwards is worth doing; it is the waiting beforehand that is wrong.
+- Removing a field from the booking form. The provider may be using the data for something.
+  - decide now and watch — Removing data other people depend on is not cheaply reversible, and the mistake may go unnoticed for months.
+  - **measure first** — Find out what it is used for before touching it. The measurement here is one conversation with the provider rather than a study.
+  - do not measure this at all — There is nothing objectionable about finding out what a field is for.
+- Testing which cancellation flow produces fewer cancellations.
+  - decide now and watch — Deciding it at all accepts the framing that fewer cancellations is the goal.
+  - measure first — A well-run test would answer it precisely, and what it would measure is how effectively the flow obstructs people who want to leave.
+  - **do not measure this at all** — The test optimises for something nobody should be optimising for. Refusing it, with the reason, is the answer.
+- Which of two shades the primary button should be, both of which pass contrast.
+  - **decide now and watch** — Cheap, reversible and almost certainly inconsequential. Choose one and spend the attention elsewhere.
+  - measure first — This is the classic example of a measurement whose cost exceeds any plausible value of the answer.
+  - do not measure this at all — There is nothing wrong with measuring it; it is simply not worth it.
+- Raising the membership fee by ten per cent.
+  - decide now and watch — Reversing a price rise is expensive and public, and the people who left because of it do not come back.
+  - **measure first** — Not necessarily a test: asking members, and looking at what happened when the fee last changed, are both measurements in the useful sense.
+  - do not measure this at all — It is an ordinary business decision that benefits from evidence.
+- Recording how long each named member takes to return tools, to identify unreliable people.
+  - decide now and watch — Nothing about it is a design decision to be shipped and watched.
+  - measure first — It is entirely measurable, which is what makes the refusal a judgement rather than a limitation.
+  - **do not measure this at all** — Building a per-person reliability record changes what the library is. The refusal belongs in writing, with the reason.
+
+**Then:** Now choose your own two, and write what you will do instead of measuring.
+
+**What to watch for:** Three questions sort most cases. How expensive is the measurement, how expensive is being wrong, and should anybody be optimising this at all? The third one is not about cost and it overrides the other two.
+
+Worksheet fields for this step:
+
+- The two you will decide without measuring, and why
+- What you will do instead, including how you would notice a mistake
+
+<details>
+<summary>Help with this step</summary>
+
+- **Deciding without data:** Choosing on reasoning, shipping, and arranging to find out. It is appropriate when the decision is cheap to reverse and the measurement is expensive.
+- **Noticing a mistake:** The arrangement that would tell you. Without it, deciding quickly becomes deciding blindly, which is a different thing.
+
+Stuck starting? Pick the two where the measurement is expensive and the mistake is cheap.
+
+Is it enough? Both have a way you would find out you were wrong.
+
+</details>
+
+#### 4. Find the refusal
+
 - Identify a measurement that should not be run at all.
 - Write why, and what you would say if asked to run it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One measurement that should not be run at all, with the reason and what you would say if asked.
 
-## 5. Record
+Worksheet fields for this step:
+
+- A measurement that should not be run at all, and why — Some tests optimise for something nobody should be optimising for. A test of which cancellation flow produces fewer cancellations is a test of how well it obstructs people.
+- What you would say if asked to run it
+
+<details>
+<summary>Help with this step</summary>
+
+- **An ethical refusal:** Declining to measure something because the measurement itself, or what it would optimise for, is wrong. It is a separate question from cost.
+- **What you would say:** The sentence prepared in advance. Under pressure, the objection has to be available rather than constructed.
+
+Stuck starting? Look for a measurement whose answer would be used to make something worse for people.
+
+Is it enough? Your reply offers something else rather than only refusing.
+
+</details>
+
+#### 5. Record
+
 - Record the reasoning so the decisions can be revisited.
 - Save the comparisons and the refusal.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The reasoning recorded so the decisions can be revisited, and the repair the Check questions asked for.
 
-## Review and handoff
-- Two decisions are identified with reversibility assessed: [evidence reference]
-- Costs of measuring and of being wrong are both estimated: [evidence reference]
-- The alternative includes how a mistake would be noticed: [evidence reference]
-- One measurement is refused with a stated reason: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- How the reasoning is recorded so the decisions can be revisited
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Revisitable:** Written where the decision will be questioned again, with the reasoning rather than only the outcome.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Put the reasoning where the decision lives, not in a separate note.
+
+Is it enough? Somebody reopening the decision would find why it was made as well as what was decided.
 
 </details>
+
+**Save and continue.** Saved for you: Your decisions, the cost comparisons, what you will do instead and the refusal save as you type, on this device first and then online. Kept outside the app: The reasoning belongs wherever the decision is recorded, so somebody reopening it finds both. This worksheet is your working copy. What your creator sees: Your creator reads the refusal and the noticing arrangements. Deciding quickly with no way to find out is the failure this lesson guards against. Your next action: Open Your work and choose Ready for review. The next lesson writes the plan you could actually start on Monday.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2385,78 +3640,204 @@ The plan had three measures, each with a claim and a limit. Duplicate payments p
 
 Write a measurement plan for your project that uses only what you can obtain, states what each measure supports, and names the questions it leaves unanswered.
 
-**Where to work:** A written plan and a spreadsheet. The provider's own records and a handful of conversations are the whole data infrastructure.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A written plan and a spreadsheet. The provider's own records and a handful of conversations are the whole data infrastructure.
 
 - Starting material: Your metric tree and instrumentation decisions.
 - Create HaruCourse/Practice/m15-l11-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# A measurement plan you could actually run
+#### 1. Inventory what exists
 
-Input artifact: Your metric tree and instrumentation decisions.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Inventorying what a tool library records, and asking the wrong question.
 
-## Output checklist
-- [ ] Three measures obtainable with what you have
-- [ ] A claim and a limit per measure
-- [ ] A review date and an owner
-- [ ] A list of questions the plan cannot answer
+- **What I asked:** “Do you have any analytics?” The answer was no, and I wrote down that there was no data available.
+- **What that question had meant to them:** Website statistics. It is what analytics means to somebody who does not work in software, and the answer was accurate.
+- **What I asked the second time:** “What do you write down, and where?” A different question entirely, and it took twenty minutes to answer.
+- **What came back:** Every payment in the provider’s dashboard. Every booking in a shared spreadsheet, with the date made and the date collected. Every complaint in one email folder. Eleven years of a paper ledger in a cupboard.
+- **What the plan was built from:** Two of those. None of it is analytics and all of it is data, and the first question had made it invisible.
 
-## 1. Inventory what exists
+**The wrong turn:** The wrong turn is asking whether they have data, because the word means software to you and statistics to them. Asking what they write down finds the records that have been there all along.
+
+**What it costs:** Records kept by hand are inconsistent, incomplete in places, and take an hour to count. They exist, which no analytics package does.
+
+**Still unknown:** Still unknown: how reliably the booking spreadsheet is filled in. Somebody types it and somebody sometimes forgets, and the plan says the measure is approximate rather than assuming otherwise.
+
 - List records the product or provider already keeps.
 - List what you could count by hand and who you could ask.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** An inventory of records that already exist, plus what you could count by hand and who you could ask.
 
-## 2. Choose three measures
+Worksheet fields for this step:
+
+- Records the product or the provider already keeps — Payment records, booking records, a support log, an email inbox, a paper ledger. Small organisations keep more than they realise.
+- What you could count by hand, and who you could ask
+
+<details>
+<summary>Help with this step</summary>
+
+- **Existing records:** What the organisation already keeps without calling it data: payment records, a booking book, a support inbox. It is usually the best source available.
+- **Counting by hand:** Going through a month of records with a pencil. It is slow, accurate and available today, and it is how most small organisations should start.
+
+Stuck starting? Ask what the provider already keeps before thinking about what you would like to have.
+
+Is it enough? Your inventory contains at least one source nobody would call analytics.
+
+</details>
+
+#### 2. Choose three measures
+
+**See it first.** Made-up example. Writing a measurement plan for a tool library, and writing one for a product that does not exist.
+
+- **What I wrote first:** Eleven measures: funnel conversion by step, time to first booking, return visitor rate, search success rate, and seven more. It looked like a proper plan.
+- **What every one of them needed:** Analytics the library does not have and is not going to buy. The plan was for a different organisation with a different budget.
+- **What it would have produced:** Nothing at all, for months, followed by a conversation about buying a tool, followed by more months.
+- **What I built the second plan from:** What the provider already keeps. Payment records, the booking book, and the library’s own email. Between them: duplicate payments, cancellations within a day, and five conversations a quarter.
+- **What that plan could do:** Start on Monday, with a pencil. It answers less than the eleven would have, and it is the only one of the two that produces a number this month.
+
+**The wrong turn:** The wrong turn is writing the plan the metric tree deserves rather than the plan this organisation can run. A plan that assumes tooling you do not have is a wish with a review date on it.
+
+**What it costs:** Three hand-counted measures answer far less than a proper analytics setup would, and somebody will point out how crude they are.
+
+**Still unknown:** Still unknown: almost everything about people who never arrive. No plan built from a provider’s records can see them, and the unanswered list says so.
+
 - Choose three that answer nodes in your metric tree.
 - Prefer measures you can obtain without new tooling.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three measures, each answering a node in your tree, obtainable without new tooling.
 
-## 3. Attach claims and limits
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Measure 1 · what it is, where it comes from, and how often
+- Measure 2 · what it is, where it comes from, and how often
+- Measure 3 · what it is, where it comes from, and how often
+
+<details>
+<summary>Help with this step</summary>
+
+- **Obtainable:** Available from a record, a count or a conversation you could arrange this month. Anything needing new tooling is a plan for later.
+- **Small:** Three measures. Ten produce a document nobody maintains, and the first month of a plan is where most of them die.
+
+Stuck starting? Choose the measure you could produce this afternoon from an existing record.
+
+Is it enough? Every measure names where the number comes from and how often it is produced.
+
+</details>
+
+#### 3. Attach claims and limits
+
 - For each measure write what it supports and what it does not.
 - Include the sample or source in the statement.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** For each measure, the claim it supports and the claim it does not, with the source inside the statement.
 
-## 4. Set the review
+**Try it with help.** Six candidate measures for a made up tool library with no analytics. For each one, decide whether the plan can include it.
+
+- Duplicate payments per hundred bookings, from the payment provider’s records, monthly.
+  - **obtainable today** — The provider already records every payment. Counting duplicates is an hour with a spreadsheet each month.
+  - needs tooling you do not have — Nothing new is required; the records exist because payments happened.
+  - obtainable and not worth it — It is the closest thing to the outcome in the whole tree.
+- Conversion at each step of the booking funnel.
+  - obtainable today — Nothing records who reached which screen. The funnel you built was synthetic for exactly this reason.
+  - **needs tooling you do not have** — It needs page-level instrumentation, which is a project rather than a measure.
+  - obtainable and not worth it — It would be genuinely useful if it existed, which is what makes it a plan for later.
+- Cancellations within a day of booking, from the booking book, monthly.
+  - **obtainable today** — Both dates are already written down. It is a count somebody can do with a pencil.
+  - needs tooling you do not have — The booking book is the tooling.
+  - obtainable and not worth it — It speaks to confidence at the moment of booking, which is a node in the tree.
+- Five conversations a quarter with recent bookers.
+  - **obtainable today** — Five people, four times a year, arranged by email. It is the only source of mechanism in the plan.
+  - needs tooling you do not have — It needs a kettle.
+  - obtainable and not worth it — It answers the why questions nothing else in the plan can touch.
+- Average time on the tool detail page.
+  - obtainable today — It would need instrumentation as well, so it fails twice.
+  - needs tooling you do not have — True, and the more important objection is that it was removed from the tree in the first lesson as unactionable.
+  - **obtainable and not worth it** — Even handed to you free, no value of it would change what anybody does.
+- How the duplicate-payment rate compares with similar providers.
+  - obtainable today — Nobody publishes it, and definitions would differ even if they did.
+  - **needs tooling you do not have** — It needs data that is not yours and a shared definition that does not exist. It belongs on the unanswered list.
+  - obtainable and not worth it — It would be worth having; it is simply unavailable.
+
+**Then:** Now check your own three: each should be obtainable this month and worth the hour it costs.
+
+**What to watch for:** Two different reasons to leave something out. Some measures are unavailable, and belong on the unanswered list; others are available and still useless, and belong nowhere.
+
+Worksheet fields for this step:
+
+- For each measure: the claim it supports and the claim it does not
+- How the source or sample appears in the statement itself
+
+<details>
+<summary>Help with this step</summary>
+
+- **The claim it supports:** What you could honestly say from it. Writing it now stops it growing later.
+- **Source in the statement:** Putting where the number came from into the sentence itself, so the two cannot be separated when it is repeated.
+
+Stuck starting? Write the limit before the claim; it is harder and it constrains the claim.
+
+Is it enough? Every claim contains its own source, so it cannot be quoted without it.
+
+</details>
+
+#### 4. Set the review
+
 - Set a date and an owner for reviewing the measures.
 - Decide what would make you change or drop one.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A review date, an owner, and what would make you change or drop a measure.
 
-## 5. Write the unanswered list
+Worksheet fields for this step:
+
+- The review date and the owner
+- What would make you change or drop a measure — A measure nobody has looked at twice is a measure to drop.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Review date:** A date, with a name. Without it a measurement plan becomes a document, and the measures stop being produced without anybody deciding.
+- **Dropping a measure:** Removing one nobody has used. It is maintenance, and a plan that only ever grows is one nobody maintains.
+
+Stuck starting? Set the date three months out and write your own name against it.
+
+Is it enough? The drop condition could actually be met.
+
+</details>
+
+#### 5. Write the unanswered list
+
 - List the questions this plan leaves open.
 - Save the plan with its limits.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A list of the questions this plan cannot answer, and the repair the Check questions asked for.
 
-## Review and handoff
-- Measures are obtainable with existing records or effort: [evidence reference]
-- Each carries a claim and a limit: [evidence reference]
-- A review date and owner exist: [evidence reference]
-- Unanswered questions are listed: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The questions this plan leaves open — Anything about people who never arrived, anything comparative, anything at population scale.
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Unanswered list:** What the plan leaves open. It is what stops the three measures being treated as the whole picture.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Start with everybody who never arrives; no record of yours can see them.
+
+Is it enough? The list names specific questions rather than saying the plan is limited.
 
 </details>
+
+**Save and continue.** Saved for you: Your inventory, the three measures, their claims and limits and the review date save as you type, on this device first and then online. Kept outside the app: The counting itself happens in a spreadsheet in your own folder. Nothing identifying anybody belongs in it or here. What your creator sees: Your creator reads whether the three measures could be produced this month. A plan that needs tooling is a plan for a different organisation. Your next action: Open Your work and choose Ready for review. The last lesson of the module writes down what none of this can say.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2619,79 +4000,206 @@ The limitations page listed: all funnel figures synthetic and labelled; the surv
 
 Write the limitations page for all your quantitative work in this module, and rehearse defending one honest conclusion against pressure for a stronger one.
 
-**Where to work:** One written page. Rehearsal with another person or aloud to yourself.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: One written page. Rehearsal with another person or aloud to yourself.
 
 - Starting material: Your funnel, cohort, plan and presentations.
 - Create HaruCourse/Practice/m15-l12-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# What your numbers cannot say
+#### 1. Collect the limitations
 
-Input artifact: Your funnel, cohort, plan and presentations.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A reusable limitations page covering all this module's work
-- [ ] Categories separated: synthetic, small sample, unavailable
-- [ ] A rehearsed reply to a request for a stronger claim
-- [ ] A recorded temptation, named honestly
-
-## 1. Collect the limitations
 - Gather every caveat from this module into one page.
 - Group them by kind rather than by lesson.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Every caveat from this module gathered onto one page and grouped by kind.
 
-## 2. Separate the categories
+Worksheet fields for this step:
+
+- Every caveat from this module, gathered onto one page — Go lesson by lesson. Each one produced at least one.
+- Grouped by kind rather than by lesson
+
+<details>
+<summary>Help with this step</summary>
+
+- **Limitations page:** One reusable page saying what your quantitative work can and cannot support. Written once, it saves rewriting the same sentences in every document.
+- **Grouping by kind:** Synthetic, small-sample and unavailable are three different problems with three different answers. Grouped by lesson they look like a list of excuses.
+
+Stuck starting? Go back through the eleven lessons and copy out every caveat you wrote.
+
+Is it enough? Nothing from the module is missing, including the parts you would rather not restate.
+
+</details>
+
+#### 2. Separate the categories
+
+**See it first.** Made-up example. Writing the limitations page for a tool-library project, and writing it as one list.
+
+- **What I wrote:** Fourteen bullet points, in the order the lessons came. Synthetic funnels next to a twenty-two person survey next to the absence of analytics.
+- **How it read:** As a list of apologies. Fourteen reasons not to believe anything, with no shape, and a reader would either skip it or discount the whole project.
+- **What was wrong with the order:** It mixed three completely different problems. Invented numbers support nothing about the product; a small sample supports real counts; an unmeasured thing is simply unknown.
+- **What grouping produced:** Three short sections with a heading each, saying what that kind of evidence can support. The synthetic section is a warning; the small-sample section is a list of things I can actually say.
+- **Why that is a better document:** It reads as a statement of what I know rather than a list of what I do not. The same fourteen facts, in a shape somebody can use.
+
+**The wrong turn:** The wrong turn is listing limitations in the order you met them, because that is how they accumulated. Three kinds of limitation mixed together read as one long apology, and the useful half disappears into it.
+
+**What it costs:** Grouping takes half an hour and means deciding which category each caveat belongs in, and one or two genuinely straddle.
+
+**Still unknown:** Still unknown: whether anybody reads a limitations page at all. It at least exists to be pointed at when a claim starts growing.
+
 - Mark what is synthetic, what is small-sample and what is unavailable.
 - State what each category can and cannot support.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The three categories separated, each with what it can and cannot support.
 
-## 3. Rehearse the pressure
+Worksheet fields for this step:
+
+- What is synthetic, and what synthetic work can support — It can support a claim about a method. It can support nothing at all about your product.
+- What is small-sample, and what a small sample can support — Counts with their route stated. Mechanisms. Not rates, and not comparisons.
+- What is unavailable, and what that leaves unknown
+
+<details>
+<summary>Help with this step</summary>
+
+- **Synthetic:** Invented numbers. They can demonstrate a method and say nothing whatever about your product.
+- **Small sample:** Real people, too few for a rate. They support counts with their route, and mechanisms, and neither rates nor comparisons.
+- **Unavailable:** Not measured by anybody. It is different from measured and inconclusive, and the difference matters to whoever reads it.
+
+Stuck starting? Put each caveat under one of the three headings before writing anything about what it supports.
+
+Is it enough? The small-sample section reads as a list of things you can say.
+
+</details>
+
+#### 3. Rehearse the pressure
+
 - Write the request you expect for a stronger claim.
 - Write your reply, offering what you can support and what would be needed.
 - Say it aloud, or with someone playing the requester.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The expected request for a stronger claim, your reply offering what you can support, and a record of saying it aloud.
 
-## 4. Record the temptation
+**Try it with help.** Six replies to a made up request for a percentage that the evidence cannot support. For each one, decide what it does.
+
+- I cannot give you one honestly. What I have is that two of three people we watched could not tell their place was held, and duplicate payments over the next month would tell us whether the change helped. I can have that in four weeks.
+  - **honest and useful** — It refuses, offers what exists, and names what would produce more, with a date. Nobody leaves the conversation empty-handed.
+  - honest and unhelpful — It gives two usable things and a timeline.
+  - an overclaim — Every claim in it is bounded by its sample.
+- The data does not support that.
+  - honest and useful — It is true and it hands back nothing at all.
+  - **honest and unhelpful** — The person still needs something for the slide. A refusal with no alternative usually loses to somebody else’s worse number.
+  - an overclaim — Nothing is being claimed.
+- Roughly two-thirds, though the sample is small.
+  - honest and useful — The caveat is attached and will be dropped the moment it reaches a slide.
+  - honest and unhelpful — It is helpful and it is not honest at three people.
+  - **an overclaim** — Two-thirds of three is two people. The fraction survives into the summary and the sample does not.
+- I can get you a real number in four weeks from the payment records. For now, two of the three people we watched could not tell.
+  - **honest and useful** — It leads with what is coming and gives something to use meanwhile, with the sample attached to it.
+  - honest and unhelpful — It answers both the immediate need and the underlying one.
+  - an overclaim — The count carries its denominator.
+- Directionally it is around 60 to 70 per cent.
+  - honest and useful — Directionally is a word that makes an invented range sound considered.
+  - honest and unhelpful — It is extremely helpful and it is fabricated.
+  - **an overclaim** — A range invented to sound cautious is still a number that did not come from anywhere. It will be quoted without the first word.
+- I would rather not put a percentage on it, but use your judgement.
+  - honest and useful — It offers nothing and hands the decision to somebody with less information than you.
+  - **honest and unhelpful** — It is honest about your position and abandons the person, who will now invent something.
+  - an overclaim — You are not claiming anything, which is precisely the problem.
+
+**Then:** Now write your own reply, and check it offers something as well as declining something.
+
+**What to watch for:** The overclaims both sound careful: roughly, and directionally. Both survive into a slide with the hedge removed. The useful replies all name something you can support and something that would produce more.
+
+Worksheet fields for this step:
+
+- The request you expect for a stronger claim, in the words somebody would use
+- Your reply: what you cannot give, what you can, and what would be needed
+- How you rehearsed it, and what was hard to say — Aloud, to somebody or to yourself. The sentence has to be available under pressure, which means having said it once.
+
+<details>
+<summary>Help with this step</summary>
+
+- **The polite pressure:** Somebody reasonable asking for a percentage for a slide. It is not an attack and it is the moment most overclaims are made.
+- **Offering instead:** Answering with what you can support and what would be needed for more. A refusal with nothing attached sounds obstructive and usually loses.
+
+Stuck starting? Write the request in the words somebody would actually use, then write your answer to that.
+
+Is it enough? Your reply offers two things: what you have, and what would produce more.
+
+</details>
+
+#### 4. Record the temptation
+
+**See it first.** Made-up example. Recording a temptation from a tool-library module, and recording a safe one.
+
+- **What I wrote first:** “I was tempted to overstate the findings.” True of everybody, about nothing in particular, and I felt I had been admirably honest.
+- **Why it is useless:** It names no moment, so it cannot warn me about anything. A general confession is a way of not making a specific one.
+- **The actual moment:** Building the slide deck. The synthetic funnel chart looked convincing, and the word synthetic in the title made it look like practice material, which it is.
+- **What I nearly did:** Moved the label to the notes. I had a reason ready — the audience knew it was synthetic — and the reason arrived after the wish.
+- **What writing it down does:** The next time I build a deck, that is the moment I will recognise. A named temptation is a warning; a general one is a paragraph.
+
+**The wrong turn:** The wrong turn is confessing in general, because it is comfortable and sounds self-aware. A temptation with no moment attached cannot warn you about anything.
+
+**What it costs:** Naming the specific moment means writing down something slightly discreditable about yourself, in a document somebody else will read.
+
+**Still unknown:** Still unknown: whether I would have done it. I did not, and being confident that I never would is the belief this exercise is aimed at.
+
 - Write where you wanted to overstate during this module.
 - Note what would have made it easy to do so.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Where you were tempted to overstate during this module, and why that moment was tempting.
 
-## 5. File it
+Worksheet fields for this step:
+
+- Where you wanted to overstate during this module
+- Why that particular moment was tempting
+
+<details>
+<summary>Help with this step</summary>
+
+- **Recording the temptation:** Naming where you wanted to overstate. It is where you will slip later, and knowing it is most of the defence.
+
+Stuck starting? Think of the moment your work looked most convincing, and ask what you left out to make it look that way.
+
+Is it enough? You named a specific moment rather than a general tendency.
+
+</details>
+
+#### 5. File it
+
 - Store the page where your case study and portfolio can reuse it.
 - Save the rehearsed reply with it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The page filed where you can reuse it, and the repair the Check questions asked for.
 
-## Review and handoff
-- One page collects every limitation from the module: [evidence reference]
-- Synthetic, small-sample and unavailable are separated: [evidence reference]
-- A reply to pressure is written and rehearsed: [evidence reference]
-- A temptation is recorded honestly: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Where the page lives so you can reuse it
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Reusable:** Kept where your next report will be written, so the sentences do not have to be reconstructed each time.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Put it with your project record rather than with this module’s notes.
+
+Is it enough? You could paste the right section into a report next month without rewriting it.
 
 </details>
+
+**Save and continue.** Saved for you: Your limitations page, the three categories, the rehearsed reply and the temptation save as you type, on this device first and then online. Kept outside the app: File the page with your project record rather than with this module’s notes, so the next report can use it. What your creator sees: Your creator reads the temptation you named. A module with no temptation recorded usually means the work never looked convincing enough to be worth overstating. Your next action: Open Your work and choose Ready for review. This closes Module 15. Module 16 turns to AI-assisted work and AI products.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 

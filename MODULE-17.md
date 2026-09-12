@@ -38,78 +38,205 @@ Reading the class provider's operating strategy from behaviour: every request fr
 
 Write the strategy your product is actually following — inferred from what it does, not from what anyone says — and name the three choices it implies.
 
-**Where to work:** Written work and observation. No canvas or framework template is required.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Written work and observation. No canvas or framework template is required.
 
 - Starting material: Your project, its history and its current decisions.
 - Create HaruCourse/Practice/m17-l01-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# What strategy means for someone doing the work
+#### 1. Read on constraint
 
-Input artifact: Your project, its history and its current decisions.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] The operating strategy inferred from behaviour
-- [ ] Three implied choices named
-- [ ] What the strategy excludes, or a note that it excludes nothing
-- [ ] One implied choice you believe was never deliberate
-
-## 1. Read on constraint
 - Read the assigned chapters on appetite and deciding what not to build.
 - Write what makes a choice strategic rather than tactical.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What makes a choice strategic rather than tactical, in your own words.
 
-## 2. Read the behaviour
+Worksheet fields for this step:
+
+- What makes a choice strategic rather than tactical, in your own words — A strategic choice rules something out. A tactical one decides how to do what was already ruled in.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Strategic choice:** One that rules something out. If nothing is excluded, nothing was chosen.
+- **Operating strategy:** The pattern of what actually gets built and refused, as opposed to the document. It is the one that decides what happens.
+
+Stuck starting? Write the difference in one sentence, using the word rules out.
+
+Is it enough? Your sentence would let you sort a real decision into one category or the other.
+
+</details>
+
+#### 2. Read the behaviour
+
+**See it first.** Made-up example. Reading what a team always cuts, and asking them.
+
+- **What I did:** Asked what gets cut when time is short. Everybody said the same thing: nothing important, we protect quality and we protect accessibility.
+- **Why that answer arrives:** It is what everybody believes, and it is what everybody would want to be true. Nobody was being evasive.
+- **What the last three releases showed:** The accessibility work went in two of the three, and the error states went in all three. Both were always the last thing unfinished, and being unfinished is what decides it.
+- **Why nobody could have told me:** Nobody decided. It happened at five o’clock on a Thursday, three times, by whoever was still working, and it never became a memory of a choice.
+- **What I wrote:** Cut first: error states, then accessibility work. Read from three releases rather than from anybody’s account of themselves.
+
+**The wrong turn:** The wrong turn is asking what gets cut, because people answer honestly about what they intend. The operating strategy is made of decisions nobody remembers making, which is exactly why the behaviour has to be read rather than reported.
+
+**What it costs:** Reading three releases takes an afternoon and produces a sentence that contradicts what colleagues sincerely believe about themselves.
+
+**Still unknown:** Still unknown: whether the pattern holds over more than three. Three is what I could look at, and the sentence says so.
+
 - List what the team always accommodates and always cuts.
 - List who is never refused and what is never prioritised.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What is always accommodated, what is cut first, and who is never refused, read from behaviour rather than from a document.
 
-## 3. Name the implied choices
+Worksheet fields for this step:
+
+- What is always accommodated, however small — Where you have no team to observe, read a public project’s issue tracker or your own product’s history. Say which.
+- What is cut first when time is short
+- Who is never refused, and what is never prioritised
+
+<details>
+<summary>Help with this step</summary>
+
+- **Reading from behaviour:** Inferring the strategy from what recurs, what is protected and what goes first. It is available to anybody paying attention.
+- **No team to observe:** A complete route. A public project’s tracker, or your own product’s history, shows the same patterns; the source line says which you used.
+
+Stuck starting? Write what went first the last three times something had to be cut.
+
+Is it enough? Every line names something that actually happened rather than a policy.
+
+</details>
+
+#### 3. Name the implied choices
+
+**See it first.** Made-up example. Reading the strategy at Northside Tool Library, and reading the document.
+
+- **What the document said:** To make tools available to everybody in the neighbourhood, sustainably and inclusively. Agreed by the committee, printed, and on the wall.
+- **What the last six months showed:** Every request from the two workshops that run classes was accommodated within a week. The new-member sign-up, which three people had described as confusing, was postponed four times.
+- **What that pattern actually is:** Existing regular users over new ones. Nobody chose it, nobody would defend it, and it is what the behaviour says without exception.
+- **What the document could not do:** Be wrong. Everybody in the neighbourhood excludes nobody, so it rules nothing out, and no decision could ever contradict it.
+- **What happened when I wrote the pattern down:** The committee disagreed with it, which is the first time anybody had disagreed with a strategy statement there. The sign-up work was scheduled a fortnight later.
+
+**The wrong turn:** The wrong turn is reading the strategy from the document, because it exists and it is official. A statement that excludes nothing cannot be contradicted by any decision, so it describes nothing anybody does.
+
+**What it costs:** Writing the pattern down produces a sentence nobody likes and nobody chose, and somebody will feel accused of a preference they never held.
+
+**Still unknown:** Still unknown: whether the pattern would have changed anyway. It changed a fortnight after being named, which is not the same as because of it.
+
 - Turn the patterns into three stated choices.
 - Write each as a preference between two things.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three implied choices, each written as a preference between two things, with the behaviour it is read from.
 
-## 4. Test for exclusion
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Choice 1 · the preference, and the behaviour it is read from
+- Choice 2 · the preference, and the behaviour it is read from
+- Choice 3 · the preference, and the behaviour it is read from
+
+<details>
+<summary>Help with this step</summary>
+
+- **A preference between two things:** The shape a choice has to take: this over that. Without the second half it is a value rather than a choice.
+- **Making it explicit:** Writing down the pattern somebody is following without having said so. It is frequently enough to change it.
+
+Stuck starting? Take your strongest pattern and write it as this over that.
+
+Is it enough? Somebody at the organisation could disagree with each of your three.
+
+</details>
+
+#### 4. Test for exclusion
+
 - Write what these choices rule out.
 - If nothing is ruled out, say so plainly.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What the choices rule out, or a plain statement that they rule nothing out.
 
-## 5. Find the accident
+**Try it with help.** Six statements about a made up organisation. For each one, decide whether it is a strategy.
+
+- Requests from regular users are accommodated first; work on the new-member experience waits.
+  - **a strategic choice** — It rules something out: new members wait. It is unstated and it is the pattern every decision follows.
+  - a value, not a choice — It prefers one group over another, which is what makes it a choice.
+  - a tactic — It is not about how to do something; it is about what gets done at all.
+- We make tools available to everybody in the neighbourhood.
+  - a strategic choice — Everybody excludes nobody, so no decision could contradict it.
+  - **a value, not a choice** — It says what the organisation is for. Worth having on the wall and useless for deciding anything.
+  - a tactic — It is far too broad to be one.
+- We open on Saturday mornings because that is when most people collect.
+  - a strategic choice — It follows from serving people who work weekdays, which is the choice; the hours are how.
+  - a value, not a choice — It has a reason attached and a real trade behind it.
+  - **a tactic** — A decision about how to deliver something already decided. Changing it would not change who the library is for.
+- We do not lend power tools that need training, even though members ask.
+  - **a strategic choice** — It rules something out, against demand, for a reason. This is the clearest form a strategy takes.
+  - a value, not a choice — A value would be about safety in general; this refuses a specific thing people want.
+  - a tactic — It decides what the service is rather than how it runs.
+- We care about quality.
+  - a strategic choice — Nobody is against quality, so it excludes nothing.
+  - **a value, not a choice** — It is the commonest sentence in strategy documents and it decides nothing.
+  - a tactic — It is not specific enough to be one.
+- Bookings are recorded in a spreadsheet updated each evening rather than a system.
+  - a strategic choice — It has large consequences for the experience, and it was chosen for cost rather than as a position about what the library is.
+  - a value, not a choice — It is a specific arrangement rather than a belief.
+  - **a tactic** — A how, with consequences the next lesson traces. Tactics with big effects are still tactics.
+
+**Then:** Now test your own three choices: does each rule something out?
+
+**What to watch for:** Values and tactics both get mistaken for strategy, in opposite directions. A value is too broad to exclude anything; a tactic is downstream of a choice already made. Only the middle one can be disagreed with.
+
+Worksheet fields for this step:
+
+- What these choices rule out
+- If nothing is ruled out, say so plainly — A strategy that excludes nothing is not one. Saying so is a finding rather than a failure of the exercise.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Exclusion:** What the strategy will not do. It is the test of whether a strategy exists at all.
+- **Excluding nothing:** A real and common finding. Saying it plainly is more useful than manufacturing an exclusion to fill the field.
+
+Stuck starting? For each choice, finish this sentence: “which means we will not …”.
+
+Is it enough? Either you named exclusions, or you wrote plainly that there are none.
+
+</details>
+
+#### 5. Find the accident
+
 - Mark any implied choice that was never deliberately made.
 - Save the reading with the choices.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Any implied choice that was never deliberately made, with how you can tell.
 
-## Review and handoff
-- The strategy is inferred from behaviour, not documents: [evidence reference]
-- Three implied choices are stated as preferences: [evidence reference]
-- Exclusions are named or their absence stated: [evidence reference]
-- An unintentional choice is identified: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Any implied choice you believe was never deliberately made
+- How you can tell it was an accident rather than a decision
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **An accidental choice:** A pattern nobody decided and nobody would defend. It is usually the one that costs most, because nothing about it has been weighed.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Ask of each choice whether anybody would defend it out loud.
+
+Is it enough? Your evidence for the accident is behaviour rather than an assumption about intent.
 
 </details>
+
+**Save and continue.** Saved for you: Your definition, the behaviour you read, the three choices and the accident save as you type, on this device first and then online. Kept outside the app: If you read a public project’s tracker, keep your notes in your own folder and say in step 2 which project it was. What your creator sees: Your creator reads the accidental choice and how you can tell. A reading with no accident in it is usually a reading of the document. Your next action: Open Your work and choose Ready for review. The next lesson asks how this product pays for itself.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -272,78 +399,202 @@ The exchange, written plainly: a person gives money and a Saturday and gets a cl
 
 Write how your product actually sustains itself — what is exchanged, who pays, what it costs — and identify one design decision that changes the arithmetic.
 
-**Where to work:** Written work and, where possible, one conversation with whoever runs the service. No financial data is needed and none should be invented.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Written work and, where possible, one conversation with whoever runs the service. No financial data is needed and none should be invented.
 
 - Starting material: Your project and its business context.
 - Create HaruCourse/Practice/m17-l02-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# How this product survives
+#### 1. Write the exchange
 
-Input artifact: Your project and its business context.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] The exchange written in one or two sentences
-- [ ] Who pays and who uses, with any conflict named
-- [ ] Costs beyond money, listed
-- [ ] One design decision that changes the arithmetic, with the mechanism
-
-## 1. Write the exchange
 - Write what each side gives and gets, in plain words.
 - Check both sides are real rather than aspirational.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The exchange written in plain words, with both sides checked as real rather than aspirational.
 
-## 2. Separate payer and user
+Worksheet fields for this step:
+
+- What each side gives and gets, in plain words
+- How you checked both sides are real rather than aspirational — An aspirational exchange describes what you would like people to value. A real one describes why they actually turn up.
+
+<details>
+<summary>Help with this step</summary>
+
+- **The exchange:** What each side gives and gets. Writing it plainly is most of what commercial literacy means in practice.
+- **Aspirational:** What you would like people to value: community, sustainability, belonging. Sometimes true and rarely why anybody turned up today.
+
+Stuck starting? Write what somebody gives up to use this, including time and inconvenience.
+
+Is it enough? Both sides would be recognised by the people on them.
+
+</details>
+
+#### 2. Separate payer and user
+
+**See it first.** Made-up example. Writing the exchange for Northside Tool Library, and writing the nice version.
+
+- **What I wrote:** Members give a small subscription and get access to a shared resource, a sense of community, and a more sustainable way to do jobs at home.
+- **Why it was comfortable:** It is what the library says about itself, it is true of some members, and nothing in it is contradicted by anything.
+- **What two conversations produced:** Neither person mentioned community or sustainability. Both said they needed a tool for one job, once, and buying one for forty pounds to use for an hour was absurd.
+- **What the real exchange was:** They give a deposit, a trip across town and the bother of returning it. They get the job done without owning a tool they would use twice.
+- **What that changed:** The trip across town is a cost in the exchange, which makes collection hours a central design question rather than an operational detail. The community version had made the location invisible.
+
+**The wrong turn:** The wrong turn is writing the exchange the organisation would like to be true, because it is on the wall and some of it is real. An aspirational exchange hides the costs people actually pay, and those are where the design decisions are.
+
+**What it costs:** The honest version is less appealing to read and it makes the library sound like a rental shop, which somebody on the committee will resent.
+
+**Still unknown:** Still unknown: how many members are in it for the community. Two conversations found two who were not, and both versions are probably true of somebody.
+
 - Name who pays and who uses.
 - Where they differ, write whose experience wins under conflict.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Who pays and who uses, with whose experience wins under conflict and who decided that.
 
-## 3. List the costs
+Worksheet fields for this step:
+
+- Who pays and who uses
+- Where they differ, whose experience wins under conflict, and who decided that — A parent booking for a child, an employer paying for staff, a council funding a service. Someone always loses when they conflict.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Payer and user diverging:** A parent booking for a child, an employer paying for staff, a funder paying for a service. The product usually serves the payer without anybody deciding to.
+- **Who decided:** Frequently nobody. It is the accidental choice from the previous lesson, appearing in the economics.
+
+Stuck starting? Ask two people why they actually use it, and write their answers rather than yours.
+
+Is it enough? Where payer and user differ, you have said who currently wins and whether anybody chose that.
+
+</details>
+
+#### 3. List the costs
+
 - List costs in money, staff time, risk and attention.
 - Mark which ones your design affects.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Costs in money, staff time, risk and attention, with the ones your design affects marked.
 
-## 4. Find the lever
+**Try it with help.** Six consequences of a design decision at the made up tool library. For each one, decide what kind of cost it is.
+
+- An unclear payment screen produces about one phone call per unclear booking, to a staff of two.
+  - money — It costs no money directly and it is the salary of somebody already employed.
+  - **staff time or attention** — It is an hour somebody spends on the phone rather than checking tools in. In a two-person organisation this is the cost that matters most.
+  - risk — Nothing uncertain is involved; it happens every time.
+- A duplicate payment has to be refunded, with a transaction fee lost on each leg.
+  - **money** — Two fees, gone, per occurrence. It is small, countable and the easiest thing to get attention for.
+  - staff time or attention — It costs that as well, and the fee is the part with a number on it.
+  - risk — It is a certain cost rather than an uncertain one.
+- Holding a deposit means the library is responsible for money that is not theirs.
+  - money — The money is held rather than spent.
+  - staff time or attention — It takes attention, and the defining feature is what happens if it goes wrong.
+  - **risk** — Holding other people’s money creates an obligation and an exposure that exists whether or not anything happens.
+- Bookings are entered into the spreadsheet each evening by one person.
+  - money — Nothing is paid for it beyond a wage already being paid.
+  - **staff time or attention** — An hour a day and a process that must be remembered. Both, and the remembering is the part that fails on a busy week.
+  - risk — The single point of failure is a risk as well, and the daily cost is the ordinary one.
+- If the spreadsheet is a day behind, two people can be promised the same tool.
+  - money — Nothing is spent when it happens.
+  - staff time or attention — Sorting it out costs time, and it does not happen every day.
+  - **risk** — Something uncertain with a consequence when it occurs. This is the shape of a risk rather than a running cost.
+- A new volunteer needs a morning to learn the booking process.
+  - money — Volunteers are not paid, which is what makes this cost easy to overlook.
+  - **staff time or attention** — A morning of somebody teaching and a morning of somebody learning, every time the volunteers change. A simpler process is a design decision that reduces it.
+  - risk — It is predictable rather than uncertain.
+
+**Then:** Now list your own costs the same way, and mark which your design touches.
+
+**What to watch for:** Money is the easiest to notice and rarely the largest. In a small organisation, staff time and attention are where design decisions land, and the volunteer training cost is invisible precisely because nobody is billing for it.
+
+Worksheet fields for this step:
+
+- Costs in money, staff time, risk and attention
+- Which of those your design affects
+
+<details>
+<summary>Help with this step</summary>
+
+- **Staff time:** The commonest hidden cost in a small organisation. An unclear screen becomes a phone call, and the phone call is an hour somebody was going to spend doing something else.
+- **Attention:** What the organisation has to keep thinking about. A process that needs watching costs more than one that does not, even when it takes no longer.
+
+Stuck starting? Ask what happens after somebody uses your product, and who deals with it.
+
+Is it enough? At least one cost on your list is somebody’s time rather than money.
+
+</details>
+
+#### 4. Find the lever
+
+**See it first.** Made-up example. Finding a design lever at the tool library, and finding one nobody could act on.
+
+- **What I proposed:** Reduce staff time by replacing the evening spreadsheet with a proper booking system. It would remove an hour a day and several categories of error.
+- **Why it was not a lever:** It costs money the library does not have, takes months, and is not a design decision. I had found a good idea belonging to somebody else.
+- **What I could actually change:** The payment screen. Unclear payment status produces about one call per unclear booking, and calls arrive during the hour tools are being checked in.
+- **The mechanism, step by step:** The screen states what has been taken and when confirmation arrives. The person does not ring. The staff member is not interrupted during check-in. Nothing else in the operation changes.
+- **Why that version persuaded anybody:** It is a change I can make this week, the effect is traceable, and it needs nobody’s budget.
+
+**The wrong turn:** The wrong turn is proposing the change that would help most, because the arithmetic on it is obvious. A lever is something your own decisions can move, and the obvious big change is usually somebody else’s to make.
+
+**What it costs:** The screen change addresses a symptom rather than the cause, and the evening spreadsheet is still the real constraint.
+
+**Still unknown:** Still unknown: how many calls are actually about payment status. The staff say most of them, and nobody counts, which the description says rather than converting into a figure.
+
 - Identify one design decision that changes a cost or a value directly.
 - Write the mechanism without inventing figures.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One design decision that changes a cost or a value directly, with the mechanism.
 
-## 5. Check honesty
+Worksheet fields for this step:
+
+- One design decision that changes a cost or a value directly, and the mechanism
+
+<details>
+<summary>Help with this step</summary>
+
+- **A lever:** A design decision whose effect on a cost you can trace. It is what lets you argue in the terms the decision is made in.
+- **The mechanism:** How the change produces the effect, step by step. Without it the claim is an assertion about a number.
+
+Stuck starting? Take the largest cost your design touches and trace how one change would reduce it.
+
+Is it enough? The mechanism has steps rather than a jump from change to outcome.
+
+</details>
+
+#### 5. Check honesty
+
 - Remove any number you cannot source.
 - Save the description with the lever.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Any unsourced number removed, and the repair the Check questions asked for.
 
-## Review and handoff
-- The exchange is described plainly for both sides: [evidence reference]
-- Payer and user are distinguished with conflicts named: [evidence reference]
-- Non-money costs are listed: [evidence reference]
-- One lever is identified with its mechanism and no invented figures: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Any number you removed because you could not source it — Describing economics does not require inventing figures, and an invented figure loses the argument the first time somebody checks.
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **An unsourced number:** A figure you cannot say where you got. It is the fastest way to lose an economic argument, as Module 15 established.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Search your description for every digit and ask where each came from.
+
+Is it enough? Every number left has a source, or has been replaced by a description.
 
 </details>
+
+**Save and continue.** Saved for you: Your exchange, the payer and user, the costs and the lever save as you type, on this device first and then online. Kept outside the app: Nothing confidential belongs here. If somebody told you about their finances in confidence, describe the shape rather than recording the figures. What your creator sees: Your creator reads the costs that are not money and the mechanism on your lever. Those two are where commercial literacy actually shows. Your next action: Open Your work and choose Ready for review. The next lesson draws what happens behind the interface.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -506,78 +757,203 @@ The blueprint for a booking: the person selects, reviews, pays and waits; the vi
 
 Draw a service blueprint for one journey showing what the person sees, what staff do, and what systems are involved, and identify the two places where the back stage decides the front-stage experience.
 
-**Where to work:** A long sheet of paper with three horizontal bands, drawn by hand and photographed. No blueprint tool or template is required.
+**Where to practise:** Draw the three bands of a service blueprint for one journey on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: A long sheet of paper with three horizontal bands, drawn by hand and photographed. No blueprint tool or template is required.
 
 - Starting material: Your experience map and flows.
 - Create HaruCourse/Practice/m17-l03-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# The whole service, front and back
+#### 1. Start from the experience map
 
-Input artifact: Your experience map and flows.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A blueprint with three layers for one journey
-- [ ] The line of visibility marked
-- [ ] Two back-stage facts that determine the front-stage experience
-- [ ] One front-stage change made because of a back-stage constraint
-
-## 1. Start from the experience map
 - Read the assigned mapping guidance, noting that it excludes back-stage process.
 - Lay out your existing journey stages as the top band.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One journey chosen, with its stages laid out as the top band from your existing experience map.
 
-## 2. Add the visible service
+Worksheet fields for this step:
+
+- The stages from your existing experience map, as the top band
+- Which journey, and why this one
+
+<details>
+<summary>Help with this step</summary>
+
+- **Service blueprint:** Three bands: what the person does, what the service shows, and what happens behind it. The third band is what an experience map leaves out.
+- **The top band:** The person’s journey, which you already have. Reusing it keeps the blueprint anchored in something observed.
+
+Stuck starting? Take a long sheet of paper and rule three horizontal bands before writing anything.
+
+Is it enough? The top band is your existing journey rather than a new one.
+
+</details>
+
+#### 2. Add the visible service
+
+**See it first.** Made-up example. Drawing the visible band for a tool-library booking, and leaving the waiting out.
+
+- **What I drew:** Select, review, pay, confirm. Four stages with something in the visible band at each one, and the blueprint looked complete.
+- **What was missing:** The hours between paying and being confirmed. In my drawing, pay and confirm were adjacent, because on the screen they are.
+- **What the person actually experiences:** An evening of not knowing, which is the longest stage of the whole journey and the one that produces the phone call.
+- **What I added:** A waiting stage, as wide on the paper as the hours it takes, with the visible band showing exactly what is on screen during it: a pending message and nothing else.
+- **What that made obvious:** The emptiest part of the visible band is the longest part of the journey. Everything I had designed carefully was for the four minutes, and nothing for the fourteen hours.
+
+**The wrong turn:** The wrong turn is drawing the stages the interface has, because those are the screens and the screens are what you designed. Waiting is a stage, and leaving it out hides the longest and worst part of most services.
+
+**What it costs:** Drawing waiting to scale makes the blueprint ugly and mostly empty, which is an accurate picture of the service.
+
+**Still unknown:** Still unknown: what people do during the wait. One rang twice; the others may have done nothing at all, and the blueprint cannot say.
+
 - Add what the product or a person shows or says at each stage.
 - Mark the line between visible and invisible.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What the service shows or says at each stage, with the line of visibility drawn.
 
-## 3. Add the back stage
+Worksheet fields for this step:
+
+- What the product or a person shows or says at each stage
+- Where the line between visible and invisible falls — Draw it. Everything below it is invisible to the person and decides most of their experience.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Line of visibility:** The boundary between what the person can see and what they cannot. Most delays and failures originate below it.
+- **The visible service:** Screens, messages, and anything a person says to them. It is what a designer normally thinks of as the whole thing.
+
+Stuck starting? Draw the line before filling the band below it, so you can see how much is hidden.
+
+Is it enough? Every stage has something in the visible band, including the stages where the person is waiting.
+
+</details>
+
+#### 3. Add the back stage
+
+**See it first.** Made-up example. Blueprinting a booking at Northside Tool Library, and treating the delay as an operations problem.
+
+- **What the interface promised:** A confirmation, after payment, with the wording we had written carefully in an earlier module.
+- **What actually happened:** Confirmations arrived the next morning. One member had rung twice in an evening, convinced her booking had failed.
+- **What I said about it:** That it was an operations problem: the spreadsheet is updated by hand each evening, and the confirmation goes out when that happens. Nothing to do with the design.
+- **What the blueprint showed:** The hand update sits directly beneath the confirmation stage. The design had promised immediacy that the operation cannot deliver, which makes the promise the thing at fault.
+- **What changed on the front stage:** The pending state says the booking is held and confirmed by the next morning, and the reference number became the person’s proof in the meantime. The evening spreadsheet stayed exactly as it was.
+
+**The wrong turn:** The wrong turn is calling it an operations problem, because the cause genuinely is behind the line. A person waiting does not distinguish your interface from your staffing, and a design promising what the operation cannot deliver is the design at fault.
+
+**What it costs:** The honest pending state is much less satisfying than a confirmation, and somebody will say it makes the product look slow. It is slow, and the person now knows what to expect.
+
+**Still unknown:** Still unknown: whether members would prefer a faster process. Changing the evening update is a real option and it belongs to somebody else, and the blueprint is how it gets raised.
+
 - Add what staff do and what systems are involved at each stage.
 - Mark where work waits for a person and where systems must agree.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What staff do and what systems are involved at each stage, with waits and agreements marked, and assumptions labelled.
 
-## 4. Find the decisive constraints
+Worksheet fields for this step:
+
+- What staff do and what systems are involved at each stage — Where you cannot observe, use what you can find out by asking, and mark anything you had to assume.
+- Where work waits for a person, and where two systems must agree
+
+<details>
+<summary>Help with this step</summary>
+
+- **Back stage:** Staff work and systems the person never sees. Staff constraints are design constraints, whether or not anybody has treated them that way.
+- **Where work waits for a person:** The commonest source of delay. A step done by hand each evening sets the timescale for everything the interface promises.
+
+Stuck starting? Ask what happens after payment, step by step, until the confirmation goes out.
+
+Is it enough? Anything you could not observe is marked as an assumption rather than drawn as a fact.
+
+</details>
+
+#### 4. Find the decisive constraints
+
 - Identify the two back-stage facts that most shape the front-stage experience.
 - Check them with whoever does the work, if you can.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Two back-stage facts that determine the front-stage experience, each with what it determines.
 
-## 5. Change one thing
+**Try it with help.** Six facts about the made up tool library. For each one, decide what it is on a blueprint.
+
+- Bookings are entered into the spreadsheet by hand each evening.
+  - **a back-stage fact that decides the experience** — It sets the timescale for confirmation, which the interface had been promising immediately. Nothing on the front stage can change it.
+  - a back-stage detail with no front-stage effect — Its effect is the most visible thing in the whole journey.
+  - a front-stage decision — Nobody using the service ever sees it.
+- The spreadsheet is the only record of what is booked.
+  - **a back-stage fact that decides the experience** — A double payment is discovered a day later, which decides what proof the person needs to be holding in the meantime.
+  - a back-stage detail with no front-stage effect — It determines what can be checked and when.
+  - a front-stage decision — It is invisible and decisive, which is the pattern this lesson is about.
+- The spreadsheet is colour-coded green for collected and amber for overdue.
+  - a back-stage fact that decides the experience — It helps the staff and changes nothing anybody outside can experience.
+  - **a back-stage detail with no front-stage effect** — Not everything behind the line matters to the front. Marking these keeps the blueprint readable.
+  - a front-stage decision — Nobody sees it.
+- The pending state says the booking is held and confirmed by the next morning.
+  - a back-stage fact that decides the experience — It is the response to one rather than a cause.
+  - a back-stage detail with no front-stage effect — It is entirely front stage.
+  - **a front-stage decision** — A design decision made because of a back-stage constraint, which is the outcome step 5 is asking for.
+- Only one volunteer knows how to issue a refund, and she is there on Tuesdays.
+  - **a back-stage fact that decides the experience** — It sets what a refund message can honestly promise, and it makes Wednesday to Monday a different service from Tuesday.
+  - a back-stage detail with no front-stage effect — Anybody wanting a refund on a Wednesday meets it directly.
+  - a front-stage decision — It is a staffing fact with front-stage consequences.
+- The payment provider confirms within seconds.
+  - a back-stage fact that decides the experience — It would be, if it were slow. Being fast means it is not what sets the timescale.
+  - **a back-stage detail with no front-stage effect** — Worth having on the blueprint, because it shows the delay is not where everybody assumed.
+  - a front-stage decision — It happens behind the line.
+
+**Then:** Now mark your own back-stage band the same way, and take your two decisive facts from the first group.
+
+**What to watch for:** The fast payment provider is the one worth noticing. Blueprinting often shows that the thing everybody blames is not the constraint, and the real one is a person doing something by hand each evening.
+
+Worksheet fields for this step:
+
+- Back-stage fact 1, and what it determines about the front-stage experience
+- Back-stage fact 2, and what it determines
+
+<details>
+<summary>Help with this step</summary>
+
+- **Decisive back-stage fact:** Something behind the line that sets what the front stage can honestly promise: a manual step, a single record, a person who is only there on Tuesdays.
+
+Stuck starting? Go along the back-stage band and ask of each item what the person would notice if it changed.
+
+Is it enough? Both decisive facts name something the front stage cannot fix.
+
+</details>
+
+#### 5. Change one thing
+
 - Change a front-stage design because of a back-stage constraint.
 - Save the blueprint with the change.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One front-stage change made because of a back-stage constraint, with anything assumed rather than observed marked.
 
-## Review and handoff
-- Three layers are drawn with the line of visibility marked: [evidence reference]
-- Back-stage work and systems are specific, not generic: [evidence reference]
-- Two decisive back-stage facts are identified: [evidence reference]
-- A front-stage change follows from a back-stage constraint: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- One front-stage change you made because of a back-stage constraint
+- Anything in the blueprint you had to assume rather than observe
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **A front-stage change from a back-stage constraint:** Changing what you promise rather than what happens. It is usually the only change available to you, and it is frequently the right one.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Take the decisive fact you cannot change and make the front stage honest about it.
+
+Is it enough? The change makes a promise the operation can actually keep.
 
 </details>
+
+**Save and continue.** Saved for you: Your three bands, the line of visibility, the decisive facts and the front-stage change save as you type, on this device first and then online. Kept outside the app: The blueprint is a long sheet of paper. Photograph it, keep it in your own folder, and note the file name; the drawing is the artefact rather than this description of it. What your creator sees: Your creator reads the two decisive facts and what you assumed. A blueprint with no assumptions marked usually means the back stage was imagined. Your next action: Open Your work and choose Ready for review. The next lesson deals with the case where the person paying is not the person using it.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -740,78 +1116,206 @@ The class product's business version has three roles: an office manager who buys
 
 Map the roles in a business-to-business version of your product — buyer, administrator, everyday user — and design one screen that serves two of them without failing the third.
 
-**Where to work:** Paper and written role descriptions. No enterprise tooling is involved.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Paper and written role descriptions. No enterprise tooling is involved.
 
 - Starting material: Your product and its role thinking.
 - Create HaruCourse/Practice/m17-l04-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# When the buyer is not the user
+#### 1. Read the permission vocabulary
 
-Input artifact: Your product and its role thinking.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Three roles described with their differing wants
-- [ ] Two conflicts between roles named
-- [ ] One screen serving two roles without failing the third
-- [ ] What the buyer gets instead of the feature they asked for
-
-## 1. Read the permission vocabulary
 - Read the assigned overview for principals, roles and least privilege.
 - Note that it is infrastructure vocabulary rather than interface guidance.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What the permission reading gives you and what it does not.
 
-## 2. Describe the three roles
+Worksheet fields for this step:
+
+- What the assigned overview gives you, and what it does not — It is infrastructure vocabulary. It says nothing about what a screen should show, which is this lesson’s work.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Least privilege:** Giving each role only the access its work needs. It is an infrastructure principle with a direct interface consequence: fewer things visible to people who should not see them.
+- **Infrastructure vocabulary:** Words for how permissions are structured. None of it says what a screen should show, which is where the design work is.
+
+Stuck starting? Read it for the vocabulary and note the question it leaves open.
+
+Is it enough? You can say what the reading does not cover.
+
+</details>
+
+#### 2. Describe the three roles
+
 - Write what each role wants and is accountable for.
 - Note which of them chose the product.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three roles described by what they want and are accountable for, with the one who chose the product named.
 
-## 3. Find the conflicts
+Worksheet fields for this step:
+
+- The buyer · what they want and what they are accountable for
+- The administrator · what they want and what they are accountable for
+- The everyday user · what they want and what they are accountable for
+- Which of them chose the product
+
+<details>
+<summary>Help with this step</summary>
+
+- **The buyer:** Whoever decided to purchase. They decide once, and their accountability is usually budget and being able to show the thing is used.
+- **The administrator:** Whoever runs it day to day: allocating, chasing, fixing. They are a user with their own tasks, and they are routinely designed for last.
+- **The everyday user:** The person the product is nominally for, who did not choose it and decides whether it is still used in a year.
+
+Stuck starting? Write what each is accountable for rather than what they would like.
+
+Is it enough? All three are described by accountability rather than by attitude.
+
+</details>
+
+#### 3. Find the conflicts
+
+**See it first.** Made-up example. Designing the business version of a class-booking product, and designing for whoever signed.
+
+- **What the buyer asked for:** Attendance reporting: who booked, who turned up, who did not. Entirely reasonable from where she sits, since she has to show the scheme is used.
+- **What we built:** Exactly that. The buyer was delighted, the purchase went through, and the feature took a fortnight.
+- **What the staff experienced:** Being watched. Bookings dropped over two months and the classes that ran were the ones people felt safe being seen at.
+- **What happened at renewal:** The report showed low usage, which was true and was caused by the report. The buyer concluded the scheme was not wanted.
+- **What we should have given her:** An aggregate: how many places used, which classes were popular, month by month. It answers her accountability completely and names nobody.
+
+**The wrong turn:** The wrong turn is building what the buyer asked for, because the buyer signed and the request is reasonable. The buyer decides once; the everyday user decides whether it is still used in a year, and a feature that costs them usage destroys the thing the buyer was buying.
+
+**What it costs:** The aggregate cannot answer a manager asking about one named person, and occasionally somebody genuinely needs to. Saying no to that is the trade.
+
+**Still unknown:** Still unknown: how much of the drop was the reporting. Two months and one change is not a controlled comparison, and the mechanism was what the staff said.
+
 - Name two places where the roles want incompatible things.
 - Say who currently wins and why.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Two conflicts named, each with the pair of roles and who currently wins.
 
-## 4. Design the screen
+Worksheet fields for this step:
+
+- Conflict 1 · what two roles want incompatibly, and who currently wins
+- Conflict 2 · the same, for a different pair
+
+<details>
+<summary>Help with this step</summary>
+
+- **Conflict:** Two roles wanting incompatible things. Attendance reporting and not being watched is the standard one; bulk allocation and choosing for yourself is the other.
+- **Who currently wins:** Usually the buyer, because the buyer signed. Naming it is what makes it a decision rather than a default.
+
+Stuck starting? Ask what the buyer would want that the everyday user would dislike.
+
+Is it enough? Both conflicts name a pair of roles and a current winner.
+
+</details>
+
+#### 4. Design the screen
+
 - Design one screen serving two roles without harming the third.
 - Show the everyday user what others can see about them.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One screen serving two roles without failing the third, showing the everyday user what others can see about them.
 
-## 5. Give the buyer evidence
+**Try it with help.** Six features somebody might ask for in a made up business version. For each one, decide who it serves and at whose cost.
+
+- A monthly report of how many places were used and which classes were popular, naming nobody.
+  - **serves everybody** — It answers the buyer’s accountability completely and costs the staff member nothing, because nobody is named.
+  - serves the buyer at the user’s cost — The cost is what naming people would produce, and this does not.
+  - serves the administrator at the user’s cost — It makes the administrator’s reporting easier as well.
+- A report showing which named staff booked and which turned up.
+  - serves everybody — The buyer gets what she asked for and the staff member gets watched.
+  - **serves the buyer at the user’s cost** — Bookings fall, the report shows low usage, and the scheme is judged unwanted. The feature destroys the thing it measures.
+  - serves the administrator at the user’s cost — The administrator is a conduit here rather than the beneficiary.
+- Bulk allocation, so the administrator can enrol thirty staff into a class at once.
+  - serves everybody — The staff member is enrolled in something they did not choose, at a time they may not be free.
+  - serves the buyer at the user’s cost — The buyer benefits indirectly; the work saved is the administrator’s.
+  - **serves the administrator at the user’s cost** — It is a real need and it needs a decline route, or it becomes enrolment by decree.
+- Bulk allocation that arrives as an invitation the staff member can decline in one tap.
+  - **serves everybody** — The administrator does the work once, the staff member keeps the choice, and the buyer still gets places used.
+  - serves the buyer at the user’s cost — Nothing here costs the staff member anything.
+  - serves the administrator at the user’s cost — It serves the administrator without the cost.
+- A line on the staff member’s booking screen saying exactly what their employer can see.
+  - **serves everybody** — It costs the buyer nothing and removes the assumption that the worst is true. Products that hide this lose trust for free.
+  - serves the buyer at the user’s cost — The buyer loses nothing, unless the true answer is embarrassing, which is itself a finding.
+  - serves the administrator at the user’s cost — It makes the administrator’s job easier by removing a recurring question.
+- A control letting a manager cancel a staff member’s booking without telling them.
+  - serves everybody — Somebody turns up to a class they are no longer booked into.
+  - **serves the buyer at the user’s cost** — It solves a real scheduling problem by making the product unreliable for the person using it. Without telling them is the part that makes it indefensible.
+  - serves the administrator at the user’s cost — The administrator may be the one operating it, and the request comes from above them.
+
+**Then:** Now design your own screen, and check the third role would still choose to use the product because of it.
+
+**What to watch for:** Two of the costly three become acceptable with one addition: a decline route, or telling the person. Most buyer-versus-user conflicts are not about the feature but about whether the person it happens to gets a say or a warning.
+
+Worksheet fields for this step:
+
+- The screen, and which two roles it serves
+- How it shows the everyday user what others can see about them — Somebody who does not know what their employer sees assumes the worst, which is usually accurate and always corrosive.
+- How the third role is not failed by it
+
+<details>
+<summary>Help with this step</summary>
+
+- **What others can see:** Shown to the person it is about. Without it, people assume the worst, which is corrosive and frequently correct.
+- **Failing the third role:** Serving two by making the third worse. The test is whether the third would still choose to use it.
+
+Stuck starting? Design the everyday user’s screen first; it is the one nobody starts with.
+
+Is it enough? The third role can see what the other two can see about them.
+
+</details>
+
+#### 5. Give the buyer evidence
+
+**See it first.** Made-up example. Answering a buyer’s reporting need, and answering it with less of the same thing.
+
+- **What I offered:** The same named attendance report, quarterly rather than monthly. Less surveillance, I thought, and still an answer.
+- **What it changed for the staff member:** Nothing. Being named four times a year rather than twelve is the same kind of thing at a lower frequency, and people behave as though it were monthly.
+- **What the buyer actually had to show:** That the scheme was being used and worth renewing. Nothing in her accountability required a name.
+- **What answered it completely:** Places used, by class and by month, with nobody named. She could show usage, see which classes worked, and make the renewal case.
+- **What I learned about offering alternatives:** Less of the harmful thing is not an alternative. The alternative has to answer the accountability by a different route.
+
+**The wrong turn:** The wrong turn is offering a reduced version of the thing you objected to, because it feels like meeting somebody halfway. A smaller dose of the same harm changes the amount and not the kind.
+
+**What it costs:** The aggregate genuinely cannot answer a manager asking about one named person, and occasionally somebody has a legitimate reason to ask.
+
+**Still unknown:** Still unknown: whether the buyer will accept it at renewal. She has what she needs for the case she has to make, and somebody above her may ask for more.
+
 - Decide what the buyer gets instead of the feature that would cost the user.
 - Save the roles, conflicts and screen.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What the buyer gets instead of the feature that would cost the user.
 
-## Review and handoff
-- Three roles are described with their accountabilities: [evidence reference]
-- Two genuine conflicts are named with the current winner: [evidence reference]
-- The designed screen serves two roles without failing the third: [evidence reference]
-- The buyer receives evidence rather than a costly feature: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What the buyer gets instead of the feature that would cost the user
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Instead, not nothing:** The buyer has a real accountability. Refusing the feature without answering it loses the argument and deserves to.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Write what the buyer has to be able to show, then find the smallest thing that shows it.
+
+Is it enough? The buyer’s accountability is answered without naming anybody.
 
 </details>
+
+**Save and continue.** Saved for you: Your three roles, the conflicts, the screen and the buyer alternative save as you type, on this device first and then online. Kept outside the app: Sketches of the screen stay in your own folder. Nothing about any real employer or employee belongs here. What your creator sees: Your creator reads what the buyer gets instead. A refusal with no alternative is the half of this lesson that usually goes missing. Your next action: Open Your work and choose Ready for review. The next lesson traces what happens after people adapt to your design.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -974,79 +1478,205 @@ The loop: making cancellation one tap reduced the friction that had been suppres
 
 Identify one place where your product's design creates a second-order effect, trace the loop, and design a response that does not simply add a warning.
 
-**Where to work:** Paper for the loop diagram. Boxes and arrows with the delay marked; no systems-modelling tool is required.
+**Where to practise:** Draw the loop your change sets off, with the delay marked on each arrow on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper for the loop diagram. Boxes and arrows with the delay marked; no systems-modelling tool is required.
 
 - Starting material: Your service blueprint.
 - Create HaruCourse/Practice/m17-l05-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Systems that push back
+#### 1. Choose a change and ask what follows
 
-Input artifact: Your service blueprint.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] One second-order effect identified with the adaptation that causes it
-- [ ] A drawn loop with its delay marked
-- [ ] What people are being rewarded to do, named
-- [ ] A structural response rather than a warning
-
-## 1. Choose a change and ask what follows
 - Take a change you have made or plan to make.
 - Write what people will do differently once it exists.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One change chosen, with what people will do differently once it exists.
 
-## 2. Trace the loop
+Worksheet fields for this step:
+
+- A change you have made or plan to make
+- What people will do differently once it exists — The adaptation, not the intention. What does it now make easy that was not easy before?
+
+<details>
+<summary>Help with this step</summary>
+
+- **Second-order effect:** What happens after people adapt to a change. The first-order effect is what you designed; the second is what they do with it.
+- **Adaptation:** The behaviour your change makes easy. People do more of whatever you made cheap, whether or not you wanted them to.
+
+Stuck starting? Ask what your change makes cheap that used to be expensive.
+
+Is it enough? Your adaptation is a behaviour rather than an attitude.
+
+</details>
+
+#### 2. Trace the loop
+
+**See it first.** Made-up example. Making cancellation one tap at a class provider, and watching the consequence arrive somewhere else.
+
+- **What we changed:** Cancellation went from a phone call to one tap. An obvious improvement, and everybody who had struggled with it was pleased.
+- **What people did:** Booked more casually, because the cost of being wrong had gone. Bookings rose about a fifth, which looked like a success.
+- **What arrived four weeks later:** Late cancellations rose. Classes that looked full on Thursday ran half-full on Saturday, twice in a row.
+- **What the provider did about it:** Overbooked, reasonably, to protect against the pattern. Two weeks after that, a class was genuinely full and four people were turned away at the door.
+- **What the loop was:** Easier cancellation, more casual bookings, more late cancellations, unreliable demand, overbooking, turned-away attendees — which is the worst outcome in the service, six weeks after a change everybody liked.
+
+**The wrong turn:** The wrong turn is stopping at the first effect, because it is the one you designed and it was good. Six weeks of delay means the turned-away attendees get attributed to overbooking rather than to a cancellation button.
+
+**What it costs:** Tracing loops before shipping produces objections to changes that are genuinely improvements, and most of the loops you trace will not happen.
+
+**Still unknown:** Still unknown: how much of the rise in late cancellations came from the change. Bookings rose too, and nobody separated the two.
+
 - Follow the adaptation to its effect on the system.
 - Check whether that effect feeds back to the original cause.
 - Mark the delay on each arrow.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The chain traced from adaptation to system effect, whether it feeds back, and the delay on each arrow.
 
-## 3. Name the incentives
+Worksheet fields for this step:
+
+- The chain from the adaptation to its effect on the system
+- Whether that effect feeds back to the original cause, and how
+- The delay on each arrow — Delays are what hide loops. An effect six weeks later gets attributed to something else entirely.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Loop:** Where the effect of a change feeds back into its own cause. It is what makes a small change produce a large and delayed result.
+- **Delay:** How long each step takes. Delays are what hide loops: an effect six weeks later gets attributed to something else entirely.
+
+Stuck starting? Draw boxes and arrows on paper, and write a time on every arrow.
+
+Is it enough? At least one arrow has a delay measured in weeks.
+
+</details>
+
+#### 3. Name the incentives
+
+**See it first.** Made-up example. Checking incentives at a class provider, and checking only the members.
+
+- **What I checked:** What the easier cancellation rewarded members for doing. More casual booking, which I had already traced.
+- **Who I had not checked:** The provider. She is measured, by herself, on classes running rather than being cancelled for low numbers.
+- **What that incentive produced:** Overbooking, as soon as demand looked unreliable. It is entirely rational from where she stands and it is the step that turned an annoyance into people turned away at the door.
+- **What I had assumed:** That the provider was a fixed part of the system rather than a party with incentives of her own. Everybody in a loop is responding to something.
+- **What changed in the response:** The waiting list serves her incentive directly: the class fills, so there is nothing for overbooking to protect against. It closes the loop at the point where somebody was being rewarded for something harmful.
+
+**The wrong turn:** The wrong turn is checking the incentives of the people your design is for, because those are the ones you have been thinking about. Everybody in the loop responds to something, and the harmful step is usually somebody else being rational.
+
+**What it costs:** Taking the provider’s incentive seriously means designing around a behaviour you would rather she did not have, instead of asking her to stop.
+
+**Still unknown:** Still unknown: whether she would have stopped overbooking if asked. Possibly, and the structural answer works whether or not she does.
+
 - Write what each party is rewarded or measured on.
 - Check your change does not reward something harmful.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What each party is rewarded or measured on, and whether your change rewards anything harmful.
 
-## 4. Design the structural response
+Worksheet fields for this step:
+
+- What each party is rewarded or measured on
+- Whether your change rewards anything harmful
+
+<details>
+<summary>Help with this step</summary>
+
+- **Incentive:** What somebody is rewarded or measured on. People optimise for it, including in ways nobody intended.
+- **Rewarding harm:** Making something easy or visible that damages the system. It rarely looks like that at the moment of the decision.
+
+Stuck starting? Write what each party would do more of if they were trying to score well.
+
+Is it enough? You checked your own change against each party’s incentive.
+
+</details>
+
+#### 4. Design the structural response
+
 - Change what is easy or visible rather than adding a warning.
 - Check the response does not create its own loop.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A structural response that changes what is easy or visible, with a check that it does not create its own loop.
 
-## 5. Record
+**Try it with help.** Six responses to the made up cancellation loop. For each one, decide what it would do.
+
+- A late cancellation offers the place to a short waiting list automatically.
+  - **a structural response** — It closes the loop where it was doing harm: the class fills, demand stays legible, and nobody has to be more careful.
+  - a warning in disguise — Nobody is being asked to change their behaviour.
+  - a response that creates its own loop — It might, if the waiting list becomes the normal way to book. Worth watching, and much smaller than the loop it closes.
+- A confirmation asking “Are you sure? Late cancellations affect other members.”
+  - a structural response — Nothing about the system changes. One tap became two taps and a small guilt.
+  - **a warning in disguise** — It asks the person to solve a structural problem by being more considerate, and the ones who read it are the ones least likely to be the problem.
+  - a response that creates its own loop — It mostly produces irritation rather than a loop.
+- A small fee for cancelling within 24 hours.
+  - a structural response — It genuinely changes an incentive, which is why it is tempting.
+  - a warning in disguise — It has teeth rather than words.
+  - **a response that creates its own loop** — People stop cancelling and simply do not turn up, which is worse for the provider than a cancellation and invisible until the class starts.
+- Put cancellation back to a phone call.
+  - a structural response — It removes the loop by removing the improvement, along with everybody it helped.
+  - a warning in disguise — It is a real change rather than a message.
+  - **a response that creates its own loop** — The friction suppressed bookings before and would again, and the people it suppresses are the casual ones the provider needs.
+- Show, at the moment of booking, how many places are left and that the class runs only if six people attend.
+  - **a structural response** — It changes what is visible at the moment of the decision, so a casual booking is made with its consequence in view. Nobody is asked to be more careful in the abstract.
+  - a warning in disguise — It states a fact about the class rather than an appeal to conscience.
+  - a response that creates its own loop — It could suppress bookings for nearly-empty classes, which is worth watching and is roughly what the provider needs to know anyway.
+- A reminder email the day before, asking people to cancel if they cannot attend.
+  - a structural response — It changes nothing about what is easy; it asks people to remember and to care.
+  - **a warning in disguise** — A polite one, and it moves the problem onto the person least able to fix the structure.
+  - a response that creates its own loop — It is too weak to produce one.
+
+**Then:** Now choose your own response, and check it does not simply ask somebody to be more careful.
+
+**What to watch for:** Two of these change what somebody sees or what happens automatically, and neither asks anything of the person. The fee and the revert are real changes that trade one loop for another, which is worth knowing before shipping rather than after.
+
+Worksheet fields for this step:
+
+- What you changed about what is easy or visible — Not a warning. A warning asks the person to solve a structural problem by being more careful.
+- Whether your response creates a loop of its own
+
+<details>
+<summary>Help with this step</summary>
+
+- **Structural response:** Changing what is easy, visible or automatic. It works without anybody having to be more careful.
+- **A warning:** Asking the person to solve a structural problem by paying attention. It is the commonest response and it moves the problem onto whoever is least able to fix it.
+
+Stuck starting? Ask what would close the loop without anybody having to remember anything.
+
+Is it enough? Your response changes what is easy, visible or automatic rather than what is requested.
+
+</details>
+
+#### 5. Record
+
 - Write what you would watch for, and when it would appear.
 - Save the loop and the response.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What you would watch for and when it would appear, and the repair the Check questions asked for.
 
-## Review and handoff
-- A second-order effect is identified with the adaptation behind it: [evidence reference]
-- A loop is drawn with delays marked: [evidence reference]
-- Incentives are named for each party: [evidence reference]
-- The response is structural rather than a warning: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What you would watch for, and when it would appear
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **When it would appear:** The delay you marked, applied forward. Watching for something in the wrong week is the same as not watching.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Take the longest delay on your diagram and count forward from the ship date.
+
+Is it enough? Your watch item has a date attached rather than an intention to keep an eye on it.
 
 </details>
+
+**Save and continue.** Saved for you: Your change, the traced loop, the incentives, the response and the watch item save as you type, on this device first and then online. Kept outside the app: The loop is a drawing. Photograph it, keep it in your own folder, and note the file name; the delays on the arrows are the part that matters. What your creator sees: Your creator reads the delays and whether your response is structural. A response that asks people to be careful is the commonest answer here. Your next action: Open Your work and choose Ready for review. The next lesson maps the people who can stop any of this happening.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1209,78 +1839,203 @@ The map for the booking work: the provider, accountable for revenue and her own 
 
 Map the people who can affect or block your work, what each is accountable for, and design your approach to the one whose opposition would cost most.
 
-**Where to work:** A written map or a simple two-axis sketch. No stakeholder-mapping tool is required.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A written map or a simple two-axis sketch. No stakeholder-mapping tool is required.
 
 - Starting material: Your project and its pending decisions.
 - Create HaruCourse/Practice/m17-l06-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Stakeholders and their actual interests
+#### 1. List by accountability
 
-Input artifact: Your project and its pending decisions.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A map of people by accountability, interest and influence
-- [ ] The rational basis of one person's opposition
-- [ ] An approach to the costliest opposition
-- [ ] The quiet blocker identified
-
-## 1. List by accountability
 - List everyone who can affect or block the work.
 - Write what each is accountable for, not their title.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Everybody who can affect or block the work listed by what they are accountable for.
 
-## 2. Place them
+Worksheet fields for this step:
+
+- Everybody who can affect or block the work, and what each is accountable for — Accountable for, not their job title. What does somebody else ask them about?
+- If you have no team, whose decisions actually constrain your work — A client, a provider, a platform, a family member whose time you need. The mapping works on any of them.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Accountability:** What somebody else asks them about: a date, a budget, a queue, a number they report. It predicts behaviour far better than a job title.
+- **Affect or block:** Anybody whose agreement you need or whose disagreement would stop it. It includes people with no formal authority at all.
+
+Stuck starting? For each person, write the question their own manager asks them.
+
+Is it enough? Nobody on your list is described only by their role.
+
+</details>
+
+#### 2. Place them
+
+**See it first.** Made-up example. Placing stakeholders for booking work, and placing them by how much they talk.
+
+- **Who I put at the top:** The two people who commented most: the provider, who has views about everything, and a committee member who replies to every message.
+- **Who I put at the bottom:** The assistant, who had said almost nothing in three meetings.
+- **What the assistant actually knew:** Everything. She handles the list every evening, takes the phone calls, and could name the four things that go wrong most, in order.
+- **What she could decide:** Nothing at all. High interest, no influence, and the best-informed person in the project.
+- **What placing her properly changed:** She became the person I checked things with rather than the person I informed. The committee member, who had high influence and almost no interest, needed two sentences a month rather than a conversation a week.
+
+**The wrong turn:** The wrong turn is placing people by how much they contribute in meetings, because volume is the visible signal. It confuses interest with influence and hides the person who knows most.
+
+**What it costs:** Treating a quiet colleague as the best source means a weekly conversation with somebody whose time is not formally yours to take.
+
+**Still unknown:** Still unknown: whether the committee member’s low interest is permanent. Interest changes when something goes wrong, and the map is a snapshot.
+
 - Place each on interest and influence.
 - Mark the allies with interest and no influence.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each person placed on interest and on influence, with the high-interest allies who decide nothing identified.
 
-## 3. Understand the opposition
+Worksheet fields for this step:
+
+- Each person placed on interest and on influence — Two separate axes. Somebody can care enormously and decide nothing.
+- The allies with high interest and no influence — Usually the people who know best where the real problems are.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Interest:** How much they care about this work. It is independent of whether they can do anything about it.
+- **Influence:** How much their view decides. The two axes are separate, and confusing them is why people spend a week persuading somebody who was never going to decide.
+
+Stuck starting? Place the two axes on paper and put people on it rather than writing a list.
+
+Is it enough? Somebody appears with high interest and low influence.
+
+</details>
+
+#### 3. Understand the opposition
+
+**See it first.** Made-up example. Mapping stakeholders for booking work, and reading opposition as obstruction.
+
+- **What I thought:** The developer was blocking the work. Every conversation produced another reason it was difficult, and I had begun describing him as resistant to change.
+- **What he was accountable for:** A release date, committed to somebody else three weeks earlier. My work threatened it and nothing about my proposal acknowledged that.
+- **What that made his objection:** Entirely rational. From where he stood, saying yes meant missing a date he had promised, in exchange for improving something he had not been asked about.
+- **What I changed:** Cut the scope to the appetite, defined the two undefined states so the estimate fell, and offered it in two parts so the first could ship after the date rather than before it.
+- **What happened:** He agreed in ten minutes. Nothing about his view had changed; the proposal had stopped costing him the thing he was accountable for.
+
+**The wrong turn:** The wrong turn is reading opposition as obstruction, because that is what it feels like from the other side of it. An objection you cannot construct a rational basis for is one you have not understood, and you cannot answer what you have not understood.
+
+**What it costs:** Reshaping the proposal around somebody else’s accountability means a smaller piece of work, later, in two parts.
+
+**Still unknown:** Still unknown: whether he would have agreed to the original after the date passed. Possibly, and the six weeks of waiting would have cost more than the split did.
+
 - For the costliest opposition, write why their position is rational.
 - Name the cost your work imposes on them.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Whose opposition would cost most, and why it is rational from where they stand.
 
-## 4. Design the approach
+Worksheet fields for this step:
+
+- Whose opposition would cost most, and what they are accountable for
+- Why their opposition is rational from where they stand — It nearly always is. If you cannot construct it, you have not understood their accountability yet.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Rational opposition:** An objection that makes sense given what somebody is accountable for. It nearly always is, and treating it as irrational guarantees you will not answer it.
+- **Costliest:** Not the loudest. The person whose no is hardest to work around, which is usually about their accountability rather than their seniority.
+
+Stuck starting? Write their objection in the first person, as they would put it.
+
+Is it enough? You could argue their side convincingly.
+
+</details>
+
+#### 4. Design the approach
+
 - Remove or reduce the cost where you can.
 - Where you cannot, acknowledge it and say what you are asking for.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What your work does for them, or an honest statement that you are asking a favour, with the approach designed.
 
-## 5. Find the quiet one
+**Try it with help.** Six approaches to a made up stakeholder whose objection is rational. For each one, decide what it would achieve.
+
+- Cut the scope so it fits inside the time before their committed date.
+  - **addresses their accountability** — It removes the thing the objection was about. Nothing about their view has to change.
+  - ignores it — It is aimed precisely at it.
+  - makes it worse — It costs you scope rather than costing them anything.
+- Define the two undefined states so the estimate falls from a week to three days.
+  - **addresses their accountability** — The uncertainty was what made it expensive, as Module 14 showed. Removing it is work you can do alone.
+  - ignores it — It is the most direct answer available.
+  - makes it worse — It costs you an afternoon and costs them nothing.
+- Take it to their manager and get the work mandated.
+  - addresses their accountability — It overrides the accountability rather than answering it, and the date is still there.
+  - ignores it — It does more than ignore it.
+  - **makes it worse** — They now have the same problem and a reason to be careful with you. It also works once.
+- Explain again why the work matters for users.
+  - addresses their accountability — They may already agree it matters. Agreement was never the obstacle.
+  - **ignores it** — It answers a question nobody asked. Repeating the value is what people do when they have not understood the objection.
+  - makes it worse — It is ineffective rather than damaging, though the third repetition begins to be.
+- Offer it in two parts, so the first ships after their date rather than before it.
+  - **addresses their accountability** — The date is protected and the work still happens. It costs sequencing rather than substance.
+  - ignores it — It is shaped entirely around their constraint.
+  - makes it worse — It delays your work, which is a cost to you rather than to them.
+- Describe them to others as resistant to change.
+  - addresses their accountability — It replaces their reason with a character trait.
+  - ignores it — Worse than ignoring: it makes the objection unanswerable by making it about them.
+  - **makes it worse** — It also gets back to them, and it costs you the next five conversations.
+
+**Then:** Now design your own approach from the first group, and write what it costs you rather than them.
+
+**What to watch for:** Everything that works costs you something — scope, sequencing, an afternoon of definition — and costs them nothing. Escalating and re-explaining are the two moves that feel like progress and are not.
+
+Worksheet fields for this step:
+
+- What your work does for them, or that you are asking a favour — Both are legitimate. Asking a favour while pretending it is a benefit is not.
+- The approach: what you would change, offer or ask
+
+<details>
+<summary>Help with this step</summary>
+
+- **What it does for them:** The connection to their accountability. Where there genuinely is none, the honest framing is a favour.
+- **Asking a favour:** A legitimate move, once. Asking one while calling it a benefit is how people stop believing your framing entirely.
+
+Stuck starting? Ask what you could change about the proposal rather than about their mind.
+
+Is it enough? Your approach costs you something rather than requiring them to change their view.
+
+</details>
+
+#### 5. Find the quiet one
+
 - Identify who could simply never prioritise this.
 - Write what would make them prioritise it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The quiet blocker identified, with what their unstated reservation probably is.
 
-## Review and handoff
-- People are mapped by what they are accountable for: [evidence reference]
-- Interest and influence are separated: [evidence reference]
-- One opposition is explained as rational, with its cost: [evidence reference]
-- The quiet blocker is identified with what would move them: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The quiet blocker: somebody whose unstated reservations could stop this — The loud sceptic tells you their objection. The quiet one does not, and is usually the one who decides whether it survives.
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **The quiet blocker:** Somebody with reservations they have not stated. They rarely say no; the work simply never quite happens, and nobody can point at why.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Look for somebody who has been agreeable in every meeting and has done nothing.
+
+Is it enough? You named a person and a plausible reservation rather than a general worry.
 
 </details>
+
+**Save and continue.** Saved for you: Your list, the placements, the rational basis and the approach save as you type, on this device first and then online. Kept outside the app: Keep this one to yourself. A stakeholder map is working material, and it reads very differently to the people on it. What your creator sees: Your creator reads the rational basis you constructed. An opposition described as obstruction is one nobody has understood yet. Your next action: Open Your work and choose Ready for review. The next lesson decides what to do when the information is not going to arrive.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1443,78 +2198,207 @@ The decision: whether to build the waiting list before or after the improved pay
 
 Make one real decision under uncertainty, recording what you knew, what you assumed, what would have changed it, and how you will find out whether it was right.
 
-**Where to work:** Written work, plus whatever cheap check reduces the one uncertainty that matters.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Written work, plus whatever cheap check reduces the one uncertainty that matters.
 
 - Starting material: One decision you have been postponing.
 - Create HaruCourse/Practice/m17-l07-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Deciding without enough information
+#### 1. Separate the inputs
 
-Input artifact: One decision you have been postponing.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Listing what was known before a decision, and listing what everybody said.
 
-## Output checklist
-- [ ] A decision made, with knowns, assumptions and guesses separated
-- [ ] The cost and reversibility assessed
-- [ ] The one finding that would have changed it
-- [ ] A check date for the recorded assumption
+- **What I wrote as knowns:** That members find the payment step confusing, that late cancellations are common, and that the provider wants a waiting list.
+- **What I could actually show:** The third. The provider had said it, in writing, twice.
+- **What the first one really was:** An assumption with a long history. Three people had said something adjacent to it in Module 5, and it had hardened into a known through repetition in my own documents.
+- **What the second one was:** A guess. Everybody believed it, nobody had counted, and the count took twenty minutes and turned out to support it.
+- **What the three lists looked like afterwards:** One known, one assumption with its evidence named, and one guess that became a known before lunch. The decision rested on the last one, which is why it was worth counting.
 
-## 1. Separate the inputs
+**The wrong turn:** The wrong turn is writing down what everybody believes, because agreement feels like evidence. Repetition inside your own documents is how an assumption becomes a known without anybody checking it.
+
+**What it costs:** Crossing off most of your knowns is uncomfortable and makes the decision look less well-founded than it felt an hour earlier.
+
+**Still unknown:** Still unknown: whether payment confusion is actually common. It is back in the assumption column, where it was all along.
+
 - Write what you know, what you assume and what you are guessing.
 - Mark which of them the decision actually depends on.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One open decision, with knowns, assumptions and guesses separated, and which the decision depends on.
 
-## 2. Assess cost and reversibility
+Worksheet fields for this step:
+
+- The open decision
+- What you know, what you assume, and what you are guessing — Three separate lists. Most things people call knowns are assumptions with a long history.
+- Which of them the decision actually depends on
+
+<details>
+<summary>Help with this step</summary>
+
+- **Know:** Something you could show somebody: a count, a record, an observation. Far less than most lists of knowns contain.
+- **Assume:** Something you are treating as true without evidence, usually reasonably. It is the category that needs writing down, because it is what you check later.
+- **Guess:** Something you have no basis for at all. Naming it separately stops it being quietly promoted.
+
+Stuck starting? Write the knowns first, then cross off everything you could not show somebody.
+
+Is it enough? Your knowns list is shorter than you expected.
+
+</details>
+
+#### 2. Assess cost and reversibility
+
 - Write what being wrong would cost and how hard it would be to undo.
 - Decide how much certainty this level of cost justifies.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What being wrong would cost and to whom, how reversible it is for everybody affected, and how much certainty that justifies.
 
-## 3. Find the decisive question
+Worksheet fields for this step:
+
+- What being wrong would cost, and to whom
+- How hard it would be to undo, for everybody affected — Not how hard for you. The consequences are what have to be reversible.
+- How much certainty this level of cost justifies
+
+<details>
+<summary>Help with this step</summary>
+
+- **Reversible for everybody:** Whether the consequences can be undone, not whether the change can. Module 15 made the same distinction about measurement.
+- **Certainty proportionate to cost:** A cheap, reversible decision justifies almost none. An expensive, irreversible one justifies waiting.
+
+Stuck starting? Ask who pays if this is wrong, and whether they can get it back.
+
+Is it enough? Your reversibility judgement is about the people affected rather than about your own effort.
+
+</details>
+
+#### 3. Find the decisive question
+
+**See it first.** Made-up example. Deciding what to build first at a class provider, and asking for more research.
+
+- **The decision:** Whether to build the waiting list before or after the improved payment states. Both were worth doing and there was time for one.
+- **What I said:** That we needed more research before deciding. It is the responsible-sounding answer and nobody argues with it.
+- **The question I had not asked:** Which finding would change the order. I listed five things research could tell me and four of them would not have moved the decision at all.
+- **What the fifth was:** Whether late cancellations were actually common. If they were rare, the waiting list was pointless and payment states went first.
+- **How long that took to answer:** Twenty minutes with the provider’s own records. They were common, and the decision was made that afternoon rather than in three weeks.
+
+**The wrong turn:** The wrong turn is asking for more research without naming what it would change, because it sounds rigorous and postpones a difficult choice. Four of the five things I wanted to know were interesting and irrelevant to the decision in front of me.
+
+**What it costs:** Deciding on one twenty-minute check means the other four questions stay unanswered, and one of them might have mattered for something else.
+
+**Still unknown:** Still unknown: whether a waiting list will actually fill those places. That is the assumption the decision rests on, and it is written down with a check at four weeks.
+
 - Write which finding would produce a different decision.
 - If none would, decide now and record that.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The finding that would produce a different decision, or a written statement that none would.
 
-## 4. Reduce it cheaply if you can
+Worksheet fields for this step:
+
+- Which finding would produce a different decision
+- If no finding would change it, write that and decide now — This is the commonest honest answer, and it is what turns more research into a delay rather than a step.
+
+<details>
+<summary>Help with this step</summary>
+
+- **The decisive question:** The one whose answer changes the choice. Research that would not change it is worth doing later, for other reasons.
+- **Deciding now:** What to do when no finding would change the choice. Waiting in that situation is a delay with a research budget attached.
+
+Stuck starting? List everything research could tell you, then cross off everything that would not change the choice.
+
+Is it enough? You can name the one finding that matters, or say plainly that there is none.
+
+</details>
+
+#### 4. Reduce it cheaply if you can
+
 - Find the cheapest way to reduce the one uncertainty that matters.
 - Do it if it takes under an hour; otherwise decide with the assumption stated.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The cheapest way to reduce the one uncertainty that matters, done if it takes under an hour, with what it showed.
 
-## 5. Record and set a check
+**Try it with help.** Six responses to a made up decision that has to be made this week. For each one, decide what it is.
+
+- Twenty minutes counting late cancellations in the provider’s existing records.
+  - **a cheap check worth doing** — It answers the one question that changes the decision, from a record that already exists, before lunch.
+  - a delay with a research budget — Twenty minutes is not a delay.
+  - deciding with the assumption stated — There is no need to assume something you can count this morning.
+- A three-week study of member attitudes to waiting lists.
+  - a cheap check worth doing — Three weeks is the opposite of cheap when the decision is this week.
+  - **a delay with a research budget** — It would produce interesting findings and the decision would already have been made by default in the meantime.
+  - deciding with the assumption stated — It is a way of not deciding.
+- One conversation with the provider about how often classes run half-full.
+  - **a cheap check worth doing** — Ten minutes, and the person has watched it happen every week for two years.
+  - a delay with a research budget — A conversation you could have this afternoon is not a delay.
+  - deciding with the assumption stated — Asking first is cheaper than assuming.
+- Recording that a waiting list is assumed to fill enough places to be worth a fortnight, with a check at four weeks.
+  - a cheap check worth doing — Nothing available this week answers it; only running the thing does.
+  - a delay with a research budget — Nothing is being delayed.
+  - **deciding with the assumption stated** — The honest move for an uncertainty you cannot reduce cheaply: name it, decide, and set a date to look.
+- Waiting until analytics are in place so the question can be answered properly.
+  - a cheap check worth doing — Analytics do not exist and are not being built this quarter.
+  - **a delay with a research budget** — Waiting for infrastructure that is not coming is the most expensive form of not deciding.
+  - deciding with the assumption stated — It avoids stating anything.
+- Building the waiting list in a rough form for one class this Saturday and seeing whether anybody joins.
+  - **a cheap check worth doing** — It costs an afternoon, it answers the actual assumption rather than a proxy for it, and it is reversible.
+  - a delay with a research budget — It is a day rather than a study.
+  - deciding with the assumption stated — It does better than stating the assumption: it tests it.
+
+**Then:** Now find your own cheapest check, and do it if it is under an hour.
+
+**What to watch for:** The useful checks all use something that already exists: a record, a person who has been watching, or a rough version running once. The delays all wait for something that has to be built or arranged first.
+
+Worksheet fields for this step:
+
+- The cheapest way to reduce the one uncertainty that matters, and whether you did it — Under an hour: do it. Longer: decide with the assumption stated.
+- What it showed
+
+<details>
+<summary>Help with this step</summary>
+
+- **The cheapest check:** Twenty minutes in an existing record, one conversation, a count by hand. It is usually available and usually not looked for.
+- **The last responsible moment:** When deciding later stops adding information and starts costing time. It is neither as early as possible nor as late as possible.
+
+Stuck starting? Ask what already exists that would answer the decisive question.
+
+Is it enough? Either you did the check, or you wrote the assumption down instead.
+
+</details>
+
+#### 5. Record and set a check
+
 - Record the decision, the assumption and the reasoning.
 - Set a date to check whether the assumption held.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The decision, the assumption, the reasoning, and a date to check whether the assumption held.
 
-## Review and handoff
-- Knowns, assumptions and guesses are separated: [evidence reference]
-- Cost and reversibility are assessed: [evidence reference]
-- The decisive finding is named, or its absence stated: [evidence reference]
-- The assumption is recorded with a check date: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The decision, the assumption it rests on, and the reasoning
+- The date you will check whether the assumption held, and what you will look at
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **A decision with no way to find out:** A bet. Recording the assumption and a date is what makes it a decision instead.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Write the assumption in the form: this is right if ….
+
+Is it enough? The check date is a date and names what you will look at.
 
 </details>
+
+**Save and continue.** Saved for you: Your three lists, the cost assessment, the decisive question, the check and the recorded decision save as you type, on this device first and then online. Kept outside the app: If the cheap check used somebody’s records, keep only your count. The records are theirs and stay where they are. What your creator sees: Your creator reads the decisive question and the check date. A decision with neither is a preference that happened to be acted on. Your next action: Open Your work and choose Ready for review. The next lesson looks at a gap this course cannot fill for you.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1677,78 +2561,203 @@ The learner wrote what she would need: how a product's position relative to alte
 
 Write what you would need to learn about market positioning, find one candidate source, assess it against this course's verification rules, and record the result honestly.
 
-**Where to work:** A browser and the catalog's verification rules. Public libraries are a legitimate route to books this course cannot link to, and using one is not a paid dependency.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: A browser and the catalog's verification rules. Public libraries are a legitimate route to books this course cannot link to, and using one is not a paid dependency.
 
 - Starting material: Your operating-strategy reading and the catalog's rules.
 - Create HaruCourse/Practice/m17-l08-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Positioning: the gap this course does not fill
+#### 1. State the gap precisely
 
-Input artifact: Your operating-strategy reading and the catalog's rules.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Stating a learning gap, and stating it as a subject.
 
-## Output checklist
-- [ ] A written statement of what you need to learn
-- [ ] One candidate source assessed against the catalog rules
-- [ ] A recorded verdict, including a rejection with reasons
-- [ ] A plan for closing the gap without unverified sources
+- **What I wrote:** “I need to learn about positioning.” A subject, a heading, and something I could carry around for a year without it changing anything.
+- **Why that is not a gap:** It has no end. Nothing would ever let me cross it off, and no source could be assessed against it, because it does not say what an answer would look like.
+- **What I wrote instead:** Three questions. How do you describe where a product sits relative to the alternatives people actually consider? How are segments defined without inventing them? What design decision would change if I knew?
+- **What the third question did:** Answered itself, badly. I could not name a decision that would change, which told me the gap was interesting rather than urgent.
+- **What that changed about the plan:** A library book at some point, rather than a search this week. The honest priority of a gap that changes no current decision.
 
-## 1. State the gap precisely
+**The wrong turn:** The wrong turn is naming the subject, because that is how gaps feel: a topic you do not know. A subject cannot be closed, cannot be assessed against, and cannot be prioritised.
+
+**What it costs:** Asking which decision would change often demotes a gap you feel embarrassed about, which is uncomfortable and correct.
+
+**Still unknown:** Still unknown: whether a decision will turn on positioning later. If one does, the three questions are already written.
+
 - Write the questions about positioning you cannot currently answer.
 - Note which of your design decisions would change with an answer.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The positioning questions you cannot answer, and which design decisions would change with an answer.
 
-## 2. Re-read the rules
+Worksheet fields for this step:
+
+- The questions about positioning you cannot currently answer
+- Which of your design decisions would change with an answer — If none would, the gap is interesting rather than urgent, and saying so is a useful result.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Positioning:** How a product is described relative to the alternatives people actually consider. This course has no verified free source for it and will not teach it from an unverified one.
+- **A gap that matters:** One where a real decision would change. A gap that changes nothing is worth noting and not worth closing this month.
+
+Stuck starting? Write the questions as questions rather than as a topic.
+
+Is it enough? You can say which decision would change, or that none would.
+
+</details>
+
+#### 2. Re-read the rules
+
 - Read this course's verification and selection rules.
 - Write the five checks you will apply to any candidate.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The five checks written out, taken from this course’s own selection rules.
 
-## 3. Assess one candidate
+Worksheet fields for this step:
+
+- The five checks you will apply to any candidate source — Retrievable, free, scope-reviewed, dated, and possible to write limits for. Take them from this course’s own rules.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Retrievable:** You can actually open it, today, without an account. A page behind a sign-up is not retrievable for this purpose.
+- **Scope-reviewed:** You can say what it covers and what it does not. A source whose limits you cannot write is one you cannot use responsibly.
+
+Stuck starting? Copy the rules out rather than paraphrasing them.
+
+Is it enough? All five are checks somebody else could apply the same way.
+
+</details>
+
+#### 3. Assess one candidate
+
+**See it first.** Made-up example. Looking for a source on positioning, and finding a very good article.
+
+- **What I found:** A long, clear, genuinely useful piece on positioning, freely readable, well written, and it explained more in twenty minutes than anything else I had seen.
+- **What I wanted to do:** Use it. It was better than most of what this course does assign, and the temptation was to make an exception for quality.
+- **What the checks said:** Retrievable and free: yes. Dated: no. Evidence cited: none. Scope statable: partly. Written to sell the author’s consulting: plainly, in the last three paragraphs.
+- **Why quality is not the test:** I cannot tell whether it is right. It is persuasive, which is what it was written to be, and I have no way to check any of its claims or to know when it was written.
+- **What I recorded:** Attempted and rejected, with the reasons, and a note that it is worth reading privately as an argument rather than as a source I would assign or cite.
+
+**The wrong turn:** The wrong turn is making an exception for quality, because the checks are about verifiability and the article is obviously good. Persuasive is what promotional writing is for, and it is exactly the property that cannot be checked.
+
+**What it costs:** Rejecting it leaves the gap open, and the alternative route is a library book that takes a fortnight to reach.
+
+**Still unknown:** Still unknown: whether its claims are sound. Rejecting it is not saying it is wrong; it is saying I cannot tell, which is a different and more honest position.
+
 - Find one candidate source and retrieve it.
 - Apply each check and record the result.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One candidate retrieved and each check applied with its result.
 
-## 4. Record the verdict
+Worksheet fields for this step:
+
+- The candidate source, and how you found it
+- Each check applied, with the result
+
+<details>
+<summary>Help with this step</summary>
+
+- **Vendor content:** Material published to sell something. It can be accurate and it is written to a purpose, and it rarely dates itself or states its evidence.
+- **Applying a check:** Recording the result rather than the impression. Undated is a fact about the page, whatever the writing is like.
+
+Stuck starting? Open the candidate and look for a date before reading anything else.
+
+Is it enough? Every check has a result rather than an impression.
+
+</details>
+
+#### 4. Record the verdict
+
 - Accept, reject or mark it partial, with reasons.
 - Write what it does not cover, whatever the verdict.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A verdict with reasons, and what the source does not cover whatever the verdict.
 
-## 5. Plan the gap
+**Try it with help.** Six made up candidate sources on positioning. For each one, decide the verdict under this course’s rules.
+
+- A well-written strategy article, free, undated, no cited evidence, ending with an offer of consulting services.
+  - usable — Quality is not the test. Undated, unevidenced and promotional means you cannot tell whether it is right.
+  - **reject and record** — Attempted and rejected, with reasons. It is worth reading privately as an argument and not as a source.
+  - usable for part of it — No part of it is verifiable, so there is no part to keep.
+- A standard book on the subject, borrowed from a public library, dated, with its sources cited.
+  - **usable** — Dated, evidenced and scope-statable. A library is a legitimate route this course cannot link to, and borrowing is not a paid dependency.
+  - reject and record — Nothing about it fails a check.
+  - usable for part of it — It may cover less than you need, which is a note rather than a partial verdict.
+- A respected report, clearly dated and evidenced, behind a paid subscription.
+  - usable — It fails the free check, which this course applies without exception.
+  - **reject and record** — Recorded as rejected on cost rather than on quality, so the reason is visible if the situation changes.
+  - usable for part of it — None of it is retrievable.
+- A free video course requiring a sign-up, with an emailed certificate.
+  - usable — An account requirement makes it not retrievable for this purpose, and this course does not require sign-ups.
+  - **reject and record** — Rejected on the account requirement, recorded with the reason.
+  - usable for part of it — Nothing is available without the account.
+- An open-access paper on segmentation methods, dated, peer-reviewed, and narrower than what you need.
+  - usable — It passes every check and answers one of your three questions.
+  - reject and record — Nothing about it fails.
+  - **usable for part of it** — The commonest honest verdict: keep it, write the boundary, and note which questions it leaves open.
+- A long, thoughtful discussion thread by practitioners, free, undated, anonymous.
+  - usable — Nobody can be identified, nothing is dated, and no claim can be traced.
+  - **reject and record** — Worth reading for ideas about what to look for, and not a source you would assign to somebody else.
+  - usable for part of it — The verifiability problem applies to all of it equally.
+
+**Then:** Now record your own verdict, with the reasons written so somebody else could check your judgement.
+
+**What to watch for:** Two of the rejections are about access rather than quality, and one usable source is a library book this course cannot link to. The rule is about whether a claim can be checked, which is not the same as whether the writing is good.
+
+Worksheet fields for this step:
+
+- Accept, reject or partial, with reasons
+- What it does not cover, whatever the verdict
+
+<details>
+<summary>Help with this step</summary>
+
+- **A rejection is a result:** Recording an attempted and rejected source is work done. It stops the same candidate being considered again and shows the gap was taken seriously.
+- **Partial:** Usable for part of what you need, with the boundary written. It is the commonest honest verdict.
+
+Stuck starting? Write the verdict and then the reason, so the reason does not become an argument for the verdict.
+
+Is it enough? Somebody could apply your reasoning to a different source.
+
+</details>
+
+#### 5. Plan the gap
+
 - Write how you will fill this without an unverified source.
 - Note what you will avoid claiming until you have.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A plan for closing the gap without an unverified source, and what you will avoid claiming meanwhile.
 
-## Review and handoff
-- The gap is stated as specific questions: [evidence reference]
-- The catalog's checks are applied to a real candidate: [evidence reference]
-- A verdict is recorded with reasons and exclusions: [evidence reference]
-- A plan exists that does not rely on unverified sources: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- How you will fill this without an unverified source — A library book is a legitimate route this course cannot link to. Using one is not a paid dependency.
+- What you will avoid claiming until you have
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **A library:** A legitimate route to books this course cannot link to. Borrowing one is not a paid dependency and not an exception to the rules.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Write what you will not claim before writing how you will learn it.
+
+Is it enough? The plan names a specific route rather than an intention to read more.
 
 </details>
+
+**Save and continue.** Saved for you: Your gap statement, the five checks, the assessment and the plan save as you type, on this device first and then online. Kept outside the app: Keep a note of the candidate’s address in your own folder so the rejection is traceable. Nothing needs to be copied out of it. What your creator sees: Your creator reads the verdict and the reasons. A rejection with reasons somebody else could apply is the result this lesson is looking for. Your next action: Open Your work and choose Ready for review. The next lesson compares the same feature for a consumer and a business context.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -1911,78 +2920,203 @@ The booking feature designed twice. Consumer: emphasis on the first booking, gen
 
 Compare the same feature designed for a consumer product and for a business one, and name the three decisions that differ and why.
 
-**Where to work:** Paper for both versions. No enterprise tooling is required to design an enterprise screen.
+**Where to practise:** Draw the same feature twice, once for a consumer and once for a business context on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+
+Tools: Paper for both versions. No enterprise tooling is required to design an enterprise screen.
 
 - Starting material: Your role mapping from earlier in this module.
 - Create HaruCourse/Practice/m17-l09-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Consumer and enterprise, and the trade between them
+#### 1. Read on roles and obligations
 
-Input artifact: Your role mapping from earlier in this module.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Listing what a business context adds, and listing features.
 
-## Output checklist
-- [ ] The same feature designed for both contexts
-- [ ] Three decisions that differ, with the structural reason for each
-- [ ] The administrator's task designed, not assumed
-- [ ] A note of which context your project actually is
+- **What I wrote:** Roles, permissions, reporting, bulk actions, single sign-on. Five things business software has that consumer software does not.
+- **What that list is:** A feature list. It says what such products contain and nothing about why, so none of it helps decide anything about a screen.
+- **What I had skipped:** That the person did not choose the product and cannot leave. Everything on my list follows from that and from repetition.
+- **What the conditions list became:** Mandatory use, so frustration accumulates instead of losing you the user. Repetition, so the thousandth use matters more than the first. Somebody else’s money, so a record is an obligation. An administrator, who is a user nobody designs for.
+- **What that let me do:** Derive the features rather than copy them. Bulk actions come from volume; the audit record comes from whose money it is; density comes from repetition. Each has a reason attached rather than a precedent.
 
-## 1. Read on roles and obligations
+**The wrong turn:** The wrong turn is listing what business software has, because those products exist and their features are visible. Copying the features produces a screen that looks like enterprise software without being right for anybody.
+
+**What it costs:** Deriving from conditions is slower and produces a shorter list, and it will omit features somebody expects to see because other products have them.
+
+**Still unknown:** Still unknown: whether single sign-on matters here. It is on nobody’s list of conditions and it may be the first thing a buyer asks about.
+
 - Re-read the assigned permission vocabulary and the standard's points on accountability.
 - List what a business context adds that a consumer one does not.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What a business context adds that a consumer one does not.
 
-## 2. Design the consumer version
+Worksheet fields for this step:
+
+- What a business context adds that a consumer one does not — Administrators, auditability, somebody else’s money, mandatory use, and a person who will do this monthly for two years.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Mandatory use:** The person did not choose the product and cannot leave. Frustration accumulates as resentment rather than losing you a user.
+- **Auditability:** A record of who did what and when, because somebody else’s money is being spent and somebody has to answer for it.
+
+Stuck starting? List what changes when the person did not choose the product.
+
+Is it enough? Your list includes something about the person who never chose it.
+
+</details>
+
+#### 2. Design the consumer version
+
 - Design for a first-time, self-selected user.
 - Note what you optimised for.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The feature designed for a first-time, self-selected user, with what you optimised for.
 
-## 3. Design the business version
+Worksheet fields for this step:
+
+- The feature designed for a first-time, self-selected user
+- What you optimised for
+
+<details>
+<summary>Help with this step</summary>
+
+- **Self-selected:** They chose to be here and can leave. It makes the first minute decisive and the thousandth use hypothetical.
+- **Optimising for first use:** Generous space, one action per screen, a warm confirmation. It is right for somebody who has never been here and wrong for somebody who has been here four hundred times.
+
+Stuck starting? Design it for somebody who has never seen your product and may not come back.
+
+Is it enough? You wrote what you optimised for rather than only what you drew.
+
+</details>
+
+#### 3. Design the business version
+
+**See it first.** Made-up example. Designing the business version of a booking screen, and designing the consumer one again.
+
+- **What I drew:** The same screen, with an admin label and a couple of extra fields. Generous space, one action at a time, the warm confirmation, all of it.
+- **What the office manager actually does:** Books twelve places across four classes, on the last Friday of every month, for two years. Two hundred and eighty-eight bookings by the time she leaves the job.
+- **What my screen cost her:** One booking per screen, a confirmation to dismiss each time, and a scroll to find the next class. About forty minutes of her month, repeated.
+- **What the business version became:** A dense list, keyboard operable, with bulk selection and one confirmation for the set. The same task in about four minutes.
+- **What I had got backwards:** The warm confirmation is a kindness to somebody who has never done this. To somebody doing it for the two hundredth time it is an obstacle with a friendly tone.
+
+**The wrong turn:** The wrong turn is applying consumer instincts to repeated work, because they are good instincts and they feel like quality. A flow optimised for a confident first use, met hourly, produces a product people resent for reasons they cannot articulate.
+
+**What it costs:** The dense version is genuinely worse for a first-time administrator, and somebody in their first week will find it forbidding. A short introduction is a smaller cost than forty minutes a month for ever.
+
+**Still unknown:** Still unknown: how long the first week is. Nobody has watched a new administrator learn it, and the density is a judgement about a trade rather than a measurement of it.
+
 - Design for someone doing this repeatedly on behalf of others.
 - Include the administrator's configuration task.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The same feature for somebody doing it monthly for staff with somebody else’s money, with the administrator’s task designed.
 
-## 4. Name the differences
+Worksheet fields for this step:
+
+- The same feature for somebody doing it monthly, for staff, with somebody else’s money
+- The administrator’s task, designed rather than assumed — They are a user with their own work. Designing for them last is how business software becomes hated.
+
+<details>
+<summary>Help with this step</summary>
+
+- **The thousandth use:** What business software optimises for. Density, keyboard operation and bulk actions all follow from repetition rather than from a preference for complexity.
+- **The administrator:** A user with their own tasks and frustrations, routinely designed for last. Their work is the one that decides whether the product is bearable.
+
+Stuck starting? Count how many times the person will do this in two years before drawing anything.
+
+Is it enough? The administrator’s own task is designed rather than assumed to be the same as the user’s.
+
+</details>
+
+#### 4. Name the differences
+
 - Write the three decisions that differ and the structural reason for each.
 - Check none of them is merely aesthetic.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three decisions that differ between the two versions, each with its structural reason.
 
-## 5. Locate your project
+**Try it with help.** Six design decisions for the same made up booking feature. For each one, decide which context it suits.
+
+- A dense list showing twenty rows at once, with no images.
+  - the consumer version — A first-time visitor meets a wall of rows with nothing to orient them.
+  - **the business version** — Somebody doing this monthly needs to see more at once and is not being introduced to anything. Density follows from repetition.
+  - both, for different reasons — It is actively worse for a first use.
+- Selecting twelve places across four classes and confirming once.
+  - the consumer version — A consumer books one place for themselves, so there is nothing to bulk.
+  - **the business version** — Volume. One booking per screen costs forty minutes a month, repeated for two years.
+  - both, for different reasons — The consumer case has no volume to speak of.
+- Every action reachable and operable from a keyboard.
+  - the consumer version — It is an accessibility requirement for everybody, as Module 11 established, regardless of repetition.
+  - the business version — Repetition makes it a speed question there, and somebody doing this hourly will learn the keys.
+  - **both, for different reasons** — Both, and for genuinely different reasons: access in one case, speed in the other.
+- A warm confirmation screen after each booking.
+  - **the consumer version** — A kindness to somebody who has never done this and is not sure it worked.
+  - the business version — To somebody doing it for the two hundredth time it is an obstacle with a friendly tone.
+  - both, for different reasons — It is actively costly in the repeated case.
+- A record of who booked what, when, and who paid for it.
+  - the consumer version — Their own receipt is the whole of it.
+  - **the business version** — Somebody else’s money is being spent and somebody has to answer for it. It is an obligation rather than a feature.
+  - both, for different reasons — The consumer case needs a receipt rather than an audit trail.
+- Errors that say what happened and what to do next.
+  - the consumer version — A first-time user with a vague error simply leaves.
+  - the business version — An administrator meeting a vague error on the last Friday of the month has nobody to ask and a deadline.
+  - **both, for different reasons** — Both, and the consequence differs: one leaves, the other is stuck with it.
+
+**Then:** Now write your own three differences, with the structural reason rather than the preference behind each.
+
+**What to watch for:** Two of the six belong in both versions, and the reasons differ. What separates the contexts is repetition, volume and whose money it is — not whether the work is serious.
+
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Difference 1 · what differs, and the structural reason
+- Difference 2 · what differs, and the structural reason
+- Difference 3 · what differs, and the structural reason
+
+<details>
+<summary>Help with this step</summary>
+
+- **Structural reason:** Repetition, volume, mandatory use, somebody else’s money. Not a preference for one style over another.
+- **Neither is more sophisticated:** The two contexts optimise different things. Consumer work is not simpler and business work is not more serious.
+
+Stuck starting? For each difference, finish this sentence: “because somebody doing this monthly …”.
+
+Is it enough? No difference is justified by taste.
+
+</details>
+
+#### 5. Locate your project
+
 - Decide which context your own project is in, and say what that implies.
 - Save both designs and the comparison.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Which context your project actually is, and what follows from that.
 
-## Review and handoff
-- The same feature is designed for both contexts: [evidence reference]
-- Three differences are named with structural reasons: [evidence reference]
-- The administrator's task is designed: [evidence reference]
-- The project's own context is identified with implications: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- Which context your project actually is, and what follows from that
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Locating your own project:** Deciding which set of pressures applies. Many products are both, with different screens for each, and naming that is better than averaging them.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Ask whether your main user chose the product and how often they use it.
+
+Is it enough? You named a context and something that follows from it rather than only the label.
 
 </details>
+
+**Save and continue.** Saved for you: Your two designs, the three differences and your context judgement save as you type, on this device first and then online. Kept outside the app: Both sketches stay in your own folder. Keep them side by side; the pair is the artefact rather than either one. What your creator sees: Your creator reads the structural reasons. A difference explained by preference is the one that shows the contexts were not really separated. Your next action: Open Your work and choose Ready for review. The next lesson deals with pressure to design something you should not.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2145,78 +3279,205 @@ Three refusals were written. A countdown implying a place would be released in f
 
 Identify three requests you would refuse, write what you would say, and design one honest alternative that serves the underlying business need.
 
-**Where to work:** Written work. The alternatives are design work you can do on paper.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Written work. The alternatives are design work you can do on paper.
 
 - Starting material: Your economics reading and stakeholder map.
 - Create HaruCourse/Practice/m17-l10-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Pressure, patterns and where you stop
+#### 1. Name the patterns
 
-Input artifact: Your economics reading and stakeholder map.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] Three requests you would refuse, named as patterns
-- [ ] The legitimate need underneath each
-- [ ] One honest alternative designed
-- [ ] Your written limits, prepared in advance
-
-## 1. Name the patterns
 - List requests you could plausibly receive on your product.
 - Name the pattern each one is an instance of.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three plausible requests, each named as the pattern it is an instance of.
 
-## 2. Find the real need
+Worksheet fields for this step, revealed a few at a time in the app:
+
+- Request 1 · what is asked for, and the pattern it is an instance of — Hidden costs, obstructed exits, manufactured urgency, pre-ticked consent. Naming the pattern is what makes it arguable.
+- Request 2 · what is asked for, and the pattern it is an instance of
+- Request 3 · what is asked for, and the pattern it is an instance of
+
+<details>
+<summary>Help with this step</summary>
+
+- **Manufactured urgency:** A deadline that is not real: a countdown that resets, a place that was never going to be released. It works by making a person decide before they have thought.
+- **Obstructed exit:** Leaving being much harder than arriving. Two taps to book and a phone call to cancel is the standard shape.
+- **Hidden cost:** A charge or commitment revealed after the person has invested effort. It works because people continue rather than start again.
+
+Stuck starting? Write requests somebody could plausibly make on a Monday, not ones nobody would make.
+
+Is it enough? Each has a pattern name attached rather than only a description.
+
+</details>
+
+#### 2. Find the real need
+
+**See it first.** Made-up example. Finding the need under a request at a class provider, and accepting the stated one.
+
+- **What was asked for:** A pre-ticked newsletter box on the booking form. The stated reason was that the mailing list needed to grow.
+- **What I nearly did:** Took that at face value and started designing an honest way to grow a mailing list, which is a perfectly good piece of work.
+- **What one question found:** Why does the list need to grow? Because classes with low bookings get cancelled, and the newsletter is how she fills them.
+- **What the real need was:** Filling classes that would otherwise be cancelled. The mailing list was one route to it, chosen because it is the one she had.
+- **What that opened up:** The waiting list from the earlier lesson fills classes directly, without a newsletter at all. The honest alternative served the real need better than the dishonest version served the stated one.
+
+**The wrong turn:** The wrong turn is designing an honest version of the stated need, because it is right in front of you and it is a real need. Asking why it matters once more usually finds something the original request was only an attempt at.
+
+**What it costs:** Asking why twice can read as obstruction, particularly from somebody who has already been told no once.
+
+**Still unknown:** Still unknown: whether the newsletter is the better route for some classes. It probably is for the ones announced months ahead, and both can exist.
+
 - For each, write the legitimate business need underneath.
 - Check the need is real rather than a rationalisation.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The legitimate business need underneath each request, checked as real.
 
-## 3. Design one alternative
+Worksheet fields for this step:
+
+- For each: the legitimate business need underneath — There nearly always is one. Somebody is accountable for something, and this was their idea of how to reach it.
+- How you checked the need is real rather than a rationalisation
+
+<details>
+<summary>Help with this step</summary>
+
+- **The need underneath:** What somebody is actually accountable for: filling classes, keeping subscribers, reducing empty places. The pattern was their idea of how to get there.
+- **A rationalisation:** A need invented to justify a decision already wanted. It usually cannot name who is accountable for it or what would count as meeting it.
+
+Stuck starting? For each request, ask what somebody is being asked about that made them think of it.
+
+Is it enough? Each need names somebody accountable rather than an abstraction.
+
+</details>
+
+#### 3. Design one alternative
+
+**See it first.** Made-up example. Refusing a countdown at a class provider, and refusing it on principle.
+
+- **What was asked for:** A countdown on the review screen saying the place would be released in five minutes. Bookings were being abandoned at that step and something had to be done.
+- **What I said:** That it was a dark pattern and we should not do it. True, and it left the person who asked with an abandonment problem and no help.
+- **What happened:** It was built by somebody else three weeks later, in a worse version, and I was not asked about the screen again.
+- **What the need actually was:** Places held by people who never complete, which the provider cannot sell to anybody else. Real, specific, and somebody is accountable for it.
+- **What I should have offered:** The genuine number of places left, and a real hold with a real expiry, stated honestly. Urgent when it is urgent, and silent when it is not, which is the part the countdown could never do.
+
+**The wrong turn:** The wrong turn is refusing on principle without an alternative, because the principle is sound and stating it feels like the whole job. The problem is still there, somebody else solves it worse, and you are no longer in the conversation.
+
+**What it costs:** The honest version produces less urgency, because most of the time there is no urgency. Some of the abandonment it was meant to prevent will continue.
+
+**Still unknown:** Still unknown: whether a real hold reduces abandonment at all. It can be counted in the provider’s records after a month, which the countdown version could never have been separated from.
+
 - Design an honest way to serve one of those needs.
 - Estimate what it would cost compared with the dishonest version.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** One honest alternative designed, with what it costs compared with the dishonest version.
 
-## 4. Write what you would say
+Worksheet fields for this step:
+
+- An honest way to serve one of those needs
+- What it would cost compared with the dishonest version
+
+<details>
+<summary>Help with this step</summary>
+
+- **An honest alternative:** Something that serves the same need without depending on the person’s attention failing. It usually exists and usually works less quickly.
+- **What it costs:** Named plainly. The honest version is frequently slower and occasionally worse on the number, and pretending otherwise loses the argument.
+
+Stuck starting? Take the need and ask what would serve it if the person read everything carefully.
+
+Is it enough? Your alternative would still work on somebody paying full attention.
+
+</details>
+
+#### 4. Write what you would say
+
 - Write the sentence you would use to refuse, naming the cost.
 - Practise it aloud so it is available under pressure.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The sentence you would use to refuse, naming the cost, practised aloud.
 
-## 5. Write your limits
+**Try it with help.** Six replies to a made up request for a false countdown. For each one, decide what it would achieve.
+
+- A countdown that is not true will produce complaints and refund requests, and it makes the provider look dishonest. Here is the version with the real hold, which I can do this week.
+  - **holds the line and keeps the room** — A named cost, a refusal, and something to say yes to. Nobody has to lose the argument in order to stop it.
+  - holds the line and loses the room — It gives them something, which is what keeps you in the conversation.
+  - gives way — Nothing dishonest is being agreed to.
+- That is a dark pattern and we should not do it.
+  - holds the line and keeps the room — It leaves the person with an abandonment problem and no help, and it uses a term that sounds like an accusation.
+  - **holds the line and loses the room** — It is correct and it ends your involvement. Somebody builds it worse three weeks later.
+  - gives way — It refuses clearly.
+- We could make the countdown longer so it feels less pushy.
+  - holds the line and keeps the room — It agrees to the false statement and negotiates its duration.
+  - holds the line and loses the room — No line is being held.
+  - **gives way** — This is how these things actually get built: not by anybody deciding to mislead, but by softening.
+- Let us test it and see whether it increases completions.
+  - holds the line and keeps the room — It will increase completions, which was never in doubt, and the test makes the question a matter of evidence rather than of honesty.
+  - holds the line and loses the room — Nothing is refused.
+  - **gives way** — Testing whether a false statement works is a way of agreeing to make it.
+- I do not think we should, but it is not my decision.
+  - holds the line and keeps the room — It registers a reservation and declines to make an argument.
+  - holds the line and loses the room — Nothing is held.
+  - **gives way** — It is the most common version, and it reads afterwards as having gone along with it.
+- I will not write a timer that says something untrue. I can build a real hold with a real expiry this week, and we will know within a month whether it helps.
+  - **holds the line and keeps the room** — A specific refusal, a specific offer, and a way to find out. The refusal is about the false statement rather than about the category of thing.
+  - holds the line and loses the room — It offers a route forward in the same breath.
+  - gives way — It refuses the thing that mattered.
+
+**Then:** Now write your own sentence, and check it names a cost and offers something.
+
+**What to watch for:** Giving way rarely looks like agreement. It looks like softening it, testing it, or noting a reservation and standing aside. All three leave the thing built and leave you unable to say you objected.
+
+Worksheet fields for this step:
+
+- The sentence you would use to refuse, naming the cost — Refunds, complaints, staff time, reputation. A refusal in terms of principle alone rarely survives a deadline.
+- How you practised it, and what was hard to say
+
+<details>
+<summary>Help with this step</summary>
+
+- **Naming the cost:** Refunds, complaints, support time, reputation. It puts the refusal in the terms the decision is made in, as Module 14 established.
+- **Practised aloud:** Said once, before it is needed. Under pressure the sentence has to be available rather than constructed.
+
+Stuck starting? Write the sentence, then say it out loud once. It will be shorter the second time.
+
+Is it enough? Your sentence names a cost and offers something in the same breath.
+
+</details>
+
+#### 5. Write your limits
+
 - Write the line you will not cross, before being asked.
 - Save the refusals, the alternative and the limits.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The line you will not cross, written before anybody asks, and the repair the Check questions asked for.
 
-## Review and handoff
-- Three plausible requests are named as patterns: [evidence reference]
-- The legitimate need underneath each is identified: [evidence reference]
-- One honest alternative is designed with its cost: [evidence reference]
-- Written limits exist, prepared in advance: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The line you will not cross, written before anybody asks
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Written in advance:** Decided calmly, before a deadline and a reasonable person are pushing. The moment it is needed is the worst moment to work it out.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Finish this sentence: “I will not write, draw or specify anything that …”.
+
+Is it enough? Your line names a kind of thing rather than a feeling about one.
 
 </details>
+
+**Save and continue.** Saved for you: Your three requests, the needs underneath, the alternative, your sentence and your line save as you type, on this device first and then online. Kept outside the app: Keep your line somewhere you will see it at work rather than only here. It exists for a specific bad afternoon. What your creator sees: Your creator reads the alternative and the sentence. A refusal with neither is a position you will not be able to hold twice. Your next action: Open Your work and choose Ready for review. The next lesson compares your work against one employer’s published expectations.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2379,78 +3640,202 @@ The comparison found four expectations she could evidence: influencing a decisio
 
 Compare your current work against one employer's published expectations for design leadership, and plan one concrete way to practise an expectation you cannot yet demonstrate.
 
-**Where to work:** Reading and written comparison, plus real work. Nothing here needs a role or a budget.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Reading and written comparison, plus real work. Nothing here needs a role or a budget.
 
 - Starting material: Your portfolio of work so far.
 - Create HaruCourse/Practice/m17-l11-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# Influence without authority
+#### 1. Read the expectations
 
-Input artifact: Your portfolio of work so far.
-Source labels: real observation / hypothesis / simulation / self-pilot
-
-## Output checklist
-- [ ] A comparison of your artefacts against published expectations
-- [ ] What you can evidence and what you have only read about
-- [ ] A plan to practise one expectation on real work
-- [ ] A note that one employer's expectations are not a market standard
-
-## 1. Read the expectations
 - Read the assigned job-family page for one level above your current work.
 - List the expectations in your own words.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The expectations from one published job-family page, written in your own words.
 
-## 2. Compare against artefacts
+Worksheet fields for this step:
+
+- The expectations from the assigned job-family page, one level above your current work — In your own words. Copying the page teaches nothing and makes the comparison harder.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Design leadership:** Influence over decisions without controlling anybody. It describes behaviour rather than a title, which is what makes it practisable now.
+- **Published expectations:** One employer’s written description of what a level means. It is evidence about that employer and not a market standard.
+
+Stuck starting? Read the level above the work you are currently doing rather than the one you want.
+
+Is it enough? Every expectation is in your words and describes a behaviour.
+
+</details>
+
+#### 2. Compare against artefacts
+
+**See it first.** Made-up example. Comparing work against published expectations, and comparing against understanding.
+
+- **What I did first:** Went down the list marking yes or no according to whether I could explain the expectation and would know how to do it.
+- **What that produced:** Eleven yeses out of fourteen. A comfortable afternoon and a completely useless document.
+- **What changed when I asked for the artefact:** Four of the eleven had one: a decision record, a stakeholder map, a prepared argument with an outcome, a refusal with an alternative. The other seven were things I had read about in this module.
+- **Why the distinction matters:** In a level conversation, somebody asks for an example. Understanding the expectation produces a description of the expectation, which is exactly what somebody who has not done it sounds like.
+- **What the honest version gave me:** Four evidenced, seven read-about, three not yet understood. The plan writes itself from the middle column.
+
+**The wrong turn:** The wrong turn is marking what you understand rather than what you can evidence, because understanding is what reading a module produces and it feels like competence. Nothing is dishonest about it until somebody asks for an example.
+
+**What it costs:** The honest comparison is much shorter and reads as though you have done far less than you have. It is also the only version that produces a plan.
+
+**Still unknown:** Still unknown: whether four evidenced expectations is a lot or a little for somebody at this stage. One employer’s page cannot say, and comparing myself to it is the only thing this exercise does.
+
 - For each expectation, name the artefact that evidences it.
 - Where none exists, write read-about rather than done.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Each expectation matched to an artefact, or marked read-about where none exists.
 
-## 3. Choose one gap
+Worksheet fields for this step:
+
+- For each expectation: the artefact that evidences it — A specific artefact from this course or your own work. Not a belief that you could do it.
+- Where no artefact exists, marked read-about rather than done — This distinction is the whole value of the exercise. Read-about is honest and it is not evidence.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Evidenced:** There is an artefact somebody could look at: a decision record, a stakeholder map, a prepared argument with its outcome.
+- **Read-about:** You understand it and have not done it. Marking it honestly is the point of the exercise, and confusing the two is how people prepare badly for level conversations.
+
+Stuck starting? For each expectation, name the file or the artefact before deciding whether you can do it.
+
+Is it enough? Every yes has something somebody could look at.
+
+</details>
+
+#### 3. Choose one gap
+
 - Choose the expectation whose absence most limits you.
 - Check it is practisable on work you actually have.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** The expectation whose absence most limits you, with how it is practisable on work you have.
 
-## 4. Plan the practice
+Worksheet fields for this step:
+
+- The expectation whose absence most limits you, and why
+- How it is practisable on work you actually have — If it needs a team you do not have, choose another. A gap you cannot practise is a note rather than a plan.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Most limiting:** The one whose absence costs you most now, rather than the one that sounds most senior.
+- **Practisable:** Doable on work you actually have, this month. An expectation requiring a team you do not have is a note for later rather than a plan.
+
+Stuck starting? Ask which gap has already cost you something in the last three months.
+
+Is it enough? You could start this on work that exists.
+
+</details>
+
+#### 4. Plan the practice
+
 - Write what you will do, on which work, and when.
 - Name what evidence it would produce.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A plan naming what you will do, on which work, and when, with the evidence it would produce.
 
-## 5. Record the limits
+**Try it with help.** Six plans for practising a made up leadership expectation. For each one, decide whether it would produce evidence.
+
+- Run a structured critique of a peer’s work monthly, using the format from Module 14, and keep the problem lists.
+  - **produces evidence** — A named format, a real cadence, and a record afterwards. Somebody could read the problem lists and see what was developed.
+  - produces nothing to show — The records are the evidence.
+  - needs something you do not have — It needs one peer willing to swap work, which most people can find.
+- Read more about design leadership.
+  - produces evidence — It produces understanding, which is the read-about column rather than the evidenced one.
+  - **produces nothing to show** — Nothing exists afterwards that somebody could look at.
+  - needs something you do not have — It needs nothing, which is part of why it is the default plan.
+- Write a direction note covering your project and the provider’s other service, and take it to them to be discussed.
+  - **produces evidence** — The note exists, and what happened in the discussion is the second half of it. Taken to somebody rather than filed is what makes it practice.
+  - produces nothing to show — Both the note and the outcome are showable.
+  - needs something you do not have — It needs a provider who will spend twenty minutes, which you already have.
+- Set direction for a team of three designers.
+  - produces evidence — It would, and there is no team.
+  - produces nothing to show — It would produce plenty, if it could happen.
+  - **needs something you do not have** — A gap you cannot practise is a note for later. Choosing it as your plan guarantees nothing happens.
+- Offer to review a junior designer’s work informally, with no agreed format and no record.
+  - produces evidence — It is real practice and it leaves nothing behind.
+  - **produces nothing to show** — Worth doing, and the record is what makes it evidence. A format and kept notes cost nothing extra.
+  - needs something you do not have — It needs one willing person.
+- Prepare an argument for one decision using the Module 14 format, deliver it, and record what actually moved it.
+  - **produces evidence** — The prepared argument, the response and what moved the decision are three artefacts from one afternoon.
+  - produces nothing to show — All three are recordable.
+  - needs something you do not have — It needs one decision anybody is making, which always exists.
+
+**Then:** Now write your own plan, and check it produces something somebody could look at.
+
+**What to watch for:** Two of these are real practice that leaves nothing behind, and one needs a team. The plans that work all attach a format and a record to something you were going to do anyway.
+
+Worksheet fields for this step:
+
+- What you will do, on which work, and when
+- What evidence it would produce
+
+<details>
+<summary>Help with this step</summary>
+
+- **On which work:** A real piece of work with a name. Practising in the abstract produces nothing anybody can look at.
+- **The evidence it would produce:** What exists afterwards: a critique record, a direction note, a decision somebody made differently. Decided in advance, it makes the practice checkable.
+
+Stuck starting? Write the date before writing the activity; a plan without one is an intention.
+
+Is it enough? Somebody could look at the evidence afterwards and see whether you did it.
+
+</details>
+
+#### 5. Record the limits
+
+**See it first.** Made-up example. Recording the limits of a level comparison, and recording them where they would be read last.
+
+- **What I wrote:** A line at the bottom saying these are one employer’s published expectations and vary between organisations. Accurate, and in the place nobody reaches.
+- **What happened when I used the comparison:** I referred to it in a conversation as though it described what the level means, because by then I had internalised the list and not the caveat.
+- **Who the note was actually for:** Me, in three months, having forgotten where the list came from. Not a reader who might be misled.
+- **What I changed:** Put it in the first line, before the expectations, so the list is read as one employer’s from the start.
+- **What that changed about how I used it:** I started saying “at this company, this level means” rather than “this level means”, which is a smaller claim and a true one.
+
+**The wrong turn:** The wrong turn is putting the limitation at the end, which is where limitations conventionally go. The person most likely to forget the caveat is you, and you read your own documents from the top.
+
+**What it costs:** Opening with a caveat makes the comparison look weaker before anybody has read it, which is an accurate impression.
+
+**Still unknown:** Still unknown: how much these expectations differ between organisations. This course has no verified source that compares them, which is itself worth writing in the learning list.
+
 - Note that this is one employer's published expectation.
 - Save the comparison and the plan.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** A note that this is one employer’s published expectation rather than a market standard, and the repair the Check questions asked for.
 
-## Review and handoff
-- Expectations are compared against real artefacts: [evidence reference]
-- Done and read-about are distinguished honestly: [evidence reference]
-- One gap is chosen and is practisable on real work: [evidence reference]
-- The single-employer limitation is recorded: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- The note that this is one employer’s published expectation rather than a market standard
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **One employer:** Their page describes what they expect. Levels, titles and expectations vary enormously between organisations, and this course does not have a verified market-wide source.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? Write the sentence at the top of the comparison rather than at the end.
+
+Is it enough? Nobody could read your comparison as a claim about the market.
 
 </details>
+
+**Save and continue.** Saved for you: Your expectations list, the comparison, the chosen gap and the plan save as you type, on this device first and then online. Kept outside the app: The artefacts you are pointing at live in your own folder. Note their file names beside each expectation so the comparison is checkable. What your creator sees: Your creator reads the read-about column. A comparison with nothing in it is a comparison against understanding rather than against work. Your next action: Open Your work and choose Ready for review. The last lesson of the module writes the strategy note for your own project.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 
@@ -2613,78 +3998,203 @@ The two pages: three choices, each a preference — first-time confidence over p
 
 Write a two-page strategy note for your project stating the choices, what they exclude, the constraints, the risks and what you would need to learn.
 
-**Where to work:** Two pages of plain text. No template or canvas is required.
+**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
+
+<details>
+<summary>Work in a file on your computer instead</summary>
+
+Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+
+Tools: Two pages of plain text. No template or canvas is required.
 
 - Starting material: All this module's outputs.
 - Create HaruCourse/Practice/m17-l12-v1 in Documents. Save a blank local note as work.md and copy the starter into it. Use a text editor; no note-taking account is needed.
 - Work through the authored actions below using the named free route. Keep editable source files and before/after versions beside your note; do not replace evidence from an earlier lesson.
 
-<details>
-<summary>Copyable starter template</summary>
+</details>
 
-```text
-# A strategy note for your project
+#### 1. Write the choices
 
-Input artifact: All this module's outputs.
-Source labels: real observation / hypothesis / simulation / self-pilot
+**See it first.** Made-up example. Writing the choices for a strategy note, and writing them as things to do.
 
-## Output checklist
-- [ ] Two pages stating choices as preferences
-- [ ] An exclusion list
-- [ ] Constraints recorded honestly, including inconvenient ones
-- [ ] Risks with signals, and a list of what you need to learn
+- **What I wrote:** Improve the booking flow, support the provider’s time, and be honest about states. Three sensible priorities.
+- **What is missing from all three:** The other half. Nobody could disagree with any of them, because none says what is being given up to get it.
+- **What the first one became:** First-time confidence over power-user speed. Somebody could reasonably argue the other way: regular members book twice a month and would benefit from speed.
+- **What writing it that way exposed:** That I had not actually decided. Both were in my head as good things, and the note was the first place the trade had to be stated.
+- **What the third one became:** Honest states over conversion, which is a choice with a cost: some bookings that a countdown would have captured will not happen.
 
-## 1. Write the choices
+**The wrong turn:** The wrong turn is writing priorities, because they are what strategy documents usually contain and they all sound right. A priority with no alternative attached is a value, and nobody can disagree with it or be held to it.
+
+**What it costs:** Writing the other half means naming what you are giving up, in a document somebody else will read, before anybody has complained about it.
+
+**Still unknown:** Still unknown: whether the speed trade is right. Nobody knows how many bookings come from repeat members, which is the first item on the learning list for exactly this reason.
+
 - State three choices as preferences between real alternatives.
 - Check each one could be disagreed with.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Three choices stated as preferences between real alternatives, each capable of being disagreed with.
 
-## 2. Write the exclusions
+Worksheet fields for this step:
+
+- Choice 1 · a preference between two real alternatives
+- Choice 2
+- Choice 3
+- How you checked each could be disagreed with
+
+<details>
+<summary>Help with this step</summary>
+
+- **A preference between real alternatives:** This over that, where somebody could reasonably want the other. It is the only shape a choice can take.
+- **Disagreeable:** Somebody could argue for the opposite. If nobody could, you have written a value rather than a choice.
+
+Stuck starting? Write each as this over that, and then ask who would argue for that over this.
+
+Is it enough? For each choice you can name somebody who would prefer the other side.
+
+</details>
+
+#### 2. Write the exclusions
+
 - List what the strategy rules out for this period.
 - Include at least one thing you would like to do.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What the strategy rules out, including at least one thing you would like to do.
 
-## 3. Record the constraints
+Worksheet fields for this step:
+
+- What the strategy rules out for this period
+- At least one thing on that list you would like to do — If every exclusion is something you did not want anyway, nothing is being given up.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Exclusion:** What will not happen this period. It is what makes the note usable, because it is what somebody can hold you to.
+- **Something you wanted:** The test of whether the exclusion list is real. A list of things you did not want anyway costs nothing and rules nothing out.
+
+Stuck starting? List what you have been meaning to do, and put one of them on the exclusion list.
+
+Is it enough? At least one exclusion is something you would rather not exclude.
+
+</details>
+
+#### 3. Record the constraints
+
+**See it first.** Made-up example. Writing a strategy note for a class-booking project, and writing the constraints selectively.
+
+- **What I listed:** One developer part-time, and no analytics. Both true, both external, and both things nobody could blame me for.
+- **What I left out:** That the provider is unavailable between ten and four, and that I have about six hours a week for this. Both are the constraints that actually decide what happens.
+- **Why they were left out:** The first sounds like a complaint about somebody helpful. The second sounds like an excuse, and I did not want the note to read as one.
+- **What the note became without them:** A plan for a project with a full-time designer and a provider available for questions. Every schedule in it was wrong by a factor of two.
+- **What happened when I added them:** The note got shorter and the plan got right. Six hours a week and a four-hour window for questions is a real project, and it is the one I have.
+
+**The wrong turn:** The wrong turn is listing the constraints that reflect well on you, because a note is read by other people and the honest ones sound like complaints or excuses. A plan built on the flattering half is a plan for a different project.
+
+**What it costs:** Writing your own limited time into a strategy note means it is written down where somebody can read it, and somebody will.
+
+**Still unknown:** Still unknown: whether six hours a week is stable. It is what the last two months were, and the note says that rather than promising it.
+
 - List the real constraints, including staffing and tooling.
 - Do not assume any of them away.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Constraints recorded honestly, including the inconvenient ones.
 
-## 4. List risks and signals
+Worksheet fields for this step:
+
+- The constraints, including the ones you dislike
+
+<details>
+<summary>Help with this step</summary>
+
+- **An inconvenient constraint:** One you would rather not write down: a person who is unavailable, a system that cannot change, your own limited time. Omitting them produces a plan that assumes a different project.
+
+Stuck starting? Write the constraints you would rather not write down first.
+
+Is it enough? At least one constraint is about you or somebody you like.
+
+</details>
+
+#### 4. List risks and signals
+
 - Write the risks, including second-order ones from earlier in the module.
 - For each, name the signal that would show it materialising.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** Risks listed, each with the signal that would tell you it is materialising.
 
-## 5. State what you need to learn
+**Try it with help.** Six lines from a made up strategy note. For each one, decide whether it belongs in the note as written.
+
+- Risk: late cancellations rise after the easier cancellation flow. Signal: the waiting-list count, checked monthly.
+  - **usable as written** — A specific risk from a traced loop, with somewhere to look and a cadence. It can be acted on.
+  - needs a signal or a specific — Both are present.
+  - does not belong in the note — It is exactly what the risks section is for.
+- Risk: the project may not deliver value.
+  - usable as written — It is true of every project and tells nobody anything.
+  - needs a signal or a specific — There is nothing specific enough to attach a signal to.
+  - **does not belong in the note** — A risk that applies to everything identifies nothing. Cutting it makes room for one that does.
+- Risk: the developer becomes unavailable.
+  - usable as written — Real and specific, with nothing to watch for and nothing to do.
+  - **needs a signal or a specific** — A signal might be his other commitments growing, and the useful addition is what you would do: document the build so somebody else could continue.
+  - does not belong in the note — It is one of the largest risks in the project.
+- Excluded this year: corporate booking work, marketing surfaces, and anything increasing the provider’s daily message volume.
+  - **usable as written** — Three specific exclusions, one of which is something the team would like to do. Somebody can hold the project to it.
+  - needs a signal or a specific — Nothing vague about it.
+  - does not belong in the note — Exclusions are what make a strategy note usable.
+- We will remain user-centred throughout.
+  - usable as written — Nobody would write the opposite, so it excludes nothing and decides nothing.
+  - needs a signal or a specific — There is nothing to make specific; it is a value.
+  - **does not belong in the note** — It costs a line and makes the reader skim the rest.
+- Need to learn: what proportion of bookings come from repeat customers, which nobody currently knows.
+  - **usable as written** — A specific unknown about your own product, with an admission that nobody knows it. It is the most actionable kind of learning item.
+  - needs a signal or a specific — It is already specific.
+  - does not belong in the note — The learning section is where a project’s real gaps get stated.
+
+**Then:** Now read your own note the same way, and cut anything nobody could disagree with.
+
+**What to watch for:** Two of the six are values wearing a strategy costume. They read well, they exclude nothing, and every line of them is space that a specific risk or exclusion could have used.
+
+Worksheet fields for this step:
+
+- The risks, each with what would tell you it is materialising — A risk with no signal is a worry. The signal is what makes it something you can act on.
+
+<details>
+<summary>Help with this step</summary>
+
+- **Risk:** Something that could go wrong, stated specifically enough to be watched. The traced loops from earlier in the module are the best source.
+- **Signal:** What would tell you it is happening, and where you would see it. A risk with no signal is a worry.
+
+Stuck starting? Take your traced loop from earlier in the module; it is already a risk with a delay attached.
+
+Is it enough? Every risk has somewhere to look and a rough cadence.
+
+</details>
+
+#### 5. State what you need to learn
+
 - Include this course's recorded gaps where they affect you.
 - Save the note where decisions will be made from it.
 
-My work / artifact reference:
-Evidence status and source:
-Decision and reason:
+**You should end up with:** What you need to learn including this course’s gaps, and confirmation that the note fits on two pages.
 
-## Review and handoff
-- Three choices are stated as disputable preferences: [evidence reference]
-- An exclusion list includes something you wanted to do: [evidence reference]
-- Constraints are recorded without being assumed away: [evidence reference]
-- Risks carry signals and the learning gaps are named: [evidence reference]
-What remains untested:
-Next action when I return:
+Worksheet fields for this step:
 
-```
+- What you would need to learn, including this course’s gaps — Positioning is one of them. So is anything nobody currently knows about your own product.
+- Confirm it fits on two pages, and what you cut to get there
+- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Help with this step</summary>
+
+- **This course’s gaps:** Positioning is one, recorded in an earlier lesson. Naming it in your own note is what stops you making claims you cannot support.
+- **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+Stuck starting? List what nobody currently knows about your own product before listing what you have not read.
+
+Is it enough? The note is two pages, and you can say what you cut.
 
 </details>
+
+**Save and continue.** Saved for you: Your choices, exclusions, constraints, risks and learning list save as you type, on this device first and then online. Kept outside the app: The two-page note belongs with your project rather than with this module. Keep it where the next decision will be made. What your creator sees: Your creator reads the exclusions and the constraints. An exclusion list that costs nothing and a constraint list with nothing awkward in it are the two commonest ways a strategy note says nothing. Your next action: Open Your work and choose Ready for review. This closes Module 17. Module 18 is the independent project, where all of this is used on work that is entirely yours.
+
+A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
 
 
 

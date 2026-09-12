@@ -1,4 +1,15 @@
 import type { ActiveCheck, Apprenticeship, GuideStep, Lesson, WorksheetField, WorksheetSection } from './teaching';
+import { numbered, paperRoute, textRoute, type Guided } from './guided';
+import { guided11 } from './guided11';
+import { guided12 } from './guided12';
+import { guided13 } from './guided13';
+import { guided14 } from './guided14';
+import { guided15 } from './guided15';
+import { guided16 } from './guided16';
+import { guided17 } from './guided17';
+import { guided18 } from './guided18';
+import { guided19 } from './guided19';
+import { guided20 } from './guided20';
 import { milestones } from './journey';
 import { videoSelections } from './reading';
 
@@ -242,17 +253,8 @@ const detectiveGuide: GuideStep[] = [
 
 // Guided material for the rest of Module 1, one entry per lesson, authored
 // against each lesson's own steps and outputs. Field ids are record keys.
-type Guided = Pick<Activity, 'route' | 'worksheet' | 'guide' | 'checks' | 'saveRoute' | 'video'>;
-const paperRoute = (what: string): Activity['route'] => ({
-  recommended: `Draw ${what} on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder.`,
-  alternative: 'Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.',
-});
-const textRoute: Activity['route'] = {
-  recommended: 'Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.',
-  alternative: 'Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.',
-};
-const numbered = (prefix: string, label: (n: number) => string, count: number, kind: 'short' | 'long', extra: (n: number) => Partial<WorksheetField> = () => ({})): WorksheetField[] =>
-  Array.from({ length: count }, (_, i) => ({ id: `${prefix}-${i + 1}`, label: label(i + 1), kind, ...extra(i + 1) }));
+// The Guided shape and its route helpers live in ./guided, so a module's
+// material can sit in its own file without importing this table back.
 
 const framing: Guided = {
   route: textRoute,
@@ -1992,7 +1994,12 @@ export function withApprenticeship(l: Lesson): Lesson {
 // second assignment or dropping the newly published lessons during merge.
 // Guided material for lessons that keep their derived workspace. Keyed by
 // permanent lesson id; merged in withPublishedWorkspace below.
+// Modules 11 to 20 keep their guided material in one file each, because a
+// single table of 224 lessons is no longer readable or reviewable. The shape
+// and the merge point are unchanged.
 export const guidedLessons: Record<string, Guided> = {
+  ...guided11, ...guided12, ...guided13, ...guided14, ...guided15,
+  ...guided16, ...guided17, ...guided18, ...guided19, ...guided20,
   'm03-l01-v1': {
     route: paperRoute('the type ladder and the re-typeset screen'),
     worksheet: [
