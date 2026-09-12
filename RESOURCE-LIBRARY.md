@@ -1,3 +1,7 @@
+## Lesson 1 release recheck — 12 September 2026
+
+R01 (Design Council Double Diamond) and the existing VID01 Vimeo page were retrieved publicly again on this date. The reading still describes Discover, Define, Develop and Deliver without an account. The video page still identifies Jonathan Ball and Design Council. This is a page-access recheck, not a new playback or subtitle verification; retain the original dated subtitle evidence and timestamps. Both remain optional in the new Lesson 1 action flow, which teaches the complete written route without them.
+
 ## Guided learning resource policy — 7 September 2026
 
 The all-course beginner audit is `docs/BEGINNER-LESSON-AUDIT.md`. A verified reading remains support rather than a substitute for teaching. Each refined lesson must locally demonstrate every new idea its exercise requires. Where a lesson needs software controls, add a verified control-level walkthrough or an original static starter/playground; a documentation page alone does not establish that a beginner can perform the workflow. Where a lesson needs participant or workplace access, provide labelled practice material without presenting it as real evidence.

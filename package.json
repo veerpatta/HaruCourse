@@ -16,7 +16,8 @@
     "docs:generate": "node scripts/course-docs.mjs",
     "test:content": "node scripts/course-docs.mjs --check",
     "test:worksheet": "node scripts/test-worksheet.mjs",
-    "audit:guided": "node scripts/audit-guided.mjs"
+    "audit:guided": "node scripts/audit-guided.mjs",
+    "test:learning": "node scripts/test-learning.mjs"
   },
   "dependencies": {
     "@cloudflare/workers-oauth-provider": "^0.10.3",

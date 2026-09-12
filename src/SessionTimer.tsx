@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import { Check, Pause, Play } from "lucide-react";
 import type { RecordData, SessionEntry } from "../shared/record";
 import { formatClock, humanDate, humanDuration } from "./labels";
@@ -6,8 +6,7 @@ import type { Timer } from "./useTimer";
 
 type Step = { minutes: number; title: string; text: string };
 
-// On a phone the fixed bar would float over or under the keyboard, so it hides
-// while a field has focus. The practice heading shows the time inline meanwhile.
+// Keep focus state available to responsive styling; the timer stays inline.
 function useKeyboardOpen() {
   const [open, setOpen] = useState(false);
   useEffect(() => {
@@ -47,13 +46,15 @@ export function SessionTimer({
   if (role === "creator") return <SessionSummary record={record} steps={steps} />;
   const { running, elapsedMs, hasSession, step, autoPausedAt } =
     timer.snapshot;
+  const appliedMs = record.sessions?.find(s => s.id === timer.snapshot.segmentId)?.elapsedMs ?? 0;
+  const lessonMs = record.minutes * 60000 + (record.timingRemainderMs ?? 0) + Math.max(0, elapsedMs - appliedMs);
   const stepTitle = step ? steps[step - 1]?.title : null;
   const sub = autoPausedAt
-    ? "Paused after 10 quiet minutes — everything before that is kept"
+    ? "Paused after five minutes without interaction"
     : running
       ? stepTitle
         ? `Step ${step} · ${stepTitle}`
-        : "Running · tap a step below to track it"
+        : "Recording active course use"
       : hasSession
         ? "Paused"
         : `${humanDuration(record.minutes)} recorded so far`;
@@ -64,13 +65,14 @@ export function SessionTimer({
       }`}
       role="group"
       aria-label="Practice timer"
+      data-time-control
     >
       <div className="session-timer-main">
         <span className="session-timer-clock">
           {running && <span className="session-timer-dot" aria-hidden />}
-          {formatClock(elapsedMs)}
+          {formatClock(lessonMs)}
         </span>
-        <span className="session-timer-sub">{sub}</span>
+        <span className="session-timer-sub">Lesson time · {sub}</span>
       </div>
       <div className="session-timer-actions">
         <button
@@ -84,19 +86,23 @@ export function SessionTimer({
             </>
           ) : (
             <>
-              <Play size={17} /> {hasSession ? "Resume" : "Start"}
+              <Play size={17} /> Resume
             </>
           )}
         </button>
         {hasSession && (
           <button type="button" className="secondary" onClick={timer.finish}>
-            <Check size={17} /> Finish
+            <Check size={17} /> End session
           </button>
         )}
       </div>
       <p className="timer-live" aria-live="polite">
         {timer.notice}
       </p>
+      <details className="timer-details"><summary>Time details · {humanDuration(record.minutes)} saved</summary>
+        <p>Automatic time pauses outside the course and after five quiet minutes. Add work in another app or on paper below.</p>
+        <TimeAdjust minutes={record.minutes} onAdd={timer.addMinutes} onSetTotal={timer.setTotal}/>
+      </details>
     </div>
   );
 }
@@ -285,11 +291,12 @@ export function TimeAdjust({
   onSetTotal: (n: number) => void;
 }) {
   const [add, setAdd] = useState("");
+  const fieldId = useId();
   const [total, setTotal] = useState("");
   const [message, setMessage] = useState("");
   const whole = (raw: string) => {
     const n = Number(raw);
-    return Number.isInteger(n) && n >= 0 ? n : null;
+    return raw.trim() && Number.isSafeInteger(n) && n >= 0 ? n : null;
   };
   return (
     <details className="time-adjust">
@@ -299,9 +306,9 @@ export function TimeAdjust({
         logged separately from timed sessions.
       </p>
       <div className="time-adjust-row">
-        <label htmlFor="time-add">Minutes to add</label>
+        <label htmlFor={fieldId + '-add'}>Minutes to add</label>
         <input
-          id="time-add"
+          id={fieldId + '-add'}
           type="number"
           inputMode="numeric"
           min={1}
@@ -314,8 +321,8 @@ export function TimeAdjust({
           className="secondary"
           onClick={() => {
             const n = whole(add);
-            if (n === null || n < 1) {
-              setMessage("Use whole minutes, at least 1.");
+            if (n === null || n < 1 || n > 1440) {
+              setMessage("Use whole minutes from 1 to 1440.");
               return;
             }
             onAdd(n);
@@ -326,14 +333,14 @@ export function TimeAdjust({
           Add
         </button>
       </div>
-      <p className="muted">
+      <div className="muted">
         Total so far: {humanDuration(minutes)}.{" "}
         <details className="time-adjust-total">
           <summary>Edit total</summary>
           <div className="time-adjust-row">
-            <label htmlFor="time-total">New total in minutes</label>
+            <label htmlFor={fieldId + '-total'}>New total in minutes</label>
             <input
-              id="time-total"
+              id={fieldId + '-total'}
               type="number"
               inputMode="numeric"
               min={0}
@@ -359,7 +366,7 @@ export function TimeAdjust({
             </button>
           </div>
         </details>
-      </p>
+      </div>
       {message && <p role="status">{message}</p>}
     </details>
   );

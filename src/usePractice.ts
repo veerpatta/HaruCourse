@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type SetStateAction } from "react";
 import { canPoll, onActivityResume } from "./activity";
+import { prepareRecord } from '../shared/learning';
 import {
   recordSchema,
   type RecordData,
@@ -39,6 +40,7 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
     active = useRef(true);
   const [status, setStatus] = useState("Loading saved work…");
   const [conflict, setConflict] = useState<CloudRecord | null>(null);
+  const [hydrated, setHydrated] = useState(false);
   const blocked = useRef(false);
   const url = "/api/progress?lessonId=" + encodeURIComponent(lessonId);
   function persist() {
@@ -48,6 +50,7 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
         storageKey + ":sync",
         JSON.stringify({ revision: revision.current, dirty: dirty.current }),
       );
+      window.dispatchEvent(new Event('harucourse:records'));
       return true;
     } catch {
       setStatus(
@@ -58,13 +61,10 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
   }
   const debounce = useRef<ReturnType<typeof setTimeout> | null>(null);
   function setRecord(value: SetStateAction<RecordData>) {
-    current.current =
-      typeof value === "function" ? value(current.current) : value;
-    if (
-      current.current.status === "ready-for-review" &&
-      (!current.current.notes.trim() || !current.current.submission.trim())
-    )
-      current.current = { ...current.current, status: "practicing" };
+    if (user.role !== 'learner') return;
+    const next = typeof value === "function" ? value(current.current) : value;
+    if (next === current.current) return;
+    current.current = prepareRecord(current.current, next);
     generation.current++;
     if (debounce.current) clearTimeout(debounce.current);
     debounce.current = setTimeout(() => {
@@ -95,6 +95,7 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
           "This lesson was also edited somewhere else. Choose which version to keep.",
         );
         ready.current = true;
+        setHydrated(true);
         return;
       }
       revision.current = remote.revision;
@@ -103,11 +104,13 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
         render(current.current);
       }
       ready.current = true;
+      setHydrated(true);
       persist();
       setStatus(dirty.current ? "Saving…" : "Saved online");
     } catch (e) {
+      if (active.current) { ready.current = true; setHydrated(true); }
       if (active.current)
-        setStatus(e instanceof Error ? e.message : "Waiting for connection");
+        setStatus(!navigator.onLine ? "Saved on this device — reconnect to save online" : e instanceof TypeError ? "Could not reach the server. Your device copy is available; we will retry." : e instanceof Error ? e.message : "Waiting for connection");
     }
   }
   async function flush() {
@@ -126,7 +129,7 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
     const parsed = recordSchema.safeParse(current.current);
     if (!parsed.success) {
       setStatus(
-        "Kept on this device. To mark it ready for review, add your notes and a link to your work.",
+        "Kept on this device. Check the answer limits and required work before saving again.",
       );
       return;
     }
@@ -176,6 +179,8 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
             (local.sessions?.length ?? 0) === (parsed.data.sessions?.length ?? 0) &&
             JSON.stringify(local.worksheet ?? null) === JSON.stringify(parsed.data.worksheet ?? null) &&
             JSON.stringify(local.guide ?? null) === JSON.stringify(parsed.data.guide ?? null)
+            && JSON.stringify(local.learning ?? null) === JSON.stringify(parsed.data.learning ?? null)
+            && local.timingRemainderMs === parsed.data.timingRemainderMs
           )
             persist();
         } catch {}
@@ -254,5 +259,5 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
     persist();
     setStatus(useCloud ? "Saved online" : "Saving your chosen draft…");
   }
-  return { record, setRecord, status, conflict, resolve };
+  return { record, setRecord, status, conflict, resolve, hydrated };
 }

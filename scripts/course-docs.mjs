@@ -10,6 +10,7 @@ const { modules } = await import("../src/modules.ts");
 const { lessons, publishedLessonIds, isPublishedLesson } = await import(
   "../src/lessons.ts"
 );
+const {lessonOneExample, suppliedWalkthrough} = await import('../src/lessonOneFlow.ts');
 const { baselineLesson } = await import('../src/course.ts');
 const { readingSelections, videoSelections } = await import('../src/reading.ts');
 const { activities } = await import('../src/apprenticeship.ts');
@@ -138,7 +139,7 @@ const catalog = [
 function output(path, text) {
   // Keep generated course views connected to the plan without rewriting teaching.
   const titleEnd = text.indexOf("\n");
-  const planNote = "\n\n> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Published, worksheet-enabled, teaching-refined, learner-validated and assessed are separate states.";
+  const planNote = "\n\n> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Follow [the small-action teaching and tracking standard](docs/COURSE-AUTHORING.md#small-action-and-tracking-contract--12-september-2026). Only Lesson 1 currently uses the new action flow. Published, worksheet-enabled, teaching-refined, learner-validated and assessed are separate states.";
   text = text.slice(0, titleEnd) + planNote + text.slice(titleEnd);
   if (process.argv.includes("--check"))
     assert.equal(
@@ -220,7 +221,23 @@ function activityDoc(l) {
   const setup = guided ? "" : `**Where to work:** ${a.workspace.tools}\n\n${list(a.workspace.setup)}\n\n${details('Copyable starter template', '```text\n' + a.starter + '\n```')}\n\n`;
   return `#### ${a.activity}\n\n${a.mission}\n\n${setup}${guidedDoc(l)}${a.visual ? details('Optional Figma Starter route (workflow not authenticated)', list(figmaGuide)) : ''}\n\n${l.id === 'm03-l04-v1' ? 'Use the offline contrast calculator in this lesson’s Do section. It accepts opaque six-digit sRGB colors; classification and exceptions come from R30. Record exact input values and the unrounded-threshold result, not only the displayed ratio.' : ''}\n\n${a.hints.map((h, i) => details('Hint ' + (i + 1), h)).join('\n\n')}\n\n${a.ai ? details('Optional AI rehearsal', a.ai.purpose + '\n\n' + list(a.ai.setup) + '\n\n```text\n' + a.ai.prompt + '\n```\n\n' + a.ai.followUp + '\n\nWithout AI or at a usage limit: ' + a.ai.alternative) : ''}\n\n**Save:**\n\n${list(a.workspace.save)}\n\n**Adequate evidence:** ${a.adequate}\n\n**Bring forward:** ${a.handoff}\n`;
 }
+function flowDoc(l) {
+  const a=l.apprenticeship, fields=a.worksheet.flatMap(s=>s.fields), sorter=a.guide.find(g=>g.sorter).sorter;
+  const parts=l.flow.map(action=>{
+    const f=fields.find(f=>f.id===action.field);
+    const q=action.kind==='check' ? a.checks[action.index] : null;
+    const item=action.kind==='sort' ? sorter.items[action.index] : null;
+    return '### '+action.title+'\n\nSection: '+action.section+'. Stable action: '+action.id+'.\n\n'+action.instruction+'\n\n'
+      +(action.kind==='example' ? list(lessonOneExample)+'\n\n' : '')
+      +(action.field==='app' ? details('Supplied walkthrough',list(suppliedWalkthrough))+'\n\n' : '')
+      +(f ? '**Answer:** '+f.label+(f.options ? ' ('+f.options.join(' / ')+')' : '')+'\n\n'+(f.hint || '')+'\n\n'+(f.example ? details('Example',f.example)+'\n\n' : '') : '')
+      +(item ? item.text+'\n\n'+list(sorter.options)+ '\n\n'+details('After your attempt',sorter.options.map(o=>o+': '+item.feedback[o]).join('\n\n'))+'\n\n' : '')
+      +(q ? q.question+'\n\n'+list(q.options.map(o=>o.label))+'\n\n'+details('After your attempt',q.options.map(o=>o.label+' — '+o.feedback).join('\n\n')+'\n\nCheck your work: '+q.recheck)+'\n\n' : '');
+  });
+  return '## Lesson '+l.day+': '+l.title+'\n\nStable ID: '+l.id+'. Core.\n\n'+l.why+'\n\n'+list(l.outputs)+'\n\n'+parts.join('\n')+'\nYour answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all answers and record the repair, then choose Finish practice. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.\n\n'+details('Optional reading and video','['+l.resource.title+']('+l.resource.url+'). '+(a.video ? '['+a.video.title+']('+a.video.url+'). '+a.video.written : ''))+'\n';
+}
 function lessonDoc(l) {
+  if(l.flow) return flowDoc(l);
   const reading = readingSelections[l.resource.id];
   return `## ${l.id === "baseline-v1" ? "Baseline" : "Lesson " + l.day}: ${l.title}
 

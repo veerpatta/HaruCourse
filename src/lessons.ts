@@ -1,4 +1,5 @@
 import { module3 } from './module3';
+import { lessonOneFlow } from './lessonOneFlow';
 import { withApprenticeship } from './apprenticeship';
 import { module4 } from './module4';
 import { module5 } from './module5';
@@ -25,6 +26,7 @@ export type { Lesson } from "./teaching";
 const week1 = [
   {
     id: "week1-day1-v1",
+    flow: lessonOneFlow,
     day: 1,
     title: "From screens to product problems",
     why: "Your eye already knows when a screen looks right. This lesson adds the other half of the job: working out whether it actually helps the person using it.",
@@ -85,7 +87,7 @@ const week1 = [
         minutes: 25,
         title: "Learn",
         instructions: [
-          "Watch the short video, or read the Double Diamond page instead.",
+          "Read the explanation and made-up example here. The video and Double Diamond reading are optional extras.",
           "Write one plain sentence each for product design, UX and UI.",
         ],
       },
@@ -118,8 +120,8 @@ const week1 = [
         minutes: 10,
         title: "Reflect",
         instructions: [
-          "Write one question the screen could not answer, and what you will do next.",
-          "Answer the three Check questions, then note the one answer you changed.",
+          "Answer the three Check questions and improve your answers beside the feedback.",
+          "Then record your open question, improvement and next action in Your work.",
         ],
       },
     ],

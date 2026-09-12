@@ -145,7 +145,7 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
           "save_practice",
           {
             description:
-              "Update the learner’s full practice record only when requested. Read progress first and supply expectedRevision; conflicts never overwrite a newer record. Minutes are the total for this exercise, not an increment. Preserve the optional sessions log, confidence rating, worksheet answers and guide position from get_progress when writing back; the app maintains them and omitting them erases them. Worksheet keys are the field ids the lesson declares; guide.done is a navigation aid, never evidence of competence.",
+              "Update the learner’s full practice record only when requested. Read progress first and supply expectedRevision; conflicts never overwrite a newer record. Minutes are the total for this exercise, not an increment. Preserve the optional sessions log, confidence rating, worksheet answers, guide position, learning state (including formative answers and finishedAt) and timingRemainderMs from get_progress when writing back; the app maintains them and omitting them erases them. Worksheet keys are the field ids the lesson declares; guide.done is a navigation aid, never evidence of competence.",
             inputSchema: saveSchema.extend(inputSchema),
             annotations: {
               readOnlyHint: false,

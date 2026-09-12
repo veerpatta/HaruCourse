@@ -182,6 +182,7 @@ export type LegacyLesson = {
   guided?: true;
 };
 export type Lesson = Omit<LegacyLesson, "steps"> & {
+  flow?: import('./lessonOneFlow').LessonAction[];
   apprenticeship?: Apprenticeship;
   id: string;
   day: number;

@@ -1,3 +1,13 @@
+## Current standard — small actions and honest progress, 12 September 2026
+
+The current release refines only Module 1 Lesson 1 (week1-day1-v1) into one small action at a time, preserving all 36 worksheet fields and the full workload. All 224 teaching lessons are published; the remaining 223 have not been reviewed against this new action-by-action standard. Shared tracking improvements do not establish teaching refinement or learner validation.
+
+Follow [the action and tracking contract](docs/COURSE-AUTHORING.md#small-action-and-tracking-contract--12-september-2026). Required work, practice finished, recorded time, creator feedback and mastery are distinct. Automatic time counts focused course activity and pauses outside the course or after five minutes without interaction. External study time is added manually. Time and navigation never finish practice.
+
+Keep Learn → Do → Check → Your work and the existing cream/green/serif style. Show the exact action, destination and sufficient output beside its answer control; keep essential teaching visible. Present supported examples before independent work, collect a reason before feedback, and let the learner repair the relevant saved answer beside it. Save the exact action and formative Check responses for return; no score is calculated.
+
+Preserve IDs, record version 1, storage keys, old answers and feedback revisions. Observe Haru completing and resuming Lesson 1 without coaching before redesigning another lesson. Her observed use is still pending. The original vision stays immutable. Dated historical sections below describe earlier states and do not override this current standard.
+
 # Current milestone — beginner teaching quality across all lessons, 7 September 2026
 
 The all-course review is [docs/BEGINNER-LESSON-AUDIT.md](docs/BEGINNER-LESSON-AUDIT.md). It records a row for all 224 published lessons and replaces “add a worksheet” as the definition of refinement. The target teaching path is See it → Try it with help → Try it yourself → Check the reason → Improve your work → Save and continue, presented inside Learn → Do → Check → Your work.

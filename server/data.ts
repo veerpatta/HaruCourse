@@ -1,4 +1,6 @@
 import { baseline } from "../src/course";
+import { publishedLessons } from '../src/lessons';
+import { finishProblems, prepareRecord } from '../shared/learning';
 import {
   recordSchema,
   type RecordData,
@@ -56,8 +58,18 @@ export async function saveProgress(
       403,
       "Only the learner can update her practice record.",
     );
+  const previous = await progress(env, user, lessonId);
+  if (previous.revision !== expectedRevision) throw new HttpError(409, 'A newer cloud version exists. Refresh before saving.');
+  const parsed = recordSchema.parse(value);
+  const prepared = previous.record ? prepareRecord(previous.record, parsed) : parsed;
+  if (prepared.learning?.finishedAt) {
+    const lesson = publishedLessons.find(l => l.id === lessonId);
+    if (!lesson) throw new HttpError(400, 'The diagnostic is separate from finished course practice.');
+    const problems = finishProblems(lesson, prepared);
+    if (problems.length) throw new HttpError(400, problems.join(' '));
+  }
   const record = {
-    ...recordSchema.parse(value),
+    ...prepared,
     updatedAt: new Date().toISOString(),
   };
   const encoded = JSON.stringify(record);

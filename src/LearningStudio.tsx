@@ -1,6 +1,9 @@
 import { navigate as navigateHistory, useNavigation } from './navigation';
 import { canPoll, onActivityResume } from './activity';
 import { useTimer } from './useTimer';
+import { LessonFlow, currentAction } from './LessonFlow';
+import { FinishPractice, ProgressOverview } from './LearningProgress';
+import type { useCourseRecords } from './useCourseRecords';
 import { practiceTotals } from './useCourseRecords';
 import { humanDate, humanDuration, statusLabel } from './labels';
 import { SessionTimer, SessionLog, TimeAdjust, ConfidencePicker } from './SessionTimer';
@@ -49,12 +52,14 @@ export function LearningStudio({
   mode = "Learn",
   target,
   clearTarget,
+  course,
 }: {
   user: User;
   bookmark: ReturnType<typeof usePosition>;
   mode?: string;
   target?: { id: string; section: string };
   clearTarget: () => void;
+  course: ReturnType<typeof useCourseRecords>;
 }) {
   const {lesson: selected, section: navigationSection} = useNavigation();
   const section = navigationSection || target?.section || (bookmark.position?.lessonId === selected ? bookmark.position.sectionId : "learn");
@@ -63,71 +68,7 @@ export function LearningStudio({
     browsedWeek ??
     lessons.find((l) => l.id === bookmark.position?.lessonId)?.week ??
     1;
-  const [records, setRecords] = useState<
-    { lessonId: string; record: RecordData }[]
-  >([]);
-  const [error, setError] = useState("");
-  const [loaded, setLoaded] = useState(false);
-  useEffect(() => {
-    let active = true;
-    async function refresh() {
-      let saved: { lessonId: string; record: RecordData }[] = [];
-      try {
-        const r = await fetch("/api/course-records", { cache: "no-store" });
-        if (!r.ok) throw Error();
-        saved = (await r.json()).records;
-        if (active) setError("");
-      } catch {
-        if (active)
-          setError(
-            user.role === "creator"
-              ? "Reconnect to load Haru’s saved work."
-              : "Cloud list unavailable. Showing saved work on this device.",
-          );
-      }
-      // Include pending/offline drafts without replacing newer cloud summaries with clean caches.
-      if (user.role !== "creator")
-        for (const l of [baseline, ...lessons]) {
-          const key =
-            l.id === baseline.id
-              ? `harucourse:baseline:v1:${user.id}`
-              : `harucourse:lesson:${user.id}:${l.id}`;
-          try {
-            const raw =
-              localStorage.getItem(key) ||
-              (user.id === "haru" && l.id === baseline.id
-                ? localStorage.getItem("harucourse:baseline:v1")
-                : null);
-            const parsed = recordSchema.safeParse(JSON.parse(raw || "null"));
-            const pending = JSON.parse(
-              localStorage.getItem(key + ":sync") || "null",
-            )?.dirty;
-            if (
-              parsed.success &&
-              (pending || !saved.some((r) => r.lessonId === l.id))
-            )
-              saved = [
-                ...saved.filter((r) => r.lessonId !== l.id),
-                { lessonId: l.id, record: parsed.data },
-              ];
-          } catch {
-            /* Keep cloud summaries when device data cannot be read. */
-          }
-        }
-      if (active) {
-        setRecords(saved);
-        setLoaded(true);
-      }
-    }
-    void refresh();
-    const timer = setInterval(() => {if(canPoll()) void refresh()}, 5000);
-    const resume = onActivityResume(() => void refresh());
-    return () => {
-      active = false;
-      clearInterval(timer);
-      resume();
-    };
-  }, [user.id, user.role]);
+  const {records, error, loaded} = course;
   function open(id: string, targetSection = "learn") {
     if (![baseline, ...lessons].some((l) => l.id === id)) return;
     const safe = sections.includes(targetSection as (typeof sections)[number])
@@ -186,6 +127,7 @@ export function LearningStudio({
     return (
       <>
         <h1>My work</h1>
+        <ProgressOverview records={records}/>
           <p>Open a draft or review its feedback.</p>
           <details className="teaching-detail">
             <summary>Practice history · {humanDuration(practiceTotals(records).minutes)}</summary>
@@ -215,7 +157,7 @@ export function LearningStudio({
                   onClick={() => open(l.id, "practice")}
                 >
                   <strong>{l.title}</strong>
-                  <span>{statusLabel(saved.status)} →</span>
+                  <span>{saved.learning?.finishedAt ? 'Practice finished' : statusLabel(saved.status)} →</span>
                 </button>
               );
             })}
@@ -234,12 +176,13 @@ export function LearningStudio({
     <>
       <span className="eyebrow">YOUR COURSE</span>
       <h1>Learn</h1>
+      <ProgressOverview records={records}/>
       <section className="feature-card">
         <span className="pill">YOUR NEXT STEP</span>
         <h2>{resume.title}</h2>
         {resumeGuide && resumeTitle && (
           <p className="resume-step">
-            You were on step {resumeGuide} · {resumeTitle}.
+            Your saved activity: {resume.flow?.find(a => a.id === resumeRecord?.learning?.action)?.title || resumeTitle}.
             {resumeRecord?.worksheet?.["next-action"]?.trim()
               ? ` Your note: ${resumeRecord.worksheet["next-action"].trim()}`
               : ""}
@@ -250,7 +193,9 @@ export function LearningStudio({
           onClick={() =>
             open(
               resume.id,
-              resumeGuide
+              bookmark.position?.lessonId === resume.id
+                ? bookmark.position.sectionId
+                : resumeGuide
                 ? "practice-plan"
                 : bookmark.position?.lessonId === resume.id
                   ? bookmark.position.sectionId
@@ -258,13 +203,14 @@ export function LearningStudio({
             )
           }
         >
-          {resumeGuide ? `Continue at step ${resumeGuide} →` : "Continue learning →"}
+          {resume.flow ? "Continue your saved action →" : resumeGuide ? `Continue at step ${resumeGuide} →` : "Continue learning →"}
         </button>
       </section>
       <p className="save-status" role="status">
         {bookmark.status}
       </p>
       {error && <p role="status">{error}</p>}
+      <ProgressOverview records={records} module={week}/>
       <label htmlFor="module-choice">Browse a module</label>
       <select
         id="module-choice"
@@ -293,7 +239,7 @@ export function LearningStudio({
                 {l.optional ? " · Optional" : ""}
               </span>
               <strong>{l.title}</strong>
-              <span aria-hidden="true">→</span>
+              <span>{records.find(r => r.lessonId === l.id)?.record.learning?.finishedAt ? "Practice finished ✓" : records.some(r => r.lessonId === l.id && r.record.status !== "not-started") ? "In progress" : "Not started"} →</span>
             </button>
           ))}
       </div>
@@ -332,6 +278,7 @@ export function LessonReader({
     if (lesson.id !== "baseline-v1") remember(lesson.id, id);
   }
   useEffect(() => {
+    if (lesson.flow) return;
     document.getElementById(activeSection)?.focus();
     window.scrollTo(0, 0);
   }, [activeSection]);
@@ -343,9 +290,15 @@ export function LessonReader({
       : `harucourse:lesson:${user.id}:${lesson.id}`,
   );
   const { record, setRecord, status, conflict, resolve } = practice;
-  const timer = useTimer({storageKey:`harucourse:timer:${user.id}:${lesson.id}`,enabled:user.role === "learner",active:true,setRecord});
+  const timer = useTimer({storageKey:`harucourse:timer:${user.id}:${lesson.id}`,enabled:user.role === "learner" && practice.hydrated,active:!conflict,setRecord});
   const online = useOnline();
   const guided = !!lesson.apprenticeship?.guide?.length;
+  const pilot = !!lesson.flow;
+  const finalAction = pilot && (user.role === 'creator' ? activeSection === 'practice' : currentAction(lesson, record, activeSection)?.kind === 'review');
+  useEffect(() => {
+    if (pilot || user.role !== 'learner') return;
+    timer.markStep(activeSection === 'learn' ? 1 : activeSection === 'practice-plan' ? record.guide?.step ?? 1 : lesson.steps.length);
+  }, [activeSection, record.guide?.step, pilot]);
   const [feedback, setFeedback] = useState<Feedback[]>([]),
     [review, setReview] = useState(""),
     [message, setMessage] = useState("");
@@ -424,10 +377,11 @@ export function LessonReader({
           </button>
         ))}
       </nav>
+      {pilot && <LessonFlow lesson={lesson} record={record} setRecord={setRecord} section={activeSection} go={go} readOnly={user.role !== "learner"} onStep={user.role === "learner" ? timer.markStep : () => {}} online={online}/>}
       <article
         id="learn"
         tabIndex={-1}
-        hidden={activeSection !== "learn"}
+        hidden={pilot || activeSection !== "learn"}
         className="lesson-reading"
       >
         <h2>Learn</h2>
@@ -493,7 +447,7 @@ export function LessonReader({
       <section
         id="practice-plan"
         tabIndex={-1}
-        hidden={activeSection !== "practice-plan"}
+        hidden={pilot || activeSection !== "practice-plan"}
         className="lesson-reading"
       >
         <h2>Do</h2>
@@ -554,13 +508,13 @@ export function LessonReader({
       <section
         id="check"
         tabIndex={-1}
-        hidden={activeSection !== "check"}
+        hidden={pilot || activeSection !== "check"}
         className="lesson-reading"
       >
         <h2>Check</h2>
         {lesson.apprenticeship?.checks?.length ? (
           <>
-            <ActiveChecks checks={lesson.apprenticeship.checks} />
+            <ActiveChecks checks={lesson.apprenticeship.checks} record={record} setRecord={setRecord} readOnly={user.role !== "learner"}/>
             <details>
               <summary>More questions and answers</summary>
               {lesson.check.map((q) => (
@@ -612,7 +566,7 @@ export function LessonReader({
       <section
         id="practice"
         tabIndex={-1}
-        hidden={activeSection !== "practice"}
+        hidden={activeSection !== "practice" || (pilot && !finalAction)}
         className="lesson-reading"
       >
         <h2>
@@ -623,11 +577,13 @@ export function LessonReader({
             <WorksheetSummary lesson={lesson} record={record} />
             {user.role === "learner" && (
               <p className="muted">
-                Your answers live in the worksheet under Do. Use the notes below for anything the worksheet did not ask.
+                Your answers live in the lesson activities. Use the notes below for anything the worksheet did not ask.
               </p>
             )}
           </>
         )}
+        <FinishPractice lesson={lesson} record={record} setRecord={setRecord} readOnly={user.role !== "learner"} blocked={!!conflict || !practice.hydrated}/>
+        <p className="save-status" role="status">{status}</p>
         <label htmlFor="lesson-notes">Notes and next action</label>
         <textarea
           id="lesson-notes"
@@ -752,7 +708,7 @@ export function LessonReader({
         )}
       </section>
       <div className="timer-clearance" aria-hidden="true"/>
-      <div className="reader-actions">
+      <div className="reader-actions" hidden={pilot && !finalAction}>
         <button
           className="secondary"
           onClick={() =>

@@ -10,6 +10,8 @@ export const sessionSchema = z
     minutes: z.number().int().min(0).max(1440),
     step: z.number().int().min(1).max(99).optional(),
     manual: z.literal(true).optional(),
+    id: z.string().uuid().optional(),
+    elapsedMs: z.number().int().min(0).max(86400000).optional(),
   })
   .strict();
 export type SessionEntry = z.infer<typeof sessionSchema>;
@@ -49,6 +51,18 @@ export const guideSchema = z
   })
   .strict();
 export type GuideState = z.infer<typeof guideSchema>;
+// Practice navigation and formative responses, never a score. Additive to v1.
+export const learningSchema = z.object({
+  action: worksheetFieldId.optional(),
+  completed: z.array(worksheetFieldId).max(150).optional(),
+  answers: z.record(worksheetFieldId, z.object({
+    value: z.string().max(1000), shown: z.boolean(),
+  }).strict()).refine(v => Object.keys(v).length <= 30).optional(),
+  route: z.enum(["worksheet", "external"]).optional(),
+  outputsConfirmed: z.boolean().optional(),
+  repair: z.string().max(2000).optional(),
+  finishedAt: z.string().datetime().optional(),
+}).strict();
 export const worksheetFilled = (w?: Worksheet | null) =>
   !!w && Object.values(w).some((v) => v.trim());
 
@@ -71,6 +85,8 @@ export const recordSchema = z
     // exactly itself, and `version` stays 1 because nothing existing changed.
     worksheet: worksheetSchema.optional(),
     guide: guideSchema.optional(),
+    learning: learningSchema.optional(),
+    timingRemainderMs: z.number().int().min(0).max(59999).optional(),
   })
   .strict()
   .refine(

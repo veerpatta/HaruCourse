@@ -3,6 +3,8 @@ import type { ActiveCheck, Apprenticeship, Choice, Demonstration, GuideStep, Lab
 import type { RecordData } from "../shared/record";
 import { WORKSHEET_VALUE_CAP } from "../shared/record";
 import { downloadText, filledCount, resumeStep, worksheetFields, worksheetMarkdown } from "./worksheet";
+import { SavedQuestion } from './LearningProgress';
+import { checkKey } from '../shared/learning';
 
 // Shared guided-practice reader: one manageable step at a time, an editable
 // worksheet inside each step, contextual help, and a clear place to resume.
@@ -11,7 +13,7 @@ import { downloadText, filledCount, resumeStep, worksheetFields, worksheetMarkdo
 
 type SetRecord = (value: SetStateAction<RecordData>) => void;
 
-function Field({
+export function Field({
   field,
   value,
   onChange,
@@ -273,25 +275,23 @@ function TryWithHelp({ supported }: { supported: SupportedPractice }) {
 
 // "Check the reason" and "Improve your work" together: answer first, read why,
 // then take one named repair back into your own worksheet.
-export function ActiveChecks({ checks }: { checks: ActiveCheck[] }) {
+export function ActiveChecks({ checks, record, setRecord, readOnly }: { checks: ActiveCheck[]; record: RecordData; setRecord: SetRecord; readOnly: boolean }) {
   return (
     <section className="active-checks" aria-label="Check your reasoning">
       <p className="muted">
         Answer each one before reading the explanation. Every answer, including the ones that do not
         hold up, tells you something to change.
       </p>
-      {checks.map((c) => (
+      {checks.map((c, i) => (
         <article key={c.question} className="active-check">
-          <ChoiceQuestion question={c.question} options={c.options} legendClass="check-legend">
-            {() => (
+          <SavedQuestion id={checkKey(i)} question={c.question} options={c.options} record={record} setRecord={setRecord} readOnly={readOnly}>
               <>
                 <p>
                   <strong>Improve your work:</strong> {c.repair}
                 </p>
                 <p className="muted">At recheck: {c.recheck}</p>
               </>
-            )}
-          </ChoiceQuestion>
+          </SavedQuestion>
         </article>
       ))}
     </section>

@@ -1,6 +1,6 @@
 # Product Design Foundations
 
-> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Published, worksheet-enabled, teaching-refined, learner-validated and assessed are separate states.
+> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Follow [the small-action teaching and tracking standard](docs/COURSE-AUTHORING.md#small-action-and-tracking-contract--12-september-2026). Only Lesson 1 currently uses the new action flow. Published, worksheet-enabled, teaching-refined, learner-validated and assessed are separate states.
 
 Generated from src/lessons.ts and src/week2.ts. Legacy filename retained for existing links. Level 1 · Module 1. No deadlines; split any lesson across sessions.
 
@@ -10,497 +10,766 @@ Stable ID: week1-day1-v1. Core.
 
 Your eye already knows when a screen looks right. This lesson adds the other half of the job: working out whether it actually helps the person using it.
 
-### Learn
-
-Bring: Nothing from an earlier lesson. Bring an app you already use and somewhere to write.
-
-- Product design is deciding what a service should help someone do, then shaping it so they can do it and the people running it can keep it going.
-- UX is short for user experience: the whole task, start to finish. UI is short for user interface: the controls, words and layout on the screen.
-- A screen is something you made. Someone finishing what they came to do is what happened. Only the second one tells you the design worked.
-- Sort what you notice into three. Observed: you can point at it. Inferred: your guess about why. Unknown: the screen cannot tell you. Telling these apart is the skill of this lesson.
-- You will not do this alone in a job. Designers work with product managers, engineers and researchers, and that starts long before anything looks finished.
-
-How this lesson works: Do has 5 short steps with an in-app worksheet that saves as you type; Learn remembers which step you were on.
-
-<details>
-<summary>Worked example</summary>
-
-Someone says “make the Reserve button bigger”. Maybe. People might also be stuck because they cannot find a free date, or because the price only appears at the very end. Until you look, all three are guesses.
-
-</details>
-
-<details>
-<summary>Why this works</summary>
-
-- A product is something people come back to because it helps them get something done. Product design is deciding what that something is, then shaping the whole service around it. The screen is one part. Waiting, instructions, help when something goes wrong and what happens afterwards are all part of the same experience.
-- UX and UI are usually said in the same breath and they are not the same thing. UX is everything a person goes through to finish a task. UI is the controls, words and layout in front of them. Product design also asks which problem deserves attention at all, and whether an answer can be built and paid for. Job titles overlap everywhere, so look at what someone actually does rather than what they are called.
-- Your visual training is an advantage here, and it is not the whole job. A beautiful booking screen can still fail if nobody can tell whether their payment went through. The screen is what you made; the person knowing their booking is confirmed is what happened. Keeping those two apart in your notes puts you ahead of most people starting out.
-- Designers rarely decide alone. Product managers weigh up what to do next, engineers work out what is possible and build the behaviour, researchers reduce the guessing about people. That conversation starts long before anyone opens a design tool.
-
-</details>
-
-<details>
-<summary>Reading and free alternative</summary>
-
-[Design Council: the Double Diamond](https://www.designcouncil.org.uk/resources/the-double-diamond/) (R01).
-
-Read: How to use the Double Diamond: Discover, Define, Develop and Deliver. About 20–30 minutes.
-
-Public reading checked 2026-09-06; no account, card or trial. If unavailable, complete the local exercise with this lesson’s concepts and example. Paper and local notes are sufficient. Catalog restrictions apply.
-
-</details>
-
-### Do
-
-#### Design detective
-
-Follow one task in an app you already use, such as finding a class or an event. Stop before booking or paying. One task, not the whole app.
-
-**Where to practise:** Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time.
-
-<details>
-<summary>Work in a file on your computer instead</summary>
-
-Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
-
-Tools: A local text editor (for example Notepad) and the previous lesson artifacts. No account is needed.
-
-- Starting material: Nothing from an earlier lesson. Bring an app you already use and somewhere to write.
-- Create HaruCourse/Practice/week1-day1-v1 in your Documents folder. Open a blank text file and save it as work.md inside that folder; it is ordinary text.
-- Copy the starter below into that file. Replace bracketed placeholders with your work; add rows as needed.
-
-</details>
-
-<details>
-<summary>Optional video paired with step 1</summary>
-
-[Jonathan Ball explains the Double Diamond](https://vimeo.com/857497488) — Design Council (Vimeo), 2 min 57 s, English (UK), English (United Kingdom) subtitles, publisher-authored. Whole video. The part to watch closely runs from 0:27 to 1:53.
-
-What to notice:
-
-- 0:27–0:53 — He draws a straight line from brief to result, then asks: have I been asked to solve the right problem?
-- 0:54–1:04 — Discover and Define exist to produce a better brief, not a screen.
-- 1:17–1:32 — The small loops are make, test, learn: early, rough and repeated.
-- 2:34–2:53 — A straight line from brief to delivery is, in his words, a one-star project; asking whether it is the right problem is what improves the result.
-
-**Then:** Straight after watching, fill “Product design is…” below. If it helps, use his question: was the app built to solve the right problem?
-
-**Without the video:** No video needed: the Double Diamond page (R01) says the same in four short paragraphs, Discover, Define, Develop, Deliver. Read those, then write your three sentences.
-
-A whiteboard sketch, drawn in portrait, with no app interface shown. The written Double Diamond page (R01) uses the same four stage names. Public Vimeo page, no account. Needs an internet connection; it is not cached for offline use. Vimeo shows its own sign-up banner, which you can ignore. Checked 7 September 2026.
-
-</details>
-
-#### 1. Learn
-
-**See it first.** Made-up example. A pottery studio says: “Bookings drop off on the last screen. Make the Reserve button bigger.” Here is how a product designer thinks about that sentence before touching the button.
-
-- **What I can point to:** The studio has numbers showing people leave on the last screen. That part is real: it is counted, not guessed.
-- **What the sentence assumes:** “Make the button bigger” assumes people could not find or press it. Nobody has said that. It is one explanation out of several.
-- **What else would fit the same numbers:** They might not know what to bring, or the price might appear only at the end, or they might want to check a date with someone first.
-- **What I would write instead:** A person booking a first class, on the last screen, needs to be sure what the evening costs and what to bring, otherwise she stops and asks a friend. That is a goal, not a control.
-- **What I would do next:** Watch two people reach that screen and say what they are looking for. Only then choose between a bigger button, an earlier price, or a materials line.
-
-**The wrong turn:** The turn I nearly took was accepting the button. It is the easiest thing to do, it sounds decisive, and if the real trouble is the price it changes nothing while looking like progress.
-
-**What it costs:** Writing the goal instead of the fix costs time and can feel evasive when someone wants an answer today. What it buys is that several repairs can now compete on evidence.
-
-**Still unknown:** Still unknown: why people actually leave. The numbers show where, never why.
-
-- Watch the short video, or read the Double Diamond page instead.
-- Write one plain sentence each for product design, UX and UI.
-
-**You should end up with:** Three sentences in your own words: product design, UX and UI. No quotation needed.
-
-Worksheet fields for this step:
-
-- Product design is… — Try: what it decides, and who it is for.
-- UX is… — The whole task, from the moment somebody needs something to the moment it is done.
-- UI is… — The buttons, words and layout a person actually looks at.
-
-<details>
-<summary>Help with this step</summary>
-
-- **Product design:** Deciding which problem a service should solve and shaping the whole service so people can use it and the business can run it.
-- **UX (user experience):** Everything a person goes through to finish a task, including waiting, instructions and recovering from mistakes.
-- **UI (user interface):** The controls, words and layout on the screen itself.
-- **Output versus outcome:** A screen is an output. A person finishing the task is an outcome.
-
-Stuck starting? Begin the first sentence with “Product design is deciding…” and finish it however feels true to you.
-
-Is it enough? Each sentence names something a person is trying to do, not just a screen.
-
-</details>
-
-#### 2. Observe
-
-- Pick one task in an app you already use. Stop before booking or paying.
-- Write down where you started, what you were trying to do, and each thing you did. Leave out anything private.
-
-**You should end up with:** The app, the one task, where you started and a short list of what you did.
-
-Worksheet fields for this step:
-
-- The app — Any app that lists events, shows, classes or bookings.
-- The one task you followed
-- Where you started — The first screen you saw when you began the task.
-- What you did, one action per line — Leave out anything private: names, addresses, payment details.
-
-<details>
-<summary>Help with this step</summary>
-
-- **Task:** One thing the person is trying to get done, with a clear end. “Find a class on Saturday” is a task; “use the app” is not.
-- **Walkthrough:** Doing the task yourself, slowly, and writing down each action as you go.
-
-Stuck starting? Pick the app you used most recently that lists events or bookings. Do the task once without writing, then once more while writing.
-
-Is it enough? Someone else could repeat your actions from the list without asking you anything.
-
-</details>
-
-#### 3. Separate evidence
-
-**See it first.** Made-up example. One entry from someone else’s walkthrough of a class-booking app, written out with the thinking left in.
-
-- **What I saw or did:** On the results list, the first two cards say “Sponsored” in small grey text above the class title. I scrolled past them to the class I had searched for.
-- **What I nearly wrote:** “Sponsored results annoy people and waste their time.” It felt obviously true as I typed it.
-- **Why I changed it:** I can point to the cards on the screen. I cannot point to anybody being annoyed — I only know that I scrolled past. So the card is observed and the annoyance is my reading.
-- **How I split it:** Observed: two sponsored cards sit above the searched class. Inferred: people scroll past them. Unknown: whether anyone books one.
-- **How I would check it:** Watch two people search for a named class and see whether they stop on the sponsored cards or scroll straight past.
-
-**The wrong turn:** The wrong turn is writing the interesting sentence — the one about people being annoyed — under observed, because it is the sentence you want to act on.
-
-**What it costs:** Splitting one thought into three lines is slower and can feel pedantic. It pays off when someone asks “how do you know?”, because the answer is already written down.
-
-**Still unknown:** Still unknown: whether the sponsored cards affect what anyone books. One walkthrough by one person cannot show that.
-
-- Practise on the six supplied lines first.
-- Then write five things you noticed, and label each one observed, inferred or unknown.
-- Write what the person wanted, and what the company behind the app probably wanted.
-
-**You should end up with:** Five entries, each labelled observed, inferred or unknown, plus one user goal and one possible business goal.
-
-**Try it with help.** Six lines from someone else’s notes, all made up for practice. She walked through a class-booking app on her own and spoke to nobody. Label each line the way you would label your own.
-
-- The first two cards in the list say “Sponsored” in small grey letters.
-  - **observed** — You could point at it. Anyone opening the same screen would see the same two cards, which is what makes it observed.
-  - inferred — Nothing is being worked out here. The words are on the screen, so this one is simply seen.
-  - unknown — The screen answers this completely. Unknown is for things it cannot tell you.
-- People skip past the sponsored cards without reading them.
-  - observed — She only watched herself. What other people do is never visible from one person’s walkthrough, however likely it feels.
-  - **inferred** — That is the honest label. It may well be true, and it is her reading of other people rather than something she saw.
-  - unknown — She does have a reading here, so inferred keeps it visible as something to go and check. Unknown would throw the idea away.
-- The total price is not shown until the payment step.
-  - **observed** — She followed the task and the price appeared where it appeared. That is a fact about the screens.
-  - inferred — No interpretation is involved. She reached the payment step and saw where the number first arrived.
-  - unknown — She walked the whole task, so this one is settled.
-- The late price makes people feel tricked.
-  - observed — Feelings belong to other people, and nobody was asked. The late price is observed; how it lands is not.
-  - **inferred** — A reasonable reading, and still a reading. Written down as inferred, it becomes a question worth asking someone.
-  - unknown — She has a clear guess, so inferred is more useful. It says what to check rather than giving up on it.
-- Whether the class can be cancelled for a refund.
-  - observed — Nothing on the screens said this. If it had, she could point at it.
-  - inferred — Inferred means she has a reading of it. Here she has nothing at all to read, only a blank.
-  - **unknown** — The screen never mentions it and she has no idea either way. Naming that blank is the whole point of the label.
-- The date picker is confusing.
-  - observed — Confusing is a judgement, not a thing on the screen. What she could point at is that the picker opens on today.
-  - **inferred** — A judgement of her own, which is what inferred means. It is worth splitting too: write what the picker does, then keep “confusing” as her reading of it.
-  - unknown — She used the picker, so she is not without information. This is her conclusion about it.
-
-**Then:** Now do the same with your own first entry. Put the part you could point at in “What I saw or did”, and let the label carry your reading of why.
-
-**What to watch for:** Look back at the two hardest lines, skipping the cards and feeling tricked. In both, half the sentence is on the screen and half is about somebody else. The sponsored cards are there to see; the skipping is not. The late price is there to see; the feeling is not.
-
-Worksheet fields for this step, revealed a few at a time in the app:
-
-- Entry 1 · What I saw or did — Something you can point to on the screen, or an action you took. One entry per line of the table.
-- Entry 1 · Observed, inferred or unknown? (observed / inferred / unknown) — Observed: you saw it. Inferred: your guess about why. Unknown: you cannot tell from the screen.
-- Entry 1 · Which goal does this affect?
-- Entry 1 · How could you check it? — What would you watch for, or whom would you ask, to find out whether your reading is right?
-- Entry 2 · What I saw or did
-- Entry 2 · Observed, inferred or unknown? (observed / inferred / unknown)
-- Entry 2 · Which goal does this affect?
-- Entry 2 · How could you check it?
-- Entry 3 · What I saw or did
-- Entry 3 · Observed, inferred or unknown? (observed / inferred / unknown)
-- Entry 3 · Which goal does this affect?
-- Entry 3 · How could you check it?
-- Entry 4 · What I saw or did
-- Entry 4 · Observed, inferred or unknown? (observed / inferred / unknown)
-- Entry 4 · Which goal does this affect?
-- Entry 4 · How could you check it?
-- Entry 5 · What I saw or did
-- Entry 5 · Observed, inferred or unknown? (observed / inferred / unknown)
-- Entry 5 · Which goal does this affect?
-- Entry 5 · How could you check it?
-- The user goal, without naming a screen or button — What does the person need to have happened by the end?
-- One thing the company behind the app probably wants — The app is run by someone who needs it to work for them too: more bookings, fewer phone calls, fewer refunds. A guess is fine here.
-
-<details>
-<summary>Help with this step</summary>
-
-- **Observed:** You saw it or did it. You could point to it on the screen.
-- **Inferred:** Your reading of why something is there or how others behave. It may be right; it is not yet evidence.
-- **Unknown:** You cannot tell from the screen alone. Naming it is the point.
-
-Stuck starting? Take the first action from your list and write what was on the screen at that moment. Label it. Then the next action.
-
-Is it enough? At least one entry is inferred or unknown. If all five are observed, you have not yet written down a guess, and everyone has guesses.
-
-</details>
-
-#### 4. Compare
-
-**See it first.** Made-up example. Writing the “how would I know?” line for one improvement, and throwing the first version away.
-
-- **The improvement:** Show the total cost, including materials, on the class card instead of at the payment step.
-- **What I wrote first:** “I would know it helped because people would like it more.” I was pleased with it for about a minute.
-- **Why it is useless:** There is no version of the world where I could see that. Whatever happened next, I could read it as people liking it more.
-- **What I changed it to:** Ask two people to find what Saturday’s class would cost them in total, and watch whether they go to the payment step to find out.
-- **What makes that different:** It could come out badly. If they still go to payment, the change did not do its job, and I will have to admit it.
-
-**The wrong turn:** The wrong turn is a check that cannot fail. “People would like it more” sounds like a measure and quietly guarantees a pass.
-
-**What it costs:** The watchable version is narrower and slightly awkward to arrange. It is the only kind that can tell you that you were wrong.
-
-**Still unknown:** Still unknown: whether finding the cost faster makes anyone more likely to book. That is a much bigger question than this check.
-
-- Suggest one change to how it looks, and one change to what it does.
-- For each, name something you could watch to tell whether it helped.
-
-**You should end up with:** Two improvements, one visual and one about behaviour, each with an observation that would show whether it helped.
-
-Worksheet fields for this step:
-
-- A visual improvement
-- How would you know the look change helped? — Name something you could watch someone do. “It looks better” is not something you can watch.
-- A change to how the task behaves — Not colour or size: what happens, in what order, or what the app remembers.
-- How would you know the behaviour change helped? — Again, something you could watch. It should be possible for the answer to be no.
-
-<details>
-<summary>Help with this step</summary>
-
-- **Hypothesis:** A change you believe would help, stated so that something you could see would prove it wrong.
-- **Behaviour improvement:** A change in what the app does, asks or remembers, rather than how it looks.
-
-Stuck starting? Look at your inferred and unknown entries. Each one is a place an improvement could be tested.
-
-Is it enough? Each check names something you could watch or count, not “people would like it more”.
-
-</details>
-
-#### 5. Reflect
-
-- Write one question the screen could not answer, and what you will do next.
-- Answer the three Check questions, then note the one answer you changed.
-
-**You should end up with:** One question you could not answer from the screen, your next action, and the one change the Check questions sent you back to make.
-
-Worksheet fields for this step:
-
-- One question you could not answer from the screen
-- Your next action when you return — One line. It is what the Learn page will remind you of.
-- What you changed after the Check questions — The Check section sends you back to one specific answer. Write which one you changed and why.
-
-<details>
-<summary>Help with this step</summary>
-
-- **Open question:** Something the screen could not tell you. Writing it down is how you remember to go and find out.
-- **Repair:** One specific change to one answer you already wrote, not a rewrite. Each Check question names one.
-
-Stuck starting? Reread your unknown entries; one of them is your question. Answer the three Check questions before filling the last box, so you know what to change.
-
-Is it enough? Your next action is a single line you could act on in five minutes when you return, and the last box names one answer you actually changed.
-
-</details>
-
-**Save and continue.** Saved for you: Everything you type in the worksheet saves by itself: first on this device, then online a moment later. The line above the steps tells you which, and says “Saved online” when it has reached the server. Kept outside the app: Nothing is uploaded from your computer. If you kept anything outside the app — a photo of a sketch, a text file — it stays where it is; write its file name in Your work so you can find it again. What your creator sees: Your creator can read this worksheet, your notes and your work reference. He cannot change them, and he sees them only as they are saved. Choosing Ready for review in Your work is how you say a version is ready to be read. Your next action: Open Your work, read your worksheet answers back, add anything the worksheet did not ask for, then choose Ready for review. Lesson 2 starts from this same walkthrough, so keep it.
-
-A ticked step marks where you are; it is not a mark of competence, and any step can be unticked or revisited. Download a plain-text copy of the worksheet from the Do section at any time.
-
-
-
-
-
-<details>
-<summary>Hint 1</summary>
-
-If you can point at it on the screen, it is observed. Why anybody behaves a certain way is never on the screen.
-
-</details>
-
-<details>
-<summary>Hint 2</summary>
-
-If you wrote “people are confused”, write down the exact words or the step you saw instead, and keep confusion as your reading of it.
-
-</details>
-
-<details>
-<summary>Optional AI rehearsal</summary>
-
-Optional: attempt the work first, then use a free text chat for a focused rehearsal.
-
-- Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.
-- Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.
-- Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.
-
-```text
-I am rebuilding my Product Design skills. Lesson: From screens to product problems.
-Task: Follow one task in an app you already use, such as finding a class or an event. Stop before booking or paying. One task, not the whole app.
-Ask me to defend one evidence label at a time. Spot an unsupported assumption without rewriting my table.
-Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-
-My own first attempt (replace this placeholder before sending):
-[Paste only the relevant worksheet answers and describe any drawing in text. No private participant or account details.]
-```
-
-Revise your own artifact. Record one suggestion accepted or rejected, your reason and what still needs real evidence. AI praise is not assessment.
-
-Without AI or at a usage limit: Cover the label column. Label each entry again, then say which ones somebody else could check for themselves.
-
-</details>
-
-**Save:**
-
-- Save your filled template as HaruCourse/Practice/week1-day1-v1/work.md. Keep source observations separate from interpretations.
-- In Your work, record the file location or a reviewable link, your decision, evidence limits and next action. A local path is a locator, not an upload or a file another device can open.
-- For remote review, share only the selected anonymized artifacts through your existing file-sharing method. Check viewer access; keep consent records private.
-
-**Adequate evidence:** Five entries where anyone can tell which parts came from your own walkthrough and which are your reading of other people. Both improvements say how you would know they helped.
-
-**Bring forward:** Keep this table. Lesson 2 starts from it. If you followed a task outside the course brief, keep it as practice and start the brief separately rather than carrying these findings across.
-
-
-Make these:
-
 - One task, followed from start to finish
 - Five things you noticed, each labelled observed, inferred or unknown
 - What the person wanted, and what the company probably wanted
 - Two improvements, each with a way to tell whether it helped
 
-#### 1. Learn
+### Look beyond the screen
 
-- Watch the short video, or read the Double Diamond page instead.
-- Write one plain sentence each for product design, UX and UI.
+Section: learn. Stable action: welcome.
 
-#### 2. Observe
+You will follow one task, separate facts from guesses, and propose two improvements. Keep this course open beside your chosen app. You can stop after any answer.
 
-- Pick one task in an app you already use. Stop before booking or paying.
-- Write down where you started, what you were trying to do, and each thing you did. Leave out anything private.
 
-#### 3. Separate evidence
+### See how a designer starts
 
-- Practise on the six supplied lines first.
-- Then write five things you noticed, and label each one observed, inferred or unknown.
-- Write what the person wanted, and what the company behind the app probably wanted.
+Section: learn. Stable action: see-example.
 
-#### 4. Compare
+Read this made-up example. Notice how a suggested fix turns into a question to investigate.
 
-- Suggest one change to how it looks, and one change to what it does.
-- For each, name something you could watch to tell whether it helped.
+- Made-up practice case: a pottery studio asks for a bigger Reserve button because people leave the booking screen.
+- What is known: in this supplied case, a count shows where people leave.
+- What is guessed: the button might be hard to find. A late price or unclear materials list could also explain it.
+- A useful question: what information does a first-time visitor need before deciding to book?
+- Next: plan to observe people using the screen before choosing a fix. You do not need participants for today’s practice.
+- A bigger button is quick to make, but may solve the wrong problem. Finding out takes effort; the reason people leave is still unknown.
+- Output: a screen you made. Outcome: a person can finish the task. A good-looking screen alone does not prove the outcome.
 
-#### 5. Reflect
 
-- Write one question the screen could not answer, and what you will do next.
-- Answer the three Check questions, then note the one answer you changed.
+### What does product design do?
 
-Pause after any step. Save the artifact and next action in Your work.
+Section: learn. Stable action: define-product-design.
+
+Product design decides which problem to solve and shapes a service that people can use and the business can run. Explain that in one sentence of your own.
+
+**Answer:** Product design is…
+
+Try: what it decides, and who it is for.
 
 <details>
-<summary>Optional effort and portfolio context</summary>
+<summary>Example</summary>
 
-- Learn: about 25 minutes
-- Observe: about 20 minutes
-- Separate evidence: about 45 minutes
-- Compare: about 20 minutes
-- Reflect: about 10 minutes
-
-No deadline; split work across sessions.
-
-Practice, not a case study yet. It is the first piece of evidence in a bank you will build across the course.
+Example (made up): Product design is deciding what a service should help someone do, and shaping it so it actually works for them.
 
 </details>
 
-### Check
 
-**A friend says: “The fix is obvious — make the Reserve button bigger.” Is that a problem statement?**
+### Describe the whole experience
 
-- **No. It names a repair before saying who is stuck and how anyone would know.** — It may even be the right repair, but it skips the part that tells you whether it is: who struggled, with what task, and what you saw.
-- Yes, because a small button is a real usability problem. — Size might be the cause, or the price might be unclear, or the date might be missing. A problem statement names the person and the difficulty, so more than one repair can compete.
-- Yes, as long as you tested the bigger button afterwards. — Testing a repair only tells you whether that repair worked. It cannot tell you what people were actually struggling with, because you never wrote it down.
+Section: learn. Stable action: define-ux.
 
-Improve your work: Reread your user goal in step 3. If it names a screen, a button or a page, rewrite it as something the person needs to have happen, then note the change in step 5.
+UX means user experience: everything a person goes through to finish a task, including waiting and recovery. Explain it in one sentence.
 
-At recheck: The user goal reads as an outcome for a person, and your two improvements are still ways of reaching it rather than the goal itself.
+**Answer:** UX is…
 
-**Your walkthrough screen looks well made and you finished the task easily. What does that prove about other people?**
+The whole task, from the moment somebody needs something to the moment it is done.
 
-- **Nothing yet. You are one person who already knows the app.** — You brought knowledge a first-time visitor does not have. Craft and outcomes need different evidence, and yours is one walkthrough.
-- That the design works, because a real task was completed. — It shows the task can be completed by you, today, knowing what you know. That is worth recording, and it is not evidence about anyone else.
-- That the visual design is good enough to leave alone. — A screen can look well made and still hide the price or the date. Ease for you is not evidence about a person seeing it for the first time.
 
-Improve your work: Look at your five entries in step 3. Any line that describes what other people do or feel belongs under inferred or unknown, not observed. Change one and say why in step 5.
+### Describe the interface
 
-At recheck: At least one entry is labelled inferred or unknown, and its “how could you check it” column names something you could watch.
+Section: learn. Stable action: define-ui.
 
-**You wrote: “People skip the sponsored results.” You did not watch anyone else use the app. Which label is honest?**
+UI means user interface: the buttons, words and layout someone sees and uses. Explain it in one sentence.
 
-- **Inferred — it is your reading of why, and it may well be right.** — Inferred is not a lesser answer; it is the honest one, and it tells you exactly what to go and find out.
-- Observed, because you saw the sponsored results yourself. — You observed that sponsored results appear. “People skip them” is a claim about other people’s behaviour, which the screen cannot show you.
-- Unknown, because you have no data at all. — Unknown is for things you cannot tell from the screen and have no reading of at all. Here you do have a reading, so inferred keeps it visible as something to check.
+**Answer:** UI is…
 
-Improve your work: Pick the entry you were least sure about, set its label honestly, and write in its check column what you would watch to find out. Record the change in step 5.
+The buttons, words and layout a person actually looks at.
 
-At recheck: Every entry label matches the kind of thing it is, and no claim about other people sits under observed.
 
-Answer each question in the app before its explanation appears. Answers are not saved or scored.
+### Choose somewhere to practise
+
+Section: practice-plan. Stable action: app.
+
+Open an app you already use for finding events, classes or bookings. If none is available, use the supplied walkthrough below and label your work as supplied practice.
 
 <details>
-<summary>Is “make the button bigger” a problem statement?</summary>
+<summary>Supplied walkthrough</summary>
 
-No. It jumps straight to a fix. A problem statement says who is stuck, what they were trying to do, and what you saw that shows it.
+- Fictional material, not research. Write “Supplied pottery-class walkthrough” as the app. Task: find a Saturday class and check its cost.
+- Home: a Find classes search box appears above a list of classes.
+- Search: type pottery. Results show titles and images; prices are missing.
+- Class details: open Saturday pottery. The date is near the title; the price is below a long description.
+- Booking: select Saturday. The screen shows ₹800 and “materials included”. Stop here.
+- Describe only these supplied screens. Label explanations as guesses and questions as unknown. Do not claim you used a real app or observed other people.
 
 </details>
 
-<details>
-<summary>Your screen looks good and you finished the task easily. Does that prove it works?</summary>
+**Answer:** The app
 
-No. You already know the app. Looking good and working for a stranger need different kinds of evidence.
+Any app that lists events, shows, classes or bookings.
+
+
+### Choose one small task
+
+Section: practice-plan. Stable action: task.
+
+Choose something with a clear result, such as finding a class on Saturday. You will stop before booking or paying. Write the task below.
+
+**Answer:** The one task you followed
+
+
+
+<details>
+<summary>Example</summary>
+
+Example (made up): Find a pottery class near me next Saturday.
 
 </details>
 
-Review criteria:
 
-- A specific task and what the person wanted
-- What you saw kept apart from what you guessed
-- One trade-off that is not about how it looks
+### Name your starting screen
+
+Section: practice-plan. Stable action: start.
+
+Open the screen where the task begins. Write its visible title or describe it so you can find it again.
+
+**Answer:** Where you started
+
+The first screen you saw when you began the task.
+
+
+### Follow the task once
+
+Section: practice-plan. Stable action: actions.
+
+Try the task. Return here and list what you clicked, typed or looked for, one action per line. Stop before booking or paying. Leave out private details.
+
+**Answer:** What you did, one action per line
+
+Leave out anything private: names, addresses, payment details.
 
 <details>
-<summary>Need to revise?</summary>
+<summary>Example</summary>
 
-- If your goal names a screen or a button, rewrite it as something the person needs to have happen.
-- If a guess is written as a fact, move it to inferred and say what would tell you whether it is true.
-- If both improvements are about how it looks, add one about what the app does, and say how you would know it helped.
-
-Show the revised artifact and criterion at recheck.
+Example (made up):
+Opened the app to the home screen.
+Tapped the search box and typed pottery.
+Scrolled past three sponsored results.
+Opened the first class and looked for the date.
 
 </details>
 
-<details>
-<summary>How review works</summary>
 
-0 absent · 1 needs support · 2 independently adequate · 3 strong reasoning and trade-offs. Ready for review is not assessed completion. Formal scored assessment is not implemented.
+### Practise with supplied note 1 of 6
+
+Section: practice-plan. Stable action: sorter-1.
+
+Observed: something directly seen or done. Inferred: a proposed explanation. Unknown: a question you cannot answer yet. Choose the label that best describes this note.
+
+The first two cards in the list say “Sponsored” in small grey letters.
+
+- observed
+- inferred
+- unknown
+
+<details>
+<summary>After your attempt</summary>
+
+observed: You could point at it. Anyone opening the same screen would see the same two cards, which is what makes it observed.
+
+inferred: Nothing is being worked out here. The words are on the screen, so this one is simply seen.
+
+unknown: The screen answers this completely. Unknown is for things it cannot tell you.
 
 </details>
 
-### Your work
 
-- Save notes and your next action.
-- Add a work reference; this does not upload the file.
-- Record actual minutes if useful.
-- Select Ready for review only after adding notes and a work reference.
-- Read version-specific feedback and revise the artifact.
+### Practise with supplied note 2 of 6
+
+Section: practice-plan. Stable action: sorter-2.
+
+Observed: something directly seen or done. Inferred: a proposed explanation. Unknown: a question you cannot answer yet. Choose the label that best describes this note.
+
+People skip past the sponsored cards without reading them.
+
+- observed
+- inferred
+- unknown
+
+<details>
+<summary>After your attempt</summary>
+
+observed: She only watched herself. What other people do is never visible from one person’s walkthrough, however likely it feels.
+
+inferred: That is the honest label. It may well be true, and it is her reading of other people rather than something she saw.
+
+unknown: She does have a reading here, so inferred keeps it visible as something to go and check. Unknown would throw the idea away.
+
+</details>
+
+
+### Practise with supplied note 3 of 6
+
+Section: practice-plan. Stable action: sorter-3.
+
+Observed: something directly seen or done. Inferred: a proposed explanation. Unknown: a question you cannot answer yet. Choose the label that best describes this note.
+
+The total price is not shown until the payment step.
+
+- observed
+- inferred
+- unknown
+
+<details>
+<summary>After your attempt</summary>
+
+observed: She followed the task and the price appeared where it appeared. That is a fact about the screens.
+
+inferred: No interpretation is involved. She reached the payment step and saw where the number first arrived.
+
+unknown: She walked the whole task, so this one is settled.
+
+</details>
+
+
+### Practise with supplied note 4 of 6
+
+Section: practice-plan. Stable action: sorter-4.
+
+Observed: something directly seen or done. Inferred: a proposed explanation. Unknown: a question you cannot answer yet. Choose the label that best describes this note.
+
+The late price makes people feel tricked.
+
+- observed
+- inferred
+- unknown
+
+<details>
+<summary>After your attempt</summary>
+
+observed: Feelings belong to other people, and nobody was asked. The late price is observed; how it lands is not.
+
+inferred: A reasonable reading, and still a reading. Written down as inferred, it becomes a question worth asking someone.
+
+unknown: She has a clear guess, so inferred is more useful. It says what to check rather than giving up on it.
+
+</details>
+
+
+### Practise with supplied note 5 of 6
+
+Section: practice-plan. Stable action: sorter-5.
+
+Observed: something directly seen or done. Inferred: a proposed explanation. Unknown: a question you cannot answer yet. Choose the label that best describes this note.
+
+Whether the class can be cancelled for a refund.
+
+- observed
+- inferred
+- unknown
+
+<details>
+<summary>After your attempt</summary>
+
+observed: Nothing on the screens said this. If it had, she could point at it.
+
+inferred: Inferred means she has a reading of it. Here she has nothing at all to read, only a blank.
+
+unknown: The screen never mentions it and she has no idea either way. Naming that blank is the whole point of the label.
+
+</details>
+
+
+### Practise with supplied note 6 of 6
+
+Section: practice-plan. Stable action: sorter-6.
+
+Observed: something directly seen or done. Inferred: a proposed explanation. Unknown: a question you cannot answer yet. Choose the label that best describes this note.
+
+The date picker is confusing.
+
+- observed
+- inferred
+- unknown
+
+<details>
+<summary>After your attempt</summary>
+
+observed: Confusing is a judgement, not a thing on the screen. What she could point at is that the picker opens on today.
+
+inferred: A judgement of her own, which is what inferred means. It is worth splitting too: write what the picker does, then keep “confusing” as her reading of it.
+
+unknown: She used the picker, so she is not without information. This is her conclusion about it.
+
+</details>
+
+
+### Your evidence · entry 1 of 5
+
+Section: practice-plan. Stable action: entry-1-saw.
+
+Return to your walkthrough. Write one thing you noticed, one possible explanation, or one unanswered question. Keep it to one claim.
+
+**Answer:** Entry 1 · What I saw or did
+
+Something you can point to on the screen, or an action you took. One entry per line of the table.
+
+<details>
+<summary>Example</summary>
+
+Example (made up, not your research): The home screen shows a search box labelled Find events and a list titled This weekend.
+
+</details>
+
+
+### Is this a fact, a guess, or a question?
+
+Section: practice-plan. Stable action: entry-1-label.
+
+Label the entry you just wrote. Seeing a screen does not tell you what other people think or do.
+
+**Answer:** Entry 1 · Observed, inferred or unknown? (observed / inferred / unknown)
+
+Observed: you saw it. Inferred: your guess about why. Unknown: you cannot tell from the screen.
+
+
+### Why does this entry matter?
+
+Section: practice-plan. Stable action: entry-1-goal.
+
+Name the task or goal this entry affects. Describe what the person wants to achieve, not the button they press.
+
+**Answer:** Entry 1 · Which goal does this affect?
+
+
+
+<details>
+<summary>Example</summary>
+
+Example (made up): Finding an event nearby this weekend.
+
+</details>
+
+
+### What would help you check it?
+
+Section: practice-plan. Stable action: entry-1-check.
+
+Name something you could observe or ask to check this claim. You are planning the check; you do not need to recruit anyone today.
+
+**Answer:** Entry 1 · How could you check it?
+
+What would you watch for, or whom would you ask, to find out whether your reading is right?
+
+<details>
+<summary>Example</summary>
+
+Example (made up): Watch whether I use the search box or scroll the list first.
+
+</details>
+
+
+### Your evidence · entry 2 of 5
+
+Section: practice-plan. Stable action: entry-2-saw.
+
+Return to your walkthrough. Write one thing you noticed, one possible explanation, or one unanswered question. Keep it to one claim.
+
+**Answer:** Entry 2 · What I saw or did
+
+
+
+
+### Is this a fact, a guess, or a question?
+
+Section: practice-plan. Stable action: entry-2-label.
+
+Label the entry you just wrote. Seeing a screen does not tell you what other people think or do.
+
+**Answer:** Entry 2 · Observed, inferred or unknown? (observed / inferred / unknown)
+
+
+
+
+### Why does this entry matter?
+
+Section: practice-plan. Stable action: entry-2-goal.
+
+Name the task or goal this entry affects. Describe what the person wants to achieve, not the button they press.
+
+**Answer:** Entry 2 · Which goal does this affect?
+
+
+
+
+### What would help you check it?
+
+Section: practice-plan. Stable action: entry-2-check.
+
+Name something you could observe or ask to check this claim. You are planning the check; you do not need to recruit anyone today.
+
+**Answer:** Entry 2 · How could you check it?
+
+
+
+
+### Your evidence · entry 3 of 5
+
+Section: practice-plan. Stable action: entry-3-saw.
+
+Return to your walkthrough. Write one thing you noticed, one possible explanation, or one unanswered question. Keep it to one claim.
+
+**Answer:** Entry 3 · What I saw or did
+
+
+
+
+### Is this a fact, a guess, or a question?
+
+Section: practice-plan. Stable action: entry-3-label.
+
+Label the entry you just wrote. Seeing a screen does not tell you what other people think or do.
+
+**Answer:** Entry 3 · Observed, inferred or unknown? (observed / inferred / unknown)
+
+
+
+
+### Why does this entry matter?
+
+Section: practice-plan. Stable action: entry-3-goal.
+
+Name the task or goal this entry affects. Describe what the person wants to achieve, not the button they press.
+
+**Answer:** Entry 3 · Which goal does this affect?
+
+
+
+
+### What would help you check it?
+
+Section: practice-plan. Stable action: entry-3-check.
+
+Name something you could observe or ask to check this claim. You are planning the check; you do not need to recruit anyone today.
+
+**Answer:** Entry 3 · How could you check it?
+
+
+
+
+### Your evidence · entry 4 of 5
+
+Section: practice-plan. Stable action: entry-4-saw.
+
+Return to your walkthrough. Write one thing you noticed, one possible explanation, or one unanswered question. Keep it to one claim.
+
+**Answer:** Entry 4 · What I saw or did
+
+
+
+
+### Is this a fact, a guess, or a question?
+
+Section: practice-plan. Stable action: entry-4-label.
+
+Label the entry you just wrote. Seeing a screen does not tell you what other people think or do.
+
+**Answer:** Entry 4 · Observed, inferred or unknown? (observed / inferred / unknown)
+
+
+
+
+### Why does this entry matter?
+
+Section: practice-plan. Stable action: entry-4-goal.
+
+Name the task or goal this entry affects. Describe what the person wants to achieve, not the button they press.
+
+**Answer:** Entry 4 · Which goal does this affect?
+
+
+
+
+### What would help you check it?
+
+Section: practice-plan. Stable action: entry-4-check.
+
+Name something you could observe or ask to check this claim. You are planning the check; you do not need to recruit anyone today.
+
+**Answer:** Entry 4 · How could you check it?
+
+
+
+
+### Your evidence · entry 5 of 5
+
+Section: practice-plan. Stable action: entry-5-saw.
+
+Return to your walkthrough. Write one thing you noticed, one possible explanation, or one unanswered question. Keep it to one claim.
+
+**Answer:** Entry 5 · What I saw or did
+
+
+
+
+### Is this a fact, a guess, or a question?
+
+Section: practice-plan. Stable action: entry-5-label.
+
+Label the entry you just wrote. Seeing a screen does not tell you what other people think or do.
+
+**Answer:** Entry 5 · Observed, inferred or unknown? (observed / inferred / unknown)
+
+
+
+
+### Why does this entry matter?
+
+Section: practice-plan. Stable action: entry-5-goal.
+
+Name the task or goal this entry affects. Describe what the person wants to achieve, not the button they press.
+
+**Answer:** Entry 5 · Which goal does this affect?
+
+
+
+
+### What would help you check it?
+
+Section: practice-plan. Stable action: entry-5-check.
+
+Name something you could observe or ask to check this claim. You are planning the check; you do not need to recruit anyone today.
+
+**Answer:** Entry 5 · How could you check it?
+
+
+
+
+### What does the person want?
+
+Section: practice-plan. Stable action: user-goal.
+
+Use your walkthrough to describe the result the person needs. Avoid naming a page, button or proposed fix.
+
+**Answer:** The user goal, without naming a screen or button
+
+What does the person need to have happened by the end?
+
+<details>
+<summary>Example</summary>
+
+Example (made up): Know which class fits Saturday and whether there is a place left.
+
+</details>
+
+
+### What might the business want?
+
+Section: practice-plan. Stable action: business-goal.
+
+Write one possible goal for the people running the service. This is a guess, so say “might” or “probably”.
+
+**Answer:** One thing the company behind the app probably wants
+
+The app is run by someone who needs it to work for them too: more bookings, fewer phone calls, fewer refunds. A guess is fine here.
+
+<details>
+<summary>Example</summary>
+
+Example (made up): more people finishing a booking on their first visit, so staff answer fewer questions by phone.
+
+</details>
+
+
+### Improve how information looks
+
+Section: practice-plan. Stable action: visual-improvement.
+
+Choose one visual change, such as clearer size, contrast or grouping. Name what you would change and why it helps the task.
+
+**Answer:** A visual improvement
+
+
+
+<details>
+<summary>Example</summary>
+
+Example (made up): Make the date and price the same size as the class title.
+
+</details>
+
+
+### How could you tell if it helped?
+
+Section: practice-plan. Stable action: visual-check.
+
+Name an action you could watch, such as someone finding the price without help. “It looks better” is not an observable check.
+
+**Answer:** How would you know the look change helped?
+
+Name something you could watch someone do. “It looks better” is not something you can watch.
+
+
+### Improve how the task works
+
+Section: practice-plan. Stable action: behavior-improvement.
+
+Choose one change to the order, behavior or information in the task. Keep it different from your visual change.
+
+**Answer:** A change to how the task behaves
+
+Not colour or size: what happens, in what order, or what the app remembers.
+
+<details>
+<summary>Example</summary>
+
+Example (made up): Ask for the date before showing results, so sold-out classes are hidden.
+
+</details>
+
+
+### How would you check that change?
+
+Section: practice-plan. Stable action: behavior-check.
+
+Name what someone could do that would support your idea, and what would show it did not help.
+
+**Answer:** How would you know the behaviour change helped?
+
+Again, something you could watch. It should be possible for the answer to be no.
+
+
+### Check your reasoning · 1 of 3
+
+Section: check. Stable action: reason-1.
+
+Choose the explanation you believe. Then compare the feedback with your own work and improve the answer shown below if needed.
+
+A friend says: “The fix is obvious — make the Reserve button bigger.” Is that a problem statement?
+
+- No. It names a repair before saying who is stuck and how anyone would know.
+- Yes, because a small button is a real usability problem.
+- Yes, as long as you tested the bigger button afterwards.
+
+<details>
+<summary>After your attempt</summary>
+
+No. It names a repair before saying who is stuck and how anyone would know. — It may even be the right repair, but it skips the part that tells you whether it is: who struggled, with what task, and what you saw.
+
+Yes, because a small button is a real usability problem. — Size might be the cause, or the price might be unclear, or the date might be missing. A problem statement names the person and the difficulty, so more than one repair can compete.
+
+Yes, as long as you tested the bigger button afterwards. — Testing a repair only tells you whether that repair worked. It cannot tell you what people were actually struggling with, because you never wrote it down.
+
+Check your work: The user goal reads as an outcome for a person, and your two improvements are still ways of reaching it rather than the goal itself.
+
+</details>
+
+
+### Check your reasoning · 2 of 3
+
+Section: check. Stable action: reason-2.
+
+Choose the explanation you believe. Then compare the feedback with your own work and improve the answer shown below if needed.
+
+Your walkthrough screen looks well made and you finished the task easily. What does that prove about other people?
+
+- Nothing yet. You are one person who already knows the app.
+- That the design works, because a real task was completed.
+- That the visual design is good enough to leave alone.
+
+<details>
+<summary>After your attempt</summary>
+
+Nothing yet. You are one person who already knows the app. — You brought knowledge a first-time visitor does not have. Craft and outcomes need different evidence, and yours is one walkthrough.
+
+That the design works, because a real task was completed. — It shows the task can be completed by you, today, knowing what you know. That is worth recording, and it is not evidence about anyone else.
+
+That the visual design is good enough to leave alone. — A screen can look well made and still hide the price or the date. Ease for you is not evidence about a person seeing it for the first time.
+
+Check your work: At least one entry is labelled inferred or unknown, and its “how could you check it” column names something you could watch.
+
+</details>
+
+
+### Check your reasoning · 3 of 3
+
+Section: check. Stable action: reason-3.
+
+Choose the explanation you believe. Then compare the feedback with your own work and improve the answer shown below if needed.
+
+You wrote: “People skip the sponsored results.” You did not watch anyone else use the app. Which label is honest?
+
+- Inferred — it is your reading of why, and it may well be right.
+- Observed, because you saw the sponsored results yourself.
+- Unknown, because you have no data at all.
+
+<details>
+<summary>After your attempt</summary>
+
+Inferred — it is your reading of why, and it may well be right. — Inferred is not a lesser answer; it is the honest one, and it tells you exactly what to go and find out.
+
+Observed, because you saw the sponsored results yourself. — You observed that sponsored results appear. “People skip them” is a claim about other people’s behaviour, which the screen cannot show you.
+
+Unknown, because you have no data at all. — Unknown is for things you cannot tell from the screen and have no reading of at all. Here you do have a reading, so inferred keeps it visible as something to check.
+
+Check your work: Every entry label matches the kind of thing it is, and no claim about other people sits under observed.
+
+</details>
+
+
+### What is still unknown?
+
+Section: practice. Stable action: open-question.
+
+Write one question your walkthrough could not answer. Be honest about what you have not checked.
+
+**Answer:** One question you could not answer from the screen
+
+
+
+<details>
+<summary>Example</summary>
+
+Example (made up): Do other people notice the sponsored results, or only me?
+
+</details>
+
+
+### Record your improvement
+
+Section: practice. Stable action: improvement-made.
+
+Name one answer you changed after checking and explain why. If no change was needed, name the answer you checked and explain how it already meets the criterion.
+
+**Answer:** What you changed after the Check questions
+
+The Check section sends you back to one specific answer. Write which one you changed and why.
+
+<details>
+<summary>Example</summary>
+
+Example (made up): I had written “people find the date confusing” as observed. Nobody told me that, so I moved it to inferred and added “ask two friends to find the date” as the check.
+
+</details>
+
+
+### Leave yourself a next action
+
+Section: practice. Stable action: next-action.
+
+Write one small action to take when you return. Your saved work will carry into Lesson 2.
+
+**Answer:** Your next action when you return
+
+One line. It is what the Learn page will remind you of.
+
+
+### Your work is ready to check
+
+Section: practice. Stable action: review-work.
+
+Review your answers below. Finish practice when the required work is present. Requesting creator feedback is a separate choice.
+
+
+Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all answers and record the repair, then choose Finish practice. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+
+<details>
+<summary>Optional reading and video</summary>
+
+[Design Council: the Double Diamond](https://www.designcouncil.org.uk/resources/the-double-diamond/). [Jonathan Ball explains the Double Diamond](https://vimeo.com/857497488). No video needed: the Double Diamond page (R01) says the same in four short paragraphs, Discover, Define, Develop, Deliver. Read those, then write your three sentences.
+
+</details>
 
 ## Lesson 2: Frame the problem before the feature
 

@@ -16,6 +16,7 @@ export type CourseRecord = {
 // What this device already holds, so totals are not zero while offline. The
 // server copy replaces it as soon as a fetch succeeds.
 function readLocal(user: User): CourseRecord[] {
+  if (user.role === 'creator') return [];
   const found: CourseRecord[] = [];
   try {
     const lessonPrefix = `harucourse:lesson:${user.id}:`;
@@ -28,9 +29,8 @@ function readLocal(user: User): CourseRecord[] {
       else if (key.startsWith(lessonPrefix))
         lessonId = key.slice(lessonPrefix.length);
       if (!lessonId) continue;
-      const parsed = recordSchema.safeParse(
-        JSON.parse(localStorage.getItem(key) || "null"),
-      );
+      let value; try { value = JSON.parse(localStorage.getItem(key) || "null"); } catch { continue; }
+      const parsed = recordSchema.safeParse(value);
       if (parsed.success) found.push({ lessonId, record: parsed.data });
     }
   } catch {
@@ -47,8 +47,22 @@ export function useCourseRecords(user: User) {
     readLocal(user),
   );
   const [error, setError] = useState("");
+  const [loaded, setLoaded] = useState(false);
   useEffect(() => {
     let active = true;
+    let cloud: CourseRecord[] = [];
+    const merge = () => {
+      const local = readLocal(user);
+      const merged = [...cloud];
+      for (const row of local) {
+        const key = row.lessonId === 'baseline-v1' ? `harucourse:baseline:v1:${user.id}` : `harucourse:lesson:${user.id}:${row.lessonId}`;
+        let dirty = false, revision = 0; try { const meta = JSON.parse(localStorage.getItem(key + ':sync') || 'null'); dirty = !!meta?.dirty; revision = meta?.revision ?? 0; } catch {}
+        const index = merged.findIndex(r => r.lessonId === row.lessonId);
+        if (index < 0) merged.push(row); else if (dirty || revision > (merged[index].revision ?? 0)) merged[index] = {...row,revision};
+      }
+      if (active) setRecords(merged);
+    };
+    setRecords(readLocal(user));
     const refresh = () =>
       fetch("/api/course-records", { cache: "no-store" })
         .then(async (r) => {
@@ -57,17 +71,21 @@ export function useCourseRecords(user: User) {
         })
         .then((v: { records: CourseRecord[] }) => {
           if (active) {
-            setRecords(v.records);
+            cloud = v.records;
+            merge(); setLoaded(true);
             setError("");
           }
         })
         .catch(() => {
+          merge(); if (active) setLoaded(true);
           if (active)
             setError(
               "Can't reach the server right now. Totals show the last saved figures; your work is safe on this device.",
             );
         });
     void refresh();
+    window.addEventListener('harucourse:records', merge);
+    window.addEventListener('storage', merge);
     const timer = setInterval(() => {
       if (canPoll()) void refresh();
     }, 5000);
@@ -76,9 +94,11 @@ export function useCourseRecords(user: User) {
       active = false;
       clearInterval(timer);
       stopWatching();
+      window.removeEventListener('harucourse:records', merge);
+      window.removeEventListener('storage', merge);
     };
-  }, [user.id]);
-  return { records, error };
+  }, [user.id, user.role]);
+  return { records, error, loaded };
 }
 
 export type LoggedSession = SessionEntry & { lessonId: string };

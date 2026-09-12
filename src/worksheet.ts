@@ -44,7 +44,7 @@ export function worksheetBody(lesson: Lesson, record: RecordData) {
 
 export function worksheetMarkdown(lesson: Lesson, record: RecordData) {
   const done = record.guide?.done ?? [];
-  return `# ${lesson.title}\n\nLesson: ${lesson.id}\nSaved copy of the in-app worksheet. Practice status: ${record.status} (self-reported, not assessed).\nSteps ticked as a navigation aid: ${done.length ? done.join(", ") : "none"}.\n\n${worksheetBody(lesson, record)}\n## Notes and next action\n${record.notes.trim() || "(none)"}\n\n## Work reference\n${record.submission.trim() || "(worksheet kept in the app)"}\n`;
+  return `# ${lesson.title}\n\nLesson: ${lesson.id}\nSaved copy of the in-app worksheet. Practice status: ${record.status} (self-reported, not assessed).\nSteps ticked as a navigation aid: ${done.length ? done.join(", ") : "none"}.\n\n${worksheetBody(lesson, record)}\n## Practice tracking\n${record.learning?.finishedAt ? "Practice finished: " + record.learning.finishedAt : "Practice not yet finished"}\nSaved action: ${record.learning?.action || "none"}\nFormative answers (not scored):\n${Object.entries(record.learning?.answers ?? {}).map(([id,a]) => id + ": " + a.value + (a.shown ? " (explanation shown)" : " (not yet checked)")).join("\n")}\n\n## Notes and next action\n${record.notes.trim() || "(none)"}\n\n## Work reference\n${record.submission.trim() || "(worksheet kept in the app)"}\n`;
 }
 
 export function downloadText(name: string, value: string, type = "text/markdown") {

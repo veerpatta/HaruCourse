@@ -1,3 +1,13 @@
+## Current standard — small actions and honest progress, 12 September 2026
+
+The current release refines only Module 1 Lesson 1 (week1-day1-v1) into one small action at a time, preserving all 36 worksheet fields and the full workload. All 224 teaching lessons are published; the remaining 223 have not been reviewed against this new action-by-action standard. Shared tracking improvements do not establish teaching refinement or learner validation.
+
+Follow [the action and tracking contract](COURSE-AUTHORING.md#small-action-and-tracking-contract--12-september-2026). Required work, practice finished, recorded time, creator feedback and mastery are distinct. Automatic time counts focused course activity and pauses outside the course or after five minutes without interaction. External study time is added manually. Time and navigation never finish practice.
+
+Keep Learn → Do → Check → Your work and the existing cream/green/serif style. Show the exact action, destination and sufficient output beside its answer control; keep essential teaching visible. Present supported examples before independent work, collect a reason before feedback, and let the learner repair the relevant saved answer beside it. Save the exact action and formative Check responses for return; no score is calculated.
+
+Preserve IDs, record version 1, storage keys, old answers and feedback revisions. Observe Haru completing and resuming Lesson 1 without coaching before redesigning another lesson. Her observed use is still pending. The original vision stays immutable. Dated historical sections below describe earlier states and do not override this current standard.
+
 # Guided learning experience plan
 
 ## All-course beginner audit and teaching direction — 7 September 2026
@@ -100,6 +110,8 @@ Starting candidates from the brainstorm: [Figma official tutorials](https://www.
 - Record checks, limitations, bundle/usage implications and release state. Commit only reviewed scoped changes. Deploy only within established authorization and verified prerequisites; never imply local testing means released.
 
 ## Refinement ledger
+
+Current entry, 12 September 2026: `week1-day1-v1` is rebuilt as 48 persisted small actions while preserving all 36 current worksheet IDs and the complete workload. Shared active-use timing, saved checks, explicit practice completion and lesson/module/course totals are implemented. Generated future lesson documents carry the new authoring standard; this does not mark their teaching action-by-action refined. Content, worksheet, learning regressions, typechecks, build, 13 local backend groups and learning persistence checks passed; Chrome covered responsive widths, offline/reload, conflicts, finish/reopen, worksheet-only review and Update now. Detailed evidence and release metadata: [VERIFICATION-ACTIONS.md](VERIFICATION-ACTIONS.md). Haru observation is still pending; observe Lesson 1 before refining the next lesson. Historical entries below describe their original verification, including the earlier unsaved sorter and 35-field milestone, and are superseded where this entry differs.
 
 This ledger tracks experience refinement, not publication or learner assessment. All 224 teaching lessons already exist; none is marked refined by this planning update.
 

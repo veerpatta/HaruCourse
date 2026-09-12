@@ -1,3 +1,13 @@
+# Lesson 1 rebuilt around small actions and reliable tracking — 12 September 2026
+
+Lesson 1 now presents one clear action at a time while keeping its full workload: 36 original worksheet fields, five evidence entries, two improvements, six sorter questions and three reasoning checks. The 48-action path saves the current action, answers, feedback reveals and work route. The existing cream, green and serif design remains. Future lesson documents now carry the same authoring standard; their teaching has not been rewritten in this pass.
+
+Time records active course use, pauses outside the course or after five quiet minutes, preserves partial minutes and supports manual external-work additions and corrections. Lesson, module and course progress now distinguish explicitly finished practice from review and mastery. Editing substantive work reopens practice; time alone never completes it. Existing learner records are preserved without inventing historical completion.
+
+Content, worksheet, learning regression, both typechecks, production build, all 13 local backend groups and the new learning persistence integration passed. Chrome checks covered desktop/tablet/phone widths, saved resume, offline reload, reconnect, a genuine conflict and draft recovery, worksheet-only review, completion/reopening and the Update now flow. Full evidence, limitations and release status: [docs/VERIFICATION-ACTIONS.md](docs/VERIFICATION-ACTIONS.md).
+
+Haru's uncoached walkthrough and native phone-keyboard checks remain pending. Publication, authoring refinement and learner completion are separate measures. The course still has 224 published lessons; 221 required teaching lessons form the completion denominator.
+
 # The last 120 lessons given guided practice — 12 September 2026
 
 Modules 11 to 20 had no guided practice at all: no route, no worksheet, no demonstrations, no sorter, no answer-first checks. They are now written, and every published lesson in the course resolves guided material at runtime — 224 of 224. The ten modules added 1,387 worksheet fields, 240 failure-first demonstrations, 120 evidence sorters of six supplied lines each, 360 checks that each send one named repair back into the learner's own worksheet, and 1,216 defined terms. Three Module 16 lessons that had been left with a single demonstration were brought up to two in the same pass, so the parity claim made on 8 September now holds across the whole course.

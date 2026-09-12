@@ -7,6 +7,8 @@ import { modules } from "./modules";
 import { levels, baseline } from "./course";
 import { publishedLessons as lessons } from "./lessons";
 import { LearningStudio } from "./LearningStudio";
+import { useCourseRecords } from './useCourseRecords';
+import { ProgressOverview } from './LearningProgress';
 import { usePosition } from './usePosition';
 import { CloudPanel } from "./CloudPanel";
 import { AccountBackup } from "./AccountBackup";
@@ -25,6 +27,7 @@ function App({
 }) {
   const navigation = useNavigation();
   const bookmark = usePosition(user.id);
+  const course = useCourseRecords(user);
   const tab = navigation.tab;
   const [navigationVersion, setNavigationVersion] = useState(0);
   const target = navigation.lesson ? {id:navigation.lesson, section:navigation.section || "learn"} : undefined;
@@ -140,6 +143,7 @@ function App({
             <LearningStudio
               key={tab + ":" + (target?.id || "") + ":" + navigationVersion}
               user={user}
+              course={course}
               bookmark={bookmark}
               mode={tab}
               target={target}
@@ -149,6 +153,7 @@ function App({
           {tab === "Course map" && (
             <>
               <h1>Course map</h1>
+              <ProgressOverview records={course.records}/>
               <p>Levels → Modules → Lessons. Study at your own pace.</p>
               <WorkspaceGuide />
               <PortfolioPath />
@@ -171,6 +176,7 @@ function App({
                             </span>
                           </summary>
                           <p>{m.output}</p>
+                          {m.id !== "m00" && <ProgressOverview records={course.records} module={Number(m.id.slice(1))}/>}
                           <JourneyMilestone id={m.id} />
                           <p className="muted">
                             Bring:{" "}
