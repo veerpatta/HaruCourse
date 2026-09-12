@@ -90,11 +90,9 @@ export function SessionTimer({
             </>
           )}
         </button>
-        {hasSession && (
-          <button type="button" className="secondary" onClick={timer.finish}>
+          <button type="button" className="secondary" disabled={!hasSession} onClick={timer.finish}>
             <Check size={17} /> End session
           </button>
-        )}
       </div>
       <p className="timer-live" aria-live="polite">
         {timer.notice}

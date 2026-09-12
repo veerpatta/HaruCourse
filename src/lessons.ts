@@ -20,6 +20,7 @@ import { module19 } from './module19';
 import { module20 } from './module20';
 import { modules } from './modules';
 import { adaptPublished, type Lesson } from './teaching';
+import { withLessonActions } from './lessonActions';
 import { week2 } from "./week2";
 import { withLegacyText } from "./teaching";
 export type { Lesson } from "./teaching";
@@ -717,7 +718,7 @@ export const lessons = [
   ...module18,
   ...module19,
   ...module20,
-].map(withApprenticeship);
+].map(withApprenticeship).map(withLessonActions);
 
 // A lesson's owning module. Legacy lessons predate the `module` field and are
 // identified by their compatibility week number instead.

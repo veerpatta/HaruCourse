@@ -11,6 +11,7 @@ const { lessons, publishedLessonIds, isPublishedLesson } = await import(
   "../src/lessons.ts"
 );
 const {lessonOneExample, suppliedWalkthrough} = await import('../src/lessonOneFlow.ts');
+const {actionQuestion} = await import('../src/lessonActions.ts');
 const { baselineLesson } = await import('../src/course.ts');
 const { readingSelections, videoSelections } = await import('../src/reading.ts');
 const { activities } = await import('../src/apprenticeship.ts');
@@ -139,8 +140,9 @@ const catalog = [
 function output(path, text) {
   // Keep generated course views connected to the plan without rewriting teaching.
   const titleEnd = text.indexOf("\n");
-  const planNote = "\n\n> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Follow [the small-action teaching and tracking standard](docs/COURSE-AUTHORING.md#small-action-and-tracking-contract--12-september-2026). Only Lesson 1 currently uses the new action flow. Published, worksheet-enabled, teaching-refined, learner-validated and assessed are separate states.";
+  const planNote = "\n\n> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Follow [the small-action teaching and tracking standard](docs/COURSE-AUTHORING.md#small-action-and-tracking-contract--12-september-2026). All 43 lessons in Modules 1–5 use saved action flows. Published, teaching-refined, learner-validated and assessed remain separate states.";
   text = text.slice(0, titleEnd) + planNote + text.slice(titleEnd);
+  if (/^(WEEK-0[12]|MODULE-0[345])\.md$/.test(path)) text=text.replace(/[ \t]+$/gm,'');
   if (process.argv.includes("--check"))
     assert.equal(
       readFileSync(path, "utf8").replaceAll("\r\n", "\n"),
@@ -222,19 +224,23 @@ function activityDoc(l) {
   return `#### ${a.activity}\n\n${a.mission}\n\n${setup}${guidedDoc(l)}${a.visual ? details('Optional Figma Starter route (workflow not authenticated)', list(figmaGuide)) : ''}\n\n${l.id === 'm03-l04-v1' ? 'Use the offline contrast calculator in this lesson’s Do section. It accepts opaque six-digit sRGB colors; classification and exceptions come from R30. Record exact input values and the unrounded-threshold result, not only the displayed ratio.' : ''}\n\n${a.hints.map((h, i) => details('Hint ' + (i + 1), h)).join('\n\n')}\n\n${a.ai ? details('Optional AI rehearsal', a.ai.purpose + '\n\n' + list(a.ai.setup) + '\n\n```text\n' + a.ai.prompt + '\n```\n\n' + a.ai.followUp + '\n\nWithout AI or at a usage limit: ' + a.ai.alternative) : ''}\n\n**Save:**\n\n${list(a.workspace.save)}\n\n**Adequate evidence:** ${a.adequate}\n\n**Bring forward:** ${a.handoff}\n`;
 }
 function flowDoc(l) {
-  const a=l.apprenticeship, fields=a.worksheet.flatMap(s=>s.fields), sorter=a.guide.find(g=>g.sorter).sorter;
+  const a=l.apprenticeship, fields=a.worksheet.flatMap(s=>s.fields);
   const parts=l.flow.map(action=>{
+    if(action.kind==='check' && !action.repairFields) action={...action,repairFields:action.index===0?['user-goal']:[1,2,3,4,5].flatMap(n=>[`entry-${n}-label`,`entry-${n}-check`])};
     const f=fields.find(f=>f.id===action.field);
-    const q=action.kind==='check' ? a.checks[action.index] : null;
-    const item=action.kind==='sort' ? sorter.items[action.index] : null;
+    const q=actionQuestion(l,action), g=a.guide[action.guideIndex], check=action.kind==='check' ? a.checks[action.index] : null;
     return '### '+action.title+'\n\nSection: '+action.section+'. Stable action: '+action.id+'.\n\n'+action.instruction+'\n\n'
+      +(action.body ? list(action.body)+'\n\n' : '')
       +(action.kind==='example' ? list(lessonOneExample)+'\n\n' : '')
-      +(action.field==='app' ? details('Supplied walkthrough',list(suppliedWalkthrough))+'\n\n' : '')
-      +(f ? '**Answer:** '+f.label+(f.options ? ' ('+f.options.join(' / ')+')' : '')+'\n\n'+(f.hint || '')+'\n\n'+(f.example ? details('Example',f.example)+'\n\n' : '') : '')
-      +(item ? item.text+'\n\n'+list(sorter.options)+ '\n\n'+details('After your attempt',sorter.options.map(o=>o+': '+item.feedback[o]).join('\n\n'))+'\n\n' : '')
-      +(q ? q.question+'\n\n'+list(q.options.map(o=>o.label))+'\n\n'+details('After your attempt',q.options.map(o=>o.label+' — '+o.feedback).join('\n\n')+'\n\nCheck your work: '+q.recheck)+'\n\n' : '');
+      +(action.kind==='demo' && g?.demo ? g.demo.beats.map(b=>'**'+b.label+':** '+b.text).join('\n\n')+'\n\n**Wrong turn:** '+g.demo.wrongTurn+'\n\n**Trade-off:** '+g.demo.tradeoff+'\n\n**Unknown:** '+g.demo.uncertainty+'\n\n' : '')
+      +(action.kind==='setup' && g ? '**Start here:** '+g.start+'\n\n**Enough:** '+g.enough+'\n\n'+(g.terms || []).map(t=>'**'+t.term+':** '+t.meaning).join('\n\n')+'\n\n' : '')
+      +(action.field==='app' && l.id==='week1-day1-v1' ? details('Supplied walkthrough',list(suppliedWalkthrough))+'\n\n' : '')
+      +(f ? '**Answer:** '+f.label+(f.options ? ' ('+f.options.join(' / ')+')' : '')+'\n\n'+(f.optional ? 'Optional: may be left empty.\n\n' : '')+(f.requiredWhen ? 'Required only when '+f.requiredWhen.field+' is '+f.requiredWhen.values.join(' or ')+'. Otherwise leave participant evidence empty.\n\n' : '')+(f.hint || '')+'\n\n'+(f.example ? details('Example',f.example)+'\n\n' : '') : '')
+      +(q ? q.question+'\n\n'+list(q.options.map(o=>o.label))+'\n\n'+details('After your attempt',q.options.map(o=>o.label+' — '+o.feedback).join('\n\n')+(check ? '\n\nImprove: '+check.repair+'\n\nCheck again: '+check.recheck+'\n\nAnswers to revisit: '+(action.repairFields || []).join(', ') : '\n\n'+(g?.supported?.then || g?.sorter?.then || '')))+'\n\n' : '');
   });
-  return '## Lesson '+l.day+': '+l.title+'\n\nStable ID: '+l.id+'. Core.\n\n'+l.why+'\n\n'+list(l.outputs)+'\n\n'+parts.join('\n')+'\nYour answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all answers and record the repair, then choose Finish practice. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.\n\n'+details('Optional reading and video','['+l.resource.title+']('+l.resource.url+'). '+(a.video ? '['+a.video.title+']('+a.video.url+'). '+a.video.written : ''))+'\n';
+  parts.push(details('Optional hints and reference material',list(a.hints)+'\n\n'+(l.resources || []).map(r=>`- ${r.id}: [${r.title}](${r.url}) — ${r.section} Purpose: ${r.purpose} ${r.limits} Fallback: ${r.fallbackId}.`).join('\n')));
+  if(l.criteria?.length) parts.push(details('Creator review and remediation criteria',l.criteria.map(c=>`**${c.criterion}**\n\nAdequate evidence: ${c.evidence}\n\n${c.levels.map((t,i)=>`${i} — ${t}`).join('\n\n')}\n\nRepair: ${c.remediation} Recheck: ${c.recheck}`).join('\n\n')));
+  return '## Lesson '+l.day+': '+l.title+'\n\nStable ID: '+l.id+'. '+(l.optional?'Optional.':'Core.')+'\n\n'+l.why+'\n\nBring: '+l.prerequisite+'\n\n'+(l.actionPlan?'Starting route: '+l.actionPlan.start+'\n\n':'')+list(l.outputs)+'\n\n'+parts.join('\n')+'\nYour answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.\n\n**Keep for later:** '+(a.saveRoute?.next || a.handoff)+'\n\n**Review criteria:**\n\n'+list(l.rubric)+'\n\n'+details('Reading, video and deeper explanation',list(l.explanation)+'\n\n['+l.resource.title+']('+l.resource.url+'). '+(a.video ? '['+a.video.title+']('+a.video.url+'). '+a.video.written : ''))+'\n';
 }
 function lessonDoc(l) {
   if(l.flow) return flowDoc(l);
@@ -382,7 +388,7 @@ for (const module of modules) {
     `# ${module.title}\n\nGenerated from ${source}; edit that source, then run npm run docs:generate. Level ${module.level} · Module ${module.id} · requirement areas ${module.areas.join(", ")}. ${effort} No deadlines; split any lesson across sessions and return to it without penalty.\n\nPrerequisite: ${module.prerequisites.join(", ") || "none"}. This is guidance for meaningful practice, not a lock. Module approved resource pair: ${module.primary} / ${module.alternative}. Every resource restriction in RESOURCE-LIBRARY.md applies; required exercises never depend on a candidate tool workflow.\n\nEach criterion below is scored ${scores.join(", ")}. A score is a review judgement about a submitted artifact; the app records practice and feedback but does not compute, store or display any score. Reading, navigation and elapsed time never establish mastery.\n\n` +
       own
         .map(
-          (l) =>
+          (l) => l.flow ? flowDoc(l) :
             `## Lesson ${l.day}: ${l.title}\n\nStable ID: ${l.id}. ${l.optional ? "Optional" : "Core"}. Areas ${(l.areas || module.areas).join(", ")}. Optional effort ~${l.steps.reduce((n, s) => n + s.minutes, 0)} min.\n\n**Objective.** ${l.objective}\n\n**Bring forward.** ${l.bringForward}\n\n${l.why}\n\n### Learn\n\n${(l.explanation.length ? l.explanation : l.teach).join("\n\n")}\n\n**Common misconception.** ${l.misconception}\n\n### Worked example\n\n${l.example}\n\n${activityDoc(l)}\n\n### Practice and pause points\n\n${l.steps.map((s) => `- ${s.title} (~${s.minutes} min): ${s.text}`).join("\n")}\n\nPause after any step; save the artifact and next action.\n\n**Free tool path.** ${l.freeToolPath}\n\n### Output\n\n${l.deliverable}\n\n### Checks\n\n${l.check.map((q) => `- ${q.question} Answer: ${q.answer}`).join("\n")}\n\n### Rubric and remediation\n\n${l.criteria.map((c) => `**${c.criterion}**\n\nAdequate evidence: ${c.evidence}\n\n${c.levels.map((text, score) => `- ${score} — ${text}`).join("\n")}\n\nIf below 2: ${c.remediation} Show at recheck: ${c.recheck}`).join("\n\n")}\n\n### Portfolio contribution\n\n${l.portfolio}\n\n### Assigned resources\n\n${l.resources.map((r) => `- ${r.id}: [${r.title}](${r.url}) — ${r.section} Purpose: ${r.purpose} Effort: ${r.minutes} min. ${r.limits} Fallback: ${r.fallbackId}.`).join("\n")}\n`,
         )
         .join("\n"),

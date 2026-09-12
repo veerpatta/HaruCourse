@@ -2,8 +2,9 @@
 // Worksheet IDs, step indices and section bookmarks retain their original meaning.
 export type LessonAction = {
   id: string; section: 'learn' | 'practice-plan' | 'check' | 'practice'; step: number;
-  kind: 'intro' | 'example' | 'field' | 'sort' | 'check' | 'review';
+  kind: 'intro' | 'example' | 'field' | 'sort' | 'check' | 'review' | 'teach' | 'setup' | 'demo' | 'supported';
   title: string; instruction: string; field?: string; index?: number;
+  body?: string[]; guideIndex?: number; answerId?: string; repairFields?: string[];
 };
 export const lessonOneExample = [
   'Made-up practice case: a pottery studio asks for a bigger Reserve button because people leave the booking screen.',

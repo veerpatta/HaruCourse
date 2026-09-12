@@ -1947,11 +1947,61 @@ progress::-webkit-progress-value { background: #567e48; border-radius: 8px; }
 .lesson-flow small { display: block; line-height: 1.5; }
 .session-timer, .session-timer.has-session, .session-timer.is-running { position: static !important; width: 100% !important; max-width: 100%; transform: none !important; margin: 16px 0; flex-wrap: wrap; box-sizing: border-box; box-shadow: none; }
 .session-timer.keyboard-open { display: flex !important; }
+.session-timer, .session-timer.keyboard-open { display: grid !important; grid-template-columns: minmax(0,1fr) auto; }
+.session-timer .timer-details { grid-column: 1 / -1; }
 .session-timer .session-timer-clock { display: inline-flex !important; font-size: 20px; }
 .session-timer .timer-details { flex-basis: 100%; font-size: 13px; }
 .session-timer .timer-details summary { min-height: 44px; padding-top: 12px; }
 .timer-clearance { display: none; }
 .finish-practice { overflow-wrap: anywhere; }
+.lesson-flow { max-width: 1040px; }
+.flow-layout, .flow-main { min-width: 0; }
+.flow-main { max-width: 760px; margin-inline: auto; }
+.flow-sidebar { display: none; }
+.action-card, .action-context, .flow-sidebar, .flow-overview { overflow-wrap: anywhere; }
+.action-card .action-instruction, .action-directions { max-width: 66ch; }
+.action-directions { padding-left: 22px; }
+.action-directions li { margin-block: 10px; }
+.action-context { margin-top: 20px; padding: 12px 16px; background: #f3f4ec; border-radius: 10px; font-size: 14px; }
+.action-context p { margin-block: 8px; }
+.action-terms { margin-block: 20px; }
+.action-terms div { margin-block: 12px; }
+.action-terms dt { font-weight: 650; }
+.action-terms dd { margin: 4px 0 0; }
+.flow-outline-group h3 { font: 20px Georgia, serif; margin: 16px 8px 8px; }
+.flow-outline-group button { display: flex; align-items: start; gap: 10px; width: 100%; min-height: 44px; border-radius: 6px; }
+.flow-outline-group [aria-current="step"] { background: #eaf0e1; font-weight: 650; }
+.flow-overview details[open] { flex-basis: 100%; padding: 8px 12px; background: #fffefb; border: 1px solid #d7dfd0; border-radius: 10px; }
+.flow-overview nav { overscroll-behavior: contain; }
+.inline-repair select { margin-top: 8px; width: 100%; min-height: 46px; }
+.optional-answer { padding: 12px; background: #f3f4ec; border-left: 3px solid #567e48; font-size: 14px; }
+.action-tool label { display: grid; gap: 6px; margin-block: 12px; }
+.action-tool input { width: 100%; min-width: 0; min-height: 44px; padding: 10px 12px; border: 1px solid #c7cfc1; border-radius: 8px; font: inherit; font-size: 16px; }
+.action-handoff { padding: 0 18px 16px; }
+.action-card textarea { resize: vertical; min-height: 128px; scroll-margin-block: 130px 110px; }
+.action-card select { text-overflow: ellipsis; width: 100%; min-width: 0; }
+.action-card .choice-option { min-height: 48px; }
+.action-card :is(button,select,input,textarea,a,summary):focus-visible { outline: 3px solid #567e48; outline-offset: 3px; }
+@media (min-width: 1280px) {
+  .flow-layout { display: grid; grid-template-columns: minmax(0,760px) 220px; gap: 24px; align-items: start; }
+  .flow-sidebar { display: block; position: sticky; top: 120px; margin-top: 18px; padding: 20px 16px; border-left: 1px solid #d7dfd0; font-size: 14px; }
+  .flow-main { width: 100%; }
+}
+@media (max-width: 760px) {
+  .lesson-flow { margin-block: 12px; }
+  .session-timer, .session-timer.keyboard-open { grid-template-columns: minmax(0,1fr); }
+  .session-timer-actions { display: grid; grid-template-columns: 1fr 1fr; }
+  .session-timer-main { flex-direction: row; align-items: center; gap: 12px; }
+  .action-card { padding: 20px 16px; margin-block: 12px; }
+  .action-card h2 { font-size: clamp(24px,6.3vw,30px); scroll-margin-top: 96px; }
+  .action-instruction { font-size: 16px; line-height: 1.65; }
+  .action-context { padding: 10px 12px; }
+  .flow-actions { gap: 8px; }
+  .flow-actions button { min-width: 0; padding-inline: 10px; }
+  .flow-overview { align-items: center; }
+  .flow-overview nav { max-height: 50dvh; }
+  .session-timer .timer-live { margin: 4px 0; }
+}
 .worksheet-summary { overflow-wrap: anywhere; }
 @media (max-width: 760px) {
   .action-card { border-radius: 12px; }

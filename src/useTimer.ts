@@ -113,12 +113,14 @@ export function useTimer({ storageKey, enabled, active, setRecord }: {
       if (now - rt.cloud >= 60000) { fold(); rt.cloud = now; }
       display();
     }, 1000);
-    for (const event of ['pointerdown','keydown','wheel','touchstart']) document.addEventListener(event, input, {passive:true});
+    // A completed click starts tracking after its target handles navigation.
+    // Starting on pointerdown could reflow the timer before pointerup and swallow a tap.
+    for (const event of ['click','keydown','wheel','touchmove']) document.addEventListener(event, input, {passive:true});
     window.addEventListener('blur', away); window.addEventListener('pagehide', away);
     document.addEventListener('visibilitychange', visibility);
     return () => {
       clearInterval(interval);
-      for (const event of ['pointerdown','keydown','wheel','touchstart']) document.removeEventListener(event, input);
+      for (const event of ['click','keydown','wheel','touchmove']) document.removeEventListener(event, input);
       window.removeEventListener('blur', away); window.removeEventListener('pagehide', away);
       document.removeEventListener('visibilitychange', visibility);
       if (runtime.current.running) stop(false, 'Time saved.');

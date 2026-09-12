@@ -1,4 +1,8 @@
-## Current standard — small actions and honest progress, 12 September 2026
+## Approved expansion — Modules 1–5, 12 September 2026
+
+The creator explicitly approved extending the Lesson 1 action pattern across the first five modules and publishing it. This supersedes the earlier wait-before-expansion instruction for these modules. All 43 lessons now have saved action flows, lesson-specific starting routes and linked answer repairs; all 616 worksheet field IDs are preserved. Modules 6–20 retain their previous teaching. Learner observation and formal assessment remain separate and unclaimed. Follow the current contract and [Modules 1–5 verification](VERIFICATION-MODULE-ACTIONS.md).
+
+## Previous Lesson 1 release — small actions and honest progress, 12 September 2026
 
 The current release refines only Module 1 Lesson 1 (week1-day1-v1) into one small action at a time, preserving all 36 worksheet fields and the full workload. All 224 teaching lessons are published; the remaining 223 have not been reviewed against this new action-by-action standard. Shared tracking improvements do not establish teaching refinement or learner validation.
 
@@ -110,6 +114,8 @@ Starting candidates from the brainstorm: [Figma official tutorials](https://www.
 - Record checks, limitations, bundle/usage implications and release state. Commit only reviewed scoped changes. Deploy only within established authorization and verified prerequisites; never imply local testing means released.
 
 ## Refinement ledger
+
+Current expansion, 12 September 2026: the creator approved the first five modules after reviewing Lesson 1. All 43 now have action flows: 1,429 saved actions, 177 persisted formative questions and all 616 original worksheet fields. Each additional lesson has a reviewed starting/fallback route and three explicit Check repair mappings. Optional and participant-only evidence is conditional, with simulated source notes clearly labelled. Shared layout now includes desktop task context, a bounded phone overview, one inline repair editor and stable timer controls. Structural tests and local API round-trips passed for all 43; detailed browser checks and release evidence are in [VERIFICATION-MODULE-ACTIONS.md](VERIFICATION-MODULE-ACTIONS.md). Modules 6–20 retain their earlier teaching. Haru observation remains pending. The following entries record earlier releases.
 
 Current entry, 12 September 2026: `week1-day1-v1` is rebuilt as 48 persisted small actions while preserving all 36 current worksheet IDs and the complete workload. Shared active-use timing, saved checks, explicit practice completion and lesson/module/course totals are implemented. Generated future lesson documents carry the new authoring standard; this does not mark their teaching action-by-action refined. Content, worksheet, learning regressions, typechecks, build, 13 local backend groups and learning persistence checks passed; Chrome covered responsive widths, offline/reload, conflicts, finish/reopen, worksheet-only review and Update now. Detailed evidence and release metadata: [VERIFICATION-ACTIONS.md](VERIFICATION-ACTIONS.md). Haru observation is still pending; observe Lesson 1 before refining the next lesson. Historical entries below describe their original verification, including the earlier unsaved sorter and 35-field milestone, and are superseded where this entry differs.
 

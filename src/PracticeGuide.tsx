@@ -118,7 +118,7 @@ export function VideoActionBlock({ video, online }: { video: VideoAction; online
 
 // "See it": the reasoning in the visible path, not hidden behind a disclosure.
 // Everything in it is invented and says so, so it can never read as research.
-function SeeIt({ demo }: { demo: Demonstration }) {
+export function SeeIt({ demo }: { demo: Demonstration }) {
   return (
     <section className="see-it" aria-label="Worked example">
       <h4>See it first</h4>

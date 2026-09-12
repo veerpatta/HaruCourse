@@ -1,4 +1,8 @@
-## Current standard — small actions and honest progress, 12 September 2026
+## Approved expansion — Modules 1–5, 12 September 2026
+
+The creator explicitly approved extending the Lesson 1 action pattern across the first five modules and publishing it. This supersedes the earlier wait-before-expansion instruction for these modules. All 43 lessons now have saved action flows, lesson-specific starting routes and linked answer repairs; all 616 worksheet field IDs are preserved. Modules 6–20 retain their previous teaching. Learner observation and formal assessment remain separate and unclaimed. Follow the current contract and [Modules 1–5 verification](docs/VERIFICATION-MODULE-ACTIONS.md).
+
+## Previous Lesson 1 release — small actions and honest progress, 12 September 2026
 
 The current release refines only Module 1 Lesson 1 (week1-day1-v1) into one small action at a time, preserving all 36 worksheet fields and the full workload. All 224 teaching lessons are published; the remaining 223 have not been reviewed against this new action-by-action standard. Shared tracking improvements do not establish teaching refinement or learner validation.
 

@@ -62,7 +62,9 @@ export async function saveProgress(
   if (previous.revision !== expectedRevision) throw new HttpError(409, 'A newer cloud version exists. Refresh before saving.');
   const parsed = recordSchema.parse(value);
   const prepared = previous.record ? prepareRecord(previous.record, parsed) : parsed;
-  if (prepared.learning?.finishedAt) {
+  // A previously explicit finish survives a teaching expansion. New finishes
+  // are checked against today's contract; edits already reopen via prepareRecord.
+  if (prepared.learning?.finishedAt && prepared.learning.finishedAt !== previous.record?.learning?.finishedAt) {
     const lesson = publishedLessons.find(l => l.id === lessonId);
     if (!lesson) throw new HttpError(400, 'The diagnostic is separate from finished course practice.');
     const problems = finishProblems(lesson, prepared);

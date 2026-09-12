@@ -1,3 +1,13 @@
+# First five modules use saved actions — 12 September 2026
+
+At the creator's explicit request, all 43 lessons in Modules 1–5 now use the Lesson 1 action reader. The 42 additional lessons retain their authored teaching, demonstrations and 616 total original worksheet fields across the five modules. There are 1,429 saved actions and 177 formative questions, with individual starting routes, supplied material where needed and linked Check repairs. Optional and participant-only answers no longer require invented evidence or create progress on untouched work. Lesson 1's 48 action IDs remain unchanged.
+
+Desktop has a readable main column with task context; phones use a bounded overview, one answer or repair at a time and wrapping controls. Timer controls keep a stable footprint, and starting on completed clicks fixes a mobile tap interruption found during QA. Generated lesson documents, authoring contract, audit and refinement ledger now match the first-five-module implementation. Modules 6–20 retain their previous teaching; learner validation remains separate.
+
+Validation passed: generated content, worksheet IDs, learning/timer regressions, all 43 action contracts, both typechecks, build, 13 existing local backend groups and all 43 lesson API round-trips including invalid completion, stale revisions, reopening and restoration. Browser samples covered all five modules at phone, tablet and desktop widths, saved question/action resume, offline repair/reload/reconnect, update delivery and conditional research routes. Full evidence and release metadata: [docs/VERIFICATION-MODULE-ACTIONS.md](docs/VERIFICATION-MODULE-ACTIONS.md). Native phone and Haru observation remain pending.
+
+Release: pending deployment and hosted verification.
+
 # Lesson 1 rebuilt around small actions and reliable tracking — 12 September 2026
 
 Lesson 1 now presents one clear action at a time while keeping its full workload: 36 original worksheet fields, five evidence entries, two improvements, six sorter questions and three reasoning checks. The 48-action path saves the current action, answers, feedback reveals and work route. The existing cream, green and serif design remains. Future lesson documents now carry the same authoring standard; their teaching has not been rewritten in this pass.

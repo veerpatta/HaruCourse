@@ -9,6 +9,8 @@ export type WorksheetField = {
   options?: string[];
   hint?: string;
   example?: string;
+  optional?: boolean;
+  requiredWhen?: { field: string; values: string[] };
 };
 export type WorksheetSection = {
   id: string;
@@ -58,7 +60,7 @@ export type LabelPractice = {
 };
 // "Check the reason": the learner answers first, then reads why. `repair`
 // sends one specific issue back into their own artefact. Nothing computes or
-// stores a score; this is formative only and the answer is not saved.
+// stores a score; choices and feedback reveals are saved as formative practice.
 export type ActiveCheck = {
   question: string;
   options: Choice[];
@@ -183,6 +185,7 @@ export type LegacyLesson = {
 };
 export type Lesson = Omit<LegacyLesson, "steps"> & {
   flow?: import('./lessonOneFlow').LessonAction[];
+  actionPlan?: import('./moduleActionPlans').ActionPlan;
   apprenticeship?: Apprenticeship;
   id: string;
   day: number;

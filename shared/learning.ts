@@ -1,5 +1,6 @@
 import type { RecordData } from './record';
 import type { Lesson } from '../src/teaching';
+import { actionQuestion, fieldRequired } from '../src/lessonActions';
 
 export function hasReviewWork(r: RecordData) {
   const worksheet = Object.values(r.worksheet ?? {}).some(v => v.trim());
@@ -13,7 +14,7 @@ export function finishProblems(lesson: Lesson, r: RecordData): string[] {
     if (!r.learning.outputsConfirmed) problems.push('Confirm that your external work contains every required output.');
   } else {
     const fields = lesson.apprenticeship?.worksheet?.flatMap(s => s.fields) ?? [];
-    const missing = fields.filter(f => !(r.worksheet?.[f.id] ?? '').trim() || (f.kind === 'choice' && !f.options?.includes(r.worksheet?.[f.id] ?? '')));
+    const missing = fields.filter(f => fieldRequired(f,r) && (!(r.worksheet?.[f.id] ?? '').trim() || (f.kind === 'choice' && !f.options?.includes(r.worksheet?.[f.id] ?? ''))));
     if (missing.length) problems.push(`Finish ${missing.length} worksheet answer${missing.length === 1 ? '' : 's'}: ${missing.slice(0, 2).map(f => f.label).join('; ')}${missing.length > 2 ? '…' : ''}`);
     if (!fields.length && !hasReviewWork(r)) problems.push('Add your reflection and work reference.');
   }
@@ -23,13 +24,8 @@ export function finishProblems(lesson: Lesson, r: RecordData): string[] {
     return !answer?.shown || !c.options.some(o => o.label === answer.value);
   })) problems.push('Answer each Check question and read its explanation.');
   if (!(r.worksheet?.['improvement-made'] || r.learning?.repair || '').trim()) problems.push('Record one improvement, or explain why your work already meets the check.');
-  if (lesson.id === 'week1-day1-v1') {
-    const sorter = lesson.apprenticeship?.guide?.find(g => g.sorter)?.sorter;
-    if (sorter?.items.some(item => {
-      const a = r.learning?.answers?.[`sort-${item.id}`];
-      return !a?.shown || !sorter.options.includes(a.value);
-    })) problems.push('Try all six supplied evidence examples.');
-  }
+  const practiceQuestions=lesson.flow?.filter(a=>a.kind==='sort'||a.kind==='supported') || [];
+  if(practiceQuestions.some(a=>!actionDone(lesson,r,a))) problems.push('Try each supplied practice question and read its explanation.');
   return problems;
 }
 
@@ -53,27 +49,29 @@ export function courseProgress(lessons: Lesson[], records: {lessonId: string; re
   return { finished, total, percent: total ? Math.floor(finished / total * 1000) / 10 : 0 };
 }
 export function actionDone(lesson: Lesson, r: RecordData, a: NonNullable<Lesson['flow']>[number]) {
-  if (a.kind === 'field') return !!r.worksheet?.[a.field!]?.trim();
-  if (a.kind === 'sort') {
-    const sorter = lesson.apprenticeship?.guide?.find(g => g.sorter)?.sorter;
-    return !!r.learning?.answers?.[`sort-${sorter?.items[a.index!].id}`]?.shown;
+  if (a.kind === 'field') {
+    const f=lesson.apprenticeship?.worksheet?.flatMap(s=>s.fields).find(f=>f.id===a.field);
+    return !!f && !!r.worksheet?.[a.field!]?.trim() && (f.kind!=='choice' || !!f.options?.includes(r.worksheet[a.field!]));
   }
-  if (a.kind === 'check') return !!r.learning?.answers?.[checkKey(a.index!)]?.shown;
+  const question=actionQuestion(lesson,a);
+  if(question) { const answer=r.learning?.answers?.[question.id]; return !!answer?.shown && question.options.some(o=>o.label===answer.value); }
   if (a.kind === 'review') return !!r.learning?.finishedAt;
   return !!r.learning?.completed?.includes(a.id);
 }
 export function lessonWorkProgress(lesson: Lesson, r: RecordData) {
   if (lesson.flow && r.learning?.route !== 'external') {
-    const total = lesson.flow.length;
-    const done = r.learning?.finishedAt ? total : lesson.flow.filter(a => actionDone(lesson,r,a)).length;
+    const fields=lesson.apprenticeship?.worksheet?.flatMap(s=>s.fields) || [];
+    const required=lesson.flow.filter(a=>a.kind!=='field' || fieldRequired(fields.find(f=>f.id===a.field)!,r));
+    const total = required.length;
+    const done = r.learning?.finishedAt ? total : required.filter(a => actionDone(lesson,r,a)).length;
     return {total, done, percent:Math.floor(done / total * 100)};
   }
   const fields = lesson.apprenticeship?.worksheet?.flatMap(s => s.fields) ?? [];
   const checks = lesson.apprenticeship?.checks ?? [];
   const external = r.learning?.route === 'external';
-  const sorts = lesson.flow?.filter(a => a.kind === 'sort') ?? [];
+  const sorts = lesson.flow?.filter(a => a.kind === 'sort' || a.kind === 'supported') ?? [];
   const total = (external ? 3 : fields.length) + checks.length + sorts.length + 2;
-  const filled = external ? Number(!!r.notes.trim()) + Number(!!r.submission.trim()) + Number(!!r.learning?.outputsConfirmed) : fields.filter(f => r.worksheet?.[f.id]?.trim()).length;
+  const filled = external ? Number(!!r.notes.trim()) + Number(!!r.submission.trim()) + Number(!!r.learning?.outputsConfirmed) : fields.filter(f => !fieldRequired(f,r) || r.worksheet?.[f.id]?.trim()).length;
   const done = filled + sorts.filter(a => actionDone(lesson,r,a)).length + checks.filter((_,i) => r.learning?.answers?.[checkKey(i)]?.shown).length + Number(!!(r.worksheet?.['improvement-made'] || r.learning?.repair)?.trim()) + Number(!!r.learning?.finishedAt);
   return {total, done, percent:Math.min(r.learning?.finishedAt ? 100 : 99,Math.floor(done / total * 100))};
 }

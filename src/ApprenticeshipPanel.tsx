@@ -105,7 +105,7 @@ export function PortfolioPath() {
   </details>;
 }
 
-function ContrastCalculator() {
+export function ContrastCalculator() {
   const [fg, setFg] = useState('#000000'), [bg, setBg] = useState('#ffffff');
   const ratio = contrastRatio(fg, bg);
   return <details><summary>Local contrast calculator · works offline</summary>
