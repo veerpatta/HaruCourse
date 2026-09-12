@@ -32,4 +32,10 @@ These are agent QA results, not observations of Haru. Her uncoached Lesson 1 wal
 
 ## Release
 
-Release metadata and hosted checks will be recorded below after deployment. No database migration is needed: the existing version-1 JSON record gains optional members. Published IDs, record keys and existing work remain intact. Older cached clients should accept the Update now notice before using records containing the new members. Prefer a forward fix over rolling back the server to a strict schema that predates those members.
+Implementation commit `16fc068` was pushed to `main` and deployed at 17:49 UTC on 12 September 2026 to https://harucourse.raj-39e.workers.dev. Cloudflare reports version `f33a04c2-8e62-4daa-88ef-c7cc9b9b9fa2` receiving 100% of traffic (deployment `f0726d0f-25a6-44dc-b1be-755c0e38340d`). Live SHA-256 hashes match the local build for index.html, sw.js, index-DdQ4uPfb.js and index-BWKzFs5o.css. Health returned 200 and unauthenticated practice access returned 401.
+
+The hosted learning integration passed using only `test`: saved actions/questions/timing, worksheet-only review, incomplete completion rejection, stale-write rejection, a second authenticated session and edit reopening. It restored the original test record afterward, with only the normal revision/timestamp advance. Haru's records were not written by QA.
+
+A fresh Chrome sign-in to the live test workspace showed the new course/module totals and Lesson 1 action reader. At 390×844 the live document width and scroll width were both 375 px; the cream/green action card, wrapped section controls and bottom navigation were visually checked. Temporary viewport/network overrides were restored and test tabs closed.
+
+No database migration is needed: the existing version-1 JSON record gains optional members. The remote migration list confirmed no pending migrations. Published IDs, record keys and existing work remain intact. Older cached clients should accept the Update now notice before using records containing the new members. Prefer a forward fix over rolling back the server to a strict schema that predates those members. The previous active version was `b6e0f258-b4a3-4739-8e5f-809f4e9a7e5b`.

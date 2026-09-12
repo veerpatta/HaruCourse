@@ -8,6 +8,8 @@ Content, worksheet, learning regression, both typechecks, production build, all 
 
 Haru's uncoached walkthrough and native phone-keyboard checks remain pending. Publication, authoring refinement and learner completion are separate measures. The course still has 224 published lessons; 221 required teaching lessons form the completion denominator.
 
+Released: implementation commit `16fc068` is on `main`; Cloudflare version `f33a04c2-8e62-4daa-88ef-c7cc9b9b9fa2` is live at 100%. Live asset hashes, hosted test-account persistence/conflict/completion checks, unauthenticated access protection and the phone-width Lesson 1 reader passed. The test integration restored its original record; Haru's records were not changed by QA.
+
 # The last 120 lessons given guided practice — 12 September 2026
 
 Modules 11 to 20 had no guided practice at all: no route, no worksheet, no demonstrations, no sorter, no answer-first checks. They are now written, and every published lesson in the course resolves guided material at runtime — 224 of 224. The ten modules added 1,387 worksheet fields, 240 failure-first demonstrations, 120 evidence sorters of six supplied lines each, 360 checks that each send one named repair back into the learner's own worksheet, and 1,216 defined terms. Three Module 16 lessons that had been left with a single demonstration were brought up to two in the same pass, so the parity claim made on 8 September now holds across the whole course.
