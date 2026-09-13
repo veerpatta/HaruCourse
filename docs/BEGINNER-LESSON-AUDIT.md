@@ -10,26 +10,26 @@ The creator subsequently authorized implementation and release for the whole cou
 
 | Scope | Drafted | Content checked | Interface checked | Learner observed | Released |
 |---|---|---|---|---|---|
-| m01 · 7 lessons | 13 Sep 2026 · source implementation | Passed · all seven runtime contracts and generated `WEEK-01.md` | Lesson 1 passed local browser checks at 320/390/1440 px | No | No |
-| m02 · 5 lessons | 13 Sep 2026 · source implementation | Passed · all five runtime contracts and generated `WEEK-02.md` | Shared reader covered; no lesson-specific browser sample | No | No |
-| m03 · 10 lessons | 13 Sep 2026 · source implementation | Passed · all ten runtime contracts and generated `MODULE-03.md` | Shared reader covered; no lesson-specific browser sample | No | No |
-| m04 · 8 lessons | 13 Sep 2026 · source implementation | Passed · all eight runtime contracts and generated `MODULE-04.md` | Shared reader covered; no lesson-specific browser sample | No | No |
-| m05 · 13 lessons | 13 Sep 2026 · source implementation | Passed · all thirteen runtime contracts and generated `MODULE-05.md` | `m05-l06-v1` passed local opening/route check | No | No |
-| m06 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-06.md` | Shared reader covered; no lesson-specific browser sample | No | No |
-| m07 · 13 lessons | 13 Sep 2026 · source implementation | Passed · all thirteen runtime contracts and generated `MODULE-07.md` | Shared reader covered; no lesson-specific browser sample | No | No |
-| m08 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-08.md` | Shared reader covered; no lesson-specific browser sample | No | No |
-| m09 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-09.md` | Shared reader covered; no lesson-specific browser sample | No | No |
-| m10 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-10.md` | `m10-l01-v1` passed local opening/route check | No | No |
-| m11 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-11.md` | `m11-l01-v1` opening, guided answer, AI return route, copying, save state and responsive width passed locally | No | Pending |
-| m12 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-12.md` | Shared reader covered; no lesson-specific browser sample | No | Pending |
-| m13 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-13.md` | Shared reader covered; no lesson-specific browser sample | No | Pending |
-| m14 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-14.md` | Shared reader covered; no lesson-specific browser sample | No | Pending |
-| m15 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-15.md` | Shared reader covered; no lesson-specific browser sample | No | Pending |
-| m16 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-16.md` | `m16-l01-v1` plain opening, terms, example, timer and save route passed locally | No | Pending |
-| m17 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-17.md` | Shared reader covered; no lesson-specific browser sample | No | Pending |
-| m18 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-18.md` | Shared reader covered; no lesson-specific browser sample | No | Pending |
-| m19 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-19.md` | Shared reader covered; no lesson-specific browser sample | No | Pending |
-| m20 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-20.md` | `m20-l12-v1` plain opening, terms, example, progress meaning and timer passed locally | No | Pending |
+| m01 · 7 lessons | 13 Sep 2026 · source implementation | Passed · all seven runtime contracts and generated `WEEK-01.md` | Lesson 1 passed local browser checks at 320/390/1440 px | No | Yes · `f9b2445` / `ff1d14ce` |
+| m02 · 5 lessons | 13 Sep 2026 · source implementation | Passed · all five runtime contracts and generated `WEEK-02.md` | Shared reader covered; no lesson-specific browser sample | No | Yes · `f9b2445` / `ff1d14ce` |
+| m03 · 10 lessons | 13 Sep 2026 · source implementation | Passed · all ten runtime contracts and generated `MODULE-03.md` | Shared reader covered; no lesson-specific browser sample | No | Yes · `f9b2445` / `ff1d14ce` |
+| m04 · 8 lessons | 13 Sep 2026 · source implementation | Passed · all eight runtime contracts and generated `MODULE-04.md` | Shared reader covered; no lesson-specific browser sample | No | Yes · `f9b2445` / `ff1d14ce` |
+| m05 · 13 lessons | 13 Sep 2026 · source implementation | Passed · all thirteen runtime contracts and generated `MODULE-05.md` | `m05-l06-v1` passed local opening/route check | No | Yes · `f9b2445` / `ff1d14ce` |
+| m06 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-06.md` | Shared reader covered; no lesson-specific browser sample | No | Yes · `f9b2445` / `ff1d14ce` |
+| m07 · 13 lessons | 13 Sep 2026 · source implementation | Passed · all thirteen runtime contracts and generated `MODULE-07.md` | Shared reader covered; no lesson-specific browser sample | No | Yes · `f9b2445` / `ff1d14ce` |
+| m08 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-08.md` | Shared reader covered; no lesson-specific browser sample | No | Yes · `f9b2445` / `ff1d14ce` |
+| m09 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-09.md` | Shared reader covered; no lesson-specific browser sample | No | Yes · `f9b2445` / `ff1d14ce` |
+| m10 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-10.md` | `m10-l01-v1` passed local opening/route check | No | Yes · `f9b2445` / `ff1d14ce` |
+| m11 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-11.md` | `m11-l01-v1` opening, guided answer, AI return route, copying, save state and responsive width passed locally | No | Yes · `f9b2445` / `ff1d14ce` |
+| m12 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-12.md` | Shared reader covered; no lesson-specific browser sample | No | Yes · `f9b2445` / `ff1d14ce` |
+| m13 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-13.md` | Shared reader covered; no lesson-specific browser sample | No | Yes · `f9b2445` / `ff1d14ce` |
+| m14 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-14.md` | Shared reader covered; no lesson-specific browser sample | No | Yes · `f9b2445` / `ff1d14ce` |
+| m15 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-15.md` | Shared reader covered; no lesson-specific browser sample | No | Yes · `f9b2445` / `ff1d14ce` |
+| m16 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-16.md` | `m16-l01-v1` plain opening, terms, example, timer and save route passed locally | No | Yes · `f9b2445` / `ff1d14ce` |
+| m17 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-17.md` | Shared reader covered; no lesson-specific browser sample | No | Yes · `f9b2445` / `ff1d14ce` |
+| m18 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-18.md` | Shared reader covered; no lesson-specific browser sample | No | Yes · `f9b2445` / `ff1d14ce` |
+| m19 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-19.md` | Shared reader covered; no lesson-specific browser sample | No | Yes · `f9b2445` / `ff1d14ce` |
+| m20 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-20.md` | `m20-l12-v1` plain opening, terms, example, progress meaning and timer passed locally | No | Yes · `f9b2445` / `ff1d14ce` |
 
 The existing per-lesson rows below remain the stable-ID inventory and retain earlier action-refinement evidence. This section records the new shared comprehension implementation without claiming individual learner understanding. All 2,866 existing worksheet field IDs remain unchanged; the all-course action and persistence regression checks cover each lesson individually. Detailed evidence and limits: [all-course beginner verification](VERIFICATION-BEGINNER-ALL-LESSONS.md).
 

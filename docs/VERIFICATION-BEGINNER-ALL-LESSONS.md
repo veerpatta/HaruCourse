@@ -1,6 +1,6 @@
 # Beginner teaching verification — all 224 lessons
 
-Implementation and local verification completed on 13 September 2026. Release evidence is added after the production deployment. This record covers all published teaching lessons from `week1-day1-v1` through `m20-l12-v1`. It does not claim learner observation or formal assessment.
+Implementation, local verification and production verification completed on 13 September 2026. This record covers all published teaching lessons from `week1-day1-v1` through `m20-l12-v1`. It does not claim learner observation or formal assessment.
 
 ## Beginner teaching now present
 
@@ -36,7 +36,14 @@ The browser used only the isolated `test` account. Haru's account was not opened
 
 ## Production evidence
 
-Pending deployment. Add the pushed commit, Cloudflare version, asset checks, health/auth responses, hosted `test`-account round-trips and live browser results here after release.
+- Commit `f9b2445` is pushed to `origin/main`. Cloudflare Worker version `ff1d14ce-fd9a-4523-a5f8-121e196ed7e2` is deployed at `https://harucourse.raj-39e.workers.dev`.
+- Production returned 200 for the app, `/api/health`, the manifest and service worker. `/api/progress` returned 401 without a session. The health payload reports version `0.2.0`.
+- Live JavaScript `index-CdL-jjsX.js` and CSS `index-DX2rmuhD.css` match the local production files byte-for-byte by SHA-256.
+- `HARU_TEST_BASE=https://harucourse.raj-39e.workers.dev node scripts/test-module-actions-cloud.mjs --live` passed all 224 lesson records: completion, saved-question round-trip, stale-write rejection and reopening. It restored every original `test` record; only revision numbers and timestamps advanced.
+- `HARU_TEST_BASE=https://harucourse.raj-39e.workers.dev node scripts/test-learning-cloud.mjs --live` passed the focused action, worksheet, timer, explicit-finish, reopening, second-session and conflict checks and restored its original `test` record.
+- The live **Update now** control loaded the new assets while retaining the existing test workspace. The final lesson rendered its plain opening, terms, progress meaning, timer and online-save state.
+- A live Module 20 answer saved automatically and survived a full page reload. The exact pre-test record was restored afterward. Module 11 revealed its lesson-specific AI activity after an answered supported question; the return task and course-only alternative appeared, and `Copy prompt` confirmed copying. Its exact pre-test record was also restored.
+- The live lesson had no horizontal overflow at 320, 390 or 1,440 CSS pixels. A repeated 390-pixel inspection found no visible interactive control below 44 CSS pixels in either dimension. No browser console warning or error was recorded.
 
 ## Evidence that remains open
 
