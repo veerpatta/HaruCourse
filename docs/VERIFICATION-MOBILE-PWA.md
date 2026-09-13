@@ -33,6 +33,12 @@ The temporary local answer was removed. Haru's records were not used.
 
 ## Release and hosted verification
 
-Release is pending. Add the implementation commit, Cloudflare version, live asset hashes and hosted `test`-account smoke evidence here after deployment.
+Implementation commit `c7409a1` was pushed to `main`. Cloudflare deployed version `057d52e7-7d57-461f-9e9e-a32feda2d529` at 100% on 13 September 2026, 19:32 UTC, at https://harucourse.raj-39e.workers.dev. The existing D1, KV and Assets bindings were retained; no migration was needed.
+
+Live `index.html`, `sw.js`, CSS `index-CDxXm0Xl.css`, JavaScript entry `index-3bARN_Sr.js` and all 18 course-module chunks matched the local production build by SHA-256. Health returned 200 and an unauthenticated lesson-progress request returned 401.
+
+The hosted `test` identity passed the focused learning and timer integration: incomplete finish rejection, a complete worksheet and timing round-trip, worksheet-only review, stale-write rejection, a second signed-in session, substantive-edit reopening and course-summary persistence. Its original record was restored in the integration's `finally` block; only the expected server revision and timestamp advanced.
+
+The previously installed live browser accepted the release through Update now after its saved-draft guard was clear. Two old local sidecars in the shared test browser reported conflicts against newer hosted test records; each was resolved with Back up my draft and use cloud, preserving the local copy and using the authoritative test record. This was test-account state only. After activation, the app loaded `index-3bARN_Sr.js` at 390 × 844 with no horizontal overflow, no visible button, link, summary or select below 44 × 44 px, and no console errors. Module 20 Lesson 12 reopened from the service-worker cache under network-offline emulation, then returned to Saved online after reconnect. The live My work shortcut selected My work, and Account exposed the mobile installation and offline guidance. Haru's records were not read or changed during browser QA.
 
 Physical iOS and Android installation, native keyboard behavior, screen-reader output and Haru's uncoached use remain unverified. Browser emulation does not replace those checks. Formal scored assessment remains unimplemented.
