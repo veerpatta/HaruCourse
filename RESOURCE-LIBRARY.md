@@ -1,3 +1,9 @@
+## Beginner planning research — 13 September 2026
+
+[Beginner research notes](docs/BEGINNER-RESEARCH.md) compare public Google UX, Figma, OpenLearn, MDN and W3C teaching material, plus learning/clarity evidence, to inform the [experience plan](docs/BEGINNER-EXPERIENCE-PLAN.md). These are planning references, not new required assignments or changes to R/T/VID IDs. Exact inspected scope, price/account boundaries, dated material and retrieval failures are recorded there. No paid enrolment, video playback, authenticated tool export or external-AI trial was performed. The earlier catalog remains dated as recorded; this is not a complete resource re-audit.
+
+Any later assignment must be checked for its exact purpose, prerequisite fit, access and complete free alternative before entering this catalog. AI learning prompts must not promise current information or imply that a generated citation was verified.
+
 ## Lesson 1 release recheck — 12 September 2026
 
 R01 (Design Council Double Diamond) and the existing VID01 Vimeo page were retrieved publicly again on this date. The reading still describes Discover, Define, Develop and Deliver without an account. The video page still identifies Jonathan Ball and Design Council. This is a page-access recheck, not a new playback or subtitle verification; retain the original dated subtitle evidence and timestamps. Both remain optional in the new Lesson 1 action flow, which teaches the complete written route without them.

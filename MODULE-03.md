@@ -20,51 +20,65 @@ Starting route: Use one sketch or recreate this fictional class screen on paper:
 
 - A type scale table of five or six steps with size, weight and job; one screen re-typeset with it; the same screen at narrow width and at enlarged text; and a short note of what broke.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Visual design helps people notice, read and understand what matters on a screen. In this lesson, your first small result is: A count of the text sizes already on your screen, and what they are.
+
+**Words you will use**
+
+- **Type scale:** The short list of sizes you allow yourself, each with a job. Anything not on the list is not used.
+- **Weight:** How heavy the letters are: regular, medium, semibold. A cheap way to signal importance without taking space.
+- **Job:** What that step is for on this screen. “Big” is not a job; “the class name, once per screen” is.
+
+**Quick example.** A supplied narrow-width result from the same made-up screen: at 390 px the class name wraps to two lines, the price and the date now sit below the fold, and the section heading and the body text look the same size at a glance.
+
+The reader demonstrates and guides the task before asking for “How many different text sizes are on your screen now?”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Produce a five-step type scale with stated sizes, weights and uses, and show it holding its hierarchy at two widths without hard-coding a pixel size for every element.
+Rebuild one workshop screen with two candidate type scales. Compare hierarchy at narrow width and with enlarged text before choosing.
 
 
-### Understand the idea · 1
+### Idea 1: A type scale is a short, deliberate list of sizes you allow yo…
 
 Section: learn. Stable action: learn-1.
 
 A type scale is a short, deliberate list of sizes you allow yourself, each with a role. Five or six steps is usually enough for a product screen: a page title, a section heading, body text, a supporting line and a small label. The discipline is not the arithmetic of the ratio; it is refusing the sixth size when a screen feels crowded, because every extra size makes hierarchy harder to read, not easier.
 
 
-### Understand the idea · 2
+### Hierarchy is a comparison, not an absolute
 
 Section: learn. Stable action: learn-2.
 
 Hierarchy is a comparison, not an absolute. A heading reads as a heading because it differs from what surrounds it in size, weight, spacing or colour. That means you can often strengthen a hierarchy by making the body text calmer rather than making the heading bigger, which matters on a small screen where a bigger heading costs you the content itself.
 
 
-### Understand the idea · 3
+### Screen type has one constraint print does not: the reader controls it
 
 Section: learn. Stable action: learn-3.
 
 Screen type has one constraint print does not: the reader controls it. A person may set a larger default text size in their browser or phone, and a design that hard-codes every size in pixels can ignore that setting or break when it is honoured. Sizing text in relative units, so that a chosen scale multiplies the reader's own base size, keeps your hierarchy and their preference at the same time.
 
 
-### Understand the idea · 4
+### Weight and case do work that size cannot
 
 Section: learn. Stable action: learn-4.
 
 Weight and case do work that size cannot. A heavier weight separates a label from a value without adding height, which is how dense interfaces stay legible. All-capitals is a decision with a cost: it removes word shape, slows reading of anything longer than two or three words, and is read letter-by-letter by some screen readers when abbreviations are involved. Use it for short labels, not for sentences.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A workshop detail screen designed with eight sizes was rebuilt with five: 32/24/16/14/12. The title dropped from 40 to 32 and moved to a heavier weight, the two “supporting” sizes were merged into one 14, and the metadata row became 12 in a heavier weight instead of a lighter grey. At 390 px wide the title now holds one line, the date and price line is readable at arm's length, and the section headings are still obviously headings — with three fewer sizes to maintain.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -508,6 +522,40 @@ Open Your work and choose Ready for review. The next lesson sets line length and
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: A type scale that survives the screen
+What I am trying to do: Rebuild one workshop screen with two candidate type scales. Compare hierarchy at narrow width and with enlarged text before choosing.
+
+Key idea or terms:
+Type scale: The short list of sizes you allow yourself, each with a job. Anything not on the list is not used.
+Weight: How heavy the letters are: regular, medium, semibold. A cheap way to signal importance without taking space.
+Job: What that step is for on this screen. “Big” is not a job; “the class name, once per screen” is.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied narrow-width result from the same made-up screen: at 390 px the class name wraps to two lines, the price and the date now sit below the fold, and the section heading and the body text look the same size at a glance.
+
+Activity: Describe the design decision in the supplied case, then ask me what I would notice first and why. Help me connect the visual choice to the task it supports.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “How many different text sizes are on your screen now?” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “How many different text sizes are on your screen now?”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “How many different text sizes are on your screen now?” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Inventory roles before choosing sizes; two labels serving the same role should not drift accidentally.
@@ -576,7 +624,7 @@ Adequate evidence: For each pair of old sizes merged into one step, a sentence o
 Repair: List your merges as a two-column table: what the two old sizes distinguished, and what now carries that distinction — weight, space, colour or nothing. Any row ending in “nothing” needs either a fix or an argument. Recheck: The merge table with no unexplained “nothing” rows.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson sets line length and leading on this same screen, so keep the ladder.
 
@@ -606,51 +654,65 @@ Starting route: Bring your type ladder, or use five labelled sizes: 24 title, 18
 
 - One content block with stated measure, line height and block spacing values, a worst-case content list, narrow and enlarged renderings, and a reason for each value.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Visual design helps people notice, read and understand what matters on a screen. In this lesson, your first small result is: The real strings your screen must hold, including the longest title and an empty state.
+
+**Words you will use**
+
+- **Worst-case content:** The real strings that will stress the layout: the longest name, the empty week, the price with a currency symbol.
+- **Measure:** The number of characters on a line. It is a count, not an impression, and it is what decides whether the eye finds the next line.
+- **Line height:** The distance from one line to the next, written as a ratio of the text size so it scales with it.
+
+**Quick example.** A supplied block from the same made-up screen: body text at 16 with line height 1.9, paragraph gaps the same size as one line, and headings at 20 with line height 1.9 as well.
+
+The reader demonstrates and guides the task before asking for “The longest title you can justify”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Set line length, line height and paragraph spacing for one block of real content, and justify each value against how the text is actually read rather than how the block looks.
+Test a long title, paragraph and action label in your screen. Compare two text-column widths without shortening the content to hide problems.
 
 
-### Understand the idea · 1
+### Idea 1: Line length — the measure — is the strongest single lever on c…
 
 Section: learn. Stable action: learn-1.
 
 Line length — the measure — is the strongest single lever on comfortable reading of continuous text. Very long lines make the return sweep to the next line error-prone, so readers lose their place; very short lines break phrases so often that the eye stops more than it reads. Roughly forty-five to seventy-five characters is the usual comfortable band for body text, and the point is to constrain the measure deliberately rather than let it default to whatever the container happens to be.
 
 
-### Understand the idea · 2
+### Line height works with the measure, not independently of it
 
 Section: learn. Stable action: learn-2.
 
 Line height works with the measure, not independently of it. Longer lines need more space between them to keep the return sweep accurate; short lines and large display type need less, and too much leading on a heading separates it from the text it introduces. Line height is also a ratio, not a fixed distance: express it relative to the font size so it scales when the reader enlarges the text.
 
 
-### Understand the idea · 3
+### Spacing between blocks must beat spacing within them
 
 Section: learn. Stable action: learn-3.
 
 Spacing between blocks must beat spacing within them. If the gap between two paragraphs is the same as the gap between their lines, the reader sees one undifferentiated column. This is the same grouping logic you will meet formally in the Gestalt lesson: proximity assigns membership, and the eye trusts it before it trusts your headings.
 
 
-### Understand the idea · 4
+### Real content changes all of these numbers
 
 Section: learn. Stable action: learn-4.
 
 Real content changes all of these numbers. Placeholder text has even word lengths, no long words, no numbers, no names and no empty states, so it flatters every layout. A real workshop title in two languages, a long instructor name, a price with a currency symbol and a date format the reader recognises will each stress the measure differently. Test with the worst real content you can find, not the average.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A workshop description set at 16 px across a full 1280 px container ran to about 140 characters a line. Readers testing the page kept re-reading lines. Constraining the text column to roughly 65 characters and setting line height to 1.5 fixed the re-reading without changing the font, the size or the colour. On the phone the measure was already narrow, so the same block needed line height nearer 1.4 and a larger gap between paragraphs instead.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1070,6 +1132,40 @@ Open Your work and choose Ready for review. The next lesson recolours this same 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Readability: measure, leading and the small screen
+What I am trying to do: Test a long title, paragraph and action label in your screen. Compare two text-column widths without shortening the content to hide problems.
+
+Key idea or terms:
+Worst-case content: The real strings that will stress the layout: the longest name, the empty week, the price with a currency symbol.
+Measure: The number of characters on a line. It is a count, not an impression, and it is what decides whether the eye finds the next line.
+Line height: The distance from one line to the next, written as a ratio of the text size so it scales with it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied block from the same made-up screen: body text at 16 with line height 1.9, paragraph gaps the same size as one line, and headings at 20 with line height 1.9 as well.
+
+Activity: Describe the design decision in the supplied case, then ask me what I would notice first and why. Help me connect the visual choice to the task it supports.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The longest title you can justify” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The longest title you can justify”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The longest title you can justify” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Use the same content in both versions so you are comparing layout rather than writing.
@@ -1139,7 +1235,7 @@ Adequate evidence: Specific named failures at 390 px and at enlarged text, or a 
 Repair: Produce the missing case and write each problem as an observable sentence naming the element and the behaviour. Then mark each one as readability or aesthetics. Recheck: Both renderings and the labelled problem list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson recolours this same screen, so keep it as it stands.
 
@@ -1169,51 +1265,65 @@ Starting route: Use a sketch, or draw a fictional reservation screen with headin
 
 - A palette table of role, value and meaning; the recoloured screen; a greyscale version; and a list of information that failed the greyscale test with the second channel you added for each.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Visual design helps people notice, read and understand what matters on a screen. In this lesson, your first small result is: The roles your screen needs, each with one value.
+
+**Words you will use**
+
+- **Role:** What a colour is for: a surface, a body text, an action, a status. Not a name like “the blue”.
+- **Status colour:** A colour carrying information, such as full, cancelled or confirmed. These are the ones that fail the greyscale test.
+- **Palette:** The whole set of colours you allow yourself, each already tied to a role. Anything outside it does not go on the screen.
+
+**Quick example.** A supplied pair from the same made-up screen. Version A distinguishes a cancelled class from a running one by colouring the title red instead of dark grey. Version B keeps both titles dark grey and adds the word “Cancelled” before the title, with a lighter strike through the date.
+
+The reader demonstrates and guides the task before asking for “Role 1 · what it is for, then the value you chose”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Define a working palette with a stated role for every colour, and prove that every piece of information it conveys survives when the colour is removed.
+Imagine a status list whose only distinction is a red or green dot. Redesign its meaning with text and shape as well as color, then apply that lesson to your screen.
 
 
-### Understand the idea · 1
+### Give every colour a job before you choose a value
 
 Section: learn. Stable action: learn-1.
 
 Give every colour a job before you choose a value. A product palette is usually smaller than a brand palette: a surface, a primary text colour, a secondary text colour, one action colour, and a small set of status colours for error, warning and success. Colours without a job accumulate, and a palette of nineteen greys is not richer than one of four — it is unmaintainable and inconsistent across screens.
 
 
-### Understand the idea · 2
+### Colour alone must never be the only carrier of information
 
 Section: learn. Stable action: learn-2.
 
 Colour alone must never be the only carrier of information. Some readers cannot distinguish the hues you are relying on, some are on a washed-out screen in daylight, and some have colour overridden entirely. The rule is practical rather than moral: whatever the colour says, something else must also say — an icon, a word, a pattern, a position. The quickest check is to view the screen in greyscale and ask what you can no longer tell.
 
 
-### Understand the idea · 3
+### Idea 3: Hue, saturation and lightness are separable controls, and ligh…
 
 Section: learn. Stable action: learn-3.
 
 Hue, saturation and lightness are separable controls, and lightness does most of the accessible work. Two colours of the same lightness will look distinct to you and nearly identical to a reader with reduced colour vision, or on a dim screen. When you need two states to be reliably distinguishable, change lightness, not just hue.
 
 
-### Understand the idea · 4
+### Idea 4: Colour also carries convention, and convention is regional and…
 
 Section: learn. Stable action: learn-4.
 
 Colour also carries convention, and convention is regional and contextual rather than universal. Red for danger is widespread in interface work, but red in an Indian context is also celebratory, and green appears in both money and success meanings. Do not assume your audience reads your palette the way you do; state the meaning in words somewhere in the interface, and treat a colour convention as a hypothesis you could check rather than a fact.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A booking list showed status as a coloured dot: green confirmed, amber pending, red cancelled. In greyscale all three dots became mid-grey circles and the list became unreadable. The repair was not a new palette but a second channel: each dot kept its colour and gained a distinct shape and the status word beside it. The colour still helps people who can use it, and no longer carries the meaning alone.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1633,6 +1743,40 @@ Open Your work and choose Ready for review. The next lesson measures the contras
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Colour that carries meaning, not decoration
+What I am trying to do: Imagine a status list whose only distinction is a red or green dot. Redesign its meaning with text and shape as well as color, then apply that lesson to your screen.
+
+Key idea or terms:
+Role: What a colour is for: a surface, a body text, an action, a status. Not a name like “the blue”.
+Status colour: A colour carrying information, such as full, cancelled or confirmed. These are the ones that fail the greyscale test.
+Palette: The whole set of colours you allow yourself, each already tied to a role. Anything outside it does not go on the screen.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied pair from the same made-up screen. Version A distinguishes a cancelled class from a running one by colouring the title red instead of dark grey. Version B keeps both titles dark grey and adds the word “Cancelled” before the title, with a lighter strike through the date.
+
+Activity: Describe the design decision in the supplied case, then ask me what I would notice first and why. Help me connect the visual choice to the task it supports.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Role 1 · what it is for, then the value you chose” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Role 1 · what it is for, then the value you chose”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Role 1 · what it is for, then the value you chose” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Cover the colored mark and check whether the status remains understandable.
@@ -1701,7 +1845,7 @@ Adequate evidence: At least one sentence identifying a colour meaning the audien
 Repair: Pick the one colour in your palette whose meaning you are least sure about. Write who might read it differently and the smallest question you could ask a real person to find out. Recheck: The named colour, the alternative reading and the question.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson measures the contrast of this palette, so keep the values exactly as recorded.
 
@@ -1731,51 +1875,65 @@ Starting route: Use the offline contrast calculator beside the measurement field
 
 - A contrast table covering every text and essential non-text element with colour, background, size, threshold and measured ratio, before and after repair, plus a note on your own reading test.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Visual design helps people notice, read and understand what matters on a screen. In this lesson, your first small result is: The two thresholds and the exceptions, written in your own words.
+
+**Words you will use**
+
+- **Contrast ratio:** A number comparing the lightness of two colours, from 1 (identical) to 21 (black on white).
+- **Large text:** A defined size and weight above which a lower ratio is allowed. Write the actual definition; guessing it is how failures pass.
+- **Effective background:** What is actually behind the text after transparency and images are flattened. Measure that, not the colour you intended.
+
+**Quick example.** A supplied failing row from the same made-up screen: a secondary link, #7a8b80 on #fffefb, 14 regular, needs 4.5, measured 3.1.
+
+The reader demonstrates and guides the task before asking for “Normal text needs at least…”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Measure and record the contrast of every text and essential non-text element on one screen against the stated thresholds, and repair the failures without discarding the palette.
+Measure the actual foreground/background pairs in your design, repair failing pairs and measure them again. A visual impression is not a ratio.
 
 
-### Understand the idea · 1
+### Idea 1: The minimum contrast requirement is a ratio between the lightn…
 
 Section: learn. Stable action: learn-1.
 
 The minimum contrast requirement is a ratio between the lightness of text and its background. Ordinary body text needs at least 4.5:1. Large text — from around 18 point, or 14 point when bold — needs at least 3:1, because larger, thicker letterforms remain legible at lower contrast. These are floors for a wide range of readers, not targets for good design, and comfortable reading often sits well above them.
 
 
-### Understand the idea · 2
+### Idea 2: The requirement has genuine exceptions, and knowing them stops…
 
 Section: learn. Stable action: learn-2.
 
 The requirement has genuine exceptions, and knowing them stops you from either over-claiming or over-correcting. Text that is purely decorative, text that is part of a logo or brand name, and text in a component that is currently inactive are not held to the ratio. An inactive control is the one designers most often get wrong in both directions: greying it out is legitimate, but if the reader cannot tell what the control would do, the problem is comprehension rather than conformance.
 
 
-### Understand the idea · 3
+### Measure the pair that actually renders, not the pair you intended
 
 Section: learn. Stable action: learn-3.
 
 Measure the pair that actually renders, not the pair you intended. Text over an image, text over a gradient, semi-transparent overlays and a hover state that changes the background are all cases where the real background differs from the one in your palette. Take the worst point of the actual composite, not the average, because a caption is illegible at the point where the photograph is brightest, not on average.
 
 
-### Understand the idea · 4
+### Contrast is a floor for legibility, not a proof of readability
 
 Section: learn. Stable action: learn-4.
 
 Contrast is a floor for legibility, not a proof of readability. A screen can pass every ratio and still be exhausting: too-long lines, insufficient leading, an over-saturated background that vibrates against the text, or an all-capitals paragraph. Report the ratio as one piece of evidence alongside your own reading test, and never describe a passing ratio as an accessibility outcome for real users.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A workshop card used mid-grey #999999 body text on white — about 2.8:1, below the 4.5:1 floor. That grey also fails the 3:1 large-text threshold, so enlarging it alone cannot repair the contrast. The designer darkened the heading color until a new measurement exceeded 3:1, and moved body text to a darker grey that measures about 7:1. The visual softness the designer wanted was preserved exactly where it was legitimate, and removed where it was not.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2197,6 +2355,40 @@ Open Your work and choose Ready for review. The next lesson regroups the densest
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Contrast you can defend
+What I am trying to do: Measure the actual foreground/background pairs in your design, repair failing pairs and measure them again. A visual impression is not a ratio.
+
+Key idea or terms:
+Contrast ratio: A number comparing the lightness of two colours, from 1 (identical) to 21 (black on white).
+Large text: A defined size and weight above which a lower ratio is allowed. Write the actual definition; guessing it is how failures pass.
+Effective background: What is actually behind the text after transparency and images are flattened. Measure that, not the colour you intended.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied failing row from the same made-up screen: a secondary link, #7a8b80 on #fffefb, 14 regular, needs 4.5, measured 3.1.
+
+Activity: Describe the design decision in the supplied case, then ask me what I would notice first and why. Help me connect the visual choice to the task it supports.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Normal text needs at least…” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Normal text needs at least…”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Normal text needs at least…” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Read the assigned W3C criterion before selecting a threshold; text and non-text uses differ.
@@ -2266,7 +2458,7 @@ Adequate evidence: An explicit sentence stating what the measurements establish 
 Repair: Rewrite your summary sentence so it says exactly what was measured, on what, by what method, and lists what remains unknown. Recheck: The rewritten bounded claim.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson regroups the densest screen you have, using space before anything else.
 
@@ -2296,51 +2488,65 @@ Starting route: Use a paper screen, or draw a fictional class page with title, d
 
 - The dense screen before and after regrouping, a note of which grouping tool each group required and why, and one worked counterexample where a principle misleads.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Visual design helps people notice, read and understand what matters on a screen. In this lesson, your first small result is: Five principles in your own sentences.
+
+**Words you will use**
+
+- **Proximity:** Things near each other are read as belonging together. The cheapest and strongest tool you have.
+- **Common region:** Things inside the same enclosed area are read as a set, even when they are far apart.
+- **Uniform connectedness:** Things joined by a line or a shared block are read as connected, which can override proximity.
+
+**Quick example.** A supplied problem from the same made-up screen: a class title, its date, its price and a Reserve button all sit with identical gaps between them, so the button reads as another line of information rather than the action.
+
+The reader demonstrates and guides the task before asking for “Proximity, similarity, common region, Prägnanz and uniform connectedness — one sentence each”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Re-group one dense screen using proximity, similarity and common region, and produce a case where the grouping principles predict the wrong reading.
+Cut workshop information into separate paper pieces and regroup it using space first. Compare two groupings without rewriting any words.
 
 
-### Understand the idea · 1
+### Idea 1: Proximity is the strongest grouping signal you control: things…
 
 Section: learn. Stable action: learn-1.
 
 Proximity is the strongest grouping signal you control: things placed near each other are read as belonging together, and the eye applies this before it reads any label. This is why the gap around a group must exceed the gap inside it, and why an evenly spaced screen reads as one undifferentiated mass no matter how carefully you named the sections.
 
 
-### Understand the idea · 2
+### Idea 2: Similarity groups by shared appearance — the same colour, shap…
 
 Section: learn. Stable action: learn-2.
 
 Similarity groups by shared appearance — the same colour, shape, size or weight reads as the same kind of thing. This cuts both ways. Two unrelated elements styled alike will be read as a set, so a decorative badge that happens to look like your status pills will be read as a status. Similarity is also how you can group things that cannot be placed near each other, such as items in different columns of a table.
 
 
-### Understand the idea · 3
+### Idea 3: Common region is often the cleanest tool and the most over-use…
 
 Section: learn. Stable action: learn-3.
 
 Common region is often the cleanest tool and the most over-used: a shared background, a card or an enclosing border binds whatever is inside it, and it overrides proximity. That strength is exactly the risk. Wrapping every group in a card produces a screen of boxes where nothing is subordinate to anything else, and you have spent your strongest grouping signal on your least important distinction. Prefer space first, then a shared background, then a visible border.
 
 
-### Understand the idea · 4
+### Idea 4: These principles describe how perception tends to work; they d…
 
 Section: learn. Stable action: learn-4.
 
 These principles describe how perception tends to work; they do not tell you what the reader should conclude. Grouping can be correct perceptually and wrong for the task — a well-grouped set of options is still wrong if the option someone actually needs is buried in the third group. Treat a grouping decision as a hypothesis about reading order that a five-second look by another person can challenge, and remember that the source pages state these as laws without stating their limits.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A workshop detail screen listed date, time, location, price, instructor and materials as six evenly spaced lines, and readers kept missing the materials note. Regrouping without changing a single word: date and time drew together as one “when” group, location stood alone, price and instructor became a “details” pair, and materials moved into its own region with a shared background. Total height changed by a few pixels; the materials line stopped being missed by the two people asked to find it — which is a signal, not a finding.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2746,6 +2952,40 @@ Open Your work and choose Ready for review. The next lesson turns the spacing yo
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Gestalt grouping, and where it stops working
+What I am trying to do: Cut workshop information into separate paper pieces and regroup it using space first. Compare two groupings without rewriting any words.
+
+Key idea or terms:
+Proximity: Things near each other are read as belonging together. The cheapest and strongest tool you have.
+Common region: Things inside the same enclosed area are read as a set, even when they are far apart.
+Uniform connectedness: Things joined by a line or a shared block are read as connected, which can override proximity.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied problem from the same made-up screen: a class title, its date, its price and a Reserve button all sit with identical gaps between them, so the button reads as another line of information rather than the action.
+
+Activity: Describe the design decision in the supplied case, then ask me what I would notice first and why. Help me connect the visual choice to the task it supports.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Proximity, similarity, common region, Prägnanz and uniform connectedness — one sentence each” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Proximity, similarity, common region, Prägnanz and uniform connectedness — one sentence each”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Proximity, similarity, common region, Prägnanz and uniform connectedness — one sentence each” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Move pieces closer before drawing boxes around them.
@@ -2814,7 +3054,7 @@ Adequate evidence: A written question or task another person could attempt that 
 Repair: Rewrite your test question so it names a goal, not an element: “where would you look to find what to bring?” rather than “can you see the materials box?”. Recheck: The rewritten neutral question.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson turns the spacing you just used by eye into a named scale.
 
@@ -2844,51 +3084,65 @@ Starting route: Bring a sketch and ruler. If missing, draw a fictional class pag
 
 - A named spacing scale with base unit and rule; a before and after gap audit; and a per-group table showing inside gap versus surrounding gap.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Visual design helps people notice, read and understand what matters on a screen. In this lesson, your first small result is: A counted number of distinct gaps and the list of values.
+
+**Words you will use**
+
+- **Spacing scale:** A short list of allowed gaps, each with a use. Anything not on the list is not used.
+- **Base unit:** The smallest step. Everything else is a multiple of it, which is what makes the values look related.
+- **Mapping:** Replacing each gap you measured with a value from your scale, one at a time.
+
+**Quick example.** A supplied measurement from the same made-up screen: inside the class block, title to date is 12 and date to price is 12; the gap between one class block and the next is also 12.
+
+The reader demonstrates and guides the task before asking for “How many distinct vertical gaps are on the screen now?”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Replace ad-hoc spacing with a named spacing scale, apply it to one screen, and show that the space around a group reliably exceeds the space within it.
+Inventory gaps in one screen, choose a small spacing scale and rebuild the layout using named gaps instead of isolated adjustments.
 
 
-### Understand the idea · 1
+### Idea 1: A spacing scale is a small set of allowed distances, usually b…
 
 Section: learn. Stable action: learn-1.
 
 A spacing scale is a small set of allowed distances, usually built by doubling or by multiplying a base unit, so that gaps relate to one another instead of drifting. Four to seven values is typical. The benefit is not tidiness: it is that a distance becomes a decision with a name, so two screens built weeks apart agree, and an engineer implementing your design has a value to reach for rather than a number to guess.
 
 
-### Understand the idea · 2
+### Space is directional and rarely symmetric
 
 Section: learn. Stable action: learn-2.
 
 Space is directional and rarely symmetric. The gap above a heading and the gap below it do different jobs: the space above separates it from the previous section, the space below binds it to the content it introduces. When those two are equal, the heading floats between the sections and belongs to neither — a very common and very fixable defect.
 
 
-### Understand the idea · 3
+### Density is a decision you make per context, not a global preference
 
 Section: learn. Stable action: learn-3.
 
 Density is a decision you make per context, not a global preference. A settings screen someone scans occasionally can afford generous space; a table of bookings a coordinator reads all day cannot, because scrolling costs them more than air gains them. Choose density for the reading situation and record why, rather than applying one comfortable rhythm everywhere.
 
 
-### Understand the idea · 4
+### Space interacts with the reader's text settings
 
 Section: learn. Stable action: learn-4.
 
 Space interacts with the reader's text settings. If gaps are fixed distances while text scales, then at enlarged text the type grows into space that did not grow with it, and groups collide. Expressing at least the vertical rhythm in units that scale with text keeps the relationship you designed, which is the whole point of having a scale.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A booking list used gaps of 6, 8, 10, 12, 13, 16, 18, 20 and 24 px, with no rule. Replacing them with a scale of 4, 8, 16, 24, 40 forced the question of what each gap was for: 8 inside a row between label and value, 16 between rows, 40 between the list and the next section. The screen became one pixel shorter overall and immediately readable as a list of items rather than a wall of text — and the engineer implementing it had five values instead of nine.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3310,6 +3564,40 @@ Open Your work and choose Ready for review. The next lesson arranges this screen
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Spacing as a system
+What I am trying to do: Inventory gaps in one screen, choose a small spacing scale and rebuild the layout using named gaps instead of isolated adjustments.
+
+Key idea or terms:
+Spacing scale: A short list of allowed gaps, each with a use. Anything not on the list is not used.
+Base unit: The smallest step. Everything else is a multiple of it, which is what makes the values look related.
+Mapping: Replacing each gap you measured with a value from your scale, one at a time.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied measurement from the same made-up screen: inside the class block, title to date is 12 and date to price is 12; the gap between one class block and the next is also 12.
+
+Activity: Describe the design decision in the supplied case, then ask me what I would notice first and why. Help me connect the visual choice to the task it supports.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “How many distinct vertical gaps are on the screen now?” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “How many distinct vertical gaps are on the screen now?”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “How many distinct vertical gaps are on the screen now?” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Measure gaps between content edges consistently; do not switch between baselines and bounding boxes.
@@ -3378,7 +3666,7 @@ Adequate evidence: At least one place where density was deliberately tightened o
 Repair: Pick the densest region of your screen and write who reads it, how often and for how long. Then state whether your current density serves that and what you gave up. Recheck: The written density rationale with its stated cost.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson arranges this screen in columns and finds where it has to change.
 
@@ -3408,51 +3696,65 @@ Starting route: Draw the same class details in three paper rectangles: narrow, m
 
 - A stated column, gutter and margin structure; the same content at narrow, medium and wide widths; a change-point table giving each width and the content reason; and the narrow reading order.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Visual design helps people notice, read and understand what matters on a screen. In this lesson, your first small result is: Columns, gutters and margins stated as values.
+
+**Words you will use**
+
+- **Gutter:** The gap between columns. It is what stops two columns of text reading as one.
+- **Margin:** The space from the content to the edge of the screen.
+- **Change point:** A width at which the arrangement has to change because the content stopped working. It is named for what failed, never for a device.
+
+**Quick example.** A supplied narrow layout from the same made-up screen, ordered top to bottom: photograph, class title, instructor biography, date and time, price, what to bring, Reserve button, related classes.
+
+The reader demonstrates and guides the task before asking for “Columns, gutters and margins, in values”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Define a column and gutter structure for one screen, state where the layout changes and why, and show the same content at narrow, medium and wide widths.
+Arrange the same content at narrow, middle and wide widths. Decide where the structure must change because content no longer fits.
 
 
-### Understand the idea · 1
+### Idea 1: A layout structure on screen is a set of columns, the gutters…
 
 Section: learn. Stable action: learn-1.
 
 A layout structure on screen is a set of columns, the gutters between them and the margins outside them, plus rules for what happens when there is more or less room. The columns are a convenience for alignment; the rules for change are the actual design. A twelve-column grid that only ever renders one way has told you nothing about behaviour.
 
 
-### Understand the idea · 2
+### Idea 2: Decide where the layout changes by watching the content, not b…
 
 Section: learn. Stable action: learn-2.
 
 Decide where the layout changes by watching the content, not by listing device names. Phones, tablets and laptops span a continuous range of widths and any list of device sizes is out of date on arrival. Widen the layout gradually until something reads badly — the measure grows too long, a two-column pairing becomes absurdly stretched, a control drifts far from what it controls — and put the change there. Then record what you saw, so the number has a reason attached.
 
 
-### Understand the idea · 3
+### Reflow is a re-ordering problem as much as a resizing one
 
 Section: learn. Stable action: learn-3.
 
 Reflow is a re-ordering problem as much as a resizing one. When two columns become one, something must come first, and the correct order is usually the order of the reader's task rather than the visual order of the wide layout. A sidebar of filters that sits beside a list on a wide screen may need to sit above it, or behind a control, on a narrow one — and burying the primary action below a long secondary block is the most common reflow defect.
 
 
-### Understand the idea · 4
+### Alignment does most of the work a grid gets credit for
 
 Section: learn. Stable action: learn-4.
 
 Alignment does most of the work a grid gets credit for. A consistent left edge shared by heading, body and controls gives a screen structure even with no visible columns, and a single element breaking that edge reads as an error before the reader knows why. When you check a layout, check the edges first; misalignment is more often the cause of a screen feeling wrong than the column count is.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A workshop list was designed at 1280 px as a three-column card grid with filters in a left sidebar. Narrowing it gradually, the cards became unreadably squeezed at around 900 px, so the grid dropped to two columns there; below about 620 px the filters could no longer sit beside the list, so they moved above it as a single collapsed control, and the card grid became one column. Neither number came from a device — both came from the point at which the content stopped reading.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3867,6 +4169,40 @@ Open Your work and choose Ready for review. The next lesson turns every decision
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Grid and layout structure that reflows
+What I am trying to do: Arrange the same content at narrow, middle and wide widths. Decide where the structure must change because content no longer fits.
+
+Key idea or terms:
+Gutter: The gap between columns. It is what stops two columns of text reading as one.
+Margin: The space from the content to the edge of the screen.
+Change point: A width at which the arrangement has to change because the content stopped working. It is named for what failed, never for a device.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied narrow layout from the same made-up screen, ordered top to bottom: photograph, class title, instructor biography, date and time, price, what to bring, Reserve button, related classes.
+
+Activity: Describe the design decision in the supplied case, then ask me what I would notice first and why. Help me connect the visual choice to the task it supports.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Columns, gutters and margins, in values” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Columns, gutters and margins, in values”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Columns, gutters and margins, in values” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Use the spacing scale, but let content failure explain the change point.
@@ -3935,7 +4271,7 @@ Adequate evidence: Marked-up renderings at all three widths showing the shared e
 Repair: Draw a vertical line down the intended left edge on each rendering and mark every element that does not meet it. Fix or justify each mark. Recheck: The three marked-up renderings.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson turns every decision from this module into a named token sheet.
 
@@ -3965,51 +4301,65 @@ Starting route: Gather your type, colour and spacing choices. If missing, use th
 
 - A token sheet of role-named type, colour and spacing tokens with values, usage notes and prohibitions; a permitted-pairing contrast check; and the list of gaps found by the build-it test.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Visual design helps people notice, read and understand what matters on a screen. In this lesson, your first small result is: Every type, colour and spacing decision written as a named token with a value and a role.
+
+**Words you will use**
+
+- **Token:** A named decision: a name, a value and a role. The name is what other work refers to.
+- **Role name:** A name describing the job, such as text-secondary, rather than the appearance, such as light-grey.
+- **Prohibition:** Where a token must not be used. It prevents the most common misuse better than any amount of description.
+
+**Quick example.** A supplied sheet from the same made-up project. It permits text-secondary on surface-raised, but the contrast table from lesson 4 has no row for that pair: it measured text-secondary on surface-base only.
+
+The reader demonstrates and guides the task before asking for “Token 1 · name, value, role”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Write a single token sheet naming every type, colour and spacing decision from this module, and have it reviewed by finding at least one decision it fails to specify.
+Combine your type, color and spacing decisions into a token sheet that another person could use without asking which value you meant.
 
 
-### Understand the idea · 1
+### A token is a named decision
 
 Section: learn. Stable action: learn-1.
 
 A token is a named decision. Not “#1B1B1B” but “colour-text-primary, #1B1B1B, used for body copy and headings on light surfaces”. The name carries the intent, which is what makes the value changeable later: when you darken your body text, everything that means body text follows, and nothing that merely happened to share the hex value comes with it.
 
 
-### Understand the idea · 2
+### Name tokens by role, not by appearance
 
 Section: learn. Stable action: learn-2.
 
 Name tokens by role, not by appearance. “colour-brand-blue” fails the moment the brand colour becomes green, and “spacing-16” fails the moment you decide inside-group gaps should be 12. Role names — text-primary, surface-raised, space-inset-tight — survive the change of value and tell a reader what the token is for, which is the only reliable way someone else picks the right one.
 
 
-### Understand the idea · 3
+### A sheet that lists values without rules is only half a handoff
 
 Section: learn. Stable action: learn-3.
 
 A sheet that lists values without rules is only half a handoff. The genuinely useful part is the usage note: which token to reach for in which situation, what pairs are permitted, and what is forbidden. “Never place text-secondary on surface-raised; it fails contrast” prevents a whole class of defect that a table of hex values cannot.
 
 
-### Understand the idea · 4
+### Tokens are also where your accessibility work becomes durable
 
 Section: learn. Stable action: learn-4.
 
 Tokens are also where your accessibility work becomes durable. If your contrast table lives in a document nobody opens, the first person to adjust a colour will break it silently. If the permitted pairings are stated on the sheet beside the values, the constraint travels with the decision — and you can re-run the check by inspecting the sheet rather than the whole screen.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A first sheet listed twenty-two colours by hex with no names. Rewritten as nine role-named tokens with usage notes, it exposed three problems immediately: two hexes were doing the same job and could merge, one grey had no role at all and was deleted, and the pairing note revealed that the secondary text colour had never been checked against the raised surface — where it measured 3.1:1 and failed. The sheet found a defect the screen review had missed.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4471,6 +4821,40 @@ Open Your work and choose Ready for review. The next lesson builds one component
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: A token sheet somebody else could build from
+What I am trying to do: Combine your type, color and spacing decisions into a token sheet that another person could use without asking which value you meant.
+
+Key idea or terms:
+Token: A named decision: a name, a value and a role. The name is what other work refers to.
+Role name: A name describing the job, such as text-secondary, rather than the appearance, such as light-grey.
+Prohibition: Where a token must not be used. It prevents the most common misuse better than any amount of description.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied sheet from the same made-up project. It permits text-secondary on surface-raised, but the contrast table from lesson 4 has no row for that pair: it measured text-secondary on surface-base only.
+
+Activity: Describe the design decision in the supplied case, then ask me what I would notice first and why. Help me connect the visual choice to the task it supports.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Token 1 · name, value, role” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Token 1 · name, value, role”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Token 1 · name, value, role” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Name a purpose such as text-muted instead of a particular location such as left-gray.
@@ -4539,7 +4923,7 @@ Adequate evidence: A component rebuilt from the sheet alone and a list of decisi
 Repair: Rebuild one component using only the sheet, writing down each moment you had to decide something yourself, then add each of those to the sheet. Recheck: The rebuilt component, the gap list and the updated sheet.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson builds one component in all of its states using only this sheet.
 
@@ -4569,51 +4953,65 @@ Starting route: Choose a Reserve button or reservation field and sketch six stat
 
 - One component specified in all its states, a state table giving state, triggering condition and tokens used, the new tokens added to the sheet, and the disabled-state explanation text.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Visual design helps people notice, read and understand what matters on a screen. In this lesson, your first small result is: One component and every state it really has, each with its condition.
+
+**Words you will use**
+
+- **State:** How the component looks and behaves under one condition. The condition is part of the specification.
+- **Focus:** Where the keyboard currently is. It is not the same as hover, and it must be visible.
+- **Token:** A named entry on your sheet standing for one value, used everywhere that value is needed.
+
+**Quick example.** A supplied focus treatment from the same made-up project: on focus the button’s background lightens slightly, which is also exactly what happens on hover.
+
+The reader demonstrates and guides the task before asking for “The component you chose, and why your screen needs it”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Build one component in all of its states using only your token sheet, and document each state with the tokens it uses and the condition that produces it.
+Specify one component across default, hover, focus, disabled and loading states, using the token sheet rather than introducing unexplained values.
 
 
-### Understand the idea · 1
+### Idea 1: A component is defined by its states, and most designs specify…
 
 Section: learn. Stable action: learn-1.
 
 A component is defined by its states, and most designs specify only one of them. A single control typically needs a default, a hover or pressed appearance where a pointer exists, a keyboard focus appearance, a disabled appearance, and often a loading appearance while something is happening. Each is a real thing a reader will see, and each needs tokens or it will be invented later by whoever implements it.
 
 
-### Understand the idea · 2
+### Keyboard focus is not optional and is not the same as hover
 
 Section: learn. Stable action: learn-2.
 
 Keyboard focus is not optional and is not the same as hover. Hover exists only where there is a pointer; focus is how a person navigating by keyboard knows where they are, and removing the focus indicator because it looks untidy makes the interface unusable for them. Design a focus appearance deliberately — usually a visible outline with its own token — rather than accepting or deleting a default.
 
 
-### Understand the idea · 3
+### A disabled state must still communicate
 
 Section: learn. Stable action: learn-3.
 
 A disabled state must still communicate. The contrast exception means a disabled control is not held to the text ratio, but the reader still has to understand what the control is and, ideally, why it is unavailable. A disabled button with no explanation produces a reader who thinks the interface is broken, which is a comprehension failure even where it is not a conformance failure.
 
 
-### Understand the idea · 4
+### This is a foundations pass, not the complete component repertoire
 
 Section: learn. Stable action: learn-4.
 
 This is a foundations pass, not the complete component repertoire. You are proving that your tokens survive contact with one real component's states. Navigation, modals, tables, charts, dashboards and notifications, and the full interaction behaviour around them, belong to the interface craft and interaction modules later in the course; do not describe this lesson's output as a component library.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A primary button was specified once, in default. Building its states from the token sheet exposed four undocumented decisions: focus had no token at all, hover reused a colour that failed against the raised surface, disabled had been drawn at 40 per cent opacity so its label became unreadable, and there was no loading appearance despite the booking action taking two seconds. Four states, four gaps — none visible in the original screen.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5059,6 +5457,40 @@ Open Your work and choose Ready for review. The last lesson rebuilds a whole Mod
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Applying the system to one component set
+What I am trying to do: Specify one component across default, hover, focus, disabled and loading states, using the token sheet rather than introducing unexplained values.
+
+Key idea or terms:
+State: How the component looks and behaves under one condition. The condition is part of the specification.
+Focus: Where the keyboard currently is. It is not the same as hover, and it must be visible.
+Token: A named entry on your sheet standing for one value, used everywhere that value is needed.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied focus treatment from the same made-up project: on focus the button’s background lightens slightly, which is also exactly what happens on hover.
+
+Activity: Describe the design decision in the supplied case, then ask me what I would notice first and why. Help me connect the visual choice to the task it supports.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The component you chose, and why your screen needs it” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The component you chose, and why your screen needs it”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The component you chose, and why your screen needs it” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Draw the states in a row so changes can be compared directly.
@@ -5127,7 +5559,7 @@ Adequate evidence: A disabled specification with its own tokens plus the words t
 Repair: Replace any blanket opacity with explicit tokens for the disabled label and surface, then write one sentence the reader would see explaining why the control is unavailable. Recheck: The disabled specification and its explanatory sentence.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The last lesson rebuilds a whole Module 1 screen from the sheet and compares the two honestly.
 
@@ -5157,51 +5589,65 @@ Starting route: Use your original class screen and its token sheet. If missing, 
 
 - The rebuilt screen, a log of every value not covered by the token sheet, a heuristic review of both versions, the three-column change table, and the list of issues visual work cannot fix with the module that addresses each.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Visual design helps people notice, read and understand what matters on a screen. In this lesson, your first small result is: The rebuilt screen, and every place the sheet could not carry you.
+
+**Words you will use**
+
+- **Token sheet:** The list of named values you built in lesson 8: every colour, size and space the system allows.
+- **Gap:** Something the screen needed and the sheet does not contain. It is what the rebuild is for, not a sign the rebuild went badly.
+- **Heuristic:** A rule of thumb from experience. It identifies a risk worth checking; it cannot report that a person failed.
+
+**Quick example.** Three supplied sentences from the same made-up write-up. A: “Every text element now meets its contrast threshold, measured with the calculator.” B: “The line length is now 68 characters, counted over three lines.” C: “The redesign makes the screen easier to use.”
+
+The reader demonstrates and guides the task before asking for “Which Module 1 screen you rebuilt”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Rebuild one complete Module 1 screen using only your token sheet and component work, then critique both versions against usability heuristics and separate craft improvements from claims about outcomes.
+Rebuild your original screen with the system you developed, then defend the changes using your saved comparisons and measurements.
 
 
-### Understand the idea · 1
+### Rebuilding from a system is a test of the system, not of your taste
 
 Section: learn. Stable action: learn-1.
 
 Rebuilding from a system is a test of the system, not of your taste. Every point where you reach past the token sheet for a value is a defect in the sheet, and the count of those moments is the most useful number this lesson produces. A rebuild that required no additions probably means the screen was too similar to the one the sheet was derived from.
 
 
-### Understand the idea · 2
+### Idea 2: Heuristic critique and evidence are different instruments and…
 
 Section: learn. Stable action: learn-2.
 
 Heuristic critique and evidence are different instruments and produce different sentences. A heuristic review says “this violates a recognised principle in the following specific way”, which is an expert judgement you can act on cheaply. It cannot say “this is better for readers”, because no reader was involved. Keep the two kinds of statement in separate columns so a stakeholder cannot mistake one for the other.
 
 
-### Understand the idea · 3
+### Critique your own work by re-describing it, not by defending it
 
 Section: learn. Stable action: learn-3.
 
 Critique your own work by re-describing it, not by defending it. Write what each change was intended to achieve, then what a reader would actually experience differently, then what you cannot know. The third column is the one that keeps the write-up honest and the one that most portfolios omit entirely.
 
 
-### Understand the idea · 4
+### Visual craft has real limits worth naming
 
 Section: learn. Stable action: learn-4.
 
 Visual craft has real limits worth naming. A refreshed screen can improve legibility, grouping and consistency, and still fail because the underlying flow is wrong, the content is unclear or the task itself was misunderstood. Those are the problems the research and flow modules address, and this module's improvements do not touch them.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A rebuilt workshop detail screen needed six values not on the token sheet — a focus colour on a dark surface, two spacing values for a dense metadata row, and three type sizes for a table. The heuristic review then found four issues, only one of which the visual refresh had addressed: the error message still appeared far from the field that caused it, which is a visibility-of-status problem no palette can fix. The write-up recorded one improvement, three unresolved issues and zero measured outcomes.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5590,6 +6036,40 @@ Open Your work and choose Ready for review. This closes the visual foundations m
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Rebuild and critique: what the system changed
+What I am trying to do: Rebuild your original screen with the system you developed, then defend the changes using your saved comparisons and measurements.
+
+Key idea or terms:
+Token sheet: The list of named values you built in lesson 8: every colour, size and space the system allows.
+Gap: Something the screen needed and the sheet does not contain. It is what the rebuild is for, not a sign the rebuild went badly.
+Heuristic: A rule of thumb from experience. It identifies a risk worth checking; it cannot report that a person failed.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Three supplied sentences from the same made-up write-up. A: “Every text element now meets its contrast threshold, measured with the calculator.” B: “The line length is now 68 characters, counted over three lines.” C: “The redesign makes the screen easier to use.”
+
+Activity: Describe the design decision in the supplied case, then ask me what I would notice first and why. Help me connect the visual choice to the task it supports.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Which Module 1 screen you rebuilt” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Which Module 1 screen you rebuilt”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Which Module 1 screen you rebuilt” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Choose which evidence best supports each decision; do not repeat every exercise in the presentation.
@@ -5658,7 +6138,7 @@ Adequate evidence: A list of review issues visual work cannot resolve, each mapp
 Repair: Take your heuristic issues and mark each as fixable by visual craft, by flow or structure, or by research. Map the second and third groups to the modules that cover them. Recheck: The mapped issue list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This closes the visual foundations module; the reasoning modules build on the same screens.
 

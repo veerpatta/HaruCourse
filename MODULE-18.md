@@ -23,58 +23,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Three named people who have agreed to take part
 - A scope in weeks and a written abandonment condition
 
-### Start with a clear task
+### Start here: in everyday words
+
+An independent project brings the research, design, testing and decision trail together around one honest problem. In this lesson, your first small result is: Three candidate domains you have not used, each with somebody you know and a problem you have heard them complain about.
+
+**Words you will use**
+
+- **A problem somebody already has:** One you have heard complained about. It is far easier to get access to, and it is far more likely to be real.
+- **A new domain:** Different from your earlier projects, so the portfolio shows range rather than the same setting three times.
+- **The access gate:** Three agreements before committing. It is the decision most independent projects get wrong, and it is made first here for that reason.
+
+**Quick example.** Made-up example. Choosing a third project, and choosing the interesting one. A domain I found genuinely interesting, where I knew nobody, on a problem I had read about rather than heard about.
+
+The reader demonstrates and guides the task before asking for “Domain 1 · the domain, who you know there, and the problem you have heard somebody complain about”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Choose a domain, a problem and a scope for the third project, and prove you have access to at least three people before committing to it.
 
 
-### Understand the idea · 1
+### Choose a domain you have not used for practice, to widen the portfolio
 
 Section: learn. Stable action: learn-1.
 
 Choose a domain you have not used for practice, to widen the portfolio.
 
 
-### Understand the idea · 2
+### Access first: name three people who will talk to you before you commit
 
 Section: learn. Stable action: learn-2.
 
 Access first: name three people who will talk to you before you commit.
 
 
-### Understand the idea · 3
+### Prefer a problem someone already has to one you find interesting
 
 Section: learn. Stable action: learn-3.
 
 Prefer a problem someone already has to one you find interesting.
 
 
-### Understand the idea · 4
+### Scope to the appetite you actually have, in weeks
 
 Section: learn. Stable action: learn-4.
 
 Scope to the appetite you actually have, in weeks.
 
 
-### Understand the idea · 5
+### Write what would make you abandon it
 
 Section: learn. Stable action: learn-5.
 
 Write what would make you abandon it.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three candidate domains were considered: a physiotherapy clinic's appointment reminders, a tuition centre's parent communication, and a repair shop's job tracking. The third was chosen because the owner had already complained about the problem twice and agreed to two conversations, and two customers agreed through him. The problem: nobody can tell a customer when a repair will be ready, so the shop is interrupted by calls all day. Scope: four weeks of evenings. Abandonment condition: if the shop's owner becomes unavailable for two consecutive weeks, stop and record it.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -622,6 +636,40 @@ Open Your work and choose Ready for review. The next lesson writes the research 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Choosing a project you can actually finish
+What I am trying to do: Choose a domain, a problem and a scope for the third project, and prove you have access to at least three people before committing to it.
+
+Key idea or terms:
+A problem somebody already has: One you have heard complained about. It is far easier to get access to, and it is far more likely to be real.
+A new domain: Different from your earlier projects, so the portfolio shows range rather than the same setting three times.
+The access gate: Three agreements before committing. It is the decision most independent projects get wrong, and it is made first here for that reason.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Choosing a third project, and choosing the interesting one. A domain I found genuinely interesting, where I knew nobody, on a problem I had read about rather than heard about.
+
+Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Domain 1 · the domain, who you know there, and the problem you have heard somebody complain about” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Domain 1 · the domain, who you know there, and the problem you have heard somebody complain about”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Domain 1 · the domain, who you know there, and the problem you have heard somebody complain about” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Choose a context whose constraints differ from your earlier projects.
@@ -691,7 +739,7 @@ Adequate evidence: A stated number of weeks and a condition that would stop the 
 Repair: Write the weeks you can genuinely give and what would end the project. Recheck: The scope statement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes the research plan for the access you actually have.
 
@@ -729,58 +777,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - An adapted consent introduction and data plan
 - Written exclusions for the whole study
 
-### Start with a clear task
+### Start here: in everyday words
+
+An independent project brings the research, design, testing and decision trail together around one honest problem. In this lesson, your first small result is: Three research questions specific to this domain, ranked by the decision each would change.
+
+**Words you will use**
+
+- **From this domain:** Generated from what this person told you, rather than adapted from your last project. Adapted questions produce a study about your previous domain.
+- **Ranked by decision:** Which answer would change what you do. It is the same test Module 17 used for deciding under uncertainty.
+- **Planning for real access:** Matching methods to the three people who said yes and the time they offered. A plan for the access you would like produces a study that does not happen.
+
+**Quick example.** Made-up example. Writing research questions for a second project, and adapting the first project’s. Opened the Module 5 plan and changed the nouns. Class booking became repair drop-off, attendee became customer, and the three questions came across intact.
+
+The reader demonstrates and guides the task before asking for “Three research questions specific to this domain”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Produce the research plan for this project — questions, methods, recruitment, consent, data handling — reusing your m05 artefacts and adapting them to this domain.
 
 
-### Understand the idea · 1
+### Reuse your own artefacts; adapt rather than rewriting from nothing
 
 Section: learn. Stable action: learn-1.
 
 Reuse your own artefacts; adapt rather than rewriting from nothing.
 
 
-### Understand the idea · 2
+### The questions must come from this domain, not from the last one
 
 Section: learn. Stable action: learn-2.
 
 The questions must come from this domain, not from the last one.
 
 
-### Understand the idea · 3
+### Consent and data handling transfer directly and must still be adapted
 
 Section: learn. Stable action: learn-3.
 
 Consent and data handling transfer directly and must still be adapted.
 
 
-### Understand the idea · 4
+### Plan for the access you have, not the access you would like
 
 Section: learn. Stable action: learn-4.
 
 Plan for the access you have, not the access you would like.
 
 
-### Understand the idea · 5
+### Write the exclusions now, as before
 
 Section: learn. Stable action: learn-5.
 
 Write the exclusions now, as before.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The plan: three questions from the shop's problem, including what a customer does while waiting for news about a repair. Methods: two interviews with the owner, an observation of an afternoon in the shop, and two short conversations with customers collecting items. Recruitment: through the owner, with the bias recorded. Consent: the m05 script adapted for a workshop, including that no photographs would include other customers' items. Data: notes on paper, digitised the same evening, no recordings in the shop. Exclusions written: nothing about customers who never come back, and nothing about how common the problem is across shops.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1327,6 +1389,40 @@ Open Your work and choose Ready for review. The next lesson runs the sessions wi
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: The research plan, run properly once more
+What I am trying to do: Produce the research plan for this project — questions, methods, recruitment, consent, data handling — reusing your m05 artefacts and adapting them to this domain.
+
+Key idea or terms:
+From this domain: Generated from what this person told you, rather than adapted from your last project. Adapted questions produce a study about your previous domain.
+Ranked by decision: Which answer would change what you do. It is the same test Module 17 used for deciding under uncertainty.
+Planning for real access: Matching methods to the three people who said yes and the time they offered. A plan for the access you would like produces a study that does not happen.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing research questions for a second project, and adapting the first project’s. Opened the Module 5 plan and changed the nouns. Class booking became repair drop-off, attendee became customer, and the three questions came across intact.
+
+Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Three research questions specific to this domain” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Three research questions specific to this domain”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Three research questions specific to this domain” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Re-read your notes from the first conversation and write the questions from them.
@@ -1396,7 +1492,7 @@ Adequate evidence: A written list of what the study will not establish, includin
 Repair: Write who this route cannot reach and what claims that rules out. Recheck: The exclusions.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson runs the sessions with nobody structuring them for you.
 
@@ -1434,58 +1530,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Every finding marked evidenced or assumed
 - A written note of what you would do differently
 
-### Start with a clear task
+### Start here: in everyday words
+
+An independent project brings the research, design, testing and decision trail together around one honest problem. In this lesson, your first small result is: The planned sessions run, with every deviation recorded as it happened.
+
+**Words you will use**
+
+- **Deviation:** Anything that differed from the plan: a person present, a session cut short, a different setting. Recorded, it is data about the study; hidden, it is contamination.
+- **Unsupervised:** The condition this will always be done in. Nobody is checking whether you wrote the deviation down.
+- **Within the hour:** The rule from Module 5. What is written the next day is a memory of a memory, and it is smoother and less useful.
+
+**Quick example.** Made-up example. Synthesising a repair-shop study, and tidying the disagreement away. That customers want repairs done faster, which is why he is under pressure. He said it twice, with feeling.
+
+The reader demonstrates and guides the task before asking for “What you ran, with dates”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Run the planned research, synthesise it into findings with counts and contradictions, and record what you would do differently.
 
 
-### Understand the idea · 1
+### Run what you planned; record deviations rather than hiding them
 
 Section: learn. Stable action: learn-1.
 
 Run what you planned; record deviations rather than hiding them.
 
 
-### Understand the idea · 2
+### Write up within the hour, as before
 
 Section: learn. Stable action: learn-2.
 
 Write up within the hour, as before.
 
 
-### Understand the idea · 3
+### Synthesise by participant counts, keeping contradictions
 
 Section: learn. Stable action: learn-3.
 
 Synthesise by participant counts, keeping contradictions.
 
 
-### Understand the idea · 4
+### Mark every finding evidenced or assumed
 
 Section: learn. Stable action: learn-4.
 
 Mark every finding evidenced or assumed.
 
 
-### Understand the idea · 5
+### Record what you would do differently while it is fresh
 
 Section: learn. Stable action: learn-5.
 
 Record what you would do differently while it is fresh.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Two interviews, one observation and two short conversations were run over eleven days. Three deviations were recorded: one interview happened with the owner's son present, which changed what was said about money; the observation was cut short by a delivery; and one customer conversation happened by phone rather than in person. Six findings emerged, four evidenced and two assumed. The strongest: three of three customers had rung the shop to ask about progress, and the owner estimated he answered such calls between six and ten times a day, which he had never counted. The contradiction kept: the owner believed customers wanted speed; the customers described wanting certainty.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2017,6 +2127,40 @@ Open Your work and choose Ready for review. The next lesson decides what to buil
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Fieldwork and synthesis, unsupervised
+What I am trying to do: Run the planned research, synthesise it into findings with counts and contradictions, and record what you would do differently.
+
+Key idea or terms:
+Deviation: Anything that differed from the plan: a person present, a session cut short, a different setting. Recorded, it is data about the study; hidden, it is contamination.
+Unsupervised: The condition this will always be done in. Nobody is checking whether you wrote the deviation down.
+Within the hour: The rule from Module 5. What is written the next day is a memory of a memory, and it is smoother and less useful.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Synthesising a repair-shop study, and tidying the disagreement away. That customers want repairs done faster, which is why he is under pressure. He said it twice, with feeling.
+
+Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What you ran, with dates” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What you ran, with dates”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What you ran, with dates” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Go back through the sessions and write down everything that differed from the plan.
@@ -2086,7 +2230,7 @@ Adequate evidence: Each finding marked evidenced or assumed, with open questions
 Repair: Mark each finding and move the unsupported ones to open questions. Recheck: The marked findings.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson decides what to build from this, and what not to.
 
@@ -2124,58 +2268,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A scope that preserves quality and cuts features
 - A not-building list with reasons, and the frame checked with a participant
 
-### Start with a clear task
+### Start here: in everyday words
+
+An independent project brings the research, design, testing and decision trail together around one honest problem. In this lesson, your first small result is: The candidate problems listed, and one chosen with the counts behind the choice.
+
+**Words you will use**
+
+- **One problem:** A project of this size supports one. Three framed problems produce three sketches and no depth.
+- **Choosing with counts:** Using the participant counts from the synthesis rather than which problem you find most interesting to design for.
+- **Appetite first:** The rule from Module 14. Deciding the weeks before looking at the scope is what stops the scope deciding the weeks.
+
+**Quick example.** Made-up example. Scoping a repair-shop status page to three weeks, and keeping everything. A status page, notifications when the status changes, a quote record, and a simple account so people could see their history. Four features, all sensible.
+
+The reader demonstrates and guides the task before asking for “The candidate problems from your findings”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Turn the findings into one framed problem, an appetite, and a scope with an explicit list of what you are not building and why.
 
 
-### Understand the idea · 1
+### Frame one problem, not three; a project this size supports one
 
 Section: learn. Stable action: learn-1.
 
 Frame one problem, not three; a project this size supports one.
 
 
-### Understand the idea · 2
+### Set the appetite before scoping, as in m17
 
 Section: learn. Stable action: learn-2.
 
 Set the appetite before scoping, as in m17.
 
 
-### Understand the idea · 3
+### Cut by feature, never by quality
 
 Section: learn. Stable action: learn-3.
 
 Cut by feature, never by quality.
 
 
-### Understand the idea · 4
+### List what you are not building and why
 
 Section: learn. Stable action: learn-4.
 
 List what you are not building and why.
 
 
-### Understand the idea · 5
+### Check the frame against the person who described the problem
 
 Section: learn. Stable action: learn-5.
 
 Check the frame against the person who described the problem.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Findings pointed at three candidate problems: customers cannot tell when a repair will be ready; the owner cannot see which jobs are waiting on parts; and quotes are given verbally and disputed. The first was chosen because it was the one all five participants raised and the one generating the daily interruptions. The appetite: three weeks of evenings. The scope: a status page a customer can reach without an account, with its states, and a way for the owner to update it in under thirty seconds. Not building: notifications, quote records, and any account system — each with the reason recorded. The frame was read back to the owner, who corrected one detail: it is not the waiting that annoys people, it is being told twice that it will be ready tomorrow.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2707,6 +2865,40 @@ Open Your work and choose Ready for review. The next lesson designs the thing, u
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Decide what to build, and what not to
+What I am trying to do: Turn the findings into one framed problem, an appetite, and a scope with an explicit list of what you are not building and why.
+
+Key idea or terms:
+One problem: A project of this size supports one. Three framed problems produce three sketches and no depth.
+Choosing with counts: Using the participant counts from the synthesis rather than which problem you find most interesting to design for.
+Appetite first: The rule from Module 14. Deciding the weeks before looking at the scope is what stops the scope deciding the weeks.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Scoping a repair-shop status page to three weeks, and keeping everything. A status page, notifications when the status changes, a quote record, and a simple account so people could see their history. Four features, all sensible.
+
+Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The candidate problems from your findings” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The candidate problems from your findings”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The candidate problems from your findings” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Choose the problem the most participants raised and write why.
@@ -2776,7 +2968,7 @@ Adequate evidence: A recorded conversation with the person who described the pro
 Repair: Read the frame back to them and write down what they say. Recheck: The check record.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson designs the thing, using everything you have built so far.
 
@@ -2814,58 +3006,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - An exception table appropriate to the domain
 - A list of methods skipped, with reasons
 
-### Start with a clear task
+### Start here: in everyday words
+
+An independent project brings the research, design, testing and decision trail together around one honest problem. In this lesson, your first small result is: Structure and flow for the chosen problem, including the entry points you did not design for.
+
+**Words you will use**
+
+- **Entry point:** How somebody actually arrives. In a domain like this it is often a paper ticket or a half-remembered address rather than a link you control.
+- **Structure before interface:** The order from Modules 6 and 7. It survives a small project because it is what stops the interface deciding the information.
+- **Exception table:** The list of everything that can go wrong, from Module 7. A small project has fewer rows and not none.
+
+**Quick example.** Made-up example. Writing the exception table for a repair-shop page, and writing it from the screen. Designed the page first, then went through it looking for what could go wrong. Four rows: no job found, no date yet, page fails to load, and job already collected.
+
+The reader demonstrates and guides the task before asking for “What a person needs to find, how they reach it, and the flow including entries and exits”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Take the chosen problem through structure, flow, states and interface, reusing your own system and recording every place it did not fit.
 
 
-### Understand the idea · 1
+### Reuse your system; record where it does not fit this domain
 
 Section: learn. Stable action: learn-1.
 
 Reuse your system; record where it does not fit this domain.
 
 
-### Understand the idea · 2
+### Structure, flow and states before interface, as before
 
 Section: learn. Stable action: learn-2.
 
 Structure, flow and states before interface, as before.
 
 
-### Understand the idea · 3
+### The exception table is not optional because the project is small
 
 Section: learn. Stable action: learn-3.
 
 The exception table is not optional because the project is small.
 
 
-### Understand the idea · 4
+### Idea 4: Keep the accessibility work; it is the first thing dropped und…
 
 Section: learn. Stable action: learn-4.
 
 Keep the accessibility work; it is the first thing dropped under time pressure.
 
 
-### Understand the idea · 5
+### Record which methods you skipped and what that cost
 
 Section: learn. Stable action: learn-5.
 
 Record which methods you skipped and what that cost.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The status page reused the system's type, spacing and card component, and did not fit in two places: there was no component for a state that changes over time, and the status colours needed a fifth semantic value the token sheet lacked. Both were recorded, and one was added to the system with a version bump. Structure was three items deep and no card sort was run, with the reason recorded. The exception table had eleven rows including a job number that does not exist, information more than a day old, and a customer arriving before the update. The keyboard pass was run; the screen-reader pass was not, and that was recorded rather than implied.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3408,6 +3614,40 @@ Open Your work and choose Ready for review. The next lesson builds it, tests it 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Design it, using everything you have
+What I am trying to do: Take the chosen problem through structure, flow, states and interface, reusing your own system and recording every place it did not fit.
+
+Key idea or terms:
+Entry point: How somebody actually arrives. In a domain like this it is often a paper ticket or a half-remembered address rather than a link you control.
+Structure before interface: The order from Modules 6 and 7. It survives a small project because it is what stops the interface deciding the information.
+Exception table: The list of everything that can go wrong, from Module 7. A small project has fewer rows and not none.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing the exception table for a repair-shop page, and writing it from the screen. Designed the page first, then went through it looking for what could go wrong. Four rows: no job found, no date yet, page fails to load, and job already collected.
+
+Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What a person needs to find, how they reach it, and the flow including entries and exits” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What a person needs to find, how they reach it, and the flow including entries and exits”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What a person needs to find, how they reach it, and the flow including entries and exits” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Draw the flow now and check the screens against it, changing what disagrees.
@@ -3477,7 +3717,7 @@ Adequate evidence: A list of what you did not do, with defensibility marked.
 Repair: Write what you did not do and be honest about which omissions were time rather than judgement. Recheck: The skip list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson builds it, tests it with somebody who has never heard of it, and repairs one thing.
 
@@ -3515,58 +3755,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - One repair with a prediction written first, and a re-test
 - Conditions recorded for every session
 
-### Start with a clear task
+### Start here: in everyday words
+
+An independent project brings the research, design, testing and decision trail together around one honest problem. In this lesson, your first small result is: The smallest thing that answers the open questions, built, with one deliberate failure case.
+
+**Words you will use**
+
+- **Lowest fidelity that answers it:** The rule from Module 10. Build what the question needs rather than what would look best.
+- **A deliberate failure case:** One built in on purpose, so you can watch somebody meet it. Waiting for failures to occur finds only the common ones.
+- **Outside the research:** Somebody who has never heard of the project. They bring no framing, which is exactly what your participants cannot do.
+
+**Quick example.** Made-up example. Building a prototype for a repair-shop project, and building the finished thing. The page properly: real styling from the system, every state, the owner’s update view, and the customer view, all working.
+
+The reader demonstrates and guides the task before asking for “What you built, and which open questions it answers”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Build a working prototype, test it with at least three people including one who was not part of the research, repair the highest-harm problem and re-test it.
 
 
-### Understand the idea · 1
+### Build what the question needs, at the lowest fidelity that answers it
 
 Section: learn. Stable action: learn-1.
 
 Build what the question needs, at the lowest fidelity that answers it.
 
 
-### Understand the idea · 2
+### Test with someone outside the research, who brings no context
 
 Section: learn. Stable action: learn-2.
 
 Test with someone outside the research, who brings no context.
 
 
-### Understand the idea · 3
+### Rank by harm, repair one thing, predict, re-test
 
 Section: learn. Stable action: learn-3.
 
 Rank by harm, repair one thing, predict, re-test.
 
 
-### Understand the idea · 4
+### Report the failed repair as readily as the successful one
 
 Section: learn. Stable action: learn-4.
 
 Report the failed repair as readily as the successful one.
 
 
-### Understand the idea · 5
+### Record the conditions: device, connection, setting
 
 Section: learn. Stable action: learn-5.
 
 Record the conditions: device, connection, setting.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A running page was built with real timing and a deliberate stale-data case. Three tests: the shop owner, one customer from the research, and one person who had never heard of the project. The last one produced the finding: she read the status as a promise rather than an estimate and said she would arrive at that time, which is exactly the behaviour that generates the second phone call. The repair changed the wording from a time to a window and stated when it was last updated. Prediction written first: nobody should describe it as a promise. Re-tested with two new people; one still did, and that was reported.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4093,6 +4347,40 @@ Open Your work and choose Ready for review. The next lesson brings in somebody w
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Build it, test it, repair it
+What I am trying to do: Build a working prototype, test it with at least three people including one who was not part of the research, repair the highest-harm problem and re-test it.
+
+Key idea or terms:
+Lowest fidelity that answers it: The rule from Module 10. Build what the question needs rather than what would look best.
+A deliberate failure case: One built in on purpose, so you can watch somebody meet it. Waiting for failures to occur finds only the common ones.
+Outside the research: Somebody who has never heard of the project. They bring no framing, which is exactly what your participants cannot do.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Building a prototype for a repair-shop project, and building the finished thing. The page properly: real styling from the system, every state, the owner’s update view, and the customer view, all working.
+
+Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What you built, and which open questions it answers” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What you built, and which open questions it answers”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What you built, and which open questions it answers” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Check each open question against what the prototype can show; add what is missing.
@@ -4162,7 +4450,7 @@ Adequate evidence: Device, connection and setting noted per session.
 Repair: Add the conditions to each record; without them the results cannot be weighed. Recheck: The condition records.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson brings in somebody who will disagree with you.
 
@@ -4200,58 +4488,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A record of changes made with reasons
 - A record of critique defended, with reasons
 
-### Start with a clear task
+### Start here: in everyday words
+
+An independent project brings the research, design, testing and decision trail together around one honest problem. In this lesson, your first small result is: The problem, constraint and appetite in three sentences, with what you are least sure of.
+
+**Words you will use**
+
+- **Critique against intent:** Testing whether the work does what you said it would. Without the intent stated, a reviewer can only tell you what they would have preferred.
+- **What you are least sure of:** Said aloud at the start. It is the fastest route to a useful hour and the hardest sentence to say.
+- **Different vantage points:** Somebody who builds things and somebody who runs a small business see different problems. Two designers see the same ones you do.
+
+**Quick example.** Made-up example. Choosing critique reviewers for a repair-shop project, and choosing helpful ones. Two people I had worked with before, both of whom design things, both of whom I get on with.
+
+The reader demonstrates and guides the task before asking for “The problem, the constraint and the appetite, in three sentences”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Have someone outside the project critique the work against your own stated intent, and record what you changed, what you defended and why.
 
 
-### Understand the idea · 1
+### Ask for critique against your stated intent, not for opinions
 
 Section: learn. Stable action: learn-1.
 
 Ask for critique against your stated intent, not for opinions.
 
 
-### Understand the idea · 2
+### Choose someone who will disagree with you
 
 Section: learn. Stable action: learn-2.
 
 Choose someone who will disagree with you.
 
 
-### Understand the idea · 3
+### Record what you changed and what you defended, with reasons
 
 Section: learn. Stable action: learn-3.
 
 Record what you changed and what you defended, with reasons.
 
 
-### Understand the idea · 4
+### A defence is legitimate; an unexamined dismissal is not
 
 Section: learn. Stable action: learn-4.
 
 A defence is legitimate; an unexamined dismissal is not.
 
 
-### Understand the idea · 5
+### Ask specifically about what you are least sure of
 
 Section: learn. Stable action: learn-5.
 
 Ask specifically about what you are least sure of.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Two reviewers: a developer and someone who runs a tailoring business. The intent was stated in three sentences. The developer asked what the page shows when the owner has not updated a job for three days, which was a real gap and produced a change. The tailor said nobody would update it at all and it should send a message instead — a fair challenge that was defended, because messaging was outside the appetite and had been recorded as deferred with the reason. Both were written down. A third comment, that the page looked plain, was recorded and not acted on, with the reason: plainness was the point on a phone in a shop doorway.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4771,6 +5073,40 @@ Open Your work and choose Ready for review. The next lesson counts one thing hon
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Getting critique you did not choose
+What I am trying to do: Have someone outside the project critique the work against your own stated intent, and record what you changed, what you defended and why.
+
+Key idea or terms:
+Critique against intent: Testing whether the work does what you said it would. Without the intent stated, a reviewer can only tell you what they would have preferred.
+What you are least sure of: Said aloud at the start. It is the fastest route to a useful hour and the hardest sentence to say.
+Different vantage points: Somebody who builds things and somebody who runs a small business see different problems. Two designers see the same ones you do.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Choosing critique reviewers for a repair-shop project, and choosing helpful ones. Two people I had worked with before, both of whom design things, both of whom I get on with.
+
+Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The problem, the constraint and the appetite, in three sentences” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The problem, the constraint and the appetite, in three sentences”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The problem, the constraint and the appetite, in three sentences” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the three sentences and re-run at least one critique with them.
@@ -4840,7 +5176,7 @@ Adequate evidence: Comments not acted on, each with a stated reason.
 Repair: Write why each unacted comment was not acted on, honestly. Recheck: The defence record.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson counts one thing honestly, before and after.
 
@@ -4878,58 +5214,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - An after count over a comparable period
 - Conditions recorded, and the result stated as counts
 
-### Start with a clear task
+### Start here: in everyday words
+
+An independent project brings the research, design, testing and decision trail together around one honest problem. In this lesson, your first small result is: One measure that would change if the problem eased, with an activity measure rejected.
+
+**Words you will use**
+
+- **Tied to the problem:** It moves when the thing you are trying to fix gets better. Calls about progress is the problem; visits to a page is not.
+- **Activity measure:** A count of things happening, from Module 15. It rises when the feature works and when people are lost, so no value of it means anything on its own.
+- **The before:** Collected before anything changes. It is the one number that cannot be recovered later, as Module 12 established.
+
+**Quick example.** Made-up example. Measuring a repair-shop project, and choosing what could be counted automatically. Page views. The page is a local file I could instrument, and it would give me a number every day without asking anybody for anything.
+
+The reader demonstrates and guides the task before asking for “The measure that would change if the problem eased”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Choose one measure the project can honestly support, collect it before and after, and report it as counts with its conditions.
 
 
-### Understand the idea · 1
+### Choose one measure tied to the problem, not to activity
 
 Section: learn. Stable action: learn-1.
 
 Choose one measure tied to the problem, not to activity.
 
 
-### Understand the idea · 2
+### Collect the before, even roughly, before you change anything
 
 Section: learn. Stable action: learn-2.
 
 Collect the before, even roughly, before you change anything.
 
 
-### Understand the idea · 3
+### Counts, not percentages, at this size
 
 Section: learn. Stable action: learn-3.
 
 Counts, not percentages, at this size.
 
 
-### Understand the idea · 4
+### Record conditions: what else changed, and over what period
 
 Section: learn. Stable action: learn-4.
 
 Record conditions: what else changed, and over what period.
 
 
-### Understand the idea · 5
+### State plainly if the measure did not move
 
 Section: learn. Stable action: learn-5.
 
 State plainly if the measure did not move.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Measure chosen: calls asking about repair progress, tallied by the owner on a sheet by the till. Before: eleven over five working days. The page was introduced and given to customers as a link on the job slip. After: four over five working days, with the conditions recorded — one of the five days was a public holiday with reduced trade, and two customers had been told about the page directly by the owner, which is not how it would normally spread. The report says eleven then four, names both conditions, and does not convert either into a rate.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5459,6 +5809,40 @@ Open Your work and choose Ready for review. The next lesson leaves something beh
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Measuring what this project can actually measure
+What I am trying to do: Choose one measure the project can honestly support, collect it before and after, and report it as counts with its conditions.
+
+Key idea or terms:
+Tied to the problem: It moves when the thing you are trying to fix gets better. Calls about progress is the problem; visits to a page is not.
+Activity measure: A count of things happening, from Module 15. It rises when the feature works and when people are lost, so no value of it means anything on its own.
+The before: Collected before anything changes. It is the one number that cannot be recovered later, as Module 12 established.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Measuring a repair-shop project, and choosing what could be counted automatically. Page views. The page is a local file I could instrument, and it would give me a number every day without asking anybody for anything.
+
+Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The measure that would change if the problem eased” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The measure that would change if the problem eased”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The measure that would change if the problem eased” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Ask what the person would notice if the problem eased, and count that.
@@ -5528,7 +5912,7 @@ Adequate evidence: A list of confounds and a statement of what the measure canno
 Repair: List everything else that changed in those two periods. Recheck: The conditions.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson leaves something behind that works without you.
 
@@ -5566,58 +5950,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A plain statement of what is unfinished or unsafe
 - An agreed next step with the person
 
-### Start with a clear task
+### Start here: in everyday words
+
+An independent project brings the research, design, testing and decision trail together around one honest problem. In this lesson, your first small result is: The handover question asked of the person, and whatever you changed because of the answer.
+
+**Words you will use**
+
+- **The handover question:** What happens on the day you stop being available. Asked at the start it is a design constraint; asked at the end it is a discovery.
+- **Only works with you present:** Anything needing your laptop, your explanation or your fortnightly visit. It is a design fault rather than a handover problem.
+- **In their words:** Their vocabulary for their own work. Instructions written in the interface’s words make a person translate before they can start.
+
+**Quick example.** Made-up example. Writing handover instructions for a repair-shop page, and writing them from the interface. Six steps: open the file, locate the job record, update the status field, set the estimated completion window, save, and refresh the customer view.
+
+The reader demonstrates and guides the task before asking for “What happens if you stop being available tomorrow”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Hand the work over so the person can keep using or maintaining it without you, and record what they would need if you disappeared.
 
 
-### Understand the idea · 1
+### Ask what happens on the day you stop being available
 
 Section: learn. Stable action: learn-1.
 
 Ask what happens on the day you stop being available.
 
 
-### Understand the idea · 2
+### Write instructions for the person, not for a designer
 
 Section: learn. Stable action: learn-2.
 
 Write instructions for the person, not for a designer.
 
 
-### Understand the idea · 3
+### Hand over the source, the decisions and the known gaps
 
 Section: learn. Stable action: learn-3.
 
 Hand over the source, the decisions and the known gaps.
 
 
-### Understand the idea · 4
+### Say plainly what is unfinished and unsafe to rely on
 
 Section: learn. Stable action: learn-4.
 
 Say plainly what is unfinished and unsafe to rely on.
 
 
-### Understand the idea · 5
+### Get their agreement about what happens next
 
 Section: learn. Stable action: learn-5.
 
 Get their agreement about what happens next.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The handover: a printed card by the till with three steps for updating a job, written in the owner's words rather than the interface's; the HTML file and a short note on where it lives and how to change the shop's phone number; a decisions page covering why there are no accounts and why the status is a window rather than a time; and a gaps page saying the page has never been tested on a slow connection, has no protection against a mistyped job number showing another customer's job, and should not be relied on if the shop takes more than about twenty jobs a week. The owner agreed to try it for a month and to say if it stopped being useful.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6147,6 +6545,40 @@ Open Your work and choose Ready for review. The next lesson writes what the proj
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Leaving something behind that survives you
+What I am trying to do: Hand the work over so the person can keep using or maintaining it without you, and record what they would need if you disappeared.
+
+Key idea or terms:
+The handover question: What happens on the day you stop being available. Asked at the start it is a design constraint; asked at the end it is a discovery.
+Only works with you present: Anything needing your laptop, your explanation or your fortnightly visit. It is a design fault rather than a handover problem.
+In their words: Their vocabulary for their own work. Instructions written in the interface’s words make a person translate before they can start.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing handover instructions for a repair-shop page, and writing them from the interface. Six steps: open the file, locate the job record, update the status field, set the estimated completion window, save, and refresh the customer view.
+
+Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What happens if you stop being available tomorrow” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What happens if you stop being available tomorrow”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What happens if you stop being available tomorrow” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Find every step that needs you and redesign or document it.
@@ -6216,7 +6648,7 @@ Adequate evidence: A recorded agreement about what happens next.
 Repair: Ask directly what they want to do next and write down the answer. Recheck: The agreement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes what the project does not establish.
 
@@ -6254,58 +6686,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Specific statements, not generic caveats
 - A closing step for each limit
 
-### Start with a clear task
+### Start here: in everyday words
+
+An independent project brings the research, design, testing and decision trail together around one honest problem. In this lesson, your first small result is: Every limit you already recorded, copied here verbatim.
+
+**Words you will use**
+
+- **Already recorded:** The exclusions from the plan, the deviations from fieldwork, the skips, the confounds. They are specific because you wrote them while the detail was fresh.
+- **Invented at the end:** A limitation written now, from a general sense that something was missing. It comes out vague, and vague limits bound nothing.
+- **Study limit:** Something you do not know: who was not reached, what was not measured, what the period could not show.
+
+**Quick example.** Made-up example. Sorting limits for a repair-shop project, and putting everything in one list. One list of nine things: five participants, no screen-reader pass, mistyped numbers unguarded, a public holiday in the after period, untested on a slow connection, and four more.
+
+The reader demonstrates and guides the task before asking for “Exclusions, deviations, skips, confounds and untested areas, copied here verbatim”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write the page that states, precisely, what this project does not establish — the page a reviewer will trust you for.
 
 
-### Understand the idea · 1
+### Collect the limits you already recorded; do not invent new ones
 
 Section: learn. Stable action: learn-1.
 
 Collect the limits you already recorded; do not invent new ones.
 
 
-### Understand the idea · 2
+### Idea 2: Be specific: who was not reached, what was not tested, what wa…
 
 Section: learn. Stable action: learn-2.
 
 Be specific: who was not reached, what was not tested, what was not measured.
 
 
-### Understand the idea · 3
+### Distinguish limits of the study from limits of the design
 
 Section: learn. Stable action: learn-3.
 
 Distinguish limits of the study from limits of the design.
 
 
-### Understand the idea · 4
+### Say what would be needed to close each one
 
 Section: learn. Stable action: learn-4.
 
 Say what would be needed to close each one.
 
 
-### Understand the idea · 5
+### Do not apologise; state
 
 Section: learn. Stable action: learn-5.
 
 Do not apologise; state.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The page has two sections. Study limits: five participants all reached through the owner; nobody who had stopped using the shop; one interview with a third party present; the measurement covered two five-day periods, one containing a public holiday; nothing establishes whether this problem exists in other repair shops. Design limits: no protection against a mistyped job number; never tested on a slow connection; no screen-reader pass; unmaintained if the owner stops updating it; unsuitable above roughly twenty jobs a week. Each has a closing step, and two are marked as the next things worth doing.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6834,6 +7280,40 @@ Open Your work and choose Ready for review. The next lesson compares this projec
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Writing the limitations page
+What I am trying to do: Write the page that states, precisely, what this project does not establish — the page a reviewer will trust you for.
+
+Key idea or terms:
+Already recorded: The exclusions from the plan, the deviations from fieldwork, the skips, the confounds. They are specific because you wrote them while the detail was fresh.
+Invented at the end: A limitation written now, from a general sense that something was missing. It comes out vague, and vague limits bound nothing.
+Study limit: Something you do not know: who was not reached, what was not measured, what the period could not show.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Sorting limits for a repair-shop project, and putting everything in one list. One list of nine things: five participants, no screen-reader pass, mistyped numbers unguarded, a public holiday in the after period, untested on a slow connection, and four more.
+
+Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Exclusions, deviations, skips, confounds and untested areas, copied here verbatim” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Exclusions, deviations, skips, confounds and untested areas, copied here verbatim”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Exclusions, deviations, skips, confounds and untested areas, copied here verbatim” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Go back through the project records and transfer every recorded limit.
@@ -6903,7 +7383,7 @@ Adequate evidence: A smallest-next-action per limit.
 Repair: Write the smallest action that would close each limit. Recheck: The closing steps.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson compares this project with the two before it.
 
@@ -6941,58 +7421,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - One thing that did not improve, named honestly
 - One specific change for the next project
 
-### Start with a clear task
+### Start here: in everyday words
+
+An independent project brings the research, design, testing and decision trail together around one honest problem. In this lesson, your first small result is: Five process questions asked of all three projects, answered from the records.
+
+**Words you will use**
+
+- **Process comparison:** The same questions across three projects. It is the only evidence of a trajectory rather than a snapshot.
+- **From the records:** Looked up rather than remembered. Memory produces a general sense that things have improved, which is what everybody has.
+- **Evidence of improvement:** Something in the records that differs: exclusions present in two and absent in one, a re-test that happened twice and not once.
+
+**Quick example.** Made-up example. Comparing three projects, and comparing how they look. The three write-ups, side by side. The third is much better: clearer, better laid out, better photographs, and it reads like something professional.
+
+The reader demonstrates and guides the task before asking for “The five process questions you are asking of all three projects”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Compare this project with your two earlier ones and identify what has actually improved, what has not, and what you will do differently next.
 
 
-### Understand the idea · 1
+### Compare on process, not on how good the outcome looks
 
 Section: learn. Stable action: learn-1.
 
 Compare on process, not on how good the outcome looks.
 
 
-### Understand the idea · 2
+### Name one thing that improved and the evidence for it
 
 Section: learn. Stable action: learn-2.
 
 Name one thing that improved and the evidence for it.
 
 
-### Understand the idea · 3
+### Name one thing that did not improve, honestly
 
 Section: learn. Stable action: learn-3.
 
 Name one thing that did not improve, honestly.
 
 
-### Understand the idea · 4
+### Identify the habit that produced the improvement
 
 Section: learn. Stable action: learn-4.
 
 Identify the habit that produced the improvement.
 
 
-### Understand the idea · 5
+### Choose one thing to change in the next project
 
 Section: learn. Stable action: learn-5.
 
 Choose one thing to change in the next project.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Improved: exclusions written before fieldwork in projects two and three, not in one, and in three the report used them directly. Improved: the repair loop closed with a re-test in both two and three; in one there was no re-test at all. Not improved: the screen-reader pass was skipped in all three, each time for time, which is a pattern rather than a series of accidents. Habit responsible for the first improvement: writing the plan in a fixed order that puts exclusions before recruitment. Next project: schedule the accessibility pass as a dated task before the build starts, because leaving it until the end has now failed three times.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7515,6 +8009,40 @@ Open Your work and choose Ready for review. The last lesson of the module assemb
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Retrospective across three projects
+What I am trying to do: Compare this project with your two earlier ones and identify what has actually improved, what has not, and what you will do differently next.
+
+Key idea or terms:
+Process comparison: The same questions across three projects. It is the only evidence of a trajectory rather than a snapshot.
+From the records: Looked up rather than remembered. Memory produces a general sense that things have improved, which is what everybody has.
+Evidence of improvement: Something in the records that differs: exclusions present in two and absent in one, a re-test that happened twice and not once.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Comparing three projects, and comparing how they look. The three write-ups, side by side. The third is much better: clearer, better laid out, better photographs, and it reads like something professional.
+
+Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The five process questions you are asking of all three projects” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The five process questions you are asking of all three projects”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The five process questions you are asking of all three projects” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Open the records for each project and answer the questions from them.
@@ -7584,7 +8112,7 @@ Adequate evidence: A single change expressed as a scheduled habit.
 Repair: Convert the intention into something with a date and a trigger. Recheck: The change.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The last lesson of the module assembles everything into a record.
 
@@ -7622,58 +8150,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Failures retained in the record
 - Participants anonymised and the record stored in two places
 
-### Start with a clear task
+### Start here: in everyday words
+
+An independent project brings the research, design, testing and decision trail together around one honest problem. In this lesson, your first small result is: The record ordered by what happened, with an index, and dates, counts and roles rather than names.
+
+**Words you will use**
+
+- **Ordered by what happened:** Chronological rather than arranged for effect. The order is itself evidence that the process ran in the order you say it did.
+- **People by role:** The owner, a customer, a reviewer. It is what the consent introduction promised and it reads better than initials.
+- **An artefact behind a claim:** A session record, a tally sheet, a version of the file. A claim with nothing behind it is a sentence you will not be able to defend in an interview.
+
+**Quick example.** Made-up example. Checking claims against artefacts, and finding one with nothing behind it. That the page reduced interruptions for the shop. A reasonable summary of eleven calls becoming seven.
+
+The reader demonstrates and guides the task before asking for “The record in order, with an index”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Assemble every artefact from this project into an ordered record that someone else could follow, and check that each claim in it is supported.
 
 
-### Understand the idea · 1
+### Order the record by what happened, not by what looks best
 
 Section: learn. Stable action: learn-1.
 
 Order the record by what happened, not by what looks best.
 
 
-### Understand the idea · 2
+### Every claim needs an artefact behind it
 
 Section: learn. Stable action: learn-2.
 
 Every claim needs an artefact behind it.
 
 
-### Understand the idea · 3
+### Include the failures; they are load-bearing
 
 Section: learn. Stable action: learn-3.
 
 Include the failures; they are load-bearing.
 
 
-### Understand the idea · 4
+### Name the dates, the counts and the people by role
 
 Section: learn. Stable action: learn-4.
 
 Name the dates, the counts and the people by role.
 
 
-### Understand the idea · 5
+### Store it so it survives a lost laptop
 
 Section: learn. Stable action: learn-5.
 
 Store it so it survives a lost laptop.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The record has twelve numbered folders matching the lessons, an index page listing what is in each, and a claims check: nineteen assertions, seventeen with artefacts, one weakened from “customers stopped calling” to “calls about progress fell from eleven to four over comparable five-day periods, one containing a public holiday”, and one deleted because nothing supported it. Participants appear as owner, customer A, customer B, customer C and outside tester. Consent records are stored separately and are not part of anything shareable. The whole thing exists on the laptop and in one other place.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -8171,6 +8713,40 @@ Open Your work and choose Ready for review. This closes Module 18. Module 19 tur
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Assembling the project record
+What I am trying to do: Assemble every artefact from this project into an ordered record that someone else could follow, and check that each claim in it is supported.
+
+Key idea or terms:
+Ordered by what happened: Chronological rather than arranged for effect. The order is itself evidence that the process ran in the order you say it did.
+People by role: The owner, a customer, a reviewer. It is what the consent introduction promised and it reads better than initials.
+An artefact behind a claim: A session record, a tally sheet, a version of the file. A claim with nothing behind it is a sentence you will not be able to defend in an interview.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Checking claims against artefacts, and finding one with nothing behind it. That the page reduced interruptions for the shop. A reasonable summary of eleven calls becoming seven.
+
+Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The record in order, with an index” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The record in order, with an index”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The record in order, with an index” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Put the artefacts in the order they happened and write the index.
@@ -8240,7 +8816,7 @@ Adequate evidence: Roles instead of names, consent stored separately, two copies
 Repair: Replace names with roles and copy the record somewhere else today. Recheck: The stored record.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This closes Module 18. Module 19 turns three project records into a portfolio.
 

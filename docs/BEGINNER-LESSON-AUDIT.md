@@ -1,3 +1,38 @@
+## New reported comprehension concern — 13 September 2026
+
+After the saved-action expansion, the creator reports that beginners still find the course confusing, including terminology, where/how to work and the feeling of repeated instructions. Treat this as reported feedback, not an observed usability session. Existing definitions, demonstrations, worksheet coverage and functional QA remain recorded below; they do not close the new comprehension question.
+
+The [beginner experience plan](BEGINNER-EXPERIENCE-PLAN.md) and [224-lesson planning map](BEGINNER-LESSON-PLAN.md) propose the next refinement. Every new planning row is Planned. No historical row is newly marked learner-validated or rewritten by this documentation pass. The 7 September module findings below are historical; re-read current sources rather than asserting that their older missing-feature counts describe today's app. Uncoached Lesson 1 observation and formal assessment remain separate and pending.
+
+## Beginner-comprehension implementation — all 224 lessons, 13 September 2026
+
+The creator subsequently authorized implementation and release for the whole course. All 224 lesson rows from `week1-day1-v1` through `m20-l12-v1` are now **Implemented** for this comprehension pass. Each runtime lesson has a plain opening, lesson-specific terms and supplied example, visible what/how/enough help at the answer, meaningful teaching-action titles and one optional bounded AI learning activity with a named return answer and complete local alternative. The AI question pattern changes with the module's subject. Lesson 1 carries the dedicated UI/UX/product-design prompt. The independent diagnostic remains uncoached.
+
+| Scope | Drafted | Content checked | Interface checked | Learner observed | Released |
+|---|---|---|---|---|---|
+| m01 · 7 lessons | 13 Sep 2026 · source implementation | Passed · all seven runtime contracts and generated `WEEK-01.md` | Lesson 1 passed local browser checks at 320/390/1440 px | No | No |
+| m02 · 5 lessons | 13 Sep 2026 · source implementation | Passed · all five runtime contracts and generated `WEEK-02.md` | Shared reader covered; no lesson-specific browser sample | No | No |
+| m03 · 10 lessons | 13 Sep 2026 · source implementation | Passed · all ten runtime contracts and generated `MODULE-03.md` | Shared reader covered; no lesson-specific browser sample | No | No |
+| m04 · 8 lessons | 13 Sep 2026 · source implementation | Passed · all eight runtime contracts and generated `MODULE-04.md` | Shared reader covered; no lesson-specific browser sample | No | No |
+| m05 · 13 lessons | 13 Sep 2026 · source implementation | Passed · all thirteen runtime contracts and generated `MODULE-05.md` | `m05-l06-v1` passed local opening/route check | No | No |
+| m06 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-06.md` | Shared reader covered; no lesson-specific browser sample | No | No |
+| m07 · 13 lessons | 13 Sep 2026 · source implementation | Passed · all thirteen runtime contracts and generated `MODULE-07.md` | Shared reader covered; no lesson-specific browser sample | No | No |
+| m08 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-08.md` | Shared reader covered; no lesson-specific browser sample | No | No |
+| m09 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-09.md` | Shared reader covered; no lesson-specific browser sample | No | No |
+| m10 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-10.md` | `m10-l01-v1` passed local opening/route check | No | No |
+| m11 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-11.md` | `m11-l01-v1` opening, guided answer, AI return route, copying, save state and responsive width passed locally | No | Pending |
+| m12 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-12.md` | Shared reader covered; no lesson-specific browser sample | No | Pending |
+| m13 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-13.md` | Shared reader covered; no lesson-specific browser sample | No | Pending |
+| m14 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-14.md` | Shared reader covered; no lesson-specific browser sample | No | Pending |
+| m15 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-15.md` | Shared reader covered; no lesson-specific browser sample | No | Pending |
+| m16 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-16.md` | `m16-l01-v1` plain opening, terms, example, timer and save route passed locally | No | Pending |
+| m17 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-17.md` | Shared reader covered; no lesson-specific browser sample | No | Pending |
+| m18 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-18.md` | Shared reader covered; no lesson-specific browser sample | No | Pending |
+| m19 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-19.md` | Shared reader covered; no lesson-specific browser sample | No | Pending |
+| m20 · 12 lessons | 13 Sep 2026 · source implementation | Passed · all twelve runtime contracts and generated `MODULE-20.md` | `m20-l12-v1` plain opening, terms, example, progress meaning and timer passed locally | No | Pending |
+
+The existing per-lesson rows below remain the stable-ID inventory and retain earlier action-refinement evidence. This section records the new shared comprehension implementation without claiming individual learner understanding. All 2,866 existing worksheet field IDs remain unchanged; the all-course action and persistence regression checks cover each lesson individually. Detailed evidence and limits: [all-course beginner verification](VERIFICATION-BEGINNER-ALL-LESSONS.md).
+
 ## Approved all-course action expansion — 13 September 2026
 
 The creator explicitly approved continuing the saved-action pattern from Module 6 through Module 20. All 224 published teaching lessons now use the saved Learn → Do → Check → Your work action reader while retaining the authored teaching, routes, demonstrations, checks and all 2,866 worksheet field IDs. The later-module plans are derived from each lesson's own recommended/alternative route and its check instructions; every Check links back to the worksheet step it names. Publication, learner observation and formal assessment remain separate and must be reported honestly. Follow the current contract and [all-course action verification](VERIFICATION-ALL-ACTIONS.md).

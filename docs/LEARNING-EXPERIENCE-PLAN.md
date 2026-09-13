@@ -1,3 +1,9 @@
+## Latest experience proposal — beginner comprehension, 13 September 2026
+
+The creator reports continued beginner confusion and requests a Markdown-only researched plan. Read [BEGINNER-EXPERIENCE-PLAN.md](BEGINNER-EXPERIENCE-PLAN.md) for the proposed lesson structure, language, continuity, help, timer/progress copy and staged validation; [BEGINNER-LESSON-PLAN.md](BEGINNER-LESSON-PLAN.md) for all 224 lesson interventions; [AI-LEARNING-ACTIVITIES.md](AI-LEARNING-ACTIVITIES.md) for optional learning conversations; and [BEGINNER-RESEARCH.md](BEGINNER-RESEARCH.md) for inspected sources and limits.
+
+Refinement ledger entry: **Planned — no runtime or teaching-source changes.** All 224 new planning rows remain unimplemented; reported confusion is not an uncoached observation. Preserve the existing implemented saved-action/worksheet work below. The next pilot tests whether a familiar scenario, explicit plain explanations and a visible artifact make the saved-action reader understandable. No required workload, diagnostic independence, record identity, timing semantics or completion definition changes in this milestone.
+
 ## Approved all-course action expansion — 13 September 2026
 
 The creator explicitly approved continuing the saved-action pattern from Module 6 through Module 20. All 224 published teaching lessons now use the saved Learn → Do → Check → Your work action reader while retaining the authored teaching, routes, demonstrations, checks and all 2,866 worksheet field IDs. The later-module plans are derived from each lesson's own recommended/alternative route and its check instructions; every Check links back to the worksheet step it names. Publication, learner observation and formal assessment remain separate and must be reported honestly. Follow the current contract and [all-course action verification](VERIFICATION-ALL-ACTIONS.md).

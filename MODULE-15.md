@@ -23,58 +23,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - An observability mark on every node
 - Two candidate metrics removed for being unactionable
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product analytics uses recorded events and numbers to answer a decision without hiding uncertainty or context. In this lesson, your first small result is: One outcome written as something that happens to a person, and one of your own outputs named as an output.
+
+**Words you will use**
+
+- **Outcome:** Something that is true for a person afterwards. It is what the product exists for and it is rarely countable directly.
+- **Output:** Something the product does or that exists: a screen shipped, a message sent, a page viewed. Easy to count and not the point.
+- **Metric tree:** An outcome at the top, the behaviours that produce it beneath, and countable events beneath those. It is what connects a number to a reason for caring about it.
+
+**Quick example.** Made-up example. Naming the outcome for a tool library, and naming something the product does. “People can book tools online.” It is what the product exists to do, it is true, and it took four seconds.
+
+The reader demonstrates and guides the task before asking for “The one outcome your product exists to produce”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Build a metric tree for your product connecting one outcome to the behaviours beneath it, and mark which nodes you could observe and which you could not.
 
 
-### Understand the idea · 1
+### Idea 1: Start from the outcome someone cares about, not from what is e…
 
 Section: learn. Stable action: learn-1.
 
 Start from the outcome someone cares about, not from what is easy to count.
 
 
-### Understand the idea · 2
+### A metric tree connects an outcome to the behaviours that produce it
 
 Section: learn. Stable action: learn-2.
 
 A metric tree connects an outcome to the behaviours that produce it.
 
 
-### Understand the idea · 3
+### Distinguish outcome metrics from activity metrics; activity is not value
 
 Section: learn. Stable action: learn-3.
 
 Distinguish outcome metrics from activity metrics; activity is not value.
 
 
-### Understand the idea · 4
+### Mark which nodes you could actually observe with what you have
 
 Section: learn. Stable action: learn-4.
 
 Mark which nodes you could actually observe with what you have.
 
 
-### Understand the idea · 5
+### A metric you cannot act on is a number, not a measure
 
 Section: learn. Stable action: learn-5.
 
 A metric you cannot act on is a number, not a measure.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The tree for the booking product: outcome — people who intend to attend a class actually attend one. Beneath it: they find a suitable class; they complete a booking without duplicating payment; they arrive prepared. Beneath those: searches that produce results, bookings completed in one session, duplicate payments, prepared-arrival reports from the provider. Observability: the first two are unobservable without analytics; duplicate payments are countable from the provider's records; preparedness is only askable. Two candidate metrics were removed for being unactionable, including time on page.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -626,6 +640,40 @@ Open Your work and choose Ready for review. The next lesson counts people throug
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: What you are actually trying to measure
+What I am trying to do: Build a metric tree for your product connecting one outcome to the behaviours beneath it, and mark which nodes you could observe and which you could not.
+
+Key idea or terms:
+Outcome: Something that is true for a person afterwards. It is what the product exists for and it is rarely countable directly.
+Output: Something the product does or that exists: a screen shipped, a message sent, a page viewed. Easy to count and not the point.
+Metric tree: An outcome at the top, the behaviours that produce it beneath, and countable events beneath those. It is what connects a number to a reason for caring about it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Naming the outcome for a tool library, and naming something the product does. “People can book tools online.” It is what the product exists to do, it is true, and it took four seconds.
+
+Activity: Show one small synthetic result from the supplied case. Ask me what the number literally says, what context is missing and which decision it can support. Correct any claim that goes beyond the data.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The one outcome your product exists to produce” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The one outcome your product exists to produce”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The one outcome your product exists to produce” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the outcome first, then ask what behaviours would produce it, then what would indicate each behaviour.
@@ -695,7 +743,7 @@ Adequate evidence: At least two removals with the reason each would change nothi
 Repair: For each metric ask what you would do differently if it moved. If nothing, remove it. Recheck: The removal list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson counts people through one task and finds out what counting cannot tell you.
 
@@ -733,58 +781,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Three explanations the data cannot distinguish
 - A note of which drops might be correct rather than problems
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product analytics uses recorded events and numbers to answer a decision without hiding uncertainty or context. In this lesson, your first small result is: One task with its steps in order, and a written definition of what counts as reaching each.
+
+**Words you will use**
+
+- **Funnel:** A count of people reaching each step of one task. It shows where people stop and never why.
+- **What counts as reaching:** The definition of each step. Without it, two people count the same thing differently and the numbers cannot be compared.
+- **Proportional drop:** People lost at a step divided by people who reached it. Going from 420 to 180 loses 240 of 420, about 57 per cent.
+
+**Quick example.** Made-up example. Reading a synthetic funnel for a tool library, and reading the wrong drop as the biggest. Synthetic throughout: 1,000 reach the list, 420 open a tool, 180 begin booking, 96 reach payment, 71 complete.
+
+The reader demonstrates and guides the task before asking for “One task, with its steps in order”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Build a funnel for one task from explicitly synthetic counts, identify the largest drop, and write three different explanations that the data cannot distinguish between.
 
 
-### Understand the idea · 1
+### A funnel counts people reaching each step of one task
 
 Section: learn. Stable action: learn-1.
 
 A funnel counts people reaching each step of one task.
 
 
-### Understand the idea · 2
+### The biggest drop is where to look, not what to fix
 
 Section: learn. Stable action: learn-2.
 
 The biggest drop is where to look, not what to fix.
 
 
-### Understand the idea · 3
+### Several explanations always fit the same drop
 
 Section: learn. Stable action: learn-3.
 
 Several explanations always fit the same drop.
 
 
-### Understand the idea · 4
+### Some drops are correct: people who should not continue, leaving
 
 Section: learn. Stable action: learn-4.
 
 Some drops are correct: people who should not continue, leaving.
 
 
-### Understand the idea · 5
+### Label synthetic data as synthetic, every time it appears
 
 Section: learn. Stable action: learn-5.
 
 Label synthetic data as synthetic, every time it appears.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A synthetic funnel for the booking task, clearly labelled: 1,000 reach the class list, 420 open a class, 180 begin booking, 96 reach payment, 71 complete. The largest proportional drop is from opening a class to beginning a booking. Three explanations that fit equally: the price is higher than expected at that point; the date is inconvenient and there is no easy route to alternatives; and people are checking with someone else and will return later, which the funnel would count as a loss. The third would need a returning-visitor view the data does not have. The write-up marks every number synthetic.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1307,6 +1369,40 @@ Open Your work and choose Ready for review. The next lesson takes the rates you 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Funnels, and what a drop-off does not tell you
+What I am trying to do: Build a funnel for one task from explicitly synthetic counts, identify the largest drop, and write three different explanations that the data cannot distinguish between.
+
+Key idea or terms:
+Funnel: A count of people reaching each step of one task. It shows where people stop and never why.
+What counts as reaching: The definition of each step. Without it, two people count the same thing differently and the numbers cannot be compared.
+Proportional drop: People lost at a step divided by people who reached it. Going from 420 to 180 loses 240 of 420, about 57 per cent.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Reading a synthetic funnel for a tool library, and reading the wrong drop as the biggest. Synthetic throughout: 1,000 reach the list, 420 open a tool, 180 begin booking, 96 reach payment, 71 complete.
+
+Activity: Show one small synthetic result from the supplied case. Ask me what the number literally says, what context is missing and which decision it can support. Correct any claim that goes beyond the data.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “One task, with its steps in order” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “One task, with its steps in order”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “One task, with its steps in order” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Take your m07 flow and use its actual steps, defining what counts as reaching each.
@@ -1376,7 +1472,7 @@ Adequate evidence: At least one step where leaving is correct, with what healthy
 Repair: Ask at each step whether some people should stop here. Where the answer is yes, say what proportion would be reasonable. Recheck: The healthy-drop note.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes the rates you have been writing and asks what they can support.
 
@@ -1414,58 +1510,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A written rule for when you will report a rate at all
 - One comparison abandoned or qualified
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product analytics uses recorded events and numbers to answer a decision without hiding uncertainty or context. In this lesson, your first small result is: Three rates gathered with the counts behind them.
+
+**Words you will use**
+
+- **Rate:** A proportion expressed as a percentage. It hides the count, and the count is what decides how much it can support.
+- **The count behind it:** How many out of how many. Two identical percentages from 22 people and 1,000 people are entirely different claims.
+- **Interval:** The range of true values that would not be surprising, given how many people you asked. Small counts produce wide ranges.
+
+**Quick example.** Made-up example. Reporting a survey result from a tool library, and reporting it as a percentage. “41 per cent of members were unsure whether their payment had gone through.” It looked precise and it fitted neatly into a sentence.
+
+The reader demonstrates and guides the task before asking for “Three rates you have written or were tempted to write, with the counts behind them”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Attach an interval to three rates from your own work, and rewrite any claim the interval cannot support.
 
 
-### Understand the idea · 1
+### A rate from a small count carries a wide interval
 
 Section: learn. Stable action: learn-1.
 
 A rate from a small count carries a wide interval.
 
 
-### Understand the idea · 2
+### Report the interval beside the rate, or report the count instead
 
 Section: learn. Stable action: learn-2.
 
 Report the interval beside the rate, or report the count instead.
 
 
-### Understand the idea · 3
+### Idea 3: Sample size guidance is for planning, not for justifying claim…
 
 Section: learn. Stable action: learn-3.
 
 Sample size guidance is for planning, not for justifying claims afterwards.
 
 
-### Understand the idea · 4
+### Comparing two rates needs more care than reporting one
 
 Section: learn. Stable action: learn-4.
 
 Comparing two rates needs more care than reporting one.
 
 
-### Understand the idea · 5
+### Rewriting a claim you cannot support is the exercise, not a failure
 
 Section: learn. Stable action: learn-5.
 
 Rewriting a claim you cannot support is the exercise, not a failure.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three rates were reworked. From the m05 survey: 9 of 22 unsure their payment had gone through, previously written as 41 per cent. With the interval computed and shown, the range covered roughly a quarter to three-fifths, so the claim became the count. From the m10 test: 2 of 3 could not tell the place was held, previously written as 67 per cent, rewritten as the count with the sample route stated. From the synthetic funnel: a comparison between two steps was removed entirely, because the numbers were invented and comparing invented numbers produces nothing.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1995,6 +2105,40 @@ Open Your work and choose Ready for review. The next lesson designs an experimen
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Rates, intervals and small numbers
+What I am trying to do: Attach an interval to three rates from your own work, and rewrite any claim the interval cannot support.
+
+Key idea or terms:
+Rate: A proportion expressed as a percentage. It hides the count, and the count is what decides how much it can support.
+The count behind it: How many out of how many. Two identical percentages from 22 people and 1,000 people are entirely different claims.
+Interval: The range of true values that would not be surprising, given how many people you asked. Small counts produce wide ranges.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Reporting a survey result from a tool library, and reporting it as a percentage. “41 per cent of members were unsure whether their payment had gone through.” It looked precise and it fitted neatly into a sentence.
+
+Activity: Show one small synthetic result from the supplied case. Ask me what the number literally says, what context is missing and which decision it can support. Correct any claim that goes beyond the data.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Three rates you have written or were tempted to write, with the counts behind them” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Three rates you have written or were tempted to write, with the counts behind them”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Three rates you have written or were tempted to write, with the counts behind them” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Compute each interval in a spreadsheet and record the numbers you put in.
@@ -2064,7 +2208,7 @@ Adequate evidence: A stated threshold or condition under which you will use a ra
 Repair: Write the sample size below which you will always report counts, and what you will say if pressed. Recheck: The rule.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson designs an experiment you almost certainly cannot run.
 
@@ -2102,58 +2246,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A required sample and duration estimate with inputs
 - A written refusal and a qualitative alternative
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product analytics uses recorded events and numbers to answer a decision without hiding uncertainty or context. In this lesson, your first small result is: The limits the reading states on traffic, duration and changing more than one thing.
+
+**Words you will use**
+
+- **A/B test:** Showing two versions to two randomly split groups and comparing one metric. It answers whether, never why.
+- **Simultaneous changes:** More than one difference between the variants. The result then tells you the pair did something, and nothing about which part.
+- **Hypothesis:** What you expect and why. The why is what makes a negative result informative rather than merely disappointing.
+
+**Quick example.** Made-up example. Writing variants for a tool-library test, and changing two things at once. Version A as it is now. Version B with the held-place message and a redesigned confirmation screen, because both were ready and both were meant to help.
+
+The reader demonstrates and guides the task before asking for “The limits the reading states on traffic, duration and simultaneous changes”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Design one A/B test properly — hypothesis, variants, primary and guardrail metrics, required sample and duration — and then write why you cannot run it and what you will do instead.
 
 
-### Understand the idea · 1
+### State the hypothesis before the variants: what you expect and why
 
 Section: learn. Stable action: learn-1.
 
 State the hypothesis before the variants: what you expect and why.
 
 
-### Understand the idea · 2
+### Choose one primary metric and guardrails that must not get worse
 
 Section: learn. Stable action: learn-2.
 
 Choose one primary metric and guardrails that must not get worse.
 
 
-### Understand the idea · 3
+### Test one change; several at once produce an uninterpretable result
 
 Section: learn. Stable action: learn-3.
 
 Test one change; several at once produce an uninterpretable result.
 
 
-### Understand the idea · 4
+### Required traffic and duration are constraints, not formalities
 
 Section: learn. Stable action: learn-4.
 
 Required traffic and duration are constraints, not formalities.
 
 
-### Understand the idea · 5
+### An experiment cannot tell you why; it needs qualitative work beside it
 
 Section: learn. Stable action: learn-5.
 
 An experiment cannot tell you why; it needs qualitative work beside it.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The designed test: hypothesis, that a held-place message reduces duplicate payments; variants, current and with the message; primary metric, duplicate payments per hundred bookings; guardrails, completion rate and support contacts. The required sample, using the article's reasoning, was far beyond the product's traffic — the honest calculation showed months of data for a plausible effect. The refusal was written, with what would change it: ten times the traffic, or a much larger expected effect. The alternative was three moderated comparisons plus counting duplicate payments in the provider's records before and after, with the confounding stated.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2715,6 +2873,40 @@ Open Your work and choose Ready for review. The next lesson reads numbers somebo
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Designing an experiment you cannot run
+What I am trying to do: Design one A/B test properly — hypothesis, variants, primary and guardrail metrics, required sample and duration — and then write why you cannot run it and what you will do instead.
+
+Key idea or terms:
+A/B test: Showing two versions to two randomly split groups and comparing one metric. It answers whether, never why.
+Simultaneous changes: More than one difference between the variants. The result then tells you the pair did something, and nothing about which part.
+Hypothesis: What you expect and why. The why is what makes a negative result informative rather than merely disappointing.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing variants for a tool-library test, and changing two things at once. Version A as it is now. Version B with the held-place message and a redesigned confirmation screen, because both were ready and both were meant to help.
+
+Activity: Show one small synthetic result from the supplied case. Ask me what the number literally says, what context is missing and which decision it can support. Correct any claim that goes beyond the data.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The limits the reading states on traffic, duration and simultaneous changes” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The limits the reading states on traffic, duration and simultaneous changes”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The limits the reading states on traffic, duration and simultaneous changes” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write “I expect … because … and I would be wrong if …”.
@@ -2784,7 +2976,7 @@ Adequate evidence: A written statement of why the test cannot run, what would ch
 Repair: Write the sentence beginning “this cannot run because …” and then plan the conversations you can have. Recheck: The refusal and alternative.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson reads numbers somebody else produced.
 
@@ -2822,58 +3014,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - One claim rewritten to match its support
 - A note of what the chart's presentation emphasised or hid
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product analytics uses recorded events and numbers to answer a decision without hiding uncertainty or context. In this lesson, your first small result is: A real set of figures with a claim, and the claim copied exactly.
+
+**Words you will use**
+
+- **A claim:** The sentence the numbers are being used to support. It is what you are examining, rather than the numbers themselves.
+- **Copying exactly:** Writing it word for word. Paraphrasing repairs the vagueness you are about to examine, and then the exercise finds nothing.
+- **Denominator:** What the number is out of. It is the most commonly missing piece, and a rate can rise because the bottom shrank.
+
+**Quick example.** Made-up example. Choosing figures to examine, and choosing something too easy. An obviously overblown marketing page claiming a 400 per cent improvement, with no numbers behind it at all.
+
+The reader demonstrates and guides the task before asking for “Where the figures came from”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Take a published or supplied set of figures, list the five questions you would need answered before acting on it, and rewrite one of its claims to match what it actually supports.
 
 
-### Understand the idea · 1
+### Ask who was counted and who was excluded
 
 Section: learn. Stable action: learn-1.
 
 Ask who was counted and who was excluded.
 
 
-### Understand the idea · 2
+### Ask what period, and whether it is comparable to the last one
 
 Section: learn. Stable action: learn-2.
 
 Ask what period, and whether it is comparable to the last one.
 
 
-### Understand the idea · 3
+### Ask what changed at the same time; almost always something did
 
 Section: learn. Stable action: learn-3.
 
 Ask what changed at the same time; almost always something did.
 
 
-### Understand the idea · 4
+### Ask what the denominator is; it is often the missing information
 
 Section: learn. Stable action: learn-4.
 
 Ask what the denominator is; it is often the missing information.
 
 
-### Understand the idea · 5
+### Ask what decision this number is being used to justify
 
 Section: learn. Stable action: learn-5.
 
 Ask what decision this number is being used to justify.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A published figure claimed a 30 per cent improvement in completions after a redesign. The five questions: who was counted — new visitors only, it turned out, excluding returning ones; what period — four weeks against a comparison period containing a public holiday; what else changed — a marketing campaign ran concurrently; what is the denominator — total visits fell, so completions per visit rose while completions fell; and what decision it justified — further investment in the redesign. The claim was rewritten as: completions per visit rose over four weeks, during which visits fell and a campaign ran, so the redesign's contribution cannot be separated.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3391,6 +3597,40 @@ Open Your work and choose Ready for review. The next lesson puts a count and an 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Reading someone else's numbers
+What I am trying to do: Take a published or supplied set of figures, list the five questions you would need answered before acting on it, and rewrite one of its claims to match what it actually supports.
+
+Key idea or terms:
+A claim: The sentence the numbers are being used to support. It is what you are examining, rather than the numbers themselves.
+Copying exactly: Writing it word for word. Paraphrasing repairs the vagueness you are about to examine, and then the exercise finds nothing.
+Denominator: What the number is out of. It is the most commonly missing piece, and a rate can rise because the bottom shrank.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Choosing figures to examine, and choosing something too easy. An obviously overblown marketing page claiming a 400 per cent improvement, with no numbers behind it at all.
+
+Activity: Show one small synthetic result from the supplied case. Ask me what the number literally says, what context is missing and which decision it can support. Correct any claim that goes beyond the data.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Where the figures came from” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Where the figures came from”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Where the figures came from” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Find a real published claim and work through the five questions in writing.
@@ -3460,7 +3700,7 @@ Adequate evidence: A rewritten claim that is both honest and readable.
 Repair: Write the sentence the figures actually support, then cut it until it reads well. Recheck: The rewritten claim.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson puts a count and an observation about the same thing side by side.
 
@@ -3498,58 +3738,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A change proposal that needed both
 - Any contradiction between them, kept rather than resolved
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product analytics uses recorded events and numbers to answer a decision without hiding uncertainty or context. In this lesson, your first small result is: One count and one observation about the same behaviour, each stated on its own terms.
+
+**Words you will use**
+
+- **Quantitative:** Counting. It shows scale and location: how many, and where.
+- **Qualitative:** Watching and asking. It shows mechanism: what happened and why, for the people you watched.
+- **A count without a mechanism:** A problem you cannot fix, because nothing says what causes it. It produces redesigns of whatever is nearest.
+
+**Quick example.** Made-up example. Pairing a count and an observation at a tool library, and dismissing the one with fewer people in it. A synthetic funnel showing the largest drop between opening a tool and starting a booking. And one session where somebody checked the price twice against a screenshot from a friend.
+
+The reader demonstrates and guides the task before asking for “The count, and what it says on its own”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Take one quantitative finding and one qualitative finding about the same behaviour, and write what each explains that the other cannot.
 
 
-### Understand the idea · 1
+### Quantitative shows scale and location; qualitative shows mechanism
 
 Section: learn. Stable action: learn-1.
 
 Quantitative shows scale and location; qualitative shows mechanism.
 
 
-### Understand the idea · 2
+### Start from whichever you have and use the other to fill its gap
 
 Section: learn. Stable action: learn-2.
 
 Start from whichever you have and use the other to fill its gap.
 
 
-### Understand the idea · 3
+### A count without a mechanism produces an unfixable problem
 
 Section: learn. Stable action: learn-3.
 
 A count without a mechanism produces an unfixable problem.
 
 
-### Understand the idea · 4
+### A mechanism without a count produces an unprioritisable one
 
 Section: learn. Stable action: learn-4.
 
 A mechanism without a count produces an unprioritisable one.
 
 
-### Understand the idea · 5
+### Contradictions between them are findings, not errors
 
 Section: learn. Stable action: learn-5.
 
 Contradictions between them are findings, not errors.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The pairing: the synthetic funnel showed the largest drop between opening a class and starting a booking; the m05 observation showed a participant checking the price against a screenshot from a friend, twice, because the displayed price did not match what she remembered. The count located the problem, the observation supplied a mechanism, and together they produced a specific change — showing the price consistently and earlier. Written separately, the count would have produced a redesign of the booking button and the observation would have been dismissed as one person.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4077,6 +4331,40 @@ Open Your work and choose Ready for review. The next lesson decides what should 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Numbers and conversations together
+What I am trying to do: Take one quantitative finding and one qualitative finding about the same behaviour, and write what each explains that the other cannot.
+
+Key idea or terms:
+Quantitative: Counting. It shows scale and location: how many, and where.
+Qualitative: Watching and asking. It shows mechanism: what happened and why, for the people you watched.
+A count without a mechanism: A problem you cannot fix, because nothing says what causes it. It produces redesigns of whatever is nearest.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Pairing a count and an observation at a tool library, and dismissing the one with fewer people in it. A synthetic funnel showing the largest drop between opening a tool and starting a booking. And one session where somebody checked the price twice against a screenshot from a friend.
+
+Activity: Show one small synthetic result from the supplied case. Ask me what the number literally says, what context is missing and which decision it can support. Correct any claim that goes beyond the data.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The count, and what it says on its own” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The count, and what it says on its own”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The count, and what it says on its own” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Pick the behaviour first, then find the count and the observation about it.
@@ -4146,7 +4434,7 @@ Adequate evidence: Any disagreement recorded with a candidate explanation.
 Repair: Look for where the count and the observation imply different urgencies, and write why both could be true. Recheck: The contradiction note.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson decides what should be recorded about people at all.
 
@@ -4184,58 +4472,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - At least two documented refusals with reasons
 - One event reduced rather than removed
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product analytics uses recorded events and numbers to answer a decision without hiding uncertainty or context. In this lesson, your first small result is: An event for each observable node, derived from the question it answers, with anything unmotivated discarded.
+
+**Words you will use**
+
+- **Instrumentation plan:** The written list of what gets recorded about people, why, and for how long. Writing it is often the only moment anybody asks whether it should be recorded at all.
+- **Event:** One thing being recorded when it happens. It should exist because a named question needs it, not because it might be useful.
+- **Retention:** How long it is kept before deletion. Data with no retention period is kept for ever by default, which is a decision made by nobody.
+
+**Quick example.** Made-up example. Planning what to record for a tool library, and planning to decide later. Record everything available now and work out what we need once we have some data. It is what everybody suggests and it sounds cautious.
+
+The reader demonstrates and guides the task before asking for “For each observable node in your tree: the event that would indicate it”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write an instrumentation plan naming every event you would record, why, how long it is kept, and at least two things you will deliberately not collect.
 
 
-### Understand the idea · 1
+### Record what a named question needs, not what might be useful later
 
 Section: learn. Stable action: learn-1.
 
 Record what a named question needs, not what might be useful later.
 
 
-### Understand the idea · 2
+### Each event should have an owner, a purpose and a retention period
 
 Section: learn. Stable action: learn-2.
 
 Each event should have an owner, a purpose and a retention period.
 
 
-### Understand the idea · 3
+### Free-text and location are high-risk; think hard before recording either
 
 Section: learn. Stable action: learn-3.
 
 Free-text and location are high-risk; think hard before recording either.
 
 
-### Understand the idea · 4
+### Idea 4: Anonymous and identified are different decisions with differen…
 
 Section: learn. Stable action: learn-4.
 
 Anonymous and identified are different decisions with different obligations.
 
 
-### Understand the idea · 5
+### Refusing to collect something is a design decision worth documenting
 
 Section: learn. Stable action: learn-5.
 
 Refusing to collect something is a design decision worth documenting.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The plan listed nine events, each tied to a node in the metric tree, with a purpose, an owner and a retention period of ninety days. Two refusals were recorded: no free-text capture from the search box, because the question it would answer did not justify holding whatever people type; and no precise location, since the coarse area answered the only question that mattered. One event was reduced rather than removed: rather than recording the exact class booked, it recorded that a booking occurred, since the identity of the class answered no question in the tree.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4758,6 +5060,40 @@ Open Your work and choose Ready for review. The next lesson looks at a number mo
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: What to record, and what to refuse to record
+What I am trying to do: Write an instrumentation plan naming every event you would record, why, how long it is kept, and at least two things you will deliberately not collect.
+
+Key idea or terms:
+Instrumentation plan: The written list of what gets recorded about people, why, and for how long. Writing it is often the only moment anybody asks whether it should be recorded at all.
+Event: One thing being recorded when it happens. It should exist because a named question needs it, not because it might be useful.
+Retention: How long it is kept before deletion. Data with no retention period is kept for ever by default, which is a decision made by nobody.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Planning what to record for a tool library, and planning to decide later. Record everything available now and work out what we need once we have some data. It is what everybody suggests and it sounds cautious.
+
+Activity: Show one small synthetic result from the supplied case. Ask me what the number literally says, what context is missing and which decision it can support. Correct any claim that goes beyond the data.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “For each observable node in your tree: the event that would indicate it” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “For each observable node in your tree: the event that would indicate it”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “For each observable node in your tree: the event that would indicate it” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Delete any event you cannot attach to a node, and record that you did.
@@ -4827,7 +5163,7 @@ Adequate evidence: An event narrowed, with what was dropped and why it was unnec
 Repair: Take your richest event and ask what the question actually needs; drop the rest. Recheck: The reduced event.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson looks at a number moving over time and asks what else was happening.
 
@@ -4865,58 +5201,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A statement of what the cohort does and does not control for
 - One explanation you cannot rule out, named
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product analytics uses recorded events and numbers to answer a decision without hiding uncertainty or context. In this lesson, your first small result is: One metric plotted across at least eight periods, labelled synthetic, with the ship point marked.
+
+**Words you will use**
+
+- **Over time:** Enough periods to see what normal variation looks like. Two points look like a change; eight show whether it was one.
+- **Marking the ship point:** Putting your change on the chart. It is honest, and it also shows how much movement there was before it.
+- **Seasonality:** Regular movement caused by the calendar: term times, festivals, weather, paydays. It moves numbers more than most design changes do.
+
+**Quick example.** Made-up example. Plotting a tool-library metric over time, and plotting two points. The month before and the month after. Two bars, the second taller, and the change marked between them.
+
+The reader demonstrates and guides the task before asking for “The metric, across at least eight periods, labelled synthetic”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Take one metric over time, identify what could make it move without any design change, and rework a comparison into a cohort that controls for one of them.
 
 
-### Understand the idea · 1
+### Seasonality, campaigns, holidays and news move numbers on their own
 
 Section: learn. Stable action: learn-1.
 
 Seasonality, campaigns, holidays and news move numbers on their own.
 
 
-### Understand the idea · 2
+### New and returning people behave differently; mixing them hides both
 
 Section: learn. Stable action: learn-2.
 
 New and returning people behave differently; mixing them hides both.
 
 
-### Understand the idea · 3
+### A cohort follows one group over time and compares like with like
 
 Section: learn. Stable action: learn-3.
 
 A cohort follows one group over time and compares like with like.
 
 
-### Understand the idea · 4
+### Before-and-after comparisons carry every concurrent change with them
 
 Section: learn. Stable action: learn-4.
 
 Before-and-after comparisons carry every concurrent change with them.
 
 
-### Understand the idea · 5
+### State what you cannot control for; it is usually the most important part
 
 Section: learn. Stable action: learn-5.
 
 State what you cannot control for; it is usually the most important part.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The synthetic funnel was extended over eight weeks. Completions rose in week five, when the design shipped — and also when a local festival ended and a provider's promotion ran. Three non-design explanations were listed. The comparison was reworked as a cohort: people arriving in week two versus week six, followed for their first fourteen days, which removed the effect of the changing mix of new and returning visitors. The write-up stated plainly that the promotion could not be separated, that the numbers were synthetic, and that the exercise demonstrates the method rather than a result.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5442,6 +5792,40 @@ Open Your work and choose Ready for review. The next lesson presents all of this
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Time, cohorts and the number that moved by itself
+What I am trying to do: Take one metric over time, identify what could make it move without any design change, and rework a comparison into a cohort that controls for one of them.
+
+Key idea or terms:
+Over time: Enough periods to see what normal variation looks like. Two points look like a change; eight show whether it was one.
+Marking the ship point: Putting your change on the chart. It is honest, and it also shows how much movement there was before it.
+Seasonality: Regular movement caused by the calendar: term times, festivals, weather, paydays. It moves numbers more than most design changes do.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Plotting a tool-library metric over time, and plotting two points. The month before and the month after. Two bars, the second taller, and the change marked between them.
+
+Activity: Show one small synthetic result from the supplied case. Ask me what the number literally says, what context is missing and which decision it can support. Correct any claim that goes beyond the data.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The metric, across at least eight periods, labelled synthetic” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The metric, across at least eight periods, labelled synthetic”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The metric, across at least eight periods, labelled synthetic” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write everything that happened in that period that could affect the number, before writing any conclusion.
@@ -5511,7 +5895,7 @@ Adequate evidence: One alternative explicitly named as unresolvable with this da
 Repair: Choose the strongest alternative and write why your data cannot rule it out. Recheck: The named explanation.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson presents all of this to somebody without misleading them.
 
@@ -5549,58 +5933,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A stated condition that would change the conclusion
 - A note of what the audience remembered
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product analytics uses recorded events and numbers to answer a decision without hiding uncertainty or context. In this lesson, your first small result is: The decision the analysis supports, in one sentence, placed before any method.
+
+**Words you will use**
+
+- **Leading with the decision:** Putting what you are asking for first. Method first makes the audience wait, and they decide what they think during the waiting.
+- **On the chart:** Inside the picture, not in the caption or the notes. Charts get screenshotted and travel without anything around them.
+- **Interval on the chart:** The uncertainty drawn, usually as a range. It is the difference between a number and a measurement.
+
+**Quick example.** Made-up example. Presenting a tool-library analysis, and putting the caveats in the talking. One clean chart with a clear rise, and I explained carefully that the numbers were synthetic, the sample was three people, and a promotion had run in the same week.
+
+The reader demonstrates and guides the task before asking for “The decision this analysis supports, in one sentence”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Present one analysis to a stakeholder in a page or three slides, with the uncertainty visible, and record which part they remembered afterwards.
 
 
-### Understand the idea · 1
+### Lead with the decision the analysis supports, not the method
 
 Section: learn. Stable action: learn-1.
 
 Lead with the decision the analysis supports, not the method.
 
 
-### Understand the idea · 2
+### Put the uncertainty in the chart, not only in the notes
 
 Section: learn. Stable action: learn-2.
 
 Put the uncertainty in the chart, not only in the notes.
 
 
-### Understand the idea · 3
+### Say what would change your conclusion
 
 Section: learn. Stable action: learn-3.
 
 Say what would change your conclusion.
 
 
-### Understand the idea · 4
+### Never show a number without its denominator and period
 
 Section: learn. Stable action: learn-4.
 
 Never show a number without its denominator and period.
 
 
-### Understand the idea · 5
+### Expect the chart to travel alone; design it to survive that
 
 Section: learn. Stable action: learn-5.
 
 Expect the chart to travel alone; design it to survive that.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The analysis was presented in three slides. First: the decision — fix the held-place message before touching payment, because that is where the evidence points. Second: the evidence, with the funnel chart labelled synthetic, the sample of the qualitative work stated on the slide, and the interval shown on the one rate that appeared. Third: what would change the conclusion — if duplicate payments did not fall over four weeks, the cause is elsewhere. Afterwards, the person remembered the decision and the phrase “two of three”, which was the intended pair; nobody quoted a percentage, because none was shown.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6113,6 +6511,40 @@ Open Your work and choose Ready for review. The next lesson asks when measuring 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Presenting numbers without misleading anyone
+What I am trying to do: Present one analysis to a stakeholder in a page or three slides, with the uncertainty visible, and record which part they remembered afterwards.
+
+Key idea or terms:
+Leading with the decision: Putting what you are asking for first. Method first makes the audience wait, and they decide what they think during the waiting.
+On the chart: Inside the picture, not in the caption or the notes. Charts get screenshotted and travel without anything around them.
+Interval on the chart: The uncertainty drawn, usually as a range. It is the difference between a number and a measurement.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Presenting a tool-library analysis, and putting the caveats in the talking. One clean chart with a clear rise, and I explained carefully that the numbers were synthetic, the sample was three people, and a promotion had run in the same week.
+
+Activity: Show one small synthetic result from the supplied case. Ask me what the number literally says, what context is missing and which decision it can support. Correct any claim that goes beyond the data.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The decision this analysis supports, in one sentence” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The decision this analysis supports, in one sentence”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The decision this analysis supports, in one sentence” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Move your recommendation to the top and cut everything before it.
@@ -6182,7 +6614,7 @@ Adequate evidence: A record of what they took away and a change to the material 
 Repair: Ask someone what they took from it a day later, and fix whatever they got wrong. Recheck: The takeaway record.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson asks when measuring is the wrong thing to do at all.
 
@@ -6220,58 +6652,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - What you will do instead, including how you would notice a mistake
 - One measurement refused on ethical grounds, with the reason
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product analytics uses recorded events and numbers to answer a decision without hiding uncertainty or context. In this lesson, your first small result is: Decisions currently waiting for evidence, each marked for how reversible it is.
+
+**Words you will use**
+
+- **Reversible decision:** One you could undo next week at no cost to anybody. Most wording and layout decisions are; anything touching data other people rely on usually is not.
+- **Waiting for data:** A decision with its own cost: the current problem continues while everybody feels rigorous.
+- **Cost of measuring:** Time, traffic, delay and the work of running it. At small scale the delay is usually the largest part.
+
+**Quick example.** Made-up example. Judging how reversible a tool-library decision is, and judging it from my own side. Removing a field from the booking form. From where I sat it was one of the most reversible things imaginable: five minutes to put back.
+
+The reader demonstrates and guides the task before asking for “Decisions currently waiting for evidence”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Identify two decisions in your work that should not wait for data, and write what you would do instead and why that is defensible.
 
 
-### Understand the idea · 1
+### Compare the cost of measuring with the cost of being wrong
 
 Section: learn. Stable action: learn-1.
 
 Compare the cost of measuring with the cost of being wrong.
 
 
-### Understand the idea · 2
+### Reversible, low-cost decisions rarely justify measurement
 
 Section: learn. Stable action: learn-2.
 
 Reversible, low-cost decisions rarely justify measurement.
 
 
-### Understand the idea · 3
+### Ethical limits exist: some things should not be measured on people
 
 Section: learn. Stable action: learn-3.
 
 Ethical limits exist: some things should not be measured on people.
 
 
-### Understand the idea · 4
+### Some questions are answerable by asking three people this afternoon
 
 Section: learn. Stable action: learn-4.
 
 Some questions are answerable by asking three people this afternoon.
 
 
-### Understand the idea · 5
+### Waiting for data is a decision with its own cost
 
 Section: learn. Stable action: learn-5.
 
 Waiting for data is a decision with its own cost.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Two decisions were identified. First: the wording of the held-place message. Cheap to change, cheap to reverse, no traffic to test it with — the decision was to write the clearest version, ship it, and ask three people the following week. Second: whether to shorten the booking form by removing a field. This affects data the provider relies on, so removal is not cheaply reversible; the decision was to ask the provider what the field is used for before touching it. One measurement was refused outright: a proposal to test which cancellation flow produced fewer cancellations, which would have been a test of how well the flow obstructs people.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6787,6 +7233,40 @@ Open Your work and choose Ready for review. The next lesson writes the plan you 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: When not to measure
+What I am trying to do: Identify two decisions in your work that should not wait for data, and write what you would do instead and why that is defensible.
+
+Key idea or terms:
+Reversible decision: One you could undo next week at no cost to anybody. Most wording and layout decisions are; anything touching data other people rely on usually is not.
+Waiting for data: A decision with its own cost: the current problem continues while everybody feels rigorous.
+Cost of measuring: Time, traffic, delay and the work of running it. At small scale the delay is usually the largest part.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Judging how reversible a tool-library decision is, and judging it from my own side. Removing a field from the booking form. From where I sat it was one of the most reversible things imaginable: five minutes to put back.
+
+Activity: Show one small synthetic result from the supplied case. Ask me what the number literally says, what context is missing and which decision it can support. Correct any claim that goes beyond the data.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Decisions currently waiting for evidence” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Decisions currently waiting for evidence”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Decisions currently waiting for evidence” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - List what you are waiting on and ask how hard each would be to undo.
@@ -6856,7 +7336,7 @@ Adequate evidence: A refusal on ethical grounds with what you would say if asked
 Repair: Ask which experiment you would be uncomfortable explaining to a participant, and write the refusal. Recheck: The refusal.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes the plan you could actually start on Monday.
 
@@ -6894,58 +7374,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A review date and an owner
 - A list of questions the plan cannot answer
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product analytics uses recorded events and numbers to answer a decision without hiding uncertainty or context. In this lesson, your first small result is: An inventory of records that already exist, plus what you could count by hand and who you could ask.
+
+**Words you will use**
+
+- **Existing records:** What the organisation already keeps without calling it data: payment records, a booking book, a support inbox. It is usually the best source available.
+- **Counting by hand:** Going through a month of records with a pencil. It is slow, accurate and available today, and it is how most small organisations should start.
+- **Obtainable:** Available from a record, a count or a conversation you could arrange this month. Anything needing new tooling is a plan for later.
+
+**Quick example.** Made-up example. Inventorying what a tool library records, and asking the wrong question. “Do you have any analytics?” The answer was no, and I wrote down that there was no data available.
+
+The reader demonstrates and guides the task before asking for “Records the product or the provider already keeps”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write a measurement plan for your project that uses only what you can obtain, states what each measure supports, and names the questions it leaves unanswered.
 
 
-### Understand the idea · 1
+### Idea 1: Build from what you can obtain: provider records, manual count…
 
 Section: learn. Stable action: learn-1.
 
 Build from what you can obtain: provider records, manual counts, conversations.
 
 
-### Understand the idea · 2
+### State per measure what claim it supports and what it does not
 
 Section: learn. Stable action: learn-2.
 
 State per measure what claim it supports and what it does not.
 
 
-### Understand the idea · 3
+### Set a review date, or the plan becomes a document
 
 Section: learn. Stable action: learn-3.
 
 Set a review date, or the plan becomes a document.
 
 
-### Understand the idea · 4
+### Keep it small: three measures you collect beat ten you intend to
 
 Section: learn. Stable action: learn-4.
 
 Keep it small: three measures you collect beat ten you intend to.
 
 
-### Understand the idea · 5
+### Name the questions that stay unanswered
 
 Section: learn. Stable action: learn-5.
 
 Name the questions that stay unanswered.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The plan had three measures, each with a claim and a limit. Duplicate payments per hundred bookings, from the provider's records, monthly — supports a statement about payment confusion, not about its cause. Cancellations within 24 hours of booking, monthly — supports a statement about commitment confidence, not about satisfaction. Five conversations a quarter with recent bookers — supports mechanisms, not prevalence. Review date set. Unanswered: anything about people who never reached the site, anything about how the numbers compare with similar providers, and anything at population scale.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7479,6 +7973,40 @@ Open Your work and choose Ready for review. The last lesson of the module writes
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: A measurement plan you could actually run
+What I am trying to do: Write a measurement plan for your project that uses only what you can obtain, states what each measure supports, and names the questions it leaves unanswered.
+
+Key idea or terms:
+Existing records: What the organisation already keeps without calling it data: payment records, a booking book, a support inbox. It is usually the best source available.
+Counting by hand: Going through a month of records with a pencil. It is slow, accurate and available today, and it is how most small organisations should start.
+Obtainable: Available from a record, a count or a conversation you could arrange this month. Anything needing new tooling is a plan for later.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Inventorying what a tool library records, and asking the wrong question. “Do you have any analytics?” The answer was no, and I wrote down that there was no data available.
+
+Activity: Show one small synthetic result from the supplied case. Ask me what the number literally says, what context is missing and which decision it can support. Correct any claim that goes beyond the data.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Records the product or the provider already keeps” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Records the product or the provider already keeps”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Records the product or the provider already keeps” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Replace any measure needing tooling with one you could collect this month.
@@ -7548,7 +8076,7 @@ Adequate evidence: A list of what the plan cannot answer, including scale and ca
 Repair: Write the questions people will ask that these three measures cannot address. Recheck: The unanswered list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The last lesson of the module writes down what none of this can say.
 
@@ -7586,58 +8114,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A rehearsed reply to a request for a stronger claim
 - A recorded temptation, named honestly
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product analytics uses recorded events and numbers to answer a decision without hiding uncertainty or context. In this lesson, your first small result is: Every caveat from this module gathered onto one page and grouped by kind.
+
+**Words you will use**
+
+- **Limitations page:** One reusable page saying what your quantitative work can and cannot support. Written once, it saves rewriting the same sentences in every document.
+- **Grouping by kind:** Synthetic, small-sample and unavailable are three different problems with three different answers. Grouped by lesson they look like a list of excuses.
+- **Synthetic:** Invented numbers. They can demonstrate a method and say nothing whatever about your product.
+
+**Quick example.** Made-up example. Writing the limitations page for a tool-library project, and writing it as one list. Fourteen bullet points, in the order the lessons came. Synthetic funnels next to a twenty-two person survey next to the absence of analytics.
+
+The reader demonstrates and guides the task before asking for “Every caveat from this module, gathered onto one page”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write the limitations page for all your quantitative work in this module, and rehearse defending one honest conclusion against pressure for a stronger one.
 
 
-### Understand the idea · 1
+### Collect every limitation into one page you can reuse
 
 Section: learn. Stable action: learn-1.
 
 Collect every limitation into one page you can reuse.
 
 
-### Understand the idea · 2
+### Distinguish synthetic data, small samples and unavailable measures
 
 Section: learn. Stable action: learn-2.
 
 Distinguish synthetic data, small samples and unavailable measures.
 
 
-### Understand the idea · 3
+### Prepare the sentence you will say when asked for a stronger claim
 
 Section: learn. Stable action: learn-3.
 
 Prepare the sentence you will say when asked for a stronger claim.
 
 
-### Understand the idea · 4
+### Offer what you can support instead of what you cannot
 
 Section: learn. Stable action: learn-4.
 
 Offer what you can support instead of what you cannot.
 
 
-### Understand the idea · 5
+### Record where you were tempted; that is where you will slip later
 
 Section: learn. Stable action: learn-5.
 
 Record where you were tempted; that is where you will slip later.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The limitations page listed: all funnel figures synthetic and labelled; the survey at 22 responses through two groups; usability findings from three and then two participants; no analytics and no traffic, so no rate is reportable at population scale; the cohort exercise demonstrating method on synthetic data only. The rehearsed exchange: asked for the percentage improvement, the answer was “I cannot give you one honestly — what I have is that two of three participants could not tell their place was held, and duplicate payments in the provider's records over the next month would tell us whether the change helped. I can have that number in four weeks.” The temptation recorded: wanting to present the synthetic funnel without the label because it looked convincing.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -8183,6 +8725,40 @@ Open Your work and choose Ready for review. This closes Module 15. Module 16 tur
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: What your numbers cannot say
+What I am trying to do: Write the limitations page for all your quantitative work in this module, and rehearse defending one honest conclusion against pressure for a stronger one.
+
+Key idea or terms:
+Limitations page: One reusable page saying what your quantitative work can and cannot support. Written once, it saves rewriting the same sentences in every document.
+Grouping by kind: Synthetic, small-sample and unavailable are three different problems with three different answers. Grouped by lesson they look like a list of excuses.
+Synthetic: Invented numbers. They can demonstrate a method and say nothing whatever about your product.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing the limitations page for a tool-library project, and writing it as one list. Fourteen bullet points, in the order the lessons came. Synthetic funnels next to a twenty-two person survey next to the absence of analytics.
+
+Activity: Show one small synthetic result from the supplied case. Ask me what the number literally says, what context is missing and which decision it can support. Correct any claim that goes beyond the data.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every caveat from this module, gathered onto one page” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every caveat from this module, gathered onto one page”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Every caveat from this module, gathered onto one page” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Go through each lesson's output and copy its limitation into one file.
@@ -8252,7 +8828,7 @@ Adequate evidence: A named moment where you wanted to overstate, with what made 
 Repair: Look back through the module for the number you wished were stronger, and write it down. Recheck: The temptation note.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This closes Module 15. Module 16 turns to AI-assisted work and AI products.
 

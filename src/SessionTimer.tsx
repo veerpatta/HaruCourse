@@ -72,7 +72,7 @@ export function SessionTimer({
           {running && <span className="session-timer-dot" aria-hidden />}
           {formatClock(lessonMs)}
         </span>
-        <span className="session-timer-sub">Lesson time · {sub}</span>
+        <span className="session-timer-sub">Time spent in this lesson · {sub}</span>
       </div>
       <div className="session-timer-actions">
         <button
@@ -97,8 +97,8 @@ export function SessionTimer({
       <p className="timer-live" aria-live="polite">
         {timer.notice}
       </p>
-      <details className="timer-details"><summary>Time details · {humanDuration(record.minutes)} saved</summary>
-        <p>Automatic time pauses outside the course and after five quiet minutes. Add work in another app or on paper below.</p>
+      <details className="timer-details"><summary>How time works · {humanDuration(record.minutes)} saved</summary>
+        <p>This timer records time while you actively use this course. It pauses when you leave the course or do nothing here for five minutes. Use the controls below to add time spent in another app or on paper. Recorded time never marks practice complete.</p>
         <TimeAdjust minutes={record.minutes} onAdd={timer.addMinutes} onSetTotal={timer.setTotal}/>
       </details>
     </div>

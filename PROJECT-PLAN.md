@@ -1,3 +1,9 @@
+## Current planning milestone — beginner understanding, 13 September 2026
+
+Deliver a Markdown-only researched plan responding to reported beginner confusion. The [main plan](docs/BEGINNER-EXPERIENCE-PLAN.md) owns scope, priorities, phases, acceptance gates and rollback; [the all-lesson map](docs/BEGINNER-LESSON-PLAN.md) covers 224 stable teaching IDs; [the AI activity guide](docs/AI-LEARNING-ACTIVITIES.md) supplies bounded learning conversations; [research notes](docs/BEGINNER-RESEARCH.md) distinguish inspected material from unverified workflows.
+
+Proposed implementation order, when implementation is requested: observe/draft Lesson 1; validate one complete pilot; test representative difficulty types; refine m01–m07, m08–m14 and m15–m20 in prerequisite order with individual lesson review; then release and record actual evidence under applicable authorization. Preserve required outputs and all record identities. This planning milestone does not alter the app, generated lesson documents, learner records or deployment. Prior release evidence below remains historical; PROGRESS.md records the actual result of this milestone separately.
+
 ## Approved all-course action expansion — 13 September 2026
 
 The creator explicitly approved continuing the saved-action pattern from Module 6 through Module 20. All 224 published teaching lessons now use the saved Learn → Do → Check → Your work action reader while retaining the authored teaching, routes, demonstrations, checks and all 2,866 worksheet field IDs. The later-module plans are derived from each lesson's own recommended/alternative route and its check instructions; every Check links back to the worksheet step it names. Publication, learner observation and formal assessment remain separate and must be reported honestly. Follow the current contract and [all-course action verification](docs/VERIFICATION-ALL-ACTIONS.md).
@@ -50,6 +56,12 @@ This milestone does not author m05 onward, implement formal assessment, synchron
 The earlier milestone below is historical context. Modules m03/m04 were published in parallel and are preserved in this integrated release; continue future authoring from the current blueprint.
 
 # HaruCourse project plan
+
+## Active implementation — beginner teaching across all lessons, 13 September 2026
+
+Implement the approved beginner-comprehension pattern for all 224 lessons from Lesson 1 through m20. Each lesson must open in everyday language, define unfamiliar terms at the point of use, show a supplied example before independent work and keep exact what/where/how/enough guidance beside the answer. Add one optional bounded text-AI learning activity after supported practice, with a complete in-course alternative and an explicit return to the learner's own saved answer. Keep m00 uncoached, all existing required outputs and stable record identities, automatic in-course time, manual external time and explicit practice completion.
+
+Acceptance requires regenerated lesson Markdown, all content/worksheet/action/learning/build checks and representative phone/desktop browser checks across the scope. Record learner observation and release separately; neither is implied by local implementation.
 
 Updated 6 September 2026. The educational authority is COURSE-REQUIREMENTS.md and the unchanged COURSE-VISION-ORIGINAL.md. The full sequence is COURSE-BLUEPRINT.md; resource research, comparisons, supporting programs and gaps are in RESOURCE-LIBRARY.md. Future agents start at AGENTS.md.
 

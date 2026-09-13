@@ -23,58 +23,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A list of what will never go into a model you do not control
 - A verification rule for anything a model asserts
 
-### Start with a clear task
+### Start here: in everyday words
+
+AI-assisted product work starts with a bounded task, checks every important output and keeps the human responsible for the decision. In this lesson, your first small result is: The difference between assisted work and an AI product in your own words, with one example of each from your own work.
+
+**Words you will use**
+
+- **AI-assisted work:** Using a model to help you do your job. The risk is to the quality and honesty of your own work.
+- **An AI product:** Designing something that uses a model for somebody else. The risk lands on them, and they did not choose the tool.
+- **A good use:** One where the judgement stays with you: first drafts, alternatives to react against, explaining a term you will then check.
+
+**Quick example.** Made-up example. Writing rules for using assistance, and writing them as principles. “Use AI responsibly. Always check the output. Never compromise participant privacy.” Three lines nobody could disagree with.
+
+The reader demonstrates and guides the task before asking for “The difference between assisted work and an AI product, in your own words”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Separate AI-assisted work from AI-containing products in your own practice, and write the rules you will hold to for each.
 
 
-### Understand the idea · 1
+### Idea 1: AI-assisted work is about your process; AI products are about…
 
 Section: learn. Stable action: learn-1.
 
 AI-assisted work is about your process; AI products are about someone else's experience.
 
 
-### Understand the idea · 2
+### Assistance can accelerate drafting and cannot supply evidence
 
 Section: learn. Stable action: learn-2.
 
 Assistance can accelerate drafting and cannot supply evidence.
 
 
-### Understand the idea · 3
+### Idea 3: Never put participant data, notes or recordings into a model y…
 
 Section: learn. Stable action: learn-3.
 
 Never put participant data, notes or recordings into a model you do not control.
 
 
-### Understand the idea · 4
+### Anything a model asserts is a claim to verify, not a finding
 
 Section: learn. Stable action: learn-4.
 
 Anything a model asserts is a claim to verify, not a finding.
 
 
-### Understand the idea · 5
+### Write your own rules before you are under deadline pressure
 
 Section: learn. Stable action: learn-5.
 
 Write your own rules before you are under deadline pressure.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The rules were written in two halves. Assistance: acceptable for drafting message wording to react against, for generating alternative phrasings, for explaining an unfamiliar technical term, and for checking my own writing for jargon. Never: research notes, participant details, recordings, anything identifying, or anything a client has not agreed can leave their systems. Always verify: any factual claim, any statistic, any assertion about what people do. AI products: to be treated as a separate design problem with its own module rules about control, failure and disclosure.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -601,6 +615,40 @@ Open Your work and choose Ready for review. The next lesson tests the rules on t
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Two different subjects
+What I am trying to do: Separate AI-assisted work from AI-containing products in your own practice, and write the rules you will hold to for each.
+
+Key idea or terms:
+AI-assisted work: Using a model to help you do your job. The risk is to the quality and honesty of your own work.
+An AI product: Designing something that uses a model for somebody else. The risk lands on them, and they did not choose the tool.
+A good use: One where the judgement stays with you: first drafts, alternatives to react against, explaining a term you will then check.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing rules for using assistance, and writing them as principles. “Use AI responsibly. Always check the output. Never compromise participant privacy.” Three lines nobody could disagree with.
+
+Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The difference between assisted work and an AI product, in your own words” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The difference between assisted work and an AI product, in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The difference between assisted work and an AI product, in your own words” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write one thing you might use a model for in your process and one product feature that would contain a model.
@@ -670,7 +718,7 @@ Adequate evidence: A rule stating what is always checked and where.
 Repair: Write which kinds of claim you will always verify and against what. Recheck: The verification rule.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson tests the rules on three real tasks.
 
@@ -708,58 +756,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A verification record for any fact or claim used
 - A pattern of errors noted across the three
 
-### Start with a clear task
+### Start here: in everyday words
+
+AI-assisted product work starts with a bounded task, checks every important output and keeps the human responsible for the decision. In this lesson, your first small result is: Three real tasks of different kinds, each with a prediction, and an honest note of what access you have.
+
+**Words you will use**
+
+- **Predicting first:** Writing what you expect before running it. Without it, the result becomes whatever story is easiest to tell afterwards.
+- **No access:** A complete route through this lesson. Predict what assistance would produce, do the task, and record what you actually did.
+- **Raw output:** What came back before you edited it. Kept, it shows how much of the final thing was yours; unkept, you will overestimate the help.
+
+**Quick example.** Made-up example. Choosing three tasks to test assistance on, and choosing three of the same kind. Drafting error messages, drafting empty-state wording, and drafting a set of button labels. Three real tasks and three afternoons of work.
+
+The reader demonstrates and guides the task before asking for “Three real tasks of different kinds”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Use assistance on three design tasks, and for each record what it saved, what it got wrong, and what you had to do anyway.
 
 
-### Understand the idea · 1
+### Idea 1: Good uses: first drafts, alternatives to react against, explai…
 
 Section: learn. Stable action: learn-1.
 
 Good uses: first drafts, alternatives to react against, explaining unfamiliar terms.
 
 
-### Understand the idea · 2
+### Idea 2: Poor uses: anything requiring evidence, judgement about your u…
 
 Section: learn. Stable action: learn-2.
 
 Poor uses: anything requiring evidence, judgement about your users, or novelty.
 
 
-### Understand the idea · 3
+### The output is a starting point; the editing is where the work happens
 
 Section: learn. Stable action: learn-3.
 
 The output is a starting point; the editing is where the work happens.
 
 
-### Understand the idea · 4
+### Verify every fact, name, number and claim before repeating it
 
 Section: learn. Stable action: learn-4.
 
 Verify every fact, name, number and claim before repeating it.
 
 
-### Understand the idea · 5
+### Record what it got wrong; the pattern of errors is the useful knowledge
 
 Section: learn. Stable action: learn-5.
 
 Record what it got wrong; the pattern of errors is the useful knowledge.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three tasks were logged. Drafting twenty error-message variants: useful — three were usable after editing, the rest were generic, and it took ten minutes rather than forty. Explaining a technical term an engineer used: useful, and the explanation was verified against documentation before being repeated, where one detail turned out to be wrong. Summarising five interview notes: refused under the data rule, and done by hand, which took two hours and produced the contradiction that became the study's main finding — a contradiction the earlier trial summary had smoothed away.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1290,6 +1352,40 @@ Open Your work and choose Ready for review. The next lesson moves from your own 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Using assistance without losing the work
+What I am trying to do: Use assistance on three design tasks, and for each record what it saved, what it got wrong, and what you had to do anyway.
+
+Key idea or terms:
+Predicting first: Writing what you expect before running it. Without it, the result becomes whatever story is easiest to tell afterwards.
+No access: A complete route through this lesson. Predict what assistance would produce, do the task, and record what you actually did.
+Raw output: What came back before you edited it. Kept, it shows how much of the final thing was yours; unkept, you will overestimate the help.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Choosing three tasks to test assistance on, and choosing three of the same kind. Drafting error messages, drafting empty-state wording, and drafting a set of button labels. Three real tasks and three afternoons of work.
+
+Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Three real tasks of different kinds” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Three real tasks of different kinds”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Three real tasks of different kinds” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Choose tasks of different shapes — drafting, explaining, analysing — and predict before running each.
@@ -1359,7 +1455,7 @@ Adequate evidence: A written pattern in the errors, with a rule updated as a res
 Repair: Read the three logs together and write what the failures had in common. Recheck: The pattern note.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson moves from your own use to designing something other people will use.
 
@@ -1397,58 +1493,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Cheap disagreement: dismiss, edit or ignore
 - A rejected confidence display with the reason
 
-### Start with a clear task
+### Start here: in everyday words
+
+AI-assisted product work starts with a bounded task, checks every important output and keeps the human responsible for the decision. In this lesson, your first small result is: One plausible feature named, with why a model rather than a rule.
+
+**Words you will use**
+
+- **Sometimes wrong:** The defining property. A feature that is right most of the time is a different design problem from one that is right always, and the difference is what the person is told.
+- **A rule instead:** Most recent first, most borrowed first, nearest branch. Half of the features people want a model for are a sorted list with a good heading.
+- **Setting expectations:** Saying what this is before the first output, rather than apologising after the first error. It is the cheapest thing in the whole module.
+
+**Quick example.** Made-up example. Choosing an AI feature for a tool library, and choosing one that did not need a model. Personalised suggestions: tools you might want, chosen by a model from your borrowing history and everybody else’s.
+
+The reader demonstrates and guides the task before asking for “One place a model could plausibly help in your product, and what it would do”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Design one AI feature's normal state so that a person can tell how much to trust it, without showing them a number they cannot interpret.
 
 
-### Understand the idea · 1
+### State what the feature does and what it is for, in the interface
 
 Section: learn. Stable action: learn-1.
 
 State what the feature does and what it is for, in the interface.
 
 
-### Understand the idea · 2
+### Set expectations before the first output, not after the first error
 
 Section: learn. Stable action: learn-2.
 
 Set expectations before the first output, not after the first error.
 
 
-### Understand the idea · 3
+### A confidence percentage is usually meaningless to a reader
 
 Section: learn. Stable action: learn-3.
 
 A confidence percentage is usually meaningless to a reader.
 
 
-### Understand the idea · 4
+### Show the basis: what it used, so the person can judge it
 
 Section: learn. Stable action: learn-4.
 
 Show the basis: what it used, so the person can judge it.
 
 
-### Understand the idea · 5
+### Design the ordinary case as though it will sometimes be wrong
 
 Section: learn. Stable action: learn-5.
 
 Design the ordinary case as though it will sometimes be wrong.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The feature: suggesting classes a person might book. The normal state says “Suggested from classes you booked before and their times”, which is the basis rather than a score. Suggestions are presented as a list to scan rather than a single answer, each can be dismissed with one tap, and dismissal is remembered. No booking is ever made from a suggestion without the review screen. A confidence percentage was designed and rejected, with the reason recorded: in a small test, three of three people read anything above 70 per cent as “this is right”.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1982,6 +2092,40 @@ Open Your work and choose Ready for review. The next lesson keeps the person in 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Designing for a system that is sometimes wrong
+What I am trying to do: Design one AI feature's normal state so that a person can tell how much to trust it, without showing them a number they cannot interpret.
+
+Key idea or terms:
+Sometimes wrong: The defining property. A feature that is right most of the time is a different design problem from one that is right always, and the difference is what the person is told.
+A rule instead: Most recent first, most borrowed first, nearest branch. Half of the features people want a model for are a sorted list with a good heading.
+Setting expectations: Saying what this is before the first output, rather than apologising after the first error. It is the cheapest thing in the whole module.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Choosing an AI feature for a tool library, and choosing one that did not need a model. Personalised suggestions: tools you might want, chosen by a model from your borrowing history and everybody else’s.
+
+Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “One place a model could plausibly help in your product, and what it would do” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “One place a model could plausibly help in your product, and what it would do”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “One place a model could plausibly help in your product, and what it would do” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the sentence a first-time user sees before any output, and place it in the design.
@@ -2051,7 +2195,7 @@ Adequate evidence: A designed display plus a written rejection with the reasonin
 Repair: Draw the version with a score, show it to two people and ask what it means to them. Recheck: The rejection note.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson keeps the person in control of what it produces.
 
@@ -2089,58 +2233,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A check that the product works with the feature off
 - An override path available before the action
 
-### Start with a clear task
+### Start here: in everyday words
+
+AI-assisted product work starts with a bounded task, checks every important output and keeps the human responsible for the decision. In this lesson, your first small result is: The four control situations named and described for your own feature.
+
+**Words you will use**
+
+- **Control:** Being able to change what the system does. Looking past it is not control; it is tolerance.
+- **The four:** Correct a nearly-right output, override it entirely, turn it off, and undo what it did. Most features design one of the four.
+- **Correction that teaches:** A change that affects future output. If it does not, saying so is better than letting people assume it does.
+
+**Quick example.** Made-up example. Naming the four control situations for a tool-library suggestion feature, and designing the one that was obvious. A thumbs-down on each suggestion, because that is the control every product of this kind has and it was the one I thought of first.
+
+The reader demonstrates and guides the task before asking for “Correct, override, disable, undo: what each means for your feature”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Specify the control surface for your AI feature: how a person corrects it, overrides it, turns it off, and undoes what it did.
 
 
-### Understand the idea · 1
+### Four controls: correct, override, disable, undo
 
 Section: learn. Stable action: learn-1.
 
 Four controls: correct, override, disable, undo.
 
 
-### Understand the idea · 2
+### Correction should teach the system, or say plainly that it does not
 
 Section: learn. Stable action: learn-2.
 
 Correction should teach the system, or say plainly that it does not.
 
 
-### Understand the idea · 3
+### Override must be available before the action, not only after
 
 Section: learn. Stable action: learn-3.
 
 Override must be available before the action, not only after.
 
 
-### Understand the idea · 4
+### Idea 4: Disabling must be findable, and the product must work without…
 
 Section: learn. Stable action: learn-4.
 
 Disabling must be findable, and the product must work without the feature.
 
 
-### Understand the idea · 5
+### Undo is the safety net for everything the other three missed
 
 Section: learn. Stable action: learn-5.
 
 Undo is the safety net for everything the other three missed.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The control surface for the suggestion feature. Correct: dismissing a suggestion removes it and, in this design, does change future suggestions — and the interface says so in one sentence. Override: the search remains available and prominent, so a person who knows what they want never has to engage with suggestions at all. Disable: a setting in the account section, one level deep, with the product fully usable without suggestions, checked by walking the main task with them off. Undo: nothing irreversible follows a suggestion, and the one action that persists — a dismissal — can be reversed for the session.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2650,6 +2808,40 @@ Open Your work and choose Ready for review. The next lesson designs what happens
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Keeping the person in control
+What I am trying to do: Specify the control surface for your AI feature: how a person corrects it, overrides it, turns it off, and undoes what it did.
+
+Key idea or terms:
+Control: Being able to change what the system does. Looking past it is not control; it is tolerance.
+The four: Correct a nearly-right output, override it entirely, turn it off, and undo what it did. Most features design one of the four.
+Correction that teaches: A change that affects future output. If it does not, saying so is better than letting people assume it does.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Naming the four control situations for a tool-library suggestion feature, and designing the one that was obvious. A thumbs-down on each suggestion, because that is the control every product of this kind has and it was the one I thought of first.
+
+Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Correct, override, disable, undo: what each means for your feature” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Correct, override, disable, undo: what each means for your feature”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Correct, override, disable, undo: what each means for your feature” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the four situations and design the control each one needs.
@@ -2719,7 +2911,7 @@ Adequate evidence: A path for someone who already knows what they want, without 
 Repair: Design the route an experienced person takes and check it is not slower than accepting a suggestion. Recheck: The override path.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson designs what happens when it is wrong.
 
@@ -2757,58 +2949,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A reporting route with a named accountable owner
 - A check that no failure leaves the person without a route
 
-### Start with a clear task
+### Start here: in everyday words
+
+AI-assisted product work starts with a bounded task, checks every important output and keeps the human responsible for the decision. In this lesson, your first small result is: The three failures described for your own feature, and what the governance reading asks about accountability.
+
+**Words you will use**
+
+- **Confidently wrong:** Output that is incorrect and carries no signal that it is. It is the dangerous failure, because the person has nothing to go on.
+- **Cannot answer:** A legitimate outcome that needs its own design. Left undesigned it becomes an empty space or a fabricated answer.
+- **Harmful output:** Something offensive, dangerous or damaging. It needs a route to a person rather than a dismissal.
+
+**Quick example.** Made-up example. Listing the failures of a tool-library suggestion feature, and listing the ones I could fix. Suggests a tool that is out on loan, and suggests something from the wrong branch. Two failures, both fixable with better data.
+
+The reader demonstrates and guides the task before asking for “Confidently wrong, cannot answer, harmful output: what each would look like here”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Design what your AI feature does when it is confidently wrong, when it cannot answer, and when it produces something harmful, with the wording for each.
 
 
-### Understand the idea · 1
+### Three failures: confidently wrong, cannot answer, and harmful output
 
 Section: learn. Stable action: learn-1.
 
 Three failures: confidently wrong, cannot answer, and harmful output.
 
 
-### Understand the idea · 2
+### Confidently wrong is the dangerous one; the person has no signal
 
 Section: learn. Stable action: learn-2.
 
 Confidently wrong is the dangerous one; the person has no signal.
 
 
-### Understand the idea · 3
+### Not answering is a legitimate outcome and needs its own design
 
 Section: learn. Stable action: learn-3.
 
 Not answering is a legitimate outcome and needs its own design.
 
 
-### Understand the idea · 4
+### Harmful output needs a route to a person, not only a dismissal
 
 Section: learn. Stable action: learn-4.
 
 Harmful output needs a route to a person, not only a dismissal.
 
 
-### Understand the idea · 5
+### Say what happened without pretending the system understood
 
 Section: learn. Stable action: learn-5.
 
 Say what happened without pretending the system understood.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three failures designed. Confidently wrong: suggestions always show their basis and are never the only route, so a wrong suggestion costs one glance; the review screen still shows the full details before any commitment. Cannot answer: “No suggestions yet — you can search classes by day or place”, with the search immediately available rather than a placeholder list. Harmful: a report control on every suggestion, a route to the provider's phone number, and a statement that reports are read by a person — with the owner named internally, since the framework's governance function asks who is accountable.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3337,6 +3543,40 @@ Open Your work and choose Ready for review. The next lesson asks whether this sh
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Designing the failures
+What I am trying to do: Design what your AI feature does when it is confidently wrong, when it cannot answer, and when it produces something harmful, with the wording for each.
+
+Key idea or terms:
+Confidently wrong: Output that is incorrect and carries no signal that it is. It is the dangerous failure, because the person has nothing to go on.
+Cannot answer: A legitimate outcome that needs its own design. Left undesigned it becomes an empty space or a fabricated answer.
+Harmful output: Something offensive, dangerous or damaging. It needs a route to a person rather than a dismissal.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Listing the failures of a tool-library suggestion feature, and listing the ones I could fix. Suggests a tool that is out on loan, and suggests something from the wrong branch. Two failures, both fixable with better data.
+
+Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Confidently wrong, cannot answer, harmful output: what each would look like here” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Confidently wrong, cannot answer, harmful output: what each would look like here”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Confidently wrong, cannot answer, harmful output: what each would look like here” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write what a person sees and can do in each of the three cases.
@@ -3406,7 +3646,7 @@ Adequate evidence: Each failure design ends with something the person can do.
 Repair: For each failure write the next action, and check it works without the AI feature. Recheck: The routes.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson asks whether this should be a conversation at all.
 
@@ -3444,58 +3684,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A decision with the reasoning recorded
 - A note of what the rejected version did better
 
-### Start with a clear task
+### Start here: in everyday words
+
+AI-assisted product work starts with a bounded task, checks every important output and keeps the human responsible for the decision. In this lesson, your first small result is: One task named, with its common case and an example from its long tail.
+
+**Words you will use**
+
+- **Common case:** What most people want most of the time. It is usually expressible in three or four choices.
+- **Long tail:** The unusual requests, each rare, together common. They are where free text earns its place.
+- **Example prompt:** The sample request shown beside the box. It is how people learn what is possible, and without it a text box is a guessing game.
+
+**Quick example.** Made-up example. Designing tool-finding as a conversation for a tool library, and watching somebody use it. A text box with the line “Ask me anything about tools”, and a model interpreting the request. It handled complicated sentences impressively.
+
+The reader demonstrates and guides the task before asking for “The task, its common case, and an example of its long tail”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Design one task two ways — as a conversation and as a form or list — and write which is better for whom, with the reasons.
 
 
-### Understand the idea · 1
+### A conversation hides what is possible; a form shows it
 
 Section: learn. Stable action: learn-1.
 
 A conversation hides what is possible; a form shows it.
 
 
-### Understand the idea · 2
+### Idea 2: Free text is expressive and expensive: people must compose rat…
 
 Section: learn. Stable action: learn-2.
 
 Free text is expressive and expensive: people must compose rather than choose.
 
 
-### Understand the idea · 3
+### Conversations suit open, unfamiliar or long-tail requests
 
 Section: learn. Stable action: learn-3.
 
 Conversations suit open, unfamiliar or long-tail requests.
 
 
-### Understand the idea · 4
+### Structured interfaces suit repeated, comparable and precise ones
 
 Section: learn. Stable action: learn-4.
 
 Structured interfaces suit repeated, comparable and precise ones.
 
 
-### Understand the idea · 5
+### Mixed is normal: structure for the common path, text for the exception
 
 Section: learn. Stable action: learn-5.
 
 Mixed is normal: structure for the common path, text for the exception.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Finding a class was designed twice. As a conversation: a text box, an example prompt, and a model interpreting requests — which handled “something for my daughter on Saturday morning near the station” well and required the person to know that was possible. As a list with filters: day, time, place and age, all visible, three taps, and no composition. Comparison: the structured version was better for the common case and for anyone typing on a phone; the conversation was better for the unusual request, which was about one in ten. The design kept the filters as the primary route with a text field for anything they could not express.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4033,6 +4287,40 @@ Open Your work and choose Ready for review. The next lesson explains what the sy
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Conversational interfaces, and their alternatives
+What I am trying to do: Design one task two ways — as a conversation and as a form or list — and write which is better for whom, with the reasons.
+
+Key idea or terms:
+Common case: What most people want most of the time. It is usually expressible in three or four choices.
+Long tail: The unusual requests, each rare, together common. They are where free text earns its place.
+Example prompt: The sample request shown beside the box. It is how people learn what is possible, and without it a text box is a guessing game.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Designing tool-finding as a conversation for a tool library, and watching somebody use it. A text box with the line “Ask me anything about tools”, and a model interpreting the request. It handled complicated sentences impressively.
+
+Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The task, its common case, and an example of its long tail” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The task, its common case, and an example of its long tail”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The task, its common case, and an example of its long tail” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Design whichever version is missing, and script at least one failed exchange.
@@ -4102,7 +4390,7 @@ Adequate evidence: A statement of the losses in the chosen approach.
 Repair: Write the two things the version you rejected handled better, and whether you can recover either. Recheck: The loss statement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson explains what the system did, in words somebody can use.
 
@@ -4140,58 +4428,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A prediction test with two people
 - A note of any simplification and why it is honest
 
-### Start with a clear task
+### Start here: in everyday words
+
+AI-assisted product work starts with a bounded task, checks every important output and keeps the human responsible for the decision. In this lesson, your first small result is: What an explanation is for, written in your own words.
+
+**Words you will use**
+
+- **Actionable accuracy:** An explanation that is right at the level somebody has to act on. It matters more than being right about the mechanism.
+- **Reassurance:** Wording that makes somebody feel better without letting them predict or change anything. Most explanations of AI features are this.
+- **Technical version:** A description of the mechanism: signals, weights, ranking. Accurate, and almost nobody can act on it.
+
+**Quick example.** Made-up example. Explaining a tool-library suggestion feature, and explaining it accurately. A careful paragraph: the signals used, how recency was weighted, that dismissals adjusted a score. All true and rather good.
+
+The reader demonstrates and guides the task before asking for “What an explanation is for, in your own words”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write the explanation your AI feature gives, at the level a person needs to act, and test whether two people can predict its next output from it.
 
 
-### Understand the idea · 1
+### Explain at the level of the decision the person has to make
 
 Section: learn. Stable action: learn-1.
 
 Explain at the level of the decision the person has to make.
 
 
-### Understand the idea · 2
+### A useful explanation lets someone predict the next output
 
 Section: learn. Stable action: learn-2.
 
 A useful explanation lets someone predict the next output.
 
 
-### Understand the idea · 3
+### Technical accuracy is not the goal; actionable accuracy is
 
 Section: learn. Stable action: learn-3.
 
 Technical accuracy is not the goal; actionable accuracy is.
 
 
-### Understand the idea · 4
+### Say what the system used, not how the model works
 
 Section: learn. Stable action: learn-4.
 
 Say what the system used, not how the model works.
 
 
-### Understand the idea · 5
+### Test the explanation by asking someone to predict
 
 Section: learn. Stable action: learn-5.
 
 Test the explanation by asking someone to predict.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three versions were written. Technical: a description of the ranking signals — rejected, since nobody could act on it. Vague: “suggested for you” — rejected, since it supports no prediction. Chosen: “Suggested from the classes you booked before and the times you usually choose. Dismissing a suggestion stops similar ones appearing.” Two people read it and both correctly predicted that a Saturday-morning booker would see Saturday-morning suggestions, and both knew how to change it — which is exactly the pair of outcomes the explanation exists for.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4729,6 +5031,40 @@ Open Your work and choose Ready for review. The next lesson specifies what the f
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Saying what the system did
+What I am trying to do: Write the explanation your AI feature gives, at the level a person needs to act, and test whether two people can predict its next output from it.
+
+Key idea or terms:
+Actionable accuracy: An explanation that is right at the level somebody has to act on. It matters more than being right about the mechanism.
+Reassurance: Wording that makes somebody feel better without letting them predict or change anything. Most explanations of AI features are this.
+Technical version: A description of the mechanism: signals, weights, ranking. Accurate, and almost nobody can act on it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Explaining a tool-library suggestion feature, and explaining it accurately. A careful paragraph: the signals used, how recency was weighted, that dismissals adjusted a score. All true and rather good.
+
+Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What an explanation is for, in your own words” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What an explanation is for, in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What an explanation is for, in your own words” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Rewrite it as what the system used plus what the person can do to change it.
@@ -4798,7 +5134,7 @@ Adequate evidence: A list of what the explanation leaves out and a check against
 Repair: Write what the explanation does not say, and ask whether it would produce a wrong expectation. Recheck: The omission list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson specifies what the feature knows about people.
 
@@ -4836,58 +5172,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A way to see and delete what the feature holds
 - Two things deliberately not collected
 
-### Start with a clear task
+### Start here: in everyday words
+
+AI-assisted product work starts with a bounded task, checks every important output and keeps the human responsible for the decision. In this lesson, your first small result is: The data the feature genuinely needs, with anything marginal removed and its cost named.
+
+**Words you will use**
+
+- **Genuinely needs:** What the feature cannot work without. Everything else improves it, and improvement is a weak reason to hold a record of somebody.
+- **Marginal:** Makes it slightly better. It is the category most collection falls into, and the one nobody examines.
+- **Disclosure:** What the person meets in the interface at the moment the feature starts. It is where somebody is actually informed.
+
+**Quick example.** Made-up example. Disclosing what a tool-library suggestion feature uses, and putting it in the right document. Updated the privacy policy with a clear, accurate paragraph about the suggestion feature and what it uses. Reviewed, approved, published.
+
+The reader demonstrates and guides the task before asking for “The data the feature genuinely needs to be useful”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Specify what your AI feature collects, what it retains, what a person can see and delete, and what you will tell them before it starts.
 
 
-### Understand the idea · 1
+### State what is collected and why, before the feature starts working
 
 Section: learn. Stable action: learn-1.
 
 State what is collected and why, before the feature starts working.
 
 
-### Understand the idea · 2
+### Retention is a design decision with a visible consequence
 
 Section: learn. Stable action: learn-2.
 
 Retention is a design decision with a visible consequence.
 
 
-### Understand the idea · 3
+### Idea 3: People should be able to see and delete what the feature holds…
 
 Section: learn. Stable action: learn-3.
 
 People should be able to see and delete what the feature holds about them.
 
 
-### Understand the idea · 4
+### A feature that only works with extensive history should say so
 
 Section: learn. Stable action: learn-4.
 
 A feature that only works with extensive history should say so.
 
 
-### Understand the idea · 5
+### Idea 5: Legal requirements differ by country and are not settled by a…
 
 Section: learn. Stable action: learn-5.
 
 Legal requirements differ by country and are not settled by a design rule.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The specification: the feature uses classes booked in the last twelve months and dismissed suggestions, nothing else; the statement appears the first time suggestions are shown; a person can see the list of what it is using in the account section and remove any item or all of it; removing everything returns the feature to its unpersonalised state, which is stated. Retention is twelve months and is stated. Two things were deliberately not collected: browsing that did not lead to a booking, and time of day, because the improvement did not justify the record.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5419,6 +5769,40 @@ Open Your work and choose Ready for review. The next lesson decides what good wo
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: What the feature knows about people
+What I am trying to do: Specify what your AI feature collects, what it retains, what a person can see and delete, and what you will tell them before it starts.
+
+Key idea or terms:
+Genuinely needs: What the feature cannot work without. Everything else improves it, and improvement is a weak reason to hold a record of somebody.
+Marginal: Makes it slightly better. It is the category most collection falls into, and the one nobody examines.
+Disclosure: What the person meets in the interface at the moment the feature starts. It is where somebody is actually informed.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Disclosing what a tool-library suggestion feature uses, and putting it in the right document. Updated the privacy policy with a clear, accurate paragraph about the suggestion feature and what it uses. Reviewed, approved, published.
+
+Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The data the feature genuinely needs to be useful” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The data the feature genuinely needs to be useful”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The data the feature genuinely needs to be useful” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Cut the list to what the feature needs and write the sentence people will see.
@@ -5488,7 +5872,7 @@ Adequate evidence: Two items not collected, with what the feature loses.
 Repair: Write what you could have collected and chose not to, and what that costs the feature. Recheck: The refusal record.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson decides what good would mean for this feature.
 
@@ -5526,58 +5910,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - An evaluation method using people, with counts
 - A list of what cannot be evaluated at your scale
 
-### Start with a clear task
+### Start here: in everyday words
+
+AI-assisted product work starts with a bounded task, checks every important output and keeps the human responsible for the decision. In this lesson, your first small result is: What a person would say if the feature worked well, turned into something observable.
+
+**Words you will use**
+
+- **Good in a person’s terms:** What somebody would notice and say. It is a different question from how often a model matched a label.
+- **Observable:** Something you could watch or ask about, in a session. It is what turns a definition into an evaluation.
+- **A wrong suggestion:** Something clearly irrelevant, visible to the person. It costs trust immediately.
+
+**Quick example.** Made-up example. Deciding what good means for tool-library suggestions, and using the model’s number. An accuracy figure. The suggestions matched what people went on to borrow 62 per cent of the time, which sounded respectable.
+
+The reader demonstrates and guides the task before asking for “What a person would say if the feature was working well”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Define what good performance means for your AI feature in terms a person would recognise, and design how you would find out whether it is achieving it.
 
 
-### Understand the idea · 1
+### Define good as an outcome for a person, not a model score
 
 Section: learn. Stable action: learn-1.
 
 Define good as an outcome for a person, not a model score.
 
 
-### Understand the idea · 2
+### Decide what a false suggestion costs and what a missed one costs
 
 Section: learn. Stable action: learn-2.
 
 Decide what a false suggestion costs and what a missed one costs.
 
 
-### Understand the idea · 3
+### The two errors are rarely equally bad; say which you prefer
 
 Section: learn. Stable action: learn-3.
 
 The two errors are rarely equally bad; say which you prefer.
 
 
-### Understand the idea · 4
+### Evaluate with people, not only with data
 
 Section: learn. Stable action: learn-4.
 
 Evaluate with people, not only with data.
 
 
-### Understand the idea · 5
+### Say what you cannot evaluate at your scale
 
 Section: learn. Stable action: learn-5.
 
 Say what you cannot evaluate at your scale.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Good was defined as: at least one suggestion in the top three that the person would consider and had not already seen, and no more than one clearly irrelevant suggestion in the top five. The error preference was stated: fewer, better suggestions, because an irrelevant suggestion costs trust and a missing one is invisible. The evaluation: five people, ten suggestions each, marking would-consider, already-known and irrelevant. Results reported as counts. What could not be evaluated: any comparison with a baseline, any effect on bookings, and anything about people who never open the feature.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6133,6 +6531,40 @@ Open Your work and choose Ready for review. The next lesson runs sessions with s
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Deciding what good would mean
+What I am trying to do: Define what good performance means for your AI feature in terms a person would recognise, and design how you would find out whether it is achieving it.
+
+Key idea or terms:
+Good in a person’s terms: What somebody would notice and say. It is a different question from how often a model matched a label.
+Observable: Something you could watch or ask about, in a session. It is what turns a definition into an evaluation.
+A wrong suggestion: Something clearly irrelevant, visible to the person. It costs trust immediately.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Deciding what good means for tool-library suggestions, and using the model’s number. An accuracy figure. The suggestions matched what people went on to borrow 62 per cent of the time, which sounded respectable.
+
+Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What a person would say if the feature was working well” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What a person would say if the feature was working well”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What a person would say if the feature was working well” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write what the person would say if it were working, then make it checkable.
@@ -6202,7 +6634,7 @@ Adequate evidence: A list of what your scale cannot establish.
 Repair: Write the questions someone will ask that five people cannot answer. Recheck: The limits list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson runs sessions with scripted outputs rather than a model.
 
@@ -6240,58 +6672,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A record of whether wrong outputs were noticed
 - One design change from what you observed
 
-### Start with a clear task
+### Start here: in everyday words
+
+AI-assisted product work starts with a bounded task, checks every important output and keeps the human responsible for the decision. In this lesson, your first small result is: Eight or more output sets written by hand, including plausible-but-wrong and irrelevant ones, with the failure you most need to test named.
+
+**Words you will use**
+
+- **Scripted response:** An output you wrote rather than generated. It lets you test the case you need rather than the case the model happens to produce.
+- **Plausible-but-wrong:** The failure that matters. Obviously wrong output is caught by everybody; the dangerous one looks exactly like a right answer.
+- **Telling them it is scripted:** Saying the responses were written in advance. It is honest, it costs nothing, and faking a working system misrepresents what they are helping with.
+
+**Quick example.** Made-up example. Scripting outputs for a tool-library prototype, and scripting them obviously wrong. Three wrong suggestions: a lawnmower for somebody who borrows hand tools, a ladder for a flat with no garden, and a concrete mixer. Clearly, comically wrong.
+
+The reader demonstrates and guides the task before asking for “How many output sets you wrote, and what each kind contains”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Build a prototype of your AI feature using hand-written responses, including deliberate failures, and test it with three people.
 
 
-### Understand the idea · 1
+### Write the outputs by hand, including the wrong ones
 
 Section: learn. Stable action: learn-1.
 
 Write the outputs by hand, including the wrong ones.
 
 
-### Understand the idea · 2
+### Design the failure you most need to test, then script it
 
 Section: learn. Stable action: learn-2.
 
 Design the failure you most need to test, then script it.
 
 
-### Understand the idea · 3
+### Tell participants the responses are scripted; do not fake a system
 
 Section: learn. Stable action: learn-3.
 
 Tell participants the responses are scripted; do not fake a system.
 
 
-### Understand the idea · 4
+### Watch what people do when the output is wrong
 
 Section: learn. Stable action: learn-4.
 
 Watch what people do when the output is wrong.
 
 
-### Understand the idea · 5
+### Record whether they noticed it was wrong at all
 
 Section: learn. Stable action: learn-5.
 
 Record whether they noticed it was wrong at all.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The prototype had eight scripted suggestion sets. Three were good, three contained one plausible-but-wrong suggestion, and two were mostly irrelevant. Participants were told the responses were prepared. Two of three people accepted a wrong suggestion without checking the details, which was the finding: the basis line was being read as reassurance rather than as something to check. The third checked and corrected it, and said the basis line was what prompted her. The design changed to make the checkable detail visible in the suggestion rather than one step away.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6807,6 +7253,40 @@ Open Your work and choose Ready for review. The next lesson maps who is accounta
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Prototyping with scripted responses
+What I am trying to do: Build a prototype of your AI feature using hand-written responses, including deliberate failures, and test it with three people.
+
+Key idea or terms:
+Scripted response: An output you wrote rather than generated. It lets you test the case you need rather than the case the model happens to produce.
+Plausible-but-wrong: The failure that matters. Obviously wrong output is caught by everybody; the dangerous one looks exactly like a right answer.
+Telling them it is scripted: Saying the responses were written in advance. It is honest, it costs nothing, and faking a working system misrepresents what they are helping with.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Scripting outputs for a tool-library prototype, and scripting them obviously wrong. Three wrong suggestions: a lawnmower for somebody who borrows hand tools, a ladder for a flat with no garden, and a concrete mixer. Clearly, comically wrong.
+
+Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “How many output sets you wrote, and what each kind contains” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “How many output sets you wrote, and what each kind contains”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “How many output sets you wrote, and what each kind contains” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the wrong suggestion you would most fear someone accepting, and place it.
@@ -6876,7 +7356,7 @@ Adequate evidence: A change traced to what people did with a wrong output.
 Repair: Ask what would have helped the people who accepted a wrong output, and design that. Recheck: The change.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson maps who is accountable for all of this.
 
@@ -6914,58 +7394,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - People affected beyond the direct user
 - A harm signal distinct from a usefulness signal
 
-### Start with a clear task
+### Start here: in everyday words
+
+AI-assisted product work starts with a bounded task, checks every important output and keeps the human responsible for the decision. In this lesson, your first small result is: The four functions written in your own words.
+
+**Words you will use**
+
+- **Govern:** Who decides and who is accountable. It is the function most often unanswered, and the one that makes the others possible.
+- **Map:** What context it operates in and who is affected, including people who never touch it.
+- **Measure and manage:** How you would know it is working or harming, and what happens when something goes wrong.
+
+**Quick example.** Made-up example. Mapping who is affected by a tool-library suggestion feature, and listing the users. Members using the feature. That is who it is for, and I had three sessions of evidence about them.
+
+The reader demonstrates and guides the task before asking for “Govern, map, measure and manage: what each asks, in your own words”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Map your AI feature against govern, map, measure and manage, and name who is accountable for each, including where nobody currently is.
 
 
-### Understand the idea · 1
+### Govern asks who decides and who is accountable
 
 Section: learn. Stable action: learn-1.
 
 Govern asks who decides and who is accountable.
 
 
-### Understand the idea · 2
+### Map asks what context the system operates in and who is affected
 
 Section: learn. Stable action: learn-2.
 
 Map asks what context the system operates in and who is affected.
 
 
-### Understand the idea · 3
+### Measure asks how you would know it is working or harming
 
 Section: learn. Stable action: learn-3.
 
 Measure asks how you would know it is working or harming.
 
 
-### Understand the idea · 4
+### Manage asks what happens when something goes wrong
 
 Section: learn. Stable action: learn-4.
 
 Manage asks what happens when something goes wrong.
 
 
-### Understand the idea · 5
+### An unowned function is a finding, not a gap to fill silently
 
 Section: learn. Stable action: learn-5.
 
 An unowned function is a finding, not a gap to fill silently.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The map for the suggestion feature. Govern: the learner decides what the feature suggests; nobody currently owns what happens if a provider complains about not being suggested — recorded as unowned. Map: affected people include bookers, providers whose classes are suggested, and providers whose are not; the last group had not been considered. Measure: usefulness by the five-person evaluation; harm by complaints from providers and by whether suggestions concentrate on the same three classes. Manage: reports go to the learner, the feature can be disabled per account within a day, and there is no faster route — which was recorded as a limitation.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7481,6 +7975,40 @@ Open Your work and choose Ready for review. The last lesson of the module prepar
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Mapping the risk before building
+What I am trying to do: Map your AI feature against govern, map, measure and manage, and name who is accountable for each, including where nobody currently is.
+
+Key idea or terms:
+Govern: Who decides and who is accountable. It is the function most often unanswered, and the one that makes the others possible.
+Map: What context it operates in and who is affected, including people who never touch it.
+Measure and manage: How you would know it is working or harming, and what happens when something goes wrong.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Mapping who is affected by a tool-library suggestion feature, and listing the users. Members using the feature. That is who it is for, and I had three sessions of evidence about them.
+
+Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Govern, map, measure and manage: what each asks, in your own words” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Govern, map, measure and manage: what each asks, in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Govern, map, measure and manage: what each asks, in your own words” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write one paragraph per function about your feature specifically.
@@ -7550,7 +8078,7 @@ Adequate evidence: Two separate signal sets with different sources.
 Repair: Write what you would see if the feature were harming someone, and where you would see it. Recheck: The signal sets.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The last lesson of the module prepares the argument against building one of these at all.
 
@@ -7588,58 +8116,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - One prepared argument with the alternative
 - A note of what evidence would change your position
 
-### Start with a clear task
+### Start here: in everyday words
+
+AI-assisted product work starts with a bounded task, checks every important output and keeps the human responsible for the decision. In this lesson, your first small result is: Three plausible AI proposals for your product, each with the problem it claims to solve.
+
+**Words you will use**
+
+- **Plausible proposal:** Something somebody in your situation might genuinely suggest. Arguing against an absurd one teaches nothing.
+- **The claimed problem:** What it says it solves. Half the argument is usually that the problem was never established.
+- **Known rules:** Where the logic can be written down, a deterministic solution is better: explainable, testable and correct every time.
+
+**Quick example.** Made-up example. Listing AI proposals to argue against at a tool library, and listing the bad ones. A model that decides who gets banned, one that writes members’ reviews for them, and one that predicts who will steal a tool. Three proposals nobody would make.
+
+The reader demonstrates and guides the task before asking for “Proposal 1 · what it is, and what problem it claims to solve”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write the cases where you would argue against using AI in a product, and prepare the argument for one of them in the terms the decision would be made in.
 
 
-### Understand the idea · 1
+### A deterministic solution is better where the rules are known
 
 Section: learn. Stable action: learn-1.
 
 A deterministic solution is better where the rules are known.
 
 
-### Understand the idea · 2
+### High-stakes and irreversible decisions need more than probability
 
 Section: learn. Stable action: learn-2.
 
 High-stakes and irreversible decisions need more than probability.
 
 
-### Understand the idea · 3
+### If a wrong output cannot be noticed or corrected, do not ship it
 
 Section: learn. Stable action: learn-3.
 
 If a wrong output cannot be noticed or corrected, do not ship it.
 
 
-### Understand the idea · 4
+### Novelty is not a reason; a stated problem is
 
 Section: learn. Stable action: learn-4.
 
 Novelty is not a reason; a stated problem is.
 
 
-### Understand the idea · 5
+### Prepare the argument, because it will be needed under enthusiasm
 
 Section: learn. Stable action: learn-5.
 
 Prepare the argument, because it will be needed under enthusiasm.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three cases were written. Do not use a model to decide who gets a refund: the rules are known, the stakes are money, and a wrong decision is not visible to the person until it costs them. Do not use one to write class descriptions unsupervised: the provider's voice matters and errors reach customers with the provider's name on them. Do not add a chat assistant for a task the filters already handle in three taps, because no research finding supports it. The third was prepared as an argument: it costs a fortnight, adds a support surface, and serves about one request in ten better while serving nine worse.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -8177,6 +8719,40 @@ Open Your work and choose Ready for review. This closes Module 16. Module 17 mov
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: When not to use it
+What I am trying to do: Write the cases where you would argue against using AI in a product, and prepare the argument for one of them in the terms the decision would be made in.
+
+Key idea or terms:
+Plausible proposal: Something somebody in your situation might genuinely suggest. Arguing against an absurd one teaches nothing.
+The claimed problem: What it says it solves. Half the argument is usually that the problem was never established.
+Known rules: Where the logic can be written down, a deterministic solution is better: explainable, testable and correct every time.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Listing AI proposals to argue against at a tool library, and listing the bad ones. A model that decides who gets banned, one that writes members’ reviews for them, and one that predicts who will steal a tool. Three proposals nobody would make.
+
+Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Proposal 1 · what it is, and what problem it claims to solve” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Proposal 1 · what it is, and what problem it claims to solve”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Proposal 1 · what it is, and what problem it claims to solve” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write proposals someone might actually make, not ones that are easy to refuse.
@@ -8246,7 +8822,7 @@ Adequate evidence: A specific, obtainable piece of evidence that would reverse t
 Repair: Write what you would have to see to support the proposal, and check it is obtainable. Recheck: The change condition.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This closes Module 16. Module 17 moves up to strategy and the systems around the product.
 

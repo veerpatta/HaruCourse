@@ -1929,9 +1929,76 @@ function guidedMaterial(l: Lesson): Partial<Apprenticeship> {
   const { video, ...rest } = g;
   return { ...rest, ...(video ? { video: { ...videoSelections[video.id], ...video } } : {}) };
 }
-const AI_SETUP = ['Open ChatGPT at chatgpt.com or Gemini at gemini.google.com/app using free access. Sign in yourself if asked; do not start a trial or upgrade.', 'Start a new chat and paste the copied prompt. Replace the bracketed learner-input placeholder with your own anonymized first attempt before sending.', 'Reply to the tutor’s question in your own words. If it supplies a finished answer, ask for a hint instead. Use the non-AI exercise below whenever access or limits get in the way.'];
+const AI_SETUP = ['Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.', 'Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.', 'Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.'];
 const AI_RULES = 'Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.';
-function coachedAi(l: Lesson, task: string, coach?: string, alternative?: string): Pick<Apprenticeship, 'ai'> {
+const moduleNumber = (l: Lesson) => l.id.startsWith('week1-') ? 1 : l.id.startsWith('week2-') ? 2 : Number(l.module?.slice(1));
+const beginnerScope = (l: Lesson) => Number.isFinite(moduleNumber(l)) && moduleNumber(l) >= 1 && moduleNumber(l) <= 20;
+const clean = (text: string, length = 520) => text.replace(/\s+/g, ' ').trim().slice(0, length);
+function lessonTerms(guide?: Apprenticeship['guide']) {
+  const terms = (guide || []).flatMap(step => step.terms || []);
+  return [...new Map(terms.map(term => [term.term.toLowerCase(), term])).values()].slice(0, 3);
+}
+function firstPracticeExample(l: Lesson, guide?: Apprenticeship['guide']) {
+  const supported = guide?.find(step => step.supported)?.supported?.material;
+  const demo = guide?.find(step => step.demo)?.demo;
+  return clean(supported || (demo ? `${demo.scenario} ${demo.beats[0]?.text || ''}` : l.example));
+}
+function firstReturnLabel(worksheet?: Apprenticeship['worksheet']) {
+  return worksheet?.flatMap(section => section.fields)[0]?.label || 'your first worksheet answer';
+}
+function modulePlainLead(module: number) {
+  if (module === 1) return 'Product design starts by understanding the task and the problem before choosing a screen change.';
+  if (module === 2) return 'Evidence is something you can point to and check. A guess can still be useful, but it must stay labelled as a guess.';
+  if (module === 3) return 'Visual design helps people notice, read and understand what matters on a screen.';
+  if (module === 4) return 'This module looks at what people expect, what confuses them and how a design choice affects their task.';
+  if (module === 5) return 'Research means learning from evidence without pretending that a guess, rehearsal or small study proves more than it does.';
+  if (module === 6) return 'Information architecture means arranging and naming information so a newcomer can find what they need.';
+  if (module === 7) return 'A flow is the series of steps and choices a person follows to finish a task.';
+  if (module === 8) return 'Interface craft turns an idea into clear screens and controls that still work in difficult cases.';
+  if (module === 9) return 'Interaction design explains what happens when someone acts, what they see next and how they recover from a mistake.';
+  if (module === 10) return 'A prototype is a rough version made to answer a question before time is spent building the full product.';
+  if (module === 11) return 'Accessible design removes barriers that stop people from perceiving, understanding or operating a product.';
+  if (module === 12) return 'Web foundations explain how a browser turns structure, style and behavior into a page that must work at different sizes.';
+  if (module === 13) return 'A design system is a shared set of decisions and reusable parts that helps a team build consistent products.';
+  if (module === 14) return 'Delivery work makes a design clear enough for other people to build, question, test and change safely.';
+  if (module === 15) return 'Product analytics uses recorded events and numbers to answer a decision without hiding uncertainty or context.';
+  if (module === 16) return 'AI-assisted product work starts with a bounded task, checks every important output and keeps the human responsible for the decision.';
+  if (module === 17) return 'Product strategy connects a real problem, evidence, constraints and trade-offs to a choice about what to do next.';
+  if (module === 18) return 'An independent project brings the research, design, testing and decision trail together around one honest problem.';
+  if (module === 19) return 'A portfolio story shows what you did, why you chose it, what evidence supports it and what remains uncertain.';
+  return 'Career preparation turns your real work into clear evidence for a role, then practises explaining it without exaggeration.';
+}
+function beginnerSupport(l: Lesson, guide?: Apprenticeship['guide'], worksheet?: Apprenticeship['worksheet']): Pick<Apprenticeship, 'beginner'> {
+  if (!beginnerScope(l)) return {};
+  const module = moduleNumber(l);
+  const first = clean(guide?.[0]?.expect || l.objective || l.title, 260);
+  return { beginner: {
+    plain: l.id === 'week1-day1-v1' ? clean(l.why || l.title) : `${modulePlainLead(module)} In this lesson, your first small result is: ${first}`,
+    terms: lessonTerms(guide),
+    example: firstPracticeExample(l, guide),
+    returnLabel: firstReturnLabel(worksheet),
+  } };
+}
+function activityInstruction(module: number) {
+  if (module <= 2) return 'Use the supplied case to ask me whether each statement is a fact, a guess or an open question. After I answer, explain the distinction with one everyday example.';
+  if (module === 3) return 'Describe the design decision in the supplied case, then ask me what I would notice first and why. Help me connect the visual choice to the task it supports.';
+  if (module === 4) return 'Teach the idea with a simple everyday analogy. Then give me one believable wrong choice and ask me to find the risk before you explain it.';
+  if (module <= 6) return 'Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.';
+  if (module === 7) return 'Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.';
+  if (module <= 9) return 'Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.';
+  if (module === 10) return 'Ask me to make one prototype decision from the supplied case, name the question it can answer and state what it cannot test. Then point out one unsupported claim if I made one.';
+  if (module === 11) return 'Give me one barrier from the supplied case. Ask who is blocked, in what situation and which design decision caused it. Then ask for one repair and one way to test the built result.';
+  if (module === 12) return 'Ask me to predict what one small change to the supplied page will do before explaining it. Then ask for the visible result, the browser check and one recovery step if it fails.';
+  if (module === 13) return 'Give me one inconsistent component or rule from the supplied case. Ask me to choose the shared decision, name what must stay flexible and explain how another person would know which version is current.';
+  if (module === 14) return 'Run a short simulated handoff conversation using only the supplied case. Ask me to explain one decision, one unresolved question and what the builder should verify. Keep the simulation labelled.';
+  if (module === 15) return 'Show one small synthetic result from the supplied case. Ask me what the number literally says, what context is missing and which decision it can support. Correct any claim that goes beyond the data.';
+  if (module === 16) return 'Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.';
+  if (module === 17) return 'Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.';
+  if (module === 18) return 'Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.';
+  if (module === 19) return 'Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.';
+  return 'Run a short interview rehearsal using only the supplied role and evidence. Ask one question at a time, then tell me where my answer needs a clearer example, decision or honest limit. Do not write the final answer for me.';
+}
+function coachedAi(l: Lesson, task: string, coach?: string, alternative?: string, guide?: Apprenticeship['guide'], worksheet?: Apprenticeship['worksheet']): Pick<Apprenticeship, 'ai'> {
   const instruction = coach
     || (l.misconception ? `Challenge one thing at a time, and start with the mistake this lesson is about: ${l.misconception}` : '');
   // `recheck` names the artefact to look at and `criterion` is the question to
@@ -1942,6 +2009,27 @@ function coachedAi(l: Lesson, task: string, coach?: string, alternative?: string
       ? `Without any chat: mark your own work against the lesson's own standard, one criterion at a time. ${l.criteria.slice(0, 2).map(c => `Look at ${lower(c.recheck.trim().replace(/\.$/, ''))} and ask whether ${lower(c.criterion.trim())}.`).join(' ')} Anything you cannot show, write down as untested rather than assuming it holds.`
       : '');
   if (!instruction || !without) return {};
+  if (beginnerScope(l)) {
+    const terms = lessonTerms(guide);
+    const example = firstPracticeExample(l, guide);
+    const returnLabel = firstReturnLabel(worksheet);
+    const localPractice = l.id === 'week1-day1-v1'
+      ? 'the first “Practise with supplied note” question'
+      : guide?.some(step => step.supported)
+        ? 'the first “Try a supplied example” question'
+        : 'the first “Try the distinction” question';
+    const keyIdeas = terms.length ? terms.map(term => `${term.term}: ${term.meaning}`).join('\n') : clean(l.teach.slice(0, 2).join(' '));
+    const prompt = l.id === 'week1-day1-v1'
+      ? `I am a complete beginner learning product design. Teach me through a short conversation, not a lecture.\n\nLesson: ${l.title}\nToday I need to understand:\n- Product design: deciding which problem to solve and shaping the whole service.\n- UX: the full experience of completing a task, including delays and recovery.\n- UI: the visible words, buttons and layout used in that experience.\n\nUse this fictional case only: a pottery studio thinks a bigger Reserve button will stop people leaving its booking screen. Known: people leave at that screen. Guessed: the button is the reason. Unknown: whether price, materials or another issue causes it.\n\nAsk me one question at a time, at most three. First ask me to label one statement as known, guessed or unknown. Then ask me whether a suggested change is UI, UX or a product decision, and why. If I struggle, give one small hint. Do not give me a finished worksheet answer, score me or claim that fictional evidence is real. End by telling me to return to the course answer called “${returnLabel}” and write the idea in my own words.`
+      : `I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.\n\nLesson: ${l.title}\nWhat I am trying to do: ${clean(task)}\n\nKey idea or terms:\n${keyIdeas}\n\nSupplied practice material (fictional or labelled practice, not my research):\n${example}\n\nActivity: ${activityInstruction(moduleNumber(l))}\n\n${AI_RULES}\nWhen the activity is finished, tell me to return to the course answer called “${returnLabel}” and write my own decision. Do not write that answer for me.`;
+    return { ai: {
+      purpose: 'Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.',
+      setup: AI_SETUP,
+      prompt,
+      followUp: `Return to “${returnLabel}”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.`,
+      alternative: `Stay in this course and use ${localPractice}. Choose an answer, read the explanation, then return to “${returnLabel}” and write one sentence in your own words.`,
+    } };
+  }
   return { ai: {
     purpose: 'Optional: attempt the work first, then use a free text chat for a focused rehearsal.',
     setup: AI_SETUP,
@@ -1956,6 +2044,9 @@ export function withApprenticeship(l: Lesson): Lesson {
   if (!a) return withPublishedWorkspace(l);
   const file = `HaruCourse/Practice/${l.id}/work.md`;
   const starter = `# ${l.title}\n\nSource labels: real observation / hypothesis / simulation / self-pilot\n\n${a.columns}\n${a.columns.split('|').map(() => '---').join(' | ')}\n${a.first}\n\n## Output checklist\n${l.outputs.map(o => `- [ ] ${o}`).join('\n')}\n\n## Decision and revision\nMy decision:\nEvidence reference:\nAlternative rejected and why:\nBefore / after files:\nWhat remains untested:\nAI suggestion accepted or rejected and why (if used):\nNext action when I return:\n`;
+  const guided = guidedMaterial(l);
+  const resolvedGuide = guided.guide || a.guide;
+  const resolvedWorksheet = guided.worksheet || a.worksheet;
   const apprenticeship: Apprenticeship = {
     activity: a.activity, mission: a.mission, visual: a.visual,
     workspace: {
@@ -1982,8 +2073,9 @@ export function withApprenticeship(l: Lesson): Lesson {
     // A lesson whose guided material lives in `guidedLessons` rather than in
     // its activity entry merges here, so both authoring routes reach the same
     // Apprenticeship shape.
-    ...guidedMaterial(l),
-    ...coachedAi(l, a.mission, a.coach, a.alternative),
+    ...guided,
+    ...beginnerSupport(l, resolvedGuide, resolvedWorksheet),
+    ...coachedAi(l, a.mission, a.coach, a.alternative, resolvedGuide, resolvedWorksheet),
   };
   return { ...l, apprenticeship };
 }
@@ -13566,6 +13658,7 @@ function withPublishedWorkspace(l: Lesson): Lesson {
   if (!module || !l.freeToolPath || !l.criteria?.length || !milestones[module]) throw new Error(`Missing activity or complete published contract: ${l.id}`);
   const folder = `HaruCourse/Practice/${l.id}`;
   const prompts = l.steps.map((s, i) => `## ${i + 1}. ${s.title}\n${s.instructions.map(t => '- ' + t).join('\n')}\n\nMy work / artifact reference:\nEvidence status and source:\nDecision and reason:\n`);
+  const guided = guidedMaterial(l);
   return { ...l, apprenticeship: {
     activity: l.title,
     mission: l.objective || l.why,
@@ -13590,8 +13683,9 @@ function withPublishedWorkspace(l: Lesson): Lesson {
     // worksheet, demonstrations, supported case, checks and save route here.
     // The derived workspace above stays as the local-file alternative, so the
     // authored task, criteria and handoff remain the single authority.
-    ...guidedMaterial(l),
-    ...coachedAi(l, l.objective || l.deliverable),
+    ...guided,
+    ...beginnerSupport(l, guided.guide, guided.worksheet),
+    ...coachedAi(l, l.objective || l.deliverable, undefined, undefined, guided.guide, guided.worksheet),
   }};
 }
 

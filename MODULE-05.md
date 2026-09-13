@@ -20,51 +20,65 @@ Starting route: Use your research brief, or investigate the fictional class-prep
 
 - A ranked list of at most five research questions, each with the decision it would change and the evidence that would close it, plus a dated “not this study” list with a reason per line.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Research means learning from evidence without pretending that a guess, rehearsal or small study proves more than it does. In this lesson, your first small result is: Your own sentence separating a research question from an interview question.
+
+**Words you will use**
+
+- **Research question:** What you need to learn. You never say it out loud to a participant.
+- **Interview question:** What you actually ask, designed to get at the research question sideways.
+- **Brief:** The short statement of what you have been asked to do. It is usually written by somebody who already knows what they meant.
+
+**Quick example.** Two supplied questions. A: “How do attendees feel about the booking process?” B: “What did attendees do the last time they needed to know what to bring?”
+
+The reader demonstrates and guides the task before asking for “The difference between a research question and something you say to a participant”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Turn a vague brief into at most five ranked research questions, each written as something you need to learn rather than something you will say to a participant, and each naming the decision that changes if the answer comes back the other way.
 
 
-### Understand the idea · 1
+### A research question is what you need to learn
 
 Section: learn. Stable action: learn-1.
 
 A research question is what you need to learn. A participant question is the plain sentence you actually say out loud. They are almost never the same sentence, and confusing them is the most common way a first study goes wrong: “how do people decide whether a workshop is worth the fare?” is a research question, and asking a participant that exact sentence invites them to perform an explanation they have never articulated. The participant question is “tell me about the last workshop you decided not to go to.” One is your analysis; the other is their memory.
 
 
-### Understand the idea · 2
+### Rank by what would change
 
 Section: learn. Stable action: learn-2.
 
 Rank by what would change. For each question, write the decision that hangs on it and what you would do differently if the answer were the opposite of your expectation. A question where both answers lead to the same action is not a research question, it is curiosity, and curiosity is fine on your own time but not on a participant's. This single test usually removes half a list, and it removes the half that would otherwise have eaten the first twenty minutes of every session.
 
 
-### Understand the idea · 3
+### Questions come in kinds, and the kind determines what can answer it
 
 Section: learn. Stable action: learn-3.
 
 Questions come in kinds, and the kind determines what can answer it. What people did, what they experienced and remember, how many or how often, and whether they can operate a thing in front of them are four different kinds of uncertainty. You do not have to choose the method yet — that is the next lesson — but you do have to notice that a question phrased as “how many” cannot be settled by three conversations, no matter how good the conversations are.
 
 
-### Understand the idea · 4
+### Write questions that can close
 
 Section: learn. Stable action: learn-4.
 
 Write questions that can close. “Do users like the booking page?” never closes: there is no evidence that would end it, so the study runs until you get bored. “What stops someone who has opened the workshop page from reserving a place in the same sitting?” closes, because you can watch six people try and either see the stopping points or not. A question that names a person, a moment and an outcome is a question you can finish.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A brief said “make the workshop booking better.” Written out, it contained eleven questions. Ranked by decision impact, the top three were: what does someone need to know before they will commit money to a Saturday; what makes a person who has already opened the page leave without reserving; and how do people who arrive on a shared or borrowed phone complete a booking at all. The remaining eight included “do users prefer the green or blue button”, which changes nothing whichever way it lands, and “how many people abandon at payment”, which three conversations cannot answer and which was moved to a separate note about evidence the project does not currently have.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -459,6 +473,40 @@ Open Your work and choose Ready for review. The next lesson pairs each question 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Decide what the study has to answer
+What I am trying to do: Turn a vague brief into at most five ranked research questions, each written as something you need to learn rather than something you will say to a participant, and each naming the decision that changes if the answer comes back the other way.
+
+Key idea or terms:
+Research question: What you need to learn. You never say it out loud to a participant.
+Interview question: What you actually ask, designed to get at the research question sideways.
+Brief: The short statement of what you have been asked to do. It is usually written by somebody who already knows what they meant.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Two supplied questions. A: “How do attendees feel about the booking process?” B: “What did attendees do the last time they needed to know what to bring?”
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The difference between a research question and something you say to a participant” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The difference between a research question and something you say to a participant”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The difference between a research question and something you say to a participant” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Take each question and try to read it aloud as though to a stranger. Any question that sounds like an exam or invites a theory is a research question and stays; any that sounds like a natural thing to ask a person is a participant question, and should be moved to a separate list for the interview lesson.
@@ -528,7 +576,7 @@ Adequate evidence: For each question, a sentence naming what you would have to s
 Repair: Rewrite each closure sentence to begin “I stop asking this when I have seen …”. Concrete means countable or quotable, not a feeling of sufficiency. Recheck: The five closure sentences.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson pairs each question with a method you could actually run.
 
@@ -558,51 +606,65 @@ Starting route: Bring five ranked research questions. Fallback questions concern
 
 - A method plan pairing each question with one method, its cost and access conditions, and an explicit exclusion sentence per pairing, plus a list of questions left unanswerable with reasons.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Research means learning from evidence without pretending that a guess, rehearsal or small study proves more than it does. In this lesson, your first small result is: One line per method saying what kind of question it suits.
+
+**Words you will use**
+
+- **Behaviour question:** What people do. Best answered by watching, not asking.
+- **Frequency question:** How often or how many. Needs numbers and a reachable population, which you rarely have.
+- **Experience and reasoning question:** What something was like for somebody, and why they did what they did. You have to ask, because none of it is visible.
+
+**Quick example.** A supplied pairing from the same made-up study: three interviews about what people did before their last class, chosen to answer “when do people decide what to bring?”
+
+The reader demonstrates and guides the task before asking for “For each method named in the reading: the question type it suits”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Pair each of your five questions with one method you could genuinely run alone this month, and state for each pairing the specific claim that method will not license you to make.
 
 
-### Understand the idea · 1
+### Sort your questions by what kind of uncertainty they are
 
 Section: learn. Stable action: learn-1.
 
 Sort your questions by what kind of uncertainty they are. Questions about what people did are answered by watching or by traces they left. Questions about what someone experienced and why they chose as they did are answered by talking to them about a specific past episode. Questions about how many or how often need a count from a population you can define. Questions about whether a person can operate something need that thing, or a stand-in for it, in their hands. A single method answers one of these well and the others badly.
 
 
-### Understand the idea · 2
+### Idea 2: The gap between what people say and what people do is not dish…
 
 Section: learn. Stable action: learn-2.
 
 The gap between what people say and what people do is not dishonesty; it is memory, self-image and the ordinary difficulty of narrating a habit. Someone will tell you they always compare prices and then book the first result, and both statements are true in the sense they mean them. This is why an interview is strong evidence about what a person noticed, felt and decided, weak evidence about what they will do next time, and no evidence at all about how common any of it is.
 
 
-### Understand the idea · 3
+### Method choice is constrained by what you can actually run
 
 Section: learn. Stable action: learn-3.
 
 Method choice is constrained by what you can actually run. You have no recruitment budget, no analytics on someone else's product, no team to pair with, and a full-time job. That is not a disclaimer to write at the end: it decides the study. Three consented conversations plus one observation is a real study with real limits. A survey circulated to your own contacts is also a real study, and its limit is that it measures your own contacts, which is a sentence that must appear in the report rather than being discovered by a reader.
 
 
-### Understand the idea · 4
+### Idea 4: Every pairing needs its exclusion written down at the moment y…
 
 Section: learn. Stable action: learn-4.
 
 Every pairing needs its exclusion written down at the moment you choose it, not at the moment you report it. “Four interviews” excludes prevalence: you may write that four of four people described the same confusion, and you may not write that most people are confused. “One observation” excludes generality and includes something no interview gives you — the thing the person did not think worth mentioning. Writing the exclusion first is what stops the recommendation drifting past the evidence three weeks later, when the notes have gone cold and the deadline is close.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Five questions were paired as follows. What stops someone reserving in one sitting: watch four people try, because the stopping point is behavioural and nobody narrates it accurately. What people need to know before committing money: interviews about the last time they paid for a class, because that is memory and reasoning. How common abandonment is: no method available — recorded as a gap, since neither the analytics nor the population exist, and left explicitly unanswered rather than estimated from four conversations. Whether a shared phone changes the booking: observation in the setting, because it is invisible anywhere else. What people would pay: dropped, because stated willingness to pay predicts behaviour badly and there was no way to test it honestly.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -984,6 +1046,40 @@ Open Your work and choose Ready for review. The next lesson looks at evidence th
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Choose a method that can actually answer it
+What I am trying to do: Pair each of your five questions with one method you could genuinely run alone this month, and state for each pairing the specific claim that method will not license you to make.
+
+Key idea or terms:
+Behaviour question: What people do. Best answered by watching, not asking.
+Frequency question: How often or how many. Needs numbers and a reachable population, which you rarely have.
+Experience and reasoning question: What something was like for somebody, and why they did what they did. You have to ask, because none of it is visible.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied pairing from the same made-up study: three interviews about what people did before their last class, chosen to answer “when do people decide what to bring?”
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “For each method named in the reading: the question type it suits” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “For each method named in the reading: the question type it suits”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “For each method named in the reading: the question type it suits” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Re-read each question and ask what would count as an answer: a thing seen, a thing recounted, a count, or a task completed. If two of those apply, the question is two questions.
@@ -1053,7 +1149,7 @@ Adequate evidence: Any question with no available method appears as an open gap 
 Repair: Check each pairing against the question's closure evidence from the previous lesson. If the method cannot produce that evidence, move the question to the gap list and say what would. Recheck: The gap list with requirements.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson looks at evidence that already exists before you ask anyone anything.
 
@@ -1083,51 +1179,65 @@ Starting route: Choose one read-only task on two publicly accessible services, s
 
 - A dated desk-research note with sourced items, a step-by-step comparison of one identical task across two or three services including one from another category, a list of checkable hypotheses, and an explicit statement of what was not established.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Research means learning from evidence without pretending that a guess, rehearsal or small study proves more than it does. In this lesson, your first small result is: The difference between reviewing rivals and testing them with people.
+
+**Words you will use**
+
+- **Competitive review:** You attempting the task yourself and describing what happened. No participants, so no findings about people.
+- **Desk research:** Looking at evidence that already exists rather than making new evidence. Reviews, support messages, forum questions, anything already written down.
+- **Source:** One place a piece of existing evidence came from, written down with its date so you can tell how old it is.
+
+**Quick example.** A supplied observation from the same made-up review: two of three services show the total only at the payment step.
+
+The reader demonstrates and guides the task before asking for “The difference between a competitive review and a competitive test”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Produce a dated desk-research note from evidence that already exists, and a structured comparison of two or three rival flows attempting one identical task, ending in a written list of what the comparison did not establish.
 
 
-### Understand the idea · 1
+### Existing evidence is wider than it looks
 
 Section: learn. Stable action: learn-1.
 
 Existing evidence is wider than it looks. Public reviews and store ratings, support pages and their frequently-asked lists, community forum threads, published reports, the product's own help documentation, and anything the organisation already holds — old research, complaint logs, support transcripts — all describe real people meeting a real service. None of it was collected for your question, which is exactly its weakness: you inherit whoever chose to write, which is disproportionately the very angry and the very pleased. Treat it as a source of hypotheses and vocabulary, not of proportions.
 
 
-### Understand the idea · 2
+### A competitive review is two different activities that are often confused
 
 Section: learn. Stable action: learn-2.
 
 A competitive review is two different activities that are often confused. An expert review is you working through a rival product yourself against explicit criteria; a competitive test is people attempting the same task on two or more products while you watch. The first is fast and costs nothing but is limited by your own expertise and blind spots; the second costs sessions but tells you where real people diverge. Both are usability comparisons. Neither tells you anything about market position, pricing or why the company is winning, and the reading assigned here says so itself.
 
 
-### Understand the idea · 3
+### Choose comparators by task, not by brand
 
 Section: learn. Stable action: learn-3.
 
 Choose comparators by task, not by brand. The useful comparison for a workshop booking is anything where a person commits money to attend something at a fixed time and place — a clinic appointment, a cinema seat, a train ticket — not merely other workshop companies. Comparing against the market leader in your own category tends to produce imitation; comparing against the best solution to the same underlying task tends to produce ideas, because you are looking at people who solved your problem under different constraints.
 
 
-### Understand the idea · 4
+### Idea 4: Record every source with its URL and the date you retrieved it…
 
 Section: learn. Stable action: learn-4.
 
 Record every source with its URL and the date you retrieved it, and quote sparingly in your own file rather than copying pages. Links rot faster than you expect: this course's own catalog attempted eight job listings on one day and six had already expired. A finding whose source you can no longer produce is not evidence you can defend six months later in a portfolio review, which is exactly when someone will ask.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Before interviewing anyone about workshop bookings, an hour of desk work produced: eleven public reviews of three local class providers, of which seven mentioned not knowing what to bring; a support page from a rival that answered the same question, suggesting they get asked it often; and one forum thread about paying for a friend, which nobody had thought to include in the flow at all. The competitive review then compared three services on the identical task “find out what you need to bring before paying.” One buried it in a PDF, one showed it after payment, and a cinema chain — not a competitor at all — solved the shape of it best by putting everything you must decide above the payment step. What the comparison did not establish, and the note said so, was whether any of the three converts better, since no outcome data was available for any of them.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1497,6 +1607,40 @@ Open Your work and choose Ready for review. The next lesson writes a screener an
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Look before you ask: desk and competitive review
+What I am trying to do: Produce a dated desk-research note from evidence that already exists, and a structured comparison of two or three rival flows attempting one identical task, ending in a written list of what the comparison did not establish.
+
+Key idea or terms:
+Competitive review: You attempting the task yourself and describing what happened. No participants, so no findings about people.
+Desk research: Looking at evidence that already exists rather than making new evidence. Reviews, support messages, forum questions, anything already written down.
+Source: One place a piece of existing evidence came from, written down with its date so you can tell how old it is.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied observation from the same made-up review: two of three services show the total only at the payment step.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The difference between a competitive review and a competitive test” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The difference between a competitive review and a competitive test”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The difference between a competitive review and a competitive test” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Return to each claim in your note and attach its source and the date you retrieved it. Any claim whose source you cannot produce is removed, not softened.
@@ -1566,7 +1710,7 @@ Adequate evidence: Two clearly distinguished lists: what you now believe and wou
 Repair: Go through the note sentence by sentence and mark each as observed, inferred or assumed, using the same three-way split you learned in Module 1. Move the inferred and assumed sentences into the hypothesis list. Recheck: The two labelled lists.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes a screener and a recruitment plan with honest lead times.
 
@@ -1596,51 +1740,65 @@ Starting route: Start with the recent experience your study needs, then write a 
 
 - A screener of four to six neutral, experience-based questions; a recruitment plan with route, realistic dates, an incentive decision and a fallback; and a written exclusion statement naming who this route will miss.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Research means learning from evidence without pretending that a guess, rehearsal or small study proves more than it does. In this lesson, your first small result is: The lead times and accommodations the guidance states.
+
+**Words you will use**
+
+- **Lead time:** The number of days between asking for people and having them booked in. Counted from today, including the days when nobody replies.
+- **Accommodation:** A change you make so that somebody can take part: a different time, a phone call instead of video, longer to answer a question.
+- **Screening criterion:** A recent behaviour that makes someone’s account relevant. Age, job and gender are almost never criteria.
+
+**Quick example.** A supplied plan from the same made-up study: recruit three people from the studio’s mailing list of past attendees.
+
+The reader demonstrates and guides the task before asking for “The lead times it states, and the accommodations it names”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write a screener that selects for relevant experience without revealing the answer you want, plus a recruitment plan with honest lead times, an incentive decision, and a written statement of who your route will systematically miss.
 
 
-### Understand the idea · 1
+### Recruit for experience, not for demographics
 
 Section: learn. Stable action: learn-1.
 
 Recruit for experience, not for demographics. The criterion that matters is usually something a person has recently done — booked a paid class in the last two months, tried and abandoned a booking, attends with a child — because that is what makes their memory usable. Age, gender and city belong in the record for context and for noticing who is absent, but a screener built from demographics alone selects people who look varied and may all be strangers to the task you are studying.
 
 
-### Understand the idea · 2
+### A screener must not teach the answer
 
 Section: learn. Stable action: learn-2.
 
 A screener must not teach the answer. “Have you ever been frustrated by not knowing what to bring to a class?” tells the reader what you hope to hear and recruits people willing to agree with you. “Think about the last paid class or workshop you attended or considered. What did you do in the week before it?” selects on experience and leaves the finding open. Ask about what happened, in the past, in their words, and screen on the presence of the experience rather than on the presence of an opinion.
 
 
-### Understand the idea · 3
+### Plan for real lead times and for who cannot come
 
 Section: learn. Stable action: learn-3.
 
 Plan for real lead times and for who cannot come. The assigned page reports that professional recruitment typically takes about ten days and that recruiting disabled participants can take up to a month, with six to eight weeks advised where cognitive disabilities are involved. You have no agency, so your route is your own network, community groups, a notice in a place where the relevant people already are, or asking a small business owner to introduce you. Every one of those routes has a shape: your network shares your language, your education and often your income band, and a WhatsApp group of parents at one school is not the parents of that city.
 
 
-### Understand the idea · 4
+### Compensate people for their time, and be honest about what you can offer
 
 Section: learn. Stable action: learn-4.
 
 Compensate people for their time, and be honest about what you can offer. The guidance is clear that public participants should receive something for their time, and equally clear that it gives no amounts, because they depend entirely on context. Where you genuinely cannot pay, say so before the session rather than after, keep the session short, come to them rather than making them travel, and do not repeatedly return to the same generous person. A study built on unpaid goodwill is legitimate; a study that hides that it was is not, because the reader cannot then judge who agreed to take part.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A screener drafted as “Do you find booking classes online confusing?” recruited three people who all agreed booking was confusing and could not remember a specific instance. Rewritten to “In the last two months, have you paid for a class, workshop or session that happened at a fixed time? What was the most recent one?”, it recruited five people with concrete recent episodes, two of whom said booking had been easy and then described, unprompted, standing in a corridor unsure whether their payment had gone through. The recruitment note recorded that all five were reached through one WhatsApp group and one shop noticeboard in the same neighbourhood, that nobody over sixty responded, and that everyone who took part reads English comfortably — three facts that bounded every finding that followed.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2057,6 +2215,40 @@ Open Your work and choose Ready for review. The next lesson writes the consent i
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Find the right people, and say who you could not reach
+What I am trying to do: Write a screener that selects for relevant experience without revealing the answer you want, plus a recruitment plan with honest lead times, an incentive decision, and a written statement of who your route will systematically miss.
+
+Key idea or terms:
+Lead time: The number of days between asking for people and having them booked in. Counted from today, including the days when nobody replies.
+Accommodation: A change you make so that somebody can take part: a different time, a phone call instead of video, longer to answer a question.
+Screening criterion: A recent behaviour that makes someone’s account relevant. Age, job and gender are almost never criteria.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied plan from the same made-up study: recruit three people from the studio’s mailing list of past attendees.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The lead times it states, and the accommodations it names” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The lead times it states, and the accommodations it names”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The lead times it states, and the accommodations it names” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - For each criterion, complete the sentence “in the last … this person has …”. Any criterion you cannot complete that way is describing a category of person rather than a source of evidence.
@@ -2126,7 +2318,7 @@ Adequate evidence: One or two sentences naming specific groups your route will n
 Repair: List the ways a person could be relevant to this problem and still never encounter your recruitment route. Turn that list into two sentences. Recheck: The exclusion statement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes the consent introduction and the data plan.
 
@@ -2156,51 +2348,65 @@ Starting route: Prepare a consent script and data plan using fictional labels, n
 
 - A spoken consent introduction under one minute; a written data plan covering collection, storage, access, retention, deletion and per-participant removal; scripted responses to four difficult moments; and a stated jurisdiction limitation.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Research means learning from evidence without pretending that a guess, rehearsal or small study proves more than it does. In this lesson, your first small result is: A list of what a participant must understand before agreeing.
+
+**Words you will use**
+
+- **Informed consent:** They understand what will happen, what is recorded and what it is for, and they agree freely and can withdraw.
+- **Consent introduction:** The short thing you say aloud at the start of a session, before anything is recorded or asked.
+- **Withdrawal:** Somebody deciding to stop, or to have their material taken back out, after they had already agreed.
+
+**Quick example.** A supplied data plan from the same made-up study: “Notes stored in one document on my laptop, named by session number. Audio deleted after transcription. Kept until the course ends.”
+
+The reader demonstrates and guides the task before asking for “Everything they must understand before agreeing”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write a consent introduction you can read aloud in under a minute, and a written data plan naming what you will collect, where it will live, who can see it, when it will be deleted and how one person's data could be removed on request.
 
 
-### Understand the idea · 1
+### Idea 1: Informed consent means the person understands, before agreeing…
 
 Section: learn. Stable action: learn-1.
 
 Informed consent means the person understands, before agreeing, what the research is for, what will happen in the session, what will be collected, whether it will be recorded, who will see it, that they may stop or skip anything at any time, and that stopping costs them nothing. The assigned page lists these plainly. Consent can be recorded on paper, by email, or spoken at the start of a recording, and the method matters less than whether the understanding is real: reading a paragraph at speed to someone who is being polite is not consent, it is a ritual.
 
 
-### Understand the idea · 2
+### Consent is not permanent
 
 Section: learn. Stable action: learn-2.
 
 Consent is not permanent. A person can withdraw during the session or afterwards, and withdrawal means their data is removed, not merely flagged. That has a practical consequence for how you store things: if six people's notes are in one undifferentiated document, you cannot honour a withdrawal without destroying the study, so you will be tempted not to honour it. Name files by participant so that one participant can be deleted cleanly. This is why the storage decision and the consent promise belong in the same lesson.
 
 
-### Understand the idea · 3
+### Your notes are personal data
 
 Section: learn. Stable action: learn-3.
 
 Your notes are personal data. So are recordings, photographs, screen captures and the message thread you recruited through. Collect the minimum that answers your questions: you almost never need a full name, an address, an employer or a date of birth, and each one you collect is something you must protect, justify and eventually delete. Keep a short participant key — P1, P2 — separate from the notes, so the notes themselves carry no identity, and store the key somewhere the notes are not.
 
 
-### Understand the idea · 4
+### The assigned pages are written to UK law and UK government practice
 
 Section: learn. Stable action: learn-4.
 
 The assigned pages are written to UK law and UK government practice. India has its own data protection regime, and this course has not verified a primary source for it, so nothing here should be read as a statement of your legal obligations. Treat the guidance as a floor of decent practice, and before recruiting real participants outside a classroom exercise, check the current Indian requirements yourself from a primary source. One rule this course imposes on its own authority regardless of jurisdiction: do not paste research notes, recordings, transcripts or participant details into an AI tool. The assigned page does not discuss AI tools at all, so the guidance is the course's, and the reason is that you cannot promise a participant something you have handed to a third party you do not control.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A one-minute spoken introduction that worked: “Thanks for doing this. I am learning product design, and I am trying to understand how people book paid classes — I am not testing you, and there are no wrong answers. It will take about thirty minutes. I would like to write notes, and I would like to record the audio so I do not have to write while you talk — is that all right? The recording stays on my own laptop, I am the only person who will hear it, I will delete it within three months, and I will not use your name anywhere. You can skip any question, and you can tell me to stop at any point, including afterwards, and I will delete everything from your session. Any questions before we start?” The data plan behind it: audio and notes stored in one folder per participant named P1 to P5 on the researcher's own device, a separate contact list holding names and numbers deleted at the end of the study, nothing uploaded anywhere, everything deleted three months after the last session.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2561,6 +2767,40 @@ Open Your work and choose Ready for review. The next lesson runs the interview i
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Consent, privacy and a data plan you will keep
+What I am trying to do: Write a consent introduction you can read aloud in under a minute, and a written data plan naming what you will collect, where it will live, who can see it, when it will be deleted and how one person's data could be removed on request.
+
+Key idea or terms:
+Informed consent: They understand what will happen, what is recorded and what it is for, and they agree freely and can withdraw.
+Consent introduction: The short thing you say aloud at the start of a session, before anything is recorded or asked.
+Withdrawal: Somebody deciding to stop, or to have their material taken back out, after they had already agreed.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied data plan from the same made-up study: “Notes stored in one document on my laptop, named by session number. Audio deleted after transcription. Kept until the course ends.”
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Everything they must understand before agreeing” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Everything they must understand before agreeing”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Everything they must understand before agreeing” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Check your script against the list on the assigned page item by item and add what is missing. Then read it aloud and time it; anything over a minute is being skimmed by the listener anyway.
@@ -2630,7 +2870,7 @@ Adequate evidence: A written line stating that the guidance used is UK-based, th
 Repair: Write two sentences: what the assigned pages are written to, and what you have not established. Do not attempt to summarise Indian law from memory or from an AI answer; name it as unchecked. Recheck: The two sentences.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson runs the interview itself.
 
@@ -2660,51 +2900,65 @@ Starting route: Bring your ranked questions and consent plan. Without a particip
 
 - A one-page interview guide, raw notes with said, inferred and follow-up visibly separated, a note of what was reconstructed from memory, and a revised guide with a written reason for each change.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Research means learning from evidence without pretending that a guess, rehearsal or small study proves more than it does. In this lesson, your first small result is: A guide with a warm-up, episode questions and a closing question.
+
+**Words you will use**
+
+- **Episode:** One specific occasion that actually happened. Asking about episodes gets you events; asking in general gets you self-description.
+- **Inferred:** Your reading of what was said, rather than the words themselves. Keeping it in its own column is what stops a conclusion being quoted later as something the person told you.
+- **Follow up:** The question you would ask next time, written down while you still remember why you wanted to ask it.
+
+**Quick example.** A supplied exchange from the same made-up session. You: “Was it hard to find what to bring?” Her: “Yeah, a bit, I suppose.”
+
+The reader demonstrates and guides the task before asking for “Warm-up: the easy opening question”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Run at least one consented interview about a recent specific episode and produce raw notes in which what was said, what you inferred and what you want to follow up are visibly separate, plus a guide revised from what actually happened.
 
 
-### Understand the idea · 1
+### Build the guide around episodes, not opinions
 
 Section: learn. Stable action: learn-1.
 
 Build the guide around episodes, not opinions. A workable shape is: a warm-up that establishes the context and lets them hear their own voice; a request for the most recent specific instance — “tell me about the last time you booked something like this” — walked through in order from before they started to after they finished; two or three prepared probes for the moments your ranked questions care about; and a closing question that invites what you failed to ask. Six good questions with room to follow is better than fifteen that must be got through.
 
 
-### Understand the idea · 2
+### Follow, do not lead
 
 Section: learn. Stable action: learn-2.
 
 Follow, do not lead. When someone says “it was a bit confusing”, the useful responses are silence, “say more about that”, and “what happened just before that?”. The damaging response is “was it confusing because the price was hidden?”, which hands them your hypothesis and gets it back as data. Laddering means moving from what happened to how they decided to why it mattered, one step at a time, using their words rather than yours. If you find yourself introducing a noun the participant has not used, notice it.
 
 
-### Understand the idea · 3
+### Silence is the technique people find hardest and gain most from
 
 Section: learn. Stable action: learn-3.
 
 Silence is the technique people find hardest and gain most from. After an answer that seems finished, wait. Three or four seconds is long enough to be uncomfortable and short enough not to be strange, and it is where the qualification, the exception and the actual story usually arrive. Nodding and moving on politely to the next question is what makes an interview feel smooth and produce nothing.
 
 
-### Understand the idea · 4
+### Idea 4: Working alone, you cannot moderate well and take full notes at…
 
 Section: learn. Stable action: learn-4.
 
 Working alone, you cannot moderate well and take full notes at the same time; the assigned page assumes a note-taker you do not have. So decide in advance: record with consent and take only sparse markers during the session, or accept thinner notes and write up immediately afterwards while memory is fresh. Either way, keep three things separate in the record — what they said, in their words; what you inferred from it; and what you want to follow up. Mixing them takes ten seconds during the session and cannot be undone afterwards, because by the next day you will no longer remember which was which.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - In one session the participant said “the payment was fine, it just took a while.” The interviewer waited. After four seconds: “Well, I did pay twice actually. The first time nothing happened so I did it again, then I got two messages and had to ring them.” The prepared question about payment clarity would never have found this, because the participant had classified the double payment as her own mistake and not as a problem worth mentioning. The note recorded three separate lines: her words verbatim; the inference that the pending state was invisible to her; and the follow-up to ask the next participant what they did when nothing appeared to happen.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3124,6 +3378,40 @@ Open Your work and choose Ready for review. The next lesson watches a task where
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Interviews that produce evidence, not agreement
+What I am trying to do: Run at least one consented interview about a recent specific episode and produce raw notes in which what was said, what you inferred and what you want to follow up are visibly separate, plus a guide revised from what actually happened.
+
+Key idea or terms:
+Episode: One specific occasion that actually happened. Asking about episodes gets you events; asking in general gets you self-description.
+Inferred: Your reading of what was said, rather than the words themselves. Keeping it in its own column is what stops a conclusion being quoted later as something the person told you.
+Follow up: The question you would ask next time, written down while you still remember why you wanted to ask it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied exchange from the same made-up session. You: “Was it hard to find what to bring?” Her: “Yeah, a bit, I suppose.”
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Warm-up: the easy opening question” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Warm-up: the easy opening question”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Warm-up: the easy opening question” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Delete every question containing “would you”, “do you usually” or “what do you think about”. Replace them with a request for the last time it happened and a probe for what they did next.
@@ -3193,7 +3481,7 @@ Adequate evidence: A second version of the guide with a written reason for each 
 Repair: For each question, write what it actually produced. Remove anything that produced agreement, restatement of the question, or nothing. Recheck: Both guide versions with reasons.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson watches a task where it actually happens.
 
@@ -3223,51 +3511,65 @@ Starting route: Plan an observation of one task. If consent or access is missing
 
 - An observation record with stated stance, a timed sequence of actions including waits and interruptions, environment notes, at least three things an interview would not have produced, and a written limitations paragraph.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Research means learning from evidence without pretending that a guess, rehearsal or small study proves more than it does. In this lesson, your first small result is: A chosen stance and what it will distort.
+
+**Words you will use**
+
+- **Think-aloud:** Asking someone to narrate as they work. It reveals reasoning and changes the pace and care of what they do.
+- **Watch list:** A short list of what you mean to notice, written before you go. Short, because a long one turns the session into ticking boxes.
+- **Consent:** Someone’s agreement, given once they know what you will do with what you see. It can be withdrawn at any moment, including halfway through.
+
+**Quick example.** A supplied observation from the same made-up session: she opened the class page, went back to the list, opened it again, then chose a different class.
+
+The reader demonstrates and guides the task before asking for “Silent, with brief questions, or think-aloud”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Run one consented observation of a real task in its own setting with a stated observation stance, and produce a record containing at least three things you saw that nobody would have told you in an interview.
 
 
-### Understand the idea · 1
+### Idea 1: The assigned page describes three stances, and choosing one be…
 
 Section: learn. Stable action: learn-1.
 
 The assigned page describes three stances, and choosing one before you arrive is most of the skill. You can watch silently and ask everything afterwards, which disturbs the task least and costs you the reasoning behind what you saw. You can watch and ask brief questions as things happen, which trades a little naturalness for context. Or you can ask the person to think aloud throughout, which gives you the most reasoning and changes the task the most, because narrating slows people down and makes them tidy up their behaviour. None is correct in general; each distorts something, and your record should name which distortion you accepted.
 
 
-### Understand the idea · 2
+### The setting is data
 
 Section: learn. Stable action: learn-2.
 
 The setting is data. Where the person sits, whether the room is noisy, whether the phone is theirs or shared, whether the battery is low, whether the network drops in that corner of the house, whether a child needs attention halfway through — these are not interruptions to the study, they are the conditions the design will actually meet. Studying a booking flow in a quiet room on a fast connection tells you how it behaves in a place where nobody will ever use it.
 
 
-### Understand the idea · 3
+### Idea 3: Sessions are longer than interviews — the guidance suggests on…
 
 Section: learn. Stable action: learn-3.
 
 Sessions are longer than interviews — the guidance suggests one to three hours — because tasks have gaps, waiting and interruptions in them, and the gaps are frequently where the trouble is. Take timings. A step that takes eleven seconds and a step that takes four minutes look identical in a flow diagram, and they are entirely different design problems.
 
 
-### Understand the idea · 4
+### Consent in someone else's space needs more care, not less
 
 Section: learn. Stable action: learn-4.
 
 Consent in someone else's space needs more care, not less. You are in their home, their shop or their office; other people may be present who have not agreed to anything; there will be things in view that are none of your business. Agree beforehand what you may photograph, avoid capturing anyone who has not consented, and be explicit that they can stop at any point. The page assumes a pair of researchers, one watching and one noting; alone, you will miss things, and the honest response is to record fewer, better observations rather than to claim complete coverage.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - An observation of one person booking a class at home produced three things no interview had surfaced. She checked the price against a screenshot her friend had sent, in a different app, twice — the price on the page did not match what she remembered and she trusted the screenshot more. She stood up and walked to the window when the payment screen appeared, because the network was unreliable at the sofa, and stayed standing until it resolved. And after the confirmation appeared she took a screenshot of it, then sent it to her friend — the actual end of the task was not the confirmation screen but proof shared with someone else. The record noted the stance used (silent, questions afterwards), that a second observer would have caught more, and that this was one person in one home.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3691,6 +3993,40 @@ Open Your work and choose Ready for review. The next lesson designs a one-week d
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Watch the task where it actually happens
+What I am trying to do: Run one consented observation of a real task in its own setting with a stated observation stance, and produce a record containing at least three things you saw that nobody would have told you in an interview.
+
+Key idea or terms:
+Think-aloud: Asking someone to narrate as they work. It reveals reasoning and changes the pace and care of what they do.
+Watch list: A short list of what you mean to notice, written before you go. Short, because a long one turns the session into ticking boxes.
+Consent: Someone’s agreement, given once they know what you will do with what you see. It can be withdrawn at any moment, including halfway through.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied observation from the same made-up session: she opened the class page, went back to the list, opened it again, then chose a different class.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Silent, with brief questions, or think-aloud” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Silent, with brief questions, or think-aloud”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Silent, with brief questions, or think-aloud” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the three stances and, for your session, what each would have produced. Then state which you actually used, including any drift, and what that means for the record.
@@ -3760,7 +4096,7 @@ Adequate evidence: A written paragraph naming the single-observer limitation, th
 Repair: Write the sentence “this is what one person did in one place on one device on one day”, then add what you would need to see before treating any of it as typical. Recheck: The limitations paragraph.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson designs a one-week diary study you could actually run.
 
@@ -3790,51 +4126,65 @@ Starting route: Design a diary protocol with at most four short prompts. No part
 
 - A one-week protocol with trigger type and its blind spot, an entry template timed at under two minutes, a prompt schedule, a stated burden and offer, a dropout and withdrawal plan, and a closing-conversation plan — plus either the collected entries or a dated recruitment gap.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Research means learning from evidence without pretending that a guess, rehearsal or small study proves more than it does. In this lesson, your first small result is: A trigger type chosen for your question.
+
+**Words you will use**
+
+- **Event triggering:** They log when the thing happens. Best for infrequent events, and it relies on them remembering to log.
+- **Entry template:** The few prompts a participant answers each time. It is the whole instrument, so every extra line is paid for daily by someone doing you a favour.
+- **Prompt:** One question in the entry, short enough to answer on a phone while standing up.
+
+**Quick example.** A supplied situation from the same made-up study: the participant logs on days one and two, then nothing for three days.
+
+The reader demonstrates and guides the task before asking for “Event, interval or signal triggering”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write a one-week logging protocol with an entry template, a prompt schedule, an honest burden estimate and a dropout plan, and either run it with a consenting participant or submit the protocol together with the recorded recruitment gap.
 
 
-### Understand the idea · 1
+### The assigned article describes three ways to trigger entries
 
 Section: learn. Stable action: learn-1.
 
 The assigned article describes three ways to trigger entries. Event-contingent asks for an entry whenever a defined thing happens, which suits rare events and gives you the moment itself. Interval-contingent asks at fixed times — every evening — which gives comparable coverage and misses whatever happened at eleven in the morning. Signal-contingent prompts at random or chosen moments, which catches the ordinary and irritates people fastest. Choose by what you need to see, then say which distortion you accepted.
 
 
-### Understand the idea · 2
+### Burden decides whether you get data at all
 
 Section: learn. Stable action: learn-2.
 
 Burden decides whether you get data at all. Every extra field, every extra prompt and every extra day increases dropout, and the entries that stop arriving are not random: the busy days, which are usually the interesting ones, are the first to go missing. Design the entry to take under two minutes, in whatever medium the person already uses — a voice note, a photograph, three lines in a messaging app — rather than a form that requires them to sit down at a laptop.
 
 
-### Understand the idea · 3
+### Plan for dropout rather than being surprised by it
 
 Section: learn. Stable action: learn-3.
 
 Plan for dropout rather than being surprised by it. Decide in advance what an acceptable minimum is, what you will do after two silent days, whether a missed day may be filled in later and how you will mark reconstructed entries, and what you will do if a person withdraws mid-week. Decide too what you owe them: a week of daily entries is real work, and if you cannot compensate it you should ask for less.
 
 
-### Understand the idea · 4
+### A diary is a beginning, not a finding
 
 Section: learn. Stable action: learn-4.
 
 A diary is a beginning, not a finding. The strongest use is diary plus a closing conversation: the entries tell you what happened and when, and the conversation, held with the entries in front of you both, tells you what those moments meant. Read the entries before that conversation and write your questions from them; a diary study analysed without talking to the person is a pile of fragments you will interpret with your own assumptions.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A one-week protocol on booking weekend classes: event-contingent, entry whenever the person thought about attending something and did not book it. Entry template of four lines, sent by voice note or text, under two minutes: what was it, where were you, what stopped you, what did you do instead. Prompt on day one, then a light reminder on days three and six only. Burden estimated at fifteen minutes total across the week and stated to the participant beforehand. Dropout plan: after two silent days, one friendly message, and after that stop and use whatever exists. It ran with one participant and produced six entries, five of which said some version of “needed to check with my sister first” — which no interview had produced and which the closing conversation turned into a finding about who actually makes this decision. The write-up said plainly: one participant, one week, six entries, sequence not prevalence.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4230,6 +4580,40 @@ Open Your work and choose Ready for review. The next lesson writes a survey and 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: A diary study you could actually run
+What I am trying to do: Write a one-week logging protocol with an entry template, a prompt schedule, an honest burden estimate and a dropout plan, and either run it with a consenting participant or submit the protocol together with the recorded recruitment gap.
+
+Key idea or terms:
+Event triggering: They log when the thing happens. Best for infrequent events, and it relies on them remembering to log.
+Entry template: The few prompts a participant answers each time. It is the whole instrument, so every extra line is paid for daily by someone doing you a favour.
+Prompt: One question in the entry, short enough to answer on a phone while standing up.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied situation from the same made-up study: the participant logs on days one and two, then nothing for three days.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Event, interval or signal triggering” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Event, interval or signal triggering”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Event, interval or signal triggering” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write what your question needs to catch, then write which of the three triggers would catch it and what each would miss. Choose again if your first choice cannot see the moment you care about.
@@ -4299,7 +4683,7 @@ Adequate evidence: A plan to read the entries first and build questions from the
 Repair: Write the two or three question shapes you will use — “on Tuesday you wrote …, what was happening?” — and commit to writing the actual questions only after reading the entries. Recheck: The closing-conversation plan.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes a survey and states what a number can carry.
 
@@ -4329,51 +4713,65 @@ Starting route: Draft five survey questions, each tied to a decision. If no reac
 
 - A questionnaire of at most eight reviewed questions with the pre-review wording preserved, a written statement of the reachable and unreachable population, a reporting rule for counts and intervals, and notes from a two-person pilot.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Research means learning from evidence without pretending that a guess, rehearsal or small study proves more than it does. In this lesson, your first small result is: Four wording practices and what an interval is for.
+
+**Words you will use**
+
+- **Interval:** The range a rate could plausibly be, given how many people answered. With small numbers it is so wide that the rate carries almost nothing.
+- **Questionnaire:** The set of questions itself, as distinct from the survey, which is the whole exercise of sending it out and reading what comes back.
+- **Demographic question:** A question about who somebody is rather than what they did: age, role, how long they have been coming. Worth asking only if you would act differently depending on the answer.
+
+**Quick example.** A supplied question from the same made-up survey: “How likely would you be to use a helpful reminder about what to bring, and would you prefer it by email or text?”
+
+The reader demonstrates and guides the task before asking for “The four wording practices you most need, and what an interval is for”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write a questionnaire of at most eight questions that survives a wording review, and state in advance the population you can actually reach, the counts you will report instead of percentages, and the interval you would have to attach to any rate.
 
 
-### Understand the idea · 1
+### Idea 1: The assigned article gives ten practices, and the ones that br…
 
 Section: learn. Stable action: learn-1.
 
 The assigned article gives ten practices, and the ones that break most studies are the first four. Ask only what you will act on, because every extra question costs you completions. Use neutral, natural language, since a question containing your hypothesis returns your hypothesis. Do not ask people to predict their behaviour — “would you use this?” measures politeness. And prefer closed questions with balanced scales, because open text at scale becomes a pile you will skim and quote selectively. Add to those: no double-barrelled questions, mutually exclusive and exhaustive options, an opt-out for every question, and respectful, inclusive wording.
 
 
-### Understand the idea · 2
+### Idea 2: Wording is only half the problem; who answers is the other hal…
 
 Section: learn. Stable action: learn-2.
 
 Wording is only half the problem; who answers is the other half, and the article deliberately does not cover it. A survey circulated through your own contacts measures your own contacts. A survey posted where the enthusiastic gather measures enthusiasm. There is no wording clever enough to fix a sample that never included the people whose absence matters, and the only honest response is to define, before sending, who could possibly have received it and who could not.
 
 
-### Understand the idea · 3
+### Small samples should report counts, not percentages
 
 Section: learn. Stable action: learn-3.
 
 Small samples should report counts, not percentages. With twelve responses, “58 per cent” is a way of writing “seven” that sounds like a measurement, and the reader will treat it as one. Report “seven of twelve”. If you do report a rate, the assigned interval reading is explicit that a rate without an interval is not a result; the width of that interval at small numbers is usually wide enough to make the point on its own. Note also that the course's sample-size resource covers binary success metrics only and states that it does not cover surveys, so do not borrow its numbers as a survey sample size — the honest position is that you are collecting a small, self-selected set of responses and reporting them as such.
 
 
-### Understand the idea · 4
+### A survey is strongest attached to something else
 
 Section: learn. Stable action: learn-4.
 
 A survey is strongest attached to something else. After interviews, it can check whether a pattern you heard from four people also appears among thirty; before interviews, it can find people who have had a specific experience worth talking about. Alone, and small, it mostly produces a table you cannot defend. Design it as one input to a triangulated picture, and say what it is triangulating with.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A draft survey opened with “How frustrating do you find booking classes online?” — leading, and it assumes the frustration. It contained “Do you find the price and materials information clear and easy to find?”, which is two questions and cannot be answered by someone for whom the price was clear and the materials were not. It asked “Would you use a reminder feature?”, a prediction. Rewritten: eight questions, opening with “In the last two months, how many paid classes or workshops have you booked?” with count ranges, then behaviour questions about the most recent one, a balanced five-point scale on how confident they were that the booking had worked, an opt-out on every item, and one open question at the end. Twenty-two people answered, all through two WhatsApp groups. The report said “nine of twenty-two said they were unsure their payment had gone through”, named the two groups as the entire reachable population, and made no percentage claim at all.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4767,6 +5165,40 @@ Open Your work and choose Ready for review. The next lesson turns everything you
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Surveys: wording, and what a number can carry
+What I am trying to do: Write a questionnaire of at most eight questions that survives a wording review, and state in advance the population you can actually reach, the counts you will report instead of percentages, and the interval you would have to attach to any rate.
+
+Key idea or terms:
+Interval: The range a rate could plausibly be, given how many people answered. With small numbers it is so wide that the rate carries almost nothing.
+Questionnaire: The set of questions itself, as distinct from the survey, which is the whole exercise of sending it out and reading what comes back.
+Demographic question: A question about who somebody is rather than what they did: age, role, how long they have been coming. Worth asking only if you would act differently depending on the answer.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied question from the same made-up survey: “How likely would you be to use a helpful reminder about what to bring, and would you prefer it by email or text?”
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The four wording practices you most need, and what an interval is for” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The four wording practices you most need, and what an interval is for”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The four wording practices you most need, and what an interval is for” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Take the ten practices as a checklist and mark each question against each one. Rewrite every failure and keep both versions so the review is visible.
@@ -4836,7 +5268,7 @@ Adequate evidence: A written rule stating the count below which you will not use
 Repair: Write your rule in one sentence, then apply it to a made-up result of your expected size and see what it forces you to write. Adjust the threshold if the sentence still misleads. Recheck: The rule and the worked example.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson turns everything you have collected into findings.
 
@@ -4866,51 +5298,65 @@ Starting route: Use consented notes or the lesson’s labelled supplied notes. K
 
 - At most seven findings, each with participant counts, evidence, confidence, the decision it informs and contradicting evidence; plus an open-questions list and the discarded candidate findings with reasons.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Research means learning from evidence without pretending that a guess, rehearsal or small study proves more than it does. In this lesson, your first small result is: What stands out after reading everything once, before extracting anything.
+
+**Words you will use**
+
+- **Raw material:** Everything you collected before you did anything to it: notes, recordings, photographs, or the practice notes supplied with the course.
+- **Synthesis:** The work of turning raw material into statements you could defend. It is a stage of its own, not a summary written at the end.
+- **In their terms:** Using the words they used. Translating into your vocabulary quietly imports your interpretation.
+
+**Quick example.** A supplied finding from the same made-up study: “Participants find the booking flow confusing.”
+
+The reader demonstrates and guides the task before asking for “After reading everything once without writing: what stands out?”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Convert your raw material into at most seven findings, each carrying how many people showed it, the evidence behind it, your confidence, the decision it informs, and any evidence that contradicts it.
 
 
-### Understand the idea · 1
+### Idea 1: Work upward in three separable layers, which is the discipline…
 
 Section: learn. Stable action: learn-1.
 
 Work upward in three separable layers, which is the discipline the assigned page is built on. An observation is what happened or was said. An interpretation is what you think it means. A decision is what should change as a result. Keeping them apart lets someone else disagree with your interpretation without disputing your observation, which is precisely what a good reviewer will want to do, and it is why the three-column notes from the interview lesson matter now.
 
 
-### Understand the idea · 2
+### Group observations, but watch where the groups come from
 
 Section: learn. Stable action: learn-2.
 
 Group observations, but watch where the groups come from. Bringing your existing categories to the notes and sorting into them will produce the categories you brought. The alternative is to lay out individual observations, put together the ones that seem to belong, and only then name the group from what is in it — and to notice when a group is named after a solution rather than a pattern. A group called “needs a reminder feature” is not a finding; a group called “people check with someone else before paying” is.
 
 
-### Understand the idea · 3
+### Count people, not incidents
 
 Section: learn. Stable action: learn-3.
 
 Count people, not incidents. One talkative participant who mentioned the same difficulty five times is one person, and writing “mentioned five times” quietly turns them into five. Beside each finding write the number of participants who showed it and the total, and keep the single-participant findings: a severe problem seen once is worth acting on, provided you write it as one person's severe problem rather than as a pattern.
 
 
-### Understand the idea · 4
+### Contradictions are findings
 
 Section: learn. Stable action: learn-4.
 
 Contradictions are findings. When two participants did opposite things, the honest record keeps both and asks what differed between them — device, experience, who else was involved, whether they had done it before. Resolving a contradiction by dropping the inconvenient half is the most common way a small study becomes wrong, and it is invisible in the final report, which is what makes it dangerous.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Four interviews, one observation and twenty-two survey responses produced fourteen candidate findings, which were reduced to six. One survivor: “People confirm the plan with another person before paying — 3 of 4 interviewees, the observed participant, and the most common open-text answer. Confidence: moderate. Informs: whether the flow can be completed by one person alone, and whether a share step belongs before payment. Contradicting evidence: the fourth interviewee, who books alone and said checking with someone would annoy her; she was the only participant who books for herself only.” A candidate finding that did not survive: “Users want a cheaper option”, which came from one open-text comment and matched nothing else, and moved to the open-questions list rather than being deleted.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5307,6 +5753,40 @@ Open Your work and choose Ready for review. The next lesson writes jobs and need
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: From a pile of notes to findings you can defend
+What I am trying to do: Convert your raw material into at most seven findings, each carrying how many people showed it, the evidence behind it, your confidence, the decision it informs, and any evidence that contradicts it.
+
+Key idea or terms:
+Raw material: Everything you collected before you did anything to it: notes, recordings, photographs, or the practice notes supplied with the course.
+Synthesis: The work of turning raw material into statements you could defend. It is a stage of its own, not a summary written at the end.
+In their terms: Using the words they used. Translating into your vocabulary quietly imports your interpretation.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied finding from the same made-up study: “Participants find the booking flow confusing.”
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “After reading everything once without writing: what stands out?” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “After reading everything once without writing: what stands out?”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “After reading everything once without writing: what stands out?” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Take each finding and split it into three lines: what happened, what you think it means, what should change. Any finding you cannot split has skipped a layer, usually the first.
@@ -5376,7 +5856,7 @@ Adequate evidence: A contradicting-evidence line on every finding that has any, 
 Repair: Go back through your raw notes looking specifically for anything that argues against each finding. If you find nothing for any finding, you are probably reading for confirmation; ask someone else to read the notes cold. Recheck: The findings with contradiction lines and the open questions.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes jobs and needs from these findings.
 
@@ -5406,51 +5886,65 @@ Starting route: Bring findings or use this fictional training case: a first-time
 
 - Three job statements with functional and emotional success criteria and cited findings, three solution-free need statements, an evidenced or assumed label on each, and a reflection engaging with the method's stated weaknesses.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Research means learning from evidence without pretending that a guess, rehearsal or small study proves more than it does. In this lesson, your first small result is: What each lens is for and the weaknesses its own article states.
+
+**Words you will use**
+
+- **Altitude:** How far above the current design a statement sits. Too low and it dies when the design changes; too high and it guides nothing.
+- **Job statement:** A sentence in three parts: the situation someone is in, what they are trying to get done, and the outcome they want.
+- **Functional success:** What would be true in the world if the job went well. Usually something you could see or check.
+
+**Quick example.** Two supplied statements. A: “When I open the app, I want the search bar at the top, so that I can find classes quickly.” B: “When I have a free evening, I want to find something worth attending nearby, so that I do not waste the evening deciding.”
+
+The reader demonstrates and guides the task before asking for “What each lens is for, and the weaknesses the article itself states”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write three job statements with functional and emotional success criteria and three need statements from your own evidence, each labelled as evidenced or assumed, and identify which of them would still be true if the product were rebuilt from nothing.
 
 
-### Understand the idea · 1
+### Idea 1: A job statement describes what someone is trying to get done i…
 
 Section: learn. Stable action: learn-1.
 
 A job statement describes what someone is trying to get done in a situation, with the criteria by which they would judge it done. The assigned article's sentence form combines a situation, a motivation and an outcome: when I am deciding whether to spend a Saturday on a class, I want to know what I am committing to, so that I can agree it with my family before I pay. Success has a functional side, which is measurable — they knew the total cost, the time and what to bring — and an emotional side, which is not, and which is often the part that decides: they did not feel foolish for asking.
 
 
-### Understand the idea · 2
+### Idea 2: The assigned article also states the weaknesses of the approac…
 
 Section: learn. Stable action: learn-2.
 
 The assigned article also states the weaknesses of the approach, and your reflection must engage with them rather than repeating the method's promises. Jobs abstract away the person, so they can flatten real differences between a first-time attendee and a regular; they can be written at any altitude, and a job written too high — “I want to improve myself” — guides nothing; and they are frequently written from the team's assumptions and then treated as research output. Personas suit better where the differences between kinds of people are the design problem.
 
 
-### Understand the idea · 3
+### Idea 3: A need statement is the plainer instrument and, written well,…
 
 Section: learn. Stable action: learn-3.
 
 A need statement is the plainer instrument and, written well, is harder to game. The assigned page's form names the person, what they need to do and why, and it deliberately excludes any solution: “someone booking for a family needs to know the total cost before committing, so that they can decide together.” If a solution has crept into the sentence, remove it and check whether anything remains; sometimes nothing does, and that is a useful discovery about what you actually know.
 
 
-### Understand the idea · 4
+### Label every statement as evidenced or assumed, and keep both
 
 Section: learn. Stable action: learn-4.
 
 Label every statement as evidenced or assumed, and keep both. An assumed need is not a failure — you cannot research everything, and stating an assumption openly is how it stays available for testing. What is not acceptable is a need statement that reads exactly like the evidenced ones and rests on nothing, because six months later nobody can tell which was which, including you.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - From four interviews and one observation: “When I am considering a paid weekend class, I want to know the full commitment — cost, timing and what I must bring — so that I can confirm with my sister before paying. Functional success: I can state the total and the requirements from memory before I pay. Emotional success: I do not have to message the organiser to ask something I feel I should already know. Evidenced: 3 of 4 interviewees and the observed session.” Beside it, an assumed statement: “When a class is nearly full, I want to know how likely I am to get a place, so that I do not waste effort. Assumed: nobody mentioned availability; included because the flow depends on it.” The reflection noted the method's own weakness — that both statements flatten the difference between the regular attendee and the first-timer, which the personas lens would have kept.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5858,6 +6352,40 @@ Open Your work and choose Ready for review. The next lesson maps the journey wit
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Jobs, needs and the sentence that survives a redesign
+What I am trying to do: Write three job statements with functional and emotional success criteria and three need statements from your own evidence, each labelled as evidenced or assumed, and identify which of them would still be true if the product were rebuilt from nothing.
+
+Key idea or terms:
+Altitude: How far above the current design a statement sits. Too low and it dies when the design changes; too high and it guides nothing.
+Job statement: A sentence in three parts: the situation someone is in, what they are trying to get done, and the outcome they want.
+Functional success: What would be true in the world if the job went well. Usually something you could see or check.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Two supplied statements. A: “When I open the app, I want the search bar at the top, so that I can find classes quickly.” B: “When I have a free evening, I want to find something worth attending nearby, so that I do not waste the evening deciding.”
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What each lens is for, and the weaknesses the article itself states” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What each lens is for, and the weaknesses the article itself states”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What each lens is for, and the weaknesses the article itself states” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - For each job, complete the sentence “they would know this went well because …” twice: once with something countable and once with how they would feel. If the second is guesswork, mark it assumed.
@@ -5927,7 +6455,7 @@ Adequate evidence: A written reflection naming what this framing loses in your s
 Repair: Re-read the article's own criticisms and write, for each, whether it applies to your statements. At least one usually does. Recheck: The reflection with the weaknesses addressed.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson maps the journey with every stage marked by its evidence.
 
@@ -5957,51 +6485,65 @@ Starting route: Draw stages on paper from before booking to after attending. Use
 
 - A working experience map with stages from before the product to after it, three layers, evidence marks on every entry, and a simplified shareable version carrying the marks and a one-line statement of participants, place and period.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Research means learning from evidence without pretending that a guess, rehearsal or small study proves more than it does. In this lesson, your first small result is: Stages that start before your product and end after it.
+
+**Words you will use**
+
+- **Stage:** A period in the person’s experience, not a screen in your flow.
+- **Layer:** One row that runs the whole width of the map, holding a single kind of information: what people do, what they think, or what they feel.
+- **Pass:** One sweep from the first stage to the last, filling in a single layer. Three layers means three passes, not one stage-by-stage crawl.
+
+**Quick example.** A supplied map from the same made-up study, drawn from three interviews, with a deep dip in the feeling layer at the payment stage.
+
+The reader demonstrates and guides the task before asking for “Starting before the product and ending after it”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Produce an experience map of one journey with stages over time and layers for what people do, think and feel, in which every stage is marked as observed, reported or assumed.
 
 
-### Understand the idea · 1
+### Idea 1: The assigned page gives a four-step procedure: prepare with yo…
 
 Section: learn. Stable action: learn-1.
 
 The assigned page gives a four-step procedure: prepare with your research to hand, identify the stages people commonly pass through, build the layers up one at a time, then make a working version and a simplified one for sharing. The order matters. Stages first, because arguing about stages while also placing emotions produces a map that agrees with your assumptions; layers one at a time, because each layer draws on different evidence and you will notice which layer you cannot fill.
 
 
-### Understand the idea · 2
+### Start before the product and end after it
 
 Section: learn. Stable action: learn-2.
 
 Start before the product and end after it. The journey usually begins with a trigger somewhere else — a friend's message, a poster, a deadline — and ends after the thing itself, with proof, a receipt, a memory or a decision about next time. Maps that begin at the landing page and end at the confirmation screen describe the software, not the experience, and they systematically miss the parts you can most cheaply improve.
 
 
-### Understand the idea · 3
+### Idea 3: Mark evidence on the map itself, which is this course's additi…
 
 Section: learn. Stable action: learn-3.
 
 Mark evidence on the map itself, which is this course's addition to the procedure and the reason your maps will be more defensible than most. Every stage gets one of three marks: observed, meaning you watched it happen; reported, meaning a participant described it; assumed, meaning you put it there because the sequence requires it. A map with a run of assumed stages in the middle is not a failure — it is an accurate picture of where the study is thin, and it tells you exactly what the next round of research is for.
 
 
-### Understand the idea · 4
+### Know what the map is not
 
 Section: learn. Stable action: learn-4.
 
 Know what the map is not. It is not a service blueprint: back-stage processes, staff actions and systems are a different diagram, and the assigned page does not cover them. It is not quantitative, so the emotional curve is an illustration of what people described and not a measurement. And it is not durable evidence on its own — a map circulated without its research becomes a story everyone half-remembers as fact, which is why the shareable version must still carry the marks.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A workshop journey mapped in seven stages: hears about it from a friend (reported), looks it up on a phone (observed), tries to work out the total commitment (observed), checks with a family member (reported by three participants, observed once), pays (observed), waits for confirmation (observed, the longest stage and the emotional low point), and shows proof to the person they came with (observed once, and previously invisible to the team). Two stages between “checks with a family member” and “pays” were marked assumed, since nobody described how the decision came back, and that gap became the first question of the next research round. The shared version kept all three marks and one sentence: five participants, one city, one week.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6385,6 +6927,40 @@ Open Your work and choose Ready for review. The last lesson writes the report so
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Map the journey you can actually evidence
+What I am trying to do: Produce an experience map of one journey with stages over time and layers for what people do, think and feel, in which every stage is marked as observed, reported or assumed.
+
+Key idea or terms:
+Stage: A period in the person’s experience, not a screen in your flow.
+Layer: One row that runs the whole width of the map, holding a single kind of information: what people do, what they think, or what they feel.
+Pass: One sweep from the first stage to the last, filling in a single layer. Three layers means three passes, not one stage-by-stage crawl.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied map from the same made-up study, drawn from three interviews, with a deep dip in the feeling layer at the payment stage.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Starting before the product and ending after it” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Starting before the product and ending after it”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Starting before the product and ending after it” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Ask what happened in the hour before the person opened the product and in the day after they finished. Add those stages, marking them assumed if nobody described them.
@@ -6454,7 +7030,7 @@ Adequate evidence: A simplified map that still carries evidence marks and one li
 Repair: Add the scope line and restore the marks. A tidy map without them is the version that will be screenshotted and quoted a year from now. Recheck: The shareable version.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The last lesson writes the report someone could act on.
 
@@ -6484,51 +7060,65 @@ Starting route: Use three traceable findings or the labelled training findings y
 
 - A findings report of at most one page or six slides using the headline structure, a limitations section naming participants, route, exclusions, numbers and period, one recommendation, one explicit non-recommendation, and a completed anonymisation check.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Research means learning from evidence without pretending that a guess, rehearsal or small study proves more than it does. In this lesson, your first small result is: The structure the guidance gives for a finding.
+
+**Words you will use**
+
+- **Finding:** Something your material shows is true, written as a statement rather than as a subject you looked at.
+- **Headline:** The first line of a finding, stating what is true in one full sentence. A reader who stops there should still have the finding.
+- **Evidence:** Where the finding came from: which sessions, and how many people it rests on.
+
+**Quick example.** A supplied pair from the same made-up study. A: “Improve the booking experience.” B: “Show the materials list on the confirmation screen, because all three participants looked for it after booking; do not build the reminder email yet, since nobody in this study mentioned email at all.”
+
+The reader demonstrates and guides the task before asking for “The structure the guidance gives for presenting a finding”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Produce a findings report of at most one page or six slides, structured so each finding leads with its headline and carries its evidence, with a limitations section, a recommended next step and an anonymisation check completed before anything is shared.
 
 
-### Understand the idea · 1
+### Lead with the finding, not the method
 
 Section: learn. Stable action: learn-1.
 
 Lead with the finding, not the method. The assigned page's structure is a headline, the essential facts, why it matters and the evidence behind it — in that order, because a reader who stops after the headline should still have the finding, and a reader who continues should be able to reach the raw material. A report organised by method, walking through what you did before saying what you learned, buries the point behind your process and is read as a defence of the work rather than an argument about the product.
 
 
-### Understand the idea · 2
+### Write for the decision that is actually pending
 
 Section: learn. Stable action: learn-2.
 
 Write for the decision that is actually pending. If someone must choose what to build next month, the useful report tells them what changes and what stays, and says which findings are strong enough to act on now and which are not. A neutral summary of everything you learned, arranged by theme, hands the reader the analysis you were supposed to do. The strongest sentence in a research report is usually the one that names what should not be built.
 
 
-### Understand the idea · 3
+### Limitations are a section, not an apology
 
 Section: learn. Stable action: learn-3.
 
 Limitations are a section, not an apology. Say who took part, how they were recruited, who was excluded, how many, over what period, and what the study cannot establish — the exclusion sentences you wrote when you chose your methods go here almost unchanged. Placed openly, they make the rest more credible, and they protect the finding later: a number quoted without its limits will eventually be used to justify something it cannot support, and the limitations section is the only thing that travels with it.
 
 
-### Understand the idea · 4
+### Anonymise before sharing, and check it rather than assuming it
 
 Section: learn. Stable action: learn-4.
 
 Anonymise before sharing, and check it rather than assuming it. Names, workplaces, unusual job titles, distinctive circumstances and quotations that identify someone in a small community all need removing or blurring, and the assigned page on sharing does not cover this — the data-handling page does. Read the report as though you were the participant's colleague and check whether you could tell who it was. Then be honest about disagreement: if the findings contradict what the person receiving them believes, that is the whole value of the study, and it needs to be stated plainly and once, with the evidence, rather than hedged into invisibility.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A one-page report: three headline findings, each a sentence — “people confirm with someone else before paying, so the flow must survive being paused and resumed” — followed by two lines of evidence with participant counts, and one line on what it changes. Then a limitations paragraph: five participants recruited through two WhatsApp groups and one noticeboard in one neighbourhood, all comfortable reading English, nobody over sixty, one week in September; the study cannot say how common any of this is. Then one recommendation and one explicit non-recommendation: do not build the reminder feature that started this project, because nobody's difficulty was forgetting, and the evidence points elsewhere. The team disagreed with the last point, which is exactly why the study had been worth running, and the disagreement was resolved by a second observation rather than by seniority.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6914,6 +7504,40 @@ Open Your work and choose Ready for review. This closes the research module; the
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Report findings someone can act on
+What I am trying to do: Produce a findings report of at most one page or six slides, structured so each finding leads with its headline and carries its evidence, with a limitations section, a recommended next step and an anonymisation check completed before anything is shared.
+
+Key idea or terms:
+Finding: Something your material shows is true, written as a statement rather than as a subject you looked at.
+Headline: The first line of a finding, stating what is true in one full sentence. A reader who stops there should still have the finding.
+Evidence: Where the finding came from: which sessions, and how many people it rests on.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied pair from the same made-up study. A: “Improve the booking experience.” B: “Show the materials list on the confirmation screen, because all three participants looked for it after booking; do not build the reminder email yet, since nobody in this study mentioned email at all.”
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The structure the guidance gives for presenting a finding” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The structure the guidance gives for presenting a finding”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The structure the guidance gives for presenting a finding” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Rewrite each headline as one sentence that could stand alone in a message. Then check that the evidence line under it names counts and sources.
@@ -6983,7 +7607,7 @@ Adequate evidence: A written confirmation that the report was read for identifyi
 Repair: Re-read every quotation and every description asking whether a colleague or family member would recognise the person. Paraphrase or remove anything that fails, and record what you changed. Recheck: The checked report and the record of removals.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This closes the research module; the findings feed the structure work in the next one.
 

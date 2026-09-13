@@ -23,58 +23,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A removal list with the time each removal gives back
 - A stated rule for when your product animates
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interaction design explains what happens when someone acts, what they see next and how they recover from a mistake. In this lesson, your first small result is: A list of everything in your designs that changes over time, including movement you have only imagined.
+
+**Words you will use**
+
+- **Animation:** Anything that changes over time rather than all at once: a fade, a slide, a colour easing in, a spinning shape.
+- **Millisecond:** A thousandth of a second. Motion is written in milliseconds because the useful range is 100 to 400 of them.
+- **Feedback motion:** Answers “did that work?” inside the moment of acting.
+
+**Quick example.** Made-up example. Auditing eleven animations in a booking app, and getting the first classification wrong. Eleven animations, written down as effects: fade, slide, bounce, shimmer. A list of techniques rather than of purposes.
+
+The reader demonstrates and guides the task before asking for “Every animation in your designs, one per line”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Audit every animation you have proposed or seen in your product, classify each as feedback, continuity, attention or decoration, and remove the ones that answer no question.
 
 
-### Understand the idea · 1
+### Feedback motion answers “did that work
 
 Section: learn. Stable action: learn-1.
 
 Feedback motion answers “did that work?” within the moment of acting.
 
 
-### Understand the idea · 2
+### Continuity motion answers “where did this come from
 
 Section: learn. Stable action: learn-2.
 
 Continuity motion answers “where did this come from?” when something appears or moves.
 
 
-### Understand the idea · 3
+### Attention motion answers “what changed
 
 Section: learn. Stable action: learn-3.
 
 Attention motion answers “what changed?” for something the person did not cause.
 
 
-### Understand the idea · 4
+### Decoration answers nothing
 
 Section: learn. Stable action: learn-4.
 
 Decoration answers nothing. It is not forbidden, but it must be cheap and skippable.
 
 
-### Understand the idea · 5
+### Anything that delays the person's next action must earn the delay
 
 Section: learn. Stable action: learn-5.
 
 Anything that delays the person's next action must earn the delay.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - An audit of the booking flow found eleven animations. Four were feedback and stayed. Three were continuity — the filter panel sliding from the control that opened it, the detail view expanding from its row — and stayed. Two were attention: one legitimate, marking a place that had just been taken by someone else, and one an animated banner promoting a class, which was demoted to a static card. Two were decoration: a bouncing icon on the confirmation screen, kept because it cost nothing and did not delay anything, and an animated page transition that added 400ms to every navigation, which was removed and immediately made the whole flow feel faster.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -665,6 +679,40 @@ Open Your work and choose Ready for review. The next lesson takes the feedback i
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: What motion is actually for
+What I am trying to do: Audit every animation you have proposed or seen in your product, classify each as feedback, continuity, attention or decoration, and remove the ones that answer no question.
+
+Key idea or terms:
+Animation: Anything that changes over time rather than all at once: a fade, a slide, a colour easing in, a spinning shape.
+Millisecond: A thousandth of a second. Motion is written in milliseconds because the useful range is 100 to 400 of them.
+Feedback motion: Answers “did that work?” inside the moment of acting.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Auditing eleven animations in a booking app, and getting the first classification wrong. Eleven animations, written down as effects: fade, slide, bounce, shimmer. A list of techniques rather than of purposes.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every animation in your designs, one per line” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every animation in your designs, one per line”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Every animation in your designs, one per line” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Walk one task and note everything that changes over time, including hover and press states. Add each to the list.
@@ -734,7 +782,7 @@ Adequate evidence: One or two sentences that would settle a future proposal, kep
 Repair: Write the rule, then apply it to the animation you cut. If the rule permits it, tighten the rule. Recheck: The written rule.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes the feedback items and specifies how each control acknowledges a press.
 
@@ -772,58 +820,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A list of anything currently hover-only, with its touch route
 - A tab pass recording where focus was invisible
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interaction design explains what happens when someone acts, what they see next and how they recover from a mistake. In this lesson, your first small result is: One control written as three separate moments, and an honest answer about what a four-second wait looks like today.
+
+**Words you will use**
+
+- **Acknowledgement:** The immediate sign that the press registered. It is not the result, and it must not pretend to be.
+- **Outcome:** What actually happened, which may arrive seconds later or not at all.
+- **Hover:** A pointer resting on something without pressing. It does not exist on a touch screen, so nothing essential can live there.
+
+**Quick example.** A supplied made up case. Pressing Book sends a request that takes about four seconds on a slow connection. Four proposals for what the person sees during those four seconds.
+
+The reader demonstrates and guides the task before asking for “For one control: the press, the acknowledgement and the outcome, as three separate lines”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Specify press, hover and focus feedback for three controls so that every action is acknowledged immediately, and separate acknowledgement from the result that follows later.
 
 
-### Understand the idea · 1
+### Acknowledge the press immediately, even when the result takes seconds
 
 Section: learn. Stable action: learn-1.
 
 Acknowledge the press immediately, even when the result takes seconds.
 
 
-### Understand the idea · 2
+### Separate three moments: the press, the acknowledgement and the outcome
 
 Section: learn. Stable action: learn-2.
 
 Separate three moments: the press, the acknowledgement and the outcome.
 
 
-### Understand the idea · 3
+### Hover does not exist on touch
 
 Section: learn. Stable action: learn-3.
 
 Hover does not exist on touch. Never hide anything essential behind it.
 
 
-### Understand the idea · 4
+### Idea 4: Focus feedback is not optional styling; it is how keyboard use…
 
 Section: learn. Stable action: learn-4.
 
 Focus feedback is not optional styling; it is how keyboard users see where they are.
 
 
-### Understand the idea · 5
+### Idea 5: If a control cannot respond instantly, change its label or sta…
 
 Section: learn. Stable action: learn-5.
 
 If a control cannot respond instantly, change its label or state rather than doing nothing.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The book button did nothing visible until the server replied, which on a throttled connection took four seconds; in the m07 paper test one participant had tapped twice. Rebuilt into three moments: pressed state on touch-down, immediate change to “Booking…” with the control disabled and a spinner, and the outcome message when the server replied. Hover-only reveal of the “remove from shortlist” control was replaced with a permanently visible quiet control. Focus rings were specified against both the light surface and the tinted panel, and the tab pass found one control that could be reached but showed no focus at all.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1254,6 +1316,40 @@ Open Your work and choose Ready for review. The next lesson takes the continuity
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Immediate feedback and the feel of a control
+What I am trying to do: Specify press, hover and focus feedback for three controls so that every action is acknowledged immediately, and separate acknowledgement from the result that follows later.
+
+Key idea or terms:
+Acknowledgement: The immediate sign that the press registered. It is not the result, and it must not pretend to be.
+Outcome: What actually happened, which may arrive seconds later or not at all.
+Hover: A pointer resting on something without pressing. It does not exist on a touch screen, so nothing essential can live there.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied made up case. Pressing Book sends a request that takes about four seconds on a slow connection. Four proposals for what the person sees during those four seconds.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “For one control: the press, the acknowledgement and the outcome, as three separate lines” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “For one control: the press, the acknowledgement and the outcome, as three separate lines”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “For one control: the press, the acknowledgement and the outcome, as three separate lines” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - For each control, write what changes in each state. Then check the states in greyscale.
@@ -1323,7 +1419,7 @@ Adequate evidence: Notes from tabbing through the controls, naming where focus w
 Repair: Build a rough local page with your controls and tab through it. Record what you see, not what you intend. Recheck: The tab-pass notes.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes the continuity items from lesson 1 and gives each a duration and an easing.
 
@@ -1361,58 +1457,72 @@ Starting route: Recommended route: Draw the start and end frames of your three t
 - One rejected transition with the reason recorded
 - A rule for what your product fades and what it moves
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interaction design explains what happens when someone acts, what they see next and how they recover from a mistake. In this lesson, your first small result is: Each continuity item from your audit mapped to what caused it and where it returns, with the placeless ones marked as fades.
+
+**Words you will use**
+
+- **Transition:** The change between two states of a screen, described by where it starts, where it ends and how long it takes.
+- **Easing:** How the speed changes across the movement. Entering fast then settling reads as arrival; a steady speed reads as machinery.
+- **Origin:** The place on screen a thing appears to come from. If you cannot point at it, there is no origin, and the thing should fade rather than travel.
+
+**Quick example.** A supplied made up timing test. The same panel transition was tried at three durations. At 100 milliseconds the panel seemed to appear rather than travel. At 200 the travel was visible and the panel was ready before the hand had moved. At 400 the person was waiting for it.
+
+The reader demonstrates and guides the task before asking for “For each item: what caused it, and where it goes when it is dismissed”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Design three transitions that show where content came from or went, each with a stated duration and easing, and prove each one is doing explanatory work rather than filling time.
 
 
-### Understand the idea · 1
+### A transition should connect a cause to an effect: this opened from that
 
 Section: learn. Stable action: learn-1.
 
 A transition should connect a cause to an effect: this opened from that.
 
 
-### Understand the idea · 2
+### Short is not always better: the distance travelled sets the duration
 
 Section: learn. Stable action: learn-2.
 
 Short is not always better: the distance travelled sets the duration.
 
 
-### Understand the idea · 3
+### Easing carries meaning — entering fast then settling reads as arrival
 
 Section: learn. Stable action: learn-3.
 
 Easing carries meaning — entering fast then settling reads as arrival.
 
 
-### Understand the idea · 4
+### If nothing moved from anywhere, a fade is honest and a slide is a lie
 
 Section: learn. Stable action: learn-4.
 
 If nothing moved from anywhere, a fade is honest and a slide is a lie.
 
 
-### Understand the idea · 5
+### Two simultaneous transitions compete; sequence them or drop one
 
 Section: learn. Stable action: learn-5.
 
 Two simultaneous transitions compete; sequence them or drop one.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three transitions were designed. The filter panel scales and fades from the filter button, about 200ms, entering fast and settling — it explains where the panel came from and where it returns to. The detail view expands from its row over about 250ms, and the row stays in place beneath so the person knows what to go back to. The confirmation replaces the payment screen with a plain fade of 120ms, deliberately not a slide, because nothing moved anywhere and a slide would have implied a direction that does not exist. A fourth candidate — a staggered animation of every list row on load — was dropped: it delayed reading by half a second and explained nothing.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1840,6 +1950,40 @@ Open Your work and choose Ready for review. The next lesson turns on the reduced
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Transitions that explain a change
+What I am trying to do: Design three transitions that show where content came from or went, each with a stated duration and easing, and prove each one is doing explanatory work rather than filling time.
+
+Key idea or terms:
+Transition: The change between two states of a screen, described by where it starts, where it ends and how long it takes.
+Easing: How the speed changes across the movement. Entering fast then settling reads as arrival; a steady speed reads as machinery.
+Origin: The place on screen a thing appears to come from. If you cannot point at it, there is no origin, and the thing should fade rather than travel.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied made up timing test. The same panel transition was tried at three durations. At 100 milliseconds the panel seemed to appear rather than travel. At 200 the travel was visible and the panel was ready before the hand had moved. At 400 the person was waiting for it.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “For each item: what caused it, and where it goes when it is dismissed” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “For each item: what caused it, and where it goes when it is dismissed”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “For each item: what caused it, and where it goes when it is dismissed” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - For each transition ask what caused the change and where the content will go when dismissed. If neither has a place on screen, use a fade.
@@ -1909,7 +2053,7 @@ Adequate evidence: A removed transition with what it cost and what it explained.
 Repair: Find the animation that delays the most and explains the least. Remove it and record what it cost. Recheck: The rejection note.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson turns on the reduced-motion setting and gives every one of these a second version.
 
@@ -1947,58 +2091,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A list of essential motion with its reduced form
 - Anything removed entirely, with the reason
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interaction design explains what happens when someone acts, what they see next and how they recover from a mistake. In this lesson, your first small result is: The reduced-motion setting turned on, on a named device, with a note of what visibly changed.
+
+**Words you will use**
+
+- **Reduced motion:** A setting in every major operating system by which a person asks for less movement. It is a request from them, not a preference you grant.
+- **Parallax:** Two layers moving at different speeds as you scroll, so one appears to sit behind the other. It is the pattern most likely to cause harm.
+- **Full version:** The movement exactly as you designed it, for people who have not asked for less.
+
+**Quick example.** Made-up example. Turning the reduced-motion setting on for the first time, and assuming it meant switching every animation off. Reduced motion means no motion. One rule, easy to write: when the setting is on, nothing animates anywhere.
+
+The reader demonstrates and guides the task before asking for “The device you used, and where the setting lives on it”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Turn on your own device's reduced-motion setting, design an alternative for every animation you kept, and state which are essential enough to survive in a reduced form.
 
 
-### Understand the idea · 1
+### Idea 1: The setting is a request from the person, exposed by every maj…
 
 Section: learn. Stable action: learn-1.
 
 The setting is a request from the person, exposed by every major operating system.
 
 
-### Understand the idea · 2
+### Idea 2: Reduced does not mean removed: replace movement with a gentler…
 
 Section: learn. Stable action: learn-2.
 
 Reduced does not mean removed: replace movement with a gentler change, usually a fade.
 
 
-### Understand the idea · 3
+### Idea 3: Essential motion — showing that something is loading — must su…
 
 Section: learn. Stable action: learn-3.
 
 Essential motion — showing that something is loading — must survive in some form.
 
 
-### Understand the idea · 4
+### Idea 4: Large-area and parallax movement is the most likely to cause h…
 
 Section: learn. Stable action: learn-4.
 
 Large-area and parallax movement is the most likely to cause harm; cut it first.
 
 
-### Understand the idea · 5
+### Test with the setting on, on your own device, and record what you saw
 
 Section: learn. Stable action: learn-5.
 
 Test with the setting on, on your own device, and record what you saw.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - With the setting on, three of the five kept animations needed alternatives. The filter panel's scale-and-fade became a fade of 120ms with no movement, keeping the change legible. The detail view's expansion became a cross-fade, and the row it came from stayed highlighted so the relationship survived. The loading spinner — essential — became a small pulsing dot with the label “Booking…”, local rather than crossing the screen. The confirmation flourish was removed entirely under the setting, since it explained nothing. Testing was done on the researcher's own phone with the setting on, and the result recorded with the device and version.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2553,6 +2711,40 @@ Open Your work and choose Ready for review. The next lesson looks at gestures an
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Reduced motion is not an afterthought
+What I am trying to do: Turn on your own device's reduced-motion setting, design an alternative for every animation you kept, and state which are essential enough to survive in a reduced form.
+
+Key idea or terms:
+Reduced motion: A setting in every major operating system by which a person asks for less movement. It is a request from them, not a preference you grant.
+Parallax: Two layers moving at different speeds as you scroll, so one appears to sit behind the other. It is the pattern most likely to cause harm.
+Full version: The movement exactly as you designed it, for people who have not asked for less.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Turning the reduced-motion setting on for the first time, and assuming it meant switching every animation off. Reduced motion means no motion. One rule, easy to write: when the setting is on, nothing animates anywhere.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The device you used, and where the setting lives on it” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The device you used, and where the setting lives on it”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The device you used, and where the setting lives on it” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Follow the assigned page to your platform's setting, turn it on and walk your task again, writing what you saw.
@@ -2622,7 +2814,7 @@ Adequate evidence: A list of large, parallax or repeating motion, each removed w
 Repair: List everything that moves more than a small region or repeats. Remove each under the setting first, then ask whether it earns its place at all. Recheck: The removal list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson looks at gestures and what people can actually discover without being told.
 
@@ -2660,58 +2852,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Destructive gestures specified with undo or confirmation
 - Any gesture removed for being unconventional or one-handed-impossible
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interaction design explains what happens when someone acts, what they see next and how they recover from a mistake. In this lesson, your first small result is: Every gesture in your design listed, with the invented ones marked and the ones that are the only route flagged.
+
+**Words you will use**
+
+- **Gesture:** An action done with a finger that has no control on the screen: a swipe, a pinch, a long press, a two-finger anything.
+- **Platform convention:** A gesture the person’s phone already uses everywhere else, so they may arrive knowing it. Pull down to refresh is one.
+- **Visible control:** A button, menu item or link that is on the screen already, without anybody having to do something to reveal it.
+
+**Quick example.** Supplied made-up results. Three people were each asked to remove a class from a shortlist and told nothing else. The first pressed and held the row. The second opened the class page and looked for a control there. The third tapped the row twice, then said she would delete the whole shortlist and start again. Nobody swiped.
+
+The reader demonstrates and guides the task before asking for “Every gesture your design uses or assumes, and whether you invented it”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Specify the gestures your product uses, give every one a visible alternative, and record which were discoverable when someone tried the product without being told.
 
 
-### Understand the idea · 1
+### Every gesture needs a visible alternative that does the same thing
 
 Section: learn. Stable action: learn-1.
 
 Every gesture needs a visible alternative that does the same thing.
 
 
-### Understand the idea · 2
+### Hidden gestures are shortcuts, never the only route to an action
 
 Section: learn. Stable action: learn-2.
 
 Hidden gestures are shortcuts, never the only route to an action.
 
 
-### Understand the idea · 3
+### Match the platform's conventions; inventing a new swipe teaches nobody
 
 Section: learn. Stable action: learn-3.
 
 Match the platform's conventions; inventing a new swipe teaches nobody.
 
 
-### Understand the idea · 4
+### Destructive gestures need either a confirmation or a working undo
 
 Section: learn. Stable action: learn-4.
 
 Destructive gestures need either a confirmation or a working undo.
 
 
-### Understand the idea · 5
+### Idea 5: Gestures fail for people with tremors, one hand free, or a cra…
 
 Section: learn. Stable action: learn-5.
 
 Gestures fail for people with tremors, one hand free, or a cracked screen.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The shortlist row used swipe-left to remove, with no visible control. Three people were asked to remove an item without being told how; none swiped, two looked for a control and one opened the detail view. The revision kept the swipe as an accelerator and added a visible quiet remove control on every row. Removal became immediate with a five-second undo rather than a confirmation dialogue. Pull-to-refresh was left alone because it matched the platform convention, and a proposed two-finger gesture for changing dates was dropped: it was undiscoverable, unconventional and impossible one-handed.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3129,6 +3335,40 @@ Open Your work and choose Ready for review. The next lesson writes the same kind
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Gestures and what people can discover
+What I am trying to do: Specify the gestures your product uses, give every one a visible alternative, and record which were discoverable when someone tried the product without being told.
+
+Key idea or terms:
+Gesture: An action done with a finger that has no control on the screen: a swipe, a pinch, a long press, a two-finger anything.
+Platform convention: A gesture the person’s phone already uses everywhere else, so they may arrive knowing it. Pull down to refresh is one.
+Visible control: A button, menu item or link that is on the screen already, without anybody having to do something to reveal it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Supplied made-up results. Three people were each asked to remove a class from a shortlist and told nothing else. The first pressed and held the row. The second opened the class page and looked for a control there. The third tapped the row twice, then said she would delete the whole shortlist and start again. Nobody swiped.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every gesture your design uses or assumes, and whether you invented it” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every gesture your design uses or assumes, and whether you invented it”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Every gesture your design uses or assumes, and whether you invented it” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - For each gesture, design the control someone would use if they had never met the gesture. That control is the real route.
@@ -3198,7 +3438,7 @@ Adequate evidence: A written note of which gestures fail one-handed or with limi
 Repair: Try every gesture with one hand while holding something in the other. Anything you cannot do is not available to many of your users. Recheck: The one-handed notes.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes the same kind of specification for the keyboard, key by key.
 
@@ -3236,58 +3476,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Escape behaviour including where focus returns
 - Test results against the table, or an explicit untested note
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interaction design explains what happens when someone acts, what they see next and how they recover from a mistake. In this lesson, your first small result is: Two components chosen, one simple and one made of parts, with each pattern’s keyboard section rewritten in your own words.
+
+**Words you will use**
+
+- **Composite component:** One control made of several smaller ones: a date grid, a set of tabs, a menu. It behaves as one thing from outside and has its own inside.
+- **Tab stop:** A place the tab key can land. A composite should be one tab stop, not one per part.
+- **Key row:** One line of the table covering one key in one situation. The same key often needs several rows, because it does different things in different places.
+
+**Quick example.** A supplied made-up result. Your table says escape closes the filter panel and returns focus to the Filters button. Tabbing through a comparable panel in a real product, escape did nothing at all, and closing it another way sent focus back to the very top of the page.
+
+The reader demonstrates and guides the task before asking for “Your two components: one simple, one made of several parts”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write the expected keyboard behaviour for two of your components, key by key, against the assigned pattern, and test any built version against your own specification.
 
 
-### Understand the idea · 1
+### Tab moves between components; arrow keys usually move within one
 
 Section: learn. Stable action: learn-1.
 
 Tab moves between components; arrow keys usually move within one.
 
 
-### Understand the idea · 2
+### Idea 2: Enter and space activate, and the difference matters for butto…
 
 Section: learn. Stable action: learn-2.
 
 Enter and space activate, and the difference matters for buttons and links.
 
 
-### Understand the idea · 3
+### Escape closes, and it must return focus to whatever opened the thing
 
 Section: learn. Stable action: learn-3.
 
 Escape closes, and it must return focus to whatever opened the thing.
 
 
-### Understand the idea · 4
+### Idea 4: Every component you build should have a written key table befo…
 
 Section: learn. Stable action: learn-4.
 
 Every component you build should have a written key table before it is built.
 
 
-### Understand the idea · 5
+### The assigned patterns are guidance, not a standard: cite them, then test
 
 Section: learn. Stable action: learn-5.
 
 The assigned patterns are guidance, not a standard: cite them, then test.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The date-selection component and the filter panel were specified before building. For the date component: one tab stop for the group, arrow keys to move between dates, enter or space to select, home and end for the first and last available, escape to close returning focus to the field. For the filter panel: focus moves into the panel when it opens, escape closes it and returns focus to the filter button, and tab cycles inside while it is open. A rough build was tested against the table and failed two rows — escape did nothing, and focus returned to the document top — both recorded as defects rather than as design changes.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3731,6 +3985,40 @@ Open Your work and choose Ready for review. The next lesson takes the focus sent
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Keyboard behaviour, specified key by key
+What I am trying to do: Write the expected keyboard behaviour for two of your components, key by key, against the assigned pattern, and test any built version against your own specification.
+
+Key idea or terms:
+Composite component: One control made of several smaller ones: a date grid, a set of tabs, a menu. It behaves as one thing from outside and has its own inside.
+Tab stop: A place the tab key can land. A composite should be one tab stop, not one per part.
+Key row: One line of the table covering one key in one situation. The same key often needs several rows, because it does different things in different places.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied made-up result. Your table says escape closes the filter panel and returns focus to the Filters button. Tabbing through a comparable panel in a real product, escape did nothing at all, and closing it another way sent focus back to the very top of the page.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Your two components: one simple, one made of several parts” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Your two components: one simple, one made of several parts”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Your two components: one simple, one made of several parts” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Copy the pattern's keyboard section into a table and adapt each row to your component.
@@ -3800,7 +4088,7 @@ Adequate evidence: Pass or fail per row against a build, or an explicit statemen
 Repair: Build a rough page with the two components and walk your tables row by row. Record what happens, not what should. Recheck: The tables with results.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes the focus sentences further, into what happens when content changes underneath somebody.
 
@@ -3838,58 +4126,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A visible focus indicator specified for every surface
 - Tab-through results with any lost-position steps named
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interaction design explains what happens when someone acts, what they see next and how they recover from a mistake. In this lesson, your first small result is: A list of every moment in your product where content opens, closes, is replaced or fails.
+
+**Words you will use**
+
+- **Focus:** The one place the keyboard is talking to. It is a person’s place on the screen, and moving it moves them.
+- **Announce:** Say what changed without moving anybody. A short line of text that a screen reader reads out and a sighted person can see.
+- **Destination:** The one named control focus lands on. “The panel” is a place; “the date field” is a destination.
+
+**Quick example.** Made-up example. Writing the rule for replaced content, after first sending focus to the results and throwing somebody out of the filters. Somebody picks a date in the filter panel. The list underneath changes from 63 classes to 12.
+
+The reader demonstrates and guides the task before asking for “Each place in your product where content opens, closes, is replaced, or fails”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Specify focus behaviour for four situations — opening, closing, content replacing, and an error appearing — and check that nothing your product does moves a person's place without telling them.
 
 
-### Understand the idea · 1
+### Idea 1: Move focus deliberately: on open, on close, on error, on conte…
 
 Section: learn. Stable action: learn-1.
 
 Move focus deliberately: on open, on close, on error, on content replacement.
 
 
-### Understand the idea · 2
+### Never move focus without a reason the person would recognise
 
 Section: learn. Stable action: learn-2.
 
 Never move focus without a reason the person would recognise.
 
 
-### Understand the idea · 3
+### Idea 3: New content that matters must be announced or given focus, not…
 
 Section: learn. Stable action: learn-3.
 
 New content that matters must be announced or given focus, not silently inserted.
 
 
-### Understand the idea · 4
+### Keep focus visible at every step; an invisible focus is a lost position
 
 Section: learn. Stable action: learn-4.
 
 Keep focus visible at every step; an invisible focus is a lost position.
 
 
-### Understand the idea · 5
+### Idea 5: Test by tabbing with your eyes closed for one step: can you te…
 
 Section: learn. Stable action: learn-5.
 
 Test by tabbing with your eyes closed for one step: can you tell where you are?
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Four rules were written. Opening the filter panel moves focus to its first control. Closing it — by escape or by the close control — returns focus to the filter button. Applying a filter leaves focus on the control and announces “12 classes match”, because moving focus to the list would lose the person's place in the filters. A validation error moves focus to the first field with a problem and the message is tied to that field. A fifth situation was found while testing: after removing a shortlist item, focus was landing on the document top, which was recorded as a defect with the expected behaviour — focus should move to the next item, or to the list heading when the list is now empty.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4423,6 +4725,40 @@ Open Your work and choose Ready for review. The next lesson takes one interactio
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Where focus goes when things change
+What I am trying to do: Specify focus behaviour for four situations — opening, closing, content replacing, and an error appearing — and check that nothing your product does moves a person's place without telling them.
+
+Key idea or terms:
+Focus: The one place the keyboard is talking to. It is a person’s place on the screen, and moving it moves them.
+Announce: Say what changed without moving anybody. A short line of text that a screen reader reads out and a sighted person can see.
+Destination: The one named control focus lands on. “The panel” is a place; “the date field” is a destination.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing the rule for replaced content, after first sending focus to the results and throwing somebody out of the filters. Somebody picks a date in the filter panel. The list underneath changes from 63 classes to 12.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Each place in your product where content opens, closes, is replaced, or fails” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Each place in your product where content opens, closes, is replaced, or fails”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Each place in your product where content opens, closes, is replaced, or fails” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write one sentence per situation. Any missing sentence becomes whatever the framework does.
@@ -4492,7 +4828,7 @@ Adequate evidence: Tab-through results with lost-position steps named, and an ex
 Repair: Write two lists: what you observed on your device, and what you have not established. Do not merge them. Recheck: The results and limits.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes one interaction where people move things about, and specifies it for a mouse, a finger and a keyboard.
 
@@ -4530,58 +4866,72 @@ Starting route: Recommended route: Draw the three drag signals and the drop indi
 - Undo after a move, with the message wording
 - A stated decision about drag versus scroll on touch
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interaction design explains what happens when someone acts, what they see next and how they recover from a mistake. In this lesson, your first small result is: One arranging task chosen, and the keys the assigned pattern gives for a component like it.
+
+**Words you will use**
+
+- **Direct manipulation:** Moving the thing itself rather than telling a control to move it. Dragging a row is direct; choosing “move down” from a menu is not.
+- **Drop target:** The place the thing will land. It has to be visible before the person lets go, not discovered afterwards.
+- **Drag handle:** The small mark on a row saying pick me up here, and the only place a drag is allowed to start.
+
+**Quick example.** A supplied made-up key table for reordering a list. Space picks the row up. The up and down arrows move it. Space puts it down. Nothing else is written.
+
+The reader demonstrates and guides the task before asking for “The one arranging task you are designing”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Design one direct-manipulation interaction with a keyboard equivalent, a clear drop target, a recovery path, and a stated decision about what it costs people who cannot drag.
 
 
-### Understand the idea · 1
+### Idea 1: Direct manipulation must always have a non-drag equivalent tha…
 
 Section: learn. Stable action: learn-1.
 
 Direct manipulation must always have a non-drag equivalent that does the same job.
 
 
-### Understand the idea · 2
+### Idea 2: Show what can be picked up, what is being dragged, and where i…
 
 Section: learn. Stable action: learn-2.
 
 Show what can be picked up, what is being dragged, and where it will land.
 
 
-### Understand the idea · 3
+### Idea 3: Commit on release, and make the result reversible for long eno…
 
 Section: learn. Stable action: learn-3.
 
 Commit on release, and make the result reversible for long enough to notice.
 
 
-### Understand the idea · 4
+### Dragging on a phone competes with scrolling; decide which wins and when
 
 Section: learn. Stable action: learn-4.
 
 Dragging on a phone competes with scrolling; decide which wins and when.
 
 
-### Understand the idea · 5
+### If the interaction cannot be done by keyboard, it is not finished
 
 Section: learn. Stable action: learn-5.
 
 If the interaction cannot be done by keyboard, it is not finished.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The shortlist could be reordered by dragging, with no other route. Redesigned: a handle marks each draggable row, a line shows where the item will land, and the drop commits on release with a message — “Moved to position 2. Undo” — lasting several seconds. Keyboard equivalent: focus the handle, press space to pick up, arrow keys to move, space to drop, escape to cancel, matching the assigned pattern conventions. On touch, dragging requires the handle so scrolling keeps working elsewhere. The write-up records that no test with a screen-reader user has been run, so the keyboard route is specified but not validated.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4998,6 +5348,40 @@ Open Your work and choose Ready for review. The next lesson turns to scrolling, 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Direct manipulation: drag, reorder and their consequences
+What I am trying to do: Design one direct-manipulation interaction with a keyboard equivalent, a clear drop target, a recovery path, and a stated decision about what it costs people who cannot drag.
+
+Key idea or terms:
+Direct manipulation: Moving the thing itself rather than telling a control to move it. Dragging a row is direct; choosing “move down” from a menu is not.
+Drop target: The place the thing will land. It has to be visible before the person lets go, not discovered afterwards.
+Drag handle: The small mark on a row saying pick me up here, and the only place a drag is allowed to start.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied made-up key table for reordering a list. Space picks the row up. The up and down arrows move it. Space puts it down. Nothing else is written.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The one arranging task you are designing” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The one arranging task you are designing”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The one arranging task you are designing” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Draw the three moments separately: before pick-up, during, and just before release. Each needs its own signal.
@@ -5067,7 +5451,7 @@ Adequate evidence: A written rule for how touch distinguishes dragging from scro
 Repair: Choose a handle, a long press or a mode, then try scrolling the same list on a phone to confirm it still works. Recheck: The touch rule and the check.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson turns to scrolling, sticky elements and what a long list costs on a small screen.
 
@@ -5105,58 +5489,72 @@ Starting route: Recommended route: Draw the phone-sized viewport with every fixe
 - Scroll position restoration specified for the browse loop
 - A rule preventing content moving under a finger
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interaction design explains what happens when someone acts, what they see next and how they recover from a mistake. In this lesson, your first small result is: A measured height for every element you want fixed, and the total written as a share of the viewport.
+
+**Words you will use**
+
+- **Sticky:** An element that stays put while the rest of the page scrolls under it. It holds its space for the whole session.
+- **Viewport:** The part of the page a person can see at once. On a phone it is small, and everything fixed comes out of it.
+- **Fixed height:** The vertical space your unmoving elements take up together, before a single row of content appears.
+
+**Quick example.** A supplied made-up design. The class list loads twenty more rows on its own every time the person nears the bottom, for as long as there are results. The footer holds the contact link, the refund policy and the accessibility statement.
+
+The reader demonstrates and guides the task before asking for “The viewport height you are measuring against, at phone size”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Decide what stays fixed while a person scrolls, how a long list ends, and how someone returns to their place after leaving and coming back.
 
 
-### Understand the idea · 1
+### Idea 1: Anything sticky costs screen height permanently; a phone has v…
 
 Section: learn. Stable action: learn-1.
 
 Anything sticky costs screen height permanently; a phone has very little to spend.
 
 
-### Understand the idea · 2
+### Idea 2: Keep sticky only what people need while scrolling: usually pos…
 
 Section: learn. Stable action: learn-2.
 
 Keep sticky only what people need while scrolling: usually position and the primary action.
 
 
-### Understand the idea · 3
+### Idea 3: A long list needs an end, a count, or a clear way to load more…
 
 Section: learn. Stable action: learn-3.
 
 A long list needs an end, a count, or a clear way to load more with the position kept.
 
 
-### Understand the idea · 4
+### Idea 4: Restore scroll position when someone returns; losing it makes…
 
 Section: learn. Stable action: learn-4.
 
 Restore scroll position when someone returns; losing it makes comparison expensive.
 
 
-### Understand the idea · 5
+### Never move content under a finger that is about to tap
 
 Section: learn. Stable action: learn-5.
 
 Never move content under a finger that is about to tap.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The class list had a sticky header with a logo, a sticky filter bar and a sticky book button — 190 pixels of a 640-pixel viewport. Rebuilt: the logo header scrolls away and returns on scroll up, the filter summary stays because people were observed checking it, and the book button appears only on the detail view where it belongs. The list loads twenty at a time with a count — “Showing 20 of 63” — and a load-more control, so the footer stays reachable. Returning from a detail view restores the row and the filters. New results are appended below the fold only.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5623,6 +6021,40 @@ Open Your work and choose Ready for review. The next lesson takes one editable v
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Scrolling, sticky elements and long lists
+What I am trying to do: Decide what stays fixed while a person scrolls, how a long list ends, and how someone returns to their place after leaving and coming back.
+
+Key idea or terms:
+Sticky: An element that stays put while the rest of the page scrolls under it. It holds its space for the whole session.
+Viewport: The part of the page a person can see at once. On a phone it is small, and everything fixed comes out of it.
+Fixed height: The vertical space your unmoving elements take up together, before a single row of content appears.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied made-up design. The class list loads twenty more rows on its own every time the person nears the bottom, for as long as there are results. The footer holds the contact link, the refund policy and the accessibility statement.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The viewport height you are measuring against, at phone size” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The viewport height you are measuring against, at phone size”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The viewport height you are measuring against, at phone size” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Measure the total sticky height at phone size and write it as a percentage of the viewport. Then justify each element or remove it.
@@ -5692,7 +6124,7 @@ Adequate evidence: A rule about where new content is inserted and reserved space
 Repair: Specify that content loads into reserved space and that anything arriving above the viewport requires an explicit request. Recheck: The insertion rule.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes one editable value and removes its save button.
 
@@ -5730,58 +6162,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Behaviour for leaving mid-edit, stated and justified
 - Failure handling that retains the text and offers retry
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interaction design explains what happens when someone acts, what they see next and how they recover from a mistake. In this lesson, your first small result is: One editable value chosen, and a line on what the product owes the person about where her change stands.
+
+**Words you will use**
+
+- **Editing in place:** Changing a value where it sits on the screen, rather than on a separate edit page with its own save button.
+- **Saving on its own:** The change is stored without anyone pressing anything. Often called autosave.
+- **State:** What the same thing looks like at a different moment. One note, three appearances.
+
+**Quick example.** A supplied made-up case. Someone is half way through typing a note on a booking. She taps a notification and the app closes. She comes back four hours later.
+
+The reader demonstrates and guides the task before asking for “The one value you will make editable where it sits”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Design one in-place edit that shows clearly when it is editable, when it is saving and when it has saved, with a defined behaviour for failure and for leaving mid-edit.
 
 
-### Understand the idea · 1
+### Show three states plainly: viewing, editing and saved
 
 Section: learn. Stable action: learn-1.
 
 Show three states plainly: viewing, editing and saved.
 
 
-### Understand the idea · 2
+### If there is no save button, the save state must be visible and specific
 
 Section: learn. Stable action: learn-2.
 
 If there is no save button, the save state must be visible and specific.
 
 
-### Understand the idea · 3
+### Decide what happens when the person leaves mid-edit, and say so
 
 Section: learn. Stable action: learn-3.
 
 Decide what happens when the person leaves mid-edit, and say so.
 
 
-### Understand the idea · 4
+### A failed automatic save must not fail silently; the person must be told
 
 Section: learn. Stable action: learn-4.
 
 A failed automatic save must not fail silently; the person must be told.
 
 
-### Understand the idea · 5
+### Editing in place still needs a cancel that restores the previous value
 
 Section: learn. Stable action: learn-5.
 
 Editing in place still needs a cancel that restores the previous value.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The note on a booking saved automatically with no feedback. Redesigned: the value shows an edit affordance on hover and focus; entering edit shows a bordered field with cancel and done controls; on blur the change saves and the label becomes “Saved 12:04” for several seconds before fading to a small “Saved” marker. If the save fails, the field keeps the text, shows “Not saved — check your connection” and offers retry, and the text is retained locally so a reload does not lose it. Cancel restores the previous value, and leaving mid-edit saves rather than discarding — with that decision recorded, because the alternative was defensible too.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6232,6 +6678,40 @@ Open Your work and choose Ready for review. The next lesson gathers every durati
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Editing in place and saving without a button
+What I am trying to do: Design one in-place edit that shows clearly when it is editable, when it is saving and when it has saved, with a defined behaviour for failure and for leaving mid-edit.
+
+Key idea or terms:
+Editing in place: Changing a value where it sits on the screen, rather than on a separate edit page with its own save button.
+Saving on its own: The change is stored without anyone pressing anything. Often called autosave.
+State: What the same thing looks like at a different moment. One note, three appearances.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied made-up case. Someone is half way through typing a note on a booking. She taps a notification and the app closes. She comes back four hours later.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The one value you will make editable where it sits” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The one value you will make editable where it sits”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The one value you will make editable where it sits” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Draw the three states side by side in greyscale. If you cannot tell them apart, add a border, a background or an icon.
@@ -6301,7 +6781,7 @@ Adequate evidence: A failure state keeping the text locally, with plain wording 
 Repair: Specify local retention explicitly and write the message that appears when the save has not happened. Recheck: The failure specification.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson gathers every duration and rule from this module onto one sheet.
 
@@ -6339,58 +6819,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A reduced-motion pairing for every entry
 - Three components using the sheet, with exceptions resolved
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interaction design explains what happens when someone acts, what they see next and how they recover from a mistake. In this lesson, your first small result is: Every duration and easing you used, listed with where it appeared, and the near-duplicates marked.
+
+**Words you will use**
+
+- **Duration:** How long a change takes, written in milliseconds. A thousand milliseconds is one second.
+- **Easing:** How the speed changes across that time. Starting fast and settling feels like arriving; an even speed feels mechanical.
+- **Role:** The job a value does, such as small movement or a panel arriving, rather than the screen you first happened to use it on.
+
+**Quick example.** A supplied made-up entry from the sheet: moderate 250ms, used where the filter panel enters from the filter button, so the person can see where the panel came from.
+
+The reader demonstrates and guides the task before asking for “Every duration and easing across this module’s specifications, with where each one was used”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Produce an interaction sheet naming your durations, easings and interaction rules, and apply it across three components so nothing is decided twice.
 
 
-### Understand the idea · 1
+### Name durations by role: instant, quick, moderate — not by number alone
 
 Section: learn. Stable action: learn-1.
 
 Name durations by role: instant, quick, moderate — not by number alone.
 
 
-### Understand the idea · 2
+### Two or three easings are enough: entering, exiting and moving
 
 Section: learn. Stable action: learn-2.
 
 Two or three easings are enough: entering, exiting and moving.
 
 
-### Understand the idea · 3
+### Idea 3: Write the rules as sentences: what animates, what does not, wh…
 
 Section: learn. Stable action: learn-3.
 
 Write the rules as sentences: what animates, what does not, what must never move.
 
 
-### Understand the idea · 4
+### Include the reduced-motion pairing for every duration and pattern
 
 Section: learn. Stable action: learn-4.
 
 Include the reduced-motion pairing for every duration and pattern.
 
 
-### Understand the idea · 5
+### The sheet is real only when three components use it without exception
 
 Section: learn. Stable action: learn-5.
 
 The sheet is real only when three components use it without exception.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The sheet came to three durations — instant 0ms for state changes, quick 150ms for small movement, moderate 250ms for panels — three easings, and seven rules including “nothing animates while a person is typing”, “the price and remaining places never move”, and “only one thing animates at a time in a view”. Every duration carried its reduced-motion pair, mostly a 120ms fade. Applying the sheet to three components surfaced two exceptions: a 400ms transition nobody could justify, which became moderate, and a genuine missing role for a long list re-sort, which was added deliberately as a fourth duration with the reason recorded.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6840,6 +7334,40 @@ Open Your work and choose Ready for review. The next lesson puts these interacti
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: An interaction sheet: durations, easings and rules
+What I am trying to do: Produce an interaction sheet naming your durations, easings and interaction rules, and apply it across three components so nothing is decided twice.
+
+Key idea or terms:
+Duration: How long a change takes, written in milliseconds. A thousand milliseconds is one second.
+Easing: How the speed changes across that time. Starting fast and settling feels like arriving; an even speed feels mechanical.
+Role: The job a value does, such as small movement or a panel arriving, rather than the screen you first happened to use it on.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied made-up entry from the sheet: moderate 250ms, used where the filter panel enters from the filter button, so the person can see where the panel came from.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every duration and easing across this module’s specifications, with where each one was used” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every duration and easing across this module’s specifications, with where each one was used”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Every duration and easing across this module’s specifications, with where each one was used” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - List every value you used, group them into three, and merge anything within 50ms.
@@ -6909,7 +7437,7 @@ Adequate evidence: Three components respecified from the sheet, with every inven
 Repair: Respecify each component using only the sheet and record every reach for something not on it. Recheck: The three components and the exception list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson puts these interactions in front of three people on their own phones.
 
@@ -6947,58 +7475,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - One repair with its prediction written beforehand and re-tested
 - A ranked list of remaining problems and an untested list
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interaction design explains what happens when someone acts, what they see next and how they recover from a mistake. In this lesson, your first small result is: Two tasks in the words you will say, one thing each session is watching for, and an honest route for who you can ask.
+
+**Words you will use**
+
+- **Task:** A goal you hand someone. It never names the control, or you have already taught them the answer.
+- **Rehearsal:** You walking the task yourself when nobody is available. It tells you about your design and nothing at all about people.
+- **Second tap:** Someone pressing the same thing again. It nearly always means nothing told them the first press had worked.
+
+**Quick example.** Made-up example. Ranking six findings by how bad they felt, then re-ranking them by what they actually cost. Top of the list was the confirmation screen looking unfinished. It had bothered me for a week, and someone finally said it out loud.
+
+The reader demonstrates and guides the task before asking for “The two tasks you will ask for, in the words you will actually say”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Test your interactions with at least three people on a real device, rank what you find by harm, repair the worst with a prediction written first, and record what remains untested.
 
 
-### Understand the idea · 1
+### Test interactions on the device they will be used on, not on your laptop
 
 Section: learn. Stable action: learn-1.
 
 Test interactions on the device they will be used on, not on your laptop.
 
 
-### Understand the idea · 2
+### Idea 2: Watch for the second tap: it means feedback arrived too late o…
 
 Section: learn. Stable action: learn-2.
 
 Watch for the second tap: it means feedback arrived too late or not at all.
 
 
-### Understand the idea · 3
+### Test one thing per session; interaction problems hide behind each other
 
 Section: learn. Stable action: learn-3.
 
 Test one thing per session; interaction problems hide behind each other.
 
 
-### Understand the idea · 4
+### Predict what a repair should change before you re-test it
 
 Section: learn. Stable action: learn-4.
 
 Predict what a repair should change before you re-test it.
 
 
-### Understand the idea · 5
+### Idea 5: Record every claim you could not test, especially assistive-te…
 
 Section: learn. Stable action: learn-5.
 
 Record every claim you could not test, especially assistive-technology behaviour.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three sessions on the participants' own phones. Two double-tapped the book button, because the acknowledgement appeared only after the server replied on a slow connection — the worst finding by harm, since it produced duplicate requests. One could not find the remove control at all, having never met a swipe pattern. One had reduced motion enabled on her own device, which surfaced that the filter panel simply appeared with no fade, unexplained. The prediction for the repair was written first: with an immediate acknowledgement, nobody should tap twice. Re-tested with two new people on their own phones, neither did. The remaining findings were ranked and left recorded rather than repaired in the same pass.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7587,6 +8129,40 @@ Open Your work and choose Ready for review. Module 10 asks how much fidelity a p
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Test the interactions and repair one
+What I am trying to do: Test your interactions with at least three people on a real device, rank what you find by harm, repair the worst with a prediction written first, and record what remains untested.
+
+Key idea or terms:
+Task: A goal you hand someone. It never names the control, or you have already taught them the answer.
+Rehearsal: You walking the task yourself when nobody is available. It tells you about your design and nothing at all about people.
+Second tap: Someone pressing the same thing again. It nearly always means nothing told them the first press had worked.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Ranking six findings by how bad they felt, then re-ranking them by what they actually cost. Top of the list was the confirmation screen looking unfinished. It had bothered me for a week, and someone finally said it out loud.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The two tasks you will ask for, in the words you will actually say” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The two tasks you will ask for, in the words you will actually say”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The two tasks you will ask for, in the words you will actually say” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Re-run at least one session on a phone you did not design on and record the device.
@@ -7656,7 +8232,7 @@ Adequate evidence: A written list of unverified claims, including screen-reader 
 Repair: Go through your key tables and focus rules and mark each row tested or untested. The untested rows are the list. Recheck: The untested list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. Module 10 asks how much fidelity a prototype actually needs.
 

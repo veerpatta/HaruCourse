@@ -20,51 +20,65 @@ Starting route: Recommended route: Draw the inventory as a table or a deck of ca
 
 - A content inventory of at least forty items with current label, plain-language description, who needs it, and how it is reachable today; a marked list of collisions; and counts of items, collisions and items nobody needed.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: The product area you are inventorying, where its edges are, and the three tasks from your research that it has to support.
+
+**Words you will use**
+
+- **Content inventory:** A flat list of everything a person might need, one row each. Not a list of pages, and not a structure.
+- **Boundary:** What counts as inside this area and what is next door. Without one the list grows all evening.
+- **Plain-language description:** One sentence in your own words finishing “this tells someone …”. It is the test of whether the label matches the contents.
+
+**Quick example.** Four supplied rows from the same made-up inventory. Row A: “What to bring”, a sentence inside a PDF. Row B: “What to bring”, a different sentence in the confirmation email, naming one item the PDF does not. Row C: “Details”, the venue address. Row D: “Details”, the refund terms.
+
+The reader demonstrates and guides the task before asking for “The product area you are inventorying, and where its edges are”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Produce a content inventory of at least forty items for one real product area, each row carrying its current label, what it actually is, who needs it and whether anything makes it findable today.
 
 
-### Understand the idea · 1
+### Idea 1: An inventory is a flat list of everything a person might need:…
 
 Section: learn. Stable action: learn-1.
 
 An inventory is a flat list of everything a person might need: pages, but also the answers buried inside pages, the things only available by asking someone, the PDF nobody has opened since 2019, and the piece of information that exists only in an email confirmation. Product teams habitually inventory their own pages and stop, which produces a structure that organises the website rather than the knowledge, and leaves the most-asked question living in a support reply.
 
 
-### Understand the idea · 2
+### Idea 2: Record three things about every item, and the third is the one…
 
 Section: learn. Stable action: learn-2.
 
 Record three things about every item, and the third is the one people skip. What it is currently called, in the product's exact words. What it actually is, in one plain sentence written by you. And who needs it and when — because an item nobody in your research ever needed is a candidate for removal, and removing things is the cheapest structural improvement there is.
 
 
-### Understand the idea · 3
+### Idea 3: Note how each item is reachable today: in the main navigation,…
 
 Section: learn. Stable action: learn-3.
 
 Note how each item is reachable today: in the main navigation, only from one page deep inside, only by search, only by asking. This column is where the real problems announce themselves. A crucial item reachable only from the confirmation email is not an information architecture problem you can fix by renaming a menu, and knowing that before you draw a sitemap saves you drawing the wrong one.
 
 
-### Understand the idea · 4
+### Forty items is a threshold, not a target
 
 Section: learn. Stable action: learn-4.
 
 Forty items is a threshold, not a target. Below about forty, any structure looks fine and the exercise teaches nothing; a real product area has hundreds. If your practice product is small, extend the inventory to everything a person needs across the whole task — including the things currently supplied by a person, a phone call or a WhatsApp message, which is the ordinary situation for a small business in India and elsewhere, and which the eventual structure has to account for rather than ignore.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - An inventory of a class provider's information reached fifty-three items. Eleven were pages. The rest included: what to bring, which existed as a sentence inside a PDF and as a different sentence in the confirmation email; the cancellation policy, which existed only in a WhatsApp reply the owner typed out each time; three items called “Details” meaning three unrelated things; and a “Resources” page nobody in five interviews had ever mentioned. Before any structure was drawn, two decisions were already obvious: the two versions of what to bring had to be reconciled, and the cancellation policy had to exist somewhere a person could reach without asking.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -533,6 +547,40 @@ Open Your work and choose Ready for review. The next lesson sets your participan
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Inventory what exists and what it is called
+What I am trying to do: Produce a content inventory of at least forty items for one real product area, each row carrying its current label, what it actually is, who needs it and whether anything makes it findable today.
+
+Key idea or terms:
+Content inventory: A flat list of everything a person might need, one row each. Not a list of pages, and not a structure.
+Boundary: What counts as inside this area and what is next door. Without one the list grows all evening.
+Plain-language description: One sentence in your own words finishing “this tells someone …”. It is the test of whether the label matches the contents.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Four supplied rows from the same made-up inventory. Row A: “What to bring”, a sentence inside a PDF. Row B: “What to bring”, a different sentence in the confirmation email, naming one item the PDF does not. Row C: “Details”, the venue address. Row D: “Details”, the refund terms.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The product area you are inventorying, and where its edges are” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The product area you are inventorying, and where its edges are”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The product area you are inventorying, and where its edges are” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Take the three tasks from your research and walk each one, writing down every question a person has to answer to finish it. Add every answer that is not already a row.
@@ -602,7 +650,7 @@ Adequate evidence: A marked list of duplicates, contradictions and shared labels
 Repair: Sort your inventory by label and read for repeats, then sort by description and read for the same thing under different names. Both passes find different collisions. Recheck: The collision list with counts and classifications.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson sets your participants’ words against these labels, so keep the inventory to hand.
 
@@ -632,51 +680,65 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 - A labelling table of at least fifteen items with current label, verbatim participant vocabulary, proposed label and evidence; guessed labels marked as guesses; and a written note per vocabulary conflict.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: The three worst labels in your inventory, each with the reason it fails.
+
+**Words you will use**
+
+- **Internal word:** A label naming a department or a system rather than a thing a person wants: “Resources”, “Portal”, “My Account”.
+- **Abstract word:** A label that is technically accurate and empty: “Information”, “Details”, “More”. Nobody can tell what is inside it.
+- **Verbatim:** The exact words, in the order they were said, with nothing improved. Anything you smooth is yours rather than theirs.
+
+**Quick example.** Made-up example. Reading five sets of interview notes for vocabulary, and throwing away the first pass. I read the notes and wrote down what each participant meant. “She wanted the materials list.” Tidy, quick, and entirely in my own words.
+
+The reader demonstrates and guides the task before asking for “The three worst labels in your inventory, and the reason each one fails”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Produce a labelling table for at least fifteen items, each showing the current label, the words participants used, the label you propose and the evidence for it, with every guessed label marked as a guess.
 
 
-### Understand the idea · 1
+### Idea 1: The second usability heuristic is the whole of this lesson: sp…
 
 Section: learn. Stable action: learn-1.
 
 The second usability heuristic is the whole of this lesson: speak the user's language, with words and concepts familiar to them, rather than internal jargon. The trap is that internal words feel natural to you precisely because you use them daily, so the test can never be your own judgement. It has to be evidence — what your participants called the thing, unprompted, before you offered them a word.
 
 
-### Understand the idea · 2
+### Three kinds of bad label recur
 
 Section: learn. Stable action: learn-2.
 
 Three kinds of bad label recur. The internal word names a department or a system: “Resources”, “Portal”, “My Account”. The clever word is invented for character and is unsearchable: “Toolbox”, “Hub”, “Journey”. And the abstract word is technically accurate and empty: “Information”, “Details”, “More”. Each fails the same test — a person scanning for a specific thing cannot tell whether their thing is inside it.
 
 
-### Understand the idea · 3
+### Idea 3: Good labels are usually longer and duller than the ones a team…
 
 Section: learn. Stable action: learn-3.
 
 Good labels are usually longer and duller than the ones a team enjoys writing. “What to bring” beats “Preparation”. “Cancel or change a booking” beats “Manage”. Length costs a little space; ambiguity costs the person a wrong click, a back button and a small loss of trust — and if they were unsure of the site to begin with, they may not come back at all.
 
 
-### Understand the idea · 4
+### Idea 4: Harvest vocabulary from your notes systematically rather than…
 
 Section: learn. Stable action: learn-4.
 
 Harvest vocabulary from your notes systematically rather than from memory. Read every interview note and write down each noun a participant used for something in your inventory, in their exact words, with who said it. You will find that participants disagree, and the disagreement is information: two words for one thing often means two audiences, and sometimes it means the thing itself is two things.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A menu item called “Resources” contained what to bring, directions and the cancellation policy. Across five interviews nobody said “resources” once. They said “the list of things I need”, “where it is”, and “what happens if I can't come”. The label became three separate items using close to those words. One label stayed contested: two participants called the session a “class” and two called it a “workshop”, which turned out to track whether they had attended before — so the site used “class” in navigation, where first-timers are, and kept “workshop” in the descriptions, where returning attendees read. That decision was recorded as a guess to be tested, because four people is not a vocabulary study.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1245,6 +1307,40 @@ Open Your work and choose Ready for review. The next lesson groups the items rat
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Labels in the words people actually use
+What I am trying to do: Produce a labelling table for at least fifteen items, each showing the current label, the words participants used, the label you propose and the evidence for it, with every guessed label marked as a guess.
+
+Key idea or terms:
+Internal word: A label naming a department or a system rather than a thing a person wants: “Resources”, “Portal”, “My Account”.
+Abstract word: A label that is technically accurate and empty: “Information”, “Details”, “More”. Nobody can tell what is inside it.
+Verbatim: The exact words, in the order they were said, with nothing improved. Anything you smooth is yours rather than theirs.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Reading five sets of interview notes for vocabulary, and throwing away the first pass. I read the notes and wrote down what each participant meant. “She wanted the materials list.” Tidy, quick, and entirely in my own words.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The three worst labels in your inventory, and the reason each one fails” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The three worst labels in your inventory, and the reason each one fails”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The three worst labels in your inventory, and the reason each one fails” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Go back through the notes with the inventory beside you and mark every noun a participant used for a thing on your list. Copy them exactly, including the awkward ones.
@@ -1314,7 +1410,7 @@ Adequate evidence: Each conflict carries a written interpretation — two audien
 Repair: For each conflict, look at who used which word and what else you know about them. If nothing distinguishes them, say so and mark it unsettled rather than deciding. Recheck: The conflict notes.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson groups the items rather than the labels, so keep the card faces showing the items.
 
@@ -1344,51 +1440,65 @@ Starting route: Recommended route: Draw both groupings of your cards on paper, t
 
 - The same inventory grouped under two named schemes with photographs or lists of each, a written breakage case per scheme naming an item and a person, a decision per collision, and a recorded choice with its trade-off.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: What the assigned pages say about proximity, common region and cognitive load, plus an honest note about item limits.
+
+**Words you will use**
+
+- **Proximity:** Things placed near each other are read as belonging together, before anyone reads a word of them.
+- **Common region:** A shared box, panel or background does the same job as closeness, and does it more strongly.
+- **Organisation scheme:** The rule deciding which items go together: by task, by topic, by audience, or an exact one such as alphabetical.
+
+**Quick example.** A supplied decision from the same made-up project. The task scheme was carried forward, and “what to bring” is cross-linked from the class page rather than duplicated, so a person looking for it while choosing a class needs one extra click.
+
+The reader demonstrates and guides the task before asking for “What the assigned pages say about proximity, common region and cognitive load”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Group your inventory under two different organisation schemes, write the specific case where each one breaks, and decide which to carry forward with the trade-off recorded.
 
 
-### Understand the idea · 1
+### Idea 1: Content can be organised by several schemes and they are not e…
 
 Section: learn. Stable action: learn-1.
 
 Content can be organised by several schemes and they are not equally exact. By subject or topic is the common default and the most arguable, because subjects overlap. By task — what the person is trying to do — usually beats it for products, because people arrive with an intent rather than a curiosity. By audience is attractive and dangerous: it only works when people can reliably identify which audience they are, which they frequently cannot. Alphabetical, chronological and geographic are exact schemes: everyone agrees where an item goes, which makes them excellent for reference material and useless for helping someone who does not yet know the name of what they need.
 
 
-### Understand the idea · 2
+### Grouping is not free of cognition
 
 Section: learn. Stable action: learn-2.
 
 Grouping is not free of cognition. Items in one visual group are read as related, and a group of nine unlabelled options is harder to scan than three groups of three — but chunking has limits, and the popular version of the rule about seven items is stated far more confidently than its evidence supports. Use grouping to reduce scanning effort, not to hit a number, and check the assigned pages on grouping and cognitive load rather than reciting a limit.
 
 
-### Understand the idea · 3
+### Idea 3: Every scheme breaks somewhere, and naming the breakage is the…
 
 Section: learn. Stable action: learn-3.
 
 Every scheme breaks somewhere, and naming the breakage is the actual work. A task scheme breaks on items belonging to two tasks. An audience scheme breaks on the person who is both a parent and an attendee. A topic scheme breaks on the item everyone looks for under a different topic. Write the specific item and the specific person for whom your scheme fails, rather than conceding in general that no scheme is perfect.
 
 
-### Understand the idea · 4
+### Idea 4: Where an item genuinely belongs in two places, you have three…
 
 Section: learn. Stable action: learn-4.
 
 Where an item genuinely belongs in two places, you have three options and should choose deliberately. Duplicate it, and accept the maintenance risk that the two copies diverge — which they will. Cross-link it, and accept an extra click. Or restructure so the collision disappears, which is usually right when the same collision keeps recurring. What you must not do is put it in one place, know it is wrong, and hope.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The class provider's fifty-three items were grouped twice. By topic: Classes, Booking, Practical information, About us — which broke immediately, because “what to bring” is practical information that people look for while reading about a class, and the cancellation policy sat under Booking where nobody in the research had ever gone looking for it. By task: Choose a class, Get ready for a class, Change or cancel, Get help — which broke on “what to bring”, needed both while choosing and while getting ready. The task scheme was carried forward, with “what to bring” cross-linked from the class page rather than duplicated, and the trade-off — an extra click for people who look for it from the class listing — was written down so the tree test in lesson 7 could check whether it mattered.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1852,6 +1962,40 @@ Open Your work and choose Ready for review. The next lesson draws your chosen sc
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Organisation schemes and where they break
+What I am trying to do: Group your inventory under two different organisation schemes, write the specific case where each one breaks, and decide which to carry forward with the trade-off recorded.
+
+Key idea or terms:
+Proximity: Things placed near each other are read as belonging together, before anyone reads a word of them.
+Common region: A shared box, panel or background does the same job as closeness, and does it more strongly.
+Organisation scheme: The rule deciding which items go together: by task, by topic, by audience, or an exact one such as alphabetical.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied decision from the same made-up project. The task scheme was carried forward, and “what to bring” is cross-linked from the class page rather than duplicated, so a person looking for it while choosing a class needs one extra click.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What the assigned pages say about proximity, common region and cognitive load” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What the assigned pages say about proximity, common region and cognitive load”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What the assigned pages say about proximity, common region and cognitive load” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Take the scheme you built and ask what the material would look like organised by what people are doing rather than what things are about. Re-sort completely rather than editing.
@@ -1921,7 +2065,7 @@ Adequate evidence: A written statement of the trade-off and which tasks it affec
 Repair: Write the sentence “people doing … will now have to …, and I will see it in the tree test as …”. If you cannot finish it, the trade-off is not yet understood. Recheck: The trade-off prediction.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson draws your chosen scheme as a sitemap and then a shallower version of it, so keep both groupings.
 
@@ -1951,51 +2095,65 @@ Starting route: Recommended route: Draw the sitemap and its shallower alternativ
 
 - Two sitemaps of the same content at different depths, a one-sentence summary per level-two group with vague containers marked, click-depth counts for three tasks, and a written comparison stating which shape favours which task.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: What the reading says about the effort of choosing, in your own words, including what it does not claim about a maximum.
+
+**Words you will use**
+
+- **Sitemap:** Your grouping drawn with its levels made explicit, so you can see how far down each thing sits.
+- **Depth and breadth:** Depth is how many levels a person passes through. Breadth is how many options sit side by side at one level.
+- **Level one:** The groups a person sees first, before choosing anything.
+
+**Quick example.** Two supplied maps of the same made-up content. Map A has four groups at level one and three levels in total. Map B has eight groups at level one and two levels in total. Supplied task: a person booked a class for Saturday, something has come up, and she wants to know whether she can get her money back.
+
+The reader demonstrates and guides the task before asking for “What the reading says about the effort of choosing and of scanning, and what it does not claim about a maximum number of options”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Draw a sitemap of your chosen scheme showing every level, then produce a shallower alternative for the same content and state which tasks each shape favours.
 
 
-### Understand the idea · 1
+### Breadth costs scanning; depth costs decisions and memory
 
 Section: learn. Stable action: learn-1.
 
 Breadth costs scanning; depth costs decisions and memory. A wide menu asks a person to read more options at once, which is cheap when the labels are good and the reader can see them all. A deep structure asks for a correct choice at every level, and each choice is a chance to be wrong — and a wrong choice at level one is usually invisible, because the person does not discover it until two levels further down, then has to reconstruct where they went astray.
 
 
-### Understand the idea · 2
+### Idea 2: Depth is worse on small screens, which is where most people in…
 
 Section: learn. Stable action: learn-2.
 
 Depth is worse on small screens, which is where most people in India and most people generally will meet your product. A three-level structure that is comfortable on a wide screen with a persistent side menu becomes three full-screen steps on a phone, with the parent context scrolled away. Draw the structure, then ask what the second level looks like when the first is no longer on screen.
 
 
-### Understand the idea · 3
+### The middle level is where structures rot
 
 Section: learn. Stable action: learn-3.
 
 The middle level is where structures rot. Level one gets argued about; level three is usually concrete content; level two accumulates the vague containers — “Information”, “Other”, “More about us” — that exist because two items had nowhere else to go. When you find a level-two group whose contents you cannot summarise in a sentence, you have found the part of your structure that is not real.
 
 
-### Understand the idea · 4
+### Not everything needs to be in the hierarchy
 
 Section: learn. Stable action: learn-4.
 
 Not everything needs to be in the hierarchy. Frequently needed items can be lifted to a shortcut, a contextual link or a persistent element, and reference material can sit deep because people arrive at it by search or by link. Decide placement by how people arrive rather than by tidiness: an item reached mostly from search does not need a good position in the menu, and an item people need at a specific moment should be near that moment, wherever it sits in the tree.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The task scheme drawn out came to three levels: Get ready for a class → Practical information → What to bring. On a phone that is three full screens, and the tree test later showed people stopping at level two, where “Practical information” told them nothing about whether their answer was inside. The shallower alternative moved the four most-needed items up to level one under their own plain labels, leaving genuinely rare material at level two, so the structure became wider and one level shorter. The wide version favoured first-timers looking for one specific thing; the deeper version favoured someone browsing everything about a class, which nobody in the research had ever done.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2443,6 +2601,40 @@ Open Your work and choose Ready for review. The next lesson puts your inventory 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Depth, breadth and the sitemap
+What I am trying to do: Draw a sitemap of your chosen scheme showing every level, then produce a shallower alternative for the same content and state which tasks each shape favours.
+
+Key idea or terms:
+Sitemap: Your grouping drawn with its levels made explicit, so you can see how far down each thing sits.
+Depth and breadth: Depth is how many levels a person passes through. Breadth is how many options sit side by side at one level.
+Level one: The groups a person sees first, before choosing anything.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Two supplied maps of the same made-up content. Map A has four groups at level one and three levels in total. Map B has eight groups at level one and two levels in total. Supplied task: a person booked a class for Saturday, something has come up, and she wants to know whether she can get her money back.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What the reading says about the effort of choosing and of scanning, and what it does not claim about a maximum number of options” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What the reading says about the effort of choosing and of scanning, and what it does not claim about a maximum number of options”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What the reading says about the effort of choosing and of scanning, and what it does not claim about a maximum number of options” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Take your map and lift the four items your research showed people need most to level one, then re-place whatever is left. Check that no item disappeared in the process.
@@ -2512,7 +2704,7 @@ Adequate evidence: For each of three tasks, a statement of which shape favours i
 Repair: Walk each of your three tasks through both maps, counting decisions rather than clicks. Write which shape asked for fewer uncertain decisions. Recheck: The task comparison and the recorded choice.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson puts your inventory cards in front of people and asks them to group them.
 
@@ -2542,51 +2734,65 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 - Photographs and written records of at least one open and one closed sort, each with participant groups and names, card placements, hesitations and quotations, plus a sample statement naming how many people sorted and who is missing.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: Your card set counted and checked, and the sentences you will say before anyone starts.
+
+**Words you will use**
+
+- **Open sort:** You hand over the cards and the person makes their own groups and names them. Run it while the structure is still open.
+- **Closed sort:** You supply the groups and the person decides where each card goes. It tests categories you have already chosen.
+- **Consent:** The person understands what will happen, agrees to it beforehand, and can stop without explaining why.
+
+**Quick example.** Made-up example. Running an open sort and writing down a conclusion instead of what happened. Forty-three cards on a kitchen table, one person who had agreed beforehand, and a phone ready to photograph the piles.
+
+The reader demonstrates and guides the task before asking for “How many cards you made, and where the card set lives”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Run at least one open and one closed card sort with consenting participants using physical or hand-written cards, and record each participant's groups, their own group names and everything they said while hesitating.
 
 
-### Understand the idea · 1
+### Idea 1: An open sort hands a person the items and asks them to make gr…
 
 Section: learn. Stable action: learn-1.
 
 An open sort hands a person the items and asks them to make groups and name them. It tells you what categories they bring and what vocabulary they use, and it is what you run when the structure is still open. A closed sort gives them your categories and asks where each item goes. It tests categories you have already chosen, tells you which labels are understood, and cannot tell you about a better structure you did not offer. Run open first when you are still deciding; run closed when you have a proposal to check.
 
 
-### Understand the idea · 2
+### Prepare the cards from the item, not from your new label
 
 Section: learn. Stable action: learn-2.
 
 Prepare the cards from the item, not from your new label. Each card carries the plain-language description you wrote in lesson 1, in the person's likely vocabulary, without the group name you intend it to end up in. Thirty to fifty cards is a workable sort; more than about sixty exhausts people and the last groups get made carelessly, which quietly corrupts your data at exactly the point you stop watching.
 
 
-### Understand the idea · 3
+### Idea 3: What the person says while sorting is worth more than the fina…
 
 Section: learn. Stable action: learn-3.
 
 What the person says while sorting is worth more than the final arrangement. Ask them to think aloud, and write down every hesitation, every card they move twice, every “this could go in either” and every time they invent a group to hold leftovers. Two people can produce identical final piles for entirely different reasons, and a pile made confidently is different evidence from a pile made in resignation.
 
 
-### Understand the idea · 4
+### Small sorts are exploratory and the assigned article says so
 
 Section: learn. Stable action: learn-4.
 
 Small sorts are exploratory and the assigned article says so. Four or five participants will show you the confusions worth fixing and cannot tell you what proportion of people group things a given way. Run it as a source of hypotheses, name the number of participants everywhere the results appear, and resist the arithmetic that turns four people into a percentage — the analysis lesson that follows exists mostly to stop you doing that.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - An open sort with four participants used forty-three cards. Three of the four made a group they named something close to “before the class”, containing what to bring, directions and timing — which no version of the team's structure had contained. All four separated “change my booking” from “cancel my booking”, which the team had treated as one thing, and one participant said while doing it: “changing is easy, cancelling is a whole argument.” Two participants put “cancellation policy” with the money items and two put it with cancelling; both hesitated visibly. The closed sort that followed, using the four task groups, placed thirty-nine of forty-three cards consistently and left exactly the same four items scattered — which told the team where the structure was genuinely unclear rather than merely new.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3174,6 +3380,40 @@ Open Your work and choose Ready for review. The next lesson turns these records 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Run a card sort on paper
+What I am trying to do: Run at least one open and one closed card sort with consenting participants using physical or hand-written cards, and record each participant's groups, their own group names and everything they said while hesitating.
+
+Key idea or terms:
+Open sort: You hand over the cards and the person makes their own groups and names them. Run it while the structure is still open.
+Closed sort: You supply the groups and the person decides where each card goes. It tests categories you have already chosen.
+Consent: The person understands what will happen, agrees to it beforehand, and can stop without explaining why.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Running an open sort and writing down a conclusion instead of what happened. Forty-three cards on a kitchen table, one person who had agreed beforehand, and a phone ready to photograph the piles.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “How many cards you made, and where the card set lives” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “How many cards you made, and where the card set lives”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “How many cards you made, and where the card set lives” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Read each card and ask whether it hints where it belongs. Rewrite any card that does, using the words your m05 participants used for that thing.
@@ -3243,7 +3483,7 @@ Adequate evidence: A sample statement naming participant count, recruitment rout
 Repair: Reuse the recruitment exclusion sentence you wrote in m05 and add the count. Put it at the top of the record, not the bottom. Recheck: The sample statement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson turns these records into counts, without turning four people into a percentage.
 
@@ -3273,51 +3513,65 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 - An item-by-item table with per-participant placements and hesitations, a classification into agreement, disagreement and ambiguity with interpretations, a revised sitemap with a trace sentence per change, a separate preferences list, and a sample line.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: A table with one row per item and one column per participant, three rows written out in full, and any placement you could not recover.
+
+**Words you will use**
+
+- **Item-by-item analysis:** Reading the sort one card at a time across all participants, rather than one person’s piles at a time.
+- **Placement:** Where one participant put one card, plus whether they arrived there quickly or slowly.
+- **Agreement:** An item that everybody placed the same way, and placed easily. Both halves of that have to be true before you write the word.
+
+**Quick example.** A supplied made-up result. Four people sorted twenty-one cards. Three put the refund rule with the money cards and one put it with cancelling, and two of the three hesitated before placing it. Four sentences were drafted for the write-up.
+
+The reader demonstrates and guides the task before asking for “How many items are in your table, and how many participants have a column”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Analyse your sorts into a written list of agreements, disagreements and ambiguous items, expressed as counts of participants, and revise your structure with each change traced to what a participant actually did.
 
 
-### Understand the idea · 1
+### Work item by item, not pile by pile
 
 Section: learn. Stable action: learn-1.
 
 Work item by item, not pile by pile. For each card, record where each participant put it, so you end with a row per item reading “three of four put this with the money items, one put it with cancelling, two hesitated”. That form is honest, it survives being read six months later, and it makes the ambiguous items — the ones that scattered — visible without any arithmetic.
 
 
-### Understand the idea · 2
+### Three patterns are worth naming
 
 Section: learn. Stable action: learn-2.
 
 Three patterns are worth naming. Agreement, where everyone placed an item the same way and nobody hesitated, means you can stop thinking about that item. Disagreement, where placements split, usually means either two audiences or an item that is really two items. Ambiguity, where an item was placed consistently but slowly and with doubt, is the pattern people miss, and it predicts wrong first clicks better than a clean split does.
 
 
-### Understand the idea · 3
+### Idea 3: Do not compute percentages, and do not use similarity matrices…
 
 Section: learn. Stable action: learn-3.
 
 Do not compute percentages, and do not use similarity matrices or dendrograms on four participants. Those techniques exist for sorts with thirty or more people, and applied to four they produce a picture with the visual authority of statistics and none of the substance. Report counts of people. If you ever do run a large sort, the interval reading in the catalog is the right companion, and it will show you how wide the uncertainty around a rate at small numbers really is.
 
 
-### Understand the idea · 4
+### Change your structure from the analysis, and record the trace
 
 Section: learn. Stable action: learn-4.
 
 Change your structure from the analysis, and record the trace. Every change should carry the sentence: this item moved because these participants did this. Changes you cannot trace are your own preferences arriving under cover of research, which is the specific failure that makes stakeholders stop believing the research is worth funding.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Item-by-item analysis of four sorts produced eleven agreements, six disagreements and four ambiguous items. “Cancellation policy” split two and two, with both pairs hesitating, and the notes explained why: two people thought about it as a money question and two as a cancelling question. Rather than choosing, the structure cross-linked it from both, and the trade-off was recorded for the tree test. “Change my booking” and “cancel my booking”, which all four had separated, were split into two items — a change traced to four of four participants. One proposed change was rejected explicitly: the designer wanted to rename a group, and no participant had said anything bearing on it, so it was recorded as a preference and left out.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3774,6 +4028,40 @@ Open Your work and choose Ready for review. The next lesson puts the revised str
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Read a card sort without overclaiming
+What I am trying to do: Analyse your sorts into a written list of agreements, disagreements and ambiguous items, expressed as counts of participants, and revise your structure with each change traced to what a participant actually did.
+
+Key idea or terms:
+Item-by-item analysis: Reading the sort one card at a time across all participants, rather than one person’s piles at a time.
+Placement: Where one participant put one card, plus whether they arrived there quickly or slowly.
+Agreement: An item that everybody placed the same way, and placed easily. Both halves of that have to be true before you write the word.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied made-up result. Four people sorted twenty-one cards. Three put the refund rule with the money cards and one put it with cancelling, and two of the three hesitated before placing it. Four sentences were drafted for the write-up.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “How many items are in your table, and how many participants have a column” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “How many items are in your table, and how many participants have a column”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “How many items are in your table, and how many participants have a column” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Rebuild the table from the photographs and session notes. If a placement is unrecoverable, leave the cell blank rather than reconstructing it from memory.
@@ -3843,7 +4131,7 @@ Adequate evidence: Results expressed as counts of participants throughout, with 
 Repair: Search your write-up for the per cent sign and for any diagram implying a distance measure. Replace each with a count of people. Recheck: The corrected write-up.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson puts the revised structure in front of people as a paper tree and gives them tasks to find things in it.
 
@@ -3873,51 +4161,65 @@ Starting route: Recommended route: Draw the tree one level per sheet and the six
 
 - A paper tree, six written tasks with their pre-defined correct answers, and a results table recording first choice, path, backtracking, stopping point and stated confidence for every task and participant, with the sample stated.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: A paper tree with one sheet per level, copied from your revised structure without improving anything on the way.
+
+**Words you will use**
+
+- **Tree test:** A test of the words alone. You show the structure a level at a time, with no page design, no pictures and no search box, and ask a person where they would go.
+- **First choice:** The very first branch a person picks. It is where the structure works or fails, and everything after it is recovery.
+- **Task:** A short description of a situation and a goal, with no word from your tree inside it. It describes a moment, not a destination.
+
+**Quick example.** A supplied made-up record of one task with one person. She chose “Get help” first, went back to the top, then chose “Change or cancel”, then reached the target on the second sheet. She arrived.
+
+The reader demonstrates and guides the task before asking for “What is written on each sheet, level by level”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Run a paper tree test of your revised structure with at least three participants and six tasks, recording for every task the first choice, the full path, whether they backtracked and where they said they would stop.
 
 
-### Understand the idea · 1
+### Idea 1: A tree test shows only the words: no page design, no images, n…
 
 Section: learn. Stable action: learn-1.
 
 A tree test shows only the words: no page design, no images, no search box, no colour. That is the point. It isolates the structure from everything that usually rescues it, so a failure means the labels and grouping failed rather than the layout. Running it on paper is straightforward: write the top level on one sheet, each second level on its own sheet, and reveal one level at a time as the person chooses, exactly as the accordion in a tool would.
 
 
-### Understand the idea · 2
+### Tasks decide what you learn
 
 Section: learn. Stable action: learn-2.
 
 Tasks decide what you learn. Write them as a situation with a goal, never as the label you are testing — “you booked a class for Saturday and something has come up; where would you go?” rather than “find the cancellation policy”, which hands them the word to match. Define the correct answer before you start, in writing, including any second location you would accept. Mix in a warm-up task, and include a task or two aimed at the items your sort flagged as ambiguous.
 
 
-### Understand the idea · 3
+### Record four things per task and the first is the most valuable
 
 Section: learn. Stable action: learn-3.
 
 Record four things per task and the first is the most valuable. The first choice, because the first click is where the structure either works or fails and everything afterwards is recovery. The full path. Whether they went back up, which is the sign that a level-one label misled them. And where they said they would stop — because a person who reaches the right place and is not confident they are there has not really found it, and in a real product would keep looking or leave.
 
 
-### Understand the idea · 4
+### Three to five participants will find the broken labels
 
 Section: learn. Stable action: learn-4.
 
 Three to five participants will find the broken labels. What they cannot give you is a success rate to compare against a benchmark: the published benchmarks come from studies with far more participants, and applying them to five people produces a number that looks like measurement and is not. Report counts and first clicks, and treat the test as a way of locating failures, not scoring the structure.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Six tasks with three participants, on paper. Task: “you booked a class for Saturday and something has come up.” All three began at “Change or cancel”, which was the intended answer, and all three then stopped at level two, where “Booking admin” told them nothing — two guessed, one said she would ring the number instead. Another task, aimed at an ambiguous item, sent two of three to “Practical information” and one to “Classes”, and all three said afterwards they had not been confident. The first-click data mattered more than the outcomes: level one was working, level two was not, and no amount of renaming at level one would have shown that.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4371,6 +4673,40 @@ Open Your work and choose Ready for review. The next lesson reads these results 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Tree test the structure by hand
+What I am trying to do: Run a paper tree test of your revised structure with at least three participants and six tasks, recording for every task the first choice, the full path, whether they backtracked and where they said they would stop.
+
+Key idea or terms:
+Tree test: A test of the words alone. You show the structure a level at a time, with no page design, no pictures and no search box, and ask a person where they would go.
+First choice: The very first branch a person picks. It is where the structure works or fails, and everything after it is recovery.
+Task: A short description of a situation and a goal, with no word from your tree inside it. It describes a moment, not a destination.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied made-up record of one task with one person. She chose “Get help” first, went back to the top, then chose “Change or cancel”, then reached the target on the second sheet. She arrived.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What is written on each sheet, level by level” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What is written on each sheet, level by level”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What is written on each sheet, level by level” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Underline every word in a task that also appears in your structure. Rewrite the task using the situation your participants described in m05 instead.
@@ -4440,7 +4776,7 @@ Adequate evidence: Participant count and route recorded with the results, and no
 Repair: Remove every rate and benchmark comparison and replace with counts of participants. Add the sample line at the top of the table. Recheck: The corrected results table.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson reads these results and changes exactly one thing.
 
@@ -4470,51 +4806,65 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 - A first-click split of failed tasks, a written diagnosis per failure with supporting paths and quotations, one bounded change re-tested with at least two new participants, and an honest report of the outcome including any remaining failures.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: Which measures your own results can honestly carry at this number of people, written before you interpret anything.
+
+**Words you will use**
+
+- **First click:** The first branch a person chose on the top sheet, before any recovery.
+- **Success rate:** The share of tasks people completed. It is useful with many participants and misleading with three, so report counts of people instead.
+- **Top level:** The first sheet, holding the small set of names a person chooses between before anything else is visible to them.
+
+**Quick example.** Made-up example. Reading a bad-looking tree test as a broken structure, and finding that the top of it was fine. Four of six tasks failed with three people. My first thought was that the structure was wrong and I should start again.
+
+The reader demonstrates and guides the task before asking for “The measures the article discusses, and which of them your own numbers can carry”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Turn your tree-test results into a diagnosis per failed task — a wrong label, a wrong grouping or a missing item — then make one bounded change, re-test it with at least two people, and report what happened including if it did not help.
 
 
-### Understand the idea · 1
+### Read the first clicks before anything else
 
 Section: learn. Stable action: learn-1.
 
 Read the first clicks before anything else. If people chose correctly at level one and failed lower down, level one is working and the fault is beneath it — usually a level-two label that names a container rather than its contents. If they scattered at level one, the top of your structure does not match how they think about the task, and renaming a lower level will change nothing. This single split resolves most tree-test results.
 
 
-### Understand the idea · 2
+### Failures have three common causes, and the fix differs for each
 
 Section: learn. Stable action: learn-2.
 
 Failures have three common causes, and the fix differs for each. A wrong label means the right container has the wrong name: rename it, in participant vocabulary. A wrong grouping means the item is in a container people do not associate with it: move or cross-list it. A missing item means people were looking for something the structure does not contain at all — the commonest and most-ignored result, and no renaming will help. The assigned article names relabelling, cross-listing and restructuring as the corresponding moves.
 
 
-### Understand the idea · 3
+### Change one thing at a time
 
 Section: learn. Stable action: learn-3.
 
 Change one thing at a time. Making four changes and re-testing tells you the aggregate got better or worse, and nothing about which change did it — and if it got worse, you will not know which one to undo. One change, re-tested, is slower and is the only way to learn anything transferable about your own judgement.
 
 
-### Understand the idea · 4
+### Treat the article's success-rate benchmarks as context, not as a target
 
 Section: learn. Stable action: learn-4.
 
 Treat the article's success-rate benchmarks as context, not as a target. They come from studies far larger than yours, and comparing five participants against a published band is exactly the arithmetic this module keeps refusing. Report what happened: how many people chose correctly first, which paths they took, and whether the change moved the specific failure it was aimed at. And report it plainly when the change did not help, because a change that did not work and was recorded is worth more than a change that did and was not understood.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Six tasks, three participants. Diagnosis by first click: four of six tasks had correct level-one choices and failures below, so the top was sound. Three of those four failed at the same level-two label, “Booking admin”, which nobody could interpret — a labelling fault. One task scattered at level one, and the notes showed why: people were looking for the refund rule, which was not in the structure at all — a missing item, not a naming problem. One bounded change was made: “Booking admin” became “Change or cancel a booking”, nothing else. Re-tested with two new participants, both reached the target directly and one said “that's obviously it”. The missing refund rule was recorded as a content gap, since no structural change can fix an item that does not exist, and the second failed task was left alone for the next round rather than fixed in the same breath.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5071,6 +5421,40 @@ Open Your work and choose Ready for review. The next lesson matches the failures
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Interpret the tree test and change one thing
+What I am trying to do: Turn your tree-test results into a diagnosis per failed task — a wrong label, a wrong grouping or a missing item — then make one bounded change, re-test it with at least two people, and report what happened including if it did not help.
+
+Key idea or terms:
+First click: The first branch a person chose on the top sheet, before any recovery.
+Success rate: The share of tasks people completed. It is useful with many participants and misleading with three, so report counts of people instead.
+Top level: The first sheet, holding the small set of names a person chooses between before anything else is visible to them.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Reading a bad-looking tree test as a broken structure, and finding that the top of it was fine. Four of six tasks failed with three people. My first thought was that the structure was wrong and I should start again.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The measures the article discusses, and which of them your own numbers can carry” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The measures the article discusses, and which of them your own numbers can carry”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The measures the article discusses, and which of them your own numbers can carry” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Return to the results table and sort by first choice. Write one sentence per group on where the fault cannot be.
@@ -5140,7 +5524,7 @@ Adequate evidence: A written outcome stating what happened, with remaining failu
 Repair: Write the outcome sentence with the counts in it, then list every failure still unaddressed. Resist repairing them in the same write-up. Recheck: The outcome report and the remaining-failure list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson matches the failures you still cannot explain to the test that would explain them.
 
@@ -5170,51 +5554,65 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 - A symptom-to-test table with at least four rows carrying cause, test, participant count and cost; a marked separation of findability from discoverability symptoms; and a chosen next test with the result that would change your mind.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: One sentence per test on what it identifies, and one on what it is blind to, in your own words.
+
+**Words you will use**
+
+- **Tree test:** Asks whether the branches themselves send people the right way, with the screen taken away.
+- **Closed card sort:** Hands people your categories and asks where each item goes. It tests whether your names are understood.
+- **Click test:** Shows a real layout, drawn or printed, and asks where the person would tap. It shows which navigation people use and which they walk past.
+
+**Quick example.** A supplied made-up symptom. A fee waiver exists, sits in the menu under a plain name, and in five sessions nobody visited it. When told it existed, every one of them found it in a single move.
+
+The reader demonstrates and guides the task before asking for “For each of the four tests: one sentence on what it identifies, and one on what it cannot see”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write a diagnostic plan matching four symptoms of people not finding things to the test that would identify each cause, and state for one symptom in your own product which test you would run next and what would make you run a different one.
 
 
-### Understand the idea · 1
+### The assigned article separates four tests by what they diagnose
 
 Section: learn. Stable action: learn-1.
 
 The assigned article separates four tests by what they diagnose. A tree test asks whether the hierarchy itself directs people correctly, with the interface removed. A closed card sort asks whether your category names are understood and whether items are grouped where people expect. A click test asks which navigation components people actually use or ignore in a real layout — the question a tree test cannot reach, because it has hidden the layout. And a usability test watches the whole thing, showing you behaviour the other three abstract away, at the highest cost per participant.
 
 
-### Understand the idea · 2
+### Match the test to the symptom rather than the other way round
 
 Section: learn. Stable action: learn-2.
 
 Match the test to the symptom rather than the other way round. If people take the wrong branch from the top, that is a structure question and a tree test answers it. If they take the right branch and still cannot tell what is inside, that is a naming question and a closed sort is faster. If they never touch the menu at all — going straight to search, or scrolling past a navigation bar — no amount of structural testing will help you, because the structure is not being consulted; you need to know whether the component is visible and understood.
 
 
-### Understand the idea · 3
+### Discoverability and findability are different failures
 
 Section: learn. Stable action: learn-3.
 
 Discoverability and findability are different failures. Findability is a person looking for a specific thing and not reaching it. Discoverability is a person never learning that the thing exists, so they never look. A structure can be perfectly findable and undiscoverable — the item is exactly where it should be, and nobody knows to want it — and no tree test will ever tell you, because a tree test begins by telling the participant what to look for.
 
 
-### Understand the idea · 4
+### Idea 4: There is a cheaper move before any of them: check whether the…
 
 Section: learn. Stable action: learn-4.
 
 There is a cheaper move before any of them: check whether the item exists and is written clearly. A surprising share of findability failures resolve to a missing answer, a page written in the organisation's vocabulary, or two contradictory versions. Your lesson-one inventory already found some of those, and fixing them costs no participant time at all.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Four symptoms from one product, each matched to a test. People choosing the wrong top-level branch — tree test, which had already shown level one was sound. People reaching the right branch and hesitating over two labels — closed card sort with just those two categories, ten minutes per person. People ignoring the menu entirely and using search on every task — a click test on the real layout, because the structure was never being consulted. And people who did not know a fee waiver existed at all — none of the four, since that is discoverability: the item was findable by anyone told to look for it, and the fix belonged in how it was surfaced during booking rather than in the hierarchy.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5646,6 +6044,40 @@ Open Your work and choose Ready for review. The next lesson takes one page insid
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Choose the right test for the symptom
+What I am trying to do: Write a diagnostic plan matching four symptoms of people not finding things to the test that would identify each cause, and state for one symptom in your own product which test you would run next and what would make you run a different one.
+
+Key idea or terms:
+Tree test: Asks whether the branches themselves send people the right way, with the screen taken away.
+Closed card sort: Hands people your categories and asks where each item goes. It tests whether your names are understood.
+Click test: Shows a real layout, drawn or printed, and asks where the person would tap. It shows which navigation people use and which they walk past.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied made-up symptom. A fee waiver exists, sits in the menu under a plain name, and in five sessions nobody visited it. When told it existed, every one of them found it in a single move.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “For each of the four tests: one sentence on what it identifies, and one on what it cannot see” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “For each of the four tests: one sentence on what it identifies, and one on what it cannot see”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “For each of the four tests: one sentence on what it identifies, and one on what it cannot see” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - For each test, complete the sentence “this cannot tell me …”. If two of your answers are the same, you have not yet distinguished the tests.
@@ -5715,7 +6147,7 @@ Adequate evidence: One chosen symptom and test, with the result that would cause
 Repair: Write “I will run … because …, and if I see … I will run … instead”. A test you cannot write that sentence for is not yet chosen. Recheck: The next-test sentence.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes one page inside this structure and makes its shape perceivable.
 
@@ -5745,51 +6177,65 @@ Starting route: Recommended route: Draw the page with its regions marked on pape
 
 - A correctly nested heading outline for one page, a region map with each navigation element classified, the results of the applicable preliminary checks, and a written statement of what was not verified.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: The heading rule in your own words, and the one page you are going to work on.
+
+**Words you will use**
+
+- **Heading outline:** The page title and its section headings, in order, read on their own. Some people use it as their whole way of moving around a page.
+- **Region:** A named large area of a page: the banner, the navigation, the main content, a side area, the footer. Naming them lets someone jump straight to the content.
+- **Page title:** The single heading at the top saying what this page is. Everything else on the page sits inside it.
+
+**Quick example.** A supplied heading outline from another made-up class page, read aloud with nothing else visible: “Evening wheel throwing”, “Overview”, “What to bring”, “Good to know”, “Book a place”.
+
+The reader demonstrates and guides the task before asking for “The heading rule, written by you, including what skipping a level does”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Express one page of your structure as a heading outline and a set of regions, then check it by reading only the headings aloud and by running the relevant preliminary accessibility checks, recording what you could and could not verify.
 
 
-### Understand the idea · 1
+### Headings are the outline of a page, not a size choice
 
 Section: learn. Stable action: learn-1.
 
 Headings are the outline of a page, not a size choice. One page title, then sections in a strict order, each nested heading a genuine child of the one above — skipping a level to get a smaller-looking heading breaks the outline that some people use as their entire navigation. The assigned tutorial covers this precisely: headings that describe sections, in order, with no gaps.
 
 
-### Understand the idea · 2
+### Idea 2: Regions give a page its large-scale shape: the banner, the mai…
 
 Section: learn. Stable action: learn-2.
 
 Regions give a page its large-scale shape: the banner, the main navigation, the main content, a complementary area, the footer. Marked up correctly, someone can jump straight to the main content and skip the navigation on every page; unmarked, they hear the same twenty links before the content every single time. This is the point where information architecture and accessibility become the same subject rather than two adjacent ones.
 
 
-### Understand the idea · 3
+### Navigation comes in kinds and each answers a different question
 
 Section: learn. Stable action: learn-3.
 
 Navigation comes in kinds and each answers a different question. Global navigation says what the whole product contains; local navigation says what is in this section; contextual links say what is related to what you are reading now; utility elements — sign in, help, language — are always available and are not part of the content hierarchy. Confusing them produces the familiar mess where a global menu carries three items belonging to one section, or where the only route to something useful is a link in one paragraph.
 
 
-### Understand the idea · 4
+### Idea 4: Test it the cheapest way first: read only the headings aloud,…
 
 Section: learn. Stable action: learn-4.
 
 Test it the cheapest way first: read only the headings aloud, in order, and see whether they describe the page. If the outline reads as a sensible summary, the structure is probably sound; if it reads as a list of decorative phrases, the page has no structure regardless of what the sitemap says. Then run the preliminary checks in the assigned resource — headings, page title, keyboard access — remembering that the page states plainly they are preliminary and passing them is not conformance, and that they are not testing with disabled participants.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A class page read as headings alone: “Saturday pottery”, “About”, “Details”, “More info”, “Book”. Read aloud it described nothing — three of the five headings could have introduced anything. Rewritten from the labelling table: “Saturday pottery”, “What you'll do”, “What to bring”, “When and where”, “What it costs”, “Book a place”. The second version is a summary of the page, and the outline now matches the structure that the tree test had validated between pages. The regions were marked so the main content could be reached directly, and the preliminary checks found one further problem: the page title in the browser tab was the site name on every page, so a person with six tabs open could not tell them apart. What was not verified, and the record says so: no screen-reader session was run and no disabled participant took part.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6255,6 +6701,40 @@ Open Your work and choose Ready for review. The next lesson takes these same lab
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Structure people can perceive: headings, landmarks and navigation
+What I am trying to do: Express one page of your structure as a heading outline and a set of regions, then check it by reading only the headings aloud and by running the relevant preliminary accessibility checks, recording what you could and could not verify.
+
+Key idea or terms:
+Heading outline: The page title and its section headings, in order, read on their own. Some people use it as their whole way of moving around a page.
+Region: A named large area of a page: the banner, the navigation, the main content, a side area, the footer. Naming them lets someone jump straight to the content.
+Page title: The single heading at the top saying what this page is. Everything else on the page sits inside it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied heading outline from another made-up class page, read aloud with nothing else visible: “Evening wheel throwing”, “Overview”, “What to bring”, “Good to know”, “Book a place”.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The heading rule, written by you, including what skipping a level does” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The heading rule, written by you, including what skipping a level does”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The heading rule, written by you, including what skipping a level does” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the outline as a numbered list and check each item is genuinely a subsection of the one above. Rewrite every heading you could move to another page without noticing.
@@ -6324,7 +6804,7 @@ Adequate evidence: A written statement of which checks were run, which could not
 Repair: List the preliminary checks and mark each run, not applicable or not run. Add one sentence on the difference between passing them and being accessible. Recheck: The check record with limits.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes these same labels into search, where people type their own words at you.
 
@@ -6354,51 +6834,65 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 - A list of at least twenty verbatim participant queries with hand-run outcomes and classified failures, filter categories with a stated no-results behaviour, a designed zero-results screen, and a fix per failure class.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: Your own sentence on preventing a dead end against getting somebody out of one, and what your notes say about search.
+
+**Words you will use**
+
+- **Zero results:** The screen a person sees when a search or a filter combination returns nothing. It is a screen you design, not an error you allow to happen.
+- **Synonym:** A different word for the same thing. If people say fees and your pages say pricing, either the search knows they are the same or it is broken for those people.
+- **Query:** The words a person actually puts into a search box. Yours stay a guess about theirs until you copy them from your notes.
+
+**Quick example.** A supplied zero-results screen from another made-up product. It reads: “No results found for wheel throwing beginner. Check your spelling and try again.” Nothing else is on the screen.
+
+The reader demonstrates and guides the task before asking for “The difference between stopping a dead end and helping somebody out of one, in your own words”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Design the search and filtering behaviour for your structure, including what happens with no results, and write the query list that would test it — drawn from words your participants actually used.
 
 
-### Understand the idea · 1
+### Idea 1: People arrive at search for different reasons and the design h…
 
 Section: learn. Stable action: learn-1.
 
 People arrive at search for different reasons and the design has to serve them all: they know the exact name of the thing, they know a word from it, they have already failed in the navigation, or they always search because it is faster than reading a menu. The last group is large and does not care about your hierarchy. What they all share is that they type their own vocabulary — which is why your labelling table matters here, and why synonyms are not a nicety: if people say “fees” and your content says “pricing”, either the search knows they are the same or the search is broken for those people.
 
 
-### Understand the idea · 2
+### Idea 2: Filters are the structure applied to a result set, and they in…
 
 Section: learn. Stable action: learn-2.
 
 Filters are the structure applied to a result set, and they inherit its problems. A filter whose categories nobody understands is an unused control that also consumes screen space, and filters that combine to produce nothing at all are a trap unless the interface says so before the person commits. Show how many results each filter value would leave where you can, and never let a person build a combination that silently returns nothing without being able to see which choice caused it.
 
 
-### Understand the idea · 3
+### The zero-results state is a designed screen, not an error
 
 Section: learn. Stable action: learn-3.
 
 The zero-results state is a designed screen, not an error. It should say what was searched for, offer the nearest thing you do have, offer a route that does not depend on the same words — browse the structure, ask a person — and, where you can, capture the query for later. Handled well it is a moment of recovery; handled as “No results found” it is the last thing that person does on your product. This is the difference between preventing an error and helping someone out of one, which the assigned reading treats as two distinct obligations.
 
 
-### Understand the idea · 4
+### You can test search with no search engine at all
 
 Section: learn. Stable action: learn-4.
 
 You can test search with no search engine at all. Take the twenty words your participants actually used, look for each in your content by hand, and record whether the thing they wanted would have been found. That exercise finds the missing synonyms, the content that does not contain its own subject word, and the items that exist but are described in language nobody uses — and it costs an afternoon and no infrastructure.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Twenty queries taken verbatim from five interviews were run by hand against a class provider's content. Eleven would have found the right thing. Four failed on vocabulary: people searched “fees” and every page said “pricing”. Three failed because the answer existed only in a confirmation email, which no search would ever reach. Two failed because the query was about something that did not exist at all — a refund rule, the same gap the tree test had found. The zero-results screen was then designed to name the query, list the three closest items, offer the browse route and show the phone number, and the four vocabulary failures were fixed by adding the alternate words to the page content rather than by tuning any search.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6836,6 +7330,40 @@ Open Your work and choose Ready for review. The last lesson of the module puts y
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Search, filters and the zero-results path
+What I am trying to do: Design the search and filtering behaviour for your structure, including what happens with no results, and write the query list that would test it — drawn from words your participants actually used.
+
+Key idea or terms:
+Zero results: The screen a person sees when a search or a filter combination returns nothing. It is a screen you design, not an error you allow to happen.
+Synonym: A different word for the same thing. If people say fees and your pages say pricing, either the search knows they are the same or it is broken for those people.
+Query: The words a person actually puts into a search box. Yours stay a guess about theirs until you copy them from your notes.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied zero-results screen from another made-up product. It reads: “No results found for wheel throwing beginner. Check your spelling and try again.” Nothing else is on the screen.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The difference between stopping a dead end and helping somebody out of one, in your own words” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The difference between stopping a dead end and helping somebody out of one, in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The difference between stopping a dead end and helping somebody out of one, in your own words” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Return to your interview notes and copy out every phrase a participant used to describe something they were looking for, including the vague ones.
@@ -6905,7 +7433,7 @@ Adequate evidence: Filter categories defined from the structure, with a stated b
 Repair: Walk two filter combinations that produce nothing and write exactly what the person sees and what they can do next. Then add the mechanism that would have warned them. Recheck: The filter design with empty-combination handling.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The last lesson of the module puts your labels under pressure and closes everything into a change note.
 
@@ -6935,51 +7463,65 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 - A tested label set with recorded breakages under expansion, an Indic script, a narrow width and a throttled connection; the repairs made and re-checked; and a change note recording every decision, its evidence, the guesses and the open questions.
 
-### Start with a clear task
+### Start here: in everyday words
+
+Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: What room to grow means, two India requirements that apply to your labels, and which labels you expect to break.
+
+**Words you will use**
+
+- **Expansion:** Translated text is usually longer than the English it came from, often by about a third. A label set built to the tightest fit has nowhere to put the extra.
+- **Matra:** The vowel mark written above or below a Devanagari letter. If the line height was set for Latin text the mark gets clipped, and the word changes.
+- **Wrap:** Text carrying on to a second line because it ran out of width. Nothing is lost, and the row it sits in becomes taller.
+
+**Quick example.** Made-up example. Padding a nine-item label set by a third, writing “nothing broke”, and then actually looking. I copied the nine labels into a text file and added about a third more characters to each, the way a Hindi version would run longer.
+
+The reader demonstrates and guides the task before asking for “What room to grow means for a label set, and two requirements from the India guidelines that apply to yours”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Test your labels against a longer translation, an Indic script, a narrow screen and a slow connection, repair what breaks, and publish a change note recording every structural decision, its evidence and what remains untested.
 
 
-### Understand the idea · 1
+### Idea 1: Text expands when translated, and layouts built around English…
 
 Section: learn. Stable action: learn-1.
 
 Text expands when translated, and layouts built around English label lengths break in ways that are invisible until they happen: a menu item wrapping to three lines, a truncated label ending mid-word, a button whose text no longer fits. The assigned internationalization page covers what this involves — encoding, expansion, formats, sorting order — and the practical move for a designer is to build the label set with room to grow rather than to the tightest fit that looked good today.
 
 
-### Understand the idea · 2
+### Indic scripts add constraints English does not have
 
 Section: learn. Stable action: learn-2.
 
 Indic scripts add constraints English does not have. Line height that suits Latin text can clip conjuncts and matras; a font that renders one script beautifully may not contain another at all; and sorting order differs by language, so an alphabetical list is a different list in a different language. India's own government guidelines cover local-language and mobile requirements and are the primary source available to you, so compare your work against two of their requirements rather than assuming a Latin-script layout transfers.
 
 
-### Understand the idea · 3
+### Idea 3: The narrow screen and the slow connection are the same test at…
 
 Section: learn. Stable action: learn-3.
 
 The narrow screen and the slow connection are the same test at different layers. A long label on a narrow screen either wraps, truncates or overflows, and truncation is the worst of the three because it removes the distinguishing end of a label — “Change or cancel a…” — that a person was using to choose. On a slow connection, structure is what arrives first: the person sees your labels before any image or refinement loads, which means the text has to work alone, and you can check this by throttling the connection in a browser's own developer tools.
 
 
-### Understand the idea · 4
+### The change note is the last artefact and the one that keeps its value
 
 Section: learn. Stable action: learn-4.
 
 The change note is the last artefact and the one that keeps its value. It records each decision, the evidence behind it, what you rejected, what is still a guess and what you would test next. Written honestly it is portfolio material, a handover document and the thing that stops the same argument being re-run next quarter — and the honesty is what makes it useful: a note claiming everything was validated is worth less than one saying which three labels are still untested.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Four labels broke under test. “Change or cancel a booking” truncated to “Change or cancel a…” at 320 px, so the two actions became indistinguishable, and the fix was two shorter separate items — which the card sort had already suggested. A Hindi rendering of the same menu ran about a third longer and wrapped to two lines, which was acceptable once the row height allowed it, and one heading clipped its matras until the line height was increased. On a throttled connection the page showed its headings first, which read as a sensible outline — the read-aloud test from lesson 10 paying off in a situation nobody had designed for. The change note recorded eleven decisions, four still marked as guesses, and one open content gap: the refund rule, found in the tree test, which still did not exist.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7576,6 +8118,40 @@ Open Your work and choose Ready for review. Module 7 turns this structure into t
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Stress-test the labels, then write the change note
+What I am trying to do: Test your labels against a longer translation, an Indic script, a narrow screen and a slow connection, repair what breaks, and publish a change note recording every structural decision, its evidence and what remains untested.
+
+Key idea or terms:
+Expansion: Translated text is usually longer than the English it came from, often by about a third. A label set built to the tightest fit has nowhere to put the extra.
+Matra: The vowel mark written above or below a Devanagari letter. If the line height was set for Latin text the mark gets clipped, and the word changes.
+Wrap: Text carrying on to a second line because it ran out of width. Nothing is lost, and the row it sits in becomes taller.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Padding a nine-item label set by a third, writing “nothing broke”, and then actually looking. I copied the nine labels into a text file and added about a third more characters to each, the way a Hindi version would run longer.
+
+Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What room to grow means for a label set, and two requirements from the India guidelines that apply to yours” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What room to grow means for a label set, and two requirements from the India guidelines that apply to yours”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What room to grow means for a label set, and two requirements from the India guidelines that apply to yours” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Pad each label with extra characters and write it out again in a second script by hand if you cannot render it. Name each breakage as a concrete sentence.
@@ -7645,7 +8221,7 @@ Adequate evidence: A written note listing each decision with its evidence, the r
 Repair: Go through your structure and write one line per decision. Any line where the evidence column is empty is a guess and must be labelled as one. Recheck: The change note.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. Module 7 turns this structure into task flows, and it starts from your change note.
 

@@ -23,58 +23,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - What the strategy excludes, or a note that it excludes nothing
 - One implied choice you believe was never deliberate
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product strategy connects a real problem, evidence, constraints and trade-offs to a choice about what to do next. In this lesson, your first small result is: What makes a choice strategic rather than tactical, in your own words.
+
+**Words you will use**
+
+- **Strategic choice:** One that rules something out. If nothing is excluded, nothing was chosen.
+- **Operating strategy:** The pattern of what actually gets built and refused, as opposed to the document. It is the one that decides what happens.
+- **Reading from behaviour:** Inferring the strategy from what recurs, what is protected and what goes first. It is available to anybody paying attention.
+
+**Quick example.** Made-up example. Reading what a team always cuts, and asking them. Asked what gets cut when time is short. Everybody said the same thing: nothing important, we protect quality and we protect accessibility.
+
+The reader demonstrates and guides the task before asking for “What makes a choice strategic rather than tactical, in your own words”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write the strategy your product is actually following — inferred from what it does, not from what anyone says — and name the three choices it implies.
 
 
-### Understand the idea · 1
+### Strategy is a pattern of choices, visible in what gets built and refused
 
 Section: learn. Stable action: learn-1.
 
 Strategy is a pattern of choices, visible in what gets built and refused.
 
 
-### Understand the idea · 2
+### Idea 2: Read it from behaviour: what recurs, what is protected, what i…
 
 Section: learn. Stable action: learn-2.
 
 Read it from behaviour: what recurs, what is protected, what is cut first.
 
 
-### Understand the idea · 3
+### A strategy that excludes nothing is not a strategy
 
 Section: learn. Stable action: learn-3.
 
 A strategy that excludes nothing is not a strategy.
 
 
-### Understand the idea · 4
+### Designers contribute by making the implied choices explicit
 
 Section: learn. Stable action: learn-4.
 
 Designers contribute by making the implied choices explicit.
 
 
-### Understand the idea · 5
+### Naming an implied choice is often enough to change it
 
 Section: learn. Stable action: learn-5.
 
 Naming an implied choice is often enough to change it.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Reading the class provider's operating strategy from behaviour: every request from the two long-standing corporate clients is accommodated, however small; the first-time booking experience is the thing cut when time is short; and no request to support a new class format has ever been refused. The implied choices: retention over acquisition, breadth over depth, and existing customers over new ones. Written down, two of the three turned out to be unintentional — the first-time experience had been sacrificed by default rather than by decision — and naming it changed the next fortnight's work.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -612,6 +626,40 @@ Open Your work and choose Ready for review. The next lesson asks how this produc
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: What strategy means for someone doing the work
+What I am trying to do: Write the strategy your product is actually following — inferred from what it does, not from what anyone says — and name the three choices it implies.
+
+Key idea or terms:
+Strategic choice: One that rules something out. If nothing is excluded, nothing was chosen.
+Operating strategy: The pattern of what actually gets built and refused, as opposed to the document. It is the one that decides what happens.
+Reading from behaviour: Inferring the strategy from what recurs, what is protected and what goes first. It is available to anybody paying attention.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Reading what a team always cuts, and asking them. Asked what gets cut when time is short. Everybody said the same thing: nothing important, we protect quality and we protect accessibility.
+
+Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What makes a choice strategic rather than tactical, in your own words” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What makes a choice strategic rather than tactical, in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What makes a choice strategic rather than tactical, in your own words” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - List the last ten decisions and what each preferred; the pattern is the strategy.
@@ -681,7 +729,7 @@ Adequate evidence: One implied choice marked as never deliberately made, with th
 Repair: Look for the quality that is always cut and ask whether anyone chose that. Recheck: The identified accident.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson asks how this product pays for itself.
 
@@ -719,58 +767,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Costs beyond money, listed
 - One design decision that changes the arithmetic, with the mechanism
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product strategy connects a real problem, evidence, constraints and trade-offs to a choice about what to do next. In this lesson, your first small result is: The exchange written in plain words, with both sides checked as real rather than aspirational.
+
+**Words you will use**
+
+- **The exchange:** What each side gives and gets. Writing it plainly is most of what commercial literacy means in practice.
+- **Aspirational:** What you would like people to value: community, sustainability, belonging. Sometimes true and rarely why anybody turned up today.
+- **Payer and user diverging:** A parent booking for a child, an employer paying for staff, a funder paying for a service. The product usually serves the payer without anybody deciding to.
+
+**Quick example.** Made-up example. Writing the exchange for Northside Tool Library, and writing the nice version. Members give a small subscription and get access to a shared resource, a sense of community, and a more sustainable way to do jobs at home.
+
+The reader demonstrates and guides the task before asking for “What each side gives and gets, in plain words”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write how your product actually sustains itself — what is exchanged, who pays, what it costs — and identify one design decision that changes the arithmetic.
 
 
-### Understand the idea · 1
+### Describe the exchange: what someone gets and what they give
 
 Section: learn. Stable action: learn-1.
 
 Describe the exchange: what someone gets and what they give.
 
 
-### Understand the idea · 2
+### Name who pays; it is often not the person using the product
 
 Section: learn. Stable action: learn-2.
 
 Name who pays; it is often not the person using the product.
 
 
-### Understand the idea · 3
+### Costs are not only money: time, support, risk and attention
 
 Section: learn. Stable action: learn-3.
 
 Costs are not only money: time, support, risk and attention.
 
 
-### Understand the idea · 4
+### Some design decisions change the arithmetic directly
 
 Section: learn. Stable action: learn-4.
 
 Some design decisions change the arithmetic directly.
 
 
-### Understand the idea · 5
+### You can describe economics without inventing figures
 
 Section: learn. Stable action: learn-5.
 
 You can describe economics without inventing figures.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The exchange, written plainly: a person gives money and a Saturday and gets a class they were confident about attending; the provider gives a place and their time and gets a booking they can rely on. The payer and user coincide here, except when a parent books for a child, where the design must serve both. Costs named: each unclear payment generates roughly one phone call to the provider, who is a single person with limited time; each duplicate payment generates a refund and a lost afternoon. One design decision changes the arithmetic directly: making payment status unambiguous reduces the calls, which is time the provider currently spends on the phone rather than teaching.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1282,6 +1344,40 @@ Open Your work and choose Ready for review. The next lesson draws what happens b
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: How this product survives
+What I am trying to do: Write how your product actually sustains itself — what is exchanged, who pays, what it costs — and identify one design decision that changes the arithmetic.
+
+Key idea or terms:
+The exchange: What each side gives and gets. Writing it plainly is most of what commercial literacy means in practice.
+Aspirational: What you would like people to value: community, sustainability, belonging. Sometimes true and rarely why anybody turned up today.
+Payer and user diverging: A parent booking for a child, an employer paying for staff, a funder paying for a service. The product usually serves the payer without anybody deciding to.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing the exchange for Northside Tool Library, and writing the nice version. Members give a small subscription and get access to a shared resource, a sense of community, and a more sustainable way to do jobs at home.
+
+Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What each side gives and gets, in plain words” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What each side gives and gets, in plain words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What each side gives and gets, in plain words” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write what each party actually hands over and actually receives.
@@ -1351,7 +1447,7 @@ Adequate evidence: A design decision with a stated causal mechanism and no unsou
 Repair: Delete every figure you cannot source and write the causal chain in words. Recheck: The lever.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson draws what happens behind the interface.
 
@@ -1389,58 +1485,72 @@ Starting route: Recommended route: Draw the three bands of a service blueprint f
 - Two back-stage facts that determine the front-stage experience
 - One front-stage change made because of a back-stage constraint
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product strategy connects a real problem, evidence, constraints and trade-offs to a choice about what to do next. In this lesson, your first small result is: One journey chosen, with its stages laid out as the top band from your existing experience map.
+
+**Words you will use**
+
+- **Service blueprint:** Three bands: what the person does, what the service shows, and what happens behind it. The third band is what an experience map leaves out.
+- **The top band:** The person’s journey, which you already have. Reusing it keeps the blueprint anchored in something observed.
+- **Line of visibility:** The boundary between what the person can see and what they cannot. Most delays and failures originate below it.
+
+**Quick example.** Made-up example. Drawing the visible band for a tool-library booking, and leaving the waiting out. Select, review, pay, confirm. Four stages with something in the visible band at each one, and the blueprint looked complete.
+
+The reader demonstrates and guides the task before asking for “The stages from your existing experience map, as the top band”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Draw a service blueprint for one journey showing what the person sees, what staff do, and what systems are involved, and identify the two places where the back stage decides the front-stage experience.
 
 
-### Understand the idea · 1
+### Idea 1: A blueprint adds what happens behind the interface to what the…
 
 Section: learn. Stable action: learn-1.
 
 A blueprint adds what happens behind the interface to what the person sees.
 
 
-### Understand the idea · 2
+### Three layers: person's actions, visible service, and back-stage work
 
 Section: learn. Stable action: learn-2.
 
 Three layers: person's actions, visible service, and back-stage work.
 
 
-### Understand the idea · 3
+### Most delays and failures originate behind the line
 
 Section: learn. Stable action: learn-3.
 
 Most delays and failures originate behind the line.
 
 
-### Understand the idea · 4
+### Staff constraints are design constraints
 
 Section: learn. Stable action: learn-4.
 
 Staff constraints are design constraints.
 
 
-### Understand the idea · 5
+### Idea 5: The assigned map source stops at the front stage; the back sta…
 
 Section: learn. Stable action: learn-5.
 
 The assigned map source stops at the front stage; the back stage is this lesson's addition.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The blueprint for a booking: the person selects, reviews, pays and waits; the visible service shows a pending state and then a confirmation; behind the line the payment provider responds, the provider's own spreadsheet is updated by hand each evening, and a confirmation message is sent when that happens. Two decisive back-stage facts: the hand update means confirmation is not immediate, which the interface had been promising; and the spreadsheet is the only record, so a double payment is discovered a day later. Both changed the front-stage design — the pending state became honest about the timescale, and the reference number became the person's proof.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1965,6 +2075,40 @@ Open Your work and choose Ready for review. The next lesson deals with the case 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: The whole service, front and back
+What I am trying to do: Draw a service blueprint for one journey showing what the person sees, what staff do, and what systems are involved, and identify the two places where the back stage decides the front-stage experience.
+
+Key idea or terms:
+Service blueprint: Three bands: what the person does, what the service shows, and what happens behind it. The third band is what an experience map leaves out.
+The top band: The person’s journey, which you already have. Reusing it keeps the blueprint anchored in something observed.
+Line of visibility: The boundary between what the person can see and what they cannot. Most delays and failures originate below it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Drawing the visible band for a tool-library booking, and leaving the waiting out. Select, review, pay, confirm. Four stages with something in the visible band at each one, and the blueprint looked complete.
+
+Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The stages from your existing experience map, as the top band” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The stages from your existing experience map, as the top band”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The stages from your existing experience map, as the top band” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Add the band beneath your map for what staff and systems do at each stage.
@@ -2034,7 +2178,7 @@ Adequate evidence: A design change traced to a constraint on the blueprint.
 Repair: Find the promise the operation cannot keep and change the promise. Recheck: The change.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson deals with the case where the person paying is not the person using it.
 
@@ -2072,58 +2216,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - One screen serving two roles without failing the third
 - What the buyer gets instead of the feature they asked for
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product strategy connects a real problem, evidence, constraints and trade-offs to a choice about what to do next. In this lesson, your first small result is: What the permission reading gives you and what it does not.
+
+**Words you will use**
+
+- **Least privilege:** Giving each role only the access its work needs. It is an infrastructure principle with a direct interface consequence: fewer things visible to people who should not see them.
+- **Infrastructure vocabulary:** Words for how permissions are structured. None of it says what a screen should show, which is where the design work is.
+- **The buyer:** Whoever decided to purchase. They decide once, and their accountability is usually budget and being able to show the thing is used.
+
+**Quick example.** Made-up example. Designing the business version of a class-booking product, and designing for whoever signed. Attendance reporting: who booked, who turned up, who did not. Entirely reasonable from where she sits, since she has to show the scheme is used.
+
+The reader demonstrates and guides the task before asking for “What the assigned overview gives you, and what it does not”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Map the roles in a business-to-business version of your product — buyer, administrator, everyday user — and design one screen that serves two of them without failing the third.
 
 
-### Understand the idea · 1
+### Three roles recur: the buyer, the administrator and the everyday user
 
 Section: learn. Stable action: learn-1.
 
 Three roles recur: the buyer, the administrator and the everyday user.
 
 
-### Understand the idea · 2
+### They want different things and only one of them chose the product
 
 Section: learn. Stable action: learn-2.
 
 They want different things and only one of them chose the product.
 
 
-### Understand the idea · 3
+### The buyer's needs dominate purchase; the user's needs dominate renewal
 
 Section: learn. Stable action: learn-3.
 
 The buyer's needs dominate purchase; the user's needs dominate renewal.
 
 
-### Understand the idea · 4
+### Administrators are users too, with their own tasks and frustrations
 
 Section: learn. Stable action: learn-4.
 
 Administrators are users too, with their own tasks and frustrations.
 
 
-### Understand the idea · 5
+### Design for the everyday user and give the buyer evidence
 
 Section: learn. Stable action: learn-5.
 
 Design for the everyday user and give the buyer evidence.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The class product's business version has three roles: an office manager who buys wellbeing classes for staff, an administrator who allocates places and chases attendance, and the staff member who books a class. Their conflicts: the buyer wants attendance reporting, which the staff member experiences as surveillance; the administrator wants bulk allocation, which the staff member experiences as being enrolled without choosing. The screen designed — the staff member's booking view — shows their own place clearly, shows what their employer can see about it, and gives the administrator an allocation route that the staff member can decline. The buyer gets an aggregate report with no individual attendance.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2670,6 +2828,40 @@ Open Your work and choose Ready for review. The next lesson traces what happens 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: When the buyer is not the user
+What I am trying to do: Map the roles in a business-to-business version of your product — buyer, administrator, everyday user — and design one screen that serves two of them without failing the third.
+
+Key idea or terms:
+Least privilege: Giving each role only the access its work needs. It is an infrastructure principle with a direct interface consequence: fewer things visible to people who should not see them.
+Infrastructure vocabulary: Words for how permissions are structured. None of it says what a screen should show, which is where the design work is.
+The buyer: Whoever decided to purchase. They decide once, and their accountability is usually budget and being able to show the thing is used.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Designing the business version of a class-booking product, and designing for whoever signed. Attendance reporting: who booked, who turned up, who did not. Entirely reasonable from where she sits, since she has to show the scheme is used.
+
+Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What the assigned overview gives you, and what it does not” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What the assigned overview gives you, and what it does not”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What the assigned overview gives you, and what it does not” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - For each role write what they are judged on; that explains what they want.
@@ -2739,7 +2931,7 @@ Adequate evidence: A stated substitute for the feature that would harm the user.
 Repair: Ask what the buyer is trying to prove, and give them that instead of the mechanism they asked for. Recheck: The substitute.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson traces what happens after people adapt to your design.
 
@@ -2777,58 +2969,72 @@ Starting route: Recommended route: Draw the loop your change sets off, with the 
 - What people are being rewarded to do, named
 - A structural response rather than a warning
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product strategy connects a real problem, evidence, constraints and trade-offs to a choice about what to do next. In this lesson, your first small result is: One change chosen, with what people will do differently once it exists.
+
+**Words you will use**
+
+- **Second-order effect:** What happens after people adapt to a change. The first-order effect is what you designed; the second is what they do with it.
+- **Adaptation:** The behaviour your change makes easy. People do more of whatever you made cheap, whether or not you wanted them to.
+- **Loop:** Where the effect of a change feeds back into its own cause. It is what makes a small change produce a large and delayed result.
+
+**Quick example.** Made-up example. Making cancellation one tap at a class provider, and watching the consequence arrive somewhere else. Cancellation went from a phone call to one tap. An obvious improvement, and everybody who had struggled with it was pleased.
+
+The reader demonstrates and guides the task before asking for “A change you have made or plan to make”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Identify one place where your product's design creates a second-order effect, trace the loop, and design a response that does not simply add a warning.
 
 
-### Understand the idea · 1
+### A second-order effect is what happens after people adapt
 
 Section: learn. Stable action: learn-1.
 
 A second-order effect is what happens after people adapt.
 
 
-### Understand the idea · 2
+### Look for loops: the response to your change feeds back into the cause
 
 Section: learn. Stable action: learn-2.
 
 Look for loops: the response to your change feeds back into the cause.
 
 
-### Understand the idea · 3
+### Delays hide loops; the effect arrives long after the change
 
 Section: learn. Stable action: learn-3.
 
 Delays hide loops; the effect arrives long after the change.
 
 
-### Understand the idea · 4
+### People optimise for whatever you measure or reward
 
 Section: learn. Stable action: learn-4.
 
 People optimise for whatever you measure or reward.
 
 
-### Understand the idea · 5
+### A warning is not a response to a structural effect
 
 Section: learn. Stable action: learn-5.
 
 A warning is not a response to a structural effect.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The loop: making cancellation one tap reduced the friction that had been suppressing casual bookings; casual bookings rose; more of them were cancelled late; late cancellations left classes half-full, which the provider experienced as unreliable demand and responded to by overbooking; overbooking produced turned-away attendees, which is the worst outcome in the whole service. The delay between the change and the overbooking response was about six weeks. The design response was structural rather than a warning: cancellation stayed one tap, and a late cancellation now offers the place to a short waiting list, which closes the loop at the point where it was doing harm.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3356,6 +3562,40 @@ Open Your work and choose Ready for review. The next lesson maps the people who 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Systems that push back
+What I am trying to do: Identify one place where your product's design creates a second-order effect, trace the loop, and design a response that does not simply add a warning.
+
+Key idea or terms:
+Second-order effect: What happens after people adapt to a change. The first-order effect is what you designed; the second is what they do with it.
+Adaptation: The behaviour your change makes easy. People do more of whatever you made cheap, whether or not you wanted them to.
+Loop: Where the effect of a change feeds back into its own cause. It is what makes a small change produce a large and delayed result.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Making cancellation one tap at a class provider, and watching the consequence arrive somewhere else. Cancellation went from a phone call to one tap. An obvious improvement, and everybody who had struggled with it was pleased.
+
+Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “A change you have made or plan to make” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “A change you have made or plan to make”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “A change you have made or plan to make” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Ask what people will do differently once the change exists, then what that causes.
@@ -3425,7 +3665,7 @@ Adequate evidence: A change to what is easy or visible, checked for its own loop
 Repair: Replace the warning with a change to what the design makes easy, then trace that too. Recheck: The response.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson maps the people who can stop any of this happening.
 
@@ -3463,58 +3703,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - An approach to the costliest opposition
 - The quiet blocker identified
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product strategy connects a real problem, evidence, constraints and trade-offs to a choice about what to do next. In this lesson, your first small result is: Everybody who can affect or block the work listed by what they are accountable for.
+
+**Words you will use**
+
+- **Accountability:** What somebody else asks them about: a date, a budget, a queue, a number they report. It predicts behaviour far better than a job title.
+- **Affect or block:** Anybody whose agreement you need or whose disagreement would stop it. It includes people with no formal authority at all.
+- **Interest:** How much they care about this work. It is independent of whether they can do anything about it.
+
+**Quick example.** Made-up example. Placing stakeholders for booking work, and placing them by how much they talk. The two people who commented most: the provider, who has views about everything, and a committee member who replies to every message.
+
+The reader demonstrates and guides the task before asking for “Everybody who can affect or block the work, and what each is accountable for”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Map the people who can affect or block your work, what each is accountable for, and design your approach to the one whose opposition would cost most.
 
 
-### Understand the idea · 1
+### Map by accountability, not by seniority
 
 Section: learn. Stable action: learn-1.
 
 Map by accountability, not by seniority.
 
 
-### Understand the idea · 2
+### Interest and influence are different axes
 
 Section: learn. Stable action: learn-2.
 
 Interest and influence are different axes.
 
 
-### Understand the idea · 3
+### Opposition is usually rational from where the person stands
 
 Section: learn. Stable action: learn-3.
 
 Opposition is usually rational from where the person stands.
 
 
-### Understand the idea · 4
+### Idea 4: Find what your work does for them, or accept that you are aski…
 
 Section: learn. Stable action: learn-4.
 
 Find what your work does for them, or accept that you are asking a favour.
 
 
-### Understand the idea · 5
+### The quiet blocker matters more than the loud sceptic
 
 Section: learn. Stable action: learn-5.
 
 The quiet blocker matters more than the loud sceptic.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The map for the booking work: the provider, accountable for revenue and her own time, high interest and high influence; the developer, accountable for delivery dates, moderate interest and high influence; the provider's assistant, accountable for the day-to-day list, high interest and low influence, and the person who best knew where the real problems were; and the payment provider, no interest and high influence over what is possible. The costly opposition was the developer, whose resistance was rational — the work threatened a date. The approach: reduce the scope so it fits the appetite, bring the estimate down by defining the states, and give him the ability to ship it in two parts.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4023,6 +4277,40 @@ Open Your work and choose Ready for review. The next lesson decides what to do w
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Stakeholders and their actual interests
+What I am trying to do: Map the people who can affect or block your work, what each is accountable for, and design your approach to the one whose opposition would cost most.
+
+Key idea or terms:
+Accountability: What somebody else asks them about: a date, a budget, a queue, a number they report. It predicts behaviour far better than a job title.
+Affect or block: Anybody whose agreement you need or whose disagreement would stop it. It includes people with no formal authority at all.
+Interest: How much they care about this work. It is independent of whether they can do anything about it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Placing stakeholders for booking work, and placing them by how much they talk. The two people who commented most: the provider, who has views about everything, and a committee member who replies to every message.
+
+Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Everybody who can affect or block the work, and what each is accountable for” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Everybody who can affect or block the work, and what each is accountable for”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Everybody who can affect or block the work, and what each is accountable for” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - For each person write what they are judged on at the end of a quarter.
@@ -4092,7 +4380,7 @@ Adequate evidence: A named person who could deprioritise the work, and what woul
 Repair: Ask who never says no and never does it; that is the person to plan for. Recheck: The quiet blocker.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson decides what to do when the information is not going to arrive.
 
@@ -4130,58 +4418,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - The one finding that would have changed it
 - A check date for the recorded assumption
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product strategy connects a real problem, evidence, constraints and trade-offs to a choice about what to do next. In this lesson, your first small result is: One open decision, with knowns, assumptions and guesses separated, and which the decision depends on.
+
+**Words you will use**
+
+- **Know:** Something you could show somebody: a count, a record, an observation. Far less than most lists of knowns contain.
+- **Assume:** Something you are treating as true without evidence, usually reasonably. It is the category that needs writing down, because it is what you check later.
+- **Guess:** Something you have no basis for at all. Naming it separately stops it being quietly promoted.
+
+**Quick example.** Made-up example. Listing what was known before a decision, and listing what everybody said. That members find the payment step confusing, that late cancellations are common, and that the provider wants a waiting list.
+
+The reader demonstrates and guides the task before asking for “The open decision”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Make one real decision under uncertainty, recording what you knew, what you assumed, what would have changed it, and how you will find out whether it was right.
 
 
-### Understand the idea · 1
+### Separate what you know, what you assume and what you are guessing
 
 Section: learn. Stable action: learn-1.
 
 Separate what you know, what you assume and what you are guessing.
 
 
-### Understand the idea · 2
+### Ask what the decision costs if wrong, and how reversible it is
 
 Section: learn. Stable action: learn-2.
 
 Ask what the decision costs if wrong, and how reversible it is.
 
 
-### Understand the idea · 3
+### Decide at the last responsible moment, not the earliest or the latest
 
 Section: learn. Stable action: learn-3.
 
 Decide at the last responsible moment, not the earliest or the latest.
 
 
-### Understand the idea · 4
+### Record the assumption; it is what you check later
 
 Section: learn. Stable action: learn-4.
 
 Record the assumption; it is what you check later.
 
 
-### Understand the idea · 5
+### A decision with no way to find out it was wrong is a bet, not a decision
 
 Section: learn. Stable action: learn-5.
 
 A decision with no way to find out it was wrong is a bet, not a decision.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The decision: whether to build the waiting list before or after the improved payment states. Known: payment confusion produces duplicate payments and calls; late cancellations leave places empty. Assumed: that a waiting list would fill enough of those places to be worth a fortnight. Guessed: how many people would join one. The test applied: which finding would change the order? Only evidence that late cancellations were rare. A count from the provider's records took twenty minutes and showed they were common, so the decision was made. The assumption about filling places was recorded, with a check at four weeks.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4725,6 +5027,40 @@ Open Your work and choose Ready for review. The next lesson looks at a gap this 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Deciding without enough information
+What I am trying to do: Make one real decision under uncertainty, recording what you knew, what you assumed, what would have changed it, and how you will find out whether it was right.
+
+Key idea or terms:
+Know: Something you could show somebody: a count, a record, an observation. Far less than most lists of knowns contain.
+Assume: Something you are treating as true without evidence, usually reasonably. It is the category that needs writing down, because it is what you check later.
+Guess: Something you have no basis for at all. Naming it separately stops it being quietly promoted.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Listing what was known before a decision, and listing what everybody said. That members find the payment step confusing, that late cancellations are common, and that the provider wants a waiting list.
+
+Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The open decision” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The open decision”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The open decision” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Label each input and ask what evidence you actually have for it.
@@ -4794,7 +5130,7 @@ Adequate evidence: A written assumption and a date to test it.
 Repair: Write the assumption as a sentence and put a date beside it. Recheck: The record.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson looks at a gap this course cannot fill for you.
 
@@ -4832,58 +5168,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A recorded verdict, including a rejection with reasons
 - A plan for closing the gap without unverified sources
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product strategy connects a real problem, evidence, constraints and trade-offs to a choice about what to do next. In this lesson, your first small result is: The positioning questions you cannot answer, and which design decisions would change with an answer.
+
+**Words you will use**
+
+- **Positioning:** How a product is described relative to the alternatives people actually consider. This course has no verified free source for it and will not teach it from an unverified one.
+- **A gap that matters:** One where a real decision would change. A gap that changes nothing is worth noting and not worth closing this month.
+- **Retrievable:** You can actually open it, today, without an account. A page behind a sign-up is not retrievable for this purpose.
+
+**Quick example.** Made-up example. Stating a learning gap, and stating it as a subject. “I need to learn about positioning.” A subject, a heading, and something I could carry around for a year without it changing anything.
+
+The reader demonstrates and guides the task before asking for “The questions about positioning you cannot currently answer”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write what you would need to learn about market positioning, find one candidate source, assess it against this course's verification rules, and record the result honestly.
 
 
-### Understand the idea · 1
+### Positioning and segmentation are real topics this course cannot source
 
 Section: learn. Stable action: learn-1.
 
 Positioning and segmentation are real topics this course cannot source.
 
 
-### Understand the idea · 2
+### Idea 2: Vendor content on strategy is abundant, promotional and usuall…
 
 Section: learn. Stable action: learn-2.
 
 Vendor content on strategy is abundant, promotional and usually unverifiable.
 
 
-### Understand the idea · 3
+### Idea 3: Apply the catalog's rules: retrievable, free, scope-reviewed,…
 
 Section: learn. Stable action: learn-3.
 
 Apply the catalog's rules: retrievable, free, scope-reviewed, dated, bounded.
 
 
-### Understand the idea · 4
+### A rejected source is a result worth recording
 
 Section: learn. Stable action: learn-4.
 
 A rejected source is a result worth recording.
 
 
-### Understand the idea · 5
+### Do not teach yourself from a source you would not assign to someone else
 
 Section: learn. Stable action: learn-5.
 
 Do not teach yourself from a source you would not assign to someone else.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The learner wrote what she would need: how a product's position relative to alternatives is described, how segments are defined without inventing them, and how positioning changes a design decision. One candidate was assessed: a company's strategy article, freely readable, undated, with no cited evidence, and written to sell the company's consulting. It was recorded as attempted and rejected, with the reason. The gap was left open in her own notes, with a plan to look for a book through a library rather than a blog — and, in the meantime, to avoid making positioning claims she could not support.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5399,6 +5749,40 @@ Open Your work and choose Ready for review. The next lesson compares the same fe
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Positioning: the gap this course does not fill
+What I am trying to do: Write what you would need to learn about market positioning, find one candidate source, assess it against this course's verification rules, and record the result honestly.
+
+Key idea or terms:
+Positioning: How a product is described relative to the alternatives people actually consider. This course has no verified free source for it and will not teach it from an unverified one.
+A gap that matters: One where a real decision would change. A gap that changes nothing is worth noting and not worth closing this month.
+Retrievable: You can actually open it, today, without an account. A page behind a sign-up is not retrievable for this purpose.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Stating a learning gap, and stating it as a subject. “I need to learn about positioning.” A subject, a heading, and something I could carry around for a year without it changing anything.
+
+Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The questions about positioning you cannot currently answer” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The questions about positioning you cannot currently answer”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The questions about positioning you cannot currently answer” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the positioning questions someone could ask you that you could not answer.
@@ -5468,7 +5852,7 @@ Adequate evidence: A route to the knowledge — a library, a primary text, a pra
 Repair: Write where you would find a source that passes the checks, and what you will not say until then. Recheck: The plan.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson compares the same feature for a consumer and a business context.
 
@@ -5506,58 +5890,72 @@ Starting route: Recommended route: Draw the same feature twice, once for a consu
 - The administrator's task designed, not assumed
 - A note of which context your project actually is
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product strategy connects a real problem, evidence, constraints and trade-offs to a choice about what to do next. In this lesson, your first small result is: What a business context adds that a consumer one does not.
+
+**Words you will use**
+
+- **Mandatory use:** The person did not choose the product and cannot leave. Frustration accumulates as resentment rather than losing you a user.
+- **Auditability:** A record of who did what and when, because somebody else’s money is being spent and somebody has to answer for it.
+- **Self-selected:** They chose to be here and can leave. It makes the first minute decisive and the thousandth use hypothetical.
+
+**Quick example.** Made-up example. Listing what a business context adds, and listing features. Roles, permissions, reporting, bulk actions, single sign-on. Five things business software has that consumer software does not.
+
+The reader demonstrates and guides the task before asking for “What a business context adds that a consumer one does not”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Compare the same feature designed for a consumer product and for a business one, and name the three decisions that differ and why.
 
 
-### Understand the idea · 1
+### Idea 1: Consumer products compete for a choice; business software is o…
 
 Section: learn. Stable action: learn-1.
 
 Consumer products compete for a choice; business software is often mandatory.
 
 
-### Understand the idea · 2
+### Idea 2: Mandatory use changes what frustration means: it accumulates r…
 
 Section: learn. Stable action: learn-2.
 
 Mandatory use changes what frustration means: it accumulates rather than losing the user.
 
 
-### Understand the idea · 3
+### Business software has administrators, auditability and data obligations
 
 Section: learn. Stable action: learn-3.
 
 Business software has administrators, auditability and data obligations.
 
 
-### Understand the idea · 4
+### Idea 4: Consumer products optimise for first use; business ones for th…
 
 Section: learn. Stable action: learn-4.
 
 Consumer products optimise for first use; business ones for the thousandth.
 
 
-### Understand the idea · 5
+### Neither is more sophisticated; they optimise different things
 
 Section: learn. Stable action: learn-5.
 
 Neither is more sophisticated; they optimise different things.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The booking feature designed twice. Consumer: emphasis on the first booking, generous whitespace, one action per screen, a warm confirmation. Business, for an office manager booking wellbeing classes for staff: dense list, keyboard operable, bulk actions, a record of who booked what and when for the finance team, and configuration for someone who will do this monthly for two years. Three differing decisions, named: density over spaciousness, because of repetition; bulk actions over single ones, because of volume; and an audit record, because someone else's money is being spent.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6073,6 +6471,40 @@ Open Your work and choose Ready for review. The next lesson deals with pressure 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Consumer and enterprise, and the trade between them
+What I am trying to do: Compare the same feature designed for a consumer product and for a business one, and name the three decisions that differ and why.
+
+Key idea or terms:
+Mandatory use: The person did not choose the product and cannot leave. Frustration accumulates as resentment rather than losing you a user.
+Auditability: A record of who did what and when, because somebody else’s money is being spent and somebody has to answer for it.
+Self-selected: They chose to be here and can leave. It makes the first minute decisive and the thousandth use hypothetical.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Listing what a business context adds, and listing features. Roles, permissions, reporting, bulk actions, single sign-on. Five things business software has that consumer software does not.
+
+Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What a business context adds that a consumer one does not” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What a business context adds that a consumer one does not”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What a business context adds that a consumer one does not” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Redesign the business version for someone doing this forty times a week.
@@ -6142,7 +6574,7 @@ Adequate evidence: A statement of which context applies and what it implies for 
 Repair: Decide whether your users chose your product, and follow the implications. Recheck: The context statement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson deals with pressure to design something you should not.
 
@@ -6180,58 +6612,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - One honest alternative designed
 - Your written limits, prepared in advance
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product strategy connects a real problem, evidence, constraints and trade-offs to a choice about what to do next. In this lesson, your first small result is: Three plausible requests, each named as the pattern it is an instance of.
+
+**Words you will use**
+
+- **Manufactured urgency:** A deadline that is not real: a countdown that resets, a place that was never going to be released. It works by making a person decide before they have thought.
+- **Obstructed exit:** Leaving being much harder than arriving. Two taps to book and a phone call to cancel is the standard shape.
+- **Hidden cost:** A charge or commitment revealed after the person has invested effort. It works because people continue rather than start again.
+
+**Quick example.** Made-up example. Finding the need under a request at a class provider, and accepting the stated one. A pre-ticked newsletter box on the booking form. The stated reason was that the mailing list needed to grow.
+
+The reader demonstrates and guides the task before asking for “Request 1 · what is asked for, and the pattern it is an instance of”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Identify three requests you would refuse, write what you would say, and design one honest alternative that serves the underlying business need.
 
 
-### Understand the idea · 1
+### Idea 1: Recognise the patterns: hidden costs, obstructed exits, manufa…
 
 Section: learn. Stable action: learn-1.
 
 Recognise the patterns: hidden costs, obstructed exits, manufactured urgency.
 
 
-### Understand the idea · 2
+### Most such requests have a legitimate business need underneath
 
 Section: learn. Stable action: learn-2.
 
 Most such requests have a legitimate business need underneath.
 
 
-### Understand the idea · 3
+### Refusing without an alternative loses the argument and the relationship
 
 Section: learn. Stable action: learn-3.
 
 Refusing without an alternative loses the argument and the relationship.
 
 
-### Understand the idea · 4
+### Say what it costs: refunds, complaints, reputation, staff time
 
 Section: learn. Stable action: learn-4.
 
 Say what it costs: refunds, complaints, reputation, staff time.
 
 
-### Understand the idea · 5
+### Write your limits before you are asked to cross them
 
 Section: learn. Stable action: learn-5.
 
 Write your limits before you are asked to cross them.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three refusals were written. A countdown implying a place would be released in five minutes when it would not: refused, because it is a false statement, with the alternative of showing genuine remaining places. Cancellation requiring a phone call while booking took two taps: refused, because it obstructs exit, with the alternative of self-service cancellation and an optional reason field that gives the provider better information than an angry call. A pre-ticked box adding a newsletter: refused, with the alternative of asking after the booking is complete, which in the provider's own experience produced better-quality subscribers.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6767,6 +7213,40 @@ Open Your work and choose Ready for review. The next lesson compares your work a
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Pressure, patterns and where you stop
+What I am trying to do: Identify three requests you would refuse, write what you would say, and design one honest alternative that serves the underlying business need.
+
+Key idea or terms:
+Manufactured urgency: A deadline that is not real: a countdown that resets, a place that was never going to be released. It works by making a person decide before they have thought.
+Obstructed exit: Leaving being much harder than arriving. Two taps to book and a phone call to cancel is the standard shape.
+Hidden cost: A charge or commitment revealed after the person has invested effort. It works because people continue rather than start again.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Finding the need under a request at a class provider, and accepting the stated one. A pre-ticked newsletter box on the booking form. The stated reason was that the mailing list needed to grow.
+
+Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Request 1 · what is asked for, and the pattern it is an instance of” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Request 1 · what is asked for, and the pattern it is an instance of”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Request 1 · what is asked for, and the pattern it is an instance of” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Think of what a provider under revenue pressure would ask for, not what a villain would.
@@ -6836,7 +7316,7 @@ Adequate evidence: A written line with the sentence you would say.
 Repair: Write what you will not do and the sentence you would use, then say it aloud. Recheck: The limits.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson compares your work against one employer’s published expectations.
 
@@ -6874,58 +7354,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A plan to practise one expectation on real work
 - A note that one employer's expectations are not a market standard
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product strategy connects a real problem, evidence, constraints and trade-offs to a choice about what to do next. In this lesson, your first small result is: The expectations from one published job-family page, written in your own words.
+
+**Words you will use**
+
+- **Design leadership:** Influence over decisions without controlling anybody. It describes behaviour rather than a title, which is what makes it practisable now.
+- **Published expectations:** One employer’s written description of what a level means. It is evidence about that employer and not a market standard.
+- **Evidenced:** There is an artefact somebody could look at: a decision record, a stakeholder map, a prepared argument with its outcome.
+
+**Quick example.** Made-up example. Comparing work against published expectations, and comparing against understanding. Went down the list marking yes or no according to whether I could explain the expectation and would know how to do it.
+
+The reader demonstrates and guides the task before asking for “The expectations from the assigned job-family page, one level above your current work”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Compare your current work against one employer's published expectations for design leadership, and plan one concrete way to practise an expectation you cannot yet demonstrate.
 
 
-### Understand the idea · 1
+### Leadership here means influence over decisions, not managing people
 
 Section: learn. Stable action: learn-1.
 
 Leadership here means influence over decisions, not managing people.
 
 
-### Understand the idea · 2
+### One employer's published levels are evidence, not a market standard
 
 Section: learn. Stable action: learn-2.
 
 One employer's published levels are evidence, not a market standard.
 
 
-### Understand the idea · 3
+### Idea 3: Compare against stated expectations rather than a general sens…
 
 Section: learn. Stable action: learn-3.
 
 Compare against stated expectations rather than a general sense of seniority.
 
 
-### Understand the idea · 4
+### Practise the expectation you cannot demonstrate, on real work
 
 Section: learn. Stable action: learn-4.
 
 Practise the expectation you cannot demonstrate, on real work.
 
 
-### Understand the idea · 5
+### Distinguish what you have done from what you have read about
 
 Section: learn. Stable action: learn-5.
 
 Distinguish what you have done from what you have read about.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The comparison found four expectations she could evidence: influencing a decision with a prepared argument, mapping stakeholders by accountability, connecting design work to a stated business cost, and refusing a request with an alternative. Two she could not: developing another designer's work through critique, and setting direction across more than one project. The plan: run a structured critique for a peer's work monthly, using the m14 critique format, and write a direction note covering both her project and the provider's other service, to be discussed rather than filed. Both were marked as unpractised until done.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7423,6 +7917,40 @@ Open Your work and choose Ready for review. The last lesson of the module writes
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Influence without authority
+What I am trying to do: Compare your current work against one employer's published expectations for design leadership, and plan one concrete way to practise an expectation you cannot yet demonstrate.
+
+Key idea or terms:
+Design leadership: Influence over decisions without controlling anybody. It describes behaviour rather than a title, which is what makes it practisable now.
+Published expectations: One employer’s written description of what a level means. It is evidence about that employer and not a market standard.
+Evidenced: There is an artefact somebody could look at: a decision record, a stakeholder map, a prepared argument with its outcome.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Comparing work against published expectations, and comparing against understanding. Went down the list marking yes or no according to whether I could explain the expectation and would know how to do it.
+
+Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The expectations from the assigned job-family page, one level above your current work” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The expectations from the assigned job-family page, one level above your current work”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The expectations from the assigned job-family page, one level above your current work” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - For each expectation, name the file or document that demonstrates it.
@@ -7492,7 +8020,7 @@ Adequate evidence: A written note that these expectations are one employer's.
 Repair: Add the sentence recording that this is one published example rather than a market definition. Recheck: The limitation note.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The last lesson of the module writes the strategy note for your own project.
 
@@ -7530,58 +8058,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Constraints recorded honestly, including inconvenient ones
 - Risks with signals, and a list of what you need to learn
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product strategy connects a real problem, evidence, constraints and trade-offs to a choice about what to do next. In this lesson, your first small result is: Three choices stated as preferences between real alternatives, each capable of being disagreed with.
+
+**Words you will use**
+
+- **A preference between real alternatives:** This over that, where somebody could reasonably want the other. It is the only shape a choice can take.
+- **Disagreeable:** Somebody could argue for the opposite. If nobody could, you have written a value rather than a choice.
+- **Exclusion:** What will not happen this period. It is what makes the note usable, because it is what somebody can hold you to.
+
+**Quick example.** Made-up example. Writing the choices for a strategy note, and writing them as things to do. Improve the booking flow, support the provider’s time, and be honest about states. Three sensible priorities.
+
+The reader demonstrates and guides the task before asking for “Choice 1 · a preference between two real alternatives”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write a two-page strategy note for your project stating the choices, what they exclude, the constraints, the risks and what you would need to learn.
 
 
-### Understand the idea · 1
+### State the choices as preferences between real alternatives
 
 Section: learn. Stable action: learn-1.
 
 State the choices as preferences between real alternatives.
 
 
-### Understand the idea · 2
+### Name what the strategy excludes; that is what makes it usable
 
 Section: learn. Stable action: learn-2.
 
 Name what the strategy excludes; that is what makes it usable.
 
 
-### Understand the idea · 3
+### Record the constraints honestly, including the ones you dislike
 
 Section: learn. Stable action: learn-3.
 
 Record the constraints honestly, including the ones you dislike.
 
 
-### Understand the idea · 4
+### List the risks with what would tell you they are materialising
 
 Section: learn. Stable action: learn-4.
 
 List the risks with what would tell you they are materialising.
 
 
-### Understand the idea · 5
+### State what you would need to learn, including this course's gaps
 
 Section: learn. Stable action: learn-5.
 
 State what you would need to learn, including this course's gaps.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The two pages: three choices, each a preference — first-time confidence over power-user speed, the provider's time over feature breadth, and honest states over conversion tricks. Exclusions: no corporate booking work this year, no marketing surfaces, no features that increase the provider's daily message volume. Constraints: one developer part-time, no analytics, a payment provider that cannot be changed, and a provider who is unavailable between ten and four. Risks: late cancellations rising after the easier cancellation flow, with the waiting-list count as the signal. Learning needed: positioning, which this course has no verified source for; and how many bookings come from repeat customers, which nobody currently knows.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -8113,6 +8655,40 @@ Open Your work and choose Ready for review. This closes Module 17. Module 18 is 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: A strategy note for your project
+What I am trying to do: Write a two-page strategy note for your project stating the choices, what they exclude, the constraints, the risks and what you would need to learn.
+
+Key idea or terms:
+A preference between real alternatives: This over that, where somebody could reasonably want the other. It is the only shape a choice can take.
+Disagreeable: Somebody could argue for the opposite. If nobody could, you have written a value rather than a choice.
+Exclusion: What will not happen this period. It is what makes the note usable, because it is what somebody can hold you to.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing the choices for a strategy note, and writing them as things to do. Improve the booking flow, support the provider’s time, and be honest about states. Three sensible priorities.
+
+Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Choice 1 · a preference between two real alternatives” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Choice 1 · a preference between two real alternatives”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Choice 1 · a preference between two real alternatives” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Rewrite each choice until someone reasonable could argue for the other side.
@@ -8182,7 +8758,7 @@ Adequate evidence: Risks with observable signals, and a learning list including 
 Repair: For each risk write what you would see, and add what you know you do not know. Recheck: The risks and learning list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This closes Module 17. Module 18 is the independent project, where all of this is used on work that is entirely yours.
 

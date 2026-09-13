@@ -23,58 +23,72 @@ Starting route: Recommended route: Draw the interface-fidelity screen beside its
 - A list of what the detail hid or made quiet
 - One question you can no longer ask cheaply, and how you would answer it
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interface craft turns an idea into clear screens and controls that still work in difficult cases. In this lesson, your first small result is: The screen you chose, one sentence saying what this version is for, and what the component guidance specifies beyond appearance.
+
+**Words you will use**
+
+- **Fidelity:** How settled a drawing is. A wireframe leaves type, colour and spacing open; an interface-fidelity screen closes them.
+- **Wireframe:** The rough version that shows what is on the screen and in what order, without deciding how any of it looks.
+- **Type scale:** The short list of sizes you allow yourself, each with a job, from Module 3.
+
+**Quick example.** A supplied set of results from the same made-up booking screen. In greyscale the “Book a place” button and the “Add to shortlist” button become the same grey. From arm’s length the first three things seen are the photograph, the class name and the price. The availability line, which the paper test showed people hunting for, is not among them.
+
+The reader demonstrates and guides the task before asking for “The screen you picked, and the problem your paper test raised about it”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Take one tested wireframe to interface fidelity and write what the added detail decided, what it hid, and which question can no longer be asked cheaply.
 
 
-### Understand the idea · 1
+### Idea 1: Raising fidelity settles type, colour, spacing and imagery — a…
 
 Section: learn. Stable action: learn-1.
 
 Raising fidelity settles type, colour, spacing and imagery — and makes structural questions costly to reopen.
 
 
-### Understand the idea · 2
+### Feedback follows finish
 
 Section: learn. Stable action: learn-2.
 
 Feedback follows finish. A polished screen draws comments on colour; a rough one draws comments on order.
 
 
-### Understand the idea · 3
+### Idea 3: Decide what this version is for before you draw it: agreeing c…
 
 Section: learn. Stable action: learn-3.
 
 Decide what this version is for before you draw it: agreeing content order, or agreeing how it should be built.
 
 
-### Understand the idea · 4
+### Craft is not decoration
 
 Section: learn. Stable action: learn-4.
 
 Craft is not decoration. It is whether people can tell what is actionable, what changed and what state they are in.
 
 
-### Understand the idea · 5
+### Keep the low-fidelity version
 
 Section: learn. Stable action: learn-5.
 
 Keep the low-fidelity version. You will need it when a structural question comes back.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A booking screen taken from wireframe to interface settled six things: type scale, the price treatment, the button hierarchy, the spacing rhythm, the image size and the state colours. It also hid two: with real type sizes the description no longer fit above the fold, which the wireframe had implied it would, and the availability line — which the paper test had shown people looking for — became visually quiet enough that two reviewers did not mention it at all. Both were caught only because the wireframe was still on the table beside it.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -517,6 +531,40 @@ Open Your work and choose Ready for review. The next lesson audits this screen a
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: What fidelity adds, and what it hides
+What I am trying to do: Take one tested wireframe to interface fidelity and write what the added detail decided, what it hid, and which question can no longer be asked cheaply.
+
+Key idea or terms:
+Fidelity: How settled a drawing is. A wireframe leaves type, colour and spacing open; an interface-fidelity screen closes them.
+Wireframe: The rough version that shows what is on the screen and in what order, without deciding how any of it looks.
+Type scale: The short list of sizes you allow yourself, each with a job, from Module 3.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied set of results from the same made-up booking screen. In greyscale the “Book a place” button and the “Add to shortlist” button become the same grey. From arm’s length the first three things seen are the photograph, the class name and the price. The availability line, which the paper test showed people hunting for, is not among them.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The screen you picked, and the problem your paper test raised about it” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The screen you picked, and the problem your paper test raised about it”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The screen you picked, and the problem your paper test raised about it” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Replace every string with the real one from your m06 labelling table, then map each text element to a step in your scale.
@@ -586,7 +634,7 @@ Adequate evidence: One structural question that fidelity has made costly, with t
 Repair: Ask what you would now resist changing. That resistance names the question. Recheck: The question and its route.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson audits this screen and every other one into a component inventory, so keep them all together.
 
@@ -624,58 +672,72 @@ Starting route: Recommended route: Draw the grouped cut-outs, the comparison row
 - A list of merges that lost a distinction, with what now carries it
 - Job-based names for every component you keep
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interface craft turns an idea into clear screens and controls that still work in difficult cases. In this lesson, your first small result is: What one real component specification says beyond how the component looks.
+
+**Words you will use**
+
+- **Component:** A repeated pattern with a job. Not any box you happened to draw twice.
+- **Inventory:** A list of what already exists in your screens, made before you decide what should exist.
+- **Job:** What an element is for, said as an outcome: submits the booking, narrows the list, shows one class. Never what it looks like.
+
+**Quick example.** Made-up example. Grouping the cut-outs from nine screens by the job they do, and finding the groups had been made by eye instead. Fast piles: everything with a rounded rectangle in one, everything grey in another, everything small and pill-shaped in a third. Fifteen minutes, and the table looked organised.
+
+The reader demonstrates and guides the task before asking for “The component you read about, and what its entry specifies beyond appearance”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Audit your own screens into a component inventory, merge the near-duplicates and record which merges lost a real distinction.
 
 
-### Understand the idea · 1
+### A component is a repeated pattern with a job, not any box you drew twice
 
 Section: learn. Stable action: learn-1.
 
 A component is a repeated pattern with a job, not any box you drew twice.
 
 
-### Understand the idea · 2
+### Audit before you design: list what exists, then decide what should exist
 
 Section: learn. Stable action: learn-2.
 
 Audit before you design: list what exists, then decide what should exist.
 
 
-### Understand the idea · 3
+### Near-duplicates are the finding
 
 Section: learn. Stable action: learn-3.
 
 Near-duplicates are the finding. Two cards differing by 4px are one component and a mistake.
 
 
-### Understand the idea · 4
+### Some duplicates are real distinctions
 
 Section: learn. Stable action: learn-4.
 
 Some duplicates are real distinctions. Merging them silently removes meaning people were using.
 
 
-### Understand the idea · 5
+### Name components by job — action, status, item — not by appearance
 
 Section: learn. Stable action: learn-5.
 
 Name components by job — action, status, item — not by appearance.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - An audit of nine screens found five button variants: three were the same intent drawn on different days, one was a genuinely different job — a destructive cancel — and one was a link wearing a button's clothes. It found three card layouts that were one card with different content lengths. The merges reduced five buttons to three real jobs and three cards to one, and one merge was recorded as a loss: the cancelled-class card had used a lighter background, and after merging, cancelled status rested entirely on a text label, which was noted as a candidate problem for the next test.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1224,6 +1286,40 @@ Open Your work and choose Ready for review. The next lesson takes the action com
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: The component inventory hiding in your screens
+What I am trying to do: Audit your own screens into a component inventory, merge the near-duplicates and record which merges lost a real distinction.
+
+Key idea or terms:
+Component: A repeated pattern with a job. Not any box you happened to draw twice.
+Inventory: A list of what already exists in your screens, made before you decide what should exist.
+Job: What an element is for, said as an outcome: submits the booking, narrows the list, shows one class. Never what it looks like.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Grouping the cut-outs from nine screens by the job they do, and finding the groups had been made by eye instead. Fast piles: everything with a rounded rectangle in one, everything grey in another, everything small and pill-shaped in a third. Fifteen minutes, and the table looked organised.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The component you read about, and what its entry specifies beyond appearance” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The component you read about, and what its entry specifies beyond appearance”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The component you read about, and what its entry specifies beyond appearance” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Go through the error, empty and loading screens specifically; they usually hold the elements the audit missed.
@@ -1293,7 +1389,7 @@ Adequate evidence: A name per component describing purpose, with no colour, size
 Repair: Search your names for colour and shape words and rewrite each as what the element is for. Recheck: The renamed inventory.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes the action components out of this inventory and specifies them properly.
 
@@ -1331,58 +1427,72 @@ Starting route: Recommended route: Draw the three action levels at real size and
 - Measured target sizes and spacing for each level
 - Verb-first labels for every action on your screens
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interface craft turns an idea into clear screens and controls that still work in difficult cases. In this lesson, your first small result is: Every action across your screens with its current emphasis, and any screen carrying more than one main action.
+
+**Words you will use**
+
+- **Primary action:** The outcome the screen exists to produce. One per screen; two means the screen has two jobs.
+- **Target:** The area a finger can actually hit, which is usually larger than the part you drew.
+- **Containment:** Whether the action sits inside a shape: filled, outlined, or nothing at all. A cheap signal that survives greyscale.
+
+**Quick example.** Made-up example. Defining three levels of emphasis in five minutes, then finding out that colour had been doing all the work. Primary is the brand green, secondary is grey, quiet is a text link. It took five minutes and it looked like a specification.
+
+The reader demonstrates and guides the task before asking for “Each action, the screen it is on, and the emphasis it currently has”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Specify your action components at three levels of emphasis with measured target sizes and verb-first labels, and prove the hierarchy survives greyscale.
 
 
-### Understand the idea · 1
+### Idea 1: Three levels of emphasis is usually enough: primary, secondary…
 
 Section: learn. Stable action: learn-1.
 
 Three levels of emphasis is usually enough: primary, secondary, and quiet.
 
 
-### Understand the idea · 2
+### One primary action per screen
 
 Section: learn. Stable action: learn-2.
 
 One primary action per screen. Two primaries means the screen has two jobs.
 
 
-### Understand the idea · 3
+### Idea 3: Emphasis must survive greyscale: weight, size and containment,…
 
 Section: learn. Stable action: learn-3.
 
 Emphasis must survive greyscale: weight, size and containment, not colour alone.
 
 
-### Understand the idea · 4
+### Label with the verb of the outcome: “Book a place”, not “Submit” or “OK”
 
 Section: learn. Stable action: learn-4.
 
 Label with the verb of the outcome: “Book a place”, not “Submit” or “OK”.
 
 
-### Understand the idea · 5
+### Idea 5: Targets need physical size and spacing, especially near destru…
 
 Section: learn. Stable action: learn-5.
 
 Targets need physical size and spacing, especially near destructive actions.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A screen had two filled buttons of equal weight — “Book a place” and “Add to shortlist” — and a text link for “Cancel booking”. In greyscale the two filled buttons were indistinguishable, and in the m07 paper test one participant had tapped the shortlist button believing she had booked. The repair made booking the only filled action, shortlist an outlined secondary, and cancellation a quiet action moved away from both with its own confirmation. Targets were measured rather than eyeballed, and the destructive action was given clear separation from the primary one.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1958,6 +2068,40 @@ Open Your work and choose Ready for review. The next lesson takes one form to pr
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Actions: hierarchy, targets and labels
+What I am trying to do: Specify your action components at three levels of emphasis with measured target sizes and verb-first labels, and prove the hierarchy survives greyscale.
+
+Key idea or terms:
+Primary action: The outcome the screen exists to produce. One per screen; two means the screen has two jobs.
+Target: The area a finger can actually hit, which is usually larger than the part you drew.
+Containment: Whether the action sits inside a shape: filled, outlined, or nothing at all. A cheap signal that survives greyscale.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Defining three levels of emphasis in five minutes, then finding out that colour had been doing all the work. Primary is the brand green, secondary is grey, quiet is a text link. It took five minutes and it looked like a specification.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Each action, the screen it is on, and the emphasis it currently has” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Each action, the screen it is on, and the emphasis it currently has”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Each action, the screen it is on, and the emphasis it currently has” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Convert your buttons to greyscale. If you cannot rank them, change weight or containment until you can, then note which change did it.
@@ -2027,7 +2171,7 @@ Adequate evidence: Recorded measurements at phone size for each level, and incre
 Repair: Print the screen at real size and try each action with your thumb. Anything you hit twice or mis-hit needs size or space. Recheck: The measurements and the thumb-test note.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes one form to production quality, and it reuses these three levels for its buttons.
 
@@ -2065,58 +2209,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A keyboard pass recording what worked and what could not be verified
 - One prevented error: help moved before the field that caused it
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interface craft turns an idea into clear screens and controls that still work in difficult cases. In this lesson, your first small result is: The rules you will apply to every field, and the ones your form breaks today.
+
+**Words you will use**
+
+- **Persistent label:** The name of the field, sitting above it and staying visible after the person has typed.
+- **Help text:** A short line under the label saying what you accept, shown before anyone makes the mistake.
+- **Placeholder:** The grey sample text inside an empty box. It disappears the moment the person types, which is when they need it most.
+
+**Quick example.** A supplied booking form, made up for practice. Someone fills in six fields, mistypes the card expiry date, and presses Book. The page reloads with a red banner reading “There was a problem. Please try again.” and all six fields empty.
+
+The reader demonstrates and guides the task before asking for “The rules you will apply to every field on this form”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Take one form to production quality with persistent labels, inline help, field-level errors that preserve input, and a keyboard pass recorded honestly.
 
 
-### Understand the idea · 1
+### Labels stay visible
 
 Section: learn. Stable action: learn-1.
 
 Labels stay visible. A placeholder disappears exactly when the person needs it.
 
 
-### Understand the idea · 2
+### Put help before the field, not after the mistake it would have prevented
 
 Section: learn. Stable action: learn-2.
 
 Put help before the field, not after the mistake it would have prevented.
 
 
-### Understand the idea · 3
+### Errors belong at the field, name the fix, and never clear what was typed
 
 Section: learn. Stable action: learn-3.
 
 Errors belong at the field, name the fix, and never clear what was typed.
 
 
-### Understand the idea · 4
+### Group related fields and let one question occupy one line where it helps
 
 Section: learn. Stable action: learn-4.
 
 Group related fields and let one question occupy one line where it helps.
 
 
-### Understand the idea · 5
+### Idea 5: Accept what people type: spaces in card numbers, any phone for…
 
 Section: learn. Stable action: learn-5.
 
 Accept what people type: spaces in card numbers, any phone format, pasted text.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A booking form used placeholders as labels, validated the phone number on every keystroke, and cleared the form on a failed submission. Rebuilt: labels above every field and permanently visible; a line under the phone field saying which formats are accepted; validation on leaving the field; errors shown at the field with the fix stated; and everything preserved after a failure, with the page-level summary linking to the first problem. A keyboard pass found that the date control could be reached but not operated without a mouse, which was recorded as an implementation issue rather than claimed as fixed.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2565,6 +2723,40 @@ Open Your work and choose Ready for review. The next lesson takes the same produ
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Inputs and forms at production quality
+What I am trying to do: Take one form to production quality with persistent labels, inline help, field-level errors that preserve input, and a keyboard pass recorded honestly.
+
+Key idea or terms:
+Persistent label: The name of the field, sitting above it and staying visible after the person has typed.
+Help text: A short line under the label saying what you accept, shown before anyone makes the mistake.
+Placeholder: The grey sample text inside an empty box. It disappears the moment the person types, which is when they need it most.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied booking form, made up for practice. Someone fills in six fields, mistypes the card expiry date, and presses Book. The page reloads with a red banner reading “There was a problem. Please try again.” and all six fields empty.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The rules you will apply to every field on this form” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The rules you will apply to every field on this form”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The rules you will apply to every field on this form” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - List each field and write what the person must be able to see after typing. Any field relying on a placeholder needs a label.
@@ -2634,7 +2826,7 @@ Adequate evidence: Notes on tab order and focus visibility, with an explicit sta
 Repair: Tab through a built version, even a rough local HTML file. If nothing is built, record every keyboard claim as untested rather than assumed. Recheck: The keyboard notes.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes the same product’s navigation to two widths.
 
@@ -2672,58 +2864,72 @@ Starting route: Recommended route: Draw both navigation layouts and the visibili
 - A stated rule for what stays visible and what collapses
 - Back behaviour defined for a task step and for a detail view
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interface craft turns an idea into clear screens and controls that still work in difficult cases. In this lesson, your first small result is: Every destination listed, with the two or three people need most marked.
+
+**Words you will use**
+
+- **Destination:** A place a person arrives at and recognises. A menu is not a destination; it is a door.
+- **Global navigation:** The small set of destinations available from every screen in the product.
+- **Greyscale:** The same picture with the colour taken out. A phone can do it to a photograph in a few taps.
+
+**Quick example.** A made-up phone header for a class booking product. It holds a logo, a search icon and a menu icon. Behind the menu sit Find a class, My bookings, Change or cancel a booking, About us, Careers and Terms. Most people using this product are coming back to check a booking they already made.
+
+The reader demonstrates and guides the task before asking for “Every destination in your structure, with the two or three people need most marked”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Specify the navigation for your product at narrow and wide widths, showing where you are, what else exists and how to get back, without hiding anything people need.
 
 
-### Understand the idea · 1
+### Idea 1: Navigation answers three questions: where am I, what else is t…
 
 Section: learn. Stable action: learn-1.
 
 Navigation answers three questions: where am I, what else is there, how do I get back.
 
 
-### Understand the idea · 2
+### Current location needs a signal that is not colour alone
 
 Section: learn. Stable action: learn-2.
 
 Current location needs a signal that is not colour alone.
 
 
-### Understand the idea · 3
+### Idea 3: A menu behind an icon costs a tap and some discovery; measure…
 
 Section: learn. Stable action: learn-3.
 
 A menu behind an icon costs a tap and some discovery; measure that cost before paying it.
 
 
-### Understand the idea · 4
+### Narrow screens need priority, not concealment
 
 Section: learn. Stable action: learn-4.
 
 Narrow screens need priority, not concealment. Decide what stays visible.
 
 
-### Understand the idea · 5
+### Idea 5: Back must be predictable: within a task, back is one step, not…
 
 Section: learn. Stable action: learn-5.
 
 Back must be predictable: within a task, back is one step, not out of the task.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A phone header held a logo, a search icon and a menu icon; the only route to “Change or cancel a booking” was inside the menu, and in the m07 paper test two people said they would ring instead. The revision kept the logo small, put the current section name in the header as the location signal, promoted “My bookings” to a visible item, and left genuinely secondary destinations in the menu. On the wide layout the same items appeared as a row with the current one underlined and bolded, and the underline was checked in greyscale.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3161,6 +3367,40 @@ Open Your work and choose Ready for review. The next lesson takes the lists and 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Navigation components at two widths
+What I am trying to do: Specify the navigation for your product at narrow and wide widths, showing where you are, what else exists and how to get back, without hiding anything people need.
+
+Key idea or terms:
+Destination: A place a person arrives at and recognises. A menu is not a destination; it is a door.
+Global navigation: The small set of destinations available from every screen in the product.
+Greyscale: The same picture with the colour taken out. A phone can do it to a photograph in a few taps.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A made-up phone header for a class booking product. It holds a logo, a search icon and a menu icon. Behind the menu sit Find a class, My bookings, Change or cancel a booking, About us, Careers and Terms. Most people using this product are coming back to check a booking they already made.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every destination in your structure, with the two or three people need most marked” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every destination in your structure, with the two or three people need most marked”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Every destination in your structure, with the two or three people need most marked” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Take one screen and write the three answers beside it. Any blank answer is a missing component.
@@ -3230,7 +3470,7 @@ Adequate evidence: Two written behaviours, including what is preserved, and a no
 Repair: Walk your own flow: go into a detail view and come back. Write down everything you lost, then specify that it is preserved. Recheck: The two back behaviours.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes the lists and tables inside these screens down to phone width.
 
@@ -3268,58 +3508,72 @@ Starting route: Recommended route: Draw the list at both widths and the hard-cas
 - A table transformed to records at narrow width
 - Handling for the longest value, the missing value and the empty list
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interface craft turns an idea into clear screens and controls that still work in difficult cases. In this lesson, your first small result is: The two to four attributes your row carries, each with the reason it earned the space.
+
+**Words you will use**
+
+- **Row:** One line in a list standing for one thing: a class, an order, a person.
+- **Detail view:** The screen you reach by choosing a row. Everything you left out of the row lives there.
+- **Default sort:** The order the list is in before anybody changes it. Most people never change it, so it is the order nearly everyone sees.
+
+**Quick example.** A made-up class list at phone width. Three rows break. One class is called “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”. One has no price recorded, so the cell is blank. One has no places left, shown as “0”.
+
+The reader demonstrates and guides the task before asking for “Attribute 1 · what it is, and the evidence that people compare on it”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Design one list and one table for narrow and wide widths, choosing what each row must show, how it is sorted and what happens when the data is long, empty or unusually large.
 
 
-### Understand the idea · 1
+### Idea 1: A row shows only what people compare on; everything else belon…
 
 Section: learn. Stable action: learn-1.
 
 A row shows only what people compare on; everything else belongs in the detail view.
 
 
-### Understand the idea · 2
+### State the default sort and say why
 
 Section: learn. Stable action: learn-2.
 
 State the default sort and say why. Unsorted lists make people scan everything.
 
 
-### Understand the idea · 3
+### A table on a phone becomes a set of records, not a shrunken table
 
 Section: learn. Stable action: learn-3.
 
 A table on a phone becomes a set of records, not a shrunken table.
 
 
-### Understand the idea · 4
+### Design for the longest name, the largest number and the missing value
 
 Section: learn. Stable action: learn-4.
 
 Design for the longest name, the largest number and the missing value.
 
 
-### Understand the idea · 5
+### Idea 5: Alignment carries meaning: numbers right, text left, and units…
 
 Section: learn. Stable action: learn-5.
 
 Alignment carries meaning: numbers right, text left, and units near their figures.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A class list showed eight columns on desktop and scrolled sideways on a phone. Rebuilt: rows kept the four attributes the m05 sessions showed people comparing — day and time, price, place, remaining places — with the rest moved to the detail view. Default sort became soonest first, stated above the list. On a phone each row became a record with the class name as the heading. The longest real class name was used for layout, missing prices showed “price on request” rather than a blank, and a full class showed “Full — see other dates” instead of a zero.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3770,6 +4024,40 @@ Open Your work and choose Ready for review. The next lesson decides which interr
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Lists, tables and dense data on a small screen
+What I am trying to do: Design one list and one table for narrow and wide widths, choosing what each row must show, how it is sorted and what happens when the data is long, empty or unusually large.
+
+Key idea or terms:
+Row: One line in a list standing for one thing: a class, an order, a person.
+Detail view: The screen you reach by choosing a row. Everything you left out of the row lives there.
+Default sort: The order the list is in before anybody changes it. Most people never change it, so it is the order nearly everyone sees.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A made-up class list at phone width. Three rows break. One class is called “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”. One has no price recorded, so the cell is blank. One has no places left, shown as “0”.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Attribute 1 · what it is, and the evidence that people compare on it” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Attribute 1 · what it is, and the evidence that people compare on it”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Attribute 1 · what it is, and the evidence that people compare on it” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Re-read your m05 notes for the attributes participants named while choosing. Those are the row; the rest is the detail view.
@@ -3839,7 +4127,7 @@ Adequate evidence: Layouts using the longest real value and the largest real num
 Repair: Take your ten worst real rows and lay them out at phone width. Fix what breaks rather than choosing gentler examples. Recheck: The hard-case layouts.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson decides which interruptions in your product deserve a modal.
 
@@ -3877,58 +4165,72 @@ Starting route: Recommended route: Draw the two interruptions you keep and what 
 - One interruption removed, with what replaced it
 - A stated rule for when your product uses a modal
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interface craft turns an idea into clear screens and controls that still work in difficult cases. In this lesson, your first small result is: A list of every interruption in your flow, each with what it prevents or a plain note that it prevents nothing.
+
+**Words you will use**
+
+- **Interruption:** Anything that stops the person mid-task to ask or tell them something: a dialogue, a prompt, a banner, a confirmation.
+- **Modal:** A box that covers the screen and must be answered or closed before anything else can be done. It holds the keyboard as well as the eye.
+- **Undo:** The action happens, and a message offers to put it back for a stated time. It protects the person who has already made the mistake.
+
+**Quick example.** Made-up example. Deciding three interruptions in a class-booking product, and getting the easiest one wrong first. Three interruptions: a confirmation for cancelling a booking, a confirmation for removing a saved class, and a newsletter prompt over the payment step.
+
+The reader demonstrates and guides the task before asking for “Every point in your flow where the product interrupts”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Decide for three interruptions in your product whether a modal is justified, design the two that are, and record what the rejected one became instead.
 
 
-### Understand the idea · 1
+### Idea 1: A modal is justified when losing the person's work is worse th…
 
 Section: learn. Stable action: learn-1.
 
 A modal is justified when losing the person's work is worse than interrupting them.
 
 
-### Understand the idea · 2
+### Idea 2: Confirmation is not the default answer to a destructive action…
 
 Section: learn. Stable action: learn-2.
 
 Confirmation is not the default answer to a destructive action; undo often is.
 
 
-### Understand the idea · 3
+### Every modal needs an obvious way out that is not the primary action
 
 Section: learn. Stable action: learn-3.
 
 Every modal needs an obvious way out that is not the primary action.
 
 
-### Understand the idea · 4
+### Idea 4: Modals trap focus and hide context: never put reference inform…
 
 Section: learn. Stable action: learn-4.
 
 Modals trap focus and hide context: never put reference information in one.
 
 
-### Understand the idea · 5
+### Two stacked modals means the flow is wrong, not that you need a third
 
 Section: learn. Stable action: learn-5.
 
 Two stacked modals means the flow is wrong, not that you need a third.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three interruptions were reviewed. Cancelling a booking: kept as a confirmation, because the place is released immediately and cannot be recovered — the dialogue now states exactly what will be lost and offers “Keep booking” as the safe default. Removing a shortlist item: replaced with an undo message, since nothing is lost permanently. A newsletter prompt appearing over the payment step: removed entirely and moved to the confirmation screen, where the person has finished and can consider it — with the reason recorded, since someone will propose it again.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4507,6 +4809,40 @@ Open Your work and choose Ready for review. The next lesson designs the messages
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Interruptions: modals, sheets and when not to use one
+What I am trying to do: Decide for three interruptions in your product whether a modal is justified, design the two that are, and record what the rejected one became instead.
+
+Key idea or terms:
+Interruption: Anything that stops the person mid-task to ask or tell them something: a dialogue, a prompt, a banner, a confirmation.
+Modal: A box that covers the screen and must be answered or closed before anything else can be done. It holds the keyboard as well as the eye.
+Undo: The action happens, and a message offers to put it back for a stated time. It protects the person who has already made the mistake.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Deciding three interruptions in a class-booking product, and getting the easiest one wrong first. Three interruptions: a confirmation for cancelling a booking, a confirmation for removing a saved class, and a newsletter prompt over the payment step.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every point in your flow where the product interrupts” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every point in your flow where the product interrupts”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Every point in your flow where the product interrupts” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - For each dialogue, complete “without this, the person could lose …”. Anything you cannot complete should not interrupt.
@@ -4576,7 +4912,7 @@ Adequate evidence: One sentence stating when this product interrupts, kept with 
 Repair: Write the rule, then test it against the interruption you rejected. If the rule permits it, the rule is too weak. Recheck: The written rule.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson designs the messages this product uses to say what just happened.
 
@@ -4614,58 +4950,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Wording that carries meaning without colour
 - A list of which messages require an action and which do not
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interface craft turns an idea into clear screens and controls that still work in difficult cases. In this lesson, your first small result is: Every message you already have, sorted into the four types, with the consequential ones marked.
+
+**Words you will use**
+
+- **Toast:** A small message that appears in a corner and fades on its own. It reaches only someone who was looking at that corner at that moment.
+- **Persistent message:** One that stays until something clears it: the person acts, or the situation it describes ends.
+- **Duration:** How long a message stays on screen. It is a decision with a reason behind it, not a default left to whoever builds the screen.
+
+**Quick example.** Three supplied messages from a made-up booking product, all shown the same way: a small box in the bottom-left corner that fades after four seconds. A is “Draft saved.” B is “Your place is held for 10 minutes.” C is “Payment failed. No money has been taken.”
+
+The reader demonstrates and guides the task before asking for “Every message from your m07 exception table and state specifications, sorted into success, progress, warning and failure”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Design your product's system messages — success, progress, warning and failure — deciding for each where it appears, how long it stays and whether it needs an action.
 
 
-### Understand the idea · 1
+### Idea 1: Match the message to the consequence: quiet for routine, persi…
 
 Section: learn. Stable action: learn-1.
 
 Match the message to the consequence: quiet for routine, persistent for anything about money.
 
 
-### Understand the idea · 2
+### Put the message where the change happened, not in a corner far from it
 
 Section: learn. Stable action: learn-2.
 
 Put the message where the change happened, not in a corner far from it.
 
 
-### Understand the idea · 3
+### A message that vanishes is useless to anyone who looked away
 
 Section: learn. Stable action: learn-3.
 
 A message that vanishes is useless to anyone who looked away.
 
 
-### Understand the idea · 4
+### Never rely on colour alone: pair it with an icon shape and words
 
 Section: learn. Stable action: learn-4.
 
 Never rely on colour alone: pair it with an icon shape and words.
 
 
-### Understand the idea · 5
+### Say what happened, what it means, and what to do — in that order
 
 Section: learn. Stable action: learn-5.
 
 Say what happened, what it means, and what to do — in that order.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The product had one toast style for everything. Rebuilt into four: a quiet inline confirmation for a saved draft that fades; a persistent banner at the top of the task for “Your place is held for 10 minutes”, with the time remaining; a warning beside the affected field when a chosen date had just filled; and a persistent failure message at the payment step saying what happened, that nothing had been taken, and what to do next. Each pairs colour with an icon shape and words, and each was checked in greyscale.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5108,6 +5458,40 @@ Open Your work and choose Ready for review. The next lesson designs the states t
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Telling people what happened
+What I am trying to do: Design your product's system messages — success, progress, warning and failure — deciding for each where it appears, how long it stays and whether it needs an action.
+
+Key idea or terms:
+Toast: A small message that appears in a corner and fades on its own. It reaches only someone who was looking at that corner at that moment.
+Persistent message: One that stays until something clears it: the person acts, or the situation it describes ends.
+Duration: How long a message stays on screen. It is a decision with a reason behind it, not a default left to whoever builds the screen.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Three supplied messages from a made-up booking product, all shown the same way: a small box in the bottom-left corner that fades after four seconds. A is “Draft saved.” B is “Your place is held for 10 minutes.” C is “Payment failed. No money has been taken.”
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every message from your m07 exception table and state specifications, sorted into success, progress, warning and failure” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every message from your m07 exception table and state specifications, sorted into success, progress, warning and failure”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Every message from your m07 exception table and state specifications, sorted into success, progress, warning and failure” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the four rows out. Any row missing a duration will be decided by whoever builds it.
@@ -5177,7 +5561,7 @@ Adequate evidence: Each failure states an action the person can take now, or who
 Repair: For each failure write the sentence a person would say next: “so what do I do?”. Answer it in the message. Recheck: The failure messages.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson designs the states these messages appear in: empty, loading and error.
 
@@ -5215,58 +5599,72 @@ Starting route: Recommended route: Draw the three empty states, the loading trea
 - Error states that preserve work and offer a route
 - Throttled-connection observations with one change made
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interface craft turns an idea into clear screens and controls that still work in difficult cases. In this lesson, your first small result is: Every empty, loading and error state on your two screens, with the cause of each empty one named.
+
+**Words you will use**
+
+- **Empty state:** What a screen shows when there is nothing to show. It is the first thing a new person meets, and the only thing on the screen to learn from.
+- **Exhausted:** Empty because there genuinely is nothing left: the class is full, or every date has already passed.
+- **Filtered empty:** A list that is blank only because of a choice the person made, such as a price limit. Naming that choice is what turns the message into a way out.
+
+**Quick example.** Two supplied empty states for the same made-up bookings list. A is a grey illustration of an empty box with the words “Nothing here yet.” B is “Your bookings appear here once you book a class. Classes run on Saturdays and Wednesdays.” with an action reading “Find a class on Saturday”.
+
+The reader demonstrates and guides the task before asking for “Every empty, loading and error state across your two screens”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Design the empty, loading and error states of two screens so each teaches, reassures or recovers, and check them on a throttled connection.
 
 
-### Understand the idea · 1
+### Idea 1: An empty state is a teaching moment: say what appears here, wh…
 
 Section: learn. Stable action: learn-1.
 
 An empty state is a teaching moment: say what appears here, why, and the one action that starts it.
 
 
-### Understand the idea · 2
+### Idea 2: Distinguish empty because it is new from empty because a filte…
 
 Section: learn. Stable action: learn-2.
 
 Distinguish empty because it is new from empty because a filter excluded everything.
 
 
-### Understand the idea · 3
+### Idea 3: Show progress honestly: a slow thing needs a message, not a fa…
 
 Section: learn. Stable action: learn-3.
 
 Show progress honestly: a slow thing needs a message, not a faster spinner.
 
 
-### Understand the idea · 4
+### Preserve layout while loading so content does not jump when it arrives
 
 Section: learn. Stable action: learn-4.
 
 Preserve layout while loading so content does not jump when it arrives.
 
 
-### Understand the idea · 5
+### Idea 5: An error state keeps the person's work and offers a route, not…
 
 Section: learn. Stable action: learn-5.
 
 An error state keeps the person's work and offers a route, not an apology.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The bookings screen showed a blank panel to new people and the same panel when a filter matched nothing. Rebuilt into three: for a new person, “Your bookings appear here once you book a class. Find a class on Saturday” with the action beside it; for a filter with no matches, “No classes match Saturday morning under 500. Remove the price filter to see three more”; and for a full class, the alternative dates. Loading reserved the row heights so nothing jumped, and after three seconds the message changed to name what was being waited for.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5719,6 +6117,40 @@ Open Your work and choose Ready for review. The next lesson draws one chart from
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Empty, loading and error states with craft
+What I am trying to do: Design the empty, loading and error states of two screens so each teaches, reassures or recovers, and check them on a throttled connection.
+
+Key idea or terms:
+Empty state: What a screen shows when there is nothing to show. It is the first thing a new person meets, and the only thing on the screen to learn from.
+Exhausted: Empty because there genuinely is nothing left: the class is full, or every date has already passed.
+Filtered empty: A list that is blank only because of a choice the person made, such as a price limit. Naming that choice is what turns the message into a way out.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Two supplied empty states for the same made-up bookings list. A is a grey illustration of an empty box with the words “Nothing here yet.” B is “Your bookings appear here once you book a class. Classes run on Saturdays and Wednesdays.” with an action reading “Find a class on Saturday”.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every empty, loading and error state across your two screens” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every empty, loading and error state across your two screens”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Every empty, loading and error state across your two screens” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - List the ways your list can be empty and write three separate messages. If two read the same, one of them is wrong.
@@ -5788,7 +6220,7 @@ Adequate evidence: Recorded observations from a slow load with the cache disable
 Repair: Run the throttled load again and write the sequence with timings rather than an impression. Recheck: The throttling notes and the change.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson draws one chart from numbers you actually hold.
 
@@ -5826,58 +6258,72 @@ Starting route: Recommended route: Draw the chart and the counts printed beneath
 - Alternative text carrying the same information as the chart
 - The underlying numbers published beside it
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interface craft turns an idea into clear screens and controls that still work in difficult cases. In this lesson, your first small result is: The drawing rules you are working to, written as instructions to yourself.
+
+**Words you will use**
+
+- **Gridline:** A faint line across the chart that helps the eye reach a value. Few and light, or they compete with the data.
+- **Legend:** A key off to one side saying what each colour means. It makes the reader hold two things in mind at once.
+- **n:** How many people or things the chart is drawn from. A chart of eight answers is a picture of eight answers.
+
+**Quick example.** One made-up chart: of 22 people, 9 were unsure their payment had gone through and 13 were sure. It is two bars with the counts written on them.
+
+The reader demonstrates and guides the task before asking for “What the guidance says about axes and gridlines”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Draw one chart from data you actually hold, following the assigned conventions, and write the alternative text that carries the same information to someone who cannot see it.
 
 
-### Understand the idea · 1
+### Idea 1: Choose the chart from the comparison: bars compare amounts, li…
 
 Section: learn. Stable action: learn-1.
 
 Choose the chart from the comparison: bars compare amounts, lines show change over time.
 
 
-### Understand the idea · 2
+### Idea 2: Never break the numerical axis on a bar chart; the bar length…
 
 Section: learn. Stable action: learn-2.
 
 Never break the numerical axis on a bar chart; the bar length is the comparison.
 
 
-### Understand the idea · 3
+### Idea 3: Label directly on the chart where you can, instead of making p…
 
 Section: learn. Stable action: learn-3.
 
 Label directly on the chart where you can, instead of making people decode a legend.
 
 
-### Understand the idea · 4
+### Idea 4: Alternative text must carry the same information, not describe…
 
 Section: learn. Stable action: learn-4.
 
 Alternative text must carry the same information, not describe the picture.
 
 
-### Understand the idea · 5
+### State n on the chart
 
 Section: learn. Stable action: learn-5.
 
 State n on the chart. A chart of eight responses is a picture of eight responses.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Twenty-two survey responses became a bar chart of “was it clear your payment had gone through?”. The first draft had a truncated axis that made nine look nearly twice fifteen, a legend requiring decoding, and no n. Redrawn: full axis from zero, direct labels on each bar, light gridlines, n = 22 stated in the subtitle with the recruitment route named, and alternative text reading “Of 22 people recruited through two WhatsApp groups, 9 were unsure their payment had gone through, 13 were sure.” The underlying counts were published beneath it.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6341,6 +6787,40 @@ Open Your work and choose Ready for review. The next lesson names every colour, 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Charts that do not mislead
+What I am trying to do: Draw one chart from data you actually hold, following the assigned conventions, and write the alternative text that carries the same information to someone who cannot see it.
+
+Key idea or terms:
+Gridline: A faint line across the chart that helps the eye reach a value. Few and light, or they compete with the data.
+Legend: A key off to one side saying what each colour means. It makes the reader hold two things in mind at once.
+n: How many people or things the chart is drawn from. A chart of eight answers is a picture of eight answers.
+
+Supplied practice material (fictional or labelled practice, not my research):
+One made-up chart: of 22 people, 9 were unsure their payment had gone through and 13 were sure. It is two bars with the counts written on them.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What the guidance says about axes and gridlines” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What the guidance says about axes and gridlines”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What the guidance says about axes and gridlines” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the sentence you want a reader to take away, then choose the chart that makes exactly that comparison visible.
@@ -6410,7 +6890,7 @@ Adequate evidence: Text stating the comparison, the values that matter and the s
 Repair: Cover the chart and read only your alternative text. If you could not answer the question the chart exists to answer, rewrite it. Recheck: The alternative text and the published numbers.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson names every colour, size and space you use, and measures the ones that carry text.
 
@@ -6448,58 +6928,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - One screen rebuilt using only tokens
 - A list of exceptions found, each resolved deliberately
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interface craft turns an idea into clear screens and controls that still work in difficult cases. In this lesson, your first small result is: A count of every colour, type size, spacing value and radius already in use, with the near-duplicates marked.
+
+**Words you will use**
+
+- **Token:** A named decision you reuse: surface-raised, text-quiet, space-3. The name is the point; the value behind it can change.
+- **Radius:** How rounded a corner is. Two values are almost always enough for a whole product.
+- **Role name:** A name saying what a value is for, such as surface-raised or text-quiet, rather than what it looks like.
+
+**Quick example.** Four made-up names for one value: a mid grey used behind cards and behind the page header. The candidates are light-grey, grey-200, surface-raised and card-background.
+
+The reader demonstrates and guides the task before asking for “Every colour, type size, spacing value and radius you found, with how many of each kind”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Produce a token sheet for colour, type, space and radius with every value named by role, measured for contrast where it carries text, and applied to one screen without exception.
 
 
-### Understand the idea · 1
+### Idea 1: A token is a named decision: surface, text-primary, space-3 —…
 
 Section: learn. Stable action: learn-1.
 
 A token is a named decision: surface, text-primary, space-3 — not a hex code you remember.
 
 
-### Understand the idea · 2
+### Name by role, not by appearance
 
 Section: learn. Stable action: learn-2.
 
 Name by role, not by appearance. A token called light-grey cannot be redefined.
 
 
-### Understand the idea · 3
+### Idea 3: Keep the set small enough to hold in your head; every extra va…
 
 Section: learn. Stable action: learn-3.
 
 Keep the set small enough to hold in your head; every extra value is a future inconsistency.
 
 
-### Understand the idea · 4
+### Idea 4: Measure contrast for every text-on-surface pair you allow, and…
 
 Section: learn. Stable action: learn-4.
 
 Measure contrast for every text-on-surface pair you allow, and record the number.
 
 
-### Understand the idea · 5
+### A token sheet is only real if a screen uses it with no exceptions
 
 Section: learn. Stable action: learn-5.
 
 A token sheet is only real if a screen uses it with no exceptions.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The token sheet came to twenty-two values: five neutrals, three semantic colours, six type steps, six spacing values and two radii. Applying it to the booking screen surfaced three exceptions — a one-off border grey, a 10px gap and a heading half a step smaller than any token. The border grey became an existing neutral, the gap moved to the nearest spacing value, and the heading revealed a real missing role, so a step was added deliberately. Every text pair was measured; the caption on the tinted panel failed and was darkened, and the measured numbers were written on the sheet.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6942,6 +7436,40 @@ Open Your work and choose Ready for review. The next lesson assembles two whole 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: The token sheet
+What I am trying to do: Produce a token sheet for colour, type, space and radius with every value named by role, measured for contrast where it carries text, and applied to one screen without exception.
+
+Key idea or terms:
+Token: A named decision you reuse: surface-raised, text-quiet, space-3. The name is the point; the value behind it can change.
+Radius: How rounded a corner is. Two values are almost always enough for a whole product.
+Role name: A name saying what a value is for, such as surface-raised or text-quiet, rather than what it looks like.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Four made-up names for one value: a mid grey used behind cards and behind the page header. The candidates are light-grey, grey-200, surface-raised and card-background.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every colour, type size, spacing value and radius you found, with how many of each kind” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every colour, type size, spacing value and radius you found, with how many of each kind”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Every colour, type size, spacing value and radius you found, with how many of each kind” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Rename every appearance-based token, then put near-identical values side by side and merge them.
@@ -7011,7 +7539,7 @@ Adequate evidence: Each exception marked as a missing role or an accident, with 
 Repair: For each exception ask whether any other screen needs the same value. If not, it is an accident, not a role. Recheck: The exception resolutions.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson assembles two whole screens from your components and this sheet, then critiques them against your research.
 
@@ -7049,58 +7577,72 @@ Starting route: Recommended route: Draw the two assembled screens, including one
 - A finding-by-finding critique against your research
 - Preliminary check results and a written list of what stays untested
 
-### Start with a clear task
+### Start here: in everyday words
+
+Interface craft turns an idea into clear screens and controls that still work in difficult cases. In this lesson, your first small result is: Two complete screens built only from your components and tokens, with everything you had to invent listed.
+
+**Words you will use**
+
+- **Assembling:** Building a screen from parts you already have, rather than drawing it fresh. Anything you cannot find is a finding.
+- **Non-happy state:** A screen when things are not going smoothly: empty, loading, an error, or a class already full.
+- **Invention:** Anything you had to make up part way through building, because the set you were working from did not have it.
+
+**Quick example.** Made-up example. Three things invented while assembling two screens, and getting the first decision wrong. A status pill for a held place, a smaller price treatment, and a gap between a heading and a dense list that was on no sheet.
+
+The reader demonstrates and guides the task before asking for “The two screens you assembled, which one carries a non-happy state, and where the drawings live”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Assemble two complete screens from your components and tokens, run the preliminary checks, and critique the result against your own research evidence rather than taste.
 
 
-### Understand the idea · 1
+### Idea 1: Assemble from components; anything you invent during assembly…
 
 Section: learn. Stable action: learn-1.
 
 Assemble from components; anything you invent during assembly is a finding.
 
 
-### Understand the idea · 2
+### Idea 2: Check the screen against the research, finding by finding, not…
 
 Section: learn. Stable action: learn-2.
 
 Check the screen against the research, finding by finding, not against your taste.
 
 
-### Understand the idea · 3
+### Idea 3: Run the preliminary accessibility checks yourself and record w…
 
 Section: learn. Stable action: learn-3.
 
 Run the preliminary accessibility checks yourself and record what they cannot cover.
 
 
-### Understand the idea · 4
+### Idea 4: Critique by task impact: what would stop someone, and what mer…
 
 Section: learn. Stable action: learn-4.
 
 Critique by task impact: what would stop someone, and what merely bothers you.
 
 
-### Understand the idea · 5
+### Record what is still untested; a built screen is not a validated one
 
 Section: learn. Stable action: learn-5.
 
 Record what is still untested; a built screen is not a validated one.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Assembling two screens from the library required inventing three things: a status pill for a held place, a compact price treatment, and a spacing value between a heading and a dense list. The pill was a genuine missing component and was added; the price treatment was an accidental variation and was replaced with the existing one; the spacing became the nearest token. The finding-by-finding critique showed the screen no longer surfaced remaining places, which the m05 research had shown people comparing on, so it was restored. The preliminary checks found a heading level skipped and a caption below the contrast threshold; the keyboard check could not be completed because nothing was built, and that was recorded as untested rather than assumed.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7656,6 +8198,40 @@ Open Your work and choose Ready for review. Module 9 takes these screens into in
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Assemble, check and critique against evidence
+What I am trying to do: Assemble two complete screens from your components and tokens, run the preliminary checks, and critique the result against your own research evidence rather than taste.
+
+Key idea or terms:
+Assembling: Building a screen from parts you already have, rather than drawing it fresh. Anything you cannot find is a finding.
+Non-happy state: A screen when things are not going smoothly: empty, loading, an error, or a class already full.
+Invention: Anything you had to make up part way through building, because the set you were working from did not have it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Three things invented while assembling two screens, and getting the first decision wrong. A status pill for a held place, a smaller price treatment, and a gap between a heading and a dense list that was on no sheet.
+
+Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The two screens you assembled, which one carries a non-happy state, and where the drawings live” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The two screens you assembled, which one carries a non-happy state, and where the drawings live”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The two screens you assembled, which one carries a non-happy state, and where the drawings live” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Rebuild one screen strictly from the inventory, writing down each reach for something that is not in it.
@@ -7725,7 +8301,7 @@ Adequate evidence: Preliminary check results with specifics, plus a written stat
 Repair: List the preliminary checks and mark each run, failed or not possible. Add one sentence on what passing does not prove. Recheck: The check record.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. Module 9 takes these screens into interaction and accessibility, and your untested list is the first thing it picks up.
 

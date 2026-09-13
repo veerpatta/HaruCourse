@@ -23,58 +23,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - The project and artefact behind each claim
 - A list of work that supports none of them
 
-### Start with a clear task
+### Start here: in everyday words
+
+A portfolio story shows what you did, why you chose it, what evidence supports it and what remains uncertain. In this lesson, your first small result is: One sentence saying what a reviewer is deciding, and what would make them stop reading.
+
+**Words you will use**
+
+- **The reviewer’s question:** Whether you can be given real work. Everything in the portfolio either helps answer it or takes up room.
+- **The skim:** The first ninety seconds. They read properly only if the skim earns it, which decides what has to be visible without reading.
+- **A claim:** Something about how you work that a reviewer could check against an artefact. Not a quality you have.
+
+**Quick example.** Made-up example. Choosing portfolio claims, and choosing qualities. User-centred, detail-oriented, collaborative. Three claims, and three sentences anybody could write about themselves.
+
+The reader demonstrates and guides the task before asking for “In one sentence, what a reviewer is deciding about you”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Establish what a reviewer is trying to find out, and write the three claims your portfolio has to support.
 
 
-### Understand the idea · 1
+### A reviewer is deciding whether you can be given real work
 
 Section: learn. Stable action: learn-1.
 
 A reviewer is deciding whether you can be given real work.
 
 
-### Understand the idea · 2
+### They skim first and read only if the skim earns it
 
 Section: learn. Stable action: learn-2.
 
 They skim first and read only if the skim earns it.
 
 
-### Understand the idea · 3
+### Decide the three claims your work supports before writing anything
 
 Section: learn. Stable action: learn-3.
 
 Decide the three claims your work supports before writing anything.
 
 
-### Understand the idea · 4
+### Every claim will be checked against an artefact
 
 Section: learn. Stable action: learn-4.
 
 Every claim will be checked against an artefact.
 
 
-### Understand the idea · 5
+### Beautiful screens without reasoning read as decoration
 
 Section: learn. Stable action: learn-5.
 
 Beautiful screens without reasoning read as decoration.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three claims chosen: I turn research into a decision that can be traced; I test and repair rather than defending the first version; I state what my work does not establish. Each was written with the project that best supports it and the specific artefact behind it — the synthesis and framing page for the first, the repair-and-re-test record for the second, and the limitations page for the third. A fourth candidate claim, about building interfaces from a system, was dropped for now because the evidence was thinner and three is what a skim can hold.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -619,6 +633,40 @@ Open Your work and choose Ready for review. The next lesson audits what you actu
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: What a portfolio has to do in ninety seconds
+What I am trying to do: Establish what a reviewer is trying to find out, and write the three claims your portfolio has to support.
+
+Key idea or terms:
+The reviewer’s question: Whether you can be given real work. Everything in the portfolio either helps answer it or takes up room.
+The skim: The first ninety seconds. They read properly only if the skim earns it, which decides what has to be visible without reading.
+A claim: Something about how you work that a reviewer could check against an artefact. Not a quality you have.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Choosing portfolio claims, and choosing qualities. User-centred, detail-oriented, collaborative. Three claims, and three sentences anybody could write about themselves.
+
+Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “In one sentence, what a reviewer is deciding about you” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “In one sentence, what a reviewer is deciding about you”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “In one sentence, what a reviewer is deciding about you” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write what a person hiring would need to believe to take the risk.
@@ -688,7 +736,7 @@ Adequate evidence: A list of work supporting none of the claims.
 Repair: Test each piece of work against the three claims and set aside what fails. Recheck: The exclusion list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson audits what you actually kept against these claims.
 
@@ -726,58 +774,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A list of closable gaps with dates
 - A list of permanent gaps to be stated as limits
 
-### Start with a clear task
+### Start here: in everyday words
+
+A portfolio story shows what you did, why you chose it, what evidence supports it and what remains uncertain. In this lesson, your first small result is: Everything that exists across the three projects, listed from the folders rather than from memory.
+
+**Words you will use**
+
+- **From the folders:** Opening each one and writing what is in it. Memory produces a list of what you meant to keep.
+- **Artefact:** A file that exists: a session record, a tally sheet, a version of a build. Not a stage of the process you went through.
+- **Thin:** It exists and it is weak: written late, undated, reconstructed, or covering less than it appears to. It is usable with a sentence attached.
+
+**Quick example.** Made-up example. Auditing a first project’s records, and auditing them from memory. That the first project had a full set: research notes, a synthesis, a flow, screens and a test record. It felt like a complete project.
+
+The reader demonstrates and guides the task before asking for “Everything that exists across the three projects, listed from the folders”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Audit all three project records against the three claims, and record precisely which evidence exists, which is thin and which is missing.
 
 
-### Understand the idea · 1
+### Audit the records, not your memory of the projects
 
 Section: learn. Stable action: learn-1.
 
 Audit the records, not your memory of the projects.
 
 
-### Understand the idea · 2
+### Mark each piece of evidence strong, thin or missing
 
 Section: learn. Stable action: learn-2.
 
 Mark each piece of evidence strong, thin or missing.
 
 
-### Understand the idea · 3
+### Missing evidence is a finding, not a reason to embellish
 
 Section: learn. Stable action: learn-3.
 
 Missing evidence is a finding, not a reason to embellish.
 
 
-### Understand the idea · 4
+### Some gaps can still be closed; identify those first
 
 Section: learn. Stable action: learn-4.
 
 Some gaps can still be closed; identify those first.
 
 
-### Understand the idea · 5
+### Never reconstruct an artefact and present it as contemporaneous
 
 Section: learn. Stable action: learn-5.
 
 Never reconstruct an artefact and present it as contemporaneous.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The audit covered three projects and produced a table of twenty-six artefacts. Strong: two synthesis pages, one repair-and-re-test record, one limitations page, one handover package. Thin: the first project's session notes, which were written two days later and say so; the second project's flow, which is undated. Missing: any accessibility evidence from projects one and two, and any before-measurement from project two. Two gaps were closable — a keyboard pass on the second project's prototype, run today and labelled with today's date, and a short follow-up with the shop owner. The rest were recorded as permanent limits.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1287,6 +1349,40 @@ Open Your work and choose Ready for review. The next lesson gives each project a
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Auditing what you actually kept
+What I am trying to do: Audit all three project records against the three claims, and record precisely which evidence exists, which is thin and which is missing.
+
+Key idea or terms:
+From the folders: Opening each one and writing what is in it. Memory produces a list of what you meant to keep.
+Artefact: A file that exists: a session record, a tally sheet, a version of a build. Not a stage of the process you went through.
+Thin: It exists and it is weak: written late, undated, reconstructed, or covering less than it appears to. It is usable with a sentence attached.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Auditing a first project’s records, and auditing them from memory. That the first project had a full set: research notes, a synthesis, a flow, screens and a test record. It felt like a complete project.
+
+Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Everything that exists across the three projects, listed from the folders” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Everything that exists across the three projects, listed from the folders”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Everything that exists across the three projects, listed from the folders” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Open every folder and list its contents item by item.
@@ -1356,7 +1452,7 @@ Adequate evidence: Two lists, with dates planned for the closable ones.
 Repair: Split the gaps by whether you can honestly close them this week. Recheck: The gap lists.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson gives each project a job the others do not do.
 
@@ -1394,58 +1490,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - An order, with the strongest first
 - A planned length for each, not necessarily equal
 
-### Start with a clear task
+### Start here: in everyday words
+
+A portfolio story shows what you did, why you chose it, what evidence supports it and what remains uncertain. In this lesson, your first small result is: Each project’s strongest evidence named from the audit, and a job assigned that no other case study does.
+
+**Words you will use**
+
+- **A job:** The one thing this case study is for. Matched to the project’s strongest evidence rather than to what the project was about.
+- **No other one does it:** The test. Three case studies covering the same ground teach a reader one fact about you three times.
+- **A promise:** What this case study will show, in one sentence. A reader can decide afterwards whether it delivered.
+
+**Quick example.** Made-up example. Choosing which projects become case studies, and choosing the ones I am proudest of. The three projects with the best-looking outcomes: the repair-shop page, a booking flow redesign, and a small tool I built for myself.
+
+The reader demonstrates and guides the task before asking for “For each project: its strongest evidence, from the audit”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Assign each of the three projects a single job in the portfolio, and write the one-sentence promise each case study makes.
 
 
-### Understand the idea · 1
+### Give each case study one job, matched to its strongest evidence
 
 Section: learn. Stable action: learn-1.
 
 Give each case study one job, matched to its strongest evidence.
 
 
-### Understand the idea · 2
+### Write the promise as one sentence a reader could check
 
 Section: learn. Stable action: learn-2.
 
 Write the promise as one sentence a reader could check.
 
 
-### Understand the idea · 3
+### Order them so the strongest is first
 
 Section: learn. Stable action: learn-3.
 
 Order them so the strongest is first.
 
 
-### Understand the idea · 4
+### Cover different skills across the three, not the same one three times
 
 Section: learn. Stable action: learn-4.
 
 Cover different skills across the three, not the same one three times.
 
 
-### Understand the idea · 5
+### Decide the length each deserves; they need not be equal
 
 Section: learn. Stable action: learn-5.
 
 Decide the length each deserves; they need not be equal.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Project three took the research-to-decision job because its synthesis and framing were strongest and it had the only measurement. Project two took the iteration job, built entirely around a repair that failed on the first attempt and worked on the second. Project one took the craft-and-constraint job, kept short because its records were thin, focused on the interface work and the accessibility repair, and explicit that its research was a single conversation. Order: three, two, one. Lengths planned at roughly 900, 700 and 400 words.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1955,6 +2065,40 @@ Open Your work and choose Ready for review. The next lesson writes the first cas
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Deciding what each case study is for
+What I am trying to do: Assign each of the three projects a single job in the portfolio, and write the one-sentence promise each case study makes.
+
+Key idea or terms:
+A job: The one thing this case study is for. Matched to the project’s strongest evidence rather than to what the project was about.
+No other one does it: The test. Three case studies covering the same ground teach a reader one fact about you three times.
+A promise: What this case study will show, in one sentence. A reader can decide afterwards whether it delivered.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Choosing which projects become case studies, and choosing the ones I am proudest of. The three projects with the best-looking outcomes: the repair-shop page, a booking flow redesign, and a small tool I built for myself.
+
+Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “For each project: its strongest evidence, from the audit” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “For each project: its strongest evidence, from the audit”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “For each project: its strongest evidence, from the audit” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Compare the three jobs and reassign until none repeats another.
@@ -2024,7 +2168,7 @@ Adequate evidence: Planned lengths proportional to what each project can show.
 Repair: Cut the length of any case study whose record is thin. Recheck: The length plan.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes the first case study against its promise.
 
@@ -2062,58 +2206,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - One decision explained in depth
 - A claim-to-artefact trace for the whole piece
 
-### Start with a clear task
+### Start here: in everyday words
+
+A portfolio story shows what you did, why you chose it, what evidence supports it and what remains uncertain. In this lesson, your first small result is: The problem in the person’s words with a count, and the outcome, both in the opening.
+
+**Words you will use**
+
+- **Leading with the problem and outcome:** Both in the first two paragraphs. A reader skimming decides there whether to read the rest.
+- **Chronology:** Telling it in the order you did it. It is the form most junior portfolios take and the one reviewers skip, because the first four paragraphs are setup.
+- **Counts in the text:** Three of five, not most participants. The rule from Module 15, applied where a reviewer will check it.
+
+**Quick example.** Made-up example. Opening a case study, and opening it with the background. Two paragraphs on the repair trade, how independent shops work, and why the sector is under pressure. Then the project.
+
+The reader demonstrates and guides the task before asking for “The problem in the person’s words, with a count if you have one”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write the first case study to a fixed structure — problem, evidence, decision, iteration, limits — with every claim traced to an artefact.
 
 
-### Understand the idea · 1
+### Five sections: problem, evidence, decision, iteration, limits
 
 Section: learn. Stable action: learn-1.
 
 Five sections: problem, evidence, decision, iteration, limits.
 
 
-### Understand the idea · 2
+### Lead with the outcome and the problem, not with the process
 
 Section: learn. Stable action: learn-2.
 
 Lead with the outcome and the problem, not with the process.
 
 
-### Understand the idea · 3
+### Every claim names its artefact
 
 Section: learn. Stable action: learn-3.
 
 Every claim names its artefact.
 
 
-### Understand the idea · 4
+### Show one decision in depth rather than every decision briefly
 
 Section: learn. Stable action: learn-4.
 
 Show one decision in depth rather than every decision briefly.
 
 
-### Understand the idea · 5
+### The limits section is not optional
 
 Section: learn. Stable action: learn-5.
 
 The limits section is not optional.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The first case study runs: problem, in the shop owner's words with the count of interrupted calls; evidence, five participants, what was found, what contradicted, and the exclusions; decision, one framed problem and the not-building list, with the appetite; iteration, the wording repair that failed for one of two re-testers and what that meant; limits, the study and design limits page in short form. Nineteen claims, each with a named artefact. One claim about the owner's time saved was cut because nothing measured it.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2633,6 +2791,40 @@ Open Your work and choose Ready for review. The next lesson states what you actu
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: The case study skeleton
+What I am trying to do: Write the first case study to a fixed structure — problem, evidence, decision, iteration, limits — with every claim traced to an artefact.
+
+Key idea or terms:
+Leading with the problem and outcome: Both in the first two paragraphs. A reader skimming decides there whether to read the rest.
+Chronology: Telling it in the order you did it. It is the form most junior portfolios take and the one reviewers skip, because the first four paragraphs are setup.
+Counts in the text: Three of five, not most participants. The rule from Module 15, applied where a reviewer will check it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Opening a case study, and opening it with the background. Two paragraphs on the repair trade, how independent shops work, and why the sector is under pressure. Then the project.
+
+Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The problem in the person’s words, with a count if you have one” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The problem in the person’s words, with a count if you have one”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The problem in the person’s words, with a count if you have one” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Restructure the draft into the five sections.
@@ -2702,7 +2894,7 @@ Adequate evidence: A claim list with artefacts named.
 Repair: List the assertions and attach, weaken or cut each one. Recheck: The claim trace.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson states what you actually did, and what other people did.
 
@@ -2740,58 +2932,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Contributors credited with permission
 - A draft checked for false plurals
 
-### Start with a clear task
+### Start here: in everyday words
+
+A portfolio story shows what you did, why you chose it, what evidence supports it and what remains uncertain. In this lesson, your first small result is: Each project labelled paid, employment, course or self-directed, with the label near the top.
+
+**Words you will use**
+
+- **Self-directed:** Your own project, unpaid, with real people. It is not weaker than paid work; misrepresenting it is what costs you.
+- **Near the top:** Where a reader meets it before forming an impression. Found halfway down, it reads as a thing that was being avoided.
+- **Arranging access:** A real contribution. Somebody who introduced you to two participants did something the project could not have happened without.
+
+**Quick example.** Made-up example. Crediting somebody who helped, and crediting them without asking. That a developer friend built the working version, with his name, because leaving him out would have been the dishonest thing to do.
+
+The reader demonstrates and guides the task before asking for “For each project: paid, employment, course, or self-directed”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write an accurate role statement for each project, distinguishing self-directed practice from paid or team work, and name every person who contributed.
 
 
-### Understand the idea · 1
+### Say plainly whether the work was paid, course or self-directed
 
 Section: learn. Stable action: learn-1.
 
 Say plainly whether the work was paid, course or self-directed.
 
 
-### Understand the idea · 2
+### Name what you did and what others did
 
 Section: learn. Stable action: learn-2.
 
 Name what you did and what others did.
 
 
-### Understand the idea · 3
+### Credit participants, reviewers and anyone who built something
 
 Section: learn. Stable action: learn-3.
 
 Credit participants, reviewers and anyone who built something.
 
 
-### Understand the idea · 4
+### “We” without a team is a lie of grammar
 
 Section: learn. Stable action: learn-4.
 
 “We” without a team is a lie of grammar.
 
 
-### Understand the idea · 5
+### Self-directed work is not weaker; misrepresenting it is
 
 Section: learn. Stable action: learn-5.
 
 Self-directed work is not weaker; misrepresenting it is.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Project three: self-directed practice, unpaid, conducted with the owner's agreement. I did the research, synthesis, design, build and testing. The owner arranged access to two customers and updated the page during the trial. A friend who writes software reviewed the HTML and corrected a date-handling bug — named with their permission. Two reviewers critiqued the work; one comment changed the wording. First person singular throughout, checked by searching the draft for “we”, which appeared four times and was wrong each time.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3318,6 +3524,40 @@ Open Your work and choose Ready for review. The next lesson prepares the researc
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Stating your role without inflating it
+What I am trying to do: Write an accurate role statement for each project, distinguishing self-directed practice from paid or team work, and name every person who contributed.
+
+Key idea or terms:
+Self-directed: Your own project, unpaid, with real people. It is not weaker than paid work; misrepresenting it is what costs you.
+Near the top: Where a reader meets it before forming an impression. Found halfway down, it reads as a thing that was being avoided.
+Arranging access: A real contribution. Somebody who introduced you to two participants did something the project could not have happened without.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Crediting somebody who helped, and crediting them without asking. That a developer friend built the working version, with his name, because leaving him out would have been the dishonest thing to do.
+
+Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “For each project: paid, employment, course, or self-directed” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “For each project: paid, employment, course, or self-directed”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “For each project: paid, employment, course, or self-directed” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Add the label to the opening of each case study.
@@ -3387,7 +3627,7 @@ Adequate evidence: A search showing “we” only where a team existed.
 Repair: Search each draft and correct every unsupported plural. Recheck: The drafts.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson prepares the research material for a public page.
 
@@ -3425,58 +3665,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Recreated or blurred images, labelled
 - A described-not-shown decision where consent falls short
 
-### Start with a clear task
+### Start here: in everyday words
+
+A portfolio story shows what you did, why you chose it, what evidence supports it and what remains uncertain. In this lesson, your first small result is: What you actually told participants, copied from the script, with which projects it covers for publication.
+
+**Words you will use**
+
+- **Publication:** A portfolio is publication. Consent taken for research does not automatically cover showing the material to the world.
+- **Copied from the script:** The exact wording rather than your memory of it. A script that stopped at the project is a different promise from one mentioning a portfolio.
+- **Identifying detail:** A street name, an unusual job, a phone model, a distinctive turn of phrase. It identifies without a name being present.
+
+**Quick example.** Made-up example. Checking what participants agreed to, and going by what I remember saying. Telling everybody that the notes were for a project and that nothing would identify them. That is roughly what I said, and it is what I believed I had agreed with them.
+
+The reader demonstrates and guides the task before asking for “What you actually told each set of participants, copied from the script”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Prepare the research material for public display: anonymised, consented for this use, and still specific enough to be evidence.
 
 
-### Understand the idea · 1
+### Check what your consent actually permitted; publication is separate
 
 Section: learn. Stable action: learn-1.
 
 Check what your consent actually permitted; publication is separate.
 
 
-### Understand the idea · 2
+### Anonymise by role, and remove identifying detail from quotations
 
 Section: learn. Stable action: learn-2.
 
 Anonymise by role, and remove identifying detail from quotations.
 
 
-### Understand the idea · 3
+### Blur or recreate anything that shows a real workplace or person
 
 Section: learn. Stable action: learn-3.
 
 Blur or recreate anything that shows a real workplace or person.
 
 
-### Understand the idea · 4
+### Anonymised does not mean vague; keep counts and specifics
 
 Section: learn. Stable action: learn-4.
 
 Anonymised does not mean vague; keep counts and specifics.
 
 
-### Understand the idea · 5
+### If consent does not cover it, describe rather than show
 
 Section: learn. Stable action: learn-5.
 
 If consent does not cover it, describe rather than show.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The consent script said notes would be used for a personal learning project and could be shown in a portfolio, which covered publication for two projects but not the first, where the wording stopped at the project. For the first project the research is described rather than shown. Participants appear as owner, customer A, B and C. Two quotations were trimmed to remove a street name and a phone model that identified an individual. The status page screenshot was recreated with an invented job number and the label “recreated with synthetic data; timings and job number are invented, layout unchanged”.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3997,6 +4251,40 @@ Open Your work and choose Ready for review. The next lesson decides which images
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Showing research without exposing people
+What I am trying to do: Prepare the research material for public display: anonymised, consented for this use, and still specific enough to be evidence.
+
+Key idea or terms:
+Publication: A portfolio is publication. Consent taken for research does not automatically cover showing the material to the world.
+Copied from the script: The exact wording rather than your memory of it. A script that stopped at the project is a different promise from one mentioning a portfolio.
+Identifying detail: A street name, an unusual job, a phone model, a distinctive turn of phrase. It identifies without a name being present.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Checking what participants agreed to, and going by what I remember saying. Telling everybody that the notes were for a project and that nothing would identify them. That is roughly what I said, and it is what I believed I had agreed with them.
+
+Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What you actually told each set of participants, copied from the script” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What you actually told each set of participants, copied from the script”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What you actually told each set of participants, copied from the script” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Read the consent wording for each project and record what it covers.
@@ -4066,7 +4354,7 @@ Adequate evidence: A description standing in for unpublishable evidence.
 Repair: Write a sentence describing the evidence and why it is not shown. Recheck: The description.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson decides which images earn their place.
 
@@ -4104,58 +4392,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Rough work included alongside finished work
 - Alternative text for every image
 
-### Start with a clear task
+### Start here: in everyday words
+
+A portfolio story shows what you did, why you chose it, what evidence supports it and what remains uncertain. In this lesson, your first small result is: Candidate images listed with the argument each makes, and anything unarguable cut.
+
+**Words you will use**
+
+- **An image that argues:** One that supports a claim: a before-and-after pair, a flow with its failure branches, a table that shows what was considered.
+- **Decoration:** An image whose argument you cannot state. It makes the case study longer and the claims no stronger.
+- **Before-and-after pair:** The strongest form available, because it shows a change and invites the question of whether it worked, which the caption then answers.
+
+**Quick example.** Made-up example. Choosing images for a case study, and choosing the finished ones. Twelve screens, all final, all neatly laid out on a grid. It looked like a professional portfolio page.
+
+The reader demonstrates and guides the task before asking for “Candidate images, and the argument each one makes”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Choose and caption the images for all three case studies so each one carries an argument rather than decorating the page.
 
 
-### Understand the idea · 1
+### Every image needs a reason to be there and a caption that says it
 
 Section: learn. Stable action: learn-1.
 
 Every image needs a reason to be there and a caption that says it.
 
 
-### Understand the idea · 2
+### Before-and-after pairs are the strongest form; use them
 
 Section: learn. Stable action: learn-2.
 
 Before-and-after pairs are the strongest form; use them.
 
 
-### Understand the idea · 3
+### Show rough work; polish everywhere reads as a rebuild
 
 Section: learn. Stable action: learn-3.
 
 Show rough work; polish everywhere reads as a rebuild.
 
 
-### Understand the idea · 4
+### A screenshot proves a screen existed, not that it worked
 
 Section: learn. Stable action: learn-4.
 
 A screenshot proves a screen existed, not that it worked.
 
 
-### Understand the idea · 5
+### Give every image alternative text that carries the same information
 
 Section: learn. Stable action: learn-5.
 
 Give every image alternative text that carries the same information.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Project three keeps six images: the paper flow with the failure branches; a photograph of the synthesis cards, recreated because the originals had a participant's name; the exception table; the status page before and after the wording repair, captioned with the re-test result including the person who still read it as a promise; and the handover card. Twelve other images were cut, including four screens that showed nothing the flow did not. Every caption states an argument, and every image has alternative text written to carry the same information.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4682,6 +4984,40 @@ Open Your work and choose Ready for review. The next lesson writes the outcome s
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Showing the work, and what an image cannot prove
+What I am trying to do: Choose and caption the images for all three case studies so each one carries an argument rather than decorating the page.
+
+Key idea or terms:
+An image that argues: One that supports a claim: a before-and-after pair, a flow with its failure branches, a table that shows what was considered.
+Decoration: An image whose argument you cannot state. It makes the case study longer and the claims no stronger.
+Before-and-after pair: The strongest form available, because it shows a change and invites the question of whether it worked, which the caption then answers.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Choosing images for a case study, and choosing the finished ones. Twelve screens, all final, all neatly laid out on a grid. It looked like a professional portfolio page.
+
+Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Candidate images, and the argument each one makes” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Candidate images, and the argument each one makes”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Candidate images, and the argument each one makes” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the argument for each image and remove the ones that have none.
@@ -4751,7 +5087,7 @@ Adequate evidence: Alternative text per image, tested by reading without it.
 Repair: Rewrite the alternative text so the argument survives without the image. Recheck: The alternative text.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes the outcome sections, including the ones with no outcome.
 
@@ -4789,58 +5125,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A plain sentence where nothing was measured
 - No percentages derived from small counts
 
-### Start with a clear task
+### Start here: in everyday words
+
+A portfolio story shows what you did, why you chose it, what evidence supports it and what remains uncertain. In this lesson, your first small result is: Every measurement collected with its period and conditions, and the projects with none identified.
+
+**Words you will use**
+
+- **A measurement:** Something counted, with a period. A tally, a count of sessions, a before and after.
+- **No measurement:** A common and honest state for a small project. It is one sentence rather than a hole to fill.
+- **Counts with periods:** Eleven over five working days. The rule from Module 15, applied where a reviewer will test it.
+
+**Quick example.** Made-up example. Listing what was measured across three projects, and listing what I know changed. Calls fell at the repair shop, the booking flow felt faster, and people understood the second version better. Three outcomes, from three projects.
+
+The reader demonstrates and guides the task before asking for “Every measurement from the three projects, with its period and conditions”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write an honest outcome section for each case study, using counts where you have them and saying plainly where you have none.
 
 
-### Understand the idea · 1
+### Report what you measured, in counts, with the period
 
 Section: learn. Stable action: learn-1.
 
 Report what you measured, in counts, with the period.
 
 
-### Understand the idea · 2
+### Where nothing was measured, say so in one plain sentence
 
 Section: learn. Stable action: learn-2.
 
 Where nothing was measured, say so in one plain sentence.
 
 
-### Understand the idea · 3
+### Do not convert a small count into a percentage
 
 Section: learn. Stable action: learn-3.
 
 Do not convert a small count into a percentage.
 
 
-### Understand the idea · 4
+### Process outcomes are legitimate: a decision changed, a repair worked
 
 Section: learn. Stable action: learn-4.
 
 Process outcomes are legitimate: a decision changed, a repair worked.
 
 
-### Understand the idea · 5
+### Never claim business impact you did not observe
 
 Section: learn. Stable action: learn-5.
 
 Never claim business impact you did not observe.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three outcome sections. Project three: calls about progress fell from eleven over five working days to four over the following five, one of which was a public holiday; the owner continued using the page for a month. Project two: not deployed; the outcome is the repair loop — two of three testers failed the task before the change, one of three after, on the same task with different people. Project one: no measurement of any kind, stated in one sentence, with the note that the accessibility repair was verified only by my own keyboard check and never tested with anyone who uses a screen reader.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5363,6 +5713,40 @@ Open Your work and choose Ready for review. The next lesson builds the portfolio
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Writing the outcome when there is no outcome
+What I am trying to do: Write an honest outcome section for each case study, using counts where you have them and saying plainly where you have none.
+
+Key idea or terms:
+A measurement: Something counted, with a period. A tally, a count of sessions, a before and after.
+No measurement: A common and honest state for a small project. It is one sentence rather than a hole to fill.
+Counts with periods: Eleven over five working days. The rule from Module 15, applied where a reviewer will test it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Listing what was measured across three projects, and listing what I know changed. Calls fell at the repair shop, the booking flow felt faster, and people understood the second version better. Three outcomes, from three projects.
+
+Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every measurement from the three projects, with its period and conditions” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every measurement from the three projects, with its period and conditions”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Every measurement from the three projects, with its period and conditions” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Restore the underlying counts and add the period and confounds.
@@ -5432,7 +5816,7 @@ Adequate evidence: No revenue, retention or efficiency claim without observation
 Repair: Delete any claim you did not observe and say what would establish it. Recheck: The claims.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson builds the portfolio itself and checks it as an interface.
 
@@ -5470,58 +5854,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Alternative text and contrast checked
 - A written record of what was and was not checked
 
-### Start with a clear task
+### Start here: in everyday words
+
+A portfolio story shows what you did, why you chose it, what evidence supports it and what remains uncertain. In this lesson, your first small result is: An index and one page per case study, built plainly, with the weight and load order known.
+
+**Words you will use**
+
+- **Plain HTML and CSS:** What Module 12 taught. A portfolio does not need a builder, a template or a subscription, and building it yourself is itself evidence.
+- **Weight:** What the page costs to load. A heavy portfolio is a slow one, and reviewers arrive on mobile connections.
+- **Narrow first:** Most reviewers arrive on a phone. Designing for the laptop and checking the phone last produces a portfolio that is worst where it is most read.
+
+**Quick example.** Made-up example. Building a portfolio site, and demonstrating visual range in it. An index with a full-screen animated header, a custom scroll behaviour, and three case study pages each in a different visual treatment.
+
+The reader demonstrates and guides the task before asking for “How the portfolio is built: an index and one page per case study”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Build and check the portfolio as a designed artefact: readable on a phone, navigable by keyboard, and honest about what you checked.
 
 
-### Understand the idea · 1
+### The portfolio is evidence of your craft before anyone reads a word
 
 Section: learn. Stable action: learn-1.
 
 The portfolio is evidence of your craft before anyone reads a word.
 
 
-### Understand the idea · 2
+### Most reviewers arrive on a phone; design for that first
 
 Section: learn. Stable action: learn-2.
 
 Most reviewers arrive on a phone; design for that first.
 
 
-### Understand the idea · 3
+### Headings, focus order and contrast are the minimum
 
 Section: learn. Stable action: learn-3.
 
 Headings, focus order and contrast are the minimum.
 
 
-### Understand the idea · 4
+### Run the checks you can and record what you could not check
 
 Section: learn. Stable action: learn-4.
 
 Run the checks you can and record what you could not check.
 
 
-### Understand the idea · 5
+### Keep it plain; a heavy site is a slow site
 
 Section: learn. Stable action: learn-5.
 
 Keep it plain; a heavy site is a slow site.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The portfolio is a single HTML file per case study plus one index, sharing one stylesheet from the design system. Checks run and recorded: heading structure read alone; keyboard path through every link with a visible focus ring; contrast on text and on the focus indicator; alternative text on all nineteen images; the whole site opened on a phone over a mobile connection with images loading last. Not checked, and stated on the about page: no screen-reader testing and no testing with anyone who uses assistive technology.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6035,6 +6433,40 @@ Open Your work and choose Ready for review. The next lesson takes one case study
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Making the portfolio itself usable
+What I am trying to do: Build and check the portfolio as a designed artefact: readable on a phone, navigable by keyboard, and honest about what you checked.
+
+Key idea or terms:
+Plain HTML and CSS: What Module 12 taught. A portfolio does not need a builder, a template or a subscription, and building it yourself is itself evidence.
+Weight: What the page costs to load. A heavy portfolio is a slow one, and reviewers arrive on mobile connections.
+Narrow first: Most reviewers arrive on a phone. Designing for the laptop and checking the phone last produces a portfolio that is worst where it is most read.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Building a portfolio site, and demonstrating visual range in it. An index with a full-screen animated header, a custom scroll behaviour, and three case study pages each in a different visual treatment.
+
+Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “How the portfolio is built: an index and one page per case study” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “How the portfolio is built: an index and one page per case study”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “How the portfolio is built: an index and one page per case study” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Fix line length and image sizing, then read it on a phone again.
@@ -6104,7 +6536,7 @@ Adequate evidence: A visible note of what was and was not tested.
 Repair: Write the list of checks and the list of gaps, and publish it. Recheck: The record.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes one case study and tells it aloud.
 
@@ -6142,58 +6574,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Three specific changes identified
 - A second recording within the time
 
-### Start with a clear task
+### Start here: in everyday words
+
+A portfolio story shows what you did, why you chose it, what evidence supports it and what remains uncertain. In this lesson, your first small result is: Five points chosen for ten minutes, with the context cut.
+
+**Words you will use**
+
+- **Five things:** Roughly what ten minutes holds. Fifteen produces a rushed tour and nothing memorable.
+- **Context:** Background about the domain, the organisation, how you came to the project. It feels necessary and it is where four of your ten minutes go.
+- **Opening with a count:** The problem, sized, in the first minute. It is what makes everything after it feel like evidence rather than narrative.
+
+**Quick example.** Made-up example. Preparing a spoken walkthrough, and preparing to read the case study aloud. Opened the case study on screen and talked through it from the top, section by section, in order.
+
+The reader demonstrates and guides the task before asking for “The five things worth ten minutes”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Prepare and deliver a ten-minute spoken version of your strongest case study, recorded, reviewed and delivered again.
 
 
-### Understand the idea · 1
+### Structure it as problem, evidence, decision, iteration, limits
 
 Section: learn. Stable action: learn-1.
 
 Structure it as problem, evidence, decision, iteration, limits.
 
 
-### Understand the idea · 2
+### Ten minutes is roughly five things, not fifteen
 
 Section: learn. Stable action: learn-2.
 
 Ten minutes is roughly five things, not fifteen.
 
 
-### Understand the idea · 3
+### Say the numbers as counts, exactly as you wrote them
 
 Section: learn. Stable action: learn-3.
 
 Say the numbers as counts, exactly as you wrote them.
 
 
-### Understand the idea · 4
+### Record yourself; you will hear what you cannot see
 
 Section: learn. Stable action: learn-4.
 
 Record yourself; you will hear what you cannot see.
 
 
-### Understand the idea · 5
+### Deliver it twice; the second time is the real one
 
 Section: learn. Stable action: learn-5.
 
 Deliver it twice; the second time is the real one.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Ten minutes, five points: the shop owner's problem with the call count; five participants and the contradiction between speed and certainty; the decision to build a status page and the not-building list; the wording repair, its prediction, and the person who still read it as a promise; and the limits, including that nobody who stopped using the shop was reached. First recording ran fourteen minutes, spent four on context and said “about two thirds” once. Second recording ran ten and a half, opened with the count, and used the exact numbers.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6722,6 +7168,40 @@ Open Your work and choose Ready for review. The next lesson prepares the questio
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Presenting one case study aloud
+What I am trying to do: Prepare and deliver a ten-minute spoken version of your strongest case study, recorded, reviewed and delivered again.
+
+Key idea or terms:
+Five things: Roughly what ten minutes holds. Fifteen produces a rushed tour and nothing memorable.
+Context: Background about the domain, the organisation, how you came to the project. It feels necessary and it is where four of your ten minutes go.
+Opening with a count: The problem, sized, in the first minute. It is what makes everything after it feel like evidence rather than narrative.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Preparing a spoken walkthrough, and preparing to read the case study aloud. Opened the case study on screen and talked through it from the top, section by section, in order.
+
+Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The five things worth ten minutes” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The five things worth ten minutes”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The five things worth ten minutes” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Cut to five points and time it again.
@@ -6791,7 +7271,7 @@ Adequate evidence: Two recordings and three identified changes.
 Repair: Watch the first, note three changes, and record again. Recheck: The second recording.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson prepares the questions you would rather not be asked.
 
@@ -6829,58 +7309,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - At least one honest “I do not know” with a next step
 - The answers practised aloud
 
-### Start with a clear task
+### Start here: in everyday words
+
+A portfolio story shows what you did, why you chose it, what evidence supports it and what remains uncertain. In this lesson, your first small result is: Each limitation turned into the question it invites, plus the questions you hope nobody asks.
+
+**Words you will use**
+
+- **Questions from limits:** Predictable, because your own limitations page lists them. An interviewer reading it arrives at the same questions you would.
+- **The ones you hope nobody asks:** The ones that decide the outcome. Writing them down is the difference between preparing and hoping.
+- **Conceding first:** Agreeing with the true part before explaining. A defence that arrives first sounds like a defence however good the reasoning after it.
+
+**Quick example.** Made-up example. Answering a hard question about a small study, and answering it by defending. Your call count fell during a week with a public holiday in it. Was that just a quiet week?
+
+The reader demonstrates and guides the task before asking for “Each limitation turned into the question it invites”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Prepare honest answers to the hardest questions your portfolio invites, and practise saying what you do not know.
 
 
-### Understand the idea · 1
+### List the questions your own limits invite
 
 Section: learn. Stable action: learn-1.
 
 List the questions your own limits invite.
 
 
-### Understand the idea · 2
+### Prepare answers that concede accurately rather than deflecting
 
 Section: learn. Stable action: learn-2.
 
 Prepare answers that concede accurately rather than deflecting.
 
 
-### Understand the idea · 3
+### “I do not know” is an acceptable answer with a next step attached
 
 Section: learn. Stable action: learn-3.
 
 “I do not know” is an acceptable answer with a next step attached.
 
 
-### Understand the idea · 4
+### Never invent a participant, a number or an outcome under pressure
 
 Section: learn. Stable action: learn-4.
 
 Never invent a participant, a number or an outcome under pressure.
 
 
-### Understand the idea · 5
+### Practise aloud; the wrong answer arrives fastest when unprepared
 
 Section: learn. Stable action: learn-5.
 
 Practise aloud; the wrong answer arrives fastest when unprepared.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Twelve questions were drawn from the three limitations pages, including: what do customers who never came back think; how do you know the page was used at all; was the fall in calls just a quiet week; why did you not test with a screen-reader user; and what would you do differently with a month. Each got a written answer conceding first. Two answers were “I do not know”, each with the smallest next step attached. All twelve were practised aloud; the quiet-week question was the one that produced hesitation, so it was rehearsed until the concession came first.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7409,6 +7903,40 @@ Open Your work and choose Ready for review. The last lesson of the module checks
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Answering the questions you would rather avoid
+What I am trying to do: Prepare honest answers to the hardest questions your portfolio invites, and practise saying what you do not know.
+
+Key idea or terms:
+Questions from limits: Predictable, because your own limitations page lists them. An interviewer reading it arrives at the same questions you would.
+The ones you hope nobody asks: The ones that decide the outcome. Writing them down is the difference between preparing and hoping.
+Conceding first: Agreeing with the true part before explaining. A defence that arrives first sounds like a defence however good the reasoning after it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Answering a hard question about a small study, and answering it by defending. Your call count fell during a week with a public holiday in it. Was that just a quiet week?
+
+Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Each limitation turned into the question it invites” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Each limitation turned into the question it invites”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Each limitation turned into the question it invites” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Turn each line of the limitations pages into a question.
@@ -7478,7 +8006,7 @@ Adequate evidence: Spoken practice, ideally with someone else asking.
 Repair: Ask someone to put the questions to you and note where you drift. Recheck: The practice notes.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The last lesson of the module checks the portfolio and publishes it deliberately.
 
@@ -7516,58 +8044,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A verified, recorded hosting decision
 - A cold reader's account of what the portfolio says
 
-### Start with a clear task
+### Start here: in everyday words
+
+A portfolio story shows what you did, why you chose it, what evidence supports it and what remains uncertain. In this lesson, your first small result is: Each promise read, then its case study, with any promise rewritten to what the case study shows.
+
+**Words you will use**
+
+- **Keeping a promise:** The case study delivering what its opening sentence said it would. It is checkable, which is why the promise was written as a sentence rather than a title.
+- **Rewriting the promise:** Allowed and often right. A promise describing a fuller project than you have is the commonest overclaim in a portfolio.
+- **Whole-portfolio sweep:** Reading everything in one pass rather than checking each page. Summaries on the index are written last and checked least.
+
+**Quick example.** Made-up example. Sweeping a portfolio for unsupported claims, and sweeping the case studies. All three case studies, sentence by sentence, against the limitations pages. Careful work, and each one came out clean.
+
+The reader demonstrates and guides the task before asking for “For each case study: the promise, then whether it delivered”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Check the finished portfolio against its three promises and every honesty rule this course holds, then publish it deliberately.
 
 
-### Understand the idea · 1
+### Check each case study against the promise it made
 
 Section: learn. Stable action: learn-1.
 
 Check each case study against the promise it made.
 
 
-### Understand the idea · 2
+### Run a claim sweep across the whole portfolio, not per page
 
 Section: learn. Stable action: learn-2.
 
 Run a claim sweep across the whole portfolio, not per page.
 
 
-### Understand the idea · 3
+### Verify any hosting choice the way you verify a resource
 
 Section: learn. Stable action: learn-3.
 
 Verify any hosting choice the way you verify a resource.
 
 
-### Understand the idea · 4
+### Ask one person to read it cold and tell you what it says
 
 Section: learn. Stable action: learn-4.
 
 Ask one person to read it cold and tell you what it says.
 
 
-### Understand the idea · 5
+### Publish deliberately, and record what you published and when
 
 Section: learn. Stable action: learn-5.
 
 Publish deliberately, and record what you published and when.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The check produced eleven changes. Two promises were kept as written; one was rewritten, because the second case study promised to show a repair loop and actually showed a single change with no re-test, so the promise now says that. The claim sweep found three unsupported sentences on the index page and one on the about page, all softened. The hosting option was checked against the course's rules on the day of publishing and the verification date recorded. A cold reader said the portfolio showed someone who tests things and admits what did not work, which matched two claims of three; the third was strengthened in the index.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -8096,6 +8638,40 @@ Open Your work and choose Ready for review. This closes Module 19. Module 20 tak
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Final check and publishing
+What I am trying to do: Check the finished portfolio against its three promises and every honesty rule this course holds, then publish it deliberately.
+
+Key idea or terms:
+Keeping a promise: The case study delivering what its opening sentence said it would. It is checkable, which is why the promise was written as a sentence rather than a title.
+Rewriting the promise: Allowed and often right. A promise describing a fuller project than you have is the commonest overclaim in a portfolio.
+Whole-portfolio sweep: Reading everything in one pass rather than checking each page. Summaries on the index are written last and checked least.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Sweeping a portfolio for unsupported claims, and sweeping the case studies. All three case studies, sentence by sentence, against the limitations pages. Careful work, and each one came out clean.
+
+Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “For each case study: the promise, then whether it delivered” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “For each case study: the promise, then whether it delivered”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “For each case study: the promise, then whether it delivered” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Read each promise beside its case study and reconcile the two.
@@ -8165,7 +8741,7 @@ Adequate evidence: What an unfamiliar reader says the portfolio shows, beside yo
 Repair: Ask someone unfamiliar what the portfolio says you can do. Recheck: The comparison.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This closes Module 19. Module 20 takes the same discipline to employers.
 

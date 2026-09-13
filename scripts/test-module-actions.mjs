@@ -30,6 +30,17 @@ for(const l of targets){
   assert.ok(l.flow.some(a=>a.kind==='supported'||a.kind==='sort'));
   for(const a of l.flow.filter(a=>a.kind==='check'))assert.ok(a.repairFields?.length,l.id+' check has an editable repair target');
  }
+ const number=l.id.startsWith('week1-')?1:l.id.startsWith('week2-')?2:Number(l.module?.slice(1));
+ if(Number.isFinite(number) && number>=1 && number<=20){
+  assert.ok(l.apprenticeship.beginner,l.id+' has a beginner introduction');
+  assert.ok(l.apprenticeship.beginner.plain.length>=20,l.id+' has a useful plain-language explanation');
+  assert.ok(l.apprenticeship.beginner.example.length>=20,l.id+' has a concrete example');
+  assert.ok(l.apprenticeship.beginner.returnLabel,l.id+' names the answer to return to');
+  assert.ok(l.apprenticeship.ai,l.id+' has an optional AI learning activity');
+  assert.ok(l.apprenticeship.ai.prompt.includes(l.title),l.id+' AI prompt names the lesson');
+  assert.ok(l.apprenticeship.ai.prompt.includes(l.apprenticeship.beginner.returnLabel),l.id+' AI prompt returns to a course answer');
+  assert.match(l.apprenticeship.ai.alternative,/Stay in this course/,l.id+' has a complete local alternative');
+ }
  const r=completeFor(l);questionCount+=Object.keys(r.learning.answers).length;
  assert.ok(recordSchema.safeParse(r).success,l.id+' bounded record');
  assert.deepEqual(finishProblems(l,r),[],l.id+' honest rehearsal/optional route can finish');
@@ -40,6 +51,8 @@ for(const l of targets){
  assert.ok(finishProblems(l,{...r,learning:{...r.learning,answers:{...r.learning.answers,[q.id]:{value:'not-an-option',shown:true}}}}).length,l.id+' invalid practice answer rejected');
  assert.equal(prepareRecord(finished,{...finished,worksheet:{...finished.worksheet,[fields[0].id]:'Changed work'}}).learning.finishedAt,undefined);
 }
+assert.equal(baselineLesson.apprenticeship?.ai,undefined,'Diagnostic remains uncoached by AI');
+assert.equal(baselineLesson.apprenticeship?.beginner,undefined,'Diagnostic does not receive teaching before the attempt');
 const interview=targets.find(l=>l.id==='m05-l06-v1'), rehearsal=completeFor(interview);
 assert.equal(rehearsal.worksheet.said,undefined);
 assert.ok(finishProblems(interview,{...rehearsal,worksheet:{...rehearsal.worksheet,'session-status':'A consented interview took place'}}).some(p=>p.includes('Said')),'Real interview needs its evidence');

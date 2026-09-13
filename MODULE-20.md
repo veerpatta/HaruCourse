@@ -23,58 +23,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A rule excluding aggregator counts as evidence
 - A statement of what your planned sample cannot support
 
-### Start with a clear task
+### Start here: in everyday words
+
+Career preparation turns your real work into clear evidence for a role, then practises explaining it without exaggeration. In this lesson, your first small result is: What the course’s two captures establish, and what they do not.
+
+**Words you will use**
+
+- **Two dated captures:** Two vacancies, retrieved on two dates. Evidence that those employers published those words on those days, and nothing wider.
+- **Not a study:** A sample of two, not designed, not representative of anything. The course says so rather than rounding it up into guidance.
+- **A window:** A fixed period, about two weeks, in which everything is gathered. It makes the sample datable and stops it drifting across months.
+
+**Quick example.** Made-up example. Writing an evidence plan, and writing it after starting to gather. Opened career pages and started copying anything that looked relevant into a document, meaning to tidy it up once I saw what was there.
+
+The reader demonstrates and guides the task before asking for “What the course’s two vacancy captures do establish”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Understand why this course teaches no conclusions about the hiring market, and set up the evidence method you will run yourself.
 
 
-### Understand the idea · 1
+### This course holds two dated vacancy captures, which is not a study
 
 Section: learn. Stable action: learn-1.
 
 This course holds two dated vacancy captures, which is not a study.
 
 
-### Understand the idea · 2
+### No demand, pay, remote eligibility or junior expectation is taught here
 
 Section: learn. Stable action: learn-2.
 
 No demand, pay, remote eligibility or junior expectation is taught here.
 
 
-### Understand the idea · 3
+### You gather the evidence yourself, dated, from employers' own boards
 
 Section: learn. Stable action: learn-3.
 
 You gather the evidence yourself, dated, from employers' own boards.
 
 
-### Understand the idea · 4
+### Vacancies are evidence of what one employer wrote, not opportunities
 
 Section: learn. Stable action: learn-4.
 
 Vacancies are evidence of what one employer wrote, not opportunities.
 
 
-### Understand the idea · 5
+### Advice that cannot cite a dated source is opinion
 
 Section: learn. Stable action: learn-5.
 
 Advice that cannot cite a dated source is opinion.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The evidence plan: at least twelve vacancies from employers' own career pages, gathered within one two-week window, each recorded with employer, URL, retrieval date, title, seniority, location, stated remote policy and stated India eligibility. Aggregators may be used to find employer names and are never cited as evidence. The plan states in advance what twelve vacancies cannot show — demand, pay, how common a requirement is across the market, or whether any of them would consider the learner — and that the sample expires and must be re-gathered if the search continues past a month.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -606,6 +620,40 @@ Open Your work and choose Ready for review. The next lesson gathers the evidence
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: What this module refuses to tell you
+What I am trying to do: Understand why this course teaches no conclusions about the hiring market, and set up the evidence method you will run yourself.
+
+Key idea or terms:
+Two dated captures: Two vacancies, retrieved on two dates. Evidence that those employers published those words on those days, and nothing wider.
+Not a study: A sample of two, not designed, not representative of anything. The course says so rather than rounding it up into guidance.
+A window: A fixed period, about two weeks, in which everything is gathered. It makes the sample datable and stops it drifting across months.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing an evidence plan, and writing it after starting to gather. Opened career pages and started copying anything that looked relevant into a document, meaning to tidy it up once I saw what was there.
+
+Activity: Run a short interview rehearsal using only the supplied role and evidence. Ask one question at a time, then tell me where my answer needs a clearer example, decision or honest limit. Do not write the final answer for me.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What the course’s two vacancy captures do establish” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What the course’s two vacancy captures do establish”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What the course’s two vacancy captures do establish” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Read the recorded vacancy note and restate it without adding conclusions.
@@ -675,7 +723,7 @@ Adequate evidence: A pre-written statement of what the sample cannot show, plus 
 Repair: Write the limits now, before the first vacancy is recorded. Recheck: The limits statement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson gathers the evidence by hand.
 
@@ -713,58 +761,72 @@ Starting route: Recommended route: Build a folder of dated text copies, one per 
 - A recorded list of failures with reasons and dates
 - Local text copies of every capture
 
-### Start with a clear task
+### Start here: in everyday words
+
+Career preparation turns your real work into clear evidence for a role, then practises explaining it without exaggeration. In this lesson, your first small result is: An employer list, with aggregators used for names rather than numbers.
+
+**Words you will use**
+
+- **Employer list first:** Names before listings. It stops the sample being whatever one site chose to show you that morning.
+- **Careers page:** The employer’s own, usually at their domain. It is where the current wording lives.
+- **Verbatim:** The employer’s words, copied. Summarising is interpretation, and doing it at capture time means you can never check what was actually said.
+
+**Quick example.** Made-up example. Building a list of employers, and capturing from the aggregator instead. Captured twelve listings straight from the board, because they were there, formatted alike and quick to copy.
+
+The reader demonstrates and guides the task before asking for “The employers you will check, and how you found each”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Gather at least twelve dated vacancies from employers' own boards, recording the fields your plan named, and record every failure.
 
 
-### Understand the idea · 1
+### Go to the employer's own careers page, not the aggregator's copy
 
 Section: learn. Stable action: learn-1.
 
 Go to the employer's own careers page, not the aggregator's copy.
 
 
-### Understand the idea · 2
+### Record employer, URL, date, title, seniority, location and eligibility
 
 Section: learn. Stable action: learn-2.
 
 Record employer, URL, date, title, seniority, location and eligibility.
 
 
-### Understand the idea · 3
+### Copy the stated requirements verbatim; do not summarise yet
 
 Section: learn. Stable action: learn-3.
 
 Copy the stated requirements verbatim; do not summarise yet.
 
 
-### Understand the idea · 4
+### Record every failure: expired, blocked, or no longer listed
 
 Section: learn. Stable action: learn-4.
 
 Record every failure: expired, blocked, or no longer listed.
 
 
-### Understand the idea · 5
+### Save a local copy; the page will be gone in weeks
 
 Section: learn. Stable action: learn-5.
 
 Save a local copy; the page will be gone in weeks.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Over eleven days, twenty-six employer career pages were opened and fourteen listings captured. Recorded: employer, direct URL, retrieval date, exact title, stated years of experience, stated location and whether hybrid meant an office, stated remote policy, and any explicit statement about eligibility to work from India. Failures recorded: seven listings had expired to a board index between finding and capture, three companies had no public careers page, and two pages would not load without an account, which was refused. Every captured listing was saved as text with its date at the top.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1296,6 +1358,40 @@ Open Your work and choose Ready for review. The next lesson compares the listing
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Gathering the vacancy evidence by hand
+What I am trying to do: Gather at least twelve dated vacancies from employers' own boards, recording the fields your plan named, and record every failure.
+
+Key idea or terms:
+Employer list first: Names before listings. It stops the sample being whatever one site chose to show you that morning.
+Careers page: The employer’s own, usually at their domain. It is where the current wording lives.
+Verbatim: The employer’s words, copied. Summarising is interpretation, and doing it at capture time means you can never check what was actually said.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Building a list of employers, and capturing from the aggregator instead. Captured twelve listings straight from the board, because they were there, formatted alike and quick to copy.
+
+Activity: Run a short interview rehearsal using only the supplied role and evidence. Ask one question at a time, then tell me where my answer needs a clearer example, decision or honest limit. Do not write the final answer for me.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The employers you will check, and how you found each” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The employers you will check, and how you found each”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The employers you will check, and how you found each” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Re-capture any aggregator listing from the employer's own page.
@@ -1365,7 +1461,7 @@ Adequate evidence: Text copies with retrieval dates.
 Repair: Save the text of each listing with its date today. Recheck: The saved copies.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson compares the listings without inventing a market.
 
@@ -1403,58 +1499,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Stated requirements separated from your inferences
 - A written limits statement for the comparison
 
-### Start with a clear task
+### Start here: in everyday words
+
+Career preparation turns your real work into clear evidence for a role, then practises explaining it without exaggeration. In this lesson, your first small result is: Each requirement written as a count out of your sample, with the size and window beside it.
+
+**Words you will use**
+
+- **A count out of a sample:** Nine of fourteen. It carries its own denominator, so nobody can mistake it for a rate across an industry.
+- **Why not percentages:** Sixty-four per cent of fourteen implies a sample nobody had. Module 15 made the same point about three participants.
+- **A kept contradiction:** Two listings that want opposite things, reported as two listings wanting opposite things. It is information about how varied these jobs are.
+
+**Quick example.** Made-up example. Writing up a vacancy comparison, and writing it in percentages. Seventy-nine per cent of listings require a portfolio and sixty-four per cent want process case studies. It looked like a finding.
+
+The reader demonstrates and guides the task before asking for “Each requirement as a count out of your sample”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Compare your captured listings honestly — as counts out of your sample, with contradictions kept — and write what the comparison cannot support.
 
 
-### Understand the idea · 1
+### Report counts out of your sample, never percentages
 
 Section: learn. Stable action: learn-1.
 
 Report counts out of your sample, never percentages.
 
 
-### Understand the idea · 2
+### Say “nine of fourteen listings I captured”, with the dates
 
 Section: learn. Stable action: learn-2.
 
 Say “nine of fourteen listings I captured”, with the dates.
 
 
-### Understand the idea · 3
+### Keep contradictions; listings disagree and that is information
 
 Section: learn. Stable action: learn-3.
 
 Keep contradictions; listings disagree and that is information.
 
 
-### Understand the idea · 4
+### Separate stated requirements from implied ones
 
 Section: learn. Stable action: learn-4.
 
 Separate stated requirements from implied ones.
 
 
-### Understand the idea · 5
+### Write what the comparison cannot support before using it
 
 Section: learn. Stable action: learn-5.
 
 Write what the comparison cannot support before using it.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Fourteen listings, gathered over eleven days. Counts recorded: eleven of fourteen ask for a portfolio; nine ask for case studies showing process; six state a years-of-experience minimum, ranging from two to five; four mention accessibility explicitly; three name a specific design tool and one names four interchangeable ones; two state remote eligibility from India explicitly and nine state nothing about eligibility at all. Contradiction kept: three listings expect the designer to run research, two say research is handled by a research team. Limits written: English-language listings from employers with public boards, one window, no evidence about pay, demand, or these employers' actual practice.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1990,6 +2100,40 @@ Open Your work and choose Ready for review. The next lesson turns this into what
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Reading vacancies without inventing a market
+What I am trying to do: Compare your captured listings honestly — as counts out of your sample, with contradictions kept — and write what the comparison cannot support.
+
+Key idea or terms:
+A count out of a sample: Nine of fourteen. It carries its own denominator, so nobody can mistake it for a rate across an industry.
+Why not percentages: Sixty-four per cent of fourteen implies a sample nobody had. Module 15 made the same point about three participants.
+A kept contradiction: Two listings that want opposite things, reported as two listings wanting opposite things. It is information about how varied these jobs are.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing up a vacancy comparison, and writing it in percentages. Seventy-nine per cent of listings require a portfolio and sixty-four per cent want process case studies. It looked like a finding.
+
+Activity: Run a short interview rehearsal using only the supplied role and evidence. Ask one question at a time, then tell me where my answer needs a clearer example, decision or honest limit. Do not write the final answer for me.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Each requirement as a count out of your sample” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Each requirement as a count out of your sample”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Each requirement as a count out of your sample” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Rewrite every finding as a number out of your sample with dates.
@@ -2059,7 +2203,7 @@ Adequate evidence: A written statement of exclusions, scope and expiry.
 Repair: Write which employers your method could never have reached. Recheck: The limits statement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson turns this into what you can honestly say about yourself.
 
@@ -2097,58 +2241,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Notes explaining every partial
 - Absences ranked by frequency in your sample
 
-### Start with a clear task
+### Start here: in everyday words
+
+Career preparation turns your real work into clear evidence for a role, then practises explaining it without exaggeration. In this lesson, your first small result is: One row per stated requirement, worded close to the listings.
+
+**Words you will use**
+
+- **Stated requirements only:** From the stated list. Building rows from your inference list makes a matrix of your own assumptions.
+- **Their wording:** Kept close, because rewording drifts towards what you can already do. Case studies showing process is not the same row as design thinking.
+- **Three states:** Evidenced, partial, absent. The same three the portfolio audit used, for the same reason: two states force everything into a yes or a no.
+
+**Quick example.** Made-up example. Filling a role evidence matrix, and filling it from what I can do. Went down twenty-one rows marking evidenced wherever I knew I could do the thing. Sixteen evidenced, four partial, one absent. A good-looking matrix.
+
+The reader demonstrates and guides the task before asking for “One row per stated requirement from your comparison”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Build a matrix of the requirements you found against the evidence you hold, marking each as evidenced, partial or absent.
 
 
-### Understand the idea · 1
+### One row per stated requirement, one column for your evidence
 
 Section: learn. Stable action: learn-1.
 
 One row per stated requirement, one column for your evidence.
 
 
-### Understand the idea · 2
+### Mark evidenced, partial or absent — three states, as before
 
 Section: learn. Stable action: learn-2.
 
 Mark evidenced, partial or absent — three states, as before.
 
 
-### Understand the idea · 3
+### Evidenced means you can point at an artefact, not at a memory
 
 Section: learn. Stable action: learn-3.
 
 Evidenced means you can point at an artefact, not at a memory.
 
 
-### Understand the idea · 4
+### Absent is information, not a verdict about you
 
 Section: learn. Stable action: learn-4.
 
 Absent is information, not a verdict about you.
 
 
-### Understand the idea · 5
+### Rank the absences by how often they appeared in your sample
 
 Section: learn. Stable action: learn-5.
 
 Rank the absences by how often they appeared in your sample.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Twenty-one requirement rows against three projects. Evidenced: research planning and synthesis, iteration with a re-test, writing decisions down, working with constraints, prototyping, structure and flows, and stating limits. Partial: accessibility, marked partial because every check was self-run and none involved a disabled person; measurement, marked partial because only one project had a before; and design systems, marked partial because the system was built and used but never adopted by anyone else. Absent: working in a team with engineers, shipping to production, working with analytics at scale, and any specific enterprise tool. Absences ranked by appearance in the sample, with team collaboration first.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2677,6 +2835,40 @@ Open Your work and choose Ready for review. The next lesson closes one gap with 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: The role evidence matrix
+What I am trying to do: Build a matrix of the requirements you found against the evidence you hold, marking each as evidenced, partial or absent.
+
+Key idea or terms:
+Stated requirements only: From the stated list. Building rows from your inference list makes a matrix of your own assumptions.
+Their wording: Kept close, because rewording drifts towards what you can already do. Case studies showing process is not the same row as design thinking.
+Three states: Evidenced, partial, absent. The same three the portfolio audit used, for the same reason: two states force everything into a yes or a no.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Filling a role evidence matrix, and filling it from what I can do. Went down twenty-one rows marking evidenced wherever I knew I could do the thing. Sixteen evidenced, four partial, one absent. A good-looking matrix.
+
+Activity: Run a short interview rehearsal using only the supplied role and evidence. Ask one question at a time, then tell me where my answer needs a clearer example, decision or honest limit. Do not write the final answer for me.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “One row per stated requirement from your comparison” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “One row per stated requirement from your comparison”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “One row per stated requirement from your comparison” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Rebuild the rows from the verbatim requirements you captured.
@@ -2746,7 +2938,7 @@ Adequate evidence: An ordered list with the sample caveat attached.
 Repair: Count how often each absent requirement appeared and reorder. Recheck: The ranked absences.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson closes one gap with real work.
 
@@ -2784,58 +2976,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - The matrix cell updated with the artefact named
 - An honest statement for a gap that cannot be closed alone
 
-### Start with a clear task
+### Start here: in everyday words
+
+Career preparation turns your real work into clear evidence for a role, then practises explaining it without exaggeration. In this lesson, your first small result is: One gap chosen, with why it beat the one ranked above it.
+
+**Words you will use**
+
+- **One, not four:** One closed beats four begun, and four begun is what happens when the list is long and every item is appealing.
+- **Closable:** Something you can do with the access you already have. A gap needing a job to close is not a gap you close this month.
+- **Smallest real work:** The least that produces something dated and specific. One session, one test, one repair. Not a project.
+
+**Quick example.** Made-up example. Choosing a gap to close, and choosing the top-ranked one. Working in a team with engineers, first, mentioned in nine of fourteen listings. Clearly the gap that matters most.
+
+The reader demonstrates and guides the task before asking for “The one gap you are closing”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Choose one absence from the matrix and close it with work that produces an artefact, not with a course or a certificate.
 
 
-### Understand the idea · 1
+### Choose one gap, not four; one closed beats four begun
 
 Section: learn. Stable action: learn-1.
 
 Choose one gap, not four; one closed beats four begun.
 
 
-### Understand the idea · 2
+### Prefer gaps closable by doing something with someone real
 
 Section: learn. Stable action: learn-2.
 
 Prefer gaps closable by doing something with someone real.
 
 
-### Understand the idea · 3
+### A certificate is not evidence of a skill; an artefact is
 
 Section: learn. Stable action: learn-3.
 
 A certificate is not evidence of a skill; an artefact is.
 
 
-### Understand the idea · 4
+### Some gaps cannot be closed alone, and saying so is the answer
 
 Section: learn. Stable action: learn-4.
 
 Some gaps cannot be closed alone, and saying so is the answer.
 
 
-### Understand the idea · 5
+### Give it a deadline and an artefact, or it will not happen
 
 Section: learn. Stable action: learn-5.
 
 Give it a deadline and an artefact, or it will not happen.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The top-ranked absence was working with engineers, which cannot be manufactured alone. The second was accessibility tested with a disabled person rather than self-checked. That one was closable: a local organisation was approached, one person who uses a screen reader agreed to a forty-minute session on the status page with consent and a small thank-you, and the session produced a recording of two failures the self-check had missed, a repair and a re-test. The cell moved from partial to evidenced with a dated artefact. The engineering gap was written as an honest absence with the nearest adjacent evidence named.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3357,6 +3563,40 @@ Open Your work and choose Ready for review. The next lesson writes a resume wher
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Closing one gap with real work
+What I am trying to do: Choose one absence from the matrix and close it with work that produces an artefact, not with a course or a certificate.
+
+Key idea or terms:
+One, not four: One closed beats four begun, and four begun is what happens when the list is long and every item is appealing.
+Closable: Something you can do with the access you already have. A gap needing a job to close is not a gap you close this month.
+Smallest real work: The least that produces something dated and specific. One session, one test, one repair. Not a project.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Choosing a gap to close, and choosing the top-ranked one. Working in a team with engineers, first, mentioned in nine of fourteen listings. Clearly the gap that matters most.
+
+Activity: Run a short interview rehearsal using only the supplied role and evidence. Ask one question at a time, then tell me where my answer needs a clearer example, decision or honest limit. Do not write the final answer for me.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The one gap you are closing” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The one gap you are closing”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The one gap you are closing” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Drop back to one gap and write why that one.
@@ -3426,7 +3666,7 @@ Adequate evidence: A written statement for a gap requiring a role, with adjacent
 Repair: Write the sentence you would say when asked about that gap. Recheck: The statement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes a resume where every line survives a question.
 
@@ -3464,58 +3704,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Project categories labelled
 - A record of the challenge pass and what changed
 
-### Start with a clear task
+### Start here: in everyday words
+
+Career preparation turns your real work into clear evidence for a role, then practises explaining it without exaggeration. In this lesson, your first small result is: A one-page draft in plain structure, each entry saying what you did and what happened.
+
+**Words you will use**
+
+- **What happened:** The outcome line. A count where you measured, and nothing was measured where you did not. Both are better than improved.
+- **One page:** What gets read. Everything that matters about three self-directed projects fits, and the second page is where unsupported lines collect.
+- **Tracing:** Putting the matrix beside the resume and checking line against cell. It takes twenty minutes and it is what makes the document defensible.
+
+**Quick example.** Made-up example. Making a resume, and making it show design. Two columns, a colour band, a skills section with proficiency bars, and my name set in something distinctive. It looked like the work of somebody who can design.
+
+The reader demonstrates and guides the task before asking for “Your entries, in plain structure, on one page”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write a one-page resume in which every claim maps to an artefact, and check it by having someone challenge each line.
 
 
-### Understand the idea · 1
+### Every line maps to an artefact or comes out
 
 Section: learn. Stable action: learn-1.
 
 Every line maps to an artefact or comes out.
 
 
-### Understand the idea · 2
+### Say what you did and what happened, in counts
 
 Section: learn. Stable action: learn-2.
 
 Say what you did and what happened, in counts.
 
 
-### Understand the idea · 3
+### Name the project category: self-directed, course or paid
 
 Section: learn. Stable action: learn-3.
 
 Name the project category: self-directed, course or paid.
 
 
-### Understand the idea · 4
+### One page, plain, readable as text by a machine and a person
 
 Section: learn. Stable action: learn-4.
 
 One page, plain, readable as text by a machine and a person.
 
 
-### Understand the idea · 5
+### Have someone challenge every line before you send it
 
 Section: learn. Stable action: learn-5.
 
 Have someone challenge every line before you send it.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - One page. Three project entries, each labelled self-directed practice, each with two lines: what was done and what happened, including the project where nothing was measured, stated as such. A short section listing evidenced skills only, taken directly from the matrix, with partials excluded. Prior graphic design work summarised in three lines with real dates. A friend was asked to challenge every line; four could not be defended and were rewritten, one was removed, and the phrase “led design” was corrected to “designed, working alone” on all three entries.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4044,6 +4298,40 @@ Open Your work and choose Ready for review. The next lesson takes the same disci
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: A resume where every line survives a question
+What I am trying to do: Write a one-page resume in which every claim maps to an artefact, and check it by having someone challenge each line.
+
+Key idea or terms:
+What happened: The outcome line. A count where you measured, and nothing was measured where you did not. Both are better than improved.
+One page: What gets read. Everything that matters about three self-directed projects fits, and the second page is where unsupported lines collect.
+Tracing: Putting the matrix beside the resume and checking line against cell. It takes twenty minutes and it is what makes the document defensible.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Making a resume, and making it show design. Two columns, a colour band, a skills section with proficiency bars, and my name set in something distinctive. It looked like the work of somebody who can design.
+
+Activity: Run a short interview rehearsal using only the supplied role and evidence. Ask one question at a time, then tell me where my answer needs a clearer example, decision or honest limit. Do not write the final answer for me.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Your entries, in plain structure, on one page” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Your entries, in plain structure, on one page”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Your entries, in plain structure, on one page” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Put the matrix beside the resume and check each line.
@@ -4113,7 +4401,7 @@ Adequate evidence: Someone else's challenge and the resulting changes.
 Repair: Ask someone to challenge each line and record what you could not defend. Recheck: The change record.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes the same discipline to what you send an employer.
 
@@ -4151,58 +4439,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Other people appearing only by role or with permission
 - A consistency check against the resume
 
-### Start with a clear task
+### Start here: in everyday words
+
+Career preparation turns your real work into clear evidence for a role, then practises explaining it without exaggeration. In this lesson, your first small result is: An include list and an exclude list for personal information, written before the profile.
+
+**Words you will use**
+
+- **Deciding first:** Writing the lists before the profile, so what appears is a decision rather than whatever the form asked for.
+- **Permanent and indexed:** A public profile is copied, cached and searched. Removing something from the page does not remove it from everywhere it was copied to.
+- **What you can show:** Named projects with what each evidences. It is the part that separates a profile from a description of a role you would like.
+
+**Quick example.** Made-up example. Deciding what a public profile carries, and filling in what the form asked for. Worked down the profile form. Name, photograph, city, phone number, personal email, date of birth, current employer, languages. Every field had a box, so I filled every box.
+
+The reader demonstrates and guides the task before asking for “The personal information that will appear”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write a public professional profile that says what you do and what you can show, while deciding deliberately what personal information stays off it.
 
 
-### Understand the idea · 1
+### Say what you do, what you can show, and where to see it
 
 Section: learn. Stable action: learn-1.
 
 Say what you do, what you can show, and where to see it.
 
 
-### Understand the idea · 2
+### Decide what personal data goes on it before writing
 
 Section: learn. Stable action: learn-2.
 
 Decide what personal data goes on it before writing.
 
 
-### Understand the idea · 3
+### Do not publish other people's information without permission
 
 Section: learn. Stable action: learn-3.
 
 Do not publish other people's information without permission.
 
 
-### Understand the idea · 4
+### Keep it consistent with the resume; contradictions get noticed
 
 Section: learn. Stable action: learn-4.
 
 Keep it consistent with the resume; contradictions get noticed.
 
 
-### Understand the idea · 5
+### A profile is not required to be on any particular platform
 
 Section: learn. Stable action: learn-5.
 
 A profile is not required to be on any particular platform.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Four sentences: what she does, the three projects and what each shows, the honest note that the work is self-directed practice built during a structured programme, and a link. Personal data decided in advance: city and a controlled email address; no phone number, no address, no personal details. Participants appear as roles; the shop is described as a small repair business without its name, since the owner agreed to the work being shown but not to being identified. The profile was checked line by line against the resume, and one seniority phrase was removed for inconsistency.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4738,6 +5040,40 @@ Open Your work and choose Ready for review. The next lesson prepares the questio
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: A public profile, and what does not go on it
+What I am trying to do: Write a public professional profile that says what you do and what you can show, while deciding deliberately what personal information stays off it.
+
+Key idea or terms:
+Deciding first: Writing the lists before the profile, so what appears is a decision rather than whatever the form asked for.
+Permanent and indexed: A public profile is copied, cached and searched. Removing something from the page does not remove it from everywhere it was copied to.
+What you can show: Named projects with what each evidences. It is the part that separates a profile from a description of a role you would like.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Deciding what a public profile carries, and filling in what the form asked for. Worked down the profile form. Name, photograph, city, phone number, personal email, date of birth, current employer, languages. Every field had a box, so I filled every box.
+
+Activity: Run a short interview rehearsal using only the supplied role and evidence. Ask one question at a time, then tell me where my answer needs a clearer example, decision or honest limit. Do not write the final answer for me.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The personal information that will appear” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The personal information that will appear”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The personal information that will appear” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Cut the adjectives and name the evidence.
@@ -4807,7 +5143,7 @@ Adequate evidence: A line-by-line comparison with disagreements resolved.
 Repair: Read them side by side and correct what disagrees. Recheck: The comparison.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson prepares the question you will be asked first.
 
@@ -4846,58 +5182,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A closing sentence resting on evidence
 - Rehearsal timings showing it fits
 
-### Start with a clear task
+### Start here: in everyday words
+
+Career preparation turns your real work into clear evidence for a role, then practises explaining it without exaggeration. In this lesson, your first small result is: The real reason you moved, with anything shaped to sound inevitable removed.
+
+**Words you will use**
+
+- **What happened:** The actual sequence, including the dull and unflattering parts. Interviewers hear constructed narratives constantly and discount them.
+- **Shaped to sound inevitable:** Always been drawn to, realised that, knew it was time. The phrases that turn a series of events into a destiny.
+- **Transfer:** Real and worth naming: typography, hierarchy, constraints, finishing. Years of practice at things many people never learn.
+
+**Quick example.** Made-up example. Writing the transition account, and writing it as a story of destiny. That I had always been drawn to how people use things, and that graphic design gradually revealed itself as too narrow for that interest.
+
+The reader demonstrates and guides the task before asking for “The real reason you moved, including the unflattering parts”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write and rehearse the account of why you moved from graphic design to product design, in a form that is true and takes ninety seconds.
 
 
-### Understand the idea · 1
+### Tell what happened, not a narrative of destiny
 
 Section: learn. Stable action: learn-1.
 
 Tell what happened, not a narrative of destiny.
 
 
-### Understand the idea · 2
+### Name what your prior work gave you and what it did not
 
 Section: learn. Stable action: learn-2.
 
 Name what your prior work gave you and what it did not.
 
 
-### Understand the idea · 3
+### Ninety seconds; the long version is for when they ask
 
 Section: learn. Stable action: learn-3.
 
 Ninety seconds; the long version is for when they ask.
 
 
-### Understand the idea · 4
+### Do not disparage your earlier field or employers
 
 Section: learn. Stable action: learn-4.
 
 Do not disparage your earlier field or employers.
 
 
-### Understand the idea · 5
+### End on evidence, not on enthusiasm
 
 Section: learn. Stable action: learn-5.
 
 End on evidence, not on enthusiasm.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Ninety seconds, four beats. What happened: years of producing material that looked right and being unable to tell whether it worked, and a job where the brief was wrong and nobody had asked anyone. What transferred: typography, hierarchy, working to constraints, finishing. What did not: research, systems, testing her own work, which is what the last two years were for. Where that leaves her: three projects, one with a measured before and after, and a portfolio that states what it does not establish. Rehearsed four times, timed at 105, 95, 88 and 90 seconds, with one phrase removed for sounding rehearsed.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5440,6 +5790,40 @@ Open Your work and choose Ready for review. The next lesson writes to people, on
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: The transition story, told without embellishment
+What I am trying to do: Write and rehearse the account of why you moved from graphic design to product design, in a form that is true and takes ninety seconds.
+
+Key idea or terms:
+What happened: The actual sequence, including the dull and unflattering parts. Interviewers hear constructed narratives constantly and discount them.
+Shaped to sound inevitable: Always been drawn to, realised that, knew it was time. The phrases that turn a series of events into a destiny.
+Transfer: Real and worth naming: typography, hierarchy, constraints, finishing. Years of practice at things many people never learn.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing the transition account, and writing it as a story of destiny. That I had always been drawn to how people use things, and that graphic design gradually revealed itself as too narrow for that interest.
+
+Activity: Run a short interview rehearsal using only the supplied role and evidence. Ask one question at a time, then tell me where my answer needs a clearer example, decision or honest limit. Do not write the final answer for me.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The real reason you moved, including the unflattering parts” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The real reason you moved, including the unflattering parts”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The real reason you moved, including the unflattering parts” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write what actually happened, then remove what you added to make it neat.
@@ -5509,7 +5893,7 @@ Adequate evidence: Timed rehearsals within the limit.
 Repair: Cut transitions rather than specifics and time it again. Recheck: The timings.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes to people, one at a time.
 
@@ -5548,58 +5932,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A written rule against bulk sending and automation
 - A follow-up rule with an interval and a limit
 
-### Start with a clear task
+### Start here: in everyday words
+
+Career preparation turns your real work into clear evidence for a role, then practises explaining it without exaggeration. In this lesson, your first small result is: Recipients chosen for a reason, with what you read of theirs named precisely.
+
+**Words you will use**
+
+- **A specific person:** Somebody connected to work you have read. A general address gets a general message, which is the failure this lesson is about.
+- **Reading first:** Their design notes, a talk, a listing’s wording. It is what makes the message possible; without it there is nothing specific to say.
+- **From scratch:** Each one written for that person. A template with the name changed reads as a template, and people who receive many recognise it instantly.
+
+**Quick example.** Made-up example. Writing outreach, and writing one good message thirty times. Wrote a message I was pleased with, then sent it to thirty people with the name and company changed. It was honest, specific about my own work, and well written.
+
+The reader demonstrates and guides the task before asking for “Who you are writing to, and why each one”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Draft outreach messages that are specific, honest and individually written, and decide the rules under which you will send them.
 
 
-### Understand the idea · 1
+### One message, one person, written for them specifically
 
 Section: learn. Stable action: learn-1.
 
 One message, one person, written for them specifically.
 
 
-### Understand the idea · 2
+### Say what you noticed, what you made, and what you are asking
 
 Section: learn. Stable action: learn-2.
 
 Say what you noticed, what you made, and what you are asking.
 
 
-### Understand the idea · 3
+### Never automate sending or generate messages in bulk
 
 Section: learn. Stable action: learn-3.
 
 Never automate sending or generate messages in bulk.
 
 
-### Understand the idea · 4
+### Ask for something small and specific
 
 Section: learn. Stable action: learn-4.
 
 Ask for something small and specific.
 
 
-### Understand the idea · 5
+### Accept silence; a follow-up is one message, not a campaign
 
 Section: learn. Stable action: learn-5.
 
 Accept silence; a follow-up is one message, not a campaign.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Six messages over two weeks, each written from scratch. One named a specific accessibility decision in the company's published design notes and asked a real question about it. One responded to a listing's line about designers running their own research and described the repair-shop project's five sessions in two sentences with a link. Each asked for twenty minutes or an answer to one question. Two replied, one with a conversation and one with a decline. Three did not reply and received one follow-up each after ten days; one of those then replied. Nothing was automated, and no message was reused.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6128,6 +6526,40 @@ Open Your work and choose Ready for review. The next lesson prepares for the con
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Writing to a person, one at a time
+What I am trying to do: Draft outreach messages that are specific, honest and individually written, and decide the rules under which you will send them.
+
+Key idea or terms:
+A specific person: Somebody connected to work you have read. A general address gets a general message, which is the failure this lesson is about.
+Reading first: Their design notes, a talk, a listing’s wording. It is what makes the message possible; without it there is nothing specific to say.
+From scratch: Each one written for that person. A template with the name changed reads as a template, and people who receive many recognise it instantly.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing outreach, and writing one good message thirty times. Wrote a message I was pleased with, then sent it to thirty people with the name and company changed. It was honest, specific about my own work, and well written.
+
+Activity: Run a short interview rehearsal using only the supplied role and evidence. Ask one question at a time, then tell me where my answer needs a clearer example, decision or honest limit. Do not write the final answer for me.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Who you are writing to, and why each one” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Who you are writing to, and why each one”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Who you are writing to, and why each one” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Rewrite each message from scratch after reading something of theirs.
@@ -6197,7 +6629,7 @@ Adequate evidence: A written interval and a maximum of one follow-up.
 Repair: Write the interval and the limit before sending anything. Recheck: The rule.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson prepares for the conversations these produce.
 
@@ -6236,58 +6668,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - One example where you were wrong
 - A recording and a note of two weaknesses
 
-### Start with a clear task
+### Start here: in everyday words
+
+Career preparation turns your real work into clear evidence for a role, then practises explaining it without exaggeration. In this lesson, your first small result is: Three real instances in situation, action and result form, each able to survive three follow-ups.
+
+**Words you will use**
+
+- **An instance:** One occasion, with a date and a specific thing that happened. I usually try to is a policy, and it is what people give when they have not prepared.
+- **Three questions deep:** The depth a real example survives and a constructed one does not. Detail runs out on the second question and the answer starts generalising.
+- **Where you were wrong:** A real error with no rescue in it. Its believability is exactly what the other two examples borrow.
+
+**Quick example.** Made-up example. Preparing behavioural examples, and preparing answers about how I work. Good answers about how I handle disagreement, how I deal with failure and how I work with constraints. Thought through, honest, and true of me generally.
+
+The reader demonstrates and guides the task before asking for “Three instances, each with the situation, what you did and what happened”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Run a full practice interview covering the portfolio walkthrough and three behavioural examples, recorded and reviewed.
 
 
-### Understand the idea · 1
+### Walk through one project, not all three, unless asked
 
 Section: learn. Stable action: learn-1.
 
 Walk through one project, not all three, unless asked.
 
 
-### Understand the idea · 2
+### Prepare three behavioural examples with situation, action and result
 
 Section: learn. Stable action: learn-2.
 
 Prepare three behavioural examples with situation, action and result.
 
 
-### Understand the idea · 3
+### Use real examples; a fabricated one collapses under follow-up
 
 Section: learn. Stable action: learn-3.
 
 Use real examples; a fabricated one collapses under follow-up.
 
 
-### Understand the idea · 4
+### Include an example where you were wrong
 
 Section: learn. Stable action: learn-4.
 
 Include an example where you were wrong.
 
 
-### Understand the idea · 5
+### Practise with someone who will interrupt you
 
 Section: learn. Stable action: learn-5.
 
 Practise with someone who will interrupt you.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A ninety-minute practice with someone who had not seen the work. Ten-minute walkthrough of project three, interrupted four times, twice on the measurement and twice on the sample. Three behavioural examples prepared: a disagreement with a reviewer that was resolved by testing rather than argument; a failed repair with what it changed; and a recruitment failure with what was done instead. The interviewer pushed three questions deep on the second, which held because it was real. Two weaknesses noted afterwards: drifting into the interface when asked about a decision, and answering a question about limits by defending the work before conceding.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6823,6 +7269,40 @@ Open Your work and choose Ready for review. The next lesson covers exercises, ta
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Interview practice: the walkthrough and the examples
+What I am trying to do: Run a full practice interview covering the portfolio walkthrough and three behavioural examples, recorded and reviewed.
+
+Key idea or terms:
+An instance: One occasion, with a date and a specific thing that happened. I usually try to is a policy, and it is what people give when they have not prepared.
+Three questions deep: The depth a real example survives and a constructed one does not. Detail runs out on the second question and the answer starts generalising.
+Where you were wrong: A real error with no rescue in it. Its believability is exactly what the other two examples borrow.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Preparing behavioural examples, and preparing answers about how I work. Good answers about how I handle disagreement, how I deal with failure and how I work with constraints. Thought through, honest, and true of me generally.
+
+Activity: Run a short interview rehearsal using only the supplied role and evidence. Ask one question at a time, then tell me where my answer needs a clearer example, decision or honest limit. Do not write the final answer for me.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Three instances, each with the situation, what you did and what happened” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Three instances, each with the situation, what you did and what happened”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Three instances, each with the situation, what you did and what happened” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Ask your practice partner to interrupt at least four times.
@@ -6892,7 +7372,7 @@ Adequate evidence: A recording and two specific, actionable weaknesses.
 Repair: Watch the recording and write two specific weaknesses. Recheck: The review notes.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson covers exercises, take-homes and when to say no.
 
@@ -6931,58 +7411,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A written decline for briefs that are real product work
 - Two practised live exercises focused on reasoning aloud
 
-### Start with a clear task
+### Start here: in everyday words
+
+Career preparation turns your real work into clear evidence for a role, then practises explaining it without exaggeration. In this lesson, your first small result is: A fixed-time rule with scope as the variable, and the sentence stating the cuts.
+
+**Words you will use**
+
+- **Fixed time, variable scope:** Module 14’s appetite, applied to yourself. Four hours means four hours, and what fits is a decision you make and explain.
+- **Stating the cuts:** The part that is actually being assessed. It shows scope judgement, which is a core part of the job and invisible in a finished artefact.
+- **What are you assessing:** The most useful question there is, and asking it is itself assessed. The answer changes what you build.
+
+**Quick example.** Made-up example. Doing a four-hour take-home, and doing more than asked. Eleven hours on a four-hour exercise. Both flows, full visual design, a short deck, and a second concept in case they preferred it.
+
+The reader demonstrates and guides the task before asking for “Your rule: the time is fixed and the scope moves”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Prepare for design exercises and take-home tasks, including how to negotiate scope and when to decline.
 
 
-### Understand the idea · 1
+### Treat a take-home as a scoping problem: fixed time, variable scope
 
 Section: learn. Stable action: learn-1.
 
 Treat a take-home as a scoping problem: fixed time, variable scope.
 
 
-### Understand the idea · 2
+### Ask what they are assessing before you start
 
 Section: learn. Stable action: learn-2.
 
 Ask what they are assessing before you start.
 
 
-### Understand the idea · 3
+### State the time you spent and what you cut
 
 Section: learn. Stable action: learn-3.
 
 State the time you spent and what you cut.
 
 
-### Understand the idea · 4
+### Decline tasks that are real work for their product
 
 Section: learn. Stable action: learn-4.
 
 Decline tasks that are real work for their product.
 
 
-### Understand the idea · 5
+### In a live exercise, think aloud and ask about constraints
 
 Section: learn. Stable action: learn-5.
 
 In a live exercise, think aloud and ask about constraints.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Two exercises. The first, a four-hour take-home about an onboarding flow, was fixed at four hours: structure, main flow and five error states delivered, visual design and a second flow cut, with a note saying so and why. The second brief asked for three production-ready screens redesigning a live page of the company's product, and was declined in two sentences — the work was theirs to be paid for — with an offer to do a two-hour neutral exercise or to walk through an existing project instead. That offer was accepted. A live exercise was practised twice with someone playing the interviewer, focusing on asking about constraints before drawing anything.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7518,6 +8012,40 @@ Open Your work and choose Ready for review. The last lesson turns all of this in
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Exercises, take-homes and saying no
+What I am trying to do: Prepare for design exercises and take-home tasks, including how to negotiate scope and when to decline.
+
+Key idea or terms:
+Fixed time, variable scope: Module 14’s appetite, applied to yourself. Four hours means four hours, and what fits is a decision you make and explain.
+Stating the cuts: The part that is actually being assessed. It shows scope judgement, which is a core part of the job and invisible in a finished artefact.
+What are you assessing: The most useful question there is, and asking it is itself assessed. The answer changes what you build.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Doing a four-hour take-home, and doing more than asked. Eleven hours on a four-hour exercise. Both flows, full visual design, a short deck, and a second concept in case they preferred it.
+
+Activity: Run a short interview rehearsal using only the supplied role and evidence. Ask one question at a time, then tell me where my answer needs a clearer example, decision or honest limit. Do not write the final answer for me.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Your rule: the time is fixed and the scope moves” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Your rule: the time is fixed and the scope moves”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Your rule: the time is fixed and the scope moves” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the rule and the sentence you will include with any submission.
@@ -7587,7 +8115,7 @@ Adequate evidence: A practised exercise where constraints were asked first.
 Repair: Practise again and do not draw until you have asked three questions. Recheck: The practice notes.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The last lesson turns all of this into a practice you can hold for months.
 
@@ -7626,58 +8154,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A schedule for re-gathering vacancy evidence
 - Written standing rules and a monthly review question set
 
-### Start with a clear task
+### Start here: in everyday words
+
+Career preparation turns your real work into clear evidence for a role, then practises explaining it without exaggeration. In this lesson, your first small result is: A record table with everything already sent entered into it.
+
+**Words you will use**
+
+- **The record:** One table. What was sent, when, by what route, and what came back. It is what makes the search improvable rather than merely long.
+- **Backfilling:** Entering what you have already sent. It is usually more than you remember, and the response pattern starts there.
+- **A held cadence:** A number you can sustain in month three, which is when it matters. Two applications and one message a week is a real pace.
+
+**Quick example.** Made-up example. Setting a search cadence, and applying to everything. Eleven applications in the first week, every evening, anything that looked plausible. It felt like the only responsible way to treat something this important.
+
+The reader demonstrates and guides the task before asking for “Your table: date, employer, role, route, what was sent, response and its date”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Set up the ongoing method — records, cadence, re-gathering evidence and reviewing what you learn — and write the standing rules you will hold to.
 
 
-### Understand the idea · 1
+### Keep a record: what you sent, when, and what happened
 
 Section: learn. Stable action: learn-1.
 
 Keep a record: what you sent, when, and what happened.
 
 
-### Understand the idea · 2
+### Set a cadence you can hold, not one that consumes every evening
 
 Section: learn. Stable action: learn-2.
 
 Set a cadence you can hold, not one that consumes every evening.
 
 
-### Understand the idea · 3
+### Re-gather the vacancy evidence; it expires within weeks
 
 Section: learn. Stable action: learn-3.
 
 Re-gather the vacancy evidence; it expires within weeks.
 
 
-### Understand the idea · 4
+### Review monthly against the matrix, not against your mood
 
 Section: learn. Stable action: learn-4.
 
 Review monthly against the matrix, not against your mood.
 
 
-### Understand the idea · 5
+### Write the standing rules now, while you are calm
 
 Section: learn. Stable action: learn-5.
 
 Write the standing rules now, while you are calm.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The record is one table: date, employer, role, route, what was sent, response and date of response. Cadence: two applications and one outreach message a week, one rest day, reviewed on the first of each month. The vacancy pass is repeated every six weeks, taking about two hours the second time. The monthly review asks three questions: which matrix cells changed, which absence appears most often in refusals, and what the response pattern suggests about the messages rather than about her. Standing rules written and kept visible, including that nothing is automated and no unpaid production work is done.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -8208,6 +8750,40 @@ Open Your work and choose Ready for review. This is the end of the course and th
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Running the search as a practice
+What I am trying to do: Set up the ongoing method — records, cadence, re-gathering evidence and reviewing what you learn — and write the standing rules you will hold to.
+
+Key idea or terms:
+The record: One table. What was sent, when, by what route, and what came back. It is what makes the search improvable rather than merely long.
+Backfilling: Entering what you have already sent. It is usually more than you remember, and the response pattern starts there.
+A held cadence: A number you can sustain in month three, which is when it matters. Two applications and one message a week is a real pace.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Setting a search cadence, and applying to everything. Eleven applications in the first week, every evening, anything that looked plausible. It felt like the only responsible way to treat something this important.
+
+Activity: Run a short interview rehearsal using only the supplied role and evidence. Ask one question at a time, then tell me where my answer needs a clearer example, decision or honest limit. Do not write the final answer for me.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Your table: date, employer, role, route, what was sent, response and its date” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Your table: date, employer, role, route, what was sent, response and its date”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Your table: date, employer, role, route, what was sent, response and its date” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Build the table and enter everything sent so far.
@@ -8277,7 +8853,7 @@ Adequate evidence: Rules against fabrication, inflation, automation and unpaid p
 Repair: Write the rules you will not break and the questions you will ask monthly. Recheck: The rules and questions.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This is the end of the course and the start of the practice: a portfolio, a matrix, a method for gathering your own evidence, and rules you wrote while you were calm.
 

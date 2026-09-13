@@ -20,51 +20,65 @@ Starting route: Bring a flow and notes, or use this fictional practice mismatch:
 
 - The reader's model with each line marked observed or assumed, your design's implied model in its real labels, three named contradictions with consequences, and one conform-or-teach decision with its cost.
 
-### Start with a clear task
+### Start here: in everyday words
+
+This module looks at what people expect, what confuses them and how a design choice affects their task. In this lesson, your first small result is: Your own sentence distinguishing the reader’s model from the model your design implies.
+
+**Words you will use**
+
+- **Mental model:** What a person already believes about how something works, built from everything else they have used.
+- **Conceptual model:** What your design implies is true, whether or not you intended it. The labels and structure make the claim.
+- **Observed:** You watched it happen in a session. The strongest mark you can put beside a line.
+
+**Quick example.** A supplied pair from the same made-up project. Reader’s model: “the list shows classes near me.” Design’s model: the list shows all classes in the city, ordered by the studio’s promotion agreement.
+
+The reader demonstrates and guides the task before asking for “The difference between the model a reader brings and the model your design implies”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Write the model a reader brings to one task, the model your design implies, and name three specific places they contradict each other.
+Compare what someone may expect in your workshop flow with what the interface actually does. Separate observed expectations from your hypotheses.
 
 
-### Understand the idea · 1
+### Idea 1: A mental model is what a person believes about how something w…
 
 Section: learn. Stable action: learn-1.
 
 A mental model is what a person believes about how something works, assembled from everything else they have used. It is usually incomplete and often wrong in detail, and it is still what they act on. When someone clicks the browser's back button expecting to undo a submission, they are not being careless; they are applying a model that has served them everywhere else.
 
 
-### Understand the idea · 2
+### Idea 2: You have a much more detailed model than any reader will, beca…
 
 Section: learn. Stable action: learn-2.
 
 You have a much more detailed model than any reader will, because you built the thing. That asymmetry is the source of the problem: what feels self-evident to you was learned by you, in a sequence readers never experienced. The conceptual model your interface communicates — through its labels, structure and feedback — is the only thing they have to build a model from.
 
 
-### Understand the idea · 3
+### Idea 3: There are two honest responses to a mismatch, and they are not…
 
 Section: learn. Stable action: learn-3.
 
 There are two honest responses to a mismatch, and they are not equally cheap. You can conform to the model people already hold, which usually means adopting the structure and vocabulary they know from elsewhere. Or you can change their model, which requires clearer naming, visible structure and feedback that teaches, and which costs far more than designers expect. Choosing the second because the first feels unoriginal is a common and expensive mistake.
 
 
-### Understand the idea · 4
+### Mismatches are findable but not guessable
 
 Section: learn. Stable action: learn-4.
 
 Mismatches are findable but not guessable. Card sorting shows you how people expect things to be organised; a think-aloud walkthrough shows you the moment expectation breaks. What you cannot do is deduce someone's model from your own reasoning, which is exactly what a designer confident in their own logic will do by default.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - On the workshop service, several people expected “my bookings” to include workshops they had merely saved, because that is how their shopping apps behave. The product's model separated saved from booked, which is defensible. The mismatch showed up as people reporting a booking they had never made. The chosen response was to conform partially — one list, with booked and saved clearly labelled within it — rather than to teach a distinction no one arrived expecting.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -466,6 +480,40 @@ Open Your work and choose Ready for review. The next lesson audits the same flow
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Mental models and the model you are actually building
+What I am trying to do: Compare what someone may expect in your workshop flow with what the interface actually does. Separate observed expectations from your hypotheses.
+
+Key idea or terms:
+Mental model: What a person already believes about how something works, built from everything else they have used.
+Conceptual model: What your design implies is true, whether or not you intended it. The labels and structure make the claim.
+Observed: You watched it happen in a session. The strongest mark you can put beside a line.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied pair from the same made-up project. Reader’s model: “the list shows classes near me.” Design’s model: the list shows all classes in the city, ordered by the studio’s promotion agreement.
+
+Activity: Teach the idea with a simple everyday analogy. Then give me one believable wrong choice and ask me to find the risk before you explain it.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The difference between the model a reader brings and the model your design implies” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The difference between the model a reader brings and the model your design implies”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The difference between the model a reader brings and the model your design implies” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - A familiar icon does not establish what this person believes it does.
@@ -534,7 +582,7 @@ Adequate evidence: One decision with what it gives up — either the better stru
 Repair: Write your decision, then write the sentence beginning “this is worse for…” and finish it honestly. If nothing is worse, you have probably not made a real choice. Recheck: The decision with its stated cost and reversal condition.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson audits the same flow for everything it asks the reader to remember.
 
@@ -564,51 +612,65 @@ Starting route: Trace an existing task or draw a fictional booking across detail
 
 - A memory-demand audit naming each demand and its two screens, interruption marks, two demands converted to recognition with their costs, and one unremovable demand with its justification.
 
-### Start with a clear task
+### Start here: in everyday words
+
+This module looks at what people expect, what confuses them and how a design choice affects their task. In this lesson, your first small result is: Three examples of each mode from products you actually use.
+
+**Words you will use**
+
+- **Recognition:** The answer is in front of you and you pick it. Far easier and far more reliable.
+- **Recall:** You must produce the answer from memory with no cue. Fragile, and it fails completely under interruption.
+- **Demand:** One thing your flow asks the reader to carry from the screen where it appears to the screen where it is needed.
+
+**Quick example.** A supplied demand from the same made-up flow: the reader chooses a class on one screen, and three screens later must type the class name into a “which class?” field to confirm.
+
+The reader demonstrates and guides the task before asking for “Three places in products you use where the answer is shown to you”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Audit one flow for everything it requires a reader to hold in mind or retrieve from memory, and convert at least two of those demands into recognition.
+Stop halfway through the flow, hide the preceding screen and resume. Identify information you must remember, then redesign two demands as visible choices or context.
 
 
-### Understand the idea · 1
+### Idea 1: Recognising something is far easier than recalling it, because…
 
 Section: learn. Stable action: learn-1.
 
 Recognising something is far easier than recalling it, because recognition supplies cues and recall does not. This is why a menu of visible options outperforms a box you must type the right word into, and why a list of recently viewed items is more useful than expecting someone to remember what they looked at. Every time you make a reader produce information from nothing, you are choosing the harder mode on their behalf.
 
 
-### Understand the idea · 2
+### Working memory is small and easily disrupted
 
 Section: learn. Stable action: learn-2.
 
 Working memory is small and easily disrupted. People hold only a few items at once, and holding them costs attention that is then unavailable for the actual task. Chunking helps — a phone number in groups is easier than a run of digits — but the reliable fix is not to require the holding at all: show the value where it is needed rather than asking someone to carry it from a previous screen.
 
 
-### Understand the idea · 3
+### Interruption is the normal case, not the exception
 
 Section: learn. Stable action: learn-3.
 
 Interruption is the normal case, not the exception. Someone booking a workshop on a phone will be interrupted by a message, a call, or their own life, and will return with their working memory emptied. A flow that depends on remembering what was typed three screens ago fails not because the person was careless but because the design assumed uninterrupted attention it had no right to assume.
 
 
-### Understand the idea · 4
+### Idea 4: The classic “about seven items” figure is widely quoted and wi…
 
 Section: learn. Stable action: learn-4.
 
 The classic “about seven items” figure is widely quoted and widely over-applied; the assigned article on memory does not use it at all, and the number varies with the material and the person. Treat chunk limits as a reason to reduce what you demand, not as a rule that permits exactly seven of something. If you need the specific framing, read the Miller's Law page in the laws collection, and read it as a heuristic.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A booking flow asked for a reference code on screen four that had been shown on screen two, with no way back that preserved the entered data. Every observed participant either scrolled back and lost their input or guessed. The fix required no new feature: the code was displayed inline on screen four beside the field. The demand for recall disappeared, and so did the error.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1023,6 +1085,40 @@ Open Your work and choose Ready for review. The next lesson inventories what eac
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Recognition, recall and what you are asking people to remember
+What I am trying to do: Stop halfway through the flow, hide the preceding screen and resume. Identify information you must remember, then redesign two demands as visible choices or context.
+
+Key idea or terms:
+Recognition: The answer is in front of you and you pick it. Far easier and far more reliable.
+Recall: You must produce the answer from memory with no cue. Fragile, and it fails completely under interruption.
+Demand: One thing your flow asks the reader to carry from the screen where it appears to the screen where it is needed.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied demand from the same made-up flow: the reader chooses a class on one screen, and three screens later must type the class name into a “which class?” field to confirm.
+
+Activity: Teach the idea with a simple everyday analogy. Then give me one believable wrong choice and ask me to find the risk before you explain it.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Three places in products you use where the answer is shown to you” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Three places in products you use where the answer is shown to you”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Three places in products you use where the answer is shown to you” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Run this as a self-walkthrough and label it accordingly, not as evidence about all users.
@@ -1092,7 +1188,7 @@ Adequate evidence: No numeric capacity claim is presented as fact; any use of a 
 Repair: Find every number in your write-up describing memory and either remove it or attach its source and its status as a heuristic. Recheck: The corrected write-up.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson inventories what each control affords, signals and confirms.
 
@@ -1122,51 +1218,65 @@ Starting route: Use five controls from a sketch or a familiar app. Fallback cont
 
 - A three-column affordance, signifier and feedback inventory with blanks left visible, touch-availability marks, and two repairs each stating what the reader can now tell.
 
-### Start with a clear task
+### Start here: in everyday words
+
+This module looks at what people expect, what confuses them and how a design choice affects their task. In this lesson, your first small result is: One-line definitions in your own words.
+
+**Words you will use**
+
+- **Affordance:** What the thing makes possible: a button affords pressing, a text field affords typing.
+- **Signifier:** What tells the reader the affordance exists. Without it the possibility is invisible.
+- **Feedback:** What tells the reader the action happened, and what happened.
+
+**Quick example.** A supplied row from the same made-up screen: a link in body text reading “see what to bring”, styled in the same colour and weight as the surrounding text, underlined only on hover.
+
+The reader demonstrates and guides the task before asking for “Affordance, signifier, and feedback”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Identify what each control in one screen affords, what signals that affordance to the reader, and what tells them the action worked — then repair the weakest of the three.
+Inventory controls and trace action to response. Find one that looks usable but gives unclear feedback, then specify a repair for touch and keyboard intent.
 
 
-### Understand the idea · 1
+### Idea 1: An affordance is what an object makes possible: a checkbox aff…
 
 Section: learn. Stable action: learn-1.
 
 An affordance is what an object makes possible: a checkbox affords being turned on and off, a slider affords being moved. A signifier is the perceivable cue that tells someone the affordance exists — the shape, the colour, the label, the cursor change, the underline. The distinction matters because on a screen the affordance is decided by code and is entirely unperceivable; only signifiers reach the reader.
 
 
-### Understand the idea · 2
+### Two gulfs sit either side of every action
 
 Section: learn. Stable action: learn-2.
 
 Two gulfs sit either side of every action. The gulf of execution is the distance between what someone wants and working out how to do it, which signifiers close. The gulf of evaluation is the distance between acting and knowing what happened, which feedback closes. Designers spend most of their attention on the first gulf and most of their bugs live in the second.
 
 
-### Understand the idea · 3
+### Feedback must be specific, timely and located where attention already is
 
 Section: learn. Stable action: learn-3.
 
 Feedback must be specific, timely and located where attention already is. “Saved” at the top of a page the reader has scrolled past is not feedback; a spinner with no end state is not feedback; a success message that does not say what succeeded leaves the reader checking manually anyway. The test is whether the reader can answer “did it work, and to what?” without doing extra work.
 
 
-### Understand the idea · 4
+### Removing signifiers is a recurring cost of visual minimalism
 
 Section: learn. Stable action: learn-4.
 
 Removing signifiers is a recurring cost of visual minimalism. Flat controls without borders, links without underlines, icons without labels and low-contrast placeholders all look calmer and all reduce what the reader can tell. That is a real tradeoff, not a mistake by definition — but it must be a decision you made knowingly and can state, not a side effect of preferring the cleaner mock.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A workshop card had its whole surface clickable, with the title in body-text colour and no other cue. On desktop, hovering revealed a subtle shade change; on a phone nothing indicated interactivity at all, and observed readers tapped the price text and then the image before finding it. Adding a coloured, weightier title and a visible chevron closed the execution gulf. Separately, the tap produced no immediate response during a slow load, so a pressed state was added to close the evaluation gulf.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1574,6 +1684,40 @@ Open Your work and choose Ready for review. The next lesson classifies the failu
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Affordances, signifiers and feedback
+What I am trying to do: Inventory controls and trace action to response. Find one that looks usable but gives unclear feedback, then specify a repair for touch and keyboard intent.
+
+Key idea or terms:
+Affordance: What the thing makes possible: a button affords pressing, a text field affords typing.
+Signifier: What tells the reader the affordance exists. Without it the possibility is invisible.
+Feedback: What tells the reader the action happened, and what happened.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied row from the same made-up screen: a link in body text reading “see what to bring”, styled in the same colour and weight as the surrounding text, underlined only on hover.
+
+Activity: Teach the idea with a simple everyday analogy. Then give me one believable wrong choice and ask me to find the risk before you explain it.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Affordance, signifier, and feedback” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Affordance, signifier, and feedback”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Affordance, signifier, and feedback” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Distinguish the action possible from the visible cue suggesting it.
@@ -1642,7 +1786,7 @@ Adequate evidence: Two repairs, each with a before-and-after sentence describing
 Repair: Rewrite each repair as: before, the reader could not tell X; after, they can tell it because Y. Add a failure case if both your repairs assume success. Recheck: The two rewritten repairs including a failure case.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson classifies the failures you observed in Module 2.
 
@@ -1672,51 +1816,65 @@ Starting route: Use genuine anonymised observations, or label these fictional fa
 
 - A classification table of observed failures with slips, mistakes and unclassified rows; blame-free rewrites alongside the originals; and one prevention and one recovery for each class with reasoning.
 
-### Start with a clear task
+### Start here: in everyday words
+
+This module looks at what people expect, what confuses them and how a design choice affects their task. In this lesson, your first small result is: The question you will use to classify, written in your own words.
+
+**Words you will use**
+
+- **Slip:** The intention was right and the action came out wrong: a mistyped digit, the wrong button pressed by accident.
+- **Mistake:** The intention itself was wrong, usually because the person’s model of the system was wrong. Doing it more carefully would not help.
+- **Failure:** Any place the reader did not get what she intended, including a hesitation or a wrong turn, not only an outright error.
+
+**Quick example.** A supplied note from the same made-up session: “The participant carelessly skipped the materials section and then complained she did not know what to bring.”
+
+The reader demonstrates and guides the task before asking for “The question you will use to tell a slip from a mistake”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Classify the failures observed in your Module 2 testing as slips or mistakes, and design one prevention and one recovery for each class, without relying on the reader being more careful.
+Classify failures as slips or mistakes, rewrite blameful messages and design prevention plus recovery for one of each.
 
 
-### Understand the idea · 1
+### Idea 1: A slip is doing the wrong thing while intending the right thin…
 
 Section: learn. Stable action: learn-1.
 
 A slip is doing the wrong thing while intending the right thing: the goal was correct and the execution went astray, usually on a familiar, automatic task. Tapping the adjacent date, submitting before finishing, using the wrong one of two similar controls. Slips are properties of attention under normal conditions, and they respond to design that constrains, defaults and undoes.
 
 
-### Understand the idea · 2
+### Idea 2: A mistake is doing the wrong thing on purpose, because the goa…
 
 Section: learn. Stable action: learn-2.
 
 A mistake is doing the wrong thing on purpose, because the goal itself was formed from a wrong model. Booking the wrong session because two workshops share a name, or believing a save happened because the interface looked calm. Mistakes respond to clearer models, better naming, previews and feedback. Adding a confirmation dialogue to a mistake usually fails, because the reader confirms confidently — they were never uncertain.
 
 
-### Understand the idea · 3
+### Prevention and recovery are both required, and prevention has a ceiling
 
 Section: learn. Stable action: learn-3.
 
 Prevention and recovery are both required, and prevention has a ceiling. Constraints — disabling impossible dates, formatting input as it is typed, defaulting to the common case — remove whole classes of slip cheaply. But no design prevents everything, so recovery matters: undo is generally better than confirmation, because confirmation interrupts everyone to catch a few, while undo costs nothing until it is needed.
 
 
-### Understand the idea · 4
+### Idea 4: Blaming the reader is the default failure of error analysis, a…
 
 Section: learn. Stable action: learn-4.
 
 Blaming the reader is the default failure of error analysis, and it hides inside neutral-sounding language. “The user didn't read the instruction” describes a design that required reading an instruction. Rewrite every error observation so the subject is the design: not “they missed the toggle”, but “the toggle's state was not perceivable at a glance”. The rewritten sentence usually contains its own fix.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Two failures from one test looked identical and were not. One participant tapped “Reserve” before choosing a date, then said “oh, I meant to pick Saturday” — a slip, fixed by disabling the button until a date is selected. Another chose the Saturday session believing it was the beginners' one, because both were titled “Weekend Workshop” — a mistake, unaffected by any button state, fixed by distinguishing the titles and showing the level on the card.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2145,6 +2303,40 @@ Open Your work and choose Ready for review. The next lesson is optional and test
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Slips, mistakes and designing for the error you caused
+What I am trying to do: Classify failures as slips or mistakes, rewrite blameful messages and design prevention plus recovery for one of each.
+
+Key idea or terms:
+Slip: The intention was right and the action came out wrong: a mistyped digit, the wrong button pressed by accident.
+Mistake: The intention itself was wrong, usually because the person’s model of the system was wrong. Doing it more carefully would not help.
+Failure: Any place the reader did not get what she intended, including a hesitation or a wrong turn, not only an outright error.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied note from the same made-up session: “The participant carelessly skipped the materials section and then complained she did not know what to bring.”
+
+Activity: Teach the idea with a simple everyday analogy. Then give me one believable wrong choice and ask me to find the risk before you explain it.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The question you will use to tell a slip from a mistake” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The question you will use to tell a slip from a mistake”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The question you will use to tell a slip from a mistake” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Do not infer intent from a click alone. Mark uncertain classifications.
@@ -2213,7 +2405,7 @@ Adequate evidence: Four interventions, each stating the class it targets and why
 Repair: For any confirmation dialogue you designed, ask whether the reader was uncertain. If they were not, replace it with a constraint, a clearer distinction or an undo. Recheck: The four interventions with class matching and reasoning.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson is optional and tests three named laws against your own work.
 
@@ -2243,51 +2435,65 @@ Starting route: Choose a difficult interface decision. Fallback: a fictional cla
 
 - Three law summaries with their assumed situations, an application to one real decision including a conflict, three concrete counterexamples from your own product, and three testable claim rewrites.
 
-### Start with a clear task
+### Start here: in everyday words
+
+This module looks at what people expect, what confuses them and how a design choice affects their task. In this lesson, your first small result is: Each law with the regularity it describes and the situation it assumes.
+
+**Words you will use**
+
+- **Assumed situation:** The conditions under which the regularity was observed. Outside them the law is a slogan.
+- **Fitts’s law:** The regularity that a target is quicker to hit when it is bigger and nearer to where the hand already is.
+- **Hick’s law:** The regularity that choosing takes longer as the number of comparable options grows.
+
+**Quick example.** A supplied application of Jakob’s law from the same made-up project: “Other booking sites put the price at the top right, so ours should too, because people expect it there.”
+
+The reader demonstrates and guides the task before asking for “Fitts · the regularity it describes, and the situation it assumes”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Apply three named heuristics to one decision and produce, for each, a concrete situation in which following it would make the design worse.
+Apply three assigned UX laws to one decision, then deliberately find a situation where each recommendation would be misleading.
 
 
-### Understand the idea · 1
+### Idea 1: These heuristics are named regularities, not physical laws, an…
 
 Section: learn. Stable action: learn-1.
 
 These heuristics are named regularities, not physical laws, and their sources present them without caveats. Fitts's law describes how target size and distance affect pointing time; Hick's law describes how the number of choices affects decision time; Jakob's law observes that people spend most of their time on other products and bring those expectations with them. Each is a genuine tendency and none of them settles a design decision on its own.
 
 
-### Understand the idea · 2
+### Idea 2: The commonest misuse is applying a law outside the conditions…
 
 Section: learn. Stable action: learn-2.
 
 The commonest misuse is applying a law outside the conditions it describes. Hick's law concerns choices among comparable options, so citing it to justify hiding navigation is a category error: a person looking for a specific item is not choosing between equivalent alternatives, and hiding the item makes their task harder while the law's number looks better. Ask what the law's underlying situation actually is before invoking it.
 
 
-### Understand the idea · 3
+### Laws conflict, and the conflict is where the design work lives
 
 Section: learn. Stable action: learn-3.
 
 Laws conflict, and the conflict is where the design work lives. Jakob's law argues for the familiar pattern; a genuine improvement argues for the unfamiliar one. Fitts's law argues for a large, close target; the surrounding layout argues that a control which dominates the screen distorts the hierarchy. Naming both sides and choosing with a stated reason is stronger practice than quoting whichever supports the decision you had already made.
 
 
-### Understand the idea · 4
+### Every law is a hypothesis in your specific context
 
 Section: learn. Stable action: learn-4.
 
 Every law is a hypothesis in your specific context. The honest form is: this principle suggests X, which predicts readers will do Y, which I could check by Z. That sentence is testable. “Hick's law says fewer options” is not, and it is the form that lets a confident designer win an argument they should have lost.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A filter panel with eleven options was cut to four, citing Hick's law. Task time got worse: the two most-used filters had been removed, so people scrolled the full list instead of filtering. The law was real; the situation was wrong, because these were not comparable alternatives but tools for narrowing a search. Restoring the two and grouping the rest under a “more filters” control served both the principle and the task.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2695,6 +2901,40 @@ Open Your work and choose Ready for review, or move on. The next lesson turns re
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: UX laws and where they stop applying
+What I am trying to do: Apply three assigned UX laws to one decision, then deliberately find a situation where each recommendation would be misleading.
+
+Key idea or terms:
+Assumed situation: The conditions under which the regularity was observed. Outside them the law is a slogan.
+Fitts’s law: The regularity that a target is quicker to hit when it is bigger and nearer to where the hand already is.
+Hick’s law: The regularity that choosing takes longer as the number of comparable options grows.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied application of Jakob’s law from the same made-up project: “Other booking sites put the price at the top right, so ours should too, because people expect it there.”
+
+Activity: Teach the idea with a simple everyday analogy. Then give me one believable wrong choice and ask me to find the risk before you explain it.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Fitts · the regularity it describes, and the situation it assumes” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Fitts · the regularity it describes, and the situation it assumes”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Fitts · the regularity it describes, and the situation it assumes” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - A principle suggests what to investigate; it does not supply a result.
@@ -2763,7 +3003,7 @@ Adequate evidence: Three rewrites in the suggests–predicts–check form, with 
 Repair: Rewrite any claim whose check requires resources you do not have into one that a single person attempting the task could resolve. Recheck: The three feasible testable claims.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review, or move on. The next lesson turns requests into need statements.
 
@@ -2793,51 +3033,65 @@ Starting route: Use real labelled requests, or mark these five as fictional prac
 
 - A five-row table giving each original request, its need statement, its evidence source or assumption label, plus two testing questions and one need belonging to a non-primary user.
 
-### Start with a clear task
+### Start here: in everyday words
+
+This module looks at what people expect, what confuses them and how a design choice affects their task. In this lesson, your first small result is: The format written out, with what the so-that clause adds.
+
+**Words you will use**
+
+- **Need statement:** Who, what they need, and so that what. The last part is the outcome, and it is what stops the statement being a feature.
+- **Request:** What somebody asked for, usually with a solution already inside it. The solution is worth keeping, because it shows you what they pictured.
+- **Verbatim:** The exact words somebody used, kept without tidying. Tidying quietly changes what was meant.
+
+**Quick example.** A supplied conversion from the same made-up project: “Attendees need a materials checklist on the booking page so that they can see the materials checklist before booking.”
+
+The reader demonstrates and guides the task before asking for “The format, its optional parts, and what the so-that clause changes”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Convert five feature requests into evidence-linked need statements, and mark clearly which are supported by your Module 2 research and which remain assumptions.
+Translate feature requests into needs that allow several solutions. Use your existing requests and label supplied or invented practice requests as hypothetical.
 
 
-### Understand the idea · 1
+### Idea 1: A need statement describes what someone must accomplish and wh…
 
 Section: learn. Stable action: learn-1.
 
 A need statement describes what someone must accomplish and why, without naming a solution. The standard shape — as a certain person, I need to do something, so that some outcome follows, with optional trigger and constraint — is useful precisely because it is hard to fill in honestly. If you cannot state the so-that, you probably have a preference rather than a need.
 
 
-### Understand the idea · 2
+### Needs and wants both matter but they are different inputs
 
 Section: learn. Stable action: learn-2.
 
 Needs and wants both matter but they are different inputs. Someone may want an email reminder; the underlying need is to know what to bring before leaving home, and email is one of several responses to it. Stating the need keeps the alternatives available — a reminder, a summary on the confirmation screen, a note in the calendar entry — and lets you choose by cost and evidence rather than by whoever asked loudest.
 
 
-### Understand the idea · 3
+### Needs run across the whole journey, not just the parts you designed
 
 Section: learn. Stable action: learn-3.
 
 Needs run across the whole journey, not just the parts you designed. They include the moments before a service is used and after it ends, and they include people who are not the primary user: the organiser who has to prepare materials, the person answering questions when something goes wrong. A service that satisfies the visible user and breaks its own support staff has not met its needs.
 
 
-### Understand the idea · 4
+### Idea 4: The rule that keeps this honest is that a need without researc…
 
 Section: learn. Stable action: learn-4.
 
 The rule that keeps this honest is that a need without research is an assumption wearing better clothes. Writing a request in need form makes it clearer, not truer. Mark every statement with its evidence source, and where there is none, keep it and label it — because an assumption you can see is one you can decide to test.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The organiser asked for a mandatory “I have read the instructions” checkbox. Converted: as an organiser, I need attendees to arrive with the right materials, so that sessions start on time. That reframing put three responses on the table — the checkbox, a materials summary on the confirmation screen, and a reminder the day before — and made it obvious that the checkbox is the only one that produces no evidence about whether anyone read anything.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3292,6 +3546,40 @@ Open Your work and choose Ready for review. The next lesson writes a value propo
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: From requests to user needs
+What I am trying to do: Translate feature requests into needs that allow several solutions. Use your existing requests and label supplied or invented practice requests as hypothetical.
+
+Key idea or terms:
+Need statement: Who, what they need, and so that what. The last part is the outcome, and it is what stops the statement being a feature.
+Request: What somebody asked for, usually with a solution already inside it. The solution is worth keeping, because it shows you what they pictured.
+Verbatim: The exact words somebody used, kept without tidying. Tidying quietly changes what was meant.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied conversion from the same made-up project: “Attendees need a materials checklist on the booking page so that they can see the materials checklist before booking.”
+
+Activity: Teach the idea with a simple everyday analogy. Then give me one believable wrong choice and ask me to find the risk before you explain it.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The format, its optional parts, and what the so-that clause changes” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The format, its optional parts, and what the so-that clause changes”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The format, its optional parts, and what the so-that clause changes” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - A need statement describes what someone must accomplish, not the control they asked for.
@@ -3360,7 +3648,7 @@ Adequate evidence: One need belonging to an organiser, supporter or other affect
 Repair: List everyone affected when the service works and when it fails, pick one who is not the primary user, and write their need in full. Recheck: The added need statement and any tension identified.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes a value proposition for your strongest need and states what it costs.
 
@@ -3390,51 +3678,65 @@ Starting route: Bring your strongest need. Fallback assumption: a first-time att
 
 - A baseline description of today's behaviour, a value proposition with an explicit comparison, a three-part cost list, and a constraint list marked fixed or changeable.
 
-### Start with a clear task
+### Start here: in everyday words
+
+This module looks at what people expect, what confuses them and how a design choice affects their task. In this lesson, your first small result is: What discovery is for, including what stopping means.
+
+**Words you will use**
+
+- **Discovery:** Finding out whether a problem is worth solving and how. Deciding not to continue is a successful outcome, not a failure.
+- **Baseline:** What people already do about this problem today, including doing nothing. It is the thing any response has to beat.
+- **Workaround:** The way somebody copes now without your design, such as asking a friend or borrowing at the door. Workarounds are usually fast and already trusted.
+
+**Quick example.** A supplied proposal from the same made-up project: replace the printed materials sheet at reception with a link in the confirmation email, because it is cheaper to keep up to date.
+
+The reader demonstrates and guides the task before asking for “What discovery is for, including what deciding not to continue means”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Write a value proposition for one response to your strongest need, and state explicitly what it costs — to the reader, to the organisation and to the people it does not serve.
+Compare who gains and who pays for your proposal. Introduce the fictional constraint “no additional staff capacity” and revise your value proposition.
 
 
-### Understand the idea · 1
+### Idea 1: A value proposition states who it is for, what changes for the…
 
 Section: learn. Stable action: learn-1.
 
 A value proposition states who it is for, what changes for them, and why this response rather than another. The comparison is the part most often skipped: value is relative to what someone does today, including doing nothing. If your response is only slightly better than the workaround people already have, that is the honest finding, not a reason to write a stronger adjective.
 
 
-### Understand the idea · 2
+### Idea 2: Every response has costs, and naming them is what makes the pr…
 
 Section: learn. Stable action: learn-2.
 
 Every response has costs, and naming them is what makes the proposition credible. A reader may pay in extra steps, in learning, in giving up information, or in losing something the old way allowed. An organisation pays in build effort, support load and ongoing maintenance. A proposition with no costs listed has not been thought through; it has been sold.
 
 
-### Understand the idea · 3
+### Idea 3: Constraints are the boundary of the argument, and they are not…
 
 Section: learn. Stable action: learn-3.
 
 Constraints are the boundary of the argument, and they are not the same as preferences. Time, budget, the technology already in place, legal obligations, the languages and devices your audience actually uses — these limit what can be considered. Preferences masquerade as constraints constantly, so write each one down and mark whether it could change and what it would take.
 
 
-### Understand the idea · 4
+### Discovery work exists to make this argument honest before anyone builds
 
 Section: learn. Stable action: learn-4.
 
 Discovery work exists to make this argument honest before anyone builds. Its purpose is to understand the problem, the constraints and whether there is a case for continuing at all, including the legitimate outcome of deciding not to proceed. Being able to argue that something should not be built is a product skill, not a failure of one.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - For the need “attendees arrive with the right materials”, three responses were compared against doing nothing. A checkbox costs almost nothing to build and produces no change in behaviour and no evidence. A materials summary on the confirmation screen costs a little and reaches everyone who books. A day-before reminder reaches people at the right moment, costs a message channel and ongoing support, and fails for anyone whose contact details are wrong. The summary won on cost per unit of benefit, with the reminder recorded as the next candidate if evidence showed timing mattered more than availability.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3832,6 +4134,40 @@ Open Your work and choose Ready for review. The last lesson defines the smallest
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Value under constraint: who gains, who pays
+What I am trying to do: Compare who gains and who pays for your proposal. Introduce the fictional constraint “no additional staff capacity” and revise your value proposition.
+
+Key idea or terms:
+Discovery: Finding out whether a problem is worth solving and how. Deciding not to continue is a successful outcome, not a failure.
+Baseline: What people already do about this problem today, including doing nothing. It is the thing any response has to beat.
+Workaround: The way somebody copes now without your design, such as asking a friend or borrowing at the door. Workarounds are usually fast and already trusted.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied proposal from the same made-up project: replace the printed materials sheet at reception with a link in the confirmation email, because it is cheaper to keep up to date.
+
+Activity: Teach the idea with a simple everyday analogy. Then give me one believable wrong choice and ask me to find the risk before you explain it.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What discovery is for, including what deciding not to continue means” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What discovery is for, including what deciding not to continue means”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What discovery is for, including what deciding not to continue means” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Include learning, maintenance and support effort alongside money.
@@ -3900,7 +4236,7 @@ Adequate evidence: A constraint list where each entry is marked fixed or changea
 Repair: Take each constraint and ask who could change it and at what cost. Anything you or your team could decide differently this week is a preference. Recheck: The marked constraint list with at least one reclassification considered.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The last lesson defines the smallest build that could change your decision.
 
@@ -3930,51 +4266,65 @@ Starting route: Choose an assumption whose failure would change your decision. F
 
 - A ranked assumption list with reasoning, a description of the smallest build with each element justified, a stopping rule written before building, and a boundary list mapping unanswerable questions to later modules.
 
-### Start with a clear task
+### Start here: in everyday words
+
+This module looks at what people expect, what confuses them and how a design choice affects their task. In this lesson, your first small result is: Assumptions ranked by evidence strength against consequence, and the riskiest named.
+
+**Words you will use**
+
+- **Riskiest assumption:** The one where you know least and being wrong costs most. Not the one that is quickest to check.
+- **Smallest build:** The cheapest thing you could make that would change your mind about one assumption. It is not the first version of the product.
+- **Prototype:** Any stand-in made to answer a question, including paper, a printed card, or a conversation held in a fixed order.
+
+**Quick example.** Two supplied stopping rules for the same made-up card test. Rule A: “If attendees seem better prepared, continue.” Rule B: “If at least twelve of the next twenty bookers arrive with the listed items, continue; if six to eleven, redirect to finding out what stopped the rest; if five or fewer, stop and investigate whether preparation is the real problem.”
+
+The reader demonstrates and guides the task before asking for “Each assumption: how strong the evidence is, and what it would cost to be wrong”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Define the smallest build that would resolve your riskiest assumption, state in advance what result would stop the work, and record what the build cannot tell you.
+Choose the riskiest assumption and design the smallest test that could change your decision. Write the stopping rule before any results exist.
 
 
-### Understand the idea · 1
+### Start from the riskiest assumption rather than from a feature list
 
 Section: learn. Stable action: learn-1.
 
 Start from the riskiest assumption rather than from a feature list. The riskiest assumption is the one that combines weak evidence with a serious consequence if wrong — not the one that is most technically interesting or easiest to test. If your value proposition depends on people noticing a summary at the moment they pack their bag, that is the assumption to attack, and building the summary beautifully does not attack it.
 
 
-### Understand the idea · 2
+### Idea 2: The build should be just complex enough to let you test the id…
 
 Section: learn. Stable action: learn-2.
 
 The build should be just complex enough to let you test the idea, and no more. It need not cover the whole journey, need not be production quality, and need not be code at all: a paper sequence, a clickable set of static screens, a manual process behind a form, or a message you send yourself can each resolve a specific uncertainty. The fidelity should be set by the question, not by what looks impressive.
 
 
-### Understand the idea · 3
+### Decide the stopping rule before you build
 
 Section: learn. Stable action: learn-3.
 
 Decide the stopping rule before you build. Write what result would make you continue, what would make you change direction, and what would make you stop entirely. Written afterwards, any result can be read as encouraging, and it usually is — which is how a team ends up building something nobody wanted while pointing at a chart that never had a threshold.
 
 
-### Understand the idea · 4
+### Idea 4: Every small build has a boundary, and naming it is part of the…
 
 Section: learn. Stable action: learn-4.
 
 Every small build has a boundary, and naming it is part of the deliverable. A prototype tested with three people who agreed to help tells you about comprehension and obvious obstacles; it tells you nothing about demand, frequency, retention or what happens at scale. Say what it cannot answer, and say which later module — analytics and experiments, or research at greater depth — is where that question belongs.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The riskiest assumption behind the materials summary was that attendees look for preparation information at all before travelling — not that a summary would be readable. The smallest build was therefore not a summary screen but a one-question message sent to five people who had recently booked, asking what they did before attending. The stopping rule was written first: if fewer than two described looking for information beforehand, the summary drops down the list and the reminder becomes the candidate instead. The result could not establish frequency across all attendees, and the write-up said so.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4358,6 +4708,40 @@ Open Your work and choose Ready for review. This closes the module; your assumpt
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: The smallest thing that could change your decision
+What I am trying to do: Choose the riskiest assumption and design the smallest test that could change your decision. Write the stopping rule before any results exist.
+
+Key idea or terms:
+Riskiest assumption: The one where you know least and being wrong costs most. Not the one that is quickest to check.
+Smallest build: The cheapest thing you could make that would change your mind about one assumption. It is not the first version of the product.
+Prototype: Any stand-in made to answer a question, including paper, a printed card, or a conversation held in a fixed order.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Two supplied stopping rules for the same made-up card test. Rule A: “If attendees seem better prepared, continue.” Rule B: “If at least twelve of the next twenty bookers arrive with the listed items, continue; if six to eleven, redirect to finding out what stopped the rest; if five or fewer, stop and investigate whether preparation is the real problem.”
+
+Activity: Teach the idea with a simple everyday analogy. Then give me one believable wrong choice and ask me to find the risk before you explain it.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Each assumption: how strong the evidence is, and what it would cost to be wrong” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Each assumption: how strong the evidence is, and what it would cost to be wrong”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Each assumption: how strong the evidence is, and what it would cost to be wrong” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Test the assumption with the greatest combination of consequence and uncertainty, not the easiest screen to polish.
@@ -4426,7 +4810,7 @@ Adequate evidence: A list of questions this build cannot answer, each mapped to 
 Repair: Write down every conclusion you would like to draw, then mark which ones your build's participants and method cannot support. Map each to the module that could. Recheck: The boundary list with module mappings.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This closes the module; your assumptions and stopping rule carry into the research modules.
 

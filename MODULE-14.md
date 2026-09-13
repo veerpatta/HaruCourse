@@ -23,58 +23,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A note of where you would need to be present
 - Two outcomes from the standard your process would currently fail
 
-### Start with a clear task
+### Start here: in everyday words
+
+Delivery work makes a design clear enough for other people to build, question, test and change safely. In this lesson, your first small result is: The outcomes a delivery process is supposed to protect, written in your own words.
+
+**Words you will use**
+
+- **Delivery:** Everything between a design being agreed and a person using it. It is where most design decisions are actually finalised.
+- **Iteration:** Changing the thing after it meets reality. A process that cannot iterate turns every mistake into a permanent feature.
+- **Stage:** A point where the work changes hands or changes form: sliced, estimated, built, reviewed, tested, released. The names differ everywhere; the stages recur.
+
+**Quick example.** Made-up example. Mapping a delivery path with no team to observe, and giving up on the lesson. I have no team, no engineers and no release process, so this lesson cannot be done honestly. I nearly wrote a description of how delivery works in general and called it a map.
+
+The reader demonstrates and guides the task before asking for “The outcomes a good delivery process protects, in your own words”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Map the path a design takes from agreed to used in a team you can observe or read about, and name the three points where designs most often change.
 
 
-### Understand the idea · 1
+### Work is sliced, estimated, built, reviewed, tested and released
 
 Section: learn. Stable action: learn-1.
 
 Work is sliced, estimated, built, reviewed, tested and released.
 
 
-### Understand the idea · 2
+### Designs change at the slice, at the estimate and during build
 
 Section: learn. Stable action: learn-2.
 
 Designs change at the slice, at the estimate and during build.
 
 
-### Understand the idea · 3
+### Every team's process differs; the stages recur under different names
 
 Section: learn. Stable action: learn-3.
 
 Every team's process differs; the stages recur under different names.
 
 
-### Understand the idea · 4
+### Being present at the slicing is worth more than any specification
 
 Section: learn. Stable action: learn-4.
 
 Being present at the slicing is worth more than any specification.
 
 
-### Understand the idea · 5
+### The standard names the outcomes a good process protects
 
 Section: learn. Stable action: learn-5.
 
 The standard names the outcomes a good process protects.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The path was mapped from a real team: a fortnightly planning session picks work; an engineer estimates and often splits it; a build takes days to a week; a review compares the build with the design; a test pass finds defects; and a release goes out weekly behind a flag. The three change points were named with examples: at slicing the booking flow was split so that the cancellation path shipped a fortnight later; at estimation the held-place timer turned out to need server work and was simplified; during build the empty state was invented by the engineer because the design had not included one — which the m08 lessons would have prevented.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -608,6 +622,40 @@ Open Your work and choose Ready for review. The next lesson writes the work itse
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: How the work actually reaches people
+What I am trying to do: Map the path a design takes from agreed to used in a team you can observe or read about, and name the three points where designs most often change.
+
+Key idea or terms:
+Delivery: Everything between a design being agreed and a person using it. It is where most design decisions are actually finalised.
+Iteration: Changing the thing after it meets reality. A process that cannot iterate turns every mistake into a permanent feature.
+Stage: A point where the work changes hands or changes form: sliced, estimated, built, reviewed, tested, released. The names differ everywhere; the stages recur.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Mapping a delivery path with no team to observe, and giving up on the lesson. I have no team, no engineers and no release process, so this lesson cannot be done honestly. I nearly wrote a description of how delivery works in general and called it a map.
+
+Activity: Run a short simulated handoff conversation using only the supplied case. Ask me to explain one decision, one unresolved question and what the builder should verify. Keep the simulation labelled.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The outcomes a good delivery process protects, in your own words” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The outcomes a good delivery process protects, in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The outcomes a good delivery process protects, in your own words” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the stages you can actually observe or read about, and name who decides at each.
@@ -677,7 +725,7 @@ Adequate evidence: Two outcomes the mapped process would currently fail, with wh
 Repair: Read the standard's points against your map and find the two weakest. Recheck: The failing outcomes.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes the work itself, in pieces somebody could build.
 
@@ -715,58 +763,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A size estimate in days with anything larger re-sliced
 - One story re-sliced by outcome rather than by layer
 
-### Start with a clear task
+### Start here: in everyday words
+
+Delivery work makes a design clear enough for other people to build, question, test and change safely. In this lesson, your first small result is: Five stories naming the person, what they can do, and why it matters to them.
+
+**Words you will use**
+
+- **Story:** A placeholder for a conversation, written as who, what and why. It is not a specification and it is not a ticket for a screen.
+- **The why:** What the person gets out of it. It is the part that lets somebody propose a cheaper or better way of achieving the same thing.
+- **Describing a change:** Writing the thing you drew: add a countdown, build a filter panel. It tells somebody what to make and nothing about what it is for.
+
+**Quick example.** Made-up example. Writing stories for a tool-library booking, and writing the design back as a list. Five lines: add a countdown to the review screen, add a status chip to the list, build the cancellation screen, add an error state, and add the held-place message.
+
+The reader demonstrates and guides the task before asking for “Story 1 · who, what they can do, and why it matters to them”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write five stories for your product that each state who, what and why, are independently valuable, and are small enough to build in a few days.
 
 
-### Understand the idea · 1
+### A story names the person, what they can do, and why it matters to them
 
 Section: learn. Stable action: learn-1.
 
 A story names the person, what they can do, and why it matters to them.
 
 
-### Understand the idea · 2
+### Independently valuable means shipping it alone would help someone
 
 Section: learn. Stable action: learn-2.
 
 Independently valuable means shipping it alone would help someone.
 
 
-### Understand the idea · 3
+### Small enough to build in days keeps feedback frequent
 
 Section: learn. Stable action: learn-3.
 
 Small enough to build in days keeps feedback frequent.
 
 
-### Understand the idea · 4
+### The why is what lets an engineer propose a better how
 
 Section: learn. Stable action: learn-4.
 
 The why is what lets an engineer propose a better how.
 
 
-### Understand the idea · 5
+### A story is a placeholder for a conversation, not a specification
 
 Section: learn. Stable action: learn-5.
 
 A story is a placeholder for a conversation, not a specification.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Five stories from the booking work. “As someone who has booked, I can see that my place is held and for how long, so that I do not pay twice.” “As someone whose payment did not confirm, I can find out what happened without ringing, so that I do not book again.” Three were sized in days; two were too big and were re-sliced by outcome rather than by layer — the second became “I can see the status of a booking from the confirmation message” and “I can see the status without the message”, each independently useful.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1311,6 +1373,40 @@ Open Your work and choose Ready for review. The next lesson writes what would ha
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Writing work that can be built
+What I am trying to do: Write five stories for your product that each state who, what and why, are independently valuable, and are small enough to build in a few days.
+
+Key idea or terms:
+Story: A placeholder for a conversation, written as who, what and why. It is not a specification and it is not a ticket for a screen.
+The why: What the person gets out of it. It is the part that lets somebody propose a cheaper or better way of achieving the same thing.
+Describing a change: Writing the thing you drew: add a countdown, build a filter panel. It tells somebody what to make and nothing about what it is for.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing stories for a tool-library booking, and writing the design back as a list. Five lines: add a countdown to the review screen, add a status chip to the list, build the cancellation screen, add an error state, and add the held-place message.
+
+Activity: Run a short simulated handoff conversation using only the supplied case. Ask me to explain one decision, one unresolved question and what the builder should verify. Keep the simulation labelled.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Story 1 · who, what they can do, and why it matters to them” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Story 1 · who, what they can do, and why it matters to them”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Story 1 · who, what they can do, and why it matters to them” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - For each story complete “so that …” with something the person cares about, not a restatement.
@@ -1380,7 +1476,7 @@ Adequate evidence: A split producing two independently useful stories rather tha
 Repair: Take your largest story and find the smallest version that would still help someone. Recheck: The re-slice.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes what would have to be true for each of these to be done.
 
@@ -1418,58 +1514,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Outcome-shaped criteria with no implementation constraints
 - A read-through by someone else with ambiguities rewritten
 
-### Start with a clear task
+### Start here: in everyday words
+
+Delivery work makes a design clear enough for other people to build, question, test and change safely. In this lesson, your first small result is: Success criteria for three stories, each observable enough that two people would agree whether it passed.
+
+**Words you will use**
+
+- **Acceptance criteria:** What has to be true for a story to be done. They are a design artefact that testing uses, which is why writing them is your work.
+- **Observable:** Somebody can look and agree. If two people could reasonably disagree about whether it passed, it is not a criterion yet.
+- **Failure path:** What happens when it does not work: the error, the empty result, the expiry. It is used more often than most features you will design.
+
+**Quick example.** Made-up example. Writing failure criteria for a tool-library booking, and writing the failure I had already drawn. One failure criterion: if the tool is no longer available, the screen says so and offers the waiting list. It was the error state in my design, so it was the one in my head.
+
+The reader demonstrates and guides the task before asking for “Which three stories you are writing criteria for”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write acceptance criteria for three stories, covering success, failure and accessibility, that another person could verify without asking you what you meant.
 
 
-### Understand the idea · 1
+### A criterion is observable: someone can check it and agree
 
 Section: learn. Stable action: learn-1.
 
 A criterion is observable: someone can check it and agree.
 
 
-### Understand the idea · 2
+### Cover the failure paths, not only the success path
 
 Section: learn. Stable action: learn-2.
 
 Cover the failure paths, not only the success path.
 
 
-### Understand the idea · 3
+### Put accessibility requirements in the criteria, or they are optional
 
 Section: learn. Stable action: learn-3.
 
 Put accessibility requirements in the criteria, or they are optional.
 
 
-### Understand the idea · 4
+### Avoid criteria that describe implementation; describe the outcome
 
 Section: learn. Stable action: learn-4.
 
 Avoid criteria that describe implementation; describe the outcome.
 
 
-### Understand the idea · 5
+### If two people could disagree about whether it passed, rewrite it
 
 Section: learn. Stable action: learn-5.
 
 If two people could disagree about whether it passed, rewrite it.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The held-place story got seven criteria. Success: the review screen states the place is held and the remaining time; the time counts down; when it expires the person is told and their details are preserved. Failure: if the hold cannot be confirmed the screen says so and does not proceed to payment. Accessibility: the timer is announced when it appears and at expiry rather than every second; the state is distinguishable without colour; the screen is operable from a keyboard. Two criteria were rewritten after someone read them and asked what “clearly” meant.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2011,6 +2121,40 @@ Open Your work and choose Ready for review. The next lesson decides how much of 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Acceptance criteria that can be checked
+What I am trying to do: Write acceptance criteria for three stories, covering success, failure and accessibility, that another person could verify without asking you what you meant.
+
+Key idea or terms:
+Acceptance criteria: What has to be true for a story to be done. They are a design artefact that testing uses, which is why writing them is your work.
+Observable: Somebody can look and agree. If two people could reasonably disagree about whether it passed, it is not a criterion yet.
+Failure path: What happens when it does not work: the error, the empty result, the expiry. It is used more often than most features you will design.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing failure criteria for a tool-library booking, and writing the failure I had already drawn. One failure criterion: if the tool is no longer available, the screen says so and offers the waiting list. It was the error state in my design, so it was the one in my head.
+
+Activity: Run a short simulated handoff conversation using only the supplied case. Ask me to explain one decision, one unresolved question and what the builder should verify. Keep the simulation labelled.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Which three stories you are writing criteria for” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Which three stories you are writing criteria for”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Which three stories you are writing criteria for” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Rewrite any criterion containing a judgement word as something a person can look at and confirm.
@@ -2080,7 +2224,7 @@ Adequate evidence: No criterion names a technique unless the technique is the re
 Repair: For each criterion naming a technique, ask what outcome it protects and write that instead. Recheck: The revised criteria.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson decides how much of this is worth building at all.
 
@@ -2118,58 +2262,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A cut list with what would bring each item back
 - At least one item marked not worth building
 
-### Start with a clear task
+### Start here: in everyday words
+
+Delivery work makes a design clear enough for other people to build, question, test and change safely. In this lesson, your first small result is: A stated appetite for one feature, decided before any scoping, with the reason for that amount.
+
+**Words you will use**
+
+- **Appetite:** How much time something is worth, decided in advance. It is a judgement about value, which you can make, rather than a prediction about effort, which you cannot.
+- **Fixed time, variable scope:** The date holds and what goes in it moves. The alternative is fixing the scope and letting quality move, which happens silently.
+- **Cutting:** Design work, not failure. Deciding what survives is the same skill as deciding what to draw, done under a constraint.
+
+**Quick example.** Made-up example. Planning tool-library improvements, and deferring the constraint instead of deciding it. “Let us build it properly and see how long it takes.” It sounded like the careful answer and everybody agreed with it.
+
+The reader demonstrates and guides the task before asking for “How much time this feature is worth”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Set an appetite for one feature, cut the scope to fit it, and write what you removed and what would justify bringing each part back.
 
 
-### Understand the idea · 1
+### Appetite is how much time this is worth, decided before scoping
 
 Section: learn. Stable action: learn-1.
 
 Appetite is how much time this is worth, decided before scoping.
 
 
-### Understand the idea · 2
+### Fixed time with variable scope: the date holds and the scope moves
 
 Section: learn. Stable action: learn-2.
 
 Fixed time with variable scope: the date holds and the scope moves.
 
 
-### Understand the idea · 3
+### Cutting is design work, not failure; decide what survives
 
 Section: learn. Stable action: learn-3.
 
 Cutting is design work, not failure; decide what survives.
 
 
-### Understand the idea · 4
+### Record what you cut and what would bring it back
 
 Section: learn. Stable action: learn-4.
 
 Record what you cut and what would bring it back.
 
 
-### Understand the idea · 5
+### Some things are not worth building at all; say so
 
 Section: learn. Stable action: learn-5.
 
 Some things are not worth building at all; say so.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The appetite for the booking improvements was set at two weeks. The full design was six. Cutting to fit kept the held-place message, the payment states and the accessible form, and removed the shortlist, the filter presets and the redesigned card. Each removal recorded what would bring it back: the shortlist if a second study showed people comparing more than three options, the presets if support saw repeated requests, and the card if the system needed it elsewhere. One item was marked not worth building at all — an animated confirmation — with the reason.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2703,6 +2861,40 @@ Open Your work and choose Ready for review. The next lesson finds out what makes
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Appetite, and deciding what not to build
+What I am trying to do: Set an appetite for one feature, cut the scope to fit it, and write what you removed and what would justify bringing each part back.
+
+Key idea or terms:
+Appetite: How much time something is worth, decided in advance. It is a judgement about value, which you can make, rather than a prediction about effort, which you cannot.
+Fixed time, variable scope: The date holds and what goes in it moves. The alternative is fixing the scope and letting quality move, which happens silently.
+Cutting: Design work, not failure. Deciding what survives is the same skill as deciding what to draw, done under a constraint.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Planning tool-library improvements, and deferring the constraint instead of deciding it. “Let us build it properly and see how long it takes.” It sounded like the careful answer and everybody agreed with it.
+
+Activity: Run a short simulated handoff conversation using only the supplied case. Ask me to explain one decision, one unresolved question and what the builder should verify. Keep the simulation labelled.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “How much time this feature is worth” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “How much time this feature is worth”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “How much time this feature is worth” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write how much time this outcome is worth before looking at the design again.
@@ -2772,7 +2964,7 @@ Adequate evidence: One item marked as not worth building, with the reason.
 Repair: Find the item that would add cost without serving the outcome, and refuse it in writing. Recheck: The refusal.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson finds out what makes this work hard to size.
 
@@ -2810,58 +3002,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - One story redesigned to remove an unknown
 - A note of which unknowns were decisions rather than effort
 
-### Start with a clear task
+### Start here: in everyday words
+
+Delivery work makes a design clear enough for other people to build, question, test and change safely. In this lesson, your first small result is: Three stories prepared with your own known gaps marked, and a named person or an honest alternative route.
+
+**Words you will use**
+
+- **Estimate:** Mostly a measure of how unclear the work is. Read that way it becomes information rather than a number to negotiate.
+- **Informed reader:** Somebody who builds things, without being on your team. What they cannot answer from your story is the same list an engineer would produce.
+- **The reasoning:** Why that number. It is the part worth recording; the number on its own tells you nothing you can act on.
+
+**Quick example.** Made-up example. Taking tool-library stories to be estimated, and tidying them first. Went through the three stories the night before and smoothed over the parts I was unsure about, so the material would look finished.
+
+The reader demonstrates and guides the task before asking for “Which three stories, and what you already know is undefined in them”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Take three stories to an engineer or an informed reader, record what made each estimate uncertain, and redesign one to remove the uncertainty.
 
 
-### Understand the idea · 1
+### Uncertainty, not effort, is what makes an estimate large
 
 Section: learn. Stable action: learn-1.
 
 Uncertainty, not effort, is what makes an estimate large.
 
 
-### Understand the idea · 2
+### Idea 2: Ask what would make it smaller; the answer is usually a decisi…
 
 Section: learn. Stable action: learn-2.
 
 Ask what would make it smaller; the answer is usually a decision you can make.
 
 
-### Understand the idea · 3
+### Unknowns hide in integrations, data, edge cases and undefined states
 
 Section: learn. Stable action: learn-3.
 
 Unknowns hide in integrations, data, edge cases and undefined states.
 
 
-### Understand the idea · 4
+### Idea 4: A design that removes an unknown is worth more than one that l…
 
 Section: learn. Stable action: learn-4.
 
 A design that removes an unknown is worth more than one that looks better.
 
 
-### Understand the idea · 5
+### Never argue an estimate down; change what is being estimated
 
 Section: learn. Stable action: learn-5.
 
 Never argue an estimate down; change what is being estimated.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three stories were taken to an engineer. The held-place story estimated at a week, and the uncertainty was the timer's behaviour across devices and what happens if the person returns after expiry — both undefined in the design. Defining them dropped it to three days. The payment-status story stayed large because it depended on another system nobody had used; the response was to defer it and ship the message-based version first. The third was small and unchanged. The write-up recorded that specification, not persuasion, moved two of the three.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3377,6 +3583,40 @@ Open Your work and choose Ready for review. The next lesson holds the handover c
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: What an estimate is answering
+What I am trying to do: Take three stories to an engineer or an informed reader, record what made each estimate uncertain, and redesign one to remove the uncertainty.
+
+Key idea or terms:
+Estimate: Mostly a measure of how unclear the work is. Read that way it becomes information rather than a number to negotiate.
+Informed reader: Somebody who builds things, without being on your team. What they cannot answer from your story is the same list an engineer would produce.
+The reasoning: Why that number. It is the part worth recording; the number on its own tells you nothing you can act on.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Taking tool-library stories to be estimated, and tidying them first. Went through the three stories the night before and smoothed over the parts I was unsure about, so the material would look finished.
+
+Activity: Run a short simulated handoff conversation using only the supplied case. Ask me to explain one decision, one unresolved question and what the builder should verify. Keep the simulation labelled.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Which three stories, and what you already know is undefined in them” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Which three stories, and what you already know is undefined in them”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Which three stories, and what you already know is undefined in them” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Ask an engineer or an informed reader what they cannot answer from your story and criteria.
@@ -3446,7 +3686,7 @@ Adequate evidence: A note distinguishing unknowns you could resolve from work th
 Repair: Go through the uncertainties and mark which you could remove by deciding something. Recheck: The separation note.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson holds the handover conversation itself.
 
@@ -3484,58 +3724,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - At least one change to the design, recorded
 - An agreed escalation route for the unexpected
 
-### Start with a clear task
+### Start here: in everyday words
+
+Delivery work makes a design clear enough for other people to build, question, test and change safely. In this lesson, your first small result is: The story, criteria, states and wording assembled and sent ahead, with a named person or a labelled rehearsal.
+
+**Words you will use**
+
+- **Handover:** Agreeing what will be built, under what constraints, with what still undecided. The document is the input; the conversation is the event.
+- **Rehearsal:** Running the conversation with somebody who is not going to build it. It is useful practice and it is labelled as a rehearsal everywhere it appears.
+- **What already exists:** Components, patterns and data the team already has. Asking is the cheapest way to find that half your design is already built.
+
+**Quick example.** Made-up example. Running a handover for a tool-library feature, and running it as a presentation. Sent nothing in advance, brought the screens, and walked through all eleven of them for thirty-five minutes.
+
+The reader demonstrates and guides the task before asking for “What you assembled and sent, and how far ahead”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Run a handover for one story: prepare the artefacts, hold the conversation, and record every question asked and every decision made in it.
 
 
-### Understand the idea · 1
+### Send the artefacts before the conversation; do not present them in it
 
 Section: learn. Stable action: learn-1.
 
 Send the artefacts before the conversation; do not present them in it.
 
 
-### Understand the idea · 2
+### Use the time for questions and decisions, not for narrating screens
 
 Section: learn. Stable action: learn-2.
 
 Use the time for questions and decisions, not for narrating screens.
 
 
-### Understand the idea · 3
+### Idea 3: Record every decision made in the room, or it will be re-made…
 
 Section: learn. Stable action: learn-3.
 
 Record every decision made in the room, or it will be re-made differently.
 
 
-### Understand the idea · 4
+### Expect to change something; a handover with no changes was a briefing
 
 Section: learn. Stable action: learn-4.
 
 Expect to change something; a handover with no changes was a briefing.
 
 
-### Understand the idea · 5
+### Agree who decides what when something unexpected appears mid-build
 
 Section: learn. Stable action: learn-5.
 
 Agree who decides what when something unexpected appears mid-build.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The held-place story was sent two days ahead with its criteria, states and wording. The conversation lasted forty minutes and produced six decisions: the timer would be server-driven rather than local, the expiry warning would come from the same source, two of the five states were deferred with a note, the announcement wording changed because the chosen phrasing would repeat every second, and one criterion was rewritten because it prescribed an implementation. The escalation route was agreed: anything not covered comes to the designer same day, and if unavailable, the engineer chooses the option that preserves the person's data.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4082,6 +4336,40 @@ Open Your work and choose Ready for review. The next lesson checks the thing tha
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Handover as a conversation
+What I am trying to do: Run a handover for one story: prepare the artefacts, hold the conversation, and record every question asked and every decision made in it.
+
+Key idea or terms:
+Handover: Agreeing what will be built, under what constraints, with what still undecided. The document is the input; the conversation is the event.
+Rehearsal: Running the conversation with somebody who is not going to build it. It is useful practice and it is labelled as a rehearsal everywhere it appears.
+What already exists: Components, patterns and data the team already has. Asking is the cheapest way to find that half your design is already built.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Running a handover for a tool-library feature, and running it as a presentation. Sent nothing in advance, brought the screens, and walked through all eleven of them for thirty-five minutes.
+
+Activity: Run a short simulated handoff conversation using only the supplied case. Ask me to explain one decision, one unresolved question and what the builder should verify. Keep the simulation labelled.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What you assembled and sent, and how far ahead” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What you assembled and sent, and how far ahead”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What you assembled and sent, and how far ahead” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Send the material two days ahead next time and ask for questions in advance.
@@ -4151,7 +4439,7 @@ Adequate evidence: A named route for unexpected cases and a default when you are
 Repair: Agree who to ask and what to do if nobody answers, and write it in the record. Recheck: The escalation agreement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson checks the thing that comes back against what was agreed.
 
@@ -4189,58 +4477,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - State-by-state checks including failure paths
 - A prioritised list ordered by harm
 
-### Start with a clear task
+### Start here: in everyday words
+
+Delivery work makes a design clear enough for other people to build, question, test and change safely. In this lesson, your first small result is: Each acceptance criterion walked against the build, with pass or fail and what you actually observed.
+
+**Words you will use**
+
+- **Design QA:** Checking the built thing against what was agreed. It is your job because you know what the criteria meant.
+- **Observed:** What you saw happen. Distinct from what you concluded from it, and the part somebody else can check.
+- **Forcing a state:** Making it happen on purpose: going offline, submitting nothing, using data that breaks the layout. Waiting for states to occur finds only the common ones.
+
+**Quick example.** Made-up example. Reviewing a built tool-library feature, and reviewing what was on the screen. The default screen, carefully. Spacing against the token sheet, type sizes, the colours, the alignment of the action row. Eleven small findings in forty minutes.
+
+The reader demonstrates and guides the task before asking for “What you reviewed, and where it is”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Review a built feature against its criteria and specifications, and produce a prioritised list separating defects from changes of mind.
 
 
-### Understand the idea · 1
+### Check against the criteria first; they are what was agreed
 
 Section: learn. Stable action: learn-1.
 
 Check against the criteria first; they are what was agreed.
 
 
-### Understand the idea · 2
+### Separate defects from changes of mind, and label them honestly
 
 Section: learn. Stable action: learn-2.
 
 Separate defects from changes of mind, and label them honestly.
 
 
-### Understand the idea · 3
+### Check the states, not only the default screen
 
 Section: learn. Stable action: learn-3.
 
 Check the states, not only the default screen.
 
 
-### Understand the idea · 4
+### Check on a real device and at the widths you specified
 
 Section: learn. Stable action: learn-4.
 
 Check on a real device and at the widths you specified.
 
 
-### Understand the idea · 5
+### Prioritise by harm, as with any other problem list
 
 Section: learn. Stable action: learn-5.
 
 Prioritise by harm, as with any other problem list.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The built held-place feature was reviewed against seven criteria. Five passed. Two failed: the expiry warning announced every second rather than at appearance and expiry, and the state was distinguishable only by colour. Both were logged as defects with the criterion quoted. Four further observations were logged as requests, including a spacing inconsistency and a better wording idea, each marked as a change of mind rather than a defect. The review was done on a phone at two widths and with the keyboard, which is where both defects were found.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4749,6 +5051,40 @@ Open Your work and choose Ready for review. The next lesson writes three of thes
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Design QA on a real build
+What I am trying to do: Review a built feature against its criteria and specifications, and produce a prioritised list separating defects from changes of mind.
+
+Key idea or terms:
+Design QA: Checking the built thing against what was agreed. It is your job because you know what the criteria meant.
+Observed: What you saw happen. Distinct from what you concluded from it, and the part somebody else can check.
+Forcing a state: Making it happen on purpose: going offline, submitting nothing, using data that breaks the layout. Waiting for states to occur finds only the common ones.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Reviewing a built tool-library feature, and reviewing what was on the screen. The default screen, carefully. Spacing against the token sheet, type sizes, the colours, the alignment of the action row. Eleven small findings in forty minutes.
+
+Activity: Run a short simulated handoff conversation using only the supplied case. Ask me to explain one decision, one unresolved question and what the builder should verify. Keep the simulation labelled.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What you reviewed, and where it is” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What you reviewed, and where it is”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What you reviewed, and where it is” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Walk the criteria list one item at a time and record what you saw.
@@ -4818,7 +5154,7 @@ Adequate evidence: An ordered list where each item can be acted on without furth
 Repair: Rewrite each item so someone else could act on it, then sort by what it costs the person. Recheck: The prioritised list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes three of these up so somebody could fix them without asking you anything.
 
@@ -4856,58 +5192,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - The criterion or specification quoted per report
 - A reproduction attempt by someone else, with the result
 
-### Start with a clear task
+### Start here: in everyday words
+
+Delivery work makes a design clear enough for other people to build, question, test and change safely. In this lesson, your first small result is: Three reports, one defect each, with numbered steps, what happened and what should have happened.
+
+**Words you will use**
+
+- **Reproducible:** Somebody else can make it happen from what you wrote. A report that is not reproducible is a conversation request.
+- **Expected result:** What should have happened, taken from something agreed. Without it the reader has to guess what you wanted.
+- **Conditions:** Device, browser, viewport width, the data used and the connection. Missing conditions are the commonest reason a report cannot be reproduced.
+
+**Quick example.** Made-up example. Reporting a layout defect on a tool-library page, and reporting it with a picture. A screenshot of the price overlapping the button, with the message “this is broken on mobile”.
+
+The reader demonstrates and guides the task before asking for “Report 1 · the steps, what happened, and what should have happened”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write three defect reports that another person could reproduce and fix without asking you anything, and check them by having someone try.
 
 
-### Understand the idea · 1
+### State what you did, what happened and what should have happened
 
 Section: learn. Stable action: learn-1.
 
 State what you did, what happened and what should have happened.
 
 
-### Understand the idea · 2
+### Give the exact conditions: device, browser, size, data, connection
 
 Section: learn. Stable action: learn-2.
 
 Give the exact conditions: device, browser, size, data, connection.
 
 
-### Understand the idea · 3
+### One defect per report; combined reports get half fixed
 
 Section: learn. Stable action: learn-3.
 
 One defect per report; combined reports get half fixed.
 
 
-### Understand the idea · 4
+### Quote the criterion or specification the behaviour contradicts
 
 Section: learn. Stable action: learn-4.
 
 Quote the criterion or specification the behaviour contradicts.
 
 
-### Understand the idea · 5
+### Say how severe it is in terms of the person, not your annoyance
 
 Section: learn. Stable action: learn-5.
 
 Say how severe it is in terms of the person, not your annoyance.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three reports. First: steps — open the class page on a phone at 360 px with a class whose title runs long, throttle to a slow connection, tap book; observed — the price overlaps the button while the image loads; expected — the layout reserves the image space, per the m08 loading specification; conditions — device, browser, width, throttling profile, data used; severity — a person may tap the wrong control while paying. Two were reproduced by someone else on the first attempt; the third could not be, and the missing condition turned out to be the account state, which was added.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5435,6 +5785,40 @@ Open Your work and choose Ready for review. The next lesson argues for the work 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Reporting a defect so it gets fixed
+What I am trying to do: Write three defect reports that another person could reproduce and fix without asking you anything, and check them by having someone try.
+
+Key idea or terms:
+Reproducible: Somebody else can make it happen from what you wrote. A report that is not reproducible is a conversation request.
+Expected result: What should have happened, taken from something agreed. Without it the reader has to guess what you wanted.
+Conditions: Device, browser, viewport width, the data used and the connection. Missing conditions are the commonest reason a report cannot be reproduced.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Reporting a layout defect on a tool-library page, and reporting it with a picture. A screenshot of the price overlapping the button, with the message “this is broken on mobile”.
+
+Activity: Run a short simulated handoff conversation using only the supplied case. Ask me to explain one decision, one unresolved question and what the builder should verify. Keep the simulation labelled.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Report 1 · the steps, what happened, and what should have happened” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Report 1 · the steps, what happened, and what should have happened”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Report 1 · the steps, what happened, and what should have happened” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Add the expected result to every report; without it nobody knows what fixing means.
@@ -5504,7 +5888,7 @@ Adequate evidence: A record of someone attempting each report and what they coul
 Repair: Hand the reports to someone and watch them try; every question is a missing detail. Recheck: The reproduction results.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson argues for the work in the terms the decision is actually made in.
 
@@ -5542,58 +5926,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A smaller version prepared in advance
 - The honest weakness in your own argument
 
-### Start with a clear task
+### Start here: in everyday words
+
+Delivery work makes a design clear enough for other people to build, question, test and change safely. In this lesson, your first small result is: What the person deciding is accountable for, and how you found out or that you are guessing.
+
+**Words you will use**
+
+- **Accountable for:** What somebody else asks them about: a queue, a cost, a date, a number they report. It is narrower than what they care about.
+- **Finding out:** Usually one question, asked before the case is made. Guessing is allowed when it is labelled, and it is the commonest reason a good case fails.
+- **Translation:** Connecting your evidence to the thing somebody else is answerable for. It is not spin; the same facts, expressed in the terms the decision is made in.
+
+**Quick example.** Made-up example. Arguing for held-place work on a tool library, and arguing in design terms. “The flow does not communicate state.” It is true, it is precise, and it is the sentence I would use with another designer.
+
+The reader demonstrates and guides the task before asking for “What the person deciding is accountable for”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Make the case for one piece of design work in the terms the decision is actually made in, and write the version of the argument that would fail honestly.
 
 
-### Understand the idea · 1
+### Find out how the decision is actually made before making the case
 
 Section: learn. Stable action: learn-1.
 
 Find out how the decision is actually made before making the case.
 
 
-### Understand the idea · 2
+### Translate evidence into the consequences the decider is accountable for
 
 Section: learn. Stable action: learn-2.
 
 Translate evidence into the consequences the decider is accountable for.
 
 
-### Understand the idea · 3
+### Name the cost of not doing it, with what you observed
 
 Section: learn. Stable action: learn-3.
 
 Name the cost of not doing it, with what you observed.
 
 
-### Understand the idea · 4
+### Idea 4: Offer the smaller version; a rejected large ask often hides an…
 
 Section: learn. Stable action: learn-4.
 
 Offer the smaller version; a rejected large ask often hides an accepted small one.
 
 
-### Understand the idea · 5
+### Be honest about uncertainty; overclaiming loses the next argument too
 
 Section: learn. Stable action: learn-5.
 
 Be honest about uncertainty; overclaiming loses the next argument too.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The case for the held-place work was written twice. The design version: the flow does not communicate state. The delivery version: two of three participants could not tell whether their place was secured, one said she would have paid again, and duplicate payments generate refunds and support contacts — this is a two-day change to a message and a state. The smaller version was prepared in advance: if two days is unavailable, one day covers the message without the countdown. The honest weakness was written too: three participants cannot establish how often this happens, and no support data was available to check it.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6143,6 +6541,40 @@ Open Your work and choose Ready for review. The next lesson runs the meetings wh
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Arguing for the work with evidence
+What I am trying to do: Make the case for one piece of design work in the terms the decision is actually made in, and write the version of the argument that would fail honestly.
+
+Key idea or terms:
+Accountable for: What somebody else asks them about: a queue, a cost, a date, a number they report. It is narrower than what they care about.
+Finding out: Usually one question, asked before the case is made. Guessing is allowed when it is labelled, and it is the commonest reason a good case fails.
+Translation: Connecting your evidence to the thing somebody else is answerable for. It is not spin; the same facts, expressed in the terms the decision is made in.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Arguing for held-place work on a tool library, and arguing in design terms. “The flow does not communicate state.” It is true, it is precise, and it is the sentence I would use with another designer.
+
+Activity: Run a short simulated handoff conversation using only the supplied case. Ask me to explain one decision, one unresolved question and what the builder should verify. Keep the simulation labelled.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What the person deciding is accountable for” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What the person deciding is accountable for”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What the person deciding is accountable for” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Ask what the decision rests on before writing the argument.
@@ -6212,7 +6644,7 @@ Adequate evidence: The strongest objection to your own case, with what would set
 Repair: Ask what you would say against this if you were the decider, and write that down. Recheck: The weakness statement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson runs the meetings where these decisions get made.
 
@@ -6250,58 +6682,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A comparison of what each produced
 - A next action with an owner and a date
 
-### Start with a clear task
+### Start here: in everyday words
+
+Delivery work makes a design clear enough for other people to build, question, test and change safely. In this lesson, your first small result is: One question written down, the work sent in advance, and a statement that no decisions will be taken.
+
+**Words you will use**
+
+- **Critique:** A meeting for improving work in progress. Nothing is decided, which is what makes people willing to raise problems.
+- **Review:** A meeting for deciding. The work is presented against its criteria, and people leave with answers rather than opinions.
+- **Asking for problems:** Asking what is wrong and what else would work, rather than whether people like it. Approval is the least useful thing a room can give you.
+
+**Quick example.** Made-up example. Running a critique on a tool-library screen, and asking for feedback in general. “Any thoughts on this?” Four people, twenty-five minutes, and a genuinely engaged conversation.
+
+The reader demonstrates and guides the task before asking for “The one question you need answered”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Run one design critique and one review with a stated purpose, a prepared question and a written decision record, and compare what each produced.
 
 
-### Understand the idea · 1
+### State the purpose and the question before the meeting starts
 
 Section: learn. Stable action: learn-1.
 
 State the purpose and the question before the meeting starts.
 
 
-### Understand the idea · 2
+### Critique is for improving work in progress; review is for deciding
 
 Section: learn. Stable action: learn-2.
 
 Critique is for improving work in progress; review is for deciding.
 
 
-### Understand the idea · 3
+### Ask for specific feedback: on this decision, against this evidence
 
 Section: learn. Stable action: learn-3.
 
 Ask for specific feedback: on this decision, against this evidence.
 
 
-### Understand the idea · 4
+### Write the decisions and who made them, during the meeting
 
 Section: learn. Stable action: learn-4.
 
 Write the decisions and who made them, during the meeting.
 
 
-### Understand the idea · 5
+### End by naming what happens next and by when
 
 Section: learn. Stable action: learn-5.
 
 End by naming what happens next and by when.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The critique was run on the held-place state with one question: does this communicate that a place is secured and for how long? Three people responded; two raised the same problem, that the phrasing read as marketing rather than status. No decisions were taken and the notes were kept. The review a week later presented the revised version against its criteria and the QA findings, and produced three decisions: accept the wording, defer the countdown to a later story, and change one criterion that had proved unverifiable. Both meetings had a written record; the critique's was a problem list and the review's was a decision list.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6854,6 +7300,40 @@ Open Your work and choose Ready for review. The next lesson decides what shippin
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Meetings that decide something
+What I am trying to do: Run one design critique and one review with a stated purpose, a prepared question and a written decision record, and compare what each produced.
+
+Key idea or terms:
+Critique: A meeting for improving work in progress. Nothing is decided, which is what makes people willing to raise problems.
+Review: A meeting for deciding. The work is presented against its criteria, and people leave with answers rather than opinions.
+Asking for problems: Asking what is wrong and what else would work, rather than whether people like it. Approval is the least useful thing a room can give you.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Running a critique on a tool-library screen, and asking for feedback in general. “Any thoughts on this?” Four people, twenty-five minutes, and a genuinely engaged conversation.
+
+Activity: Run a short simulated handoff conversation using only the supplied case. Ask me to explain one decision, one unresolved question and what the builder should verify. Keep the simulation labelled.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The one question you need answered” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The one question you need answered”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The one question you need answered” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the question you need answered and send it with the work.
@@ -6923,7 +7403,7 @@ Adequate evidence: A named action with a person and a date, agreed before the me
 Repair: End the next meeting by reading back the decisions and naming who does what by when. Recheck: The next action.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson decides what shipping this would actually mean.
 
@@ -6961,58 +7441,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A reversal or change condition
 - A note of what cannot be measured and how you will ask instead
 
-### Start with a clear task
+### Start here: in everyday words
+
+Delivery work makes a design clear enough for other people to build, question, test and change safely. In this lesson, your first small result is: The difference between an output and an outcome, in your own words and about this feature.
+
+**Words you will use**
+
+- **Output:** The thing that now exists. It is entirely within your control and it proves nothing about whether it helped.
+- **Outcome:** What is different for people afterwards. It is not in your control and it is the only reason the output was built.
+- **Holding something back:** Deciding not to ship part of it yet, for a stated reason. It is different from not having finished it.
+
+**Quick example.** Made-up example. Deciding what ships of a tool-library feature, and holding back the wrong half. The countdown, because it needs server work. The message and the states would ship now and the countdown would follow.
+
+The reader demonstrates and guides the task before asking for “The difference between an output and an outcome, in your own words”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write a release plan for one feature naming what ships, what is held back, what you will look at afterwards and what would make you reverse it.
 
 
-### Understand the idea · 1
+### Decide what ships and what is deliberately held back
 
 Section: learn. Stable action: learn-1.
 
 Decide what ships and what is deliberately held back.
 
 
-### Understand the idea · 2
+### Name what you will look at afterwards, before you ship
 
 Section: learn. Stable action: learn-2.
 
 Name what you will look at afterwards, before you ship.
 
 
-### Understand the idea · 3
+### Say what would make you reverse or change it
 
 Section: learn. Stable action: learn-3.
 
 Say what would make you reverse or change it.
 
 
-### Understand the idea · 4
+### Distinguish what you can measure from what you can only ask about
 
 Section: learn. Stable action: learn-4.
 
 Distinguish what you can measure from what you can only ask about.
 
 
-### Understand the idea · 5
+### A release is not evidence that the design was right
 
 Section: learn. Stable action: learn-5.
 
 A release is not evidence that the design was right.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The release plan: the held-place message and states ship; the countdown is held back until the timer is server-driven; the whole feature goes to everyone at once, since a subset would fragment support. Before shipping, three things were named: whether support contacts about payment status change over four weeks, whether anyone reports a duplicate payment, and a short round of three conversations with recent bookers. The reversal condition: if duplicate payments continue at the same rate after four weeks, the state design is not the cause and the work moves to the payment confirmation itself. It was recorded that none of the three is a controlled comparison.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7569,6 +8063,40 @@ Open Your work and choose Ready for review. The last lesson of the module decide
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Release, and knowing whether it worked
+What I am trying to do: Write a release plan for one feature naming what ships, what is held back, what you will look at afterwards and what would make you reverse it.
+
+Key idea or terms:
+Output: The thing that now exists. It is entirely within your control and it proves nothing about whether it helped.
+Outcome: What is different for people afterwards. It is not in your control and it is the only reason the output was built.
+Holding something back: Deciding not to ship part of it yet, for a stated reason. It is different from not having finished it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Deciding what ships of a tool-library feature, and holding back the wrong half. The countdown, because it needs server work. The message and the states would ship now and the countdown would follow.
+
+Activity: Run a short simulated handoff conversation using only the supplied case. Ask me to explain one decision, one unresolved question and what the builder should verify. Keep the simulation labelled.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The difference between an output and an outcome, in your own words” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The difference between an output and an outcome, in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The difference between an output and an outcome, in your own words” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Walk the partial version as a new person and check it makes sense without the held-back parts.
@@ -7638,7 +8166,7 @@ Adequate evidence: A list of what cannot be counted and the conversational alter
 Repair: List the claims you cannot count and plan three conversations instead. Recheck: The limits note.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The last lesson of the module decides what to change about how you work.
 
@@ -7676,58 +8204,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - One committed change with an owner and a date
 - A check for whether it helped, decided now
 
-### Start with a clear task
+### Start here: in everyday words
+
+Delivery work makes a design clear enough for other people to build, question, test and change safely. In this lesson, your first small result is: The events of this delivery written without names attached to failures, and what went well.
+
+**Words you will use**
+
+- **Retrospective:** Where a team decides what to change. Without a committed change it is a complaint session with an agenda.
+- **Events, not people:** Describing what happened rather than who did it. Once a name is attached to a failure, everybody defends rather than examines.
+- **Cost:** Time redone, days lost, defects produced. It is what makes a ranking arguable rather than a matter of who felt most strongly.
+
+**Quick example.** Made-up example. Running a retrospective on a tool-library delivery, and ranking by how it felt. The handover meeting, which overran by twenty minutes and went over things I had already written down. It had annoyed me for a week.
+
+The reader demonstrates and guides the task before asking for “The events of this delivery, without names attached to failures”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Run a retrospective on this delivery, identify the two things that cost the most, and commit to one change with a way of checking whether it helped.
 
 
-### Understand the idea · 1
+### Look at what happened, not at who did it
 
 Section: learn. Stable action: learn-1.
 
 Look at what happened, not at who did it.
 
 
-### Understand the idea · 2
+### Find the two costliest problems, not the most annoying ones
 
 Section: learn. Stable action: learn-2.
 
 Find the two costliest problems, not the most annoying ones.
 
 
-### Understand the idea · 3
+### Commit to one change, with a person and a date
 
 Section: learn. Stable action: learn-3.
 
 Commit to one change, with a person and a date.
 
 
-### Understand the idea · 4
+### Decide in advance how you will know whether it helped
 
 Section: learn. Stable action: learn-4.
 
 Decide in advance how you will know whether it helped.
 
 
-### Understand the idea · 5
+### Record what you tried, including changes that did not work
 
 Section: learn. Stable action: learn-5.
 
 Record what you tried, including changes that did not work.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The retrospective looked at the whole delivery. The two costliest problems: undefined states that were invented during the build, costing a day and producing two defects; and a handover held too late, which meant the estimate was made without the criteria. The committed change: criteria and states go into the story before estimation, owned by the learner, starting with the next story. The check: at the next retrospective, count how many states were invented during the build; the target is zero, and if it is not, the change was not enough. A previous change — sending material two days ahead — was reviewed and had worked.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -8251,6 +8793,40 @@ Open Your work and choose Ready for review. This closes Module 14. Module 15 tur
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: What to change about how you work
+What I am trying to do: Run a retrospective on this delivery, identify the two things that cost the most, and commit to one change with a way of checking whether it helped.
+
+Key idea or terms:
+Retrospective: Where a team decides what to change. Without a committed change it is a complaint session with an agenda.
+Events, not people: Describing what happened rather than who did it. Once a name is attached to a failure, everybody defends rather than examines.
+Cost: Time redone, days lost, defects produced. It is what makes a ranking arguable rather than a matter of who felt most strongly.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Running a retrospective on a tool-library delivery, and ranking by how it felt. The handover meeting, which overran by twenty minutes and went over things I had already written down. It had annoyed me for a week.
+
+Activity: Run a short simulated handoff conversation using only the supplied case. Ask me to explain one decision, one unresolved question and what the builder should verify. Keep the simulation labelled.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The events of this delivery, without names attached to failures” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The events of this delivery, without names attached to failures”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The events of this delivery, without names attached to failures” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Rewrite each item as an event and the condition that made it likely.
@@ -8320,7 +8896,7 @@ Adequate evidence: A countable or observable difference expected next time.
 Repair: Write what you will count next time, and what number would mean the change failed. Recheck: The check.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This closes Module 14. Module 15 turns to what the numbers can and cannot tell you.
 

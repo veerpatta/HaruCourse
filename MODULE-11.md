@@ -23,58 +23,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A note of which are permanent, temporary or situational
 - One barrier you had not previously considered
 
-### Start with a clear task
+### Start here: in everyday words
+
+Accessible design removes barriers that stop people from perceiving, understanding or operating a product. In this lesson, your first small result is: One sentence in your own words saying what makes something a barrier, written as a mismatch rather than as a property of a person.
+
+**Words you will use**
+
+- **Barrier:** Something in a design that stops a particular person doing a particular thing. It lives in the design, which is why it can be removed.
+- **Assistive technology:** Software or hardware someone uses to reach a product: a screen reader, magnification, voice control, a switch. Most barriers are met by people using none of it.
+- **Permanent, temporary, situational:** One person may have low vision always, another after eye surgery, a third only in sunlight. All three meet the same design.
+
+**Quick example.** Made-up example. Writing the first barrier for a class-booking product, and writing a category instead. “Blind users cannot use the booking flow.” I wrote it, felt serious about accessibility, and moved to the next line.
+
+The reader demonstrates and guides the task before asking for “In your own words: what makes something a barrier?”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Identify five specific barriers in your own product, each naming the person, the situation and the design decision that causes it.
 
 
-### Understand the idea · 1
+### Idea 1: Disability is a mismatch between a person and a design, not a…
 
 Section: learn. Stable action: learn-1.
 
 Disability is a mismatch between a person and a design, not a property of the person.
 
 
-### Understand the idea · 2
+### Idea 2: Barriers are permanent, temporary and situational: one arm in…
 
 Section: learn. Stable action: learn-2.
 
 Barriers are permanent, temporary and situational: one arm in a cast, bright sunlight, a noisy room.
 
 
-### Understand the idea · 3
+### Idea 3: Name the specific barrier, not the category: “focus is invisib…
 
 Section: learn. Stable action: learn-3.
 
 Name the specific barrier, not the category: “focus is invisible on the tinted panel”.
 
 
-### Understand the idea · 4
+### Idea 4: Most barriers come from ordinary decisions: a colour, a target…
 
 Section: learn. Stable action: learn-4.
 
 Most barriers come from ordinary decisions: a colour, a target size, a hidden control.
 
 
-### Understand the idea · 5
+### Fixing one barrier usually improves the product for everyone
 
 Section: learn. Stable action: learn-5.
 
 Fixing one barrier usually improves the product for everyone.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Five barriers from the booking product. A person using a screen reader cannot tell which classes are full, because availability is shown only by a colour dot. A person with limited fine motor control cannot remove a shortlist item, because the only route is a swipe. Anyone in sunlight cannot read the quiet caption at 3.1:1 contrast. A person with a tremor mis-taps the destructive cancel control, which sits 4px from the primary action. And a person using the site in Hindi meets an English-only date format, which is a language barrier the team had never considered. Each names a decision rather than a category.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -651,6 +665,40 @@ Open Your work and choose Ready for review. The next lesson maps these five barr
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Who is excluded, and by what
+What I am trying to do: Identify five specific barriers in your own product, each naming the person, the situation and the design decision that causes it.
+
+Key idea or terms:
+Barrier: Something in a design that stops a particular person doing a particular thing. It lives in the design, which is why it can be removed.
+Assistive technology: Software or hardware someone uses to reach a product: a screen reader, magnification, voice control, a switch. Most barriers are met by people using none of it.
+Permanent, temporary, situational: One person may have low vision always, another after eye surgery, a third only in sunlight. All three meet the same design.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing the first barrier for a class-booking product, and writing a category instead. “Blind users cannot use the booking flow.” I wrote it, felt serious about accessibility, and moved to the next line.
+
+Activity: Give me one barrier from the supplied case. Ask who is blocked, in what situation and which design decision caused it. Then ask for one repair and one way to test the built result.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “In your own words: what makes something a barrier?” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “In your own words: what makes something a barrier?”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “In your own words: what makes something a barrier?” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Rewrite each barrier as “a person who … trying to … cannot, because …”. Anything you cannot complete is a category, not a barrier.
@@ -720,7 +768,7 @@ Adequate evidence: An ordered list distinguishing total blocks from difficulties
 Repair: For each barrier ask whether the person can finish the task another way. Those with no route go first. Recheck: The ranked list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson maps these five barriers onto the standard, so keep them exactly as they are.
 
@@ -758,58 +806,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A note where no criterion covers your barrier
 - A stated target level with the reason
 
-### Start with a clear task
+### Start here: in everyday words
+
+Accessible design removes barriers that stop people from perceiving, understanding or operating a product. In this lesson, your first small result is: The four principles in your own words, and one criterion you already meet with the reason you know it.
+
+**Words you will use**
+
+- **Success criterion:** One numbered statement of something that must be true. It says what, never how, so several designs can meet the same criterion.
+- **Level A, AA, AAA:** Three tiers. A is the floor, AA is the common working target, AAA is adopted criterion by criterion where an audience needs it rather than as a whole.
+- **Quick reference:** The filterable view of the standard. You set the level and the topic, and it shows only the criteria that apply, which is how it becomes usable.
+
+**Quick example.** Made-up example. Looking for the criterion that covers a swipe-only remove control, and reading the standard the wrong way round. I opened the standard at the top and started reading. Forty minutes later I was in the middle of the second principle, had read about sign language, and had matched nothing.
+
+The reader demonstrates and guides the task before asking for “The four principles, in your own words”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Map your five barriers to specific success criteria at levels A and AA, and record for each what would count as meeting it in your design.
 
 
-### Understand the idea · 1
+### Four principles: perceivable, operable, understandable, robust
 
 Section: learn. Stable action: learn-1.
 
 Four principles: perceivable, operable, understandable, robust.
 
 
-### Understand the idea · 2
+### Criteria come at levels A, AA and AAA; AA is the common working target
 
 Section: learn. Stable action: learn-2.
 
 Criteria come at levels A, AA and AAA; AA is the common working target.
 
 
-### Understand the idea · 3
+### Filter to what your artefact affects rather than reading everything
 
 Section: learn. Stable action: learn-3.
 
 Filter to what your artefact affects rather than reading everything.
 
 
-### Understand the idea · 4
+### A criterion tells you what must be true, not how to design it
 
 Section: learn. Stable action: learn-4.
 
 A criterion tells you what must be true, not how to design it.
 
 
-### Understand the idea · 5
+### Idea 5: Reading a criterion is not conformance; only a tested build ap…
 
 Section: learn. Stable action: learn-5.
 
 Reading a criterion is not conformance; only a tested build approaches that.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Five barriers mapped to five criteria. Colour-only availability mapped to the use-of-colour criterion, and meeting it here meant adding a text label beside the dot. The swipe-only removal mapped to the keyboard criterion: every function available from a keyboard, met by adding a visible control with a key route. The 3.1:1 caption mapped to contrast (minimum), met by darkening the text and re-measuring. The adjacent destructive control mapped to target size, met by increasing spacing. The English-only date format mapped to a language and localisation concern the standard covers only partly, so the lesson recorded it as a product requirement rather than a criterion.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1395,6 +1457,40 @@ Open Your work and choose Ready for review. The next lesson takes the structure 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Using the standard without drowning in it
+What I am trying to do: Map your five barriers to specific success criteria at levels A and AA, and record for each what would count as meeting it in your design.
+
+Key idea or terms:
+Success criterion: One numbered statement of something that must be true. It says what, never how, so several designs can meet the same criterion.
+Level A, AA, AAA: Three tiers. A is the floor, AA is the common working target, AAA is adopted criterion by criterion where an audience needs it rather than as a whole.
+Quick reference: The filterable view of the standard. You set the level and the topic, and it shows only the criteria that apply, which is how it becomes usable.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Looking for the criterion that covers a swipe-only remove control, and reading the standard the wrong way round. I opened the standard at the top and started reading. Forty minutes later I was in the middle of the second principle, had read about sign language, and had matched nothing.
+
+Activity: Give me one barrier from the supplied case. Ask who is blocked, in what situation and which design decision caused it. Then ask for one repair and one way to test the built result.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The four principles, in your own words” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The four principles, in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The four principles, in your own words” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Filter the reference by the topic of each barrier and find the criterion that names it. If none does, mark it uncovered.
@@ -1464,7 +1560,7 @@ Adequate evidence: A written line distinguishing criteria consulted from conform
 Repair: Add one sentence: what you have read, and what remains untested about the build. Recheck: The boundary statement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes the structure criteria and checks two of your screens against them.
 
@@ -1502,58 +1598,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A reading-order check with any mismatch fixed
 - A read-aloud test of the headings alone
 
-### Start with a clear task
+### Start here: in everyday words
+
+Accessible design removes barriers that stop people from perceiving, understanding or operating a product. In this lesson, your first small result is: Two screens written as indented outlines, using the labels you already chose in Module 6.
+
+**Words you will use**
+
+- **Heading outline:** The headings of a screen, in order, with their levels shown by indentation. It is what a person hears when they ask for the structure instead of the text.
+- **Page title:** The single top heading that says what this screen is. One per screen; a second one tells a reader they have arrived somewhere new when they have not.
+- **Skipped level:** Going from level one to level three with nothing in between. A person navigating by structure hears a gap and cannot tell what the section belongs to.
+
+**Quick example.** Made-up example. Fixing the outline of a class detail screen, where the levels had been chosen by how big the text looked. Five headings, three of them level one. They were level one because they were set in the large size, and the large size had been chosen because they were important.
+
+The reader demonstrates and guides the task before asking for “Screen 1 · the heading outline, indented”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Give two screens a correct heading outline, named regions and a reading order that matches the visual order, and verify each with a check you can run yourself.
 
 
-### Understand the idea · 1
+### One page title, then headings nested without skipping levels
 
 Section: learn. Stable action: learn-1.
 
 One page title, then headings nested without skipping levels.
 
 
-### Understand the idea · 2
+### Idea 2: Regions let someone jump straight to the main content instead…
 
 Section: learn. Stable action: learn-2.
 
 Regions let someone jump straight to the main content instead of hearing the menu again.
 
 
-### Understand the idea · 3
+### Idea 3: Reading order must match visual order; a two-column layout oft…
 
 Section: learn. Stable action: learn-3.
 
 Reading order must match visual order; a two-column layout often breaks this.
 
 
-### Understand the idea · 4
+### Headings describe their section; “Details” describes nothing
 
 Section: learn. Stable action: learn-4.
 
 Headings describe their section; “Details” describes nothing.
 
 
-### Understand the idea · 5
+### Check by reading the headings alone: they should summarise the page
 
 Section: learn. Stable action: learn-5.
 
 Check by reading the headings alone: they should summarise the page.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The class detail screen had five visual headings and no outline: three were level one because they looked large. Rewritten as page title, then four level-two sections, using the labels from the m06 table. The regions were named so the main content could be reached directly. The reading order was checked and one problem found: the price panel appeared visually beside the title but came after the description in order, so a person reading in sequence met the price three screens' worth of text later. It was moved. Reading the headings aloud now summarised the page in six phrases.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2124,6 +2234,40 @@ Open Your work and choose Ready for review. The next lesson measures the text on
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Structure people can navigate
+What I am trying to do: Give two screens a correct heading outline, named regions and a reading order that matches the visual order, and verify each with a check you can run yourself.
+
+Key idea or terms:
+Heading outline: The headings of a screen, in order, with their levels shown by indentation. It is what a person hears when they ask for the structure instead of the text.
+Page title: The single top heading that says what this screen is. One per screen; a second one tells a reader they have arrived somewhere new when they have not.
+Skipped level: Going from level one to level three with nothing in between. A person navigating by structure hears a gap and cannot tell what the section belongs to.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Fixing the outline of a class detail screen, where the levels had been chosen by how big the text looked. Five headings, three of them level one. They were level one because they were set in the large size, and the large size had been chosen because they were important.
+
+Activity: Give me one barrier from the supplied case. Ask who is blocked, in what situation and which design decision caused it. Then ask for one repair and one way to test the built result.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Screen 1 · the heading outline, indented” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Screen 1 · the heading outline, indented”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Screen 1 · the heading outline, indented” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write each screen as a numbered outline and check each item is a genuine subsection of the one above.
@@ -2193,7 +2337,7 @@ Adequate evidence: A record of reading headings alone to someone, with resulting
 Repair: Read only the headings to someone and ask what the page contains. Rewrite what they cannot infer. Recheck: The read-aloud record.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson measures the text on these same two screens.
 
@@ -2231,58 +2375,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A 200 per cent text test with breakages named and fixed
 - A line-length and spacing decision for body text
 
-### Start with a clear task
+### Start here: in everyday words
+
+Accessible design removes barriers that stop people from perceiving, understanding or operating a product. In this lesson, your first small result is: Every text-on-surface pair listed, each with a measured ratio, and the failing ones marked with their size.
+
+**Words you will use**
+
+- **Contrast ratio:** A number from 1 to 21 comparing how light the text is against how light its background is. It is calculated, not judged by eye.
+- **Quiet text:** Captions, placeholder text, helper lines and disabled labels. They are set pale on purpose, which is exactly why they fail most often.
+- **Threshold:** The ratio a pair has to reach. Larger and heavier text is allowed a lower one, so the size has to be recorded beside the number.
+
+**Quick example.** Made-up example. Measuring the text on a tool-library card, and listing only the text I had designed on purpose. Six pairs: the title, the body, the two headings, the button label and the price. All six passed comfortably, and I nearly wrote that the screen was fine.
+
+The reader demonstrates and guides the task before asking for “Every place text sits on a surface, including the quiet text”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Measure contrast for every text pair in your design, test the layout at 200 per cent text size, and repair what breaks without removing content.
 
 
-### Understand the idea · 1
+### Measure contrast; do not judge it by eye under studio lighting
 
 Section: learn. Stable action: learn-1.
 
 Measure contrast; do not judge it by eye under studio lighting.
 
 
-### Understand the idea · 2
+### Quiet text — captions, placeholders, disabled labels — fails most often
 
 Section: learn. Stable action: learn-2.
 
 Quiet text — captions, placeholders, disabled labels — fails most often.
 
 
-### Understand the idea · 3
+### Enlarging text must reflow the layout, not clip or scroll it sideways
 
 Section: learn. Stable action: learn-3.
 
 Enlarging text must reflow the layout, not clip or scroll it sideways.
 
 
-### Understand the idea · 4
+### Line length and spacing affect reading as much as size does
 
 Section: learn. Stable action: learn-4.
 
 Line length and spacing affect reading as much as size does.
 
 
-### Understand the idea · 5
+### Meeting a ratio is a floor, not proof that text is comfortable to read
 
 Section: learn. Stable action: learn-5.
 
 Meeting a ratio is a floor, not proof that text is comfortable to read.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Nine text pairs were measured. Three failed: the caption at 3.1:1, the placeholder at 2.8:1 and the disabled button label at 2.4:1. The caption was darkened; the placeholder was replaced with a permanent hint under the label, removing the problem instead of repairing it; the disabled label was given a stronger colour and a written explanation beside it, since a disabled control with unreadable text tells nobody anything. At 200 per cent text the price panel clipped its last line and the header wrapped over the logo; both were fixed by allowing the containers to grow. Line length on the description exceeded ninety characters at wide widths and was capped.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2830,6 +2988,40 @@ Open Your work and choose Ready for review. The next lesson looks at everything 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Text people can actually read
+What I am trying to do: Measure contrast for every text pair in your design, test the layout at 200 per cent text size, and repair what breaks without removing content.
+
+Key idea or terms:
+Contrast ratio: A number from 1 to 21 comparing how light the text is against how light its background is. It is calculated, not judged by eye.
+Quiet text: Captions, placeholder text, helper lines and disabled labels. They are set pale on purpose, which is exactly why they fail most often.
+Threshold: The ratio a pair has to reach. Larger and heavier text is allowed a lower one, so the size has to be recorded beside the number.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Measuring the text on a tool-library card, and listing only the text I had designed on purpose. Six pairs: the title, the body, the two headings, the button label and the price. All six passed comfortably, and I nearly wrote that the screen was fine.
+
+Activity: Give me one barrier from the supplied case. Ask who is blocked, in what situation and which design decision caused it. Then ask for one repair and one way to test the built result.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every place text sits on a surface, including the quiet text” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every place text sits on a surface, including the quiet text”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Every place text sits on a surface, including the quiet text” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - List every place text meets a surface and measure each; the ones you skipped are usually the failing ones.
@@ -2899,7 +3091,7 @@ Adequate evidence: A measured line length at the widest layout and stated spacin
 Repair: Count characters per line at your widest breakpoint and cap the container if it runs long. Recheck: The measurements.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson looks at everything on these screens whose meaning depends on colour.
 
@@ -2937,58 +3129,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A greyscale pass with any remaining failures
 - A colour-vision simulation pass with results
 
-### Start with a clear task
+### Start here: in everyday words
+
+Accessible design removes barriers that stop people from perceiving, understanding or operating a product. In this lesson, your first small result is: Every place meaning depends on colour, with what a reader would miss written out for each.
+
+**Words you will use**
+
+- **Colour-only signal:** Anything where the colour is the whole message: a red border meaning error, a green dot meaning available, a coloured line on a chart with a legend.
+- **Second signal:** Something else carrying the same meaning: a word, a shape with a different outline, a position, a weight. The colour stays and stops being the only carrier.
+- **Distinct silhouette:** Two icons whose outlines differ when both are black. A circle and a circle in two colours are the same icon to a great many readers.
+
+**Quick example.** Made-up example. Looking for colour-only signals on a borrowing product, and looking for the wrong thing. I scanned each screen for coloured things. Dots, the red error border, the chart. Three found, list finished, twenty minutes.
+
+The reader demonstrates and guides the task before asking for “Every place the meaning depends on colour”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Find every place your design carries meaning by colour, add a second signal to each, and prove the design still works in greyscale and in a colour-vision simulation.
 
 
-### Understand the idea · 1
+### Colour may reinforce meaning; it may not be the only carrier
 
 Section: learn. Stable action: learn-1.
 
 Colour may reinforce meaning; it may not be the only carrier.
 
 
-### Understand the idea · 2
+### Idea 2: Second signals: text, shape, position, weight, an icon with a…
 
 Section: learn. Stable action: learn-2.
 
 Second signals: text, shape, position, weight, an icon with a distinct silhouette.
 
 
-### Understand the idea · 3
+### Greyscale is the fastest test and catches most failures
 
 Section: learn. Stable action: learn-3.
 
 Greyscale is the fastest test and catches most failures.
 
 
-### Understand the idea · 4
+### Idea 4: Colour-vision differences affect roughly one in twelve men; re…
 
 Section: learn. Stable action: learn-4.
 
 Colour-vision differences affect roughly one in twelve men; red and green pairs fail first.
 
 
-### Understand the idea · 5
+### Charts, status and required fields are the usual offenders
 
 Section: learn. Stable action: learn-5.
 
 Charts, status and required fields are the usual offenders.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Four places carried meaning by colour alone. Availability dots — green, amber, red — gained text: “Places available”, “2 left”, “Full”. Required fields, marked with red labels, gained the word “required”. The chart's three series gained direct labels rather than a colour legend. The error state, which had used only a red border, gained an icon with a distinct shape and the message text tied to the field. In greyscale all four remained readable, and a colour-vision simulation confirmed the amber and red dots had previously been indistinguishable for some readers.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3577,6 +3783,40 @@ Open Your work and choose Ready for review. The next lesson puts the mouse out o
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Never colour alone
+What I am trying to do: Find every place your design carries meaning by colour, add a second signal to each, and prove the design still works in greyscale and in a colour-vision simulation.
+
+Key idea or terms:
+Colour-only signal: Anything where the colour is the whole message: a red border meaning error, a green dot meaning available, a coloured line on a chart with a legend.
+Second signal: Something else carrying the same meaning: a word, a shape with a different outline, a position, a weight. The colour stays and stops being the only carrier.
+Distinct silhouette: Two icons whose outlines differ when both are black. A circle and a circle in two colours are the same icon to a great many readers.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Looking for colour-only signals on a borrowing product, and looking for the wrong thing. I scanned each screen for coloured things. Dots, the red error border, the chart. Three found, list finished, twenty minutes.
+
+Activity: Give me one barrier from the supplied case. Ask who is blocked, in what situation and which design decision caused it. Then ask for one repair and one way to test the built result.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every place the meaning depends on colour” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every place the meaning depends on colour”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Every place the meaning depends on colour” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Walk each screen asking what a person would miss if every colour were the same grey.
@@ -3646,7 +3886,7 @@ Adequate evidence: Simulation results, with red and green pairs specifically che
 Repair: Use your browser's simulation, check the status colours first, and record what becomes indistinguishable. Recheck: The simulation record.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson puts the mouse out of reach and tries to finish a whole task without it.
 
@@ -3684,58 +3924,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - One repair addressing the most blocking failure
 - A statement of which key tables were satisfied and which were not
 
-### Start with a clear task
+### Start here: in everyday words
+
+Accessible design removes barriers that stop people from perceiving, understanding or operating a product. In this lesson, your first small result is: The thing you are testing, the one whole task, and your Module 9 key tables to hand, with the mouse genuinely out of reach.
+
+**Words you will use**
+
+- **Keyboard-only:** Tab and shift-tab to move, arrows inside a group, enter or space to act, escape to leave. No pointer of any kind, including a trackpad.
+- **Key table:** The list you wrote in Module 9 saying which key does what in each control. It is the specification the repair is measured against.
+- **Focus:** Where the keyboard is pointing at this moment. If you cannot see it, you are working blind however well the controls respond.
+
+**Quick example.** Made-up example. Attempting a borrowing task with the mouse away, and nearly recording the wrong failure as the worst one. Focus was invisible on the tinted review panel. I wrote it down immediately, because it was annoying and I noticed it at once.
+
+The reader demonstrates and guides the task before asking for “What you are testing, and where it runs”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Complete one whole task using only a keyboard, record every point where it was impossible or unclear, and repair the worst without adding a mouse-only workaround.
 
 
-### Understand the idea · 1
+### Every function must be reachable and operable without a pointer
 
 Section: learn. Stable action: learn-1.
 
 Every function must be reachable and operable without a pointer.
 
 
-### Understand the idea · 2
+### Reachable is not enough: focus must be visible and the order sensible
 
 Section: learn. Stable action: learn-2.
 
 Reachable is not enough: focus must be visible and the order sensible.
 
 
-### Understand the idea · 3
+### Traps are the worst failure: a place you can enter and cannot leave
 
 Section: learn. Stable action: learn-3.
 
 Traps are the worst failure: a place you can enter and cannot leave.
 
 
-### Understand the idea · 4
+### Custom controls are where keyboard support disappears
 
 Section: learn. Stable action: learn-4.
 
 Custom controls are where keyboard support disappears.
 
 
-### Understand the idea · 5
+### Test by unplugging the mouse, not by imagining
 
 Section: learn. Stable action: learn-5.
 
 Test by unplugging the mouse, not by imagining.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The booking task was attempted with the mouse unplugged. Four failures. The date picker could be reached and not operated: arrow keys did nothing, so no date could be chosen — a total block, repaired against the m09 key table. The filter panel trapped focus, with escape doing nothing. The remove control, hover-only, could not be reached at all. Focus was invisible on the tinted review panel. The repair addressed the date picker first, because it stopped the task entirely; the trap was recorded as the second, and the write-up noted that a mouse-only workaround was explicitly not acceptable as a fix.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4306,6 +4560,40 @@ Open Your work and choose Ready for review. The next lesson takes the same keybo
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Everything works from a keyboard
+What I am trying to do: Complete one whole task using only a keyboard, record every point where it was impossible or unclear, and repair the worst without adding a mouse-only workaround.
+
+Key idea or terms:
+Keyboard-only: Tab and shift-tab to move, arrows inside a group, enter or space to act, escape to leave. No pointer of any kind, including a trackpad.
+Key table: The list you wrote in Module 9 saying which key does what in each control. It is the specification the repair is measured against.
+Focus: Where the keyboard is pointing at this moment. If you cannot see it, you are working blind however well the controls respond.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Attempting a borrowing task with the mouse away, and nearly recording the wrong failure as the worst one. Focus was invisible on the tinted review panel. I wrote it down immediately, because it was annoying and I noticed it at once.
+
+Activity: Give me one barrier from the supplied case. Ask who is blocked, in what situation and which design decision caused it. Then ask for one repair and one way to test the built result.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What you are testing, and where it runs” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What you are testing, and where it runs”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What you are testing, and where it runs” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Put the mouse out of reach and try again from the start, writing down each step.
@@ -4375,7 +4663,7 @@ Adequate evidence: Your m09 tables annotated with results per row and defects na
 Repair: Walk each row of the table against the build and mark the result. Recheck: The annotated tables.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes the same keyboard route through your forms.
 
@@ -4413,58 +4701,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - An error summary that links to each problem field
 - A statement of what was verified and what remains untested
 
-### Start with a clear task
+### Start here: in everyday words
+
+Accessible design removes barriers that stop people from perceiving, understanding or operating a product. In this lesson, your first small result is: One form audited field by field for a real label, a hint, an error message and a group.
+
+**Words you will use**
+
+- **Associated label:** A label joined to its field, so that reaching the field announces the label and tapping the label moves into the field. A word sitting beside a box is not this.
+- **Standard field:** A plain text box, checkbox or select taken from the browser. It brings keyboard behaviour with it and brings no label, hint, grouping or error text at all.
+- **Group:** Several fields that together answer one question, with the question named once. Without it a person hears three boxes and no idea what they are for.
+
+**Quick example.** Made-up example. Rebuilding the labels on a tool-library request form, and trusting the field type to do the work. The form uses ordinary text boxes and checkboxes rather than anything custom, so I assumed the labelling was already sound.
+
+The reader demonstrates and guides the task before asking for “Which form you are rebuilding, and how many fields it has”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Rebuild one form so every field is labelled, grouped and described accessibly, errors are announced and locatable, and nothing depends on placeholder text or colour.
 
 
-### Understand the idea · 1
+### Every field needs a programmatically associated label, not a nearby word
 
 Section: learn. Stable action: learn-1.
 
 Every field needs a programmatically associated label, not a nearby word.
 
 
-### Understand the idea · 2
+### Group related fields so their shared question is announced with them
 
 Section: learn. Stable action: learn-2.
 
 Group related fields so their shared question is announced with them.
 
 
-### Understand the idea · 3
+### Instructions belong before the field and must be associated with it
 
 Section: learn. Stable action: learn-3.
 
 Instructions belong before the field and must be associated with it.
 
 
-### Understand the idea · 4
+### Idea 4: Errors must say what to fix, be reachable, and be announced wh…
 
 Section: learn. Stable action: learn-4.
 
 Errors must say what to fix, be reachable, and be announced when they appear.
 
 
-### Understand the idea · 5
+### Do not rely on placeholder text, colour or position to carry meaning
 
 Section: learn. Stable action: learn-5.
 
 Do not rely on placeholder text, colour or position to carry meaning.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The booking form was rebuilt. Each field gained an associated label, including the ones whose labels had been visual only. The date fields were grouped under one question, and the group name was announced with them. The phone hint moved under the label and was associated with the field. Errors were rewritten to name the fix, a summary at the top linked to each problem field, and the summary was announced when it appeared. The placeholder text disappeared entirely; nothing in the form now depends on it, and one field was removed because no decision needed it.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5068,6 +5370,40 @@ Open Your work and choose Ready for review. The next lesson writes the words tha
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Forms that do not exclude
+What I am trying to do: Rebuild one form so every field is labelled, grouped and described accessibly, errors are announced and locatable, and nothing depends on placeholder text or colour.
+
+Key idea or terms:
+Associated label: A label joined to its field, so that reaching the field announces the label and tapping the label moves into the field. A word sitting beside a box is not this.
+Standard field: A plain text box, checkbox or select taken from the browser. It brings keyboard behaviour with it and brings no label, hint, grouping or error text at all.
+Group: Several fields that together answer one question, with the question named once. Without it a person hears three boxes and no idea what they are for.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Rebuilding the labels on a tool-library request form, and trusting the field type to do the work. The form uses ordinary text boxes and checkboxes rather than anything custom, so I assumed the labelling was already sound.
+
+Activity: Give me one barrier from the supplied case. Ask who is blocked, in what situation and which design decision caused it. Then ask for one repair and one way to test the built result.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Which form you are rebuilding, and how many fields it has” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Which form you are rebuilding, and how many fields it has”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Which form you are rebuilding, and how many fields it has” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - List each field and write how its label and hint are associated. Anything ambiguous will be built ambiguously.
@@ -5137,7 +5473,7 @@ Adequate evidence: A list of what was checked in a build and what could not be.
 Repair: Split your claims into two lists: observed in a build, and specified but untested. Recheck: The two lists.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes the words that stand in for every image on these screens.
 
@@ -5175,58 +5511,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Empty alt specified for decorative images
 - Any text inside images identified and moved out
 
-### Start with a clear task
+### Start here: in everyday words
+
+Accessible design removes barriers that stop people from perceiving, understanding or operating a product. In this lesson, your first small result is: Every image, icon and illustration listed and classified as informative, decorative or functional, with any text inside an image marked.
+
+**Words you will use**
+
+- **Informative:** The image tells the reader something they cannot get elsewhere on the screen. The words have to carry that something.
+- **Decorative:** The image adds atmosphere and no information. It is marked so it is skipped silently, which is a decision rather than a lapse.
+- **Functional:** The image is the control. What matters is not what it looks like but what pressing it does.
+
+**Quick example.** Made-up example. Classifying the images on a tool-library screen, and describing everything because describing felt thorough. I wrote alt text for all fourteen images. Every one got a careful sentence, including the paper-texture background and the small divider flourish.
+
+The reader demonstrates and guides the task before asking for “Every image, icon and illustration on your screens”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write alternative text for every image and icon in your design, deciding for each whether it carries information, is decorative, or is itself a control.
 
 
-### Understand the idea · 1
+### Idea 1: Three kinds: informative, decorative, and functional — each ha…
 
 Section: learn. Stable action: learn-1.
 
 Three kinds: informative, decorative, and functional — each handled differently.
 
 
-### Understand the idea · 2
+### Idea 2: Informative alt text carries the information, not a descriptio…
 
 Section: learn. Stable action: learn-2.
 
 Informative alt text carries the information, not a description of the picture.
 
 
-### Understand the idea · 3
+### Decorative images take empty alt text so they are skipped, not announced
 
 Section: learn. Stable action: learn-3.
 
 Decorative images take empty alt text so they are skipped, not announced.
 
 
-### Understand the idea · 4
+### An icon that is a control takes the name of the action, not the shape
 
 Section: learn. Stable action: learn-4.
 
 An icon that is a control takes the name of the action, not the shape.
 
 
-### Understand the idea · 5
+### Text in an image is invisible to search, translation and screen readers
 
 Section: learn. Stable action: learn-5.
 
 Text in an image is invisible to search, translation and screen readers.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Fourteen images and icons were classified. Two were informative: the class photograph, whose alt text became “Six people at a pottery wheel in a bright studio”, and the availability chart, whose alternative text carried the counts. Nine were decorative and took empty alt text, including the background pattern that had previously been announced. Three were functional: the shortlist heart became “Add to shortlist”, the logo became “Home”, and the filter icon became “Filters”. One promotional image had the price set inside it; the text was moved out of the image entirely rather than duplicated in alt text.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5795,6 +6145,40 @@ Open Your work and choose Ready for review. The next lesson looks at anything th
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Images, icons and the words that replace them
+What I am trying to do: Write alternative text for every image and icon in your design, deciding for each whether it carries information, is decorative, or is itself a control.
+
+Key idea or terms:
+Informative: The image tells the reader something they cannot get elsewhere on the screen. The words have to carry that something.
+Decorative: The image adds atmosphere and no information. It is marked so it is skipped silently, which is a decision rather than a lapse.
+Functional: The image is the control. What matters is not what it looks like but what pressing it does.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Classifying the images on a tool-library screen, and describing everything because describing felt thorough. I wrote alt text for all fourteen images. Every one got a careful sentence, including the paper-texture background and the small divider flourish.
+
+Activity: Give me one barrier from the supplied case. Ask who is blocked, in what situation and which design decision caused it. Then ask for one repair and one way to test the built result.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every image, icon and illustration on your screens” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every image, icon and illustration on your screens”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Every image, icon and illustration on your screens” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - List everything visual and ask what each adds. If nothing, it is decorative; if it acts, it is functional.
@@ -5864,7 +6248,7 @@ Adequate evidence: A list of images containing text, with the text moved into re
 Repair: Find every image containing words and move those words into text; reproduce them only where the image cannot change. Recheck: The embedded-text list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson looks at anything that moves, plays or expires.
 
@@ -5902,58 +6286,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Time limits with warning, extension and preservation
 - A confirmation that nothing flashes rapidly
 
-### Start with a clear task
+### Start here: in everyday words
+
+Accessible design removes barriers that stop people from perceiving, understanding or operating a product. In this lesson, your first small result is: Everything that moves without being started, each either removed or given a keyboard-reachable pause control.
+
+**Words you will use**
+
+- **Automatic motion:** Movement the person did not start and cannot predict. Anything lasting more than a few seconds needs a way to stop it.
+- **Pause control:** A visible, reachable way to stop the movement. Hidden until hover, or pointer-only, and it is not one.
+- **Captions:** The spoken words, timed to the video, including who is speaking and sounds that matter. They serve deaf readers, noisy rooms and anyone watching without sound.
+
+**Quick example.** Made-up example. Fixing an automatic carousel on a tool-library home page, and managing the problem instead of removing it. Three featured tools rotating every four seconds, with small dots underneath. Nobody had asked for it; it had come with the template.
+
+The reader demonstrates and guides the task before asking for “Everything that starts moving without the person starting it”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Audit your design for motion that plays without asking, media without alternatives, and time limits people cannot control, and specify a fix for each.
 
 
-### Understand the idea · 1
+### Idea 1: Anything moving for more than a few seconds needs a way to pau…
 
 Section: learn. Stable action: learn-1.
 
 Anything moving for more than a few seconds needs a way to pause or stop it.
 
 
-### Understand the idea · 2
+### Nothing should flash rapidly; it can trigger seizures
 
 Section: learn. Stable action: learn-2.
 
 Nothing should flash rapidly; it can trigger seizures.
 
 
-### Understand the idea · 3
+### Video and audio need captions or a transcript, and both are writing work
 
 Section: learn. Stable action: learn-3.
 
 Video and audio need captions or a transcript, and both are writing work.
 
 
-### Understand the idea · 4
+### Time limits need warning, extension, or removal
 
 Section: learn. Stable action: learn-4.
 
 Time limits need warning, extension, or removal.
 
 
-### Understand the idea · 5
+### Idea 5: Reduced motion is a request from the person, not a preference…
 
 Section: learn. Stable action: learn-5.
 
 Reduced motion is a request from the person, not a preference to override.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three problems and three fixes. The class carousel rotated every four seconds with no pause; it was replaced with a static set of three cards, which also removed a motion problem for reduced-motion users. The introductory video had automatic captions that rendered the studio name as three different things; they were corrected by hand and a transcript was published beside the video. The held-place timer expired silently after ten minutes, losing the form; it now warns at two minutes, offers an extension, and preserves entered details either way. Nothing in the product flashes.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6514,6 +6912,40 @@ Open Your work and choose Ready for review. The next lesson listens to the scree
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Motion, media and time limits
+What I am trying to do: Audit your design for motion that plays without asking, media without alternatives, and time limits people cannot control, and specify a fix for each.
+
+Key idea or terms:
+Automatic motion: Movement the person did not start and cannot predict. Anything lasting more than a few seconds needs a way to stop it.
+Pause control: A visible, reachable way to stop the movement. Hidden until hover, or pointer-only, and it is not one.
+Captions: The spoken words, timed to the video, including who is speaking and sounds that matter. They serve deaf readers, noisy rooms and anyone watching without sound.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Fixing an automatic carousel on a tool-library home page, and managing the problem instead of removing it. Three featured tools rotating every four seconds, with small dots underneath. Nobody had asked for it; it had come with the template.
+
+Activity: Give me one barrier from the supplied case. Ask who is blocked, in what situation and which design decision caused it. Then ask for one repair and one way to test the built result.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Everything that starts moving without the person starting it” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Everything that starts moving without the person starting it”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Everything that starts moving without the person starting it” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - List everything that moves on its own and decide each; a carousel with no pause is the usual offender.
@@ -6583,7 +7015,7 @@ Adequate evidence: A statement that nothing flashes rapidly and a re-check of re
 Repair: Enable reduced motion, walk the product, and separately confirm nothing flashes. Recheck: The two confirmations.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson listens to the screens you have been looking at.
 
@@ -6621,58 +7053,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Each failure mapped to the design decision behind it
 - A statement of what your session does and does not establish
 
-### Start with a clear task
+### Start here: in everyday words
+
+Accessible design removes barriers that stop people from perceiving, understanding or operating a product. In this lesson, your first small result is: The screen reader on your own device running, five commands learned, and whatever went wrong on the way written down.
+
+**Words you will use**
+
+- **Screen reader:** Software that speaks what is on screen and lets somebody move through it by structure. Every major platform ships one: NVDA on Windows, VoiceOver on Apple, TalkBack on Android.
+- **Five commands:** Next heading, next link, next form field, read all, stop. Learning these five is enough for this lesson; trying to learn the whole set is how people abandon it.
+- **Navigating by structure:** Jumping from heading to heading rather than listening to everything. It is how people actually use these tools, and it is why the outline work in lesson 3 mattered.
+
+**Quick example.** Made-up example. Listening to a tool-library product, and hearing what I expected instead of what was said. I kept the screen in front of me and listened while I worked. It went smoothly and I found two small problems in ten minutes.
+
+The reader demonstrates and guides the task before asking for “Which screen reader, on which device, and how you turned it on”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Run one task with the screen reader already on your device, record what was announced and what was missing, and state plainly what your own session does and does not establish.
 
 
-### Understand the idea · 1
+### Every major platform ships a screen reader: NVDA, VoiceOver or TalkBack
 
 Section: learn. Stable action: learn-1.
 
 Every major platform ships a screen reader: NVDA, VoiceOver or TalkBack.
 
 
-### Understand the idea · 2
+### Idea 2: Learn five commands, not fifty: next heading, next link, next…
 
 Section: learn. Stable action: learn-2.
 
 Learn five commands, not fifty: next heading, next link, next form field, read all, stop.
 
 
-### Understand the idea · 3
+### Idea 3: Listen for what is missing: unlabelled fields, unannounced cha…
 
 Section: learn. Stable action: learn-3.
 
 Listen for what is missing: unlabelled fields, unannounced changes, silent images.
 
 
-### Understand the idea · 4
+### Idea 4: You are a sighted occasional user; your session is preliminary…
 
 Section: learn. Stable action: learn-4.
 
 You are a sighted occasional user; your session is preliminary, not representative.
 
 
-### Understand the idea · 5
+### Idea 5: Nothing here substitutes for testing with people who use these…
 
 Section: learn. Stable action: learn-5.
 
 Nothing here substitutes for testing with people who use these tools daily.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Twenty minutes with VoiceOver on the researcher's own phone. Navigating by heading confirmed the m06 outline worked. Six failures were found: the shortlist icon was announced as “button”, the availability dot was silent so full classes sounded identical to available ones, applying a filter announced nothing at all, the error summary was not announced when it appeared, one image was read as its filename, and the date group's question was not announced with its fields. Each mapped to a decision made earlier in the course. The write-up recorded the device, the software, the twenty minutes, and stated that no person who uses a screen reader daily had been involved.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7249,6 +7695,40 @@ Open Your work and choose Ready for review. The next lesson checks the same prod
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Listening to your own product
+What I am trying to do: Run one task with the screen reader already on your device, record what was announced and what was missing, and state plainly what your own session does and does not establish.
+
+Key idea or terms:
+Screen reader: Software that speaks what is on screen and lets somebody move through it by structure. Every major platform ships one: NVDA on Windows, VoiceOver on Apple, TalkBack on Android.
+Five commands: Next heading, next link, next form field, read all, stop. Learning these five is enough for this lesson; trying to learn the whole set is how people abandon it.
+Navigating by structure: Jumping from heading to heading rather than listening to everything. It is how people actually use these tools, and it is why the outline work in lesson 3 mattered.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Listening to a tool-library product, and hearing what I expected instead of what was said. I kept the screen in front of me and listened while I worked. It went smoothly and I found two small problems in ten minutes.
+
+Activity: Give me one barrier from the supplied case. Ask who is blocked, in what situation and which design decision caused it. Then ask for one repair and one way to test the built result.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Which screen reader, on which device, and how you turned it on” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Which screen reader, on which device, and how you turned it on”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Which screen reader, on which device, and how you turned it on” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Turn on the screen reader already on your device and attempt one task, writing what you hear.
@@ -7318,7 +7798,7 @@ Adequate evidence: A written statement that a sighted occasional tester's sessio
 Repair: Copy the boundary the assigned article states and apply it to your own session in your own words. Recheck: The boundary statement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson checks the same product against Indian guidelines, language and connection conditions.
 
@@ -7356,58 +7836,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A script rendering check with line height and clipping
 - A slow-connection check with a recorded time to usable
 
-### Start with a clear task
+### Start here: in everyday words
+
+Accessible design removes barriers that stop people from perceiving, understanding or operating a product. In this lesson, your first small result is: Two requirements from the Indian government guidelines, each written in your own words with the reason you chose it.
+
+**Words you will use**
+
+- **The Indian guidelines:** Guidelines published for Indian government websites and apps, covering accessibility, local language and mobile use together rather than separately.
+- **Choosing a requirement:** Picking the ones your product actually touches. Two you can act on this week are worth more than a list copied out in full.
+- **What would be needed:** The actual change, named. Not “improve language support” but “month names come from a list rather than being written in English”.
+
+**Quick example.** Made-up example. Checking the language readiness of a tool-library product, and deciding it was a job for after launch. The product is English-only for now. Translation is a later project, so there is nothing to do in this lesson beyond noting it.
+
+The reader demonstrates and guides the task before asking for “Requirement 1 · what it asks, in your own words, and why you chose it”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Check your design against two named requirements from the Indian government guidelines and against language and bandwidth conditions your users will actually meet.
 
 
-### Understand the idea · 1
+### Idea 1: India's government publishes its own guidelines covering acces…
 
 Section: learn. Stable action: learn-1.
 
 India's government publishes its own guidelines covering accessibility, local language and mobile.
 
 
-### Understand the idea · 2
+### Language support is an access requirement, not a growth feature
 
 Section: learn. Stable action: learn-2.
 
 Language support is an access requirement, not a growth feature.
 
 
-### Understand the idea · 3
+### Scripts differ: line height, sorting and input methods all change
 
 Section: learn. Stable action: learn-3.
 
 Scripts differ: line height, sorting and input methods all change.
 
 
-### Understand the idea · 4
+### Idea 4: A slow or intermittent connection excludes people as effective…
 
 Section: learn. Stable action: learn-4.
 
 A slow or intermittent connection excludes people as effectively as a missing label.
 
 
-### Understand the idea · 5
+### Shared devices change what personal and private mean in your design
 
 Section: learn. Stable action: learn-5.
 
 Shared devices change what personal and private mean in your design.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Two requirements were compared. The first, on local-language support, exposed that dates were formatted in a way that assumed one convention and that the month names were English-only; both were changed. The second, on mobile, exposed a page weight that took eleven seconds to become usable on a throttled connection. Separately, a Hindi rendering of the navigation clipped matras until line height was increased, and the class list's alphabetical sort was noted as language-dependent and left with a recorded limitation. The shared-device question from m07 was revisited: notifications now say “a class you booked” rather than naming the class on the lock screen.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7964,6 +8458,40 @@ Open Your work and choose Ready for review. The last lesson of the module turns 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Access in the Indian context
+What I am trying to do: Check your design against two named requirements from the Indian government guidelines and against language and bandwidth conditions your users will actually meet.
+
+Key idea or terms:
+The Indian guidelines: Guidelines published for Indian government websites and apps, covering accessibility, local language and mobile use together rather than separately.
+Choosing a requirement: Picking the ones your product actually touches. Two you can act on this week are worth more than a list copied out in full.
+What would be needed: The actual change, named. Not “improve language support” but “month names come from a list rather than being written in English”.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Checking the language readiness of a tool-library product, and deciding it was a job for after launch. The product is English-only for now. Translation is a later project, so there is nothing to do in this lesson beyond noting it.
+
+Activity: Give me one barrier from the supplied case. Ask who is blocked, in what situation and which design decision caused it. Then ask for one repair and one way to test the built result.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Requirement 1 · what it asks, in your own words, and why you chose it” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Requirement 1 · what it asks, in your own words, and why you chose it”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Requirement 1 · what it asks, in your own words, and why you chose it” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Choose two requirements that touch your product and walk your screens against each.
@@ -8033,7 +8561,7 @@ Adequate evidence: A throttled load with a recorded time to first usable content
 Repair: Throttle the connection, disable the cache, and time when the page first becomes usable rather than fully loaded. Recheck: The timing record.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The last lesson of the module turns all of this into one honest statement.
 
@@ -8071,58 +8599,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A stated target level with no untested conformance claim
 - A plan for testing with disabled participants, with lead times
 
-### Start with a clear task
+### Start here: in everyday words
+
+Accessible design removes barriers that stop people from perceiving, understanding or operating a product. In this lesson, your first small result is: Every check from this module gathered with its date and conditions, sorted into fixed, not yet fixed and untested.
+
+**Words you will use**
+
+- **Conditions:** The device, software, version and circumstances a check was run under. Without them a result cannot be repeated or judged.
+- **Not yet fixed:** A known problem with an intention attached. It is a more useful thing to publish than a promise that everything is fine.
+- **Accessibility statement:** A public page saying what you know about how well your product works for disabled people. Its value comes from what it admits.
+
+**Quick example.** Made-up example. Writing the statement for a tool-library product, and waiting until it would be a good one. Not to publish yet. Three known problems were still open, and a statement listing them felt like advertising the product’s faults.
+
+The reader demonstrates and guides the task before asking for “Every check from this module, with its date and conditions”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write an accessibility statement naming what you tested, what you found, what remains unfixed and what you have not tested at all, plus a plan for involving disabled participants.
 
 
-### Understand the idea · 1
+### Say what you tested, with what, on which device, and when
 
 Section: learn. Stable action: learn-1.
 
 Say what you tested, with what, on which device, and when.
 
 
-### Understand the idea · 2
+### List known problems openly, with what you intend to do about them
 
 Section: learn. Stable action: learn-2.
 
 List known problems openly, with what you intend to do about them.
 
 
-### Understand the idea · 3
+### Distinguish tested from specified but unverified
 
 Section: learn. Stable action: learn-3.
 
 Distinguish tested from specified but unverified.
 
 
-### Understand the idea · 4
+### Idea 4: Never claim conformance you have not tested; say the target yo…
 
 Section: learn. Stable action: learn-4.
 
 Never claim conformance you have not tested; say the target you worked to.
 
 
-### Understand the idea · 5
+### Plan for testing with disabled participants, including what it will cost
 
 Section: learn. Stable action: learn-5.
 
 Plan for testing with disabled participants, including what it will cost.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The statement ran to one page. Tested: keyboard operation of the booking task on Windows with the pointer unavailable; a twenty-minute VoiceOver session on an iPhone; contrast measured for all text pairs; 200 per cent text; greyscale and colour-vision simulation; a throttled load. Found and fixed: nine items, listed. Found and not yet fixed: three, listed with intended dates — the date picker's arrow-key support, the unannounced filter change, and captions for the introductory video. Not tested at all: any use with switch access or voice control, any Android screen reader, and any session with a person who uses assistive technology daily. Target: WCAG 2.2 level AA, worked to and not tested for conformance. Plan: contact two local disability organisations, allow a month, and budget compensation.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -8685,6 +9227,40 @@ Open Your work and choose Ready for review. This closes Module 11. Module 12 sta
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: An honest accessibility statement
+What I am trying to do: Write an accessibility statement naming what you tested, what you found, what remains unfixed and what you have not tested at all, plus a plan for involving disabled participants.
+
+Key idea or terms:
+Conditions: The device, software, version and circumstances a check was run under. Without them a result cannot be repeated or judged.
+Not yet fixed: A known problem with an intention attached. It is a more useful thing to publish than a promise that everything is fine.
+Accessibility statement: A public page saying what you know about how well your product works for disabled people. Its value comes from what it admits.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing the statement for a tool-library product, and waiting until it would be a good one. Not to publish yet. Three known problems were still open, and a statement listing them felt like advertising the product’s faults.
+
+Activity: Give me one barrier from the supplied case. Ask who is blocked, in what situation and which design decision caused it. Then ask for one repair and one way to test the built result.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every check from this module, with its date and conditions” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every check from this module, with its date and conditions”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Every check from this module, with its date and conditions” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Go back through the module and record the conditions for each check you ran.
@@ -8754,7 +9330,7 @@ Adequate evidence: A written plan with organisations or routes, realistic lead t
 Repair: Use the assigned lead times — up to a month, longer for cognitive disabilities — and name two real routes you could approach. Recheck: The plan.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This closes Module 11. Module 12 starts on web foundations, and the untested list you wrote here is what a real build will begin to answer.
 

@@ -23,58 +23,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - An out-of-scope list
 - A stated maintenance cost and what the system makes harder
 
-### Start with a clear task
+### Start here: in everyday words
+
+A design system is a shared set of decisions and reusable parts that helps a team build consistent products. In this lesson, your first small result is: Every decision you have made more than twice, with the ones that drifted marked and the evidence for the drift.
+
+**Words you will use**
+
+- **Design system:** A set of decisions made once and reused, with the documentation that lets somebody else use them. It is not a folder of components.
+- **Drift:** The same decision made slightly differently in different places, by you, over time. It is the evidence that a decision was never actually settled.
+- **Problem for a person:** Somebody, doing something, paying a cost. “We need consistency” names nobody and costs nothing, so nothing follows from it.
+
+**Quick example.** Made-up example. Writing the purpose of a tool-library design system, and writing a wish instead of a problem. “The system will provide a consistent, scalable foundation for the product.” I was pleased with it, and it survived exactly one question.
+
+The reader demonstrates and guides the task before asking for “Every decision you have made more than twice across your screens”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write the purpose of your system as three problems it solves for named people, and identify what it will not attempt.
 
 
-### Understand the idea · 1
+### Idea 1: A system exists to make decisions once and reuse them, not to…
 
 Section: learn. Stable action: learn-1.
 
 A system exists to make decisions once and reuse them, not to store components.
 
 
-### Understand the idea · 2
+### Name the people it serves: you next month, another designer, an engineer
 
 Section: learn. Stable action: learn-2.
 
 Name the people it serves: you next month, another designer, an engineer.
 
 
-### Understand the idea · 3
+### Coverage matters more than completeness: solve the repeated cases
 
 Section: learn. Stable action: learn-3.
 
 Coverage matters more than completeness: solve the repeated cases.
 
 
-### Understand the idea · 4
+### Idea 4: A system has costs — maintenance, governance, rigidity — and t…
 
 Section: learn. Stable action: learn-4.
 
 A system has costs — maintenance, governance, rigidity — and they are real.
 
 
-### Understand the idea · 5
+### State what is out of scope, or everything drifts into it
 
 Section: learn. Stable action: learn-5.
 
 State what is out of scope, or everything drifts into it.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The system's purpose was written as three problems: I re-decide button hierarchy and spacing on every screen and they drift; an engineer has to ask me what each state should do, which costs a day per feature; and accessibility decisions get remade badly under time pressure. The people served: the learner in three months, one engineer, and any reviewer reading a case study. Out of scope, stated: marketing pages, anything about brand illustration, and any component used only once. The cost was written too: about a day a month of maintenance, and the loss of some freedom on individual screens.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -618,6 +632,40 @@ Open Your work and choose Ready for review. The next lesson publishes the founda
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: What a design system is for
+What I am trying to do: Write the purpose of your system as three problems it solves for named people, and identify what it will not attempt.
+
+Key idea or terms:
+Design system: A set of decisions made once and reused, with the documentation that lets somebody else use them. It is not a folder of components.
+Drift: The same decision made slightly differently in different places, by you, over time. It is the evidence that a decision was never actually settled.
+Problem for a person: Somebody, doing something, paying a cost. “We need consistency” names nobody and costs nothing, so nothing follows from it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing the purpose of a tool-library design system, and writing a wish instead of a problem. “The system will provide a consistent, scalable foundation for the product.” I was pleased with it, and it survived exactly one question.
+
+Activity: Give me one inconsistent component or rule from the supplied case. Ask me to choose the shared decision, name what must stay flexible and explain how another person would know which version is current.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every decision you have made more than twice across your screens” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every decision you have made more than twice across your screens”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Every decision you have made more than twice across your screens” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - For each problem write who suffers it and how much time or quality it costs.
@@ -687,7 +735,7 @@ Adequate evidence: An hours-per-month estimate and a statement of what becomes h
 Repair: Estimate the time to keep documentation current and to answer questions, and name one thing the system will slow down. Recheck: The cost statement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson publishes the foundations everything else in the system rests on.
 
@@ -725,58 +773,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Measured contrast for every permitted text pair
 - One do-and-do-not pair per group, drawn from a real mistake
 
-### Start with a clear task
+### Start here: in everyday words
+
+A design system is a shared set of decisions and reusable parts that helps a team build consistent products. In this lesson, your first small result is: Six foundation groups, each with its values, the rule for when to use them, and why those values.
+
+**Words you will use**
+
+- **Foundation:** A value plus a rule for when it applies. A list of values with no rules gets used inconsistently within a month.
+- **The reason:** Why this value rather than another. Without it, the value gets overridden by whoever has the strongest taste in the room, including you on a bad day.
+- **Permitted pair:** A text colour on a surface colour that has been measured and passes. Publishing it means nobody measures it again.
+
+**Quick example.** Made-up example. Publishing spacing foundations for a tool-library system, and publishing the numbers alone. Six spacing values: 4, 8, 12, 16, 24 and 40. Neatly laid out, named, and in the stylesheet as custom properties.
+
+The reader demonstrates and guides the task before asking for “Group 1 · the values, the rule for using them, and why these values”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Publish your foundations — colour, type, spacing, radius, elevation and motion — as documented decisions with reasons, measured contrast and usage rules.
 
 
-### Understand the idea · 1
+### A foundation is a value plus a rule for when to use it
 
 Section: learn. Stable action: learn-1.
 
 A foundation is a value plus a rule for when to use it.
 
 
-### Understand the idea · 2
+### Record the reason; a value with no reason gets overridden by taste
 
 Section: learn. Stable action: learn-2.
 
 Record the reason; a value with no reason gets overridden by taste.
 
 
-### Understand the idea · 3
+### Include measured contrast for every permitted text pair
 
 Section: learn. Stable action: learn-3.
 
 Include measured contrast for every permitted text pair.
 
 
-### Understand the idea · 4
+### Motion values belong here too, with their reduced-motion pairs
 
 Section: learn. Stable action: learn-4.
 
 Motion values belong here too, with their reduced-motion pairs.
 
 
-### Understand the idea · 5
+### Show the wrong usage as well as the right one
 
 Section: learn. Stable action: learn-5.
 
 Show the wrong usage as well as the right one.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The foundations page documented six groups. Colour: five neutrals and three semantic colours, each with permitted usages, forbidden usages and measured ratios for every text pair. Type: six steps with their jobs, minimum sizes and line-height rules. Spacing: six values with a rule that spacing between groups is always larger than spacing within them. Radius: two values with a rule about which components use which. Elevation: two levels with the statement that elevation never carries meaning alone. Motion: three durations with their reduced-motion pairs. Each group carried one do-and-do-not pair drawn from a real mistake.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1342,6 +1404,40 @@ Open Your work and choose Ready for review. The next lesson specifies one compon
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Foundations: the decisions everything else rests on
+What I am trying to do: Publish your foundations — colour, type, spacing, radius, elevation and motion — as documented decisions with reasons, measured contrast and usage rules.
+
+Key idea or terms:
+Foundation: A value plus a rule for when it applies. A list of values with no rules gets used inconsistently within a month.
+The reason: Why this value rather than another. Without it, the value gets overridden by whoever has the strongest taste in the room, including you on a bad day.
+Permitted pair: A text colour on a surface colour that has been measured and passes. Publishing it means nobody measures it again.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Publishing spacing foundations for a tool-library system, and publishing the numbers alone. Six spacing values: 4, 8, 12, 16, 24 and 40. Neatly laid out, named, and in the stylesheet as custom properties.
+
+Activity: Give me one inconsistent component or rule from the supplied case. Ask me to choose the shared decision, name what must stay flexible and explain how another person would know which version is current.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Group 1 · the values, the rule for using them, and why these values” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Group 1 · the values, the rule for using them, and why these values”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Group 1 · the values, the rule for using them, and why these values” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - For each group write when to use it and why the value was chosen; both are needed.
@@ -1411,7 +1507,7 @@ Adequate evidence: One pair per group, each traceable to something that actually
 Repair: Look back through your screens for misuse you have already committed and photograph both versions. Recheck: The example pairs.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson specifies one component completely enough for somebody else to build it.
 
@@ -1449,58 +1545,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Content rules covering long, missing and unusual values
 - Keyboard behaviour and a when-not-to-use section
 
-### Start with a clear task
+### Start here: in everyday words
+
+A design system is a shared set of decisions and reusable parts that helps a team build consistent products. In this lesson, your first small result is: One component chosen with a reason, and every part named with the optional ones marked.
+
+**Words you will use**
+
+- **Anatomy:** The named parts of a component. Naming them is what lets two people talk about the same thing without pointing at a screen.
+- **Optional part:** Something that may be absent. Marking it forces the question of what the layout does without it, which is where most components break.
+- **Variant:** A deliberate difference you decided: compact, unavailable, featured. It is chosen at design time.
+
+**Quick example.** Made-up example. Specifying a tool card, and putting a state in the variant column. Default, compact, unavailable, loading and error. Five variants, which felt thorough.
+
+The reader demonstrates and guides the task before asking for “Which component you are specifying, and why this one”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Specify one component completely: anatomy, variants, states, content rules, keyboard behaviour and when not to use it.
 
 
-### Understand the idea · 1
+### Anatomy names the parts, so people can talk about them precisely
 
 Section: learn. Stable action: learn-1.
 
 Anatomy names the parts, so people can talk about them precisely.
 
 
-### Understand the idea · 2
+### Idea 2: Variants are deliberate differences; states are situations the…
 
 Section: learn. Stable action: learn-2.
 
 Variants are deliberate differences; states are situations the same variant enters.
 
 
-### Understand the idea · 3
+### Content rules prevent the component breaking on real text
 
 Section: learn. Stable action: learn-3.
 
 Content rules prevent the component breaking on real text.
 
 
-### Understand the idea · 4
+### Keyboard behaviour belongs in the specification, not in a later ticket
 
 Section: learn. Stable action: learn-4.
 
 Keyboard behaviour belongs in the specification, not in a later ticket.
 
 
-### Understand the idea · 5
+### A when-not-to-use section is what stops a component being misapplied
 
 Section: learn. Stable action: learn-5.
 
 A when-not-to-use section is what stops a component being misapplied.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The class card was specified. Anatomy: container, image slot (optional), title, meta row, status area, action. Variants: default, compact, unavailable. States for each: default, hover, focus, loading, error. Content rules: title truncates to two lines keeping the beginning, meta row wraps rather than truncating, status area always shows text as well as colour, image slot may be absent without changing layout height. Keyboard: the whole card is not a target — the title is the link and the action is a button, matching the m09 tables. When not to use: not for a single featured item, where a dedicated layout reads better; not as a navigation element.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2055,6 +2165,40 @@ Open Your work and choose Ready for review. The next lesson builds this componen
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: The anatomy of one component
+What I am trying to do: Specify one component completely: anatomy, variants, states, content rules, keyboard behaviour and when not to use it.
+
+Key idea or terms:
+Anatomy: The named parts of a component. Naming them is what lets two people talk about the same thing without pointing at a screen.
+Optional part: Something that may be absent. Marking it forces the question of what the layout does without it, which is where most components break.
+Variant: A deliberate difference you decided: compact, unavailable, featured. It is chosen at design time.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Specifying a tool card, and putting a state in the variant column. Default, compact, unavailable, loading and error. Five variants, which felt thorough.
+
+Activity: Give me one inconsistent component or rule from the supplied case. Ask me to choose the shared decision, name what must stay flexible and explain how another person would know which version is current.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Which component you are specifying, and why this one” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Which component you are specifying, and why this one”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Which component you are specifying, and why this one” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Draw the component and label each region; mark anything that may be absent.
@@ -2124,7 +2268,7 @@ Adequate evidence: Key behaviour from the m09 table plus a when-not-to-use secti
 Repair: Copy the key table into the specification and write two sentences on when to use something else. Recheck: The behaviour and boundary sections.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson builds this component and finds out which of its states actually exist.
 
@@ -2162,58 +2306,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Three awkward content cases rendered
 - A list of specification problems the build revealed
 
-### Start with a clear task
+### Start here: in everyday words
+
+A design system is a shared set of decisions and reusable parts that helps a team build consistent products. In this lesson, your first small result is: The component built from token values only, with any value the foundations do not have written down rather than added.
+
+**Words you will use**
+
+- **Built from tokens:** Every colour, size and space coming from a named foundation value rather than being typed in. It is what makes one change reach everything.
+- **Missing token:** A value the component needs that the foundations do not offer. It is a finding about one of the two, and it should not be resolved by quietly typing a number.
+- **Demonstrable on demand:** You can make the state appear whenever you want, usually by adding a class. A state that only shows up when the network is slow cannot be reviewed.
+
+**Quick example.** Made-up example. Building the states of a tool card, and treating a difficult state as a coding problem. The loading state on the compact variant. I spent an hour on it and every version either changed the card’s height or lost the status line.
+
+The reader demonstrates and guides the task before asking for “Where the component and its states page live”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Build your specified component in HTML and CSS with every state demonstrable, and publish a page showing all of them at once.
 
 
-### Understand the idea · 1
+### Build from the foundations: every value comes from a token
 
 Section: learn. Stable action: learn-1.
 
 Build from the foundations: every value comes from a token.
 
 
-### Understand the idea · 2
+### Every state in the grid must be demonstrable on demand
 
 Section: learn. Stable action: learn-2.
 
 Every state in the grid must be demonstrable on demand.
 
 
-### Understand the idea · 3
+### A single page showing all states is the system's most useful artefact
 
 Section: learn. Stable action: learn-3.
 
 A single page showing all states is the system's most useful artefact.
 
 
-### Understand the idea · 4
+### Build the awkward content case, not the tidy one
 
 Section: learn. Stable action: learn-4.
 
 Build the awkward content case, not the tidy one.
 
 
-### Understand the idea · 5
+### If a state is hard to build, the specification may be wrong
 
 Section: learn. Stable action: learn-5.
 
 If a state is hard to build, the specification may be wrong.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The class card was built in about eighty lines, every value from a token. The states page shows three variants against five states, plus three content cases: a very long title, a missing image and a class with one place left. Building revealed two specification problems. The loading and unavailable states looked nearly identical in greyscale and needed a second distinguishing signal. And the compact variant could not accommodate the status text at all, which meant it was either a different component or the status rule needed changing — recorded as an open decision rather than patched.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2757,6 +2915,40 @@ Open Your work and choose Ready for review. The next lesson settles whether the 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Build it, and prove the states exist
+What I am trying to do: Build your specified component in HTML and CSS with every state demonstrable, and publish a page showing all of them at once.
+
+Key idea or terms:
+Built from tokens: Every colour, size and space coming from a named foundation value rather than being typed in. It is what makes one change reach everything.
+Missing token: A value the component needs that the foundations do not offer. It is a finding about one of the two, and it should not be resolved by quietly typing a number.
+Demonstrable on demand: You can make the state appear whenever you want, usually by adding a class. A state that only shows up when the network is slow cannot be reviewed.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Building the states of a tool card, and treating a difficult state as a coding problem. The loading state on the compact variant. I spent an hour on it and every version either changed the card’s height or lost the status line.
+
+Activity: Give me one inconsistent component or rule from the supplied case. Ask me to choose the shared decision, name what must stay flexible and explain how another person would know which version is current.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Where the component and its states page live” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Where the component and its states page live”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Where the component and its states page live” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Search the component's styles for literal values and replace or record each one.
@@ -2826,7 +3018,7 @@ Adequate evidence: A list of contradictions, gaps or ambiguities surfaced by bui
 Repair: Write down every moment the build did not match the specification. Recheck: The problem list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson settles whether the compact card is a variant at all.
 
@@ -2864,58 +3056,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A variant count per component with anything over the limit flagged
 - One case decided against reuse, with the reason
 
-### Start with a clear task
+### Start here: in everyday words
+
+A design system is a shared set of decisions and reusable parts that helps a team build consistent products. In this lesson, your first small result is: Four questions written down that decide variant or component, each answerable in a sentence.
+
+**Words you will use**
+
+- **Variant:** The same job, done with different emphasis or density. A compact card is still offering you something to choose.
+- **Separate component:** A different job, however similar it looks. A record of something you already own is not an option to choose, whatever the shape of the box.
+- **The job:** What the reader is doing with it. Choosing between options, reading a record, being sold something: three different jobs that can look identical.
+
+**Quick example.** Made-up example. Deciding whether a booking summary is a variant of the tool card, and deciding by looking. A box with an image, a title, a meta row and an action. Beside the tool card, the two were almost indistinguishable.
+
+The reader demonstrates and guides the task before asking for “The question about the job it does”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Decide for three borderline cases whether they are variants of an existing component or new components, using a written test you can reuse.
 
 
-### Understand the idea · 1
+### A variant shares the component's job and differs in emphasis or density
 
 Section: learn. Stable action: learn-1.
 
 A variant shares the component's job and differs in emphasis or density.
 
 
-### Understand the idea · 2
+### A different job means a different component, however similar it looks
 
 Section: learn. Stable action: learn-2.
 
 A different job means a different component, however similar it looks.
 
 
-### Understand the idea · 3
+### Idea 3: If a variant needs its own content rules and states, it is pro…
 
 Section: learn. Stable action: learn-3.
 
 If a variant needs its own content rules and states, it is probably separate.
 
 
-### Understand the idea · 4
+### Count the variants: beyond about four, the abstraction is usually wrong
 
 Section: learn. Stable action: learn-4.
 
 Count the variants: beyond about four, the abstraction is usually wrong.
 
 
-### Understand the idea · 5
+### Write the test once and apply it, rather than deciding case by case
 
 Section: learn. Stable action: learn-5.
 
 Write the test once and apply it, rather than deciding case by case.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three borderline cases were tested. The compact card: same job, same content rules, one fewer state — a variant. The booking summary: different job (a record of something you own, not an option to choose), different required fields, different actions — a separate component, despite looking almost identical. The promotional card: different job again, and its own content rules — separate, and marked out of scope entirely, since marketing surfaces were excluded in lesson 1. The test was written down and applied to two further cases the following week without re-argument.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3482,6 +3688,40 @@ Open Your work and choose Ready for review. The next lesson writes the documenta
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Variant, or a different component?
+What I am trying to do: Decide for three borderline cases whether they are variants of an existing component or new components, using a written test you can reuse.
+
+Key idea or terms:
+Variant: The same job, done with different emphasis or density. A compact card is still offering you something to choose.
+Separate component: A different job, however similar it looks. A record of something you already own is not an option to choose, whatever the shape of the box.
+The job: What the reader is doing with it. Choosing between options, reading a record, being sold something: three different jobs that can look identical.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Deciding whether a booking summary is a variant of the tool card, and deciding by looking. A box with an image, a title, a meta row and an action. Beside the tool card, the two were almost indistinguishable.
+
+Activity: Give me one inconsistent component or rule from the supplied case. Ask me to choose the shared decision, name what must stay flexible and explain how another person would know which version is current.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The question about the job it does” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The question about the job it does”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The question about the job it does” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the questions you actually asked while deciding, then generalise them.
@@ -3551,7 +3791,7 @@ Adequate evidence: A case where you chose a separate component, with the reason.
 Repair: Find the case where reuse would have required conditional rules, and record the split. Recheck: The recorded decision.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson writes the documentation somebody will actually use.
 
@@ -3589,58 +3829,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Content rules placed where a writer will find them
 - A record of the questions a real reader had to ask
 
-### Start with a clear task
+### Start here: in everyday words
+
+A design system is a shared set of decisions and reusable parts that helps a team build consistent products. In this lesson, your first small result is: Both pages opening with when to use, when not to use and the alternative, with the example immediately after.
+
+**Words you will use**
+
+- **When to use it:** The question every reader arrives with. Leading with appearance answers a question nobody asked and buries the one they did.
+- **The alternative:** What to use instead when this component is wrong. A prohibition with no alternative gets ignored, because somebody still has to build the screen.
+- **Live example:** The real component rendered on the documentation page, rather than a picture of it. It cannot go out of date the way a screenshot can.
+
+**Quick example.** Made-up example. Documenting content rules for a tool-library card, and putting them where writers do not go. A content guidelines document. Tone of voice, capitalisation, how to write titles, maximum lengths per component. Eleven pages, and genuinely good.
+
+The reader demonstrates and guides the task before asking for “For each of your two components: when to use it, when not to, and what to use instead”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write the documentation for two components so that a person can use them correctly without asking you, and test it by watching someone try.
 
 
-### Understand the idea · 1
+### Lead with when to use it, not with what it looks like
 
 Section: learn. Stable action: learn-1.
 
 Lead with when to use it, not with what it looks like.
 
 
-### Understand the idea · 2
+### Show the code and the design in the same place
 
 Section: learn. Stable action: learn-2.
 
 Show the code and the design in the same place.
 
 
-### Understand the idea · 3
+### Put the content rules where someone writing content will find them
 
 Section: learn. Stable action: learn-3.
 
 Put the content rules where someone writing content will find them.
 
 
-### Understand the idea · 4
+### Idea 4: Answer the questions people actually ask, not the ones you fin…
 
 Section: learn. Stable action: learn-4.
 
 Answer the questions people actually ask, not the ones you find interesting.
 
 
-### Understand the idea · 5
+### Test the documentation by watching someone use it
 
 Section: learn. Stable action: learn-5.
 
 Test the documentation by watching someone use it.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The card and the button pages were rewritten. Each opens with when to use it, when not to, and the alternative. Then a live example with the code beside it, the anatomy, the state grid, the content rules — including maximum label length and truncation behaviour — and the keyboard behaviour. Two people were then asked to build a screen using them. Four questions came up: what happens with two actions, whether the compact variant may be used in a grid, what the maximum title length actually is, and whether the card is clickable as a whole. All four became sentences on the pages.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4169,6 +4423,40 @@ Open Your work and choose Ready for review. The next lesson decides who gets to 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Documentation someone will actually read
+What I am trying to do: Write the documentation for two components so that a person can use them correctly without asking you, and test it by watching someone try.
+
+Key idea or terms:
+When to use it: The question every reader arrives with. Leading with appearance answers a question nobody asked and buries the one they did.
+The alternative: What to use instead when this component is wrong. A prohibition with no alternative gets ignored, because somebody still has to build the screen.
+Live example: The real component rendered on the documentation page, rather than a picture of it. It cannot go out of date the way a screenshot can.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Documenting content rules for a tool-library card, and putting them where writers do not go. A content guidelines document. Tone of voice, capitalisation, how to write titles, maximum lengths per component. Eleven pages, and genuinely good.
+
+Activity: Give me one inconsistent component or rule from the supplied case. Ask me to choose the shared decision, name what must stay flexible and explain how another person would know which version is current.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “For each of your two components: when to use it, when not to, and what to use instead” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “For each of your two components: when to use it, when not to, and what to use instead”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “For each of your two components: when to use it, when not to, and what to use instead” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Move the purpose to the top and add the when-not-to-use paragraph.
@@ -4238,7 +4526,7 @@ Adequate evidence: A list of questions from a real reader with the sentences add
 Repair: Ask someone to build a screen from the pages alone and write down every question. Recheck: The question list and the updated pages.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson decides who gets to change any of this.
 
@@ -4276,58 +4564,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Acceptance criteria for new components
 - A decision log including at least one rejection
 
-### Start with a clear task
+### Start here: in everyday words
+
+A design system is a shared set of decisions and reusable parts that helps a team build consistent products. In this lesson, your first small result is: A written route for proposing a change, and the evidence a proposal has to carry.
+
+**Words you will use**
+
+- **Governance:** The stated way things get into and out of the system. It is the difference between a system people use and one they route around.
+- **Required evidence:** What a proposal must show before it is considered: where it is needed, what was tried, why it did not fit. It turns a wish into something decidable.
+- **The decider:** The person who says yes or no. Naming yourself is a complete answer; leaving it unnamed means everybody assumes somebody else is handling it.
+
+**Quick example.** Made-up example. Writing governance for a tool-library system, and writing the part that felt important. A careful proposal template, three acceptance criteria, and a note that proposals would be reviewed regularly.
+
+The reader demonstrates and guides the task before asking for “Where a proposal goes, and in what form”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write the governance for your system: how a change is proposed, who decides, what evidence is required, and how long it takes.
 
 
-### Understand the idea · 1
+### Every system needs a stated way to propose a change
 
 Section: learn. Stable action: learn-1.
 
 Every system needs a stated way to propose a change.
 
 
-### Understand the idea · 2
+### Name the decider, even when it is you
 
 Section: learn. Stable action: learn-2.
 
 Name the decider, even when it is you.
 
 
-### Understand the idea · 3
+### Idea 3: Require evidence: where it is needed, what it replaces, why ex…
 
 Section: learn. Stable action: learn-3.
 
 Require evidence: where it is needed, what it replaces, why existing parts do not fit.
 
 
-### Understand the idea · 4
+### State the response time, or proposals go unanswered and people give up
 
 Section: learn. Stable action: learn-4.
 
 State the response time, or proposals go unanswered and people give up.
 
 
-### Understand the idea · 5
+### Record decisions, including rejections and their reasons
 
 Section: learn. Stable action: learn-5.
 
 Record decisions, including rejections and their reasons.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The governance was one page. To propose: open an issue with the screens where it is needed, what existing component you tried, and why it did not fit. Decider: the learner, until someone else joins. Response time: within a week. Criteria: needed in at least two screens, not achievable by composing existing components, and specifiable with states and content rules. Decisions are recorded in a log with the reason. Three proposals in the first month: one accepted, one rejected because composition covered it, and one deferred pending a second use — all recorded, and the rejected one was not re-raised.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4872,6 +5174,40 @@ Open Your work and choose Ready for review. The next lesson decides how a change
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Who decides, and how something gets in
+What I am trying to do: Write the governance for your system: how a change is proposed, who decides, what evidence is required, and how long it takes.
+
+Key idea or terms:
+Governance: The stated way things get into and out of the system. It is the difference between a system people use and one they route around.
+Required evidence: What a proposal must show before it is considered: where it is needed, what was tried, why it did not fit. It turns a wish into something decidable.
+The decider: The person who says yes or no. Naming yourself is a complete answer; leaving it unnamed means everybody assumes somebody else is handling it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing governance for a tool-library system, and writing the part that felt important. A careful proposal template, three acceptance criteria, and a note that proposals would be reviewed regularly.
+
+Activity: Give me one inconsistent component or rule from the supplied case. Ask me to choose the shared decision, name what must stay flexible and explain how another person would know which version is current.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Where a proposal goes, and in what form” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Where a proposal goes, and in what form”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Where a proposal goes, and in what form” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the four questions a proposal must answer and where it goes.
@@ -4941,7 +5277,7 @@ Adequate evidence: A log of three decisions including a rejection and its reason
 Repair: Apply the process to three real proposals and record each outcome with a reason. Recheck: The decision log.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson decides how a change is announced once it has been accepted.
 
@@ -4979,58 +5315,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A change note for the largest one
 - A deprecation rule stating how long old names survive
 
-### Start with a clear task
+### Start here: in everyday words
+
+A design system is a shared set of decisions and reusable parts that helps a team build consistent products. In this lesson, your first small result is: A version number for the system as it stands, and the three levels written in your own words.
+
+**Words you will use**
+
+- **Major, minor, patch:** Three levels of change. Major forces work on people using it, minor adds something new, patch fixes something without changing how it is used.
+- **A released version:** One that is never edited afterwards. Changing something means a new version, which is what makes a version number worth anything.
+- **Breaking change:** Anything that makes existing use stop working: a renamed token, a removed variant, a changed default. Its size in characters is irrelevant.
+
+**Quick example.** Made-up example. Classifying a token rename in a tool-library system, and classifying it by how much typing it took. Renaming surface-alt to surface-muted, because alt said nothing and muted says what it is for.
+
+The reader demonstrates and guides the task before asking for “The version number you are giving the system now, and what it covers”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Version your system, classify three real changes as major, minor or patch, and write the change note that tells people what to do.
 
 
-### Understand the idea · 1
+### Major means people must change something; minor adds; patch fixes
 
 Section: learn. Stable action: learn-1.
 
 Major means people must change something; minor adds; patch fixes.
 
 
-### Understand the idea · 2
+### A released version is never edited: a change means a new version
 
 Section: learn. Stable action: learn-2.
 
 A released version is never edited: a change means a new version.
 
 
-### Understand the idea · 3
+### Renaming a token or removing a variant is a breaking change
 
 Section: learn. Stable action: learn-3.
 
 Renaming a token or removing a variant is a breaking change.
 
 
-### Understand the idea · 4
+### A change note says what changed, why, and what the reader must do
 
 Section: learn. Stable action: learn-4.
 
 A change note says what changed, why, and what the reader must do.
 
 
-### Understand the idea · 5
+### Deprecate before removing, and say when removal happens
 
 Section: learn. Stable action: learn-5.
 
 Deprecate before removing, and say when removal happens.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The system was versioned 1.0.0 at the point the two components were documented. Three changes followed. Adding the compact card variant: minor, since nothing existing changed. Fixing the focus ring's contrast on the tinted surface: patch, because usage is unchanged. Renaming surface-alt to surface-muted for consistency: major, because every use must change, and it was released with the old name deprecated for one minor version, a change note explaining the rename, and a list of the four places it appeared. The rename was deliberately delayed until it could travel with another major change.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5581,6 +5931,40 @@ Open Your work and choose Ready for review. The next lesson finds out whether an
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Versions and breaking changes
+What I am trying to do: Version your system, classify three real changes as major, minor or patch, and write the change note that tells people what to do.
+
+Key idea or terms:
+Major, minor, patch: Three levels of change. Major forces work on people using it, minor adds something new, patch fixes something without changing how it is used.
+A released version: One that is never edited afterwards. Changing something means a new version, which is what makes a version number worth anything.
+Breaking change: Anything that makes existing use stop working: a renamed token, a removed variant, a changed default. Its size in characters is irrelevant.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Classifying a token rename in a tool-library system, and classifying it by how much typing it took. Renaming surface-alt to surface-muted, because alt said nothing and muted says what it is for.
+
+Activity: Give me one inconsistent component or rule from the supplied case. Ask me to choose the shared decision, name what must stay flexible and explain how another person would know which version is current.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The version number you are giving the system now, and what it covers” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The version number you are giving the system now, and what it covers”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The version number you are giving the system now, and what it covers” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Assign a version and write which parts of the system it governs.
@@ -5650,7 +6034,7 @@ Adequate evidence: A stated survival period for deprecated names and how depreca
 Repair: Write how long an old name stays and how someone finds out it is going. Recheck: The deprecation rule.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson finds out whether anything you have built is actually used.
 
@@ -5688,58 +6072,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A blockers list with a decision for each
 - Any product change made to fit the system, recorded
 
-### Start with a clear task
+### Start here: in everyday words
+
+A design system is a shared set of decisions and reusable parts that helps a team build consistent products. In this lesson, your first small result is: One real screen rebuilt from system components and tokens, with every element that could not come from the system recorded.
+
+**Words you will use**
+
+- **Adoption:** How much of a real screen actually comes from the system. It is the only measure of whether the system has an effect.
+- **Blocker:** Something the screen needs that the system cannot supply. Each one is information about fit rather than an obstacle to migration.
+- **Counting method:** What counts as one element. Any consistent rule works; an unstated one makes the figure impossible to repeat or compare.
+
+**Quick example.** Made-up example. Measuring adoption on a tool-library screen, and measuring the wrong screen. A screen I had built the week before, specifically to show the system working. It came out at 100 per cent.
+
+The reader demonstrates and guides the task before asking for “Which real screen, and why this one”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Migrate two existing screens onto the system, measure how much of each now comes from it, and record what blocked full adoption.
 
 
-### Understand the idea · 1
+### Measure adoption: what proportion of a screen comes from the system
 
 Section: learn. Stable action: learn-1.
 
 Measure adoption: what proportion of a screen comes from the system.
 
 
-### Understand the idea · 2
+### Migrate a real screen, not a demonstration one
 
 Section: learn. Stable action: learn-2.
 
 Migrate a real screen, not a demonstration one.
 
 
-### Understand the idea · 3
+### Every blocker is information: a missing component, a wrong rule, a gap
 
 Section: learn. Stable action: learn-3.
 
 Every blocker is information: a missing component, a wrong rule, a gap.
 
 
-### Understand the idea · 4
+### Partial adoption is normal; record what remains and why
 
 Section: learn. Stable action: learn-4.
 
 Partial adoption is normal; record what remains and why.
 
 
-### Understand the idea · 5
+### Do not change the product to fit the system without saying so
 
 Section: learn. Stable action: learn-5.
 
 Do not change the product to fit the system without saying so.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Two screens were migrated. The class list reached 90 per cent system-provided after two blockers were fixed: a missing filter chip and a spacing value that did not exist. The booking summary reached 55 per cent, and the reasons were recorded: it needs a component the system deliberately does not cover — a receipt-style record — and its status treatment carries a distinction the system's status component flattens. The second was explicitly not resolved by simplifying the screen, since the distinction was one the m05 research had shown people using.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6276,6 +6674,40 @@ Open Your work and choose Ready for review. The next lesson decides what the sys
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Getting it adopted
+What I am trying to do: Migrate two existing screens onto the system, measure how much of each now comes from it, and record what blocked full adoption.
+
+Key idea or terms:
+Adoption: How much of a real screen actually comes from the system. It is the only measure of whether the system has an effect.
+Blocker: Something the screen needs that the system cannot supply. Each one is information about fit rather than an obstacle to migration.
+Counting method: What counts as one element. Any consistent rule works; an unstated one makes the figure impossible to repeat or compare.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Measuring adoption on a tool-library screen, and measuring the wrong screen. A screen I had built the week before, specifically to show the system working. It came out at 100 per cent.
+
+Activity: Give me one inconsistent component or rule from the supplied case. Ask me to choose the shared decision, name what must stay flexible and explain how another person would know which version is current.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Which real screen, and why this one” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Which real screen, and why this one”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Which real screen, and why this one” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Choose two screens you actually built earlier and rebuild them from the system.
@@ -6345,7 +6777,7 @@ Adequate evidence: Any simplification of a screen recorded with what it removed.
 Repair: Compare the migrated screens with the originals and record anything that disappeared. Recheck: The change record.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson decides what the system is actually promising.
 
@@ -6383,58 +6815,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A list of responsibilities left to the user of the system
 - A statement that the system claims no page-level conformance
 
-### Start with a clear task
+### Start here: in everyday words
+
+A design system is a shared set of decisions and reusable parts that helps a team build consistent products. In this lesson, your first small result is: Two lists: what a component can guarantee alone, and what depends on how components are composed.
+
+**Words you will use**
+
+- **Component-owned:** Something true of the component wherever it is used: its own focus ring, its keyboard behaviour, whether its states differ without colour.
+- **Composition-owned:** Something that only exists once components are arranged: heading order, focus order across a page, reading order. No component can own it.
+- **Guarantee:** Something you have tested and will keep testing. It is a promise with a check behind it rather than a description of intent.
+
+**Quick example.** Made-up example. Writing accessibility guarantees for a tool-library system, and writing one that covered everything. “All components are accessible.” It was the shortest possible version and it felt like the strongest.
+
+The reader demonstrates and guides the task before asking for “Accessibility properties a component can guarantee by itself”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write the accessibility guarantees your system makes, prove each with a check, and state plainly what remains the responsibility of whoever uses it.
 
 
-### Understand the idea · 1
+### Guarantee only what you have tested in the component itself
 
 Section: learn. Stable action: learn-1.
 
 Guarantee only what you have tested in the component itself.
 
 
-### Understand the idea · 2
+### Idea 2: Composition can break what components guarantee: heading order…
 
 Section: learn. Stable action: learn-2.
 
 Composition can break what components guarantee: heading order, focus order, contrast.
 
 
-### Understand the idea · 3
+### State the user's responsibilities as clearly as the system's
 
 Section: learn. Stable action: learn-3.
 
 State the user's responsibilities as clearly as the system's.
 
 
-### Understand the idea · 4
+### A guarantee needs a check that can be re-run when the component changes
 
 Section: learn. Stable action: learn-4.
 
 A guarantee needs a check that can be re-run when the component changes.
 
 
-### Understand the idea · 5
+### Never claim conformance for a system; components are not pages
 
 Section: learn. Stable action: learn-5.
 
 Never claim conformance for a system; components are not pages.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Four guarantees were written. Focus rings meet contrast on all permitted surfaces — checked by measurement, with the surfaces listed. Interactive components match their documented keyboard behaviour — checked by walking each key table. States are distinguishable without colour — checked in greyscale. Text tokens meet the contrast threshold in their permitted pairs — checked by measurement. Four responsibilities were written opposite: page heading order, alternative text for images you supply, reading order of your composition, and testing the assembled page. The statement ended by saying the system claims no conformance, since conformance is a property of a page.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6973,6 +7419,40 @@ Open Your work and choose Ready for review. The next lesson finds out which vers
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: What the system guarantees
+What I am trying to do: Write the accessibility guarantees your system makes, prove each with a check, and state plainly what remains the responsibility of whoever uses it.
+
+Key idea or terms:
+Component-owned: Something true of the component wherever it is used: its own focus ring, its keyboard behaviour, whether its states differ without colour.
+Composition-owned: Something that only exists once components are arranged: heading order, focus order across a page, reading order. No component can own it.
+Guarantee: Something you have tested and will keep testing. It is a promise with a check behind it rather than a description of intent.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Writing accessibility guarantees for a tool-library system, and writing one that covered everything. “All components are accessible.” It was the shortest possible version and it felt like the strongest.
+
+Activity: Give me one inconsistent component or rule from the supplied case. Ask me to choose the shared decision, name what must stay flexible and explain how another person would know which version is current.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Accessibility properties a component can guarantee by itself” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Accessibility properties a component can guarantee by itself”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Accessibility properties a component can guarantee by itself” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Move anything that depends on arrangement into the responsibilities list.
@@ -7042,7 +7522,7 @@ Adequate evidence: An explicit statement that the system does not claim conforma
 Repair: Add one sentence stating what the system does not claim and why. Recheck: The boundary statement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson finds out which version of your system is actually true.
 
@@ -7080,58 +7560,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A drift audit of at least three components
 - A change process that updates every representation
 
-### Start with a clear task
+### Start here: in everyday words
+
+A design system is a shared set of decisions and reusable parts that helps a team build consistent products. In this lesson, your first small result is: One representation named authoritative with the reason, and a statement of what the others are.
+
+**Words you will use**
+
+- **Authoritative representation:** The one that is true when two disagree. Naming it is what stops an argument nobody can settle.
+- **Copy:** Any other representation. It is useful, it is not the system, and it has to say so on itself.
+- **Drift:** Two representations quietly disagreeing. It is inevitable; the only question is how quickly it is found.
+
+**Quick example.** Made-up example. Choosing the authority for a tool-library system, and choosing the one that was easiest to change. The design file. It is where I work, it is where the components look right, and changing something there takes a minute.
+
+The reader demonstrates and guides the task before asking for “Which representation is authoritative, and why”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Decide which representation of your system is authoritative, write how the others stay in step, and find the drift that already exists.
 
 
-### Understand the idea · 1
+### Name the authoritative representation explicitly
 
 Section: learn. Stable action: learn-1.
 
 Name the authoritative representation explicitly.
 
 
-### Understand the idea · 2
+### The others are copies and must state that they are
 
 Section: learn. Stable action: learn-2.
 
 The others are copies and must state that they are.
 
 
-### Understand the idea · 3
+### Drift is inevitable; the question is how quickly it is found
 
 Section: learn. Stable action: learn-3.
 
 Drift is inevitable; the question is how quickly it is found.
 
 
-### Understand the idea · 4
+### A change process that updates only one representation guarantees drift
 
 Section: learn. Stable action: learn-4.
 
 A change process that updates only one representation guarantees drift.
 
 
-### Understand the idea · 5
+### Audit for drift regularly and record what you find
 
 Section: learn. Stable action: learn-5.
 
 Audit for drift regularly and record what you find.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The code was named authoritative, with the documentation generated from or checked against it and any design file marked a working copy carrying the version it reflected. An audit of three components found three drifts already: the card's padding differed by 4 pixels between the drawing and the build, the button had a disabled state in the drawing that had never been built, and the documentation described a truncation rule the component did not implement. Each was recorded, and the change process was rewritten to require the documentation update in the same change as the code.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7662,6 +8156,40 @@ Open Your work and choose Ready for review. The last lesson of the module review
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: One source of truth, and the copies
+What I am trying to do: Decide which representation of your system is authoritative, write how the others stay in step, and find the drift that already exists.
+
+Key idea or terms:
+Authoritative representation: The one that is true when two disagree. Naming it is what stops an argument nobody can settle.
+Copy: Any other representation. It is useful, it is not the system, and it has to say so on itself.
+Drift: Two representations quietly disagreeing. It is inevitable; the only question is how quickly it is found.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Choosing the authority for a tool-library system, and choosing the one that was easiest to change. The design file. It is where I work, it is where the components look right, and changing something there takes a minute.
+
+Activity: Give me one inconsistent component or rule from the supplied case. Ask me to choose the shared decision, name what must stay flexible and explain how another person would know which version is current.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Which representation is authoritative, and why” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Which representation is authoritative, and why”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Which representation is authoritative, and why” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Choose the representation people actually meet and write one sentence naming it as authoritative.
@@ -7731,7 +8259,7 @@ Adequate evidence: A written process requiring all representations to be updated
 Repair: Write the change steps and add them to the governance page. Recheck: The updated process.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The last lesson of the module reviews the system and removes something from it.
 
@@ -7769,58 +8297,72 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Workarounds found in real screens, each with a decision
 - A six-month plan with an honest maintenance estimate
 
-### Start with a clear task
+### Start here: in everyday words
+
+A design system is a shared set of decisions and reusable parts that helps a team build consistent products. In this lesson, your first small result is: Every component listed with where it is actually used, and anything used nowhere marked.
+
+**Words you will use**
+
+- **Review against use:** Judging the system by what the product actually contains rather than by whether the set feels complete.
+- **Unused component:** Cost with no benefit. It is maintained, documented, versioned and looked at by everybody learning the system, and it does nothing.
+- **Workaround:** Something built on a screen rather than taken from the system. Each one is a gap, and the person who built it already knows what the gap is.
+
+**Quick example.** Made-up example. Reviewing a tool-library system, and reviewing it for completeness. Went through the system asking what was missing. A modal, a tabs component, a pagination control — three obvious holes in any component set.
+
+The reader demonstrates and guides the task before asking for “Every component and where it is actually used”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Review the system against how it has actually been used, remove or deprecate at least one thing, and write the six-month plan with its maintenance cost.
 
 
-### Understand the idea · 1
+### Review against use, not against completeness
 
 Section: learn. Stable action: learn-1.
 
 Review against use, not against completeness.
 
 
-### Understand the idea · 2
+### Unused components are cost without benefit; deprecate them
 
 Section: learn. Stable action: learn-2.
 
 Unused components are cost without benefit; deprecate them.
 
 
-### Understand the idea · 3
+### Look for the things people worked around; each is a gap
 
 Section: learn. Stable action: learn-3.
 
 Look for the things people worked around; each is a gap.
 
 
-### Understand the idea · 4
+### Removal is a major change and needs the same process as an addition
 
 Section: learn. Stable action: learn-4.
 
 Removal is a major change and needs the same process as an addition.
 
 
-### Understand the idea · 5
+### Plan the next six months with an honest maintenance estimate
 
 Section: learn. Stable action: learn-5.
 
 Plan the next six months with an honest maintenance estimate.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The review found three unused components, two of which had been built speculatively in the first week; both were deprecated with a note, and the third was kept because a planned screen needed it, with the reason recorded. Two workarounds were found in the learner's own screens: a status treatment the system flattened and a compact list row that did not exist. The first became a governance proposal; the second was accepted as a minor addition. The plan estimated three hours a month, listed what would be skipped if that was not available — the drift audit first, documentation last — and named the review date.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -8351,6 +8893,40 @@ Open Your work and choose Ready for review. This closes Module 13. Module 14 mov
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Review the system and remove something
+What I am trying to do: Review the system against how it has actually been used, remove or deprecate at least one thing, and write the six-month plan with its maintenance cost.
+
+Key idea or terms:
+Review against use: Judging the system by what the product actually contains rather than by whether the set feels complete.
+Unused component: Cost with no benefit. It is maintained, documented, versioned and looked at by everybody learning the system, and it does nothing.
+Workaround: Something built on a screen rather than taken from the system. Each one is a gap, and the person who built it already knows what the gap is.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Reviewing a tool-library system, and reviewing it for completeness. Went through the system asking what was missing. A modal, a tabs component, a pagination control — three obvious holes in any component set.
+
+Activity: Give me one inconsistent component or rule from the supplied case. Ask me to choose the shared decision, name what must stay flexible and explain how another person would know which version is current.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Every component and where it is actually used” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Every component and where it is actually used”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Every component and where it is actually used” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Go through your screens and record where each component actually appears.
@@ -8420,7 +8996,7 @@ Adequate evidence: Monthly hours, what is dropped first when time is short, and 
 Repair: Estimate from what this module actually cost you, then decide what is dropped first. Recheck: The plan.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This closes Module 13. Module 14 moves from building the system to working with the people who use it.
 

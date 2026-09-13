@@ -26,6 +26,25 @@ function RepairAnswer({fields,record,setField,readOnly}: {fields:WorksheetField[
  </div>;
 }
 
+function AiLearningActivity({ai}: {ai: NonNullable<NonNullable<Lesson['apprenticeship']>['ai']>}) {
+ const [copyState,setCopyState]=useState('Copy prompt');
+ async function copy(){
+  try { await navigator.clipboard.writeText(ai.prompt); setCopyState('Copied — paste it in your AI chat'); }
+  catch { setCopyState('Select the prompt and copy it'); }
+ }
+ return <section className="ai-learning" aria-labelledby="ai-learning-title">
+  <span className="eyebrow">OPTIONAL · LEARN WITH AN AI APP</span>
+  <h3 id="ai-learning-title">Practise this idea through a short conversation</h3>
+  <p>{ai.purpose}</p>
+  <ol>{ai.setup.map(item=><li key={item}>{item}</li>)}</ol>
+  <label htmlFor="ai-learning-prompt"><strong>Prompt to copy</strong></label>
+  <textarea id="ai-learning-prompt" readOnly value={ai.prompt} rows={12} onFocus={event=>event.currentTarget.select()}/>
+  <button type="button" className="secondary" onClick={copy}>{copyState}</button>
+  <p><strong>Come back to the course:</strong> {ai.followUp}</p>
+  <div className="ai-alternative"><strong>Continue without AI:</strong> {ai.alternative}</div>
+ </section>;
+}
+
 export function LessonFlow({lesson, record, setRecord, section, go, readOnly, onStep, online}: {
  lesson:Lesson;record:RecordData;setRecord:SetPractice;section:string;go:(s:string)=>void;
  readOnly:boolean;onStep:(n:number|null)=>void;online:boolean;
@@ -60,15 +79,22 @@ export function LessonFlow({lesson, record, setRecord, section, go, readOnly, on
  const priorEntry=action.field?.match(/^entry-(\d+)-(label|goal|check)$/);
  const repairIds=action.repairFields || (action.index===0 ? ['user-goal'] : [1,2,3,4,5].flatMap(n=>[`entry-${n}-label`,`entry-${n}-check`]));
  const optional=field && !fieldRequired(field,record);
- const overviewContent=<nav aria-label="All lesson actions">{sections.map(s=><div key={s.id} className="flow-outline-group"><h3>{s.label}</h3>{flow.filter(a=>a.section===s.id).map(item=><button key={item.id} className="text-button" aria-current={item.id===action.id?'step':undefined} onClick={()=>move(item)}><span aria-hidden>{done(item)?'✓':'○'}</span><span>{item.title}</span></button>)}</div>)}</nav>;
+ const relevantTerms=guide?.terms?.filter(term=>`${action.title} ${action.instruction}`.toLowerCase().includes(term.term.toLowerCase()))
+  || [];
+ const visibleTerms=relevantTerms.length ? relevantTerms : (guide && currentFields[0]?.id===field?.id ? guide.terms?.slice(0,2) || [] : []);
+ const aiAnchor=flow.find(item=>item.kind==='supported'||item.kind==='sort');
+ const aiAnswer=question && record.learning?.answers?.[question.id];
+ const showAiHere=!!a.beginner && !!a.ai && action.id===aiAnchor?.id;
+ const overviewContent=<nav aria-label="All lesson actions">{sections.map(s=>{const items=flow.filter(a=>a.section===s.id), complete=items.filter(done).length;return <details key={s.id} className="flow-outline-group" open={s.id===section}><summary>{s.label} · {complete} of {items.length}</summary>{items.map(item=><button key={item.id} className="text-button" aria-current={item.id===action.id?'step':undefined} onClick={()=>move(item)}><span aria-hidden>{done(item)?'✓':'○'}</span><span>{item.title}</span></button>)}</details>;})}</nav>;
  return <section className="lesson-flow" aria-label="Guided lesson">
-  <div className="flow-overview"><span>Lesson work · {work.percent}%</span><details ref={overview}><summary>Lesson overview</summary>{overviewContent}</details></div>
+  <div className="flow-overview"><div><strong>Required work: {work.done} of {work.total} actions complete</strong><small>{work.percent}% recorded. This shows work saved in the lesson, not mastery or a score.</small></div><details ref={overview}><summary>See all lesson actions</summary>{overviewContent}</details></div>
   <progress max={work.total} value={work.done} aria-label="Required lesson actions completed"/>
   <div className="flow-layout"><div className="flow-main">
    <div className="action-card" data-action={action.id}>
     <span className="eyebrow">{sections.find(s=>s.id===section)?.label} · {sectionActions.indexOf(action)+1} of {sectionActions.length}</span>
     <h2 tabIndex={-1} ref={heading}>{action.title}</h2><p className="action-instruction">{action.instruction}</p>
     {action.kind==='intro' && <>
+     {a.beginner && <section className="beginner-brief" aria-labelledby="beginner-brief-title"><span className="eyebrow">START HERE</span><h3 id="beginner-brief-title">First, in everyday words</h3><p>{a.beginner.plain}</p>{!!a.beginner.terms.length && <><h4>Words you will use</h4><dl className="action-terms">{a.beginner.terms.map(term=><div key={term.term}><dt>{term.term}</dt><dd>{term.meaning}</dd></div>)}</dl></>}<h4>A quick example</h4><p>{a.beginner.example}</p><p><strong>Your first answer later:</strong> “{a.beginner.returnLabel}”. The course will show you what to do before asking for it.</p></section>}
      {lesson.actionPlan ? <><p><strong>You will keep:</strong></p><ul>{lesson.outputs.map(o=><li key={o}>{o}</li>)}</ul><p>{lesson.prerequisite}</p></> : <><p><strong>You will keep:</strong> three definitions, one walkthrough, five evidence entries, two improvements, and a short reflection.</p><p>Designers work with product managers, engineers and researchers. Today, you are practising how to ask useful questions before choosing a fix.</p></>}
      {lesson.actionPlan && <p><strong>Your starting route:</strong> {lesson.actionPlan.start}</p>}
      <p>Answer one action at a time. Your place saves as you go. Time is optional information; add work in another app or on paper under Time details.</p>
@@ -89,8 +115,9 @@ export function LessonFlow({lesson, record, setRecord, section, go, readOnly, on
     {field && <>
      {external && <p>Write this answer in your file or on paper, then choose Next. The field below is optional for your chosen route.</p>}
      {optional && <p className="optional-answer">{field.optional?'Optional answer.':'This answer is not required for your selected practice route.'} You can leave it empty and continue.{field.requiredWhen && ' Keep participant evidence empty when no session took place.'}</p>}
+     {!!visibleTerms.length && <div className="words-for-action"><strong>Words for this action</strong><dl className="action-terms">{visibleTerms.map(term=><div key={term.term}><dt>{term.term}</dt><dd>{term.meaning}</dd></div>)}</dl></div>}
      <Field field={field} value={record.worksheet?.[field.id] || ''} onChange={v=>setField(field.id,v)} readOnly={readOnly}/>
-     {guide && <div className="action-context"><p><strong>For this task:</strong> {guide.expect}</p>{guide.start && <p>{guide.start}</p>}<details><summary>Task instructions and your related answers</summary><ol>{lesson.steps[action.step-1].instructions.map((t,i)=><li key={i}>{t}</li>)}</ol>{currentFields.filter(f=>f.id!==field.id && record.worksheet?.[f.id]?.trim()).map(f=><blockquote key={f.id}><strong>{f.label}</strong><br/>{record.worksheet?.[f.id]}</blockquote>)}{guide.example && <p>{guide.example}</p>}{guide.terms?.map(t=><p key={t.term}><strong>{t.term}:</strong> {t.meaning}</p>)}</details>{lesson.actionPlan?.material && <details><summary>Supplied practice notes</summary>{lesson.actionPlan.material.map(p=><p key={p}>{p}</p>)}</details>}</div>}
+     {guide && <div className="action-context"><p><strong>What to produce:</strong> {guide.expect}</p>{guide.start && <p><strong>How to start:</strong> {guide.start}</p>}{guide.example && <p><strong>Example:</strong> {guide.example}</p>}<details><summary>Full step instructions and your related answers</summary><ol>{lesson.steps[action.step-1].instructions.map((t,i)=><li key={i}>{t}</li>)}</ol>{currentFields.filter(f=>f.id!==field.id && record.worksheet?.[f.id]?.trim()).map(f=><blockquote key={f.id}><strong>{f.label}</strong><br/>{record.worksheet?.[f.id]}</blockquote>)}</details>{lesson.actionPlan?.material && <details><summary>Supplied practice notes</summary>{lesson.actionPlan.material.map(p=><p key={p}>{p}</p>)}</details>}</div>}
      {lesson.id==='m03-l04-v1' && (field.id.startsWith('row-') || field.id==='repairs') && <div className="action-tool"><ContrastCalculator/></div>}
     </>}
     {question && <SavedQuestion key={question.id} {...question} record={record} setRecord={setRecord} readOnly={readOnly}>
@@ -98,6 +125,8 @@ export function LessonFlow({lesson, record, setRecord, section, go, readOnly, on
      {action.kind==='sort' && guide?.sorter && <p>{guide.sorter.then}</p>}
      {check && <><p><strong>Improve your answer:</strong> {check.repair}</p><p><strong>Check again:</strong> {check.recheck}</p>{external?<p>Make the repair in your file or on paper. Record the change in Your work.</p>:<RepairAnswer key={question.id} fields={repairIds.map(id=>fields.find(f=>f.id===id)!).filter(Boolean)} record={record} setField={setField} readOnly={readOnly}/>}</>}
     </SavedQuestion>}
+    {showAiHere && (!question || aiAnswer?.shown) && <AiLearningActivity ai={a.ai!}/>}
+    {showAiHere && question && !aiAnswer?.shown && <p className="ai-coming-up"><strong>Optional AI activity:</strong> answer the supplied question above and choose “Show me why”. The copy-and-paste activity will appear here next.</p>}
     {field && <p className="enough"><strong>Enough for now:</strong> {optional?'Skip this when it does not apply.':guide?.enough || 'One clear answer in your own words. You can improve it during Check.'} If something did not happen or could not be checked, say so rather than inventing it.</p>}
     {action.kind!=='review' && <div className="flow-actions"><button className="secondary" disabled={index===0} onClick={()=>move(flow[index-1])}>← Back</button><button className="primary" disabled={!readOnly && !ready} onClick={()=>move(flow[index+1],true)}>{optional?'Skip or continue →':'Next →'}</button></div>}
     {action.kind==='review' && <button className="text-button" onClick={()=>move(flow[index-1])}>← Back to your last answer</button>}

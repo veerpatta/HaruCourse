@@ -20,51 +20,65 @@ Starting route: Recommended route: Draw the flow with its entry points, decision
 
 - A one-page flow using distinct notation for actions, decisions, states and exits, showing every evidenced entry point and every ending, with prerequisites and waits marked and three evidenced stopping points named.
 
-### Start with a clear task
+### Start here: in everyday words
+
+A flow is the series of steps and choices a person follows to finish a task. In this lesson, your first small result is: Short notes on how the assigned patterns handle progress, review and returning later, and the four kinds of node in your own words.
+
+**Words you will use**
+
+- **Flow:** A drawing of a whole task, precise enough to build from. It says what happens, where the path forks, and how it ends.
+- **Node:** One box on the flow. Every node is an action, a decision, a state or an exit.
+- **Spine:** The single path from one entry point to one successful ending. It is drawn first, and everything else hangs off it.
+
+**Quick example.** Six made up endings, recorded over one week at a small class-booking service. A: booked and paid. B: rang the provider and booked by phone. C: the held place expired while she was deciding. D: closed the tab at the price. E: booked for someone else and never came back. F: the payment failed and she tried again the next day.
+
+The reader demonstrates and guides the task before asking for “What the assigned patterns do about progress, review and coming back later”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Draw one end-to-end flow with every entry point, decision, system state and exit marked, and list the three moments where a person is most likely to stop — with the evidence for each.
 
 
-### Understand the idea · 1
+### A flow has four kinds of node and most beginners draw only one
 
 Section: learn. Stable action: learn-1.
 
 A flow has four kinds of node and most beginners draw only one. Actions are what the person does. Decisions are points where the path forks, and the fork belongs to the person or to the system — “do they have an account?” is a system decision the person never sees and still shapes everything. States are what the system is doing while they wait: submitted, pending, failed, expired. And exits are how the flow ends, including the ways it ends badly — abandoned, timed out, transferred to a phone call.
 
 
-### Understand the idea · 2
+### Entry points are plural and you rarely control them
 
 Section: learn. Stable action: learn-2.
 
 Entry points are plural and you rarely control them. People arrive at a booking from a search engine on a class page rather than a home page, from a friend's forwarded link, from a message with a half-remembered detail, or by returning three days later on a different phone. Draw each real entry you have evidence for, because a flow that begins at a home page nobody visits describes a product nobody uses.
 
 
-### Understand the idea · 3
+### Idea 3: Mark what has to be true before each step, and what the person…
 
 Section: learn. Stable action: learn-3.
 
 Mark what has to be true before each step, and what the person must be holding. To pay, someone needs an amount they trust, a payment method to hand and often a decision from someone else. Prerequisites drawn on the flow are how you notice that your third screen asks for something the person cannot possibly have yet — the single most common structural fault in a first flow, and it is invisible until the prerequisites are written down.
 
 
-### Understand the idea · 4
+### Waiting is part of the flow, not an absence of it
 
 Section: learn. Stable action: learn-4.
 
 Waiting is part of the flow, not an absence of it. Anything involving payment, another person, or a network can hold someone in an ambiguous state, and that state needs its own node, its own message and its own way out. A flow that draws payment as a single arrow between two screens has hidden precisely where people pay twice, ring the shop or give up.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A booking flow redrawn with all four node kinds grew from six boxes to nineteen. Three entry points were real, and only one was the home page. Two decisions turned out to be system decisions the person never saw — whether a place was still available, and whether their earlier session had expired — and both had been drawn as if the person chose. Two states had been missing entirely: payment pending, where the observation session in m05 had shown someone standing at a window waiting, and place-held-but-unconfirmed. Four exits existed, of which only one was success: the others were abandonment at the price, expiry of a held place, and ringing the provider instead — the last being the most common ending in the research and the one nobody had drawn.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -526,6 +540,40 @@ Open Your work and choose Ready for review. The next lesson takes the entry poin
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Draw the flow, including how people arrive and leave
+What I am trying to do: Draw one end-to-end flow with every entry point, decision, system state and exit marked, and list the three moments where a person is most likely to stop — with the evidence for each.
+
+Key idea or terms:
+Flow: A drawing of a whole task, precise enough to build from. It says what happens, where the path forks, and how it ends.
+Node: One box on the flow. Every node is an action, a decision, a state or an exit.
+Spine: The single path from one entry point to one successful ending. It is drawn first, and everything else hangs off it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Six made up endings, recorded over one week at a small class-booking service. A: booked and paid. B: rang the provider and booked by phone. C: the held place expired while she was deciding. D: closed the tab at the price. E: booked for someone else and never came back. F: the payment failed and she tried again the next day.
+
+Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What the assigned patterns do about progress, review and coming back later” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What the assigned patterns do about progress, review and coming back later”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What the assigned patterns do about progress, review and coming back later” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Go through your flow and label each node with one of the four words. Anything you cannot label is probably a screen name rather than a step.
@@ -595,7 +643,7 @@ Adequate evidence: Three marked stopping points, each with a source — an obser
 Repair: Go back to your m05 notes and m06 test results and find the moments where people actually stopped. Use those rather than the ones that feel risky. Recheck: The three stopping points with sources.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes the entry points on this flow and designs the first run for someone who knows nothing.
 
@@ -625,51 +673,65 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 - A first-run path reaching a real outcome with minimum prerequisites, a two-column must-know and can-wait split, a deferral list with triggers and costs, and written wording for every empty state.
 
-### Start with a clear task
+### Start here: in everyday words
+
+A flow is the series of steps and choices a person follows to finish a task. In this lesson, your first small result is: Your own short account of recognition and recall, and one thing in your product that currently relies on someone remembering.
+
+**Words you will use**
+
+- **Recognition:** Knowing something when you see it. Cheap, because the thing itself is doing the reminding.
+- **Recall:** Producing something from memory with nothing in front of you. Expensive, and the reason a tour is forgotten by the second screen.
+- **First run:** The first pass through your flow by someone who knows nothing about the product. It is not a separate product.
+
+**Quick example.** Made-up example. Splitting a first-run list into must-know and can-wait, and finding my must-know list was mostly my own convenience. Name, phone number, nine interest boxes and two notification settings, all before a single class was shown.
+
+The reader demonstrates and guides the task before asking for “What recognition and recall mean for your first run, in your own words”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Design an onboarding path that lets someone reach a first real outcome without setup they do not yet need, and list every piece of information you deferred with the moment it becomes necessary.
 
 
-### Understand the idea · 1
+### Idea 1: Separate what someone must know now from what they can learn b…
 
 Section: learn. Stable action: learn-1.
 
 Separate what someone must know now from what they can learn by using the thing. Must-know is anything without which the next action is impossible or dangerous: what this costs, what they are committing to, whether their data is shared. Everything else — features, preferences, profile details — can wait for the moment it matters, at which point it is easy to explain because the person now has a reason to listen.
 
 
-### Understand the idea · 2
+### A tour is not onboarding
 
 Section: learn. Stable action: learn-2.
 
 A tour is not onboarding. Sequential overlays explaining the interface are read as an obstacle, forgotten immediately, and are usually a sign the interface itself needs work: if a screen requires a tour, the screen is the problem. Prefer showing a person something they recognise — a familiar pattern, sensible defaults, an example already filled in — because recognition costs almost nothing and recall costs a great deal, which the assigned reading covers directly.
 
 
-### Understand the idea · 3
+### Empty states are onboarding
 
 Section: learn. Stable action: learn-3.
 
 Empty states are onboarding. The first screen of a product with no content yet is doing more teaching than any tour: it should say what will appear here, why, and what one action would produce the first item. A blank list with a plus button teaches nothing; a blank list saying “your bookings appear here — find a class to make your first one” teaches the model and offers the next step in one sentence.
 
 
-### Understand the idea · 4
+### Ask for setup at the moment it buys the person something
 
 Section: learn. Stable action: learn-4.
 
 Ask for setup at the moment it buys the person something. A phone number requested at registration is a cost with no benefit; the same request at the point of holding a place is obviously worth it. Deferral has a cost you must state — you will have less complete records and some flows will interrupt later — so record what you deferred and where it becomes necessary, rather than deferring everything and hoping.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A first-run flow that asked for name, phone number, interests and notification preferences before showing a single class was rebuilt to ask for nothing. A first-time visitor could browse, see full prices, see what to bring and reach the booking step before anything was requested; there the flow asked for a name and a phone number, and said why — “so we can tell you if the class is cancelled” — which is a benefit rather than a form. The empty bookings list said what would appear there and linked to Saturday's classes. Deferred items were listed with their trigger: interests at the point of a second booking, notification preferences only after the first confirmation, and nothing else at all.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1251,6 +1313,40 @@ Open Your work and choose Ready for review. The next lesson designs the account 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: First run: what must be learned now and what can wait
+What I am trying to do: Design an onboarding path that lets someone reach a first real outcome without setup they do not yet need, and list every piece of information you deferred with the moment it becomes necessary.
+
+Key idea or terms:
+Recognition: Knowing something when you see it. Cheap, because the thing itself is doing the reminding.
+Recall: Producing something from memory with nothing in front of you. Expensive, and the reason a tour is forgotten by the second screen.
+First run: The first pass through your flow by someone who knows nothing about the product. It is not a separate product.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Splitting a first-run list into must-know and can-wait, and finding my must-know list was mostly my own convenience. Name, phone number, nine interest boxes and two notification settings, all before a single class was shown.
+
+Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What recognition and recall mean for your first run, in your own words” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What recognition and recall mean for your first run, in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What recognition and recall mean for your first run, in your own words” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - For each must-know item, write which action becomes impossible without it. Items with no answer move to can-wait.
@@ -1320,7 +1416,7 @@ Adequate evidence: A list of deferred items, each with the moment it is asked fo
 Repair: For each deferred item write when it is asked for and what goes wrong because you waited. A deferral with no cost is usually a request you can remove entirely. Recheck: The deferral list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson designs the account paths for whatever you deferred to “when they have an account”.
 
@@ -1350,51 +1446,65 @@ Starting route: Recommended route: Draw the sign-up, sign-in and recovery paths 
 
 - Sign-up, sign-in and recovery paths drawn on the flow, a stated purpose for the account with a no-account path, written wording for every error and confirmation attached to its field, and a recorded shared-device walkthrough with the changes it forced.
 
-### Start with a clear task
+### Start here: in everyday words
+
+A flow is the series of steps and choices a person follows to finish a task. In this lesson, your first small result is: The rules you will hold every field to: a visible label, an instruction, an error tied to the field, and input that survives a failed attempt.
+
+**Words you will use**
+
+- **Persistent label:** A label that stays visible while the person types. A placeholder that vanishes as soon as typing starts is not a label.
+- **Field-level error:** A message beside the field it concerns. An error that could apply to two fields has not yet told anyone anything.
+- **Factor:** One thing a person uses to prove who they are: a phone that receives a code, an inbox, a booking reference.
+
+**Quick example.** A made up sign-in path. A person registered with a phone number and signs in with a code sent by message. She has since changed her number, so the code reaches a phone she no longer has, and she does not remember whether she ever added an email address.
+
+The reader demonstrates and guides the task before asking for “The rules you will apply to every field: its label, its instruction, its error, and what survives a failed attempt”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Design the sign-in, sign-up and recovery paths for your product, including the shared-device and lost-access cases, with every form field labelled, every error message written and the recovery path shown to work without the thing that was lost.
 
 
-### Understand the idea · 1
+### Idea 1: Every field in an authentication form needs a persistent, visi…
 
 Section: learn. Stable action: learn-1.
 
 Every field in an authentication form needs a persistent, visible label, an accessible error message tied to the field, and input that survives a failed attempt. The assigned forms tutorial covers labels, instructions, validation and notifications precisely, and these are not stylistic preferences: a placeholder that disappears when typing, an error at the top of the page with no link to the field, or a form that clears itself after a mistake are the three reliable ways to make a person give up on their third attempt.
 
 
-### Understand the idea · 2
+### Recovery must not depend on the thing that was lost
 
 Section: learn. Stable action: learn-2.
 
 Recovery must not depend on the thing that was lost. If a person cannot sign in because they have lost access to the phone number they registered with, sending a code to that number is not a recovery path, it is the same wall. Design at least one route that uses a different factor, and be explicit about what happens when someone genuinely has nothing: a way to reach a human is a legitimate part of the design and belongs on the flow rather than being left to the support inbox.
 
 
-### Understand the idea · 3
+### Idea 3: Shared and borrowed devices are ordinary, not an edge case — i…
 
 Section: learn. Stable action: learn-3.
 
 Shared and borrowed devices are ordinary, not an edge case — in India and in many contexts a phone is shared within a family, and a person may book from someone else's device once and never again. That has design consequences: staying signed in by default can expose one person's bookings to another; sending a code to a shared phone may reach the wrong person; and “remember me” has to be a visible choice rather than an assumption. Design for the borrowed device and the sole-device person, not only for the individual with their own laptop.
 
 
-### Understand the idea · 4
+### Ask what the account is actually for before designing it
 
 Section: learn. Stable action: learn-4.
 
 Ask what the account is actually for before designing it. Sometimes the answer is nothing: a booking can be identified by a reference and a phone number, and forcing an account is an obstacle that costs you the booking. Where an account genuinely serves the person — seeing history, changing a booking, not re-entering details — say which of those it provides, and let the identity requirement follow from that rather than from habit.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A booking product asked people to register before seeing a price. Rebuilt: no account to browse or book, a booking reference plus phone number to look up a booking later, and an optional account for people who book often. Sign-in offered a code to phone or email, and recovery worked from either — because in the observation session a participant had changed her number and could no longer receive codes. On a shared device, “stay signed in” was off by default with the choice visible, and the confirmation screen offered “finish and sign out” explicitly. Every error message was written out: “That code has expired — request a new one” rather than “Invalid credentials”, and every failed attempt kept the phone number the person had already typed.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1835,6 +1945,40 @@ Open Your work and choose Ready for review. The next lesson takes the same flow 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Getting in and getting back in
+What I am trying to do: Design the sign-in, sign-up and recovery paths for your product, including the shared-device and lost-access cases, with every form field labelled, every error message written and the recovery path shown to work without the thing that was lost.
+
+Key idea or terms:
+Persistent label: A label that stays visible while the person types. A placeholder that vanishes as soon as typing starts is not a label.
+Field-level error: A message beside the field it concerns. An error that could apply to two fields has not yet told anyone anything.
+Factor: One thing a person uses to prove who they are: a phone that receives a code, an inbox, a booking reference.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A made up sign-in path. A person registered with a phone number and signs in with a code sent by message. She has since changed her number, so the code reaches a phone she no longer has, and she does not remember whether she ever added an email address.
+
+Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The rules you will apply to every field: its label, its instruction, its error, and what survives a failed attempt” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The rules you will apply to every field: its label, its instruction, its error, and what survives a failed attempt”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The rules you will apply to every field: its label, its instruction, its error, and what survives a failed attempt” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - List every field and write its label, its instruction and its error text. Any error that could apply to two fields is not yet field-level.
@@ -1904,7 +2048,7 @@ Adequate evidence: A written statement of what the account gives the person, plu
 Repair: Write what the account does for the person, not for you. If the list is empty or entirely about your records, design the flow without it. Recheck: The purpose statement and the no-account path.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes the same flow and asks who may see and do what.
 
@@ -1934,51 +2078,65 @@ Starting route: Recommended route: Draw the permission matrix and the wording fo
 
 - A permission matrix of at least two roles against every action with undecided cells marked, a hidden, disabled or ask decision for every not-allowed cell with written wording, and a recorded dual-role walkthrough.
 
-### Start with a clear task
+### Start here: in everyday words
+
+A flow is the series of steps and choices a person follows to finish a task. In this lesson, your first small result is: The permission words written in your own sentences, and least privilege said about your own product.
+
+**Words you will use**
+
+- **Principal:** Whoever is acting at this moment. A person, usually, signed in as somebody.
+- **Permission:** One specific thing that may be done, such as cancelling a place.
+- **Role:** A named bundle of permissions, such as helper. People hold roles; roles hold permissions.
+
+**Quick example.** Made-up example. Filling in a permission grid in four minutes, then finding that two cells had been decided by nobody but me. Nine actions against three roles. Twenty-seven cells, filled in about four minutes. It looked authoritative because it had no gaps.
+
+The reader demonstrates and guides the task before asking for “Principal, permission, role, hierarchy and inheritance, each in one sentence of your own”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Produce a two-role permission matrix for your product and design what each role sees when an action is unavailable, distinguishing hidden, visible-but-disabled and visible-with-a-route-to-ask.
 
 
-### Understand the idea · 1
+### Idea 1: The vocabulary is worth borrowing precisely, and the assigned…
 
 Section: learn. Stable action: learn-1.
 
 The vocabulary is worth borrowing precisely, and the assigned reading supplies it: a principal is who is acting, a permission is a specific thing that may be done, a role is a named bundle of permissions, resources are arranged in a hierarchy, and access granted higher up is inherited lower down. Least privilege means giving the smallest set that lets someone do their job. That page is infrastructure documentation, not an interface pattern library, so take the model from it and design the interface yourself.
 
 
-### Understand the idea · 2
+### Idea 2: The interface decision for an unavailable action has three ans…
 
 Section: learn. Stable action: learn-2.
 
 The interface decision for an unavailable action has three answers and choosing badly is a common fault. Hide it when the person has no path to it and its presence would only confuse — a customer never needs to see class-management controls. Show it disabled when the person could plausibly have it and needs to know it exists, with an explanation of why it is unavailable. Show it with a route to ask when someone else can grant it, which turns a dead end into a request. A disabled control with no explanation is the worst of the three: it says no without saying why, and people conclude the product is broken.
 
 
-### Understand the idea · 3
+### Roles drift from reality
 
 Section: learn. Stable action: learn-3.
 
 Roles drift from reality. The real world contains the person covering for someone on leave, the owner who is also an attendee, and the family member with the phone. Model roles from what people actually do, expect overlap, and check what happens when one person holds two roles at once — that is where interfaces contradict themselves, showing an owner their own class as if they were a customer and then refusing to let them book it.
 
 
-### Understand the idea · 4
+### Idea 4: Permission errors need the same care as any other error, and u…
 
 Section: learn. Stable action: learn-4.
 
 Permission errors need the same care as any other error, and usually get less. “Access denied” tells a person nothing about whether they took a wrong turn, need to sign in as someone else, or should ask a colleague. Write what is not permitted, why if you can say so safely, and what they can do next — including who can grant it.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A class provider had three real roles. Customers book and manage their own bookings. The owner manages classes and sees everyone's bookings. A helper takes attendance and sees the day's list with names, but no payment information — least privilege made concrete. The matrix showed twelve actions against three roles, and drawing it exposed two problems: nobody had decided whether a helper could cancel someone's place, which the owner did daily by message; and the owner's own view had no way to book a place as an attendee, which she also did. For unavailable actions the rule was: customers never see management controls at all; helpers see the refund control disabled with “only the owner can issue refunds — ask her”; and everyone gets a specific message rather than a generic denial.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2570,6 +2728,40 @@ Open Your work and choose Ready for review. The next lesson designs the browse a
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Who may see and do what
+What I am trying to do: Produce a two-role permission matrix for your product and design what each role sees when an action is unavailable, distinguishing hidden, visible-but-disabled and visible-with-a-route-to-ask.
+
+Key idea or terms:
+Principal: Whoever is acting at this moment. A person, usually, signed in as somebody.
+Permission: One specific thing that may be done, such as cancelling a place.
+Role: A named bundle of permissions, such as helper. People hold roles; roles hold permissions.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Filling in a permission grid in four minutes, then finding that two cells had been decided by nobody but me. Nine actions against three roles. Twenty-seven cells, filled in about four minutes. It looked authoritative because it had no gaps.
+
+Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Principal, permission, role, hierarchy and inheritance, each in one sentence of your own” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Principal, permission, role, hierarchy and inheritance, each in one sentence of your own”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Principal, permission, role, hierarchy and inheritance, each in one sentence of your own” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - List everything anyone does in the whole service, including by phone and message, and add each as a row.
@@ -2639,7 +2831,7 @@ Adequate evidence: A walkthrough as one person with two roles, listing every con
 Repair: Take the most likely double role in your product and complete a full task as that person. Write down every moment the interface disagreed with itself. Recheck: The walkthrough record.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson designs the browse and search loop, so keep your flow to hand.
 
@@ -2669,51 +2861,65 @@ Starting route: Recommended route: Draw the browse loop, the result card and the
 
 - A browse-and-search flow drawn as a loop with the preserved state named on the return step, a prioritised result-item content list with deliberate omissions, designed too-many and no-results states, and a candidate-holding mechanism with its justification.
 
-### Start with a clear task
+### Start here: in everyday words
+
+A flow is the series of steps and choices a person follows to finish a task. In this lesson, your first small result is: What the reading on memory and status implies for the moment somebody comes back to a list, and one rule you will hold yourself to.
+
+**Words you will use**
+
+- **Recognition:** Seeing something and knowing it. Cheap for people, because the answer is on the screen.
+- **Recall:** Holding something in your head and producing it later. Expensive, and it fails quietly.
+- **System status:** The product telling a person what is true now: what is filtered, what is loading, how many results there are.
+
+**Quick example.** A made up filter combination on a class-booking product. “Saturday morning”, “under 500”, “within 2 km” and “beginner” together return nothing at all. Six classes match if the distance filter alone is removed.
+
+The reader demonstrates and guides the task before asking for “What recognition, recall and system status say about returning to a set of results”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Design the browse-and-search flow through to a chosen item, including refinement, returning to results without losing them, and the paths for no results and too many results.
 
 
-### Understand the idea · 1
+### Idea 1: The loop is: express a need, see a set, narrow it, open one, j…
 
 Section: learn. Stable action: learn-1.
 
 The loop is: express a need, see a set, narrow it, open one, judge it, and either finish or go back. The back step is the one designed least often and used most: returning to results must restore the position, the filters and the scroll place, because a person who has to rebuild their search after every look stops comparing and settles for whatever they saw first — which is a design decision you did not intend to make.
 
 
-### Understand the idea · 2
+### Give people a way to hold candidates
 
 Section: learn. Stable action: learn-2.
 
 Give people a way to hold candidates. Comparing three classes across four attributes exceeds what anyone will keep in their head, and the assigned reading on recognition and recall explains why: recall is expensive, recognition is cheap. A shortlist, a compare view or even keeping the last-viewed items visible converts a memory task into a looking task, and it is often the single most useful thing you can add to a browse flow.
 
 
-### Understand the idea · 3
+### Idea 3: Too many results and no results are the same failure of calibr…
 
 Section: learn. Stable action: learn-3.
 
 Too many results and no results are the same failure of calibration and both need designed responses. Too many means the person cannot start; suggest the narrowing dimension that would help most, and show counts so they can see the effect before committing. None means they have over-narrowed or used words you do not have; say which filter is responsible where you can, offer removing it, and offer the route that does not depend on the same words.
 
 
-### Understand the idea · 4
+### The result item is where the whole design gets decided
 
 Section: learn. Stable action: learn-4.
 
 The result item is where the whole design gets decided. It must contain exactly what people need to judge and no more — from your research, the price, the time, the place and whether there is space. Too little and everyone must open every result, which is the slowest possible loop; too much and the list becomes unscannable. This is where the m05 research pays off directly: you already know what people compared on, because you watched them.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The browse flow was redrawn as a loop after an observation showed a participant opening four classes and losing her filters each time, then booking the third because she could not face rebuilding the list. Returning to results restored filters and scroll position. Each result showed the four things she had actually compared: day and time, price, place and remaining spaces. A shortlist held candidates so she could compare without keeping them in her head. Filters showed counts, so “Saturday morning + under 500” could be seen to leave two before it was applied, and if a combination emptied the list the interface named the filter that had done it and offered to remove it.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3176,6 +3382,40 @@ Open Your work and choose Ready for review. The next lesson takes the chosen ite
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Search, refine and get back to where you were
+What I am trying to do: Design the browse-and-search flow through to a chosen item, including refinement, returning to results without losing them, and the paths for no results and too many results.
+
+Key idea or terms:
+Recognition: Seeing something and knowing it. Cheap for people, because the answer is on the screen.
+Recall: Holding something in your head and producing it later. Expensive, and it fails quietly.
+System status: The product telling a person what is true now: what is filtered, what is loading, how many results there are.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A made up filter combination on a class-booking product. “Saturday morning”, “under 500”, “within 2 km” and “beginner” together return nothing at all. Six classes match if the distance filter alone is removed.
+
+Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What recognition, recall and system status say about returning to a set of results” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What recognition, recall and system status say about returning to a set of results”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What recognition, recall and system status say about returning to a set of results” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Walk your own flow: search, open the third result, go back. Write down everything you lost, then put each item on the return step.
@@ -3245,7 +3485,7 @@ Adequate evidence: One mechanism designed, with a written reason for choosing it
 Repair: Write what a person is trying to hold in mind and for how long. Choose the smallest mechanism that removes that burden, then say what you rejected. Recheck: The mechanism and its justification.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes the chosen item through to commitment, payment and the wait afterwards.
 
@@ -3275,51 +3515,65 @@ Starting route: Recommended route: Draw the review screen and the four states of
 
 - A review screen listing every commitment with change routes and an exact total, written screens for pending, confirmed, failed and unknown states, throttled-connection observations, and a stated mechanism for preventing a duplicate action plus where the confirmation lives afterwards.
 
-### Start with a clear task
+### Start here: in everyday words
+
+A flow is the series of steps and choices a person follows to finish a task. In this lesson, your first small result is: What the review pattern puts in front of somebody before an irreversible step, and one error it would prevent in your own flow.
+
+**Words you will use**
+
+- **Irreversible step:** The action a person cannot take back on their own. Everything before it is still a draft.
+- **Commitment:** Anything she is agreeing to and cannot undo. Money is one kind; a deadline and a held place are others.
+- **Review screen:** The last screen before the action, showing everything being agreed to in one place.
+
+**Quick example.** A made up situation. She taps Pay on a slow connection. The request leaves the phone and nothing comes back. Ninety seconds later the screen still shows a turning circle, and she does not know whether 850 has left her account.
+
+The reader demonstrates and guides the task before asking for “What the check-answers pattern shows before the irreversible step, and how it lets people change each part”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Design the commitment step through to confirmation, including a review before committing, every state the wait can be in, and what a person sees when they do not know whether their money left.
 
 
-### Understand the idea · 1
+### Show everything being committed to before the commitment
 
 Section: learn. Stable action: learn-1.
 
 Show everything being committed to before the commitment. The assigned check-answers pattern exists for exactly this: a single review of what has been entered and chosen, with a way to change each part, immediately before the irreversible step. The total must include everything — no charges appearing after the button — and anything that is a commitment rather than a payment, such as a place held for twenty minutes or a cancellation deadline, belongs on the same screen in the same plain words.
 
 
-### Understand the idea · 2
+### The wait has states and each one needs its own message
 
 Section: learn. Stable action: learn-2.
 
 The wait has states and each one needs its own message. Submitted-not-yet-confirmed, confirmed, failed-and-nothing-taken, and the worst one: unknown, where the request left and no answer came back. Unknown is not an error; it is a state the person is in, and they need to be told what is true so far — “we have not confirmed your payment. Do not pay again. We will message you within an hour, and here is your reference” — because the alternative is a second payment made out of anxiety, which is a real cost you designed.
 
 
-### Understand the idea · 3
+### Design for the connection people actually have
 
 Section: learn. Stable action: learn-3.
 
 Design for the connection people actually have. Throttle your prototype to a slow profile with the cache disabled and watch what appears first and how long the gap between action and feedback lasts, using the browser tools you already have. A spinner that is honest for two seconds is dishonest at twenty; long waits need a message that says what is happening, an assurance about the money, and a way to check later that does not depend on this page staying open — because on a poor connection it will not.
 
 
-### Understand the idea · 4
+### Never let the same action be taken twice by accident
 
 Section: learn. Stable action: learn-4.
 
 Never let the same action be taken twice by accident. Disable the button on submission, but treat that as the weak defence it is: people close tabs, hit back, resend forms and press once more when nothing appears to happen. The strong defence is that the second identical request is recognised and does nothing new, which is a decision to agree with an engineer, and which belongs in your flow annotation because it is the difference between a slip and a double charge.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The commitment step became a review screen listing class, date, time, place, total, what is included, the cancellation deadline in plain words, and a change link beside each. The pay button carried the exact amount. Four wait states were designed after the m05 observation of a woman standing at a window waiting: pending said what was happening and told her not to pay again; failed said nothing had been taken and offered a retry that kept her details; unknown gave a reference, a promise of a message within an hour and a number to ring. Confirmation gave the reference first, sent it by message, and stated that it could be found later with the reference and phone number — no account needed. Throttled to a slow connection, the pending message arrived before any styling, which was the point of writing it as text rather than an animation.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3761,6 +4015,40 @@ Open Your work and choose Ready for review. The next lesson turns the whole flow
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Commitment, payment and the uncertain wait
+What I am trying to do: Design the commitment step through to confirmation, including a review before committing, every state the wait can be in, and what a person sees when they do not know whether their money left.
+
+Key idea or terms:
+Irreversible step: The action a person cannot take back on their own. Everything before it is still a draft.
+Commitment: Anything she is agreeing to and cannot undo. Money is one kind; a deadline and a held place are others.
+Review screen: The last screen before the action, showing everything being agreed to in one place.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A made up situation. She taps Pay on a slow connection. The request leaves the phone and nothing comes back. Ninety seconds later the screen still shows a turning circle, and she does not know whether 850 has left her account.
+
+Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What the check-answers pattern shows before the irreversible step, and how it lets people change each part” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What the check-answers pattern shows before the irreversible step, and how it lets people change each part”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What the check-answers pattern shows before the irreversible step, and how it lets people change each part” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - List everything a person is agreeing to, including anything they cannot undo later. Anything missing from the review must be added or removed from the commitment.
@@ -3830,7 +4118,7 @@ Adequate evidence: A stated mechanism by which a repeated identical request does
 Repair: Write the sentence you would say to an engineer about what should happen if the same request arrives twice. Then write where the confirmation lives after the tab closes. Recheck: The mechanism note and retrieval route.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson turns the whole flow into an exception table, and your four states are the start of it.
 
@@ -3860,51 +4148,65 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 - An exception table of at least twelve cases, each classified slip or mistake, with the chosen response and its reason, full message wording covering what happened, what it means and what to do next, and a harm ranking with three cases marked to fix first.
 
-### Start with a clear task
+### Start here: in everyday words
+
+A flow is the series of steps and choices a person follows to finish a task. In this lesson, your first small result is: Your own sentence separating a slip from a mistake, with one of each taken from your flow.
+
+**Words you will use**
+
+- **Slip:** The person knew what they wanted and the hand or the interface betrayed them. Prevented by design: bigger targets, sensible defaults, forgiving formats.
+- **Mistake:** The person did the wrong thing believing it was right. Prevented by telling them what is true before they act.
+- **System fault:** Neither hand nor belief. Your side failed, or something changed underneath them. Answered by an honest state and a route out.
+
+**Quick example.** Made-up example. Classifying nineteen failures for a booking flow, and reaching for a confirmation dialogue on almost every one. Nineteen cases from the four questions. Twelve looked like careless taps and seven looked like people believing something untrue.
+
+The reader demonstrates and guides the task before asking for “The difference between a slip and a mistake, in your own words, with one of each from your flow”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Produce an exception table for your whole flow listing at least twelve failure cases, each classified as a slip or a mistake, with its prevention, its message and its recovery route.
 
 
-### Understand the idea · 1
+### Idea 1: The assigned reading separates slips from mistakes, and the di…
 
 Section: learn. Stable action: learn-1.
 
 The assigned reading separates slips from mistakes, and the distinction decides the response. A slip is when someone knew what to do and their hands or attention failed — the wrong date tapped, a digit missed, the wrong button on a crowded screen. A mistake is when the person's model was wrong — they believed booking held a place, or that cancelling was free. Slips are prevented by design: bigger targets, sensible defaults, confirmation of consequential actions, forgiving formats. Mistakes are prevented by explanation and feedback: telling people what is true before they act on their assumption.
 
 
-### Understand the idea · 2
+### Generate the list systematically rather than by imagination
 
 Section: learn. Stable action: learn-2.
 
 Generate the list systematically rather than by imagination. Walk your flow and at every node ask four questions: what if the input is wrong, what if the system fails, what if the person leaves and comes back, and what if someone else changed something meanwhile. That last one produces the failures nobody thinks of — the place taken while they were deciding, the class cancelled while they were paying, the price changed between two screens.
 
 
-### Understand the idea · 3
+### Every message needs three things and most have one
 
 Section: learn. Stable action: learn-3.
 
 Every message needs three things and most have one. What happened, in the person's terms rather than the system's. What it means for them — is their money safe, is their place held, is the work they did lost. And what to do next, as an action they can take now. “Something went wrong” has none of the three; “We could not reach the payment service. Nothing has been taken and your place is held for ten more minutes — try again or pay later with this reference” has all three.
 
 
-### Understand the idea · 4
+### Idea 4: Recovery beats prevention where the cost of prevention is a wo…
 
 Section: learn. Stable action: learn-4.
 
 Recovery beats prevention where the cost of prevention is a worse experience for everyone. A confirmation dialogue on every action prevents rare slips and irritates people constantly; an undo that works for a few minutes costs nothing until it is needed. Prefer undo where the action can be reversed, confirmation where it truly cannot, and neither where the action is trivial — and write down which you chose and why, because this is one of the decisions reviewers most often ask you to defend.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - An exception table for a booking flow reached nineteen rows. Slips: wrong date tapped on a crowded calendar — prevented with larger targets and the day name shown beside the number; a mistyped phone number — prevented by a forgiving format and an echo of what was entered. Mistakes: believing a held place was a booking — prevented by naming the state on screen and in the message; believing cancellation was free — prevented by stating the deadline on the review screen. Concurrency: the last place taken while the person was on the payment screen, which had never been considered, and which produced the worst message in the product until it was written properly. Undo was chosen for cancelling a booking within five minutes; confirmation was reserved for the one genuinely irreversible action; nothing else got either.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4486,6 +4788,40 @@ Open Your work and choose Ready for review. The next lesson turns one branch of 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: The paths where things go wrong
+What I am trying to do: Produce an exception table for your whole flow listing at least twelve failure cases, each classified as a slip or a mistake, with its prevention, its message and its recovery route.
+
+Key idea or terms:
+Slip: The person knew what they wanted and the hand or the interface betrayed them. Prevented by design: bigger targets, sensible defaults, forgiving formats.
+Mistake: The person did the wrong thing believing it was right. Prevented by telling them what is true before they act.
+System fault: Neither hand nor belief. Your side failed, or something changed underneath them. Answered by an honest state and a route out.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Classifying nineteen failures for a booking flow, and reaching for a confirmation dialogue on almost every one. Nineteen cases from the four questions. Twelve looked like careless taps and seven looked like people believing something untrue.
+
+Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The difference between a slip and a mistake, in your own words, with one of each from your flow” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The difference between a slip and a mistake, in your own words, with one of each from your flow”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The difference between a slip and a mistake, in your own words, with one of each from your flow” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Go back through the flow node by node with the four questions written in front of you. Do not skip nodes that feel safe; the wait states usually hide the worst cases.
@@ -4555,7 +4891,7 @@ Adequate evidence: Full wording per case, in the person's vocabulary, answering 
 Repair: Read each message as someone who has just lost twenty minutes of work or six hundred rupees. Add whatever you would want to know first. Recheck: The message column.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson turns one branch of the flow into wireframes, and the exception states from this table become frames of their own.
 
@@ -4585,51 +4921,65 @@ Starting route: Recommended route: Draw the wireframes for one branch, including
 
 - Low-fidelity wireframes for every screen and state in one branch, each with its job written at the top and real content in priority order, one screen drawn in two content orders with a comparison, and a list of open content decisions.
 
-### Start with a clear task
+### Start here: in everyday words
+
+A flow is the series of steps and choices a person follows to finish a task. In this lesson, your first small result is: Two short lists: what a rough frame can settle, and what it cannot.
+
+**Words you will use**
+
+- **Low fidelity:** Boxes, real words and relative sizes. No colour, no type choices, no icons, no borrowed components.
+- **Fidelity:** How finished a drawing looks. It is a choice, and a rougher drawing gets you better answers about structure.
+- **Branch:** One route through your flow from beginning to end, including the places where it goes wrong.
+
+**Quick example.** A supplied class detail screen, made up for practice, drawn two ways. Version A: photograph, description, class name, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.
+
+The reader demonstrates and guides the task before asking for “What a low-fidelity frame can settle, and what it cannot”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Turn one branch of your flow into low-fidelity wireframes for every screen it touches, each carrying its real content in priority order and none carrying visual styling.
 
 
-### Understand the idea · 1
+### Idea 1: Low fidelity means the arrangement and the priority are decide…
 
 Section: learn. Stable action: learn-1.
 
 Low fidelity means the arrangement and the priority are decided and nothing else is. Boxes, real words, sizes that show relative importance — no colour decisions, no type choices, no icon sets, no borrowed component library. The discipline is protective: the moment a wireframe starts looking finished, feedback shifts to the colours and away from whether the screen contains the right things in the right order, which is the only question it can answer.
 
 
-### Understand the idea · 2
+### Real content, always
 
 Section: learn. Stable action: learn-2.
 
 Real content, always. Placeholder text hides every problem a wireframe exists to find: the label that is three words too long, the price that needs a qualifier, the empty state nobody wrote. Use the labels from your m06 table and the message wording from your exception table, and where you do not yet know what the words are, write “unknown — needs a decision” rather than filling the space with something plausible.
 
 
-### Understand the idea · 3
+### Design each screen around its one job
 
 Section: learn. Stable action: learn-3.
 
 Design each screen around its one job. A screen usually exists to let a person do one thing and understand one state, and the content order should follow: the thing they came for first, what they need to judge it second, the action third, supporting material last. Write the job at the top of each wireframe. A screen with two jobs is usually two screens, or one screen that will test badly in both roles.
 
 
-### Understand the idea · 4
+### Wireframe the exceptions too, not only the happy path
 
 Section: learn. Stable action: learn-4.
 
 Wireframe the exceptions too, not only the happy path. Your exception table names states — pending, unavailable, empty, permission-denied — and each is a screen a person will actually see. Drawing them at low fidelity costs minutes and reveals immediately whether your layout has anywhere to put a two-line explanation, which is the commonest reason error messages end up somewhere useless.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - One branch — find a class, review it, commit, wait, confirm — produced nine wireframes including four states from the exception table. The class detail screen was drawn twice: once with the description first, as the product had it, and once with what to bring, price and time first, as the research said people compared on. Drawn at low fidelity the second version obviously worked better on a small screen, and the argument took four minutes instead of a week. The pending state got its own frame, which immediately showed that the layout had nowhere sensible for a three-line reassurance message — a problem discovered with a pencil rather than in code.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5064,6 +5414,40 @@ Open Your work and choose Ready for review. The next lesson takes two of these s
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: From flow to low-fidelity wireframes
+What I am trying to do: Turn one branch of your flow into low-fidelity wireframes for every screen it touches, each carrying its real content in priority order and none carrying visual styling.
+
+Key idea or terms:
+Low fidelity: Boxes, real words and relative sizes. No colour, no type choices, no icons, no borrowed components.
+Fidelity: How finished a drawing looks. It is a choice, and a rougher drawing gets you better answers about structure.
+Branch: One route through your flow from beginning to end, including the places where it goes wrong.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied class detail screen, made up for practice, drawn two ways. Version A: photograph, description, class name, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.
+
+Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What a low-fidelity frame can settle, and what it cannot” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What a low-fidelity frame can settle, and what it cannot”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What a low-fidelity frame can settle, and what it cannot” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - List the states from your flow and tick off each frame. Draw the missing ones, however uninteresting they look.
@@ -5133,7 +5517,7 @@ Adequate evidence: Two versions of one screen with a written note on what each f
 Repair: Take the screen you are least sure about and reorder its content deliberately. Write which task each order serves better. Recheck: The two versions and the comparison.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson takes two of these screens to three widths, so keep the frames and the content order.
 
@@ -5163,51 +5547,65 @@ Starting route: Recommended route: Draw the two screens at narrow, medium and wi
 
 - Two screens drawn at three widths with real text at its longest, a written never-move, may-reprioritise and may-hide rule set with justified hides, results from the long-label, enlarged-text and failed-image checks, and behaviour notes a developer could work from.
 
-### Start with a clear task
+### Start here: in everyday words
+
+A flow is the series of steps and choices a person follows to finish a task. In this lesson, your first small result is: Your own sentence on the difference between content reflowing and a layout being scaled down.
+
+**Words you will use**
+
+- **Reflow:** Content re-orders and re-groups as the width changes. A row of cards becomes a column; a side panel moves below.
+- **Scaling:** The same arrangement made smaller. It keeps the wide layout’s priorities and squeezes them, which is how a price ends up below the fold.
+- **Never-move:** The elements a person is tracking through the whole task. They stay visible and reachable at every width.
+
+**Quick example.** A supplied narrow layout of a made-up class detail screen, top to bottom: photograph, class name over three lines, description, date and time, price, book action, related classes.
+
+The reader demonstrates and guides the task before asking for “The difference between content reflowing and a layout being scaled down, in your own words”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Take two screens to mid fidelity at narrow, medium and wide widths, stating for each what reflows, what changes priority, what is hidden and what must never move.
 
 
-### Understand the idea · 1
+### Reflow is not shrinking
 
 Section: learn. Stable action: learn-1.
 
 Reflow is not shrinking. As the width narrows, content re-orders and re-groups rather than becoming smaller: a side panel moves below or above the main content, a row of cards becomes a column, a table becomes a set of records. The design question is what order things take when stacked, and the answer comes from the screen's job — the thing the person came for goes first, whatever it did on the wide layout.
 
 
-### Understand the idea · 2
+### Idea 2: Decide the three behaviours explicitly for every element: refl…
 
 Section: learn. Stable action: learn-2.
 
 Decide the three behaviours explicitly for every element: reflow, change priority, or hide. Hiding is the one to be careful with. Content hidden on narrow screens is content unavailable to the people most likely to be on a phone, and the common pattern of hiding “secondary” material on mobile frequently hides exactly what a first-time visitor needed. If something is genuinely unnecessary on a small screen, ask honestly whether it is necessary on a large one.
 
 
-### Understand the idea · 3
+### Some things must never move
 
 Section: learn. Stable action: learn-3.
 
 Some things must never move. The price, the total, the primary action, the state of the thing — anything a person is tracking must remain reachable and visible at every width, and its position should be predictable across the set of screens. This is where a stated rule beats case-by-case judgement: write down the elements that are fixed in the hierarchy and design the rest around them.
 
 
-### Understand the idea · 4
+### Idea 4: Mid fidelity means real proportions and real text at real leng…
 
 Section: learn. Stable action: learn-4.
 
 Mid fidelity means real proportions and real text at real lengths, on a real grid, and still no final colour, imagery or type personality. That is enough to answer whether the layout works, which is the question at this stage, and not so much that feedback moves to aesthetics. Test with the longest real label you have, not the average one, and check what happens when the reader has enlarged their text — which the m03 lesson already taught you to do.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The class detail screen at three widths. Narrow: title, date and time, price, what to bring, book action, then description — the order the research supported, with the image moved below the action because nobody had ever mentioned it. Medium: two columns, with the same four items still first in reading order. Wide: a side panel holding price, date and the action, sticky as the description scrolls. The never-move rule was written down — price, date, action and remaining places are visible at every width — and one element was hidden on narrow: a related-classes list, which was checked honestly and moved to the end rather than removed, since a first-time visitor might well want it.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5629,6 +6027,40 @@ Open Your work and choose Ready for review. The next lesson specifies one compon
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: The same screen at three widths
+What I am trying to do: Take two screens to mid fidelity at narrow, medium and wide widths, stating for each what reflows, what changes priority, what is hidden and what must never move.
+
+Key idea or terms:
+Reflow: Content re-orders and re-groups as the width changes. A row of cards becomes a column; a side panel moves below.
+Scaling: The same arrangement made smaller. It keeps the wide layout’s priorities and squeezes them, which is how a price ends up below the fold.
+Never-move: The elements a person is tracking through the whole task. They stay visible and reachable at every width.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied narrow layout of a made-up class detail screen, top to bottom: photograph, class name over three lines, description, date and time, price, book action, related classes.
+
+Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The difference between content reflowing and a layout being scaled down, in your own words” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The difference between content reflowing and a layout being scaled down, in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The difference between content reflowing and a layout being scaled down, in your own words” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - List the elements a person tracks through the task — price, state, action — and declare them never-move. Then justify every remaining hide in one sentence each.
@@ -5698,7 +6130,7 @@ Adequate evidence: Per-screen notes stating what reflows, what changes priority 
 Repair: Write each note as “at narrow, X moves above Y; Z is hidden; the action remains visible”. Anything vaguer will be decided by someone else. Recheck: The behaviour notes.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson specifies one component and one screen in every state they can be in, using these same layouts.
 
@@ -5728,51 +6160,65 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 - State tables for one component and one screen, each row giving trigger, appearance, available actions and exit; a greyscale check; a keyboard focus check or a statement that it was not verified; and a list of any dead ends found and fixed.
 
-### Start with a clear task
+### Start here: in everyday words
+
+A flow is the series of steps and choices a person follows to finish a task. In this lesson, your first small result is: Two lists, one for the component and one for the screen, complete before anything is judged.
+
+**Words you will use**
+
+- **State:** A situation the thing can be in, with its own appearance and its own set of things a person can do. It is behaviour, not decoration.
+- **Focus:** Where the keyboard currently is. Without a visible focus state the product cannot be used without a mouse, however it looks.
+- **Empty state:** The screen with nothing in it yet. It is doing more teaching than any tour, and it is the one nobody draws.
+
+**Quick example.** A supplied empty screen from a made-up class-booking product. The bookings list, for someone who has never booked anything, shows the heading “Your bookings”, a large grey area and a plus icon in the corner.
+
+The reader demonstrates and guides the task before asking for “Two lists: every state your component can be in, and every state your screen can be in”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Specify one interactive component and one whole screen in every state they can occupy — default, focus, loading, empty, error, success, disabled and unavailable — with what triggers each and what the person can do in it.
 
 
-### Understand the idea · 1
+### Idea 1: A component's states are a list you can enumerate rather than…
 
 Section: learn. Stable action: learn-1.
 
 A component's states are a list you can enumerate rather than a matter of judgement: default, hover where a pointer exists, focus for keyboard users, active while being pressed, loading, disabled, and error. Focus is the one most often forgotten, and it is the only way a keyboard user knows where they are — an interface where focus is invisible is unusable without a mouse, however it looks. Specify what changes in each state and never signal a state with colour alone, since the difference must survive being seen in greyscale.
 
 
-### Understand the idea · 2
+### Idea 2: A screen has states too, and they are not the same list: empty…
 
 Section: learn. Stable action: learn-2.
 
 A screen has states too, and they are not the same list: empty, partially loaded, fully loaded, error, permission-denied, offline and success-after-action. Each needs its own content, not merely a spinner: an empty list should say what will appear and how to start it, an error should say what happened and what to do, and a successful action should say what changed and what is possible next. Your exception table already wrote most of this wording; this lesson places it.
 
 
-### Understand the idea · 3
+### State what triggers each state and what leaves it
 
 Section: learn. Stable action: learn-3.
 
 State what triggers each state and what leaves it. A loading state that has no defined end is how an interface hangs forever; an error state with no route out is a dead end. Write each as a small table — trigger, appearance, what the person can do, what ends it — because that is the form a developer can build from and a reviewer can check, and because writing it exposes the states you had not decided.
 
 
-### Understand the idea · 4
+### Idea 4: Disabled and unavailable are different and the distinction mat…
 
 Section: learn. Stable action: learn-4.
 
 Disabled and unavailable are different and the distinction matters more than it sounds. Disabled means not yet: something must be completed first, and the interface should say what. Unavailable means not for you, or not now, which is the permission and availability work from earlier lessons. A disabled control with no explanation is read as a broken product, and it is the single most common state failure in student work.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The book-a-place button was specified in eight states. Default. Focus, with a visible outline that is not colour alone. Loading, showing that the request is in progress with the label changed rather than replaced by a spinner alone. Disabled before a date is chosen, with the reason beside it — “choose a date first” — rather than a silent grey. Unavailable when the class is full, with the alternative-dates route from the flow. Error after a failed submission, keeping everything the person had entered. Success, naming the reference. And offline, saying the action will not be attempted until the connection returns. The screen was specified in seven states, and the empty one — no classes this week — was the one nobody had drawn, which had been showing as a blank panel.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6240,6 +6686,40 @@ Open Your work and choose Ready for review. Module 8 builds the interface, and t
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Every state a component can be in
+What I am trying to do: Specify one interactive component and one whole screen in every state they can occupy — default, focus, loading, empty, error, success, disabled and unavailable — with what triggers each and what the person can do in it.
+
+Key idea or terms:
+State: A situation the thing can be in, with its own appearance and its own set of things a person can do. It is behaviour, not decoration.
+Focus: Where the keyboard currently is. Without a visible focus state the product cannot be used without a mouse, however it looks.
+Empty state: The screen with nothing in it yet. It is doing more teaching than any tour, and it is the one nobody draws.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied empty screen from a made-up class-booking product. The bookings list, for someone who has never booked anything, shows the heading “Your bookings”, a large grey area and a plus icon in the corner.
+
+Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Two lists: every state your component can be in, and every state your screen can be in” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Two lists: every state your component can be in, and every state your screen can be in”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Two lists: every state your component can be in, and every state your screen can be in” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Work through the standard list and mark each state as applicable or not, with a reason for each not. States excluded without a reason are usually the ones that were forgotten.
@@ -6309,7 +6789,7 @@ Adequate evidence: A greyscale check of all states and a keyboard focus check, o
 Repair: Photograph or photocopy the states in greyscale and look for any pair you can no longer tell apart. Add a second signal — a label, an icon, a border weight — to each. Recheck: The greyscale results and the focus check or its limitation.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. Module 8 builds the interface, and these state tables are what it gets built from.
 
@@ -6339,51 +6819,65 @@ Starting route: Recommended route: Draw the wireflow with each screen placed at 
 
 - One dated, versioned wireflow with screens at their nodes, conditions on every transition, annotations for the non-visible behaviour, an open-questions list, and a recorded list of the questions an uninvolved reader had to ask.
 
-### Start with a clear task
+### Start here: in everyday words
+
+A flow is the series of steps and choices a person follows to finish a task. In this lesson, your first small result is: Your own sentence about what a page has to carry that a meeting does not.
+
+**Words you will use**
+
+- **Wireflow:** The flow diagram with the screen a person sees placed at each node, and the conditions written on the arrows between them.
+- **Handover:** Giving the work to whoever builds it. It happens on the page, not in the room.
+- **Node:** One point in the flow: usually a screen a person sees, sometimes a decision the system makes.
+
+**Quick example.** A supplied moment from the same made-up handover. A friend who had never seen the project read the wireflow aloud and stopped at the payment screen to ask what “pending” means. She read everything else without stopping.
+
+The reader demonstrates and guides the task before asking for “What a shared artefact has to carry that a conversation does not”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Combine the flow, the screens and the state specifications into a single annotated wireflow, and have it read by someone who was not involved, recording every question they had to ask you.
 
 
-### Understand the idea · 1
+### Idea 1: A wireflow is the flow diagram with each node replaced by, or…
 
 Section: learn. Stable action: learn-1.
 
 A wireflow is the flow diagram with each node replaced by, or linked to, the screen a person sees there, annotated with the transitions and the conditions. It answers three questions at once: what happens in what order, what the person sees at each point, and what causes each move. Kept as three separate documents those answers drift apart, and the drift is invisible until an engineer builds from the one that is out of date.
 
 
-### Understand the idea · 2
+### Annotate what is not visible in a picture
 
 Section: learn. Stable action: learn-2.
 
 Annotate what is not visible in a picture. What is required and what is optional, what happens on submission, what the back behaviour is, what is preserved when a person returns, what the timeout is, which elements never move across widths, and what happens when a request fails. These are the questions an engineer will otherwise ask you one at a time over a week, or decide alone if you are not available.
 
 
-### Understand the idea · 3
+### Mark what is decided and what is not
 
 Section: learn. Stable action: learn-3.
 
 Mark what is decided and what is not. A wireflow claiming completeness while three labels are still guesses invites everyone to build on them, and the guesses become facts by being drawn confidently. Use an explicit open-questions list on the artefact itself, carrying the guesses from your m06 change note, the undecided permission cells and any content nobody has written — that list is a feature of a good handover, not an admission.
 
 
-### Understand the idea · 4
+### Version it and date it
 
 Section: learn. Stable action: learn-4.
 
 Version it and date it. The moment work is shared, several copies exist, and the commonest handover failure is not a missing annotation but two people looking at different versions confidently. A date, a version and a one-line note of what changed since the last one costs nothing and prevents an entire class of expensive confusion.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The wireflow assembled from a booking branch was one long sheet: nineteen nodes, nine screens attached at the nodes they belong to, transitions labelled with their conditions, and a margin column of annotations — required fields, back behaviour, what is preserved on return, the payment timeout, the never-move elements. It carried a dated version line and an open-questions list of six items, including two labels still marked as guesses and the refund rule that had never existed. A friend who had never seen the project read it and asked four questions, all recorded: what happens if the class is cancelled by the provider, whether the held place survives closing the browser, what the helper role sees on the day, and what “pending” means to a person who has never seen the word in that context. Three became design work; the fourth became a wording change.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6838,6 +7332,40 @@ Open Your work and choose Ready for review. The next lesson walks two tasks thro
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: The wireflow: one artefact someone else could build from
+What I am trying to do: Combine the flow, the screens and the state specifications into a single annotated wireflow, and have it read by someone who was not involved, recording every question they had to ask you.
+
+Key idea or terms:
+Wireflow: The flow diagram with the screen a person sees placed at each node, and the conditions written on the arrows between them.
+Handover: Giving the work to whoever builds it. It happens on the page, not in the room.
+Node: One point in the flow: usually a screen a person sees, sometimes a decision the system makes.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied moment from the same made-up handover. A friend who had never seen the project read the wireflow aloud and stopped at the payment screen to ask what “pending” means. She read everything else without stopping.
+
+Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What a shared artefact has to carry that a conversation does not” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What a shared artefact has to carry that a conversation does not”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What a shared artefact has to carry that a conversation does not” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Lay the flow out and attach each frame at its node. Any transition you cannot label with a condition is a decision that has not been made.
@@ -6907,7 +7435,7 @@ Adequate evidence: A list of the questions someone not involved had to ask, with
 Repair: Ask someone to narrate what happens from the artefact alone. Write down every point where they stop, without helping until they have finished. Recheck: The question list and the resulting revisions.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson walks two tasks through these same frames with someone else at the table.
 
@@ -6937,51 +7465,65 @@ Starting route: Recommended route: Draw the paper frames and the two task cards 
 
 - Two task scenarios tied to open questions, session records for at least three participants covering expectation, action, outcome and hesitation, a list of undrawn interactions people attempted, and a problem list ranked by harm with the sample stated.
 
-### Start with a clear task
+### Start here: in everyday words
+
+A flow is the series of steps and choices a person follows to finish a task. In this lesson, your first small result is: Two task scenarios aimed at open questions, and consent wording you would actually say out loud.
+
+**Words you will use**
+
+- **Task scenario:** A situation and a goal, with no route in it. “Book the Saturday class for two people and find the total” names nothing to press.
+- **Moderated session:** You sit with one person, give them a task, and watch. You do not teach, and you do not defend.
+- **Being the computer:** You move the paper and show only what the design would show. You respond as it would, and you explain nothing.
+
+**Quick example.** Made-up example. Rehearsing a paper test alone, and finding out what I do when someone goes quiet. A task, then nothing. I had written “say nothing” at the top of my notes in capital letters.
+
+The reader demonstrates and guides the task before asking for “Task 1 · the situation, the goal, and the open question it aims at”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Run a moderated paper prototype test of two tasks with at least three participants, recording where each person hesitated, what they expected next and every place they went somewhere you had not drawn.
 
 
-### Understand the idea · 1
+### Idea 1: The assigned guidance covers running a moderated session, and…
 
 Section: learn. Stable action: learn-1.
 
 The assigned guidance covers running a moderated session, and three habits carry most of the value. Give a task and a situation rather than instructions — “you want to book the Saturday class for you and your sister” — and then stop talking. When the person asks what something does, ask what they expect it to do. And when they are stuck, wait: the pause before you rescue them is where you learn what the design failed to communicate.
 
 
-### Understand the idea · 2
+### You are the computer, and you must be a dumb one
 
 Section: learn. Stable action: learn-2.
 
 You are the computer, and you must be a dumb one. Show only what the design would show, respond only as it would, and resist explaining. If they tap something you have not drawn, that is a finding — write down what they expected to happen — and it is the most valuable result a paper test produces, because it shows the parts of the flow that exist in your head and nowhere else.
 
 
-### Understand the idea · 3
+### Record expectation, not just outcome
 
 Section: learn. Stable action: learn-3.
 
 Record expectation, not just outcome. Before a screen changes, ask what they think will happen; afterwards, ask whether it did. A mismatch between expected and actual is the mechanism behind most usability failures, and it is invisible if you record only whether the task was completed. Note hesitations with the same care you did in the tree test — a completed task done anxiously is not a success.
 
 
-### Understand the idea · 4
+### Idea 4: Three participants will show you the serious problems, and thi…
 
 Section: learn. Stable action: learn-4.
 
 Three participants will show you the serious problems, and this is a formative test rather than a measurement: no scores, no success rates, no comparison to a benchmark. What you are producing is a ranked list of problems with evidence, and the ranking should be by harm — what stops someone, costs them money, or loses their work — rather than by how often you saw it in three sessions.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three sessions, two tasks, printed frames on a table. All three participants tried to tap the price to see what it included, which nothing in the design had anticipated — the single most valuable finding, and it came from an interaction that did not exist. Two hesitated at the review screen because the cancellation deadline was written as a date and they wanted to know how many days that was. One went back looking for the results list and found it gone, which confirmed the return-state problem from the browse lesson in a way no reasoning had. Nobody commented on the fact that the screens were pencil drawings. The problems were ranked by harm: losing the result set first, the deadline wording second, the unanticipated price tap third.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7563,6 +8105,40 @@ Open Your work and choose Ready for review. The next lesson repairs the top two 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Walk it with someone: the paper prototype test
+What I am trying to do: Run a moderated paper prototype test of two tasks with at least three participants, recording where each person hesitated, what they expected next and every place they went somewhere you had not drawn.
+
+Key idea or terms:
+Task scenario: A situation and a goal, with no route in it. “Book the Saturday class for two people and find the total” names nothing to press.
+Moderated session: You sit with one person, give them a task, and watch. You do not teach, and you do not defend.
+Being the computer: You move the paper and show only what the design would show. You respond as it would, and you explain nothing.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Rehearsing a paper test alone, and finding out what I do when someone goes quiet. A task, then nothing. I had written “say nothing” at the top of my notes in capital letters.
+
+Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Task 1 · the situation, the goal, and the open question it aims at” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Task 1 · the situation, the goal, and the open question it aims at”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Task 1 · the situation, the goal, and the open question it aims at” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Take two items from your open-questions list and write the situation in which a person would meet each. Remove any control names from the wording.
@@ -7632,7 +8208,7 @@ Adequate evidence: A ranked problem list ordered by harm, with participant count
 Repair: For each problem write what it costs the person — the task, money, time, trust — and order by that. Then add the sample line. Recheck: The ranked list with the sample statement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson repairs the top two problems, re-tests them with someone new, and writes the module record.
 
@@ -7662,51 +8238,65 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 - Two repairs with predictions written in advance, re-test records from at least one new participant, a decision record covering every significant decision with evidence, alternatives and untested aspects, and a written statement of what the module did not establish.
 
-### Start with a clear task
+### Start here: in everyday words
+
+A flow is the series of steps and choices a person follows to finish a task. In this lesson, your first small result is: The top two problems by harm, each with the change you will make and a prediction written before you test it.
+
+**Words you will use**
+
+- **Harm:** What a problem costs the person: the task they cannot finish, the money, the time, the work they lose. Not how often you saw it.
+- **Prediction:** What should happen in the re-test if your repair worked, written before the sessions so the result can contradict it.
+- **Repair:** A change made to answer one problem you found, rather than a general tidy-up of everything you notice while you are in there.
+
+**Quick example.** A supplied re-test result from the same made-up project. The prediction was that nobody would ask how many days the deadline is, once it read “free to cancel until Thursday 10 am — 3 days before the class”. Both new participants asked anyway, and neither could see the class date on that screen.
+
+The reader demonstrates and guides the task before asking for “Your problems in harm order, with the top two marked for repair”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Repair the two highest-harm problems from your test, re-test them with someone new, and write a decision record for the whole module stating each significant decision, its evidence, its alternatives and what remains untested.
 
 
-### Understand the idea · 1
+### Repair the highest-harm problems, not the easiest ones
 
 Section: learn. Stable action: learn-1.
 
 Repair the highest-harm problems, not the easiest ones. There is always a wording fix that takes ten minutes and a structural problem that takes an afternoon, and the ten-minute fix is tempting because it produces visible progress. Rank by harm, repair the top two, and record the rest honestly as known and unfixed — a known unfixed problem is a normal state for a real product, and pretending otherwise is what makes a case study unbelievable.
 
 
-### Understand the idea · 2
+### Re-test with someone new
 
 Section: learn. Stable action: learn-2.
 
 Re-test with someone new. A person who has already seen the design cannot tell you whether the new version is clearer; they can only tell you whether they remember it. Re-test only the affected tasks, with fresh participants, and predict beforehand what should change — a prediction written in advance is what turns a re-test into evidence rather than a confirmation exercise.
 
 
-### Understand the idea · 3
+### The decision record is the artefact that keeps its value longest
 
 Section: learn. Stable action: learn-3.
 
 The decision record is the artefact that keeps its value longest. For each significant decision: what was decided, what evidence supports it, what alternatives were rejected and why, and what remains untested. Written properly it is the spine of a case study, the answer to “why did you do that?” in an interview, and the thing that stops a future team re-running an argument you already settled with evidence.
 
 
-### Understand the idea · 4
+### Be exact about what this module did and did not establish
 
 Section: learn. Stable action: learn-4.
 
 Be exact about what this module did and did not establish. You have tested a paper prototype with a handful of people on two tasks. You have not established that the flow works at volume, on a real connection with real content, for people unlike your participants, or with assistive technology. Some of those come later in the course; all of them belong in the record now, because the gap between what was tested and what is claimed is the single most common failure in a design portfolio.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The two highest-harm problems were repaired: results were preserved on return, and the cancellation deadline was rewritten as “free to cancel until Thursday 10 am — 3 days before the class”. Predicted outcomes were written first: people should return to their filtered list and continue comparing, and nobody should ask how many days. Re-tested with two new participants, the first prediction held and the second did not — both still asked, because the class date itself was not visible on that screen, which was a different problem than the one repaired. That was recorded rather than repaired again in the same breath. The decision record ran to twenty-two entries, of which five were marked as guesses, three as known unfixed problems, and one — the refund rule — as still not existing at all, four lessons after it was first discovered.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -8163,6 +8753,40 @@ Open Your work and choose Ready for review. Module 8 builds the interface from t
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Repair, re-test and write the decision record
+What I am trying to do: Repair the two highest-harm problems from your test, re-test them with someone new, and write a decision record for the whole module stating each significant decision, its evidence, its alternatives and what remains untested.
+
+Key idea or terms:
+Harm: What a problem costs the person: the task they cannot finish, the money, the time, the work they lose. Not how often you saw it.
+Prediction: What should happen in the re-test if your repair worked, written before the sessions so the result can contradict it.
+Repair: A change made to answer one problem you found, rather than a general tidy-up of everything you notice while you are in there.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied re-test result from the same made-up project. The prediction was that nobody would ask how many days the deadline is, once it read “free to cancel until Thursday 10 am — 3 days before the class”. Both new participants asked anyway, and neither could see the class date on that screen.
+
+Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Your problems in harm order, with the top two marked for repair” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Your problems in harm order, with the top two marked for repair”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Your problems in harm order, with the top two marked for repair” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Re-read your harm ranking and check what you actually changed. If the top two are untouched, repair them now and record why you started elsewhere.
@@ -8232,7 +8856,7 @@ Adequate evidence: A written statement naming what was not tested: volume, real 
 Repair: List everything a real product meets that your paper test did not, then write the two sentences you would want a reviewer to read before believing anything else. Recheck: The limitations statement.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. Module 8 builds the interface from this record and the wireflow, so keep the two together.
 

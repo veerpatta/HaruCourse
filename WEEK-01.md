@@ -17,18 +17,32 @@ Bring: Nothing from an earlier lesson. Bring an app you already use and somewher
 - What the person wanted, and what the company probably wanted
 - Two improvements, each with a way to tell whether it helped
 
-### Look beyond the screen
+### Start here: in everyday words
+
+Your eye already knows when a screen looks right. This lesson adds the other half of the job: working out whether it actually helps the person using it.
+
+**Words you will use**
+
+- **Product design:** Deciding which problem a service should solve and shaping the whole service so people can use it and the business can run it.
+- **UX (user experience):** Everything a person goes through to finish a task, including waiting, instructions and recovering from mistakes.
+- **UI (user interface):** The controls, words and layout on the screen itself.
+
+**Quick example.** Made-up example. A pottery studio says: “Bookings drop off on the last screen. Make the Reserve button bigger.” Here is how a product designer thinks about that sentence before touching the button. The studio has numbers showing people leave on the last screen. That part is real: it is counted, not guessed.
+
+The reader demonstrates and guides the task before asking for “Product design is…”.
+
+### What a product designer actually does
 
 Section: learn. Stable action: welcome.
 
-You will follow one task, separate facts from guesses, and propose two improvements. Keep this course open beside your chosen app. You can stop after any answer.
+A product designer helps decide which problem is worth solving, then shapes the whole experience people use. You will follow one small task, separate facts from guesses, and propose two improvements. Keep this course open beside your chosen app. You can stop after any answer.
 
 
-### See how a designer starts
+### See UI, UX and product design in one familiar problem
 
 Section: learn. Stable action: see-example.
 
-Read this made-up example. Notice how a suggested fix turns into a question to investigate.
+Read the made-up pottery-booking example. The Reserve button is UI. Finding, understanding and booking the class is UX. Deciding whether the real problem deserves a button change, clearer price information or something else is product design.
 
 - Made-up practice case: a pottery studio asks for a bigger Reserve button because people leave the booking screen.
 - What is known: in this supplied case, a count shows where people leave.
@@ -789,6 +803,34 @@ Review your answers below. Finish practice when the required work is present. Re
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short conversation, not a lecture.
+
+Lesson: From screens to product problems
+Today I need to understand:
+- Product design: deciding which problem to solve and shaping the whole service.
+- UX: the full experience of completing a task, including delays and recovery.
+- UI: the visible words, buttons and layout used in that experience.
+
+Use this fictional case only: a pottery studio thinks a bigger Reserve button will stop people leaving its booking screen. Known: people leave at that screen. Guessed: the button is the reason. Unknown: whether price, materials or another issue causes it.
+
+Ask me one question at a time, at most three. First ask me to label one statement as known, guessed or unknown. Then ask me whether a suggested change is UI, UX or a product decision, and why. If I struggle, give one small hint. Do not give me a finished worksheet answer, score me or claim that fictional evidence is real. End by telling me to return to the course answer called “Product design is…” and write the idea in my own words.
+```
+
+**Come back to the course:** Return to “Product design is…”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Practise with supplied note” question. Choose an answer, read the explanation, then return to “Product design is…” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - If you can point at it on the screen, it is observed. Why anybody behaves a certain way is never on the screen.
@@ -797,7 +839,7 @@ Review your answers below. Finish practice when the required work is present. Re
 
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work, read your worksheet answers back, add anything the worksheet did not ask for, then choose Ready for review. Lesson 2 starts from this same walkthrough, so keep it.
 
@@ -834,51 +876,65 @@ Starting route: Open your Lesson 1 evidence. Without it, use this fictional prac
 - Three alternatives with constraints and weaknesses
 - One investigation decision
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product design starts by understanding the task and the problem before choosing a screen change. In this lesson, your first small result is: Two explanations from Lesson 1 that you wrote down but never checked.
+
+**Words you will use**
+
+- **Verified:** You saw it happen, or someone told you it happened to them. Everything else is a guess, however sensible.
+- **Problem frame:** A description of who is stuck, when, and what it costs them. It does not say what to build.
+- **Feature:** A thing you could build: a reminder, a checkbox, a page. If a frame contains one, it has jumped to a solution.
+
+**Quick example.** A supplied pair from the same made-up workshop. Assumption A: “Attendees read the confirmation email.” Nobody has checked; if it is wrong, every message you send is unread. Assumption B: “Attendees would prefer a printed list to a text message.” Nobody has checked; if it is wrong, you send the same information in a slightly different form.
+
+The reader demonstrates and guides the task before asking for “Unverified explanation 1”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Use the diagnostic workshop report: attendees may not know what to bring. Explore three responses without treating that report as proven.
 
 
-### Understand the idea · 1
+### Idea 1: Frame the person, situation, unmet goal and consequence before…
 
 Section: learn. Stable action: learn-1.
 
 Frame the person, situation, unmet goal and consequence before choosing a feature.
 
 
-### Understand the idea · 2
+### A stakeholder report suggests a problem; it does not prove its cause
 
 Section: learn. Stable action: learn-2.
 
 A stakeholder report suggests a problem; it does not prove its cause.
 
 
-### Understand the idea · 3
+### Explore alternatives before narrowing the response
 
 Section: learn. Stable action: learn-3.
 
 Explore alternatives before narrowing the response.
 
 
-### Understand the idea · 4
+### Check assumptions with serious consequences and weak evidence first
 
 Section: learn. Stable action: learn-4.
 
 Check assumptions with serious consequences and weak evidence first.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - A reminder, materials summary, and checkbox are different responses to workshop preparation. A click on a checkbox does not prove comprehension.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1485,6 +1541,40 @@ Open Your work, add anything the worksheet did not ask for, then choose Ready fo
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Frame the problem before the feature
+What I am trying to do: Use the diagnostic workshop report: attendees may not know what to bring. Explore three responses without treating that report as proven.
+
+Key idea or terms:
+Verified: You saw it happen, or someone told you it happened to them. Everything else is a guess, however sensible.
+Problem frame: A description of who is stuck, when, and what it costs them. It does not say what to build.
+Feature: A thing you could build: a reminder, a checkbox, a page. If a frame contains one, it has jumped to a solution.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied pair from the same made-up workshop. Assumption A: “Attendees read the confirmation email.” Nobody has checked; if it is wrong, every message you send is unread. Assumption B: “Attendees would prefer a printed list to a text message.” Nobody has checked; if it is wrong, you send the same information in a slightly different form.
+
+Activity: Use the supplied case to ask me whether each statement is a fact, a guess or an open question. After I answer, explain the distinction with one everyday example.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Unverified explanation 1” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Unverified explanation 1”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Unverified explanation 1” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the need without the words app, button or reminder.
@@ -1493,7 +1583,7 @@ Open Your work, add anything the worksheet did not ask for, then choose Ready fo
 
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work, add anything the worksheet did not ask for, then choose Ready for review. Lesson 3 turns your first priority uncertainty into interview questions, so keep it where you can see it.
 
@@ -1530,51 +1620,65 @@ Starting route: Bring one uncertainty from Lesson 2. Without it, practise invest
 - Labelled notes or an explicit evidence gap
 - One improved question
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product design starts by understanding the task and the problem before choosing a screen change. In this lesson, your first small result is: One-sentence purpose and the consent words you will actually say.
+
+**Words you will use**
+
+- **Consent:** The person knows what you are doing with their words and agrees, before you start. It can be withdrawn at any point.
+- **Research question:** What you are uncertain about. You do not ask it out loud; it decides what you ask.
+- **Leading question:** A question that contains the answer you hope for. “Was it confusing?” tells them it was confusing.
+
+**Quick example.** A supplied line from someone else’s notes, written straight after a real consented conversation: “She looked for the price, couldn’t find it on the first screen, went back twice, and said ‘I never know what these things cost until the end’ — she was clearly frustrated by the whole booking process.”
+
+The reader demonstrates and guides the task before asking for “What this conversation is for, in one sentence”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Prepare questions about a recent real event experience, then invite a consenting adult you can reach. A rehearsal tests your questions, not your hypothesis.
 
 
-### Understand the idea · 1
+### Idea 1: A research question states an uncertainty; an interview questi…
 
 Section: learn. Stable action: learn-1.
 
 A research question states an uncertainty; an interview question starts a conversation.
 
 
-### Understand the idea · 2
+### Ask about a recent experience instead of predicting future behavior
 
 Section: learn. Stable action: learn-2.
 
 Ask about a recent experience instead of predicting future behavior.
 
 
-### Understand the idea · 3
+### Idea 3: Explain consent and note use before beginning; ask permission…
 
 Section: learn. Stable action: learn-3.
 
 Explain consent and note use before beginning; ask permission before recording.
 
 
-### Understand the idea · 4
+### One conversation cannot establish how common a behavior is
 
 Section: learn. Stable action: learn-4.
 
 One conversation cannot establish how common a behavior is.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Replace “Was checkout confusing because the button was hidden?” with “What happened when you tried to finish?” Then ask what the person expected.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2115,6 +2219,40 @@ Open Your work and choose Ready for review. Lesson 4 takes the task you asked ab
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Ask about real experiences
+What I am trying to do: Prepare questions about a recent real event experience, then invite a consenting adult you can reach. A rehearsal tests your questions, not your hypothesis.
+
+Key idea or terms:
+Consent: The person knows what you are doing with their words and agrees, before you start. It can be withdrawn at any point.
+Research question: What you are uncertain about. You do not ask it out loud; it decides what you ask.
+Leading question: A question that contains the answer you hope for. “Was it confusing?” tells them it was confusing.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied line from someone else’s notes, written straight after a real consented conversation: “She looked for the price, couldn’t find it on the first screen, went back twice, and said ‘I never know what these things cost until the end’ — she was clearly frustrated by the whole booking process.”
+
+Activity: Use the supplied case to ask me whether each statement is a fact, a guess or an open question. After I answer, explain the distinction with one everyday example.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What this conversation is for, in one sentence” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What this conversation is for, in one sentence”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What this conversation is for, in one sentence” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Ask what happened last time instead of whether someone likes your proposed feature.
@@ -2123,7 +2261,7 @@ Open Your work and choose Ready for review. Lesson 4 takes the task you asked ab
 
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. Lesson 4 takes the task you asked about and maps it, including the moments where it goes wrong, so keep your observations to hand.
 
@@ -2159,51 +2297,65 @@ Starting route: Use paper and a pencil. Draw a reservation from choosing a class
 - Three failure branches with recovery messages
 - One repaired dead end and explanation
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product design starts by understanding the task and the problem before choosing a screen change. In this lesson, your first small result is: A trigger, a successful outcome and the list of what the person needs to know before committing.
+
+**Words you will use**
+
+- **Trigger:** The moment the task starts, from the person’s side.
+- **Commitment:** The point after which backing out costs something: paying, or promising a place.
+- **Node:** One box: a state the person is in. Give each a letter so the failures can point back to it.
+
+**Quick example.** A supplied branch from the same made-up flow. The person types an email address without an @ and presses Reserve. Someone has drafted three versions of what happens next.
+
+The reader demonstrates and guides the task before asking for “What starts the reservation (the trigger)”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Lay out the workshop reservation journey on paper. Trace a normal route, then inject “no places left” and draw how the person recovers.
 
 
-### Understand the idea · 1
+### A task flow connects a trigger, actions, decisions and an outcome
 
 Section: learn. Stable action: learn-1.
 
 A task flow connects a trigger, actions, decisions and an outcome.
 
 
-### Understand the idea · 2
+### Every failure needs an explanation and a next action
 
 Section: learn. Stable action: learn-2.
 
 Every failure needs an explanation and a next action.
 
 
-### Understand the idea · 3
+### Group and label information using the visitor’s task language
 
 Section: learn. Stable action: learn-3.
 
 Group and label information using the visitor’s task language.
 
 
-### Understand the idea · 4
+### Show price and preparation requirements before commitment
 
 Section: learn. Stable action: learn-4.
 
 Show price and preparation requirements before commitment.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Workshop full → explain availability → offer another date. A payment timeout should distinguish checking status from confirmed failure to reduce accidental repeat payments.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2679,6 +2831,40 @@ Open Your work and choose Ready for review. Lesson 5 turns this flow into screen
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Map the task and its failures
+What I am trying to do: Lay out the workshop reservation journey on paper. Trace a normal route, then inject “no places left” and draw how the person recovers.
+
+Key idea or terms:
+Trigger: The moment the task starts, from the person’s side.
+Commitment: The point after which backing out costs something: paying, or promising a place.
+Node: One box: a state the person is in. Give each a letter so the failures can point back to it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied branch from the same made-up flow. The person types an email address without an @ and presses Reserve. Someone has drafted three versions of what happens next.
+
+Activity: Use the supplied case to ask me whether each statement is a fact, a guess or an open question. After I answer, explain the distinction with one everyday example.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What starts the reservation (the trigger)” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What starts the reservation (the trigger)”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What starts the reservation (the trigger)” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Use one box per state and label arrows with the action that changes state.
@@ -2687,7 +2873,7 @@ Open Your work and choose Ready for review. Lesson 5 turns this flow into screen
 
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. Lesson 5 turns this flow into screens, so keep the sheet and its numbering.
 
@@ -2724,51 +2910,65 @@ Starting route: Draw on paper: class details and a reservation form, each in a n
 - One error state
 - An unresolved issue for review
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product design starts by understanding the task and the problem before choosing a screen change. In this lesson, your first small result is: Three considerations from the reading, each tied to a place in your flow.
+
+**Words you will use**
+
+- **Screen reader:** Software that reads the page aloud in code order, so order and labels matter more than position.
+- **Persistent label:** A label that stays visible after typing, unlike placeholder text that disappears.
+- **Hierarchy:** What you see first, second and third. It should follow the next decision the person has to make.
+
+**Quick example.** A supplied phone sketch of the reservation form, made up for practice. Down the page: the heading “Reserve your place”, then Name, then Email, then a note reading “We will send your materials list here”, then the Date chooser, then the Reserve button. The note about the materials list is drawn in small grey text beside the Email field.
+
+The reader demonstrates and guides the task before asking for “Consideration 1 and where it touches your flow”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Turn your numbered flow into three paper screens. Use real labels and content so another person can follow the task without your narration.
 
 
-### Understand the idea · 1
+### Hierarchy helps someone make the next decision
 
 Section: learn. Stable action: learn-1.
 
 Hierarchy helps someone make the next decision.
 
 
-### Understand the idea · 2
+### Responsive layouts reflow content instead of shrinking it
 
 Section: learn. Stable action: learn-2.
 
 Responsive layouts reflow content instead of shrinking it.
 
 
-### Understand the idea · 3
+### Persistent labels, clear errors and logical reading order support access
 
 Section: learn. Stable action: learn-3.
 
 Persistent labels, clear errors and logical reading order support access.
 
 
-### Understand the idea · 4
+### Idea 4: Mockups specify accessibility intent; runtime tests verify imp…
 
 Section: learn. Stable action: learn-4.
 
 Mockups specify accessibility intent; runtime tests verify implemented behavior.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The Email label stays visible after typing. The materials summary stays before Reserve on mobile instead of disappearing into a desktop sidebar.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3255,6 +3455,40 @@ Open Your work, name the unresolved issue you most want read, and choose Ready f
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Make the interface understandable
+What I am trying to do: Turn your numbered flow into three paper screens. Use real labels and content so another person can follow the task without your narration.
+
+Key idea or terms:
+Screen reader: Software that reads the page aloud in code order, so order and labels matter more than position.
+Persistent label: A label that stays visible after typing, unlike placeholder text that disappears.
+Hierarchy: What you see first, second and third. It should follow the next decision the person has to make.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied phone sketch of the reservation form, made up for practice. Down the page: the heading “Reserve your place”, then Name, then Email, then a note reading “We will send your materials list here”, then the Date chooser, then the Reserve button. The note about the materials list is drawn in small grey text beside the Email field.
+
+Activity: Use the supplied case to ask me whether each statement is a fact, a guess or an open question. After I answer, explain the distinction with one everyday example.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Consideration 1 and where it touches your flow” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Consideration 1 and where it touches your flow”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Consideration 1 and where it touches your flow” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Draw screen boundaries first, then place the information needed before the main action.
@@ -3263,7 +3497,7 @@ Open Your work, name the unresolved issue you most want read, and choose Ready f
 
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work, name the unresolved issue you most want read, and choose Ready for review. Lesson 6 repairs one weak point from these screens, so keep the originals unchanged.
 
@@ -3300,44 +3534,58 @@ Starting route: Choose one earlier sketch. Without one, draw a fictional class p
 - Before and after versions
 - A next check
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product design starts by understanding the task and the problem before choosing a screen change. In this lesson, your first small result is: One criterion and the artefact that shows the weakness.
+
+**Words you will use**
+
+- **Task blocker:** Something that stops the person finishing. It comes before anything that is merely ugly.
+- **Heuristic:** A rule of thumb from experience. It flags a risk; it cannot prove anyone failed.
+- **Taste:** A preference about looks. Keep it out unless it affects the task.
+
+**Quick example.** A supplied pair from the same made-up repair. Before: the confirmation screen says only “Thank you”. After: it shows the class name, the date and time, the address, and one line saying what to bring, with the same “Thank you” heading.
+
+The reader demonstrates and guides the task before asking for “The review criterion you are weakest on”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Choose one weak point in your screens. Preserve the original, make one focused repair and explain what still needs testing.
 
 
-### Understand the idea · 1
+### Useful critique connects a specific observation to task impact
 
 Section: learn. Stable action: learn-1.
 
 Useful critique connects a specific observation to task impact.
 
 
-### Understand the idea · 2
+### Prioritize a task blocker before a matter of taste
 
 Section: learn. Stable action: learn-2.
 
 Prioritize a task blocker before a matter of taste.
 
 
-### Understand the idea · 3
+### Keep the original so the change can be explained
 
 Section: learn. Stable action: learn-3.
 
 Keep the original so the change can be explained.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Replace an unexplained disabled Reserve button with availability information and another date. Check whether a visitor can identify the next step.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3756,6 +4004,40 @@ Open Your work and choose Ready for review. This lesson is optional, so stopping
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Critique and repair one weak point
+What I am trying to do: Choose one weak point in your screens. Preserve the original, make one focused repair and explain what still needs testing.
+
+Key idea or terms:
+Task blocker: Something that stops the person finishing. It comes before anything that is merely ugly.
+Heuristic: A rule of thumb from experience. It flags a risk; it cannot prove anyone failed.
+Taste: A preference about looks. Keep it out unless it affects the task.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied pair from the same made-up repair. Before: the confirmation screen says only “Thank you”. After: it shows the class name, the date and time, the address, and one line saying what to bring, with the same “Thank you” heading.
+
+Activity: Use the supplied case to ask me whether each statement is a fact, a guess or an open question. After I answer, explain the distinction with one everyday example.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The review criterion you are weakest on” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The review criterion you are weakest on”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The review criterion you are weakest on” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - A heuristic identifies a risk; it cannot prove that people failed.
@@ -3764,7 +4046,7 @@ Open Your work and choose Ready for review. This lesson is optional, so stopping
 
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This lesson is optional, so stopping here is a complete answer; Lesson 7 explains one decision in writing.
 
@@ -3799,44 +4081,58 @@ Starting route: Choose one earlier decision and its worksheet. Without one, comp
 - One evidence-backed strength and two gaps
 - One bounded repair and next learning action
 
-### Start with a clear task
+### Start here: in everyday words
+
+Product design starts by understanding the task and the problem before choosing a screen change. In this lesson, your first small result is: One decision and the artefacts that show it.
+
+**Words you will use**
+
+- **Decision:** A place where you could have done something else and chose not to.
+- **Trade-off:** What you gave up or made worse by choosing this.
+- **Concept:** An unshipped design. It can show reasoning; it cannot show impact.
+
+**Quick example.** A supplied paragraph from someone else’s decision note, made up for practice: “Attendees want to know what to bring. I watched two people miss the materials line at the bottom of the page. Moving it above Reserve will reduce no-shows, and the studio agrees it is worth trying.”
+
+The reader demonstrates and guides the task before asking for “One decision from Module 1”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Present one decision using your own artifacts. Explain it aloud, notice where you rely on unsupported claims, then revise the note.
 
 
-### Understand the idea · 1
+### Explain context, evidence, alternatives, choice and next check
 
 Section: learn. Stable action: learn-1.
 
 Explain context, evidence, alternatives, choice and next check.
 
 
-### Understand the idea · 2
+### A concept shows reasoning; it cannot prove production impact
 
 Section: learn. Stable action: learn-2.
 
 A concept shows reasoning; it cannot prove production impact.
 
 
-### Understand the idea · 3
+### Choose your next practice from evidence gaps, not tool trends
 
 Section: learn. Stable action: learn-3.
 
 Choose your next practice from evidence gaps, not tool trends.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - “I moved materials before reservation because preparation is the reported concern. A checkbox records a click, not comprehension. I still need to observe visitors using the summary.”
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4284,6 +4580,40 @@ Open Your work and choose Ready for review. This lesson is optional and it close
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Explain decisions and plan your next steps
+What I am trying to do: Present one decision using your own artifacts. Explain it aloud, notice where you rely on unsupported claims, then revise the note.
+
+Key idea or terms:
+Decision: A place where you could have done something else and chose not to.
+Trade-off: What you gave up or made worse by choosing this.
+Concept: An unshipped design. It can show reasoning; it cannot show impact.
+
+Supplied practice material (fictional or labelled practice, not my research):
+A supplied paragraph from someone else’s decision note, made up for practice: “Attendees want to know what to bring. I watched two people miss the materials line at the bottom of the page. Moving it above Reserve will reduce no-shows, and the studio agrees it is worth trying.”
+
+Activity: Use the supplied case to ask me whether each statement is a fact, a guess or an open question. After I answer, explain the distinction with one everyday example.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “One decision from Module 1” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “One decision from Module 1”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “One decision from Module 1” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Show the artifact when explaining a decision rather than reading a list of design terms.
@@ -4292,7 +4622,7 @@ Open Your work and choose Ready for review. This lesson is optional and it close
 
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This lesson is optional and it closes Module 1; Module 2 begins by choosing what evidence you need next, which your two gaps already point at.
 

@@ -23,58 +23,72 @@ Starting route: Recommended route: Build nothing yet — this lesson watches a p
 - Two design-owned findings from the trace
 - A note of what appeared first and what the person could do while waiting
 
-### Start with a clear task
+### Start here: in everyday words
+
+Web foundations explain how a browser turns structure, style and behavior into a page that must work at different sizes. In this lesson, your first small result is: The stages of a page load written in your own words, in order.
+
+**Words you will use**
+
+- **Request:** Your browser asking a server for one file. A page is never one request; it is one request that leads to many more.
+- **Parse:** The browser reading the HTML it received and working out what it says. It is during this that it discovers everything else it has to ask for.
+- **Render:** Drawing the page on screen. It can begin before everything has arrived, which is why what you put first matters so much.
+
+**Quick example.** Made-up example. Tracing a tool-library page for the first time, and measuring a page the browser already had. Opened developer tools, clicked Network, reloaded the page. Four requests, 40 kilobytes, 200 milliseconds. I wrote it down and thought the page was in excellent shape.
+
+The reader demonstrates and guides the task before asking for “The stages of a page load, in your own words”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Trace one real page load from request to rendered content, name each stage, and identify the two stages your design decisions can affect.
 
 
-### Understand the idea · 1
+### Idea 1: A page load is a sequence: request, response, parse, fetch mor…
 
 Section: learn. Stable action: learn-1.
 
 A page load is a sequence: request, response, parse, fetch more, render, become interactive.
 
 
-### Understand the idea · 2
+### HTML arrives first; everything it references is a further request
 
 Section: learn. Stable action: learn-2.
 
 HTML arrives first; everything it references is a further request.
 
 
-### Understand the idea · 3
+### Fonts, images and scripts each delay something different
 
 Section: learn. Stable action: learn-3.
 
 Fonts, images and scripts each delay something different.
 
 
-### Understand the idea · 4
+### The network tab shows the real sequence, not the intended one
 
 Section: learn. Stable action: learn-4.
 
 The network tab shows the real sequence, not the intended one.
 
 
-### Understand the idea · 5
+### Design choices decide how much is requested and in what order
 
 Section: learn. Stable action: learn-5.
 
 Design choices decide how much is requested and in what order.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - One real class page traced in the network tab: the document arrived in 300ms, then two stylesheets, three font files, eleven images and four scripts — twenty-one requests before the page was usable, taking eleven seconds on a throttled connection. The two design-owned findings: three typefaces were being loaded and only two were used, and the hero image was 1.8 MB and appeared above every piece of text, so nothing readable appeared until it arrived. Both were design decisions; neither needed an engineer to identify.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -645,6 +659,40 @@ Open Your work and choose Ready for review. The next lesson builds one page of y
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: What happens between a tap and a page
+What I am trying to do: Trace one real page load from request to rendered content, name each stage, and identify the two stages your design decisions can affect.
+
+Key idea or terms:
+Request: Your browser asking a server for one file. A page is never one request; it is one request that leads to many more.
+Parse: The browser reading the HTML it received and working out what it says. It is during this that it discovers everything else it has to ask for.
+Render: Drawing the page on screen. It can begin before everything has arrived, which is why what you put first matters so much.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Tracing a tool-library page for the first time, and measuring a page the browser already had. Opened developer tools, clicked Network, reloaded the page. Four requests, 40 kilobytes, 200 milliseconds. I wrote it down and thought the page was in excellent shape.
+
+Activity: Ask me to predict what one small change to the supplied page will do before explaining it. Then ask for the visible result, the browser check and one recovery step if it fails.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The stages of a page load, in your own words” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The stages of a page load, in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The stages of a page load, in your own words” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Write the sequence as a list and add one sentence per stage saying what the browser is doing.
@@ -714,7 +762,7 @@ Adequate evidence: Two specific changes a designer could make, traced to request
 Repair: Look at the largest requests and ask which exist because of a design choice. Recheck: The two findings.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson builds one page of your own, in markup that means something.
 
@@ -752,58 +800,72 @@ Starting route: Recommended route: Build one page of your product as a real HTML
 - Links and buttons used for their correct purposes
 - A stylesheet-off reading with problems found and fixed
 
-### Start with a clear task
+### Start here: in everyday words
+
+Web foundations explain how a browser turns structure, style and behavior into a page that must work at different sizes. In this lesson, your first small result is: Your Module 11 outline carried across with levels, and an element chosen for each piece of content.
+
+**Words you will use**
+
+- **Semantic element:** One whose name says what the content is: a heading, a list, a table, a button. The name is what assistive technology, search and translation read.
+- **Generic container:** A box with no meaning at all. It is the right choice when something is purely for layout and the wrong one everywhere else.
+- **Landmark:** A named region of the page: banner, navigation, main, footer. It is how somebody jumps past the menu to the content.
+
+**Quick example.** Made-up example. Building the tool detail page, and using a link for something that was not going anywhere. The Reserve control as a link, styled to look like a button. On screen it was indistinguishable from the real thing, and it worked when clicked.
+
+The reader demonstrates and guides the task before asking for “Your Module 11 outline, with the heading level beside each line”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Build one page of your product in semantic HTML, with the heading outline and regions from m11, and verify the structure without looking at the styling.
 
 
-### Understand the idea · 1
+### Idea 1: Elements carry meaning: a heading, a list, a button, a link ar…
 
 Section: learn. Stable action: learn-1.
 
 Elements carry meaning: a heading, a list, a button, a link are different things.
 
 
-### Understand the idea · 2
+### A link goes somewhere; a button does something
 
 Section: learn. Stable action: learn-2.
 
 A link goes somewhere; a button does something. Swapping them breaks behaviour.
 
 
-### Understand the idea · 3
+### Landmarks and headings give the page its navigable structure
 
 Section: learn. Stable action: learn-3.
 
 Landmarks and headings give the page its navigable structure.
 
 
-### Understand the idea · 4
+### Lists, tables and definitions exist because content has shapes
 
 Section: learn. Stable action: learn-4.
 
 Lists, tables and definitions exist because content has shapes.
 
 
-### Understand the idea · 5
+### If the page makes sense with the stylesheet removed, the markup is sound
 
 Section: learn. Stable action: learn-5.
 
 If the page makes sense with the stylesheet removed, the markup is sound.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The class detail page was rebuilt in semantic HTML: one page title, four section headings at the right levels, the class list as a list, the schedule as a table with header cells, the booking action as a button and the “see other dates” as a link. Removing the stylesheet produced a readable document with a clear outline. Three earlier mistakes surfaced during the rebuild: the availability status had been a coloured div with no text, the filter controls were links that performed actions, and the price table was built from divs so its columns had no headers.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -1371,6 +1433,40 @@ Open Your work and choose Ready for review. The next lesson styles this page usi
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: HTML that means something
+What I am trying to do: Build one page of your product in semantic HTML, with the heading outline and regions from m11, and verify the structure without looking at the styling.
+
+Key idea or terms:
+Semantic element: One whose name says what the content is: a heading, a list, a table, a button. The name is what assistive technology, search and translation read.
+Generic container: A box with no meaning at all. It is the right choice when something is purely for layout and the wrong one everywhere else.
+Landmark: A named region of the page: banner, navigation, main, footer. It is how somebody jumps past the menu to the content.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Building the tool detail page, and using a link for something that was not going anywhere. The Reserve control as a link, styled to look like a button. On screen it was indistinguishable from the real thing, and it worked when clicked.
+
+Activity: Ask me to predict what one small change to the supplied page will do before explaining it. Then ask for the visible result, the browser check and one recovery step if it fails.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Your Module 11 outline, with the heading level beside each line” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Your Module 11 outline, with the heading level beside each line”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Your Module 11 outline, with the heading level beside each line” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Go through the page asking what each block of content is, then use the element that means that.
@@ -1440,7 +1536,7 @@ Adequate evidence: A record of reading the page without styling, with fixes made
 Repair: Disable the stylesheet, read the page aloud, and fix every place the meaning collapses. Recheck: The unstyled reading notes.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson styles this page using the tokens you wrote in Module 8.
 
@@ -1478,58 +1574,72 @@ Starting route: Recommended route: Build a stylesheet for the page you built las
 - One layout surprise diagnosed with the inspector
 - A note of what you set once and inherited rather than repeating
 
-### Start with a clear task
+### Start here: in everyday words
+
+Web foundations explain how a browser turns structure, style and behavior into a page that must work at different sizes. In this lesson, your first small result is: The box model and normal flow written in your own words, with a drawing you made yourself.
+
+**Words you will use**
+
+- **Box model:** Every element is a box: the content, padding inside the edge, the border on the edge, and margin outside it. Almost every width surprise comes from this.
+- **Normal flow:** What the browser does before you tell it anything: blocks stack downward, text wraps along lines. Layout modes are changes to this, not replacements for it.
+- **Box sizing:** Whether a width you set includes the padding and border or sits inside them. Setting it to include them once, at the top, prevents most of the surprises.
+
+**Quick example.** Made-up example. Moving a tool-library token sheet into a stylesheet, and renaming everything on the way. Declared the colours and spacing at the top, and gave them names that felt natural in code: --grey-light, --pad-small, --font-big.
+
+The reader demonstrates and guides the task before asking for “The box model in your own words”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Style your semantic page using your m08 tokens as custom properties, and explain in writing why three specific rules produce the layout they do.
 
 
-### Understand the idea · 1
+### Everything is a box: content, padding, border, margin
 
 Section: learn. Stable action: learn-1.
 
 Everything is a box: content, padding, border, margin.
 
 
-### Understand the idea · 2
+### Idea 2: Normal flow stacks blocks and wraps inline content; layout mod…
 
 Section: learn. Stable action: learn-2.
 
 Normal flow stacks blocks and wraps inline content; layout modes change that.
 
 
-### Understand the idea · 3
+### Specificity and order decide which rule wins when two conflict
 
 Section: learn. Stable action: learn-3.
 
 Specificity and order decide which rule wins when two conflict.
 
 
-### Understand the idea · 4
+### Custom properties turn your token sheet into real, changeable values
 
 Section: learn. Stable action: learn-4.
 
 Custom properties turn your token sheet into real, changeable values.
 
 
-### Understand the idea · 5
+### Inheritance is why setting a value once at the top is usually right
 
 Section: learn. Stable action: learn-5.
 
 Inheritance is why setting a value once at the top is usually right.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The class page was styled with the token sheet declared as custom properties at the top: five neutrals, three semantic colours, six spacing values, six type steps. Three rules were then explained in writing. Why the card was wider than its container: padding was being added to a set width, fixed by including padding in the box sizing. Why the heading colour would not change: a more specific rule elsewhere was winning, visible in the inspector. Why the body font applied everywhere without being repeated: inheritance, set once on the root.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2089,6 +2199,40 @@ Open Your work and choose Ready for review. The next lesson makes this page work
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: CSS: the box, the flow and the cascade
+What I am trying to do: Style your semantic page using your m08 tokens as custom properties, and explain in writing why three specific rules produce the layout they do.
+
+Key idea or terms:
+Box model: Every element is a box: the content, padding inside the edge, the border on the edge, and margin outside it. Almost every width surprise comes from this.
+Normal flow: What the browser does before you tell it anything: blocks stack downward, text wraps along lines. Layout modes are changes to this, not replacements for it.
+Box sizing: Whether a width you set includes the padding and border or sits inside them. Setting it to include them once, at the top, prevents most of the surprises.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Moving a tool-library token sheet into a stylesheet, and renaming everything on the way. Declared the colours and spacing at the top, and gave them names that felt natural in code: --grey-light, --pad-small, --font-big.
+
+Activity: Ask me to predict what one small change to the supplied page will do before explaining it. Then ask for the visible result, the browser check and one recovery step if it fails.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The box model in your own words” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The box model in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The box model in your own words” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Search the stylesheet for literal colours and spacing values and replace each with its token.
@@ -2158,7 +2302,7 @@ Adequate evidence: A note of inherited values, with repetition removed.
 Repair: Find values repeated on many elements and set them once higher up instead. Recheck: The stylesheet and note.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson makes this page work at every width rather than at the one you designed for.
 
@@ -2196,58 +2340,72 @@ Starting route: Recommended route: Build the narrow-first layout for the page yo
 - A slow width sweep with failures found between breakpoints
 - No horizontal page scrolling at any width
 
-### Start with a clear task
+### Start here: in everyday words
+
+Web foundations explain how a browser turns structure, style and behavior into a page that must work at different sizes. In this lesson, your first small result is: A layout at about 320 pixels with content in priority order, flexible sizing, and nothing scrolling sideways.
+
+**Words you will use**
+
+- **Narrow first:** Building the smallest layout before the others. It forces the content into priority order, because there is no room for anything else.
+- **Flexible sizing:** Letting something take the room available rather than a number you chose. Flexible layouts wrap and grow; fixed ones break at sizes you never tested.
+- **Horizontal page scrolling:** Having to drag the whole page sideways to read it. It is never acceptable, at any width, and it usually comes from one stubborn element.
+
+**Quick example.** Made-up example. Making a tool-library page responsive, and starting from the layout I had already drawn. Built the wide layout first, because it was the one in my design file, then wrote rules to squeeze it down for narrow screens.
+
+The reader demonstrates and guides the task before asking for “The order the content appears in at the narrowest width”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Make your page work from about 320 pixels to a wide screen without horizontal scrolling, using flexible layout rather than fixed breakpoint copies.
 
 
-### Understand the idea · 1
+### Start narrow: the small layout is the content in priority order
 
 Section: learn. Stable action: learn-1.
 
 Start narrow: the small layout is the content in priority order.
 
 
-### Understand the idea · 2
+### Let content decide breakpoints, not device names
 
 Section: learn. Stable action: learn-2.
 
 Let content decide breakpoints, not device names.
 
 
-### Understand the idea · 3
+### Flexible layouts wrap and grow; fixed ones break at unexpected sizes
 
 Section: learn. Stable action: learn-3.
 
 Flexible layouts wrap and grow; fixed ones break at unexpected sizes.
 
 
-### Understand the idea · 4
+### Test between breakpoints, where most failures live
 
 Section: learn. Stable action: learn-4.
 
 Test between breakpoints, where most failures live.
 
 
-### Understand the idea · 5
+### No horizontal scrolling of the page, at any width, ever
 
 Section: learn. Stable action: learn-5.
 
 No horizontal scrolling of the page, at any width, ever.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The class page was built narrow first: title, key facts, action, then description, with the image below. Widening slowly revealed three genuine breakpoints — one where the key facts could sit in a row, one where the description could take a wider column, one where a side panel became viable. None matched a device name. Between the second and third, the card grid produced a single orphaned card, fixed with a flexible wrap rather than another breakpoint. At 320 pixels the schedule table caused horizontal scrolling of the page; it became records instead, matching the m08 decision.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -2821,6 +2979,40 @@ Open Your work and choose Ready for review. The next lesson puts real images int
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Responsive layout, built rather than drawn
+What I am trying to do: Make your page work from about 320 pixels to a wide screen without horizontal scrolling, using flexible layout rather than fixed breakpoint copies.
+
+Key idea or terms:
+Narrow first: Building the smallest layout before the others. It forces the content into priority order, because there is no room for anything else.
+Flexible sizing: Letting something take the room available rather than a number you chose. Flexible layouts wrap and grow; fixed ones break at sizes you never tested.
+Horizontal page scrolling: Having to drag the whole page sideways to read it. It is never acceptable, at any width, and it usually comes from one stubborn element.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Making a tool-library page responsive, and starting from the layout I had already drawn. Built the wide layout first, because it was the one in my design file, then wrote rules to squeeze it down for narrow screens.
+
+Activity: Ask me to predict what one small change to the supplied page will do before explaining it. Then ask for the visible result, the browser check and one recovery step if it fails.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The order the content appears in at the narrowest width” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The order the content appears in at the narrowest width”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The order the content appears in at the narrowest width” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Set the viewport to 320 and fix each overflow, converting wide content to records or its own scroll container.
@@ -2890,7 +3082,7 @@ Adequate evidence: Renderings using the longest real content and text at about 2
 Repair: Substitute your longest real values, enlarge the text and sweep again. Recheck: The hard-content renderings.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson puts real images into this page and measures what they cost.
 
@@ -2928,58 +3120,72 @@ Starting route: Recommended route: Build the image work for the page you have be
 - A loading decision per image, with reserved space
 - Before-and-after page weight and time to usable
 
-### Start with a clear task
+### Start here: in everyday words
+
+Web foundations explain how a browser turns structure, style and behavior into a page that must work at different sizes. In this lesson, your first small result is: Every image listed with its file size, served width and display width, with the oversized and wrongly formatted ones marked.
+
+**Words you will use**
+
+- **Served width:** How many pixels wide the file actually is. A 3000-pixel photograph in a 400-pixel slot sends the person 3000 pixels and throws most of them away.
+- **Flat graphic:** An icon, logo or diagram made of shapes rather than of a photograph. Saved as a photograph it is bigger and softer; as a vector it is tiny and sharp at any size.
+- **Dense screen:** A display packing more pixels into the same space. It is why an image is usually served somewhat wider than its display width, rather than exactly at it.
+
+**Quick example.** Made-up example. Reducing the images on a tool-library page, and leaving the one that mattered most. Compressed everything. Eleven images squeezed as hard as they would go without looking obviously worse. Total weight fell from 2.4 megabytes to 1.6.
+
+The reader demonstrates and guides the task before asking for “Each image: its file size, the width it is served at, and the width it is displayed at”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Put real images into your page at appropriate sizes and formats, produce one icon as hand-written SVG, and measure the weight you saved.
 
 
-### Understand the idea · 1
+### Idea 1: Serve an image near the size it is displayed; a 3000-pixel pho…
 
 Section: learn. Stable action: learn-1.
 
 Serve an image near the size it is displayed; a 3000-pixel photo in a 400-pixel slot wastes everything.
 
 
-### Understand the idea · 2
+### Photographs and flat graphics want different formats
 
 Section: learn. Stable action: learn-2.
 
 Photographs and flat graphics want different formats.
 
 
-### Understand the idea · 3
+### SVG is text: it scales, it is small, and you can write it by hand
 
 Section: learn. Stable action: learn-3.
 
 SVG is text: it scales, it is small, and you can write it by hand.
 
 
-### Understand the idea · 4
+### Images below the fold can load later; images above it should not
 
 Section: learn. Stable action: learn-4.
 
 Images below the fold can load later; images above it should not.
 
 
-### Understand the idea · 5
+### Every image needs its alternative text decision from m11 carried through
 
 Section: learn. Stable action: learn-5.
 
 Every image needs its alternative text decision from m11 carried through.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Eleven images were reviewed. The hero photograph was 1.8 MB at 3000 pixels wide, displayed at 720; re-exported at an appropriate size and format it became 96 KB. Six flat icons were replaced with hand-written SVG totalling under 4 KB, styled with the token colours rather than shipped in three colour variants. Four below-the-fold photographs were set to load later, with their space reserved so nothing jumped. Total page weight fell from 2.4 MB to 340 KB, and time to usable on a throttled connection fell from eleven seconds to three.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -3553,6 +3759,40 @@ Open Your work and choose Ready for review. The next lesson adds the first behav
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Images that do not cost the page
+What I am trying to do: Put real images into your page at appropriate sizes and formats, produce one icon as hand-written SVG, and measure the weight you saved.
+
+Key idea or terms:
+Served width: How many pixels wide the file actually is. A 3000-pixel photograph in a 400-pixel slot sends the person 3000 pixels and throws most of them away.
+Flat graphic: An icon, logo or diagram made of shapes rather than of a photograph. Saved as a photograph it is bigger and softer; as a vector it is tiny and sharp at any size.
+Dense screen: A display packing more pixels into the same space. It is why an image is usually served somewhat wider than its display width, rather than exactly at it.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Reducing the images on a tool-library page, and leaving the one that mattered most. Compressed everything. Eleven images squeezed as hard as they would go without looking obviously worse. Total weight fell from 2.4 megabytes to 1.6.
+
+Activity: Ask me to predict what one small change to the supplied page will do before explaining it. Then ask for the visible result, the browser check and one recovery step if it fails.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Each image: its file size, the width it is served at, and the width it is displayed at” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Each image: its file size, the width it is served at, and the width it is displayed at”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Each image: its file size, the width it is served at, and the width it is displayed at” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - List each image's file size against its display width and re-export the worst offenders.
@@ -3622,7 +3862,7 @@ Adequate evidence: Before-and-after page weight and throttled time to usable.
 Repair: Re-run the same throttled profile before and after and record both numbers. Recheck: The measurements.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson adds the first behaviour that genuinely needs a script, and asks whether it does.
 
@@ -3660,58 +3900,72 @@ Starting route: Recommended route: Build one interactive behaviour on the page y
 - A native or CSS alternative considered and recorded
 - A stated behaviour when the script does not run
 
-### Start with a clear task
+### Start here: in everyday words
+
+Web foundations explain how a browser turns structure, style and behavior into a page that must work at different sizes. In this lesson, your first small result is: One interaction chosen, the native or CSS answer looked for, and what that version gives you for nothing.
+
+**Words you will use**
+
+- **Native element:** Something the browser already provides: a disclosure, a dialogue, form validation. It arrives with keyboard behaviour and announcements nobody had to write.
+- **Reaching for a script:** The habit of building behaviour by hand because that is how examples online do it. Much of what people script, HTML and CSS already do.
+- **Event:** Something happening: a click, a key, a change. Scripts mostly wait for events and then change something.
+
+**Quick example.** Made-up example. Building a filter panel for a tool-library page twice, and building the hard version first. A show-and-hide panel in JavaScript. About forty lines by the time it worked.
+
+The reader demonstrates and guides the task before asking for “Which Module 9 interaction you are building”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Add one genuinely interactive behaviour to your page with plain JavaScript, keeping it usable when the script fails, and explain what the code does line by line.
 
 
-### Understand the idea · 1
+### Much of what people reach for scripts to do, HTML and CSS already do
 
 Section: learn. Stable action: learn-1.
 
 Much of what people reach for scripts to do, HTML and CSS already do.
 
 
-### Understand the idea · 2
+### Idea 2: Scripts respond to events and change state; that is most of wh…
 
 Section: learn. Stable action: learn-2.
 
 Scripts respond to events and change state; that is most of what they are for.
 
 
-### Understand the idea · 3
+### Anything you build with a script, you must also make keyboard operable
 
 Section: learn. Stable action: learn-3.
 
 Anything you build with a script, you must also make keyboard operable.
 
 
-### Understand the idea · 4
+### Design for the script failing: slow connection, error, blocked
 
 Section: learn. Stable action: learn-4.
 
 Design for the script failing: slow connection, error, blocked.
 
 
-### Understand the idea · 5
+### Idea 5: You are learning to read and reason about code, not to become…
 
 Section: learn. Stable action: learn-5.
 
 You are learning to read and reason about code, not to become an engineer.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The filter panel was built twice. The first version used a script for showing and hiding, and needed keyboard handling, focus management and announcement written by hand. The second used a native disclosure element and needed almost none of it, behaving correctly with the keyboard and announcing its state without any script at all. The genuinely script-requiring behaviour — filtering the list as options change — was written in about twenty lines, explained line by line, and made to fall back to a submit button that reloads with filters applied when the script does not run.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4266,6 +4520,40 @@ Open Your work and choose Ready for review. The next lesson deals with data that
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Just enough JavaScript
+What I am trying to do: Add one genuinely interactive behaviour to your page with plain JavaScript, keeping it usable when the script fails, and explain what the code does line by line.
+
+Key idea or terms:
+Native element: Something the browser already provides: a disclosure, a dialogue, form validation. It arrives with keyboard behaviour and announcements nobody had to write.
+Reaching for a script: The habit of building behaviour by hand because that is how examples online do it. Much of what people script, HTML and CSS already do.
+Event: Something happening: a click, a key, a change. Scripts mostly wait for events and then change something.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Building a filter panel for a tool-library page twice, and building the hard version first. A show-and-hide panel in JavaScript. About forty lines by the time it worked.
+
+Activity: Ask me to predict what one small change to the supplied page will do before explaining it. Then ask for the visible result, the browser check and one recovery step if it fails.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Which Module 9 interaction you are building” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Which Module 9 interaction you are building”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Which Module 9 interaction you are building” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - For your interaction, look up whether an element or a CSS feature already does it, and write what that would provide.
@@ -4335,7 +4623,7 @@ Adequate evidence: A recorded test with JavaScript disabled and a working route 
 Repair: Disable JavaScript, reload, and add a non-script route for anything essential that broke. Recheck: The no-script test.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson deals with data that has not arrived yet.
 
@@ -4373,58 +4661,72 @@ Starting route: Recommended route: Build the four states of a list that has to w
 - A slow-wait message and a timeout with a route out
 - A list of specification errors the build revealed
 
-### Start with a clear task
+### Start here: in everyday words
+
+Web foundations explain how a browser turns structure, style and behavior into a page that must work at different sizes. In this lesson, your first small result is: Real data arriving in your page and the content branch rendering it, with any trouble and its recovery written down.
+
+**Words you will use**
+
+- **Fetching:** Asking for data after the page has already loaded, and doing something with it when it comes back. The gap between asking and receiving is what the next three steps are about.
+- **Public source:** Data anybody can request without a key or an account. A file of your own realistic data, sitting beside the page, works just as well for this lesson.
+- **Branch:** One of the outcomes the page can be in. Four of them exist whether or not you design them: loading, content, empty and error.
+
+**Quick example.** Made-up example. Connecting a tool-library list to real data, and building against data I had written myself. Six rows of test data I typed out: short names, tidy dates, a photograph for each, every field filled.
+
+The reader demonstrates and guides the task before asking for “Where the data comes from”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Fetch data from a public source into your page, and build the loading, empty, error and slow states you specified in m08 so they are real rather than drawn.
 
 
-### Understand the idea · 1
+### Data arrives after the page: something must be shown in the meantime
 
 Section: learn. Stable action: learn-1.
 
 Data arrives after the page: something must be shown in the meantime.
 
 
-### Understand the idea · 2
+### Four outcomes: loading, content, empty and error
 
 Section: learn. Stable action: learn-2.
 
 Four outcomes: loading, content, empty and error. All four are your design.
 
 
-### Understand the idea · 3
+### Slow is a fifth: design what happens at three seconds and at thirty
 
 Section: learn. Stable action: learn-3.
 
 Slow is a fifth: design what happens at three seconds and at thirty.
 
 
-### Understand the idea · 4
+### Errors are normal, not exceptional; the network fails routinely
 
 Section: learn. Stable action: learn-4.
 
 Errors are normal, not exceptional; the network fails routinely.
 
 
-### Understand the idea · 5
+### Never leave the person with a blank region and no explanation
 
 Section: learn. Stable action: learn-5.
 
 Never leave the person with a blank region and no explanation.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The class list was connected to a small public data source. Four branches were built with the m08 wording: loading reserved the row heights and, after three seconds, added “Still loading — this can take a moment on a slow connection”; content rendered the list; empty said what would appear and offered to widen the filters; error said what happened, that nothing was lost, and offered retry without losing filters. Building revealed two specification errors: the reserved space was for four rows where the real result was often twelve, and the error message referred to a retry control that had never been designed.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -4981,6 +5283,40 @@ Open Your work and choose Ready for review. The next lesson builds a form that r
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Data that arrives later
+What I am trying to do: Fetch data from a public source into your page, and build the loading, empty, error and slow states you specified in m08 so they are real rather than drawn.
+
+Key idea or terms:
+Fetching: Asking for data after the page has already loaded, and doing something with it when it comes back. The gap between asking and receiving is what the next three steps are about.
+Public source: Data anybody can request without a key or an account. A file of your own realistic data, sitting beside the page, works just as well for this lesson.
+Branch: One of the outcomes the page can be in. Four of them exist whether or not you design them: loading, content, empty and error.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Connecting a tool-library list to real data, and building against data I had written myself. Six rows of test data I typed out: short names, tidy dates, a photograph for each, every field filled.
+
+Activity: Ask me to predict what one small change to the supplied page will do before explaining it. Then ask for the visible result, the browser check and one recovery step if it fails.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Where the data comes from” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Where the data comes from”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Where the data comes from” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Force each state in turn — no data, bad address, offline — and build whichever branch is missing.
@@ -5050,7 +5386,7 @@ Adequate evidence: A list of places where the m08 specification was wrong, with 
 Repair: Walk your specification beside the running page and note every mismatch. Recheck: The correction list.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson builds a form that really submits.
 
@@ -5088,58 +5424,72 @@ Starting route: Recommended route: Build one working form, native behaviour firs
 - Errors associated with fields, announced and linked from a summary
 - A record of what was free and what was hand-written
 
-### Start with a clear task
+### Start here: in everyday words
+
+Web foundations explain how a browser turns structure, style and behavior into a page that must work at different sizes. In this lesson, your first small result is: A form built from appropriate input types and required fields, with what the browser does on its own observed before anything is added.
+
+**Words you will use**
+
+- **Input type:** Telling the browser what kind of thing a field holds. It changes the keyboard on a phone, the validation and the error message, without any code.
+- **Native validation:** The checking the browser does itself, including announcing the problem and moving focus. Custom versions routinely omit both of those.
+- **What the browser cannot know:** Anything about your world: which dates have classes, which formats your region accepts, whether that name is already taken. Everything else it probably already checks.
+
+**Quick example.** Made-up example. Building a tool-request form, and rebuilding what the browser was already doing. That native validation looks crude, so a custom version would be better. I had never actually watched the native one run.
+
+The reader demonstrates and guides the task before asking for “Which input types and required fields you used, and why each”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Build one working form with native validation, accessible errors and preserved input, and record what the browser gave you free versus what you had to write.
 
 
-### Understand the idea · 1
+### The browser already validates common types and reports errors
 
 Section: learn. Stable action: learn-1.
 
 The browser already validates common types and reports errors.
 
 
-### Understand the idea · 2
+### Idea 2: Native first, custom only where the native behaviour is genuin…
 
 Section: learn. Stable action: learn-2.
 
 Native first, custom only where the native behaviour is genuinely insufficient.
 
 
-### Understand the idea · 3
+### Errors must be associated with fields and announced when they appear
 
 Section: learn. Stable action: learn-3.
 
 Errors must be associated with fields and announced when they appear.
 
 
-### Understand the idea · 4
+### Never clear the form on failure; preserve everything
 
 Section: learn. Stable action: learn-4.
 
 Never clear the form on failure; preserve everything.
 
 
-### Understand the idea · 5
+### Validation on the client is convenience; the server is where it counts
 
 Section: learn. Stable action: learn-5.
 
 Validation on the client is convenience; the server is where it counts.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The booking form was built with native input types and required attributes, adding custom rules only for two things the browser could not know: that the date must be a future class date, and that the phone number must match an accepted set of formats. Errors were associated with their fields, a summary at the top linked to each, and the summary was announced on appearance. On a failed submission everything the person had entered survived. The record noted what came free — type-appropriate keyboards, required handling, announcement — and what was written by hand, which was about fifteen lines.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -5704,6 +6054,40 @@ Open Your work and choose Ready for review. The next lesson measures what the wh
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: A form that actually submits
+What I am trying to do: Build one working form with native validation, accessible errors and preserved input, and record what the browser gave you free versus what you had to write.
+
+Key idea or terms:
+Input type: Telling the browser what kind of thing a field holds. It changes the keyboard on a phone, the validation and the error message, without any code.
+Native validation: The checking the browser does itself, including announcing the problem and moving focus. Custom versions routinely omit both of those.
+What the browser cannot know: Anything about your world: which dates have classes, which formats your region accepts, whether that name is already taken. Everything else it probably already checks.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Building a tool-request form, and rebuilding what the browser was already doing. That native validation looks crude, so a custom version would be better. I had never actually watched the native one run.
+
+Activity: Ask me to predict what one small change to the supplied page will do before explaining it. Then ask for the visible result, the browser check and one recovery step if it fails.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Which input types and required fields you used, and why each” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Which input types and required fields you used, and why each”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Which input types and required fields you used, and why each” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Remove custom validation that duplicates a native type and test what the browser does alone.
@@ -5773,7 +6157,7 @@ Adequate evidence: A tested failed submission with all values retained.
 Repair: Submit with deliberate errors and check every field; fix any that clears. Recheck: The failed-submission test.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson measures what the whole thing costs on a slow connection.
 
@@ -5811,58 +6195,72 @@ Starting route: Recommended route: Build a measured before-and-after on the page
 - An after measurement under identical conditions
 - One change considered and rejected, with the trade-off
 
-### Start with a clear task
+### Start here: in everyday words
+
+Web foundations explain how a browser turns structure, style and behavior into a page that must work at different sizes. In this lesson, your first small result is: A baseline measured with the conditions written down, and the requests that hold up the first render identified.
+
+**Words you will use**
+
+- **Conditions:** Throttling profile, cache setting, device and browser. A number without them cannot be compared with anything, including your own later number.
+- **Blocking resource:** Something the browser waits for before drawing anything. Stylesheets and scripts in the head usually do, and they are often the whole delay.
+- **Time to usable:** When the person could act, not when loading finished. It needs you to say what usable meant on this page.
+
+**Quick example.** Made-up example. Measuring a tool-library page, and starting after the easy win was already in. Noticed the header photograph was enormous, fixed it, and then sat down to take a baseline. It seemed sensible to measure a page that was not obviously broken.
+
+The reader demonstrates and guides the task before asking for “The conditions: throttling profile, cache setting, device and browser”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Measure your page's weight and time to usable on a slow connection, make three changes, and report the before-and-after with the conditions stated.
 
 
-### Understand the idea · 1
+### Measure before changing; opinions about speed are unreliable
 
 Section: learn. Stable action: learn-1.
 
 Measure before changing; opinions about speed are unreliable.
 
 
-### Understand the idea · 2
+### Idea 2: Weight, number of requests and blocking resources are the thre…
 
 Section: learn. Stable action: learn-2.
 
 Weight, number of requests and blocking resources are the three usual causes.
 
 
-### Understand the idea · 3
+### Time to usable matters more than time to fully loaded
 
 Section: learn. Stable action: learn-3.
 
 Time to usable matters more than time to fully loaded.
 
 
-### Understand the idea · 4
+### Fonts and images are the design-owned costs; scripts are usually shared
 
 Section: learn. Stable action: learn-4.
 
 Fonts and images are the design-owned costs; scripts are usually shared.
 
 
-### Understand the idea · 5
+### Report conditions with every number, or the comparison is meaningless
 
 Section: learn. Stable action: learn-5.
 
 Report conditions with every number, or the comparison is meaningless.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Baseline on a throttled profile with the cache disabled: 2.4 MB, twenty-one requests, eleven seconds to usable. Three changes: images resized and re-formatted, two of three typefaces removed, and the stylesheet made non-blocking for the parts not needed for first paint. After: 340 KB, twelve requests, three seconds to usable. The conditions were identical for both runs and stated with the figures. One further change was considered and rejected: deferring the script that renders the list would have made the page appear faster and be useful later, which is the wrong trade for this page.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -6424,6 +6822,40 @@ Open Your work and choose Ready for review. The next lesson learns the three pan
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Making the page fast enough
+What I am trying to do: Measure your page's weight and time to usable on a slow connection, make three changes, and report the before-and-after with the conditions stated.
+
+Key idea or terms:
+Conditions: Throttling profile, cache setting, device and browser. A number without them cannot be compared with anything, including your own later number.
+Blocking resource: Something the browser waits for before drawing anything. Stylesheets and scripts in the head usually do, and they are often the whole delay.
+Time to usable: When the person could act, not when loading finished. It needs you to say what usable meant on this page.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Measuring a tool-library page, and starting after the easy win was already in. Noticed the header photograph was enormous, fixed it, and then sat down to take a baseline. It seemed sensible to measure a page that was not obviously broken.
+
+Activity: Ask me to predict what one small change to the supplied page will do before explaining it. Then ask for the visible result, the browser check and one recovery step if it fails.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The conditions: throttling profile, cache setting, device and browser” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The conditions: throttling profile, cache setting, device and browser”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The conditions: throttling profile, cache setting, device and browser” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Re-run the load with the cache disabled and a slow profile and record all three figures.
@@ -6493,7 +6925,7 @@ Adequate evidence: A change that would improve a metric while harming the experi
 Repair: Ask which optimisation would make a number better and the page worse; deferring essential content is the usual candidate. Recheck: The rejection note.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson learns the three panels that have been answering your questions all module.
 
@@ -6531,58 +6963,72 @@ Starting route: Recommended route: Build three written diagnoses of problems in 
 - A record of one hypothesis that turned out to be wrong
 - Fixes made after the diagnosis, not before
 
-### Start with a clear task
+### Start here: in everyday words
+
+Web foundations explain how a browser turns structure, style and behavior into a page that must work at different sizes. In this lesson, your first small result is: The three panels named with the kind of question each one answers.
+
+**Words you will use**
+
+- **Inspector:** Select an element and see every rule affecting it, with the losers struck through. It answers why something looks the way it does.
+- **Console:** Where errors appear in red, usually with the file and line number. A page can look perfectly fine and be failing here silently.
+- **Network panel:** Every request the page made, with its status and size. It answers why something is missing, wrong or slow.
+
+**Quick example.** Made-up example. Diagnosing a card that is wider than its container on a tool-library page, and guessing three times first. Guessed. Changed the width, reloaded. Changed the margin, reloaded. Removed a rule I suspected, reloaded. Twenty minutes, three changes, no improvement, and a stylesheet now slightly worse than it started.
+
+The reader demonstrates and guides the task before asking for “The three panels, and the kind of question each one answers”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Diagnose three problems in your own page using the element inspector, the console and the network panel, writing the cause before making any fix.
 
 
-### Understand the idea · 1
+### Idea 1: The inspector shows the real applied styles and which rules we…
 
 Section: learn. Stable action: learn-1.
 
 The inspector shows the real applied styles and which rules were overridden.
 
 
-### Understand the idea · 2
+### The console shows errors; a page can look fine and be failing quietly
 
 Section: learn. Stable action: learn-2.
 
 The console shows errors; a page can look fine and be failing quietly.
 
 
-### Understand the idea · 3
+### The network panel shows what was requested and what came back
 
 Section: learn. Stable action: learn-3.
 
 The network panel shows what was requested and what came back.
 
 
-### Understand the idea · 4
+### Diagnose before you change: write the cause, then the fix
 
 Section: learn. Stable action: learn-4.
 
 Diagnose before you change: write the cause, then the fix.
 
 
-### Understand the idea · 5
+### Reproduce first — a problem you cannot reproduce is not yet understood
 
 Section: learn. Stable action: learn-5.
 
 Reproduce first — a problem you cannot reproduce is not yet understood.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Three problems diagnosed. The card was wider than its container: the inspector showed padding being added to a set width — cause written, then fixed with box sizing. The filter did nothing on one screen: the console showed a script error on a line that assumed an element existed — cause written, then fixed with a guard. An icon was missing on the phone but not the laptop: the network panel showed a 404 for a file whose name differed by case, which matters on the server and not on the local machine. Each cause was written before the fix, and one initial hypothesis turned out to be wrong.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7136,6 +7582,40 @@ Open Your work and choose Ready for review. The next lesson puts everything from
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Finding out what is actually happening
+What I am trying to do: Diagnose three problems in your own page using the element inspector, the console and the network panel, writing the cause before making any fix.
+
+Key idea or terms:
+Inspector: Select an element and see every rule affecting it, with the losers struck through. It answers why something looks the way it does.
+Console: Where errors appear in red, usually with the file and line number. A page can look perfectly fine and be failing here silently.
+Network panel: Every request the page made, with its status and size. It answers why something is missing, wrong or slow.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Diagnosing a card that is wider than its container on a tool-library page, and guessing three times first. Guessed. Changed the width, reloaded. Changed the margin, reloaded. Removed a rule I suspected, reloaded. Twenty minutes, three changes, no improvement, and a stylesheet now slightly worse than it started.
+
+Activity: Ask me to predict what one small change to the supplied page will do before explaining it. Then ask for the visible result, the browser check and one recovery step if it fails.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “The three panels, and the kind of question each one answers” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “The three panels, and the kind of question each one answers”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The three panels, and the kind of question each one answers” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Pick one problem of each kind and use the matching panel to find the cause.
@@ -7205,7 +7685,7 @@ Adequate evidence: At least one initial explanation that turned out to be wrong,
 Repair: Look back at the problems: your first idea was probably wrong at least once. Record it. Recheck: The hypothesis record.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The next lesson puts everything from this module together and runs it on a real phone.
 
@@ -7243,58 +7723,72 @@ Starting route: Recommended route: Build the whole prototype, assembled from eve
 - Re-run checks on the assembled result
 - A real-phone test with findings, and an updated fakes sheet
 
-### Start with a clear task
+### Start here: in everyday words
+
+Web foundations explain how a browser turns structure, style and behavior into a page that must work at different sizes. In this lesson, your first small result is: The pages assembled with shared styling and navigation, every contradiction recorded, and the inventory updated.
+
+**Words you will use**
+
+- **Assembly:** Putting separately built pages into one thing. It is where contradictions surface, because two pages built a fortnight apart are always slightly two different products.
+- **Contradiction:** Two answers to one question: two spacing rhythms, two card treatments, two words for one action. Each has to be decided rather than averaged.
+- **Passing separately:** Every page being fine on its own. It is not the same as the assembled thing being fine, because the shared parts are new.
+
+**Quick example.** Made-up example. Assembling four tool-library pages, and treating the contradictions as tidying. Three contradictions. Two spacing rhythms, two card treatments, and the same action called Reserve on one page and Book on another.
+
+The reader demonstrates and guides the task before asking for “Which pages you assembled, and how they share styling and navigation”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Assemble your pages into one working responsive prototype with real data, accessible structure and measured performance, and test it on a real phone.
 
 
-### Understand the idea · 1
+### Idea 1: Assembly finds the contradictions: two stylesheets, two patter…
 
 Section: learn. Stable action: learn-1.
 
 Assembly finds the contradictions: two stylesheets, two patterns, two vocabularies.
 
 
-### Understand the idea · 2
+### Idea 2: Re-run every check on the assembled thing; passing separately…
 
 Section: learn. Stable action: learn-2.
 
 Re-run every check on the assembled thing; passing separately is not passing.
 
 
-### Understand the idea · 3
+### Test on a real phone, not only an emulated viewport
 
 Section: learn. Stable action: learn-3.
 
 Test on a real phone, not only an emulated viewport.
 
 
-### Understand the idea · 4
+### Record what is faked, exactly as in m10
 
 Section: learn. Stable action: learn-4.
 
 Record what is faked, exactly as in m10.
 
 
-### Understand the idea · 5
+### A running prototype is not a product; say so wherever you show it
 
 Section: learn. Stable action: learn-5.
 
 A running prototype is not a product; say so wherever you show it.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - Four pages were assembled. Three contradictions appeared: two spacing rhythms, two card treatments and two different words for the same action. Each was reconciled and the inventory updated. Re-running the checks found a heading outline broken by the shared header and one contrast failure on a component now sitting on a tinted panel. Ten minutes on a real phone found two more: the sticky action bar sat under the on-screen keyboard, and the tap target for the date was comfortable with a mouse and not with a thumb. The fakes sheet recorded invented data, a faked payment and a search box that does nothing.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -7851,6 +8345,40 @@ Open Your work and choose Ready for review. The last lesson of the module turns 
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: The whole thing, running
+What I am trying to do: Assemble your pages into one working responsive prototype with real data, accessible structure and measured performance, and test it on a real phone.
+
+Key idea or terms:
+Assembly: Putting separately built pages into one thing. It is where contradictions surface, because two pages built a fortnight apart are always slightly two different products.
+Contradiction: Two answers to one question: two spacing rhythms, two card treatments, two words for one action. Each has to be decided rather than averaged.
+Passing separately: Every page being fine on its own. It is not the same as the assembled thing being fine, because the shared parts are new.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Assembling four tool-library pages, and treating the contradictions as tidying. Three contradictions. Two spacing rhythms, two card treatments, and the same action called Reserve on one page and Book on another.
+
+Activity: Ask me to predict what one small change to the supplied page will do before explaining it. Then ask for the visible result, the browser check and one recovery step if it fails.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “Which pages you assembled, and how they share styling and navigation” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “Which pages you assembled, and how they share styling and navigation”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Which pages you assembled, and how they share styling and navigation” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Walk the main task and connect whatever is missing, including one failure route.
@@ -7920,7 +8448,7 @@ Adequate evidence: Findings from a real device and a current list of everything 
 Repair: Open the prototype on your phone, complete a task by thumb, and update the fakes sheet afterwards. Recheck: The phone findings and fakes sheet.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. The last lesson of the module turns all of this into a conversation with an engineer.
 
@@ -7958,58 +8486,72 @@ Starting route: Recommended route: Build a technical handover document for one f
 - The fakes sheet attached and declared
 - A written record of what you now understand
 
-### Start with a clear task
+### Start here: in everyday words
+
+Web foundations explain how a browser turns structure, style and behavior into a page that must work at different sizes. In this lesson, your first small result is: One document covering flow, states, key tables, responsive rules and accessibility notes, with exact wording and a tested-versus-specified split.
+
+**Words you will use**
+
+- **Handover:** A document somebody could build from. Behaviour and states, not only appearance, because appearance is the part screenshots already carry.
+- **Exact wording:** The messages written as text in the document. Wording that exists only inside a picture gets retyped, and retyped wording drifts.
+- **A cost-shaped question:** One that asks what something would take, or what it forecloses. “Is this possible?” is almost always yes, which is why it tells you nothing.
+
+**Quick example.** Made-up example. Handing over a tool-library booking feature, and handing over the part that was easiest to export. Twelve screens, annotated, with spacing and colours marked. It took an afternoon to prepare and it looked thorough.
+
+The reader demonstrates and guides the task before asking for “What the document contains, section by section”.
+
+### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
 Write a technical handover for one feature, ask three precise questions an engineer would find useful, and record what you now understand that you did not before this module.
 
 
-### Understand the idea · 1
+### Hand over behaviour and states, not only appearance
 
 Section: learn. Stable action: learn-1.
 
 Hand over behaviour and states, not only appearance.
 
 
-### Understand the idea · 2
+### Ask about constraints and cost, not just feasibility
 
 Section: learn. Stable action: learn-2.
 
 Ask about constraints and cost, not just feasibility.
 
 
-### Understand the idea · 3
+### “Is this possible
 
 Section: learn. Stable action: learn-3.
 
 “Is this possible?” is almost always yes; ask what it would cost.
 
 
-### Understand the idea · 4
+### Name what your prototype fakes so nobody plans around it
 
 Section: learn. Stable action: learn-4.
 
 Name what your prototype fakes so nobody plans around it.
 
 
-### Understand the idea · 5
+### Record what you learned, including where you were previously wrong
 
 Section: learn. Stable action: learn-5.
 
 Record what you learned, including where you were previously wrong.
 
 
-### Connect the idea to an example
+### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
-Illustrative teaching example. This is not research you conducted or evidence about your own design.
+Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
 - The handover for the booking feature ran to three pages: the flow with its states, the component specifications with their key tables, the four data branches with their wording, the responsive behaviour rules, and the accessibility notes with what had been tested and what had not. Three questions were asked: what would it cost to keep the held-place timer accurate across devices, what does the current data shape make expensive to change later, and which of these states will need server work rather than front-end work. The fakes sheet was attached. The reflection recorded three things learned, including that a change she had previously been told was trivial turned out to be structural, and one where the opposite was true.
 
 
-### Get your practice ready
+### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
@@ -8565,6 +9107,40 @@ Open Your work and choose Ready for review. This closes Module 12. Module 13 tur
 
 
 <details>
+<summary>Optional: learn with an AI app</summary>
+
+Optional learning activity: use a text-based AI chat to hear the idea another way and practise it through questions.
+
+- Open any text-based AI chat you already use. A free option is enough; do not start a trial or upgrade for this activity.
+- Start a new chat, copy the whole prompt below and paste it into the message box. Then send it.
+- Answer in your own words. Do not paste names, account details, private participant notes or confidential work. Stop after the short activity and return to the named course answer.
+
+```text
+I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
+
+Lesson: Talking to engineers about what you built
+What I am trying to do: Write a technical handover for one feature, ask three precise questions an engineer would find useful, and record what you now understand that you did not before this module.
+
+Key idea or terms:
+Handover: A document somebody could build from. Behaviour and states, not only appearance, because appearance is the part screenshots already carry.
+Exact wording: The messages written as text in the document. Wording that exists only inside a picture gets retyped, and retyped wording drifts.
+A cost-shaped question: One that asks what something would take, or what it forecloses. “Is this possible?” is almost always yes, which is why it tells you nothing.
+
+Supplied practice material (fictional or labelled practice, not my research):
+Made-up example. Handing over a tool-library booking feature, and handing over the part that was easiest to export. Twelve screens, annotated, with spacing and colours marked. It took an afternoon to prepare and it looked thorough.
+
+Activity: Ask me to predict what one small change to the supplied page will do before explaining it. Then ask for the visible result, the browser check and one recovery step if it fails.
+
+Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
+When the activity is finished, tell me to return to the course answer called “What the document contains, section by section” and write my own decision. Do not write that answer for me.
+```
+
+**Come back to the course:** Return to “What the document contains, section by section”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What the document contains, section by section” and write one sentence in your own words.
+
+</details>
+<details>
 <summary>Optional hints and reference material</summary>
 
 - Collect your existing specifications into one file; most of the content already exists.
@@ -8634,7 +9210,7 @@ Adequate evidence: Three learnings, at least one correcting a previous belief.
 Repair: Think back over the module for a moment where a build contradicted your expectation, and write it. Recheck: The reflection.
 
 </details>
-Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.
+The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This closes Module 12. Module 13 turns the components you built into a system somebody else could use.
 

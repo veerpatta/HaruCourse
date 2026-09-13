@@ -48,10 +48,13 @@ export function withLessonActions(input: Lesson): Lesson {
  // The action route replaces the earlier optional-code invitation before web foundations.
  const l:Lesson={...input,apprenticeship:a,actionPlan:plan,freeToolPath:plan.start,
    ...(input.id==='week2-day2-v1'?{prerequisite:'Bring consented notes, or use the six explicitly simulated notes in this lesson.'}:{})};
- const flow:LessonAction[]=[{id:'welcome',section:'learn',step:1,kind:'intro',title:'Start with a clear task',instruction:input.objective || a.mission}];
- input.teach.forEach((text,index)=>flow.push({id:`learn-${index+1}`,section:'learn',step:1,kind:'teach',index,title:`Understand the idea · ${index+1}`,instruction:text}));
- flow.push({id:'worked-example',section:'learn',step:1,kind:'teach',title:'Connect the idea to an example',instruction:'Illustrative teaching example. This is not research you conducted or evidence about your own design.',body:[input.example]});
- flow.push({id:'workspace',section:'learn',step:1,kind:'setup',title:'Get your practice ready',instruction:plan.start,body:['Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.']});
+ const number=input.id.startsWith('week1-')?1:input.id.startsWith('week2-')?2:Number(input.module?.slice(1));
+ const beginner=Number.isFinite(number)&&number>=1&&number<=20;
+ const shortTitle=(text:string,index:number)=>{const first=text.replace(/\s+/g,' ').split(/[.!?]/)[0].trim();return first.length<=72?first:`Idea ${index+1}: ${first.slice(0,62).trim()}…`;};
+ const flow:LessonAction[]=[{id:'welcome',section:'learn',step:1,kind:'intro',title:beginner?'What this lesson will help you do':'Start with a clear task',instruction:beginner?(a.mission || input.objective || input.why):(input.objective || a.mission)}];
+ input.teach.forEach((text,index)=>flow.push({id:`learn-${index+1}`,section:'learn',step:1,kind:'teach',index,title:beginner?shortTitle(text,index):`Understand the idea · ${index+1}`,instruction:text}));
+ flow.push({id:'worked-example',section:'learn',step:1,kind:'teach',title:beginner?'See the idea in a supplied example':'Connect the idea to an example',instruction:beginner?'Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.':'Illustrative teaching example. This is not research you conducted or evidence about your own design.',body:[input.example]});
+ flow.push({id:'workspace',section:'learn',step:1,kind:'setup',title:beginner?'Choose where you will do the work':'Get your practice ready',instruction:plan.start,body:['Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.']});
  if(plan.material)flow.push({id:'supplied-material',section:'learn',step:1,kind:'teach',title:'Keep these source notes beside you',instruction:'Use your own consented notes, or the labelled training notes below. Do not mix their source labels.',body:plan.material});
  const fields=a.worksheet!.flatMap(s=>s.fields);
  function step(index:number,section:LessonAction['section']) {

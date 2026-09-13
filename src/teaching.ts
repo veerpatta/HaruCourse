@@ -123,6 +123,12 @@ export type Apprenticeship = {
   adequate: string;
   handoff: string;
   ai?: { purpose: string; setup: string[]; prompt: string; followUp: string; alternative: string };
+  beginner?: {
+    plain: string;
+    terms: { term: string; meaning: string }[];
+    example: string;
+    returnLabel: string;
+  };
   visual?: boolean;
   // Present only on lessons refined under docs/LEARNING-EXPERIENCE-PLAN.md.
   route?: { recommended: string; alternative: string };
