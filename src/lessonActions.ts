@@ -1,6 +1,6 @@
 import type { Lesson, WorksheetField } from './teaching';
 import type { LessonAction } from './lessonOneFlow';
-import { actionPlans } from './moduleActionPlans';
+import { actionPlans, type ActionPlan } from './moduleActionPlans';
 
 const conditional: Record<string, {field:string; value:string; answers:string[]}[]> = {
  'week1-day3-v1': [{field:'session-status',value:'Real conversation with a consenting adult',answers:['observations','interpretations']}],
@@ -10,8 +10,29 @@ const conditional: Record<string, {field:string; value:string; answers:string[]}
  'm05-l08-v1': [{field:'run-status',value:'No participant: protocol submitted with a dated gap',answers:['gap-note']}],
 };
 
+function laterModulePlan(input: Lesson): ActionPlan | undefined {
+ const moduleNumber=Number(input.module?.slice(1));
+ const a=input.apprenticeship;
+ if(!Number.isFinite(moduleNumber) || moduleNumber<6 || !a?.route || a.guide?.length!==5 || a.checks?.length!==3)return undefined;
+ const repairs=a.checks.map(check=>{
+  const steps=[...new Set([...check.repair.matchAll(/step\s+(\d)/gi)].map(match=>Number(match[1])))];
+  const ids=steps.flatMap(step=>{
+   const fields=a.guide?.[step-1]?.fields || [];
+   // When a check names an earlier answer and step 5 only as the change log,
+   // keep the repair editor on the answer plus the single improvement record.
+   if(step===5 && steps.some(value=>value!==5))return fields.filter(id=>id==='improvement-made');
+   return fields;
+  });
+  return [...new Set(ids)];
+ }) as ActionPlan['repairs'];
+ return {
+  start:`Recommended route: ${a.route.recommended} Alternative route: ${a.route.alternative}`,
+  repairs,
+ };
+}
+
 export function withLessonActions(input: Lesson): Lesson {
- const plan = actionPlans[input.id];
+ const plan = actionPlans[input.id] || laterModulePlan(input);
  if (!plan) return input; // Lesson 1's permanent action IDs remain untouched.
  const field = (f: WorksheetField): WorksheetField => {
    const rule=conditional[input.id]?.find(c=>c.answers.includes(f.id));

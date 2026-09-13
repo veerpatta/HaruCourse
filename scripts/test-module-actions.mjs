@@ -6,7 +6,7 @@ const {baselineLesson}=await import('../src/course.ts');
 const {actionQuestion,fieldRequired}=await import('../src/lessonActions.ts');
 const {finishProblems,lessonWorkProgress,prepareRecord}=await import('../shared/learning.ts');
 const {recordSchema,worksheetFieldId}=await import('../shared/record.ts');
-export const targets=publishedLessons.filter(l=>(l.week||1)<=5);
+export const targets=publishedLessons;
 export function completeFor(l){
  const fields=l.apprenticeship.worksheet.flatMap(s=>s.fields);
  const r={version:1,notes:'QA sample reflection',submission:'QA paper folder',minutes:0,status:'practicing',updatedAt:'',worksheet:Object.fromEntries(fields.map(f=>[f.id,f.options?.at(-1)||'QA: a bounded answer with source and limitation.'])),learning:{action:'review-work',completed:l.flow.map(a=>a.id),answers:{}}};
@@ -14,7 +14,7 @@ export function completeFor(l){
  for(const a of l.flow){const q=actionQuestion(l,a);if(q)r.learning.answers[q.id]={value:q.options.at(-1).label,shown:true};}
  return r;
 }
-assert.equal(targets.length,43);assert.equal(publishedLessons.filter(l=>l.flow).length,43);assert.equal(baselineLesson.flow,undefined);
+assert.equal(targets.length,224);assert.equal(publishedLessons.filter(l=>l.flow).length,224);assert.equal(baselineLesson.flow,undefined);
 let fieldCount=0,actionCount=0,questionCount=0;
 for(const l of targets){
  assert.equal(lessonWorkProgress(l,{version:1,notes:'',submission:'',minutes:0,status:'not-started',updatedAt:''}).percent,0,l.id+' empty optional fields must not create progress');
@@ -23,9 +23,12 @@ for(const l of targets){
  assert.deepEqual(l.flow.filter(a=>a.kind==='field').map(a=>a.field).sort(),fields.map(f=>f.id).sort(),l.id+' every field exactly once');
  for(const a of l.flow){assert.ok(worksheetFieldId.safeParse(a.id).success,l.id+': '+a.id);assert.ok(a.step>=1&&a.step<=5);assert.ok(a.title&&a.instruction);for(const id of a.repairFields||[])assert.ok(fields.some(f=>f.id===id),l.id+' repair '+id);}
  if(l.actionPlan){
+  assert.equal(l.actionPlan.repairs.length,3,l.id+' three check repairs');
+  assert.ok(l.actionPlan.start.includes('route') || (l.week||0)<=5,l.id+' lesson-specific route');
   assert.equal(l.flow.filter(a=>a.kind==='demo').length,l.apprenticeship.guide.filter(g=>g.demo).length,l.id+' demonstrations retained');
   assert.equal(l.flow.filter(a=>a.kind==='supported').length,l.apprenticeship.guide.filter(g=>g.supported).length,l.id+' supported attempts retained');
   assert.ok(l.flow.some(a=>a.kind==='supported'||a.kind==='sort'));
+  for(const a of l.flow.filter(a=>a.kind==='check'))assert.ok(a.repairFields?.length,l.id+' check has an editable repair target');
  }
  const r=completeFor(l);questionCount+=Object.keys(r.learning.answers).length;
  assert.ok(recordSchema.safeParse(r).success,l.id+' bounded record');

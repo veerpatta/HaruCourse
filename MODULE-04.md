@@ -1,6 +1,6 @@
 # UX reasoning and product value
 
-> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Follow [the small-action teaching and tracking standard](docs/COURSE-AUTHORING.md#small-action-and-tracking-contract--12-september-2026). All 43 lessons in Modules 1–5 use saved action flows. Published, teaching-refined, learner-validated and assessed remain separate states.
+> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Follow [the all-course action contract](docs/COURSE-AUTHORING.md#all-course-action-contract--13-september-2026). All 224 published teaching lessons use saved action flows. Published, teaching-refined, learner-validated and assessed remain separate states.
 
 Generated from src/module4.ts; edit that source, then run npm run docs:generate. Level 1 · Module m04 · requirement areas 2, 3. Optional effort 16 hours across 8 lessons, which is the sum of the lesson steps themselves. No deadlines; split any lesson across sessions and return to it without penalty.
 
@@ -547,8 +547,6 @@ Your answers and exact action save to this device first, then online. Formative 
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
-
-
 
 [NN/g: mental models](https://www.nngroup.com/articles/mental-models/).
 
@@ -1108,8 +1106,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [NN/g: recognition and recall](https://www.nngroup.com/articles/recognition-and-recall/).
 
 </details>
@@ -1659,8 +1655,6 @@ Your answers and exact action save to this device first, then online. Formative 
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
-
-
 
 [NN/g: preventing user errors](https://www.nngroup.com/articles/user-mistakes/).
 
@@ -2233,8 +2227,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [NN/g: preventing user errors](https://www.nngroup.com/articles/user-mistakes/).
 
 </details>
@@ -2784,8 +2776,6 @@ Your answers and exact action save to this device first, then online. Formative 
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
-
-
 
 [Laws of UX](https://lawsofux.com/).
 
@@ -3384,8 +3374,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [GOV.UK: start by learning user needs](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs).
 
 </details>
@@ -3926,8 +3914,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [GOV.UK: how discovery works](https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works).
 
 </details>
@@ -4453,8 +4439,6 @@ Your answers and exact action save to this device first, then online. Formative 
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
-
-
 
 [GOV.UK: how the alpha phase works](https://www.gov.uk/service-manual/agile-delivery/how-the-alpha-phase-works).
 

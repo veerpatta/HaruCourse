@@ -1,6 +1,6 @@
 # Visual foundations refresh
 
-> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Follow [the small-action teaching and tracking standard](docs/COURSE-AUTHORING.md#small-action-and-tracking-contract--12-september-2026). All 43 lessons in Modules 1–5 use saved action flows. Published, teaching-refined, learner-validated and assessed remain separate states.
+> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Follow [the all-course action contract](docs/COURSE-AUTHORING.md#all-course-action-contract--13-september-2026). All 224 published teaching lessons use saved action flows. Published, teaching-refined, learner-validated and assessed remain separate states.
 
 Generated from src/module3.ts; edit that source, then run npm run docs:generate. Level 1 · Module m03 · requirement areas 1, 8. Optional effort 20 hours across 10 lessons, which is the sum of the lesson steps themselves. No deadlines; split any lesson across sessions and return to it without penalty.
 
@@ -590,8 +590,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [web.dev: typography](https://web.dev/learn/design/typography).
 
 </details>
@@ -1155,8 +1153,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [web.dev: typography](https://web.dev/learn/design/typography). [Web Accessibility Perspectives: Customizable Text](https://www.w3.org/WAI/perspective-videos/customizable/). No video needed: set your longest real line, then reread it with the text one step larger and note what collides. The point is the same and paper can make it.
 
 </details>
@@ -1718,8 +1714,6 @@ Your answers and exact action save to this device first, then online. Formative 
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
-
-
 
 [web.dev: colour and contrast](https://web.dev/learn/accessibility/color-contrast).
 
@@ -2286,8 +2280,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [W3C: understanding contrast (minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html). [Web Accessibility Perspectives: Colors with Good Contrast](https://www.w3.org/WAI/perspective-videos/contrast/). No video needed: the assigned thresholds page says the same in text. List the coloured elements first, then measure.
 
 </details>
@@ -2835,8 +2827,6 @@ Your answers and exact action save to this device first, then online. Formative 
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
-
-
 
 [Laws of UX](https://lawsofux.com/).
 
@@ -3402,8 +3392,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [GOV.UK Design System: styles](https://design-system.service.gov.uk/styles/).
 
 </details>
@@ -3960,8 +3948,6 @@ Your answers and exact action save to this device first, then online. Formative 
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
-
-
 
 [web.dev: learn responsive design](https://web.dev/learn/design/).
 
@@ -4567,8 +4553,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [GOV.UK Design System: styles](https://design-system.service.gov.uk/styles/).
 
 </details>
@@ -5157,8 +5141,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [GOV.UK Design System: styles](https://design-system.service.gov.uk/styles/).
 
 </details>
@@ -5689,8 +5671,6 @@ Your answers and exact action save to this device first, then online. Formative 
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
-
-
 
 [Nielsen: ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/).
 

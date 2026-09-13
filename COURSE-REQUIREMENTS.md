@@ -1,6 +1,10 @@
-## Approved expansion — Modules 1–5, 12 September 2026
+## Approved all-course action expansion — 13 September 2026
 
-The creator explicitly approved extending the Lesson 1 action pattern across the first five modules and publishing it. This supersedes the earlier wait-before-expansion instruction for these modules. All 43 lessons now have saved action flows, lesson-specific starting routes and linked answer repairs; all 616 worksheet field IDs are preserved. Modules 6–20 retain their previous teaching. Learner observation and formal assessment remain separate and unclaimed. Follow the current contract and [Modules 1–5 verification](docs/VERIFICATION-MODULE-ACTIONS.md).
+The creator explicitly approved continuing the saved-action pattern from Module 6 through Module 20. All 224 published teaching lessons now use the saved Learn → Do → Check → Your work action reader while retaining the authored teaching, routes, demonstrations, checks and all 2,866 worksheet field IDs. The later-module plans are derived from each lesson's own recommended/alternative route and its check instructions; every Check links back to the worksheet step it names. Publication, learner observation and formal assessment remain separate and must be reported honestly. Follow the current contract and [all-course action verification](docs/VERIFICATION-ALL-ACTIONS.md).
+
+## Previous approved expansion — Modules 1–5, 12 September 2026
+
+The creator explicitly approved extending the Lesson 1 action pattern across the first five modules and publishing it. This superseded the earlier wait-before-expansion instruction for these modules. All 43 lessons received saved action flows, lesson-specific starting routes and linked answer repairs; all 616 worksheet field IDs were preserved. Learner observation and formal assessment remained separate and unclaimed. Historical evidence stays in [Modules 1–5 verification](docs/VERIFICATION-MODULE-ACTIONS.md).
 
 ## Previous Lesson 1 release — small actions and honest progress, 12 September 2026
 

@@ -1,6 +1,6 @@
 # Research methods and synthesis
 
-> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Follow [the small-action teaching and tracking standard](docs/COURSE-AUTHORING.md#small-action-and-tracking-contract--12-september-2026). All 43 lessons in Modules 1–5 use saved action flows. Published, teaching-refined, learner-validated and assessed remain separate states.
+> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Follow [the all-course action contract](docs/COURSE-AUTHORING.md#all-course-action-contract--13-september-2026). All 224 published teaching lessons use saved action flows. Published, teaching-refined, learner-validated and assessed remain separate states.
 
 Generated from src/module5.ts; edit that source, then run npm run docs:generate. Level 2 · Module m05 · requirement areas 4. Optional effort 45 hours across 13 lessons: 26 hours of lesson steps, and the remainder for the fieldwork, waiting, recruitment and iteration this module's output needs outside them. No deadlines; split any lesson across sessions and return to it without penalty.
 
@@ -542,8 +542,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [GOV.UK: capturing research questions](https://www.gov.uk/service-manual/user-research/capturing-research-questions).
 
 </details>
@@ -1069,8 +1067,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [GOV.UK: user research manual](https://www.gov.uk/service-manual/user-research).
 
 </details>
@@ -1583,8 +1579,6 @@ Your answers and exact action save to this device first, then online. Formative 
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
-
-
 
 [NN/g: competitive usability evaluations](https://www.nngroup.com/articles/competitive-usability-evaluations/).
 
@@ -2146,8 +2140,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [GOV.UK: finding user research participants](https://www.gov.uk/service-manual/user-research/find-user-research-participants).
 
 </details>
@@ -2651,8 +2643,6 @@ Your answers and exact action save to this device first, then online. Formative 
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
-
-
 
 [GOV.UK: getting informed consent](https://www.gov.uk/service-manual/user-research/getting-users-consent-for-research).
 
@@ -3216,8 +3206,6 @@ Your answers and exact action save to this device first, then online. Formative 
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
-
-
 
 [GOV.UK: in-depth interviews](https://www.gov.uk/service-manual/user-research/using-in-depth-interviews).
 
@@ -3786,8 +3774,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [GOV.UK: contextual research and observation](https://www.gov.uk/service-manual/user-research/contextual-research-and-observation).
 
 </details>
@@ -4327,8 +4313,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [NN/g: diary studies](https://www.nngroup.com/articles/diary-studies/).
 
 </details>
@@ -4865,8 +4849,6 @@ Your answers and exact action save to this device first, then online. Formative 
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
-
-
 
 [NN/g: writing good survey questions](https://www.nngroup.com/articles/survey-best-practices/).
 
@@ -5407,8 +5389,6 @@ Your answers and exact action save to this device first, then online. Formative 
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
-
-
 
 [GOV.UK: analyse a research session](https://www.gov.uk/service-manual/user-research/analyse-a-research-session).
 
@@ -5961,8 +5941,6 @@ Your answers and exact action save to this device first, then online. Formative 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-
-
 [NN/g: personas versus jobs-to-be-done](https://www.nngroup.com/articles/personas-jobs-be-done/).
 
 </details>
@@ -6489,8 +6467,6 @@ Your answers and exact action save to this device first, then online. Formative 
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
-
-
 
 [GOV.UK: creating an experience map](https://www.gov.uk/service-manual/user-research/creating-an-experience-map).
 
@@ -7020,8 +6996,6 @@ Your answers and exact action save to this device first, then online. Formative 
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
-
-
 
 [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings).
 

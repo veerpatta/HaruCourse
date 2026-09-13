@@ -140,7 +140,7 @@ const catalog = [
 function output(path, text) {
   // Keep generated course views connected to the plan without rewriting teaching.
   const titleEnd = text.indexOf("\n");
-  const planNote = "\n\n> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Follow [the small-action teaching and tracking standard](docs/COURSE-AUTHORING.md#small-action-and-tracking-contract--12-september-2026). All 43 lessons in Modules 1–5 use saved action flows. Published, teaching-refined, learner-validated and assessed remain separate states.";
+  const planNote = "\n\n> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Follow [the all-course action contract](docs/COURSE-AUTHORING.md#all-course-action-contract--13-september-2026). All 224 published teaching lessons use saved action flows. Published, teaching-refined, learner-validated and assessed remain separate states.";
   text = text.slice(0, titleEnd) + planNote + text.slice(titleEnd);
   if (/^(WEEK-0[12]|MODULE-0[345])\.md$/.test(path)) text=text.replace(/[ \t]+$/gm,'');
   if (process.argv.includes("--check"))
@@ -225,6 +225,7 @@ function activityDoc(l) {
 }
 function flowDoc(l) {
   const a=l.apprenticeship, fields=a.worksheet.flatMap(s=>s.fields);
+  const reading=[list(l.explanation),`[${l.resource.title}](${l.resource.url}).${a.video ? ` [${a.video.title}](${a.video.url}). ${a.video.written}` : ''}`].filter(Boolean).join('\n\n');
   const parts=l.flow.map(action=>{
     if(action.kind==='check' && !action.repairFields) action={...action,repairFields:action.index===0?['user-goal']:[1,2,3,4,5].flatMap(n=>[`entry-${n}-label`,`entry-${n}-check`])};
     const f=fields.find(f=>f.id===action.field);
@@ -240,7 +241,7 @@ function flowDoc(l) {
   });
   parts.push(details('Optional hints and reference material',list(a.hints)+'\n\n'+(l.resources || []).map(r=>`- ${r.id}: [${r.title}](${r.url}) — ${r.section} Purpose: ${r.purpose} ${r.limits} Fallback: ${r.fallbackId}.`).join('\n')));
   if(l.criteria?.length) parts.push(details('Creator review and remediation criteria',l.criteria.map(c=>`**${c.criterion}**\n\nAdequate evidence: ${c.evidence}\n\n${c.levels.map((t,i)=>`${i} — ${t}`).join('\n\n')}\n\nRepair: ${c.remediation} Recheck: ${c.recheck}`).join('\n\n')));
-  return '## Lesson '+l.day+': '+l.title+'\n\nStable ID: '+l.id+'. '+(l.optional?'Optional.':'Core.')+'\n\n'+l.why+'\n\nBring: '+l.prerequisite+'\n\n'+(l.actionPlan?'Starting route: '+l.actionPlan.start+'\n\n':'')+list(l.outputs)+'\n\n'+parts.join('\n')+'\nYour answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.\n\n**Keep for later:** '+(a.saveRoute?.next || a.handoff)+'\n\n**Review criteria:**\n\n'+list(l.rubric)+'\n\n'+details('Reading, video and deeper explanation',list(l.explanation)+'\n\n['+l.resource.title+']('+l.resource.url+'). '+(a.video ? '['+a.video.title+']('+a.video.url+'). '+a.video.written : ''))+'\n';
+  return '## Lesson '+l.day+': '+l.title+'\n\nStable ID: '+l.id+'. '+(l.optional?'Optional.':'Core.')+'\n\n'+l.why+'\n\nBring: '+l.prerequisite+'\n\n'+(l.actionPlan?'Starting route: '+l.actionPlan.start+'\n\n':'')+list(l.outputs)+'\n\n'+parts.join('\n')+'\nYour answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. Active course time records automatically; add external work time manually.\n\n**Keep for later:** '+(a.saveRoute?.next || a.handoff)+'\n\n**Review criteria:**\n\n'+list(l.rubric)+'\n\n'+details('Reading, video and deeper explanation',reading)+'\n';
 }
 function lessonDoc(l) {
   if(l.flow) return flowDoc(l);
