@@ -1,3 +1,15 @@
+# Mobile PWA experience optimized — 13 September 2026
+
+The installed course now behaves like a focused phone app. A compact branded header keeps connection and Account status visible, the safe-area aware bottom bar keeps Learn, Course map and My work within thumb reach, and all fixed or sticky layers account for the phone header, browser insets and keyboard focus. Learn and My work use concise progress summaries and scannable lesson cards; the current lesson, save state, timer, four learning stages and current action now fit into a clear hierarchy without making the learner read the full lesson introduction first. Account can use the browser's native install prompt when available and otherwise gives device-neutral Add to Home Screen steps.
+
+Progress language continues to count only lesson practice the learner explicitly finishes. Lesson action progress says how many required answers are saved and that it is not a score. Time, review and practice completion remain separate. All lesson IDs, record version 1, saved records and 2,866 worksheet field IDs are unchanged.
+
+The production build now caches Modules 3–20 as stable per-module chunks. The main entry fell from 5,744.90 kB / 1,627.76 kB gzip to 3,877.73 kB / 1,093.11 kB gzip, about one third smaller. The complete 5.67 MB precache remains available offline; the split improves the largest mobile parse unit and prevents an unchanged module from being folded into every UI-only update.
+
+Local validation covered 320, 390 and 430 px phone widths with no horizontal overflow or visible control below 44 × 44 px. A test answer saved online, increased lesson work from 4 to 5 actions, survived reload at the same action, and returned to 4 when the temporary answer was removed. Focusing the field released sticky controls so a mobile keyboard does not cover it. The service worker reopened the course under network-offline emulation, the Update now flow loaded the split build, the My work home-screen shortcut opened the correct tab, and the corrected browser console had no errors. Full automated checks, release evidence and remaining physical-device boundaries are in [the mobile PWA verification](docs/VERIFICATION-MOBILE-PWA.md).
+
+Release is pending the final production deployment and hosted test-account smoke pass.
+
 # Beginner teaching implemented across all 224 lessons — 13 September 2026
 
 At the creator's request, every published teaching lesson from Lesson 1 through Module 20 now uses the new beginner-comprehension layer: 224 lessons in prerequisite order. Each opens with an everyday-language explanation, up to three point-of-use term definitions, a supplied example and the name of the first answer the learner will make. Generic numbered teaching headings now describe the actual idea. Field actions keep the expected output, exact starting move and example visible beside the answer instead of hiding essential help in a disclosure.

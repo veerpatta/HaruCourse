@@ -125,10 +125,11 @@ export function LearningStudio({
   const resumeTitle = resumeGuide ? resume.steps[resumeGuide - 1]?.title : null;
   if (mode === "My work")
     return (
-      <>
+      <div className="studio-page my-work-page">
+        <span className="eyebrow">SAVED PRACTICE</span>
         <h1>My work</h1>
         <ProgressOverview records={records}/>
-          <p>Open a draft or review its feedback.</p>
+          <p className="page-lead">Open a draft, continue your practice, or read feedback.</p>
           <details className="teaching-detail">
             <summary>Practice history · {humanDuration(practiceTotals(records).minutes)}</summary>
             <ul>{practiceTotals(records).sessions.map((s) => <li key={`${s.lessonId}:${s.startedAt}`}>{humanDate(s.startedAt)} · {lessons.find((l) => l.id === s.lessonId)?.title || "Baseline"} · {humanDuration(s.minutes)}</li>)}</ul>
@@ -156,8 +157,8 @@ export function LearningStudio({
                   key={l.id}
                   onClick={() => open(l.id, "practice")}
                 >
-                  <strong>{l.title}</strong>
-                  <span>{saved.learning?.finishedAt ? 'Practice finished' : statusLabel(saved.status)} →</span>
+                  <strong className="lesson-title">{l.title}</strong>
+                  <span className="lesson-status">{saved.learning?.finishedAt ? 'Practice finished' : statusLabel(saved.status)} <span aria-hidden>→</span></span>
                 </button>
               );
             })}
@@ -170,14 +171,14 @@ export function LearningStudio({
               r.record.minutes ||
               r.record.status !== "not-started",
           ) && <p>No saved work yet. Open a lesson to begin.</p>}
-      </>
+      </div>
     );
   return (
-    <>
+    <div className="studio-page learn-page">
       <span className="eyebrow">YOUR COURSE</span>
       <h1>Learn</h1>
       <ProgressOverview records={records}/>
-      <section className="feature-card">
+      <section className="feature-card next-step-card">
         <span className="pill">YOUR NEXT STEP</span>
         <h2>{resume.title}</h2>
         {resumeGuide && resumeTitle && (
@@ -210,21 +211,26 @@ export function LearningStudio({
         {bookmark.status}
       </p>
       {error && <p role="status">{error}</p>}
-      <ProgressOverview records={records} module={week}/>
-      <label htmlFor="module-choice">Browse a module</label>
-      <select
-        id="module-choice"
-        value={week}
-        onChange={(e) => setWeek(Number(e.target.value))}
-      >
-        {modules
-          .filter((m) => lessons.some(l => (l.module || `m0${l.week || 1}`) === m.id))
-          .map((m, i) => (
-            <option value={Number(m.id.slice(1))} key={m.id}>
-              {m.title}
-            </option>
-          ))}
-      </select>
+      <section className="module-browser" aria-labelledby="module-browser-title">
+        <div className="module-browser-head">
+          <h2 id="module-browser-title">Choose a lesson</h2>
+          <label htmlFor="module-choice">Module</label>
+        </div>
+        <select
+          id="module-choice"
+          value={week}
+          onChange={(e) => setWeek(Number(e.target.value))}
+        >
+          {modules
+            .filter((m) => lessons.some(l => (l.module || `m0${l.week || 1}`) === m.id))
+            .map((m) => (
+              <option value={Number(m.id.slice(1))} key={m.id}>
+                {m.title}
+              </option>
+            ))}
+        </select>
+        <ProgressOverview records={records} module={week}/>
+      </section>
       <div className="compact-list">
         {lessons
           .filter((l) => (l.week || 1) === week)
@@ -234,12 +240,12 @@ export function LearningStudio({
               key={l.id}
               onClick={() => open(l.id)}
             >
-              <span>
+              <span className="lesson-number">
                 Lesson {l.day}
                 {l.optional ? " · Optional" : ""}
               </span>
-              <strong>{l.title}</strong>
-              <span>{records.find(r => r.lessonId === l.id)?.record.learning?.finishedAt ? "Practice finished ✓" : records.some(r => r.lessonId === l.id && r.record.status !== "not-started") ? "In progress" : "Not started"} →</span>
+              <strong className="lesson-title">{l.title}</strong>
+              <span className="lesson-status">{records.find(r => r.lessonId === l.id)?.record.learning?.finishedAt ? "Practice finished ✓" : records.some(r => r.lessonId === l.id && r.record.status !== "not-started") ? "In progress" : "Not started"} <span aria-hidden>→</span></span>
             </button>
           ))}
       </div>
@@ -249,7 +255,7 @@ export function LearningStudio({
       <p className="muted">
         Study at your own pace. Later modules are on the Course map.
       </p>
-    </>
+    </div>
   );
 }
 export function LessonReader({
@@ -331,22 +337,24 @@ export function LessonReader({
     };
   }, [endpoint]);
   return (
-    <>
-      <button className="text-button" onClick={back}>
-        ← All lessons
-      </button>
-      <span className="eyebrow">
-        {lesson.id === "baseline-v1"
-          ? "LEVEL 0 · BASELINE"
-          : `LEVEL ${lesson.level ?? 1} · MODULE ${lesson.week || 1} · LESSON ${lesson.day}`}
-        {lesson.optional ? " · OPTIONAL" : ""}
-      </span>
-      <h1>{lesson.title}</h1>
-      <p className="intro">{lesson.why}</p>
-      <p className="save-status" role="status">
-        {user.role === "creator" ? "Haru’s saved work · " : ""}
-        {status}
-      </p>
+    <div className="lesson-reader">
+      <header className="lesson-reader-header">
+        <div className="lesson-toolbar">
+          <button className="text-button lesson-back" onClick={back}>← Lessons</button>
+          <p className="save-status" role="status">
+            {user.role === "creator" ? "Haru’s saved work · " : ""}{status}
+          </p>
+        </div>
+        <span className="eyebrow lesson-breadcrumb">
+          {lesson.id === "baseline-v1"
+            ? "LEVEL 0 · BASELINE"
+            : `LEVEL ${lesson.level ?? 1} · MODULE ${lesson.week || 1} · LESSON ${lesson.day}`}
+          {lesson.optional ? " · OPTIONAL" : ""}
+        </span>
+        <h1>{lesson.title}</h1>
+        <p className="intro lesson-intro desktop-lesson-intro">{lesson.why}</p>
+        <details className="mobile-lesson-context"><summary>About this lesson</summary><p>{lesson.why}</p></details>
+      </header>
       <SessionTimer timer={timer} record={record} role={user.role} steps={lesson.steps}/>
       {conflict && (
         <section className="card">
@@ -373,7 +381,8 @@ export function LessonReader({
             className={activeSection === id ? "primary" : "secondary"}
             onClick={() => go(id)}
           >
-            {i + 1}. {sectionLabels[id]}
+            <span className="section-number" aria-hidden>{i + 1}</span>
+            <span>{sectionLabels[id]}</span>
           </button>
         ))}
       </nav>
@@ -758,6 +767,6 @@ export function LessonReader({
           </button>
         )}
       </div>
-    </>
+    </div>
   );
 }

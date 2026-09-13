@@ -87,7 +87,7 @@ export function LessonFlow({lesson, record, setRecord, section, go, readOnly, on
  const showAiHere=!!a.beginner && !!a.ai && action.id===aiAnchor?.id;
  const overviewContent=<nav aria-label="All lesson actions">{sections.map(s=>{const items=flow.filter(a=>a.section===s.id), complete=items.filter(done).length;return <details key={s.id} className="flow-outline-group" open={s.id===section}><summary>{s.label} · {complete} of {items.length}</summary>{items.map(item=><button key={item.id} className="text-button" aria-current={item.id===action.id?'step':undefined} onClick={()=>move(item)}><span aria-hidden>{done(item)?'✓':'○'}</span><span>{item.title}</span></button>)}</details>;})}</nav>;
  return <section className="lesson-flow" aria-label="Guided lesson">
-  <div className="flow-overview"><div><strong>Required work: {work.done} of {work.total} actions complete</strong><small>{work.percent}% recorded. This shows work saved in the lesson, not mastery or a score.</small></div><details ref={overview}><summary>See all lesson actions</summary>{overviewContent}</details></div>
+  <div className="flow-overview"><div><span className="progress-label">Lesson practice</span><strong>{work.done} of {work.total} actions saved</strong><small>{work.percent}% of required work. This is not a score.</small></div><details ref={overview}><summary>All actions</summary>{overviewContent}</details></div>
   <progress max={work.total} value={work.done} aria-label="Required lesson actions completed"/>
   <div className="flow-layout"><div className="flow-main">
    <div className="action-card" data-action={action.id}>

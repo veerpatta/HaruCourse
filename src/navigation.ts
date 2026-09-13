@@ -14,6 +14,7 @@ export type NavState = {
 
 const initial: NavState = { tab: "Learn", baseline: false, lesson: null };
 const marker = "harucourse:nav";
+const shortcutTabs = new Set(["Learn", "Course map", "My work", "Account"]);
 
 type Entry = NavState & { [marker]: true; scrollY: number };
 
@@ -44,7 +45,14 @@ function same(a: NavState, b: NavState) {
 }
 
 let current: NavState =
-  typeof window === "undefined" ? initial : read(window.history.state);
+  typeof window === "undefined"
+    ? initial
+    : window.history.state && typeof window.history.state === "object" && window.history.state[marker] === true
+      ? read(window.history.state)
+      : (() => {
+          const requested = new URLSearchParams(window.location.search).get("tab");
+          return requested && shortcutTabs.has(requested) ? { ...initial, tab: requested } : initial;
+        })();
 const listeners = new Set<() => void>();
 
 function announce() {

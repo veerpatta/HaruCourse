@@ -3,6 +3,27 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
+  build: {
+    rolldownOptions: {
+      output: {
+        // Keep each authored course module in its own cached chunk. The app
+        // still opens the complete offline course, but a small curriculum or
+        // UI update no longer invalidates one 5.7 MB JavaScript file on mobile.
+        codeSplitting: {
+          groups: [
+            {
+              test: /src[\\/]module\d+\.ts$/,
+              name: (id) => {
+                const match = id.match(/module(\d+)\.ts$/);
+                return match ? `course-module-${match[1]}` : null;
+              },
+              includeDependenciesRecursively: false,
+            },
+          ],
+        },
+      },
+    },
+  },
   plugins: [
     react(),
     VitePWA({
@@ -23,6 +44,10 @@ export default defineConfig({
         categories: ["education", "productivity"],
         start_url: "/",
         scope: "/",
+        shortcuts: [
+          { name: "Continue learning", short_name: "Learn", url: "/?tab=Learn" },
+          { name: "My work", short_name: "My work", url: "/?tab=My%20work" },
+        ],
         icons: [
           {
             src: "/icon-192.png",
@@ -46,16 +71,9 @@ export default defineConfig({
       },
       injectManifest: {
         globPatterns: ["**/*.{js,css,html,png,svg,webmanifest}"],
-        // The lessons are the app: every module is authored as TypeScript and
-        // bundled, so the main chunk grew past Workbox's 2 MiB default as the
-        // curriculum was written. Precaching it is the point — the course has
-        // to open on a phone with no connection — so the limit is raised
-        // rather than the content being dropped from the precache. The cost is
-        // a large first download and a slower parse on a low-end phone, which
-        // is a real trade and worth revisiting by splitting the modules into
-        // per-module chunks that are precached individually. Raised again on
-        // 12 September 2026, when guided practice for Modules 11 to 20 took
-        // the chunk to 5.41 MiB and the 4 MiB limit began failing the build.
+        // The lessons are the app and are precached so the whole course opens
+        // offline. Modules now build as separate cached chunks; this generous
+        // limit remains as a guard for the shared entry and future modules.
         maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
         // The plugin already injects the manifest and the icons it references;
         // globbing them again only duplicated the precache entries.

@@ -72,7 +72,7 @@ export function SessionTimer({
           {running && <span className="session-timer-dot" aria-hidden />}
           {formatClock(lessonMs)}
         </span>
-        <span className="session-timer-sub">Time spent in this lesson · {sub}</span>
+        <span className="session-timer-sub">Lesson time · {sub}</span>
       </div>
       <div className="session-timer-actions">
         <button

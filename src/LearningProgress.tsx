@@ -25,10 +25,15 @@ export function SavedQuestion({id, question, options, record, setRecord, readOnl
 }
 export function ProgressOverview({records, module}: {records: CourseRecord[]; module?: number}) {
   const p = courseProgress(publishedLessons,records,module);
-  return <div className="work-progress"><div><strong>{p.percent}%</strong> · {p.finished} of {p.total} required lessons finished</div>
+  const label = module ? `Module ${module} progress` : 'Course progress';
+  return <section className={`work-progress ${module ? 'module-progress' : 'course-progress'}`} aria-label={label}>
+    <div className="work-progress-head">
+      <div><span className="progress-label">{label}</span><strong>{p.percent}%</strong></div>
+      <span className="progress-count">{p.finished} / {p.total} lessons</span>
+    </div>
     <progress value={p.finished} max={p.total || 1} aria-label={module ? 'Module practice finished' : 'Course practice finished'}/>
-    <small>Practice finished by you. Review is separate; time does not change this percentage.</small>
-  </div>;
+    <small>You control this number by finishing lesson practice. Time and review are tracked separately.</small>
+  </section>;
 }
 export function FinishPractice({lesson, record, setRecord, readOnly, blocked}: {
   lesson: Lesson; record: RecordData; setRecord: SetPractice; readOnly: boolean; blocked?: boolean;

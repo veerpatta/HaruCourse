@@ -2,7 +2,7 @@ import { navigate as navigateHistory, useNavigation } from './navigation';
 import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { registerSW } from "virtual:pwa-register";
-import { BookOpen, Map, PencilLine } from "lucide-react";
+import { BookOpen, CircleUserRound, Map, PencilLine } from "lucide-react";
 import { modules } from "./modules";
 import { levels, baseline } from "./course";
 import { publishedLessons as lessons } from "./lessons";
@@ -17,6 +17,18 @@ import { emptyRecord as empty } from "./usePractice";
 import { unsavedDrafts, updateMessage } from "./updates";
 import type { User } from "../shared/record";
 import "./style.css";
+
+type InstallPromptEvent = Event & {
+  prompt: () => Promise<void>;
+  userChoice: Promise<{ outcome: "accepted" | "dismissed"; platform: string }>;
+};
+
+function installedDisplayMode() {
+  return (
+    window.matchMedia("(display-mode: standalone)").matches ||
+    Boolean((navigator as Navigator & { standalone?: boolean }).standalone)
+  );
+}
 
 function App({
   user,
@@ -38,10 +50,25 @@ function App({
   const [applyUpdate, setApplyUpdate] = useState<(() => void) | null>(null);
   const [updateNote, setUpdateNote] = useState("");
   const [online, setOnline] = useState(navigator.onLine);
+  const [standalone, setStandalone] = useState(installedDisplayMode);
+  const [installPrompt, setInstallPrompt] = useState<InstallPromptEvent | null>(null);
   useEffect(() => {
     const update = () => setOnline(navigator.onLine);
+    const displayMode = window.matchMedia("(display-mode: standalone)");
+    const updateDisplayMode = () => setStandalone(installedDisplayMode());
+    const offerInstall = (event: Event) => {
+      event.preventDefault();
+      setInstallPrompt(event as InstallPromptEvent);
+    };
+    const installed = () => {
+      setStandalone(true);
+      setInstallPrompt(null);
+    };
     window.addEventListener("online", update);
     window.addEventListener("offline", update);
+    window.addEventListener("beforeinstallprompt", offerInstall);
+    window.addEventListener("appinstalled", installed);
+    displayMode.addEventListener("change", updateDisplayMode);
     if (import.meta.env.PROD) {
       const updateSW = registerSW({
         onNeedRefresh: () => setApplyUpdate(() => () => void updateSW(true)),
@@ -54,6 +81,9 @@ function App({
     return () => {
       window.removeEventListener("online", update);
       window.removeEventListener("offline", update);
+      window.removeEventListener("beforeinstallprompt", offerInstall);
+      window.removeEventListener("appinstalled", installed);
+      displayMode.removeEventListener("change", updateDisplayMode);
     };
   }, []);
   function navigate(name: string) {
@@ -66,7 +96,7 @@ function App({
     window.scrollTo(0, 0);
   }
   return (
-    <div className="shell">
+    <div className={`shell${standalone ? " is-standalone" : ""}`}>
       <a className="skip" href="#main">
         Skip to content
       </a>
@@ -96,17 +126,22 @@ function App({
       </aside>
       <div className="content">
         <header className="topbar">
-          <span>{tab}</span>
+          <div className="mobile-app-title">
+            <span className="mobile-brand-mark" aria-hidden>h.</span>
+            <span>{navigation.lesson ? "Lesson" : tab}</span>
+          </div>
           <div className="header-tools">
-            <span className="device-status">
+            <span className={`device-status ${online ? "is-online" : "is-offline"}`} role="status">
               {online ? "Online" : "Offline"}
             </span>
             <button
-              className="text-button"
+              className="text-button account-button"
+              aria-label={tab === "Account" ? "Return to Learn" : "Open Account"}
               aria-current={tab === "Account" ? "page" : undefined}
               onClick={() => navigate(tab === "Account" ? "Learn" : "Account")}
             >
-              Account
+              <CircleUserRound size={19} aria-hidden />
+              <span>Account</span>
             </button>
           </div>
         </header>
@@ -246,15 +281,27 @@ function App({
               </details>
               <details className="account-detail">
                 <summary>Install and offline access</summary>
-                <ul>
-                  <li>
-                    Use your browser’s Install app or Add to Home Screen option.
-                  </li>
-                  <li>Open the course online once before studying offline.</li>
-                  <li>
-                    Keep this device’s browser data to retain offline drafts.
-                  </li>
-                </ul>
+                <div className="pwa-install">
+                  <p className="pwa-install-state">
+                    <strong>{standalone ? "Installed on this device" : "Use Haru Course like an app"}</strong>
+                    <span>{standalone ? "The course opens in its own window and keeps the learning interface ready for mobile." : "Install it for a focused, full-screen course experience and offline reopening."}</span>
+                  </p>
+                  {!standalone && installPrompt && (
+                    <button className="primary" onClick={async () => {
+                      await installPrompt.prompt();
+                      const choice = await installPrompt.userChoice;
+                      if (choice.outcome === "accepted") setInstallPrompt(null);
+                    }}>Install Haru Course</button>
+                  )}
+                  {!standalone && !installPrompt && (
+                    <ol>
+                      <li>Open your browser menu.</li>
+                      <li>Choose <strong>Install app</strong> or <strong>Add to Home Screen</strong>.</li>
+                      <li>Open Haru Course once while online so lessons are available offline.</li>
+                    </ol>
+                  )}
+                  <p className="muted">Keep this browser’s site data to retain offline drafts. Saved work syncs automatically when you reconnect.</p>
+                </div>
               </details>
             </>
           )}

@@ -1,3 +1,7 @@
+## Approved mobile PWA optimization and release — 13 September 2026
+
+The creator explicitly authorized a deep mobile PWA optimization, committing and pushing the complete change set to `main`, deploying it to the live Cloudflare site and testing automatic save, backend persistence and progress with the isolated `test` identity. Preserve the existing course, IDs, records and learning semantics while making navigation, progress, lesson entry, action controls, installed-app safe areas, offline reopening and update delivery clear on phones. Record evidence in [the mobile PWA verification](docs/VERIFICATION-MOBILE-PWA.md). Native-device observation and assistive-technology testing remain separate from emulated browser QA.
+
 ## Approved all-course beginner implementation and release — 13 September 2026
 
 The creator explicitly authorized completing the beginner-comprehension work for Modules 11–20, committing and pushing the whole change set to `main`, deploying it to the live Cloudflare site and smoke-testing saves, backend persistence and progress with the isolated `test` identity. This supersedes the planning-only and wait-before-expansion limits for this implementation. All 224 teaching lessons must retain their published IDs, 2,866 worksheet field IDs, record version 1, existing learner work and full required practice. The independent diagnostic remains uncoached. Record local and hosted evidence in [the all-course beginner verification](docs/VERIFICATION-BEGINNER-ALL-LESSONS.md); learner observation and formal assessment remain separate.

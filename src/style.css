@@ -12,12 +12,22 @@
   font-synthesis: none;
   line-height: 1.6;
   font-weight: 400;
+  --app-header-height: 56px;
+  --mobile-nav-height: 70px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
 }
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
+  min-width: 280px;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+  -webkit-text-size-adjust: 100%;
 }
 button,
 input,
@@ -2030,4 +2040,396 @@ progress::-webkit-progress-value { background: #567e48; border-radius: 8px; }
   .section-tabs { gap: 4px; }
   .section-tabs button { padding-inline: 8px; font-size: 13px; min-height: 44px; }
   .session-timer-actions button { min-height: 44px; }
+}
+
+/* Mobile PWA experience — compact hierarchy, thumb-reachable actions and
+   safe-area aware app chrome. These rules intentionally come last while the
+   older desktop system remains unchanged. */
+.mobile-app-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: #264b3e;
+  font-weight: 650;
+}
+.mobile-brand-mark { display: none; }
+.account-button { display: inline-flex; align-items: center; gap: 7px; }
+.mobile-lesson-context { display: none; }
+.work-progress-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+}
+.work-progress-head > div { display: flex; align-items: baseline; gap: 10px; }
+.progress-label {
+  display: block;
+  color: #526456;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+.progress-count { color: #40574c; font-size: 13px; font-weight: 650; white-space: nowrap; }
+.module-browser { margin-top: 30px; }
+.module-browser-head { display: flex; align-items: end; justify-content: space-between; gap: 16px; }
+.module-browser-head h2 { margin: 0; }
+.module-browser-head label { margin: 0; }
+.lesson-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.lesson-toolbar .save-status { margin: 0; text-align: right; }
+.lesson-back { flex: none; }
+.lesson-reader-header h1 { max-width: 21ch; }
+.section-tabs button { justify-content: center; }
+.section-number {
+  display: inline-grid;
+  place-items: center;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: #e4e9dd;
+  color: #526456;
+  font-size: 11px;
+}
+.section-tabs .primary .section-number { background: #f7f6f1; color: #214e46; }
+.pwa-install { padding-bottom: 8px; }
+.pwa-install-state { display: grid; gap: 4px; }
+.pwa-install-state strong { color: #214e46; }
+.pwa-install-state span { color: #526456; }
+
+@media (max-width: 760px) {
+  html {
+    min-height: 100%;
+    scroll-padding-top: calc(var(--app-header-height) + var(--safe-top) + 70px);
+    scroll-padding-bottom: calc(var(--mobile-nav-height) + var(--safe-bottom) + 76px);
+  }
+  body { min-height: 100%; }
+  button, a, summary { touch-action: manipulation; }
+  .shell { min-height: 100svh; }
+  .content { width: 100%; }
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 19;
+    height: calc(var(--app-header-height) + var(--safe-top));
+    padding: var(--safe-top) max(16px, var(--safe-right)) 0 max(16px, var(--safe-left));
+    background: rgba(253, 252, 248, .96);
+    border-bottom-color: #d7dfd0;
+    backdrop-filter: blur(12px);
+  }
+  .mobile-brand-mark {
+    display: inline-grid;
+    place-items: center;
+    width: 30px;
+    height: 32px;
+    flex: none;
+    border-radius: 9px;
+    background: #214e46;
+    color: #f7f6f1;
+    font: italic 24px/1 Georgia, serif;
+  }
+  .mobile-app-title > span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .header-tools { gap: 8px; }
+  .device-status {
+    gap: 5px;
+    padding: 4px 7px;
+    border-radius: 999px;
+    background: #eef1e8;
+    color: #40574c;
+    line-height: 1.2;
+  }
+  .device-status::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    flex: none;
+    border-radius: 50%;
+    background: #6a885d;
+  }
+  .device-status.is-offline { background: #f5eadb; color: #765127; }
+  .device-status.is-offline::before { background: #b7803e; }
+  .account-button {
+    min-width: 44px;
+    min-height: 44px;
+    margin-right: -8px;
+    padding: 7px 8px;
+    justify-content: center;
+  }
+  .sidebar .main-nav {
+    height: calc(var(--mobile-nav-height) + var(--safe-bottom));
+    padding: 5px max(5px, var(--safe-right)) var(--safe-bottom) max(5px, var(--safe-left));
+    background: rgba(253, 252, 248, .97);
+    box-shadow: 0 -8px 24px rgba(33, 78, 70, .07);
+    backdrop-filter: blur(12px);
+  }
+  .sidebar .main-nav button {
+    min-height: 58px;
+    padding: 5px 2px;
+    color: #526456;
+  }
+  .sidebar .main-nav button[aria-current] { color: #214e46; }
+  main {
+    width: 100%;
+    padding: 18px max(16px, var(--safe-right)) calc(var(--mobile-nav-height) + var(--safe-bottom) + 28px) max(16px, var(--safe-left));
+  }
+  .studio-page > .eyebrow { margin: 0 0 4px; }
+  .studio-page > h1 {
+    margin: 0 0 12px;
+    font-size: clamp(32px, 10vw, 38px);
+    line-height: 1.08;
+  }
+  .page-lead { margin: -6px 0 18px; }
+  .work-progress {
+    margin: 12px 0 18px;
+    padding: 13px 14px;
+    border: 1px solid #dce3d5;
+    border-radius: 12px;
+  }
+  .work-progress-head { align-items: center; gap: 8px; }
+  .work-progress-head > div { display: grid; gap: 1px; }
+  .work-progress strong { font-size: 26px; line-height: 1; }
+  .work-progress progress { margin: 10px 0 7px; height: 9px; }
+  .work-progress small { margin-top: 0; font-size: 12px; line-height: 1.4; }
+  .module-progress { background: transparent; padding: 0; border: 0; }
+  .module-progress small { display: none; }
+  .next-step-card {
+    padding: 17px;
+    border-radius: 14px;
+  }
+  .next-step-card .pill { font-size: 10px; }
+  .next-step-card h2 {
+    margin: 10px 0 9px;
+    font-size: clamp(23px, 7vw, 28px);
+    line-height: 1.18;
+  }
+  .next-step-card .resume-step {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    margin-bottom: 12px;
+    line-height: 1.45;
+  }
+  .next-step-card .light-button { width: 100%; min-height: 48px; }
+  .learn-page > .save-status { margin: 8px 0 18px; }
+  .module-browser {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid #d7dfd0;
+  }
+  .module-browser-head { align-items: center; }
+  .module-browser-head h2 { font: 25px/1.2 Georgia, serif; }
+  .module-browser-head label { font-size: 12px; }
+  .module-browser > select { min-height: 48px; margin-top: 8px; font-size: 16px; }
+  .module-browser .work-progress { margin-top: 15px; }
+  .compact-list {
+    display: grid;
+    gap: 10px;
+    margin: 14px 0 22px;
+    border-top: 0;
+  }
+  .lesson-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 6px 12px;
+    min-height: 76px;
+    padding: 13px 14px;
+    border: 1px solid #d7dfd0;
+    border-radius: 12px;
+    background: #fffefb;
+  }
+  .lesson-row > span:first-child:not(:last-child) { width: auto; }
+  .lesson-row .lesson-number {
+    grid-column: 1;
+    color: #667568;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+  .lesson-row .lesson-title {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    font: 19px/1.3 Georgia, serif;
+    color: #214e46;
+  }
+  .lesson-row .lesson-status {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    color: #526456;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .my-work-page .lesson-row .lesson-title { grid-row: 1; padding-right: 6px; }
+  .my-work-page .lesson-row .lesson-status { grid-row: 2; grid-column: 1 / -1; justify-self: start; }
+  .lesson-reader-header { margin-bottom: 10px; }
+  .lesson-toolbar {
+    min-height: 44px;
+    margin: -6px 0 8px;
+    border-bottom: 1px solid #e1e5d9;
+  }
+  .lesson-toolbar .save-status {
+    max-width: 58%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+  .lesson-breadcrumb {
+    display: block;
+    margin: 12px 0 5px;
+    overflow: hidden;
+    color: #667568;
+    font-size: 10px;
+    line-height: 1.4;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .lesson-reader-header h1 {
+    max-width: none;
+    margin: 0 0 10px;
+    font-size: clamp(29px, 8.4vw, 36px);
+    letter-spacing: -.8px;
+    line-height: 1.12;
+  }
+  .desktop-lesson-intro { display: none; }
+  .mobile-lesson-context {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .mobile-lesson-context summary {
+    width: fit-content;
+    min-height: 44px;
+    padding: 10px 0;
+    color: #526456;
+    font-size: 13px;
+  }
+  .mobile-lesson-context p { margin: 2px 0 12px; font-size: 14px; }
+  .section-tabs {
+    top: calc(var(--app-header-height) + var(--safe-top));
+    z-index: 18;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 3px;
+    margin: 8px -16px 0;
+    padding: 7px max(12px, var(--safe-right)) 8px max(12px, var(--safe-left));
+    background: rgba(247, 246, 241, .97);
+    box-shadow: 0 7px 14px rgba(33, 78, 70, .04);
+    backdrop-filter: blur(12px);
+  }
+  .section-tabs button {
+    flex-direction: column;
+    gap: 2px;
+    min-height: 50px;
+    padding: 4px 2px;
+    border-radius: 8px;
+    font-size: 11px;
+    line-height: 1.15;
+  }
+  .section-number { width: 19px; height: 19px; font-size: 10px; }
+  .session-timer,
+  .session-timer.keyboard-open {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 7px 10px;
+    margin: 10px 0 8px;
+    padding: 11px 12px;
+    border: 1px solid #d7dfd0;
+    border-radius: 11px;
+    background: #fdfcf8;
+  }
+  .session-timer-main { display: grid; gap: 1px; min-width: 0; }
+  .session-timer .session-timer-clock { font-size: 19px; }
+  .session-timer-sub {
+    overflow: hidden;
+    font-size: 11px;
+    line-height: 1.35;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .session-timer-actions { display: flex; grid-column: 2; grid-row: 1; gap: 6px; }
+  .session-timer-actions button { min-width: 44px; padding: 6px 8px; font-size: 0; }
+  .session-timer-actions button svg { width: 18px; height: 18px; }
+  .session-timer .timer-live,
+  .session-timer .timer-details { grid-column: 1 / -1; }
+  .session-timer .timer-details summary { padding: 8px 0 0; font-size: 12px; }
+  .lesson-flow { margin-top: 10px; }
+  .flow-overview { align-items: end; gap: 7px; font-size: 13px; }
+  .flow-overview > div { flex: 1 1 190px; }
+  .flow-overview strong { color: #264b3e; font-size: 15px; }
+  .flow-overview small { font-size: 11px; }
+  .flow-overview details { flex: none; }
+  .flow-overview details > summary { padding: 4px 0; font-size: 13px; }
+  .lesson-flow > progress { margin: 8px 0 10px; }
+  .action-card {
+    margin: 10px 0;
+    padding: 17px 15px 13px;
+    border-radius: 13px;
+  }
+  .action-card > .eyebrow { display: block; margin: 0 0 5px; }
+  .action-card h2 {
+    margin: 0 0 12px;
+    font-size: clamp(25px, 7.3vw, 31px);
+    line-height: 1.15;
+    scroll-margin-top: calc(var(--app-header-height) + var(--safe-top) + 68px);
+  }
+  .action-instruction { margin: 0 0 12px; line-height: 1.55; }
+  .beginner-brief, .ai-learning { margin-block: 15px; padding: 14px; }
+  .beginner-brief h3, .ai-learning h3 { font-size: 22px; }
+  .action-card .worksheet-field { margin-top: 17px; }
+  .action-card textarea { min-height: 116px; scroll-margin-block: 138px 150px; }
+  .flow-actions {
+    position: sticky;
+    bottom: calc(var(--mobile-nav-height) + var(--safe-bottom) + 5px);
+    z-index: 12;
+    margin: 20px -8px -5px;
+    padding: 8px;
+    border: 1px solid #d7dfd0;
+    border-radius: 11px;
+    background: rgba(255, 254, 251, .97);
+    box-shadow: 0 -7px 20px rgba(33, 78, 70, .09);
+    backdrop-filter: blur(10px);
+  }
+  .flow-actions button { min-height: 48px; font-size: 13px; }
+  .lesson-reader:has(.session-timer.keyboard-open) .flow-actions { position: static; }
+  .reader-actions {
+    position: sticky;
+    bottom: calc(var(--mobile-nav-height) + var(--safe-bottom) + 5px);
+    z-index: 12;
+    margin: 20px -8px 0;
+    padding: 8px;
+    border: 1px solid #d7dfd0;
+    border-radius: 11px;
+    background: rgba(247, 246, 241, .97);
+    box-shadow: 0 -7px 20px rgba(33, 78, 70, .08);
+  }
+  .lesson-reader:has(.session-timer.keyboard-open) .reader-actions { position: static; }
+  .course-map > details, .account-detail {
+    margin-bottom: 10px;
+    padding: 5px 13px;
+    border: 1px solid #d7dfd0;
+    border-radius: 11px;
+    background: #fffefb;
+  }
+  .module-detail { padding-left: 8px; }
+  .pwa-install .primary { width: 100%; min-height: 48px; }
+  .pwa-install ol { padding-left: 21px; }
+}
+
+@media (max-width: 350px) {
+  .account-button span { display: none; }
+  .device-status { font-size: 10px; }
+  .section-tabs button { font-size: 10px; }
+  .lesson-row .lesson-status { white-space: normal; text-align: right; }
+}
+
+@media (display-mode: standalone) and (max-width: 760px) {
+  .topbar { background: rgba(253, 252, 248, .98); }
+  .sidebar .main-nav { background: rgba(253, 252, 248, .99); }
 }
