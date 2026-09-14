@@ -2364,8 +2364,8 @@ progress::-webkit-progress-value { background: #567e48; border-radius: 8px; }
   .flow-overview > div { flex: 1 1 190px; }
   .flow-overview strong { color: #264b3e; font-size: 15px; }
   .flow-overview small { font-size: 11px; }
-  .flow-overview details { flex: none; }
-  .flow-overview details > summary { padding: 4px 0; font-size: 13px; }
+  .flow-overview details { flex: 1 1 100%; width: 100%; }
+  .flow-overview details > summary { display: flex; align-items: center; min-height: 44px; padding: 4px 0; font-size: 13px; }
   .lesson-flow > progress { margin: 8px 0 10px; }
   .action-card {
     margin: 10px 0;
