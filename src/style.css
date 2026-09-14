@@ -2433,3 +2433,83 @@ progress::-webkit-progress-value { background: #567e48; border-radius: 8px; }
   .topbar { background: rgba(253, 252, 248, .98); }
   .sidebar .main-nav { background: rgba(253, 252, 248, .99); }
 }
+
+/* Beginner orientation shared by every published teaching lesson. */
+.orientation-card {
+  margin: 18px 0;
+  padding: clamp(18px, 3vw, 26px);
+  border: 1px solid #cfd8c7;
+  border-radius: 14px;
+  background: #fffefb;
+  box-shadow: 0 4px 18px rgba(33, 78, 70, .05);
+}
+.orientation-card h2,
+.orientation-card h3 { margin: 8px 0 14px; font-family: Georgia, 'Times New Roman', serif; color: #214e46; }
+.orientation-card > p { max-width: 72ch; line-height: 1.55; }
+.orientation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 16px 0;
+}
+.orientation-grid > div { padding: 13px 14px; border-radius: 10px; background: #f3f4ec; }
+.orientation-grid dt { font-size: 12px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; color: #526456; }
+.orientation-grid dd { margin: 6px 0 0; line-height: 1.5; }
+.effort-note { padding: 11px 13px; border-left: 3px solid #567e48; background: #eeefdf; }
+.process-diagram {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding: 0;
+  margin: 18px 0 0;
+  list-style: none;
+}
+.process-diagram.lesson-path { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.process-diagram li { position: relative; min-width: 0; padding: 13px; border: 1px solid #d7dfd0; border-radius: 10px; background: #f8f8f1; }
+.process-diagram li > span { display: grid; place-items: center; width: 26px; height: 26px; margin-bottom: 8px; border-radius: 50%; background: #214e46; color: #fff; font-weight: 700; }
+.process-diagram strong,
+.process-diagram small { display: block; }
+.process-diagram small { margin-top: 5px; color: #526456; line-height: 1.4; }
+.module-orientation { margin-block: 14px; }
+.module-orientation .process-diagram small { font-size: 12px; }
+.lesson-preview { align-items: start; }
+.lesson-preview .lesson-description,
+.lesson-preview .lesson-preview-detail,
+.lesson-preview .lesson-preview-meta { flex-basis: 100%; width: 100%; color: #526456; line-height: 1.45; }
+.lesson-preview .lesson-description { color: #334f43; }
+.lesson-preview .lesson-preview-detail b { color: #264b3e; }
+.lesson-preview .lesson-preview-meta { font-size: 12px; font-weight: 650; }
+.prerequisite-notice { margin: 18px 0; padding: 18px; border: 2px solid #b4833d; border-radius: 12px; background: #fff9eb; }
+.prerequisite-notice h2 { margin: 8px 0 10px; font: 24px/1.25 Georgia, serif; color: #61451f; }
+.prerequisite-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.route-choice,
+.resource-brief { margin: 18px 0; padding: 14px 16px; border-radius: 10px; background: #f3f4ec; }
+.starter-route { margin: 18px 0; padding: 12px 15px; border-left: 3px solid #b4833d; background: #fff9eb; }
+.starter-route pre { max-height: 44vh; overflow: auto; padding: 12px; border-radius: 8px; background: #fffefb; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 13px; }
+.route-choice label { margin-top: 0; }
+.resource-brief h3 { margin-top: 0; font-size: 18px; }
+.ai-return { display: inline-flex; min-height: 44px; align-items: center; }
+.finish-checklist { margin: 16px 0; padding: 14px 16px; border-radius: 10px; background: #f3f4ec; }
+.finish-checklist h4 { margin: 0 0 8px; }
+.finish-checklist ul { margin: 0; padding-left: 22px; }
+.finish-checklist li { margin-block: 6px; }
+.finish-checklist li::marker { content: '○  '; }
+.finish-checklist li.is-done::marker { content: '✓  '; color: #2d6b3f; }
+.action-card h2 { overflow: visible; overflow-wrap: anywhere; text-overflow: clip; white-space: normal; }
+
+@media (max-width: 760px) {
+  .orientation-grid { grid-template-columns: 1fr; }
+  .process-diagram,
+  .process-diagram.lesson-path { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lesson-preview { grid-template-columns: minmax(0, 1fr) auto; }
+  .lesson-preview .lesson-description,
+  .lesson-preview .lesson-preview-detail,
+  .lesson-preview .lesson-preview-meta { grid-column: 1 / -1; }
+  .lesson-preview .lesson-description { grid-row: 3; }
+  .lesson-preview .lesson-preview-detail:nth-of-type(4) { grid-row: 4; }
+  .lesson-preview .lesson-preview-detail:nth-of-type(5) { grid-row: 5; }
+  .lesson-preview .lesson-preview-meta { grid-row: 6; }
+  .prerequisite-actions { display: grid; }
+  .prerequisite-actions button { width: 100%; min-height: 48px; }
+  .flow-actions { position: static; margin-bottom: 4px; box-shadow: none; backdrop-filter: none; }
+}

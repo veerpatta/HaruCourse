@@ -1,3 +1,11 @@
+## Beginner orientation and visual guidance contract — 14 September 2026
+
+Every published teaching lesson uses the shared orientation layer in `src/orientation.tsx`. Learn shows the selected module's challenge, output, starting material, tools, approximate effort and a text-equivalent Bring → Practise → Keep diagram. Lesson cards preview Learn, Do, Keep, time and prerequisite readiness before opening. Lesson entry shows Learn / Do / Keep / Need plus the Learn → Do → Check → Keep path; the independent diagnostic remains uncoached and does not receive this layer.
+
+When a direct prerequisite module is unfinished, identify it in ordinary language, link to its next unfinished required lesson and offer an honest rehearsal path using the current lesson's supplied example, starter and training notes. Never turn rehearsal into participant evidence or a completed project. Keep the practice destination visible, label external reading as optional support, expand learner-facing `mNN` shorthand to “Module N”, and provide a direct return from optional AI practice to the named saved answer.
+
+Required action and worksheet totals exclude optional or route-dependent fields. Show optional totals separately and list the exact finish conditions in Your work. A completed bookmark must advance to unfinished required work. On lesson entry, focus the lesson title without scrolling past the orientation; later action changes focus and reveal the new action. Visual diagrams must remain useful as semantic text when color, layout or CSS is unavailable. Preserve IDs, record version and existing completions.
+
 ## Beginner comprehension planning addendum — 13 September 2026
 
 Follow the [beginner experience plan](BEGINNER-EXPERIENCE-PLAN.md), [AI activity guide](AI-LEARNING-ACTIVITIES.md) and [all-lesson map](BEGINNER-LESSON-PLAN.md) for the next proposed teaching refinement. The creator requested Markdown only in this milestone. These documents are authoring plans, not implemented lesson content or new resource assignments.

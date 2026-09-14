@@ -5,6 +5,7 @@ import { WORKSHEET_VALUE_CAP } from "../shared/record";
 import { downloadText, filledCount, resumeStep, worksheetFields, worksheetMarkdown } from "./worksheet";
 import { SavedQuestion } from './LearningProgress';
 import { checkKey } from '../shared/learning';
+import { worksheetCompletion } from './orientation';
 
 // Shared guided-practice reader: one manageable step at a time, an editable
 // worksheet inside each step, contextual help, and a clear place to resume.
@@ -589,13 +590,14 @@ export function PracticeGuide({
 export function WorksheetSummary({ lesson, record }: { lesson: Lesson; record: RecordData }) {
   const sections = lesson.apprenticeship?.worksheet ?? [];
   const w = record.worksheet ?? {};
-  const count = filledCount(lesson, record.worksheet);
+  const count = worksheetCompletion(lesson, record);
   if (!sections.length) return null;
   return (
     <details className="worksheet-summary">
       <summary>
-        Worksheet answers · {count.filled} of {count.total} filled
+        Required worksheet answers · {count.requiredFilled} of {count.requiredTotal} filled
       </summary>
+      {!!count.optionalTotal && <p className="muted">Optional or route-dependent answers: {count.optionalFilled} of {count.optionalTotal} filled. Empty optional answers do not block completion.</p>}
       {sections.map((s) => (
         <section key={s.id}>
           <h4>{s.title}</h4>

@@ -7,7 +7,7 @@ import type { useCourseRecords } from './useCourseRecords';
 import { practiceTotals } from './useCourseRecords';
 import { humanDate, humanDuration, statusLabel } from './labels';
 import { SessionTimer, SessionLog, TimeAdjust, ConfidencePicker } from './SessionTimer';
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import type { usePosition } from "./usePosition";
 import { sections } from "../shared/position";
 import { modules } from "./modules";
@@ -18,6 +18,14 @@ import { readingSelections } from "./reading";
 import { ApprenticeshipPanel, SaveHandoff, WorkspaceGuide } from './ApprenticeshipPanel';
 import { ActiveChecks, PracticeGuide, SaveAndContinue, WorksheetSummary } from './PracticeGuide';
 import { resumeStep } from './worksheet';
+import {
+  chooseResumeLesson,
+  firstUnfinishedLessonInModule,
+  lessonOrientation,
+  LessonOrientation,
+  missingPrerequisiteModules,
+  ModuleOrientation,
+} from './orientation';
 import {
   recordSchema,
   worksheetFilled,
@@ -100,21 +108,10 @@ export function LearningStudio({
             : lessons[lessons.findIndex((l) => l.id === item.id) + 1]
         }
         open={open}
+        courseRecords={records}
       />
     );
-  const recent = records
-    .filter(
-      (r) =>
-        r.record.status === "practicing" &&
-        lessons.some((l) => l.id === r.lessonId),
-    )
-    .sort(
-      (a, b) => Date.parse(b.record.updatedAt) - Date.parse(a.record.updatedAt),
-    )[0];
-  const resume =
-    lessons.find((l) => l.id === bookmark.position?.lessonId) ||
-    lessons.find((l) => l.id === recent?.lessonId) ||
-    lessons.find((l) => !l.optional)!;
+  const resume = chooseResumeLesson(lessons, records, bookmark.position?.lessonId);
   // For a lesson with guided steps, name the exact step to reopen so the
   // learner continues the unfinished action rather than the section alone.
   const resumeRecord = records.find((r) => r.lessonId === resume.id)?.record;
@@ -123,6 +120,11 @@ export function LearningStudio({
       ? resumeStep(resume, resumeRecord)
       : null;
   const resumeTitle = resumeGuide ? resume.steps[resumeGuide - 1]?.title : null;
+  const hasResumeWork = !!resumeRecord && (
+    resumeRecord.status !== 'not-started' ||
+    !!resumeRecord.learning?.action ||
+    !!resumeRecord.learning?.finishedAt
+  );
   if (mode === "My work")
     return (
       <div className="studio-page my-work-page">
@@ -204,7 +206,7 @@ export function LearningStudio({
             )
           }
         >
-          {resume.flow ? "Continue your saved action →" : resumeGuide ? `Continue at step ${resumeGuide} →` : "Continue learning →"}
+          {hasResumeWork ? (resume.flow ? "Continue your saved action →" : resumeGuide ? `Continue at step ${resumeGuide} →` : "Continue learning →") : "Start this lesson →"}
         </button>
       </section>
       <p className="save-status" role="status">
@@ -225,29 +227,38 @@ export function LearningStudio({
             .filter((m) => lessons.some(l => (l.module || `m0${l.week || 1}`) === m.id))
             .map((m) => (
               <option value={Number(m.id.slice(1))} key={m.id}>
-                {m.title}
+                Module {Number(m.id.slice(1))} · {m.title} · about {m.hours} hours
               </option>
             ))}
         </select>
+        <ModuleOrientation moduleId={`m${String(week).padStart(2, '0')}`}/>
         <ProgressOverview records={records} module={week}/>
       </section>
       <div className="compact-list">
         {lessons
           .filter((l) => (l.week || 1) === week)
-          .map((l) => (
-            <button
-              className="lesson-row"
-              key={l.id}
-              onClick={() => open(l.id)}
-            >
-              <span className="lesson-number">
-                Lesson {l.day}
-                {l.optional ? " · Optional" : ""}
-              </span>
-              <strong className="lesson-title">{l.title}</strong>
-              <span className="lesson-status">{records.find(r => r.lessonId === l.id)?.record.learning?.finishedAt ? "Practice finished ✓" : records.some(r => r.lessonId === l.id && r.record.status !== "not-started") ? "In progress" : "Not started"} <span aria-hidden>→</span></span>
-            </button>
-          ))}
+          .map((l) => {
+            const summary = lessonOrientation(l);
+            const missing = missingPrerequisiteModules(l, lessons, records);
+            return (
+              <button
+                className="lesson-row lesson-preview"
+                key={l.id}
+                onClick={() => open(l.id)}
+              >
+                <span className="lesson-number">
+                  Lesson {l.day}
+                  {l.optional ? " · Optional" : ""}
+                </span>
+                <strong className="lesson-title">{l.title}</strong>
+                <span className="lesson-status">{records.find(r => r.lessonId === l.id)?.record.learning?.finishedAt ? "Practice finished ✓" : records.some(r => r.lessonId === l.id && r.record.status !== "not-started") ? "In progress" : "Not started"} <span aria-hidden>→</span></span>
+                <span className="lesson-description">{summary.learn}</span>
+                <span className="lesson-preview-detail"><b>Do:</b> {summary.do}</span>
+                <span className="lesson-preview-detail"><b>Keep:</b> {summary.keep}</span>
+                <span className="lesson-preview-meta">About {summary.minutes} min · {missing.length ? `Recommended after ${missing.map(item => item.module.title).join(', ')}` : 'Ready to start'}</span>
+              </button>
+            );
+          })}
       </div>
       <button className="text-button" onClick={() => open(baseline.id)}>
         Open starting-point diagnostic →
@@ -266,6 +277,7 @@ export function LessonReader({
   back,
   next,
   open,
+  courseRecords,
 }: {
   lesson: Lesson;
   section: string;
@@ -274,8 +286,14 @@ export function LessonReader({
   back: () => void;
   next?: Lesson;
   open: (id: string) => void;
+  courseRecords: ReturnType<typeof useCourseRecords>['records'];
 }) {
+  const lessonTitle = useRef<HTMLHeadingElement>(null);
   const [activeSection, setActiveSection] = useState(sections.includes(section as typeof sections[number]) ? section : "learn");
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+    lessonTitle.current?.focus({preventScroll:true});
+  }, [lesson.id]);
   useEffect(() => { setActiveSection(sections.includes(section as typeof sections[number]) ? section : "learn"); }, [section]);
   useEffect(() => {if(lesson.id !== "baseline-v1") remember(lesson.id, activeSection)}, [lesson.id]);
   function go(id: string) {
@@ -298,6 +316,7 @@ export function LessonReader({
   const { record, setRecord, status, conflict, resolve } = practice;
   const timer = useTimer({storageKey:`harucourse:timer:${user.id}:${lesson.id}`,enabled:user.role === "learner" && practice.hydrated,active:!conflict,setRecord});
   const online = useOnline();
+  const missingPrerequisites = lesson.id === 'baseline-v1' ? [] : missingPrerequisiteModules(lesson, lessons, courseRecords);
   const guided = !!lesson.apprenticeship?.guide?.length;
   const pilot = !!lesson.flow;
   const finalAction = pilot && (user.role === 'creator' ? activeSection === 'practice' : currentAction(lesson, record, activeSection)?.kind === 'review');
@@ -351,10 +370,26 @@ export function LessonReader({
             : `LEVEL ${lesson.level ?? 1} · MODULE ${lesson.week || 1} · LESSON ${lesson.day}`}
           {lesson.optional ? " · OPTIONAL" : ""}
         </span>
-        <h1>{lesson.title}</h1>
+        <h1 ref={lessonTitle} tabIndex={-1}>{lesson.title}</h1>
         <p className="intro lesson-intro desktop-lesson-intro">{lesson.why}</p>
         <details className="mobile-lesson-context"><summary>About this lesson</summary><p>{lesson.why}</p></details>
       </header>
+      {lesson.id !== 'baseline-v1' && <LessonOrientation lesson={lesson}/>}
+      {!!missingPrerequisites.length && (
+        <section className="prerequisite-notice" aria-labelledby="prerequisite-notice-title">
+          <span className="eyebrow">EARLIER WORK IS MISSING</span>
+          <h2 id="prerequisite-notice-title">Choose a safe way to continue</h2>
+          <p>This lesson normally builds on {missingPrerequisites.map(({module}) => `Module ${Number(module.id.slice(1))}, ${module.title}`).join(' and ')}.</p>
+          <ul>{missingPrerequisites.map(({module, completion}) => <li key={module.id}>{completion.finished} of {completion.total} required lessons finished in Module {Number(module.id.slice(1))}.</li>)}</ul>
+          <div className="prerequisite-actions">
+            {missingPrerequisites.map(({module}) => {
+              const target = firstUnfinishedLessonInModule(module.id, lessons, courseRecords);
+              return target && <button key={module.id} type="button" className="secondary" onClick={() => open(target.id)}>Go to the next Module {Number(module.id.slice(1))} lesson</button>;
+            })}
+          </div>
+          <p><strong>Or continue as rehearsal:</strong> use the supplied example, starter and training notes in this lesson. Label the earlier artifact as missing and do not claim the rehearsal as participant evidence or a completed project.</p>
+        </section>
+      )}
       <SessionTimer timer={timer} record={record} role={user.role} steps={lesson.steps}/>
       {conflict && (
         <section className="card">

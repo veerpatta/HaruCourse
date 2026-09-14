@@ -1,9 +1,10 @@
 import { useId, type SetStateAction } from 'react';
 import type { RecordData } from '../shared/record';
-import { checkKey, courseProgress, finishProblems, lessonWorkProgress } from '../shared/learning';
+import { actionDone, checkKey, courseProgress, finishProblems, lessonWorkProgress } from '../shared/learning';
 import type { Choice, Lesson } from './teaching';
 import { publishedLessons } from './lessons';
 import type { CourseRecord } from './useCourseRecords';
+import { worksheetCompletion } from './orientation';
 export type SetPractice = (v: SetStateAction<RecordData>) => void;
 
 export function SavedQuestion({id, question, options, record, setRecord, readOnly = false, children}: {
@@ -44,10 +45,24 @@ export function FinishPractice({lesson, record, setRecord, readOnly, blocked}: {
   const checks = lesson.apprenticeship?.checks ?? [];
   const external = record.learning?.route === 'external';
   const {done,total,percent} = lessonWorkProgress(lesson,record);
+  const worksheet = worksheetCompletion(lesson,record);
+  const checkedReasons = checks.filter((_,index) => !!record.learning?.answers?.[checkKey(index)]?.shown).length;
+  const suppliedActions = lesson.flow?.filter(action => action.kind === 'supported' || action.kind === 'sort') || [];
+  const suppliedDone = suppliedActions.filter(action => actionDone(lesson,record,action)).length;
+  const improvementDone = !!(record.worksheet?.['improvement-made'] || record.learning?.repair || '').trim();
   return <section className="finish-practice card">
     <h3>{record.learning?.finishedAt ? 'Practice finished' : 'Finish your practice'}</h3>
     <p>Lesson work · {percent}%</p>
     <progress max={total} value={done} aria-label="Lesson work progress"/>
+    <div className="finish-checklist" aria-label="What is needed to finish">
+      <h4>What you need to finish</h4>
+      <ul>
+        <li className={external || worksheet.requiredFilled === worksheet.requiredTotal ? 'is-done' : ''}>{external ? 'Keep every required output in your own file or paper.' : `${worksheet.requiredFilled} of ${worksheet.requiredTotal} required worksheet answers filled.`}</li>
+        <li className={suppliedDone === suppliedActions.length ? 'is-done' : ''}>{suppliedDone} of {suppliedActions.length} supplied practice questions checked.</li>
+        <li className={checkedReasons === checks.length ? 'is-done' : ''}>{checkedReasons} of {checks.length} reasoning checks answered and explained.</li>
+        <li className={improvementDone ? 'is-done' : ''}>{improvementDone ? 'One improvement or checked decision recorded.' : 'Record one improvement, or explain why no change was needed.'}</li>
+      </ul>
+    </div>
     {!readOnly && <>
       <label htmlFor="practice-route">Where did you keep your work?</label>
       <select id="practice-route" value={record.learning?.route || 'worksheet'} onChange={e => setRecord(r => ({...r, learning:{...r.learning,route:e.target.value as 'worksheet'|'external'}}))}>
