@@ -33,7 +33,15 @@ Only the isolated `test` identity was used. Haru's account was not opened.
 
 ## Deployment and hosted evidence
 
-Pending the production deployment and post-deploy test-identity smoke test.
+- Implementation commits `04e4067` and `4a03cf6` are pushed to `origin/main`. Cloudflare Worker version `33b71a87-ab80-4618-a5bc-0e6fee8c139c` serves `https://harucourse.raj-39e.workers.dev`.
+- Production returned 200 from `/api/health` with application version `0.2.0`; unauthenticated `/api/progress` returned 401. No migration was required.
+- Live `index-BCLUBcHT.js` and `index-ql755nz3.css` match the final local production files byte-for-byte by SHA-256.
+- `HARU_TEST_BASE=https://harucourse.raj-39e.workers.dev node scripts/test-module-actions-cloud.mjs --live` passed all 224 lesson records on the final version: completion, saved-question round-trip, stale-write rejection and reopening. Each original `test` record was restored; server revisions and timestamps advanced.
+- `HARU_TEST_BASE=https://harucourse.raj-39e.workers.dev node scripts/test-learning-cloud.mjs --live` passed full learning/timing round-trip, worksheet-only review, incomplete-finish rejection, stale-write rejection, a second session and reopening, then restored the original focused record.
+- The live **Update now** path activated both deployments without losing the signed-in test workspace. The finished Module 1 Lesson 3 stopped appearing as the proposed next step; unfinished work appeared instead.
+- Module 12 lesson rows visibly stated Learn, Do, Keep, approximately 120 minutes and the Module 11 recommendation. Opening `m12-l11-v1` focused its title at the top, showed the Learn / Do / Keep / Need cards and four-stage diagram, reported 0 of 12 Module 11 prerequisites, linked to the next unfinished Module 11 lesson and exposed the rehearsal/starter route.
+- The completed `week1-day3-v1` record reported **17 of 17 required** answers plus **0 of 3 optional or route-dependent** answers. Its finish checklist showed every required condition satisfied. The optional AI activity's return button moved directly to “What this conversation is for, in one sentence” while the completion marker remained intact and the navigation save reached **Saved online**.
+- At 320 and 390 CSS pixels, the final lesson had no horizontal document overflow, the lesson title remained the initial focus at scroll position 0, and no visible interactive target measured below 44 by 44 CSS pixels. Long action headings wrapped and phone Back/Next controls were in normal flow rather than covering content. No browser console warning or error was recorded.
 
 ## Boundaries
 
