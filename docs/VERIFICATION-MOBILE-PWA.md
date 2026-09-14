@@ -1,5 +1,21 @@
 # Mobile PWA optimization — 13 September 2026
 
+## Beginner-orientation mobile follow-up — 14 September 2026
+
+The course-wide beginner orientation added on 14 September was reworked for phones rather than merely allowed to wrap. Module and lesson diagrams now appear before the longer explanation. At phone widths the module path stays in one three-stage row and the lesson path stays in one four-stage row, with complete accessible names for each stage. Learn, Do, Keep and Need remain visible inside the lesson, while the course-map cards show two-line Learn and Do previews, hide the repeated Keep preview, and say that opening the lesson reveals the full plan. At 360 px and below, lesson state moves below its number so it cannot compete with the title.
+
+The selected lesson now uses its own concise purpose in the course map instead of repeating a generic module-level beginner paragraph. Orientation surfaces, prerequisite recovery, route choice, resource briefs, ready-made starters and finish checklists use tighter phone spacing without changing their text, route logic or completion requirements. The action outline found during live QA no longer shrinks into a 33 px column; its disclosure and action list take the full reader width and its summary remains at least 44 px high.
+
+Local validation passed generated-document parity, content and stable worksheet checks, the guided audit, all 224 lesson flows with 2,866 preserved field IDs, all 221 required-lesson learning/timer regressions, both TypeScript projects, the production PWA build and the Wrangler dry run. The existing large entry-chunk and Workbox deprecation warnings remain nonfatal. No API, database migration, record schema, lesson ID, worksheet ID or learning semantic changed.
+
+Live signed-in browser QA used only the isolated `test` identity. At 320 × 568, 390 × 844 and 430 × 932 there was no horizontal document overflow and no visible button, link or summary below 44 × 44 CSS px. The lesson diagram measured 73 px high at each width. The complete orientation measured 885, 794 and 753 px respectively, while keeping the title, four-stage path and time/save explanation in the first screen. The repaired action outline measured the full content width — 273, 343 and 383 px — and 44 px high. Course-map cards measured 273 px high at 320 px with state stacked below the lesson number, and 207 px high at 390 px; both Learn and Do were clamped to two lines and the full content remained in the opened lesson.
+
+The service-worker guard initially found two dirty sidecars in the shared test browser. Module 1 Lesson 3 had a conflict against an empty cloud copy, so the existing local test draft was explicitly preserved and saved; Module 20 Lesson 12 reconciled automatically. Both reached **Saved online** before **Update now** was used. The final app loaded `index-CaopVYLl.js` and `index-DAGIEq8Z.css`; each matched the local production artifact byte-for-byte by SHA-256. The live console had no warnings or errors.
+
+The hosted focused integration passed incomplete-finish rejection, full learning/timing and worksheet round-trip, stale-write rejection, second-session persistence and substantive-edit reopening, then restored its original test record. The hosted all-course integration passed completion, saved-question round-trip, stale-write rejection and reopening for all 224 lessons and restored every original test record; only revisions and timestamps advanced. Health returned 200 with application version `0.2.0`, and unauthenticated progress returned 401.
+
+Implementation commits `205961e` and `21dd2b8` are pushed to `main`. Cloudflare Worker version `2efd2b50-80fd-4b3d-b005-eea39752bbaf` serves `https://harucourse.raj-39e.workers.dev`. Haru's account and records were not used. Physical iOS/Android installation and keyboard behavior, VoiceOver, TalkBack and Haru's uncoached use remain separate and unverified.
+
 ## What changed
 
 The phone UI now uses a safe-area aware app shell. The header is sticky and shows the Haru mark, current context, connection state and Account. Learn, Course map and My work remain in a fixed bottom tab bar above the home indicator. The same layout reflows at narrow widths and at browser zoom without horizontal scrolling.
