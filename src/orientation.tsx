@@ -22,13 +22,18 @@ export function displayModuleReferences(text: string) {
   return text.replace(/\bm(\d{1,2})\b/gi, (_, number: string) => `Module ${Number(number)}`);
 }
 
+function sentence(text: string) {
+  const clean = text.trim();
+  return /[.!?]$/.test(clean) ? clean : `${clean}.`;
+}
+
 export function lessonOrientation(lesson: Lesson) {
   const activity = lesson.apprenticeship;
   return {
-    learn: activity?.beginner?.plain || lesson.why,
-    do: activity?.mission || lesson.objective || lesson.steps[0]?.instructions[0] || lesson.title,
-    keep: lesson.outputs[0] || lesson.objective || lesson.portfolio,
-    need: `${displayModuleReferences(lesson.prerequisite || "Nothing from an earlier lesson.")} Tools: ${activity?.workspace.tools || "paper or a local text file"}.`,
+    learn: displayModuleReferences(activity?.beginner?.plain || lesson.why),
+    do: displayModuleReferences(activity?.mission || lesson.objective || lesson.steps[0]?.instructions[0] || lesson.title),
+    keep: displayModuleReferences(lesson.outputs[0] || lesson.objective || lesson.portfolio),
+    need: `${sentence(displayModuleReferences(lesson.prerequisite || "Nothing from an earlier lesson."))} Tools: ${sentence(displayModuleReferences(activity?.workspace.tools || "paper or a local text file"))}`,
     minutes: lessonMinutes(lesson),
   };
 }
