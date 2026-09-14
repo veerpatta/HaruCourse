@@ -252,10 +252,10 @@ export function LearningStudio({
                 </span>
                 <strong className="lesson-title">{l.title}</strong>
                 <span className="lesson-status">{records.find(r => r.lessonId === l.id)?.record.learning?.finishedAt ? "Practice finished ✓" : records.some(r => r.lessonId === l.id && r.record.status !== "not-started") ? "In progress" : "Not started"} <span aria-hidden>→</span></span>
-                <span className="lesson-description">{summary.learn}</span>
+                <span className="lesson-description"><b>Learn:</b> {summary.learn}</span>
                 <span className="lesson-preview-detail"><b>Do:</b> {summary.do}</span>
                 <span className="lesson-preview-detail"><b>Keep:</b> {summary.keep}</span>
-                <span className="lesson-preview-meta">About {summary.minutes} min · {missing.length ? `Recommended after ${missing.map(item => item.module.title).join(', ')}` : 'Ready to start'}</span>
+                <span className="lesson-preview-meta">Open for the full plan · about {summary.minutes} min · {missing.length ? `Recommended after ${missing.map(item => item.module.title).join(', ')}` : 'Ready to start'}</span>
               </button>
             );
           })}

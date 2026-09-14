@@ -30,7 +30,9 @@ function sentence(text: string) {
 export function lessonOrientation(lesson: Lesson) {
   const activity = lesson.apprenticeship;
   return {
-    learn: displayModuleReferences(activity?.beginner?.plain || lesson.why),
+    // The lesson purpose is specific enough to scan in the course map. The
+    // longer beginner explanation remains in the guided Learn action.
+    learn: displayModuleReferences(lesson.why || activity?.beginner?.plain || lesson.title),
     do: displayModuleReferences(activity?.mission || lesson.objective || lesson.steps[0]?.instructions[0] || lesson.title),
     keep: displayModuleReferences(lesson.outputs[0] || lesson.objective || lesson.portfolio),
     need: `${sentence(displayModuleReferences(lesson.prerequisite || "Nothing from an earlier lesson."))} Tools: ${sentence(displayModuleReferences(activity?.workspace.tools || "paper or a local text file"))}`,
@@ -112,15 +114,17 @@ export function ModuleOrientation({ moduleId }: { moduleId: string }) {
     <section className="orientation-card module-orientation" aria-labelledby="module-orientation-title">
       <span className="eyebrow">MODULE {Number(module.id.slice(1))} · ABOUT THIS MODULE</span>
       <h3 id="module-orientation-title">{module.title}</h3>
-      <p><strong>What you will learn:</strong> {milestone.challenge}.</p>
-      <p><strong>What you will make:</strong> {module.output}.</p>
-      <p><strong>What you need:</strong> {milestone.start}. Tools: {milestone.tools}.</p>
-      <p><strong>Suggested effort:</strong> about {module.hours} hours across the module, at your own pace.</p>
       <ol className="process-diagram" aria-label="Module learning path">
-        <li><span>1</span><strong>Bring</strong><small>{displayModuleReferences(milestone.start)}</small></li>
-        <li><span>2</span><strong>Practise</strong><small>{milestone.challenge}</small></li>
-        <li><span>3</span><strong>Keep</strong><small>{milestone.save}</small></li>
+        <li aria-label={`1 Bring: ${displayModuleReferences(milestone.start)}`}><span>1</span><strong>Bring</strong><small>{displayModuleReferences(milestone.start)}</small></li>
+        <li aria-label={`2 Practise: ${milestone.challenge}`}><span>2</span><strong>Practise</strong><small>{milestone.challenge}</small></li>
+        <li aria-label={`3 Keep: ${milestone.save}`}><span>3</span><strong>Keep</strong><small>{milestone.save}</small></li>
       </ol>
+      <dl className="module-orientation-grid">
+        <div><dt>Learn</dt><dd>{milestone.challenge}.</dd></div>
+        <div><dt>Make</dt><dd>{module.output}.</dd></div>
+        <div><dt>Need</dt><dd>{milestone.start}. Tools: {milestone.tools}.</dd></div>
+        <div><dt>Time</dt><dd>About {module.hours} hours across the module, at your own pace.</dd></div>
+      </dl>
     </section>
   );
 }
@@ -131,19 +135,19 @@ export function LessonOrientation({ lesson }: { lesson: Lesson }) {
     <section className="orientation-card lesson-orientation" aria-labelledby="lesson-orientation-title">
       <span className="eyebrow">BEFORE YOU BEGIN</span>
       <h2 id="lesson-orientation-title">Your plan for this lesson</h2>
+      <ol className="process-diagram lesson-path" aria-label="How this lesson works">
+        <li aria-label="1 Learn: See the idea and an example"><span>1</span><strong>Learn</strong><small>See the idea and an example</small></li>
+        <li aria-label="2 Do: Try one small action at a time"><span>2</span><strong>Do</strong><small>Try one small action at a time</small></li>
+        <li aria-label="3 Check: Explain your reason and repair"><span>3</span><strong>Check</strong><small>Explain your reason and repair</small></li>
+        <li aria-label="4 Keep: Save your work and next step"><span>4</span><strong>Keep</strong><small>Save your work and next step</small></li>
+      </ol>
+      <p className="effort-note"><strong>Plan about {summary.minutes} minutes.</strong> You can stop after any action; your place and worksheet save automatically.</p>
       <dl className="orientation-grid">
         <div><dt>Learn</dt><dd>{summary.learn}</dd></div>
         <div><dt>Do</dt><dd>{summary.do}</dd></div>
         <div><dt>Keep</dt><dd>{summary.keep}</dd></div>
         <div><dt>Need</dt><dd>{summary.need}</dd></div>
       </dl>
-      <p className="effort-note"><strong>Plan about {summary.minutes} minutes.</strong> You can stop after any action; your place and worksheet save automatically.</p>
-      <ol className="process-diagram lesson-path" aria-label="How this lesson works">
-        <li><span>1</span><strong>Learn</strong><small>See the idea and an example</small></li>
-        <li><span>2</span><strong>Do</strong><small>Try one small action at a time</small></li>
-        <li><span>3</span><strong>Check</strong><small>Explain your reason and repair</small></li>
-        <li><span>4</span><strong>Keep</strong><small>Save your work and next step</small></li>
-      </ol>
     </section>
   );
 }
