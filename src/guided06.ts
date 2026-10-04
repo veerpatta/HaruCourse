@@ -1613,7 +1613,7 @@ export const guided06: Record<string, Guided> = {
       { id: 'note', title: 'The change note', intro: 'The last artefact of the module, and the one that keeps its value. One line per decision.', fields: [
         { id: 'decisions-and-evidence', label: 'Every structural decision from this module, one line each, with the evidence beside it', kind: 'long', example: 'Example (made up): split change from cancel · four of four sorters separated them · card sort, lesson 5.' },
         { id: 'rejected', label: 'What you considered and did not do, and why', kind: 'short' },
-        { id: 'still-guesses', label: 'What is still a guess, and what remains untested', kind: 'long', hint: 'Any decision whose evidence line is empty is a guess. So is any test you could not run, including the ones from lesson 10.' },
+        { id: 'still-guesses', label: 'What is still a guess, and what remains untested', kind: 'long', hint: 'Any decision whose evidence line is empty is a guess. So is any test you could not run, including the ones from lesson 10. Anything you practised on the supplied practice data is practice, not evidence for your own structure.' },
         { id: 'test-next', label: 'What you would test next, and with whom', kind: 'short' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
@@ -1715,9 +1715,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'One label is cut off on a button at 320 px. What is the first repair to try?',
         options: [
-          { label: 'A shorter label that keeps the word telling it apart, or two separate items if no short version does.', correct: true, feedback: 'Cutting off removes the end of a label, which is usually the part carrying the difference. Shortening on purpose means you choose what survives.' },
-          { label: 'A smaller size for that label so the whole thing fits.', feedback: 'It fits, it is harder to read, and it will be cut off again in the next language. You have bought the space from the reader.' },
-          { label: 'Leave the three dots, since people can work out the rest.', feedback: 'Sometimes they can, and “Change or cancel a…” is exactly the case where they cannot. Two different actions have become one unreadable one.' },
+          { label: 'A shorter label that keeps the word telling it apart, or two items if none does.', was: ['A shorter label that keeps the word telling it apart, or two separate items if no short version does.'], correct: true, feedback: 'Cutting off removes the end of a label, which is usually the part carrying the difference. Shortening on purpose means you choose what survives.' },
+          { label: 'A smaller text size for that one label, so the whole of it fits on the button.', was: ['A smaller size for that label so the whole thing fits.'], feedback: 'It fits, it is harder to read, and it will be cut off again in the next language. You have bought the space from the reader.' },
+          { label: 'Keep the three dots, since people can usually work out how the label ends.', was: ['Leave the three dots, since people can work out the rest.'], feedback: 'Sometimes they can, and “Change or cancel a…” is exactly the case where they cannot. Two different actions have become one unreadable one.' },
         ],
         repair: 'Take every cut-off label in your narrow-width box in step 3 and write a shorter or split version in step 4, then record the change in the last box.',
         recheck: 'No repaired label depends on being cut short, and any split label now appears as two items.',
@@ -1725,19 +1725,19 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'Your prototype cannot render Devanagari at all. What is the honest response?',
         options: [
-          { label: 'Write the labels by hand at the same size, record what you saw, and mark the on-screen rendering as not tested.', correct: true, feedback: 'Hand-written labels still show you the length and the height the marks need. What they cannot show is whether the lettering supports the script, so that stays untested and says so.' },
-          { label: 'Skip the second script and note that the layout is proportional.', feedback: 'Proportions cannot tell you whether the lettering contains those characters or whether the row is tall enough. Both fail quietly.' },
-          { label: 'Record it as clean, since nothing visibly broke.', feedback: 'Nothing was rendered, so nothing could visibly break. Writing that down as a pass is the sentence that makes the whole note untrustworthy.' },
+          { label: 'Hand-write the labels at the same size, record what you see, and mark rendering untested.', was: ['Write the labels by hand at the same size, record what you saw, and mark the on-screen rendering as not tested.'], correct: true, feedback: 'Hand-written labels still show you the length and the height the marks need. What they cannot show is whether the lettering supports the script, so that stays untested and says so.' },
+          { label: 'Skip the second script, noting that a proportional layout will adapt to it anyway.', was: ['Skip the second script and note that the layout is proportional.'], feedback: 'Proportions cannot tell you whether the lettering contains those characters or whether the row is tall enough. Both fail quietly.' },
+          { label: 'Record the script test as clean, since nothing visibly broke anywhere on screen.', was: ['Record it as clean, since nothing visibly broke.'], feedback: 'Nothing was rendered, so nothing could visibly break. Writing that down as a pass is the sentence that makes the whole note untrustworthy.' },
         ],
         repair: 'Set the script-method box in step 2 to how you really produced it, move anything you could not see into the guesses box in step 5, then note it in the last box.',
         recheck: 'The script result says what was checked and what could not be, with nothing assumed to have passed.',
       },
       {
-        question: 'Your change note lists eleven decisions with evidence, and three of them rest on labels no participant ever mentioned.',
+        question: 'Your change note lists eleven decisions with evidence, and three of them rest on labels no participant ever mentioned. What should happen to those three?',
         options: [
           { label: 'Move those three into the guesses, each with the sentence that would settle it.', correct: true, feedback: 'A note separating the eight from the three is more useful than one claiming eleven. The three are where the next hour of work goes.' },
-          { label: 'Leave them, since they follow sensibly from the rest of the evidence.', feedback: 'Following sensibly is your reasoning, not anybody else’s behaviour. That is the exact place a preference gets written down as a finding.' },
-          { label: 'Remove them from the note, since you cannot support them.', feedback: 'They are real decisions and the structure uses them. Deleting them hides a choice somebody else will have to rediscover later.' },
+          { label: 'Leave them where they are, since they follow sensibly from the rest of the evidence.', was: ['Leave them, since they follow sensibly from the rest of the evidence.'], feedback: 'Following sensibly is your reasoning, not anybody else’s behaviour. That is the exact place a preference gets written down as a finding.' },
+          { label: 'Remove them from the note entirely, since no evidence supports any of the three.', was: ['Remove them from the note, since you cannot support them.'], feedback: 'They are real decisions and the structure uses them. Deleting them hides a choice somebody else will have to rediscover later.' },
         ],
         repair: 'Work down the evidence column in step 5. Any line with nothing beside it moves into the guesses box, and the change goes in the last box.',
         recheck: 'Every line in the note either names its evidence or sits in the guesses list.',
@@ -1748,6 +1748,15 @@ export const guided06: Record<string, Guided> = {
       external: 'Hand-written script versions and any screenshots stay in your own folder. Describe them in step 2 rather than uploading anything.',
       creator: 'Your creator reads the change note first. The guesses and the untested list are what make the rest of it believable.',
       next: 'Open Your work and choose Ready for review. Module 7 turns this structure into task flows, and it starts from your change note.',
+    },
+    transfer: {
+      scenario: 'Made-up case: a housing society’s app has a bottom menu item “Maintenance payments and receipts”. At 320 px it is cut to “Maintenance paym…”, so it looks almost the same as the item beside it, “Maintenance requests”. The Marathi version of the menu runs about 40 per cent longer.',
+      prompt: 'Choose a repair for the cut-off label, say how you would check it in both languages, and explain why your repair is better than making the text smaller.',
+      anchors: {
+        weak: 'Shrinks the text or accepts the three dots, or tests only the English version at one width.',
+        adequate: 'Rewrites to short distinct labels that keep the telling-apart word, such as “Pay maintenance” and “Report a problem”, or splits payments from receipts, then re-checks at 320 px and with the longer Marathi text.',
+        strong: 'As adequate, and records in the change note which renderings were actually tested, marks the Marathi rendering untested if it could not be shown, and notes the labels still need a reader of Marathi.',
+      },
     },
   },
 };

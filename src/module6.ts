@@ -323,11 +323,11 @@ export const module6: Lesson[] = [
       {
         criterion: "Vocabulary is harvested verbatim from real notes",
         evidence:
-          "Participant words recorded exactly as said, attributed to a participant, for the items where evidence exists.",
+          "Participant words recorded exactly as said, labelled by participant, for the items where evidence exists — or, where no notes or messages exist, a plain statement of that with every label marked a guess.",
         levels: [
-          "Labels proposed from the designer's own vocabulary only.",
+          "Labels proposed from the designer's own vocabulary and presented as if people had used them.",
           "Some participant words, paraphrased or unattributed.",
-          "Verbatim words with attribution wherever evidence exists.",
+          "Verbatim words with participant labels wherever evidence exists; with no evidence available, the absence stated and every row marked a guess.",
           "As adequate, and the table notes where a participant hesitated or corrected themselves, which is often where the concept is unclear.",
         ],
         remediation:
@@ -507,7 +507,7 @@ export const module6: Lesson[] = [
           "No breakage identified, or a general admission of imperfection.",
           "A breakage named abstractly without an item or a person.",
           "Both schemes have a concrete failing case.",
-          "As adequate, and one breakage is traced to a real participant from your research rather than a hypothetical person.",
+          "As adequate, and one breakage is traced to a real participant from your research, or to a real message you hold, rather than a hypothetical person.",
         ],
         remediation:
           "Take your three research tasks and walk each through both schemes. The first place you hesitate is the breakage; write down what you were holding and who you were being.",
@@ -592,7 +592,7 @@ export const module6: Lesson[] = [
     misconception:
       "“Three clicks maximum.” The number is folklore, and people will click many times when each click clearly moves them closer. What loses them is uncertainty, not distance: two confident clicks feel shorter than one gamble. Design for confident choices, and count clicks only as a rough symptom.",
     example:
-      "The task scheme drawn out came to three levels: Get ready for a class → Practical information → What to bring. On a phone that is three full screens, and the tree test later showed people stopping at level two, where “Practical information” told them nothing about whether their answer was inside. The shallower alternative moved the four most-needed items up to level one under their own plain labels, leaving genuinely rare material at level two, so the structure became wider and one level shorter. The wide version favoured first-timers looking for one specific thing; the deeper version favoured someone browsing everything about a class, which nobody in the research had ever done.",
+      "The task scheme drawn out came to three levels: Get ready for a class → Practical information → What to bring. On a phone that is three full screens, and the tree test later showed people stopping at level two, where “Practical information” told them nothing about whether their answer was inside. The shallower alternative moved the four items the research showed people needing for their tasks up to level one under their own plain labels, leaving genuinely rare material at level two, so the structure became wider and one level shorter. The wide version favoured first-timers looking for one specific thing; the deeper version favoured someone browsing everything about a class, which nobody in the research had ever done.",
     steps: [
       {
         minutes: 25,
@@ -612,7 +612,7 @@ export const module6: Lesson[] = [
       {
         minutes: 25,
         title: "Build the shallower alternative",
-        text: "Produce a second sitemap for the same content that is one level shallower, lifting the most-needed items. Note what became crowded and what became harder to find.",
+        text: "Produce a second sitemap for the same content that is one level shallower, lifting the items your research showed people need for their tasks. Note what became crowded and what became harder to find.",
       },
       {
         minutes: 15,
@@ -848,7 +848,7 @@ export const module6: Lesson[] = [
         levels: [
           "Final groups only.",
           "Some notes, written after the session from memory.",
-          "Hesitations, moves and quotations recorded during the session.",
+          "Hesitations, moves and quotations recorded during the session — or, on the rehearsal route, your own hesitations recorded and labelled rehearsal.",
           "As adequate, and at least one item is flagged as ambiguous purely on the strength of hesitation, despite being placed consistently.",
         ],
         remediation:
@@ -907,9 +907,9 @@ export const module6: Lesson[] = [
     areas: [5],
     title: "Read a card sort without overclaiming",
     objective:
-      "Analyse your sorts into a written list of agreements, disagreements and ambiguous items, expressed as counts of participants, and revise your structure with each change traced to what a participant actually did.",
+      "Analyse your sorts — or, if your lesson 5 sort was a rehearsal, the supplied practice sorts — into a written list of agreements, disagreements and ambiguous items, expressed as counts of participants, and revise the structure with each change traced to what a participant actually did.",
     bringForward:
-      "The sort photographs, session notes and your two sitemaps. Both the sorts and the maps are inputs; neither wins automatically.",
+      "The sort photographs, session notes and your two sitemaps. Both the sorts and the maps are inputs; neither wins automatically. If your sort was a rehearsal, the lesson supplies four simulated sorts to practise on, and every result from them stays labelled practice.",
     why: "The analysis is where a small sort either becomes a useful set of hypotheses or becomes a false statistic. Four people can tell you a great deal about what confuses people and nothing at all about how many people are confused, and the difference is entirely in how you write it down.",
     teach: [
       "Work item by item, not pile by pile. For each card, record where each participant put it, so you end with a row per item reading “three of four put this with the money items, one put it with cancelling, two hesitated”. That form is honest, it survives being read six months later, and it makes the ambiguous items — the ones that scattered — visible without any arithmetic.",
@@ -935,7 +935,7 @@ export const module6: Lesson[] = [
       {
         minutes: 30,
         title: "Revise the structure",
-        text: "Change your chosen sitemap from the analysis. For each change write the trace sentence naming the item, the participants and what they did.",
+        text: "Change your chosen sitemap from the analysis; on the supplied route, change the practice map from lesson 4 instead. For each change write the trace sentence naming the item, the participants and what they did.",
       },
       {
         minutes: 20,
@@ -981,7 +981,7 @@ export const module6: Lesson[] = [
       {
         criterion: "Analysis is item by item with per-participant placements",
         evidence:
-          "A table with one row per item showing where each participant placed it and where hesitation occurred.",
+          "A table with one row per item showing where each participant placed it and where hesitation occurred — your own consenting sorters, or the supplied practice sorters, labelled as such.",
         levels: [
           "Impressions of the sorts, or pile-level summaries only.",
           "An item table without hesitation marks or with participants merged.",
@@ -1014,7 +1014,7 @@ export const module6: Lesson[] = [
         levels: [
           "Changes made with no trace.",
           "Some traces, others asserted as “research showed”.",
-          "Every change traces to specific participant behaviour.",
+          "Every change traces to specific participant behaviour — or, on the supplied route, to a named simulated sorter, with the change made to the practice map and labelled practice.",
           "As adequate, and one change you expected to make was abandoned because the sorts did not support it.",
         ],
         remediation:
@@ -1073,7 +1073,7 @@ export const module6: Lesson[] = [
     areas: [5],
     title: "Tree test the structure by hand",
     objective:
-      "Run a paper tree test of your revised structure with at least three participants and six tasks, recording for every task the first choice, the full path, whether they backtracked and where they said they would stop.",
+      "Run a paper tree test of your revised structure with at least three participants and six tasks — or, if nobody consents, a labelled rehearsal with a dated recruitment gap — recording for every task the first choice, the full path, whether they backtracked and where they said they would stop.",
     bringForward:
       "Your revised sitemap and the ambiguous items from the sort analysis. The tasks should aim at the places you are least sure of, not at the places you are proud of.",
     why: "A card sort asks how people group things with no task in mind. A tree test asks whether a person with a real goal can find one specific thing in your structure — which is the question the structure exists to answer, and the one a tidy diagram cannot settle.",
@@ -1081,7 +1081,7 @@ export const module6: Lesson[] = [
       "A tree test shows only the words: no page design, no images, no search box, no colour. That is the point. It isolates the structure from everything that usually rescues it, so a failure means the labels and grouping failed rather than the layout. Running it on paper is straightforward: write the top level on one sheet, each second level on its own sheet, and reveal one level at a time as the person chooses, exactly as the accordion in a tool would.",
       "Tasks decide what you learn. Write them as a situation with a goal, never as the label you are testing — “you booked a class for Saturday and something has come up; where would you go?” rather than “find the cancellation policy”, which hands them the word to match. Define the correct answer before you start, in writing, including any second location you would accept. Mix in a warm-up task, and include a task or two aimed at the items your sort flagged as ambiguous.",
       "Record four things per task and the first is the most valuable. The first choice, because the first click is where the structure either works or fails and everything afterwards is recovery. The full path. Whether they went back up, which is the sign that a level-one label misled them. And where they said they would stop — because a person who reaches the right place and is not confident they are there has not really found it, and in a real product would keep looking or leave.",
-      "Three to five participants will find the broken labels. What they cannot give you is a success rate to compare against a benchmark: the published benchmarks come from studies with far more participants, and applying them to five people produces a number that looks like measurement and is not. Report counts and first clicks, and treat the test as a way of locating failures, not scoring the structure.",
+      "Three to five participants will find the broken labels. What they cannot give you is a success rate to compare against a benchmark: the published benchmarks come from studies with far more participants, and applying them to five people produces a number that looks like measurement and is not. Report counts and first clicks, and treat the test as a way of locating failures, not scoring the structure. Nor is it a measure of real use: you wrote the tasks, so the results show how the structure handles those six situations, not which pages real visitors open or how often.",
     ],
     misconception:
       "“They found it, so the structure works.” Not if they found it after backing out of two wrong branches, and not if they hesitated at the top and said afterwards that they were not sure they were in the right place. In a real product the person who backtracks twice often leaves instead, and the tree test's value is that it shows you the backtracking a success count would hide.",
@@ -1238,15 +1238,15 @@ export const module6: Lesson[] = [
     areas: [5],
     title: "Interpret the tree test and change one thing",
     objective:
-      "Turn your tree-test results into a diagnosis per failed task — a wrong label, a wrong grouping or a missing item — then make one bounded change, re-test it with at least two people, and report what happened including if it did not help.",
+      "Turn your tree-test results — or the supplied practice results, if your test was a rehearsal — into a diagnosis per failed task: a wrong label, a wrong grouping or a missing item. Then make one bounded change, re-test it with at least two new people or record it as untested, and report what happened including if it did not help.",
     bringForward:
       "The tree-test results table and the structure you tested. Do not change anything before this lesson: a diagnosis written after several simultaneous edits explains nothing.",
     why: "Results only become useful when they name a cause. “People failed task three” is a symptom; “people chose the right level-one branch and then could not tell which of two level-two labels held it” is a diagnosis, and only the second tells you what to change.",
     teach: [
       "Read the first clicks before anything else. If people chose correctly at level one and failed lower down, level one is working and the fault is beneath it — usually a level-two label that names a container rather than its contents. If they scattered at level one, the top of your structure does not match how they think about the task, and renaming a lower level will change nothing. This single split resolves most tree-test results.",
-      "Failures have three common causes, and the fix differs for each. A wrong label means the right container has the wrong name: rename it, in participant vocabulary. A wrong grouping means the item is in a container people do not associate with it: move or cross-list it. A missing item means people were looking for something the structure does not contain at all — the commonest and most-ignored result, and no renaming will help. The assigned article names relabelling, cross-listing and restructuring as the corresponding moves.",
+      "Failures have three common causes, and the fix differs for each. A wrong label means the right container has the wrong name: rename it, in participant vocabulary. A wrong grouping means the item is in a container people do not associate with it: move or cross-list it. A missing item means people were looking for something the structure does not contain at all — a common and easily ignored result, and no renaming will help. The assigned article names relabelling, cross-listing and restructuring as the corresponding moves.",
       "Change one thing at a time. Making four changes and re-testing tells you the aggregate got better or worse, and nothing about which change did it — and if it got worse, you will not know which one to undo. One change, re-tested, is slower and is the only way to learn anything transferable about your own judgement.",
-      "Treat the article's success-rate benchmarks as context, not as a target. They come from studies far larger than yours, and comparing five participants against a published band is exactly the arithmetic this module keeps refusing. Report what happened: how many people chose correctly first, which paths they took, and whether the change moved the specific failure it was aimed at. And report it plainly when the change did not help, because a change that did not work and was recorded is worth more than a change that did and was not understood.",
+      "Treat the article's success-rate benchmarks as context, not as a target. They come from studies far larger than yours, and comparing five participants against a published band is exactly the arithmetic this module keeps refusing. Report what happened: how many people chose correctly first, which paths they took, and whether the change moved the specific failure it was aimed at. And report it plainly when the change did not help, because a change that did not work and was recorded is worth more than a change that did and was not understood. Keep the counts in their place, too: three of three failing a task you wrote says the label fails for that task, not how often anyone really needs it.",
     ],
     misconception:
       "“The structure scored badly, so we should redesign it.” A poor result usually concentrates in two or three labels, and replacing the whole structure discards the parts that worked while re-introducing risks you had already tested away. Diagnose first; wholesale redesign is a decision you should have to argue for, not the default response to a bad number.",
@@ -1345,7 +1345,7 @@ export const module6: Lesson[] = [
         levels: [
           "Several changes made together, or no re-test.",
           "One change but re-tested with someone who had already seen the structure.",
-          "One change, re-tested with fresh participants.",
+          "One change, re-tested with fresh participants — or, where nobody was available, recorded as untested and never called an improvement.",
           "As adequate, and the write-up predicted what the change should do before re-testing.",
         ],
         remediation:
@@ -1571,7 +1571,7 @@ export const module6: Lesson[] = [
     objective:
       "Express one page of your structure as a heading outline and a set of regions, then check it by reading only the headings aloud and by running the relevant preliminary accessibility checks, recording what you could and could not verify.",
     bringForward:
-      "Your revised structure and one page that sits inside it — ideally the page your tree test showed people reaching. Structure is not only between pages; the same failures happen inside one.",
+      "Your revised structure and one page that sits inside it — ideally a page your tree-test tasks led to. Structure is not only between pages; the same failures happen inside one.",
     why: "A hierarchy that exists only in a sitemap helps nobody. It reaches a person as headings, regions and navigation they can see or hear, and a person using a screen reader or scanning on a phone navigates by exactly those — so the in-page structure is where your architecture either becomes usable or stays a diagram.",
     teach: [
       "Headings are the outline of a page, not a size choice. One page title, then sections in a strict order, each nested heading a genuine child of the one above — skipping a level to get a smaller-looking heading breaks the outline that some people use as their entire navigation. The assigned tutorial covers this precisely: headings that describe sections, in order, with no gaps.",
@@ -1582,7 +1582,7 @@ export const module6: Lesson[] = [
     misconception:
       "“Accessibility comes later, after the structure is agreed.” The heading outline and the regions are the structure, made perceivable. Deciding them late means retrofitting an outline onto a page whose visual design already assumed something different, which is exactly how pages end up with four level-one headings and a navigation region containing the main content.",
     example:
-      "A class page read as headings alone: “Saturday pottery”, “About”, “Details”, “More info”, “Book”. Read aloud it described nothing — three of the five headings could have introduced anything. Rewritten from the labelling table: “Saturday pottery”, “What you'll do”, “What to bring”, “When and where”, “What it costs”, “Book a place”. The second version is a summary of the page, and the outline now matches the structure that the tree test had validated between pages. The regions were marked so the main content could be reached directly, and the preliminary checks found one further problem: the page title in the browser tab was the site name on every page, so a person with six tabs open could not tell them apart. What was not verified, and the record says so: no screen-reader session was run and no disabled participant took part.",
+      "A class page read as headings alone: “Saturday pottery”, “About”, “Details”, “More info”, “Book”. Read aloud it described nothing — three of the five headings could have introduced anything. Rewritten from the labelling table: “Saturday pottery”, “What you'll do”, “What to bring”, “When and where”, “What it costs”, “Book a place”. The second version is a summary of the page, and the outline now matches the structure that the tree test had checked between pages. The regions were marked so the main content could be reached directly, and the preliminary checks found one further problem: the page title in the browser tab was the site name on every page, so a person with six tabs open could not tell them apart. What was not verified, and the record says so: no screen-reader session was run and no disabled participant took part.",
     steps: [
       {
         minutes: 25,
@@ -1782,7 +1782,7 @@ export const module6: Lesson[] = [
       {
         question: "Why take queries verbatim from participants?",
         answer:
-          "Because the vocabulary gap is the commonest search failure and you cannot invent it: you will type the words your content already uses. Only the words other people chose can show you which ones your content is missing.",
+          "Because the vocabulary gap is a common search failure and you cannot invent it: you will type the words your content already uses. Only the words other people chose can show you which ones your content is missing.",
       },
       {
         question: "What belongs on a zero-results screen?",
@@ -1806,11 +1806,11 @@ export const module6: Lesson[] = [
       {
         criterion: "Queries are verbatim from participants and classified",
         evidence:
-          "At least twenty queries taken word for word from research notes, each marked as a name, a description or a question.",
+          "At least twenty queries taken word for word from research notes — or, without participants, from real messages or public reviews with the source named — each marked as a name, a description or a question, with any invented query marked a guess.",
         levels: [
           "Queries invented by the designer.",
           "A mix of real and invented queries, unmarked.",
-          "Twenty or more verbatim queries, classified.",
+          "Twenty or more verbatim queries, classified, each with its source.",
           "As adequate, and the list notes which queries came from people who had already failed in the navigation.",
         ],
         remediation:
