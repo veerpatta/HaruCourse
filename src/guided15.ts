@@ -569,7 +569,7 @@ export const guided15: Record<string, Guided> = {
         { id: 'stated-limits', label: 'The limits the reading states on traffic, duration and simultaneous changes', kind: 'long' },
       ] },
       { id: 'hypothesis', title: 'Hypothesis and variants', fields: [
-        { id: 'hypothesis', label: 'What you expect, why, and what would disprove it', kind: 'long', hint: 'The why matters. A hypothesis with no reasoning behind it cannot be wrong in an interesting way.', example: 'Example (made up): a held-place message reduces duplicate payments, because people currently pay again when they cannot tell whether the first payment worked. If duplicates do not fall, the cause is elsewhere.' },
+        { id: 'hypothesis', label: 'What you expect, why, and what would disprove it', kind: 'long', hint: 'The why matters. A hypothesis with no reasoning behind it cannot be wrong in an interesting way.', example: 'Example (made up): a held-place message reduces duplicate payments, because people currently pay again when they cannot tell whether the first payment worked. I would be wrong if a properly sized test showed no fewer duplicates with the message; then the payment confirmation is the next place to look.' },
         { id: 'variants', label: 'The two variants, differing in exactly one thing', kind: 'long', hint: 'Exactly one. Two changes at once produce a result nobody can interpret.' },
       ] },
       { id: 'metrics', title: 'Primary and guardrails', fields: [
@@ -578,8 +578,8 @@ export const guided15: Record<string, Guided> = {
         { id: 'smallest-effect', label: 'The smallest effect that would matter, and why that size', kind: 'short', hint: 'This number decides how much data you need. Choosing it first is what makes the calculation honest.' },
       ] },
       { id: 'requirement', title: 'How much data would it need?', fields: [
-        { id: 'sample-estimate', label: 'The sample needed for that effect, with your inputs and method', kind: 'long' },
-        { id: 'duration', label: 'How long that would take at your actual traffic', kind: 'short' },
+        { id: 'sample-estimate', label: 'The sample needed for that effect, with your inputs and method', kind: 'long', hint: 'Standard settings: two-sided 5 per cent significance and 80 per cent power. For a baseline rate p1 and the smallest rate worth acting on p2, with p̄ their average, people per version ≈ (1.96 × √(2 × p̄ × (1 − p̄)) + 0.8416 × √(p1 × (1 − p1) + p2 × (1 − p2)))² ÷ (p1 − p2)², rounded up. Check: 10 to 12 per cent needs 3,841 per version. In a spreadsheet, with p1 in A1 and p2 in B1: =ROUNDUP((1.96*SQRT((A1+B1)*(1-(A1+B1)/2))+0.8416*SQRT(A1*(1-A1)+B1*(1-B1)))^2/(A1-B1)^2,0).', example: 'Example (made up, assumed figures): baseline 6 duplicate payments per 100 bookings, smallest effect worth acting on 6 down to 4 per 100: 1,863 bookings per version, 3,726 in all.' },
+        { id: 'duration', label: 'How long that would take at your actual traffic', kind: 'short', hint: 'Duration = total sample for both versions ÷ eligible traffic per week, rounded up to whole weeks so every weekday is covered equally, and never shorter than the one-to-two-week minimum the reading recommends. Decide it before starting and do not stop early because an interim look seems convincing.', example: 'Example (made up): 3,726 bookings ÷ 150 eligible bookings a week = 24.8, so 25 weeks, about six months.' },
         { id: 'actual-traffic', label: 'The traffic you actually have, and where that number comes from', kind: 'short', hint: 'If you do not know, say so and use a plausible figure labelled as an assumption.' },
       ] },
       { id: 'refuse', title: 'Refuse, and plan what you will do instead', fields: [
@@ -629,15 +629,15 @@ export const guided15: Record<string, Guided> = {
         demo: {
           scenario: 'Made-up example. Designing a test for a tool library, and choosing the effect size afterwards.',
           beats: [
-            { label: 'What I did first', text: 'Worked out how much traffic we have, then found the effect size that would be detectable with it. About twelve percentage points.' },
-            { label: 'Why that felt sensible', text: 'It made the test feasible. Anything smaller was unreachable, so twelve became the number I designed around.' },
-            { label: 'What it actually meant', text: 'I was committing to only noticing an enormous effect. A message that cut duplicate payments by a third would have come back as no result at all.' },
-            { label: 'What choosing first produced', text: 'The smallest effect worth acting on is about three points, because below that the work costs more than it saves. That number came from the problem rather than from the traffic.' },
-            { label: 'What the honest calculation then showed', text: 'Months of data for three points, at this traffic. The test is not available, which is a finding rather than a failure, and it is the finding the lesson is asking for.' },
+            { label: 'What I did first', text: 'Assumed figures, labelled as such: 6 duplicate payments per 100 bookings and 150 bookings a week. A four-week test gives 300 bookings per version, and at 80 per cent power that can only detect a fall from 6 to about 1.6 per 100.' },
+            { label: 'Why that felt sensible', text: 'It made the test feasible in a month. Anything smaller was out of reach, so a fall of about four and a half points became the number I designed around.' },
+            { label: 'What it actually meant', text: 'I was committing to noticing only an enormous effect: three-quarters of all duplicates gone. A message that cut duplicates by a third, from 6 to 4 per 100, would have had only about a one-in-five chance of showing up.' },
+            { label: 'What choosing first produced', text: 'The smallest effect worth acting on is 6 down to 4 per 100, a third fewer duplicates, because below that the work costs more than it saves. That number came from the problem rather than from the traffic.' },
+            { label: 'What the honest calculation then showed', text: '1,863 bookings per version, 3,726 in all. At 150 a week that is 24.8 weeks, rounded up to 25: about six months. The test is not available, which is a finding rather than a failure.' },
           ],
           wrongTurn: 'The wrong turn is working backwards from the traffic you have, because it makes the test possible. What it produces is a test that can only detect effects so large you would not need a test to see them.',
           tradeoff: 'Choosing the effect size from the problem usually means concluding that you cannot run the experiment, which is a worse outcome to report and a true one.',
-          uncertainty: 'Still unknown: what the real duplicate-payment rate is. The calculation used a plausible figure, labelled as an assumption, and a different one would change the months considerably.',
+          uncertainty: 'Still unknown: what the real duplicate-payment rate is. The calculation used assumed figures, labelled as assumptions; at a 3 per cent baseline, halving it would need 1,534 bookings per version, so the months change with the baseline.',
         },
         start: 'Choose the smallest effect you would act on before looking at any traffic figure.',
         enough: 'Your effect size came from the problem rather than from what is detectable.' },
@@ -645,7 +645,8 @@ export const guided15: Record<string, Guided> = {
         fields: ['sample-estimate', 'duration', 'actual-traffic'],
         terms: [
           { term: 'Required sample', meaning: 'How many people each variant needs before a difference of the size you care about could be told apart from noise. Smaller effects need far more people.' },
-          { term: 'Duration', meaning: 'The sample divided by your weekly traffic. It is the number that usually ends the conversation.' },
+          { term: 'Duration', meaning: 'The total sample for both versions divided by eligible weekly traffic, rounded up to whole weeks, and never less than one to two weeks. It is the number that usually ends the conversation.' },
+          { term: 'Peeking', meaning: 'Checking a running test and stopping when the difference looks convincing. Repeated looks manufacture differences out of noise, so the duration is fixed before the start.' },
         ],
         start: 'Do the arithmetic with the numbers you have, and label any assumption as an assumption.',
         enough: 'Somebody could check your calculation from the inputs you wrote down.' },
@@ -662,7 +663,7 @@ export const guided15: Record<string, Guided> = {
           items: [
             { id: 'two-weeks', text: 'Run it for two weeks anyway and see what the numbers say.', answer: 'noise that will be read as a result',
               feedback: {
-                'an honest answer': 'At this traffic, two weeks cannot distinguish a three-point effect from nothing at all.',
+                'an honest answer': 'At 150 bookings a week, two weeks gives 150 per version. Made up: 9 duplicates against 5 looks like a large fall, yet the Two rates tool gives a 95 per cent interval for the difference of about −2.4 to +8.0 points.',
                 'noise that will be read as a result': 'Whatever difference appears will be noise, and somebody will act on it. This is the outcome the calculation exists to prevent.',
                 'a different question entirely': 'It is the same question, asked in a way that cannot answer it.',
               } },
@@ -693,7 +694,7 @@ export const guided15: Record<string, Guided> = {
             { id: 'ship-and-watch', text: 'Ship it to everybody, count duplicates for four weeks, and set a condition that would make you reverse it.', answer: 'an honest answer',
               feedback: {
                 'an honest answer': 'It is not an experiment and it does not claim to be. A named signal, a period and a reversal condition is what the release-plan lesson asked for.',
-                'noise that will be read as a result': 'The reversal condition is what keeps it honest: the answer can be no.',
+                'noise that will be read as a result': 'It stays honest by being called monitoring: an unchanged count is a trigger to investigate, and a fall is not proof the change caused it.',
                 'a different question entirely': 'It is the same question with the best method available at this size.',
               } },
           ],
@@ -707,19 +708,19 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Somebody suggests a quick A/B test to settle a design disagreement. What is the problem?',
         options: [
-          { label: 'With low traffic, a short test produces a difference that is noise, and the noise will be read as a result.', correct: true, feedback: 'Designing the test properly is what shows this: the required sample for an effect worth acting on is usually months of data. A test that cannot detect the effect you care about settles nothing and looks as though it did.' },
-          { label: 'A/B tests cannot settle design disagreements.', feedback: 'A properly powered one can settle a narrow version of the question. The problem here is the power rather than the method.' },
-          { label: 'It would take too long to set up.', feedback: 'Setup is usually the smallest cost. The traffic is the constraint.' },
+          { label: 'On low traffic, a short test’s difference is mostly noise, and noise gets read as a result.', correct: true, feedback: 'Designing the test properly shows this: in the lesson’s worked example, a two-point fall needs 3,726 bookings, 25 weeks at 150 a week. A test that cannot detect the effect you care about settles nothing and looks as though it did.', was: ['With low traffic, a short test produces a difference that is noise, and the noise will be read as a result.'] },
+          { label: 'A/B tests cannot settle a design disagreement, whatever the traffic or duration.', feedback: 'A properly powered one can settle a narrow version of the question. The problem here is the power rather than the method.', was: ['A/B tests cannot settle design disagreements.'] },
+          { label: 'It would take the team too long to set up the two versions properly.', feedback: 'Setup is usually the smallest cost. The traffic is the constraint.', was: ['It would take too long to set up.'] },
         ],
-        repair: 'Calculate the required sample and the duration in step 4 using your real traffic, and record the change in step 5.',
+        repair: 'Calculate the required sample and the duration in step 4 using your real traffic and the formula in the hint, and record the change in step 5.',
         recheck: 'Your duration is based on a traffic figure with a stated source.',
       },
       {
         question: 'You chose your effect size by finding what would be detectable with your traffic. What did that do?',
         options: [
-          { label: 'It committed you to noticing only enormous effects, and to reporting a real improvement as no result.', correct: true, feedback: 'The smallest effect worth acting on comes from the problem: below what difference would you do nothing? Choosing it first is what makes the calculation an honest test of feasibility.' },
-          { label: 'Nothing much, since the calculation is the same either way.', feedback: 'The arithmetic is the same and the meaning is reversed. One asks what you need; the other asks what you can get away with.' },
-          { label: 'It made the test feasible, which is a reasonable trade.', feedback: 'Feasible and uninformative is not a trade; it is the appearance of one.' },
+          { label: 'It set the test up to detect only huge effects, so a useful one could look like nothing.', correct: true, feedback: 'The smallest effect worth acting on comes from the problem: below what difference would you do nothing? In the worked example, a month of traffic could only detect three-quarters of duplicates disappearing. Choosing the effect first makes the calculation an honest test of feasibility.', was: ['It committed you to noticing only enormous effects, and to reporting a real improvement as no result.'] },
+          { label: 'Nothing much changed, since the calculation is the same whichever way round.', feedback: 'The arithmetic is the same and the meaning is reversed. One asks what you need; the other asks what you can get away with.', was: ['Nothing much, since the calculation is the same either way.'] },
+          { label: 'It made the test feasible to run, which is a reasonable trade at small scale.', feedback: 'Feasible and uninformative is not a trade; it is the appearance of one.', was: ['It made the test feasible, which is a reasonable trade.'] },
         ],
         repair: 'Choose the smallest effect that would matter from the problem, in step 3, and redo the calculation. Record the change in step 5.',
         recheck: 'Your effect size has a reason that is about the problem rather than the traffic.',
@@ -727,14 +728,23 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'You will ship the change and count duplicate payments before and after. Is that an experiment?',
         options: [
-          { label: 'No, and it is the best available answer, as long as the write-up names what else changed in the same period.', correct: true, feedback: 'A before-and-after count is confounded by everything else that happened that month. Stating that alongside the figure is what keeps it honest rather than what disqualifies it.' },
-          { label: 'Yes, in effect, since you are comparing two periods.', feedback: 'Two periods are not two randomly split groups. Everything about the world differs between them as well as your change.' },
-          { label: 'No, so it should not be reported at all.', feedback: 'At this scale it is the strongest evidence available, and the alternative is nothing.' },
+          { label: 'It is monitoring, worth doing if it names what else changed and claims no cause.', correct: true, feedback: 'A before-and-after count is confounded by everything else that happened that month. Reported with the confounding beside it, it is a useful trigger: a fall is not proof the change worked, and no change is not proof it failed.', was: ['No, and it is the best available answer, as long as the write-up names what else changed in the same period.'] },
+          { label: 'It is an experiment in effect, since it compares the period before with the period after.', feedback: 'Two periods are not two randomly split groups. Everything about the world differs between them as well as your change.', was: ['Yes, in effect, since you are comparing two periods.'] },
+          { label: 'It is not an experiment, so the counts should not be reported at all.', feedback: 'At this scale it is among the best evidence available, as long as it is labelled as monitoring rather than a verdict.', was: ['No, so it should not be reported at all.'] },
         ],
         repair: 'Write the confounding beside the before-and-after plan in step 5, naming something specific that also changed. Record the change.',
         recheck: 'Your alternative names its confounding rather than only its method.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case, assumed figures: an online second-hand bookshop wants to test whether showing delivery cost on the product page raises the share of baskets that complete. Today 20 of every 100 baskets complete. The owner would act on a rise to 25. The shop sees about 400 baskets a week, split evenly between the two versions.',
+      prompt: 'Work out the people needed per version and the duration, decide whether to run the test, and explain the decision.',
+      anchors: {
+        weak: 'Runs it for a week or two and plans to stop when the difference looks good, or picks the effect size from what the traffic allows.',
+        adequate: 'Computes about 1,094 baskets per version (2,188 in all), 2,188 ÷ 400 = 5.5 so 6 weeks, decides it can run with a fixed end date, and states the settings (5 per cent two-sided, 80 per cent power).',
+        strong: 'As adequate, and names a guardrail (such as returns or complaints), says the result will not explain why, and commits to no early stopping on a peek.',
+      },
+    },
     saveRoute: {
       auto: 'Your hypothesis, metrics, calculation, refusal and alternative save as you type, on this device first and then online.',
       external: 'The sample calculation belongs in a spreadsheet in your own folder with its inputs visible, so somebody can check it rather than trust it.',
@@ -800,9 +810,9 @@ export const guided15: Record<string, Guided> = {
           scenario: 'Made-up example. Reading a published claim about a redesign, and reading it as arithmetic.',
           beats: [
             { label: 'The claim', text: '“Completions rose 30 per cent after the redesign.” A clear number and a clear cause, in one sentence.' },
-            { label: 'What I checked first', text: 'The arithmetic. It was right: the figures given did produce 30 per cent, and I nearly stopped there.' },
+            { label: 'What I checked first', text: 'The arithmetic. It was right: completions per visit went from 5.0 to 6.5 per cent, which is a 30 per cent relative rise (1.5 percentage points), and I nearly stopped there.' },
             { label: 'What the who question found', text: 'New visitors only. Returning visitors were excluded, and a redesign is exactly the kind of change that affects the two differently.' },
-            { label: 'What the denominator question found', text: 'Completions per visit rose. Total visits fell over the same period, so the number of completed bookings actually went down.' },
+            { label: 'What the denominator question found', text: 'Visits fell from 10,000 to 7,000 over the same period, and completed bookings fell from 500 to 455, down 9 per cent. The rate rose because the denominator shrank faster than the count.' },
             { label: 'What the rewritten claim became', text: '“Completions per visit among new visitors rose over four weeks, during which total visits fell and a campaign ran, so the redesign’s contribution cannot be separated.” Longer, duller, and the only version that is true.' },
           ],
           wrongTurn: 'The wrong turn is checking whether the arithmetic is right, because that is the checkable part and it usually is. Everything that makes a number misleading happens before the arithmetic: who was counted, over what period, against what.',
@@ -883,9 +893,9 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Does the data speak for itself?',
         options: [
-          { label: 'It is selected, framed and presented by somebody with a purpose. The five questions are the ordinary work of reading a number.', correct: true, feedback: 'Asking who was counted is not an accusation. Every report includes some people and excludes others, over some period rather than another, and those choices are usually invisible in the claim.' },
-          { label: 'Yes, if it comes from a reliable source.', feedback: 'A reliable source selects and frames too. Reliability makes the numbers accurate rather than complete.' },
-          { label: 'Yes, once the methodology is published.', feedback: 'A published methodology is what lets you answer the five questions. It does not answer them for you.' },
+          { label: 'Rarely: somebody chose who was counted, over which period, against what.', correct: true, feedback: 'The five questions are the ordinary work of reading a number, not an accusation. Every report includes some people and excludes others, over some period rather than another, and those choices are usually invisible in the claim.', was: ['It is selected, framed and presented by somebody with a purpose. The five questions are the ordinary work of reading a number.'] },
+          { label: 'It does, as long as it comes from a source with a good reputation.', feedback: 'A reliable source selects and frames too. Reliability makes the numbers accurate rather than complete.', was: ['Yes, if it comes from a reliable source.'] },
+          { label: 'It does, once the methodology behind it has been published in full.', feedback: 'A published methodology is what lets you answer the five questions. It does not answer them for you.', was: ['Yes, once the methodology is published.'] },
         ],
         repair: 'Answer all five questions in step 2, including writing absent where the report does not say. Record the change in step 5.',
         recheck: 'No question is left blank rather than marked absent.',
@@ -893,9 +903,9 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'The arithmetic in the report checks out. Does that settle it?',
         options: [
-          { label: 'No. Everything that makes a number misleading happens before the arithmetic: who was counted, over what period, against what.', correct: true, feedback: 'Completions per visit can rise while completions fall, if visits fell further. Both numbers are correct and the claim is the opposite of what happened.' },
-          { label: 'Largely, since incorrect arithmetic is the main risk.', feedback: 'Incorrect arithmetic is rare in published work and easy to catch. The selection is neither.' },
-          { label: 'Yes, unless the source is untrustworthy.', feedback: 'Trustworthy people produce misleading numbers routinely, without intending to.' },
+          { label: 'Not on its own: most misleading numbers go wrong before any arithmetic is done.', correct: true, feedback: 'Who was counted, over what period and against what decide the meaning. Made up: completions per visit rose from 5.0 to 6.5 per cent while completed bookings fell from 500 to 455, because visits fell from 10,000 to 7,000. Every number is correct, and “completions rose” is false.', was: ['No. Everything that makes a number misleading happens before the arithmetic: who was counted, over what period, against what.'] },
+          { label: 'Largely, since incorrect arithmetic is the main risk in published figures.', feedback: 'Incorrect arithmetic is rare in published work and easy to catch. The selection is neither.', was: ['Largely, since incorrect arithmetic is the main risk.'] },
+          { label: 'It does, unless the source itself is known to be untrustworthy.', feedback: 'Trustworthy people produce misleading numbers routinely, without intending to.', was: ['Yes, unless the source is untrustworthy.'] },
         ],
         repair: 'Answer the denominator question in step 2 specifically, and say what would have had to change for the claim to be true. Record the change in step 5.',
         recheck: 'Your denominator answer says what the number is out of.',
@@ -903,14 +913,23 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Your rewritten claim is three times as long and has no headline in it. Is that a failure?',
         options: [
-          { label: 'No. That length is what the figures actually support, and the original was short because it said more than they do.', correct: true, feedback: 'The aim is honesty rather than caution: the smaller true statement, written readably. Hedging the large claim would be worse, because qualifications get dropped when a claim is repeated.' },
-          { label: 'Yes, since nobody will read it.', feedback: 'People read specific sentences perfectly well. What they do not read is a claim buried in four qualifications.' },
-          { label: 'Yes, the rewrite should keep the original structure.', feedback: 'The original structure is what carried the unsupported part.' },
+          { label: 'Not necessarily: the original was short because it said more than the figures do.', correct: true, feedback: 'The aim is honesty rather than caution: the smaller true statement, written readably. Hedging the large claim would be worse, because qualifications get dropped when a claim is repeated.', was: ['No. That length is what the figures actually support, and the original was short because it said more than they do.'] },
+          { label: 'It is, because nobody will read a claim that long or quote it to anyone.', feedback: 'People read specific sentences perfectly well. What they do not read is a claim buried in four qualifications.', was: ['Yes, since nobody will read it.'] },
+          { label: 'It is; a good rewrite keeps the original structure and just softens it.', feedback: 'The original structure is what carried the unsupported part.', was: ['Yes, the rewrite should keep the original structure.'] },
         ],
         repair: 'Check your rewrite in step 4 states a smaller true thing rather than the same thing with qualifications. Record the change in step 5.',
         recheck: 'The rewrite could be defended to somebody holding the underlying data.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a library service’s annual report says “Online renewals up 40 per cent after our app launch”. The small print shows renewals counted for March to May this year against December to February last year, and that the branch renewal desks closed for refurbishment this spring. Total loans across the service fell slightly.',
+      prompt: 'Name the two questions that change the reading most, and rewrite the claim so it says only what the figures support, explaining why.',
+      anchors: {
+        weak: 'Checks or accepts the arithmetic and stops, or calls the report dishonest without saying what is missing.',
+        adequate: 'Names the comparison period (spring against winter is not comparable) and what else changed (desks closed, pushing renewals online), and rewrites without crediting the app alone.',
+        strong: 'As adequate, and asks for the denominator (renewals per loan, given loans fell) and what decision the figure is meant to justify, keeping the rewrite readable.',
+      },
+    },
     saveRoute: {
       auto: 'The claim, the five answers, the presentation notes and the rewrite save as you type, on this device first and then online.',
       external: 'Keep a copy or a screenshot of the original in your own folder, since published pages change and the rewrite needs its original beside it.',
