@@ -76,7 +76,7 @@ export const module15: Lesson[] = [
     misconception:
       "“More metrics give a fuller picture.” They give more numbers to argue with. Three numbers connected to an outcome, with their limits stated, support decisions; twenty unconnected numbers support whichever conclusion someone wanted.",
     example:
-      "The tree for the booking product: outcome — people who intend to attend a class actually attend one. Beneath it: they find a suitable class; they complete a booking without duplicating payment; they arrive prepared. Beneath those: searches that produce results, bookings completed in one session, duplicate payments, prepared-arrival reports from the provider. Observability: the first two are unobservable without analytics; duplicate payments are countable from the provider's records; preparedness is only askable. Two candidate metrics were removed for being unactionable, including time on page.",
+      "Made-up example: the tree for the booking product: outcome — people who intend to attend a class actually attend one. Beneath it: they find a suitable class; they complete a booking without duplicating payment; they arrive prepared. Beneath those: searches that produce results, bookings completed in one session, duplicate payments, prepared-arrival reports from the provider. Observability: the first two are unobservable without analytics; duplicate payments are countable from the provider's records; preparedness is only askable. Two candidate metrics were removed for being unactionable, including time on page.",
     freeToolPath:
       "Paper or a text file for the tree. Nothing else; this lesson is reasoning, not tooling.",
     outputs: [
@@ -268,14 +268,14 @@ export const module15: Lesson[] = [
       "A funnel is a simple instrument: define the steps of one task, count how many people reach each, and look at where the number falls. Its value is direction — it tells you where to spend qualitative effort — and its danger is that the shape looks explanatory when it is only descriptive.",
       "Every drop has multiple explanations. People leaving at payment might not trust the payment, might have discovered a cost, might have intended to check with someone, or might have been interrupted. The funnel cannot separate these, and the choice between them is usually made by whoever has the strongest opinion unless someone goes and finds out.",
       "Some drops are healthy. A step that filters out people who cannot attend on that date is doing its job, and treating every fall as a leak leads to designs that push people forward into commitments they will regret and cancel. Ask what a correct drop would look like before treating one as a problem.",
-      "Because you have no real traffic, this lesson uses synthetic counts, and the rule from the resource catalog applies: label them synthetic wherever they appear, including in a portfolio. A funnel built from invented numbers teaches the reasoning and proves nothing about a real product.",
+      "Because you have no real traffic, this lesson uses synthetic counts, and the rule from the resource catalog applies: label them synthetic wherever they appear, including in a portfolio. A funnel built from invented numbers teaches the reasoning and proves nothing about a real product; it cannot confirm or locate anything you observed in research either. The Funnel tool in this lesson's uncertainty calculator takes your step counts and shows the people lost and the proportional drop (lost ÷ reached) at each step, so you can check your own arithmetic.",
     ],
     misconception:
       "“The funnel shows the problem is at checkout.” It shows people stop there. The problem may have been created three steps earlier by a price that was not shown, and the funnel cannot tell you that.",
     example:
-      "A synthetic funnel for the booking task, clearly labelled: 1,000 reach the class list, 420 open a class, 180 begin booking, 96 reach payment, 71 complete. The largest proportional drop is from opening a class to beginning a booking. Three explanations that fit equally: the price is higher than expected at that point; the date is inconvenient and there is no easy route to alternatives; and people are checking with someone else and will return later, which the funnel would count as a loss. The third would need a returning-visitor view the data does not have. The write-up marks every number synthetic.",
+      "Made-up example, synthetic counts throughout: 1,000 reach the class list, 420 open a class, 180 begin booking, 96 reach payment, 71 complete. The drops are 580 of 1,000 (58.0 per cent), 240 of 420 (57.1 per cent), 84 of 180 (46.7 per cent) and 25 of 96 (26.0 per cent). The largest proportional drop is the first, from the list to opening a class, and it is also the largest number lost. Opening a class to beginning a booking is almost as steep and is made of people who had already chosen a class, so it was looked at first: a judgement about commitment, not a bigger percentage. Three explanations fit that drop equally: the price is higher than expected at that point; the date is inconvenient and there is no easy route to alternatives; and people are checking with someone else and will return later, which the funnel would count as a loss. The third would need a returning-visitor view the data does not have. The write-up marks every number synthetic.",
     freeToolPath:
-      "A spreadsheet or a hand-drawn chart with synthetic counts. No analytics account is needed; the catalog's analytics demo account remains optional and unverified for signed-in use.",
+      "A spreadsheet or a hand-drawn chart with synthetic counts, checked with the Funnel tool in this lesson's uncertainty calculator. No analytics account is needed; the catalog's analytics demo account remains optional and unverified for signed-in use.",
     outputs: [
       "A funnel of one task with clearly labelled synthetic counts",
       "The largest drop identified proportionally",
@@ -296,7 +296,7 @@ export const module15: Lesson[] = [
         title: "Populate with synthetic counts",
         instructions: [
           "Invent plausible counts and label them synthetic.",
-          "Calculate the proportional drop at each step, not just the absolute.",
+          "Calculate people lost and lost ÷ reached at each step; check them with the Funnel tool in the uncertainty calculator.",
         ],
       },
       {
@@ -333,7 +333,7 @@ export const module15: Lesson[] = [
       {
         question: "Why look at proportional drops?",
         answer:
-          "Because a small absolute fall late in a funnel can be a large proportion of the people who got that far, and that is where the design is failing the committed.",
+          "Because steps start with different numbers of people. Lost ÷ reached makes them comparable: a small absolute fall late in a funnel can be the steepest drop among people who had already committed. The proportions can agree with the counts, as in this lesson's example, or disagree.",
       },
       {
         question: "When is a drop healthy?",
@@ -461,17 +461,17 @@ export const module15: Lesson[] = [
       "Rewriting a claim you cannot support is the exercise, not a failure.",
     ],
     explanation: [
-      "The assigned interval reading explains that a rate is an estimate with uncertainty attached, and that the uncertainty shrinks slowly as the sample grows. At the sizes available to you — a survey of twenty-two, a test of five — the interval around any percentage covers so much ground that the percentage carries almost no information, which is why this course has insisted on counts since m05.",
+      "The assigned interval reading explains that a rate is an estimate with uncertainty attached, and that the uncertainty shrinks slowly as the sample grows. At the sizes available to you — a survey of twenty-two, a test of five — the interval around any percentage covers so much ground that the percentage carries far less information than its digits suggest: 9 of 22 has a 95 per cent Wilson interval from about 23 to 61 per cent. That is why this course has insisted on counts since m05. The One rate tool in this lesson's uncertainty calculator computes that interval for you.",
       "The practical rule has two branches. If you must report a rate, attach the interval and show your inputs. If the interval is so wide that the rate is uninformative, report the count and let the reader see the size directly. Both are honest; only the bare percentage is not.",
-      "The sample-size reading is for planning: it tells you what a study designed to measure a binary outcome would need. It is not a justification for a claim made from a smaller sample, and it explicitly excludes surveys, card sorting and tree testing, which is why m05, m06 and m10 all reported counts.",
-      "Comparing two rates is harder than reporting one, because both carry intervals and the difference carries a wider one still. Two overlapping intervals do not establish a difference, and reporting “A improved on B” from small samples is the failure mode most likely to reach a decision meeting unchallenged.",
+      "The sample-size reading is for planning: it tells you what a study designed to estimate one metric from one group would need, such as about 40 participants for a binary success rate at a 15 per cent margin of error and 95 per cent confidence. It is not a justification for a claim made from a smaller sample, and it does not cover surveys, card sorting, tree testing or comparisons between two versions, which is part of why m05, m06 and m10 reported counts.",
+      "Comparing two rates is harder than reporting one. Compute the interval for the difference itself, which the Two rates tool does with Newcombe's method; do not judge by whether the two separate intervals overlap, because overlap is not a test either way. Made up: 120 of 200 against 95 of 200 have overlapping separate intervals, yet the difference, 12.5 points, has an interval of about 2.7 to 21.9 points that excludes zero; 44 of 100 against 36 of 100 gives an interval of about −5.5 to +21.1 points that includes it. Reporting “A improved on B” without that interval is the failure most likely to reach a decision meeting unchallenged.",
     ],
     misconception:
       "“Percentages are more professional than counts.” They look more precise. At small samples the precision is fictional, and a reader who checks the sample will trust nothing else in the document.",
     example:
-      "Three rates were reworked. From the m05 survey: 9 of 22 unsure their payment had gone through, previously written as 41 per cent. With the interval computed and shown, the range covered roughly a quarter to three-fifths, so the claim became the count. From the m10 test: 2 of 3 could not tell the place was held, previously written as 67 per cent, rewritten as the count with the sample route stated. From the synthetic funnel: a comparison between two steps was removed entirely, because the numbers were invented and comparing invented numbers produces nothing.",
+      "Made-up example: three rates were reworked. From the m05 survey: 9 of 22 unsure their payment had gone through, previously written as 41 per cent. With the 95 per cent Wilson interval computed and shown (about 23 to 61 per cent, from just under a quarter to about three-fifths), the claim became the count. From the m10 test: 2 of 3 could not tell the place was held, previously written as 67 per cent; its interval runs from about 21 to 94 per cent, so it was rewritten as the count with the sample route stated. From the synthetic funnel: a comparison between two steps was removed entirely, because the numbers were invented and comparing invented numbers produces nothing.",
     freeToolPath:
-      "A spreadsheet or calculator using a published interval formula, with your inputs shown. The interval reading gives no formulas, so name the one you used.",
+      "The uncertainty calculator in this lesson (Wilson score interval for one rate; Newcombe's method for the difference between two), or a spreadsheet using the same published formulas, with your inputs shown. The interval reading gives no formulas, so name the method you used.",
     outputs: [
       "Three rates with computed intervals and inputs shown",
       "Any unsupportable claim rewritten as a count",
@@ -507,7 +507,7 @@ export const module15: Lesson[] = [
         minutes: 25,
         title: "Handle a comparison",
         instructions: [
-          "Take a comparison between two rates and examine both intervals.",
+          "Take a comparison between two rates and compute the 95 per cent interval for their difference.",
           "Qualify or abandon the comparison, and say why.",
         ],
       },
@@ -529,12 +529,12 @@ export const module15: Lesson[] = [
       {
         question: "What is the sample-size reading for?",
         answer:
-          "Planning a study designed to measure. It does not justify claims from smaller samples and excludes surveys, card sorting and tree testing.",
+          "Planning a study designed to estimate one metric from one group. It does not justify claims from smaller samples, and it does not cover surveys, card sorting, tree testing or comparisons between two versions.",
       },
       {
         question: "Why is comparing two rates harder?",
         answer:
-          "Because both carry uncertainty and the difference carries more. Overlapping intervals do not establish that one is higher than the other.",
+          "Because both carry uncertainty and the difference carries more. Compute the interval for the difference directly; whether the two separate intervals overlap is not a test either way.",
       },
     ],
     rubric: [
@@ -579,11 +579,11 @@ export const module15: Lesson[] = [
         levels: [
           "Comparison retained unqualified.",
           "Qualified vaguely.",
-          "Examined against both intervals and decided.",
-          "As adequate, and the decision is to abandon it where the intervals overlap substantially.",
+          "Examined using the interval for the difference, and decided.",
+          "As adequate, and the write-up says that overlapping separate intervals are not a test.",
         ],
         remediation:
-          "Compute both intervals and check whether they overlap; if they do, the comparison is not supported.",
+          "Compute the interval for the difference with the Two rates tool; if it includes zero, say the data are consistent with no difference, or drop the comparison.",
         recheck: "The comparison decision.",
       },
       {
@@ -604,7 +604,7 @@ export const module15: Lesson[] = [
     repairs: [
       "If intervals are asserted, compute them and show the inputs.",
       "If percentages remain, rewrite them as counts with the sample route.",
-      "If a comparison stands unqualified, check both intervals.",
+      "If a comparison stands unqualified, compute the interval for the difference.",
       "If no rule exists, write the threshold you will hold to.",
     ],
     portfolio:
@@ -618,7 +618,7 @@ export const module15: Lesson[] = [
         purpose: "Supplies the reasoning and the reason to report counts.",
         minutes: "15–25",
         limits:
-          "Free reading, no account. Verified 2026-09-06. It deliberately gives no formulas, so name the one you used and show your inputs.",
+          "Free reading, no account. Verified 2026-09-06. It deliberately gives no formulas; this lesson's uncertainty calculator supplies the Wilson method, so name it and show your inputs.",
         fallbackId: "R45",
       },
       {
@@ -628,7 +628,7 @@ export const module15: Lesson[] = [
           "Shows what a study designed to measure would need, as a contrast with what you have.",
         minutes: "20–30",
         limits:
-          "Free reading, no account. Verified 2026-09-06. Binary success metrics only; it excludes A/B tests, surveys, card sorting and tree testing and does not license claims from smaller samples.",
+          "Free reading, no account. Verified 2026-09-06; content rechecked 2026-10-04. It sizes a study estimating one metric from one group; it does not cover A/B tests, surveys, card sorting or tree testing, and does not license claims from smaller samples.",
         fallbackId: "R37",
       },
     ],
@@ -657,13 +657,13 @@ export const module15: Lesson[] = [
     explanation: [
       "A hypothesis is what makes an experiment interpretable. “Showing that the place is held will reduce duplicate payments, because participants told us they were unsure whether their place was secured” states the expectation and the reasoning, and it can be wrong — which is what distinguishes it from trying two designs to see which does better.",
       "One primary metric decides the result; guardrails prevent winning by damage. If the variant increases completions while increasing refund requests, the guardrail catches what the primary metric would have hidden. Choosing both before running is what stops the result being reinterpreted afterwards.",
-      "The assigned article is explicit about the constraints: A/B testing is unsuitable for low-traffic pages, needs a duration of one to two weeks beyond the sample requirement to cover behavioural fluctuation, and cannot reliably test several changes at once. Those are the facts that will make your test impossible, and knowing them precisely is the point of designing it.",
+      "The assigned article is explicit about the constraints: A/B testing is unsuitable for low-traffic pages, should run for at least one to two weeks even when traffic would fill the sample sooner, to cover fluctuations in behaviour, should not be stopped early because an interim look seems convincing, and cannot reliably test several changes at once. The sample comes from a standard two-proportion calculation (two-sided 5 per cent significance, 80 per cent power): going from 10 to 12 per cent needs 3,841 people per version. The duration is the total sample divided by eligible weekly traffic, rounded up to whole weeks. Those are the facts that will make your test impossible, and knowing them precisely is the point of designing it.",
       "The article is equally clear that a test cannot tell you why behaviour changed. That is why the honest plan for a learner without traffic is a designed experiment, a written refusal, and a qualitative alternative — three conversations, a small usability comparison — which answers a narrower question truthfully rather than a broader one falsely.",
     ],
     misconception:
       "“We can run a quick A/B test to settle this.” With low traffic, a short test produces a difference that is noise, and the noise will be read as a result. Designing the test properly is what shows why that would happen.",
     example:
-      "The designed test: hypothesis, that a held-place message reduces duplicate payments; variants, current and with the message; primary metric, duplicate payments per hundred bookings; guardrails, completion rate and support contacts. The required sample, using the article's reasoning, was far beyond the product's traffic — the honest calculation showed months of data for a plausible effect. The refusal was written, with what would change it: ten times the traffic, or a much larger expected effect. The alternative was three moderated comparisons plus counting duplicate payments in the provider's records before and after, with the confounding stated.",
+      "Made-up example, with assumed figures labelled as assumptions: hypothesis, that a held-place message reduces duplicate payments; variants, current and with the message; primary metric, duplicate payments per hundred bookings, assumed to be 6 today; guardrails, completion rate and support contacts. The smallest effect worth acting on was 6 down to 4 per hundred. At two-sided 5 per cent significance and 80 per cent power that needs 1,863 bookings per version, 3,726 in all; at an assumed 150 bookings a week that is 24.8 weeks, rounded up to 25, about six months. The refusal was written, with what would change it: several times the traffic, or a much larger expected effect. The alternative was three moderated comparisons plus counting duplicate payments in the provider's records before and after, labelled as monitoring with the confounding stated, not as a result.",
     freeToolPath:
       "Written design plus a spreadsheet for the sample calculation. No experimentation platform is involved, and none would help without traffic.",
     outputs: [
@@ -702,7 +702,7 @@ export const module15: Lesson[] = [
         minutes: 25,
         title: "Estimate the requirement",
         instructions: [
-          "Estimate the sample needed for that effect and the duration.",
+          "Estimate the sample per version for that effect (two-sided 5 per cent, power 80 per cent) and the duration in whole weeks.",
           "Compare with the traffic you actually have.",
         ],
       },
@@ -777,7 +777,7 @@ export const module15: Lesson[] = [
           "No estimate.",
           "An estimate without comparison to real traffic.",
           "Both, with the shortfall visible.",
-          "As adequate, and the estimate includes the article's recommended minimum duration on top of the sample requirement.",
+          "As adequate, and the duration is rounded up to whole weeks, is never shorter than the article's one-to-two-week minimum, and is fixed before starting.",
         ],
         remediation:
           "Estimate the sample for your smallest meaningful effect and set it beside your actual traffic.",
@@ -816,7 +816,7 @@ export const module15: Lesson[] = [
           "Supplies the constraints that make the refusal specific rather than vague.",
         minutes: "20–30",
         limits:
-          "Free reading, no account. Verified 2026-09-06; published 30 August 2024. It names no tools, excludes multivariate design and gives no post-test analysis. With no traffic, the honest exercise is the design and the refusal, never a claimed result.",
+          "Free reading, no account. Verified 2026-09-06; content rechecked 2026-10-04; published 30 August 2024. It recommends at least one to two weeks even with sufficient traffic and warns against stopping early; it names no specific tool, points to multivariate testing without covering it, and gives no post-test analysis. With no traffic, the honest exercise is the design and the refusal, never a claimed result.",
         fallbackId: "R37",
       },
       {
@@ -826,7 +826,7 @@ export const module15: Lesson[] = [
           "Gives a basis for the sample estimate while stating its own exclusions.",
         minutes: "20–30",
         limits:
-          "Free reading, no account. Verified 2026-09-06. Binary metrics only; it explicitly does not cover A/B tests, so treat the estimate as an order of magnitude rather than a calculation.",
+          "Free reading, no account. Verified 2026-09-06; content rechecked 2026-10-04. It sizes a study estimating one metric from one group and does not cover comparing two versions, so it cannot size an A/B test; use the two-proportion formula given in this lesson instead.",
         fallbackId: "R37",
       },
     ],
@@ -861,7 +861,7 @@ export const module15: Lesson[] = [
     misconception:
       "“The data speaks for itself.” Data is selected, framed and presented by someone with a purpose. The questions are not an accusation; they are the ordinary work of reading a number.",
     example:
-      "A published figure claimed a 30 per cent improvement in completions after a redesign. The five questions: who was counted — new visitors only, it turned out, excluding returning ones; what period — four weeks against a comparison period containing a public holiday; what else changed — a marketing campaign ran concurrently; what is the denominator — total visits fell, so completions per visit rose while completions fell; and what decision it justified — further investment in the redesign. The claim was rewritten as: completions per visit rose over four weeks, during which visits fell and a campaign ran, so the redesign's contribution cannot be separated.",
+      "Made-up example: a published figure claimed a 30 per cent improvement in completions after a redesign. The five questions: who was counted — new visitors only, it turned out, excluding returning ones; what period — four weeks against a comparison period containing a public holiday; what else changed — a marketing campaign ran concurrently; what is the denominator — visits fell from 10,000 to 7,000 while completed bookings fell from 500 to 455, so completions per visit rose from 5.0 to 6.5 per cent (the 30 per cent, a relative rise of 1.5 points) while completions fell by 9 per cent; and what decision it justified — further investment in the redesign. The claim was rewritten as: completions per visit rose over four weeks, during which visits fell and a campaign ran, so the redesign's contribution cannot be separated.",
     freeToolPath:
       "Any published report or article with figures. The exercise is reading and writing; no data access is needed.",
     outputs: [
@@ -1056,9 +1056,9 @@ export const module15: Lesson[] = [
     misconception:
       "“Quantitative evidence is more objective.” It is more precise about different things. A precisely counted event whose cause nobody understands is not more objective than three careful observations of why it happens.",
     example:
-      "The pairing: the synthetic funnel showed the largest drop between opening a class and starting a booking; the m05 observation showed a participant checking the price against a screenshot from a friend, twice, because the displayed price did not match what she remembered. The count located the problem, the observation supplied a mechanism, and together they produced a specific change — showing the price consistently and earlier. Written separately, the count would have produced a redesign of the booking button and the observation would have been dismissed as one person.",
+      "Made-up example: the pairing used a real count rather than the synthetic funnel, because invented numbers cannot corroborate a real observation. The count: 14 messages in the provider's support inbox in March asked whether a price had changed between the listing and the booking form, out of 380 bookings. The m05 observation: a participant checked the price against a screenshot from a friend, twice, because the displayed price did not match what she remembered. The count said the confusion reaches more than one person, the observation supplied a mechanism, and together they produced a specific change — showing the price consistently and earlier. Written separately, the count would have produced a redesign of the booking button and the observation would have been dismissed as one person.",
     freeToolPath:
-      "Your existing findings and a written comparison. No new data collection is required.",
+      "Your existing findings and a written comparison. No new data collection is required; without a consented observation or a real count, use the supplied practice notes and label the pairing as practice.",
     outputs: [
       "One quantitative and one qualitative finding about the same behaviour",
       "What each explains that the other cannot",
@@ -1252,7 +1252,7 @@ export const module15: Lesson[] = [
     misconception:
       "“Collect everything now, decide later.” Later never arrives, and in the meantime you hold data you cannot justify, cannot delete confidently and must protect. Deciding first is cheaper and safer.",
     example:
-      "The plan listed nine events, each tied to a node in the metric tree, with a purpose, an owner and a retention period of ninety days. Two refusals were recorded: no free-text capture from the search box, because the question it would answer did not justify holding whatever people type; and no precise location, since the coarse area answered the only question that mattered. One event was reduced rather than removed: rather than recording the exact class booked, it recorded that a booking occurred, since the identity of the class answered no question in the tree.",
+      "Made-up example: the plan listed nine events, each tied to a node in the metric tree, with a purpose, an owner and a retention period of ninety days. Two refusals were recorded: no free-text capture from the search box, because the question it would answer did not justify holding whatever people type; and no precise location, since the coarse area answered the only question that mattered. One event was reduced rather than removed: rather than recording the exact class booked, it recorded that a booking occurred, since the identity of the class answered no question in the tree.",
     freeToolPath:
       "A written plan. Whether it is ever implemented is a separate question; the reasoning is the deliverable.",
     outputs: [
@@ -1441,15 +1441,15 @@ export const module15: Lesson[] = [
     explanation: [
       "A metric is a sum of behaviour from many causes. Term dates, festivals, weather, a mention somewhere, a campaign, a competitor's outage — each moves numbers without anyone touching the design. Before attributing a change to your work, listing what else was happening is the minimum honest step, and it frequently produces a better explanation than the one you were hoping for.",
       "Mixing new and returning people is the commonest hidden confound in a product metric. New people are learning; returning people are executing. A change that helps beginners and slows experts can leave the combined number flat, which is the shape most likely to be reported as no effect when in fact there were two.",
-      "A cohort is the practical response: take the people who arrived in one week and follow them, then compare with the people who arrived in another. It does not control for everything, and it removes the largest and most common distortion, which is that the mix of people changed rather than their behaviour.",
+      "A cohort is the practical response: take the people who arrived in one week and follow them, then compare with the people who arrived in another. It does not control for everything, and it removes one common distortion, which is that the mix of people changed rather than their behaviour. The Two rates tool in this lesson's uncertainty calculator gives the difference between two cohorts with its 95 per cent interval, which covers chance and nothing else.",
       "The limitations paragraph is the part that matters most here. Even a cohort comparison at your scale cannot separate a design change from a concurrent campaign, and saying so is what keeps the analysis useful rather than persuasive.",
     ],
     misconception:
-      "“The number went up after we shipped, so the change worked.” Something else also happened in that period, always. Naming the alternatives is not pedantry; it is the difference between a finding and a coincidence you have committed to.",
+      "“The number went up after we shipped, so the change worked.” Something else usually happened in that period too, and ordinary variation can be large. Naming the alternatives is not pedantry; it is the difference between a finding and a coincidence you have committed to. The same goes the other way: a flat number does not prove the change did nothing.",
     example:
-      "The synthetic funnel was extended over eight weeks. Completions rose in week five, when the design shipped — and also when a local festival ended and a provider's promotion ran. Three non-design explanations were listed. The comparison was reworked as a cohort: people arriving in week two versus week six, followed for their first fourteen days, which removed the effect of the changing mix of new and returning visitors. The write-up stated plainly that the promotion could not be separated, that the numbers were synthetic, and that the exercise demonstrates the method rather than a result.",
+      "Made-up example, synthetic counts: the practice funnel was extended over eight weeks. Completions rose in week five, when the design shipped — and also when a local festival ended and a provider's promotion ran. Three non-design explanations were listed. The comparison was reworked as a cohort: people arriving in week two versus week six, followed for their first fourteen days, which removed the effect of the changing mix of new and returning visitors. Week six booked at 30 of 320 (9.4 per cent) and week two at 21 of 300 (7.0 per cent); the Two rates tool gave a difference of 2.4 points with a 95 per cent interval of about −2.0 to +6.8 points, so even chance alone could explain it. The write-up stated plainly that the promotion could not be separated, that the numbers were synthetic, and that the exercise demonstrates the method rather than a result.",
     freeToolPath:
-      "A spreadsheet with your synthetic counts split by arrival week. No analytics tool is required.",
+      "A spreadsheet with your synthetic counts split by arrival week, and the Two rates tool in this lesson's uncertainty calculator. No analytics tool is required.",
     outputs: [
       "A metric over time with non-design explanations listed",
       "A cohort comparison replacing a before-and-after one",
@@ -1479,7 +1479,7 @@ export const module15: Lesson[] = [
         instructions: [
           "Split people by the period they arrived.",
           "Follow each group for the same length of time.",
-          "Compare like with like rather than period totals.",
+          "Compare like with like rather than period totals, with the difference's interval from the Two rates tool.",
         ],
       },
       {
@@ -1608,7 +1608,7 @@ export const module15: Lesson[] = [
           "Prevents reading a small cohort difference as a real effect.",
         minutes: "15–25",
         limits:
-          "Free reading, no account. Verified 2026-09-06. No formulas; use a published one and show inputs if you quantify anything.",
+          "Free reading, no account. Verified 2026-09-06. No formulas; use this lesson's uncertainty calculator or another published method and show inputs if you quantify anything.",
         fallbackId: "R45",
       },
     ],
@@ -1643,7 +1643,7 @@ export const module15: Lesson[] = [
     misconception:
       "“I explained the caveats when I presented it.” The caveats stayed in the room; the chart went everywhere. If a limitation matters, it belongs in the picture.",
     example:
-      "The analysis was presented in three slides. First: the decision — fix the held-place message before touching payment, because that is where the evidence points. Second: the evidence, with the funnel chart labelled synthetic, the sample of the qualitative work stated on the slide, and the interval shown on the one rate that appeared. Third: what would change the conclusion — if duplicate payments did not fall over four weeks, the cause is elsewhere. Afterwards, the person remembered the decision and the phrase “two of three”, which was the intended pair; nobody quoted a percentage, because none was shown.",
+      "Made-up example: the analysis was presented in three slides. First: the decision — fix the held-place message before touching payment, because that is where the evidence points. Second: the evidence — two of the three people watched could not tell their place was held, with the sample on the slide; the provider's count of duplicate payments with its period; and the one rate shown, 9 of 22 survey answers, carrying its 95 per cent interval of about 23 to 61 per cent. The synthetic funnel stayed off the evidence slide, because invented numbers cannot support a real decision. Third: what would prompt a rethink — if duplicate payments are not lower after four weeks, the team looks next at the payment confirmation; that would not prove the message had no effect. Afterwards, the person remembered the decision and the phrase “two of three”, which was the intended pair; nobody quoted a percentage, because none was shown.",
     freeToolPath:
       "A page of text or three slides in any free editor, with a hand-drawn or spreadsheet chart. Nothing here requires a presentation platform.",
     outputs: [
@@ -1841,7 +1841,7 @@ export const module15: Lesson[] = [
     misconception:
       "“We should be data-driven.” Data-informed decisions are good; waiting for data on decisions that are cheap to reverse is expensive theatre, and it usually means the current problem continues while everyone feels rigorous.",
     example:
-      "Two decisions were identified. First: the wording of the held-place message. Cheap to change, cheap to reverse, no traffic to test it with — the decision was to write the clearest version, ship it, and ask three people the following week. Second: whether to shorten the booking form by removing a field. This affects data the provider relies on, so removal is not cheaply reversible; the decision was to ask the provider what the field is used for before touching it. One measurement was refused outright: a proposal to test which cancellation flow produced fewer cancellations, which would have been a test of how well the flow obstructs people.",
+      "Made-up example: two decisions were identified. First: the wording of the held-place message. Cheap to change, cheap to reverse, no traffic to test it with — the decision was to write the clearest version, ship it, and ask three people the following week. Second: whether to shorten the booking form by removing a field. This affects data the provider relies on, so removal is not cheaply reversible; the decision was to ask the provider what the field is used for before touching it. One measurement was refused outright: a proposal to test which cancellation flow produced fewer cancellations, which would have been a test of how well the flow obstructs people.",
     freeToolPath:
       "Written reasoning. This lesson is judgement, not tooling.",
     outputs: [
@@ -2038,7 +2038,7 @@ export const module15: Lesson[] = [
     misconception:
       "“Without analytics we cannot measure anything.” You can count what a small business already records, count things by hand, and ask people. What you cannot do is claim precision or scale, and saying so is what makes the rest usable.",
     example:
-      "The plan had three measures, each with a claim and a limit. Duplicate payments per hundred bookings, from the provider's records, monthly — supports a statement about payment confusion, not about its cause. Cancellations within 24 hours of booking, monthly — supports a statement about commitment confidence, not about satisfaction. Five conversations a quarter with recent bookers — supports mechanisms, not prevalence. Review date set. Unanswered: anything about people who never reached the site, anything about how the numbers compare with similar providers, and anything at population scale.",
+      "Made-up example: the plan had three measures, each with a claim and a limit. Duplicate payments per hundred bookings, from the provider's records, monthly — supports a statement about how often people pay twice, not about why. Cancellations within 24 hours of booking, monthly — supports a statement about how many bookings are reversed within a day, not about why or about satisfaction. Five conversations a quarter with recent bookers — supports mechanisms, not prevalence. Review date set. Unanswered: anything about people who never reached the site, anything about how the numbers compare with similar providers, and anything at population scale.",
     freeToolPath:
       "A written plan and a spreadsheet. The provider's own records and a handful of conversations are the whole data infrastructure.",
     outputs: [
@@ -2232,7 +2232,7 @@ export const module15: Lesson[] = [
     misconception:
       "“Being rigorous makes me less useful.” Being unreliable makes you less useful. A person who says what the evidence supports, offers the next step, and is right about the limits becomes the person whose numbers are trusted.",
     example:
-      "The limitations page listed: all funnel figures synthetic and labelled; the survey at 22 responses through two groups; usability findings from three and then two participants; no analytics and no traffic, so no rate is reportable at population scale; the cohort exercise demonstrating method on synthetic data only. The rehearsed exchange: asked for the percentage improvement, the answer was “I cannot give you one honestly — what I have is that two of three participants could not tell their place was held, and duplicate payments in the provider's records over the next month would tell us whether the change helped. I can have that number in four weeks.” The temptation recorded: wanting to present the synthetic funnel without the label because it looked convincing.",
+      "Made-up example: the limitations page listed: all funnel figures synthetic and labelled; the survey at 22 responses through two groups; usability findings from three and then two participants; no analytics and no traffic, so no rate is reportable at population scale; the cohort exercise demonstrating method on synthetic data only. The rehearsed exchange: asked for the percentage improvement, the answer was “I cannot give you one honestly — what I have is that two of three participants could not tell their place was held. The provider's records over the next month will show whether duplicate payments fall; that will not prove the change caused it, but it tells us where to look next. I can have that number in four weeks.” The temptation recorded: wanting to present the synthetic funnel without the label because it looked convincing.",
     freeToolPath:
       "One written page. Rehearsal with another person or aloud to yourself.",
     outputs: [
