@@ -151,7 +151,7 @@ export const guided15: Record<string, Guided> = {
         options: [
           { label: 'They give more to argue with; a few tied to an outcome support decisions.', correct: true, feedback: 'Three numbers connected to an outcome, with their limits stated, support decisions; twenty unconnected ones support whichever conclusion somebody wanted. A small tree with observability marked is harder to misuse and easier to act on.', was: ['They give more numbers to argue with. Three connected to an outcome with their limits stated support decisions; twenty unconnected ones support whichever conclusion somebody wanted.'] },
           { label: 'They do, as long as each one of them is accurately recorded.', feedback: 'Accuracy is not the problem. Twenty accurate numbers with no connection to an outcome is a menu.', was: ['Yes, as long as each one is accurate.'] },
-          { label: 'They do, because nobody can know in advance which one will matter.', feedback: 'The tree is how you decide which will matter, which is the work this lesson is about.', was: ['Yes, because you cannot know in advance which will matter.'] },
+          { label: 'They do, because nobody can know in advance which of the numbers will turn out to matter.', feedback: 'The tree is how you decide which will matter, which is the work this lesson is about.', was: ['Yes, because you cannot know in advance which will matter.'] },
         ],
         repair: 'Check every activity node in step 3 has a path upward, and remove or mark the ones that do not. Record the change in step 5.',
         recheck: 'No number in your tree floats without a connection.',
@@ -161,7 +161,7 @@ export const guided15: Record<string, Guided> = {
         options: [
           { label: 'Its top becomes a vague word like engagement, which is not an outcome anybody wants.', correct: true, feedback: 'The available numbers do not add up to an outcome. Nobody comes to a tool library to engage with it. Starting from the outcome produces a shorter tree with more unobservable nodes, which is the honest shape.', was: ['The top becomes a word nobody outside the team wants, such as engagement, because the available numbers do not add up to an outcome.'] },
           { label: 'Nothing much changes, since the numbers in it are the same either way.', feedback: 'The numbers are the same and their meaning is not. Built upward, searches and time on page look like they belong.', was: ['Nothing much, since the numbers are the same either way.'] },
-          { label: 'It is more practical, because unobservable nodes cannot be used anyway.', feedback: 'Unobservable nodes are what tell you what you are missing. Leaving them out makes the gap invisible.', was: ['It is more practical, since unobservable nodes cannot be used.'] },
+          { label: 'It is more practical, because unobservable nodes cannot be measured or used for anything anyway.', feedback: 'Unobservable nodes are what tell you what you are missing. Leaving them out makes the gap invisible.', was: ['It is more practical, since unobservable nodes cannot be used.'] },
         ],
         repair: 'Rebuild one branch in step 2 starting from the outcome, and see which of your numbers survive. Record the change in step 5.',
         recheck: 'Your top node is something a person outside the team would want.',
@@ -170,7 +170,7 @@ export const guided15: Record<string, Guided> = {
         question: 'Time on page is easy to get and everybody reports it. Should it be in your tree?',
         options: [
           { label: 'Probably not: it rises when people are interested and when lost, so it guides nothing.', correct: true, feedback: 'The test is what you would do if it doubled and what you would do if it halved. When the answer to both is nothing, the number exists to be reported rather than used.', was: ['No. It rises when people are interested and when they are lost, so no value of it changes what anybody does.'] },
-          { label: 'It should, since it is a widely used indicator of how engaged people are.', feedback: 'Engagement is the word that lets an unactionable number look meaningful. Ask which action a change in it would trigger.', was: ['Yes, since it is a useful indicator of engagement.'] },
+          { label: 'It should, since it is a widely used and easily understood indicator of how engaged people are.', feedback: 'Engagement is the word that lets an unactionable number look meaningful. Ask which action a change in it would trigger.', was: ['Yes, since it is a useful indicator of engagement.'] },
           { label: 'It should, as a supporting metric reported alongside the others.', feedback: 'Supporting metric usually means one that can be quoted when it agrees with you.', was: ['Yes, as a supporting metric alongside others.'] },
         ],
         repair: 'Apply the doubled-or-halved test to every leaf in step 5 and remove two. Record the change.',
@@ -335,7 +335,7 @@ export const guided15: Record<string, Guided> = {
         question: 'The funnel shows most people stop at checkout. Does that mean the problem is at checkout?',
         options: [
           { label: 'Not necessarily: the cause may sit earlier, such as a price nobody was shown.', correct: true, feedback: 'A funnel locates where to look, not what to fix. Several explanations can fit the same drop, and choosing one without evidence is how expensive redesigns of the wrong screen happen.', was: ['No. It shows people stop there. The problem may have been created three steps earlier by a price that was never shown.'] },
-          { label: 'It does, since checkout is the step where they actually leave the task.', feedback: 'Where somebody leaves is where the accumulated reasons become too much. It is not necessarily where any of them started.', was: ['Yes, since that is the step where they leave.'] },
+          { label: 'It does, since checkout is the step where they actually give up and leave the whole task.', feedback: 'Where somebody leaves is where the accumulated reasons become too much. It is not necessarily where any of them started.', was: ['Yes, since that is the step where they leave.'] },
           { label: 'It does, unless the earlier steps show drops of their own as well.', feedback: 'A step can create a problem without losing anybody, by setting an expectation that fails later.', was: ['Yes, unless the earlier steps also show drops.'] },
         ],
         repair: 'Write three explanations for your largest drop in step 3, at least one of which is about an earlier step. Record the change in step 5.',
@@ -346,7 +346,7 @@ export const guided15: Record<string, Guided> = {
         options: [
           { label: 'Not shown: the two drops are nearly equal, and the list holds the least committed people.', correct: true, feedback: 'The list step is steepest by less than a point, and on invented numbers that gap means nothing. Which step to look at first depends on who is leaving and whether leaving is healthy there; people who had opened a tool had already shown intent.', was: ['Probably not. The top of a funnel holds the least committed people, and losing most of them is correct.'] },
           { label: 'It is, since it loses the most people and has the highest percentage as well.', feedback: 'It does both, by a hair. The biggest drop is where to look, not proof of the biggest problem, and some people on a listing should leave.', was: ['Yes, since that is where most people are lost.'] },
-          { label: 'It is, because improving the first step would reach the largest number of people.', feedback: 'It would reach the most people, many of whom were never going to continue.', was: ['Yes, because improving it would affect the most people.'] },
+          { label: 'It is, because improving the first step would reach by far the largest number of people overall.', feedback: 'It would reach the most people, many of whom were never going to continue.', was: ['Yes, because improving it would affect the most people.'] },
         ],
         repair: 'Work out the people lost and the proportional drop at every step in step 2, then say which step you would look at first and why. Record the change in step 5.',
         recheck: 'Your choice of step rests on the working shown and on who is leaving, not on the count alone.',
@@ -519,7 +519,7 @@ export const guided15: Record<string, Guided> = {
         question: 'Are percentages more professional than counts?',
         options: [
           { label: 'They only look more precise; from small samples that precision is fictional.', correct: true, feedback: 'Sixty-seven per cent of three people is two people, with a 95 per cent interval of about 21 to 94 per cent. Counts read as less impressive and survive the first question, and a reader who checks the sample of a percentage may trust nothing else in the document.', was: ['They look more precise. At small samples the precision is fictional, and a reader who checks the sample will trust nothing else in the document.'] },
-          { label: 'They are, since a percentage allows comparison between different studies.', feedback: 'Comparison needs compatible definitions and an interval for the difference. A percentage from twenty-two people compares with very little.', was: ['Yes, since they allow comparison between studies.'] },
+          { label: 'They are, since a percentage allows fair comparison between different studies and samples.', feedback: 'Comparison needs compatible definitions and an interval for the difference. A percentage from twenty-two people compares with very little.', was: ['Yes, since they allow comparison between studies.'] },
           { label: 'They are, provided the sample size is stated somewhere nearby.', feedback: 'Stated nearby, the percentage is still the part that gets quoted.', was: ['Yes, provided the sample size is stated nearby.'] },
         ],
         repair: 'Rewrite your smallest-sample claim as a count with its route in step 3, and record the change in step 5.',
@@ -529,7 +529,7 @@ export const guided15: Record<string, Guided> = {
         question: 'In a made-up survey, 44 of 100 members at one branch and 36 of 100 at another were unsure their payment went through. The Two rates tool gives a difference of 8 points, with a 95 per cent interval from −5.5 to +21.1 points. What can you say?',
         options: [
           { label: 'The interval includes zero, so these counts fit no difference as well as a real one.', correct: true, feedback: 'The interval for the difference is the test. It runs from slightly below zero to about 21 points, so the honest move is to report it with that range or drop the comparison. Note the reason is the difference interval, not whether the two separate intervals overlap.', was: ['That the difference could easily be nothing. The honest move is to qualify it heavily or drop the comparison.'] },
-          { label: 'The first branch is eight points higher, which is exactly what the counts show.', feedback: 'The counts show it in these two samples. The interval for the difference includes zero, so another hundred members at each branch could easily narrow or reverse it.', was: ['That one is higher than the other, which is what the numbers show.'] },
+          { label: 'The first branch is eight points higher, which is exactly what the two sets of counts show.', feedback: 'The counts show it in these two samples. The interval for the difference includes zero, so another hundred members at each branch could easily narrow or reverse it.', was: ['That one is higher than the other, which is what the numbers show.'] },
           { label: 'There is no difference, because the two separate intervals overlap.', feedback: 'Overlap of two separate intervals is not a test either way: intervals can overlap while the difference is clear. And “no difference” goes too far, since the difference interval reaches 21 points.', was: ['That the difference is suggestive and worth investigating.'] },
         ],
         repair: 'Compute the interval for the difference in step 4 with the Two rates tool, and decide to qualify or abandon, with the reason. Record the change in step 5.',
@@ -539,7 +539,7 @@ export const guided15: Record<string, Guided> = {
         question: 'Thirty-two of your forty panel volunteers (80 per cent) preferred the new flow; the 95 per cent Wilson interval is about 65 to 90 per cent. Can you say most members prefer it?',
         options: [
           { label: 'Not from this: volunteers differ from other members, and no interval corrects that.', correct: true, feedback: 'The repair is to state the route and narrow the claim to the panel. Sample size and sample route are two different things, and only one of them has a formula.', was: ['The interval is not the problem. People who volunteer for a panel are unlike people who do not, and no arithmetic corrects that.'] },
-          { label: 'You can, since forty is a reasonable sample and the interval stays above half.', feedback: 'Forty of whom is the question the interval cannot answer. It describes chance among these volunteers, not the members who never volunteered.', was: ['Yes, forty is a reasonable sample.'] },
+          { label: 'You can, since forty is a reasonable sample and the whole interval stays well above half.', feedback: 'Forty of whom is the question the interval cannot answer. It describes chance among these volunteers, not the members who never volunteered.', was: ['Yes, forty is a reasonable sample.'] },
           { label: 'You can, provided the volunteers came from a list of all members.', feedback: 'A list of all members is where they came from, not how they were chosen: volunteering to join is the step that breaks it. A random draw from the list would be much stronger.', was: ['Yes, if the panel was recruited randomly from members.'] },
         ],
         repair: 'Add how the people came to be asked beside every rate in step 3, and narrow any claim that outruns it. Record the change in step 5.',
@@ -709,7 +709,7 @@ export const guided15: Record<string, Guided> = {
         question: 'Somebody suggests a quick A/B test to settle a design disagreement. What is the problem?',
         options: [
           { label: 'On low traffic, a short test’s difference is mostly noise, and noise gets read as a result.', correct: true, feedback: 'Designing the test properly shows this: in the lesson’s worked example, a two-point fall needs 3,726 bookings, 25 weeks at 150 a week. A test that cannot detect the effect you care about settles nothing and looks as though it did.', was: ['With low traffic, a short test produces a difference that is noise, and the noise will be read as a result.'] },
-          { label: 'A/B tests cannot settle a design disagreement, whatever the traffic or duration.', feedback: 'A properly powered one can settle a narrow version of the question. The problem here is the power rather than the method.', was: ['A/B tests cannot settle design disagreements.'] },
+          { label: 'A/B tests cannot settle a design disagreement of this kind, whatever the traffic or duration.', feedback: 'A properly powered one can settle a narrow version of the question. The problem here is the power rather than the method.', was: ['A/B tests cannot settle design disagreements.'] },
           { label: 'It would take the team too long to set up the two versions properly.', feedback: 'Setup is usually the smallest cost. The traffic is the constraint.', was: ['It would take too long to set up.'] },
         ],
         repair: 'Calculate the required sample and the duration in step 4 using your real traffic and the formula in the hint, and record the change in step 5.',
@@ -720,7 +720,7 @@ export const guided15: Record<string, Guided> = {
         options: [
           { label: 'It set the test up to detect only huge effects, so a useful one could look like nothing.', correct: true, feedback: 'The smallest effect worth acting on comes from the problem: below what difference would you do nothing? In the worked example, a month of traffic could only detect three-quarters of duplicates disappearing. Choosing the effect first makes the calculation an honest test of feasibility.', was: ['It committed you to noticing only enormous effects, and to reporting a real improvement as no result.'] },
           { label: 'Nothing much changed, since the calculation is the same whichever way round.', feedback: 'The arithmetic is the same and the meaning is reversed. One asks what you need; the other asks what you can get away with.', was: ['Nothing much, since the calculation is the same either way.'] },
-          { label: 'It made the test feasible to run, which is a reasonable trade at small scale.', feedback: 'Feasible and uninformative is not a trade; it is the appearance of one.', was: ['It made the test feasible, which is a reasonable trade.'] },
+          { label: 'It made the test feasible to run within a month, which is a reasonable trade at a small scale.', feedback: 'Feasible and uninformative is not a trade; it is the appearance of one.', was: ['It made the test feasible, which is a reasonable trade.'] },
         ],
         repair: 'Choose the smallest effect that would matter from the problem, in step 3, and redo the calculation. Record the change in step 5.',
         recheck: 'Your effect size has a reason that is about the problem rather than the traffic.',
@@ -895,7 +895,7 @@ export const guided15: Record<string, Guided> = {
         options: [
           { label: 'Rarely: somebody chose who was counted, over which period, against what.', correct: true, feedback: 'The five questions are the ordinary work of reading a number, not an accusation. Every report includes some people and excludes others, over some period rather than another, and those choices are usually invisible in the claim.', was: ['It is selected, framed and presented by somebody with a purpose. The five questions are the ordinary work of reading a number.'] },
           { label: 'It does, as long as it comes from a source with a good reputation.', feedback: 'A reliable source selects and frames too. Reliability makes the numbers accurate rather than complete.', was: ['Yes, if it comes from a reliable source.'] },
-          { label: 'It does, once the methodology behind it has been published in full.', feedback: 'A published methodology is what lets you answer the five questions. It does not answer them for you.', was: ['Yes, once the methodology is published.'] },
+          { label: 'It does, once the methodology behind the figures has been published in full for checking.', feedback: 'A published methodology is what lets you answer the five questions. It does not answer them for you.', was: ['Yes, once the methodology is published.'] },
         ],
         repair: 'Answer all five questions in step 2, including writing absent where the report does not say. Record the change in step 5.',
         recheck: 'No question is left blank rather than marked absent.',
@@ -914,7 +914,7 @@ export const guided15: Record<string, Guided> = {
         question: 'Your rewritten claim is three times as long and has no headline in it. Is that a failure?',
         options: [
           { label: 'Not necessarily: the original was short because it said more than the figures do.', correct: true, feedback: 'The aim is honesty rather than caution: the smaller true statement, written readably. Hedging the large claim would be worse, because qualifications get dropped when a claim is repeated.', was: ['No. That length is what the figures actually support, and the original was short because it said more than they do.'] },
-          { label: 'It is, because nobody will read a claim that long or quote it to anyone.', feedback: 'People read specific sentences perfectly well. What they do not read is a claim buried in four qualifications.', was: ['Yes, since nobody will read it.'] },
+          { label: 'It is, because nobody will read a claim that long, let alone quote it to anybody else.', feedback: 'People read specific sentences perfectly well. What they do not read is a claim buried in four qualifications.', was: ['Yes, since nobody will read it.'] },
           { label: 'It is; a good rewrite keeps the original structure and just softens it.', feedback: 'The original structure is what carried the unsupported part.', was: ['Yes, the rewrite should keep the original structure.'] },
         ],
         repair: 'Check your rewrite in step 4 states a smaller true thing rather than the same thing with qualifications. Record the change in step 5.',
@@ -1088,8 +1088,8 @@ export const guided15: Record<string, Guided> = {
         question: 'A funnel built from real counts shows where people stop, and you have no observations. What is likely to happen?',
         options: [
           { label: 'Whatever sits nearest the drop gets redesigned, since nothing says why.', correct: true, feedback: 'A drop at the booking step produces a redesigned booking button, when the cause may be a price shown differently two screens earlier. The count locates; watching and asking explain.', was: ['You will redesign whatever is nearest the drop, because the count gives no mechanism and something has to be chosen.'] },
-          { label: 'A reasonable guess gets made, which usually turns out fine.', feedback: 'The guess is usually the nearest visible element, which is the one the count happens to point at.', was: ['You will make a reasonable guess, which is usually fine.'] },
-          { label: 'A larger sample of the same counts is needed first.', feedback: 'More of the same kind of evidence does not supply a mechanism.', was: ['You will need a larger sample before deciding.'] },
+          { label: 'A reasonable guess gets made about the cause, which usually turns out to be fine.', feedback: 'The guess is usually the nearest visible element, which is the one the count happens to point at.', was: ['You will make a reasonable guess, which is usually fine.'] },
+          { label: 'A larger sample of the same counts is needed first, before anybody decides.', feedback: 'More of the same kind of evidence does not supply a mechanism.', was: ['You will need a larger sample before deciding.'] },
         ],
         repair: 'Pair your count with an observation in step 1, or write plainly that you have none and what you would watch. Record the change in step 5.',
         recheck: 'Your proposal rests on something more than where the drop is.',
@@ -1098,8 +1098,8 @@ export const guided15: Record<string, Guided> = {
         question: 'Your count and your observation disagree. What should you do?',
         options: [
           { label: 'Keep both, and write what could explain why they disagree.', correct: true, feedback: 'A contradiction is a finding rather than an error. Resolving it by picking the number discards the more interesting half. The explanation is often about who each method saw, or about saying versus doing.', was: ['Keep both and write what would explain the disagreement. A contradiction is a finding rather than an error.'] },
-          { label: 'Trust the count, since it covers far more people.', feedback: 'It covers more people and says nothing about why. The disagreement may be exactly where the mechanism lives.', was: ['Trust the count, since it covers more people.'] },
-          { label: 'Trust the observation, since you saw it happen.', feedback: 'You watched it happen once. The count may be telling you it is rare.', was: ['Trust the observation, since you watched it happen.'] },
+          { label: 'Trust the count, since it covers far more people than the sessions did.', feedback: 'It covers more people and says nothing about why. The disagreement may be exactly where the mechanism lives.', was: ['Trust the count, since it covers more people.'] },
+          { label: 'Trust the observation, since you saw it happen with your own eyes.', feedback: 'You watched it happen once. The count may be telling you it is rare.', was: ['Trust the observation, since you watched it happen.'] },
         ],
         repair: 'Write the contradiction and a possible explanation in step 4 rather than resolving it. Record the change in step 5.',
         recheck: 'Your record keeps both findings, including the inconvenient one.',
@@ -1267,8 +1267,8 @@ export const guided15: Record<string, Guided> = {
         question: 'Somebody suggests collecting everything now and deciding what you need later. What is wrong with that?',
         options: [
           { label: 'Later rarely comes, and meanwhile you hold data you cannot justify or delete.', correct: true, feedback: 'Without a purpose written against each event, nobody can tell whether anybody is using it, so nothing is removed, and all of it must be protected. Deciding first is cheaper and safer.', was: ['Later never arrives, and in the meantime you hold data you cannot justify, cannot confidently delete and must protect.'] },
-          { label: 'Nothing serious, provided all of the data is kept properly secure.', feedback: 'Security is the obligation it creates. The question is whether the obligation was worth taking on.', was: ['Nothing, provided the data is kept secure.'] },
-          { label: 'It only matters for data that is obviously personal, like names.', feedback: 'Free text and cross-session identifiers become personal data whether or not anybody planned for them to.', was: ['It is only a problem for personal data.'] },
+          { label: 'Nothing serious, provided all of the data is kept properly secure and access is limited.', feedback: 'Security is the obligation it creates. The question is whether the obligation was worth taking on.', was: ['Nothing, provided the data is kept secure.'] },
+          { label: 'It only matters for data that is obviously personal, like names and addresses.', feedback: 'Free text and cross-session identifiers become personal data whether or not anybody planned for them to.', was: ['It is only a problem for personal data.'] },
         ],
         repair: 'Discard any event in step 1 that cannot name the question it answers, and record the change in step 5.',
         recheck: 'Every event on your list has a question behind it.',
@@ -1277,8 +1277,8 @@ export const guided15: Record<string, Guided> = {
         question: 'You want to record the full text people type into the search box. What is the test?',
         options: [
           { label: 'Which question it answers, and whether that justifies holding what people type.', correct: true, feedback: 'People type names, addresses and all sorts into search boxes. Whether a search returned results answers most of the same question and holds none of the content.', was: ['What question it answers, and whether that answer justifies holding whatever anybody types.'] },
-          { label: 'Whether the typed text will be stored securely and encrypted.', feedback: 'Storing it securely is required and does not address whether it should be held.', was: ['Whether the data is stored securely.'] },
-          { label: 'Whether people have agreed to it in the site’s privacy notice.', feedback: 'Consent is necessary in many places and it does not make an unjustified collection justified.', was: ['Whether people have consented.'] },
+          { label: 'Whether the typed text will be stored securely, encrypted and kept away from other systems.', feedback: 'Storing it securely is required and does not address whether it should be held.', was: ['Whether the data is stored securely.'] },
+          { label: 'Whether people have agreed to the collection in the site’s privacy notice.', feedback: 'Consent is necessary in many places and it does not make an unjustified collection justified.', was: ['Whether people have consented.'] },
         ],
         repair: 'Write the reduced version of one risky event in step 4 and say what question it still answers. Record the change in step 5.',
         recheck: 'Every risky event is either refused or reduced, with a reason.',
@@ -1451,8 +1451,8 @@ export const guided15: Record<string, Guided> = {
         question: 'The number went up in the week you shipped, which was also the week a local festival ended and the provider ran a promotion. Did the change work?',
         options: [
           { label: 'Unknown: the festival and promotion share the timing, and weeks wobble anyway.', correct: true, feedback: 'Plotting eight periods shows what a normal wobble looks like. A rise in the ship week, with a festival and a promotion in it, cannot be attributed to any of the three. It is a reason to investigate, not a verdict either way.', was: ['Unknown. Something else also happened in that period, always, and the ordinary variation is usually larger than people expect.'] },
-          { label: 'Probably, since the timing of the rise matches the release exactly.', feedback: 'Timing is the most visible fact and the weakest evidence. Everything that happened that week has the same timing.', was: ['Probably, since the timing matches.'] },
-          { label: 'It did, unless somebody can show the promotion made the difference.', feedback: 'Ruling out alternatives is your job here rather than the objector’s, and with uncontrolled weeks nobody can show it either way.', was: ['Yes, unless somebody can name a specific alternative.'] },
+          { label: 'Probably, since the timing of the rise matches the week of the release exactly, to the day.', feedback: 'Timing is the most visible fact and the weakest evidence. Everything that happened that week has the same timing.', was: ['Probably, since the timing matches.'] },
+          { label: 'It did, unless somebody can actually show the promotion made the difference.', feedback: 'Ruling out alternatives is your job here rather than the objector’s, and with uncontrolled weeks nobody can show it either way.', was: ['Yes, unless somebody can name a specific alternative.'] },
         ],
         repair: 'List what else happened in the same period in step 2, and check the calendar rather than relying on memory. Record the change in step 5.',
         recheck: 'At least one concurrent change is named.',
@@ -1461,7 +1461,7 @@ export const guided15: Record<string, Guided> = {
         question: 'Your cohort comparison removes the mix of new and returning people. Does that make it a clean result?',
         options: [
           { label: 'Not clean: it fixes who the people are, not what happened in their weeks.', correct: true, feedback: 'A cohort controls for who the people are and how long they have had. The promotion and the festival affect one cohort’s calendar weeks and not the other’s, so the does-not list is where the strongest explanations sit.', was: ['No. A cohort controls for who the people are and how long they have had, and does nothing about what was happening in the world that week.'] },
-          { label: 'It is, since the two groups are now comparable people followed equally.', feedback: 'Comparable in composition. They lived through different weeks, and the weeks are what changed.', was: ['Yes, since the two groups are now comparable.'] },
+          { label: 'It is, since the two groups are now comparable people followed for equal lengths of time.', feedback: 'Comparable in composition. They lived through different weeks, and the weeks are what changed.', was: ['Yes, since the two groups are now comparable.'] },
           { label: 'It is, provided both cohorts contain enough people to trust.', feedback: 'Size addresses chance rather than confounding.', was: ['Yes, provided both cohorts are large enough.'] },
         ],
         repair: 'Write the does-not-control list in step 4 before the controls-for list. Record the change in step 5.',
@@ -1633,8 +1633,8 @@ export const guided15: Record<string, Guided> = {
         question: 'You explained all the caveats when you presented it. Is that enough?',
         options: [
           { label: 'Not quite: caveats stay in the room while the chart travels on.', correct: true, feedback: 'Three weeks later the chart appears in somebody else’s summary with a confident sentence under it. They had the picture and not the conversation, and the picture said nothing about itself, so anything that matters belongs in it.', was: ['No. The caveats stayed in the room and the chart went everywhere, so anything that matters belongs in the picture.'] },
-          { label: 'It is, since the audience understood them at the time.', feedback: 'They did. The problem is everybody who sees the chart afterwards.', was: ['Yes, since the audience understood them at the time.'] },
-          { label: 'It is, if the caveats are also written in the notes.', feedback: 'Notes do not travel with a screenshot either.', was: ['Yes, if the caveats are also in the notes.'] },
+          { label: 'It is, since the audience clearly understood all of them at the time.', feedback: 'They did. The problem is everybody who sees the chart afterwards.', was: ['Yes, since the audience understood them at the time.'] },
+          { label: 'It is, if the same caveats are also written in the speaker notes.', feedback: 'Notes do not travel with a screenshot either.', was: ['Yes, if the caveats are also in the notes.'] },
         ],
         repair: 'Move the sample, the period, the synthetic label and any confound onto the chart itself in step 2. Record the change in step 5.',
         recheck: 'A screenshot of your chart alone would not mislead anybody.',
@@ -1816,9 +1816,9 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Should you be data-driven?',
         options: [
-          { label: 'Data-informed decisions are good; waiting for data on decisions that are cheap to reverse is expensive theatre.', correct: true, feedback: 'The current problem continues while everybody feels rigorous. Comparing the cost of measuring with the cost of being wrong is the actual skill.' },
-          { label: 'Yes, decisions should rest on evidence wherever possible.', feedback: 'Wherever possible includes cases where the evidence costs months and the decision costs five minutes to undo.' },
-          { label: 'No, experience is usually a better guide.', feedback: 'That is the opposite error. The judgement is about which decisions are worth the cost.' },
+          { label: 'Data-informed, yes; waiting for data on cheap, reversible choices is theatre.', was: ['Data-informed decisions are good; waiting for data on decisions that are cheap to reverse is expensive theatre.'], correct: true, feedback: 'The current problem continues while everybody feels rigorous. Comparing the cost of measuring with the cost of being wrong is the actual skill.' },
+          { label: 'Always, since decisions should rest on measured evidence wherever possible.', was: ['Yes, decisions should rest on evidence wherever possible.'], feedback: 'Wherever possible includes cases where the evidence costs months and the decision costs five minutes to undo.' },
+          { label: 'Rarely, since experience is usually a better guide than any data.', was: ['No, experience is usually a better guide.'], feedback: 'That is the opposite error. The judgement is about which decisions are worth the cost.' },
         ],
         repair: 'Compare both costs for every open decision in step 2, in time rather than in feelings. Record the change in step 5.',
         recheck: 'Each decision has two costs written as quantities.',
@@ -1826,9 +1826,9 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'You decide the message wording without measuring. What must accompany that?',
         options: [
-          { label: 'A way you would notice you were wrong, such as asking three people the following week.', correct: true, feedback: 'Without it, deciding quickly becomes deciding blindly. The arrangement to find out is what makes the speed defensible.' },
-          { label: 'Nothing, since the decision is reversible.', feedback: 'Reversible only helps if somebody notices it needs reversing.' },
-          { label: 'A note that it was not tested.', feedback: 'Honest and insufficient. A note does not tell you anything later.' },
+          { label: 'A way to notice you were wrong, such as asking three people next week.', was: ['A way you would notice you were wrong, such as asking three people the following week.'], correct: true, feedback: 'Without it, deciding quickly becomes deciding blindly. The arrangement to find out is what makes the speed defensible.' },
+          { label: 'Nothing more, since the decision can be reversed in five minutes anyway.', was: ['Nothing, since the decision is reversible.'], feedback: 'Reversible only helps if somebody notices it needs reversing.' },
+          { label: 'A clear note in the record saying the wording was not tested.', was: ['A note that it was not tested.'], feedback: 'Honest and insufficient. A note does not tell you anything later.' },
         ],
         repair: 'Write how you would notice a mistake for both decisions in step 3. Record the change in step 5.',
         recheck: 'Both decisions have something arranged that would tell you.',
@@ -1836,14 +1836,23 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Somebody asks you to test which cancellation flow produces fewer cancellations. What is the objection?',
         options: [
-          { label: 'It would measure how effectively the flow obstructs people who want to leave, which is not something to optimise.', correct: true, feedback: 'The test would work. That is what makes this a judgement rather than a limitation, and the reply should offer something else: measuring why people cancel, for instance.' },
-          { label: 'The traffic is too low for a reliable result.', feedback: 'True here and beside the point. If traffic were ample the objection would be unchanged.' },
-          { label: 'Cancellation rate is a poor metric.', feedback: 'It is a reasonable thing to know. What is wrong is optimising a flow against it.' },
+          { label: 'It would measure how well the flow obstructs leaving, which is not worth optimising.', was: ['It would measure how effectively the flow obstructs people who want to leave, which is not something to optimise.'], correct: true, feedback: 'The test would work. That is what makes this a judgement rather than a limitation, and the reply should offer something else: measuring why people cancel, for instance.' },
+          { label: 'The traffic is too low for the test to give a reliable result in any reasonable time.', was: ['The traffic is too low for a reliable result.'], feedback: 'True here and beside the point. If traffic were ample the objection would be unchanged.' },
+          { label: 'Cancellation rate is a poor metric that nobody should be reporting.', was: ['Cancellation rate is a poor metric.'], feedback: 'It is a reasonable thing to know. What is wrong is optimising a flow against it.' },
         ],
         repair: 'Write what you would say in step 4, offering an alternative rather than only refusing. Record the change in step 5.',
         recheck: 'Your reply names something you would measure instead.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a neighbourhood tool library is waiting to “gather data” before deciding two things: whether its booking confirmation should say “Reserved” or “Booked for you”, and whether to drop the phone-number field that volunteers use to ring people when a tool comes back damaged. It has very little web traffic.',
+      prompt: 'Decide which of the two to make now and which needs evidence first, and explain why, including how you would notice a mistake.',
+      anchors: {
+        weak: 'Waits for data on both, or decides both now, without comparing the cost of measuring with the cost of being wrong.',
+        adequate: 'Decides the wording now (cheap, reversible, ask three people next week) and checks the phone field first, because dropping it affects volunteers who rely on it, with a way to notice a mistake for each.',
+        strong: 'As adequate, and notes that the measurement for the field is one conversation with the volunteers, and names the cost of delay (the current wording keeps confusing people meanwhile).',
+      },
+    },
     saveRoute: {
       auto: 'Your decisions, the cost comparisons, what you will do instead and the refusal save as you type, on this device first and then online.',
       external: 'The reasoning belongs wherever the decision is recorded, so somebody reopening it finds both. This worksheet is your working copy.',
@@ -1856,7 +1865,7 @@ export const guided15: Record<string, Guided> = {
     worksheet: [
       { id: 'inventory', title: 'What already exists', fields: [
         { id: 'existing-records', label: 'Records the product or the provider already keeps', kind: 'long', hint: 'Payment records, booking records, a support log, an email inbox, a paper ledger. Small organisations keep more than they realise.' },
-        { id: 'countable-askable', label: 'What you could count by hand, and who you could ask', kind: 'long' },
+        { id: 'countable-askable', label: 'What you could count by hand, and who you could ask (roles, not names)', kind: 'long', hint: 'Describe people by role, such as the volunteer who runs the desk. Names and contact details stay in your own notes.' },
       ] },
       { id: 'choose', title: 'Three measures', intro: 'Three you will actually collect beat ten you intend to. One at a time.', fields: [
         ...[1, 2, 3].map((n) => ({ id: `measure-${n}`, label: `Measure ${n} · what it is, where it comes from, and how often`, kind: 'long' as const,
@@ -1992,9 +2001,9 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Without analytics, can you measure anything?',
         options: [
-          { label: 'You can count what the organisation already records, count things by hand and ask people. What you cannot do is claim precision or scale.', correct: true, feedback: 'Payment records, a booking book and five conversations produce a plan that starts on Monday. Saying plainly what it cannot support is what makes the rest usable.' },
-          { label: 'Not usefully, so the honest answer is to wait for tooling.', feedback: 'Waiting produces nothing for months and then a conversation about budget. The provider’s records are sitting there.' },
-          { label: 'Yes, and the results are as good as analytics would give.', feedback: 'They are not. They are obtainable, which is a different and more useful property at this scale.' },
+          { label: 'Yes: count what is already recorded, count by hand and ask, without claiming scale.', was: ['You can count what the organisation already records, count things by hand and ask people. What you cannot do is claim precision or scale.'], correct: true, feedback: 'Payment records, a booking book and five conversations produce a plan that starts on Monday. Saying plainly what it cannot support is what makes the rest usable.' },
+          { label: 'Not usefully, so the honest course is to wait until proper tooling is in place.', was: ['Not usefully, so the honest answer is to wait for tooling.'], feedback: 'Waiting produces nothing for months and then a conversation about budget. The provider’s records are sitting there.' },
+          { label: 'Yes, and the results will be every bit as good as analytics would give.', was: ['Yes, and the results are as good as analytics would give.'], feedback: 'They are not. They are obtainable, which is a different and more useful property at this scale.' },
         ],
         repair: 'Replace any measure in step 2 that needs tooling with one from an existing record. Record the change in step 5.',
         recheck: 'Every measure could be produced this month.',
@@ -2002,9 +2011,9 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Your plan has eleven measures. Is that thorough?',
         options: [
-          { label: 'Three you will collect beat ten you intend to. A long plan is one nobody maintains past the first month.', correct: true, feedback: 'Each measure costs time every period, for ever. Keeping it to three means the plan survives a busy month, which is when measurement is usually abandoned.' },
-          { label: 'Yes, more measures give a fuller picture.', feedback: 'The first lesson dealt with this: more numbers give more to argue with rather than more understanding.' },
-          { label: 'Yes, provided they are all obtainable.', feedback: 'Obtainable each month, by somebody, in the time available. Eleven rarely is.' },
+          { label: 'Three you will collect beat ten you intend to; long plans lapse in the first month.', was: ['Three you will collect beat ten you intend to. A long plan is one nobody maintains past the first month.'], correct: true, feedback: 'Each measure costs time every period, for ever. Keeping it to three means the plan survives a busy month, which is when measurement is usually abandoned.' },
+          { label: 'It is, because more measures always give a fuller and fairer picture of what is happening.', was: ['Yes, more measures give a fuller picture.'], feedback: 'The first lesson dealt with this: more numbers give more to argue with rather than more understanding.' },
+          { label: 'It is, provided every one of the eleven can actually be obtained.', was: ['Yes, provided they are all obtainable.'], feedback: 'Obtainable each month, by somebody, in the time available. Eleven rarely is.' },
         ],
         repair: 'Reduce step 2 to three measures and move the rest to the unanswered list or drop them. Record the change in step 5.',
         recheck: 'Your plan has three measures and a named owner.',
@@ -2012,14 +2021,23 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'One of your measures has a claim written beside it but no limit. What is the risk?',
         options: [
-          { label: 'The claim grows. Written now, the limit travels with it; written later, it is a correction nobody reads.', correct: true, feedback: 'Duplicate payments from a provider’s records support a statement about payment confusion and not about its cause. Both sentences belong beside the measure from the start.' },
-          { label: 'Not much, since the limits are obvious.', feedback: 'They are obvious to you this week. They are invisible to whoever quotes the number in six months.' },
-          { label: 'It makes the plan harder to read.', feedback: 'A limit is one clause. The risk is about what the measure gets used to argue.' },
+          { label: 'The claim grows; a limit written now travels with it, one added later rarely does.', was: ['The claim grows. Written now, the limit travels with it; written later, it is a correction nobody reads.'], correct: true, feedback: 'Duplicate payments from a provider’s records support a statement about payment confusion and not about its cause. Both sentences belong beside the measure from the start.' },
+          { label: 'Not much, since the limits are obvious to anybody who reads the plan.', was: ['Not much, since the limits are obvious.'], feedback: 'They are obvious to you this week. They are invisible to whoever quotes the number in six months.' },
+          { label: 'Mainly that the plan becomes harder for other people to read, follow and keep up to date.', was: ['It makes the plan harder to read.'], feedback: 'A limit is one clause. The risk is about what the measure gets used to argue.' },
         ],
         repair: 'Write the limit beside every claim in step 3, and put the source inside the statement. Record the change in step 5.',
         recheck: 'Every measure carries a claim, a limit and a source.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a village bus booking service has no analytics. It keeps a paper log of every booking and cancellation, a voicemail inbox, and a driver’s notebook of no-shows. The coordinator asks for a measurement plan to see whether a new reminder text is reducing no-shows.',
+      prompt: 'Choose one measure the plan could start on Monday, write the claim it supports and the claim it does not, and explain why it is obtainable.',
+      anchors: {
+        weak: 'Chooses something that needs tooling the service does not have, or states a claim with no limit, such as “proves the reminder works”.',
+        adequate: 'Chooses no-shows per hundred bookings from the driver’s notebook and the paper log, monthly; supports a statement about how many booked passengers did not turn up, not about why or whether the text caused a change.',
+        strong: 'As adequate, and names a review date and owner, notes the notebook may be incomplete, and adds an askable measure (a few passengers asked whether they saw the text).',
+      },
+    },
     saveRoute: {
       auto: 'Your inventory, the three measures, their claims and limits and the review date save as you type, on this device first and then online.',
       external: 'The counting itself happens in a spreadsheet in your own folder. Nothing identifying anybody belongs in it or here.',
@@ -2094,7 +2112,7 @@ export const guided15: Record<string, Guided> = {
           intro: 'Six replies to a made up request for a percentage that the evidence cannot support. For each one, decide what it does.',
           options: ['honest and useful', 'honest and unhelpful', 'an overclaim'],
           items: [
-            { id: 'cannot-plus-offer', text: 'I cannot give you one honestly. What I have is that two of three people we watched could not tell their place was held, and duplicate payments over the next month would tell us whether the change helped. I can have that in four weeks.', answer: 'honest and useful',
+            { id: 'cannot-plus-offer', text: 'I cannot give you one honestly. What I have is that two of three people we watched could not tell their place was held. The provider’s records over the next month will show whether duplicate payments fall; that will not prove the change caused it, but it tells us where to look next. I can have it in four weeks.', answer: 'honest and useful',
               feedback: {
                 'honest and useful': 'It refuses, offers what exists, and names what would produce more, with a date. Nobody leaves the conversation empty-handed.',
                 'honest and unhelpful': 'It gives two usable things and a timeline.',
@@ -2169,9 +2187,9 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Does being rigorous make you less useful?',
         options: [
-          { label: 'Being unreliable makes you less useful. Somebody who says what the evidence supports, offers the next step and is right about the limits becomes the person whose numbers are trusted.', correct: true, feedback: 'The reply that works names what you have, and what would produce more, with a date. A flat refusal is honest and loses to somebody else’s worse number.' },
-          { label: 'Somewhat, since people want answers rather than caveats.', feedback: 'They want answers they can rely on. A number that collapses when checked costs you the next three conversations.' },
-          { label: 'No, rigour speaks for itself.', feedback: 'It does not. Rigour with nothing offered alongside it reads as obstruction.' },
+          { label: 'Being unreliable does; saying what the evidence supports, with a next step, earns trust.', was: ['Being unreliable makes you less useful. Somebody who says what the evidence supports, offers the next step and is right about the limits becomes the person whose numbers are trusted.'], correct: true, feedback: 'The reply that works names what you have, and what would produce more, with a date. A flat refusal is honest and loses to somebody else’s worse number.' },
+          { label: 'Somewhat, since people want answers they can use rather than caveats.', was: ['Somewhat, since people want answers rather than caveats.'], feedback: 'They want answers they can rely on. A number that collapses when checked costs you the next three conversations.' },
+          { label: 'No, because careful rigour speaks for itself to anybody who is paying attention.', was: ['No, rigour speaks for itself.'], feedback: 'It does not. Rigour with nothing offered alongside it reads as obstruction.' },
         ],
         repair: 'Check your reply in step 3 offers something as well as declining something. Record the change in step 5.',
         recheck: 'Your reply names what you have and what would produce more.',
@@ -2179,9 +2197,9 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'You listed fourteen limitations in the order the lessons came. What is wrong with that?',
         options: [
-          { label: 'It mixes three different problems and reads as one long apology, so the useful half disappears.', correct: true, feedback: 'Synthetic supports nothing about your product; a small sample supports real counts; unavailable is simply unknown. Grouped, the page becomes a statement of what you know.' },
-          { label: 'Nothing, as long as all fourteen are there.', feedback: 'Completeness is necessary and the shape decides whether anybody can use it.' },
-          { label: 'Fourteen is too many to be credible.', feedback: 'Fourteen is an honest count for a module of this size. The order is what makes it unreadable.' },
+          { label: 'It mixes three different problems into one long apology, hiding the useful half.', was: ['It mixes three different problems and reads as one long apology, so the useful half disappears.'], correct: true, feedback: 'Synthetic supports nothing about your product; a small sample supports real counts; unavailable is simply unknown. Grouped, the page becomes a statement of what you know.' },
+          { label: 'Nothing, as long as all fourteen limitations are there and accurate.', was: ['Nothing, as long as all fourteen are there.'], feedback: 'Completeness is necessary and the shape decides whether anybody can use it.' },
+          { label: 'Fourteen is simply too many limitations for any reader to find credible.', was: ['Fourteen is too many to be credible.'], feedback: 'Fourteen is an honest count for a module of this size. The order is what makes it unreadable.' },
         ],
         repair: 'Regroup the page under the three headings in step 2 and say what each kind supports. Record the change in step 5.',
         recheck: 'Your page has three sections rather than one list.',
@@ -2189,14 +2207,23 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Asked for a percentage, you answer “roughly two-thirds, though the sample is small”. What happens next?',
         options: [
-          { label: 'Two-thirds reaches the slide and the caveat does not. Two of three people is two people.', correct: true, feedback: 'Hedged numbers travel without their hedges. The version that survives is the count with its denominator attached, because the two cannot be separated.' },
-          { label: 'Nothing, since the caveat was stated.', feedback: 'It was stated aloud, once, to one person, and the number is what gets written down.' },
-          { label: 'The audience will ask about the sample if it matters.', feedback: 'The audience three steps later does not know there was a sample to ask about.' },
+          { label: 'Two-thirds reaches the slide; the caveat does not. Two of three is two people.', was: ['Two-thirds reaches the slide and the caveat does not. Two of three people is two people.'], correct: true, feedback: 'Hedged numbers travel without their hedges. The version that survives is the count with its denominator attached, because the two cannot be separated.' },
+          { label: 'Nothing much, since the caveat about the sample was stated at the same time.', was: ['Nothing, since the caveat was stated.'], feedback: 'It was stated aloud, once, to one person, and the number is what gets written down.' },
+          { label: 'Anybody who needs to know the sample size will ask about it if it matters.', was: ['The audience will ask about the sample if it matters.'], feedback: 'The audience three steps later does not know there was a sample to ask about.' },
         ],
         repair: 'Rewrite your reply in step 3 so every number carries its denominator inside the sentence. Record the change in step 5.',
         recheck: 'No number in your reply can be quoted without its sample.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: you redesigned a charity’s volunteer sign-up form. You watched four people use it: three finished without help. You also drew a synthetic chart to practise showing sign-ups rising. The charity’s director asks: “Can I tell the trustees the new form increased sign-ups by a third?”',
+      prompt: 'Write the two or three sentences you would say to the director, and explain what each part is doing.',
+      anchors: {
+        weak: 'Gives a percentage, uses the synthetic chart as support, or refuses with nothing offered instead.',
+        adequate: 'Declines the “by a third” claim, offers what exists (three of the four people watched finished without help), and names what would produce more, such as sign-up counts before and after, with a date.',
+        strong: 'As adequate, and says a before-and-after count would show where to look rather than prove the form caused a change, and keeps the synthetic chart out of anything the trustees see as evidence.',
+      },
+    },
     saveRoute: {
       auto: 'Your limitations page, the three categories, the rehearsed reply and the temptation save as you type, on this device first and then online.',
       external: 'File the page with your project record rather than with this module’s notes, so the next report can use it.',
