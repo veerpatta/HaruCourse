@@ -160,7 +160,7 @@ export const guided10: Record<string, Guided> = {
         question: 'Your first prototype only has the path where everything works. What is wrong with that?',
         options: [
           { label: 'A test can then only confirm the path you already trusted, never what people do when it goes wrong.', correct: true, feedback: 'Most of what a person learns about a service, they learn when something goes wrong. Leaving the failure out leaves out the part that would teach you something.', was: ['A test of it can only show that the path you were already confident about works.'] },
-          { label: 'Nothing serious: failure paths are easy to add once the first session shows which ones matter.', feedback: 'They can, and the first session is then spent on the part you were least worried about.', was: ['Nothing: failure paths can be added after the first session.'] },
+          { label: 'Nothing serious: failure paths are easy to add later, once the first session shows which ones matter.', feedback: 'They can, and the first session is then spent on the part you were least worried about.', was: ['Nothing: failure paths can be added after the first session.'] },
           { label: 'It will look unfinished to the person taking part, so they may not treat the tasks seriously.', feedback: 'People taking part are not judging how finished it is. The cost falls on you, in what the session is able to show.', was: ['It will look unfinished to the person taking part.'] },
         ],
         repair: 'Add one failure path to your prototype and write it into the failure path field in step 4, then note the change in step 5.',
@@ -247,7 +247,7 @@ export const guided10: Record<string, Guided> = {
           question: 'In the session, one person tapped the search box, waited, and said “I think it’s broken”. Which row on that sheet was doing the most work?',
           options: [
             { label: 'The search box row: written in advance, it turns that moment into a route you had not built.', correct: true, feedback: 'Without the row you would write down “person could not finish the task”. With it you write down “person went looking for search, which does not exist yet”. Those two notes lead to different decisions.', was: ['The search box row, because it was written before the session and turns that moment into a route you had not built.'] },
-            { label: 'The invented prices row, because somebody who spots a wrong price stops trusting the rest.', feedback: 'Invented prices are worth recording, and people rarely act on them. The rows that earn their place are the ones a person will try to use.' },
+            { label: 'The invented prices row, because somebody who spots a wrong price soon stops trusting the rest.', feedback: 'Invented prices are worth recording, and people rarely act on them. The rows that earn their place are the ones a person will try to use.', was: ['The invented prices row, because somebody who spots a wrong price stops trusting the rest.'] },
             { label: 'The faked wait row, because a wait you invented is not evidence about the real one.', feedback: 'That row protects a claim you might make weeks later, which is a different job from reading the session correctly while it is happening.' },
             { label: 'None of them, because the sheet is a record for you and does not change what happened.', feedback: 'It changes what you write down, and what you write down is the only part of the session that survives it.' },
           ],
@@ -434,7 +434,7 @@ export const guided10: Record<string, Guided> = {
         question: 'You plan to decide whether each task succeeded while you watch. What goes wrong?',
         options: [
           { label: 'Watching someone struggle shifts what you will accept, usually without you noticing the shift.', correct: true, feedback: 'Written beforehand, the definition is a decision you made while impartial. Written afterwards, it is a description of what you saw.', was: ['Watching somebody struggle changes what you are prepared to accept, and you will not notice it happening.'] },
-          { label: 'Very little: an experienced eye recognises success in the moment more reliably than a list.', feedback: 'You will see something and call it success. The question is whether you would have called that same thing success an hour earlier.', was: ['Nothing, because you will know success when you see it.'] },
+          { label: 'Very little: an experienced eye recognises success in the moment more reliably than any written list.', feedback: 'You will see something and call it success. The question is whether you would have called that same thing success an hour earlier.', was: ['Nothing, because you will know success when you see it.'] },
           { label: 'It only becomes a problem when a second observer is there to disagree with your calls.', feedback: 'A second person makes the drift visible. It is happening either way.', was: ['It only matters if somebody else is watching as well.'] },
         ],
         repair: 'Write the destination for every task in the success definitions field in step 3 before your first session, then note the change in step 5.',
@@ -570,7 +570,7 @@ export const guided10: Record<string, Guided> = {
         question: 'Somebody arrives with twenty minutes instead of an hour. What do you do?',
         options: [
           { label: 'Run the short version you wrote in advance, and note in the record that it was shortened.', correct: true, feedback: 'Deciding which two tasks matter while somebody is sitting in front of you means deciding by whatever is easiest to start.' },
-          { label: 'Run the full set at a quicker pace, keeping every task so the sessions stay comparable.', feedback: 'Hurrying removes the silences, and the silences are where you find out what people expected to happen.', was: ['Run the full set faster.'] },
+          { label: 'Run the full set at a quicker pace, keeping every task so all the sessions stay comparable.', feedback: 'Hurrying removes the silences, and the silences are where you find out what people expected to happen.', was: ['Run the full set faster.'] },
           { label: 'Rearrange it for another day, so this person gets the same full hour as everyone else.', feedback: 'Sometimes right, and often it means losing the person altogether. The short version is what makes twenty minutes worth having.', was: ['Rearrange it for another day.'] },
         ],
         repair: 'Write the short version in step 4, naming the two tasks you would keep, then record the change in step 5.',
@@ -998,7 +998,7 @@ export const guided10: Record<string, Guided> = {
         question: 'Your worked range runs from about a quarter to almost nine in ten. What do you do with it?',
         options: [
           { label: 'Show the working once, then report the count instead of the rate.', correct: true, feedback: 'The range is the argument for dropping the rate. Showing it once settles the question for anyone who wonders why there are no percentages.' },
-          { label: 'Report the rate with the range beside it, so readers can judge.', feedback: 'Readers carry the number away and leave the range behind. A range that wide is not a measurement worth putting in front of anyone.' },
+          { label: 'Report the rate with the range beside it, so readers can judge it for themselves.', feedback: 'Readers carry the number away and leave the range behind. A range that wide is not a measurement worth putting in front of anyone.', was: ['Report the rate with the range beside it, so readers can judge.'] },
           { label: 'Leave the arithmetic out, since it makes the study look weak.', feedback: 'It makes the study look like what it is. Doing the sum once is the part that stops you writing the rate in the next report as well.' },
         ],
         repair: 'Move the working into step 4 as your inputs, result and width sentence, take the rate out of your claims in step 2, then record the change in step 5.',
@@ -1095,7 +1095,7 @@ export const guided10: Record<string, Guided> = {
         fields: ['version-note', 'tempted-list'],
         start: 'Copy the prototype before you touch it. Paper, printed screens or files all work, as long as both versions still exist.',
         enough: 'You could show somebody the two versions and they could name the single difference.' },
-      { terms: [{ term: 'Re-test', meaning: 'Running the same tasks, in the same words, on the changed version. Anything else you alter about the session makes the two rounds impossible to compare.' }, { term: 'Fresh participant', meaning: 'Somebody who has seen neither version. This exercise prefers fresh people because someone who met the problem already knows where the answer is, so their success could be memory rather than the repair.' }, { term: 'Rehearsal', meaning: 'A run on yourself. It shows the change works mechanically, and because you already know the answer it can never become a result.' }], expect: 'The re-test run with people who have not seen the prototype, or an honest smaller route recorded with a date.',
+      { terms: [{ term: 'Re-test', meaning: 'Running the same tasks, in the same words, on the changed version. Anything else you alter about the session makes the two rounds much harder to compare.' }, { term: 'Fresh participant', meaning: 'Somebody who has seen neither version. This exercise prefers fresh people because someone who met the problem already knows where the answer is, so their success could be memory rather than the repair.' }, { term: 'Rehearsal', meaning: 'A run on yourself. It shows the change works mechanically, and because you already know the answer it can never become a result.' }], expect: 'The re-test run with people who have not seen the prototype, or an honest smaller route recorded with a date.',
         fields: ['retest-route', 'access-note', 'retest-records'],
         start: 'Use the same task wording and the same moderation discipline as before, or the two rounds are not comparable.',
         enough: 'Each record carries the expectation before each change and every hesitation, as the first round did.' },
@@ -1106,7 +1106,7 @@ export const guided10: Record<string, Guided> = {
           question: 'What can the report say about this re-test?',
           options: [
             { label: 'Both finished without asking, and the prediction was written after the sessions, not before.', correct: true, feedback: 'The observation stands on its own, and dating the prediction honestly tells a reader exactly how much weight to put on the match.', was: ['That both new people finished without asking, and that the prediction was written after the sessions rather than before.'] },
-            { label: 'The repair is confirmed, because what happened matched the prediction written that evening.', feedback: 'A prediction written after the event matches whatever happened. There was never an evening on which that note came out wrong.', was: ['That the repair is confirmed, because the result matched the prediction.'] },
+            { label: 'The repair is confirmed, because what happened matched the prediction written later that evening.', feedback: 'A prediction written after the event matches whatever happened. There was never an evening on which that note came out wrong.', was: ['That the repair is confirmed, because the result matched the prediction.'] },
             { label: 'The repair is confirmed, because two of two new people finished without asking at all.', feedback: 'Two people finishing is a real observation and it is not a test of the repair. With no prior prediction, nothing was ever at risk.', was: ['That the repair is confirmed, because two of two finished.'] },
             { label: 'Nothing usable, because a prediction written afterwards spoils the whole re-test.', feedback: 'The sessions happened and the observations are real. What is missing is the prior prediction, so say that plainly and keep everything else.', was: ['Nothing, because the re-test is spoilt.'] },
           ],
@@ -1124,7 +1124,7 @@ export const guided10: Record<string, Guided> = {
         question: 'While making the repair you also moved the button, because it was quick. What has that cost you?',
         options: [
           { label: 'Any difference can no longer be pinned on one change; the result now describes the pair.', correct: true, feedback: 'This exercise asks for one change so the result has one thing to attach to. Teams sometimes bundle changes on purpose; the result then describes the bundle, and the report has to say so.', was: ['You can no longer say which change produced the difference, so the re-test answers nothing.'] },
-          { label: 'Nothing, as long as both changes are written down clearly before the re-test begins.', feedback: 'Recording them keeps you honest and does not separate them. The result still cannot be traced to either change alone.', was: ['Nothing, as long as you record both changes.'] },
+          { label: 'Nothing, as long as both changes are written down clearly before the re-test even begins.', feedback: 'Recording them keeps you honest and does not separate them. The result still cannot be traced to either change alone.', was: ['Nothing, as long as you record both changes.'] },
           { label: 'Only some tidiness in the comparison; each change can still be judged on its own.', feedback: 'It is more than tidiness. If people behave differently, you cannot say which change caused it, and that was the question you were asking.', was: ['Only that the comparison is now less tidy.'] },
         ],
         repair: 'Go back to the old version, apply only the single change from step 1, and move the other one to the tempted list in step 2, then record the change in step 5.',
@@ -1145,7 +1145,7 @@ export const guided10: Record<string, Guided> = {
         options: [
           { label: 'That it failed, with the counts in one sentence, then what you now think the cause is.', correct: true, feedback: 'A failed repair is a finding about the problem. It says your reading of the cause was wrong, which is more useful than a change nobody tested.', was: ['That it failed, in one sentence with the counts, followed by what you now think the problem actually is.'] },
           { label: 'That the repair needs further work before it can be fairly assessed by anyone.', feedback: 'That sentence describes a plan rather than a result, and it quietly hides the outcome. The result is that this change did not do it.', was: ['That the repair needs further work before it can be assessed.'] },
-          { label: 'Nothing about it yet; wait until a second repair succeeds and report both together.', feedback: 'Holding the failure back until there is a success turns the report into a story with the evidence chosen to fit it.', was: ['Nothing yet, until a second repair succeeds.'] },
+          { label: 'Nothing about it yet; wait until a second repair succeeds and then report both together.', feedback: 'Holding the failure back until there is a success turns the report into a story with the evidence chosen to fit it.', was: ['Nothing yet, until a second repair succeeds.'] },
         ],
         repair: 'Write the failure as your outcome sentence in step 5, add what you now think the cause is, re-rank the remaining problems, then record the change.',
         recheck: 'The outcome sentence names the failure and the counts behind it.',
@@ -1159,28 +1159,37 @@ export const guided10: Record<string, Guided> = {
     },
   },
   'm10-l09-v1': {
+    transfer: {
+      scenario: 'Made-up case: a cinema seat-booking prototype will show a Holding your seats screen. The team asks two questions: will people tap Book again during the hold, and how long will the hold take for someone on a weak phone signal outside the cinema?',
+      prompt: 'Choose a method for each question and explain what each method cannot establish.',
+      anchors: {
+        weak: 'Says a click-through cannot show any waiting, or uses one staged wait to answer both questions.',
+        adequate: 'A staged wait, such as a timed transition that moves on after five seconds, for the double-tap question; a running page over a real or throttled slow connection for the real hold time. States that the staged wait is fixed and invented, so it says nothing about real timing.',
+        strong: 'As adequate, plus the conditions recorded (device, profile, seconds, item count), a note that throttling models speed rather than drop-outs, and that a staged wait cannot show partial loading or failure.',
+      },
+    },
     route: textRoute,
     worksheet: [
       { id: 'question', title: 'The question a running thing can answer', fields: [
-        { id: 'running-question', label: 'The question from your untestable lists that only a waiting or loaded-up thing can answer, and the decision it would change', kind: 'long',
+        { id: 'running-question', label: 'The question from your untestable lists about waiting or real content, and the decision it would change', kind: 'long',
           hint: 'If a tidy paper screen could already answer it, choose a different one.',
           example: 'Example (made up): does the pending message stop people paying twice? If it does not, the payment work has to be fixed before anything else on the list.' },
         { id: 'which-lie', label: 'Which comfort of the prototype you are removing', kind: 'choice',
           options: ['Speed — the prototype never makes anyone wait', 'Tidiness — every name and number in the prototype is neat and short', 'Length — the prototype holds three items, not sixty'],
-          hint: 'A prototype is fast, tidy and short. All three of those are lies. Pick the one that matters for your question.' },
+          hint: 'Your prototype so far is probably fast, tidy and short, and each of those can hide a problem. Pick the one that matters for your question. A timed transition can stage a wait, and it is still a wait you invented.' },
       ] },
       { id: 'conditions', title: 'Build the conditions', intro: 'Two things to reproduce: the wait, and the weight of real content.', fields: [
         { id: 'wait-method', label: 'How you will produce the wait', kind: 'choice',
-          options: ['A running page you already have, with a delay in it and the browser set to a slow profile', 'A person who holds the screen back for a counted wait, timed on a phone', 'Both, so the two can be compared'],
-          hint: 'You do not need a running page. The counted wait is a real option, and this course does not ask you to write code yet.' },
-        { id: 'wait-length', label: 'How long the wait is, in seconds, and how you timed it', kind: 'short' },
+          options: ['A running page you already have, with a delay in it and the browser set to a slow profile', 'A person who holds the screen back for a counted wait, timed on a phone', 'Both, so the two can be compared', 'A timed transition in a click-through, moving on by itself after the seconds I set'],
+          hint: 'A timed transition, a delay written into a page and a person counting are all staged: you chose the length, so they show what people do during a wait, never how long the real one takes. Only a page fetched over a network with throttling on shows real loading. None of this needs code.' },
+        { id: 'wait-length', label: 'How long the wait is, in seconds, how you timed it, and whether it was staged or real loading', kind: 'short' },
         { id: 'content-swap', label: 'The real content you loaded: the longest names, the largest numbers, and how many items are in the list', kind: 'long',
           hint: 'Take the worst real examples you can find. Inventing neat ones defeats the whole purpose.',
           example: 'Example (made up): sixty classes, the longest title 74 characters, one price of 12,500 and one class showing no price at all.' },
       ] },
       { id: 'watching', title: 'What happened during the wait', fields: [
         { id: 'first-thing', label: 'What appeared first, what appeared last, and how long the gap between them lasted', kind: 'long' },
-        { id: 'during-wait', label: 'What you and the one or two people with you did during the wait: pressing again, leaving, asking whether it had worked', kind: 'long' },
+        { id: 'during-wait', sensitive: true, label: 'What you and the one or two people with you did during the wait: pressing again, leaving, asking whether it had worked', kind: 'long', hint: 'Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.' },
         { id: 'volume-damage', label: 'What the real content broke: wrapping, scrolling, things pushed out of sight, sorting that suddenly became necessary', kind: 'long' },
       ] },
       { id: 'against', title: 'Against the prototype result', fields: [
@@ -1190,22 +1199,22 @@ export const guided10: Record<string, Guided> = {
       ] },
       { id: 'record', title: 'Conditions and gaps', fields: [
         { id: 'conditions-record', label: 'Device, browser or method, wait length in seconds, and how many items were in the list', kind: 'long' },
-        { id: 'rehearsal-note', label: 'If a person held the screen back rather than a page actually loading, write that here as a rehearsal', kind: 'short',
-          hint: 'A rehearsal shows you the shape of a problem. It is never reported as research.' },
+        { id: 'rehearsal-note', label: 'Whether the wait you watched was staged or real loading, and what that means you cannot claim', kind: 'short',
+          hint: 'Staged means a timed transition, a delay written into a page, or a person counting. It shows behaviour during a wait you chose; it cannot show how long the real wait is, what appears first, or what happens when loading fails. A run on yourself is a rehearsal and is never reported as research.' },
         { id: 'still-untested', label: 'What remains untested even now', kind: 'long' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
     guide: [
-      { expect: 'One question that only a waiting or loaded-up thing can answer, and the decision it would change.',
+      { expect: 'One question about waiting or real content, whether a staged wait or real loading answers it, and the decision it would change.',
         fields: ['running-question', 'which-lie'],
         terms: [
           { term: 'Untestable list', meaning: 'The list you wrote earlier in this module of what each prototype cannot establish.' },
-          { term: 'Throttling', meaning: 'Making a browser pretend the connection is slow, so pages arrive at the speed most people actually get.' },
+          { term: 'Throttling', meaning: 'Making a browser pretend the connection is slow, so pages arrive at the speed many people actually get. It slows what is fetched over a network, so check that your page really does load more slowly; a page opened straight from a file may not.' },
         ],
         start: 'Read your untestable lists and mark every item that mentions timing, waiting, real data or the amount of content.',
-        enough: 'A tidy paper version of your screen could not answer the question you chose.' },
-      { terms: [{ term: 'Counted wait', meaning: 'A wait you make yourself, by holding the screen back while somebody counts the seconds on a clock.' }, { term: 'Rehearsal', meaning: 'A staged stand-in for a test. It shows you the shape of a problem, and it is never written up as research.' }], expect: 'A wait you can time, and content heavy enough to be real.',
+        enough: 'A tidy paper screen could not answer your question, and you have said whether a staged wait or real loading is what answers it.' },
+      { terms: [{ term: 'Counted wait', meaning: 'A wait you make yourself, by holding the screen back while somebody counts the seconds on a clock.' }, { term: 'Staged wait', meaning: 'Any wait whose length you chose: a timed transition, a delay written into a page, or a person counting. It shows what people do while waiting; only real loading shows how long they would wait.' }, { term: 'Rehearsal', meaning: 'A run on yourself. It shows you the shape of a problem, and it is never written up as research.' }], expect: 'A wait you can time, labelled staged or real, and content heavy enough to be real.',
         fields: ['wait-method', 'wait-length', 'content-swap'],
         demo: {
           scenario: 'Made-up example. Trying to test a payment wait with no build at all, and nearly reporting a rehearsal as research.',
@@ -1232,10 +1241,10 @@ export const guided10: Record<string, Guided> = {
           material: 'Two supplied made up results for the same task. The click-through: three people found the pay button in under ten seconds and none hesitated. The same task with a counted four-second wait and sixty items in the list: two of three pressed pay twice, and one scrolled straight past the class she wanted.',
           question: 'What is the honest thing to record from the pair?',
           options: [
-            { label: 'Both results, each labelled with the conditions it came from, and the pressing-twice problem added to the ranked list.', correct: true, feedback: 'The two results are not in conflict. They answer different questions, and only the conditions written beside each one keep that clear.' },
-            { label: 'The second result only, because it was closer to real conditions and replaces the first.', feedback: 'The click-through still tells you the button is findable, which the crowded version cannot show. Throwing it away loses a result you already paid for.' },
-            { label: 'The first result only, because the second was a rehearsal with a person counting rather than a real connection.', feedback: 'The rehearsal cannot speak about real timings, and it did show two people pressing twice. That is an observation about behaviour, and it belongs in the list with its label attached.' },
-            { label: 'Neither, until you can run the test on a real build.', feedback: 'Waiting for a build leaves you with nothing for weeks. Both results are usable as long as each carries what it was and what it was not.' },
+            { label: 'Both, each with the conditions it came from, and the pressing-twice problem added to the list.', correct: true, feedback: 'The two results are not in conflict. They answer different questions, and only the conditions written beside each one keep that clear.', was: ['Both results, each labelled with the conditions it came from, and the pressing-twice problem added to the ranked list.'] },
+            { label: 'The second only, because it was closer to real conditions and so replaces the first.', feedback: 'The click-through still tells you the button is findable, which the crowded version cannot show. Throwing it away loses a result you already paid for.', was: ['The second result only, because it was closer to real conditions and replaces the first.'] },
+            { label: 'The first only, because the second wait was staged by a person counting, not a real connection.', feedback: 'A staged wait cannot speak about real timings, and it did show two people pressing twice. That is an observation about behaviour during a wait of a chosen length, and it belongs in the list with that label.', was: ['The first result only, because the second was a rehearsal with a person counting rather than a real connection.'] },
+            { label: 'Neither yet: hold both until the same task can be run on a real build over a slow network.', feedback: 'Waiting for a build leaves you with nothing for weeks. Both results are usable as long as each carries what it was and what it was not.', was: ['Neither, until you can run the test on a real build.'] },
           ],
           then: 'Write your own pair the same way: the prototype result, the waiting or loaded-up result, and the conditions beside each.',
         },
@@ -1260,9 +1269,9 @@ export const guided10: Record<string, Guided> = {
       {
         question: 'You have no running build at all. Can you still test what real content volume does?',
         options: [
-          { label: 'You can: fill the paper or click-through screen with the longest real names and the largest real numbers, and add as many rows as the real thing would hold.', correct: true, feedback: 'Volume damage is visible on paper. Long titles wrap, the summary scrolls away, and the item you wanted ends up below everything else.' },
-          { label: 'You cannot: volume problems only appear in a page that is really loading.', feedback: 'Some do, such as slow drawing. Wrapping, scrolling and things pushed out of sight appear on a sheet of paper the moment you stop using three tidy examples.' },
-          { label: 'You can approximate it by adding a note saying the real list will be much longer.', feedback: 'A note changes nothing you can look at. The point is to face the crowded screen and find out what it breaks.' },
+          { label: 'You can: fill the screen with the longest real names, largest numbers and a realistic row count.', correct: true, feedback: 'Volume damage is visible on paper. Long titles wrap, the summary scrolls away, and the item you wanted ends up below everything else.', was: ['You can: fill the paper or click-through screen with the longest real names and the largest real numbers, and add as many rows as the real thing would hold.'] },
+          { label: 'You cannot: problems with content volume only appear in a page that is really loading data.', feedback: 'Some do, such as slow drawing. Wrapping, scrolling and things pushed out of sight appear on a sheet of paper the moment you stop using three tidy examples.', was: ['You cannot: volume problems only appear in a page that is really loading.'] },
+          { label: 'You can approximate it with a note on the screen saying the real list will be much longer.', feedback: 'A note changes nothing you can look at. The point is to face the crowded screen and find out what it breaks.', was: ['You can approximate it by adding a note saying the real list will be much longer.'] },
         ],
         repair: 'If the content-swap field in step 2 still holds three tidy examples, replace them with your worst real ones and record the change in step 5.',
         recheck: 'The content field names a long value, a large number and a realistic item count.',
@@ -1270,9 +1279,9 @@ export const guided10: Record<string, Guided> = {
       {
         question: 'Your notes say the wait felt too long. What is missing?',
         options: [
-          { label: 'The length in seconds, the device, the method and the number of items, without which nobody can repeat what you did.', correct: true, feedback: 'A feeling cannot be checked by anyone, including you next month. Four facts turn it into something repeatable.' },
-          { label: 'A rating out of ten from the people who waited.', feedback: 'A rating is another feeling with a number attached to it. It still does not say how long the wait actually was.' },
-          { label: 'Nothing is missing, because how the wait felt is the finding.', feedback: 'How it felt does matter, and it only becomes usable once you can say how long the wait was.' },
+          { label: 'The wait in seconds, staged or real, the device and the item count, so someone could repeat it.', correct: true, feedback: 'A feeling cannot be checked by anyone, including you next month. Four facts turn it into something repeatable.', was: ['The length in seconds, the device, the method and the number of items, without which nobody can repeat what you did.'] },
+          { label: 'A rating out of ten from each person who waited, so the feeling becomes a number you can compare.', feedback: 'A rating is another feeling with a number attached to it. It still does not say how long the wait actually was.', was: ['A rating out of ten from the people who waited.'] },
+          { label: 'Nothing important, because how the wait felt to people is the finding you were after.', feedback: 'How it felt does matter, and it only becomes usable once you can say how long the wait was.', was: ['Nothing is missing, because how the wait felt is the finding.'] },
         ],
         repair: 'If the first-thing field in step 3 has no seconds in it, re-run the wait with a timer and write the sequence out, then record the change in step 5.',
         recheck: 'The observation notes carry timings, and the conditions record names device, method, wait length and item count.',
@@ -1286,6 +1295,15 @@ export const guided10: Record<string, Guided> = {
     },
   },
   'm10-l10-v1': {
+    transfer: {
+      scenario: 'Made-up case: a plant-nursery website wants to know two things: whether customers can find the delivery charges without help, and why some people leave the basket page without paying.',
+      prompt: 'Decide which of the two questions an unmoderated test could answer, and explain what it would miss.',
+      anchors: {
+        weak: 'Sends both questions out unmoderated, or calls unmoderated testing objective because nobody is watching.',
+        adequate: 'Uses an unmoderated run for the delivery-charge question, because what a person does answers it, and keeps the why question for moderated sessions; names what unmoderated loses: the why, hesitation and misread instructions.',
+        strong: 'As adequate, plus the written instructions tested on one reader first, a planned follow-up for surprising results, and a decision on where answers arrive and are stored.',
+      },
+    },
     route: textRoute,
     worksheet: [
       { id: 'suitable', title: 'Discovery or confirmation', fields: [
@@ -1300,7 +1318,7 @@ export const guided10: Record<string, Guided> = {
         { id: 'if-stuck', label: 'What you tell them to do if something does not work', kind: 'short' },
       ] },
       { id: 'aloud', title: 'Read it aloud to one person', fields: [
-        { id: 'hesitations', label: 'Where the reader paused, re-read, or described doing something you did not intend', kind: 'long' },
+        { id: 'hesitations', sensitive: true, label: 'Where the reader paused, re-read, or described doing something you did not intend', kind: 'long' },
         { id: 'rewrites', label: 'What you changed, with the old wording beside the new', kind: 'long' },
       ] },
       { id: 'limits', title: 'What this cannot capture', fields: [
@@ -1312,7 +1330,7 @@ export const guided10: Record<string, Guided> = {
         { id: 'decision', label: 'Your decision', kind: 'choice',
           options: ['Run it', 'Do not run it', 'Run it only after something changes'] },
         { id: 'decision-reason', label: 'The reason either way: what you would learn, what it costs, and whether that is worth it for this question', kind: 'long' },
-        { id: 'data-plan', label: 'If you are running it: where answers arrive and where they are stored. If you have nobody to send it to: today’s date and what you tried.', kind: 'long' },
+        { id: 'data-plan', sensitive: true, label: 'If you are running it: where answers arrive and where they are stored. If you have nobody to send it to: today’s date and what you tried.', kind: 'long' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
@@ -1352,10 +1370,10 @@ export const guided10: Record<string, Guided> = {
           material: 'A supplied made up unmoderated result. Five people were sent one task: reach the point where you would change a booking. Four reported reaching it, one reported giving up. The comment boxes say “fine”, “fine”, “ok”, nothing, and “couldn’t see it”.',
           question: 'Which limit is the one worth writing down first?',
           options: [
-            { label: 'You cannot say why the fifth person gave up, and “couldn’t see it” is the whole account you will ever get.', correct: true, feedback: 'The one failure is the most interesting line in the result, and the method has already closed the door on explaining it. Naming that is what tells you whether to follow up.' },
-            { label: 'Five people is too few to report a rate.', feedback: 'True of every study this size, and it is a limit about counting rather than about this method. An unmoderated run with five hundred people still could not tell you why.' },
-            { label: 'You cannot be sure the participants were representative.', feedback: 'A recruitment limit that belongs in your report and would apply just as much to a moderated session.' },
-            { label: 'You cannot check whether anyone was interrupted while doing it.', feedback: 'A real limit of the method, and a smaller one than the missing why. Write it second.' },
+            { label: 'You cannot learn why the fifth person gave up; “couldn’t see it” is all you will ever get.', correct: true, feedback: 'The one failure is the most interesting line in the result, and the method has already closed the door on explaining it. Naming that is what tells you whether to follow up.', was: ['You cannot say why the fifth person gave up, and “couldn’t see it” is the whole account you will ever get.'] },
+            { label: 'Five people is too few to report any rate, so no proportion can appear in the report.', feedback: 'True of every study this size, and it is a limit about counting rather than about this method. An unmoderated run with five hundred people still could not tell you why.', was: ['Five people is too few to report a rate.'] },
+            { label: 'You cannot be sure the five participants represent the people who will actually use the service.', feedback: 'A recruitment limit that belongs in your report and would apply just as much to a moderated session.', was: ['You cannot be sure the participants were representative.'] },
+            { label: 'You cannot check whether anyone was interrupted or distracted partway through the task.', feedback: 'A real limit of the method, and a smaller one than the missing why. Write it second.', was: ['You cannot check whether anyone was interrupted while doing it.'] },
           ],
           then: 'Write your own limits in the same order: the one that damages your strongest finding goes first.',
         },
@@ -1368,11 +1386,11 @@ export const guided10: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'An unmoderated run says four of five people reached the change screen and one gave up. What can you say about why she gave up?',
+        question: 'An unmoderated run says four of five people reached the change screen; one gave up and typed only “couldn’t see it”. What can you say about why she gave up?',
         options: [
-          { label: 'Almost nothing, beyond the words she chose to type, and that gap belongs in the limits rather than being filled in.', correct: true, feedback: 'The gap is the method working exactly as designed. Guessing at it is how an unmoderated result turns into an invented finding.' },
-          { label: 'You can work it out from where the other four succeeded.', feedback: 'The four tell you the route exists and that some people find it. They say nothing about what happened in her session.' },
-          { label: 'You can say the route is hard to find, since one person in five failed.', feedback: 'One outcome in five is a count, not a cause. It could be the route, the wording of your scenario, or her phone ringing.' },
+          { label: 'Almost nothing beyond her three words, and that gap belongs in the limits, not filled in.', correct: true, feedback: 'The gap is the method working exactly as designed. Guessing at it is how an unmoderated result turns into an invented finding.', was: ['Almost nothing, beyond the words she chose to type, and that gap belongs in the limits rather than being filled in.'] },
+          { label: 'You can work it out from the routes the other four took to reach the change screen.', feedback: 'The four tell you the route exists and that some people find it. They say nothing about what happened in her session.', was: ['You can work it out from where the other four succeeded.'] },
+          { label: 'That the route is hard to find, since one person in five failed to reach it at all.', feedback: 'One outcome in five is a count, not a cause. It could be the route, the wording of your scenario, or her phone ringing.', was: ['You can say the route is hard to find, since one person in five failed.'] },
         ],
         repair: 'If the limits-list field in step 4 does not name the missing why first, move it to the top and record the change in step 5.',
         recheck: 'The missing why is the first limit on the list.',
@@ -1380,9 +1398,9 @@ export const guided10: Record<string, Guided> = {
       {
         question: 'Is an unmoderated run more objective because you are not there to influence anyone?',
         options: [
-          { label: 'It is unsupervised rather than objective: removing you removes your influence and your understanding at the same time.', correct: true, feedback: 'You also lose the chance to notice a misread instruction, which is a silent error nobody ever reports.' },
-          { label: 'It is more objective, because the absence of a moderator removes the main source of bias.', feedback: 'A moderator is one source among several. The instructions, the recruitment and your own reading of the outcomes all remain.' },
-          { label: 'It is more objective, provided the instructions are well written.', feedback: 'Well-written instructions reduce misreading. They do not turn behaviour without explanation into an unbiased result.' },
+          { label: 'It is unsupervised rather than objective: your influence goes, and so does your understanding.', correct: true, feedback: 'You also lose the chance to notice a misread instruction, which is a silent error nobody ever reports.', was: ['It is unsupervised rather than objective: removing you removes your influence and your understanding at the same time.'] },
+          { label: 'It is more objective, because removing the moderator removes the main source of bias.', feedback: 'A moderator is one source among several. The instructions, the recruitment and your own reading of the outcomes all remain.', was: ['It is more objective, because the absence of a moderator removes the main source of bias.'] },
+          { label: 'It is more objective, provided the written instructions are clear and well tested.', feedback: 'Well-written instructions reduce misreading. They do not turn behaviour without explanation into an unbiased result.', was: ['It is more objective, provided the instructions are well written.'] },
         ],
         repair: 'If the limits-list field in step 4 describes this method as unbiased or objective, rewrite that line as what you gain and what you lose, then record the change in step 5.',
         recheck: 'The limits describe reach gained and explanation lost.',
@@ -1391,8 +1409,8 @@ export const guided10: Record<string, Guided> = {
         question: 'You designed the task set and there is nobody to send it to. What do you file?',
         options: [
           { label: 'The task set, the limits, and a dated line saying it was not run and what you tried.', correct: true, feedback: 'The design is the work. A dated gap is honest, and it also shows the decision was about the question rather than about the effort.' },
-          { label: 'Nothing at all: a study you never ran is not worth keeping.', feedback: 'The reasoning behind a method choice is one of the few things a reader can genuinely judge. Throwing it away loses that.' },
-          { label: 'The task set, written up as though a small run had happened.', feedback: 'That is an invented result, and it is the one thing that would make everything else you filed untrustworthy.' },
+          { label: 'Nothing at all, since a study that was never run has no result worth keeping on file.', feedback: 'The reasoning behind a method choice is one of the few things a reader can genuinely judge. Throwing it away loses that.', was: ['Nothing at all: a study you never ran is not worth keeping.'] },
+          { label: 'The task set, written up as though a small trial run had happened with a few people.', feedback: 'That is an invented result, and it is the one thing that would make everything else you filed untrustworthy.', was: ['The task set, written up as though a small run had happened.'] },
         ],
         repair: 'If the data-plan field in step 5 is empty because you have nobody to send it to, write today’s date and what you tried, then record the change in the last field of step 5.',
         recheck: 'The decision is written either way, and an unrun study carries its date.',
@@ -1406,6 +1424,16 @@ export const guided10: Record<string, Guided> = {
     },
   },
   'm10-l11-v1': {
+    transfer: {
+      scenario: 'Made-up case: you tested a dry-cleaning pickup app with three people. Two of the three could not tell whether their pickup slot was confirmed. Nobody missed a pickup. One person asked for a loyalty-points feature. The team was planning to build loyalty points next.',
+      prompt: 'Write the opening decision of your report and one thing not to build, with the reason for each.',
+      anchors: {
+        weak: 'Opens with the method, or recommends loyalty points because someone asked for them; no counts.',
+        adequate: 'Opens with fixing slot confirmation first, because two of three could not tell whether their slot was confirmed; argues against building loyalty points now, because one request is not an observed problem.',
+        strong: 'As adequate, plus what would reverse the non-recommendation (people actually leaving for another service’s points), and the limits beside the counts: three people, one recruitment route.',
+      },
+    },
+    material: practiceStudy,
     route: textRoute,
     worksheet: [
       { id: 'decision', title: 'The decision, first', fields: [
@@ -1414,16 +1442,16 @@ export const guided10: Record<string, Guided> = {
         { id: 'held-work', label: 'What you are asking to stop or wait while this is fixed', kind: 'short' },
       ] },
       { id: 'findings', title: 'The findings', intro: 'One at a time: headline, how many of how many, the evidence, and what it changes.', fields: [
-        { id: 'finding-1', label: 'Finding 1 · headline, how many of how many people met it, the evidence, and what it changes', kind: 'long',
+        { id: 'finding-1', sensitive: true, label: 'Finding 1 · headline, how many of how many people met it, the evidence, and what it changes', kind: 'long', hint: 'Quote only a few words, with nothing that points at the person who said them. Supplied practice records are labelled as practice.',
           example: 'Example (made up): people cannot tell whether a place is held before paying — two of three — “I don’t know if the class is definitely mine yet” — the review screen has to say what is already secured.' },
-        { id: 'finding-2', label: 'Finding 2 · headline, how many of how many people met it, the evidence, and what it changes', kind: 'long' },
-        { id: 'finding-3', label: 'Finding 3 · headline, how many of how many people met it, the evidence, and what it changes', kind: 'long' },
-        { id: 'finding-4', label: 'Finding 4 · headline, how many of how many people met it, the evidence, and what it changes', kind: 'long' },
-        { id: 'repair-result', label: 'The repair you tested, the prediction you wrote first, and how it actually turned out', kind: 'long',
+        { id: 'finding-2', sensitive: true, label: 'Finding 2 · headline, how many of how many people met it, the evidence, and what it changes', kind: 'long' },
+        { id: 'finding-3', sensitive: true, label: 'Finding 3 · headline, how many of how many people met it, the evidence, and what it changes', kind: 'long' },
+        { id: 'finding-4', sensitive: true, label: 'Finding 4 · headline, how many of how many people met it, the evidence, and what it changes', kind: 'long' },
+        { id: 'repair-result', sensitive: true, label: 'The repair you tested, the prediction you wrote first, and how it actually turned out', kind: 'long',
           hint: 'A partial or failed repair is a result. Write it exactly as it happened.' },
       ] },
       { id: 'limits', title: 'Limits', fields: [
-        { id: 'who-took-part', label: 'How many people took part, how they were reached, and who was left out', kind: 'long',
+        { id: 'who-took-part', sensitive: true, label: 'How many people took part, how they were reached, and who was left out', kind: 'long',
           hint: 'If part of this came from a rehearsal or from supplied practice material, say so here, in the same sentence as the numbers.' },
         { id: 'what-was-faked', label: 'From your fakes sheet: the controls that did nothing and the values you invented', kind: 'long' },
         { id: 'untested', label: 'What was never tested at all: the connection, assistive technology, other groups of people', kind: 'long' },
@@ -1476,10 +1504,10 @@ export const guided10: Record<string, Guided> = {
           material: 'A supplied made up study. Three people booked a class. Two could not tell whether their place was held before paying. Nobody forgot about a class they had booked. One person said, unprompted, that she would like a reminder the day before.',
           question: 'Which non-recommendation does this evidence license?',
           options: [
-            { label: 'Do not build the reminder feature yet, because nobody’s difficulty was forgetting, and one person asking for it is a request rather than a problem.', correct: true, feedback: 'The strongest non-recommendation names something you were likely to build anyway. It also carries its own reversal: watch for someone who actually missed a class.' },
-            { label: 'Do not build the reminder feature, because reminders are common elsewhere and add nothing new.', feedback: 'The reason has to come from what you saw, not from what other products do. A reader cannot check the second kind of reason at all.' },
-            { label: 'Do not build anything until more people have been tested.', feedback: 'That is a recommendation to stop, and it is not what this evidence says. Two of three people meeting one specific problem is enough to act on that one thing.' },
-            { label: 'Do not build the held-place message, because only two of three people met the problem.', feedback: 'Two of three met the highest-harm problem in the study. Arguing against the repair you have most support for turns the section into caution rather than a finding.' },
+            { label: 'Hold the reminder feature: nobody’s difficulty was forgetting, and one request is not a problem.', correct: true, feedback: 'The strongest non-recommendation names something you were likely to build anyway. It also carries its own reversal: watch for someone who actually missed a class.', was: ['Do not build the reminder feature yet, because nobody’s difficulty was forgetting, and one person asking for it is a request rather than a problem.'] },
+            { label: 'Hold the reminder feature, because reminders are common elsewhere and add nothing new.', feedback: 'The reason has to come from what you saw, not from what other products do. A reader cannot check the second kind of reason at all.', was: ['Do not build the reminder feature, because reminders are common elsewhere and add nothing new.'] },
+            { label: 'Hold all new building until more people have tested it, since three is too few to act on.', feedback: 'That is a recommendation to stop, and it is not what this evidence says. Two of three people meeting one specific problem is enough to act on that one thing.', was: ['Do not build anything until more people have been tested.'] },
+            { label: 'Hold the held-place message, because only two of the three people met that problem.', feedback: 'Two of three met the highest-harm problem in the study. Arguing against the repair you have most support for turns the section into caution rather than a finding.', was: ['Do not build the held-place message, because only two of three people met the problem.'] },
           ],
           then: 'Write your own non-recommendation the same way: the thing, what you saw, and what would reverse it.',
         },
@@ -1494,19 +1522,19 @@ export const guided10: Record<string, Guided> = {
       {
         question: 'Fifteen thorough pages, or two pages with the decision first. Which one changes more?',
         options: [
-          { label: 'Two pages, because length reduces the chance anyone finishes it, and an unread recommendation changes nothing.', correct: true, feedback: 'Thoroughness protects you from being questioned. It does not get the change made, and the two are easy to confuse while you are writing.' },
-          { label: 'Fifteen pages, because a complete record is harder to argue with.', feedback: 'Nobody argues with it because nobody reaches the end. The raw material still sits in your folder if anyone asks for it.' },
-          { label: 'Fifteen pages, because the detail shows the work was done properly.', feedback: 'The work being done properly is shown by the counts and the limits, and both of those fit on two pages.' },
+          { label: 'Two pages, since length cuts the chance anyone finishes, and an unread decision changes nothing.', correct: true, feedback: 'Thoroughness protects you from being questioned. It does not get the change made, and the two are easy to confuse while you are writing.', was: ['Two pages, because length reduces the chance anyone finishes it, and an unread recommendation changes nothing.'] },
+          { label: 'Fifteen pages, since a complete record of every session is much harder to argue with.', feedback: 'Nobody argues with it because nobody reaches the end. The raw material still sits in your folder if anyone asks for it.', was: ['Fifteen pages, because a complete record is harder to argue with.'] },
+          { label: 'Fifteen pages, since the detail shows the work was done properly and can be trusted.', feedback: 'The work being done properly is shown by the counts and the limits, and both of those fit on two pages.', was: ['Fifteen pages, because the detail shows the work was done properly.'] },
         ],
         repair: 'If the findings in step 2 will not fit on two pages, cut to the ones the decision rests on and record what you cut in step 5.',
         recheck: 'The findings and limits fit two pages, with the decision paragraph at the top.',
       },
       {
-        question: 'You write “67 per cent of participants were unsure”. What is wrong with it?',
+        question: 'Two of your three participants were unsure, and you write “67 per cent of participants were unsure”. What is wrong with it?',
         options: [
-          { label: 'It is two of three people written as a rate, and the rate suggests a precision the study cannot support.', correct: true, feedback: 'A percentage invites the reader to compare your three people with numbers from studies of thousands. The count does not.' },
-          { label: 'It is acceptable as long as you say somewhere that the sample was small.', feedback: 'The caveat travels badly. The number gets quoted onward; the sentence beside it does not.' },
-          { label: 'The figure should be rounded to 70 per cent.', feedback: 'Rounding changes the digits and keeps the problem, which is reporting three people as a proportion at all.' },
+          { label: 'It turns two of three people into a rate that suggests precision the study cannot support.', correct: true, feedback: 'A percentage invites the reader to compare your three people with numbers from studies of thousands. The count does not.', was: ['It is two of three people written as a rate, and the rate suggests a precision the study cannot support.'] },
+          { label: 'Nothing serious, provided the report says somewhere that the sample was small.', feedback: 'The caveat travels badly. The number gets quoted onward; the sentence beside it does not.', was: ['It is acceptable as long as you say somewhere that the sample was small.'] },
+          { label: 'Only the rounding: at this sample size the figure should be written as 70 per cent.', feedback: 'Rounding changes the digits and keeps the problem, which is reporting three people as a proportion at all.', was: ['The figure should be rounded to 70 per cent.'] },
         ],
         repair: 'Search the findings in step 2 for the per cent sign and the word most, rewrite each as a count of participants, then record the change in step 5.',
         recheck: 'Every finding carries a count of how many of how many people.',
@@ -1514,9 +1542,9 @@ export const guided10: Record<string, Guided> = {
       {
         question: 'Your report recommends four things and argues against nothing. What does that suggest?',
         options: [
-          { label: 'The study may have confirmed what you already believed, and the thing not to build is the line that would show it did more than that.', correct: true, feedback: 'Evidence that only ever agrees with you is worth a second look. The non-recommendation is where a reader sees the study could have changed your mind.' },
-          { label: 'It suggests nothing: a study that supports the plan is a good outcome.', feedback: 'It can be, and it is also what a study looks like when it was designed to agree. The check costs you one paragraph.' },
-          { label: 'You should add a non-recommendation for balance, whether or not the evidence supports one.', feedback: 'An invented non-recommendation is as unsupported as an invented finding. Look for the one your evidence actually gives you.' },
+          { label: 'The study may only have confirmed your beliefs; look for something the evidence argues against.', correct: true, feedback: 'Evidence that only ever agrees with you is worth a second look. If, after looking, it argues against nothing, say so plainly: a justified decision to keep the plan is a valid result.', was: ['The study may have confirmed what you already believed, and the thing not to build is the line that would show it did more than that.'] },
+          { label: 'Nothing worrying: a study that supports the whole plan is simply a good outcome for it.', feedback: 'It can be, and it is also what a study looks like when it was designed to agree. The check costs you one paragraph.', was: ['It suggests nothing: a study that supports the plan is a good outcome.'] },
+          { label: 'That you should add a non-recommendation for balance, whatever the evidence supports.', feedback: 'An invented non-recommendation is as unsupported as an invented finding. Look for the one your evidence actually gives you.', was: ['You should add a non-recommendation for balance, whether or not the evidence supports one.'] },
         ],
         repair: 'Fill the not-build field in step 4 with what you saw and what would reverse it, then record the change in step 5.',
         recheck: 'One named thing not to build, with its reason and its reversal.',
@@ -1530,6 +1558,15 @@ export const guided10: Record<string, Guided> = {
     },
   },
   'm10-l12-v1': {
+    transfer: {
+      scenario: 'Made-up case: a designer’s portfolio page for a community-garden plot booking app says: research showed users wanted a waiting list, so I designed one, and testing validated it. Her files contain two interviews in which nobody mentioned a waiting list, and one paper test in which one of two people used it.',
+      prompt: 'Rewrite the sentence honestly and explain which parts are evidence and which are judgement.',
+      anchors: {
+        weak: 'Keeps validated or research showed, or deletes the waiting list without saying why.',
+        adequate: 'Marks the waiting list as a judgement call because no interview raised it, reports the test as one of two people used it in a paper test, and removes validated.',
+        strong: 'As adequate, plus names what would test the judgement (a task where the plot she wants is taken), and treats the interviews’ silence as a limit rather than as evidence against it.',
+      },
+    },
     route: textRoute,
     worksheet: [
       { id: 'trail', title: 'The trail', fields: [
@@ -1546,7 +1583,7 @@ export const guided10: Record<string, Guided> = {
         { id: 'built-and-fidelity', label: 'What you built, and at what fidelity', kind: 'long' },
         { id: 'faked', label: 'What was faked, taken from your fakes sheet', kind: 'long' },
         { id: 'never-touched', label: 'What you never tested at all', kind: 'long' },
-        { id: 'who-took-part', label: 'Who took part and how they were reached, or the dated gap where nobody did', kind: 'long' },
+        { id: 'who-took-part', sensitive: true, label: 'Who took part and how they were reached, or the dated gap where nobody did', kind: 'long' },
       ] },
       { id: 'summary', title: 'The summary', fields: [
         { id: 'summary-para', label: 'The project in one paragraph, with no outcome claims', kind: 'long' },
@@ -1671,11 +1708,11 @@ export const guided10: Record<string, Guided> = {
         recheck: 'Nothing rehearsed or supplied sits in the trail unlabelled.',
       },
       {
-        question: 'Your summary says the design was validated by testing. What is wrong with that?',
+        question: 'Your small test found problems and your repair partly worked. The summary says the design was validated by testing. What is wrong with that?',
         options: [
-          { label: 'Nothing was validated: a small test found problems and a repair partly worked, and that is the sentence to write instead.', correct: true, feedback: 'Validated implies a measured outcome that nobody can produce. What you actually did is more interesting, and it can be checked.' },
-          { label: 'It is fine, since you did run a test and the repair mostly worked.', feedback: 'Running a test licenses “I tested it and here is what happened”. It does not license a word that means the design was proven.' },
-          { label: 'It is fine once you add the participant count.', feedback: 'The count helps every honest sentence and it cannot rescue this one, because the problem is the claim rather than the size.' },
+          { label: 'Validated claims a proven result; say instead what the test found and what partly worked.', correct: true, feedback: 'Validated implies a measured outcome that nobody can produce. What you actually did is more interesting, and it can be checked.', was: ['Nothing was validated: a small test found problems and a repair partly worked, and that is the sentence to write instead.'] },
+          { label: 'It is fine, since you did run a test and the repair mostly worked for the people tested.', feedback: 'Running a test licenses “I tested it and here is what happened”. It does not license a word that means the design was proven.', was: ['It is fine, since you did run a test and the repair mostly worked.'] },
+          { label: 'It is fine once the participant count is added beside it, so readers can judge the weight.', feedback: 'The count helps every honest sentence and it cannot rescue this one, because the problem is the claim rather than the size.', was: ['It is fine once you add the participant count.'] },
         ],
         repair: 'Search the summary-para field in step 4 for validated, proven, shipped and any percentage, rewrite each as what you did and what you observed, then record the change in step 5.',
         recheck: 'The summary carries no outcome or measurement claims.',
