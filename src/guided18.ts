@@ -10,17 +10,21 @@ export const guided18: Record<string, Guided> = {
   'm18-l01-v1': {
     route: textRoute,
     worksheet: [
-      { id: 'domains', title: 'Three candidate domains', intro: 'Domains you have not used, where you already know somebody. One at a time.', fields: [
-        ...[1, 2, 3].map((n) => ({ id: `domain-${n}`, label: `Domain ${n} · the domain, who you know there, and the problem you have heard somebody complain about`, kind: 'long' as const,
+      { id: 'domains', title: 'Three candidate domains', intro: 'Domains you have not used, where you already know somebody. One at a time, and name people by role rather than by name.', fields: [
+        ...[1, 2, 3].map((n) => ({ id: `domain-${n}`, label: `Domain ${n} · the domain, who you know there (by role, not name), and the problem you have heard somebody complain about`, kind: 'long' as const,
           ...(n === 1 ? { hint: 'Heard somebody complain about, rather than one you find interesting. The difference decides whether anybody will talk to you.', example: 'Example (made up): a repair shop. I know the owner. He has complained twice that he cannot tell customers when a repair will be ready.' } : {}) })),
       ] },
+      { id: 'brief', title: 'Your Module 16–17 brief', fields: [
+        { id: 'brief-decision', label: 'Your Module 16–17 project brief: continued, or replaced — and why', kind: 'long', hint: 'Continuing saves the roles and failure scenarios you already mapped. Replacing is allowed with a written reason. Arriving from Project 1 without a brief? Write that, and which brief you are choosing now.', example: 'Example (made up): replaced. The volunteer coordinator who agreed to take part stepped down; the role-and-permission map carries over to the new domain.' },
+      ] },
       { id: 'access', title: 'Test the access before committing', fields: [
-        { id: 'three-agreed', label: 'Three named people who have agreed to take part, and what they agreed to', kind: 'long', hint: 'Agreed, not likely to agree. The whole gate is whether somebody has said yes.' },
-        { id: 'declined', label: 'Who declined, and why', kind: 'long', hint: 'Useful information rather than a failure. It often says something about the domain.' },
-        { id: 'no-three', label: 'If you cannot reach three, what you will do instead', kind: 'long', hint: 'The alternate route: one person and a bounded scope, or a supplied brief worked through and labelled as practice. Both are complete answers; inventing participants is not.' },
+        { id: 'access-route', label: 'Which route your access allows', kind: 'choice', options: ['Three or more people have agreed: the full route', 'One person has agreed: the bounded single-participant route', 'Nobody yet: the supplied practice brief, labelled practice'], hint: 'All three are complete routes. What is never open is inventing the people you could not reach.' },
+        { id: 'three-agreed', label: 'The three people who have agreed, by role rather than name, and what each agreed to', kind: 'long', sensitive: true, hint: 'Agreed, not likely to agree. Keep names and contact details in your private notes; write roles here, such as the owner or a regular customer.', requiredWhen: { field: 'access-route', values: ['Three or more people have agreed: the full route'] } },
+        { id: 'declined', label: 'Who declined or could not be reached, by role, and why', kind: 'long', sensitive: true, optional: true, hint: 'Useful information rather than a failure. It often says something about the domain. Roles only.' },
+        { id: 'no-three', label: 'Your alternate route, and what it can and cannot establish', kind: 'long', hint: 'One person with a narrower scope, or the supplied practice brief in this lesson’s source notes, labelled practice. Both are complete answers; inventing participants is not.', requiredWhen: { field: 'access-route', values: ['One person has agreed: the bounded single-participant route', 'Nobody yet: the supplied practice brief, labelled practice'] } },
       ] },
       { id: 'problem', title: 'The problem, in their words', fields: [
-        { id: 'their-words', label: 'The problem as the person described it', kind: 'long', hint: 'Their sentence, not your restatement. Yours will already contain a solution.' },
+        { id: 'their-words', label: 'The problem close to how the person described it, without their name — or the supplied brief’s quoted complaint', kind: 'long', sensitive: true, hint: 'Their wording, not your restatement; yours will already contain a solution. Keep any verbatim note in your private notes with a date to delete it.' },
         { id: 'not-a-solution', label: 'How you checked it is not a solution in disguise', kind: 'short' },
       ] },
       { id: 'appetite', title: 'Scope to the time you have', fields: [
@@ -34,19 +38,19 @@ export const guided18: Record<string, Guided> = {
     ],
     guide: [
       { expect: 'Three candidate domains you have not used, each with somebody you know and a problem you have heard them complain about.',
-        fields: ['domain-1', 'domain-2', 'domain-3'],
+        fields: ['domain-1', 'domain-2', 'domain-3', 'brief-decision'],
         reveal: revealOne(3, 'Add the next domain', 'One at a time, and write the complaint you actually heard rather than the problem you imagine.'),
         terms: [
           { term: 'A problem somebody already has', meaning: 'One you have heard complained about. It is far easier to get access to, and it is far more likely to be real.' },
           { term: 'A new domain', meaning: 'Different from your earlier projects, so the portfolio shows range rather than the same setting three times.' },
         ],
-        start: 'Think about what people have complained to you about in the last six months.',
-        enough: 'Each domain names a person you could message today.' },
-      { expect: 'Three named people who have agreed, who declined and why, and what you will do if you cannot reach three.',
-        fields: ['three-agreed', 'declined', 'no-three'],
+        start: 'Open your Module 16–17 brief first and decide whether it survives; then think about what people have complained to you about in the last six months.',
+        enough: 'Each domain names a person you could message today, and the brief decision has a reason.' },
+      { expect: 'Your access route, the three people who agreed by role — or your alternate route — and who declined or could not be reached.',
+        fields: ['access-route', 'three-agreed', 'declined', 'no-three'],
         terms: [
           { term: 'The access gate', meaning: 'Three agreements before committing. It is the decision most independent projects get wrong, and it is made first here for that reason.' },
-          { term: 'The alternate route', meaning: 'One participant with a narrower scope, or a supplied brief worked through and labelled practice. Both produce real work; neither produces invented findings.' },
+          { term: 'The alternate route', meaning: 'One participant with a narrower scope, or the supplied practice brief in this lesson’s source notes, labelled practice. Both produce real work; neither produces findings about real people.' },
         ],
         demo: {
           scenario: 'Made-up example. Choosing a third project, and choosing the interesting one.',
@@ -148,39 +152,54 @@ export const guided18: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'You plan to find participants once the project is under way. What happens?',
+        question: 'You plan to find participants once the project is under way. What is the likely result?',
         options: [
-          { label: 'Either the project stalls, or you write something research-shaped without research. Access is the first decision rather than a later step.', correct: true, feedback: 'Three weeks of unanswered messages costs a fifth of a four-week appetite. A domain where somebody has already complained twice takes one conversation.' },
-          { label: 'It usually works out, since people are helpful once asked properly.', feedback: 'Some are. The ones who already have the problem are far more likely to be, which is why the choice comes first.' },
-          { label: 'You lose some time but the work is unaffected.', feedback: 'The work is what gets compressed, and the compression lands on the research.' },
+          { label: 'The project stalls, or you end up writing something research-shaped without any research.', correct: true, was: ['Either the project stalls, or you write something research-shaped without research. Access is the first decision rather than a later step.'], feedback: 'Access is the first decision rather than a later step. Three weeks of unanswered messages costs a fifth of a four-week appetite; a domain where somebody has already complained twice takes one conversation.' },
+          { label: 'It usually works out, because people with the problem are glad to help once asked well.', was: ['It usually works out, since people are helpful once asked properly.'], feedback: 'Some are. The ones who already have the problem are far more likely to be, which is why the choice of domain comes first.' },
+          { label: 'You lose a few weeks of the appetite, but the quality of the research itself is unaffected.', was: ['You lose some time but the work is unaffected.'], feedback: 'The work is what gets compressed, and the compression lands on the research.' },
         ],
         repair: 'Get three agreements before committing, in step 2, or write which alternate route you are taking. Record the change in step 5.',
         recheck: 'Either three people have said yes, or your route is written down.',
       },
       {
-        question: 'You can only reach one person. Is the module unavailable to you?',
+        question: 'You can only reach one person. Is the independent project closed to you?',
         options: [
-          { label: 'No. One participant with a narrower scope, or a supplied brief worked through and labelled practice, are both complete routes.', correct: true, feedback: 'What is not available is inventing the other two. A bounded project honestly labelled is real work; a three-participant study with two imagined participants is not.' },
-          { label: 'Effectively yes, since the project needs three.', feedback: 'Three is the preferred route. Treating its absence as disqualification is what makes people invent the difference.' },
-          { label: 'No, you can extrapolate from one person carefully.', feedback: 'You can report what one person did. Extrapolating is the thing this course refuses throughout.' },
+          { label: 'It is open: one person with a narrower scope, or the supplied brief labelled practice, are complete routes.', correct: true, was: ['No. One participant with a narrower scope, or a supplied brief worked through and labelled practice, are both complete routes.'], feedback: 'What is not available is inventing the other two. A bounded project honestly labelled is real work; a three-participant study with two imagined participants is not.' },
+          { label: 'It is effectively closed, because the full route needs three people and one cannot stand in for them.', was: ['Effectively yes, since the project needs three.'], feedback: 'Three is the preferred route. Treating its absence as disqualification is what makes people invent the difference.' },
+          { label: 'It is open, as long as you extrapolate carefully from that one person to the customers you cannot reach.', was: ['No, you can extrapolate from one person carefully.'], feedback: 'You can report what one person did and said. Extrapolating to people nobody spoke to is the thing this course refuses throughout.' },
         ],
-        repair: 'Write your alternate route in step 2, naming what it can and cannot establish. Record the change in step 5.',
+        repair: 'Choose your route in step 2 and write what it can and cannot establish. Record the change in step 5.',
         recheck: 'Your route is stated and nothing in it invents a participant.',
       },
       {
         question: 'Your problem statement says the shop needs a notification system. What is wrong with it?',
         options: [
           { label: 'It names a thing to build, so the question is closed before anybody has asked it.', correct: true, feedback: 'The problem in his words was that he cannot tell customers when a repair will be ready, so he is interrupted by calls all day. Several things would address that, and notifications is one guess.' },
-          { label: 'Nothing, if that is what the person asked for.', feedback: 'It is frequently what people ask for, because they are describing the fix they can imagine.' },
-          { label: 'It is too specific for this stage.', feedback: 'Specificity is good. Naming a solution is the problem.' },
+          { label: 'Nothing is wrong with it if the owner asked for notifications in those words.', was: ['Nothing, if that is what the person asked for.'], feedback: 'It is frequently what people ask for, because they are describing the fix they can imagine. Their request is a finding; the problem sits underneath it.' },
+          { label: 'It is too specific for this stage; a broader statement would leave more room later.', was: ['It is too specific for this stage.'], feedback: 'Specificity is good. Naming a solution is the problem, however broadly it is worded.' },
         ],
         repair: 'Rewrite the problem in their words in step 3, with no thing to build in it. Record the change in step 5.',
         recheck: 'Your problem statement names a difficulty rather than a product.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: You want an independent project on how a small bakery handles custom cake orders, a domain you find exciting, but you know nobody there. A neighbour who runs a tailoring shop has complained twice that customers keep ringing to ask whether alterations are done; she offers to talk and says she will ask two regular customers. You have four weeks of evenings.',
+      prompt: 'Which project would you choose, and why? Say what access you actually have and what you would do if fewer than three people agree.',
+      anchors: {
+        weak: 'Chooses the bakery because it is more interesting and plans to find participants once started; access is treated as a later step, or the neighbour agreeing on her customers’ behalf is counted as three agreements.',
+        adequate: 'Chooses the tailoring shop because somebody already has the problem and agreement is within reach, and says the gate is each person saying yes directly, so the two customers still have to be asked.',
+        strong: 'As adequate, and names the trade-off of a less appealing domain, states the alternate route — one participant or a labelled practice brief — if the customers decline, and refuses to invent the missing people.',
+      },
+    },
+    material: [
+      'Fictional practice brief, for the practice route only. A volunteer-run community tool library lends drills, ladders and garden tools from a shed behind a community hall, open on Saturday mornings and Wednesday evenings. Members reserve tools on a paper sheet.',
+      'Supplied complaint from the fictional coordinator: “Every Saturday somebody arrives for a tool that never came back, and I spend the morning apologising.”',
+      'Supplied notes from two fictional members, summarised without names: member A drove over twice for a hedge trimmer that was still out on loan; member B now phones the coordinator before every visit. Both said they would rather know before leaving home.',
+      'Label everything from this brief “supplied practice”. It is not research, and nothing from it may be reported as findings about real people or as real impact.',
+    ],
     saveRoute: {
       auto: 'Your candidate domains, the access record, the problem and the abandonment condition save as you type, on this device first and then online.',
-      external: 'Keep the names of people who agreed in your own private notes rather than here. This worksheet records that three agreed and what to.',
+      external: 'Keep the names and contact details of people who agreed in your own private notes, with a date to delete them, rather than here. This worksheet records roles, what each agreed to and which route you are on.',
       creator: 'Your creator reads the access record and the abandonment condition. Both are what separate a chosen project from a convenient one.',
       next: 'Open Your work and choose Ready for review. The next lesson writes the research plan for the access you actually have.',
     },
@@ -206,7 +225,7 @@ export const guided18: Record<string, Guided> = {
         { id: 'cannot-reach', label: 'Who you cannot reach through this route', kind: 'short', hint: 'Recruiting through the owner reaches his customers. It does not reach the ones who stopped coming.' },
       ] },
       { id: 'runnable', title: 'Is it runnable?', fields: [
-        { id: 'real-dates', label: 'The sessions on a calendar with real dates', kind: 'long' },
+        { id: 'real-dates', label: 'The sessions on a calendar with real dates — or, on the practice route, the evenings you will work through the supplied notes', kind: 'long' },
         { id: 'what-slips', label: 'What you would drop first if a session falls through', kind: 'short', hint: 'Decided now, calmly, rather than at the moment something is cancelled.' },
         improvementMade,
       ] },
@@ -328,9 +347,9 @@ export const guided18: Record<string, Guided> = {
       {
         question: 'You know how to do this now. Can the second plan be less formal?',
         options: [
-          { label: 'The formality is what protects the work when it is inconvenient, which is exactly when it gets dropped.', correct: true, feedback: 'A plan written properly the second time is faster and no less necessary. The consent introduction in particular is about a setting, and this setting has other people’s property in it.' },
-          { label: 'Yes, since you have internalised the procedure.', feedback: 'Internalising the procedure is why you can write it quickly. It is not a reason to write less of it.' },
-          { label: 'Yes for consent, no for the questions.', feedback: 'Consent is the part where informality does the most damage.' },
+          { label: 'Formality protects the work when it is inconvenient, which is exactly when it gets dropped.', correct: true, was: ['The formality is what protects the work when it is inconvenient, which is exactly when it gets dropped.'], feedback: 'A plan written properly the second time is faster and no less necessary. The consent introduction in particular is about a setting, and this setting has other people’s property in it.' },
+          { label: 'Less formal is fine, because you have now internalised the procedure and can hold the details in mind.', was: ['Yes, since you have internalised the procedure.'], feedback: 'Internalising the procedure is why you can write it quickly. It is not a reason to write less of it.' },
+          { label: 'Consent can be lighter this time, as long as the research questions are still written out properly.', was: ['Yes for consent, no for the questions.'], feedback: 'Consent is the part where informality does the most damage, because it is about a setting you have not worked in before.' },
         ],
         repair: 'Adapt the consent script for this setting in step 3, marking what changed. Record the change in step 5.',
         recheck: 'At least one thing in your script exists only because of this setting.',
@@ -339,8 +358,8 @@ export const guided18: Record<string, Guided> = {
         question: 'You are recruiting through the shop owner. What does that exclude?',
         options: [
           { label: 'Everybody who stopped using the shop, who are often the most informative people about the problem.', correct: true, feedback: 'Recruiting through somebody reaches the people still in their orbit. Writing that down now stops the study later being read as being about customers in general.' },
-          { label: 'Nothing important, since his customers are the users.', feedback: 'They are the remaining users. The ones who left are the ones the problem affected most.' },
-          { label: 'It biases towards satisfied customers, which is manageable.', feedback: 'It is, and managing it starts with writing down who is missing.' },
+          { label: 'Nothing important, because his current customers are the people who use the shop and have the problem.', was: ['Nothing important, since his customers are the users.'], feedback: 'They are the remaining users. The ones who left are often the ones the problem affected most.' },
+          { label: 'A slight lean towards satisfied customers, which is manageable without writing anything down.', was: ['It biases towards satisfied customers, which is manageable.'], feedback: 'It is manageable, and managing it starts with writing down who is missing.' },
         ],
         repair: 'Write who this route cannot reach in step 4, naming them specifically. Record the change in step 5.',
         recheck: 'Your exclusions name a group of people the study cannot see.',
@@ -349,13 +368,22 @@ export const guided18: Record<string, Guided> = {
         question: 'You cannot answer one of your three questions with the access you have. What should you do?',
         options: [
           { label: 'Record it as unanswerable rather than quietly answering it with a weaker method.', correct: true, feedback: 'A question about what non-returning customers think cannot be answered by asking returning ones. Substituting a weaker method silently is how a study ends up claiming more than it can.' },
-          { label: 'Answer it as well as you can with what you have.', feedback: 'That is the substitution, and the write-up will not say so unless you decide now.' },
-          { label: 'Drop the question, since it cannot be answered.', feedback: 'Recording it is better than dropping it: it is the first thing a later study would go after.' },
+          { label: 'Answer it as well as you can with the people you have, and mention the method in the write-up.', was: ['Answer it as well as you can with what you have.'], feedback: 'That is the substitution: the people you have cannot speak for the people you lack, and a method note does not change who answered.' },
+          { label: 'Drop the question from the plan, since nothing you can run this month would answer it.', was: ['Drop the question, since it cannot be answered.'], feedback: 'Recording it is better than dropping it: it is the first thing a later study would go after.' },
         ],
         repair: 'Write the unanswerable question in step 2 and say what would be needed to answer it. Record the change in step 5.',
         recheck: 'No question is answered by a method that cannot reach it.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: For a new project you are studying how a small dance school handles make-up classes after a missed lesson. Your earlier project, on a café loyalty card, used three questions about how people choose between options. Your access is the school owner and two parents who agreed through her; families who left the school cannot be reached.',
+      prompt: 'Which old questions, if any, would you reuse, what would you write fresh, and what must the plan say it cannot establish? Give your reasons.',
+      anchors: {
+        weak: 'Reuses the café questions with the nouns changed and plans methods as if any parent could be reached; nothing is excluded.',
+        adequate: 'Writes new questions from what the owner and parents described, matches each to the three people available, and records that families who left cannot be reached, so nothing is claimed about them.',
+        strong: 'As adequate, and keeps only the form of a good question while changing its subject, adapts consent to a setting with children present, and names what would be needed to reach the families who left.',
+      },
+    },
     saveRoute: {
       auto: 'Your questions, the method plan, the adapted consent and the exclusions save as you type, on this device first and then online.',
       external: 'The consent introduction is a document you print or read aloud. Keep it in your own folder with the project, not only here.',
@@ -367,20 +395,21 @@ export const guided18: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'sessions', title: 'Run what you planned', fields: [
-        { id: 'sessions-run', label: 'What you ran, with dates', kind: 'long' },
-        { id: 'deviations', label: 'Every deviation from the plan, as it happened', kind: 'long', hint: 'Somebody else present, a session cut short, a conversation by phone rather than in person. Deviations recorded are data; deviations hidden are contamination.', example: 'Example (made up): one interview happened with the owner’s son present, which changed what was said about money.' },
+        { id: 'evidence-source', label: 'Where this evidence comes from', kind: 'choice', options: ['Real sessions with people who agreed', 'One participant: the bounded route', 'Supplied practice notes, labelled practice'], hint: 'All three are complete routes. The label travels with every finding, so a practice finding is never read as research.' },
+        { id: 'sessions-run', label: 'What you ran, with dates and participants by role — or the supplied notes you worked through', kind: 'long', sensitive: true, hint: 'Roles, not names. Raw notes stay in a private file or on paper with a date to delete them.' },
+        { id: 'deviations', label: 'Every deviation from the plan, as it happened, summarised without names', kind: 'long', sensitive: true, hint: 'Somebody else present, a session cut short, a conversation by phone rather than in person. Deviations recorded are data; deviations hidden are contamination.', example: 'Example (made up): one interview happened with the owner’s son present, which changed what was said about money.' },
       ] },
       { id: 'writeup', title: 'Write up promptly', fields: [
-        { id: 'records-timing', label: 'How long after each session you completed its record', kind: 'short', hint: 'Within the hour. What is reconstructed the next day is a memory of a memory.' },
-        { id: 'reconstructed', label: 'Anything reconstructed from memory rather than written at the time', kind: 'long' },
+        { id: 'records-timing', label: 'How long after each session you completed its private record', kind: 'short', hint: 'Within the hour. What is reconstructed the next day is a memory of a memory.', requiredWhen: { field: 'evidence-source', values: ['Real sessions with people who agreed', 'One participant: the bounded route'] } },
+        { id: 'reconstructed', label: 'Anything reconstructed from memory rather than written at the time', kind: 'long', sensitive: true, requiredWhen: { field: 'evidence-source', values: ['Real sessions with people who agreed', 'One participant: the bounded route'] } },
       ] },
       { id: 'synthesise', title: 'Synthesise', fields: [
-        { id: 'findings-counts', label: 'The findings, each with a participant count', kind: 'long', example: 'Example (made up): three of three customers had rung the shop to ask about progress.' },
-        { id: 'contradictions', label: 'Contradictions, kept rather than resolved', kind: 'long', hint: 'The owner believing one thing and customers describing another is a finding. Picking a side deletes it.' },
+        { id: 'findings-counts', label: 'The findings, each with a participant count and its evidence label', kind: 'long', sensitive: true, hint: 'A summary without names. On the practice route, every finding is labelled supplied practice.', example: 'Example (made up): both customers — two of two — had rung the shop to ask about progress.' },
+        { id: 'contradictions', label: 'Contradictions, kept rather than resolved', kind: 'long', sensitive: true, hint: 'The owner believing one thing and customers describing another is a finding. Picking a side deletes it.' },
       ] },
       { id: 'status', title: 'Evidenced, or assumed?', fields: [
-        { id: 'evidenced-assumed', label: 'Every finding marked evidenced or assumed', kind: 'long' },
-        { id: 'estimates', label: 'Anything somebody estimated rather than counted, marked as an estimate', kind: 'short', example: 'Example (made up): the owner estimated six to ten calls a day, which he has never counted.' },
+        { id: 'evidenced-assumed', label: 'Every finding marked evidenced or assumed', kind: 'long', sensitive: true },
+        { id: 'estimates', label: 'Anything somebody estimated rather than counted, marked as an estimate', kind: 'short', sensitive: true, example: 'Example (made up): the owner estimated six to ten calls a day, which he has never counted.' },
       ] },
       { id: 'process', title: 'What you would do differently', fields: [
         { id: 'do-differently', label: 'What you would do differently, written while it is fresh', kind: 'long' },
@@ -389,7 +418,7 @@ export const guided18: Record<string, Guided> = {
     ],
     guide: [
       { expect: 'The planned sessions run, with every deviation recorded as it happened.',
-        fields: ['sessions-run', 'deviations'],
+        fields: ['evidence-source', 'sessions-run', 'deviations'],
         terms: [
           { term: 'Deviation', meaning: 'Anything that differed from the plan: a person present, a session cut short, a different setting. Recorded, it is data about the study; hidden, it is contamination.' },
           { term: 'Unsupervised', meaning: 'The condition this will always be done in. Nobody is checking whether you wrote the deviation down.' },
@@ -414,14 +443,14 @@ export const guided18: Record<string, Guided> = {
           scenario: 'Made-up example. Synthesising a repair-shop study, and tidying the disagreement away.',
           beats: [
             { label: 'What the owner said', text: 'That customers want repairs done faster, which is why he is under pressure. He said it twice, with feeling.' },
-            { label: 'What the customers described', text: 'Not speed. All three talked about not knowing: ringing to ask, planning around a date they could not get, one of them driving over to check.' },
+            { label: 'What the customers described', text: 'Not speed. Both talked about not knowing: ringing to ask, planning around a date they could not get, one of them driving over to check.' },
             { label: 'What I wrote first', text: 'A theme called “customers want a faster, more predictable service”, which contains both and says neither.' },
             { label: 'Why that was the worst possible sentence', text: 'It resolves the disagreement by averaging it. The whole finding is that the person running the shop and the people using it describe different problems.' },
-            { label: 'What I wrote instead', text: 'Two findings, kept apart, with the contradiction named. The owner believes the problem is speed; three of three customers described certainty. That single line reframed the entire project.' },
+            { label: 'What I wrote instead', text: 'Two findings, kept apart, with the contradiction named. The owner believes the problem is speed; two of two customers described certainty. That single line reframed the entire project.' },
           ],
           wrongTurn: 'The wrong turn is resolving a contradiction in the synthesis, because a theme covering both sounds more finished. It is the most informative thing a small study produces, and averaging it produces a sentence nobody can act on.',
           tradeoff: 'Keeping it means presenting the owner with the news that he has misread his own customers, which is an uncomfortable conversation.',
-          uncertainty: 'Still unknown: whether speed matters too. Three customers talked about certainty when asked open questions, and nobody asked them directly about speed.',
+          uncertainty: 'Still unknown: whether speed matters too. Both customers talked about certainty when asked open questions, and nobody asked them directly about speed.',
         },
         start: 'Lay the session records side by side and count how many people said each thing.',
         enough: 'At least one contradiction survived into the findings.' },
@@ -436,11 +465,11 @@ export const guided18: Record<string, Guided> = {
           intro: 'Six lines from a made up repair-shop write-up. For each one, decide what it is.',
           options: ['evidenced, with a count', 'assumed', 'an estimate somebody gave'],
           items: [
-            { id: 'three-rang', text: 'Three of three customers had rung the shop to ask about progress.', answer: 'evidenced, with a count',
+            { id: 'three-rang', text: 'Both customers — two of two — had rung the shop to ask about progress.', answer: 'evidenced, with a count',
               feedback: {
                 'evidenced, with a count': 'Each of them said it, it is written in the records, and the count travels with it.',
                 assumed: 'Nothing is being inferred.',
-                'an estimate somebody gave': 'It is a count of what people reported doing, from three separate conversations.',
+                'an estimate somebody gave': 'It is a count of what people reported doing, from two separate conversations.',
               } },
             { id: 'six-to-ten', text: 'The owner answers between six and ten such calls a day.', answer: 'an estimate somebody gave',
               feedback: {
@@ -466,9 +495,9 @@ export const guided18: Record<string, Guided> = {
                 assumed: 'It is your inference, and an early one. Marked as assumed it stays visible as something to test rather than becoming the brief.',
                 'an estimate somebody gave': 'Nothing was estimated.',
               } },
-            { id: 'one-drove-over', text: 'One of the three drove to the shop to check rather than ringing.', answer: 'evidenced, with a count',
+            { id: 'one-drove-over', text: 'One of the two customers drove to the shop to check rather than ringing.', answer: 'evidenced, with a count',
               feedback: {
-                'evidenced, with a count': 'One of three, from her own account. The count matters because it stops one person becoming customers in the write-up.',
+                'evidenced, with a count': 'One of two, from her own account. The count matters because it stops one person becoming customers in the write-up.',
                 assumed: 'She described doing it.',
                 'an estimate somebody gave': 'It is a single reported event rather than a quantity.',
               } },
@@ -502,21 +531,21 @@ export const guided18: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Your sample is three people. Will the findings be thin?',
+        question: 'Your sample is three people: the owner and two customers. Will the findings be thin?',
         options: [
-          { label: 'They will be bounded, which is different. Three people in a real setting, honestly reported, is a real study.', correct: true, feedback: 'The failure mode is claiming more than it holds. Three of three customers ringing the shop is a finding; customers generally prefer certainty is not.' },
-          { label: 'Yes, which is why the write-up should be cautious throughout.', feedback: 'Caution throughout produces a document that says nothing. Counts on every finding do the same job precisely.' },
-          { label: 'Yes, unless you supplement it with desk research.', feedback: 'Desk research answers different questions. It does not enlarge this study.' },
+          { label: 'Bounded rather than thin: three people in a real setting, honestly reported, is a real study.', correct: true, was: ['They will be bounded, which is different. Three people in a real setting, honestly reported, is a real study.'], feedback: 'The failure mode is claiming more than it holds. Two of two customers ringing the shop is a finding; customers generally prefer certainty is not.' },
+          { label: 'Thin, which is why every sentence of the write-up should carry a cautious qualifier.', was: ['Yes, which is why the write-up should be cautious throughout.'], feedback: 'Caution throughout produces a document that says nothing. Counts on every finding do the same job precisely.' },
+          { label: 'Thin unless you supplement the three conversations with desk research on other shops.', was: ['Yes, unless you supplement it with desk research.'], feedback: 'Desk research answers different questions. It does not enlarge this study.' },
         ],
         repair: 'Put a participant count on every finding in step 3. Record the change in step 5.',
         recheck: 'No finding is stated without its count.',
       },
       {
-        question: 'The owner believes the problem is speed; the customers described certainty. What should the synthesis do?',
+        question: 'The owner believes the problem is speed; both customers described certainty. What should the synthesis do?',
         options: [
-          { label: 'Keep both and name the contradiction. It is usually the most informative thing a small study produces.', correct: true, feedback: 'A theme covering both — faster and more predictable — resolves it by averaging and produces a sentence nobody can act on. The gap between the two is what reframes the project.' },
-          { label: 'Trust the customers, since they are the users.', feedback: 'What the owner believes is also a finding, and it is the one that explains why the shop works as it does.' },
-          { label: 'Find a theme that includes both.', feedback: 'That is the averaging. It sounds more finished and says less.' },
+          { label: 'Keep both findings apart and name the contradiction between them.', correct: true, was: ['Keep both and name the contradiction. It is usually the most informative thing a small study produces.'], feedback: 'A contradiction is usually the most informative thing a small study produces. A theme covering both resolves it by averaging and produces a sentence nobody can act on.' },
+          { label: 'Trust the customers, since they are the people the page is for.', was: ['Trust the customers, since they are the users.'], feedback: 'What the owner believes is also a finding, and it is the one that explains why the shop works as it does.' },
+          { label: 'Find one theme, such as a faster and more predictable service, that covers both.', was: ['Find a theme that includes both.'], feedback: 'That is the averaging. It sounds more finished and says less than either finding.' },
         ],
         repair: 'Write the contradiction as a finding in step 3, with both sides and their counts. Record the change in step 5.',
         recheck: 'At least one contradiction survived into your findings.',
@@ -524,17 +553,31 @@ export const guided18: Record<string, Guided> = {
       {
         question: 'A session happened with somebody else present, which changed what was said. What do you do?',
         options: [
-          { label: 'Record it as a deviation, in the session record, and let it travel with anything drawn from that session.', correct: true, feedback: 'A deviation recorded is data about the study. Hidden, it is contamination, and it will not be visible to anybody reading the findings later, including you.' },
-          { label: 'Discard the session, since it was compromised.', feedback: 'It was different rather than worthless, and what changed is itself informative.' },
-          { label: 'Note it privately and use the findings normally.', feedback: 'Privately means invisible to anybody reading the write-up.' },
+          { label: 'Record it as a deviation that travels with anything drawn from that session.', correct: true, was: ['Record it as a deviation, in the session record, and let it travel with anything drawn from that session.'], feedback: 'A deviation recorded is data about the study. Hidden, it is contamination, and it will not be visible to anybody reading the findings later, including you.' },
+          { label: 'Discard the session, since a third person present compromised what was said.', was: ['Discard the session, since it was compromised.'], feedback: 'It was different rather than worthless, and what changed is itself informative.' },
+          { label: 'Note it in your private file only, and use the findings from it as normal.', was: ['Note it privately and use the findings normally.'], feedback: 'Private means invisible to anybody reading the write-up, so the findings travel without the condition that shaped them.' },
         ],
         repair: 'Write every deviation into step 1, with what it changed. Record the change in step 5.',
         recheck: 'Every deviation is in the record rather than in your memory.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: You spoke to the manager of a community swimming pool and three regular swimmers about lane booking. The manager says the problem is people not turning up for booked slots. All three swimmers described arriving to find their lane had been given to somebody else. One interview happened with the manager’s assistant listening in.',
+      prompt: 'Write two findings with counts, say what you would do with the disagreement, and how you would treat the interview with the assistant present. Give your reasons.',
+      anchors: {
+        weak: 'Writes one blended theme such as “bookings are unreliable”, drops the counts, and either discards the overheard interview or uses it without comment.',
+        adequate: 'Keeps the manager’s belief and three of three swimmers’ experience as separate counted findings, names the contradiction, and records the listener as a deviation that travels with that interview.',
+        strong: 'As adequate, and turns the contradiction into a question to check, marks any inference such as frustration as assumed, and notes what the assistant’s presence may have changed.',
+      },
+    },
+    material: [
+      'Supplied practice notes for the fictional tool library, labelled practice. Coordinator interview: believes the problem is members keeping tools too long; was interrupted twice by a delivery; estimates “four or five” wasted visits a week, which she has never counted.',
+      'Member A, summarised without a name: drove over twice for a hedge trimmer still on loan; would rather get a message before leaving home. Member B, summarised: phones before every visit and said the coordinator “does her best”; this conversation happened by phone rather than in person.',
+      'Both members described not knowing whether a tool was back; neither mentioned members keeping tools too long.',
+    ],
     saveRoute: {
       auto: 'Your session list, the deviations, the findings with counts and the process note save as you type, on this device first and then online.',
-      external: 'Raw notes and any recordings stay in your own private folder, as your consent introduction promised. Nothing identifying anybody belongs in this worksheet.',
+      external: 'Raw notes and any recordings stay in your own private folder or on paper, as your consent introduction promised, with a date to delete them. This worksheet holds summaries without names; removing names does not make notes anonymous, so leave out anything that would let somebody recognise a person.',
       creator: 'Your creator reads the deviations and the contradiction. A study with neither usually means both were tidied away.',
       next: 'Open Your work and choose Ready for review. The next lesson decides what to build from this, and what not to.',
     },
