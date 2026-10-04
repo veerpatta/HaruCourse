@@ -1,5 +1,8 @@
-// Module 19 · Portfolio and storytelling. The audit's warning is that this
-// module assumes three complete, evidenced projects and a publishable website.
+// Module 19 · Portfolio and storytelling. The audit's warning was that this
+// module assumed three complete, evidenced projects and a publishable website.
+// Lessons 1, 4, 5 and 8 now sit early on the core path and work from one
+// project; the rest work with two case studies on the core path or three on
+// the full library, and publishing is optional behind a private PDF route.
 // Every lesson here gates on evidence that exists rather than evidence you
 // remember, shows what redaction actually looks like, keeps publication behind
 // a private review, and treats a thin project as something to state rather
@@ -16,11 +19,11 @@ export const guided19: Record<string, Guided> = {
       ] },
       { id: 'claims', title: 'Three claims', intro: 'The claims your work can support. One at a time, and prefer the ones with the strongest artefacts.', fields: [
         ...[1, 2, 3].map((n) => ({ id: `claim-${n}`, label: `Claim ${n} · what it says about how you work`, kind: 'long' as const,
-          ...(n === 1 ? { example: 'Example (made up): I turn research into a decision that can be traced back to what somebody said.' } : {}) })),
+          ...(n === 1 ? { example: 'Example (made up): I turn research into a decision that can be traced back to what somebody said.' } : { optional: true, hint: 'Optional. With one project, one or two well-supported claims are enough; leave this empty rather than stretching thin evidence.' }) })),
         { id: 'candidates-dropped', label: 'Candidate claims you dropped, and why', kind: 'long' },
       ] },
       { id: 'evidence', title: 'The evidence behind each', fields: [
-        { id: 'claim-evidence', label: 'For each claim: the project and the specific artefact', kind: 'long', hint: 'A named file, not a project. If you cannot point at something, the claim is not available yet.' },
+        { id: 'claim-evidence', label: 'For each claim: the project, the specific artefact and its evidence tier', kind: 'long', hint: 'Tier: real participant research, self-pilot, simulation or supplied practice. A named file, not a project. If you cannot point at something, the claim is not available yet.' },
         { id: 'rejected-claims', label: 'Any claim you rejected because you could not point at an artefact', kind: 'short' },
       ] },
       { id: 'surplus', title: 'The surplus', fields: [
@@ -28,7 +31,7 @@ export const guided19: Record<string, Guided> = {
         { id: 'excluded-not-deleted', label: 'How it is marked excluded rather than deleted', kind: 'short', hint: 'It may support a different claim later, or a different job. Excluded is a decision; deleted is a loss.' },
       ] },
       { id: 'skim', title: 'The ninety-second skim', fields: [
-        { id: 'skim-check', label: 'Whether a ninety-second skim would reach all three claims, and how you can tell', kind: 'long' },
+        { id: 'skim-check', label: 'Whether a ninety-second skim would reach every claim, and how you can tell', kind: 'long' },
         improvementMade,
       ] },
     ],
@@ -41,12 +44,13 @@ export const guided19: Record<string, Guided> = {
         ],
         start: 'Write the sentence and leave it where you can see it for the rest of the module.',
         enough: 'Your sentence is about what they would be trusting you with rather than about your qualities.' },
-      { expect: 'Three claims chosen, with the candidates you dropped and why.',
+      { expect: 'Up to three claims chosen — fewer from one project — with the candidates you dropped or held back and why.',
         fields: ['claim-1', 'claim-2', 'claim-3', 'candidates-dropped'],
         reveal: revealOne(3, 'Add the next claim', 'One at a time, and check the evidence before adding another.'),
         terms: [
           { term: 'A claim', meaning: 'Something about how you work that a reviewer could check against an artefact. Not a quality you have.' },
-          { term: 'Three', meaning: 'What a skim can hold. A fourth makes the others weaker rather than making the portfolio stronger.' },
+          { term: 'At most three', meaning: 'What a skim can hold. One project may support only one or two; a fourth makes the others weaker rather than the portfolio stronger.' },
+          { term: 'Evidence tier', meaning: 'Real participant research, self-pilot (you testing your own work), simulation (scripted or made-up responses) or supplied practice (course material). The claim inherits its artefact’s tier.' },
         ],
         demo: {
           scenario: 'Made-up example. Choosing portfolio claims, and choosing qualities.',
@@ -111,9 +115,9 @@ export const guided19: Record<string, Guided> = {
                 'surplus — supports none of them': 'Two annotated screens would support a craft claim; twelve unannotated ones support none of the three chosen.',
                 'looks like evidence and is not': 'They are honest about being screens.',
               } },
-            { id: 'impact-claim', text: 'A line saying the third project improved efficiency for the business.', answer: 'looks like evidence and is not',
+            { id: 'impact-claim', text: 'A line saying the independent project improved efficiency for the business.', answer: 'looks like evidence and is not',
               feedback: {
-                'strong evidence for a claim': 'The measurement was eleven progress calls becoming seven over matched five-day periods, with two conditions.',
+                'strong evidence for a claim': 'The measurement was eleven progress calls becoming seven over matched five-day periods after the slip wording changed, with two conditions.',
                 'surplus — supports none of them': 'It is worse: it damages the third claim, which is about stating what the work does not establish.',
                 'looks like evidence and is not': 'Efficiency is a category the tally sheets do not cover, and it is the sentence a reviewer will ask about first.',
               } },
@@ -123,7 +127,7 @@ export const guided19: Record<string, Guided> = {
         },
         start: 'List everything you have, then mark what supports nothing.',
         enough: 'Nothing is deleted, and the excluded list is longer than you expected.' },
-      { expect: 'A check that a ninety-second skim would reach all three claims.',
+      { expect: 'A check that a ninety-second skim would reach every claim.',
         fields: ['skim-check', 'improvement-made'],
         terms: [
           { term: 'Reaching a claim in a skim', meaning: 'Somebody who reads only headings, first lines and captions still meets it. Anything that needs a paragraph to reach is not reached.' },
@@ -143,25 +147,25 @@ export const guided19: Record<string, Guided> = {
           uncertainty: 'Still unknown: whether ninety seconds is right. It is the figure people quote and nobody times themselves, so the check is a rough one deliberately.',
         },
         start: 'Read only your own headings and first lines, timed, and see which claims arrive.',
-        enough: 'All three claims appear in the parts somebody would skim.' },
+        enough: 'Every claim appears in the parts somebody would skim.' },
     ],
     checks: [
       {
         question: 'Should the portfolio show everything you have done?',
         options: [
-          { label: 'It should support three claims. Work supporting none of them makes the portfolio longer and the claims weaker.', correct: true, feedback: 'A reviewer skims first and reads only if the skim earns it. Twelve unannotated screens dilute the three things you wanted them to notice.' },
-          { label: 'Yes, since more work shows more range.', feedback: 'Range is shown across claims rather than across volume, and a skim cannot hold more than a few things.' },
-          { label: 'Yes, with the strongest work first.', feedback: 'Ordering helps and the surplus still competes for the same attention.' },
+          { label: 'It should support a few claims; work that supports none of them dilutes the rest.', correct: true, was: ['It should support three claims. Work supporting none of them makes the portfolio longer and the claims weaker.'], feedback: 'A reviewer skims first and reads only if the skim earns it. Twelve unannotated screens dilute the few things you wanted them to notice.' },
+          { label: 'Everything, since more work on show gives a reviewer a fuller sense of your range.', was: ['Yes, since more work shows more range.'], feedback: 'Range is shown across claims rather than across volume, and a skim cannot hold more than a few things.' },
+          { label: 'Everything, as long as the strongest work comes first and the rest follows it.', was: ['Yes, with the strongest work first.'], feedback: 'Ordering helps, and the surplus still competes for the same attention.' },
         ],
-        repair: 'List the work that supports none of your three claims in step 4 and mark it excluded. Record the change in step 5.',
-        recheck: 'Everything included supports one of the three claims.',
+        repair: 'List the work that supports none of your claims in step 4 and mark it excluded. Record the change in step 5.',
+        recheck: 'Everything included supports one of your claims.',
       },
       {
         question: 'Your three claims are user-centred, detail-oriented and collaborative. What is wrong with them?',
         options: [
-          { label: 'They are qualities rather than claims: nothing could support them and nothing could contradict them.', correct: true, feedback: 'A claim names something a reviewer can check against a file. Turning research into a traceable decision points at a synthesis page; detail-oriented points at nothing.' },
-          { label: 'Nothing, though they could be more specific.', feedback: 'Specificity is not a polish here. Without an artefact, the claim does no work at all.' },
-          { label: 'They are too common, so they will not stand out.', feedback: 'Commonness is a symptom. The cause is that nobody could check them.' },
+          { label: 'They are qualities, not claims: no artefact could support or contradict them.', correct: true, was: ['They are qualities rather than claims: nothing could support them and nothing could contradict them.'], feedback: 'A claim names something a reviewer can check against a file. Turning research into a traceable decision points at a synthesis page; detail-oriented points at nothing.' },
+          { label: 'Nothing serious; they are fine claims that could simply be worded more specifically.', was: ['Nothing, though they could be more specific.'], feedback: 'Specificity is not a polish here. Without an artefact, the claim does no work at all.' },
+          { label: 'They are too common in portfolios, so a reviewer will not remember any of them.', was: ['They are too common, so they will not stand out.'], feedback: 'Commonness is a symptom. The cause is that nobody could check them.' },
         ],
         repair: 'Rewrite any claim in step 2 that has no file behind it. Record the change in step 5.',
         recheck: 'Each claim names something a reviewer could open.',
@@ -169,14 +173,23 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'You have a persona document made from three interviews. Is it evidence that research reached a decision?',
         options: [
-          { label: 'No. The trace runs backwards through it: what three people said is inside it and cannot be recovered from it.', correct: true, feedback: 'It also carries a stock photograph and a name, which a reviewer asking one question finds is an invented person. The synthesis page with counts shows the same research and can be checked.' },
-          { label: 'Yes, since it was built from real interviews.', feedback: 'Built from them and not traceable to them. A composite hides the counts and the contradictions.' },
-          { label: 'Yes, if the interviews are also included.', feedback: 'Then the interviews are the evidence and the persona is a summary that loses their detail.' },
+          { label: 'Weak evidence: what three people said is inside it and cannot be recovered from it.', correct: true, was: ['No. The trace runs backwards through it: what three people said is inside it and cannot be recovered from it.'], feedback: 'The trace runs backwards through it. It may also carry a stock photograph and a name, which a reviewer asking one question finds is an invented person. The synthesis page with counts shows the same research and can be checked.' },
+          { label: 'Good evidence, since it was built from three real interviews with consenting people.', was: ['Yes, since it was built from real interviews.'], feedback: 'Built from them and not traceable to them. A composite hides the counts and the contradictions.' },
+          { label: 'Good evidence, as long as the interview notes are attached to it in the portfolio.', was: ['Yes, if the interviews are also included.'], feedback: 'Then the notes would be the evidence and the persona a summary that loses their detail — and raw interview notes do not belong in a portfolio.' },
         ],
         repair: 'Replace any composite artefact in step 3 with the record it was built from. Record the change in step 5.',
         recheck: 'Every artefact you point at can be traced back to what somebody said or did.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: After one project — redesigning how a pottery studio’s members book kiln time — you have a synthesis page with counts from four members (real participant research), a before-and-after flow re-tested with two people, a mood board, and no measurement. You would like claims about research, iteration, visual craft and business impact.',
+      prompt: 'Which claims would you make now, which would you hold back, and what artefact and tier sits behind each? Explain why.',
+      anchors: {
+        weak: 'Makes all four claims, including business impact and visual craft, with the mood board as evidence and no artefact named for the impact.',
+        adequate: 'Makes the research and iteration claims with the synthesis page and the re-test record named, each labelled real participant research, and holds back impact because nothing was measured.',
+        strong: 'As adequate, and notes that one project is enough to start, says which later evidence would earn the held-back claims, and keeps the mood board as excluded rather than deleted.',
+      },
+    },
     saveRoute: {
       auto: 'Your reviewer sentence, the three claims, the evidence and the surplus list save as you type, on this device first and then online.',
       external: 'Keep the claims page where you can see it for the rest of the module; every later lesson is checked against it.',
@@ -188,10 +201,10 @@ export const guided19: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'inventory', title: 'Open the folders', fields: [
-        { id: 'artefact-list', label: 'Everything that exists across the three projects, listed from the folders', kind: 'long', hint: 'From the folders rather than from memory. Memory produces a list of what you intended to keep.' },
+        { id: 'artefact-list', label: 'Everything that exists across your projects, listed from the folders', kind: 'long', hint: 'From the folders rather than from memory. Memory produces a list of what you intended to keep.' },
       ] },
       { id: 'strength', title: 'Strong, thin or missing', fields: [
-        { id: 'marked-strength', label: 'Each item marked strong, thin or missing', kind: 'long' },
+        { id: 'marked-strength', label: 'Each item marked strong, thin or missing, with its evidence tier', kind: 'long', hint: 'Tier: real participant research, self-pilot, simulation or supplied practice. A demonstration with made-up records is never evidence of real use.' },
         { id: 'why-thin', label: 'Why anything is thin, including undated or late artefacts', kind: 'long', example: 'Example (made up): the first project’s session notes were written two days later and say so. Thin rather than missing, and it has to be said.' },
       ] },
       { id: 'claims', title: 'Against the three claims', fields: [
@@ -208,7 +221,7 @@ export const guided19: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'Everything that exists across the three projects, listed from the folders rather than from memory.',
+      { expect: 'Everything that exists across your projects, listed from the folders rather than from memory.',
         fields: ['artefact-list'],
         terms: [
           { term: 'From the folders', meaning: 'Opening each one and writing what is in it. Memory produces a list of what you meant to keep.' },
@@ -322,19 +335,19 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'Should you audit the projects or your memory of them?',
         options: [
-          { label: 'The folders. You remember the project; the folder holds what you kept, and the gap between them is where embellishment starts.', correct: true, feedback: 'A synthesis you remember doing in your head while drawing a flow is a missing artefact. From memory it looks like a complete project; from the folder it is screens, an undated flow and late notes.' },
-          { label: 'Memory is fine as a first pass, then check the folders.', feedback: 'The first pass sets your expectation, and the folder check then reads as things having gone missing.' },
-          { label: 'The folders, though memory fills reasonable gaps.', feedback: 'Filling gaps from memory is what produces documents that never existed.' },
+          { label: 'The folders alone: the gap between memory and folder is where embellishment starts.', correct: true, was: ['The folders. You remember the project; the folder holds what you kept, and the gap between them is where embellishment starts.'], feedback: 'A synthesis you remember doing in your head while drawing a flow is a missing artefact. From memory it looks like a complete project; from the folder it is screens, an undated flow and late notes.' },
+          { label: 'Memory first, as a quick pass, and then check the folders for anything you missed.', was: ['Memory is fine as a first pass, then check the folders.'], feedback: 'The first pass sets your expectation, and the folder check then reads as things having gone missing.' },
+          { label: 'The folders, with memory filling the reasonable gaps where something was not kept.', was: ['The folders, though memory fills reasonable gaps.'], feedback: 'Filling gaps from memory is what produces documents that never existed.' },
         ],
         repair: 'Rebuild the inventory in step 1 from the folders alone. Record the change in step 5.',
         recheck: 'Your list matches the folder contents.',
       },
       {
-        question: 'The first project never had a synthesis document. Can you write one now?',
+        question: 'Your first project never had a synthesis document. Can you write one now?',
         options: [
-          { label: 'Not as a project artefact. Written now and labelled as such it is a reflection, which is a different and much weaker thing.', correct: true, feedback: 'The honest answer is that the project has no synthesis, and the case study says so. Tidying presentation is fine; producing a document that never existed and dating it to the project is not.' },
-          { label: 'Yes, since the thinking genuinely happened at the time.', feedback: 'The thinking is not the artefact, and nobody can check a memory.' },
-          { label: 'Yes, if it is clearly a reconstruction.', feedback: 'Clearly labelled, it is honest and it is no longer evidence that the process ran.' },
+          { label: 'Only as a reflection dated today, never as an artefact of the project itself.', correct: true, was: ['Not as a project artefact. Written now and labelled as such it is a reflection, which is a different and much weaker thing.'], feedback: 'The honest answer is that the project has no synthesis, and the case study says so. Tidying presentation is fine; producing a document that never existed and dating it to the project is not.' },
+          { label: 'Yes, since the thinking genuinely happened at the time and only the paper is missing.', was: ['Yes, since the thinking genuinely happened at the time.'], feedback: 'The thinking is not the artefact, and nobody can check a memory.' },
+          { label: 'Yes, filed with the other project notes so that the folder is finally complete.', was: ['Yes, if it is clearly a reconstruction.'], feedback: 'Filed among notes written at the time, it becomes a claim about the past dressed as a record of it, and nobody reading the folder could tell the difference.' },
         ],
         repair: 'Move that gap to the permanent list in step 5 and draft the sentence for it. Record the change.',
         recheck: 'Nothing produced now is presented as contemporaneous.',
@@ -343,13 +356,22 @@ export const guided19: Record<string, Guided> = {
         question: 'Your second claim rests only on thin evidence. What should you do?',
         options: [
           { label: 'Flag it now, then weaken the claim or close the gap honestly this week.', correct: true, feedback: 'A claim on late, undated or reconstructed material will fail the first question about it. Finding that here costs an afternoon; finding it in an interview costs the whole portfolio.' },
-          { label: 'Use it and add a caveat in the case study.', feedback: 'A caveat under a claim the evidence does not support is a claim with an apology attached.' },
-          { label: 'Drop the claim entirely.', feedback: 'Sometimes right, and first check whether the gap is closable this week.' },
+          { label: 'Use it as it is and add a caveat under the claim in the case study.', was: ['Use it and add a caveat in the case study.'], feedback: 'A caveat under a claim the evidence does not support is a claim with an apology attached.' },
+          { label: 'Drop the claim entirely, since thin evidence can never support anything.', was: ['Drop the claim entirely.'], feedback: 'Sometimes right, and first check whether the gap is closable this week or the claim can be weakened to fit the evidence.' },
         ],
         repair: 'Flag any thin-only claim in step 3 and decide between closing the gap and weakening the claim. Record the change in step 5.',
         recheck: 'No claim rests only on thin evidence.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: Auditing a project about a community choir’s rota, you find session notes written three days after the interviews and saying so, a flow with no date, a test record from a self-pilot you ran alone, and a measurement you remember taking but cannot find. You are tempted to redraw the flow, date it to the project, and rewrite the measurement from memory.',
+      prompt: 'Mark each item strong, thin or missing with its tier, and say what you may and may not do about each. Explain why.',
+      anchors: {
+        weak: 'Dates the redrawn flow to the project, rewrites the measurement from memory, and calls the self-pilot user testing.',
+        adequate: 'Marks the late notes and undated flow thin, the measurement missing, and the test record a self-pilot; redraws the flow only as a re-rendering of the same content and states the missing measurement as a gap.',
+        strong: 'As adequate, and identifies a gap that could honestly be closed now with today’s date, and writes the sentence the case study will use for the missing measurement.',
+      },
+    },
     saveRoute: {
       auto: 'Your inventory, the strength marks, the claim check and both gap lists save as you type, on this device first and then online.',
       external: 'The audit table belongs with the project records. Every later lesson in this module is bounded by it.',
@@ -362,11 +384,12 @@ export const guided19: Record<string, Guided> = {
     worksheet: [
       { id: 'match', title: 'One job each', fields: [
         { id: 'strongest-evidence', label: 'For each project: its strongest evidence, from the audit', kind: 'long' },
-        { id: 'jobs-assigned', label: 'The job each case study does, which no other one does', kind: 'long', example: 'Example (made up): project three does research-to-decision, project two does iteration, project one does craft under constraint.' },
+        { id: 'jobs-assigned', label: 'The job each case study does, which no other one does', kind: 'long', example: 'Example (made up): the independent project does research-to-decision and Project 1 does iteration; a third project, if you have one, does craft under constraint.' },
       ] },
       { id: 'promises', title: 'One checkable sentence each', fields: [
         ...[1, 2, 3].map((n) => ({ id: `promise-${n}`, label: `Promise ${n} · one sentence a reader could check`, kind: 'long' as const,
-          ...(n === 1 ? { hint: 'Checkable means a reader could look at the case study and say whether it delivered. Not a description of the project.', example: 'Example (made up): this case study shows a finding from five people becoming one design decision, and what happened when it met a person.' } : {}) })),
+          ...(n === 3 ? { optional: true, hint: 'Optional: only for a third case study, if you took the full library.' } : {}),
+          ...(n === 1 ? { hint: 'Checkable means a reader could look at the case study and say whether it delivered. Not a description of the project.', example: 'Example (made up): this case study shows a finding from three people becoming one design decision, and what happened when it met a person.' } : {}) })),
       ] },
       { id: 'order', title: 'Order them', fields: [
         { id: 'the-order', label: 'The order, strongest first, and why that one is strongest', kind: 'long' },
@@ -414,7 +437,7 @@ export const guided19: Record<string, Guided> = {
             { label: 'What I wrote', text: 'A redesign of a repair shop’s customer communication. A booking flow for a class provider. A visual refresh of a small product.' },
             { label: 'What those are', text: 'Titles. Each says what the project was and nothing about what the reader will get from spending four minutes on it.' },
             { label: 'The test I applied', text: 'Could a reader say, at the end, whether this delivered what it promised? Not from a description: there is nothing to deliver.' },
-            { label: 'What the first became', text: 'This shows a finding from five people becoming one design decision, and what happened when it met a person who had never heard of the project.' },
+            { label: 'What the first became', text: 'This shows a finding from three people becoming one design decision, and what happened when it met a person who had never heard of the project.' },
             { label: 'What that did to the writing', text: 'It decided what to cut. Everything not on the way from the finding to that person came out, which took nine hundred words down to seven hundred.' },
           ],
           wrongTurn: 'The wrong turn is writing descriptions, because they are what case studies are usually titled and they are easy. A description cannot be failed, so it also cannot guide what goes in or what comes out.',
@@ -495,9 +518,9 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'Should each case study show your whole process?',
         options: [
-          { label: 'No. Then all three show the same thing and the reader learns one fact about you three times.', correct: true, feedback: 'Give each a job the others do not do, matched to its strongest evidence. It also removes the pressure to describe a stage a particular project never had.' },
-          { label: 'Yes, since the process is what you are demonstrating.', feedback: 'It is demonstrated once. The second and third repetitions cost attention and add nothing.' },
-          { label: 'Yes, in less detail for the weaker projects.', feedback: 'Less detail about a stage that did not happen is still a claim that it did.' },
+          { label: 'Each needs its own job, or every case study teaches the reader the same one fact.', correct: true, was: ['No. Then all three show the same thing and the reader learns one fact about you three times.'], feedback: 'Give each a job the others do not do, matched to its strongest evidence. It also removes the pressure to describe a stage a particular project never had.' },
+          { label: 'Each should, since the whole process is what a reviewer wants to see you demonstrate.', was: ['Yes, since the process is what you are demonstrating.'], feedback: 'It is demonstrated once. Repeating it costs attention and adds nothing.' },
+          { label: 'Each should, in less detail for the weaker projects so the strongest one stands out.', was: ['Yes, in less detail for the weaker projects.'], feedback: 'Less detail about a stage that did not happen is still a claim that it did.' },
         ],
         repair: 'Assign each case study a job no other one does, in step 1. Record the change in step 5.',
         recheck: 'No two jobs overlap.',
@@ -505,24 +528,33 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'Your case study is titled “A redesign of a repair shop’s customer communication”. Is that a promise?',
         options: [
-          { label: 'No. It describes the project, so nothing can be delivered or failed, and it cannot decide what goes in.', correct: true, feedback: 'A promise says what the reader will have seen at the end. It also does the editing: everything not on the way to that came out, and the case study got two hundred words shorter.' },
-          { label: 'Yes, it tells the reader what the case study covers.', feedback: 'Covering is not promising. A reader cannot say afterwards whether it delivered.' },
-          { label: 'Yes, though a subtitle would strengthen it.', feedback: 'A subtitle usually adds another description.' },
+          { label: 'It is a description: nothing in it can be delivered or failed by the case study.', correct: true, was: ['No. It describes the project, so nothing can be delivered or failed, and it cannot decide what goes in.'], feedback: 'A promise says what the reader will have seen at the end. It also does the editing: everything not on the way to that came out, and the case study got two hundred words shorter.' },
+          { label: 'It is a promise, because it tells the reader exactly what the case study covers.', was: ['Yes, it tells the reader what the case study covers.'], feedback: 'Covering is not promising. A reader cannot say afterwards whether it delivered.' },
+          { label: 'It is a promise, though a subtitle naming the method would make it a stronger one.', was: ['Yes, though a subtitle would strengthen it.'], feedback: 'A subtitle usually adds another description.' },
         ],
         repair: 'Rewrite any description as a checkable promise in step 2. Record the change in step 5.',
         recheck: 'Each promise could be judged delivered or not.',
       },
       {
-        question: 'Should the three case studies be the same length?',
+        question: 'Should your case studies be the same length?',
         options: [
-          { label: 'No. Length follows the evidence, and equal lengths mean the thin project has been padded.', correct: true, feedback: 'Four hundred honest words about a project with thin records reads better than nine hundred about the same records. Dropping it entirely is also available.' },
-          { label: 'Yes, for consistency across the portfolio.', feedback: 'Consistency is a design value that should not be deciding content.' },
-          { label: 'Yes, roughly, with some variation.', feedback: 'Roughly equal still sets a target the thin project has to reach.' },
+          { label: 'Length should follow the evidence; equal lengths usually mean padding a thin project.', correct: true, was: ['No. Length follows the evidence, and equal lengths mean the thin project has been padded.'], feedback: 'Four hundred honest words about a project with thin records reads better than nine hundred about the same records. Dropping it entirely is also available.' },
+          { label: 'The same length, so the portfolio looks consistent and every project gets equal space.', was: ['Yes, for consistency across the portfolio.'], feedback: 'Consistency is a design value that should not be deciding content.' },
+          { label: 'Roughly the same length, with a little variation where one project has more material.', was: ['Yes, roughly, with some variation.'], feedback: 'Roughly equal still sets a target the thin project has to reach.' },
         ],
         repair: 'Plan lengths from the audit in step 4, and let them differ. Record the change in step 5.',
         recheck: 'Each length has a reason from the audit.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: You have two projects. A: a library’s room-booking redesign with strong research (five interviews, a synthesis with a contradiction kept) and no testing. B: a bakery pre-order form with weak research but two rounds of testing and a repair that failed the first time. You planned to write both as full 900-word process stories.',
+      prompt: 'What job does each case study do, in what order, at what length, and what does each promise? Explain why.',
+      anchors: {
+        weak: 'Writes two full-process stories of equal length, padding the missing testing in A and the thin research in B.',
+        adequate: 'Gives A the research-to-decision job and B the iteration job, orders by strength, sets lengths by evidence, and writes a checkable promise for each.',
+        strong: 'As adequate, and states each project’s gap plainly rather than filling it, explains the order, and notes what a third project would need to add rather than repeat.',
+      },
+    },
     saveRoute: {
       auto: 'Your jobs, promises, order and lengths save as you type, on this device first and then online.',
       external: 'Keep this plan beside the claims page. The next lesson writes to it directly.',
@@ -534,11 +566,13 @@ export const guided19: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'problem', title: 'Problem and outcome, in the first two paragraphs', fields: [
-        { id: 'problem-words', label: 'The problem in the person’s words, with a count if you have one', kind: 'long' },
+        { id: 'template-copy', label: 'Where your copy of the case-study template is saved — or the Markdown file you are using instead', kind: 'short', hint: 'Open starters/m19/case-study-template.html from the course site, save it into your project folder, and edit it in any text editor. The annotated example sits beside it.' },
+        { id: 'problem-words', label: 'The problem close to the person’s words, without their name, with a count if you have one', kind: 'long', sensitive: true },
         { id: 'outcome-stated', label: 'The outcome, in the same opening', kind: 'short', hint: 'What happened, bounded by what you measured. Not what you hope it achieved.' },
       ] },
       { id: 'evidence', title: 'The evidence section', fields: [
-        { id: 'counts-findings', label: 'Participant counts, the key findings, and one contradiction', kind: 'long' },
+        { id: 'counts-findings', label: 'Participant counts, the key findings, and one contradiction, summarised without names', kind: 'long', sensitive: true },
+        { id: 'evidence-tiers', label: 'The evidence tier of each artefact you cite: real participant research, self-pilot, simulation or supplied practice', kind: 'long', hint: 'Say it where the claim is made. A demonstration with made-up records is labelled as one and never shown as real use.' },
         { id: 'exclusions-included', label: 'The exclusions, included here rather than at the end', kind: 'short', hint: 'In the evidence section, where they bound the findings a reader is reading.' },
       ] },
       { id: 'decision', title: 'One decision in depth', fields: [
@@ -557,7 +591,7 @@ export const guided19: Record<string, Guided> = {
     ],
     guide: [
       { expect: 'The problem in the person’s words with a count, and the outcome, both in the opening.',
-        fields: ['problem-words', 'outcome-stated'],
+        fields: ['template-copy', 'problem-words', 'outcome-stated'],
         terms: [
           { term: 'Leading with the problem and outcome', meaning: 'Both in the first two paragraphs. A reader skimming decides there whether to read the rest.' },
           { term: 'Chronology', meaning: 'Telling it in the order you did it. It is the form most junior portfolios take and the one reviewers skip, because the first four paragraphs are setup.' },
@@ -568,7 +602,7 @@ export const guided19: Record<string, Guided> = {
             { label: 'What the opening was', text: 'Two paragraphs on the repair trade, how independent shops work, and why the sector is under pressure. Then the project.' },
             { label: 'Why I wrote it that way', text: 'It is the order I learned things in, and it felt discourteous to start with a problem a reader had no context for.' },
             { label: 'What the reviewer sees in ninety seconds', text: 'Two paragraphs of sector background, and no indication that anything was found, decided or changed.' },
-            { label: 'What the opening became', text: 'The owner’s sentence — “I spend half my day telling people their laptop is not ready” — then eleven calls a day about progress, then seven over a matched period afterwards.' },
+            { label: 'What the opening became', text: 'The owner’s sentence — “I spend half my day telling people their laptop is not ready” — then eleven calls about progress in five working days, then seven over a matched five days after the slip wording changed.' },
             { label: 'Where the background went', text: 'One clause in the second paragraph. Nobody has asked for the rest of it.' },
           ],
           wrongTurn: 'The wrong turn is opening with context, because you learned it first and it feels like the polite order. The opening is the only part everybody reads, and background spends it on something a reader can infer.',
@@ -578,7 +612,7 @@ export const guided19: Record<string, Guided> = {
         start: 'Write the outcome sentence first, bounded by what you measured, then the problem above it.',
         enough: 'Somebody reading only two paragraphs knows what the problem was and what happened.' },
       { expect: 'Participant counts, key findings, one contradiction, and the exclusions inside the evidence section.',
-        fields: ['counts-findings', 'exclusions-included'],
+        fields: ['counts-findings', 'evidence-tiers', 'exclusions-included'],
         terms: [
           { term: 'Counts in the text', meaning: 'Three of five, not most participants. The rule from Module 15, applied where a reviewer will check it.' },
           { term: 'Exclusions in place', meaning: 'Beside the findings rather than in a limitations section at the end, so they bound what the reader is reading now.' },
@@ -609,7 +643,7 @@ export const guided19: Record<string, Guided> = {
       { expect: 'A change with its prediction and re-test result, and the limits in short form.',
         fields: ['change-prediction-result', 'limits-short'],
         terms: [
-          { term: 'The prediction', meaning: 'Written before the change, as Module 18 required. In a case study it is what makes the re-test a test rather than a description.' },
+          { term: 'The prediction', meaning: 'Written before the change, as Module 10 required. In a case study it is what makes the re-test a test rather than a description.' },
           { term: 'Limits in short form', meaning: 'The two or three that bound this case study’s claims, with a pointer to the full page. Not optional and not the whole page.' },
         ],
         start: 'Take the iteration record from the project and cut it to the shape: change, prediction, result.',
@@ -624,7 +658,7 @@ export const guided19: Record<string, Guided> = {
           intro: 'Six sentences from a made up case study about a repair-shop project. For each one, decide what should happen to it.',
           options: ['keep as written', 'weaken to what the evidence supports', 'cut it'],
           items: [
-            { id: 'eleven-to-seven', text: 'Calls asking about progress fell from eleven to seven across matched five-day periods, one of which contained a public holiday.', answer: 'keep as written',
+            { id: 'eleven-to-seven', text: 'After the slip wording changed, calls asking about progress fell from eleven to seven across matched five-day periods, one of which contained a public holiday.', answer: 'keep as written',
               feedback: {
                 'keep as written': 'Counts, matched periods, and the condition in the same sentence. A reviewer can check it against the tally sheets.',
                 'weaken to what the evidence supports': 'It is already exactly what the evidence supports.',
@@ -638,8 +672,8 @@ export const guided19: Record<string, Guided> = {
               } },
             { id: 'users-wanted', text: 'Users wanted certainty rather than speed.', answer: 'weaken to what the evidence supports',
               feedback: {
-                'keep as written': 'Users is five people, three of whom described certainty. The sentence generalises past the sample.',
-                'weaken to what the evidence supports': 'Three of the five people I spoke to described wanting certainty; the owner believed the problem was speed. Smaller, and it keeps the contradiction that made it interesting.',
+                'keep as written': 'Users is two customers, both of whom described certainty, while the owner described speed. The sentence generalises past the sample.',
+                'weaken to what the evidence supports': 'Both customers I spoke to described wanting certainty; the owner believed the problem was speed. Smaller, and it keeps the contradiction that made it interesting.',
                 'cut it': 'The finding is real and worth keeping in its true size.',
               } },
             { id: 'one-of-two', text: 'After the change, one of the two people who re-tested still read the time as a promise.', answer: 'keep as written',
@@ -671,9 +705,9 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'Should the case study follow the order you did the work in?',
         options: [
-          { label: 'No. The work’s order was messy and full of dead ends, and a reader needs the reasoning arranged for understanding.', correct: true, feedback: 'A chronology spends its first four paragraphs on setup, which is exactly the part a skim reaches. Problem and outcome first, then evidence, decision, iteration and limits.' },
-          { label: 'Yes, since it shows the process honestly.', feedback: 'Honesty is about what you claim rather than about the sequence. The dead ends stay where they teach something.' },
-          { label: 'Yes, with a summary at the top.', feedback: 'That is the structure this lesson asks for, described as a compromise.' },
+          { label: 'Arrange it for understanding: the real order was messy and full of dead ends.', correct: true, was: ['No. The work’s order was messy and full of dead ends, and a reader needs the reasoning arranged for understanding.'], feedback: 'A chronology spends its first four paragraphs on setup, which is exactly the part a skim reaches. Problem and outcome first, then evidence, decision, iteration and limits, with the dead ends kept where they teach.' },
+          { label: 'Follow the real order, because telling it as it happened is the honest way to show process.', was: ['Yes, since it shows the process honestly.'], feedback: 'Honesty is about what you claim rather than about the sequence. The dead ends stay where they teach something.' },
+          { label: 'Follow the real order, saving the outcome for the end so the story builds towards it.', was: ['Yes, with a summary at the top.'], feedback: 'A reviewer who stops after two paragraphs then never learns what happened, and the outcome is what they came to find.' },
         ],
         repair: 'Put the problem and the outcome in the first two paragraphs in step 1. Record the change in step 5.',
         recheck: 'Somebody reading two paragraphs knows the problem and what happened.',
@@ -681,23 +715,36 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'You have six decisions worth describing. How many go in depth?',
         options: [
-          { label: 'One. Six paragraphs produce six conclusions and no reasoning, which is the thing a reviewer is trying to see.', correct: true, feedback: 'Options, evidence, trade-off and what you gave up, for one decision you can defend. The other five get a line each and a link to the not-building list.' },
-          { label: 'All six, briefly, so the range is visible.', feedback: 'Range across decisions is not what the section shows. How you think is, and brevity hides it.' },
-          { label: 'Two or three, to show consistency.', feedback: 'Consistency across three shallow accounts is still no reasoning.' },
+          { label: 'One, in depth; the other five get a line each, so the reasoning has room.', correct: true, was: ['One. Six paragraphs produce six conclusions and no reasoning, which is the thing a reviewer is trying to see.'], feedback: 'Six paragraphs produce six conclusions and no reasoning. Options, evidence, trade-off and what you gave up, for one decision you can defend, show how you think.' },
+          { label: 'All six, a paragraph each, so a reviewer can see the full range of your judgement.', was: ['All six, briefly, so the range is visible.'], feedback: 'Range across decisions is not what the section shows. How you think is, and brevity hides it.' },
+          { label: 'Two or three, so a reviewer can see that your reasoning is consistent across them.', was: ['Two or three, to show consistency.'], feedback: 'Consistency across three shallow accounts is still no reasoning.' },
         ],
         repair: 'Cut to one decision in depth in step 3 and list the rest. Record the change in step 5.',
         recheck: 'Exactly one decision has options, trade-off and cost.',
       },
       {
-        question: 'Your case study says the page saved the owner several hours a week. What should happen to that sentence?',
+        question: 'Your case study says the page saved the owner several hours a week. Nothing measured hours. What should happen to that sentence?',
         options: [
-          { label: 'Cut it. Nothing measured hours, and an unsupported quantity is the first thing a reviewer tests.', correct: true, feedback: 'The supported sentence already exists: calls fell from eleven to seven across matched periods, with the holiday named. Adding the unmeasured one risks everything the measured one earns.' },
-          { label: 'Weaken it to a few hours a week.', feedback: 'The arithmetic is invented at any size.' },
-          { label: 'Keep it with a caveat that it is an estimate.', feedback: 'A caveat under a number is the pattern Module 15 spent a lesson rejecting.' },
+          { label: 'Cut it: nothing measured hours, and an unsupported quantity is tested first.', correct: true, was: ['Cut it. Nothing measured hours, and an unsupported quantity is the first thing a reviewer tests.'], feedback: 'The supported sentence already exists: calls about progress went from eleven to seven across matched periods after the slip wording changed, with the holiday named — and the page itself was a demonstration. An unmeasured quantity risks everything the measured one earns.' },
+          { label: 'Weaken it to “a few hours a week”, which is a more modest and defensible figure.', was: ['Weaken it to a few hours a week.'], feedback: 'The arithmetic is invented at any size.' },
+          { label: 'Keep it, with a note beside it saying that the number of hours is an estimate.', was: ['Keep it with a caveat that it is an estimate.'], feedback: 'A caveat under a number is the pattern Module 15 spent a lesson rejecting.' },
         ],
         repair: 'Trace every claim in step 5 and cut anything with no artefact. Record the change.',
         recheck: 'Every sentence in the case study has a file behind it.',
       },
+    ],
+    transfer: {
+      scenario: 'Made-up case: Your first case study, about a pottery studio’s kiln booking, opens with two paragraphs on the history of the studio. It describes seven design decisions in a paragraph each, says the redesign “made booking much easier for members”, and never mentions that the only re-test was run by you on your own.',
+      prompt: 'What would you change in the opening, the decisions, that sentence and the testing description? Explain why.',
+      anchors: {
+        weak: 'Keeps the history opening and the seven paragraphs, and leaves “much easier” standing because the design did improve.',
+        adequate: 'Opens with the problem and outcome, takes one decision in depth with the rest as a list, cuts or weakens “much easier” to what was measured, and labels the re-test a self-pilot.',
+        strong: 'As adequate, and traces every remaining claim to a named artefact with its tier, and states what the self-pilot cannot show compared with testing with members.',
+      },
+    },
+    material: [
+      'Starter files for this lesson: starters/m19/case-study-template.html (an editable, single-file case-study template) and starters/m19/annotated-example.html (a short, clearly fictional case study whose margin notes explain why each part is credible, with one weak claim and its repair).',
+      'Open the template from the course site, save it into your project folder, and edit it in any text editor such as Notepad, then open it in your browser to see it. Your copy stays on your computer; nothing is uploaded.',
     ],
     saveRoute: {
       auto: 'Your five sections and the claim trace save as you type, on this device first and then online.',
