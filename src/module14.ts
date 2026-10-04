@@ -57,7 +57,7 @@ export const module14: Lesson[] = [
     title: "How the work actually reaches people",
     objective:
       "Map the path a design takes from agreed to used in a team you can observe or read about, and name the three points where designs most often change.",
-    bringForward: "Your m12 handover and m13 system documentation.",
+    bringForward: "Any handover notes you have: from Project 1 on the core path, or your m12 handover and m13 system pages on the full library. Neither is needed to map a public project.",
     prerequisite: "Your handover document and system pages.",
     why: "Designers who do not understand delivery hand over work that gets changed without them and then feel surprised.",
     teach: [
@@ -76,7 +76,7 @@ export const module14: Lesson[] = [
     misconception:
       "“I hand over the design and the team builds it.” Every team modifies designs during delivery, because building reveals what drawing did not. The choice is whether those modifications happen with you or without you.",
     example:
-      "The path was mapped from a real team: a fortnightly planning session picks work; an engineer estimates and often splits it; a build takes days to a week; a review compares the build with the design; a test pass finds defects; and a release goes out weekly behind a flag. The three change points were named with examples: at slicing the booking flow was split so that the cancellation path shipped a fortnight later; at estimation the held-place timer turned out to need server work and was simplified; during build the empty state was invented by the engineer because the design had not included one — which the m08 lessons would have prevented.",
+      "Made-up example: the path was mapped for an invented team: a fortnightly planning session picks work; an engineer estimates and often splits it; a build takes days to a week; a review compares the build with the design; a test pass finds defects; and a release goes out weekly behind a flag. The three change points were named with examples: at slicing the booking flow was split so that the cancellation path shipped a fortnight later; at estimation the held-place timer turned out to need server work and was simplified; during build the empty state was invented by the engineer because the design had not included one — which the m08 lessons would have prevented.",
     freeToolPath:
       "Reading and observation. If you cannot observe a team, the assigned standard and a public project's issue tracker give enough structure to map the stages.",
     outputs: [
@@ -252,8 +252,8 @@ export const module14: Lesson[] = [
     title: "Writing work that can be built",
     objective:
       "Write five stories for your product that each state who, what and why, are independently valuable, and are small enough to build in a few days.",
-    bringForward: "Your m10 findings and m12 handover.",
-    prerequisite: "Your findings and a feature you want built.",
+    bringForward: "Your research findings and handover notes: Project 1 on the core path, or Project 2 on the full library.",
+    prerequisite: "Your findings and a feature you want built, from Project 1 or Project 2.",
     why: "A story is where research becomes work. Written badly it delivers a screen; written well it delivers an outcome.",
     teach: [
       "A story names the person, what they can do, and why it matters to them.",
@@ -271,7 +271,7 @@ export const module14: Lesson[] = [
     misconception:
       "“Stories are a formality that translate designs into tickets.” Written as translations they lose the reason, and the first time an engineer meets a constraint they will guess at the intent. The why is the part that survives contact with reality.",
     example:
-      "Five stories from the booking work. “As someone who has booked, I can see that my place is held and for how long, so that I do not pay twice.” “As someone whose payment did not confirm, I can find out what happened without ringing, so that I do not book again.” Three were sized in days; two were too big and were re-sliced by outcome rather than by layer — the second became “I can see the status of a booking from the confirmation message” and “I can see the status without the message”, each independently useful.",
+      "Made-up example: five stories from the booking work. “As someone who has booked, I can see that my place is held and for how long, so that I do not pay twice.” “As someone whose payment did not confirm, I can find out what happened without ringing, so that I do not book again.” Three were sized in days; two were too big and were re-sliced by outcome rather than by layer — the second became “I can see the status of a booking from the confirmation message” and “I can see the status without the message”, each independently useful.",
     freeToolPath:
       "Written work in any text file. Trackers are common in teams and are not required for the exercise.",
     outputs: [
@@ -459,20 +459,20 @@ export const module14: Lesson[] = [
     explanation: [
       "Observable is the whole test. “The status is clear” cannot be checked; “the review screen states that the place is held and shows the remaining time” can. The assigned reading frames criteria as conditions of satisfaction, and the practical version is that a person with no context can read the criterion, look at the build and say yes or no.",
       "Failure paths belong in the criteria because they are what gets dropped under time pressure. If the error state, the empty state and the expiry behaviour are not written as conditions, they are optional, and the first version to ship will not have them.",
-      "Accessibility is the same argument with higher stakes. Criteria naming keyboard operation, focus visibility, announced errors and contrast are what make those things part of done rather than a later ticket that is never scheduled. Your m11 work becomes deliverable here or it does not become deliverable at all.",
+      "Accessibility is the same argument with higher stakes. Criteria naming keyboard operation, focus visibility, announced errors and contrast are what make those things part of done rather than a later ticket that may never be scheduled. Your m11 work becomes part of what is checked here; left out, it tends to be found after release, when fixing it costs more.",
       "Criteria should describe outcomes, not implementations. “Uses a dialog element” constrains the engineer without saying why; “can be dismissed with the keyboard and returns focus to the control that opened it” states what must be true and leaves the how open, which is both more respectful and more durable.",
     ],
     misconception:
       "“Acceptance criteria are a testing artefact.” They are a design artefact that testing uses. They record what the design actually requires, which is why writing them is your work and not the tester's.",
     example:
-      "The held-place story got seven criteria. Success: the review screen states the place is held and the remaining time; the time counts down; when it expires the person is told and their details are preserved. Failure: if the hold cannot be confirmed the screen says so and does not proceed to payment. Accessibility: the timer is announced when it appears and at expiry rather than every second; the state is distinguishable without colour; the screen is operable from a keyboard. Two criteria were rewritten after someone read them and asked what “clearly” meant.",
+      "Made-up example: the held-place story got seven criteria. Success: the review screen states the place is held and the remaining time; the time counts down; when it expires the person is told and their details are preserved. Failure: if the hold cannot be confirmed the screen says so and does not proceed to payment. Accessibility: the timer is announced when it appears and at expiry rather than every second; the state is distinguishable without colour; the screen is operable from a keyboard. Two criteria were rewritten after someone read them and asked what “clearly” meant.",
     freeToolPath:
       "Written criteria beside each story. No tooling required.",
     outputs: [
       "Criteria for three stories covering success and failure",
       "Accessibility criteria drawn from your m11 work",
       "Outcome-shaped criteria with no implementation constraints",
-      "A read-through by someone else with ambiguities rewritten",
+      "A read-through by someone else, or a solo test a day later, with ambiguities rewritten",
     ],
     steps: [
       {
@@ -511,7 +511,7 @@ export const module14: Lesson[] = [
         minutes: 20,
         title: "Test for ambiguity",
         instructions: [
-          "Ask someone to read the criteria and say how they would check each.",
+          "Ask someone to read the criteria and say how they would check each, or check them yourself a day later without the design open.",
           "Rewrite anything two people could disagree about.",
           "Save the criteria with the stories.",
         ],
@@ -526,7 +526,7 @@ export const module14: Lesson[] = [
       {
         question: "Why put accessibility in the criteria?",
         answer:
-          "Because otherwise it is optional. Criteria are what define done, and anything outside them becomes a ticket that is never scheduled.",
+          "Because criteria are what gets checked before acceptance. Requirements kept elsewhere tend to be checked late or not at all; a failure found later is still a defect, but it costs more to fix.",
       },
       {
         question: "Why avoid naming implementations?",
@@ -544,11 +544,11 @@ export const module14: Lesson[] = [
       {
         criterion: "Criteria are observable by someone without context",
         evidence:
-          "Criteria a reader could verify, confirmed by a read-through with someone else.",
+          "Criteria a reader could verify, confirmed by a read-through with someone else or, with nobody available, by your own check a day later without the design open.",
         levels: [
           "Criteria use words like clear, easy or intuitive.",
           "Mostly observable with one or two subjective items.",
-          "All observable and confirmed by a reader.",
+          "All observable and confirmed by a reader or a labelled solo test.",
           "As adequate, and the reader's questions are recorded and resolved.",
         ],
         remediation:
@@ -660,7 +660,7 @@ export const module14: Lesson[] = [
     misconception:
       "“We will build it properly and see how long it takes.” That defers the constraint rather than removing it, and the constraint arrives as a rushed final week in which quality is cut silently. Deciding the appetite first makes the trade visible while you can still design for it.",
     example:
-      "The appetite for the booking improvements was set at two weeks. The full design was six. Cutting to fit kept the held-place message, the payment states and the accessible form, and removed the shortlist, the filter presets and the redesigned card. Each removal recorded what would bring it back: the shortlist if a second study showed people comparing more than three options, the presets if support saw repeated requests, and the card if the system needed it elsewhere. One item was marked not worth building at all — an animated confirmation — with the reason.",
+      "Made-up example: the appetite for the booking improvements was set at two weeks. The full design was six. Cutting to fit kept the held-place message, the payment states and the accessible form, and removed the shortlist, the filter presets and the redesigned card. Each removal recorded what would bring it back: the shortlist if a second study showed people comparing more than three options, the presets if support saw repeated requests, and the card if the system needed it elsewhere. One item was marked not worth building at all — an animated confirmation — with the reason.",
     freeToolPath:
       "Written work. The discipline is deciding and recording, not tooling.",
     outputs: [
@@ -858,7 +858,7 @@ export const module14: Lesson[] = [
     misconception:
       "“Engineers pad estimates.” They add contingency for uncertainty, which is rational. Removing the uncertainty removes the contingency; pressing on the number just moves it somewhere less visible.",
     example:
-      "Three stories were taken to an engineer. The held-place story estimated at a week, and the uncertainty was the timer's behaviour across devices and what happens if the person returns after expiry — both undefined in the design. Defining them dropped it to three days. The payment-status story stayed large because it depended on another system nobody had used; the response was to defer it and ship the message-based version first. The third was small and unchanged. The write-up recorded that specification, not persuasion, moved two of the three.",
+      "Made-up example: three stories were taken to an engineer. The held-place story estimated at a week, and the uncertainty was the timer's behaviour across devices and what happens if the person returns after expiry — both undefined in the design. Defining them dropped it to three days. The payment-status story stayed large because it depended on another system nobody had used; the response was to defer it and ship the message-based version first. The third was small and unchanged. The write-up recorded that specification, not persuasion, moved two of the three.",
     freeToolPath:
       "Conversation and notes. If no engineer is available, ask an informed reader to identify what they could not answer from your story and criteria; the unanswerable parts are the unknowns.",
     outputs: [
@@ -1033,32 +1033,32 @@ export const module14: Lesson[] = [
     title: "Handover as a conversation",
     objective:
       "Run a handover for one story: prepare the artefacts, hold the conversation, and record every question asked and every decision made in it.",
-    bringForward: "Your m12 handover document and this module's stories.",
+    bringForward: "Your handover notes (Project 1 on the core path, or your m12 handover on the full library) and this module's stories.",
     prerequisite: "Your handover document and criteria.",
     why: "A handover is where the design meets the constraints it will actually be built under. Treated as a delivery, it produces surprises later.",
     teach: [
       "Send the artefacts before the conversation; do not present them in it.",
       "Use the time for questions and decisions, not for narrating screens.",
       "Record every decision made in the room, or it will be re-made differently.",
-      "Expect to change something; a handover with no changes was a briefing.",
+      "Expect questions; answer each with a change or a recorded reason to keep the design.",
       "Agree who decides what when something unexpected appears mid-build.",
     ],
     explanation: [
       "Sending the material beforehand changes what the meeting is for. If people read the states, criteria and wording first, the time is spent on what they could not resolve alone, which is where your presence adds something. Narrating the design aloud spends the time on what the document already said.",
       "The valuable output is a decision record. Handover conversations produce agreements — this state is out of scope for now, this animation will not be built, this error message needs the server to send something new — and if none of that is written down, each will be re-decided during the build, usually differently.",
-      "A handover where nothing changes was a briefing. The engineer knows things you do not: what is expensive, what already exists, what will conflict with something else. Expecting to leave with a modified design is what makes the conversation worth holding.",
+      "The engineer knows things you do not: what is expensive, what already exists, what will conflict with something else. Expect those questions and answer each one on the record. Some answers change the design; others keep it, with the reason written down, and a justified decision to keep is a valid outcome. A handover that raises no questions at all is the warning sign: it was probably a briefing.",
       "Agreeing the escalation path is the part everyone forgets. When something unexpected appears mid-build — a case nobody designed, a constraint nobody knew — who decides, and how fast? Without an answer, the build stops or the engineer decides alone, and both are worse than a named route.",
     ],
     misconception:
       "“Handover means giving the design to the team.” It means agreeing what will be built, under what constraints, with what still undecided. The document is the input, not the event.",
     example:
-      "The held-place story was sent two days ahead with its criteria, states and wording. The conversation lasted forty minutes and produced six decisions: the timer would be server-driven rather than local, the expiry warning would come from the same source, two of the five states were deferred with a note, the announcement wording changed because the chosen phrasing would repeat every second, and one criterion was rewritten because it prescribed an implementation. The escalation route was agreed: anything not covered comes to the designer same day, and if unavailable, the engineer chooses the option that preserves the person's data.",
+      "Made-up example: the held-place story was sent two days ahead with its criteria, states and wording. The conversation lasted forty minutes and produced six decisions: the timer would be server-driven rather than local, the expiry warning would come from the same source, two of the five states were deferred with a note, the announcement wording changed because the chosen phrasing would repeat every second, and one criterion was rewritten because it prescribed an implementation. The escalation route was agreed: anything not covered comes to the designer same day, and if unavailable, the engineer chooses the option that preserves the person's data.",
     freeToolPath:
       "Your existing documents plus a written decision record. No handover tool is required.",
     outputs: [
       "Artefacts sent before the conversation",
       "A decision record from the conversation",
-      "At least one change to the design, recorded",
+      "Each raised question answered: a recorded change or a justified decision to keep",
       "An agreed escalation route for the unexpected",
     ],
     steps: [
@@ -1100,7 +1100,7 @@ export const module14: Lesson[] = [
         minutes: 15,
         title: "Update the artefacts",
         instructions: [
-          "Change the design and criteria to match what was agreed.",
+          "Change the design and criteria to match what was agreed, and record why anything questioned was kept.",
           "Save the decision record with them.",
         ],
       },
@@ -1119,13 +1119,13 @@ export const module14: Lesson[] = [
       {
         question: "What does it mean if nothing changed?",
         answer:
-          "That it was a briefing rather than a handover. Engineers know what is expensive and what exists; a conversation that changes nothing did not use that.",
+          "It depends on whether questions were raised. Keeping the design with a recorded reason for each question is a valid outcome. If nobody raised anything about cost, existing parts or undefined cases, it was probably a briefing rather than a handover.",
       },
     ],
     rubric: [
       "Artefacts were sent before the conversation",
       "A decision record exists and was circulated",
-      "At least one design change came from the conversation",
+      "Each raised question has a recorded answer",
       "An escalation route is agreed with a default",
     ],
     criteria: [
@@ -1150,7 +1150,7 @@ export const module14: Lesson[] = [
         levels: [
           "No record.",
           "Notes kept privately.",
-          "Record written and circulated the same day.",
+          "Record written and circulated the same day, or on the rehearsal route written the same day and labelled as a rehearsal.",
           "As adequate, and deferrals name what would bring them back.",
         ],
         remediation:
@@ -1159,18 +1159,18 @@ export const module14: Lesson[] = [
       },
       {
         criterion:
-          "At least one design change came from the conversation",
+          "Each raised question has a recorded answer",
         evidence:
-          "A change made because of what the engineer knew, recorded with the reason.",
+          "Every question from the conversation answered on the record: a change with its reason, or a justified decision to keep the design.",
         levels: [
-          "No changes.",
-          "Changes made without recording why.",
-          "At least one change with the reason recorded.",
-          "As adequate, and the change improved the outcome rather than only reducing cost.",
+          "No questions raised, or questions left unanswered.",
+          "Changes or kept items recorded without reasons.",
+          "Each question answered with a change or a reason to keep.",
+          "As adequate, and any change improved the outcome rather than only reducing cost, or any kept item names what would reopen it.",
         ],
         remediation:
-          "Ask what is expensive and what already exists; those two questions usually produce a change.",
-        recheck: "The recorded change.",
+          "Ask what is expensive and what already exists, then record each answer as a change or a reason to keep the design.",
+        recheck: "The recorded answers.",
       },
       {
         criterion: "An escalation route is agreed with a default",
@@ -1179,7 +1179,7 @@ export const module14: Lesson[] = [
         levels: [
           "Not discussed.",
           "Route agreed without a default.",
-          "Both agreed and written down.",
+          "Both agreed and written down, or on the rehearsal route proposed and labelled as a rehearsal.",
           "As adequate, and the default protects the person's data or money rather than the schedule.",
         ],
         remediation:
@@ -1190,7 +1190,7 @@ export const module14: Lesson[] = [
     repairs: [
       "If material was presented cold, send it ahead next time.",
       "If decisions were not recorded, write and circulate them now.",
-      "If nothing changed, ask what is expensive and what already exists.",
+      "If no questions came up, ask what is expensive and what already exists, and record each answer.",
       "If escalation is undefined, agree the route and the default.",
     ],
     portfolio:
@@ -1229,32 +1229,32 @@ export const module14: Lesson[] = [
     guided: true,
     title: "Design QA on a real build",
     objective:
-      "Review a built feature against its criteria and specifications, and produce a prioritised list separating defects from changes of mind.",
-    bringForward: "Your criteria, state specifications and the built feature.",
-    prerequisite: "Your criteria and something built to check.",
-    why: "The build is where specifications either survived or did not. Checking is your job, and doing it well makes you trusted rather than tiresome.",
+      "Review a built feature, a prototype, paper screens or the supplied practice case against its criteria and specifications, and produce a prioritised list separating defects, missing requirements and changes of mind.",
+    bringForward: "Your criteria and state specifications, and something to check: a team build, your Project 2 build, your Project 1 prototype or paper screens, or the supplied practice tracker.",
+    prerequisite: "Your criteria and something to check; the supplied practice tracker is enough.",
+    why: "The build is where specifications either survived or did not. Checking is your job, and doing it well makes you trusted rather than tiresome. Without a build, the same reasoning can be practised honestly on a prototype, paper screens or a supplied case.",
     teach: [
       "Check against the criteria first; they are what was agreed.",
-      "Separate defects from changes of mind, and label them honestly.",
+      "Label each finding honestly: defect, missing requirement, change request or question.",
       "Check the states, not only the default screen.",
-      "Check on a real device and at the widths you specified.",
+      "With a working build, check on a real device at your widths; otherwise list those checks as owed.",
       "Prioritise by harm, as with any other problem list.",
     ],
     explanation: [
-      "Criteria are the agreement, so they are where the review starts. Anything failing a criterion is a defect and is not negotiable; anything else is a request. Keeping that line clear is what makes your reviews welcome, because an engineer can act on defects immediately and discuss the rest.",
-      "The changes of mind are legitimate and must be labelled. Seeing the built thing frequently reveals a better decision, and asking for it is fine — as a request, with a reason, going through the same prioritisation as any other work. Presenting it as a defect is how designers acquire a reputation for moving goalposts.",
+      "Criteria are the agreement, so they are where the review starts. Anything failing a criterion is a defect. So is anything that breaks a baseline the team has agreed, such as its accessibility standard, even when no story criterion mentions it: a missing criterion is a gap in the criteria, not permission to call an exclusion a preference. A case nobody specified is a missing requirement for triage. Only a change of mind is a request. Keeping those lines clear is what makes your reviews welcome, because an engineer can act on defects immediately and discuss the rest.",
+      "The changes of mind are legitimate and must be labelled. Seeing the built thing frequently reveals a better decision, and asking for it is fine — as a request, with a reason, going through the same prioritisation as any other work, which may decide to keep what was agreed. Presenting it as a defect is how designers acquire a reputation for moving goalposts.",
       "States are where builds differ from designs, because the default screen is what gets built first and checked most. Walk the state tables from m09 and the exception table from m07 explicitly, forcing each state rather than waiting to encounter it.",
-      "Check where people will use it. A build reviewed only on your laptop at a comfortable width will pass while failing on the phone your users have, and the difference is usually in touch targets, keyboard behaviour, long content and the connection.",
+      "Check where people will use it. A build reviewed only on your laptop at a comfortable width can pass while failing on the phone your users have, and the difference is usually in touch targets, keyboard behaviour, long content and the connection. Paper screens and a supplied case cannot show any of that, so a review of them says which device checks are still owed.",
     ],
     misconception:
       "“Design QA means checking the visual details.” Spacing matters and is the smallest part. The important part is whether the states exist, the failures behave, the keyboard works and the content survives — the things nobody sees in a screenshot.",
     example:
-      "The built held-place feature was reviewed against seven criteria. Five passed. Two failed: the expiry warning announced every second rather than at appearance and expiry, and the state was distinguishable only by colour. Both were logged as defects with the criterion quoted. Four further observations were logged as requests, including a spacing inconsistency and a better wording idea, each marked as a change of mind rather than a defect. The review was done on a phone at two widths and with the keyboard, which is where both defects were found.",
+      "Made-up example: the built held-place feature was reviewed against seven criteria. Five passed. Two failed: the expiry warning announced every second rather than at appearance and expiry, and the state was distinguishable only by colour. Both were logged as defects with the criterion quoted. A date picker that could not be used from the keyboard was covered by no criterion; it was logged as a defect against the team's agreed accessibility baseline, with the missing criterion noted. A spacing inconsistency was logged as a low-severity defect, and a better wording idea as a change request that was kept for a later round. The review was done on a phone at two widths and with the keyboard, which is where the serious defects were found.",
     freeToolPath:
-      "The built feature, your criteria and a phone. No QA tool is required; a written list is the deliverable.",
+      "Your criteria and whatever you can review: a build and a phone, a prototype, paper screens, or the supplied practice tracker. No QA tool is required; a written list is the deliverable.",
     outputs: [
       "A criterion-by-criterion pass or fail record",
-      "Defects separated from requests, each labelled",
+      "Findings labelled defect, missing requirement, change request or question",
       "State-by-state checks including failure paths",
       "A prioritised list ordered by harm",
     ],
@@ -1263,7 +1263,7 @@ export const module14: Lesson[] = [
         minutes: 25,
         title: "Check the criteria",
         instructions: [
-          "Walk each acceptance criterion against the build.",
+          "Walk each acceptance criterion against the build, prototype, paper screens or supplied case.",
           "Record pass or fail with what you observed.",
         ],
       },
@@ -1271,7 +1271,7 @@ export const module14: Lesson[] = [
         minutes: 30,
         title: "Force the states",
         instructions: [
-          "Trigger every state from your tables, including failures.",
+          "Trigger every state from your tables, including failures, or walk them on paper.",
           "Record any state that does not exist or behaves differently.",
         ],
       },
@@ -1279,15 +1279,15 @@ export const module14: Lesson[] = [
         minutes: 25,
         title: "Check where it will be used",
         instructions: [
-          "Review on a real phone and at your specified widths.",
-          "Check keyboard operation and long content.",
+          "With a working build, review on a real phone and at your specified widths.",
+          "Check keyboard operation and long content, or list these checks as still owed.",
         ],
       },
       {
         minutes: 25,
         title: "Separate and prioritise",
         instructions: [
-          "Label each finding a defect or a request.",
+          "Label each finding a defect, missing requirement, change request or question.",
           "Order by harm rather than by ease of fixing.",
         ],
       },
@@ -1304,7 +1304,7 @@ export const module14: Lesson[] = [
       {
         question: "What separates a defect from a request?",
         answer:
-          "A defect fails an agreed criterion. A request is a change of mind, which is legitimate and goes through prioritisation like any other work.",
+          "A defect fails an agreed criterion or breaks the team's agreed baseline, such as its accessibility standard, even without a story criterion. A request is a change of mind, which is legitimate, goes through prioritisation like any other work and may be declined with a reason. A case nobody specified is a missing requirement.",
       },
       {
         question: "Why force the states rather than browsing?",
@@ -1319,7 +1319,7 @@ export const module14: Lesson[] = [
     ],
     rubric: [
       "Every criterion is checked and recorded",
-      "Defects and requests are separated and labelled",
+      "Findings are labelled defect, missing requirement, request or question",
       "States including failures were forced and checked",
       "The list is prioritised by harm and actionable",
     ],
@@ -1339,17 +1339,17 @@ export const module14: Lesson[] = [
         recheck: "The criteria results.",
       },
       {
-        criterion: "Defects and requests are separated and labelled",
+        criterion: "Findings are labelled defect, missing requirement, request or question",
         evidence:
-          "Each finding labelled, with defects tied to a specific criterion.",
+          "Each finding labelled, with defects tied to a quoted criterion, specification or agreed baseline.",
         levels: [
-          "Everything reported as a bug.",
-          "Some separation without criteria references.",
-          "Clean separation with criteria quoted for defects.",
-          "As adequate, and requests carry a reason and a priority suggestion.",
+          "Everything reported as a bug, or everything outside an old criterion called a preference.",
+          "Some separation without references.",
+          "Clean labels, with criteria or baseline quoted for defects and missing requirements sent to triage.",
+          "As adequate, and requests carry a reason and a priority suggestion, including any decided against.",
         ],
         remediation:
-          "For each finding ask which criterion it fails. If none, it is a request.",
+          "For each finding ask what it contradicts: a criterion, a specification or the agreed baseline. If nothing, decide whether it is a missing requirement, a change request or a question; an accessibility failure is never a preference.",
         recheck: "The labelled list.",
       },
       {
@@ -1359,7 +1359,7 @@ export const module14: Lesson[] = [
         levels: [
           "Only the default screen checked.",
           "Some states encountered incidentally.",
-          "Each state forced and checked.",
+          "Each state forced and checked, or walked on paper and labelled as such.",
           "As adequate, and a state that does not exist in the build is identified.",
         ],
         remediation:
@@ -1383,7 +1383,7 @@ export const module14: Lesson[] = [
     ],
     repairs: [
       "If criteria were not walked, check them one at a time.",
-      "If everything is a bug, label the changes of mind as requests.",
+      "If everything is a bug, label the changes of mind as requests; if an exclusion was called a request, check it against the baseline.",
       "If states were not forced, use the tables as a checklist.",
       "If items need explanation, rewrite them to stand alone.",
     ],
@@ -1425,13 +1425,13 @@ export const module14: Lesson[] = [
     objective:
       "Write three defect reports that another person could reproduce and fix without asking you anything, and check them by having someone try.",
     bringForward: "Your design QA findings.",
-    prerequisite: "Your QA list with its defects.",
+    prerequisite: "Your QA list with its defects, or the supplied practice tracker.",
     why: "An unreproducible report is not a report. Most design bug reports are rejected for lack of detail rather than for disagreement.",
     teach: [
       "State what you did, what happened and what should have happened.",
       "Give the exact conditions: device, browser, size, data, connection.",
       "One defect per report; combined reports get half fixed.",
-      "Quote the criterion or specification the behaviour contradicts.",
+      "Quote the criterion, specification or agreed baseline it contradicts.",
       "Say how severe it is in terms of the person, not your annoyance.",
     ],
     explanation: [
@@ -1443,14 +1443,14 @@ export const module14: Lesson[] = [
     misconception:
       "“The screenshot shows the problem.” It shows the symptom on one screen at one moment. Without the steps, the conditions and the expected result, it is an invitation to a conversation rather than something anyone can fix.",
     example:
-      "Three reports. First: steps — open the class page on a phone at 360 px with a class whose title runs long, throttle to a slow connection, tap book; observed — the price overlaps the button while the image loads; expected — the layout reserves the image space, per the m08 loading specification; conditions — device, browser, width, throttling profile, data used; severity — a person may tap the wrong control while paying. Two were reproduced by someone else on the first attempt; the third could not be, and the missing condition turned out to be the account state, which was added.",
+      "Made-up example: three reports. First: steps — open the class page on a phone at 360 px with a class whose title runs long, throttle to a slow connection, tap book; observed — the price overlaps the button while the image loads; expected — the layout reserves the image space, per the m08 loading specification; conditions — device, browser, width, throttling profile, data used; severity — a person may tap the wrong control while paying. Two were reproduced by someone else on the first attempt; the third could not be, and the missing condition turned out to be the account state, which was added.",
     freeToolPath:
       "Written reports with a screenshot or a short screen recording where it helps. No bug tracker is required for the exercise, though most teams use one.",
     outputs: [
       "Three reports with steps, observed and expected results",
       "Full conditions on each: device, browser, size, data, connection",
       "The criterion or specification quoted per report",
-      "A reproduction attempt by someone else, with the result",
+      "A reproduction attempt by someone else, or a labelled solo or desk check, with the result",
     ],
     steps: [
       {
@@ -1473,8 +1473,8 @@ export const module14: Lesson[] = [
         minutes: 20,
         title: "Quote the source",
         instructions: [
-          "Quote the criterion or specification the behaviour contradicts.",
-          "If none exists, say so and mark it a request instead.",
+          "Quote the criterion, specification or agreed baseline the behaviour contradicts.",
+          "With no story criterion, check the baseline; otherwise label it a missing requirement, change request or question.",
         ],
       },
       {
@@ -1489,7 +1489,7 @@ export const module14: Lesson[] = [
         minutes: 25,
         title: "Test reproducibility",
         instructions: [
-          "Ask someone to reproduce each report using only what you wrote.",
+          "Ask someone to reproduce each report using only what you wrote, or do a labelled check yourself a day later.",
           "Record failures and add the missing conditions.",
           "Save the three reports.",
         ],
@@ -1549,15 +1549,15 @@ export const module14: Lesson[] = [
       {
         criterion: "The contradicted criterion is quoted",
         evidence:
-          "A quoted criterion or specification per defect, or a request label where none exists.",
+          "A quoted criterion, specification or agreed baseline per defect, or an honest new label where none applies.",
         levels: [
           "No source given.",
           "Referenced vaguely.",
-          "Quoted per defect, with requests labelled.",
+          "Quoted per defect, with missing requirements and requests labelled.",
           "As adequate, and a missing criterion is identified as a specification gap.",
         ],
         remediation:
-          "Find the criterion each defect contradicts; if there is none, relabel it a request.",
+          "Find the criterion or baseline each defect contradicts; if there is none, decide whether it is a missing requirement, a change request or a question.",
         recheck: "The quoted sources.",
       },
       {
@@ -1567,7 +1567,7 @@ export const module14: Lesson[] = [
         levels: [
           "Not tested.",
           "Tested by the author only.",
-          "Attempted by someone else with results recorded.",
+          "Attempted by someone else, or on the solo or supplied route a labelled day-later or desk check, with results recorded.",
           "As adequate, and every failure to reproduce led to an added condition.",
         ],
         remediation:
@@ -1578,7 +1578,7 @@ export const module14: Lesson[] = [
     repairs: [
       "If the expected result is missing, add it to every report.",
       "If conditions are thin, reproduce it yourself and record what had to be true.",
-      "If no criterion is quoted, find it or relabel the item a request.",
+      "If no criterion is quoted, find it, quote the baseline, or relabel the item honestly.",
       "If nobody else tried, have them try and add what they needed.",
     ],
     portfolio:
@@ -1638,7 +1638,7 @@ export const module14: Lesson[] = [
     misconception:
       "“Good work speaks for itself.” It speaks to people who already share your standards. Everyone else needs the connection between the work and the thing they are accountable for, and making that connection is part of the job.",
     example:
-      "The case for the held-place work was written twice. The design version: the flow does not communicate state. The delivery version: two of three participants could not tell whether their place was secured, one said she would have paid again, and duplicate payments generate refunds and support contacts — this is a two-day change to a message and a state. The smaller version was prepared in advance: if two days is unavailable, one day covers the message without the countdown. The honest weakness was written too: three participants cannot establish how often this happens, and no support data was available to check it.",
+      "Made-up example: the case for the held-place work was written twice. The design version: the flow does not communicate state. The delivery version: two of three participants could not tell whether their place was secured, one said she would have paid again, and duplicate payments generate refunds and support contacts — this is a two-day change to a message and a state. The smaller version was prepared in advance: if two days is unavailable, one day covers the message without the countdown. The honest weakness was written too: three participants cannot establish how often this happens, and no support data was available to check it.",
     freeToolPath:
       "Written work. One page, or five sentences in a message; the format matters less than the translation.",
     outputs: [
@@ -1834,7 +1834,7 @@ export const module14: Lesson[] = [
     misconception:
       "“Everyone should give feedback on everything.” Broad feedback on a specific question wastes the room's time and yours. Ask for what you need, and offer a separate route for the other things people noticed.",
     example:
-      "The critique was run on the held-place state with one question: does this communicate that a place is secured and for how long? Three people responded; two raised the same problem, that the phrasing read as marketing rather than status. No decisions were taken and the notes were kept. The review a week later presented the revised version against its criteria and the QA findings, and produced three decisions: accept the wording, defer the countdown to a later story, and change one criterion that had proved unverifiable. Both meetings had a written record; the critique's was a problem list and the review's was a decision list.",
+      "Made-up example: the critique was run on the held-place state with one question: does this communicate that a place is secured and for how long? Three people responded; two raised the same problem, that the phrasing read as marketing rather than status. No decisions were taken and the notes were kept. The review a week later presented the revised version against its criteria and the QA findings, and produced three decisions: accept the wording, defer the countdown to a later story, and change one criterion that had proved unverifiable. Both meetings had a written record; the critique's was a problem list and the review's was a decision list.",
     freeToolPath:
       "A written agenda, a question, and notes. No meeting tool is required.",
     outputs: [
@@ -2014,8 +2014,8 @@ export const module14: Lesson[] = [
     title: "Release, and knowing whether it worked",
     objective:
       "Write a release plan for one feature naming what ships, what is held back, what you will look at afterwards and what would make you reverse it.",
-    bringForward: "Your built feature, criteria and QA results.",
-    prerequisite: "A feature ready to release and its criteria.",
+    bringForward: "Your Project 1 design or Project 2 build with its criteria and QA results, or the supplied practice tracker.",
+    prerequisite: "A feature you could release, real or supplied, and its criteria.",
     why: "Shipping is a decision with a follow-up. Without deciding what you will look at, a release produces relief rather than learning.",
     teach: [
       "Decide what ships and what is deliberately held back.",
@@ -2026,14 +2026,14 @@ export const module14: Lesson[] = [
     ],
     explanation: [
       "Releasing part of something is normal and worth deciding rather than discovering. Holding a state back, releasing to a subset of people, or shipping behind a flag are all ways of reducing the cost of being wrong, and each has a design consequence: someone will meet a partial version, and that version needs to make sense on its own.",
-      "Deciding what to look at before shipping is what separates learning from relief. The assigned measuring guidance is about defining success in advance, and the design version is narrower: what would tell you this worked, what would tell you it did not, and where would you see either. Written afterwards, the answer is always the number that looks best.",
-      "The reversal condition is the honest half. If support contacts about payment confusion do not fall, or if people still ring rather than using the flow, what will you do? Naming that before release stops a feature persisting on the strength of the effort it took.",
+      "Deciding what to look at before shipping is what separates learning from relief. The assigned measuring guidance is about defining success in advance, and the design version is narrower: what would tell you this worked, what would tell you it did not, and where would you see either. Written afterwards, the answer tends to be the number that looks best.",
+      "The reversal condition is the honest half. If support contacts about payment confusion do not fall, or if people still ring rather than using the flow, what will you do? Naming that before release stops a feature persisting on the strength of the effort it took. It is a decision rule and a trigger to investigate, not a verdict on cause: an uncontrolled count cannot show that the design did or did not cause what happened.",
       "Be careful about what can be measured. Some things are countable — completions, contacts, repeat payments — and some are not, and asking a few people afterwards is a legitimate method rather than a failure. What is not legitimate is treating a released feature as evidence that the design was right; a release tells you what happened after it, and only if you decided to look.",
     ],
     misconception:
       "“It shipped, so it worked.” Shipping means it exists. Whether it helped is a separate question, and one you can only answer if you decided in advance what you would look at.",
     example:
-      "The release plan: the held-place message and states ship; the countdown is held back until the timer is server-driven; the whole feature goes to everyone at once, since a subset would fragment support. Before shipping, three things were named: whether support contacts about payment status change over four weeks, whether anyone reports a duplicate payment, and a short round of three conversations with recent bookers. The reversal condition: if duplicate payments continue at the same rate after four weeks, the state design is not the cause and the work moves to the payment confirmation itself. It was recorded that none of the three is a controlled comparison.",
+      "Made-up example: the release plan: the held-place message and states ship; the countdown is held back until the timer is server-driven; the whole feature goes to everyone at once, since a subset would fragment support. Before shipping, three things were named: whether support contacts about payment status change over four weeks, whether anyone reports a duplicate payment, and a short round of three conversations with recent bookers. The review trigger: if duplicate payments continue at the same rate after four weeks, the team looks next at the payment confirmation and asks recent bookers what they saw. An unchanged count would not show the state design had no effect, and a fall would not show it worked, because none of the three is a controlled comparison; that was recorded beside the signals.",
     freeToolPath:
       "A written plan. Counting support contacts or asking three people needs no analytics tool, and both are legitimate at this scale.",
     outputs: [
@@ -2145,7 +2145,7 @@ export const module14: Lesson[] = [
           "No condition.",
           "A condition without an owner or a date.",
           "Both stated.",
-          "As adequate, and the condition would be uncomfortable to meet, which means it is real.",
+          "As adequate, and the condition would be uncomfortable to meet, and it is worded as a trigger to act or investigate rather than a claim about cause.",
         ],
         remediation:
           "Write what result would make you undo this, then name who would decide.",
@@ -2191,7 +2191,7 @@ export const module14: Lesson[] = [
         ...semver,
         section: "The rules for what a release means and cannot be changed.",
         purpose:
-          "Connects the release decision to the versioning discipline from m13.",
+          "Connects the release decision to versioning discipline; it stands alone if you did not study m13.",
         minutes: "10–15",
         limits:
           "Free reading, no account, CC BY 3.0. Verified 2026-09-06. Written for software APIs; the release-immutability idea is what transfers.",
@@ -2230,7 +2230,7 @@ export const module14: Lesson[] = [
     misconception:
       "“The retrospective is where the team says what went wrong.” It is where the team decides what to change. Without a committed change and a way of checking it, the same problems will be listed again next time in the same words.",
     example:
-      "The retrospective looked at the whole delivery. The two costliest problems: undefined states that were invented during the build, costing a day and producing two defects; and a handover held too late, which meant the estimate was made without the criteria. The committed change: criteria and states go into the story before estimation, owned by the learner, starting with the next story. The check: at the next retrospective, count how many states were invented during the build; the target is zero, and if it is not, the change was not enough. A previous change — sending material two days ahead — was reviewed and had worked.",
+      "Made-up example: the retrospective looked at the whole delivery. The two costliest problems: undefined states that were invented during the build, costing a day and producing two defects; and a handover held too late, which meant the estimate was made without the criteria. The committed change: criteria and states go into the story before estimation, owned by the learner, starting with the next story. The check: at the next retrospective, count how many states were invented during the build; the target is zero, and if it is not, find out why before deciding whether the change was enough, since the next story may simply have been harder. A previous change — sending material two days ahead — was reviewed: questions now arrive before the meeting, which is what it was meant to produce.",
     freeToolPath:
       "A written retrospective and a change log. No facilitation tool is needed for a team of one or a few.",
     outputs: [
@@ -2296,7 +2296,7 @@ export const module14: Lesson[] = [
       {
         question: "Why decide the check now?",
         answer:
-          "Because afterwards everyone remembers improvement. A countable check makes the next retrospective able to say the change failed.",
+          "Because afterwards everyone remembers improvement. A countable check lets the next retrospective see whether the expected difference appeared, and look at why if it did not.",
       },
     ],
     rubric: [
@@ -2359,7 +2359,7 @@ export const module14: Lesson[] = [
           "As adequate, and a previous change was reviewed with its result recorded honestly.",
         ],
         remediation:
-          "Write what you will count next time, and what number would mean the change failed.",
+          "Write what you will count next time, and what number would make you look again at the change.",
         recheck: "The check.",
       },
     ],

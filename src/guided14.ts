@@ -4,7 +4,29 @@
 // clearly labelled practice route using a supplied situation where none does.
 // A rehearsal is called a rehearsal in the options, the feedback and the
 // checks, and no lesson lets one be written up as collaboration that happened.
+//
+// Improvement plan, 4 October 2026: review and QA can end in a justified
+// decision to keep something; a newly found defect or missing requirement
+// (an accessibility failure with no old acceptance criterion, a case nobody
+// specified) goes into triage rather than being called a preference; and an
+// uncontrolled before-and-after count is an investigation trigger, never a
+// verdict on cause in either direction. Core-path learners arrive without the
+// Project 2 build, so every lesson accepts Project 1 work or a supplied case.
 import { improvementMade, revealOne, textRoute, type Guided } from './guided';
+
+// A bounded, annotated practice tracker for the design-QA, defect-report and
+// release lessons. Fictional throughout; each entry shows its triage reasoning.
+const practiceTracker: string[] = [
+  'Practice tracker (made up): a tool-library booking feature, reviewed as built. The team’s agreed baseline: WCAG 2.2 level AA, and no screen may lose what a person has typed. Story criteria: C1 the review screen states that the place is held and until what time; C2 the countdown is announced when it appears and at expiry, not on every change; C3 the held state is distinguishable without colour; C4 the layout reserves space for an image while it loads.',
+  'TL-01 · Defect · Severity: blocked, for people listening with a screen reader · Evidence: the countdown is announced every second; C2 says at appearance and at expiry only · Status: open, fix this sprint · Annotation: it contradicts a criterion that can be quoted, so nobody needs to argue about whether it is a defect.',
+  'TL-02 · Defect · Severity: blocked, for keyboard users · Evidence: the date picker cannot be opened or changed from the keyboard and there is no other way to choose a date; no story criterion mentions the keyboard · Status: open, top of triage · Annotation: no old criterion covers it, and it still fails the agreed baseline (WCAG 2.2 success criterion 2.1.1, Keyboard), so it is triaged as a defect, not a request. The missing keyboard criterion is logged beside it.',
+  'TL-03 · Missing requirement · Severity: at risk of losing money or a place · Evidence: nobody specified what happens if the hold expires while a payment is processing; the build extends the hold silently · Status: needs a decision, owner the designer · Annotation: it contradicts nothing because nothing was written, and it is not a preference either. It enters triage with a proposed criterion.',
+  'TL-04 · Defect · Severity: cosmetic · Evidence: the gap under the title is 12 pixels; the specification says 16 · Status: open, low priority, batched with other spacing fixes · Annotation: a real defect against the specification, rated low and kept on the list rather than dropped.',
+  'TL-05 · Change request · Severity: none, an improvement idea · Evidence: the designer would now prefer “No tools match those dates” to the agreed “No results” · Status: declined for this release, revisit at the next wording review · Annotation: a change of mind is legitimate and is prioritised like other work. Keeping the agreed wording, with the reason written down, is a valid outcome of review.',
+  'TL-06 · Question · Severity: unknown until answered · Evidence: the whole card is tappable in the build; the design shows only the button as tappable, and no decision record says which was intended · Status: asked of the engineer and the designer · Annotation: it could be a defect or an improvement, so the honest label until somebody answers is question.',
+  'TL-07 · Defect · Severity: at risk of losing something · Evidence: a failed submission clears everything the person typed; no story criterion mentions it, and the baseline says no screen may lose typed input · Status: open, high · Annotation: like TL-02, actionable without an old criterion because it breaks the agreed baseline. A criterion is added for the next story.',
+  'TL-08 · Defect · Severity: at risk of losing something · Evidence: on a 360-pixel phone with a slow connection, the price overlaps the Reserve button while the image loads; C4 says the layout reserves image space · Status: open, high · Annotation: it quotes C4 and states its conditions, so somebody else can reproduce and fix it without a conversation.',
+];
 
 export const guided14: Record<string, Guided> = {
   'm14-l01-v1': {
@@ -16,7 +38,7 @@ export const guided14: Record<string, Guided> = {
       { id: 'map', title: 'Map one real path', intro: 'A team you can observe, or a public project whose issue tracker you can read. Both are real evidence.', fields: [
         { id: 'source-of-path', label: 'Whose path you mapped, and how you could see it', kind: 'short', hint: 'A team you work with, a team you can ask, or a public project with an open tracker. Say which; the third is a complete answer.', example: 'Example (made up): a public project on a code-hosting site, reading four months of its issues and release notes.' },
         { id: 'stages', label: 'The stages from decision to a person using it, in order', kind: 'long' },
-        { id: 'who-decides', label: 'Who decides at each stage', kind: 'long', hint: 'Where you cannot tell, write that you cannot tell. An unknown decider is a finding.' },
+        { id: 'who-decides', label: 'Who decides at each stage', kind: 'long', hint: 'Write roles, such as product lead or engineer, not names. Where you cannot tell, write that you cannot tell. An unknown decider is a finding.' },
       ] },
       { id: 'change', title: 'Where designs change', intro: 'Three points, one at a time, each with a real or plausible example.', fields: [
         ...[1, 2, 3].map((n) => ({ id: `change-point-${n}`, label: `Change point ${n} · the stage, what changes there, and an example`, kind: 'long' as const,
@@ -148,9 +170,9 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'You hand over a design and the team builds it. Is that how it works?',
         options: [
-          { label: 'No. Every team modifies designs during delivery, because building reveals what drawing did not. The choice is whether that happens with you or without you.', correct: true, feedback: 'A missing empty state gets invented by whoever is typing. An expensive interaction gets simplified by whoever sized it. Neither is a failure of the team.' },
-          { label: 'Yes, if the handover is thorough enough.', feedback: 'A thorough handover reduces the changes during build. It cannot attend the slicing session.' },
-          { label: 'Yes, in well-run teams.', feedback: 'Well-run teams change designs during delivery more openly, not less often.' },
+          { label: 'Rarely as drawn: building reveals what drawing missed, and changes get made with you or without you.', correct: true, feedback: 'A missing empty state gets invented by whoever is typing. An expensive interaction gets simplified by whoever sized it. Neither is a failure of the team; the choice is whether you are there when it happens.', was: ['No. Every team modifies designs during delivery, because building reveals what drawing did not. The choice is whether that happens with you or without you.'] },
+          { label: 'Close enough, provided the handover document answers every question the build could possibly raise later.', feedback: 'A thorough handover reduces the changes during build. It cannot attend the slicing session, where the biggest changes are decided.', was: ['Yes, if the handover is thorough enough.'] },
+          { label: 'In well-run teams it is: their process keeps the agreed design steady until the day it ships.', feedback: 'Well-run teams change designs during delivery more openly, not less often.', was: ['Yes, in well-run teams.'] },
         ],
         repair: 'Check your three change points in step 3 include one during build, and name what the handover would have had to say. Record the change in step 5.',
         recheck: 'Your change points cover more than one stage.',
@@ -158,9 +180,9 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'You have no team to observe. Does that make this lesson impossible to do honestly?',
         options: [
-          { label: 'No. A public project’s issue tracker shows real slicing, real estimates and real review comments, and the source line says what you had.', correct: true, feedback: 'What it does not show is the conversations nobody typed, which is a real limit and a stated one. A general description of delivery, by contrast, contains nothing that could surprise you.' },
-          { label: 'Yes, and the honest answer is to skip it.', feedback: 'Skipping is honest and it leaves you with nothing. Reading a real tracker is available to anybody with a browser.' },
-          { label: 'No, you can describe a typical process from the reading.', feedback: 'That produces a description rather than a map, and the change points in it will be the ones the book mentions rather than the ones a team met.' },
+          { label: 'A public tracker shows real slicing and review, and the source line says that is what you read.', correct: true, feedback: 'An open tracker holds real slicing, estimates and review comments. What it does not show is the conversations nobody typed, which is a real limit and a stated one. A general description of delivery, by contrast, contains nothing that could surprise you.', was: ['No. A public project’s issue tracker shows real slicing, real estimates and real review comments, and the source line says what you had.'] },
+          { label: 'It does; without access to a team, the honest course is to skip the lesson and note why.', feedback: 'Skipping is honest and it leaves you with nothing. Reading a real tracker is available to anybody with a browser.', was: ['Yes, and the honest answer is to skip it.'] },
+          { label: 'A typical delivery process described from the assigned reading can stand in for the map instead.', feedback: 'That produces a description rather than a map, and the change points in it will be the ones the book mentions rather than the ones a team met.', was: ['No, you can describe a typical process from the reading.'] },
         ],
         repair: 'Write plainly in step 2 what you had access to, and make sure the map comes from it rather than from general knowledge. Record the change in step 5.',
         recheck: 'The source line names something specific you actually read or attended.',
@@ -168,14 +190,23 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'You have marked every stage as one where you need to be present. Is that right?',
         options: [
-          { label: 'Unlikely. Being everywhere is not available, and the point of the split is to know where a document genuinely suffices.', correct: true, feedback: 'During build, a handover with exact wording, states and behaviour usually answers the question without you. Slicing is where a document cannot help, because it cannot answer.' },
-          { label: 'Yes, since designs change at every stage.', feedback: 'They can, and the useful question is where your presence changes the outcome rather than where change is possible.' },
-          { label: 'Yes, for a design you care about.', feedback: 'That is how a designer ends up in every meeting and present at none of them properly.' },
+          { label: 'Unlikely: the point of the split is to find where a written specification is enough.', correct: true, feedback: 'Being everywhere is not available. During build, a handover with exact wording, states and behaviour usually answers the question without you. Slicing is where a document cannot help, because it cannot answer.', was: ['Unlikely. Being everywhere is not available, and the point of the split is to know where a document genuinely suffices.'] },
+          { label: 'It is right, since a design can change at any stage and nobody knows in advance which one.', feedback: 'It can, and the useful question is where your presence changes the outcome rather than where change is possible.', was: ['Yes, since designs change at every stage.'] },
+          { label: 'It is right for any design you care about, because your absence is when changes slip in.', feedback: 'That is how a designer ends up in every meeting and present at none of them properly.', was: ['Yes, for a design you care about.'] },
         ],
         repair: 'Move at least one stage into the specification-is-enough list in step 4, and say what the document must contain. Record the change in step 5.',
         recheck: 'Both lists in step 4 have something in them.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a community radio station publishes a weekly events listing online and on paper. After a volunteer designer agreed a new layout, each week the station manager picks which events fit, a web volunteer estimates the changes on Sunday evening, and a printer formats the paper copy. Last month the layout’s step-free access line disappeared from the printed listing, and nobody can say where it was dropped.',
+      prompt: 'Name the one stage where you would most want to be present for this listing, and explain why that stage rather than the others.',
+      anchors: {
+        weak: 'Picks the stage where the layout gets looked at, or says every stage, without naming what could change there or what a written specification could not answer.',
+        adequate: 'Names a stage where the design can change (the weekly pick, the Sunday estimate or the printer’s formatting) and explains what could change there that a written specification could not settle.',
+        strong: 'As adequate, and says which stages a specification could cover instead, such as exact wording and required lines for the printer, and what stays uncertain about where the access line was lost.',
+      },
+    },
     saveRoute: {
       auto: 'Your outcomes, the map, the change points and the presence decisions save as you type, on this device first and then online.',
       external: 'Screenshots or notes from a tracker stay in your own folder. Do not copy anybody’s personal details out of a public project; the stages and the decisions are what you need.',
@@ -323,9 +354,9 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'Are stories a formality that translate designs into tickets?',
         options: [
-          { label: 'Written as translations they lose the reason, and the first time an engineer meets a constraint they will guess at the intent.', correct: true, feedback: 'The why is the part that survives contact with reality. Without it, a countdown that turns out to be expensive gets dropped rather than replaced with something cheaper that solves the same problem.' },
-          { label: 'Largely yes, since the design already says what to build.', feedback: 'It says what to build if nothing gets in the way. Something always gets in the way.' },
-          { label: 'No, they are a specification in a different format.', feedback: 'A story is a placeholder for a conversation. Treating it as a specification produces long stories nobody can slice.' },
+          { label: 'Written as translations they lose the reason, so a constraint leaves the engineer guessing at intent.', correct: true, feedback: 'The why is the part that survives contact with reality. Without it, a countdown that turns out to be expensive gets dropped rather than replaced with something cheaper that solves the same problem.', was: ['Written as translations they lose the reason, and the first time an engineer meets a constraint they will guess at the intent.'] },
+          { label: 'Largely, yes: the design already says what to build, so the story only needs to point at it clearly.', feedback: 'It says what to build if nothing gets in the way. Something usually gets in the way, and then only the reason tells anybody what would be acceptable instead.', was: ['Largely yes, since the design already says what to build.'] },
+          { label: 'They are the specification itself, rewritten in a shorter format for the people who will build it.', feedback: 'A story is a placeholder for a conversation. Treating it as a specification produces long stories nobody can slice.', was: ['No, they are a specification in a different format.'] },
         ],
         repair: 'Check every story in step 1 finishes the sentence “so that they …”, and rewrite any that does not. Record the change in step 5.',
         recheck: 'No story reads as an instruction to build something.',
@@ -334,8 +365,8 @@ export const guided14: Record<string, Guided> = {
         question: 'One of your stories would help nobody if it shipped alone. What should you do?',
         options: [
           { label: 'Merge it with its other half, or re-slice so each piece is useful on its own.', correct: true, feedback: 'Independent value is what lets a team release in pieces and learn from each one. A story that waits for another is a task pretending to be a story.' },
-          { label: 'Leave it; some work is genuinely dependent.', feedback: 'Some is, and it should be merged rather than left looking like something that could ship.' },
-          { label: 'Reorder so it ships at the same time as its partner.', feedback: 'That is merging, done informally, with the dependency left invisible to whoever plans the work.' },
+          { label: 'Leave it as it is, since some work is genuinely dependent and will ship together anyway.', feedback: 'Some is, and it should be merged rather than left looking like something that could ship.', was: ['Leave it; some work is genuinely dependent.'] },
+          { label: 'Reorder the backlog so it ships in the same release as the story it depends on.', feedback: 'That is merging, done informally, with the dependency left invisible to whoever plans the work.', was: ['Reorder so it ships at the same time as its partner.'] },
         ],
         repair: 'Merge or re-slice that story in step 3 and record what you did. Note the change in step 5.',
         recheck: 'Every story could ship alone and help somebody.',
@@ -343,14 +374,23 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'You split a story into the design, then the front end, then the server work. What is wrong with that?',
         options: [
-          { label: 'None of the three pieces helps anybody alone, so nothing can be released or learned from until all three are done.', correct: true, feedback: 'Slicing by layer looks orderly and defers every piece of feedback to the end. Slicing by outcome gives you something usable, and something to learn from, at each step.' },
-          { label: 'Nothing, since that is the order the work happens in.', feedback: 'It is roughly the order within each slice. Making it the split means the slices are activities rather than outcomes.' },
-          { label: 'It makes estimation harder.', feedback: 'It often makes estimation easier and feedback impossible, which is the worse trade.' },
+          { label: 'No piece helps anybody alone, so nothing can ship or teach you anything until all three are done.', correct: true, feedback: 'Slicing by layer looks orderly and defers every piece of feedback to the end. Slicing by outcome gives you something usable, and something to learn from, at each step.', was: ['None of the three pieces helps anybody alone, so nothing can be released or learned from until all three are done.'] },
+          { label: 'Nothing much; it follows the order the work happens in anyway, which keeps the handoffs simple.', feedback: 'It is roughly the order within each slice. Making it the split means the slices are activities rather than outcomes.', was: ['Nothing, since that is the order the work happens in.'] },
+          { label: 'It makes each piece harder to estimate, because none of the three has a clear finish line of its own.', feedback: 'It often makes estimation easier and feedback impossible, which is the worse trade.', was: ['It makes estimation harder.'] },
         ],
         repair: 'Re-slice that story by outcome in step 4 and write both halves. Record the change in step 5.',
         recheck: 'Your re-slice produces two pieces somebody could use.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a neighbourhood swimming pool wants regulars to book lane swims online. The backlog has three items: build the timetable screen, connect the timetable to the booking database, and add a cancel button. Today regulars queue at the desk, and some give up when the lanes they wanted are already full.',
+      prompt: 'Rewrite one item as a story with who, what and why, and explain why your version could ship on its own and still help somebody.',
+      anchors: {
+        weak: 'Rewords a layer or a screen task, such as connecting the database, in story grammar; no outcome for a person, or a piece that helps nobody until the others ship.',
+        adequate: 'Names a regular, a capability such as seeing which lanes are free and booking one, and a reason tied to the queue or the full lanes, and says what that story alone would let somebody do.',
+        strong: 'As adequate, and offers a smaller first slice (for example seeing free lanes before booking exists) with what it leaves out, or names what is still unknown about cancelling.',
+      },
+    },
     saveRoute: {
       auto: 'Your five stories, the rewrites, the independence checks and the re-slice save as you type, on this device first and then online.',
       external: 'If your team uses a tracker, the stories go there as well. The versions here are yours, and nothing is sent anywhere from this worksheet.',
@@ -378,7 +418,7 @@ export const guided14: Record<string, Guided> = {
         { id: 'genuine-constraints', label: 'Constraints you kept, and why they are genuinely required', kind: 'long', hint: 'Some are. A legal requirement or a platform rule stays; a preference for how you would have built it does not.' },
       ] },
       { id: 'ambiguity', title: 'Test for ambiguity', fields: [
-        { id: 'reader-check', label: 'Who read them and how they said they would check each, or how you tested them alone', kind: 'long', hint: 'Alone: leave them a day, then write the check for each without looking at the design. Anything you cannot check is ambiguous.' },
+        { id: 'reader-check', label: 'Who read them (a role, not a name) and how they said they would check each, or how you tested them alone', kind: 'long', sensitive: true, hint: 'Summarise what the reader said rather than quoting them, and keep any verbatim notes in your own private file. Alone: leave the criteria a day, then write the check for each without looking at the design. Anything you cannot check is ambiguous.' },
         { id: 'rewritten', label: 'Everything you rewrote afterwards', kind: 'long' },
         improvementMade,
       ] },
@@ -416,7 +456,7 @@ export const guided14: Record<string, Guided> = {
       { expect: 'Accessibility criteria taken from your Module 11 checks, including when anything self-changing is announced.',
         fields: ['access-criteria', 'announcement-rule'],
         terms: [
-          { term: 'Accessibility in the criteria', meaning: 'The only place it becomes part of done. Written anywhere else it is a preference somebody may get to.' },
+          { term: 'Accessibility in the criteria', meaning: 'Where it becomes part of what is checked before a story is accepted. Written only elsewhere, it tends to be checked late, after release, when fixing it costs more.' },
           { term: 'Announcement frequency', meaning: 'How often something changing is spoken. A countdown announced every second is unusable; announced at appearance and at expiry it is informative.' },
         ],
         demo: {
@@ -428,7 +468,7 @@ export const guided14: Record<string, Guided> = {
             { label: 'What was missing from it', text: 'The timer announced every second, which makes the screen unusable for anybody listening. Nothing in the criteria mentioned announcement, so nothing failed.' },
             { label: 'What I changed', text: 'Three accessibility criteria moved into the criteria themselves: keyboard operable, state distinguishable without colour, timer announced at appearance and at expiry only. Done now means those are true.' },
           ],
-          wrongTurn: 'The wrong turn is keeping accessibility in the document it came from, because repeating it feels like duplication. Anything outside the criteria is optional in practice, however well it is written elsewhere.',
+          wrongTurn: 'The wrong turn is keeping accessibility in the document it came from, because repeating it feels like duplication. Anything outside the criteria tends to go unchecked at acceptance, however well it is written elsewhere, and is found later at a higher cost.',
           tradeoff: 'The same requirement now exists in two documents and they can drift. The criteria are the ones that gate release, so they are the ones kept correct.',
           uncertainty: 'Still unknown: whether announcing at appearance and expiry is enough, or whether a halfway warning is wanted. Nobody using a screen reader has tried this flow, and the criterion says what was decided rather than what was tested.',
         },
@@ -499,9 +539,9 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'Are acceptance criteria a testing artefact?',
         options: [
-          { label: 'They are a design artefact that testing uses. They record what the design actually requires, which is why writing them is your work.', correct: true, feedback: 'Left to a tester, the criteria will cover the paths that are easy to test and omit the ones the design cares about most, particularly the failures and the announcements.' },
-          { label: 'Yes, which is why testers usually write them.', feedback: 'Where testers write them, the criteria reflect what is testable rather than what was designed.' },
-          { label: 'They belong to whoever is available to write them.', feedback: 'They belong to whoever knows what the design requires, which is the person who made the decisions.' },
+          { label: 'A design artefact that testing uses: they record what the design requires, so they are yours.', correct: true, feedback: 'Left to a tester, criteria tend to cover the paths that are easy to test and miss the ones the design cares about most, particularly the failures and the announcements.', was: ['They are a design artefact that testing uses. They record what the design actually requires, which is why writing them is your work.'] },
+          { label: 'Mainly a testing artefact, which is why testers usually write them once the build exists.', feedback: 'Where testers write them, the criteria reflect what is testable rather than what was designed.', was: ['Yes, which is why testers usually write them.'] },
+          { label: 'They belong to whoever has time to write them, since any careful person can list what to check.', feedback: 'They belong to whoever knows what the design requires, which is the person who made the decisions.', was: ['They belong to whoever is available to write them.'] },
         ],
         repair: 'Check each story in step 1 has criteria covering something only you would know the design requires. Record the change in step 5.',
         recheck: 'Your criteria include requirements a tester could not have inferred.',
@@ -509,9 +549,9 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'Your accessibility requirements are in the handover document, linked from the story. Is that enough?',
         options: [
-          { label: 'No. Anything outside the criteria is optional in practice, however well it is written elsewhere.', correct: true, feedback: 'The build meets the criteria, gets accepted and ships. A timer announcing every second passes every criterion you wrote and makes the screen unusable for anybody listening.' },
-          { label: 'Yes, provided the link is prominent.', feedback: 'Prominence does not make it part of done. Only the criteria gate acceptance.' },
-          { label: 'Yes, and repeating it risks the two documents disagreeing.', feedback: 'They can disagree, and the criteria are the ones that gate release, so those are the ones kept correct.' },
+          { label: 'It leaves them unchecked at acceptance: a build can pass every criterion and still fail them.', correct: true, feedback: 'The build meets the criteria, gets accepted and ships. A timer announcing every second passes every criterion you wrote and makes the screen unusable for anybody listening. It is still a defect once somebody finds it; the cost is that nobody checked for it before release.', was: ['No. Anything outside the criteria is optional in practice, however well it is written elsewhere.'] },
+          { label: 'It is enough if the link is prominent, because everybody building the story will open it first.', feedback: 'Prominence does not make it part of what is checked. Only the criteria gate acceptance.', was: ['Yes, provided the link is prominent.'] },
+          { label: 'It is the better choice, because repeating requirements in two places lets the copies drift apart.', feedback: 'They can drift, and the criteria are the ones checked at acceptance, so those are the ones to keep correct.', was: ['Yes, and repeating it risks the two documents disagreeing.'] },
         ],
         repair: 'Move at least three accessibility requirements into the criteria themselves in step 3. Record the change in step 5.',
         recheck: 'Each story has an accessibility criterion that could fail.',
@@ -519,14 +559,23 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'A criterion says the remaining time is clearly shown. What is wrong with it?',
         options: [
-          { label: 'Clearly cannot be checked, so nothing will ever fail on it and two people can honestly disagree.', correct: true, feedback: 'It survives review because nobody disagrees with it. The checkable version says what is stated and where, which somebody can look at and agree about in two seconds.' },
-          { label: 'Nothing, since clarity is the actual requirement.', feedback: 'Clarity is the intention. The criterion has to name what makes it so.' },
-          { label: 'It should specify a font size.', feedback: 'That is an implementation criterion, which is the opposite failure. State what is shown and where.' },
+          { label: 'Clearly cannot be checked: two careful people could look at the same screen and disagree.', correct: true, feedback: 'It survives review because nobody disagrees with it, and nothing can ever fail on it. The checkable version says what is stated and where, which somebody can look at and agree about in two seconds.', was: ['Clearly cannot be checked, so nothing will ever fail on it and two people can honestly disagree.'] },
+          { label: 'Nothing important, since clarity is the requirement and the team will know it when they see it.', feedback: 'Clarity is the intention. The criterion has to name what makes it so, or two people will judge it differently.', was: ['Nothing, since clarity is the actual requirement.'] },
+          { label: 'It needs a minimum font size and colour added, so that clearly has a measurable threshold.', feedback: 'That is an implementation criterion, which is the opposite failure. State what is shown and where.', was: ['It should specify a font size.'] },
         ],
         repair: 'Rewrite that criterion in step 1 so it names what is stated and where, and record the change in step 5.',
         recheck: 'None of your criteria uses clearly, properly or appropriately.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a public library is adding a renew-your-loan button to its website. The draft acceptance criteria say: renewal is easy; the due date updates; it works for everyone. Renewal can fail when another reader has reserved the book, and a loan cannot be renewed more than twice.',
+      prompt: 'Rewrite one weak criterion so somebody else could check it, add one criterion for a failure path, and explain why each is now checkable.',
+      anchors: {
+        weak: 'Keeps judgement words such as easy or works for everyone, names an implementation, or covers only the success path.',
+        adequate: 'An observable criterion (for example: after renewal the page shows the new due date) and a failure criterion for a reserved book or a third renewal saying what the person is told, with why two people would agree.',
+        strong: 'As adequate, and adds an accessibility criterion stated as an outcome, such as operable by keyboard with the result announced, and says how each criterion would be checked.',
+      },
+    },
     saveRoute: {
       auto: 'Your criteria, the failure paths, the accessibility lines and the rewrites save as you type, on this device first and then online.',
       external: 'The criteria belong beside the stories wherever your team keeps them. This worksheet is your working copy and nothing is sent from it.',
@@ -629,7 +678,7 @@ export const guided14: Record<string, Guided> = {
                 'enthusiasm in disguise': 'It is the sentence that keeps a cut item alive for ever without anybody having to justify it.',
                 'already true': 'Time is exactly what there is not.',
               } },
-            { id: 'accessible-form', text: 'The accessible form work comes back if somebody reports being unable to complete the booking.', answer: 'already true',
+            { id: 'accessible-form', text: 'The accessible form work, already known to fail a keyboard check, comes back if somebody reports being unable to complete the booking.', answer: 'already true',
               feedback: {
                 'a real condition': 'It has the shape of one, and it is the wrong list. Waiting for somebody to report being excluded is not a condition; it is a plan to find out by excluding them.',
                 'enthusiasm in disguise': 'It is worse than enthusiasm. It reads as rigour.',
@@ -674,9 +723,9 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'Somebody suggests building it properly and seeing how long it takes. What is wrong with that?',
         options: [
-          { label: 'It defers the constraint rather than removing it, and the constraint arrives as a rushed final week in which quality is cut silently.', correct: true, feedback: 'Whatever is unfinished at the end is what gets cut, which is usually the accessibility work and the error states. Deciding the appetite first makes the trade visible while you can still design for it.' },
-          { label: 'Nothing, if the team is disciplined about quality.', feedback: 'Discipline is exactly what a rushed week removes, and nobody decides to cut quality; it is what is left over.' },
-          { label: 'It makes planning harder for everybody else.', feedback: 'True and secondary. The cost lands on the design.' },
+          { label: 'It defers the constraint, so quality gets cut silently in a rushed final week.', correct: true, feedback: 'The constraint does not disappear; it arrives late. Whatever is unfinished at the end is what gets cut, which is usually the accessibility work and the error states. Deciding the appetite first makes the trade visible while you can still design for it.', was: ['It defers the constraint rather than removing it, and the constraint arrives as a rushed final week in which quality is cut silently.'] },
+          { label: 'Nothing serious, as long as the team stays disciplined about quality right to the end of the work.', feedback: 'Discipline is exactly what a rushed week removes, and nobody decides to cut quality; it is what is left over.', was: ['Nothing, if the team is disciplined about quality.'] },
+          { label: 'Mainly that it makes planning harder for everybody else who depends on knowing a finish date.', feedback: 'True and secondary. The cost lands on the design.', was: ['It makes planning harder for everybody else.'] },
         ],
         repair: 'Write the appetite in step 1 before looking at the design, and say why that amount. Record the change in step 5.',
         recheck: 'The appetite is a number decided on value rather than an estimate of the work.',
@@ -684,9 +733,9 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'One of your return conditions is “when we have time to do it properly”. Is that a condition?',
         options: [
-          { label: 'No. Time never appears on its own, and nothing about the product has to be observed for it to be met.', correct: true, feedback: 'A condition somebody could answer no to is what makes a cut revisable rather than permanent. This one keeps an item alive indefinitely without anybody justifying it.' },
-          { label: 'Yes, since capacity genuinely does change.', feedback: 'It does, and when it changes the question is still which of the cut items is worth the capacity. This sentence does not help answer it.' },
-          { label: 'Yes, provided a review date is attached.', feedback: 'A review date makes it a recurring conversation rather than a condition.' },
+          { label: 'It names nothing to observe, so it could never come back with the answer no.', correct: true, feedback: 'Time never appears on its own. A condition somebody could answer no to is what makes a cut revisable rather than permanent; this one keeps an item alive indefinitely without anybody justifying it.', was: ['No. Time never appears on its own, and nothing about the product has to be observed for it to be met.'] },
+          { label: 'It counts, because team capacity genuinely changes and the item can return when it does.', feedback: 'Capacity does change, and when it does the question is still which of the cut items is worth it. This sentence does not help answer that.', was: ['Yes, since capacity genuinely does change.'] },
+          { label: 'It counts once a review date is attached, so the item gets looked at again on a fixed day.', feedback: 'A review date makes it a recurring conversation rather than a condition.', was: ['Yes, provided a review date is attached.'] },
         ],
         repair: 'Rewrite any such condition in step 3 so it names something somebody could observe. Record the change in step 5.',
         recheck: 'Every return condition could be answered no.',
@@ -694,14 +743,23 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'Your accessibility work does not fit in the appetite. What should you cut?',
         options: [
-          { label: 'Something else. Accessibility belongs with the failure paths in what you refuse to cut, and a smaller feature that works for everybody beats a larger one that does not.', correct: true, feedback: 'Cutting it is the silent quality decision this lesson exists to prevent. Reducing the scope further is the honest answer, and it is a decision you can state.' },
-          { label: 'The accessibility work, with a note to return to it.', feedback: 'That note is the return condition the sorter warned about: it waits for somebody to report being excluded.' },
-          { label: 'Nothing, and extend the appetite instead.', feedback: 'Sometimes right, and it should be a decision made openly rather than a way of avoiding the cut.' },
+          { label: 'A feature instead: accessibility sits with the failure paths in what you refuse to cut.', correct: true, feedback: 'Cutting it is the silent quality decision this lesson exists to prevent. A smaller feature that works for everybody beats a larger one that does not, and reducing the scope further is a decision you can state.', was: ['Something else. Accessibility belongs with the failure paths in what you refuse to cut, and a smaller feature that works for everybody beats a larger one that does not.'] },
+          { label: 'The accessibility work for now, with a dated note to return to it in the next round of work.', feedback: 'That note is the return condition the sorter warned about: it waits for somebody to report being excluded.', was: ['The accessibility work, with a note to return to it.'] },
+          { label: 'Nothing; quietly extend the appetite so the full scope and the accessibility work both fit.', feedback: 'Extending can be right when it is decided openly. Doing it quietly avoids the very decision the appetite exists to force.', was: ['Nothing, and extend the appetite instead.'] },
         ],
         repair: 'Write what you refused to cut in step 5, and reduce the scope elsewhere to fit. Record the change.',
         recheck: 'Nothing in the not-optional list appears on the cut list.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a small bakery wants online pre-orders before a street festival in three weeks. The full design has an order form, pick-up time slots, a loyalty stamp card, gift messages, local delivery and a photo gallery. The owner can afford two weeks of a freelancer’s time, and the form has not yet been checked with a keyboard.',
+      prompt: 'Decide what survives a two-week appetite, name one cut with its return condition, and explain why.',
+      anchors: {
+        weak: 'Keeps everything, or cuts quality such as keyboard access and error handling instead of features; the return condition is “when we have time”.',
+        adequate: 'Keeps the order form and pick-up slots because they deliver festival pre-orders, keeps the keyboard and error work, and cuts something like the stamp card with a condition that could be answered no.',
+        strong: 'As adequate, and marks one item not worth building with a reason, or names the risk in a cut (gift messages may matter at a festival) and how to check it.',
+      },
+    },
     saveRoute: {
       auto: 'Your appetite, the scope, the cut list and the never-build item save as you type, on this device first and then online.',
       external: 'The cut list is worth keeping somewhere your team can see it, so cut items return through their conditions rather than through conversations.',
@@ -714,11 +772,11 @@ export const guided14: Record<string, Guided> = {
     worksheet: [
       { id: 'prepare', title: 'Prepare three stories', fields: [
         { id: 'stories-taken', label: 'Which three stories, and what you already know is undefined in them', kind: 'long', hint: 'Marking your own gaps first makes the conversation about theirs rather than yours.' },
-        { id: 'who-asked', label: 'Who you asked, or how you did this without an engineer', kind: 'short', hint: 'No engineer: ask an informed reader what they could not answer from your story and criteria. The unanswerable parts are the unknowns.', example: 'Example (made up): no engineer available. A friend who builds websites read the three stories and marked everything they could not answer.' },
+        { id: 'who-asked', label: 'Who you asked (a role, not a name), or how you did this without an engineer', kind: 'short', hint: 'No engineer: ask an informed reader what they could not answer from your story and criteria. The unanswerable parts are the unknowns.', example: 'Example (made up): no engineer available. A friend who builds websites read the three stories and marked everything they could not answer.' },
       ] },
       { id: 'estimates', title: 'The estimates and the reasoning', fields: [
-        { id: 'estimates-given', label: 'How long each would take, and the reasoning behind each figure', kind: 'long' },
-        { id: 'could-not-answer', label: 'What they could not answer from your material', kind: 'long' },
+        { id: 'estimates-given', label: 'How long each would take, and the reasoning behind each figure, summarised in your words', kind: 'long', sensitive: true, hint: 'Summarise their reasoning rather than quoting them, and keep any verbatim notes in your own private file. An estimate is information, not a commitment to quote back at anybody.' },
+        { id: 'could-not-answer', label: 'What they could not answer from your material', kind: 'long', sensitive: true },
       ] },
       { id: 'uncertainty', title: 'Name the uncertainty', fields: [
         { id: 'uncertainty-named', label: 'For each estimate: what made it uncertain', kind: 'long' },
@@ -849,9 +907,9 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'An engineer estimates a week for something you thought was two days. What should you ask?',
         options: [
-          { label: 'What makes it a week rather than two days. The answer is usually a decision your design has not made.', correct: true, feedback: 'Uncertainty, not effort, is what makes an estimate large. Two undefined states can turn an afternoon of building into a week of covering possibilities.' },
-          { label: 'Whether the estimate could be reduced.', feedback: 'It can, and reducing it without changing the work moves the contingency somewhere less visible.' },
-          { label: 'What could be removed from the story to make it smaller.', feedback: 'A reasonable second question. Ask what makes it uncertain first; often nothing needs removing.' },
+          { label: 'What makes it a week rather than two days, since it is often a decision not yet made.', correct: true, feedback: 'Uncertainty, not effort, often makes an estimate large. Two undefined states can turn an afternoon of building into a week of covering possibilities.', was: ['What makes it a week rather than two days. The answer is usually a decision your design has not made.'] },
+          { label: 'Whether the estimate could come down a little if the team agreed to work faster on it.', feedback: 'It can come down, and reducing it without changing the work moves the contingency somewhere less visible.', was: ['Whether the estimate could be reduced.'] },
+          { label: 'Which parts of the story could be removed straight away so that it fits inside two days.', feedback: 'A reasonable second question. Ask what makes it uncertain first; often nothing needs removing.', was: ['What could be removed from the story to make it smaller.'] },
         ],
         repair: 'Write what made each estimate uncertain in step 3, and classify it. Record the change in step 5.',
         recheck: 'Every estimate has a named uncertainty rather than only a number.',
@@ -859,9 +917,9 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'Do engineers pad estimates?',
         options: [
-          { label: 'They add contingency for uncertainty, which is rational. Removing the uncertainty removes the contingency.', correct: true, feedback: 'Pressing on the number moves the same contingency somewhere less visible, usually into whatever gets rushed at the end. Specification is what actually reduces it.' },
-          { label: 'Yes, which is why estimates should be challenged.', feedback: 'Challenging the number leaves the uncertainty in place and hides the buffer. The work is the same size afterwards.' },
-          { label: 'Some do, and it varies by person.', feedback: 'It varies less than it seems. What varies is how much your material leaves undefined.' },
+          { label: 'They add contingency for uncertainty; removing the uncertainty removes the contingency.', correct: true, feedback: 'Contingency for the unknown is rational. Pressing on the number moves it somewhere less visible, usually into whatever gets rushed at the end. Specification is what actually reduces it.', was: ['They add contingency for uncertainty, which is rational. Removing the uncertainty removes the contingency.'] },
+          { label: 'Often, yes, which is why every estimate should be challenged before the work is planned.', feedback: 'Challenging the number leaves the uncertainty in place and hides the buffer. The work is the same size afterwards.', was: ['Yes, which is why estimates should be challenged.'] },
+          { label: 'Some do and some do not; it depends mostly on the habits of the person estimating.', feedback: 'It varies less than it seems. What varies is how much your material leaves undefined.', was: ['Some do, and it varies by person.'] },
         ],
         repair: 'Redesign one story in step 4 by defining what was undefined, and re-estimate. Record the change in step 5.',
         recheck: 'A number changed because something was decided rather than discussed.',
@@ -869,14 +927,23 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'You have no engineer to ask. Can this lesson be done honestly?',
         options: [
-          { label: 'Yes. An informed reader marking what they cannot answer from your story produces the same list of unknowns.', correct: true, feedback: 'The estimate itself will be rough, and the unknowns are what the lesson is about. Say in the access line that no engineer was involved.' },
-          { label: 'No, since only an engineer can estimate the work.', feedback: 'Only an engineer can estimate accurately, and accuracy is not what this lesson produces.' },
-          { label: 'Yes, by estimating the stories yourself.', feedback: 'Your own estimate cannot show you what your material fails to answer, because you already know the answers.' },
+          { label: 'It can: an informed reader marking what your story leaves open finds most unknowns.', correct: true, feedback: 'The estimate itself will be rough, and the unknowns are what the lesson is about. Say in the access line that no engineer was involved; a reader will miss some system-specific unknowns that an engineer would catch.', was: ['Yes. An informed reader marking what they cannot answer from your story produces the same list of unknowns.'] },
+          { label: 'It cannot, since only an engineer on the team is able to estimate the work at all.', feedback: 'Only an engineer can estimate accurately, and accuracy is not what this lesson produces.', was: ['No, since only an engineer can estimate the work.'] },
+          { label: 'It can, if you estimate the three stories yourself and note where you hesitated.', feedback: 'Your own estimate cannot show you what your material fails to answer, because you already know the answers.', was: ['Yes, by estimating the stories yourself.'] },
         ],
         repair: 'Write plainly in step 1 who you asked, and make sure the unknowns came from somebody other than you. Record the change in step 5.',
         recheck: 'The unanswerable list was produced by a reader rather than by you.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a parents’ choir wants a page where members swap rehearsal snack duties. The volunteer who would build it estimates three weeks. The design does not say what happens when two people claim the same week, whether reminders are sent, or whether the page connects to the choir’s existing mailing-list service.',
+      prompt: 'Name the question you would ask about the estimate, and say which unknown you could remove yourself by deciding, and why.',
+      anchors: {
+        weak: 'Argues the three weeks down or asks for it to be faster, without asking what makes it uncertain.',
+        adequate: 'Asks what makes it three weeks, and names a decision the designer can make, such as what happens when two people claim the same week, as a removable undefined state.',
+        strong: 'As adequate, and separates that from the mailing-list connection as somebody else’s unknown to defer or design around, saying what the estimate might look like without it.',
+      },
+    },
     saveRoute: {
       auto: 'Your stories, the estimates, the uncertainties and the redesign save as you type, on this device first and then online.',
       external: 'Notes from the conversation stay with you. Do not record anybody’s estimate in a way that could be quoted back at them as a commitment.',
@@ -893,8 +960,8 @@ export const guided14: Record<string, Guided> = {
         { id: 'questions-asked-ahead', label: 'What you asked them to do before the conversation', kind: 'short' },
       ] },
       { id: 'conversation', title: 'The conversation', fields: [
-        { id: 'their-questions', label: 'Their questions, in their words', kind: 'long', hint: 'Start with these rather than narrating your screens. The narration is what the document was for.' },
-        { id: 'expensive-existing', label: 'What they said was expensive, and what already exists', kind: 'long' },
+        { id: 'their-questions', label: 'Their questions, summarised closely enough to act on', kind: 'long', sensitive: true, hint: 'Start with these rather than narrating your screens. Summarise each question in a line; keep any verbatim notes in your own private file, with a date to delete them. On the rehearsal route, label every question as a rehearsal question.' },
+        { id: 'expensive-existing', label: 'What they said was expensive, and what already exists', kind: 'long', sensitive: true },
       ] },
       { id: 'decisions', title: 'The decision record', fields: [
         { id: 'decisions-made', label: 'Every decision made in the conversation', kind: 'long', hint: 'Write them as they are made. A decision nobody wrote down gets re-made differently in three weeks.' },
@@ -906,7 +973,7 @@ export const guided14: Record<string, Guided> = {
         { id: 'default-rule', label: 'The default if you are unavailable', kind: 'short', example: 'Example (made up): if I cannot be reached the same day, choose the option that preserves what the person has already entered.' },
       ] },
       { id: 'update', title: 'Update the artefacts', fields: [
-        { id: 'changed-design', label: 'What changed in the design and the criteria as a result', kind: 'long', hint: 'A handover with no changes was a briefing. At least one thing usually moves.' },
+        { id: 'changed-design', label: 'What changed in the design and the criteria, or what you kept unchanged and why', kind: 'long', hint: 'Every question raised gets an answer on the record: a change, or a justified decision to keep the design as it is. Keeping something with a stated reason is a valid outcome. What is not valid is a question left unanswered.' },
         improvementMade,
       ] },
     ],
@@ -1013,47 +1080,57 @@ export const guided14: Record<string, Guided> = {
         },
         start: 'Agree the default out loud in the conversation rather than writing it afterwards.',
         enough: 'Somebody building this on a Friday afternoon would know what to do.' },
-      { expect: 'The design and criteria updated to match what was agreed, with at least one change recorded.',
+      { expect: 'The design and criteria updated to match what was agreed, with each raised question answered by a change or a justified decision to keep.',
         fields: ['changed-design', 'improvement-made'],
         terms: [
-          { term: 'A handover with no changes', meaning: 'A briefing. If nothing moved, either the constraints were not discussed or the questions were not asked.' },
+          { term: 'A justified non-change', meaning: 'A question raised in the handover and answered by keeping the design, with the reason written down. It is a decision, not a failure to listen.' },
+          { term: 'A handover with no questions', meaning: 'The warning sign. If nobody raised anything about cost, existing parts or undefined cases, the conversation probably did not reach the constraints.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
         start: 'Change the criteria first, since those are what gate acceptance.',
-        enough: 'The artefacts now describe what was agreed rather than what you sent.' },
+        enough: 'The artefacts now describe what was agreed, and every kept item has its reason beside it.' },
     ],
     checks: [
       {
         question: 'Does handover mean giving the design to the team?',
         options: [
-          { label: 'It means agreeing what will be built, under what constraints, with what still undecided. The document is the input, not the event.', correct: true, feedback: 'Treated as a delivery, it produces surprises later: questions arriving one at a time by message, and decisions made without you because nobody could reach you.' },
-          { label: 'Yes, provided the documentation is complete enough.', feedback: 'No document answers a question about cost or about what already exists, and both change designs.' },
-          { label: 'Yes, and the conversation is a courtesy.', feedback: 'The conversation is where the constraints appear. The courtesy version is the thirty-five minute presentation.' },
+          { label: 'Agreeing what gets built, under which constraints, with what is still undecided.', correct: true, feedback: 'The document is the input, not the event. Treated as a delivery, handover produces surprises later: questions arriving one at a time by message, and decisions made without you because nobody could reach you.', was: ['It means agreeing what will be built, under what constraints, with what still undecided. The document is the input, not the event.'] },
+          { label: 'Giving the design over, provided the documentation is complete enough to answer everything.', feedback: 'No document answers a question about cost or about what already exists, and both can change designs.', was: ['Yes, provided the documentation is complete enough.'] },
+          { label: 'Giving the design over; the conversation afterwards is mostly a courtesy.', feedback: 'The conversation is where the constraints appear. The courtesy version is the thirty-five minute presentation.', was: ['Yes, and the conversation is a courtesy.'] },
         ],
         repair: 'Check you sent the material ahead in step 1 and opened with their questions in step 2. Record the change in step 5.',
         recheck: 'Nobody read your material for the first time in the conversation.',
       },
       {
-        question: 'The handover produced no changes to the design. What does that suggest?',
+        question: 'Your handover raised no questions at all and produced no changes. What does that suggest?',
         options: [
-          { label: 'It was a briefing rather than a handover. Either the constraints were not discussed or the questions were not asked.', correct: true, feedback: 'Every real conversation with people who will build something surfaces at least one thing that is expensive, already exists, or was undefined. No changes usually means narration filled the time.' },
-          { label: 'That the design was thorough.', feedback: 'A thorough design still meets constraints nobody outside the team knew about.' },
-          { label: 'That the team agreed with the approach.', feedback: 'Agreement is not the outcome being looked for. Information about cost and constraint is.' },
+          { label: 'It was a briefing: the constraints were probably never discussed, or never asked about.', correct: true, feedback: 'Conversations with people who will build something usually surface something expensive, already existing or undefined. Contrast a handover where questions were raised and you kept the design with a reason recorded for each: that is a valid outcome, not a failure.', was: ['It was a briefing rather than a handover. Either the constraints were not discussed or the questions were not asked.'] },
+          { label: 'That the design was thorough enough to leave nobody anything to raise or change.', feedback: 'A thorough design still meets constraints nobody outside the team knew about. Silence is more often a sign that nobody was asked.', was: ['That the design was thorough.'] },
+          { label: 'That the team agreed with the approach, which is what a handover sets out to get.', feedback: 'Agreement is not the outcome being looked for. Information about cost and constraint is.', was: ['That the team agreed with the approach.'] },
         ],
-        repair: 'Go back and ask what is expensive and what already exists, in step 2, and record what that changes. Note it in step 5.',
-        recheck: 'At least one thing about the design or criteria moved.',
+        repair: 'Go back and ask what is expensive and what already exists, in step 2, and record what each answer changes or why you are keeping the design. Note it in step 5.',
+        recheck: 'Every question raised has a recorded answer: a change, or a reason to keep the design.',
       },
       {
         question: 'You ran the conversation as a rehearsal with a friend rather than with a team. How should it be recorded?',
         options: [
-          { label: 'As a rehearsal, in the access line and anywhere the outcome is referred to later.', correct: true, feedback: 'A rehearsal is real practice and it produced real questions. What it cannot produce is agreement from people who will build the thing, and nothing should later read as though it did.' },
-          { label: 'As a handover, since the process was the same.', feedback: 'The process was the same and the standing of the decisions is not. Nobody in the room can commit to building anything.' },
-          { label: 'It does not need recording either way.', feedback: 'It does, because a decision record with no team behind it will be read as one with a team behind it.' },
+          { label: 'As a rehearsal, in the access line and wherever its outcome is mentioned later.', correct: true, feedback: 'A rehearsal is real practice and it produced real questions. What it cannot produce is agreement from people who will build the thing, and nothing should later read as though it did.', was: ['As a rehearsal, in the access line and anywhere the outcome is referred to later.'] },
+          { label: 'As a handover, since the steps you followed were exactly the same as with a team.', feedback: 'The process was the same and the standing of the decisions is not. Nobody in the room can commit to building anything.', was: ['As a handover, since the process was the same.'] },
+          { label: 'Either way, since a practice conversation does not need a label in your own notes.', feedback: 'It does, because a decision record with no team behind it will be read as one with a team behind it.', was: ['It does not need recording either way.'] },
         ],
         repair: 'Label the session plainly in step 1 and mark the decision record as a rehearsal. Record the change in step 5.',
         recheck: 'Nothing in your record implies agreement from people who were not there.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a designer hands over a new sign-up form for a cycling club. In the conversation the builder says the address lookup would take a week, asks whether the existing club-card component could replace a new card, and points out nobody has said what happens if the email is already registered. The designer wants to keep the new card because it shows the member’s photo, which the old one cannot.',
+      prompt: 'Write the decision-record entry for each of the three points, and explain which ones change the design and why keeping one is acceptable.',
+      anchors: {
+        weak: 'Treats every point as a change to make, or records none of them; the already-registered case is left undecided or unwritten.',
+        adequate: 'Three entries: a change or deferral for the address lookup, the new card kept with its photo reason, and the already-registered case decided or marked open, each with the reason recorded.',
+        strong: 'As adequate, and names an escalation default for the open case and what would bring a deferred item back, or what it would cost to maintain the separate card.',
+      },
+    },
     saveRoute: {
       auto: 'What you sent, their questions, the decisions, the escalation route and the updates save as you type, on this device first and then online.',
       external: 'The decision record goes wherever your team keeps such things, the same day. This worksheet is your own copy of it.',
@@ -1065,19 +1142,20 @@ export const guided14: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'criteria', title: 'Against the criteria first', fields: [
-        { id: 'what-reviewed', label: 'What you reviewed, and where it is', kind: 'short', hint: 'A built feature from your team, or your own Module 12 build. Both are real; say which.' },
-        { id: 'criterion-results', label: 'Each acceptance criterion, with pass or fail and what you observed', kind: 'long', hint: 'Observed means what you saw, not what you concluded.' },
+        { id: 'qa-route', label: 'What kind of thing you are reviewing', kind: 'choice', options: ['A working build or clickable prototype', 'Paper screens or static images of my own design', 'The supplied practice tracker case'], hint: 'All three are honest routes. A team build, your Project 2 build or a clickable Project 1 prototype is a working build; Project 1 paper screens are static; with neither, use the supplied tracker case. Label the route wherever the review is mentioned later.' },
+        { id: 'what-reviewed', label: 'What you reviewed, and where it is', kind: 'short', hint: 'Name it plainly: a team build, your Project 2 build, your Project 1 prototype or paper screens, or the supplied tracker case. A review of paper screens is a design review, not a check of a build, and says so.' },
+        { id: 'criterion-results', label: 'Each acceptance criterion, with pass or fail and what you observed', kind: 'long', hint: 'Observed means what you saw, not what you concluded. Supplied case: use criteria C1 to C4 in the source notes and the evidence in each tracker entry.' },
       ] },
       { id: 'states', title: 'Force every state', fields: [
-        { id: 'states-triggered', label: 'How you triggered each state, including the failures', kind: 'long', hint: 'Break the address, go offline, submit nothing, use a class that is full. Failures do not happen by waiting.' },
+        { id: 'states-triggered', label: 'How you triggered or walked each state, including the failures', kind: 'long', hint: 'Working build: break the address, go offline, submit nothing, use a class that is full; failures do not happen by waiting. Paper: walk your state table screen by screen and note any state with no screen. Supplied case: list which tracker entries came from forced states.' },
         { id: 'missing-states', label: 'Any state that does not exist or behaves differently from the specification', kind: 'long' },
       ] },
       { id: 'context', title: 'Where it will actually be used', fields: [
-        { id: 'device-widths', label: 'What you found on a real phone and at your specified widths', kind: 'long' },
-        { id: 'keyboard-content', label: 'What you found with the keyboard and with long content', kind: 'long', hint: 'These two and the states are where the important findings are. Spacing is the smallest part of this review.' },
+        { id: 'device-widths', label: 'What you found on a real phone and at your specified widths', kind: 'long', requiredWhen: { field: 'qa-route', values: ['A working build or clickable prototype'] }, hint: 'Only possible with something that runs. On paper or the supplied case, leave this empty or write what a device check would still need to cover.' },
+        { id: 'keyboard-content', label: 'What you found with the keyboard and with long content', kind: 'long', requiredWhen: { field: 'qa-route', values: ['A working build or clickable prototype'] }, hint: 'These two and the states are where the important findings are; spacing is the smallest part of this review. Without a working build, leave this empty or note the checks still owed.' },
       ] },
-      { id: 'separate', title: 'Defect, or change of mind?', fields: [
-        { id: 'labelled-findings', label: 'Every finding, labelled defect or request', kind: 'long', hint: 'A defect contradicts something agreed. A request is something you would now prefer. Mixing them costs you trust.' },
+      { id: 'separate', title: 'Defect, missing requirement, request or question?', fields: [
+        { id: 'labelled-findings', label: 'Every finding, labelled defect, missing requirement, change request or question', kind: 'long', hint: 'Defect: contradicts something agreed, or breaks the team’s agreed baseline (accessibility, never losing typed input) even where no story criterion mentions it. Missing requirement: a case nobody specified. Change request: something you would now prefer, which can be declined with a reason. Question: cannot be classified until somebody answers.' },
         { id: 'prioritised', label: 'The list ordered by harm to the person, not by ease of fixing', kind: 'long' },
       ] },
       { id: 'send', title: 'Send it well', fields: [
@@ -1086,13 +1164,14 @@ export const guided14: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'Each acceptance criterion walked against the build, with pass or fail and what you actually observed.',
-        fields: ['what-reviewed', 'criterion-results'],
+      { expect: 'Your review route named, and each acceptance criterion walked against the build, prototype, paper screens or supplied case, with pass or fail and what you observed.',
+        fields: ['qa-route', 'what-reviewed', 'criterion-results'],
         terms: [
           { term: 'Design QA', meaning: 'Checking the built thing against what was agreed. It is your job because you know what the criteria meant.' },
           { term: 'Observed', meaning: 'What you saw happen. Distinct from what you concluded from it, and the part somebody else can check.' },
+          { term: 'Supplied case', meaning: 'The made-up practice tracker in the source notes. It lets you practise triage honestly when you have no build; it is practice, not a review of real work.' },
         ],
-        start: 'Open the criteria beside the build and go down them in order, before looking at anything else.',
+        start: 'Open the criteria beside whatever you are reviewing and go down them in order, before looking at anything else.',
         enough: 'Every criterion has a result and an observation, including the ones that passed.' },
       { expect: 'Every state triggered deliberately, including failures, with anything missing or different recorded.',
         fields: ['states-triggered', 'missing-states'],
@@ -1107,15 +1186,15 @@ export const guided14: Record<string, Guided> = {
             { label: 'What the eleven were', text: 'Four pixels here, a slightly wrong grey there. All real, all cosmetic, and the list read as fussy because it was.' },
             { label: 'What I had not done', text: 'Triggered anything. Every state I had specified existed only as a specification, and I had reviewed the one screen that appears when everything works.' },
             { label: 'What twenty minutes of forcing states found', text: 'The expiry warning announced every second. The held state was distinguishable only by colour. The empty list showed the loading skeleton for ever. Three criteria failed, and none of them was visible on the default screen.' },
-            { label: 'What that did to the list', text: 'Three defects at the top with criteria quoted, and the eleven cosmetic items below as requests. The same review, ordered by harm, read as useful rather than as fussy.' },
+            { label: 'What that did to the list', text: 'Three defects at the top with criteria quoted, and the eleven cosmetic items below as low-severity defects against the token sheet. The same review, ordered by harm, read as useful rather than as fussy.' },
           ],
           wrongTurn: 'The wrong turn is reviewing the screen in front of you, because it is there and checking it against a token sheet is satisfying. The states are where the specification either survived or did not, and none of them is on screen by default.',
           tradeoff: 'Forcing states takes longer and produces fewer findings. Three findings nobody can dismiss is worth more than fourteen that look like preferences.',
           uncertainty: 'Still unknown: how the states behave together, such as an expiry during a slow load. I triggered them one at a time, and combinations are where the next round of defects will be.',
         },
-        start: 'Go offline in the network panel before you look at anything else.',
-        enough: 'You triggered every state from your own tables, not only the ones that appeared on their own.' },
-      { expect: 'The build checked on a real phone, at your specified widths, with the keyboard and with long content.',
+        start: 'Working build: go offline in the network panel before you look at anything else. Paper: lay your state table beside the screens. Supplied case: read each tracker entry’s evidence.',
+        enough: 'You triggered or walked every state from your own tables, not only the ones that appeared on their own.' },
+      { expect: 'With a working build: checked on a phone, at your widths, by keyboard and with long content. Without one: what these checks would still need to cover.',
         fields: ['device-widths', 'keyboard-content'],
         terms: [
           { term: 'Where it will be used', meaning: 'A real device, at real widths, with real content. A review on your laptop with short test data checks the easiest version of everything.' },
@@ -1134,16 +1213,17 @@ export const guided14: Record<string, Guided> = {
           tradeoff: 'The device pass takes another twenty minutes and finds fewer things, and the things it finds cannot be found any other way.',
           uncertainty: 'Still unknown: how it behaves on a smaller or older phone. I checked the one I have, and that is what the review says.',
         },
-        start: 'Do this part on a phone, standing up, with one thumb.',
-        enough: 'At least one finding came from the device or the keyboard rather than from the laptop screen.' },
-      { expect: 'Every finding labelled a defect or a request, and the list ordered by harm to the person.',
+        start: 'With a working build, do this part on a phone, standing up, with one thumb. Without one, write the device and keyboard checks still owed, so nobody reads the review as complete.',
+        enough: 'Working build: at least one finding came from the device or the keyboard. Paper or supplied case: the checks still owed are written down.' },
+      { expect: 'Every finding labelled defect, missing requirement, change request or question, and the list ordered by harm to the person.',
         fields: ['labelled-findings', 'prioritised'],
         terms: [
-          { term: 'Defect', meaning: 'The build contradicts something agreed: a criterion, a specification, a decision record. It can be quoted.' },
-          { term: 'Request', meaning: 'Something you would now prefer. It is legitimate and it is not a defect, and labelling it honestly is what keeps your defects credible.' },
+          { term: 'Defect', meaning: 'The build contradicts something agreed (a criterion, a specification, a decision record) or breaks the team’s agreed baseline, such as its accessibility standard, even where no story criterion mentions it. It can be quoted.' },
+          { term: 'Missing requirement', meaning: 'A case nobody specified, found during review. It goes into triage with a proposed criterion rather than being called a preference or left to whoever meets it.' },
+          { term: 'Request', meaning: 'A change of mind or a new idea. It is legitimate, it is prioritised like other work, and it can be declined with a reason. Labelling it honestly keeps your defects credible.' },
         ],
         sorter: {
-          intro: 'Six findings from a made up design QA on a tool-library build. For each one, decide what it is.',
+          intro: 'Seven findings from a made up design QA on a tool-library build, whose team has agreed WCAG 2.2 AA as its baseline. For each one, decide what it is.',
           options: ['a defect', 'a request', 'not a finding at all'],
           items: [
             { id: 'announce-second', text: 'The expiry timer announces every second. The criteria say it is announced at appearance and at expiry only.', answer: 'a defect',
@@ -1182,12 +1262,18 @@ export const guided14: Record<string, Guided> = {
                 'a request': 'An unreachable specified state is a fault.',
                 'not a finding at all': 'It is the finding most likely to be mistaken for a slow connection by everybody who meets it.',
               } },
+            { id: 'keyboard-no-criterion', text: 'The date picker cannot be operated from a keyboard. No acceptance criterion for this story mentions the keyboard.', answer: 'a defect',
+              feedback: {
+                'a defect': 'No story criterion covers it, and it still fails the baseline the team agreed (WCAG 2.2 success criterion 2.1.1, Keyboard). It goes into triage as a defect, near the top, and the missing criterion is logged beside it.',
+                'a request': 'Calling it a request because no old criterion names it is exactly how exclusion survives review. It breaks an agreed baseline, which makes it a fault rather than a preference.',
+                'not a finding at all': 'People who cannot use a pointer cannot choose a date at all. That is among the most serious things on this list.',
+              } },
           ],
           then: 'Now label your own findings and order them by what each one does to a person.',
-          pattern: 'The two that damage your credibility are opposite. A request reported as a defect makes the whole list look like preference; a real defect buried under eleven cosmetic ones does not get read at all.',
+          pattern: 'The two that damage your credibility are opposite. A request reported as a defect makes the whole list look like preference; a real defect buried under eleven cosmetic ones does not get read at all. And a missing criterion is a gap in the criteria, not permission to call an exclusion a preference.',
         },
         start: 'Label everything before ordering anything, and order by harm rather than by how much it bothers you.',
-        enough: 'Every defect could be defended by quoting something agreed.' },
+        enough: 'Every defect quotes something agreed or the baseline it breaks, and every request has a reason.' },
       { expect: 'Each item written so somebody could act on it without a conversation.',
         fields: ['actionable', 'improvement-made'],
         terms: [
@@ -1201,34 +1287,44 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'Is design QA about checking the visual details?',
         options: [
-          { label: 'Spacing matters and is the smallest part. Whether the states exist, the failures behave and the keyboard works is what nobody sees in a screenshot.', correct: true, feedback: 'A review of the default screen produces a list of small visual findings that reads as fussy. Twenty minutes of forcing states usually produces three findings nobody can dismiss.' },
-          { label: 'Yes, since the engineer has already checked the behaviour.', feedback: 'They checked the behaviour they thought about. The states you specified are the ones you know to trigger.' },
-          { label: 'Mostly, with behaviour checked by testing.', feedback: 'Testing checks what the criteria say, which is why the criteria had to include the states and the announcements.' },
+          { label: 'Partly: spacing is the smallest part; states, failures and keyboard use matter more.', correct: true, feedback: 'Whether the states exist, the failures behave and the keyboard works is what nobody sees in a screenshot. A review of the default screen produces a list of small visual findings that reads as fussy; twenty minutes of forcing states often produces findings nobody can dismiss.', was: ['Spacing matters and is the smallest part. Whether the states exist, the failures behave and the keyboard works is what nobody sees in a screenshot.'] },
+          { label: 'Mainly, yes, since the engineer has already checked how the behaviour works.', feedback: 'They checked the behaviour they thought about. The states you specified are the ones you know to trigger.', was: ['Yes, since the engineer has already checked the behaviour.'] },
+          { label: 'Mostly, because testing will catch any behaviour that does not work.', feedback: 'Testing checks what the criteria say, which is why the criteria had to include the states and the announcements.', was: ['Mostly, with behaviour checked by testing.'] },
         ],
-        repair: 'Trigger every state in step 2 including the failures, and record what you find. Note the change in step 5.',
+        repair: 'Trigger or walk every state in step 2 including the failures, and record what you find. Note the change in step 5.',
         recheck: 'At least one finding came from a state that is not the default screen.',
       },
       {
-        question: 'You have fourteen findings, eleven of them small spacing differences. How should you send them?',
+        question: 'You have fourteen findings: three block or exclude people, and eleven are small spacing differences from the specification. How should you send them?',
         options: [
-          { label: 'Ordered by harm, with the three that exclude or block people at the top and the cosmetic ones below, labelled.', correct: true, feedback: 'A list that opens with four pixels gets read as fussiness, and the serious items below it are never reached. The same findings, ordered by harm, read as useful.' },
-          { label: 'All together, since they are all real findings.', feedback: 'They are, and the order decides whether the list is acted on. Harm is the ordering that works.' },
-          { label: 'Drop the cosmetic ones to keep the list credible.', feedback: 'They are real and worth fixing eventually. Ordering, not deletion, is the answer.' },
+          { label: 'Ordered by harm: the three that block people first, the spacing ones below.', correct: true, feedback: 'A list that opens with four pixels gets read as fussiness, and the serious items below it may never be reached. The same findings, ordered by harm and labelled, read as useful.', was: ['Ordered by harm, with the three that exclude or block people at the top and the cosmetic ones below, labelled.'] },
+          { label: 'All together in one list, since every one of them is a real finding.', feedback: 'They are, and the order decides whether the list is acted on. Harm is the ordering that works.', was: ['All together, since they are all real findings.'] },
+          { label: 'Without the cosmetic ones, so the serious list stays credible.', feedback: 'They are real and worth fixing eventually. Ordering, not deletion, is the answer.', was: ['Drop the cosmetic ones to keep the list credible.'] },
         ],
         repair: 'Reorder your list in step 4 by harm to the person, and record the change in step 5.',
-        recheck: 'The first three items are the ones that block or exclude somebody.',
+        recheck: 'The first items are the ones that block or exclude somebody.',
       },
       {
-        question: 'You would now prefer different wording on the empty state. Is that a defect?',
+        question: 'In the practice tracker, TL-05 is wording the designer now prefers, and TL-02 is a keyboard failure no story criterion mentions. How should they be labelled?',
         options: [
-          { label: 'No. The built wording is what was agreed, so it is a request, and labelling it honestly is what keeps your defects credible.', correct: true, feedback: 'A request reported as a defect makes the whole list look like preference, including the criteria failures. The label costs you nothing and protects the rest.' },
-          { label: 'Yes, since the wording is worse than it should be.', feedback: 'Worse than you would now write is not the same as contradicting anything agreed.' },
-          { label: 'Yes, if the original wording was never properly reviewed.', feedback: 'Then the request is to review the wording, which is still a request.' },
+          { label: 'TL-05 a change request; TL-02 a defect, because it breaks the agreed baseline.', correct: true, feedback: 'The agreed wording contradicts nothing, so TL-05 is a request that can be declined with a reason. TL-02 fails WCAG 2.2 success criterion 2.1.1, which the team agreed as its baseline, so it stays actionable without an old criterion; the missing criterion is logged too.', was: ['No. The built wording is what was agreed, so it is a request, and labelling it honestly is what keeps your defects credible.'] },
+          { label: 'Both defects, since each one leaves the screen worse than it ought to be.', feedback: 'Worse than you would now write is not the same as contradicting anything agreed. TL-05 is a preference; only TL-02 breaks something agreed.', was: ['Yes, since the wording is worse than it should be.'] },
+          { label: 'Both change requests, since neither contradicts a criterion written for this story.', feedback: 'That rule would turn an accessibility failure into a preference. TL-02 breaks the team’s agreed baseline, which makes it a defect even with no story criterion.', was: ['Yes, if the original wording was never properly reviewed.'] },
         ],
-        repair: 'Label every finding in step 4 and move anything that contradicts nothing into the requests. Record the change in step 5.',
-        recheck: 'Every defect on your list quotes something agreed.',
+        repair: 'Label every finding in step 4 as defect, missing requirement, change request or question; check anything without a story criterion against the agreed baseline before calling it a request. Record the change in step 5.',
+        recheck: 'Every defect quotes a criterion or the baseline it breaks, and every request has a reason.',
       },
     ],
+    material: practiceTracker,
+    transfer: {
+      scenario: 'Made-up case: you review a council’s new bulky-waste collection booking page, built from your criteria; the council works to WCAG 2.2 AA. Findings: the confirmation email has the wrong date format; the postcode field rejects postcodes typed with a space; the page has no heading structure, so a screen reader user cannot jump to the form, and no criterion mentioned headings; and you now think the photo of a sofa is unnecessary.',
+      prompt: 'Label each finding and order them by harm, explaining the label you gave the heading problem.',
+      anchors: {
+        weak: 'Calls the heading problem a request because no criterion mentions it, or orders the list by how irritating each item is.',
+        adequate: 'Postcode rejection and missing headings near the top as defects (the heading failure breaks an accessibility baseline even without a criterion), date format as a low defect, the photo as a change request.',
+        strong: 'As adequate, and logs the missing heading criterion for next time, says whether the date format contradicts a specification or is a question, and notes the photo can be kept with a reason.',
+      },
+    },
     saveRoute: {
       auto: 'Your criterion results, state checks, device findings and the labelled list save as you type, on this device first and then online.',
       external: 'Screenshots and recordings stay in your own folder; note their file names beside the findings they support.',
@@ -1241,21 +1337,21 @@ export const guided14: Record<string, Guided> = {
     worksheet: [
       { id: 'three-parts', title: 'Steps, observed, expected', intro: 'One defect per report. One at a time.', fields: [
         ...[1, 2, 3].map((n) => ({ id: `report-${n}`, label: `Report ${n} · the steps, what happened, and what should have happened`, kind: 'long' as const,
-          ...(n === 1 ? { hint: 'Numbered steps somebody could follow without knowing anything about the design.', example: 'Example (made up): 1. Open the tool page on a phone at 360 pixels. 2. Choose a tool whose title runs to three lines. 3. Throttle to a slow connection and reload. Observed: the price overlaps the button while the image loads. Expected: the layout reserves the image space, per the Module 8 loading specification.' } : {}) })),
+          ...(n === 1 ? { hint: 'Numbered steps somebody could follow without knowing anything about the design. Take defects from your own QA list, or, on the supplied route, from tracker entries TL-01, TL-02, TL-07 and TL-08 in the source notes, labelled as practice.', example: 'Example (made up): 1. Open the tool page on a phone at 360 pixels. 2. Choose a tool whose title runs to three lines. 3. Throttle to a slow connection and reload. Observed: the price overlaps the button while the image loads. Expected: the layout reserves the image space, per the Module 8 loading specification.' } : {}) })),
       ] },
       { id: 'conditions', title: 'The conditions', fields: [
         { id: 'conditions-each', label: 'For each report: device, browser, width, data used and connection', kind: 'long' },
         { id: 'state-conditions', label: 'Anything about the account or the state that matters', kind: 'short', hint: 'Signed in or not, first visit or returning, a booking already held. These are the conditions people forget.' },
       ] },
       { id: 'source', title: 'What it contradicts', fields: [
-        { id: 'quoted-source', label: 'For each report: the criterion or specification quoted', kind: 'long' },
-        { id: 'no-source', label: 'Any report with nothing to quote, marked as a request instead', kind: 'short' },
+        { id: 'quoted-source', label: 'For each report: the criterion, specification or agreed baseline quoted', kind: 'long' },
+        { id: 'no-source', label: 'Any report with no story criterion to quote: the baseline it breaks, or its new label (missing requirement, change request or question)', kind: 'short', hint: 'No old criterion does not make a finding a preference. An accessibility failure against the team’s agreed standard is still a defect; a case nobody specified is a missing requirement for triage; only a change of mind is a request.' },
       ] },
       { id: 'severity', title: 'Severity, in terms of the person', fields: [
         { id: 'severity-each', label: 'For each: blocked, at risk of losing something, slowed, or cosmetic', kind: 'long', hint: 'Rate what happens to the person. Your own frustration is not a severity level.' },
       ] },
       { id: 'reproduce', title: 'Can somebody else reproduce it?', fields: [
-        { id: 'reproduction-attempt', label: 'Who tried, and whether each reproduced on the first attempt', kind: 'long', hint: 'If nobody is available, leave the reports a day and reproduce them yourself using only what you wrote.' },
+        { id: 'reproduction-attempt', label: 'Who tried (a role, not a name), and whether each reproduced on the first attempt', kind: 'long', sensitive: true, hint: 'If nobody is available, leave the reports a day and reproduce them yourself using only what you wrote, and label it a solo check. Supplied route: a made-up defect cannot be reproduced, so a reader (or you, a day later) lists every step or condition still missing; label it a desk check.' },
         { id: 'missing-conditions', label: 'What was missing from any report that did not reproduce', kind: 'long' },
         improvementMade,
       ] },
@@ -1291,11 +1387,11 @@ export const guided14: Record<string, Guided> = {
         },
         start: 'Write down your own situation, item by item, even the parts that feel too ordinary to mention.',
         enough: 'Somebody with a different phone and a different account could set up your conditions exactly.' },
-      { expect: 'The criterion or specification quoted on each report, with anything unquotable marked as a request.',
+      { expect: 'The criterion, specification or agreed baseline quoted on each report, and anything with no story criterion given its honest label.',
         fields: ['quoted-source', 'no-source'],
         terms: [
           { term: 'Quoting the source', meaning: 'Naming what the behaviour contradicts. It turns a disagreement into a comparison, and it takes the argument out of the report.' },
-          { term: 'Nothing to quote', meaning: 'A sign it is a request rather than a defect. It may still be worth raising, under a different label.' },
+          { term: 'No story criterion to quote', meaning: 'Not automatically a request. Check the team’s agreed baseline first: an accessibility failure against it is still a defect. A case nobody specified is a missing requirement; only a change of mind is a request.' },
         ],
         demo: {
           scenario: 'Made-up example. Reporting a tool-library defect, and reporting a disagreement as one.',
@@ -1306,12 +1402,12 @@ export const guided14: Record<string, Guided> = {
             { label: 'What filing it as a defect would have cost', text: 'The two real defects in the same list were criteria failures. A preference sitting beside them invites the reader to treat all three the same way.' },
             { label: 'What I did', text: 'Moved it to the requests, said so plainly, and left the two defects with their criteria quoted. Both were fixed that week.' },
           ],
-          wrongTurn: 'The wrong turn is filing a preference as a defect, because it is specific and actionable and looks exactly like one. What it lacks is something to quote, and looking for that is the whole test.',
-          tradeoff: 'Moving it to requests means it goes behind other work and may never be done, which is the honest consequence of it being a preference.',
+          wrongTurn: 'The wrong turn is filing a preference as a defect, because it is specific and actionable and looks exactly like one. What it lacks is anything agreed to quote, criterion or baseline, and looking for that is the first test.',
+          tradeoff: 'Moving it to requests means it goes behind other work and may be declined, which is the honest consequence of it being a preference.',
           uncertainty: 'Still unknown: whether the new wording is actually better. Nobody has tried either version with anybody, which is a reason to raise it rather than to assert it.',
         },
-        start: 'For each report, find the sentence it contradicts before writing anything about severity.',
-        enough: 'Every report either quotes something or is relabelled.' },
+        start: 'For each report, find the sentence or baseline it contradicts before writing anything about severity.',
+        enough: 'Every report quotes a criterion, specification or baseline, or carries an honest new label.' },
       { expect: 'A severity for each report stated in terms of what happens to the person.',
         fields: ['severity-each'],
         terms: [
@@ -1377,19 +1473,19 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'You have a screenshot that shows the problem clearly. Is that a report?',
         options: [
-          { label: 'No. It shows the symptom on one screen at one moment, and everything that caused it is outside the frame.', correct: true, feedback: 'The width, the data, the connection and the account state are what produce it. Without them it is an invitation to a conversation rather than something anyone can fix.' },
-          { label: 'Yes, if the problem is visual.', feedback: 'Visual problems have conditions too: a long title, a late image, a narrow screen. The picture shows none of them.' },
-          { label: 'Yes, with a sentence of explanation.', feedback: 'A sentence rarely contains the width, the throttle profile and the data used, which are what make it reproducible.' },
+          { label: 'Not yet: it shows the symptom once, and the conditions that cause it are outside the frame.', correct: true, feedback: 'The width, the data, the connection and the account state are what produce it. Without them it is an invitation to a conversation rather than something anyone can fix.', was: ['No. It shows the symptom on one screen at one moment, and everything that caused it is outside the frame.'] },
+          { label: 'It is, when the problem is purely visual and anybody looking can see it in the picture.', feedback: 'Visual problems have conditions too: a long title, a late image, a narrow screen. The picture shows none of them.', was: ['Yes, if the problem is visual.'] },
+          { label: 'It is, once a clear sentence of explanation is added underneath the screenshot.', feedback: 'A sentence rarely contains the width, the throttle profile and the data used, which are what make it reproducible.', was: ['Yes, with a sentence of explanation.'] },
         ],
         repair: 'Add the full conditions to each report in step 2, including your account state. Record the change in step 5.',
         recheck: 'Somebody with a different device could set up your conditions exactly.',
       },
       {
-        question: 'You have three related layout problems on one screen. How many reports?',
+        question: 'You find three different layout problems on one screen, and you do not know whether they share a cause. How many reports?',
         options: [
-          { label: 'Three. Combined reports get half fixed, and the half that is left looks like it was addressed.', correct: true, feedback: 'One defect per report means each can be reproduced, prioritised and closed independently. A report with three things in it closes when one is done.' },
-          { label: 'One, since they are all on the same screen and have the same cause.', feedback: 'If they genuinely have one cause, say so in three reports and link them. Same screen is not the same as same cause.' },
-          { label: 'One, to avoid flooding the list.', feedback: 'A short list of unfixable reports is worse than a longer list of fixable ones.' },
+          { label: 'Three, linked, since a combined report tends to get closed when one part is fixed.', correct: true, feedback: 'One defect per report means each can be reproduced, prioritised and closed independently. If they turn out to share a cause, the links show it; a report with three things in it closes when one is done.', was: ['Three. Combined reports get half fixed, and the half that is left looks like it was addressed.'] },
+          { label: 'One, since they sit on the same screen and probably come from the same cause.', feedback: 'Same screen is not the same as same cause. If they genuinely have one cause, say so in three linked reports.', was: ['One, since they are all on the same screen and have the same cause.'] },
+          { label: 'One, so the team’s list is not flooded with three tickets about one screen.', feedback: 'A short list of reports that cannot be closed cleanly is worse than a longer list of fixable ones.', was: ['One, to avoid flooding the list.'] },
         ],
         repair: 'Split any report in step 1 that contains more than one defect. Record the change in step 5.',
         recheck: 'Each report describes exactly one thing going wrong.',
@@ -1397,14 +1493,24 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'A report of yours could not be reproduced. What should you do?',
         options: [
-          { label: 'Find the condition you left out and add it, rather than explaining what you meant.', correct: true, feedback: 'The missing condition is usually something about your own situation that felt too ordinary to write: the account state, the connection, the particular data. An explanation fixes this report; the condition fixes the next ten.' },
-          { label: 'Reproduce it yourself and send a recording.', feedback: 'Helpful, and it still does not tell them how to get there. The recording will show the result of conditions you have not named.' },
-          { label: 'Accept that some defects are intermittent.', feedback: 'Some are, and most unreproducible reports are missing a condition rather than being intermittent.' },
+          { label: 'Find the condition you left out and add it, rather than explaining what you meant.', correct: true, feedback: 'The missing condition is often something about your own situation that felt too ordinary to write: the account state, the connection, the particular data. An explanation fixes this report; the condition fixes the next ten.' },
+          { label: 'Reproduce it again yourself and send a screen recording of it happening.', feedback: 'Helpful, and it still does not tell them how to get there. The recording will show the result of conditions you have not named.', was: ['Reproduce it yourself and send a recording.'] },
+          { label: 'Mark it as intermittent, since some defects simply do not appear every time.', feedback: 'Some are intermittent, and most unreproducible reports are missing a condition instead.', was: ['Accept that some defects are intermittent.'] },
         ],
         repair: 'Add the missing condition to that report in step 5 and have it tried again. Record the change.',
-        recheck: 'All three reports reproduce from what is written.',
+        recheck: 'All three reports reproduce from what is written, or, on the supplied route, a desk check finds no missing step or condition.',
       },
     ],
+    material: practiceTracker,
+    transfer: {
+      scenario: 'Made-up case: on a theatre’s ticket site, you notice that choosing the wheelchair-space seat and then going back to change the date silently drops the wheelchair space from the basket. It happened on your phone over home wi-fi while signed in, with a saved card; you have not tried a laptop. There is no acceptance criterion about the basket; the team’s agreed baseline says nothing a person has chosen may be removed without telling them.',
+      prompt: 'Write the report’s steps, observed and expected result, conditions and severity, and explain why it is a defect rather than a request.',
+      anchors: {
+        weak: 'A one-line description or a screenshot note, with no conditions or expected result, or labelled a request because no criterion mentions the basket.',
+        adequate: 'Numbered steps from a reachable state, observed versus expected (the space stays in the basket), the phone, connection and signed-in state, severity at risk of losing a booked space, and the baseline it breaks quoted as the source.',
+        strong: 'As adequate, and states what has not been checked (other devices, signed out), proposes the missing basket criterion, and keeps it to one defect per report.',
+      },
+    },
     saveRoute: {
       auto: 'Your three reports, the conditions, the quoted sources and the reproduction results save as you type, on this device first and then online.',
       external: 'Screenshots and recordings stay in your own folder. Where your team uses a tracker, the reports go there too; these are your working copies.',
@@ -1416,11 +1522,11 @@ export const guided14: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'criteria', title: 'How the decision is actually made', fields: [
-        { id: 'decider-accountable', label: 'What the person deciding is accountable for', kind: 'long', hint: 'Not what they care about in general. What somebody asks them about, and what they have to report.' },
+        { id: 'decider-accountable', label: 'What the person deciding is accountable for (their role, not their name)', kind: 'long', sensitive: true, hint: 'Not what they care about in general. What somebody asks them about, and what they have to report. Describe the role; leave names and internal figures in your own notes.' },
         { id: 'how-you-know', label: 'How you found out, or that you are guessing', kind: 'short', hint: 'Asking is allowed and usually quick. A guess is a complete answer if it is labelled as one.' },
       ] },
       { id: 'translate', title: 'The case in their terms', fields: [
-        { id: 'observed', label: 'What you observed, stated plainly', kind: 'long', hint: 'Including how many people. Three participants is three participants.' },
+        { id: 'observed', label: 'What you observed, stated plainly as a de-identified summary', kind: 'long', sensitive: true, hint: 'Including how many people. Three participants is three participants. Summarise what people did without names or identifying details; raw notes stay in your own private file with a deletion date. On a practice route, say the material was supplied.' },
         { id: 'inferred', label: 'What you infer from it, kept separate', kind: 'long' },
         { id: 'connected', label: 'How the inference connects to what they are accountable for', kind: 'long', example: 'Example (made up): duplicate payments generate refunds and support contacts, which is the queue she reports on every month.' },
         { id: 'cost', label: 'What the change would cost, as far as you know', kind: 'short' },
@@ -1435,7 +1541,7 @@ export const guided14: Record<string, Guided> = {
       ] },
       { id: 'make', title: 'Make the case', fields: [
         { id: 'delivered', label: 'How you delivered it, or that it is prepared and unmade', kind: 'short', hint: 'Unmade is honest. Write what you expect the response to be, so you can compare later.' },
-        { id: 'what-moved', label: 'Which part of the argument actually moved the decision, or what you expect to', kind: 'long' },
+        { id: 'what-moved', label: 'Which part of the argument actually moved the decision, or what you expect to', kind: 'long', sensitive: true, hint: 'Summarise the response in your words rather than quoting anybody.' },
         improvementMade,
       ] },
     ],
@@ -1555,19 +1661,19 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'Does good work speak for itself?',
         options: [
-          { label: 'It speaks to people who already share your standards. Everyone else needs the connection to what they are accountable for.', correct: true, feedback: 'Making that connection is part of the job rather than a compromise. The same evidence, expressed in the terms the decision is made in, is not spin.' },
-          { label: 'Yes, if it is genuinely good.', feedback: 'Quality is visible to people who can see it. A decision about time is made against other things competing for the same time.' },
-          { label: 'Mostly, though it helps to explain it well.', feedback: 'Explaining it well in design terms is what produces agreement without a decision.' },
+          { label: 'Only to people who share your standards; others need its link to what they answer for.', correct: true, feedback: 'Making that connection is part of the job rather than a compromise. The same evidence, expressed in the terms the decision is made in, is not spin.', was: ['It speaks to people who already share your standards. Everyone else needs the connection to what they are accountable for.'] },
+          { label: 'It does, provided the work is genuinely good and the people deciding can see it.', feedback: 'Quality is visible to people who can see it. A decision about time is made against other things competing for the same time.', was: ['Yes, if it is genuinely good.'] },
+          { label: 'Mostly, though it helps to explain the design reasoning well when you present it.', feedback: 'Explaining it well in design terms is what tends to produce agreement without a decision.', was: ['Mostly, though it helps to explain it well.'] },
         ],
         repair: 'Write the connection to the decider’s accountability in step 2, using their own figure if you can. Record the change in step 5.',
         recheck: 'Your case names something the decider is answerable for.',
       },
       {
-        question: 'You watched three people and two had the problem. Can you say around 30 per cent of people are affected?',
+        question: 'You watched three people: two could not tell their place was held, and one said she would have paid again. Can your case say around 30 per cent of bookers probably pay twice?',
         options: [
-          { label: 'No. Three accounts cannot produce a rate, and an invented number costs you every argument after this one.', correct: true, feedback: 'It is the most persuasive sentence available and the only one that does lasting damage. Say what you observed, say the sample, and name the data that would settle it.' },
-          { label: 'Yes, as an estimate clearly labelled as such.', feedback: 'Labelled or not, the number is the part that gets repeated, and it will not survive contact with real data.' },
-          { label: 'Yes, since two out of three is literally what happened.', feedback: 'Two of three is what happened. Expressed as a percentage it reads as a measurement of everybody.' },
+          { label: 'Not honestly: three accounts cannot give a rate, and an invented one costs later trust.', correct: true, feedback: 'It is the most persuasive sentence available and the one that does lasting damage when the real figure appears. Say what you observed, say the sample, and name the data that would settle it, such as the provider’s payment records.', was: ['No. Three accounts cannot produce a rate, and an invented number costs you every argument after this one.'] },
+          { label: 'It can, as long as the number is clearly labelled as a rough estimate from the sessions.', feedback: 'Labelled or not, the number is the part that gets repeated, and three accounts cannot support it.', was: ['Yes, as an estimate clearly labelled as such.'] },
+          { label: 'It can, since one in three is literally what happened in the sessions.', feedback: 'One of three said so. Expressed as a percentage of bookers it reads as a measurement of everybody, and saying is not the same as paying.', was: ['Yes, since two out of three is literally what happened.'] },
         ],
         repair: 'Remove any rate from your case in step 2 and state the observation with its sample. Record the change in step 5.',
         recheck: 'No number in your case implies more people than you watched.',
@@ -1575,14 +1681,23 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'Why prepare the smaller version before the conversation rather than during it?',
         options: [
-          { label: 'Prepared in advance it is a decision you designed; improvised it is a concession, and usually the wrong half survives.', correct: true, feedback: 'Under pressure you cut whatever is easiest to give up, which is often the accessibility work or the failure paths. Deciding it calmly means the smaller version still delivers the outcome.' },
-          { label: 'It saves time in the meeting.', feedback: 'True and minor. What it saves is the wrong cut.' },
-          { label: 'It shows flexibility, which helps the case.', feedback: 'It can read as a weak opening ask if it is offered too early. The reason to prepare it is what gets cut, not how it looks.' },
+          { label: 'Improvised under pressure, the cut tends to fall on the least finished work, not the least valuable.', correct: true, feedback: 'Under pressure you cut whatever is easiest to give up, which is often the accessibility work or the failure paths. Deciding it calmly, in advance, means the smaller version still delivers the outcome.', was: ['Prepared in advance it is a decision you designed; improvised it is a concession, and usually the wrong half survives.'] },
+          { label: 'It saves time in the meeting, so the decision can be reached before everybody has to leave.', feedback: 'True and minor. What preparing it saves is the wrong cut.', was: ['It saves time in the meeting.'] },
+          { label: 'It shows flexibility, which makes the people deciding more willing to say yes to the full ask.', feedback: 'It can read as a weak opening ask if it is offered too early. The reason to prepare it is what gets cut, not how it looks.', was: ['It shows flexibility, which helps the case.'] },
         ],
         repair: 'Write the smaller version in step 3, with what it does not fix, before making the case. Record the change in step 5.',
         recheck: 'The smaller version still delivers the outcome in your story’s why.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: you want a week to fix the confusing returns page of a small online plant shop. The owner decides by what fills her inbox; she says about a third of her emails are returns questions. You watched four customers try to start a return: three could not find the returns form. A full redesign would take three weeks.',
+      prompt: 'Write the two or three sentences of your case to the owner, and explain which part connects to how she decides and where your evidence stops.',
+      anchors: {
+        weak: 'Argues in design terms (the page lacks hierarchy), or turns three of four into a percentage of all customers.',
+        adequate: 'Keeps the observation as three of four people watched, infers it may drive the returns emails she mentioned, connects that to her inbox, and offers the one-week fix rather than the three-week redesign.',
+        strong: 'As adequate, and states the honest weakness (four people cannot say how many emails the fix would remove) and what would tell her more, such as counting returns emails before and after the fix as a signal to look at, not proof.',
+      },
+    },
     saveRoute: {
       auto: 'Your account of the decision, the translated case, the smaller version and the weakness save as you type, on this device first and then online.',
       external: 'Nothing about anybody’s accountability or the support data belongs outside your own notes. Keep names out of this worksheet.',
@@ -1595,12 +1710,12 @@ export const guided14: Record<string, Guided> = {
     worksheet: [
       { id: 'prepare-critique', title: 'Prepare the critique', fields: [
         { id: 'critique-question', label: 'The one question you need answered', kind: 'short', hint: 'One. A meeting with three questions answers none of them properly.', example: 'Example (made up): does this screen communicate that a place is secured, and for how long?' },
-        { id: 'critique-sent', label: 'What you sent in advance, and to whom', kind: 'short', hint: 'No colleagues: run it with two people who will look at a screen for ten minutes, and label it a rehearsal.' },
+        { id: 'critique-sent', label: 'What you sent in advance, and to whom (roles, not names)', kind: 'short', hint: 'No colleagues: run it with two people who will look at a screen for ten minutes, and label it a rehearsal. With nobody at all, run both meetings against your own work a day apart and label them solo rehearsals.' },
         { id: 'no-decisions', label: 'How you said that no decisions would be taken', kind: 'short' },
       ] },
       { id: 'run-critique', title: 'Run it', fields: [
-        { id: 'problems-raised', label: 'Every problem raised, including the ones you disagree with', kind: 'long' },
-        { id: 'off-topic', label: 'Off-topic feedback, and where you sent it instead', kind: 'long', hint: 'A written route rather than a refusal. People noticed something real; it is just not today’s question.' },
+        { id: 'problems-raised', label: 'Every problem raised, including the ones you disagree with, summarised without names', kind: 'long', sensitive: true, hint: 'Write the problem, not who raised it. Keep any verbatim notes in your own private file.' },
+        { id: 'off-topic', label: 'Off-topic feedback, and where you sent it instead', kind: 'long', sensitive: true, hint: 'A written route rather than a refusal. People noticed something real; it is just not today’s question.' },
       ] },
       { id: 'review', title: 'The review', fields: [
         { id: 'review-presented', label: 'What you presented, against which criteria and evidence', kind: 'long' },
@@ -1733,9 +1848,9 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'Should everybody give feedback on everything in a critique?',
         options: [
-          { label: 'No. Broad feedback on a specific question wastes the room’s time and yours, and the thing you needed gets two minutes at the end.', correct: true, feedback: 'An open question hands the agenda to whatever is most visible on the screen. Ask for what you need, and give the other observations a written route so they are not lost.' },
-          { label: 'Yes, since people notice things you did not think to ask about.', feedback: 'They do, and that is what the written route is for. Twenty-five minutes of it in the room costs you the answer you came for.' },
-          { label: 'Yes, if the work is early enough.', feedback: 'Early work benefits most from a narrow question, because there is more that could change and less to defend.' },
+          { label: 'Better to ask one question and route the rest, or your question gets two minutes at the end.', correct: true, feedback: 'An open question hands the agenda to whatever is most visible on the screen. Ask for what you need, and give the other observations a written route so they are not lost.', was: ['No. Broad feedback on a specific question wastes the room’s time and yours, and the thing you needed gets two minutes at the end.'] },
+          { label: 'It should be open, since people notice things you would never have thought to ask about.', feedback: 'They do, and that is what the written route is for. Twenty-five minutes of it in the room costs you the answer you came for.', was: ['Yes, since people notice things you did not think to ask about.'] },
+          { label: 'It should be open while the work is early, and narrowed only once the design is settled.', feedback: 'Early work benefits most from a narrow question, because there is more that could change and less to defend.', was: ['Yes, if the work is early enough.'] },
         ],
         repair: 'Reduce your critique to one question in step 1, and set up a written route for everything else. Record the change in step 5.',
         recheck: 'Your critique question is a single sentence.',
@@ -1743,9 +1858,9 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'A decision gets taken during your critique. What does that cost?',
         options: [
-          { label: 'People stop raising problems, because raising one now risks committing to something.', correct: true, feedback: 'Critique works because nothing is at stake. Once decisions can happen, the room becomes careful, and careful rooms produce approval rather than problems.' },
-          { label: 'Nothing, if the decision was a good one.', feedback: 'The decision may be fine. What changes is what people will say in the next critique.' },
-          { label: 'It makes the later review redundant.', feedback: 'That would be a saving. The cost lands on the honesty of every critique afterwards.' },
+          { label: 'People get careful, since raising a problem now risks committing to something.', correct: true, feedback: 'Critique works because nothing is at stake. Once decisions can happen, the room becomes careful, and careful rooms produce approval rather than problems.', was: ['People stop raising problems, because raising one now risks committing to something.'] },
+          { label: 'Nothing at all, provided the decision that was taken was a good one.', feedback: 'The decision may be fine. What changes is what people will say in the next critique.', was: ['Nothing, if the decision was a good one.'] },
+          { label: 'Only that the later review becomes redundant and can be cancelled.', feedback: 'That would be a saving. The cost lands on the honesty of every critique afterwards.', was: ['It makes the later review redundant.'] },
         ],
         repair: 'Say at the start of the critique in step 1 that no decisions will be taken, and record how you said it. Note the change in step 5.',
         recheck: 'Your critique record is a problem list with no decisions in it.',
@@ -1753,14 +1868,23 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'Your review produced agreement and no written decisions. What went wrong?',
         options: [
-          { label: 'Nothing was decided. Agreement without a written decision is re-made differently by whoever remembers it least accurately.', correct: true, feedback: 'Naming the open items in advance and writing decisions as they are made is what turns a meeting into a record. Reading them back before people leave is where you find out that two people heard different things.' },
-          { label: 'The work was not contentious enough to need decisions.', feedback: 'Then the open items were not named. Every review should have things that need settling.' },
-          { label: 'The record can be written up afterwards.', feedback: 'Written afterwards it is a reconstruction, and the disagreement about what was agreed arrives later.' },
+          { label: 'Nothing was actually decided; unwritten agreement gets remembered differently.', correct: true, feedback: 'Naming the open items in advance and writing decisions as they are made is what turns a meeting into a record. A decision to keep the work as it is counts, once written. Reading them back before people leave is where you find out that two people heard different things.', was: ['Nothing was decided. Agreement without a written decision is re-made differently by whoever remembers it least accurately.'] },
+          { label: 'Nothing; the work was simply not contentious enough to need any decisions.', feedback: 'Then the open items were not named. A review should have things that need settling, even if the answer is to keep them.', was: ['The work was not contentious enough to need decisions.'] },
+          { label: 'Nothing that matters, because the record can be written up from memory afterwards.', feedback: 'Written afterwards it is a reconstruction, and the disagreement about what was agreed arrives later.', was: ['The record can be written up afterwards.'] },
         ],
         repair: 'Name the open items and write the decisions as they happen in step 3, then read them back in step 4. Record the change in step 5.',
-        recheck: 'Every open item in the review has a decision or an explicit deferral.',
+        recheck: 'Every open item in the review has a decision, a justified decision to keep it, or an explicit deferral.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: you are about to show the new members’ noticeboard for a gardening allotment society to three committee members. You need to know one thing this week: whether the plot-swap section makes it obvious how to offer a plot. Last time, the meeting spent twenty minutes on the society’s logo colours.',
+      prompt: 'Decide whether this should be a critique or a review, write the one question you would send ahead, and explain why that format.',
+      anchors: {
+        weak: 'Asks “any thoughts?” or mixes approval with feedback, with no stated question and no plan for off-topic comments such as the logo.',
+        adequate: 'Chooses a critique (the work is still moving and the need is problems, not approval), writes one answerable question about offering a plot, and says no decisions will be taken.',
+        strong: 'As adequate, and gives the logo a written route rather than refusing it, and says when a later review with criteria and a decision record would follow.',
+      },
+    },
     saveRoute: {
       auto: 'Your question, the problems raised, the decisions and the comparison save as you type, on this device first and then online.',
       external: 'Both records go to the people who were there, the same day. Keep names out of the problem list; it is about the work.',
@@ -1775,7 +1899,7 @@ export const guided14: Record<string, Guided> = {
         { id: 'output-outcome', label: 'The difference between an output and an outcome, in your own words', kind: 'long', example: 'Example (made up): the output is that a held-place message exists. The outcome is that fewer people pay twice.' },
       ] },
       { id: 'scope', title: 'What ships, and what does not', fields: [
-        { id: 'ships', label: 'What ships', kind: 'long' },
+        { id: 'ships', label: 'What ships', kind: 'long', hint: 'Plan the release of your Project 1 design, your Project 2 build, or the feature in the practice tracker. A plan for a release that will not actually happen is a rehearsal and says so.' },
         { id: 'held-back', label: 'What is deliberately held back, and why', kind: 'long' },
         { id: 'partial-sense', label: 'How the partial version makes sense on its own', kind: 'short', hint: 'If it does not, the split is a slice nobody designed rather than a decision.' },
       ] },
@@ -1838,7 +1962,7 @@ export const guided14: Record<string, Guided> = {
             { label: 'What happened three weeks later', text: 'Somebody asked whether it had worked. Support contacts about payments were down, and so was everything else, because it was a quiet month.' },
             { label: 'What I found myself doing', text: 'Looking for evidence that it had helped, in figures collected for other reasons, after the fact. Everything I found was consistent with it having worked and with it having done nothing.' },
             { label: 'What I should have written before shipping', text: 'Three things: the number of support contacts about payment status over four weeks, whether anybody reports a duplicate payment, and three conversations with recent bookers.' },
-            { label: 'Why writing them first changes anything', text: 'Because after the fact, every number is available and the one that supports your work is the one you notice. Naming them in advance is what makes the answer able to be no.' },
+            { label: 'Why writing them first changes anything', text: 'Because after the fact, every number is available and the one that supports your work is the one you notice. Naming them in advance is what lets a signal come back unmoved and be taken seriously: a reason to look again, though not proof either way.' },
           ],
           wrongTurn: 'The wrong turn is deciding what to look at after shipping, because that is when somebody asks. By then everything looks like evidence, and the release produces relief rather than learning.',
           tradeoff: 'Naming signals in advance means committing to a possible no, on work you have just spent two weeks on.',
@@ -1885,19 +2009,20 @@ export const guided14: Record<string, Guided> = {
                 'not evidence at all': 'Worth having as morale and worth keeping out of the release plan, where it will be read as a result.',
               } },
           ],
-          then: 'Now check your own three signals: each should have a place to look, a period, and the possibility of coming back as no.',
+          then: 'Now check your own three signals: each should have a place to look, a period, and the possibility of coming back unmoved.',
           pattern: 'Two failure shapes. A number that moves for many reasons gives you a story whatever happens; an absence of complaints gives you the same answer whether the work helped or harmed. Both feel like evidence three weeks after a release.',
         },
         start: 'For each signal, name the place you would look before naming the thing you would see.',
-        enough: 'Every signal could come back saying the work did not help.' },
-      { expect: 'A stated condition that would make you reverse or change the feature, with who decides and when.',
+        enough: 'Every signal could come back unmoved, and you have said what you would look into if it did.' },
+      { expect: 'A stated condition that would make you reverse, change or investigate the feature, with who decides and when.',
         fields: ['reversal-condition', 'who-when'],
         terms: [
-          { term: 'Reversal condition', meaning: 'What would make you undo or rethink it. Written in advance it is a plan; written afterwards it is a rationalisation.' },
-          { term: 'Who decides', meaning: 'A name and a date. A reversal condition nobody owns is not one.' },
+          { term: 'Reversal condition', meaning: 'What would make you undo, rethink or investigate it. Written in advance it is a plan; written afterwards it is a rationalisation. It is a decision rule, not a finding about cause.' },
+          { term: 'Investigation trigger', meaning: 'A result that sends you to find out more. An unchanged count after an uncontrolled release does not show the design had no effect, and a better count does not show it worked; other things changed in the same weeks.' },
+          { term: 'Who decides', meaning: 'A role and a date. A reversal condition nobody owns is not one.' },
         ],
-        start: 'Finish this sentence: “if, after four weeks, … then the design is not the cause and we …”.',
-        enough: 'The condition could actually be met, and somebody is named.' },
+        start: 'Finish this sentence: “if, after four weeks, … then we will look into … and decide whether to …”.',
+        enough: 'The condition could actually be met, somebody is named, and nothing in it claims to prove what caused the result.' },
       { expect: 'What cannot be measured with how you will ask instead, and a plain statement that this is not a controlled comparison.',
         fields: ['cannot-measure', 'not-controlled', 'improvement-made'],
         terms: [
@@ -1911,9 +2036,9 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'The feature shipped and the numbers look better. Did it work?',
         options: [
-          { label: 'Unknown. Everything moves for many reasons, and without deciding in advance what you would look at, any number that supports the work is the one you notice.', correct: true, feedback: 'A quiet month moves everything at once. Naming the signals before shipping is what makes it possible for the answer to be no.' },
-          { label: 'Probably, since the change was aimed at exactly those numbers.', feedback: 'Aiming at them does not establish that you hit them, and nothing here separates your change from the month.' },
-          { label: 'Yes, unless something else obviously changed.', feedback: 'Something else always changed, and mostly not obviously.' },
+          { label: 'Unknown: nothing here separates the change from everything else that month.', correct: true, feedback: 'A quiet month moves everything at once. Signals named before shipping can at least come back unmoved and prompt a closer look; neither direction proves what caused it.', was: ['Unknown. Everything moves for many reasons, and without deciding in advance what you would look at, any number that supports the work is the one you notice.'] },
+          { label: 'Probably, since the change was aimed at exactly those numbers and they moved.', feedback: 'Aiming at them does not establish that you hit them, and nothing here separates your change from the month.', was: ['Probably, since the change was aimed at exactly those numbers.'] },
+          { label: 'It did, unless something else obviously changed in the same few weeks.', feedback: 'Something else usually changed, and often not obviously.', was: ['Yes, unless something else obviously changed.'] },
         ],
         repair: 'Write your three signals in step 3 with where you would look and over what period, and record the change in step 5.',
         recheck: 'Every signal was decided before shipping.',
@@ -1921,24 +2046,34 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'Your release plan has no reversal condition. What is missing?',
         options: [
-          { label: 'What would make you change or undo it, decided in advance and owned by somebody.', correct: true, feedback: 'Without one, a feature that did not help stays because it exists. Written before shipping it is a plan; written afterwards it is a rationalisation of whatever happened.' },
-          { label: 'Nothing, since you can decide later if there is a problem.', feedback: 'Later, the decision competes with the two weeks already spent, and it usually loses.' },
-          { label: 'A rollback procedure from the engineers.', feedback: 'Useful and technical. The missing part is the condition that would trigger it.' },
+          { label: 'A result that would make you change, undo or investigate it, owned by somebody.', correct: true, feedback: 'Without one, a feature stays because it exists. Written before shipping it is a plan; written afterwards it is a rationalisation of whatever happened. It triggers a decision or a closer look; it does not prove cause.', was: ['What would make you change or undo it, decided in advance and owned by somebody.'] },
+          { label: 'Nothing important, since you can decide later whether there is a problem.', feedback: 'Later, the decision competes with the two weeks already spent, and it usually loses.', was: ['Nothing, since you can decide later if there is a problem.'] },
+          { label: 'A written rollback procedure from the engineers for undoing it.', feedback: 'Useful and technical. The missing part is the condition that would trigger it.', was: ['A rollback procedure from the engineers.'] },
         ],
         repair: 'Write the condition and name who decides in step 4. Record the change in step 5.',
-        recheck: 'The condition names something observable and somebody accountable.',
+        recheck: 'The condition names something observable and somebody accountable, and claims no cause.',
       },
       {
         question: 'You cannot measure whether people feel confident about their booking. Is that a dead end?',
         options: [
-          { label: 'No. Three conversations with recent bookers is legitimate evidence at this scale, and it is not a measurement.', correct: true, feedback: 'The honest plan says which things are counted and which are asked about, and does not let the second sound like the first.' },
-          { label: 'Yes, without analytics there is nothing to say.', feedback: 'Counting support contacts by hand and asking three people are both available and both real.' },
-          { label: 'No, you can infer it from the support contacts.', feedback: 'You can infer something about the people who contacted support. Confidence among everybody else is what the conversations are for.' },
+          { label: 'It is not: three conversations with recent bookers are real evidence, not a measurement.', correct: true, feedback: 'The honest plan says which things are counted and which are asked about, and does not let the second sound like the first.', was: ['No. Three conversations with recent bookers is legitimate evidence at this scale, and it is not a measurement.'] },
+          { label: 'It is, because without an analytics tool there is nothing honest to say about it.', feedback: 'Counting support contacts by hand and asking three people are both available and both real.', was: ['Yes, without analytics there is nothing to say.'] },
+          { label: 'It is not, because confidence can be inferred from the support contacts.', feedback: 'You can infer something about the people who contacted support. Confidence among everybody else is what the conversations are for.', was: ['No, you can infer it from the support contacts.'] },
         ],
         repair: 'Write what you will ask about rather than count in step 5, and add the not-controlled sentence. Record the change.',
         recheck: 'Counted and asked-about signals are separated in your plan.',
       },
     ],
+    material: practiceTracker,
+    transfer: {
+      scenario: 'Made-up case: a community food bank is releasing a new online slot-booking page to replace phone booking. Before release, about forty calls a week are “what time is my slot?”. The new page shows the slot on the confirmation screen. A local radio appeal for donations runs in the same fortnight as the release.',
+      prompt: 'Name one signal you would watch, where and for how long, and what you would do if it did not change, explaining why that result would not prove the page failed.',
+      anchors: {
+        weak: 'Says the page worked if calls fall, or failed if they do not, without naming the radio appeal or anything else that changed.',
+        adequate: 'Names calls about slot times, counted from the phone log over a stated period, and treats no change as a trigger to investigate (ask people, check whether they found the confirmation), not proof of failure.',
+        strong: 'As adequate, and names the radio appeal as a competing explanation, adds a conversation route for what cannot be counted, and says who decides on any reversal and when.',
+      },
+    },
     saveRoute: {
       auto: 'Your scope, the signals, the reversal condition and the limits save as you type, on this device first and then online.',
       external: 'The release plan goes wherever your team keeps such things, before the release rather than after it.',
@@ -1950,7 +2085,7 @@ export const guided14: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'events', title: 'What happened', fields: [
-        { id: 'events-list', label: 'The events of this delivery, without names attached to failures', kind: 'long', hint: 'What happened, not who did it. Names belong on the things that went well.' },
+        { id: 'events-list', label: 'The events of this delivery, without names attached to failures', kind: 'long', sensitive: true, hint: 'What happened, not who did it. Names belong on the things that went well.' },
         { id: 'went-well', label: 'What went well', kind: 'long' },
       ] },
       { id: 'cost', title: 'What each problem cost', fields: [
@@ -2055,7 +2190,7 @@ export const guided14: Record<string, Guided> = {
       { expect: 'What should be different next time if the change works, and how you will count it.',
         fields: ['what-different', 'countable'],
         terms: [
-          { term: 'The check', meaning: 'What you will look at next time to see whether the change helped. Decided now, so the answer can be no.' },
+          { term: 'The check', meaning: 'What you will look at next time to see whether the expected difference appeared. Decided now, so the result can disappoint you; if it does, look at why before declaring the change a failure.' },
           { term: 'Countable', meaning: 'A number you can produce without effort: how many states were invented, how many defects reached QA. It beats an impression every time.' },
         ],
         demo: {
@@ -2065,10 +2200,10 @@ export const guided14: Record<string, Guided> = {
             { label: 'The check I wrote', text: '“Estimation should go more smoothly.” It seemed obviously right and everybody agreed with it.' },
             { label: 'What happened at the next retrospective', text: 'Somebody said it had gone more smoothly and somebody else said it had felt about the same. There was no way to settle it, so the change was recorded as probably helping and quietly dropped.' },
             { label: 'What I should have written', text: 'Count how many states were invented during the build. Last time it was two; the target is zero.' },
-            { label: 'What that would have produced', text: 'A number at the next retrospective, and a clear answer: either the change worked, or it did not and something else is needed. Both are useful and neither is available from smoothly.',
+            { label: 'What that would have produced', text: 'A number at the next retrospective and a clear prompt: zero invented states, keep the change; any, find out why before adding anything. The next story might simply have been harder, so the number starts the conversation rather than ending it. Smoothly offers neither.',
             },
           ],
-          wrongTurn: 'The wrong turn is writing a check that cannot fail, because a smooth-sounding outcome is what everybody wants and nobody can dispute. A check that cannot come back as no does not check anything.',
+          wrongTurn: 'The wrong turn is writing a check that cannot fail, because a smooth-sounding outcome is what everybody wants and nobody can dispute. A check that could never come back unmet does not check anything.',
           tradeoff: 'A countable check is narrower than what you actually care about, and somebody will point out that zero invented states does not mean estimation went well.',
           uncertainty: 'Still unknown: whether invented states are the right thing to count. It is the thing the costliest problem produced, which makes it the best available proxy rather than a measure of the whole.',
         },
@@ -2081,40 +2216,49 @@ export const guided14: Record<string, Guided> = {
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
         start: 'Look up what you committed to last time before writing anything about it.',
-        enough: 'Either the previous change has a verdict, or you have written what next time compares against.' },
+        enough: 'Either the previous change has its observed result and what you will do about it, or you have written what next time compares against.' },
     ],
     checks: [
       {
         question: 'Is the retrospective where the team says what went wrong?',
         options: [
-          { label: 'It is where the team decides what to change. Without a committed change and a check, the same problems are listed again next time in the same words.', correct: true, feedback: 'Listing is the easy half and it feels productive. The output is one change, with an owner, a date and something countable.' },
-          { label: 'Yes, and the changes follow from the discussion.', feedback: 'They follow only if somebody commits to one. Discussion alone produces a list that recurs.' },
-          { label: 'Yes, provided everyone speaks honestly.', feedback: 'Honesty is necessary and not sufficient. An honest list with no change is still a list.' },
+          { label: 'It is where the team decides what to change, with an owner, a date and a check.', correct: true, feedback: 'Listing is the easy half and it feels productive. Without a committed change and a check, the same problems tend to be listed again next time in the same words.', was: ['It is where the team decides what to change. Without a committed change and a check, the same problems are listed again next time in the same words.'] },
+          { label: 'It is, and the right changes tend to follow naturally from a good discussion.', feedback: 'They follow only if somebody commits to one. Discussion alone produces a list that recurs.', was: ['Yes, and the changes follow from the discussion.'] },
+          { label: 'It is, provided everyone in the room speaks honestly about what happened.', feedback: 'Honesty is necessary and not sufficient. An honest list with no change is still a list.', was: ['Yes, provided everyone speaks honestly.'] },
         ],
         repair: 'Commit to exactly one change in step 3, with an owner and a date. Record it in step 5.',
         recheck: 'Your retrospective has one change with a name and a day against it.',
       },
       {
-        question: 'The thing that annoyed you most was a meeting that overran. Should it be your top problem?',
+        question: 'The thing that annoyed you most was a meeting that overran by twenty minutes. Undefined states cost a day of rework and two defects, and annoyed nobody. Which should be your top problem?',
         options: [
-          { label: 'Only if it cost the most. Irritation tracks how often you met a problem, not what it cost.', correct: true, feedback: 'Twenty minutes against a day of rework and two defects is not close. The costly problems are often the ones that annoyed nobody, because their cost landed on somebody else’s week.' },
-          { label: 'Yes, since a recurring irritation wears the team down.', feedback: 'It does, and that is a real cost worth writing down as one rather than ranking by feeling.' },
-          { label: 'Yes, because it is the one everybody agrees about.', feedback: 'Agreement is easiest on the visible problems, which is exactly why costing changes the ranking.' },
+          { label: 'The undefined states: rank by cost, since irritation tracks how often you met it.', correct: true, feedback: 'Twenty minutes against a day of rework and two defects is not close. The costly problems are often the ones that annoyed nobody, because their cost landed on somebody else’s week.', was: ['Only if it cost the most. Irritation tracks how often you met a problem, not what it cost.'] },
+          { label: 'The meeting, since a recurring irritation wears the whole team down over time.', feedback: 'It does, and that is a real cost worth writing down as one rather than ranking by feeling.', was: ['Yes, since a recurring irritation wears the team down.'] },
+          { label: 'The meeting, because it is the problem that everybody in the room agrees about.', feedback: 'Agreement is easiest on the visible problems, which is exactly why costing changes the ranking.', was: ['Yes, because it is the one everybody agrees about.'] },
         ],
         repair: 'Put a cost beside every problem in step 2 before ranking them. Record the change in step 5.',
         recheck: 'Your top two problems have numbers beside them.',
       },
       {
-        question: 'Your committed change is that engineers should ask before changing wording. Will it work?',
+        question: 'You wrote, on your own, that the committed change is “engineers should ask before changing wording”. Will it work?',
         options: [
-          { label: 'Unlikely. It is a change to somebody else’s behaviour, and nobody in the room can commit to it.', correct: true, feedback: 'The version you own is putting the exact wording into the acceptance criteria, so changing it fails a criterion. Changes that alter an artefact you control survive; changes that ask for a habit rarely do.' },
-          { label: 'Yes, if it is agreed in the meeting.', feedback: 'Agreement in a meeting is not a mechanism. Three weeks later, under pressure, the habit returns.' },
-          { label: 'Yes, since it is a reasonable request.', feedback: 'It is entirely reasonable, and reasonableness is not what makes a change stick.' },
+          { label: 'Unlikely: it changes somebody else’s habit, which you cannot commit to for them.', correct: true, feedback: 'The version you own is putting the exact wording into the acceptance criteria, so changing it fails a criterion. Changes that alter an artefact you control tend to survive; changes that ask for a habit rarely do.', was: ['Unlikely. It is a change to somebody else’s behaviour, and nobody in the room can commit to it.'] },
+          { label: 'It will, once it has been agreed out loud at the retrospective meeting.', feedback: 'Agreement in a meeting is not a mechanism. Three weeks later, under pressure, the habit returns.', was: ['Yes, if it is agreed in the meeting.'] },
+          { label: 'It will, since it is a perfectly reasonable request to make of a team.', feedback: 'It is entirely reasonable, and reasonableness is not what makes a change stick.', was: ['Yes, since it is a reasonable request.'] },
         ],
         repair: 'Replace any change aimed at somebody else with one that alters something you own. Record the change in step 5.',
         recheck: 'Your change could be started on Monday without anybody’s agreement.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a volunteer team runs a monthly repair café. In their review of the last three months: the sign-up sheet ran out of rows twice, which everyone found annoying; twice nobody brought the electrical testing kit, so fourteen repairs were turned away; and one volunteer keeps arriving late. The coordinator wants five improvements.',
+      prompt: 'Choose the one change you would commit to, with an owner, a start and a check, and explain why that change rather than the others.',
+      anchors: {
+        weak: 'Picks the most annoying problem, names a person as the problem, or keeps all five improvements with no owner.',
+        adequate: 'Chooses the testing-kit problem because it cost fourteen repairs, commits to one owned, dated change (for example a named kit-carrier on the rota) with a countable check, and leaves out the late volunteer’s name.',
+        strong: 'As adequate, and says the check is a prompt to look again rather than a verdict (fewer electrical visitors could also explain fewer turned away) and what would happen to the other four ideas.',
+      },
+    },
     saveRoute: {
       auto: 'Your events, the costs, the committed change and the check save as you type, on this device first and then online.',
       external: 'The retrospective record goes to whoever was involved. Keep the no-names rule in that copy as well as this one.',
