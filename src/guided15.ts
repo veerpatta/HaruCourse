@@ -149,9 +149,9 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Would more metrics give a fuller picture?',
         options: [
-          { label: 'They give more numbers to argue with. Three connected to an outcome with their limits stated support decisions; twenty unconnected ones support whichever conclusion somebody wanted.', correct: true, feedback: 'Every unconnected number is available to whoever is arguing. A small tree with observability marked is harder to misuse and easier to act on.' },
-          { label: 'Yes, as long as each one is accurate.', feedback: 'Accuracy is not the problem. Twenty accurate numbers with no connection to an outcome is a menu.' },
-          { label: 'Yes, because you cannot know in advance which will matter.', feedback: 'The tree is how you decide which will matter, which is the work this lesson is about.' },
+          { label: 'They give more to argue with; a few tied to an outcome support decisions.', correct: true, feedback: 'Three numbers connected to an outcome, with their limits stated, support decisions; twenty unconnected ones support whichever conclusion somebody wanted. A small tree with observability marked is harder to misuse and easier to act on.', was: ['They give more numbers to argue with. Three connected to an outcome with their limits stated support decisions; twenty unconnected ones support whichever conclusion somebody wanted.'] },
+          { label: 'They do, as long as each one of them is accurately recorded.', feedback: 'Accuracy is not the problem. Twenty accurate numbers with no connection to an outcome is a menu.', was: ['Yes, as long as each one is accurate.'] },
+          { label: 'They do, because nobody can know in advance which one will matter.', feedback: 'The tree is how you decide which will matter, which is the work this lesson is about.', was: ['Yes, because you cannot know in advance which will matter.'] },
         ],
         repair: 'Check every activity node in step 3 has a path upward, and remove or mark the ones that do not. Record the change in step 5.',
         recheck: 'No number in your tree floats without a connection.',
@@ -159,9 +159,9 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'You built your tree upward from the numbers you can actually get. What tends to happen?',
         options: [
-          { label: 'The top becomes a word nobody outside the team wants, such as engagement, because the available numbers do not add up to an outcome.', correct: true, feedback: 'Nobody comes to a tool library to engage with it. Starting from the outcome produces a shorter tree with more unobservable nodes, which is the honest shape.' },
-          { label: 'Nothing much, since the numbers are the same either way.', feedback: 'The numbers are the same and their meaning is not. Built upward, searches and time on page look like they belong.' },
-          { label: 'It is more practical, since unobservable nodes cannot be used.', feedback: 'Unobservable nodes are what tell you what you are missing. Leaving them out makes the gap invisible.' },
+          { label: 'Its top becomes a vague word like engagement, which is not an outcome anybody wants.', correct: true, feedback: 'The available numbers do not add up to an outcome. Nobody comes to a tool library to engage with it. Starting from the outcome produces a shorter tree with more unobservable nodes, which is the honest shape.', was: ['The top becomes a word nobody outside the team wants, such as engagement, because the available numbers do not add up to an outcome.'] },
+          { label: 'Nothing much changes, since the numbers in it are the same either way.', feedback: 'The numbers are the same and their meaning is not. Built upward, searches and time on page look like they belong.', was: ['Nothing much, since the numbers are the same either way.'] },
+          { label: 'It is more practical, because unobservable nodes cannot be used anyway.', feedback: 'Unobservable nodes are what tell you what you are missing. Leaving them out makes the gap invisible.', was: ['It is more practical, since unobservable nodes cannot be used.'] },
         ],
         repair: 'Rebuild one branch in step 2 starting from the outcome, and see which of your numbers survive. Record the change in step 5.',
         recheck: 'Your top node is something a person outside the team would want.',
@@ -169,14 +169,23 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Time on page is easy to get and everybody reports it. Should it be in your tree?',
         options: [
-          { label: 'No. It rises when people are interested and when they are lost, so no value of it changes what anybody does.', correct: true, feedback: 'The test is what you would do if it doubled and what you would do if it halved. When the answer to both is nothing, the number exists to be reported rather than used.' },
-          { label: 'Yes, since it is a useful indicator of engagement.', feedback: 'Engagement is the word that lets an unactionable number look meaningful. Ask which action a change in it would trigger.' },
-          { label: 'Yes, as a supporting metric alongside others.', feedback: 'Supporting metric usually means one that can be quoted when it agrees with you.' },
+          { label: 'Probably not: it rises when people are interested and when lost, so it guides nothing.', correct: true, feedback: 'The test is what you would do if it doubled and what you would do if it halved. When the answer to both is nothing, the number exists to be reported rather than used.', was: ['No. It rises when people are interested and when they are lost, so no value of it changes what anybody does.'] },
+          { label: 'It should, since it is a widely used indicator of how engaged people are.', feedback: 'Engagement is the word that lets an unactionable number look meaningful. Ask which action a change in it would trigger.', was: ['Yes, since it is a useful indicator of engagement.'] },
+          { label: 'It should, as a supporting metric reported alongside the others.', feedback: 'Supporting metric usually means one that can be quoted when it agrees with you.', was: ['Yes, as a supporting metric alongside others.'] },
         ],
         repair: 'Apply the doubled-or-halved test to every leaf in step 5 and remove two. Record the change.',
         recheck: 'Every metric left would trigger a different action depending on which way it moved.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a town’s bike-share scheme reports monthly app downloads, app opens and average ride length. The council funds it so that people make short trips by bike instead of by car. The scheme also holds trip records (start dock, end dock, time) and runs a yearly members’ survey.',
+      prompt: 'Name the outcome at the top of a metric tree for this scheme and one metric beneath it, and explain why that metric is connected to the outcome while app opens are not.',
+      anchors: {
+        weak: 'Puts downloads, app opens or engagement at the top, or lists metrics without connecting any of them to an outcome for people.',
+        adequate: 'States an outcome about people making short trips by bike rather than car, names a connected countable metric such as completed short trips from trip records, and explains why app opens can rise for opposite reasons.',
+        strong: 'As adequate, and marks what stays unobservable (whether a bike trip replaced a car trip is only askable, through the survey) and says what the metric cannot support.',
+      },
+    },
     saveRoute: {
       auto: 'Your outcome, the branches, the marks and the removals save as you type, on this device first and then online.',
       external: 'A drawn tree on paper is often clearer than a written one. Photograph it, keep it in your own folder, and note the file name here.',
@@ -193,8 +202,8 @@ export const guided15: Record<string, Guided> = {
       ] },
       { id: 'counts', title: 'Synthetic counts', intro: 'Invented numbers, labelled as invented, used to practise the arithmetic rather than to say anything about your product.', fields: [
         { id: 'counts-invented', label: 'Your invented counts at each step, marked synthetic', kind: 'long', example: 'Example (made up, synthetic): 1,000 reach the list, 420 open a tool, 180 begin booking, 96 reach payment, 71 complete.' },
-        { id: 'proportional-drops', label: 'The proportional drop at each step, with your working', kind: 'long', hint: 'Proportional drop is the number lost at a step divided by the number who reached it. 420 to 180 loses 240 of 420, which is about 57 per cent.' },
-        { id: 'largest-drop', label: 'The largest proportional drop, and why it is not simply the largest number lost', kind: 'short' },
+        { id: 'proportional-drops', label: 'The proportional drop at each step, with your working', kind: 'long', hint: 'Proportional drop is the number lost at a step divided by the number who reached it. 420 to 180 loses 240 of 420, about 57.1 per cent. Check each division with the Funnel tool in this lesson’s uncertainty calculator.' },
+        { id: 'largest-drop', label: 'The largest proportional drop, whether it is also the step that loses the most people, and which step you would look at first and why', kind: 'short', hint: 'The two rankings can agree or disagree. Made up: 1,000 to 420 loses 580 (58.0 per cent) and 420 to 180 loses 240 (57.1 per cent), so they agree. In a funnel of 1,000, 400, 300, 240, 60, the first step loses most people (600, 60 per cent) but the last is steepest (180 of 240, 75 per cent).' },
       ] },
       { id: 'explanations', title: 'Three explanations that all fit', fields: [
         { id: 'three-explanations', label: 'Three explanations for the largest drop that the numbers cannot tell apart', kind: 'long' },
@@ -220,7 +229,8 @@ export const guided15: Record<string, Guided> = {
       { expect: 'Invented counts marked synthetic, the proportional drop at each step with your working, and the largest one identified.',
         fields: ['counts-invented', 'proportional-drops', 'largest-drop'],
         terms: [
-          { term: 'Proportional drop', meaning: 'People lost at a step divided by people who reached it. Going from 420 to 180 loses 240 of 420, about 57 per cent.' },
+          { term: 'Proportional drop', meaning: 'People lost at a step divided by people who reached it. Going from 420 to 180 loses 240 of 420, about 57.1 per cent. It makes steps that start with different numbers of people comparable.' },
+          { term: 'Uncertainty calculator', meaning: 'The in-lesson tool. Its Funnel part takes your step counts and shows the people lost and the proportional drop at each step, so you can check your own division.' },
           { term: 'Absolute drop', meaning: 'The raw number lost. The biggest one is usually at the top, where the most people are, which is why it is the wrong thing to rank by.' },
           { term: 'Synthetic', meaning: 'Invented for practice. The arithmetic is real and the numbers are not, and every place they appear has to say so.' },
         ],
@@ -229,12 +239,12 @@ export const guided15: Record<string, Guided> = {
           beats: [
             { label: 'The numbers', text: 'Synthetic throughout: 1,000 reach the list, 420 open a tool, 180 begin booking, 96 reach payment, 71 complete.' },
             { label: 'What I said first', text: 'The biggest problem is the list: we lose 580 people there, more than everywhere else combined.' },
-            { label: 'Why that is the wrong reading', text: '580 is the largest number because 1,000 is the largest starting point. Most of a landing audience never wanted to borrow anything today.' },
-            { label: 'What the proportions showed', text: '58 per cent at the list, then 57 per cent from opening a tool to beginning a booking, then 47, then 26. The second is nearly as steep and applies to people who had already chosen a tool.' },
-            { label: 'Why that step is the interesting one', text: 'Everybody in it has shown intent. Whatever stops them there is stopping people who wanted the thing, which is not true of the first step at all.' },
+            { label: 'What the proportions showed', text: 'Lost divided by reached: 580 of 1,000 is 58.0 per cent; 240 of 420 is 57.1 per cent; 84 of 180 is 46.7 per cent; 25 of 96 is 26.0 per cent. So the list step is the steepest as well as the biggest, by less than one point.' },
+            { label: 'Why that did not settle it', text: 'Two synthetic proportions a point apart rank nothing. The arithmetic says the first two steps are about equally steep; it cannot say which matters more.' },
+            { label: 'What separated the two steps', text: 'Who is in them. Many people on a listing never meant to borrow anything today, so some of that drop may be healthy. Everybody who opened a tool had shown intent, so I would look at the second step first: a judgement about commitment, not a bigger percentage.' },
           ],
-          wrongTurn: 'The wrong turn is ranking by the number lost, because that number is the largest and it is at the top. The top of a funnel is where the least committed people are, and losing them is mostly correct.',
-          tradeoff: 'Proportional drops make the top of the funnel look less urgent than it feels, and somebody will point out that 580 people is a lot of people.',
+          wrongTurn: 'The wrong turn is treating the biggest number lost as the biggest problem. Here the proportions happen to agree, by a hair, so neither ranking settles where to look; what does is who is leaving and whether leaving is healthy there.',
+          tradeoff: 'Looking at the second step first means setting aside the step that loses the most people, and somebody will point out that 580 people is a lot of people.',
           uncertainty: 'Still unknown: everything about why, and these numbers are invented anyway. The arithmetic is the thing being practised here, not the product.',
         },
         start: 'Work out the proportion for each step by hand, writing the division you did.',
@@ -324,34 +334,43 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'The funnel shows most people stop at checkout. Does that mean the problem is at checkout?',
         options: [
-          { label: 'No. It shows people stop there. The problem may have been created three steps earlier by a price that was never shown.', correct: true, feedback: 'A funnel locates where to look, not what to fix. Several explanations always fit the same drop, and choosing one without evidence is how expensive redesigns of the wrong screen happen.' },
-          { label: 'Yes, since that is the step where they leave.', feedback: 'Where somebody leaves is where the accumulated reasons become too much. It is not necessarily where any of them started.' },
-          { label: 'Yes, unless the earlier steps also show drops.', feedback: 'A step can create a problem without losing anybody, by setting an expectation that fails later.' },
+          { label: 'Not necessarily: the cause may sit earlier, such as a price nobody was shown.', correct: true, feedback: 'A funnel locates where to look, not what to fix. Several explanations can fit the same drop, and choosing one without evidence is how expensive redesigns of the wrong screen happen.', was: ['No. It shows people stop there. The problem may have been created three steps earlier by a price that was never shown.'] },
+          { label: 'It does, since checkout is the step where they actually leave the task.', feedback: 'Where somebody leaves is where the accumulated reasons become too much. It is not necessarily where any of them started.', was: ['Yes, since that is the step where they leave.'] },
+          { label: 'It does, unless the earlier steps show drops of their own as well.', feedback: 'A step can create a problem without losing anybody, by setting an expectation that fails later.', was: ['Yes, unless the earlier steps also show drops.'] },
         ],
         repair: 'Write three explanations for your largest drop in step 3, at least one of which is about an earlier step. Record the change in step 5.',
         recheck: 'Your explanations are not all about the step where the drop appears.',
       },
       {
-        question: 'The biggest number of people is lost at the first step. Is that your biggest problem?',
+        question: 'In the lesson’s synthetic funnel, the list step loses 580 of 1,000 (58.0 per cent) and opening a tool to beginning a booking loses 240 of 420 (57.1 per cent). Is the list step your biggest problem?',
         options: [
-          { label: 'Probably not. The top of a funnel holds the least committed people, and losing most of them is correct.', correct: true, feedback: 'Ranking by proportion rather than by count moves attention to steps where people had already shown intent. Those are the ones where a loss means something.' },
-          { label: 'Yes, since that is where most people are lost.', feedback: 'It is where most people are, so it is where most people leave. The proportion is what makes steps comparable.' },
-          { label: 'Yes, because improving it would affect the most people.', feedback: 'It would affect the most people who were never going to continue.' },
+          { label: 'Not shown: the two drops are nearly equal, and the list holds the least committed people.', correct: true, feedback: 'The list step is steepest by less than a point, and on invented numbers that gap means nothing. Which step to look at first depends on who is leaving and whether leaving is healthy there; people who had opened a tool had already shown intent.', was: ['Probably not. The top of a funnel holds the least committed people, and losing most of them is correct.'] },
+          { label: 'It is, since it loses the most people and has the highest percentage as well.', feedback: 'It does both, by a hair. The biggest drop is where to look, not proof of the biggest problem, and some people on a listing should leave.', was: ['Yes, since that is where most people are lost.'] },
+          { label: 'It is, because improving the first step would reach the largest number of people.', feedback: 'It would reach the most people, many of whom were never going to continue.', was: ['Yes, because improving it would affect the most people.'] },
         ],
-        repair: 'Work out proportional drops in step 2 and identify the largest by proportion. Record the change in step 5.',
-        recheck: 'Your largest drop was chosen by proportion with the working shown.',
+        repair: 'Work out the people lost and the proportional drop at every step in step 2, then say which step you would look at first and why. Record the change in step 5.',
+        recheck: 'Your choice of step rests on the working shown and on who is leaving, not on the count alone.',
       },
       {
         question: 'Your funnel uses invented numbers and the caption says so. Is that enough?',
         options: [
-          { label: 'No. Charts get screenshotted and travel without their captions, so the word belongs in the chart itself.', correct: true, feedback: 'A synthetic funnel quoted six months later as a real conversion rate is the exact damage this rule prevents, and it costs four words to avoid.' },
-          { label: 'Yes, a caption is a clear label.', feedback: 'It is clear while it is attached, which is not for long.' },
-          { label: 'Yes, since everybody in the room knows.', feedback: 'Everybody in the room does. The chart outlives the room.' },
+          { label: 'Not quite: charts travel without captions, so the label belongs in the chart.', correct: true, feedback: 'Charts get screenshotted and pasted elsewhere. A synthetic funnel quoted six months later as a real conversion rate is the exact damage this rule prevents, and it costs four words to avoid.', was: ['No. Charts get screenshotted and travel without their captions, so the word belongs in the chart itself.'] },
+          { label: 'It is enough, because a caption is a clear, visible label for the numbers.', feedback: 'It is clear while it is attached, which is not for long.', was: ['Yes, a caption is a clear label.'] },
+          { label: 'It is enough, since everybody in the room already knows they are invented.', feedback: 'Everybody in the room does. The chart outlives the room.', was: ['Yes, since everybody in the room knows.'] },
         ],
         repair: 'Move the synthetic label into the chart title in step 5 and record the change.',
         recheck: 'A screenshot of the chart alone still says the numbers are invented.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case, invented counts: a museum’s online ticket shop. 2,000 people view the exhibitions page, 900 open an exhibition, 300 choose a date, 240 enter their details and 60 pay. The payment step asks for a postcode and a phone number that earlier steps never mentioned.',
+      prompt: 'Work out the proportional drop at each step, say which step you would investigate first, and explain why that step rather than the one that loses the most people.',
+      anchors: {
+        weak: 'Picks the first step because it loses the most people (1,100), or treats the payment drop as proof of what is wrong with the payment screen.',
+        adequate: 'Computes 55.0, 66.7, 20.0 and 75.0 per cent, picks the details-to-payment step (180 of 240) as steepest among committed people, and frames it as where to look, not a proven cause.',
+        strong: 'As adequate, and offers more than one explanation (the unexpected postcode and phone number, price, interruption), says what evidence would separate them, and labels the counts invented.',
+      },
+    },
     saveRoute: {
       auto: 'Your steps, the synthetic counts, the proportions and the explanations save as you type, on this device first and then online.',
       external: 'A hand-drawn funnel or a spreadsheet stays in your own folder, with the synthetic label on the chart. No analytics account is involved.',
@@ -366,17 +385,17 @@ export const guided15: Record<string, Guided> = {
         { id: 'three-rates', label: 'Three rates you have written or were tempted to write, with the counts behind them', kind: 'long', hint: 'The count is the part that matters. 41 per cent from 9 of 22 and 41 per cent from 410 of 1,000 are different claims.', example: 'Example (made up): 41 per cent were unsure their payment had gone through, from 9 of 22 survey answers.' },
       ] },
       { id: 'intervals', title: 'Compute the intervals', fields: [
-        { id: 'interval-method', label: 'The formula or tool you used, named', kind: 'short', hint: 'Any published interval formula for a proportion. Name it so somebody can check your arithmetic.' },
-        { id: 'intervals-computed', label: 'For each rate: the interval, with the inputs you used', kind: 'long', example: 'Example (made up): 9 of 22 gives about 41 per cent, with an interval running from roughly 24 to 61 per cent.' },
-        { id: 'what-interval-means', label: 'What the interval means, in your own words', kind: 'short', hint: 'Roughly: the range of true values that would not be surprising, given this many people.' },
+        { id: 'interval-method', label: 'The formula or tool you used, named', kind: 'short', hint: 'The One rate tool in this lesson’s uncertainty calculator gives a 95 per cent Wilson score interval; write that name. If you used another published formula, name it so somebody can check your arithmetic.' },
+        { id: 'intervals-computed', label: 'For each rate: the interval, with the inputs you used', kind: 'long', example: 'Example (made up): 9 of 22 gives 40.9 per cent, with a 95 per cent Wilson interval from about 23 to 61 per cent.' },
+        { id: 'what-interval-means', label: 'What the interval means, in your own words', kind: 'short', hint: 'Roughly: the range of underlying rates that these counts are compatible with, at 95 per cent confidence. It covers chance in who happened to answer, not bias in who was asked.' },
       ] },
       { id: 'rewrite', title: 'Rewrite what it cannot support', fields: [
         { id: 'rewritten-claims', label: 'Each claim rewritten so the interval supports it', kind: 'long', hint: 'Usually this means the count with the route stated: 9 of 22 people who answered the survey.' },
-        { id: 'route-stated', label: 'For each: how those people came to be asked', kind: 'short', hint: 'Recruited how, from where. A rate from people who volunteered is about people who volunteer.' },
+        { id: 'route-stated', label: 'For each: how those people came to be asked', kind: 'short', sensitive: true, hint: 'Recruited how, from where, described as a route (for example, a members’ newsletter), never as names or contacts. A rate from people who volunteered is about people who volunteer.' },
       ] },
       { id: 'comparison', title: 'One comparison', fields: [
-        { id: 'comparison-examined', label: 'A comparison between two rates, with both intervals', kind: 'long' },
-        { id: 'comparison-decision', label: 'Whether you qualified it or abandoned it, and why', kind: 'long', hint: 'Overlapping intervals mean the difference could easily be nothing.' },
+        { id: 'comparison-examined', label: 'A comparison between two rates: both counts, the difference, and the 95 per cent interval for the difference', kind: 'long', hint: 'Use the Two rates tool in this lesson’s uncertainty calculator, which works out the difference and its interval directly (Newcombe’s method). Do not judge by whether the two separate intervals overlap: they can overlap while the difference is clear.', example: 'Example (made up): 44 of 100 against 36 of 100 is a difference of 8 points, with a 95 per cent interval for the difference from about −5.5 to +21.1 points.' },
+        { id: 'comparison-decision', label: 'Whether you qualified it or abandoned it, and why', kind: 'long', hint: 'If the interval for the difference includes zero, the counts are consistent with no difference, and also with a sizeable one: say so, or drop the comparison. If it excludes zero, report the difference with its interval and sample route. Invented numbers: remove the comparison.' },
       ] },
       { id: 'rule', title: 'Your rule', fields: [
         { id: 'reporting-rule', label: 'Your written rule for when you will report a rate at all', kind: 'long', example: 'Example (made up): counts below about thirty are reported as counts. Above that, the rate goes with its interval and its sample route.' },
@@ -403,7 +422,7 @@ export const guided15: Record<string, Guided> = {
           beats: [
             { label: 'What I wrote', text: '“41 per cent of members were unsure whether their payment had gone through.” It looked precise and it fitted neatly into a sentence.' },
             { label: 'What was behind it', text: 'Nine people out of twenty-two who answered a survey. I knew that; the sentence did not say it.' },
-            { label: 'What the interval was', text: 'Roughly 24 to 61 per cent. So the honest version of my precise-looking claim is somewhere between a quarter and three-fifths.' },
+            { label: 'What the interval was', text: 'About 23 to 61 per cent, using the 95 per cent Wilson interval. So the honest version of my precise-looking claim is somewhere between just under a quarter and about three-fifths.' },
             { label: 'What happened when somebody checked', text: 'They asked how many people. Once twenty-two was said out loud, the 41 per cent read as false precision, and everything else in the document was read more suspiciously.' },
             { label: 'What I wrote instead', text: '“Nine of the twenty-two members who answered the survey were unsure whether their payment had gone through.” Smaller, checkable, and nothing in it can be overturned by asking one question.' },
           ],
@@ -439,11 +458,11 @@ export const guided15: Record<string, Guided> = {
               feedback: {
                 'supportable as written': 'Sixty-seven per cent of three people is two people. The percentage is arithmetic dressed as a measurement.',
                 'needs the count instead': 'Two of the three people we watched. It is a real and useful finding, stated at the size it is.',
-                'the interval is not the problem': 'An interval on three people would cover almost everything, which is the point.',
+                'the interval is not the problem': 'An interval on three people covers almost everything (about 21 to 94 per cent for two of three), which is the point.',
               } },
             { id: 'volunteers', text: '80 per cent of the forty people who volunteered for our panel found the new flow clearer.', answer: 'the interval is not the problem',
               feedback: {
-                'supportable as written': 'Forty is a reasonable count and the interval is not wide. Who those forty are is the difficulty.',
+                'supportable as written': 'The interval (about 65 to 90 per cent) is the narrowest here. Who those forty are is the difficulty.',
                 'needs the count instead': 'Thirty-two of forty is better and does not fix it either.',
                 'the interval is not the problem': 'People who volunteer for a panel are unlike people who do not, and no arithmetic corrects that. The route has to be stated and the claim narrowed to the panel.',
               } },
@@ -468,7 +487,7 @@ export const guided15: Record<string, Guided> = {
       { expect: 'One comparison examined with both intervals, then qualified or abandoned with the reason.',
         fields: ['comparison-examined', 'comparison-decision'],
         terms: [
-          { term: 'Comparing two rates', meaning: 'Harder than reporting one. Two wide intervals that overlap mean the difference could easily be nothing at all.' },
+          { term: 'Comparing two rates', meaning: 'Harder than reporting one. Work out the interval for the difference itself. Whether the two separate intervals overlap is not a test: made up, 120 of 200 against 95 of 200 have overlapping intervals, yet the difference interval, about 2.7 to 21.9 points, excludes zero.' },
           { term: 'Abandoning a comparison', meaning: 'A legitimate result. Removing it is better than qualifying it so heavily that nobody reads the qualification.' },
         ],
         demo: {
@@ -484,8 +503,8 @@ export const guided15: Record<string, Guided> = {
           tradeoff: 'Removing it left the document with no encouraging line in it, which is an honest description of what the practice material could show.',
           uncertainty: 'Still unknown: whether the real completion rate is anywhere near either figure. Nothing here measured it, and the document now says so.',
         },
-        start: 'Write both intervals down and see whether they overlap before deciding anything.',
-        enough: 'Your decision names the overlap, or names a different reason such as invented numbers.' },
+        start: 'Put both counts into the Two rates tool and read the interval for the difference before deciding anything.',
+        enough: 'Your decision names the interval for the difference and whether it includes zero, or a different reason such as invented numbers.' },
       { expect: 'A written rule for when you will report a rate at all, and the repair the Check questions asked for.',
         fields: ['reporting-rule', 'improvement-made'],
         terms: [
@@ -499,34 +518,43 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Are percentages more professional than counts?',
         options: [
-          { label: 'They look more precise. At small samples the precision is fictional, and a reader who checks the sample will trust nothing else in the document.', correct: true, feedback: 'Sixty-seven per cent of three people is two people. Counts read as less impressive and survive the first question, which percentages from small samples do not.' },
-          { label: 'Yes, since they allow comparison between studies.', feedback: 'Comparison needs both intervals and compatible definitions. A percentage from twenty-two people compares with very little.' },
-          { label: 'Yes, provided the sample size is stated nearby.', feedback: 'Stated nearby, the percentage is still the part that gets quoted.' },
+          { label: 'They only look more precise; from small samples that precision is fictional.', correct: true, feedback: 'Sixty-seven per cent of three people is two people, with a 95 per cent interval of about 21 to 94 per cent. Counts read as less impressive and survive the first question, and a reader who checks the sample of a percentage may trust nothing else in the document.', was: ['They look more precise. At small samples the precision is fictional, and a reader who checks the sample will trust nothing else in the document.'] },
+          { label: 'They are, since a percentage allows comparison between different studies.', feedback: 'Comparison needs compatible definitions and an interval for the difference. A percentage from twenty-two people compares with very little.', was: ['Yes, since they allow comparison between studies.'] },
+          { label: 'They are, provided the sample size is stated somewhere nearby.', feedback: 'Stated nearby, the percentage is still the part that gets quoted.', was: ['Yes, provided the sample size is stated nearby.'] },
         ],
         repair: 'Rewrite your smallest-sample claim as a count with its route in step 3, and record the change in step 5.',
         recheck: 'No claim from a small sample is expressed as a percentage.',
       },
       {
-        question: 'Two of your rates differ by eight points, and both intervals are about twenty points wide and overlap. What can you say?',
+        question: 'In a made-up survey, 44 of 100 members at one branch and 36 of 100 at another were unsure their payment went through. The Two rates tool gives a difference of 8 points, with a 95 per cent interval from −5.5 to +21.1 points. What can you say?',
         options: [
-          { label: 'That the difference could easily be nothing. The honest move is to qualify it heavily or drop the comparison.', correct: true, feedback: 'Comparing two rates needs more care than reporting one, and overlapping intervals mean the samples are consistent with no difference at all.' },
-          { label: 'That one is higher than the other, which is what the numbers show.', feedback: 'The numbers show it in these samples. Another twenty-two people could easily reverse it.' },
-          { label: 'That the difference is suggestive and worth investigating.', feedback: 'That wording survives into summaries as a finding. If you keep it, say plainly that the samples are consistent with no difference.' },
+          { label: 'The interval includes zero, so these counts fit no difference as well as a real one.', correct: true, feedback: 'The interval for the difference is the test. It runs from slightly below zero to about 21 points, so the honest move is to report it with that range or drop the comparison. Note the reason is the difference interval, not whether the two separate intervals overlap.', was: ['That the difference could easily be nothing. The honest move is to qualify it heavily or drop the comparison.'] },
+          { label: 'The first branch is eight points higher, which is exactly what the counts show.', feedback: 'The counts show it in these two samples. The interval for the difference includes zero, so another hundred members at each branch could easily narrow or reverse it.', was: ['That one is higher than the other, which is what the numbers show.'] },
+          { label: 'There is no difference, because the two separate intervals overlap.', feedback: 'Overlap of two separate intervals is not a test either way: intervals can overlap while the difference is clear. And “no difference” goes too far, since the difference interval reaches 21 points.', was: ['That the difference is suggestive and worth investigating.'] },
         ],
-        repair: 'Examine both intervals in step 4 and decide to qualify or abandon, with the reason. Record the change in step 5.',
-        recheck: 'Your comparison names the overlap.',
+        repair: 'Compute the interval for the difference in step 4 with the Two rates tool, and decide to qualify or abandon, with the reason. Record the change in step 5.',
+        recheck: 'Your comparison names the interval for the difference, not the overlap of two separate intervals.',
       },
       {
-        question: 'Eighty per cent of your forty panel volunteers preferred the new flow. The interval is not too wide. Is the claim sound?',
+        question: 'Thirty-two of your forty panel volunteers (80 per cent) preferred the new flow; the 95 per cent Wilson interval is about 65 to 90 per cent. Can you say most members prefer it?',
         options: [
-          { label: 'The interval is not the problem. People who volunteer for a panel are unlike people who do not, and no arithmetic corrects that.', correct: true, feedback: 'The repair is to state the route and narrow the claim to the panel. Sample size and sample route are two different things, and only one of them has a formula.' },
-          { label: 'Yes, forty is a reasonable sample.', feedback: 'Forty of whom is the question the interval cannot answer.' },
-          { label: 'Yes, if the panel was recruited randomly from members.', feedback: 'Then it would be much stronger, and volunteering to join is the step that breaks it.' },
+          { label: 'Not from this: volunteers differ from other members, and no interval corrects that.', correct: true, feedback: 'The repair is to state the route and narrow the claim to the panel. Sample size and sample route are two different things, and only one of them has a formula.', was: ['The interval is not the problem. People who volunteer for a panel are unlike people who do not, and no arithmetic corrects that.'] },
+          { label: 'You can, since forty is a reasonable sample and the interval stays above half.', feedback: 'Forty of whom is the question the interval cannot answer. It describes chance among these volunteers, not the members who never volunteered.', was: ['Yes, forty is a reasonable sample.'] },
+          { label: 'You can, provided the volunteers came from a list of all members.', feedback: 'A list of all members is where they came from, not how they were chosen: volunteering to join is the step that breaks it. A random draw from the list would be much stronger.', was: ['Yes, if the panel was recruited randomly from members.'] },
         ],
         repair: 'Add how the people came to be asked beside every rate in step 3, and narrow any claim that outruns it. Record the change in step 5.',
         recheck: 'Every claim says who the people were and how they were reached.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a swimming club’s newsletter says “45% of parents find the new lesson-booking page confusing”. Behind it: 9 of the 20 parents who replied to a post on the club’s noticeboard. The draft also says “confusion is higher among new families”, from 5 of 8 new families against 4 of 12 longer-standing ones.',
+      prompt: 'Rewrite the first claim so the numbers support it, decide what to do with the comparison, and explain both decisions.',
+      anchors: {
+        weak: 'Keeps 45 per cent as a fact about all parents, or calls the new-family difference real because 62 is bigger than 33, or judges it by whether the separate intervals overlap.',
+        adequate: 'Rewrites as 9 of the 20 parents who replied to the noticeboard post (interval roughly 26 to 66 per cent), and qualifies or drops the comparison because the interval for the difference includes zero.',
+        strong: 'As adequate, and names the route problem (people who reply to a noticeboard post are not all parents) separately from the sample size, and says what would be needed for a firmer claim.',
+      },
+    },
     saveRoute: {
       auto: 'Your rates, the intervals, the rewrites and your reporting rule save as you type, on this device first and then online.',
       external: 'A spreadsheet with your interval working stays in your own folder. Keep the inputs visible in it, so the arithmetic can be checked later.',
