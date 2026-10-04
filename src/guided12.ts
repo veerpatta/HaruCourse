@@ -578,7 +578,7 @@ export const guided12: Record<string, Guided> = {
     ],
     transfer: {
       scenario: 'Made-up case: on a bakery’s order page, a box set to 200 pixels wide with 16 pixels of padding on each side is wider than its column. The “Today’s loaves” heading stays black though a rule sets it brown, and a small note under the button is pale grey though no rule on it mentions colour.',
-      prompt: 'Name the mechanism behind each of the three surprises, and say what you would check in the inspector before changing anything.',
+      prompt: 'Name the mechanism behind each of the three surprises, explain why it produces that result, and say what you would check in the inspector before changing anything.',
       anchors: {
         weak: 'Guesses fixes such as adding !important, moving rules or changing numbers until it looks right, without naming why.',
         adequate: 'Box model (width plus 32 pixels of padding = 232), cascade (a more specific rule wins), inheritance (colour passed down from a parent), each with what the inspector shows.',
