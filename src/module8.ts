@@ -2117,7 +2117,7 @@ export const module8: Lesson[] = [
     misconception:
       "“More tokens means more flexibility.” More tokens means more places to be inconsistent and more decisions for whoever comes next. A small set with clear roles constrains usefully; a large set is a palette with extra steps.",
     example:
-      "The token sheet came to twenty-two values: five neutrals, three semantic colours, six type steps, six spacing values and two radii. Applying it to the booking screen surfaced three exceptions — a one-off border grey, a 10px gap and a heading half a step smaller than any token. The border grey became an existing neutral, the gap moved to the nearest spacing value, and the heading revealed a real missing role, so a step was added deliberately. Every text pair was measured; the caption on the tinted panel failed and was darkened, and the measured numbers were written on the sheet.",
+      "Made-up example: the token sheet came to twenty-two values: five neutrals, three semantic colours, six type steps, six spacing values and two radii. Applying it to the booking screen surfaced three exceptions — a one-off border grey, a 10px gap and a heading half a step smaller than any token. The border grey became an existing neutral, the gap moved to the nearest spacing value, and the heading revealed a real missing role, so a step was added deliberately. Every text pair was measured; the caption on the tinted panel failed and was darkened, and the measured numbers were written on the sheet.",
     freeToolPath:
       "A written table is a token sheet. For contrast, any free browser-based checker or your operating system's own tools will do, and you can also compute the ratio in a spreadsheet from the published formula; no paid plugin is needed.",
     outputs: [
@@ -2310,14 +2310,14 @@ export const module8: Lesson[] = [
     ],
     explanation: [
       "Assembly is a test of the parts. When a screen forces you to invent a component, a token or a state, that is information about the set rather than a nuisance: either something is genuinely missing, or the screen is asking for a variation it does not need. Recording each invention as it happens keeps the library honest and produces the list of decisions the next module builds on.",
-      "The strongest critique goes finding by finding. Take your m05 findings and m07 test results and ask, for each, whether this screen serves it — the payment uncertainty, the shared-device booking, the comparison people were making. That converts critique from an exchange of preferences into a checkable exercise, and it usually surfaces one finding the design has quietly stopped serving.",
+      "The strongest critique goes finding by finding. Take your m05 findings and m07 test results, or the supplied practice notes if you hold none, and ask, for each, whether this screen serves it — the payment uncertainty, the shared-device booking, the comparison people were making. That converts critique from an exchange of preferences into a checkable exercise, and it usually surfaces one finding the design has quietly stopped serving.",
       "Run the preliminary checks that apply — page title, headings, contrast, resize, keyboard where a build exists — and record both what passed and what those checks cannot establish. The resource states plainly that they are preliminary and that passing them is not conformance, and running them yourself is not testing with disabled people. Both statements belong in your write-up every time you show this work.",
       "Rank what you find by task impact. A misaligned label is worth noting; a status that cannot be distinguished in greyscale stops someone. Fixing in that order is the difference between a screen that looks tidier and one that works better, and stating the ranking is what lets a reviewer disagree with your priorities rather than your taste.",
     ],
     misconception:
       "“It looks finished, so it is ready.” Looking finished is a property of the surface. Ready means the states exist, the evidence is served, the checks were run and the remaining gaps are written down where someone else can see them.",
     example:
-      "Assembling two screens from the library required inventing three things: a status pill for a held place, a compact price treatment, and a spacing value between a heading and a dense list. The pill was a genuine missing component and was added; the price treatment was an accidental variation and was replaced with the existing one; the spacing became the nearest token. The finding-by-finding critique showed the screen no longer surfaced remaining places, which the m05 research had shown people comparing on, so it was restored. The preliminary checks found a heading level skipped and a caption below the contrast threshold; the keyboard check could not be completed because nothing was built, and that was recorded as untested rather than assumed.",
+      "Made-up example: assembling two screens from the library required inventing three things: a status pill for a held place, a compact price treatment, and a spacing value between a heading and a dense list. The pill was a genuine missing component and was added; the price treatment was an accidental variation and was replaced with the existing one; the spacing became the nearest token. The finding-by-finding critique showed the screen no longer surfaced remaining places, which the m05 research had shown people comparing on, so it was restored. The preliminary checks found a heading level skipped and a caption below the contrast threshold; the keyboard check could not be completed because nothing was built, and that was recorded as untested rather than assumed.",
     freeToolPath:
       "Paper or a local HTML file, whichever you have been using. If you want the accessibility checks to be real rather than theoretical, a local HTML file lets you check headings, resize and keyboard behaviour with a browser alone.",
     outputs: [
@@ -2331,7 +2331,7 @@ export const module8: Lesson[] = [
         minutes: 30,
         title: "Assemble",
         instructions: [
-          "Build two complete screens using only your components and tokens.",
+          "Build two complete screens using only your components and tokens; without screens of your own, start from a copy of /starters/m08/booking-screen-starter.svg.",
           "Write down every component, token or state you had to invent.",
           "Include at least one non-happy state among the two screens.",
         ],
@@ -2349,7 +2349,7 @@ export const module8: Lesson[] = [
         minutes: 30,
         title: "Critique against findings",
         instructions: [
-          "List your m05 findings and m07 test results.",
+          "List your m05 findings and m07 test results, or the supplied practice notes labelled as supplied.",
           "For each, write whether this screen serves it and how you can tell.",
           "Repair the strongest failure you find.",
         ],
@@ -2428,7 +2428,7 @@ export const module8: Lesson[] = [
       {
         criterion: "The critique runs finding by finding against research",
         evidence:
-          "Each m05 finding and m07 result listed with whether the screen serves it and the evidence.",
+          "Each finding — your m05 findings and m07 results, or the supplied practice notes labelled as supplied — listed with whether the screen serves it and the evidence.",
         levels: [
           "Critique based on appearance.",
           "Some findings referenced generally.",
