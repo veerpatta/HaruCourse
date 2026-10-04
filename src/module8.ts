@@ -707,7 +707,7 @@ export const module8: Lesson[] = [
     misconception:
       "“Inline validation on every keystroke helps people.” Validating a half-typed email as invalid teaches people they are failing while they are still working. Validate on leaving the field, or on submission, and reserve immediate feedback for things that can only improve — like a strength meter that never says “wrong”.",
     example:
-      "A booking form used placeholders as labels, validated the phone number on every keystroke, and cleared the form on a failed submission. Rebuilt: labels above every field and permanently visible; a line under the phone field saying which formats are accepted; validation on leaving the field; errors shown at the field with the fix stated; and everything preserved after a failure, with the page-level summary linking to the first problem. A keyboard pass found that the date control could be reached but not operated without a mouse, which was recorded as an implementation issue rather than claimed as fixed.",
+      "Made-up example: a booking form used placeholders as labels, validated the phone number on every keystroke, and cleared the form on a failed submission. Rebuilt: labels above every field and permanently visible; a line under the phone field saying which formats are accepted; validation on leaving the field; errors shown at the field with the fix stated; and everything preserved after a failure, with the page-level summary linking to the first problem. A keyboard pass found that the date control could be reached but not operated without a mouse, which was recorded as an implementation issue rather than claimed as fixed.",
     freeToolPath:
       "Specify the form on paper with the exact wording for label, help and error per field. To test behaviour, one local HTML file with labelled inputs shows tab order and error handling honestly with no framework or account.",
     outputs: [
@@ -909,7 +909,7 @@ export const module8: Lesson[] = [
     misconception:
       "“The hamburger menu is fine, everyone knows it.” Recognition of the icon is not the issue; what is behind it is. People do not open menus to browse, so anything essential placed there is effectively removed for anyone who does not already know it exists.",
     example:
-      "A phone header held a logo, a search icon and a menu icon; the only route to “Change or cancel a booking” was inside the menu, and in the m07 paper test two people said they would ring instead. The revision kept the logo small, put the current section name in the header as the location signal, promoted “My bookings” to a visible item, and left genuinely secondary destinations in the menu. On the wide layout the same items appeared as a row with the current one underlined and bolded, and the underline was checked in greyscale.",
+      "Made-up example: a phone header held a logo, a search icon and a menu icon; the only route to “Change or cancel a booking” was inside the menu, and in the m07 paper test two people said they would ring instead. The revision kept the logo small, put the current section name in the header as the location signal, promoted “My bookings” to a visible item, and left genuinely secondary destinations in the menu. On the wide layout the same items appeared as a row with the current one underlined and bolded, and the underline was checked in greyscale.",
     freeToolPath:
       "Draw both widths on paper at real size, then walk three tasks with a finger and count taps. A local HTML file with a list and a media query shows real collapse behaviour if you want to see it move.",
     outputs: [
@@ -1111,7 +1111,7 @@ export const module8: Lesson[] = [
     misconception:
       "“We can just make the table scroll horizontally on mobile.” Horizontal scrolling hides which column you are reading and separates values from their row identity. It is occasionally the right answer for genuinely wide reference data, and it is a poor default for a table people must act on.",
     example:
-      "A class list showed eight columns on desktop and scrolled sideways on a phone. Rebuilt: rows kept the four attributes the m05 sessions showed people comparing — day and time, price, place, remaining places — with the rest moved to the detail view. Default sort became soonest first, stated above the list. On a phone each row became a record with the class name as the heading. The longest real class name was used for layout, missing prices showed “price on request” rather than a blank, and a full class showed “Full — see other dates” instead of a zero.",
+      "Made-up example: a class list showed eight columns on desktop and scrolled sideways on a phone. Rebuilt: rows kept the four attributes the m05 sessions showed people comparing — day and time, price, place, remaining places — with the rest moved to the detail view. Default sort became soonest first, stated above the list. On a phone each row became a record with the class name as the heading. The longest real class name was used for layout, missing prices showed “price on request” rather than a blank, and a full class showed “Full — see other dates” instead of a zero.",
     freeToolPath:
       "Paper and your real data. Write out the ten worst real rows by hand at phone width; the layout problems appear immediately and cost nothing to fix at that stage.",
     outputs: [
@@ -1125,7 +1125,7 @@ export const module8: Lesson[] = [
         minutes: 20,
         title: "Decide the row content",
         instructions: [
-          "List the attributes your m05 participants compared on.",
+          "List the attributes people were seen comparing on: your m05 notes, or the supplied practice notes labelled as supplied.",
           "Put those in the row and move everything else to the detail view.",
           "Write what you deliberately omitted and why.",
         ],
@@ -1194,7 +1194,7 @@ export const module8: Lesson[] = [
       {
         criterion: "Row content is traced to observed comparison behaviour",
         evidence:
-          "A row specification citing m05 evidence per attribute, plus a written list of omissions.",
+          "A row specification citing evidence per attribute — your m05 notes, or the supplied practice notes labelled as supplied — plus a written list of omissions.",
         levels: [
           "Row content chosen from what the data contains.",
           "A reasoned list with no trace to observed behaviour.",
@@ -1202,7 +1202,7 @@ export const module8: Lesson[] = [
           "As adequate, and one attribute is included because its absence made people open every result.",
         ],
         remediation:
-          "Re-read your m05 notes for the attributes participants named while choosing. Those are the row; the rest is the detail view.",
+          "Re-read your m05 notes, or the supplied practice notes, for the attributes people named while choosing. Those are the row; the rest is the detail view.",
         recheck: "The row specification with citations.",
       },
       {
