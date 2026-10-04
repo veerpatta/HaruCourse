@@ -56,7 +56,7 @@ export function withLessonActions(input: Lesson): Lesson {
  if (!found) return input; // Lesson 1's permanent action IDs remain untouched.
  // Material authored beside the guided overlay joins any reviewed plan material.
  const extra = input.apprenticeship?.material || [];
- const plan:ActionPlan = actionPlans[input.id] && extra.length ? {...found,material:[...(found.material||[]),...extra]} : found;
+ const plan:ActionPlan = extra.length ? {...found,material:[...(found.material||[]),...extra]} : found;
  const field = (f: WorksheetField): WorksheetField => {
    const rule=conditional[input.id]?.find(c=>c.answers.includes(f.id));
    return {...f, ...(plan.optional?.includes(f.id) ? {optional:true} : {}),
