@@ -545,7 +545,7 @@ export const module11: Lesson[] = [
         minutes: 15,
         title: "Read the headings aloud",
         instructions: [
-          "Read only the headings to another person and ask what the page contains.",
+          "Read only the headings to another person, or to yourself if nobody is free, and ask what the page contains.",
           "Rewrite anything they cannot infer.",
           "Save the outlines, regions and order notes.",
         ],
@@ -572,7 +572,7 @@ export const module11: Lesson[] = [
       "Headings are correctly nested and descriptive",
       "Regions are named and main content is directly reachable",
       "Reading order matches visual order",
-      "The read-aloud check was run and changed something",
+      "The read-aloud check was run and its result recorded",
     ],
     criteria: [
       {
@@ -610,7 +610,7 @@ export const module11: Lesson[] = [
         levels: [
           "Order not examined.",
           "Examined without fixing a known mismatch.",
-          "Checked and mismatches corrected.",
+          "Checked, with mismatches corrected or a clean result recorded.",
           "As adequate, and a layout was changed rather than patched to make the orders agree.",
         ],
         remediation:
@@ -618,13 +618,13 @@ export const module11: Lesson[] = [
         recheck: "The order comparison.",
       },
       {
-        criterion: "The read-aloud check was run and changed something",
+        criterion: "The read-aloud check was run and its result recorded",
         evidence:
-          "A record of reading headings alone to someone, with resulting rewrites.",
+          "A record of reading the headings alone, what they conveyed, and any rewrites; a clean result counts when it is recorded.",
         levels: [
           "Not run.",
-          "Run alone with no changes.",
-          "Run with another person and rewrites recorded.",
+          "Run, with nothing recorded about what the headings conveyed.",
+          "Run with another person, or alone and labelled as a solo check, with the result and any rewrites recorded.",
           "As adequate, and the listener's summary is quoted beside the outline.",
         ],
         remediation:
@@ -636,7 +636,7 @@ export const module11: Lesson[] = [
       "If levels were chosen visually, rebuild the outline from hierarchy.",
       "If regions are missing, mark them and add a skip route.",
       "If order mismatches, move the content rather than relying on styling.",
-      "If the read-aloud was skipped, run it with another person.",
+      "If the read-aloud was skipped, run it with another person, or alone and say so.",
     ],
     portfolio:
       "A heading outline and region map beside the screen is a small artefact that shows structural thinking most portfolios omit.",
@@ -678,21 +678,21 @@ export const module11: Lesson[] = [
     why: "Text is the product for most people most of the time, and it is the easiest thing to make unreadable while it looks elegant.",
     teach: [
       "Measure contrast; do not judge it by eye under studio lighting.",
-      "Quiet text — captions, placeholders, disabled labels — fails most often.",
+      "Quiet text — captions, placeholders, helper lines — fails most often. Text in a disabled control is exempt from the ratio.",
       "Enlarging text must reflow the layout, not clip or scroll it sideways.",
       "Line length and spacing affect reading as much as size does.",
       "Meeting a ratio is a floor, not proof that text is comfortable to read.",
     ],
     explanation: [
-      "Contrast is measurable, which means opinions about it are unnecessary. The assigned threshold reading gives the ratios and their exceptions for large text and incidental elements. Measure every pair you allow — including the ones you consider decorative, because a caption carrying the price is not decorative — and record the number beside the pair in your token sheet.",
-      "Quiet text is where products fail. Placeholder grey, disabled labels, captions on tinted panels: each was chosen to be visually recessive, and recessive is exactly what fails a ratio. If a piece of text matters enough to appear, it matters enough to be readable; if it does not matter, remove it rather than dimming it.",
+      "Contrast is measurable, which means opinions about it are unnecessary. The assigned threshold reading gives the ratios: 4.5 to 1 for ordinary text and 3 to 1 for large text. It also lists exceptions: text inside an inactive control, pure decoration and logos have no contrast requirement. Measure every pair you allow — including the ones you consider decorative, because a caption carrying the price is not decorative — and record the number beside the pair in your token sheet.",
+      "Quiet text is where products fail. Placeholder grey, helper lines, captions on tinted panels: each was chosen to be visually recessive, and recessive is exactly what fails a ratio. If a piece of text matters enough to appear, it matters enough to be readable; if it does not matter, remove it rather than dimming it. A disabled control is the exception the criterion names: its pale label is not a failure. You may still choose to make it, or a line explaining why it is unavailable, more readable, and that explaining line is information that must meet the ratio. Keep the requirement and the preference apart when you write them down.",
       "Enlarging text is a reflow test, not a zoom test. A person who has set their text larger should get a layout that adapts: content wrapping, columns stacking, nothing clipped, no horizontal scrolling of the page. Fixed-height containers and text sized in absolute units are the two usual causes of failure, and both are decisions you made in m03 and m08.",
       "Comfort is broader than the threshold. Line length, line height, paragraph spacing and the amount of text on screen all affect whether people read or skim, and none of them appear in a contrast measurement. Meeting the ratio is where you start rather than where you finish.",
     ],
     misconception:
       "“It passes the contrast check, so the text is fine.” The ratio covers foreground against background at a given size and weight. It says nothing about thin type at small sizes, long unbroken lines, or text over an image where the background varies.",
     example:
-      "Nine text pairs were measured. Three failed: the caption at 3.1:1, the placeholder at 2.8:1 and the disabled button label at 2.4:1. The caption was darkened; the placeholder was replaced with a permanent hint under the label, removing the problem instead of repairing it; the disabled label was given a stronger colour and a written explanation beside it, since a disabled control with unreadable text tells nobody anything. At 200 per cent text the price panel clipped its last line and the header wrapped over the logo; both were fixed by allowing the containers to grow. Line length on the description exceeded ninety characters at wide widths and was capped.",
+      "Nine text pairs were measured. Two failed: the caption at 3.1:1 and the placeholder at 2.8:1. The disabled button label measured 2.4:1 and was recorded as exempt, because the criterion sets no requirement for inactive controls. The caption was darkened; the placeholder was replaced with a permanent hint under the label, removing the problem instead of repairing it. As a separate design preference, a readable line saying why the button was unavailable was added beside it, and that line was measured above 4.5:1. At 200 per cent text the price panel clipped its last line and the header wrapped over the logo; both were fixed by allowing the containers to grow. Line length on the description exceeded ninety characters at wide widths and was capped.",
     freeToolPath:
       "Any free browser-based contrast checker, or compute the ratio in a spreadsheet from the published formula. For enlarged text, your browser's own text-size setting shows real reflow with no tooling.",
     outputs: [
@@ -708,7 +708,7 @@ export const module11: Lesson[] = [
         instructions: [
           "List every text-on-surface pair, including quiet text.",
           "Measure each ratio and record it in the token sheet.",
-          "Mark every pair below the relevant threshold.",
+          "Mark every pair below its threshold, and mark exempt pairs separately.",
         ],
       },
       {
@@ -764,11 +764,16 @@ export const module11: Lesson[] = [
         answer:
           "No. It is a floor. Thin type, long lines, tight spacing and text over variable backgrounds can pass and still be hard to read.",
       },
+      {
+        question: "Does a pale disabled button fail contrast (minimum)?",
+        answer:
+          "No. Text in an inactive control has no contrast requirement. Making it more readable is a preference you may choose; a line explaining why it is disabled is information and must meet the ratio.",
+      },
     ],
     rubric: [
       "Every text pair carries a measured ratio",
       "Failing pairs are repaired and re-measured",
-      "A 200 per cent test was run with breakages fixed",
+      "A 200 per cent test was run and any breakage fixed",
       "Line length and spacing decisions are recorded",
     ],
     criteria: [
@@ -779,7 +784,7 @@ export const module11: Lesson[] = [
         levels: [
           "No measurements.",
           "Body text measured only.",
-          "All pairs measured including captions, placeholders and disabled text.",
+          "All pairs measured including captions, placeholders and disabled text, with exempt pairs marked.",
           "As adequate, and the sheet marks which pairs are permitted and which are forbidden.",
         ],
         remediation:
@@ -793,7 +798,7 @@ export const module11: Lesson[] = [
         levels: [
           "Failures left in place.",
           "Repaired without re-measuring.",
-          "Repaired and re-measured, with removals justified.",
+          "Repaired and re-measured, with removals justified — or no failing pair, with the measurements recorded.",
           "As adequate, and one repair removed the need for the text rather than restyling it.",
         ],
         remediation:
@@ -801,13 +806,13 @@ export const module11: Lesson[] = [
         recheck: "The repair record.",
       },
       {
-        criterion: "A 200 per cent test was run with breakages fixed",
+        criterion: "A 200 per cent test was run and any breakage fixed",
         evidence:
           "Screens at enlarged text with named breakages and their fixes.",
         levels: [
           "Not tested.",
           "Tested with breakages recorded but unfixed.",
-          "Tested, named and fixed by allowing reflow.",
+          "Tested, with breakages named and fixed by allowing reflow, or a clean result recorded.",
           "As adequate, and no fix reduced the text size or removed content.",
         ],
         remediation:
@@ -830,7 +835,7 @@ export const module11: Lesson[] = [
       },
     ],
     repairs: [
-      "If quiet text is unmeasured, measure captions, placeholders and disabled labels.",
+      "If quiet text is unmeasured, measure captions, placeholders and disabled labels, marking the exempt ones.",
       "If a pair fails, darken it, remove it, or replace it with a permanent hint.",
       "If enlarging clips content, let containers grow instead of shrinking text.",
       "If lines run long, cap the container and record the value.",
@@ -845,7 +850,7 @@ export const module11: Lesson[] = [
         purpose: "Supplies the measurable target for every pair you allow.",
         minutes: "15–25",
         limits:
-          "Free reading, no account. Verified 2026-09-06. A passing ratio is not proof of legibility at real sizes in real light.",
+          "Free reading, no account. Verified 2026-09-06. A passing ratio is not proof of legibility at real sizes in real light. Its exceptions include inactive controls, pure decoration and logos.",
         fallbackId: "R29",
       },
       {
@@ -879,7 +884,7 @@ export const module11: Lesson[] = [
       "Colour may reinforce meaning; it may not be the only carrier.",
       "Second signals: text, shape, position, weight, an icon with a distinct silhouette.",
       "Greyscale is the fastest test and catches most failures.",
-      "Colour-vision differences affect roughly one in twelve men; red and green pairs fail first.",
+      "Colour-vision differences affect roughly one man in twelve in many populations; red and green pairs fail first.",
       "Charts, status and required fields are the usual offenders.",
     ],
     explanation: [
@@ -977,7 +982,7 @@ export const module11: Lesson[] = [
         levels: [
           "Not audited.",
           "Obvious cases only.",
-          "All the usual categories checked and listed.",
+          "All the usual categories checked and listed, or none found and how you checked recorded.",
           "As adequate, and one signal is found in a place you had not considered, such as a hover or a chart legend.",
         ],
         remediation:
@@ -1070,8 +1075,8 @@ export const module11: Lesson[] = [
     title: "Everything works from a keyboard",
     objective:
       "Complete one whole task using only a keyboard, record every point where it was impossible or unclear, and repair the worst without adding a mouse-only workaround.",
-    bringForward: "Your m09 key tables and focus rules, and a rough build.",
-    prerequisite: "Your key tables and, if possible, a rough running page.",
+    bringForward: "Your m09 key tables and focus rules, and a running page if you have one.",
+    prerequisite: "Your key tables, and a running page if you have one; paper screens otherwise.",
     why: "If a task cannot be completed from a keyboard, it cannot be completed by a large group of people, including many who do not consider themselves disabled.",
     teach: [
       "Every function must be reachable and operable without a pointer.",
@@ -1091,7 +1096,7 @@ export const module11: Lesson[] = [
     example:
       "The booking task was attempted with the mouse unplugged. Four failures. The date picker could be reached and not operated: arrow keys did nothing, so no date could be chosen — a total block, repaired against the m09 key table. The filter panel trapped focus, with escape doing nothing. The remove control, hover-only, could not be reached at all. Focus was invisible on the tinted review panel. The repair addressed the date picker first, because it stopped the task entirely; the trap was recorded as the second, and the write-up noted that a mouse-only workaround was explicitly not acceptable as a fix.",
     freeToolPath:
-      "Unplug the mouse or put it out of reach, and use the tab, arrow, enter, space and escape keys. If your prototype is a local HTML file, this test is fully available with no tooling.",
+      "Put the mouse out of reach and use the tab, arrow, enter, space and escape keys. The course’s practice lab at /labs/m11/ on the course site lists the keys and what to record. With no running page, walk your Module 8 screens on paper against your key tables and mark every result as specified and untested.",
     outputs: [
       "A recorded keyboard-only attempt at one full task",
       "A list of unreachable, unoperable and trapping controls",
@@ -1103,7 +1108,7 @@ export const module11: Lesson[] = [
         minutes: 20,
         title: "Prepare the test",
         instructions: [
-          "Open your prototype and put the mouse out of reach.",
+          "Open your running page, or your paper screens, and put the mouse out of reach.",
           "Have your m09 key tables beside you.",
         ],
       },
@@ -1189,7 +1194,7 @@ export const module11: Lesson[] = [
         levels: [
           "Failures described generally.",
           "Listed without distinguishing the kinds.",
-          "All three kinds distinguished with specific controls named.",
+          "All three kinds distinguished with specific controls named, or none found and the controls checked listed.",
           "As adequate, and every custom control was explicitly checked for trapping.",
         ],
         remediation:
@@ -1203,7 +1208,7 @@ export const module11: Lesson[] = [
         levels: [
           "Repair offers a mouse alternative instead.",
           "Repaired partially, leaving the control operable but not conventional.",
-          "Repaired to the key table, keyboard-only.",
+          "Repaired or specified to the key table, keyboard-only — or no failure found, with the clean run recorded.",
           "As adequate, and the repair was re-tested with the pointer unavailable.",
         ],
         remediation:
@@ -1272,10 +1277,10 @@ export const module11: Lesson[] = [
     prerequisite: "Your field table and error messages.",
     why: "Forms are where accessibility failures cost money directly: a person who cannot complete the form cannot buy, book or apply.",
     teach: [
-      "Every field needs a programmatically associated label, not a nearby word.",
+      "Every field needs a label joined to it in the code (a label element pointing at the field), not a nearby word.",
       "Group related fields so their shared question is announced with them.",
       "Instructions belong before the field and must be associated with it.",
-      "Errors must say what to fix, be reachable, and be announced when they appear.",
+      "Errors must say what to fix, be joined to their field, and be announced, for example by moving focus to a summary.",
       "Do not rely on placeholder text, colour or position to carry meaning.",
     ],
     explanation: [
@@ -1289,7 +1294,7 @@ export const module11: Lesson[] = [
     example:
       "The booking form was rebuilt. Each field gained an associated label, including the ones whose labels had been visual only. The date fields were grouped under one question, and the group name was announced with them. The phone hint moved under the label and was associated with the field. Errors were rewritten to name the fix, a summary at the top linked to each problem field, and the summary was announced when it appeared. The placeholder text disappeared entirely; nothing in the form now depends on it, and one field was removed because no decision needed it.",
     freeToolPath:
-      "A local HTML file with proper labels, groups and hints costs an evening and lets you check the behaviour. On paper, specify each association explicitly and mark the announcement behaviour as untested.",
+      "A local HTML file with proper labels, groups and hints lets you check the behaviour; the practice lab at /labs/m11/ on the course site explains how to tab through and listen to it. On paper, specify each association explicitly and mark the announcement behaviour as untested.",
     outputs: [
       "A field table with associated labels, hints and error text",
       "Grouped fields where several answer one question",
@@ -1673,14 +1678,14 @@ export const module11: Lesson[] = [
     teach: [
       "Anything moving for more than a few seconds needs a way to pause or stop it.",
       "Nothing should flash rapidly; it can trigger seizures.",
-      "Video and audio need captions or a transcript, and both are writing work.",
+      "Video with sound needs captions; a transcript alone does not meet that requirement. Audio-only recordings need a transcript.",
       "Time limits need warning, extension, or removal.",
       "Reduced motion is a request from the person, not a preference to override.",
     ],
     explanation: [
       "Automatically moving content — a carousel, an animated banner, a live-updating region — competes for attention and, for some people, prevents reading entirely. If it moves for more than a few seconds it needs a pause control, and the pause has to be reachable by keyboard and visible without hovering. This is one of the least-implemented requirements in ordinary products.",
       "Rapid flashing is the one accessibility failure that can cause direct physical harm. If your design contains anything that flashes more than a couple of times a second — a loading effect, a video transition, an alert — it should not, and no visual justification outweighs that.",
-      "Captions and transcripts are content work, not a technical step. Captions serve deaf and hard-of-hearing people, and also everyone in a noisy room or without headphones; a transcript additionally serves people who prefer to read, who want to search the content, or whose connection cannot carry the video. If you cannot produce them, the honest response is not to publish the media as the only route to the information.",
+      "Captions and transcripts are content work, not a technical step, and they are not interchangeable. Video with sound needs captions, timed to the speech and the sounds that matter; that is a level A requirement, and a transcript alone does not meet it. An audio-only recording, such as a podcast, needs a transcript. A silent video needs its actions described in text or in an audio track. A transcript beside a captioned video is still worth offering, for people who prefer to read, want to search, or cannot load video. If a video cannot be captioned, make the text the primary route and label the video clearly as an alternative to it.",
       "Time limits appear in more places than teams remember: a held place, a session timeout, a code that expires, a form that clears. Each needs warning before it expires, a way to extend where possible, and preservation of what the person had entered. This is your m07 payment work meeting the criterion that says so explicitly.",
     ],
     misconception:
@@ -1691,7 +1696,7 @@ export const module11: Lesson[] = [
       "Writing captions and transcripts by hand costs time and no money. Pause controls and timer warnings are specification work; test them in a local HTML file if you have one.",
     outputs: [
       "An audit of automatic motion with a pause or removal decision",
-      "Captions or a transcript specified for any media",
+      "Captions for video with sound, a transcript for audio-only, a description for silent video",
       "Time limits with warning, extension and preservation",
       "A confirmation that nothing flashes rapidly",
     ],
@@ -1710,8 +1715,8 @@ export const module11: Lesson[] = [
         title: "Handle media",
         instructions: [
           "List any audio or video in your product.",
-          "Specify captions and a transcript, and who will write them.",
-          "If neither is possible, provide the information in text instead.",
+          "Specify captions for video with sound and a transcript for audio-only, and who writes each.",
+          "If captions cannot be made yet, make text the primary route and label the video as an alternative.",
         ],
       },
       {
@@ -1761,7 +1766,7 @@ export const module11: Lesson[] = [
     ],
     rubric: [
       "Automatic motion is removed or pausable",
-      "Media has checked captions or a transcript",
+      "Media has the alternative its type needs",
       "Time limits warn, extend and preserve",
       "Flashing and reduced motion are both confirmed",
     ],
@@ -1781,14 +1786,14 @@ export const module11: Lesson[] = [
         recheck: "The motion decisions.",
       },
       {
-        criterion: "Media has checked captions or a transcript",
+        criterion: "Media has the alternative its type needs",
         evidence:
-          "Captions corrected by a person, or a transcript, or the information provided as text instead.",
+          "Video with sound has captions checked by a person; audio-only has a transcript; silent video has a description; or no media, stated.",
         levels: [
-          "Media published with no alternative.",
+          "Media published with no alternative, or a transcript offered in place of captions.",
           "Automatic captions accepted unchecked.",
-          "Captions checked or a transcript written, with ownership named.",
-          "As adequate, and the transcript is offered as an alternative route rather than a fallback.",
+          "Each item has the alternative its type needs, with ownership named — or none present, stated.",
+          "As adequate, and a transcript is also offered beside captioned video for reading and searching.",
         ],
         remediation:
           "Watch the video with the captions on and correct every error; names and numbers first.",
@@ -1825,7 +1830,7 @@ export const module11: Lesson[] = [
     ],
     repairs: [
       "If something moves on its own, remove it or add a keyboard-reachable pause.",
-      "If captions are automatic, correct them by hand and add a transcript.",
+      "If captions are automatic, correct them by hand; add a transcript beside them where people need to read or search.",
       "If a timer expires silently, add warning, extension and preservation.",
       "If reduced motion was not re-checked, enable it and walk the product.",
     ],
@@ -1850,7 +1855,7 @@ export const module11: Lesson[] = [
           "Names the specific requirements this lesson satisfies.",
         minutes: "20–30 selected",
         limits:
-          "Free reading, no account. Verified 2026-09-06. An index of the standard; captions and transcripts remain content work it does not teach.",
+          "Free reading, no account. Verified 2026-09-06. An index of the standard: 1.2.2 requires captions for prerecorded video with sound, and 1.2.1 covers audio-only and video-only. Captions and transcripts remain content work it does not teach.",
         fallbackId: "R41",
       },
     ],
@@ -1871,7 +1876,7 @@ export const module11: Lesson[] = [
     prerequisite: "Your structure, alt text and form specifications.",
     why: "Reading about screen readers teaches you the concepts. Hearing your own product teaches you what your decisions actually produced.",
     teach: [
-      "Every major platform ships a screen reader: NVDA, VoiceOver or TalkBack.",
+      "Windows has Narrator built in, Apple devices have VoiceOver, Android has TalkBack. NVDA is a separate free Windows download.",
       "Learn five commands, not fifty: next heading, next link, next form field, read all, stop.",
       "Listen for what is missing: unlabelled fields, unannounced changes, silent images.",
       "You are a sighted occasional user; your session is preliminary, not representative.",
@@ -1879,16 +1884,16 @@ export const module11: Lesson[] = [
     ],
     explanation: [
       "The assigned article is explicit about both halves of this lesson: how to run a basic screen-reader test, and what a sighted occasional tester may not conclude from it. Both matter. Running the test will show you concrete failures — an unlabelled field, an image announced as a filename, a status change nobody hears — and it will not tell you whether your product is usable for someone who navigates this way every day.",
-      "Five commands are enough to start. Navigating by heading tells you whether your outline works. Navigating by link and by form field tells you whether your labels carry. Read-all tells you the order and what is announced. Stop is what you will need most in the first ten minutes. Learning the whole command set is a different project.",
+      "Learn how to stop the reader before anything else: on Windows, Narrator starts and stops with the Windows logo key + Ctrl + Enter, and Ctrl stops it reading. Five commands are enough to start. Navigating by heading tells you whether your outline works. Navigating by link and by form field tells you whether your labels carry. Read-all tells you the order and what is announced. Stop is what you will need most in the first ten minutes. Learning the whole command set is a different project.",
       "Listen for absence rather than presence. The failures are usually silence where something happened: a filter applied and nothing announced, an error appearing with no notification, an icon button read as “button”. Your m09 focus rules and m11 form associations are exactly what these gaps test.",
       "Say what your session establishes. It establishes that specific failures exist — that is real and useful. It does not establish that the product works, because you know where everything is, you can see the screen, and you are not using the software the way a daily user does. The catalog row for this reading says the same thing, and your write-up should repeat it.",
     ],
     misconception:
       "“I tested with a screen reader, so the product is accessible for blind users.” You found some failures. A sighted person who can see the screen and knows the design is not simulating blindness, and a competent write-up says so in the same paragraph as the findings.",
     example:
-      "Twenty minutes with VoiceOver on the researcher's own phone. Navigating by heading confirmed the m06 outline worked. Six failures were found: the shortlist icon was announced as “button”, the availability dot was silent so full classes sounded identical to available ones, applying a filter announced nothing at all, the error summary was not announced when it appeared, one image was read as its filename, and the date group's question was not announced with its fields. Each mapped to a decision made earlier in the course. The write-up recorded the device, the software, the twenty minutes, and stated that no person who uses a screen reader daily had been involved.",
+      "Twenty minutes with VoiceOver on the designer's own phone. Navigating by heading confirmed the m06 outline worked. Six failures were found: the shortlist icon was announced as “button”, the availability dot was silent so full classes sounded identical to available ones, applying a filter announced nothing at all, the error summary was not announced when it appeared, one image was read as its filename, and the date group's question was not announced with its fields. Each mapped to a decision made earlier in the course. The write-up recorded the device, the software, the twenty minutes, and stated that no person who uses a screen reader daily had been involved.",
     freeToolPath:
-      "The screen reader already on your device: NVDA on Windows, VoiceOver on Apple devices, TalkBack on Android. All are free and already installed or freely downloadable; no purchase and no account are involved.",
+      "The screen reader built into your device: Narrator on Windows (start or stop with the Windows logo key + Ctrl + Enter), VoiceOver on Apple devices, TalkBack on Android. The practice lab at /labs/m11/ on the course site lists how to start, stop and pause each. NVDA is an optional free Windows download. No purchase or account is involved.",
     outputs: [
       "One task attempted with a screen reader, recorded",
       "A list of what was announced and what was missing",
@@ -1901,7 +1906,7 @@ export const module11: Lesson[] = [
         title: "Read and set up",
         instructions: [
           "Read the assigned article, including what an occasional tester cannot conclude.",
-          "Turn on the screen reader for your platform and learn five commands.",
+          "Learn how to stop your platform’s screen reader, then turn it on and learn five commands.",
         ],
       },
       {
@@ -1985,7 +1990,7 @@ export const module11: Lesson[] = [
         levels: [
           "General impressions.",
           "Some failures named without the expected announcement.",
-          "Each failure names the element and what was missing.",
+          "Each failure names the element and what was missing, or a clean result is recorded with what was listened for.",
           "As adequate, and the list distinguishes silence from misleading announcements.",
         ],
         remediation:
@@ -2039,7 +2044,7 @@ export const module11: Lesson[] = [
           "Supplies both the procedure and the boundary this lesson enforces.",
         minutes: "20–30",
         limits:
-          "Free reading, no account. Verified 2026-09-06. Use the free software already on your device: NVDA, VoiceOver or TalkBack. Your own session never substitutes for testing with disabled participants.",
+          "Free reading, no account. Verified 2026-09-06. Use the screen reader built into your device: Narrator on Windows, VoiceOver on Apple devices, TalkBack on Android; NVDA is a separate free Windows download. Your own session never substitutes for testing with disabled participants.",
         fallbackId: "R41",
       },
       {
@@ -2126,7 +2131,7 @@ export const module11: Lesson[] = [
         instructions: [
           "Render key labels in an Indic script and check for clipping.",
           "Increase line height where characters are cut.",
-          "Load on a throttled connection and time when the page becomes usable.",
+          "Load on a throttled connection, check it really slows, and time when the page becomes usable.",
         ],
       },
       {
@@ -2280,7 +2285,7 @@ export const module11: Lesson[] = [
       "An accessibility statement is a factual document, and its usefulness comes from precision. What was checked, with which software, on what device, on what date. Which criteria you worked to. What you found and fixed. What you found and did not fix, and why. What you have not examined at all. Read by someone who relies on assistive technology, that document tells them whether to try, which is the point.",
       "Known problems belong in it. Listing an unfixed problem is not an admission of incompetence; it is information a person can act on, and it commits you publicly to a repair. The alternative — silence — means someone discovers it by being unable to complete a task.",
       "The tested-versus-specified distinction runs through this whole module. You specified associations, key behaviour and announcements; you tested some of them on your own device. Both are real; conflating them turns a design intention into a claim about a build.",
-      "Involving disabled participants is the gap this module cannot close by itself, and the plan is part of the deliverable: who you would recruit, through which organisations, with what lead time, and what it would cost in time or compensation. Your recruitment reading gives the lead times, and they are longer than for other participants — a month is realistic, six to eight weeks where cognitive disabilities are involved.",
+      "Involving disabled participants is the gap this module cannot close by itself, and the plan is part of the deliverable: who you would recruit, through which organisations, with what lead time, and what it would cost in time or compensation. Your recruitment reading gives the lead times, and they are longer than for other participants — allow up to a month, and at least six to eight weeks where less common cognitive disabilities are involved.",
     ],
     misconception:
       "“We should not publish a statement until everything is fixed.” Then it will never be published. A dated, specific statement with known problems listed is more useful to a person deciding whether to attempt your product than a perfect one that does not exist.",
@@ -2417,7 +2422,7 @@ export const module11: Lesson[] = [
           "As adequate, and the plan accounts for accommodations the sessions themselves will need.",
         ],
         remediation:
-          "Use the assigned lead times — up to a month, longer for cognitive disabilities — and name two real routes you could approach.",
+          "Use the assigned lead times — up to a month, 6 to 8 weeks for less common cognitive disabilities — and name two real routes you could approach.",
         recheck: "The plan.",
       },
     ],
@@ -2450,7 +2455,7 @@ export const module11: Lesson[] = [
           "Supplies realistic timings and requirements for the testing this module could not do.",
         minutes: "20–30",
         limits:
-          "Free reading, no account. Verified 2026-09-06; last updated 28 April 2020. It advises contacting organisations at least a month ahead, longer where cognitive disabilities are involved, and gives no compensation amounts.",
+          "Free reading, no account. Verified 2026-09-06; rechecked 2026-10-04, when the page showed last updated 22 September 2026. It advises allowing up to a month and contacting organisations at least a month ahead, or 6 to 8 weeks for less common cognitive disabilities, and gives no compensation amounts.",
         fallbackId: "R08",
       },
     ],

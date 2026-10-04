@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module 11 practice lab: keyboard and screen reader</title>
+<!--
+  HaruCourse · Module 11 practice lab (instructions page).
+  Self-contained: inline CSS only, no scripts, no external requests, no tracking.
+  Works from the course site at /labs/m11/ and from a saved copy opened as a file.
+
+  Screen-reader start, stop and pause controls below were checked against official
+  documentation on 2026-10-04:
+  - Microsoft Support, "Complete guide to Narrator": introduction, Chapter 1
+    (start or stop: Windows logo key + Ctrl + Enter), Chapter 3 (scan mode:
+    Narrator + Spacebar; H, K, F, D) and Appendix B (Exit Narrator: Narrator + Esc;
+    Stop reading: Ctrl; Narrator key: Caps Lock or Insert).
+  - NV Access, NVDA User Guide (Control + Alt + N to start if the desktop shortcut was
+    created; NVDA + Q then Enter to quit; Control stops speech; NVDA key: Insert).
+  - Apple, VoiceOver User Guide for Mac (Command-F5, or hold Command and press Touch ID
+    three times; VO = Control-Option or Caps Lock; Control pauses speech; VO-Right Arrow,
+    VO-Space, VO-Command-H, VO-U; function keys may also need Fn).
+  - Apple, iPhone User Guide (Settings > Accessibility > VoiceOver; Accessibility Shortcut:
+    triple-click the side button or Home button; Siri; tap, swipe, double tap,
+    two-finger tap to pause or continue speaking, three-finger swipe to scroll).
+  - Google, Android Accessibility Help for TalkBack (hold both volume keys for a few
+    seconds once the shortcut is set up; "Hey Google, turn off TalkBack";
+    Settings > Accessibility > TalkBack; swipe, double-tap, two-finger swipe to scroll,
+    two-finger tap to pause or resume speech in TalkBack 9.1 and later).
+  - Apple, Safari User Guide for Mac (Safari > Settings > Advanced >
+    "Press Tab to highlight each item on a webpage").
+-->
+<style>
+  :root {
+    --bg: #f7f6f1;
+    --card: #ffffff;
+    --ink: #1f2a28;
+    --muted: #4f5755;
+    --green: #214e46;
+    --line: #d9d6cb;
+    --focus: #0b57d0;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 1rem; }
+  header.top { background: var(--green); color: #ffffff; }
+  header.top .wrap { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+  header.top p { margin: 0.25rem 0 0; }
+  h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; line-height: 1.25; }
+  h1 { font-size: 1.6rem; margin: 0; }
+  h2 { font-size: 1.3rem; margin: 2rem 0 0.5rem; color: var(--green); }
+  h3 { font-size: 1.1rem; margin: 1.5rem 0 0.4rem; }
+  a { color: var(--green); text-decoration: underline; text-underline-offset: 0.15em; }
+  header.top a { color: #ffffff; }
+  a:focus-visible, summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+  header.top a:focus-visible { outline-color: #ffffff; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  kbd {
+    font-family: ui-monospace, Consolas, "Courier New", monospace;
+    font-size: 0.9em;
+    background: #eeece4;
+    border: 1px solid var(--line);
+    border-radius: 0.25rem;
+    padding: 0 0.3em;
+    white-space: nowrap;
+  }
+  ul, ol { padding-left: 1.4rem; }
+  li { margin: 0.3rem 0; }
+  .note { color: var(--muted); }
+  .warn { border-left: 4px solid var(--green); padding-left: 0.75rem; }
+  footer { border-top: 1px solid var(--line); margin-top: 2rem; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>Keyboard and screen-reader practice lab</h1>
+    <p>HaruCourse · Module 11 · Accessible product design</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav aria-label="On this page" class="card">
+    <h2 id="contents" style="margin-top:0">On this page</h2>
+    <ol>
+      <li><a href="#what">What this lab is</a></li>
+      <li><a href="#open">How to open it</a></li>
+      <li><a href="#keyboard">Part 1: keyboard only</a></li>
+      <li><a href="#reader">Part 2: with a screen reader</a></li>
+      <li><a href="#stop">If the speech is too much</a></li>
+      <li><a href="#record">What to write in the course</a></li>
+      <li><a href="#honest">What your own session can and cannot show</a></li>
+    </ol>
+  </nav>
+
+  <section aria-labelledby="what">
+    <h2 id="what">What this lab is</h2>
+    <p>Step-by-step instructions for two checks you can run yourself: moving through a page with the keyboard only, and listening to it with the screen reader already on your device. It gives the start, stop and pause controls for Windows, Mac, iPhone, iPad and Android.</p>
+    <p>Practise on this page first. It has headings, a list of links and named regions, so every command below has something to find. Then run the same checks on your own prototype or on the page your lesson names.</p>
+    <p>This page makes no network requests, stores nothing and contains no tracking.</p>
+  </section>
+
+  <section aria-labelledby="open">
+    <h2 id="open">How to open it</h2>
+    <ul>
+      <li><strong>On the course site:</strong> this page lives at <code>/labs/m11/</code> on the same site as the course. If the course is already open, keep the site name in the address bar, replace everything after it with <code>/labs/m11/</code> and press Enter.</li>
+      <li><strong>As files on your own computer:</strong> save this page into a folder (in most browsers <kbd>Ctrl</kbd> + <kbd>S</kbd> on Windows, <kbd>Command</kbd> + <kbd>S</kbd> on a Mac, then choose “Web page, HTML only” if asked). Open the saved <code>index.html</code> from that folder; it needs no internet connection.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="keyboard">
+    <h2 id="keyboard">Part 1: keyboard only</h2>
+    <p>This part needs no screen reader. Use a computer, or a phone or tablet with a keyboard connected.</p>
+    <ol>
+      <li>Open the page you are checking: this page to practise, then your own prototype or the page your lesson names.</li>
+      <li>Put the mouse out of reach, or keep your hands off the trackpad.</li>
+      <li>Use only these keys: <kbd>Tab</kbd> to move forward, <kbd>Shift</kbd> + <kbd>Tab</kbd> to move back, <kbd>Space</kbd> or <kbd>Enter</kbd> to press a button, the arrow keys to move between choices in a group, <kbd>Esc</kbd> to close something.</li>
+      <li>Go from the top of the page to the end, and try to complete the one task you chose: reach every link and control, and use each one.</li>
+      <li>Write down every point where you could not see where you were, could not reach something, or could not go on.</li>
+      <li>Note what worked as well. A check that found nothing wrong is a result when you write down what you checked.</li>
+    </ol>
+    <p class="note">On a Mac in Safari, <kbd>Tab</kbd> skips buttons and links until you turn on Safari &gt; Settings &gt; Advanced &gt; “Press Tab to highlight each item on a webpage”. Chrome, Edge and Firefox do not need this.</p>
+  </section>
+
+  <section aria-labelledby="reader">
+    <h2 id="reader">Part 2: with a screen reader</h2>
+    <p class="warn"><strong>Learn how to stop it before you start it.</strong> A screen reader starts talking straight away, and on phones it changes how touch works. Read the controls for your device first, and set up the on/off shortcut before you switch the reader on.</p>
+    <p>Use the reader that is already on your device. You do not need to buy or install anything.</p>
+
+    <h3 id="narrator">Windows: Narrator (built into Windows)</h3>
+    <ul>
+      <li><strong>Start or stop:</strong> <kbd>Windows logo key</kbd> + <kbd>Ctrl</kbd> + <kbd>Enter</kbd>. Press the same keys again to stop.</li>
+      <li><strong>Narrator key:</strong> <kbd>Caps Lock</kbd> or <kbd>Insert</kbd>. Commands below write it as “Narrator”.</li>
+      <li><strong>Stop it reading:</strong> <kbd>Ctrl</kbd>. <strong>Turn speech off or on:</strong> Narrator + <kbd>Shift</kbd> + <kbd>S</kbd>. <strong>Exit:</strong> Narrator + <kbd>Esc</kbd>.</li>
+      <li><strong>On a web page:</strong> scan mode usually turns on by itself in Edge, Chrome and Firefox (Narrator + <kbd>Spacebar</kbd> turns it on or off). In scan mode press <kbd>H</kbd> for the next heading, <kbd>K</kbd> for the next link, <kbd>F</kbd> for the next form field, <kbd>D</kbd> for the next landmark, and <kbd>Enter</kbd> or <kbd>Spacebar</kbd> to use the item. <kbd>Tab</kbd> still moves between controls.</li>
+      <li><strong>Other way in:</strong> Settings &gt; Accessibility &gt; Narrator, or <kbd>Windows logo key</kbd> + <kbd>Ctrl</kbd> + <kbd>N</kbd> to open Narrator settings.</li>
+    </ul>
+    <p class="note">NVDA is a different, free screen reader for Windows that you would have to download and install from NV Access. This lab does not need it. If you already use NVDA: <kbd>Ctrl</kbd> stops speech, and NVDA + <kbd>Q</kbd> then <kbd>Enter</kbd> quits (the NVDA key is <kbd>Insert</kbd>).</p>
+
+    <h3 id="voiceover-mac">Mac: VoiceOver</h3>
+    <ul>
+      <li><strong>Start or stop:</strong> <kbd>Command</kbd> + <kbd>F5</kbd>. If nothing happens, hold <kbd>Fn</kbd> as well. On a keyboard with Touch ID: hold <kbd>Command</kbd> and quickly press Touch ID three times.</li>
+      <li><strong>VO keys:</strong> <kbd>Control</kbd> + <kbd>Option</kbd> together, or <kbd>Caps Lock</kbd>. Commands below write them as “VO”.</li>
+      <li><strong>Pause or resume speech:</strong> <kbd>Control</kbd>.</li>
+      <li><strong>Move and act:</strong> VO + <kbd>Right Arrow</kbd> for the next item, VO + <kbd>Space</kbd> to press it, VO + <kbd>Command</kbd> + <kbd>H</kbd> for the next heading, VO + <kbd>U</kbd> for the rotor (lists of headings, links and form controls).</li>
+      <li><strong>Other way in:</strong> Apple menu &gt; System Settings &gt; Accessibility &gt; VoiceOver.</li>
+    </ul>
+
+    <h3 id="voiceover-iphone">iPhone or iPad: VoiceOver</h3>
+    <ul>
+      <li><strong>First, set up the shortcut:</strong> Settings &gt; Accessibility &gt; Accessibility Shortcut &gt; VoiceOver. After that, triple-click the side button (or the Home button on models that have one) to turn VoiceOver on or off. You can also ask Siri to “Turn on VoiceOver” or “Turn off VoiceOver”.</li>
+      <li><strong>Important:</strong> while VoiceOver is on, touch works differently. Tap once to select and hear an item; double-tap to use it.</li>
+      <li><strong>Move:</strong> swipe right for the next item and left for the previous one. Scroll with a three-finger swipe up or down.</li>
+      <li><strong>Pause or continue speaking:</strong> two-finger tap.</li>
+      <li><strong>Practise safely:</strong> Settings &gt; Accessibility &gt; VoiceOver &gt; VoiceOver Practice lets you try gestures without changing anything.</li>
+    </ul>
+
+    <h3 id="talkback">Android: TalkBack</h3>
+    <ul>
+      <li><strong>First, set up the shortcut:</strong> Settings &gt; Accessibility &gt; TalkBack, then turn on the TalkBack shortcut. After that, press and hold both volume keys for a few seconds to turn TalkBack on or off. You can also say “Hey Google, turn off TalkBack”.</li>
+      <li><strong>Important:</strong> while TalkBack is on, touch works differently. Tap once to select and hear an item; double-tap to use it.</li>
+      <li><strong>Move:</strong> swipe right for the next item and left for the previous one. Scroll with a two-finger swipe.</li>
+      <li><strong>Pause or resume speech:</strong> two-finger tap (TalkBack 9.1 and later on supported phones).</li>
+      <li>Menu names differ between phone makers. If you cannot find a setting, search Settings for “TalkBack”.</li>
+    </ul>
+
+    <h3 id="try">What to try</h3>
+    <ol>
+      <li>On this page: move heading by heading, then landmark by landmark, then link by link. Do the headings alone tell you what the page holds?</li>
+      <li>On your own page: move field by field. Is each field announced with its label, and a group of choices with its question?</li>
+      <li>Find every button. Does each have a name that says what it does?</li>
+      <li>Complete your task. If a message or error appears, are you told it appeared, and which field it is about?</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="stop">
+    <h2 id="stop">If the speech is too much</h2>
+    <ol>
+      <li>Pause it first: <kbd>Ctrl</kbd> on Windows, <kbd>Control</kbd> on a Mac, a two-finger tap on a phone.</li>
+      <li>Then switch it off with the same shortcut you used to switch it on.</li>
+      <li>On a phone, if gestures stop doing what you expect, use the shortcut you set up (triple-click, or both volume keys), or ask Siri or Google Assistant to turn it off.</li>
+      <li>Take a break. Ten minutes is plenty for one session, and you can come back.</li>
+    </ol>
+    <p>Part 1 needs no screen reader at all, so you can always do the keyboard test on its own.</p>
+  </section>
+
+  <section aria-labelledby="record">
+    <h2 id="record">What to write in the course</h2>
+    <ul>
+      <li>Which page you tested, with which device, browser and screen reader (or keyboard only), and for how many minutes.</li>
+      <li>What happened, step by step, in the order it happened.</li>
+      <li>Each failure as what you met, what should have happened, and the decision that caused it.</li>
+      <li>Anything you checked and found working. A clean result counts if you write down what you checked.</li>
+    </ul>
+      </section>
+
+  <section aria-labelledby="honest">
+    <h2 id="honest">What your own session can and cannot show</h2>
+    <p>Your session finds real failures in the page you check, and that is useful. It does not show what disabled people experience. You can see the screen, you know where things are, and you use these tools occasionally rather than every day. Say that in the same place you report what you found.</p>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p class="note">Fictional practice material for HaruCourse. Device controls were checked against Microsoft, Apple, Google and NV Access documentation on 4 October 2026. Menus and gestures change between versions; if a control here does not work, use the Settings route for your device.</p>
+</footer>
+</body>
+</html>

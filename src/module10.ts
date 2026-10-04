@@ -85,21 +85,21 @@ export const module10: Lesson[] = [
       "Start from the question, not the artefact. Different questions need different prototypes.",
       "Paper answers questions about order, wording and expectation.",
       "A clickable prototype answers questions about navigation and flow.",
-      "Only a built thing answers questions about timing, real data and assistive technology.",
+      "A timed click-through can stage a wait; only a built thing shows real loading, real data and assistive technology.",
       "Every fidelity choice makes something untestable; write down what.",
     ],
     explanation: [
-      "The assigned guidance frames prototypes as tools for learning, and the practical consequence is that the artefact follows the question. “Do people understand what they are committing to?” is answerable on paper. “Can people find the cancellation route?” needs something clickable. “Does the wait feel acceptable on a slow connection?” needs a real page and real throttling. Building the highest fidelity you can manage answers the first two expensively and the third accidentally.",
-      "Low fidelity is not a lesser stage; it is a different instrument with its own reach. Paper is fast, invites criticism, and removes the visual polish that makes people comment on colour instead of order. Its limit is real: it cannot show timing, it cannot show what happens when data is slow or wrong, and it cannot test anything about the keyboard or a screen reader.",
+      "The assigned guidance frames prototypes as tools for learning, and the practical consequence is that the artefact follows the question. “Do people understand what they are committing to?” is answerable on paper. “Can people find the cancellation route?” needs something clickable. “Will people press pay twice during a four-second wait?” can be asked with a click-through whose screen moves on by itself after four seconds. “How long is the real wait on a slow connection, and what appears first?” needs a running page and throttling. Building the highest fidelity you can manage answers the first questions expensively and the last one accidentally.",
+      "Low fidelity is not a lesser stage; it is a different instrument with its own reach. Paper is fast, invites criticism, and removes the visual polish that makes people comment on colour instead of order. Its limit is real: it can stage a wait only with you counting beside the person, it cannot show what happens when data is slow or wrong, and it cannot test anything about the keyboard or a screen reader.",
       "A clickable prototype built from a local HTML file — plain pages with links — answers flow questions honestly and costs an evening. It also has a boundary worth stating: it usually contains one path with clean data, so it tests whether the route works, not whether the product does.",
-      "Write the untestable list at the moment you choose, not when someone asks. This is the same discipline as m05's exclusion sentence, and it prevents the familiar failure where a paper test becomes evidence that the product is usable, or a clickable prototype becomes evidence that the performance is fine.",
+      "Write the untestable list at the moment you choose, not when someone asks. This is the same discipline as m05's exclusion sentence, and it prevents the familiar failure where a paper test becomes evidence that the product is usable, or a timed click-through becomes evidence that the real performance is fine.",
     ],
     misconception:
       "“A more realistic prototype gives more reliable results.” It gives results about a wider set of things, at more cost, and it makes people comment on the surface. If your question is about order or wording, realism is money spent buying feedback you did not want.",
     example:
-      "Three questions produced three prototypes. “Do people understand what they are committing to before paying?” — paper, because the question is about wording and order, and the untestable list said: nothing about timing, nothing about real prices. “Can people find how to change a booking?” — a local HTML click-through of six pages, with the note that only one path exists and all data is clean. “Does the payment wait feel bearable?” — a rough page with a deliberate delay and throttling, which was the only one that needed any code, and it answered a question the other two could not touch.",
+      "Three questions produced three prototypes. “Do people understand what they are committing to before paying?” — paper, because the question is about wording and order, and the untestable list said: nothing about timing, nothing about real prices. “Can people find how to change a booking?” — a local HTML click-through of six pages, with the note that only one path exists and all data is clean. “Do people press pay twice during the payment wait?” — the same click-through with a processing screen that moved on by itself after four seconds, with the note that the wait was invented and fixed, so it said nothing about how long real payments take. Only that last question about real timing was left for a running page later.",
     freeToolPath:
-      "Paper for order and wording; a folder of linked local HTML files for flow; the same files with throttling for timing. No account, subscription or design platform is required at any fidelity in this module.",
+      "Paper for order and wording; linked screens (paper you swap by hand, linked local files, or a free tool) for flow, with a timed transition where a wait matters; a running page over a slowed connection only when the question is about real loading. No paid platform is required at any fidelity in this module.",
     outputs: [
       "One written question per prototype you plan",
       "A chosen fidelity for each, with the reason",
@@ -157,7 +157,7 @@ export const module10: Lesson[] = [
       {
         question: "What can paper not answer?",
         answer:
-          "Anything about timing, real or messy data, performance, keyboard behaviour or assistive technology. It is excellent for order, wording and expectation.",
+          "Real loading and performance, real or messy data, keyboard behaviour or assistive technology. It can stage a wait only roughly, with someone counting. It is excellent for order, wording and expectation.",
       },
       {
         question: "Why write the untestable list when choosing?",
@@ -167,7 +167,7 @@ export const module10: Lesson[] = [
       {
         question: "When is higher fidelity justified?",
         answer:
-          "When a specific question cannot be answered lower down — timing, real data, implemented behaviour. Not because the result will look more convincing.",
+          "When a specific question cannot be answered lower down — real loading speed, real data, implemented behaviour. A wait of a length you choose can be staged in a click-through. Not because the result will look more convincing.",
       },
     ],
     rubric: [
@@ -284,14 +284,14 @@ export const module10: Lesson[] = [
     prerequisite: "Your chosen flow and its screens.",
     why: "A prototype nobody can click is a picture. A prototype that requires a paid account is a dependency your course does not accept.",
     teach: [
-      "Linked local files make a real click-through: a page per screen, a link per action.",
+      "A click-through needs no account for the person taking part: paper screens you swap, linked local files, or a free tool’s share link.",
       "Include at least one failure path or the test only proves the happy path exists.",
       "Fake data must be plausible and occasionally awkward: long names, missing values.",
       "Record every faked behaviour; testers will assume anything that responds is real.",
       "Keep it disposable. If you are reluctant to change it, it is too polished.",
     ],
     explanation: [
-      "A folder of HTML files with links between them is a genuine clickable prototype: it runs in any browser, needs no account or install, works offline, and can be handed to a participant on their own phone. The mechanism is not the point — the point is that the route is walkable — and building it this way removes the tool question entirely, which is why the course's required exercise uses it.",
+      "Paper screens you swap by hand, a folder of linked local files, and a free prototyping tool’s share link are all genuine click-throughs: the person taking part needs no account and installs nothing. The mechanism is not the point — the point is that the route is walkable — and paper removes the tool question entirely, which is why it is always an allowed route here.",
       "Prototypes with only a happy path produce tests where everything works and nothing is learned. Include at least one failure: a full class, a declined payment, an empty result. Those are the paths where your m07 exception table gets its first contact with a person, and where most of the real findings come from.",
       "Fake data shapes results. All-short names and round prices hide layout problems and make comparisons easier than they will be; a set that includes one very long name, one missing value and one awkward number tests the design rather than the demo. This is the same discipline as the dense-data lesson in m08, applied to what the participant sees.",
       "Write down what the prototype fakes: which buttons do nothing, which data is invented, what happens instantly that would really take seconds. Participants treat anything that responds as real, and a finding drawn from a faked behaviour is not a finding about your product.",
@@ -301,7 +301,7 @@ export const module10: Lesson[] = [
     example:
       "Seven linked files covered browse, detail, review, pay, confirm, a full-class failure and a payment failure. Data included one class with a very long title, one with no price shown, and one with a single place remaining. Buttons that did nothing were listed on a fakes sheet — the account link, the search box, the second page of results — along with the two-second delay inserted before confirmation. In testing, one participant tried the search box, which the fakes sheet had predicted, and the moderator recorded it as an untested route rather than a failure.",
     freeToolPath:
-      "A text editor and a browser. One file per screen, links between them, and your real content. Add a stylesheet if you want the fidelity; the point is that it opens on a participant's phone with no account and no install.",
+      "Paper screens with you acting as the computer, or a text editor and a browser with one file per screen and links between them, or a free tool’s share link. Whichever you choose, the person taking part needs no account and installs nothing.",
     outputs: [
       "A clickable prototype of one flow, runnable in a browser",
       "At least one failure path included",
@@ -321,7 +321,7 @@ export const module10: Lesson[] = [
         minutes: 40,
         title: "Build the click-through",
         instructions: [
-          "Create one file per screen with your real content.",
+          "Make one sheet or one file per screen, with your real content.",
           "Link each action to the screen it should reach.",
           "Add the failure path from your exception table.",
         ],
@@ -348,7 +348,7 @@ export const module10: Lesson[] = [
         minutes: 15,
         title: "Open it on a phone",
         instructions: [
-          "Open the prototype on a phone and walk the flow.",
+          "Walk the flow at phone size: on a phone, or with paper screens cut to phone size.",
           "Fix anything unreachable or unreadable at that size.",
           "Save the prototype and the fakes sheet together.",
         ],
@@ -372,25 +372,25 @@ export const module10: Lesson[] = [
       },
     ],
     rubric: [
-      "The prototype runs in a browser with no account",
+      "The click-through is walkable with no account for the participant",
       "At least one failure path is included",
       "Data includes long, missing and edge-case values",
       "A fakes sheet records everything that does not work",
     ],
     criteria: [
       {
-        criterion: "The prototype runs in a browser with no account",
+        criterion: "The click-through is walkable with no account for the participant",
         evidence:
-          "Linked local files walkable end to end, opened on a phone as well as a computer.",
+          "Paper screens, linked local files or a free tool's share link, walkable end to end at phone size.",
         levels: [
-            "Static images with no links.",
-          "A click-through that requires an account or install.",
-          "Linked local files, walkable, opened on a phone.",
-          "As adequate, and the prototype works offline, so it can be used anywhere a participant is.",
+          "Static screens nobody can move through.",
+          "A click-through the participant must sign in to or install something for.",
+          "Walkable end to end with no account for the participant, checked at phone size.",
+          "As adequate, and it works offline or on paper, so it can be used anywhere a participant is.",
         ],
         remediation:
-          "Rebuild as one file per screen with plain links, then open the first file on a phone and walk the flow.",
-        recheck: "The prototype opened on a phone.",
+          "Rebuild as paper screens you swap by hand, or as one local file per screen with plain links, then walk the flow at phone size.",
+        recheck: "The click-through walked at phone size.",
       },
       {
         criterion: "At least one failure path is included",
@@ -436,7 +436,7 @@ export const module10: Lesson[] = [
       },
     ],
     repairs: [
-      "If the prototype needs an account, rebuild it as linked local files.",
+      "If the participant would need an account, rebuild it on paper or as linked local files.",
       "If only the happy path exists, add the highest-harm failure.",
       "If the data is tidy, substitute your worst real values.",
       "If nothing is recorded, tap every control and list the non-responses.",
@@ -785,7 +785,7 @@ export const module10: Lesson[] = [
         levels: [
           "Whoever was available, with no screening.",
           "Screened loosely without recording experience.",
-          "Screened, with experience and exclusions recorded.",
+          "Screened, with experience and exclusions recorded — or, if nobody could be recruited, the screening line plus a dated record of who was approached and what happened.",
           "As adequate, and one participant was deliberately recruited to differ from the others.",
         ],
         remediation:
@@ -853,7 +853,7 @@ export const module10: Lesson[] = [
           "Supplies realistic recruitment planning for a session-based study.",
         minutes: "20–30",
         limits:
-          "Free reading, no account. Verified 2026-09-06; last updated 28 April 2020. Written for teams with agencies and budgets; your own network is a declared convenience sample.",
+          "Free reading, no account. Verified 2026-09-06; rechecked 2026-10-04, when the page showed last updated 22 September 2026. Written for teams with agencies and budgets; your own network is a declared convenience sample.",
         fallbackId: "R08",
       },
       {
@@ -986,7 +986,7 @@ export const module10: Lesson[] = [
         levels: [
           "Only outcomes recorded.",
           "Expectation asked occasionally.",
-          "Asked consistently before changes and confirmed afterwards.",
+          "Asked consistently before changes and confirmed afterwards — or, on the rehearsal route, the expectation questions placed at each screen change, labelled as rehearsal.",
           "As adequate, and at least one mismatch is quoted verbatim.",
         ],
         remediation:
@@ -1000,7 +1000,7 @@ export const module10: Lesson[] = [
         levels: [
           "No log.",
           "Interventions mentioned without wording.",
-          "Each logged with wording, timing and trigger.",
+          "Each logged with wording, timing and trigger — or, on the rehearsal route, a dated statement that no participant session took place.",
           "As adequate, and unnecessary interventions are identified for your own improvement.",
         ],
         remediation:
@@ -1015,7 +1015,7 @@ export const module10: Lesson[] = [
         levels: [
           "Written days later from memory.",
           "Written promptly but layers merged.",
-          "Prompt and layered, with reconstruction marked.",
+          "Prompt and layered, with reconstruction marked; a rehearsal record is labelled as one.",
           "As adequate, and at least one observation carries two candidate interpretations.",
         ],
         remediation:
@@ -1029,7 +1029,7 @@ export const module10: Lesson[] = [
         levels: [
           "Assistance not recorded.",
           "Mentioned without a boundary.",
-          "The point of assistance is marked and later data flagged.",
+          "The point of assistance is marked and later data flagged; on the rehearsal route, stated as not applicable.",
           "As adequate, and the analysis treats assisted completions separately from unassisted ones.",
         ],
         remediation:
@@ -1299,7 +1299,7 @@ export const module10: Lesson[] = [
     misconception:
       "“Five users find 85 per cent of problems.” That figure comes from specific studies under specific assumptions, and it is routinely quoted as though it applied to any test of anything. Your honest claim is what you saw, with the participant count beside it.",
     example:
-      "The report's claims section said: three participants, recruited through one group, all comfortable with online payment; two could not tell whether their place was held; nobody completed the cancellation task unassisted; the review-screen wording confused all three. Its cannot-claim section said: nothing about how common these are, nothing about people who do not use online payment, nothing about performance or accessibility. One temptation was worked through: reporting “67 per cent unsure”, whose interval at n = 3 spanned almost the whole range, which was shown once in the appendix to settle the question.",
+      "The report's claims section said: three participants, recruited through one group, all comfortable with online payment; two could not tell whether their place was held; nobody completed the cancellation task unassisted; the review-screen wording confused all three. Its cannot-claim section said: nothing about how common these are, nothing about people who do not use online payment, nothing about performance or accessibility. One temptation was worked through: reporting “67 per cent unsure”. Two of three, by the adjusted method, gives a range from about 20 to about 94 per cent, which was shown once in the appendix to settle the question.",
     freeToolPath:
       "Written work plus a spreadsheet or calculator for the interval. The interval reading gives no formulas, so use a published one, show your inputs and state which you used.",
     outputs: [
@@ -1478,23 +1478,23 @@ export const module10: Lesson[] = [
     guided: true,
     title: "Repair, predict, re-test",
     objective:
-      "Repair the top-ranked problem, write the prediction before re-testing, run the re-test with new participants, and report the result including a failure.",
+      "Repair the top-ranked problem, write the prediction before re-testing, run the re-test, preferably with people new to the prototype, and report the result including a failure.",
     bringForward:
       "Your ranked problem list and the prototype.",
     prerequisite: "Your ranked problems and a prototype you can change.",
     why: "A test that changes nothing was theatre. A repair that is not re-tested is a hope.",
     teach: [
       "Repair the top-ranked problem, not the easiest one.",
-      "Change one thing so the re-test can attribute the difference.",
+      "For this exercise, change one thing, so any difference in the re-test can be attributed to it.",
       "Write the prediction first: what should happen if the repair works.",
-      "Re-test with people who have not seen the prototype.",
+      "Prefer people new to the prototype: a returning person remembers the tasks, so success may be memory.",
       "Report a failed repair as a result, not as a stage on the way to success.",
     ],
     explanation: [
       "Choosing the top-ranked problem is a discipline because the easy fix is always available and always tempting. Repairing the wording while the payment-uncertainty problem remains produces a case study that looks iterative and a product that still makes people pay twice.",
-      "One change at a time is what makes the re-test informative. Change three things and a better result tells you the combination helped; a worse one tells you nothing about which to undo. This costs an extra session and buys the only kind of learning that transfers.",
+      "This exercise asks for one change at a time because that is what lets the re-test point at a cause. Change three things and a better result tells you the combination helped; a worse one tells you nothing about which to undo. Teams do sometimes bundle changes on purpose, when they need a broken flow fixed quickly more than they need to know which part worked; the honest report then says the result belongs to the bundle.",
       "The prediction written first is what makes the re-test capable of failing. “People should reach the review screen without asking whether the place is held” can be checked; “it should be clearer” cannot, and after the fact everything looks clearer to the person who changed it.",
-      "Fresh participants are necessary because a returning one is testing their memory. Two new people are enough for a re-test of a single change, and the record should name them as new.",
+      "This exercise prefers fresh participants because a returning one may be testing their memory of the tasks and the problem, a learning effect. Two new people can show whether the predicted behaviour appears at all, not how often it would; if a returning person is all you have, the record says so beside the result.",
     ],
     misconception:
       "“The repair worked because the second group finished faster.” Different people are faster or slower for many reasons. Tie the result to the specific prediction, and if the prediction was about time, say what else could explain it.",
@@ -1505,7 +1505,7 @@ export const module10: Lesson[] = [
     outputs: [
       "One repair addressing the top-ranked problem",
       "A prediction written before the re-test",
-      "Re-test records with new participants",
+      "Re-test records, with people new to the prototype where possible",
       "An honest result, including any failure or partial outcome",
     ],
     steps: [
@@ -1524,14 +1524,14 @@ export const module10: Lesson[] = [
         instructions: [
           "Apply the change to a copy of the prototype.",
           "Keep the previous version intact.",
-          "Change nothing else, however tempting.",
+          "For this exercise, change nothing else, so the result has one cause; list the rest as deferred.",
         ],
       },
       {
         minutes: 40,
         title: "Re-test",
         instructions: [
-          "Run the affected tasks with at least two new participants.",
+          "Run the affected tasks with at least two people new to the prototype, or record why you could not.",
           "Use the same wording and the same moderation discipline.",
           "Record expectation, outcome and hesitation as before.",
         ],
@@ -1596,7 +1596,7 @@ export const module10: Lesson[] = [
       {
         criterion: "Exactly one change was made",
         evidence:
-          "Before-and-after prototypes differing in one respect.",
+          "Before-and-after prototypes differing in one respect, so the result can be attributed to that change.",
         levels: [
           "Several changes bundled.",
           "One main change with incidental others.",
@@ -1677,52 +1677,52 @@ export const module10: Lesson[] = [
     guided: true,
     title: "Testing what only a running thing can test",
     objective:
-      "Test one question that paper and click-throughs cannot answer — timing, a slow connection or real content volume — and record what changed compared with the prototype result.",
+      "Test one question about waiting or real content, choose between a staged wait and a running page on a slowed connection, and state exactly what your result cannot establish.",
     bringForward:
       "Your untestable lists and the payment or loading questions still open.",
     prerequisite: "Your untestable lists and a rough running page.",
     why: "Every module so far has been able to defer performance. The questions it defers are the ones that make people pay twice.",
     teach: [
-      "Timing questions need something that actually waits.",
-      "Throttle the connection and disable the cache; your connection is not typical.",
-      "Real content volume changes layout, scanning and load — test with a lot, not three.",
-      "Watch what appears first, not only what appears eventually.",
-      "Record the device and the throttling profile, or the result is unrepeatable.",
+      "A click-through can stage a wait: a timed transition moves on by itself after the seconds you set, so you can watch what people do during it.",
+      "A staged wait is the same length every time and shows a screen you prepared. It says nothing about how long the real wait will be.",
+      "Real loading — how long it takes, what appears first, what happens when it fails — only shows on a running page over a real or throttled connection.",
+      "Real content volume changes layout, scanning and sorting; test with sixty items, not three, on paper or on screen.",
+      "Record the method, staged or real, the wait in seconds, the device and the item count, or the result cannot be repeated.",
     ],
     explanation: [
-      "A click-through moves instantly, which quietly removes the most consequential part of many flows: the wait. Questions about whether people understand a pending state, whether they press again, or whether they leave, cannot be asked without a real delay — and a delay is easy to add to a local page, so this is a question of choosing to test rather than of tooling.",
-      "Your own connection is unrepresentative, and the browser tools you already used in m07 let you impose a slow profile with the cache disabled. The result is what a person on a poor mobile connection sees, which for a product intended for India and for anyone outside a city centre is closer to typical than your studio conditions.",
-      "Content volume matters as much as speed. Three example classes scan differently from sixty; a list that felt clear becomes a wall, sorting starts to matter, and the empty state you designed never appears while a paging control you did not design becomes essential. Load real quantities before concluding the layout works.",
-      "Record the conditions: device, browser, throttling profile, content volume. Without them the observation cannot be repeated or compared, and a later “it seems fine now” has nothing to disagree with.",
+      "A plain click-through moves instantly, which quietly removes the most consequential part of many flows: the wait. You can put it back without code. A prototyping tool’s timed transition (Figma calls it After delay), one line of HTML in a linked page that moves on after four seconds, or a person holding the next paper screen back while counting all stage a wait, and questions about whether people understand a pending state, press again or leave can then be asked.",
+      "A staged wait is still invented. It lasts exactly as long as you set, every time; the screen behind it is one you prepared; nothing loads, fails or arrives in pieces. So it can show behaviour during a wait of a chosen length, and it cannot show how long real people would wait, what they would see first, or what happens when the connection drops. Write that sentence beside every staged result.",
+      "Real loading needs something actually fetched over a network: a live page, or your own page served from a web address, with the browser’s throttling set to a slow profile and the cache disabled. Your own connection is unrepresentative, and for a product used in India and outside city centres a slow profile is closer to typical. Check that the page really does load more slowly, because one opened straight from a file may not. Throttling models speed, not drop-outs.",
+      "Content volume matters as much as speed, and it needs no build at all. Three example classes scan differently from sixty; a list that felt clear becomes a wall, sorting starts to matter, and a paging control you did not design becomes essential. Load real quantities on paper or on screen, and record the conditions: method, wait in seconds, device, item count.",
     ],
     misconception:
       "“Performance is an engineering concern.” What a person sees during a wait, what they conclude and what they do about it are design decisions. Engineering makes the wait shorter; design decides whether the wait is survivable.",
     example:
-      "Two questions needed a running page. First: does the pending state stop people paying twice? A local page with a deliberate four-second delay and a slow throttling profile was tested with two people — neither pressed again with the pending message present, and one said she would have without it. Second: does the list still work with sixty classes? It did not: the filter summary scrolled away, sorting became necessary, and the promoted items at the top pushed everything else below the fold. Both results were recorded with the device, the browser, the profile and the item count.",
+      "Two questions, two methods. First: does a pending message stop people paying twice during a four-second wait? A click-through whose processing screen moved on by itself after four seconds was tried with two people; neither pressed again while the message showed, and one said she would have without it. The record said the wait was staged and fixed, so it said nothing about real payment times. Second: does the list still work with sixty classes? On paper it did not: the filter summary scrolled away, sorting became necessary, and the promoted items pushed everything else below the fold. How long a real list takes to arrive on a slow phone connection stayed on the untested list, waiting for a running page.",
     freeToolPath:
-      "A local HTML page, a deliberate delay written into it, and your browser's throttling. This is the whole toolchain; no hosting, account or performance service is required.",
+      "A click-through with a timed transition, or paper with someone counting, for a staged wait; a live or served page with your browser’s throttling for real loading; paper or screens loaded with real content for volume. No hosting, account or performance service is required.",
     outputs: [
-      "One question tested that lower fidelity could not answer",
-      "Results under a slow throttled connection with the cache disabled",
+      "One question about waiting or real content, with the method that answers it",
+      "Results labelled staged or real, with what a staged wait cannot establish",
       "A test with realistic content volume",
-      "Recorded conditions: device, browser, profile and volume",
+      "Recorded conditions: method, wait in seconds, device and item count",
     ],
     steps: [
       {
         minutes: 20,
         title: "Pick the question",
         instructions: [
-          "Choose one item from your untestable lists that a running page can now answer.",
-          "Write what result would change a decision.",
+          "Choose one item from your untestable lists about waiting or real content.",
+          "Decide whether a staged wait or real loading answers it, and write what result would change a decision.",
         ],
       },
       {
         minutes: 30,
         title: "Build the conditions",
         instructions: [
-          "Add a realistic delay where the real system would wait.",
+          "Stage the wait with a timed transition or a counted pause, or load a real page with throttling on and the cache off.",
           "Load realistic content volume, not three examples.",
-          "Set a slow throttling profile and disable the cache.",
+          "Write down which kind of wait you built: staged or real.",
         ],
       },
       {
@@ -1747,17 +1747,17 @@ export const module10: Lesson[] = [
         minutes: 15,
         title: "Record conditions",
         instructions: [
-          "Write the device, browser, throttling profile and content volume.",
-          "State what remains untested even now.",
+          "Write the method, wait in seconds, device and item count.",
+          "State what remains untested, including real timing if the wait was staged.",
           "Save the results with the conditions.",
         ],
       },
     ],
     check: [
       {
-        question: "Why can a click-through not answer timing questions?",
+        question: "Can a click-through answer questions about waiting?",
         answer:
-          "Because it moves instantly. The wait — the part where people press again or leave — does not exist in it, so neither do the findings about it.",
+          "Partly. A timed transition stages a wait of a length you choose, so you can watch what people do during it. It cannot show how long the real wait is, what appears first or what happens when loading fails.",
       },
       {
         question: "What does realistic content volume change?",
@@ -1771,38 +1771,38 @@ export const module10: Lesson[] = [
       },
     ],
     rubric: [
-      "The question needed a running page to answer",
-      "Conditions include throttling and realistic volume",
+      "The method matches the question",
+      "Conditions are labelled and include realistic volume",
       "First paint and behaviour under waiting are recorded",
-      "Device, browser, profile and volume are stated",
+      "Method, wait, device and volume are stated",
     ],
     criteria: [
       {
-        criterion: "The question needed a running page to answer",
+        criterion: "The method matches the question",
         evidence:
-          "A question drawn from the untestable lists with a stated decision it would change.",
+          "A question from the untestable lists, with a stated decision and a method that answers it: a staged wait for behaviour during a wait, a running page for real loading.",
         levels: [
-          "A question answerable on paper.",
+          "A question answerable on paper, or a method that cannot answer it.",
           "A relevant question with no decision attached.",
-          "A genuinely higher-fidelity question with its decision.",
+          "A fitting question, its decision and a method that answers it.",
           "As adequate, and the question is the highest-harm item still open.",
         ],
         remediation:
-          "Return to your untestable lists and choose the item that a running page uniquely answers.",
-        recheck: "The question and decision.",
+          "Ask whether your question is about behaviour during a wait of a chosen length, or about how long the real wait is. Choose a staged wait for the first and a running page for the second.",
+        recheck: "The question, decision and method.",
       },
       {
-        criterion: "Conditions include throttling and realistic volume",
+        criterion: "Conditions are labelled and include realistic volume",
         evidence:
-          "A slow profile with the cache disabled, and content at realistic quantity.",
+          "The wait labelled staged or real (a real wait loaded with throttling on and the cache off), and content at realistic quantity.",
         levels: [
-          "Tested on a fast connection with sample data.",
-          "One of the two conditions applied.",
-          "Both applied and recorded.",
+          "Tested with sample data and no stated conditions.",
+          "Either the wait or the volume handled, not both.",
+          "The wait labelled staged or real, with realistic volume.",
           "As adequate, and the volume matches what the real product would hold rather than a round number.",
         ],
         remediation:
-          "Set the profile, disable the cache and multiply your content until the list behaves like a real one.",
+          "Label your wait staged or real, set throttling and disable the cache if it is real, and multiply your content until the list behaves like a real one.",
         recheck: "The test conditions.",
       },
       {
@@ -1820,14 +1820,14 @@ export const module10: Lesson[] = [
         recheck: "The observation notes.",
       },
       {
-        criterion: "Device, browser, profile and volume are stated",
+        criterion: "Method, wait, device and volume are stated",
         evidence:
-          "All four recorded alongside the results.",
+          "The method (staged or real), the wait in seconds, the device and the item count recorded alongside the results.",
         levels: [
           "None recorded.",
           "Some recorded.",
           "All four stated.",
-          "As adequate, and a second device is included so the difference is visible.",
+          "As adequate, and a second device or method is included so the difference is visible.",
         ],
         remediation:
           "Add the four facts to the top of your results; without them the test cannot be repeated.",
@@ -1835,10 +1835,10 @@ export const module10: Lesson[] = [
       },
     ],
     repairs: [
-      "If the question was answerable on paper, choose a genuinely higher-fidelity one.",
-      "If conditions were fast and tidy, throttle and load realistic volume.",
+      "If the method cannot answer the question, switch between a staged wait and real loading.",
+      "If conditions are unlabelled or tidy, label the wait staged or real and load realistic volume.",
       "If only the end state was observed, record the wait and what people did in it.",
-      "If conditions are unstated, add device, browser, profile and volume.",
+      "If conditions are unstated, add method, wait, device and volume.",
     ],
     portfolio:
       "Testing under a slow connection with real volume is rare in junior portfolios and immediately credible, especially for products intended for India and other mobile-first contexts.",
