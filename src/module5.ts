@@ -781,20 +781,20 @@ export const module5: Lesson[] = [
     areas: [4],
     title: "Consent, privacy and a data plan you will keep",
     objective:
-      "Write a consent introduction you can read aloud in under a minute, and a written data plan naming what you will collect, where it will live, who can see it, when it will be deleted and how one person's data could be removed on request.",
+      "Write a consent introduction you can read aloud in under a minute, and a written data plan naming what you will collect, where it will live (including this course app, if you will type de-identified summaries into it), who can see it, when it will be deleted and how one person's data could be removed on request. By default both are written for the made-up practice study; any later real session must follow them.",
     bringForward:
       "Your screener and recruitment plan. Nobody is contacted until this lesson is finished, because consent has to exist before the first message, not before the first recording.",
     why: "Consent is not a form to be signed; it is whether the person understood what they were agreeing to. A study that produced good findings and left someone's phone number in a shared folder has failed at the part that matters most, and it is the part a stranger has trusted you with.",
     teach: [
-      "Informed consent means the person understands, before agreeing, what the research is for, what will happen in the session, what will be collected, whether it will be recorded, who will see it, that they may stop or skip anything at any time, and that stopping costs them nothing. The assigned page lists these plainly. Consent can be recorded on paper, by email, or spoken at the start of a recording, and the method matters less than whether the understanding is real: reading a paragraph at speed to someone who is being polite is not consent, it is a ritual.",
-      "Consent is not permanent. A person can withdraw during the session or afterwards, and withdrawal means their data is removed, not merely flagged. That has a practical consequence for how you store things: if six people's notes are in one undifferentiated document, you cannot honour a withdrawal without destroying the study, so you will be tempted not to honour it. Name files by participant so that one participant can be deleted cleanly. This is why the storage decision and the consent promise belong in the same lesson.",
-      "Your notes are personal data. So are recordings, photographs, screen captures and the message thread you recruited through. Collect the minimum that answers your questions: you almost never need a full name, an address, an employer or a date of birth, and each one you collect is something you must protect, justify and eventually delete. Keep a short participant key — P1, P2 — separate from the notes, so the notes themselves carry no identity, and store the key somewhere the notes are not.",
-      "The assigned pages are written to UK law and UK government practice. India has its own data protection regime, and this course has not verified a primary source for it, so nothing here should be read as a statement of your legal obligations. Treat the guidance as a floor of decent practice, and before recruiting real participants outside a classroom exercise, check the current Indian requirements yourself from a primary source. One rule this course imposes on its own authority regardless of jurisdiction: do not paste research notes, recordings, transcripts or participant details into an AI tool. The assigned page does not discuss AI tools at all, so the guidance is the course's, and the reason is that you cannot promise a participant something you have handed to a third party you do not control.",
+      "Informed consent means the person understands, before agreeing, what the research is for, what will happen in the session, what will be collected, whether it will be recorded (which needs its own agreement), where it will be stored, who will see it, how long it will be kept and how it will be deleted, that they may stop or skip anything at any time, and that stopping costs them nothing. The assigned page lists these plainly. Consent can be recorded on paper, by email, or spoken at the start of a recording, and the method matters less than whether the understanding is real: reading a paragraph at speed to someone who is being polite is not consent, it is a ritual.",
+      "Consent is not permanent. A person can withdraw during the session or afterwards, and withdrawal means their data is removed, not merely flagged. That has a practical consequence for how you store things: if six people's notes are in one undifferentiated document, you cannot honour a withdrawal without destroying the study, so you will be tempted not to honour it. Name files by participant so that one participant can be deleted cleanly, and remember any summary of theirs already typed into the course, which has to go too. This is why the storage decision and the consent promise belong in the same lesson.",
+      "Your notes are personal data. So are recordings, photographs, screen captures and the message thread you recruited through. Collect the minimum that answers your questions: you almost never need a full name, an address, an employer or a date of birth, and each one you collect is something you must protect, justify and eventually delete. Keep a short participant key — P1, P2 — separate from the notes, so the notes themselves carry no identity, and store the key somewhere the notes are not. Know where your words go: anything you type into this course — a worksheet answer, the notes box or the work-reference box — is saved on your device and then on the course server, a hosted database, where you and your reviewer (the course creator) can read it, and a backup downloads a copy to your device. Files you keep on your own computer or on paper are not uploaded; a file location you type is only a locator. So raw notes, recordings, names, contact details and consent forms belong in a private file or on paper with a stated deletion date, never in a course answer. An answer may hold a de-identified summary — a code such as P1, nothing identifying, only what the lesson needs — and only if the participant agreed that a reviewer may read such a summary. Removing names does not make a summary anonymous: a job, a place, a rare event or a distinctive quotation can still identify someone.",
+      "The assigned pages are written to UK law and UK government practice. India has its own data protection regime, and this course has not verified a primary source for it, so nothing here should be read as a statement of your legal obligations. Treat the guidance as a floor of decent practice, and before recruiting real participants outside a classroom exercise, check the current Indian requirements yourself from a primary source. One rule this course imposes on its own authority regardless of jurisdiction: do not paste research notes, recordings, transcripts or participant details into an AI tool; optional AI chats are separate services, outside both your device and the course. The assigned page does not discuss AI tools at all, so the guidance is the course's, and the reason is that you cannot promise a participant something you have handed to a third party you do not control.",
     ],
     misconception:
-      "“It is only a small study with people I know, so consent is overkill.” The size of the study is irrelevant to the person in it, and knowing you makes it harder for them to refuse, not easier. Familiarity raises the standard: say explicitly that they can stop, that you will not be offended, and that their answers will not be attributed to them by name.",
+      "“It is only a small study with people I know, so consent is overkill.” The size of the study is irrelevant to the person in it, and knowing you makes it harder for them to refuse, not easier. Familiarity raises the standard: say explicitly that they can stop, that you will not be offended, and that nothing will be attributed to them by name — and be honest that leaving out a name does not stop people who know them from recognising them.",
     example:
-      "A one-minute spoken introduction that worked: “Thanks for doing this. I am learning product design, and I am trying to understand how people book paid classes — I am not testing you, and there are no wrong answers. It will take about thirty minutes. I would like to write notes, and I would like to record the audio so I do not have to write while you talk — is that all right? The recording stays on my own laptop, I am the only person who will hear it, I will delete it within three months, and I will not use your name anywhere. You can skip any question, and you can tell me to stop at any point, including afterwards, and I will delete everything from your session. Any questions before we start?” The data plan behind it: audio and notes stored in one folder per participant named P1 to P5 on the researcher's own device, a separate contact list holding names and numbers deleted at the end of the study, nothing uploaded anywhere, everything deleted three months after the last session.",
+      "A made-up one-minute spoken introduction that works: “Thanks for doing this. I am learning product design, and I am trying to understand how people book paid classes — I am not testing you, and there are no wrong answers. It will take about thirty minutes. I would like to write notes, and, separately, to record the audio so I do not have to write while you talk — is that all right? The recording and my notes stay on my own laptop, I am the only person who will hear the recording, and I will delete both within three months. If you agree, I will also type a short summary into the course app I am learning with, with no name and nothing that identifies you; it is stored online and my course reviewer can read it. If you would rather not, it stays on my laptop only. You can skip any question, and you can tell me to stop at any point, including afterwards, and I will delete everything from your session, including that summary. Any questions before we start?” The data plan behind it: audio and raw notes in one folder per participant named P1 to P5 on the researcher's own device; a separate contact list holding names and numbers, deleted at the end of the study; de-identified summaries in the course app only for people who agreed; everything deleted three months after the last session.",
     steps: [
       {
         minutes: 25,
@@ -804,12 +804,12 @@ export const module5: Lesson[] = [
       {
         minutes: 25,
         title: "Write the introduction",
-        text: "Write a consent introduction in your own spoken voice, under one minute read aloud. It must cover purpose, duration, recording, who sees it, deletion, and the right to stop or skip. Read it aloud and cut anything you stumble over.",
+        text: "Write a consent introduction in your own spoken voice, under one minute read aloud. It must cover purpose, duration, what you collect, recording as its own yes, where it is stored (including the course server and your reviewer, if summaries will go into the course), who sees it, how long it is kept and how it is deleted, and that taking part is voluntary, with the right to skip, stop or withdraw. Read it aloud and cut anything you stumble over.",
       },
       {
         minutes: 30,
         title: "Write the data plan",
-        text: "Write what you will collect, where each thing lives, who has access, how long you keep it, and the deletion date. Name your files so that one participant can be removed without touching the others.",
+        text: "Write what you will collect, where each thing lives, who has access, how long you keep it, and the deletion date. Name your files so that one participant can be removed without touching the others. Remember that anything typed into this course is stored on the course server and readable by your reviewer, so raw material goes in a private file or on paper and the course gets only a de-identified summary, with agreement.",
       },
       {
         minutes: 25,
@@ -823,7 +823,7 @@ export const module5: Lesson[] = [
       },
     ],
     freeToolPath:
-      "A text file for the introduction and the plan, folders on your own device for the data, and paper for consent if you prefer a signature. No consent platform, cloud drive or transcription service is required, and for a study this size a device you physically control is the simpler and safer choice.",
+      "A text file for the introduction and the plan, folders on your own device for the data, and paper for consent if you prefer a signature. No consent platform, cloud drive or transcription service is required, and for a study this size a device you physically control is the simpler and safer choice. The course app is not that device: what you type here is stored on its server and read by your reviewer, so it holds scripts, plans and de-identified summaries only.",
     deliverable:
       "A spoken consent introduction under one minute; a written data plan covering collection, storage, access, retention, deletion and per-participant removal; scripted responses to four difficult moments; and a stated jurisdiction limitation.",
     check: [
@@ -843,7 +843,7 @@ export const module5: Lesson[] = [
         question:
           "You want a quick summary of a long interview. Can you paste the notes into an AI tool?",
         answer:
-          "Not in this course. You promised the participant that you were the only person with access, and pasting the notes into a service you do not control breaks that promise whatever the service's own policy says. Summarise your own notes; that work is where most of the analysis actually happens.",
+          "Not in this course. You told the participant exactly who would have access — you, and, if they agreed, your course reviewer reading a de-identified summary — and pasting the notes into a service you do not control breaks that promise whatever the service's own policy says. Summarise your own notes; that work is where most of the analysis actually happens.",
       },
     ],
     rubric: [
@@ -857,10 +857,10 @@ export const module5: Lesson[] = [
         criterion:
           "The introduction covers everything a participant must understand",
         evidence:
-          "A written script covering purpose, duration, recording, who will see the material, deletion, and the right to skip or stop, readable aloud in under a minute.",
+          "A written script covering purpose, duration, what is collected, recording as a separate agreement, where material is stored (including the course server and reviewer, if summaries will be typed into the course), who will see it, how long it is kept and how it is deleted, and voluntary participation with the right to skip, stop or withdraw, readable aloud in under a minute.",
         levels: [
           "No introduction, or a sentence asking permission to start.",
-          "Some elements present, but recording, access or the right to stop is missing.",
+          "Some elements present, but recording, storage, access or the right to stop is missing.",
           "All elements present and the script reads naturally aloud.",
           "As adequate, and the script invites questions and says explicitly that refusing costs nothing.",
         ],
@@ -871,11 +871,11 @@ export const module5: Lesson[] = [
       {
         criterion: "The data plan names storage, retention and deletion",
         evidence:
-          "A written plan stating what is collected, where it is stored, who can access it, how long it is kept and the date it will be deleted.",
+          "A written plan stating what is collected, where it is stored, who can access it, how long it is kept and the date it will be deleted, with raw material kept privately and the course holding only de-identified summaries.",
         levels: [
-          "No plan.",
-          "Storage described but no retention period or deletion date.",
-          "Collection, storage, access, retention and deletion all stated.",
+          "No plan, or a plan that puts names, contact details or raw notes into course answers.",
+          "Storage described but no retention period or deletion date, or the course server left out of who can read what.",
+          "Collection, storage, access, retention and deletion all stated, including that course answers are stored on the course server and read by your reviewer.",
           "As adequate, and the plan justifies each item collected against a question it serves, with anything unjustified removed.",
         ],
         remediation:
@@ -891,10 +891,10 @@ export const module5: Lesson[] = [
           "Everything in one document with names in it.",
           "Separate files but identities embedded in the notes.",
           "Per-participant separation with identities kept in a separate key.",
-          "As adequate, and you have walked through a withdrawal on paper and named every place that person's data appears.",
+          "As adequate, and you have walked through a withdrawal on paper and named every place that person's data appears, including any summary typed into the course.",
         ],
         remediation:
-          "Restructure your folders now, before any session. Then write the deletion steps you would follow for P3, and check that the steps actually reach every file.",
+          "Restructure your folders now, before any session. Then write the deletion steps you would follow for P3, and check that the steps actually reach every file and every course answer that mentions P3.",
         recheck: "The structure and the written deletion steps.",
       },
       {
@@ -950,7 +950,7 @@ export const module5: Lesson[] = [
     areas: [4],
     title: "Interviews that produce evidence, not agreement",
     objective:
-      "Run at least one consented interview about a recent specific episode and produce raw notes in which what was said, what you inferred and what you want to follow up are visibly separate, plus a guide revised from what actually happened.",
+      "Rebuild your interview guide around a recent specific episode and test it: by default as a labelled rehearsal, read aloud alone, or optionally, with your Lesson 5 consent and data plan, as one consented interview. Keep any raw notes in a private file with what was said, what you inferred and what you want to follow up visibly separate, put only a de-identified summary (or, for rehearsal, your guide's wording risks) into the course, and revise the guide from what actually happened.",
     bringForward:
       "The interview guide you wrote in Product Design Foundations, your ranked questions, your consent introduction and your data plan. The old guide is a draft to be rebuilt, not a finished instrument.",
     why: "An interview is the cheapest way to learn what someone noticed, expected and decided, and the easiest thing in the world to turn into a conversation in which a helpful person agrees with you for forty minutes. The technique is almost entirely in what you do after they stop talking.",
@@ -958,12 +958,12 @@ export const module5: Lesson[] = [
       "Build the guide around episodes, not opinions. A workable shape is: a warm-up that establishes the context and lets them hear their own voice; a request for the most recent specific instance — “tell me about the last time you booked something like this” — walked through in order from before they started to after they finished; two or three prepared probes for the moments your ranked questions care about; and a closing question that invites what you failed to ask. Six good questions with room to follow is better than fifteen that must be got through.",
       "Follow, do not lead. When someone says “it was a bit confusing”, the useful responses are silence, “say more about that”, and “what happened just before that?”. The damaging response is “was it confusing because the price was hidden?”, which hands them your hypothesis and gets it back as data. Laddering means moving from what happened to how they decided to why it mattered, one step at a time, using their words rather than yours. If you find yourself introducing a noun the participant has not used, notice it.",
       "Silence is the technique people find hardest and gain most from. After an answer that seems finished, wait. Three or four seconds is long enough to be uncomfortable and short enough not to be strange, and it is where the qualification, the exception and the actual story usually arrive. Nodding and moving on politely to the next question is what makes an interview feel smooth and produce nothing.",
-      "Working alone, you cannot moderate well and take full notes at the same time; the assigned page assumes a note-taker you do not have. So decide in advance: record with consent and take only sparse markers during the session, or accept thinner notes and write up immediately afterwards while memory is fresh. Either way, keep three things separate in the record — what they said, in their words; what you inferred from it; and what you want to follow up. Mixing them takes ten seconds during the session and cannot be undone afterwards, because by the next day you will no longer remember which was which.",
+      "Working alone, you cannot moderate well and take full notes at the same time; the assigned page assumes a note-taker you do not have. So decide in advance: record with consent and take only sparse markers during the session, or accept thinner notes and write up immediately afterwards while memory is fresh. Either way, keep three things separate in the record — what they said, in their words; what you inferred from it; and what you want to follow up. Mixing them takes ten seconds during the session and cannot be undone afterwards, because by the next day you will no longer remember which was which. Keep that record in a private file or on paper with a deletion date, not in the course: course answers are stored on the course server where your reviewer can read them, so they hold only a de-identified summary — a code such as P1, no names, nothing that identifies the person — and only if the participant agreed to it.",
     ],
     misconception:
       "“A good interview flows like a conversation.” A good interview is often slightly awkward, because one person is talking far more than the other, silences are being allowed to sit, and the interviewer keeps returning to a detail the participant considers unremarkable. Comfortable, balanced conversation usually means you have been contributing your own views, which are now in the participant's answers.",
     example:
-      "In one session the participant said “the payment was fine, it just took a while.” The interviewer waited. After four seconds: “Well, I did pay twice actually. The first time nothing happened so I did it again, then I got two messages and had to ring them.” The prepared question about payment clarity would never have found this, because the participant had classified the double payment as her own mistake and not as a problem worth mentioning. The note recorded three separate lines: her words verbatim; the inference that the pending state was invisible to her; and the follow-up to ask the next participant what they did when nothing appeared to happen.",
+      "In one session the participant said “the payment was fine, it just took a while.” The interviewer waited. After four seconds: “Well, I did pay twice actually. The first time nothing happened so I did it again, then I got two messages and had to ring them.” The prepared question about payment clarity would never have found this, because the participant had classified the double payment as her own mistake and not as a problem worth mentioning. The interviewer's private notes recorded three separate lines: her words verbatim; the inference that the pending state was invisible to her; and the follow-up to ask the next participant what they did when nothing appeared to happen.",
     steps: [
       {
         minutes: 25,
@@ -973,28 +973,28 @@ export const module5: Lesson[] = [
       {
         minutes: 20,
         title: "Prepare the record",
-        text: "Set up your three-column note structure — said, inferred, follow up — and decide now whether you are recording. Check your consent introduction is to hand and your files are named per participant.",
+        text: "Set up your three-column note structure — said, inferred, follow up — and decide now whether you are recording. Check your consent introduction is to hand, your files are named per participant, and raw notes will go in a private file or on paper, not into the course.",
       },
       {
         minutes: 40,
         title: "Run the interview",
-        text: "Run one session of about thirty minutes with consent. Ask for episodes, follow with their words, and use silence at least three times deliberately. If nobody is available, run it with a practice participant, label it rehearsal, and record the recruitment gap; never invent a participant or an answer.",
+        text: "Default route: rehearse. Read the guide aloud alone, as if to someone, mark where you stumbled or could hear yourself steering, label it rehearsal and record the access gap. Optional route, only with a consenting adult and your Lesson 5 consent and data plan: run one session of about thirty minutes, ask for episodes, follow with their words, and use silence at least three times deliberately. Never invent a participant or an answer.",
       },
       {
         minutes: 20,
         title: "Write up immediately",
-        text: "Within an hour, complete the three columns. Mark anything you are reconstructing from memory rather than from a note or recording, because that distinction matters later.",
+        text: "Within an hour, complete the three columns in your private file. Mark anything you are reconstructing from memory rather than from a note or recording, because that distinction matters later. Then type only a de-identified summary into the course; after a rehearsal, leave Said empty and record the wording risks instead.",
       },
       {
         minutes: 15,
         title: "Revise the guide and pause",
-        text: "Write the three questions that worked, the one that failed and why, and the thing you wish you had followed. Revise the guide for the next session. Save both versions.",
+        text: "Write the three questions that worked, the one that failed and why, and the thing you wish you had followed. Revise the guide for the next session, giving a reason for each change and for any question you keep unchanged. Save both versions.",
       },
     ],
     freeToolPath:
-      "Paper, a pen and the voice recorder already on your phone, used only with consent. No transcription service, research platform or AI summariser is used: transcripts are not required for a study of this size, and the write-up you do yourself is where the analysis begins.",
+      "Paper, a pen and the voice recorder already on your phone, used only with its own consent. Recordings and raw notes stay on your device or paper with a deletion date and never go into the course or an AI chat. No transcription service, research platform or AI summariser is used: transcripts are not required for a study of this size, and the write-up you do yourself is where the analysis begins.",
     deliverable:
-      "A one-page interview guide, raw notes with said, inferred and follow-up visibly separated, a note of what was reconstructed from memory, and a revised guide with a written reason for each change.",
+      "A one-page interview guide; either a labelled rehearsal with its wording risks and a dated access note, or, after a consented interview, raw notes kept privately with said, inferred and follow-up visibly separated plus a de-identified summary in the course; a note of anything reconstructed from memory; and a revised guide with a written reason for each change.",
     check: [
       {
         question:
@@ -1040,48 +1040,48 @@ export const module5: Lesson[] = [
         criterion:
           "Follow-ups use the participant's words, not the interviewer's",
         evidence:
-          "Notes showing follow-up questions built from terms the participant introduced, and no follow-up that supplies a cause.",
+          "After an interview: a de-identified summary showing follow-ups built from terms the participant introduced, and no follow-up that supplies a cause. On the rehearsal route: the follow-ups in your guide written as neutral prompts (“say more about that”, “what happened just before?”), with the leading wordings you found and removed.",
         levels: [
           "Follow-ups propose explanations for the participant to confirm.",
-          "Mostly neutral, with at least one leading follow-up that shaped the answer.",
-          "Follow-ups consistently reuse the participant's own terms.",
-          "As adequate, and you identify one moment where you nearly led and what you asked instead.",
+          "Mostly neutral, with at least one leading follow-up that shaped the answer or survives in the guide.",
+          "Follow-ups consistently reuse the participant's own terms, or, in rehearsal, are written as neutral prompts that supply no cause.",
+          "As adequate, and you identify one moment, in the session or in reading the guide aloud, where you nearly led and what you asked instead.",
         ],
         remediation:
-          "Go through your notes and underline every noun in your follow-ups that the participant had not already used. For each, write the neutral question you should have asked.",
-        recheck: "The annotated notes with corrected follow-ups.",
+          "Go through your notes or guide and underline every noun in your follow-ups that the participant had not already used, or that a participant would not yet have said. For each, write the neutral question you should ask instead.",
+        recheck: "The annotated notes or guide with corrected follow-ups.",
       },
       {
         criterion: "Said, inferred and follow-up are separated in the record",
         evidence:
-          "Notes in three visibly distinct columns or sections, with reconstructed material marked.",
+          "After an interview: private notes in three visibly distinct columns with reconstructed material marked, and a de-identified summary in the course that keeps the same separation. On the rehearsal route: the three-column structure prepared, Said left empty, and inferred and follow-up holding only labelled wording risks and next questions, with no invented answer.",
         levels: [
-          "One block of mixed notes.",
+          "One block of mixed notes, or invented participant answers.",
           "Some separation, but inferences appear inside quoted material.",
-          "Three sections cleanly separated, reconstruction marked.",
-          "As adequate, and at least one inference is written with the alternative interpretation beside it.",
+          "Three sections cleanly separated and reconstruction marked, or, on the rehearsal route, the prepared structure with Said empty and everything labelled rehearsal.",
+          "As adequate, and at least one inference, or one rehearsal wording risk, is written with the alternative interpretation beside it.",
         ],
         remediation:
-          "Rewrite the notes into three columns now. Anything you cannot confidently place in the said column belongs in inferred, however sure you feel.",
-        recheck: "The three-column notes.",
+          "Rewrite the notes into three columns now. Anything you cannot confidently place in the said column belongs in inferred, however sure you feel. After a rehearsal, clear anything from Said that a participant did not actually say.",
+        recheck: "The three-column notes, or the labelled rehearsal record.",
       },
       {
         criterion: "The guide is revised from what actually happened",
         evidence:
-          "A second version of the guide with a written reason for each change, including one question removed.",
+          "A second version of the guide with a written reason for each change drawn from the session or rehearsal, including any question removed, or a reasoned note on why a question earned its place unchanged.",
         levels: [
-          "No revision.",
+          "No revision and no reason.",
           "Changes made without reasons.",
-          "Each change carries a reason drawn from the session.",
-          "As adequate, and the revision names something the participant raised that your questions had no place for, now added.",
+          "Each change, and each question kept, carries a reason drawn from the session or rehearsal.",
+          "As adequate, and the revision names something the participant raised, or the rehearsal exposed, that your questions had no place for, now added.",
         ],
         remediation:
-          "For each question, write what it actually produced. Remove anything that produced agreement, restatement of the question, or nothing.",
+          "For each question, write what it actually produced, or in rehearsal what it would invite. Remove anything that produced agreement, restatement of the question, or nothing; keep and justify what worked.",
         recheck: "Both guide versions with reasons.",
       },
     ],
     portfolio:
-      "Real research evidence, if a real participant consented. The guide, the anonymised notes structure and the revision are portfolio material; verbatim notes and identities are not. If this was a rehearsal, label it a rehearsal everywhere it appears, permanently.",
+      "Real research evidence, if a real participant consented. The guide, the note structure, a de-identified summary checked for identifying detail, and the revision are portfolio material; verbatim notes and identities are not. If this was a rehearsal, label it a rehearsal everywhere it appears, permanently.",
     resource: interviews,
     resources: [
       {
@@ -1117,7 +1117,7 @@ export const module5: Lesson[] = [
     areas: [4],
     title: "Watch the task where it actually happens",
     objective:
-      "Run one consented observation of a real task in its own setting with a stated observation stance, and produce a record containing at least three things you saw that nobody would have told you in an interview.",
+      "Prepare one observation of a real task in its own setting with a stated observation stance, a watch list and a consent plan for that setting. By default, record a dated access gap and practise on the supplied made-up account; optionally, with your Lesson 5 consent and data plan, run one consented observation and record a de-identified summary of what you saw that nobody would have told you in an interview.",
     bringForward:
       "Your interview notes and follow-up list. The best observation targets are usually the moments an interviewee skipped over as unremarkable.",
     why: "People narrate their behaviour as they believe it to be, and the parts they skip are often the parts that decide the outcome. Watching is the only method that returns what nobody thought worth mentioning, including the environment the task actually happens in.",
@@ -1125,7 +1125,7 @@ export const module5: Lesson[] = [
       "The assigned page describes three stances, and choosing one before you arrive is most of the skill. You can watch silently and ask everything afterwards, which disturbs the task least and costs you the reasoning behind what you saw. You can watch and ask brief questions as things happen, which trades a little naturalness for context. Or you can ask the person to think aloud throughout, which gives you the most reasoning and changes the task the most, because narrating slows people down and makes them tidy up their behaviour. None is correct in general; each distorts something, and your record should name which distortion you accepted.",
       "The setting is data. Where the person sits, whether the room is noisy, whether the phone is theirs or shared, whether the battery is low, whether the network drops in that corner of the house, whether a child needs attention halfway through — these are not interruptions to the study, they are the conditions the design will actually meet. Studying a booking flow in a quiet room on a fast connection tells you how it behaves in a place where nobody will ever use it.",
       "Sessions are longer than interviews — the guidance suggests one to three hours — because tasks have gaps, waiting and interruptions in them, and the gaps are frequently where the trouble is. Take timings. A step that takes eleven seconds and a step that takes four minutes look identical in a flow diagram, and they are entirely different design problems.",
-      "Consent in someone else's space needs more care, not less. You are in their home, their shop or their office; other people may be present who have not agreed to anything; there will be things in view that are none of your business. Agree beforehand what you may photograph, avoid capturing anyone who has not consented, and be explicit that they can stop at any point. The page assumes a pair of researchers, one watching and one noting; alone, you will miss things, and the honest response is to record fewer, better observations rather than to claim complete coverage.",
+      "Consent in someone else's space needs more care, not less. You are in their home, their shop or their office; other people may be present who have not agreed to anything; there will be things in view that are none of your business. Agree beforehand what you may photograph, avoid capturing anyone who has not consented — and never photograph children — and be explicit that they can stop at any point. Raw notes and photographs stay in a private file with a deletion date; the course receives only a de-identified summary, with other people described by role. The page assumes a pair of researchers, one watching and one noting; alone, you will miss things, and the honest response is to record fewer, better observations rather than to claim complete coverage.",
     ],
     misconception:
       "“Observation just means watching someone use the interface.” Most of what you are there for happens outside the screen: the phone handed to a relative, the amount checked against a note on paper, the message sent to confirm with someone else before paying, the wait to see whether a payment went through. If your record only contains taps, you ran a usability test in the wrong setting.",
@@ -1145,23 +1145,23 @@ export const module5: Lesson[] = [
       {
         minutes: 45,
         title: "Observe",
-        text: "Watch one real task end to end with consent. Note actions, timings, environment, interruptions and anything done outside the screen. Do not help unless the person is stuck in a way that distresses them; if you help, write down that you did and when.",
+        text: "Default route: no observation; choose the gap route, write why and when, and practise on the supplied made-up account in step 4. Optional route, only with a consenting adult and your Lesson 5 consent and data plan: watch one real task end to end. Note actions, timings, environment, interruptions and anything done outside the screen. Do not help unless the person is stuck in a way that distresses them; if you help, write down that you did and when.",
       },
       {
         minutes: 20,
         title: "Record what nobody would have told you",
-        text: "Immediately afterwards, write the three or more things you saw that would not have come out of an interview. For each, write why it would have been skipped: too ordinary, too embarrassing, too automatic to notice.",
+        text: "After a consented observation, immediately write in your private notes the things you saw that would not have come out of an interview, aiming for three; if there were fewer, say so rather than padding. For each, write why it would have been skipped: too ordinary, too embarrassing, too automatic to notice. Type only a de-identified summary into the course. On the gap route this step is practice on the supplied account.",
       },
       {
         minutes: 10,
         title: "State the limits and pause",
-        text: "Write the stance you used, what it distorted, what a second observer would have added, and the fact that this is one person in one setting. Save the record with your interview notes.",
+        text: "Write the stance you used, what it distorted, what a second observer would have added, and the fact that this is one person in one setting; on the gap route, write what your stance would distort and why no observation happened. Save the record with your interview notes.",
       },
     ],
     freeToolPath:
       "A notebook, a watch or phone clock for timings, and photographs only where consented. No screen-recording software, eye tracker or observation platform is required; for a single session, a pen and honest timings outperform a tool you are still learning to operate.",
     deliverable:
-      "An observation record with stated stance, a timed sequence of actions including waits and interruptions, environment notes, at least three things an interview would not have produced, and a written limitations paragraph.",
+      "A stated stance, a watch list and a consent plan for the setting, and either a dated access gap (the default) or, after a consented observation, a de-identified record with a timed sequence of actions, environment notes, the things an interview would not have produced (up to three, honestly counted) and a written limitations paragraph.",
     check: [
       {
         question: "Why record how long each step took?",
@@ -1184,14 +1184,14 @@ export const module5: Lesson[] = [
     rubric: [
       "A stance was chosen deliberately and its distortion named",
       "The record includes environment, timings and interruptions",
-      "Three or more observations could not have come from an interview",
+      "Observations an interview would not have produced are recorded honestly",
       "Limits of one observer and one setting are stated",
     ],
     criteria: [
       {
         criterion: "A stance was chosen deliberately and its distortion named",
         evidence:
-          "A written choice of stance with what the alternatives would have given and what this one distorts.",
+          "A written choice of stance with what the alternatives would have given and what this one distorts, written before any session. On the gap route the same note is complete evidence.",
         levels: [
           "No stance recorded; the session drifted between watching and asking.",
           "A stance is named but its effect on the data is not considered.",
@@ -1205,11 +1205,11 @@ export const module5: Lesson[] = [
       {
         criterion: "The record includes environment, timings and interruptions",
         evidence:
-          "A sequence with durations, plus notes on setting, device, network, other people and anything that interrupted the task.",
+          "After a consented observation: a de-identified sequence with durations, plus notes on setting, device, network, other people (by role) and anything that interrupted the task. On the gap route: a watch list that plans for timings, setting and interruptions, with the observation boxes left empty.",
         levels: [
-          "A list of screen actions only.",
-          "Actions with some context but no timings.",
-          "Timed sequence with environment and interruptions recorded.",
+          "A list of screen actions only, or a watch list that covers only the screen.",
+          "Actions with some context but no timings, or a watch list with no plan for timings or setting.",
+          "Timed sequence with environment and interruptions recorded, or, on the gap route, a watch list that plans for all three.",
           "As adequate, and one environmental factor is identified as likely to change the design, with the reason.",
         ],
         remediation:
@@ -1218,23 +1218,23 @@ export const module5: Lesson[] = [
       },
       {
         criterion:
-          "Three or more observations could not have come from an interview",
+          "Observations an interview would not have produced are recorded honestly",
         evidence:
-          "At least three specific observations, each with a note on why the person would not have reported it.",
+          "After a consented observation: up to three specific observations an interview would not have produced, each with why the person would not have reported it, and an honest statement if there were fewer. On the gap route: no observations at all, the dated gap, and your reasoning on the supplied made-up account.",
         levels: [
-          "The record repeats what interviews already established.",
-          "One or two novel observations, without reasoning about why they were unreported.",
-          "Three or more, each with why it would have been skipped.",
+          "The record repeats what interviews already established, or contains invented observations.",
+          "Novel observations without reasoning about why they were unreported, or padding to reach three.",
+          "Each observation comes with why it would have been skipped, and the count is honest; or, on the gap route, the boxes are empty and the gap is dated.",
           "As adequate, and one of them contradicts something a participant said in an interview, with both recorded rather than resolved.",
         ],
         remediation:
           "Go through your record and mark everything you already knew. What remains unmarked is your answer; if nothing remains, the session was probably a usability test in a quiet room and should be repeated in the real setting.",
-        recheck: "The marked record with the three observations.",
+        recheck: "The marked record with its honestly counted observations, or the dated gap.",
       },
       {
         criterion: "Limits of one observer and one setting are stated",
         evidence:
-          "A written paragraph naming the single-observer limitation, the single setting, and what a different setting might have shown.",
+          "A written paragraph naming the single-observer limitation, the single setting, and what a different setting might have shown; on the gap route, why no observation happened and what any later observation could and could not show.",
         levels: [
           "Findings written as general behaviour.",
           "A brief mention of a small sample.",
@@ -1247,7 +1247,7 @@ export const module5: Lesson[] = [
       },
     ],
     portfolio:
-      "Strong project evidence: observed behaviour in a real setting is rarer in junior portfolios than interviews and reads as more convincing. Publish the anonymised record and the limitations; never publish photographs of a participant's home, family or documents.",
+      "Strong project evidence: observed behaviour in a real setting is rarer in junior portfolios than interviews and reads as more convincing. If an observation ran, publish only a de-identified record that has passed an identification check, with the limitations; never publish photographs of a participant's home, family or documents.",
     resource: contextual,
     resources: [
       {
@@ -1283,14 +1283,14 @@ export const module5: Lesson[] = [
     areas: [4],
     title: "A diary study you could actually run",
     objective:
-      "Write a one-week logging protocol with an entry template, a prompt schedule, an honest burden estimate and a dropout plan, and either run it with a consenting participant or submit the protocol together with the recorded recruitment gap.",
+      "Write a one-week logging protocol with an entry template, a prompt schedule, an honest burden estimate and a dropout plan, and submit it with a dated gap, which is the default route, or, optionally, run it with a consenting adult under your Lesson 5 consent and data plan.",
     bringForward:
       "Your questions about anything that happens over time, across days or in more than one sitting. Interviews compress those into a summary; a diary does not.",
     why: "Some things cannot be seen in a session or remembered accurately afterwards: what happens between deciding and doing, how a feeling changes over a week, how many small interruptions accumulate into abandoning something. A diary catches those at the moment they happen, at the cost of asking a person to work for you for days.",
     teach: [
       "The assigned article describes three ways to trigger entries. Event-contingent asks for an entry whenever a defined thing happens, which suits rare events and gives you the moment itself. Interval-contingent asks at fixed times — every evening — which gives comparable coverage and misses whatever happened at eleven in the morning. Signal-contingent prompts at random or chosen moments, which catches the ordinary and irritates people fastest. Choose by what you need to see, then say which distortion you accepted.",
       "Burden decides whether you get data at all. Every extra field, every extra prompt and every extra day increases dropout, and the entries that stop arriving are not random: the busy days, which are usually the interesting ones, are the first to go missing. Design the entry to take under two minutes, in whatever medium the person already uses — a voice note, a photograph, three lines in a messaging app — rather than a form that requires them to sit down at a laptop.",
-      "Plan for dropout rather than being surprised by it. Decide in advance what an acceptable minimum is, what you will do after two silent days, whether a missed day may be filled in later and how you will mark reconstructed entries, and what you will do if a person withdraws mid-week. Decide too what you owe them: a week of daily entries is real work, and if you cannot compensate it you should ask for less.",
+      "Plan for dropout rather than being surprised by it. Decide in advance what an acceptable minimum is, what you will do after two silent days, whether a missed day may be filled in later and how you will mark reconstructed entries, and what you will do if a person withdraws mid-week. Decide too what you owe them: a week of daily entries is real work, and if you cannot compensate it you should ask for less. Decide also where entries will live: they arrive in the participant's own messaging app or on paper, so name that place in the data plan, keep entries out of the course, and type only a de-identified summary into an answer.",
       "A diary is a beginning, not a finding. The strongest use is diary plus a closing conversation: the entries tell you what happened and when, and the conversation, held with the entries in front of you both, tells you what those moments meant. Read the entries before that conversation and write your questions from them; a diary study analysed without talking to the person is a pile of fragments you will interpret with your own assumptions.",
     ],
     misconception:
@@ -1321,13 +1321,13 @@ export const module5: Lesson[] = [
       {
         minutes: 15,
         title: "Run or record the gap, then pause",
-        text: "If a participant consents, send day one and start. If not, record what you attempted, when and what you will try next, and submit the protocol as the deliverable. Do not write example entries and present them as data, even as illustrations, unless every one is clearly labelled as invented.",
+        text: "Default route: send nothing, record the dated gap and what would have to change for the study to run, and submit the protocol as the deliverable. Optional route, only with a consenting adult and your Lesson 5 consent and data plan: send day one and start. Do not write example entries and present them as data, even as illustrations, unless every one is clearly labelled as invented.",
       },
     ],
     freeToolPath:
       "A messaging app the participant already has, or paper if they prefer, plus your own notes file. No diary-study platform is required and most are unaffordable; the medium the person already opens twenty times a day will beat a better tool they have to remember to open.",
     deliverable:
-      "A one-week protocol with trigger type and its blind spot, an entry template timed at under two minutes, a prompt schedule, a stated burden and offer, a dropout and withdrawal plan, and a closing-conversation plan — plus either the collected entries or a dated recruitment gap.",
+      "A one-week protocol with trigger type and its blind spot, an entry template timed at under two minutes, a prompt schedule, a stated burden and offer, a dropout and withdrawal plan, and a closing-conversation plan — plus either a dated gap (the default) or, if the diary ran, a de-identified summary of the entries, with the entries themselves kept privately.",
     check: [
       {
         question: "Which days go missing first, and why does it matter?",
@@ -1449,7 +1449,7 @@ export const module5: Lesson[] = [
     areas: [4],
     title: "Surveys: wording, and what a number can carry",
     objective:
-      "Write a questionnaire of at most eight questions that survives a wording review, and state in advance the population you can actually reach, the counts you will report instead of percentages, and the interval you would have to attach to any rate.",
+      "Write a questionnaire of at most eight questions that survives a wording review, and state in advance the population you can actually reach, the counts you will report instead of percentages, and the interval you would have to attach to any rate. By default nothing is sent: you pilot the wording with two willing adults or, without them, review it aloud yourself and label it self-review.",
     bringForward:
       "Your remaining questions of the “how many” or “how often” kind, and the exclusion sentences you wrote when choosing methods. A survey is where those exclusions are most often forgotten.",
     why: "A survey is the easiest research to run badly, because it produces numbers whatever you do. The numbers look like evidence in a slide, and by the time anyone asks who answered and how the question was worded, the recommendation has already been made.",
@@ -1487,13 +1487,13 @@ export const module5: Lesson[] = [
       {
         minutes: 15,
         title: "Pilot with two people and pause",
-        text: "Have two people complete it in front of you and note every question they hesitated over or interpreted differently from your intention. Fix those, then save the questionnaire, the population statement and the reporting rule.",
+        text: "Have two willing adults complete it in front of you, telling them you will note only where the wording confused them, not their answers, which you do not keep. Note every question they hesitated over or read differently from your intention, or that there were none: a clean pilot is a result. Without pilot readers, read it aloud yourself and label the notes self-review. Fix what you found, then save the questionnaire, the population statement and the reporting rule.",
       },
     ],
     freeToolPath:
-      "A free form tool is convenient and not required; the same eight questions work as a message you send and tally by hand, and at twenty responses hand-tallying is quicker than learning a tool's export. If you use a form service, check that it does not require respondents to sign in, since that alone will skew who replies.",
+      "A free form tool is convenient and not required; the same eight questions work as a message you send and tally by hand, and at twenty responses hand-tallying is quicker than learning a tool's export. If you use a form service, check that it does not require respondents to sign in, since that alone will skew who replies. A form service also stores every response on its own servers, so name it in your data plan; responses never go into the course except as de-identified counts.",
     deliverable:
-      "A questionnaire of at most eight reviewed questions with the pre-review wording preserved, a written statement of the reachable and unreachable population, a reporting rule for counts and intervals, and notes from a two-person pilot.",
+      "A questionnaire of at most eight reviewed questions with the pre-review wording preserved, a written statement of the reachable and unreachable population, a reporting rule for counts and intervals, and notes from a two-person pilot or a labelled self-review, including a clean result if nothing needed fixing.",
     check: [
       {
         question: "Why is “would you use this feature?” a wasted question?",
@@ -1504,7 +1504,7 @@ export const module5: Lesson[] = [
         question:
           "You have twelve responses and seven picked the same option. How do you report it?",
         answer:
-          "As “seven of twelve”, with who the twelve were. Writing “58 per cent” converts a small count into an apparent measurement, and any interval around that rate at n=12 is wide enough to cover most of the range.",
+          "As “seven of twelve”, with who the twelve were. Writing “58 per cent” converts a small count into an apparent measurement, and a 95 per cent interval around 7 of 12 runs from roughly 32 to 81 per cent (Wilson method), about half the possible range, so the rate alone says very little.",
       },
       {
         question:
