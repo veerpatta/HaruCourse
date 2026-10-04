@@ -3,7 +3,22 @@
 // works from outputs the learner writes or is given, including the wrong ones,
 // so the design work does not depend on access; using a real model is a
 // comparison rather than a requirement, and any session with one is labelled.
+// Each lesson's "Try a supplied example" is a hand-written output with a known,
+// documented issue (an unsupported claim, a missing source, overconfidence),
+// checked against a source line supplied beside it; its transfer task is an
+// unfamiliar output that needs checking and a justified correction or
+// rejection. Lessons that ask for other people (7, 9, 10, and the display test
+// in 3) have a labelled solo route that is never scored as external evidence.
 import { improvementMade, revealOne, textRoute, type Guided } from './guided';
+
+// Supplied outputs for Lessons 1 and 2: the stable set a learner with no
+// assistance tool, or who prefers not to use one, checks as their three tasks.
+const assistancePack = [
+  'Supplied outputs for checking. Each was hand-written for this course to practise verification; no real model produced them, and the tool library is made up. With no assistance tool, or if you prefer not to use one, these three are your three tasks: predict what is wrong first, then check each against its source.',
+  'Output 1 · explaining a term. Asked whether mid-grey body text at a contrast ratio of 5.2:1 is acceptable, it replies: “WCAG requires at least 7:1 for all body text, so 5.2:1 fails. This is a legal requirement in every country.” Source to check: W3C, Understanding Contrast (Minimum), R30 in this course’s library.',
+  'Output 2 · a question that needs evidence. Asked what members want from a tool-library booking page, it replies: “Studies show 73% of users prefer to book on their phone, and most library members want a chat assistant.” No study is named. Source to check: your own research notes, the only evidence about your members.',
+  'Output 3 · drafting. Asked for confirmation messages, it gives twenty; draft 4 reads “Your tool is reserved and ready to collect now.” Source to check, the library’s process: a booking is confirmed by email the next morning, after the evening stock-list update.',
+];
 
 export const guided16: Record<string, Guided> = {
   'm16-l01-v1': {
@@ -132,6 +147,16 @@ export const guided16: Record<string, Guided> = {
           then: 'Now write your own two lists, and check the never list covers everything in the third group.',
           pattern: 'Two different reasons to refuse. The data rule is settled in advance and does not depend on how good the output would be; the quality objection is about what only evidence can answer. Confusing them means the data rule gets argued about when somebody is in a hurry.',
         },
+        supported: {
+          material: 'Supplied output (hand-written for practice; no model produced it). Asked whether mid-grey body text at a contrast ratio of 5.2:1 is acceptable, it replies: “WCAG requires at least 7:1 for all body text, so 5.2:1 fails. This is a legal requirement in every country.” Source to check: W3C, Understanding Contrast (Minimum), R30 in this course’s library. It sets 4.5:1 for normal-size text at level AA; 7:1 is the stricter AAA level.',
+          question: 'What should your verification rule make you do with this output?',
+          options: [
+            { label: 'Correct the threshold from the source, and drop the legal claim, which nothing supports.', correct: true, feedback: 'Checked against R30, 5.2:1 passes AA for normal-size text and misses AAA: the output stated the stricter level as the minimum. Nothing supplied supports “a legal requirement in every country”, so it goes rather than being softened.' },
+            { label: 'Accept it, because the stricter number is the safer one to pass on to a client anyway.', feedback: 'A wrong threshold presented as the minimum sends a team to fix text that already passes, and the legal claim still has no source.' },
+            { label: 'Ask the model for its source, and repeat the output as written once it names a WCAG page.', feedback: 'A cited page can be invented or misread just like the claim. You open the page yourself and compare; a citation is a lead, not a check.' },
+          ],
+          then: 'Now write your own verification rule in step 4: which kinds of claim you always check, and the named source for each.',
+        },
         start: 'Name the source you would check against before you need it.',
         enough: 'Your rule names a place rather than an intention to check.' },
       { expect: 'The rules saved where you will see them under pressure, and the one you expect to find hardest.',
@@ -145,11 +170,11 @@ export const guided16: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'A model summarised your interview notes into four themes. Do you have your findings?',
+        question: 'Somebody pasted your interview notes into a chat and got back four tidy themes. What do you have?',
         options: [
-          { label: 'You have a plausible summary produced by something that cannot tell what your participant said from what people usually say.', correct: true, feedback: 'The parts that were surprising are the parts it smooths away, and those are the findings. The analysis is the work, and skipping it removes the thing that made the findings yours.' },
-          { label: 'Yes, if you read the themes and agree with them.', feedback: 'Agreeing with a plausible summary is easy, because plausible is what it was optimised for.' },
-          { label: 'Yes, as a first pass to refine by hand.', feedback: 'A first pass anchors you. Having read four smooth themes, the contradiction is much harder to notice.' },
+          { label: 'A broken promise to your participants, and a smooth summary that is not your analysis.', correct: true, feedback: 'The notes were given to you under a promise about who sees them, so they never go into a service you do not control. Even setting that aside, the themes are what such studies usually say; the surprising parts, which are the findings, are what a summary smooths away.', was: ['You have a plausible summary produced by something that cannot tell what your participant said from what people usually say.'] },
+          { label: 'A usable first draft of the findings, provided you read each theme and agree with it.', feedback: 'Agreeing with a plausible summary is easy, because plausible is what it is built to be. It also leaves the promise to participants broken.', was: ['Yes, if you read the themes and agree with them.'] },
+          { label: 'A quick starting point to refine by hand, as long as the notes are deleted afterwards.', feedback: 'Deleting afterwards does not undo sending them, and a first pass anchors you: after four smooth themes, the contradiction is much harder to notice.', was: ['Yes, as a first pass to refine by hand.'] },
         ],
         repair: 'Write interview notes into your never list in step 3, with the reason in terms of what you promised. Record the change in step 5.',
         recheck: 'Your never list covers everything participants told you.',
@@ -157,19 +182,19 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'Why write these rules now rather than when the situation arises?',
         options: [
-          { label: 'Because the situation arises under deadline pressure, when the useful answer has to be available rather than constructed.', correct: true, feedback: 'The moment you most want to paste the notes in is the evening before a deadline. A rule written calmly is the only version that exists at that point.' },
-          { label: 'Because rules made in advance are more defensible.', feedback: 'They are, and the reason is what they do for you rather than how they look.' },
-          { label: 'Because the tools change quickly.', feedback: 'The rules are about your obligations rather than about the tools, which is why they survive the tools changing.' },
+          { label: 'Because the moment comes tired and under deadline, when a rule must already exist.', correct: true, feedback: 'The evening before a deadline is when pasting the notes in is most tempting. A rule written calmly is the only version that exists at that moment.', was: ['Because the situation arises under deadline pressure, when the useful answer has to be available rather than constructed.'] },
+          { label: 'Because rules written in advance look more defensible if a client asks about AI use.', feedback: 'They may look better, but appearance is not what they are for: they decide for you when your judgement is tired.', was: ['Because rules made in advance are more defensible.'] },
+          { label: 'Because tools change so fast that rules written later would already be out of date.', feedback: 'The rules are about your obligations, not about particular tools, which is why they survive the tools changing.', was: ['Because the tools change quickly.'] },
         ],
         repair: 'Write where the rules live and which will be hardest in step 5. Record the change.',
         recheck: 'The rules are somewhere you would actually see them at nine in the evening.',
       },
       {
-        question: 'A model explains a technical term clearly. Can you repeat the explanation to a colleague?',
+        question: 'A model explains a technical term an engineer used, clearly and confidently, with no source. When can you repeat it to a colleague?',
         options: [
-          { label: 'After checking it against documentation. Plausible explanations routinely contain one detail that is wrong.', correct: true, feedback: 'The wrong detail is usually the specific one, which is the part you were going to repeat. Verification means a named source that is not the model.' },
-          { label: 'Yes, if it matches your understanding.', feedback: 'Your understanding is what you were trying to improve.' },
-          { label: 'Yes, if you ask it again and get the same answer.', feedback: 'That produces a second confident answer rather than a check.' },
+          { label: 'After checking it against a named source that is not the model, such as the documentation.', correct: true, feedback: 'Plausible explanations often carry one wrong detail, usually the specific one you were about to repeat. A named source outside the model is what turns a claim into something checked.', was: ['After checking it against documentation. Plausible explanations routinely contain one detail that is wrong.'] },
+          { label: 'Once it matches what you already half-understood about the term from earlier work.', feedback: 'Your half-understanding is the thing you were trying to improve, so it cannot be the check.', was: ['Yes, if it matches your understanding.'] },
+          { label: 'Once you have asked the model again in new words and got the same explanation back.', feedback: 'Asking again produces a second confident answer from the same source, not a check.', was: ['Yes, if you ask it again and get the same answer.'] },
         ],
         repair: 'Name the source you would check against in step 4 rather than writing that you will verify. Record the change in step 5.',
         recheck: 'Your verification rule names a place.',
@@ -181,6 +206,16 @@ export const guided16: Record<string, Guided> = {
       creator: 'Your creator reads the never list and the rule you expect to find hardest. Naming the hard one is what makes it survivable.',
       next: 'Open Your work and choose Ready for review. The next lesson tests the rules on three real tasks.',
     },
+    transfer: {
+      scenario: 'Made-up case: A volunteer for a community choir asks a chat assistant whether the choir may photocopy a score for rehearsals. The reply says: “Copying up to 10% of any score for rehearsal is always allowed.” The choir’s handbook says copying music needs the publisher’s permission and to ask the librarian first. The volunteer also wants to paste the members’ email list into the chat to draft a rehearsal reminder.',
+      prompt: 'Decide what the volunteer should do with the reply and with the email list, and explain the reason for each.',
+      anchors: {
+        weak: 'Uses the reply because it sounds specific, or softens it to “probably fine”; pastes the email list to save time. Treats fluent output as a finding and the data rule as a preference.',
+        adequate: 'Does not rely on the 10% claim: it has no source and conflicts with the handbook, so the volunteer follows the handbook and asks the librarian. Keeps the email list out of the chat, because members gave it for choir use, and drafts the reminder without it.',
+        strong: 'As adequate, and says what would change the decision (the publisher’s permission or a primary source, not a second chat answer), notes that “always” is the warning sign, and uses assistance only for wording that contains no member details.',
+      },
+    },
+    material: assistancePack,
   },
   'm16-l02-v1': {
     route: textRoute,
@@ -257,6 +292,16 @@ export const guided16: Record<string, Guided> = {
           tradeoff: 'Counting honestly means recording that a tool you were enthusiastic about cost you time on two tasks out of three.',
           uncertainty: 'Still unknown: whether the twenty variants made my final message better than forty minutes alone would have. The time is countable and the quality is not, and the log says so.',
         },
+        supported: {
+          material: 'Supplied output (hand-written for practice; no model produced it). Asked what members want from a tool-library booking page, it replies: “Studies show 73% of users prefer to book on their phone, and most library members want a chat assistant.” No study is named. The only evidence about your members is your own research notes.',
+          question: 'What should your verification record say about this output?',
+          options: [
+            { label: 'Rejected: no study is named, and only your own research can speak for your members.', correct: true, feedback: 'A number with no traceable source is unusable however plausible it sounds, and “members want a chat assistant” is a claim about your people that only evidence about them could support. The task needed evidence, not fluency.' },
+            { label: 'Usable as background if labelled “industry data”, since phone booking is plausible.', feedback: 'A label does not create a source. “Industry data” with no study behind it is still an invented figure, and it would be quoted.' },
+            { label: 'Verified, if a web search finds any survey reporting a similar phone-booking share.', feedback: 'Finding some survey with a similar number does not make this one true: it would be a different claim from a different place, and still not about your members.' },
+          ],
+          then: 'Now check your own three outputs in step 3 the same way: every number, name and claim against a named source, or marked unverifiable.',
+        },
         start: 'Check the most specific claim first; specific is where the errors are.',
         enough: 'Every factual claim has a source beside it or is marked unverifiable.' },
       { expect: 'Time recorded including editing and verification, and anything you accepted that you would not have written.',
@@ -322,21 +367,21 @@ export const guided16: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'You produced twenty message variants in ten minutes rather than forty. Did it save you thirty minutes?',
+        question: 'Twenty message variants took ten minutes to produce instead of forty by hand, then twenty minutes to read, discard seventeen and edit three. What did it save?',
         options: [
-          { label: 'Only after the reading, discarding and editing are counted. The honest measure includes them, and on some tasks it comes out negative.', correct: true, feedback: 'Production is the visible part and the fast part. An explanation produced in four minutes and verified in twenty-five cost you time, and only a log shows which tasks are which.' },
-          { label: 'Yes, the output existed in a quarter of the time.', feedback: 'The output existed. Usable output took most of the forty minutes anyway.' },
-          { label: 'Yes, and the editing would have been needed regardless.', feedback: 'Editing your own draft and discarding seventeen of somebody else’s are different amounts of work.' },
+          { label: 'About ten minutes: thirty in total against forty by hand, if the three kept are as good.', correct: true, feedback: 'Production plus reading, discarding and editing is the honest total: 10 + 20 = 30 minutes against 40. The caveat matters too: the time is countable, and whether the three are as good as your own forty minutes is not.', was: ['Only after the reading, discarding and editing are counted. The honest measure includes them, and on some tasks it comes out negative.'] },
+          { label: 'Thirty minutes, because the drafting itself took ten minutes rather than forty.', feedback: 'That counts only the visible, fast part. The twenty minutes of reading and editing are part of the same task.', was: ['Yes, the output existed in a quarter of the time.'] },
+          { label: 'Nothing measurable, since editing your own draft would have taken as long anyway.', feedback: 'Sifting twenty of somebody else’s drafts and editing your own are different amounts of work, and the log gives a number: thirty minutes against forty.', was: ['Yes, and the editing would have been needed regardless.'] },
         ],
         repair: 'Record editing and verification time for all three tasks in step 4, and recompute. Note the change in step 5.',
         recheck: 'Each task has a total rather than a production time.',
       },
       {
-        question: 'The output cites an accessibility criterion. Do you need to check it?',
+        question: 'An output cites a numbered accessibility criterion for minimum button size, in the same confident tone as everything else. Before it goes into your specification, what do you do?',
         options: [
-          { label: 'Yes. Specifics are where the errors are, and a fabricated criterion would be quoted at an engineer as fact.', correct: true, feedback: 'Nothing in the tone distinguishes a real criterion from an invented one. The pattern across tasks is usually that specifics, sources and anything local are the unreliable parts.' },
-          { label: 'Only if it sounds unlikely.', feedback: 'It will not sound unlikely. Plausibility is what these outputs are best at.' },
-          { label: 'No, standards are well documented enough to be reliable.', feedback: 'They are well documented, which is what makes checking quick rather than unnecessary.' },
+          { label: 'Open that criterion in the standard yourself and compare its wording with the claim.', correct: true, feedback: 'Specific, checkable details such as criterion numbers and sizes are where invented errors hide, and a fabricated criterion would be quoted at an engineer as fact. The course library links the WCAG quick reference (R66) for exactly this.', was: ['Yes. Specifics are where the errors are, and a fabricated criterion would be quoted at an engineer as fact.'] },
+          { label: 'Keep it if the number matches what you remember from other design systems you use.', feedback: 'Memory of other systems is not the standard, and design systems often set their own sizes above or below it.', was: ['Only if it sounds unlikely.'] },
+          { label: 'Keep it if a second chat, asked separately in new words, quotes the same criterion and number.', feedback: 'Two outputs agreeing are two claims, not a check; neither has been compared with the standard.', was: ['No, standards are well documented enough to be reliable.'] },
         ],
         repair: 'Check every specific claim against a named source in step 3 and record what was wrong. Note the change in step 5.',
         recheck: 'Nothing factual left your log unchecked.',
@@ -344,9 +389,9 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'You kept a phrase you would not have written, because rewriting it felt fussy. Does that belong in the log?',
         options: [
-          { label: 'Yes. It is the cost that never appears in a time count, and a pattern of them changes what your product says.', correct: true, feedback: 'One phrase is nothing. Recorded over three tasks, it shows how much of the final text was chosen rather than accepted, which is the thing the time figure cannot see.' },
-          { label: 'No, since the phrase was acceptable.', feedback: 'Acceptable is the standard that lets it in. It is not the standard you apply to your own writing.' },
-          { label: 'No, that is normal editing.', feedback: 'Normal editing is choosing. This was declining to choose.' },
+          { label: 'Log it: no time count shows that cost, and a pattern of them changes what your product says.', correct: true, feedback: 'One phrase is nothing. Recorded across three tasks, it shows how much of the final text was chosen rather than accepted, which the time figure cannot see.', was: ['Yes. It is the cost that never appears in a time count, and a pattern of them changes what your product says.'] },
+          { label: 'Leave it out, since the phrase was acceptable and nobody reading would notice it.', feedback: 'Acceptable is the standard that let it in. It is not the standard you apply to your own writing.', was: ['No, since the phrase was acceptable.'] },
+          { label: 'Leave it out: choosing between two acceptable phrasings is ordinary editing, not a cost of the tool.', feedback: 'Ordinary editing is choosing. Keeping it because changing it felt fussy was declining to choose.', was: ['No, that is normal editing.'] },
         ],
         repair: 'Write what you accepted rather than chose in step 4, for each task. Record the change in step 5.',
         recheck: 'Your log contains at least one thing you accepted rather than wrote.',
@@ -358,6 +403,16 @@ export const guided16: Record<string, Guided> = {
       creator: 'Your creator reads the honest totals and what you accepted rather than chose. A log where everything saved time usually means the editing was not counted.',
       next: 'Open Your work and choose Ready for review. The next lesson moves from your own use to designing something other people will use.',
     },
+    transfer: {
+      scenario: 'Made-up case: A bakery owner asks a chat assistant to draft a notice for a new pre-order page. In two minutes it produces a tidy notice saying orders “can be collected from 7 am every day” and “include free delivery anywhere in town”. The bakery’s own opening sheet says collection starts at 8 am, the shop is closed on Mondays, and delivery costs £3 and runs on Saturdays only.',
+      prompt: 'Decide whether the owner should use the notice as it is, fix it or start again, and explain your reason, including how much time the assistance really saved.',
+      anchors: {
+        weak: 'Publishes it because it looked finished in two minutes, or fixes one detail and misses the others; counts the saving as the drafting time only.',
+        adequate: 'Checks every factual line against the opening sheet, corrects the collection time, the Monday closure and the delivery terms, and counts the checking and correcting time in the saving.',
+        strong: 'As adequate, and notes that the wording was the useful part while the facts were not, so next time the facts go in first; says the saving is small once checking is counted, and a wrong promise to customers would cost more than writing it by hand.',
+      },
+    },
+    material: assistancePack,
   },
   'm16-l03-v1': {
     route: textRoute,
@@ -412,6 +467,16 @@ export const guided16: Record<string, Guided> = {
           { term: 'Setting expectations', meaning: 'Saying what this is before the first output, rather than apologising after the first error. It is the cheapest thing in the whole module.' },
           { term: 'What it is not doing', meaning: 'The half people fill in themselves if you leave it out, usually generously.' },
         ],
+        supported: {
+          material: 'Supplied output (hand-written for practice; no model produced it). Asked to write the line shown above tool suggestions, it offers: “Our smart AI knows exactly what you need next.” Source to check, the feature’s actual rule: your three most borrowed tools, then the three most borrowed at your branch this month.',
+          question: 'What is the main problem with this line as the sentence shown before the first output?',
+          options: [
+            { label: 'It claims knowledge the rule does not have, so every wrong suggestion breaks a promise.', correct: true, feedback: '“Knows exactly what you need” sets an expectation the rule cannot meet. “Suggested from tools you have borrowed and what is popular at your branch this month” says what it does, so a wrong suggestion is expected rather than a betrayal.' },
+            { label: 'It is too long for a heading; a shorter version of the same claim would work fine.', feedback: 'Length is not the problem: a shorter false promise is still false.' },
+            { label: 'It mentions AI, which puts some people off; the rest of the promise can stay.', feedback: 'Whether to say AI is a separate question. The promise of knowing exactly is what fails the first time a suggestion is wrong.' },
+          ],
+          then: 'Now write your own opening sentence in step 2: what the feature uses, and what it is not doing.',
+        },
         start: 'Write the sentence as though to somebody who has never used anything like it.',
         enough: 'Somebody reading it would not be surprised when a suggestion is wrong.' },
       { expect: 'The basis of the output shown in the interface, with why a basis rather than a number.',
@@ -498,11 +563,11 @@ export const guided16: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Does showing a confidence score make a feature honest?',
+        question: 'A teammate wants each suggestion to carry an “87% match” badge “so it is honest about uncertainty”. What does the badge do for a reader?',
         options: [
-          { label: 'It makes it look quantitative. Most readers cannot convert a percentage into a decision, and a high number reads as certainty.', correct: true, feedback: 'The score was meant to communicate doubt and is read as a guarantee. Showing the basis — what it used — lets somebody judge it for themselves, which is what the number was supposed to do.' },
-          { label: 'Yes, since it communicates uncertainty directly.', feedback: 'It communicates a number. What a reader does with 87 per cent is treat it as yes.' },
-          { label: 'Yes, provided the scores are well calibrated.', feedback: 'Calibration makes the number true. It does not make it usable by somebody deciding whether to tap it.' },
+          { label: 'It looks precise but gives no basis to judge, and a high number reads as a promise.', correct: true, feedback: 'The number was meant to carry doubt and is read as a guarantee. Showing what the suggestion rests on — tools you borrowed before — lets somebody judge it, which is what the badge was supposed to do.', was: ['It makes it look quantitative. Most readers cannot convert a percentage into a decision, and a high number reads as certainty.'] },
+          { label: 'It shows the uncertainty directly, which is the honest thing to do with any estimate.', feedback: 'It shows a number. What a reader does with 87 per cent is usually treat it as yes; the doubt does not arrive.', was: ['Yes, since it communicates uncertainty directly.'] },
+          { label: 'It works once the scores are well calibrated, because the number is then simply true.', feedback: 'Calibration makes the number accurate. It does not tell somebody deciding whether to tap it what to do at 87.', was: ['Yes, provided the scores are well calibrated.'] },
         ],
         repair: 'Replace any score in step 3 with a basis line somebody could disagree with. Record the change in step 5.',
         recheck: 'Your interface shows what the output rests on rather than how sure it is.',
@@ -510,19 +575,19 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'When should the interface say what the feature is doing?',
         options: [
-          { label: 'Before the first output, so nobody is surprised when a suggestion is wrong.', correct: true, feedback: 'Setting the expectation afterwards is an apology. A sentence before the first output costs nothing and changes how every subsequent error is read.' },
-          { label: 'After the first error, when the explanation is relevant.', feedback: 'By then the person has decided what the feature is, and the explanation reads as an excuse.' },
-          { label: 'In a help page, so the interface stays clean.', feedback: 'Nobody reads the help page before the first suggestion.' },
+          { label: 'Before the first output, so a wrong suggestion is met as expected, not as a surprise.', correct: true, feedback: 'Setting the expectation afterwards is an apology. One sentence before the first output costs little and changes how every later error is read.', was: ['Before the first output, so nobody is surprised when a suggestion is wrong.'] },
+          { label: 'After the first error, when somebody finally has a real reason to read the explanation.', feedback: 'By then the person has already decided what the feature is, and the explanation reads as an excuse.', was: ['After the first error, when the explanation is relevant.'] },
+          { label: 'In a help page linked from settings, so the main screen stays clean and calm.', feedback: 'Almost nobody opens a help page before the first suggestion, which is when the expectation forms.', was: ['In a help page, so the interface stays clean.'] },
         ],
         repair: 'Write the opening sentence in step 2 and say where it appears. Record the change in step 5.',
         recheck: 'The expectation is set before anything is suggested.',
       },
       {
-        question: 'Your suggestion feature could be built as a sorted list with a good heading. Should you use a model?',
+        question: 'Checked by hand for twelve members, “your three most borrowed tools, then this month’s three most borrowed” gave nearly the same suggestions as the proposed model. Which do you build?',
         options: [
-          { label: 'Probably not. A rule you can explain beats a model you cannot, wherever it produces similar answers.', correct: true, feedback: 'Most recent first and most borrowed this month produced roughly the same suggestions when checked by hand. The rule is explainable, predictable, cheap and maintainable, and the design questions are identical either way.' },
-          { label: 'Yes, because a model improves over time.', feedback: 'That sentence cannot be acted on or argued with, which is what makes it a poor reason.' },
-          { label: 'Yes, since personalisation needs one.', feedback: 'Personalisation from somebody’s own history is a sort. It needs a model when the pattern is genuinely beyond a rule, which is worth establishing rather than assuming.' },
+          { label: 'The rule: it gives similar answers and can be explained, predicted and maintained.', correct: true, feedback: 'Where a rule gives similar answers it wins on explanation, predictability, cost and upkeep, and the design questions are the same either way. Twelve members is a small check, and the honest note says so.', was: ['Probably not. A rule you can explain beats a model you cannot, wherever it produces similar answers.'] },
+          { label: 'The model, because it can keep improving as more members borrow more tools.', feedback: '“It improves” cannot be acted on or argued with, which makes it a weak reason; improvement is worth establishing, not assuming.', was: ['Yes, because a model improves over time.'] },
+          { label: 'A model, since suggestions only feel personal when something has learned your habits.', feedback: 'Personalisation from somebody’s own history is a sort. A model earns its place when the pattern is beyond a rule, which this check did not show.', was: ['Yes, since personalisation needs one.'] },
         ],
         repair: 'Write the rule version in step 1 and say honestly whether it would do. Record the change in step 5.',
         recheck: 'Your answer to why a model is something other than that it learns.',
@@ -533,6 +598,15 @@ export const guided16: Record<string, Guided> = {
       external: 'Sketches and scripted outputs stay in your own folder. Write the wrong outputs by hand; you need them for the next two lessons.',
       creator: 'Your creator reads the rejected display and the rule-instead answer. Both are decisions most AI features never have made about them.',
       next: 'Open Your work and choose Ready for review. The next lesson keeps the person in control of what it produces.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A museum’s audio-guide app adds “next exhibit” suggestions. A model drafted the label shown on each one: “98% match — picked by AI just for you.” The team’s note says suggestions come from the room you are in and the exhibits most visitors open next; the app knows nothing else about you.',
+      prompt: 'Decide what the label should say instead, and explain why your version helps a visitor more than the percentage.',
+      anchors: {
+        weak: 'Keeps the percentage, perhaps rounded or relabelled “confidence”, or swaps it for stars; treats a number as honesty. Leaves “just for you” although the app knows nothing about the visitor.',
+        adequate: 'Replaces the number with the basis, for example “Visitors in this room often go to … next”, which a visitor can judge, and removes “just for you” because the note says the app knows nothing else.',
+        strong: 'As adequate, and says how a visitor can skip or dismiss the suggestion cheaply, notes the basis may suit some visitors badly, and would ask two visitors what they expect next to check the wording is read as intended.',
+      },
     },
   },
   'm16-l04-v1': {
@@ -599,6 +673,16 @@ export const guided16: Record<string, Guided> = {
           wrongTurn: 'The wrong turn is leaving it unsaid, because saying that correction does nothing feels like advertising a weakness. People assume it learns, and the disappointment is slower and more damaging than the admission.',
           tradeoff: 'Saying it plainly makes the feature sound less capable than the competitors who say nothing.',
           uncertainty: 'Still unknown: how many people read the sentence. The member who gave up would have, which is the case it was written for.',
+        },
+        supported: {
+          material: 'Supplied output (hand-written for practice; no model produced it). Asked to specify controls for tool suggestions, it writes: “Members who dislike a suggestion can ignore it, so no settings are needed. A thumbs-down button collects feedback.” Source to check, the product notes: suggestions fill the top of the home screen, and booking one reserves the tool for three days.',
+          question: 'Which change turns this draft into control rather than feedback?',
+          options: [
+            { label: 'Add undo for the three-day reservation and an off switch, with search kept prominent.', correct: true, feedback: 'Undo covers the reservation a suggestion can make, the off switch covers people who do not want suggestions, and search is the override. Each changes what the system does for that person; ignoring and a thumbs-down change nothing for them.' },
+            { label: 'Make the thumbs-down larger and send a weekly summary of all the feedback to the team.', feedback: 'Both help the team and change nothing for the person in front of the screen: the suggestion and the reservation stay.' },
+            { label: 'Ask a short reason on every thumbs-down, so the suggestions can be improved.', feedback: 'A reason prompt makes disagreeing cost more than ignoring, and the person still has no way to stop or undo anything.' },
+          ],
+          then: 'Now write your own correction and override in step 2, and say whether correcting changes future output.',
         },
         start: 'Decide whether correction teaches anything, then write the sentence that says so either way.',
         enough: 'Nobody using your feature would be wrong about what a dismissal does.' },
@@ -673,11 +757,11 @@ export const guided16: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'People can just ignore a suggestion they do not want. Is that control?',
+        question: 'Suggestions sit at the top of the screen and reappear after every action. A colleague says people can simply ignore them. What does that give a person?',
         options: [
-          { label: 'No. Ignoring is tolerance, especially where the suggestion holds the primary position and reappears after every action.', correct: true, feedback: 'Control means being able to change what the system does. The four controls exist because looking past something is the only option a person has when nothing else is offered.' },
-          { label: 'Yes, for a low-stakes feature like suggestions.', feedback: 'Low stakes each time, repeated daily. It is also the feature most likely to be ignorable by design rather than by accident.' },
-          { label: 'Yes, provided the suggestion is visually quiet.', feedback: 'Quiet helps and it does not change what the system does.' },
+          { label: 'Tolerance, not control: they can look past it, but the system still does the same thing.', correct: true, feedback: 'Control means being able to change what the system does: correct it, override it, turn it off or undo it. Ignoring is what is left when none of those exists.', was: ['No. Ignoring is tolerance, especially where the suggestion holds the primary position and reappears after every action.'] },
+          { label: 'Enough control for a low-stakes feature, since nothing is booked from a suggestion.', feedback: 'Low stakes once, repeated daily at the top of the screen. Stakes decide how much harm a missing control does, not whether ignoring is control.', was: ['Yes, for a low-stakes feature like suggestions.'] },
+          { label: 'Control, provided the suggestions are visually quiet enough to skim past easily.', feedback: 'Quiet styling helps people skim, and the system still behaves exactly the same.', was: ['Yes, provided the suggestion is visually quiet.'] },
         ],
         repair: 'Check all four controls exist in step 1, and design the missing one. Record the change in step 5.',
         recheck: 'Your feature offers correct, override, disable and undo.',
@@ -685,9 +769,9 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'Dismissing a suggestion does not change future suggestions. What should the interface do?',
         options: [
-          { label: 'Say so plainly, because people assume it learns and are quietly disappointed for months otherwise.', correct: true, feedback: 'The same wrong suggestion returning weekly, with dismissals that appear to do nothing, is how somebody concludes the system ignores them. One sentence prevents it, and it may prompt you to make dismissals persist instead.' },
-          { label: 'Nothing; correction is a reasonable default expectation.', feedback: 'It is, which is exactly why an interface that does not correct has to say so.' },
-          { label: 'Imply it learns, since it may do so later.', feedback: 'That is a promise on behalf of a future version, made to somebody using this one.' },
+          { label: 'Say so plainly where people dismiss, because most will assume it learns.', correct: true, feedback: 'The same wrong suggestion returning weekly, after dismissals that seem to do nothing, is how somebody concludes they are ignored. One sentence prevents that, and may prompt you to make dismissals persist.', was: ['Say so plainly, because people assume it learns and are quietly disappointed for months otherwise.'] },
+          { label: 'Say nothing, since people do not expect a simple list to learn from them.', feedback: 'As the lesson’s case showed, people assume anything that looks like this learns; silence leaves that assumption in place.', was: ['Nothing; correction is a reasonable default expectation.'] },
+          { label: 'Imply that it learns, since a later version of the feature probably will.', feedback: 'That is a promise on behalf of a future version, made to somebody using this one.', was: ['Imply it learns, since it may do so later.'] },
         ],
         repair: 'Write the sentence in step 2 saying what a dismissal does. Record the change in step 5.',
         recheck: 'Nobody could be wrong about what correcting your feature does.',
@@ -695,9 +779,9 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'You added an off switch. Do you need to do anything else?',
         options: [
-          { label: 'Walk the main task with the feature off. Features added as extras are often load-bearing without anybody noticing.', correct: true, feedback: 'A switch that works, after which the task cannot be completed, is not a choice anybody can make. Walking it is ten minutes and it is the only way to find out.' },
-          { label: 'No, the switch is the control.', feedback: 'The switch is half of it. The product working without the feature is the other half.' },
-          { label: 'Only if the feature is central to the product.', feedback: 'The features that turn out to be load-bearing are exactly the ones nobody thought were central.' },
+          { label: 'Walk the main task with the feature off, because added features are often quietly relied on.', correct: true, feedback: 'A switch that works, after which the task cannot be completed, is not a choice anybody can make. The walk takes minutes and is the most direct way to find out.', was: ['Walk the main task with the feature off. Features added as extras are often load-bearing without anybody noticing.'] },
+          { label: 'Nothing more for now: the switch is the control, and it can be tested after launch.', feedback: 'The switch is half of it; the product working without the feature is the other half, and after launch is when a broken task costs most.', was: ['No, the switch is the control.'] },
+          { label: 'Only check the task if the feature is central to the product; extras can safely be left alone.', feedback: 'The features that turn out to be relied on are often the ones nobody thought were central.', was: ['Only if the feature is central to the product.'] },
         ],
         repair: 'Walk the task with the feature disabled in step 3 and record what broke. Note the change in step 5.',
         recheck: 'The main task can be completed with the feature off.',
@@ -708,6 +792,15 @@ export const guided16: Record<string, Guided> = {
       external: 'Sketches stay in your own folder. Keep the version with the feature disabled; it is the one that shows whether the choice is real.',
       creator: 'Your creator reads what broke when you turned it off. A feature that disables cleanly usually means somebody checked.',
       next: 'Open Your work and choose Ready for review. The next lesson designs what happens when it is wrong.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A car-share club’s app now offers “smart pickup times”, and a model-drafted spec says: “Members can ignore the suggested time; accepting it books the car for that slot.” The club’s notes say the suggested time fills the top of the booking screen, a booking can be changed free only within ten minutes, and some members share one login with a partner.',
+      prompt: 'Decide which control the spec most needs before launch, and explain why ignoring is not enough here.',
+      anchors: {
+        weak: 'Agrees members can ignore it, or adds only a feedback button; treats looking past the suggestion as control.',
+        adequate: 'Adds undo for the booking (a clear cancel or change route beyond ten minutes, or a confirmation before booking) and an override (choose your own time first), because accepting creates a booking and the suggestion takes the primary position.',
+        strong: 'As adequate, and adds an off switch, says what a dismissal does on a shared login, and checks the booking task still works with suggestions turned off.',
+      },
     },
   },
   'm16-l05-v1': {
@@ -785,6 +878,16 @@ export const guided16: Record<string, Guided> = {
           tradeoff: 'Putting the ordinary route inside the failure state makes the feature look less essential, because it points at the thing that works without it.',
           uncertainty: 'Still unknown: how often the empty state happens. Nobody counted before, and the count is one of the three measures worth having.',
         },
+        supported: {
+          material: 'Supplied output (hand-written for practice; no model produced it). Asked for the message shown when there are no suggestions, it writes: “Sorry, I didn’t quite understand what you’re looking for. Please try again!” Source to check, the feature notes: it cannot interpret requests at all; it shows nothing when a member has borrowed fewer than two tools; search by type or branch always works.',
+          question: 'What should replace this message?',
+          options: [
+            { label: '“No suggestions yet”, with search by type or branch on the same screen.', correct: true, feedback: 'It describes what happened, claims no understanding, and gives the route that always works. “Try again” would repeat a step that cannot succeed, since the feature does not read requests.' },
+            { label: 'The same message with a smiling icon, so the failure feels less frustrating.', feedback: 'An icon changes the mood, not the facts: it still claims to have tried to understand, and “try again” still leads nowhere.' },
+            { label: 'A longer apology explaining that the model is still learning about the member.', feedback: 'The notes say the feature does not learn, so “still learning” would be a new false claim on top of the old one.' },
+          ],
+          then: 'Now write your own wording for producing nothing useful in step 3, with the ordinary route on the same screen.',
+        },
         start: 'Write the wording as though the feature did not exist and you were helping somebody anyway.',
         enough: 'Somebody meeting the empty state has a next action on the same screen.' },
       { expect: 'A reporting route, a route to a person, an accountable owner, and a statement that reports are read.',
@@ -850,21 +953,21 @@ export const guided16: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'You have added a feedback button for when the feature gets it wrong. Is that failure design?',
+        question: 'When the feature has nothing useful to show, your design offers an empty panel and a “Tell us what went wrong” button. What is missing?',
         options: [
-          { label: 'No. It collects complaints while leaving the person with the same problem, no route forward and no correction.', correct: true, feedback: 'Failure design gives the person what they came for by another route. The report control can stay, underneath the thing that actually helps them.' },
-          { label: 'Yes, since it lets the team improve the feature.', feedback: 'It may, eventually, for somebody else. It does nothing for the person in front of it now.' },
-          { label: 'Yes, provided the feedback is acted on.', feedback: 'Acting on it still happens later and elsewhere.' },
+          { label: 'A route to what the person came for, such as search, on the same screen.', correct: true, feedback: 'Failure design gets the person to their goal by another route. The report control can stay, underneath the thing that actually helps.', was: ['No. It collects complaints while leaving the person with the same problem, no route forward and no correction.'] },
+          { label: 'A promise that the team reads all feedback and will improve the feature soon.', feedback: 'Improvement happens later and for somebody else; the person in front of the empty panel is still stuck.', was: ['Yes, since it lets the team improve the feature.'] },
+          { label: 'Friendlier wording on the button, so people feel heard when it fails them.', feedback: 'Warmer wording on a control that changes nothing for them still leaves them with nowhere to go.', was: ['Yes, provided the feedback is acted on.'] },
         ],
         repair: 'Put the ordinary route into your empty state in step 3, above the feedback control. Record the change in step 5.',
         recheck: 'Every failure state offers a next action on the same screen.',
       },
       {
-        question: 'Which of the three failures is most dangerous?',
+        question: 'Of the three failures — confidently wrong, cannot answer, harmful — which gives the person the least warning?',
         options: [
-          { label: 'Confidently wrong, because the person has no signal that anything is wrong.', correct: true, feedback: 'Not answering is visible and harmful output is obvious. A wrong answer that looks like a right one needs structural protection: the basis shown, never the only route, full details before commitment.' },
-          { label: 'Harmful output, because of the damage it can do.', feedback: 'It is the most serious when it happens and the most visible, which is why it can be reported and addressed.' },
-          { label: 'Cannot answer, because it makes the feature useless.', feedback: 'It is the most common and the easiest to design for.' },
+          { label: 'Confidently wrong: it looks exactly like a correct answer, so nothing warns them.', correct: true, feedback: 'Not answering is visible and harmful output is usually obvious. A wrong answer that looks right needs structural protection: the basis shown, never the only route, full details before any commitment.', was: ['Confidently wrong, because the person has no signal that anything is wrong.'] },
+          { label: 'Harmful output: it can do the most damage, so it is the one nobody notices.', feedback: 'Harmful output can be the most serious, and it is usually noticed, which is why a report route and a person can help.', was: ['Harmful output, because of the damage it can do.'] },
+          { label: 'Cannot answer: an empty result gives no hint that something has gone wrong.', feedback: 'An empty result is visible: the person can see nothing came back, even if the wording is poor.', was: ['Cannot answer, because it makes the feature useless.'] },
         ],
         repair: 'Write the structural protection in step 2 and confirm nothing irreversible follows a suggestion. Record the change in step 5.',
         recheck: 'A wrong output cannot commit anybody to anything.',
@@ -872,9 +975,9 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'Your error wording says “Sorry, I misunderstood what you were looking for.” What is wrong with it?',
         options: [
-          { label: 'It claims a mind. Misunderstood implies an attempt to understand, which sets an expectation nothing can meet.', correct: true, feedback: 'The next failure then feels like a betrayal rather than a limitation. Wording that describes what happened, without claiming intent, ages far better.' },
-          { label: 'Nothing; a friendly tone helps in a failure.', feedback: 'A friendly tone helps. Claiming comprehension is a separate thing that the tone is carrying.' },
-          { label: 'It should say which part was misunderstood.', feedback: 'That would make the claim more specific rather than removing it.' },
+          { label: 'It claims a mind: “misunderstood” implies an attempt to understand.', correct: true, feedback: 'Wording teaches people what the system is. Claiming comprehension sets an expectation nothing can meet, so the next failure feels like a betrayal. “No match for that — you can search by type or branch” describes what happened and gives a route.', was: ['It claims a mind. Misunderstood implies an attempt to understand, which sets an expectation nothing can meet.'] },
+          { label: 'Nothing much: a friendly apology softens the failure, and the tone is warm.', feedback: 'A friendly tone helps; claiming comprehension is a separate thing the tone is carrying.', was: ['Nothing; a friendly tone helps in a failure.'] },
+          { label: 'It should name which part of the request was misunderstood, so the person can rephrase it.', feedback: 'That makes the claim of understanding more specific instead of removing it.', was: ['It should say which part was misunderstood.'] },
         ],
         repair: 'Remove anything implying understanding or intention in step 5 and record what you changed.',
         recheck: 'No failure wording uses think, understand or sorry about a misunderstanding.',
@@ -885,6 +988,15 @@ export const guided16: Record<string, Guided> = {
       external: 'Write the wrong outputs by hand and keep them in your own folder. Choosing the failure you design for is more useful than generating one.',
       creator: 'Your creator reads the empty state and the named owner. Both are the parts that usually do not exist.',
       next: 'Open Your work and choose Ready for review. The next lesson asks whether this should be a conversation at all.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A town’s recycling-day app suggests which bin an item goes in, from a photo. A model-drafted error message reads: “Oops! I’m not sure what that is — try another photo!” The council’s notes say the app recognises only 40 common items, a wrong answer can lead to a missed collection, and the printed A–Z bin guide covers everything.',
+      prompt: 'Decide what the error state should say and offer instead, and explain your reasoning.',
+      anchors: {
+        weak: 'Keeps the friendly “I’m not sure” or adds a feedback button; offers “try another photo”, a route that cannot work for items outside the 40.',
+        adequate: 'Says plainly that the item is not one the app recognises and offers the A–Z guide or a search on the same screen; removes wording that claims the app thinks or is unsure.',
+        strong: 'As adequate, and treats a confident wrong answer as the bigger risk — showing what a suggestion is based on and the guide link even when it does answer — and names who reads reports of wrong bin advice.',
+      },
     },
   },
   'm16-l06-v1': {
@@ -1022,26 +1134,36 @@ export const guided16: Record<string, Guided> = {
           tradeoff: 'A mixed design is two things to build and maintain rather than one, and the text box will be used by a small minority.',
           uncertainty: 'Still unknown: whether anybody will use the text box at all. It is one line of the design that could be removed after a month of watching.',
         },
+        supported: {
+          material: 'Supplied output (hand-written for practice; no model produced it). Asked how members should find tools, it recommends: “Replace the filters with a chat box. Conversation is more natural for everyone, and 80% of users prefer chat.” Source to check, a fortnight of the library’s enquiry emails: most requests name a tool, a day and a branch; about one in ten describes an unusual job; no survey of preferences exists.',
+          question: 'What should the decision record say about this recommendation?',
+          options: [
+            { label: 'Keep filters as the main route, add a text field for unusual jobs, and drop the unsourced 80%.', correct: true, feedback: 'The enquiries say the common request is three known choices, which filters handle fastest, and that unusual jobs are real but rare. “More natural for everyone” and “80% prefer chat” have no source, so they do not enter the decision.' },
+            { label: 'Follow it, since a chat box can handle the common request and the unusual one alike.', feedback: 'It can handle both, slowly for the common case, which is most of the volume; and the claims behind it are unsupported.' },
+            { label: 'Follow it for members on phones, where a chat box avoids tapping through filters.', feedback: 'On a phone, composing a sentence usually costs more than tapping three filters, which is the opposite of the claim.' },
+          ],
+          then: 'Now record your own decision in step 5, with what the rejected version did better.',
+        },
         start: 'Write what you are giving up before writing what you chose.',
         enough: 'The rejected version has something real recorded against it.' },
     ],
     checks: [
       {
-        question: 'Is conversation more natural than a form?',
+        question: 'A colleague argues a chat box is “more natural” than filters for finding a tool. When is that true?',
         options: [
-          { label: 'Between people who share context. With a system that has none, it produces guessing, retries and somebody learning your vocabulary by failing at it.', correct: true, feedback: 'The first thing many people type is a request to find out what they can ask. A set of filters answers that question by existing.' },
-          { label: 'Yes, which is why chat interfaces keep appearing.', feedback: 'They keep appearing because they are easy to build and look modern. Naturalness between people does not transfer to a system with no shared context.' },
-          { label: 'Yes for open requests, no for precise ones.', feedback: 'That is the useful version of the answer, and it is about the request rather than about naturalness.' },
+          { label: 'Between people who share context; without it, people are left guessing what to ask.', correct: true, feedback: 'The first thing many people type into a box is a request to find out what they can ask. A set of filters answers that by existing.', was: ['Between people who share context. With a system that has none, it produces guessing, retries and somebody learning your vocabulary by failing at it.'] },
+          { label: 'Almost always, which is why chat interfaces keep appearing in new products.', feedback: 'They keep appearing because they are easy to build and look modern; naturalness between people does not transfer to a system with no shared context.', was: ['Yes, which is why chat interfaces keep appearing.'] },
+          { label: 'Whenever people are on a phone, since typing one sentence beats tapping through filters.', feedback: 'On a phone, typing a sentence is usually slower than tapping three filters; composing costs more than choosing.', was: ['Yes for open requests, no for precise ones.'] },
         ],
         repair: 'Compare both versions for a first-time user in step 4, naming what each has to do. Record the change in step 5.',
         recheck: 'Your comparison covers somebody who does not know what is possible.',
       },
       {
-        question: 'Your conversational version handled a complicated request beautifully. Does that settle it?',
+        question: 'In your comparison, the chat version handled one long, unusual request well; the common request is a tool, a day and a branch. What decides the primary route?',
         options: [
-          { label: 'No. The question is what most people are doing most of the time, and that is usually three choices they already know.', correct: true, feedback: 'The impressive case was about one in ten. The common case is somebody typing three filters slowly, one message at a time, on a phone.' },
-          { label: 'Yes, since it handles both the simple and the complex.', feedback: 'It handles the simple slowly, which is most of the volume.' },
-          { label: 'Yes, if the common case is also fast.', feedback: 'Worth checking, and on a phone the composition cost makes it rarely so.' },
+          { label: 'What most people do most of the time: three known choices, which filters handle in three taps.', correct: true, feedback: 'The unusual request was about one in ten. The common case typed into a chat becomes three slow messages, one filter at a time, often on a phone.', was: ['No. The question is what most people are doing most of the time, and that is usually three choices they already know.'] },
+          { label: 'The impressive case, because a design that handles the hardest request handles the rest.', feedback: 'Handling the hard case says nothing about how fast it handles the easy one, which is most of the volume.', was: ['Yes, since it handles both the simple and the complex.'] },
+          { label: 'Whichever version the team built first, since it has had the most thought and testing.', feedback: 'Effort already spent is not evidence about which version serves people better.', was: ['Yes, if the common case is also fast.'] },
         ],
         repair: 'Count the actions for the common case in both designs, in step 3, and use the numbers in your comparison. Record the change in step 5.',
         recheck: 'Your decision rests on the common case rather than on the impressive one.',
@@ -1049,9 +1171,9 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'You chose the structured version. What should you record?',
         options: [
-          { label: 'What the conversation did better, because a set of filters cannot express the long-tail request at all.', correct: true, feedback: 'Recording it is what leads to the usual right answer: structure as the primary route with a text field for what it cannot express. Without it, the decision hardens into a rule against chat.' },
-          { label: 'Nothing; the comparison already made the case.', feedback: 'The case for choosing is not the same as the record of what was given up.' },
-          { label: 'That conversational interfaces are rarely the right choice.', feedback: 'That is the rule this lesson is trying to avoid producing.' },
+          { label: 'What the chat did better, since filters cannot express the unusual request at all.', correct: true, feedback: 'Recording it leads to the usual answer: structure as the primary route plus a text field for what it cannot express. Without it, the decision hardens into a rule against chat.', was: ['What the conversation did better, because a set of filters cannot express the long-tail request at all.'] },
+          { label: 'Nothing further, because the action counts in the comparison already made the case.', feedback: 'The case for choosing is not the record of what was given up, and the unusual request still needs somewhere to go.', was: ['Nothing; the comparison already made the case.'] },
+          { label: 'A note that chat interfaces are rarely right, so the question is not reopened.', feedback: 'That is the blanket rule this lesson is trying to avoid; the next task may be the open, long-tail kind.', was: ['That conversational interfaces are rarely the right choice.'] },
         ],
         repair: 'Write what the rejected version did better in step 5, and consider whether the answer is both. Record the change.',
         recheck: 'Your record names something the chosen design cannot do.',
@@ -1062,6 +1184,15 @@ export const guided16: Record<string, Guided> = {
       external: 'Sketches of both versions stay in your own folder. Keep the scripted exchanges; writing the replies by hand is what lets you design the misunderstanding.',
       creator: 'Your creator reads what the rejected version did better. A comparison with nothing recorded against the winner usually means only one design was taken seriously.',
       next: 'Open Your work and choose Ready for review. The next lesson explains what the system did, in words somebody can use.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A swimming pool’s app lets people book a lane. A model-written proposal says to replace the timetable grid with a chat assistant “because conversation is more inclusive”. The pool’s notes say most bookings are the same weekly slot, many swimmers book on the poolside with wet hands, and a few ask unusual questions, such as whether a lane suits training with fins.',
+      prompt: 'Decide which interface should be the main route and what, if anything, a chat is kept for, and explain your reasoning for each kind of swimmer.',
+      anchors: {
+        weak: 'Accepts “more inclusive” or “more natural” without checking the notes, and makes chat the main route for everyone.',
+        adequate: 'Keeps the grid, or a one-tap repeat booking, as the main route because most bookings are a repeated slot and typing with wet hands is hard; keeps a text box or chat for unusual questions such as fins.',
+        strong: 'As adequate, and names what the grid cannot express, counts taps for the weekly booking, and notes that “inclusive” needs checking for swimmers less fluent in the app’s language, for whom typing can be harder.',
+      },
     },
   },
   'm16-l07-v1': {
@@ -1117,6 +1248,16 @@ export const guided16: Record<string, Guided> = {
           wrongTurn: 'The wrong turn is explaining the mechanism, because it is the honest-feeling option and it respects the reader. Understanding how it works and being able to predict what it does are different, and only the second changes what somebody can do.',
           tradeoff: 'Two sentences leave out things that are true, and somebody technical will notice and may think you are simplifying for the wrong reasons.',
           uncertainty: 'Still unknown: whether the explanation holds once the feature changes. It describes the current basis, and a change to that is a change to the wording.',
+        },
+        supported: {
+          material: 'Supplied output (hand-written for practice; no model produced it). Asked to explain the suggestions to members, it writes: “Our AI learns your preferences over time to recommend the perfect tool.” Source to check, the actual rule: your three most borrowed tools, then the three most borrowed at your branch this month; a dismissed tool is hidden for 90 days.',
+          question: 'What should happen to this explanation?',
+          options: [
+            { label: 'Rewrite it from the rule: what it uses, and that dismissing hides a tool for 90 days.', correct: true, feedback: 'Checked against the rule, “learns your preferences over time” is false: it is a sort plus a 90-day hide. A reader of the rewrite can predict tomorrow’s suggestions and knows the lever.' },
+            { label: 'Keep it, adding a line that suggestions improve the more a member borrows.', feedback: '“Improves the more you borrow” is the sentence that makes people think dismissals teach, and the rule does not learn.' },
+            { label: 'Keep it but cut “perfect”, since only that single word overclaims what the feature does.', feedback: '“Perfect” is the loudest problem, not the only one: “learns your preferences” is the false claim, and it would stay.' },
+          ],
+          then: 'Now write your decision-level version in step 2, in at most two sentences: what it used, and what would change it.',
         },
         start: 'Write the technical version first and then try to cut it to two sentences somebody could act on.',
         enough: 'Your chosen version names what it used and what would change it.' },
@@ -1204,11 +1345,11 @@ export const guided16: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Should the explanation describe how the model works?',
+        question: 'A teammate drafts an explanation describing the ranking signals and their weights, accurately. What does it miss?',
         options: [
-          { label: 'Almost nobody wants that and it does not help them act. What helps is what it used and what would change the result.', correct: true, feedback: 'Understanding the mechanism and predicting the output are different. Two people can follow a description of ranking signals perfectly and still not know what they will be shown tomorrow.' },
-          { label: 'Yes, transparency means explaining the mechanism.', feedback: 'Transparency that nobody can act on is a different value from the one this lesson is about.' },
-          { label: 'Yes, for readers who want the detail.', feedback: 'Worth having available. It is not what the interface explanation is for.' },
+          { label: 'What it used and what would change the result, which is what a reader can act on.', correct: true, feedback: 'Understanding the mechanism and predicting the output are different. Two people can follow a description of ranking signals perfectly and still not know what they will be shown tomorrow.', was: ['Almost nobody wants that and it does not help them act. What helps is what it used and what would change the result.'] },
+          { label: 'A diagram of the signals, so readers can follow the weighting more easily.', feedback: 'A clearer picture of the mechanism is still the mechanism; it does not tell a reader what comes next or how to change it.', was: ['Yes, transparency means explaining the mechanism.'] },
+          { label: 'Nothing important: an accurate account of the mechanism is what transparency means.', feedback: 'Transparency nobody can act on is a different value from the one this lesson is about.', was: ['Yes, for readers who want the detail.'] },
         ],
         repair: 'Cut your chosen version in step 2 to what it used and what would change it. Record the change in step 5.',
         recheck: 'Your explanation is at most two sentences and names a lever.',
@@ -1216,19 +1357,19 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'How do you know whether your explanation is any good?',
         options: [
-          { label: 'Ask two people to predict the next output from it, and whether they know how to change it.', correct: true, feedback: 'It is the only test that separates an explanation from reassurance. Both halves matter: prediction without a lever leaves somebody informed and stuck.' },
-          { label: 'Check it is accurate about the system.', feedback: 'Accuracy is necessary and it is what the technical version had.' },
-          { label: 'Ask whether people find it clear.', feedback: 'People find reassuring wording very clear. Clarity is not the property being tested.' },
+          { label: 'A reader predicts the next output from it alone, and can say how to change it.', correct: true, feedback: 'Prediction plus a lever separates an explanation from reassurance. Two readers are the stronger test; a self-check after a gap tests the wording rather than a fresh reader, and is labelled that way.', was: ['Ask two people to predict the next output from it, and whether they know how to change it.'] },
+          { label: 'It is accurate about the system, checked line by line against how ranking works.', feedback: 'Accuracy is necessary, and the technical version had it too; it still let nobody predict.', was: ['Check it is accurate about the system.'] },
+          { label: 'People who read it say it is clear and that they understood every word of it.', feedback: 'Reassuring wording is often rated very clear. Clarity is not the property being tested.', was: ['Ask whether people find it clear.'] },
         ],
-        repair: 'Run the prediction test in step 3 and write what they actually said. Record the change in step 5.',
-        recheck: 'You have two predictions recorded in their own words.',
+        repair: 'Run the prediction test in step 3 — two readers, or a labelled self-check after a gap — and write what was predicted. Record the change in step 5.',
+        recheck: 'You have predictions recorded, from two readers or a labelled self-check.',
       },
       {
         question: 'Your two-sentence explanation leaves out how recency is weighted. Is that dishonest?',
         options: [
-          { label: 'Not if it changes no prediction anybody would make. An omission is dishonest when it produces a confident wrong answer.', correct: true, feedback: 'The test is the prediction rather than completeness. Listing every omission and checking each against that test is what makes the simplification defensible.' },
-          { label: 'Yes, anything left out is a form of concealment.', feedback: 'By that standard no explanation under a page is honest, and nobody reads a page.' },
-          { label: 'Yes, unless the detail is available elsewhere.', feedback: 'Having it elsewhere is good practice and not what decides whether the short version misleads.' },
+          { label: 'Only if leaving it out would make someone’s prediction confidently wrong.', correct: true, feedback: 'The test is the prediction, not completeness. List every omission and check each one against it; that is what makes the simplification defensible.', was: ['Not if it changes no prediction anybody would make. An omission is dishonest when it produces a confident wrong answer.'] },
+          { label: 'It is, because anything left out of an explanation is a form of concealment.', feedback: 'By that standard no explanation under a page is honest, and almost nobody reads a page.', was: ['Yes, anything left out is a form of concealment.'] },
+          { label: 'Not if the full weighting is published on a help page for those who want it.', feedback: 'Publishing it elsewhere is good practice and does not decide whether the short version misleads.', was: ['Yes, unless the detail is available elsewhere.'] },
         ],
         repair: 'List your omissions in step 4 and check each against the prediction test. Record the change.',
         recheck: 'No omission would make somebody confidently wrong.',
@@ -1239,6 +1380,15 @@ export const guided16: Record<string, Guided> = {
       external: 'Nothing here needs a file outside the worksheet. If you tested with two people, keep their words rather than your summary.',
       creator: 'Your creator reads what the two readers predicted. An explanation nobody has predicted from is an explanation nobody has tested.',
       next: 'Open Your work and choose Ready for review. The next lesson specifies what the feature knows about people.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A bus-timetable app shows a “Suggested stop” for each journey. A model-drafted explanation says: “Our intelligent system understands your travel needs.” The developer’s note says the suggestion is the stop you boarded at most often in the last 30 days at that time of day, and choosing a different stop twice changes it.',
+      prompt: 'Decide what the explanation should say instead, and explain how a rider could predict and change the suggestion from your version.',
+      anchors: {
+        weak: 'Keeps “understands your travel needs”, or explains the mechanism in technical terms; says nothing a rider could use to predict tomorrow’s suggestion.',
+        adequate: 'Writes one or two sentences from the note, such as “Suggested because you usually board here at this time. Choose another stop twice to change it”, so a rider can predict and change it.',
+        strong: 'As adequate, and lists what it leaves out (the 30-day window) with why that omission would not mislead, and would ask two riders to predict tomorrow’s stop, or label a self-check, to test it.',
+      },
     },
   },
   'm16-l08-v1': {
@@ -1293,6 +1443,16 @@ export const guided16: Record<string, Guided> = {
           wrongTurn: 'The wrong turn is treating the privacy policy as the disclosure, because it is where such text belongs and it is reviewed properly. Nobody reads it, so what people believe is whatever they assume, and they assume more than is true.',
           tradeoff: 'A sentence in the interface is one more thing on a screen, and it has to be kept in step with what the feature actually uses.',
           uncertainty: 'Still unknown: whether people read it either. Two mentioned it, which is two more than ever mentioned the policy.',
+        },
+        supported: {
+          material: 'Supplied output (hand-written for practice; no model produced it). Asked for the sentence shown when suggestions first appear, it writes: “Suggestions use only the tools you have borrowed.” Source to check, the data specification: the feature uses tools borrowed in the last twelve months and suggestions you dismissed, nothing else, and drops anything older than twelve months.',
+          question: 'Is this disclosure ready to ship?',
+          options: [
+            { label: 'It needs dismissals and the twelve-month limit added, or it misstates what is used.', correct: true, feedback: '“Only the tools you have borrowed” leaves out dismissals, so it is false as written, and the twelve-month limit is the retention fact people can predict from: “These use tools you borrowed in the last twelve months and anything you dismissed. Nothing else.”' },
+            { label: 'It is ready: short and accurate enough, and the policy can carry the details.', feedback: '“Only” makes it a false statement, and the details it leaves out are exactly what somebody deciding would want.' },
+            { label: 'It needs a link to the privacy policy added; the sentence itself can stay.', feedback: 'A link does not fix a sentence that misstates what is used.' },
+          ],
+          then: 'Now write your own disclosure in step 2: what is used, for what, for how long, and that there is nothing else.',
         },
         start: 'Write the sentence as though somebody asked you directly what it knows about them.',
         enough: 'Your sentence says what it uses and, explicitly, that there is nothing else.' },
@@ -1379,11 +1539,11 @@ export const guided16: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Your privacy policy covers what the feature collects. Is that the disclosure?',
+        question: 'The privacy policy accurately lists what the suggestion feature uses. Is that enough disclosure?',
         options: [
-          { label: 'No. Nobody reads it, so what people believe is whatever they assume, and they assume more than is true.', correct: true, feedback: 'The disclosure that informs anybody is the sentence in the interface at the moment the feature starts. A member assuming it uses everything the library knows is wrong in the expensive direction.' },
-          { label: 'Yes, that is what a privacy policy is for.', feedback: 'It is what it is for legally. It is not where anybody finds out.' },
-          { label: 'Yes, if it is written clearly.', feedback: 'Clarity does not cause it to be read.' },
+          { label: 'The interface needs a sentence when the feature starts; few people read the policy.', correct: true, feedback: 'The disclosure that informs anybody is the one met at the moment the feature starts. A member assuming it uses everything the library knows is wrong in the expensive direction.', was: ['No. Nobody reads it, so what people believe is whatever they assume, and they assume more than is true.'] },
+          { label: 'It is enough, because the policy is the document that legally covers data use.', feedback: 'It may be what covers the organisation legally; it is not where people find out, and design decides what they actually believe.', was: ['Yes, that is what a privacy policy is for.'] },
+          { label: 'It is enough if the policy is in plain language and linked from the footer of every page.', feedback: 'Plain language helps whoever opens it; a footer link does not cause it to be read.', was: ['Yes, if it is written clearly.'] },
         ],
         repair: 'Write the interface sentence in step 2 and say when it appears. Record the change in step 5.',
         recheck: 'Somebody meets the disclosure before the feature starts working.',
@@ -1391,9 +1551,9 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'Collecting what people looked at but did not borrow would improve suggestions slightly. Should you?',
         options: [
-          { label: 'No. A marginal improvement is a weak reason to hold a record of what somebody considered and decided against.', correct: true, feedback: 'It is also the thing people assume is happening and dislike most. Refusing it, with the cost to the feature named, is a decision you can defend.' },
-          { label: 'Yes, if it is disclosed and deletable.', feedback: 'Controls make it optional. They do not make a marginal gain proportionate to the record.' },
-          { label: 'Yes, since it is behaviour on your own product.', feedback: 'Being available is not a reason. The test is whether the improvement justifies the record.' },
+          { label: 'Leave it out: a slight gain is a weak reason to record what people considered and declined.', correct: true, feedback: 'It is also what people most often assume is happening and dislike. Refusing it, with the cost to the feature named, is a decision you can defend.', was: ['No. A marginal improvement is a weak reason to hold a record of what somebody considered and decided against.'] },
+          { label: 'Collect it, as long as it is disclosed clearly and people can delete it themselves.', feedback: 'Disclosure and deletion make it optional; they do not make a slight gain proportionate to the record.', was: ['Yes, if it is disclosed and deletable.'] },
+          { label: 'Collect it, because browsing on your own product is behaviour you are entitled to use.', feedback: 'Being available is not a reason. The test is whether the improvement justifies the record.', was: ['Yes, since it is behaviour on your own product.'] },
         ],
         repair: 'Write your two refusals in step 4 with what the feature loses. Record the change in step 5.',
         recheck: 'Both refusals name a cost as well as a reason.',
@@ -1401,9 +1561,9 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'Somebody deletes everything the feature holds about them. What must the interface say?',
         options: [
-          { label: 'What the feature will do afterwards, so the choice is informed rather than frightening.', correct: true, feedback: 'Suggestions returning to the most borrowed tools this month is a fine outcome and nobody knows it without being told. An unexplained delete control gets used less than it should be and trusted less than it deserves.' },
-          { label: 'Nothing; deletion should be simple and unqualified.', feedback: 'Simple and uninformed is how people either avoid it or regret it.' },
-          { label: 'That the deletion is permanent.', feedback: 'True and about the data rather than about what they will experience.' },
+          { label: 'What the feature will do afterwards, so the choice is informed rather than frightening.', correct: true, feedback: 'Suggestions returning to the month’s most borrowed tools is a fine outcome, and nobody knows it unless told. An unexplained delete gets used less than it should and trusted less than it deserves.' },
+          { label: 'That deletion is permanent and cannot be undone, so they should be sure first.', feedback: 'True about the data, and it says nothing about what they will experience next, which is what they are deciding.', was: ['Nothing; deletion should be simple and unqualified.'] },
+          { label: 'Nothing beyond a confirmation, because deletion should stay simple and quick.', feedback: 'Simple and uninformed is how people either avoid it or regret it.', was: ['That the deletion is permanent.'] },
         ],
         repair: 'State the behavioural consequence of deletion in step 3, in the interface. Record the change in step 5.',
         recheck: 'Deleting has a stated consequence somebody could weigh.',
@@ -1414,6 +1574,15 @@ export const guided16: Record<string, Guided> = {
       external: 'Nothing about any real member belongs here. The specification describes what would be collected rather than anything collected.',
       creator: 'Your creator reads the two refusals and what the feature loses. A specification with no refusals usually means the list was what was available.',
       next: 'Open Your work and choose Ready for review. The next lesson decides what good would mean for this feature.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A recipe app adds “dinner ideas”. A model-drafted disclosure reads: “Ideas are based on your saved recipes.” The specification says ideas use saved recipes, recipes viewed for more than a minute and the shopping list, all kept for 18 months. The product manager also wants to add the user’s location “to suggest seasonal dishes”.',
+      prompt: 'Decide what the disclosure should say and whether to collect location, and explain your reasons.',
+      anchors: {
+        weak: 'Ships the sentence as drafted or moves the detail into the privacy policy; adds location because it might help.',
+        adequate: 'Rewrites the disclosure to name all three sources and the 18-month period and to say there is nothing else; refuses location, because the date already gives the season and the gain is slight.',
+        strong: 'As adequate, and questions whether one-minute views and 18 months are needed at all, names what the feature loses without location, and adds see-and-delete with what deleting changes.',
+      },
     },
   },
   'm16-l09-v1': {
@@ -1450,6 +1619,16 @@ export const guided16: Record<string, Guided> = {
           { term: 'Good in a person’s terms', meaning: 'What somebody would notice and say. It is a different question from how often a model matched a label.' },
           { term: 'Observable', meaning: 'Something you could watch or ask about, in a session. It is what turns a definition into an evaluation.' },
         ],
+        supported: {
+          material: 'Supplied output (hand-written for practice; no model produced it). Asked whether the suggestion feature is working, it replies: “Yes. Suggestions match the next tool borrowed 62% of the time, well above the industry benchmark of 40%.” Source to check: the 62% comes from your own log; no benchmark is named, and the log cannot say whether anyone found a suggestion useful.',
+          question: 'What should your definition of good do with this answer?',
+          options: [
+            { label: 'Set it aside: a match rate is not usefulness, and the 40% benchmark has no source.', correct: true, feedback: 'Matching the next borrow rewards suggesting what people were going to borrow anyway. Good, in a person’s terms, is closer to “something I would consider and had not thought of”, and the benchmark is an unsourced number.' },
+            { label: 'Use 62% as the target, since it is measured on your own feature and members.', feedback: 'It is measured on your feature, and it measures agreement with a label, not whether anyone was helped.' },
+            { label: 'Use it once the benchmark is confirmed, since a comparison makes the figure meaningful.', feedback: 'A confirmed benchmark would make the match rate comparable; it still would not make matching the same as helping.' },
+          ],
+          then: 'Now write good in a person’s words in step 1, then turn it into something you could observe.',
+        },
         start: 'Write the sentence in their voice first, then find the observable version of it.',
         enough: 'Your observable version mentions no model score.' },
       { expect: 'What a wrong suggestion costs, what a missing one costs, and which you prefer with the reason.',
@@ -1559,9 +1738,9 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'Your suggestions match what people go on to borrow 62 per cent of the time. Does the feature work?',
         options: [
-          { label: 'Unknown. Somebody who always borrows the same sander produces a high score and gets no value from being told about it.', correct: true, feedback: 'Accuracy measures how often the model matched a label. Whether the feature helped is a separate question, and a definition of good in a person’s terms usually rewards the opposite of what accuracy does.' },
-          { label: 'Yes, 62 per cent is a reasonable hit rate.', feedback: 'A reasonable hit rate on a target that includes everything the person was going to do anyway.' },
-          { label: 'Yes, if people are also tapping the suggestions.', feedback: 'Tapping moves with placement and wording, and a tap is not a judgement of usefulness.' },
+          { label: 'Unknown: a member who always borrows the same sander scores a match and learns nothing.', correct: true, feedback: 'Accuracy counts how often the model matched a label. Whether the feature helped is a separate question, and a definition of good in a person’s terms often rewards the opposite of what accuracy does.', was: ['Unknown. Somebody who always borrows the same sander produces a high score and gets no value from being told about it.'] },
+          { label: 'It works: 62 per cent is a respectable hit rate for any recommendation feature.', feedback: 'A respectable rate against a target that includes everything the person was going to do anyway.', was: ['Yes, 62 per cent is a reasonable hit rate.'] },
+          { label: 'It works if members also tap the suggestions often enough to show interest.', feedback: 'Taps move with placement and wording, and a tap is not a judgement that the suggestion was useful.', was: ['Yes, if people are also tapping the suggestions.'] },
         ],
         repair: 'Write good in a person’s terms in step 1 and turn it into something observable. Record the change in step 5.',
         recheck: 'Your definition of good mentions no model score.',
@@ -1569,9 +1748,9 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'Which error is usually underweighted: a wrong suggestion or a missing one?',
         options: [
-          { label: 'The missing one, because it is invisible. Nobody complains about a suggestion they never saw.', correct: true, feedback: 'Wrong suggestions are visible and cost trust immediately, so teams tune for fewer of them. Saying which you prefer, and why, is what makes that a decision rather than a drift.' },
-          { label: 'The wrong one, since teams tolerate irrelevance.', feedback: 'Irrelevance is the most complained-about property of these features, which is why it gets the attention.' },
-          { label: 'Neither; they are usually treated equally.', feedback: 'They are rarely equally bad and almost never equally visible.' },
+          { label: 'The missing one: nobody complains about a useful suggestion they never saw.', correct: true, feedback: 'Wrong suggestions are visible and cost trust at once, so teams tune to reduce them. Saying which error you prefer, and why, makes that a decision rather than a drift.', was: ['The missing one, because it is invisible. Nobody complains about a suggestion they never saw.'] },
+          { label: 'The wrong one: teams tolerate irrelevant suggestions because they cost nothing.', feedback: 'Irrelevant suggestions are among the most complained-about parts of these features, which is why they get the attention.', was: ['The wrong one, since teams tolerate irrelevance.'] },
+          { label: 'Neither: teams usually weigh the two errors equally when they tune a feature.', feedback: 'The two errors are rarely equally bad and almost never equally visible.', was: ['Neither; they are usually treated equally.'] },
         ],
         repair: 'State your preference between the two errors in step 2, with a reason about people. Record the change in step 5.',
         recheck: 'Your preference is written down rather than implied by the tuning.',
@@ -1579,12 +1758,12 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'Your team reviewed a sample of suggestions and judged them good. Is that an evaluation?',
         options: [
-          { label: 'No. The team knows how it works, knows the catalogue, and is not who it is for.', correct: true, feedback: 'It is the judgement of the least representative available readers. Five people outside the team, marking ten suggestions each in three categories, takes an afternoon and answers the question.' },
-          { label: 'Yes, expert judgement is a legitimate method.', feedback: 'Expert judgement is legitimate about craft. Whether a suggestion is something you had not thought of is not a question an expert can answer for you.' },
-          { label: 'Yes, as a first pass before user sessions.', feedback: 'A first pass anchors everybody. If the sessions are happening, they can happen first.' },
+          { label: 'It measures the team’s view, and the team knows the system and is not who it is for.', correct: true, feedback: 'It is the judgement of the least representative readers available. Two or three people outside the team marking ten suggestions each answers the question; a self-pilot by you tests the marking sheet, not the feature.', was: ['No. The team knows how it works, knows the catalogue, and is not who it is for.'] },
+          { label: 'It is a fair one, since expert judgement is a recognised way to evaluate design quality.', feedback: 'Expert judgement is legitimate about craft. Whether a suggestion is something a member had not thought of is not something an expert can answer for them.', was: ['Yes, expert judgement is a legitimate method.'] },
+          { label: 'It is a sound first pass, to be confirmed later by sessions with members.', feedback: 'A first pass anchors everyone; if sessions are going to happen, they can come first.', was: ['Yes, as a first pass before user sessions.'] },
         ],
-        repair: 'Run the session with two or three people outside the team in step 4 and record the counts. Note the change in step 5.',
-        recheck: 'Your counts come from people who did not build it.',
+        repair: 'Run the session with two or three people outside the team in step 4 and record the counts; if nobody is available, label a self-pilot and date the gap. Note the change in step 5.',
+        recheck: 'Your counts come from people who did not build it, or your self-pilot is labelled as one.',
       },
     ],
     saveRoute: {
@@ -1592,6 +1771,15 @@ export const guided16: Record<string, Guided> = {
       external: 'Keep the hand-written suggestion sets in your own folder. They are the material for the next lesson’s sessions.',
       creator: 'Your creator reads the already-knew counts. A feature with a high count there is working by the model’s standard and not by anybody else’s.',
       next: 'Open Your work and choose Ready for review. The next lesson runs sessions with scripted outputs rather than a model.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A hiking app suggests a trail for the weekend. Its weekly report says: “Suggestion accuracy 71% — the feature is working.” Accuracy here means the suggested trail was one the person later walked. Many users walk the same local trail every week, and nobody has asked users whether a suggestion showed them anything new.',
+      prompt: 'Decide whether the report shows the feature is working, and explain what you would measure or ask instead.',
+      anchors: {
+        weak: 'Accepts 71% as proof the feature works, or argues about whether 71% is high enough; treats the model metric as the answer.',
+        adequate: 'Says it is unknown: repeat walkers make accuracy high without any help. Defines good as a trail people would consider and had not already planned, and proposes asking a few users to mark suggestions as new, already known or irrelevant, reported as counts.',
+        strong: 'As adequate, and says which error matters more (a wrong trail or a missed good one), what a small check cannot show (effects across all users), and names the “already known” count as the one to watch.',
+      },
     },
   },
   'm16-l10-v1': {
@@ -1637,6 +1825,16 @@ export const guided16: Record<string, Guided> = {
           wrongTurn: 'The wrong turn is making the wrong outputs obviously wrong, because writing a bad suggestion is easier than writing a nearly-right one. Everybody catches absurdity, so the session tests nothing the design was worried about.',
           tradeoff: 'A genuinely plausible wrong output is uncomfortable to write and uncomfortable to watch somebody accept, and it is the only version that tests anything.',
           uncertainty: 'Still unknown: how people would fare with a mixture, where most suggestions are right. Three sets of mostly-wrong outputs may make people more suspicious than they would ordinarily be.',
+        },
+        supported: {
+          material: 'Supplied output (hand-written for practice; no model produced it). Asked for “wrong suggestions to test the prototype”, it writes: “1. A concrete mixer for a member who borrows screwdrivers. 2. A lawnmower for a flat with no garden. 3. A cordless drill shown as at Riverside on Saturday that is really at Hillcrest.” Source to check, the session goal: find out whether members check the branch before booking.',
+          question: 'Which supplied output should the session be built around?',
+          options: [
+            { label: 'The drill at the wrong branch, because only checking the branch would reveal it.', correct: true, feedback: 'Everyone catches absurdity, so items 1 and 2 test nothing the design worries about. The nearly-right drill tests the session goal: does anyone check the branch before booking?' },
+            { label: 'The concrete mixer, because a big mistake gives the clearest reaction for you to watch.', feedback: 'A clear reaction to an obvious mistake is not the question; the goal is whether people check a detail that looks right.' },
+            { label: 'All three equally, so the session covers every kind of wrong suggestion.', feedback: 'Spreading time across obvious errors dilutes the one observation the session exists for.' },
+          ],
+          then: 'Now write your own output sets in step 1, including the plausible-but-wrong one you most need to test.',
         },
         start: 'Write the wrong one first, and make it as plausible as you can bear.',
         enough: 'Somebody reading your wrong output could not tell it was wrong without checking something.' },
@@ -1732,11 +1930,11 @@ export const guided16: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Do you need the real model to test an AI feature?',
+        question: 'A teammate says the suggestion feature cannot be tested until the real model is built. What does a scripted prototype let you test that a live model will not?',
         options: [
-          { label: 'No. You need the real experience of meeting the output, including the wrong ones, and scripting gives you control over exactly the case you need to observe.', correct: true, feedback: 'A live model will not produce a plausible-but-wrong answer on demand. Writing it by hand is how you test the case the whole design was built around.' },
-          { label: 'Yes, otherwise the outputs will not be representative.', feedback: 'Representative outputs are not what the session needs. It needs the failure case, which is rare and central.' },
-          { label: 'Yes, for the sessions to be credible to participants.', feedback: 'Participants are told the responses are prepared, and it does not reduce what you learn from watching them.' },
+          { label: 'The plausible-but-wrong output, placed exactly where you want to watch someone meet it.', correct: true, feedback: 'A live model will not produce the nearly-right wrong answer on demand. Writing it by hand is how you test the case the whole design was built around.', was: ['No. You need the real experience of meeting the output, including the wrong ones, and scripting gives you control over exactly the case you need to observe.'] },
+          { label: 'Nothing representative: outputs written by hand never resemble what a real model produces.', feedback: 'Representative is not what the session needs; it needs the rare failure case, which hand-writing lets you place.', was: ['Yes, otherwise the outputs will not be representative.'] },
+          { label: 'Only the layout and visual style, since the outputs themselves are not real enough.', feedback: 'Scripting tests whether people notice a wrong output, which is behaviour, not styling.', was: ['Yes, for the sessions to be credible to participants.'] },
         ],
         repair: 'Write the plausible-but-wrong outputs in step 1 and say which failure you most need to test. Record the change in step 5.',
         recheck: 'Your scripts contain the failure the design was built to handle.',
@@ -1744,9 +1942,9 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'Should you tell participants the responses are scripted?',
         options: [
-          { label: 'Yes. Faking a working system misrepresents what they are helping with, and it costs nothing to say.', correct: true, feedback: 'People still behave naturally with a prototype they know is prepared. What changes is that you have not misled somebody who agreed to help you.' },
-          { label: 'No, it would change how they behave.', feedback: 'It changes very little in practice, and it is the difference between a prototype and a deception.' },
-          { label: 'Only if they ask.', feedback: 'Waiting to be asked is choosing to mislead anybody who does not.' },
+          { label: 'Tell them before the session: faking a working system misleads people helping you.', correct: true, feedback: 'People still behave naturally with a prototype they know is prepared; what changes is that you have not misled somebody who agreed to help.', was: ['Yes. Faking a working system misrepresents what they are helping with, and it costs nothing to say.'] },
+          { label: 'Hold it back until afterwards, so their reactions to the outputs stay natural.', feedback: 'Holding it back makes the session a deception, which the Module 5 consent rules do not permit, and it changes little in practice.', was: ['No, it would change how they behave.'] },
+          { label: 'Mention it only if somebody asks, so nobody is misled and nothing is changed.', feedback: 'Waiting to be asked means misleading everybody who does not ask.', was: ['Only if they ask.'] },
         ],
         repair: 'Add the sentence about prepared responses to your consent introduction in step 2. Record the change in step 5.',
         recheck: 'Nobody in your sessions thought they were using a working system.',
@@ -1754,9 +1952,9 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'A participant is about to accept a wrong suggestion. What should you do?',
         options: [
-          { label: 'Nothing. Whether somebody notices unprompted is the observation the session exists for.', correct: true, feedback: 'Helping at that moment is the natural thing to do and it deletes the result. The session where you speak produces nothing usable on the main question.' },
-          { label: 'Ask whether they have checked the details.', feedback: 'That is the prompt, phrased as a question. It answers the thing you were watching for.' },
-          { label: 'Let them continue and mention it afterwards.', feedback: 'Afterwards is fine, and during the moment is what matters.' },
+          { label: 'Stay quiet: whether they notice unprompted is the observation the session exists for.', correct: true, feedback: 'Helping at that moment is natural and deletes the result; a session where you speak produces nothing usable on the main question and is recorded as contaminated.', was: ['Nothing. Whether somebody notices unprompted is the observation the session exists for.'] },
+          { label: 'Ask gently whether they have checked the details, without saying what is wrong.', feedback: 'That is the prompt, phrased as a question; it answers the thing you were watching for.', was: ['Ask whether they have checked the details.'] },
+          { label: 'Let them continue, then point the wrong detail out straight away so they learn.', feedback: 'Explaining at the end is fine; interrupting straight after the tap changes everything that happens next.', was: ['Let them continue and mention it afterwards.'] },
         ],
         repair: 'Record any session where you prompted as contaminated in step 3, rather than as a result. Note the change in step 5.',
         recheck: 'Every recorded outcome happened without you saying anything.',
@@ -1767,6 +1965,15 @@ export const guided16: Record<string, Guided> = {
       external: 'The scripted output sets stay in your own folder. Keep them; they are reusable and they are what makes the sessions repeatable.',
       creator: 'Your creator reads the count of wrong outputs accepted unchecked. It is the number that tells you whether the basis line is doing anything.',
       next: 'Open Your work and choose Ready for review. The next lesson maps who is accountable for all of this.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A cinema app will suggest seats. The team plans to test it with scripted suggestions, and a model drafted the test plan: “Use obviously bad seats, like the front-row corner, so testers react clearly. Don’t tell them the suggestions are pre-written, or they won’t take it seriously.” The real worry is people accepting a good-looking seat that has a restricted view.',
+      prompt: 'Decide how you would change this test plan, and explain the reason for each change.',
+      anchors: {
+        weak: 'Keeps obviously bad seats and the deception, or tells testers but still scripts only absurd failures.',
+        adequate: 'Scripts a nearly-right suggestion (a good-looking seat with a restricted view) because that is the risk, tells testers before starting that suggestions are prepared, and records whether each person notices, checks or accepts it unprompted.',
+        strong: 'As adequate, and plans to stay silent when someone is about to accept, counts outcomes as people rather than instances, and says a self-pilot could only check the script works, not what testers notice.',
+      },
     },
   },
   'm16-l11-v1': {
@@ -1894,6 +2101,16 @@ export const guided16: Record<string, Guided> = {
           tradeoff: 'The concentration measure requires somebody to look at a month of suggestions, which nothing in the product currently does.',
           uncertainty: 'Still unknown: what level of concentration would be too much. The signal exists before the threshold, which is the right way round and leaves a judgement for later.',
         },
+        supported: {
+          material: 'Supplied output (hand-written for practice; no model produced it). Asked for a harm signal for tool suggestions, it writes: “Harm signal: the number of members who dismiss a suggestion. If dismissals stay low, the feature is safe.” Source to check, your affected list: members; branches whose tools are never suggested; volunteers who check tools after each loan.',
+          question: 'What is wrong with this as a harm signal?',
+          options: [
+            { label: 'It measures members’ reactions only, so it cannot rise while others are harmed.', correct: true, feedback: 'A harm signal has to be able to worsen while usefulness looks fine. “Suggestions concentrating on one branch’s stock” or “post-loan checks piling up” could; dismissals see nobody except members.' },
+            { label: 'Dismissals are too rare to count, so a survey of members would work better.', feedback: 'A survey of members has the same blind spot: it asks the people the usefulness measure already covers.' },
+            { label: 'It needs a threshold, such as five per cent, before it can trigger action.', feedback: 'A threshold on the wrong measure stays wrong; the signal has to see the people affected first.' },
+          ],
+          then: 'Now write your own working signal and a separate harm signal in step 4.',
+        },
         start: 'Ask what would be happening to the people on your affected list if this went wrong.',
         enough: 'Your harm signal could move while the usefulness signal stayed good.' },
       { expect: 'A response plan naming who acts, how fast and what they can do, with limitations recorded.',
@@ -1907,11 +2124,11 @@ export const guided16: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Are risk frameworks for large organisations?',
+        question: 'A two-person team says the four risk questions are for large organisations. What do they miss?',
         options: [
-          { label: 'The four questions apply to a feature built by two people, and answering them takes an hour. What differs is the ceremony, not the questions.', correct: true, feedback: 'Who decides, who is affected, how you would know, and what happens when it goes wrong are as real for a small product as a large one. The small product usually answers them faster and more honestly.' },
-          { label: 'Largely, since a small team cannot discharge the obligations.', feedback: 'Naming an obligation you cannot discharge is the finding. Not naming it does not remove it.' },
-          { label: 'Yes, but a simplified version is worth doing.', feedback: 'The four questions are the version. There is nothing to simplify.' },
+          { label: 'The questions apply at any size; what scales with the organisation is the ceremony.', correct: true, feedback: 'Who decides, who is affected, how you would know, and what happens when it goes wrong are as real for a small product, and answering them takes about an hour.', was: ['The four questions apply to a feature built by two people, and answering them takes an hour. What differs is the ceremony, not the questions.'] },
+          { label: 'A simplified version of the framework, which small teams usually find more useful.', feedback: 'The four questions are already the short version; there is nothing to simplify away.', was: ['Largely, since a small team cannot discharge the obligations.'] },
+          { label: 'Nothing much: small teams cannot meet the obligations, so mapping them achieves little.', feedback: 'Naming an obligation you cannot meet is the finding. Not naming it does not remove it.', was: ['Yes, but a simplified version is worth doing.'] },
         ],
         repair: 'Write all four functions as questions about your own feature in step 1. Record the change in step 5.',
         recheck: 'All four are answered for your feature rather than described.',
@@ -1919,9 +2136,9 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'Your affected list contains only the people using the feature. What is missing?',
         options: [
-          { label: 'The people it acts upon without their participation, such as providers whose classes are never suggested.', correct: true, feedback: 'That group loses bookings on the basis of a ranking they have not seen and cannot appeal. It is also where the harm signal comes from, and a usefulness measure would score the same concentration as success.' },
-          { label: 'Nothing, if the feature only affects its users.', feedback: 'A ranking affects everybody ranked, including those ranked last.' },
-          { label: 'Future users, who should also be considered.', feedback: 'Worth thinking about and not the group being missed here.' },
+          { label: 'People it acts on without taking part, such as providers whose items never appear.', correct: true, feedback: 'That group loses bookings on the basis of a ranking they have not seen and cannot appeal. It is also where the harm signal comes from, since a usefulness measure would score concentration as success.', was: ['The people it acts upon without their participation, such as providers whose classes are never suggested.'] },
+          { label: 'Nobody, if the feature only shows suggestions to the people who opened it.', feedback: 'A ranking affects everybody ranked, including those ranked last and never shown.', was: ['Nothing, if the feature only affects its users.'] },
+          { label: 'Future users, who may join later and should be considered in the design now.', feedback: 'Worth thinking about, and not the group being missed here.', was: ['Future users, who should also be considered.'] },
         ],
         repair: 'Add everybody acted upon to step 2, and write the harm signal that follows in step 4. Record the change in step 5.',
         recheck: 'Your list includes somebody who will never open the feature.',
@@ -1929,9 +2146,9 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'Nobody currently owns what happens when a provider complains. What should the map say?',
         options: [
-          { label: 'Unowned. It is a finding, and writing it down is better than quietly assigning it to yourself.', correct: true, feedback: 'Most AI harm comes from nobody owning a question rather than from a technical failure. Taking it on by default at the end of a long day produces an owner who will not be there in six months.' },
-          { label: 'That you own it, since you built the feature.', feedback: 'That may be the right outcome and it should be a decision somebody made rather than a gap you filled.' },
-          { label: 'Nothing, until somebody actually complains.', feedback: 'The first complaint is the worst moment to discover that nobody answers it.' },
+          { label: 'Unowned, written down as a finding rather than quietly taken on by you.', correct: true, feedback: 'Much AI harm comes from nobody owning a question rather than from a technical failure. Taking it on by default produces an owner who may not be there in six months.', was: ['Unowned. It is a finding, and writing it down is better than quietly assigning it to yourself.'] },
+          { label: 'That you own it, since you built the feature and understand it best.', feedback: 'That may be the right outcome, and it should be a decision somebody made rather than a gap you filled.', was: ['That you own it, since you built the feature.'] },
+          { label: 'Nothing yet; ownership can be settled when the first complaint arrives.', feedback: 'The first complaint is the worst moment to discover that nobody answers it.', was: ['Nothing, until somebody actually complains.'] },
         ],
         repair: 'Mark anything nobody owns as unowned in step 3 rather than assigning it. Record the change in step 5.',
         recheck: 'Your map distinguishes owned from unowned rather than leaving blanks.',
@@ -1942,6 +2159,15 @@ export const guided16: Record<string, Guided> = {
       external: 'The framework and its playbook are downloadable without an account. The map itself is one page in your own folder.',
       creator: 'Your creator reads the unowned list and the harm signal. A map with nothing unowned and no harm signal usually means only the users were considered.',
       next: 'Open Your work and choose Ready for review. The last lesson of the module prepares the argument against building one of these at all.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A council’s parking app will use a model to suggest streets with free spaces. A model-drafted risk map says: “Affected: drivers using the app. Owner: the IT team owns all risks. Harm signal: app-store rating below 4 stars.” The council’s notes say residents of suggested streets have complained about traffic before, and nobody has been named to answer them.',
+      prompt: 'Decide what the map should change, and explain why each change matters.',
+      anchors: {
+        weak: 'Accepts “the IT team owns all risks” and the star rating, and lists only drivers.',
+        adequate: 'Adds residents of suggested streets as affected without taking part, marks complaint handling as unowned rather than assigning it to IT by default, and replaces the rating with a harm signal about residents, such as complaints or traffic on suggested streets.',
+        strong: 'As adequate, and separates usefulness signals from harm signals, says who could decide the unowned question and how it would be raised, and names what the response can actually do, such as stop suggesting a street within a day.',
+      },
     },
   },
   'm16-l12-v1': {
@@ -2010,6 +2236,16 @@ export const guided16: Record<string, Guided> = {
           wrongTurn: 'The wrong turn is arguing about accuracy, because it is the question the proposal invites and it sounds rigorous. Noticeable and correctable comes first, and when the answer is no it settles the matter without a number.',
           tradeoff: 'Refusing on those grounds leaves the underlying problem — staff spending an hour a week on fee decisions — entirely unsolved, which is why the alternative matters.',
           uncertainty: 'Still unknown: whether the judgement condition could be made appealable. If it could, the argument would have to be had again on different grounds.',
+        },
+        supported: {
+          material: 'Supplied output (hand-written for practice; no model produced it). Asked to make the case for AI fee decisions, it writes: “An AI model can decide late-fee waivers with 95% accuracy, saving staff an hour a week, and members will barely notice.” Source to check, the library’s policy: three written conditions decide a waiver; members are told only “your fee stands”, with no reason and no appeal.',
+          question: 'Which test settles this proposal first?',
+          options: [
+            { label: 'Whether a member could notice and correct a wrong decision; here they could not.', correct: true, feedback: 'The policy already has three written conditions — known rules — and members get no reason and no appeal, so a wrong decision is invisible to them. That settles it in this form; the unsourced 95% never enters the argument.' },
+            { label: 'Whether 95 per cent accuracy is high enough for decisions about members’ own money.', feedback: 'Arguing the threshold accepts the framing, and the 95% has no source; noticeability comes first.' },
+            { label: 'Whether the hour a week saved outweighs the cost of building the model.', feedback: 'Cost matters to the argument later; it does not decide whether an unnoticeable wrong decision is acceptable.' },
+          ],
+          then: 'Now apply the three questions to each of your proposals in step 2, noticeable-and-correctable first.',
         },
         start: 'Ask the noticeable-and-correctable question first; it settles some proposals on its own.',
         enough: 'At least one proposal fails on something other than accuracy.' },
@@ -2084,11 +2320,11 @@ export const guided16: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Does saying no make you look unhelpful?',
+        question: 'You plan to argue against a proposed AI feature, and worry it will make you look unhelpful. What makes a refusal land as judgement?',
         options: [
-          { label: 'Saying no with a reason and an alternative makes you the person whose judgement is trusted.', correct: true, feedback: 'Saying yes to everything makes you the person who builds whatever was fashionable last quarter. The alternative is the part that turns a refusal into a contribution.' },
-          { label: 'Sometimes, which is why it should be used sparingly.', feedback: 'Used sparingly usually means used too late, after the fortnight has been spent.' },
-          { label: 'No, if the reasoning is technical enough.', feedback: 'Technical reasoning persuades technical people. Cost, risk and support persuade the person deciding.' },
+          { label: 'A reason in decision terms and an alternative that solves the same problem.', correct: true, feedback: 'The alternative turns a refusal into a contribution. Saying yes to everything makes you the person who builds whatever was fashionable last quarter.', was: ['Saying no with a reason and an alternative makes you the person whose judgement is trusted.'] },
+          { label: 'Saying no rarely and late, so that it carries weight when it finally happens.', feedback: 'Late usually means after the fortnight has been spent.', was: ['Sometimes, which is why it should be used sparingly.'] },
+          { label: 'Technical detail about models, so the objection sounds expert and certain.', feedback: 'Technical reasoning persuades technical people; cost, risk and support persuade the person deciding.', was: ['No, if the reasoning is technical enough.'] },
         ],
         repair: 'Write the alternative alongside your argument in step 3. Record the change in step 5.',
         recheck: 'Your argument contains something somebody could say yes to.',
@@ -2096,9 +2332,9 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'A proposal would be accurate most of the time, and a wrong output cannot be noticed by the person affected. What do you argue?',
         options: [
-          { label: 'That it should not ship at any accuracy. Noticeable and correctable comes before the accuracy question.', correct: true, feedback: 'A member told their fee stands, with no idea what was considered and no route to appeal, cannot detect or correct a wrong decision. The accuracy number never enters the argument.' },
-          { label: 'That the accuracy needs to be higher first.', feedback: 'That accepts the framing and turns an objection of principle into a negotiation about a threshold.' },
-          { label: 'That it needs human review of every decision.', feedback: 'A reasonable mitigation, and it usually removes the reason for building it at all.' },
+          { label: 'That it should not ship in that form, since nobody could notice or correct an error.', correct: true, feedback: 'A member told their fee stands, with no idea what was considered and no route to appeal, cannot detect or correct a wrong decision. Noticeable and correctable comes before the accuracy question.', was: ['That it should not ship at any accuracy. Noticeable and correctable comes before the accuracy question.'] },
+          { label: 'That the accuracy must first reach a high threshold agreed in advance, such as 99 per cent.', feedback: 'That accepts the framing and turns an objection of principle into a negotiation about a number.', was: ['That the accuracy needs to be higher first.'] },
+          { label: 'That every output needs a person to review it before the member ever sees it.', feedback: 'A reasonable mitigation, and it often removes the reason for building it at all, so say that too.', was: ['That it needs human review of every decision.'] },
         ],
         repair: 'Ask the noticeable-and-correctable question first for each proposal in step 2. Record the change in step 5.',
         recheck: 'At least one proposal is settled without reference to accuracy.',
@@ -2106,9 +2342,9 @@ export const guided16: Record<string, Guided> = {
       {
         question: 'You say “our research shows nobody wants this”, from three sessions. What does that cost?',
         options: [
-          { label: 'Somebody will ask which research, and overstating once discounts everything you say afterwards.', correct: true, feedback: 'Three sessions establish what three people did. The honest version — the common case is three taps and a text box is slower for everybody on a phone — is checkable and stronger.' },
-          { label: 'Nothing, since the conclusion is probably right.', feedback: 'Probably right, unsupportably stated, is the combination that does the damage.' },
-          { label: 'It weakens this argument only.', feedback: 'It weakens the next three, which is the more expensive part.' },
+          { label: 'The next question is “which research?”, and an overstatement discounts what follows.', correct: true, feedback: 'Three sessions establish what three people did. The checkable version — the common case is three taps, and a text box is slower on a phone — is stronger.', was: ['Somebody will ask which research, and overstating once discounts everything you say afterwards.'] },
+          { label: 'Little, since the conclusion is probably right and nobody will check the detail.', feedback: 'Probably right and unsupportably stated is the combination that does the damage when somebody does check.', was: ['Nothing, since the conclusion is probably right.'] },
+          { label: 'Only this argument’s strength; later arguments are judged on their own evidence.', feedback: 'Credibility carries over: once you have overstated, your next few claims are discounted too.', was: ['It weakens this argument only.'] },
         ],
         repair: 'Replace any overstated claim in step 3 with something checkable from your own work. Record the change in step 5.',
         recheck: 'Every claim in your argument could survive being checked.',
@@ -2119,6 +2355,15 @@ export const guided16: Record<string, Guided> = {
       external: 'Keep the three cases with your product notes rather than with this module, so they are to hand when somebody is enthusiastic.',
       creator: 'Your creator reads the alternative and what would change your mind. A refusal with neither is an attitude rather than a position.',
       next: 'Open Your work and choose Ready for review. This closes Module 16. Module 17 moves up to strategy and the systems around the product.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A community garden allocates its twenty plots each spring by written rules: the longest on the waiting list go first, one plot per household. A committee member forwards a vendor’s pitch: “Our AI allocates plots fairly, learning who will garden best, with 90% satisfaction.” Applicants are told only their result.',
+      prompt: 'Decide whether to argue against the pitch, and explain your reasoning, including what you would offer instead.',
+      anchors: {
+        weak: 'Argues about whether 90% satisfaction is good enough, or accepts the pitch because it promises fairness; offers no alternative.',
+        adequate: 'Argues against it: the rules are known and written, so an ordered list does the job; applicants could not notice or contest a wrong allocation; the 90% has no source. Offers a published list ordered by waiting time.',
+        strong: 'As adequate, and puts the argument in cost, risk and complaint terms, names the evidence that would change their mind (a problem the rules cannot solve), and notes “who will garden best” is a judgement nobody has agreed to.',
+      },
     },
   },
 };

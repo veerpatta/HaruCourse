@@ -1,11 +1,34 @@
 // Module 17 · Strategy and complex systems. The audit's warning is that this
 // module asks for organisational economics, staff workflows and stakeholder
 // power a career-transition learner may have no way to observe. One continuing
-// fictional case runs through the supplied material here — Northside Tool
-// Library, a small organisation with two staff, a spreadsheet and a payment
-// provider — and its evidence is revealed a piece at a time before each lesson
-// asks the learner to apply the same reasoning to whatever they can see.
+// fictional case runs through every lesson: the Northside Tool Library case
+// pack below, identical on each lesson, with its roles, what each may see and
+// do, its service dependencies, constraints and evidence gaps. Every Check is
+// drawn from it; each lesson's supplied example changes one of its constraints
+// (the user, the organisation or the risk) and asks how the decision changes;
+// the transfer task then changes a constraint in a new everyday case. A
+// learner with no organisation to observe can work the whole module on it,
+// labelled as practice.
 import { improvementMade, revealOne, paperRoute, textRoute, type Guided } from './guided';
+
+export const casePack = [
+  'Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.',
+  'Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.',
+  'Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.',
+  'Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.',
+  'Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.',
+  'Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.',
+  'Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.',
+  'Two local workshops · Each emails the coordinator to book about a dozen tools a month for its evening classes. You · A volunteer designer with about six hours a week. You can propose changes to the coordinator; you have no authority over volunteers, the board or the funder.',
+  'Booking tool and messages · A free hosted form. A request is confirmed only after the coordinator copies it into the stock list; confirmations and locker codes are emailed the next morning. A cancellation frees the tool only at the next 8 pm update. The free plan sends email only, cannot release a cancelled booking by itself, and sends one reminder the day before a tool is due back.',
+  'Lockers, payments and the stock list · Twelve coded lockers outside the hall take hand tools out of hours; power tools go out at the desk only. Most tools are single copies. The payment provider confirms within seconds and charges a small fee on every payment and every refund. The stock list is one spreadsheet: the only record of where each tool is and whether it is ready.',
+  'Last six months (coordinator’s notes) · Workshop requests fitted in within a week, every time. The new-member sign-up, called confusing by three new members, postponed four times so far. On three short-staffed Saturdays, returned power tools went unchecked and stayed off the shelf until Tuesday. No request from the grant officer refused. Written aim: “To make tools available to everybody in the neighbourhood, sustainably and inclusively.”',
+  'Since March · Cancelling takes one tap, so tools cancelled after Friday’s 8 pm update stay marked booked all Saturday. The coordinator thinks Friday-night cancellations have risen; nobody has counted. The board has proposed a £5 late-cancellation fee.',
+  'Open questions for the board · Whether to let power tools be collected from the lockers out of hours, to shorten the Saturday queue: a locker rule can be changed back within a week, but bigger lockers would be a one-off purchase. Three income ideas: a pre-ticked £1 donation on every booking, “Only 1 left!” on every tool page, and cancelling a subscription by phone only.',
+  'Constraints · The free booking plan stays this year; a paid plan needs board approval and money the grant does not cover. The payment provider cannot change this year. No analytics beyond the booking tool’s monthly counts and the stock list. The library does not lend tools that need training to use safely, such as chainsaws.',
+  'Evidence gaps · Nobody has counted the calls asking whether a deposit went through; the coordinator says “most”. Cancellations sit in the stock list, uncounted. Nobody knows why members do not renew, what share of bookings come from repeat members, or whether Riverside residents use their memberships. The board wants to describe the library against the hardware shop’s hire counter and a sharing app; the chair circulated an undated consultancy article on positioning that ends by selling workshops, and nobody has a verified source.',
+  'Two members, asked why they joined · “I needed a tile cutter for one bathroom; buying one to use once was silly.” “A drill for one weekend. The trip across town nearly put me off.”',
+];
 
 export const guided17: Record<string, Guided> = {
   'm17-l01-v1': {
@@ -83,6 +106,16 @@ export const guided17: Record<string, Guided> = {
           tradeoff: 'Writing the pattern down produces a sentence nobody likes and nobody chose, and somebody will feel accused of a preference they never held.',
           uncertainty: 'Still unknown: whether the pattern would have changed anyway. It changed a fortnight after being named, which is not the same as because of it.',
         },
+        supported: {
+          material: 'From the case pack: workshop requests are always fitted in within a week, and the new-member sign-up fix has been postponed four times. Changed constraint (organisation): the council says the grant will be renewed only if the library gains 50 new members this year.',
+          question: 'Which operating choice has to change first?',
+          options: [
+            { label: 'Existing users over new ones: the sign-up fix now protects the grant, so it moves ahead.', correct: true, feedback: 'The constraint changes what the old pattern costs: the postponed fix now stands between the library and its grant. The workshops are not wrong to be served; the order changes. Affected: new members, workshops and volunteers. Missing: whether a better sign-up actually brings new members.' },
+            { label: 'None yet: the written aim already includes everybody, so new members are covered.', feedback: 'The aim covered everybody before too, while the sign-up waited. A new constraint is tested against behaviour, not against the aim.' },
+            { label: 'Stop the workshop bookings, since they take the time new members need more.', feedback: 'That overcorrects: the grant asks for new members, not fewer existing ones, and the workshops may be where new members first hear of the library.' },
+          ],
+          then: 'Now write your own three choices in step 3, and for each note one constraint that would change it.',
+        },
         start: 'Take your strongest pattern and write it as this over that.',
         enough: 'Somebody at the organisation could disagree with each of your three.' },
       { expect: 'What the choices rule out, or a plain statement that they rule nothing out.',
@@ -148,31 +181,31 @@ export const guided17: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Is strategy decided above you?',
+        question: 'The case pack’s written aim promises tools for everybody. Its log shows the grant officer’s requests have never been refused, workshop requests are always fitted in, and the sign-up fix has waited six months. Which describes Northside’s operating strategy?',
         options: [
-          { label: 'The written one is. The operating one is made of a thousand small decisions, many of them yours, and naming the pattern is available to anybody paying attention.', correct: true, feedback: 'What gets cut first when time is short is a strategic choice made by whoever is deciding that afternoon. Writing it down is frequently enough to change it.' },
-          { label: 'Yes, which is why designers should focus on execution.', feedback: 'Execution is where the operating strategy is made. Every decision about what to cut is one.' },
-          { label: 'No, designers should be in the strategy conversation.', feedback: 'Being invited is a different thing from reading the pattern, which needs no invitation.' },
+          { label: 'Funder and existing users come before new members, whatever the written aim says.', correct: true, feedback: 'Read from behaviour: whose requests always get through and what keeps waiting. Nobody wrote that pattern down, and it decides more about the next six months than the aim on the wall.', was: ['The written one is. The operating one is made of a thousand small decisions, many of them yours, and naming the pattern is available to anybody paying attention.'] },
+          { label: 'Tools for everybody, sustainably and inclusively, as the board’s written aim states.', feedback: 'The aim excludes nobody, so no decision could contradict it; it describes what the library would like to be, not what it does.', was: ['Yes, which is why designers should focus on execution.'] },
+          { label: 'No strategy yet: a volunteer library is too small to have one operating at all.', feedback: 'Size does not stop a pattern forming. Every fitted-in request and every postponement is part of one.', was: ['No, designers should be in the strategy conversation.'] },
         ],
         repair: 'Check your three choices in step 3 come from behaviour rather than from anybody’s statements. Record the change in step 5.',
         recheck: 'Each choice names something that actually happened.',
       },
       {
-        question: 'Your inferred strategy rules nothing out. What does that mean?',
+        question: 'You write Northside’s strategy as “Serve members, workshops and the funder well.” A volunteer asks what it would ever make you refuse, and you cannot name anything. What does that tell you?',
         options: [
-          { label: 'There is no strategy operating, and saying so plainly is the finding.', correct: true, feedback: 'A pattern that excludes nothing cannot be contradicted by any decision, so it is not guiding any. Manufacturing an exclusion to fill the field would hide the most useful thing you found.' },
-          { label: 'That the strategy is inclusive, which is a legitimate position.', feedback: 'Inclusive of everything means everything competes for the same week, decided by whoever asks loudest.' },
-          { label: 'That you have not read the behaviour closely enough.', feedback: 'Possible, and the honest first answer is what you found rather than a second attempt to find something.' },
+          { label: 'It rules nothing out, so it guides no decision; say plainly that nothing is excluded.', correct: true, feedback: 'A statement that excludes nothing cannot be contradicted by any decision, so it steers none. Writing that plainly is a finding; manufacturing an exclusion would hide it.', was: ['There is no strategy operating, and saying so plainly is the finding.'] },
+          { label: 'It is inclusive, which suits a community library better than drawing hard lines.', feedback: 'Inclusive of everything means every request competes for the same Saturday, decided by whoever asks loudest.', was: ['That the strategy is inclusive, which is a legitimate position.'] },
+          { label: 'You need to read more months of the log until an exclusion finally shows up.', feedback: 'More reading may help later; the honest first answer is what you found, which is that nothing is ruled out.', was: ['That you have not read the behaviour closely enough.'] },
         ],
         repair: 'Write plainly in step 4 that nothing is ruled out, if that is what you found. Record the change in step 5.',
         recheck: 'Step 4 contains either exclusions or a plain statement that there are none.',
       },
       {
-        question: 'One of your implied choices is something nobody would defend out loud. What have you found?',
+        question: 'The case pack’s log says that on three short-staffed Saturdays, returned power tools went unchecked and stayed off the shelf until Tuesday. Nobody on the board would defend that. What has the log revealed?',
         options: [
-          { label: 'An accidental choice, made by default rather than by decision, and usually the one that costs most.', correct: true, feedback: 'The first-time experience sacrificed four times running was never chosen by anybody. Nothing about it has been weighed, which is exactly why naming it tends to change it.' },
-          { label: 'A misreading of the behaviour.', feedback: 'Possible, and the pattern is the evidence. Nobody defending it is what makes it interesting rather than what makes it wrong.' },
-          { label: 'Something to raise privately rather than write down.', feedback: 'Written down as a pattern rather than as a criticism, it is a description. Raised privately it is an accusation.' },
+          { label: 'An accidental choice: the queue beat availability by default, with nobody deciding it.', correct: true, feedback: 'A pattern nobody chose and nobody would defend is usually the costly one, because nothing about it was weighed. Written as a pattern rather than a criticism, it is a description somebody can act on.', was: ['An accidental choice, made by default rather than by decision, and usually the one that costs most.'] },
+          { label: 'A misreading of the log, since nobody would choose to keep tools off the shelf.', feedback: 'Nobody choosing it is what makes it accidental, not imaginary; the log is the evidence.', was: ['A misreading of the behaviour.'] },
+          { label: 'A private staffing matter, better raised with the coordinator than written down.', feedback: 'Raised privately it reads as blame; written as a pattern it describes how the library actually behaves.', was: ['Something to raise privately rather than write down.'] },
         ],
         repair: 'Write how you can tell it was an accident in step 5, using behaviour rather than intent. Record the change.',
         recheck: 'Your evidence does not require knowing what anybody meant.',
@@ -184,6 +217,16 @@ export const guided17: Record<string, Guided> = {
       creator: 'Your creator reads the accidental choice and how you can tell. A reading with no accident in it is usually a reading of the document.',
       next: 'Open Your work and choose Ready for review. The next lesson asks how this product pays for itself.',
     },
+    transfer: {
+      scenario: 'Made-up case: A town’s repair café runs on Saturday mornings. For a year its volunteers have fixed bikes first, because the bike fixers arrive early, and lamps and toasters wait or go home unfixed. The café has just agreed to host an electrical-safety charity’s monthly visit, which needs half the tables for small appliances.',
+      prompt: 'Decide which operating choice the café should change, and explain why, who is affected and what evidence is missing.',
+      anchors: {
+        weak: 'Restates a value (“we fix everything for everyone”) or keeps bikes first unchanged; does not read the year’s pattern as a choice.',
+        adequate: 'Names the operating choice (bikes over small appliances, set by who arrives early), changes it for the monthly visit (tables split, or appliance slots first), and names who is affected: bike owners, appliance owners and the early volunteers.',
+        strong: 'As adequate, and names the evidence gap (how many appliance owners now leave unfixed), asks whether bike-first was ever chosen, and says what would show the change working after two visits.',
+      },
+    },
+    material: casePack,
   },
   'm17-l02-v1': {
     route: textRoute,
@@ -309,6 +352,16 @@ export const guided17: Record<string, Guided> = {
           tradeoff: 'The screen change addresses a symptom rather than the cause, and the evening spreadsheet is still the real constraint.',
           uncertainty: 'Still unknown: how many calls are actually about payment status. The staff say most of them, and nobody counts, which the description says rather than converting into a figure.',
         },
+        supported: {
+          material: 'From the case pack: a council grant covers part of the running cost; members pay a yearly subscription and a deposit on each loan; nobody knows why members do not renew. Changed constraint (organisation): the grant ends next year, so subscriptions must cover its share.',
+          question: 'What changes in your description of how Northside survives?',
+          options: [
+            { label: 'Renewals become the main income risk, so why members lapse is the first gap to close.', correct: true, feedback: 'When the payer changes, the exchange has to be rewritten from the member’s side: what they get must now carry the full cost. The pack’s gap — why members do not renew — moves from interesting to urgent, and no figure should be invented to fill it. Affected: every member and the treasurer.' },
+            { label: 'Nothing in the exchange: members already pay, so only the price needs to go up.', feedback: 'A price rise changes what members give, which changes whether the exchange still makes sense to them; that is the question, not a detail.' },
+            { label: 'The exchange stays the same, so the design lever is still the payment screen.', feedback: 'The payment screen still matters, but the constraint moved the biggest cost: a lapsed member now costs the library its income.' },
+          ],
+          then: 'Now write your own lever in step 4, with the mechanism step by step and no invented figures.',
+        },
         start: 'Take the largest cost your design touches and trace how one change would reduce it.',
         enough: 'The mechanism has steps rather than a jump from change to outcome.' },
       { expect: 'Any unsourced number removed, and the repair the Check questions asked for.',
@@ -322,31 +375,31 @@ export const guided17: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Somebody says business is not their area. What does that miss?',
+        question: 'A board member calls the payment screen “a design detail, not a business matter”. The case pack says unclear payments produce phone calls to the part-time coordinator. What does the board member miss?',
         options: [
-          { label: 'Every design decision is an economic decision about somebody’s time, money or risk. Declining to describe it removes you from the conversation rather than the effect.', correct: true, feedback: 'An unclear screen becomes a phone call, which is an hour of a two-person staff. Describing that does not require financial data or invented figures.' },
-          { label: 'It is a reasonable division of labour in a large team.', feedback: 'In a large team somebody else describes the effect of your decision, in terms you did not choose.' },
-          { label: 'Designers should learn finance.', feedback: 'Almost none of this is finance. It is describing what is exchanged and what it costs.' },
+          { label: 'Each unclear payment costs the coordinator’s time, which is the library’s scarcest resource.', correct: true, feedback: 'Every design decision lands on somebody’s time, money or risk. Here the cost is coordinator hours, and describing it needs no invented figure: unclear screen, a call, an interrupted evening.', was: ['Every design decision is an economic decision about somebody’s time, money or risk. Declining to describe it removes you from the conversation rather than the effect.'] },
+          { label: 'Nothing much: screen details belong to designers, and money belongs to the treasurer.', feedback: 'Dividing it that way leaves the treasurer describing the effect of your screen in terms you did not choose.', was: ['It is a reasonable division of labour in a large team.'] },
+          { label: 'Only the transaction fees, which are the one cost the treasurer can actually measure.', feedback: 'Fees are countable; the calls are uncounted and land on the one paid person, which is why naming them matters.', was: ['Designers should learn finance.'] },
         ],
         repair: 'Write the exchange in plain words in step 1, with no figures. Record the change in step 5.',
         recheck: 'Your description names costs without inventing numbers.',
       },
       {
-        question: 'Your exchange says members get a sense of community and a sustainable way to do jobs. Is that the exchange?',
+        question: 'The council grant pays for 30 Riverside memberships; the residents borrow the tools. The grant officer asks for each resident’s name and loans. What must your description of the exchange say?',
         options: [
-          { label: 'It may be true of somebody and it is what the organisation says about itself. The real exchange is why people actually turned up.', correct: true, feedback: 'Two conversations produced a deposit, a trip across town, and a job done without buying a tool. The trip is a cost in the exchange, which makes collection hours a design question rather than an operational detail.' },
-          { label: 'Yes, those are genuine benefits of the service.', feedback: 'Genuine and not what anybody weighed when deciding to come. The aspirational version hides the costs people actually pay.' },
-          { label: 'Yes, provided some members do value it.', feedback: 'Some do. The exchange has to describe the ordinary case, or the costs in it stay invisible.' },
+          { label: 'The council pays and residents use, so say whose experience wins when they conflict.', correct: true, feedback: 'Payer and user differ, and the request is the conflict: naming residents serves the payer and costs the users’ privacy. The write-up says who currently wins and whether anybody decided that.', was: ['It may be true of somebody and it is what the organisation says about itself. The real exchange is why people actually turned up.'] },
+          { label: 'The residents are the customers, so the officer’s request can simply be ignored for now.', feedback: 'Ignoring the payer puts the grant at risk; the conflict has to be resolved, not wished away.', was: ['Yes, those are genuine benefits of the service.'] },
+          { label: 'The council is the customer, so its reporting request defines the exchange.', feedback: 'Letting the payer define the exchange is the default nobody chose; the residents are why the scheme exists.', was: ['Yes, provided some members do value it.'] },
         ],
-        repair: 'Ask two people why they use it and rewrite the exchange from their answers, in step 1. Record the change in step 5.',
-        recheck: 'The exchange names a cost people actually pay.',
+        repair: 'Write in step 2 who pays, who uses, whose experience currently wins, and who decided that. Record the change in step 5.',
+        recheck: 'Where payer and user differ, you have said who wins and whether anybody chose that.',
       },
       {
-        question: 'You want to say unclear payments cost about thirty hours a year. Where did that come from?',
+        question: 'You want to write that unclear payments cost the coordinator “about thirty hours a year”. The case pack says nobody has counted the calls. What should the description say?',
         options: [
-          { label: 'If you cannot say, remove it. An invented figure loses the argument the first time somebody checks.', correct: true, feedback: 'The describable version works: each unclear booking produces roughly one call, to a staff of two, and calls come at the times tools are being checked in. No number, no exposure, same argument.' },
-          { label: 'It is a reasonable estimate and should be labelled as one.', feedback: 'A labelled estimate is still the figure that gets quoted, as Module 15 established.' },
-          { label: 'Keep it and find a source later.', feedback: 'Later is after it has been repeated.' },
+          { label: 'The mechanism in words: unclear payment, a call, an interrupted evening; no figure.', correct: true, feedback: 'An invented figure loses the argument the first time somebody checks, and here somebody can: nobody has counted. The mechanism makes the same case, and a count can be added later by whoever does one.', was: ['If you cannot say, remove it. An invented figure loses the argument the first time somebody checks.'] },
+          { label: 'Thirty hours, labelled as an estimate, since a rough number is more persuasive.', feedback: 'A labelled estimate is still the number that gets quoted, as Module 15 established.', was: ['It is a reasonable estimate and should be labelled as one.'] },
+          { label: 'A typical industry figure for support calls per payment, cited to its source.', feedback: 'A figure from other organisations describes them; it says nothing about Northside’s calls.', was: ['Keep it and find a source later.'] },
         ],
         repair: 'Remove any unsourced number in step 5 and replace it with a description. Record the change.',
         recheck: 'No figure in your description is one you cannot account for.',
@@ -358,6 +411,16 @@ export const guided17: Record<string, Guided> = {
       creator: 'Your creator reads the costs that are not money and the mechanism on your lever. Those two are where commercial literacy actually shows.',
       next: 'Open Your work and choose Ready for review. The next lesson draws what happens behind the interface.',
     },
+    transfer: {
+      scenario: 'Made-up case: A community minibus takes residents of three outlying villages to the market town twice a week. Riders pay a small fare and a supermarket pays most of the cost through its community scheme. The supermarket now says it will fund only routes that stop at its own store.',
+      prompt: 'Decide how the minibus should respond, and explain your reasoning, naming who is affected and what evidence is missing.',
+      anchors: {
+        weak: 'Agrees to the new routes because the payer decides, or refuses without saying who loses; invents numbers to make the case.',
+        adequate: 'Rewrites the exchange: the payer now shapes the routes, so riders who need other stops lose out. Names those riders and the drivers’ time, and proposes a response such as a shared route or a second funder, without invented figures.',
+        strong: 'As adequate, and names the evidence gap (how many riders use the stops that would be dropped), says who should decide whose experience wins, and how to find out cheaply, such as a week’s count of where people get off.',
+      },
+    },
+    material: casePack,
   },
   'm17-l03-v1': {
     route: paperRoute('the three bands of a service blueprint for one journey'),
@@ -492,39 +555,49 @@ export const guided17: Record<string, Guided> = {
           { term: 'A front-stage change from a back-stage constraint', meaning: 'Changing what you promise rather than what happens. It is usually the only change available to you, and it is frequently the right one.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
+        supported: {
+          material: 'From the case pack: a request is confirmed only after the coordinator copies it into the stock list in the evening, and confirmations go out the next morning. Changed constraint (organisation): the coordinator’s hours are cut, so the update happens only on Tuesday, Thursday and Saturday evenings.',
+          question: 'What should the front stage now promise a member who books on Sunday?',
+          options: [
+            { label: 'A held request, confirmed by Wednesday morning, with a reference to show at the desk.', correct: true, feedback: 'Sunday’s request waits for Tuesday’s update and Wednesday’s email. Promising what the back stage can now deliver, with a reference as proof, is the front-stage change. Affected: members who need a tool early in the week. Missing: how many bookings that is.' },
+            { label: 'Confirmation by the next morning, as now; any delay can be explained if anybody asks.', feedback: '“Next morning” is now false for four days of the week; explaining afterwards is an apology for a promise you knew was wrong.' },
+            { label: 'Instant confirmation, so members are not left waiting while the hours are reduced.', feedback: 'An instant confirmation promises a check nobody has made; two people could be promised the same tool.' },
+          ],
+          then: 'Now make your own front-stage change in step 5, and say what the promise now is.',
+        },
         start: 'Take the decisive fact you cannot change and make the front stage honest about it.',
         enough: 'The change makes a promise the operation can actually keep.' },
     ],
     checks: [
       {
-        question: 'Confirmations arrive the next morning because a spreadsheet is updated by hand each evening. Is that an operations problem?',
+        question: 'Members who return a tool on Wednesday see “Your deposit is on its way.” The case pack says the treasurer refunds deposits in one batch on Tuesday evenings. Whose problem is the message?',
         options: [
-          { label: 'It is the experience. A person waiting does not distinguish your interface from your staffing, and a design promising what the operation cannot deliver is at fault.', correct: true, feedback: 'The available change is usually on the front stage: say the booking is held and confirmed by the morning, and give the person a reference as proof. The evening update can stay exactly as it is.' },
-          { label: 'Yes, and the design should be judged separately.', feedback: 'Nobody outside the organisation judges them separately.' },
-          { label: 'Yes, and it should be escalated as a process issue.', feedback: 'Worth raising, and meanwhile the promise is yours to fix this week.' },
+          { label: 'The design’s: it promises what the back stage cannot do, so the wording must change.', correct: true, feedback: 'A member waiting a week does not separate your screen from the treasurer’s Tuesday. “Refunds go out on Tuesday evenings” is a front-stage change you can make this week; the batch can stay as it is.', was: ['It is the experience. A person waiting does not distinguish your interface from your staffing, and a design promising what the operation cannot deliver is at fault.'] },
+          { label: 'Operations’: the treasurer’s weekly batch is the cause, so the batch must change first.', feedback: 'Raising the batch is fair, and it is somebody else’s decision; meanwhile the promise on the screen is yours to fix.', was: ['Yes, and the design should be judged separately.'] },
+          { label: 'Nobody’s: a refund within a week is normal for a library run by volunteers.', feedback: 'Normal or not, “on its way” says something else, and members plan around what the screen says.', was: ['Yes, and it should be escalated as a process issue.'] },
         ],
         repair: 'Make one front-stage change from a back-stage constraint in step 5, and record what the promise now says.',
         recheck: 'Nothing in your front stage promises something the back stage cannot deliver.',
       },
       {
-        question: 'You cannot observe the back stage. Can you still blueprint it?',
+        question: 'You cannot watch the coordinator’s evening update, and the case pack describes it in one line. How should your blueprint show that step?',
         options: [
-          { label: 'Yes, from what you can find out by asking, with anything you had to assume marked as an assumption.', correct: true, feedback: 'A blueprint with three marked assumptions is useful and honest. One drawn as fact, from guesswork, produces front-stage decisions built on an imagined process.' },
-          { label: 'No, a blueprint requires observation to be accurate.', feedback: 'Accuracy is the aim and marked assumptions are how you get there incrementally.' },
-          { label: 'Yes, by using a typical process for this kind of service.', feedback: 'A typical process is an assumption about all of it rather than about parts of it.' },
+          { label: 'From the pack and what you can ask, with every guessed detail marked as assumed.', correct: true, feedback: 'A blueprint with marked assumptions is useful and honest. One drawn as fact from guesswork produces front-stage decisions built on an imagined process.', was: ['Yes, from what you can find out by asking, with anything you had to assume marked as an assumption.'] },
+          { label: 'Leave it out, since a blueprint should show only what you have observed yourself.', feedback: 'Leaving it out hides the step that sets the timescale for every confirmation.', was: ['No, a blueprint requires observation to be accurate.'] },
+          { label: 'Draw a standard booking back office, since most small services work much the same.', feedback: 'A typical process is an assumption about all of it, presented as if it were known.', was: ['Yes, by using a typical process for this kind of service.'] },
         ],
         repair: 'Mark everything you assumed in step 5, and say what you would ask to confirm it. Record the change.',
         recheck: 'Assumptions and observations are distinguishable on your blueprint.',
       },
       {
-        question: 'Everybody blames the payment provider for the delay, and your blueprint shows it responds in seconds. What have you found?',
+        question: 'The board wants power tools in the out-of-hours lockers to cut the Saturday queue. Your blueprint shows each returned power tool must be checked before it goes out again, and checks happen on Tuesday evenings. What does that fact decide?',
         options: [
-          { label: 'That the constraint is elsewhere, which is one of the most useful things a blueprint produces.', correct: true, feedback: 'The delay is a person updating a spreadsheet each evening. Until the blueprint existed, effort would have gone into the provider, which was never the problem.' },
-          { label: 'That the provider is not the only cause.', feedback: 'It is not a cause at all, which is a stronger and more useful finding.' },
-          { label: 'That the blueprint needs more detail on the provider.', feedback: 'More detail on the thing that is fast is the opposite of what the finding suggests.' },
+          { label: 'How soon a returned power tool can honestly be offered again, whatever the lockers allow.', correct: true, feedback: 'A check on Tuesdays caps availability: a drill returned on Wednesday cannot go out again before the next Tuesday, lockers or not. The promise on the booking page has to follow it.', was: ['That the constraint is elsewhere, which is one of the most useful things a blueprint produces.'] },
+          { label: 'Nothing on the front stage, since checks happen behind the line where members never look.', feedback: 'Behind the line is exactly where decisive facts live; members meet this one as “unavailable” all week.', was: ['That the provider is not the only cause.'] },
+          { label: 'Only the locker size, since power tools are bulkier than the hand tools stored now.', feedback: 'Size matters to the lockers; the Tuesday check decides when a tool can go in them at all.', was: ['That the blueprint needs more detail on the provider.'] },
         ],
-        repair: 'Mark the back-stage items that decide nothing, in step 4, so the decisive ones stand out. Record the change in step 5.',
-        recheck: 'Your two decisive facts are the ones that actually set the timescale.',
+        repair: 'Write one decisive fact in step 4 with what it determines about the front stage, as the Tuesday check does here. Record the change in step 5.',
+        recheck: 'Both decisive facts name something the front stage has to follow.',
       },
     ],
     saveRoute: {
@@ -533,6 +606,16 @@ export const guided17: Record<string, Guided> = {
       creator: 'Your creator reads the two decisive facts and what you assumed. A blueprint with no assumptions marked usually means the back stage was imagined.',
       next: 'Open Your work and choose Ready for review. The next lesson deals with the case where the person paying is not the person using it.',
     },
+    transfer: {
+      scenario: 'Made-up case: An amateur theatre lends costumes. Requests come by web form; one volunteer pulls costumes from storage on Mondays; borrowers collect on Thursday evenings, and the website says “ready in 48 hours”. The Monday volunteer is leaving, and the only replacement can work on Saturdays.',
+      prompt: 'Decide what the website should now promise, and explain why, naming who is affected and what you would need to find out.',
+      anchors: {
+        weak: 'Keeps “ready in 48 hours” or calls it an operations problem; does not trace the promise to the packing day.',
+        adequate: 'Traces the promise to the packing day: with Saturday packing, a request is ready for the next Thursday collection after Saturday, so the site states the real timing. Names borrowers with near deadlines as affected.',
+        strong: 'As adequate, and marks what is assumed (whether Thursday collection stays), names what to find out (how many requests are urgent), and raises a back-stage option such as a second volunteer with whoever decides.',
+      },
+    },
+    material: casePack,
   },
   'm17-l04-v1': {
     route: textRoute,
@@ -596,6 +679,16 @@ export const guided17: Record<string, Guided> = {
           wrongTurn: 'The wrong turn is building what the buyer asked for, because the buyer signed and the request is reasonable. The buyer decides once; the everyday user decides whether it is still used in a year, and a feature that costs them usage destroys the thing the buyer was buying.',
           tradeoff: 'The aggregate cannot answer a manager asking about one named person, and occasionally somebody genuinely needs to. Saying no to that is the trade.',
           uncertainty: 'Still unknown: how much of the drop was the reporting. Two months and one change is not a controlled comparison, and the mechanism was what the staff said.',
+        },
+        supported: {
+          material: 'From the case pack: the council officer funds 30 Riverside memberships and asked for names and loans; the coordinator allocates the memberships and sees members’ contact details; the board sees monthly totals. Changed constraint (risk): the council’s auditor now needs proof that each funded membership went to an eligible resident.',
+          question: 'What should the reporting now give the council?',
+          options: [
+            { label: 'A coordinator’s check of eligibility by membership number, with no loan history attached.', correct: true, feedback: 'The audit needs eligibility, not borrowing. The coordinator already sees contact details and can confirm it by membership number, so loans stay private. Affected: residents and the coordinator’s time. Missing: what the auditor will accept as proof.' },
+            { label: 'Each resident’s name and loans, since the audit now justifies the original request.', feedback: 'The new need is narrower than the old request: proving eligibility does not require what anybody borrowed.' },
+            { label: 'Monthly totals as before, and a reply that names cannot be shared with anyone.', feedback: 'The constraint is real; refusing it outright puts the grant at risk when a narrower answer exists.' },
+          ],
+          then: 'Now name your own two conflicts in step 3, with who currently wins, and one constraint that would change the winner.',
         },
         start: 'Ask what the buyer would want that the everyday user would dislike.',
         enough: 'Both conflicts name a pair of roles and a current winner.' },
@@ -675,31 +768,31 @@ export const guided17: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Is the buyer the customer?',
+        question: 'In the case pack’s Riverside scheme, the council officer chose and pays for 30 memberships, the coordinator allocates them and residents borrow. Whose experience decides whether the scheme is renewed next autumn?',
         options: [
-          { label: 'The buyer decides once; the everyday user decides whether it is still used in a year.', correct: true, feedback: 'Products that optimise for the purchase decision accumulate resentment and lose renewals. Attendance reporting wins the sale and suppresses the usage the report then measures.' },
-          { label: 'Yes, since the buyer holds the budget.', feedback: 'The budget is renewed on the strength of usage, which the everyday user controls.' },
-          { label: 'Yes for the first year, then the user matters.', feedback: 'The first year is when the resentment accumulates.' },
+          { label: 'The residents’: renewal depends on use, and only they decide whether to keep borrowing.', correct: true, feedback: 'The buyer decides once; the everyday user decides whether it is still used. A scheme built to satisfy the officer’s request at the residents’ cost produces the low usage that loses the renewal.', was: ['The buyer decides once; the everyday user decides whether it is still used in a year.'] },
+          { label: 'The officer’s: she chose the scheme and holds the budget that renews it each year.', feedback: 'She decides once, and decides again on the evidence of use, which the residents control.', was: ['Yes, since the buyer holds the budget.'] },
+          { label: 'The coordinator’s: she runs the allocation and reports the numbers to the officer.', feedback: 'The coordinator’s work matters and is routinely designed last; her report still only counts what residents do.', was: ['Yes for the first year, then the user matters.'] },
         ],
         repair: 'Name who currently wins in both conflicts in step 3, and whether anybody decided that. Record the change in step 5.',
         recheck: 'Both conflicts say who wins rather than only that a tension exists.',
       },
       {
-        question: 'The buyer asks for named attendance reporting. What should you do?',
+        question: 'The grant officer asks for each Riverside resident’s name and what they borrowed, to show the scheme is used. What should you offer?',
         options: [
-          { label: 'Answer her accountability with an aggregate that names nobody, and say why the named version costs the usage she is buying.', correct: true, feedback: 'She has to show the scheme is used, which an aggregate does completely. The named version suppresses bookings and then reports the suppression as low usage.' },
-          { label: 'Build it; she is paying and the request is reasonable.', feedback: 'Reasonable from where she sits, and it destroys the thing she is buying.' },
-          { label: 'Refuse it as a privacy matter.', feedback: 'A refusal with nothing attached leaves her accountability unanswered, and she will get it from somebody else.' },
+          { label: 'Totals by month and tool type, naming nobody, and why named lists would cut use.', correct: true, feedback: 'She has to show the scheme is used, which totals do completely. A named list risks residents borrowing less once they know, and then reports that drop as low demand.', was: ['Answer her accountability with an aggregate that names nobody, and say why the named version costs the usage she is buying.'] },
+          { label: 'The named list as requested, since the council pays for every one of the memberships.', feedback: 'Reasonable from where she sits, and it risks destroying the use she is paying for.', was: ['Build it; she is paying and the request is reasonable.'] },
+          { label: 'A refusal on privacy grounds, so residents can borrow without being watched by anyone.', feedback: 'A refusal with nothing attached leaves her accountability unanswered, and she may seek the list some other way.', was: ['Refuse it as a privacy matter.'] },
         ],
         repair: 'Write what the buyer gets instead in step 5, answering the same accountability. Record the change.',
         recheck: 'Your alternative answers what the buyer has to show.',
       },
       {
-        question: 'Your screen shows the everyday user what their employer can see. Why bother?',
+        question: 'Your Riverside booking screen says “The council sees monthly totals only, never your name or loans.” A board member calls the line unnecessary. Why keep it?',
         options: [
-          { label: 'Because people who do not know assume the worst, and the assumption is corrosive whether or not it is accurate.', correct: true, feedback: 'It costs the buyer nothing. If the true answer is embarrassing enough that showing it is awkward, that is a finding about the feature rather than about the disclosure.' },
-          { label: 'Because transparency is generally good practice.', feedback: 'True and general. The specific reason is what people assume in its absence.' },
-          { label: 'Because it may be legally required.', feedback: 'It may be, and the design reason holds regardless.' },
+          { label: 'Residents not told what the funder sees tend to assume the worst, and borrow less.', correct: true, feedback: 'The assumption is corrosive whether or not it is accurate, and dispelling it costs the officer nothing. If the true answer were embarrassing to show, that would be a finding about the reporting, not the line.', was: ['Because people who do not know assume the worst, and the assumption is corrosive whether or not it is accurate.'] },
+          { label: 'Telling users what others see is good practice in general, wherever data is shared.', feedback: 'True and general; the specific reason is what residents assume in its absence.', was: ['Because transparency is generally good practice.'] },
+          { label: 'It may be legally required for council-funded schemes, so it is safer to include it.', feedback: 'It may be; the design reason holds regardless, and nobody here has checked the law.', was: ['Because it may be legally required.'] },
         ],
         repair: 'Add the visibility line to your screen in step 4 and say what it states. Record the change in step 5.',
         recheck: 'The everyday user can see what others can see about them.',
@@ -711,6 +804,16 @@ export const guided17: Record<string, Guided> = {
       creator: 'Your creator reads what the buyer gets instead. A refusal with no alternative is the half of this lesson that usually goes missing.',
       next: 'Open Your work and choose Ready for review. The next lesson traces what happens after people adapt to your design.',
     },
+    transfer: {
+      scenario: 'Made-up case: A company pays for staff to use a city bike-share scheme. Staff ride; an office manager hands out the passes; the finance team receives a monthly report of total rides. Finance now wants each employee’s ride times and routes, to check passes are not used for weekend leisure.',
+      prompt: 'Decide what the report should contain, and explain why, naming who is affected and what evidence is missing.',
+      anchors: {
+        weak: 'Gives finance full ride times and routes because the company pays, or refuses with no alternative.',
+        adequate: 'Answers the real need (passes used for work) with less exposure, such as weekday and weekend totals per pass number without routes, and tells riders what finance can see. Names riders and the office manager as affected.',
+        strong: 'As adequate, and names the evidence gap (whether weekend use is a real problem or a worry), says what would justify more detail, and notes riders who feel tracked may stop using the passes, defeating the scheme.',
+      },
+    },
+    material: casePack,
   },
   'm17-l05-v1': {
     route: paperRoute('the loop your change sets off, with the delay marked on each arrow'),
@@ -838,6 +941,16 @@ export const guided17: Record<string, Guided> = {
           then: 'Now choose your own response, and check it does not simply ask somebody to be more careful.',
           pattern: 'Two of these change what somebody sees or what happens automatically, and neither asks anything of the person. The fee and the revert are real changes that trade one loop for another, which is worth knowing before shipping rather than after.',
         },
+        supported: {
+          material: 'From the case pack: tools cancelled after Friday’s 8 pm update stay marked booked all Saturday; the free plan cannot release a cancellation by itself; the board proposed a £5 late-cancellation fee. Changed constraint (organisation): the board approves a paid plan that offers a cancelled tool to the next person on a waiting list automatically.',
+          question: 'How does the best response change?',
+          options: [
+            { label: 'Automatic offering closes the loop, so drop the fee and watch whether waiting lists swell.', correct: true, feedback: 'The constraint removed the delay that made cancellations harmful, so a fee now only discourages honest cancelling. The new risk is a loop of its own: speculative waiting-list sign-ups. Affected: members and the board’s budget. Missing: how many members would use a waiting list.' },
+            { label: 'Keep the £5 fee as well, so cancellations stay rare and the waiting list stays short.', feedback: 'With automatic offering, a cancellation no longer idles the tool, so the fee punishes the behaviour the system now handles.' },
+            { label: 'Nothing changes: the Saturday desk should still release cancelled tools by hand.', feedback: 'Hand release was the workaround for the free plan’s limit; keeping it adds Saturday work the new plan has made unnecessary.' },
+          ],
+          then: 'Now design your own structural response in step 4, and check it for a loop of its own.',
+        },
         start: 'Ask what would close the loop without anybody having to remember anything.',
         enough: 'Your response changes what is easy, visible or automatic rather than what is requested.' },
       { expect: 'What you would watch for and when it would appear, and the repair the Check questions asked for.',
@@ -851,31 +964,31 @@ export const guided17: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'You plan to monitor for unintended consequences after shipping. Is that enough?',
+        question: 'The board says it will “keep an eye on” the one-tap cancellation change. The case pack says a cancellation frees a tool only at the next 8 pm update. Why is watching not enough?',
         options: [
-          { label: 'Monitoring finds them after they have compounded and been attributed to something else. Tracing the likely loop before shipping costs an hour.', correct: true, feedback: 'Six weeks of delay means the turned-away attendees get blamed on overbooking rather than on a cancellation button. Nobody connects them without the loop drawn in advance.' },
-          { label: 'Yes, since you cannot predict every consequence.', feedback: 'You cannot predict all of them, and the obvious loop is usually traceable in an hour.' },
-          { label: 'Yes, provided the monitoring is thorough.', feedback: 'Thorough monitoring of the wrong thing, in the wrong week, finds nothing.' },
+          { label: 'The effect lands on Saturday, after the desk closes, and gets blamed on low demand.', correct: true, feedback: 'Watching finds effects after they compound and get attributed to something else. Tracing the loop takes an hour: one-tap cancel, tools idle on Saturday, members see “booked”, requests fall, the board reads it as low demand.', was: ['Monitoring finds them after they have compounded and been attributed to something else. Tracing the likely loop before shipping costs an hour.'] },
+          { label: 'It is enough: nobody can predict every consequence, so watching is the honest option.', feedback: 'Not every consequence can be predicted; this one is traceable from facts already in the pack.', was: ['Yes, since you cannot predict every consequence.'] },
+          { label: 'It is enough if the coordinator checks the stock list carefully every single evening.', feedback: 'Careful checking happens at 8 pm, after Saturday’s desk has closed, which is the delay that hides the loop.', was: ['Yes, provided the monitoring is thorough.'] },
         ],
         repair: 'Trace the loop in step 2 with a delay on every arrow, before shipping. Record the change in step 5.',
         recheck: 'Your diagram has times on the arrows.',
       },
       {
-        question: 'Your fix for the loop is a confirmation asking whether the person is sure. What is wrong with it?',
+        question: 'Your proposed fix is a Friday-evening pop-up: “Late cancellations leave tools unused. Are you sure?” What is wrong with it?',
         options: [
-          { label: 'It asks somebody to solve a structural problem by being more considerate, and the people who read it are the least likely to be the problem.', correct: true, feedback: 'A structural response changes what is easy, visible or automatic. Offering the place to a waiting list closes the loop where it does harm, without anybody having to be more careful.' },
-          { label: 'Nothing, if the wording is good.', feedback: 'Good wording makes a better warning. It is still a warning.' },
-          { label: 'It adds friction, which was the thing you removed.', feedback: 'It adds a little, and the deeper problem is who it asks to fix things.' },
+          { label: 'It asks members to fix a structural delay by being considerate, and the delay stays.', correct: true, feedback: 'A structural response changes what is easy, visible or automatic. Letting the Saturday desk release Friday-night cancellations at opening — a permission change, since the free plan cannot do it — closes the loop without anybody being more careful.', was: ['It asks somebody to solve a structural problem by being more considerate, and the people who read it are the least likely to be the problem.'] },
+          { label: 'Nothing, if the wording is kind enough that members do not feel blamed for cancelling.', feedback: 'A kinder warning is still a warning; the tool still sits idle until the evening update.', was: ['Nothing, if the wording is good.'] },
+          { label: 'It adds a tap to cancelling, which is the friction the March change set out to remove.', feedback: 'It does add friction; the deeper problem is that it puts the fix on the member rather than on the delay.', was: ['It adds friction, which was the thing you removed.'] },
         ],
         repair: 'Replace any warning in step 4 with a change to what is easy or visible. Record the change in step 5.',
         recheck: 'Your response works without anybody remembering anything.',
       },
       {
-        question: 'You consider a fee for late cancellation. What should you check?',
+        question: 'The board proposes a £5 late-cancellation fee. What should you check before backing it?',
         options: [
-          { label: 'Whether it creates its own loop: people stop cancelling and simply do not turn up, which is worse and invisible until the class starts.', correct: true, feedback: 'It is a real incentive change rather than a warning, which is what makes it worth examining rather than dismissing. Every structural response needs the same check.' },
-          { label: 'Whether the fee is large enough to change behaviour.', feedback: 'It will change behaviour. The question is which behaviour.' },
-          { label: 'Whether members would accept it.', feedback: 'Worth knowing, and it is not what makes the response backfire.' },
+          { label: 'Whether members would stop cancelling and just not collect, leaving tools idle.', correct: true, feedback: 'A fee is a real incentive change, which is why it deserves checking rather than dismissing. A no-show is worse than a cancellation: the tool stays booked and nobody finds out until the desk closes.', was: ['Whether it creates its own loop: people stop cancelling and simply do not turn up, which is worse and invisible until the class starts.'] },
+          { label: 'Whether £5 is a large enough amount to change how members behave on Friday evenings.', feedback: 'It will change behaviour; the question is which behaviour.', was: ['Whether the fee is large enough to change behaviour.'] },
+          { label: 'Whether members would accept a fee, by asking a few of them what they think.', feedback: 'Worth knowing, and acceptance is not what makes a response backfire.', was: ['Whether members would accept it.'] },
         ],
         repair: 'Check your own response for a loop of its own in step 4, and say what it would be. Record the change in step 5.',
         recheck: 'You have looked for a second loop rather than assuming there is none.',
@@ -887,6 +1000,16 @@ export const guided17: Record<string, Guided> = {
       creator: 'Your creator reads the delays and whether your response is structural. A response that asks people to be careful is the commonest answer here.',
       next: 'Open Your work and choose Ready for review. The next lesson maps the people who can stop any of this happening.',
     },
+    transfer: {
+      scenario: 'Made-up case: A laundrette lets people book machines in an app, free to cancel up to the start time. People now book several machines and cancel the spares at the last minute, so walk-in customers find machines “booked” but empty. The owner is about to hire an assistant who will be there in the evenings only.',
+      prompt: 'Decide what structural change the laundrette should make now an evening assistant is coming, and explain why, who is affected and what evidence is missing.',
+      anchors: {
+        weak: 'Adds a warning or a fee for last-minute cancelling without tracing the loop, and ignores the new assistant.',
+        adequate: 'Traces the loop (free late cancelling, over-booking, idle “booked” machines, walk-ins turned away) and makes a structural change, such as releasing unstarted bookings after ten minutes, with the evening assistant able to release them by hand. Names walk-ins and app users as affected.',
+        strong: 'As adequate, and checks the change for its own loop (late arrivals losing machines), names the evidence gap (how many bookings are cancelled in the last minutes), and says what to watch and when.',
+      },
+    },
+    material: casePack,
   },
   'm17-l06-v1': {
     route: textRoute,
@@ -1013,6 +1136,16 @@ export const guided17: Record<string, Guided> = {
           then: 'Now design your own approach from the first group, and write what it costs you rather than them.',
           pattern: 'Everything that works costs you something — scope, sequencing, an afternoon of definition — and costs them nothing. Escalating and re-explaining are the two moves that feel like progress and are not.',
         },
+        supported: {
+          material: 'From the case pack: you propose that the Saturday desk releases Friday-night cancellations at opening; the treasurer refunds deposits on Tuesdays; the maintenance volunteer must check power tools after every loan. Changed constraint (risk): the insurer now says no power tool may be released unless the stock list shows its last check.',
+          question: 'How should your approach change?',
+          options: [
+            { label: 'Release hand tools only, and power tools once the stock list shows their check.', correct: true, feedback: 'The condition narrows the proposal rather than ending it, and it answers the maintenance volunteer’s likely reservation in writing. Affected: Saturday borrowers of power tools and the desk volunteers, who need the check column visible. Missing: how many released tools are power tools.' },
+            { label: 'Drop the proposal, since the insurer’s new condition makes any release too risky.', feedback: 'The condition applies to power tools only; dropping everything gives up the hand-tool releases it does not touch.' },
+            { label: 'Keep the proposal unchanged and ask the insurer to make an exception for Saturdays.', feedback: 'Asking for an exception sets you against the condition that protects the library’s cover, and puts the work at risk.' },
+          ],
+          then: 'Now design your own approach in step 4, and write what it costs you rather than them.',
+        },
         start: 'Ask what you could change about the proposal rather than about their mind.',
         enough: 'Your approach costs you something rather than requiring them to change their view.' },
       { expect: 'The quiet blocker identified, with what their unstated reservation probably is.',
@@ -1026,34 +1159,34 @@ export const guided17: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'If the design is right, will it win?',
+        question: 'You propose letting the Saturday desk release Friday-night cancellations at opening. The treasurer objects that it “will cause chaos”. In the case pack she writes the grant report and refunds deposits. How should you read her objection?',
         options: [
-          { label: 'Designs are adopted by people with their own accountabilities and constraints. Understanding those is not politics; it is the ordinary work of getting something built.', correct: true, feedback: 'A developer objecting to work that threatens a committed date is not resisting change. The proposal was costing him the thing somebody else asks him about.' },
-          { label: 'Usually, if it is explained well enough.', feedback: 'Explaining it again is what people do when they have not understood the objection.' },
-          { label: 'No, which is why influence is a separate skill.', feedback: 'It is the same skill applied to a different constraint, which is what makes it learnable.' },
+          { label: 'As information: each release means another deposit refund, and refunds are her batch.', correct: true, feedback: 'Opposition is usually a correct reading of a cost that falls on that person. Released bookings mean more refunds and more fees in her Tuesday batch; answering that cost is the work.', was: ['Designs are adopted by people with their own accountabilities and constraints. Understanding those is not politics; it is the ordinary work of getting something built.'] },
+          { label: 'As resistance to change, which a clearer explanation of the benefits should overcome.', feedback: 'Explaining the benefits again is what people do when they have not understood the objection.', was: ['Usually, if it is explained well enough.'] },
+          { label: 'As a seniority issue: board members expect to be consulted before any rota change.', feedback: 'Consultation may matter; her objection names a specific cost, which seniority does not explain.', was: ['No, which is why influence is a separate skill.'] },
         ],
         repair: 'Write the rational basis of the costliest opposition in step 3, in the first person. Record the change in step 5.',
         recheck: 'You could argue their side convincingly.',
       },
       {
-        question: 'Should you map stakeholders by seniority?',
+        question: 'Mapping the same proposal, you put the board chair at the top because she is most senior. The case pack says the desk volunteers check about forty loans each Saturday and decide nothing. How should the map change?',
         options: [
-          { label: 'No. Map by accountability, and place interest and influence separately, because somebody can care enormously and decide nothing.', correct: true, feedback: 'The assistant with high interest and low influence usually knows best where the real problems are, and a seniority map makes them invisible.' },
-          { label: 'Yes, since senior people decide.', feedback: 'They decide some things. What they are accountable for predicts which.' },
-          { label: 'Yes, with the working level noted separately.', feedback: 'That is a seniority map with a footnote.' },
+          { label: 'By accountability, with interest and influence apart: the desk knows most, decides nothing.', correct: true, feedback: 'Somebody can care enormously and decide nothing. The Saturday volunteers see every Friday-night cancellation turn into an idle locker, which makes them the best source on the problem, and a seniority map hides them.', was: ['No. Map by accountability, and place interest and influence separately, because somebody can care enormously and decide nothing.'] },
+          { label: 'Keep seniority as the order, adding the desk volunteers as a footnote for context.', feedback: 'A seniority map with a footnote still predicts nothing about who will support or stop the change.', was: ['Yes, since senior people decide.'] },
+          { label: 'Remove the desk volunteers, since people with no influence cannot block the work.', feedback: 'They cannot block it formally; they can tell you where it will break, and they will be the ones running it.', was: ['Yes, with the working level noted separately.'] },
         ],
         repair: 'Rewrite your list in step 1 by what each person is accountable for. Record the change in step 5.',
         recheck: 'Nobody on your map is described by title alone.',
       },
       {
-        question: 'Who matters more: the loud sceptic or the quiet one who has been agreeable throughout?',
+        question: 'The maintenance volunteer has agreed with everything in two meetings and done nothing since. The case pack says he must check each returned power tool before it goes out again. Who needs your attention first?',
         options: [
-          { label: 'Usually the quiet one. The sceptic tells you their objection; the quiet one does not, and the work simply never quite happens.', correct: true, feedback: 'A stated objection can be answered. An unstated reservation stops things in ways nobody can point at, and finding it is worth more than winning the argument with the sceptic.' },
-          { label: 'The sceptic, since opposition has to be answered.', feedback: 'It does, and it is the easy case, because you know what it is.' },
-          { label: 'Neither; both should be treated the same.', feedback: 'One has given you their reason and one has not, which is the whole difference.' },
+          { label: 'The quiet volunteer: an unstated worry about unchecked power tools could stall it unseen.', correct: true, feedback: 'A stated objection can be answered; an unstated reservation stops things in ways nobody can point at. Releasing tools touches his insurance duty, so asking him directly is worth more than winning the treasurer’s argument.', was: ['Usually the quiet one. The sceptic tells you their objection; the quiet one does not, and the work simply never quite happens.'] },
+          { label: 'The treasurer, since stated opposition is the thing that has to be answered first.', feedback: 'Her objection matters, and it is the easier case, because you know what it is.', was: ['The sceptic, since opposition has to be answered.'] },
+          { label: 'Both equally, since giving one more attention than the other would seem unfair.', feedback: 'One has given a reason and one has not, which is the whole difference between them.', was: ['Neither; both should be treated the same.'] },
         ],
         repair: 'Name the quiet blocker and their probable reservation in step 5, and record the change.',
-        recheck: 'You named a person rather than a general risk.',
+        recheck: 'You named a role and a probable reservation rather than a general risk.',
       },
     ],
     saveRoute: {
@@ -1062,6 +1195,16 @@ export const guided17: Record<string, Guided> = {
       creator: 'Your creator reads the rational basis you constructed. An opposition described as obstruction is one nobody has understood yet.',
       next: 'Open Your work and choose Ready for review. The next lesson decides what to do when the information is not going to arrive.',
     },
+    transfer: {
+      scenario: 'Made-up case: A choir wants to move rehearsals from Tuesday to Thursday so a new conductor can lead them. The secretary, who books the hall, is enthusiastic. The treasurer has said nothing. The hall’s owner has just announced that Thursday bookings now need a deposit, which the treasurer would have to pay from a tight budget.',
+      prompt: 'Decide whose position matters most now and how you would approach them, and explain why, naming who is affected and what you still need to find out.',
+      anchors: {
+        weak: 'Focuses on the enthusiastic secretary or on persuading everyone of the conductor’s value; ignores the silent treasurer and the new deposit.',
+        adequate: 'Identifies the treasurer as the costliest, quiet opposition because the deposit falls on her budget, and approaches her about that cost (sharing it, or a trial month) rather than re-explaining the benefit.',
+        strong: 'As adequate, and names who else is affected (members who cannot do Thursdays), what is missing (the deposit amount and whether it is refundable), and why the hall’s change shifted the map.',
+      },
+    },
+    material: casePack,
   },
   'm17-l07-v1': {
     route: textRoute,
@@ -1119,6 +1262,16 @@ export const guided17: Record<string, Guided> = {
           { term: 'Reversible for everybody', meaning: 'Whether the consequences can be undone, not whether the change can. Module 15 made the same distinction about measurement.' },
           { term: 'Certainty proportionate to cost', meaning: 'A cheap, reversible decision justifies almost none. An expensive, irreversible one justifies waiting.' },
         ],
+        supported: {
+          material: 'From the case pack: the board must decide this month whether power tools can be collected from lockers out of hours; a locker rule can be changed back within a week; insurance requires a check after every power-tool loan. Changed constraint (risk): the insurer says one unchecked power tool lent out would end the library’s cover.',
+          question: 'How much certainty does the decision now need?',
+          options: [
+            { label: 'More than before: one failure is irreversible, so the check must be proven first.', correct: true, feedback: 'The rule is still reversible; the consequence is not. One unchecked loan could end the cover for everybody, so the trial waits until a check before every locker loan is shown to work. Affected: every member. Missing: whether checks can happen before Saturday.' },
+            { label: 'The same as before: the locker rule can still be changed back within a week.', feedback: 'Reversibility is about consequences, not settings: a week is long enough for the irreversible loan to happen.' },
+            { label: 'Less than before: the insurer’s warning makes the decision for the board.', feedback: 'The warning raises the stakes; it does not decide whether a safe version exists, which is still the board’s question.' },
+          ],
+          then: 'Now write the cost of being wrong in step 2, for everybody affected, and how much certainty that justifies.',
+        },
         start: 'Ask who pays if this is wrong, and whether they can get it back.',
         enough: 'Your reversibility judgement is about the people affected rather than about your own effort.' },
       { expect: 'The finding that would produce a different decision, or a written statement that none would.',
@@ -1205,31 +1358,31 @@ export const guided17: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Somebody says you need more research before deciding. What should you ask?',
+        question: 'The board must decide this month whether power tools can be collected from the lockers out of hours. A member says “we need more research first”. What should you ask?',
         options: [
-          { label: 'Which finding would produce a different decision. If none would, decide now and record that.', correct: true, feedback: 'Four of five things research could tell you are usually interesting and irrelevant to the choice in front of you. The fifth is often answerable in twenty minutes from a record that already exists.' },
-          { label: 'How long the research would take.', feedback: 'A good second question. Asked first, it turns the conversation into a negotiation about scheduling.' },
-          { label: 'Whether the research is affordable.', feedback: 'Also secondary. Research that would not change the decision is unaffordable at any price.' },
+          { label: 'Which finding would change the decision, and whether any can be had this month.', correct: true, feedback: 'Most things research could tell you are interesting and irrelevant to this choice. One might decide it — how many Saturday collections are power tools — and the stock list already records it, uncounted.', was: ['Which finding would produce a different decision. If none would, decide now and record that.'] },
+          { label: 'How long a proper survey of members’ collection habits would take to run.', feedback: 'A fair second question; asked first, it turns the decision into a scheduling negotiation.', was: ['How long the research would take.'] },
+          { label: 'Whether the budget can stretch to some research before the board meets this month.', feedback: 'Research that would not change the decision is unaffordable at any price.', was: ['Whether the research is affordable.'] },
         ],
         repair: 'List what research could tell you in step 3 and cross off everything that would not change the choice. Record the change in step 5.',
         recheck: 'You can name the decisive finding or say there is none.',
       },
       {
-        question: 'Is waiting for certainty the safe option?',
+        question: 'The case pack says a locker rule can be changed back within a week, but bigger lockers would be a one-off purchase. The board wants certainty on both before acting. What is the better approach?',
         options: [
-          { label: 'Waiting is itself a decision, usually a worse one, because the current situation continues while nobody has chosen it.', correct: true, feedback: 'Deciding at the last responsible moment means deciding when waiting stops adding information. Waiting past that is a delay that feels like rigour.' },
-          { label: 'Yes, for anything expensive or irreversible.', feedback: 'For those, more certainty is justified. Waiting for certainty that is not coming is a different thing.' },
-          { label: 'Yes, since a wrong decision is worse than a late one.', feedback: 'Sometimes. A late decision on a cheap reversible thing costs more than the mistake would have.' },
+          { label: 'Trial the reversible rule now with tools that fit; keep the purchase for later.', correct: true, feedback: 'Certainty should match cost and reversibility. A cheap, reversible rule can be tried and revisited; the irreversible purchase deserves the wait, and the trial supplies its evidence.', was: ['Waiting is itself a decision, usually a worse one, because the current situation continues while nobody has chosen it.'] },
+          { label: 'Wait on both until a full year of evidence shows what members actually prefer to do.', feedback: 'Waiting is itself a decision: the Saturday queue continues while nobody has chosen it.', was: ['Yes, for anything expensive or irreversible.'] },
+          { label: 'Buy the lockers now, since a rule change without them cannot be tested fairly.', feedback: 'That spends the irreversible money first, on the assumption the trial was meant to test.', was: ['Yes, since a wrong decision is worse than a late one.'] },
         ],
         repair: 'Write how much certainty the cost justifies in step 2, and decide accordingly. Record the change in step 5.',
         recheck: 'Your certainty judgement is proportionate to what being wrong would cost.',
       },
       {
-        question: 'You decided with an assumption you could not check. What must accompany it?',
+        question: 'You decide to trial out-of-hours collection for small power tools, assuming it will shorten the Saturday queue, which nobody has measured. What must go with the decision?',
         options: [
-          { label: 'The assumption written down and a date to check whether it held.', correct: true, feedback: 'A decision with no way to find out it was wrong is a bet. The assumption and the date are what turn it back into a decision, and they cost two lines.' },
-          { label: 'A note that it was made under uncertainty.', feedback: 'Every decision is. Which assumption, and when you will look, is what makes it checkable.' },
-          { label: 'Agreement from somebody else, so the risk is shared.', feedback: 'Shared risk is not the same as a way of finding out.' },
+          { label: 'The assumption in writing, a date to check it, and what you will look at then.', correct: true, feedback: 'A decision with no way to find out it was wrong is a bet. “This is right if the queue is shorter on two Saturdays next month, counted at the desk” turns it back into a decision.', was: ['The assumption written down and a date to check whether it held.'] },
+          { label: 'A note in the minutes that the decision was taken under real uncertainty.', feedback: 'Every decision is uncertain; which assumption, and when you will look, is what makes this one checkable.', was: ['A note that it was made under uncertainty.'] },
+          { label: 'The whole board’s agreement first, so that the risk is shared by everybody.', feedback: 'Shared risk is not a way of finding out whether the assumption held.', was: ['Agreement from somebody else, so the risk is shared.'] },
         ],
         repair: 'Write the assumption and a check date in step 5, naming what you will look at. Record the change.',
         recheck: 'Somebody could tell, on the date, whether your assumption held.',
@@ -1241,6 +1394,16 @@ export const guided17: Record<string, Guided> = {
       creator: 'Your creator reads the decisive question and the check date. A decision with neither is a preference that happened to be acted on.',
       next: 'Open Your work and choose Ready for review. The next lesson looks at a gap this course cannot fill for you.',
     },
+    transfer: {
+      scenario: 'Made-up case: A bakery is deciding whether to open on Sundays for a summer trial. Known: two nearby cafés close on Sundays. Assumed: walkers on the canal path would come in. Unknown: how many walkers pass on a Sunday morning. The bakery has just learned its only weekend baker can work alternate Sundays only.',
+      prompt: 'Decide what the bakery should do this summer, and explain why, naming who is affected, what evidence is missing and when you would check.',
+      anchors: {
+        weak: 'Asks for more research without saying what would change the decision, or opens every Sunday ignoring the baker’s availability.',
+        adequate: 'Trials alternate Sundays (reversible, fits the baker), states the assumption about walkers, and sets a check, such as counting customers on the first four trial Sundays. Names the baker and regular customers as affected.',
+        strong: 'As adequate, and names a cheap check before deciding (counting walkers one Sunday morning), says what result would stop the trial, and notes that being wrong costs little because it can stop after a month.',
+      },
+    },
+    material: casePack,
   },
   'm17-l08-v1': {
     route: textRoute,
@@ -1285,6 +1448,16 @@ export const guided17: Record<string, Guided> = {
           wrongTurn: 'The wrong turn is naming the subject, because that is how gaps feel: a topic you do not know. A subject cannot be closed, cannot be assessed against, and cannot be prioritised.',
           tradeoff: 'Asking which decision would change often demotes a gap you feel embarrassed about, which is uncomfortable and correct.',
           uncertainty: 'Still unknown: whether a decision will turn on positioning later. If one does, the three questions are already written.',
+        },
+        supported: {
+          material: 'From the case pack: the board wants to describe the library against the hardware shop’s hire counter and a sharing app; nobody has a verified source on positioning; the grant is reviewed each autumn. Changed constraint (organisation): this year’s grant form asks how the library differs from commercial hire.',
+          question: 'How does the gap’s priority change?',
+          options: [
+            { label: 'It now changes a decision, so close it before autumn using only claims you can support.', correct: true, feedback: 'A gap that changes no decision can wait; one that changes the grant form cannot. The answer can rest on what the pack shows — deposits, no purchase, local collection — while market claims wait for a source. Affected: the board, and every member if the grant is lost.' },
+            { label: 'It stays interesting rather than urgent, since positioning is not really a design question.', feedback: 'It was interesting while no decision turned on it; the form makes it decide something.' },
+            { label: 'It is solved: borrow the article’s wording, since the form needs an answer now.', feedback: 'Urgency does not make an unverifiable source verifiable, and the form is exactly where an unsupported claim would be checked.' },
+          ],
+          then: 'Now write in step 1 which of your own decisions would change with an answer, and what would make the gap urgent.',
         },
         start: 'Write the questions as questions rather than as a topic.',
         enough: 'You can say which decision would change, or that none would.' },
@@ -1380,31 +1553,31 @@ export const guided17: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'There is plenty written about positioning. Why does this course not teach it?',
+        question: 'The board wants to describe Northside against the hardware shop’s hire counter and a sharing app, and asks you to “use what’s out there on positioning”. Why can you not simply do that?',
         options: [
-          { label: 'Plenty is published. Whether a specific page can be retrieved, is free, states its date and scope, and can have its limits written down is a different question, and most of it fails.', correct: true, feedback: 'The rule is about verifiability rather than quality. A persuasive undated article written to sell consulting cannot be checked, which is precisely what makes it unusable as a source.' },
-          { label: 'Because positioning is not a design topic.', feedback: 'It affects design decisions directly, which is why the gap is recorded rather than dismissed.' },
-          { label: 'Because the good sources are all books.', feedback: 'Several are, and a library is a legitimate route. The rule is not about format.' },
+          { label: 'Most of what is published cannot be checked for date, evidence or scope, as the rules require.', correct: true, feedback: 'The rule is about verifiability, not quality: a page has to be retrievable, free, dated, scope-reviewable and boundable. Most strategy content is written to sell something and fails that.', was: ['Plenty is published. Whether a specific page can be retrieved, is free, states its date and scope, and can have its limits written down is a different question, and most of it fails.'] },
+          { label: 'Positioning is a marketing topic, so it has no bearing on the library’s design decisions.', feedback: 'How the library is described against alternatives affects design decisions directly, which is why the gap is recorded rather than dismissed.', was: ['Because positioning is not a design topic.'] },
+          { label: 'The good sources on positioning are all in books, and this course links to none of them.', feedback: 'Format is not the rule; a dated, evidenced library book can pass the checks.', was: ['Because the good sources are all books.'] },
         ],
         repair: 'Write the five checks out in step 2 from this course’s own rules. Record the change in step 5.',
         recheck: 'Your five checks are about verifiability rather than quality.',
       },
       {
-        question: 'You find an article that is obviously better than most of what this course assigns. Should you use it?',
+        question: 'The chair’s consultancy article is clear and persuasive, undated, cites no evidence, and ends by selling paid workshops. Should Northside’s strategy note cite it?',
         options: [
-          { label: 'Not if it is undated, unevidenced and written to sell something. Persuasive is what such writing is for, and it is the property you cannot check.', correct: true, feedback: 'Rejecting it is not saying it is wrong; it is saying you cannot tell. Reading it privately as an argument is fine, and citing it or teaching from it is not.' },
-          { label: 'Yes, quality should override procedural rules.', feedback: 'Quality is your impression of it, which is the thing promotional writing is optimised to produce.' },
-          { label: 'Yes, with a note that it is unverified.', feedback: 'A note travels less far than the claim, as Module 15 established repeatedly.' },
+          { label: 'Leave it uncited: it may be right, but nothing in it can be checked or dated.', correct: true, feedback: 'Rejecting it is not saying it is wrong; it is saying you cannot tell. Reading it privately as an argument is fine; citing it puts an unverifiable claim into a document people will act on.', was: ['Not if it is undated, unevidenced and written to sell something. Persuasive is what such writing is for, and it is the property you cannot check.'] },
+          { label: 'Cite it with a note saying it is unverified, so readers can judge it themselves.', feedback: 'A caveat travels less far than the claim, as Module 15 showed; readers repeat the claim, not the note.', was: ['Yes, quality should override procedural rules.'] },
+          { label: 'Cite it, since its quality is obvious and the board already finds it convincing.', feedback: 'Persuasive is what promotional writing is built to be, which is exactly the property you cannot check.', was: ['Yes, with a note that it is unverified.'] },
         ],
         repair: 'Record the verdict and the reasons in step 4, including what you could not check. Record the change in step 5.',
         recheck: 'Your verdict rests on the checks rather than on how good the writing is.',
       },
       {
-        question: 'Your candidate was rejected and the gap is still open. Is that a wasted lesson?',
+        question: 'You assessed the article, rejected it, and the board’s positioning question is still open. Was the work wasted?',
         options: [
-          { label: 'No. A documented rejection stops the same source being reconsidered and shows the gap was taken seriously.', correct: true, feedback: 'It also produces the more useful half: a plan for closing it another way, and a list of what you will not claim until you have.' },
-          { label: 'Partly, since you have not learned about positioning.', feedback: 'You have learned that this course cannot source it and what to do about that, which is the transferable skill.' },
-          { label: 'Yes, unless you find a second candidate.', feedback: 'A second candidate is worth trying and the first verdict stands as work done either way.' },
+          { label: 'The recorded rejection stops it being reconsidered and leaves a plan to close the gap.', correct: true, feedback: 'A documented rejection is a result: it shows the gap was taken seriously, and it comes with the useful half — how to close it another way and what not to claim meanwhile.', was: ['No. A documented rejection stops the same source being reconsidered and shows the gap was taken seriously.'] },
+          { label: 'Partly, since the board still has no answer to the question it actually asked.', feedback: 'The board has learned that the course cannot source this and what to do about it, which is the transferable part.', was: ['Partly, since you have not learned about positioning.'] },
+          { label: 'Mostly, unless a second candidate source is found and accepted before the meeting.', feedback: 'A second candidate is worth trying; the first verdict stands as work done either way.', was: ['Yes, unless you find a second candidate.'] },
         ],
         repair: 'Write the plan and what you will avoid claiming in step 5. Record the change.',
         recheck: 'The gap is documented rather than left as a vague intention.',
@@ -1416,6 +1589,16 @@ export const guided17: Record<string, Guided> = {
       creator: 'Your creator reads the verdict and the reasons. A rejection with reasons somebody else could apply is the result this lesson is looking for.',
       next: 'Open Your work and choose Ready for review. The next lesson compares the same feature for a consumer and a business context.',
     },
+    transfer: {
+      scenario: 'Made-up case: A small museum wants to describe itself to tourists as different from the big city gallery nearby. A trustee forwards a slick, undated blog post on “museum branding” from an agency that sells branding packages. The tourist board has just asked every museum for a one-line “what makes you different” statement by the end of the month.',
+      prompt: 'Decide what the museum should do with the blog post and the deadline, and explain your reasoning, including what it should avoid claiming.',
+      anchors: {
+        weak: 'Uses the blog post because it is persuasive and the deadline is close, or treats the deadline as a reason to drop the checks.',
+        adequate: 'Rejects the post as a source (undated, unevidenced, selling something) and records why; writes the line from what the museum can show (its collection, hours, location), avoiding claims about tourists it cannot support.',
+        strong: 'As adequate, and names a route to a verifiable source for later (a library book, or the tourist board’s own published figures), lists the claims it will not make yet, and notes the deadline made the gap urgent.',
+      },
+    },
+    material: casePack,
   },
   'm17-l09-v1': {
     route: paperRoute('the same feature twice, once for a consumer and once for a business context'),
@@ -1550,36 +1733,46 @@ export const guided17: Record<string, Guided> = {
           { term: 'Locating your own project', meaning: 'Deciding which set of pressures applies. Many products are both, with different screens for each, and naming that is better than averaging them.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
+        supported: {
+          material: 'From the case pack: members book one tool at a time, a few times a year, on a form designed for first visits; each of two workshops emails the coordinator to book about a dozen tools a month. Changed constraint (user): the workshops must now book through the same online form.',
+          question: 'What should change in the booking design?',
+          options: [
+            { label: 'A separate repeat-booking view for workshop accounts: bulk selection, one confirmation.', correct: true, feedback: 'Workshops book in volume, monthly; members book once in a while. A separate view keeps the first-visit form kind and gives repeat users speed. Affected: workshop organisers and the coordinator. Missing: how often workshops change their lists.' },
+            { label: 'Nothing: the form already works well for members, so workshops can book one by one.', feedback: 'A dozen single bookings a month, for years, is the repeated frustration this lesson is about.' },
+            { label: 'Rebuild the member form for bulk booking, so everyone gets the faster version.', feedback: 'Bulk controls make the first visit harder for the members who book a few times a year.' },
+          ],
+          then: 'Now decide in step 5 which context your own project is in, and what a change of user would do to it.',
+        },
         start: 'Ask whether your main user chose the product and how often they use it.',
         enough: 'You named a context and something that follows from it rather than only the label.' },
     ],
     checks: [
       {
-        question: 'Is good design simply good design, whatever the context?',
+        question: 'You designed the member’s booking screen for a first visit: one tool per screen and a warm confirmation. The Saturday desk volunteers must use the same flow to check about forty loans in and out. Should they get the same design?',
         options: [
-          { label: 'The principles transfer and the priorities do not. A flow optimised for a confident first use, met hourly, produces a product people resent.', correct: true, feedback: 'A warm confirmation is a kindness on a first booking and an obstacle on the two hundredth. Neither context is more sophisticated; they optimise different things.' },
-          { label: 'Yes, quality is quality in any context.', feedback: 'Quality in one context is density and keyboard operation; in the other it is space and reassurance. They are not the same drawing.' },
-          { label: 'Yes, apart from the extra features business software needs.', feedback: 'The differences are not extra features. They are opposite answers to the same questions.' },
+          { label: 'The same principles, different priorities: density and speed for forty repeats a morning.', correct: true, feedback: 'A warm confirmation is a kindness on somebody’s first booking and an obstacle on the fortieth loan of the morning. Neither context is more sophisticated; they optimise different things.', was: ['The principles transfer and the priorities do not. A flow optimised for a confident first use, met hourly, produces a product people resent.'] },
+          { label: 'The same design, since a screen that is good for members is good for anybody.', feedback: 'Good for a first visit is not the same drawing as good for the fortieth repeat.', was: ['Yes, quality is quality in any context.'] },
+          { label: 'The same design with an admin label, since volunteers only need a few extra fields.', feedback: 'The differences are not extra fields; they are opposite answers to the same questions.', was: ['Yes, apart from the extra features business software needs.'] },
         ],
         repair: 'Write the structural reason for each of your three differences in step 4. Record the change in step 5.',
         recheck: 'No difference is justified by preference.',
       },
       {
-        question: 'Why does mandatory use change the design?',
+        question: 'Desk volunteers did not choose the booking tool and cannot use another. Why does that change the check-in design?',
         options: [
-          { label: 'Frustration accumulates as resentment rather than losing you the user, so the thousandth use matters more than the first.', correct: true, feedback: 'Somebody who chose your product and dislikes it leaves. Somebody who was given it stays, does the task forty minutes slower every month, and tells everybody the software is terrible.' },
-          { label: 'It means you can afford to make it harder to learn.', feedback: 'It means the trade is available and it has to be paid for with an introduction.' },
-          { label: 'It does not, since usability applies either way.', feedback: 'Usability applies and what to optimise changes completely.' },
+          { label: 'Frustration builds instead of making them leave, so the repeated use matters most.', correct: true, feedback: 'A member who dislikes the booking screen can stop borrowing; a volunteer stays, does each check-in slower, and the rota gets harder to fill. The fortieth use of the morning is what to design for.', was: ['Frustration accumulates as resentment rather than losing you the user, so the thousandth use matters more than the first.'] },
+          { label: 'It means the check-in screen can be harder to learn, since they have to use it.', feedback: 'A harder screen is a trade that has to be paid for, here with the morning of training every new volunteer already needs.', was: ['It means you can afford to make it harder to learn.'] },
+          { label: 'It changes nothing, since usability rules apply the same way to every user.', feedback: 'Usability applies; what to optimise changes completely when use is mandatory and repeated.', was: ['It does not, since usability applies either way.'] },
         ],
         repair: 'Count how many times your business user will do the task in two years, in step 3, and design for that. Record the change in step 5.',
         recheck: 'Your business version is designed for repetition rather than for a first visit.',
       },
       {
-        question: 'You designed the business version and added an admin label to the consumer screen. What went wrong?',
+        question: 'You redesigned the desk’s check-in screen and labelled the coordinator’s evening update “admin, as now”. The case pack says she copies every request into the stock list by hand. What went wrong?',
         options: [
-          { label: 'The administrator has their own task, with volume and repetition, and it was never designed.', correct: true, feedback: 'Twelve places across four classes, monthly, for two years is a different task from booking one place for yourself. Designing for the administrator last is how business software becomes hated.' },
-          { label: 'Nothing, if the underlying task is the same.', feedback: 'The task is not the same. The volume changes it entirely.' },
-          { label: 'It needed more configuration options.', feedback: 'Options are what gets added instead of designing the task.' },
+          { label: 'Her update is a repeated, high-volume task of its own, and it was never designed.', correct: true, feedback: 'Copying every request by hand each evening is the administrator’s own task, with its own volume and errors. Designing it last is how business software becomes hated, and here it also sets the confirmation timing.', was: ['The administrator has their own task, with volume and repetition, and it was never designed.'] },
+          { label: 'Nothing, if her update uses the same fields as the volunteers’ check-in screen.', feedback: 'The task is different: she processes every request for the day, not one loan at the counter.', was: ['Nothing, if the underlying task is the same.'] },
+          { label: 'The evening update needed more settings, so she could configure it however she likes.', feedback: 'Settings are what get added instead of designing the task.', was: ['It needed more configuration options.'] },
         ],
         repair: 'Design the administrator’s own task in step 3, from their volume rather than from the user’s screen. Record the change in step 5.',
         recheck: 'The administrator’s task is designed rather than borrowed.',
@@ -1591,6 +1784,16 @@ export const guided17: Record<string, Guided> = {
       creator: 'Your creator reads the structural reasons. A difference explained by preference is the one that shows the contexts were not really separated.',
       next: 'Open Your work and choose Ready for review. The next lesson deals with pressure to design something you should not.',
     },
+    transfer: {
+      scenario: 'Made-up case: A town library’s app lets residents reserve study rooms, designed for occasional visitors: big buttons, one room at a time, a friendly confirmation. The council now wants its staff to book the same rooms for daily team meetings through the app, often several rooms a week, paid from department budgets.',
+      prompt: 'Decide how the booking design should change for council staff, and explain why, naming who is affected and what evidence is missing.',
+      anchors: {
+        weak: 'Keeps one design for everyone, or adds an “admin” label; treats good design as context-free.',
+        adequate: 'Gives staff a repeat or bulk view (several rooms, one confirmation, a record of which budget pays) while keeping the visitor flow simple; gives repetition, volume and somebody else’s money as the reasons.',
+        strong: 'As adequate, and names who administers the rooms and their task, flags the risk that staff block-booking crowds out residents, and names the evidence gap (how many staff bookings a week).',
+      },
+    },
+    material: casePack,
   },
   'm17-l10-v1': {
     route: textRoute,
@@ -1667,6 +1870,16 @@ export const guided17: Record<string, Guided> = {
           tradeoff: 'The honest version produces less urgency, because most of the time there is no urgency. Some of the abandonment it was meant to prevent will continue.',
           uncertainty: 'Still unknown: whether a real hold reduces abandonment at all. It can be counted in the provider’s records after a month, which the countdown version could never have been separated from.',
         },
+        supported: {
+          material: 'From the case pack: the board wants a pre-ticked £1 donation on every booking to raise income; the grant is reviewed each autumn. Changed constraint (organisation): the council says the grant will now match every £1 that members donate, up to a limit.',
+          question: 'How does the honest alternative change?',
+          options: [
+            { label: 'Ask after booking, opt-in, saying the council matches each £1; no pre-ticked box.', correct: true, feedback: 'Matching makes each willing £1 worth two, a true and strong reason to ask, honestly. A pre-ticked box would still take money from people who did not notice. Affected: members and the treasurer. Missing: how many members would opt in.' },
+            { label: 'Pre-tick it after all, since matched money now serves the members as well.', feedback: 'A better cause does not make an unnoticed charge consensual; members would object if they understood.' },
+            { label: 'Drop donations entirely, since matched funding could look like pressure.', feedback: 'An honest, opt-in ask with a true reason is not pressure, and dropping it gives up money members may want to give.' },
+          ],
+          then: 'Now design your own honest alternative in step 3, and compare its cost with the dishonest version.',
+        },
         start: 'Take the need and ask what would serve it if the person read everything carefully.',
         enough: 'Your alternative would still work on somebody paying full attention.' },
       { expect: 'The sentence you would use to refuse, naming the cost, practised aloud.',
@@ -1732,31 +1945,31 @@ export const guided17: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Somebody says this is just persuasive design. What is the test?',
+        question: 'The board wants “Only 1 left!” on every tool page to drive bookings. The case pack says most tools are single copies anyway. Is that persuasion or a pattern?',
         options: [
-          { label: 'Whether the person would object if they understood what had happened. Persuasion presents a real offer well; these patterns work by making attention fail.', correct: true, feedback: 'A countdown that is true is urgency. One that resets, or that counts down to nothing, works only while nobody notices, and people do notice, later, loudly.' },
-          { label: 'Whether it increases completions.', feedback: 'It will. That is what makes the test a question about honesty rather than about effect.' },
-          { label: 'Whether comparable products do it.', feedback: 'Many do, and the ones that do are the source of most people’s distrust of the category.' },
+          { label: 'A pattern: it works only while members misread it as rare stock, not one of everything.', correct: true, feedback: 'The test is whether members would object if they understood: “only 1 left” implies scarcity, and the library has one of almost everything. True words arranged to mislead still make attention fail.', was: ['Whether the person would object if they understood what had happened. Persuasion presents a real offer well; these patterns work by making attention fail.'] },
+          { label: 'Persuasion: it is literally true for most tools, so nothing false is being said.', feedback: 'Literal truth designed to be misread fails the same test; members would object once they knew.', was: ['Whether it increases completions.'] },
+          { label: 'Persuasion, if bookings go up, because the number is what matters to the board.', feedback: 'It may raise bookings for a while; effect is not the question, honesty is.', was: ['Whether comparable products do it.'] },
         ],
         repair: 'Name the pattern for each request in step 1 rather than describing it. Record the change in step 5.',
         recheck: 'Each request is identified as an instance of something.',
       },
       {
-        question: 'You refuse a request by saying it is a dark pattern. What happens next?',
+        question: 'You tell the treasurer the pre-ticked £1 donation is “a dark pattern” and stop there. The case pack says the grant may be cut. What is likely to happen next?',
         options: [
-          { label: 'The person still has their problem, somebody else builds a worse version three weeks later, and you are not asked again.', correct: true, feedback: 'Refusing without an alternative loses the argument and the relationship. Naming the cost and offering the honest version keeps you in the conversation and usually gets the honest version built.' },
-          { label: 'The request is dropped, since the objection is correct.', feedback: 'Correctness does not make the abandonment problem go away.' },
-          { label: 'It escalates to somebody who decides.', feedback: 'Sometimes, and you arrive at that conversation having offered nothing.' },
+          { label: 'The income gap stays, someone adds a worse version later, and you are not asked again.', correct: true, feedback: 'Refusing without an alternative loses the argument and the relationship. “Not pre-ticked, because refunds and complaints cost more than £1 — here is an opt-in prompt after booking” keeps you in the room.', was: ['The person still has their problem, somebody else builds a worse version three weeks later, and you are not asked again.'] },
+          { label: 'The idea is dropped, because the board accepts that the objection is correct.', feedback: 'Being right does not close the income gap the idea was meant to fill.', was: ['The request is dropped, since the objection is correct.'] },
+          { label: 'It goes to the full board, who will weigh your objection fairly on its merits.', feedback: 'It may; you arrive at that meeting having offered nothing for the problem they are trying to solve.', was: ['It escalates to somebody who decides.'] },
         ],
         repair: 'Design the honest alternative in step 3 and put it in the same sentence as the refusal in step 4. Record the change in step 5.',
         recheck: 'Your refusal offers something to say yes to.',
       },
       {
-        question: 'Somebody proposes testing whether the countdown increases completions. Is that a reasonable compromise?',
+        question: 'A board member suggests trialling cancellation-by-phone-only for a month “to see if it reduces cancellations”. Is that a fair compromise?',
         options: [
-          { label: 'No. It will increase completions, and testing it turns a question about honesty into one about evidence.', correct: true, feedback: 'Giving way rarely looks like agreement. Softening it, testing it, or noting a reservation and standing aside all leave the thing built.' },
-          { label: 'Yes, evidence should settle disagreements.', feedback: 'Evidence settles questions about effect. This one is about whether the statement is true.' },
-          { label: 'Yes, if the test is short.', feedback: 'The length changes nothing about what is being agreed to.' },
+          { label: 'A trial measures effect; it cannot make an obstructed exit honest, so the line holds.', correct: true, feedback: 'It will very likely reduce cancellations; that was never in doubt. Testing it turns a question about honesty into one about evidence, which is how these things get built.', was: ['No. It will increase completions, and testing it turns a question about honesty into one about evidence.'] },
+          { label: 'It is fair: a month of evidence should settle a disagreement better than opinion.', feedback: 'Evidence settles questions about effect; this is about making leaving harder than joining.', was: ['Yes, evidence should settle disagreements.'] },
+          { label: 'It is fair if the trial is kept short and members are told about it in advance.', feedback: 'Short and announced still makes leaving harder for a month for everyone who wants to go.', was: ['Yes, if the test is short.'] },
         ],
         repair: 'Write your line in step 5 so it covers false statements regardless of their effect. Record the change.',
         recheck: 'Your line would still hold if the dishonest version worked well.',
@@ -1768,6 +1981,16 @@ export const guided17: Record<string, Guided> = {
       creator: 'Your creator reads the alternative and the sentence. A refusal with neither is a position you will not be able to hold twice.',
       next: 'Open Your work and choose Ready for review. The next lesson compares your work against one employer’s published expectations.',
     },
+    transfer: {
+      scenario: 'Made-up case: A theatre’s ticket site shows a 10-minute countdown on the payment page, which resets if you reload. The box-office manager says it stops people holding seats they never buy. The theatre has just moved to a smaller venue, so a held but unpaid seat now blocks a bigger share of each show.',
+      prompt: 'Decide what the payment page should do instead, and explain why, naming who is affected and what evidence is missing.',
+      anchors: {
+        weak: 'Keeps the resetting countdown because the venue is smaller, or refuses it as a dark pattern with no alternative.',
+        adequate: 'Replaces the fake countdown with a real hold that expires once and is stated honestly (“seats held for 10 minutes”), because the need — unpaid holds blocking seats — is real and now bigger; names buyers and the box office as affected.',
+        strong: 'As adequate, and names the evidence gap (how many holds expire unpaid), proposes how to find out within a month, and writes the line: no timer that says something untrue, whatever the venue size.',
+      },
+    },
+    material: casePack,
   },
   'm17-l11-v1': {
     route: textRoute,
@@ -1828,6 +2051,16 @@ export const guided17: Record<string, Guided> = {
           { term: 'Most limiting', meaning: 'The one whose absence costs you most now, rather than the one that sounds most senior.' },
           { term: 'Practisable', meaning: 'Doable on work you actually have, this month. An expectation requiring a team you do not have is a note for later rather than a plan.' },
         ],
+        supported: {
+          material: 'From the case pack: you are a volunteer designer with no authority; you can propose changes to the coordinator; the board decides spending. Changed constraint (organisation): the coordinator leaves, and the board says proposals now go straight to its monthly meeting.',
+          question: 'How should your plan to practise influence change?',
+          options: [
+            { label: 'Prepare a short case for the monthly meeting, in the board’s terms of cost and risk.', correct: true, feedback: 'The route to the decision changed, so the practice changes with it: a prepared argument in the terms the board answers for, delivered where it decides. Affected: the board’s agenda and you. Missing: how the board likes proposals to arrive.' },
+            { label: 'Pause the plan until a new coordinator is hired and can carry proposals for you.', feedback: 'Waiting hands the timing to somebody else and leaves the expectation unpractised.' },
+            { label: 'Send the same proposal as before to each board member, so all of them see it.', feedback: 'The same proposal, sent separately, ignores that the board decides together and in its own terms.' },
+          ],
+          then: 'Now choose your own gap in step 3 and check it is practisable on work you actually have.',
+        },
         start: 'Ask which gap has already cost you something in the last three months.',
         enough: 'You could start this on work that exists.' },
       { expect: 'A plan naming what you will do, on which work, and when, with the evidence it would produce.',
@@ -1906,31 +2139,31 @@ export const guided17: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Does leadership come with a title?',
+        question: 'In the case pack you are a volunteer designer with no authority over volunteers, the board or the funder. Can you practise design leadership there?',
         options: [
-          { label: 'The published expectations describe behaviour: making decisions legible, influencing people who do not report to you, connecting design work to what the organisation is accountable for.', correct: true, feedback: 'All of that is practisable on work you already have. Waiting for a title means arriving at the conversation with nothing to point at.' },
-          { label: 'Largely, since influence follows authority.', feedback: 'Authority helps and the expectations are written as behaviours precisely because they are not the same thing.' },
-          { label: 'No, and the expectations are aspirational rather than practisable.', feedback: 'Three of this module’s lessons produced artefacts that evidence them directly.' },
+          { label: 'It is practisable: take a prepared case on cancellations to the coordinator for the board.', correct: true, feedback: 'The expectations describe behaviour — making decisions legible, influencing people who do not report to you — and taking a prepared argument to the person who can change something is available at any level.', was: ['The published expectations describe behaviour: making decisions legible, influencing people who do not report to you, connecting design work to what the organisation is accountable for.'] },
+          { label: 'Only partly, since influence follows authority and you hold none in the library.', feedback: 'Authority helps; the expectations are written as behaviours precisely because they are not the same thing.', was: ['Largely, since influence follows authority.'] },
+          { label: 'Not yet: published expectations describe managers, so a volunteer cannot meet them.', feedback: 'Several expectations describe influence without a team, and this module’s artefacts evidence some of them directly.', was: ['No, and the expectations are aspirational rather than practisable.'] },
         ],
         repair: 'Name the artefact for each expectation you claim in step 2. Record the change in step 5.',
         recheck: 'Every claimed expectation has something somebody could look at.',
       },
       {
-        question: 'You marked eleven of fourteen expectations as yes, based on understanding them. What is the problem?',
+        question: 'You mark “influences decisions without authority” as done. Your only artefact is a case-pack stakeholder map you have not used with anyone. What should the comparison say?',
         options: [
-          { label: 'In a level conversation somebody asks for an example, and understanding produces a description of the expectation rather than one.', correct: true, feedback: 'Four had artefacts; seven were things read about in this module. The honest version is much shorter and is the only one that produces a plan.' },
-          { label: 'Nothing, if you genuinely understand them.', feedback: 'Understanding is genuine and it is a different column.' },
-          { label: 'Eleven is too many to work on at once.', feedback: 'The number is not the issue; what is behind each one is.' },
+          { label: 'Read-about, with the map noted as preparation: nothing was yet taken to anyone who decides.', correct: true, feedback: 'In a level conversation somebody asks what happened. A map nobody acted on is preparation; it becomes evidence when you have taken the argument to someone and recorded what moved.', was: ['In a level conversation somebody asks for an example, and understanding produces a description of the expectation rather than one.'] },
+          { label: 'Done, because the map shows you understand how influence works in that situation.', feedback: 'Understanding produces a description of the expectation, which is what somebody who has not done it sounds like.', was: ['Nothing, if you genuinely understand them.'] },
+          { label: 'Done, since practice material counts as evidence everywhere else in the course.', feedback: 'Practice material evidences practice; it does not evidence influence on a real decision, and the course labels the difference.', was: ['Eleven is too many to work on at once.'] },
         ],
         repair: 'Move anything without an artefact into the read-about list in step 2. Record the change in step 5.',
         recheck: 'Evidenced and read-about are separated in your comparison.',
       },
       {
-        question: 'You compared against one employer’s published levels. What must the comparison say?',
+        question: 'The board chair asks whether you are “senior enough” to lead the booking redesign, and you answer from one employer’s published levels. What must your answer state?',
         options: [
-          { label: 'That it is one employer’s expectation rather than a market standard.', correct: true, feedback: 'Levels, titles and expectations vary enormously between organisations, and this course has no verified market-wide source. The comparison is still useful; it simply describes a comparison with one page.' },
-          { label: 'Nothing; published expectations are broadly similar everywhere.', feedback: 'They differ enough that the same work is two levels apart in two companies.' },
-          { label: 'That the expectations may have changed since publication.', feedback: 'Worth noting and much less important than whose expectations they are.' },
+          { label: 'That it compares you with one employer’s page, not with any standard for the market.', correct: true, feedback: 'Levels and expectations vary between organisations, and this course has no verified market-wide source. The comparison is still useful as long as it says what it is.', was: ['That it is one employer’s expectation rather than a market standard.'] },
+          { label: 'Nothing extra: published levels are broadly similar from one employer to another.', feedback: 'They differ enough that the same work can be two levels apart in two companies.', was: ['Nothing; published expectations are broadly similar everywhere.'] },
+          { label: 'That the page may have changed since you read it, so the levels could be out of date.', feedback: 'Worth noting, and much less important than whose expectations they are.', was: ['That the expectations may have changed since publication.'] },
         ],
         repair: 'Put the one-employer note at the top of the comparison in step 5. Record the change.',
         recheck: 'Nobody could read your comparison as a market claim.',
@@ -1942,6 +2175,16 @@ export const guided17: Record<string, Guided> = {
       creator: 'Your creator reads the read-about column. A comparison with nothing in it is a comparison against understanding rather than against work.',
       next: 'Open Your work and choose Ready for review. The last lesson of the module writes the strategy note for your own project.',
     },
+    transfer: {
+      scenario: 'Made-up case: A volunteer at a community radio station wants to change how the weekly schedule is planned. She has no title and reports to nobody. She wrote a careful proposal, filed it in the shared drive and waited. The station manager has just announced that from next month the schedule will be decided by the volunteers’ monthly vote.',
+      prompt: 'Decide what she should do now to practise influence, and explain why, naming who is affected and what evidence her plan would produce.',
+      anchors: {
+        weak: 'Says she should wait for a title or leave the proposal in the drive; treats understanding influence as having it.',
+        adequate: 'Takes the proposal to the monthly vote with the argument prepared in the volunteers’ terms (time, fairness of slots), because the decision route changed; records what happened and what moved votes as evidence.',
+        strong: 'As adequate, and names who is affected (presenters whose slots move), what evidence she lacks (how volunteers rate the current schedule), and one published expectation this would evidence, without claiming a level.',
+      },
+    },
+    material: casePack,
   },
   'm17-l12-v1': {
     route: textRoute,
@@ -1996,6 +2239,16 @@ export const guided17: Record<string, Guided> = {
           { term: 'Exclusion', meaning: 'What will not happen this period. It is what makes the note usable, because it is what somebody can hold you to.' },
           { term: 'Something you wanted', meaning: 'The test of whether the exclusion list is real. A list of things you did not want anyway costs nothing and rules nothing out.' },
         ],
+        supported: {
+          material: 'From the case pack: power tools go out at the desk only and are checked after every loan; the board wants a shorter Saturday queue. A draft strategy note excludes out-of-hours power-tool collection this year. Changed constraint (risk): the insurer agrees to cover locker collection of small power tools if each is checked before it goes in.',
+          question: 'What should happen to that exclusion?',
+          options: [
+            { label: 'Narrow it: allow small power tools that are checked first, and keep the rest excluded.', correct: true, feedback: 'The exclusion existed for a reason, and the constraint changed part of that reason, so it moves partly. Affected: the maintenance volunteer (more checks before lockers) and Saturday borrowers. Missing: how many small power tools fit the lockers.' },
+            { label: 'Keep it as written, since a strategy note should not change once the board has read it.', feedback: 'A note that cannot change when its reasons change becomes a document nobody follows.' },
+            { label: 'Remove it entirely, since the insurer’s agreement settles the safety question for good.', feedback: 'The cover is for small tools checked first; larger tools and unchecked returns are still outside it.' },
+          ],
+          then: 'Now write your own exclusion list in step 2, with what would bring each one back.',
+        },
         start: 'List what you have been meaning to do, and put one of them on the exclusion list.',
         enough: 'At least one exclusion is something you would rather not exclude.' },
       { expect: 'Constraints recorded honestly, including the inconvenient ones.',
@@ -2081,31 +2334,31 @@ export const guided17: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Is a strategy note something for people above you to write?',
+        question: 'A draft strategy note for Northside says: “We will improve the booking experience, support volunteers and stay inclusive.” A board member agrees with every word. What is wrong with it?',
         options: [
-          { label: 'The note you write for your own project is the one that will actually govern your decisions for the next few months.', correct: true, feedback: 'A strategy in your head cannot be argued with, inherited or checked. Two pages is enough and is more than most projects have.' },
-          { label: 'Largely, since strategy is set at a higher level.', feedback: 'The written one is. The operating one, as the first lesson showed, is made of the decisions you take.' },
-          { label: 'No, but it needs approval to be meaningful.', feedback: 'It governs your own decisions whether or not anybody approves it, and it is easier to discuss once written.' },
+          { label: 'Nobody could disagree, so it states values, not choices: nothing is given up.', correct: true, feedback: 'A choice has another side somebody could want: “first-time members over workshop convenience” can be argued with and held to; “support volunteers” cannot.', was: ['The note you write for your own project is the one that will actually govern your decisions for the next few months.'] },
+          { label: 'It is too short; each priority needs a paragraph of explanation and examples.', feedback: 'Length does not create a trade-off; three longer values are still three values.', was: ['Largely, since strategy is set at a higher level.'] },
+          { label: 'It needs the treasurer’s approval before it can guide any decision at all.', feedback: 'Approval may matter; a statement nobody could disagree with guides nothing, approved or not.', was: ['No, but it needs approval to be meaningful.'] },
         ],
         repair: 'Check each choice in step 1 could be disagreed with, and rewrite any that could not. Record the change in step 5.',
         recheck: 'Somebody could argue for the opposite of each choice.',
       },
       {
-        question: 'Every exclusion on your list is something you did not want to do anyway. What does that mean?',
+        question: 'The note’s exclusion list for Northside reads “No paid advertising, no corporate hire, no café.” Nobody at the library wanted any of those. What does that mean?',
         options: [
-          { label: 'Nothing is being given up, so the list rules nothing out and the strategy is not costing you anything.', correct: true, feedback: 'An exclusion list is what somebody can hold you to. If none of it hurts, the note describes what was going to happen regardless.' },
-          { label: 'That the project is well focused already.', feedback: 'Or that the list was written to be easy to agree with.' },
-          { label: 'That the exclusions are correct.', feedback: 'They may be, and a list of things nobody wanted is not a decision.' },
+          { label: 'Nothing is given up, so the list rules out nothing and costs the strategy nothing.', correct: true, feedback: 'An exclusion list is what somebody can hold you to. Adding something people want — such as “no out-of-hours power tools this year” — is what makes it a decision.', was: ['Nothing is being given up, so the list rules nothing out and the strategy is not costing you anything.'] },
+          { label: 'The library is already well focused, which is a strength the note should record.', feedback: 'It may be focused; a list of unwanted things cannot show that, because it excludes nothing anybody asked for.', was: ['That the project is well focused already.'] },
+          { label: 'The exclusions are sound, since none of them fits a volunteer tool library at all.', feedback: 'They may be sound and they are not decisions, because nothing wanted was given up.', was: ['That the exclusions are correct.'] },
         ],
         repair: 'Put something you would like to do onto the exclusion list in step 2. Record the change in step 5.',
         recheck: 'At least one exclusion costs you something.',
       },
       {
-        question: 'You left your own limited time out of the constraints, because it reads as an excuse. What did that cost?',
+        question: 'The note’s constraints list the free booking plan and the fixed payment provider, but leave out that the coordinator is part-time and you have six hours a week. What does that cost?',
         options: [
-          { label: 'A plan for a different project, with every schedule in it wrong by a factor of two.', correct: true, feedback: 'The flattering constraints are the external ones. The inconvenient ones — your hours, somebody’s availability — are usually the ones that actually decide what happens.' },
-          { label: 'Nothing, since you know about it anyway.', feedback: 'The note is what the schedule is built from, including by you in three months.' },
-          { label: 'Some credibility, if somebody notices.', feedback: 'The cost is the plan rather than the impression.' },
+          { label: 'A plan for a different project, with schedules that assume time nobody has.', correct: true, feedback: 'The flattering constraints are the external ones; the inconvenient ones — part-time hours, your six a week — usually decide what happens. A plan built without them is wrong before it starts.', was: ['A plan for a different project, with every schedule in it wrong by a factor of two.'] },
+          { label: 'Nothing much, since everybody involved already knows the time is limited.', feedback: 'The note is what the schedule is built from, including by you in three months.', was: ['Nothing, since you know about it anyway.'] },
+          { label: 'Some credibility with the board, if somebody happens to notice the omission.', feedback: 'The cost is the plan, not the impression.', was: ['Some credibility, if somebody notices.'] },
         ],
         repair: 'Add the constraints you would rather not write down, in step 3. Record the change in step 5.',
         recheck: 'At least one constraint is about you or somebody you like.',
@@ -2117,5 +2370,15 @@ export const guided17: Record<string, Guided> = {
       creator: 'Your creator reads the exclusions and the constraints. An exclusion list that costs nothing and a constraint list with nothing awkward in it are the two commonest ways a strategy note says nothing.',
       next: 'Open Your work and choose Ready for review. This closes Module 17. Module 18 is the independent project, where all of this is used on work that is entirely yours.',
     },
+    transfer: {
+      scenario: 'Made-up case: A community orchard’s strategy note says: “Choice: volunteers’ weekends over public events. Excluded this year: guided walks and an apple-pressing festival. Constraint: two volunteers with tools training.” The council now offers to pay for a third trained volunteer if the orchard runs one public event.',
+      prompt: 'Decide how the strategy note should change, and explain why, naming who is affected and what evidence is missing.',
+      anchors: {
+        weak: 'Adds the festival and keeps everything else, or refuses the offer to protect the note; does not say what the choice now gives up.',
+        adequate: 'Revisits the choice: the offer changes the constraint, so one public event may now fit; moves one exclusion (such as the festival) back in with a reason, and names volunteers’ weekends and the public as affected.',
+        strong: 'As adequate, and states what is still excluded and why, adds a risk with a signal (volunteer fatigue after the event), and names the evidence gap (whether a third volunteer can actually be found).',
+      },
+    },
+    material: casePack,
   },
 };
