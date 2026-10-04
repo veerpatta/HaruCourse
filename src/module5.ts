@@ -7,6 +7,16 @@ import type { LegacyLesson as Lesson } from "./teaching";
 // second is that the honest fallback matters more than the method: a lesson
 // that cannot be completed because nobody consented must end in a recorded
 // gap, never in an invented participant.
+//
+// Corrected on 4 October 2026 (improvement plan, priority zero). Supplied
+// made-up practice material, rehearsal or a dated gap is the default route in
+// every lesson; real participants are optional and need the Lesson 5 consent
+// and data plan first. The teaching states the actual data flow: anything typed
+// into the course (answers, the notes box, the work-reference box) is saved on
+// the learner's device and then on the course server, where she and her
+// reviewer (the course creator) can read it. Raw participant material therefore
+// stays in a private file or on paper with a deletion date, and course answers
+// hold only de-identified summaries, and only with the participant's agreement.
 const questions = {
   title: "GOV.UK: capturing research questions",
   id: "R50",
@@ -107,13 +117,13 @@ export const module5: Lesson[] = [
     areas: [4],
     title: "Decide what the study has to answer",
     objective:
-      "Turn a vague brief into at most five ranked research questions, each written as something you need to learn rather than something you will say to a participant, and each naming the decision that changes if the answer comes back the other way.",
+      "Turn a vague brief into three to five ranked research questions, each stating what the study needs to learn (a different job from the questions you will ask a participant), naming the decision that changes if the answer comes back the other way, and saying what evidence would close it. Three sound questions make a complete plan.",
     bringForward:
-      "The riskiest assumption and stopping rule you wrote in UX reasoning and product value, and the assumption list from Evidence to a Testable Design. Those are your raw material; you are about to sort them into questions worth someone's time.",
+      "The riskiest assumption and stopping rule you wrote in UX reasoning and product value, and the assumption list from Evidence to a Testable Design. Those are your raw material; you are about to sort them into questions worth someone's time. If they are missing, use the made-up class-preparation study in the starting route.",
     why: "Research that starts from a method produces activity. Research that starts from a question produces a decision. The difference shows up two weeks later, when you have a folder of notes and still cannot say what you now know that you did not know before.",
     teach: [
-      "A research question is what you need to learn. A participant question is the plain sentence you actually say out loud. They are almost never the same sentence, and confusing them is the most common way a first study goes wrong: “how do people decide whether a workshop is worth the fare?” is a research question, and asking a participant that exact sentence invites them to perform an explanation they have never articulated. The participant question is “tell me about the last workshop you decided not to go to.” One is your analysis; the other is their memory.",
-      "Rank by what would change. For each question, write the decision that hangs on it and what you would do differently if the answer were the opposite of your expectation. A question where both answers lead to the same action is not a research question, it is curiosity, and curiosity is fine on your own time but not on a participant's. This single test usually removes half a list, and it removes the half that would otherwise have eaten the first twenty minutes of every session.",
+      "Research questions and participant questions do different jobs. A research question states what the study needs to learn; a participant question is the plain sentence you say so that a person can tell you something they actually know. Sometimes one sentence does both: “when did you last book a paid class?” is a fair research question and a fair thing to ask. Often they differ, and confusing them is a common way a first study goes wrong: “how do people decide whether a workshop is worth the fare?” is a research question, and asking a participant that exact sentence invites them to perform an explanation they have never articulated. The participant question is “tell me about the last workshop you decided not to go to.” One is your analysis; the other is their memory.",
+      "Rank by what would change. For each question, write the decision that hangs on it and what you would do differently if the answer were the opposite of your expectation. A question where both answers lead to the same action is not a research question, it is curiosity, and curiosity is fine on your own time but not on a participant's. This single test usually removes half a list, and it removes the half that would otherwise have eaten the first twenty minutes of every session. Keep the topic itself everyday and non-sensitive: research about health, about children or under-18s, or about people in vulnerable circumstances needs qualified ethical review, which this course cannot provide.",
       "Questions come in kinds, and the kind determines what can answer it. What people did, what they experienced and remember, how many or how often, and whether they can operate a thing in front of them are four different kinds of uncertainty. You do not have to choose the method yet — that is the next lesson — but you do have to notice that a question phrased as “how many” cannot be settled by three conversations, no matter how good the conversations are.",
       "Write questions that can close. “Do users like the booking page?” never closes: there is no evidence that would end it, so the study runs until you get bored. “What stops someone who has opened the workshop page from reserving a place in the same sitting?” closes, because you can watch six people try and either see the stopping points or not. A question that names a person, a moment and an outcome is a question you can finish.",
     ],
@@ -125,12 +135,12 @@ export const module5: Lesson[] = [
       {
         minutes: 20,
         title: "Read and separate",
-        text: "Read the assigned page on capturing research questions. Then write, in your own words, the difference between a question you need answered and a question you would say aloud. Keep this note; you will use it in the interview lesson.",
+        text: "Read the assigned page on capturing research questions. Then write, in your own words, what a research question is for and what a participant question is for, and when one sentence can serve both. Keep this note; you will use it in the interview lesson.",
       },
       {
         minutes: 25,
         title: "Empty the brief",
-        text: "Write every question hiding in your brief and your assumption list, one per line, without editing. Aim for at least twelve. Include the ones you think are obvious; obvious questions are often the untested ones.",
+        text: "Write every question hiding in your brief and your assumption list, one per line, without editing. Aim for at least twelve. Include the ones you think are obvious; obvious questions are often the untested ones. Keep to an everyday, non-sensitive topic.",
       },
       {
         minutes: 30,
@@ -139,25 +149,25 @@ export const module5: Lesson[] = [
       },
       {
         minutes: 30,
-        title: "Group, rank and cut to five",
-        text: "Group near-duplicates into one question with the better wording. Rank what remains by decision impact. Keep the top five. Move the rest to a “not this study” list with one line each saying why, so you do not rediscover them next week.",
+        title: "Group, rank and cut to three to five",
+        text: "Group near-duplicates into one question with the better wording. Rank what remains by decision impact. Keep the three to five that most change a decision; three sound questions are a complete plan, and five is the most. Move the rest to a “not this study” list with one line each saying why, so you do not rediscover them next week.",
       },
       {
         minutes: 15,
         title: "Test for closure and pause",
-        text: "For each of your five, write the evidence that would end the question. Rewrite any question whose evidence you cannot describe. Save the ranked five, the decisions and the not-this-study list; the next lesson pairs each question with a method.",
+        text: "For each question you kept, write the evidence that would end it. Rewrite any question whose evidence you cannot describe. Save the ranked questions, the decisions and the not-this-study list; the next lesson pairs each question with a method.",
       },
     ],
     freeToolPath:
       "Paper, sticky notes or one plain text file. This lesson deliberately needs no board, no template and no account; a numbered list in a text file is easier to re-rank than a wall of notes and travels between devices without an export.",
     deliverable:
-      "A ranked list of at most five research questions, each with the decision it would change and the evidence that would close it, plus a dated “not this study” list with a reason per line.",
+      "A ranked list of three to five research questions, each with the decision it would change and the evidence that would close it, plus a dated “not this study” list with a reason per line.",
     check: [
       {
         question:
-          "Why can a research question rarely be read out to a participant as written?",
+          "Why is a research question often not the best sentence to say to a participant?",
         answer:
-          "Because it is written in your analytical vocabulary and asks for a generalisation the participant has never had to make. Read aloud it invites a theory; asked as a recent specific episode it produces an account you can check.",
+          "Because it is written for your analysis and often asks for a generalisation the participant has never had to make. Read aloud it invites a theory; asked as a recent specific episode it produces an account you can check. When a research question asks for something a person can simply report, such as when they last booked a class, asking it directly is fine: the two kinds of question differ in purpose, not in whether they may be spoken.",
       },
       {
         question:
@@ -172,53 +182,53 @@ export const module5: Lesson[] = [
       },
     ],
     rubric: [
-      "Questions are things to learn, not things to say",
+      "Research questions state what the study must learn",
       "Every question names the decision it would change",
-      "The list is ranked and cut to five with the rest recorded",
+      "The list is ranked and cut to three to five with the rest recorded",
       "Each question states the evidence that would close it",
     ],
     criteria: [
       {
-        criterion: "Questions are things to learn, not things to say",
+        criterion: "Research questions state what the study must learn",
         evidence:
-          "Five questions, none of which could be read aloud to a participant as a sensible thing to ask, plus your written note of the distinction.",
+          "Three to five questions, each stating what the study must learn, plus your note on how a research question and a participant question serve different purposes.",
         levels: [
-          "The list is a set of interview prompts.",
-          "Some entries are research questions and some are participant questions, with no distinction drawn.",
-          "All five are stated as things the study must learn, and the distinction is written in your own words.",
-          "As adequate, and at least one question notes the participant question that would probably get at it, without collapsing the two.",
+          "The list is a set of interview prompts with no statement of what the study must learn.",
+          "Some entries say what must be learned and some are prompts, with no distinction drawn between their purposes.",
+          "Every question states what the study must learn, and your note explains in your own words how a participant question serves it differently.",
+          "As adequate, and at least one question notes the participant question that would probably get at it, or says why, for that question, the same sentence can do both jobs.",
         ],
         remediation:
-          "Take each question and try to read it aloud as though to a stranger. Any question that sounds like an exam or invites a theory is a research question and stays; any that sounds like a natural thing to ask a person is a participant question, and should be moved to a separate list for the interview lesson.",
-        recheck: "The corrected five with the participant prompts separated out.",
+          "For each question ask: does this say what the study needs to learn? If it is really a prompt you would say to someone, write the research question it serves above it and keep the prompt for the interview lesson. A research question that a person could answer directly is fine; the test is its purpose, not whether it may be spoken.",
+        recheck: "The corrected questions, with any participant prompts kept separately.",
       },
       {
         criterion: "Every question names the decision it would change",
         evidence:
-          "A decision written beside each of the five, and a stated alternative action for the unexpected answer.",
+          "A decision written beside each question, and a stated alternative action for the unexpected answer.",
         levels: [
           "No decisions recorded.",
           "Decisions recorded for some questions, or written so broadly (“it would inform the design”) that no action is named.",
-          "Each of the five names a specific decision and what the opposite answer would cause you to do.",
+          "Each question names a specific decision and what the opposite answer would cause you to do.",
           "As adequate, and one question is identified as the one whose answer you would most resist, with the reason.",
         ],
         remediation:
           "For each question write the sentence “if the answer is X I will …, and if it is the opposite I will …”. Any question where both halves end the same way goes to the not-this-study list.",
-        recheck: "The five completed if-then sentences.",
+        recheck: "The completed if-then sentences.",
       },
       {
-        criterion: "The list is ranked and cut to five with the rest recorded",
+        criterion: "The list is ranked and cut to three to five with the rest recorded",
         evidence:
-          "An ordered top five and a dated not-this-study list carrying a one-line reason for each dropped question.",
+          "An ordered list of three to five questions and a dated not-this-study list carrying a one-line reason for each dropped question.",
         levels: [
           "One undifferentiated list of everything.",
           "A short list exists but the dropped questions were deleted rather than recorded.",
-          "Top five ranked, remainder recorded with reasons.",
+          "Three to five questions ranked, remainder recorded with reasons. A plan of three sound questions meets this in full.",
           "As adequate, and the ranking states what the ordering is by — decision impact, cost of being wrong, or how soon the decision arrives.",
         ],
         remediation:
           "Recover the dropped questions and write one line each on why they are not in this study. If you cannot recover them, note that as a process lesson; the record is the point.",
-        recheck: "The ranked five and the reasoned not-this-study list.",
+        recheck: "The ranked questions and the reasoned not-this-study list.",
       },
       {
         criterion: "Each question states the evidence that would close it",
@@ -227,12 +237,12 @@ export const module5: Lesson[] = [
         levels: [
           "No closure evidence stated.",
           "Closure described as “enough data” or “when it is clear”.",
-          "Each of the five names concrete evidence that would end it.",
+          "Each question names concrete evidence that would end it.",
           "As adequate, and at least one question states how many people would have to show the same thing before you would act on it, and why that number.",
         ],
         remediation:
           "Rewrite each closure sentence to begin “I stop asking this when I have seen …”. Concrete means countable or quotable, not a feeling of sufficiency.",
-        recheck: "The five closure sentences.",
+        recheck: "The closure sentences.",
       },
     ],
     portfolio:
@@ -272,9 +282,9 @@ export const module5: Lesson[] = [
     areas: [4],
     title: "Choose a method that can actually answer it",
     objective:
-      "Pair each of your five questions with one method you could genuinely run alone this month, and state for each pairing the specific claim that method will not license you to make.",
+      "Pair each of your top three research questions with one method you could genuinely run alone with what you have now, state for each pairing the specific claim that method will not license you to make, and record any further question as not-run or as an open gap.",
     bringForward:
-      "The ranked five questions with their decisions and closure evidence from the previous lesson.",
+      "The three to five ranked questions with their decisions and closure evidence from the previous lesson.",
     why: "Most first studies use the method the researcher is most comfortable with and then stretch its results to cover questions it never touched. Choosing badly is recoverable; not knowing what your method excluded is what produces a confident wrong recommendation.",
     teach: [
       "Sort your questions by what kind of uncertainty they are. Questions about what people did are answered by watching or by traces they left. Questions about what someone experienced and why they chose as they did are answered by talking to them about a specific past episode. Questions about how many or how often need a count from a population you can define. Questions about whether a person can operate something need that thing, or a stand-in for it, in their hands. A single method answers one of these well and the others badly.",
@@ -294,13 +304,13 @@ export const module5: Lesson[] = [
       },
       {
         minutes: 25,
-        title: "Classify your five",
+        title: "Classify your questions",
         text: "Label each of your questions as behaviour, experience and reasoning, frequency, or ability to operate. Some will resist a single label; split those into two questions rather than forcing one.",
       },
       {
         minutes: 30,
         title: "Pair and cost",
-        text: "Assign one method per question. Beside each write what it will cost you in hours, how many people it needs, and what has to be true for it to happen at all — access, consent, a device, a quiet room.",
+        text: "Assign one method to each of your top three questions. Beside each write what it will cost you in hours, how many people it needs, and what has to be true for it to happen at all — access, consent, a device, a quiet room. A fourth or fifth question you cannot pair yet goes on the not-run list in the last step.",
       },
       {
         minutes: 25,
@@ -310,13 +320,13 @@ export const module5: Lesson[] = [
       {
         minutes: 15,
         title: "Decide the plan and pause",
-        text: "Choose the two methods you will actually run in this module and mark the rest as not-run, with the reason. Record any question left with no available method as an open gap. Save the plan.",
+        text: "Choose the two methods you would actually run in your next study and mark the rest as not-run, with the reason. Record any question left with no available method as an open gap. Save the plan. In this module the default is to practise each method on supplied made-up material, in rehearsal or as a dated gap; running a method with real people needs the consent and data plan from Lesson 5 first.",
       },
     ],
     freeToolPath:
       "A five-row table on paper or in a text file: question, kind, method, cost, cannot-tell-me. No research platform, scheduling tool or transcript service is involved anywhere in this module; everything is doable with a notebook, a phone and consent.",
     deliverable:
-      "A method plan pairing each question with one method, its cost and access conditions, and an explicit exclusion sentence per pairing, plus a list of questions left unanswerable with reasons.",
+      "A method plan pairing each of your top three questions with one method, its cost and access conditions, and an explicit exclusion sentence per pairing, plus a not-run list holding any further questions and those left unanswerable, with reasons.",
     check: [
       {
         question:
@@ -366,7 +376,7 @@ export const module5: Lesson[] = [
         levels: [
           "Methods named with no cost or access conditions.",
           "Costs stated but the plan assumes resources you do not have — a recruiter, a lab, analytics on someone else's product.",
-          "Each method is one you could run alone this month, with cost and access conditions stated.",
+          "Each method is one you could run alone with what you have now, with cost and access conditions stated.",
           "As adequate, and one choice is justified against a method you rejected, naming what the rejected one would have added.",
         ],
         remediation:
@@ -462,12 +472,12 @@ export const module5: Lesson[] = [
       {
         minutes: 30,
         title: "Gather existing evidence",
-        text: "Spend a fixed thirty minutes collecting what already exists about your problem: reviews, support pages, forum threads, published reports, anything already held. Record source, URL and retrieval date for every item. Stop at thirty minutes even if it is going well.",
+        text: "Spend a fixed thirty minutes collecting what already exists about your problem: reviews, support pages, forum threads, published reports, anything already held. Record source, URL and retrieval date for every item, and summarise each in your own words rather than copying reviewers' names or handles. Stop at thirty minutes even if it is going well.",
       },
       {
         minutes: 30,
         title: "Run the comparison",
-        text: "Pick one task a person must complete and attempt it yourself on two or three services, at least one from outside your own category. Record each step, each moment of doubt, and where each service places the information the task needs.",
+        text: "Pick one task a person must complete and attempt it yourself on two or three services, at least one from outside your own category. Use public pages only and stop before payment, booking or creating an account. Record each step, each moment of doubt, and where each service places the information the task needs; if every service handles the task well, record that too, because it is a result.",
       },
       {
         minutes: 20,
@@ -605,12 +615,12 @@ export const module5: Lesson[] = [
     areas: [4],
     title: "Find the right people, and say who you could not reach",
     objective:
-      "Write a screener that selects for relevant experience without revealing the answer you want, plus a recruitment plan with honest lead times, an incentive decision, and a written statement of who your route will systematically miss.",
+      "Write a screener that selects for relevant experience without revealing the answer you want, plus a recruitment plan with honest lead times, an incentive decision, and a written statement of who your route will systematically miss. This is planning only: you contact nobody until the consent and data plan in the next lesson exist.",
     bringForward:
-      "Your method plan. The two methods you chose determine how many people you need and what they must have done recently.",
+      "Your method plan. The two methods you chose determine how many people you need and what they must have done recently. If you have no plan yet, plan recruitment for the made-up class-preparation study.",
     why: "Who you talk to decides what you can learn, and a study recruited from whoever was easiest to reach will confidently describe the world of people who are easy to reach. Naming that is not a weakness in the report; leaving it unnamed is.",
     teach: [
-      "Recruit for experience, not for demographics. The criterion that matters is usually something a person has recently done — booked a paid class in the last two months, tried and abandoned a booking, attends with a child — because that is what makes their memory usable. Age, gender and city belong in the record for context and for noticing who is absent, but a screener built from demographics alone selects people who look varied and may all be strangers to the task you are studying.",
+      "Recruit for experience, not for demographics. The criterion that matters is usually something a person has recently done — booked a paid class in the last two months, tried and abandoned a booking, booked a place for someone else — because that is what makes their memory usable. Age, gender and city belong in the record for context and for noticing who is absent, but a screener built from demographics alone selects people who look varied and may all be strangers to the task you are studying. Recruit adults only, about an everyday task: do not recruit children or under-18s, people chosen because of a health condition, or anyone who may not be able to give informed consent for themselves, without qualified ethical review this course cannot provide.",
       "A screener must not teach the answer. “Have you ever been frustrated by not knowing what to bring to a class?” tells the reader what you hope to hear and recruits people willing to agree with you. “Think about the last paid class or workshop you attended or considered. What did you do in the week before it?” selects on experience and leaves the finding open. Ask about what happened, in the past, in their words, and screen on the presence of the experience rather than on the presence of an opinion.",
       "Plan for real lead times and for who cannot come. The assigned page reports that professional recruitment typically takes about ten days and that recruiting disabled participants can take up to a month, with six to eight weeks advised where cognitive disabilities are involved. You have no agency, so your route is your own network, community groups, a notice in a place where the relevant people already are, or asking a small business owner to introduce you. Every one of those routes has a shape: your network shares your language, your education and often your income band, and a WhatsApp group of parents at one school is not the parents of that city.",
       "Compensate people for their time, and be honest about what you can offer. The guidance is clear that public participants should receive something for their time, and equally clear that it gives no amounts, because they depend entirely on context. Where you genuinely cannot pay, say so before the session rather than after, keep the session short, come to them rather than making them travel, and do not repeatedly return to the same generous person. A study built on unpaid goodwill is legitimate; a study that hides that it was is not, because the reader cannot then judge who agreed to take part.",
@@ -628,7 +638,7 @@ export const module5: Lesson[] = [
       {
         minutes: 25,
         title: "Write the criteria",
-        text: "From your questions, write the two or three things a participant must have recently done. Write also who you specifically want to include who is unlike you, and what would make taking part possible for them.",
+        text: "From your questions, write the two or three things a participant must have recently done. Write also who you specifically want to include who is unlike you, and what would make taking part possible for them. Keep to adults and an everyday, non-sensitive task.",
       },
       {
         minutes: 30,
@@ -638,7 +648,7 @@ export const module5: Lesson[] = [
       {
         minutes: 25,
         title: "Plan the route, the time and the offer",
-        text: "Write where you will find people, how long that will take starting from today, what you will offer for their time, and what you will say if they ask what happens to their answers. Include a fallback route in case the first produces nobody.",
+        text: "Write where you will find people, how long that will take starting from today, what you will offer for their time, and what you will say if they ask what happens to their answers; the data plan you write next lesson supplies that answer. Name kinds of route, not people: no names, numbers or addresses in the course. Include a fallback route in case the first produces nobody.",
       },
       {
         minutes: 15,
