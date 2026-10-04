@@ -1479,34 +1479,36 @@ export const module9: Lesson[] = [
     guided: true,
     title: "Direct manipulation: drag, reorder and their consequences",
     objective:
-      "Design one direct-manipulation interaction with a keyboard equivalent, a clear drop target, a recovery path, and a stated decision about what it costs people who cannot drag.",
+      "Design one reordering interaction that can be completed three ways — by dragging, by keyboard, and by single taps or clicks with no dragging — with a clear drop target, cancellation, undo and a reduced-motion version, and test both alternatives against the reorder example.",
     bringForward:
       "Any part of your product where people arrange, reorder or move something.",
     prerequisite: "One arranging or reordering task from your product.",
-    why: "Dragging feels natural and excludes a lot of people. If you use it, it needs a keyboard route and a way back.",
+    why: "Dragging feels natural and excludes a lot of people. If you use it, it needs a keyboard route, a separate tap-or-click route that needs no dragging, and a way back.",
     teach: [
-      "Direct manipulation must always have a non-drag equivalent that does the same job.",
-      "Show what can be picked up, what is being dragged, and where it will land.",
-      "Commit on release, and make the result reversible for long enough to notice.",
-      "Dragging on a phone competes with scrolling; decide which wins and when.",
-      "If the interaction cannot be done by keyboard, it is not finished.",
+      "Give every drag two other routes to the same result: a keyboard route, and a single-pointer route with no dragging, such as tap Move then tap the destination.",
+      "A keyboard route does not cover the second need: someone using a mouse, a stylus or one finger may click but not drag (WCAG 2.2, criterion 2.5.7).",
+      "Show what can be picked up, what is being moved, and where it will land.",
+      "Commit on release, let a move be cancelled part way, and keep the result reversible for long enough to notice.",
+      "Dragging on a phone competes with scrolling; decide which wins and when, and what still shows the move under Reduce motion.",
     ],
     explanation: [
-      "Drag and drop is a genuine improvement for arranging things and a genuine barrier for anyone with limited dexterity, a tremor, a touchpad they find awkward, or a screen reader. That does not make it wrong; it makes the equivalent route mandatory. Move up and move down controls, or a keyboard mode where the item is picked up and moved with arrow keys, cover the same task and are usually easy to add once you have decided to.",
+      "Drag and drop is a genuine improvement for arranging things and a genuine barrier for anyone with limited dexterity, a tremor, a touchpad they find awkward, or a screen reader. That does not make it wrong; it makes other routes mandatory, and there are two of them. A keyboard route — focus an item, then arrow keys, or Move up and Move down — serves people who do not use a pointer. A single-pointer route — tap Move, then tap where it should go, or Move up and Move down buttons — serves people who can point and click but cannot hold and drag. WCAG 2.2 success criterion 2.5.7, Dragging Movements, judges these separately: a keyboard equivalent alone does not meet the single-pointer requirement.",
       "Three signals make dragging legible: what is draggable, what is currently held, and where it will go. Products routinely provide the second and neglect the first and third, so people learn by accident that a row can be moved, and then guess where it will land. A visible drop indicator — a line, a gap, a highlighted target — is what turns a guess into a decision.",
-      "Commit on release and offer a way back. An accidental reorder is a slip, and slips need recovery rather than confirmation; a brief undo is the right instrument, and the message that offers it should say what changed. Reordering that silently persists is unrecoverable for the person who did not notice they had done it.",
+      "Commit on release, let a move be cancelled before it lands — escape for the keyboard, a Cancel or a second tap for the pointer route — and offer a way back afterwards. An accidental reorder is a slip, and slips need recovery rather than confirmation; a brief undo is the right instrument, and the message that offers it should say what changed. Reordering that silently persists is unrecoverable for the person who did not notice they had done it.",
       "On touch screens, dragging and scrolling compete for the same gesture, and the resolution has to be deliberate: a long press to enter a drag mode, a dedicated handle, or drag only in a mode the person turned on. Choosing nothing means the product will feel unpredictable — sometimes scrolling, sometimes dragging — which is worse than either.",
+      "Reduced motion applies here too. With the setting on, the row should arrive in its new place without sliding through the list, while the new position is still shown on screen and stated in the message.",
     ],
     misconception:
-      "“Drag and drop is intuitive.” It is familiar to people who have used it. It is invisible to people who have not, impossible for some, and ambiguous on touch screens where the same gesture already means scroll.",
+      "“Drag and drop is intuitive,” and “a keyboard route covers everyone who cannot drag.” Dragging is familiar to people who have used it, invisible to people who have not, impossible for some, and ambiguous on touch screens where the same gesture already means scroll. And a keyboard route does nothing for the person tapping a phone screen who cannot drag.",
     example:
-      "The shortlist could be reordered by dragging, with no other route. Redesigned: a handle marks each draggable row, a line shows where the item will land, and the drop commits on release with a message — “Moved to position 2. Undo” — lasting several seconds. Keyboard equivalent: focus the handle, press space to pick up, arrow keys to move, space to drop, escape to cancel, matching the assigned pattern conventions. On touch, dragging requires the handle so scrolling keeps working elsewhere. The write-up records that no test with a screen-reader user has been run, so the keyboard route is specified but not validated.",
+      "Made-up example: the shortlist could be reordered only by dragging. Redesigned: a handle marks each draggable row, a line shows where the item will land, and the drop commits on release with a message — “Moved to position 2. Undo” — lasting several seconds. Keyboard route: focus the row, move it with Alt and the arrow keys or with the Move up and Move down buttons, escape to cancel. Single-pointer route: tap Move, then tap the gap where the row should go, or tap Cancel. On touch, dragging starts only from the handle so scrolling keeps working elsewhere; with reduced motion the row appears in its new place without sliding. Both routes were tried in a prototype; no test with a screen-reader user has been run, so they are specified but not validated with the people who depend on them.",
     freeToolPath:
-      "Paper works for the drop-target design: cut a row out and move it around the printed list, asking someone where they expect it to land. The keyboard route is written as a key table like the previous lesson's.",
+      "Paper works for the drop-target design: cut a row out and move it around the printed list. Use the reorder example in this lesson to try the keyboard and tap routes for real. Both routes are written as tables like the previous lesson's.",
     outputs: [
       "A drag interaction with pick-up, drag and drop-target signals",
-      "A keyboard equivalent specified key by key",
-      "Undo after a move, with the message wording",
+      "A keyboard route specified key by key and tested against the reorder example",
+      "A single-pointer route without dragging, specified and tested against the reorder example",
+      "Cancellation on each route, undo after a move with its wording, and a reduced-motion version",
       "A stated decision about drag versus scroll on touch",
     ],
     steps: [
@@ -1516,6 +1518,7 @@ export const module9: Lesson[] = [
         instructions: [
           "Choose one arranging task in your product.",
           "Read the assigned pattern guidance for a comparable component's keys.",
+          "Try the reorder example in this lesson three ways: drag, keyboard only, and single taps or clicks with no dragging.",
         ],
       },
       {
@@ -1529,11 +1532,11 @@ export const module9: Lesson[] = [
       },
       {
         minutes: 30,
-        title: "Write the keyboard route",
+        title: "Write the two other routes",
         instructions: [
-          "Specify pick up, move, drop and cancel as keys.",
-          "State what is announced at each step.",
-          "Check the route completes the same task, not a reduced version.",
+          "Specify pick up, move, drop and cancel as keys, and what is announced at each step.",
+          "Specify a single-pointer route that needs no dragging, such as tap Move then tap the destination.",
+          "Check both routes reach every arrangement the drag can, then complete the task each way in the reorder example and record what happened.",
         ],
       },
       {
@@ -1541,8 +1544,8 @@ export const module9: Lesson[] = [
         title: "Design recovery and touch behaviour",
         instructions: [
           "Specify undo with a window and write the message.",
-          "Decide how drag and scroll are distinguished on touch.",
-          "Check the decision does not break scrolling elsewhere.",
+          "Specify how a move is cancelled on each route, and what the move looks like with Reduce motion on.",
+          "Decide how drag and scroll are distinguished on touch, and check the decision does not break scrolling elsewhere.",
         ],
       },
       {
@@ -1557,9 +1560,9 @@ export const module9: Lesson[] = [
     ],
     check: [
       {
-        question: "Why is a keyboard equivalent mandatory?",
+        question: "Why is a keyboard route not enough on its own?",
         answer:
-          "Because dragging is impossible or unreliable for many people. Without an equivalent, the task is unavailable to them rather than merely harder.",
+          "Because some people can point and click but cannot drag, and some cannot use a pointer at all. A keyboard route serves the second group; a single-pointer route with no dragging — tap Move, then tap the destination — serves the first. WCAG 2.2 judges them separately.",
       },
       {
         question: "What are the three signals a drag needs?",
@@ -1574,8 +1577,9 @@ export const module9: Lesson[] = [
     ],
     rubric: [
       "All three drag signals are specified",
-      "A keyboard equivalent completes the same task",
-      "A move is reversible with stated wording",
+      "A keyboard route completes the same task and was tested",
+      "A single-pointer route without dragging completes the same task and was tested",
+      "A move can be cancelled, reversed and shown with reduced motion",
       "The drag-versus-scroll decision is explicit",
     ],
     criteria: [
@@ -1594,32 +1598,46 @@ export const module9: Lesson[] = [
         recheck: "The three specifications.",
       },
       {
-        criterion: "A keyboard equivalent completes the same task",
+        criterion: "A keyboard route completes the same task and was tested",
         evidence:
-          "A key table covering pick up, move, drop and cancel, achieving the same result as dragging.",
+          "A key table covering pick up, move, drop and cancel, achieving the same result as dragging, plus what happened when you completed the task by keyboard alone in the reorder example.",
         levels: [
           "No keyboard route.",
-          "A reduced route that cannot reach every position.",
-          "A full equivalent specified key by key.",
+          "A reduced route that cannot reach every position, or a route never tried.",
+          "A full route specified key by key and completed by keyboard alone in the reorder example.",
           "As adequate, and each step states what is announced for a screen-reader user.",
         ],
         remediation:
-          "Write the keys, then walk the task by keyboard on paper. If any arrangement is unreachable, the route is incomplete.",
-        recheck: "The key table.",
+          "Write the keys, then move the third item to the top by keyboard alone in the reorder example. If any arrangement is unreachable, the route is incomplete.",
+        recheck: "The key table and the keyboard test note.",
       },
       {
-        criterion: "A move is reversible with stated wording",
+        criterion: "A single-pointer route without dragging completes the same task and was tested",
         evidence:
-          "Undo specified with a window and a message naming what changed.",
+          "A tap-or-click route, such as tap Move then tap the destination, or Move up and Move down buttons, that reaches every arrangement, plus what happened when you completed the task that way in the reorder example.",
         levels: [
-          "Moves persist silently.",
-          "Undo mentioned without wording or window.",
-          "Undo specified with a window and the message written.",
+          "No route other than dragging for pointer users, or the keyboard route offered as the only alternative.",
+          "A single-pointer route named but unable to reach every position, or never tried.",
+          "A full single-pointer route specified and completed with taps or clicks alone, no dragging, in the reorder example.",
+          "As adequate, and the route has its own cancel and shows which item is waiting to be placed.",
+        ],
+        remediation:
+          "Write the taps a person makes to move the third item to the top without dragging, then do exactly that in the reorder example. If any arrangement needs a drag, the route is incomplete.",
+        recheck: "The single-pointer route and its test note.",
+      },
+      {
+        criterion: "A move can be cancelled, reversed and shown with reduced motion",
+        evidence:
+          "A cancel on each route, undo with a window and a message naming what changed, and a reduced-motion version where the item arrives without sliding.",
+        levels: [
+          "Moves persist silently and cannot be cancelled.",
+          "Undo mentioned without wording or window, or no cancel.",
+          "A cancel on each route, undo with a window and its message, and a reduced-motion version.",
           "As adequate, and the message says the new position rather than only offering undo.",
         ],
         remediation:
-          "Write the message a person sees immediately after a move, including how to reverse it.",
-        recheck: "The undo specification.",
+          "Write what happens when a person changes her mind mid-move on each route, the message she sees after a move, and what the move looks like with Reduce motion on.",
+        recheck: "The cancel, undo and reduced-motion specification.",
       },
       {
         criterion: "The drag-versus-scroll decision is explicit",
@@ -1639,11 +1657,12 @@ export const module9: Lesson[] = [
     repairs: [
       "If only the held state is designed, add a draggable affordance and a drop indicator.",
       "If the keyboard route cannot reach every position, extend it.",
-      "If moves persist silently, specify undo with a window and message.",
+      "If the only alternative to dragging is the keyboard, add a tap-or-click route that needs no drag and test it.",
+      "If moves persist silently or cannot be cancelled, specify cancel, undo with a window and message, and a reduced-motion version.",
       "If touch has no rule, choose a handle or a mode and test scrolling.",
     ],
     portfolio:
-      "Showing the keyboard equivalent beside the drag interaction demonstrates that you design for the whole audience rather than the demo.",
+      "Showing the keyboard route and the tap route beside the drag interaction, with what happened when you tried each, demonstrates that you design for the whole audience rather than the demo.",
     resource: keyboardPatterns,
     resources: [
       {
