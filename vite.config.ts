@@ -12,6 +12,14 @@ export default defineConfig({
         codeSplitting: {
           groups: [
             {
+              // Shared helpers every guided overlay imports. Kept out of the
+              // entry chunk so module chunks never import back into it,
+              // which would make their evaluation order circular.
+              test: /src[\\/]guided\.ts$/,
+              name: "course-guided-shared",
+              includeDependenciesRecursively: false,
+            },
+            {
               // A module's teaching and its guided overlay share one chunk,
               // so a correction to one module re-downloads only that module.
               test: /src[\\/](?:module|guided)\d+\.ts$/,
