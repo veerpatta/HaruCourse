@@ -30,7 +30,7 @@ export const guided06: Record<string, Guided> = {
         { id: 'collision-4', label: 'Collision 4 · the rows involved, what kind, and your note', kind: 'long' },
       ] },
       { id: 'record', title: 'Save', fields: [
-        { id: 'counts', label: 'Your three counts: items, collisions, and items nobody in your research ever needed', kind: 'long', example: 'Example (made up): 53 items, 6 collisions, 4 items nobody in the research ever needed.' },
+        { id: 'counts', label: 'Your three counts: items, collisions, and items nobody in your research ever needed', kind: 'long', hint: 'Count, do not estimate. If you had no research participants, write “not countable without research” for the third count rather than guessing it.', example: 'Example (made up): 53 items, 6 collisions, 4 items nobody in the research ever needed.' },
         { id: 'inventory-location', label: 'Where the full inventory lives', kind: 'short', hint: 'A file name, or “index cards, in the blue box”. Nothing is uploaded.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
@@ -78,10 +78,10 @@ export const guided06: Record<string, Guided> = {
           material: 'Four supplied rows from the same made-up inventory. Row A: “What to bring”, a sentence inside a PDF. Row B: “What to bring”, a different sentence in the confirmation email, naming one item the PDF does not. Row C: “Details”, the venue address. Row D: “Details”, the refund terms.',
           question: 'Which pair should your note call a content problem rather than a structure problem?',
           options: [
-            { label: 'A and B, because the two versions say different things and no arrangement of pages decides which is right.', correct: true, feedback: 'The two copies disagree with each other. Until somebody decides what a person should actually bring, moving them or merging them only hides the disagreement.' },
-            { label: 'C and D, because two unrelated things are sharing one label.', feedback: 'That pair is real, and it is a naming and structure problem. Give each its own plain label and it is solved, which is not true of the pair that disagrees.' },
-            { label: 'Both pairs, since both are duplicates.', feedback: 'Only one pair is a duplicate. C and D are different things wearing the same name, which is the opposite situation and takes a different fix.' },
-            { label: 'Neither, because you cannot tell until the structure is drawn.', feedback: 'The flat list is exactly where this shows. Drawing a structure first would place the two versions of what to bring in two places and settle nothing.' },
+            { label: 'A and B: the two versions disagree, and moving pages cannot decide which one is true.', correct: true, feedback: 'The two copies disagree with each other. Until somebody decides what a person should actually bring, moving them or merging them only hides the disagreement.', was: ['A and B, because the two versions say different things and no arrangement of pages decides which is right.'] },
+            { label: 'C and D: one label covering two unrelated things means the words themselves are wrong.', feedback: 'The label is wrong and both rows are true. Give each its own plain label and the collision is gone, which is a naming and structure fix; A and B still disagree whatever you call them.', was: ['C and D, because two unrelated things are sharing one label.'] },
+            { label: 'Both pairs: each repeats a label, and a repeated label means the content is duplicated.', feedback: 'Only A and B hold the same item twice. C and D are different things wearing one name, which is the opposite situation and takes a different fix.', was: ['Both pairs, since both are duplicates.'] },
+            { label: 'Neither yet: the kind of collision only becomes clear once the sitemap is drawn.', feedback: 'The flat list is exactly where this shows. Drawing a structure first would place the two versions of what to bring in two places and settle nothing.', was: ['Neither, because you cannot tell until the structure is drawn.'] },
           ],
           then: 'Go through your own collisions and mark each one content or structure, so you know which ones need a decision about the words before anything moves.',
         },
@@ -97,9 +97,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'Your inventory has thirty-one rows and every one of them is a page in the menu. What is missing?',
         options: [
-          { label: 'The answers that are not pages: the sentence in a confirmation email, the thing only the owner can tell you, the file nobody opens.', correct: true, feedback: 'A page list organises the website. An inventory organises what a person needs to know, and most of that is not sitting on a page with a name.' },
-          { label: 'Nothing, since anything worth having has been published somewhere.', feedback: 'The most-asked question is usually the one being answered by hand, over and over, in a message. It never became a page precisely because somebody keeps covering for it.' },
-          { label: 'A few more pages, to push the number past forty.', feedback: 'Forty is a threshold rather than a target, and padding it with pages leaves the list exactly as thin as it was.' },
+          { label: 'Answers that are not pages, such as a line in a confirmation email or what only the owner knows.', correct: true, feedback: 'A page list organises the website. An inventory organises what a person needs to know, and much of that is not sitting on a page with a name.', was: ['The answers that are not pages: the sentence in a confirmation email, the thing only the owner can tell you, the file nobody opens.'] },
+          { label: 'Little of value: anything people need often will already have been published as a page somewhere.', feedback: 'A question people ask again and again is often being answered by hand, in a message. It never became a page precisely because somebody keeps covering for it.', was: ['Nothing, since anything worth having has been published somewhere.'] },
+          { label: 'Nine more pages from deeper in the site, so that the list reaches the forty-row threshold.', feedback: 'Forty is a threshold rather than a target, and padding it with pages leaves the list exactly as thin as it was.', was: ['A few more pages, to push the number past forty.'] },
         ],
         repair: 'Take the three tasks in your boundary box in step 1 and walk each one, writing down every question a person has to answer to finish it. Add every answer that is not already a row, then record what you added in step 5.',
         recheck: 'The inventory holds rows that live in emails, messages, documents or somebody’s head, and they are marked as such.',
@@ -107,9 +107,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'One row reads: label “Resources”, what it actually is “Resources”. Why does that row not count?',
         options: [
-          { label: 'The second column exists to say what is inside, and repeating the label says nothing you did not already have.', correct: true, feedback: 'The row was meant to test whether the name matches the contents. Copying the name across removes the test and leaves the row looking finished.' },
-          { label: 'It counts, because “Resources” is what the product calls it and the inventory records the product.', feedback: 'The label column already records the product’s own words. The second column is yours, and it is where a mismatch becomes visible.' },
-          { label: 'It counts once you have added who needs it.', feedback: 'Who needs it is a third question and a useful one. It still does not tell you what is inside the thing.' },
+          { label: 'The second column should say what is inside, and copying the label in tells you nothing new.', correct: true, feedback: 'The row was meant to test whether the name matches the contents. Copying the name across removes the test and leaves the row looking finished.', was: ['The second column exists to say what is inside, and repeating the label says nothing you did not already have.'] },
+          { label: 'It does count, since the inventory’s job is to record the product’s own words exactly as they appear.', feedback: 'The label column already records the product’s own words. The second column is yours, and it is where a mismatch becomes visible.', was: ['It counts, because “Resources” is what the product calls it and the inventory records the product.'] },
+          { label: 'Adding who needs it and when would complete the row, since that column is what makes a row useful.', feedback: 'Who needs it is a third question and a useful one. It still does not tell you what is inside the thing.', was: ['It counts once you have added who needs it.'] },
         ],
         repair: 'Go back to your item rows in step 2 and finish “this tells someone …” for each one. Any row you cannot finish needs opening and reading. Record what you changed in step 5.',
         recheck: 'Every row carries a plain sentence in your own words, different from its label.',
@@ -117,9 +117,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'You filled the reachability column from memory, because you know the product well. What is wrong with that?',
         options: [
-          { label: 'You know routes a first-time visitor does not, so what you recorded is your route rather than theirs.', correct: true, feedback: 'The column is meant to show how hard a thing is to reach. Filled in from knowledge, it records that everything is reachable, which is true only for you.' },
-          { label: 'Nothing, as long as the routes you wrote down really exist.', feedback: 'They exist, and that is not the question. A route you can only take because you already know it is a route the column should be marking as a problem.' },
-          { label: 'It is fine for pages and only wrong for the items buried in emails.', feedback: 'Pages are where your knowledge helps you most. You go straight to one from a menu you have used a hundred times.' },
+          { label: 'You know routes a first-time visitor does not, so the column records your route, not theirs.', correct: true, feedback: 'The column is meant to show how hard a thing is to reach. Filled in from knowledge, it records that everything is reachable, which is true only for you.', was: ['You know routes a first-time visitor does not, so what you recorded is your route rather than theirs.'] },
+          { label: 'Very little, provided every route you wrote down really exists and you have checked each one works.', feedback: 'They exist, and that is not the question. A route you can only take because you already know it is a route the column should be marking as a problem.', was: ['Nothing, as long as the routes you wrote down really exist.'] },
+          { label: 'Memory is reliable for menu pages; the only rows at risk are the answers buried in emails and PDFs.', feedback: 'Pages are where your knowledge helps you most. You go straight to one from a menu you have used a hundred times, which a stranger cannot do.', was: ['It is fine for pages and only wrong for the items buried in emails.'] },
         ],
         repair: 'Work through your two reachability boxes in step 3 again, pretending you have never used the product, and write what you actually had to do. Record the corrections in step 5.',
         recheck: 'The routes describe what a stranger would have to do, and the ask-a-person and email-only items are named.',
@@ -131,6 +131,15 @@ export const guided06: Record<string, Guided> = {
       creator: 'Your creator reads the counts, the collisions and a few of your rows. The plain-language column is the part worth his attention, because it is the one people skip.',
       next: 'Open Your work and choose Ready for review. The next lesson sets your participants’ words against these labels, so keep the inventory to hand.',
     },
+    transfer: {
+      scenario: 'Made-up case: a neighbourhood tiffin service has a six-page website: Menu, Prices, Delivery areas, About, Gallery and Contact. Customers often message the owner to ask how to pause deliveries while they travel, and whether a dish can be made without onion; she answers each one by hand. A helper has drafted an inventory that lists the six pages and nothing else.',
+      prompt: 'Name one row the helper’s inventory must gain before anyone draws a structure, say how a person reaches that answer today, and explain why it belongs in an inventory even though it is not a page.',
+      anchors: {
+        weak: 'Adds another page, such as a second menu page, or reorganises the six pages. The inventory is still a list of what the website publishes, so the answers people ask the owner for stay invisible.',
+        adequate: 'Adds a row such as “pausing deliveries”, notes it is reachable today only by messaging the owner, and explains that an inventory lists the answers people need, wherever they live, not only pages.',
+        strong: 'As adequate, and marks the row as missing rather than misfiled, since no renaming fixes an answer that exists only in replies. Notes that customers may still prefer to message, and suggests checking that before publishing it.',
+      },
+    },
   },
   'm06-l02-v1': {
     video: { id: "VID05", then: "Straight after watching, write down every word in your current labels that is jargon, an acronym, or a word only your team uses. That list is where this lesson starts.", written: "No video needed: read your own labels aloud to somebody outside the project and note every word you have to explain. Same list, no connection required." },
@@ -140,25 +149,25 @@ export const guided06: Record<string, Guided> = {
         { id: 'worst-labels', label: 'The three worst labels in your inventory, and the reason each one fails', kind: 'long', hint: 'Three kinds recur: the internal word that names a department, the clever word invented for character, and the abstract word that is accurate and empty.', example: 'Example (made up): “Resources” · an internal word · it names a shelf in the office, not a thing anyone is looking for.' },
       ] },
       { id: 'vocabulary', title: 'Words people actually used', intro: 'Copied exactly, one at a time. Do not tidy them as you go.', fields: [
-        { id: 'vocab-1', label: 'Vocabulary 1 · the item, the exact words a participant used for it, and who said it', kind: 'long', example: 'Example (made up): what to bring · “the list of things I need” · P2.' },
-        { id: 'vocab-2', label: 'Vocabulary 2 · the item, the exact words, and who said it', kind: 'long' },
-        { id: 'vocab-3', label: 'Vocabulary 3 · the item, the exact words, and who said it', kind: 'long' },
-        { id: 'vocab-4', label: 'Vocabulary 4 · the item, the exact words, and who said it', kind: 'long' },
+        { id: 'vocab-1', label: 'Vocabulary 1 · the item, the exact words a participant used for it, and their participant label', kind: 'long', sensitive: true, hint: 'Use a label such as P2, never a name. Keep your raw notes in a private file or on paper with a date to delete them, and copy only the words for this item here.', example: 'Example (made up): what to bring · “the list of things I need” · P2.' },
+        { id: 'vocab-2', label: 'Vocabulary 2 · the item, the exact words, and the participant label', kind: 'long', sensitive: true },
+        { id: 'vocab-3', label: 'Vocabulary 3 · the item, the exact words, and the participant label', kind: 'long', sensitive: true },
+        { id: 'vocab-4', label: 'Vocabulary 4 · the item, the exact words, and the participant label', kind: 'long', sensitive: true },
       ] },
       { id: 'table', title: 'Three rows of the labelling table', intro: 'The other twelve go into your own four-column table. These three you work out here.', fields: [
-        { id: 'row-1', label: 'Row 1 · current label, participant words, your proposed label, and the evidence or the word guess', kind: 'long', example: 'Example (made up): “Resources” · “the list of things I need”, P2 and P4 · “What to bring” · two participants, quoted.' },
-        { id: 'row-2', label: 'Row 2 · current label, participant words, proposed label, evidence or guess', kind: 'long' },
-        { id: 'row-3', label: 'Row 3 · current label, participant words, proposed label, evidence or guess', kind: 'long' },
+        { id: 'row-1', label: 'Row 1 · current label, participant words, your proposed label, and the evidence or the word guess', kind: 'long', sensitive: true, hint: 'Refer to people by label, such as P2, never by name.', example: 'Example (made up): “Resources” · “the list of things I need”, P2 and P4 · “What to bring” · two participants, quoted.' },
+        { id: 'row-2', label: 'Row 2 · current label, participant words, proposed label, evidence or guess', kind: 'long', sensitive: true },
+        { id: 'row-3', label: 'Row 3 · current label, participant words, proposed label, evidence or guess', kind: 'long', sensitive: true },
         { id: 'guess-count', label: 'How many of your fifteen rows are guesses', kind: 'short', hint: 'A high number is not a failure. An unmarked guess is.' },
       ] },
       { id: 'conflicts', title: 'Where participants disagreed', fields: [
-        { id: 'conflict-1', label: 'Conflict 1 · the two words, who used each, what you think the disagreement means, and what would settle it', kind: 'long', hint: 'Two words for one thing often means two audiences, and sometimes it means the thing is two things.' },
-        { id: 'conflict-2', label: 'Conflict 2 · the two words, who used each, what it means, and what would settle it', kind: 'long' },
-        { id: 'unsettled', label: 'Any conflict you are leaving unsettled, and why nothing you have distinguishes the two groups', kind: 'short' },
+        { id: 'conflict-1', label: 'Conflict 1 · the two words, who used each, what you think the disagreement means, and what would settle it', kind: 'long', sensitive: true, hint: 'Two words for one thing often means two audiences, and sometimes it means the thing is two things. Refer to people by label, such as P2 and P4.' },
+        { id: 'conflict-2', label: 'Conflict 2 · the two words, who used each, what it means, and what would settle it', kind: 'long', sensitive: true },
+        { id: 'unsettled', label: 'Any conflict you are leaving unsettled, and why nothing you have distinguishes the two groups', kind: 'short', sensitive: true },
       ] },
       { id: 'cold', title: 'Save', fields: [
         { id: 'cold-read', label: 'Reading only your proposed labels: the ones that leave you unable to say what is inside', kind: 'long' },
-        { id: 'notes-read', label: 'How many participants your notes cover, how they were recruited, and who is missing', kind: 'short', hint: 'This sentence travels with the table wherever it goes.' },
+        { id: 'notes-read', label: 'How many participants your notes cover, how they were recruited, and who is missing', kind: 'short', sensitive: true, hint: 'This sentence travels with the table wherever it goes. Counts and routes only, with no names or contact details. If you had no participants, say so plainly.' },
         { id: 'table-location', label: 'Where the full labelling table lives', kind: 'short' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
@@ -189,7 +198,7 @@ export const guided06: Record<string, Guided> = {
           uncertainty: 'Still unknown: whether the words your few people used are the words anyone else would use. A handful of people gives you candidates, not a vocabulary.',
         },
         terms: [{ term: 'Verbatim', meaning: 'The exact words, in the order they were said, with nothing improved. Anything you smooth is yours rather than theirs.' }],
-        start: 'Put the inventory beside the notes and mark every noun a participant used for a thing on your list. If m05 produced no participants at all, say so in the sample box and take your words from real messages people have already sent you, marking every row with no quotation as a guess. A rehearsal with yourself is never written down as research.',
+        start: 'Put the inventory beside the notes and mark every noun a participant used for a thing on your list. If m05 produced no participants at all, say so in the sample box and take your words from real messages people have already sent you or public reviews of similar products, with names removed and the source named, marking every row with no quotation as a guess. With none of those, every row is a guess, and saying so is a complete answer. A rehearsal with yourself is never written down as research.',
         enough: 'Every phrase is in somebody else’s words, with a participant label beside it.' },
       { expect: 'Three worked rows of the labelling table, and a count of how many of your fifteen are guesses.',
         fields: ['row-1', 'row-2', 'row-3', 'guess-count'],
@@ -252,9 +261,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'Your proposed label is “Preparation”, and no participant ever used the word. What should the row say?',
         options: [
-          { label: 'The proposed label, with the word guess beside it, so nobody later reads it as something a person said.', correct: true, feedback: 'A guess is allowed and often necessary. What is not allowed is a guess sitting in a table that reads throughout as though it all came from people.' },
-          { label: 'The proposed label on its own, since the card sort will test it anyway.', feedback: 'The sort may never reach that item, and by then the table has been read by people who could not tell which rows were evidenced.' },
-          { label: 'A different label taken from the industry, so at least it is standard.', feedback: 'Swapping one unevidenced word for another changes nothing about the evidence, and usually makes the word less familiar rather than more.' },
+          { label: 'The proposed label marked as a guess, so nobody later reads it as words a participant used.', correct: true, feedback: 'A guess is allowed and often necessary. What is not allowed is a guess sitting in a table that reads throughout as though it all came from people.', was: ['The proposed label, with the word guess beside it, so nobody later reads it as something a person said.'] },
+          { label: 'The proposed label on its own, since the card sort in lesson 5 will test every label anyway.', feedback: 'The sort may never reach that item, and by then the table has been read by people who could not tell which rows were evidenced.', was: ['The proposed label on its own, since the card sort will test it anyway.'] },
+          { label: 'A standard term from the industry instead, so that the label at least matches other products.', feedback: 'Swapping one unevidenced word for another changes nothing about the evidence, and usually makes the word less familiar rather than more.', was: ['A different label taken from the industry, so at least it is standard.'] },
         ],
         repair: 'Work down the evidence cells in your three rows in step 3 and in the rest of your table. Any cell you cannot fill with a participant’s word makes that row a guess. Record what you marked in step 5.',
         recheck: 'Every row without a participant word is visibly marked as a guess, and the guess count is written down.',
@@ -262,9 +271,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'Two participants said “class” and two said “workshop”. What do you do?',
         options: [
-          { label: 'Write what the disagreement might mean, choose one word for now, and record what would settle it.', correct: true, feedback: 'A split is information about the people, not a tie to be broken by taste. Writing the interpretation keeps the decision open to being wrong.' },
-          { label: 'Use the word you prefer, since a two-and-two split gives you no guidance.', feedback: 'The split does give guidance once you look at who used which word and what else you know about them. Preference is the thing this table exists to keep out.' },
-          { label: 'Put both words in the label so that nobody is excluded.', feedback: 'Pairing works when an unfamiliar term is unavoidable, such as a legal word. Here both words are familiar, and joining them lengthens the menu without deciding anything.' },
+          { label: 'Write what the split might mean, pick one word for now, and note what would settle it.', correct: true, feedback: 'A split is information about the people, not a tie to be broken by taste. Writing the interpretation keeps the decision open to being wrong.', was: ['Write what the disagreement might mean, choose one word for now, and record what would settle it.'] },
+          { label: 'Use the word you find clearer, since a two-and-two split carries no guidance either way.', feedback: 'The split does give guidance once you look at who used which word and what else you know about them. Preference is the thing this table exists to keep out.', was: ['Use the word you prefer, since a two-and-two split gives you no guidance.'] },
+          { label: 'Put both words into the label, such as “Class or workshop”, so neither group is left out.', feedback: 'Pairing works when an unfamiliar term is unavoidable, such as a legal word. Here both words are familiar, and joining them lengthens the menu without deciding anything.', was: ['Put both words in the label so that nobody is excluded.'] },
         ],
         repair: 'Fill your conflict boxes in step 4 with who used each word and what else you know about them. If nothing distinguishes the two groups, mark it unsettled rather than deciding. Record the change in step 5.',
         recheck: 'Each conflict carries an interpretation and a sentence naming what would settle it.',
@@ -272,9 +281,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'You are choosing between “Manage” and “Cancel or change a booking”. Which, and why?',
         options: [
-          { label: 'The longer one, because a person scanning can tell whether their own task is inside it.', correct: true, feedback: 'Length costs a little space. Ambiguity costs a wrong click, a back button, and some of the trust the person arrived with.' },
-          { label: '“Manage”, because short labels scan faster and the menu stays tidy.', feedback: 'Scanning speed is not the same as scanning success. A short word that could mean four things is read quickly and answers nothing.' },
-          { label: 'Either, since people will click both and find out.', feedback: 'Some will. Someone already unsure of the site often leaves instead, and you never see that happen.' },
+          { label: '“Cancel or change a booking”, because a scanning person can see their task is inside.', correct: true, feedback: 'Length costs a little space. Ambiguity costs a wrong click, a back button, and some of the trust the person arrived with.', was: ['The longer one, because a person scanning can tell whether their own task is inside it.'] },
+          { label: '“Manage”, because one short word scans faster and keeps the whole menu on one line.', feedback: 'Scanning speed is not the same as scanning success. A short word that could mean four things is read quickly and answers nothing.', was: ['“Manage”, because short labels scan faster and the menu stays tidy.'] },
+          { label: 'Either works, since people who are unsure will open both and find what they need.', feedback: 'Some will. Someone already unsure of the site often leaves instead, and you never see that happen.', was: ['Either, since people will click both and find out.'] },
         ],
         repair: 'Read only your proposed labels in step 5 as a stranger would, and list the ones that leave you unable to say what is inside. Rewrite each of those and record the rewrites in step 5.',
         recheck: 'No surviving label is an internal, clever or abstract word, and each one names the task or the thing.',
@@ -285,6 +294,15 @@ export const guided06: Record<string, Guided> = {
       external: 'The full fifteen-row table stays in your own file, or on the backs of your cards. Write where it lives here so the two stay together.',
       creator: 'Your creator reads the vocabulary column and the guess marks. The marks are the part worth his attention, because they are what make the rest believable.',
       next: 'Open Your work and choose Ready for review. The next lesson groups the items rather than the labels, so keep the card faces showing the items.',
+    },
+    transfer: {
+      scenario: 'Made-up case: a community library’s website has a menu item called “Circulation services”. Messages from members ask how to “renew my books”, “how many books can I take”, and what the “late fee” is. Nobody has ever written the word circulation to the library, and one member asked whether renewing and paying a fine are done in the same place.',
+      prompt: 'Propose a label, or labels, for what sits under “Circulation services”, say which words came from members and which are your own guess, and explain why.',
+      anchors: {
+        weak: 'Keeps “Circulation services”, or swaps it for another invented word such as “My shelf”, with no members’ words behind it and nothing marked as a guess.',
+        adequate: 'Proposes labels close to members’ words, such as “Renew or return books” and “Fines”, quotes the messages they came from, and marks any label no member supplied as a guess.',
+        strong: 'As adequate, and treats renewing and paying a fine as possibly two items, says what would settle it, and notes that a handful of messages gives candidate words rather than a vocabulary.',
+      },
     },
   },
   'm06-l03-v1': {
@@ -304,7 +322,7 @@ export const guided06: Record<string, Guided> = {
         { id: 'scheme-two-hesitations', label: 'The cards you hesitated over this time, and where they nearly went', kind: 'long' },
       ] },
       { id: 'breakage', title: 'Where each scheme breaks', intro: 'A thing, a person, a moment. Not a general concession.', fields: [
-        { id: 'break-one', label: 'Scheme one breaks: the specific item, the specific kind of person, and the situation they are in', kind: 'long', example: 'Example (made up): “what to bring” · a first-timer still deciding whether to book · she is reading the class page and it lives under Get ready.' },
+        { id: 'break-one', label: 'Scheme one breaks: the specific item, the specific kind of person, and the situation they are in', kind: 'long', hint: 'Describe a kind of person. If you trace it to someone from your research, use their label, such as P2, never a name.', example: 'Example (made up): “what to bring” · a first-timer still deciding whether to book · she is reading the class page and it lives under Get ready.' },
         { id: 'break-two', label: 'Scheme two breaks: the specific item, the specific kind of person, and the situation', kind: 'long' },
         { id: 'decision-1', label: 'Collision 1 · the item, its two candidate homes, and your choice of duplicate, cross-link or restructure, with the reason', kind: 'long' },
         { id: 'decision-2', label: 'Collision 2 · the item, both homes, your choice and the reason', kind: 'long' },
@@ -366,10 +384,10 @@ export const guided06: Record<string, Guided> = {
           material: 'A supplied decision from the same made-up project. The task scheme was carried forward, and “what to bring” is cross-linked from the class page rather than duplicated, so a person looking for it while choosing a class needs one extra click.',
           question: 'Which way of recording that trade-off is worth writing down?',
           options: [
-            { label: '“People deciding whether to book will now need one extra click to reach what to bring, and I will see it in the tree test as hesitation on the class page.”', correct: true, feedback: 'It names who pays, what they pay, and the specific thing a later test could show. That last part is what turns a note into a prediction.' },
-            { label: '“The task scheme is better overall, although it has some drawbacks.”', feedback: 'It records a verdict and no cost. In three weeks nobody, including you, could say what was given up or check whether it mattered.' },
-            { label: '“Cross-linking is a compromise between duplicating and restructuring.”', feedback: 'That describes the method rather than the consequence. It is true of every cross-link ever made and says nothing about this one.' },
-            { label: '“We can revisit this if people complain about it.”', feedback: 'Complaints arrive only from the few who bother. The tree test is a few days away and would show the hesitation whether or not anybody spoke up.' },
+            { label: '“People choosing a class need one extra click for what to bring; the tree test should show it as hesitation.”', correct: true, feedback: 'It names who pays, what they pay, and the specific thing a later test could show. That last part is what turns a note into a prediction.', was: ['“People deciding whether to book will now need one extra click to reach what to bring, and I will see it in the tree test as hesitation on the class page.”'] },
+            { label: '“The task scheme is better overall for our three tasks, although it has some drawbacks for browsing.”', feedback: 'It records a verdict and no cost. In three weeks nobody, including you, could say what was given up or check whether it mattered.', was: ['“The task scheme is better overall, although it has some drawbacks.”'] },
+            { label: '“Cross-linking is a sensible compromise between duplicating the page and restructuring both groups.”', feedback: 'That describes the method rather than the consequence. It is true of every cross-link ever made and says nothing about this one.', was: ['“Cross-linking is a compromise between duplicating and restructuring.”'] },
+            { label: '“We will revisit the cross-link if people complain about finding what to bring on the class page.”', feedback: 'Complaints arrive only from the few who bother. The tree test is a few days away and would show the hesitation whether or not anybody spoke up.', was: ['“We can revisit this if people complain about it.”'] },
           ],
           then: 'Write your own trade-off as “people doing … will now have to …, and I will see it in the tree test as …”. If you cannot finish that sentence, the cost is not yet understood.',
         },
@@ -380,9 +398,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'You built a task scheme and a topic scheme, and the topic one has fewer overlaps. Does that make it better?',
         options: [
-          { label: 'On its own, no. What matters is whether a person looking for a specific thing has an obvious first place to look.', correct: true, feedback: 'A partition with no overlaps is usually bought by inventing categories that match nothing in anybody’s head. Tidiness was never the goal.' },
-          { label: 'Yes, because overlaps are what make a structure confusing.', feedback: 'Real information overlaps. The confusion comes from labels people cannot read, not from an item that could sensibly sit in two places.' },
-          { label: 'Yes, because fewer overlaps mean less to maintain.', feedback: 'Maintenance is a real cost, and it belongs in the collision decision rather than in the choice of scheme. Cross-linking keeps the overlap and keeps one copy.' },
+          { label: 'What decides it is whether a person seeking one thing has an obvious first place to look.', correct: true, feedback: 'Fewer overlaps prove nothing on their own. A partition with no overlaps is usually bought by inventing categories that match nothing in anybody’s head, and tidiness was never the goal.', was: ['On its own, no. What matters is whether a person looking for a specific thing has an obvious first place to look.'] },
+          { label: 'Fewer overlaps decide it, because items that could sit in two places are what confuse people.', feedback: 'Real information overlaps. The confusion comes from labels people cannot read, not from an item that could sensibly sit in two places.', was: ['Yes, because overlaps are what make a structure confusing.'] },
+          { label: 'Maintenance decides it: each overlap is another copy to keep up to date, so fewer is better.', feedback: 'Maintenance is a real cost, and it belongs in the collision decision rather than in the choice of scheme. Cross-linking keeps the overlap and keeps one copy.', was: ['Yes, because fewer overlaps mean less to maintain.'] },
         ],
         repair: 'Reread your two breakage boxes in step 4. If either says only that a scheme overlaps, rewrite it naming an item, a kind of person and a situation, then record the change in step 5.',
         recheck: 'Each scheme has a breakage naming one item, one kind of person and one moment.',
@@ -390,9 +408,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'An item genuinely belongs in two groups. What do you do?',
         options: [
-          { label: 'Choose one of duplicate, cross-link or restructure, in writing, with the reason beside it.', correct: true, feedback: 'All three are legitimate and each costs something different. The failure is putting it in one place, knowing that is wrong, and hoping.' },
-          { label: 'Duplicate it, so that nobody can miss it.', feedback: 'A defensible choice with one known cost: two copies drift apart and eventually say different things. Written down, it is a decision rather than an accident.' },
-          { label: 'Leave it in the better of the two homes and move on.', feedback: 'That is the one option with no record. When the tree test sends people to the other place, you will not know that you had already seen it coming.' },
+          { label: 'Pick duplicate, cross-link or restructure on purpose, and write the reason beside it.', correct: true, feedback: 'All three are legitimate and each costs something different. The failure is putting it in one place, knowing that is wrong, and hoping.', was: ['Choose one of duplicate, cross-link or restructure, in writing, with the reason beside it.'] },
+          { label: 'Duplicate it in both groups, so that nobody looking in either place can possibly miss it.', feedback: 'A defensible choice with one known cost: two copies drift apart and eventually say different things. It only becomes a decision once that cost is written down beside it.', was: ['Duplicate it, so that nobody can miss it.'] },
+          { label: 'Place it in whichever home suits more of your tasks, and move on to the next card.', feedback: 'That is the one option with no record. When the tree test sends people to the other place, you will not know that you had already seen it coming.', was: ['Leave it in the better of the two homes and move on.'] },
         ],
         repair: 'Fill your three collision decision boxes in step 4, one per item you hesitated over, each naming both candidate homes and your choice. Record what you decided in step 5.',
         recheck: 'Every hesitated item carries one of the three decisions and a reason.',
@@ -400,9 +418,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'You organised by audience — first-timers and returning attendees — and it looks clean. What is the risk?',
         options: [
-          { label: 'A person has to know which audience she is before she can choose, and frequently she cannot.', correct: true, feedback: 'Somebody booking for her daughter is a parent and an attendee at once. The first choice becomes a question about identity rather than about the task.' },
-          { label: 'None, as long as the two audiences are named clearly.', feedback: 'Clear names do not help somebody who fits both, or who has never thought about herself in your terms at all.' },
-          { label: 'Only that the two branches will duplicate content between them.', feedback: 'Duplication is a maintenance cost and the smaller half of the problem. The larger half happens at the very first click.' },
+          { label: 'She must decide which audience she belongs to before choosing, and often she cannot.', correct: true, feedback: 'Somebody who came once years ago and is booking again is both first-timer and returning attendee. The first choice becomes a question about identity rather than about the task.', was: ['A person has to know which audience she is before she can choose, and frequently she cannot.'] },
+          { label: 'Little risk, provided the two audiences are named clearly enough for anyone to recognise.', feedback: 'Clear names do not help somebody who fits both, or who has never thought about herself in your terms at all.', was: ['None, as long as the two audiences are named clearly.'] },
+          { label: 'The main risk is that the two branches end up duplicating content and drifting apart.', feedback: 'Duplication is a maintenance cost and the smaller half of the problem. The larger half happens at the very first click.', was: ['Only that the two branches will duplicate content between them.'] },
         ],
         repair: 'If either grouping in step 2 or step 3 is by audience, walk your three research tasks through it and write down who cannot tell which branch is hers, then record it in step 5.',
         recheck: 'Any audience scheme carries a named person who cannot classify herself.',
@@ -413,6 +431,15 @@ export const guided06: Record<string, Guided> = {
       external: 'The cards and photographs stay in your own folder. Photograph each grouping before you disturb the table, and write the file names here.',
       creator: 'Your creator reads the two breakage cases and the trade-off. Two schemes with their failures show more than one tidy structure ever could.',
       next: 'Open Your work and choose Ready for review. The next lesson draws your chosen scheme as a sitemap and then a shallower version of it, so keep both groupings.',
+    },
+    transfer: {
+      scenario: 'Made-up case: a hardware shop’s website groups everything by department: Plumbing, Electrical, Paint, Garden. Most customers arrive with a job in mind, such as “fix a dripping tap” or “put up a shelf”. The owner wants to regroup by job instead, but tap washers are needed both for fixing a tap and for mending a garden hose.',
+      prompt: 'Choose the scheme you would carry forward, name the item and the kind of customer for whom your choice breaks, and explain how you would handle that item and why.',
+      anchors: {
+        weak: 'Says the job scheme is better because it feels more modern or friendly, with no breakage named, or concedes that no scheme is perfect without saying where it fails.',
+        adequate: 'Chooses one scheme and names a specific breakage, such as tap washers for someone mending a hose, then picks duplicate, cross-link or restructure for that item with a reason.',
+        strong: 'As adequate, and writes what the choice gives up as a prediction a later test could check, and notes that a customer who already knows the part name may still look by department.',
+      },
     },
   },
   'm06-l04-v1': {
@@ -433,7 +460,7 @@ export const guided06: Record<string, Guided> = {
         { id: 'level-two-4', label: 'Level-two group 4 · its name, one sentence saying what is inside, and the word vague if you cannot write that sentence', kind: 'short' },
       ] },
       { id: 'map-two', title: 'The shallower alternative', fields: [
-        { id: 'lifted-items', label: 'Which items you lifted to level one, and why those ones', kind: 'long', hint: 'Lift what your research showed people need, not what you find interesting.' },
+        { id: 'lifted-items', label: 'Which items you lifted to level one, and why those ones', kind: 'long', hint: 'Lift what your research showed people need for their tasks, not what you find interesting. A tree test cannot tell you this later: you write its tasks, so its counts are not a measure of how often anything is needed.' },
         { id: 'crowding', label: 'What became crowded, and what became harder to find', kind: 'long', hint: 'Something always gets worse. If nothing did, the second map is probably the first map redrawn.' },
       ] },
       { id: 'compare', title: 'Compare on tasks, then save', fields: [
@@ -486,15 +513,15 @@ export const guided06: Record<string, Guided> = {
       { terms: [{ term: 'Uncertain decision', meaning: 'A point where a person has to guess which way to go. Two of these cost her more than four choices she is sure about.' }, { term: 'Favouring a task', meaning: 'A shape is not better in general. It is better for some tasks and worse for others, so the comparison is made one task at a time.' }], expect: 'Which shape favours each task, your chosen shape with what it costs, where the drawings live, and the repair the Check questions asked for.',
         fields: ['task-comparison', 'chosen-shape', 'cost-of-choice', 'map-reference', 'improvement-made'],
         supported: {
-          material: 'Two supplied maps of the same made-up content. Map A has four groups at level one and three levels in total. Map B has eight groups at level one and two levels in total. Supplied task: a person booked a class for Saturday, something has come up, and she wants to know whether she can get her money back.',
-          question: 'Which shape favours this task, and on what grounds?',
+          material: 'Two supplied maps of the same made-up content; the full versions are in the source notes for this lesson. Map A has four groups at level one: Choose a class, Get ready for a class, Change or cancel, Get help. Under Change or cancel sits Booking admin, which holds Move a booking to another date, Cancel a booking and Refund rule. Map B has eight entries at level one, one of them Cancel a booking and refunds, which holds Cancel a booking and Refund rule. Supplied task: she booked a class for Saturday, something has come up, and she wants to know whether she can get her money back.',
+          question: 'Which map favours this task, and on what grounds?',
           options: [
-            { label: 'Map B, because the refund rule can sit at level one where she reads it instead of guessing what a parent group contains.', correct: true, feedback: 'She arrives with one specific need and little patience. A visible label removes the guess, and the guess is the part that loses people.' },
-            { label: 'Map A, because four groups are easier to scan than eight.', feedback: 'Scanning eight short labels takes seconds. Choosing between four vague parents and then choosing again takes longer and can go wrong at either step.' },
-            { label: 'Map A, because three levels give the content room to be organised properly.', feedback: 'Room to organise serves the person drawing the map. This task is judged by whether one worried person finds one rule.' },
-            { label: 'Neither: the content is the same, so the shape cannot affect the task.', feedback: 'Same content, different number of decisions. The shape changes how many uncertain choices the task costs, which is exactly what is being compared.' },
+            { label: 'Map B: “Cancel a booking and refunds” names her need at level one, with no container to guess past.', correct: true, feedback: 'In Map A her second choice is Booking admin, a name that says nothing about refunds, so she has to guess. Map B removes that guess, and the guess is the part that loses people.', was: ['Map B, because the refund rule can sit at level one where she reads it instead of guessing what a parent group contains.'] },
+            { label: 'Map A: four groups at level one are quicker to scan than eight, so she reaches the branch sooner.', feedback: 'Scanning eight short labels takes seconds. In Map A the scan is quick and the second choice is a gamble on Booking admin, which is where she can go wrong.', was: ['Map A, because four groups are easier to scan than eight.'] },
+            { label: 'Map A: “Change or cancel” is the right first choice, and one more level costs only a click.', feedback: 'The first choice is right in both maps. The extra level matters because its label, Booking admin, does not tell her the refund rule is inside, so that click is an uncertain one rather than a free one.', was: ['Map A, because three levels give the content room to be organised properly.'] },
+            { label: 'Neither: both maps contain the refund rule, so their shape cannot change how she reaches it.', feedback: 'Same content, different number of uncertain decisions. The shape changes how many guesses the task costs, which is exactly what is being compared.', was: ['Neither: the content is the same, so the shape cannot affect the task.'] },
           ],
-          then: 'Do this for each of your three tasks and expect the answer to change between them. A shape that wins every task usually means the tasks were too alike.',
+          then: 'Now walk supplied tasks 2 and 3 through both maps, then your own three tasks. Map A should win task 3, where one parent, Get ready for a class, holds everything about a first visit. A shape that wins every task usually means the tasks were too alike.',
         },
         start: 'Walk each task through both maps with your finger, marking every point where you would be unsure.',
         enough: 'The chosen shape is named alongside a task it disadvantages, not presented as the obvious answer.' },
@@ -503,9 +530,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'One task in your shallower map still takes four choices. Someone tells you the limit is three clicks. What do you do?',
         options: [
-          { label: 'Count the uncertain choices instead, because distance is not what loses people.', correct: true, feedback: 'Four confident choices are shorter than two gambles. The number worth reducing is guesses, not steps.' },
-          { label: 'Restructure until every task fits inside three clicks.', feedback: 'Forcing the count usually widens level one past what anyone can scan, or invents a parent group holding unrelated things.' },
-          { label: 'Leave it, since the number of clicks does not matter at all.', feedback: 'It matters as a rough symptom. A task taking nine steps is telling you something, even though three is folklore.' },
+          { label: 'Count how many of the four are uncertain, because guessing, not distance, loses people.', correct: true, feedback: 'Four confident choices are shorter than two gambles. The number worth reducing is guesses, not steps.', was: ['Count the uncertain choices instead, because distance is not what loses people.'] },
+          { label: 'Restructure until every task fits inside three clicks, since that is the accepted limit.', feedback: 'Three clicks is folklore rather than a finding. Forcing the count usually widens level one past what anyone can scan, or invents a parent group holding unrelated things.', was: ['Restructure until every task fits inside three clicks.'] },
+          { label: 'Ignore the count entirely, since the number of choices a task takes tells you nothing.', feedback: 'It matters as a rough symptom. A task taking nine steps is telling you something, even though three is folklore.', was: ['Leave it, since the number of clicks does not matter at all.'] },
         ],
         repair: 'Look at your task depths in step 2. Beside each count, write how many of those choices you would be unsure of, then record the change in step 5.',
         recheck: 'Each task is described by its uncertain choices rather than by a click count.',
@@ -513,9 +540,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'A level-two group is called “More information” and you cannot write a sentence saying what is inside. What does that tell you?',
         options: [
-          { label: 'The group is not real; it exists because two items had nowhere else to go.', correct: true, feedback: 'A group you cannot summarise cannot be scanned past either. The reader has to open it to find out, every single time.' },
-          { label: 'The label needs work but the grouping underneath is sound.', feedback: 'Renaming a container whose contents share nothing produces a second vague name. The contents are the problem, not the wording.' },
-          { label: 'It is acceptable as long as the items inside are labelled well.', feedback: 'On a phone the items inside are on the next screen. The reader decides from the parent alone and never sees them.' },
+          { label: 'It is probably a leftover container, holding items that had nowhere else to go.', correct: true, feedback: 'A group you cannot summarise cannot be scanned past either. The reader has to open it to find out, every single time.', was: ['The group is not real; it exists because two items had nowhere else to go.'] },
+          { label: 'The label needs rewording, but the grouping underneath it is probably sound.', feedback: 'Renaming a container whose contents share nothing produces a second vague name. The contents are the problem, not the wording.', was: ['The label needs work but the grouping underneath is sound.'] },
+          { label: 'It is acceptable, as long as every item inside it carries a clear label of its own.', feedback: 'On a phone the items inside are on the next screen. The reader decides from the parent alone and never sees them.', was: ['It is acceptable as long as the items inside are labelled well.'] },
         ],
         repair: 'Go back to your level-two boxes in step 3. Break up or rehome any group you marked vague, then record the change in step 5.',
         recheck: 'Every level-two group has a one-sentence summary naming its actual contents.',
@@ -523,9 +550,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'Your shallower map suits two of your three tasks, so you write that it is the better structure. What is wrong with that sentence?',
         options: [
-          { label: 'It hides the task it is worse for, which is the thing a later test needs to look for.', correct: true, feedback: 'A shape favours tasks; it is not better in general. Naming the task it costs is what makes the tree test worth running.' },
-          { label: 'Nothing: two out of three is a reasonable basis for choosing.', feedback: 'Choosing on that basis is fine. Writing it up as better in general is what loses the information.' },
-          { label: 'You should keep both maps and decide after the tree test.', feedback: 'Keeping both avoids the decision, and the tree test needs one structure to test. Choose, and record what the choice costs.' },
+          { label: 'It hides the task the map is worse for, which is what a later test needs to look for.', correct: true, feedback: 'A shape favours tasks; it is not better in general. Naming the task it costs is what makes the tree test worth running.', was: ['It hides the task it is worse for, which is the thing a later test needs to look for.'] },
+          { label: 'The sentence is fine: two of three tasks is a reasonable basis for calling it better.', feedback: 'Choosing on that basis is fine. Writing it up as better in general is what loses the information.', was: ['Nothing: two out of three is a reasonable basis for choosing.'] },
+          { label: 'It decides too early: keep both maps and let the tree test pick the better structure.', feedback: 'Keeping both avoids the decision, and the tree test needs one structure to test. Choose, and record what the choice costs.', was: ['You should keep both maps and decide after the tree test.'] },
         ],
         repair: 'Look at your task comparison in step 5. Name the task your chosen shape disadvantages and what a tree test would show if it matters, then record the change in step 5.',
         recheck: 'The recorded choice names a task it disadvantages and what would reveal the cost.',
@@ -536,6 +563,30 @@ export const guided06: Record<string, Guided> = {
       external: 'Both drawings stay on paper or in your own folder. Photograph them if you like and write the file name in the last box; naming a file does not upload it.',
       creator: 'Your creator reads the comparison and the recorded cost. Share the photographs the way you normally share files if you want him to see the maps themselves.',
       next: 'Open Your work and choose Ready for review. The next lesson puts your inventory cards in front of people and asks them to group them.',
+    },
+    material: [
+      'Supplied practice maps, made up for this lesson: a pottery studio’s website drawn two ways. Nobody has tested either map, and both hold the same thirteen items. In each line, › means “contains”.',
+      'Map A, the current map: three levels, four groups at level one.',
+      'Map A · Choose a class › Classes this month › Beginners’ wheel throwing, Evening hand-building. Choose a class › Prices and passes › Single class price, Five-class pass.',
+      'Map A · Get ready for a class › Practical information › What to bring, Directions and parking, Step-free access. Get ready for a class › Before your first class › What happens on the day.',
+      'Map A · Change or cancel › Booking admin › Move a booking to another date, Cancel a booking, Refund rule.',
+      'Map A · Get help › Contact us › Phone and email, Questions people often ask.',
+      'Map B, the shallower alternative: two levels, eight entries at level one. The four things the made-up research showed people needing for their tasks were lifted to level one: what to bring, directions, moving a booking, and cancelling with refunds.',
+      'Map B · Classes this month › Beginners’ wheel throwing, Evening hand-building. Prices and passes › Single class price, Five-class pass. What to bring. Directions and parking.',
+      'Map B · Move a booking to another date. Cancel a booking and refunds › Cancel a booking, Refund rule. Before your first class › What happens on the day, Step-free access. Get help › Phone and email, Questions people often ask.',
+      'Labels the comparison turns on: no made-up participant ever used “Booking admin” or “Practical information”, and both name a container rather than what is inside it. “What to bring”, “Directions and parking” and “Cancel a booking and refunds” sit close to words the made-up participants used: “the list of things I need”, “where is it”, “what happens if I can’t come”.',
+      'Task 1 · She booked a class for Saturday, something has come up, and she wants to know whether she can get her money back.',
+      'Task 2 · A first-timer, the evening before her class, wants to know what to bring.',
+      'Task 3 · Someone thinking about a first class wants to read everything about what the first visit involves before she decides.',
+    ],
+    transfer: {
+      scenario: 'Made-up case: a city bus service has two draft menus for its website. Map A: Passes › Pass types › Student, Senior, Monthly; and Passes › Manage my pass › Renew, Replace a lost card. Map B puts “Renew a pass” and “Replace a lost card” at the top level beside Pass types. Many people renew on a phone while waiting at a stop.',
+      prompt: 'For someone renewing at a bus stop, say which map favours the task and explain why, then name one task the other map serves better.',
+      anchors: {
+        weak: 'Picks a map by counting clicks or by which looks tidier, for example “Map B, because fewer clicks is always better”, and names no task the other map wins.',
+        adequate: 'Picks Map B for renewing, because “Renew a pass” is visible straight away on a small screen while “Manage my pass” asks for a guess, reasoning in uncertain decisions rather than clicks.',
+        strong: 'As adequate, and names a task Map A serves better, such as comparing every pass type under one parent, and says a tree test with renewal tasks would check the choice rather than settle how often people renew.',
+      },
     },
   },
   'm06-l05-v1': {
@@ -548,22 +599,22 @@ export const guided06: Record<string, Guided> = {
       ] },
       { id: 'open-sort', title: 'The open sort', fields: [
         { id: 'open-status', label: 'How the open sort actually happened', kind: 'choice', options: ['A person consented and sorted the cards', 'Nobody has consented yet, so I sorted them myself as a rehearsal'], hint: 'Answer this before you write anything else about the session. It decides what the rest of the record is allowed to claim.' },
-        { id: 'open-groups', label: 'The groups they made and the name they gave each, in their words', kind: 'long', hint: 'Copy the names exactly, including the awkward ones. A name you tidy up is a name you invented.' },
-        { id: 'open-hesitations', label: 'Every card moved twice, every pause, and the exact words spoken while hesitating', kind: 'long', example: 'Example (made up): picked up the cancellation policy card three times, moved it from the money pile to the cancelling pile and back, said “this depends on whose fault it is”.' },
+        { id: 'open-groups', label: 'The groups they made and the name they gave each, in their words', kind: 'long', sensitive: true, hint: 'Copy the names exactly, including the awkward ones. A name you tidy up is a name you invented. On the rehearsal route, write your own groups and mark them rehearsal.' },
+        { id: 'open-hesitations', label: 'Every card moved twice, every pause, and the exact words spoken while hesitating', kind: 'long', sensitive: true, hint: 'Refer to the person by label, such as P1. Short exact phrases only; the full notes stay in your private file.', example: 'Example (made up): picked up the cancellation policy card three times, moved it from the money pile to the cancelling pile and back, said “this depends on whose fault it is”.' },
       ] },
       { id: 'closed-sort', title: 'The closed sort', fields: [
         { id: 'closed-status', label: 'How the closed sort actually happened', kind: 'choice', options: ['A person consented and placed the cards', 'Nobody has consented yet, so I placed them myself as a rehearsal'] },
-        { id: 'closed-placements', label: 'Every card placed slowly, questioned or refused, and what was said about each', kind: 'long', hint: 'A card placed instantly and a card placed after twenty seconds are different results, even when they land in the same group.' },
+        { id: 'closed-placements', label: 'Every card placed slowly, questioned or refused, and what was said about each', kind: 'long', sensitive: true, hint: 'A card placed instantly and a card placed after twenty seconds are different results, even when they land in the same group.' },
       ] },
       { id: 'record', title: 'The written record', intro: 'Write this up immediately, before you disturb the table and before the afternoon blurs.', fields: [
-        { id: 'session-record', label: 'The write-up of each session: participant label, groups with their names, card placements, hesitations and quotations', kind: 'long', hint: 'Use a label such as P1, never a name. Anonymity is part of what you promised.' },
-        { id: 'did-said-concluded', label: 'Three lines from your notes, each split into what they did, what they said, and what you concluded', kind: 'long', hint: 'Any line that will not split is already a conclusion wearing the clothes of an observation.' },
-        { id: 'photo-reference', label: 'Where the photographs live', kind: 'short', hint: 'File names or “on my phone, in the card sort album”. Nothing is uploaded from here.' },
+        { id: 'session-record', label: 'A de-identified write-up of each session: participant label, groups with their names, card placements, hesitations and short quotations', kind: 'long', sensitive: true, hint: 'Use a label such as P1, never a name or contact detail. Keep raw notes and photographs in a private folder or on paper with a date to delete them; only this summary goes here. Removing a name does not make a note anonymous, so leave out details that point to one person.' },
+        { id: 'did-said-concluded', label: 'Three lines from your notes, each split into what they did, what they said, and what you concluded', kind: 'long', sensitive: true, hint: 'Any line that will not split is already a conclusion wearing the clothes of an observation.' },
+        { id: 'photo-reference', label: 'Where the photographs live', kind: 'short', hint: 'File names or “on my phone, in the card sort album”. Keep names out of file names. Nothing is uploaded from here.' },
       ] },
       { id: 'sample', title: 'Who sorted, and who did not', fields: [
-        { id: 'sample-line', label: 'How many people sorted, how you found them, and who is missing', kind: 'long', hint: 'This sentence goes at the top of the record, not the bottom, and travels with the results everywhere.' },
-        { id: 'recruitment-gap', label: 'If nobody consented: what you tried, on which dates, and what you will try next', kind: 'long', hint: 'A dated gap plus the prepared cards and the script is a complete answer to this lesson. It is a real finding about access.' },
-        { id: 'rehearsal-label', label: 'The words written on every rehearsal artefact so it can never be read as research', kind: 'short', example: 'Example (made up): “Rehearsal, sorted by me, no participants” written across the photograph and at the top of the write-up.' },
+        { id: 'sample-line', label: 'How many people sorted, how you found them, and who is missing', kind: 'long', sensitive: true, hint: 'This sentence goes at the top of the record, not the bottom, and travels with the results everywhere. Counts and routes only, with no names or contact details.' },
+        { id: 'recruitment-gap', label: 'If nobody consented: what you tried, on which dates, and what you will try next', kind: 'long', sensitive: true, requiredWhen: { field: 'open-status', values: ['Nobody has consented yet, so I sorted them myself as a rehearsal'] }, hint: 'A dated gap plus the prepared cards and the script is a complete answer to this lesson. It is a real finding about access. Describe who you asked by kind, such as “two neighbours”, never by name or number.' },
+        { id: 'rehearsal-label', label: 'The words written on every rehearsal artefact so it can never be read as research', kind: 'short', requiredWhen: { field: 'open-status', values: ['Nobody has consented yet, so I sorted them myself as a rehearsal'] }, hint: 'Needed whenever either sort was a rehearsal.', example: 'Example (made up): “Rehearsal, sorted by me, no participants” written across the photograph and at the top of the write-up.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
@@ -659,9 +710,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'You could not find anyone to sort the cards. You sorted them yourself and the piles look sensible. What may you write?',
         options: [
-          { label: 'A dated note of the recruitment you attempted, plus the cards and the script, with your own sort labelled a rehearsal on every page.', correct: true, feedback: 'That is a complete and honest answer to this lesson. The gap is a real finding about access, and the rehearsal shows you can run the method.' },
-          { label: 'Write it up as a sort with one participant, since the sort did happen.', feedback: 'You cannot be a participant in your own study. You know the structure already, and a rehearsal reported as research is the one thing this module will not accept.' },
-          { label: 'Skip the lesson until somebody agrees to sit down with you.', feedback: 'Waiting loses the preparation, which is most of the work. Prepare the cards, write the dated gap, and run the rehearsal.' },
+          { label: 'A dated recruitment note, the cards and script, and your own sort labelled a rehearsal.', correct: true, feedback: 'That is a complete and honest answer to this lesson. The gap is a real finding about access, and the rehearsal shows you can run the method.', was: ['A dated note of the recruitment you attempted, plus the cards and the script, with your own sort labelled a rehearsal on every page.'] },
+          { label: 'A write-up of a sort with one participant, since a real sort did happen at your table.', feedback: 'You cannot be a participant in your own study. You know the structure already, and a rehearsal reported as research is the one thing this module will not accept.', was: ['Write it up as a sort with one participant, since the sort did happen.'] },
+          { label: 'Nothing yet: pause the lesson until somebody agrees to sit down and sort the cards.', feedback: 'Waiting loses the preparation, which is most of the work. Prepare the cards, write the dated gap, and run the rehearsal.', was: ['Skip the lesson until somebody agrees to sit down with you.'] },
         ],
         repair: 'Look at the sort status you chose in step 2. If it was a rehearsal, write that word on the photographs and at the top of the write-up now, then record the change in step 5.',
         recheck: 'No artefact from a rehearsal can be read as research, and the recruitment gap carries dates.',
@@ -669,9 +720,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'Your notes from the open sort read “she was unsure about the practical cards”. What is missing?',
         options: [
-          { label: 'What she actually did with them, and anything she said while doing it.', correct: true, feedback: 'Unsure is your reading. Without the movement and the words underneath it, nobody can check the reading, including you next month.' },
-          { label: 'A count of how many cards ended up in that pile.', feedback: 'Useful, and not the gap. The pile is already visible in the photograph; the hesitation is not visible anywhere.' },
-          { label: 'Nothing: you were in the room and you saw it happen.', feedback: 'Being there is exactly why the sentence feels complete. A week later the sentence is all that survives, and it contains no evidence.' },
+          { label: 'What she actually did with those cards, and any words she said while doing it.', correct: true, feedback: 'Unsure is your reading. Without the movement and the words underneath it, nobody can check the reading, including you next month.', was: ['What she actually did with them, and anything she said while doing it.'] },
+          { label: 'A count of how many practical cards ended up in her final pile, for the record.', feedback: 'Useful, and not the gap. The pile is already visible in the photograph; the hesitation is not visible anywhere.', was: ['A count of how many cards ended up in that pile.'] },
+          { label: 'Little: you were in the room, and your summary captures what you saw happen.', feedback: 'Being there is exactly why the sentence feels complete. A week later the sentence is all that survives, and it contains no evidence.', was: ['Nothing: you were in the room and you saw it happen.'] },
         ],
         repair: 'Go back to your hesitation notes in step 2 and rewrite each conclusion as the movement and the words underneath it, then record the change in step 5.',
         recheck: 'Every hesitation note names a card, a movement or a phrase.',
@@ -679,9 +730,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'Your cards carry the new labels you proposed in the labelling lesson. Why does that spoil the open sort?',
         options: [
-          { label: 'You would be testing your own wording back at yourself instead of learning how they group things.', correct: true, feedback: 'A card that names its group tells the person where it goes. The sort then agrees with you and tells you nothing you had not already written.' },
-          { label: 'It is acceptable, since those labels came from participant vocabulary in the first place.', feedback: 'Coming from vocabulary makes a label plausible, not tested. This session is the test, and the card must not carry the answer on its face.' },
-          { label: 'It only matters in the closed sort, where you supply the groups anyway.', feedback: 'The closed sort is the one that already gives categories. It is the open sort that a leading card face quietly ruins.' },
+          { label: 'The sort would test your own wording back at you instead of showing how they group things.', correct: true, feedback: 'A card that names its group tells the person where it goes. The sort then agrees with you and tells you nothing you had not already written.', was: ['You would be testing your own wording back at yourself instead of learning how they group things.'] },
+          { label: 'It does not spoil it, since those labels came from participant vocabulary in the first place.', feedback: 'Coming from vocabulary makes a label plausible, not tested. This session is the test, and the card must not carry the answer on its face.', was: ['It is acceptable, since those labels came from participant vocabulary in the first place.'] },
+          { label: 'It spoils only the closed sort, where the groups you supply would clash with the card labels.', feedback: 'The closed sort is the one that already gives categories. It is the open sort that a leading card face quietly ruins.', was: ['It only matters in the closed sort, where you supply the groups anyway.'] },
         ],
         repair: 'Read each card face again from step 1 and rewrite any that hints where it belongs, using the plain description from your inventory, then record the change in step 5.',
         recheck: 'No card face carries a group name or a proposed label.',
@@ -693,44 +744,54 @@ export const guided06: Record<string, Guided> = {
       creator: 'Your creator reads the session records and the sample line. If nobody consented, he reads the dated gap and the rehearsal instead, and that is a complete submission.',
       next: 'Open Your work and choose Ready for review. The next lesson turns these records into counts, without turning four people into a percentage.',
     },
+    transfer: {
+      scenario: 'Made-up case: you are preparing an open card sort for a plant nursery’s website, whose structure is still undecided. To save time, a colleague has printed the cards with the menu group already on them, such as “Indoor › Plants for dark rooms” and “Services › Repotting”. Three neighbours have agreed to sort the cards on Saturday.',
+      prompt: 'Decide what to do with the printed cards before Saturday, and explain why, including what you will record during each sort besides the final piles.',
+      anchors: {
+        weak: 'Keeps the printed cards because they are clearer or save time, or plans to record only where each card ends up.',
+        adequate: 'Reprints the cards as plain descriptions without group names, because a card that names its group tests the team’s wording rather than how people group things, and plans to record moves, pauses and exact words.',
+        strong: 'As adequate, and keeps the sort open because the structure is undecided, states that three neighbours are an exploratory convenience sample, and plans a closed sort later to check the groups chosen.',
+      },
+    },
   },
   'm06-l06-v1': {
     route: textRoute,
     worksheet: [
       { id: 'table', title: 'One row per item', intro: 'Rows are items, columns are participants. Build it from the photographs and the notes, not from memory.', fields: [
+        { id: 'sort-source', label: 'Whose sorts this table holds', kind: 'choice', options: ['Sorts by consenting participants from lesson 5', 'The supplied practice sorts, because my lesson 5 sort was a rehearsal'], hint: 'Answer this first. On the supplied route every row, count and change below is practice on simulated data, and stays labelled that way.' },
         { id: 'table-shape', label: 'How many items are in your table, and how many participants have a column', kind: 'short' },
-        { id: 'table-rows', label: 'Three rows written out in full, each naming where every participant put the item and where anyone hesitated', kind: 'long', example: 'Example (made up): refund rule — P1 money cards, hesitated; P2 money cards, hesitated; P3 money cards; P4 cancelling pile.' },
-        { id: 'missing-cells', label: 'Any placement you could not recover from the photographs or the notes', kind: 'short', hint: 'Leave the cell blank and say so here. A reconstructed placement is an invented one.' },
+        { id: 'table-rows', label: 'Three rows written out in full, each naming where every participant put the item and where anyone hesitated', kind: 'long', sensitive: true, hint: 'Use labels such as P1, or S1 for the supplied sorters, never names.', example: 'Example (made up): refund rule — P1 money cards, hesitated; P2 money cards, hesitated; P3 money cards; P4 cancelling pile.' },
+        { id: 'missing-cells', label: 'Any placement you could not recover from the photographs or the notes', kind: 'short', sensitive: true, hint: 'Leave the cell blank and say so here. A reconstructed placement is an invented one.' },
       ] },
       { id: 'patterns', title: 'Agreement, disagreement, ambiguity', fields: [
         { id: 'pattern-counts', label: 'How many of your items fell into each of the three patterns', kind: 'short', example: 'Example (made up): eleven agreements, six disagreements, four ambiguous.' },
-        { id: 'disagreements', label: 'Each disagreement, with what you think it means: two audiences, two items, or too little evidence', kind: 'long', hint: 'Look at who placed it which way and what else you know about them. If nothing distinguishes them, say so rather than deciding.' },
-        { id: 'ambiguous-items', label: 'The items placed consistently but slowly, and what the hesitation looked or sounded like', kind: 'long', hint: 'This is the pattern people miss, and it predicts a wrong first click better than a clean split does.' },
+        { id: 'disagreements', label: 'Each disagreement, with what you think it means: two audiences, two items, or too little evidence', kind: 'long', sensitive: true, hint: 'Look at who placed it which way and what else you know about them. If nothing distinguishes them, say so rather than deciding.' },
+        { id: 'ambiguous-items', label: 'The items placed consistently but slowly, and what the hesitation looked or sounded like', kind: 'long', sensitive: true, hint: 'This is the pattern people miss, and it predicts a wrong first click better than a clean split does.' },
       ] },
       { id: 'revise', title: 'Changes, each with a trace', intro: 'One change per box. If you cannot write the trace sentence, the change belongs on the next list instead.', fields: [
-        { id: 'change-1', label: 'Change 1 · what moved, and the sentence naming the item, the participants and what they did', kind: 'long', example: 'Example (made up): split “change my booking” from “cancel my booking”, because four of four participants put them in different piles.' },
-        { id: 'change-2', label: 'Change 2 · what moved, and the sentence naming the item, the participants and what they did', kind: 'long' },
-        { id: 'change-3', label: 'Change 3 · what moved, and the sentence naming the item, the participants and what they did', kind: 'long' },
-        { id: 'change-4', label: 'Change 4 · what moved, and the sentence naming the item, the participants and what they did', kind: 'long' },
+        { id: 'change-1', label: 'Change 1 · what moved, and the sentence naming the item, the participants and what they did', kind: 'long', sensitive: true, hint: 'Name people by label, such as P2. On the supplied route, change the practice map from lesson 4, name the S label, and mark the change practice.', example: 'Example (made up): split “change my booking” from “cancel my booking”, because four of four participants put them in different piles.' },
+        { id: 'change-2', label: 'Change 2 · what moved, and the sentence naming the item, the participants and what they did', kind: 'long', sensitive: true },
+        { id: 'change-3', label: 'Change 3 · what moved, and the sentence naming the item, the participants and what they did', kind: 'long', sensitive: true },
+        { id: 'change-4', label: 'Change 4 · what moved, and the sentence naming the item, the participants and what they did', kind: 'long', sensitive: true },
       ] },
       { id: 'preferences', title: 'What you wanted, kept separately', fields: [
         { id: 'preferences-list', label: 'Every change you want to make that no participant’s behaviour supports', kind: 'long', hint: 'These are allowed and often sensible. They are simply not findings, and this list is where they say so.' },
         { id: 'rejected-change', label: 'The one you most wanted to move onto the evidence list, and why it stays here', kind: 'short' },
       ] },
       { id: 'sample', title: 'The sentence that travels with the results', fields: [
-        { id: 'sample-line', label: 'How many people sorted, how you found them, and that a sort this size is exploratory', kind: 'long', hint: 'Write it once and copy it wherever these results appear, including any slide or portfolio page.' },
+        { id: 'sample-line', label: 'How many people sorted, how you found them, and that a sort this size is exploratory', kind: 'long', sensitive: true, hint: 'Write it once and copy it wherever these results appear, including any slide or portfolio page. Counts and routes only, with no names. On the supplied route, say the data is simulated practice.' },
         { id: 'percentage-sweep', label: 'What you found when you searched your write-up for the per cent sign and for anything drawn as a distance', kind: 'short' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
     guide: [
-      { expect: 'A table with one row per item and one column per participant, three rows written out in full, and any placement you could not recover.',
-        fields: ['table-shape', 'table-rows', 'missing-cells'],
+      { expect: 'Whose sorts you are reading, a table with one row per item and one column per participant, three rows written out in full, and any placement you could not recover.',
+        fields: ['sort-source', 'table-shape', 'table-rows', 'missing-cells'],
         terms: [
           { term: 'Item-by-item analysis', meaning: 'Reading the sort one card at a time across all participants, rather than one person’s piles at a time.' },
           { term: 'Placement', meaning: 'Where one participant put one card, plus whether they arrived there quickly or slowly.' },
         ],
-        start: 'Lay the photographs side by side and work down one card at a time, filling the whole row before you move on.',
+        start: 'Choose the source first. If your lesson 5 sort was a rehearsal, use the supplied practice sorts in this lesson’s source notes and label every row practice. Then lay the photographs or notes side by side and work down one card at a time, filling the whole row before you move on.',
         enough: 'Every row has a cell for every participant, blank where the placement is genuinely unrecoverable.' },
       { terms: [{ term: 'Agreement', meaning: 'An item that everybody placed the same way, and placed easily. Both halves of that have to be true before you write the word.' }, { term: 'Disagreement', meaning: 'An item that people placed in different groups. Write the counts, then write what you think the split means and who was on each side.' }, { term: 'Ambiguous', meaning: 'An item placed the same way by everybody, but slowly or after second thoughts. It is the pattern people miss, and it warns you about a label before a tree test does.' }], expect: 'Each item labelled agreement, disagreement or ambiguous, with counts and an interpretation written for every disagreement.',
         fields: ['pattern-counts', 'disagreements', 'ambiguous-items'],
@@ -752,7 +813,7 @@ export const guided06: Record<string, Guided> = {
       { terms: [{ term: 'Trace sentence', meaning: 'The sentence beside a change naming the item, which participants, and what they actually did. If you cannot finish it, the change is not led by evidence.' }, { term: 'Revision', meaning: 'Your structure as it stands after these changes, kept beside the old version so anybody can see what moved and read why.' }], demo: { scenario: 'Made-up example. Writing one traced change that turned out to be three changes hiding behind a single true sentence.', beats: [{ label: 'What the table showed', text: 'All four participants put “change my booking” and “cancel my booking” in different piles. A plain disagreement, with both piles named in their own words.' }, { label: 'What I wrote in the box as one change', text: 'Split changing from cancelling. While I was in there I also renamed the group above them to “Booking admin” and moved the payments items underneath it.' }, { label: 'The trace sentence I put beside it', text: '“Four of four put changing and cancelling in different piles.” Entirely true, and it covered about a third of what I had actually done.' }, { label: 'What I saw reading it back', text: 'Nobody had touched the name of the group above, and nobody had gone anywhere near the payments cards. Two of my three moves rested on my own taste.' }, { label: 'What I did about it', text: 'Cut the entry back to the split alone, moved the rename and the payments move to the preferences list, and wrote beside each one what a participant would have to do for it to come off that list.' }], wrongTurn: 'The wrong turn is letting one true trace sentence stand for everything you altered at the same sitting. The sentence is honest, the change around it is not, and you will not notice because you wrote both in the same minute.', tradeoff: 'One change per box makes your revision look thin: three small moves instead of the nine you can see are needed. The thin list is the one you can defend line by line when somebody asks where each move came from.', uncertainty: 'Still unknown: whether the split is the right split. Four people separating two cards tells you they are not the same thing, and tells you nothing about what the two new groups should be called.' }, expect: 'Each change to your structure with a sentence naming the item, the participants and what they did.',
         fields: ['change-1', 'change-2', 'change-3', 'change-4'],
         reveal: { first: 2, group: 1, count: 4, addLabel: 'Add another change', note: 'One change at a time. Four is the maximum here, not the target; two well-traced changes beat six vague ones.' },
-        start: 'Begin with the disagreement you understand best and finish the sentence “this moved because participants … did …”.',
+        start: 'Begin with the disagreement you understand best and finish the sentence “this moved because participants … did …”. On the supplied route, make the change to the practice map from lesson 4, not to your own structure, because simulated sorters are not evidence about your product.',
         enough: 'No change is left whose trace sentence you cannot complete.' },
       { terms: [{ term: 'Preference', meaning: 'A change you want to make because you think it is better. Allowed, often sensible, and not a finding.' }, { term: 'Evidence', meaning: 'Something a participant did or said that you wrote down at the time. Your memory of an afternoon does not qualify.' }], expect: 'Every change you wanted that no participant’s behaviour supports, kept on its own list.',
         fields: ['preferences-list', 'rejected-change'],
@@ -764,10 +825,10 @@ export const guided06: Record<string, Guided> = {
           material: 'A supplied made-up result. Four people sorted twenty-one cards. Three put the refund rule with the money cards and one put it with cancelling, and two of the three hesitated before placing it. Four sentences were drafted for the write-up.',
           question: 'Which sentence can honestly carry this result?',
           options: [
-            { label: 'Three of four participants put the refund rule with the money cards, two of them hesitating first; one put it with cancelling.', correct: true, feedback: 'It is a count of people and it keeps the hesitation in. A reader sees exactly what happened, and exactly how little of it there is.' },
-            { label: '75 per cent of participants group the refund rule with payment.', feedback: 'The same four people, dressed as a rate. A rate invites comparison with other rates, and there is nothing here worth comparing.' },
-            { label: 'Most users expect the refund rule to sit with payment.', feedback: 'Users is a far bigger word than participants, and most is a claim about a population. Four people in one afternoon support neither.' },
-            { label: 'The refund rule belongs with the money cards.', feedback: 'That is your decision, not the evidence. Write the decision separately so a reader can see what it rests on and disagree with it if they wish.' },
+            { label: '“Three of four put the refund rule with the money cards, two after hesitating; one chose cancelling.”', correct: true, feedback: 'It is a count of people and it keeps the hesitation in. A reader sees exactly what happened, and exactly how little of it there is.', was: ['Three of four participants put the refund rule with the money cards, two of them hesitating first; one put it with cancelling.'] },
+            { label: '“75 per cent of participants grouped the refund rule with the money cards, so it belongs there.”', feedback: 'The same four people, dressed as a rate, with a decision attached. A rate invites comparison with other rates, and there is nothing here worth comparing.', was: ['75 per cent of participants group the refund rule with payment.'] },
+            { label: '“Most users expect the refund rule to sit with the payment information rather than with cancelling.”', feedback: 'Users is a far bigger word than participants, and most is a claim about a population. Four people in one afternoon support neither.', was: ['Most users expect the refund rule to sit with payment.'] },
+            { label: '“The refund rule belongs with the money cards, which is where three of the four people put it.”', feedback: 'That mixes your decision with the count, and drops the two hesitations that make the item doubtful. Write the count as a count and the decision separately, so a reader can see what it rests on.', was: ['The refund rule belongs with the money cards.'] },
           ],
           then: 'Read your own write-up for sentences of the second and third kind, and rewrite each as a count of people with the hesitations kept in.',
         },
@@ -798,9 +859,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'You have four sorts and a spreadsheet that can draw a similarity matrix from them. Should you draw it?',
         options: [
-          { label: 'Leave it out, because the picture would look far more certain than four people can support.', correct: true, feedback: 'Those techniques were built for thirty sorters or more. At four they produce the visual authority of statistics and none of the substance.' },
-          { label: 'Draw it, since it summarises the placements faster than a table of counts.', feedback: 'Speed is not the issue here. The diagram implies a distance measure that four placements cannot establish, and readers will believe the picture.' },
-          { label: 'Draw it, but add a note about the small number of participants underneath.', feedback: 'The note sits beside a picture that contradicts it, and the picture wins every time. A table of counts says the same thing without the overclaim.' },
+          { label: 'Leave it out: the picture would look far more certain than four sorts can support.', correct: true, feedback: 'Those techniques were built for sorts with thirty or more people. At four they produce the visual authority of statistics and none of the substance.', was: ['Leave it out, because the picture would look far more certain than four people can support.'] },
+          { label: 'Draw it, since it summarises the placements more quickly than a table of counts does.', feedback: 'Speed is not the issue here. The diagram implies a distance measure that four placements cannot establish, and readers will believe the picture.', was: ['Draw it, since it summarises the placements faster than a table of counts.'] },
+          { label: 'Draw it, with a clear note underneath about the small number of people who sorted.', feedback: 'The note sits beside a picture that contradicts it, and readers tend to believe the picture. A table of counts says the same thing without the overclaim.', was: ['Draw it, but add a note about the small number of participants underneath.'] },
         ],
         repair: 'Rebuild any summary from your item table in step 1 as counts of people, remove any diagram implying a distance, and record the change in step 5.',
         recheck: 'The write-up contains counts of people, with no rates and no distance diagrams.',
@@ -811,6 +872,26 @@ export const guided06: Record<string, Guided> = {
       external: 'The full table can stay in a text file or on paper if it is easier to work with there. Write the file name in the last section; naming a file does not upload it.',
       creator: 'Your creator reads the traced changes and the preferences list side by side. The preferences list is the part that shows the discipline, so do not thin it out before submitting.',
       next: 'Open Your work and choose Ready for review. The next lesson puts the revised structure in front of people as a paper tree and gives them tasks to find things in it.',
+    },
+    material: [
+      'Simulated card-sort results for practice, not real participants or research. Use them only if your lesson 5 sort was a rehearsal. Four simulated sorters, S1 to S4, sorted cards from the made-up pottery studio in lesson 4; keep the S labels attached and never report these as findings about anyone.',
+      'Their own group names. S1: Money, Cancelling, Before the class, Classes. S2: Paying, Changing plans, Getting ready, Classes. S3: Costs, Cancelling, Before the class, Help. S4: Money, Can’t make it, Before the class, Classes.',
+      'Refund rule · S1 Money, picked up twice. S2 Paying, picked up twice. S3 Costs. S4 Can’t make it.',
+      'Cancel a booking · S1 Cancelling. S2 Changing plans. S3 Cancelling. S4 Can’t make it. All four placed it quickly.',
+      'Move a booking to another date · S1 Cancelling. S2 Changing plans. S3 Cancelling, saying “this is not really cancelling”. S4 Can’t make it.',
+      'What to bring · S1, S3 and S4 Before the class; S2 Getting ready. All four placed it quickly.',
+      'Directions and parking · S1 and S4 Before the class; S2 Getting ready; S3 Help, after a pause: “or is this before the class?”.',
+      'Step-free access · S1, S3 and S4 Before the class; S2 Getting ready. Each paused for a long time first, and S2 said “I am not sure who this is for”.',
+      'Five-class pass · S1 Money. S2 Paying. S3 Costs. S4 Classes, saying “it is a kind of class”.',
+    ],
+    transfer: {
+      scenario: 'Made-up case: five people sorted twenty cards for a second-hand bookshop’s website. Four put “Sell us your books” with the contact cards and one put it with prices. Three of the four picked the card up twice before placing it, and one said “is this a service or a page about money?”.',
+      prompt: 'Classify the item as agreement, disagreement or ambiguous, write the one sentence you would put in the write-up, and explain why you worded it that way.',
+      anchors: {
+        weak: 'Calls it agreement because most people placed it together, or writes a rate such as “80 per cent of users expect it under Contact”.',
+        adequate: 'Treats it as a split made with visible doubt, not a clean agreement, and writes a count: “Four of five put it with contact, three after hesitating; one put it with prices”, because five people support counts, not rates.',
+        strong: 'As adequate, and offers an interpretation to test, such as the card mixing a service with a money question, names what would settle it, and keeps any change traced to what these sorters actually did.',
+      },
     },
   },
   'm06-l07-v1': {
@@ -834,14 +915,14 @@ export const guided06: Record<string, Guided> = {
           'One or two people took part, with consent, and the gap is recorded',
           'Nobody was available: I ran it on myself as a rehearsal, labelled as a rehearsal and never counted as a result',
         ] },
-        { id: 'results-table', label: 'For every task and every person: the first choice, the whole path, whether they went back up, and where they said they would stop', kind: 'long', hint: 'Write the first choice before you write the outcome. It is the column you cannot recover afterwards.' },
+        { id: 'results-table', label: 'For every task and every person: the first choice, the whole path, whether they went back up, and where they said they would stop', kind: 'long', sensitive: true, hint: 'Write the first choice before you write the outcome. It is the column you cannot recover afterwards. Use labels such as P1, never names.' },
       ] },
       { id: 'sure', title: 'How sure they were', fields: [
-        { id: 'confidence-notes', label: 'After each task, how sure they were that they had arrived, in their own words', kind: 'long', hint: 'Ask “how sure are you that this is the right place?” and write the answer down as said.' },
-        { id: 'confident-wrong', label: 'Any task where somebody was sure and wrong, or unsure and right', kind: 'short' },
+        { id: 'confidence-notes', label: 'After each task, how sure they were that they had arrived, in their own words', kind: 'long', sensitive: true, hint: 'Ask “how sure are you that this is the right place?” and write the answer down as said, beside the person’s label.' },
+        { id: 'confident-wrong', label: 'Any task where somebody was sure and wrong, or unsure and right', kind: 'short', sensitive: true },
       ] },
       { id: 'record', title: 'Save', fields: [
-        { id: 'sample-line', label: 'How many people took part, how you found them, who is missing, and whether any of this was a rehearsal', kind: 'long', hint: 'This sentence travels with the results everywhere they appear, so write it once and keep it at the top.' },
+        { id: 'sample-line', label: 'How many people took part, how you found them, who is missing, and whether any of this was a rehearsal', kind: 'long', sensitive: true, hint: 'This sentence travels with the results everywhere they appear, so write it once and keep it at the top. Counts and routes only, with no names or contact details.' },
         { id: 'artefact-location', label: 'Where the sheets, the task cards and the table live', kind: 'short', hint: 'File names or “paper, in my folder”. Nothing is uploaded.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
@@ -878,10 +959,10 @@ export const guided06: Record<string, Guided> = {
           material: 'A supplied made-up record of one task with one person. She chose “Get help” first, went back to the top, then chose “Change or cancel”, then reached the target on the second sheet. She arrived.',
           question: 'What is the most important thing to write in your table about this task?',
           options: [
-            { label: 'That her first choice was “Get help”, and that she went back to the top before reaching the target.', correct: true, feedback: 'The first choice is where the structure either works or fails, and a return to the top says a top-level label pointed her the wrong way. Neither is visible in a count of successes.' },
-            { label: 'That she arrived, because the task was completed.', feedback: 'Arriving hides the two moves before it. In a real product a person who backs out of a wrong branch often leaves instead of trying again.' },
-            { label: 'How long she took, so you can compare it with the other tasks.', feedback: 'Time is easy to record and hard to read with three people. The route she took says the same thing more plainly and cannot be mistaken for a score.' },
-            { label: 'That the target sat on the second sheet, so the second level is the problem.', feedback: 'How deep the target sits is a fact about your tree rather than about her. Her return to the top points at the level above, which is the opposite conclusion.' },
+            { label: 'Her first choice, “Get help”, and that she went back to the top before finding it.', correct: true, feedback: 'The first choice is where the structure either works or fails, and a return to the top says a top-level label pointed her the wrong way. Neither is visible in a count of successes.', was: ['That her first choice was “Get help”, and that she went back to the top before reaching the target.'] },
+            { label: 'That she arrived, because a completed task is the result the test exists to count.', feedback: 'Arriving hides the two moves before it. In a real product a person who backs out of a wrong branch often leaves instead of trying again.', was: ['That she arrived, because the task was completed.'] },
+            { label: 'How long she took, so the time can be compared with her other five tasks later.', feedback: 'Time is easy to record and hard to read with three people. The route she took says the same thing more plainly and cannot be mistaken for a score.', was: ['How long she took, so you can compare it with the other tasks.'] },
+            { label: 'That the target sat on the second sheet, which shows the second level is the problem.', feedback: 'How deep the target sits is a fact about your tree rather than about her. Her return to the top points at the level above, which is the opposite conclusion.', was: ['That the target sat on the second sheet, so the second level is the problem.'] },
           ],
           then: 'Give your own table a column for first choice and a column for the whole path, and fill both before you write down whether the person arrived.',
         },
@@ -898,11 +979,11 @@ export const guided06: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'All three people reached the target on every task, so you write that the structure works. What is missing from that sentence?',
+        question: 'All three people reached the target on every task. Your table also shows that two of them backed out of a wrong branch first, and one said she was not sure she had arrived. You write “the structure works”. What does that sentence leave out?',
         options: [
-          { label: 'Two of them backed out of a wrong branch first, and one said afterwards she was not sure she was in the right place.', correct: true, feedback: 'Arriving after two wrong branches is a different result from arriving directly. The path and the confidence are the only things that tell you which one you have.' },
-          { label: 'Nothing is missing, because reaching the target is the outcome that matters.', feedback: 'Reaching it is the outcome in a test. Leaving is the outcome in a real product, and backtracking is the only sign of that you get here.' },
-          { label: 'The success rate should be set beside a published benchmark.', feedback: 'Three people cannot produce a rate worth comparing with anything. Counts and first choices are what this sample can honestly carry.' },
+          { label: 'That two arrived only after a wrong turn and one arrived unsure, which are weaker results.', correct: true, feedback: 'Arriving after a wrong branch is a different result from arriving directly, and arriving unsure is nearer a failure than a success. The path and the confidence are the only things that tell you which one you have.', was: ['Two of them backed out of a wrong branch first, and one said afterwards she was not sure she was in the right place.'] },
+          { label: 'Little that matters: reaching the target is the outcome a tree test exists to record.', feedback: 'Reaching it is the outcome in a test. Leaving is the outcome in a real product, and backtracking and doubt are the only signs of that you get here.', was: ['Nothing is missing, because reaching the target is the outcome that matters.'] },
+          { label: 'A success rate for the three people, set beside a published benchmark for comparison.', feedback: 'Three people cannot produce a rate worth comparing with anything. Counts, first choices and paths are what this sample can honestly carry.', was: ['The success rate should be set beside a published benchmark.'] },
         ],
         repair: 'Go back to the results table in step 3 and fill the first-choice and path columns for every task and person, then record in step 5 what that changed.',
         recheck: 'Every task has a first choice and a full path beside its outcome.',
@@ -910,9 +991,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'One of your tasks reads “find the cancellation policy”, and the word Cancel appears on your top sheet. What have you tested?',
         options: [
-          { label: 'Whether the person can match a word, rather than whether they can work out where the thing lives.', correct: true, feedback: 'Matching letters is a different ability from finding. The task has to describe the situation and let the person choose the word.' },
-          { label: 'Nothing is wrong, because they still have to pick the right branch.', feedback: 'They do pick, and they pick by matching. The test can no longer tell you whether the grouping made any sense to them.' },
-          { label: 'It only makes the task easier, which is fine for a warm-up.', feedback: 'A warm-up is worth having and should still avoid handing over the label, or you will not know whether the person read the tree or read it back.' },
+          { label: 'Whether the person can match a word, not whether they can work out where the thing lives.', correct: true, feedback: 'Matching letters is a different ability from finding. The task has to describe the situation and let the person choose the word.', was: ['Whether the person can match a word, rather than whether they can work out where the thing lives.'] },
+          { label: 'Whether the grouping makes sense, since they still have to choose the right branch.', feedback: 'They do choose, and they choose by matching. The test can no longer tell you whether the grouping made any sense to them.', was: ['Nothing is wrong, because they still have to pick the right branch.'] },
+          { label: 'An easier version of the same question, which is acceptable for a warm-up task.', feedback: 'A warm-up is worth having and should still avoid handing over the label, or you will not know whether the person read the tree or read it back.', was: ['It only makes the task easier, which is fine for a warm-up.'] },
         ],
         repair: 'Underline every word in your six tasks in step 2 that also appears on a sheet, rewrite those tasks as situations, and record the rewrites in step 5.',
         recheck: 'No task contains a word that appears on any sheet of the tree.',
@@ -920,9 +1001,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'Nobody agreed to take part, so you ran all six tasks on yourself. How should that appear in the record?',
         options: [
-          { label: 'As a rehearsal, labelled permanently, with the dated recruitment gap beside it.', correct: true, feedback: 'You already know the tree, so the run tells you the tasks are clear and nothing at all about the structure. Labelling it keeps it useful and keeps it honest.' },
-          { label: 'As results from one participant, since you did the tasks properly.', feedback: 'You cannot be a participant in your own tree. Presenting it as a result is the moment a portfolio stops being true.' },
-          { label: 'Leave it out and present only the paper tree.', feedback: 'The rehearsal is worth keeping, because it shows the tasks were run and the recruiting failed. The gap is a finding of its own.' },
+          { label: 'As a rehearsal, labelled as such everywhere, with the dated recruitment gap beside it.', correct: true, feedback: 'You already know the tree, so the run tells you the tasks are clear and nothing at all about the structure. Labelling it keeps it useful and keeps it honest.', was: ['As a rehearsal, labelled permanently, with the dated recruitment gap beside it.'] },
+          { label: 'As results from one participant, since you ran all six tasks properly and in order.', feedback: 'You cannot be a participant in your own tree. Presenting it as a result is the moment a portfolio stops being true.', was: ['As results from one participant, since you did the tasks properly.'] },
+          { label: 'Left out entirely, with only the paper tree and the six tasks presented as the work.', feedback: 'The rehearsal is worth keeping, because it shows the tasks were run and the recruiting failed. The gap is a finding of its own.', was: ['Leave it out and present only the paper tree.'] },
         ],
         repair: 'Set your entry in step 3 to the rehearsal option, write the dated recruitment gap into the sample line in step 5, and record the change there as well.',
         recheck: 'The record says how many people took part, and any rehearsal is labelled a rehearsal everywhere the results appear.',
@@ -934,11 +1015,21 @@ export const guided06: Record<string, Guided> = {
       creator: 'Your creator reads the six tasks and the first-choice column. Those two together show whether the test could have told you anything.',
       next: 'Open Your work and choose Ready for review. The next lesson reads these results and changes exactly one thing.',
     },
+    transfer: {
+      scenario: 'Made-up case: you are preparing a paper tree test for a cinema chain’s website. The top sheet reads: Films, Tickets and refunds, Food and drink, Membership, Help. One draft task says “Find the refund policy.” Another says “Find what is on this weekend.”',
+      prompt: 'Rewrite the refund task so it tests finding rather than word-matching, give the answer you would accept, and explain why you fix that answer before anyone takes part.',
+      anchors: {
+        weak: 'Keeps the label in the task or barely rewords it, such as “Look for refunds”, and decides what counts as success after seeing the results.',
+        adequate: 'Writes a situation such as “You bought tickets for Saturday and now cannot go; where would you look?”, avoids the word refund, and fixes the accepted answer (Tickets and refunds, perhaps Help) in advance so results cannot be bent.',
+        strong: 'As adequate, and plans to record first choice, backtracking and confidence, and notes that results from tasks you chose show how the structure handles them, not how often real visitors want refunds.',
+      },
+    },
   },
   'm06-l08-v1': {
     route: textRoute,
     worksheet: [
       { id: 'measures', title: 'What you can honestly report', fields: [
+        { id: 'results-source', label: 'Whose tree-test results you are reading', kind: 'choice', options: ['My own tree test with consenting people', 'The supplied practice results, because my own test was a rehearsal'], hint: 'Answer this first. On the supplied route every diagnosis below is practice on simulated data, and the re-test is recorded as untested.' },
         { id: 'reportable-measures', label: 'The measures the article discusses, and which of them your own numbers can carry', kind: 'long', hint: 'Write the ones you can report as counts of people, and the ones you would have to invent a rate for.', example: 'Example (made up): first choice, yes, three of three. Path, yes. Directness, yes. Success rate as a percentage, no, because three people cannot make one.' },
       ] },
       { id: 'split', title: 'Split the failures by first click', intro: 'Before any diagnosis, sort the failed tasks by what happened on the top sheet.', fields: [
@@ -946,10 +1037,10 @@ export const guided06: Record<string, Guided> = {
         { id: 'split-implication', label: 'What each of those two groups tells you about where the fault cannot be', kind: 'long', hint: 'Finish the sentence “because they chose correctly at the top, the fault is not …”.' },
       ] },
       { id: 'diagnose', title: 'A cause for each failure', intro: 'One failure at a time. Name the cause, then write the path or the quotation that supports it.', fields: [
-        { id: 'failure-1', label: 'Failure 1 · the task, the cause you name, and the evidence for it', kind: 'long', hint: 'The cause is one of three: a wrong label, a wrong grouping, or a missing item.', example: 'Example (made up): the move-my-booking task. Cause: wrong label. All three reached Change or cancel and stopped at Booking admin, and one said “that sounds like something for staff”.' },
-        { id: 'failure-2', label: 'Failure 2 · the task, the cause you name, and the evidence for it', kind: 'long' },
-        { id: 'failure-3', label: 'Failure 3 · the task, the cause you name, and the evidence for it', kind: 'long' },
-        { id: 'failure-4', label: 'Failure 4 · the task, the cause you name, and the evidence for it', kind: 'long' },
+        { id: 'failure-1', label: 'Failure 1 · the task, the cause you name, and the evidence for it', kind: 'long', sensitive: true, hint: 'The cause is one of three: a wrong label, a wrong grouping, or a missing item. Quote people by label, such as P2, never by name.', example: 'Example (made up): the move-my-booking task. Cause: wrong label. All three reached Change or cancel and stopped at Booking admin, and one said “that sounds like something for staff”.' },
+        { id: 'failure-2', label: 'Failure 2 · the task, the cause you name, and the evidence for it', kind: 'long', sensitive: true },
+        { id: 'failure-3', label: 'Failure 3 · the task, the cause you name, and the evidence for it', kind: 'long', sensitive: true },
+        { id: 'failure-4', label: 'Failure 4 · the task, the cause you name, and the evidence for it', kind: 'long', sensitive: true },
       ] },
       { id: 'change', title: 'One change, re-tested', fields: [
         { id: 'one-change', label: 'The single change you made, and the diagnosis it is aimed at', kind: 'long', hint: 'One sheet, one label, one move. If you cannot describe it in a sentence it is more than one change.' },
@@ -958,7 +1049,7 @@ export const guided06: Record<string, Guided> = {
           'One person only, with consent, and the gap recorded',
           'Nobody was available: the change is recorded as untested and never described as an improvement',
         ] },
-        { id: 'retest-results', label: 'First choices, paths and confidence from the re-test, for the affected tasks only', kind: 'long' },
+        { id: 'retest-results', label: 'First choices, paths and confidence from the re-test, for the affected tasks only', kind: 'long', sensitive: true, requiredWhen: { field: 'retest-route', values: ['Two or more people who had not seen the structure, with consent', 'One person only, with consent, and the gap recorded'] }, hint: 'Use labels such as P4, never names. Leave this empty if the change is recorded as untested.' },
       ] },
       { id: 'report', title: 'Report and save', fields: [
         { id: 'outcome', label: 'What the change did, including if it did not help or made things worse', kind: 'long', hint: 'Write the counts into the sentence. Two of two, or one of two, says more than better or worse.' },
@@ -967,13 +1058,13 @@ export const guided06: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'Which measures your own results can honestly carry at this number of people, written before you interpret anything.',
-        fields: ['reportable-measures'],
+      { expect: 'Whose results you are reading, and which measures they can honestly carry at this number of people, written before you interpret anything.',
+        fields: ['results-source', 'reportable-measures'],
         terms: [
           { term: 'First click', meaning: 'The first branch a person chose on the top sheet, before any recovery.' },
           { term: 'Success rate', meaning: 'The share of tasks people completed. It is useful with many participants and misleading with three, so report counts of people instead.' },
         ],
-        start: 'List the four measures the article names, then put a yes or a no beside each for your own data.',
+        start: 'Choose the source first: if your own tree test was a rehearsal, read the supplied practice results in this lesson’s source notes instead. Then list the four measures the article names and put a yes or a no beside each for that data.',
         enough: 'Anything you marked yes can be written as a count of people rather than a rate.' },
       { terms: [{ term: 'Top level', meaning: 'The first sheet, holding the small set of names a person chooses between before anything else is visible to them.' }, { term: 'Scatter', meaning: 'First choices spread across several branches instead of gathering on one. It says the top-level names are not telling people what sits inside them.' }, { term: 'Failed task', meaning: 'A task where the person never reached any of the answers you decided to accept before the session started.' }], expect: 'Your failed tasks sorted into the ones where the top level was chosen correctly and the ones where the first choices scattered.',
         fields: ['first-click-split', 'split-implication'],
@@ -1009,7 +1100,7 @@ export const guided06: Record<string, Guided> = {
               feedback: {
                 'wrong label': 'Renaming cannot help when there is nothing behind the name. The search failed because the answer has never been written.',
                 'wrong grouping': 'Moving an item needs an item to move. This one does not exist yet.',
-                'missing item': 'The commonest result and the most ignored one. It is a content gap, and no structural change will clear it.',
+                'missing item': 'A common result and an easily ignored one. It is a content gap, and no structural change will clear it.',
               } },
             { id: 'what-to-bring', text: 'All three looked for “What to bring” under “Choose a class” first. It lives under “Get ready”, and two of them never found it.', answer: 'wrong grouping',
               feedback: {
@@ -1054,9 +1145,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'Four of six tasks failed. Your first instinct is to redraw the whole structure. What does that cost you?',
         options: [
-          { label: 'You discard the parts that worked and bring back risks you had already tested away.', correct: true, feedback: 'Failures usually concentrate in two or three labels. A wholesale redesign is a decision to argue for, not the default response to a table that looks bad.' },
-          { label: 'Very little, because the structure clearly failed.', feedback: 'The table shows failures, not where they sit. Until you split by first choice you do not know whether the top level was involved at all.' },
-          { label: 'Time, which is the only real drawback.', feedback: 'Time is the smallest cost. The larger one is losing the evidence you already have about which parts people read correctly.' },
+          { label: 'You throw away the parts that worked and bring back risks you had tested away.', correct: true, feedback: 'Failures usually concentrate in two or three labels. A wholesale redesign is a decision to argue for, not the default response to a table that looks bad.', was: ['You discard the parts that worked and bring back risks you had already tested away.'] },
+          { label: 'Very little, since four failed tasks out of six show the whole structure has failed.', feedback: 'The table shows failures, not where they sit. Until you split by first choice you do not know whether the top level was involved at all.', was: ['Very little, because the structure clearly failed.'] },
+          { label: 'Mainly time: a fresh structure takes a week to draw, which is the only real drawback.', feedback: 'Time is the smallest cost. The larger one is losing the evidence you already have about which parts people read correctly.', was: ['Time, which is the only real drawback.'] },
         ],
         repair: 'Fill the first-click split in step 2 before you change anything, then record in step 5 what the split changed about your plan.',
         recheck: 'The split names which failures had a correct first choice and which scattered.',
@@ -1064,19 +1155,19 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'You rename two labels and move an item, then re-test, and things improve. What have you learned?',
         options: [
-          { label: 'That the three changes together helped, and nothing about which one did it.', correct: true, feedback: 'Had it gone the other way you would not know which change to undo. One change at a time is slower and is the only version that teaches you anything about your own judgement.' },
-          { label: 'That all three changes were improvements.', feedback: 'They may all be. One of them may also be making things worse while the other two carry it, and this result cannot separate them.' },
-          { label: 'That the structure is now settled.', feedback: 'Two people and one round settles nothing. It is a sign that one of your changes pointed the right way.' },
+          { label: 'That the three changes together helped, but not which of them did the work.', correct: true, feedback: 'Had it gone the other way you would not know which change to undo. One change at a time is slower, and it is the version that teaches you something about your own judgement.', was: ['That the three changes together helped, and nothing about which one did it.'] },
+          { label: 'That each of the three changes was an improvement, since the overall result rose.', feedback: 'They may all be. One of them may also be making things worse while the other two carry it, and this result cannot separate them.', was: ['That all three changes were improvements.'] },
+          { label: 'That the structure is now settled and can go forward to the next stage of design.', feedback: 'Two people and one round settles nothing. It is a sign that one of your changes pointed the right way.', was: ['That the structure is now settled.'] },
         ],
         repair: 'Reduce your entry in step 4 to exactly one change, put the others back, and record in step 5 which changes you set aside for the next round.',
         recheck: 'The before and after structures differ in one respect only.',
       },
       {
-        question: 'Your one change did not help: the same two people failed the same task in the same place. What goes in the report?',
+        question: 'Your one change did not help: both new re-test participants failed the same task at the same label as before. What goes in the report?',
         options: [
-          { label: 'What you changed, what happened, and that the diagnosis behind it was wrong.', correct: true, feedback: 'A change that did not work and was written down is worth more than one that worked and was never understood. It also stops you making the same change again in three weeks.' },
-          { label: 'Leave it out and try a different change before writing anything.', feedback: 'The second change would then trace back to no result at all. The record of the failed attempt is what makes the next diagnosis better.' },
-          { label: 'That the test was too small to show a difference.', feedback: 'The sample is small and that is not what happened here. Two people failed the same task in the same place, which is a result about your change.' },
+          { label: 'What you changed, what happened, and that the diagnosis behind it looks wrong.', correct: true, feedback: 'A change that did not work and was written down is worth more than one that worked and was never understood. It also stops you making the same change again in three weeks.', was: ['What you changed, what happened, and that the diagnosis behind it was wrong.'] },
+          { label: 'Nothing yet: try a different change first, then report whichever one finally works.', feedback: 'The second change would then trace back to no result at all. The record of the failed attempt is what makes the next diagnosis better.', was: ['Leave it out and try a different change before writing anything.'] },
+          { label: 'That two people are too few to show a difference, so the result is inconclusive.', feedback: 'The sample is small, and that is not what happened here. Both failed the same task at the same label as before, which is a result about your change.', was: ['That the test was too small to show a difference.'] },
         ],
         repair: 'Look at the change you recorded in step 4, then write the outcome plainly in step 5 including the failure, and put that failure back on the remaining-failures list in the same step.',
         recheck: 'The outcome says what happened, and every unfixed failure still carries its diagnosis.',
@@ -1088,6 +1179,25 @@ export const guided06: Record<string, Guided> = {
       creator: 'Your creator reads the diagnosis for each failure and the outcome sentence. An outcome that says the change did not help is a stronger entry than one that says it did.',
       next: 'Open Your work and choose Ready for review. The next lesson matches the failures you still cannot explain to the test that would explain them.',
     },
+    material: [
+      'Simulated tree-test results for practice, not real participants or research. Use them only if your own tree test was a rehearsal; keep the S labels and never report these as findings. Three simulated people, S1 to S3, tried six tasks on Map A, the made-up pottery studio map from lesson 4.',
+      'Task 1, move Saturday’s booking to another date · All three chose Change or cancel first. S1 and S2 stopped at Booking admin and gave up; S2 said “that sounds like something for staff”. S3 opened Booking admin, went back up, returned and found it, saying she was not sure.',
+      'Task 2, what to bring, the evening before · S1 and S3 chose Get ready for a class, then Practical information, and found it. S2 chose Choose a class first, went back to the top, then found it.',
+      'Task 3, whether the money comes back if the studio cancels · First choices scattered: S1 Change or cancel, S2 Get help, S3 Choose a class. Nobody found an answer; nothing in the map covers a class the studio cancels.',
+      'Task 4, step-free access · S1 and S2 chose Get help first and gave up. S3 found it under Practical information after two wrong branches.',
+      'Task 5, the price of a five-class pass · All three went straight to it and said they were sure.',
+      'Task 6, directions and parking · All three found it under Practical information; S1 said “I guessed”.',
+      'These six tasks were chosen for practice. The results show how Map A handles these situations, not how often anyone needs any of them.',
+    ],
+    transfer: {
+      scenario: 'Made-up case: a paper tree test of a coworking space’s website ran six tasks with three people. For the task “You want to bring a guest tomorrow”, all three chose Membership first; two then stopped at “Account extras” and one went back up and tried Rules. For another task, first choices scattered across four top-level branches.',
+      prompt: 'Diagnose the guest task as a wrong label, a wrong grouping or a missing item, choose the one change you would make first, and explain why that change rather than a redesign.',
+      anchors: {
+        weak: 'Redesigns the whole structure or renames the top level because two tasks failed, or makes several changes at once.',
+        adequate: 'Notes that level one worked, since all three chose Membership, so the fault is below it: “Account extras” names a container, not guests. Renames that one label in visitors’ words and re-tests with new people.',
+        strong: 'As adequate, and predicts what the re-test should show, keeps the scattered task for its own diagnosis, and notes that three people on tasks you wrote say nothing about how often guests are actually brought.',
+      },
+    },
   },
   'm06-l09-v1': {
     route: textRoute,
@@ -1097,8 +1207,8 @@ export const guided06: Record<string, Guided> = {
         { id: 'cheapest-check', label: 'The cheaper move before any test: which of your failures might just be a missing or badly written answer', kind: 'short' },
       ] },
       { id: 'symptoms', title: 'The failures you could not explain', fields: [
-        { id: 'unexplained-failures', label: 'Every finding from your sort, your tree test and your m05 research that you could not diagnose', kind: 'long' },
-        { id: 'symptom-sources', label: 'Where each symptom came from, and which came from a rehearsal rather than from a person', kind: 'short', hint: 'A symptom you noticed while walking the product yourself is a suspicion. Mark it, and it stays useful.' },
+        { id: 'unexplained-failures', label: 'Every finding from your sort, your tree test and your m05 research that you could not diagnose', kind: 'long', sensitive: true, hint: 'Describe what happened, with people referred to by label, never by name.' },
+        { id: 'symptom-sources', label: 'Where each symptom came from, and which came from a rehearsal rather than from a person', kind: 'short', hint: 'A symptom you noticed while walking the product yourself is a suspicion. Mark it, and it stays useful. Symptoms from the supplied practice results are practice, and say so.' },
       ] },
       { id: 'match', title: 'Symptom, cause, test', intro: 'One symptom at a time. The test follows the cause you suspect, so name the cause before you name the test.', fields: [
         { id: 'symptom-1', label: 'Symptom 1 · what happens, the cause you suspect, the test, roughly how many people, and what it costs you', kind: 'long', hint: 'If you can think of two possible causes, write both, then say which one you would test first and why.', example: 'Example (made up): people reach the right branch and hesitate between two labels. Suspected cause: the names. Test: a closed card sort with only those two categories, three people, about ten minutes each.' },
@@ -1159,10 +1269,10 @@ export const guided06: Record<string, Guided> = {
           material: 'A supplied made-up symptom. A fee waiver exists, sits in the menu under a plain name, and in five sessions nobody visited it. When told it existed, every one of them found it in a single move.',
           question: 'Which test would identify the cause here?',
           options: [
-            { label: 'None of the four, because they all begin by telling the person what to look for, and this is a person who never knew to look.', correct: true, feedback: 'Every findability test names the target before it starts. The failure is that nobody wanted the thing yet, so the fix sits in how it is raised during booking rather than in the structure.' },
-            { label: 'A tree test, because it takes the layout away and shows whether the branches work.', feedback: 'It would come back clean, because it hands the person the goal. Everyone found it in one move once told, which is that result already.' },
-            { label: 'A click test, because people may not be seeing the menu.', feedback: 'Worth asking when people ignore the menu on tasks they are actually trying to do. Here they were not trying, so the component was never the obstacle.' },
-            { label: 'A closed card sort, because the name may not be understood.', feedback: 'A sort would check whether the name reads correctly, and the name worked the moment anyone was pointed at it. The gap sits earlier than the name.' },
+            { label: 'None of the four: each tells people what to find, and these people never knew to look.', correct: true, feedback: 'Every findability test names the target before it starts. The failure is that nobody wanted the thing yet, so the fix sits in how it is raised during booking rather than in the structure.', was: ['None of the four, because they all begin by telling the person what to look for, and this is a person who never knew to look.'] },
+            { label: 'A tree test, because it removes the layout and shows whether the branches lead there.', feedback: 'It would come back clean, because it hands the person the goal. Everyone found it in one move once told, which is that result already.', was: ['A tree test, because it takes the layout away and shows whether the branches work.'] },
+            { label: 'A click test, because people may be failing to notice the menu item on the real screen.', feedback: 'Worth asking when people ignore the menu on tasks they are actually trying to do. Here they were not trying, so the component was never the obstacle.', was: ['A click test, because people may not be seeing the menu.'] },
+            { label: 'A closed card sort, because the plain name may still not be understood by everyone.', feedback: 'A sort would check whether the name reads correctly, and the name worked the moment anyone was pointed at it. The gap sits earlier than the name.', was: ['A closed card sort, because the name may not be understood.'] },
           ],
           then: 'Mark each of your own symptoms as looking and not finding, or never knowing, and write the reason for every one you mark as never knowing.',
         },
@@ -1177,9 +1287,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'People take the right branch from the top and then cannot tell which of two labels holds their answer. Which is the cheaper test?',
         options: [
-          { label: 'A closed card sort with just those two categories, because the question is whether the names are understood.', correct: true, feedback: 'The branch is already working, so the shape of the structure is not what you are asking about. A sort with two categories takes about ten minutes a person.' },
-          { label: 'Another tree test, because the failure happened inside the tree.', feedback: 'It happened inside the tree and it is not a question about the shape of the tree. You would run the same test again and get the same two labels back.' },
-          { label: 'A usability test, because you need to see the whole task.', feedback: 'It would show you the struggle again with every other variable attached. You already know where the struggle sits.' },
+          { label: 'A closed card sort with just those two categories, to see if the names are understood.', correct: true, feedback: 'The branch is already working, so the shape of the structure is not what you are asking about. A sort with two categories takes about ten minutes a person.', was: ['A closed card sort with just those two categories, because the question is whether the names are understood.'] },
+          { label: 'Another tree test, because the failure happened inside the tree and should be re-run.', feedback: 'It happened inside the tree and it is not a question about the shape of the tree. You would run the same test again and get the same two labels back.', was: ['Another tree test, because the failure happened inside the tree.'] },
+          { label: 'A usability test on the real screens, because you need to watch the whole task again.', feedback: 'It would show you the struggle again with every other variable attached. You already know where the struggle sits.', was: ['A usability test, because you need to see the whole task.'] },
         ],
         repair: 'Check your rows in step 3: any symptom about a name that you matched to a tree test should be re-matched to a closed sort, and the change recorded in step 5.',
         recheck: 'Each symptom names the cause you suspect, and the test beside it follows that cause.',
@@ -1187,9 +1297,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'People go straight to search on every task and never open the menu. What would a tree test tell you?',
         options: [
-          { label: 'Nothing about this, because a tree test removes the layout and the menu is exactly what is being ignored.', correct: true, feedback: 'The structure is not being consulted at all. A click test on a drawn or printed screen shows whether the component is seen and understood.' },
-          { label: 'That the structure is sound, since they would use it during the test.', feedback: 'They would use it because the test gives them nothing else to use. That says nothing about the screen they actually meet.' },
-          { label: 'That search should be improved instead.', feedback: 'That may be true and it is a different decision. First find out whether the menu is unseen, unreadable, or simply slower than typing.' },
+          { label: 'Little about this: a tree test removes the very layout whose menu is being ignored.', correct: true, feedback: 'The structure is not being consulted at all. A click test on a drawn or printed screen shows whether the component is seen and understood.', was: ['Nothing about this, because a tree test removes the layout and the menu is exactly what is being ignored.'] },
+          { label: 'Whether the structure is sound, since people would have to use it during the test.', feedback: 'They would use it because the test gives them nothing else to use. That says nothing about the screen they actually meet.', was: ['That the structure is sound, since they would use it during the test.'] },
+          { label: 'Whether search should be improved instead, by comparing it against the menu route.', feedback: 'A tree test has no search box, so it cannot compare the two routes. First find out whether the menu is unseen, unreadable, or simply slower than typing.', was: ['That search should be improved instead.'] },
         ],
         repair: 'Look at your symptom list in step 2 for anything about people walking past the menu, match it to a click test in step 3, and record the change in step 5.',
         recheck: 'Any symptom about a component being ignored is matched to a test that shows the layout.',
@@ -1197,9 +1307,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'All your symptoms came from a walkthrough you did on your own, because nobody was available. How should the plan read?',
         options: [
-          { label: 'Each symptom marked as coming from your own rehearsal, with the plan saying what would confirm it.', correct: true, feedback: 'A walkthrough of your own produces suspicions and no findings. A plan built from suspicions is still a good plan as long as it says that is what they are.' },
-          { label: 'As symptoms observed in research, since you did observe them.', feedback: 'You observed yourself using something you already understand. Presenting that as research is the failure this whole module keeps naming.' },
-          { label: 'Wait and write the plan once you have participants.', feedback: 'The plan is the deliverable and it is worth writing today. What it needs is a source beside every symptom, not a delay.' },
+          { label: 'Each symptom marked as your own suspicion, with the plan saying what would confirm it.', correct: true, feedback: 'A walkthrough of your own produces suspicions and no findings. A plan built from suspicions is still a good plan as long as it says that is what they are.', was: ['Each symptom marked as coming from your own rehearsal, with the plan saying what would confirm it.'] },
+          { label: 'As symptoms observed in research, since you did observe each of them happening.', feedback: 'You observed yourself using something you already understand. Presenting that as research is the failure this whole module keeps naming.', was: ['As symptoms observed in research, since you did observe them.'] },
+          { label: 'Unwritten for now: wait and write the plan once you have real participants to observe.', feedback: 'The plan is the deliverable and it is worth writing today. What it needs is a source beside every symptom, not a delay.', was: ['Wait and write the plan once you have participants.'] },
         ],
         repair: 'Fill the source line in step 2 for every symptom, marking the rehearsal ones plainly, and record what you changed in step 5.',
         recheck: 'Every symptom names where it came from, and no rehearsal observation is described as a research finding.',
@@ -1210,6 +1320,15 @@ export const guided06: Record<string, Guided> = {
       external: 'Nothing here needs a file. Keep your tree-test results and your sort analysis to hand, since every symptom should trace back to one of them.',
       creator: 'Your creator reads the symptom table and the next-test sentence. Being able to say why not the other three tests is the part that is hard to fake.',
       next: 'Open Your work and choose Ready for review. The next lesson takes one page inside this structure and makes its shape perceivable.',
+    },
+    transfer: {
+      scenario: 'Made-up case: a food co-op’s website has two complaints. Members say they “can never find anything”, and when watched they type into search on every task without opening the menu. Separately, almost nobody uses the bulk-order discount, although it sits in the menu under a plain name and anyone told about it finds it in one move.',
+      prompt: 'Choose the test you would run first for one of the two symptoms, say what result would make you switch to a different test, and explain why you chose it.',
+      anchors: {
+        weak: 'Picks a tree test or a full usability test for both symptoms, or treats the discount as a problem with the menu label.',
+        adequate: 'For the search symptom, picks a click test on the real layout to learn whether the menu is seen at all; or calls the discount a discoverability problem that no findability test can reach, with the reason.',
+        strong: 'As adequate, and names the result that would redirect the plan, such as people seeing the menu but finding typing quicker, and suggests the cheaper content check before any test.',
+      },
     },
   },
   'm06-l10-v1': {
@@ -1231,7 +1350,7 @@ export const guided06: Record<string, Guided> = {
         { id: 'misplaced', label: 'Anything sitting in the wrong region or under the wrong kind', kind: 'short' },
       ] },
       { id: 'aloud', title: 'Read it aloud, then run the checks', fields: [
-        { id: 'read-aloud', label: 'What your headings alone said when you read them out, and what you rewrote afterwards', kind: 'long', hint: 'Read only the headings, in order, with the page covered. Write what a listener would think the page was about.' },
+        { id: 'read-aloud', label: 'What your headings alone said when you read them out, and what you rewrote afterwards', kind: 'long', sensitive: true, hint: 'Read only the headings, in order, with the page covered. Write what a listener thought the page was about, referring to them by role, such as “a friend”, never by name.' },
         { id: 'checks-run', label: 'The preliminary checks you ran, and what each one showed', kind: 'long', hint: 'The page title in the browser tab, the heading order, and reaching everything with the Tab key. Write what each one showed, not a verdict.' },
       ] },
       { id: 'limits', title: 'What you could not verify', fields: [
@@ -1247,7 +1366,7 @@ export const guided06: Record<string, Guided> = {
           { term: 'Heading outline', meaning: 'The page title and its section headings, in order, read on their own. Some people use it as their whole way of moving around a page.' },
           { term: 'Region', meaning: 'A named large area of a page: the banner, the navigation, the main content, a side area, the footer. Naming them lets someone jump straight to the content.' },
         ],
-        start: 'Pick the page your tree test showed people actually reaching. A page nobody visits teaches you less.',
+        start: 'Pick a page your tree-test tasks led to, so it sits inside the structure you tested. Reaching it in a test shows your tasks can get there; it says nothing about how often real visitors arrive.',
         enough: 'Your rule says what a level means, not only that levels should be in order.' },
       { terms: [{ term: 'Page title', meaning: 'The single heading at the top saying what this page is. Everything else on the page sits inside it.' }, { term: 'Level', meaning: 'How deep a heading sits in the outline. A level is a claim that this section is inside the one above it, never a choice about size.' }, { term: 'Skipping a level', meaning: 'Jumping straight to a deeper level with nothing in between. It tells anybody reading the outline that a section is missing.' }], expect: 'One page title, then every section heading in order, each one inside the heading above it.',
         fields: ['page-title', 'outline-list', 'outline-source'],
@@ -1282,10 +1401,10 @@ export const guided06: Record<string, Guided> = {
           material: 'A supplied heading outline from another made-up class page, read aloud with nothing else visible: “Evening wheel throwing”, “Overview”, “What to bring”, “Good to know”, “Book a place”.',
           question: 'Hearing only that, which judgement is the honest one?',
           options: [
-            { label: 'Two of them, “Overview” and “Good to know”, could sit on any page in the site, so the outline is not yet a summary of this one.', correct: true, feedback: 'A heading earns its place by being unmovable. Those two would fit a booking page, a help page or an about page and nobody would notice.' },
-            { label: 'The outline is sound, because five headings in order is a sensible shape for a page.', feedback: 'Shape and order are only half of it. An outline can be perfectly nested and still tell a listener nothing about what is on the page.' },
-            { label: 'It fails because “What to bring” is too long to be a heading.', feedback: 'Length is the cheapest thing a heading has to spend. That is the one heading here a listener could act on.' },
-            { label: 'You cannot judge it without seeing the page design.', feedback: 'Hiding the design is the test. If the outline only makes sense beside the layout, then people who never see the layout have no structure at all.' },
+            { label: '“Overview” and “Good to know” could sit on any page, so the outline does not yet summarise this one.', correct: true, feedback: 'A heading earns its place by being unmovable. Those two would fit a booking page, a help page or an about page and nobody would notice.', was: ['Two of them, “Overview” and “Good to know”, could sit on any page in the site, so the outline is not yet a summary of this one.'] },
+            { label: 'The outline is sound, because five headings in a sensible order give the page a clear shape.', feedback: 'Shape and order are only half of it. An outline can be perfectly nested and still tell a listener nothing about what is on the page.', was: ['The outline is sound, because five headings in order is a sensible shape for a page.'] },
+            { label: '“What to bring” is the weak one, because a heading of three words is too long to scan quickly.', feedback: 'Length is the cheapest thing a heading has to spend. That is the one heading here a listener could act on.', was: ['It fails because “What to bring” is too long to be a heading.'] },
+            { label: 'No honest judgement is possible until you can see how the page design presents each heading.', feedback: 'Hiding the design is the test. If the outline only makes sense beside the layout, then people who never see the layout have no structure at all.', was: ['You cannot judge it without seeing the page design.'] },
           ],
           then: 'Read your own headings aloud with the page covered, and mark every one that could move to another page unnoticed.',
         },
@@ -1300,9 +1419,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'You want a heading to look smaller, so you give it a lower level with nothing in between. What does that do?',
         options: [
-          { label: 'It puts a gap in the outline, so anyone reading the headings alone hears a section that seems to be missing.', correct: true, feedback: 'The level is a claim about what sits inside what. Used for size, it makes a claim you did not mean and cannot see on your own screen.' },
-          { label: 'Nothing, as long as the wording of the heading is good.', feedback: 'Good wording and a broken order are separate problems. The order is what somebody jumping from heading to heading is actually moving through.' },
-          { label: 'It is fine if you note the intended level beside it.', feedback: 'A note beside it helps you and reaches nobody else. The outline is what the page hands to a reader.' },
+          { label: 'It leaves a gap in the outline, so someone moving by headings meets a missing section.', correct: true, feedback: 'The level is a claim about what sits inside what. Used for size, it makes a claim you did not mean and cannot see on your own screen.', was: ['It puts a gap in the outline, so anyone reading the headings alone hears a section that seems to be missing.'] },
+          { label: 'Very little, provided the wording of the heading itself is clear and descriptive.', feedback: 'Good wording and a broken order are separate problems. The order is what somebody jumping from heading to heading is actually moving through.', was: ['Nothing, as long as the wording of the heading is good.'] },
+          { label: 'It is acceptable, as long as you note the level you really intended beside it.', feedback: 'A note beside it helps you and reaches nobody else. The outline is what the page hands to a reader.', was: ['It is fine if you note the intended level beside it.'] },
         ],
         repair: 'Go back to your outline in step 2 and renumber it so every heading sits inside the one above. Record the change in the last box.',
         recheck: 'No level is skipped, and each heading is a real subsection of the heading above it.',
@@ -1310,9 +1429,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'You read your headings aloud and they made sense to you. Is that enough?',
         options: [
-          { label: 'Not on its own, because you know the page. Read them to somebody who has not seen it and ask what the page is about.', correct: true, feedback: 'You fill in the missing meaning from memory without noticing. A listener who cannot do that hears what the outline really says.' },
-          { label: 'It is enough, since you took the headings from your labelling table.', feedback: 'The table gives you the words people use. It cannot tell you whether five of those words in a row describe this particular page.' },
-          { label: 'It is enough if the headings match the visual design.', feedback: 'Matching the design is the thing the test removes. The design has been rescuing the wording, which is why the wording never got fixed.' },
+          { label: 'You know the page, so read them to someone who has not seen it and ask what it covers.', correct: true, feedback: 'Your own reading is not enough on its own. You fill in the missing meaning from memory without noticing, and a listener who cannot do that hears what the outline really says.', was: ['Not on its own, because you know the page. Read them to somebody who has not seen it and ask what the page is about.'] },
+          { label: 'Your own reading is enough, since every heading came from your evidenced labelling table.', feedback: 'The table gives you the words people use. It cannot tell you whether five of those words in a row describe this particular page.', was: ['It is enough, since you took the headings from your labelling table.'] },
+          { label: 'Your reading is enough once you confirm the headings also match the visual design.', feedback: 'Matching the design is the thing the test removes. The design has been rescuing the wording, which is why the wording never got fixed.', was: ['It is enough if the headings match the visual design.'] },
         ],
         repair: 'Read your outline from step 2 to one other person and write what they said the page was about in the read-aloud box in step 4. Record any rewrite in the last box.',
         recheck: 'The read-aloud box names a listener and what they inferred, not only your own judgement.',
@@ -1320,9 +1439,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'The preliminary checks all came out clean. What can you claim?',
         options: [
-          { label: 'That those particular checks found nothing, and no more than that. They are preliminary, and no disabled participant has used the page.', correct: true, feedback: 'The checks find a few common faults quickly. The honest record names which ones you ran and stops there.' },
-          { label: 'That the page is accessible.', feedback: 'A small set of self-run checks cannot carry that claim. It is the sentence that gets repeated in a portfolio and then does not survive the first question.' },
-          { label: 'That the page is accessible for the checks you ran, which covers most people.', feedback: 'The second half is a guess about numbers you do not have. Name the checks that ran and leave the rest open.' },
+          { label: 'That those named checks found nothing on that page, and no more than that.', correct: true, feedback: 'The checks find a few common faults quickly. They are preliminary rather than conformance, and no disabled participant has used the page, so the honest record names which ones you ran and stops there.', was: ['That those particular checks found nothing, and no more than that. They are preliminary, and no disabled participant has used the page.'] },
+          { label: 'That the page is now accessible, since every preliminary check came out clean.', feedback: 'A small set of self-run checks cannot carry that claim. It is the sentence that gets repeated in a portfolio and then does not survive the first question.', was: ['That the page is accessible.'] },
+          { label: 'That the page is accessible for most people, since the checks cover common faults.', feedback: 'The second half is a guess about numbers you do not have. Name the checks that ran and leave the rest open.', was: ['That the page is accessible for the checks you ran, which covers most people.'] },
         ],
         repair: 'Fill the not-verified box in step 5 with each check marked run, not applicable or not run, add the sentence about the missing session, then note the change in the last box.',
         recheck: 'Every check has a status beside it, and the record says plainly what was not tested.',
@@ -1334,6 +1453,15 @@ export const guided06: Record<string, Guided> = {
       creator: 'Your creator reads the outline and the read-aloud note. The limits you recorded matter as much as the checks that came out clean.',
       next: 'Open Your work and choose Ready for review. The next lesson takes these same labels into search, where people type their own words at you.',
     },
+    transfer: {
+      scenario: 'Made-up case: a small museum’s “Plan your visit” page has these headings in order: “Welcome” at level 1, “Info” at level 2, “More” at level 4 (chosen because it looked smaller), and “Plan” at level 2. The page covers opening hours, ticket prices, how to get there and step-free access.',
+      prompt: 'Rewrite the heading outline, say what you did about the level-4 heading, and explain why each change helps someone who moves through the page by its headings.',
+      anchors: {
+        weak: 'Changes only sizes or styles, keeps vague headings such as “Info” and “More”, or leaves the skipped level because it looks right.',
+        adequate: 'Writes descriptive, correctly nested headings such as “Plan your visit”, “Opening hours”, “Tickets”, “Getting here” and “Step-free access”, with no skipped level, because the levels are the page’s outline.',
+        strong: 'As adequate, and plans to read the headings aloud to someone who has not seen the page, and records that no screen-reader session and no disabled participant has checked it.',
+      },
+    },
   },
   'm06-l11-v1': {
     route: textRoute,
@@ -1341,11 +1469,11 @@ export const guided06: Record<string, Guided> = {
       { id: 'frame', title: 'Stopping a dead end, and getting somebody out of one', fields: [
         { id: 'prevent-vs-recover', label: 'The difference between stopping a dead end and helping somebody out of one, in your own words', kind: 'long' },
         { id: 'search-today', label: 'What your practice product offers today', kind: 'choice', options: ['A search box on the site', 'No search box at all', 'Only the browser’s own find-in-page'] },
-        { id: 'search-evidence', label: 'What your m05 notes show about people going straight to search instead of the menu', kind: 'short', hint: 'If your notes say nothing about it, write that. An absence is a real answer here.' },
+        { id: 'search-evidence', label: 'What your m05 notes show about people going straight to search instead of the menu', kind: 'short', sensitive: true, hint: 'If your notes say nothing about it, write that. An absence is a real answer here. Refer to people by label, never by name.' },
       ] },
       { id: 'queries', title: 'The query list', intro: 'The words people typed, not the words you would have chosen for them.', fields: [
-        { id: 'query-list', label: 'At least twenty phrases your participants used, word for word, one per line', kind: 'long', hint: 'Copy them exactly, including the vague and awkward ones. Your tidier wording is the thing being tested, not the answer.', example: 'Example (made up): “what do I need to bring” · “fees” · “can I get my money back” · “where is it”.' },
-        { id: 'query-kinds', label: 'How many are names of things, how many are descriptions, how many are questions', kind: 'short' },
+        { id: 'query-list', label: 'At least twenty phrases your participants used, word for word, one per line', kind: 'long', sensitive: true, hint: 'Copy them exactly, including the vague and awkward ones; the phrases only, with no names. No participants? Take phrases from real messages or public reviews about this kind of product, naming the source, and mark any you wrote yourself as guesses.', example: 'Example (made up): “what do I need to bring” · “fees” · “can I get my money back” · “where is it”.' },
+        { id: 'query-kinds', label: 'How many are names of things, how many are descriptions, how many are questions', kind: 'short', hint: 'Add where the phrases came from: participants, real messages, public reviews, or your own guesses.' },
       ] },
       { id: 'byhand', title: 'Run them by hand', fields: [
         { id: 'query-results', label: 'Query by query: would the right thing have been found?', kind: 'long', hint: 'Search your own content by hand, with find-in-page or by reading. Write found or not found beside each one.' },
@@ -1374,8 +1502,8 @@ export const guided06: Record<string, Guided> = {
         enough: 'Your two examples are different actions, not the same action described twice.' },
       { terms: [{ term: 'Query', meaning: 'The words a person actually puts into a search box. Yours stay a guess about theirs until you copy them from your notes.' }, { term: 'Word for word', meaning: 'Copied exactly as the person said it, awkward wording and all. A tidied phrase is your vocabulary standing in for theirs.' }, { term: 'Description', meaning: 'A phrase describing the thing rather than naming it, such as the one with the wheels. People reach for these when they do not know your name for it.' }], demo: { scenario: 'Made-up example. Building a twenty-query list from interview notes, and tidying every phrase into the words the site already uses.', beats: [{ label: 'What I had', text: 'Five sets of interview notes and a blank page headed twenty queries. I did not open the notes.' }, { label: 'What I wrote', text: 'Class fees. Class times. Cancellation policy. Equipment list. Twenty tidy lines in half an hour, and every one of them sounded like a search.' }, { label: 'What was wrong with them', text: 'Those are my headings. Nobody in the notes had said cancellation policy. Two people had asked whether they could get their money back, and one had asked what happens if she is ill.' }, { label: 'What the notes gave me instead', text: 'I went back through with a pen and copied phrases exactly as written down. Nine of my twenty tidy lines turned out to have no person behind them at all.' }, { label: 'What the list looks like now', text: 'The awkward ones, kept as spoken: what do I need to bring, is there parking, can my daughter come with me. Three of those are phrases I would never have written.' }], wrongTurn: 'The wrong turn is writing the query list from memory instead of from the notes. Your own wording arrives faster, and it is already the wording your pages use, so every query on that list would have found something.', tradeoff: 'Copying phrases exactly gives you a messy list: repeats, half-sentences, two people asking the same thing in different words, and no clean way to sort it into three kinds. What it buys is a list that is able to fail, which is the only kind worth running.', uncertainty: 'Still unknown: whether people type the words they say. A phrase somebody spoke aloud in an interview may become three words in a search box, and nobody here has been watched typing.' }, expect: 'At least twenty queries in your participants’ own words, sorted into names, descriptions and questions.',
         fields: ['query-list', 'query-kinds'],
-        start: 'Go through your interview notes with a pen and copy out every phrase somebody used for something they were looking for.',
-        enough: 'Twenty lines exist and at least three of them are phrases you would never have written yourself.' },
+        start: 'Go through your interview notes with a pen and copy out every phrase somebody used for something they were looking for. With no interview notes, use real messages or public reviews, with names removed and the source named; phrases you invent are guesses and are marked as guesses.',
+        enough: 'Twenty lines exist, each with its source, and at least three of them are phrases you would never have written yourself.' },
       { terms: [{ term: 'Find-in-page', meaning: 'Your browser’s own search of the page you are looking at, opened with Ctrl and F. It is enough to run queries by hand with no search engine anywhere.' }, { term: 'Vocabulary gap', meaning: 'The thing exists and can be reached, and your words for it are not the person’s words.' }, { term: 'Unreachable content', meaning: 'The answer exists somewhere, in an email or in somebody’s head, but nowhere a person can get to on their own.' }, { term: 'Failure class', meaning: 'The one cause you give a failed query. One cause per failure, so that each fix lands on the actual fault.' }], expect: 'Each query run by hand against your own content, with every failure given one cause.',
         fields: ['query-results', 'failure-classes', 'hardest-call'],
         demo: {
@@ -1399,10 +1527,10 @@ export const guided06: Record<string, Guided> = {
           material: 'A supplied zero-results screen from another made-up product. It reads: “No results found for wheel throwing beginner. Check your spelling and try again.” Nothing else is on the screen.',
           question: 'What is the most serious thing missing here?',
           options: [
-            { label: 'Any route that does not need the person to guess a different word — the structure to browse, or a person to ask.', correct: true, feedback: 'Everything on that screen sends them back to the box that just failed them. One route that works differently is what turns a dead end into a next move.' },
-            { label: 'The spelling advice, which blames the person for the failure.', feedback: 'It reads badly and it comes second. Rewording that sentence still leaves them with only one thing to try.' },
-            { label: 'A count of how many results came back, so they know it really is none.', feedback: 'They can already see it is none. A number changes nothing about what they can do next.' },
-            { label: 'Nothing serious: the screen names the query, which is the main thing.', feedback: 'Naming the query is genuinely useful, and it is where the screen should start rather than stop. On its own it is a polite dead end.' },
+            { label: 'A way forward that needs no new search word, such as browsing the classes or asking a person.', correct: true, feedback: 'Everything on that screen sends them back to the box that just failed them. One route that works differently is what turns a dead end into a next move.', was: ['Any route that does not need the person to guess a different word — the structure to browse, or a person to ask.'] },
+            { label: 'Kinder wording in place of the spelling advice, which blames the person for the empty result.', feedback: 'The spelling advice reads badly, and fixing it comes second. Rewording that sentence still leaves them with only one thing to try.', was: ['The spelling advice, which blames the person for the failure.'] },
+            { label: 'A count of the results returned, so the person can be certain the answer really is none.', feedback: 'They can already see it is none. A number changes nothing about what they can do next.', was: ['A count of how many results came back, so they know it really is none.'] },
+            { label: 'Little of importance: the screen already shows the query back, which is its main job.', feedback: 'Naming the query is genuinely useful, and it is where the screen should start rather than stop. On its own it is a polite dead end.', was: ['Nothing serious: the screen names the query, which is the main thing.'] },
           ],
           then: 'Look at your own zero-results screen and count the routes forward that do not depend on typing another word. If the answer is none, add one.',
         },
@@ -1415,11 +1543,11 @@ export const guided06: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Your menu labels tested badly, and somebody suggests adding a search box instead of fixing them.',
+        question: 'Your menu labels tested badly, and somebody suggests adding a search box instead of fixing them. What is the problem with that suggestion?',
         options: [
-          { label: 'Search moves the failure somewhere you cannot see it, and a person searching after a failure is already having a poor time.', correct: true, feedback: 'A menu at least shows what exists. A search returning nothing tells them the thing is not there, which is often untrue.' },
-          { label: 'It is a fair trade, because most people search anyway.', feedback: 'Many do, and they type their own words. A search box sitting on content that uses different words fails them faster, not less often.' },
-          { label: 'It works if the search is good enough at matching similar words.', feedback: 'Matching helps with spelling and word endings. It does nothing when the answer lives in an email or does not exist at all.' },
+          { label: 'It moves the failure out of sight, onto people who are searching because they already failed.', correct: true, feedback: 'A menu at least shows what exists. A search returning nothing tells them the thing is not there, which is often untrue.', was: ['Search moves the failure somewhere you cannot see it, and a person searching after a failure is already having a poor time.'] },
+          { label: 'It is a fair trade, because a great many people go straight to search anyway.', feedback: 'Many do, and they type their own words. A search box sitting on content that uses different words fails them faster, not less often.', was: ['It is a fair trade, because most people search anyway.'] },
+          { label: 'It works well, provided the search can match similar words and common misspellings.', feedback: 'Matching helps with spelling and word endings. It does nothing when the answer lives in an email or does not exist at all.', was: ['It works if the search is good enough at matching similar words.'] },
         ],
         repair: 'Take the failures in step 3 that you marked as vocabulary gaps and write a content fix for each one in step 5, then record it in the last box.',
         recheck: 'Every vocabulary gap has a fix that changes the words on the page, not only the search.',
@@ -1427,9 +1555,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'A person picks two filters and gets nothing back. What should the screen do?',
         options: [
-          { label: 'Show which choice emptied the list, and let them undo that one on its own.', correct: true, feedback: 'They made two choices and one of them did the damage. Without knowing which, their only move is to clear everything and start again.' },
-          { label: 'Say “no results” and leave the filters as they are.', feedback: 'Leaving the filters in place is the right half. Saying nothing about which one caused it is what makes the screen a trap.' },
-          { label: 'Clear the filters automatically and show everything again.', feedback: 'That takes the decision away from them and loses the one choice they cared about. They also cannot tell what happened.' },
+          { label: 'Show which choice emptied the list, and let them undo that one choice alone.', correct: true, feedback: 'They made two choices and one of them did the damage. Without knowing which, their only move is to clear everything and start again.', was: ['Show which choice emptied the list, and let them undo that one on its own.'] },
+          { label: 'Say “no results”, and leave both filters exactly as they are for them to adjust.', feedback: 'Leaving the filters in place is the right half. Saying nothing about which one caused it is what makes the screen a trap.', was: ['Say “no results” and leave the filters as they are.'] },
+          { label: 'Clear both filters automatically and show the full list again, so nothing is empty.', feedback: 'That takes the decision away from them and loses the one choice they cared about. They also cannot tell what happened.', was: ['Clear the filters automatically and show everything again.'] },
         ],
         repair: 'Fill the empty-combination box in step 4 with what the person sees and which choice they can undo, then record the change in the last box.',
         recheck: 'The empty-combination note names what is shown and what can be undone on its own.',
@@ -1437,9 +1565,9 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'Three queries failed because the answer exists only inside a confirmation email. What kind of failure is that?',
         options: [
-          { label: 'Content nobody can reach. No search and no renaming fixes it; the answer has to exist somewhere a person can get to first.', correct: true, feedback: 'It is the failure most often filed under search and it belongs to the structure. Put the answer on a page, then the wording can be argued about.' },
-          { label: 'A vocabulary gap, since the email uses different words from the search.', feedback: 'The words are not the barrier. Even the exact wording would not reach a page that does not exist.' },
-          { label: 'A thing that does not exist, since it is not on the site.', feedback: 'The answer does exist, in the email, and that is a different repair. A genuinely missing item has to be written from nothing.' },
+          { label: 'Unreachable content: the answer exists, but nowhere a person can get to on their own.', correct: true, feedback: 'No search and no renaming fixes it, because the answer has to exist somewhere a person can reach first. Put it on a page; then the wording can be argued about.', was: ['Content nobody can reach. No search and no renaming fixes it; the answer has to exist somewhere a person can get to first.'] },
+          { label: 'A vocabulary gap, since the email describes the answer in different words from the search.', feedback: 'The words are not the barrier. Even the exact wording would not reach a page that does not exist.', was: ['A vocabulary gap, since the email uses different words from the search.'] },
+          { label: 'A missing item, since anything absent from the site counts as not existing for the visitor.', feedback: 'The answer does exist, in the email, and that is a different repair. A genuinely missing item has to be written from nothing.', was: ['A thing that does not exist, since it is not on the site.'] },
         ],
         repair: 'Recheck your failure classes in step 3 and move every email-only or ask-a-person answer into the unreachable class, then write its fix in step 5 and note it in the last box.',
         recheck: 'Unreachable answers sit apart from missing ones, and each class has its own fix.',
@@ -1450,6 +1578,15 @@ export const guided06: Record<string, Guided> = {
       external: 'If you sketched the zero-results screen on paper, keep it in your own folder and describe it in the zero-results box in step 4.',
       creator: 'Your creator reads the query list and the failure classes. Twenty real phrases with outcomes beside them says more than a search specification.',
       next: 'Open Your work and choose Ready for review. The last lesson of the module puts your labels under pressure and closes everything into a change note.',
+    },
+    transfer: {
+      scenario: 'Made-up case: residents search an electricity company’s website using phrases such as “bill not came”, “pay after due date” and “meter photo”. The pages are titled Billing cycle, Late payment charges and Self-reading submission. The answer to “why is my bill high” exists only in a leaflet posted with paper bills.',
+      prompt: 'Classify the failure for “bill not came” and for “why is my bill high”, choose a fix for each, and explain why at least one of the fixes needs no search engine.',
+      anchors: {
+        weak: 'Calls every failure a search problem and proposes synonyms or a better search engine for both phrases.',
+        adequate: 'Calls “bill not came” a vocabulary gap fixed by putting residents’ words on the billing page, and the high-bill answer unreachable content that has to be published on a page; neither fix needs an engine.',
+        strong: 'As adequate, and designs a zero-results route that needs no new word, such as browsing billing topics or contacting the company, and notes that a few phrases are a starting list rather than proof of how people search.',
+      },
     },
   },
   'm06-l12-v1': {
