@@ -1,5 +1,5 @@
-import type { RecordData } from './record';
-import type { Lesson } from '../src/teaching';
+import { worksheetFilled, type RecordData, type ReviewSummary } from './record';
+import type { Lesson, WorksheetField } from '../src/teaching';
 import { actionQuestion, fieldRequired } from '../src/lessonActions';
 import { matchChoice } from './choices';
 
@@ -30,9 +30,40 @@ export function finishProblems(lesson: Lesson, r: RecordData): string[] {
   return problems;
 }
 
-// Time, confidence and navigation do not invalidate completed work.
+// Time, confidence and navigation do not invalidate completed work. Nor does
+// the optional transfer task, review requests or self-review: they come after
+// practice and would otherwise reopen it every time the learner used them.
+const AFTER_PRACTICE_FIELDS = new Set(['transfer-decision']);
+const AFTER_PRACTICE_ANSWERS = new Set(['transfer-compare']);
+const without = (value: Record<string, unknown> | undefined, keys: Set<string>) =>
+  Object.fromEntries(Object.entries(value ?? {}).filter(([k]) => !keys.has(k)));
 export function workSignature(r: RecordData) {
-  return JSON.stringify([r.notes, r.submission, r.worksheet ?? {}, r.learning?.answers ?? {}, r.learning?.route, r.learning?.outputsConfirmed, r.learning?.repair]);
+  return JSON.stringify([r.notes, r.submission, without(r.worksheet, AFTER_PRACTICE_FIELDS), without(r.learning?.answers, AFTER_PRACTICE_ANSWERS), r.learning?.route, r.learning?.outputsConfirmed, r.learning?.repair]);
+}
+
+// The four kinds of progress the plan separates. Only a creator review on a
+// saved version can set the last two; time, reading and AI never do.
+export type ProgressStates = {
+  saved: boolean;
+  finished: boolean;
+  reviewed: boolean;
+  demonstrated: boolean;
+  // Labelled alternatives that never count as reviewed or demonstrated.
+  selfReviewed: boolean;
+  skillShown: boolean;
+  reviewRequested: boolean;
+};
+export function progressStates(record: RecordData | undefined, reviews: ReviewSummary[] = []): ProgressStates {
+  const saved = !!record && (record.status !== 'not-started' || worksheetFilled(record.worksheet) || !!record.notes.trim() || !!record.learning?.action);
+  return {
+    saved,
+    finished: !!record?.learning?.finishedAt,
+    reviewed: reviews.length > 0,
+    demonstrated: reviews.some(r => r.outcome === 'demonstrated-independently'),
+    selfReviewed: !!record?.learning?.selfReview,
+    skillShown: !!record?.learning?.demonstrated,
+    reviewRequested: record?.status === 'ready-for-review' && !!record.learning?.review,
+  };
 }
 export function prepareRecord(previous: RecordData, next: RecordData): RecordData {
   let result = next;
@@ -50,6 +81,10 @@ export function courseProgress(lessons: Lesson[], records: {lessonId: string; re
   return { finished, total, percent: total ? Math.floor(finished / total * 1000) / 10 : 0 };
 }
 export function actionDone(lesson: Lesson, r: RecordData, a: NonNullable<Lesson['flow']>[number]) {
+  if (a.kind === 'fields') {
+    const fields=lesson.apprenticeship?.worksheet?.flatMap(s=>s.fields) || [];
+    return (a.fields || []).every(id => { const f=fields.find(f=>f.id===id); return !f || !fieldRequired(f,r) || (!!r.worksheet?.[id]?.trim() && (f.kind!=='choice' || !!f.options?.includes(r.worksheet[id]))); });
+  }
   if (a.kind === 'field') {
     const f=lesson.apprenticeship?.worksheet?.flatMap(s=>s.fields).find(f=>f.id===a.field);
     return !!f && !!r.worksheet?.[a.field!]?.trim() && (f.kind!=='choice' || !!f.options?.includes(r.worksheet[a.field!]));
@@ -59,10 +94,17 @@ export function actionDone(lesson: Lesson, r: RecordData, a: NonNullable<Lesson[
   if (a.kind === 'review') return !!r.learning?.finishedAt;
   return !!r.learning?.completed?.includes(a.id);
 }
+// An answer action counts toward required work only when the learner's route
+// requires at least one of its answers.
+export function requiredAction(a: NonNullable<Lesson['flow']>[number], fields: WorksheetField[], r: RecordData) {
+  if (a.kind === 'field') return fieldRequired(fields.find(f=>f.id===a.field)!,r);
+  if (a.kind === 'fields') return (a.fields || []).some(id => { const f=fields.find(f=>f.id===id); return !!f && fieldRequired(f,r); });
+  return true;
+}
 export function lessonWorkProgress(lesson: Lesson, r: RecordData) {
   if (lesson.flow && r.learning?.route !== 'external') {
     const fields=lesson.apprenticeship?.worksheet?.flatMap(s=>s.fields) || [];
-    const required=lesson.flow.filter(a=>a.kind!=='field' || fieldRequired(fields.find(f=>f.id===a.field)!,r));
+    const required=lesson.flow.filter(a=>requiredAction(a,fields,r));
     const total = required.length;
     const done = r.learning?.finishedAt ? total : required.filter(a => actionDone(lesson,r,a)).length;
     return {total, done, percent:Math.floor(done / total * 100)};

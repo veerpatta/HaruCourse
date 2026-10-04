@@ -23,7 +23,7 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
       { name: "Haru Course", version: "0.2.0" },
       {
         instructions:
-          "Read the lesson, rubric, and current submission before critique. Work references are not image evidence: ask for screenshots if inaccessible. Mark all model-generated feedback as AI. Do not claim mastery or overwrite progress without learner intent. No tool fetches arbitrary links.",
+          "Read the lesson, rubric, and current submission before critique. Work references are not image evidence: ask for screenshots if inaccessible. Mark all model-generated feedback as AI. AI critique never records a review outcome: only the course creator can mark a version as reviewed against a criterion or demonstrated independently. Answers marked sensitive may describe real participants; never copy them elsewhere. Do not claim mastery or overwrite progress without learner intent. No tool fetches arbitrary links.",
       },
     );
     const result = (value: unknown) => ({
@@ -115,7 +115,7 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
         "get_feedback",
         {
           description:
-            "Read saved AI and creator feedback, with submission versions.",
+            "Read saved AI and creator feedback, with submission versions. Creator reviews may carry the criterion checked, an outcome (needs-revision, meets-criterion, demonstrated-independently), the evidence looked at and a next action.",
           inputSchema,
           annotations: { readOnlyHint: true },
         },
@@ -127,7 +127,7 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
         "save_feedback",
         {
           description:
-            "Save AI-generated critique against an existing submission revision. Supply a new UUID id for each review; reuse it only for an exact retry. This does not award mastery.",
+            "Save AI-generated critique against an existing submission revision. Supply a new UUID id for each review; reuse it only for an exact retry. This does not award mastery and cannot set a review outcome.",
           inputSchema: feedbackSchema.extend(inputSchema),
           annotations: {
             readOnlyHint: false,
@@ -145,7 +145,7 @@ export class McpApi extends WorkerEntrypoint<Env, AuthProps> {
           "save_practice",
           {
             description:
-              "Update the learner’s full practice record only when requested. Read progress first and supply expectedRevision; conflicts never overwrite a newer record. Minutes are the total for this exercise, not an increment. Preserve the optional sessions log, confidence rating, worksheet answers, guide position, learning state (including formative answers and finishedAt) and timingRemainderMs from get_progress when writing back; the app maintains them and omitting them erases them. Worksheet keys are the field ids the lesson declares; guide.done is a navigation aid, never evidence of competence.",
+              "Update the learner’s full practice record only when requested. Read progress first and supply expectedRevision; conflicts never overwrite a newer record. Minutes are the total for this exercise, not an increment. Preserve the optional sessions log, confidence rating, worksheet answers, guide position, learning state (including formative answers, finishedAt, review request, selfReview and demonstrated) and timingRemainderMs from get_progress when writing back; the app maintains them and omitting them erases them. Worksheet keys are the field ids the lesson declares; guide.done is a navigation aid, never evidence of competence.",
             inputSchema: saveSchema.extend(inputSchema),
             annotations: {
               readOnlyHint: false,

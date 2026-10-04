@@ -11,6 +11,16 @@ const { lessons, publishedLessonIds, isPublishedLesson } = await import(
   "../src/lessons.ts"
 );
 const {lessonOneExample, suppliedWalkthrough} = await import('../src/lessonOneFlow.ts');
+// Text equivalent of the annotated screens drawn in src/lessonOneVisuals.tsx.
+const lessonOneScreens = [
+  'Made-up practice screens, not a real app and not research.',
+  'Screen A, class details: Saturday pottery for beginners; Sat 12 Oct, 10:00–12:00, Studio 2; a long description; then ₹800, materials included; then Reserve.',
+  'Screen B, booking: choose a date (Sat 12 Oct selected, Sun 13 Oct); Saturday ₹800, materials included; Continue to pay.',
+  'Note 1, observed: the date sits right beside the class title on screen A.',
+  'Note 2, observed: the price sits below a long description, so a visitor scrolls before seeing it.',
+  'Note 3, observed: screen B shows the price again only after Saturday is chosen.',
+  'Note 4, unknown: neither screen shows why anyone leaves. Any reason is a guess until it is checked.',
+];
 const {actionQuestion} = await import('../src/lessonActions.ts');
 const { displayOrder } = await import('../shared/choices.ts');
 const { baselineLesson } = await import('../src/course.ts');
@@ -233,10 +243,14 @@ function flowDoc(l) {
   const parts=l.flow.map(action=>{
     if(action.kind==='check' && !action.repairFields) action={...action,repairFields:action.index===0?['user-goal']:[1,2,3,4,5].flatMap(n=>[`entry-${n}-label`,`entry-${n}-check`])};
     const f=fields.find(f=>f.id===action.field);
+    const row=action.kind==='fields' ? action.fields.map(id=>fields.find(f=>f.id===id)) : [];
     const q0=actionQuestion(l,action), q=q0 && (action.kind==='sort' ? q0 : {...q0,options:displayOrder(q0.options,l.id+':'+q0.id)}), g=a.guide[action.guideIndex], check=action.kind==='check' ? a.checks[action.index] : null;
     return '### '+action.title+'\n\nSection: '+action.section+'. Stable action: '+action.id+'.\n\n'+action.instruction+'\n\n'
       +(action.body ? list(action.body)+'\n\n' : '')
-      +(action.kind==='example' ? list(lessonOneExample)+'\n\n' : '')
+      +(action.kind==='example' && action.id==='see-example' ? list(lessonOneScreens)+'\n\n' : '')
+      +(action.kind==='example' && action.id==='pottery-example' ? list(lessonOneExample)+'\n\n' : '')
+      +(row.length ? row.map(f=>'**Answer:** '+f.label+(f.options ? ' ('+f.options.join(' / ')+')' : '')+(f.hint ? ' — '+f.hint : '')).join('\n\n')+'\n\n' : '')
+      +(action.field==='transfer-decision' && a.transfer ? '**New case.** '+a.transfer.scenario+'\n\n**Task:** '+a.transfer.prompt+'\n\n'+details('Compare after writing',list(['Weak: '+a.transfer.anchors.weak,'Adequate: '+a.transfer.anchors.adequate,'Strong: '+a.transfer.anchors.strong]))+'\n\n' : '')
       +(action.kind==='demo' && g?.demo ? g.demo.beats.map(b=>'**'+b.label+':** '+b.text).join('\n\n')+'\n\n**Wrong turn:** '+g.demo.wrongTurn+'\n\n**Trade-off:** '+g.demo.tradeoff+'\n\n**Unknown:** '+g.demo.uncertainty+'\n\n' : '')
       +(action.kind==='setup' && g ? '**Start here:** '+g.start+'\n\n**Enough:** '+g.enough+'\n\n'+(g.terms || []).map(t=>'**'+t.term+':** '+t.meaning).join('\n\n')+'\n\n' : '')
       +(action.field==='app' && l.id==='week1-day1-v1' ? details('Supplied walkthrough',list(suppliedWalkthrough))+'\n\n' : '')

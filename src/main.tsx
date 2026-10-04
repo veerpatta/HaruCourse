@@ -15,6 +15,8 @@ import { AccountBackup } from "./AccountBackup";
 import { WorkspaceGuide, PortfolioPath, JourneyMilestone } from './ApprenticeshipPanel';
 import { emptyRecord as empty } from "./usePractice";
 import { unsavedDrafts, updateMessage } from "./updates";
+import { lessonTrack } from "./corePath";
+import { ReviewSettingsEditor, useReviewSettings } from "./ReviewPanel";
 import type { User } from "../shared/record";
 import "./style.css";
 
@@ -40,6 +42,7 @@ function App({
   const navigation = useNavigation();
   const bookmark = usePosition(user.id);
   const course = useCourseRecords(user);
+  const [reviewSettings, setReviewSettings] = useReviewSettings(user);
   const tab = navigation.tab;
   const [navigationVersion, setNavigationVersion] = useState(0);
   const target = navigation.lesson ? {id:navigation.lesson, section:navigation.section || "learn"} : undefined;
@@ -189,7 +192,7 @@ function App({
             <>
               <h1>Course map</h1>
               <ProgressOverview records={course.records}/>
-              <p>Levels → Modules → Lessons. Study at your own pace.</p>
+              <p>Levels → Modules → Lessons. Study at your own pace. Each lesson is marked as part of the recommended core path, the optional technical extension or the wider library.</p>
               <WorkspaceGuide />
               <PortfolioPath />
               <div className="course-map">
@@ -235,16 +238,20 @@ function App({
                                   (l) =>
                                     (l.week || 1) === Number(m.id.slice(1)),
                                 )
-                                .map((l) => (
-                                  <button
-                                    className="lesson-row"
-                                    key={l.id}
-                                    onClick={() => open(l.id)}
-                                  >
-                                    {l.title}
-                                    {l.optional ? " · Optional" : ""} →
-                                  </button>
-                                ))}
+                                .map((l) => {
+                                  const track = lessonTrack(l.id);
+                                  return (
+                                    <button
+                                      className="lesson-row"
+                                      key={l.id}
+                                      onClick={() => open(l.id)}
+                                    >
+                                      {l.title}
+                                      {l.optional ? " · Optional" : ""}
+                                      <span className={`track-tag is-${track.kind}`}>{track.kind === "core" ? `Core path · stage ${track.stageNumber}` : track.kind === "extension" ? "Technical extension" : "Library"}</span> →
+                                    </button>
+                                  );
+                                })}
                             </div>
                           ) : (
                             <p className="muted">
@@ -275,6 +282,12 @@ function App({
                 onLoad={() => {}}
                 onSession={onSession}
               />
+              {user.role === "creator" && (
+                <details className="account-detail">
+                  <summary>Review destination</summary>
+                  <ReviewSettingsEditor settings={reviewSettings} onSaved={setReviewSettings} />
+                </details>
+              )}
               <details className="account-detail">
                 <summary>Backups and review export</summary>
                 <AccountBackup user={user} />

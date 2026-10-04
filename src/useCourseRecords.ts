@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { canPoll, onActivityResume } from "./activity";
 import {
   recordSchema,
   type RecordData,
+  type ReviewSummary,
   type SessionEntry,
   type User,
 } from "../shared/record";
@@ -39,6 +40,12 @@ function readLocal(user: User): CourseRecord[] {
   return found;
 }
 
+// How often an open, visible app asks whether anything changed elsewhere. The
+// question costs one database row; the full answer is fetched only when the
+// server's records version has moved. This learner's own edits appear at once
+// through the device copy, so the interval only bounds cross-device delay.
+export const RECORDS_POLL_MS = 60_000;
+
 // One shared read of every practice record for the signed-in account (the
 // creator reads Haru's). Polls while the app can, and falls back to the
 // device copy when the server cannot be reached.
@@ -46,8 +53,10 @@ export function useCourseRecords(user: User) {
   const [records, setRecords] = useState<CourseRecord[]>(() =>
     readLocal(user),
   );
+  const [reviews, setReviews] = useState<ReviewSummary[]>([]);
   const [error, setError] = useState("");
   const [loaded, setLoaded] = useState(false);
+  const version = useRef<number | null>(null);
   useEffect(() => {
     let active = true;
     let cloud: CourseRecord[] = [];
@@ -63,18 +72,23 @@ export function useCourseRecords(user: User) {
       if (active) setRecords(merged);
     };
     setRecords(readLocal(user));
+    version.current = null;
     const refresh = () =>
-      fetch("/api/course-records", { cache: "no-store" })
+      fetch(`/api/course-records${version.current === null ? "" : `?since=${version.current}`}`, { cache: "no-store" })
         .then(async (r) => {
           if (!r.ok) throw Error();
           return r.json();
         })
-        .then((v: { records: CourseRecord[] }) => {
-          if (active) {
-            cloud = v.records;
-            merge(); setLoaded(true);
-            setError("");
+        .then((v: { records?: CourseRecord[]; reviews?: ReviewSummary[]; version?: number; unchanged?: true }) => {
+          if (!active) return;
+          if (!v.unchanged) {
+            cloud = v.records || [];
+            setReviews(v.reviews || []);
+            merge();
           }
+          version.current = typeof v.version === "number" ? v.version : null;
+          setLoaded(true);
+          setError("");
         })
         .catch(() => {
           merge(); if (active) setLoaded(true);
@@ -88,7 +102,7 @@ export function useCourseRecords(user: User) {
     window.addEventListener('storage', merge);
     const timer = setInterval(() => {
       if (canPoll()) void refresh();
-    }, 5000);
+    }, RECORDS_POLL_MS);
     const stopWatching = onActivityResume(() => void refresh());
     return () => {
       active = false;
@@ -98,7 +112,7 @@ export function useCourseRecords(user: User) {
       window.removeEventListener('storage', merge);
     };
   }, [user.id, user.role]);
-  return { records, error, loaded };
+  return { records, reviews, error, loaded };
 }
 
 export type LoggedSession = SessionEntry & { lessonId: string };

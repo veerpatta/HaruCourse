@@ -1,6 +1,6 @@
 import { timingSafeEqual } from "node:crypto";
 import { z } from "zod";
-import { HttpError, activeUser } from "./data";
+import { HttpError, activeUser, type SessionUser } from "./data";
 import type { User } from "../shared/record";
 
 export async function hash(value: string) {
@@ -72,7 +72,7 @@ export async function bodyJson(request: Request): Promise<unknown> {
 export async function session(
   request: Request,
   env: Env,
-): Promise<User | null> {
+): Promise<SessionUser | null> {
   const raw = cookieValue(request, cookieName(request));
   if (!/^[a-f0-9]{64}$/.test(raw)) return null;
   const row = await env.DB.prepare(

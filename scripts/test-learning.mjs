@@ -4,14 +4,19 @@ registerHooks({resolve(s,c,next){return next(s.startsWith('.') && !/\.[a-z]+$/.t
 const {publishedLessons} = await import('../src/lessons.ts');
 const {recordSchema,SESSION_CAP} = await import('../shared/record.ts');
 const {finishProblems,prepareRecord,courseProgress,lessonWorkProgress} = await import('../shared/learning.ts');
+const {actionQuestion} = await import('../src/lessonActions.ts');
 const {applyTimed,activeDelta,correctTotal,IDLE_MS} = await import('../src/timing.ts');
 const lesson = publishedLessons.find(l=>l.id==='week1-day1-v1');
 const base={version:1,notes:'',submission:'',minutes:0,status:'practicing',updatedAt:''};
 const fields=lesson.apprenticeship.worksheet.flatMap(s=>s.fields);
-assert.equal(fields.length,36);
+// 36 shipped answers plus the optional transfer answer added on 4 October 2026.
+assert.equal(fields.length,37);
+assert.equal(fields.filter(f=>!f.optional).length,36);
+assert.ok(fields.find(f=>f.id==='transfer-decision').optional);
 assert.equal(new Set(lesson.flow.map(a=>a.id)).size,lesson.flow.length);
-assert.deepEqual(lesson.flow.filter(a=>a.kind==='field').map(a=>a.field).sort(),fields.map(f=>f.id).sort());
-const complete={...base,worksheet:Object.fromEntries(fields.map(f=>[f.id,f.options?.[0] || 'QA: one clear answer.'])),learning:{completed:['welcome','see-example'],answers:{}}};
+assert.deepEqual(lesson.flow.flatMap(a=>a.kind==='field'?[a.field]:a.kind==='fields'?a.fields:[]).sort(),fields.map(f=>f.id).sort());
+const complete={...base,worksheet:Object.fromEntries(fields.filter(f=>!f.optional).map(f=>[f.id,f.options?.[0] || 'QA: one clear answer.'])),learning:{completed:['welcome','see-example'],answers:{}}};
+for(const a of lesson.flow){const q=actionQuestion(lesson,a); if(q) complete.learning.answers[q.id]={value:q.options[q.options.length>1?1:0].label,shown:true};}
 lesson.apprenticeship.checks.forEach((c,i)=>complete.learning.answers[`check-${i+1}`]={value:c.options[1].label,shown:true});
 const sorter=lesson.apprenticeship.guide.find(g=>g.sorter).sorter;
 sorter.items.forEach(item=>complete.learning.answers[`sort-${item.id}`]={value:sorter.options[0],shown:true});

@@ -20,7 +20,7 @@ for(const l of targets){
  assert.equal(lessonWorkProgress(l,{version:1,notes:'',submission:'',minutes:0,status:'not-started',updatedAt:''}).percent,0,l.id+' empty optional fields must not create progress');
  const fields=l.apprenticeship.worksheet.flatMap(s=>s.fields);fieldCount+=fields.length;actionCount+=l.flow.length;
  assert.equal(new Set(l.flow.map(a=>a.id)).size,l.flow.length,l.id+' duplicate action');
- assert.deepEqual(l.flow.filter(a=>a.kind==='field').map(a=>a.field).sort(),fields.map(f=>f.id).sort(),l.id+' every field exactly once');
+ assert.deepEqual(l.flow.flatMap(a=>a.kind==='field'?[a.field]:a.kind==='fields'?a.fields:[]).sort(),fields.map(f=>f.id).sort(),l.id+' every field exactly once');
  for(const a of l.flow){assert.ok(worksheetFieldId.safeParse(a.id).success,l.id+': '+a.id);assert.ok(a.step>=1&&a.step<=5);assert.ok(a.title&&a.instruction);for(const id of a.repairFields||[])assert.ok(fields.some(f=>f.id===id),l.id+' repair '+id);}
  if(l.actionPlan){
   assert.equal(l.actionPlan.repairs.length,3,l.id+' three check repairs');

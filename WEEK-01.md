@@ -31,18 +31,137 @@ Your eye already knows when a screen looks right. This lesson adds the other hal
 
 The reader demonstrates and guides the task before asking for “Product design is…”.
 
-### What a product designer actually does
+### What a screen shows, and what we assume
 
 Section: learn. Stable action: welcome.
 
-A product designer helps decide which problem is worth solving, then shapes the whole experience people use. You will follow one small task, separate facts from guesses, and propose two improvements. Keep this course open beside your chosen app. You can stop after any answer.
+Today’s first goal is small: explain one difference between what a screen shows and what you assume about the people using it. You will look at two made-up booking screens, sort three statements, then make one observation of your own with a way to check it. You can stop after any answer.
 
 
-### See UI, UX and product design in one familiar problem
+### Look at two booking screens
 
 Section: learn. Stable action: see-example.
 
-Read the made-up pottery-booking example. The Reserve button is UI. Finding, understanding and booking the class is UX. Deciding whether the real problem deserves a button change, clearer price information or something else is product design.
+These are made-up screens from a fictional pottery studio. Read the numbered notes beside them. Each note is either something you can point to, or a reminder of what the screens cannot tell you.
+
+- Made-up practice screens, not a real app and not research.
+- Screen A, class details: Saturday pottery for beginners; Sat 12 Oct, 10:00–12:00, Studio 2; a long description; then ₹800, materials included; then Reserve.
+- Screen B, booking: choose a date (Sat 12 Oct selected, Sun 13 Oct); Saturday ₹800, materials included; Continue to pay.
+- Note 1, observed: the date sits right beside the class title on screen A.
+- Note 2, observed: the price sits below a long description, so a visitor scrolls before seeing it.
+- Note 3, observed: screen B shows the price again only after Saturday is chosen.
+- Note 4, unknown: neither screen shows why anyone leaves. Any reason is a guess until it is checked.
+
+
+### Point to the price
+
+Section: learn. Stable action: point-price.
+
+Use the screens above. Choose where screen A shows the price, then select Show me why.
+
+On screen A, where does the price appear?
+
+- Below the long description, after scrolling
+- Only on screen B, once Saturday is chosen
+- Beside the class title, next to the date
+
+<details>
+<summary>After your attempt</summary>
+
+Below the long description, after scrolling — You can point to it: the price sits under the description, so a visitor scrolls past the text before seeing it. That is something the screen shows.
+
+Only on screen B, once Saturday is chosen — Screen B repeats the price after a date is chosen, but screen A already shows it lower down. Both are visible facts.
+
+Beside the class title, next to the date — The date sits beside the title; the price does not. Look at callout 2 on screen A.
+
+
+
+</details>
+
+
+### Sort the statement · 1 of 3
+
+Section: learn. Stable action: three-1.
+
+Observed: you can point to it on a screen. Inferred: a possible explanation. Unknown: a question the screens cannot answer yet. Choose the label that fits.
+
+“The price is shown after selecting Saturday.”
+
+- observed
+- inferred
+- unknown
+
+<details>
+<summary>After your attempt</summary>
+
+observed — Screen B shows it: choose Saturday and ₹800 appears. Anyone opening the same screens could point to it.
+
+inferred — Nothing is being explained here. It is a fact about what the supplied screen shows.
+
+unknown — The supplied screen answers this completely, so it is not an open question.
+
+
+
+</details>
+
+
+### Sort the statement · 2 of 3
+
+Section: learn. Stable action: three-2.
+
+Observed: you can point to it on a screen. Inferred: a possible explanation. Unknown: a question the screens cannot answer yet. Choose the label that fits.
+
+“People leave because of the price.”
+
+- observed
+- inferred
+- unknown
+
+<details>
+<summary>After your attempt</summary>
+
+observed — No screen shows why anyone leaves. It may be true, but it is a reading of other people, not something you can point to.
+
+inferred — A plausible explanation, kept as a guess. It tells you what to go and check rather than what is established.
+
+unknown — You do have a reading here, so inferred keeps it visible as something to test. Unknown would drop the idea entirely.
+
+
+
+</details>
+
+
+### Sort the statement · 3 of 3
+
+Section: learn. Stable action: three-3.
+
+Observed: you can point to it on a screen. Inferred: a possible explanation. Unknown: a question the screens cannot answer yet. Choose the label that fits.
+
+“Why did they leave?”
+
+- observed
+- inferred
+- unknown
+
+<details>
+<summary>After your attempt</summary>
+
+observed — A question cannot be observed. The screens show where things are, never why people act.
+
+inferred — Inferred is a proposed answer. This is the open question itself, still waiting for evidence.
+
+unknown — An honest open question. Writing it down is how you remember to find out instead of assuming.
+
+
+
+</details>
+
+
+### UI, UX and product design in one problem
+
+Section: learn. Stable action: pottery-example.
+
+Read the same made-up case once more. The Reserve button is UI. Finding, understanding and booking the class is UX. Deciding whether the real problem deserves a button change, clearer price information or something else is product design.
 
 - Made-up practice case: a pottery studio asks for a bigger Reserve button because people leave the booking screen.
 - What is known: in this supplied case, a count shows where people leave.
@@ -114,6 +233,21 @@ Open an app you already use for finding events, classes or bookings. If none is 
 **Answer:** The app
 
 Any app that lists events, shows, classes or bookings.
+
+
+### Your first observation and how to check it
+
+Section: practice-plan. Stable action: entry-1-saw.
+
+Look at one screen in your chosen app. Write one thing you can point to, label it, name the goal it affects and say what you could watch or ask to check it. This is your first complete result; a good place to stop.
+
+**Answer:** Entry 1 · What I saw or did — Something you can point to on the screen, or an action you took. One entry per line of the table.
+
+**Answer:** Entry 1 · Observed, inferred or unknown? (observed / inferred / unknown) — Observed: you saw it. Inferred: your guess about why. Unknown: you cannot tell from the screen.
+
+**Answer:** Entry 1 · Which goal does this affect?
+
+**Answer:** Entry 1 · How could you check it? — What would you watch for, or whom would you ask, to find out whether your reading is right?
 
 
 ### Choose one small task
@@ -323,245 +457,64 @@ unknown — She used the picker, so she is not without information. This is her 
 </details>
 
 
-### Your evidence · entry 1 of 5
-
-Section: practice-plan. Stable action: entry-1-saw.
-
-Return to your walkthrough. Write one thing you noticed, one possible explanation, or one unanswered question. Keep it to one claim.
-
-**Answer:** Entry 1 · What I saw or did
-
-Something you can point to on the screen, or an action you took. One entry per line of the table.
-
-<details>
-<summary>Example</summary>
-
-Example (made up, not your research): The home screen shows a search box labelled Find events and a list titled This weekend.
-
-</details>
-
-
-### Is this a fact, a guess, or a question?
-
-Section: practice-plan. Stable action: entry-1-label.
-
-Label the entry you just wrote. Seeing a screen does not tell you what other people think or do.
-
-**Answer:** Entry 1 · Observed, inferred or unknown? (observed / inferred / unknown)
-
-Observed: you saw it. Inferred: your guess about why. Unknown: you cannot tell from the screen.
-
-
-### Why does this entry matter?
-
-Section: practice-plan. Stable action: entry-1-goal.
-
-Name the task or goal this entry affects. Describe what the person wants to achieve, not the button they press.
-
-**Answer:** Entry 1 · Which goal does this affect?
-
-
-
-<details>
-<summary>Example</summary>
-
-Example (made up): Finding an event nearby this weekend.
-
-</details>
-
-
-### What would help you check it?
-
-Section: practice-plan. Stable action: entry-1-check.
-
-Name something you could observe or ask to check this claim. You are planning the check; you do not need to recruit anyone today.
-
-**Answer:** Entry 1 · How could you check it?
-
-What would you watch for, or whom would you ask, to find out whether your reading is right?
-
-<details>
-<summary>Example</summary>
-
-Example (made up): Watch whether I use the search box or scroll the list first.
-
-</details>
-
-
 ### Your evidence · entry 2 of 5
 
 Section: practice-plan. Stable action: entry-2-saw.
 
-Return to your walkthrough. Write one thing you noticed, one possible explanation, or one unanswered question. Keep it to one claim.
+Return to your walkthrough. Write one claim, label it honestly, name the goal it affects and say how you could check it. Keep the claim in view while you label it.
 
 **Answer:** Entry 2 · What I saw or did
 
-
-
-
-### Is this a fact, a guess, or a question?
-
-Section: practice-plan. Stable action: entry-2-label.
-
-Label the entry you just wrote. Seeing a screen does not tell you what other people think or do.
-
 **Answer:** Entry 2 · Observed, inferred or unknown? (observed / inferred / unknown)
-
-
-
-
-### Why does this entry matter?
-
-Section: practice-plan. Stable action: entry-2-goal.
-
-Name the task or goal this entry affects. Describe what the person wants to achieve, not the button they press.
 
 **Answer:** Entry 2 · Which goal does this affect?
 
-
-
-
-### What would help you check it?
-
-Section: practice-plan. Stable action: entry-2-check.
-
-Name something you could observe or ask to check this claim. You are planning the check; you do not need to recruit anyone today.
-
 **Answer:** Entry 2 · How could you check it?
-
-
 
 
 ### Your evidence · entry 3 of 5
 
 Section: practice-plan. Stable action: entry-3-saw.
 
-Return to your walkthrough. Write one thing you noticed, one possible explanation, or one unanswered question. Keep it to one claim.
+Return to your walkthrough. Write one claim, label it honestly, name the goal it affects and say how you could check it. Keep the claim in view while you label it.
 
 **Answer:** Entry 3 · What I saw or did
 
-
-
-
-### Is this a fact, a guess, or a question?
-
-Section: practice-plan. Stable action: entry-3-label.
-
-Label the entry you just wrote. Seeing a screen does not tell you what other people think or do.
-
 **Answer:** Entry 3 · Observed, inferred or unknown? (observed / inferred / unknown)
-
-
-
-
-### Why does this entry matter?
-
-Section: practice-plan. Stable action: entry-3-goal.
-
-Name the task or goal this entry affects. Describe what the person wants to achieve, not the button they press.
 
 **Answer:** Entry 3 · Which goal does this affect?
 
-
-
-
-### What would help you check it?
-
-Section: practice-plan. Stable action: entry-3-check.
-
-Name something you could observe or ask to check this claim. You are planning the check; you do not need to recruit anyone today.
-
 **Answer:** Entry 3 · How could you check it?
-
-
 
 
 ### Your evidence · entry 4 of 5
 
 Section: practice-plan. Stable action: entry-4-saw.
 
-Return to your walkthrough. Write one thing you noticed, one possible explanation, or one unanswered question. Keep it to one claim.
+Return to your walkthrough. Write one claim, label it honestly, name the goal it affects and say how you could check it. Keep the claim in view while you label it.
 
 **Answer:** Entry 4 · What I saw or did
 
-
-
-
-### Is this a fact, a guess, or a question?
-
-Section: practice-plan. Stable action: entry-4-label.
-
-Label the entry you just wrote. Seeing a screen does not tell you what other people think or do.
-
 **Answer:** Entry 4 · Observed, inferred or unknown? (observed / inferred / unknown)
-
-
-
-
-### Why does this entry matter?
-
-Section: practice-plan. Stable action: entry-4-goal.
-
-Name the task or goal this entry affects. Describe what the person wants to achieve, not the button they press.
 
 **Answer:** Entry 4 · Which goal does this affect?
 
-
-
-
-### What would help you check it?
-
-Section: practice-plan. Stable action: entry-4-check.
-
-Name something you could observe or ask to check this claim. You are planning the check; you do not need to recruit anyone today.
-
 **Answer:** Entry 4 · How could you check it?
-
-
 
 
 ### Your evidence · entry 5 of 5
 
 Section: practice-plan. Stable action: entry-5-saw.
 
-Return to your walkthrough. Write one thing you noticed, one possible explanation, or one unanswered question. Keep it to one claim.
+Return to your walkthrough. Write one claim, label it honestly, name the goal it affects and say how you could check it. Keep the claim in view while you label it.
 
 **Answer:** Entry 5 · What I saw or did
 
-
-
-
-### Is this a fact, a guess, or a question?
-
-Section: practice-plan. Stable action: entry-5-label.
-
-Label the entry you just wrote. Seeing a screen does not tell you what other people think or do.
-
 **Answer:** Entry 5 · Observed, inferred or unknown? (observed / inferred / unknown)
-
-
-
-
-### Why does this entry matter?
-
-Section: practice-plan. Stable action: entry-5-goal.
-
-Name the task or goal this entry affects. Describe what the person wants to achieve, not the button they press.
 
 **Answer:** Entry 5 · Which goal does this affect?
 
-
-
-
-### What would help you check it?
-
-Section: practice-plan. Stable action: entry-5-check.
-
-Name something you could observe or ask to check this claim. You are planning the check; you do not need to recruit anyone today.
-
 **Answer:** Entry 5 · How could you check it?
-
-
 
 
 ### What does the person want?
@@ -656,6 +609,32 @@ Name what someone could do that would support your idea, and what would show it 
 **Answer:** How would you know the behaviour change helped?
 
 Again, something you could watch. It should be possible for the answer to be no.
+
+
+### Try the idea on a new screen
+
+Section: check. Stable action: transfer-decision.
+
+A different made-up screen, with no notes. Write your answer first; the example answers appear afterwards.
+
+**New case.** Made-up case: a neighbourhood library app shows a book page. The title and author sit at the top. A Reserve button sits below a long summary. The pickup branch and the expected waiting time appear only after Reserve is pressed. The library says: “People abandon reservations, so make the Reserve button bigger.”
+
+**Task:** Write one thing on this screen that is observed, one inferred explanation and one unknown. Then say what you would check before changing the button, and why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Treats “people abandon because the button is small” as observed, or goes straight to a bigger button without naming anything unknown.
+- Adequate: Separates a visible fact (the waiting time appears only after Reserve) from a guess (people leave because of it), names a real unknown and gives one check, such as watching two people try to reserve.
+- Strong: Adds a competing explanation such as the pickup branch, says what result would show the button is not the problem, and notes that one walkthrough cannot show what other people do.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Check your reasoning · 1 of 3
@@ -799,7 +778,7 @@ One line. It is what the Learn page will remind you of.
 
 Section: practice. Stable action: review-work.
 
-Review your answers below. Finish practice when the required work is present. Requesting creator feedback is a separate choice.
+Review your answers below. Finish practice when the required work is present. Asking a reviewer to check it against the three criteria is a separate choice.
 
 
 <details>
@@ -837,6 +816,52 @@ Ask me one question at a time, at most three. First ask me to label one statemen
 - If you wrote “people are confused”, write down the exact words or the step you saw instead, and keep confusion as your reading of it.
 
 
+
+</details>
+<details>
+<summary>Creator review and remediation criteria</summary>
+
+**A specific task and what the person wanted**
+
+Adequate evidence: One walkthrough of a named task with its start and actions, and a user goal written as an outcome for a person.
+
+0 — No task or goal is recorded.
+
+1 — A task is named, but the goal names a screen, button or fix rather than what the person needs.
+
+2 — A specific task is followed from a named start, and the user goal describes what the person needs to have happen.
+
+3 — As above, and the goal is tied to the evidence entries, with the business goal labelled as a guess and kept separate.
+
+Repair: Rewrite the user goal so it names what the person needs to have happen, without naming a screen or button. Recheck: The user goal reads as an outcome for a person, and the task has a clear start and end.
+
+**What you saw kept apart from what you guessed**
+
+Adequate evidence: Five evidence entries, each labelled observed, inferred or unknown, with a way to check anything that was not observed.
+
+0 — No labelled entries.
+
+1 — Entries exist, but claims about other people’s behaviour or feelings are labelled observed.
+
+2 — Each label matches what the entry is; nothing about other people sits under observed, and at least one entry is inferred or unknown with a way to check it.
+
+3 — As above, and mixed sentences are split into the visible part and the reading of it, with checks that could come out against the guess.
+
+Repair: Move any claim about other people’s behaviour or feelings from observed to inferred, and write what you would watch to check it. Recheck: Every observed entry is something you could point to on the screen.
+
+**One trade-off that is not about how it looks**
+
+Adequate evidence: Two improvements, one visual and one about behaviour, each with a check someone could watch, and one stated cost.
+
+0 — No improvements.
+
+1 — Both improvements are visual, or the checks cannot fail (for example “people will like it”).
+
+2 — One visual and one behaviour change, each with a check someone could watch, and the cost of one choice stated.
+
+3 — As above, and the trade-off names who pays the cost and what result would show the change did not help.
+
+Repair: Add a behaviour change with a check that could come out against it, and name what one change costs. Recheck: Both improvements have a watchable check, and one trade-off is not about appearance.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.

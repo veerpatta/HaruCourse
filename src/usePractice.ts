@@ -15,7 +15,10 @@ export const emptyRecord: RecordData = {
   status: "not-started",
   updatedAt: "",
 };
-export function usePractice(user: User, lessonId: string, storageKey: string) {
+export function usePractice(user: User, lessonId: string, storageKey: string, guard?: (record: RecordData) => string | null) {
+  // Checked before every upload; a message keeps the draft on this device.
+  const guardRef = useRef(guard);
+  guardRef.current = guard;
   const [record, render] = useState<RecordData>(() => {
     try {
       return recordSchema.parse(
@@ -41,6 +44,7 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
   const [status, setStatus] = useState("Loading saved work…");
   const [conflict, setConflict] = useState<CloudRecord | null>(null);
   const [hydrated, setHydrated] = useState(false);
+  const [savedRevision, setSavedRevision] = useState(0);
   const blocked = useRef(false);
   const url = "/api/progress?lessonId=" + encodeURIComponent(lessonId);
   function persist() {
@@ -99,6 +103,7 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
         return;
       }
       revision.current = remote.revision;
+      setSavedRevision(remote.revision);
       if (!dirty.current) {
         current.current = remote.record || emptyRecord;
         render(current.current);
@@ -124,6 +129,11 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
       return;
     if (!navigator.onLine) {
       setStatus("Saved on this device — it will upload when you’re back online");
+      return;
+    }
+    const held = guardRef.current?.(current.current);
+    if (held) {
+      setStatus(held);
       return;
     }
     const parsed = recordSchema.safeParse(current.current);
@@ -157,6 +167,7 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
         );
       const saved: CloudRecord = await r.json();
       revision.current = saved.revision;
+      if (active.current) setSavedRevision(saved.revision);
       if (serial === generation.current) {
         dirty.current = false;
         current.current = saved.record!;
@@ -254,10 +265,13 @@ export function usePractice(user: User, lessonId: string, storageKey: string) {
       dirty.current = false;
     }
     revision.current = conflict.revision;
+    setSavedRevision(conflict.revision);
     blocked.current = false;
     setConflict(null);
     persist();
     setStatus(useCloud ? "Saved online" : "Saving your chosen draft…");
   }
-  return { record, setRecord, status, conflict, resolve, hydrated };
+  // savedRevision is the server version this device last confirmed; a review
+  // request names it so the reviewer reads exactly that version.
+  return { record, setRecord, status, conflict, resolve, hydrated, savedRevision, dirty: () => dirty.current };
 }

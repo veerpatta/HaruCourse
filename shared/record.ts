@@ -51,6 +51,32 @@ export const guideSchema = z
   })
   .strict();
 export type GuideState = z.infer<typeof guideSchema>;
+// A review request names the criterion to check and the question for the
+// reviewer. The version reviewed is the saved revision that carries the
+// request; nothing is sent anywhere when it is made (4 October 2026).
+export const reviewRequestSchema = z.object({
+  criterion: z.string().trim().min(1).max(240),
+  question: z.string().trim().min(1).max(1000),
+  requestedAt: z.string().datetime(),
+  // For a recheck: what changed since the last review, or why it was kept.
+  change: z.string().max(2000).optional(),
+}).strict();
+// Anchored self-review when no reviewer is available. It is labelled as the
+// learner's own judgement and never counts as reviewed or demonstrated.
+export const selfReviewSchema = z.object({
+  criterion: z.string().trim().min(1).max(240),
+  level: z.number().int().min(0).max(3),
+  evidence: z.string().trim().min(1).max(2000),
+  at: z.string().datetime(),
+}).strict();
+// Existing skill shown with the learner's own artefact, for a skippable
+// visual-refresh lesson. It satisfies the recommended core path only; it is
+// not finished practice and stays pending until a reviewer checks it.
+export const demonstratedSchema = z.object({
+  reference: z.string().trim().min(1).max(2000),
+  evidence: z.string().trim().min(1).max(4000),
+  at: z.string().datetime(),
+}).strict();
 // Practice navigation and formative responses, never a score. Additive to v1.
 export const learningSchema = z.object({
   action: worksheetFieldId.optional(),
@@ -62,6 +88,9 @@ export const learningSchema = z.object({
   outputsConfirmed: z.boolean().optional(),
   repair: z.string().max(2000).optional(),
   finishedAt: z.string().datetime().optional(),
+  review: reviewRequestSchema.optional(),
+  selfReview: selfReviewSchema.optional(),
+  demonstrated: demonstratedSchema.optional(),
 }).strict();
 export const worksheetFilled = (w?: Worksheet | null) =>
   !!w && Object.values(w).some((v) => v.trim());
@@ -102,6 +131,11 @@ export const recordSchema = z
 export type RecordData = z.infer<typeof recordSchema>;
 export type User = { id: string; name: string; role: "creator" | "learner" };
 export type CloudRecord = { record: RecordData | null; revision: number };
+// What a creator review concluded about one criterion on one saved version.
+// "demonstrated-independently" is reserved for an unfamiliar task (the lesson's
+// transfer answer) that met the criterion with the allowed support.
+export const reviewOutcomes = ["needs-revision", "meets-criterion", "demonstrated-independently"] as const;
+export type ReviewOutcome = (typeof reviewOutcomes)[number];
 export type Feedback = {
   id: string;
   revision: number;
@@ -109,6 +143,19 @@ export type Feedback = {
   source: "creator" | "ai";
   body: string;
   created_at: string;
+  criterion?: string | null;
+  outcome?: ReviewOutcome | null;
+  evidence?: string | null;
+  nextAction?: string | null;
+};
+// The latest structured creator review per lesson, returned with course
+// records so My work can show reviewed and demonstrated states.
+export type ReviewSummary = {
+  lessonId: string;
+  revision: number;
+  criterion: string | null;
+  outcome: ReviewOutcome;
+  createdAt: string;
 };
 export const saveSchema = z
   .object({ record: recordSchema, expectedRevision: z.number().int().min(0) })
@@ -120,3 +167,25 @@ export const feedbackSchema = z
     id: z.string().uuid(),
   })
   .strict();
+// A creator review may also record its structure. AI critique (MCP) uses the
+// plain feedbackSchema above and can never set an outcome.
+export const creatorReviewSchema = feedbackSchema
+  .extend({
+    criterion: z.string().trim().min(1).max(240).optional(),
+    outcome: z.enum(reviewOutcomes).optional(),
+    evidence: z.string().trim().max(2000).optional(),
+    nextAction: z.string().trim().max(1000).optional(),
+  })
+  .strict()
+  .refine((v) => !v.outcome || !!v.criterion, {
+    message: "Name the criterion a review outcome refers to.",
+  });
+// Who reviews and how long a learner should expect to wait. Set by the creator.
+export const reviewSettingsSchema = z
+  .object({
+    reviewerName: z.string().trim().min(1).max(80),
+    responseWindow: z.string().trim().max(120),
+    contactNote: z.string().trim().max(300),
+  })
+  .strict();
+export type ReviewSettings = z.infer<typeof reviewSettingsSchema> & { updatedAt: string | null; configured: boolean };

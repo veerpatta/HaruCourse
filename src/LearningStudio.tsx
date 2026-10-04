@@ -27,12 +27,15 @@ import {
   ModuleOrientation,
 } from './orientation';
 import {
-  recordSchema,
-  worksheetFilled,
   type User,
-  type RecordData,
   type Feedback,
+  type ReviewSummary,
 } from "../shared/record";
+import { hasReviewWork, progressStates } from "../shared/learning";
+import { nextCoreLesson } from "./corePath";
+import { privacyHold } from "./privacy";
+import { CorePathPanel, DemonstratedSkill, PathModeSwitch, PathProgress, RevisitPanel, TrackNote, usePathMode } from "./PathPanel";
+import { CreatorReviewForm, FeedbackList, ProgressStatesRow, RequestReview, ReviewQueue, SelfReview, useReviewSettings } from "./ReviewPanel";
 // Whether the device reports a connection; the video block and save copy use
 // it. The record hook keeps its own guard, this is only for wording.
 function useOnline() {
@@ -69,20 +72,21 @@ export function LearningStudio({
   clearTarget: () => void;
   course: ReturnType<typeof useCourseRecords>;
 }) {
-  const {lesson: selected, section: navigationSection} = useNavigation();
+  const {lesson: selected, section: navigationSection, action: navigationAction} = useNavigation();
   const section = navigationSection || target?.section || (bookmark.position?.lessonId === selected ? bookmark.position.sectionId : "learn");
   const [browsedWeek, setWeek] = useState<number | null>(null);
   const week =
     browsedWeek ??
     lessons.find((l) => l.id === bookmark.position?.lessonId)?.week ??
     1;
-  const {records, error, loaded} = course;
-  function open(id: string, targetSection = "learn") {
+  const {records, reviews, error, loaded} = course;
+  const [pathMode, setPathMode] = usePathMode(user.id);
+  function open(id: string, targetSection = "learn", action?: string) {
     if (![baseline, ...lessons].some((l) => l.id === id)) return;
     const safe = sections.includes(targetSection as (typeof sections)[number])
       ? targetSection
       : "learn";
-    navigateHistory({lesson:id,section:safe});
+    navigateHistory({lesson:id,section:safe,action});
     if (id !== baseline.id) bookmark.remember(id, safe);
     window.scrollTo(0, 0);
   }
@@ -109,9 +113,17 @@ export function LearningStudio({
         }
         open={open}
         courseRecords={records}
+        courseReviews={reviews}
+        jumpTo={navigationAction}
       />
     );
-  const resume = chooseResumeLesson(lessons, records, bookmark.position?.lessonId);
+  // In the core path the next step follows the recommended order; an
+  // unfinished bookmarked lesson always comes first in either view.
+  const bookmarked = lessons.find((l) => l.id === bookmark.position?.lessonId);
+  const bookmarkOpen = !!bookmarked && !records.find((r) => r.lessonId === bookmarked.id)?.record.learning?.finishedAt;
+  const resume = pathMode === "core"
+    ? (bookmarkOpen ? bookmarked! : lessons.find((l) => l.id === nextCoreLesson(records, bookmark.position?.lessonId)) || lessons[0])
+    : chooseResumeLesson(lessons, records, bookmark.position?.lessonId);
   // For a lesson with guided steps, name the exact step to reopen so the
   // learner continues the unfinished action rather than the section alone.
   const resumeRecord = records.find((r) => r.lessonId === resume.id)?.record;
@@ -125,64 +137,69 @@ export function LearningStudio({
     !!resumeRecord.learning?.action ||
     !!resumeRecord.learning?.finishedAt
   );
-  if (mode === "My work")
+  const reviewsFor = (id: string) => reviews.filter((r) => r.lessonId === id);
+  const queue = user.role === "creator" ? <ReviewQueue items={lessons.flatMap((l) => { const r = records.find((x) => x.lessonId === l.id); return r ? [{ lesson: l, record: r.record, revision: r.revision }] : []; })} reviews={reviews} open={(id) => open(id, "practice")}/> : null;
+  if (mode === "My work") {
+    const withWork = [baseline, ...lessons].filter((l) =>
+      records.some((r) => r.lessonId === l.id && (r.record.notes || r.record.submission || r.record.minutes || r.record.status !== "not-started" || r.record.learning?.action)));
+    const states = withWork.map((l) => progressStates(records.find((r) => r.lessonId === l.id)?.record, reviewsFor(l.id)));
+    const count = (key: keyof ReturnType<typeof progressStates>) => states.filter((s) => s[key]).length;
     return (
       <div className="studio-page my-work-page">
         <span className="eyebrow">SAVED PRACTICE</span>
         <h1>My work</h1>
-        <ProgressOverview records={records}/>
-          <p className="page-lead">Open a draft, continue your practice, or read feedback.</p>
-          <details className="teaching-detail">
-            <summary>Practice history · {humanDuration(practiceTotals(records).minutes)}</summary>
-            <ul>{practiceTotals(records).sessions.map((s) => <li key={`${s.lessonId}:${s.startedAt}`}>{humanDate(s.startedAt)} · {lessons.find((l) => l.id === s.lessonId)?.title || "Baseline"} · {humanDuration(s.minutes)}</li>)}</ul>
-            {!practiceTotals(records).sessions.length && <p>No sessions recorded yet.</p>}
-          </details>
+        {queue}
+        <PathProgress lessons={lessons} records={records}/>
+        <section className="state-summary" aria-label="Four kinds of progress">
+          <h2>Four kinds of progress</h2>
+          <dl>
+            <div><dt>Work saved</dt><dd>{count("saved")} lessons</dd></div>
+            <div><dt>Practice finished</dt><dd>{count("finished")} lessons</dd></div>
+            <div><dt>Reviewed against criteria</dt><dd>{count("reviewed")} lessons</dd></div>
+            <div><dt>Demonstrated independently</dt><dd>{count("demonstrated")} lessons</dd></div>
+          </dl>
+          <p className="muted">Each needs more than the one before it. Saving is automatic; finishing is your choice; reviewed and demonstrated are recorded only by your reviewer on a saved version. Time, reading and AI never move these numbers.</p>
+        </section>
+        <p className="page-lead">Open a draft, continue your practice, or read feedback.</p>
+        <details className="teaching-detail">
+          <summary>Practice history · {humanDuration(practiceTotals(records).minutes)}</summary>
+          <ul>{practiceTotals(records).sessions.map((s) => <li key={`${s.lessonId}:${s.startedAt}`}>{humanDate(s.startedAt)} · {lessons.find((l) => l.id === s.lessonId)?.title || "Baseline"} · {humanDuration(s.minutes)}</li>)}</ul>
+          {!practiceTotals(records).sessions.length && <p>No sessions recorded yet.</p>}
+        </details>
         {!loaded && <p role="status">Loading saved work…</p>}
         {error && <p role="status">{error}</p>}
         <div className="compact-list">
-          {[baseline, ...lessons]
-            .filter((l) =>
-              records.some(
-                (r) =>
-                  r.lessonId === l.id &&
-                  (r.record.notes ||
-                    r.record.submission ||
-                    r.record.minutes ||
-                    r.record.status !== "not-started"),
-              ),
-            )
-            .map((l) => {
-              const saved = records.find((r) => r.lessonId === l.id)!.record;
-              return (
-                <button
-                  className="lesson-row"
-                  key={l.id}
-                  onClick={() => open(l.id, "practice")}
-                >
-                  <strong className="lesson-title">{l.title}</strong>
-                  <span className="lesson-status">{saved.learning?.finishedAt ? 'Practice finished' : statusLabel(saved.status)} <span aria-hidden>→</span></span>
-                </button>
-              );
-            })}
+          {withWork.map((l, i) => {
+            const saved = records.find((r) => r.lessonId === l.id)!.record;
+            const s = states[i];
+            return (
+              <button className="lesson-row" key={l.id} onClick={() => open(l.id, "practice")}>
+                <strong className="lesson-title">{l.title}</strong>
+                <span className="lesson-status">{s.demonstrated ? "Demonstrated independently" : s.reviewed ? "Reviewed" : s.finished ? "Practice finished" : saved.status === "ready-for-review" ? "Review requested" : statusLabel(saved.status)} <span aria-hidden>→</span></span>
+                <span className="state-chips" aria-label="Progress states">
+                  <span className={s.saved ? "is-on" : ""}>Saved</span>
+                  <span className={s.finished ? "is-on" : ""}>Finished</span>
+                  <span className={s.reviewed ? "is-on" : ""}>Reviewed</span>
+                  <span className={s.demonstrated ? "is-on" : ""}>Independent</span>
+                </span>
+              </button>
+            );
+          })}
         </div>
-        {loaded &&
-          !records.some(
-            (r) =>
-              r.record.notes ||
-              r.record.submission ||
-              r.record.minutes ||
-              r.record.status !== "not-started",
-          ) && <p>No saved work yet. Open a lesson to begin.</p>}
+        {loaded && !withWork.length && <p>No saved work yet. Open a lesson to begin.</p>}
       </div>
     );
+  }
   return (
     <div className="studio-page learn-page">
       <span className="eyebrow">YOUR COURSE</span>
       <h1>Learn</h1>
-      <ProgressOverview records={records}/>
+      {queue}
+      <PathProgress lessons={lessons} records={records}/>
       <section className="feature-card next-step-card">
         <span className="pill">YOUR NEXT STEP</span>
         <h2>{resume.title}</h2>
+        <TrackNote lessonId={resume.id}/>
         {resumeGuide && resumeTitle && (
           <p className="resume-step">
             Your saved activity: {resume.flow?.find(a => a.id === resumeRecord?.learning?.action)?.title || resumeTitle}.
@@ -200,9 +217,7 @@ export function LearningStudio({
                 ? bookmark.position.sectionId
                 : resumeGuide
                 ? "practice-plan"
-                : bookmark.position?.lessonId === resume.id
-                  ? bookmark.position.sectionId
-                  : "learn",
+                : "learn",
             )
           }
         >
@@ -213,6 +228,11 @@ export function LearningStudio({
         {bookmark.status}
       </p>
       {error && <p role="status">{error}</p>}
+      <RevisitPanel lessons={lessons} records={records} open={open}/>
+      <PathModeSwitch mode={pathMode} onChange={setPathMode}/>
+      {pathMode === "core" ? (
+        <CorePathPanel lessons={lessons} records={records} bookmarkId={bookmark.position?.lessonId} open={open}/>
+      ) : (<>
       <section className="module-browser" aria-labelledby="module-browser-title">
         <div className="module-browser-head">
           <h2 id="module-browser-title">Choose a lesson</h2>
@@ -240,6 +260,7 @@ export function LearningStudio({
           .map((l) => {
             const summary = lessonOrientation(l);
             const missing = missingPrerequisiteModules(l, lessons, records);
+            const saved = records.find(r => r.lessonId === l.id)?.record;
             return (
               <button
                 className="lesson-row lesson-preview"
@@ -251,7 +272,7 @@ export function LearningStudio({
                   {l.optional ? " · Optional" : ""}
                 </span>
                 <strong className="lesson-title">{l.title}</strong>
-                <span className="lesson-status">{records.find(r => r.lessonId === l.id)?.record.learning?.finishedAt ? "Practice finished ✓" : records.some(r => r.lessonId === l.id && r.record.status !== "not-started") ? "In progress" : "Not started"} <span aria-hidden>→</span></span>
+                <span className="lesson-status">{saved?.learning?.finishedAt ? "Practice finished ✓" : saved?.learning?.demonstrated ? "Skill shown ✓" : saved && saved.status !== "not-started" ? "In progress" : "Not started"} <span aria-hidden>→</span></span>
                 <span className="lesson-description"><b>Learn:</b> {summary.learn}</span>
                 <span className="lesson-preview-detail"><b>Do:</b> {summary.do}</span>
                 <span className="lesson-preview-detail"><b>Keep:</b> {summary.keep}</span>
@@ -260,6 +281,7 @@ export function LearningStudio({
             );
           })}
       </div>
+      </>)}
       <button className="text-button" onClick={() => open(baseline.id)}>
         Open starting-point diagnostic →
       </button>
@@ -278,6 +300,8 @@ export function LessonReader({
   next,
   open,
   courseRecords,
+  courseReviews = [],
+  jumpTo,
 }: {
   lesson: Lesson;
   section: string;
@@ -287,6 +311,8 @@ export function LessonReader({
   next?: Lesson;
   open: (id: string) => void;
   courseRecords: ReturnType<typeof useCourseRecords>['records'];
+  courseReviews?: ReviewSummary[];
+  jumpTo?: string;
 }) {
   const lessonTitle = useRef<HTMLHeadingElement>(null);
   const [activeSection, setActiveSection] = useState(sections.includes(section as typeof sections[number]) ? section : "learn");
@@ -312,8 +338,12 @@ export function LessonReader({
     lesson.id === "baseline-v1"
       ? `harucourse:baseline:v1:${user.id}`
       : `harucourse:lesson:${user.id}:${lesson.id}`,
+    // Contact details in an answer about another person never leave the device.
+    (r) => privacyHold(lesson, r),
   );
   const { record, setRecord, status, conflict, resolve } = practice;
+  const [reviewSettings] = useReviewSettings(user);
+  const lessonReviews = courseReviews.filter((r) => r.lessonId === lesson.id);
   const timer = useTimer({storageKey:`harucourse:timer:${user.id}:${lesson.id}`,enabled:user.role === "learner" && practice.hydrated,active:!conflict,setRecord});
   const online = useOnline();
   const missingPrerequisites = lesson.id === 'baseline-v1' ? [] : missingPrerequisiteModules(lesson, lessons, courseRecords);
@@ -324,21 +354,23 @@ export function LessonReader({
     if (pilot || user.role !== 'learner') return;
     timer.markStep(activeSection === 'learn' ? 1 : activeSection === 'practice-plan' ? record.guide?.step ?? 1 : lesson.steps.length);
   }, [activeSection, record.guide?.step, pilot]);
-  const [feedback, setFeedback] = useState<Feedback[]>([]),
-    [review, setReview] = useState(""),
-    [message, setMessage] = useState("");
+  const [feedback, setFeedback] = useState<Feedback[]>([]);
   const [feedbackError, setFeedbackError] = useState("");
   const endpoint = "/api/feedback?lessonId=" + lesson.id;
+  const feedbackVersion = useRef<number | null>(null);
   useEffect(() => {
     let active = true;
+    feedbackVersion.current = null;
+    // Asking whether feedback changed costs one row; the list is re-read only
+    // when the learner's records version has moved.
     const refresh = () =>
-      fetch(endpoint, { cache: "no-store" })
+      fetch(endpoint + (feedbackVersion.current === null ? "" : `&since=${feedbackVersion.current}`), { cache: "no-store" })
         .then((r) => (r.ok ? r.json() : Promise.reject()))
         .then((v) => {
-          if (active) {
-            setFeedback(v.feedback);
-            setFeedbackError("");
-          }
+          if (!active) return;
+          if (!v.unchanged) setFeedback(v.feedback);
+          feedbackVersion.current = typeof v.version === "number" ? v.version : null;
+          setFeedbackError("");
         })
         .catch(() => {
           if (active)
@@ -347,7 +379,7 @@ export function LessonReader({
             );
         });
     void refresh();
-    const refreshTimer = setInterval(() => {if(canPoll()) void refresh()}, 10000);
+    const refreshTimer = setInterval(() => {if(canPoll()) void refresh()}, 60000);
     const stopWatching = onActivityResume(refresh);
     return () => {
       active = false;
@@ -375,6 +407,8 @@ export function LessonReader({
         <details className="mobile-lesson-context"><summary>About this lesson</summary><p>{lesson.why}</p></details>
       </header>
       {lesson.id !== 'baseline-v1' && <LessonOrientation lesson={lesson}/>}
+      {lesson.id !== 'baseline-v1' && <TrackNote lessonId={lesson.id}/>}
+      {lesson.id !== 'baseline-v1' && <DemonstratedSkill lesson={lesson} record={record} setRecord={setRecord} readOnly={user.role !== "learner" || !practice.hydrated}/>}
       {!!missingPrerequisites.length && (
         <section className="prerequisite-notice" aria-labelledby="prerequisite-notice-title">
           <span className="eyebrow">EARLIER WORK IS MISSING</span>
@@ -421,7 +455,7 @@ export function LessonReader({
           </button>
         ))}
       </nav>
-      {pilot && <LessonFlow lesson={lesson} record={record} setRecord={setRecord} section={activeSection} go={go} readOnly={user.role !== "learner"} onStep={user.role === "learner" ? timer.markStep : () => {}} online={online}/>}
+      {pilot && <LessonFlow lesson={lesson} record={record} setRecord={setRecord} section={activeSection} go={go} readOnly={user.role !== "learner"} onStep={user.role === "learner" ? timer.markStep : () => {}} online={online} onPause={back} jumpTo={jumpTo}/>}
       <article
         id="learn"
         tabIndex={-1}
@@ -616,6 +650,7 @@ export function LessonReader({
         <h2>
           {user.role === "creator" ? "Review Haru’s practice" : "Your work"}
         </h2>
+        {lesson.id !== "baseline-v1" && <ProgressStatesRow record={record} reviews={lessonReviews}/>}
         {guided && (
           <>
             <WorksheetSummary lesson={lesson} record={record} />
@@ -658,98 +693,39 @@ export function LessonReader({
           PDFs with your reviewer separately.
           {guided ? " If you filled the worksheet in this app, you can leave this blank." : ""}
         </small>
+        {lesson.id !== "baseline-v1" && (
+          <RequestReview
+            key={`${lesson.id}:${record.learning?.review?.requestedAt || "new"}`}
+            lesson={lesson}
+            record={record}
+            setRecord={setRecord}
+            revision={practice.savedRevision}
+            pending={status !== "Saved online"}
+            readOnly={user.role !== "learner" || !practice.hydrated || !!conflict}
+            settings={reviewSettings}
+            latest={feedback.find((f) => f.source === "creator")}
+          />
+        )}
+        {lesson.id !== "baseline-v1" && <SelfReview lesson={lesson} record={record} setRecord={setRecord} readOnly={user.role !== "learner" || !practice.hydrated}/>}
+        {lesson.id === "baseline-v1" && user.role === "learner" && (
+          <label className="choice-option">
+            <input
+              type="checkbox"
+              checked={record.status === "ready-for-review"}
+              disabled={!hasReviewWork(record)}
+              onChange={(e) => setRecord((r) => ({ ...r, status: e.target.checked ? "ready-for-review" : "practicing" }))}
+            />
+            <span>This diagnostic is ready for my reviewer to read. Nothing is sent; they see it the next time they open my work.</span>
+          </label>
+        )}
         <details><summary>Time, sessions and confidence</summary>
           <SessionLog sessions={record.sessions || []} steps={lesson.steps}/>
           {user.role === 'learner' && <><TimeAdjust minutes={record.minutes} onAdd={timer.addMinutes} onSetTotal={timer.setTotal}/><ConfidencePicker value={record.confidence} onChange={timer.setConfidence}/></>}
         </details>
-        {user.role === "learner" && (
-          <>
-            <label htmlFor="lesson-status">Practice status</label>
-            <select
-              id="lesson-status"
-              value={record.status}
-              onChange={(e) =>
-                setRecord((r) => ({
-                  ...r,
-                  status: e.target.value as RecordData["status"],
-                }))
-              }
-            >
-              <option value="not-started">Not started</option>
-              <option value="practicing">Practicing</option>
-              <option
-                value="ready-for-review"
-                disabled={
-                  !(record.notes.trim() || worksheetFilled(record.worksheet)) ||
-                  !(record.submission.trim() || worksheetFilled(record.worksheet))
-                }
-              >
-                Ready for review
-              </option>
-            </select>
-          </>
-        )}
         {user.role === "creator" && (
-          <form
-            onSubmit={async (e) => {
-              e.preventDefault();
-              try {
-                const latest = await fetch(
-                  "/api/progress?lessonId=" + lesson.id,
-                ).then((r) => r.json());
-                if (JSON.stringify(latest.record) !== JSON.stringify(record))
-                  throw Error(
-                    "Haru saved a newer version. Reopen the lesson before reviewing.",
-                  );
-                const r = await fetch(endpoint, {
-                  method: "POST",
-                  headers: { "content-type": "application/json" },
-                  body: JSON.stringify({
-                    id: crypto.randomUUID(),
-                    revision: latest.revision,
-                    body: review,
-                  }),
-                });
-                if (!r.ok)
-                  throw Error(
-                    "Could not save review. A saved submission is required.",
-                  );
-                const f = await r.json();
-                setFeedback((v) => [f, ...v]);
-                setReview("");
-                setMessage("Creator review saved.");
-              } catch (e) {
-                setMessage(e instanceof Error ? e.message : "Review failed");
-              }
-            }}
-          >
-            <label htmlFor="lesson-review">Creator feedback</label>
-            <textarea
-              id="lesson-review"
-              value={review}
-              onChange={(e) => setReview(e.target.value)}
-              required
-              maxLength={12000}
-            />
-            <button className="primary">Save review</button>
-          </form>
+          <CreatorReviewForm lesson={lesson} record={record} endpoint={endpoint} onSaved={(f) => setFeedback((v) => [f, ...v])}/>
         )}
-        {message && <p role="status">{message}</p>}
-        <h3>Feedback</h3>
-        {feedbackError && <p role="status">{feedbackError}</p>}
-        {feedback.length ? (
-          feedback.map((f) => (
-            <article key={f.id}>
-              <strong>
-                {f.source === "ai" ? "AI critique" : "Creator review"} · version{" "}
-                {f.revision}
-              </strong>
-              <p>{f.body}</p>
-            </article>
-          ))
-        ) : (
-          <p>No feedback yet.</p>
-        )}
+        <FeedbackList lesson={lesson} feedback={feedback} record={record} error={feedbackError}/>
       </section>
       <div className="timer-clearance" aria-hidden="true"/>
       <div className="reader-actions" hidden={pilot && !finalAction}>

@@ -10,6 +10,8 @@ export type NavState = {
   // A course lesson id opened inside the learning studio.
   lesson: string | null;
   section?: string;
+  // One-shot: open the lesson at this action (for example a revisit task).
+  action?: string;
 };
 
 const initial: NavState = { tab: "Learn", baseline: false, lesson: null };
@@ -27,6 +29,7 @@ function read(state: unknown): NavState {
     section: typeof value.section === "string" ? value.section : "learn",
     baseline: value.baseline === true,
     lesson: typeof value.lesson === "string" ? value.lesson : null,
+    ...(typeof value.action === "string" ? { action: value.action } : {}),
   };
 }
 
@@ -41,7 +44,7 @@ function entry(state: NavState, scrollY: number): Entry {
 }
 
 function same(a: NavState, b: NavState) {
-  return a.tab === b.tab && a.baseline === b.baseline && a.lesson === b.lesson && a.section === b.section;
+  return a.tab === b.tab && a.baseline === b.baseline && a.lesson === b.lesson && a.section === b.section && a.action === b.action;
 }
 
 let current: NavState =

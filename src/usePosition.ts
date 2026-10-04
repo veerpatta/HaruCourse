@@ -74,13 +74,19 @@ export function usePosition(userId: string) {
   useEffect(() => {
     void sync();
     // A dirty position is already persisted locally, so deferring the sync until
-    // the app is online and on screen loses nothing.
-    const timer = setInterval(() => {
-      if (canPoll()) void sync();
+    // the app is online and on screen loses nothing. Unsent changes retry every
+    // two seconds; checking for another device's position costs a database
+    // read, so that happens once a minute and whenever the app wakes.
+    const retry = setInterval(() => {
+      if (state.current.dirty && canPoll()) void sync();
     }, 2000);
+    const refresh = setInterval(() => {
+      if (!state.current.dirty && canPoll()) void sync();
+    }, 60_000);
     const stopWatching = onActivityResume(() => void sync());
     return () => {
-      clearInterval(timer);
+      clearInterval(retry);
+      clearInterval(refresh);
       stopWatching();
     };
   }, [key]);

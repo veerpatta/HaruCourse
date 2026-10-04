@@ -10,8 +10,13 @@ import { timingSafeEqual } from "node:crypto";
 import { McpApi } from "./mcp";
 import {
   HttpError,
+  courseRecords,
   progress,
+  progressVersion,
+  readableVersion,
+  reviewSettings,
   saveProgress,
+  saveReviewSettings,
   listFeedback,
   saveFeedback,
 } from "./data";
@@ -27,7 +32,7 @@ import {
   session,
   token,
 } from "./auth";
-import { saveSchema, feedbackSchema } from "../shared/record";
+import { saveSchema, creatorReviewSchema, type User } from "../shared/record";
 
 const json = (data: unknown, status = 200, headers?: HeadersInit) =>
   Response.json(data, { status, headers });
@@ -63,7 +68,7 @@ async function authorize(request: Request, env: Env) {
   const scopes = authRequest.scope.length ? authRequest.scope : ["course:read"];
   const client = await env.OAUTH_PROVIDER.lookupClient(authRequest.clientId);
   if (!client) throw new HttpError(400, "Unknown client.");
-  let user = await session(request, env);
+  let user: User | null = await session(request, env);
   const csrfName =
     new URL(request.url).protocol === "https:"
       ? "__Host-haru_consent"
@@ -133,7 +138,7 @@ const defaultHandler: ExportedHandler<Env> = {
     if (path === "/authorize") return authorize(request, env);
     if (!path.startsWith("/api/")) return env.ASSETS.fetch(request);
     if (path === "/api/health" && request.method === "GET")
-      return json({ ok: true, version: "0.2.0" });
+      return json({ ok: true, version: "0.3.0" });
     if (path === "/api/login" && request.method === "POST") {
       sameOrigin(request);
       const credentials = credentialsSchema.parse(await bodyJson(request));
@@ -216,23 +221,28 @@ const defaultHandler: ExportedHandler<Env> = {
       }
       return json({ position: await read() }, result.meta.changes ? 200 : 409);
     }
-    const lessonId =
-      new URL(request.url).searchParams.get("lessonId") || baseline.id;
+    if (path === "/api/review-settings") {
+      if (request.method === "GET") return json({ settings: await reviewSettings(env, user) });
+      if (request.method === "PUT") return json({ settings: await saveReviewSettings(env, user, await bodyJson(request)) });
+      throw new HttpError(405, "Method not allowed.");
+    }
+    const params = new URL(request.url).searchParams;
+    const lessonId = params.get("lessonId") || baseline.id;
     if (lessonId !== baseline.id && !publishedLessonIds.has(lessonId))
       throw new HttpError(404, "Lesson not found.");
+    // `since` is the records version a client already holds. When nothing has
+    // changed the answer is one users row, not every progress row.
+    const sinceParam = params.get("since");
+    const since = sinceParam !== null && /^\d{1,12}$/.test(sinceParam) ? Number(sinceParam) : undefined;
     if (path === "/api/course-records" && request.method === "GET") {
-      const rows = await env.DB.prepare(
-        "SELECT lesson_id,revision,record_json FROM progress WHERE user_id=?",
-      )
-        .bind(user.role === "creator" ? "haru" : user.id)
-        .all();
-      return json({
-        records: rows.results.map((row) => ({
-          lessonId: row.lesson_id,
-          revision: row.revision,
-          record: JSON.parse(row.record_json as string),
-        })),
-      });
+      const result = await courseRecords(env, user, since);
+      if ("unchanged" in result) return json(result);
+      return new Response(result.body, { headers: { "content-type": "application/json" } });
+    }
+    if (path === "/api/progress/history" && request.method === "GET") {
+      const revision = Number(params.get("revision"));
+      if (!Number.isInteger(revision) || revision < 1) throw new HttpError(400, "Name a saved version.");
+      return json(await progressVersion(env, user, lessonId, revision));
     }
     if (path === "/api/progress" && request.method === "GET")
       return json(await progress(env, user, lessonId));
@@ -248,10 +258,13 @@ const defaultHandler: ExportedHandler<Env> = {
         ),
       );
     }
-    if (path === "/api/feedback" && request.method === "GET")
-      return json({ feedback: await listFeedback(env, user, lessonId) });
+    if (path === "/api/feedback" && request.method === "GET") {
+      const version = await readableVersion(env, user);
+      if (since !== undefined && since === version) return json({ unchanged: true, version });
+      return json({ feedback: await listFeedback(env, user, lessonId), version });
+    }
     if (path === "/api/feedback" && request.method === "POST") {
-      const value = feedbackSchema.parse(await bodyJson(request));
+      const value = creatorReviewSchema.parse(await bodyJson(request));
       return json(
         await saveFeedback(
           env,
@@ -261,6 +274,7 @@ const defaultHandler: ExportedHandler<Env> = {
           value.id,
           "creator",
           lessonId,
+          { criterion: value.criterion, outcome: value.outcome, evidence: value.evidence, nextAction: value.nextAction },
         ),
         201,
       );

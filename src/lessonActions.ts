@@ -1,6 +1,7 @@
 import type { Lesson, WorksheetField } from './teaching';
 import type { LessonAction } from './lessonOneFlow';
 import { actionPlans, type ActionPlan } from './moduleActionPlans';
+import { lessonOneCriteria, lessonOneQuestions, lessonOneTransfer } from './lessonOneFlow';
 
 const conditional: Record<string, {field:string; value:string; answers:string[]}[]> = {
  'week1-day3-v1': [{field:'session-status',value:'Real conversation with a consenting adult',answers:['observations','interpretations']}],
@@ -39,7 +40,17 @@ function laterModulePlan(input: Lesson): ActionPlan | undefined {
  };
 }
 
+// Lesson 1 keeps its own authored flow; it gains the transfer case and the
+// review anchors for its three existing criteria here.
+function withLessonOne(input: Lesson): Lesson {
+ const a=input.apprenticeship!;
+ return {...input, criteria: input.criteria || lessonOneCriteria, apprenticeship: {...a, transfer: a.transfer || lessonOneTransfer,
+  worksheet:[...a.worksheet!,{id:'transfer-case',title:'Use it on a new case',intro:'Optional for finishing practice. A reviewer needs it before recording that you can use this skill independently.',fields:[transferField]}],
+  guide:a.guide!.map((g,i)=>i===4?{...g,fields:[...(g.fields||[]),transferField.id]}:g)}};
+}
+
 export function withLessonActions(input: Lesson): Lesson {
+ if (input.id === 'week1-day1-v1') return withLessonOne(input);
  const found = actionPlans[input.id] || laterModulePlan(input);
  if (!found) return input; // Lesson 1's permanent action IDs remain untouched.
  // Material authored beside the guided overlay joins any reviewed plan material.
@@ -94,6 +105,7 @@ export function withLessonActions(input: Lesson): Lesson {
 }
 
 export function actionQuestion(l:Lesson,a:LessonAction) {
+ if(l.id==='week1-day1-v1' && a.answerId && lessonOneQuestions[a.answerId]) { const q=lessonOneQuestions[a.answerId]; return {id:a.answerId,question:q.question,options:q.options}; }
  const guide=l.apprenticeship?.guide;
  if(a.kind==='check') { const q=l.apprenticeship?.checks?.[a.index!]; return q && {id:a.answerId || `check-${a.index!+1}`,question:q.question,options:q.options}; }
  if(a.kind==='supported') { const q=guide?.[a.guideIndex!]?.supported; return q && {id:a.answerId!,question:q.question,options:q.options}; }
