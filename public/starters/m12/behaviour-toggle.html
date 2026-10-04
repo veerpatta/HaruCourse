@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just enough JavaScript · Northside Tool Library (made up practice page)</title>
+<!--
+  HaruCourse · Module 12 · Lesson 6 starter: behaviour-toggle.html
+  Practice material for a made up product, the Northside Tool Library. Nothing here is real.
+
+  How to use it on Windows
+    1. Save this file in Documents\HaruCourse\Practice\m12-l06-v1\ and keep the name ending in .html
+       (if File Explorer shows behaviour-toggle.html.txt, rename it so it ends in .html).
+    2. Double-click it to open it in your browser. Right-click it and choose Open with, then Notepad.
+    3. Find CHANGE THIS ONE THING FIRST in the page, make that one change, save with Ctrl+S,
+       then reload the browser with F5.
+    4. If the page is blank or did not change: check the name ends in .html, press Ctrl+Z in Notepad
+       to undo your last change and save again, or download a fresh copy of this file.
+
+  Two behaviours are on this page:
+    - The safety notes open and close with a native details element. No script is involved.
+    - The "show only available tools" button is added by a short script. Without the script the button
+      does not appear, and the whole list stays visible with each tool's status written out, so finding an
+      available tool is still possible.
+
+  To see the page without JavaScript in Chrome or Edge: press F12, press Ctrl+Shift+P, type
+  Disable JavaScript, press Enter, then reload with F5. Type Enable JavaScript the same way to undo.
+  The setting only lasts while the developer tools stay open.
+  This page makes no requests to any other site.
+-->
+<style>
+  :root {
+    --color-text: #1f2a28;
+    --color-text-quiet: #55615e;
+    --color-surface: #fbfaf6;
+    --color-surface-tint: #e8f0ec;
+    --color-action: #1d5c4d;
+    --color-action-text: #ffffff;
+    --color-border: #6b7a76;
+    --color-focus: #b8500f;
+    --space-2: 8px;
+    --space-3: 16px;
+    --radius: 6px;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Georgia, "Times New Roman", serif; line-height: 1.5; color: var(--color-text); background: var(--color-surface); }
+  main { max-width: 42rem; margin: 0 auto; padding: var(--space-3); }
+  :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+  details { border: 1px solid var(--color-border); border-radius: var(--radius); padding: var(--space-2) var(--space-3); background: #ffffff; }
+  summary { cursor: pointer; font-weight: bold; }
+  .tools { list-style: none; padding: 0; }
+  .tools li { padding: var(--space-2) 0; border-bottom: 1px solid var(--color-border); }
+  .status { color: var(--color-text-quiet); }
+  button { font: inherit; background: var(--color-action); color: var(--color-action-text); border: 0; border-radius: var(--radius); padding: var(--space-2) var(--space-3); cursor: pointer; }
+  button[aria-pressed="true"] { box-shadow: inset 0 0 0 3px var(--color-surface-tint); }
+  .quiet { color: var(--color-text-quiet); font-size: 0.875rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Tools to borrow</h1>
+  <p class="quiet">Practice page for HaruCourse Module 12, Lesson 6. Made up product; nothing here is real.</p>
+
+  <details>
+    <summary>Safety notes for every tool</summary>
+    <p>Wear eye protection with anything that cuts or drills. Check the cable before you plug a tool in.
+       Ask staff if you have not used a tool before.</p>
+  </details>
+
+  <h2>This week's tools</h2>
+  <noscript><p>JavaScript is off, so every tool is listed. Each one says whether it is available.</p></noscript>
+
+  <!-- CHANGE THIS ONE THING FIRST: change the words "Show only available tools" on the next line to
+       "Hide tools that are on loan". Save, reload, and press the button. The script still works, because it
+       finds the button by its id, not by its words. -->
+  <p><button type="button" id="filter-button" aria-pressed="false" aria-controls="tool-list" hidden>Show only available tools</button></p>
+  <p id="filter-status" class="quiet" aria-live="polite"></p>
+
+  <ul class="tools" id="tool-list">
+    <li data-status="available">Cordless drill · <span class="status">Available today</span></li>
+    <li data-status="on-loan">Circular saw · <span class="status">On loan until Thursday</span></li>
+    <li data-status="available">Pressure washer · <span class="status">Available today</span></li>
+    <li data-status="on-loan">Hedge trimmer · <span class="status">On loan until Saturday</span></li>
+    <li data-status="available">Wallpaper steamer · <span class="status">Available today</span></li>
+  </ul>
+</main>
+<script>
+  // 1. Find the things the script works with.
+  var button = document.getElementById('filter-button');
+  var items = document.querySelectorAll('#tool-list li');
+  var statusLine = document.getElementById('filter-status');
+
+  // 2. The page works without this script, so the button only appears once the script is running.
+  button.hidden = false;
+
+  // 3. Wait for an event, then change the page.
+  button.addEventListener('click', function () {
+    var showingOnlyAvailable = button.getAttribute('aria-pressed') === 'true';
+    var next = !showingOnlyAvailable;
+    button.setAttribute('aria-pressed', String(next));
+    var shown = 0;
+    items.forEach(function (item) {
+      var hide = next && item.dataset.status !== 'available';
+      item.hidden = hide;
+      if (!hide) shown = shown + 1;
+    });
+    statusLine.textContent = next ? 'Showing ' + shown + ' available tools.' : 'Showing all tools.';
+  });
+</script>
+</body>
+</html>

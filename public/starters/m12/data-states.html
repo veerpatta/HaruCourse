@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data that arrives later · Northside Tool Library (made up practice page)</title>
+<!--
+  HaruCourse · Module 12 · Lesson 7 starter: data-states.html
+  Practice material for a made up product, the Northside Tool Library. Nothing here is real.
+
+  How to use it on Windows
+    1. Save this file in Documents\HaruCourse\Practice\m12-l07-v1\ and keep the name ending in .html
+       (if File Explorer shows data-states.html.txt, rename it so it ends in .html).
+    2. Double-click it to open it in your browser. Right-click it and choose Open with, then Notepad.
+    3. Find CHANGE THIS ONE THING FIRST in the script near the bottom, make that one change, save with
+       Ctrl+S, reload the browser with F5, then press "Load: nothing matches".
+    4. If the page is blank or did not change: check the name ends in .html, press Ctrl+Z in Notepad
+       to undo your last change and save again, or download a fresh copy of this file.
+
+  Why there is no real request here: the tool list lives inside this file, in the script element with
+  id "tool-data", and the buttons pretend to be a network that answers, answers with nothing, fails or
+  never answers. A page opened from your own folder (an address starting file://) usually cannot read a
+  data file sitting next to it, and browsers differ in how they refuse. A real request needs the page to
+  be served from an address starting http:// or https://, by a local server or a hosted site. That is
+  optional; nothing in the course requires it. This page makes no requests to any other site.
+-->
+<style>
+  :root {
+    --color-text: #1f2a28;
+    --color-text-quiet: #55615e;
+    --color-surface: #fbfaf6;
+    --color-surface-tint: #e8f0ec;
+    --color-action: #1d5c4d;
+    --color-action-text: #ffffff;
+    --color-border: #6b7a76;
+    --color-error: #a3271b;
+    --color-focus: #b8500f;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+    --row-height: 4.5rem;
+    --radius: 6px;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Georgia, "Times New Roman", serif; line-height: 1.5; color: var(--color-text); background: var(--color-surface); }
+  main { max-width: 44rem; margin: 0 auto; padding: var(--space-3); }
+  :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+  fieldset { border: 1px solid var(--color-border); border-radius: var(--radius); margin: 0 0 var(--space-3); padding: var(--space-2) var(--space-3) var(--space-3); }
+  legend { font-weight: bold; padding: 0 var(--space-1); }
+  label { display: block; margin-top: var(--space-2); }
+  select, input[type="search"] { font: inherit; padding: var(--space-1) var(--space-2); border: 1px solid var(--color-border); border-radius: var(--radius); width: 100%; max-width: 20rem; }
+  .practice-buttons { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  button { font: inherit; background: var(--color-action); color: var(--color-action-text); border: 0; border-radius: var(--radius); padding: var(--space-2) var(--space-3); cursor: pointer; }
+  button.secondary { background: #ffffff; color: var(--color-action); border: 1px solid var(--color-action); }
+  .results { list-style: none; margin: 0; padding: 0; }
+  .row { display: flex; gap: var(--space-3); align-items: center; min-height: var(--row-height); border-bottom: 1px solid var(--color-border); padding: var(--space-2) 0; }
+  .thumb { flex: none; width: 3.5rem; height: 3.5rem; border-radius: var(--radius); background: var(--color-surface-tint); display: flex; align-items: center; justify-content: center; font-size: 0.75rem; text-align: center; color: var(--color-text-quiet); }
+  .thumb svg { width: 2rem; height: 2rem; color: var(--color-action); }
+  .name { font-weight: bold; overflow-wrap: anywhere; }
+  .meta { color: var(--color-text-quiet); font-size: 0.9375rem; }
+  .placeholder .thumb, .placeholder .bar { background: var(--color-surface-tint); }
+  .placeholder .bar { height: 1rem; width: 60%; border-radius: var(--radius); }
+  .message { border-left: 4px solid var(--color-border); padding: var(--space-2) var(--space-3); background: #ffffff; margin: 0 0 var(--space-3); }
+  .message.error { border-left-color: var(--color-error); }
+  .message.error strong { color: var(--color-error); }
+  .quiet { color: var(--color-text-quiet); font-size: 0.875rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Tools near you</h1>
+  <p class="quiet">Practice page for HaruCourse Module 12, Lesson 7. Made up product and data; nothing here is real.</p>
+
+  <form id="filters" onsubmit="return false">
+    <fieldset>
+      <legend>Filters</legend>
+      <label for="type">Type of tool</label>
+      <select id="type" name="type">
+        <option value="All">All types</option>
+        <option value="Drills">Drills</option>
+        <option value="Saws">Saws</option>
+        <option value="Garden">Garden</option>
+        <option value="Decorating">Decorating</option>
+      </select>
+      <label for="search">Name contains</label>
+      <input type="search" id="search" name="search" autocomplete="off">
+    </fieldset>
+  </form>
+
+  <fieldset>
+    <legend>Practice: what should the pretend network do?</legend>
+    <div class="practice-buttons">
+      <button type="button" data-outcome="answer">Load normally</button>
+      <button type="button" class="secondary" data-outcome="empty">Load: nothing matches</button>
+      <button type="button" class="secondary" data-outcome="fail">Load: request fails</button>
+      <button type="button" class="secondary" data-outcome="never">Load: never answers</button>
+    </div>
+    <p class="quiet">Waits are shortened for practice: a "still loading" message at 3 seconds and a timeout at 10 seconds. In your own design, decide your own thresholds. Here, Try again always works, as if the connection came back. Changing a filter loads the list again.</p>
+  </fieldset>
+
+  <p id="status" role="status" class="quiet"></p>
+  <div id="state"></div>
+  <ul id="results" class="results"></ul>
+
+  <noscript><p>This practice page needs JavaScript to pretend to load data. With JavaScript off, a real page should still show something useful, for example a list rendered by the server.</p></noscript>
+</main>
+
+<script type="application/json" id="tool-data">
+[
+  {"name": "Cordless drill", "type": "Drills", "status": "Available today", "photo": "drill"},
+  {"name": "Hammer drill", "type": "Drills", "status": "On loan until Thursday", "photo": "drill"},
+  {"name": "Circular saw", "type": "Saws", "status": "On loan until Saturday", "photo": "saw"},
+  {"name": "Jigsaw", "type": "Saws", "status": "Available today"},
+  {"name": "Long-reach hedge trimmer with telescopic pole, spare blade and shoulder strap", "type": "Garden", "status": "Available tomorrow", "photo": "garden"},
+  {"name": "Pressure washer", "type": "Garden", "photo": "garden"},
+  {"name": "Lawn aerator", "type": "Garden", "status": "Available today", "photo": "garden"},
+  {"name": "Wallpaper steamer", "type": "Decorating", "status": "Available today", "photo": "decorating"},
+  {"name": "Paint sprayer", "type": "Decorating", "status": "On loan until Friday"},
+  {"name": "Tile cutter", "type": "Decorating", "status": "Available today", "photo": "decorating"},
+  {"name": "Mitre saw", "type": "Saws", "status": "Available today", "photo": "saw"},
+  {"name": "Stud finder", "type": "Decorating", "status": "Available today", "photo": "decorating"}
+]
+</script>
+
+<script>
+  // The data above is awkward on purpose, like real data: two tools have no photo, one has no status and
+  // one name is eleven words long.
+  var DATA = JSON.parse(document.getElementById('tool-data').textContent);
+
+  // CHANGE THIS ONE THING FIRST: rewrite the empty message on the next line in your own words from your
+  // Module 8 state specification. Keep the quotation marks. Save, reload, press "Load: nothing matches".
+  var EMPTY_MESSAGE = 'No tools match those filters. Showing every type usually helps.';
+
+  var ERROR_MESSAGE = 'The list could not be loaded. Your filters are still set, and nothing you chose has been lost.';
+  var SLOW_MESSAGE = 'Still loading. This can take a moment on a slow connection.';
+  var TIMEOUT_MESSAGE = 'This is taking too long. Your filters are still set. You can try again now.';
+
+  // Your turn later: how many rows does your real data usually return? Reserve that many.
+  var PLACEHOLDER_ROWS = 4;
+  var SLOW_AFTER_MS = 3000;
+  var TIMEOUT_AFTER_MS = 10000;
+
+  // With a server (an address starting http:// or https://) the same list could come from a file:
+  //   fetch('tools.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+  // Opened from your own folder (file://), that request is usually refused, which is why this page keeps
+  // its data inside itself.
+
+  var stateBox = document.getElementById('state');
+  var list = document.getElementById('results');
+  var statusLine = document.getElementById('status');
+  var typeSelect = document.getElementById('type');
+  var searchBox = document.getElementById('search');
+  var current = 0;
+
+  var icons = {
+    drill: '<path d="M4 9h11v5H4zM15 10h5v3h-5zM8 14h3v6H8z" fill="currentColor"/>',
+    saw: '<circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2" fill="currentColor"/>',
+    garden: '<path d="M12 21V9M12 9c-4 0-6-3-6-6 4 0 6 3 6 6zM12 12c4 0 6-3 6-6-4 0-6 3-6 6z" fill="none" stroke="currentColor" stroke-width="2"/>',
+    decorating: '<path d="M5 4h12v5H5zM11 9v4M9 13h4v8H9z" fill="none" stroke="currentColor" stroke-width="2"/>'
+  };
+
+  function clear() { stateBox.innerHTML = ''; list.innerHTML = ''; }
+
+  function showPlaceholders() {
+    clear();
+    for (var i = 0; i < PLACEHOLDER_ROWS; i++) {
+      var li = document.createElement('li');
+      li.className = 'row placeholder';
+      li.setAttribute('aria-hidden', 'true');
+      li.innerHTML = '<span class="thumb"></span><span class="bar"></span>';
+      list.appendChild(li);
+    }
+  }
+
+  function showMessage(kind, text, buttonLabel, onPress) {
+    clear();
+    var box = document.createElement('div');
+    box.className = 'message' + (kind === 'error' ? ' error' : '');
+    var p = document.createElement('p');
+    p.innerHTML = kind === 'error' ? '<strong>Not loaded.</strong> ' : '';
+    p.appendChild(document.createTextNode(text));
+    box.appendChild(p);
+    if (buttonLabel) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = buttonLabel;
+      b.addEventListener('click', onPress);
+      box.appendChild(b);
+    }
+    stateBox.appendChild(box);
+    statusLine.textContent = text;
+  }
+
+  function matching() {
+    var type = typeSelect.value;
+    var words = searchBox.value.trim().toLowerCase();
+    return DATA.filter(function (tool) {
+      return (type === 'All' || tool.type === type) && (!words || tool.name.toLowerCase().indexOf(words) !== -1);
+    });
+  }
+
+  function showContent(rows) {
+    clear();
+    rows.forEach(function (tool) {
+      var li = document.createElement('li');
+      li.className = 'row';
+      var thumb = tool.photo && icons[tool.photo]
+        ? '<span class="thumb"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + icons[tool.photo] + '</svg></span>'
+        : '<span class="thumb">No photo yet</span>';
+      li.innerHTML = thumb + '<span><span class="name"></span><br><span class="meta"></span></span>';
+      li.querySelector('.name').textContent = tool.name;
+      li.querySelector('.meta').textContent = tool.type + ' · ' + (tool.status || 'Status not known');
+      list.appendChild(li);
+    });
+    statusLine.textContent = rows.length + (rows.length === 1 ? ' tool found.' : ' tools found.');
+  }
+
+  function load(outcome) {
+    var request = ++current;
+    showPlaceholders();
+    statusLine.textContent = 'Loading tools…';
+    var slowTimer = setTimeout(function () {
+      if (request === current) statusLine.textContent = SLOW_MESSAGE;
+    }, SLOW_AFTER_MS);
+    var timeoutTimer = setTimeout(function () {
+      if (request !== current) return;
+      current++;
+      showMessage('error', TIMEOUT_MESSAGE, 'Try again', function () { load('answer'); });
+    }, TIMEOUT_AFTER_MS);
+    function finish(fn) {
+      if (request !== current) return;
+      clearTimeout(slowTimer);
+      clearTimeout(timeoutTimer);
+      fn();
+    }
+    if (outcome === 'never') return;
+    if (outcome === 'fail') {
+      setTimeout(function () {
+        finish(function () { showMessage('error', ERROR_MESSAGE, 'Try again', function () { load('answer'); }); });
+      }, 1500);
+      return;
+    }
+    setTimeout(function () {
+      finish(function () {
+        var rows = outcome === 'empty' ? [] : matching();
+        if (rows.length) showContent(rows);
+        else showMessage('empty', EMPTY_MESSAGE, 'Show every type', function () {
+          typeSelect.value = 'All';
+          searchBox.value = '';
+          load('answer');
+        });
+      });
+    }, 1200);
+  }
+
+  typeSelect.addEventListener('change', function () { load('answer'); });
+  searchBox.addEventListener('change', function () { load('answer'); });
+  document.querySelectorAll('[data-outcome]').forEach(function (button) {
+    button.addEventListener('click', function () { load(button.getAttribute('data-outcome')); });
+  });
+  load('answer');
+</script>
+</body>
+</html>

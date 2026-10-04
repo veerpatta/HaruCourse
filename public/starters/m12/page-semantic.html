@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cordless drill · Northside Tool Library (made up practice page)</title>
+<!--
+  HaruCourse · Module 12 · Lesson 2 starter: page-semantic.html
+  Practice material for a made up product, the Northside Tool Library. Nothing here is real.
+
+  How to use it on Windows
+    1. Save this file in Documents\HaruCourse\Practice\m12-l02-v1\ and keep the name ending in .html
+       (if File Explorer shows page-semantic.html.txt, rename it so it ends in .html).
+    2. Double-click it to open it in your browser. Right-click it and choose Open with, then Notepad,
+       to see the same file as text.
+    3. Find the comment that says CHANGE THIS ONE THING FIRST, make that one change in Notepad,
+       save with Ctrl+S, then reload the browser with F5.
+    4. If the page is blank or did not change: check the name ends in .html, press Ctrl+Z in Notepad
+       to undo your last change and save again, or download a fresh copy of this file.
+
+  This page makes no requests to any other site. It works opened from your own folder and from the
+  course site. Three markup problems are planted in it on purpose; the answers are at the very bottom
+  of this file. Read the page with the styling off before you look at them.
+-->
+<!--
+  To turn the styling off by hand: on the next line, change <style id="page-style"> to
+  <style id="page-style" media="not all">, save and reload. Change it back to undo.
+  (The Turn styling off button on the page does the same thing while JavaScript is running.)
+-->
+<style id="page-style">
+  :root {
+    --color-text: #1f2a28;
+    --color-text-quiet: #55615e;
+    --color-surface: #fbfaf6;
+    --color-surface-tint: #e8f0ec;
+    --color-action: #1d5c4d;
+    --color-action-text: #ffffff;
+    --color-border: #6b7a76;
+    --color-focus: #b8500f;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+    --space-4: 24px;
+    --radius: 6px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.5;
+    color: var(--color-text);
+    background: var(--color-surface);
+  }
+  a { color: var(--color-action); }
+  :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+  .skip-link { position: absolute; left: var(--space-2); top: -40px; background: var(--color-surface); padding: var(--space-2); }
+  .skip-link:focus { top: var(--space-2); }
+  .practice-tools { background: var(--color-surface-tint); padding: var(--space-2) var(--space-3); font-family: system-ui, sans-serif; font-size: 0.875rem; }
+  header, main, footer { max-width: 42rem; margin: 0 auto; padding: var(--space-3); }
+  header nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: var(--space-3); padding: 0; margin: var(--space-2) 0 0; }
+  .facts { display: flex; flex-wrap: wrap; gap: var(--space-2); padding: 0; list-style: none; }
+  .facts li { background: var(--color-surface-tint); padding: var(--space-1) var(--space-2); border-radius: var(--radius); }
+  .reserve, button { display: inline-block; font: inherit; background: var(--color-action); color: var(--color-action-text); border: 0; border-radius: var(--radius); padding: var(--space-2) var(--space-3); text-decoration: none; cursor: pointer; }
+  .heading-look { font-size: 1.5rem; font-weight: bold; margin: var(--space-4) 0 var(--space-2); }
+  .price-row { display: flex; justify-content: space-between; border-bottom: 1px solid var(--color-border); padding: var(--space-1) 0; }
+  .price-row.head { font-weight: bold; }
+  .status { color: var(--color-text-quiet); }
+  footer { color: var(--color-text-quiet); font-size: 0.875rem; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to the main content</a>
+
+<div class="practice-tools" role="region" aria-label="Practice tools">
+  Practice page for HaruCourse Module 12, Lesson 2. Made up product; nothing here is real.
+  <button type="button" id="style-toggle" hidden aria-pressed="false">Turn styling off</button>
+</div>
+
+<header>
+  <a href="#main">Northside Tool Library</a>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="#main">Borrow a tool</a></li>
+      <li><a href="#main">How it works</a></li>
+      <li><a href="#main">Opening hours</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <!-- CHANGE THIS ONE THING FIRST: replace the words between <h1> and </h1> with the title of a page
+       from your own product. Save with Ctrl+S, reload the browser with F5, and check the new title appears. -->
+  <h1>Cordless drill</h1>
+
+  <ul class="facts" aria-label="Key facts">
+    <li>Free to borrow for members</li>
+    <li>Loan period: 3 days</li>
+    <li>Collect from the Northside shop</li>
+  </ul>
+
+  <p class="status">Status: available today.</p>
+
+  <p><a class="reserve" href="#">Reserve this drill</a></p>
+  <p>Reserving holds the drill for two hours while you come to collect it.
+     <a href="#main">See other dates</a></p>
+
+  <h2>What comes with it</h2>
+  <ul>
+    <li>Two batteries and a charger</li>
+    <li>Six wood drill bits</li>
+    <li>A carry case</li>
+  </ul>
+
+  <div class="heading-look">Safety notes</div>
+  <p>Wear eye protection. Unplug the charger when the battery is full. Ask staff if you have not used a drill before.</p>
+
+  <h2>Late return charges</h2>
+  <div class="price-list">
+    <div class="price-row head"><span>Days late</span><span>Charge</span></div>
+    <div class="price-row"><span>1 day</span><span>£1</span></div>
+    <div class="price-row"><span>2 to 5 days</span><span>£3</span></div>
+    <div class="price-row"><span>More than 5 days</span><span>£5 and a call from staff</span></div>
+  </div>
+</main>
+
+<footer>
+  <p>Northside Tool Library is a made up example used for HaruCourse practice.</p>
+</footer>
+
+<script>
+  // Practice helper: shows the Turn styling off button only when JavaScript runs.
+  (function () {
+    var button = document.getElementById('style-toggle');
+    var style = document.getElementById('page-style');
+    if (!button || !style) return;
+    button.hidden = false;
+    button.addEventListener('click', function () {
+      style.disabled = !style.disabled;
+      button.setAttribute('aria-pressed', String(style.disabled));
+      button.textContent = style.disabled ? 'Turn styling back on' : 'Turn styling off';
+    });
+  })();
+</script>
+<!--
+  ANSWERS: read these only after your own unstyled reading.
+
+  Problem 1. "Reserve this drill" is a link (an a element with href="#") styled to look like a button.
+  It does something on this page rather than going somewhere, so it should be a button element.
+  As a link it is announced as a link and the space bar does nothing.
+
+  Problem 2. "Safety notes" looks like a heading but is a div with bold styling, so it is missing from
+  the heading outline and nobody using headings to move around can reach it. It should be an h2.
+
+  Problem 3. The late return charges are built from div rows. Unstyled, they run together, and nothing
+  tells a screen reader which number belongs to which column. They should be a table with a caption
+  and header cells (th) for "Days late" and "Charge".
+
+  Repair each one by changing the element, not by adding styling back.
+-->
+</body>
+</html>

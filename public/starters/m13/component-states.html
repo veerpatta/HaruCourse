@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supplied component: button and text input · Northside Tool Library (made up practice material)</title>
+<!--
+  HaruCourse · Module 13 starter: component-states.html
+  A supplied working component for a made up product, the Northside Tool Library. Nothing here is real.
+  Core lessons use it as the working component you document, check and review. In the technical
+  extension (Lesson 4) it is the working starting point before you build your own.
+
+  How to use it on Windows
+    1. Save this file in Documents\HaruCourse\Practice\ followed by the lesson id (for example
+       Documents\HaruCourse\Practice\m13-l04-v1\) and keep the name ending in .html.
+       If File Explorer shows component-states.html.txt, rename it so it ends in .html.
+    2. Double-click it to open it in your browser. Right-click it and choose Open with, then Notepad.
+    3. You only need Notepad for the technical extension. There, find CHANGE THIS ONE THING FIRST in the
+       style block, make that one change, save with Ctrl+S and reload the browser with F5.
+    4. If the page is blank or did not change: check the name ends in .html, press Ctrl+Z in Notepad
+       to undo your last change and save again, or download a fresh copy of this file.
+
+  This page makes no requests to any other site. Two small problems are planted in it on purpose for
+  later lessons; they are listed at the very bottom of this file. Look for them before reading that list.
+-->
+<style>
+  :root {
+    /* CHANGE THIS ONE THING FIRST (technical extension only): change #1d5c4d on the next line to #6a3d9a,
+       save and reload. Every button state that uses the action colour changes at once. Change it back. */
+    --color-action: #1d5c4d;
+    --color-action-hover: #174a3e;
+    --color-action-active: #12332b;
+    --color-action-text: #ffffff;
+    --color-text: #1f2a28;
+    --color-text-quiet: #55615e;
+    --color-surface: #fbfaf6;
+    --color-surface-tint: #e8f0ec;
+    --color-field: #ffffff;
+    --color-border: #6b7a76;
+    --color-border-hover: #1f2a28;
+    --color-disabled-surface: #d9dedc;
+    --color-disabled-text: #4a5653;
+    --color-error: #a3271b;
+    --color-success: #2e7d5b;
+    --color-focus: #b8500f;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+    --space-4: 24px;
+    --radius-control: 6px;
+    --text-body: 1rem;
+    --text-small: 0.875rem;
+    --motion-quick: 120ms;
+  }
+  * { box-sizing: border-box; }
+  html.greyscale { filter: grayscale(1); }
+  body { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: var(--text-body); line-height: 1.5; color: var(--color-text); background: var(--color-surface); }
+  header, main { max-width: 64rem; margin: 0 auto; padding: var(--space-3); }
+  h2 { margin-top: var(--space-4); }
+  .quiet { color: var(--color-text-quiet); font-size: var(--text-small); }
+  :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+
+  /* Button */
+  .btn {
+    display: inline-flex; align-items: center; gap: var(--space-2);
+    font: inherit; line-height: 1.25;
+    background: var(--color-action); color: var(--color-action-text);
+    border: 2px solid transparent; border-radius: var(--radius-control);
+    padding: var(--space-2) var(--space-3);
+    cursor: pointer;
+    transition: background-color var(--motion-quick) ease-out;
+  }
+  .btn:hover, .btn.is-hover { background: var(--color-action-hover); text-decoration: underline; }
+  .btn:focus-visible, .btn.is-focus { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+  .btn:active, .btn.is-active { background: var(--color-action-active); transform: translateY(1px); }
+  .btn:disabled, .btn.is-disabled { background: var(--color-disabled-surface); color: var(--color-disabled-text); border-style: dashed; border-color: var(--color-disabled-text); cursor: not-allowed; text-decoration: none; transform: none; }
+  .btn[aria-disabled="true"] { cursor: progress; }
+  .icon { width: 1.1em; height: 1.1em; flex: none; }
+  .spinner { animation: spin 900ms linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) {
+    .spinner { animation: none; }
+    .btn { transition: none; }
+  }
+
+  /* Messages that go with a state */
+  .msg { display: flex; align-items: flex-start; gap: var(--space-1); margin: var(--space-2) 0 0; font-size: var(--text-small); font-weight: bold; }
+  .msg.error { color: var(--color-error); }
+  .msg.success { color: var(--color-success); }
+
+  /* Text input */
+  .field-label { display: block; font-weight: bold; }
+  .field-hint { display: block; color: var(--color-text-quiet); font-size: var(--text-small); }
+  .field {
+    display: block; width: 100%; max-width: 20rem; min-height: 2.75rem;
+    font: inherit; color: var(--color-text);
+    background: var(--color-field);
+    border: 2px solid var(--color-border); border-radius: var(--radius-control);
+    padding: var(--space-2) var(--space-3);
+  }
+  .field:hover, .field.is-hover { border-color: var(--color-border-hover); }
+  .field:focus-visible, .field.is-focus { outline: 3px solid var(--color-focus); outline-offset: 2px; border-color: var(--color-border-hover); }
+  .field:disabled, .field.is-disabled { background: var(--color-disabled-surface); color: var(--color-disabled-text); border-style: dashed; cursor: not-allowed; }
+  .field[aria-invalid="true"], .field.is-error { border-color: var(--color-error); border-width: 4px; }
+  .field-with-status { position: relative; max-width: 20rem; }
+  .field-with-status .icon { position: absolute; right: var(--space-3); top: 50%; margin-top: -0.55em; color: var(--color-text-quiet); }
+
+  /* State pages */
+  .grid { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); margin: 0; padding: 0; }
+  .cell { margin: 0; border: 1px solid var(--color-border); border-radius: var(--radius-control); padding: var(--space-3); background: var(--color-surface); }
+  .cell figcaption { font-size: var(--text-small); font-weight: bold; margin-bottom: var(--space-2); }
+  .tint { background: var(--color-surface-tint); padding: var(--space-3); border-radius: var(--radius-control); }
+  table { border-collapse: collapse; width: 100%; font-size: var(--text-small); }
+  .table-scroll { overflow-x: auto; }
+  caption { text-align: left; font-weight: bold; padding-bottom: var(--space-2); font-size: var(--text-body); }
+  th, td { text-align: left; vertical-align: top; padding: var(--space-1) var(--space-2); border-bottom: 1px solid var(--color-border); }
+  code { font-family: Consolas, "Courier New", monospace; }
+  .live { border: 2px solid var(--color-action); border-radius: var(--radius-control); padding: var(--space-3); }
+</style>
+</head>
+<body>
+<header>
+  <p class="quiet">HaruCourse Module 13 · supplied working component · made up practice material</p>
+  <h1>Button and text input, version 1.0.0</h1>
+  <p>Northside Tool Library is a made up product. Use this page as a working component: operate the live
+     versions, read every state in the labelled grids, and check the decisions written underneath.</p>
+  <p><button type="button" class="btn" id="greyscale-toggle" aria-pressed="false" hidden>Show the page in greyscale</button></p>
+</header>
+
+<main>
+  <section aria-labelledby="live-title">
+    <h2 id="live-title">Try the live versions</h2>
+    <noscript><p>JavaScript is off, so the live button and field below do nothing beyond their default states. The grids further down still show every state.</p></noscript>
+    <div class="live">
+      <p><label><input type="checkbox" id="make-fail"> Make the next save fail</label></p>
+      <p><button type="button" class="btn" id="save-button">Save changes</button></p>
+      <p id="save-message" class="msg" aria-live="polite"></p>
+
+      <p>
+        <label class="field-label" for="tool-name">Tool name</label>
+        <span class="field-hint" id="tool-name-hint">Up to 40 characters. The name "Cordless drill" is already used, to show the error.</span>
+      </p>
+      <p id="tool-name-error" class="msg error" hidden></p>
+      <div class="field-with-status">
+        <input class="field" id="tool-name" maxlength="40" aria-describedby="tool-name-hint tool-name-error tool-name-status">
+      </div>
+      <p id="tool-name-status" class="msg" aria-live="polite"></p>
+
+      <p><button type="button" class="btn" disabled>Delete tool</button></p>
+      <p class="quiet">The Delete button is disabled because nothing is selected. A natively disabled button cannot be focused or pressed.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="button-states-title">
+    <h2 id="button-states-title">Button: every state</h2>
+    <p class="quiet">These are pictures of each state, so they cannot be pressed. Hover, focus and pressed are shown permanently here; on the live button they appear only while you hover, tab to or press it.</p>
+    <div class="grid">
+      <figure class="cell"><figcaption>Button · default</figcaption><span class="btn">Save changes</span></figure>
+      <figure class="cell"><figcaption>Button · hover</figcaption><span class="btn is-hover">Save changes</span></figure>
+      <figure class="cell"><figcaption>Button · focus</figcaption><span class="btn is-focus">Save changes</span></figure>
+      <figure class="cell"><figcaption>Button · active (pressed)</figcaption><span class="btn is-active">Save changes</span></figure>
+      <figure class="cell"><figcaption>Button · disabled</figcaption><span class="btn is-disabled">Save changes</span></figure>
+      <figure class="cell"><figcaption>Button · loading</figcaption>
+        <span class="btn"><svg class="icon spinner" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="42 14"/></svg>Saving…</span>
+      </figure>
+      <figure class="cell"><figcaption>Button · error</figcaption>
+        <span class="btn">Try again</span>
+        <p class="msg error"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l10 18H2zM12 10v5M12 17.5v.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>Could not save. Nothing was lost.</p>
+      </figure>
+      <figure class="cell"><figcaption>Button · success</figcaption>
+        <span class="btn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>Saved</span>
+        <p class="msg success"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>Saved just now.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="input-states-title">
+    <h2 id="input-states-title">Text input: every state</h2>
+    <div class="grid">
+      <figure class="cell"><figcaption>Input · default</figcaption><span class="field">Cordless drill</span></figure>
+      <figure class="cell"><figcaption>Input · hover</figcaption><span class="field is-hover">Cordless drill</span></figure>
+      <figure class="cell"><figcaption>Input · focus</figcaption><span class="field is-focus">Cordless drill</span></figure>
+      <figure class="cell"><figcaption>Input · active (pressed)</figcaption><span class="field is-focus">Cordless drill</span>
+        <p class="quiet">Same as focus, by decision: a text field has no separate pressed look.</p></figure>
+      <figure class="cell"><figcaption>Input · disabled</figcaption><span class="field is-disabled">Cordless drill</span></figure>
+      <figure class="cell"><figcaption>Input · loading</figcaption>
+        <span class="field-with-status"><span class="field">Hedge trimmer</span><svg class="icon spinner" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="42 14"/></svg></span>
+        <p class="msg">Checking the name…</p>
+      </figure>
+      <figure class="cell"><figcaption>Input · error</figcaption>
+        <p class="msg error"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l10 18H2zM12 10v5M12 17.5v.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>Error: Enter a tool name</p>
+        <span class="field is-error">&nbsp;</span>
+      </figure>
+      <figure class="cell"><figcaption>Input · success</figcaption>
+        <span class="field">Hedge trimmer</span>
+        <p class="msg success"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>Name is available</p>
+      </figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="tint-title">
+    <h2 id="tint-title">The same messages on the tinted panel</h2>
+    <div class="tint">
+      <p class="msg error"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l10 18H2zM12 10v5M12 17.5v.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>Could not save. Nothing was lost.</p>
+      <p class="msg success"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>Saved just now.</p>
+      <p><span class="btn is-focus">Save changes</span></p>
+    </div>
+  </section>
+
+  <section aria-labelledby="tokens-title">
+    <h2 id="tokens-title">Tokens this component uses</h2>
+    <div class="table-scroll" role="region" aria-labelledby="tokens-caption" tabindex="0">
+      <table>
+        <caption id="tokens-caption">Token documentation (copied from the stylesheet on the day of version 1.0.0)</caption>
+        <thead><tr><th scope="col">Token</th><th scope="col">Value</th><th scope="col">Used for</th></tr></thead>
+        <tbody>
+          <tr><td><code>color-action</code></td><td>#1d5c4d</td><td>Button background</td></tr>
+          <tr><td><code>color-action-hover</code></td><td>#174a3e</td><td>Button background on hover</td></tr>
+          <tr><td><code>color-action-active</code></td><td>#12332b</td><td>Button background while pressed</td></tr>
+          <tr><td><code>color-action-text</code></td><td>#ffffff</td><td>Button label</td></tr>
+          <tr><td><code>color-text</code></td><td>#1f2a28</td><td>Labels and field text</td></tr>
+          <tr><td><code>color-text-quiet</code></td><td>#55615e</td><td>Hints</td></tr>
+          <tr><td><code>color-surface</code></td><td>#fbfaf6</td><td>Page background</td></tr>
+          <tr><td><code>color-surface-tint</code></td><td>#e8f0ec</td><td>Tinted panels</td></tr>
+          <tr><td><code>color-field</code></td><td>#ffffff</td><td>Inside a text field</td></tr>
+          <tr><td><code>color-border</code></td><td>#6b7a76</td><td>Field border</td></tr>
+          <tr><td><code>color-border-hover</code></td><td>#1f2a28</td><td>Field border on hover and focus</td></tr>
+          <tr><td><code>color-disabled-surface</code></td><td>#d9dedc</td><td>Disabled background</td></tr>
+          <tr><td><code>color-disabled-text</code></td><td>#4a5653</td><td>Disabled text and dashed border</td></tr>
+          <tr><td><code>color-error</code></td><td>#a3271b</td><td>Error message and error border</td></tr>
+          <tr><td><code>color-success</code></td><td>#2e7d5b</td><td>Success message</td></tr>
+          <tr><td><code>color-focus</code></td><td>#b8500f</td><td>Focus ring</td></tr>
+          <tr><td><code>space-1</code></td><td>4px</td><td>Gap between an icon and its message</td></tr>
+          <tr><td><code>space-2</code></td><td>8px</td><td>Gap inside a button; space above a message</td></tr>
+          <tr><td><code>space-3</code></td><td>12px</td><td>Side padding of buttons and fields</td></tr>
+          <tr><td><code>space-4</code></td><td>24px</td><td>Space between sections</td></tr>
+          <tr><td><code>radius-control</code></td><td>6px</td><td>Corners of buttons and fields</td></tr>
+          <tr><td><code>text-body</code> / <code>text-small</code></td><td>1rem / 0.875rem</td><td>Labels and field text / hints and messages</td></tr>
+          <tr><td><code>motion-quick</code></td><td>120ms (none when reduced motion is requested)</td><td>Button background change</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="quiet">In the stylesheet each token name starts with two hyphens, for example the custom property for <code>color-action</code>.</p>
+
+    <div class="table-scroll" role="region" aria-labelledby="contrast-caption" tabindex="0">
+      <table>
+        <caption id="contrast-caption">Measured contrast on the plain page background (#fbfaf6)</caption>
+        <thead><tr><th scope="col">Pair</th><th scope="col">Ratio</th><th scope="col">Needs</th></tr></thead>
+        <tbody>
+          <tr><td>Label text on the page</td><td>14.16:1</td><td>4.5:1</td></tr>
+          <tr><td>Hint text on the page</td><td>6.17:1</td><td>4.5:1</td></tr>
+          <tr><td>Button label on the action colour</td><td>7.81:1</td><td>4.5:1</td></tr>
+          <tr><td>Button label on the hover colour</td><td>10.07:1</td><td>4.5:1</td></tr>
+          <tr><td>Error message on the page</td><td>7.02:1</td><td>4.5:1</td></tr>
+          <tr><td>Success message on the page</td><td>4.79:1</td><td>4.5:1</td></tr>
+          <tr><td>Focus ring against the page</td><td>4.80:1</td><td>3:1</td></tr>
+          <tr><td>Field border against the page</td><td>4.31:1</td><td>3:1</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="quiet">The tinted panel has not been measured for this version.</p>
+  </section>
+
+  <section aria-labelledby="keys-title">
+    <h2 id="keys-title">Keyboard behaviour</h2>
+    <div class="table-scroll" role="region" aria-labelledby="keys-caption" tabindex="0">
+      <table>
+        <caption id="keys-caption">Keys and what they do</caption>
+        <thead><tr><th scope="col">Key</th><th scope="col">Button</th><th scope="col">Text input</th></tr></thead>
+        <tbody>
+          <tr><td>Tab / Shift+Tab</td><td>Moves focus to and from it; the focus ring appears</td><td>Moves focus to and from it; the focus ring appears</td></tr>
+          <tr><td>Enter</td><td>Presses it</td><td>No effect on its own</td></tr>
+          <tr><td>Space</td><td>Presses it</td><td>Types a space</td></tr>
+          <tr><td>While loading</td><td>Stays focusable; pressing again does nothing until saving finishes</td><td>Typing continues; the check restarts when you leave the field</td></tr>
+          <tr><td>When disabled</td><td>Skipped by Tab and cannot be pressed</td><td>Skipped by Tab and cannot be typed in</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="rules-title">
+    <h2 id="rules-title">Content rules, boundaries and open decisions</h2>
+    <ul>
+      <li>Button labels start with a verb and stay under about 24 characters. Long labels wrap; they are never cut short.</li>
+      <li>Every field keeps a visible label. A hint explains any format. An error message says how to fix the problem, not only that there is one.</li>
+      <li>Not for navigation: use a link to go to another page. Not for choosing from a short fixed list: use radio buttons or a select.</li>
+      <li>Every state can be told apart without colour: words, icons, border style or border thickness change too.</li>
+      <li>Open decision: whether a disabled button should stay focusable, so that someone using a keyboard can find out why it is unavailable.</li>
+    </ul>
+    <p class="quiet">Change history: 1.0.0, first documented version.</p>
+  </section>
+</main>
+
+<script>
+  // Practice helpers for the live versions. The component itself is the HTML and CSS above.
+  (function () {
+    var grey = document.getElementById('greyscale-toggle');
+    grey.hidden = false;
+    grey.addEventListener('click', function () {
+      var on = document.documentElement.classList.toggle('greyscale');
+      grey.setAttribute('aria-pressed', String(on));
+      grey.textContent = on ? 'Show the page in colour' : 'Show the page in greyscale';
+    });
+
+    var save = document.getElementById('save-button');
+    var saveMessage = document.getElementById('save-message');
+    var fail = document.getElementById('make-fail');
+    var tick = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>';
+    var warn = '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l10 18H2zM12 10v5M12 17.5v.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>';
+    var spin = '<svg class="icon spinner" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="42 14"/></svg>';
+    var busy = false;
+    save.addEventListener('click', function () {
+      if (busy) return;
+      busy = true;
+      save.setAttribute('aria-disabled', 'true');
+      save.innerHTML = spin + 'Saving…';
+      saveMessage.className = 'msg';
+      saveMessage.textContent = 'Saving…';
+      setTimeout(function () {
+        busy = false;
+        save.removeAttribute('aria-disabled');
+        if (fail.checked) {
+          save.textContent = 'Try again';
+          saveMessage.className = 'msg error';
+          saveMessage.innerHTML = warn + 'Could not save. Nothing was lost.';
+        } else {
+          save.innerHTML = tick + 'Saved';
+          saveMessage.className = 'msg success';
+          saveMessage.innerHTML = tick + 'Saved just now.';
+        }
+      }, 1500);
+    });
+
+    var input = document.getElementById('tool-name');
+    var error = document.getElementById('tool-name-error');
+    var status = document.getElementById('tool-name-status');
+    var holder = input.parentNode;
+    var check = 0;
+    function showError(text) {
+      error.hidden = !text;
+      error.innerHTML = text ? warn + 'Error: ' + text : '';
+      input.setAttribute('aria-invalid', text ? 'true' : 'false');
+    }
+    input.addEventListener('change', function () {
+      var value = input.value.trim();
+      var mine = ++check;
+      status.className = 'msg';
+      status.textContent = '';
+      var old = holder.querySelector('.spinner');
+      if (old) old.remove();
+      if (!value) { showError('Enter a tool name'); return; }
+      showError('');
+      holder.insertAdjacentHTML('beforeend', spin);
+      status.textContent = 'Checking the name…';
+      setTimeout(function () {
+        if (mine !== check) return;
+        var s = holder.querySelector('.spinner');
+        if (s) s.remove();
+        if (value.toLowerCase() === 'cordless drill') {
+          status.textContent = '';
+          showError('That name is already used. Add a word that tells them apart');
+        } else {
+          status.className = 'msg success';
+          status.innerHTML = tick + 'Name is available';
+        }
+      }, 1000);
+    });
+  })();
+</script>
+<!--
+  PLANTED PROBLEMS: look for them first, then read this list.
+
+  1. For the accessibility guarantees lesson (Module 13, Lesson 10). The success message colour (#2e7d5b)
+     measures 4.79:1 on the plain page background, which passes 4.5:1, but only 4.31:1 on the tinted panel,
+     which fails 4.5:1 for text of this size. The contrast table measures only the plain background, so a
+     guarantee written from the table would quietly cover a surface where it does not hold. Either limit the
+     guarantee to the plain background or darken the success colour.
+
+  2. For the source of truth lesson (Module 13, Lesson 11) and the foundations check (Lesson 2). The token
+     table on this page says space-3 is 12px. The stylesheet declares it as 16px, which is what every button
+     and field actually uses. Select a button, open the inspector and read the computed padding to see it.
+     The table is a copy that has drifted from the stylesheet.
+-->
+</body>
+</html>

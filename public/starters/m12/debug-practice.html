@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Debugging practice · Northside Tool Library (made up practice page)</title>
+<!--
+  HaruCourse · Module 12 · Lesson 10 starter: debug-practice.html
+  Practice material for a made up product, the Northside Tool Library. Nothing here is real.
+
+  How to use it on Windows
+    1. Save this file in Documents\HaruCourse\Practice\m12-l10-v1\ and keep the name ending in .html
+       (if File Explorer shows debug-practice.html.txt, rename it so it ends in .html).
+    2. Double-click it to open it in your browser. Right-click it and choose Open with, then Notepad.
+    3. Find CHANGE THIS ONE THING FIRST, make that one change, save with Ctrl+S and reload with F5.
+       It only proves your copy opens and saves; it fixes nothing.
+    4. If the page is blank or did not change: check the name ends in .html, press Ctrl+Z in Notepad
+       to undo your last change and save again, or download a fresh copy of this file.
+
+  Three problems are planted in this page on purpose. The page lists what each one looks like. Open
+  the developer tools with F12, choose the panel you think answers the question, and write the cause
+  in your worksheet before you change anything. The answers are at the very bottom of this file.
+
+  Problem 3 asks the browser for a file that does not exist in this folder. Opened from your own folder
+  the network panel shows that request as "(failed)", because there is no server to answer. Opened from
+  the course site, the same request comes back with the status 404. No other site is contacted.
+-->
+<style>
+  :root {
+    --color-text: #1f2a28;
+    --color-text-quiet: #55615e;
+    --color-surface: #fbfaf6;
+    --color-surface-tint: #e8f0ec;
+    --color-action: #1d5c4d;
+    --color-action-text: #ffffff;
+    --color-border: #6b7a76;
+    --color-focus: #b8500f;
+    --space-2: 8px;
+    --space-3: 16px;
+    --radius: 6px;
+  }
+  body { margin: 0; font-family: Georgia, "Times New Roman", serif; line-height: 1.5; color: var(--color-text); background: var(--color-surface); }
+  header, main { max-width: 44rem; margin: 0 auto; padding: var(--space-3); }
+  :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+  .logo { display: block; font-weight: bold; }
+  .layout { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: flex-start; }
+  .content { flex: 1 1 16rem; }
+  .sidebar { width: 240px; max-width: 100%; background: var(--color-surface-tint); padding: var(--space-2); }
+  .notice-card { width: 220px; padding: 20px; border: 2px solid var(--color-action); background: #ffffff; }
+  button { font: inherit; background: var(--color-action); color: var(--color-action-text); border: 0; border-radius: var(--radius); padding: var(--space-2) var(--space-3); cursor: pointer; }
+  .problems { border: 1px dashed var(--color-border); padding: var(--space-2) var(--space-3); }
+  .quiet { color: var(--color-text-quiet); font-size: 0.875rem; }
+</style>
+</head>
+<body>
+<header>
+  <img class="logo" src="images/library-logo.svg" alt="Northside Tool Library" width="160" height="40">
+</header>
+
+<main>
+  <!-- CHANGE THIS ONE THING FIRST: replace the words between <h1> and </h1> with "My debugging practice",
+       save with Ctrl+S and reload with F5. If the heading changes, your copy opens and saves correctly. -->
+  <h1>Opening hours and notices</h1>
+  <p class="quiet">Practice page for HaruCourse Module 12, Lesson 10. Made up product; nothing here is real.</p>
+
+  <section class="problems" aria-labelledby="problems-title">
+    <h2 id="problems-title">Three problems to diagnose</h2>
+    <ol>
+      <li>The notice in the grey sidebar sticks out past the sidebar's right-hand edge.</li>
+      <li>The "Show opening hours" button does nothing when you press it.</li>
+      <li>The logo at the top is missing; only its name appears in its place.</li>
+    </ol>
+  </section>
+
+  <div class="layout">
+    <div class="content">
+      <h2>This week</h2>
+      <p><button type="button" id="hours-button" aria-expanded="false" aria-controls="hours">Show opening hours</button></p>
+      <div id="hours" hidden>
+        <p>Wednesday 16:00 to 19:00. Saturday 09:00 to 13:00.</p>
+      </div>
+    </div>
+    <aside class="sidebar" aria-label="Notices">
+      <div class="notice-card">
+        <p><strong>Repair café</strong> this Saturday from 10:00. Bring one broken tool.</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<script>
+  var hoursButton = document.getElementById('hours-buton');
+  var hours = document.getElementById('hours');
+  hoursButton.addEventListener('click', function () {
+    var open = hours.hidden;
+    hours.hidden = !open;
+    hoursButton.setAttribute('aria-expanded', String(open));
+    hoursButton.textContent = open ? 'Hide opening hours' : 'Show opening hours';
+  });
+</script>
+<!--
+  ANSWERS: read these only after you have written your own causes.
+
+  Problem 1 (inspector). The notice card is 220px wide with 20px of padding and a 2px border on each side,
+  so it takes 220 + 40 + 4 = 264px. The sidebar's content area is 240px, so the card sticks out by 24px.
+  This page never sets box-sizing, so each width applies to the content only. In the inspector, the
+  box diagram for .notice-card shows the padding and border added outside the 220px. Fix: add
+  "* { box-sizing: border-box; }" near the top of the style block, or give the card no fixed width.
+
+  Problem 2 (console). The console shows a red error such as "Cannot read properties of null (reading
+  'addEventListener')", with this file's name and a line number. That line uses hoursButton, which is null
+  because getElementById was asked for "hours-buton" (one t), while the button's id is "hours-button".
+  Fix: correct the spelling in the script. The page looked complete the whole time; only the console said so.
+
+  Problem 3 (network panel). Reload with the network panel open. The request for library-logo.svg is shown
+  in red: "(failed)" with net::ERR_FILE_NOT_FOUND when the page is opened from your own folder, or status
+  404 on the course site. The page asks for images/library-logo.svg and that file does not exist. The alt
+  text is what appears in its place. Fix: add the file at that path, correct the path, or remove the image.
+-->
+</body>
+</html>

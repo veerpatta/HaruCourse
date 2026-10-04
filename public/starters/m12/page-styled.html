@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cordless drill, styled with tokens · Northside Tool Library (made up practice page)</title>
+<!--
+  HaruCourse · Module 12 · Lesson 3 starter: page-styled.html
+  Practice material for a made up product, the Northside Tool Library. Nothing here is real.
+
+  How to use it on Windows
+    1. Save this file in Documents\HaruCourse\Practice\m12-l03-v1\ and keep the name ending in .html
+       (if File Explorer shows page-styled.html.txt, rename it so it ends in .html).
+    2. Double-click it to open it in your browser. Right-click it and choose Open with, then Notepad.
+    3. Find CHANGE THIS ONE THING FIRST inside the style block, make that one change, save with Ctrl+S,
+       then reload the browser with F5.
+    4. If the page is blank or did not change: check the name ends in .html, press Ctrl+Z in Notepad
+       to undo your last change and save again, or download a fresh copy of this file.
+
+  The markup here is the corrected version of the Lesson 2 page. Three styling surprises are left in
+  on purpose for you to diagnose with the inspector (right-click an element, then Inspect). Write your
+  explanation before you change anything. The answers are at the very bottom of this file.
+  This page makes no requests to any other site.
+-->
+<style>
+  /* TOKENS: the values from a made up token sheet, declared once as custom properties.
+     Every rule below refers to these names instead of typing a raw value. */
+  :root {
+    /* CHANGE THIS ONE THING FIRST: change the colour on the next line from #1d5c4d to #6a3d9a,
+       save and reload. Every button, link and heading border that uses this token changes at once.
+       Change it back afterwards, or keep a colour from your own token sheet. */
+    --color-action: #1d5c4d;
+    --color-action-text: #ffffff;
+    --color-text: #1f2a28;
+    --color-text-quiet: #55615e;
+    --color-surface: #fbfaf6;
+    --color-surface-tint: #e8f0ec;
+    --color-border: #6b7a76;
+    --color-focus: #b8500f;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+    --space-4: 24px;
+    --text-small: 0.875rem;
+    --text-heading: 1.5rem;
+    --radius: 6px;
+  }
+
+  /* INHERITANCE: the typeface, line height and text colour are set once here and passed down. */
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.5;
+    color: var(--color-text);
+    background: var(--color-surface);
+  }
+  a { color: var(--color-action); }
+  :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+  .skip-link { position: absolute; left: var(--space-2); top: -40px; background: var(--color-surface); padding: var(--space-2); }
+  .skip-link:focus { top: var(--space-2); }
+  header, main, footer { max-width: 42rem; margin: 0 auto; padding: var(--space-3); }
+  header nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: var(--space-3); padding: 0; margin: var(--space-2) 0 0; }
+
+  /* The facts sit in cards inside a box exactly 240px wide. */
+  .facts-box { width: 240px; max-width: 100%; border: 1px dashed var(--color-border); padding: 0; }
+  .facts { list-style: none; margin: 0; padding: 0; }
+  /* SURPRISE 1: each card is given a width of 240px, the same as the box around it.
+     Measure a card in the inspector before you read the answers. */
+  .fact-card {
+    width: 240px;
+    padding: 20px;
+    margin: 0 0 var(--space-2);
+    background: var(--color-surface-tint);
+  }
+
+  main section h2 {
+    border-bottom: 2px solid var(--color-action);
+    color: var(--color-text);
+  }
+  /* SURPRISE 2: this rule asks for the section headings to be in the action colour,
+     but they stay the ordinary text colour. Find out why in the inspector. */
+  h2 {
+    color: var(--color-action);
+    font-size: var(--text-heading);
+  }
+
+  button {
+    font: inherit;
+    background: var(--color-action);
+    color: var(--color-action-text);
+    border: 0;
+    border-radius: var(--radius);
+    padding: var(--space-2) var(--space-3);
+    cursor: pointer;
+  }
+  /* SURPRISE 3: the note below the button is pale. Nothing in this rule sets its colour.
+     Find where the colour comes from. */
+  .reserve-note { font-size: var(--text-small); }
+  .quiet-panel { color: var(--color-text-quiet); }
+
+  table { border-collapse: collapse; width: 100%; }
+  caption { text-align: left; font-weight: bold; padding-bottom: var(--space-1); }
+  th, td { text-align: left; padding: var(--space-1) var(--space-2); border-bottom: 1px solid var(--color-border); }
+  footer { color: var(--color-text-quiet); font-size: var(--text-small); }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to the main content</a>
+
+<header>
+  <a href="#main">Northside Tool Library</a>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="#main">Borrow a tool</a></li>
+      <li><a href="#main">How it works</a></li>
+      <li><a href="#main">Opening hours</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <h1>Cordless drill</h1>
+  <p>Practice page for HaruCourse Module 12, Lesson 3. Made up product; nothing here is real.</p>
+
+  <div class="facts-box">
+    <ul class="facts" aria-label="Key facts">
+      <li class="fact-card">Free to borrow for members</li>
+      <li class="fact-card">Loan period: 3 days</li>
+      <li class="fact-card">Collect from the Northside shop</li>
+    </ul>
+  </div>
+
+  <div class="quiet-panel">
+    <p><button type="button">Reserve this drill</button></p>
+    <p class="reserve-note">Reserving holds the drill for two hours while you come to collect it.</p>
+  </div>
+
+  <section aria-labelledby="comes-with">
+    <h2 id="comes-with">What comes with it</h2>
+    <ul>
+      <li>Two batteries and a charger</li>
+      <li>Six wood drill bits</li>
+      <li>A carry case</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="safety">
+    <h2 id="safety">Safety notes</h2>
+    <p>Wear eye protection. Unplug the charger when the battery is full. Ask staff if you have not used a drill before.</p>
+  </section>
+
+  <section aria-labelledby="charges">
+    <h2 id="charges">Late return charges</h2>
+    <table>
+      <caption>Charges for returning the drill late</caption>
+      <thead><tr><th scope="col">Days late</th><th scope="col">Charge</th></tr></thead>
+      <tbody>
+        <tr><td>1 day</td><td>£1</td></tr>
+        <tr><td>2 to 5 days</td><td>£3</td></tr>
+        <tr><td>More than 5 days</td><td>£5 and a call from staff</td></tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <p>Northside Tool Library is a made up example used for HaruCourse practice.</p>
+</footer>
+<!--
+  ANSWERS: read these only after you have written your own explanations.
+
+  Surprise 1 (the box model). Each card is 240px wide plus 20px of padding on each side, so it measures
+  280px and sticks out of the 240px box. The width applies to the content only, because this page never
+  sets box-sizing. Adding "* { box-sizing: border-box; }" near the top makes a 240px width include the
+  padding. The inspector shows this in the box diagram at the bottom of the Styles or Computed panel.
+
+  Surprise 2 (the cascade). "main section h2" is more specific than "h2", so its colour wins even though
+  the "h2" rule comes later. In the inspector the losing colour is shown struck through. Moving a rule
+  further down does not help when the other rule is more specific; change or remove the colour in the
+  more specific rule instead of adding !important.
+
+  Surprise 3 (inheritance). The note inherits its colour from the .quiet-panel div around it. No rule on
+  the note mentions colour, which is why searching the note's own rule finds nothing. The inspector lists
+  it under "Inherited from div.quiet-panel".
+-->
+</body>
+</html>

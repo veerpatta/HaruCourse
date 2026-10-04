@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Images that do not cost the page · Northside Tool Library (made up practice page)</title>
+<!--
+  HaruCourse · Module 12 · Lesson 5 starter: page-images.html
+  Practice material for a made up product, the Northside Tool Library. Nothing here is real.
+
+  How to use it on Windows
+    1. Save this file in Documents\HaruCourse\Practice\m12-l05-v1\ and keep the name ending in .html
+       (if File Explorer shows page-images.html.txt, rename it so it ends in .html).
+    2. Double-click it to open it in your browser. Right-click it and choose Open with, then Notepad.
+    3. Find CHANGE THIS ONE THING FIRST inside the style block, make that one change, save with Ctrl+S,
+       then reload the browser with F5.
+    4. If the page is blank or did not change: check the name ends in .html, press Ctrl+Z in Notepad
+       to undo your last change and save again, or download a fresh copy of this file.
+
+  Every picture on this page is written as SVG text inside this one file, so the page makes no requests
+  to any other site and needs no image files. To practise resizing real photographs, put your own image
+  files in the same folder and add img elements for them.
+-->
+<style>
+  :root {
+    --color-text: #1f2a28;
+    --color-text-quiet: #55615e;
+    --color-surface: #fbfaf6;
+    --color-surface-tint: #e8f0ec;
+    --color-action: #1d5c4d;
+    --color-border: #6b7a76;
+    --color-focus: #b8500f;
+    --space-2: 8px;
+    --space-3: 16px;
+    --space-4: 24px;
+    --radius: 6px;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Georgia, "Times New Roman", serif; line-height: 1.5; color: var(--color-text); background: var(--color-surface); }
+  main { max-width: 46rem; margin: 0 auto; padding: var(--space-3); }
+  :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+  img, svg { max-width: 100%; height: auto; }
+
+  .icon-row {
+    display: flex; flex-wrap: wrap; gap: var(--space-4); padding: 0; list-style: none;
+    /* CHANGE THIS ONE THING FIRST: change var(--color-action) on the next line to #9a3412, save and reload.
+       Every icon in this row changes colour, because each one is drawn with currentColor. Change it back after. */
+    color: var(--color-action);
+  }
+  .icon-row li { display: flex; align-items: center; gap: var(--space-2); }
+  .icon { width: 24px; height: 24px; flex: none; }
+
+  .hero { display: block; width: 100%; height: auto; border-radius: var(--radius); background: var(--color-surface-tint); }
+
+  table { border-collapse: collapse; width: 100%; font-size: 0.9375rem; }
+  .table-scroll { overflow-x: auto; }
+  caption { text-align: left; font-weight: bold; padding-bottom: var(--space-2); }
+  th, td { text-align: left; padding: 4px var(--space-2); border-bottom: 1px solid var(--color-border); vertical-align: top; }
+
+  .late-demo { border: 1px dashed var(--color-border); padding: var(--space-3); border-radius: var(--radius); }
+  .late-slot.reserved { aspect-ratio: 16 / 9; background: var(--color-surface-tint); }
+  .late-slot svg { display: block; width: 100%; height: auto; }
+  button { font: inherit; padding: var(--space-2) var(--space-3); border-radius: var(--radius); border: 1px solid var(--color-border); background: #ffffff; cursor: pointer; }
+  .quiet { color: var(--color-text-quiet); font-size: 0.875rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Images that do not cost the page</h1>
+  <p class="quiet">Practice page for HaruCourse Module 12, Lesson 5. Made up product; nothing here is real.</p>
+
+  <!-- The header picture is drawn as SVG so this page needs no files. Its width and height attributes
+       tell the browser its shape before it is drawn, which reserves the space and stops text jumping. -->
+  <svg class="hero" viewBox="0 0 720 405" width="720" height="405" role="img" aria-labelledby="hero-title">
+    <title id="hero-title">Cordless drill lying on a wooden workbench</title>
+    <rect width="720" height="405" fill="#e8f0ec"/>
+    <rect y="290" width="720" height="115" fill="#c9a67a"/>
+    <rect x="230" y="190" width="230" height="60" rx="14" fill="#1d5c4d"/>
+    <rect x="455" y="208" width="90" height="22" rx="6" fill="#55615e"/>
+    <rect x="300" y="245" width="62" height="70" rx="10" fill="#1d5c4d"/>
+    <rect x="285" y="300" width="96" height="26" rx="6" fill="#1f2a28"/>
+  </svg>
+
+  <h2>Status icons, written by hand</h2>
+  <p>Each icon below is a few lines of SVG. The words beside them carry the meaning, so the icons are
+     hidden from screen readers with aria-hidden. The icon in the next section stands alone, so it has a
+     title instead.</p>
+  <ul class="icon-row">
+    <li>
+      <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M7 12.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Available
+    </li>
+    <li>
+      <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      On loan
+    </li>
+  </ul>
+
+  <h2>An icon that stands alone</h2>
+  <p>
+    <a href="#audit">
+      <svg class="icon" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="down-title">
+        <title id="down-title">Jump to the image audit</title>
+        <path d="M12 4v14M6 12l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </p>
+
+  <h2 id="audit">A supplied image audit</h2>
+  <p>Made up practice figures for a different version of this page that used photograph files. Divide the
+     served width by the displayed width to find the worst offenders; anything above 2 is more than a
+     dense screen needs.</p>
+  <div class="table-scroll" role="region" aria-labelledby="audit-caption" tabindex="0">
+    <table>
+      <caption id="audit-caption">Image audit (made up figures)</caption>
+      <thead><tr><th scope="col">Image</th><th scope="col">File size</th><th scope="col">Served width</th><th scope="col">Displayed width</th><th scope="col">Where</th></tr></thead>
+      <tbody>
+        <tr><td>Header photograph</td><td>1,800 kB</td><td>3000 px</td><td>720 px</td><td>First screen, above the text</td></tr>
+        <tr><td>Tool photograph (each of four)</td><td>50 kB</td><td>800 px</td><td>320 px</td><td>Below the first screen</td></tr>
+        <tr><td>Status icon (each of six, saved as photograph files)</td><td>2 kB</td><td>96 px</td><td>24 px</td><td>Beside each tool</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Reserved space, seen happening</h2>
+  <div class="late-demo">
+    <p>Press the button to make a picture arrive two seconds late, the way a slow photograph does. Try it
+       with the box ticked and unticked and watch the sentence under the picture.</p>
+    <p><label><input type="checkbox" id="reserve" checked> Reserve the picture's space before it arrives</label></p>
+    <p><button type="button" id="late-button">Make a picture arrive late</button></p>
+    <noscript><p>This demonstration needs JavaScript. Without it, read the comment above the hero picture instead.</p></noscript>
+    <div id="late-slot" class="late-slot reserved"></div>
+    <p>This sentence moves down if the space was not reserved. A person about to tap a link here would tap the wrong thing.</p>
+  </div>
+
+  <h2>A picture further down the page</h2>
+  <p>Below the first screen, a picture can wait until the person scrolls near it. The loading="lazy"
+     attribute asks for that; width and height still reserve its space.</p>
+  <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20320%20180'%3E%3Crect%20width='320'%20height='180'%20fill='%23e8f0ec'/%3E%3Crect%20x='60'%20y='70'%20width='200'%20height='40'%20rx='10'%20fill='%231d5c4d'/%3E%3C/svg%3E"
+       width="320" height="180" loading="lazy" alt="Wallpaper steamer on its stand">
+</main>
+<script>
+  // Practice helper for the reserved-space demonstration.
+  (function () {
+    var button = document.getElementById('late-button');
+    var reserve = document.getElementById('reserve');
+    var slot = document.getElementById('late-slot');
+    if (!button || !reserve || !slot) return;
+    reserve.addEventListener('change', function () {
+      slot.innerHTML = '';
+      slot.classList.toggle('reserved', reserve.checked);
+    });
+    button.addEventListener('click', function () {
+      slot.innerHTML = '';
+      slot.classList.toggle('reserved', reserve.checked);
+      button.disabled = true;
+      button.textContent = 'Waiting for the picture…';
+      setTimeout(function () {
+        slot.innerHTML = '<svg viewBox="0 0 320 180" width="320" height="180" role="img" aria-label="Pressure washer"><rect width="320" height="180" fill="#c9a67a"/><rect x="90" y="60" width="140" height="70" rx="12" fill="#1d5c4d"/></svg>';
+        button.disabled = false;
+        button.textContent = 'Make a picture arrive late';
+      }, 2000);
+    });
+  })();
+</script>
+</body>
+</html>
