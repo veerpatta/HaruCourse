@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice form with deliberate barriers · Haru Course keyboard lab</title>
+<style>
+  body { margin: 0; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; color: #263d38; background: #f7f6f1; }
+  main { max-width: 640px; margin: 0 auto; padding: 16px; }
+  .notice { padding: 12px 14px; border-radius: 10px; background: #fbeee6; border: 1px solid #e3b48f; }
+  h1 { font-family: Georgia, serif; color: #214e46; line-height: 1.2; }
+  form { margin-top: 18px; padding: 16px; background: #fffefb; border: 1px solid #d7dfd0; border-radius: 12px; display: grid; gap: 12px; }
+  input, select { font: inherit; padding: 8px 10px; border: 1px solid #b9c5b1; border-radius: 8px; }
+  /* Barrier 3: the focus indicator is removed. */
+  input:focus, select:focus, .fake-button:focus { outline: none; }
+  .fake-button { display: inline-block; padding: 10px 18px; border-radius: 999px; background: #214e46; color: #fff; font-weight: 600; cursor: pointer; user-select: none; }
+  .icon-button { width: 44px; height: 44px; border: 1px solid #b9c5b1; border-radius: 50%; background: #fff; font-size: 20px; }
+  .error { color: #c62828; min-height: 1.6em; }
+  .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<main>
+  <p class="notice"><strong>This page has deliberate barriers.</strong> It is a made-up practice form for Module 11 of Haru Course. Six problems were built in on purpose so you can find them with a keyboard and, if you choose, a screen reader. Nothing you type is sent anywhere. Compare it with the <a href="booking-form-repaired.html">repaired version</a> afterwards, or return to the <a href="index.html">lab instructions</a>.</p>
+  <h1>Book a pottery class</h1>
+  <form id="form" novalidate>
+    <!-- Barrier 1: placeholder-only label. -->
+    <input id="name" placeholder="Your name">
+    <!-- Barrier 5: tab order does not follow the visual order. -->
+    <input id="phone" placeholder="Phone (10 digits)" tabindex="3">
+    <input id="email" placeholder="Email" tabindex="2">
+    <select id="date" tabindex="1">
+      <option>Saturday 12 October, 10:00</option>
+      <option>Sunday 13 October, 14:00</option>
+    </select>
+    <div class="row">
+      <!-- Barrier 6: an icon-only button with no accessible name. -->
+      <button type="button" class="icon-button" id="info">ⓘ</button>
+      <span id="info-text" hidden>Aprons are provided. Wear clothes you do not mind getting muddy.</span>
+    </div>
+    <!-- Barrier 4: the error appears only as red text and is never announced or linked to the field. -->
+    <div class="error" id="error"></div>
+    <!-- Barrier 2: a clickable div that keyboard users cannot reach or press. -->
+    <div class="fake-button" id="reserve">Reserve</div>
+  </form>
+  <p id="done" hidden>Booking practised. Nothing was sent.</p>
+</main>
+<script>
+  document.getElementById('info').addEventListener('click', function () {
+    var t = document.getElementById('info-text'); t.hidden = !t.hidden;
+  });
+  document.getElementById('reserve').addEventListener('click', function () {
+    var phone = document.getElementById('phone').value.replace(/\D/g, '');
+    var error = document.getElementById('error');
+    if (phone.length !== 10) { error.textContent = 'Invalid'; return; }
+    error.textContent = '';
+    document.getElementById('form').hidden = true;
+    document.getElementById('done').hidden = false;
+  });
+</script>
+</body>
+</html>

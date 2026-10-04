@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { Lesson } from "./teaching";
+import { ContrastCalculator } from "./ApprenticeshipPanel";
 import { ReflowDemo, ReorderExample, StateExample, StarterFiles, UncertaintyCalculator, type StarterFile } from "./lessonTools";
 
 // Which working examples and starter files each lesson offers. They appear on
@@ -15,6 +16,7 @@ const examples: Record<string, Tool[]> = {
   "m09-l04-v1": [{ label: "Reduced motion that keeps every state: working example", render: () => <StateExample /> }],
   "m09-l10-v1": [{ label: "Saving, saved, failed and cancelled: working example", render: () => <StateExample /> }],
   "m09-l08-v1": [{ label: "Three ways to reorder: working example", render: () => <ReorderExample /> }],
+  "m11-l04-v1": [{ label: "Local contrast calculator", render: () => <ContrastCalculator /> }],
   "m15-l02-v1": [{ label: "Uncertainty calculator", render: () => <UncertaintyCalculator /> }],
   "m15-l03-v1": [{ label: "Uncertainty calculator", render: () => <UncertaintyCalculator /> }],
   "m15-l04-v1": [{ label: "Uncertainty calculator", render: () => <UncertaintyCalculator /> }],
@@ -27,14 +29,20 @@ const examples: Record<string, Tool[]> = {
 // download list cannot drift apart.
 const fileNotes: Record<string, Omit<StarterFile, "href">> = {
   "/starters/m08/booking-screen-starter.svg": { label: "Editable booking screen (SVG)", note: "A mid-fidelity 390 × 844 screen with named groups. Open it in a free vector tool such as Inkscape or Penpot, or in a text editor. Duplicate it before editing." },
+  "/labs/m11/index.html": { label: "Keyboard and screen-reader lab: instructions", note: "How to work the practice pages by keyboard, and how to start, pause and stop Narrator, VoiceOver or TalkBack." },
+  "/labs/m11/booking-form-barriers.html": { label: "Practice form with six deliberate barriers", note: "Find each problem by keyboard first. Nothing you type is sent anywhere." },
+  "/labs/m11/booking-form-repaired.html": { label: "The same form, repaired", note: "Compare it with the barrier version and note what changed." },
   "/starters/m19/case-study-template.html": { label: "Case-study template (HTML)", note: "An editable, accessible template with the nine case-study sections and evidence labels. Print and choose Save as PDF for a private copy to check on your phone." },
   "/starters/m19/annotated-example.html": { label: "Annotated example case study", note: "A short, clearly fictional case study whose margin notes explain why each part is credible, with one weak claim and its repair." },
   "/starters/m08/hierarchy-before-after.svg": { label: "Annotated before and after (SVG)", note: "Two versions of the same screen with numbered notes; the text of every note is also in the lesson's practice notes." },
 };
+// Lessons that use the keyboard and screen-reader lab without naming a file.
+const labPages = ["/labs/m11/index.html", "/labs/m11/booking-form-barriers.html", "/labs/m11/booking-form-repaired.html"];
+const extraFiles: Record<string, string[]> = { "m11-l03-v1": labPages, "m11-l06-v1": labPages, "m11-l07-v1": labPages, "m11-l10-v1": labPages };
 const referenced = new Map<string, StarterFile[]>();
 export function starterFilesFor(lesson: Lesson): StarterFile[] {
   if (!referenced.has(lesson.id)) {
-    const hrefs = [...new Set((JSON.stringify(lesson).match(/\b(?:starters|labs)\/[a-z0-9/._-]+?\.(?:html|svg|css|js|txt)/gi) || []).map((h) => "/" + h))];
+    const hrefs = [...new Set((JSON.stringify(lesson).match(/\b(?:starters|labs)\/[a-z0-9/._-]+?\.(?:html|svg|css|js|txt)/gi) || []).map((h) => "/" + h)), ...(extraFiles[lesson.id] || [])];
     referenced.set(lesson.id, hrefs.map((href) => ({ href, ...(fileNotes[href] || { label: href.split("/").pop()!, note: href.startsWith("/labs/") ? "A practice page that works offline. Open it in a new tab." : "A starter file that works offline. Save a copy before editing." }) })));
   }
   return referenced.get(lesson.id)!;

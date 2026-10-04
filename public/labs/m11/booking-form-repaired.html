@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repaired practice form · Haru Course keyboard lab</title>
+<style>
+  body { margin: 0; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; color: #263d38; background: #f7f6f1; }
+  main { max-width: 640px; margin: 0 auto; padding: 16px; }
+  .notice { padding: 12px 14px; border-radius: 10px; background: #eaf0e1; border: 1px solid #9eae92; }
+  h1 { font-family: Georgia, serif; color: #214e46; line-height: 1.2; }
+  form { margin-top: 18px; padding: 16px; background: #fffefb; border: 1px solid #d7dfd0; border-radius: 12px; display: grid; gap: 14px; }
+  .field { display: grid; gap: 4px; }
+  label { font-weight: 600; }
+  .hint { margin: 0; font-size: 14px; color: #4f5f55; }
+  input, select { font: inherit; min-height: 44px; padding: 8px 10px; border: 1px solid #6f7f74; border-radius: 8px; }
+  input:focus-visible, select:focus-visible, button:focus-visible { outline: 3px solid #bb7235; outline-offset: 3px; }
+  input[aria-invalid="true"] { border: 2px solid #b3261e; }
+  button { font: inherit; min-height: 44px; padding: 10px 18px; border-radius: 999px; border: 0; background: #214e46; color: #fff; font-weight: 600; cursor: pointer; justify-self: start; }
+  .icon-button { width: 44px; padding: 0; border: 1px solid #6f7f74; background: #fff; color: #214e46; font-size: 20px; }
+  .error { margin: 0; color: #8c1d18; font-weight: 600; }
+  .error::before { content: "⚠ "; }
+  .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<main>
+  <p class="notice"><strong>The repaired version.</strong> The same made-up form with the six barriers fixed: visible labels, a real button, a visible focus indicator, an error that is announced and tied to its field, a tab order that follows the page, and a named icon button. Nothing you type is sent anywhere. Return to the <a href="booking-form-barriers.html">version with barriers</a> or the <a href="index.html">lab instructions</a>.</p>
+  <h1>Book a pottery class</h1>
+  <form id="form" novalidate>
+    <div class="field">
+      <label for="date">Class date</label>
+      <select id="date">
+        <option>Saturday 12 October, 10:00</option>
+        <option>Sunday 13 October, 14:00</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="name">Your name</label>
+      <input id="name" autocomplete="name">
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" type="email" autocomplete="email">
+    </div>
+    <div class="field">
+      <label for="phone">Phone</label>
+      <p class="hint" id="phone-hint">Ten digits, for a reminder text the day before.</p>
+      <input id="phone" type="tel" inputmode="numeric" autocomplete="tel" aria-describedby="phone-hint">
+      <p class="error" id="phone-error" hidden>Enter a 10-digit phone number, for example 98765 43210.</p>
+    </div>
+    <div class="row">
+      <button type="button" class="icon-button" id="info" aria-label="What to bring" aria-expanded="false" aria-controls="info-text">ⓘ</button>
+      <p id="info-text" hidden>Aprons are provided. Wear clothes you do not mind getting muddy.</p>
+    </div>
+    <p id="status" role="status" aria-live="polite"></p>
+    <button type="submit">Reserve</button>
+  </form>
+  <p id="done" hidden tabindex="-1">Booking practised. Nothing was sent.</p>
+</main>
+<script>
+  var info = document.getElementById('info');
+  info.addEventListener('click', function () {
+    var t = document.getElementById('info-text');
+    t.hidden = !t.hidden;
+    info.setAttribute('aria-expanded', String(!t.hidden));
+  });
+  document.getElementById('form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    var phone = document.getElementById('phone');
+    var error = document.getElementById('phone-error');
+    var status = document.getElementById('status');
+    if (phone.value.replace(/\D/g, '').length !== 10) {
+      error.hidden = false;
+      phone.setAttribute('aria-invalid', 'true');
+      phone.setAttribute('aria-describedby', 'phone-hint phone-error');
+      status.textContent = 'One answer needs fixing: phone.';
+      phone.focus();
+      return;
+    }
+    error.hidden = true;
+    phone.removeAttribute('aria-invalid');
+    phone.setAttribute('aria-describedby', 'phone-hint');
+    document.getElementById('form').hidden = true;
+    var done = document.getElementById('done');
+    done.hidden = false;
+    done.focus();
+  });
+</script>
+</body>
+</html>
