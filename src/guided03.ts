@@ -933,6 +933,7 @@ export const guided03: Record<string, Guided> = {
       { id: 'tokens', title: 'Every decision, as a named token', intro: 'Name, value, and the one role it plays. A few at a time.', fields: [
         ...[1, 2, 3, 4, 5, 6, 7, 8].map((n) => ({ id: `token-${n}`, label: `Token ${n} · name, value, role`, kind: 'short' as const,
           ...(n === 1 ? { hint: 'Name by role, not by appearance: text-primary, not dark-grey.', example: 'Example (made up): action-surface · #214e46 · the background of the primary button, one per screen.' } : {}) })),
+        { id: 'token-more', label: 'Tokens 9 onward, one per line: name · value · role, or “none” and why', kind: 'long', hint: 'A full module usually has more decisions than eight rows: every type step, colour role and spacing value. Write one token per line. If eight rows hold every decision, write “none” and say why.', example: 'Example (made up): space-between · 24 · the gap between one class block and the next.' },
       ] },
       { id: 'usage', title: 'Where each is used, and where it must not be', fields: [
         { id: 'prohibitions', label: 'The prohibitions worth writing down', kind: 'long', example: 'Example (made up): action-surface is never used for a status label, because a green “confirmed” chip would then look like a button.' },
@@ -940,10 +941,10 @@ export const guided03: Record<string, Guided> = {
       ] },
       { id: 'contrast', title: 'Checking the pairings', fields: [
         { id: 'pairing-check', label: 'Each permitted pairing against your contrast table: measured ratio and result', kind: 'long', hint: 'Any pairing you have not measured is not yet permitted.' },
-        { id: 'new-prohibitions', label: 'Pairings that failed and are now prohibited', kind: 'short' },
+        { id: 'new-prohibitions', label: 'Pairings that failed and are now prohibited', kind: 'short', hint: 'If every permitted pairing passed, write “none failed”.' },
       ] },
       { id: 'build', title: 'The build-it test', intro: 'Hand the sheet to someone else, or set it aside and come back, then rebuild one small component from it alone.', fields: [
-        { id: 'build-gaps', label: 'Every decision you had to make that the sheet did not specify', kind: 'long', example: 'Example (made up): the sheet said nothing about the gap between a button’s label and its edge, so I invented 12.' },
+        { id: 'build-gaps', label: 'Every decision you had to make that the sheet did not specify', kind: 'long', sensitive: true, hint: 'If someone else ran the test, describe the gap in the sheet, not the person, and leave out their name. If you found no gaps, write “none” and how you kept the original out of sight.', example: 'Example (made up): the sheet said nothing about the gap between a button’s label and its edge, so I invented 12.' },
         { id: 'build-fixes', label: 'What you added to the sheet as a result', kind: 'long' },
       ] },
       { id: 'record', title: 'Save', fields: [
@@ -953,7 +954,7 @@ export const guided03: Record<string, Guided> = {
     ],
     guide: [
       { expect: 'Every type, colour and spacing decision written as a named token with a value and a role.',
-        fields: ['token-1', 'token-2', 'token-3', 'token-4', 'token-5', 'token-6', 'token-7', 'token-8'],
+        fields: ['token-1', 'token-2', 'token-3', 'token-4', 'token-5', 'token-6', 'token-7', 'token-8', 'token-more'],
         reveal: { first: 2, group: 2, count: 8, addLabel: 'Add two more tokens', note: 'A couple at a time. Work through type, then colour, then spacing.' },
         demo: {
           scenario: 'Made-up example. Naming the first few tokens, and renaming them once.',
@@ -979,7 +980,7 @@ export const guided03: Record<string, Guided> = {
         terms: [{ term: 'Prohibition', meaning: 'Where a token must not be used. It prevents the most common misuse better than any amount of description.' }],
         start: 'For each colour token, ask what someone might reasonably use it for that would be wrong.',
         enough: 'At least two tokens carry a prohibition with a reason.' },
-      { terms: [{ term: 'Pairing', meaning: 'A text colour together with the surface colour behind it. Contrast belongs to the pair, never to one colour on its own.' }, { term: 'Contrast ratio', meaning: 'A number comparing the lightness of text against its background. A free contrast checker gives it to you; there is nothing to work out by hand.' }, { term: 'Contrast table', meaning: 'The record from lesson 4 listing each pair you measured and the ratio it came back with.' }], expect: 'Every permitted pairing measured against your contrast table, with failures turned into prohibitions.',
+      { terms: [{ term: 'Pairing', meaning: 'A text colour together with the surface colour behind it. Contrast belongs to the pair, never to one colour on its own.' }, { term: 'Contrast ratio', meaning: 'A number comparing the lightness of text against its background. The contrast calculator from lesson 4 gives it to you; there is nothing to work out by hand.' }, { term: 'Contrast table', meaning: 'The record from lesson 4 listing each pair you measured and the ratio it came back with.' }], expect: 'Every permitted pairing measured against your contrast table, with failures turned into prohibitions.',
         fields: ['pairing-check', 'new-prohibitions'],
         supported: {
           material: 'A supplied sheet from the same made-up project. It permits text-secondary on surface-raised, but the contrast table from lesson 4 has no row for that pair: it measured text-secondary on surface-base only.',
@@ -998,7 +999,7 @@ export const guided03: Record<string, Guided> = {
         fields: ['build-gaps', 'build-fixes'],
         terms: [{ term: 'Build-it test', meaning: 'Rebuilding something using only the sheet. Every decision you have to invent is a gap in the specification.' }],
         start: 'Set the screen aside, take only the sheet, and rebuild one button from it.',
-        enough: 'The gap list is not empty; a first sheet always has gaps.' },
+        enough: 'Every invented decision is listed, or the list says “none” with how the test was run. An empty list is rare for a first sheet, so check the method first.' },
       { terms: [{ term: 'Token sheet', meaning: 'The single document naming every decision with its value and its role. It is the thing this lesson produces.' }, { term: 'Repair', meaning: 'The change a Check question asks you to make, recorded as what you actually altered.' }], expect: 'Where the sheet lives, and the repair the Check questions asked for.',
         fields: ['sheet-reference', 'improvement-made'],
         start: 'Add the missing specifications the test revealed before saving.',
@@ -1008,9 +1009,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'Are tokens worth the effort for one person working alone?',
         options: [
-          { label: 'Yes: the value appears the first time you build a second screen, because otherwise every value is re-derived by eye and drifts.', correct: true, feedback: 'Drift is invisible until two screens are placed side by side, and by then both are built. Named decisions are what keep them together.' },
-          { label: 'No: tokens are overhead until a team needs to share decisions.', feedback: 'The second screen is the team. Without names, you are the person who has to remember fourteen values exactly.' },
-          { label: 'Only if you are writing code.', feedback: 'A sheet of paper with names, values and roles is a complete token sheet. The form is irrelevant; the naming is the point.' },
+          { label: 'Worth it: by the second screen, untokened values are re-derived by eye and drift.', correct: true, feedback: 'Drift is invisible until two screens are placed side by side, and by then both are built. Named decisions are what keep them together.', was: ['Yes: the value appears the first time you build a second screen, because otherwise every value is re-derived by eye and drifts.'] },
+          { label: 'Not yet: tokens are overhead until a team has to share the same decisions.', feedback: 'The second screen is the team. Without names, you are the person who has to remember fourteen values exactly.', was: ['No: tokens are overhead until a team needs to share decisions.'] },
+          { label: 'Only once the design is being built in code, where the names are used.', feedback: 'A sheet of paper with names, values and roles is a complete token sheet. The form is irrelevant; the naming is the point.', was: ['Only if you are writing code.'] },
         ],
         repair: 'If any decision from lessons 1 to 7 is missing from step 1, add it as a named token now, and record the change in step 5.',
         recheck: 'Every type, colour and spacing decision from this module appears on the sheet.',
@@ -1018,22 +1019,22 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'You named a token “light-grey”. What goes wrong later?',
         options: [
-          { label: 'When contrast forces you to darken it, the name no longer describes it and every reference becomes misleading.', correct: true, feedback: 'Names outlive values. A role name survives the change; an appearance name has to be renamed everywhere or quietly lie.' },
-          { label: 'Nothing, as long as you update the value in one place.', feedback: 'The value updates fine. The name is what other people and future notes read, and it now says the wrong thing.' },
-          { label: 'It only matters if other people use the sheet.', feedback: 'You are the main reader, weeks later, and you will trust the name rather than re-checking the value.' },
+          { label: 'Once contrast forces it darker, the name lies and every reference misleads.', correct: true, was: ['When contrast forces you to darken it, the name no longer describes it and every reference becomes misleading.'], feedback: 'Names outlive values. A role name survives the change; an appearance name has to be renamed everywhere or quietly lie.' },
+          { label: 'Nothing much, as long as the value itself is updated in one place.', feedback: 'The value updates fine. The name is what other people and future notes read, and it now says the wrong thing.', was: ['Nothing, as long as you update the value in one place.'] },
+          { label: 'It only causes trouble when other people start using the same sheet.', feedback: 'You are the main reader, weeks later, and you will trust the name rather than re-checking the value.', was: ['It only matters if other people use the sheet.'] },
         ],
         repair: 'Rename any appearance-based token in step 1 to a role name, then record it in step 5.',
         recheck: 'No token name refers to a colour, a size or a position.',
       },
       {
-        question: 'The build-it test produced no gaps at all. What is the most likely explanation?',
+        question: 'The build-it test produced no gaps at all. What is the sound next move?',
         options: [
-          { label: 'You rebuilt it from memory of the original rather than from the sheet alone.', correct: true, feedback: 'A first sheet essentially always misses something: internal padding, a focus treatment, a disabled colour. No gaps usually means the screen was still in view.' },
-          { label: 'The sheet is complete and no repair is needed.', feedback: 'Possible and rare. Before accepting it, check whether the sheet specifies the space inside a control, not only around it.' },
-          { label: 'The component chosen was too complex.', feedback: 'A complex component would expose more gaps, not fewer.' },
+          { label: 'Confirm the original was out of sight; if it was, record “no gaps” and how you ran it.', correct: true, feedback: 'A rebuild with the screen still in view borrows answers from it, which is the usual reason for an empty gap list. If the original really was hidden and nothing was missing, “no gaps” is a valid result, and the method is what makes it believable.', was: ['You rebuilt it from memory of the original rather than from the sheet alone.'] },
+          { label: 'Record the sheet as complete, since a test with no gaps means no repair is needed.', feedback: 'The result may be true, and the record needs the method behind it. Without it, nobody can tell a complete sheet from a test run with the screen in view.', was: ['The sheet is complete and no repair is needed.'] },
+          { label: 'Put it down to the component: one that complex hides where the sheet is thin.', feedback: 'A complex component tends to expose more gaps, not fewer, because it needs more decisions.', was: ['The component chosen was too complex.'] },
         ],
-        repair: 'Redo the test with the original out of sight, or hand the sheet to someone else, and record every invented decision in step 4 and the change in step 5.',
-        recheck: 'The gap list names at least one decision the sheet did not specify, and the sheet now covers it.',
+        repair: 'If the original was in view, redo the test with it out of sight or hand the sheet to someone else, and record every invented decision in step 4. If no gaps appear, write “none” and how you ran it. Note it in step 5.',
+        recheck: 'The gap list names each decision the sheet did not specify, or says “none” with how the test was run.',
       },
     ],
     saveRoute: {
@@ -1041,6 +1042,15 @@ export const guided03: Record<string, Guided> = {
       external: 'If you keep the sheet as its own document, name the file here so the sheet and this record stay together.',
       creator: 'Your creator reads the token names, the prohibitions and the gaps the build-it test exposed. The gaps are the most useful part.',
       next: 'Open Your work and choose Ready for review. The next lesson builds one component in all of its states using only this sheet.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A museum events site has a token sheet with four names: blue-dark (#1d3557, headings and the Book button), grey-light (#8a8a8a, captions), gap-small (8) and gap-big (24). A developer used blue-dark for an “Event cancelled” label because it was the darkest colour available, and the 14 px captions in grey-light measure 3.45:1 on white.',
+      prompt: 'Rename these tokens and add the usage notes or prohibitions that would have prevented both problems. Explain why each change helps.',
+      anchors: {
+        weak: 'Keeps appearance names, or swaps them for other colour names, and lists values without usage rules or permitted pairings.',
+        adequate: 'Gives role names (action-surface, text-heading, text-caption, space-inside, space-between), prohibits action-surface on status labels, and records that text-caption fails 4.5:1 at 14 px, so it is darkened or prohibited for small text.',
+        strong: 'As adequate, plus a check or trade-off: measures a replacement caption grey before permitting it, accepts that role names must be learned, and plans a build-it test by someone else to find what the sheet still leaves unsaid.',
+      },
     },
   },
   'm03-l09-v1': {
@@ -1053,10 +1063,10 @@ export const guided03: Record<string, Guided> = {
       ] },
       { id: 'tokens', title: 'Built from the sheet alone', fields: [
         { id: 'state-tokens', label: 'For each state: the tokens it uses', kind: 'long' },
-        { id: 'missing-tokens', label: 'Every token you needed and did not have', kind: 'long', hint: 'Record it rather than inventing a value silently. These go back into the sheet.' },
+        { id: 'missing-tokens', label: 'Every token you needed and did not have', kind: 'long', hint: 'Record it rather than inventing a value silently. These go back into the sheet. If the sheet covered every state, write “none”.' },
       ] },
       { id: 'focus', title: 'Keyboard focus', fields: [
-        { id: 'focus-appearance', label: 'What focus looks like, and which token carries it', kind: 'long', hint: 'It must differ from hover, and be visible against every surface the component sits on.' },
+        { id: 'focus-appearance', label: 'What focus looks like, and which token carries it', kind: 'long', hint: 'It must differ from hover, and be visible against every surface the component sits on. Aim for at least 3:1 between the indicator and the colours next to it, the minimum WCAG sets for the parts of a control.' },
         { id: 'focus-check', label: 'Where you checked it, and against which surfaces', kind: 'short' },
       ] },
       { id: 'disabled', title: 'Disabled that explains itself', fields: [
@@ -1088,10 +1098,10 @@ export const guided03: Record<string, Guided> = {
           material: 'A supplied focus treatment from the same made-up project: on focus the button’s background lightens slightly, which is also exactly what happens on hover.',
           question: 'What is wrong with that, and what is the smallest fix?',
           options: [
-            { label: 'Focus and hover are indistinguishable, so a keyboard user cannot tell where they are; give focus its own visible outline offset from the control.', correct: true, feedback: 'Focus needs to be unmistakable and must not depend on a mouse being present. An outline sitting just outside the control works on every surface.' },
-            { label: 'Nothing: a lightened background is visible, which is what focus needs.', feedback: 'Visible is not enough if it means two different things. A mouse user hovering and a keyboard user focusing see the same thing.' },
-            { label: 'Remove the hover effect so the lightening only means focus.', feedback: 'That solves the ambiguity by removing useful mouse feedback, and the focus signal remains a subtle background change.' },
-            { label: 'Rely on the browser default focus ring.', feedback: 'A reasonable starting point and it often fails against particular surfaces, which is why the lesson asks you to check it against each one.' },
+            { label: 'Focus looks like hover; give focus its own visible outline set just outside the control.', correct: true, feedback: 'A keyboard user cannot tell where they are when focus and hover look alike. An outline just outside the control works on every surface; check it measures at least 3:1 against the colours beside it.', was: ['Focus and hover are indistinguishable, so a keyboard user cannot tell where they are; give focus its own visible outline offset from the control.'] },
+            { label: 'Nothing serious: a lightened background is visible, and visibility is what focus needs.', feedback: 'Visible is not enough if it means two different things. A mouse user hovering and a keyboard user focusing see the same thing.', was: ['Nothing: a lightened background is visible, which is what focus needs.'] },
+            { label: 'Remove the hover effect, so that the lightening only ever means keyboard focus.', feedback: 'That solves the ambiguity by removing useful mouse feedback, and the focus signal remains a subtle background change.', was: ['Remove the hover effect so the lightening only means focus.'] },
+            { label: 'Rely on the browser’s default focus ring, which every browser already supplies.', feedback: 'A reasonable starting point and it often fails against particular surfaces, which is why the lesson asks you to check it against each one.', was: ['Rely on the browser default focus ring.'] },
           ],
           then: 'Give your own focus state a token of its own and check it against every surface the component sits on.',
         },
@@ -1121,11 +1131,11 @@ export const guided03: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Is the disabled state just the default at reduced opacity?',
+        question: 'A colleague suggests making disabled simply the default button at 40 per cent opacity. What is the main problem?',
         options: [
-          { label: 'No: uniform opacity changes the background too, produces an unpredictable composite, and often leaves the label unreadable while still looking pressable.', correct: true, feedback: 'Disabled deserves its own tokens and its own explanation, because it is a state that has to communicate a reason.' },
-          { label: 'Yes, and it is the standard approach in most systems.', feedback: 'It is common, which is not the same as sound. It is the fastest way to produce an unreadable label over an unpredictable background.' },
-          { label: 'Yes, provided the opacity stays above 50 per cent.', feedback: 'A threshold does not fix the composite problem, and it still leaves the control looking pressable and unexplained.' },
+          { label: 'The blend is unpredictable, the label may become unreadable, and nothing says why.', correct: true, feedback: 'Uniform opacity mixes in whatever sits behind the button and often still looks pressable. Disabled deserves its own tokens and its own explanation, because it has to communicate a reason.', was: ['No: uniform opacity changes the background too, produces an unpredictable composite, and often leaves the label unreadable while still looking pressable.'] },
+          { label: 'Nothing serious: reduced opacity is the standard approach in most systems.', feedback: 'It is common, which is not the same as sound. It is the fastest way to produce an unreadable label over an unpredictable background.', was: ['Yes, and it is the standard approach in most systems.'] },
+          { label: 'Only the number: anything above 50 per cent opacity would avoid the problem.', feedback: 'A threshold does not fix the blending problem, and it still leaves the control looking pressable and unexplained.', was: ['Yes, provided the opacity stays above 50 per cent.'] },
         ],
         repair: 'Specify disabled with its own tokens in step 4 and write the sentence that tells the reader why, then record it in step 5.',
         recheck: 'Disabled uses named tokens and is accompanied by words explaining the condition.',
@@ -1133,9 +1143,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'Your focus state looks like a slightly lighter version of hover. Why is that a problem?',
         options: [
-          { label: 'A keyboard user cannot reliably tell where they are, and focus must not depend on a pointer being present.', correct: true, feedback: 'Focus is the keyboard user’s cursor. If it is a faint variant of a mouse effect, they lose their place on the screen.' },
-          { label: 'It is fine, since both mean the control is active.', feedback: 'They mean different things: hover is where the pointer is, focus is where the keyboard is. Conflating them costs the keyboard user their position.' },
-          { label: 'It only matters if the component is a form field.', feedback: 'Every focusable control needs a visible focus state, including buttons and links.' },
+          { label: 'A keyboard user cannot tell where they are, and focus must not need a pointer.', correct: true, feedback: 'Focus is the keyboard user’s cursor. If it is a faint variant of a mouse effect, they lose their place on the screen.', was: ['A keyboard user cannot reliably tell where they are, and focus must not depend on a pointer being present.'] },
+          { label: 'It is fine, since both states tell the reader that the control is active.', feedback: 'They mean different things: hover is where the pointer is, focus is where the keyboard is. Conflating them costs the keyboard user their position.', was: ['It is fine, since both mean the control is active.'] },
+          { label: 'It only matters for form fields, since buttons and links show their state anyway.', feedback: 'Every focusable control needs a visible focus state, including buttons and links.', was: ['It only matters if the component is a form field.'] },
         ],
         repair: 'Give focus its own token and appearance in step 3 and check it against every surface, then record the change in step 5.',
         recheck: 'Focus is distinguishable from hover and visible on each surface the component uses.',
@@ -1143,9 +1153,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'While building a state you needed a value the sheet does not have. What do you do?',
         options: [
-          { label: 'Record it as a missing token and add it to the sheet, rather than inventing a value in place.', correct: true, feedback: 'The invented value is invisible drift: it works here and diverges everywhere else. Recording it is how the sheet becomes complete.' },
-          { label: 'Pick a sensible value now and add it to the sheet later if it is reused.', feedback: '“Later if reused” is how the twelve accidental gaps in the spacing lesson happened.' },
-          { label: 'Use the nearest existing token even if it is wrong.', feedback: 'That hides a real gap behind a value that does not fit, and the mismatch will be blamed on the component.' },
+          { label: 'Record it as a missing token and add it to the sheet instead of inventing a value.', correct: true, was: ['Record it as a missing token and add it to the sheet, rather than inventing a value in place.'], feedback: 'The invented value is invisible drift: it works here and diverges everywhere else. Recording it is how the sheet becomes complete.' },
+          { label: 'Pick a sensible value now, and add it to the sheet later only if it is reused.', feedback: '“Later if reused” is how the twelve accidental gaps in the spacing lesson happened.', was: ['Pick a sensible value now and add it to the sheet later if it is reused.'] },
+          { label: 'Use the nearest existing token, even if slightly wrong, to keep within the system.', feedback: 'That hides a real gap behind a value that does not fit, and the mismatch will be blamed on the component.', was: ['Use the nearest existing token even if it is wrong.'] },
         ],
         repair: 'List every value you invented in the missing-tokens box in step 2, add them to the sheet, and note it in step 5.',
         recheck: 'The state table refers only to named tokens, and the sheet contains all of them.',
@@ -1157,13 +1167,22 @@ export const guided03: Record<string, Guided> = {
       creator: 'Your creator reads the state table, the focus treatment and the disabled wording. The missing-token list shows how the sheet is maturing.',
       next: 'Open Your work and choose Ready for review. The last lesson rebuilds a whole Module 1 screen from the sheet and compares the two honestly.',
     },
+    transfer: {
+      scenario: 'Made-up case: A laundrette app has a “Start machine” button. When no machine is selected it is the normal button at 40 per cent opacity; hover makes it slightly lighter; keyboard focus also makes it slightly lighter; and while the machine starts, nothing changes on screen for about three seconds.',
+      prompt: 'List the states this button really needs, and specify two of them properly, including what the reader is told. Give the reason for each.',
+      anchors: {
+        weak: 'Specifies only default and hover, keeps opacity for disabled, or treats focus as the same as hover.',
+        adequate: 'Names default, hover, focus, disabled and loading (and an error if starting fails); gives focus its own outline token distinct from hover; gives disabled its own tokens plus words such as “Choose a machine first”.',
+        strong: 'As adequate, plus a check or trade-off: measures the focus outline against each surface (at least 3:1), adds a loading message for the three-second wait, and notes that whether the disabled explanation is noticed needs a person.',
+      },
+    },
   },
   'm03-l10-v1': {
     route: paperRoute('the rebuilt screen beside the original'),
     worksheet: [
       { id: 'rebuild', title: 'The rebuild', fields: [
         { id: 'screen-chosen', label: 'Which Module 1 screen you rebuilt', kind: 'short' },
-        { id: 'from-sheet-only', label: 'Anything you could not build from the sheet and component work alone', kind: 'long', hint: 'Every one of these is a gap in the system, not a failure of the screen.' },
+        { id: 'from-sheet-only', label: 'Anything you could not build from the sheet and component work alone', kind: 'long', hint: 'Every one of these is a gap in the system, not a failure of the screen. If nothing was missing, write “none” and how you kept the original out of sight.' },
       ] },
       { id: 'critique', title: 'Both versions against the heuristics', fields: [
         { id: 'heuristic-1', label: 'Heuristic 1 · what it names, and what each version does about it', kind: 'long', example: 'Example (made up): visibility of system status — neither version says anything while the booking is being confirmed.' },
@@ -1186,7 +1205,7 @@ export const guided03: Record<string, Guided> = {
       { terms: [{ term: 'Token sheet', meaning: 'The list of named values you built in lesson 8: every colour, size and space the system allows.' }, { term: 'Gap', meaning: 'Something the screen needed and the sheet does not contain. It is what the rebuild is for, not a sign the rebuild went badly.' }], expect: 'The rebuilt screen, and every place the sheet could not carry you.',
         fields: ['screen-chosen', 'from-sheet-only'],
         start: 'Put the original out of sight and rebuild from the sheet and the state table.',
-        enough: 'The gap list is honest; a system that covered everything on its first outing is unlikely.' },
+        enough: 'The gap list is honest. A system that covered everything on its first outing is unlikely, so “none” needs the method beside it.' },
       { expect: 'Three heuristics applied to both versions.',
         fields: ['heuristic-1', 'heuristic-2', 'heuristic-3'],
         reveal: { first: 1, group: 1, count: 3, addLabel: 'Add the next heuristic', note: 'One at a time. Say what each version does about it, not which looks better.' },
@@ -1212,10 +1231,10 @@ export const guided03: Record<string, Guided> = {
           material: 'Three supplied sentences from the same made-up write-up. A: “Every text element now meets its contrast threshold, measured with the calculator.” B: “The line length is now 68 characters, counted over three lines.” C: “The redesign makes the screen easier to use.”',
           question: 'Which sentence cannot be supported by anything in this module, and why?',
           options: [
-            { label: 'C, because ease of use is a claim about people and nobody has used either version.', correct: true, feedback: 'A and B report measurements you took. C reports an outcome that would need a person attempting a task, which this module never did.' },
-            { label: 'A, because contrast measurements are only estimates.', feedback: 'They are calculated from stated colour values, so within their scope they are exact. What they do not establish is readability in every condition.' },
-            { label: 'B, because character counts vary by content.', feedback: 'The count is of your real content, over three lines, and it is reported as such. It is a measurement with a stated method.' },
-            { label: 'None: all three follow from careful work.', feedback: 'Careful work supports A and B. C requires evidence of a different kind entirely, and this module produced none of it.' },
+            { label: 'C, because ease of use is a claim about people, and nobody used either version.', correct: true, feedback: 'A and B report measurements you took. C reports an outcome that would need a person attempting a task, which this module never did.', was: ['C, because ease of use is a claim about people and nobody has used either version.'] },
+            { label: 'A, because contrast measurements are estimates that vary from screen to screen.', feedback: 'They are calculated from stated colour values, so within their scope they are exact. What they do not establish is readability in every condition.', was: ['A, because contrast measurements are only estimates.'] },
+            { label: 'B, because a character count changes whenever the content or the font changes.', feedback: 'The count is of your real content, over three lines, and it is reported as such. It is a measurement with a stated method.', was: ['B, because character counts vary by content.'] },
+            { label: 'None of them: all three follow from careful, measured work in this module.', feedback: 'Careful work supports A and B. C requires evidence of a different kind entirely, and this module produced none of it.', was: ['None: all three follow from careful work.'] },
           ],
           then: 'Sort your own sentences the same way: what you measured, and what would need a person.',
         },
@@ -1233,9 +1252,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'Your rebuilt screen is measurably more legible. May you say it is easier to use?',
         options: [
-          { label: 'No: legibility was measured, ease of use was not, and nobody has attempted a task on either version.', correct: true, feedback: 'The measurements are real and they are about the surface. What a person can accomplish is a different kind of evidence, and this module collected none of it.' },
-          { label: 'Yes, since legibility is a component of usability.', feedback: 'It is a necessary condition and not the claim. A perfectly legible screen can still hide the price or omit a step.' },
-          { label: 'Yes, if the heuristics also improved.', feedback: 'Heuristics identify risks by inspection. Improving against them is a reason to expect a better result, not a report of one.' },
+          { label: 'Only that it is more legible: nobody has tried a task on either version.', correct: true, was: ['No: legibility was measured, ease of use was not, and nobody has attempted a task on either version.'], feedback: 'The measurements are real and they are about the surface. What a person can accomplish is a different kind of evidence, and this module collected none of it.' },
+          { label: 'It may, since legibility is one measurable part of how usable a screen is.', feedback: 'It is a necessary condition and not the claim. A perfectly legible screen can still hide the price or omit a step.', was: ['Yes, since legibility is a component of usability.'] },
+          { label: 'Yes, provided the heuristic review also found fewer problems in the rebuild.', feedback: 'Heuristics identify risks by inspection. Improving against them is a reason to expect a better result, not a report of one.', was: ['Yes, if the heuristics also improved.'] },
         ],
         repair: 'Rewrite any outcome claim in step 3 as a measurement plus what would still need to be observed, then record it in step 5.',
         recheck: 'Every claim in the write-up names how it was established.',
@@ -1243,9 +1262,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'The heuristic review found a problem the rebuild did not fix. What should you do with it?',
         options: [
-          { label: 'Record it as an unresolved problem the system could not address, so it is visible rather than lost.', correct: true, feedback: 'A design system fixes surfaces. Missing feedback, missing steps and unanswered questions about the reader survive it, and naming them is the useful output.' },
-          { label: 'Fix it now, since the module is about improving the screen.', feedback: 'Sometimes right, and a behaviour problem usually needs evidence about people rather than another token. Recording it points at the next work.' },
-          { label: 'Leave it out: the module was about visual foundations.', feedback: 'The critique step exists precisely to catch what the visual work could not reach. Omitting it makes the module look more successful than it was.' },
+          { label: 'Record it as unresolved, outside what the system can fix, so it stays visible.', correct: true, feedback: 'A design system fixes surfaces. Missing feedback, missing steps and unanswered questions about the reader survive it, and naming them is the useful output.', was: ['Record it as an unresolved problem the system could not address, so it is visible rather than lost.'] },
+          { label: 'Fix it now with another token, since the module is about improving the screen.', feedback: 'A behaviour problem usually needs evidence about people rather than another token. Recording it points at the next work.', was: ['Fix it now, since the module is about improving the screen.'] },
+          { label: 'Leave it out of the write-up, since the module was about visual foundations.', feedback: 'The critique step exists precisely to catch what the visual work could not reach. Omitting it makes the module look more successful than it was.', was: ['Leave it out: the module was about visual foundations.'] },
         ],
         repair: 'Add anything the heuristics found and the rebuild did not fix to step 4, then record it in step 5.',
         recheck: 'The unresolved list names at least one problem no token could solve.',
@@ -1253,9 +1272,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'You could not rebuild part of the screen from the sheet alone. What does that mean?',
         options: [
-          { label: 'The sheet has a gap; record it and add the specification rather than treating it as a failure of the rebuild.', correct: true, feedback: 'The rebuild is the test of the sheet, so the gaps are its output. This is the same build-it test from lesson 8, run at full size.' },
-          { label: 'The screen was too complex for a token system.', feedback: 'Complexity shows where the sheet is thin. A system that only covers simple screens is not finished.' },
-          { label: 'The component work from lesson 9 was incomplete.', feedback: 'Possibly, and either way the answer is the same: name the missing specification and add it.' },
+          { label: 'A gap in the sheet: record it and add the missing specification to the sheet.', correct: true, feedback: 'The rebuild is the test of the sheet, so the gaps are its output. This is the same build-it test from lesson 8, run at full size.', was: ['The sheet has a gap; record it and add the specification rather than treating it as a failure of the rebuild.'] },
+          { label: 'The screen was too complex for a token system, so that part stays freehand.', feedback: 'Complexity shows where the sheet is thin. A system that only covers simple screens is not finished.', was: ['The screen was too complex for a token system.'] },
+          { label: 'The lesson 9 component work failed, so it needs redoing before any rebuild.', feedback: 'Redoing lesson 9 does not name what is missing. Whatever its source, the answer is to name the missing specification and add it to the sheet.', was: ['The component work from lesson 9 was incomplete.'] },
         ],
         repair: 'List every place the sheet ran out in step 1 and add the missing specifications to the token sheet, then record it in step 5.',
         recheck: 'The gaps found by the rebuild have been added to the sheet from lesson 8.',
@@ -1266,6 +1285,15 @@ export const guided03: Record<string, Guided> = {
       external: 'The original and the rebuild stay in your own folder. Keep the original untouched; the pair is what makes the comparison meaningful.',
       creator: 'Your creator reads the critique, what you could measure and what you deliberately did not claim. The unresolved list is the most useful part of the module.',
       next: 'Open Your work and choose Ready for review. This closes the visual foundations module; the reasoning modules build on the same screens.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A designer refreshed a garden centre’s plant-care page with a new token sheet. Every text pair now passes its contrast threshold and the measure fell from 110 to 66 characters. Her write-up says: “The new page is clearer and will reduce calls to the help desk.” Nobody has used either version, and the page still never says whether plants can be delivered.',
+      prompt: 'Rewrite her claim so that each part is supported, and name one problem the refresh could not fix. Explain why it lies outside visual craft.',
+      anchors: {
+        weak: 'Keeps “clearer” and “will reduce calls” as findings, or lists only visual complaints as the unresolved problems.',
+        adequate: 'Keeps the measured craft claims (contrast thresholds met, a 66-character measure), turns the outcome claim into a question that needs people or data, and names the missing delivery information as a content or product gap no token can fix.',
+        strong: 'As adequate, plus a next check: a small task with a few people finding care steps and delivery terms, or a later look at help-desk call reasons, noting that a before-and-after comparison alone would not show cause.',
+      },
     },
   },
 };
