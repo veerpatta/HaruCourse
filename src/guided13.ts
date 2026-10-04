@@ -3,7 +3,16 @@
 // CSS, so every lesson shows one small complete thing before expanding it, and
 // governance is introduced through ordinary team situations rather than as
 // abstract rules. Nothing needs a documentation platform or a design tool.
-import { improvementMade, revealOne, textRoute, type Guided } from './guided';
+// Core lessons need no coding: learners bring Project 1 screens and states
+// and use the supplied working component in public/starters/m13/. Lessons 4,
+// 9 and 11 are the optional technical extension.
+import { improvementMade, revealOne, textRoute, type Guided, type Route } from './guided';
+
+const componentRoute = (id: string, what: string): Route => ({
+  recommended: `Optional technical extension: core learners can use the supplied working component and the specification lessons instead. To practise ${what}, download component-states.html (on the course site, the address ending /starters/m13/component-states.html) and save it in Documents\\HaruCourse\\Practice\\${id}. If Windows saved it as component-states.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click), make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here.`,
+  alternative: 'If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may work from your own Project 2 build instead; note its folder in Your work. Nothing is uploaded.',
+});
+const suppliedComponent = 'Supplied working component (made up practice material): component-states.html, a button and a text input for the Northside Tool Library, version 1.0.0. Open it from the course site at the address ending /starters/m13/component-states.html, or download it. Its page shows every state in labelled grids, its tokens, measured contrast on the plain background, keyboard behaviour, content rules and one open decision.';
 
 export const guided13: Record<string, Guided> = {
   'm13-l01-v1': {
@@ -38,7 +47,7 @@ export const guided13: Record<string, Guided> = {
           { term: 'Design system', meaning: 'A set of decisions made once and reused, with the documentation that lets somebody else use them. It is not a folder of components.' },
           { term: 'Drift', meaning: 'The same decision made slightly differently in different places, by you, over time. It is the evidence that a decision was never actually settled.' },
         ],
-        start: 'Open three of your own screens side by side and measure the same gap on each.',
+        start: 'Open three of your own screens side by side (Project 1 drawings count) and measure the same gap on each.',
         enough: 'Your drift examples name a measurement or a word rather than a general feeling of inconsistency.' },
       { expect: 'Three problems, each stated as a problem for a named person, with at least one costing somebody else time.',
         fields: ['problem-1', 'problem-2', 'problem-3'],
@@ -145,11 +154,11 @@ export const guided13: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'You have four screens and one engineer. Does that justify a design system?',
+        question: 'You have four screens, one engineer, and three decisions that keep drifting between screens. Does that justify a full design system?',
         options: [
-          { label: 'Possibly not a full one. Sometimes what is needed is three settled decisions and a page of documentation.', correct: true, feedback: 'A system pays back when the same decisions recur across people and time. Before that it is maintenance with no return, and the honest answer is to settle the three decisions that keep drifting.' },
-          { label: 'Yes, because consistency always pays back.', feedback: 'Consistency pays back; the machinery for producing it does not always. The question is whether the decisions recur often enough to be worth documenting.' },
-          { label: 'No, systems are for large teams only.', feedback: 'Size is not the test. The same person re-deciding the same thing every month is a real cost, and one page may fix it.' },
+          { label: 'Probably not yet: settle the three drifting decisions on one documented page.', correct: true, feedback: 'A full system pays back when the same decisions recur across people and time. Before that it is maintenance with little return; settling what actually drifts is the proportionate step.', was: ['Possibly not a full one. Sometimes what is needed is three settled decisions and a page of documentation.'] },
+          { label: 'Yes, because consistency always pays back, whatever the size of the product or team.', feedback: 'Consistency pays back; the machinery for producing it does not always. The question is whether decisions recur often enough to be worth that machinery.', was: ['Yes, because consistency always pays back.'] },
+          { label: 'No, because design systems are only ever worth building for large teams with many products.', feedback: 'Size alone is not the test. One person re-deciding the same thing every month is a real cost, and one page may fix it.', was: ['No, systems are for large teams only.'] },
         ],
         repair: 'Check your three problems in step 2 are things that have actually recurred, and replace any that have not. Record the change in step 5.',
         recheck: 'Every problem names something that has happened more than twice.',
@@ -157,24 +166,33 @@ export const guided13: Record<string, Guided> = {
       {
         question: 'Your purpose statement says the system provides a consistent, scalable foundation. What is wrong with it?',
         options: [
-          { label: 'It names nobody and no cost, so it cannot be used to decide what to build first.', correct: true, feedback: 'A purpose exists to settle arguments. Three problems with people and costs attached will tell you which component to build first; a description of the system will not.' },
-          { label: 'Nothing, though it could be more specific.', feedback: 'Specificity is not a polish here. Without a person and a cost, the sentence cannot answer any question you will ask it.' },
-          { label: 'Scalable is the wrong word for a small product.', feedback: 'The vocabulary is a symptom. Replacing scalable with something else leaves the same unusable sentence.' },
+          { label: 'It names nobody and no cost, so it cannot decide what to build first.', correct: true, feedback: 'A purpose exists to settle arguments. Three problems with people and costs attached tell you which component to start with; a description of the system does not.', was: ['It names nobody and no cost, so it cannot be used to decide what to build first.'] },
+          { label: 'Nothing is wrong with it, though it could be a little more specific.', feedback: 'Specificity is not polish here. Without a person and a cost, the sentence cannot answer any question you will ask it.', was: ['Nothing, though it could be more specific.'] },
+          { label: '“Scalable” is the wrong word for a product this small, and a smaller word would fix it.', feedback: 'The vocabulary is a symptom. Swapping the word leaves the same unusable sentence.', was: ['Scalable is the wrong word for a small product.'] },
         ],
         repair: 'Rewrite any problem in step 2 that does not name a person and a cost. Record the change in step 5.',
         recheck: 'Reading your three problems tells you which component to build first.',
       },
       {
-        question: 'You have not written a maintenance cost or anything the system makes harder. Does that matter?',
+        question: 'Your purpose page states benefits but no maintenance time and nothing the system makes harder. Does that matter?',
         options: [
-          { label: 'Yes. A system that costs nothing and constrains nothing is a folder of pictures, and stating the cost is what gets it maintained.', correct: true, feedback: 'Rigidity is real: some screens will be worse because they had to use the shared component. Saying so in advance is what makes the trade an argument rather than a surprise.' },
-          { label: 'Not much, since the cost is obvious to anyone who has built one.', feedback: 'It is obvious to people who have. It is exactly the thing that surprises everybody else, including you in four months.' },
-          { label: 'It matters only if somebody else pays the cost.', feedback: 'You will pay it, monthly, and the estimate is what decides whether the system is the right size.' },
+          { label: 'It matters: the stated cost is what gets the system maintained and sized.', correct: true, feedback: 'Rigidity is real: some screens will be worse for using the shared component. Saying so in advance turns the trade into an argument rather than a surprise.', was: ['Yes. A system that costs nothing and constrains nothing is a folder of pictures, and stating the cost is what gets it maintained.'] },
+          { label: 'Not much, since the cost is obvious to anyone who has built a system.', feedback: 'It is obvious to people who have. It surprises everybody else, including you in four months.', was: ['Not much, since the cost is obvious to anyone who has built one.'] },
+          { label: 'Only if somebody other than you will pay the monthly cost of keeping it up to date.', feedback: 'You will pay it monthly, and the estimate decides whether the system is the right size.', was: ['It matters only if somebody else pays the cost.'] },
         ],
         repair: 'Write an hours-a-month figure and one thing the system makes harder in step 5, then record the change.',
         recheck: 'Your purpose page states a cost as well as a benefit.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a small charity runs a volunteer sign-up site with five screens, one part-time developer and you. Button styles differ on three screens, the developer asks you every week how error messages should look, and someone has proposed “a full design system like the big companies have”.',
+      prompt: 'Decide what the system should be for and what it should leave out, and explain why that scope fits this charity better than the proposal.',
+      anchors: {
+        weak: 'Agrees to build a full system for consistency in general, or lists many components with no person or cost attached.',
+        adequate: 'States problems with a person and a cost (drifting buttons, weekly error questions costing the developer), names the real audience and lists what stays out.',
+        strong: 'As adequate, and estimates the monthly upkeep or names what the system will make harder, or says a single page of settled decisions may be enough.',
+      },
+    },
     saveRoute: {
       auto: 'Your repeated decisions, the three problems, the audience, the boundary and the cost save as you type, on this device first and then online.',
       external: 'The system itself will live as Markdown and a stylesheet in your own folder. Nothing here needs a documentation platform or a design tool.',
@@ -184,6 +202,11 @@ export const guided13: Record<string, Guided> = {
   },
   'm13-l02-v1': {
     route: textRoute,
+    material: [
+      suppliedComponent,
+      'A misuse you can check yourself (made up practice material): the supplied component’s token table says space-3 is 12px, but its stylesheet declares 16px, which is what every button and field uses. Inspect a button’s padding to confirm it.',
+      'Another real misuse to look for there: the success message colour is measured only on the plain background. Measure it on the tinted panel before trusting it everywhere.',
+    ],
     worksheet: [
       { id: 'decisions', title: 'From values to decisions', intro: 'A foundation is a value plus a rule for when to use it. Take the groups one at a time.', fields: [
         ...[1, 2, 3, 4, 5, 6].map((n) => ({ id: `group-${n}`, label: `Group ${n} · the values, the rule for using them, and why these values`, kind: 'long' as const,
@@ -198,10 +221,10 @@ export const guided13: Record<string, Guided> = {
         { id: 'reduced-pairs', label: 'The reduced-motion pair for each one', kind: 'long' },
       ] },
       { id: 'wrong', title: 'One wrong usage per group', fields: [
-        { id: 'do-not-pairs', label: 'For each group: one do and one do-not, drawn from a mistake you actually made', kind: 'long', example: 'Example (made up): do use the status colour with its word beside it. Do not use it alone, as I did on the results card until the greyscale check in Module 11.' },
+        { id: 'do-not-pairs', label: 'For each group: one do and one do-not, from a real misuse, with where it came from', kind: 'long', hint: 'Your own screens, the value check in step 5 or the supplied material. Never invent a mistake to fill a gap; leave a group without one and say so.', example: 'Example (made up): do use the status colour with its word beside it. Do not use it alone, as I did on the results card until the greyscale check in Module 11.' },
       ] },
       { id: 'check', title: 'Check against a real screen', fields: [
-        { id: 'screen-checked', label: 'Which screen you checked, value by value', kind: 'short' },
+        { id: 'screen-checked', label: 'Which screen you checked, value by value: a Project 1 drawing, a built page or the supplied component', kind: 'short' },
         { id: 'not-permitted', label: 'Every value in use that the foundations do not permit', kind: 'long', hint: 'There will be some. Deciding whether to add the value or change the screen is the point of this step.' },
         improvementMade,
       ] },
@@ -248,7 +271,7 @@ export const guided13: Record<string, Guided> = {
         fields: ['do-not-pairs'],
         terms: [
           { term: 'Do-and-do-not', meaning: 'The right usage beside the wrong one. The wrong one is what people learn from, because it names the mistake they were about to make.' },
-          { term: 'From a real mistake', meaning: 'Taken from your own screens rather than invented. Invented wrong examples tend to be absurd, and nobody was going to make them.' },
+          { term: 'From a real misuse', meaning: 'Taken from your own screens, a value check or supplied material, with the source named. Invented wrong examples tend to be absurd, and nobody was going to make them.' },
         ],
         sorter: {
           intro: 'Six foundation entries from a made up tool-library system. For each one, decide what it is missing, if anything.',
@@ -294,9 +317,9 @@ export const guided13: Record<string, Guided> = {
           then: 'Now read your own six groups the same way, and fix whichever part is missing.',
           pattern: 'Rules go missing more often than values, and reasons go missing more often than rules. A value with no reason survives until somebody with stronger taste arrives; a value with no rule does not survive a fortnight.',
         },
-        start: 'For each group, find a screen where you got it wrong and use that as the do-not.',
-        enough: 'Every do-not is something you actually did, not something nobody would do.' },
-      { expect: 'One built screen checked value by value, with every value in use that the foundations do not permit.',
+        start: 'For each group, find a real misuse on your screens, in your step 5 check or in the supplied material, and use that as the do-not.',
+        enough: 'Every do-not is a real misuse with its source named; a group with none says so.' },
+      { expect: 'One screen (a drawing, a built page or the supplied component) checked value by value, with every value the foundations do not permit.',
         fields: ['screen-checked', 'not-permitted', 'improvement-made'],
         terms: [
           { term: 'Value in use but not permitted', meaning: 'Something on a real screen that the foundations do not allow. Either the foundations are wrong or the screen is, and both are useful findings.' },
@@ -315,16 +338,16 @@ export const guided13: Record<string, Guided> = {
           tradeoff: 'Changing seven values on a finished screen is fiddly, and two of them looked very slightly better before.',
           uncertainty: 'Still unknown: whether the tinted panel should exist at all, since it is the thing that forced a new grey. That is a question for the component review rather than for the foundations.',
         },
-        start: 'Open the inspector on one screen and read the computed values rather than trusting the stylesheet.',
+        start: 'Measure a Project 1 drawing, or open the supplied component and read the computed values in the inspector rather than trusting its table.',
         enough: 'For each unpermitted value you decided whether to add it to the foundations or change the screen.' },
     ],
     checks: [
       {
-        question: 'You have published six spacing values and screens still look unrelated. What is missing?',
+        question: 'You have published six spacing values, and screens built from them still look unrelated. What is missing?',
         options: [
-          { label: 'A rule for when each value applies. Six permitted values used arbitrarily is arbitrary spacing with extra steps.', correct: true, feedback: 'One sentence — the gap between groups always exceeds the gap within them — decides most of the cases the scale leaves open. That sentence is the foundation; the numbers are the input to it.' },
-          { label: 'The scale has too many values.', feedback: 'Fewer values would help a little by removing choices. The rule is what makes any number of values consistent.' },
-          { label: 'The values are not being used, so it is an adoption problem.', feedback: 'They are being used, which is why this is worth noticing. Permitted and consistent are different things.' },
+          { label: 'A rule for when each value applies, not just which values are allowed.', correct: true, feedback: 'One sentence such as “the gap between groups always exceeds the gap within them” settles most of what a list of values leaves open. The rule is the foundation; the numbers are its input.', was: ['A rule for when each value applies. Six permitted values used arbitrarily is arbitrary spacing with extra steps.'] },
+          { label: 'Fewer values: six is too many for anyone to apply consistently across screens.', feedback: 'Fewer values remove some choices. Only a rule makes any number of values consistent.', was: ['The scale has too many values.'] },
+          { label: 'Adoption: the values exist, but the screens are not yet built from them at all.', feedback: 'The screens are using them, which is why this is worth noticing. Permitted and consistent are different things.', was: ['The values are not being used, so it is an adoption problem.'] },
         ],
         repair: 'Add a rule for when each value applies to your spacing group in step 1, and record the change in step 5.',
         recheck: 'Every foundation group has a rule as well as values.',
@@ -332,24 +355,33 @@ export const guided13: Record<string, Guided> = {
       {
         question: 'Foundations feel like the easy part of the system. Are they?',
         options: [
-          { label: 'They are the part everything else inherits, so a weak scale or an unmeasured pair propagates into every component.', correct: true, feedback: 'Fixing a foundation later means touching everything built on it. That is the opposite of easy, and it is why the reasons and rules matter more here than anywhere else in the system.' },
-          { label: 'Yes, because the values already exist from earlier modules.', feedback: 'The values exist. The rules, the reasons and the measured pairs are the work, and they are what components will inherit.' },
-          { label: 'Yes for spacing and type, no for colour.', feedback: 'Colour carries the contrast measurements, and a spacing scale with no rule propagates just as widely.' },
+          { label: 'Everything inherits them, so a weak scale or unmeasured pair spreads everywhere.', correct: true, feedback: 'Fixing a foundation later means touching everything built on it. That is why rules and reasons matter more here than anywhere else in the system.', was: ['They are the part everything else inherits, so a weak scale or an unmeasured pair propagates into every component.'] },
+          { label: 'Yes, because the values already exist in your token sheet from the earlier modules.', feedback: 'The values exist. The rules, the reasons and the measured pairs are the work, and components inherit them.', was: ['Yes, because the values already exist from earlier modules.'] },
+          { label: 'Yes for spacing and type, though colour needs more care because of contrast.', feedback: 'Colour carries the contrast measurements, and a spacing scale with no rule spreads just as widely.', was: ['Yes for spacing and type, no for colour.'] },
         ],
         repair: 'Add the reason to any group in step 1 that has only values and a rule. Record the change in step 5.',
         recheck: 'No group could be overridden by somebody simply preferring a different number.',
       },
       {
-        question: 'Your do-and-do-not examples are invented rather than taken from your own screens. Does it matter?',
+        question: 'You cannot find a mistake of your own for the spacing group, so you plan to invent one for its do-not example. What should you do instead?',
         options: [
-          { label: 'Yes. Invented wrong examples tend to be absurd, and nobody was going to make them.', correct: true, feedback: 'The mistakes worth showing are the plausible ones, which means the ones you actually made. A do-not nobody was tempted by teaches nothing.' },
-          { label: 'Not really, as long as the right usage is clear.', feedback: 'The right usage is usually obvious. The wrong one is where the teaching is, and only if it is a mistake somebody would make.' },
-          { label: 'It matters only if somebody checks where they came from.', feedback: 'Nobody will check. The example will simply fail to prevent the mistake it was meant to prevent.' },
+          { label: 'Use a real misuse found by checking a screen or the supplied component.', correct: true, feedback: 'A do-not teaches only if somebody would plausibly make the mistake. The value check in step 5, the supplied component or the supplied notes give real ones; label where each came from rather than inventing one.', was: ['Yes. Invented wrong examples tend to be absurd, and nobody was going to make them.'] },
+          { label: 'Invent one, since nobody will check where a do-not example came from.', feedback: 'Nobody may check, and an invented mistake tends to be one nobody would make, so it fails to prevent anything.', was: ['Not really, as long as the right usage is clear.'] },
+          { label: 'Leave the do-not out, because the right usage on its own is clear enough to follow.', feedback: 'The right usage is usually obvious; the wrong one is where the teaching is, provided it is a mistake somebody would make.', was: ['It matters only if somebody checks where they came from.'] },
         ],
-        repair: 'Replace one invented do-not in step 4 with a mistake from your own screens. Record the change in step 5.',
-        recheck: 'Every do-not is traceable to a real screen of yours.',
+        repair: 'Replace any invented do-not in step 4 with a misuse from your own screens, the step 5 check or the supplied material, labelled. Record the change in step 5.',
+        recheck: 'Every do-not names where it came from.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a recipe site’s foundations page lists spacing values 4, 8, 16 and 32, a grey #8a8a8a for captions, and two shadow levels. Captions in grey sit on white, where they measure 3.45:1. One screen uses 12-pixel gaps that are on no list.',
+      prompt: 'Rewrite one of these entries as a real foundation, and explain what you would do about the caption grey and the 12-pixel gap.',
+      anchors: {
+        weak: 'Adds 12 to the scale and keeps the grey because it looks soft; publishes values with no rule or reason.',
+        adequate: 'Adds a usage rule and a reason (for example, gaps between groups exceed gaps within them), forbids the grey on white for body-size text below 4.5:1, and tries 8 or 16 before adding 12.',
+        strong: 'As adequate, and lists the failing pair as a forbidden pair, or turns the 12-pixel screen into a labelled do-not example drawn from a real misuse.',
+      },
+    },
     saveRoute: {
       auto: 'Your six groups, the contrast table, the motion values and the do-and-do-not pairs save as you type, on this device first and then online.',
       external: 'The foundations page itself is Markdown in your own folder, beside the stylesheet whose custom properties it documents. Screenshots for the examples sit with it.',
@@ -378,8 +410,9 @@ export const guided13: Record<string, Guided> = {
         { id: 'when-not', label: 'When not to use this component, and what to use instead', kind: 'long', hint: 'This is the section that stops a component being applied to things it was never for.' },
       ] },
       { id: 'test', title: 'Test the specification', fields: [
-        { id: 'given-to', label: 'Who you gave it to, or how you tested it alone', kind: 'short', hint: 'If nobody is available, leave it a day and build from it yourself without looking at the screens. Write that here.' },
-        { id: 'questions-asked', label: 'Every question they had to ask you', kind: 'long', hint: 'Each question is a hole in the specification. That is the whole result of this step.' },
+        { id: 'spec-test-route', label: 'How the specification was tested', kind: 'choice', options: ['Another person read it and said what they would build', 'Solo rehearsal: I rebuilt from it myself after a gap'] },
+        { id: 'given-to', label: 'Who read it, as a role and not a name, or how you tested it alone', kind: 'short', sensitive: true, hint: 'If nobody is available, leave it a day and rebuild from it yourself without looking at the screens. That is rehearsal, not a reader test.' },
+        { id: 'questions-asked', label: 'Every question raised, in short, with no names (yours, if solo)', kind: 'long', sensitive: true, hint: 'Each question is a hole in the specification. Keep any raw notes private and local, with a date to delete them.' },
         improvementMade,
       ] },
     ],
@@ -475,7 +508,7 @@ export const guided13: Record<string, Guided> = {
         start: 'Copy the keyboard rows from your Module 9 table rather than writing them again.',
         enough: 'Each prohibition names an alternative.' },
       { expect: 'The specification given to somebody, or built from cold by you, with every question they had to ask recorded.',
-        fields: ['given-to', 'questions-asked', 'improvement-made'],
+        fields: ['spec-test-route', 'given-to', 'questions-asked', 'improvement-made'],
         terms: [
           { term: 'Testing a specification', meaning: 'Giving it to somebody and asking what they would build. Every question they ask is a hole, and the questions are the result.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
@@ -494,15 +527,15 @@ export const guided13: Record<string, Guided> = {
           uncertainty: 'Still unknown: how many holes remain that this reader happened not to hit. One reader finds the holes one reader finds.',
         },
         start: 'Hand it over without explaining anything, and write down every question rather than answering it immediately.',
-        enough: 'The questions are recorded as holes in the document rather than as things you explained away.' },
+        enough: 'The questions are recorded as holes in the document, and the route says whether a reader or a solo rehearsal found them.' },
     ],
     checks: [
       {
-        question: 'Your component specification has the visual design, the variants and the states. Is it complete?',
+        question: 'Your component specification covers the visual design, the variants and the states. Is it complete?',
         options: [
-          { label: 'Not yet. Content rules, keyboard behaviour and a when-not-to-use section are what make it reusable, and they are what designers most often leave out.', correct: true, feedback: 'The visual design is one part. What lets somebody build it without asking you is the anatomy, the decided grid, the content rules and the boundaries.' },
-          { label: 'Yes, since those three cover what the component looks like in every situation.', feedback: 'They cover appearance in every situation. Nothing yet says what happens to a title of eleven words, or which key does what.' },
-          { label: 'Nearly, apart from the colour values.', feedback: 'Colour comes from the foundations. The gaps are behaviour and content.' },
+          { label: 'Not yet: content rules, keyboard behaviour and when not to use it are missing.', correct: true, feedback: 'Those are what let somebody build it without asking you, and what designers most often leave out. Appearance in every state is only one part.', was: ['Not yet. Content rules, keyboard behaviour and a when-not-to-use section are what make it reusable, and they are what designers most often leave out.'] },
+          { label: 'Yes, because those three show exactly how it looks in every situation it meets.', feedback: 'They show appearance in every situation. Nothing yet says what happens to an eleven-word title, or which key does what.', was: ['Yes, since those three cover what the component looks like in every situation.'] },
+          { label: 'Nearly, apart from listing the exact colour values for each state in the grid.', feedback: 'Colour comes from the foundations. The gaps are behaviour and content.', was: ['Nearly, apart from the colour values.'] },
         ],
         repair: 'Add the missing sections in steps 3 and 4, and record the change in step 5.',
         recheck: 'Your specification covers content, keyboard and boundaries as well as appearance.',
@@ -510,9 +543,9 @@ export const guided13: Record<string, Guided> = {
       {
         question: 'You have listed loading and error alongside compact and unavailable as variants. What goes wrong?',
         options: [
-          { label: 'They are states rather than variants, so nothing says what a compact card looks like while loading.', correct: true, feedback: 'A variant is chosen at design time; a state is entered at run time. Listing them together removes the second axis, and the combinations stop being visible.' },
-          { label: 'Nothing, provided all five are specified.', feedback: 'All five being specified leaves fifteen combinations of which five are covered.' },
-          { label: 'The list is simply too long.', feedback: 'Length is not the problem. The grid is usually more cells than the list, and it answers questions the list cannot.' },
+          { label: 'Loading and error are states, so a compact card’s loading look is never decided.', correct: true, feedback: 'A variant is chosen at design time; a state is entered at run time. Listing them together removes the second axis, and the combinations stop being visible.', was: ['They are states rather than variants, so nothing says what a compact card looks like while loading.'] },
+          { label: 'Nothing goes wrong, as long as all five entries are fully specified and drawn out.', feedback: 'Five specified entries leave fifteen combinations, of which only five are covered.', was: ['Nothing, provided all five are specified.'] },
+          { label: 'The list simply becomes too long for anyone to read or keep in their head.', feedback: 'Length is not the problem. The grid usually has more cells than the list, and it answers questions the list cannot.', was: ['The list is simply too long.'] },
         ],
         repair: 'Rebuild the grid in step 2 with variants down and states across, and decide or exclude every cell. Record the change in step 5.',
         recheck: 'No cell of the grid is blank.',
@@ -520,14 +553,23 @@ export const guided13: Record<string, Guided> = {
       {
         question: 'A content rule says the title should be an appropriate length. What is wrong with it?',
         options: [
-          { label: 'Appropriate is decided by whoever builds it, so the decision has been handed back rather than made.', correct: true, feedback: 'Lines like this survive review because nobody can disagree with them. The buildable version names the number of lines, which end survives, and why.' },
-          { label: 'Nothing, since the designer will review the build.', feedback: 'Reviewing afterwards costs a round trip on something a sentence could have settled.' },
-          { label: 'It should specify a character count instead.', feedback: 'A character count is one way and often the wrong one, since two lines of a proportional typeface is not a fixed count. Lines and which end survives is usually better.' },
+          { label: 'It hands the decision back to whoever builds it, instead of making it.', correct: true, feedback: 'Lines like this survive review because nobody can disagree with them. A buildable rule names how many lines, which end survives and why.', was: ['Appropriate is decided by whoever builds it, so the decision has been handed back rather than made.'] },
+          { label: 'Nothing, because the designer will review the build anyway and correct the length.', feedback: 'Reviewing afterwards costs a round trip on something one sentence could settle.', was: ['Nothing, since the designer will review the build.'] },
+          { label: 'It should give an exact maximum number of characters instead.', feedback: 'A character count is one way, and often a poor one, since two lines of a proportional typeface hold no fixed count. Lines and the preserved end are usually better.', was: ['It should specify a character count instead.'] },
         ],
         repair: 'Rewrite that rule in step 3 to name lines, the end preserved and the reason. Record the change in step 5.',
         recheck: 'No content rule leaves a decision to the reader.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a parking app has a “permit card” with a vehicle registration, an expiry date, a status and a “Renew” button. The current specification shows one picture and says “status should be clear”. Engineers keep asking what happens when a permit is expired, loading or has no expiry date.',
+      prompt: 'Name the parts, two variants and the states you would put in the grid, plus one content rule, and explain why the grid answers the engineers’ questions.',
+      anchors: {
+        weak: 'Lists expired and loading as variants next to the picture, or keeps “status should be clear” as the rule.',
+        adequate: 'Names parts with optional ones marked, separates variants (for example active and expired) from states (loading, focus, error), and writes a buildable rule for the missing expiry date.',
+        strong: 'As adequate, and marks impossible cells, adds keyboard behaviour or a when-not-to-use line, or plans to test the specification with someone or a labelled solo rebuild.',
+      },
+    },
     saveRoute: {
       auto: 'The anatomy, the grid, the content rules, the behaviour and the questions save as you type, on this device first and then online.',
       external: 'Drawings or screenshots of the variants stay in your own folder beside the specification. The specification itself is Markdown with a table for the grid.',
@@ -536,16 +578,17 @@ export const guided13: Record<string, Guided> = {
     },
   },
   'm13-l04-v1': {
-    route: textRoute,
+    route: componentRoute('m13-l04-v1', 'building a component with every state'),
+    material: [suppliedComponent],
     worksheet: [
       { id: 'default', title: 'Build the default', fields: [
-        { id: 'built-where', label: 'Where the component and its states page live', kind: 'short', hint: 'One HTML file and your existing stylesheet, in your own folder. No framework or build step.' },
+        { id: 'built-where', label: 'Where the component and its states page live', kind: 'short', hint: 'Start from the supplied component-states.html, saved in your own folder. One HTML file; no framework or build step.' },
         { id: 'tokens-only', label: 'How you kept every value coming from a token', kind: 'short' },
         { id: 'missing-tokens', label: 'Any value you needed that the foundations do not have', kind: 'long', hint: 'Do not quietly add it. Write it here and decide in step 5 whether the foundations or the component is wrong.' },
       ] },
       { id: 'states', title: 'Every state, demonstrable', fields: [
         { id: 'states-built', label: 'Which states you built, and how each one can be shown on demand', kind: 'long', hint: 'Showable on demand means a class you can add, or a copy of the markup on the page. Not something that only appears if the network is slow.' },
-        { id: 'hard-to-build', label: 'Any state that was hard to build, and what that suggested about the specification', kind: 'long' },
+        { id: 'hard-to-build', label: 'Any state that was hard to build, the checks you ran, and what they suggested', kind: 'long', hint: 'The ladder: is a rule winning in the inspector? Does the same state build in the supplied component? Only then suspect the specification.' },
       ] },
       { id: 'page', title: 'The states page', fields: [
         { id: 'page-layout', label: 'How the page is laid out, and how each cell is labelled', kind: 'long', example: 'Example (made up): three variants down the page, five states across each row, with the variant and state named above every cell.' },
@@ -556,7 +599,7 @@ export const guided13: Record<string, Guided> = {
         { id: 'rules-held', label: 'Which content rules held, and which did not', kind: 'long' },
       ] },
       { id: 'revealed', title: 'What the build revealed', fields: [
-        { id: 'spec-problems', label: 'Every specification problem the build found', kind: 'long' },
+        { id: 'spec-problems', label: 'Every specification problem the build found, or that you found none after the checks', kind: 'long' },
         { id: 'grey-keyboard', label: 'What the greyscale and keyboard checks showed on the states page', kind: 'long', hint: 'A states page is the easiest place in the whole system to run both, because everything is visible at once.' },
         improvementMade,
       ] },
@@ -577,19 +620,19 @@ export const guided13: Record<string, Guided> = {
           { term: 'Hard to build', meaning: 'A signal, not an obstacle. A state that fights the markup usually means the specification asked for something the component is not shaped for.' },
         ],
         demo: {
-          scenario: 'Made-up example. Building the states of a tool card, and treating a difficult state as a coding problem.',
+          scenario: 'Made-up example. Building the states of a tool card, and jumping to a verdict about a difficult state.',
           beats: [
             { label: 'What was difficult', text: 'The loading state on the compact variant. I spent an hour on it and every version either changed the card’s height or lost the status line.' },
-            { label: 'What I assumed', text: 'That I was not good enough at CSS yet. It was my second week of building and that assumption was comfortable.' },
-            { label: 'What was actually wrong', text: 'The compact variant has no room for the status text at all. The loading state has to reserve that room, and the variant’s whole reason for existing is not having it.' },
-            { label: 'What that meant', text: 'Either the compact card is a different component, or the status rule is wrong. Both are design decisions, and neither is fixable in CSS.' },
-            { label: 'What I recorded', text: 'The hour as a finding rather than a failure, and the question as an open decision for the variant lesson rather than something patched at three in the afternoon.' },
+            { label: 'First rung: the inspector', text: 'I selected the card and read the Styles panel. No rule I had not expected was winning, and the computed height matched what I had set, so it was not a hidden conflict.' },
+            { label: 'Second rung: a working version', text: 'The supplied component builds its loading state in minutes, but it has no compact variant. So the technique was fine; something about compact was different.' },
+            { label: 'Third rung: the specification', text: 'The compact variant has no room for the status text, and every card must show its status. Two rules contradict each other, and no CSS can satisfy both.' },
+            { label: 'What I recorded', text: 'The three checks and the contradiction, as an open decision for the variant lesson rather than something patched at three in the afternoon.' },
           ],
-          wrongTurn: 'The wrong turn is treating a state that will not build as a problem with your skill, because early on that is always plausible. A state that fights the markup is usually a specification saying two incompatible things.',
+          wrongTurn: 'The wrong turn is jumping to a verdict, either “my CSS is not good enough” or “the specification is wrong”, without the two quick checks in between. Each verdict is right some of the time, and only the checks tell you which time this is.',
           tradeoff: 'Stopping to record it leaves a visibly incomplete states page, and somebody looking at it will assume you ran out of time.',
           uncertainty: 'Still unknown: whether the compact variant should exist at all. It was added because a screen felt cramped, which is a weaker reason than I thought when I wrote it.',
         },
-        start: 'Build the state you are least sure about first, before the easy ones.',
+        start: 'Build the state you are least sure about first. If it fights you, climb the ladder before deciding why.',
         enough: 'Every state can be shown by you, deliberately, in a second.' },
       { expect: 'One page showing every variant against every state, with each cell labelled so it reads without explanation.',
         fields: ['page-layout', 'page-readable'],
@@ -670,49 +713,59 @@ export const guided13: Record<string, Guided> = {
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
         start: 'Turn on greyscale with the whole states page open, and look across the rows rather than down them.',
-        enough: 'The specification problems are written as open decisions rather than as things you patched.' },
+        enough: 'Any specification problems are written as open decisions, each with the checks that ruled out a build cause. None found is an honest result.' },
     ],
     checks: [
       {
-        question: 'You plan to add the remaining states when a screen needs them. What is wrong with that?',
+        question: 'You plan to add the remaining states when a screen first needs them. What is the risk?',
         options: [
-          { label: 'The first screen using the component under real conditions needs them, and retrofitting means changing a design that assumed they did not exist.', correct: true, feedback: 'Loading, empty and error are not rare. Building them now costs an hour on the states page; building them later costs a redesign of whatever was laid out without room for them.' },
-          { label: 'Nothing, provided the specification lists them.', feedback: 'A specified state nobody has rendered is a guess. The build is what finds out whether it is possible.' },
-          { label: 'It is inefficient to come back to the component twice.', feedback: 'That is the smallest cost. The real one is the screen that has to change.' },
+          { label: 'Real screens need them at once, and adding them later means reworking the layout.', correct: true, feedback: 'Loading, empty and error are not rare. Building them now costs an hour on the states page; building them later can mean redesigning whatever was laid out without room for them.', was: ['The first screen using the component under real conditions needs them, and retrofitting means changing a design that assumed they did not exist.'] },
+          { label: 'There is little risk, provided the specification already lists every one of them.', feedback: 'A specified state nobody has rendered is a guess. Building it is what shows whether it is possible.', was: ['Nothing, provided the specification lists them.'] },
+          { label: 'Coming back to the same component twice is slower than doing it all at once.', feedback: 'That is the smallest cost. The real one is the screen that has to change.', was: ['It is inefficient to come back to the component twice.'] },
         ],
         repair: 'Build any state in step 2 you were going to leave until later, and record what it showed. Note the change in step 5.',
         recheck: 'Every cell of your grid exists on the states page.',
       },
       {
-        question: 'A state takes an hour and will not build properly. What is the most likely explanation?',
+        question: 'A state has taken an hour and still will not build properly. What should you check before recording it as a specification problem?',
         options: [
-          { label: 'The specification is asking for two incompatible things, and no amount of building resolves a contradiction.', correct: true, feedback: 'A compact variant that must also show a status is the usual shape of it. That is a design decision, and it should be recorded as an open one rather than patched at the end of the afternoon.' },
-          { label: 'Your CSS is not good enough yet.', feedback: 'Sometimes true, and it is the comfortable assumption early on. Check the specification for a contradiction before assuming it.' },
-          { label: 'The component needs to be rebuilt from scratch.', feedback: 'A rebuild against the same contradictory specification produces the same hour.' },
+          { label: 'The inspector for a rule that wins, then whether the supplied component builds it.', correct: true, feedback: 'This is the diagnostic ladder: first your build, then a comparison with a working version. Only if both are clear is the specification likely to be asking for two incompatible things.', was: ['The specification is asking for two incompatible things, and no amount of building resolves a contradiction.'] },
+          { label: 'Nothing more: an hour is long enough to show the specification is at fault.', feedback: 'Time spent says nothing about the cause. A hidden overriding rule or an unfamiliar technique are both more common than a contradiction.', was: ['Your CSS is not good enough yet.'] },
+          { label: 'Whether the component would build more easily if rewritten from scratch.', feedback: 'A rebuild with the same cause, whether a winning rule or a contradiction, produces the same hour.', was: ['The component needs to be rebuilt from scratch.'] },
         ],
-        repair: 'Write that state into the hard-to-build field in step 2 with what it suggests, and into the specification problems in step 5. Record the change.',
-        recheck: 'Nothing difficult was resolved by quietly changing the design.',
+        repair: 'Write the ladder you followed for that state into the hard-to-build field in step 2, and any confirmed contradiction into step 5. Record the change.',
+        recheck: 'Every specification problem you recorded names the checks that ruled out a build cause.',
       },
       {
-        question: 'The card needs a 6 pixel gap and your scale offers 4 and 8. What should you do?',
+        question: 'The card needs a 6 pixel gap, and your scale offers 4 and 8. What should you do?',
         options: [
-          { label: 'Try 4 and 8 first. If neither works, that is a finding about the foundations rather than a reason to type 6.', correct: true, feedback: 'Usually one of them works and nobody can tell. When neither does, the scale genuinely lacks a step, and that belongs on the foundations page with a reason rather than inside one component.' },
-          { label: 'Use 6, since the component has to look right.', feedback: 'A raw value inside a component built from tokens is the first crack. The next one is easier to justify, and by the tenth the system permits everything.' },
-          { label: 'Redesign the card so it does not need the gap.', feedback: 'Possible and usually excessive. Trying the two neighbouring values takes thirty seconds.' },
+          { label: 'Try 4 and 8 first; if neither works, record it as a foundations finding.', correct: true, feedback: 'Usually one of them works and nobody can tell. If neither does, the scale lacks a step, and that belongs on the foundations page with a reason, not inside one component.', was: ['Try 4 and 8 first. If neither works, that is a finding about the foundations rather than a reason to type 6.'] },
+          { label: 'Type 6 into the component, because it has to look right on the screen.', feedback: 'A raw value inside a token-built component is the first crack. The next is easier to justify, and by the tenth the system permits everything.', was: ['Use 6, since the component has to look right.'] },
+          { label: 'Redesign the card so that it no longer needs a gap of that size.', feedback: 'Possible, and usually excessive. Trying the two neighbouring values takes thirty seconds.', was: ['Redesign the card so it does not need the gap.'] },
         ],
         repair: 'Record any value you needed in step 1 rather than adding it, and decide in step 5 whether the component or the foundations changes. Note the change.',
         recheck: 'No raw value sits in the component.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: you are building a toggle switch from a specification. The “disabled and on” state has taken forty minutes: the switch keeps showing the off colour. The specification also says every state must be readable in greyscale, and “disabled” and “off” currently differ only by colour.',
+      prompt: 'Decide what you would check, in what order, before calling the forty-minute state a specification problem, and explain what the greyscale finding means.',
+      anchors: {
+        weak: 'Blames the specification at once, or keeps changing CSS until it looks right without recording anything.',
+        adequate: 'Checks the inspector for a winning rule, then compares with a working version, before suspecting the specification; records disabled versus off as a real specification gap needing a second signal.',
+        strong: 'As adequate, and records which rung showed what, or keeps every value as a token and notes the problem as an open decision rather than a quiet patch.',
+      },
+    },
     saveRoute: {
       auto: 'Your build notes, the states, the page layout, the awkward cases and the specification problems save as you type, on this device first and then online.',
       external: 'The component, the stylesheet and the states page stay in your own folder. The states page is the artefact to keep; later lessons and your portfolio both use it.',
-      creator: 'Your creator reads the specification problems and the hard-to-build note. A build that revealed nothing usually means the specification was too vague to contradict.',
+      creator: 'Your creator reads the specification problems, the hard-to-build note and the checks behind them. A build that revealed nothing is fine when the checks say why.',
       next: 'Open Your work and choose Ready for review. The next lesson settles whether the compact card is a variant at all.',
     },
   },
   'm13-l05-v1': {
     route: textRoute,
+    material: [suppliedComponent],
     worksheet: [
       { id: 'test', title: 'Write the test once', intro: 'Four questions, each answerable in a sentence. You will reuse this rather than arguing each case from scratch.', fields: [
         { id: 'test-job', label: 'The question about the job it does', kind: 'short', example: 'Example (made up): does it do the same job for the reader, or a different one?' },
@@ -855,9 +908,9 @@ export const guided13: Record<string, Guided> = {
       {
         question: 'Two things look almost identical. Is that a reason to make one a variant of the other?',
         options: [
-          { label: 'No. Similar appearance is what a shared foundation produces, and it says nothing about what the reader is doing with each one.', correct: true, feedback: 'A tool card offers you something to choose; a booking summary is a record of something you own. The boxes look the same because both use your spacing and type.' },
-          { label: 'Yes, since reusing the markup is simpler.', feedback: 'Simpler this week. Reuse for a different job produces conditional behaviour, which is harder to maintain than two clear components.' },
-          { label: 'Yes, provided the differences can be handled with options.', feedback: 'Handled with options is the description of the problem. Each option is a place the two jobs are pulling apart.' },
+          { label: 'Looks are not the test; what the reader is doing with each one is.', correct: true, feedback: 'Similar appearance is what a shared foundation produces. A tool card offers something to choose; a booking summary records something you have. The boxes match because both use your spacing and type.', was: ['No. Similar appearance is what a shared foundation produces, and it says nothing about what the reader is doing with each one.'] },
+          { label: 'Yes, because reusing the same markup is simpler to build.', feedback: 'Simpler this week. Reuse for a different job produces conditional behaviour, which is harder to maintain than two clear components.', was: ['Yes, since reusing the markup is simpler.'] },
+          { label: 'Yes, provided the differences can be handled with options.', feedback: 'Handled with options describes the problem. Each option is a place the two jobs pull apart.' },
         ],
         repair: 'Answer the job question first for each case in step 2, before anything about appearance. Record the change in step 5.',
         recheck: 'Each decision names what the reader is doing rather than what the thing looks like.',
@@ -865,24 +918,33 @@ export const guided13: Record<string, Guided> = {
       {
         question: 'One of your components has seven variants. What does that suggest?',
         options: [
-          { label: 'That it is probably a family of related components rather than one component, and nobody can hold seven in their head.', correct: true, feedback: 'Past about four, the abstraction is usually carrying more than one job. Splitting it normally shortens both specifications and removes conditional behaviour.' },
-          { label: 'That the component is unusually flexible, which is good.', feedback: 'Flexible and unpredictable are the same property described two ways. Screens start behaving differently for reasons nobody can explain.' },
-          { label: 'That the variants should be reduced to four by removing three.', feedback: 'Sometimes right, and it assumes the three are unnecessary rather than that two jobs are present.' },
+          { label: 'It is probably a family of components carrying more than one job.', correct: true, feedback: 'Past about four, a component is usually doing more than one job. Splitting it normally shortens both specifications and removes conditional behaviour.', was: ['That it is probably a family of related components rather than one component, and nobody can hold seven in their head.'] },
+          { label: 'It is unusually flexible, which is a sign of a good component.', feedback: 'Flexible and unpredictable can be the same property. Screens start behaving differently for reasons nobody can explain.', was: ['That the component is unusually flexible, which is good.'] },
+          { label: 'Three variants should be deleted to get back to four.', feedback: 'Sometimes right, and it assumes the three are unnecessary rather than that two jobs are present.', was: ['That the variants should be reduced to four by removing three.'] },
         ],
         repair: 'Examine anything over four in step 3 and say whether it is a family. Record the change in step 5.',
         recheck: 'No component has more variants than you could name from memory.',
       },
       {
-        question: 'Is reuse always better?',
+        question: 'Is reusing an existing component always better than making a new one?',
         options: [
-          { label: 'No. Reusing a component for a different job creates conditional behaviour and screens that behave inconsistently for reasons nobody can explain.', correct: true, feedback: 'Reuse is better when the job is the same. When it is not, two clear components are cheaper to maintain than one with a growing set of conditions.' },
-          { label: 'Yes, since every reuse saves maintenance.', feedback: 'It saves a component and adds conditions. Past a certain number of conditions, the shared component costs more than the two it replaced.' },
-          { label: 'Yes, unless the visual difference is large.', feedback: 'Visual difference is the least reliable signal here. The job is the one that matters.' },
+          { label: 'Only when the job is the same; for a different job, two components are cheaper.', correct: true, feedback: 'Reuse for a different job creates conditional behaviour and screens that behave inconsistently. When the job matches, reuse is usually right.', was: ['No. Reusing a component for a different job creates conditional behaviour and screens that behave inconsistently for reasons nobody can explain.'] },
+          { label: 'Yes, since every reuse saves a component that would need maintenance.', feedback: 'It saves a component and adds conditions. Past a certain number of conditions, the shared one costs more than the two it replaced.', was: ['Yes, since every reuse saves maintenance.'] },
+          { label: 'Yes, unless the two look very different from each other.', feedback: 'Visual difference is the least reliable signal here. The job is the one that matters.', was: ['Yes, unless the visual difference is large.'] },
         ],
         repair: 'Write the case where you decided against reuse in step 5, with the job difference that decided it. Record the change.',
         recheck: 'Your record contains at least one deliberate decision not to reuse.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a bookshop’s design system has a “book card” for browsing. Someone wants to reuse it as an order receipt row (order number, price paid, “Return” action) and as a homepage “Book of the month” feature shown once.',
+      prompt: 'Decide for each request whether it is a variant, a separate component or out of the system, and explain the test you applied.',
+      anchors: {
+        weak: 'Makes both variants because they look similar or because reuse saves work.',
+        adequate: 'Applies the job test: the receipt row records something owned (separate component, different fields and actions); the one-off feature stays out of the system.',
+        strong: 'As adequate, and checks content rules, states or the variant count, or warns that merging would create conditional behaviour that is hard to maintain.',
+      },
+    },
     saveRoute: {
       auto: 'The test, the three cases, the counts and the split or merge save as you type, on this device first and then online.',
       external: 'The inventory and specifications live with the system in your own folder. The test itself belongs on the system documentation page rather than in these notes.',
@@ -892,13 +954,14 @@ export const guided13: Record<string, Guided> = {
   },
   'm13-l06-v1': {
     route: textRoute,
+    material: [suppliedComponent, 'Second component bridge: if you specified only one component in Lesson 3, document the supplied button and text input as your second. Its anatomy, states, tokens, keys and content rules are already written on its page, so the work here is the documentation, not the specification.'],
     worksheet: [
       { id: 'structure', title: 'Open with when to use it', fields: [
-        { id: 'when-to-use', label: 'For each of your two components: when to use it, when not to, and what to use instead', kind: 'long', hint: 'This goes first, before anything about appearance. It is the question people actually arrive with.' },
+        { id: 'when-to-use', label: 'For each of your two components: when to use it, when not to, and what to use instead', kind: 'long', hint: 'This goes first, before anything about appearance. Your second component can be the supplied button and text input.' },
         { id: 'example-placed', label: 'What the first example shows, and where it sits on the page', kind: 'short' },
       ] },
       { id: 'together', title: 'Code and design in one place', fields: [
-        { id: 'code-beside', label: 'How the markup and the specification sit together on the page', kind: 'long', hint: 'A live example with its markup beside it. If the two live in different documents they will disagree within a month.' },
+        { id: 'code-beside', label: 'How the example and the specification sit together on the page', kind: 'long', hint: 'The supplied component page, its markup, or a labelled screenshot of it beside the specification. Apart, they disagree within a month.' },
         { id: 'grid-included', label: 'How the state grid and anatomy appear on the same page', kind: 'short' },
       ] },
       { id: 'writer', title: 'For the person writing the content', fields: [
@@ -906,9 +969,10 @@ export const guided13: Record<string, Guided> = {
         { id: 'guidance-placed', label: 'Where you put it, and why there', kind: 'short', hint: 'With the component. A separate content document is a document nobody opens while building a screen.' },
       ] },
       { id: 'test', title: 'Watch somebody use it', fields: [
-        { id: 'reader-task', label: 'Who you asked and what small screen they built', kind: 'short', hint: 'If nobody is available, leave it three days and build a screen yourself from the pages alone. Write that here.' },
-        { id: 'questions-raised', label: 'Every question they asked, recorded rather than answered', kind: 'long' },
-        { id: 'could-not-answer', label: 'Any question you could not answer either', kind: 'long', hint: 'These are the most valuable ones. They are decisions nobody has made yet.' },
+        { id: 'reader-route', label: 'How the pages were tested', kind: 'choice', options: ['Another person built a screen from the pages (real-reader test)', 'Solo rehearsal: I built from the pages myself after a gap'] },
+        { id: 'reader-task', label: 'Who built from the pages, as a role and not a name, or that you did, and what small screen', kind: 'short', sensitive: true, hint: 'If nobody is available, leave it three days and build a screen yourself from the pages alone. That is rehearsal, not validation.' },
+        { id: 'questions-raised', label: 'Every question raised, in short and with no names, recorded rather than answered', kind: 'long', sensitive: true, hint: 'Keep raw notes private and local, with a date to delete them. On a solo rehearsal, these are your own questions.' },
+        { id: 'could-not-answer', label: 'Any question you could not answer either', kind: 'long', sensitive: true, hint: 'These are the most valuable ones. They are decisions nobody has made yet.' },
       ] },
       { id: 'fix', title: 'Fix and record', fields: [
         { id: 'questions-fixed', label: 'Each question, and the sentence you added to the page', kind: 'long' },
@@ -930,8 +994,8 @@ export const guided13: Record<string, Guided> = {
           { term: 'Live example', meaning: 'The real component rendered on the documentation page, rather than a picture of it. It cannot go out of date the way a screenshot can.' },
           { term: 'One place', meaning: 'Design and code in the same document. Split across two, they disagree within a month and nobody knows which is current.' },
         ],
-        start: 'Embed the component itself rather than a screenshot, so the page cannot drift from the build.',
-        enough: 'Nothing on the page is a picture of something that exists elsewhere.' },
+        start: 'Link or embed the working component itself where you can; a screenshot must say which version it shows.',
+        enough: 'Every example on the page is the working component or is labelled with the version it shows.' },
       { expect: 'Content guidance written for a writer, placed with the component rather than in a separate document.',
         fields: ['content-guidance', 'guidance-placed'],
         terms: [
@@ -954,7 +1018,7 @@ export const guided13: Record<string, Guided> = {
         start: 'Put the length and truncation rules three lines under the live example, where somebody typing will see them.',
         enough: 'Nothing a writer needs is in a different document.' },
       { expect: 'Somebody building a small screen from the pages alone, with every question recorded rather than answered.',
-        fields: ['reader-task', 'questions-raised', 'could-not-answer'],
+        fields: ['reader-route', 'reader-task', 'questions-raised', 'could-not-answer'],
         terms: [
           { term: 'Testing documentation', meaning: 'Watching somebody use it. Whether it is written is not the test; whether it is used without asking you is.' },
           { term: 'A question you cannot answer', meaning: 'A decision nobody has made. It is the most valuable output of this step and the easiest to talk past.' },
@@ -1016,8 +1080,8 @@ export const guided13: Record<string, Guided> = {
           tradeoff: 'A reader who knows nothing is slower, asks things you consider obvious, and the session is less comfortable. That discomfort is the result.',
           uncertainty: 'Still unknown: whether four questions is a good or bad score. One reader finds one reader’s holes, and the number means little on its own.',
         },
-        start: 'Hand over the pages and say you will answer everything at the end.',
-        enough: 'The questions are written down in their own words, not summarised into what you think they meant.' },
+        start: 'Hand over the pages and say you will answer everything at the end, or put the pages away for three days and rebuild from them alone.',
+        enough: 'The questions are written down, the route is labelled, and a solo rehearsal is not described as a reader test.' },
       { expect: 'Each question turned into a sentence on the page, and the repair the Check questions asked for.',
         fields: ['questions-fixed', 'improvement-made'],
         terms: [
@@ -1029,45 +1093,60 @@ export const guided13: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Your documentation opens with what the component looks like. What is wrong with that order?',
+        question: 'Your documentation page opens with what the component looks like. What is wrong with that order?',
         options: [
-          { label: 'Readers arrive asking whether this is the component they need, and appearance does not answer it.', correct: true, feedback: 'When to use, when not to, and the alternative answer the arriving question in fifteen seconds. Appearance is what the live example shows a moment later.' },
-          { label: 'Nothing, since appearance is what identifies a component.', feedback: 'It identifies it and does not tell anybody whether it fits their screen, which is what they are deciding.' },
-          { label: 'It is fine if the page is short.', feedback: 'Short pages get skimmed from the top, so the order matters more rather than less.' },
+          { label: 'Readers arrive asking whether it is the right component, which looks do not answer.', correct: true, feedback: 'When to use, when not to and the alternative answer that question in seconds. Appearance is what the live example shows a moment later.', was: ['Readers arrive asking whether this is the component they need, and appearance does not answer it.'] },
+          { label: 'Nothing, since appearance is what identifies a component to most people who visit.', feedback: 'It identifies it and does not tell anybody whether it fits their screen, which is what they are deciding.', was: ['Nothing, since appearance is what identifies a component.'] },
+          { label: 'Nothing, as long as the page is short enough to read from top to bottom quickly.', feedback: 'Short pages get skimmed from the top, so the order matters more, not less.', was: ['It is fine if the page is short.'] },
         ],
         repair: 'Move when-to-use and when-not-to-use to the top of both pages in step 1, and record the change in step 5.',
         recheck: 'Both pages answer whether to use it before showing what it looks like.',
       },
       {
-        question: 'You have written an excellent content guidelines document covering every component. Why do titles still arrive too long?',
+        question: 'A thorough content guidelines document covers every component, yet titles still arrive too long. What is the likely reason?',
         options: [
-          { label: 'Because the person typing is looking at the card, and the guidance is somewhere else describing a situation rather than the one in front of them.', correct: true, feedback: 'Three lines under the live example do what eleven good pages elsewhere cannot. The general document is still the right place for the things that genuinely are general.' },
-          { label: 'Because the guidelines have not been read.', feedback: 'They usually have, once, months ago. Reading is not the same as having it to hand while typing.' },
-          { label: 'Because the rule needs enforcing rather than documenting.', feedback: 'Enforcement is a different conversation, and a rule nobody can see while working is hard to enforce fairly.' },
+          { label: 'The person typing is looking at the card, and the rule lives somewhere else.', correct: true, feedback: 'Three lines under the live example do what good pages elsewhere cannot. The general document is still the place for what genuinely is general.', was: ['Because the person typing is looking at the card, and the guidance is somewhere else describing a situation rather than the one in front of them.'] },
+          { label: 'Nobody has read the guidelines document, so it needs promoting to the whole team.', feedback: 'It has usually been read, once, months ago. Having read it is not the same as having it to hand while typing.', was: ['Because the guidelines have not been read.'] },
+          { label: 'The rule needs enforcing by a reviewer at sign-off rather than only documenting.', feedback: 'Enforcement is a different conversation, and a rule nobody can see while working is hard to enforce fairly.', was: ['Because the rule needs enforcing rather than documenting.'] },
         ],
         repair: 'Move the length and truncation guidance onto the component pages in step 3, and say where. Record the change in step 5.',
         recheck: 'A writer can see the rule without leaving the component page.',
       },
       {
-        question: 'Your reader asked a question you could not answer either. What kind of finding is that?',
+        question: 'Nobody was available, so you built a screen from your own pages after three days away. How should you describe that test?',
         options: [
-          { label: 'A decision nobody has made, which is the most valuable thing this test produces.', correct: true, feedback: 'It cannot be fixed by writing, because there is nothing to write yet. Left alone it gets decided accidentally, on a screen, by whoever meets it first.' },
-          { label: 'A gap in the documentation to fill later.', feedback: 'Filling it means deciding it, and calling it a documentation gap hides that a design decision is outstanding.' },
-          { label: 'A sign the component is not ready to be documented.', feedback: 'Nothing is ever fully decided before documentation. The value here is that the gap has surfaced deliberately.' },
+          { label: 'As a solo rehearsal: it finds some gaps, not what a new reader would miss.', correct: true, feedback: 'A cold read by the author still remembers intentions, so it under-counts gaps. Record the questions you hit, label the test as rehearsal, and name what a real reader could still reveal.', was: ['A decision nobody has made, which is the most valuable thing this test produces.'] },
+          { label: 'As a reader test, because the pages were read cold after a gap of days.', feedback: 'You wrote the pages, so your memory fills holes a stranger would fall into. Calling it a reader test claims more than happened.', was: ['A gap in the documentation to fill later.'] },
+          { label: 'As worthless, since only another person’s questions can count as a test.', feedback: 'A solo cold read does find real gaps and is an honest step when nobody is available. It just has to be labelled as what it is.', was: ['A sign the component is not ready to be documented.'] },
         ],
-        repair: 'Record any unanswerable question in step 4 as an open decision rather than a documentation task. Note the change in step 5.',
-        recheck: 'Open decisions are separated from missing sentences in your record.',
+        repair: 'Choose the test route in step 4 that matches what happened, and label your questions accordingly. Record the change in step 5.',
+        recheck: 'Your record says whether a real reader or a solo rehearsal produced the questions.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a council website’s “alert banner” page opens with a large picture of the banner, then colour values, then a note at the bottom saying not to use it for marketing. Writers keep pasting three-sentence messages into it. No one else is free to test the page this month.',
+      prompt: 'Decide how you would reorder the page, where the writing guidance should go, and how you would test it with nobody available, explaining each choice.',
+      anchors: {
+        weak: 'Keeps the picture first, puts guidance in a separate style guide, or calls the author’s own read-through a user test.',
+        adequate: 'Opens with when to use, when not to and the alternative; puts a length rule beside the live example; rehearses alone after a gap and labels it rehearsal.',
+        strong: 'As adequate, and records questions it could not answer as open decisions, or names what only a real writer testing it could reveal.',
+      },
+    },
     saveRoute: {
       auto: 'Your page structure, the content guidance, the reader’s questions and the fixes save as you type, on this device first and then online.',
       external: 'The documentation pages live beside the components in your own folder, as Markdown or as HTML with the live example embedded. No documentation platform is needed.',
-      creator: 'Your creator reads the questions your reader asked and which of them you could not answer. A documentation test that produced no questions was probably not a test.',
+      creator: 'Your creator reads the questions raised, which of them you could not answer, and whether a real reader or a solo rehearsal produced them.',
       next: 'Open Your work and choose Ready for review. The next lesson decides who gets to change any of this.',
     },
   },
   'm13-l07-v1': {
     route: textRoute,
+    material: [
+      'Supplied proposals for practice (made up), if your own work has none to run:',
+      'P1 · A date chip showing “Today” or “Tomorrow” on tool cards. Wanted on the listing and the booking summary; nothing existing shows a relative date; can be specified with states.',
+      'P2 · A large banner for the spring repair fair, used once on the home page in April.',
+      'P3 · A card with a “New” badge. A badge component already exists and can be placed on the existing card.',
+    ],
     worksheet: [
       { id: 'route', title: 'How somebody proposes a change', fields: [
         { id: 'proposal-route', label: 'Where a proposal goes, and in what form', kind: 'long', hint: 'A file, an issue, a message. The tool matters less than it being written down and findable.' },
@@ -1081,7 +1160,7 @@ export const guided13: Record<string, Guided> = {
       { id: 'criteria', title: 'What gets in', fields: [
         { id: 'acceptance-criteria', label: 'What a new component must satisfy to be accepted', kind: 'long', hint: 'A minimum number of uses, a composition check, and whether it can be specified with states and content rules.' },
       ] },
-      { id: 'run', title: 'Run it on three real proposals', intro: 'From your own backlog. One at a time, with the decision and the reason.', fields: [
+      { id: 'run', title: 'Run it on three proposals', intro: 'From your own work, or the supplied proposals in the source notes. One at a time, with the decision and the reason.', fields: [
         ...[1, 2, 3].map((n) => ({ id: `proposal-${n}`, label: `Proposal ${n} · what it is, the evidence, the decision and the reason`, kind: 'long' as const,
           ...(n === 1 ? { example: 'Example (made up): a filter chip. Needed on two screens, nothing existing fits, specifiable. Accepted.' } : {}) })),
       ] },
@@ -1193,7 +1272,7 @@ export const guided13: Record<string, Guided> = {
           then: 'Now run your own three proposals through your criteria and record the answers with their reasons.',
           pattern: 'Three different kinds of no. Not enough uses, composition already covers it, and out of scope are all rejections, and they read very differently to the person who proposed. A defer needs a named condition or it is silence with better manners.',
         },
-        start: 'Take the proposal you already have an opinion about and answer the criteria before reading your opinion back.',
+        start: 'Take the proposal you already have an opinion about, yours or supplied, and answer the criteria before reading your opinion back.',
         enough: 'Each decision cites a criterion rather than a preference.' },
       { expect: 'A decision log started, with the rejection written so it does not have to be argued again.',
         fields: ['log-location', 'rejection-recorded', 'improvement-made'],
@@ -1208,19 +1287,19 @@ export const guided13: Record<string, Guided> = {
       {
         question: 'Governance sounds like bureaucracy for a system with one designer. Is it?',
         options: [
-          { label: 'A paragraph naming the route, the decider and the response time is not bureaucracy, and skipping it costs more.', correct: true, feedback: 'Without a route in, people fork the system quietly, and you find out weeks later on a screen. The page can be one page.' },
-          { label: 'Yes, for a system this small it can be skipped.', feedback: 'Even alone, you are the person in three months who will not remember why something was rejected. The log is for that person.' },
-          { label: 'No, and it should be as thorough as possible.', feedback: 'Thorough governance on a small system is the version that genuinely does become bureaucracy. One page is the target.' },
+          { label: 'One page naming the route, decider and response time is not bureaucracy.', correct: true, feedback: 'Without a route in, people fork the system quietly, and you find out weeks later on a screen. Even alone, you in three months need the log.', was: ['A paragraph naming the route, the decider and the response time is not bureaucracy, and skipping it costs more.'] },
+          { label: 'Yes: for a system this small, governance can simply be skipped.', feedback: 'Even alone, you are the person in three months who will not remember why something was rejected. The log is for that person.', was: ['Yes, for a system this small it can be skipped.'] },
+          { label: 'No, and it should be as thorough as a large team’s process.', feedback: 'Thorough governance on a small system is the version that does become bureaucracy. One page is the target.', was: ['No, and it should be as thorough as possible.'] },
         ],
         repair: 'Check your governance page fits on one page in steps 1 to 3, and cut anything that does not decide something. Record the change in step 5.',
         recheck: 'The route, the decider, the timing and the criteria all fit on one page.',
       },
       {
-        question: 'Your governance has careful criteria and says proposals will be reviewed regularly. What will happen?',
+        question: 'Your governance has careful criteria and says proposals will be reviewed regularly. What is likely to happen?',
         options: [
-          { label: 'Somebody will wait, get no answer, and build their own version on their screen.', correct: true, feedback: 'Waiting is what makes people route around a system, more than being refused. A number of days and a rule for silence are what the page is missing.' },
-          { label: 'Proposals will accumulate until you have time for them.', feedback: 'They will accumulate somewhere else: on screens, as components nobody documented.' },
-          { label: 'Nothing, since the criteria are the important part.', feedback: 'Criteria decide what gets in once somebody is deciding. The timing decides whether anybody uses the route at all.' },
+          { label: 'Someone waits, hears nothing, and builds their own version on their screen.', correct: true, feedback: 'Waiting makes people route around a system more than being refused does. A number of days and a rule for silence are what the page is missing.', was: ['Somebody will wait, get no answer, and build their own version on their screen.'] },
+          { label: 'Proposals will build up in a queue until you have time to work through them.', feedback: 'They will build up somewhere else: on screens, as components nobody documented.', was: ['Proposals will accumulate until you have time for them.'] },
+          { label: 'Nothing goes wrong, because careful criteria are the important part of governance.', feedback: 'Criteria decide what gets in once somebody is deciding. Timing decides whether anybody uses the route at all.', was: ['Nothing, since the criteria are the important part.'] },
         ],
         repair: 'Put a number of days and a rule for no response into step 2, and record the change in step 5.',
         recheck: 'Somebody who gets no answer knows what they may do.',
@@ -1228,14 +1307,23 @@ export const guided13: Record<string, Guided> = {
       {
         question: 'You rejected a proposal and recorded only the decision. What is missing?',
         options: [
-          { label: 'The reason, without which the same proposal returns in six weeks and gets argued from scratch.', correct: true, feedback: 'A rejection with a reason can be pointed at. A rejection without one looks like a mood, and the proposer is entitled to try again when the mood might differ.' },
-          { label: 'Nothing, since the answer was no.', feedback: 'The answer is the smallest part. What it rests on is what makes it durable.' },
-          { label: 'An apology, so the proposer is not discouraged.', feedback: 'A clear reason is what stops it feeling arbitrary. Tone helps and is not the missing piece.' },
+          { label: 'The reason, without which the same proposal returns and is argued again.', correct: true, feedback: 'A rejection with a reason can be pointed at. One without a reason looks like a mood, and the proposer may fairly try again.', was: ['The reason, without which the same proposal returns in six weeks and gets argued from scratch.'] },
+          { label: 'Nothing, since the decision itself was a clear no and is now recorded.', feedback: 'The answer is the smallest part. What it rests on is what makes it last.', was: ['Nothing, since the answer was no.'] },
+          { label: 'An apology, so that the proposer does not feel discouraged from trying again.', feedback: 'A clear reason is what stops it feeling arbitrary. Tone helps and is not the missing piece.', was: ['An apology, so the proposer is not discouraged.'] },
         ],
         repair: 'Write the reason beside the rejection in step 5, in the words you would use if it were raised again. Record the change.',
         recheck: 'Every decision in the log carries its reason.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a sports club’s design system has no stated way to ask for changes. Last month two coaches built their own “fixture card” on separate pages because their messages to the designer went unanswered for three weeks.',
+      prompt: 'Write the minimum governance you would add, and explain how it would have changed what the two coaches did.',
+      anchors: {
+        weak: 'Writes a long approval process, or says “proposals will be reviewed regularly”.',
+        adequate: 'Names where to propose, the evidence needed, the decider, a response time in days and what to do if there is no answer, plus a use-count and composition check.',
+        strong: 'As adequate, and adds a decision log with reasons for rejections, or treats the two fixture cards as a proposal with two uses already.',
+      },
+    },
     saveRoute: {
       auto: 'Your route, decider, criteria, the three decisions and the log location save as you type, on this device first and then online.',
       external: 'The governance page and the decision log are files beside the system documentation in your own folder. An issue tracker helps and is not required.',
@@ -1258,7 +1346,7 @@ export const guided13: Record<string, Guided> = {
       ] },
       { id: 'note', title: 'The change note', fields: [
         { id: 'change-note', label: 'For the largest change: what changed, why, and what the reader must do', kind: 'long' },
-        { id: 'places-affected', label: 'Every place it affects', kind: 'long', hint: 'Search your own stylesheet and documentation. A change note without a list of places is a warning rather than an instruction.' },
+        { id: 'places-affected', label: 'Every place it affects', kind: 'long', hint: 'Search your documentation, specifications and, if you have one, your stylesheet. A change note without a list of places is a warning rather than an instruction.' },
         { id: 'stops-working', label: 'The version or date by which the old form stops working', kind: 'short' },
       ] },
       { id: 'deprecation', title: 'The deprecation rule', fields: [
@@ -1336,7 +1424,7 @@ export const guided13: Record<string, Guided> = {
               } },
             { id: 'default-change', text: 'Changing the card’s default padding from 16 to 12, which affects every existing card.', answer: 'major',
               feedback: {
-                major: 'Every existing use changes appearance without anybody asking. A changed default is a breaking change even though nothing stops working.',
+                major: 'Every existing use changes appearance without anybody asking, so every screen must be re-checked. Some systems call visual-only changes minor; this lesson’s written rule treats them as major.',
                 minor: 'Nothing is being added, and existing use is affected.',
                 patch: 'It is not a fix; it is a different decision, and it arrives everywhere at once.',
               } },
@@ -1384,36 +1472,45 @@ export const guided13: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Renaming one token is a one-word edit. Is it a patch?',
+        question: 'Renaming surface-alt to surface-muted is a one-word edit. Under the test “does anybody using it have to change something?”, what is it?',
         options: [
-          { label: 'No. Size is irrelevant; effect is what counts, and everybody using the old name has to change.', correct: true, feedback: 'A rename fails silently: the value falls back and things quietly lose their tint. That is a breaking change however little you typed.' },
-          { label: 'Yes, since nothing about the product looks different.', feedback: 'Nothing looks different in your file, where you also changed the uses. Everywhere else, something has quietly stopped working.' },
-          { label: 'Yes, if you also update all the uses yourself.', feedback: 'You can update the ones you can see. The classification is about everybody, including the screen somebody built last month.' },
+          { label: 'Major: everyone using the old name has to change their work.', correct: true, feedback: 'A missing custom property fails silently: the value falls back and panels quietly lose their tint. The size of the edit is irrelevant to the classification.', was: ['No. Size is irrelevant; effect is what counts, and everybody using the old name has to change.'] },
+          { label: 'Patch: nothing about the product looks different afterwards.', feedback: 'Nothing looks different in your file, where you also changed the uses. Anywhere else, something has quietly stopped working.', was: ['Yes, since nothing about the product looks different.'] },
+          { label: 'Patch, if you update every use you can find yourself.', feedback: 'You can update the ones you can see. The classification is about everybody, including the screen somebody built last month.', was: ['Yes, if you also update all the uses yourself.'] },
         ],
         repair: 'Reclassify any change in step 2 you judged by size rather than effect, and record the change in step 5.',
         recheck: 'Every classification names who has to do something.',
       },
       {
-        question: 'You are changing the card’s default padding from 16 to 12. Nothing breaks. What is it?',
+        question: 'Your system’s written rule says any change that alters existing screens without consumers asking is major. Under that rule, what is changing the card’s default padding from 16 to 12?',
         options: [
-          { label: 'Major. Every existing card changes appearance without anybody asking for it.', correct: true, feedback: 'A changed default arrives everywhere at once. Nothing stops working, and every screen using the component now looks different from the day it was signed off.' },
-          { label: 'Minor, since nothing stops working.', feedback: 'Minor means something was added and existing use is untouched. Existing use is exactly what changed here.' },
-          { label: 'Patch, since it is a refinement.', feedback: 'Patch is for fixing something that was wrong. This is a different decision, applied retrospectively to everything.' },
+          { label: 'Major, since every existing card changes and every screen needs re-checking.', correct: true, feedback: 'Nothing stops working, and every screen using the card now differs from what was signed off. Some systems class visual-only changes as minor; what matters is applying your written rule consistently.', was: ['Major. Every existing card changes appearance without anybody asking for it.'] },
+          { label: 'Minor, since nothing actually stops working for anybody afterwards.', feedback: 'Minor means something was added and existing use is untouched. Existing appearance is what changed, and your rule names that.', was: ['Minor, since nothing stops working.'] },
+          { label: 'Patch, since it is only a small visual refinement of an existing default.', feedback: 'Patch is for fixing something that was wrong. This is a new decision applied to everything already built.', was: ['Patch, since it is a refinement.'] },
         ],
-        repair: 'Check whether any of your three changes alters a default, and reclassify it. Record the change in step 5.',
-        recheck: 'No change that alters existing appearance is classified below major.',
+        repair: 'Check whether any of your three changes alters a default, and classify it under your written rule. Record the change in step 5.',
+        recheck: 'Each classification cites the rule you wrote.',
       },
       {
         question: 'Your change note says what changed and why. Is that enough?',
         options: [
-          { label: 'No. What the reader must do, and where, is the part they need and the part written last.', correct: true, feedback: 'A note without a list of affected places is a warning. With the list it is an instruction somebody can follow in ten minutes.' },
-          { label: 'Yes, since they can search for it themselves.', feedback: 'They can, once they know to. The note is what tells them, and searching is the work you already did.' },
-          { label: 'Yes, provided the change is in the changelog.', feedback: 'The changelog says a change happened. The note says what to do about it.' },
+          { label: 'It still needs what readers must do, where, and by when.', correct: true, feedback: 'A note without the list of affected places is a warning. With the list and a date, it is an instruction somebody can follow.', was: ['No. What the reader must do, and where, is the part they need and the part written last.'] },
+          { label: 'Yes, since readers can search their own files for the change.', feedback: 'They can, once they know to. The note is what tells them, and the search is work you already did.', was: ['Yes, since they can search for it themselves.'] },
+          { label: 'Yes, provided the change also appears in the changelog.', feedback: 'The changelog says a change happened. The note says what to do about it.', was: ['Yes, provided the change is in the changelog.'] },
         ],
         repair: 'Add the list of affected places and the date the old form stops working to your note in step 3. Record the change in step 5.',
         recheck: 'The note tells a reader what to do and where.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a library app’s system is at version 2.3.1. Planned changes: rename the token “colour-alert” to “colour-warning”, add a new “compact” size to the tag component, and fix a focus ring that was invisible on dark panels. Three teams use the system.',
+      prompt: 'Classify each change and give the next version number, and explain which change needs a deprecation period and what its note must tell the teams.',
+      anchors: {
+        weak: 'Calls the rename a patch because it is one word, or ships it without notice.',
+        adequate: 'Rename is major, compact size minor, focus fix patch; deprecates the old token name for at least one minor release with a note saying what changed, why, where and by when.',
+        strong: 'As adequate, and works the numbers (for example 2.4.0 adding the new name and deprecating the old, then 3.0.0 removing it), or lists the places affected for each team.',
+      },
+    },
     saveRoute: {
       auto: 'Your version, the classifications, the change note, the deprecation rule and the changelog save as you type, on this device first and then online.',
       external: 'The changelog is a file beside the system documentation in your own folder. Nothing here needs a release tool.',
@@ -1422,7 +1519,7 @@ export const guided13: Record<string, Guided> = {
     },
   },
   'm13-l09-v1': {
-    route: textRoute,
+    route: componentRoute('m13-l09-v1', 'migrating a screen onto the system'),
     worksheet: [
       { id: 'first', title: 'Migrate one real screen', fields: [
         { id: 'screen-1', label: 'Which real screen, and why this one', kind: 'short', hint: 'A real one. A screen built to demonstrate the system will reach a hundred per cent and prove nothing.' },
@@ -1562,34 +1659,43 @@ export const guided13: Record<string, Guided> = {
       {
         question: 'Your migrated screen reached 100 per cent adoption. Is that a good result?',
         options: [
-          { label: 'It depends entirely on whether it was a real screen. A demonstration screen measures the system against itself.', correct: true, feedback: 'A real screen built before the system existed is the only one that can tell you about fit. Sixty-two per cent with two named gaps is far more useful than a hundred with none.' },
-          { label: 'Yes, since full coverage is the goal.', feedback: 'Full coverage of a screen designed around the system is guaranteed rather than achieved.' },
-          { label: 'Yes, provided the screen is representative.', feedback: 'Representative is the whole question, and a screen built to show the system off is not.' },
+          { label: 'It depends whether the screen existed before the system or was built to show it.', correct: true, feedback: 'A screen built from the system measures the system against itself. A screen made before the system existed is the one that can reveal gaps.', was: ['It depends entirely on whether it was a real screen. A demonstration screen measures the system against itself.'] },
+          { label: 'Yes, since full coverage of a screen is exactly what adoption is aiming for.', feedback: 'Full coverage of a screen designed around the system is guaranteed rather than achieved.', was: ['Yes, since full coverage is the goal.'] },
+          { label: 'Yes, as long as the screen is broadly representative of the product.', feedback: 'Representative is the whole question, and a screen built to show the system off is not.', was: ['Yes, provided the screen is representative.'] },
         ],
-        repair: 'Migrate a screen built before the system existed in step 1, and record its figure. Note the change in step 5.',
+        repair: 'Migrate a screen made before the system existed in step 1, and record its figure. Note the change in step 5.',
         recheck: 'At least one migrated screen predates the system.',
       },
       {
         question: 'Adoption is low on one screen. Is that a rollout problem?',
         options: [
-          { label: 'It is a fit problem first. If the system does not cover the real screens, no amount of advocacy changes the number.', correct: true, feedback: 'The blockers list is what separates the two. Missing components and wrong rules are fit; a system that covers everything and is still unused is rollout.' },
-          { label: 'Yes, people need to be persuaded to use it.', feedback: 'Persuasion cannot supply a component that does not exist. Read the blockers before deciding it is about willingness.' },
-          { label: 'Yes, and better documentation would fix it.', feedback: 'Documentation helps somebody use what exists. It does not help with what is missing.' },
+          { label: 'Check fit first: missing components cannot be fixed by persuasion.', correct: true, feedback: 'The blockers list separates the two. Missing components and wrong rules are fit; a system that covers everything and is still unused is rollout.', was: ['It is a fit problem first. If the system does not cover the real screens, no amount of advocacy changes the number.'] },
+          { label: 'Yes: people need persuading to use what the system already offers.', feedback: 'Persuasion cannot supply a component that does not exist. Read the blockers before deciding it is about willingness.', was: ['Yes, people need to be persuaded to use it.'] },
+          { label: 'Yes, and clearer documentation would raise the figure quickly.', feedback: 'Documentation helps somebody use what exists. It does not help with what is missing.', was: ['Yes, and better documentation would fix it.'] },
         ],
         repair: 'Make sure every blocker in step 4 names what the screen needed, so fit and rollout can be told apart. Record the change in step 5.',
         recheck: 'Your blockers say what was missing rather than that something did not fit.',
       },
       {
-        question: 'To reach full adoption you would have to flatten a status distinction your research showed people using. Should you?',
+        question: 'Reaching full adoption would mean flattening a status distinction that your earlier work showed people relying on. Should you?',
         options: [
-          { label: 'Not silently. Changing the product to fit the system is allowed, and it must be recorded when it removes something that works.', correct: true, feedback: 'The adoption figure is not the goal; it is a measure. Trading a working distinction for a higher number is a real decision, and it deserves a line rather than a quiet edit.' },
-          { label: 'Yes, consistency is worth more than a small distinction.', feedback: 'It may be, and that is the argument to have out loud. Made silently, it looks like the system quietly deciding the product.' },
-          { label: 'No, the system should never change a product.', feedback: 'Systems do simplify products, often usefully. The rule is that it is visible.' },
+          { label: 'Only as a recorded decision, saying what it removes and why.', correct: true, feedback: 'The adoption figure is a measure, not the goal. Trading a working distinction for a higher number is a real decision and deserves a written line rather than a quiet edit.', was: ['Not silently. Changing the product to fit the system is allowed, and it must be recorded when it removes something that works.'] },
+          { label: 'Yes: consistency matters more than one small distinction.', feedback: 'It may, and that is the argument to have openly. Made silently, it looks like the system deciding the product.', was: ['Yes, consistency is worth more than a small distinction.'] },
+          { label: 'No: a design system should never change a product.', feedback: 'Systems do simplify products, often usefully. The rule is that it is visible.', was: ['No, the system should never change a product.'] },
         ],
         repair: 'Record any distinction you removed in the research-cost field in step 4, and note the change in step 5.',
-        recheck: 'Nothing the research supported was removed without being written down.',
+        recheck: 'Nothing your evidence supported was removed without being written down.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: you migrate two screens of a gym timetable site onto its new system. The class list, designed alongside the system, comes out at 100 per cent. The membership page, drawn a year earlier, reaches 60 per cent: a price table has no matching component and a “paused membership” status gets flattened to “inactive”.',
+      prompt: 'Decide what the two figures tell you and what to do about each blocker, and explain your reasoning.',
+      anchors: {
+        weak: 'Reports 100 per cent as success and pushes the old page to fit the system by any means.',
+        adequate: 'Treats the older page as the real test; decides each blocker (add, leave as one-off, or change the screen) and refuses to flatten “paused” silently.',
+        strong: 'As adequate, and states the counting method so the figures can be repeated, or routes the price table through governance before adding it.',
+      },
+    },
     saveRoute: {
       auto: 'Your migrations, the figures, the counting method and the blocker decisions save as you type, on this device first and then online.',
       external: 'The migrated screens stay in your own folder beside the originals. Keep the originals; the pair is what shows the migration.',
@@ -1599,6 +1705,7 @@ export const guided13: Record<string, Guided> = {
   },
   'm13-l10-v1': {
     route: textRoute,
+    material: [suppliedComponent],
     worksheet: [
       { id: 'separate', title: 'What a component can own alone', fields: [
         { id: 'component-owned', label: 'Accessibility properties a component can guarantee by itself', kind: 'long', example: 'Example (made up): its own focus ring contrast, its documented keyboard behaviour, states distinguishable without colour.' },
@@ -1610,7 +1717,7 @@ export const guided13: Record<string, Guided> = {
       ] },
       { id: 'checks', title: 'A check per guarantee', fields: [
         { id: 'checks-written', label: 'The check that proves each guarantee, written so it can be re-run', kind: 'long', hint: 'Re-run means somebody else could do it when the component changes, in a few minutes.' },
-        { id: 'checks-results', label: 'The result of running every check now', kind: 'long', hint: 'Run them today. A guarantee whose check has never been run is a claim.' },
+        { id: 'checks-results', label: 'The result of running every check now, and what you ran it on', kind: 'long', hint: 'Run them today on the supplied component or your own build. A guarantee whose check has never been run is a claim.' },
       ] },
       { id: 'responsibilities', title: 'What is left to the person building the page', fields: [
         { id: 'user-responsibilities', label: 'What remains the page author’s job, specifically', kind: 'long', example: 'Example (made up): the page heading order, the alternative text for images you supply, the reading order of your composition, and testing the assembled page.' },
@@ -1701,7 +1808,7 @@ export const guided13: Record<string, Guided> = {
           then: 'Now sort your own candidate guarantees the same way, and move anything in the second group into the responsibilities list.',
           pattern: 'The line falls between one component and several arranged together. Anything that only exists once things are composed belongs to the page author, and conformance belongs to nobody as a standing promise.',
         },
-        start: 'Run the greyscale check on your states page first; it is the quickest of the four.',
+        start: 'Run the greyscale check first, on the supplied component page (it has a greyscale button) or your own states page.',
         enough: 'Every guarantee has a result beside it from today.' },
       { expect: 'A specific list of what remains the page author’s job.',
         fields: ['user-responsibilities'],
@@ -1734,36 +1841,45 @@ export const guided13: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Somebody says the product is accessible because it uses your accessible design system. What is wrong?',
+        question: 'Somebody says the product is accessible because it uses your accessible design system. What is wrong with that?',
         options: [
-          { label: 'The system makes the defaults right. Structure, content, order and testing stay with whoever built the page, and most real failures live there.', correct: true, feedback: 'No component can know the heading order of a page it does not know about. Guarantees and responsibilities have to be published together for exactly this reason.' },
-          { label: 'Nothing, if every component has been checked.', feedback: 'Four correct components can be assembled into a page with three page titles and a focus order that jumps backwards.' },
-          { label: 'The system would need to be tested with disabled participants first.', feedback: 'That is a separate and real gap. The error here is about the difference between components and pages.' },
+          { label: 'Components set good defaults; structure, content and order belong to the page.', correct: true, feedback: 'No component can know the heading order of a page it does not know about. Guarantees and responsibilities have to be published together for exactly this reason.', was: ['The system makes the defaults right. Structure, content, order and testing stay with whoever built the page, and most real failures live there.'] },
+          { label: 'Nothing, as long as every component in the system has been checked properly.', feedback: 'Four correct components can be assembled into a page with three page titles and a focus order that jumps backwards.', was: ['Nothing, if every component has been checked.'] },
+          { label: 'The system must first be tested with disabled participants before anyone says that.', feedback: 'That is a separate, real gap. The error here is about the difference between components and pages.', was: ['The system would need to be tested with disabled participants first.'] },
         ],
         repair: 'Check your responsibilities list in step 4 names structure, content, order and testing specifically. Record the change in step 5.',
         recheck: 'The responsibilities list is as prominent as the guarantees.',
       },
       {
-        question: 'You wrote “all components are accessible” as your guarantee. What does it cost you?',
+        question: 'Your guarantee says the success message meets contrast, measured on the plain background. It is also used on the tinted panel. What should the guarantee say?',
         options: [
-          { label: 'It promises things no component can own, so it transfers responsibility you cannot carry onto a sentence you cannot keep.', correct: true, feedback: 'Four narrow statements with conditions are less impressive and actually true. The broad version is read as covering the page, which is where the failures are.' },
-          { label: 'Nothing, provided every component really has been checked.', feedback: 'Checked against what? The sentence names no conditions, so it covers cases nobody tested.' },
-          { label: 'It is too vague to be useful, but harmless.', feedback: 'It is not harmless. Somebody will build a page on the strength of it.' },
+          { label: 'Only the surfaces where it was measured, unless the tint is measured too.', correct: true, feedback: 'A guarantee covers what its check covers. Measure the tinted panel; if it fails, either limit the guarantee to the plain background or change the colour.', was: ['It promises things no component can own, so it transfers responsibility you cannot carry onto a sentence you cannot keep.'] },
+          { label: 'All surfaces, since the measured ratio already passed comfortably.', feedback: 'A pass on one surface says nothing about another. The supplied component shows a colour that passes on plain and fails on the tint.', was: ['Nothing, provided every component really has been checked.'] },
+          { label: 'Nothing about surfaces, because conditions make it too complicated.', feedback: 'Without conditions the promise quietly covers cases nobody checked, which is how a guarantee misleads.', was: ['It is too vague to be useful, but harmless.'] },
         ],
-        repair: 'Add the conditions to each guarantee in step 2, naming surfaces, variants or states. Record the change in step 5.',
+        repair: 'Add the surfaces, variants or states each guarantee was checked on in step 2. Record the change in step 5.',
         recheck: 'No guarantee is written without its conditions.',
       },
       {
-        question: 'One of your guarantees has no check attached. Does it matter?',
+        question: 'One of your guarantees has no check attached. Does that matter?',
         options: [
-          { label: 'Yes. Without a re-runnable check it decays silently the first time the component changes.', correct: true, feedback: 'A guarantee is a promise you keep re-making. The check is what makes it survive the next edit, and it also gives the next person a way to verify you.' },
-          { label: 'Not if you tested it once when you wrote it.', feedback: 'Once is when it was true. Components change, and nothing will announce that the guarantee has stopped holding.' },
-          { label: 'Not if the guarantee is obviously true.', feedback: 'Obviously true things are exactly what nobody rechecks after a change.' },
+          { label: 'It matters: with no re-runnable check, it decays when the component changes.', correct: true, feedback: 'A guarantee is a promise you keep re-making. The check is what lets it survive the next edit, and lets the next person verify you.', was: ['Yes. Without a re-runnable check it decays silently the first time the component changes.'] },
+          { label: 'Not if you tested it carefully once, at the time you first wrote it.', feedback: 'Once is when it was true. Components change, and nothing announces that the guarantee has stopped holding.', was: ['Not if you tested it once when you wrote it.'] },
+          { label: 'Not if the guarantee is obviously true to anyone who reads the component.', feedback: 'Obviously true things are exactly what nobody rechecks after a change.', was: ['Not if the guarantee is obviously true.'] },
         ],
         repair: 'Write a check for every guarantee in step 3 and run all of them today. Record the change in step 5.',
         recheck: 'Every guarantee has a check with a result from today.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a booking system’s documentation says “All components are accessible.” Its date picker was keyboard-tested; its success text passes contrast on white but was never measured on the grey panel where it often appears; page heading order is left to each team.',
+      prompt: 'Rewrite the claim as guarantees and responsibilities, and explain why each item belongs on its side of the line.',
+      anchors: {
+        weak: 'Keeps “all components are accessible”, or claims the product conforms because the components were checked.',
+        adequate: 'Guarantees only what was tested, with conditions (the keyboard behaviour; contrast on white only), lists heading order as the page author’s job, and claims no page-level conformance.',
+        strong: 'As adequate, and attaches a re-runnable check to each guarantee, or measures the grey panel before extending the guarantee to it.',
+      },
+    },
     saveRoute: {
       auto: 'Your two lists, the guarantees, the checks and the responsibilities save as you type, on this device first and then online.',
       external: 'The guarantees page sits with the system documentation in your own folder. The checks belong beside it so somebody can re-run them without asking you.',
@@ -1772,7 +1888,8 @@ export const guided13: Record<string, Guided> = {
     },
   },
   'm13-l11-v1': {
-    route: textRoute,
+    route: componentRoute('m13-l11-v1', 'a drift audit across representations'),
+    material: [suppliedComponent],
     worksheet: [
       { id: 'authority', title: 'Which one is true', fields: [
         { id: 'authoritative', label: 'Which representation is authoritative, and why', kind: 'long', hint: 'The one people actually encounter is usually the built code. Whatever you choose, say why.' },
@@ -1910,34 +2027,43 @@ export const guided13: Record<string, Guided> = {
       {
         question: 'Is the design file the design system?',
         options: [
-          { label: 'It is one representation. What people encounter is the built product, and a system whose authority lives in a file most of the team cannot open is overtaken within weeks.', correct: true, feedback: 'The file is genuinely useful. It stops being the system the first time a change is made in the build that afternoon and never reaches the file.' },
-          { label: 'Yes, since that is where the design decisions are made.', feedback: 'Decisions are made there and they are not what anybody uses. Six weeks of small build changes and the file describes something that does not exist.' },
-          { label: 'Yes for designers, and the code is the system for engineers.', feedback: 'Two authorities is the same as none, because nothing settles a disagreement.' },
+          { label: 'It is one representation; people meet the built product.', correct: true, feedback: 'A file most of the team cannot open is overtaken by the build the first time a change is made there and never reaches the file.', was: ['It is one representation. What people encounter is the built product, and a system whose authority lives in a file most of the team cannot open is overtaken within weeks.'] },
+          { label: 'Yes, since the design file is where the decisions are made.', feedback: 'Decisions are made there, and they are not what anybody uses. After weeks of small build changes the file describes something that does not exist.', was: ['Yes, since that is where the design decisions are made.'] },
+          { label: 'Yes for designers, while the code is the system for engineers.', feedback: 'Two authorities is the same as none, because nothing settles a disagreement.', was: ['Yes for designers, and the code is the system for engineers.'] },
         ],
         repair: 'Name one authoritative representation in step 1 with the reason, and record the change in step 5.',
         recheck: 'If two representations disagreed tomorrow, your page says which wins.',
       },
       {
-        question: 'The build and the documentation disagree, and you have named the build authoritative. Is the build automatically right?',
+        question: 'The build and the documentation disagree, and you named the build authoritative. Is the build automatically right?',
         options: [
-          { label: 'No. The authority decides which is true today; whether it is right is a separate question.', correct: true, feedback: 'A truncation rule reasoned from real titles and built to one line is a defect in the build. The authority tells you where the fix goes rather than who was correct.' },
-          { label: 'Yes, that is what authoritative means.', feedback: 'It means the build is what people are getting. Two of the drifts you find will be things the build got wrong.' },
-          { label: 'Yes, unless the documentation has a reason recorded.', feedback: 'A recorded reason helps you decide, and the principle holds whether or not one was written down.' },
+          { label: 'Authority says what is true today; whether it is right is separate.', correct: true, feedback: 'A truncation rule reasoned from real titles but built to one line is a defect in the build. Authority tells you where the fix goes, not who was correct.', was: ['No. The authority decides which is true today; whether it is right is a separate question.'] },
+          { label: 'Yes, because that is exactly what authoritative means.', feedback: 'It means the build is what people are getting. Some drifts you find will be things the build got wrong.', was: ['Yes, that is what authoritative means.'] },
+          { label: 'Yes, unless the documentation recorded a reason for its version.', feedback: 'A recorded reason helps you decide, and the principle holds whether or not one was written.', was: ['Yes, unless the documentation has a reason recorded.'] },
         ],
         repair: 'For each drift in step 3, say which version is correct as well as which is authoritative. Record the change in step 5.',
         recheck: 'Correct and authoritative are answered separately for each drift.',
       },
       {
-        question: 'You fixed three drifts. Will the audit have to be repeated?',
+        question: 'You fixed three drifts today. Will the audit have to be repeated?',
         options: [
-          { label: 'Yes, because drift is inevitable. The useful change is a process that updates every representation in the same change.', correct: true, feedback: 'Fixing today’s three is maintenance. The process is what decides whether the next three appear in a fortnight or in a year.' },
-          { label: 'No, now that the representations agree.', feedback: 'They agree this afternoon. The next urgent change made in one place starts it again.' },
-          { label: 'Only if somebody else joins the work.', feedback: 'One person produces drift perfectly well, by making a change in the build at four o’clock and meaning to update the file tomorrow.' },
+          { label: 'Yes; what helps is a change process that updates every copy at once.', correct: true, feedback: 'Fixing today’s three is maintenance. The process decides whether the next three appear in a fortnight or in a year.', was: ['Yes, because drift is inevitable. The useful change is a process that updates every representation in the same change.'] },
+          { label: 'No, now that all the representations agree with each other again.', feedback: 'They agree this afternoon. The next urgent change made in one place starts it again.', was: ['No, now that the representations agree.'] },
+          { label: 'Only once somebody else joins the work and starts making their own changes.', feedback: 'One person produces drift perfectly well, by changing the build at four o’clock and meaning to update the file tomorrow.', was: ['Only if somebody else joins the work.'] },
         ],
         repair: 'Write the change process into step 4 and add it to the governance page. Record the change in step 5.',
         recheck: 'A change now has to pass through every representation before it counts as done.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a delivery app’s button has 12-pixel padding in the live app, 16 in the design file and 14 in the documentation. The live app was changed during an urgent fix; nobody updated the other two. The design file is where the team usually works.',
+      prompt: 'Decide which representation is authoritative and which value is correct, and explain how you would stop the next drift.',
+      anchors: {
+        weak: 'Makes the design file authoritative because the team works there, or fixes the three numbers once and stops.',
+        adequate: 'Names the live code as authoritative, decides correctness separately (was the urgent change right?), labels the copies with version and date, and writes a change checklist covering all three.',
+        strong: 'As adequate, and plans a regular small audit, or notes that authority says what is true today, not what is right.',
+      },
+    },
     saveRoute: {
       auto: 'Your authority decision, the drift audit, the reconciliations and the process save as you type, on this device first and then online.',
       external: 'The representations themselves stay in your own folder. Label the copies in the files rather than only here, or the label does not reach anybody opening them.',
@@ -1947,13 +2073,20 @@ export const guided13: Record<string, Guided> = {
   },
   'm13-l12-v1': {
     route: textRoute,
+    material: [
+      'Supplied usage notes (made up), for learners without adoption figures or a drift audit: the Northside system has six components.',
+      'Card: on 6 screens. Button: on 9 screens. Filter chip: on 2 screens, added last month through governance.',
+      'Statistics tile: built in the first week, on no screen. Tabs: built because other systems have one, on no screen, nothing planned.',
+      'Notification banner: on no screen yet; the booking flow being designed this month needs it.',
+      'Workaround seen in drawings: the booking screen shows “overdue” and “due today” separately, while the status component offers only “late”.',
+    ],
     worksheet: [
       { id: 'use', title: 'Review against use', fields: [
-        { id: 'usage-list', label: 'Every component and where it is actually used', kind: 'long', hint: 'Search your screens. Where you believe it is used is not the same as where it is.' },
+        { id: 'usage-list', label: 'Every component and where it is actually used', kind: 'long', hint: 'Search your screens or drawings, or use the supplied usage notes and say so. Where you believe it is used is not the same as where it is.' },
         { id: 'used-nowhere', label: 'Anything used nowhere', kind: 'long' },
       ] },
       { id: 'workarounds', title: 'What people built instead', fields: [
-        { id: 'workarounds-found', label: 'Every one-off built on a screen instead of using the system', kind: 'long', hint: 'Your own screens count. A workaround you built yourself is the clearest evidence of a gap.' },
+        { id: 'workarounds-found', label: 'Every one-off on a screen or drawing instead of using the system', kind: 'long', hint: 'Your own screens and drawings count. If you find none, say where you looked; do not invent one.' },
         { id: 'what-did-not-fit', label: 'For each: what did not fit', kind: 'long' },
       ] },
       { id: 'act', title: 'Remove and add, through the process', fields: [
@@ -2084,36 +2217,45 @@ export const guided13: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Is a bigger system a more mature system?',
+        question: 'Is a bigger design system a more mature one?',
         options: [
-          { label: 'No. A system covering the real cases in twelve components is more mature than one with sixty nobody can navigate, and maturity shows in what has been removed.', correct: true, feedback: 'Every component is maintained, documented, versioned and read by everybody learning the system. An unused one takes all of that and returns nothing.' },
-          { label: 'Generally yes, since more coverage helps more cases.', feedback: 'Coverage of cases you have helps. Coverage of cases other products have is cost.' },
-          { label: 'Yes, if the components are well documented.', feedback: 'Documenting something nobody uses is more of the same cost, done more carefully.' },
+          { label: 'Covering the real cases matters; maturity often shows in what was removed.', correct: true, feedback: 'Every component is maintained, documented, versioned and read by everyone learning the system. An unused one takes all of that and returns nothing.', was: ['No. A system covering the real cases in twelve components is more mature than one with sixty nobody can navigate, and maturity shows in what has been removed.'] },
+          { label: 'Generally yes, since more coverage helps more of the cases a team will meet.', feedback: 'Coverage of cases you have helps. Coverage of cases other products have is cost.', was: ['Generally yes, since more coverage helps more cases.'] },
+          { label: 'Yes, as long as every component in it is well documented and versioned.', feedback: 'Documenting something nobody uses is more of the same cost, done more carefully.', was: ['Yes, if the components are well documented.'] },
         ],
-        repair: 'Deprecate at least one unused component in step 3, through your governance route. Record the change in step 5.',
-        recheck: 'The system is smaller than it was this morning.',
+        repair: 'Deprecate at least one unused component in step 3 through your governance route, or record why each is kept. Record the change in step 5.',
+        recheck: 'Every component is either used, kept with a written reason, or deprecated.',
       },
       {
-        question: 'You reviewed the system and listed what it was missing compared with other design systems. What is wrong with that?',
+        question: 'You reviewed the system by listing what it lacks compared with other design systems. What is wrong with that?',
         options: [
-          { label: 'It produces components for a product you do not have. The useful review searches your own screens for what was built outside the system.', correct: true, feedback: 'A modal, tabs and pagination are what component sets usually contain. Your two real gaps were a flattened status distinction and a compact list row, and neither would appear on that list.' },
-          { label: 'Nothing, since those components will be needed eventually.', feedback: 'Eventually is what governance is for. Anticipation is how a system acquires components nobody uses.' },
-          { label: 'It is a reasonable starting point to prioritise from.', feedback: 'It prioritises a list of things nobody has asked for above two things somebody has already worked around.' },
+          { label: 'It plans parts for a product you do not have; search your screens instead.', correct: true, feedback: 'A modal, tabs and pagination are what component sets usually contain. Real gaps show up as one-offs built outside the system on your own screens or drawings.', was: ['It produces components for a product you do not have. The useful review searches your own screens for what was built outside the system.'] },
+          { label: 'Nothing, since those common components will almost certainly be needed eventually.', feedback: 'Eventually is what governance is for. Anticipation is how a system gathers components nobody uses.', was: ['Nothing, since those components will be needed eventually.'] },
+          { label: 'It is a reasonable starting point for setting the next quarter’s priorities.', feedback: 'It ranks things nobody has asked for above things somebody has already worked around.', was: ['It is a reasonable starting point to prioritise from.'] },
         ],
-        repair: 'Search your screens for workarounds in step 2 and let those decide the additions. Record the change in step 5.',
-        recheck: 'Every proposed addition comes from something built on a real screen.',
+        repair: 'Search your screens or drawings for workarounds in step 2 and let those decide the additions. Record the change in step 5.',
+        recheck: 'Every proposed addition comes from something on a real screen or drawing.',
       },
       {
-        question: 'You are deprecating an unused component. Does it need to go through governance?',
+        question: 'You are deprecating a component you believe is unused. Does it need to go through governance?',
         options: [
-          { label: 'Yes. Removal is a major change, and a process its owner bypasses is not a process.', correct: true, feedback: 'It is also how you find out that something you believe is unused is used on a page you had forgotten. The route and the version both matter.' },
-          { label: 'No, since nobody is using it.', feedback: 'That is your view of who is using it, which is the thing a route exists to check.' },
-          { label: 'No, governance is for additions.', feedback: 'Removals break things, which is more than most additions do.' },
+          { label: 'Yes: removal can break someone’s work, and owners follow their own process.', correct: true, feedback: 'It is also how you find out that something you think is unused appears on a page you had forgotten. The route and the version both matter.', was: ['Yes. Removal is a major change, and a process its owner bypasses is not a process.'] },
+          { label: 'No, since nobody appears to be using it on any screen you can find any more.', feedback: 'That is your view of who uses it, which is exactly what a route exists to check.', was: ['No, since nobody is using it.'] },
+          { label: 'No, because governance exists to control what new components are added.', feedback: 'Removals break things, which is more than most additions do.', was: ['No, governance is for additions.'] },
         ],
         repair: 'Put the deprecation through your governance route in step 3 and record it in the log. Note the change in step 5.',
         recheck: 'Both the removal and the additions went through the process you wrote.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a museum’s design system has 14 components. A carousel was built because “every system has one” and appears nowhere; a map pin component is unused now but a planned visitor map needs it next month; staff keep hand-drawing a “sold out” label the system lacks.',
+      prompt: 'Decide what to remove, keep or add, and explain how each decision goes through the system’s process.',
+      anchors: {
+        weak: 'Keeps everything for completeness, or deletes the carousel quietly; adds components other systems have.',
+        adequate: 'Deprecates the carousel through governance with a note and period, keeps the map pin with a written reason and date, and proposes a “sold out” status from the workaround.',
+        strong: 'As adequate, and versions the removal as a major change, or sets a monthly maintenance estimate with what gets skipped first.',
+      },
+    },
     saveRoute: {
       auto: 'Your usage review, the workarounds, the deprecation, the proposals and the plan save as you type, on this device first and then online.',
       external: 'The system, its documentation, the decision log and the changelog all live in your own folder. Nothing about them is uploaded from here.',

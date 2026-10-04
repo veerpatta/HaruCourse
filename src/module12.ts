@@ -1,9 +1,12 @@
 import { withLegacyText, type Lesson } from "./teaching";
 // Module 12 teaches enough web to design for it honestly: what a browser
 // actually does, what HTML and CSS can express, where JavaScript becomes
-// necessary and what it costs. The goal is not to make Haru an engineer. It
-// is that she can build a real responsive page, read the code someone else
-// wrote, ask precise questions and know when an answer is evasive.
+// necessary and what it costs. The goal is not to make Haru an engineer.
+// Core (no coding): Lesson 1 (what happens between a tap and a page) and
+// Lesson 12 (talking to engineers about a designed or built feature).
+// Lessons 2 to 11 are an optional technical extension built on runnable
+// starters in public/starters/m12/, each opening by double-click (file://)
+// and from the course site. No later module requires the extension.
 const mdn = {
   title: "MDN: core learning modules",
   id: "R15",
@@ -56,8 +59,8 @@ export const module12: Lesson[] = [
     title: "What happens between a tap and a page",
     objective:
       "Trace one real page load from request to rendered content, name each stage, and identify the two stages your design decisions can affect.",
-    bringForward: "Your m10 running prototype or any real page you use often.",
-    prerequisite: "A browser and any page you can load repeatedly.",
+    bringForward: "Any real page you use often, or your m10 prototype. No coding is needed.",
+    prerequisite: "A desktop browser with developer tools, or the supplied trace in this lesson's source notes if you cannot open them.",
     why: "Design decisions about images, fonts and structure become performance decisions here. You cannot weigh them without knowing what the browser is doing.",
     teach: [
       "A page load is a sequence: request, response, parse, fetch more, render, become interactive.",
@@ -67,7 +70,7 @@ export const module12: Lesson[] = [
       "Design choices decide how much is requested and in what order.",
     ],
     explanation: [
-      "When someone opens a page, the browser asks a server for a document, receives HTML, and starts reading it. Every stylesheet, font, image and script referenced in that HTML becomes another request, and each one takes time proportional to its size and the connection. This is why a design with four typefaces and a hero video is a performance decision made at the moment of designing, long before anyone writes code.",
+      "When someone opens a page, the browser asks a server for a document, receives HTML, and starts reading it. Every stylesheet, font, image and script referenced in that HTML becomes another request, and each one takes time that depends on its size, the connection and how far away the server is. This is why a design with four typefaces and a hero video is a performance decision made at the moment of designing, long before anyone writes code.",
       "The stages fail differently. A slow stylesheet delays the first paint, so the person sees nothing. A slow font can leave text invisible or shifting when it swaps. A slow script can leave a page that looks finished and does not respond, which is the most confusing failure of all because the person taps and nothing happens.",
       "The network tab in your browser shows the real sequence: what was requested, in what order, how big it was and how long it took. Reading it once for a real page is more instructive than any amount of general advice about performance, and it costs ten minutes.",
       "Two stages are yours. How much is requested — the number and weight of images, fonts and scripts — is a design decision. And what appears first is a structural decision, because the browser renders what it has: a page whose text arrives before its images shows something useful immediately, and one that waits for everything shows nothing.",
@@ -75,9 +78,9 @@ export const module12: Lesson[] = [
     misconception:
       "“Performance is the engineer's problem.” Engineers optimise what exists. The number of typefaces, the size of the hero image and whether the design can show anything before the images arrive are decided in the design, and they usually dominate.",
     example:
-      "One real class page traced in the network tab: the document arrived in 300ms, then two stylesheets, three font files, eleven images and four scripts — twenty-one requests before the page was usable, taking eleven seconds on a throttled connection. The two design-owned findings: three typefaces were being loaded and only two were used, and the hero image was 1.8 MB and appeared above every piece of text, so nothing readable appeared until it arrived. Both were design decisions; neither needed an engineer to identify.",
+      "Example (made up): a class page traced in the network tab. The document arrived in 300ms, then two stylesheets, three font files, eleven images and four scripts — twenty-one requests and 2.4 MB before the page was usable, taking eleven seconds on a throttled connection. The two design-owned findings: three typefaces were being loaded and only two were used, and the hero image was 1.8 MB and appeared above every piece of text, so nothing readable appeared until it arrived. Both were design decisions; neither needed an engineer to identify.",
     freeToolPath:
-      "Any Chromium browser's developer tools, which are free and installed already. No account, extension or performance service is required.",
+      "Any Chromium browser's developer tools on a desktop computer, which are free and installed already. No account, extension, coding or performance service is required. Without developer tools (a tablet, a locked work computer), use the supplied made up trace in the source notes and say so.",
     outputs: [
       "A traced load with each stage named",
       "A request list with sizes and times",
@@ -97,7 +100,7 @@ export const module12: Lesson[] = [
         minutes: 30,
         title: "Trace a real load",
         instructions: [
-          "Open the network tab, disable the cache and reload a real page.",
+          "Open the network tab, tick Disable cache and reload a real page, or open the supplied trace.",
           "Record the number of requests, the total size and the time.",
           "Note which requests are images, fonts, scripts and styles.",
         ],
@@ -106,7 +109,7 @@ export const module12: Lesson[] = [
         minutes: 25,
         title: "Throttle it",
         instructions: [
-          "Set a slow connection profile and reload.",
+          "Set a slow connection profile and reload, or read the slow timings in the supplied trace.",
           "Record when the first text appeared and when the page became usable.",
           "Note anything that shifted position as it loaded.",
         ],
@@ -168,7 +171,7 @@ export const module12: Lesson[] = [
       {
         criterion: "A real trace records requests, sizes and times",
         evidence:
-          "A recorded trace with counts, total weight and duration, cache disabled.",
+          "A recorded trace with counts, total weight and duration, cache disabled, or the supplied trace read and totalled.",
         levels: [
           "No trace.",
           "Traced with the cache enabled, so costs are hidden.",
@@ -253,9 +256,9 @@ export const module12: Lesson[] = [
     title: "HTML that means something",
     objective:
       "Build one page of your product in semantic HTML, with the heading outline and regions from m11, and verify the structure without looking at the styling.",
-    bringForward: "Your m11 heading outline and region map.",
-    prerequisite: "Your m11 outline and region map, and a text editor.",
-    why: "The elements you choose are what assistive technology, search and translation read. Styling is what everyone else reads.",
+    bringForward: "Your m11 heading outline and region map, or the supplied starter page-semantic.html.",
+    prerequisite: "A text editor such as Notepad, a browser, and the starter page-semantic.html or your own outline.",
+    why: "Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. The elements you choose are what assistive technology, search and translation read. Styling is what everyone else reads.",
     teach: [
       "Elements carry meaning: a heading, a list, a button, a link are different things.",
       "A link goes somewhere; a button does something. Swapping them breaks behaviour.",
@@ -272,9 +275,9 @@ export const module12: Lesson[] = [
     misconception:
       "“It looks the same, so the markup does not matter.” It looks the same to you. To a screen reader, a search engine, a translation tool and a browser's reader mode, a page of generic containers has no structure at all.",
     example:
-      "The class detail page was rebuilt in semantic HTML: one page title, four section headings at the right levels, the class list as a list, the schedule as a table with header cells, the booking action as a button and the “see other dates” as a link. Removing the stylesheet produced a readable document with a clear outline. Three earlier mistakes surfaced during the rebuild: the availability status had been a coloured div with no text, the filter controls were links that performed actions, and the price table was built from divs so its columns had no headers.",
+      "Example (made up): the class detail page was rebuilt in semantic HTML: one page title, four section headings at the right levels, the class list as a list, the schedule as a table with header cells, the booking action as a button and the “see other dates” as a link. Removing the stylesheet produced a readable document with a clear outline. Three earlier mistakes surfaced during the rebuild: the availability status had been a coloured div with no text, the filter controls were links that performed actions, and the price table was built from divs so its columns had no headers.",
     freeToolPath:
-      "A text editor and a browser. Disabling the stylesheet is a single browser setting or a one-line change; no extension, framework or build tool is needed.",
+      "Notepad (or any text editor), a browser and the starter page-semantic.html, saved in Documents\\HaruCourse\\Practice\\m12-l02-v1. Turning the styling off is a one-word change marked in the starter; no extension, framework or build tool is needed.",
     outputs: [
       "One page in semantic HTML with correct heading levels",
       "Landmarks for banner, navigation, main and footer",
@@ -294,7 +297,8 @@ export const module12: Lesson[] = [
         minutes: 35,
         title: "Build the page",
         instructions: [
-          "Write the page using elements that match the content's shape.",
+          "Make the starter's one marked change first, save with Ctrl+S and reload with F5.",
+          "Then write the page using elements that match the content's shape.",
           "Use a button for actions and a link for navigation.",
           "Include the real content, not placeholder text.",
         ],
@@ -303,7 +307,7 @@ export const module12: Lesson[] = [
         minutes: 25,
         title: "Read it without styling",
         instructions: [
-          "Disable the stylesheet and read the page top to bottom.",
+          "Turn the styling off as the starter shows, and read the page top to bottom.",
           "Mark anything that loses meaning or order.",
           "Fix by changing elements, not by adding styling back.",
         ],
@@ -450,9 +454,9 @@ export const module12: Lesson[] = [
     title: "CSS: the box, the flow and the cascade",
     objective:
       "Style your semantic page using your m08 tokens as custom properties, and explain in writing why three specific rules produce the layout they do.",
-    bringForward: "Your semantic page and your m08 token sheet.",
-    prerequisite: "Your built page and token sheet.",
-    why: "Understanding the cascade is what turns CSS from guesswork into design. Most frustration with it comes from not knowing which rule won.",
+    bringForward: "Your m08 token sheet, and your Lesson 2 page or the supplied starter page-styled.html.",
+    prerequisite: "A text editor, a browser, and the starter page-styled.html or your own page.",
+    why: "Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Understanding the cascade is what turns CSS from guesswork into design. Most frustration with it comes from not knowing which rule won.",
     teach: [
       "Everything is a box: content, padding, border, margin.",
       "Normal flow stacks blocks and wraps inline content; layout modes change that.",
@@ -469,9 +473,9 @@ export const module12: Lesson[] = [
     misconception:
       "“CSS is unpredictable.” It is deterministic and mostly unfamiliar. The three things that produce nearly all surprises — the box model, the cascade and inheritance — take an afternoon to learn and remove the guesswork permanently.",
     example:
-      "The class page was styled with the token sheet declared as custom properties at the top: five neutrals, three semantic colours, six spacing values, six type steps. Three rules were then explained in writing. Why the card was wider than its container: padding was being added to a set width, fixed by including padding in the box sizing. Why the heading colour would not change: a more specific rule elsewhere was winning, visible in the inspector. Why the body font applied everywhere without being repeated: inheritance, set once on the root.",
+      "Example (made up): the class page was styled with the token sheet declared as custom properties at the top: five neutrals, three semantic colours, six spacing values, six type steps. Three rules were then explained in writing. Why the card was wider than its container: padding was being added to a set width, fixed by including padding in the box sizing. Why the heading colour would not change: a more specific rule elsewhere was winning, visible in the inspector. Why the body font applied everywhere without being repeated: inheritance, set once on the root.",
     freeToolPath:
-      "A text editor, a browser and its element inspector. No preprocessor, framework or build step is required, and avoiding them at this stage is deliberate: you are learning what the browser does.",
+      "Notepad, a browser and its element inspector, with the starter page-styled.html. No preprocessor, framework or build step is required, and avoiding them at this stage is deliberate: you are learning what the browser does.",
     outputs: [
       "A styled page using custom properties from your token sheet",
       "Written explanations of three rules and why they win",
@@ -491,6 +495,7 @@ export const module12: Lesson[] = [
         minutes: 30,
         title: "Declare your tokens",
         instructions: [
+          "In the starter, change the one marked token value first, save and reload.",
           "Write your token sheet as custom properties at the top of the stylesheet.",
           "Use the same names as your documentation.",
           "Style the page referring to them, never to raw values.",
@@ -647,28 +652,28 @@ export const module12: Lesson[] = [
     title: "Responsive layout, built rather than drawn",
     objective:
       "Make your page work from about 320 pixels to a wide screen without horizontal scrolling, using flexible layout rather than fixed breakpoint copies.",
-    bringForward: "Your m07 three-width drawings and behaviour notes.",
-    prerequisite: "Your three-width drawings and the built page.",
-    why: "You have drawn responsive layouts for five modules. Building one shows you which of those drawings were possible and which were wishes.",
+    bringForward: "Your m07 three-width drawings, and your page or the supplied starter page-responsive.html.",
+    prerequisite: "A text editor, a browser, and the starter page-responsive.html or your own page.",
+    why: "Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. You have drawn responsive layouts for five modules. Building one shows you which of those drawings were possible and which were wishes.",
     teach: [
       "Start narrow: the small layout is the content in priority order.",
       "Let content decide breakpoints, not device names.",
       "Flexible layouts wrap and grow; fixed ones break at unexpected sizes.",
       "Test between breakpoints, where most failures live.",
-      "No horizontal scrolling of the page, at any width, ever.",
+      "From 320 pixels up the page itself should not scroll sideways; wide content scrolls in its own box.",
     ],
     explanation: [
       "Building narrow first is not a slogan; it is the order that produces fewer decisions. The narrow layout is your content in priority order with almost no arrangement, and each wider layout adds arrangement as space allows. Starting wide means removing things, which is where content gets hidden rather than reordered.",
       "Breakpoints belong where your content breaks, not where a device is rumoured to be. Widen the browser slowly and watch: the point where a line becomes uncomfortably long, where a card becomes too narrow to read, where a gap opens — those are your breakpoints, and they are specific to this design.",
       "Flexible layout does most of the work without breakpoints at all: content that wraps when it runs out of room, columns that grow within limits, images that scale to their container. Layouts built from fixed sizes need a breakpoint for every problem, and they fail between the sizes you tested.",
-      "The gaps between breakpoints are where failures hide, because that is where nobody looks. Drag the window slowly across the whole range once. Anything that overlaps, clips, or produces horizontal scrolling appears immediately, and horizontal scrolling of the page is never acceptable — content that must scroll sideways gets its own container.",
+      "The gaps between breakpoints are where failures hide, because that is where nobody looks. Drag the window slowly across the whole range once. Anything that overlaps, clips, or produces horizontal scrolling appears immediately. From 320 pixels up the page itself should not scroll sideways, which is the WCAG reflow requirement; content that genuinely needs width, such as a wide table, scrolls inside its own container.",
     ],
     misconception:
       "“Responsive means three layouts for phone, tablet and desktop.” Devices come in every size, and people resize windows, split screens and enlarge text. A layout that only works at three widths fails at the dozens in between.",
     example:
-      "The class page was built narrow first: title, key facts, action, then description, with the image below. Widening slowly revealed three genuine breakpoints — one where the key facts could sit in a row, one where the description could take a wider column, one where a side panel became viable. None matched a device name. Between the second and third, the card grid produced a single orphaned card, fixed with a flexible wrap rather than another breakpoint. At 320 pixels the schedule table caused horizontal scrolling of the page; it became records instead, matching the m08 decision.",
+      "Example (made up): the class page was built narrow first: title, key facts, action, then description, with the image below. Widening slowly revealed three genuine breakpoints — one where the key facts could sit in a row, one where the description could take a wider column, one where a side panel became viable. None matched a device name. Between the second and third, the card grid produced a single orphaned card, fixed with a flexible wrap rather than another breakpoint. At 320 pixels the schedule table caused horizontal scrolling of the page; it became records instead, matching the m08 decision.",
     freeToolPath:
-      "A browser window you can drag, plus the device toolbar for a phone-sized viewport. Everything in this lesson works in a text editor and a browser with no build step.",
+      "A browser window you can drag, plus the device toolbar (F12, then Ctrl+Shift+M) for a phone-sized viewport. That is emulation in a desktop browser, not a phone test. Everything works in Notepad and a browser with the starter page-responsive.html.",
     outputs: [
       "A page working from about 320 pixels upward",
       "Breakpoints chosen from content, with the reason for each",
@@ -680,6 +685,7 @@ export const module12: Lesson[] = [
         minutes: 30,
         title: "Build narrow first",
         instructions: [
+          "In the starter, make the one marked change first and watch the cards rewrap.",
           "Lay out the page at about 320 pixels with content in priority order.",
           "Use flexible sizing rather than fixed widths.",
           "Check nothing requires horizontal scrolling.",
@@ -847,11 +853,11 @@ export const module12: Lesson[] = [
     title: "Images that do not cost the page",
     objective:
       "Put real images into your page at appropriate sizes and formats, produce one icon as hand-written SVG, and measure the weight you saved.",
-    bringForward: "Your built page and the images your design uses.",
-    prerequisite: "Your built page and its images.",
-    why: "Images are usually most of a page's weight, and almost all of that weight is a design decision.",
+    bringForward: "Your page and its images, or the supplied starter page-images.html with its made up image audit.",
+    prerequisite: "A text editor, a browser, and the starter page-images.html or your own page and images.",
+    why: "Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Images are usually most of a page's weight, and almost all of that weight is a design decision.",
     teach: [
-      "Serve an image near the size it is displayed; a 3000-pixel photo in a 400-pixel slot wastes everything.",
+      "Serve an image near the size it is displayed; a 3000-pixel photo in a 400-pixel slot wastes most of its bytes.",
       "Photographs and flat graphics want different formats.",
       "SVG is text: it scales, it is small, and you can write it by hand.",
       "Images below the fold can load later; images above it should not.",
@@ -866,9 +872,9 @@ export const module12: Lesson[] = [
     misconception:
       "“The developer will optimise the images.” They can compress what you supply. Whether the page has a full-width photograph at all, and whether it appears above the first line of text, are design decisions that dominate the outcome.",
     example:
-      "Eleven images were reviewed. The hero photograph was 1.8 MB at 3000 pixels wide, displayed at 720; re-exported at an appropriate size and format it became 96 KB. Six flat icons were replaced with hand-written SVG totalling under 4 KB, styled with the token colours rather than shipped in three colour variants. Four below-the-fold photographs were set to load later, with their space reserved so nothing jumped. Total page weight fell from 2.4 MB to 340 KB, and time to usable on a throttled connection fell from eleven seconds to three.",
+      "Example (made up): eleven images were reviewed. The hero photograph was 1.8 MB at 3000 pixels wide, displayed at 720; re-exported at an appropriate size and format it became 96 KB. Six flat icons were replaced with hand-written SVG totalling under 4 KB, styled with the token colours rather than shipped in three colour variants. Four below-the-fold photographs were set to load later, with their space reserved so nothing jumped. Total page weight fell from 2.4 MB to 340 KB, and time to usable on a throttled connection fell from eleven seconds to three.",
     freeToolPath:
-      "A text editor for the SVG, following the assigned tutorial, and any free image resizer or your operating system's own export. No hosted design account is required to produce or export vector artwork.",
+      "Notepad for the SVG, following the assigned tutorial, the starter page-images.html, and any free image resizer or your operating system's own export for your own photographs. No hosted design account is required. Timing needs a page served over http(s); on a page opened from your own folder, record weight and label any timing as an estimate.",
     outputs: [
       "Images served near their display size, with formats chosen deliberately",
       "One icon written by hand as SVG and styled with tokens",
@@ -880,7 +886,7 @@ export const module12: Lesson[] = [
         minutes: 25,
         title: "Audit the images",
         instructions: [
-          "List every image with its file size and its display size.",
+          "List every image with its file size and display size, or use the starter's supplied audit.",
           "Mark any served more than twice its display width.",
           "Mark flat graphics currently shipped as photographs.",
         ],
@@ -916,7 +922,7 @@ export const module12: Lesson[] = [
         minutes: 15,
         title: "Measure the result",
         instructions: [
-          "Re-run the throttled load and record the new timings.",
+          "Re-run the throttled load on a page served over http(s), or label the timing an estimate.",
           "Record before-and-after weight.",
           "Save the audit and the measurements.",
         ],
@@ -991,11 +997,11 @@ export const module12: Lesson[] = [
       {
         criterion: "Weight and timing improvements are measured",
         evidence:
-          "Before-and-after page weight and throttled time to usable.",
+          "Before-and-after page weight, and time to usable measured over a network or labelled as an estimate.",
         levels: [
           "Not measured.",
-          "Weight measured without timing.",
-          "Both measured under the same conditions.",
+          "Weight measured with no word about timing.",
+          "Both recorded under the same conditions, timing measured or labelled an estimate.",
           "As adequate, and the conditions are stated so the comparison is fair.",
         ],
         remediation:
@@ -1046,9 +1052,9 @@ export const module12: Lesson[] = [
     title: "Just enough JavaScript",
     objective:
       "Add one genuinely interactive behaviour to your page with plain JavaScript, keeping it usable when the script fails, and explain what the code does line by line.",
-    bringForward: "Your built page and one interaction from your m09 work.",
-    prerequisite: "Your built page and an m09 interaction specification.",
-    why: "Knowing where JavaScript becomes necessary — and what it costs — is what lets you argue for a simpler solution when one exists.",
+    bringForward: "One interaction from your m09 work, and your page or the supplied starter behaviour-toggle.html.",
+    prerequisite: "A text editor, a browser, and the starter behaviour-toggle.html or your own page.",
+    why: "Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Knowing where JavaScript becomes necessary — and what it costs — is what lets you argue for a simpler solution when one exists.",
     teach: [
       "Much of what people reach for scripts to do, HTML and CSS already do.",
       "Scripts respond to events and change state; that is most of what they are for.",
@@ -1065,9 +1071,9 @@ export const module12: Lesson[] = [
     misconception:
       "“I do not need to write code, so I do not need to read it.” Reading it is what lets you tell a feasible request from an unreasonable one, understand an estimate and notice when an answer is evasive. Writing a little is how you learn to read.",
     example:
-      "The filter panel was built twice. The first version used a script for showing and hiding, and needed keyboard handling, focus management and announcement written by hand. The second used a native disclosure element and needed almost none of it, behaving correctly with the keyboard and announcing its state without any script at all. The genuinely script-requiring behaviour — filtering the list as options change — was written in about twenty lines, explained line by line, and made to fall back to a submit button that reloads with filters applied when the script does not run.",
+      "Example (made up): the filter panel was built twice. The first version used a script for showing and hiding, and needed keyboard handling, focus management and announcement written by hand. The second used a native disclosure element and needed almost none of it, behaving correctly with the keyboard and announcing its state without any script at all. The genuinely script-requiring behaviour — filtering the list as options change — was written in about twenty lines, explained line by line, and given a fallback for when the script does not run: on the real site, a submit button that reloads with the filters applied; on the practice page, which has no server, the full list stays visible with every status written out.",
     freeToolPath:
-      "A text editor and a browser console. No framework, build step, package manager or account: plain files are the point at this stage.",
+      "Notepad, a browser console and the starter behaviour-toggle.html. To test without JavaScript in Chrome or Edge: F12, Ctrl+Shift+P, type Disable JavaScript, Enter, then reload. No framework, build step, package manager or account.",
     outputs: [
       "One interaction built with plain JavaScript",
       "A line-by-line explanation of what the code does",
@@ -1088,6 +1094,7 @@ export const module12: Lesson[] = [
         minutes: 35,
         title: "Build the interaction",
         instructions: [
+          "Make the starter's one marked change first, save and reload.",
           "Write the script in plain JavaScript, as short as you can make it.",
           "Attach behaviour to real elements rather than replacing them.",
           "Test with the keyboard as well as the pointer.",
@@ -1244,10 +1251,10 @@ export const module12: Lesson[] = [
     guided: true,
     title: "Data that arrives later",
     objective:
-      "Fetch data from a public source into your page, and build the loading, empty, error and slow states you specified in m08 so they are real rather than drawn.",
-    bringForward: "Your m08 empty, loading and error state specifications.",
-    prerequisite: "Your state specifications and the built page.",
-    why: "Every state you have specified for four modules becomes real here, and building them is what proves they were designed rather than described.",
+      "Put realistic data into a page using the starter's built-in data, and make the loading, empty, error and slow states from your m08 specification real rather than drawn.",
+    bringForward: "Your m08 empty, loading and error state specifications, and the starter data-states.html.",
+    prerequisite: "A text editor, a browser, the starter data-states.html and your state specifications.",
+    why: "Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Every state you have specified for four modules becomes real here, and building them is what proves they were designed rather than described.",
     teach: [
       "Data arrives after the page: something must be shown in the meantime.",
       "Four outcomes: loading, content, empty and error. All four are your design.",
@@ -1262,11 +1269,11 @@ export const module12: Lesson[] = [
       "Errors are ordinary. Mobile connections drop mid-request, servers return failures, and requests time out — routinely, not exceptionally. Treating the error branch as an edge case produces the products where a moment of poor signal leaves a permanently empty screen with no way forward.",
     ],
     misconception:
-      "“The API will usually work, so the error state is a formality.” It fails often enough that a person on a train meets it regularly. The error branch is used more than most features you will design.",
+      "“The API will usually work, so the error state is a formality.” Requests fail often enough on mobile connections that a person on a train meets the error branch regularly, so it deserves the same design care as the content.",
     example:
-      "The class list was connected to a small public data source. Four branches were built with the m08 wording: loading reserved the row heights and, after three seconds, added “Still loading — this can take a moment on a slow connection”; content rendered the list; empty said what would appear and offered to widen the filters; error said what happened, that nothing was lost, and offered retry without losing filters. Building revealed two specification errors: the reserved space was for four rows where the real result was often twelve, and the error message referred to a retry control that had never been designed.",
+      "Example (made up): the class list was given realistic data. Four branches were built with the m08 wording: loading reserved the row heights and, after three seconds, added “Still loading — this can take a moment on a slow connection”; content rendered the list; empty said what would appear and offered to widen the filters; error said what happened, that nothing was lost, and offered retry without losing filters. Building revealed two specification errors: the reserved space was for four rows where the real result was often twelve, and the error message referred to a retry control that had never been designed.",
     freeToolPath:
-      "A public data source that needs no key, or a local file of your own realistic data served alongside the page. Nothing here requires an account, a paid API or a backend.",
+      "The starter data-states.html, which keeps its data inside the page and pretends to be a network with buttons. A page opened from your own folder (file://) usually cannot fetch a neighbouring data file, and browsers refuse in different ways; a real fetch needs the page served over http(s) by a local server or hosting, which is optional. No account, paid API or backend.",
     outputs: [
       "A page that fetches and renders real data",
       "Loading, content, empty and error branches built with your wording",
@@ -1279,8 +1286,9 @@ export const module12: Lesson[] = [
         title: "Fetch something real",
         instructions: [
           "Read the assigned sections on fetching data.",
-          "Connect your page to a public source or a local data file.",
-          "Render the content branch first.",
+          "Open the starter, which keeps its data inside the page.",
+          "Rewrite its empty message, the one marked change, then save and reload.",
+          "Replace the data with realistic rows from your own product.",
         ],
       },
       {
@@ -1296,9 +1304,9 @@ export const module12: Lesson[] = [
         minutes: 25,
         title: "Make it slow and make it fail",
         instructions: [
-          "Throttle the connection and watch the loading branch.",
-          "Force an error by breaking the address or going offline.",
-          "Add a timeout with its own message and a route out.",
+          "Use the starter's slow, failing and never-answering buttons and watch each branch.",
+          "On a real fetch over http(s), throttle or go offline in the network panel instead.",
+          "Set the timeout and its message, with a route out.",
         ],
       },
       {
@@ -1345,7 +1353,7 @@ export const module12: Lesson[] = [
       {
         criterion: "All four branches are built and reachable",
         evidence:
-          "Loading, content, empty and error branches, each demonstrable.",
+          "Loading, content, empty and error branches showing your own data and wording, each demonstrable.",
         levels: [
           "Content branch only.",
           "Three branches, usually missing empty.",
@@ -1417,7 +1425,7 @@ export const module12: Lesson[] = [
         purpose: "Supplies the mechanics for requesting and rendering data.",
         minutes: "90 selected",
         limits:
-          "Free text documentation, no account. Verified 2026-09-06. Use the written articles; exclude promoted paid partner courses. Use a public source that needs no key, or local data.",
+          "Free text documentation, no account. Verified 2026-09-06. Use the written articles; exclude promoted paid partner courses. Its fetch examples need a page served over http(s); the starter needs none.",
         fallbackId: "R16",
       },
       {
@@ -1428,7 +1436,7 @@ export const module12: Lesson[] = [
           "Lets you produce the slow and failed conditions deliberately.",
         minutes: "10–20 selected",
         limits:
-          "Free documentation, no account; any Chromium browser. Verified 2026-09-06. Throttling does not simulate a dropped connection; disconnect to test that.",
+          "Free documentation, no account; any Chromium browser. Verified 2026-09-06. Throttling does not simulate a dropped connection, and it acts on network requests, not the starter's pretend ones.",
         fallbackId: "R16",
       },
     ],
@@ -1443,29 +1451,29 @@ export const module12: Lesson[] = [
     guided: true,
     title: "A form that actually submits",
     objective:
-      "Build one working form with native validation, accessible errors and preserved input, and record what the browser gave you free versus what you had to write.",
-    bringForward: "Your m11 accessible field table and error wording.",
-    prerequisite: "Your field table and error specifications.",
-    why: "Forms are where your accessibility and error specifications are either implemented or quietly dropped.",
+      "Build one working form with native validation, accessible errors and preserved input, its submission intercepted on your own device, and record what the browser gave you free versus what you had to write.",
+    bringForward: "Your m11 accessible field table and error wording, and the starter form-no-server.html.",
+    prerequisite: "A text editor, a browser, the starter form-no-server.html and your field table.",
+    why: "Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Forms are where your accessibility and error specifications are either implemented or quietly dropped.",
     teach: [
       "The browser already validates common types and reports errors.",
       "Native first, custom only where the native behaviour is genuinely insufficient.",
       "Errors must be associated with fields and announced when they appear.",
-      "Never clear the form on failure; preserve everything.",
+      "Keep what people typed when a submission fails; passwords are the usual exception.",
       "Validation on the client is convenience; the server is where it counts.",
     ],
     explanation: [
-      "The browser gives you a great deal free: required fields, input types that bring their own keyboards and validation, and error reporting that is announced. Starting from native behaviour and adding only what is missing produces an accessible form quickly; starting from a custom implementation means rebuilding announcement, focus and keyboard behaviour by hand.",
+      "The browser gives you a great deal free: required fields, input types that bring their own keyboards and checks, and a message on the first problem field, which also receives focus. How reliably screen readers announce that message varies, and it disappears after a few seconds, which is why many forms keep the browser's checks and present the messages themselves. Starting from native behaviour and adding only what is missing produces an accessible form quickly; starting from a custom implementation means rebuilding announcement, focus and keyboard behaviour by hand.",
       "Custom validation is warranted when the rule is yours rather than the platform's — a date that must be in the future, a code that must match a pattern the browser does not know. Even then, the presentation should match the native behaviour people already recognise, and the association between field and error must be explicit.",
       "Announcement matters as much as display. An error that appears silently is invisible to anyone not looking at that region, so the summary and the field-level messages need to be announced when they appear and reachable afterwards. This is your m11 specification, and this lesson is where it either happens or does not.",
       "Client-side validation is a convenience that saves a round trip. It is not a guarantee: anything can be submitted directly. That is an engineering fact worth knowing, because it explains why a server will re-check everything and why your design needs to handle a rejection that arrives after the person thought they were finished.",
     ],
     misconception:
-      "“Custom validation gives a better experience.” It gives a different one, and usually a less accessible one, because the native behaviour includes announcement and keyboard handling that custom implementations routinely omit.",
+      "“Custom validation means writing every check yourself.” The browser already checks required fields, formats and patterns and moves focus to the first problem. Your code needs only the rules it cannot know and messages that stay on screen; hand-built checks usually duplicate work and drop the focus handling.",
     example:
-      "The booking form was built with native input types and required attributes, adding custom rules only for two things the browser could not know: that the date must be a future class date, and that the phone number must match an accepted set of formats. Errors were associated with their fields, a summary at the top linked to each, and the summary was announced on appearance. On a failed submission everything the person had entered survived. The record noted what came free — type-appropriate keyboards, required handling, announcement — and what was written by hand, which was about fifteen lines.",
+      "Example (made up): the booking form was built with native input types and required attributes. The two accepted phone formats went into a pattern attribute, so the browser checked them, and a script was written for one rule the browser could not know: that the date must be one on which a class runs. Errors were associated with their fields, a summary at the top linked to each, and the summary was announced on appearance. On a failed submission everything the person had entered survived. The record noted what came free — type-appropriate keyboards, required handling, announcement — and what was written by hand, which was about fifteen lines.",
     freeToolPath:
-      "A text editor and a browser. Submission can go to a local endpoint or simply be intercepted; nothing here needs a server, a form service or an account.",
+      "Notepad, a browser and the starter form-no-server.html. Its submission is intercepted on your own device and shows what would have been sent; method=\"dialog\" means nothing is sent even without the script. No server, form service or account.",
     outputs: [
       "A working form using native validation where possible",
       "Custom rules only where the platform cannot know them",
@@ -1478,7 +1486,8 @@ export const module12: Lesson[] = [
         title: "Build with native behaviour",
         instructions: [
           "Read the assigned form sections and the accessibility requirements.",
-          "Build the form with appropriate input types and required fields.",
+          "Rewrite the starter's marked date message first, then save, reload and submit.",
+          "Build or adapt the form with appropriate input types and required fields.",
           "Test what the browser does before adding anything.",
         ],
       },
@@ -1551,7 +1560,7 @@ export const module12: Lesson[] = [
           "Everything validated by custom code.",
           "Some native types with custom duplication.",
           "Native behaviour used wherever available.",
-          "As adequate, and the input types produce the right keyboards on a phone.",
+          "As adequate, and each input type is chosen for the keyboard it brings on a phone.",
         ],
         remediation:
           "Remove custom validation that duplicates a native type and test what the browser does alone.",
@@ -1645,9 +1654,9 @@ export const module12: Lesson[] = [
     title: "Making the page fast enough",
     objective:
       "Measure your page's weight and time to usable on a slow connection, make three changes, and report the before-and-after with the conditions stated.",
-    bringForward: "Your built page and the trace from lesson 1.",
-    prerequisite: "Your built page and its first trace.",
-    why: "Speed is an accessibility and inclusion question in a country where connections vary enormously. It is also the easiest quality to lose without noticing.",
+    bringForward: "The trace from Lesson 1, and your page or a supplied starter opened from the course site.",
+    prerequisite: "A page served over http(s) to measure: your own if hosted, or a starter on the course site.",
+    why: "Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Speed is an accessibility and inclusion question in a country where connections vary enormously. It is also the easiest quality to lose without noticing.",
     teach: [
       "Measure before changing; opinions about speed are unreliable.",
       "Weight, number of requests and blocking resources are the three usual causes.",
@@ -1664,9 +1673,9 @@ export const module12: Lesson[] = [
     misconception:
       "“It feels fast to me.” You are on a fast connection, with a warm cache, on a machine you chose, looking at a page you already understand. None of that describes a first visit on a mid-range phone.",
     example:
-      "Baseline on a throttled profile with the cache disabled: 2.4 MB, twenty-one requests, eleven seconds to usable. Three changes: images resized and re-formatted, two of three typefaces removed, and the stylesheet made non-blocking for the parts not needed for first paint. After: 340 KB, twelve requests, three seconds to usable. The conditions were identical for both runs and stated with the figures. One further change was considered and rejected: deferring the script that renders the list would have made the page appear faster and be useful later, which is the wrong trade for this page.",
+      "Example (made up): baseline after the image work of lesson 5, on a throttled profile with the cache disabled: 340 KB, eleven requests, about three seconds to usable. Three changes: the unused third typeface removed (78 KB, one request), the two remaining typefaces cut down to the characters used (about 24 KB saved), and the print stylesheet stopped from blocking the first paint. After: about 238 KB, ten requests, a little over two seconds to usable. The conditions were identical for both runs and stated with the figures. One further change was considered and rejected: deferring the script that renders the list would have made the page appear faster and be useful later, which is the wrong trade for this page.",
     freeToolPath:
-      "Your browser's network panel and throttling. No performance service, account or paid audit tool is required; the measurements you need are already in the browser.",
+      "Your browser's network panel and throttling, on a page served over http(s); throttling may not apply to a page opened from your own folder, so label any timing taken that way as an estimate. No performance service, account or paid audit tool is required.",
     outputs: [
       "A baseline measurement with conditions recorded",
       "Three changes, each with the reason",
@@ -1678,7 +1687,7 @@ export const module12: Lesson[] = [
         minutes: 25,
         title: "Measure the baseline",
         instructions: [
-          "Load with the cache disabled and a slow profile.",
+          "Load a page served over http(s) with the cache disabled and a slow profile.",
           "Record weight, request count and time to usable.",
           "Note which requests block the first render.",
         ],
@@ -1843,9 +1852,9 @@ export const module12: Lesson[] = [
     title: "Finding out what is actually happening",
     objective:
       "Diagnose three problems in your own page using the element inspector, the console and the network panel, writing the cause before making any fix.",
-    bringForward: "Your built page with any remaining problems.",
-    prerequisite: "Your built page and its known issues.",
-    why: "Being able to find out what is happening, rather than guessing and changing things, is what makes you useful to an engineering conversation.",
+    bringForward: "Your page with any remaining problems, or the starter debug-practice.html with three planted ones.",
+    prerequisite: "A text editor, a browser, and the starter debug-practice.html or your own page.",
+    why: "Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Being able to find out what is happening, rather than guessing and changing things, is what makes you useful to an engineering conversation.",
     teach: [
       "The inspector shows the real applied styles and which rules were overridden.",
       "The console shows errors; a page can look fine and be failing quietly.",
@@ -1862,13 +1871,13 @@ export const module12: Lesson[] = [
     misconception:
       "“Debugging is for developers.” Being able to say “the request returned a 404” or “this rule is being overridden by that one” is what turns a design bug report from a complaint into a starting point, and it saves everyone a round trip.",
     example:
-      "Three problems diagnosed. The card was wider than its container: the inspector showed padding being added to a set width — cause written, then fixed with box sizing. The filter did nothing on one screen: the console showed a script error on a line that assumed an element existed — cause written, then fixed with a guard. An icon was missing on the phone but not the laptop: the network panel showed a 404 for a file whose name differed by case, which matters on the server and not on the local machine. Each cause was written before the fix, and one initial hypothesis turned out to be wrong.",
+      "Example (made up): three problems diagnosed. The card was wider than its container: the inspector showed padding being added to a set width — cause written, then fixed with box sizing. The filter did nothing on one screen: the console showed a script error on a line that assumed an element existed — cause written, then fixed with a guard. An icon was missing on the phone but not the laptop: the network panel showed a 404 for a file whose name differed by case, which matters on the server and not on the local machine. Each cause was written before the fix, and one initial hypothesis turned out to be wrong.",
     freeToolPath:
-      "The developer tools already in your browser. No account, extension or paid tooling is required for anything in this lesson.",
+      "The developer tools already in your browser, and the starter debug-practice.html, whose three planted problems are explained at the bottom of the file. No account, extension or paid tooling is required.",
     outputs: [
       "Three problems diagnosed with the cause written first",
       "Evidence from the inspector, the console and the network panel",
-      "A record of one hypothesis that turned out to be wrong",
+      "Each first guess compared with the cause actually found",
       "Fixes made after the diagnosis, not before",
     ],
     steps: [
@@ -1884,7 +1893,7 @@ export const module12: Lesson[] = [
         minutes: 30,
         title: "Diagnose a style problem",
         instructions: [
-          "Find something that does not look as intended.",
+          "Make the starter's marked change, then find something that does not look as intended.",
           "Use the inspector to see the applied and overridden rules.",
           "Write the cause before touching the code.",
         ],
@@ -1911,7 +1920,7 @@ export const module12: Lesson[] = [
         minutes: 15,
         title: "Record",
         instructions: [
-          "Note any hypothesis that proved wrong and what it actually was.",
+          "Compare each first guess with what you found, wrong or confirmed.",
           "Save the three diagnoses with their evidence.",
         ],
       },
@@ -1937,7 +1946,7 @@ export const module12: Lesson[] = [
       "Three problems are diagnosed using three different panels",
       "Causes are written before fixes",
       "Evidence from the tools is recorded",
-      "A wrong hypothesis is recorded honestly",
+      "First guesses are compared honestly with what was found",
     ],
     criteria: [
       {
@@ -1983,17 +1992,17 @@ export const module12: Lesson[] = [
         recheck: "The evidence record.",
       },
       {
-        criterion: "A wrong hypothesis is recorded honestly",
+        criterion: "First guesses are compared honestly with what was found",
         evidence:
-          "At least one initial explanation that turned out to be wrong, with what it actually was.",
+          "Each first guess beside the real cause; a wrong guess with what it actually was, or the evidence that confirmed a right one.",
         levels: [
-          "Only correct diagnoses reported.",
-          "A wrong guess mentioned without what was actually happening.",
-          "Recorded with the real cause beside it.",
-          "As adequate, and the record says what would have shown the mistake sooner.",
+          "No first guesses recorded.",
+          "Guesses mentioned without the causes found.",
+          "Every guess compared with the real cause, wrong ones included.",
+          "As adequate, and any wrong guess says what would have shown the mistake sooner.",
         ],
         remediation:
-          "Look back at the problems: your first idea was probably wrong at least once. Record it.",
+          "Write each first guess beside the cause you found. Do not invent a wrong guess; if all were right, name the evidence that confirmed each.",
         recheck: "The hypothesis record.",
       },
     ],
@@ -2001,7 +2010,7 @@ export const module12: Lesson[] = [
       "If problems were fixed by trial and error, re-diagnose one properly.",
       "If causes came after fixes, write the next one first.",
       "If evidence is vague, record the exact rule, error or status.",
-      "If every diagnosis was right first time, check whether you are recording honestly.",
+      "If every first guess was right, record the evidence that confirmed each one.",
     ],
     portfolio:
       "Diagnoses written in engineers' terms show that you can participate in a technical conversation, which is a stated expectation in many product design roles.",
@@ -2039,34 +2048,34 @@ export const module12: Lesson[] = [
     guided: true,
     title: "The whole thing, running",
     objective:
-      "Assemble your pages into one working responsive prototype with real data, accessible structure and measured performance, and test it on a real phone.",
-    bringForward: "Everything built in this module.",
-    prerequisite: "Your built pages, data fetching, form and styling.",
-    why: "Separate exercises prove separate points. A running prototype proves they hold together, which is a different claim.",
+      "Assemble your pages into one working responsive prototype with realistic data, accessible structure and measured performance, and check it in device emulation, with a real phone as an option.",
+    bringForward: "Everything built in this extension, or the supplied starters from Lessons 2 to 8.",
+    prerequisite: "Your built pages or the supplied starters, in one folder.",
+    why: "Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Separate exercises prove separate points. A running prototype proves they hold together, which is a different claim.",
     teach: [
       "Assembly finds the contradictions: two stylesheets, two patterns, two vocabularies.",
       "Re-run every check on the assembled thing; passing separately is not passing.",
-      "Test on a real phone, not only an emulated viewport.",
+      "Emulation shows width only; a real-phone check needs hosting or a local server and is optional.",
       "Record what is faked, exactly as in m10.",
       "A running prototype is not a product; say so wherever you show it.",
     ],
     explanation: [
       "Assembly is a test. Pages built separately develop their own conventions — a different spacing rhythm, a second way of writing a card, a slightly different button — and putting them together surfaces every one. Reconciling them is the work, and the reconciliations belong in your component inventory and token sheet.",
       "Checks must be re-run on the assembled result. A heading outline that was correct per page can break when pages share a header; a contrast ratio that passed can fail where a component now sits on a different surface; a keyboard route that worked can be interrupted by a new element. Passing separately is genuinely not the same as passing together.",
-      "Emulated viewports are convenient and not sufficient. A real phone has a real connection, real touch targets, a real keyboard that covers half the screen, and real interruptions. Ten minutes on a phone finds things an afternoon of resizing a window does not.",
+      "Emulated viewports are convenient and limited. A real phone has a real connection, real touch targets, a keyboard that covers part of the screen, and real interruptions. A file on your computer cannot simply be opened on a phone: that needs a local network server or hosting, both optional. The supplied starters are hosted on the course site, so they can be opened on a phone's browser; otherwise record emulation honestly and list what it cannot show.",
       "The honesty rules from m10 apply unchanged: record what is faked, what data is invented, and what a person would meet in a real product that this does not have. A running prototype is more convincing than a drawing, which is exactly why its limits need stating more clearly.",
     ],
     misconception:
       "“It runs, so it is nearly a product.” It runs with your data, on your machine, for the paths you built. Real products meet volume, edge cases, other people's content, security requirements and years of change.",
     example:
-      "Four pages were assembled. Three contradictions appeared: two spacing rhythms, two card treatments and two different words for the same action. Each was reconciled and the inventory updated. Re-running the checks found a heading outline broken by the shared header and one contrast failure on a component now sitting on a tinted panel. Ten minutes on a real phone found two more: the sticky action bar sat under the on-screen keyboard, and the tap target for the date was comfortable with a mouse and not with a thumb. The fakes sheet recorded invented data, a faked payment and a search box that does nothing.",
+      "Example (made up): four pages were assembled. Three contradictions appeared: two spacing rhythms, two card treatments and two different words for the same action. Each was reconciled and the inventory updated. Re-running the checks found a heading outline broken by the shared header and one contrast failure on a component now sitting on a tinted panel. Ten minutes on a real phone, with the prototype hosted, found two more: the sticky action bar sat under the on-screen keyboard, and the tap target for the date was comfortable with a mouse and not with a thumb. The fakes sheet recorded invented data, a faked payment and a search box that does nothing.",
     freeToolPath:
-      "Your local files opened on your phone over the same network, or copied to it. No hosting, deployment or account is required to test on a real device.",
+      "The device toolbar in a desktop browser (F12, then Ctrl+Shift+M), recorded as emulation. Optional: a real phone, using the starters hosted on the course site or your own page through a local network server or free hosting. Sending one HTML file to a phone may or may not open it in a browser.",
     outputs: [
       "One assembled, running prototype",
       "A list of contradictions found and reconciled",
       "Re-run checks on the assembled result",
-      "A real-phone test with findings, and an updated fakes sheet",
+      "A device check labelled as emulation or a real phone, and an updated fakes sheet",
     ],
     steps: [
       {
@@ -2088,11 +2097,11 @@ export const module12: Lesson[] = [
       },
       {
         minutes: 30,
-        title: "Test on a real phone",
+        title: "Check it at phone size",
         instructions: [
-          "Open the prototype on an actual phone.",
-          "Complete one task by thumb, including a form.",
-          "Record everything the emulated viewport did not show.",
+          "Run one task, including a form, in device emulation and label it emulation.",
+          "Optionally repeat it on a real phone, using a hosted copy, by thumb.",
+          "Record what each check showed and what stayed untested.",
         ],
       },
       {
@@ -2122,7 +2131,7 @@ export const module12: Lesson[] = [
       {
         question: "What does a real phone show that an emulator does not?",
         answer:
-          "Real touch, a real keyboard covering the screen, a real connection and real interruptions. Ten minutes there beats an afternoon of resizing a window.",
+          "Real touch, a keyboard covering the screen, a real connection and real interruptions. Emulation shows width; record it as emulation and list what it cannot show.",
       },
       {
         question: "Why keep a fakes sheet for a running prototype?",
@@ -2134,7 +2143,7 @@ export const module12: Lesson[] = [
       "The prototype is assembled and runs end to end",
       "Contradictions are recorded and reconciled",
       "Checks are re-run on the assembled result",
-      "A real-phone test and an updated fakes sheet exist",
+      "A labelled device check and an updated fakes sheet exist",
     ],
     criteria: [
       {
@@ -2180,25 +2189,25 @@ export const module12: Lesson[] = [
         recheck: "The re-run results.",
       },
       {
-        criterion: "A real-phone test and an updated fakes sheet exist",
+        criterion: "A labelled device check and an updated fakes sheet exist",
         evidence:
-          "Findings from a real device and a current list of everything faked.",
+          "Findings from emulation or a real phone, labelled as which, with what stayed untested, and a current list of everything faked.",
         levels: [
-          "Emulated viewport only, no fakes sheet.",
+          "No device check, or emulation described as a phone test; no fakes sheet.",
           "One of the two present.",
-          "Both present, with device findings recorded.",
-          "As adequate, and one design change was made because of the phone test.",
+          "Both present, with the check labelled and its untested parts listed.",
+          "As adequate, and one design change was made because of the device check.",
         ],
         remediation:
-          "Open the prototype on your phone, complete a task by thumb, and update the fakes sheet afterwards.",
-        recheck: "The phone findings and fakes sheet.",
+          "Run one task in device emulation, label it, list what it cannot show, and update the fakes sheet afterwards.",
+        recheck: "The device findings and fakes sheet.",
       },
     ],
     repairs: [
       "If pages do not connect, wire the main task end to end.",
       "If contradictions were absorbed, list and resolve them.",
       "If checks were not repeated, re-run them on the assembly.",
-      "If only an emulator was used, test on a real phone.",
+      "If only emulation was used, label it and list what it cannot show.",
     ],
     portfolio:
       "A running prototype you built yourself, with its checks and its fakes sheet, is a strong portfolio artefact and an unusual one for a designer.",
@@ -2236,33 +2245,33 @@ export const module12: Lesson[] = [
     guided: true,
     title: "Talking to engineers about what you built",
     objective:
-      "Write a technical handover for one feature, ask three precise questions an engineer would find useful, and record what you now understand that you did not before this module.",
-    bringForward: "Your running prototype and its specifications.",
-    prerequisite: "Your prototype, key tables and state specifications.",
+      "Write a technical handover for one feature you designed or built, ask three precise questions an engineer would find useful, and record what you now understand that you did not before this module.",
+    bringForward: "One designed feature: your Project 1 screens, states, key tables and specifications (core), or your running prototype (technical extension).",
+    prerequisite: "Your Project 1 screens and state specifications, or your prototype. No coding is needed.",
     why: "The point of building was never to become an engineer. It was to make the conversation with engineers specific.",
     teach: [
       "Hand over behaviour and states, not only appearance.",
       "Ask about constraints and cost, not just feasibility.",
       "“Is this possible?” is almost always yes; ask what it would cost.",
-      "Name what your prototype fakes so nobody plans around it.",
+      "Name what is faked or only drawn, so nobody plans around it.",
       "Record what you learned, including where you were previously wrong.",
     ],
     explanation: [
       "A handover that consists of screens leaves an engineer to invent everything you did not draw: states, transitions, error handling, keyboard behaviour, what happens when data is long. You have specified all of those over the last five modules, and this lesson assembles them into a document that answers questions before they are asked.",
       "Feasibility questions rarely produce useful answers, because almost anything is possible. Cost questions do: what would this take, what would it constrain later, what would it prevent us changing. Asking in that form gets you a real trade-off rather than a yes that turns into a delay.",
-      "Your prototype's fakes need declaring in the handover as clearly as in a test. An engineer who assumes the search works, or that the data shape matches, plans around something that does not exist, and the correction is more expensive later than the sentence would have been now.",
-      "Recording what you now understand is worth doing once, plainly. This module was not intended to make you an engineer, and it should have changed what you can ask, what you can read, and what you no longer accept as an answer. Naming those explicitly makes them usable in an interview and in the next project.",
+      "Whatever is faked, assumed or only drawn needs declaring in the handover as clearly as in a test. An engineer who assumes the search works, or that the data shape is decided, plans around something that does not exist, and the correction is more expensive later than the sentence would have been now.",
+      "Recording what you now understand is worth doing once, plainly. This module was not intended to make you an engineer, and it should have changed what you can ask, what you can read or describe, and what you no longer accept as an answer. Naming those explicitly makes them usable in an interview and in the next project.",
     ],
     misconception:
       "“Designers who code are more valuable.” Designers who understand the material are more valuable. Writing production code is a different job; being able to read it, build a prototype, and ask precise questions is the part that makes design work land.",
     example:
-      "The handover for the booking feature ran to three pages: the flow with its states, the component specifications with their key tables, the four data branches with their wording, the responsive behaviour rules, and the accessibility notes with what had been tested and what had not. Three questions were asked: what would it cost to keep the held-place timer accurate across devices, what does the current data shape make expensive to change later, and which of these states will need server work rather than front-end work. The fakes sheet was attached. The reflection recorded three things learned, including that a change she had previously been told was trivial turned out to be structural, and one where the opposite was true.",
+      "Example (made up): the handover for the booking feature ran to three pages: the flow with its states, the component specifications with their key tables, the four data branches with their wording, the responsive behaviour rules, and the accessibility notes with what had been tested and what had not. Three questions were asked: what would it cost to keep the held-place timer accurate across devices, what does the current data shape make expensive to change later, and which of these states will need server work rather than front-end work. The fakes sheet was attached. The reflection recorded three things learned, including that a change she had previously been told was trivial turned out to be structural, and one where the opposite was true.",
     freeToolPath:
       "A written document plus your existing artefacts. No handover platform is required; a clear Markdown file with links is better than most of them.",
     outputs: [
       "A technical handover covering behaviour, states and constraints",
       "Three cost-shaped questions for an engineer",
-      "The fakes sheet attached and declared",
+      "What is faked, assumed or only designed, declared",
       "A written record of what you now understand",
     ],
     steps: [
@@ -2287,8 +2296,8 @@ export const module12: Lesson[] = [
         minutes: 20,
         title: "Declare the fakes",
         instructions: [
-          "Attach the fakes sheet and mark anything an engineer might assume works.",
-          "State what data shape you invented.",
+          "Attach the fakes sheet, or list what exists only as a drawing.",
+          "State what data shape you invented or assumed.",
         ],
       },
       {
@@ -2296,7 +2305,7 @@ export const module12: Lesson[] = [
         title: "Ask someone",
         instructions: [
           "If you can, ask your questions of a developer and record the answers.",
-          "If not, record that the questions are unasked and what you expect.",
+          "If not, record that they are unasked and what you expect. Keep notes de-identified.",
         ],
       },
       {
@@ -2304,7 +2313,7 @@ export const module12: Lesson[] = [
         title: "Write what you learned",
         instructions: [
           "List three things you understand now that you did not before.",
-          "Include at least one where you were previously wrong.",
+          "Include at least one belief the module changed or tested.",
           "Save the handover, questions and reflection.",
         ],
       },
@@ -2321,16 +2330,16 @@ export const module12: Lesson[] = [
           "States, transitions, error handling, keyboard behaviour, responsive rules and message wording — everything that would otherwise be invented at build time.",
       },
       {
-        question: "What was the point of building, if not to become an engineer?",
+        question: "What was the point of learning the material, if not to become an engineer?",
         answer:
-          "To make the conversation specific: to read code, to prototype your own ideas, to ask precise questions, and to recognise an evasive answer.",
+          "To make the conversation specific: to describe behaviour and states, read code if you built, ask precise questions, and recognise an evasive answer.",
       },
     ],
     rubric: [
       "The handover covers behaviour and states, not only appearance",
       "Three questions are about cost and constraint",
       "The fakes are declared explicitly",
-      "The reflection includes something you had been wrong about",
+      "The reflection names a belief the module changed or tested",
     ],
     criteria: [
       {
@@ -2365,7 +2374,7 @@ export const module12: Lesson[] = [
       {
         criterion: "The fakes are declared explicitly",
         evidence:
-          "The fakes sheet attached with the invented data shape stated.",
+          "The fakes sheet, or a designed-not-built list, with the invented or assumed data shape stated.",
         levels: [
           "Not declared.",
           "Attached without highlighting what looks real.",
@@ -2378,17 +2387,17 @@ export const module12: Lesson[] = [
       },
       {
         criterion:
-          "The reflection includes something you had been wrong about",
+          "The reflection names a belief the module changed or tested",
         evidence:
-          "Three learnings, at least one correcting a previous belief.",
+          "Three learnings, at least one naming a belief the module corrected or put to a test.",
         levels: [
           "No reflection.",
-          "Learnings listed without any correction.",
-          "Three learnings including a correction.",
-          "As adequate, and the correction changes how you will estimate or argue in future.",
+          "Skills listed without any belief examined.",
+          "Three learnings including one belief changed or tested.",
+          "As adequate, and it says how you will estimate or argue differently in future.",
         ],
         remediation:
-          "Think back over the module for a moment where a build contradicted your expectation, and write it.",
+          "Think back for a moment where the material contradicted or tested an expectation. Do not invent a mistake; a confirmed belief with its evidence also counts.",
         recheck: "The reflection.",
       },
     ],
@@ -2396,7 +2405,7 @@ export const module12: Lesson[] = [
       "If the handover is screens, add states, behaviour and wording.",
       "If questions ask about possibility, rewrite them as cost.",
       "If fakes are undeclared, mark everything that looks functional.",
-      "If the reflection has no correction, look for where the build surprised you.",
+      "If the reflection names no belief, find one the module tested.",
     ],
     portfolio:
       "A technical handover with cost-shaped questions is a strong interview artefact: it shows how you work with engineers rather than claiming that you do.",
