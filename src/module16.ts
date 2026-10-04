@@ -186,7 +186,7 @@ export const module16: Lesson[] = [
           "No data rule.",
           "A general caution.",
           "Specific categories named as never.",
-          "As adequate, and it references the consent you actually gave.",
+          "As adequate, and it references the consent wording you used or prepared in Module 5.",
         ],
         remediation:
           "Re-read your consent introduction and write the rule that keeps the promise you made.",
@@ -251,7 +251,7 @@ export const module16: Lesson[] = [
     guided: true,
     title: "Using assistance without losing the work",
     objective:
-      "Use assistance on three design tasks, and for each record what it saved, what it got wrong, and what you had to do anyway.",
+      "Test assistance on three design tasks — with a free tool you already use, or with the supplied hand-written outputs — and for each record what it saved, what it got wrong, and what you had to do anyway.",
     bringForward: "Your current design work and your assistance rules.",
     prerequisite: "Your written assistance rules and work in progress.",
     why: "Assistance is genuinely useful for some tasks and quietly harmful for others, and the difference is learnable by keeping a record rather than by argument.",
@@ -271,11 +271,11 @@ export const module16: Lesson[] = [
     misconception:
       "“It saved me hours.” Sometimes. Count the editing, the verification and the times you accepted something you would not have written. The honest measure includes those, and for some tasks it comes out negative.",
     example:
-      "Three tasks were logged. Drafting twenty error-message variants: useful — three were usable after editing, the rest were generic, and it took ten minutes rather than forty. Explaining a technical term an engineer used: useful, and the explanation was verified against documentation before being repeated, where one detail turned out to be wrong. Summarising five interview notes: refused under the data rule, and done by hand, which took two hours and produced the contradiction that became the study's main finding — a contradiction the earlier trial summary had smoothed away.",
+      "Three tasks were logged. Drafting twenty error-message variants: useful — three were usable after editing, the rest were generic, and it took ten minutes rather than forty. Explaining a technical term an engineer used: useful, and the explanation was verified against documentation before being repeated, where one detail turned out to be wrong. Summarising five interview notes: refused under the data rule and done by hand, which took two hours and produced the contradiction that became the study's main finding.",
     freeToolPath:
-      "Any assistance you already have access to, free tiers included; no paid model is required. Where you have none, the exercise still works: write the three tasks, predict what assistance would produce, and record what you did instead.",
+      "Any assistance you already have access to, free tiers included; no paid model, trial or new account is required. Without one, or if you prefer not to use one, use the three supplied hand-written outputs in this lesson's source notes: predict, check, time the checking, and record what you would have done instead.",
     outputs: [
-      "Three tasks attempted with assistance, logged",
+      "Three tasks logged, using a tool you already have or the supplied outputs",
       "What each saved and what each got wrong",
       "A verification record for any fact or claim used",
       "A pattern of errors noted across the three",
@@ -293,7 +293,7 @@ export const module16: Lesson[] = [
         minutes: 30,
         title: "Run them",
         instructions: [
-          "Attempt each with assistance, staying inside your data rules.",
+          "Attempt each with assistance inside your data rules, or open the matching supplied output.",
           "Keep the raw output before you edit it.",
         ],
       },
@@ -349,12 +349,12 @@ export const module16: Lesson[] = [
       {
         criterion: "Three tasks of different kinds are logged with predictions",
         evidence:
-          "Three real tasks with a prediction made before each attempt.",
+          "Three tasks, real or supplied, each with a prediction written before the attempt or check.",
         levels: [
           "Fewer than three, or all of one kind.",
           "Three tasks without predictions.",
           "Three different kinds with predictions.",
-          "As adequate, and one prediction turned out to be wrong, which is recorded.",
+          "As adequate, and each prediction is compared with what happened, including any that was wrong.",
         ],
         remediation:
           "Choose tasks of different shapes — drafting, explaining, analysing — and predict before running each.",
@@ -368,7 +368,7 @@ export const module16: Lesson[] = [
           "Output accepted without checking.",
           "Some checking without a record.",
           "Errors and unverifiable items recorded per task.",
-          "As adequate, and one error would have been repeated confidently without the check.",
+          "As adequate, and each error is traced to a named source, with any claim that would have been repeated confidently marked.",
         ],
         remediation:
           "Go back through the raw output and check every specific claim against a source.",
@@ -378,12 +378,12 @@ export const module16: Lesson[] = [
         criterion:
           "The time saving includes editing and verification",
         evidence:
-          "Time recorded for the whole cycle, not only generation.",
+          "Time recorded for the whole cycle, not only generation; on the supplied route, checking and correcting time against a by-hand estimate.",
         levels: [
           "Only generation time counted.",
           "Editing counted, verification omitted.",
           "The whole cycle counted per task.",
-          "As adequate, and at least one task shows a negative saving.",
+          "As adequate, and the totals are compared with the predictions, saying plainly where a saving was small or negative.",
         ],
         remediation:
           "Re-count including the verification you did afterwards, and be honest where it cost more.",
@@ -397,7 +397,7 @@ export const module16: Lesson[] = [
           "No pattern sought.",
           "A pattern asserted without evidence from the logs.",
           "A pattern drawn from the three logs, with a rule change.",
-          "As adequate, and the pattern names a category you will stop using assistance for.",
+          "As adequate, and the pattern changes a rule: a category you will stop using assistance for, or a check you will add.",
         ],
         remediation:
           "Read the three logs together and write what the failures had in common.",
@@ -454,20 +454,20 @@ export const module16: Lesson[] = [
     teach: [
       "State what the feature does and what it is for, in the interface.",
       "Set expectations before the first output, not after the first error.",
-      "A confidence percentage is usually meaningless to a reader.",
+      "A confidence percentage rarely tells a reader what to do.",
       "Show the basis: what it used, so the person can judge it.",
       "Design the ordinary case as though it will sometimes be wrong.",
     ],
     explanation: [
       "The guidebook's framing is that people build a mental model of what a system can do from their first encounters, and that setting expectations early is cheaper than correcting them later. In practice this means saying what the feature is doing — suggesting, sorting, drafting — in words, before the person has formed a theory from a lucky first result.",
-      "Confidence numbers rarely help. Eighty-seven per cent means little without a reference class, and people read any number above about seventy as effectively certain. What helps is showing the basis: this suggestion is from classes you booked before, this draft is from the notes you wrote, this ranking is by distance. A person can evaluate a basis; they cannot evaluate a percentage.",
+      "Confidence numbers rarely help. Eighty-seven per cent means little without a reference class, and a high number is easily read as a promise rather than as doubt. What helps is showing the basis: this suggestion is from classes you booked before, this draft is from the notes you wrote, this ranking is by distance. A person can evaluate a basis; they cannot evaluate a percentage.",
       "Design the ordinary case for occasional wrongness rather than treating errors as a separate screen. That means output that is easy to scan and reject, changes that are easy to reverse, and no irreversible action taken from a suggestion without a person's confirmation.",
       "The trust question is symmetrical: over-trust produces people accepting bad output, and under-trust produces a feature nobody uses. Both are design failures, and the fix for both is the same — say what it does, show what it used, and make disagreement cheap.",
     ],
     misconception:
       "“Showing a confidence score makes it honest.” It makes it look quantitative. Most readers cannot convert a percentage into a decision, and a high number reads as certainty, which is the opposite of what the number was for.",
     example:
-      "The feature: suggesting classes a person might book. The normal state says “Suggested from classes you booked before and their times”, which is the basis rather than a score. Suggestions are presented as a list to scan rather than a single answer, each can be dismissed with one tap, and dismissal is remembered. No booking is ever made from a suggestion without the review screen. A confidence percentage was designed and rejected, with the reason recorded: in a small test, three of three people read anything above 70 per cent as “this is right”.",
+      "The feature: suggesting classes a person might book. The normal state says “Suggested from classes you booked before and their times”, which is the basis rather than a score. Suggestions are presented as a list to scan rather than a single answer, each can be dismissed with one tap, and dismissal is remembered. No booking is ever made from a suggestion without the review screen. A confidence percentage was designed and rejected, with the reason recorded: in a made-up check with three readers, all three read the high percentage as “this is right”.",
     freeToolPath:
       "Paper or your existing prototype with scripted outputs. No model is required to design the state; write the outputs by hand, including the wrong ones.",
     outputs: [
@@ -522,7 +522,7 @@ export const module16: Lesson[] = [
       {
         question: "Why show the basis rather than a confidence score?",
         answer:
-          "Because a person can evaluate a basis — these are classes you booked before — and cannot evaluate a percentage, which they will read as certainty above about seventy.",
+          "Because a person can evaluate a basis — these are classes you booked before — and cannot evaluate a percentage, which is easily read as a promise.",
       },
       {
         question: "What does cheap disagreement protect?",
@@ -592,11 +592,11 @@ export const module16: Lesson[] = [
         levels: [
           "Not considered.",
           "Rejected without designing it.",
-          "Designed, tested against comprehension and rejected with reasons.",
-          "As adequate, and the rejection cites how people read the number.",
+          "Designed and rejected with reasons checked against how it is read: what two readers said, or a solo walk-through labelled as reasoning.",
+          "As adequate, and the rejection says what a reader would do at two values, and what stays unconfirmed if no reader was asked.",
         ],
         remediation:
-          "Draw the version with a score, show it to two people and ask what it means to them.",
+          "Draw the version with a score and ask two people what they would do at 70 and at 90; alone, write what the display asks a reader to decide and label it as reasoning.",
         recheck: "The rejection note.",
       },
     ],
@@ -1229,7 +1229,7 @@ export const module16: Lesson[] = [
     guided: true,
     title: "Saying what the system did",
     objective:
-      "Write the explanation your AI feature gives, at the level a person needs to act, and test whether two people can predict its next output from it.",
+      "Write the explanation your AI feature gives, at the level a person needs to act, and test whether a reader can predict its next output from it: two people, or a labelled self-check after a day’s gap.",
     bringForward: "Your feature, its basis display and failure designs.",
     prerequisite: "Your AI feature design.",
     why: "An explanation is useful when it lets someone predict or correct the system. Anything else is reassurance.",
@@ -1251,11 +1251,11 @@ export const module16: Lesson[] = [
     example:
       "Three versions were written. Technical: a description of the ranking signals — rejected, since nobody could act on it. Vague: “suggested for you” — rejected, since it supports no prediction. Chosen: “Suggested from the classes you booked before and the times you usually choose. Dismissing a suggestion stops similar ones appearing.” Two people read it and both correctly predicted that a Saturday-morning booker would see Saturday-morning suggestions, and both knew how to change it — which is exactly the pair of outcomes the explanation exists for.",
     freeToolPath:
-      "Written wording and two short conversations. No implementation is needed to test whether an explanation supports prediction.",
+      "Written wording, and two short conversations or a labelled self-check. No implementation is needed to test whether an explanation supports prediction.",
     outputs: [
       "The explanation wording, at the level of the person's decision",
       "Two rejected versions with reasons",
-      "A prediction test with two people",
+      "A prediction test: two readers, or a labelled self-check",
       "A note of any simplification and why it is honest",
     ],
     steps: [
@@ -1279,7 +1279,7 @@ export const module16: Lesson[] = [
         minutes: 25,
         title: "Test for prediction",
         instructions: [
-          "Show the chosen explanation to two people.",
+          "Show the chosen explanation to two people, or leave it a day and test yourself, labelled as a self-check.",
           "Ask each what the system will suggest next and how to change it.",
         ],
       },
@@ -1320,7 +1320,7 @@ export const module16: Lesson[] = [
     rubric: [
       "The explanation is at the level of the person's decision",
       "Two alternative versions were written and rejected",
-      "A prediction test was run with two people",
+      "A prediction test was run and recorded",
       "Omissions are listed and checked for misleading effect",
     ],
     criteria: [
@@ -1351,17 +1351,17 @@ export const module16: Lesson[] = [
         recheck: "The three versions.",
       },
       {
-        criterion: "A prediction test was run with two people",
+        criterion: "A prediction test was run and recorded",
         evidence:
-          "Two people's predictions recorded, with whether they were correct.",
+          "Predictions recorded with whether they were right: from two readers, or from a self-check after a gap, labelled as such.",
         levels: [
           "Not tested.",
-          "Tested with one person or without recording predictions.",
-          "Two predictions recorded and assessed.",
-          "As adequate, and a wrong prediction led to a rewrite.",
+          "Tested without recording what was predicted.",
+          "Predictions recorded and assessed, from two readers or a labelled self-check.",
+          "As adequate, and a wrong prediction led to a rewrite; a self-check also names what only a fresh reader could show.",
         ],
         remediation:
-          "Show the explanation to two people and ask what the system will do next.",
+          "Show the explanation to two people and ask what the system will do next; alone, leave it a day and predict from the wording only, labelled as a self-check.",
         recheck: "The prediction results.",
       },
       {
@@ -1638,11 +1638,11 @@ export const module16: Lesson[] = [
     example:
       "Good was defined as: at least one suggestion in the top three that the person would consider and had not already seen, and no more than one clearly irrelevant suggestion in the top five. The error preference was stated: fewer, better suggestions, because an irrelevant suggestion costs trust and a missing one is invisible. The evaluation: five people, ten suggestions each, marking would-consider, already-known and irrelevant. Results reported as counts. What could not be evaluated: any comparison with a baseline, any effect on bookings, and anything about people who never open the feature.",
     freeToolPath:
-      "Scripted or hand-written suggestion sets and five short conversations. No model is required to evaluate whether a set of suggestions is useful.",
+      "Scripted or hand-written suggestion sets and two or three short conversations, or a labelled self-pilot when nobody is available. No model is required to evaluate whether a set of suggestions is useful.",
     outputs: [
       "A definition of good in a person's terms",
       "A stated preference between false and missed suggestions",
-      "An evaluation method using people, with counts",
+      "An evaluation method using people, with counts, or a labelled self-pilot and dated gap",
       "A list of what cannot be evaluated at your scale",
     ],
     steps: [
@@ -1674,7 +1674,7 @@ export const module16: Lesson[] = [
         minutes: 25,
         title: "Run a small version",
         instructions: [
-          "Run it with two or three people using scripted outputs.",
+          "Run it with two or three people using scripted outputs, or self-pilot the sheet and date who could not be reached.",
           "Report counts, not rates.",
         ],
       },
@@ -1699,15 +1699,15 @@ export const module16: Lesson[] = [
           "Because they cost different things and the choice shapes the design. A wrong suggestion costs trust; a missing one is invisible, which is why teams under-weight it.",
       },
       {
-        question: "What can a five-person evaluation establish?",
+        question: "What can a small evaluation with a few people establish?",
         answer:
-          "Whether suggestions are obvious, irrelevant or useful to those five people, as counts. Nothing about rates, baselines or people who never open it.",
+          "Whether suggestions are obvious, irrelevant or useful to those people, as counts. Nothing about rates, baselines or people who never open it; a self-pilot establishes only whether the session works.",
       },
     ],
     rubric: [
       "Good is defined as an observable outcome for a person",
       "The two error costs are compared and a preference stated",
-      "The evaluation uses people and reports counts",
+      "The evaluation uses people's judgements and reports counts",
       "Unevaluable questions are listed",
     ],
     criteria: [
@@ -1741,17 +1741,17 @@ export const module16: Lesson[] = [
         recheck: "The error comparison.",
       },
       {
-        criterion: "The evaluation uses people and reports counts",
+        criterion: "The evaluation uses people's judgements and reports counts",
         evidence:
-          "A session design plus results as counts of people and items.",
+          "A session design plus counts of people and items, or a labelled self-pilot with a dated gap.",
         levels: [
-          "No evaluation with people.",
-          "Sessions run but reported as rates.",
-          "Run and reported as counts.",
-          "As adequate, and the categories people marked are defined in advance.",
+          "No evaluation designed.",
+          "Run but reported as rates, or a self-pilot reported as if it were results.",
+          "Run with two or three people and reported as counts, or self-piloted and labelled, with a dated note of who could not be reached.",
+          "As adequate, and the categories are defined in advance; a self-pilot also says what it showed about the sheet, not the feature.",
         ],
         remediation:
-          "Run the judgement session with two or three people and report the counts.",
+          "Run the judgement session with two or three people and report the counts; if nobody is available, self-pilot the sheet, label it, and date who you tried.",
         recheck: "The evaluation results.",
       },
       {
@@ -1811,7 +1811,7 @@ export const module16: Lesson[] = [
     guided: true,
     title: "Prototyping with scripted responses",
     objective:
-      "Build a prototype of your AI feature using hand-written responses, including deliberate failures, and test it with three people.",
+      "Build a prototype of your AI feature using hand-written responses, including deliberate failures, and test it with up to three people, or prepare it fully and self-pilot it, labelled, when nobody can take part yet.",
     bringForward: "Your feature, controls, failures and explanation.",
     prerequisite: "Your AI feature design and its wording.",
     why: "Scripting the responses lets you test the experience of being wrong, which a live model will not do on demand.",
@@ -1833,10 +1833,10 @@ export const module16: Lesson[] = [
     example:
       "The prototype had eight scripted suggestion sets. Three were good, three contained one plausible-but-wrong suggestion, and two were mostly irrelevant. Participants were told the responses were prepared. Two of three people accepted a wrong suggestion without checking the details, which was the finding: the basis line was being read as reassurance rather than as something to check. The third checked and corrected it, and said the basis line was what prompted her. The design changed to make the checkable detail visible in the suggestion rather than one step away.",
     freeToolPath:
-      "Paper cards or a local HTML file with the scripted outputs, plus three conversations. Nothing here needs a model, an API or an account.",
+      "Paper cards or a local HTML file with the scripted outputs, plus up to three conversations, or a labelled self-pilot when nobody is available. Nothing here needs a model, an API or an account.",
     outputs: [
       "A scripted prototype with good, wrong and irrelevant outputs",
-      "Sessions with three people, told the responses are scripted",
+      "Sessions with up to three people told the responses are scripted, or a labelled self-pilot and dated gap",
       "A record of whether wrong outputs were noticed",
       "One design change from what you observed",
     ],
@@ -1859,17 +1859,17 @@ export const module16: Lesson[] = [
       },
       {
         minutes: 40,
-        title: "Run three sessions",
+        title: "Run the sessions, or a self-pilot",
         instructions: [
           "Give the task and watch without explaining.",
-          "Record whether each wrong output was noticed, checked or accepted.",
+          "Record whether each wrong output was noticed, checked or accepted; after a self-pilot, record what broke and who could not be reached.",
         ],
       },
       {
         minutes: 20,
         title: "Analyse the acceptance",
         instructions: [
-          "Count how many wrong outputs were accepted unchecked.",
+          "If sessions ran, count how many wrong outputs were accepted unchecked.",
           "Note what prompted anyone who did check.",
         ],
       },
@@ -1901,7 +1901,7 @@ export const module16: Lesson[] = [
     ],
     rubric: [
       "Outputs are scripted including deliberate failures",
-      "Participants were told the responses are prepared",
+      "Participants are told the responses are prepared",
       "Noticing versus accepting is recorded per wrong output",
       "One design change follows from the observation",
     ],
@@ -1921,13 +1921,13 @@ export const module16: Lesson[] = [
         recheck: "The scripts.",
       },
       {
-        criterion: "Participants were told the responses are prepared",
+        criterion: "Participants are told the responses are prepared",
         evidence:
           "Consent wording naming the scripted nature of the responses.",
         levels: [
           "Not told.",
           "Told after the session.",
-          "Told before, in the consent introduction.",
+          "Told before, in the consent introduction, or on the self-pilot route that sentence written into the prepared introduction.",
           "As adequate, and the effect of knowing is considered in the analysis.",
         ],
         remediation:
@@ -1938,12 +1938,12 @@ export const module16: Lesson[] = [
         criterion:
           "Noticing versus accepting is recorded per wrong output",
         evidence:
-          "A record per wrong output of whether it was noticed, checked or accepted.",
+          "A record per wrong output of whether it was noticed, checked or accepted, or the labelled self-pilot equivalent.",
         levels: [
           "Only preferences recorded.",
           "Noticing recorded informally.",
-          "Recorded per output with what prompted checking.",
-          "As adequate, and counts are given as people rather than instances.",
+          "Recorded per output with what prompted checking, or, after a self-pilot, the sheet tried on the supplied made-up observations and labelled as practice.",
+          "As adequate, and counts are given as people rather than instances; a self-pilot states that the real observation is still owed.",
         ],
         remediation:
           "Go through your notes and mark each wrong output as noticed, checked or accepted.",
@@ -1956,7 +1956,7 @@ export const module16: Lesson[] = [
         levels: [
           "No change.",
           "A change unrelated to the observation.",
-          "A change traced to the acceptance behaviour.",
+          "A change traced to the acceptance behaviour, or to what the self-pilot exposed, labelled as such.",
           "As adequate, and the change makes checking cheaper rather than adding a warning.",
         ],
         remediation:
@@ -2121,7 +2121,7 @@ export const module16: Lesson[] = [
           "No owners.",
           "Owners named where convenient.",
           "Owners named and gaps marked as unowned.",
-          "As adequate, and an unowned question is escalated rather than assumed.",
+          "As adequate, and each unowned question names who could decide it and how it would be raised.",
         ],
         remediation:
           "For each function ask who would actually act; if nobody, write unowned.",
@@ -2273,7 +2273,7 @@ export const module16: Lesson[] = [
       {
         question: "When is a deterministic solution better?",
         answer:
-          "Whenever the rules are known. A model adds cost, unpredictability and an explanation burden in exchange for nothing you needed.",
+          "Where the rules are known and can be written down. A model then adds cost, unpredictability and an explanation burden for little gain.",
       },
       {
         question: "What makes a case unshippable regardless of accuracy?",
