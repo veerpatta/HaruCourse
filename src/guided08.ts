@@ -4,12 +4,43 @@
 // merge point (guidedLessons in src/apprenticeship.ts) are unchanged.
 import { type Guided, paperRoute, textRoute, numbered } from './guided';
 
+// Shared practice case (improvement plan, 4 October 2026). One set of screens,
+// labels and research notes, all made up and labelled so, lets a learner
+// without their own Module 5 to 7 evidence test a layout against stated facts
+// instead of inferring them from an answer key. The notes repeat the course's
+// own fictional examples from Modules 5 and 7, with the same counts.
+const starterScreen = 'Practice case, made up for this course: a small pottery studio sells places on weekend classes through a phone screen. The editable starter /starters/m08/booking-screen-starter.svg draws that screen at 390 by 844 points, with every part in a named group.';
+const starterLabels = 'Labels in the starter (made up): “Wheel throwing for complete beginners”; “Saturday 14 November, 10:00 to 12:30”; “£45 per person”; “6 of 8 places left”; “Studio 2, ground floor, step-free entrance”; a “What to bring” list; and two actions drawn at equal weight on purpose, “Reserve a place” and “Share with a friend”.';
+const starterSteps = 'Using a starter file: download it, make a copy, keep the original untouched, open the copy in Inkscape (free, no account needed) or Penpot (free, needs an account), and save your work in HaruCourse/Practice/ followed by this lesson’s id. Printing it and drawing on paper works just as well. The course has not tested these tools on your computer.';
+const researchConsult = 'Made-up research note (this course’s Module 5 example): 3 of 4 interviewees and the one observed participant confirmed the plan with another person before paying, and it was the most common open-text answer among 22 survey responses. Against it: the fourth interviewee books only for herself and said checking with someone would annoy her.';
+const researchObserved = 'Made-up observation note: the observed participant checked the price against a screenshot a friend had sent, and after booking she sent a screenshot of the confirmation to that friend.';
+const researchReviews = 'Made-up desk research note: 7 of 11 public reviews of local class providers mentioned not knowing what to bring.';
+const paperTest = 'Made-up paper test of an earlier version, 5 people: one pressed “Add to shortlist” believing she had booked, when it and “Reserve a place” were both filled and equal; two looked for how many places were left before reading anything else.';
+const browseNote = 'Made-up browse note (this course’s Module 7 example): people choosing between classes compared day and time, price, place and remaining places. Nobody in the notes compared on the teacher or the level.';
+const surveyCounts = 'Made-up practice counts (this course’s Module 5 survey example): of 22 people reached through two WhatsApp groups, 9 were unsure their payment had gone through and 13 were sure. Use them only if you hold no real counts, and write “made-up practice data” on the chart.';
+// The text equivalent of /starters/m08/hierarchy-before-after.svg, callout by
+// callout, so nobody depends on seeing the image.
+const figureNotes = [
+  'Before and after figure, text version (/starters/m08/hierarchy-before-after.svg, made up): two versions of the same booking screen. The ranking changed because of this screen’s task and the made-up notes above, not because of a rule such as “the main button should always be biggest”.',
+  'Callout 1, Share with a friend. Before: a small icon in a top corner, drawn on the assumption that sharing is rarely used. After: an outlined button directly under Reserve, because 3 of 4 interviewees and the one observed participant checked the plan with someone else before paying.',
+  'Callout 2, Reserve a place stays the only filled button, because this screen exists so a person can decide and book. Add to shortlist becomes a quiet underlined text action: in the paper test, one of five people pressed it believing she had booked, when both buttons were filled and equal.',
+  'Callout 3, 6 of 8 places left. Before: small, light grey text. After: body size and semibold, under the price, because two of the five paper-test participants looked for it before reading anything else.',
+  'Callout 4, What to bring. Before: hidden behind “More details” below the buttons. After: a short list above them, because 7 of 11 public reviews mentioned not knowing what to bring.',
+  'Callout 5, a second defensible layout (B): Share placed beside the price, next to the details a friend would need. Neither layout is proven. To choose, you would ask people to check the class with a friend and then book it, and watch which version they find their way through without help.',
+  'What would change the ranking: notes showing that people book alone, like the fourth interviewee, would make a quiet share link defensible. The figure is greyscale, so every difference is carried by weight, size, containment and position rather than colour.',
+];
+
 export const guided08: Record<string, Guided> = {
   'm08-l01-v1': {
-    route: paperRoute('the interface-fidelity screen beside its wireframe'),
+    route: {
+      recommended: 'Draw on paper, or on a copy of the editable starter screen, then record what you decided in the worksheet here so it is saved and reviewable. No m07 screen of your own? Download /starters/m08/booking-screen-starter.svg, keep the download untouched as your wireframe, and raise the fidelity of a copy.',
+      alternative: 'To work on screen: duplicate the starter before editing, open the copy in Inkscape (free, no account needed) or Penpot (free, needs an account) and save it in HaruCourse/Practice/m08-l01-v1/. The course has not tested these tools on your computer, and paper is a complete alternative.',
+    },
+    material: [starterScreen, starterLabels, starterSteps, 'Made-up paper-test note for the starter screen: two of five people looked for how many places were left before reading anything else.'],
     worksheet: [
       { id: 'purpose', title: 'What this version is for', intro: 'Before you draw anything, say what this version exists to settle.', fields: [
-        { id: 'screen-chosen', label: 'The screen you picked, and the problem your paper test raised about it', kind: 'short' },
+        { id: 'screen-chosen', label: 'The screen you picked (your own or the starter file), and the problem a paper test raised about it', kind: 'short', sensitive: true,
+          hint: 'Summarise without names or quotes, such as “2 of 5 people looked for the places left first”; raw notes stay in your private file. Using the starter? Use its made-up paper-test note and say so.' },
         { id: 'version-purpose', label: 'What this version of the screen is for, in one sentence', kind: 'long',
           hint: 'Agreeing the content order is one purpose. Agreeing how it should be built is a different one. Say which.',
           example: 'Example (made up): this version is for settling how the price and the availability line should look when built, not for reopening what order the sections come in.' },
@@ -50,7 +81,7 @@ export const guided08: Record<string, Guided> = {
           { term: 'Fidelity', meaning: 'How settled a drawing is. A wireframe leaves type, colour and spacing open; an interface-fidelity screen closes them.' },
           { term: 'Wireframe', meaning: 'The rough version that shows what is on the screen and in what order, without deciding how any of it looks.' },
         ],
-        start: 'Pick the screen your paper test produced the most notes about, not the one you most want to draw.',
+        start: 'Pick the screen your paper test produced the most notes about, not the one you most want to draw. No screen of your own? Download /starters/m08/booking-screen-starter.svg, make a copy, keep the original untouched as your wireframe, and save the copy in HaruCourse/Practice/m08-l01-v1/.',
         enough: 'The purpose sentence names one decision this version exists to settle.' },
       { expect: 'The screen redrawn with your m03 type scale and spacing, using the real labels at their longest.',
         fields: ['real-content', 'settled-choices'],
@@ -58,7 +89,7 @@ export const guided08: Record<string, Guided> = {
           { term: 'Type scale', meaning: 'The short list of sizes you allow yourself, each with a job, from Module 3.' },
           { term: 'Real content', meaning: 'The actual words the product will show, at the longest they get. Sample text is always a comfortable length.' },
         ],
-        start: 'Write the longest real label first and draw the layout around it.',
+        start: 'Write the longest real label first and draw the layout around it. On a starter copy: in Inkscape, change words with the Text tool and find a whole part by its group name (header, actions, what-to-bring) in the Layers and Objects panel; in Penpot, drag the file onto a board and work through its layers panel. If the file opens in your browser instead, open it from inside the tool. Fonts may look slightly different, because the starter uses your computer’s own font.',
         enough: 'Nothing on the sheet says “Lorem” or “Class name here”.' },
       { terms: [{ term: 'Decision', meaning: 'Something the wireframe genuinely left open that this version has now closed. “Colours” is a category; “the price is grey and one step smaller than the class name” is a decision.' }, { term: 'Quiet', meaning: 'Still on the screen and no longer noticed, because something beside it now carries more weight.' }], expect: 'Two lists: what the added detail decided, and what it made quiet.',
         fields: ['decided-list', 'hidden-list'],
@@ -81,14 +112,14 @@ export const guided08: Record<string, Guided> = {
         fields: ['greyscale-result', 'arms-length-result', 'order-match'],
         supported: {
           material: 'A supplied set of results from the same made-up booking screen. In greyscale the “Book a place” button and the “Add to shortlist” button become the same grey. From arm’s length the first three things seen are the photograph, the class name and the price. The availability line, which the paper test showed people hunting for, is not among them.',
-          question: 'Which of these is the most serious problem to repair first?',
+          question: 'Which result shows that the added detail has made something the task needs quiet?',
           options: [
-            { label: 'The availability line missing from the first three, because the paper test showed that is what people look for.', correct: true, feedback: 'The check is measured against the task, not against the picture. Something people were observed hunting for should not need hunting.' },
-            { label: 'The two buttons matching in greyscale, because the person cannot tell which action is the main one.', feedback: 'A real problem and second in line. It is repaired by weight or containment, while the missing availability line costs the person the decision itself.' },
-            { label: 'The photograph arriving first, because an image should not outrank the content.', feedback: 'An image arriving first is often right on a details screen. Judge it by whether it delays the task, and here it does not.' },
-            { label: 'All three equally, because both checks produced failures.', feedback: 'Both checks did produce findings, and a list with no order sends you to the easiest repair rather than the costliest problem.' },
+            { label: 'The availability line dropping out of the first three, though people were seen looking for it.', correct: true, was: ['The availability line missing from the first three, because the paper test showed that is what people look for.'], feedback: 'Quiet means still on the screen and no longer noticed. People were seen hunting for this line, so the task needs it, and from arm’s length it no longer registers. It goes at the top of your hidden list.' },
+            { label: 'The two buttons turning the same grey, so nobody can tell which action is the main one.', was: ['The two buttons matching in greyscale, because the person cannot tell which action is the main one.'], feedback: 'A real problem of a different kind: both buttons are still seen, they just cannot be told apart. It belongs in your greyscale notes and is repaired with weight or containment.' },
+            { label: 'The photograph arriving first, ahead of the class name and every other piece of content.', was: ['The photograph arriving first, because an image should not outrank the content.'], feedback: 'An image arriving first is often right on a details screen. It has made nothing quiet unless it pushes out something the task needs, and here the class name and price still come through.' },
+            { label: 'All three results equally, because both checks found something that has to be repaired.', was: ['All three equally, because both checks produced failures.'], feedback: 'Both checks did produce findings, and only one of them is about something the task needs going unnoticed. Sorting findings by kind tells you which list each one belongs on.' },
           ],
-          then: 'Rank your own two results the same way: what stops the task, what slows it, what only looks wrong.',
+          then: 'Sort your own two results the same way: what the task needs that went quiet, and what can no longer be told apart.',
         },
         terms: [{ term: 'Greyscale test', meaning: 'Looking at the screen with the colour removed, to see whether anything you meant to rank still ranks.' }],
         start: 'Do the arm’s-length look first, before you know what you are hoping to see.',
@@ -102,9 +133,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'The screen now looks finished, so you say the design is further along than it was. What is wrong with that?',
         options: [
-          { label: 'Finish makes the design more expensive to change, not further along. The structural rework is still ahead of it.', correct: true, feedback: 'Polish sits on top of the structure. If the structure has not been tested, every hour of polish is an hour you will be reluctant to throw away.' },
-          { label: 'Nothing is wrong: a finished screen is what gets built.', feedback: 'A screen gets built from a structure somebody agreed. Polish on an untested structure is the part that gets rebuilt.' },
-          { label: 'It is only wrong if the type scale is still unsettled.', feedback: 'The scale is one of the cheap decisions. The costly one is the arrangement underneath it.' },
+          { label: 'Finish makes the screen costlier to change, and any untested structure still has to be reworked.', correct: true, was: ['Finish makes the design more expensive to change, not further along. The structural rework is still ahead of it.'], feedback: 'Polish sits on top of the structure. If the structure has not been tested, every hour of polish is an hour you will be reluctant to throw away.' },
+          { label: 'Polish is what engineers build from, so a finished-looking screen is genuinely much further along.', was: ['Nothing is wrong: a finished screen is what gets built.'], feedback: 'A screen gets built from a structure somebody agreed. Polish on an untested structure is the part that gets rebuilt.' },
+          { label: 'It only overstates progress while the type scale is unsettled; after that, finish is progress.', was: ['It is only wrong if the type scale is still unsettled.'], feedback: 'The scale is one of the cheap decisions. The costly one is the arrangement underneath it.' },
         ],
         repair: 'Read your sentence in “What this version of the screen is for” in step 1. If it claims progress rather than naming a decision, rewrite it and record the change in step 5.',
         recheck: 'The purpose sentence names one decision this version exists to settle.',
@@ -112,9 +143,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'You drew the screen with sample text because the real labels were not ready. What does that hide?',
         options: [
-          { label: 'The longest real label is where the layout breaks, and sample text is always a comfortable length.', correct: true, feedback: 'Sample text agrees with whatever you drew. Real labels at their longest are the ones that wrap, push and collide.' },
-          { label: 'Nothing much, as long as the sample text is roughly the right length.', feedback: 'Roughly right is the problem. The failures live at the extremes rather than at the average.' },
-          { label: 'It hides the colour decisions rather than the layout ones.', feedback: 'Colour is unaffected by how long a string is. What moves is the arrangement.' },
+          { label: 'Where the layout breaks: the longest real label wraps and collides, and sample text never does.', correct: true, was: ['The longest real label is where the layout breaks, and sample text is always a comfortable length.'], feedback: 'Sample text agrees with whatever you drew. Real labels at their longest are the ones that wrap, push and collide.' },
+          { label: 'Very little, provided the sample text is about as long as the real labels will finally turn out to be.', was: ['Nothing much, as long as the sample text is roughly the right length.'], feedback: 'Roughly right is the problem. The failures live at the extremes rather than at the average.' },
+          { label: 'Mostly the tone of voice, which matters more than layout at this fidelity and can wait.', was: ['It hides the colour decisions rather than the layout ones.'], feedback: 'Tone does need the real words, and it is the layout that breaks first: long real labels wrap, push and collide while sample text sits neatly in whatever space you drew.' },
         ],
         repair: 'Replace every string in your screen with the real one from your m06 labelling table, redraw whatever shifts, update “The real strings you used” in step 2 and record the change in step 5.',
         recheck: 'Every text element carries a real label at its longest, and the layout is drawn around it.',
@@ -122,14 +153,23 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'You cannot name a question that fidelity has made expensive. What does that suggest?',
         options: [
-          { label: 'You have not yet noticed what you would now resist changing, and that resistance is the question.', correct: true, feedback: 'Ask which change would make you sigh. The sigh is the cost of the detail you added, and naming it keeps the question askable.' },
-          { label: 'The screen was already well structured, so nothing became expensive.', feedback: 'Adding type, spacing and colour always closes something. Good structure makes the closure safer rather than absent.' },
-          { label: 'It only matters once other people are reviewing the screen.', feedback: 'Reviewers are why it shows up, and the cost exists whether or not anyone else is looking.' },
+          { label: 'You have not yet found what you would now resist changing; that resistance names the question.', correct: true, was: ['You have not yet noticed what you would now resist changing, and that resistance is the question.'], feedback: 'Ask which change would make you sigh. The sigh is the cost of the detail you added, and naming it keeps the question askable.' },
+          { label: 'The structure was strong enough that adding type, spacing and colour closed nothing important.', was: ['The screen was already well structured, so nothing became expensive.'], feedback: 'Adding type, spacing and colour always closes something. Good structure makes the closure safer rather than absent.' },
+          { label: 'Nothing yet, because an expensive question only appears once other people review the screen.', was: ['It only matters once other people are reviewing the screen.'], feedback: 'Reviewers are why it shows up, and the cost exists whether or not anyone else is looking.' },
         ],
         repair: 'Look at your decided list in step 3 and mark the item you would most resist undoing. Write it into “The question that is now expensive to reopen” in step 5 and record the change in the same step.',
         recheck: 'One named question, with the cheapest route you can think of to an answer.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a rail company’s “change my journey” screen exists twice, as a grey wireframe and as a polished version with final colours, photographs and icons. On Friday the team must decide whether the new departure time or the price difference appears first. When the polished version was shown last week, every comment was about the photographs.',
+      prompt: 'Which version would you put in front of the team for Friday’s decision, and why? Name one thing the polished version could be hiding.',
+      anchors: {
+        weak: 'Shows the polished version because it looks further along or more realistic, and treats the comments on the photographs as useful feedback about the order.',
+        adequate: 'Shows the wireframe, because the decision is about order and finish pulls comments towards colour and imagery; names one thing polish could hide, such as a price line that has gone quiet.',
+        strong: 'As adequate, plus a trade-off or a check: some people find a grey sketch hard to judge, so keep the polished file for the later build decision, and confirm the order with someone who has seen neither version.',
+      },
+    },
     saveRoute: {
       auto: 'Your purpose sentence, both lists, the check results and the trade save as you type, on this device first and then online.',
       external: 'The screen and the wireframe stay on paper or in your own folder. Write where they live; naming a file does not upload it.',
@@ -146,7 +186,8 @@ export const guided08: Record<string, Guided> = {
           example: 'Example (made up): the entry gives four states, says the label must be a verb, and says not to use it for anything that only navigates.' },
       ] },
       { id: 'audit', title: 'Cut and group', intro: 'Everything you have drawn, including the states nobody enjoys drawing.', fields: [
-        { id: 'screens-covered', label: 'How many screens are on the table, and which error, empty and loading states are among them', kind: 'short' },
+        { id: 'screens-covered', label: 'How many screens are on the table, and which error, empty and loading states are among them', kind: 'short',
+          hint: 'Count your own screens. If you added the three made-up screens from the two m08 starter files, count them separately and write “supplied” beside them.' },
         { id: 'repeated-elements', label: 'Every element that appears more than once, grouped by the job it does', kind: 'long',
           hint: 'Group by what it does, not how it looks. Two things that look alike and do different jobs belong in different groups.' },
       ] },
@@ -261,9 +302,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'You would rather build a component library first and design the screens afterwards. What goes wrong?',
         options: [
-          { label: 'A library invented before real screens describes an imaginary product, and the first week of real work breaks it.', correct: true, feedback: 'Components are a summary of what repeated. You cannot summarise screens you have not drawn yet.' },
-          { label: 'Nothing goes wrong, as long as the library follows a published design system.', feedback: 'A published system tells you how a component should behave. It cannot tell you which components your product actually repeats.' },
-          { label: 'It only wastes time if the product later changes direction.', feedback: 'The waste arrives sooner than that. It arrives the first time a real screen needs something the library never imagined.' },
+          { label: 'The library describes screens nobody has drawn, so the first real screen needs parts it lacks.', correct: true, was: ['A library invented before real screens describes an imaginary product, and the first week of real work breaks it.'], feedback: 'Components are a summary of what repeated. You cannot summarise screens you have not drawn yet.' },
+          { label: 'Very little, provided the library closely copies a mature, well-tested published design system.', was: ['Nothing goes wrong, as long as the library follows a published design system.'], feedback: 'A published system tells you how a component should behave. It cannot tell you which components your product actually repeats.' },
+          { label: 'It wastes effort only if the product later changes direction; otherwise it saves time.', was: ['It only wastes time if the product later changes direction.'], feedback: 'The waste arrives sooner than that. It arrives the first time a real screen needs something the library never imagined.' },
         ],
         repair: 'Check your grouped list in step 2 against the screens on the table. Delete any entry you cannot point at on a real screen, and record the change in step 5.',
         recheck: 'Every inventory entry can be pointed at on a screen you actually drew.',
@@ -271,9 +312,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'One of your comparison rows says two cards are “slightly different”. Why is that not yet a finding?',
         options: [
-          { label: 'Nobody can act on it. A measured difference, such as 4px of padding or one weight step, can be called accidental or meaningful.', correct: true, feedback: 'The decision ahead of you is whether the difference carried meaning. You cannot judge a difference you have not named.' },
-          { label: 'It is a finding and only needs to be written more formally.', feedback: 'Formality is not the gap. The gap is that no number and no named property has been recorded.' },
-          { label: 'It does not matter, because the merge removes the difference anyway.', feedback: 'The merge removes it, and the loss list still has to say what was removed. That sentence needs the measurement.' },
+          { label: 'Nobody can act on it: only a measured difference can be judged accidental or meaningful.', correct: true, was: ['Nobody can act on it. A measured difference, such as 4px of padding or one weight step, can be called accidental or meaningful.'], feedback: 'The decision ahead of you is whether the difference carried meaning. You cannot judge a difference you have not named, such as 4px of padding or one weight step.' },
+          { label: 'It is already a finding; it only needs writing up more formally and precisely for the inventory.', was: ['It is a finding and only needs to be written more formally.'], feedback: 'Formality is not the gap. The gap is that no number and no named property has been recorded.' },
+          { label: 'It does not matter, because merging the two cards removes the difference either way.', was: ['It does not matter, because the merge removes the difference anyway.'], feedback: 'The merge removes it, and the loss list still has to say what was removed. That sentence needs the measurement.' },
         ],
         repair: 'Go back to your near-duplicate rows in step 3 and put a number or a named property on every difference, then record the change in step 5.',
         recheck: 'No comparison row uses the words slightly, a bit or roughly.',
@@ -281,14 +322,23 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Two of your components are called “grey box” and “big blue button”. What is the problem?',
         options: [
-          { label: 'The names describe how they look, so the first time the colour or size changes the name is lying.', correct: true, feedback: 'A name should say what the thing is for. “Status panel” and “primary action” survive a repaint; “grey” and “blue” do not.' },
-          { label: 'They are acceptable working names and can be renamed when someone builds them.', feedback: 'They are rarely renamed. Working names are what people type every day, and they outlive the intention to fix them.' },
-          { label: 'The problem is that the two names are inconsistent with each other.', feedback: 'Making them consistently about appearance would not help. The trouble is the appearance, not the inconsistency.' },
+          { label: 'The names describe looks, so the first repaint or resize turns each name into a lie.', correct: true, was: ['The names describe how they look, so the first time the colour or size changes the name is lying.'], feedback: 'A name should say what the thing is for. “Status panel” and “primary action” survive a repaint; “grey” and “blue” do not.' },
+          { label: 'They are fine as working names and can be renamed once someone builds the components.', was: ['They are acceptable working names and can be renamed when someone builds them.'], feedback: 'Working names are what people type every day, and they tend to outlive the intention to fix them.' },
+          { label: 'The two names are inconsistent with each other, which makes the inventory hard to scan.', was: ['The problem is that the two names are inconsistent with each other.'], feedback: 'Making them consistently about appearance would not help. The trouble is the appearance, not the inconsistency.' },
         ],
         repair: 'Search your names in step 5 for colour, size and shape words, rewrite each as the job it does, and record the change in the same step.',
         recheck: 'No component name contains a colour, a size or a shape.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a parcel-locker app shows three card styles. The “Waiting for you” and “Collected” cards are identical apart from their status words and 4px of padding, and were drawn a month apart. The “Returned to sender” card has a striped border and greyer text. The team wants to merge all three into one card to tidy the library.',
+      prompt: 'Which merges would you make, and which distinction would you keep or protect? Explain your reasoning.',
+      anchors: {
+        weak: 'Merges all three into one card because they look alike and a tidy library is the goal, without saying what the striped border was telling people.',
+        adequate: 'Merges the two cards that differ by 4px as an accident, keeps “Returned to sender” as a status variant because its border carries meaning, and names the component by its job, such as parcel status card.',
+        strong: 'As adequate, and says what would carry the returned status if the border went (the words alone), records that merge in a loss list as a candidate problem to test, and measures rather than eyeballs the differences.',
+      },
+    },
     saveRoute: {
       auto: 'The inventory, the comparison rows, the merge table and the loss list save as you type, on this device first and then online.',
       external: 'The cut-outs and their groups stay on your table. Photograph the groups and note the file names here; naming a file does not upload it.',
@@ -298,15 +348,27 @@ export const guided08: Record<string, Guided> = {
   },
   'm08-l03-v1': {
     video: { id: "VID03", then: "Straight after watching, mark the smallest thing on your screen somebody has to hit, and measure it. The video argues for larger targets; the measurement is yours.", written: "No video needed: find the smallest control on your screen and measure it against your own fingertip on the paper. Record the number either way." },
-    route: paperRoute('the three action levels at real size and their greyscale photograph'),
+    route: {
+      recommended: 'Draw your two layouts and the three action levels at real size on paper, or on copies of the m08 starter files, then record the ranking, the evidence and your measurements in the worksheet here so they are saved and reviewable. Photograph the sheets if you can; the photos stay in your own folder.',
+      alternative: 'To work on screen: download /starters/m08/booking-screen-starter.svg and /starters/m08/hierarchy-before-after.svg, duplicate each before editing, open the copies in Inkscape (free, no account needed) or Penpot (free, needs an account) and save them in HaruCourse/Practice/m08-l03-v1/. The course has not tested these tools on your computer, and paper is a complete alternative.',
+    },
+    material: [starterScreen, starterLabels, researchConsult, researchObserved, researchReviews, paperTest, ...figureNotes, starterSteps],
     worksheet: [
       { id: 'audit', title: 'Every action you have drawn', fields: [
+        { id: 'task-evidence', label: 'The task one screen exists for, and the evidence about what people need there (your own notes, or the supplied practice notes, named as such)', kind: 'long', sensitive: true,
+          hint: 'Write the task as an outcome, such as “decide about one class and reserve a place”. Then list the notes you will rank against, with counts and no names. Raw notes stay in your private file.',
+          example: 'Example (made up): task, decide about one class and reserve a place. Evidence, supplied notes: 3 of 4 interviewees checked with someone before paying; one person pressed Add to shortlist thinking she had booked.' },
         { id: 'actions-listed', label: 'Each action, the screen it is on, and the emphasis it currently has', kind: 'long',
           hint: 'One action per line. Write them all down before judging any of them.',
           example: 'Example (made up): class details, “Book a place”, filled green; class details, “Add to shortlist”, filled green as well.' },
         { id: 'two-primaries', label: 'Screens carrying more than one main action', kind: 'short' },
       ] },
-      { id: 'levels', title: 'Three levels of emphasis', intro: 'Weight, size and containment first. Colour goes on last.', fields: [
+      { id: 'levels', title: 'Two layouts, then three levels of emphasis', intro: 'Rank from the task and the evidence first. Then weight, size and containment. Colour goes on last.', fields: [
+        { id: 'layout-a', label: 'Layout A: each action on that screen ranked primary, secondary or quiet, with the piece of evidence behind each placement', kind: 'long',
+          hint: 'One line per action. If a placement has no evidence behind it, write “judgement” beside it rather than leaving it unexplained.',
+          example: 'Example (made up): Reserve a place, primary, the screen exists to book. Share with a friend, secondary under Reserve, most people checked with someone first. Add to shortlist, quiet, one person mistook it for booking.' },
+        { id: 'layout-b', label: 'Layout B: a different arrangement the same evidence could also defend, and what it gains or loses against A', kind: 'long',
+          hint: 'Change one real thing: a placement, an emphasis or what sits beside what. If you cannot find a second defensible layout, write why the evidence allows only one.' },
         { id: 'primary-spec', label: 'Primary: weight, size and containment', kind: 'short' },
         { id: 'secondary-spec', label: 'Secondary: weight, size and containment', kind: 'short' },
         { id: 'quiet-spec', label: 'Quiet: weight, size and containment', kind: 'short' },
@@ -328,20 +390,23 @@ export const guided08: Record<string, Guided> = {
       { id: 'record', title: 'Fix and record', fields: [
         { id: 'worst-fix', label: 'The worst greyscale failure, and the weight or containment change that repaired it', kind: 'long' },
         { id: 'screens-split', label: 'Any screen you split because it had two main actions, and the two jobs it was doing', kind: 'short' },
+        { id: 'layout-test', label: 'Which layout you would test first, the task you would set, and the result that would make you switch', kind: 'long',
+          example: 'Example (made up): test A first. Task: check this class with a friend, then book it. If people hunt for Share or press it thinking it books, try B.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
     guide: [
-      { video: "VID03", expect: 'Every action across your screens with its current emphasis, and any screen carrying more than one main action.',
-        fields: ['actions-listed', 'two-primaries'],
+      { video: "VID03", expect: 'The task one screen exists for and its evidence, every action with its current emphasis, and any screen with more than one main action.',
+        fields: ['task-evidence', 'actions-listed', 'two-primaries'],
         terms: [
-          { term: 'Primary action', meaning: 'The outcome the screen exists to produce. One per screen; two means the screen has two jobs.' },
+          { term: 'Primary action', meaning: 'The outcome this screen exists to produce. Usually one per screen; two equally loud actions usually mean the screen has two jobs.' },
+          { term: 'Evidence', meaning: 'Something you can point at: a note, a count, an observation. Your own notes, or the supplied practice notes labelled as supplied.' },
           { term: 'Target', meaning: 'The area a finger can actually hit, which is usually larger than the part you drew.' },
         ],
-        start: 'Go screen by screen and write each action on its own line, including the ones you think are obvious.',
-        enough: 'Every screen appears in the list, including the ones with only one action on them.' },
-      { expect: 'Three levels defined by weight, size and containment, each differing from the next in at least two properties.',
-        fields: ['primary-spec', 'secondary-spec', 'quiet-spec', 'two-properties'],
+        start: 'Write the task first, then go screen by screen and write each action on its own line, including the ones you think are obvious. No research notes of your own? Use the supplied practice notes in this lesson: 3 of 4 interviewees and the observed participant checked with someone before paying; one paper-test participant pressed Add to shortlist thinking she had booked; two looked for the places left first; 7 of 11 reviews mentioned not knowing what to bring.',
+        enough: 'The task is one sentence, the evidence is listed with counts, and every screen appears in the action list.' },
+      { expect: 'Two defensible layouts for one screen, ranked from its task and evidence, and three levels defined by weight, size and containment, two properties apart.',
+        fields: ['layout-a', 'layout-b', 'primary-spec', 'secondary-spec', 'quiet-spec', 'two-properties'],
         demo: {
           scenario: 'Made-up example. Defining three levels of emphasis in five minutes, then finding out that colour had been doing all the work.',
           beats: [
@@ -356,14 +421,14 @@ export const guided08: Record<string, Guided> = {
           uncertainty: 'Still unknown: whether the outlined secondary reads as pressable to a person who has never used the product. That is a question for a test, not for the specification.',
         },
         sorter: {
-          intro: 'Six actions from someone else’s screens, all made up for practice. Each line says what the screen is for, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one.',
+          intro: 'Seven actions from someone else’s screens, all made up for practice. Each line says what the screen is for, sometimes with a made-up research note, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one, for that screen and that evidence.',
           options: ['primary', 'secondary', 'quiet'],
           items: [
             { id: 'book', text: 'Class details screen, which exists so a person can decide about one class and take it. The action: “Book a place”.', answer: 'primary',
               feedback: {
-                primary: 'It is the outcome the screen exists to produce, so it holds the fill and the weight. One screen, one job, one primary.',
-                secondary: 'A secondary action is one a person might reasonably take instead. Demote this and the screen is left with no job at all.',
-                quiet: 'Quiet is for actions that must exist and rarely apply. Booking is the reason the person opened the screen.',
+                primary: 'It is the outcome the screen exists to produce, so it holds the fill and the weight. A screen with one job has one primary.',
+                secondary: 'A secondary action is one a person might reasonably take instead of, or on the way to, the main outcome. Demote this and the screen is left with no job at all.',
+                quiet: 'Quiet is for actions that must exist and that this task rarely needs. Booking is the reason the person opened the screen.',
               } },
             { id: 'shortlist', text: 'The same class details screen. The action: “Add to shortlist”, currently drawn as a second filled button of exactly the same weight as booking.', answer: 'secondary',
               feedback: {
@@ -371,11 +436,11 @@ export const guided08: Record<string, Guided> = {
                 secondary: 'It is a genuine alternative and it is not what the screen is for. Outline it, keep the height, and let booking hold the fill.',
                 quiet: 'Quiet would hide a choice people really make. Secondary keeps it available without competing with the booking.',
               } },
-            { id: 'share', text: 'The same class details screen. The action: “Share this class”, currently a small text link near the bottom.', answer: 'quiet',
+            { id: 'share', text: 'The same class details screen. The made-up research notes for it say 3 of 4 interviewees and the observed participant checked the plan with another person before paying. The action: “Share this class”, currently a small text link near the bottom.', answer: 'secondary',
               feedback: {
-                primary: 'Nobody opens a class page in order to share it, and raising it takes attention from the action that pays for the screen.',
-                secondary: 'Secondary is the alternative to the main outcome. Sharing is not an alternative to booking; it is an extra.',
-                quiet: 'It must exist, it is used rarely, and it costs nothing to leave unshouted. Quiet is exactly right.',
+                primary: 'Sharing helps most people here reach a booking, and it is still not the outcome this screen exists for. Filled, it competes with booking and leaves the person who books alone looking for the right button.',
+                secondary: 'For this screen and these notes, sharing is a step on the way to booking for most people, so it earns a visible, outlined place near booking without competing with it.',
+                quiet: 'Quiet fits an action this task rarely needs. These notes say most people check with someone before paying, so a small link at the bottom hides a step they take.',
               } },
             { id: 'pay', text: 'Payment screen at the end of a booking, which exists to take the payment. The action: “Pay 45 pounds”.', answer: 'primary',
               feedback: {
@@ -393,18 +458,24 @@ export const guided08: Record<string, Guided> = {
               feedback: {
                 primary: 'Consequence is not emphasis. Making the irreversible action the loudest thing on the screen is how it gets pressed by mistake.',
                 secondary: 'Secondary sits beside the main action and invites comparison. A destructive action wants distance rather than a neighbouring position.',
-                quiet: 'It is rare and it is serious, and its safety comes from separation and a confirmation rather than from weight.',
+                quiet: 'It is serious and it is not what this screen is mainly for, so its safety comes from separation and a confirmation rather than from weight.',
+              } },
+            { id: 'share-solo', text: 'A drop-in session sold at the studio door. The made-up notes say everyone booked for themselves on the spot and nobody mentioned asking anyone first. The action: “Share this class”.', answer: 'quiet',
+              feedback: {
+                primary: 'Nobody in these notes came to share, and filling it would compete with the booking people make on the spot.',
+                secondary: 'Secondary is for an action people here genuinely take beside or before the main outcome. In these notes nobody did, so raising it spends attention and returns little.',
+                quiet: 'The same action as the earlier sharing line, with different evidence. Here nobody asked anyone first, so keeping it available and quiet fits this task.',
               } },
           ],
-          then: 'Now label every action on your own list from step 1 with one of these three. Any screen that ends up with two primaries goes on your list of screens to split.',
-          pattern: 'Look back at the two hardest, the shortlist button and the cancellation. Emphasis is not how much the action matters. It is whether the action is the outcome this screen exists to produce. Shortlisting matters and is not the outcome. Cancelling matters enormously and still is not the outcome of that screen.',
+          then: 'Now label every action on your own list from step 1 with one of these three, and write the note behind each label. Any screen that ends up with two primaries goes on your list of screens to split.',
+          pattern: 'Look back at the two sharing lines. The action was identical and the right emphasis was not, because the task and the notes differed. Emphasis is not how much an action matters in general; it is what this screen is for and what the evidence says people need there. Shortlisting matters and is not the outcome; cancelling matters enormously and still is not the outcome of that screen.',
         },
         terms: [
           { term: 'Containment', meaning: 'Whether the action sits inside a shape: filled, outlined, or nothing at all. A cheap signal that survives greyscale.' },
           { term: 'Greyscale test', meaning: 'Looking at the screen with the colour removed. Anything you can no longer rank was ranked by colour alone.' },
         ],
-        start: 'Write the quiet level first. It is the easiest to define, and the other two are then differences from it.',
-        enough: 'Each level differs from its neighbour in two properties before colour is added.' },
+        start: 'Rank first: for each action on your chosen screen, write the note that decides its place, then sketch one other layout the same notes could defend (the before and after figure shows one pair). Then write the quiet level, the easiest to define; the other two are differences from it.',
+        enough: 'Both layouts give a reason for every placement, and each level differs from its neighbour in two properties before colour is added.' },
       { terms: [{ term: 'Verb-first label', meaning: 'A label that opens with the doing word of the outcome, so it finishes the sentence “I want to …” without the question above it.' }, { term: 'Destructive action', meaning: 'One that takes something away and cannot be easily undone: releasing a place, deleting a booking.' }, { term: 'Safe alternative', meaning: 'The way out you put beside a destructive action, worded as its own outcome rather than as Cancel.' }], demo: { scenario: 'Made-up example. Rewriting the two buttons on a leave-the-waiting-list dialogue, and passing the verb rule while still being unanswerable.', beats: [{ label: 'What I had', text: 'The dialogue asked “Leave the waiting list?” and offered Yes and No. Neither word says what happens after you press it.' }, { label: 'My first rewrite', text: '“Leave” and “Stay”. Both lead with a verb, both fit the button on one line, and I moved on to the next screen.' }, { label: 'What broke it', text: 'I covered the question with my hand and read the two buttons on their own, which is what somebody does when she looks back at a screen. “Leave” could mean the page, the class, or the whole app.' }, { label: 'What I wrote instead', text: '“Leave the waiting list” and “Stay on the list”, with the consequence moved into the body of the dialogue: your place goes to the next person waiting.' }, { label: 'What the pairing forced', text: 'The safe way out had been a small cross in the corner. A destructive label needs a named alternative beside it at the same size, so the cross became the “Stay on the list” button.' }], wrongTurn: 'The tempting error is judging a label against the rule rather than against the button. “Leave” starts with a verb, fits on one line and looks tidy, and it only means anything while the question above it is still in view.', tradeoff: 'Outcome labels are long. At phone width the pair no longer sits side by side, so the buttons stack, the dialogue grows taller, and the destructive one lands under the thumb unless you order them on purpose.', uncertainty: 'Still unknown: whether “Stay on the list” reads as an action or as doing nothing. Somebody who means to stay may reach for the corner cross out of habit anyway.' }, expect: 'Every action label rewritten to lead with the verb of the outcome, and every destructive label paired with a safe alternative.',
         fields: ['label-rewrites', 'destructive-pairs'],
         start: 'Start with any label that is OK, Submit, Yes or No, since those carry no outcome anywhere.',
@@ -413,8 +484,8 @@ export const guided08: Record<string, Guided> = {
         fields: ['measurements', 'spacing-changes', 'greyscale-result'],
         start: 'Draw or print at real size and try each action with your thumb before reaching for the ruler.',
         enough: 'Every number came from measuring, and no line says “looks big enough”.' },
-      { terms: [{ term: 'Splitting a screen', meaning: 'Dividing one screen into two when it turns out to be doing two jobs, so each is left with a single main action.' }, { term: 'Repair', meaning: 'The one change a Check question sends you back to make, named precisely enough that you can go and do it.' }], expect: 'The repaired greyscale failure, any screen you split, and the repair the Check questions asked for.',
-        fields: ['worst-fix', 'screens-split', 'improvement-made'],
+      { terms: [{ term: 'Splitting a screen', meaning: 'Dividing one screen into two when it turns out to be doing two jobs, so each is left with a single main action.' }, { term: 'Repair', meaning: 'The one change a Check question sends you back to make, named precisely enough that you can go and do it.' }], expect: 'The repaired greyscale failure, any screen you split, the layout you would test first and how, and the repair the Check questions asked for.',
+        fields: ['worst-fix', 'screens-split', 'layout-test', 'improvement-made'],
         start: 'Change one property at a time and re-photograph, so you know which change did the work.',
         enough: 'You can name the property that fixed it, not just that it is fixed.' },
     ],
@@ -422,36 +493,45 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'You make the important button a stronger colour and leave everything else as it was. Why is that weak?',
         options: [
-          { label: 'Colour fails in greyscale, in sunlight, for some readers, and when someone later changes the palette.', correct: true, feedback: 'Weight, size and containment survive all four. Colour is worth adding on top of them and is a poor place to keep the ranking.' },
-          { label: 'It works as long as the colour meets the contrast threshold.', feedback: 'Contrast makes the text readable against its background. It does not make one button outrank another.' },
-          { label: 'It is weak only for people who cannot distinguish certain colours.', feedback: 'That group matters and is not the whole problem. The same button is unrankable in bright sunlight and after a repaint.' },
+          { label: 'Colour fails in greyscale, in sunlight, for some readers and after a palette change.', correct: true, was: ['Colour fails in greyscale, in sunlight, for some readers, and when someone later changes the palette.'], feedback: 'Weight, size and containment survive all four. Colour is worth adding on top of them and is a poor place to keep the ranking.' },
+          { label: 'It is strong enough, as long as the stronger colour still meets the contrast threshold.', was: ['It works as long as the colour meets the contrast threshold.'], feedback: 'Contrast makes the text readable against its background. It does not make one button outrank another.' },
+          { label: 'It is weak only for people who cannot tell certain colours apart.', was: ['It is weak only for people who cannot distinguish certain colours.'], feedback: 'That group matters and is not the whole problem. The same button is unrankable in bright sunlight, in greyscale and after a repaint.' },
         ],
         repair: 'Look at your three levels in step 2. If any two differ by colour alone, change weight or containment until they differ in two properties, and record the change in step 5.',
         recheck: 'The greyscale photograph in step 4 lets you rank the three levels with the colour gone.',
       },
       {
-        question: 'One screen has two filled buttons and you do not want to demote either. What does that tell you?',
+        question: 'On a class screen whose made-up notes say 3 of 4 interviewees checked with someone before paying, “Reserve a place” and “Share with a friend” are both filled. How do you rank them?',
         options: [
-          { label: 'The screen is doing two jobs, so either one action wins or the screen is split.', correct: true, feedback: 'The reluctance is the finding. Write the two jobs down and the choice usually makes itself.' },
-          { label: 'It is acceptable when the two actions are genuinely equal.', feedback: 'Equal actions leave the person to decide with no help at all. Someone will press one while believing she pressed the other.' },
-          { label: 'A larger gap between the two buttons solves it.', feedback: 'Space stops mis-taps, which is worth doing. It still tells nobody which action the screen is for.' },
+          { label: 'Reserve stays the one filled action; sharing becomes a visible secondary, a step towards booking.', correct: true, was: ['The screen is doing two jobs, so either one action wins or the screen is split.'], feedback: 'The screen still exists to book, so booking keeps the fill. These notes make sharing part of reaching that booking for most people, so it earns a visible, outlined place rather than a corner icon. A second layout could defend placing it beside the price.' },
+          { label: 'Sharing becomes quiet, because on any booking screen sharing is an extra that should not compete.', was: ['It is acceptable when the two actions are genuinely equal.'], feedback: 'That is the blanket claim these notes contradict: most people here checked with someone before paying. Quiet suits an action this task rarely needs, and on a screen where people book alone it could be right.' },
+          { label: 'Both stay filled, because the notes show that both actions matter to most people on this screen.', was: ['A larger gap between the two buttons solves it.'], feedback: 'Both matter, and only one is the outcome this screen exists for. Two equal filled buttons leave the person to work out which one books, and in the lesson’s example someone pressed the wrong one.' },
         ],
-        repair: 'Take each screen you marked in step 1 as carrying more than one main action, write the two jobs it does, then choose one or split the screen, and record it in step 5.',
-        recheck: 'Every screen shows one primary action, or appears on the split list.',
+        repair: 'Look at Layout A and Layout B in step 2. If either ranks by habit or a general rule rather than the task and the evidence, re-rank it, and record the change in step 5.',
+        recheck: 'Both layouts give the evidence behind each placement, and any screen with two equally loud actions is resolved or split.',
       },
       {
         question: 'Your cancellation dialogue offers “OK” and “Cancel”. What is the trouble?',
         options: [
-          { label: 'Neither word says what will happen, so the person has to remember the question to answer it.', correct: true, feedback: 'Labels that name the outcome, such as “Keep my booking” and “Release my place”, can be read on their own.' },
-          { label: 'The only trouble is that “Cancel” is confusing next to cancelling a booking.', feedback: 'That collision is real and it is one instance. “OK” carries no outcome anywhere it appears.' },
-          { label: 'They are standard words, so people already understand them.', feedback: 'People understand how to press them. What they do not know is which one does the thing they wanted.' },
+          { label: 'Neither word says what will happen, so the person must remember the question to answer it.', correct: true, was: ['Neither word says what will happen, so the person has to remember the question to answer it.'], feedback: 'Labels that name the outcome, such as “Keep my booking” and “Release my place”, can be read on their own.' },
+          { label: 'Only “Cancel” is a problem, since it collides with cancelling a booking; “OK” is perfectly clear.', was: ['The only trouble is that “Cancel” is confusing next to cancelling a booking.'], feedback: 'That collision is real and it is one instance. “OK” carries no outcome anywhere it appears.' },
+          { label: 'They are standard dialogue words, so people already know how each one behaves.', was: ['They are standard words, so people already understand them.'], feedback: 'People understand how to press them. What they do not know is which one does the thing they wanted.' },
         ],
         repair: 'Read each label in step 3 aloud as “I want to …”. Rewrite any that does not finish the sentence, pair each destructive label with its safe alternative, and record the change in step 5.',
         recheck: 'No OK, Submit, Yes or No remains, and every destructive label has a named safe alternative beside it.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a bike repair shop’s phone screen for one service offers “Book a repair slot”, “Get a price by message” and “Save for later”, all drawn the same size. The shop’s own notes say 6 of the last 8 callers asked for a price before booking. One regular customer always books straight away.',
+      prompt: 'Rank the three actions for this screen and explain how the task and the notes decide it. Name what you would watch for in a test.',
+      anchors: {
+        weak: 'Ranks by a general rule (booking is always loud, everything else small) or by colour, without using the price question in the notes, or leaves all three equal.',
+        adequate: 'Booking stays the primary outcome; getting a price becomes a visible secondary because most callers ask first; save for later is quiet. The emphasis is carried by weight and containment, not colour.',
+        strong: 'As adequate, plus a second defensible layout (such as the price shown on the screen itself, or the price action beside the details) and a test that would choose between them, remembering the regular who books at once.',
+      },
+    },
     saveRoute: {
-      auto: 'The action list, the three levels, the labels and the measurements save as you type, on this device first and then online.',
+      auto: 'The task and evidence, both layouts, the three levels, the labels and the measurements save as you type, on this device first and then online.',
       external: 'The real-size drawings and the greyscale photograph stay in your own folder. Note the file names here; naming a file does not upload it.',
       creator: 'Your creator reads the greyscale photograph beside the specification. The photograph is the evidence; the specification is the claim.',
       next: 'Open Your work and choose Ready for review. The next lesson takes one form to production quality, and it reuses these three levels for its buttons.',
@@ -521,10 +601,10 @@ export const guided08: Record<string, Guided> = {
           material: 'A supplied booking form, made up for practice. Someone fills in six fields, mistypes the card expiry date, and presses Book. The page reloads with a red banner reading “There was a problem. Please try again.” and all six fields empty.',
           question: 'What is the most serious thing wrong with this screen?',
           options: [
-            { label: 'The six fields were cleared, so one mistake has cost the person five answers that were right.', correct: true, feedback: 'Losing the input is the only failure here that takes back work already done. The rest of this screen is irritating; this is the part that makes people give up and ring instead.' },
-            { label: 'The banner does not say which field was wrong.', feedback: 'A real problem and the second one to fix. It costs the person a hunt through the form, while the cleared fields cost them the form itself.' },
-            { label: 'The message is red, and some people cannot distinguish that.', feedback: 'Carrying meaning in colour alone is a genuine fault, and it matters more once the message actually says something. Here the wording is empty whatever colour it is.' },
-            { label: 'The form validated on submission rather than as the person typed.', feedback: 'Validating on submission is a reasonable choice. Checking a half-typed expiry date on every keystroke tells someone they are wrong while they are still working.' },
+            { label: 'The six fields were cleared, so one mistyped date cost five answers that were right.', correct: true, was: ['The six fields were cleared, so one mistake has cost the person five answers that were right.'], feedback: 'Losing the input is the only failure here that takes back work already done. The rest of this screen is irritating; this is the part that makes people give up and ring instead.' },
+            { label: 'The banner names no field, so the person has to hunt through six boxes for the mistake.', was: ['The banner does not say which field was wrong.'], feedback: 'A real problem and the second one to fix. It costs the person a hunt through the form, while the cleared fields cost them the form itself.' },
+            { label: 'The banner relies on red, which some people cannot tell apart from the other colours.', was: ['The message is red, and some people cannot distinguish that.'], feedback: 'Carrying meaning in colour alone is a genuine fault, and it matters more once the message actually says something. Here the wording is empty whatever colour it is.' },
+            { label: 'Checking happened on submission rather than while the person was typing each field.', was: ['The form validated on submission rather than as the person typed.'], feedback: 'Validating on submission is a reasonable choice. Checking a half-typed expiry date on every keystroke tells someone they are wrong while they are still working.' },
           ],
           then: 'Write your own failure path so every value survives, the summary names the first field with a problem, and the error sits at that field.',
         },
@@ -543,9 +623,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'To keep the form looking clean you put each field name inside the box as grey text. What happens?',
         options: [
-          { label: 'The name disappears the moment someone types, so nobody can check their answers before submitting.', correct: true, feedback: 'The label is needed most at the end, when a person reads back what they entered. Grey text inside the box has gone by then.' },
-          { label: 'Nothing much: people remember what they were asked a moment ago.', feedback: 'People are interrupted mid-form constantly. Anyone who looks away, or comes back to fix one error, is reading a set of unlabelled boxes.' },
-          { label: 'It is fine as long as the grey text has enough contrast.', feedback: 'Contrast helps the empty box and changes nothing about the filled one, because the words are no longer there to read.' },
+          { label: 'The names vanish once someone types, so nobody can check answers before submitting.', correct: true, was: ['The name disappears the moment someone types, so nobody can check their answers before submitting.'], feedback: 'The label is needed most at the end, when a person reads back what they entered. Grey text inside the box has gone by then.' },
+          { label: 'Little changes, because people remember what each box asked for a moment ago.', was: ['Nothing much: people remember what they were asked a moment ago.'], feedback: 'People are interrupted mid-form constantly. Anyone who looks away, or comes back to fix one error, is reading a set of unlabelled boxes.' },
+          { label: 'It works well, provided the grey text inside each box has enough contrast.', was: ['It is fine as long as the grey text has enough contrast.'], feedback: 'Contrast helps the empty box and changes nothing about the filled one, because the words are no longer there to read.' },
         ],
         repair: 'Go back to your field table in step 2 and give every field a label that stays above the box. Move anything useful from the placeholder into the help line, then record the change in step 5.',
         recheck: 'Every row in the field table has a label that is still visible after typing.',
@@ -553,9 +633,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Your form rejects a submission and reloads with every box empty. Your reasoning was that the person can fill it in again. What is wrong?',
         options: [
-          { label: 'One mistake now costs every correct answer, which is worse for the person than not validating at all.', correct: true, feedback: 'Skipping validation at least lets the work through. Validation that clears the form takes the work away and gives nothing back.' },
-          { label: 'It is acceptable if the error message is clear enough.', feedback: 'A clear message explains what went wrong on a screen where everything the person typed has gone. The wording does not return the work.' },
-          { label: 'Only the field with the error needs to be preserved.', feedback: 'The field with the error is the one thing they were going to retype anyway. It is the five correct fields that must survive.' },
+          { label: 'One mistake now costs every correct answer, which is worse than not checking at all.', correct: true, was: ['One mistake now costs every correct answer, which is worse for the person than not validating at all.'], feedback: 'Skipping validation at least lets the work through. Validation that clears the form takes the work away and gives nothing back.' },
+          { label: 'It is acceptable, provided the error message explains clearly what went wrong.', was: ['It is acceptable if the error message is clear enough.'], feedback: 'A clear message explains what went wrong on a screen where everything the person typed has gone. The wording does not return the work.' },
+          { label: 'Only the field with the error needed preserving; the others can be retyped.', was: ['Only the field with the error needs to be preserved.'], feedback: 'The field with the error is the one thing they were going to retype anyway. It is the five correct fields that must survive.' },
         ],
         repair: 'Rewrite the preserved-input box in step 4 so it describes every value still in place after a failure, then record the change in step 5.',
         recheck: 'The failure description lists every field with its value intact.',
@@ -571,6 +651,15 @@ export const guided08: Record<string, Guided> = {
         recheck: 'No keyboard claim remains that you did not test.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a council’s form for booking a bulky-waste collection asks for a phone number. It rejects numbers typed with spaces, says “Invalid format” only after submission, and reloads with every field empty. The help explaining the accepted format appears only inside that error.',
+      prompt: 'Which single change would you make first, and why? Say what you would change next.',
+      anchors: {
+        weak: 'Makes the error message red, bolder or more polite, leaving the cleared form, the rejected spaces and the after-the-fact help in place.',
+        adequate: 'Keeps every value after a failed submission first, because the cleared form costs all the correct answers; next accepts spaces and moves the format help under the label, before the mistake.',
+        strong: 'As adequate, plus when validation runs (on leaving the field or on submission), an error at the field that names the fix, and a keyboard pass or an honest note that it is untested.',
+      },
+    },
     saveRoute: {
       auto: 'The field table, the failure path and the keyboard notes save as you type, on this device first and then online.',
       external: 'Nothing here needs a file. Keep your m07 flow beside you; the wording for each field comes from it.',
@@ -583,7 +672,8 @@ export const guided08: Record<string, Guided> = {
     worksheet: [
       { id: 'destinations', title: 'Everything a person can reach', fields: [
         { id: 'destination-list', label: 'Every destination in your structure, with the two or three people need most marked', kind: 'long', hint: 'Take these from your m06 structure. Mark what people came for, not what the organisation would like them to see.' },
-        { id: 'most-needed', label: 'The evidence behind those marks, or a plain note that you are guessing', kind: 'short' },
+        { id: 'most-needed', label: 'The evidence behind those marks, or a plain note that you are guessing', kind: 'short', sensitive: true,
+          hint: 'Summarise without names, such as “3 of 4 tree-test participants went to My bookings first”. Raw notes stay in your private file. A labelled guess is an honest answer.' },
       ] },
       { id: 'wide', title: 'The wide layout', fields: [
         { id: 'wide-items', label: 'The global destinations on the wide layout, in the order you placed them', kind: 'long' },
@@ -640,10 +730,10 @@ export const guided08: Record<string, Guided> = {
           material: 'A made-up phone header for a class booking product. It holds a logo, a search icon and a menu icon. Behind the menu sit Find a class, My bookings, Change or cancel a booking, About us, Careers and Terms. Most people using this product are coming back to check a booking they already made.',
           question: 'What should come out from behind the menu?',
           options: [
-            { label: 'My bookings, because returning to a booking they already hold is what most people came to do.', correct: true, feedback: 'The visible set is decided by what people arrived for, and here that is the existing booking. Careers and Terms can stay behind the icon because almost nobody arrives wanting them.' },
-            { label: 'Nothing: the icon is understood, so the menu costs almost nothing.', feedback: 'Recognising the icon was never the problem. People do not open a menu to find out what a product offers, so anything essential behind it is effectively gone for anyone who does not already know it is there.' },
-            { label: 'Everything, since hiding navigation is always a mistake.', feedback: 'Six visible destinations on a phone header leave no room for the screen itself. A narrow layout needs priority, which means some things do go behind the icon.' },
-            { label: 'About us, because it explains the product to newcomers.', feedback: 'It reads as the generous choice and it serves almost nobody. The header is small enough that promoting About us means demoting something people arrived to use.' },
+            { label: 'My bookings, because most people come back to check a booking they already hold.', correct: true, was: ['My bookings, because returning to a booking they already hold is what most people came to do.'], feedback: 'The visible set is decided by what people arrived for, and here that is the existing booking. Careers and Terms can stay behind the icon because almost nobody arrives wanting them.' },
+            { label: 'Nothing needs to: the menu icon is widely recognised, so its cost is close to zero.', was: ['Nothing: the icon is understood, so the menu costs almost nothing.'], feedback: 'Recognising the icon was never the problem. People rarely open a menu just to find out what a product offers, so anything essential behind it is effectively gone for anyone who does not already know it is there.' },
+            { label: 'Every item, so that nobody has to guess what is hidden behind an icon on a phone.', was: ['Everything, since hiding navigation is always a mistake.'], feedback: 'Six visible destinations on a phone header leave no room for the screen itself. A narrow layout needs priority, which means some things do go behind the icon.' },
+            { label: 'About us, because a newcomer needs to understand the studio before booking anything.', was: ['About us, because it explains the product to newcomers.'], feedback: 'It reads as the generous choice and it serves almost nobody. The header is small enough that promoting About us means demoting something people arrived to use.' },
           ],
           then: 'Apply the same test to your own list: promote what people came for, then write down what the menu now costs everything else.',
         },
@@ -665,9 +755,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Your current section is shown in the brand colour and nothing else. Why is that not enough?',
         options: [
-          { label: 'Colour alone disappears in greyscale, in bright sunlight and for many readers, and the location signal goes with it.', correct: true, feedback: 'A location signal has to survive conditions you do not control. Weight, a rule underneath or a shape change carries it when colour cannot.' },
-          { label: 'It is enough as long as the colour has strong contrast against the background.', feedback: 'Contrast makes the word readable. It does not say that this word means “you are here” rather than “this one is styled differently”.' },
-          { label: 'It is fine because the page title repeats the section name.', feedback: 'The page title helps, and it sits somewhere else on the screen. The navigation still has to show which of its own items you are on.' },
+          { label: 'Colour alone vanishes in greyscale, sunlight and for many readers, and the signal goes too.', correct: true, was: ['Colour alone disappears in greyscale, in bright sunlight and for many readers, and the location signal goes with it.'], feedback: 'A location signal has to survive conditions you do not control. Weight, a rule underneath or a shape change carries it when colour cannot.' },
+          { label: 'It is enough as long as the brand colour has strong contrast against the header.', was: ['It is enough as long as the colour has strong contrast against the background.'], feedback: 'Contrast makes the word readable. It does not say that this word means “you are here” rather than “this one is styled differently”.' },
+          { label: 'It is fine because the page title already repeats the section name lower down.', was: ['It is fine because the page title repeats the section name.'], feedback: 'The page title helps, and it sits somewhere else on the screen. The navigation still has to show which of its own items you are on.' },
         ],
         repair: 'Change the location signal in step 2 so it works with the colour removed, then record what you changed in step 5.',
         recheck: 'The greyscale version still shows which destination is current.',
@@ -675,9 +765,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'On the phone layout you moved every destination behind the menu icon so the header stays clean. What did that cost?',
         options: [
-          { label: 'Anything people did not already know about is now effectively removed for them, because nobody opens a menu to browse.', correct: true, feedback: 'A menu serves people who already know what they are looking for. Everyone else sees a product that appears to do one thing.' },
-          { label: 'Nothing, because the icon is widely recognised.', feedback: 'Recognising the icon and deciding to open it are two different acts. The cost is a tap plus the decision to take it, paid by the people least likely to.' },
-          { label: 'One extra tap, which is a small price for a clean header.', feedback: 'The tap is the smaller half of the cost. The larger half is that the destination is no longer part of what the product appears to offer.' },
+          { label: 'Whatever people did not already know about is effectively gone; few open menus to browse.', correct: true, was: ['Anything people did not already know about is now effectively removed for them, because nobody opens a menu to browse.'], feedback: 'A menu serves people who already know what they are looking for. Everyone else sees a product that appears to do one thing.' },
+          { label: 'Very little, because the three-line menu icon is recognised almost everywhere by now.', was: ['Nothing, because the icon is widely recognised.'], feedback: 'Recognising the icon and deciding to open it are two different acts. The cost is a tap plus the decision to take it, paid by the people least likely to.' },
+          { label: 'One extra tap for each destination, which is a small price to pay for a clean, calm header.', was: ['One extra tap, which is a small price for a clean header.'], feedback: 'The tap is the smaller half of the cost. The larger half is that the destination is no longer part of what the product appears to offer.' },
         ],
         repair: 'Rewrite the visibility rule in step 3 so at least the destination people came for stays visible, then record the change in step 5.',
         recheck: 'The rule names what stays visible and why, and the visible list is not empty.',
@@ -685,14 +775,23 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Back from a detail view returns the person to the top of an unfiltered list. What is wrong?',
         options: [
-          { label: 'The filtering and the scroll position were the person’s work, and back has thrown it away.', correct: true, feedback: 'Going into a detail view and returning is one of the commonest moves in any product. Losing the list each time makes comparing two things nearly impossible.' },
-          { label: 'Nothing: landing on a clean list is at least predictable.', feedback: 'It is predictable and it is the wrong place. Predictability matters after the person’s work is preserved, not instead of it.' },
-          { label: 'The fix is to stop people leaving the list in the first place.', feedback: 'The detail view exists because people need what is in it. The list has to survive the trip rather than the trip being prevented.' },
+          { label: 'The filters and scroll position were the person’s work, and back has thrown them away.', correct: true, was: ['The filtering and the scroll position were the person’s work, and back has thrown it away.'], feedback: 'Going into a detail view and returning is one of the commonest moves in any product. Losing the list each time makes comparing two things nearly impossible.' },
+          { label: 'Little is wrong: a clean list at the top is at least predictable every time.', was: ['Nothing: landing on a clean list is at least predictable.'], feedback: 'It is predictable and it is the wrong place. Predictability matters after the person’s work is preserved, not instead of it.' },
+          { label: 'The fix is to stop people leaving the list, by showing the details inside it.', was: ['The fix is to stop people leaving the list in the first place.'], feedback: 'The detail view exists because people need what is in it. The list has to survive the trip rather than the trip being prevented.' },
         ],
         repair: 'Rewrite the detail-view back behaviour in step 4 to name the filters and the position that are preserved, then record the change in step 5.',
         recheck: 'The back behaviour states what is restored, not only which screen appears.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a ferry company’s phone app header holds a logo, a search icon and a menu icon. Behind the menu sit Live departures, Buy tickets, Timetables, Lost property, News and Careers. The company’s own visit counts (made up) say 7 of every 10 visits open Live departures.',
+      prompt: 'Decide what stays visible on the phone header and how the current section is shown. Explain why.',
+      anchors: {
+        weak: 'Keeps everything behind the menu because the icon is familiar, or shows the current section by colour alone.',
+        adequate: 'Promotes Live departures to a visible item because most visits are for it, leaves Careers and News in the menu, and marks the current section with weight or an underline, not colour alone.',
+        strong: 'As adequate, plus what the menu now costs the hidden items, what back does from a departure’s detail view (keeping the chosen route), and a greyscale check of the location signal.',
+      },
+    },
     saveRoute: {
       auto: 'The destination list, the visibility rule and the back behaviours save as you type, on this device first and then online.',
       external: 'The two layouts stay on paper or in your own folder. Write down where they live; naming a file does not upload it.',
@@ -702,10 +801,11 @@ export const guided08: Record<string, Guided> = {
   },
   'm08-l06-v1': {
     route: paperRoute('the list at both widths and the hard-case rows'),
+    material: [browseNote, 'Made-up hard cases for practice: the longest class name is “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”; one class has no price recorded; one class has no places left.'],
     worksheet: [
       { id: 'row', title: 'What the row carries', intro: 'One attribute at a time. Name it, and say what makes you think people compare on it.', fields: [
-        ...[1, 2, 3, 4].map((n) => ({ id: `attribute-${n}`, label: `Attribute ${n} · what it is, and the evidence that people compare on it`, kind: 'long' as const,
-          ...(n === 1 ? { hint: 'If your evidence is “it seemed useful”, write that. A guess you have labelled is worth more than a guess you have dressed up.', example: 'Example (made up): remaining places. Two people in the m05 sessions asked whether a class was full before they looked at anything else.' } : {}) })),
+        ...[1, 2, 3, 4].map((n) => ({ id: `attribute-${n}`, label: `Attribute ${n} · what it is, and the evidence that people compare on it`, kind: 'long' as const, sensitive: true as const,
+          ...(n === 1 ? { hint: 'If your evidence is “it seemed useful”, write that: a labelled guess is worth more than a dressed-up one. Summarise evidence without names, such as “2 of 5 sessions”. No notes of your own? Cite the supplied practice notes as supplied.', example: 'Example (made up): remaining places. Two people in the m05 sessions asked whether a class was full before they looked at anything else.' } : {}) })),
       ] },
       { id: 'sort', title: 'Omissions and the sort', fields: [
         { id: 'omissions', label: 'What you deliberately left out of the row, and where it went instead', kind: 'long' },
@@ -767,10 +867,10 @@ export const guided08: Record<string, Guided> = {
           material: 'A made-up class list at phone width. Three rows break. One class is called “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”. One has no price recorded, so the cell is blank. One has no places left, shown as “0”.',
           question: 'Which of these should you deal with first, and why?',
           options: [
-            { label: 'The class with no places left showing “0”, because a number invites the person to try to book it.', correct: true, feedback: 'A zero reads as a value among other values, so people tap it and meet a dead end. Words such as “Full, see other dates” stop the wasted trip and offer the next move.' },
-            { label: 'The very long class name, because it wraps to four lines and pulls the row apart.', feedback: 'A real problem and the second one to work on. A tall row is untidy; a full class that looks bookable sends someone down a path ending in nothing.' },
-            { label: 'The missing price, because a blank cell looks like broken data.', feedback: 'A blank does look broken, and “price on request” is worth writing. It leaves the person uncertain, while the zero actively sends them the wrong way.' },
-            { label: 'None of them: these are rare rows and the ordinary ones matter more.', feedback: 'The ordinary rows were never going to break. Rare rows are exactly where a list stops working, and on paper they cost almost nothing to fix.' },
+            { label: 'The full class showing “0”, because a number reads as a value and invites a booking attempt.', correct: true, was: ['The class with no places left showing “0”, because a number invites the person to try to book it.'], feedback: 'A zero reads as a value among other values, so people tap it and meet a dead end. Words such as “Full, see other dates” stop the wasted trip and offer the next move.' },
+            { label: 'The very long class name, because it wraps onto four lines and pulls the whole of the row apart.', was: ['The very long class name, because it wraps to four lines and pulls the row apart.'], feedback: 'A real problem and the second one to work on. A tall row is untidy; a full class that looks bookable sends someone down a path ending in nothing.' },
+            { label: 'The missing price, because a blank cell looks like broken data and undermines trust.', was: ['The missing price, because a blank cell looks like broken data.'], feedback: 'A blank does look broken, and “price on request” is worth writing. It leaves the person uncertain, while the zero actively sends them the wrong way.' },
+            { label: 'None of them yet, because these rows are rare and the ordinary rows matter more.', was: ['None of them: these are rare rows and the ordinary ones matter more.'], feedback: 'The ordinary rows were never going to break. Rare rows are exactly where a list stops working, and on paper they cost almost nothing to fix.' },
           ],
           then: 'Work through your own hard cases in the same order: what sends someone the wrong way, what leaves them uncertain, what merely looks untidy.',
         },
@@ -785,9 +885,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'You put all eight attributes in the row so nobody has to open a detail view. What goes wrong?',
         options: [
-          { label: 'A row carrying everything makes comparison harder, because the two things people compare on are buried among six they do not.', correct: true, feedback: 'A row exists for comparing, and comparison depends on what you left out. The detail view is where the rest belongs.' },
-          { label: 'Nothing: more information is always better for the reader.', feedback: 'More information is better in the detail view, where a person has already chosen. In a list it is the thing scanning has to fight through.' },
-          { label: 'It is only a problem on a phone; a desktop table can carry eight.', feedback: 'A desktop table can display eight, and people still compare on two or three. Width changes what fits, not what people are doing.' },
+          { label: 'Comparison gets harder: the two things people compare on are buried among six they ignore.', correct: true, was: ['A row carrying everything makes comparison harder, because the two things people compare on are buried among six they do not.'], feedback: 'A row exists for comparing, and comparison depends on what you left out. The detail view is where the rest belongs.' },
+          { label: 'Little goes wrong, since more information in the row always helps the reader decide.', was: ['Nothing: more information is always better for the reader.'], feedback: 'More information is better in the detail view, where a person has already chosen. In a list it is the thing scanning has to fight through.' },
+          { label: 'It only goes wrong on a phone; a desktop table has room to carry all eight easily.', was: ['It is only a problem on a phone; a desktop table can carry eight.'], feedback: 'A desktop table can display eight, and people still compare on two or three. Width changes what fits, not what people are doing.' },
         ],
         repair: 'Cut your attribute list in step 1 to the ones with a reason beside them, move the rest into the omissions box in step 2, then record the change in step 5.',
         recheck: 'The row carries four attributes or fewer, each with its reason.',
@@ -795,9 +895,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Your table has eight columns, so on a phone you let it scroll sideways. What is the objection?',
         options: [
-          { label: 'Scrolling sideways separates each value from the row it belongs to, so people lose track of what they are reading.', correct: true, feedback: 'The identifying value scrolls away first, and it is the one thing every other value needs. Turning each row into a record keeps the heading with its values.' },
-          { label: 'Nothing: horizontal scrolling is a familiar pattern on a phone.', feedback: 'It is familiar in reference tables people read rather than act on. For a list somebody has to choose from, it is a poor default.' },
-          { label: 'The fix is to shrink the text until all eight columns fit.', feedback: 'Eight columns at phone width means text nobody can read, and those eight columns were probably too many in the first place.' },
+          { label: 'Sideways scrolling parts each value from its row, so people lose track of what they read.', correct: true, was: ['Scrolling sideways separates each value from the row it belongs to, so people lose track of what they are reading.'], feedback: 'The identifying value scrolls away first, and it is the one thing every other value needs. Turning each row into a record keeps the heading with its values.' },
+          { label: 'There is little objection: horizontal scrolling is a familiar pattern on phones.', was: ['Nothing: horizontal scrolling is a familiar pattern on a phone.'], feedback: 'It is familiar in reference tables people read rather than act on. For a list somebody has to choose from, it is a poor default.' },
+          { label: 'Shrinking the text until all eight columns fit would be the better fix here.', was: ['The fix is to shrink the text until all eight columns fit.'], feedback: 'Eight columns at phone width means text nobody can read, and those eight columns were probably too many in the first place.' },
         ],
         repair: 'Redraw one row as a record in step 3, with an identifying heading and a label beside each value, then record the change in step 5.',
         recheck: 'The narrow version is a set of labelled blocks, not a shrunken table.',
@@ -805,14 +905,23 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'You laid the list out using short, tidy sample names and round prices. What will that hide?',
         options: [
-          { label: 'Every layout problem the real data causes: the long name, the large number, the missing value.', correct: true, feedback: 'Tidy examples are the rows that were always going to work. The design is decided by the ones that are not tidy, and on paper they cost nothing to try.' },
-          { label: 'Nothing much: the real data will be similar in shape.', feedback: 'Real data is never similar in shape. One class name will be four times the length of the rest, and it will be the one in the screenshot.' },
-          { label: 'Only the rarest cases, which can be handled later.', feedback: 'Handled later means handled by whoever builds it, at the moment they are least able to change the layout.' },
+          { label: 'The layout problems real data causes: the long name, the large number, the missing value.', correct: true, was: ['Every layout problem the real data causes: the long name, the large number, the missing value.'], feedback: 'Tidy examples are the rows that were always going to work. The design is decided by the ones that are not tidy, and on paper they cost nothing to try.' },
+          { label: 'Very little, because the real data will be broadly similar in shape and length.', was: ['Nothing much: the real data will be similar in shape.'], feedback: 'Real data is rarely similar in shape. One class name will be four times the length of the rest, and it will be the one in the screenshot.' },
+          { label: 'Only the rarest cases, which whoever builds the list can handle later on.', was: ['Only the rarest cases, which can be handled later.'], feedback: 'Handled later means handled by whoever builds it, at the moment they are least able to change the layout.' },
         ],
         repair: 'Lay out your longest real name and largest real number in step 4, write what broke, then record the change in step 5.',
         recheck: 'The hard-case layouts use real values rather than chosen-nice ones.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a plant nursery’s order history is a seven-column table: order number, date, items, total, delivery status, invoice link and store. On a phone it scrolls sideways. The nursery’s support inbox (made up) says most messages ask whether an order has shipped yet.',
+      prompt: 'Decide what each order shows on a phone and the default order of the list. Explain your reasoning.',
+      anchors: {
+        weak: 'Keeps all seven columns and lets the table scroll sideways or shrinks the text, or picks an order without saying why.',
+        adequate: 'Turns each order into a record headed by its date or number, keeps delivery status and date visible, moves the rest to the detail view, and states “Newest first” above the list.',
+        strong: 'As adequate, plus a worded missing value (“Not shipped yet” rather than a blank), an empty state for a first-time customer, and a written omission list in case the inbox evidence changes.',
+      },
+    },
     saveRoute: {
       auto: 'The row attributes, the sort, the omissions and the hard cases save as you type, on this device first and then online.',
       external: 'The two layouts stay on paper or in your own folder. Keep the real data you used beside them; the worst rows are the evidence.',
@@ -943,9 +1052,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'You have put a confirmation dialogue on every action that deletes something. Why does that protect less than it looks?',
         options: [
-          { label: 'A question with a predictable answer gets dismissed without reading, so the protection fades while the delay stays.', correct: true, feedback: 'People learn the shape of the box and answer it by habit. The one time it matters, it is dismissed the same way as the other forty.' },
-          { label: 'It does protect; the only cost is that the flow is a little slower.', feedback: 'The delay is real and the protection is not, because the reading stops long before the habit does. Undo protects the person who has already made the mistake.' },
-          { label: 'It protects, as long as the wording is firm enough.', feedback: 'Firmer wording raises the volume on something already being skipped. What changes the outcome is being able to put the mistake right afterwards.' },
+          { label: 'A predictable question gets dismissed unread, so the protection fades while the delay stays.', correct: true, was: ['A question with a predictable answer gets dismissed without reading, so the protection fades while the delay stays.'], feedback: 'People learn the shape of the box and answer it by habit. The one time it matters, it is dismissed the same way as the other forty.' },
+          { label: 'It does protect people; its only real cost is that each deletion takes a moment longer.', was: ['It does protect; the only cost is that the flow is a little slower.'], feedback: 'The delay is real and the protection is not, because the reading stops long before the habit does. Undo protects the person who has already made the mistake.' },
+          { label: 'It protects well, provided each dialogue says firmly and specifically what will be lost for good.', was: ['It protects, as long as the wording is firm enough.'], feedback: 'Firmer wording raises the volume on something already being skipped. What changes the outcome is being able to put the mistake right afterwards.' },
         ],
         repair: 'Look at your three decisions in step 2. Any action that could be reversed becomes an undo message instead of a confirmation, and the change goes in the last box of step 5.',
         recheck: 'No confirmation remains on an action you could reverse.',
@@ -953,9 +1062,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Your modal explains the cancellation policy in four paragraphs so people can read it before deciding. What is wrong with that?',
         options: [
-          { label: 'A modal covers the screen and holds the keyboard, so it is the worst place for anything a person needs to read carefully or compare.', correct: true, feedback: 'Reference text needs room, scrolling and the freedom to look at something else. Put it on the page, or give it a screen of its own.' },
-          { label: 'Nothing, as long as the modal scrolls.', feedback: 'Scrolling inside a box that hides the thing being decided about is a small window onto a long document. The person still cannot see what they are agreeing about.' },
-          { label: 'The paragraphs should be cut until they fit the box.', feedback: 'Cutting a policy to fit a container changes what it says. The container is the thing that is wrong here.' },
+          { label: 'A modal hides the page and traps the keyboard, a poor place for text people must weigh.', correct: true, was: ['A modal covers the screen and holds the keyboard, so it is the worst place for anything a person needs to read carefully or compare.'], feedback: 'Reference text needs room, scrolling and the freedom to look at something else. Put it on the page, or give it a screen of its own.' },
+          { label: 'Little is wrong, provided the modal scrolls so all four paragraphs can be read.', was: ['Nothing, as long as the modal scrolls.'], feedback: 'Scrolling inside a box that hides the thing being decided about is a small window onto a long document. The person still cannot see what they are agreeing about.' },
+          { label: 'The paragraphs should be cut down until the whole policy fits inside the box.', was: ['The paragraphs should be cut until they fit the box.'], feedback: 'Cutting a policy to fit a container changes what it says. The container is the thing that is wrong here.' },
         ],
         repair: 'Read the wording in modal-a and modal-b in step 3. Move any reference text onto the page or its own screen, and record the move in step 5.',
         recheck: 'Neither remaining modal holds anything the person needs to read and weigh up.',
@@ -963,14 +1072,23 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Your held-place warning and your unsaved-work warning could both appear during payment. What does that tell you?',
         options: [
-          { label: 'The flow is asking for two things at one moment, so the flow needs changing rather than the dialogues needing an order.', correct: true, feedback: 'Two interruptions at once is a message about the shape of the task. Stacking or queueing hides that and doubles the interruption.' },
-          { label: 'Stack them, newest on top, so nothing is missed.', feedback: 'A box over a box takes two dismissals and leaves the person unsure what they have just answered.' },
-          { label: 'Queue them, so the second appears once the first is dismissed.', feedback: 'A queue is tidier and still stops the person twice at the moment they were trying to pay.' },
+          { label: 'The flow asks for two things at one moment, so the flow needs changing, not the order.', correct: true, was: ['The flow is asking for two things at one moment, so the flow needs changing rather than the dialogues needing an order.'], feedback: 'Two interruptions at once is a message about the shape of the task. Stacking or queueing hides that and doubles the interruption.' },
+          { label: 'Stack them, newest on top, so that neither warning can be missed during payment.', was: ['Stack them, newest on top, so nothing is missed.'], feedback: 'A box over a box takes two dismissals and leaves the person unsure what they have just answered.' },
+          { label: 'Queue them, so the second appears only once the first has been dismissed.', was: ['Queue them, so the second appears once the first is dismissed.'], feedback: 'A queue is tidier and still stops the person twice at the moment they were trying to pay.' },
         ],
         repair: 'Use the collision box in step 4. Name the two that can collide, change one of them, then write what you changed in step 5.',
         recheck: 'No two interruptions can appear at the same moment in your flow.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a photo-printing app asks “Are you sure?” every time someone removes a photo from a print order, although a removed photo can be added back from the camera roll in one tap. It also opens the print-size guide, a long table of sizes and prices, in a modal while people choose sizes.',
+      prompt: 'Decide what each of the two interruptions should become, and explain why.',
+      anchors: {
+        weak: 'Keeps both modals because a confirmation feels safer and a modal guarantees the size guide is seen.',
+        adequate: 'Replaces the removal confirmation with immediate removal plus undo, since nothing is lost for good, and moves the size guide onto the page or into a disclosure, because a modal hides what people are choosing.',
+        strong: 'As adequate, plus the undo window and its wording, a one-sentence modal rule (only for loss that cannot be recovered), and a check that no two interruptions can appear at once.',
+      },
+    },
     saveRoute: {
       auto: 'Your interruption list, the three decisions and both designs save as you type, on this device first and then online.',
       external: 'The screens stay on paper or in your own folder. Note the file name in the last step; naming a file does not upload it.',
@@ -1003,7 +1121,7 @@ export const guided08: Record<string, Guided> = {
         { id: 'collision-rule', label: 'What stops two messages appearing in the same place at once', kind: 'short' },
       ] },
       { id: 'aloud', title: 'Read it to someone', fields: [
-        { id: 'aloud-result', label: 'What happened when you read each message aloud and asked what they would do next', kind: 'long', hint: 'If nobody is available, read them aloud yourself after a break and note where you hesitated. Write plainly that no one else heard them.' },
+        { id: 'aloud-result', label: 'What happened when you read each message aloud and asked what they would do next', kind: 'long', sensitive: true, hint: 'Summarise what the listener said without their name; raw notes stay in your private file. If nobody is available, read them aloud yourself after a break and note where you hesitated. Write plainly that no one else heard them.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
@@ -1034,12 +1152,12 @@ export const guided08: Record<string, Guided> = {
         },
         supported: {
           material: 'Three supplied messages from a made-up booking product, all shown the same way: a small box in the bottom-left corner that fades after four seconds. A is “Draft saved.” B is “Your place is held for 10 minutes.” C is “Payment failed. No money has been taken.”',
-          question: 'Which of these is still delivered by a box that fades after four seconds?',
+          question: 'Which of these should still be delivered by a box that fades after four seconds?',
           options: [
             { label: 'A only. Nothing depends on the person seeing it, and it will happen again.', correct: true, feedback: 'A missed save note costs nothing, so the quiet treatment fits. B carries a deadline and C carries money, and both are gone before someone looking at the form could read them.' },
             { label: 'B and C as well. Four seconds is long enough to read a short sentence.', feedback: 'Four seconds is long enough to read one, and only if the person happens to be looking at that corner. During payment they are looking at the card field.' },
             { label: 'None of them. A message that fades has not been delivered at all.', feedback: 'The rule is about consequence rather than fading. For a saved draft, quiet and repeated is the right treatment.' },
-            { label: 'C only. People watch for failures.', feedback: 'People watch for a failure once they suspect one. The failure arrives before the suspicion, and a fading box is how someone ends up unsure whether they have been charged.' },
+            { label: 'C only, because people are already watching closely for anything that fails.', was: ['C only. People watch for failures.'], feedback: 'People watch for a failure once they suspect one. The failure arrives before the suspicion, and a fading box is how someone ends up unsure whether they have been charged.' },
           ],
           then: 'Go back through your own four rows and mark any message that would be gone before it was read.',
         },
@@ -1066,11 +1184,11 @@ export const guided08: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: '“Your place is held for 10 minutes” appears as a small box in the corner that fades after four seconds. What is the problem?',
+        question: 'During payment, while she types her card details, “Your place is held for 10 minutes” appears as a small box in the corner that fades after four seconds. What is the problem?',
         options: [
-          { label: 'The person is typing card details and looking at the form, so the message is gone before they look up and the deadline is now invisible.', correct: true, feedback: 'A deadline the person cannot see is a deadline they will miss. Anything about money or time belongs where the work is, staying until it is resolved.' },
-          { label: 'Four seconds is not long enough to read a sentence of that length.', feedback: 'Reading time is the smaller half of it. Even at ten seconds it is in the wrong corner at the wrong moment.' },
-          { label: 'Nothing, as long as the message appears again before the hold ends.', feedback: 'A second fading message has the same chance of being missed as the first, and by then the person has lost the earlier part of the countdown too.' },
+          { label: 'She is typing card details, so it fades before she looks up, and the deadline is lost.', correct: true, was: ['The person is typing card details and looking at the form, so the message is gone before they look up and the deadline is now invisible.'], feedback: 'A deadline the person cannot see is a deadline they will miss. Anything about money or time belongs where the work is, staying until it is resolved.' },
+          { label: 'Four seconds is too short to read a sentence of that length; ten would fix it.', was: ['Four seconds is not long enough to read a sentence of that length.'], feedback: 'Reading time is the smaller half of it. Even at ten seconds it is in the wrong corner at the wrong moment.' },
+          { label: 'It is fine, as long as the same message appears again before the hold ends.', was: ['Nothing, as long as the message appears again before the hold ends.'], feedback: 'A second fading message has the same chance of being missed as the first, and by then the person has lost the earlier part of the countdown too.' },
         ],
         repair: 'Open the progress row in step 2. Any message about money, a deadline or unsaved work must stay until it is resolved; change it and record the change in step 5.',
         recheck: 'No message about money, a deadline or lost work fades on its own.',
@@ -1078,9 +1196,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Success is green and failure is red, with the same icon and similar wording. What breaks?',
         options: [
-          { label: 'Anyone who cannot separate those colours, or who reads the screen in bright light, is left with two messages that say the same thing.', correct: true, feedback: 'Colour is the reinforcement, never the signal. The words and the shape have to carry the meaning on their own.' },
-          { label: 'Nothing, since red and green are understood everywhere.', feedback: 'They are widely learnt and not universally visible. A message that depends on telling them apart carries nothing for a good number of readers.' },
-          { label: 'Only the icons need to differ; the wording can stay as it is.', feedback: 'Different shapes help, and the sentence is still the part most people read. If the words do not say whether this is good or bad news, the shape is doing the work alone.' },
+          { label: 'Anyone who cannot tell red from green, or reads in bright light, gets two identical messages.', correct: true, was: ['Anyone who cannot separate those colours, or who reads the screen in bright light, is left with two messages that say the same thing.'], feedback: 'Colour is the reinforcement, never the signal. The words and the shape have to carry the meaning on their own.' },
+          { label: 'Very little, since red and green are understood as good and bad almost everywhere.', was: ['Nothing, since red and green are understood everywhere.'], feedback: 'They are widely learnt and not universally visible. A message that depends on telling them apart carries nothing for a good number of readers.' },
+          { label: 'Only the icons need to differ; similar wording is fine once the shapes are distinct.', was: ['Only the icons need to differ; the wording can stay as it is.'], feedback: 'Different shapes help, and the sentence is still the part most people read. If the words do not say whether this is good or bad news, the shape is doing the work alone.' },
         ],
         repair: 'Look at icon-shapes and rewritten-wording in step 3. Give each type its own shape and make each sentence state the outcome in words, then record it in step 5.',
         recheck: 'With colour taken away, each message still says plainly what happened.',
@@ -1089,13 +1207,22 @@ export const guided08: Record<string, Guided> = {
         question: 'Your payment failure says “Something went wrong.” What is missing?',
         options: [
           { label: 'What happened, what it means for the money, and the one thing to do next.', correct: true, feedback: 'A failure with no route leaves the person guessing whether they have been charged and whether to try again. Say it in the message.' },
-          { label: 'An apology, so the tone matches the situation.', feedback: 'An apology is easy to add and changes nothing about what the person does next. The route forward is the part that helps.' },
-          { label: 'An error code the support team can look up.', feedback: 'A code helps whoever is contacted later, and it is not what the person needs in that moment. Give them the action first and the code after.' },
+          { label: 'An apology, so that the tone matches how stressful the moment feels for the person.', was: ['An apology, so the tone matches the situation.'], feedback: 'An apology is easy to add and changes nothing about what the person does next. The route forward is the part that helps.' },
+          { label: 'An error code that the support team can look up if the person calls.', was: ['An error code the support team can look up.'], feedback: 'A code helps whoever is contacted later, and it is not what the person needs in that moment. Give them the action first and the code after.' },
         ],
         repair: 'Fill failure-routes in step 4 with one thing the person can do for each failure, then record what you changed in step 5.',
         recheck: 'No failure message ends without an action or a person to contact.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a laundrette app shows every message the same way, as a small box in a top corner that fades after three seconds. Three messages use it: “Machine 4 started”, “Your wash finishes in 40 minutes” and “Payment failed: machine not started”. People often start a wash and then put their phone away.',
+      prompt: 'Decide where each message appears and how long it stays. Explain why.',
+      anchors: {
+        weak: 'Keeps one fading style for all three because consistency looks tidy, or changes only the colours.',
+        adequate: 'Makes the payment failure stay where the payment happened, with words, a distinct icon and a next step; keeps the finish time available to check later; lets “Machine 4 started” fade quietly.',
+        strong: 'As adequate, plus what clears each lasting message, how a failure and a countdown are kept from sharing one place, and a greyscale or read-aloud check that the words carry the meaning alone.',
+      },
+    },
     saveRoute: {
       auto: 'The message list, the four specifications and your wording save as you type, on this device first and then online.',
       external: 'Nothing here needs a file. Keep your m07 exception table beside you; most of these messages come from it.',
@@ -1161,10 +1288,10 @@ export const guided08: Record<string, Guided> = {
           material: 'Two supplied empty states for the same made-up bookings list. A is a grey illustration of an empty box with the words “Nothing here yet.” B is “Your bookings appear here once you book a class. Classes run on Saturdays and Wednesdays.” with an action reading “Find a class on Saturday”.',
           question: 'What is B actually doing that A is not?',
           options: [
-            { label: 'B says what belongs here, why the screen is blank and the one action that starts it, so the empty screen teaches.', correct: true, feedback: 'Those three parts turn a blank area into the clearest lesson in the product. A has the same space and spends it on an apology.' },
-            { label: 'B is longer, and a new person needs more words.', feedback: 'Length is not the difference. A long empty state that still fails to say what appears here, or how to begin, teaches nothing.' },
-            { label: 'B has an action, and an action is what every empty state needs.', feedback: 'The action helps and is not enough on its own. An action with no explanation of what the list is for leaves a new person guessing.' },
-            { label: 'B has no illustration, and illustrations do not belong in empty states.', feedback: 'An illustration is fine beside wording that teaches. What fails in A is the sentence, not the picture.' },
+            { label: 'B says what belongs here, why it is empty and how to start, so the empty screen teaches.', correct: true, was: ['B says what belongs here, why the screen is blank and the one action that starts it, so the empty screen teaches.'], feedback: 'Those three parts turn a blank area into the clearest lesson in the product. A has the same space and spends it on an apology.' },
+            { label: 'B is longer, and a person arriving for the first time needs more words to feel welcome.', was: ['B is longer, and a new person needs more words.'], feedback: 'Length is not the difference. A long empty state that still fails to say what appears here, or how to begin, teaches nothing.' },
+            { label: 'B has an action button, and an action is the one thing every empty state must offer.', was: ['B has an action, and an action is what every empty state needs.'], feedback: 'The action helps and is not enough on its own. An action with no explanation of what the list is for leaves a new person guessing.' },
+            { label: 'B has no illustration, and pictures in an empty state distract from the words beside them.', was: ['B has no illustration, and illustrations do not belong in empty states.'], feedback: 'An illustration is fine beside wording that teaches. What fails in A is the sentence, not the picture.' },
           ],
           then: 'Read your own three empty states back and check each one names what appears here, why it is blank now, and what to do next.',
         },
@@ -1193,9 +1320,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Your empty list says “No results.” Why is that the most expensive sentence on the screen?',
         options: [
-          { label: 'It is what a new person meets first, and it spends the whole screen without saying what belongs here or how to begin.', correct: true, feedback: 'An empty screen is the one moment when there is nothing to read but you. That space teaches, or it is wasted.' },
-          { label: 'It is too short, and an empty state should be a full paragraph.', feedback: 'Length is not the fault. A long message that still fails to say what appears here and how to start is the same shrug at greater cost.' },
-          { label: 'Nothing is wrong: an empty list explains itself.', feedback: 'It explains itself to you, who built it. To someone arriving for the first time it is a blank area with a note saying the blank is intentional.' },
+          { label: 'A new person meets it first, and it says nothing about what belongs here or how to begin.', correct: true, was: ['It is what a new person meets first, and it spends the whole screen without saying what belongs here or how to begin.'], feedback: 'An empty screen is the one moment when there is nothing to read but you. That space teaches, or it is wasted.' },
+          { label: 'It is too short; an empty state should be a full paragraph explaining the product.', was: ['It is too short, and an empty state should be a full paragraph.'], feedback: 'Length is not the fault. A long message that still fails to say what appears here and how to start is the same shrug at greater cost.' },
+          { label: 'It is not expensive at all, because an empty list explains itself to anyone.', was: ['Nothing is wrong: an empty list explains itself.'], feedback: 'It explains itself to you, who built it. To someone arriving for the first time it is a blank area with a note saying the blank is intentional.' },
         ],
         repair: 'Rewrite empty-new in step 2 so it says what appears here, why it is blank now and the one action that starts it, then record the change in step 5.',
         recheck: 'The new-person state names the content, the reason and one action.',
@@ -1203,9 +1330,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'A step takes about twelve seconds. You replace the spinner with a faster one. What have you changed?',
         options: [
-          { label: 'Nothing the person can use. A long wait needs a message naming what is being waited for, not a livelier animation.', correct: true, feedback: 'After a few seconds a spinner stops meaning “working” and starts meaning “stuck”. Words are what tell the difference.' },
-          { label: 'The wait feels shorter, which is the whole problem solved.', feedback: 'A faster spin reads as more effort for a moment and then as the same silence. The person still cannot tell whether to wait or start again.' },
-          { label: 'It is worse, because spinners should never be used at all.', feedback: 'A spinner is fine for a short wait where the outcome arrives quickly. Twelve seconds is not that wait.' },
+          { label: 'Only the animation: a long wait needs words saying what is being waited for.', correct: true, was: ['Nothing the person can use. A long wait needs a message naming what is being waited for, not a livelier animation.'], feedback: 'After a few seconds a spinner stops meaning “working” and starts meaning “stuck”. Words are what tell the difference.' },
+          { label: 'The wait now feels shorter, which solves most of the problem for the person.', was: ['The wait feels shorter, which is the whole problem solved.'], feedback: 'A faster spin reads as more effort for a moment and then as the same silence. The person still cannot tell whether to wait or start again.' },
+          { label: 'It made things worse, because spinners should not be used for any wait at all.', was: ['It is worse, because spinners should never be used at all.'], feedback: 'A spinner is fine for a short wait where the outcome arrives quickly. Twelve seconds is not that wait.' },
         ],
         repair: 'Write wait-messages in step 3 for about three seconds and about fifteen, naming what is being waited for, then record the change in step 5.',
         recheck: 'A wait longer than a few seconds says in words what is happening.',
@@ -1213,14 +1340,23 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Your error state has a “Try again” control that reloads the whole page. What does the person lose?',
         options: [
-          { label: 'The filters, the place they had scrolled to and anything typed, so they pay for the failure a second time.', correct: true, feedback: 'The failure was not their doing and the reload charges them for it. A retry should repeat the request and keep everything else.' },
-          { label: 'Nothing, because a reload is the cleanest way to recover.', feedback: 'It is the cleanest for the build and the most expensive for the person. Everything they had set up goes with it.' },
-          { label: 'Only the scroll position, which is quickly recovered.', feedback: 'Scroll position is the smallest part. The filters and the typed values are the work, and a reload takes those too.' },
+          { label: 'Their filters, scroll position and anything typed, so they pay for the failure twice.', correct: true, was: ['The filters, the place they had scrolled to and anything typed, so they pay for the failure a second time.'], feedback: 'The failure was not their doing and the reload charges them for it. A retry should repeat the request and keep everything else.' },
+          { label: 'Very little, because a full reload is the cleanest and most reliable recovery.', was: ['Nothing, because a reload is the cleanest way to recover.'], feedback: 'It is the cleanest for the build and the most expensive for the person. Everything they had set up goes with it.' },
+          { label: 'Only the scroll position, which takes a second to recover by scrolling again.', was: ['Only the scroll position, which is quickly recovered.'], feedback: 'Scroll position is the smallest part. The filters and the typed values are the work, and a reload takes those too.' },
         ],
         repair: 'Fill error-preserved and retry-behaviour in step 4 with everything the retry keeps, then record the change in step 5.',
         recheck: 'The retry keeps position, filters and anything entered.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a neighbourhood tool library app shows the same grey box reading “No results” in three situations: a new member with no loans yet, a search filtered to “available today” that matches nothing, and a hedge trimmer that is out on loan until next week.',
+      prompt: 'Write what the screen should say for the filtered search, and explain why it must differ from the new-member case.',
+      anchors: {
+        weak: 'Keeps one message for all three, or makes “No results” friendlier without naming the cause or a next step.',
+        adequate: 'Names the filter that emptied the list and offers to remove it, such as showing tools available this week, while the new member is told what will appear here and how to borrow a first tool.',
+        strong: 'As adequate, plus the third case (when the trimmer is due back, or a reminder), and a note that the wording should be tried on someone new rather than judged by the person who wrote it.',
+      },
+    },
     saveRoute: {
       auto: 'The state list, the three empty states and your throttling notes save as you type, on this device first and then online.',
       external: 'The drawings stay on paper or in your own folder. Note the file name in the last step; naming a file does not upload it.',
@@ -1231,6 +1367,7 @@ export const guided08: Record<string, Guided> = {
   'm08-l10-v1': {
     video: { id: "VID10", then: "Straight after watching, write your chart’s alternative text without looking at the chart. If you cannot, the text is describing the picture rather than carrying the finding.", written: "No video needed: cover your chart and write the sentence you would say to somebody on the telephone. That is the alternative text." },
     route: paperRoute('the chart and the counts printed beneath it'),
+    material: [surveyCounts, 'Arithmetic for a cut axis: subtract the axis start from both values, then divide. 13 and 9 from zero look 13 ÷ 9 ≈ 1.4 times apart; from 8 they look (13 − 8) ÷ (9 − 8) = 5 times apart.'],
     worksheet: [
       { id: 'conventions', title: 'The rules you are working to', intro: 'From the assigned chart guidance, before you draw anything.', fields: [
         { id: 'axis-rules', label: 'What the guidance says about axes and gridlines', kind: 'long', hint: 'Write the rules as instructions to yourself, not as a summary of the page.' },
@@ -1238,12 +1375,16 @@ export const guided08: Record<string, Guided> = {
       ] },
       { id: 'comparison', title: 'One comparison, one chart type', intro: 'Decide what the reader is meant to compare before you decide how it looks.', fields: [
         { id: 'comparison-sentence', label: 'The one comparison you want a reader to make', kind: 'short', example: 'Example (made up): how many of the people who answered were unsure their payment had gone through, against how many were sure.' },
-        { id: 'data-held', label: 'The real counts you are using, and where they came from', kind: 'long', hint: 'Your m05 survey answers, your m06 tree-test results, or your own practice log. Real numbers only.' },
+        { id: 'data-held', label: 'The real counts you are using, and where they came from', kind: 'long', hint: 'Real numbers you hold: your m05 survey answers, m06 tree-test results or your own practice log, as totals with no names. If you hold none, use the supplied practice counts (22 people: 9 unsure, 13 sure) and write “made-up practice data” on the chart.' },
         { id: 'chart-type', label: 'The chart type you chose', kind: 'choice', options: ['Bar chart · amounts across categories', 'Line chart · change over time', 'Something else, named in the next box'] },
         { id: 'rejected-type', label: 'The type you rejected, and how it would have flattered your finding', kind: 'short' },
       ] },
       { id: 'draw', title: 'Draw it honestly', fields: [
-        { id: 'axis-start', label: 'Where your numerical axis starts, and why', kind: 'short', hint: 'For bars the only answer is zero. Write it down anyway, so you notice if it is not.' },
+        { id: 'axis-start', label: 'Where your numerical axis starts, and why', kind: 'short', hint: 'For bars the answer is zero, as the assigned guidance says. Write it down anyway, so you notice if it is not.' },
+        { id: 'cut-axis-ratio', label: 'The ratio your two biggest-gap bars show from zero, and the ratio they would show if the axis started at your lowest gridline', kind: 'short',
+          requiredWhen: { field: 'chart-type', values: ['Bar chart · amounts across categories'] },
+          hint: 'Divide the larger value by the smaller. Then subtract the axis start from both and divide again.',
+          example: 'Example (made up): 13 and 9 drawn from zero look about 1.4 times apart; drawn from 8 they would look (13 − 8) ÷ (9 − 8) = 5 times apart.' },
         { id: 'labelling-choice', label: 'How each value is labelled, and any legend you were able to remove', kind: 'long' },
         { id: 'contrast-result', label: 'The contrast ratios you measured for the chart colours and their labels, and the checker you used', kind: 'short', hint: 'A free browser-based checker, or the offline calculation from earlier in the course. No plugin needed.' },
       ] },
@@ -1253,7 +1394,7 @@ export const guided08: Record<string, Guided> = {
         { id: 'underlying-numbers', label: 'The counts published beside the chart', kind: 'long' },
       ] },
       { id: 'test', title: 'What a reader took from it', fields: [
-        { id: 'reader-said', label: 'What the person you showed it to said it told them', kind: 'long', hint: 'Ask, then write their words down before you explain anything.' },
+        { id: 'reader-said', label: 'What the reader said it told them, summarised without their name, or what it seemed to claim when you read it cold yourself', kind: 'long', sensitive: true, hint: 'Ask, then note what they said before you explain anything; raw notes stay in your private file. Nobody available? Put the chart away for an hour, read it cold, and write “self-read” beside your answer.' },
         { id: 'overclaim-fix', label: 'Anything they claimed your data cannot support, and what you changed', kind: 'short' },
         { id: 'chart-location', label: 'Where the chart and the counts live', kind: 'short', hint: 'A file name, or “paper, in my folder”. Nothing is uploaded.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
@@ -1273,12 +1414,12 @@ export const guided08: Record<string, Guided> = {
         start: 'Write the sentence you want the reader to leave with. The chart type is whatever makes exactly that sentence visible.',
         enough: 'Your counts are real numbers you already hold, not numbers you expect to have later.' },
       { terms: [{ term: 'Axis', meaning: 'The ruled edge of the chart carrying the numbers each value is read against.' }, { term: 'Direct label', meaning: 'The value written on the bar itself, so nobody has to look away to a key to read it.' }, { term: 'Contrast ratio', meaning: 'A number comparing the lightness of two colours, measured with a free checker rather than judged by eye.' }], expect: 'The chart drawn to the rules: axis from zero for bars, direct labels, measured colours.',
-        fields: ['axis-start', 'labelling-choice', 'contrast-result'],
+        fields: ['axis-start', 'cut-axis-ratio', 'labelling-choice', 'contrast-result'],
         demo: {
           scenario: 'Made-up example. Drawing one bar chart from twenty-two survey answers, and finding the first draft said something the answers could not support.',
           beats: [
             { label: 'What I had', text: 'Twenty-two answers to one question: was it clear your payment had gone through? Nine said no, thirteen said yes.' },
-            { label: 'My first draft', text: 'Two bars, with the axis starting at eight because that fitted the graph paper neatly, and a legend in the corner. The nine looked like roughly a third of the thirteen.' },
+            { label: 'My first draft', text: 'Two bars, with the axis starting at eight because that fitted the graph paper neatly, and a legend in the corner. The nine bar stood one square tall and the thirteen bar five, so nine looked like a fifth of thirteen, when it is about seven-tenths of it.' },
             { label: 'What a reader took from it', text: 'She looked at it and said “so hardly anyone was confused”. The cut axis had done that, not the answers.' },
             { label: 'What I changed', text: 'Axis from zero. The counts written on the bars themselves. Legend deleted. And under the title, in the same ink: 22 people, reached through two WhatsApp groups.' },
             { label: 'What it cost', text: 'The redrawn chart is duller. Nine against thirteen now looks like what it is, and the picture no longer promises more than twenty-two people can give.' },
@@ -1296,10 +1437,10 @@ export const guided08: Record<string, Guided> = {
           material: 'One made-up chart: of 22 people, 9 were unsure their payment had gone through and 13 were sure. It is two bars with the counts written on them.',
           question: 'Which alternative text carries the same information to someone who cannot see it?',
           options: [
-            { label: 'Of 22 people reached through two WhatsApp groups, 9 were unsure their payment had gone through and 13 were sure.', correct: true, feedback: 'It gives the comparison, both counts and the sample. A reader who never sees the bars can use it exactly as you can.' },
-            { label: 'A bar chart showing responses to the payment clarity question.', feedback: 'It names the subject and withholds the answer. The reader learns that a chart exists, which is not what the chart is for.' },
-            { label: 'Two vertical bars, the right one taller than the left, with a light grid behind them.', feedback: 'This describes the drawing. Someone could redraw the picture from it and still not know what anybody answered.' },
-            { label: 'Most people were sure their payment had gone through.', feedback: 'It carries a conclusion instead of the values, and “most” from thirteen of twenty-two is doing more work than the counts allow.' },
+            { label: 'Of 22 people reached through two WhatsApp groups, 9 were unsure their payment went through and 13 were sure.', correct: true, was: ['Of 22 people reached through two WhatsApp groups, 9 were unsure their payment had gone through and 13 were sure.'], feedback: 'It gives the comparison, both counts and the sample. A reader who never sees the bars can use it exactly as you can.' },
+            { label: 'A bar chart of answers to the payment clarity question, from a survey shared in two WhatsApp groups.', was: ['A bar chart showing responses to the payment clarity question.'], feedback: 'It names the subject and the source and withholds the answer. The reader learns that a chart exists, which is not what the chart is for.' },
+            { label: 'Two vertical bars, the right one taller than the left, each with its number written on it, and a light grid.', was: ['Two vertical bars, the right one taller than the left, with a light grid behind them.'], feedback: 'This describes the drawing. Someone could redraw the picture from it and still not know what anybody answered.' },
+            { label: 'Most of the people asked were sure their payment had gone through, and a sizeable minority were unsure.', was: ['Most people were sure their payment had gone through.'], feedback: 'Thirteen of twenty-two is a majority of those asked, so “most” is not false, but the sentence drops both counts and the size of the sample. A listener cannot tell 13 of 22 from 1,300 of 2,200.' },
           ],
           then: 'Cover your own chart and read only your alternative text. If you cannot answer the question the chart was drawn to answer, rewrite it with the counts in it.',
         },
@@ -1312,11 +1453,11 @@ export const guided08: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'All your values sit between 40 and 60, so you start the bar axis at 40 to make the difference visible. What is wrong?',
+        question: 'Your two bars are 45 and 55, so you start the bar axis at 40 to make the difference visible. What is wrong?',
         options: [
-          { label: 'On bars the length is the comparison, so a shortened axis shows a difference that is not there.', correct: true, feedback: 'A bar twice as long reads as twice as much. Cutting the axis breaks that, and nobody looking at the picture knows you did it.' },
-          { label: 'Nothing, as long as the axis is labelled with its starting value.', feedback: 'The label helps the one careful reader. The shape of the bars is what everyone else carries away, and it is still untrue.' },
-          { label: 'It is a problem for lines and fine for bars.', feedback: 'It is the other way round. A line shows change, so its axis can start where the change is; a bar shows an amount by its length.' },
+          { label: 'The bars become 5 and 15 long, so 55 looks three times 45 when it is about 1.2 times.', correct: true, was: ['On bars the length is the comparison, so a shortened axis shows a difference that is not there.'], feedback: 'On bars the length is the comparison. From zero the bars are 45 and 55 long, a ratio of about 1.2; from 40 they are 5 and 15, a ratio of 3. Nobody looking at the picture knows you did it.' },
+          { label: 'Little is wrong, as long as the axis label shows clearly that it starts at 40.', was: ['Nothing, as long as the axis is labelled with its starting value.'], feedback: 'The label helps the one careful reader. Everyone else carries away the shapes, and the shapes now say three times.' },
+          { label: 'A cut axis misleads on a line chart; on a bar chart it is the usual, accepted way to zoom in.', was: ['It is a problem for lines and fine for bars.'], feedback: 'It is the other way round. The assigned guidance accepts a clearly marked break on a line chart and says not to break a bar chart’s axis, because length is how bars are read.' },
         ],
         repair: 'Look at your axis-start box in step 3. If the axis does not begin at zero for bars, redraw the chart and record the change in the last step.',
         recheck: 'The bar axis starts at zero, and the box says so in your own words.',
@@ -1324,9 +1465,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Nine of your twenty-two answers were unsure, so you write “41 per cent were unsure” on the chart. What does that do?',
         options: [
-          { label: 'A percentage reads as a rate that would hold for other people, and twenty-two answers cannot support that.', correct: true, feedback: 'The counts say what happened among the people you reached. The percentage quietly promises the same share elsewhere, which you have no way of knowing.' },
-          { label: 'It makes the chart clearer, because percentages are easier to compare.', feedback: 'Percentages compare well between large samples. From twenty-two they turn a small count into a claim about everyone.' },
-          { label: 'It is fine as long as n appears somewhere on the chart.', feedback: 'Putting n beside it helps, and the number people repeat afterwards is still the percentage. Write the counts where the percentage would have been.' },
+          { label: 'It reads as a rate for people in general, yet one changed answer would move it 4.5 points.', correct: true, was: ['A percentage reads as a rate that would hold for other people, and twenty-two answers cannot support that.'], feedback: 'Nine of twenty-two is 40.9 per cent, so the arithmetic is right; the trouble is what it implies. One person answering the other way makes it 36 or 45 per cent, and the percentage quietly promises the same share among people you never asked. Write the counts.' },
+          { label: 'It makes the chart clearer, because percentages are easier to compare than counts.', was: ['It makes the chart clearer, because percentages are easier to compare.'], feedback: 'Percentages compare well between large samples. From twenty-two answers they turn a small count into what reads like a claim about everyone.' },
+          { label: 'It is fine, provided n = 22 is also printed somewhere on the same chart for readers.', was: ['It is fine as long as n appears somewhere on the chart.'], feedback: 'Printing n helps, and the number people repeat afterwards is still the percentage. Write the counts where the percentage would have been.' },
         ],
         repair: 'Check your sample-line and underlying-numbers boxes in step 4. Replace any rate with the counts, keep n and the recruitment route, and record the change in the last step.',
         recheck: 'The chart and the numbers beside it show counts, with how many people and how they were reached.',
@@ -1334,14 +1475,23 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Your alternative text reads “A bar chart comparing two answers.” What is missing?',
         options: [
-          { label: 'The finding itself: the values, and the comparison the chart exists to show.', correct: true, feedback: 'Someone using the text instead of the picture should end up knowing what you know. A description of the drawing leaves them with nothing to use.' },
-          { label: 'The colours and the shape of the bars.', feedback: 'Those belong to the picture. Adding more description makes the text longer and carries none of the information.' },
-          { label: 'Nothing: the numbers are read out from the chart itself.', feedback: 'A drawn or photographed chart carries no numbers anything can read out. Whatever is not in the text is not available at all.' },
+          { label: 'The finding itself: the counts, and the comparison the chart was drawn to show.', correct: true, was: ['The finding itself: the values, and the comparison the chart exists to show.'], feedback: 'Someone using the text instead of the picture should end up knowing what you know. A description of the drawing leaves them with nothing to use.' },
+          { label: 'A description of the colours, the bar shapes and the gridlines in the picture.', was: ['The colours and the shape of the bars.'], feedback: 'Those belong to the picture. Adding more description makes the text longer and carries none of the information.' },
+          { label: 'Very little, because a screen reader can read the numbers out of the chart image.', was: ['Nothing: the numbers are read out from the chart itself.'], feedback: 'A drawn or photographed chart carries no numbers anything can read out. Whatever is not in the text is not available at all.' },
         ],
         repair: 'Rewrite the alt-text box in step 4 so it contains the counts, the comparison and the sample, then record the change in the last step.',
         recheck: 'The alternative text answers the question the chart was drawn to answer.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a community choir asked its 18 members which rehearsal night they prefer: 12 chose Tuesday and 6 chose Thursday. The secretary drew a bar chart with the axis starting at 5 and titled it “67% prefer Tuesday”, ready to pin on the choir’s noticeboard.',
+      prompt: 'Decide what you would change before it is pinned up, and explain why, showing the arithmetic.',
+      anchors: {
+        weak: 'Says the chart is fine, or only removes the percentage, without noticing that the cut axis makes Tuesday look seven times Thursday rather than twice.',
+        adequate: 'Starts the axis at zero, because from 5 the bars are 7 and 1 long (seven times) though 12 is twice 6; writes the counts and n = 18 on the chart instead of a bare 67%.',
+        strong: 'As adequate, plus alternative text with both counts and n, a note that one member changing moves the share by about 5.6 points, and that 18 members say nothing about other choirs.',
+      },
+    },
     saveRoute: {
       auto: 'The comparison, the alternative text and the counts save as you type, on this device first and then online.',
       external: 'The chart itself stays on your graph paper or in your spreadsheet. Note where it lives in the last step; nothing is uploaded.',
@@ -1392,10 +1542,10 @@ export const guided08: Record<string, Guided> = {
           material: 'Four made-up names for one value: a mid grey used behind cards and behind the page header. The candidates are light-grey, grey-200, surface-raised and card-background.',
           question: 'Which name is still true after the product gains a dark theme and the value becomes a near-black?',
           options: [
-            { label: 'surface-raised, because it names what the value is for rather than what it looks like or where it sits.', correct: true, feedback: 'The role survives the change. The value behind it becomes near-black and every screen using it stays right with no rename.' },
-            { label: 'light-grey, because anyone reading the sheet can picture it at once.', feedback: 'It is the easiest name to read today and the first to become a lie. A token called light-grey holding a near-black is worse than no name at all.' },
-            { label: 'grey-200, because the number keeps the greys in order.', feedback: 'A numbered grey survives a value change and says nothing about when to use it, so two people pick different ones for the same job.' },
-            { label: 'card-background, because it says exactly where it goes.', feedback: 'It is honest until the header uses it too. A token named after one place it appears leaves you renaming or misusing it as soon as there is a second place.' },
+            { label: 'surface-raised, because it names the job the value does rather than its look or its place.', correct: true, was: ['surface-raised, because it names what the value is for rather than what it looks like or where it sits.'], feedback: 'The role survives the change. The value behind it becomes near-black and every screen using it stays right with no rename.' },
+            { label: 'light-grey, because anyone reading the sheet can picture the colour straight away.', was: ['light-grey, because anyone reading the sheet can picture it at once.'], feedback: 'It is the easiest name to read today and the first to become a lie. A token called light-grey holding a near-black is worse than no name at all.' },
+            { label: 'grey-200, because the number keeps all the greys in a sensible light-to-dark order.', was: ['grey-200, because the number keeps the greys in order.'], feedback: 'A numbered grey survives a value change and says nothing about when to use it, so two people pick different ones for the same job.' },
+            { label: 'card-background, because it says exactly where on the screen the value is used.', was: ['card-background, because it says exactly where it goes.'], feedback: 'It is honest until the header uses it too. A token named after one place it appears leaves you renaming or misusing it as soon as there is a second place.' },
           ],
           then: 'Go through your own names and mark any that describe a colour, a size, a shape or a single place. Rewrite each one as the job it does.',
         },
@@ -1432,9 +1582,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'You name a token light-grey and use it for card surfaces. A year later the product gains a dark theme. What happens to that name?',
         options: [
-          { label: 'The name stops describing the value, so people either keep a wrong name or rename it everywhere it appears.', correct: true, feedback: 'A name tied to appearance survives only as long as the appearance does. The rename is not the real cost; the months of a wrong name being trusted are.' },
-          { label: 'Nothing, because you can simply change the value behind it.', feedback: 'You can, and the sheet then tells every reader something untrue. Names are read far more often than values.' },
-          { label: 'It only matters if someone outside your own work reads the sheet.', feedback: 'You are that someone in six months. The sheet exists precisely because nobody remembers which grey was which.' },
+          { label: 'It stops describing the value, so people keep a false name or rename it everywhere.', correct: true, was: ['The name stops describing the value, so people either keep a wrong name or rename it everywhere it appears.'], feedback: 'A name tied to appearance survives only as long as the appearance does. The rename is not the real cost; the months of a wrong name being trusted are.' },
+          { label: 'Very little, because you can change the value behind the name in one place.', was: ['Nothing, because you can simply change the value behind it.'], feedback: 'You can, and the sheet then tells every reader something untrue. Names are read far more often than values.' },
+          { label: 'It only matters if someone outside your own work reads the token sheet.', was: ['It only matters if someone outside your own work reads the sheet.'], feedback: 'You are that someone in six months. The sheet exists precisely because nobody remembers which grey was which.' },
         ],
         repair: 'Check your colour-tokens and type-tokens boxes in step 2. Rewrite any name describing a colour, a size or a shape, and record the change in the last step.',
         recheck: 'No token name would become untrue if the value behind it changed.',
@@ -1443,7 +1593,7 @@ export const guided08: Record<string, Guided> = {
         question: 'A screen needs a gap slightly wider than any spacing token, so you add a new token for it. What does that do over a year?',
         options: [
           { label: 'The set grows until every value has a name and none of them has a rule.', correct: true, feedback: 'The sheet works by being small enough to hold in your head. Once it is not, people pick by eye again and the names stop meaning anything.' },
-          { label: 'Nothing, since more tokens give the design more flexibility.', feedback: 'More tokens give more places to be inconsistent. Flexibility nobody can remember is only choice coming back.' },
+          { label: 'It adds flexibility, since more tokens give the design more ways to fit.', was: ['Nothing, since more tokens give the design more flexibility.'], feedback: 'More tokens give more places to be inconsistent. Flexibility nobody can remember is only choice coming back.' },
           { label: 'It is fine, because the new value is used on that one screen.', feedback: 'A token used once is a value with a name attached. Either a second screen needs it, or the screen should move to the nearest token.' },
         ],
         repair: 'Look at your exceptions-found box in step 4. For each one ask whether a second screen needs it, sort it into missing-roles or accidents, and record what you decided in the last step.',
@@ -1452,14 +1602,23 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'The body text pair passes the contrast threshold, so you record that and stop measuring. What have you missed?',
         options: [
-          { label: 'The quiet pairs — captions, placeholder text, disabled labels — which are the ones that usually fail.', correct: true, feedback: 'Body text is chosen to be readable and rarely fails. The lighter text was chosen to be quiet, and quiet is the same thing as low contrast.' },
-          { label: 'Nothing, as long as the largest text passes as well.', feedback: 'Large text is judged against a lower threshold and tells you nothing about the small grey caption underneath it.' },
-          { label: 'Only the colours, since type and spacing are not measured.', feedback: 'Type and spacing are not measured for contrast, and every text-on-surface pair is. The gap is the pairs you never listed.' },
+          { label: 'The quiet pairs — captions, placeholders, disabled labels — which fail most often.', correct: true, was: ['The quiet pairs — captions, placeholder text, disabled labels — which are the ones that usually fail.'], feedback: 'Body text is chosen to be readable and rarely fails. The lighter text was chosen to be quiet, and quiet usually means lower contrast.' },
+          { label: 'Very little, as long as the largest text on the sheet passes its own lower threshold too.', was: ['Nothing, as long as the largest text passes as well.'], feedback: 'Large text is judged against a lower threshold and tells you nothing about the small grey caption underneath it.' },
+          { label: 'Only the colours, because type and spacing tokens do not need measuring at all.', was: ['Only the colours, since type and spacing are not measured.'], feedback: 'Type and spacing are not measured for contrast, and every text-on-surface pair is. The gap is the pairs you never listed.' },
         ],
         repair: 'Return to your pairs-measured box in step 3 and add every quiet pair you allow, including captions, placeholder and disabled text. Record what you found in the last step.',
         recheck: 'Every text-on-surface pair on the sheet carries a measured number.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a bakery’s pre-order app has colours named light-beige, beige-2, beige-2b and pink-button. beige-2 and beige-2b differ by about 2 per cent. The small grey caption under each cake measures 3.9:1 against the cream card it sits on.',
+      prompt: 'Decide what you would rename, merge and fix on the sheet, and explain why.',
+      anchors: {
+        weak: 'Keeps the appearance names, adds another token for the caption, or accepts 3.9:1 because the caption is only small print.',
+        adequate: 'Renames by role (such as surface-raised, action-primary), merges beige-2 and beige-2b, and darkens or forbids the caption pair because small text needs at least 4.5:1, recording the measured number.',
+        strong: 'As adequate, plus what the merge cost, a check of the caption on every other surface it sits on, and a note that passing 4.5:1 is a floor rather than proof the caption reads well.',
+      },
+    },
     saveRoute: {
       auto: 'The token names, the measured ratios and the exception list save as you type, on this device first and then online.',
       external: 'Nothing here needs a file. Keep your m03 type scale to hand; several type tokens come straight from it.',
@@ -1469,6 +1628,7 @@ export const guided08: Record<string, Guided> = {
   },
   'm08-l12-v1': {
     route: paperRoute('the two assembled screens, including one non-happy state'),
+    material: [starterScreen, researchConsult, researchObserved, researchReviews, paperTest, browseNote, surveyCounts.replace(' Use them only if you hold no real counts, and write “made-up practice data” on the chart.', ''), starterSteps],
     worksheet: [
       { id: 'assemble', title: 'Two screens from what you already have', fields: [
         { id: 'screens-built', label: 'The two screens you assembled, which one carries a non-happy state, and where the drawings live', kind: 'short', hint: 'A non-happy state is empty, loading, an error or a limit reached. One of the two must show one.' },
@@ -1479,7 +1639,8 @@ export const guided08: Record<string, Guided> = {
         { id: 'set-updates', label: 'What you added to the component inventory or the token sheet', kind: 'short' },
       ] },
       { id: 'critique', title: 'Critique against your own evidence', intro: 'Finding by finding, not screen by feeling.', fields: [
-        { id: 'findings-list', label: 'Your m05 findings and m07 test results, one per line', kind: 'long' },
+        { id: 'findings-list', label: 'Your m05 findings and m07 test results, or the supplied practice notes, one per line', kind: 'long', sensitive: true,
+          hint: 'One de-identified line per finding with its count, such as “3 of 4 interviewees checked with someone before paying”. No names or quotes; raw notes stay in your private file. Using the supplied notes? Mark each line “supplied”.' },
         { id: 'served-or-not', label: 'For each finding: whether this screen serves it, and how you can tell', kind: 'long', example: 'Example (made up): people compared on remaining places · the row does not show them · not served.' },
         { id: 'critique-labels', label: 'Each line of your critique labelled evidence, guess or taste', kind: 'long', hint: 'Every line gets one label. Taste stays in; it just gets named.' },
         { id: 'strongest-failure', label: 'The strongest failure you found, and the repair you made', kind: 'long' },
@@ -1583,8 +1744,8 @@ export const guided08: Record<string, Guided> = {
         question: 'One line of your critique says the blue is too cold. Should it be in the critique at all?',
         options: [
           { label: 'Keep it and label it taste, so it stays visible without outranking a finding.', correct: true, feedback: 'Taste is part of design work and it is the weakest kind of reason. The label is what stops it quietly winning against something you observed.' },
-          { label: 'Delete it, because a critique should only use evidence.', feedback: 'Deleting the line does not remove the preference; it removes the label. The same thought returns in the next conversation with no marking on it.' },
-          { label: 'Keep it unlabelled, since it is obvious which lines are opinions.', feedback: 'It is not obvious to anyone else, and it will not be obvious to you in a month. An unlabelled preference reads exactly like a finding on the page.' },
+          { label: 'Delete it, because a critique should rest only on evidence that you can point to.', was: ['Delete it, because a critique should only use evidence.'], feedback: 'Deleting the line does not remove the preference; it removes the label. The same thought returns in the next conversation with no marking on it.' },
+          { label: 'Keep it unlabelled, since anyone can see which lines are matters of opinion.', was: ['Keep it unlabelled, since it is obvious which lines are opinions.'], feedback: 'It is not obvious to anyone else, and it will not be obvious to you in a month. An unlabelled preference reads exactly like a finding on the page.' },
         ],
         repair: 'Return to your critique-labels box in step 3 and put evidence, guess or taste beside every line, then record the change in the last step.',
         recheck: 'Every line of the critique carries one of the three labels.',
@@ -1602,14 +1763,23 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'The heading order and contrast checks passed, so you write that the screens are accessible. What is wrong with that?',
         options: [
-          { label: 'The preliminary checks cover a small part, and keyboard and screen-reader behaviour stays untested until something is built.', correct: true, feedback: 'Passing what you could run says that what you could run passed. Writing the untested list is what keeps the claim honest for whoever reads it next.' },
-          { label: 'Nothing, as long as you ran every check on the list.', feedback: 'The list is deliberately small so one person can run it alone. It was never meant to carry the whole judgement.' },
-          { label: 'The checks only mean anything on a built screen, so none of them count.', feedback: 'Several run perfectly well on a drawing: heading order, contrast, and text at a larger size. It is the interactive ones that need something built.' },
+          { label: 'The checks cover a small part; keyboard and screen-reader use stay untested until built.', correct: true, was: ['The preliminary checks cover a small part, and keyboard and screen-reader behaviour stays untested until something is built.'], feedback: 'Passing what you could run says that what you could run passed. Writing the untested list is what keeps the claim honest for whoever reads it next.' },
+          { label: 'Very little, as long as every check on the preliminary list was run and passed.', was: ['Nothing, as long as you ran every check on the list.'], feedback: 'The list is deliberately small so one person can run it alone. It was never meant to carry the whole judgement.' },
+          { label: 'Those checks only mean anything on a built screen, so none of the passes count.', was: ['The checks only mean anything on a built screen, so none of them count.'], feedback: 'Several run perfectly well on a drawing: heading order, contrast, and text at a larger size. It is the interactive ones that need something built.' },
         ],
         repair: 'Add to your checks-not-possible box in step 4 every check you could not run, plus one sentence on what passing the others does not prove. Record the change in the last step.',
         recheck: 'The record separates what was run, what failed and what could not be checked at all.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a museum’s timed-ticket screen has just been assembled. Its critique has three lines: “the teal feels cold”; “in a hallway test, 4 of 6 visitors scrolled past the time slots without seeing them”; and “people will probably miss the step-free entrance note”.',
+      prompt: 'Label each line evidence, guess or taste, and decide which problem to fix first. Explain why.',
+      anchors: {
+        weak: 'Fixes the teal first or treats all three lines as equal opinions, or deletes the taste line instead of labelling it.',
+        adequate: 'Labels the hallway result evidence, the entrance note a guess and the teal taste; fixes the missed time slots first because they stop the task and an observation backs them.',
+        strong: 'As adequate, plus what would settle the guess, a note that six hallway visitors is a small sample, and an untested list (keyboard and screen reader) written beside the fix.',
+      },
+    },
     saveRoute: {
       auto: 'The invention list, the critique with its labels and the check results save as you type, on this device first and then online.',
       external: 'The two screens stay on your paper or in your own folder. Note where they live in the first step; nothing is uploaded.',

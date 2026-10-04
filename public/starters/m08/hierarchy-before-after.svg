@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1400" viewBox="0 0 900 1400" role="img" aria-labelledby="figure-title figure-desc">
+  <title id="figure-title">Same screen, two rankings: before and after (HaruCourse Module 8 practice figure, made up)</title>
+  <desc id="figure-desc">A made-up practice figure for HaruCourse Module 8, lesson 3. Two versions of the same phone booking screen sit side by side, with numbered callouts. The ranking changed because of this screen's task and the made-up research notes, not because of a general rule such as "the main button should always be biggest". Callout 1, Share with a friend: before, a small icon in the corner, drawn on the assumption that sharing is rarely used; after, an outlined button under Reserve, because 3 of 4 interviewees and the one observed participant checked the plan with someone else before paying. Callout 2, Reserve a place stays the only filled button because this screen exists so a person can decide and book; Add to shortlist becomes a quiet text action, because in the paper test one of five people pressed it believing she had booked when both buttons were filled and equal. Callout 3, 6 of 8 places left: before, small light grey text; after, body size and semibold under the price, because two of the five paper-test participants looked for it before reading anything else. Callout 4, What to bring: before, hidden behind More details below the buttons; after, a short list above them, because 7 of 11 public reviews of local class providers mentioned not knowing what to bring. Callout 5, a second defensible layout (B): Share beside the price, next to the details a friend would need; neither layout is proven, and to choose you would ask people to check the class with a friend and then book it, and watch which they find. What would change the ranking: notes showing that people book alone, like the fourth interviewee, would make a quiet share link defensible. Everything here is made up for practice; it is not research and not a real studio. The figure is greyscale, so every difference shown is carried by weight, size, containment and position rather than colour.</desc>
+
+  <g id="figure-heading">
+    <rect x="0" y="0" width="900" height="1400" fill="#ffffff"/>
+    <text x="40" y="44" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="22" font-weight="700" fill="#1f1f1f">Same screen, two rankings: before and after</text>
+    <text x="40" y="72" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="14" fill="#444444">A made-up practice figure for HaruCourse Module 8, lesson 3. Each number marks a change; the notes below give the reason.</text>
+    <text x="40" y="112" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="18" font-weight="700" fill="#1f1f1f">Before</text>
+    <text x="470" y="112" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="18" font-weight="700" fill="#1f1f1f">After (layout A)</text>
+  </g>
+
+  <g id="before-screen" transform="translate(40 128)">
+    <rect x="0.5" y="0.5" width="389" height="843" fill="#ffffff" stroke="#bdbdbd"/>
+    <g id="before-header">
+      <text x="20" y="44" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="16" fill="#1f1f1f">‹ All classes</text>
+      <rect x="346" y="26" width="22" height="22" rx="4" fill="none" stroke="#555555" stroke-width="1.5"/>
+      <path d="M357 32 V42 M352 37 L357 32 L362 37" fill="none" stroke="#555555" stroke-width="1.5"/>
+      <line x1="0" y1="60" x2="390" y2="60" stroke="#e0e0e0"/>
+    </g>
+    <g id="before-photo">
+      <rect x="20" y="72" width="350" height="190" rx="8" fill="#ececec" stroke="#c4c4c4"/>
+      <line x1="20" y1="72" x2="370" y2="262" stroke="#d2d2d2"/>
+      <line x1="370" y1="72" x2="20" y2="262" stroke="#d2d2d2"/>
+      <rect x="66" y="153" width="258" height="28" rx="4" fill="#ececec"/>
+      <text x="195" y="172" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="13" fill="#555555">Photo: hands shaping clay on a wheel</text>
+    </g>
+    <g id="before-summary">
+      <text x="20" y="300" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f1f1f">Wheel throwing for</text>
+      <text x="20" y="330" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f1f1f">complete beginners</text>
+      <text x="20" y="362" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="16" fill="#333333">Saturday 14 November, 10:00 to 12:30</text>
+      <text x="20" y="388" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="16" font-weight="600" fill="#1f1f1f">£45 per person</text>
+      <text x="20" y="410" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" fill="#9a9a9a">6 of 8 places left</text>
+      <text x="20" y="430" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="14" fill="#6b6b6b">Studio 2, ground floor, step-free entrance</text>
+    </g>
+    <g id="before-actions">
+      <rect x="20" y="452" width="168" height="52" rx="8" fill="#555555"/>
+      <text x="104" y="483" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Reserve a place</text>
+      <rect x="202" y="452" width="168" height="52" rx="8" fill="#555555"/>
+      <text x="286" y="483" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Add to shortlist</text>
+    </g>
+    <g id="before-details">
+      <text x="20" y="540" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="14" fill="#555555">More details ▾</text>
+    </g>
+    <g id="before-terms">
+      <text x="20" y="756" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="13" fill="#6b6b6b">Free cancellation up to 48 hours before the class.</text>
+    </g>
+    <g id="callouts-before" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+      <line x1="372" y1="37" x2="396" y2="37" stroke="#1f1f1f" stroke-width="1.5"/>
+      <circle cx="408" cy="37" r="12" fill="#1f1f1f"/>
+      <text x="408" y="41.5" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">1</text>
+      <line x1="372" y1="478" x2="396" y2="478" stroke="#1f1f1f" stroke-width="1.5"/>
+      <circle cx="408" cy="478" r="12" fill="#1f1f1f"/>
+      <text x="408" y="482.5" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">2</text>
+      <line x1="130" y1="406" x2="396" y2="406" stroke="#1f1f1f" stroke-width="1" stroke-dasharray="3 3"/>
+      <circle cx="408" cy="406" r="12" fill="#1f1f1f"/>
+      <text x="408" y="410.5" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">3</text>
+      <line x1="120" y1="535" x2="396" y2="535" stroke="#1f1f1f" stroke-width="1" stroke-dasharray="3 3"/>
+      <circle cx="408" cy="535" r="12" fill="#1f1f1f"/>
+      <text x="408" y="539.5" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">4</text>
+    </g>
+  </g>
+
+  <g id="after-screen" transform="translate(470 128)">
+    <rect x="0.5" y="0.5" width="389" height="843" fill="#ffffff" stroke="#bdbdbd"/>
+    <g id="after-header">
+      <text x="20" y="44" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="16" fill="#1f1f1f">‹ All classes</text>
+      <line x1="0" y1="60" x2="390" y2="60" stroke="#e0e0e0"/>
+    </g>
+    <g id="after-photo">
+      <rect x="20" y="72" width="350" height="190" rx="8" fill="#ececec" stroke="#c4c4c4"/>
+      <line x1="20" y1="72" x2="370" y2="262" stroke="#d2d2d2"/>
+      <line x1="370" y1="72" x2="20" y2="262" stroke="#d2d2d2"/>
+      <rect x="66" y="153" width="258" height="28" rx="4" fill="#ececec"/>
+      <text x="195" y="172" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="13" fill="#555555">Photo: hands shaping clay on a wheel</text>
+    </g>
+    <g id="after-summary">
+      <text x="20" y="300" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f1f1f">Wheel throwing for</text>
+      <text x="20" y="330" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f1f1f">complete beginners</text>
+      <text x="20" y="362" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="16" fill="#333333">Saturday 14 November, 10:00 to 12:30</text>
+      <text x="20" y="388" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="16" font-weight="600" fill="#1f1f1f">£45 per person</text>
+      <text x="20" y="414" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="16" font-weight="600" fill="#1f1f1f">6 of 8 places left</text>
+      <text x="20" y="438" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="14" fill="#6b6b6b">Studio 2, ground floor, step-free entrance</text>
+    </g>
+    <g id="after-layout-b-position">
+      <rect x="232" y="370" width="138" height="28" rx="6" fill="none" stroke="#555555" stroke-width="1.5" stroke-dasharray="5 4"/>
+      <text x="301" y="389" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" fill="#444444">B: Share could sit here</text>
+    </g>
+    <g id="after-what-to-bring">
+      <text x="20" y="476" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="16" font-weight="600" fill="#1f1f1f">What to bring</text>
+      <text x="20" y="500" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#333333">• Clothes you do not mind getting muddy</text>
+      <text x="20" y="524" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#333333">• Short nails make the wheel easier</text>
+      <text x="20" y="548" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#333333">• Aprons and tools are provided</text>
+    </g>
+    <g id="after-actions">
+      <rect x="20" y="574" width="350" height="52" rx="8" fill="#333333"/>
+      <text x="195" y="606" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Reserve a place</text>
+      <rect x="20" y="640" width="350" height="52" rx="8" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+      <text x="195" y="672" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="17" font-weight="600" fill="#1f1f1f">Share with a friend</text>
+      <text x="195" y="724" text-anchor="middle" text-decoration="underline" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#333333">Add to shortlist</text>
+    </g>
+    <g id="after-terms">
+      <text x="20" y="756" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="13" fill="#6b6b6b">Free cancellation up to 48 hours before the class.</text>
+    </g>
+    <g id="callouts-after" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+      <line x1="372" y1="666" x2="396" y2="666" stroke="#1f1f1f" stroke-width="1.5"/>
+      <circle cx="408" cy="666" r="12" fill="#1f1f1f"/>
+      <text x="408" y="670.5" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">1</text>
+      <line x1="372" y1="600" x2="396" y2="600" stroke="#1f1f1f" stroke-width="1.5"/>
+      <circle cx="408" cy="600" r="12" fill="#1f1f1f"/>
+      <text x="408" y="604.5" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">2</text>
+      <line x1="262" y1="719" x2="396" y2="719" stroke="#1f1f1f" stroke-width="1" stroke-dasharray="3 3"/>
+      <circle cx="408" cy="719" r="12" fill="#1f1f1f"/>
+      <text x="408" y="723.5" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">2</text>
+      <line x1="170" y1="412" x2="396" y2="412" stroke="#1f1f1f" stroke-width="1" stroke-dasharray="3 3"/>
+      <circle cx="408" cy="414" r="12" fill="#1f1f1f"/>
+      <text x="408" y="418.5" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">3</text>
+      <line x1="320" y1="512" x2="396" y2="512" stroke="#1f1f1f" stroke-width="1" stroke-dasharray="3 3"/>
+      <circle cx="408" cy="512" r="12" fill="#1f1f1f"/>
+      <text x="408" y="516.5" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">4</text>
+      <line x1="372" y1="384" x2="396" y2="384" stroke="#1f1f1f" stroke-width="1.5"/>
+      <circle cx="408" cy="384" r="12" fill="#1f1f1f"/>
+      <text x="408" y="388.5" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">5</text>
+    </g>
+  </g>
+
+  <g id="legend" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+    <text x="40" y="1012" font-size="16" font-weight="700" fill="#1f1f1f">What changed, and the made-up evidence behind each change</text>
+    <g id="legend-1">
+      <circle cx="52" cy="1037" r="11" fill="#1f1f1f"/>
+      <text x="52" y="1041.5" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">1</text>
+      <text x="74" y="1042" font-size="14" fill="#1f1f1f">Share with a friend. Before: a small icon in the corner, drawn on the assumption that sharing is rarely used.</text>
+      <text x="74" y="1062" font-size="14" fill="#1f1f1f">After: an outlined button under Reserve, because 3 of 4 interviewees and the one observed participant checked</text>
+      <text x="74" y="1082" font-size="14" fill="#1f1f1f">the plan with someone else before paying.</text>
+    </g>
+    <g id="legend-2">
+      <circle cx="52" cy="1105" r="11" fill="#1f1f1f"/>
+      <text x="52" y="1109.5" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">2</text>
+      <text x="74" y="1110" font-size="14" fill="#1f1f1f">Reserve a place stays the only filled button, because this screen exists so a person can decide and book.</text>
+      <text x="74" y="1130" font-size="14" fill="#1f1f1f">Add to shortlist becomes a quiet text action: in the paper test, one of five people pressed it believing she</text>
+      <text x="74" y="1150" font-size="14" fill="#1f1f1f">had booked, when both buttons were filled and equal.</text>
+    </g>
+    <g id="legend-3">
+      <circle cx="52" cy="1173" r="11" fill="#1f1f1f"/>
+      <text x="52" y="1177.5" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">3</text>
+      <text x="74" y="1178" font-size="14" fill="#1f1f1f">6 of 8 places left. Before: small, light grey text. After: body size and semibold, under the price, because</text>
+      <text x="74" y="1198" font-size="14" fill="#1f1f1f">two of the five paper-test participants looked for it before reading anything else.</text>
+    </g>
+    <g id="legend-4">
+      <circle cx="52" cy="1221" r="11" fill="#1f1f1f"/>
+      <text x="52" y="1225.5" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">4</text>
+      <text x="74" y="1226" font-size="14" fill="#1f1f1f">What to bring. Before: hidden behind More details, below the buttons. After: a short list above them,</text>
+      <text x="74" y="1246" font-size="14" fill="#1f1f1f">because 7 of 11 public reviews of local class providers mentioned not knowing what to bring.</text>
+    </g>
+    <g id="legend-5">
+      <circle cx="52" cy="1269" r="11" fill="#1f1f1f"/>
+      <text x="52" y="1273.5" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">5</text>
+      <text x="74" y="1274" font-size="14" fill="#1f1f1f">A second defensible layout (B): Share beside the price, next to the details a friend would need. Neither is</text>
+      <text x="74" y="1294" font-size="14" fill="#1f1f1f">proven. To choose, ask people to check the class with a friend and then book it, and watch which they find.</text>
+    </g>
+    <g id="legend-limits">
+      <text x="40" y="1330" font-size="14" font-style="italic" fill="#333333">What would change the ranking: notes showing that people book alone, like the fourth interviewee, would make a</text>
+      <text x="40" y="1350" font-size="14" font-style="italic" fill="#333333">quiet share link defensible. Everything here is made up for practice; it is not research and not a real studio.</text>
+    </g>
+  </g>
+</svg>

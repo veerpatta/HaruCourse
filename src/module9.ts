@@ -92,7 +92,7 @@ export const module9: Lesson[] = [
     misconception:
       "“Motion makes an interface feel modern.” It makes an interface feel slower when it delays action, and it makes an interface feel confusing when several things move at once. What reads as quality is usually immediate feedback and continuity, not the amount of movement.",
     example:
-      "An audit of the booking flow found eleven animations. Four were feedback and stayed. Three were continuity — the filter panel sliding from the control that opened it, the detail view expanding from its row — and stayed. Two were attention: one legitimate, marking a place that had just been taken by someone else, and one an animated banner promoting a class, which was demoted to a static card. Two were decoration: a bouncing icon on the confirmation screen, kept because it cost nothing and did not delay anything, and an animated page transition that added 400ms to every navigation, which was removed and immediately made the whole flow feel faster.",
+      "Made-up example: an audit of the booking flow found eleven animations. Four were feedback and stayed. Three were continuity — the filter panel sliding from the control that opened it, the detail view expanding from its row — and stayed. Two were attention: one legitimate, marking a place that had just been taken by someone else, and one an animated banner promoting a class, which was demoted to a static card. Two were decoration: a bouncing icon on the confirmation screen, kept because it cost nothing and did not delay anything, and an animated page transition that added 400ms to every navigation, which was removed and immediately made the whole flow feel faster.",
     freeToolPath:
       "The audit is written work. Where you need to see a transition, a local HTML file with a few CSS rules shows real timing honestly; guessing at durations on paper is where most bad motion decisions are made.",
     outputs: [
@@ -280,20 +280,20 @@ export const module9: Lesson[] = [
     teach: [
       "Acknowledge the press immediately, even when the result takes seconds.",
       "Separate three moments: the press, the acknowledgement and the outcome.",
-      "Hover does not exist on touch. Never hide anything essential behind it.",
+      "Touch screens have no hover, so anything essential needs a route that works without it.",
       "Focus feedback is not optional styling; it is how keyboard users see where they are.",
       "If a control cannot respond instantly, change its label or state rather than doing nothing.",
     ],
     explanation: [
       "Three moments need designing, and products routinely design only the third. The press is when the person's finger is down and the control should look pressed. The acknowledgement is the instant afterwards, when the interface must show it heard — a state change, a label change, a disabled control with a spinner beside it. The outcome may take a second or ten, and it is the only one most teams specify, which is why so many products feel unresponsive while being technically fast.",
-      "On a touch screen there is no hover, so anything that only appears on hover does not exist for most of your users. This is a structural rule rather than a preference: if an action is available on hover in a list row, it must also be reachable by another means, and a design where the only route to “remove” is hovering is a design that excludes every phone.",
+      "On a touch screen there is no hover, so anything that only appears on hover does not exist for anyone using a touch screen. This is a structural rule rather than a preference: if an action is available on hover in a list row, it must also be reachable by another means, and a design where the only route to “remove” is hovering is a design that excludes every phone.",
       "Focus feedback is what a keyboard user has instead of a cursor. It must be visible against every background it can appear on, it must not be removed for aesthetic reasons, and it should be tested by pressing tab rather than assumed from the specification. This connects directly to the pattern guidance in this module: a component's keyboard behaviour and its focus appearance are the same design problem.",
       "When something genuinely cannot respond instantly, say so in the control itself. A button that becomes “Booking…” with a spinner tells the person their tap registered; a button that stays identical for two seconds tells them nothing, and the reasonable response to nothing is to try again.",
     ],
     misconception:
       "“The action completes quickly, so feedback is unnecessary.” Quickly on your machine and quickly on a five-year-old phone on a slow connection are different. Feedback costs nothing when the response is fast and saves the interaction when it is not.",
     example:
-      "The book button did nothing visible until the server replied, which on a throttled connection took four seconds; in the m07 paper test one participant had tapped twice. Rebuilt into three moments: pressed state on touch-down, immediate change to “Booking…” with the control disabled and a spinner, and the outcome message when the server replied. Hover-only reveal of the “remove from shortlist” control was replaced with a permanently visible quiet control. Focus rings were specified against both the light surface and the tinted panel, and the tab pass found one control that could be reached but showed no focus at all.",
+      "Made-up example: the book button did nothing visible until the server replied, which on a throttled connection took four seconds; in the m07 paper test one participant had tapped twice. Rebuilt into three moments: pressed state on touch-down, immediate change to “Booking…” with the control disabled and a spinner, and the outcome message when the server replied. Hover-only reveal of the “remove from shortlist” control was replaced with a permanently visible quiet control. Focus rings were specified against both the light surface and the tinted panel, and the tab pass found one control that could be reached but showed no focus at all.",
     freeToolPath:
       "A local HTML file with three buttons and a few CSS rules shows press, hover and focus honestly, including what happens on a touch screen if you open it on your phone. Paper cannot show feedback timing.",
     outputs: [
@@ -301,6 +301,7 @@ export const module9: Lesson[] = [
       "The three moments separated: press, acknowledgement, outcome",
       "A list of anything currently hover-only, with its touch route",
       "A tab pass recording where focus was invisible",
+      "A failure state with a retry, and a reduced-motion version of the acknowledgement",
     ],
     steps: [
       {
@@ -308,7 +309,8 @@ export const module9: Lesson[] = [
         title: "Read and separate",
         instructions: [
           "Read the assigned status heuristic and the keyboard pattern for one component you use.",
-          "Write the three moments for one control: press, acknowledgement, outcome.",
+          "Open the state example in this lesson and switch the Save control through idle, pressed, saving, saved and failed, noting what changes each time.",
+          "Write the three moments for one control: press, acknowledgement, outcome, plus what it shows if the outcome fails.",
         ],
       },
       {
@@ -317,7 +319,7 @@ export const module9: Lesson[] = [
         instructions: [
           "For three controls, specify what changes on press, on hover and on focus.",
           "Make each state distinguishable without colour.",
-          "Give the acknowledgement a label change, not only a spinner.",
+          "Give the acknowledgement a label change, not only a spinner, and give the failure a retry that keeps the person's work.",
         ],
       },
       {
@@ -335,6 +337,7 @@ export const module9: Lesson[] = [
         instructions: [
           "Tab through your controls and record where focus is invisible.",
           "Open the same page on a phone and check every control is reachable.",
+          "Turn on Reduce motion in the state example, then write what still shows your acknowledgement without movement.",
           "Repair the worst failure you find.",
         ],
       },
@@ -356,7 +359,7 @@ export const module9: Lesson[] = [
       {
         question: "What is wrong with hover-only controls?",
         answer:
-          "Hover does not exist on touch screens, so the control does not exist for most people. Anything essential needs a route that works without a pointer.",
+          "Hover does not exist on touch screens, so the control does not exist for anyone using one. Anything essential needs a route that works without a resting pointer.",
       },
       {
         question: "Why is focus feedback not a styling preference?",
@@ -366,7 +369,7 @@ export const module9: Lesson[] = [
     ],
     rubric: [
       "Press, hover and focus are specified for three controls",
-      "Acknowledgement is separated from outcome",
+      "Acknowledgement, outcome and failure are separated",
       "Nothing essential depends on hover",
       "A tab pass is recorded with failures named",
     ],
@@ -386,13 +389,13 @@ export const module9: Lesson[] = [
         recheck: "The state specifications and greyscale check.",
       },
       {
-        criterion: "Acknowledgement is separated from outcome",
+        criterion: "Acknowledgement, outcome and failure are separated",
         evidence:
-          "A specification showing an immediate acknowledgement distinct from the later result, including a label change.",
+          "A specification showing an immediate acknowledgement distinct from the later result, including a label change, a failure state with a retry that keeps the person's work, and a reduced-motion version.",
         levels: [
           "Only the outcome is specified.",
-          "An acknowledgement exists but is a spinner alone with no label change.",
-          "Immediate acknowledgement with a label change, then the outcome.",
+          "An acknowledgement exists but is a spinner alone with no label change, or failure is unspecified.",
+          "Immediate acknowledgement with a label change, then the outcome, a failure with a retry, and a reduced-motion version that keeps the state visible.",
           "As adequate, and the acknowledgement prevents a second submission explicitly.",
         ],
         remediation:
@@ -492,7 +495,7 @@ export const module9: Lesson[] = [
     misconception:
       "“Animation makes the change feel smooth.” It makes the change legible when it shows a relationship, and it makes the product slow when it does not. Smoothness is not the goal; understanding what happened is.",
     example:
-      "Three transitions were designed. The filter panel scales and fades from the filter button, about 200ms, entering fast and settling — it explains where the panel came from and where it returns to. The detail view expands from its row over about 250ms, and the row stays in place beneath so the person knows what to go back to. The confirmation replaces the payment screen with a plain fade of 120ms, deliberately not a slide, because nothing moved anywhere and a slide would have implied a direction that does not exist. A fourth candidate — a staggered animation of every list row on load — was dropped: it delayed reading by half a second and explained nothing.",
+      "Made-up example: three transitions were designed. The filter panel scales and fades from the filter button, about 200ms, entering fast and settling — it explains where the panel came from and where it returns to. The detail view expands from its row over about 250ms, and the row stays in place beneath so the person knows what to go back to. The confirmation replaces the payment screen with a plain fade of 120ms, deliberately not a slide, because nothing moved anywhere and a slide would have implied a direction that does not exist. A fourth candidate — a staggered animation of every list row on load — was dropped: it delayed reading by half a second and explained nothing.",
     freeToolPath:
       "A local HTML file with CSS transitions lets you feel durations honestly and change them in seconds. Paper storyboards work for the spatial relationship; they cannot tell you whether 400ms is too slow, and it usually is.",
     outputs: [
@@ -500,6 +503,7 @@ export const module9: Lesson[] = [
       "A stated reason for each: what relationship it explains",
       "One rejected transition with the reason recorded",
       "A rule for what your product fades and what it moves",
+      "A reduced-motion version and an interruption rule for each kept transition",
     ],
     steps: [
       {
@@ -526,6 +530,7 @@ export const module9: Lesson[] = [
           "Build the transitions roughly in a local file or storyboard the frames.",
           "Try each at half and double your chosen duration.",
           "Keep the shortest that still reads as connected.",
+          "Switch Reduce motion on and off in the state example to see a change stay visible without movement.",
         ],
       },
       {
@@ -535,6 +540,7 @@ export const module9: Lesson[] = [
           "Find a transition that explains nothing and remove it.",
           "Check no two transitions run at once in the same view.",
           "Sequence or drop where they compete.",
+          "Decide what happens if a transition is interrupted, such as escape pressed while the panel is still opening.",
         ],
       },
       {
@@ -542,6 +548,7 @@ export const module9: Lesson[] = [
         title: "Write the rule",
         instructions: [
           "Write when your product moves something and when it simply fades.",
+          "Write each kept transition's reduced-motion version beside it.",
           "Record the rejected transition and why.",
           "Save the three specifications with their timings.",
         ],
@@ -565,20 +572,20 @@ export const module9: Lesson[] = [
       },
     ],
     rubric: [
-      "Each transition states the relationship it explains",
+      "Each transition states the relationship it explains, with and without motion",
       "Duration follows distance and was tested at two speeds",
-      "Dismissal reverses entry",
+      "Dismissal and interruption reverse the entry",
       "One transition was rejected with the reason recorded",
     ],
     criteria: [
       {
-        criterion: "Each transition states the relationship it explains",
+        criterion: "Each transition states the relationship it explains, with and without motion",
         evidence:
-          "A written origin and destination per transition, with what the person learns from it.",
+          "A written origin and destination per transition, with what the person learns from it, and a reduced-motion version that keeps that explanation.",
         levels: [
           "Transitions specified as effects with no relationship stated.",
-          "Relationships asserted but not matched to what actually causes the change.",
-          "Each names its true origin and what it explains.",
+          "Relationships asserted but not matched to what actually causes the change, or no reduced-motion version.",
+          "Each names its true origin and what it explains, with a reduced-motion version that keeps the explanation.",
           "As adequate, and one transition was changed to a fade because no real relationship existed.",
         ],
         remediation:
@@ -600,13 +607,13 @@ export const module9: Lesson[] = [
         recheck: "The timing test notes.",
       },
       {
-        criterion: "Dismissal reverses entry",
+        criterion: "Dismissal and interruption reverse the entry",
         evidence:
-          "A specified exit for each transition that returns content to where it came from.",
+          "A specified exit for each transition that returns content to where it came from, including when the person dismisses it part way through.",
         levels: [
           "Exits unspecified.",
-          "Exits specified but unrelated to the entry.",
-          "Each exit reverses its entry.",
+          "Exits specified but unrelated to the entry, or the interrupted case left open.",
+          "Each exit reverses its entry, from wherever the movement has reached when interrupted.",
           "As adequate, and exits are shorter than entries, which is how dismissal usually reads best.",
         ],
         remediation:
@@ -692,7 +699,7 @@ export const module9: Lesson[] = [
     misconception:
       "“We will add reduced motion at the end.” Designed at the end it becomes “disable all animation”, which strips the explanatory work along with the decoration. Designing the alternative alongside the original takes minutes and keeps the meaning.",
     example:
-      "With the setting on, three of the five kept animations needed alternatives. The filter panel's scale-and-fade became a fade of 120ms with no movement, keeping the change legible. The detail view's expansion became a cross-fade, and the row it came from stayed highlighted so the relationship survived. The loading spinner — essential — became a small pulsing dot with the label “Booking…”, local rather than crossing the screen. The confirmation flourish was removed entirely under the setting, since it explained nothing. Testing was done on the researcher's own phone with the setting on, and the result recorded with the device and version.",
+      "Made-up example: with the setting on, three of the five kept animations needed alternatives. The filter panel's scale-and-fade became a fade of 120ms with no movement, keeping the change legible. The detail view's expansion became a cross-fade, and the row it came from stayed highlighted so the relationship survived. The loading spinner — essential — became a small pulsing dot with the label “Booking…”, local rather than crossing the screen. The confirmation flourish was removed entirely under the setting, since it explained nothing. Testing was done on the researcher's own phone with the setting on, and the result recorded with the device and version.",
     freeToolPath:
       "Your own device: the assigned page lists where the setting lives on Windows, macOS, iOS, Android and Linux. A local HTML file with a reduced-motion media query shows both versions side by side with no account or tooling.",
     outputs: [
@@ -871,7 +878,7 @@ export const module9: Lesson[] = [
     guided: true,
     title: "Gestures and what people can discover",
     objective:
-      "Specify the gestures your product uses, give every one a visible alternative, and record which were discoverable when someone tried the product without being told.",
+      "Specify the gestures your product uses, give every one a visible alternative and a recoverable outcome, and record which were discoverable when someone tried the product without being told, or read the supplied results and date the gap.",
     bringForward:
       "Your m08 list and card components and the m07 flows they appear in.",
     prerequisite: "Your m08 list components and the flows using them.",
@@ -892,12 +899,12 @@ export const module9: Lesson[] = [
     misconception:
       "“Gestures make the interface cleaner.” They make it emptier, which is not the same. The controls are still needed; they have been moved somewhere the person has to already know about, and the cleanliness is paid for by everyone who does not.",
     example:
-      "The shortlist row used swipe-left to remove, with no visible control. Three people were asked to remove an item without being told how; none swiped, two looked for a control and one opened the detail view. The revision kept the swipe as an accelerator and added a visible quiet remove control on every row. Removal became immediate with a five-second undo rather than a confirmation dialogue. Pull-to-refresh was left alone because it matched the platform convention, and a proposed two-finger gesture for changing dates was dropped: it was undiscoverable, unconventional and impossible one-handed.",
+      "Made-up example: the shortlist row used swipe-left to remove, with no visible control. Three people were asked to remove an item without being told how; none swiped, two looked for a control and one opened the detail view. The revision kept the swipe as an accelerator and added a visible quiet remove control on every row. Removal became immediate with a five-second undo rather than a confirmation dialogue. Pull-to-refresh was left alone because it matched the platform convention, and a proposed two-finger gesture for changing dates was dropped: it was undiscoverable, unconventional and impossible one-handed.",
     freeToolPath:
       "Paper prototypes work for discoverability: hand someone the printed screen and ask them to do the task, then watch what they reach for. For real gesture behaviour, open a local HTML page on your own phone.",
     outputs: [
       "A list of every gesture with its visible alternative",
-      "Discoverability results from three people who were not told",
+      "Discoverability results from people who were not told, or the supplied results with the gap dated",
       "Destructive gestures specified with undo or confirmation",
       "Any gesture removed for being unconventional or one-handed-impossible",
     ],
@@ -924,7 +931,7 @@ export const module9: Lesson[] = [
         minutes: 30,
         title: "Test discoverability",
         instructions: [
-          "Ask three people to complete the action without telling them how.",
+          "Ask three people to complete the action without telling them how; if nobody is available, read the supplied made-up results and date the gap.",
           "Record what each reached for first.",
           "Note anyone who gave up or used a longer route.",
         ],
@@ -934,6 +941,7 @@ export const module9: Lesson[] = [
         title: "Make destruction recoverable",
         instructions: [
           "For each destructive gesture, specify undo with a stated window.",
+          "Specify what happens when a swipe stops halfway or is released early.",
           "Reserve confirmation for actions that cannot be undone.",
           "Check the undo is reachable one-handed.",
         ],
@@ -967,7 +975,7 @@ export const module9: Lesson[] = [
     ],
     rubric: [
       "Every gesture has a visible alternative",
-      "Discoverability was tested with people who were not told",
+      "Discoverability was tested without telling people, or the gap is dated",
       "Destructive gestures are recoverable",
       "One-handed and low-dexterity use is considered",
     ],
@@ -987,13 +995,13 @@ export const module9: Lesson[] = [
         recheck: "The paired list.",
       },
       {
-        criterion: "Discoverability was tested with people who were not told",
+        criterion: "Discoverability was tested without telling people, or the gap is dated",
         evidence:
-          "Records from three people attempting the action unaided, with what each reached for.",
+          "De-identified records from three people attempting the action unaided, with what each reached for — or, on the rehearsal route, a dated statement that nobody was available and a reading of the supplied results labelled as practice.",
         levels: [
-          "Not tested.",
-          "Tested after explaining the gesture.",
-          "Three unaided attempts recorded with first actions.",
+          "Not tested and not acknowledged.",
+          "Tested after explaining the gesture, or supplied results written up as if they were your own.",
+          "Three unaided attempts recorded with first actions, or the rehearsal route followed honestly with the gap dated.",
           "As adequate, and the results changed the design rather than confirming it.",
         ],
         remediation:
@@ -1003,7 +1011,7 @@ export const module9: Lesson[] = [
       {
         criterion: "Destructive gestures are recoverable",
         evidence:
-          "Undo specified with a window, or a confirmation where the action is irreversible.",
+          "Undo specified with a window, or a confirmation where the action is irreversible, and a swipe released halfway returning the row untouched.",
         levels: [
           "Destructive gestures with no recovery.",
           "Confirmation on every swipe, removing the speed benefit.",
@@ -1093,7 +1101,7 @@ export const module9: Lesson[] = [
     misconception:
       "“Keyboard support means everything is reachable by tab.” Reachable is not usable. A composite where every element is a tab stop is technically reachable and practically unbearable, and a dialogue that traps focus with no escape is reachable and inescapable.",
     example:
-      "The date-selection component and the filter panel were specified before building. For the date component: one tab stop for the group, arrow keys to move between dates, enter or space to select, home and end for the first and last available, escape to close returning focus to the field. For the filter panel: focus moves into the panel when it opens, escape closes it and returns focus to the filter button, and tab cycles inside while it is open. A rough build was tested against the table and failed two rows — escape did nothing, and focus returned to the document top — both recorded as defects rather than as design changes.",
+      "Made-up example: the date-selection component and the filter panel were specified before building. For the date component: one tab stop for the group, arrow keys to move between dates, enter or space to select, home and end for the first and last available, escape to close returning focus to the field. For the filter panel: focus moves into the panel when it opens, escape closes it and returns focus to the filter button, and tab cycles inside while it is open. A rough build was tested against the table and failed two rows — escape did nothing, and focus returned to the document top — both recorded as defects rather than as design changes.",
     freeToolPath:
       "Writing the table needs nothing. Testing it needs a rough local HTML file and your own keyboard; where nothing is built, record every row as untested rather than assumed.",
     outputs: [
@@ -1293,7 +1301,7 @@ export const module9: Lesson[] = [
     misconception:
       "“Screen-reader support is a development task.” Where focus moves is a design decision with visible consequences for sighted keyboard users too. Left to implementation it becomes whatever the framework does, which is usually nothing or the document top.",
     example:
-      "Four rules were written. Opening the filter panel moves focus to its first control. Closing it — by escape or by the close control — returns focus to the filter button. Applying a filter leaves focus on the control and announces “12 classes match”, because moving focus to the list would lose the person's place in the filters. A validation error moves focus to the first field with a problem and the message is tied to that field. A fifth situation was found while testing: after removing a shortlist item, focus was landing on the document top, which was recorded as a defect with the expected behaviour — focus should move to the next item, or to the list heading when the list is now empty.",
+      "Made-up example: four rules were written. Opening the filter panel moves focus to its first control. Closing it — by escape or by the close control — returns focus to the filter button. Applying a filter leaves focus on the control and announces “12 classes match”, because moving focus to the list would lose the person's place in the filters. A validation error moves focus to the first field with a problem and the message is tied to that field. A fifth situation was found while testing: after removing a shortlist item, focus was landing on the document top, which was recorded as a defect with the expected behaviour — focus should move to the next item, or to the list heading when the list is now empty.",
     freeToolPath:
       "A rough local HTML page and your own keyboard. If a screen reader is already on your device — the assigned catalog entry names the free ones — try one step with it, and record that as a preliminary check rather than a test with disabled users.",
     outputs: [
@@ -1471,34 +1479,36 @@ export const module9: Lesson[] = [
     guided: true,
     title: "Direct manipulation: drag, reorder and their consequences",
     objective:
-      "Design one direct-manipulation interaction with a keyboard equivalent, a clear drop target, a recovery path, and a stated decision about what it costs people who cannot drag.",
+      "Design one reordering interaction that can be completed three ways — by dragging, by keyboard, and by single taps or clicks with no dragging — with a clear drop target, cancellation, undo and a reduced-motion version, and test both alternatives against the reorder example.",
     bringForward:
       "Any part of your product where people arrange, reorder or move something.",
     prerequisite: "One arranging or reordering task from your product.",
-    why: "Dragging feels natural and excludes a lot of people. If you use it, it needs a keyboard route and a way back.",
+    why: "Dragging feels natural and excludes a lot of people. If you use it, it needs a keyboard route, a separate tap-or-click route that needs no dragging, and a way back.",
     teach: [
-      "Direct manipulation must always have a non-drag equivalent that does the same job.",
-      "Show what can be picked up, what is being dragged, and where it will land.",
-      "Commit on release, and make the result reversible for long enough to notice.",
-      "Dragging on a phone competes with scrolling; decide which wins and when.",
-      "If the interaction cannot be done by keyboard, it is not finished.",
+      "Give every drag two other routes to the same result: a keyboard route, and a single-pointer route with no dragging, such as tap Move then tap the destination.",
+      "A keyboard route does not cover the second need: someone using a mouse, a stylus or one finger may click but not drag (WCAG 2.2, criterion 2.5.7).",
+      "Show what can be picked up, what is being moved, and where it will land.",
+      "Commit on release, let a move be cancelled part way, and keep the result reversible for long enough to notice.",
+      "Dragging on a phone competes with scrolling; decide which wins and when, and what still shows the move under Reduce motion.",
     ],
     explanation: [
-      "Drag and drop is a genuine improvement for arranging things and a genuine barrier for anyone with limited dexterity, a tremor, a touchpad they find awkward, or a screen reader. That does not make it wrong; it makes the equivalent route mandatory. Move up and move down controls, or a keyboard mode where the item is picked up and moved with arrow keys, cover the same task and are usually easy to add once you have decided to.",
+      "Drag and drop is a genuine improvement for arranging things and a genuine barrier for anyone with limited dexterity, a tremor, a touchpad they find awkward, or a screen reader. That does not make it wrong; it makes other routes mandatory, and there are two of them. A keyboard route — focus an item, then arrow keys, or Move up and Move down — serves people who do not use a pointer. A single-pointer route — tap Move, then tap where it should go, or Move up and Move down buttons — serves people who can point and click but cannot hold and drag. WCAG 2.2 success criterion 2.5.7, Dragging Movements, judges these separately: a keyboard equivalent alone does not meet the single-pointer requirement.",
       "Three signals make dragging legible: what is draggable, what is currently held, and where it will go. Products routinely provide the second and neglect the first and third, so people learn by accident that a row can be moved, and then guess where it will land. A visible drop indicator — a line, a gap, a highlighted target — is what turns a guess into a decision.",
-      "Commit on release and offer a way back. An accidental reorder is a slip, and slips need recovery rather than confirmation; a brief undo is the right instrument, and the message that offers it should say what changed. Reordering that silently persists is unrecoverable for the person who did not notice they had done it.",
+      "Commit on release, let a move be cancelled before it lands — escape for the keyboard, a Cancel or a second tap for the pointer route — and offer a way back afterwards. An accidental reorder is a slip, and slips need recovery rather than confirmation; a brief undo is the right instrument, and the message that offers it should say what changed. Reordering that silently persists is unrecoverable for the person who did not notice they had done it.",
       "On touch screens, dragging and scrolling compete for the same gesture, and the resolution has to be deliberate: a long press to enter a drag mode, a dedicated handle, or drag only in a mode the person turned on. Choosing nothing means the product will feel unpredictable — sometimes scrolling, sometimes dragging — which is worse than either.",
+      "Reduced motion applies here too. With the setting on, the row should arrive in its new place without sliding through the list, while the new position is still shown on screen and stated in the message.",
     ],
     misconception:
-      "“Drag and drop is intuitive.” It is familiar to people who have used it. It is invisible to people who have not, impossible for some, and ambiguous on touch screens where the same gesture already means scroll.",
+      "“Drag and drop is intuitive,” and “a keyboard route covers everyone who cannot drag.” Dragging is familiar to people who have used it, invisible to people who have not, impossible for some, and ambiguous on touch screens where the same gesture already means scroll. And a keyboard route does nothing for the person tapping a phone screen who cannot drag.",
     example:
-      "The shortlist could be reordered by dragging, with no other route. Redesigned: a handle marks each draggable row, a line shows where the item will land, and the drop commits on release with a message — “Moved to position 2. Undo” — lasting several seconds. Keyboard equivalent: focus the handle, press space to pick up, arrow keys to move, space to drop, escape to cancel, matching the assigned pattern conventions. On touch, dragging requires the handle so scrolling keeps working elsewhere. The write-up records that no test with a screen-reader user has been run, so the keyboard route is specified but not validated.",
+      "Made-up example: the shortlist could be reordered only by dragging. Redesigned: a handle marks each draggable row, a line shows where the item will land, and the drop commits on release with a message — “Moved to position 2. Undo” — lasting several seconds. Keyboard route: focus the row, move it with Alt and the arrow keys or with the Move up and Move down buttons, escape to cancel. Single-pointer route: tap Move, then tap the gap where the row should go, or tap Cancel. On touch, dragging starts only from the handle so scrolling keeps working elsewhere; with reduced motion the row appears in its new place without sliding. Both routes were tried in a prototype; no test with a screen-reader user has been run, so they are specified but not validated with the people who depend on them.",
     freeToolPath:
-      "Paper works for the drop-target design: cut a row out and move it around the printed list, asking someone where they expect it to land. The keyboard route is written as a key table like the previous lesson's.",
+      "Paper works for the drop-target design: cut a row out and move it around the printed list. Use the reorder example in this lesson to try the keyboard and tap routes for real. Both routes are written as tables like the previous lesson's.",
     outputs: [
       "A drag interaction with pick-up, drag and drop-target signals",
-      "A keyboard equivalent specified key by key",
-      "Undo after a move, with the message wording",
+      "A keyboard route specified key by key and tested against the reorder example",
+      "A single-pointer route without dragging, specified and tested against the reorder example",
+      "Cancellation on each route, undo after a move with its wording, and a reduced-motion version",
       "A stated decision about drag versus scroll on touch",
     ],
     steps: [
@@ -1508,6 +1518,7 @@ export const module9: Lesson[] = [
         instructions: [
           "Choose one arranging task in your product.",
           "Read the assigned pattern guidance for a comparable component's keys.",
+          "Try the reorder example in this lesson three ways: drag, keyboard only, and single taps or clicks with no dragging.",
         ],
       },
       {
@@ -1521,11 +1532,11 @@ export const module9: Lesson[] = [
       },
       {
         minutes: 30,
-        title: "Write the keyboard route",
+        title: "Write the two other routes",
         instructions: [
-          "Specify pick up, move, drop and cancel as keys.",
-          "State what is announced at each step.",
-          "Check the route completes the same task, not a reduced version.",
+          "Specify pick up, move, drop and cancel as keys, and what is announced at each step.",
+          "Specify a single-pointer route that needs no dragging, such as tap Move then tap the destination.",
+          "Check both routes reach every arrangement the drag can, then complete the task each way in the reorder example and record what happened.",
         ],
       },
       {
@@ -1533,8 +1544,8 @@ export const module9: Lesson[] = [
         title: "Design recovery and touch behaviour",
         instructions: [
           "Specify undo with a window and write the message.",
-          "Decide how drag and scroll are distinguished on touch.",
-          "Check the decision does not break scrolling elsewhere.",
+          "Specify how a move is cancelled on each route, and what the move looks like with Reduce motion on.",
+          "Decide how drag and scroll are distinguished on touch, and check the decision does not break scrolling elsewhere.",
         ],
       },
       {
@@ -1549,9 +1560,9 @@ export const module9: Lesson[] = [
     ],
     check: [
       {
-        question: "Why is a keyboard equivalent mandatory?",
+        question: "Why is a keyboard route not enough on its own?",
         answer:
-          "Because dragging is impossible or unreliable for many people. Without an equivalent, the task is unavailable to them rather than merely harder.",
+          "Because some people can point and click but cannot drag, and some cannot use a pointer at all. A keyboard route serves the second group; a single-pointer route with no dragging — tap Move, then tap the destination — serves the first. WCAG 2.2 judges them separately.",
       },
       {
         question: "What are the three signals a drag needs?",
@@ -1566,8 +1577,9 @@ export const module9: Lesson[] = [
     ],
     rubric: [
       "All three drag signals are specified",
-      "A keyboard equivalent completes the same task",
-      "A move is reversible with stated wording",
+      "A keyboard route completes the same task and was tested",
+      "A single-pointer route without dragging completes the same task and was tested",
+      "A move can be cancelled, reversed and shown with reduced motion",
       "The drag-versus-scroll decision is explicit",
     ],
     criteria: [
@@ -1586,32 +1598,46 @@ export const module9: Lesson[] = [
         recheck: "The three specifications.",
       },
       {
-        criterion: "A keyboard equivalent completes the same task",
+        criterion: "A keyboard route completes the same task and was tested",
         evidence:
-          "A key table covering pick up, move, drop and cancel, achieving the same result as dragging.",
+          "A key table covering pick up, move, drop and cancel, achieving the same result as dragging, plus what happened when you completed the task by keyboard alone in the reorder example.",
         levels: [
           "No keyboard route.",
-          "A reduced route that cannot reach every position.",
-          "A full equivalent specified key by key.",
+          "A reduced route that cannot reach every position, or a route never tried.",
+          "A full route specified key by key and completed by keyboard alone in the reorder example.",
           "As adequate, and each step states what is announced for a screen-reader user.",
         ],
         remediation:
-          "Write the keys, then walk the task by keyboard on paper. If any arrangement is unreachable, the route is incomplete.",
-        recheck: "The key table.",
+          "Write the keys, then move the third item to the top by keyboard alone in the reorder example. If any arrangement is unreachable, the route is incomplete.",
+        recheck: "The key table and the keyboard test note.",
       },
       {
-        criterion: "A move is reversible with stated wording",
+        criterion: "A single-pointer route without dragging completes the same task and was tested",
         evidence:
-          "Undo specified with a window and a message naming what changed.",
+          "A tap-or-click route, such as tap Move then tap the destination, or Move up and Move down buttons, that reaches every arrangement, plus what happened when you completed the task that way in the reorder example.",
         levels: [
-          "Moves persist silently.",
-          "Undo mentioned without wording or window.",
-          "Undo specified with a window and the message written.",
+          "No route other than dragging for pointer users, or the keyboard route offered as the only alternative.",
+          "A single-pointer route named but unable to reach every position, or never tried.",
+          "A full single-pointer route specified and completed with taps or clicks alone, no dragging, in the reorder example.",
+          "As adequate, and the route has its own cancel and shows which item is waiting to be placed.",
+        ],
+        remediation:
+          "Write the taps a person makes to move the third item to the top without dragging, then do exactly that in the reorder example. If any arrangement needs a drag, the route is incomplete.",
+        recheck: "The single-pointer route and its test note.",
+      },
+      {
+        criterion: "A move can be cancelled, reversed and shown with reduced motion",
+        evidence:
+          "A cancel on each route, undo with a window and a message naming what changed, and a reduced-motion version where the item arrives without sliding.",
+        levels: [
+          "Moves persist silently and cannot be cancelled.",
+          "Undo mentioned without wording or window, or no cancel.",
+          "A cancel on each route, undo with a window and its message, and a reduced-motion version.",
           "As adequate, and the message says the new position rather than only offering undo.",
         ],
         remediation:
-          "Write the message a person sees immediately after a move, including how to reverse it.",
-        recheck: "The undo specification.",
+          "Write what happens when a person changes her mind mid-move on each route, the message she sees after a move, and what the move looks like with Reduce motion on.",
+        recheck: "The cancel, undo and reduced-motion specification.",
       },
       {
         criterion: "The drag-versus-scroll decision is explicit",
@@ -1631,11 +1657,12 @@ export const module9: Lesson[] = [
     repairs: [
       "If only the held state is designed, add a draggable affordance and a drop indicator.",
       "If the keyboard route cannot reach every position, extend it.",
-      "If moves persist silently, specify undo with a window and message.",
+      "If the only alternative to dragging is the keyboard, add a tap-or-click route that needs no drag and test it.",
+      "If moves persist silently or cannot be cancelled, specify cancel, undo with a window and message, and a reduced-motion version.",
       "If touch has no rule, choose a handle or a mode and test scrolling.",
     ],
     portfolio:
-      "Showing the keyboard equivalent beside the drag interaction demonstrates that you design for the whole audience rather than the demo.",
+      "Showing the keyboard route and the tap route beside the drag interaction, with what happened when you tried each, demonstrates that you design for the whole audience rather than the demo.",
     resource: keyboardPatterns,
     resources: [
       {
@@ -1692,7 +1719,7 @@ export const module9: Lesson[] = [
     misconception:
       "“Sticky headers keep navigation available.” They keep it visible, at the cost of content, on the device with the least of it. Available means reachable; a header that returns when the person scrolls up is usually the better trade.",
     example:
-      "The class list had a sticky header with a logo, a sticky filter bar and a sticky book button — 190 pixels of a 640-pixel viewport. Rebuilt: the logo header scrolls away and returns on scroll up, the filter summary stays because people were observed checking it, and the book button appears only on the detail view where it belongs. The list loads twenty at a time with a count — “Showing 20 of 63” — and a load-more control, so the footer stays reachable. Returning from a detail view restores the row and the filters. New results are appended below the fold only.",
+      "Made-up example: the class list had a sticky header with a logo, a sticky filter bar and a sticky book button — 190 pixels of a 640-pixel viewport. Rebuilt: the logo header scrolls away and returns on scroll up, the filter summary stays because people were observed checking it, and the book button appears only on the detail view where it belongs. The list loads twenty at a time with a count — “Showing 20 of 63” — and a load-more control, so the footer stays reachable. Returning from a detail view restores the row and the filters. New results are appended below the fold only.",
     freeToolPath:
       "Paper at phone size, with a window cut out to represent the viewport, shows exactly how much a sticky element costs. A local HTML page shows real scroll and restore behaviour.",
     outputs: [
@@ -1893,7 +1920,7 @@ export const module9: Lesson[] = [
     misconception:
       "“Autosave is simpler for the user.” It is simpler when it works and worse when it does not, because it removes the moment the person knew they were safe. Simplicity here is paid for with a specific, visible save state.",
     example:
-      "The note on a booking saved automatically with no feedback. Redesigned: the value shows an edit affordance on hover and focus; entering edit shows a bordered field with cancel and done controls; on blur the change saves and the label becomes “Saved 12:04” for several seconds before fading to a small “Saved” marker. If the save fails, the field keeps the text, shows “Not saved — check your connection” and offers retry, and the text is retained locally so a reload does not lose it. Cancel restores the previous value, and leaving mid-edit saves rather than discarding — with that decision recorded, because the alternative was defensible too.",
+      "Made-up example: the note on a booking saved automatically with no feedback. Redesigned: the value shows a small pencil and the word Edit at all times, so a phone user can see it is editable; entering edit shows a bordered field with cancel and done controls; on blur the change saves and the label becomes “Saved 12:04” for several seconds before fading to a small “Saved” marker. If the save fails, the field keeps the text, shows “Not saved — check your connection” and offers retry, and the text is retained locally so a reload does not lose it. Cancel restores the previous value, and leaving mid-edit saves rather than discarding — with that decision recorded, because the alternative was defensible too.",
     freeToolPath:
       "Write the three states out on paper with the exact wording, then check the transitions in a local HTML file if you want to feel the timing of the saved indicator.",
     outputs: [
@@ -1901,6 +1928,7 @@ export const module9: Lesson[] = [
       "A visible save confirmation with its wording and duration",
       "Behaviour for leaving mid-edit, stated and justified",
       "Failure handling that retains the text and offers retry",
+      "A Cancel that restores the previous value, and a reduced-motion version of the saving, saved and failed states",
     ],
     steps: [
       {
@@ -1915,8 +1943,9 @@ export const module9: Lesson[] = [
         minutes: 30,
         title: "Design the three states",
         instructions: [
+          "Open the state example in this lesson and step through saving, saved and failed with Retry before writing your own wording.",
           "Specify how viewing shows that the value is editable.",
-          "Specify the editing state with a cancel and a done route.",
+          "Specify the editing state with a cancel and a done route, and what Cancel restores.",
           "Specify the saved state with its wording and how long it shows.",
         ],
       },
@@ -1943,6 +1972,7 @@ export const module9: Lesson[] = [
         title: "Check and record",
         instructions: [
           "Check the three states are distinguishable in greyscale.",
+          "Turn on Reduce motion in the state example, then write how your saving, saved and failed states read without movement.",
           "Record what you could not verify without a build.",
           "Save the specification with the wording.",
         ],
@@ -1967,8 +1997,8 @@ export const module9: Lesson[] = [
     ],
     rubric: [
       "Viewing, editing and saved are visually distinct",
-      "The save confirmation is specific and timed",
-      "Leaving mid-edit has a stated, justified behaviour",
+      "The save confirmation is specific, timed and survives reduced motion",
+      "Leaving and cancelling mid-edit have stated, justified behaviours",
       "Failure retains the text and offers a retry",
     ],
     criteria: [
@@ -1987,9 +2017,9 @@ export const module9: Lesson[] = [
         recheck: "The three states.",
       },
       {
-        criterion: "The save confirmation is specific and timed",
+        criterion: "The save confirmation is specific, timed and survives reduced motion",
         evidence:
-          "Wording for the saved state and how long it remains before settling.",
+          "Wording for the saved state, how long it remains before settling, and how saving, saved and failed still read with Reduce motion on.",
         levels: [
           "No confirmation.",
           "A generic tick with no wording or duration.",
@@ -2001,13 +2031,13 @@ export const module9: Lesson[] = [
         recheck: "The confirmation specification.",
       },
       {
-        criterion: "Leaving mid-edit has a stated, justified behaviour",
+        criterion: "Leaving and cancelling mid-edit have stated, justified behaviours",
         evidence:
-          "A chosen behaviour with a reason and what the person sees on return.",
+          "A chosen leaving behaviour with a reason and what the person sees on return, and a Cancel that restores the previous value.",
         levels: [
           "Undecided.",
-          "Decided without a reason or a return state.",
-          "Chosen, justified, with the return state specified.",
+          "Decided without a reason or a return state, or no Cancel.",
+          "Leaving chosen, justified, with the return state specified, and Cancel restoring the previous value.",
           "As adequate, and the alternative you rejected is recorded with its trade-off.",
         ],
         remediation:
@@ -2093,7 +2123,7 @@ export const module9: Lesson[] = [
     misconception:
       "“Motion values belong in the code.” The numbers can live in code; the decisions and their reasons cannot, or the next person changes 200 to 320 because it felt nicer on their machine and nobody can say why it was 200.",
     example:
-      "The sheet came to three durations — instant 0ms for state changes, quick 150ms for small movement, moderate 250ms for panels — three easings, and seven rules including “nothing animates while a person is typing”, “the price and remaining places never move”, and “only one thing animates at a time in a view”. Every duration carried its reduced-motion pair, mostly a 120ms fade. Applying the sheet to three components surfaced two exceptions: a 400ms transition nobody could justify, which became moderate, and a genuine missing role for a long list re-sort, which was added deliberately as a fourth duration with the reason recorded.",
+      "Made-up example: the sheet came to three durations — instant 0ms for state changes, quick 150ms for small movement, moderate 250ms for panels — three easings, and seven rules including “nothing animates while a person is typing”, “the price and remaining places never move”, and “only one thing animates at a time in a view”. Every duration carried its reduced-motion pair, mostly a 120ms fade. Applying the sheet to three components surfaced two exceptions: a 400ms transition nobody could justify, which became moderate, and a genuine missing role for a long list re-sort, which was added deliberately as a fourth duration with the reason recorded.",
     freeToolPath:
       "A written table plus the rules. If you want to compare durations honestly, a local HTML file with three buttons using your three values takes ten minutes and settles arguments quickly.",
     outputs: [
@@ -2272,7 +2302,7 @@ export const module9: Lesson[] = [
     guided: true,
     title: "Test the interactions and repair one",
     objective:
-      "Test your interactions with at least three people on a real device, rank what you find by harm, repair the worst with a prediction written first, and record what remains untested.",
+      "Test your interactions with up to three people on their own devices — or, if nobody is available, run a dated rehearsal and say so — rank what you find by harm, repair the worst with a prediction written first, and record what remains untested.",
     bringForward:
       "Your interaction sheet, key tables, focus rules and specified components.",
     prerequisite: "Your interaction specifications and, if possible, a rough build.",
@@ -2293,11 +2323,11 @@ export const module9: Lesson[] = [
     misconception:
       "“It works on my machine, so the interaction is fine.” Your machine has a precise pointer, a fast connection, a large screen and a person who knows where everything is. None of those describe your users.",
     example:
-      "Three sessions on the participants' own phones. Two double-tapped the book button, because the acknowledgement appeared only after the server replied on a slow connection — the worst finding by harm, since it produced duplicate requests. One could not find the remove control at all, having never met a swipe pattern. One had reduced motion enabled on her own device, which surfaced that the filter panel simply appeared with no fade, unexplained. The prediction for the repair was written first: with an immediate acknowledgement, nobody should tap twice. Re-tested with two new people on their own phones, neither did. The remaining findings were ranked and left recorded rather than repaired in the same pass.",
+      "Made-up example: three sessions on the participants' own phones. Two double-tapped the book button, because the acknowledgement appeared only after the server replied on a slow connection — the worst finding by harm, since it produced duplicate requests. One could not find the remove control at all, having never met a swipe pattern. One had reduced motion enabled on her own device, which surfaced that the filter panel simply appeared with no fade, unexplained. The prediction for the repair was written first: with an immediate acknowledgement, nobody should tap twice. Re-tested with two new people on their own phones, neither did. The remaining findings were ranked and left recorded rather than repaired in the same pass.",
     freeToolPath:
       "A rough local HTML page opened on the participants' own phones over a shared connection, or a paper prototype for the parts that are about order rather than timing. No testing platform or device lab is required.",
     outputs: [
-      "Session records from three people on their own devices",
+      "De-identified session records from people on their own devices, or a dated rehearsal record",
       "A count of double taps and where they happened",
       "One repair with its prediction written beforehand and re-tested",
       "A ranked list of remaining problems and an untested list",
@@ -2316,7 +2346,7 @@ export const module9: Lesson[] = [
         minutes: 40,
         title: "Run three sessions",
         instructions: [
-          "Run the tasks on each participant's own phone where possible.",
+          "Run the tasks on each participant's own phone where possible; if nobody is available, walk both tasks yourself twice on a phone you did not design on and label it rehearsal.",
           "Record double taps, hesitations and anything they could not find.",
           "Do not explain gestures or controls during the task.",
         ],
@@ -2335,7 +2365,7 @@ export const module9: Lesson[] = [
         instructions: [
           "Write what the repair should change before making it.",
           "Change one thing only.",
-          "Re-test with at least one person who has not seen it.",
+          "Re-test with at least one person who has not seen it, or re-walk it as a labelled rehearsal and write that no participant has seen it.",
         ],
       },
       {
@@ -2375,11 +2405,11 @@ export const module9: Lesson[] = [
       {
         criterion: "Sessions were run on participants' own devices",
         evidence:
-          "Records naming the devices used, or an explicit note where a participant's device was unavailable.",
+          "Records naming the devices used, or an explicit note where a participant's device was unavailable — or, on the rehearsal route, a dated statement that nobody was available and a self-run walkthrough on a device you did not design on, labelled rehearsal.",
         levels: [
-          "Tested only on the designer's machine.",
+          "Tested only on the designer's machine, with no limit stated.",
           "Mixed, without recording which device each session used.",
-          "Participants' own devices used and recorded.",
+          "Participants' own devices used and recorded, or a rehearsal on another device clearly labelled as rehearsal.",
           "As adequate, and at least one older or slower device is included deliberately.",
         ],
         remediation:
@@ -2393,7 +2423,7 @@ export const module9: Lesson[] = [
         levels: [
           "Repeated actions attributed to the participant.",
           "Noted without counting or locating.",
-          "Counted, located and treated as feedback defects.",
+          "Counted, located and treated as feedback defects — or, on the rehearsal route, none claimed, with the supplied practice findings used for ranking.",
           "As adequate, and each is linked to the specific acknowledgement that was missing.",
         ],
         remediation:
@@ -2407,7 +2437,7 @@ export const module9: Lesson[] = [
         levels: [
           "Repairs made without prediction or re-test.",
           "Several changes made together.",
-          "One change, predicted first, re-tested with a fresh participant.",
+          "One change, predicted first, re-tested with a fresh participant — or re-walked as a labelled rehearsal with the gap stated.",
           "As adequate, and a prediction that failed is analysed rather than explained away.",
         ],
         remediation:

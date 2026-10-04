@@ -97,9 +97,9 @@ export const module8: Lesson[] = [
     misconception:
       "“High fidelity means the design is further along.” It means the design is more expensive to change. A polished screen built on an untested structure is further from shipping than a rough one built on a tested structure, because the expensive rework is still ahead of it.",
     example:
-      "A booking screen taken from wireframe to interface settled six things: type scale, the price treatment, the button hierarchy, the spacing rhythm, the image size and the state colours. It also hid two: with real type sizes the description no longer fit above the fold, which the wireframe had implied it would, and the availability line — which the paper test had shown people looking for — became visually quiet enough that two reviewers did not mention it at all. Both were caught only because the wireframe was still on the table beside it.",
+      "Made-up example: a booking screen taken from wireframe to interface settled six things: type scale, the price treatment, the button hierarchy, the spacing rhythm, the image size and the state colours. It also hid two: with real type sizes the description no longer fit above the fold, which the wireframe had implied it would, and the availability line — which the paper test had shown people looking for — became visually quiet enough that two reviewers did not mention it at all. Both were caught only because the wireframe was still on the table beside it.",
     freeToolPath:
-      "Paper and coloured pencils, or one local HTML file with a small stylesheet. A design tool is convenient and not required; hand-written SVG or plain CSS produces a real, exportable screen with no account.",
+      "Paper and coloured pencils, or a copy of the editable starter /starters/m08/booking-screen-starter.svg opened in a free vector tool: Inkscape needs no account, Penpot needs a free one. A paid design tool is never required, and you are not asked to write any code.",
     outputs: [
       "One screen at interface fidelity, beside its wireframe",
       "A list of what the added detail decided",
@@ -112,6 +112,7 @@ export const module8: Lesson[] = [
         title: "Choose and read",
         instructions: [
           "Pick the m07 screen your paper test raised the most problems about.",
+          "No m07 screen? Download /starters/m08/booking-screen-starter.svg, keep the download untouched as your wireframe and work on a copy.",
           "Read the assigned component guidance for one component that appears on it.",
           "Write in one sentence what this version of the screen is for.",
         ],
@@ -188,7 +189,7 @@ export const module8: Lesson[] = [
           "As adequate, and a scale step was changed with the reason recorded.",
         ],
         remediation:
-          "Replace every string with the real one from your m06 labelling table, then map each text element to a step in your scale.",
+          "Replace every string with the real one from your m06 labelling table, or the starter file's labels, then map each text element to a step in your scale.",
         recheck: "The screen with a scale map beside it.",
       },
       {
@@ -299,7 +300,7 @@ export const module8: Lesson[] = [
     misconception:
       "“We need a design system before we can design.” You need an inventory. A component library invented ahead of real screens describes an imaginary product, and the first week of real work breaks it. Audit what you actually drew, then generalise the parts that repeat.",
     example:
-      "An audit of nine screens found five button variants: three were the same intent drawn on different days, one was a genuinely different job — a destructive cancel — and one was a link wearing a button's clothes. It found three card layouts that were one card with different content lengths. The merges reduced five buttons to three real jobs and three cards to one, and one merge was recorded as a loss: the cancelled-class card had used a lighter background, and after merging, cancelled status rested entirely on a text label, which was noted as a candidate problem for the next test.",
+      "Made-up example: an audit of nine screens found five button variants: three were the same intent drawn on different days, one was a genuinely different job — a destructive cancel — and one was a link wearing a button's clothes. It found three card layouts that were one card with different content lengths. The merges reduced five buttons to three real jobs and three cards to one, and one merge was recorded as a loss: the cancelled-class card had used a lighter background, and after merging, cancelled status rested entirely on a text label, which was noted as a candidate problem for the next test.",
     freeToolPath:
       "Print or sketch every screen, cut out each repeated element and group them on a table. Photograph the groups. This is faster than any tool and shows near-duplicates immediately.",
     outputs: [
@@ -322,6 +323,7 @@ export const module8: Lesson[] = [
         title: "Cut and group",
         instructions: [
           "Lay out every screen you have, including error and empty states.",
+          "Few screens of your own? Add the three made-up screens in /starters/m08/booking-screen-starter.svg and /starters/m08/hierarchy-before-after.svg, marked as supplied.",
           "Mark every element that appears more than once.",
           "Group the marked elements by what they do, not how they look.",
         ],
@@ -478,31 +480,33 @@ export const module8: Lesson[] = [
     guided: true,
     title: "Actions: hierarchy, targets and labels",
     objective:
-      "Specify your action components at three levels of emphasis with measured target sizes and verb-first labels, and prove the hierarchy survives greyscale.",
+      "Rank the actions on one screen from its task and the evidence, compare two defensible layouts, then specify three levels of emphasis with measured targets, verb-first labels and a greyscale check.",
     bringForward:
-      "The action components from your inventory and the screens they appear on.",
-    prerequisite: "Your component inventory and the screens using its actions.",
-    why: "If a person cannot tell in a glance which action is the main one, every screen costs a decision it did not need to.",
+      "The action components from your inventory, the screens they appear on and whatever evidence you hold about what people need there.",
+    prerequisite: "Your component inventory and its screens, or the m08 starter files and the supplied practice notes.",
+    why: "If a person cannot tell in a glance which action is the main one, every screen costs a decision it did not need to. Which action that should be depends on what this screen is for and what people were seen needing there.",
     teach: [
-      "Three levels of emphasis is usually enough: primary, secondary, and quiet.",
-      "One primary action per screen. Two primaries means the screen has two jobs.",
-      "Emphasis must survive greyscale: weight, size and containment, not colour alone.",
-      "Label with the verb of the outcome: “Book a place”, not “Submit” or “OK”.",
-      "Targets need physical size and spacing, especially near destructive actions.",
+      "Rank actions from this screen’s task and its evidence, not from habit: what is the person here to do, and what did the notes show they need first?",
+      "Three levels are usually enough: primary, secondary and quiet. Two equally loud actions usually mean the screen is doing two jobs.",
+      "Emphasis must survive greyscale: carry it in weight, size and containment, then add colour as reinforcement.",
+      "Label with the verb of the outcome — “Book a place”, not “Submit” or “OK” — and give targets real size and space, especially near destructive actions.",
+      "Treat the ranking as a decision to test: draw two defensible layouts and say what you would watch for to choose between them.",
     ],
     explanation: [
       "Emphasis is comparative, so a hierarchy exists only if the levels differ in more than one dimension. A primary action that differs from a secondary one only by colour disappears for a person with a colour-vision deficiency, in bright sunlight, or in a greyscale printout — and those are the ordinary conditions your booking screen will meet on a phone outside. Containment, weight and size are what carry emphasis reliably; colour is a reinforcement, not the signal.",
-      "One primary per screen is a structural rule more than a visual one. When you find two, the honest reading is usually that the screen is doing two jobs, and the fix is to split the screen or to decide which job it is actually for. Screens with three primaries teach people to read everything as equally urgent, after which nothing is emphasised at all.",
+      "Which action leads is decided by what the screen is for and what the evidence says people need there, not by a general rule. In this course's made-up booking case, 3 of 4 interviewees and the observed participant checked the plan with someone else before paying, so a share action is a step on the way to booking rather than an extra; on a screen where the notes showed people booking alone, the same action could reasonably stay quiet. Two actions of equal weight usually mean the screen is doing two jobs, and the fix is to decide which job it is for or to split it. Screens with three primaries teach people to read everything as equally urgent, after which nothing is emphasised at all.",
+      "A ranking is a claim about what people need first, so treat it as something to test. Draw a second layout that the same evidence could also defend, then write what you would watch for to choose between them: who finds the action without help, who mistakes one action for another. Keeping both drawings is what lets a test change your mind cheaply.",
       "Labels carry more weight than the styling. “Submit” describes what the software does; “Book a place” describes what the person gets, and a person scanning for their outcome finds the second and not the first. Verb-first labels also make destructive actions honest: “Cancel booking” beside “Keep booking” is unambiguous, while “Yes” and “No” beside a question people did not read carefully is a trap.",
       "Target size is a physical property, not a style. A control that is comfortable with a mouse can be unreachable with a thumb on a moving bus, and a destructive action sitting next to a common one converts a slip into a loss. Give consequential actions space as well as size, and put distance between actions whose outcomes differ sharply.",
     ],
     misconception:
-      "“Make the important button a stronger colour.” Colour alone is the weakest available signal: it fails in greyscale, in sunlight, for some readers, and when your palette is later changed by someone else. Carry emphasis in weight, size and containment first, then add colour.",
+      "“Make the important button a stronger colour,” or “the main button should always be the biggest.” Colour alone is the weakest available signal: it fails in greyscale, in sunlight, for some readers, and when your palette is later changed by someone else. And which button is the important one is not fixed: it follows from this screen's task and the evidence. Decide the ranking first, carry it in weight, size and containment, then add colour.",
     example:
-      "A screen had two filled buttons of equal weight — “Book a place” and “Add to shortlist” — and a text link for “Cancel booking”. In greyscale the two filled buttons were indistinguishable, and in the m07 paper test one participant had tapped the shortlist button believing she had booked. The repair made booking the only filled action, shortlist an outlined secondary, and cancellation a quiet action moved away from both with its own confirmation. Targets were measured rather than eyeballed, and the destructive action was given clear separation from the primary one.",
+      "Made-up example: a class screen had two filled buttons of equal weight — “Book a place” and “Add to shortlist” — a small share icon in a corner, drawn on the assumption that sharing is rarely used, and a text link for “Cancel booking”. The made-up research said otherwise about sharing: 3 of 4 interviewees and the observed participant checked with someone before paying. In greyscale the two filled buttons were indistinguishable, and in the paper test one participant had tapped the shortlist button believing she had booked. The repair made booking the only filled action, raised sharing to an outlined secondary under it, made shortlist a quiet action, and moved cancellation away from all of them with its own confirmation. A second layout put sharing beside the price instead, and both were kept for a test. Targets were measured rather than eyeballed.",
     freeToolPath:
-      "Draw the three levels at real size on paper, photograph them and convert the photograph to greyscale on your phone. Measure targets with a ruler against your own screen; no plugin or tool is needed.",
+      "Draw the levels and both layouts at real size on paper, photograph them and convert the photograph to greyscale on your phone. Or edit copies of the m08 starter files in a free vector tool. Measure targets with a ruler against your own screen; no plugin or paid tool is needed.",
     outputs: [
+      "One screen’s actions ranked from its task and evidence, as two defensible layouts with the test that would choose between them",
       "Three action levels specified: primary, secondary and quiet",
       "A greyscale test showing the hierarchy still readable",
       "Measured target sizes and spacing for each level",
@@ -511,17 +515,19 @@ export const module8: Lesson[] = [
     steps: [
       {
         minutes: 20,
-        title: "Read and audit",
+        title: "Read, audit and state the task",
         instructions: [
           "Read the assigned button guidance and the law page on target size.",
+          "For one screen, write the task it exists for and the evidence about what people need there; use the supplied practice notes if you hold none.",
           "List every action across your screens and mark its current emphasis.",
           "Mark any screen carrying more than one primary action.",
         ],
       },
       {
         minutes: 30,
-        title: "Specify three levels",
+        title: "Rank, then specify three levels",
         instructions: [
+          "Rank that screen’s actions from its task and evidence, then draw a second layout the same evidence could also defend.",
           "Define primary, secondary and quiet with weight, size and containment.",
           "Make each level differ from the next in at least two properties.",
           "Add colour last, as reinforcement rather than as the signal.",
@@ -551,7 +557,8 @@ export const module8: Lesson[] = [
         instructions: [
           "Repair the worst greyscale failure by changing weight or containment.",
           "Record any screen you split because it had two primaries.",
-          "Save the specification with the greyscale evidence.",
+          "Write which of your two layouts you would test first, the task you would set and the result that would make you switch.",
+          "Save the specification with the greyscale evidence and both layouts.",
         ],
       },
     ],
@@ -562,9 +569,9 @@ export const module8: Lesson[] = [
           "Because a single property fails in ordinary conditions — greyscale, sunlight, colour-vision deficiency, a later palette change. Two properties keep the ranking readable when one is lost.",
       },
       {
-        question: "What does a screen with two primary actions usually mean?",
+        question: "What decides which action on a screen is the primary one?",
         answer:
-          "That it is doing two jobs. Deciding which job the screen is for, or splitting it, is the real fix; restyling one button hides the problem.",
+          "The task the screen exists for and the evidence about what people need there. The same share action can be a secondary on one screen and quiet on another; two equally loud actions usually mean the screen is doing two jobs.",
       },
       {
         question: "Why does “Submit” lose to “Book a place”?",
@@ -574,7 +581,7 @@ export const module8: Lesson[] = [
     ],
     rubric: [
       "Three levels differ in at least two properties each",
-      "One primary action per screen, or the screen was split",
+      "The ranking follows the screen’s task and evidence, with two layouts compared",
       "Labels lead with the verb of the outcome",
       "Targets and spacing are measured, not estimated",
     ],
@@ -594,18 +601,18 @@ export const module8: Lesson[] = [
         recheck: "The greyscale rendering and the revised specification.",
       },
       {
-        criterion: "One primary action per screen, or the screen was split",
+        criterion: "The ranking follows the screen’s task and evidence, with two layouts compared",
         evidence:
-          "A per-screen list showing a single primary, with any exception justified or resolved by splitting.",
+          "A stated task for one screen, the evidence used (your own notes, or the supplied practice notes labelled as supplied), a ranking with the reason for each placement, any two-primary screen resolved or split, and two defensible layouts with the test that would choose between them.",
         levels: [
-          "Multiple primaries left in place.",
-          "Identified but unresolved.",
-          "One primary per screen, or a recorded split.",
-          "As adequate, and a screen that resisted splitting is documented with the trade-off accepted.",
+          "Actions ranked by habit, colour or a general rule, with no task or evidence stated.",
+          "A task stated, but the ranking does not follow from evidence, or only one layout is considered.",
+          "The ranking follows the task and named evidence, and two defensible layouts are compared with a test that would choose.",
+          "As adequate, and the write-up names what evidence would reverse the ranking, such as notes showing people book alone.",
         ],
         remediation:
-          "For each screen with two primaries, write the two jobs it is doing. Then choose one or split the screen.",
-        recheck: "The per-screen list and any split.",
+          "Write the screen's task in one sentence and list the notes about what people need there. Rank the actions from those notes, then draw one more layout the same notes could defend.",
+        recheck: "The task, the evidence, both layouts and the test.",
       },
       {
         criterion: "Labels lead with the verb of the outcome",
@@ -638,7 +645,7 @@ export const module8: Lesson[] = [
     ],
     repairs: [
       "If ranking fails in greyscale, change weight or containment, not colour.",
-      "If a screen has two primaries, name its two jobs and split or choose.",
+      "If the ranking rests on a rule rather than the task and evidence, restate the task, re-rank and draw a second layout.",
       "If a label is Submit, OK, Yes or No, rewrite it as the outcome.",
       "If targets were eyeballed, measure them at phone size and record the values.",
     ],
@@ -700,7 +707,7 @@ export const module8: Lesson[] = [
     misconception:
       "“Inline validation on every keystroke helps people.” Validating a half-typed email as invalid teaches people they are failing while they are still working. Validate on leaving the field, or on submission, and reserve immediate feedback for things that can only improve — like a strength meter that never says “wrong”.",
     example:
-      "A booking form used placeholders as labels, validated the phone number on every keystroke, and cleared the form on a failed submission. Rebuilt: labels above every field and permanently visible; a line under the phone field saying which formats are accepted; validation on leaving the field; errors shown at the field with the fix stated; and everything preserved after a failure, with the page-level summary linking to the first problem. A keyboard pass found that the date control could be reached but not operated without a mouse, which was recorded as an implementation issue rather than claimed as fixed.",
+      "Made-up example: a booking form used placeholders as labels, validated the phone number on every keystroke, and cleared the form on a failed submission. Rebuilt: labels above every field and permanently visible; a line under the phone field saying which formats are accepted; validation on leaving the field; errors shown at the field with the fix stated; and everything preserved after a failure, with the page-level summary linking to the first problem. A keyboard pass found that the date control could be reached but not operated without a mouse, which was recorded as an implementation issue rather than claimed as fixed.",
     freeToolPath:
       "Specify the form on paper with the exact wording for label, help and error per field. To test behaviour, one local HTML file with labelled inputs shows tab order and error handling honestly with no framework or account.",
     outputs: [
@@ -902,7 +909,7 @@ export const module8: Lesson[] = [
     misconception:
       "“The hamburger menu is fine, everyone knows it.” Recognition of the icon is not the issue; what is behind it is. People do not open menus to browse, so anything essential placed there is effectively removed for anyone who does not already know it exists.",
     example:
-      "A phone header held a logo, a search icon and a menu icon; the only route to “Change or cancel a booking” was inside the menu, and in the m07 paper test two people said they would ring instead. The revision kept the logo small, put the current section name in the header as the location signal, promoted “My bookings” to a visible item, and left genuinely secondary destinations in the menu. On the wide layout the same items appeared as a row with the current one underlined and bolded, and the underline was checked in greyscale.",
+      "Made-up example: a phone header held a logo, a search icon and a menu icon; the only route to “Change or cancel a booking” was inside the menu, and in the m07 paper test two people said they would ring instead. The revision kept the logo small, put the current section name in the header as the location signal, promoted “My bookings” to a visible item, and left genuinely secondary destinations in the menu. On the wide layout the same items appeared as a row with the current one underlined and bolded, and the underline was checked in greyscale.",
     freeToolPath:
       "Draw both widths on paper at real size, then walk three tasks with a finger and count taps. A local HTML file with a list and a media query shows real collapse behaviour if you want to see it move.",
     outputs: [
@@ -1104,7 +1111,7 @@ export const module8: Lesson[] = [
     misconception:
       "“We can just make the table scroll horizontally on mobile.” Horizontal scrolling hides which column you are reading and separates values from their row identity. It is occasionally the right answer for genuinely wide reference data, and it is a poor default for a table people must act on.",
     example:
-      "A class list showed eight columns on desktop and scrolled sideways on a phone. Rebuilt: rows kept the four attributes the m05 sessions showed people comparing — day and time, price, place, remaining places — with the rest moved to the detail view. Default sort became soonest first, stated above the list. On a phone each row became a record with the class name as the heading. The longest real class name was used for layout, missing prices showed “price on request” rather than a blank, and a full class showed “Full — see other dates” instead of a zero.",
+      "Made-up example: a class list showed eight columns on desktop and scrolled sideways on a phone. Rebuilt: rows kept the four attributes the m05 sessions showed people comparing — day and time, price, place, remaining places — with the rest moved to the detail view. Default sort became soonest first, stated above the list. On a phone each row became a record with the class name as the heading. The longest real class name was used for layout, missing prices showed “price on request” rather than a blank, and a full class showed “Full — see other dates” instead of a zero.",
     freeToolPath:
       "Paper and your real data. Write out the ten worst real rows by hand at phone width; the layout problems appear immediately and cost nothing to fix at that stage.",
     outputs: [
@@ -1118,7 +1125,7 @@ export const module8: Lesson[] = [
         minutes: 20,
         title: "Decide the row content",
         instructions: [
-          "List the attributes your m05 participants compared on.",
+          "List the attributes people were seen comparing on: your m05 notes, or the supplied practice notes labelled as supplied.",
           "Put those in the row and move everything else to the detail view.",
           "Write what you deliberately omitted and why.",
         ],
@@ -1187,7 +1194,7 @@ export const module8: Lesson[] = [
       {
         criterion: "Row content is traced to observed comparison behaviour",
         evidence:
-          "A row specification citing m05 evidence per attribute, plus a written list of omissions.",
+          "A row specification citing evidence per attribute — your m05 notes, or the supplied practice notes labelled as supplied — plus a written list of omissions.",
         levels: [
           "Row content chosen from what the data contains.",
           "A reasoned list with no trace to observed behaviour.",
@@ -1195,7 +1202,7 @@ export const module8: Lesson[] = [
           "As adequate, and one attribute is included because its absence made people open every result.",
         ],
         remediation:
-          "Re-read your m05 notes for the attributes participants named while choosing. Those are the row; the rest is the detail view.",
+          "Re-read your m05 notes, or the supplied practice notes, for the attributes people named while choosing. Those are the row; the rest is the detail view.",
         recheck: "The row specification with citations.",
       },
       {
@@ -1305,7 +1312,7 @@ export const module8: Lesson[] = [
     misconception:
       "“A confirmation dialogue makes destructive actions safe.” It makes them slower. Repeated confirmations are dismissed automatically, so the protection erodes while the cost remains. Undo protects the person who has already made the mistake, which is the person who needs protecting.",
     example:
-      "Three interruptions were reviewed. Cancelling a booking: kept as a confirmation, because the place is released immediately and cannot be recovered — the dialogue now states exactly what will be lost and offers “Keep booking” as the safe default. Removing a shortlist item: replaced with an undo message, since nothing is lost permanently. A newsletter prompt appearing over the payment step: removed entirely and moved to the confirmation screen, where the person has finished and can consider it — with the reason recorded, since someone will propose it again.",
+      "Made-up example: three interruptions were reviewed. Cancelling a booking: kept as a confirmation, because the place is released immediately and cannot be recovered — the dialogue now states exactly what will be lost and offers “Keep booking” as the safe default. Removing a shortlist item: replaced with an undo message, since nothing is lost permanently. A newsletter prompt appearing over the payment step: removed entirely and moved to the confirmation screen, where the person has finished and can consider it — with the reason recorded, since someone will propose it again.",
     freeToolPath:
       "Paper screens plus a written decision table. If you want to feel the focus trap, a local HTML file with a dialog element shows how dismissal and the escape key behave with no framework.",
     outputs: [
@@ -1506,7 +1513,7 @@ export const module8: Lesson[] = [
     misconception:
       "“Toasts are a clean way to show status.” They are a clean way to show status to someone watching that corner at that moment. For anything a person must act on or will need later, a toast is a way of appearing to communicate without communicating.",
     example:
-      "The product had one toast style for everything. Rebuilt into four: a quiet inline confirmation for a saved draft that fades; a persistent banner at the top of the task for “Your place is held for 10 minutes”, with the time remaining; a warning beside the affected field when a chosen date had just filled; and a persistent failure message at the payment step saying what happened, that nothing had been taken, and what to do next. Each pairs colour with an icon shape and words, and each was checked in greyscale.",
+      "Made-up example: the product had one toast style for everything. Rebuilt into four: a quiet inline confirmation for a saved draft that fades; a persistent banner at the top of the task for “Your place is held for 10 minutes”, with the time remaining; a warning beside the affected field when a chosen date had just filled; and a persistent failure message at the payment step saying what happened, that nothing had been taken, and what to do next. Each pairs colour with an icon shape and words, and each was checked in greyscale.",
     freeToolPath:
       "Write all four messages out on paper at the position they will appear on the screen sketch. Read each aloud to someone and ask what they would do next; that is the whole test.",
     outputs: [
@@ -1556,7 +1563,7 @@ export const module8: Lesson[] = [
         minutes: 15,
         title: "Test aloud and record",
         instructions: [
-          "Read each message to someone and ask what they would do next.",
+          "Read each message to someone and ask what they would do next; if nobody is free, read them aloud yourself after a break and say so.",
           "Rewrite any message that produces a shrug or a wrong answer.",
           "Save the four specifications with placement and duration rules.",
         ],
@@ -1708,7 +1715,7 @@ export const module8: Lesson[] = [
     misconception:
       "“Empty and loading states are polish for later.” They are the first thing a new person sees and the thing everyone sees on a poor connection. Designed last, they get whatever the framework provides, which is usually a blank area and a spinner.",
     example:
-      "The bookings screen showed a blank panel to new people and the same panel when a filter matched nothing. Rebuilt into three: for a new person, “Your bookings appear here once you book a class. Find a class on Saturday” with the action beside it; for a filter with no matches, “No classes match Saturday morning under 500. Remove the price filter to see three more”; and for a full class, the alternative dates. Loading reserved the row heights so nothing jumped, and after three seconds the message changed to name what was being waited for.",
+      "Made-up example: the bookings screen showed a blank panel to new people and the same panel when a filter matched nothing. Rebuilt into three: for a new person, “Your bookings appear here once you book a class. Find a class on Saturday” with the action beside it; for a filter with no matches, “No classes match Saturday morning under 500. Remove the price filter to see three more”; and for a full class, the alternative dates. Loading reserved the row heights so nothing jumped, and after three seconds the message changed to name what was being waited for.",
     freeToolPath:
       "Sketch the three empty causes side by side and write the full wording. Use your browser's throttling to watch a comparable real page load slowly and time how long the gap feels.",
     outputs: [
@@ -1887,32 +1894,32 @@ export const module8: Lesson[] = [
     guided: true,
     title: "Charts that do not mislead",
     objective:
-      "Draw one chart from data you actually hold, following the assigned conventions, and write the alternative text that carries the same information to someone who cannot see it.",
+      "Draw one chart from data you actually hold, or from the supplied practice counts labelled as made up, following the assigned conventions, and write the alternative text that carries the same information to someone who cannot see it.",
     bringForward:
-      "Any real counts you hold: your m05 survey responses, your m06 tree-test results or your own practice log.",
-    prerequisite: "A small set of real counts you can honestly attribute.",
+      "Any real counts you hold: your m05 survey responses, your m06 tree-test results or your own practice log. If you hold none, the lesson supplies practice counts to label as made up.",
+    prerequisite: "A small set of real counts you can honestly attribute, or the supplied practice counts labelled as made up.",
     why: "A chart makes a claim look measured. Drawing one from four participants and reading it as a trend is the fastest way to mislead yourself and everyone downstream.",
     teach: [
       "Choose the chart from the comparison: bars compare amounts, lines show change over time.",
-      "Never break the numerical axis on a bar chart; the bar length is the comparison.",
+      "Do not break a bar chart’s numerical axis, as the assigned guidance says: bar length is the comparison, so a cut axis changes the apparent ratio.",
       "Label directly on the chart where you can, instead of making people decode a legend.",
       "Alternative text must carry the same information, not describe the picture.",
       "State n on the chart. A chart of eight responses is a picture of eight responses.",
     ],
     explanation: [
-      "The chart type follows from the comparison you want a reader to make. Bars compare amounts across categories and rely on length, which is why truncating their axis is a distortion rather than a style choice: half the bar is missing but the reader still compares lengths. Lines show change across a continuous scale, usually time, and their axis may be broken when the change is small relative to the values, provided the break is visible and labelled.",
-      "The assigned guidance is precise about the mechanics: horizontal axis text, thousands separated, light gridlines and few of them, legends ordered to match the data, direct labelling preferred, and colour contrast meeting the accessibility threshold. Following it costs nothing and removes the most common ways a chart becomes harder to read than the table it came from.",
+      "The chart type follows from the comparison you want a reader to make. Bars compare amounts across categories and rely on length, which is why truncating their axis is a distortion rather than a style choice: part of every bar is missing but the reader still compares lengths. Two bars of 9 and 13 drawn from zero have lengths in the ratio 13 ÷ 9, about 1.4; start the axis at 8 and the visible lengths are 1 and 5, so the larger looks five times the smaller. Lines show change across a continuous scale, usually time, and the assigned guidance accepts a broken axis on a line chart when necessary, provided the break is clear and obvious.",
+      "The assigned guidance is precise about the mechanics: horizontal axis text, thousands separated, light grey gridlines and generally no more than ten, legends ordered to match the data, direct labelling preferred, and colour contrast meeting the accessibility threshold. Following it costs nothing and removes the most common ways a chart becomes harder to read than the table it came from.",
       "Alternative text is not a caption. Someone who cannot see the chart needs the information it carries — the comparison and the values that matter — not a description of its appearance. “Bar chart of bookings by day” carries nothing; “Bookings by day: Saturday 34, Sunday 21, weekdays fewer than 10 each; n = 96 over four weeks” carries the finding. Publishing the underlying numbers alongside is better still.",
       "The sample belongs on the chart itself, not in a footnote elsewhere, because a chart is the part that gets screenshotted and forwarded. A chart of eight survey responses drawn without n reads as a measurement of a population, and the person who reposts it will not know it was not.",
     ],
     misconception:
       "“Charts make findings clearer.” They make comparisons visible, which is not the same thing. A chart drawn from a small sample makes an uncertain finding look precise, and precision is exactly what a reader takes from a picture with an axis.",
     example:
-      "Twenty-two survey responses became a bar chart of “was it clear your payment had gone through?”. The first draft had a truncated axis that made nine look nearly twice fifteen, a legend requiring decoding, and no n. Redrawn: full axis from zero, direct labels on each bar, light gridlines, n = 22 stated in the subtitle with the recruitment route named, and alternative text reading “Of 22 people recruited through two WhatsApp groups, 9 were unsure their payment had gone through, 13 were sure.” The underlying counts were published beneath it.",
+      "Made-up example: twenty-two survey responses became a bar chart of “was it clear your payment had gone through?”: 9 unsure, 13 sure. The first draft started the axis at 8, so the bars stood 1 and 5 units tall and nine looked like a fifth of thirteen, when it is about seven-tenths of it (9 ÷ 13 ≈ 0.69). It also had a legend requiring decoding, and no n. Redrawn: full axis from zero, the counts written on each bar, light gridlines, n = 22 stated in the subtitle with the recruitment route named, and alternative text reading “Of 22 people recruited through two WhatsApp groups, 9 were unsure their payment had gone through, 13 were sure.” The underlying counts were published beneath it.",
     freeToolPath:
       "Graph paper and a ruler, photographed, is a legitimate chart and forces you to plot the real values. A spreadsheet works if you have one; no paid tool or plotting library is required.",
     outputs: [
-      "One chart drawn from data you actually hold, following the conventions",
+      "One chart drawn from data you hold, or from the labelled practice counts, following the conventions",
       "n and the recruitment route stated on the chart",
       "Alternative text carrying the same information as the chart",
       "The underlying numbers published beside it",
@@ -1940,6 +1947,7 @@ export const module8: Lesson[] = [
         title: "Draw it honestly",
         instructions: [
           "Start the numerical axis at zero for bars.",
+          "Work out the ratio your bars show from zero, and the ratio a cut axis would have shown, so the size of the distortion is a number.",
           "Label directly rather than using a legend where you can.",
           "Check the colours against the contrast threshold.",
         ],
@@ -1957,7 +1965,7 @@ export const module8: Lesson[] = [
         minutes: 15,
         title: "Test the claim",
         instructions: [
-          "Show the chart to someone and ask what it tells them.",
+          "Show the chart to someone and ask what it tells them; if nobody is free, read it cold yourself after a break and say so.",
           "If they state something your sample cannot support, change the chart or its labels.",
           "Save the chart, the alternative text and the numbers.",
         ],
@@ -1967,7 +1975,7 @@ export const module8: Lesson[] = [
       {
         question: "Why must a bar chart's axis start at zero?",
         answer:
-          "Because the comparison is bar length. Truncating the axis removes part of every bar while readers still compare lengths, which changes the apparent ratio.",
+          "Because the comparison is bar length. Truncating the axis removes part of every bar while readers still compare lengths: 45 and 55 drawn from 40 become bars of 5 and 15, so a ratio of about 1.2 looks like 3.",
       },
       {
         question: "What belongs in alternative text?",
@@ -2018,7 +2026,7 @@ export const module8: Lesson[] = [
       {
         criterion: "n and the recruitment route appear on the chart",
         evidence:
-          "Sample size and how those people were reached, visible on the chart itself.",
+          "Sample size and how those people were reached, or “made-up practice data”, visible on the chart itself.",
         levels: [
           "No sample stated.",
           "n given in a separate document or footnote.",
@@ -2037,7 +2045,7 @@ export const module8: Lesson[] = [
           "No alternative text, or a description of the chart type.",
           "Some values given but the comparison left implicit.",
           "Comparison, values and sample all present, with numbers published.",
-          "As adequate, and someone who cannot see the chart confirmed the text told them what they needed.",
+          "As adequate, and a reader who had not seen the chart answered its question correctly from the text alone.",
         ],
         remediation:
           "Cover the chart and read only your alternative text. If you could not answer the question the chart exists to answer, rewrite it.",
@@ -2109,7 +2117,7 @@ export const module8: Lesson[] = [
     misconception:
       "“More tokens means more flexibility.” More tokens means more places to be inconsistent and more decisions for whoever comes next. A small set with clear roles constrains usefully; a large set is a palette with extra steps.",
     example:
-      "The token sheet came to twenty-two values: five neutrals, three semantic colours, six type steps, six spacing values and two radii. Applying it to the booking screen surfaced three exceptions — a one-off border grey, a 10px gap and a heading half a step smaller than any token. The border grey became an existing neutral, the gap moved to the nearest spacing value, and the heading revealed a real missing role, so a step was added deliberately. Every text pair was measured; the caption on the tinted panel failed and was darkened, and the measured numbers were written on the sheet.",
+      "Made-up example: the token sheet came to twenty-two values: five neutrals, three semantic colours, six type steps, six spacing values and two radii. Applying it to the booking screen surfaced three exceptions — a one-off border grey, a 10px gap and a heading half a step smaller than any token. The border grey became an existing neutral, the gap moved to the nearest spacing value, and the heading revealed a real missing role, so a step was added deliberately. Every text pair was measured; the caption on the tinted panel failed and was darkened, and the measured numbers were written on the sheet.",
     freeToolPath:
       "A written table is a token sheet. For contrast, any free browser-based checker or your operating system's own tools will do, and you can also compute the ratio in a spreadsheet from the published formula; no paid plugin is needed.",
     outputs: [
@@ -2302,14 +2310,14 @@ export const module8: Lesson[] = [
     ],
     explanation: [
       "Assembly is a test of the parts. When a screen forces you to invent a component, a token or a state, that is information about the set rather than a nuisance: either something is genuinely missing, or the screen is asking for a variation it does not need. Recording each invention as it happens keeps the library honest and produces the list of decisions the next module builds on.",
-      "The strongest critique goes finding by finding. Take your m05 findings and m07 test results and ask, for each, whether this screen serves it — the payment uncertainty, the shared-device booking, the comparison people were making. That converts critique from an exchange of preferences into a checkable exercise, and it usually surfaces one finding the design has quietly stopped serving.",
+      "The strongest critique goes finding by finding. Take your m05 findings and m07 test results, or the supplied practice notes if you hold none, and ask, for each, whether this screen serves it — the payment uncertainty, the shared-device booking, the comparison people were making. That converts critique from an exchange of preferences into a checkable exercise, and it usually surfaces one finding the design has quietly stopped serving.",
       "Run the preliminary checks that apply — page title, headings, contrast, resize, keyboard where a build exists — and record both what passed and what those checks cannot establish. The resource states plainly that they are preliminary and that passing them is not conformance, and running them yourself is not testing with disabled people. Both statements belong in your write-up every time you show this work.",
       "Rank what you find by task impact. A misaligned label is worth noting; a status that cannot be distinguished in greyscale stops someone. Fixing in that order is the difference between a screen that looks tidier and one that works better, and stating the ranking is what lets a reviewer disagree with your priorities rather than your taste.",
     ],
     misconception:
       "“It looks finished, so it is ready.” Looking finished is a property of the surface. Ready means the states exist, the evidence is served, the checks were run and the remaining gaps are written down where someone else can see them.",
     example:
-      "Assembling two screens from the library required inventing three things: a status pill for a held place, a compact price treatment, and a spacing value between a heading and a dense list. The pill was a genuine missing component and was added; the price treatment was an accidental variation and was replaced with the existing one; the spacing became the nearest token. The finding-by-finding critique showed the screen no longer surfaced remaining places, which the m05 research had shown people comparing on, so it was restored. The preliminary checks found a heading level skipped and a caption below the contrast threshold; the keyboard check could not be completed because nothing was built, and that was recorded as untested rather than assumed.",
+      "Made-up example: assembling two screens from the library required inventing three things: a status pill for a held place, a compact price treatment, and a spacing value between a heading and a dense list. The pill was a genuine missing component and was added; the price treatment was an accidental variation and was replaced with the existing one; the spacing became the nearest token. The finding-by-finding critique showed the screen no longer surfaced remaining places, which the m05 research had shown people comparing on, so it was restored. The preliminary checks found a heading level skipped and a caption below the contrast threshold; the keyboard check could not be completed because nothing was built, and that was recorded as untested rather than assumed.",
     freeToolPath:
       "Paper or a local HTML file, whichever you have been using. If you want the accessibility checks to be real rather than theoretical, a local HTML file lets you check headings, resize and keyboard behaviour with a browser alone.",
     outputs: [
@@ -2323,7 +2331,7 @@ export const module8: Lesson[] = [
         minutes: 30,
         title: "Assemble",
         instructions: [
-          "Build two complete screens using only your components and tokens.",
+          "Build two complete screens using only your components and tokens; without screens of your own, start from a copy of /starters/m08/booking-screen-starter.svg.",
           "Write down every component, token or state you had to invent.",
           "Include at least one non-happy state among the two screens.",
         ],
@@ -2341,7 +2349,7 @@ export const module8: Lesson[] = [
         minutes: 30,
         title: "Critique against findings",
         instructions: [
-          "List your m05 findings and m07 test results.",
+          "List your m05 findings and m07 test results, or the supplied practice notes labelled as supplied.",
           "For each, write whether this screen serves it and how you can tell.",
           "Repair the strongest failure you find.",
         ],
@@ -2420,7 +2428,7 @@ export const module8: Lesson[] = [
       {
         criterion: "The critique runs finding by finding against research",
         evidence:
-          "Each m05 finding and m07 result listed with whether the screen serves it and the evidence.",
+          "Each finding — your m05 findings and m07 results, or the supplied practice notes labelled as supplied — listed with whether the screen serves it and the evidence.",
         levels: [
           "Critique based on appearance.",
           "Some findings referenced generally.",
