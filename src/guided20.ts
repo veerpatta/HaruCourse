@@ -1182,7 +1182,7 @@ export const guided20: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'data', title: 'Decide the data first', fields: [
-        { id: 'data-include', label: 'The personal information that will appear', kind: 'long', example: 'Example (made up): first name and surname, city, and an email address used only for this.' },
+        { id: 'data-include', label: 'The kinds of personal information that will appear, listed by type rather than the details themselves', kind: 'long', hint: 'Write “city” or “an email used only for this”, not the address itself. The details go on your profile; this answer syncs to the course.', example: 'Example (made up): first name and surname, city, and an email address used only for this.' },
         { id: 'data-exclude', label: 'What will not appear, decided before writing', kind: 'long', hint: 'Default to less. You can add later; you cannot remove something from an index.' },
       ] },
       { id: 'profile', title: 'Write it', fields: [
@@ -1190,8 +1190,8 @@ export const guided20: Record<string, Guided> = {
         { id: 'what-you-show', label: 'The three projects and what each one shows, in one line each', kind: 'long' },
       ] },
       { id: 'others', title: 'Other people', fields: [
-        { id: 'names-to-roles', label: 'Names replaced by roles where you have no permission', kind: 'long' },
-        { id: 'permission-checked', label: 'Client, employer and business names checked against what was agreed', kind: 'long', example: 'Example (made up): a small repair business rather than the shop’s name; the owner agreed to the work being shown, not to being identified.' },
+        { id: 'names-to-roles', label: 'The roles you used in place of names where you have no permission, not the names themselves', kind: 'long', sensitive: true, hint: 'Write “the shop owner” or “a screen-reader user”. Keep any list of real names out of this course.' },
+        { id: 'permission-checked', label: 'Each client, employer or business you mention, by description, and what was agreed about naming it', kind: 'long', sensitive: true, example: 'Example (made up): a small repair business rather than the shop’s name; the owner agreed to the work being shown, not to being identified.' },
       ] },
       { id: 'consistency', title: 'Consistency with the resume', fields: [
         { id: 'resume-compare', label: 'The profile read line by line beside the resume', kind: 'long' },
@@ -1221,7 +1221,7 @@ export const guided20: Record<string, Guided> = {
           ],
           wrongTurn: 'The wrong turn is treating the form as the decision, because every field looks required and completeness feels professional. A profile is permanent and indexed, so filling a field is publishing, and publishing is not reversible.',
           tradeoff: 'A sparse profile gives somebody less reason to believe you exist, and one person did ask for a phone number before a call.',
-          uncertainty: 'Still unknown: whether the city helps or narrows things. It stays because remote listings ask about overlap hours and the city answers that without an address.',
+          uncertainty: 'Still unknown: whether the city helps or narrows things. It stays because remote listings ask about overlap hours, and a city answers the time-zone question without an address. It says nothing about eligibility, which a listing has to state.',
         },
         start: 'Write both lists before opening any profile form.',
         enough: 'Nothing appears on your profile that is not on the include list.' },
@@ -1244,7 +1244,7 @@ export const guided20: Record<string, Guided> = {
             { id: 'mobile-number', text: 'Your mobile number.', answer: 'decide deliberately — usually leave it out',
               feedback: {
                 'fine to publish': 'Published once, it is copied permanently, and deleting the field does not stop the calls.',
-                'decide deliberately — usually leave it out': 'Anybody who needs it can be given it after an email. Four recruitment calls a fortnight is the usual result of publishing it.',
+                'decide deliberately — usually leave it out': 'Anybody who needs it can be given it after an email. In the made-up example, publishing it brought four recruitment calls in a fortnight.',
                 'somebody else’s to publish': 'It is yours to publish, and the question is whether to.',
               } },
             { id: 'shop-name', text: 'The name of the repair shop whose owner agreed to the work being shown.', answer: 'somebody else’s to publish',
@@ -1265,7 +1265,7 @@ export const guided20: Record<string, Guided> = {
                 'decide deliberately — usually leave it out': 'A decision with consequences at work. Prior roles with dates carry the history without announcing the present.',
                 'somebody else’s to publish': 'The fact of your employment is yours to state; the timing is what needs thought.',
               } },
-            { id: 'colleague-name', text: 'The name of the friend who built your prototype, in the project line.', answer: 'somebody else’s to publish',
+            { id: 'colleague-name', text: 'The name of the friend who reviewed your code and fixed a date bug, in the project line.', answer: 'somebody else’s to publish',
               feedback: {
                 'fine to publish': 'Naming somebody is publishing information about them.',
                 'decide deliberately — usually leave it out': 'It is not a decision you can make alone, which is a stronger constraint than deliberation.',
@@ -1320,9 +1320,9 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'The profile form has fields for a phone number, a personal email and your current employer. Fill them in?',
         options: [
-          { label: 'Only what is on your include list. A public profile is permanent and indexed, so filling a field is publishing.', correct: true, feedback: 'Deleting the fields later removes them from the page and not from everywhere they were copied to. Recruitment calls continued for months afterwards.' },
-          { label: 'Yes — a complete profile looks more professional.', feedback: 'Completeness is what the form rewards, and it is not what a reader is deciding on.' },
-          { label: 'Yes, and remove them if it becomes a problem.', feedback: 'That is exactly the sequence that does not work, because removal is not retroactive.' },
+          { label: 'Only those on the include list you wrote first: on a public profile, filling a field is publishing.', correct: true, feedback: 'A public profile is permanent and indexed. Deleting a field later removes it from the page and not from everywhere it was copied to; in the made-up example, recruitment calls continued for months.', was: ['Only what is on your include list. A public profile is permanent and indexed, so filling a field is publishing.'] },
+          { label: 'All of them, because a complete profile looks more professional to the people who read it.', feedback: 'Completeness is what the form rewards, and it is not what a reader is deciding on.', was: ['Yes — a complete profile looks more professional.'] },
+          { label: 'All of them for now, removing any that cause a problem later, once you see how people actually use them.', feedback: 'That is the sequence that does not work, because removal is not retroactive.', was: ['Yes, and remove them if it becomes a problem.'] },
         ],
         repair: 'Write the include and exclude lists in step 1, then edit the profile to match. Record the change in step 5.',
         recheck: 'Nothing appears on your profile that is not on the include list.',
@@ -1330,24 +1330,33 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'The shop owner was pleased with the work and agreed to it being shown. Can you name the shop on your profile?',
         options: [
-          { label: 'No, not without asking. Agreeing to the work being shown is not agreeing to be identified, and a profile line is indexed against the name.', correct: true, feedback: 'He would rather not, because the project is about how badly the old process worked and his customers can read. A small repair business carries the same weight.' },
-          { label: 'Yes — naming him is proper credit for his generosity.', feedback: 'A generous instinct that publishes information about somebody who has not agreed to it.' },
-          { label: 'Yes, since the case study already describes the project.', feedback: 'The case study is read by people who go looking. A profile line is searchable against the shop.' },
+          { label: 'Ask him first: agreeing to show the work is not agreeing to be named, and a profile is indexed.', correct: true, feedback: 'In the made-up example he would rather not, because the project is about how badly the old process worked and his customers can read. A small repair business carries the same weight.', was: ['No, not without asking. Agreeing to the work being shown is not agreeing to be identified, and a profile line is indexed against the name.'] },
+          { label: 'Name the shop, since crediting him publicly is the proper return for his generosity and time.', feedback: 'A generous instinct that publishes information about somebody who has not agreed to it.', was: ['Yes — naming him is proper credit for his generosity.'] },
+          { label: 'Name the shop, since the case study already describes the project and readers will work it out.', feedback: 'The case study is read by people who go looking; a profile line is searchable against the shop’s name.', was: ['Yes, since the case study already describes the project.'] },
         ],
         repair: 'Check every proper noun in step 3 against what was agreed, and replace what is not permitted. Record the change in step 5.',
         recheck: 'Every name on the page is yours or permitted.',
       },
       {
-        question: 'Does more detail make a profile more credible?',
+        question: 'You could add three more paragraphs about your values and interests. Does more detail make a profile more credible?',
         options: [
-          { label: 'No. Specific evidence makes it credible; volume makes it skimmable and generic.', correct: true, feedback: 'Three sentences and a link outperform six paragraphs of adjectives. Three project lines saying what each shows are the part anybody reads.' },
-          { label: 'Yes, within reason — a reader wants to know who you are.', feedback: 'They want to know what you can show, which takes three lines.' },
-          { label: 'Yes for a career changer, who has more to explain.', feedback: 'The transition account is ninety seconds when asked. A profile is not where it goes.' },
+          { label: 'Specific evidence does; volume makes a profile skimmable and generic, so three project lines win.', correct: true, feedback: 'Three sentences and a link are more likely to be read than six paragraphs of adjectives. Project lines saying what each shows are the part anybody reads.', was: ['No. Specific evidence makes it credible; volume makes it skimmable and generic.'] },
+          { label: 'More detail does, within reason, because a reader wants a sense of who you are as a person.', feedback: 'They want to know what you can show, which takes three lines.', was: ['Yes, within reason — a reader wants to know who you are.'] },
+          { label: 'More detail does for a career changer, who has more of a story to explain than other applicants.', feedback: 'The transition account is ninety seconds when asked; a profile is not where it goes.', was: ['Yes for a career changer, who has more to explain.'] },
         ],
         repair: 'Cut the profile in step 2 to the projects, what each shows, and a link. Record the change in step 5.',
         recheck: 'A stranger could tell what you do and what to look at.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: A friend who tutors adults in spreadsheets is making a public page to find clients. Her draft includes her full home address “so people can find me”, her personal mobile number, a photo of a session with two learners’ faces visible, a quote from a learner with his full name, and her qualifications.',
+      prompt: 'Decide what stays, what goes and what needs somebody else’s permission, and explain each decision.',
+      anchors: {
+        weak: 'Keeps everything because more detail looks credible, or removes only the address.',
+        adequate: 'Keeps the qualifications and a contact route she controls; replaces the address with an area; drops the mobile; removes the photo and the named quote unless those learners agree, using a role instead.',
+        strong: 'Adequate, plus notes that removal is not retroactive, so she decides before publishing, and offers alternatives: a photo without faces, a quote credited by role with the permission recorded.',
+      },
+    },
     saveRoute: {
       auto: 'Your data decisions, the profile draft, the role replacements and the consistency check save as you type, on this device first and then online.',
       external: 'Publishing happens on your own page or a platform of your choosing, by you. Nothing here is published from this app.',
@@ -1359,7 +1368,7 @@ export const guided20: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'happened', title: 'What actually happened', fields: [
-        { id: 'what-happened', label: 'The real reason you moved, including the unflattering parts', kind: 'long', hint: 'Boredom, a bad brief, needing more money, being made redundant. All of these are true reasons that people accept.' },
+        { id: 'what-happened', label: 'The real reason you moved, including the unflattering parts', kind: 'long', hint: 'Boredom, a bad brief, needing more money, being made redundant. All of these are true reasons that people accept. Describe former employers and colleagues without naming them.' },
         { id: 'removed-inevitable', label: 'What you removed because it was shaped to sound inevitable', kind: 'long' },
       ] },
       { id: 'transfer', title: 'What transferred, and what did not', fields: [
@@ -1372,10 +1381,10 @@ export const guided20: Record<string, Guided> = {
       ] },
       { id: 'cut', title: 'Cut to ninety seconds', fields: [
         { id: 'timings', label: 'Your timings across rehearsals', kind: 'short', example: 'Example (made up): 105, 95, 88, 90 seconds.' },
-        { id: 'kept-specifics', label: 'What you cut, and the specifics you kept', kind: 'long', hint: 'Cut transitions and scene-setting. Keep the counts, the projects and the one thing that went wrong.' },
+        { id: 'kept-specifics', label: 'What you cut, and the specifics you kept', kind: 'long', hint: 'Cut transitions and scene-setting. Keep the counts with their periods, the projects and the one thing that went wrong.' },
       ] },
       { id: 'rehearse', title: 'Say it to somebody', fields: [
-        { id: 'heard-back', label: 'What they said they heard, in their words', kind: 'long' },
+        { id: 'heard-back', label: 'What your listener said they heard, in their words but without their name — or, solo, what you heard on playback, labelled self-review', kind: 'long', sensitive: true },
         { id: 'sounded-rehearsed', label: 'Anything that sounded rehearsed or overclaimed, and what you did about it', kind: 'long' },
         improvementMade,
       ] },
@@ -1441,7 +1450,7 @@ export const guided20: Record<string, Guided> = {
             { id: 'passionate-users', text: '“I am passionate about designing things that genuinely help people.”', answer: 'rests on enthusiasm',
               feedback: {
                 'rests on evidence': 'Nobody could check it, and everybody says it.',
-                'rests on enthusiasm': 'The commonest closing sentence there is, which is why it closes nothing.',
+                'rests on enthusiasm': 'A very common closing sentence, which is why it closes nothing.',
                 'disparages the old field': 'It implies the old work did not help people, faintly, and it is mostly enthusiasm.',
               } },
             { id: 'screen-reader-close', text: '“The last gap I closed was testing with a screen-reader user, which found two failures my own keyboard pass had missed.”', answer: 'rests on evidence',
@@ -1483,23 +1492,23 @@ export const guided20: Record<string, Guided> = {
         },
         start: 'Read it aloud with a timer before cutting anything.',
         enough: 'It fits the time with its specifics intact.' },
-      { expect: 'The account said to somebody, with what they heard and anything that sounded rehearsed.',
+      { expect: 'The account said to somebody — or recorded and played back a day later if nobody is available — with what was heard and anything that sounded rehearsed.',
         fields: ['heard-back', 'sounded-rehearsed', 'improvement-made'],
         terms: [
           { term: 'What they heard', meaning: 'Their account of it, in their words. It is the only way to find out what the ninety seconds actually conveys.' },
           { term: 'Sounding rehearsed', meaning: 'A phrase that arrives too smoothly. It signals a prepared answer, which makes everything after it sound prepared too.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
-        start: 'Ask them to tell you back what they heard rather than whether it was good.',
-        enough: 'You wrote their words rather than your summary of them.' },
+        start: 'Ask them to tell you back what they heard rather than whether it was good. Solo: record it, wait a day, and write what a stranger would have heard.',
+        enough: 'You wrote what was heard rather than whether it was good, labelled as theirs or as your own playback.' },
     ],
     checks: [
       {
         question: 'Do you need a compelling story about why you changed fields?',
         options: [
-          { label: 'You need a true one, told briefly. Interviewers hear constructed narratives constantly and discount them.', correct: true, feedback: 'Eight years of not knowing whether the work worked, and one wrong brief nobody had checked, produces follow-up questions. Always been drawn to never has.' },
-          { label: 'Yes — the story is what makes you memorable.', feedback: 'Specifics make you memorable. The story is what everybody else brings.' },
-          { label: 'Yes, if it is true as well as compelling.', feedback: 'Shaping a true account into an inevitable one is where the specifics get smoothed out.' },
+          { label: 'A true account told briefly, with specifics, does more than a story shaped to sound inevitable.', correct: true, feedback: 'Interviewers often hear constructed narratives and tend to discount them. Eight years of not knowing whether the work worked, and one wrong brief nobody had checked, produces follow-up questions; always been drawn to does not.', was: ['You need a true one, told briefly. Interviewers hear constructed narratives constantly and discount them.'] },
+          { label: 'A compelling story is what makes you memorable when the interviewer has met ten other people.', feedback: 'Specifics make you memorable; a shaped story is what many other applicants bring.', was: ['Yes — the story is what makes you memorable.'] },
+          { label: 'A compelling story works if it is also true, so shape the real events into a clear narrative arc.', feedback: 'Shaping a true account into an inevitable one is where the specifics get smoothed out.', was: ['Yes, if it is true as well as compelling.'] },
         ],
         repair: 'Remove what was shaped to sound inevitable in step 1 and write what happened. Record the change in step 5.',
         recheck: 'Nothing in it is there because it sounds good.',
@@ -1507,24 +1516,33 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Your account runs to two minutes forty. What do you cut?',
         options: [
-          { label: 'Transitions and scene-setting. The counts, the projects and the thing that went wrong all stay.', correct: true, feedback: 'Cutting the specifics leaves ninety seconds of joining material and produces no follow-up question, which is the whole point of the ninety seconds.' },
-          { label: 'The longest sentences, which are usually the detailed ones.', feedback: 'Those are the specifics, and they are the only part that gives somebody something to ask about.' },
-          { label: 'One of the two lists, since transfer and non-transfer overlap.', feedback: 'They do different jobs, and the non-transfer list is the one people remember.' },
+          { label: 'Transitions and scene-setting; the counts, the projects and the thing that went wrong all stay.', correct: true, feedback: 'Cutting the specifics leaves ninety seconds of joining material and produces no follow-up question, which is the point of the ninety seconds.', was: ['Transitions and scene-setting. The counts, the projects and the thing that went wrong all stay.'] },
+          { label: 'The longest sentences first, which are usually the detailed ones, until it fits ninety seconds.', feedback: 'Those are the specifics, and they are the only part that gives somebody something to ask about.', was: ['The longest sentences, which are usually the detailed ones.'] },
+          { label: 'One of the two lists, since what transferred and what did not overlap enough to merge them.', feedback: 'They do different jobs, and the non-transfer list is the one people remember.', was: ['One of the two lists, since transfer and non-transfer overlap.'] },
         ],
         repair: 'Cut transitions rather than specifics in step 4 and time it again. Record the change in step 5.',
         recheck: 'It fits the time with its specifics intact.',
       },
       {
-        question: 'Is it safe to say that your old agency never spoke to users?',
+        question: 'As far as you saw, your old agency never spoke to users. Should your transition account say so?',
         options: [
-          { label: 'No. It is a complaint about former colleagues, and it tells a listener how you will speak about them later.', correct: true, feedback: 'The same fact is usable without it: one brief was wrong and nobody had asked anyone. That is about the work rather than the people, and it also stops you undercutting your own transfer list.' },
-          { label: 'Yes, if it is true and said neutrally.', feedback: 'Never and ever rarely arrive neutrally, and the listener hears the pattern rather than the fact.' },
-          { label: 'Yes — it explains why you left.', feedback: 'The wrong brief explains that, with a specific instead of a verdict on an organisation.' },
+          { label: 'Say what happened on the work instead: one brief was wrong and nobody had asked anyone.', correct: true, feedback: 'The same fact, said about the work rather than the people. A verdict on former colleagues tells a listener how you might speak about them later, and it undercuts your own transfer list.', was: ['No. It is a complaint about former colleagues, and it tells a listener how you will speak about them later.'] },
+          { label: 'Say it plainly, since it is true as far as you saw and a neutral tone keeps it from sounding bitter.', feedback: 'Never rarely arrives neutrally, and the listener hears the pattern rather than the fact.', was: ['Yes, if it is true and said neutrally.'] },
+          { label: 'Say it, because it is the clearest explanation of why you left and why research matters to you.', feedback: 'The wrong brief explains that, with a specific instead of a verdict on an organisation.', was: ['Yes — it explains why you left.'] },
         ],
         repair: 'Rewrite the closing sentence in step 3 to rest on evidence. Record the change in step 5.',
         recheck: 'Your closing sentence names something somebody could ask about.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: Arjun worked five years as a hotel receptionist and wants an operations role at a delivery company. His draft answer to “Why the change?” says he has “always been fascinated by logistics” and that “hotels waste people’s talent”. What happened: he rebuilt the hotel’s luggage-storage log after repeated mix-ups, logged eight mix-ups in the month before and two in the month after, and has never managed a budget or a team.',
+      prompt: 'Rewrite the core of his answer and explain what you kept, cut and added.',
+      anchors: {
+        weak: 'Keeps the destiny line or the complaint about hotels, or claims his log stopped the mix-ups.',
+        adequate: 'Says what happened (the log he rebuilt), names what transferred and what did not (no budget or team), drops the complaint, and ends on the evidence: eight mix-ups in the month before, two in the month after.',
+        strong: 'Adequate, plus keeps the counts with their periods without claiming the log caused the fall, and stays near ninety seconds by cutting scene-setting rather than specifics.',
+      },
+    },
     saveRoute: {
       auto: 'Your account, the two lists, the closing sentence and the timings save as you type, on this device first and then online.',
       external: 'Any recording you make stays in your own folder. The account is reused in the profile and in outreach, so keep it where you can find it.',
@@ -1536,11 +1554,11 @@ export const guided20: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'who', title: 'Choose the people', fields: [
-        { id: 'recipients-chosen', label: 'Who you are writing to, and why each one', kind: 'long', hint: 'A specific person connected to work you have actually read, rather than a general address.' },
+        { id: 'recipients-chosen', label: 'Each recipient by role and organisation, not their name or address, and why them', kind: 'long', sensitive: true, hint: 'A specific person connected to work you have actually read, rather than a general address. Keep names and addresses in your own email, not here.' },
         { id: 'what-you-read', label: 'What you read of theirs, named precisely', kind: 'long' },
       ] },
       { id: 'write', title: 'Write each one from scratch', fields: [
-        { id: 'drafts', label: 'Your drafts, two short paragraphs each', kind: 'long', hint: 'Written here, sent by you from your own email. Nothing is sent from this app.' },
+        { id: 'drafts', label: 'Your drafts, two short paragraphs each', kind: 'long', sensitive: true, hint: 'Written here, sent by you from your own email if at all; nothing is sent from this app. Leave the greeting as [name] so the person’s name stays out of this answer.' },
         { id: 'specific-named', label: 'The specific thing each message names', kind: 'long' },
       ] },
       { id: 'ask', title: 'The ask', fields: [
@@ -1553,7 +1571,7 @@ export const guided20: Record<string, Guided> = {
       ] },
       { id: 'send', title: 'Check, then send by hand', fields: [
         { id: 'claims-checked', label: 'Every claim in every message checked against your matrix', kind: 'long' },
-        { id: 'sent-record', label: 'What you sent, to whom, on what date, and what came back', kind: 'long' },
+        { id: 'sent-record', label: 'What you sent, to which role and organisation, on what date, and what came back — or not sent yet', kind: 'long', sensitive: true, hint: 'Summarise any reply in a line; the messages themselves stay in your email. Keeping drafts unsent is a complete outcome.' },
         improvementMade,
       ] },
     ],
@@ -1578,8 +1596,8 @@ export const guided20: Record<string, Guided> = {
             { label: 'What I did', text: 'Wrote a message I was pleased with, then sent it to thirty people with the name and company changed. It was honest, specific about my own work, and well written.' },
             { label: 'What came back', text: 'One reply out of thirty, and it asked which of their projects I meant.' },
             { label: 'Why that question', text: 'The paragraph about their work had to fit thirty companies, so it said things like the thoughtfulness of your product decisions. It named nothing, because it could not.' },
-            { label: 'What six messages produced', text: 'Two replies. One named an accessibility decision in their published design notes and asked a real question about it; the other answered a listing’s line about designers running their own research.' },
-            { label: 'What the difference actually was', text: 'Not effort per message. Whether there was anything in it that could only have been written to that person.' },
+            { label: 'What six messages produced', text: 'Two replies, one bounced address and three silences. Of the two that replied, one named an accessibility decision in their published design notes and asked a real question about it; the other answered a listing’s line about designers running their own research.' },
+            { label: 'What I think the difference was', text: 'Not effort per message. Whether there was anything in it that could only have been written to that person.' },
           ],
           wrongTurn: 'The wrong turn is scaling a good message, because the message is good and the only apparent cost is your time. Anything that must fit thirty recipients names nothing, and the recognisable generic paragraph is attached to your name permanently.',
           tradeoff: 'Six messages in two weeks feels far too slow when you want work, and thirty produced one confused reply.',
@@ -1619,7 +1637,7 @@ export const guided20: Record<string, Guided> = {
               feedback: {
                 'small and answerable': 'There is nothing to answer, so answering means writing an essay.',
                 'too large for a stranger': 'It is unbounded rather than costly, which amounts to the same silence.',
-                'not really an ask': 'The commonest ending to an outreach message, and the one that most reliably gets nothing back.',
+                'not really an ask': 'A very common ending to an outreach message, and one that rarely gets anything back.',
               } },
             { id: 'review-portfolio', text: '“Could you review my portfolio and tell me what to improve?”', answer: 'too large for a stranger',
               feedback: {
@@ -1660,7 +1678,7 @@ export const guided20: Record<string, Guided> = {
         },
         start: 'Write both rules before sending the first message.',
         enough: 'The rules are specific enough to break knowingly rather than by drift.' },
-      { expect: 'Every claim checked against the matrix, and the messages sent by hand with the replies recorded.',
+      { expect: 'Every claim checked against the matrix, and any message you send sent by hand, with what came back recorded.',
         fields: ['claims-checked', 'sent-record', 'improvement-made'],
         terms: [
           { term: 'Checking the claims', meaning: 'The same trace as the resume. A message is where an inflation slips in, because it is informal and written quickly.' },
@@ -1674,19 +1692,19 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'You have written one good message. Does sending it to thirty people give you thirty chances?',
         options: [
-          { label: 'No. Anything that must fit thirty recipients names nothing specific, and the recognisable generic paragraph is attached to your name.', correct: true, feedback: 'Thirty produced one reply asking which of their projects was meant. Six written from scratch produced two, because each contained something that could only have been written to that person.' },
-          { label: 'Yes, if the message is honest and well written.', feedback: 'It was both. The paragraph about their work is the one that cannot survive being reused.' },
-          { label: 'Yes, provided you change more than the name.', feedback: 'Changing more of it is writing it from scratch, slowly.' },
+          { label: 'Fewer than it looks: a message that must fit thirty people can name nothing specific to any of them.', correct: true, feedback: 'In the made-up example thirty produced one reply, asking which project was meant; six written from scratch produced two. Numbers that small prove little, and the paragraph about their work is the one that cannot survive being reused.', was: ['No. Anything that must fit thirty recipients names nothing specific, and the recognisable generic paragraph is attached to your name.'] },
+          { label: 'Thirty real chances, as long as the message itself is honest, specific about you and well written.', feedback: 'It was all of those. The paragraph about their work is the one that cannot survive being reused.', was: ['Yes, if the message is honest and well written.'] },
+          { label: 'Thirty real chances, provided you change the company details and the opening line as well as each name.', feedback: 'Changing more of it is writing it from scratch, slowly.', was: ['Yes, provided you change more than the name.'] },
         ],
         repair: 'Rewrite each message from scratch in step 2 after reading something of theirs. Record the change in step 5.',
         recheck: 'Each message contains something that could only have been written to that person.',
       },
       {
-        question: 'Is asking a stranger to refer you for a role a reasonable ask?',
+        question: 'You have never spoken to this person. Is asking them to refer you for a role a reasonable first ask?',
         options: [
-          { label: 'No. It asks them to spend their own credibility inside their company on somebody they have not met.', correct: true, feedback: 'The same person might do it after twenty minutes of conversation. One question or twenty minutes is what a stranger can grant without arranging anything.' },
-          { label: 'Yes, if you ask politely and make it easy to decline.', feedback: 'Politeness does not change what is being asked for.' },
-          { label: 'Yes, since the worst case is no reply.', feedback: 'The worse case is a reply that now has to say no, which ends the exchange.' },
+          { label: 'It is too large: it asks them to spend their credibility at work on somebody they have not met.', correct: true, feedback: 'The same person might do it after twenty minutes of conversation. One question or twenty minutes is what a stranger can grant without arranging anything.', was: ['No. It asks them to spend their own credibility inside their company on somebody they have not met.'] },
+          { label: 'It is reasonable if you ask politely, keep it brief, and make it easy for them to decline without guilt.', feedback: 'Politeness does not change what is being asked for.', was: ['Yes, if you ask politely and make it easy to decline.'] },
+          { label: 'It is reasonable because the worst outcome is no reply, which costs you nothing at all.', feedback: 'A reply that has to say no ends the exchange, which costs more than silence.', was: ['Yes, since the worst case is no reply.'] },
         ],
         repair: 'Replace any oversized ask in step 3 with one question or twenty minutes. Record the change in step 5.',
         recheck: 'Every ask could be granted in a few minutes.',
@@ -1694,14 +1712,23 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Three people have not replied after two weeks. What now?',
         options: [
-          { label: 'One follow-up each, after about ten days, adding something rather than repeating. Then silence is the answer.', correct: true, feedback: 'One of three answered the single follow-up. A third message makes your name memorable in the wrong way, in a field where people talk to each other.' },
-          { label: 'Keep following up; persistence is usually advised.', feedback: 'A non-reply costs nothing. A third message converts it into a bad impression.' },
-          { label: 'Nothing — a non-reply is a no.', feedback: 'Often true, and one follow-up is cheap and does sometimes produce a conversation.' },
+          { label: 'One follow-up each that adds something new, then treat further silence as the answer.', correct: true, feedback: 'In the made-up example one of three answered the single follow-up. A third message makes your name memorable in the wrong way, in a field where people talk to each other.', was: ['One follow-up each, after about ten days, adding something rather than repeating. Then silence is the answer.'] },
+          { label: 'Keep following up every few days, since persistence is widely advised and messages get buried.', feedback: 'A non-reply costs nothing; a third message converts it into a bad impression.', was: ['Keep following up; persistence is usually advised.'] },
+          { label: 'Nothing more: a non-reply after two weeks is a no, and a follow-up only adds pressure.', feedback: 'Often true, and one follow-up is cheap and does sometimes produce a conversation.', was: ['Nothing — a non-reply is a no.'] },
         ],
         repair: 'Write the follow-up interval and the limit of one in step 4, before sending anything. Record the change in step 5.',
         recheck: 'Your rules are specific enough to break knowingly rather than by drift.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: A friend wants to ask a local furniture restorer whether she could watch him work for an afternoon. Her draft, which she plans to send to twenty workshops at once, reads: “Dear Sir/Madam, I am passionate about restoration and would love any opportunities or advice you can give. Could you also recommend me to other workshops?”',
+      prompt: 'Decide what she should change before sending anything, and explain why each change matters.',
+      anchors: {
+        weak: 'Fixes the greeting or the tone only, or approves sending it to all twenty.',
+        adequate: 'One workshop at a time, naming something specific she has seen of his work; replaces the vague and large asks with one small one (an afternoon, or one question); drops the recommendation request.',
+        strong: 'Adequate, plus sets a follow-up rule (one, after about ten days, adding something), treats silence as normal, and keeps the message to two short paragraphs.',
+      },
+    },
     saveRoute: {
       auto: 'Your recipient list, drafts, asks, rules and the record of what came back save as you type, on this device first and then online.',
       external: 'Nothing is sent from this app. You send each message yourself, from your own email, one at a time, and no outreach tool or sequencing service is used.',
