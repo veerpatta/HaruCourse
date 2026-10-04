@@ -315,18 +315,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You plan to work out what matters once you start talking to people. What goes wrong?
 
-- Without a ranked list the conversation follows whatever the participant finds interesting, and you get a pleasant hour with nothing decided.
 - Nothing: staying open is how you discover the unexpected.
 - You risk missing the chance to ask about everything.
+- Without a ranked list the conversation follows whatever the participant finds interesting, and you get a pleasant hour with nothing decided.
 
 <details>
 <summary>After your attempt</summary>
 
-Without a ranked list the conversation follows whatever the participant finds interesting, and you get a pleasant hour with nothing decided. — Participants are generous and will talk about what you seem interested in. The ranking is what keeps the session pointed at your decisions.
-
 Nothing: staying open is how you discover the unexpected. — Openness within a session is valuable. Openness about what the study is for produces material you cannot act on.
 
 You risk missing the chance to ask about everything. — Asking about everything is the failure mode, not the safeguard.
+
+Without a ranked list the conversation follows whatever the participant finds interesting, and you get a pleasant hour with nothing decided. — Participants are generous and will talk about what you seem interested in. The ranking is what keeps the session pointed at your decisions.
 
 Improve: If your list in step 3 has more than five, cut it now and record what you cut in step 5.
 
@@ -345,18 +345,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your questions is “is the booking flow easy to use?”. What is wrong with it?
 
+- It needs a rating scale to be answerable.
 - No answer would change a specific decision, and nothing could settle it.
 - It is fine as a research question but should not be asked aloud.
-- It needs a rating scale to be answerable.
 
 <details>
 <summary>After your attempt</summary>
 
+It needs a rating scale to be answerable. — A scale produces a number that still does not tell you what to change.
+
 No answer would change a specific decision, and nothing could settle it. — It is a summary judgement rather than a question about events. Rewrite it as what someone did at a particular moment.
 
 It is fine as a research question but should not be asked aloud. — The problem is not the phrasing for participants; it is that no state of the world would answer it.
-
-It needs a rating scale to be answerable. — A scale produces a number that still does not tell you what to change.
 
 Improve: Rewrite any summary-judgement question in step 3 as a question about a specific past episode, then record the change in step 5.
 
@@ -375,16 +375,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Two of your questions are nearly the same. What do you do?
 
-- Merge them into one with the better wording, and note what the merge lost.
 - Keep both, since small differences may matter.
+- Merge them into one with the better wording, and note what the merge lost.
 - Drop both and write a broader one that covers them.
 
 <details>
 <summary>After your attempt</summary>
 
-Merge them into one with the better wording, and note what the merge lost. — Near-duplicates eat time in a session and split the evidence. Merging keeps the sharper wording and records the difference in case it mattered.
-
 Keep both, since small differences may matter. — They may, and in a session they produce two answers to the same thing and less time for the other questions.
+
+Merge them into one with the better wording, and note what the merge lost. — Near-duplicates eat time in a session and split the evidence. Merging keeps the sharper wording and records the difference in case it mattered.
 
 Drop both and write a broader one that covers them. — Broadening is how you get back to the unanswerable question you started from.
 
@@ -859,21 +859,21 @@ A supplied pairing from the same made-up study: three interviews about what peop
 
 Which exclusion is the one worth writing down?
 
-- It cannot tell you how common any pattern is, and “most people” will be the tempting phrase.
-- It cannot tell you what people think of the current design.
 - It cannot produce statistically significant results.
 - It cannot be generalised beyond the three participants.
+- It cannot tell you how common any pattern is, and “most people” will be the tempting phrase.
+- It cannot tell you what people think of the current design.
 
 <details>
 <summary>After your attempt</summary>
 
-It cannot tell you how common any pattern is, and “most people” will be the tempting phrase. — Naming the sentence you will be tempted to write is what makes the exclusion useful later, when you are drafting the report.
-
-It cannot tell you what people think of the current design. — True and not the temptation. Nobody writes an unsupported claim about the design from an interview about last week.
-
 It cannot produce statistically significant results. — Correct and abstract. The practical risk is the word “most”, not a significance test you were never going to run.
 
 It cannot be generalised beyond the three participants. — A textbook version of the same point. Writing the specific sentence you would be tempted to write is far more useful.
+
+It cannot tell you how common any pattern is, and “most people” will be the tempting phrase. — Naming the sentence you will be tempted to write is what makes the exclusion useful later, when you are drafting the report.
+
+It cannot tell you what people think of the current design. — True and not the temptation. Nobody writes an unsupported claim about the design from an interview about last week.
 
 Write each of your own exclusions as the sentence you will be tempted to write and must not.
 
@@ -906,18 +906,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does running four methods produce better research than running one?
 
+- Yes, if the methods answer different questions.
 - No. Four thin methods run badly produce less than one run properly, and the thinness only shows when you try to write the findings.
 - Yes: triangulating across methods is more reliable.
-- Yes, if the methods answer different questions.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, if the methods answer different questions. — Different questions is the right reason to use different methods, and it does not create the hours to run them.
+
 No. Four thin methods run badly produce less than one run properly, and the thinness only shows when you try to write the findings. — Each method has a fixed overhead: recruitment, consent, writing up. Spreading yourself thin means none of them reaches a point where you can say anything.
 
 Yes: triangulating across methods is more reliable. — Triangulation is real when each method is run well. Four superficial passes agree with each other because none of them found anything.
-
-Yes, if the methods answer different questions. — Different questions is the right reason to use different methods, and it does not create the hours to run them.
 
 Improve: Cut your plan in step 5 to the two methods attached to your top-ranked questions and mark the rest not-run, then record the change.
 
@@ -937,17 +937,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You want to know how often people arrive unprepared, so you plan a survey. What is the problem?
 
 - You need a reachable population; without a list, the number describes whoever happened to reply.
-- Surveys are unsuitable for behavioural questions.
 - Nothing: a survey is the right method for frequency.
+- Surveys are unsuitable for behavioural questions.
 
 <details>
 <summary>After your attempt</summary>
 
 You need a reachable population; without a list, the number describes whoever happened to reply. — A frequency question needs a defined group you can actually reach. Otherwise you get a precise number about an unknown set of people.
 
-Surveys are unsuitable for behavioural questions. — They are weak for behaviour and the immediate problem here is that you cannot reach a defined population at all.
-
 Nothing: a survey is the right method for frequency. — It is the right family of method and it needs something you do not have.
+
+Surveys are unsuitable for behavioural questions. — They are weak for behaviour and the immediate problem here is that you cannot reach a defined population at all.
 
 Improve: Check the pairings in step 3. Any frequency question without a reachable population should be marked not-run with what you would need, and recorded in step 5.
 
@@ -966,16 +966,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why write the exclusion sentence before running anything?
 
-- Because when you write the report you will want to make that exact claim, and the sentence written in advance stops you.
 - To show rigour to whoever reads the plan.
+- Because when you write the report you will want to make that exact claim, and the sentence written in advance stops you.
 - It is not necessary if you know the method’s limits.
 
 <details>
 <summary>After your attempt</summary>
 
-Because when you write the report you will want to make that exact claim, and the sentence written in advance stops you. — The temptation arrives with the evidence, when the pattern looks obvious. The prior sentence is a commitment made while you were impartial.
-
 To show rigour to whoever reads the plan. — It has that effect and the purpose is to constrain your own writing later.
+
+Because when you write the report you will want to make that exact claim, and the sentence written in advance stops you. — The temptation arrives with the evidence, when the pattern looks obvious. The prior sentence is a commitment made while you were impartial.
 
 It is not necessary if you know the method’s limits. — Knowing them in the abstract does not prevent the specific overclaim, which always feels justified at the time.
 
@@ -1441,18 +1441,18 @@ A supplied observation from the same made-up review: two of three services show 
 
 Which sentence may you write?
 
+- Users are used to hunting for the total, so it is not a problem.
 - It is common for the total to appear late, which makes me suspect readers expect to hunt for it — worth checking with people.
 - Showing the total late is the industry standard and works commercially.
-- Users are used to hunting for the total, so it is not a problem.
 
 <details>
 <summary>After your attempt</summary>
 
+Users are used to hunting for the total, so it is not a problem. — A claim about people from a review with no people in it, and it dismisses the very thing you were investigating.
+
 It is common for the total to appear late, which makes me suspect readers expect to hunt for it — worth checking with people. — It reports what you saw, names it as a suspicion, and says what would settle it. That is exactly what a review can produce.
 
 Showing the total late is the industry standard and works commercially. — You have seen two examples and no results. Neither “standard” nor “works” follows from what is on the screen.
-
-Users are used to hunting for the total, so it is not a problem. — A claim about people from a review with no people in it, and it dismisses the very thing you were investigating.
 
 Rewrite each of your own observations as a suspicion with the check attached.
 
@@ -1509,17 +1509,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You spent three hours on desk research and produced twelve pages. What went wrong?
 
 - The step is bounded at thirty minutes because it is preparation, not the study.
-- Nothing: more background is always better.
 - The problem is the page count, not the time.
+- Nothing: more background is always better.
 
 <details>
 <summary>After your attempt</summary>
 
 The step is bounded at thirty minutes because it is preparation, not the study. — Existing evidence is cheap and endless. The bound is what keeps it from replacing the work of talking to someone.
 
-Nothing: more background is always better. — It delays the study and produces material nobody will read, including you.
-
 The problem is the page count, not the time. — Both follow from the same cause: an unbounded search.
+
+Nothing: more background is always better. — It delays the study and produces material nobody will read, including you.
 
 Improve: Cut your desk note in step 2 to what you would actually use, and record the change in step 5.
 
@@ -1538,16 +1538,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You attempted a different task on each service, choosing whatever each did best. What does that cost you?
 
-- Comparability: nothing can be set against anything else, so the review produces impressions rather than contrasts.
 - Nothing, as long as each task is realistic.
+- Comparability: nothing can be set against anything else, so the review produces impressions rather than contrasts.
 - Only time, since you did more work than needed.
 
 <details>
 <summary>After your attempt</summary>
 
-Comparability: nothing can be set against anything else, so the review produces impressions rather than contrasts. — The identical task is the whole instrument. Without it you have three separate tours.
-
 Nothing, as long as each task is realistic. — Realistic and different means you cannot say where one struggled and another did not.
+
+Comparability: nothing can be set against anything else, so the review produces impressions rather than contrasts. — The identical task is the whole instrument. Without it you have three separate tours.
 
 Only time, since you did more work than needed. — The cost is the finding, not the effort.
 
@@ -2053,18 +2053,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Will friends and family do for a first study?
 
-- For practising the method, yes; as evidence about the problem, no, because they know you and often know the design.
-- Yes, if they match the screening criteria.
 - No, never, under any circumstances.
+- Yes, if they match the screening criteria.
+- For practising the method, yes; as evidence about the problem, no, because they know you and often know the design.
 
 <details>
 <summary>After your attempt</summary>
 
-For practising the method, yes; as evidence about the problem, no, because they know you and often know the design. — They are generous, they fill gaps, and they cannot un-know what you told them at dinner. Use them to rehearse, and say so.
+No, never, under any circumstances. — Too absolute. Rehearsing the guide with someone you know is genuinely useful, provided the notes say that is what it was.
 
 Yes, if they match the screening criteria. — Matching criteria does not remove the relationship. They want you to succeed, and it shows in what they say.
 
-No, never, under any circumstances. — Too absolute. Rehearsing the guide with someone you know is genuinely useful, provided the notes say that is what it was.
+For practising the method, yes; as evidence about the problem, no, because they know you and often know the design. — They are generous, they fill gaps, and they cannot un-know what you told them at dinner. Use them to rehearse, and say so.
 
 Improve: If your route in step 4 relies on people who know you or your design, mark those sessions as rehearsal in your plan, and record the change in step 5.
 
@@ -2083,18 +2083,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your screener asks whether people have been frustrated by unclear class information. What is wrong?
 
-- It reveals the answer you want, so you recruit people who already agree with your hypothesis.
 - Nothing: it efficiently finds people who have the problem.
 - It is fine if you also ask a neutral question afterwards.
+- It reveals the answer you want, so you recruit people who already agree with your hypothesis.
 
 <details>
 <summary>After your attempt</summary>
 
-It reveals the answer you want, so you recruit people who already agree with your hypothesis. — A screener that names the topic selects for the opinion, and the resulting agreement is the screener talking back to you.
-
 Nothing: it efficiently finds people who have the problem. — It finds people who will say they have it, which is not the same and cannot be separated afterwards.
 
 It is fine if you also ask a neutral question afterwards. — By then the topic is known. The later question cannot undo what the first one revealed.
+
+It reveals the answer you want, so you recruit people who already agree with your hypothesis. — A screener that names the topic selects for the opinion, and the resulting agreement is the screener talking back to you.
 
 Improve: Rewrite any screening question in step 3 that names the topic, so it selects on behaviour instead, and record it in step 5.
 
@@ -2114,17 +2114,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your recruitment plan says “a few days”. Why is that a problem?
 
 - Because it is not a date, so it cannot be missed, and recruitment is where studies quietly stall.
-- It is fine for a small study.
 - Only if you have a deadline.
+- It is fine for a small study.
 
 <details>
 <summary>After your attempt</summary>
 
 Because it is not a date, so it cannot be missed, and recruitment is where studies quietly stall. — Counting from today, including the silent days, is what turns a plan into something you can tell is failing.
 
-It is fine for a small study. — Small studies stall most often, because one unanswered message is the whole pipeline.
-
 Only if you have a deadline. — You always have one; it is just unstated, which is how the study drifts.
+
+It is fine for a small study. — Small studies stall most often, because one unanswered message is the whole pipeline.
 
 Improve: Replace any vague lead time in step 4 with a date counted from today, then record the change in step 5.
 
@@ -2160,18 +2160,18 @@ A supplied plan from the same made-up study: recruit three people from the studi
 
 Which exclusion sentence is the useful one?
 
+- People without email are excluded.
 - Everyone recruited had already booked successfully at least once, so people who abandoned booking are absent from the study.
 - The sample is small and not statistically representative.
-- People without email are excluded.
 
 <details>
 <summary>After your attempt</summary>
 
+People without email are excluded. — A real exclusion and a minor one here compared with the fact that everyone succeeded at the task you are studying.
+
 Everyone recruited had already booked successfully at least once, so people who abandoned booking are absent from the study. — It names a specific group whose absence changes what the findings can mean, which is precisely the risk with a list of past customers.
 
 The sample is small and not statistically representative. — True of every study this size and it names nobody. The useful version says who is missing and why it matters.
-
-People without email are excluded. — A real exclusion and a minor one here compared with the fact that everyone succeeded at the task you are studying.
 
 Write your own sentence naming a group whose absence would change how the findings should be read.
 
@@ -2528,18 +2528,18 @@ A supplied data plan from the same made-up study: “Notes stored in one documen
 
 What is missing that matters most?
 
+- The exact date the course ends.
 - How one person’s data could be removed if they asked, which a single combined document makes difficult.
 - A backup policy for the laptop.
-- The exact date the course ends.
 
 <details>
 <summary>After your attempt</summary>
 
+The exact date the course ends. — Useful precision, and the removal question is the one that could break a promise.
+
 How one person’s data could be removed if they asked, which a single combined document makes difficult. — Withdrawal is part of consent. If everything lives in one file with no way to isolate a person, you have promised something you cannot do.
 
 A backup policy for the laptop. — Worth having and not part of what you promised the participant.
-
-The exact date the course ends. — Useful precision, and the removal question is the one that could break a promise.
 
 Check your own plan: if someone withdrew tomorrow, could you actually remove their material?
 
@@ -2668,18 +2668,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Halfway through, the participant asks to see your notes. What do you say?
 
-- Show them, having written nothing you would be unwilling to show.
-- Explain that notes are confidential research material.
 - Offer to send a summary afterwards instead.
+- Explain that notes are confidential research material.
+- Show them, having written nothing you would be unwilling to show.
 
 <details>
 <summary>After your attempt</summary>
 
-Show them, having written nothing you would be unwilling to show. — It is their account. Writing notes you would hide from the person who gave them is the actual problem, and it is easy to avoid.
+Offer to send a summary afterwards instead. — A reasonable extra and it dodges the request. If the notes are honest, showing them is simpler.
 
 Explain that notes are confidential research material. — Confidential from others, not from them. Refusing turns the session adversarial and is hard to justify.
 
-Offer to send a summary afterwards instead. — A reasonable extra and it dodges the request. If the notes are honest, showing them is simpler.
+Show them, having written nothing you would be unwilling to show. — It is their account. Writing notes you would hide from the person who gave them is the actual problem, and it is easy to avoid.
 
 Improve: Write your answer to this in step 4 if it is missing, and check nothing in your note structure would embarrass you to show, then record the change in step 5.
 
@@ -2698,18 +2698,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You followed UK guidance. What must the record say?
 
-- That the guidance is UK-based and Indian requirements have not been verified here, so a primary source must be checked before real recruitment.
 - Nothing: good practice is good practice everywhere.
 - That the study is exempt because it is for a course.
+- That the guidance is UK-based and Indian requirements have not been verified here, so a primary source must be checked before real recruitment.
 
 <details>
 <summary>After your attempt</summary>
 
-That the guidance is UK-based and Indian requirements have not been verified here, so a primary source must be checked before real recruitment. — The method transfers; the legal context does not. Saying so is what stops the plan being mistaken for compliance.
-
 Nothing: good practice is good practice everywhere. — The practice may be sound and the obligations differ. Silence implies a compliance claim you have not made.
 
 That the study is exempt because it is for a course. — Being a course does not create an exemption, and asserting one is worse than saying you have not checked.
+
+That the guidance is UK-based and Indian requirements have not been verified here, so a primary source must be checked before real recruitment. — The method transfers; the legal context does not. Saying so is what stops the plan being mistaken for compliance.
 
 Improve: Add the jurisdiction line in step 5 if it is missing, then record the change.
 
@@ -3201,18 +3201,18 @@ A supplied exchange from the same made-up session. You: “Was it hard to find w
 
 What went wrong, and what would you ask instead?
 
-- It offered the answer and got agreement; ask instead what she did when she wanted to know what to bring.
 - Nothing went wrong; she confirmed the difficulty.
 - It was too short; a longer question would give more context.
+- It offered the answer and got agreement; ask instead what she did when she wanted to know what to bring.
 
 <details>
 <summary>After your attempt</summary>
 
-It offered the answer and got agreement; ask instead what she did when she wanted to know what to bring. — “A bit, I suppose” is the sound of someone being agreeable. The replacement asks for an event and cannot be answered with a shrug.
-
 Nothing went wrong; she confirmed the difficulty. — She confirmed your suggestion. That is not the same as reporting her experience.
 
 It was too short; a longer question would give more context. — Length is not the fault. The fault is that the answer was inside the question.
+
+It offered the answer and got agreement; ask instead what she did when she wanted to know what to bring. — “A bit, I suppose” is the sound of someone being agreeable. The replacement asks for an event and cannot be answered with a shrug.
 
 Find the equivalent question in your own guide and rewrite it as an episode question.
 
@@ -3260,18 +3260,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your interview flowed like a friendly conversation. Is that a good sign?
 
-- Not necessarily. A good interview is often slightly awkward, because one person is doing most of the talking and it is not you.
 - Yes: rapport produces honest answers.
 - Yes, unless the participant seemed uncomfortable.
+- Not necessarily. A good interview is often slightly awkward, because one person is doing most of the talking and it is not you.
 
 <details>
 <summary>After your attempt</summary>
 
-Not necessarily. A good interview is often slightly awkward, because one person is doing most of the talking and it is not you. — Flow often means you were filling silences and offering possibilities, and the participant was accepting them to be helpful.
-
 Yes: rapport produces honest answers. — Rapport helps and it is not the same as flow. You can have warmth and still leave the silences alone.
 
 Yes, unless the participant seemed uncomfortable. — Mild discomfort while someone thinks is normal and productive.
+
+Not necessarily. A good interview is often slightly awkward, because one person is doing most of the talking and it is not you. — Flow often means you were filling silences and offering possibilities, and the participant was accepting them to be helpful.
 
 Improve: Look at your said column in step 3. If most lines are agreement with something you offered, note that in step 5 and rewrite the questions that invited it.
 
@@ -3291,17 +3291,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You wrote up the session two days later from memory. What must the notes say?
 
 - That the material is reconstructed, so it is weaker evidence than what was written at the time.
-- Nothing, if your memory is good.
 - That the delay was unavoidable.
+- Nothing, if your memory is good.
 
 <details>
 <summary>After your attempt</summary>
 
 That the material is reconstructed, so it is weaker evidence than what was written at the time. — Memory smooths and simplifies, usually towards what you expected. Marking it is what stops a reconstruction being quoted as a quotation.
 
-Nothing, if your memory is good. — Everyone believes that. The reconstruction is confident precisely because the doubt has been smoothed away.
-
 That the delay was unavoidable. — The reason is not the point; the reliability is.
+
+Nothing, if your memory is good. — Everyone believes that. The reconstruction is confident precisely because the doubt has been smoothed away.
 
 Improve: Mark anything reconstructed in step 3 and record the change in step 5.
 
@@ -3320,16 +3320,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nobody was available, so you rehearsed the guide alone. What can the lesson produce?
 
-- A revised guide, the questions that were awkward to say, and a dated recruitment gap.
 - Nothing until a participant is found.
+- A revised guide, the questions that were awkward to say, and a dated recruitment gap.
 - A set of likely answers to test the analysis method on.
 
 <details>
 <summary>After your attempt</summary>
 
-A revised guide, the questions that were awkward to say, and a dated recruitment gap. — The guide is the artefact. Reading it aloud finds leading wording and questions that cannot be answered, which is real work.
-
 Nothing until a participant is found. — The guide, the note structure and the consent wording are all produced and testable without a participant.
+
+A revised guide, the questions that were awkward to say, and a dated recruitment gap. — The guide is the artefact. Reading it aloud finds leading wording and questions that cannot be answered, which is real work.
 
 A set of likely answers to test the analysis method on. — Those are invented participants. Use the course’s supplied practice notes if you need material to analyse.
 
@@ -3864,18 +3864,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does observation mean watching someone use the interface?
 
+- Yes, unless you are doing contextual enquiry specifically.
 - No. Most of what you are there for happens outside it: the setting, the interruptions, and what else the person is doing.
 - Yes: the interface is what you are designing, so it is what to watch.
-- Yes, unless you are doing contextual enquiry specifically.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, unless you are doing contextual enquiry specifically. — The distinction is not the label. Any observation that ignores the setting loses most of its value.
+
 No. Most of what you are there for happens outside it: the setting, the interruptions, and what else the person is doing. — The interface is one element in a situation. The situation is usually what explains the behaviour.
 
 Yes: the interface is what you are designing, so it is what to watch. — You are designing for a situation. Watching only the screen collects the part you could have guessed.
-
-Yes, unless you are doing contextual enquiry specifically. — The distinction is not the label. Any observation that ignores the setting loses most of its value.
 
 Improve: If your environment box in step 3 is thin, add what else was happening, then record the change in step 5.
 
@@ -3894,16 +3894,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You chose think-aloud. What does it cost?
 
-- People work more slowly and more carefully when narrating, so the pace and some of the errors are not what would happen unobserved.
 - Nothing: narration does not change behaviour.
+- People work more slowly and more carefully when narrating, so the pace and some of the errors are not what would happen unobserved.
 - Only that sessions take longer.
 
 <details>
 <summary>After your attempt</summary>
 
-People work more slowly and more carefully when narrating, so the pace and some of the errors are not what would happen unobserved. — It buys reasoning and pays in naturalness. Naming that in the limits is what keeps the finding honest.
-
 Nothing: narration does not change behaviour. — It reliably does. People rationalise as they speak and slow down to explain.
+
+People work more slowly and more carefully when narrating, so the pace and some of the errors are not what would happen unobserved. — It buys reasoning and pays in naturalness. Naming that in the limits is what keeps the finding honest.
 
 Only that sessions take longer. — Longer sessions are the visible cost. The changed behaviour is the important one.
 
@@ -3924,16 +3924,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nobody would let you observe. What does the lesson produce?
 
-- The stance decision, the watch list, the consent plan for a setting, and a dated gap.
 - Nothing that can be submitted.
+- The stance decision, the watch list, the consent plan for a setting, and a dated gap.
 - You can observe yourself doing the task instead.
 
 <details>
 <summary>After your attempt</summary>
 
-The stance decision, the watch list, the consent plan for a setting, and a dated gap. — The preparation is real and reusable, and the gap is a finding about access rather than a failure.
-
 Nothing that can be submitted. — The prepared instrument is submittable and is what the next attempt will use.
+
+The stance decision, the watch list, the consent plan for a setting, and a dated gap. — The preparation is real and reusable, and the gap is a finding about access rather than a failure.
 
 You can observe yourself doing the task instead. — You may, labelled as a self-observation. It tells you about your own fluency, not about anyone else.
 
@@ -4379,18 +4379,18 @@ A supplied situation from the same made-up study: the participant logs on days o
 
 What is the right response?
 
-- One friendly reminder that makes stopping easy, then accept whatever you have.
 - Send a daily reminder until they resume.
 - Ask them to reconstruct the missing days.
+- One friendly reminder that makes stopping easy, then accept whatever you have.
 
 <details>
 <summary>After your attempt</summary>
 
-One friendly reminder that makes stopping easy, then accept whatever you have. — Two days of real entries is usable. Repeated chasing turns a favour into an obligation and produces entries written to satisfy you.
-
 Send a daily reminder until they resume. — That is pressure. The entries it produces are compliance, not behaviour.
 
 Ask them to reconstruct the missing days. — Reconstruction from three days ago is memory, and it will be smoothed towards what they think you want.
+
+One friendly reminder that makes stopping easy, then accept whatever you have. — Two days of real entries is usable. Repeated chasing turns a favour into an obligation and produces entries written to satisfy you.
 
 Write your own silence rule now, before it happens, and make it easy for them to stop.
 
@@ -4438,18 +4438,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is a week of entries from one person too small to be worth running?
 
-- No. Small is the normal size for a diary study; it shows a sequence over time that no interview reaches.
 - Yes: one person cannot support any finding.
 - Yes, unless you run at least five in parallel.
+- No. Small is the normal size for a diary study; it shows a sequence over time that no interview reaches.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Small is the normal size for a diary study; it shows a sequence over time that no interview reaches. — The value is the pattern across days for one person, not the count of people. It is evidence of a shape, not of prevalence.
-
 Yes: one person cannot support any finding. — One person can show that a sequence occurs and where it breaks, which is exactly what this method is for.
 
 Yes, unless you run at least five in parallel. — Five is better and unavailable to most people. One, honestly reported, is worth running.
+
+No. Small is the normal size for a diary study; it shows a sequence over time that no interview reaches. — The value is the pattern across days for one person, not the count of people. It is evidence of a shape, not of prevalence.
 
 Improve: If you were about to abandon the study for being too small, complete the protocol and record what one week would show, then note it in step 5.
 
@@ -4498,18 +4498,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your entry template asks for a rating out of five each day. What is the risk?
 
-- It produces numbers you cannot interpret from one person, at the cost of the description that would have been useful.
-- None: ratings are quick to complete.
 - It is fine if you also ask for a comment.
+- None: ratings are quick to complete.
+- It produces numbers you cannot interpret from one person, at the cost of the description that would have been useful.
 
 <details>
 <summary>After your attempt</summary>
 
-It produces numbers you cannot interpret from one person, at the cost of the description that would have been useful. — A daily rating from one participant supports no comparison. The sentence it displaced would have told you what happened.
+It is fine if you also ask for a comment. — Then you have added burden for a number you still cannot use.
 
 None: ratings are quick to complete. — Quick and, at this scale, uninterpretable. The cost is what it replaced.
 
-It is fine if you also ask for a comment. — Then you have added burden for a number you still cannot use.
+It produces numbers you cannot interpret from one person, at the cost of the description that would have been useful. — A daily rating from one participant supports no comparison. The sentence it displaced would have told you what happened.
 
 Improve: Remove any rating scale from your template in step 2 unless you can say what you would do with it, then record the change in step 5.
 
@@ -4928,18 +4928,18 @@ A supplied question from the same made-up survey: “How likely would you be to 
 
 How many separate problems does it have?
 
+- None, provided you offer a “neither” option.
 - Three: it asks for a prediction, it calls the reminder helpful, and it asks two questions at once.
 - One: it is double-barrelled.
-- None, provided you offer a “neither” option.
 
 <details>
 <summary>After your attempt</summary>
 
+None, provided you offer a “neither” option. — A neither option helps with the second half and does nothing about predicting or about the word helpful.
+
 Three: it asks for a prediction, it calls the reminder helpful, and it asks two questions at once. — Predictions are unreliable, “helpful” tells them the answer, and a double-barrelled question cannot be answered cleanly by anyone who wants neither.
 
 One: it is double-barrelled. — That is the visible fault. The prediction and the loaded adjective are doing quieter damage.
-
-None, provided you offer a “neither” option. — A neither option helps with the second half and does nothing about predicting or about the word helpful.
 
 Run every one of your own questions past the same three tests.
 
@@ -5036,18 +5036,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is a survey more objective than your interviews because it produces numbers?
 
+- Yes, if the sample is large enough.
 - No. The numbers are precise about whoever answered, and precision is not accuracy about anyone else.
 - Yes: quantitative data removes the researcher’s interpretation.
-- Yes, if the sample is large enough.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, if the sample is large enough. — Size helps with one problem and does nothing about who could receive it or how it was worded.
+
 No. The numbers are precise about whoever answered, and precision is not accuracy about anyone else. — A percentage from twelve self-selected respondents is a precise description of twelve people who chose to reply.
 
 Yes: quantitative data removes the researcher’s interpretation. — Interpretation moves into the wording and the sample, where it is harder to see.
-
-Yes, if the sample is large enough. — Size helps with one problem and does nothing about who could receive it or how it was worded.
 
 Improve: Write your reporting rule in step 4 as counts with a denominator, and record the change in step 5.
 
@@ -5066,18 +5066,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You cannot define who can receive the survey. What follows?
 
-- Any number describes an unknown group, so the survey cannot answer a frequency question.
-- Post it widely; more responses will fix it.
 - It is fine for exploratory questions.
+- Post it widely; more responses will fix it.
+- Any number describes an unknown group, so the survey cannot answer a frequency question.
 
 <details>
 <summary>After your attempt</summary>
 
-Any number describes an unknown group, so the survey cannot answer a frequency question. — Without a defined reachable population there is no denominator, and a proportion without a denominator means nothing.
+It is fine for exploratory questions. — For open exploratory questions, interviews do the job better and without implying a rate.
 
 Post it widely; more responses will fix it. — More responses from an undefined group is a bigger unknown, not a smaller one.
 
-It is fine for exploratory questions. — For open exploratory questions, interviews do the job better and without implying a rate.
+Any number describes an unknown group, so the survey cannot answer a frequency question. — Without a defined reachable population there is no denominator, and a proportion without a denominator means nothing.
 
 Improve: If step 4 cannot name a reachable population, mark the survey not-run and say what list you would need, then record it in step 5.
 
@@ -5615,18 +5615,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Two participants said the opposite of each other. What do you do?
 
-- Keep both and let the finding say the accounts diverge, with what might explain it.
-- Go with the majority.
 - Exclude both as unreliable.
+- Go with the majority.
+- Keep both and let the finding say the accounts diverge, with what might explain it.
 
 <details>
 <summary>After your attempt</summary>
 
-Keep both and let the finding say the accounts diverge, with what might explain it. — Divergence at three participants is expected and informative. Averaging it away produces a finding that describes nobody.
+Exclude both as unreliable. — Contradiction is not unreliability; it is usually a sign that a condition you have not identified matters.
 
 Go with the majority. — Two against one is not a majority in any meaningful sense at this scale.
 
-Exclude both as unreliable. — Contradiction is not unreliability; it is usually a sign that a condition you have not identified matters.
+Keep both and let the finding say the accounts diverge, with what might explain it. — Divergence at three participants is expected and informative. Averaging it away produces a finding that describes nobody.
 
 Improve: Add the contradiction to the relevant finding in step 4 and adjust its confidence, then record the change in step 5.
 
@@ -5645,18 +5645,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A finding is supported by one participant. May you keep it?
 
-- Yes, written as one account, with confidence stated accordingly and the decision it would inform.
 - No: a single account is anecdote.
 - Yes, and it should be presented alongside the others without distinction.
+- Yes, written as one account, with confidence stated accordingly and the decision it would inform.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, written as one account, with confidence stated accordingly and the decision it would inform. — One clear account is real evidence that something occurs. It is not evidence about how often, and the count makes that plain.
-
 No: a single account is anecdote. — Too strict. A single account can be decisive when it reveals a possibility you had not considered.
 
 Yes, and it should be presented alongside the others without distinction. — Then a one-person finding reads like a three-person one. The count is what prevents that.
+
+Yes, written as one account, with confidence stated accordingly and the decision it would inform. — One clear account is real evidence that something occurs. It is not evidence about how often, and the count makes that plain.
 
 Improve: Check every finding in step 4 carries its participant count, then record any change in step 5.
 
@@ -5695,17 +5695,17 @@ A supplied finding from the same made-up study: “Participants find the booking
 What is wrong with it as a finding?
 
 - No count, no evidence, and nothing in the notes could make it false, so it cannot be defended or acted on.
-- It should say how many participants, and is otherwise fine.
 - It needs a recommendation attached.
+- It should say how many participants, and is otherwise fine.
 
 <details>
 <summary>After your attempt</summary>
 
 No count, no evidence, and nothing in the notes could make it false, so it cannot be defended or acted on. — A finding that nothing could contradict is an impression. Adding the count and the falsifier usually reveals it needs rewriting entirely.
 
-It should say how many participants, and is otherwise fine. — A count helps and “confusing” still names no behaviour and no decision.
-
 It needs a recommendation attached. — Attaching a recommendation to an unsupported finding compounds the problem.
+
+It should say how many participants, and is otherwise fine. — A count helps and “confusing” still names no behaviour and no decision.
 
 Apply the falsification test to each of your own findings and demote anything that fails.
 
@@ -6175,18 +6175,18 @@ Two supplied statements. A: “When I open the app, I want the search bar at the
 
 Which is at the right altitude, and why?
 
-- B, because it would still be true if the product were rebuilt with no search bar at all.
-- A, because it is specific and immediately actionable.
 - Both, since they operate at different levels usefully.
+- A, because it is specific and immediately actionable.
+- B, because it would still be true if the product were rebuilt with no search bar at all.
 
 <details>
 <summary>After your attempt</summary>
 
-B, because it would still be true if the product were rebuilt with no search bar at all. — It describes the person’s situation and outcome. A search bar is one possible response, and so is a curated list or a notification.
+Both, since they operate at different levels usefully. — A is not a level of need; it is a design decision wearing the format.
 
 A, because it is specific and immediately actionable. — It is actionable because it already contains the answer, which is the problem. It cannot lead anywhere you had not already decided.
 
-Both, since they operate at different levels usefully. — A is not a level of need; it is a design decision wearing the format.
+B, because it would still be true if the product were rebuilt with no search bar at all. — It describes the person’s situation and outcome. A search bar is one possible response, and so is a curated list or a notification.
 
 Apply the same test to each of your own six statements and raise any that name a screen.
 
@@ -6223,18 +6223,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does jobs-to-be-done replace personas because it is about behaviour rather than demographics?
 
-- No. It is a different lens with its own weaknesses, and its own article says so.
-- Yes: behaviour is more rigorous than demographic description.
 - Yes, provided the jobs come from research.
+- Yes: behaviour is more rigorous than demographic description.
+- No. It is a different lens with its own weaknesses, and its own article says so.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It is a different lens with its own weaknesses, and its own article says so. — It foregrounds situation and outcome and can flatten the differences between people that matter for access, language and circumstance.
+Yes, provided the jobs come from research. — Good sourcing improves the statements and does not address what the lens leaves out.
 
 Yes: behaviour is more rigorous than demographic description. — Behaviour is more useful for many decisions, which does not make the lens complete.
 
-Yes, provided the jobs come from research. — Good sourcing improves the statements and does not address what the lens leaves out.
+No. It is a different lens with its own weaknesses, and its own article says so. — It foregrounds situation and outcome and can flatten the differences between people that matter for access, language and circumstance.
 
 Improve: Write what the framing loses in step 5, engaging with a stated weakness, then record the change.
 
@@ -6284,17 +6284,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Two of your six statements are marked assumed. Is that a problem?
 
 - No, provided the label is visible wherever the statement is used.
-- Yes: only evidenced statements should be carried forward.
 - Yes, unless you interview more people first.
+- Yes: only evidenced statements should be carried forward.
 
 <details>
 <summary>After your attempt</summary>
 
 No, provided the label is visible wherever the statement is used. — Assumptions are legitimate and are how you record what you believe but have not shown. The failure is an unlabelled one.
 
-Yes: only evidenced statements should be carried forward. — Then you lose the hypotheses that would guide the next study.
-
 Yes, unless you interview more people first. — More interviews would help and the immediate requirement is the label.
+
+Yes: only evidenced statements should be carried forward. — Then you lose the hypotheses that would guide the next study.
 
 Improve: Ensure every statement in step 4 carries a source or the word assumed, then record any change in step 5.
 
@@ -6762,17 +6762,17 @@ A supplied map from the same made-up study, drawn from three interviews, with a 
 What may the shareable version claim about that dip?
 
 - That it is inferred from three accounts, not measured, and that the low point is not automatically where to focus.
-- That payment is the biggest problem and should be the priority.
 - That the emotional low point indicates where redesign will have most impact.
+- That payment is the biggest problem and should be the priority.
 
 <details>
 <summary>After your attempt</summary>
 
 That it is inferred from three accounts, not measured, and that the low point is not automatically where to focus. — Emotional dips are usually inferred, and the lowest point in a booking journey is often something you cannot change, such as parting with money.
 
-That payment is the biggest problem and should be the priority. — The dip is inferred and may be an unavoidable feature of paying for something. Priority needs a decision, not a low point.
-
 That the emotional low point indicates where redesign will have most impact. — This is the common misreading. Impact depends on what you could change and what it would cost, not on where the line is lowest.
+
+That payment is the biggest problem and should be the priority. — The dip is inferred and may be an unavoidable feature of paying for something. Priority needs a decision, not a low point.
 
 Write your own shareable line so that nobody can read a priority off the shape of the map.
 
@@ -6809,18 +6809,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The map’s lowest emotional point is at payment. Is that where to focus?
 
-- Not necessarily. In a booking journey the low point is often parting with money, which you cannot design away.
-- Yes: the low point is where the experience hurts most.
 - Yes, if the dip appears for every participant.
+- Yes: the low point is where the experience hurts most.
+- Not necessarily. In a booking journey the low point is often parting with money, which you cannot design away.
 
 <details>
 <summary>After your attempt</summary>
 
-Not necessarily. In a booking journey the low point is often parting with money, which you cannot design away. — Focus follows from what you could change, what it would cost and what evidence supports it, not from the shape of an inferred line.
+Yes, if the dip appears for every participant. — Consistency makes it real and still does not make it changeable or worth changing.
 
 Yes: the low point is where the experience hurts most. — It may hurt and be entirely appropriate. Removing the discomfort of paying is not usually available or desirable.
 
-Yes, if the dip appears for every participant. — Consistency makes it real and still does not make it changeable or worth changing.
+Not necessarily. In a booking journey the low point is often parting with money, which you cannot design away. — Focus follows from what you could change, what it would cost and what evidence supports it, not from the shape of an inferred line.
 
 Improve: Check your shareable version in step 4 for anything implying the low point is the priority, and rewrite it, then record the change in step 5.
 
@@ -6839,16 +6839,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 More than half your entries are marked assumed. What should you do?
 
-- Keep the map, keep the marks, and say plainly that it is largely a hypothesis.
 - Remove the assumed entries so the map only shows evidence.
+- Keep the map, keep the marks, and say plainly that it is largely a hypothesis.
 - Interview more people before sharing anything.
 
 <details>
 <summary>After your attempt</summary>
 
-Keep the map, keep the marks, and say plainly that it is largely a hypothesis. — A mostly assumed map is a useful hypothesis and a dangerous artefact if it circulates unmarked. The count is the honest summary.
-
 Remove the assumed entries so the map only shows evidence. — Then the map has holes where the interesting questions are, and nobody knows they were there.
+
+Keep the map, keep the marks, and say plainly that it is largely a hypothesis. — A mostly assumed map is a useful hypothesis and a dangerous artefact if it circulates unmarked. The count is the honest summary.
 
 Interview more people before sharing anything. — Ideal and often unavailable. The marks let it be shared honestly in the meantime.
 
@@ -6869,18 +6869,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You filled each stage completely before moving to the next. What does that cost?
 
+- Only time.
 - Consistency: doing one layer across all stages keeps the level of detail comparable and reveals gaps.
 - Nothing, provided every cell is filled.
-- Only time.
 
 <details>
 <summary>After your attempt</summary>
 
+Only time. — The cost is the shape of the result.
+
 Consistency: doing one layer across all stages keeps the level of detail comparable and reveals gaps. — Stage-by-stage produces a rich beginning and a thin end, because attention fades. Layer-by-layer distributes it evenly.
 
 Nothing, provided every cell is filled. — Filled is not the same as comparable. The later stages will be thinner and nobody will notice.
-
-Only time. — The cost is the shape of the result.
 
 Improve: If you worked stage by stage, reread the last stages and bring them to the same level, then record the change in step 5.
 
@@ -7407,18 +7407,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your headline reads “Materials list”. What is wrong?
 
+- It should include the participant count.
 - It names a topic rather than stating what is true, so the reader must work out the finding themselves.
 - Nothing: short headlines are easier to scan.
-- It should include the participant count.
 
 <details>
 <summary>After your attempt</summary>
 
+It should include the participant count. — The count belongs in the facts underneath; the headline should still state the finding.
+
 It names a topic rather than stating what is true, so the reader must work out the finding themselves. — A headline should carry the finding: people look for the list after booking, not before. That is what a busy reader takes away.
 
 Nothing: short headlines are easier to scan. — Scannable and empty. The scan should deliver the finding.
-
-It should include the participant count. — The count belongs in the facts underneath; the headline should still state the finding.
 
 Improve: Rewrite each headline in step 2 as a full sentence stating what is true, then record the change in step 5.
 
@@ -7437,16 +7437,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your report mentions a participant’s job title and the class she attended. Is that anonymous?
 
-- Probably not: a combination of details can identify someone even when no single detail does.
 - Yes, since her name is not used.
+- Probably not: a combination of details can identify someone even when no single detail does.
 - Yes, provided the report stays internal.
 
 <details>
 <summary>After your attempt</summary>
 
-Probably not: a combination of details can identify someone even when no single detail does. — In a small studio, the role plus the class plus the week is often enough for a colleague to know exactly who spoke to you.
-
 Yes, since her name is not used. — Names are the easiest identifier to remove and rarely the one that exposes someone.
+
+Probably not: a combination of details can identify someone even when no single detail does. — In a small studio, the role plus the class plus the week is often enough for a colleague to know exactly who spoke to you.
 
 Yes, provided the report stays internal. — Internal is exactly where a colleague would read it.
 

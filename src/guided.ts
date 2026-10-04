@@ -3,7 +3,7 @@
 // sit in its own file without importing the activity table that consumes it,
 // which would be a cycle. The shape is the refined half of an Activity: what a
 // lesson gains when it is taught rather than only specified.
-import type { ActiveCheck, GuideStep, SaveRoute, WorksheetField, WorksheetSection } from './teaching';
+import type { ActiveCheck, GuideStep, SaveRoute, TransferTask, WorksheetField, WorksheetSection } from './teaching';
 
 export type Route = { recommended: string; alternative: string };
 export type Guided = {
@@ -13,6 +13,8 @@ export type Guided = {
   checks?: ActiveCheck[];
   saveRoute?: SaveRoute;
   video?: { id: string; then: string; written: string };
+  transfer?: TransferTask;
+  material?: string[];
 };
 
 export const paperRoute = (what: string): Route => ({

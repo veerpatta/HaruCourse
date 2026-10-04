@@ -480,18 +480,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should the portfolio show everything you have done?
 
-- It should support three claims. Work supporting none of them makes the portfolio longer and the claims weaker.
-- Yes, since more work shows more range.
 - Yes, with the strongest work first.
+- Yes, since more work shows more range.
+- It should support three claims. Work supporting none of them makes the portfolio longer and the claims weaker.
 
 <details>
 <summary>After your attempt</summary>
 
-It should support three claims. Work supporting none of them makes the portfolio longer and the claims weaker. — A reviewer skims first and reads only if the skim earns it. Twelve unannotated screens dilute the three things you wanted them to notice.
+Yes, with the strongest work first. — Ordering helps and the surplus still competes for the same attention.
 
 Yes, since more work shows more range. — Range is shown across claims rather than across volume, and a skim cannot hold more than a few things.
 
-Yes, with the strongest work first. — Ordering helps and the surplus still competes for the same attention.
+It should support three claims. Work supporting none of them makes the portfolio longer and the claims weaker. — A reviewer skims first and reads only if the skim earns it. Twelve unannotated screens dilute the three things you wanted them to notice.
 
 Improve: List the work that supports none of your three claims in step 4 and mark it excluded. Record the change in step 5.
 
@@ -510,18 +510,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your three claims are user-centred, detail-oriented and collaborative. What is wrong with them?
 
-- They are qualities rather than claims: nothing could support them and nothing could contradict them.
 - Nothing, though they could be more specific.
 - They are too common, so they will not stand out.
+- They are qualities rather than claims: nothing could support them and nothing could contradict them.
 
 <details>
 <summary>After your attempt</summary>
 
-They are qualities rather than claims: nothing could support them and nothing could contradict them. — A claim names something a reviewer can check against a file. Turning research into a traceable decision points at a synthesis page; detail-oriented points at nothing.
-
 Nothing, though they could be more specific. — Specificity is not a polish here. Without an artefact, the claim does no work at all.
 
 They are too common, so they will not stand out. — Commonness is a symptom. The cause is that nobody could check them.
+
+They are qualities rather than claims: nothing could support them and nothing could contradict them. — A claim names something a reviewer can check against a file. Turning research into a traceable decision points at a synthesis page; detail-oriented points at nothing.
 
 Improve: Rewrite any claim in step 2 that has no file behind it. Record the change in step 5.
 
@@ -540,18 +540,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have a persona document made from three interviews. Is it evidence that research reached a decision?
 
+- Yes, if the interviews are also included.
 - No. The trace runs backwards through it: what three people said is inside it and cannot be recovered from it.
 - Yes, since it was built from real interviews.
-- Yes, if the interviews are also included.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, if the interviews are also included. — Then the interviews are the evidence and the persona is a summary that loses their detail.
+
 No. The trace runs backwards through it: what three people said is inside it and cannot be recovered from it. — It also carries a stock photograph and a name, which a reviewer asking one question finds is an invented person. The synthesis page with counts shows the same research and can be checked.
 
 Yes, since it was built from real interviews. — Built from them and not traceable to them. A composite hides the counts and the contradictions.
-
-Yes, if the interviews are also included. — Then the interviews are the evidence and the persona is a summary that loses their detail.
 
 Improve: Replace any composite artefact in step 3 with the record it was built from. Record the change in step 5.
 
@@ -1220,17 +1220,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Should you audit the projects or your memory of them?
 
 - The folders. You remember the project; the folder holds what you kept, and the gap between them is where embellishment starts.
-- Memory is fine as a first pass, then check the folders.
 - The folders, though memory fills reasonable gaps.
+- Memory is fine as a first pass, then check the folders.
 
 <details>
 <summary>After your attempt</summary>
 
 The folders. You remember the project; the folder holds what you kept, and the gap between them is where embellishment starts. — A synthesis you remember doing in your head while drawing a flow is a missing artefact. From memory it looks like a complete project; from the folder it is screens, an undated flow and late notes.
 
-Memory is fine as a first pass, then check the folders. — The first pass sets your expectation, and the folder check then reads as things having gone missing.
-
 The folders, though memory fills reasonable gaps. — Filling gaps from memory is what produces documents that never existed.
+
+Memory is fine as a first pass, then check the folders. — The first pass sets your expectation, and the folder check then reads as things having gone missing.
 
 Improve: Rebuild the inventory in step 1 from the folders alone. Record the change in step 5.
 
@@ -1249,18 +1249,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The first project never had a synthesis document. Can you write one now?
 
-- Not as a project artefact. Written now and labelled as such it is a reflection, which is a different and much weaker thing.
 - Yes, since the thinking genuinely happened at the time.
 - Yes, if it is clearly a reconstruction.
+- Not as a project artefact. Written now and labelled as such it is a reflection, which is a different and much weaker thing.
 
 <details>
 <summary>After your attempt</summary>
 
-Not as a project artefact. Written now and labelled as such it is a reflection, which is a different and much weaker thing. — The honest answer is that the project has no synthesis, and the case study says so. Tidying presentation is fine; producing a document that never existed and dating it to the project is not.
-
 Yes, since the thinking genuinely happened at the time. — The thinking is not the artefact, and nobody can check a memory.
 
 Yes, if it is clearly a reconstruction. — Clearly labelled, it is honest and it is no longer evidence that the process ran.
+
+Not as a project artefact. Written now and labelled as such it is a reflection, which is a different and much weaker thing. — The honest answer is that the project has no synthesis, and the case study says so. Tidying presentation is fine; producing a document that never existed and dating it to the project is not.
 
 Improve: Move that gap to the permanent list in step 5 and draft the sentence for it. Record the change.
 
@@ -1279,16 +1279,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your second claim rests only on thin evidence. What should you do?
 
-- Flag it now, then weaken the claim or close the gap honestly this week.
 - Use it and add a caveat in the case study.
+- Flag it now, then weaken the claim or close the gap honestly this week.
 - Drop the claim entirely.
 
 <details>
 <summary>After your attempt</summary>
 
-Flag it now, then weaken the claim or close the gap honestly this week. — A claim on late, undated or reconstructed material will fail the first question about it. Finding that here costs an afternoon; finding it in an interview costs the whole portfolio.
-
 Use it and add a caveat in the case study. — A caveat under a claim the evidence does not support is a claim with an apology attached.
+
+Flag it now, then weaken the claim or close the gap honestly this week. — A claim on late, undated or reconstructed material will fail the first question about it. Finding that here costs an afternoon; finding it in an interview costs the whole portfolio.
 
 Drop the claim entirely. — Sometimes right, and first check whether the gap is closable this week.
 
@@ -1935,18 +1935,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should each case study show your whole process?
 
-- No. Then all three show the same thing and the reader learns one fact about you three times.
-- Yes, since the process is what you are demonstrating.
 - Yes, in less detail for the weaker projects.
+- Yes, since the process is what you are demonstrating.
+- No. Then all three show the same thing and the reader learns one fact about you three times.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Then all three show the same thing and the reader learns one fact about you three times. — Give each a job the others do not do, matched to its strongest evidence. It also removes the pressure to describe a stage a particular project never had.
+Yes, in less detail for the weaker projects. — Less detail about a stage that did not happen is still a claim that it did.
 
 Yes, since the process is what you are demonstrating. — It is demonstrated once. The second and third repetitions cost attention and add nothing.
 
-Yes, in less detail for the weaker projects. — Less detail about a stage that did not happen is still a claim that it did.
+No. Then all three show the same thing and the reader learns one fact about you three times. — Give each a job the others do not do, matched to its strongest evidence. It also removes the pressure to describe a stage a particular project never had.
 
 Improve: Assign each case study a job no other one does, in step 1. Record the change in step 5.
 
@@ -1965,18 +1965,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your case study is titled “A redesign of a repair shop’s customer communication”. Is that a promise?
 
-- No. It describes the project, so nothing can be delivered or failed, and it cannot decide what goes in.
 - Yes, it tells the reader what the case study covers.
 - Yes, though a subtitle would strengthen it.
+- No. It describes the project, so nothing can be delivered or failed, and it cannot decide what goes in.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It describes the project, so nothing can be delivered or failed, and it cannot decide what goes in. — A promise says what the reader will have seen at the end. It also does the editing: everything not on the way to that came out, and the case study got two hundred words shorter.
-
 Yes, it tells the reader what the case study covers. — Covering is not promising. A reader cannot say afterwards whether it delivered.
 
 Yes, though a subtitle would strengthen it. — A subtitle usually adds another description.
+
+No. It describes the project, so nothing can be delivered or failed, and it cannot decide what goes in. — A promise says what the reader will have seen at the end. It also does the editing: everything not on the way to that came out, and the case study got two hundred words shorter.
 
 Improve: Rewrite any description as a checkable promise in step 2. Record the change in step 5.
 
@@ -1995,16 +1995,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should the three case studies be the same length?
 
-- No. Length follows the evidence, and equal lengths mean the thin project has been padded.
 - Yes, for consistency across the portfolio.
+- No. Length follows the evidence, and equal lengths mean the thin project has been padded.
 - Yes, roughly, with some variation.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Length follows the evidence, and equal lengths mean the thin project has been padded. — Four hundred honest words about a project with thin records reads better than nine hundred about the same records. Dropping it entirely is also available.
-
 Yes, for consistency across the portfolio. — Consistency is a design value that should not be deciding content.
+
+No. Length follows the evidence, and equal lengths mean the thin project has been padded. — Four hundred honest words about a project with thin records reads better than nine hundred about the same records. Dropping it entirely is also available.
 
 Yes, roughly, with some variation. — Roughly equal still sets a target the thin project has to reach.
 
@@ -2494,18 +2494,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should the case study follow the order you did the work in?
 
+- Yes, with a summary at the top.
 - No. The work’s order was messy and full of dead ends, and a reader needs the reasoning arranged for understanding.
 - Yes, since it shows the process honestly.
-- Yes, with a summary at the top.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, with a summary at the top. — That is the structure this lesson asks for, described as a compromise.
+
 No. The work’s order was messy and full of dead ends, and a reader needs the reasoning arranged for understanding. — A chronology spends its first four paragraphs on setup, which is exactly the part a skim reaches. Problem and outcome first, then evidence, decision, iteration and limits.
 
 Yes, since it shows the process honestly. — Honesty is about what you claim rather than about the sequence. The dead ends stay where they teach something.
-
-Yes, with a summary at the top. — That is the structure this lesson asks for, described as a compromise.
 
 Improve: Put the problem and the outcome in the first two paragraphs in step 1. Record the change in step 5.
 
@@ -2524,18 +2524,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have six decisions worth describing. How many go in depth?
 
+- Two or three, to show consistency.
 - One. Six paragraphs produce six conclusions and no reasoning, which is the thing a reviewer is trying to see.
 - All six, briefly, so the range is visible.
-- Two or three, to show consistency.
 
 <details>
 <summary>After your attempt</summary>
 
+Two or three, to show consistency. — Consistency across three shallow accounts is still no reasoning.
+
 One. Six paragraphs produce six conclusions and no reasoning, which is the thing a reviewer is trying to see. — Options, evidence, trade-off and what you gave up, for one decision you can defend. The other five get a line each and a link to the not-building list.
 
 All six, briefly, so the range is visible. — Range across decisions is not what the section shows. How you think is, and brevity hides it.
-
-Two or three, to show consistency. — Consistency across three shallow accounts is still no reasoning.
 
 Improve: Cut to one decision in depth in step 3 and list the rest. Record the change in step 5.
 
@@ -2554,18 +2554,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your case study says the page saved the owner several hours a week. What should happen to that sentence?
 
-- Cut it. Nothing measured hours, and an unsupported quantity is the first thing a reviewer tests.
 - Weaken it to a few hours a week.
 - Keep it with a caveat that it is an estimate.
+- Cut it. Nothing measured hours, and an unsupported quantity is the first thing a reviewer tests.
 
 <details>
 <summary>After your attempt</summary>
 
-Cut it. Nothing measured hours, and an unsupported quantity is the first thing a reviewer tests. — The supported sentence already exists: calls fell from eleven to seven across matched periods, with the holiday named. Adding the unmeasured one risks everything the measured one earns.
-
 Weaken it to a few hours a week. — The arithmetic is invented at any size.
 
 Keep it with a caveat that it is an estimate. — A caveat under a number is the pattern Module 15 spent a lesson rejecting.
+
+Cut it. Nothing measured hours, and an unsupported quantity is the first thing a reviewer tests. — The supported sentence already exists: calls fell from eleven to seven across matched periods, with the holiday named. Adding the unmeasured one risks everything the measured one earns.
 
 Improve: Trace every claim in step 5 and cut anything with no artefact. Record the change.
 
@@ -3227,18 +3227,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Will saying a project was self-directed make it count for less?
 
-- Saying nothing and being asked is far worse. A labelled self-directed project with real evidence beats an ambiguously framed one.
-- Yes, which is why the framing should be left open.
 - Yes, slightly, and honesty is worth the cost.
+- Yes, which is why the framing should be left open.
+- Saying nothing and being asked is far worse. A labelled self-directed project with real evidence beats an ambiguously framed one.
 
 <details>
 <summary>After your attempt</summary>
 
-Saying nothing and being asked is far worse. A labelled self-directed project with real evidence beats an ambiguously framed one. — Role inflation is the most commonly detected dishonesty in portfolios and the easiest to avoid. The label at the top costs one line and removes the whole risk.
+Yes, slightly, and honesty is worth the cost. — There is little cost. What reviewers discount is the portfolio where the role turned out to differ from the impression.
 
 Yes, which is why the framing should be left open. — Left open means the reader assumes, and the correction arrives in an interview as a discovery.
 
-Yes, slightly, and honesty is worth the cost. — There is little cost. What reviewers discount is the portfolio where the role turned out to differ from the impression.
+Saying nothing and being asked is far worse. A labelled self-directed project with real evidence beats an ambiguously framed one. — Role inflation is the most commonly detected dishonesty in portfolios and the easiest to avoid. The label at the top costs one line and removes the whole risk.
 
 Improve: Put the category near the top of each case study in step 1. Record the change in step 5.
 
@@ -3257,16 +3257,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your draft says “we interviewed five people”. What is that?
 
-- A false plural. It asserts a team that does not exist, and it usually arrives by register rather than by intent.
 - A stylistic convention, and harmless.
+- A false plural. It asserts a team that does not exist, and it usually arrives by register rather than by intent.
 - Acceptable if the participants are counted as the we.
 
 <details>
 <summary>After your attempt</summary>
 
-A false plural. It asserts a team that does not exist, and it usually arrives by register rather than by intent. — Case studies sound like that because most describe team work. A thirty-second search for we, our and the team catches every instance, and re-reading does not.
-
 A stylistic convention, and harmless. — The reader pictures a team. The convention is not neutral when there was nobody else.
+
+A false plural. It asserts a team that does not exist, and it usually arrives by register rather than by intent. — Case studies sound like that because most describe team work. A thirty-second search for we, our and the team catches every instance, and re-reading does not.
 
 Acceptable if the participants are counted as the we. — That reading occurs to nobody except the person defending the sentence.
 
@@ -3287,18 +3287,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your case study says you worked with a developer to build the prototype. A friend reviewed your HTML and fixed one bug. Is that acceptable?
 
-- No. It is technically true and implies collaboration through the build, which is the hardest kind of inflation to defend.
 - Yes, since there genuinely was a developer involved.
 - Yes, if the detail is given later.
+- No. It is technically true and implies collaboration through the build, which is the hardest kind of inflation to defend.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It is technically true and implies collaboration through the build, which is the hardest kind of inflation to defend. — The accurate version — a friend who writes software reviewed my code and corrected a date-handling bug — credits him properly and survives any follow-up question.
-
 Yes, since there genuinely was a developer involved. — Involved and worked with are different scales, and the reader takes the larger one.
 
 Yes, if the detail is given later. — The impression is formed at the sentence, and the detail arrives as a correction.
+
+No. It is technically true and implies collaboration through the build, which is the hardest kind of inflation to defend. — The accurate version — a friend who writes software reviewed my code and corrected a date-handling bug — credits him properly and survives any follow-up question.
 
 Improve: Weaken any technically-true statement in step 5 to what actually happened. Record the change.
 
@@ -3995,18 +3995,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your screenshot shows a real job number. What is the best answer?
 
+- Describe the page instead.
 - Recreate it with an invented number and timings, labelled as recreated with synthetic data and the layout unchanged.
 - Blur the number and show the rest.
-- Describe the page instead.
 
 <details>
 <summary>After your attempt</summary>
 
+Describe the page instead. — That gives up showing a design you are entitled to show.
+
 Recreate it with an invented number and timings, labelled as recreated with synthetic data and the layout unchanged. — The design is worth showing and the data is not. The label is what stops a recreation being a screenshot of something that never existed.
 
 Blur the number and show the rest. — Workable, and a recreation is cleaner and lets you choose content that illustrates the point.
-
-Describe the page instead. — That gives up showing a design you are entitled to show.
 
 Improve: Label every recreation in step 3 with what is invented and what is not. Record the change in step 5.
 
@@ -4025,18 +4025,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One project’s consent stopped at the project and did not mention a portfolio. What are your options?
 
-- Ask again for permission, or describe the research rather than showing the material.
 - Show it anonymised, since anonymity was the point of the promise.
 - Leave the project out of the portfolio entirely.
+- Ask again for permission, or describe the research rather than showing the material.
 
 <details>
 <summary>After your attempt</summary>
 
-Ask again for permission, or describe the research rather than showing the material. — Asking takes a minute and is available more often than people try. Where it is not, describing is weaker evidence and it is honest, and the case study says its research is described rather than shown.
-
 Show it anonymised, since anonymity was the point of the promise. — The promise was about where the material goes rather than only about names.
 
 Leave the project out of the portfolio entirely. — Available, and usually more than necessary: the design work and the reasoning can be shown even where the research material cannot.
+
+Ask again for permission, or describe the research rather than showing the material. — Asking takes a minute and is available more often than people try. Where it is not, describing is weaker evidence and it is honest, and the case study says its research is described rather than shown.
 
 Improve: Write who you asked and what they said in step 5, or what you will describe instead. Record the change.
 
@@ -4664,18 +4664,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Do more images make a case study more convincing?
 
-- Unargued images make it longer. One before-and-after pair captioned with the test result does more than twelve screens.
-- Yes, since images communicate faster than text.
 - Yes, if they are well laid out.
+- Yes, since images communicate faster than text.
+- Unargued images make it longer. One before-and-after pair captioned with the test result does more than twelve screens.
 
 <details>
 <summary>After your attempt</summary>
 
-Unargued images make it longer. One before-and-after pair captioned with the test result does more than twelve screens. — Every image needs a reason and a caption that states it. Eight finished screens show nothing the flow does not, and polish everywhere reads as a rebuild.
+Yes, if they are well laid out. — Layout makes a gallery neater rather than making it argue.
 
 Yes, since images communicate faster than text. — They do, which is why an unargued one communicates decoration quickly.
 
-Yes, if they are well laid out. — Layout makes a gallery neater rather than making it argue.
+Unargued images make it longer. One before-and-after pair captioned with the test result does more than twelve screens. — Every image needs a reason and a caption that states it. Eight finished screens show nothing the flow does not, and polish everywhere reads as a rebuild.
 
 Improve: Cut every image whose argument you cannot state, in step 1. Record the change in step 5.
 
@@ -4695,17 +4695,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your caption says the page worked well for customers, under a screenshot. What is wrong?
 
 - A screenshot proves a screen existed. Whether it worked is in the test record, and the caption is claiming what the image cannot show.
-- Nothing, if the testing supports it.
 - It should say which customers.
+- Nothing, if the testing supports it.
 
 <details>
 <summary>After your attempt</summary>
 
 A screenshot proves a screen existed. Whether it worked is in the test record, and the caption is claiming what the image cannot show. — The honest caption names the record: two of three completed the task before the change, one of three after. The image shows the screen and the record carries the result.
 
-Nothing, if the testing supports it. — Then the caption should say what the testing found, which is a different and checkable sentence.
-
 It should say which customers. — Closer, and the deeper problem is that the image is being asked to carry a result.
+
+Nothing, if the testing supports it. — Then the caption should say what the testing found, which is a different and checkable sentence.
 
 Improve: Rewrite any caption that claims a result the image cannot show, in step 4. Record the change in step 5.
 
@@ -4724,16 +4724,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Every image in your case study is a finished screen. What does that suggest to a reviewer?
 
-- That the work may have been rebuilt for the portfolio, because real projects leave a trail of rough material.
 - That you have strong visual craft.
+- That the work may have been rebuilt for the portfolio, because real projects leave a trail of rough material.
 - Nothing in particular; final work is what portfolios show.
 
 <details>
 <summary>After your attempt</summary>
 
-That the work may have been rebuilt for the portfolio, because real projects leave a trail of rough material. — A paper flow with failure branches, recreated synthesis cards and an exception table show the thinking happening. Polish everywhere shows outputs with nothing behind them.
-
 That you have strong visual craft. — Visible in two screens. Twelve says nothing further and raises the question about the trail.
+
+That the work may have been rebuilt for the portfolio, because real projects leave a trail of rough material. — A paper flow with failure branches, recreated synthesis cards and an exception table show the thinking happening. Polish everywhere shows outputs with nothing behind them.
 
 Nothing in particular; final work is what portfolios show. — It is what galleries show. A case study is arguing something.
 
@@ -5572,18 +5572,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your project has no measurable result. Does that make it look like a failure?
 
-- Without an honest result the whole portfolio looks unreliable. A project with no measurement, plainly stated, costs one sentence.
 - Yes, which is why a qualitative claim should fill the gap.
 - Yes, so the section is better left out.
+- Without an honest result the whole portfolio looks unreliable. A project with no measurement, plainly stated, costs one sentence.
 
 <details>
 <summary>After your attempt</summary>
 
-Without an honest result the whole portfolio looks unreliable. A project with no measurement, plainly stated, costs one sentence. — A fabricated result costs the interview. Not deployed, followed by the repair loop in counts, is a real outcome section and it survives being asked about.
-
 Yes, which is why a qualitative claim should fill the gap. — A qualitative claim with nothing behind it is the fabrication, described more gently.
 
 Yes, so the section is better left out. — A missing outcome section is noticed, and the one sentence is easier than the absence.
+
+Without an honest result the whole portfolio looks unreliable. A project with no measurement, plainly stated, costs one sentence. — A fabricated result costs the interview. Not deployed, followed by the repair loop in counts, is a real outcome section and it survives being asked about.
 
 Improve: Write the plain sentence and the process outcome in step 3. Record the change in step 5.
 
@@ -5632,18 +5632,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your outcome says customer satisfaction increased. Nothing measured satisfaction. What should happen?
 
-- Cut it. It is a claim about something never observed, and it is the first thing an interviewer tests.
 - Rewrite it as customers seemed more satisfied.
 - Keep it and note that it was not measured.
+- Cut it. It is a claim about something never observed, and it is the first thing an interviewer tests.
 
 <details>
 <summary>After your attempt</summary>
 
-Cut it. It is a claim about something never observed, and it is the first thing an interviewer tests. — There is nothing underneath to rewrite it into. The owner continuing to use the page for a month is observed, meaningful, and available instead.
-
 Rewrite it as customers seemed more satisfied. — Seemed is the inflation word doing the work, and nothing was observed either way.
 
 Keep it and note that it was not measured. — A claim with a note under it is still the claim, and the note travels less far.
+
+Cut it. It is a claim about something never observed, and it is the first thing an interviewer tests. — There is nothing underneath to rewrite it into. The owner continuing to use the page for a month is observed, meaningful, and available instead.
 
 Improve: Ask the two sceptic questions of every outcome sentence in step 5 and cut what cannot answer. Record the change.
 
@@ -6200,18 +6200,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Can your about page say the site is accessible?
 
-- No. List the checks you ran and the ones you did not, which is also the clearest demonstration of your third claim.
 - Yes, if you ran the standard checks.
 - Yes, with a note about what was not tested.
+- No. List the checks you ran and the ones you did not, which is also the clearest demonstration of your third claim.
 
 <details>
 <summary>After your attempt</summary>
 
-No. List the checks you ran and the ones you did not, which is also the clearest demonstration of your third claim. — Accessible is a conformance claim, and Module 11 spent a lesson on why it cannot be made without testing. Naming four checks and two absences is checkable and stronger.
-
 Yes, if you ran the standard checks. — The standard checks are a floor rather than conformance, and no screen-reader testing has happened.
 
 Yes, with a note about what was not tested. — The claim travels and the note does not, which is the pattern this course keeps returning to.
+
+No. List the checks you ran and the ones you did not, which is also the clearest demonstration of your third claim. — Accessible is a conformance claim, and Module 11 spent a lesson on why it cannot be made without testing. Naming four checks and two absences is checkable and stronger.
 
 Improve: Write the checked and not-checked lists onto the site in step 5. Record the change.
 
@@ -7002,18 +7002,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Can you just talk through the case study?
 
-- No. Slides or pages read aloud are slower than reading and less clear than either, and speaking adds setup that reading does not need.
-- Yes, since the written version is already well ordered.
 - Yes, with a summary at the start.
+- Yes, since the written version is already well ordered.
+- No. Slides or pages read aloud are slower than reading and less clear than either, and speaking adds setup that reading does not need.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Slides or pages read aloud are slower than reading and less clear than either, and speaking adds setup that reading does not need. — The first recording goes fourteen minutes with four on context. The spoken version needs its own five points, prepared as a separate artefact.
+Yes, with a summary at the start. — That is the spoken structure, arrived at reluctantly.
 
 Yes, since the written version is already well ordered. — Well ordered for reading. Spoken, the same order produces four minutes of setup before any evidence.
 
-Yes, with a summary at the start. — That is the spoken structure, arrived at reluctantly.
+No. Slides or pages read aloud are slower than reading and less clear than either, and speaking adds setup that reading does not need. — The first recording goes fourteen minutes with four on context. The spoken version needs its own five points, prepared as a separate artefact.
 
 Improve: Write five spoken points in step 1 rather than working from the page. Record the change in step 5.
 
@@ -7032,16 +7032,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 On the recording you say “about two thirds” where your notes say two of three. Does it matter?
 
-- Yes. Spoken delivery loosens counts, and it is the commonest place careful writing is undone.
 - Not much, since the written version is exact.
+- Yes. Spoken delivery loosens counts, and it is the commonest place careful writing is undone.
 - Only if the numbers are close to a threshold.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes. Spoken delivery loosens counts, and it is the commonest place careful writing is undone. — Two of three is shorter to say than about two thirds and it is the phrase an interviewer picks up. Everything Module 15 established applies here, out loud.
-
 Not much, since the written version is exact. — The spoken version is what they heard, and what gets repeated.
+
+Yes. Spoken delivery loosens counts, and it is the commonest place careful writing is undone. — Two of three is shorter to say than about two thirds and it is the phrase an interviewer picks up. Everything Module 15 established applies here, out loud.
 
 Only if the numbers are close to a threshold. — A fraction from three people implies a sample nobody had, at any threshold.
 
@@ -7062,18 +7062,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your recording has several hesitations. Should the second take fix them?
 
-- No. Spend it on structure and numbers; hesitation is normal speech and chasing it produces a delivery that sounds rehearsed.
-- Yes, fluency is part of the impression.
 - Yes, and the structure too.
+- Yes, fluency is part of the impression.
+- No. Spend it on structure and numbers; hesitation is normal speech and chasing it produces a delivery that sounds rehearsed.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Spend it on structure and numbers; hesitation is normal speech and chasing it produces a delivery that sounds rehearsed. — The recording exists to show what you cannot hear while speaking: four minutes of context, a loosened count, a rushed limits section. Those are worth a second take.
+Yes, and the structure too. — Both at once usually means the structure gets the attention it deserves and the fluency work makes it stiff.
 
 Yes, fluency is part of the impression. — A fluent walkthrough with four minutes of context still fails.
 
-Yes, and the structure too. — Both at once usually means the structure gets the attention it deserves and the fluency work makes it stiff.
+No. Spend it on structure and numbers; hesitation is normal speech and chasing it produces a delivery that sounds rehearsed. — The recording exists to show what you cannot hear while speaking: four minutes of context, a loosened count, a rushed limits section. Those are worth a second take.
 
 Improve: Write three specific changes about structure and numbers in step 4. Record the change in step 5.
 
@@ -7604,18 +7604,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does a good answer defend the work?
 
+- Yes, where the criticism is unfair.
 - A good answer tells the truth about the work. Interviewers are testing calibration more than results, and a well-defended overclaim fails that completely.
 - Yes, otherwise the work looks weak.
-- Yes, where the criticism is unfair.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, where the criticism is unfair. — The questions drawn from your own limitations page are rarely unfair.
+
 A good answer tells the truth about the work. Interviewers are testing calibration more than results, and a well-defended overclaim fails that completely. — Conceding first moves the conversation on. Defending keeps it on the weakest part of the study for four minutes.
 
 Yes, otherwise the work looks weak. — The work is what it is. What is being assessed is whether your account of it is reliable.
-
-Yes, where the criticism is unfair. — The questions drawn from your own limitations page are rarely unfair.
 
 Improve: Rewrite any answer in step 2 whose first sentence is a defence. Record the change in step 5.
 
@@ -7634,18 +7634,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You are asked what customers who stopped coming think. You did not reach any. What do you say?
 
-- That you do not know, why not, and the smallest next step: three phone calls to lapsed customers.
-- That they probably had similar frustrations to the others.
 - That the study did not cover it, and move on.
+- That they probably had similar frustrations to the others.
+- That you do not know, why not, and the smallest next step: three phone calls to lapsed customers.
 
 <details>
 <summary>After your attempt</summary>
 
-That you do not know, why not, and the smallest next step: three phone calls to lapsed customers. — I do not know is acceptable with a next step attached. Without one it sounds like evasion, and with a guess it becomes invention about people nobody spoke to.
+That the study did not cover it, and move on. — Accurate and it leaves the answer at a full stop. The next step is what makes it calibration.
 
 That they probably had similar frustrations to the others. — Probably is doing the inventing, and it is the sentence that arrives under pressure when nothing was prepared.
 
-That the study did not cover it, and move on. — Accurate and it leaves the answer at a full stop. The next step is what makes it calibration.
+That you do not know, why not, and the smallest next step: three phone calls to lapsed customers. — I do not know is acceptable with a next step attached. Without one it sounds like evasion, and with a guess it becomes invention about people nobody spoke to.
 
 Improve: Attach the smallest next step to every unknown in step 3. Record the change in step 5.
 
@@ -7664,18 +7664,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why have somebody ask the questions unprompted rather than reading your answers?
 
-- Because under pressure the answer that arrives is not always the one you wrote, and the drift is nearly always towards claiming more.
-- To practise the delivery.
 - To find questions you had not thought of.
+- To practise the delivery.
+- Because under pressure the answer that arrives is not always the one you wrote, and the drift is nearly always towards claiming more.
 
 <details>
 <summary>After your attempt</summary>
 
-Because under pressure the answer that arrives is not always the one you wrote, and the drift is nearly always towards claiming more. — That drift is the finding. A shuffled, unprompted list also tests whether the answers are prepared or memorised in sequence.
+To find questions you had not thought of. — A bonus. The list comes from your own limitations page, which is where the predictable ones live.
 
 To practise the delivery. — Useful, and the reason is what it reveals about the content.
 
-To find questions you had not thought of. — A bonus. The list comes from your own limitations page, which is where the predictable ones live.
+Because under pressure the answer that arrives is not always the one you wrote, and the drift is nearly always towards claiming more. — That drift is the finding. A shuffled, unprompted list also tests whether the answers are prepared or memorised in sequence.
 
 Improve: Record any answer that drifted from what you wrote, in step 5, and note the change.
 
@@ -8555,18 +8555,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your cold reader said the portfolio shows somebody who tests things and admits what did not work, but was not sure how research became design. What have you learned?
 
-- Two claims arrived and one did not, which is a finding about the portfolio rather than about the reader.
-- That the reader skimmed too quickly.
 - That the first claim needs more explanation in the case study.
+- That the reader skimmed too quickly.
+- Two claims arrived and one did not, which is a finding about the portfolio rather than about the reader.
 
 <details>
 <summary>After your attempt</summary>
 
-Two claims arrived and one did not, which is a finding about the portfolio rather than about the reader. — The synthesis page exists; it is probably too far down or unlabelled in the skim. The fix is nearly always placement rather than more words.
+That the first claim needs more explanation in the case study. — More words further down reach the same reader in the same way. Placement is the usual answer.
 
 That the reader skimmed too quickly. — A single reading is what a reviewer gives it. The skim is the condition rather than a failure of the test.
 
-That the first claim needs more explanation in the case study. — More words further down reach the same reader in the same way. Placement is the usual answer.
+Two claims arrived and one did not, which is a finding about the portfolio rather than about the reader. — The synthesis page exists; it is probably too far down or unlabelled in the skim. The fix is nearly always placement rather than more words.
 
 Improve: Record which claims arrived in step 4 and move the evidence for the missing one earlier. Note the change in step 5.
 

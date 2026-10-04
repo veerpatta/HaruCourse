@@ -488,18 +488,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your first trace showed four requests and 40 kilobytes. What is the most likely explanation?
 
-- The browser reused most of the page from its own store, because Disable cache was not ticked.
 - The page is genuinely very light.
 - The network panel only records the first few requests.
+- The browser reused most of the page from its own store, because Disable cache was not ticked.
 
 <details>
 <summary>After your attempt</summary>
 
-The browser reused most of the page from its own store, because Disable cache was not ticked. — It is the default, and it makes every page you have visited before look excellent. The tickbox sits at the top of the network panel and has to be on before you reload.
-
 The page is genuinely very light. — Possible, and four requests for a page with photographs on it does not add up. Check the tickbox before believing the number.
 
 The network panel only records the first few requests. — It records everything from the moment it is open. What it does not do is force the browser to ask for things it already has.
+
+The browser reused most of the page from its own store, because Disable cache was not ticked. — It is the default, and it makes every page you have visited before look excellent. The tickbox sits at the top of the network panel and has to be on before you reload.
 
 Improve: Redo the trace in step 2 with Disable cache ticked and replace the numbers. Record the change in step 5.
 
@@ -518,18 +518,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody tells you performance is the engineer’s problem. What is the strongest reply?
 
+- Performance is everybody’s responsibility.
 - Engineers optimise what exists. How many typefaces there are, and whether anything readable appears before the photograph, are decided in the design.
 - Designers should learn to optimise images themselves.
-- Performance is everybody’s responsibility.
 
 <details>
 <summary>After your attempt</summary>
 
+Performance is everybody’s responsibility. — True and unhelpful in a conversation. Naming the two specific costs you found is what changes anything.
+
 Engineers optimise what exists. How many typefaces there are, and whether anything readable appears before the photograph, are decided in the design. — Compression, caching and bundling are theirs. The number of requests and their order usually dominate, and both come from a design file.
 
 Designers should learn to optimise images themselves. — Useful, and it concedes the point. The argument is about which decisions create the weight, not about who compresses it.
-
-Performance is everybody’s responsibility. — True and unhelpful in a conversation. Naming the two specific costs you found is what changes anything.
 
 Improve: Check your two findings in step 4 are things you could change in a design file, and swap any that are not. Record the change in step 5.
 
@@ -548,18 +548,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your throttled load finished at 18 seconds. Is that the number to report?
 
-- Not on its own. When the person could do something matters more, and it is usually much earlier.
-- Yes, since it is when the page was fully ready.
 - Yes, because it is the number the browser gives you.
+- Yes, since it is when the page was fully ready.
+- Not on its own. When the person could do something matters more, and it is usually much earlier.
 
 <details>
 <summary>After your attempt</summary>
 
-Not on its own. When the person could do something matters more, and it is usually much earlier. — Loading finishing includes photographs nobody has scrolled to. Time to usable describes the experience, and needs you to say what usable meant on that page.
+Yes, because it is the number the browser gives you. — It is the easiest number to read off, which is exactly why it gets reported. The useful one takes a judgement about what usable means.
 
 Yes, since it is when the page was fully ready. — Fully ready is rarely what anybody waits for. People start reading and tapping long before it.
 
-Yes, because it is the number the browser gives you. — It is the easiest number to read off, which is exactly why it gets reported. The useful one takes a judgement about what usable means.
+Not on its own. When the person could do something matters more, and it is usually much earlier. — Loading finishing includes photographs nobody has scrolled to. Time to usable describes the experience, and needs you to say what usable meant on that page.
 
 Improve: Write the moment the person could act, and what they could do, in the usable field in step 3. Record the change in step 5.
 
@@ -1327,17 +1327,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 The unstyled page has three tool names running together. What is the right repair?
 
 - Make them a list, so they are separate for everybody rather than only for people who can see the spacing.
-- Add a style rule giving them space.
 - Leave it, since nobody reads the page unstyled.
+- Add a style rule giving them space.
 
 <details>
 <summary>After your attempt</summary>
 
 Make them a list, so they are separate for everybody rather than only for people who can see the spacing. — They run together because they are three boxes with no relationship. A list states the relationship, and the spacing then follows from it rather than standing in for it.
 
-Add a style rule giving them space. — That repairs your eyes and leaves the markup exactly as meaningless. The unstyled reading exists precisely to catch this.
-
 Leave it, since nobody reads the page unstyled. — Several things read it that way all the time, including search engines and reader mode. The unstyled view is not hypothetical.
+
+Add a style rule giving them space. — That repairs your eyes and leaves the markup exactly as meaningless. The unstyled reading exists precisely to catch this.
 
 Improve: Redo one fix in step 3 by changing an element instead of adding a rule, and record what changed. Note it in step 5.
 
@@ -1357,17 +1357,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your Reserve control is a link styled to look like a button, and it works when clicked. What is broken?
 
 - The space bar does nothing, and somebody listening is told they are about to go somewhere when they are about to reserve something.
-- Nothing, provided it is keyboard reachable.
 - It will not work on a phone.
+- Nothing, provided it is keyboard reachable.
 
 <details>
 <summary>After your attempt</summary>
 
 The space bar does nothing, and somebody listening is told they are about to go somewhere when they are about to reserve something. — Buttons answer to enter and space; links answer only to enter. The announcement is the second half: a link promises navigation, and this one changes the state of a booking.
 
-Nothing, provided it is keyboard reachable. — Reachable is not the same as behaving correctly. Half its expected keyboard behaviour is missing.
-
 It will not work on a phone. — It works fine by touch, which is why the problem survives. The failure is for keyboard and for anybody listening.
+
+Nothing, provided it is keyboard reachable. — Reachable is not the same as behaving correctly. Half its expected keyboard behaviour is missing.
 
 Improve: Change that control to a button in step 2, keeping the styling, and note what behaviour returned. Record the change in step 5.
 
@@ -2058,18 +2058,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody says CSS is unpredictable. Is that fair?
 
+- It is fair until you use a framework to manage it.
 - It is deterministic and mostly unfamiliar. Nearly all surprises come from three things: the box model, the cascade and inheritance.
 - It is fair, because browsers differ from one another.
-- It is fair until you use a framework to manage it.
 
 <details>
 <summary>After your attempt</summary>
 
+It is fair until you use a framework to manage it. — A framework hides the cascade rather than removing it, and the surprises return with less to inspect.
+
 It is deterministic and mostly unfamiliar. Nearly all surprises come from three things: the box model, the cascade and inheritance. — Unpredictable means the same input gives different results, which is not what happens. The inspector will tell you which rule won in every case, once you know what to ask it.
 
 It is fair, because browsers differ from one another. — They differ at the edges. The everyday surprises are the same in all of them and come from the three ideas this lesson covers.
-
-It is fair until you use a framework to manage it. — A framework hides the cascade rather than removing it, and the surprises return with less to inspect.
 
 Improve: Make sure one of your three explanations in step 4 is about the cascade and one about inheritance. Record the change in step 5.
 
@@ -2088,18 +2088,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A card set to 300 pixels wide measures 340 on screen. What is happening?
 
+- The browser is rounding the layout.
 - The width applies to the content, and the padding is being added outside it.
 - Another rule is overriding the width.
-- The browser is rounding the layout.
 
 <details>
 <summary>After your attempt</summary>
 
+The browser is rounding the layout. — Rounding moves things by a fraction of a pixel. Forty is not rounding.
+
 The width applies to the content, and the padding is being added outside it. — Twenty pixels of padding on each side adds forty. Setting box sizing to include padding and border, once at the top, makes a declared width mean what you expected.
 
 Another rule is overriding the width. — Possible, and the inspector would show it struck through. When the difference is exactly twice the padding, the box model is the first place to look.
-
-The browser is rounding the layout. — Rounding moves things by a fraction of a pixel. Forty is not rounding.
 
 Improve: Write that mechanism into your box model note in step 1 so it is in your own words. Record the change in step 5.
 
@@ -2118,18 +2118,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your heading will not change colour. What should you do first?
 
-- Inspect the element and read which rule is winning, before changing anything.
 - Make your selector more specific until it wins.
 - Move the rule to the end of the stylesheet.
+- Inspect the element and read which rule is winning, before changing anything.
 
 <details>
 <summary>After your attempt</summary>
 
-Inspect the element and read which rule is winning, before changing anything. — The Styles panel shows the losing rule struck through and the winning one above it. Diagnosis takes ten seconds and tells you whether the fix is a selector, an order or an inherited value.
-
 Make your selector more specific until it wins. — It works this time and adds a rule nobody can explain, which makes the next conflict worse. Two or three of these and the stylesheet stops being predictable.
 
 Move the rule to the end of the stylesheet. — Order matters only between rules of equal weight. If the other rule is more particular, moving yours changes nothing.
+
+Inspect the element and read which rule is winning, before changing anything. — The Styles panel shows the losing rule struck through and the winning one above it. Diagnosis takes ten seconds and tells you whether the fix is a selector, an order or an inherited value.
 
 Improve: Write your explanation in step 3 before the fix, and record what the inspector actually showed. Note the change in step 5.
 
@@ -2837,18 +2837,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have three layouts, for phone, tablet and desktop. Is the page responsive?
 
-- Not really. Devices come in every size, people resize windows and split screens, and a layout that works at three widths fails at the dozens between them.
 - It is, since those three cover most real devices.
 - It is, provided the three layouts are well made.
+- Not really. Devices come in every size, people resize windows and split screens, and a layout that works at three widths fails at the dozens between them.
 
 <details>
 <summary>After your attempt</summary>
 
-Not really. Devices come in every size, people resize windows and split screens, and a layout that works at three widths fails at the dozens between them. — The sweep is what shows this: the awkward widths are almost never the ones named after a device. Content-derived change points land where your own content asks for them.
-
 It is, since those three cover most real devices. — They cover three points on a continuous range. A window dragged to two thirds of a screen sits in none of them.
 
 It is, provided the three layouts are well made. — Three well-made layouts with a broken range between them is the exact problem this lesson is about.
+
+Not really. Devices come in every size, people resize windows and split screens, and a layout that works at three widths fails at the dozens between them. — The sweep is what shows this: the awkward widths are almost never the ones named after a device. Content-derived change points land where your own content asks for them.
 
 Improve: Redo the sweep in step 3 and record at least one failure that is not at one of your change points. Record the change in step 5.
 
@@ -2867,18 +2867,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 At one width a grid leaves a single orphaned card. Should you add a breakpoint?
 
-- No. A flexible wrapping rule handles every width, including the ones you have not looked at.
-- Yes, since the layout genuinely needs to change there.
 - Yes, and also make the cards narrower.
+- Yes, since the layout genuinely needs to change there.
+- No. A flexible wrapping rule handles every width, including the ones you have not looked at.
 
 <details>
 <summary>After your attempt</summary>
 
-No. A flexible wrapping rule handles every width, including the ones you have not looked at. — Orphans appear wherever the division happens to be awkward, which is many widths rather than one. A change point fixes the width you were looking at.
+Yes, and also make the cards narrower. — That moves the orphan to a different width rather than removing it.
 
 Yes, since the layout genuinely needs to change there. — The arrangement does not need to change; the wrapping needs to be less rigid. A change point is for a genuine change of arrangement.
 
-Yes, and also make the cards narrower. — That moves the orphan to a different width rather than removing it.
+No. A flexible wrapping rule handles every width, including the ones you have not looked at. — Orphans appear wherever the division happens to be awkward, which is many widths rather than one. A change point fixes the width you were looking at.
 
 Improve: Move any orphan fix in step 3 from a change point to a flexible rule, and record the change in step 5.
 
@@ -2897,18 +2897,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 At 200 per cent text the header wraps over the logo. What is the correct repair?
 
-- Let the header grow, so more text gets more room.
-- Reduce the header text size at large text settings.
 - Add a change point for enlarged text.
+- Reduce the header text size at large text settings.
+- Let the header grow, so more text gets more room.
 
 <details>
 <summary>After your attempt</summary>
 
-Let the header grow, so more text gets more room. — A fixed height is a promise the content cannot keep. Growing is what should happen, even though the header then takes two lines and looks different from the design.
+Add a change point for enlarged text. — Text size is not width, so a width-based change point cannot see it.
 
 Reduce the header text size at large text settings. — That takes the enlargement away from the person who asked for it, which is the one repair that makes things worse.
 
-Add a change point for enlarged text. — Text size is not width, so a width-based change point cannot see it.
+Let the header grow, so more text gets more room. — A fixed height is a promise the content cannot keep. Growing is what should happen, even though the header then takes two lines and looks different from the design.
 
 Improve: Fix that container in step 4 by removing its fixed height, and write what it does now. Record the change in step 5.
 
@@ -3610,18 +3610,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You compressed all eleven images and the page got a megabyte lighter, but the time to usable barely moved. Why?
 
+- The connection profile was too slow for the difference to show.
 - The delay was one large image above the text, and an even squeeze barely touched it.
 - Compression does not affect loading time.
-- The connection profile was too slow for the difference to show.
 
 <details>
 <summary>After your attempt</summary>
 
+The connection profile was too slow for the difference to show. — A slow profile makes differences larger rather than smaller. The saving was in the wrong place.
+
 The delay was one large image above the text, and an even squeeze barely touched it. — What the person waits for is the weight above the first screenful. Ten images below the fold can be large and late without anybody noticing.
 
 Compression does not affect loading time. — It does, for whatever is being waited on. The saving landed on images nobody was waiting for.
-
-The connection profile was too slow for the difference to show. — A slow profile makes differences larger rather than smaller. The saving was in the wrong place.
 
 Improve: Identify the largest image above the fold in step 1 and re-export it at its display width, then measure again in step 5. Record the change.
 
@@ -3640,16 +3640,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your designer instinct says the developer will optimise the images. What does that miss?
 
-- They can compress what you supply. Whether there is a full-width photograph at all, and whether it sits above the first line of text, are design decisions.
 - Nothing much, provided you supply high-quality originals.
+- They can compress what you supply. Whether there is a full-width photograph at all, and whether it sits above the first line of text, are design decisions.
 - That optimisation tools are not always available.
 
 <details>
 <summary>After your attempt</summary>
 
-They can compress what you supply. Whether there is a full-width photograph at all, and whether it sits above the first line of text, are design decisions. — Compression is theirs and it operates on what you handed over. The number of images, their size in the layout and their order on the page dominate the result and come from the design.
-
 Nothing much, provided you supply high-quality originals. — High-quality originals are exactly what produces a 1.8 megabyte header. Supplying the original is not the same as deciding what the page needs.
+
+They can compress what you supply. Whether there is a full-width photograph at all, and whether it sits above the first line of text, are design decisions. — Compression is theirs and it operates on what you handed over. The number of images, their size in the layout and their order on the page dominate the result and come from the design.
 
 That optimisation tools are not always available. — They are widely available and free. The point is which decisions the tools cannot reach.
 
@@ -3670,18 +3670,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Four photographs below the fold now load later, and the page jumps as the person scrolls. What went wrong?
 
-- No space was reserved, so the layout only learns how big each image is when it arrives.
 - Those images should load immediately after all.
 - The images are too large, so they arrive slowly.
+- No space was reserved, so the layout only learns how big each image is when it arrives.
 
 <details>
 <summary>After your attempt</summary>
 
-No space was reserved, so the layout only learns how big each image is when it arrives. — Loading later and reserving space are two halves of one decision. Without the second, people tap the wrong thing because the target moved as they reached it.
-
 Those images should load immediately after all. — That undoes a good decision to fix a different one. The jumping is about space, not about timing.
 
 The images are too large, so they arrive slowly. — A smaller image arriving into an unreserved space jumps just as much, only faster.
+
+No space was reserved, so the layout only learns how big each image is when it arrives. — Loading later and reserving space are two halves of one decision. Without the second, people tap the wrong thing because the target moved as they reached it.
 
 Improve: Reserve the space for every image in step 4 and write how you did it. Record the change in step 5.
 
@@ -4380,17 +4380,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You do not intend to write code professionally. Why read it?
 
 - It lets you tell a feasible request from an unreasonable one, follow an estimate, and notice when an answer is evasive.
-- Because designers are increasingly expected to code.
 - So you can make small fixes yourself.
+- Because designers are increasingly expected to code.
 
 <details>
 <summary>After your attempt</summary>
 
 It lets you tell a feasible request from an unreasonable one, follow an estimate, and notice when an answer is evasive. — Writing a little is how reading is learned. The output of this module is judgement in conversations, not a second job.
 
-Because designers are increasingly expected to code. — That is an argument about the market rather than about your work, and it invites the reply that you will hire for it.
-
 So you can make small fixes yourself. — Sometimes useful, and it is not the reason. The reason is being able to reason about what you are being told.
+
+Because designers are increasingly expected to code. — That is an argument about the market rather than about your work, and it invites the reply that you will hire for it.
 
 Improve: Add anything you copied and cannot explain to the honest list in step 3. Record the change in step 5.
 
@@ -4409,16 +4409,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your show-and-hide panel took forty lines. Thirty-four of them handle keyboard, focus and announcements. What does that suggest?
 
-- That the browser probably has an element for this, and you are re-implementing behaviour that already existed.
 - That accessible interactions are simply expensive to build.
+- That the browser probably has an element for this, and you are re-implementing behaviour that already existed.
 - That the code needs refactoring.
 
 <details>
 <summary>After your attempt</summary>
 
-That the browser probably has an element for this, and you are re-implementing behaviour that already existed. — A disclosure element opens, closes, works from the keyboard and announces its state with no script at all. Most hand-built versions get the focus return slightly wrong.
-
 That accessible interactions are simply expensive to build. — They are, built from scratch. The reason to check for a native element first is exactly this cost.
+
+That the browser probably has an element for this, and you are re-implementing behaviour that already existed. — A disclosure element opens, closes, works from the keyboard and announces its state with no script at all. Most hand-built versions get the focus return slightly wrong.
 
 That the code needs refactoring. — Shorter code doing the same unnecessary work is still unnecessary work.
 
@@ -5142,18 +5142,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You expect the data source to work nearly always, so the error branch feels like a formality. Is it?
 
+- Yes, provided the error message is clear.
 - It is not. Networks fail routinely, and a person on a train meets the error branch more often than several features you will spend a week on.
 - Largely yes, if the source is reliable.
-- Yes, provided the error message is clear.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, provided the error message is clear. — The message is the smallest part. What the branch preserves and how it lets somebody retry is what decides whether they continue.
+
 It is not. Networks fail routinely, and a person on a train meets the error branch more often than several features you will spend a week on. — The failure rate at your desk, on your connection, is the least representative number available. Errors are a normal outcome rather than an exceptional one.
 
 Largely yes, if the source is reliable. — The source being reliable does not make the connection between it and the person reliable, and that is where most failures happen.
-
-Yes, provided the error message is clear. — The message is the smallest part. What the branch preserves and how it lets somebody retry is what decides whether they continue.
 
 Improve: Check your error branch in step 2 preserves the filters and offers retry, and fix it if it does not. Record the change in step 5.
 
@@ -5173,17 +5173,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 A successful request comes back with no items. Which branch should the person be in?
 
 - Empty. The question was answered, and the answer was none.
-- Error, since they did not get what they wanted.
 - Loading, until they change the filters.
+- Error, since they did not get what they wanted.
 
 <details>
 <summary>After your attempt</summary>
 
 Empty. The question was answered, and the answer was none. — Empty and error send people to look for different things. Calling a successful nothing an error sends somebody hunting a fault that does not exist.
 
-Error, since they did not get what they wanted. — Not getting what you wanted is not a malfunction. The system worked and the answer was none.
-
 Loading, until they change the filters. — A spinner that never resolves is the worst of the options, because it promises something is still coming.
+
+Error, since they did not get what they wanted. — Not getting what you wanted is not a malfunction. The system worked and the answer was none.
 
 Improve: Check your empty branch in step 2 says what would appear here and offers the change most likely to help. Record the change in step 5.
 
@@ -5202,18 +5202,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your loading state reserved four rows and the real result is usually twelve. What kind of problem is that?
 
-- A specification error the build revealed, and the specification is what needs correcting.
 - A build problem to fix in the code and move on.
 - Not a problem, since the rows arrive quickly.
+- A specification error the build revealed, and the specification is what needs correcting.
 
 <details>
 <summary>After your attempt</summary>
 
-A specification error the build revealed, and the specification is what needs correcting. — You could not have known the usual result size from a drawing. Updating the Module 8 document is what stops the next person building the same jump.
-
 A build problem to fix in the code and move on. — Fixing the code leaves a document that still says four, which somebody will build from later.
 
 Not a problem, since the rows arrive quickly. — The page jumps by eight rows when they arrive, and people tap the wrong thing because of it.
+
+A specification error the build revealed, and the specification is what needs correcting. — You could not have known the usual result size from a drawing. Updating the Module 8 document is what stops the next person building the same jump.
 
 Improve: Correct the Module 8 specification in step 5, not only the code, and say what you changed. Record it.
 
@@ -5912,18 +5912,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You believe a custom validation experience would be better than the browser’s. What is the risk?
 
+- Custom validation is slower to run.
 - Native validation also announces the problem and moves focus, and custom versions routinely omit both.
 - There is no real risk if you test it carefully.
-- Custom validation is slower to run.
 
 <details>
 <summary>After your attempt</summary>
 
+Custom validation is slower to run. — Speed is not the issue at this scale. Announcement and focus are.
+
 Native validation also announces the problem and moves focus, and custom versions routinely omit both. — What looks plain is doing four things at once. A custom version usually reproduces the visible one and drops the two that matter to somebody not looking at the screen.
 
 There is no real risk if you test it carefully. — Testing carefully means testing by keyboard and by listening, which is exactly the testing that tends not to happen on a custom implementation.
-
-Custom validation is slower to run. — Speed is not the issue at this scale. Announcement and focus are.
 
 Improve: Write down in step 1 what the browser actually did before you added anything. Record the change in step 5.
 
@@ -5942,18 +5942,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your form clears itself when submission fails. How bad is that?
 
-- It is the failure most likely to end the task, and it is almost always accidental rather than designed.
-- Mildly annoying, since the person knows what they typed.
 - Acceptable if there is a clear error message.
+- Mildly annoying, since the person knows what they typed.
+- It is the failure most likely to end the task, and it is almost always accidental rather than designed.
 
 <details>
 <summary>After your attempt</summary>
 
-It is the failure most likely to end the task, and it is almost always accidental rather than designed. — Browsers preserve values by default; losing them usually takes a reload somebody added. Nobody notices while building because nobody submits a broken form twice.
+Acceptable if there is a clear error message. — A clear message explaining that everything has been deleted does not help anybody continue.
 
 Mildly annoying, since the person knows what they typed. — They knew it the first time. On a phone, with four fields and a date, retyping it is where people leave.
 
-Acceptable if there is a clear error message. — A clear message explaining that everything has been deleted does not help anybody continue.
+It is the failure most likely to end the task, and it is almost always accidental rather than designed. — Browsers preserve values by default; losing them usually takes a reload somebody added. Nobody notices while building because nobody submits a broken form twice.
 
 Improve: Submit your own form with mistakes in it and check what survives, in step 4. Fix anything lost and record the change in step 5.
 
@@ -5972,16 +5972,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your page checks every rule before sending. Is client-side validation enough?
 
-- No. Checking in the browser is convenience; the check that counts happens where the person cannot reach it.
 - It is enough for a design prototype.
+- No. Checking in the browser is convenience; the check that counts happens where the person cannot reach it.
 - It is enough if the rules are thorough.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Checking in the browser is convenience; the check that counts happens where the person cannot reach it. — Anything in the page can be bypassed. The browser check exists to help somebody get it right quickly, not to guarantee anything about what arrives.
-
 It is enough for a design prototype. — It is, for this lesson. The point is knowing that it is not the real check, so you do not describe it as one later.
+
+No. Checking in the browser is convenience; the check that counts happens where the person cannot reach it. — Anything in the page can be bypassed. The browser check exists to help somebody get it right quickly, not to guarantee anything about what arrives.
 
 It is enough if the rules are thorough. — Thoroughness is not the issue. The rules run somewhere the person controls.
 
@@ -6680,18 +6680,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The page feels fast to you. Why is that not evidence?
 
-- You are on a fast connection, with a warm cache, on a machine you chose, looking at a page you already understand.
 - Because feelings are always unreliable.
 - Because speed varies between browsers.
+- You are on a fast connection, with a warm cache, on a machine you chose, looking at a page you already understand.
 
 <details>
 <summary>After your attempt</summary>
 
-You are on a fast connection, with a warm cache, on a machine you chose, looking at a page you already understand. — Four separate advantages, none of which a first-time visitor on a mid-range phone has. This is why the measurement comes before the opinion.
-
 Because feelings are always unreliable. — Your sense of speed is quite good at judging what you experienced. The problem is that what you experienced is unrepresentative.
 
 Because speed varies between browsers. — It does, and that is a smaller effect than the cache and the connection.
+
+You are on a fast connection, with a warm cache, on a machine you chose, looking at a page you already understand. — Four separate advantages, none of which a first-time visitor on a mid-range phone has. This is why the measurement comes before the opinion.
 
 Improve: Check the conditions in step 1 include the cache setting, and redo the baseline if it was warm. Record the change in step 5.
 
@@ -6740,18 +6740,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your report says the page went from eleven seconds to three. What is missing?
 
-- The conditions: throttling profile, cache setting, device and browser, stated once beside the pair.
 - The percentage improvement.
 - The list of every change you made.
+- The conditions: throttling profile, cache setting, device and browser, stated once beside the pair.
 
 <details>
 <summary>After your attempt</summary>
 
-The conditions: throttling profile, cache setting, device and browser, stated once beside the pair. — Without them the figures will be quoted somewhere they mean something else, usually as though they described a real phone on a real network.
-
 The percentage improvement. — It is easy to calculate from the figures and adds nothing the figures do not say.
 
 The list of every change you made. — Worth including and not the omission that makes the numbers misleading.
+
+The conditions: throttling profile, cache setting, device and browser, stated once beside the pair. — Without them the figures will be quoted somewhere they mean something else, usually as though they described a real phone on a real network.
 
 Improve: Add the conditions line to your report in step 5 and state what you did not measure. Record the change.
 
@@ -7441,18 +7441,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody says debugging is for developers. What does that miss?
 
-- Being able to say “the request returned a 404” turns a complaint into a starting point, and saves everybody a round trip.
-- Designers should be able to fix their own bugs.
 - Modern tools make debugging easy enough for anyone.
+- Designers should be able to fix their own bugs.
+- Being able to say “the request returned a 404” turns a complaint into a starting point, and saves everybody a round trip.
 
 <details>
 <summary>After your attempt</summary>
 
-Being able to say “the request returned a 404” turns a complaint into a starting point, and saves everybody a round trip. — A report that names what was requested, what came back and which rule won is a report an engineer can act on immediately. It is also how you notice when an explanation does not fit the evidence.
+Modern tools make debugging easy enough for anyone. — The tools are approachable, and that says nothing about why it is worth doing.
 
 Designers should be able to fix their own bugs. — Sometimes you can, and that is not the argument. The value is in the conversation rather than in the fix.
 
-Modern tools make debugging easy enough for anyone. — The tools are approachable, and that says nothing about why it is worth doing.
+Being able to say “the request returned a 404” turns a complaint into a starting point, and saves everybody a round trip. — A report that names what was requested, what came back and which rule won is a report an engineer can act on immediately. It is also how you notice when an explanation does not fit the evidence.
 
 Improve: Rewrite one of your three causes in step 2, 3 or 4 so it names what an engineer would need: the rule, the message, or the status code. Record the change in step 5.
 
@@ -7501,18 +7501,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 An icon appears on your laptop and not on your phone. Which panel, and what are you looking for?
 
-- The network panel, looking for a 404 — most often a file name whose capitalisation differs.
-- The inspector, to check the image element is present.
 - The console, since a missing image is an error.
+- The inspector, to check the image element is present.
+- The network panel, looking for a 404 — most often a file name whose capitalisation differs.
 
 <details>
 <summary>After your attempt</summary>
 
-The network panel, looking for a 404 — most often a file name whose capitalisation differs. — Your own machine usually ignores capitalisation in file names and a server usually does not. It is the classic works-here-fails-there problem and the status code names it instantly.
+The console, since a missing image is an error. — Sometimes it appears there too. The status code, which is the actual answer, is in the network panel.
 
 The inspector, to check the image element is present. — It will be present and expecting an image. That tells you nothing about what came back.
 
-The console, since a missing image is an error. — Sometimes it appears there too. The status code, which is the actual answer, is in the network panel.
+The network panel, looking for a 404 — most often a file name whose capitalisation differs. — Your own machine usually ignores capitalisation in file names and a server usually does not. It is the classic works-here-fails-there problem and the status code names it instantly.
 
 Improve: Record the status code and the exact requested file name in step 4, rather than describing what is missing. Record the change in step 5.
 
@@ -8203,18 +8203,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Each page passed its checks on its own. Do you need to re-run them after assembly?
 
+- Only the contrast checks, since colours may combine differently.
 - Yes. The shared parts are new, and a shared header commonly creates a second page title or moves something onto a tinted panel.
 - No, provided nothing about the pages themselves changed.
-- Only the contrast checks, since colours may combine differently.
 
 <details>
 <summary>After your attempt</summary>
 
+Only the contrast checks, since colours may combine differently. — Contrast is one of them. The heading outline is the one most reliably broken by a shared header.
+
 Yes. The shared parts are new, and a shared header commonly creates a second page title or moves something onto a tinted panel. — Passing separately is a claim about pages that no longer exist in that form. Assembly creates exactly the conditions nobody tested.
 
 No, provided nothing about the pages themselves changed. — Something did change: each page now has a header, a navigation and a stylesheet it did not have alone.
-
-Only the contrast checks, since colours may combine differently. — Contrast is one of them. The heading outline is the one most reliably broken by a shared header.
 
 Improve: Re-check the heading outline of the assembled prototype in step 2 and record what you find. Note the change in step 5.
 
@@ -8263,18 +8263,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The emulated viewport showed no problems at phone width. Is a real phone still worth ten minutes?
 
+- Only if you have a low-end phone to test on.
 - Yes. The emulator gets the width right and has no thumb, no on-screen keyboard covering the screen and no real network.
 - Not really, since the emulator models the device accurately.
-- Only if you have a low-end phone to test on.
 
 <details>
 <summary>After your attempt</summary>
 
+Only if you have a low-end phone to test on. — A low-end phone adds a performance dimension, and any phone finds the keyboard and thumb problems.
+
 Yes. The emulator gets the width right and has no thumb, no on-screen keyboard covering the screen and no real network. — Sticky bars under the keyboard and targets that pass a measurement and fail a thumb are both found in the first minute on a device, and neither is visible at any width.
 
 Not really, since the emulator models the device accurately. — It models the viewport. Almost everything else about holding a phone is absent from it.
-
-Only if you have a low-end phone to test on. — A low-end phone adds a performance dimension, and any phone finds the keyboard and thumb problems.
 
 Improve: Complete one task on a real phone in step 3 and record what the emulator had not shown. Note the change in step 5.
 
@@ -8958,18 +8958,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody says designers who code are more valuable. Is that the lesson of this module?
 
-- No. Designers who understand the material are more valuable, and writing production code is a different job.
-- Yes, since you can now build what you design.
 - Yes, because it removes the need for handover.
+- Yes, since you can now build what you design.
+- No. Designers who understand the material are more valuable, and writing production code is a different job.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Designers who understand the material are more valuable, and writing production code is a different job. — Reading code, building a prototype and asking precise questions is what makes design work land. Building was the route to that, not the destination.
+Yes, because it removes the need for handover. — The handover is this lesson. Building made it more specific rather than unnecessary.
 
 Yes, since you can now build what you design. — You can build a prototype, which is not the same as production code, and the module never claimed otherwise.
 
-Yes, because it removes the need for handover. — The handover is this lesson. Building made it more specific rather than unnecessary.
+No. Designers who understand the material are more valuable, and writing production code is a different job. — Reading code, building a prototype and asking precise questions is what makes design work land. Building was the route to that, not the destination.
 
 Improve: Check your three learnings in step 5 are about understanding rather than about coding ability. Record the change.
 
@@ -8988,18 +8988,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You ask an engineer “is this possible?” and they say yes. What have you learned?
 
-- Almost nothing. Nearly everything is possible, and the decision you needed was about cost or accuracy.
 - That the feature can go ahead as designed.
 - That there are no technical constraints.
+- Almost nothing. Nearly everything is possible, and the decision you needed was about cost or accuracy.
 
 <details>
 <summary>After your attempt</summary>
 
-Almost nothing. Nearly everything is possible, and the decision you needed was about cost or accuracy. — A yes arrives in four seconds and closes the conversation. What would it cost, and what breaks if we do not, are questions with numbers in the answers.
-
 That the feature can go ahead as designed. — It can be built. Whether it can be built this quarter, accurately, is a different answer you did not ask for.
 
 That there are no technical constraints. — The constraints are exactly what a yes hides, because they live in the cost rather than in the possibility.
+
+Almost nothing. Nearly everything is possible, and the decision you needed was about cost or accuracy. — A yes arrives in four seconds and closes the conversation. What would it cost, and what breaks if we do not, are questions with numbers in the answers.
 
 Improve: Rewrite any question in step 2 that could be answered with yes, so it asks for a cost or a bound. Record the change in step 5.
 
@@ -9019,17 +9019,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your handover includes screenshots of every screen with the messages visible. Is the wording handed over?
 
 - Not reliably. Wording that exists only in a picture gets retyped, and retyped wording drifts.
-- Yes, since the messages are legible in the images.
 - Yes, if the screenshots are high resolution.
+- Yes, since the messages are legible in the images.
 
 <details>
 <summary>After your attempt</summary>
 
 Not reliably. Wording that exists only in a picture gets retyped, and retyped wording drifts. — Every message needs to be in the document as text, where it can be copied exactly. Screenshots show placement; they do not hand over words.
 
-Yes, since the messages are legible in the images. — Legible and copyable are different. Somebody will type what they read, and one word will change.
-
 Yes, if the screenshots are high resolution. — Resolution helps them read it and does nothing about the retyping.
+
+Yes, since the messages are legible in the images. — Legible and copyable are different. Somebody will type what they read, and one word will change.
 
 Improve: Put every message as text in the document in step 1 and say where it lives. Record the change in step 5.
 

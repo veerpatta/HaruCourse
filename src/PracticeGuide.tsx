@@ -6,6 +6,7 @@ import { downloadText, filledCount, resumeStep, worksheetFields, worksheetMarkdo
 import { SavedQuestion } from './LearningProgress';
 import { checkKey } from '../shared/learning';
 import { worksheetCompletion } from './orientation';
+import { displayOrder } from '../shared/choices';
 
 // Shared guided-practice reader: one manageable step at a time, an editable
 // worksheet inside each step, contextual help, and a clear place to resume.
@@ -161,6 +162,8 @@ function ChoiceQuestion({
   const name = useId();
   const [picked, setPicked] = useState<number | null>(null);
   const [shown, setShown] = useState<number | null>(null);
+  // Never the authored order: it put the defensible option first.
+  options = displayOrder(options, question);
   const chosen = shown === null ? null : options[shown];
   return (
     <div className="choice-question">
@@ -285,7 +288,7 @@ export function ActiveChecks({ checks, record, setRecord, readOnly }: { checks: 
       </p>
       {checks.map((c, i) => (
         <article key={c.question} className="active-check">
-          <SavedQuestion id={checkKey(i)} question={c.question} options={c.options} record={record} setRecord={setRecord} readOnly={readOnly}>
+          <SavedQuestion id={checkKey(i)} seed={c.question} question={c.question} options={c.options} record={record} setRecord={setRecord} readOnly={readOnly}>
               <>
                 <p>
                   <strong>Improve your work:</strong> {c.repair}

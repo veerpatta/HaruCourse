@@ -11,6 +11,12 @@ export type WorksheetField = {
   example?: string;
   optional?: boolean;
   requiredWhen?: { field: string; values: string[] };
+  // Set on any answer that could hold material about another person — what a
+  // participant said or did, a session record, a consent note. The reader
+  // shows who can read the answer before it is typed, and the device refuses
+  // to upload contact details found in it (src/privacy.ts). Raw research
+  // belongs in the learner's private notes, never in a synced answer.
+  sensitive?: true;
 };
 export type WorksheetSection = {
   id: string;
@@ -32,7 +38,10 @@ export type Demonstration = {
 // "Try it with help": one small supplied case, answered before any feedback
 // appears. Every option explains why it is right or wrong, so a plausible
 // wrong answer teaches rather than just failing.
-export type Choice = { label: string; correct?: true; feedback: string };
+// `was` lists earlier wordings of this same option. Saved answers store the
+// label the learner chose, so an edited label keeps every earlier wording here
+// and shared/choices.ts maps an old saved answer to the option it meant.
+export type Choice = { label: string; correct?: true; feedback: string; was?: string[] };
 export type SupportedPractice = {
   material: string;
   question: string;
@@ -66,6 +75,16 @@ export type ActiveCheck = {
   options: Choice[];
   repair: string;
   recheck: string;
+};
+// "Use it on a new case": a short unfamiliar scenario, answered later with an
+// explained decision once the lesson's own cues are gone. The anchors describe
+// weak, adequate and strong answers so the learner can compare after writing
+// and a reviewer can judge transfer. It is optional for finishing practice and
+// is the evidence a reviewer needs before recording independent demonstration.
+export type TransferTask = {
+  scenario: string;
+  prompt: string;
+  anchors: { weak: string; adequate: string; strong: string };
 };
 // "Save and continue" for the route the lesson actually recommends, so the
 // in-app worksheet is not contradicted by generic file instructions.
@@ -138,6 +157,12 @@ export type Apprenticeship = {
   // Present only on lessons refined against docs/BEGINNER-LESSON-AUDIT.md.
   checks?: ActiveCheck[];
   saveRoute?: SaveRoute;
+  // Improvement plan, 4 October 2026: every teaching lesson carries one.
+  transfer?: TransferTask;
+  // Supplied, labelled practice material (a case pack, notes, an annotated
+  // tracker) shown beside the work so no answer depends on facts the learner
+  // was never given. Fictional throughout and labelled as such.
+  material?: string[];
 };
 export type Criterion = {
   criterion: string;

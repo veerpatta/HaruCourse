@@ -331,21 +331,21 @@ A supplied narrow-width result from the same made-up screen: at 390 px the class
 
 Which of these is the most serious problem to fix first?
 
-- The price and date falling below the fold, because the reader now cannot make the decision without scrolling.
-- The class name wrapping to two lines, because it looks careless.
 - The heading and body looking similar, because the hierarchy has collapsed.
 - All three equally, since they all appeared at the same width.
+- The price and date falling below the fold, because the reader now cannot make the decision without scrolling.
+- The class name wrapping to two lines, because it looks careless.
 
 <details>
 <summary>After your attempt</summary>
 
-The price and date falling below the fold, because the reader now cannot make the decision without scrolling. — It is the only one that stops the task. A wrapped title is untidy; missing information is a decision the reader cannot make.
-
-The class name wrapping to two lines, because it looks careless. — Wrapping is normal on a phone and often fine. Judged by the reader’s task rather than the look, it costs almost nothing.
-
 The heading and body looking similar, because the hierarchy has collapsed. — A real problem and second in line: it slows reading, while the missing price stops the decision entirely.
 
 All three equally, since they all appeared at the same width. — Appearing together does not make them equally costly. Ranking by what the reader cannot do is what makes the next hour useful.
+
+The price and date falling below the fold, because the reader now cannot make the decision without scrolling. — It is the only one that stops the task. A wrapped title is untidy; missing information is a decision the reader cannot make.
+
+The class name wrapping to two lines, because it looks careless. — Wrapping is normal on a phone and often fine. Judged by the reader’s task rather than the look, it costs almost nothing.
 
 Rank your own breakages the same way: what stops the task first, what slows it, what merely looks wrong.
 
@@ -382,18 +382,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your title is 24 and the section headings are 18. To make the hierarchy clearer, what do you try first?
 
-- More space around the title and a heavier weight, before touching the size.
-- Raise the title to 32 so the difference is obvious.
 - Drop the headings to 15 so the gap is wider.
+- Raise the title to 32 so the difference is obvious.
+- More space around the title and a heavier weight, before touching the size.
 
 <details>
 <summary>After your attempt</summary>
 
-More space around the title and a heavier weight, before touching the size. — Space and weight cost no width, so they survive a narrow screen. Size is the instrument that breaks first when the column gets small.
+Drop the headings to 15 so the gap is wider. — It widens the ratio by weakening the smaller step, which now competes with body text. You have moved the problem rather than solved it.
 
 Raise the title to 32 so the difference is obvious. — On a phone that is where a title starts wrapping and pushing content down. The reader sees a big phrase and less of what they came for.
 
-Drop the headings to 15 so the gap is wider. — It widens the ratio by weakening the smaller step, which now competes with body text. You have moved the problem rather than solved it.
+More space around the title and a heavier weight, before touching the size. — Space and weight cost no width, so they survive a narrow screen. Size is the instrument that breaks first when the column gets small.
 
 Improve: Look at your narrow-width note in step 4. If the title broke there, change your ladder so the title relies on weight and space rather than size, and record it in step 5.
 
@@ -413,17 +413,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You did not test enlarged text because your screen is a paper sketch. What is the honest response?
 
 - Redraw the screen with every step one size larger and see what collides; that is the paper version of the test.
-- Note that enlarged text cannot be tested on paper and move on.
 - Assume it is fine because the type scale is proportional.
+- Note that enlarged text cannot be tested on paper and move on.
 
 <details>
 <summary>After your attempt</summary>
 
 Redraw the screen with every step one size larger and see what collides; that is the paper version of the test. — The test is about what happens when text grows inside a fixed width, and a pencil can show that. It is real evidence about your layout.
 
-Note that enlarged text cannot be tested on paper and move on. — It can, roughly, and roughly is enough to find collisions. Skipping it means shipping a layout that fails for a large number of readers.
-
 Assume it is fine because the type scale is proportional. — Proportional sizes still collide with fixed containers, buttons and images. The failure is in the layout, not the ratio.
+
+Note that enlarged text cannot be tested on paper and move on. — It can, roughly, and roughly is enough to find collisions. Skipping it means shipping a layout that fails for a large number of readers.
 
 Improve: If your enlarged-text box in step 4 is empty, redraw the screen a step larger throughout and write what collides, then note it in step 5.
 
@@ -442,18 +442,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You cut seven sizes to five and two labels now look identical. What should the record say?
 
-- Which distinction you gave up and whether it mattered, so the decision can be revisited.
-- Nothing: fewer sizes is the point of the exercise.
 - That the labels should be told apart by colour instead.
+- Nothing: fewer sizes is the point of the exercise.
+- Which distinction you gave up and whether it mattered, so the decision can be revisited.
 
 <details>
 <summary>After your attempt</summary>
 
-Which distinction you gave up and whether it mattered, so the decision can be revisited. — Reduction is a trade, not a virtue. Writing down what it cost is what separates a system from tidying.
+That the labels should be told apart by colour instead. — That moves the distinction onto colour alone, which the next two lessons are about undoing.
 
 Nothing: fewer sizes is the point of the exercise. — Fewer sizes is the method, not the goal. If the lost distinction carried meaning, you have made the screen worse and no record says so.
 
-That the labels should be told apart by colour instead. — That moves the distinction onto colour alone, which the next two lessons are about undoing.
+Which distinction you gave up and whether it mattered, so the decision can be revisited. — Reduction is a trade, not a virtue. Writing down what it cost is what separates a system from tidying.
 
 Improve: Fill the collapsed box in step 3 with what you lost. If a lost distinction mattered, restore one step and give it a job, then record it in step 5.
 
@@ -848,21 +848,21 @@ A supplied block from the same made-up screen: body text at 16 with line height 
 
 What is the main problem with these values?
 
-- The paragraph gap does not exceed the line gap, so the paragraphs stop reading as separate units.
 - The body line height of 1.9 is too loose on its own.
-- The headings should have more line height than the body, not the same.
+- The paragraph gap does not exceed the line gap, so the paragraphs stop reading as separate units.
 - Nothing: generous spacing is easier to read.
+- The headings should have more line height than the body, not the same.
 
 <details>
 <summary>After your attempt</summary>
 
-The paragraph gap does not exceed the line gap, so the paragraphs stop reading as separate units. — When the space between paragraphs equals the space between lines, the block becomes an undifferentiated column of sentences. That is the most damaging of the three.
-
 The body line height of 1.9 is too loose on its own. — Loose, and the real damage comes from the paragraph gap failing to beat it. Fix the relationship first and 1.9 may be merely airy.
 
-The headings should have more line height than the body, not the same. — The opposite: large text usually needs a tighter ratio, because the gaps grow with the size. Either way it is not the main fault here.
+The paragraph gap does not exceed the line gap, so the paragraphs stop reading as separate units. — When the space between paragraphs equals the space between lines, the block becomes an undifferentiated column of sentences. That is the most damaging of the three.
 
 Nothing: generous spacing is easier to read. — Up to a point. Past it, lines stop cohering into paragraphs and a phone screen holds almost nothing, which costs the reader more than the air gains.
+
+The headings should have more line height than the body, not the same. — The opposite: large text usually needs a tighter ratio, because the gaps grow with the size. Either way it is not the main fault here.
 
 Set your own paragraph gap by comparing it with your line gap, not by choosing a number that looks pleasant.
 
@@ -1011,18 +1011,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You wrote “about 60 to 70 characters” without counting. Why does the count matter?
 
-- Because a column that looks right is routinely 90 or more characters, and only counting reveals it.
-- It does not; the band is a guideline, not a rule.
 - Because clients expect the number to be documented.
+- It does not; the band is a guideline, not a rule.
+- Because a column that looks right is routinely 90 or more characters, and only counting reveals it.
 
 <details>
 <summary>After your attempt</summary>
 
-Because a column that looks right is routinely 90 or more characters, and only counting reveals it. — The eye adapts to whatever is in front of it. The number is the cheapest check available and it takes a minute.
+Because clients expect the number to be documented. — Documentation is not the reason. The reason is that your impression of line length is unreliable.
 
 It does not; the band is a guideline, not a rule. — The band is a guideline and the count is what tells you where you are. Without it you cannot know whether you are inside or far outside.
 
-Because clients expect the number to be documented. — Documentation is not the reason. The reason is that your impression of line length is unreliable.
+Because a column that looks right is routinely 90 or more characters, and only counting reveals it. — The eye adapts to whatever is in front of it. The number is the cheapest check available and it takes a minute.
 
 Improve: If your measure box in step 2 holds an estimate, count three full lines now and write the average, then record what changed in step 5.
 
@@ -1041,16 +1041,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You tested with two short sentences of placeholder text and everything held. What does that establish?
 
-- Very little: the layout has not met the longest title, the empty state or a wrapping price.
 - That the typography settings are sound and can be applied.
+- Very little: the layout has not met the longest title, the empty state or a wrapping price.
 - That the design works for average content, which is what most readers see.
 
 <details>
 <summary>After your attempt</summary>
 
-Very little: the layout has not met the longest title, the empty state or a wrapping price. — Placeholder text is uniformly polite, and every real failure comes from content that is longer, shorter or emptier than expected.
-
 That the typography settings are sound and can be applied. — The settings survived the easiest possible content. That is the least informative test available.
+
+Very little: the layout has not met the longest title, the empty state or a wrapping price. — Placeholder text is uniformly polite, and every real failure comes from content that is longer, shorter or emptier than expected.
 
 That the design works for average content, which is what most readers see. — Averages do not appear on screens; particular classes with particular names do. The awkward ones are where readers meet the failure.
 
@@ -1519,21 +1519,21 @@ A supplied pair from the same made-up screen. Version A distinguishes a cancelle
 
 Which version survives the greyscale test, and why?
 
-- B, because the distinction is carried by a word and a mark, not by hue alone.
-- A, provided the red passes contrast against the background.
 - Both, since a reader can click through to find out.
+- A, provided the red passes contrast against the background.
 - Neither: only an icon is a reliable second channel.
+- B, because the distinction is carried by a word and a mark, not by hue alone.
 
 <details>
 <summary>After your attempt</summary>
 
-B, because the distinction is carried by a word and a mark, not by hue alone. — Remove the colour and B still reads correctly. A becomes two identically grey titles, and the information is simply gone.
+Both, since a reader can click through to find out. — That makes the reader do extra work to recover information the screen already had, and only if they suspect something is different.
 
 A, provided the red passes contrast against the background. — Passing contrast means the red text is readable. It says nothing about whether a reader can tell it apart from the dark grey title beside it.
 
-Both, since a reader can click through to find out. — That makes the reader do extra work to recover information the screen already had, and only if they suspect something is different.
-
 Neither: only an icon is a reliable second channel. — A word is often the most reliable channel of all, and it needs no legend. Icons help, and they are not the only answer.
+
+B, because the distinction is carried by a word and a mark, not by hue alone. — Remove the colour and B still reads correctly. A becomes two identically grey titles, and the information is simply gone.
 
 Apply the same test to each of your own failures: what would still be true with the colour removed?
 
@@ -1645,17 +1645,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Two statuses need to be distinguishable. Which difference is most reliable?
 
 - A clear difference in lightness, plus a word.
-- Two hues far apart on the colour wheel, such as red and green.
 - The same hue at different saturation.
+- Two hues far apart on the colour wheel, such as red and green.
 
 <details>
 <summary>After your attempt</summary>
 
 A clear difference in lightness, plus a word. — Lightness survives most colour vision differences and survives a black and white print. The word survives everything.
 
-Two hues far apart on the colour wheel, such as red and green. — Far apart on the wheel is not far apart in perception for everyone. Red and green is the classic pair that collapses.
-
 The same hue at different saturation. — Saturation differences are the first to disappear on a poor screen, in sunlight, or in print.
+
+Two hues far apart on the colour wheel, such as red and green. — Far apart on the wheel is not far apart in perception for everyone. Red and green is the classic pair that collapses.
 
 Improve: Look at your status roles in step 1. If two are distinguished by hue at similar lightness, change one, and note it in step 5.
 
@@ -1674,18 +1674,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You used green for available and red for full. What should your record say about that choice?
 
-- That it is a convention your readers may or may not share, stated as an assumption rather than a fact.
 - Nothing: red and green are universally understood.
 - That the colours were chosen to match the brand.
+- That it is a convention your readers may or may not share, stated as an assumption rather than a fact.
 
 <details>
 <summary>After your attempt</summary>
 
-That it is a convention your readers may or may not share, stated as an assumption rather than a fact. — These meanings are learned and vary. Writing it down as an assumption is what lets someone check it with real readers later.
-
 Nothing: red and green are universally understood. — They are widespread in some contexts and neither universal nor stable across cultures, and they are the pair most likely to be indistinguishable.
 
 That the colours were chosen to match the brand. — That records where they came from and not what they are asking the reader to know.
+
+That it is a convention your readers may or may not share, stated as an assumption rather than a fact. — These meanings are learned and vary. Writing it down as an assumption is what lets someone check it with real readers later.
 
 Improve: Fill the convention box in step 4 with the specific meaning you are relying on, then record it in step 5.
 
@@ -2117,17 +2117,17 @@ A supplied failing row from the same made-up screen: a secondary link, #7a8b80 o
 
 Which repair is soundest?
 
-- Darken the link colour until it passes, keeping it recognisably the same hue.
 - Enlarge the link to 19 semibold so the large-text threshold applies.
+- Darken the link colour until it passes, keeping it recognisably the same hue.
 - Change the background of the whole screen to pure white.
 - Make the link black, which certainly passes.
 
 <details>
 <summary>After your attempt</summary>
 
-Darken the link colour until it passes, keeping it recognisably the same hue. — It fixes the failure at its source and keeps the palette’s intent: the link still reads as the secondary colour, just darker.
-
 Enlarge the link to 19 semibold so the large-text threshold applies. — Legitimate in principle and wrong here: a secondary link enlarged past the body text now outranks the content it sits beside.
+
+Darken the link colour until it passes, keeping it recognisably the same hue. — It fixes the failure at its source and keeps the palette’s intent: the link still reads as the secondary colour, just darker.
 
 Change the background of the whole screen to pure white. — It buys a fraction of a ratio point and changes every other element on the screen to fix one link.
 
@@ -2219,18 +2219,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The grey placeholder text inside your form field measures 2.6. Is that a failure?
 
-- Yes. It is real text the reader must read to know what to type, and it is not an exempt case.
-- No, because it is only a hint and disappears when typing starts.
 - No, because placeholder text counts as inactive.
+- No, because it is only a hint and disappears when typing starts.
+- Yes. It is real text the reader must read to know what to type, and it is not an exempt case.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes. It is real text the reader must read to know what to type, and it is not an exempt case. — Placeholder text is often the only instruction present, and it is usually the faintest thing on the screen. The sturdier fix is a visible label.
+No, because placeholder text counts as inactive. — The inactive exception is about genuinely disabled controls, not about hints in an active field.
 
 No, because it is only a hint and disappears when typing starts. — Disappearing when typing starts is a second problem, not an exemption. Before it disappears it is the instruction.
 
-No, because placeholder text counts as inactive. — The inactive exception is about genuinely disabled controls, not about hints in an active field.
+Yes. It is real text the reader must read to know what to type, and it is not an exempt case. — Placeholder text is often the only instruction present, and it is usually the faintest thing on the screen. The sturdier fix is a visible label.
 
 Improve: Add your placeholder text as a row in step 2 and measure it. If it fails, repair it and record the change in step 5.
 
@@ -2279,18 +2279,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Every element now passes. What may you claim?
 
-- That these opaque pairs meet their stated thresholds, which is a floor and not proof the screen is readable.
 - That the screen is accessible.
 - That readers with low vision can use the screen comfortably.
+- That these opaque pairs meet their stated thresholds, which is a floor and not proof the screen is readable.
 
 <details>
 <summary>After your attempt</summary>
 
-That these opaque pairs meet their stated thresholds, which is a floor and not proof the screen is readable. — The numbers are one necessary condition. Sunlight, small sizes, transparency, images behind text and everything about layout are untouched by them.
-
 That the screen is accessible. — Accessibility covers structure, keyboard use, announcement, motion, language and much else. Contrast is one measurable slice.
 
 That readers with low vision can use the screen comfortably. — The thresholds are a minimum, set with a broad population in mind. Comfort for a particular reader is a different question and needs a person.
+
+That these opaque pairs meet their stated thresholds, which is a floor and not proof the screen is readable. — The numbers are one necessary condition. Sunlight, small sizes, transparency, images behind text and everything about layout are untouched by them.
 
 Improve: Write the bounding sentence in step 5 if it is missing, and remove any claim about accessibility from your notes.
 
@@ -2679,21 +2679,21 @@ A supplied problem from the same made-up screen: a class title, its date, its pr
 
 What is the cheapest tool that fixes it?
 
-- Space: tighten the gaps between title, date and price, and open a clearly larger gap before the button.
-- A shared background behind the title, date and price.
-- A border around the whole class block.
 - Make the button a different colour so it stands out.
+- A shared background behind the title, date and price.
+- Space: tighten the gaps between title, date and price, and open a clearly larger gap before the button.
+- A border around the whole class block.
 
 <details>
 <summary>After your attempt</summary>
 
-Space: tighten the gaps between title, date and price, and open a clearly larger gap before the button. — Proximity does the whole job. The three facts become one group and the button separates itself as something different, with nothing added to the screen.
+Make the button a different colour so it stands out. — Colour distinguishes it and leaves the grouping unchanged, so the button still reads as a member of the same list.
 
 A shared background behind the title, date and price. — It would work and it adds a surface, a colour decision and padding for something space alone can solve.
 
-A border around the whole class block. — The most expensive option: a new line on the screen, more vertical space on a phone, and the same fix space would have produced.
+Space: tighten the gaps between title, date and price, and open a clearly larger gap before the button. — Proximity does the whole job. The three facts become one group and the button separates itself as something different, with nothing added to the screen.
 
-Make the button a different colour so it stands out. — Colour distinguishes it and leaves the grouping unchanged, so the button still reads as a member of the same list.
+A border around the whole class block. — The most expensive option: a new line on the screen, more vertical space on a phone, and the same fix space would have produced.
 
 Fix your own mismatches in the same order, and only record a border where you can say what space failed to do.
 
@@ -2833,16 +2833,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why circle the perceived groups before changing anything?
 
-- Because the screen may already be grouping things differently from how you intended, and that mismatch is the actual problem.
 - To document the before state for a portfolio.
+- Because the screen may already be grouping things differently from how you intended, and that mismatch is the actual problem.
 - It is not necessary if you designed the screen yourself.
 
 <details>
 <summary>After your attempt</summary>
 
-Because the screen may already be grouping things differently from how you intended, and that mismatch is the actual problem. — Without the diagnosis you are decorating. With it, most fixes turn out to be a few points of space in the right place.
-
 To document the before state for a portfolio. — Useful later and not the reason. The reason is that you cannot fix a grouping you have not read.
+
+Because the screen may already be grouping things differently from how you intended, and that mismatch is the actual problem. — Without the diagnosis you are decorating. With it, most fixes turn out to be a few points of space in the right place.
 
 It is not necessary if you designed the screen yourself. — Designing it is exactly why you cannot see it. You know what belongs together, so your eye supplies the grouping the reader will not get.
 
@@ -2863,18 +2863,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You could not find a counterexample where a principle misleads. What does that suggest?
 
-- Look harder at similarity: things that look alike but are unrelated are the most common trap.
 - That your screen is well designed and the principles hold.
 - That counterexamples only occur in complex interfaces.
+- Look harder at similarity: things that look alike but are unrelated are the most common trap.
 
 <details>
 <summary>After your attempt</summary>
 
-Look harder at similarity: things that look alike but are unrelated are the most common trap. — Two elements sharing a size or a colour read as a set even when one is an advertisement and the other is content. It is easy to miss because you know which is which.
-
 That your screen is well designed and the principles hold. — The principles are descriptions of perception, not rules that hold. A screen with no counterexample usually has one you have not spotted.
 
 That counterexamples only occur in complex interfaces. — They occur in a list of three items. Any repeated visual treatment can capture something that does not belong.
+
+Look harder at similarity: things that look alike but are unrelated are the most common trap. — Two elements sharing a size or a colour read as a set even when one is an advertisement and the other is content. It is easy to miss because you know which is which.
 
 Improve: Look for two elements that share a treatment but not a purpose, and write that up as your counterexample in step 4, then note it in step 5.
 
@@ -3342,21 +3342,21 @@ A supplied measurement from the same made-up screen: inside the class block, tit
 
 What does that produce, and what is the fix?
 
+- Tighten the inside gaps to 4 so the blocks are denser.
+- A grouping problem best fixed with a divider line between classes.
 - An undifferentiated list where the price could belong to either class; open the between-block gap to a larger scale value.
 - A clean, consistent rhythm; nothing needs fixing.
-- A grouping problem best fixed with a divider line between classes.
-- Tighten the inside gaps to 4 so the blocks are denser.
 
 <details>
 <summary>After your attempt</summary>
 
-An undifferentiated list where the price could belong to either class; open the between-block gap to a larger scale value. — Equal gaps give the eye nothing to group with. Widening the outside gap is the whole repair, and it costs one scale value.
-
-A clean, consistent rhythm; nothing needs fixing. — It is consistent and unreadable. Consistency means the same values used for the same purposes, deliberately unequal where the purposes differ.
+Tighten the inside gaps to 4 so the blocks are denser. — This also works, by widening the ratio from the other side. Check it still reads comfortably at enlarged text before choosing it.
 
 A grouping problem best fixed with a divider line between classes. — A line would work and buys with a new element what one larger gap gives free.
 
-Tighten the inside gaps to 4 so the blocks are denser. — This also works, by widening the ratio from the other side. Check it still reads comfortably at enlarged text before choosing it.
+An undifferentiated list where the price could belong to either class; open the between-block gap to a larger scale value. — Equal gaps give the eye nothing to group with. Widening the outside gap is the whole repair, and it costs one scale value.
+
+A clean, consistent rhythm; nothing needs fixing. — It is consistent and unreadable. Consistency means the same values used for the same purposes, deliberately unequal where the purposes differ.
 
 Measure your own groups and make sure the outside gap wins in every one.
 
@@ -3422,18 +3422,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Consistent spacing means the same gap everywhere. True?
 
+- Yes for vertical gaps, no for horizontal ones.
 - No. It means a short list of values used for the same purposes, deliberately unequal where purposes differ.
 - Yes: one gap value is the simplest system to maintain.
-- Yes for vertical gaps, no for horizontal ones.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes for vertical gaps, no for horizontal ones. — The principle is the same in both directions: gaps carry meaning about what belongs together.
+
 No. It means a short list of values used for the same purposes, deliberately unequal where purposes differ. — Uniform gaps destroy grouping and produce exactly the flat screen the previous lesson repaired.
 
 Yes: one gap value is the simplest system to maintain. — It is simple and it removes your only free grouping tool. Simplicity here costs readability.
-
-Yes for vertical gaps, no for horizontal ones. — The principle is the same in both directions: gaps carry meaning about what belongs together.
 
 Improve: Check your proof table in step 4. If any group has equal inside and outside gaps, change one and record it in step 5.
 
@@ -3452,16 +3452,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You mapped every gap to the scale, and one heading now sits slightly too close to its section. What do you do?
 
-- Move it to the next scale value up and record why, rather than inventing a value between them.
 - Add a new value to the scale for this case.
+- Move it to the next scale value up and record why, rather than inventing a value between them.
 - Leave it: the scale matters more than one heading.
 
 <details>
 <summary>After your attempt</summary>
 
-Move it to the next scale value up and record why, rather than inventing a value between them. — Using the next value keeps the scale intact. Inventing 14 because it feels right is how twelve accidental gaps appeared in the first place.
-
 Add a new value to the scale for this case. — Sometimes correct, and only if the new value has a general use. Added for one element, it is not a scale any more.
+
+Move it to the next scale value up and record why, rather than inventing a value between them. — Using the next value keeps the scale intact. Inventing 14 because it feels right is how twelve accidental gaps appeared in the first place.
 
 Leave it: the scale matters more than one heading. — The scale exists to serve the reading. If a gap now groups the wrong things, fix it and say so.
 
@@ -3482,18 +3482,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why measure the existing gaps before defining the scale?
 
-- Because the count shows how much of the current spacing was never decided, which is what the scale is for.
-- To produce a before image for the portfolio.
 - It is not needed if you already have a type scale.
+- To produce a before image for the portfolio.
+- Because the count shows how much of the current spacing was never decided, which is what the scale is for.
 
 <details>
 <summary>After your attempt</summary>
 
-Because the count shows how much of the current spacing was never decided, which is what the scale is for. — People routinely expect four or five values and find a dozen. The audit is what makes the problem visible and the after comparable.
+It is not needed if you already have a type scale. — A type scale governs text sizes; the gaps between things are a separate set of accidents.
 
 To produce a before image for the portfolio. — A side benefit. The reason is that you cannot fix spacing you have not looked at.
 
-It is not needed if you already have a type scale. — A type scale governs text sizes; the gaps between things are a separate set of accidents.
+Because the count shows how much of the current spacing was never decided, which is what the scale is for. — People routinely expect four or five values and find a dozen. The audit is what makes the problem visible and the after comparable.
 
 Improve: If your audit in step 1 is an estimate, measure the gaps with a ruler now and record the real count, then note the change in step 5.
 
@@ -4030,17 +4030,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You designed for 390, 768 and 1280. What has not been tested?
 
 - Everything between them, which is where most readers actually are.
-- Nothing important: those three cover phone, tablet and desktop.
 - Only very large screens above 1280.
+- Nothing important: those three cover phone, tablet and desktop.
 
 <details>
 <summary>After your attempt</summary>
 
 Everything between them, which is where most readers actually are. — Widths are continuous. Three samples guarantee the ranges between are unexamined, and that is where a title collides or a column collapses.
 
-Nothing important: those three cover phone, tablet and desktop. — Those labels describe devices, not the widths a browser window can take. A resized desktop window sits nowhere near any of them.
-
 Only very large screens above 1280. — Those matter too, and the bigger gap is the untested range between your three chosen numbers.
+
+Nothing important: those three cover phone, tablet and desktop. — Those labels describe devices, not the widths a browser window can take. A resized desktop window sits nowhere near any of them.
 
 Improve: Check your change points in step 2. If any width came from a device list rather than a content failure, narrow the layout until you find the real one, and record it in step 5.
 
@@ -4059,18 +4059,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 At the narrow width the Reserve button appears above the price. Why does that matter?
 
+- It matters only for aesthetics.
 - The reader meets the action before the information the action depends on, and the same order governs keyboard and screen-reader use.
 - It does not matter, because the price is only a scroll away.
-- It matters only for aesthetics.
 
 <details>
 <summary>After your attempt</summary>
 
+It matters only for aesthetics. — It is a sequence problem, not a visual one; it changes what the reader knows when they act.
+
 The reader meets the action before the information the action depends on, and the same order governs keyboard and screen-reader use. — Order on a narrow screen is the whole experience, and it is also the sequence assistive technology follows.
 
 It does not matter, because the price is only a scroll away. — A scroll away is out of sight at the moment of deciding, and some readers will act without it.
-
-It matters only for aesthetics. — It is a sequence problem, not a visual one; it changes what the reader knows when they act.
 
 Improve: Renumber the narrow reading order in step 3 so everything needed to decide precedes the action, then record the change in step 5.
 
@@ -4089,18 +4089,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your change points came from watching the content fail. Why is that better than round numbers?
 
+- It is not better; standard values are easier to maintain.
 - Because they are tied to the strings and structure you actually have, so they hold when the layout is reused.
 - Because untidy numbers look more rigorous.
-- It is not better; standard values are easier to maintain.
 
 <details>
 <summary>After your attempt</summary>
 
+It is not better; standard values are easier to maintain. — Easier to type and unrelated to whether your content reads. A standard number that fits nothing is maintenance without benefit.
+
 Because they are tied to the strings and structure you actually have, so they hold when the layout is reused. — A change point at 700 because the longest title collides is a fact about your content. A change point at 768 is a fact about a device that may not exist for your reader.
 
 Because untidy numbers look more rigorous. — Appearance is irrelevant. The value is that the number has a reason you can restate.
-
-It is not better; standard values are easier to maintain. — Easier to type and unrelated to whether your content reads. A standard number that fits nothing is maintenance without benefit.
 
 Improve: Add the content reason to any change point in step 2 that does not have one, then record it in step 5.
 
@@ -4722,18 +4722,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You named a token “light-grey”. What goes wrong later?
 
-- When contrast forces you to darken it, the name no longer describes it and every reference becomes misleading.
 - Nothing, as long as you update the value in one place.
 - It only matters if other people use the sheet.
+- When contrast forces you to darken it, the name no longer describes it and every reference becomes misleading.
 
 <details>
 <summary>After your attempt</summary>
 
-When contrast forces you to darken it, the name no longer describes it and every reference becomes misleading. — Names outlive values. A role name survives the change; an appearance name has to be renamed everywhere or quietly lie.
-
 Nothing, as long as you update the value in one place. — The value updates fine. The name is what other people and future notes read, and it now says the wrong thing.
 
 It only matters if other people use the sheet. — You are the main reader, weeks later, and you will trust the name rather than re-checking the value.
+
+When contrast forces you to darken it, the name no longer describes it and every reference becomes misleading. — Names outlive values. A role name survives the change; an appearance name has to be renamed everywhere or quietly lie.
 
 Improve: Rename any appearance-based token in step 1 to a role name, then record it in step 5.
 
@@ -4752,18 +4752,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The build-it test produced no gaps at all. What is the most likely explanation?
 
-- You rebuilt it from memory of the original rather than from the sheet alone.
 - The sheet is complete and no repair is needed.
 - The component chosen was too complex.
+- You rebuilt it from memory of the original rather than from the sheet alone.
 
 <details>
 <summary>After your attempt</summary>
 
-You rebuilt it from memory of the original rather than from the sheet alone. — A first sheet essentially always misses something: internal padding, a focus treatment, a disabled colour. No gaps usually means the screen was still in view.
-
 The sheet is complete and no repair is needed. — Possible and rare. Before accepting it, check whether the sheet specifies the space inside a control, not only around it.
 
 The component chosen was too complex. — A complex component would expose more gaps, not fewer.
+
+You rebuilt it from memory of the original rather than from the sheet alone. — A first sheet essentially always misses something: internal padding, a focus treatment, a disabled colour. No gaps usually means the screen was still in view.
 
 Improve: Redo the test with the original out of sight, or hand the sheet to someone else, and record every invented decision in step 4 and the change in step 5.
 
@@ -5209,20 +5209,20 @@ A supplied focus treatment from the same made-up project: on focus the button’
 What is wrong with that, and what is the smallest fix?
 
 - Focus and hover are indistinguishable, so a keyboard user cannot tell where they are; give focus its own visible outline offset from the control.
-- Nothing: a lightened background is visible, which is what focus needs.
 - Remove the hover effect so the lightening only means focus.
 - Rely on the browser default focus ring.
+- Nothing: a lightened background is visible, which is what focus needs.
 
 <details>
 <summary>After your attempt</summary>
 
 Focus and hover are indistinguishable, so a keyboard user cannot tell where they are; give focus its own visible outline offset from the control. — Focus needs to be unmistakable and must not depend on a mouse being present. An outline sitting just outside the control works on every surface.
 
-Nothing: a lightened background is visible, which is what focus needs. — Visible is not enough if it means two different things. A mouse user hovering and a keyboard user focusing see the same thing.
-
 Remove the hover effect so the lightening only means focus. — That solves the ambiguity by removing useful mouse feedback, and the focus signal remains a subtle background change.
 
 Rely on the browser default focus ring. — A reasonable starting point and it often fails against particular surfaces, which is why the lesson asks you to check it against each one.
+
+Nothing: a lightened background is visible, which is what focus needs. — Visible is not enough if it means two different things. A mouse user hovering and a keyboard user focusing see the same thing.
 
 Give your own focus state a token of its own and check it against every surface the component sits on.
 
@@ -5359,17 +5359,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your focus state looks like a slightly lighter version of hover. Why is that a problem?
 
 - A keyboard user cannot reliably tell where they are, and focus must not depend on a pointer being present.
-- It is fine, since both mean the control is active.
 - It only matters if the component is a form field.
+- It is fine, since both mean the control is active.
 
 <details>
 <summary>After your attempt</summary>
 
 A keyboard user cannot reliably tell where they are, and focus must not depend on a pointer being present. — Focus is the keyboard user’s cursor. If it is a faint variant of a mouse effect, they lose their place on the screen.
 
-It is fine, since both mean the control is active. — They mean different things: hover is where the pointer is, focus is where the keyboard is. Conflating them costs the keyboard user their position.
-
 It only matters if the component is a form field. — Every focusable control needs a visible focus state, including buttons and links.
+
+It is fine, since both mean the control is active. — They mean different things: hover is where the pointer is, focus is where the keyboard is. Conflating them costs the keyboard user their position.
 
 Improve: Give focus its own token and appearance in step 3 and check it against every surface, then record the change in step 5.
 
@@ -5388,18 +5388,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 While building a state you needed a value the sheet does not have. What do you do?
 
+- Use the nearest existing token even if it is wrong.
 - Record it as a missing token and add it to the sheet, rather than inventing a value in place.
 - Pick a sensible value now and add it to the sheet later if it is reused.
-- Use the nearest existing token even if it is wrong.
 
 <details>
 <summary>After your attempt</summary>
 
+Use the nearest existing token even if it is wrong. — That hides a real gap behind a value that does not fit, and the mismatch will be blamed on the component.
+
 Record it as a missing token and add it to the sheet, rather than inventing a value in place. — The invented value is invisible drift: it works here and diverges everywhere else. Recording it is how the sheet becomes complete.
 
 Pick a sensible value now and add it to the sheet later if it is reused. — “Later if reused” is how the twelve accidental gaps in the spacing lesson happened.
-
-Use the nearest existing token even if it is wrong. — That hides a real gap behind a value that does not fit, and the mismatch will be blamed on the component.
 
 Improve: List every value you invented in the missing-tokens box in step 2, add them to the sheet, and note it in step 5.
 
@@ -5798,21 +5798,21 @@ Three supplied sentences from the same made-up write-up. A: “Every text elemen
 
 Which sentence cannot be supported by anything in this module, and why?
 
-- C, because ease of use is a claim about people and nobody has used either version.
-- A, because contrast measurements are only estimates.
-- B, because character counts vary by content.
 - None: all three follow from careful work.
+- B, because character counts vary by content.
+- A, because contrast measurements are only estimates.
+- C, because ease of use is a claim about people and nobody has used either version.
 
 <details>
 <summary>After your attempt</summary>
 
-C, because ease of use is a claim about people and nobody has used either version. — A and B report measurements you took. C reports an outcome that would need a person attempting a task, which this module never did.
-
-A, because contrast measurements are only estimates. — They are calculated from stated colour values, so within their scope they are exact. What they do not establish is readability in every condition.
+None: all three follow from careful work. — Careful work supports A and B. C requires evidence of a different kind entirely, and this module produced none of it.
 
 B, because character counts vary by content. — The count is of your real content, over three lines, and it is reported as such. It is a measurement with a stated method.
 
-None: all three follow from careful work. — Careful work supports A and B. C requires evidence of a different kind entirely, and this module produced none of it.
+A, because contrast measurements are only estimates. — They are calculated from stated colour values, so within their scope they are exact. What they do not establish is readability in every condition.
+
+C, because ease of use is a claim about people and nobody has used either version. — A and B report measurements you took. C reports an outcome that would need a person attempting a task, which this module never did.
 
 Sort your own sentences the same way: what you measured, and what would need a person.
 
@@ -5907,18 +5907,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your rebuilt screen is measurably more legible. May you say it is easier to use?
 
-- No: legibility was measured, ease of use was not, and nobody has attempted a task on either version.
 - Yes, since legibility is a component of usability.
 - Yes, if the heuristics also improved.
+- No: legibility was measured, ease of use was not, and nobody has attempted a task on either version.
 
 <details>
 <summary>After your attempt</summary>
 
-No: legibility was measured, ease of use was not, and nobody has attempted a task on either version. — The measurements are real and they are about the surface. What a person can accomplish is a different kind of evidence, and this module collected none of it.
-
 Yes, since legibility is a component of usability. — It is a necessary condition and not the claim. A perfectly legible screen can still hide the price or omit a step.
 
 Yes, if the heuristics also improved. — Heuristics identify risks by inspection. Improving against them is a reason to expect a better result, not a report of one.
+
+No: legibility was measured, ease of use was not, and nobody has attempted a task on either version. — The measurements are real and they are about the surface. What a person can accomplish is a different kind of evidence, and this module collected none of it.
 
 Improve: Rewrite any outcome claim in step 3 as a measurement plus what would still need to be observed, then record it in step 5.
 
@@ -5937,16 +5937,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The heuristic review found a problem the rebuild did not fix. What should you do with it?
 
-- Record it as an unresolved problem the system could not address, so it is visible rather than lost.
 - Fix it now, since the module is about improving the screen.
+- Record it as an unresolved problem the system could not address, so it is visible rather than lost.
 - Leave it out: the module was about visual foundations.
 
 <details>
 <summary>After your attempt</summary>
 
-Record it as an unresolved problem the system could not address, so it is visible rather than lost. — A design system fixes surfaces. Missing feedback, missing steps and unanswered questions about the reader survive it, and naming them is the useful output.
-
 Fix it now, since the module is about improving the screen. — Sometimes right, and a behaviour problem usually needs evidence about people rather than another token. Recording it points at the next work.
+
+Record it as an unresolved problem the system could not address, so it is visible rather than lost. — A design system fixes surfaces. Missing feedback, missing steps and unanswered questions about the reader survive it, and naming them is the useful output.
 
 Leave it out: the module was about visual foundations. — The critique step exists precisely to catch what the visual work could not reach. Omitting it makes the module look more successful than it was.
 
@@ -5967,18 +5967,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You could not rebuild part of the screen from the sheet alone. What does that mean?
 
+- The component work from lesson 9 was incomplete.
 - The sheet has a gap; record it and add the specification rather than treating it as a failure of the rebuild.
 - The screen was too complex for a token system.
-- The component work from lesson 9 was incomplete.
 
 <details>
 <summary>After your attempt</summary>
 
+The component work from lesson 9 was incomplete. — Possibly, and either way the answer is the same: name the missing specification and add it.
+
 The sheet has a gap; record it and add the specification rather than treating it as a failure of the rebuild. — The rebuild is the test of the sheet, so the gaps are its output. This is the same build-it test from lesson 8, run at full size.
 
 The screen was too complex for a token system. — Complexity shows where the sheet is thin. A system that only covers simple screens is not finished.
-
-The component work from lesson 9 was incomplete. — Possibly, and either way the answer is the same: name the missing specification and add it.
 
 Improve: List every place the sheet ran out in step 1 and add the missing specifications to the token sheet, then record it in step 5.
 

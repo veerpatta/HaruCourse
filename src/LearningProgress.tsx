@@ -5,22 +5,32 @@ import type { Choice, Lesson } from './teaching';
 import { publishedLessons } from './lessons';
 import type { CourseRecord } from './useCourseRecords';
 import { worksheetCompletion } from './orientation';
+import { displayOrder, matchChoice } from '../shared/choices';
 export type SetPractice = (v: SetStateAction<RecordData>) => void;
 
-export function SavedQuestion({id, question, options, record, setRecord, readOnly = false, children}: {
-  id: string; question: string; options: Choice[]; record: RecordData; setRecord: SetPractice; readOnly?: boolean; children?: React.ReactNode;
+export function SavedQuestion({id, seed, question, options, record, setRecord, readOnly = false, shuffle = true, children}: {
+  id: string; seed?: string; question: string; options: Choice[]; record: RecordData; setRecord: SetPractice; readOnly?: boolean; shuffle?: boolean; children?: React.ReactNode;
 }) {
   const name = useId();
   const answer = record.learning?.answers?.[id];
-  const chosen = options.find(o => o.label === answer?.value);
+  // An answer saved under an earlier wording still selects its option.
+  const chosen = matchChoice(options, answer?.value);
+  const defensible = options.find(o => o.correct);
+  // Sorter labels keep one fixed order so every line uses the same scale.
+  const shown = shuffle ? displayOrder(options, seed || id) : options;
   const update = (value: string, shown: boolean) => setRecord(r => ({...r, learning:{...r.learning,
     answers:{...r.learning?.answers,[id]:{value,shown}}}}));
   return <div className="saved-question">
-    <fieldset disabled={readOnly}><legend>{question}</legend>{options.map(o => <label className="choice-option" key={o.label}>
-      <input type="radio" name={name} checked={answer?.value === o.label} onChange={() => update(o.label,false)}/><span>{o.label}</span>
+    <fieldset disabled={readOnly}><legend>{question}</legend>{shown.map(o => <label className="choice-option" key={o.label}>
+      <input type="radio" name={name} checked={chosen === o} onChange={() => update(o.label,false)}/><span>{o.label}</span>
     </label>)}</fieldset>
     {!readOnly && <button className="secondary" disabled={!chosen} onClick={() => update(chosen!.label,true)}>Show me why</button>}
-    {answer?.shown && chosen && <div className="choice-feedback" role="status"><p>{chosen.feedback}</p>{children}</div>}
+    {answer?.shown && chosen && <div className={`choice-feedback${chosen.correct ? ' is-right' : ''}`} role="status">
+      {defensible && <p className="choice-verdict"><strong>{chosen.correct ? 'This answer holds up.' : 'This answer does not hold up yet.'}</strong></p>}
+      <p>{chosen.feedback}</p>
+      {defensible && !chosen.correct && <p className="choice-defensible"><strong>The answer that holds up:</strong> {defensible.label} {defensible.feedback}</p>}
+      {children}
+    </div>}
     <small>Saved so you can return. Practice only; no score.</small>
   </div>;
 }

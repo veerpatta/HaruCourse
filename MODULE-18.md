@@ -504,18 +504,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You can only reach one person. Is the module unavailable to you?
 
+- No, you can extrapolate from one person carefully.
 - No. One participant with a narrower scope, or a supplied brief worked through and labelled practice, are both complete routes.
 - Effectively yes, since the project needs three.
-- No, you can extrapolate from one person carefully.
 
 <details>
 <summary>After your attempt</summary>
 
+No, you can extrapolate from one person carefully. — You can report what one person did. Extrapolating is the thing this course refuses throughout.
+
 No. One participant with a narrower scope, or a supplied brief worked through and labelled practice, are both complete routes. — What is not available is inventing the other two. A bounded project honestly labelled is real work; a three-participant study with two imagined participants is not.
 
 Effectively yes, since the project needs three. — Three is the preferred route. Treating its absence as disqualification is what makes people invent the difference.
-
-No, you can extrapolate from one person carefully. — You can report what one person did. Extrapolating is the thing this course refuses throughout.
 
 Improve: Write your alternate route in step 2, naming what it can and cannot establish. Record the change in step 5.
 
@@ -535,17 +535,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your problem statement says the shop needs a notification system. What is wrong with it?
 
 - It names a thing to build, so the question is closed before anybody has asked it.
-- Nothing, if that is what the person asked for.
 - It is too specific for this stage.
+- Nothing, if that is what the person asked for.
 
 <details>
 <summary>After your attempt</summary>
 
 It names a thing to build, so the question is closed before anybody has asked it. — The problem in his words was that he cannot tell customers when a repair will be ready, so he is interrupted by calls all day. Several things would address that, and notifications is one guess.
 
-Nothing, if that is what the person asked for. — It is frequently what people ask for, because they are describing the fix they can imagine.
-
 It is too specific for this stage. — Specificity is good. Naming a solution is the problem.
+
+Nothing, if that is what the person asked for. — It is frequently what people ask for, because they are describing the fix they can imagine.
 
 Improve: Rewrite the problem in their words in step 3, with no thing to build in it. Record the change in step 5.
 
@@ -1246,18 +1246,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You know how to do this now. Can the second plan be less formal?
 
+- Yes for consent, no for the questions.
 - The formality is what protects the work when it is inconvenient, which is exactly when it gets dropped.
 - Yes, since you have internalised the procedure.
-- Yes for consent, no for the questions.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes for consent, no for the questions. — Consent is the part where informality does the most damage.
+
 The formality is what protects the work when it is inconvenient, which is exactly when it gets dropped. — A plan written properly the second time is faster and no less necessary. The consent introduction in particular is about a setting, and this setting has other people’s property in it.
 
 Yes, since you have internalised the procedure. — Internalising the procedure is why you can write it quickly. It is not a reason to write less of it.
-
-Yes for consent, no for the questions. — Consent is the part where informality does the most damage.
 
 Improve: Adapt the consent script for this setting in step 3, marking what changed. Record the change in step 5.
 
@@ -1276,18 +1276,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You are recruiting through the shop owner. What does that exclude?
 
-- Everybody who stopped using the shop, who are often the most informative people about the problem.
-- Nothing important, since his customers are the users.
 - It biases towards satisfied customers, which is manageable.
+- Nothing important, since his customers are the users.
+- Everybody who stopped using the shop, who are often the most informative people about the problem.
 
 <details>
 <summary>After your attempt</summary>
 
-Everybody who stopped using the shop, who are often the most informative people about the problem. — Recruiting through somebody reaches the people still in their orbit. Writing that down now stops the study later being read as being about customers in general.
+It biases towards satisfied customers, which is manageable. — It is, and managing it starts with writing down who is missing.
 
 Nothing important, since his customers are the users. — They are the remaining users. The ones who left are the ones the problem affected most.
 
-It biases towards satisfied customers, which is manageable. — It is, and managing it starts with writing down who is missing.
+Everybody who stopped using the shop, who are often the most informative people about the problem. — Recruiting through somebody reaches the people still in their orbit. Writing that down now stops the study later being read as being about customers in general.
 
 Improve: Write who this route cannot reach in step 4, naming them specifically. Record the change in step 5.
 
@@ -1306,18 +1306,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You cannot answer one of your three questions with the access you have. What should you do?
 
-- Record it as unanswerable rather than quietly answering it with a weaker method.
-- Answer it as well as you can with what you have.
 - Drop the question, since it cannot be answered.
+- Answer it as well as you can with what you have.
+- Record it as unanswerable rather than quietly answering it with a weaker method.
 
 <details>
 <summary>After your attempt</summary>
 
-Record it as unanswerable rather than quietly answering it with a weaker method. — A question about what non-returning customers think cannot be answered by asking returning ones. Substituting a weaker method silently is how a study ends up claiming more than it can.
+Drop the question, since it cannot be answered. — Recording it is better than dropping it: it is the first thing a later study would go after.
 
 Answer it as well as you can with what you have. — That is the substitution, and the write-up will not say so unless you decide now.
 
-Drop the question, since it cannot be answered. — Recording it is better than dropping it: it is the first thing a later study would go after.
+Record it as unanswerable rather than quietly answering it with a weaker method. — A question about what non-returning customers think cannot be answered by asking returning ones. Substituting a weaker method silently is how a study ends up claiming more than it can.
 
 Improve: Write the unanswerable question in step 2 and say what would be needed to answer it. Record the change in step 5.
 
@@ -1974,16 +1974,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your sample is three people. Will the findings be thin?
 
-- They will be bounded, which is different. Three people in a real setting, honestly reported, is a real study.
 - Yes, which is why the write-up should be cautious throughout.
+- They will be bounded, which is different. Three people in a real setting, honestly reported, is a real study.
 - Yes, unless you supplement it with desk research.
 
 <details>
 <summary>After your attempt</summary>
 
-They will be bounded, which is different. Three people in a real setting, honestly reported, is a real study. — The failure mode is claiming more than it holds. Three of three customers ringing the shop is a finding; customers generally prefer certainty is not.
-
 Yes, which is why the write-up should be cautious throughout. — Caution throughout produces a document that says nothing. Counts on every finding do the same job precisely.
+
+They will be bounded, which is different. Three people in a real setting, honestly reported, is a real study. — The failure mode is claiming more than it holds. Three of three customers ringing the shop is a finding; customers generally prefer certainty is not.
 
 Yes, unless you supplement it with desk research. — Desk research answers different questions. It does not enlarge this study.
 
@@ -2005,17 +2005,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 The owner believes the problem is speed; the customers described certainty. What should the synthesis do?
 
 - Keep both and name the contradiction. It is usually the most informative thing a small study produces.
-- Trust the customers, since they are the users.
 - Find a theme that includes both.
+- Trust the customers, since they are the users.
 
 <details>
 <summary>After your attempt</summary>
 
 Keep both and name the contradiction. It is usually the most informative thing a small study produces. — A theme covering both — faster and more predictable — resolves it by averaging and produces a sentence nobody can act on. The gap between the two is what reframes the project.
 
-Trust the customers, since they are the users. — What the owner believes is also a finding, and it is the one that explains why the shop works as it does.
-
 Find a theme that includes both. — That is the averaging. It sounds more finished and says less.
+
+Trust the customers, since they are the users. — What the owner believes is also a finding, and it is the one that explains why the shop works as it does.
 
 Improve: Write the contradiction as a finding in step 3, with both sides and their counts. Record the change in step 5.
 
@@ -2034,16 +2034,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A session happened with somebody else present, which changed what was said. What do you do?
 
-- Record it as a deviation, in the session record, and let it travel with anything drawn from that session.
 - Discard the session, since it was compromised.
+- Record it as a deviation, in the session record, and let it travel with anything drawn from that session.
 - Note it privately and use the findings normally.
 
 <details>
 <summary>After your attempt</summary>
 
-Record it as a deviation, in the session record, and let it travel with anything drawn from that session. — A deviation recorded is data about the study. Hidden, it is contamination, and it will not be visible to anybody reading the findings later, including you.
-
 Discard the session, since it was compromised. — It was different rather than worthless, and what changed is itself informative.
+
+Record it as a deviation, in the session record, and let it travel with anything drawn from that session. — A deviation recorded is data about the study. Hidden, it is contamination, and it will not be visible to anybody reading the findings later, including you.
 
 Note it privately and use the findings normally. — Privately means invisible to anybody reading the write-up.
 
@@ -2694,16 +2694,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Would more features make a better portfolio project?
 
-- Depth reads better than breadth to anybody who has built anything. One complete flow with its states, tests and limits is worth more than four sketched features.
 - Yes, since more features show more range.
+- Depth reads better than breadth to anybody who has built anything. One complete flow with its states, tests and limits is worth more than four sketched features.
 - Yes, if each is done to the same standard.
 
 <details>
 <summary>After your attempt</summary>
 
-Depth reads better than breadth to anybody who has built anything. One complete flow with its states, tests and limits is worth more than four sketched features. — Four half-features on a three-week appetite means four happy paths and no error states. A reviewer sees immediately which one the project was.
-
 Yes, since more features show more range. — They show more screens. Range is shown across projects rather than within one.
+
+Depth reads better than breadth to anybody who has built anything. One complete flow with its states, tests and limits is worth more than four sketched features. — Four half-features on a three-week appetite means four happy paths and no error states. A reviewer sees immediately which one the project was.
 
 Yes, if each is done to the same standard. — On a fixed appetite they cannot be, and what drops is always the same part.
 
@@ -2724,18 +2724,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The accessibility pass is on your not-building list. Is that a scope decision?
 
-- No. It is a cut to the quality of what remains, wearing the clothes of a scope decision.
 - Yes, everything is negotiable under a fixed appetite.
 - Yes, provided it is scheduled for afterwards.
+- No. It is a cut to the quality of what remains, wearing the clothes of a scope decision.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It is a cut to the quality of what remains, wearing the clothes of a scope decision. — A state and an accessibility pass are part of the thing rather than extra things. Cutting a whole feature is a decision; cutting these is what happens when nobody decides.
-
 Yes, everything is negotiable under a fixed appetite. — Features are. What makes the remaining feature work is not.
 
 Yes, provided it is scheduled for afterwards. — Afterwards is the return condition the sorter warned about: it waits for somebody to be excluded.
+
+No. It is a cut to the quality of what remains, wearing the clothes of a scope decision. — A state and an accessibility pass are part of the thing rather than extra things. Cutting a whole feature is a decision; cutting these is what happens when nobody decides.
 
 Improve: Move any state, failure path or accessibility check off the cut list in step 4, and cut a feature instead. Record the change in step 5.
 
@@ -3308,18 +3308,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 It is a small project, so can the process be lighter?
 
-- It can be shorter. Skipping states, accessibility and failure paths is not lightness; it produces something that would not survive contact with a real person.
-- Yes, the rigour should scale with the size.
 - Yes, since nobody is depending on it.
+- Yes, the rigour should scale with the size.
+- It can be shorter. Skipping states, accessibility and failure paths is not lightness; it produces something that would not survive contact with a real person.
 
 <details>
 <summary>After your attempt</summary>
 
-It can be shorter. Skipping states, accessibility and failure paths is not lightness; it produces something that would not survive contact with a real person. — Fewer methods is legitimate: no card sort for a three-item structure, with the reason recorded. Eleven exception rows on a small project is still eleven rows.
+Yes, since nobody is depending on it. — Three people are about to use it, one of whom has never heard of the project.
 
 Yes, the rigour should scale with the size. — The number of methods scales. What makes the one feature work does not.
 
-Yes, since nobody is depending on it. — Three people are about to use it, one of whom has never heard of the project.
+It can be shorter. Skipping states, accessibility and failure paths is not lightness; it produces something that would not survive contact with a real person. — Fewer methods is legitimate: no card sort for a three-item structure, with the reason recorded. Eleven exception rows on a small project is still eleven rows.
 
 Improve: Write the exception table in step 2 before designing any screen. Record the change in step 5.
 
@@ -3338,18 +3338,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your system lacks a component for a status that changes over time. What should you do?
 
-- Build what you need and record the mismatch, so the system knows it was tested against something it was not designed for.
-- Add the component to the system immediately.
 - Redesign so the system fits.
+- Add the component to the system immediately.
+- Build what you need and record the mismatch, so the system knows it was tested against something it was not designed for.
 
 <details>
 <summary>After your attempt</summary>
 
-Build what you need and record the mismatch, so the system knows it was tested against something it was not designed for. — Working around it quietly puts a raw value in a project file and leaves the system describing a product that no longer exists. The mismatch list is the most interesting output of this lesson.
+Redesign so the system fits. — That lets an abstraction decide what the domain needs.
 
 Add the component to the system immediately. — One project needing it is not a pattern. It goes through governance with the mismatch as evidence.
 
-Redesign so the system fits. — That lets an abstraction decide what the domain needs.
+Build what you need and record the mismatch, so the system knows it was tested against something it was not designed for. — Working around it quietly puts a raw value in a project file and leaves the system describing a product that no longer exists. The mismatch list is the most interesting output of this lesson.
 
 Improve: Write every mismatch into step 3 rather than working around it. Record the change in step 5.
 
@@ -3368,16 +3368,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You did not run a screen-reader pass. How should that appear?
 
-- As a stated omission, distinct from a check that passed.
 - It need not appear, since the keyboard pass covers most of it.
+- As a stated omission, distinct from a check that passed.
 - As a limitation at the end of the write-up.
 
 <details>
 <summary>After your attempt</summary>
 
-As a stated omission, distinct from a check that passed. — Module 11 made the same point: not tested and tested-and-fine look identical in a document unless you write the difference down. Accessibility is the first thing dropped and the easiest to imply.
-
 It need not appear, since the keyboard pass covers most of it. — They overlap and are not the same check, as Module 11 showed in detail.
+
+As a stated omission, distinct from a check that passed. — Module 11 made the same point: not tested and tested-and-fine look identical in a document unless you write the difference down. Accessibility is the first thing dropped and the easiest to imply.
 
 As a limitation at the end of the write-up. — It belongs with the checks, where somebody reading them will see which were run.
 
@@ -4218,18 +4218,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You plan to test with the people you interviewed. What is the problem?
 
+- It biases towards positive results, which can be discounted.
 - They helped build the framing, so they will do well and their doing well says nothing about your wording.
 - Nothing, since they know the domain best.
-- It biases towards positive results, which can be discounted.
 
 <details>
 <summary>After your attempt</summary>
 
+It biases towards positive results, which can be discounted. — It cannot be discounted from inside the session; it looks exactly like the design working.
+
 They helped build the framing, so they will do well and their doing well says nothing about your wording. — A person who has never heard of the project is the only one for whom the wording has to carry the meaning alone. That session is usually worth more than the other three together.
 
 Nothing, since they know the domain best. — Knowing the domain is useful. Knowing your framing is what makes them unrepresentative.
-
-It biases towards positive results, which can be discounted. — It cannot be discounted from inside the session; it looks exactly like the design working.
 
 Improve: Arrange one session with somebody outside the research in step 2, and record what they did. Note the change in step 5.
 
@@ -4248,18 +4248,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why write the prediction before making the repair?
 
-- So the re-test can disagree with you. Afterwards, whatever happened looks like what you expected.
 - To make the re-test faster to run.
 - To show reviewers that the change was reasoned.
+- So the re-test can disagree with you. Afterwards, whatever happened looks like what you expected.
 
 <details>
 <summary>After your attempt</summary>
 
-So the re-test can disagree with you. Afterwards, whatever happened looks like what you expected. — A prediction written first is what makes a failed repair visible as a failed repair, rather than as a result you reinterpret.
-
 To make the re-test faster to run. — It does help, and speed is not the reason.
 
 To show reviewers that the change was reasoned. — A side effect. The reason is what it does to your own reading of the result.
+
+So the re-test can disagree with you. Afterwards, whatever happened looks like what you expected. — A prediction written first is what makes a failed repair visible as a failed repair, rather than as a result you reinterpret.
 
 Improve: Write the prediction in step 3 before changing anything, and check the file is still untouched. Record the change in step 5.
 
@@ -4278,16 +4278,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your repair did not work: one person still read the time as a promise. What do you report?
 
-- That, plainly. A failed repair says the diagnosis was wrong, which is worth more than a success confirming it.
 - That it partly worked, since only one person did it.
+- That, plainly. A failed repair says the diagnosis was wrong, which is worth more than a success confirming it.
 - Repair it again before reporting anything.
 
 <details>
 <summary>After your attempt</summary>
 
-That, plainly. A failed repair says the diagnosis was wrong, which is worth more than a success confirming it. — It is also the most credible thing in a portfolio. A project where every repair worked reads as a project where the re-tests were generous.
-
 That it partly worked, since only one person did it. — One of two is a count worth reporting as a count. Partly worked is the phrasing that hides it.
+
+That, plainly. A failed repair says the diagnosis was wrong, which is worth more than a success confirming it. — It is also the most credible thing in a portfolio. A project where every repair worked reads as a project where the re-tests were generous.
 
 Repair it again before reporting anything. — Worth doing next, and the first result is still the result.
 
@@ -4932,16 +4932,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is critique for finding what is wrong?
 
-- It tests whether the work does what you said it would, which is why the intent has to be stated first.
 - Yes, and the reviewer should be free to comment on anything.
+- It tests whether the work does what you said it would, which is why the intent has to be stated first.
 - Yes, though the intent helps focus it.
 
 <details>
 <summary>After your attempt</summary>
 
-It tests whether the work does what you said it would, which is why the intent has to be stated first. — A reviewer who does not know the intent can only give preferences. Told the problem, the constraint and the appetite, the same person asks about the three-day stale case.
-
 Yes, and the reviewer should be free to comment on anything. — They can, and without an intent the comments are about what they would have made.
+
+It tests whether the work does what you said it would, which is why the intent has to be stated first. — A reviewer who does not know the intent can only give preferences. Told the problem, the constraint and the appetite, the same person asks about the three-day stale case.
 
 Yes, though the intent helps focus it. — It does more than focus it: it changes what the session can produce.
 
@@ -4962,18 +4962,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A reviewer criticises something you have already solved. What should you do?
 
+- Let them continue and correct the record afterwards.
 - Write it down and answer at the end. Explaining now closes that comment and shortens everything after it.
 - Explain briefly, so the session stays accurate.
-- Let them continue and correct the record afterwards.
 
 <details>
 <summary>After your attempt</summary>
 
+Let them continue and correct the record afterwards. — That is the right answer, described slightly differently: write it down now and answer later.
+
 Write it down and answer at the end. Explaining now closes that comment and shortens everything after it. — Each answer ends its own comment and costs you the ones the person was about to make. Ten minutes of disagreement in the middle of a session is expensive.
 
 Explain briefly, so the session stays accurate. — Briefly becomes a discussion, and the discussion is what costs the remaining comments.
-
-Let them continue and correct the record afterwards. — That is the right answer, described slightly differently: write it down now and answer later.
 
 Improve: Say at the start that you will answer at the end, and record the comments in step 3. Note the change in step 5.
 
@@ -4993,17 +4993,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You are keeping a design despite a reviewer’s objection. What makes that legitimate?
 
 - A written reason somebody else could evaluate, ideally one recorded before the critique.
-- That it is your project and your decision.
 - That the reviewer does not know the domain.
+- That it is your project and your decision.
 
 <details>
 <summary>After your attempt</summary>
 
 A written reason somebody else could evaluate, ideally one recorded before the critique. — The appetite, the not-building list and the contrast decision are all reasons made earlier. A defence backed by one of those is the strongest kind; a defence with nothing behind it is a dismissal.
 
-That it is your project and your decision. — True and not a reason. It is the sentence that makes people stop giving you critique.
-
 That the reviewer does not know the domain. — Sometimes so, and the objection still needs an answer rather than a disqualification.
+
+That it is your project and your decision. — True and not a reason. It is the sentence that makes people stop giving you critique.
 
 Improve: Write a reason beside every defence in step 4, citing an earlier decision where one exists. Record the change in step 5.
 
@@ -5696,16 +5696,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Calls fell from eleven to four. Can you report a 64 per cent reduction?
 
-- No. Eleven and four are counts, and a percentage from them is precision the numbers cannot carry.
 - Yes, since the arithmetic is correct.
+- No. Eleven and four are counts, and a percentage from them is precision the numbers cannot carry.
 - Yes, with the counts stated alongside.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Eleven and four are counts, and a percentage from them is precision the numbers cannot carry. — Module 15 settled this: at these sizes the counts are the honest form, and the percentage is the part that gets quoted without its sample.
-
 Yes, since the arithmetic is correct. — The arithmetic is correct and the implied precision is not, particularly with a public holiday in the after period.
+
+No. Eleven and four are counts, and a percentage from them is precision the numbers cannot carry. — Module 15 settled this: at these sizes the counts are the honest form, and the percentage is the part that gets quoted without its sample.
 
 Yes, with the counts stated alongside. — The percentage is still what travels.
 
@@ -5726,16 +5726,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your measure did not move at all. Has the project failed?
 
-- No. It means the measure did not move in this period under these conditions, which is a finding worth reporting.
 - Effectively yes, since the point was to reduce the calls.
+- No. It means the measure did not move in this period under these conditions, which is a finding worth reporting.
 - No, but it should be left out of the case study.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It means the measure did not move in this period under these conditions, which is a finding worth reporting. — Reporting it is what separates the work from marketing. It is also the more interesting write-up, because it raises the question of why.
-
 Effectively yes, since the point was to reduce the calls. — One measure, over five days, with a holiday in it, cannot establish that.
+
+No. It means the measure did not move in this period under these conditions, which is a finding worth reporting. — Reporting it is what separates the work from marketing. It is also the more interesting write-up, because it raises the question of why.
 
 No, but it should be left out of the case study. — Leaving it out is the marketing version. A reviewer who notices the absence trusts nothing else.
 
@@ -6415,18 +6415,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is handing over the last five minutes of a project?
 
-- It is a design constraint from the start. A tool only you can operate was designed wrong, and handover is where you find that out.
 - Largely, since the work has to exist before it can be handed over.
 - Yes, provided the documentation is thorough.
+- It is a design constraint from the start. A tool only you can operate was designed wrong, and handover is where you find that out.
 
 <details>
 <summary>After your attempt</summary>
 
-It is a design constraint from the start. A tool only you can operate was designed wrong, and handover is where you find that out. — Asking what happens on the day you are unavailable, early, changes the thing. Asked at the end, it produces a discovery you have no time to act on.
-
 Largely, since the work has to exist before it can be handed over. — It has to exist in a form somebody else can operate, which is decided while building it.
 
 Yes, provided the documentation is thorough. — Thorough documentation of something unusable by anybody else does not help.
+
+It is a design constraint from the start. A tool only you can operate was designed wrong, and handover is where you find that out. — Asking what happens on the day you are unavailable, early, changes the thing. Asked at the end, it produces a discovery you have no time to act on.
 
 Improve: Ask the handover question in step 1 and change whatever only works with you present. Record the change in step 5.
 
@@ -6445,18 +6445,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your instructions are complete and accurate, and the person stopped at step two. What went wrong?
 
+- They need a walkthrough the first time.
 - They are in the interface’s vocabulary rather than theirs, so the person has to translate before they can start.
 - The instructions need to be shorter.
-- They need a walkthrough the first time.
 
 <details>
 <summary>After your attempt</summary>
 
+They need a walkthrough the first time. — A walkthrough is you being present, which is what the handover replaces.
+
 They are in the interface’s vocabulary rather than theirs, so the person has to translate before they can start. — Job record is not what he says; ticket is. Three lines in his words let him do the daily thing without you, which six accurate steps could not.
 
 The instructions need to be shorter. — Shorter helps, and the words are what stopped him.
-
-They need a walkthrough the first time. — A walkthrough is you being present, which is what the handover replaces.
 
 Improve: Rewrite the instructions in their words in step 2, then watch them follow it. Record the change in step 5.
 
@@ -7139,18 +7139,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does listing limitations weaken the project?
 
+- Yes, unless they are phrased carefully.
 - It does the opposite. Unstated limits get found by the reader and cost you their trust in everything else.
 - Slightly, which is the price of honesty.
-- Yes, unless they are phrased carefully.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, unless they are phrased carefully. — Careful phrasing usually means generic phrasing, which is the failure this lesson is about.
+
 It does the opposite. Unstated limits get found by the reader and cost you their trust in everything else. — Stated limits bound your claims and make the rest credible. It is the single most persuasive document in a junior portfolio, because almost nobody writes one.
 
 Slightly, which is the price of honesty. — There is no price here. A reader who finds an unstated limit discounts every claim in the document.
-
-Yes, unless they are phrased carefully. — Careful phrasing usually means generic phrasing, which is the failure this lesson is about.
 
 Improve: Replace every generic caveat with a specific statement in step 3. Record the change in step 5.
 
@@ -7169,16 +7169,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A mistyped job number can show another customer’s job. Does that belong on the limitations page?
 
-- No. It is a defect you could fix, and putting it on a limitations page is a way of recording it instead of repairing it.
 - Yes, since it is a real limitation of the current version.
+- No. It is a defect you could fix, and putting it on a limitations page is a way of recording it instead of repairing it.
 - Yes, and also on the repair list.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It is a defect you could fix, and putting it on a limitations page is a way of recording it instead of repairing it. — Limits are things you do not know or the thing does not do. A fault with a fix goes on a repair list, where somebody will do something about it.
-
 Yes, since it is a real limitation of the current version. — Current version is doing the work in that sentence, and it will still be the current version in a year.
+
+No. It is a defect you could fix, and putting it on a limitations page is a way of recording it instead of repairing it. — Limits are things you do not know or the thing does not do. A fault with a fix goes on a repair list, where somebody will do something about it.
 
 Yes, and also on the repair list. — On both, it gets read as accepted on one page and pending on the other.
 
@@ -7199,18 +7199,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 What should you do once the limitations page is written?
 
-- Read every claim you make elsewhere against it, and weaken or remove anything it does not support.
 - Attach it to the case study as an appendix.
 - Use it to decide what to do next.
+- Read every claim you make elsewhere against it, and weaken or remove anything it does not support.
 
 <details>
 <summary>After your attempt</summary>
 
-Read every claim you make elsewhere against it, and weaken or remove anything it does not support. — This is what makes the page do work rather than sit at the end. A project with a good limitations page and unchanged claims has written two documents that contradict each other.
-
 Attach it to the case study as an appendix. — Necessary and insufficient. An appendix nobody compares against changes nothing.
 
 Use it to decide what to do next. — Worth doing, via the closing steps, and the first job is checking what you have already written.
+
+Read every claim you make elsewhere against it, and weaken or remove anything it does not support. — This is what makes the page do work rather than sit at the end. A project with a good limitations page and unchanged claims has written two documents that contradict each other.
 
 Improve: Read your write-up against the page in step 5 and record what you weakened.
 
@@ -7879,18 +7879,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The third project looks much better than the first. Does that show improvement?
 
-- Presentation improves fastest and means least. The question is whether the process held under pressure, and that is visible only in the records.
 - Yes, since the output is what anybody sees.
 - Yes, if the third project was also harder.
+- Presentation improves fastest and means least. The question is whether the process held under pressure, and that is visible only in the records.
 
 <details>
 <summary>After your attempt</summary>
 
-Presentation improves fastest and means least. The question is whether the process held under pressure, and that is visible only in the records. — Comparing write-ups hides the thing that failed three times. Answering the same five questions from the files shows a real trajectory and an uncomfortable pattern.
-
 Yes, since the output is what anybody sees. — It is what a reviewer sees, and it is not what this retrospective is for.
 
 Yes, if the third project was also harder. — Difficulty is hard to compare and the process questions are not.
+
+Presentation improves fastest and means least. The question is whether the process held under pressure, and that is visible only in the records. — Comparing write-ups hides the thing that failed three times. Answering the same five questions from the files shows a real trajectory and an uncomfortable pattern.
 
 Improve: Answer your five questions from the records in step 1 before looking at the write-ups. Record the change in step 5.
 
@@ -7910,17 +7910,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 The accessibility pass was skipped in all three projects, each time because of time. What is that?
 
 - A pattern rather than three accidents, and it will happen a fourth time unless something in the process changes.
-- Bad luck with three tight schedules.
 - A sign the check is too expensive for projects this size.
+- Bad luck with three tight schedules.
 
 <details>
 <summary>After your attempt</summary>
 
 A pattern rather than three accidents, and it will happen a fourth time unless something in the process changes. — Each occasion had a good reason. Three occasions with good reasons is a mechanism, and the fix is moving the check to where time still exists.
 
-Bad luck with three tight schedules. — Three consecutive schedules being tight at the end is the normal condition rather than bad luck.
-
 A sign the check is too expensive for projects this size. — It takes an hour. What it lacks is a place in the process.
+
+Bad luck with three tight schedules. — Three consecutive schedules being tight at the end is the normal condition rather than bad luck.
 
 Improve: Write the pattern in step 3 without the mitigation, and let it choose your change. Record the change in step 5.
 
@@ -7939,18 +7939,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your change for the next project is to be more rigorous about accessibility. Will it hold?
 
-- No. It is what you intended the last three times, and nothing about the process is different.
-- Probably, now that the pattern is visible.
 - Yes, if you also allow more time.
+- Probably, now that the pattern is visible.
+- No. It is what you intended the last three times, and nothing about the process is different.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It is what you intended the last three times, and nothing about the process is different. — A dated task before the build starts, in the plan, changes where the check sits. Changes that alter a document survive; changes that ask for a habit do not.
+Yes, if you also allow more time. — More time gets filled, and what is unfinished at the end is unchanged.
 
 Probably, now that the pattern is visible. — Seeing a pattern helps for about a fortnight.
 
-Yes, if you also allow more time. — More time gets filled, and what is unfinished at the end is unchanged.
+No. It is what you intended the last three times, and nothing about the process is different. — A dated task before the build starts, in the plan, changes where the check sits. Changes that alter a document survive; changes that ask for a habit do not.
 
 Improve: Replace the intention with a scheduled change to a document in step 4. Record the change in step 5.
 
@@ -8614,17 +8614,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You are tempted to leave out the re-test where the repair only half worked. What would that cost?
 
 - The evidence that anything was tested. The record would then say a problem was found, changed and solved, which is what every record says.
-- Very little, since the repair mostly worked.
 - Some completeness, which a long record can afford to lose.
+- Very little, since the repair mostly worked.
 
 <details>
 <summary>After your attempt</summary>
 
 The evidence that anything was tested. The record would then say a problem was found, changed and solved, which is what every record says. — A project where one repair half-worked is a project where somebody actually looked. Reviewers find it more credible than a clean ending, because clean endings are what selection produces.
 
-Very little, since the repair mostly worked. — Mostly is the word doing the work, and the count is what makes it checkable.
-
 Some completeness, which a long record can afford to lose. — The failures are the load-bearing part rather than the padding.
+
+Very little, since the repair mostly worked. — Mostly is the word doing the work, and the count is what makes it checkable.
 
 Improve: Put the failures back in step 3 and say why each is load-bearing. Record the change in step 5.
 

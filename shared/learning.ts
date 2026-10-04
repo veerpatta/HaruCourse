@@ -1,6 +1,7 @@
 import type { RecordData } from './record';
 import type { Lesson } from '../src/teaching';
 import { actionQuestion, fieldRequired } from '../src/lessonActions';
+import { matchChoice } from './choices';
 
 export function hasReviewWork(r: RecordData) {
   const worksheet = Object.values(r.worksheet ?? {}).some(v => v.trim());
@@ -21,7 +22,7 @@ export function finishProblems(lesson: Lesson, r: RecordData): string[] {
   const checks = lesson.apprenticeship?.checks ?? [];
   if (checks.some((c, i) => {
     const answer = r.learning?.answers?.[checkKey(i)];
-    return !answer?.shown || !c.options.some(o => o.label === answer.value);
+    return !answer?.shown || !matchChoice(c.options, answer.value);
   })) problems.push('Answer each Check question and read its explanation.');
   if (!(r.worksheet?.['improvement-made'] || r.learning?.repair || '').trim()) problems.push('Record one improvement, or explain why your work already meets the check.');
   const practiceQuestions=lesson.flow?.filter(a=>a.kind==='sort'||a.kind==='supported') || [];
@@ -54,7 +55,7 @@ export function actionDone(lesson: Lesson, r: RecordData, a: NonNullable<Lesson[
     return !!f && !!r.worksheet?.[a.field!]?.trim() && (f.kind!=='choice' || !!f.options?.includes(r.worksheet[a.field!]));
   }
   const question=actionQuestion(lesson,a);
-  if(question) { const answer=r.learning?.answers?.[question.id]; return !!answer?.shown && question.options.some(o=>o.label===answer.value); }
+  if(question) { const answer=r.learning?.answers?.[question.id]; return !!answer?.shown && !!matchChoice(question.options, answer.value); }
   if (a.kind === 'review') return !!r.learning?.finishedAt;
   return !!r.learning?.completed?.includes(a.id);
 }

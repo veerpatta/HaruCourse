@@ -666,18 +666,18 @@ Choose the explanation you believe. Then compare the feedback with your own work
 
 A friend says: “The fix is obvious — make the Reserve button bigger.” Is that a problem statement?
 
-- No. It names a repair before saying who is stuck and how anyone would know.
-- Yes, because a small button is a real usability problem.
 - Yes, as long as you tested the bigger button afterwards.
+- Yes, because a small button is a real usability problem.
+- No. It names a repair before saying who is stuck and how anyone would know.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It names a repair before saying who is stuck and how anyone would know. — It may even be the right repair, but it skips the part that tells you whether it is: who struggled, with what task, and what you saw.
+Yes, as long as you tested the bigger button afterwards. — Testing a repair only tells you whether that repair worked. It cannot tell you what people were actually struggling with, because you never wrote it down.
 
 Yes, because a small button is a real usability problem. — Size might be the cause, or the price might be unclear, or the date might be missing. A problem statement names the person and the difficulty, so more than one repair can compete.
 
-Yes, as long as you tested the bigger button afterwards. — Testing a repair only tells you whether that repair worked. It cannot tell you what people were actually struggling with, because you never wrote it down.
+No. It names a repair before saying who is stuck and how anyone would know. — It may even be the right repair, but it skips the part that tells you whether it is: who struggled, with what task, and what you saw.
 
 Improve: Reread your user goal in step 3. If it names a screen, a button or a page, rewrite it as something the person needs to have happen, then note the change in step 5.
 
@@ -697,17 +697,17 @@ Choose the explanation you believe. Then compare the feedback with your own work
 Your walkthrough screen looks well made and you finished the task easily. What does that prove about other people?
 
 - Nothing yet. You are one person who already knows the app.
-- That the design works, because a real task was completed.
 - That the visual design is good enough to leave alone.
+- That the design works, because a real task was completed.
 
 <details>
 <summary>After your attempt</summary>
 
 Nothing yet. You are one person who already knows the app. — You brought knowledge a first-time visitor does not have. Craft and outcomes need different evidence, and yours is one walkthrough.
 
-That the design works, because a real task was completed. — It shows the task can be completed by you, today, knowing what you know. That is worth recording, and it is not evidence about anyone else.
-
 That the visual design is good enough to leave alone. — A screen can look well made and still hide the price or the date. Ease for you is not evidence about a person seeing it for the first time.
+
+That the design works, because a real task was completed. — It shows the task can be completed by you, today, knowing what you know. That is worth recording, and it is not evidence about anyone else.
 
 Improve: Look at your five entries in step 3. Any line that describes what other people do or feel belongs under inferred or unknown, not observed. Change one and say why in step 5.
 
@@ -726,18 +726,18 @@ Choose the explanation you believe. Then compare the feedback with your own work
 
 You wrote: “People skip the sponsored results.” You did not watch anyone else use the app. Which label is honest?
 
+- Unknown, because you have no data at all.
 - Inferred — it is your reading of why, and it may well be right.
 - Observed, because you saw the sponsored results yourself.
-- Unknown, because you have no data at all.
 
 <details>
 <summary>After your attempt</summary>
 
+Unknown, because you have no data at all. — Unknown is for things you cannot tell from the screen and have no reading of at all. Here you do have a reading, so inferred keeps it visible as something to check.
+
 Inferred — it is your reading of why, and it may well be right. — Inferred is not a lesser answer; it is the honest one, and it tells you exactly what to go and find out.
 
 Observed, because you saw the sponsored results yourself. — You observed that sponsored results appear. “People skip them” is a claim about other people’s behaviour, which the screen cannot show you.
-
-Unknown, because you have no data at all. — Unknown is for things you cannot tell from the screen and have no reading of at all. Here you do have a reading, so inferred keeps it visible as something to check.
 
 Improve: Pick the entry you were least sure about, set its label honestly, and write in its check column what you would watch to find out. Record the change in step 5.
 
@@ -1097,20 +1097,20 @@ A supplied pair from the same made-up workshop. Assumption A: “Attendees read 
 Which one do you investigate first, and why?
 
 - A, because being wrong about it breaks every other response you might choose.
-- B, because preference questions are quick to ask people.
-- Neither: ask about both in the same conversation to save time.
 - A, because printed lists cost money and email is free.
+- Neither: ask about both in the same conversation to save time.
+- B, because preference questions are quick to ask people.
 
 <details>
 <summary>After your attempt</summary>
 
 A, because being wrong about it breaks every other response you might choose. — Both are unchecked, so uncertainty does not separate them. Consequence does: if the email is never read, a better-worded email cannot help, and neither can anything else delivered that way.
 
-B, because preference questions are quick to ask people. — Speed is a real consideration, but here it buys the cheap answer. You would learn a format preference while still not knowing whether any message arrives.
+A, because printed lists cost money and email is free. — The right assumption for the wrong reason. Cost belongs in the response comparison, not in deciding which uncertainty threatens the work most.
 
 Neither: ask about both in the same conversation to save time. — Reasonable in practice, and it still needs an order. Asked together, the preference question usually eats the time, because people find it easier to answer than recalling what they actually did.
 
-A, because printed lists cost money and email is free. — The right assumption for the wrong reason. Cost belongs in the response comparison, not in deciding which uncertainty threatens the work most.
+B, because preference questions are quick to ask people. — Speed is a real consideration, but here it buys the cheap answer. You would learn a format preference while still not knowing whether any message arrives.
 
 Apply the same test to your own six: for each, ask what breaks if it is wrong, then pick the two where the damage is worst and the evidence thinnest.
 
@@ -1398,18 +1398,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Which of these is a problem frame rather than a disguised feature?
 
-- A first-time attendee, the evening before, cannot tell what to bring, so she arrives without materials and misses the start.
 - Attendees need a reminder email the day before the workshop.
 - The booking page needs a clearer materials section.
+- A first-time attendee, the evening before, cannot tell what to bring, so she arrives without materials and misses the start.
 
 <details>
 <summary>After your attempt</summary>
 
-A first-time attendee, the evening before, cannot tell what to bring, so she arrives without materials and misses the start. — It names a person, a moment, what she needs and what it costs her. A reminder, a printed list or a phone call could all answer it, which is exactly the point.
-
 Attendees need a reminder email the day before the workshop. — This is one answer wearing the clothes of a problem. Written this way, only one response can ever win, and you never find out whether email is read at all.
 
 The booking page needs a clearer materials section. — It names a page and a section, so it has already decided that the trouble is on that screen. The person may never reach that screen.
+
+A first-time attendee, the evening before, cannot tell what to bring, so she arrives without materials and misses the start. — It names a person, a moment, what she needs and what it costs her. A reminder, a printed list or a phone call could all answer it, which is exactly the point.
 
 Improve: Reread your three frames in step 2. If any of them contains a feature word — reminder, email, checkbox, page, button — rewrite it as what the person needs to have happen, then record the change in step 5.
 
@@ -1428,18 +1428,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Two assumptions are both unverified. Which do you investigate first?
 
-- The one where being wrong would do the most damage and you have the least evidence.
 - The one that is quickest and cheapest to check.
 - The one your three responses all depend on.
+- The one where being wrong would do the most damage and you have the least evidence.
 
 <details>
 <summary>After your attempt</summary>
 
-The one where being wrong would do the most damage and you have the least evidence. — Consequence and uncertainty together. An assumption you are confident about, or one that costs nothing if wrong, can wait however interesting it is.
-
 The one that is quickest and cheapest to check. — Tempting, and sometimes it is the same assumption. On its own it leads you to answer easy questions while the expensive one stays untested.
 
 The one your three responses all depend on. — Closer, because a shared dependency raises the consequence. Still incomplete: if you already have good evidence for it, checking again buys little.
+
+The one where being wrong would do the most damage and you have the least evidence. — Consequence and uncertainty together. An assumption you are confident about, or one that costs nothing if wrong, can wait however interesting it is.
 
 Improve: Look at your two priority uncertainties in step 3. If either was chosen because it was easy, swap it for the one with the worse consequence, and say why in step 5.
 
@@ -1458,18 +1458,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You write beside an assumption: “Nothing could really disprove this.” What does that tell you?
 
-- It is not an investigation yet — it needs a specific thing you could see that would change your mind.
 - It is a strong assumption, so you can safely build on it.
 - It should be deleted from the list.
+- It is not an investigation yet — it needs a specific thing you could see that would change your mind.
 
 <details>
 <summary>After your attempt</summary>
 
-It is not an investigation yet — it needs a specific thing you could see that would change your mind. — An assumption nothing could contradict cannot be tested, only defended. Naming what would change your mind is what turns it into work you can do.
-
 It is a strong assumption, so you can safely build on it. — Unfalsifiable is not the same as well supported. It usually means the claim is vague rather than certain.
 
 It should be deleted from the list. — Deleting it hides it. Sharpen it instead until you can say what evidence would count against it.
+
+It is not an investigation yet — it needs a specific thing you could see that would change your mind. — An assumption nothing could contradict cannot be tested, only defended. Naming what would change your mind is what turns it into work you can do.
 
 Improve: Take the priority uncertainty with the weakest evidence line and replace it with one concrete observation that would change your mind. Record it in step 5.
 
@@ -1923,21 +1923,21 @@ A supplied line from someone else’s notes, written straight after a real conse
 
 How should this be split between observations and interpretations?
 
-- Observed: she searched for the price, returned twice, and said that sentence. Inferred: that she was frustrated by the process as a whole.
-- All observed: her behaviour and her frustration were both visible in the room.
 - Observed: the quotation only. Everything else is your summary of what she did.
+- All observed: her behaviour and her frustration were both visible in the room.
 - Inferred: memory is unreliable, so notes written afterwards are all interpretation.
+- Observed: she searched for the price, returned twice, and said that sentence. Inferred: that she was frustrated by the process as a whole.
 
 <details>
 <summary>After your attempt</summary>
 
-Observed: she searched for the price, returned twice, and said that sentence. Inferred: that she was frustrated by the process as a whole. — Her actions and her words are what you can point to. “Clearly frustrated by the whole process” is your reading, and it stretches one moment into a verdict on everything.
+Observed: the quotation only. Everything else is your summary of what she did. — Too strict. Actions you watched — searching, going back twice — are as observable as the words; describing them is not interpretation.
 
 All observed: her behaviour and her frustration were both visible in the room. — You saw behaviour and heard a sentence. Frustration is a reasonable interpretation of them, but writing it as observed removes the step where someone could disagree with you.
 
-Observed: the quotation only. Everything else is your summary of what she did. — Too strict. Actions you watched — searching, going back twice — are as observable as the words; describing them is not interpretation.
-
 Inferred: memory is unreliable, so notes written afterwards are all interpretation. — Notes written immediately are the normal record of a session. Treating everything as interpretation would leave you nothing to reason from.
+
+Observed: she searched for the price, returned twice, and said that sentence. Inferred: that she was frustrated by the process as a whole. — Her actions and her words are what you can point to. “Clearly frustrated by the whole process” is your reading, and it stretches one moment into a verdict on everything.
 
 Split your own notes the same way: what you could point to on one side, your reading of it on the other, and the exact words only if you were given permission to keep them.
 
@@ -2054,21 +2054,21 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Which question is most likely to tell you what actually happened?
 
-- Tell me about the last class you signed up for. What did you do the evening before?
-- Would a reminder the day before have helped you prepare?
 - Do you usually find booking pages confusing?
 - How important is it to you to know what to bring?
+- Tell me about the last class you signed up for. What did you do the evening before?
+- Would a reminder the day before have helped you prepare?
 
 <details>
 <summary>After your attempt</summary>
 
-Tell me about the last class you signed up for. What did you do the evening before? — It asks about one real occasion the person can remember, and it does not tell them which part you care about, so the surprising detail has room to arrive.
-
-Would a reminder the day before have helped you prepare? — It hands over the answer. Most people say yes to a helpful-sounding thing, and you learn what they predict about themselves rather than what they did.
-
 Do you usually find booking pages confusing? — It asks for a general habit and a judgement at once. “Usually” answers are reconstructions, and “confusing” invites agreement with your own suspicion.
 
 How important is it to you to know what to bring? — Almost nobody says it is unimportant. Importance questions produce flat, agreeable answers that cannot separate one situation from another.
+
+Tell me about the last class you signed up for. What did you do the evening before? — It asks about one real occasion the person can remember, and it does not tell them which part you care about, so the surprising detail has room to arrive.
+
+Would a reminder the day before have helped you prepare? — It hands over the answer. Most people say yes to a helpful-sounding thing, and you learn what they predict about themselves rather than what they did.
 
 Improve: Read your six questions in step 2 aloud. Rewrite any that name a feature, ask for a prediction, or contain the word you hope to hear, then record the change in step 5.
 
@@ -2087,19 +2087,19 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You rehearsed the questions alone because nobody was available. What may you write in your notes?
 
+- A likely answer based on what people in your position usually say.
 - That you rehearsed, what felt awkward to ask, and that no participant evidence exists yet.
 - Your own answers to the questions, marked as a first data point.
-- A likely answer based on what people in your position usually say.
 - Nothing — an interview without a participant is a failure.
 
 <details>
 <summary>After your attempt</summary>
 
+A likely answer based on what people in your position usually say. — That is an invented participant. Once it is written down it will be quoted later as though someone said it.
+
 That you rehearsed, what felt awkward to ask, and that no participant evidence exists yet. — A rehearsal tests your questions, which is real work worth recording. What it cannot produce is anything about other people, so the honest note says so plainly.
 
 Your own answers to the questions, marked as a first data point. — You already know your own design and intentions, so your answers cannot stand in for a participant’s. Recording them as data quietly turns your assumptions into findings.
-
-A likely answer based on what people in your position usually say. — That is an invented participant. Once it is written down it will be quoted later as though someone said it.
 
 Nothing — an interview without a participant is a failure. — Too harsh, and it hides useful work. The guide, the consent wording and the awkward questions you found are the output; the recruitment gap is a dated fact, not a failure.
 
@@ -2523,21 +2523,21 @@ A supplied branch from the same made-up flow. The person types an email address 
 
 Which one handles the failure properly?
 
-- “That email address is missing an @. Check it and press Reserve again.” The name and date they typed stay on screen.
-- “Invalid input. Please try again.” The form is cleared so they can start cleanly.
-- The Reserve button quietly does nothing until the address is valid.
 - “That email address is missing an @.” No further instruction, since the problem is now obvious.
+- “That email address is missing an @. Check it and press Reserve again.” The name and date they typed stay on screen.
+- The Reserve button quietly does nothing until the address is valid.
+- “Invalid input. Please try again.” The form is cleared so they can start cleanly.
 
 <details>
 <summary>After your attempt</summary>
 
-“That email address is missing an @. Check it and press Reserve again.” The name and date they typed stay on screen. — It says what is wrong, where, and what to do, and it does not punish them by emptying the form. Everything they can act on is in one place.
+“That email address is missing an @.” No further instruction, since the problem is now obvious. — Close, and it stops one step short. It names the fault without saying what to do, and it does not promise that their other answers survived.
 
-“Invalid input. Please try again.” The form is cleared so they can start cleanly. — Two failures at once: it does not say which field or what is wrong with it, and clearing the form makes the person retype work they had already done correctly.
+“That email address is missing an @. Check it and press Reserve again.” The name and date they typed stay on screen. — It says what is wrong, where, and what to do, and it does not punish them by emptying the form. Everything they can act on is in one place.
 
 The Reserve button quietly does nothing until the address is valid. — The person presses a button and the world does not change, so they cannot tell whether the app is broken, slow, or waiting for them.
 
-“That email address is missing an @.” No further instruction, since the problem is now obvious. — Close, and it stops one step short. It names the fault without saying what to do, and it does not promise that their other answers survived.
+“Invalid input. Please try again.” The form is cleared so they can start cleanly. — Two failures at once: it does not say which field or what is wrong with it, and clearing the form makes the person retype work they had already done correctly.
 
 Write your own three branches the same way: name what is wrong, say what the person does next, and state what is preserved.
 
@@ -2720,18 +2720,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your flow shows: Home → Details → Reserve → Payment → Confirmation. What is missing?
 
-- The actions and decisions between the screens, and what the person needed to know before committing.
-- Nothing: the five screens cover the whole task from start to finish.
 - The visual design of each screen.
+- Nothing: the five screens cover the whole task from start to finish.
+- The actions and decisions between the screens, and what the person needed to know before committing.
 
 <details>
 <summary>After your attempt</summary>
 
-The actions and decisions between the screens, and what the person needed to know before committing. — That is a list of places, not a flow. What turns one box into the next, and what has to be true before Reserve, is where the design decisions live.
+The visual design of each screen. — Not at this stage. A flow is about order, decisions and recovery; how the screens look comes later and cannot fix a missing decision.
 
 Nothing: the five screens cover the whole task from start to finish. — They cover the happy path only, and even there the arrows are unlabelled, so anyone reading it has to guess what causes each move.
 
-The visual design of each screen. — Not at this stage. A flow is about order, decisions and recovery; how the screens look comes later and cannot fix a missing decision.
+The actions and decisions between the screens, and what the person needed to know before committing. — That is a list of places, not a flow. What turns one box into the next, and what has to be true before Reserve, is where the design decisions live.
 
 Improve: Reread your successful path in step 2. If your boxes are screen names, label each arrow with the action that causes the move, and make sure the price and what to bring appear before the Reserve arrow. Note the change in step 5.
 
@@ -2750,18 +2750,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Payment is submitted and the connection drops before any answer arrives. What should the flow do?
 
-- Say clearly that the result is not yet known and offer a way to check, keeping what was entered.
-- Show a failure message so the person can try again straight away.
 - Retry automatically in the background until it succeeds.
+- Show a failure message so the person can try again straight away.
+- Say clearly that the result is not yet known and offer a way to check, keeping what was entered.
 
 <details>
 <summary>After your attempt</summary>
 
-Say clearly that the result is not yet known and offer a way to check, keeping what was entered. — Unknown is a real state and deserves its own box. Telling someone it failed when it may have succeeded is how people pay twice.
+Retry automatically in the background until it succeeds. — Silent retries hide the state from the person and can repeat the charge. Any retry has to be their decision, after they know where things stand.
 
 Show a failure message so the person can try again straight away. — This is the expensive mistake. You do not know it failed, and a confident retry can produce a second booking and a second charge.
 
-Retry automatically in the background until it succeeds. — Silent retries hide the state from the person and can repeat the charge. Any retry has to be their decision, after they know where things stand.
+Say clearly that the result is not yet known and offer a way to check, keeping what was entered. — Unknown is a real state and deserves its own box. Telling someone it failed when it may have succeeded is how people pay twice.
 
 Improve: Check your interrupted-confirmation branch in step 3. If its message says the booking failed, rewrite it as an unknown state with a way to check, then record it in step 5.
 
@@ -3158,17 +3158,17 @@ A supplied phone sketch of the reservation form, made up for practice. Down the 
 
 What should the reading and focus order annotation say about that grey note?
 
-- It must come before the Email field in the order, because it explains what the address will be used for.
 - It can sit anywhere, because it is only a hint rather than a label.
+- It must come before the Email field in the order, because it explains what the address will be used for.
 - It should be removed, because a field with a visible label needs no further text.
 - It should become placeholder text inside the Email field to save space.
 
 <details>
 <summary>After your attempt</summary>
 
-It must come before the Email field in the order, because it explains what the address will be used for. — Anyone hearing the page read aloud, or tabbing through it, meets the field before the note if it is placed beside it. The explanation only helps if it arrives first.
-
 It can sit anywhere, because it is only a hint rather than a label. — Position is exactly what decides whether a hint is heard in time. A hint met after the answer has been typed is decoration.
+
+It must come before the Email field in the order, because it explains what the address will be used for. — Anyone hearing the page read aloud, or tabbing through it, meets the field before the note if it is placed beside it. The explanation only helps if it arrives first.
 
 It should be removed, because a field with a visible label needs no further text. — The label says what to type; this note says why it is wanted, which changes whether someone is willing to give it.
 
@@ -3313,18 +3313,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your annotations say the screens are keyboard accessible. What do the sketches actually establish?
 
+- Nothing about accessibility at all, so the annotations are pointless.
 - What you intend: the order, the labels and the recovery. Whether it works can only be known once it is built and tested.
 - That the design is accessible, since the reading order and labels are specified.
-- Nothing about accessibility at all, so the annotations are pointless.
 
 <details>
 <summary>After your attempt</summary>
 
+Nothing about accessibility at all, so the annotations are pointless. — Too far the other way. The annotations are what a developer builds from and what a tester checks against; they just are not evidence of the result.
+
 What you intend: the order, the labels and the recovery. Whether it works can only be known once it is built and tested. — A drawing records a design decision. Focus order, announcement and keyboard traps are properties of running code, so the honest note names the checks still to do.
 
 That the design is accessible, since the reading order and labels are specified. — Specifying them is necessary and not sufficient. A build can ignore the order, mislabel a field, or trap focus in a dialog, and only testing reveals it.
-
-Nothing about accessibility at all, so the annotations are pointless. — Too far the other way. The annotations are what a developer builds from and what a tester checks against; they just are not evidence of the result.
 
 Improve: Reread your annotations in step 3. Replace any sentence that claims the screens are accessible with the specific checks that still need a built version, and record the change in step 5.
 
@@ -3343,18 +3343,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 On the phone version you shrink the whole desktop layout so everything still fits. What is wrong with that?
 
-- Shrinking makes text and targets smaller; the content should reflow into one column and keep its size.
 - Nothing, as long as the person can pinch to zoom.
 - It is wrong only if the text falls below twelve pixels.
+- Shrinking makes text and targets smaller; the content should reflow into one column and keep its size.
 
 <details>
 <summary>After your attempt</summary>
 
-Shrinking makes text and targets smaller; the content should reflow into one column and keep its size. — Reflow rearranges what is there so it stays readable and tappable. Scaling down keeps the arrangement and takes away legibility and touch targets.
-
 Nothing, as long as the person can pinch to zoom. — Zooming shifts the work onto the reader, and a zoomed page usually requires sideways scrolling to read a single line.
 
 It is wrong only if the text falls below twelve pixels. — A size threshold is not the issue. Even at a readable size, a scaled desktop layout puts the price and the button in places built for a wide screen.
+
+Shrinking makes text and targets smaller; the content should reflow into one column and keep its size. — Reflow rearranges what is there so it stays readable and tappable. Scaling down keeps the arrangement and takes away legibility and touch targets.
 
 Improve: Look at your narrow and wide descriptions in step 2. If the narrow one is the wide one made smaller, rewrite it as a single column in the order the person needs, and say what changed in step 5.
 
@@ -3373,18 +3373,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A label sits inside the field as grey placeholder text and disappears when typing starts. Why replace it?
 
-- Once it is gone the person cannot check what the field was for, and an error message has nothing to point at.
-- Placeholders are always forbidden in accessible design.
 - Because grey text looks unfinished.
+- Placeholders are always forbidden in accessible design.
+- Once it is gone the person cannot check what the field was for, and an error message has nothing to point at.
 
 <details>
 <summary>After your attempt</summary>
 
-Once it is gone the person cannot check what the field was for, and an error message has nothing to point at. — The label is needed most while filling in and while correcting. A placeholder removes it exactly then, and it usually fails contrast as well.
+Because grey text looks unfinished. — Appearance is not the reason. The reason is that the information vanishes at the moment it is needed.
 
 Placeholders are always forbidden in accessible design. — Placeholders are fine as an extra hint beside a real label. The problem is using one as the only label.
 
-Because grey text looks unfinished. — Appearance is not the reason. The reason is that the information vanishes at the moment it is needed.
+Once it is gone the person cannot check what the field was for, and an error message has nothing to point at. — The label is needed most while filling in and while correcting. A placeholder removes it exactly then, and it usually fails contrast as well.
 
 Improve: Check your persistent-label annotation in step 3. If any field relies on placeholder text alone, give it a visible label that stays, then record it in step 5.
 
@@ -3813,21 +3813,21 @@ A supplied pair from the same made-up repair. Before: the confirmation screen sa
 
 Which way of checking whether the repair helped is worth writing down?
 
+- Compare the two screens against the usability heuristics again.
 - Watch two people finish a booking and see whether they can say, without scrolling back, which evening they are coming and what to bring.
 - Ask two people whether the new screen is clearer than the old one.
 - Count how much longer people spend on the confirmation screen.
-- Compare the two screens against the usability heuristics again.
 
 <details>
 <summary>After your attempt</summary>
+
+Compare the two screens against the usability heuristics again. — Useful for deciding what to try; it cannot report what happened. Re-reading a rule tells you about the design, not about a person using it.
 
 Watch two people finish a booking and see whether they can say, without scrolling back, which evening they are coming and what to bring. — It names who, what they do, and what you would see. It could also come out badly, which is what makes it a check rather than a demonstration.
 
 Ask two people whether the new screen is clearer than the old one. — Shown two versions by the person who made them, people tend to prefer the newer one. You learn about politeness rather than about the task.
 
 Count how much longer people spend on the confirmation screen. — Longer could mean reading carefully or being lost, and the number cannot tell you which. A measure you cannot interpret is not yet a check.
-
-Compare the two screens against the usability heuristics again. — Useful for deciding what to try; it cannot report what happened. Re-reading a rule tells you about the design, not about a person using it.
 
 Write your own check the same way: a person, a task, and the specific thing you would watch for that could show the repair did not help.
 
@@ -3871,21 +3871,21 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Which critique can somebody act on?
 
-- On the full workshop, Reserve is greyed out with no explanation, so the visitor cannot tell whether to wait or look at another date.
+- The button colour does not match the studio’s brand.
 - The reservation screen feels cluttered and a bit dated.
 - Users are confused by the booking flow.
-- The button colour does not match the studio’s brand.
+- On the full workshop, Reserve is greyed out with no explanation, so the visitor cannot tell whether to wait or look at another date.
 
 <details>
 <summary>After your attempt</summary>
 
-On the full workshop, Reserve is greyed out with no explanation, so the visitor cannot tell whether to wait or look at another date. — It points at one thing on the screen and says what it stops the person doing. Someone else could find it and judge whether the repair worked.
+The button colour does not match the studio’s brand. — A real observation about consistency, and no stated effect on the task. It may be worth fixing later; it is not the weak point this lesson is for.
 
 The reservation screen feels cluttered and a bit dated. — It records an impression without naming what is affected. Two people can disagree about it forever and nothing changes for the visitor.
 
 Users are confused by the booking flow. — It sounds like evidence and is a guess about other people. Unless you watched someone, the honest version says what you saw and marks the confusion as inferred.
 
-The button colour does not match the studio’s brand. — A real observation about consistency, and no stated effect on the task. It may be worth fixing later; it is not the weak point this lesson is for.
+On the full workshop, Reserve is greyed out with no explanation, so the visitor cannot tell whether to wait or look at another date. — It points at one thing on the screen and says what it stops the person doing. Someone else could find it and judge whether the repair worked.
 
 Improve: Reread your observation and task-impact boxes in step 2. If the critique names a feeling rather than something on the screen, rewrite it and record the change in step 5.
 
@@ -3904,18 +3904,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You repaired the disabled button and also changed the type scale, the spacing and the photograph. What has that cost you?
 
-- You can no longer tell which change did anything, so neither version teaches you much.
 - Nothing, as long as the screen is better overall.
 - Only time, since the extra changes were quick.
+- You can no longer tell which change did anything, so neither version teaches you much.
 
 <details>
 <summary>After your attempt</summary>
 
-You can no longer tell which change did anything, so neither version teaches you much. — A comparison only works when one thing moved. Bundling changes feels efficient and destroys the reason for keeping a before version at all.
-
 Nothing, as long as the screen is better overall. — “Better overall” is the judgement you were trying to test. Without a bounded change you are back to taste.
 
 Only time, since the extra changes were quick. — The cost is not effort but explanation: you have lost the ability to say why the screen improved.
+
+You can no longer tell which change did anything, so neither version teaches you much. — A comparison only works when one thing moved. Bundling changes feels efficient and destroys the reason for keeping a before version at all.
 
 Improve: Look at your repair box in step 3. If it lists changes beyond the one criterion, undo the extras on the copy or state plainly that this is a redesign rather than a bounded repair. Say what you did in step 5.
 
@@ -3934,18 +3934,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 After the repair you write: “This fixes the problem.” Why is that too strong?
 
-- You have changed the design, not observed anyone using it; until someone does, the improvement is intended rather than shown.
 - Because no design is ever finished.
 - It is fine if the heuristic clearly supports the change.
+- You have changed the design, not observed anyone using it; until someone does, the improvement is intended rather than shown.
 
 <details>
 <summary>After your attempt</summary>
 
-You have changed the design, not observed anyone using it; until someone does, the improvement is intended rather than shown. — A repair is a hypothesis with better reasoning behind it. Saying so keeps the next test honest and stops the claim hardening into a fact.
-
 Because no design is ever finished. — True and unhelpfully general. The specific problem is that nothing yet distinguishes your intention from the result.
 
 It is fine if the heuristic clearly supports the change. — A heuristic flags a risk; it cannot report that a person succeeded. It is the reason for trying, not evidence of the outcome.
+
+You have changed the design, not observed anyone using it; until someone does, the improvement is intended rather than shown. — A repair is a hypothesis with better reasoning behind it. Saying so keeps the next test honest and stops the claim hardening into a fact.
 
 Improve: Reread your limitations box in step 5. If any sentence claims the problem is fixed, rewrite it as what you would need to watch to find out, then note the change.
 
@@ -4326,21 +4326,21 @@ A supplied paragraph from someone else’s decision note, made up for practice: 
 
 Which sentence needs a source label most urgently before this note is shared?
 
-- “Moving it above Reserve will reduce no-shows” — a prediction about an outcome nobody has measured.
-- “Attendees want to know what to bring” — a general claim about people.
-- “I watched two people miss the materials line” — a small sample.
 - “The studio agrees it is worth trying” — an opinion presented as support.
+- “Attendees want to know what to bring” — a general claim about people.
+- “Moving it above Reserve will reduce no-shows” — a prediction about an outcome nobody has measured.
+- “I watched two people miss the materials line” — a small sample.
 
 <details>
 <summary>After your attempt</summary>
 
-“Moving it above Reserve will reduce no-shows” — a prediction about an outcome nobody has measured. — It is the only sentence that claims a result, and results are what get repeated in later documents. It should say what is expected and how it would be checked.
+“The studio agrees it is worth trying” — an opinion presented as support. — Worth attributing, and it is not evidence about people using the design, so nobody is likely to mistake it for one.
 
 “Attendees want to know what to bring” — a general claim about people. — It does need a label, and it is the softer problem: a reader can see it is a summary. The outcome claim will be quoted as a fact.
 
-“I watched two people miss the materials line” — a small sample. — Small, and honestly stated. It already says who and what was observed; two people is a limitation to note, not an unlabelled claim.
+“Moving it above Reserve will reduce no-shows” — a prediction about an outcome nobody has measured. — It is the only sentence that claims a result, and results are what get repeated in later documents. It should say what is expected and how it would be checked.
 
-“The studio agrees it is worth trying” — an opinion presented as support. — Worth attributing, and it is not evidence about people using the design, so nobody is likely to mistake it for one.
+“I watched two people miss the materials line” — a small sample. — Small, and honestly stated. It already says who and what was observed; two people is a limitation to note, not an unlabelled claim.
 
 Read your own six sections and mark each claim observed, reported or assumed. Any sentence about an outcome needs the check that would test it.
 

@@ -325,18 +325,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody must know what the hiring market wants. Why does this course not tell you?
 
+- Because the market changes too quickly to teach.
 - Because it holds two dated captures, which is not a study, and teaching a conclusion from that would be inventing one.
 - Because hiring differs too much by country to generalise.
-- Because the market changes too quickly to teach.
 
 <details>
 <summary>After your attempt</summary>
 
+Because the market changes too quickly to teach. — It does change quickly, which is why your sample expires. The absence here is of evidence rather than of currency.
+
 Because it holds two dated captures, which is not a study, and teaching a conclusion from that would be inventing one. — Many people will tell you confidently. Almost none cite a dated, multi-employer sample, and the ones who can will also tell you how narrow it is.
 
 Because hiring differs too much by country to generalise. — True and not the reason. The reason is that this course does not hold the evidence.
-
-Because the market changes too quickly to teach. — It does change quickly, which is why your sample expires. The absence here is of evidence rather than of currency.
 
 Improve: Write what the two captures do and do not establish in step 1. Record the change in step 5.
 
@@ -355,18 +355,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A job site says four thousand remote design roles are open. Can you cite that?
 
-- No. It is a number about what one site indexed under one query, counting duplicates, reposts and expired listings.
 - Yes, with the site and the date named.
 - Yes, as a rough indication of demand.
+- No. It is a number about what one site indexed under one query, counting duplicates, reposts and expired listings.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It is a number about what one site indexed under one query, counting duplicates, reposts and expired listings. — Two sites give two different totals for the same day. Use an aggregator to collect employer names, then go to the employer’s own page for anything you will cite.
-
 Yes, with the site and the date named. — Naming the source does not give the number a denominator anybody can check.
 
 Yes, as a rough indication of demand. — Rough indication is doing a lot of work for a number that counts the same job four times.
+
+No. It is a number about what one site indexed under one query, counting duplicates, reposts and expired listings. — Two sites give two different totals for the same day. Use an aggregator to collect employer names, then go to the employer’s own page for anything you will cite.
 
 Improve: Write the source rule in step 3, separating finding from citing. Record the change in step 5.
 
@@ -385,16 +385,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why write the sample’s limits before gathering rather than after?
 
-- Because once you have findings, the limits you write are the ones your findings survive.
 - Because it saves time later.
+- Because once you have findings, the limits you write are the ones your findings survive.
 - Because the plan should be complete before starting.
 
 <details>
 <summary>After your attempt</summary>
 
-Because once you have findings, the limits you write are the ones your findings survive. — The public-board bias is obvious before you have a result to protect. Written in advance it is a method note; written afterwards it is a concession.
-
 Because it saves time later. — It takes the same time either way. The difference is what you are willing to write.
+
+Because once you have findings, the limits you write are the ones your findings survive. — The public-board bias is obvious before you have a result to protect. Written in advance it is a method note; written afterwards it is a concession.
 
 Because the plan should be complete before starting. — Tidy, and the real reason is about what you know when you write them.
 
@@ -1215,18 +1215,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Can you capture the listing from the job board where you found it?
 
-- No. Go to the employer’s own page: board copies can be stale, retitled, or posted by an agency with no employer named.
-- Yes, if you record the board and the date.
 - Yes, for employers whose own site has no careers page.
+- Yes, if you record the board and the date.
+- No. Go to the employer’s own page: board copies can be stale, retitled, or posted by an agency with no employer named.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Go to the employer’s own page: board copies can be stale, retitled, or posted by an agency with no employer named. — Checking three of twelve board captures found one filled a week earlier, one retitled and one with no employer at all. The consistency of a board is the board’s, not the employers’.
+Yes, for employers whose own site has no careers page. — That case is recorded as a failure rather than filled in from the board.
 
 Yes, if you record the board and the date. — That dates your copy of somebody else’s copy, which may not match what the employer published.
 
-Yes, for employers whose own site has no careers page. — That case is recorded as a failure rather than filled in from the board.
+No. Go to the employer’s own page: board copies can be stale, retitled, or posted by an agency with no employer named. — Checking three of twelve board captures found one filled a week earlier, one retitled and one with no employer at all. The consistency of a board is the board’s, not the employers’.
 
 Improve: Re-capture any board listing from the employer’s own page in step 2, or record it as a failure in step 3. Note the change in step 5.
 
@@ -1246,17 +1246,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Seven listings expired before you could capture them and two demanded an account. What do you do with those?
 
 - Record them, with reasons and dates, and report fourteen captured from twenty-six attempted.
-- Leave them out; they produced no data.
 - Create accounts for the two gated ones to complete the sample.
+- Leave them out; they produced no data.
 
 <details>
 <summary>After your attempt</summary>
 
 Record them, with reasons and dates, and report fourteen captured from twenty-six attempted. — The failure rate says how the sample was selected and how quickly this evidence decays. Expiry within days is arguably the most useful thing the gathering found.
 
-Leave them out; they produced no data. — They produce the denominator, which is what makes the fourteen interpretable.
-
 Create accounts for the two gated ones to complete the sample. — This course records a gate as a refusal. Two missing listings cost less than an account you did not want.
+
+Leave them out; they produced no data. — They produce the denominator, which is what makes the fourteen interpretable.
 
 Improve: Write every failure with its reason and date in step 3, and the rate. Note the change in step 5.
 
@@ -1275,18 +1275,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A listing says “remote-first” and nothing about eligibility. What goes in the eligibility field?
 
+- That eligibility is unclear and needs asking.
 - That the listing states nothing, recorded as a silence rather than as a yes or a no.
 - That they can probably employ from India.
-- That eligibility is unclear and needs asking.
 
 <details>
 <summary>After your attempt</summary>
 
+That eligibility is unclear and needs asking. — Reasonable as a next step, and the field still records what the listing said, which is nothing.
+
 That the listing states nothing, recorded as a silence rather than as a yes or a no. — Remote-first describes how the company works. Most remote-first companies still employ in a short list of countries, and nine silences converted into nine yeses is the commonest error in the whole capture.
 
 That they can probably employ from India. — That is your inference in a field meant for their words, and it will later be reported as a finding.
-
-That eligibility is unclear and needs asking. — Reasonable as a next step, and the field still records what the listing said, which is nothing.
 
 Improve: Mark every eligibility entry in step 4 as stated or inferred, and move the inferences out. Note the change in step 5.
 
@@ -1801,16 +1801,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You write that seventy-nine per cent of listings require a portfolio. Eleven of fourteen did. Is the percentage fine?
 
-- No. It removes the denominator, so it reads as a property of the hiring market rather than of your fourteen listings.
 - It is fine with the sample size stated nearby.
+- No. It removes the denominator, so it reads as a property of the hiring market rather than of your fourteen listings.
 - It is fine since the arithmetic is right.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It removes the denominator, so it reads as a property of the hiring market rather than of your fourteen listings. — Seventy-nine per cent of what? The honest answer — fourteen listings, public boards, eleven days — undoes the sentence. Eleven of fourteen carries its own answer.
-
 It is fine with the sample size stated nearby. — Nearby is not in the sentence, and the sentence is what gets quoted.
+
+No. It removes the denominator, so it reads as a property of the hiring market rather than of your fourteen listings. — Seventy-nine per cent of what? The honest answer — fourteen listings, public boards, eleven days — undoes the sentence. Eleven of fourteen carries its own answer.
 
 It is fine since the arithmetic is right. — The arithmetic is right and the implication is not.
 
@@ -1831,18 +1831,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Three listings want the designer to run research; two say a research team does it. What do you write?
 
-- Both, as a disagreement, because it means these are two different jobs with one title.
 - That employers generally expect some research involvement.
 - The majority position, since three is more than two.
+- Both, as a disagreement, because it means these are two different jobs with one title.
 
 <details>
 <summary>After your attempt</summary>
 
-Both, as a disagreement, because it means these are two different jobs with one title. — Some research involvement describes no job. Keeping the split gives you two applications: interviews and synthesis for one group, a decision record using somebody else’s findings for the other.
-
 That employers generally expect some research involvement. — A sentence both groups squeeze into and neither wants, describing a job nobody advertised.
 
 The majority position, since three is more than two. — Three against two in fourteen settles nothing, and the minority is a real kind of job.
+
+Both, as a disagreement, because it means these are two different jobs with one title. — Some research involvement describes no job. Keeping the split gives you two applications: interviews and synthesis for one group, a decision record using somebody else’s findings for the other.
 
 Improve: Record the disagreement and what it tells you in step 2. Note the change in step 5.
 
@@ -1861,18 +1861,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nine of your listings said nothing about eligibility. Can you write that remote roles rarely consider candidates in India?
 
+- Yes, if you say it is your impression.
 - No. Silence is not refusal, and rarely is a rate across a population you did not sample.
 - Yes, since only two stated it explicitly.
-- Yes, if you say it is your impression.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, if you say it is your impression. — Closer, and the place for it is the inference list rather than a sentence among the findings.
+
 No. Silence is not refusal, and rarely is a rate across a population you did not sample. — The nearest count — two state eligibility, nine state nothing — supports neither direction. If you believe it, it goes in the inference list marked as yours.
 
 Yes, since only two stated it explicitly. — Two stating it and nine saying nothing is not evidence that the nine would refuse.
-
-Yes, if you say it is your impression. — Closer, and the place for it is the inference list rather than a sentence among the findings.
 
 Improve: Move it to the inference list in step 3, marked as yours. Note the change in step 5.
 
@@ -2692,18 +2692,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You can definitely work with constraints — all three projects had them. Does the row get marked evidenced?
 
+- Yes, because an interviewer will ask about it rather than read a file.
 - Only if you can name a file. Constraints get worked around rather than written down, so the doing often leaves no trace.
 - Yes, since it is true of every project.
-- Yes, because an interviewer will ask about it rather than read a file.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, because an interviewer will ask about it rather than read a file. — They will ask, and the answer is much better when a decision record sits behind it.
+
 Only if you can name a file. Constraints get worked around rather than written down, so the doing often leaves no trace. — Six of sixteen evidenced marks lost their file in one pass. Capability and evidence are different columns, and the matrix asks about the second.
 
 Yes, since it is true of every project. — True and unshowable is exactly what partial is for.
-
-Yes, because an interviewer will ask about it rather than read a file. — They will ask, and the answer is much better when a decision record sits behind it.
 
 Improve: Put a file name beside every evidenced mark in step 2 and downgrade the ones with none. Record the change in step 5.
 
@@ -2722,18 +2722,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your matrix has a lot of empty cells. Does that mean you are not ready?
 
+- It depends on how many are empty.
 - It means you can name which cells are empty. Everybody’s matrix has them; most people cannot say which.
 - It means there is more to do before applying.
-- It depends on how many are empty.
 
 <details>
 <summary>After your attempt</summary>
 
+It depends on how many are empty. — It depends far more on which, and on how often those appeared in your listings.
+
 It means you can name which cells are empty. Everybody’s matrix has them; most people cannot say which. — Absence is information rather than a verdict. Ranked by how often each appeared in your sample, the empty cells become a plan.
 
 It means there is more to do before applying. — There always is, and waiting for a full matrix has its own cost. The next lesson closes one.
-
-It depends on how many are empty. — It depends far more on which, and on how often those appeared in your listings.
 
 Improve: Rank the absences by frequency in step 4 and attach the sample caveat. Record the change in step 5.
 
@@ -2752,18 +2752,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One project has a careful before-and-after measurement; two have nothing. Evidenced or partial?
 
-- Partial, with the reason: measured once, with the conditions, and not measured in the other two.
 - Evidenced, since one careful measurement is more than most people hold.
 - Evidenced, with a footnote about the other two.
+- Partial, with the reason: measured once, with the conditions, and not measured in the other two.
 
 <details>
 <summary>After your attempt</summary>
 
-Partial, with the reason: measured once, with the conditions, and not measured in the other two. — The reason is the part you use. Evidenced tells you nothing and does not survive being asked about the other two projects.
-
 Evidenced, since one careful measurement is more than most people hold. — Comparing to other applicants answers a different question from the one the cell asks.
 
 Evidenced, with a footnote about the other two. — That is a partial with its reason, marked a level up.
+
+Partial, with the reason: measured once, with the conditions, and not measured in the other two. — The reason is the part you use. Evidenced tells you nothing and does not survive being asked about the other two projects.
 
 Improve: Write what is missing beside every partial in step 3 rather than how close it is. Record the change in step 5.
 
@@ -3264,18 +3264,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your top-ranked gap is working with engineers. Should that be the one you close?
 
-- Only if you can close it with the access you already have. Frequency says which gap matters; access says which one you can close this month.
 - Yes, since it appeared in most of your listings.
 - Yes, and give it longer than a fortnight.
+- Only if you can close it with the access you already have. Frequency says which gap matters; access says which one you can close this month.
 
 <details>
 <summary>After your attempt</summary>
 
-Only if you can close it with the access you already have. Frequency says which gap matters; access says which one you can close this month. — Three weeks of open-source approaches produced one reply and no work. Dropping to the second-ranked gap produced a dated artefact in a fortnight.
-
 Yes, since it appeared in most of your listings. — It is the reason it is ranked first and not the reason it is closable.
 
 Yes, and give it longer than a fortnight. — Longer may work and it depends on other people deciding to include you, which is not a plan you control.
+
+Only if you can close it with the access you already have. Frequency says which gap matters; access says which one you can close this month. — Three weeks of open-source approaches produced one reply and no work. Dropping to the second-ranked gap produced a dated artefact in a fortnight.
 
 Improve: Choose a closable gap in step 1 and write why the one above it is not this month’s work. Record the change in step 5.
 
@@ -3325,17 +3325,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Shipping to production cannot be closed alone. What goes in your matrix?
 
 - An honest statement of the gap with the nearest adjacent evidence named.
-- A plan for how you would close it given the chance.
 - Nothing — leave the cell empty.
+- A plan for how you would close it given the chance.
 
 <details>
 <summary>After your attempt</summary>
 
 An honest statement of the gap with the nearest adjacent evidence named. — Nobody closes it alone, and saying so is the answer rather than a confession. A handover document is not team experience and it is the closest artefact to it.
 
-A plan for how you would close it given the chance. — Fine to mention and it evidences nothing today.
-
 Nothing — leave the cell empty. — The empty cell is right and the sentence beside it is what you will actually use when asked.
+
+A plan for how you would close it given the chance. — Fine to mention and it evidences nothing today.
 
 Improve: Write the honest sentence and the adjacent evidence in step 5. Record the change there too.
 
@@ -4132,18 +4132,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You are a designer. Should the resume show design?
 
+- Yes, since it is a chance to demonstrate craft.
 - No. It should be clear and extractable; the portfolio shows design. A resume that cannot be parsed is skimmed and set aside.
 - Yes, in a restrained way that still parses.
-- Yes, since it is a chance to demonstrate craft.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, since it is a chance to demonstrate craft. — The craft on show is layout of a document nobody asked you to lay out.
+
 No. It should be clear and extractable; the portfolio shows design. A resume that cannot be parsed is skimmed and set aside. — Two columns interleaved in plain text produced designed working alone Bengaluru 2024 research synthesis. Application systems and people copying lines both extract text.
 
 Yes, in a restrained way that still parses. — Restrained and parsing is just plain, arrived at cautiously.
-
-Yes, since it is a chance to demonstrate craft. — The craft on show is layout of a document nobody asked you to lay out.
 
 Improve: Check the export in step 4: select a line, copy it, and read the plain-text version. Record the change in step 5.
 
@@ -4162,18 +4162,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your resume says “led design on three products”. All three were done alone. Is that acceptable shorthand?
 
-- No. Led implies people led. Designed, working alone is the same work stated accurately.
 - Yes, since you did lead the design decisions.
 - Yes, if the category label says self-directed.
+- No. Led implies people led. Designed, working alone is the same work stated accurately.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Led implies people led. Designed, working alone is the same work stated accurately. — It is the commonest inflation on a junior resume, and it is the first line a challenge pass catches. The work behind it is real and worth keeping.
-
 Yes, since you did lead the design decisions. — Everybody who designs alone makes the decisions, and led is not the word for it.
 
 Yes, if the category label says self-directed. — The label helps and the verb still claims a team.
+
+No. Led implies people led. Designed, working alone is the same work stated accurately. — It is the commonest inflation on a junior resume, and it is the first line a challenge pass catches. The work behind it is real and worth keeping.
 
 Improve: Trace the line to a matrix cell in step 2 and rewrite it. Record the change in step 5.
 
@@ -4192,16 +4192,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why have somebody else challenge each line rather than re-reading it yourself?
 
-- Because your own reading supplies the evidence from memory, and theirs asks what is behind this.
 - To catch typing errors and formatting problems.
+- Because your own reading supplies the evidence from memory, and theirs asks what is behind this.
 - Because a second opinion on wording is useful.
 
 <details>
 <summary>After your attempt</summary>
 
-Because your own reading supplies the evidence from memory, and theirs asks what is behind this. — Four lines could not be defended in one twenty-minute pass. An answer that comes out vague, or louder, marks a line claiming more than the artefact.
-
 To catch typing errors and formatting problems. — A proofread is a different job. Ask for challenge rather than correction.
+
+Because your own reading supplies the evidence from memory, and theirs asks what is behind this. — Four lines could not be defended in one twenty-minute pass. An answer that comes out vague, or louder, marks a line claiming more than the artefact.
 
 Because a second opinion on wording is useful. — It is, and the point here is which lines have nothing behind them.
 
@@ -4898,17 +4898,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 The profile form has fields for a phone number, a personal email and your current employer. Fill them in?
 
 - Only what is on your include list. A public profile is permanent and indexed, so filling a field is publishing.
-- Yes — a complete profile looks more professional.
 - Yes, and remove them if it becomes a problem.
+- Yes — a complete profile looks more professional.
 
 <details>
 <summary>After your attempt</summary>
 
 Only what is on your include list. A public profile is permanent and indexed, so filling a field is publishing. — Deleting the fields later removes them from the page and not from everywhere they were copied to. Recruitment calls continued for months afterwards.
 
-Yes — a complete profile looks more professional. — Completeness is what the form rewards, and it is not what a reader is deciding on.
-
 Yes, and remove them if it becomes a problem. — That is exactly the sequence that does not work, because removal is not retroactive.
+
+Yes — a complete profile looks more professional. — Completeness is what the form rewards, and it is not what a reader is deciding on.
 
 Improve: Write the include and exclude lists in step 1, then edit the profile to match. Record the change in step 5.
 
@@ -4928,17 +4928,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 The shop owner was pleased with the work and agreed to it being shown. Can you name the shop on your profile?
 
 - No, not without asking. Agreeing to the work being shown is not agreeing to be identified, and a profile line is indexed against the name.
-- Yes — naming him is proper credit for his generosity.
 - Yes, since the case study already describes the project.
+- Yes — naming him is proper credit for his generosity.
 
 <details>
 <summary>After your attempt</summary>
 
 No, not without asking. Agreeing to the work being shown is not agreeing to be identified, and a profile line is indexed against the name. — He would rather not, because the project is about how badly the old process worked and his customers can read. A small repair business carries the same weight.
 
-Yes — naming him is proper credit for his generosity. — A generous instinct that publishes information about somebody who has not agreed to it.
-
 Yes, since the case study already describes the project. — The case study is read by people who go looking. A profile line is searchable against the shop.
+
+Yes — naming him is proper credit for his generosity. — A generous instinct that publishes information about somebody who has not agreed to it.
 
 Improve: Check every proper noun in step 3 against what was agreed, and replace what is not permitted. Record the change in step 5.
 
@@ -4957,18 +4957,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does more detail make a profile more credible?
 
-- No. Specific evidence makes it credible; volume makes it skimmable and generic.
-- Yes, within reason — a reader wants to know who you are.
 - Yes for a career changer, who has more to explain.
+- Yes, within reason — a reader wants to know who you are.
+- No. Specific evidence makes it credible; volume makes it skimmable and generic.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Specific evidence makes it credible; volume makes it skimmable and generic. — Three sentences and a link outperform six paragraphs of adjectives. Three project lines saying what each shows are the part anybody reads.
+Yes for a career changer, who has more to explain. — The transition account is ninety seconds when asked. A profile is not where it goes.
 
 Yes, within reason — a reader wants to know who you are. — They want to know what you can show, which takes three lines.
 
-Yes for a career changer, who has more to explain. — The transition account is ninety seconds when asked. A profile is not where it goes.
+No. Specific evidence makes it credible; volume makes it skimmable and generic. — Three sentences and a link outperform six paragraphs of adjectives. Three project lines saying what each shows are the part anybody reads.
 
 Improve: Cut the profile in step 2 to the projects, what each shows, and a link. Record the change in step 5.
 
@@ -5647,18 +5647,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Do you need a compelling story about why you changed fields?
 
+- Yes, if it is true as well as compelling.
 - You need a true one, told briefly. Interviewers hear constructed narratives constantly and discount them.
 - Yes — the story is what makes you memorable.
-- Yes, if it is true as well as compelling.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, if it is true as well as compelling. — Shaping a true account into an inevitable one is where the specifics get smoothed out.
+
 You need a true one, told briefly. Interviewers hear constructed narratives constantly and discount them. — Eight years of not knowing whether the work worked, and one wrong brief nobody had checked, produces follow-up questions. Always been drawn to never has.
 
 Yes — the story is what makes you memorable. — Specifics make you memorable. The story is what everybody else brings.
-
-Yes, if it is true as well as compelling. — Shaping a true account into an inevitable one is where the specifics get smoothed out.
 
 Improve: Remove what was shaped to sound inevitable in step 1 and write what happened. Record the change in step 5.
 
@@ -5678,17 +5678,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your account runs to two minutes forty. What do you cut?
 
 - Transitions and scene-setting. The counts, the projects and the thing that went wrong all stay.
-- The longest sentences, which are usually the detailed ones.
 - One of the two lists, since transfer and non-transfer overlap.
+- The longest sentences, which are usually the detailed ones.
 
 <details>
 <summary>After your attempt</summary>
 
 Transitions and scene-setting. The counts, the projects and the thing that went wrong all stay. — Cutting the specifics leaves ninety seconds of joining material and produces no follow-up question, which is the whole point of the ninety seconds.
 
-The longest sentences, which are usually the detailed ones. — Those are the specifics, and they are the only part that gives somebody something to ask about.
-
 One of the two lists, since transfer and non-transfer overlap. — They do different jobs, and the non-transfer list is the one people remember.
+
+The longest sentences, which are usually the detailed ones. — Those are the specifics, and they are the only part that gives somebody something to ask about.
 
 Improve: Cut transitions rather than specifics in step 4 and time it again. Record the change in step 5.
 
@@ -5707,16 +5707,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is it safe to say that your old agency never spoke to users?
 
-- No. It is a complaint about former colleagues, and it tells a listener how you will speak about them later.
 - Yes, if it is true and said neutrally.
+- No. It is a complaint about former colleagues, and it tells a listener how you will speak about them later.
 - Yes — it explains why you left.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It is a complaint about former colleagues, and it tells a listener how you will speak about them later. — The same fact is usable without it: one brief was wrong and nobody had asked anyone. That is about the work rather than the people, and it also stops you undercutting your own transfer list.
-
 Yes, if it is true and said neutrally. — Never and ever rarely arrive neutrally, and the listener hears the pattern rather than the fact.
+
+No. It is a complaint about former colleagues, and it tells a listener how you will speak about them later. — The same fact is usable without it: one brief was wrong and nobody had asked anyone. That is about the work rather than the people, and it also stops you undercutting your own transfer list.
 
 Yes — it explains why you left. — The wrong brief explains that, with a specific instead of a verdict on an organisation.
 
@@ -6384,17 +6384,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You have written one good message. Does sending it to thirty people give you thirty chances?
 
 - No. Anything that must fit thirty recipients names nothing specific, and the recognisable generic paragraph is attached to your name.
-- Yes, if the message is honest and well written.
 - Yes, provided you change more than the name.
+- Yes, if the message is honest and well written.
 
 <details>
 <summary>After your attempt</summary>
 
 No. Anything that must fit thirty recipients names nothing specific, and the recognisable generic paragraph is attached to your name. — Thirty produced one reply asking which of their projects was meant. Six written from scratch produced two, because each contained something that could only have been written to that person.
 
-Yes, if the message is honest and well written. — It was both. The paragraph about their work is the one that cannot survive being reused.
-
 Yes, provided you change more than the name. — Changing more of it is writing it from scratch, slowly.
+
+Yes, if the message is honest and well written. — It was both. The paragraph about their work is the one that cannot survive being reused.
 
 Improve: Rewrite each message from scratch in step 2 after reading something of theirs. Record the change in step 5.
 
@@ -6413,16 +6413,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is asking a stranger to refer you for a role a reasonable ask?
 
-- No. It asks them to spend their own credibility inside their company on somebody they have not met.
 - Yes, if you ask politely and make it easy to decline.
+- No. It asks them to spend their own credibility inside their company on somebody they have not met.
 - Yes, since the worst case is no reply.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It asks them to spend their own credibility inside their company on somebody they have not met. — The same person might do it after twenty minutes of conversation. One question or twenty minutes is what a stranger can grant without arranging anything.
-
 Yes, if you ask politely and make it easy to decline. — Politeness does not change what is being asked for.
+
+No. It asks them to spend their own credibility inside their company on somebody they have not met. — The same person might do it after twenty minutes of conversation. One question or twenty minutes is what a stranger can grant without arranging anything.
 
 Yes, since the worst case is no reply. — The worse case is a reply that now has to say no, which ends the exchange.
 
@@ -6443,18 +6443,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Three people have not replied after two weeks. What now?
 
-- One follow-up each, after about ten days, adding something rather than repeating. Then silence is the answer.
 - Keep following up; persistence is usually advised.
 - Nothing — a non-reply is a no.
+- One follow-up each, after about ten days, adding something rather than repeating. Then silence is the answer.
 
 <details>
 <summary>After your attempt</summary>
 
-One follow-up each, after about ten days, adding something rather than repeating. Then silence is the answer. — One of three answered the single follow-up. A third message makes your name memorable in the wrong way, in a field where people talk to each other.
-
 Keep following up; persistence is usually advised. — A non-reply costs nothing. A third message converts it into a bad impression.
 
 Nothing — a non-reply is a no. — Often true, and one follow-up is cheap and does sometimes produce a conversation.
+
+One follow-up each, after about ten days, adding something rather than repeating. Then silence is the answer. — One of three answered the single follow-up. A third message makes your name memorable in the wrong way, in a field where people talk to each other.
 
 Improve: Write the follow-up interval and the limit of one in step 4, before sending anything. Record the change in step 5.
 
@@ -7126,18 +7126,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should you walk through all three projects to show range?
 
+- Yes, if they ask about range specifically.
 - No. You will show one properly or three badly; range is visible in the portfolio and the conversation is for depth.
 - Yes, briefly, to establish breadth first.
-- Yes, if they ask about range specifically.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, if they ask about range specifically. — If they ask, show them. Unasked, one project properly.
+
 No. You will show one properly or three badly; range is visible in the portfolio and the conversation is for depth. — One project under interruption, four times, twice on the measurement and twice on the sample, is what a walkthrough actually has to survive.
 
 Yes, briefly, to establish breadth first. — Brief walkthroughs of three projects is the shape that leaves no time for the follow-ups.
-
-Yes, if they ask about range specifically. — If they ask, show them. Unasked, one project properly.
 
 Improve: Run the practice on one project, with at least four interruptions, in step 3. Record the change in step 5.
 
@@ -7156,18 +7156,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have prepared good answers about how you handle disagreement. Is that enough?
 
-- No. The first follow-up is always for an example, and one assembled under pressure loses its detail at the second question.
-- Yes, since the questions are asked generally.
 - Yes, with an example ready in case they ask.
+- Yes, since the questions are asked generally.
+- No. The first follow-up is always for an example, and one assembled under pressure loses its detail at the second question.
 
 <details>
 <summary>After your attempt</summary>
 
-No. The first follow-up is always for an example, and one assembled under pressure loses its detail at the second question. — Three occasions with dates — a disagreement settled by testing, a failed repair, a recruitment that produced nobody — survive three questions because everything asked for is in the records.
+Yes, with an example ready in case they ask. — Ready means written and checked against three follow-ups, which is this step.
 
 Yes, since the questions are asked generally. — They are phrased generally and answered specifically, which is what the follow-up is for.
 
-Yes, with an example ready in case they ask. — Ready means written and checked against three follow-ups, which is this step.
+No. The first follow-up is always for an example, and one assembled under pressure loses its detail at the second question. — Three occasions with dates — a disagreement settled by testing, a failed repair, a recruitment that produced nobody — survive three questions because everything asked for is in the records.
 
 Improve: Write three occasions with dates in step 1 and the three follow-ups each must survive. Record the change in step 5.
 
@@ -7186,18 +7186,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your practice partner said it went well. Is that your review?
 
-- No. Watch the recording and name two specific weaknesses; a listener following the content cannot hear the shape of your answers.
-- It is a useful signal, combined with your own sense of it.
 - Yes, if they were asked to be critical.
+- It is a useful signal, combined with your own sense of it.
+- No. Watch the recording and name two specific weaknesses; a listener following the content cannot hear the shape of your answers.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Watch the recording and name two specific weaknesses; a listener following the content cannot hear the shape of your answers. — Twice, a why was answered with a what, and the limits answer defended before conceding. Both are invisible in conversation and audible on playback.
+Yes, if they were asked to be critical. — Being asked to be critical produces general criticism, which is the thing you cannot act on.
 
 It is a useful signal, combined with your own sense of it. — Both are impressions of the content. The recording catches the order of your sentences.
 
-Yes, if they were asked to be critical. — Being asked to be critical produces general criticism, which is the thing you cannot act on.
+No. Watch the recording and name two specific weaknesses; a listener following the content cannot hear the shape of your answers. — Twice, a why was answered with a what, and the limits answer defended before conceding. Both are invisible in conversation and audible on playback.
 
 Improve: Watch the recording in step 4 and write two specific weaknesses. Record the change in step 5.
 
@@ -7870,17 +7870,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 A take-home says four hours. You have eleven to spare. Does doing more show enthusiasm?
 
 - No. It shows you cannot scope, which is what a timed exercise exists to test.
-- Yes, as long as you do not say how long it took.
 - Yes, since the strongest submission wins.
+- Yes, as long as you do not say how long it took.
 
 <details>
 <summary>After your attempt</summary>
 
 No. It shows you cannot scope, which is what a timed exercise exists to test. — The feedback on eleven hours of work was that they could not tell how it would go against a real deadline, because nothing had been cut. It is also quietly unfair to candidates who fit the time.
 
-Yes, as long as you do not say how long it took. — Not saying makes it worse: the submission is then unlabelled work of unknown cost.
-
 Yes, since the strongest submission wins. — The strongest submission is the one that fits the time and explains its cuts.
+
+Yes, as long as you do not say how long it took. — Not saying makes it worse: the submission is then unlabelled work of unknown cost.
 
 Improve: Write the fixed-time rule and the cuts sentence in step 1. Record the change in step 5.
 
@@ -7929,16 +7929,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 In a forty-minute live exercise, when should you start drawing?
 
-- After asking who it is for, what exists now and what is fixed. Thinking aloud is what is being assessed.
 - Straight away, to use the time well.
+- After asking who it is for, what exists now and what is fixed. Thinking aloud is what is being assessed.
 - After a minute or two of clarifying.
 
 <details>
 <summary>After your attempt</summary>
 
-After asking who it is for, what exists now and what is fixed. Thinking aloud is what is being assessed. — Silence followed by a good sketch tells them almost nothing. Drawing early comes from wanting to look productive, and it is the usual failure.
-
 Straight away, to use the time well. — Forty minutes of drawing from an unexamined brief is the answer to a question nobody asked.
+
+After asking who it is for, what exists now and what is fixed. Thinking aloud is what is being assessed. — Silence followed by a good sketch tells them almost nothing. Drawing early comes from wanting to look productive, and it is the usual failure.
 
 After a minute or two of clarifying. — Closer, and three real questions about constraints take longer than that and change what you draw.
 
@@ -8582,18 +8582,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should you apply to everything and see what sticks?
 
-- No. Volume without records teaches you nothing and burns the effort you will need in month three.
 - Early on, yes, to find out what the responses look like.
 - Yes, if you keep a record of all of it.
+- No. Volume without records teaches you nothing and burns the effort you will need in month three.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Volume without records teaches you nothing and burns the effort you will need in month three. — Eleven applications in week one, two rushed ones in week three. Nine of the eleven were roles the matrix could evidence almost nothing for, and the two considered ones both produced replies.
-
 Early on, yes, to find out what the responses look like. — The responses to hurried applications tell you about hurried applications, and each one carries your name.
 
 Yes, if you keep a record of all of it. — The record helps and the cadence is what is still running in week twelve.
+
+No. Volume without records teaches you nothing and burns the effort you will need in month three. — Eleven applications in week one, two rushed ones in week three. Nine of the eleven were roles the matrix could evidence almost nothing for, and the two considered ones both produced replies.
 
 Improve: Halve your weekly number in step 2 and write the rest day. Record the change in step 5.
 
@@ -8613,17 +8613,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your vacancy comparison is three months old. Can you still use it?
 
 - Only with its gathering date attached, and it is time to repeat the pass.
-- Yes — hiring patterns do not change that fast.
 - No, and the old one should be discarded.
+- Yes — hiring patterns do not change that fast.
 
 <details>
 <summary>After your attempt</summary>
 
 Only with its gathering date attached, and it is time to repeat the pass. — Vacancies expire within weeks. The second pass takes about two hours because the employer list already exists, and an undated conclusion quietly becomes a belief about the market.
 
-Yes — hiring patterns do not change that fast. — The individual listings certainly do, and they are what the comparison is made of.
-
 No, and the old one should be discarded. — Keep it with its date. Two dated passes are more informative than one.
+
+Yes — hiring patterns do not change that fast. — The individual listings certainly do, and they are what the comparison is made of.
 
 Improve: Set the re-gathering interval in step 3 and date every existing conclusion. Record the change in step 5.
 

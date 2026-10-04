@@ -537,18 +537,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You are told the product “feels dated” and asked to add motion. What do you do first?
 
-- Ask what question each proposed animation would answer, and add none that answers nothing.
-- Add a transition between screens, since every current product has one.
 - Animate the things people look at most, so the product feels alive.
+- Add a transition between screens, since every current product has one.
+- Ask what question each proposed animation would answer, and add none that answers nothing.
 
 <details>
 <summary>After your attempt</summary>
 
-Ask what question each proposed animation would answer, and add none that answers nothing. — Movement that answers no question adds waiting rather than quality. What people read as polish is nearly always fast acknowledgement, not the amount of movement.
+Animate the things people look at most, so the product feels alive. — Those are the things people are trying to read. Movement there costs reading time and returns nothing.
 
 Add a transition between screens, since every current product has one. — A transition between screens taxes every navigation in the product. It is usually the most expensive item on the list and it explains nothing.
 
-Animate the things people look at most, so the product feels alive. — Those are the things people are trying to read. Movement there costs reading time and returns nothing.
+Ask what question each proposed animation would answer, and add none that answers nothing. — Movement that answers no question adds waiting rather than quality. What people read as polish is nearly always fast acknowledgement, not the amount of movement.
 
 Improve: Look at your answers-nothing box in step 2. Move each of those items into the removals box in step 4, then record the change in step 5.
 
@@ -568,17 +568,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 A screen slides in from the right when you tap a class, and you labelled it continuity. What is worth checking?
 
 - Whether anything was actually to the right a moment before, since otherwise the movement claims a relationship that does not exist.
-- Whether 400 milliseconds matches the other durations in the product.
 - Whether the easing is soft enough at both ends.
+- Whether 400 milliseconds matches the other durations in the product.
 
 <details>
 <summary>After your attempt</summary>
 
 Whether anything was actually to the right a moment before, since otherwise the movement claims a relationship that does not exist. — Continuity works by showing where something came from. Where there was no “there”, a slide is a direction invented to fill time.
 
-Whether 400 milliseconds matches the other durations in the product. — Consistency matters when you write the rule, and a matching duration cannot rescue an animation that explains nothing.
-
 Whether the easing is soft enough at both ends. — Softening the ends makes an unexplained movement pleasanter. It is still 400 milliseconds of waiting for nothing.
+
+Whether 400 milliseconds matches the other durations in the product. — Consistency matters when you write the rule, and a matching duration cannot rescue an animation that explains nothing.
 
 Improve: Re-read every item you labelled continuity in step 2. Where nothing was on screen for it to come from, relabel it and record the relabel in step 5.
 
@@ -597,18 +597,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A small bounce on the confirmation screen answers nothing. Must it go?
 
-- It can stay, if it delays nothing, does not repeat, and is not under a finger about to tap.
-- It must go, because you removed everything else that answers nothing.
 - Keep it, and add a matching one to every screen so the product feels consistent.
+- It must go, because you removed everything else that answers nothing.
+- It can stay, if it delays nothing, does not repeat, and is not under a finger about to tap.
 
 <details>
 <summary>After your attempt</summary>
 
-It can stay, if it delays nothing, does not repeat, and is not under a finger about to tap. — Decoration is not banned. The test is cost, and a flourish on a screen where nobody is waiting for anything costs nothing.
+Keep it, and add a matching one to every screen so the product feels consistent. — Repeating it is what turns a free flourish into a tax. The second time it is noise and the tenth time it is a delay.
 
 It must go, because you removed everything else that answers nothing. — The rule is about cost rather than purity. Removing something free buys you nothing and loses a small pleasure.
 
-Keep it, and add a matching one to every screen so the product feels consistent. — Repeating it is what turns a free flourish into a tax. The second time it is noise and the tenth time it is a delay.
+It can stay, if it delays nothing, does not repeat, and is not under a finger about to tap. — Decoration is not banned. The test is cost, and a flourish on a screen where nobody is waiting for anything costs nothing.
 
 Improve: Check your decoration-kept box in step 4. Where a kept decoration repeats or delays anything, move it into the removals box and record it in step 5.
 
@@ -991,21 +991,21 @@ A supplied made up case. Pressing Book sends a request that takes about four sec
 
 Which proposal acknowledges the press without claiming an outcome that has not happened?
 
-- The button darkens on touch, its label becomes “Booking…”, it stops accepting presses, and the result message replaces it when the reply arrives.
-- The confirmation message appears the moment Book is pressed, and is taken away again if the booking turns out to have failed.
 - A spinning shape covers the whole screen until the reply arrives.
+- The confirmation message appears the moment Book is pressed, and is taken away again if the booking turns out to have failed.
 - Nothing changes, because four seconds is short and the message will arrive on its own.
+- The button darkens on touch, its label becomes “Booking…”, it stops accepting presses, and the result message replaces it when the reply arrives.
 
 <details>
 <summary>After your attempt</summary>
 
-The button darkens on touch, its label becomes “Booking…”, it stops accepting presses, and the result message replaces it when the reply arrives. — The press, the acknowledgement and the outcome stay separate, and the person can always tell which of the three they are in.
+A spinning shape covers the whole screen until the reply arrives. — It does acknowledge the press, and it also takes the screen away, so the person cannot re-read what they are booking while they wait.
 
 The confirmation message appears the moment Book is pressed, and is taken away again if the booking turns out to have failed. — This tells the person something that is not yet true. Removing a confirmation afterwards is far worse than a short honest wait.
 
-A spinning shape covers the whole screen until the reply arrives. — It does acknowledge the press, and it also takes the screen away, so the person cannot re-read what they are booking while they wait.
-
 Nothing changes, because four seconds is short and the message will arrive on its own. — Four silent seconds is where second presses come from, and a second press can make a second booking.
+
+The button darkens on touch, its label becomes “Booking…”, it stops accepting presses, and the result message replaces it when the reply arrives. — The press, the acknowledgement and the outcome stay separate, and the person can always tell which of the three they are in.
 
 Write the middle moment for each of your three controls, and give it a change of words rather than only a shape that spins.
 
@@ -1184,16 +1184,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your remove control appears only when the pointer rests on the row. What breaks?
 
-- On a touch screen there is no hover, so the control never appears and the action has no route at all.
 - Nothing breaks, because people can tap and hold to get the same result.
+- On a touch screen there is no hover, so the control never appears and the action has no route at all.
 - It only breaks for people who have never used a mouse.
 
 <details>
 <summary>After your attempt</summary>
 
-On a touch screen there is no hover, so the control never appears and the action has no route at all. — A finger has no resting state. Anything only a pointer can reveal is missing entirely for most of your users.
-
 Nothing breaks, because people can tap and hold to get the same result. — Tap and hold is a different gesture with its own meaning on each platform, and nothing on the screen tells anyone to try it.
+
+On a touch screen there is no hover, so the control never appears and the action has no route at all. — A finger has no resting state. Anything only a pointer can reveal is missing entirely for most of your users.
 
 It only breaks for people who have never used a mouse. — It breaks for everyone on a phone, whatever they have used before. The pointer is what is missing, not the experience.
 
@@ -1214,18 +1214,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You removed the focus outline because it clashed with the design. What have you removed?
 
-- The only sign a keyboard user has of where they are on the screen.
-- A browser default that the design replaces automatically.
 - Something only screen-reader users rely on.
+- A browser default that the design replaces automatically.
+- The only sign a keyboard user has of where they are on the screen.
 
 <details>
 <summary>After your attempt</summary>
 
-The only sign a keyboard user has of where they are on the screen. — Focus is position, not decoration. With the outline gone the person is still moving through the page and can no longer see where they have got to.
+Something only screen-reader users rely on. — A screen reader announces position aloud. The visible outline is for people who are looking at the screen and using a keyboard.
 
 A browser default that the design replaces automatically. — Nothing replaces it unless you specify a replacement. Removing it without one leaves the person with no indication at all.
 
-Something only screen-reader users rely on. — A screen reader announces position aloud. The visible outline is for people who are looking at the screen and using a keyboard.
+The only sign a keyboard user has of where they are on the screen. — Focus is position, not decoration. With the outline gone the person is still moving through the page and can no longer see where they have got to.
 
 Improve: Add a focus line to each control in step 2, specifying an outline that stays visible on every background you use, and record it in step 5.
 
@@ -1245,17 +1245,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your pressed state is the same button in a slightly different blue. What is the risk?
 
 - Someone who cannot separate those two blues sees no change at all, so the press goes unacknowledged for them.
-- Very little, as long as the two blues are far enough apart on the colour wheel.
 - It is only a problem if the button is small.
+- Very little, as long as the two blues are far enough apart on the colour wheel.
 
 <details>
 <summary>After your attempt</summary>
 
 Someone who cannot separate those two blues sees no change at all, so the press goes unacknowledged for them. — A state carried by colour alone is a state some people never receive. Add a second signal: a border, a shift, a change of words.
 
-Very little, as long as the two blues are far enough apart on the colour wheel. — Distance on a colour wheel is not the same as distance for a person with reduced colour vision, or for anyone outdoors in bright light.
-
 It is only a problem if the button is small. — Size changes how easy the button is to hit, not whether the change of state can be seen once it happens.
+
+Very little, as long as the two blues are far enough apart on the colour wheel. — Distance on a colour wheel is not the same as distance for a person with reduced colour vision, or for anyone outdoors in bright light.
 
 Improve: Use your greyscale-check box in step 2. For any state that disappears without colour, add a second signal to that control and record it in step 5.
 
@@ -1691,21 +1691,21 @@ A supplied made up timing test. The same panel transition was tried at three dur
 
 Which duration do you keep, and on what grounds?
 
-- 200 milliseconds, because it is the shortest one where the travel is still visible enough to show where the panel came from.
 - 100 milliseconds, because faster is always better.
-- 400 milliseconds, because the movement is easier to follow.
 - Any of the three, since the difference is too small for a person to notice.
+- 200 milliseconds, because it is the shortest one where the travel is still visible enough to show where the panel came from.
+- 400 milliseconds, because the movement is easier to follow.
 
 <details>
 <summary>After your attempt</summary>
 
-200 milliseconds, because it is the shortest one where the travel is still visible enough to show where the panel came from. — Duration is set by the work the movement has to do. The shortest that still explains is the right one, and here that is the middle value.
-
 100 milliseconds, because faster is always better. — Faster is usually better and is not a rule. At 100 the panel arrives without showing its journey, so the time is spent and the explanation never lands.
 
-400 milliseconds, because the movement is easier to follow. — Easier to follow stops being useful once the relationship has landed. Everything after that point is the person waiting.
-
 Any of the three, since the difference is too small for a person to notice. — The gap between 100 and 400 milliseconds is roughly the gap between instant and slow. It is one of the few timing differences almost everybody feels.
+
+200 milliseconds, because it is the shortest one where the travel is still visible enough to show where the panel came from. — Duration is set by the work the movement has to do. The shortest that still explains is the right one, and here that is the middle value.
+
+400 milliseconds, because the movement is easier to follow. — Easier to follow stops being useful once the relationship has landed. Everything after that point is the person waiting.
 
 Run the same test on your own three, and write down which route you used: drawn frames flicked by hand, or a free prototyping tool.
 
@@ -1808,16 +1808,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A settings screen replaces the class list. Nothing on the list turns into anything on the settings screen. What transition is honest?
 
-- A short fade, because nothing moved from anywhere and a slide would claim a direction that does not exist.
 - A slide from the right, because that is the usual direction for going deeper.
+- A short fade, because nothing moved from anywhere and a slide would claim a direction that does not exist.
 - A slide from the right, but faster, so the cost is smaller.
 
 <details>
 <summary>After your attempt</summary>
 
-A short fade, because nothing moved from anywhere and a slide would claim a direction that does not exist. — A fade says “this is different now” and claims nothing more. That is exactly true, and it is the cheapest thing you can say.
-
 A slide from the right, because that is the usual direction for going deeper. — The convention describes a spatial relationship. Where there is no such relationship, the convention becomes a small untruth that also costs time.
+
+A short fade, because nothing moved from anywhere and a slide would claim a direction that does not exist. — A fade says “this is different now” and claims nothing more. That is exactly true, and it is the cheapest thing you can say.
 
 A slide from the right, but faster, so the cost is smaller. — Shortening it reduces the cost and not the claim. The direction is still invented, and the person still learns nothing from it.
 
@@ -1838,16 +1838,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have set every transition in the product to 250 milliseconds so it feels consistent. What is wrong with that?
 
-- Distance sets duration, so a small nearby change is now slow and a large one may be too quick to follow.
 - Nothing: one value is easier to remember and easier to build.
+- Distance sets duration, so a small nearby change is now slow and a large one may be too quick to follow.
 - The problem is the number, and 200 would be a better single value.
 
 <details>
 <summary>After your attempt</summary>
 
-Distance sets duration, so a small nearby change is now slow and a large one may be too quick to follow. — A duration is not a brand value. A tick appearing beside a field and a panel crossing half the screen have different distances, so they need different times.
-
 Nothing: one value is easier to remember and easier to build. — One value is easier and it makes half the product feel sluggish. Three named values are almost as easy and fit the work being done.
+
+Distance sets duration, so a small nearby change is now slow and a large one may be too quick to follow. — A duration is not a brand value. A tick appearing beside a field and a panel crossing half the screen have different distances, so they need different times.
 
 The problem is the number, and 200 would be a better single value. — Any single value has the same fault at a different point. The fix is to set duration from distance rather than to move the one number.
 
@@ -1868,16 +1868,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A panel slides in while the list behind it fades out and the heading changes size. What should you do?
 
-- Choose the one carrying the relationship, then sequence or drop the others so a person has one thing to follow.
 - Keep all three but shorten each, so the whole thing is over quickly.
+- Choose the one carrying the relationship, then sequence or drop the others so a person has one thing to follow.
 - Keep all three and stagger the easings so they feel different from each other.
 
 <details>
 <summary>After your attempt</summary>
 
-Choose the one carrying the relationship, then sequence or drop the others so a person has one thing to follow. — Two movements at once compete for the same attention and neither is read. Sequencing costs a little time; running them together costs the explanation.
-
 Keep all three but shorten each, so the whole thing is over quickly. — Three short movements at once is still three things happening at once. Speed does not make simultaneous movement legible.
+
+Choose the one carrying the relationship, then sequence or drop the others so a person has one thing to follow. — Two movements at once compete for the same attention and neither is read. Sequencing costs a little time; running them together costs the explanation.
 
 Keep all three and stagger the easings so they feel different from each other. — Different easings make them distinguishable in a slow-motion recording. At real speed the eye still has three things to track.
 
@@ -2580,18 +2580,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The plan is to add reduced-motion support at the end, once the animations are settled. What goes wrong?
 
+- It costs slightly more time to do it late than to do it early.
 - Done at the end it becomes one switch that turns everything off, which strips out the explanations along with the decoration.
 - Nothing goes wrong, as long as the switch is thorough.
-- It costs slightly more time to do it late than to do it early.
 
 <details>
 <summary>After your attempt</summary>
 
+It costs slightly more time to do it late than to do it early. — The cost is not time, it is meaning. What is lost is the information the movement was carrying, and nobody notices it is gone.
+
 Done at the end it becomes one switch that turns everything off, which strips out the explanations along with the decoration. — Designed alongside the original, each animation gets its own quieter version and keeps its meaning. Designed afterwards, there is only time for a single blunt rule.
 
 Nothing goes wrong, as long as the switch is thorough. — Thoroughness is the problem here rather than the cure. A thorough off switch removes the loading signal and the origin of every panel.
-
-It costs slightly more time to do it late than to do it early. — The cost is not time, it is meaning. What is lost is the information the movement was carrying, and nobody notices it is gone.
 
 Improve: Give every animation in your pairs section in step 2 a reduced version now rather than a single rule, and record the change in step 5.
 
@@ -2610,16 +2610,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 With the setting on, your loading indicator disappears completely. Is that acceptable?
 
-- It is not, because the person is still waiting and now has nothing telling them the product is working.
 - It is, because the setting is a request for no motion and you are honouring it.
+- It is not, because the person is still waiting and now has nothing telling them the product is working.
 - It is, as long as the outcome message eventually arrives.
 
 <details>
 <summary>After your attempt</summary>
 
-It is not, because the person is still waiting and now has nothing telling them the product is working. — Essential motion has to survive in some form. A small dot fading in one place, beside a change of words, says the same thing without travel.
-
 It is, because the setting is a request for no motion and you are honouring it. — The request is for less movement, not for less information. Reduced is not removed, and a silent wait is a worse experience than a quiet signal.
+
+It is not, because the person is still waiting and now has nothing telling them the product is working. — Essential motion has to survive in some form. A small dot fading in one place, beside a change of words, says the same thing without travel.
 
 It is, as long as the outcome message eventually arrives. — The gap before that message is exactly the moment the person needs covering. Eventually is not an acknowledgement.
 
@@ -2641,17 +2641,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You turned the setting on, walked the task, and everything felt fine. What can you claim?
 
 - That your reduced versions work on your device for you, and nothing about how they feel to people who need the setting.
-- That the reduced versions are comfortable for people with motion sensitivity.
 - That reduced motion is now handled and the work is finished.
+- That the reduced versions are comfortable for people with motion sensitivity.
 
 <details>
 <summary>After your attempt</summary>
 
 That your reduced versions work on your device for you, and nothing about how they feel to people who need the setting. — Your own walk is a check, not a test with affected users. Writing the limit down is what keeps the claim honest when someone reads your work later.
 
-That the reduced versions are comfortable for people with motion sensitivity. — You have no evidence about those people. One person’s comfortable walk says nothing about a symptom they do not experience.
-
 That reduced motion is now handled and the work is finished. — Handled on one device by one person, with the parts you happened to walk through. That is worth recording as exactly that much.
+
+That the reduced versions are comfortable for people with motion sensitivity. — You have no evidence about those people. One person’s comfortable walk says nothing about a symptom they do not experience.
 
 Improve: Write the limit in your limits-statement box in step 5, naming the device and saying plainly who you have not tested with, then note it in step 5 as well.
 
@@ -3067,21 +3067,21 @@ Supplied made-up results. Three people were each asked to remove a class from a 
 
 What do these three attempts tell you about the swipe?
 
-- The swipe is a shortcut for people who already know it, and the real route is whatever those three could find.
-- They needed a hint, so a short tip on first use would fix it.
 - Three people is too few to conclude anything.
+- The swipe is a shortcut for people who already know it, and the real route is whatever those three could find.
 - The swipe should be deleted, since nobody used it.
+- They needed a hint, so a short tip on first use would fix it.
 
 <details>
 <summary>After your attempt</summary>
 
-The swipe is a shortcut for people who already know it, and the real route is whatever those three could find. — Three people wanted the action and none of them found the gesture. That makes the gesture an extra, and it makes the visible control the actual design.
-
-They needed a hint, so a short tip on first use would fix it. — A tip arrives once, before anybody wants to remove anything. All three were already trying, and none of them had a tip in mind.
-
 Three people is too few to conclude anything. — Three is small for counting how often something happens. It is plenty for showing that a hidden action can be missed, which is all this claims.
 
+The swipe is a shortcut for people who already know it, and the real route is whatever those three could find. — Three people wanted the action and none of them found the gesture. That makes the gesture an extra, and it makes the visible control the actual design.
+
 The swipe should be deleted, since nobody used it. — Nobody found it, which is not the same as nobody wanting it. Kept as a shortcut beside a visible control it costs nothing and helps the people who do know.
+
+They needed a hint, so a short tip on first use would fix it. — A tip arrives once, before anybody wants to remove anything. All three were already trying, and none of them had a tip in mind.
 
 Read your own records the same way. For each gesture, write whether it is now a shortcut or still the only route to its action.
 
@@ -3193,16 +3193,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nobody was free to try your product. What do you write in the discoverability section?
 
-- That discoverability is untested, with the date, and that the supplied results were used as practice only.
 - Your own attempt, written up as a test.
+- That discoverability is untested, with the date, and that the supplied results were used as practice only.
 - That the gesture is discoverable, since it is a common pattern elsewhere.
 
 <details>
 <summary>After your attempt</summary>
 
-That discoverability is untested, with the date, and that the supplied results were used as practice only. — A dated gap is a finding an engineer or a reviewer can act on. It also protects you from quoting a rehearsal as though somebody had really tried.
-
 Your own attempt, written up as a test. — You already know where everything is, so your attempt cannot show what a stranger would reach for. Your hand is the one hand that proves nothing.
+
+That discoverability is untested, with the date, and that the supplied results were used as practice only. — A dated gap is a finding an engineer or a reviewer can act on. It also protects you from quoting a rehearsal as though somebody had really tried.
 
 That the gesture is discoverable, since it is a common pattern elsewhere. — Common elsewhere is an argument, not a record. The whole point of this lesson is that arguments about gestures lose to three people reaching for the wrong thing.
 
@@ -3223,16 +3223,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One person out of three found your swipe. What have you learned?
 
-- The swipe is a shortcut for the one, and the visible control is the route for everybody else.
 - One in three is promising, so a small teaching hint would raise the rest.
+- The swipe is a shortcut for the one, and the visible control is the route for everybody else.
 - Nothing: one success out of three is within normal variation.
 
 <details>
 <summary>After your attempt</summary>
 
-The swipe is a shortcut for the one, and the visible control is the route for everybody else. — A gesture nobody discovers is not a feature. Beside a visible control it becomes a genuine accelerator instead of a barrier.
-
 One in three is promising, so a small teaching hint would raise the rest. — Hints appear once and at the wrong moment. Teaching people a route they did not need to learn is more expensive than showing them a control.
+
+The swipe is a shortcut for the one, and the visible control is the route for everybody else. — A gesture nobody discovers is not a feature. Beside a visible control it becomes a genuine accelerator instead of a barrier.
 
 Nothing: one success out of three is within normal variation. — Two people could not do a thing they were asked to do. That is not variation to wait out, it is the finding.
 
@@ -3253,18 +3253,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A swipe on your list removes an item permanently. Confirmation dialogue, or undo?
 
+- Neither: the item can be added to the shortlist again.
 - Undo with a stated window, because an accidental swipe is a slip rather than a decision.
 - A confirmation dialogue, because removal cannot be taken back.
-- Neither: the item can be added to the shortlist again.
 
 <details>
 <summary>After your attempt</summary>
 
+Neither: the item can be added to the shortlist again. — Adding it again is a new task, and it assumes she noticed and remembers which class it was. Recovery has to be offered, not left to her memory.
+
 Undo with a stated window, because an accidental swipe is a slip rather than a decision. — A dialogue after every swipe punishes the many people who meant it. Undo costs the careful person nothing and rescues the person whose thumb slid.
 
 A confirmation dialogue, because removal cannot be taken back. — It can be taken back if you design it to be. Reserve the dialogue for the rare action you genuinely cannot reverse, such as closing an account.
-
-Neither: the item can be added to the shortlist again. — Adding it again is a new task, and it assumes she noticed and remembers which class it was. Recovery has to be offered, not left to her memory.
 
 Improve: Write the undo window and the exact wording into your undo box in step 4, then record the change in step 5.
 
@@ -3803,21 +3803,21 @@ A supplied made-up result. Your table says escape closes the filter panel and re
 
 What do you write down?
 
-- Two failed rows against the table, each with what actually happened.
-- Change the table so escape is optional, since a real product manages without it.
 - Leave both rows blank until something of your own exists.
 - Mark both rows passed, because that behaviour is what you designed.
+- Change the table so escape is optional, since a real product manages without it.
+- Two failed rows against the table, each with what actually happened.
 
 <details>
 <summary>After your attempt</summary>
 
-Two failed rows against the table, each with what actually happened. — The table is the specification and the thing you tried is the evidence. Recording the difference is the entire reason for writing the table first.
-
-Change the table so escape is optional, since a real product manages without it. — One product doing without something is not a reason for your specification to ask for less. That is how a table stops being a specification and becomes a description.
-
 Leave both rows blank until something of your own exists. — A blank row cannot be told apart from a row nobody thought about. Untested is a real result; empty is not.
 
 Mark both rows passed, because that behaviour is what you designed. — Designing something does not make it happen. Marking untried rows as passed is the one thing a key table must never do.
+
+Change the table so escape is optional, since a real product manages without it. — One product doing without something is not a reason for your specification to ask for less. That is how a table stops being a specification and becomes a description.
+
+Two failed rows against the table, each with what actually happened. — The table is the specification and the thing you tried is the evidence. Recording the difference is the entire reason for writing the table first.
 
 Go through your own rows and mark each one with what happened, or with the word untested. Leave no row empty.
 
@@ -3854,18 +3854,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your date picker has thirty-one tab stops, one per day. Is that keyboard support?
 
+- It depends on how many dates are usually available.
 - It is reachable and not usable: the grid should be one tab stop with arrow keys moving inside it.
 - Yes, since every date can be reached without a mouse.
-- It depends on how many dates are usually available.
 
 <details>
 <summary>After your attempt</summary>
 
+It depends on how many dates are usually available. — Even a week of dates is seven stops on the way to everything below. The rule does not soften with fewer items.
+
 It is reachable and not usable: the grid should be one tab stop with arrow keys moving inside it. — Tab is for moving between components and arrows for moving within one. Thirty-one stops means every keyboard user pays for the grid on the way past it.
 
 Yes, since every date can be reached without a mouse. — Reachable is the low bar the pattern exists to raise. A person going to the Book button below has to press tab thirty-one times to get there.
-
-It depends on how many dates are usually available. — Even a week of dates is seven stops on the way to everything below. The rule does not soften with fewer items.
 
 Improve: Rewrite your composite’s rows in step 2 so tab reaches the group once and the arrows move inside, then record the change in step 5.
 
@@ -3884,16 +3884,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your table says nothing about where focus goes when the panel closes. What happens?
 
-- It gets decided at build time, and the usual result is focus falling to the top of the document.
 - Nothing: focus naturally returns to the control that opened the panel.
+- It gets decided at build time, and the usual result is focus falling to the top of the document.
 - It is a development detail rather than a design decision.
 
 <details>
 <summary>After your attempt</summary>
 
-It gets decided at build time, and the usual result is focus falling to the top of the document. — A silent specification is not neutral. The framework does whatever it does, and the person who closed a panel finds themselves at the start of the page.
-
 Nothing: focus naturally returns to the control that opened the panel. — That is the behaviour you want, and it does not happen on its own. It happens because somebody wrote it down.
+
+It gets decided at build time, and the usual result is focus falling to the top of the document. — A silent specification is not neutral. The framework does whatever it does, and the person who closed a panel finds themselves at the start of the page.
 
 It is a development detail rather than a design decision. — Where somebody stands after a change is as much a design decision as where the panel sits. Left out, it becomes an accident.
 
@@ -3914,16 +3914,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nothing is built and you cannot find a comparable product to try. What goes in the results?
 
-- Every row marked untested, said plainly, with what you looked for and could not find.
 - Every row marked as passing, since the behaviour is what the pattern specifies.
+- Every row marked untested, said plainly, with what you looked for and could not find.
 - Leave the results column out until there is a build.
 
 <details>
 <summary>After your attempt</summary>
 
-Every row marked untested, said plainly, with what you looked for and could not find. — An untested table is still the most useful thing an engineer can be handed. It says what is expected and admits nothing has been checked.
-
 Every row marked as passing, since the behaviour is what the pattern specifies. — The pattern says what should happen. Your results column is only for what did happen, and nothing happened yet.
+
+Every row marked untested, said plainly, with what you looked for and could not find. — An untested table is still the most useful thing an engineer can be handed. It says what is expected and admits nothing has been checked.
 
 Leave the results column out until there is a build. — A missing column reads as an oversight. An untested column reads as a person who knows exactly where they stand.
 
@@ -4594,18 +4594,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You decide focus should jump to the first result whenever a filter changes the list. What does that cost?
 
-- It takes the person out of the filters mid-task; announcing the new count keeps her place and still tells her.
 - Nothing: it shows the change immediately, which is the point.
 - It only affects people using a screen reader.
+- It takes the person out of the filters mid-task; announcing the new count keeps her place and still tells her.
 
 <details>
 <summary>After your attempt</summary>
 
-It takes the person out of the filters mid-task; announcing the new count keeps her place and still tells her. — Moving somebody is the strongest thing you can do and a changed count is a small piece of news. Match the size of the response to the size of the event.
-
 Nothing: it shows the change immediately, which is the point. — It shows the change by relocating her. She now has to find her way back to the filter she was about to use.
 
 It only affects people using a screen reader. — A sighted keyboard user is moved just as far. Focus is everybody’s position, not an assistive-technology detail.
+
+It takes the person out of the filters mid-task; announcing the new count keeps her place and still tells her. — Moving somebody is the strongest thing you can do and a changed count is a small piece of news. Match the size of the response to the size of the event.
 
 Improve: Rewrite your replace rule in step 2 so focus stays and the change is announced, with the words written out, then record the change in step 5.
 
@@ -4625,17 +4625,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 A form is submitted and three fields are rejected. Where does focus go?
 
 - To the first field with a problem, with its message attached to that field.
-- To the top of the page, so she can read the summary of all three.
 - Nowhere: the red borders make the problems visible.
+- To the top of the page, so she can read the summary of all three.
 
 <details>
 <summary>After your attempt</summary>
 
 To the first field with a problem, with its message attached to that field. — She lands on the thing she has to change, with the reason beside it. Nothing else has to be hunted for.
 
-To the top of the page, so she can read the summary of all three. — A summary at the top is useful and it leaves her a search. Put the summary there and still send focus to the first field.
-
 Nowhere: the red borders make the problems visible. — Red borders are invisible to anybody not looking at that part of the screen, and to anybody who does not see red as red. Focus is what carries the person there.
+
+To the top of the page, so she can read the summary of all three. — A summary at the top is useful and it leaves her a search. Put the summary there and still send focus to the first field.
 
 Improve: Fill your error rule in step 2 with a named destination and where the message sits, then record the change in step 5.
 
@@ -4654,18 +4654,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You tabbed through and twice could not tell where you were. What do you write down?
 
-- The two steps by name, and what the outline needs to look like on those particular surfaces.
-- A note that focus styling will be settled during the build.
 - Nothing, since the browser default outline is usually fine.
+- A note that focus styling will be settled during the build.
+- The two steps by name, and what the outline needs to look like on those particular surfaces.
 
 <details>
 <summary>After your attempt</summary>
 
-The two steps by name, and what the outline needs to look like on those particular surfaces. — A named step and a named surface is something you can fix. An invisible outline is not a styling detail, it is a lost position.
+Nothing, since the browser default outline is usually fine. — You have just watched it not be fine, twice. That observation is worth more than the general rule.
 
 A note that focus styling will be settled during the build. — Left to the build it becomes the browser default or nothing at all, on exactly the surfaces where it already failed.
 
-Nothing, since the browser default outline is usually fine. — You have just watched it not be fine, twice. That observation is worth more than the general rule.
+The two steps by name, and what the outline needs to look like on those particular surfaces. — A named step and a named surface is something you can fix. An invisible outline is not a styling detail, it is a lost position.
 
 Improve: Add the two steps to your tab-through notes in step 4 and describe the outline against those surfaces, then record the change in step 5.
 
@@ -5091,21 +5091,21 @@ A supplied made-up key table for reordering a list. Space picks the row up. The 
 
 What is missing before this route is finished?
 
-- Escape to abandon the move and put the row back, plus what is said at each step.
-- Nothing: picking up, moving and dropping completes the task.
-- A modifier key so the arrows jump ten rows at a time.
 - A confirmation dialogue after the drop.
+- A modifier key so the arrows jump ten rows at a time.
+- Nothing: picking up, moving and dropping completes the task.
+- Escape to abandon the move and put the row back, plus what is said at each step.
 
 <details>
 <summary>After your attempt</summary>
 
-Escape to abandon the move and put the row back, plus what is said at each step. — Somebody who picks up a row by accident currently has no way out except to drop it somewhere. A cancel is what makes the route safe to try.
-
-Nothing: picking up, moving and dropping completes the task. — It completes the task when everything goes right. It offers nothing at all to the person who started a move she did not mean to start.
+A confirmation dialogue after the drop. — A move is a slip, so undo suits it better than a question. It also still leaves no way to abandon a pick-up before anything has moved.
 
 A modifier key so the arrows jump ten rows at a time. — That is a convenience for long lists rather than the gap. She still cannot get out of a move once she is in one.
 
-A confirmation dialogue after the drop. — A move is a slip, so undo suits it better than a question. It also still leaves no way to abandon a pick-up before anything has moved.
+Nothing: picking up, moving and dropping completes the task. — It completes the task when everything goes right. It offers nothing at all to the person who started a move she did not mean to start.
+
+Escape to abandon the move and put the row back, plus what is said at each step. — Somebody who picks up a row by accident currently has no way out except to drop it somewhere. A cancel is what makes the route safe to try.
 
 Add the missing rows to your own table, then write the sentence the person hears at pick-up, at each move and at the drop.
 
@@ -5217,18 +5217,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You are short of time and plan to add the keyboard route after the visual design is agreed. What goes wrong?
 
+- It only delays the accessibility work to a later week.
 - The keyboard route changes the visual design, because it needs something to focus and somewhere for the announcement to live.
 - Nothing much: keys are an engineering concern once the layout is settled.
-- It only delays the accessibility work to a later week.
 
 <details>
 <summary>After your attempt</summary>
 
+It only delays the accessibility work to a later week. — It does not delay it, it damages it. The design you agreed will have no place for the route to begin.
+
 The keyboard route changes the visual design, because it needs something to focus and somewhere for the announcement to live. — Added afterwards it becomes a weaker version of both: a grip bolted on late, or no grip and a route that cannot start. It is part of the design, not a fix applied to it.
 
 Nothing much: keys are an engineering concern once the layout is settled. — The keys decide what has to be on the row. That is a layout question, and it arrives before the layout is settled, not after.
-
-It only delays the accessibility work to a later week. — It does not delay it, it damages it. The design you agreed will have no place for the route to begin.
 
 Improve: If your key table in step 3 is empty, write it now, then change your signals in step 2 to give the keyboard something to focus and record the change in step 5.
 
@@ -5248,17 +5248,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 A row is dropped in the wrong place. Confirmation before every drop, or undo after it?
 
 - Undo, with a stated window and a message naming what moved and where.
-- A confirmation before the drop, because reordering changes her saved list.
 - Neither: she can simply drag it back.
+- A confirmation before the drop, because reordering changes her saved list.
 
 <details>
 <summary>After your attempt</summary>
 
 Undo, with a stated window and a message naming what moved and where. — A misplaced drop is a slip, and slips want a way back rather than a question. A dialogue on every drop punishes everybody who aimed correctly.
 
-A confirmation before the drop, because reordering changes her saved list. — Asking her to confirm the thing she has just done with her own hand is a strange conversation. It also makes ten small moves into ten small arguments.
-
 Neither: she can simply drag it back. — Dragging back assumes she noticed, remembers the old position, and can drag at all. Recovery has to be offered rather than left to her memory.
+
+A confirmation before the drop, because reordering changes her saved list. — Asking her to confirm the thing she has just done with her own hand is a strange conversation. It also makes ten small moves into ten small arguments.
 
 Improve: Write the undo window and the exact message into your undo box in step 4, then record the change in step 5.
 
@@ -5278,17 +5278,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 On a phone, your whole row is draggable. What breaks?
 
 - Scrolling and dragging become the same gesture, so the list has to guess which one she meant.
-- Nothing: a phone can tell a slow drag from a fast scroll.
 - Only the visual design suffers, since the row looks the same either way.
+- Nothing: a phone can tell a slow drag from a fast scroll.
 
 <details>
 <summary>After your attempt</summary>
 
 Scrolling and dragging become the same gesture, so the list has to guess which one she meant. — A grip, or a long press, tells the two apart deliberately. Without one, every attempt to scroll the list risks rearranging it.
 
-Nothing: a phone can tell a slow drag from a fast scroll. — Sometimes it can, and the person who moves slowly because her hand shakes is exactly the one it gets wrong.
-
 Only the visual design suffers, since the row looks the same either way. — The row looking the same is the problem. Nothing on it says which of the two things a press is about to do.
+
+Nothing: a phone can tell a slow drag from a fast scroll. — Sometimes it can, and the person who moves slowly because her hand shakes is exactly the one it gets wrong.
 
 Improve: Fill the touch rule in step 4 with what has to be touched or held to begin a drag, then record what you changed in step 5.
 
@@ -5755,21 +5755,21 @@ A supplied made-up design. The class list loads twenty more rows on its own ever
 
 What has this design done, and what would you change first?
 
-- It has removed the end of the page, so the footer is unreachable. Replace the automatic loading with a load-more control.
-- It has slowed the list down, because twenty rows at a time is heavy on a phone.
 - It has done nothing wrong, because those links are also in the menu.
+- It has slowed the list down, because twenty rows at a time is heavy on a phone.
 - It has buried the policies, so move them above the list where they are seen first.
+- It has removed the end of the page, so the footer is unreachable. Replace the automatic loading with a load-more control.
 
 <details>
 <summary>After your attempt</summary>
 
-It has removed the end of the page, so the footer is unreachable. Replace the automatic loading with a load-more control. — The footer sits at the end, and continuous loading means the end keeps moving away. A load-more control gives the page a bottom again.
+It has done nothing wrong, because those links are also in the menu. — That is a real repair and it is the second one, not the first. If they are only in the footer today, they are gone today.
 
 It has slowed the list down, because twenty rows at a time is heavy on a phone. — Weight is worth watching and it is not the failure here. Even a fast loader still pushes the footer out of reach every time.
 
-It has done nothing wrong, because those links are also in the menu. — That is a real repair and it is the second one, not the first. If they are only in the footer today, they are gone today.
-
 It has buried the policies, so move them above the list where they are seen first. — That puts rarely wanted content in front of the content people came for. The footer is the right place; it just has to be reachable.
+
+It has removed the end of the page, so the footer is unreachable. Replace the automatic loading with a load-more control. — The footer sits at the end, and continuous loading means the end keeps moving away. A load-more control gives the page a bottom again.
 
 Try to reach the footer on your own design, or on a comparable page, and write down what happened.
 
@@ -5909,18 +5909,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your list loads more rows on its own as the person nears the bottom. Where does the refund policy live?
 
+- In the footer, which is fine because policies are rarely read.
 - Nowhere she can reach, because the bottom keeps moving away from her.
 - In the footer, which she can reach by scrolling faster.
-- In the footer, which is fine because policies are rarely read.
 
 <details>
 <summary>After your attempt</summary>
 
+In the footer, which is fine because policies are rarely read. — Rarely read is not never needed. The person hunting for a refund policy is exactly the person you have blocked.
+
 Nowhere she can reach, because the bottom keeps moving away from her. — Continuous loading removes the end of the page, and the footer sits at the end. Anything living only there becomes unreachable.
 
 In the footer, which she can reach by scrolling faster. — Scrolling faster loads rows faster. Speed does not help when new content arrives ahead of you.
-
-In the footer, which is fine because policies are rarely read. — Rarely read is not never needed. The person hunting for a refund policy is exactly the person you have blocked.
 
 Improve: Look at your list-ending in step 3. If it loads continuously, change it to a load-more control or give the footer links a second route, then record it in step 5.
 
@@ -5939,16 +5939,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A person taps a class, reads it, and comes back to the list. What should she find?
 
-- The same row in the same place, with her filters still applied.
 - The top of the list, freshly loaded, so nothing is out of date.
+- The same row in the same place, with her filters still applied.
 - The same row, with any new results inserted above it.
 
 <details>
 <summary>After your attempt</summary>
 
-The same row in the same place, with her filters still applied. — Returning to the top with the filters cleared makes comparing two classes expensive. Keeping her place is what makes browsing possible at all.
-
 The top of the list, freshly loaded, so nothing is out of date. — Freshness costs her the place she was keeping. A quiet marker saying newer results exist serves both without moving her.
+
+The same row in the same place, with her filters still applied. — Returning to the top with the filters cleared makes comparing two classes expensive. Keeping her place is what makes browsing possible at all.
 
 The same row, with any new results inserted above it. — Inserting above shifts everything down under her finger. New results can wait below, or behind a control she chooses to press.
 
@@ -6392,21 +6392,21 @@ A supplied made-up case. Someone is half way through typing a note on a booking.
 
 Which behaviour would you specify, and what makes it defensible?
 
-- Keep the half-typed note as a draft, show it in the editing state on her return, and say when it was last changed.
 - Store what was typed, quietly, as if she had finished.
-- Throw it away, since she left without finishing.
+- Keep the half-typed note as a draft, show it in the editing state on her return, and say when it was last changed.
 - Ask her to confirm before the app closes.
+- Throw it away, since she left without finishing.
 
 <details>
 <summary>After your attempt</summary>
 
-Keep the half-typed note as a draft, show it in the editing state on her return, and say when it was last changed. — Her words are kept, and nothing half-finished was stored under her name as though she meant it. The time tells her what she is looking at four hours later.
-
 Store what was typed, quietly, as if she had finished. — It keeps her words and it also publishes half a sentence as though it were final. On a shared booking someone else may read it before she does.
 
-Throw it away, since she left without finishing. — Leaving is rarely a decision. A notification is not the same as pressing cancel, and discarding is the one outcome she cannot reverse.
+Keep the half-typed note as a draft, show it in the editing state on her return, and say when it was last changed. — Her words are kept, and nothing half-finished was stored under her name as though she meant it. The time tells her what she is looking at four hours later.
 
 Ask her to confirm before the app closes. — A tap on a notification does not wait for a question, and a question she never sees settles nothing. Keep the text and ask her later, when she is back.
+
+Throw it away, since she left without finishing. — Leaving is rarely a decision. A notification is not the same as pressing cancel, and discarding is the one outcome she cannot reverse.
 
 Write your own choice, and beside it the one thing each other choice would have cost her.
 
@@ -6534,18 +6534,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You remove the save button and the value stores itself. What have you taken on?
 
+- Only the failure case, since a save that works needs no message.
 - The whole job of telling her where her change stands, which the button used to do simply by being pressed.
 - Nothing, as long as saving is reliable.
-- Only the failure case, since a save that works needs no message.
 
 <details>
 <summary>After your attempt</summary>
 
+Only the failure case, since a save that works needs no message. — A save that works is exactly when she needs to know. Silence after typing reads the same whether it worked or not.
+
 The whole job of telling her where her change stands, which the button used to do simply by being pressed. — The button was feedback as much as a control. Without it, every save and every failure has to announce itself in words.
 
 Nothing, as long as saving is reliable. — Reliability is invisible. Even a save that always works leaves her guessing, because nothing on the screen says so.
-
-Only the failure case, since a save that works needs no message. — A save that works is exactly when she needs to know. Silence after typing reads the same whether it worked or not.
 
 Improve: If your saved-state in step 2 has no exact wording and no duration, write both now and record the change in step 5.
 
@@ -6565,17 +6565,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 The save fails because the connection dropped. What must not happen?
 
 - Nothing visible, with the text sitting there looking stored.
-- A message saying the save did not happen.
 - The text being kept on her device until a save succeeds.
+- A message saying the save did not happen.
 
 <details>
 <summary>After your attempt</summary>
 
 Nothing visible, with the text sitting there looking stored. — A silent failure lets her walk away believing the change exists. She finds out later, when it matters and cannot be repaired.
 
-A message saying the save did not happen. — That is what should happen. The message is how she learns in time to do something about it.
-
 The text being kept on her device until a save succeeds. — That is also what should happen. Keeping the words locally is what makes a retry possible at all.
+
+A message saying the save did not happen. — That is what should happen. The message is how she learns in time to do something about it.
 
 Improve: If your failure-message in step 4 is empty or vague, write the exact words and say where the text is kept, then record it in step 5.
 
@@ -6594,16 +6594,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your viewing state and your editing state differ only by a blue border. What is the risk?
 
-- Someone who cannot tell those two blues apart cannot tell whether she is typing into the value or only looking at it.
 - There is none, since a blue border is a common convention.
+- Someone who cannot tell those two blues apart cannot tell whether she is typing into the value or only looking at it.
 - The risk is only on small screens, where the border is thin.
 
 <details>
 <summary>After your attempt</summary>
 
-Someone who cannot tell those two blues apart cannot tell whether she is typing into the value or only looking at it. — One colour is one channel. Add a difference in shape: a background, a heavier border, or a visible cancel and done pair.
-
 There is none, since a blue border is a common convention. — Common does not mean perceivable. The convention still has to reach people who do not see that difference.
+
+Someone who cannot tell those two blues apart cannot tell whether she is typing into the value or only looking at it. — One colour is one channel. Add a difference in shape: a background, a heavier border, or a visible cancel and done pair.
 
 The risk is only on small screens, where the border is thin. — A thin border makes it worse and is not the root of it. The state is carried by one colour and nothing else.
 
@@ -7191,17 +7191,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You name a duration card-flip, after the only place it is used. What happens when the card stops flipping?
 
 - The name points at nothing, and nobody can tell whether a new component should use it.
-- You rename it, which takes a minute.
 - Nothing, because the value still works.
+- You rename it, which takes a minute.
 
 <details>
 <summary>After your attempt</summary>
 
 The name points at nothing, and nobody can tell whether a new component should use it. — A name describing a place stops being true when the place changes. A name describing a role keeps deciding cases long afterwards.
 
-You rename it, which takes a minute. — Renaming is easy and the lost reason is not recoverable. Nobody remembers why it was that number, so the next person simply picks a new one.
-
 Nothing, because the value still works. — The number still works, and the sheet has stopped doing its job, which is settling the next decision without a meeting.
+
+You rename it, which takes a minute. — Renaming is easy and the lost reason is not recoverable. Nobody remembers why it was that number, so the next person simply picks a new one.
 
 Improve: Rename any value in step 2 that is named after a screen or a component, then record the change in step 5.
 
@@ -7220,18 +7220,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your rules reads “animations should feel snappy”. Does it settle anything?
 
-- It does not, because two people can both follow it and choose different values. A rule has to rule something out.
-- It settles the general direction, which is enough for a sheet.
 - It settles it, provided the durations are written underneath.
+- It settles the general direction, which is enough for a sheet.
+- It does not, because two people can both follow it and choose different values. A rule has to rule something out.
 
 <details>
 <summary>After your attempt</summary>
 
-It does not, because two people can both follow it and choose different values. A rule has to rule something out. — Rewrite it as the thing it forbids: what must never move, what may not animate, how many things may move at once.
+It settles it, provided the durations are written underneath. — The durations already sit on the sheet. The rules are there to decide when those durations are used at all.
 
 It settles the general direction, which is enough for a sheet. — A direction is a preference. The next proposal will describe itself as snappy, and your sheet will have nothing to say about it.
 
-It settles it, provided the durations are written underneath. — The durations already sit on the sheet. The rules are there to decide when those durations are used at all.
+It does not, because two people can both follow it and choose different values. A rule has to rule something out. — Rewrite it as the thing it forbids: what must never move, what may not animate, how many things may move at once.
 
 Improve: Rewrite any rule in step 3 that could not settle a disagreement, then record what you changed in step 5.
 
@@ -7250,18 +7250,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Under reduced motion you switch every transition off. What is lost?
 
-- The explanation the movement was carrying, which people asking for less motion still need.
 - Nothing, since the setting is asking for no animation.
 - Only the decoration, which is the point of the setting.
+- The explanation the movement was carrying, which people asking for less motion still need.
 
 <details>
 <summary>After your attempt</summary>
 
-The explanation the movement was carrying, which people asking for less motion still need. — The request is for less movement, not less information. Replace each movement with a gentler change that says the same thing.
-
 Nothing, since the setting is asking for no animation. — The setting asks for reduced motion. Switching everything off is the version that strips the explanation out along with the decoration.
 
 Only the decoration, which is the point of the setting. — Decoration should indeed go. The panel that entered from a button was explaining where it came from, and that goes with it.
+
+The explanation the movement was carrying, which people asking for less motion still need. — The request is for less movement, not less information. Replace each movement with a gentler change that says the same thing.
 
 Improve: Look at your meaning-check in step 4. Any pair that lost its explanation needs a gentler change rather than a removal, and the change recorded in step 5.
 
@@ -7978,18 +7978,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You ran all three sessions on your own laptop, because it was easier to set up. What did that cost you?
 
-- The conditions where feedback failures appear: a slower connection, a smaller screen and a finger instead of a pointer.
 - Nothing, since the interactions are the same on any device.
 - Only the touch behaviour, which you can check separately.
+- The conditions where feedback failures appear: a slower connection, a smaller screen and a finger instead of a pointer.
 
 <details>
 <summary>After your attempt</summary>
 
-The conditions where feedback failures appear: a slower connection, a smaller screen and a finger instead of a pointer. — A second tap almost never happens on the machine you designed on. Testing there hides the failure you were looking for.
-
 Nothing, since the interactions are the same on any device. — The interactions are the same and the conditions are not. Timing and touch accuracy are exactly what this lesson is testing.
 
 Only the touch behaviour, which you can check separately. — Touch is one part of it. Connection speed and screen size change what people see and how long they wait to see it.
+
+The conditions where feedback failures appear: a slower connection, a smaller screen and a finger instead of a pointer. — A second tap almost never happens on the machine you designed on. Testing there hides the failure you were looking for.
 
 Improve: Re-run at least one session on a phone you did not design on, add it to your record in step 2, then note the change in step 5.
 
@@ -8008,16 +8008,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You make the repair, then write down what you expected it to do. Why is that weaker than writing it first?
 
-- Whatever happened will look like what you expected, because you wrote the expectation after seeing it.
 - It is the same, as long as the prediction is honest.
+- Whatever happened will look like what you expected, because you wrote the expectation after seeing it.
 - It is weaker only if somebody else reads it.
 
 <details>
 <summary>After your attempt</summary>
 
-Whatever happened will look like what you expected, because you wrote the expectation after seeing it. — A prediction is only useful while it can still turn out wrong. Written afterwards, it can only ever agree with the result.
-
 It is the same, as long as the prediction is honest. — Honesty is not the issue. Nobody can un-see a result, and memory quietly rewrites what was expected to match it.
+
+Whatever happened will look like what you expected, because you wrote the expectation after seeing it. — A prediction is only useful while it can still turn out wrong. Written afterwards, it can only ever agree with the result.
 
 It is weaker only if somebody else reads it. — The person it misleads most is you, when you decide whether the repair worked and whether to keep going.
 
@@ -8038,18 +8038,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You re-test and the repair did not help. What do you write?
 
+- That the finding was probably not real after all.
 - What happened, beside the prediction it disagreed with, and what you now think you had wrong.
 - Nothing yet, since you should repair it properly first.
-- That the finding was probably not real after all.
 
 <details>
 <summary>After your attempt</summary>
 
+That the finding was probably not real after all. — The finding was watched happening. What failed is your explanation of why, and those are two different things.
+
 What happened, beside the prediction it disagreed with, and what you now think you had wrong. — A repair that failed tells you the cause was misread. That is worth more than a repair that worked for a reason nobody checked.
 
 Nothing yet, since you should repair it properly first. — The failed attempt is the evidence that your explanation was wrong. Repairing again without recording it loses the only thing you learned.
-
-That the finding was probably not real after all. — The finding was watched happening. What failed is your explanation of why, and those are two different things.
 
 Improve: If your retest-result in step 4 is empty, or records only success, write what actually happened including anything that did not improve, then note it in step 5.
 

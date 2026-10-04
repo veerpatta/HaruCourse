@@ -502,18 +502,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Would more metrics give a fuller picture?
 
+- Yes, because you cannot know in advance which will matter.
 - They give more numbers to argue with. Three connected to an outcome with their limits stated support decisions; twenty unconnected ones support whichever conclusion somebody wanted.
 - Yes, as long as each one is accurate.
-- Yes, because you cannot know in advance which will matter.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, because you cannot know in advance which will matter. — The tree is how you decide which will matter, which is the work this lesson is about.
+
 They give more numbers to argue with. Three connected to an outcome with their limits stated support decisions; twenty unconnected ones support whichever conclusion somebody wanted. — Every unconnected number is available to whoever is arguing. A small tree with observability marked is harder to misuse and easier to act on.
 
 Yes, as long as each one is accurate. — Accuracy is not the problem. Twenty accurate numbers with no connection to an outcome is a menu.
-
-Yes, because you cannot know in advance which will matter. — The tree is how you decide which will matter, which is the work this lesson is about.
 
 Improve: Check every activity node in step 3 has a path upward, and remove or mark the ones that do not. Record the change in step 5.
 
@@ -532,18 +532,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You built your tree upward from the numbers you can actually get. What tends to happen?
 
+- It is more practical, since unobservable nodes cannot be used.
 - The top becomes a word nobody outside the team wants, such as engagement, because the available numbers do not add up to an outcome.
 - Nothing much, since the numbers are the same either way.
-- It is more practical, since unobservable nodes cannot be used.
 
 <details>
 <summary>After your attempt</summary>
 
+It is more practical, since unobservable nodes cannot be used. — Unobservable nodes are what tell you what you are missing. Leaving them out makes the gap invisible.
+
 The top becomes a word nobody outside the team wants, such as engagement, because the available numbers do not add up to an outcome. — Nobody comes to a tool library to engage with it. Starting from the outcome produces a shorter tree with more unobservable nodes, which is the honest shape.
 
 Nothing much, since the numbers are the same either way. — The numbers are the same and their meaning is not. Built upward, searches and time on page look like they belong.
-
-It is more practical, since unobservable nodes cannot be used. — Unobservable nodes are what tell you what you are missing. Leaving them out makes the gap invisible.
 
 Improve: Rebuild one branch in step 2 starting from the outcome, and see which of your numbers survive. Record the change in step 5.
 
@@ -562,18 +562,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Time on page is easy to get and everybody reports it. Should it be in your tree?
 
-- No. It rises when people are interested and when they are lost, so no value of it changes what anybody does.
 - Yes, since it is a useful indicator of engagement.
 - Yes, as a supporting metric alongside others.
+- No. It rises when people are interested and when they are lost, so no value of it changes what anybody does.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It rises when people are interested and when they are lost, so no value of it changes what anybody does. — The test is what you would do if it doubled and what you would do if it halved. When the answer to both is nothing, the number exists to be reported rather than used.
-
 Yes, since it is a useful indicator of engagement. — Engagement is the word that lets an unactionable number look meaningful. Ask which action a change in it would trigger.
 
 Yes, as a supporting metric alongside others. — Supporting metric usually means one that can be quoted when it agrees with you.
+
+No. It rises when people are interested and when they are lost, so no value of it changes what anybody does. — The test is what you would do if it doubled and what you would do if it halved. When the answer to both is nothing, the number exists to be reported rather than used.
 
 Improve: Apply the doubled-or-halved test to every leaf in step 5 and remove two. Record the change.
 
@@ -1239,18 +1239,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The funnel shows most people stop at checkout. Does that mean the problem is at checkout?
 
-- No. It shows people stop there. The problem may have been created three steps earlier by a price that was never shown.
 - Yes, since that is the step where they leave.
 - Yes, unless the earlier steps also show drops.
+- No. It shows people stop there. The problem may have been created three steps earlier by a price that was never shown.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It shows people stop there. The problem may have been created three steps earlier by a price that was never shown. — A funnel locates where to look, not what to fix. Several explanations always fit the same drop, and choosing one without evidence is how expensive redesigns of the wrong screen happen.
-
 Yes, since that is the step where they leave. — Where somebody leaves is where the accumulated reasons become too much. It is not necessarily where any of them started.
 
 Yes, unless the earlier steps also show drops. — A step can create a problem without losing anybody, by setting an expectation that fails later.
+
+No. It shows people stop there. The problem may have been created three steps earlier by a price that was never shown. — A funnel locates where to look, not what to fix. Several explanations always fit the same drop, and choosing one without evidence is how expensive redesigns of the wrong screen happen.
 
 Improve: Write three explanations for your largest drop in step 3, at least one of which is about an earlier step. Record the change in step 5.
 
@@ -1269,18 +1269,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The biggest number of people is lost at the first step. Is that your biggest problem?
 
-- Probably not. The top of a funnel holds the least committed people, and losing most of them is correct.
-- Yes, since that is where most people are lost.
 - Yes, because improving it would affect the most people.
+- Yes, since that is where most people are lost.
+- Probably not. The top of a funnel holds the least committed people, and losing most of them is correct.
 
 <details>
 <summary>After your attempt</summary>
 
-Probably not. The top of a funnel holds the least committed people, and losing most of them is correct. — Ranking by proportion rather than by count moves attention to steps where people had already shown intent. Those are the ones where a loss means something.
+Yes, because improving it would affect the most people. — It would affect the most people who were never going to continue.
 
 Yes, since that is where most people are lost. — It is where most people are, so it is where most people leave. The proportion is what makes steps comparable.
 
-Yes, because improving it would affect the most people. — It would affect the most people who were never going to continue.
+Probably not. The top of a funnel holds the least committed people, and losing most of them is correct. — Ranking by proportion rather than by count moves attention to steps where people had already shown intent. Those are the ones where a loss means something.
 
 Improve: Work out proportional drops in step 2 and identify the largest by proportion. Record the change in step 5.
 
@@ -1299,18 +1299,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your funnel uses invented numbers and the caption says so. Is that enough?
 
+- Yes, since everybody in the room knows.
 - No. Charts get screenshotted and travel without their captions, so the word belongs in the chart itself.
 - Yes, a caption is a clear label.
-- Yes, since everybody in the room knows.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, since everybody in the room knows. — Everybody in the room does. The chart outlives the room.
+
 No. Charts get screenshotted and travel without their captions, so the word belongs in the chart itself. — A synthetic funnel quoted six months later as a real conversion rate is the exact damage this rule prevents, and it costs four words to avoid.
 
 Yes, a caption is a clear label. — It is clear while it is attached, which is not for long.
-
-Yes, since everybody in the room knows. — Everybody in the room does. The chart outlives the room.
 
 Improve: Move the synthetic label into the chart title in step 5 and record the change.
 
@@ -1968,18 +1968,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Are percentages more professional than counts?
 
-- They look more precise. At small samples the precision is fictional, and a reader who checks the sample will trust nothing else in the document.
 - Yes, since they allow comparison between studies.
 - Yes, provided the sample size is stated nearby.
+- They look more precise. At small samples the precision is fictional, and a reader who checks the sample will trust nothing else in the document.
 
 <details>
 <summary>After your attempt</summary>
 
-They look more precise. At small samples the precision is fictional, and a reader who checks the sample will trust nothing else in the document. — Sixty-seven per cent of three people is two people. Counts read as less impressive and survive the first question, which percentages from small samples do not.
-
 Yes, since they allow comparison between studies. — Comparison needs both intervals and compatible definitions. A percentage from twenty-two people compares with very little.
 
 Yes, provided the sample size is stated nearby. — Stated nearby, the percentage is still the part that gets quoted.
+
+They look more precise. At small samples the precision is fictional, and a reader who checks the sample will trust nothing else in the document. — Sixty-seven per cent of three people is two people. Counts read as less impressive and survive the first question, which percentages from small samples do not.
 
 Improve: Rewrite your smallest-sample claim as a count with its route in step 3, and record the change in step 5.
 
@@ -1998,18 +1998,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Two of your rates differ by eight points, and both intervals are about twenty points wide and overlap. What can you say?
 
+- That the difference is suggestive and worth investigating.
 - That the difference could easily be nothing. The honest move is to qualify it heavily or drop the comparison.
 - That one is higher than the other, which is what the numbers show.
-- That the difference is suggestive and worth investigating.
 
 <details>
 <summary>After your attempt</summary>
 
+That the difference is suggestive and worth investigating. — That wording survives into summaries as a finding. If you keep it, say plainly that the samples are consistent with no difference.
+
 That the difference could easily be nothing. The honest move is to qualify it heavily or drop the comparison. — Comparing two rates needs more care than reporting one, and overlapping intervals mean the samples are consistent with no difference at all.
 
 That one is higher than the other, which is what the numbers show. — The numbers show it in these samples. Another twenty-two people could easily reverse it.
-
-That the difference is suggestive and worth investigating. — That wording survives into summaries as a finding. If you keep it, say plainly that the samples are consistent with no difference.
 
 Improve: Examine both intervals in step 4 and decide to qualify or abandon, with the reason. Record the change in step 5.
 
@@ -2028,18 +2028,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Eighty per cent of your forty panel volunteers preferred the new flow. The interval is not too wide. Is the claim sound?
 
+- Yes, if the panel was recruited randomly from members.
 - The interval is not the problem. People who volunteer for a panel are unlike people who do not, and no arithmetic corrects that.
 - Yes, forty is a reasonable sample.
-- Yes, if the panel was recruited randomly from members.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, if the panel was recruited randomly from members. — Then it would be much stronger, and volunteering to join is the step that breaks it.
+
 The interval is not the problem. People who volunteer for a panel are unlike people who do not, and no arithmetic corrects that. — The repair is to state the route and narrow the claim to the panel. Sample size and sample route are two different things, and only one of them has a formula.
 
 Yes, forty is a reasonable sample. — Forty of whom is the question the interval cannot answer.
-
-Yes, if the panel was recruited randomly from members. — Then it would be much stronger, and volunteering to join is the step that breaks it.
 
 Improve: Add how the people came to be asked beside every rate in step 3, and narrow any claim that outruns it. Record the change in step 5.
 
@@ -2592,16 +2592,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You chose your effect size by finding what would be detectable with your traffic. What did that do?
 
-- It committed you to noticing only enormous effects, and to reporting a real improvement as no result.
 - Nothing much, since the calculation is the same either way.
+- It committed you to noticing only enormous effects, and to reporting a real improvement as no result.
 - It made the test feasible, which is a reasonable trade.
 
 <details>
 <summary>After your attempt</summary>
 
-It committed you to noticing only enormous effects, and to reporting a real improvement as no result. — The smallest effect worth acting on comes from the problem: below what difference would you do nothing? Choosing it first is what makes the calculation an honest test of feasibility.
-
 Nothing much, since the calculation is the same either way. — The arithmetic is the same and the meaning is reversed. One asks what you need; the other asks what you can get away with.
+
+It committed you to noticing only enormous effects, and to reporting a real improvement as no result. — The smallest effect worth acting on comes from the problem: below what difference would you do nothing? Choosing it first is what makes the calculation an honest test of feasibility.
 
 It made the test feasible, which is a reasonable trade. — Feasible and uninformative is not a trade; it is the appearance of one.
 
@@ -2622,18 +2622,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You will ship the change and count duplicate payments before and after. Is that an experiment?
 
-- No, and it is the best available answer, as long as the write-up names what else changed in the same period.
 - Yes, in effect, since you are comparing two periods.
 - No, so it should not be reported at all.
+- No, and it is the best available answer, as long as the write-up names what else changed in the same period.
 
 <details>
 <summary>After your attempt</summary>
 
-No, and it is the best available answer, as long as the write-up names what else changed in the same period. — A before-and-after count is confounded by everything else that happened that month. Stating that alongside the figure is what keeps it honest rather than what disqualifies it.
-
 Yes, in effect, since you are comparing two periods. — Two periods are not two randomly split groups. Everything about the world differs between them as well as your change.
 
 No, so it should not be reported at all. — At this scale it is the strongest evidence available, and the alternative is nothing.
+
+No, and it is the best available answer, as long as the write-up names what else changed in the same period. — A before-and-after count is confounded by everything else that happened that month. Stating that alongside the figure is what keeps it honest rather than what disqualifies it.
 
 Improve: Write the confounding beside the before-and-after plan in step 5, naming something specific that also changed. Record the change.
 
@@ -3468,17 +3468,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Does the data speak for itself?
 
 - It is selected, framed and presented by somebody with a purpose. The five questions are the ordinary work of reading a number.
-- Yes, if it comes from a reliable source.
 - Yes, once the methodology is published.
+- Yes, if it comes from a reliable source.
 
 <details>
 <summary>After your attempt</summary>
 
 It is selected, framed and presented by somebody with a purpose. The five questions are the ordinary work of reading a number. — Asking who was counted is not an accusation. Every report includes some people and excludes others, over some period rather than another, and those choices are usually invisible in the claim.
 
-Yes, if it comes from a reliable source. — A reliable source selects and frames too. Reliability makes the numbers accurate rather than complete.
-
 Yes, once the methodology is published. — A published methodology is what lets you answer the five questions. It does not answer them for you.
+
+Yes, if it comes from a reliable source. — A reliable source selects and frames too. Reliability makes the numbers accurate rather than complete.
 
 Improve: Answer all five questions in step 2, including writing absent where the report does not say. Record the change in step 5.
 
@@ -3497,18 +3497,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The arithmetic in the report checks out. Does that settle it?
 
-- No. Everything that makes a number misleading happens before the arithmetic: who was counted, over what period, against what.
-- Largely, since incorrect arithmetic is the main risk.
 - Yes, unless the source is untrustworthy.
+- Largely, since incorrect arithmetic is the main risk.
+- No. Everything that makes a number misleading happens before the arithmetic: who was counted, over what period, against what.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Everything that makes a number misleading happens before the arithmetic: who was counted, over what period, against what. — Completions per visit can rise while completions fall, if visits fell further. Both numbers are correct and the claim is the opposite of what happened.
+Yes, unless the source is untrustworthy. — Trustworthy people produce misleading numbers routinely, without intending to.
 
 Largely, since incorrect arithmetic is the main risk. — Incorrect arithmetic is rare in published work and easy to catch. The selection is neither.
 
-Yes, unless the source is untrustworthy. — Trustworthy people produce misleading numbers routinely, without intending to.
+No. Everything that makes a number misleading happens before the arithmetic: who was counted, over what period, against what. — Completions per visit can rise while completions fall, if visits fell further. Both numbers are correct and the claim is the opposite of what happened.
 
 Improve: Answer the denominator question in step 2 specifically, and say what would have had to change for the claim to be true. Record the change in step 5.
 
@@ -3527,18 +3527,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your rewritten claim is three times as long and has no headline in it. Is that a failure?
 
+- Yes, the rewrite should keep the original structure.
 - No. That length is what the figures actually support, and the original was short because it said more than they do.
 - Yes, since nobody will read it.
-- Yes, the rewrite should keep the original structure.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, the rewrite should keep the original structure. — The original structure is what carried the unsupported part.
+
 No. That length is what the figures actually support, and the original was short because it said more than they do. — The aim is honesty rather than caution: the smaller true statement, written readably. Hedging the large claim would be worse, because qualifications get dropped when a claim is repeated.
 
 Yes, since nobody will read it. — People read specific sentences perfectly well. What they do not read is a claim buried in four qualifications.
-
-Yes, the rewrite should keep the original structure. — The original structure is what carried the unsupported part.
 
 Improve: Check your rewrite in step 4 states a smaller true thing rather than the same thing with qualifications. Record the change in step 5.
 
@@ -4202,17 +4202,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Is quantitative evidence more objective?
 
 - It is more precise about different things. A precisely counted event whose cause nobody understands is not more objective than three careful observations of why it happens.
-- Yes, since it does not depend on interpretation.
 - Yes, when the sample is large enough.
+- Yes, since it does not depend on interpretation.
 
 <details>
 <summary>After your attempt</summary>
 
 It is more precise about different things. A precisely counted event whose cause nobody understands is not more objective than three careful observations of why it happens. — Counting is precise about scale and location. Watching is precise about mechanism. Treating one as the serious evidence produces decisions with a predictable shape of error.
 
-Yes, since it does not depend on interpretation. — What to count, who to include and what period all depend on judgement, as the previous lesson showed.
-
 Yes, when the sample is large enough. — A large sample makes the count reliable. It does not make it say anything about why.
+
+Yes, since it does not depend on interpretation. — What to count, who to include and what period all depend on judgement, as the previous lesson showed.
 
 Improve: Write what the count cannot tell you in step 2, in the same detail as what it can. Record the change in step 5.
 
@@ -4232,17 +4232,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your funnel shows where people stop, and you have no observations. What is likely to happen?
 
 - You will redesign whatever is nearest the drop, because the count gives no mechanism and something has to be chosen.
-- You will make a reasonable guess, which is usually fine.
 - You will need a larger sample before deciding.
+- You will make a reasonable guess, which is usually fine.
 
 <details>
 <summary>After your attempt</summary>
 
 You will redesign whatever is nearest the drop, because the count gives no mechanism and something has to be chosen. — A drop at the booking step produces a redesigned booking button, when the cause may be a price shown differently two screens earlier. The count locates; only watching explains.
 
-You will make a reasonable guess, which is usually fine. — The guess is usually the nearest visible element, which is the one the count happens to point at.
-
 You will need a larger sample before deciding. — More of the same kind of evidence does not supply a mechanism.
+
+You will make a reasonable guess, which is usually fine. — The guess is usually the nearest visible element, which is the one the count happens to point at.
 
 Improve: Pair your count with an observation in step 1, or write plainly that you have none and what you would watch. Record the change in step 5.
 
@@ -4931,17 +4931,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Somebody suggests collecting everything now and deciding what you need later. What is wrong with that?
 
 - Later never arrives, and in the meantime you hold data you cannot justify, cannot confidently delete and must protect.
-- Nothing, provided the data is kept secure.
 - It is only a problem for personal data.
+- Nothing, provided the data is kept secure.
 
 <details>
 <summary>After your attempt</summary>
 
 Later never arrives, and in the meantime you hold data you cannot justify, cannot confidently delete and must protect. — Without a purpose written against each event, nobody can tell whether anybody is using it, so nothing is ever removed. Deciding first is cheaper and safer.
 
-Nothing, provided the data is kept secure. — Security is the obligation it creates. The question is whether the obligation was worth taking on.
-
 It is only a problem for personal data. — Free text and cross-session identifiers become personal data whether or not anybody planned for them to.
+
+Nothing, provided the data is kept secure. — Security is the obligation it creates. The question is whether the obligation was worth taking on.
 
 Improve: Discard any event in step 1 that cannot name the question it answers, and record the change in step 5.
 
@@ -4991,17 +4991,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your plan sets a ninety-day retention period. Is that enough?
 
 - Only with a deletion mechanism. A period with nothing that actually removes the data is a wish.
-- Yes, since the period is documented.
 - Yes, ninety days is a reasonable default.
+- Yes, since the period is documented.
 
 <details>
 <summary>After your attempt</summary>
 
 Only with a deletion mechanism. A period with nothing that actually removes the data is a wish. — Data outlives intentions. Saying what deletes it, and who is responsible, is what turns the period into a property of the system rather than a paragraph in a document.
 
-Yes, since the period is documented. — Documented periods are commonly exceeded by years, because nothing enforces them.
-
 Yes, ninety days is a reasonable default. — The length may well be right. What is missing is what happens on day ninety-one.
+
+Yes, since the period is documented. — Documented periods are commonly exceeded by years, because nothing enforces them.
 
 Improve: Add the deletion mechanism and the owner to each event in step 2, and record the change in step 5.
 
@@ -5652,17 +5652,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 The number went up the week you shipped. Did the change work?
 
 - Unknown. Something else also happened in that period, always, and the ordinary variation is usually larger than people expect.
-- Probably, since the timing matches.
 - Yes, unless somebody can name a specific alternative.
+- Probably, since the timing matches.
 
 <details>
 <summary>After your attempt</summary>
 
 Unknown. Something else also happened in that period, always, and the ordinary variation is usually larger than people expect. — Plotting eight periods shows what a normal wobble looks like. A rise in the ship week, with a festival and a promotion in it, cannot be attributed to any of the three.
 
-Probably, since the timing matches. — Timing is the most visible fact and the weakest evidence. Everything that happened that week has the same timing.
-
 Yes, unless somebody can name a specific alternative. — Naming alternatives is your job here rather than the objector’s, and there is always at least one.
+
+Probably, since the timing matches. — Timing is the most visible fact and the weakest evidence. Everything that happened that week has the same timing.
 
 Improve: List what else happened in the same period in step 2, and check the calendar rather than relying on memory. Record the change in step 5.
 
@@ -5711,16 +5711,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your synthetic cohort chart shows a clear difference. What must accompany it?
 
-- The synthetic label on the chart, and the explanation you cannot rule out beside the conclusion.
 - The cohort definition, so it can be reproduced.
+- The synthetic label on the chart, and the explanation you cannot rule out beside the conclusion.
 - Nothing, since the method is sound.
 
 <details>
 <summary>After your attempt</summary>
 
-The synthetic label on the chart, and the explanation you cannot rule out beside the conclusion. — The chart will travel without its caption, and the exercise demonstrates the method rather than a result. Both sentences belong in the picture rather than in the notes.
-
 The cohort definition, so it can be reproduced. — Necessary and not sufficient. A reproducible chart of invented numbers is still invented.
+
+The synthetic label on the chart, and the explanation you cannot rule out beside the conclusion. — The chart will travel without its caption, and the exercise demonstrates the method rather than a result. Both sentences belong in the picture rather than in the notes.
 
 Nothing, since the method is sound. — The method is the thing being practised. The numbers are made up and the chart does not say so unless you make it.
 
@@ -6370,18 +6370,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You explained all the caveats when you presented it. Is that enough?
 
-- No. The caveats stayed in the room and the chart went everywhere, so anything that matters belongs in the picture.
-- Yes, since the audience understood them at the time.
 - Yes, if the caveats are also in the notes.
+- Yes, since the audience understood them at the time.
+- No. The caveats stayed in the room and the chart went everywhere, so anything that matters belongs in the picture.
 
 <details>
 <summary>After your attempt</summary>
 
-No. The caveats stayed in the room and the chart went everywhere, so anything that matters belongs in the picture. — Three weeks later the chart appears in somebody else’s summary with a confident sentence under it. They had the picture and not the conversation, and the picture said nothing about itself.
+Yes, if the caveats are also in the notes. — Notes do not travel with a screenshot either.
 
 Yes, since the audience understood them at the time. — They did. The problem is everybody who sees the chart afterwards.
 
-Yes, if the caveats are also in the notes. — Notes do not travel with a screenshot either.
+No. The caveats stayed in the room and the chart went everywhere, so anything that matters belongs in the picture. — Three weeks later the chart appears in somebody else’s summary with a confident sentence under it. They had the picture and not the conversation, and the picture said nothing about itself.
 
 Improve: Move the sample, the period, the synthetic label and any confound onto the chart itself in step 2. Record the change in step 5.
 
@@ -6430,18 +6430,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your audience remembered a figure more confidently than your evidence supports. What does that tell you?
 
-- That the presentation let it travel that way, and the fix is in the slide rather than in a correction.
 - That the audience was not listening carefully.
 - That you should send a written correction.
+- That the presentation let it travel that way, and the fix is in the slide rather than in a correction.
 
 <details>
 <summary>After your attempt</summary>
 
-That the presentation let it travel that way, and the fix is in the slide rather than in a correction. — What is remembered is what will be repeated. If a number was remembered without its sample, the number and the sample were not close enough together on the slide.
-
 That the audience was not listening carefully. — Audiences remember two things. Which two is decided by the design of the slide.
 
 That you should send a written correction. — Worth doing and it does not reach everybody the chart already reached.
+
+That the presentation let it travel that way, and the fix is in the slide rather than in a correction. — What is remembered is what will be repeated. If a number was remembered without its sample, the number and the sample were not close enough together on the slide.
 
 Improve: Change the slide so the figure cannot be separated from its sample, in step 2. Record the change in step 5.
 
@@ -7103,18 +7103,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should you be data-driven?
 
-- Data-informed decisions are good; waiting for data on decisions that are cheap to reverse is expensive theatre.
 - Yes, decisions should rest on evidence wherever possible.
 - No, experience is usually a better guide.
+- Data-informed decisions are good; waiting for data on decisions that are cheap to reverse is expensive theatre.
 
 <details>
 <summary>After your attempt</summary>
 
-Data-informed decisions are good; waiting for data on decisions that are cheap to reverse is expensive theatre. — The current problem continues while everybody feels rigorous. Comparing the cost of measuring with the cost of being wrong is the actual skill.
-
 Yes, decisions should rest on evidence wherever possible. — Wherever possible includes cases where the evidence costs months and the decision costs five minutes to undo.
 
 No, experience is usually a better guide. — That is the opposite error. The judgement is about which decisions are worth the cost.
+
+Data-informed decisions are good; waiting for data on decisions that are cheap to reverse is expensive theatre. — The current problem continues while everybody feels rigorous. Comparing the cost of measuring with the cost of being wrong is the actual skill.
 
 Improve: Compare both costs for every open decision in step 2, in time rather than in feelings. Record the change in step 5.
 
@@ -7133,18 +7133,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You decide the message wording without measuring. What must accompany that?
 
-- A way you would notice you were wrong, such as asking three people the following week.
-- Nothing, since the decision is reversible.
 - A note that it was not tested.
+- Nothing, since the decision is reversible.
+- A way you would notice you were wrong, such as asking three people the following week.
 
 <details>
 <summary>After your attempt</summary>
 
-A way you would notice you were wrong, such as asking three people the following week. — Without it, deciding quickly becomes deciding blindly. The arrangement to find out is what makes the speed defensible.
+A note that it was not tested. — Honest and insufficient. A note does not tell you anything later.
 
 Nothing, since the decision is reversible. — Reversible only helps if somebody notices it needs reversing.
 
-A note that it was not tested. — Honest and insufficient. A note does not tell you anything later.
+A way you would notice you were wrong, such as asking three people the following week. — Without it, deciding quickly becomes deciding blindly. The arrangement to find out is what makes the speed defensible.
 
 Improve: Write how you would notice a mistake for both decisions in step 3. Record the change in step 5.
 
@@ -7163,18 +7163,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody asks you to test which cancellation flow produces fewer cancellations. What is the objection?
 
+- Cancellation rate is a poor metric.
 - It would measure how effectively the flow obstructs people who want to leave, which is not something to optimise.
 - The traffic is too low for a reliable result.
-- Cancellation rate is a poor metric.
 
 <details>
 <summary>After your attempt</summary>
 
+Cancellation rate is a poor metric. — It is a reasonable thing to know. What is wrong is optimising a flow against it.
+
 It would measure how effectively the flow obstructs people who want to leave, which is not something to optimise. — The test would work. That is what makes this a judgement rather than a limitation, and the reply should offer something else: measuring why people cancel, for instance.
 
 The traffic is too low for a reliable result. — True here and beside the point. If traffic were ample the objection would be unchanged.
-
-Cancellation rate is a poor metric. — It is a reasonable thing to know. What is wrong is optimising a flow against it.
 
 Improve: Write what you would say in step 4, offering an alternative rather than only refusing. Record the change in step 5.
 
@@ -7843,18 +7843,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Without analytics, can you measure anything?
 
+- Yes, and the results are as good as analytics would give.
 - You can count what the organisation already records, count things by hand and ask people. What you cannot do is claim precision or scale.
 - Not usefully, so the honest answer is to wait for tooling.
-- Yes, and the results are as good as analytics would give.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, and the results are as good as analytics would give. — They are not. They are obtainable, which is a different and more useful property at this scale.
+
 You can count what the organisation already records, count things by hand and ask people. What you cannot do is claim precision or scale. — Payment records, a booking book and five conversations produce a plan that starts on Monday. Saying plainly what it cannot support is what makes the rest usable.
 
 Not usefully, so the honest answer is to wait for tooling. — Waiting produces nothing for months and then a conversation about budget. The provider’s records are sitting there.
-
-Yes, and the results are as good as analytics would give. — They are not. They are obtainable, which is a different and more useful property at this scale.
 
 Improve: Replace any measure in step 2 that needs tooling with one from an existing record. Record the change in step 5.
 
@@ -7873,18 +7873,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your plan has eleven measures. Is that thorough?
 
-- Three you will collect beat ten you intend to. A long plan is one nobody maintains past the first month.
 - Yes, more measures give a fuller picture.
 - Yes, provided they are all obtainable.
+- Three you will collect beat ten you intend to. A long plan is one nobody maintains past the first month.
 
 <details>
 <summary>After your attempt</summary>
 
-Three you will collect beat ten you intend to. A long plan is one nobody maintains past the first month. — Each measure costs time every period, for ever. Keeping it to three means the plan survives a busy month, which is when measurement is usually abandoned.
-
 Yes, more measures give a fuller picture. — The first lesson dealt with this: more numbers give more to argue with rather than more understanding.
 
 Yes, provided they are all obtainable. — Obtainable each month, by somebody, in the time available. Eleven rarely is.
+
+Three you will collect beat ten you intend to. A long plan is one nobody maintains past the first month. — Each measure costs time every period, for ever. Keeping it to three means the plan survives a busy month, which is when measurement is usually abandoned.
 
 Improve: Reduce step 2 to three measures and move the rest to the unanswered list or drop them. Record the change in step 5.
 
@@ -8595,18 +8595,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does being rigorous make you less useful?
 
-- Being unreliable makes you less useful. Somebody who says what the evidence supports, offers the next step and is right about the limits becomes the person whose numbers are trusted.
 - Somewhat, since people want answers rather than caveats.
 - No, rigour speaks for itself.
+- Being unreliable makes you less useful. Somebody who says what the evidence supports, offers the next step and is right about the limits becomes the person whose numbers are trusted.
 
 <details>
 <summary>After your attempt</summary>
 
-Being unreliable makes you less useful. Somebody who says what the evidence supports, offers the next step and is right about the limits becomes the person whose numbers are trusted. — The reply that works names what you have, and what would produce more, with a date. A flat refusal is honest and loses to somebody else’s worse number.
-
 Somewhat, since people want answers rather than caveats. — They want answers they can rely on. A number that collapses when checked costs you the next three conversations.
 
 No, rigour speaks for itself. — It does not. Rigour with nothing offered alongside it reads as obstruction.
+
+Being unreliable makes you less useful. Somebody who says what the evidence supports, offers the next step and is right about the limits becomes the person whose numbers are trusted. — The reply that works names what you have, and what would produce more, with a date. A flat refusal is honest and loses to somebody else’s worse number.
 
 Improve: Check your reply in step 3 offers something as well as declining something. Record the change in step 5.
 
@@ -8655,18 +8655,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Asked for a percentage, you answer “roughly two-thirds, though the sample is small”. What happens next?
 
+- The audience will ask about the sample if it matters.
 - Two-thirds reaches the slide and the caveat does not. Two of three people is two people.
 - Nothing, since the caveat was stated.
-- The audience will ask about the sample if it matters.
 
 <details>
 <summary>After your attempt</summary>
 
+The audience will ask about the sample if it matters. — The audience three steps later does not know there was a sample to ask about.
+
 Two-thirds reaches the slide and the caveat does not. Two of three people is two people. — Hedged numbers travel without their hedges. The version that survives is the count with its denominator attached, because the two cannot be separated.
 
 Nothing, since the caveat was stated. — It was stated aloud, once, to one person, and the number is what gets written down.
-
-The audience will ask about the sample if it matters. — The audience three steps later does not know there was a sample to ask about.
 
 Improve: Rewrite your reply in step 3 so every number carries its denominator inside the sentence. Record the change in step 5.
 

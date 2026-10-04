@@ -493,17 +493,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You hand over a design and the team builds it. Is that how it works?
 
 - No. Every team modifies designs during delivery, because building reveals what drawing did not. The choice is whether that happens with you or without you.
-- Yes, if the handover is thorough enough.
 - Yes, in well-run teams.
+- Yes, if the handover is thorough enough.
 
 <details>
 <summary>After your attempt</summary>
 
 No. Every team modifies designs during delivery, because building reveals what drawing did not. The choice is whether that happens with you or without you. — A missing empty state gets invented by whoever is typing. An expensive interaction gets simplified by whoever sized it. Neither is a failure of the team.
 
-Yes, if the handover is thorough enough. — A thorough handover reduces the changes during build. It cannot attend the slicing session.
-
 Yes, in well-run teams. — Well-run teams change designs during delivery more openly, not less often.
+
+Yes, if the handover is thorough enough. — A thorough handover reduces the changes during build. It cannot attend the slicing session.
 
 Improve: Check your three change points in step 3 include one during build, and name what the handover would have had to say. Record the change in step 5.
 
@@ -522,18 +522,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have no team to observe. Does that make this lesson impossible to do honestly?
 
-- No. A public project’s issue tracker shows real slicing, real estimates and real review comments, and the source line says what you had.
-- Yes, and the honest answer is to skip it.
 - No, you can describe a typical process from the reading.
+- Yes, and the honest answer is to skip it.
+- No. A public project’s issue tracker shows real slicing, real estimates and real review comments, and the source line says what you had.
 
 <details>
 <summary>After your attempt</summary>
 
-No. A public project’s issue tracker shows real slicing, real estimates and real review comments, and the source line says what you had. — What it does not show is the conversations nobody typed, which is a real limit and a stated one. A general description of delivery, by contrast, contains nothing that could surprise you.
+No, you can describe a typical process from the reading. — That produces a description rather than a map, and the change points in it will be the ones the book mentions rather than the ones a team met.
 
 Yes, and the honest answer is to skip it. — Skipping is honest and it leaves you with nothing. Reading a real tracker is available to anybody with a browser.
 
-No, you can describe a typical process from the reading. — That produces a description rather than a map, and the change points in it will be the ones the book mentions rather than the ones a team met.
+No. A public project’s issue tracker shows real slicing, real estimates and real review comments, and the source line says what you had. — What it does not show is the conversations nobody typed, which is a real limit and a stated one. A general description of delivery, by contrast, contains nothing that could surprise you.
 
 Improve: Write plainly in step 2 what you had access to, and make sure the map comes from it rather than from general knowledge. Record the change in step 5.
 
@@ -553,17 +553,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You have marked every stage as one where you need to be present. Is that right?
 
 - Unlikely. Being everywhere is not available, and the point of the split is to know where a document genuinely suffices.
-- Yes, since designs change at every stage.
 - Yes, for a design you care about.
+- Yes, since designs change at every stage.
 
 <details>
 <summary>After your attempt</summary>
 
 Unlikely. Being everywhere is not available, and the point of the split is to know where a document genuinely suffices. — During build, a handover with exact wording, states and behaviour usually answers the question without you. Slicing is where a document cannot help, because it cannot answer.
 
-Yes, since designs change at every stage. — They can, and the useful question is where your presence changes the outcome rather than where change is possible.
-
 Yes, for a design you care about. — That is how a designer ends up in every meeting and present at none of them properly.
+
+Yes, since designs change at every stage. — They can, and the useful question is where your presence changes the outcome rather than where change is possible.
 
 Improve: Move at least one stage into the specification-is-enough list in step 4, and say what the document must contain. Record the change in step 5.
 
@@ -1243,18 +1243,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Are stories a formality that translate designs into tickets?
 
-- Written as translations they lose the reason, and the first time an engineer meets a constraint they will guess at the intent.
-- Largely yes, since the design already says what to build.
 - No, they are a specification in a different format.
+- Largely yes, since the design already says what to build.
+- Written as translations they lose the reason, and the first time an engineer meets a constraint they will guess at the intent.
 
 <details>
 <summary>After your attempt</summary>
 
-Written as translations they lose the reason, and the first time an engineer meets a constraint they will guess at the intent. — The why is the part that survives contact with reality. Without it, a countdown that turns out to be expensive gets dropped rather than replaced with something cheaper that solves the same problem.
+No, they are a specification in a different format. — A story is a placeholder for a conversation. Treating it as a specification produces long stories nobody can slice.
 
 Largely yes, since the design already says what to build. — It says what to build if nothing gets in the way. Something always gets in the way.
 
-No, they are a specification in a different format. — A story is a placeholder for a conversation. Treating it as a specification produces long stories nobody can slice.
+Written as translations they lose the reason, and the first time an engineer meets a constraint they will guess at the intent. — The why is the part that survives contact with reality. Without it, a countdown that turns out to be expensive gets dropped rather than replaced with something cheaper that solves the same problem.
 
 Improve: Check every story in step 1 finishes the sentence “so that they …”, and rewrite any that does not. Record the change in step 5.
 
@@ -1273,18 +1273,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your stories would help nobody if it shipped alone. What should you do?
 
-- Merge it with its other half, or re-slice so each piece is useful on its own.
 - Leave it; some work is genuinely dependent.
 - Reorder so it ships at the same time as its partner.
+- Merge it with its other half, or re-slice so each piece is useful on its own.
 
 <details>
 <summary>After your attempt</summary>
 
-Merge it with its other half, or re-slice so each piece is useful on its own. — Independent value is what lets a team release in pieces and learn from each one. A story that waits for another is a task pretending to be a story.
-
 Leave it; some work is genuinely dependent. — Some is, and it should be merged rather than left looking like something that could ship.
 
 Reorder so it ships at the same time as its partner. — That is merging, done informally, with the dependency left invisible to whoever plans the work.
+
+Merge it with its other half, or re-slice so each piece is useful on its own. — Independent value is what lets a team release in pieces and learn from each one. A story that waits for another is a task pretending to be a story.
 
 Improve: Merge or re-slice that story in step 3 and record what you did. Note the change in step 5.
 
@@ -1303,18 +1303,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You split a story into the design, then the front end, then the server work. What is wrong with that?
 
+- It makes estimation harder.
 - None of the three pieces helps anybody alone, so nothing can be released or learned from until all three are done.
 - Nothing, since that is the order the work happens in.
-- It makes estimation harder.
 
 <details>
 <summary>After your attempt</summary>
 
+It makes estimation harder. — It often makes estimation easier and feedback impossible, which is the worse trade.
+
 None of the three pieces helps anybody alone, so nothing can be released or learned from until all three are done. — Slicing by layer looks orderly and defers every piece of feedback to the end. Slicing by outcome gives you something usable, and something to learn from, at each step.
 
 Nothing, since that is the order the work happens in. — It is roughly the order within each slice. Making it the split means the slices are activities rather than outcomes.
-
-It makes estimation harder. — It often makes estimation easier and feedback impossible, which is the worse trade.
 
 Improve: Re-slice that story by outcome in step 4 and write both halves. Record the change in step 5.
 
@@ -1979,18 +1979,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Are acceptance criteria a testing artefact?
 
-- They are a design artefact that testing uses. They record what the design actually requires, which is why writing them is your work.
-- Yes, which is why testers usually write them.
 - They belong to whoever is available to write them.
+- Yes, which is why testers usually write them.
+- They are a design artefact that testing uses. They record what the design actually requires, which is why writing them is your work.
 
 <details>
 <summary>After your attempt</summary>
 
-They are a design artefact that testing uses. They record what the design actually requires, which is why writing them is your work. — Left to a tester, the criteria will cover the paths that are easy to test and omit the ones the design cares about most, particularly the failures and the announcements.
+They belong to whoever is available to write them. — They belong to whoever knows what the design requires, which is the person who made the decisions.
 
 Yes, which is why testers usually write them. — Where testers write them, the criteria reflect what is testable rather than what was designed.
 
-They belong to whoever is available to write them. — They belong to whoever knows what the design requires, which is the person who made the decisions.
+They are a design artefact that testing uses. They record what the design actually requires, which is why writing them is your work. — Left to a tester, the criteria will cover the paths that are easy to test and omit the ones the design cares about most, particularly the failures and the announcements.
 
 Improve: Check each story in step 1 has criteria covering something only you would know the design requires. Record the change in step 5.
 
@@ -2009,18 +2009,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your accessibility requirements are in the handover document, linked from the story. Is that enough?
 
+- Yes, and repeating it risks the two documents disagreeing.
 - No. Anything outside the criteria is optional in practice, however well it is written elsewhere.
 - Yes, provided the link is prominent.
-- Yes, and repeating it risks the two documents disagreeing.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, and repeating it risks the two documents disagreeing. — They can disagree, and the criteria are the ones that gate release, so those are the ones kept correct.
+
 No. Anything outside the criteria is optional in practice, however well it is written elsewhere. — The build meets the criteria, gets accepted and ships. A timer announcing every second passes every criterion you wrote and makes the screen unusable for anybody listening.
 
 Yes, provided the link is prominent. — Prominence does not make it part of done. Only the criteria gate acceptance.
-
-Yes, and repeating it risks the two documents disagreeing. — They can disagree, and the criteria are the ones that gate release, so those are the ones kept correct.
 
 Improve: Move at least three accessibility requirements into the criteria themselves in step 3. Record the change in step 5.
 
@@ -2039,18 +2039,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A criterion says the remaining time is clearly shown. What is wrong with it?
 
-- Clearly cannot be checked, so nothing will ever fail on it and two people can honestly disagree.
 - Nothing, since clarity is the actual requirement.
 - It should specify a font size.
+- Clearly cannot be checked, so nothing will ever fail on it and two people can honestly disagree.
 
 <details>
 <summary>After your attempt</summary>
 
-Clearly cannot be checked, so nothing will ever fail on it and two people can honestly disagree. — It survives review because nobody disagrees with it. The checkable version says what is stated and where, which somebody can look at and agree about in two seconds.
-
 Nothing, since clarity is the actual requirement. — Clarity is the intention. The criterion has to name what makes it so.
 
 It should specify a font size. — That is an implementation criterion, which is the opposite failure. State what is shown and where.
+
+Clearly cannot be checked, so nothing will ever fail on it and two people can honestly disagree. — It survives review because nobody disagrees with it. The checkable version says what is stated and where, which somebody can look at and agree about in two seconds.
 
 Improve: Rewrite that criterion in step 1 so it names what is stated and where, and record the change in step 5.
 
@@ -2720,18 +2720,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody suggests building it properly and seeing how long it takes. What is wrong with that?
 
+- It makes planning harder for everybody else.
 - It defers the constraint rather than removing it, and the constraint arrives as a rushed final week in which quality is cut silently.
 - Nothing, if the team is disciplined about quality.
-- It makes planning harder for everybody else.
 
 <details>
 <summary>After your attempt</summary>
 
+It makes planning harder for everybody else. — True and secondary. The cost lands on the design.
+
 It defers the constraint rather than removing it, and the constraint arrives as a rushed final week in which quality is cut silently. — Whatever is unfinished at the end is what gets cut, which is usually the accessibility work and the error states. Deciding the appetite first makes the trade visible while you can still design for it.
 
 Nothing, if the team is disciplined about quality. — Discipline is exactly what a rushed week removes, and nobody decides to cut quality; it is what is left over.
-
-It makes planning harder for everybody else. — True and secondary. The cost lands on the design.
 
 Improve: Write the appetite in step 1 before looking at the design, and say why that amount. Record the change in step 5.
 
@@ -3454,17 +3454,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 An engineer estimates a week for something you thought was two days. What should you ask?
 
 - What makes it a week rather than two days. The answer is usually a decision your design has not made.
-- Whether the estimate could be reduced.
 - What could be removed from the story to make it smaller.
+- Whether the estimate could be reduced.
 
 <details>
 <summary>After your attempt</summary>
 
 What makes it a week rather than two days. The answer is usually a decision your design has not made. — Uncertainty, not effort, is what makes an estimate large. Two undefined states can turn an afternoon of building into a week of covering possibilities.
 
-Whether the estimate could be reduced. — It can, and reducing it without changing the work moves the contingency somewhere less visible.
-
 What could be removed from the story to make it smaller. — A reasonable second question. Ask what makes it uncertain first; often nothing needs removing.
+
+Whether the estimate could be reduced. — It can, and reducing it without changing the work moves the contingency somewhere less visible.
 
 Improve: Write what made each estimate uncertain in step 3, and classify it. Record the change in step 5.
 
@@ -3483,18 +3483,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Do engineers pad estimates?
 
+- Some do, and it varies by person.
 - They add contingency for uncertainty, which is rational. Removing the uncertainty removes the contingency.
 - Yes, which is why estimates should be challenged.
-- Some do, and it varies by person.
 
 <details>
 <summary>After your attempt</summary>
 
+Some do, and it varies by person. — It varies less than it seems. What varies is how much your material leaves undefined.
+
 They add contingency for uncertainty, which is rational. Removing the uncertainty removes the contingency. — Pressing on the number moves the same contingency somewhere less visible, usually into whatever gets rushed at the end. Specification is what actually reduces it.
 
 Yes, which is why estimates should be challenged. — Challenging the number leaves the uncertainty in place and hides the buffer. The work is the same size afterwards.
-
-Some do, and it varies by person. — It varies less than it seems. What varies is how much your material leaves undefined.
 
 Improve: Redesign one story in step 4 by defining what was undefined, and re-estimate. Record the change in step 5.
 
@@ -3513,18 +3513,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have no engineer to ask. Can this lesson be done honestly?
 
-- Yes. An informed reader marking what they cannot answer from your story produces the same list of unknowns.
 - No, since only an engineer can estimate the work.
 - Yes, by estimating the stories yourself.
+- Yes. An informed reader marking what they cannot answer from your story produces the same list of unknowns.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes. An informed reader marking what they cannot answer from your story produces the same list of unknowns. — The estimate itself will be rough, and the unknowns are what the lesson is about. Say in the access line that no engineer was involved.
-
 No, since only an engineer can estimate the work. — Only an engineer can estimate accurately, and accuracy is not what this lesson produces.
 
 Yes, by estimating the stories yourself. — Your own estimate cannot show you what your material fails to answer, because you already know the answers.
+
+Yes. An informed reader marking what they cannot answer from your story produces the same list of unknowns. — The estimate itself will be rough, and the unknowns are what the lesson is about. Say in the access line that no engineer was involved.
 
 Improve: Write plainly in step 1 who you asked, and make sure the unknowns came from somebody other than you. Record the change in step 5.
 
@@ -4206,16 +4206,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does handover mean giving the design to the team?
 
-- It means agreeing what will be built, under what constraints, with what still undecided. The document is the input, not the event.
 - Yes, provided the documentation is complete enough.
+- It means agreeing what will be built, under what constraints, with what still undecided. The document is the input, not the event.
 - Yes, and the conversation is a courtesy.
 
 <details>
 <summary>After your attempt</summary>
 
-It means agreeing what will be built, under what constraints, with what still undecided. The document is the input, not the event. — Treated as a delivery, it produces surprises later: questions arriving one at a time by message, and decisions made without you because nobody could reach you.
-
 Yes, provided the documentation is complete enough. — No document answers a question about cost or about what already exists, and both change designs.
+
+It means agreeing what will be built, under what constraints, with what still undecided. The document is the input, not the event. — Treated as a delivery, it produces surprises later: questions arriving one at a time by message, and decisions made without you because nobody could reach you.
 
 Yes, and the conversation is a courtesy. — The conversation is where the constraints appear. The courtesy version is the thirty-five minute presentation.
 
@@ -4237,17 +4237,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 The handover produced no changes to the design. What does that suggest?
 
 - It was a briefing rather than a handover. Either the constraints were not discussed or the questions were not asked.
-- That the design was thorough.
 - That the team agreed with the approach.
+- That the design was thorough.
 
 <details>
 <summary>After your attempt</summary>
 
 It was a briefing rather than a handover. Either the constraints were not discussed or the questions were not asked. — Every real conversation with people who will build something surfaces at least one thing that is expensive, already exists, or was undefined. No changes usually means narration filled the time.
 
-That the design was thorough. — A thorough design still meets constraints nobody outside the team knew about.
-
 That the team agreed with the approach. — Agreement is not the outcome being looked for. Information about cost and constraint is.
+
+That the design was thorough. — A thorough design still meets constraints nobody outside the team knew about.
 
 Improve: Go back and ask what is expensive and what already exists, in step 2, and record what that changes. Note it in step 5.
 
@@ -4267,17 +4267,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You ran the conversation as a rehearsal with a friend rather than with a team. How should it be recorded?
 
 - As a rehearsal, in the access line and anywhere the outcome is referred to later.
-- As a handover, since the process was the same.
 - It does not need recording either way.
+- As a handover, since the process was the same.
 
 <details>
 <summary>After your attempt</summary>
 
 As a rehearsal, in the access line and anywhere the outcome is referred to later. — A rehearsal is real practice and it produced real questions. What it cannot produce is agreement from people who will build the thing, and nothing should later read as though it did.
 
-As a handover, since the process was the same. — The process was the same and the standing of the decisions is not. Nobody in the room can commit to building anything.
-
 It does not need recording either way. — It does, because a decision record with no team behind it will be read as one with a team behind it.
+
+As a handover, since the process was the same. — The process was the same and the standing of the decisions is not. Nobody in the room can commit to building anything.
 
 Improve: Label the session plainly in step 1 and mark the decision record as a rehearsal. Record the change in step 5.
 
@@ -4921,18 +4921,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is design QA about checking the visual details?
 
-- Spacing matters and is the smallest part. Whether the states exist, the failures behave and the keyboard works is what nobody sees in a screenshot.
 - Yes, since the engineer has already checked the behaviour.
 - Mostly, with behaviour checked by testing.
+- Spacing matters and is the smallest part. Whether the states exist, the failures behave and the keyboard works is what nobody sees in a screenshot.
 
 <details>
 <summary>After your attempt</summary>
 
-Spacing matters and is the smallest part. Whether the states exist, the failures behave and the keyboard works is what nobody sees in a screenshot. — A review of the default screen produces a list of small visual findings that reads as fussy. Twenty minutes of forcing states usually produces three findings nobody can dismiss.
-
 Yes, since the engineer has already checked the behaviour. — They checked the behaviour they thought about. The states you specified are the ones you know to trigger.
 
 Mostly, with behaviour checked by testing. — Testing checks what the criteria say, which is why the criteria had to include the states and the announcements.
+
+Spacing matters and is the smallest part. Whether the states exist, the failures behave and the keyboard works is what nobody sees in a screenshot. — A review of the default screen produces a list of small visual findings that reads as fussy. Twenty minutes of forcing states usually produces three findings nobody can dismiss.
 
 Improve: Trigger every state in step 2 including the failures, and record what you find. Note the change in step 5.
 
@@ -4951,18 +4951,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have fourteen findings, eleven of them small spacing differences. How should you send them?
 
-- Ordered by harm, with the three that exclude or block people at the top and the cosmetic ones below, labelled.
 - All together, since they are all real findings.
 - Drop the cosmetic ones to keep the list credible.
+- Ordered by harm, with the three that exclude or block people at the top and the cosmetic ones below, labelled.
 
 <details>
 <summary>After your attempt</summary>
 
-Ordered by harm, with the three that exclude or block people at the top and the cosmetic ones below, labelled. — A list that opens with four pixels gets read as fussiness, and the serious items below it are never reached. The same findings, ordered by harm, read as useful.
-
 All together, since they are all real findings. — They are, and the order decides whether the list is acted on. Harm is the ordering that works.
 
 Drop the cosmetic ones to keep the list credible. — They are real and worth fixing eventually. Ordering, not deletion, is the answer.
+
+Ordered by harm, with the three that exclude or block people at the top and the cosmetic ones below, labelled. — A list that opens with four pixels gets read as fussiness, and the serious items below it are never reached. The same findings, ordered by harm, read as useful.
 
 Improve: Reorder your list in step 4 by harm to the person, and record the change in step 5.
 
@@ -4982,17 +4982,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You would now prefer different wording on the empty state. Is that a defect?
 
 - No. The built wording is what was agreed, so it is a request, and labelling it honestly is what keeps your defects credible.
-- Yes, since the wording is worse than it should be.
 - Yes, if the original wording was never properly reviewed.
+- Yes, since the wording is worse than it should be.
 
 <details>
 <summary>After your attempt</summary>
 
 No. The built wording is what was agreed, so it is a request, and labelling it honestly is what keeps your defects credible. — A request reported as a defect makes the whole list look like preference, including the criteria failures. The label costs you nothing and protects the rest.
 
-Yes, since the wording is worse than it should be. — Worse than you would now write is not the same as contradicting anything agreed.
-
 Yes, if the original wording was never properly reviewed. — Then the request is to review the wording, which is still a request.
+
+Yes, since the wording is worse than it should be. — Worse than you would now write is not the same as contradicting anything agreed.
 
 Improve: Label every finding in step 4 and move anything that contradicts nothing into the requests. Record the change in step 5.
 
@@ -5644,17 +5644,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You have a screenshot that shows the problem clearly. Is that a report?
 
 - No. It shows the symptom on one screen at one moment, and everything that caused it is outside the frame.
-- Yes, if the problem is visual.
 - Yes, with a sentence of explanation.
+- Yes, if the problem is visual.
 
 <details>
 <summary>After your attempt</summary>
 
 No. It shows the symptom on one screen at one moment, and everything that caused it is outside the frame. — The width, the data, the connection and the account state are what produce it. Without them it is an invitation to a conversation rather than something anyone can fix.
 
-Yes, if the problem is visual. — Visual problems have conditions too: a long title, a late image, a narrow screen. The picture shows none of them.
-
 Yes, with a sentence of explanation. — A sentence rarely contains the width, the throttle profile and the data used, which are what make it reproducible.
+
+Yes, if the problem is visual. — Visual problems have conditions too: a long title, a late image, a narrow screen. The picture shows none of them.
 
 Improve: Add the full conditions to each report in step 2, including your account state. Record the change in step 5.
 
@@ -5673,18 +5673,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have three related layout problems on one screen. How many reports?
 
-- Three. Combined reports get half fixed, and the half that is left looks like it was addressed.
-- One, since they are all on the same screen and have the same cause.
 - One, to avoid flooding the list.
+- One, since they are all on the same screen and have the same cause.
+- Three. Combined reports get half fixed, and the half that is left looks like it was addressed.
 
 <details>
 <summary>After your attempt</summary>
 
-Three. Combined reports get half fixed, and the half that is left looks like it was addressed. — One defect per report means each can be reproduced, prioritised and closed independently. A report with three things in it closes when one is done.
+One, to avoid flooding the list. — A short list of unfixable reports is worse than a longer list of fixable ones.
 
 One, since they are all on the same screen and have the same cause. — If they genuinely have one cause, say so in three reports and link them. Same screen is not the same as same cause.
 
-One, to avoid flooding the list. — A short list of unfixable reports is worse than a longer list of fixable ones.
+Three. Combined reports get half fixed, and the half that is left looks like it was addressed. — One defect per report means each can be reproduced, prioritised and closed independently. A report with three things in it closes when one is done.
 
 Improve: Split any report in step 1 that contains more than one defect. Record the change in step 5.
 
@@ -5703,18 +5703,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A report of yours could not be reproduced. What should you do?
 
+- Accept that some defects are intermittent.
 - Find the condition you left out and add it, rather than explaining what you meant.
 - Reproduce it yourself and send a recording.
-- Accept that some defects are intermittent.
 
 <details>
 <summary>After your attempt</summary>
 
+Accept that some defects are intermittent. — Some are, and most unreproducible reports are missing a condition rather than being intermittent.
+
 Find the condition you left out and add it, rather than explaining what you meant. — The missing condition is usually something about your own situation that felt too ordinary to write: the account state, the connection, the particular data. An explanation fixes this report; the condition fixes the next ten.
 
 Reproduce it yourself and send a recording. — Helpful, and it still does not tell them how to get there. The recording will show the result of conditions you have not named.
-
-Accept that some defects are intermittent. — Some are, and most unreproducible reports are missing a condition rather than being intermittent.
 
 Improve: Add the missing condition to that report in step 5 and have it tried again. Record the change.
 
@@ -6401,17 +6401,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Does good work speak for itself?
 
 - It speaks to people who already share your standards. Everyone else needs the connection to what they are accountable for.
-- Yes, if it is genuinely good.
 - Mostly, though it helps to explain it well.
+- Yes, if it is genuinely good.
 
 <details>
 <summary>After your attempt</summary>
 
 It speaks to people who already share your standards. Everyone else needs the connection to what they are accountable for. — Making that connection is part of the job rather than a compromise. The same evidence, expressed in the terms the decision is made in, is not spin.
 
-Yes, if it is genuinely good. — Quality is visible to people who can see it. A decision about time is made against other things competing for the same time.
-
 Mostly, though it helps to explain it well. — Explaining it well in design terms is what produces agreement without a decision.
+
+Yes, if it is genuinely good. — Quality is visible to people who can see it. A decision about time is made against other things competing for the same time.
 
 Improve: Write the connection to the decider’s accountability in step 2, using their own figure if you can. Record the change in step 5.
 
@@ -6431,17 +6431,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You watched three people and two had the problem. Can you say around 30 per cent of people are affected?
 
 - No. Three accounts cannot produce a rate, and an invented number costs you every argument after this one.
-- Yes, as an estimate clearly labelled as such.
 - Yes, since two out of three is literally what happened.
+- Yes, as an estimate clearly labelled as such.
 
 <details>
 <summary>After your attempt</summary>
 
 No. Three accounts cannot produce a rate, and an invented number costs you every argument after this one. — It is the most persuasive sentence available and the only one that does lasting damage. Say what you observed, say the sample, and name the data that would settle it.
 
-Yes, as an estimate clearly labelled as such. — Labelled or not, the number is the part that gets repeated, and it will not survive contact with real data.
-
 Yes, since two out of three is literally what happened. — Two of three is what happened. Expressed as a percentage it reads as a measurement of everybody.
+
+Yes, as an estimate clearly labelled as such. — Labelled or not, the number is the part that gets repeated, and it will not survive contact with real data.
 
 Improve: Remove any rate from your case in step 2 and state the observation with its sample. Record the change in step 5.
 
@@ -6461,17 +6461,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Why prepare the smaller version before the conversation rather than during it?
 
 - Prepared in advance it is a decision you designed; improvised it is a concession, and usually the wrong half survives.
-- It saves time in the meeting.
 - It shows flexibility, which helps the case.
+- It saves time in the meeting.
 
 <details>
 <summary>After your attempt</summary>
 
 Prepared in advance it is a decision you designed; improvised it is a concession, and usually the wrong half survives. — Under pressure you cut whatever is easiest to give up, which is often the accessibility work or the failure paths. Deciding it calmly means the smaller version still delivers the outcome.
 
-It saves time in the meeting. — True and minor. What it saves is the wrong cut.
-
 It shows flexibility, which helps the case. — It can read as a weak opening ask if it is offered too early. The reason to prepare it is what gets cut, not how it looks.
+
+It saves time in the meeting. — True and minor. What it saves is the wrong cut.
 
 Improve: Write the smaller version in step 3, with what it does not fix, before making the case. Record the change in step 5.
 
@@ -7159,17 +7159,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Should everybody give feedback on everything in a critique?
 
 - No. Broad feedback on a specific question wastes the room’s time and yours, and the thing you needed gets two minutes at the end.
-- Yes, since people notice things you did not think to ask about.
 - Yes, if the work is early enough.
+- Yes, since people notice things you did not think to ask about.
 
 <details>
 <summary>After your attempt</summary>
 
 No. Broad feedback on a specific question wastes the room’s time and yours, and the thing you needed gets two minutes at the end. — An open question hands the agenda to whatever is most visible on the screen. Ask for what you need, and give the other observations a written route so they are not lost.
 
-Yes, since people notice things you did not think to ask about. — They do, and that is what the written route is for. Twenty-five minutes of it in the room costs you the answer you came for.
-
 Yes, if the work is early enough. — Early work benefits most from a narrow question, because there is more that could change and less to defend.
+
+Yes, since people notice things you did not think to ask about. — They do, and that is what the written route is for. Twenty-five minutes of it in the room costs you the answer you came for.
 
 Improve: Reduce your critique to one question in step 1, and set up a written route for everything else. Record the change in step 5.
 
@@ -7218,16 +7218,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your review produced agreement and no written decisions. What went wrong?
 
-- Nothing was decided. Agreement without a written decision is re-made differently by whoever remembers it least accurately.
 - The work was not contentious enough to need decisions.
+- Nothing was decided. Agreement without a written decision is re-made differently by whoever remembers it least accurately.
 - The record can be written up afterwards.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing was decided. Agreement without a written decision is re-made differently by whoever remembers it least accurately. — Naming the open items in advance and writing decisions as they are made is what turns a meeting into a record. Reading them back before people leave is where you find out that two people heard different things.
-
 The work was not contentious enough to need decisions. — Then the open items were not named. Every review should have things that need settling.
+
+Nothing was decided. Agreement without a written decision is re-made differently by whoever remembers it least accurately. — Naming the open items in advance and writing decisions as they are made is what turns a meeting into a record. Reading them back before people leave is where you find out that two people heard different things.
 
 The record can be written up afterwards. — Written afterwards it is a reconstruction, and the disagreement about what was agreed arrives later.
 
@@ -7921,16 +7921,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The feature shipped and the numbers look better. Did it work?
 
-- Unknown. Everything moves for many reasons, and without deciding in advance what you would look at, any number that supports the work is the one you notice.
 - Probably, since the change was aimed at exactly those numbers.
+- Unknown. Everything moves for many reasons, and without deciding in advance what you would look at, any number that supports the work is the one you notice.
 - Yes, unless something else obviously changed.
 
 <details>
 <summary>After your attempt</summary>
 
-Unknown. Everything moves for many reasons, and without deciding in advance what you would look at, any number that supports the work is the one you notice. — A quiet month moves everything at once. Naming the signals before shipping is what makes it possible for the answer to be no.
-
 Probably, since the change was aimed at exactly those numbers. — Aiming at them does not establish that you hit them, and nothing here separates your change from the month.
+
+Unknown. Everything moves for many reasons, and without deciding in advance what you would look at, any number that supports the work is the one you notice. — A quiet month moves everything at once. Naming the signals before shipping is what makes it possible for the answer to be no.
 
 Yes, unless something else obviously changed. — Something else always changed, and mostly not obviously.
 
@@ -7951,18 +7951,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your release plan has no reversal condition. What is missing?
 
+- A rollback procedure from the engineers.
 - What would make you change or undo it, decided in advance and owned by somebody.
 - Nothing, since you can decide later if there is a problem.
-- A rollback procedure from the engineers.
 
 <details>
 <summary>After your attempt</summary>
 
+A rollback procedure from the engineers. — Useful and technical. The missing part is the condition that would trigger it.
+
 What would make you change or undo it, decided in advance and owned by somebody. — Without one, a feature that did not help stays because it exists. Written before shipping it is a plan; written afterwards it is a rationalisation of whatever happened.
 
 Nothing, since you can decide later if there is a problem. — Later, the decision competes with the two weeks already spent, and it usually loses.
-
-A rollback procedure from the engineers. — Useful and technical. The missing part is the condition that would trigger it.
 
 Improve: Write the condition and name who decides in step 4. Record the change in step 5.
 
@@ -7982,17 +7982,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You cannot measure whether people feel confident about their booking. Is that a dead end?
 
 - No. Three conversations with recent bookers is legitimate evidence at this scale, and it is not a measurement.
-- Yes, without analytics there is nothing to say.
 - No, you can infer it from the support contacts.
+- Yes, without analytics there is nothing to say.
 
 <details>
 <summary>After your attempt</summary>
 
 No. Three conversations with recent bookers is legitimate evidence at this scale, and it is not a measurement. — The honest plan says which things are counted and which are asked about, and does not let the second sound like the first.
 
-Yes, without analytics there is nothing to say. — Counting support contacts by hand and asking three people are both available and both real.
-
 No, you can infer it from the support contacts. — You can infer something about the people who contacted support. Confidence among everybody else is what the conversations are for.
+
+Yes, without analytics there is nothing to say. — Counting support contacts by hand and asking three people are both available and both real.
 
 Improve: Write what you will ask about rather than count in step 5, and add the not-controlled sentence. Record the change.
 
@@ -8662,18 +8662,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is the retrospective where the team says what went wrong?
 
-- It is where the team decides what to change. Without a committed change and a check, the same problems are listed again next time in the same words.
 - Yes, and the changes follow from the discussion.
 - Yes, provided everyone speaks honestly.
+- It is where the team decides what to change. Without a committed change and a check, the same problems are listed again next time in the same words.
 
 <details>
 <summary>After your attempt</summary>
 
-It is where the team decides what to change. Without a committed change and a check, the same problems are listed again next time in the same words. — Listing is the easy half and it feels productive. The output is one change, with an owner, a date and something countable.
-
 Yes, and the changes follow from the discussion. — They follow only if somebody commits to one. Discussion alone produces a list that recurs.
 
 Yes, provided everyone speaks honestly. — Honesty is necessary and not sufficient. An honest list with no change is still a list.
+
+It is where the team decides what to change. Without a committed change and a check, the same problems are listed again next time in the same words. — Listing is the easy half and it feels productive. The output is one change, with an owner, a date and something countable.
 
 Improve: Commit to exactly one change in step 3, with an owner and a date. Record it in step 5.
 
@@ -8692,18 +8692,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The thing that annoyed you most was a meeting that overran. Should it be your top problem?
 
-- Only if it cost the most. Irritation tracks how often you met a problem, not what it cost.
 - Yes, since a recurring irritation wears the team down.
 - Yes, because it is the one everybody agrees about.
+- Only if it cost the most. Irritation tracks how often you met a problem, not what it cost.
 
 <details>
 <summary>After your attempt</summary>
 
-Only if it cost the most. Irritation tracks how often you met a problem, not what it cost. — Twenty minutes against a day of rework and two defects is not close. The costly problems are often the ones that annoyed nobody, because their cost landed on somebody else’s week.
-
 Yes, since a recurring irritation wears the team down. — It does, and that is a real cost worth writing down as one rather than ranking by feeling.
 
 Yes, because it is the one everybody agrees about. — Agreement is easiest on the visible problems, which is exactly why costing changes the ranking.
+
+Only if it cost the most. Irritation tracks how often you met a problem, not what it cost. — Twenty minutes against a day of rework and two defects is not close. The costly problems are often the ones that annoyed nobody, because their cost landed on somebody else’s week.
 
 Improve: Put a cost beside every problem in step 2 before ranking them. Record the change in step 5.
 

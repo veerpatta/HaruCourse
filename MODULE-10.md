@@ -512,18 +512,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You could build a fuller, more realistic version of your first prototype this week. Should you?
 
-- Not if the cheaper version already answers the question. The extra realism buys comments about the surface.
-- Yes, because a more realistic prototype gives more reliable results.
 - Yes, because people take a polished prototype seriously.
+- Yes, because a more realistic prototype gives more reliable results.
+- Not if the cheaper version already answers the question. The extra realism buys comments about the surface.
 
 <details>
 <summary>After your attempt</summary>
 
-Not if the cheaper version already answers the question. The extra realism buys comments about the surface. — A realistic prototype invites people to talk about photographs, colours and wording you never asked about. Your question then gets a smaller share of the hour.
+Yes, because people take a polished prototype seriously. — They take it seriously in the wrong way. Polish makes people judge the surface, and it makes you reluctant to change what you spent days on.
 
 Yes, because a more realistic prototype gives more reliable results. — It gives results about a wider set of things, not more reliable results about your thing. The extra cost buys feedback you did not want.
 
-Yes, because people take a polished prototype seriously. — They take it seriously in the wrong way. Polish makes people judge the surface, and it makes you reluctant to change what you spent days on.
+Not if the cheaper version already answers the question. The extra realism buys comments about the surface. — A realistic prototype invites people to talk about photographs, colours and wording you never asked about. Your question then gets a smaller share of the hour.
 
 Improve: Look at your three entries in the plan fields in step 2. Any fidelity you cannot justify by what the cheaper level could not answer should drop a level, and the change goes in step 5.
 
@@ -572,18 +572,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your first prototype only has the path where everything works. What is wrong with that?
 
-- A test of it can only show that the path you were already confident about works.
-- Nothing: failure paths can be added after the first session.
 - It will look unfinished to the person taking part.
+- Nothing: failure paths can be added after the first session.
+- A test of it can only show that the path you were already confident about works.
 
 <details>
 <summary>After your attempt</summary>
 
-A test of it can only show that the path you were already confident about works. — Most of what a person learns about a service, they learn when something goes wrong. Leaving the failure out leaves out the part that would teach you something.
+It will look unfinished to the person taking part. — They are not judging how finished it is. The cost falls on you, in what the session is able to show.
 
 Nothing: failure paths can be added after the first session. — They can, and the first session is then spent on the part you were least worried about.
 
-It will look unfinished to the person taking part. — They are not judging how finished it is. The cost falls on you, in what the session is able to show.
+A test of it can only show that the path you were already confident about works. — Most of what a person learns about a service, they learn when something goes wrong. Leaving the failure out leaves out the part that would teach you something.
 
 Improve: Add one failure path to your prototype and write it into the failure path field in step 4, then note the change in step 5.
 
@@ -1069,19 +1069,19 @@ A fakes sheet from a made-up prototype of a class-booking flow. Four rows: the s
 
 In the session, one person tapped the search box, waited, and said “I think it’s broken”. Which row on that sheet was doing the most work?
 
+- The faked wait row, because a wait you invented is not evidence about the real one.
 - The search box row, because it was written before the session and turns that moment into a route you had not built.
 - The invented prices row, because somebody who spots a wrong price stops trusting the rest.
-- The faked wait row, because a wait you invented is not evidence about the real one.
 - None of them, because the sheet is a record for you and does not change what happened.
 
 <details>
 <summary>After your attempt</summary>
 
+The faked wait row, because a wait you invented is not evidence about the real one. — That row protects a claim you might make weeks later, which is a different job from reading the session correctly while it is happening.
+
 The search box row, because it was written before the session and turns that moment into a route you had not built. — Without the row you would write down “person could not finish the task”. With it you write down “person went looking for search, which does not exist yet”. Those two notes lead to different decisions.
 
 The invented prices row, because somebody who spots a wrong price stops trusting the rest. — Invented prices are worth recording, and people rarely act on them. The rows that earn their place are the ones a person will try to use.
-
-The faked wait row, because a wait you invented is not evidence about the real one. — That row protects a claim you might make weeks later, which is a different job from reading the session correctly while it is happening.
 
 None of them, because the sheet is a record for you and does not change what happened. — It changes what you write down, and what you write down is the only part of the session that survives it.
 
@@ -1131,18 +1131,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why include a failure screen when the question you care about is about the ordinary path?
 
-- Because a person who never meets anything going wrong tells you only that the path you were confident about works.
 - Because the prototype looks more complete with one.
 - It is not needed if that failure is rare.
+- Because a person who never meets anything going wrong tells you only that the path you were confident about works.
 
 <details>
 <summary>After your attempt</summary>
 
-Because a person who never meets anything going wrong tells you only that the path you were confident about works. — What people do when something goes wrong is where a design does its hardest work, and it is the part you have never watched anyone do.
-
 Because the prototype looks more complete with one. — Completeness is not what you are after; a prototype should stay obviously disposable. The failure earns its place because of what it lets you watch.
 
 It is not needed if that failure is rare. — Rare failures still happen to somebody, and the cost to that person is usually the highest anywhere in the flow.
+
+Because a person who never meets anything going wrong tells you only that the path you were confident about works. — What people do when something goes wrong is where a design does its hardest work, and it is the part you have never watched anyone do.
 
 Improve: Check the screen list field in step 1. If no screen is a failure, add the top one from your exception table, then record the change in step 5.
 
@@ -1162,17 +1162,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your content is three short, tidy class names with neat prices. What will you miss?
 
 - Anything that only breaks on a long name, a missing value or an edge case, which is most of what breaks in real use.
-- Nothing, as long as the layout can stretch.
 - Only the appearance; the flow itself will still be right.
+- Nothing, as long as the layout can stretch.
 
 <details>
 <summary>After your attempt</summary>
 
 Anything that only breaks on a long name, a missing value or an edge case, which is most of what breaks in real use. — Tidy content is content chosen to fit the layout you drew. Awkward content is where the layout finds out what it cannot do.
 
-Nothing, as long as the layout can stretch. — You cannot tell whether it stretches until something awkward is in it. Putting it in is the test.
-
 Only the appearance; the flow itself will still be right. — A title that wraps to three lines pushes the button off the bottom of the screen, and that is the flow.
+
+Nothing, as long as the layout can stretch. — You cannot tell whether it stretches until something awkward is in it. Putting it in is the test.
 
 Improve: Replace three items in the awkward content field in step 3 with your worst real examples, then note what changed in step 5.
 
@@ -1191,18 +1191,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A person taps something dead and stops. What do you write down?
 
+- Nothing, because the moment was caused by the prototype.
 - That they went looking for something the prototype does not have, and which row of the fakes sheet it was.
 - That the task failed.
-- Nothing, because the moment was caused by the prototype.
 
 <details>
 <summary>After your attempt</summary>
 
+Nothing, because the moment was caused by the prototype. — The moment tells you what the person expected to be there, which is one of the more useful things a session can produce.
+
 That they went looking for something the prototype does not have, and which row of the fakes sheet it was. — That sentence is a finding about what people expect to exist. “Could not finish the task” is not, and it is what you would write without the sheet.
 
 That the task failed. — The task failed against a prototype that is missing that control, which is a fact about your prototype rather than about the design.
-
-Nothing, because the moment was caused by the prototype. — The moment tells you what the person expected to be there, which is one of the more useful things a session can produce.
 
 Improve: Fill the likely attempts field in step 4 before your first session, naming the dead controls a person will probably try, then record what you added in step 5.
 
@@ -1920,17 +1920,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your task says “find the waiting list”. It names no button. Is it a good task?
 
 - It still tells the person a waiting list exists, which is the thing you most wanted to find out.
-- It is fine, because no control is named.
 - It is fine, because it describes a situation.
+- It is fine, because no control is named.
 
 <details>
 <summary>After your attempt</summary>
 
 It still tells the person a waiting list exists, which is the thing you most wanted to find out. — Whether somebody expects a waiting list when a class is full is a finding in itself. Promising one in the task throws that finding away.
 
-It is fine, because no control is named. — Naming a control is one way of giving away the answer. Promising that something exists is another, and it costs you the same finding.
-
 It is fine, because it describes a situation. — Half of it does. The other half tells the person what the situation contains.
+
+It is fine, because no control is named. — Naming a control is one way of giving away the answer. Promising that something exists is another, and it costs you the same finding.
 
 Improve: Rewrite any task in step 2 that promises something exists, so it gives only the situation, then record the change in step 5.
 
@@ -1949,16 +1949,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You plan to decide whether each task succeeded while you watch. What goes wrong?
 
-- Watching somebody struggle changes what you are prepared to accept, and you will not notice it happening.
 - Nothing, because you will know success when you see it.
+- Watching somebody struggle changes what you are prepared to accept, and you will not notice it happening.
 - It only matters if somebody else is watching as well.
 
 <details>
 <summary>After your attempt</summary>
 
-Watching somebody struggle changes what you are prepared to accept, and you will not notice it happening. — Written beforehand, the definition is a decision you made while impartial. Written afterwards, it is a description of what you saw.
-
 Nothing, because you will know success when you see it. — You will see something and call it success. The question is whether you would have called that same thing success an hour earlier.
+
+Watching somebody struggle changes what you are prepared to accept, and you will not notice it happening. — Written beforehand, the definition is a decision you made while impartial. Written afterwards, it is a description of what you saw.
 
 It only matters if somebody else is watching as well. — A second person makes the drift visible. It is happening either way.
 
@@ -1979,16 +1979,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have eight good tasks. Should you run all eight?
 
-- Cut to about five, because the last few would tell you more about tiredness than about your design.
 - Yes: more tasks give you more evidence.
+- Cut to about five, because the last few would tell you more about tiredness than about your design.
 - Yes, if you give the person a break in the middle.
 
 <details>
 <summary>After your attempt</summary>
 
-Cut to about five, because the last few would tell you more about tiredness than about your design. — A tired person hurries, gives up sooner and is kinder about what they have already seen. That is evidence about the session, not about the design.
-
 Yes: more tasks give you more evidence. — More evidence of falling quality. The extra rows look identical on the page and mean something different.
+
+Cut to about five, because the last few would tell you more about tiredness than about your design. — A tired person hurries, gives up sooner and is kinder about what they have already seen. That is evidence about the session, not about the design.
 
 Yes, if you give the person a break in the middle. — A break helps and it does not restore the attention of the first ten minutes. Choosing which three to drop is harder and far more useful.
 
@@ -2449,19 +2449,19 @@ A made up situation. You are running the session on your own. The person has agr
 
 Which way of capturing the session keeps the most of what you will need afterwards?
 
+- Record and write nothing at all, then listen back to the whole thing.
 - Record the audio and write sparse markers: the time, the task, and one word for what happened.
 - Write full notes and skip the recording, so nothing depends on the audio.
-- Record and write nothing at all, then listen back to the whole thing.
 - Ask the person to describe what happened at the end, and write that down.
 
 <details>
 <summary>After your attempt</summary>
 
+Record and write nothing at all, then listen back to the whole thing. — Listening to three sessions end to end takes longer than the sessions did, and you still will not find the moment you half-remember.
+
 Record the audio and write sparse markers: the time, the task, and one word for what happened. — Writing full notes while moderating means you stop watching. The markers exist only so you can find the right moments in the recording later.
 
 Write full notes and skip the recording, so nothing depends on the audio. — It is a real choice, and it costs you the moderating. Every minute your head is down is a minute you did not see a hesitation.
-
-Record and write nothing at all, then listen back to the whole thing. — Listening to three sessions end to end takes longer than the sessions did, and you still will not find the moment you half-remember.
 
 Ask the person to describe what happened at the end, and write that down. — A summary from memory tells you what they concluded, and what somebody concludes is the part that changes most between the moment and the end.
 
@@ -2541,18 +2541,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You could not recruit anybody at all. Is this lesson unfinished?
 
+- Test it on family instead and write it up as a session.
 - It is finished if you have the dated record of who you approached, the prepared session plan and the consent script.
 - Yes: without people there is nothing to show.
-- Test it on family instead and write it up as a session.
 
 <details>
 <summary>After your attempt</summary>
 
+Test it on family instead and write it up as a session. — You can rehearse on family, and a rehearsal is what it stays. Reporting one as a session is the single thing this course will not do.
+
 It is finished if you have the dated record of who you approached, the prepared session plan and the consent script. — The work of this lesson is the preparation and the honesty about the gap. A rehearsal on yourself is never written up as research, and the plan still stands.
 
 Yes: without people there is nothing to show. — A screener, a consent script and a plan for the session that goes wrong are exactly the things that rarely appear and always show competence.
-
-Test it on family instead and write it up as a session. — You can rehearse on family, and a rehearsal is what it stays. Reporting one as a session is the single thing this course will not do.
 
 Improve: Fill the dated field in step 1 with who you approached, where, and what happened, then record the change in step 5.
 
@@ -2601,16 +2601,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody arrives with twenty minutes instead of an hour. What do you do?
 
-- Run the short version you wrote in advance, and note in the record that it was shortened.
 - Run the full set faster.
+- Run the short version you wrote in advance, and note in the record that it was shortened.
 - Rearrange it for another day.
 
 <details>
 <summary>After your attempt</summary>
 
-Run the short version you wrote in advance, and note in the record that it was shortened. — Deciding which two tasks matter while somebody is sitting in front of you means deciding by whatever is easiest to start.
-
 Run the full set faster. — Hurrying removes the silences, and the silences are where you find out what people expected to happen.
+
+Run the short version you wrote in advance, and note in the record that it was shortened. — Deciding which two tasks matter while somebody is sitting in front of you means deciding by whatever is easiest to start.
 
 Rearrange it for another day. — Sometimes right, and often it means losing the person altogether. The short version is what makes twenty minutes worth having.
 
@@ -3360,18 +3360,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 In the second session you told the participant which menu holds the cancel option. What do you do about it?
 
-- Write it in the intervention log with the time and your exact words, and mark everything after it as assisted.
-- Leave it out, since it was one small hint.
 - Discard the session, because it is spoilt.
+- Leave it out, since it was one small hint.
+- Write it in the intervention log with the time and your exact words, and mark everything after it as assisted.
 
 <details>
 <summary>After your attempt</summary>
 
-Write it in the intervention log with the time and your exact words, and mark everything after it as assisted. — Your words are part of the data. Once the log says when you spoke, a reader can see exactly which part of the session was hers.
+Discard the session, because it is spoilt. — Everything up to the hint still stands. The hint is itself a finding about how hard that route is to find without help.
 
 Leave it out, since it was one small hint. — The hint produced everything that followed. Left out, the record reads as though she found the route herself, which is the opposite of what happened.
 
-Discard the session, because it is spoilt. — Everything up to the hint still stands. The hint is itself a finding about how hard that route is to find without help.
+Write it in the intervention log with the time and your exact words, and mark everything after it as assisted. — Your words are part of the data. Once the log says when you spoke, a reader can see exactly which part of the session was hers.
 
 Improve: Add the moment to the intervention log in step 3, mark the assisted point beside it, then record the change in step 5.
 
@@ -3390,18 +3390,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A session ran smoothly. The participant hesitated nowhere and finished every task. What have you learnt?
 
+- That your tasks were badly written.
 - Very little, and that is worth writing down exactly as it stands.
 - That the design works.
-- That your tasks were badly written.
 
 <details>
 <summary>After your attempt</summary>
 
+That your tasks were badly written. — They may have been too easy, and one session cannot tell you. Write what happened and see whether the next two are smooth as well.
+
 Very little, and that is worth writing down exactly as it stands. — Hesitations, wrong expectations and failures are what a session produces. A smooth hour tells you these tasks were easy for this person, and no more than that.
 
 That the design works. — One person finishing tells you one person finished. Smooth sessions often mean the tasks avoided the parts you were unsure about.
-
-That your tasks were badly written. — They may have been too easy, and one session cannot tell you. Write what happened and see whether the next two are smooth as well.
 
 Improve: Read the expectation log in step 2. If a screen change has no predicted outcome beside it, add the expectation question to your three responses in step 1 and record the change in step 5.
 
@@ -3953,8 +3953,8 @@ Two supplied problems from the same made-up study. A: all three participants hes
 Which one belongs at the top of the ranking?
 
 - B, because the cost is money and a payment made twice.
-- A, because three of three met it and only two of three met B.
 - A, because the hesitation was visible in every session and B was only what someone said.
+- A, because three of three met it and only two of three met B.
 - They rank equally, because both happen on the review screen.
 
 <details>
@@ -3962,9 +3962,9 @@ Which one belongs at the top of the ranking?
 
 B, because the cost is money and a payment made twice. — Losing money is the worst thing that happened to anyone in this study. Ranking is by what it cost the person, and nothing in A costs more than seconds.
 
-A, because three of three met it and only two of three met B. — That is ranking by frequency. A common small cost stays below a rare large one, which is why the count and the cost are written in separate parts of the row.
-
 A, because the hesitation was visible in every session and B was only what someone said. — How visible a difficulty was is about your seat in the room. A sentence saying “I would have paid again” is evidence of a real cost, even though it was quiet.
+
+A, because three of three met it and only two of three met B. — That is ranking by frequency. A common small cost stays below a rare large one, which is why the count and the cost are written in separate parts of the row.
 
 They rank equally, because both happen on the review screen. — The screen they share is a location, not a cause and not a cost. Two problems on one screen can still sit at opposite ends of the ranking.
 
@@ -4003,18 +4003,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Three participants each met a different difficulty. Does the design have three problems?
 
-- You cannot tell from three sessions. Write which reading you believe and why.
 - Yes: three participants, three problems.
 - No: with three people nothing can be concluded.
+- You cannot tell from three sessions. Write which reading you believe and why.
 
 <details>
 <summary>After your attempt</summary>
 
-You cannot tell from three sessions. Write which reading you believe and why. — It may be one problem showing three faces, or fifteen problems of which you saw three. Saying which you believe, and on what grounds, is the analysis.
-
 Yes: three participants, three problems. — That treats each session as a complete survey of the design. Three people met whatever their own route happened to pass through.
 
 No: with three people nothing can be concluded. — You saw three real difficulties and they are real. What you cannot say is how many exist in total.
+
+You cannot tell from three sessions. Write which reading you believe and why. — It may be one problem showing three faces, or fifteen problems of which you saw three. Saying which you believe, and on what grounds, is the analysis.
 
 Improve: Add a line to your groups in step 2 saying whether you believe these are separate problems or one problem showing differently, then record the change in step 5.
 
@@ -4033,18 +4033,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One participant finished the cancellation task after you pointed at the menu. How does that appear in the counts?
 
-- As an assisted completion, kept out of the unassisted count, which for that task is zero of three.
-- As a completion, with a note that you helped.
 - It is left out entirely, since it was not a fair attempt.
+- As a completion, with a note that you helped.
+- As an assisted completion, kept out of the unassisted count, which for that task is zero of three.
 
 <details>
 <summary>After your attempt</summary>
 
-As an assisted completion, kept out of the unassisted count, which for that task is zero of three. — Separating the two counts changes the picture completely. Zero of three finishing alone is a different design than three of three finishing.
+It is left out entirely, since it was not a fair attempt. — The attempt is real evidence about how hard the route is to find. It stays in the record and out of the unassisted count.
 
 As a completion, with a note that you helped. — A note beside a completion still leaves it in the success column, and the column is the part anyone reads.
 
-It is left out entirely, since it was not a fair attempt. — The attempt is real evidence about how hard the route is to find. It stays in the record and out of the unassisted count.
+As an assisted completion, kept out of the unassisted count, which for that task is zero of three. — Separating the two counts changes the picture completely. Zero of three finishing alone is a different design than three of three finishing.
 
 Improve: Go back to the intervention log from the previous lesson, mark every assisted task in your problem rows in step 3, then record the change in step 5.
 
@@ -4538,21 +4538,21 @@ Four supplied sentences about the same made-up study. Three of the five people w
 
 Which sentence can the study support?
 
-- Three of the five people I sat with could not tell whether their place was held before paying.
-- Sixty per cent of users could not tell whether their place was held.
-- Most people are unsure whether their place is held before paying.
 - Around sixty per cent, though the sample was small, could not tell whether their place was held.
+- Three of the five people I sat with could not tell whether their place was held before paying.
+- Most people are unsure whether their place is held before paying.
+- Sixty per cent of users could not tell whether their place was held.
 
 <details>
 <summary>After your attempt</summary>
 
-Three of the five people I sat with could not tell whether their place was held before paying. — It says what happened, to whom, and how many of them. Anyone can hold it against your records and see whether it stands.
+Around sixty per cent, though the sample was small, could not tell whether their place was held. — The hedge sits beside the number rather than replacing it, and the number is what a reader carries away. If it cannot stand alone, it does not go in.
 
-Sixty per cent of users could not tell whether their place was held. — The percentage turns five people into everyone, and it hides the five, so the reader cannot judge how much weight to give it.
+Three of the five people I sat with could not tell whether their place was held before paying. — It says what happened, to whom, and how many of them. Anyone can hold it against your records and see whether it stands.
 
 Most people are unsure whether their place is held before paying. — Most is a percentage with the arithmetic left out. It makes the same claim about a population and gives the reader no numbers to argue with.
 
-Around sixty per cent, though the sample was small, could not tell whether their place was held. — The hedge sits beside the number rather than replacing it, and the number is what a reader carries away. If it cannot stand alone, it does not go in.
+Sixty per cent of users could not tell whether their place was held. — The percentage turns five people into everyone, and it hides the five, so the reader cannot judge how much weight to give it.
 
 Read your own claims again and rewrite any sentence carrying a rate as a count of the people you sat with.
 
@@ -4650,18 +4650,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You read that five users find eighty-five per cent of problems. What does that let you claim about your three sessions?
 
+- That you need two more participants to reach the same coverage.
 - Nothing. It came from particular studies under particular assumptions, and it says nothing about your study.
 - That your three sessions probably found most of the problems.
-- That you need two more participants to reach the same coverage.
 
 <details>
 <summary>After your attempt</summary>
 
+That you need two more participants to reach the same coverage. — It treats a number from elsewhere as a target for your own work. More sessions are usually worth running, and not because of that figure.
+
 Nothing. It came from particular studies under particular assumptions, and it says nothing about your study. — The figure is quoted so often it sounds like a law. Your honest claim stays what you saw, with the participant count beside it.
 
 That your three sessions probably found most of the problems. — That is the figure applied to a study it was never about. Three sessions found what these three people happened to meet.
-
-That you need two more participants to reach the same coverage. — It treats a number from elsewhere as a target for your own work. More sessions are usually worth running, and not because of that figure.
 
 Improve: Check your claims in step 2 for any sentence that leans on a published coverage figure, rewrite it as a count, then record the change in step 5.
 
@@ -4680,18 +4680,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your worked range runs from about a quarter to about nine in ten. What do you do with it?
 
-- Show the working once, then report the count instead of the rate.
 - Report the rate with the range beside it, so readers can judge.
 - Leave the arithmetic out, since it makes the study look weak.
+- Show the working once, then report the count instead of the rate.
 
 <details>
 <summary>After your attempt</summary>
 
-Show the working once, then report the count instead of the rate. — The range is the argument for dropping the rate. Showing it once settles the question for anyone who wonders why there are no percentages.
-
 Report the rate with the range beside it, so readers can judge. — Readers carry the number away and leave the range behind. A range that wide is not a measurement worth putting in front of anyone.
 
 Leave the arithmetic out, since it makes the study look weak. — It makes the study look like what it is. Doing the sum once is the part that stops you writing the rate in the next report as well.
+
+Show the working once, then report the count instead of the rate. — The range is the argument for dropping the rate. Showing it once settles the question for anyone who wonders why there are no percentages.
 
 Improve: Move the working into step 4 as your inputs, result and width sentence, take the rate out of your claims in step 2, then record the change in step 5.
 
@@ -4710,18 +4710,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A reader asks how you measured the severity of the problems you ranked. What do you say?
 
+- That severity is a standard scale used across the industry.
 - That you ranked them yourself from what you watched, and that nothing was measured.
 - That severity followed from how many participants met each problem.
-- That severity is a standard scale used across the industry.
 
 <details>
 <summary>After your attempt</summary>
 
+That severity is a standard scale used across the industry. — Scales exist and somebody still has to place each problem on one. That placing is the judgement, whatever the scale is called.
+
 That you ranked them yourself from what you watched, and that nothing was measured. — Naming it as your judgement lets a reader disagree with the order without doubting the observations underneath it.
 
 That severity followed from how many participants met each problem. — That would be ranking by frequency, and your list is ranked by cost. It also dresses a judgement as a calculation.
-
-That severity is a standard scale used across the industry. — Scales exist and somebody still has to place each problem on one. That placing is the judgement, whatever the scale is called.
 
 Improve: Write the severity sentence in step 5 naming yourself and the basis, add what would make it measured, then record the change beside it.
 
@@ -5255,21 +5255,21 @@ A supplied made-up situation. The repair was made and re-tested with two new peo
 
 What can the report say about this re-test?
 
-- That both new people finished without asking, and that the prediction was written after the sessions rather than before.
 - That the repair is confirmed, because the result matched the prediction.
-- That the repair is confirmed, because two of two finished.
+- That both new people finished without asking, and that the prediction was written after the sessions rather than before.
 - Nothing, because the re-test is spoilt.
+- That the repair is confirmed, because two of two finished.
 
 <details>
 <summary>After your attempt</summary>
 
-That both new people finished without asking, and that the prediction was written after the sessions rather than before. — The observation stands on its own, and dating the prediction honestly tells a reader exactly how much weight to put on the match.
-
 That the repair is confirmed, because the result matched the prediction. — A prediction written after the event matches whatever happened. There was never an evening on which that note came out wrong.
 
-That the repair is confirmed, because two of two finished. — Two people finishing is a real observation and it is not a test of the repair. With no prior prediction, nothing was ever at risk.
+That both new people finished without asking, and that the prediction was written after the sessions rather than before. — The observation stands on its own, and dating the prediction honestly tells a reader exactly how much weight to put on the match.
 
 Nothing, because the re-test is spoilt. — The sessions happened and the observations are real. What is missing is the prior prediction, so say that plainly and keep everything else.
+
+That the repair is confirmed, because two of two finished. — Two people finishing is a real observation and it is not a test of the repair. With no prior prediction, nothing was ever at risk.
 
 Check when your own prediction was written. If it came after the re-test, mark it so and write a fresh one for the next change.
 
@@ -5306,16 +5306,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 While making the repair you also moved the button, because it was quick. What has that cost you?
 
-- You can no longer say which change produced the difference, so the re-test answers nothing.
 - Nothing, as long as you record both changes.
+- You can no longer say which change produced the difference, so the re-test answers nothing.
 - Only that the comparison is now less tidy.
 
 <details>
 <summary>After your attempt</summary>
 
-You can no longer say which change produced the difference, so the re-test answers nothing. — Two changes give one result and two possible causes. The whole point of one change is that the result has only one thing to attach to.
-
 Nothing, as long as you record both changes. — Recording them keeps you honest and does not separate them. The result still cannot be traced to either one.
+
+You can no longer say which change produced the difference, so the re-test answers nothing. — Two changes give one result and two possible causes. The whole point of one change is that the result has only one thing to attach to.
 
 Only that the comparison is now less tidy. — It is not tidiness. If the participants behave differently, you have no way to say why, which is the question you were asking.
 
@@ -5336,18 +5336,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have nobody new to re-test with. What do you do?
 
+- Skip the re-test and mark the repair as made.
 - Write the prediction anyway, run it as a rehearsal on yourself, label it a rehearsal, and write a dated note of who you could not reach.
 - Re-test with one of the original three, since they already know the tasks.
-- Skip the re-test and mark the repair as made.
 
 <details>
 <summary>After your attempt</summary>
 
+Skip the re-test and mark the repair as made. — A repair with no re-test is a change, which is worth recording as exactly that. The rehearsal plus the dated note gives you more than skipping does.
+
 Write the prediction anyway, run it as a rehearsal on yourself, label it a rehearsal, and write a dated note of who you could not reach. — The prediction still has to be written first, because that habit is the point. The rehearsal shows the change works mechanically and shows nothing about other people.
 
 Re-test with one of the original three, since they already know the tasks. — Somebody who has already met the problem cannot show whether it has gone. If they are the only person available, say so beside the result.
-
-Skip the re-test and mark the repair as made. — A repair with no re-test is a change, which is worth recording as exactly that. The rehearsal plus the dated note gives you more than skipping does.
 
 Improve: Choose your route in step 3, write the dated note beside it with what you had prepared, then record the change in step 5.
 
@@ -5366,18 +5366,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The re-test failed. Both new people asked the same question as before. What goes in the report?
 
+- Nothing yet, until a second repair succeeds.
 - That it failed, in one sentence with the counts, followed by what you now think the problem actually is.
 - That the repair needs further work before it can be assessed.
-- Nothing yet, until a second repair succeeds.
 
 <details>
 <summary>After your attempt</summary>
 
+Nothing yet, until a second repair succeeds. — Holding the failure back until there is a success turns the report into a story with the evidence chosen to fit it.
+
 That it failed, in one sentence with the counts, followed by what you now think the problem actually is. — A failed repair is a finding about the problem. It says your reading of the cause was wrong, which is more useful than a change nobody tested.
 
 That the repair needs further work before it can be assessed. — That sentence describes a plan rather than a result, and it quietly hides the outcome. The result is that this change did not do it.
-
-Nothing yet, until a second repair succeeds. — Holding the failure back until there is a success turns the report into a story with the evidence chosen to fit it.
 
 Improve: Write the failure as your outcome sentence in step 5, add what you now think the cause is, re-rank the remaining problems, then record the change.
 
@@ -5942,20 +5942,20 @@ Two supplied made up results for the same task. The click-through: three people 
 What is the honest thing to record from the pair?
 
 - Both results, each labelled with the conditions it came from, and the pressing-twice problem added to the ranked list.
+- Neither, until you can run the test on a real build.
 - The second result only, because it was closer to real conditions and replaces the first.
 - The first result only, because the second was a rehearsal with a person counting rather than a real connection.
-- Neither, until you can run the test on a real build.
 
 <details>
 <summary>After your attempt</summary>
 
 Both results, each labelled with the conditions it came from, and the pressing-twice problem added to the ranked list. — The two results are not in conflict. They answer different questions, and only the conditions written beside each one keep that clear.
 
+Neither, until you can run the test on a real build. — Waiting for a build leaves you with nothing for weeks. Both results are usable as long as each carries what it was and what it was not.
+
 The second result only, because it was closer to real conditions and replaces the first. — The click-through still tells you the button is findable, which the crowded version cannot show. Throwing it away loses a result you already paid for.
 
 The first result only, because the second was a rehearsal with a person counting rather than a real connection. — The rehearsal cannot speak about real timings, and it did show two people pressing twice. That is an observation about behaviour, and it belongs in the list with its label attached.
-
-Neither, until you can run the test on a real build. — Waiting for a build leaves you with nothing for weeks. Both results are usable as long as each carries what it was and what it was not.
 
 Write your own pair the same way: the prototype result, the waiting or loaded-up result, and the conditions beside each.
 
@@ -6003,18 +6003,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your click-through showed nobody hesitating at the pay button. Under a counted four-second wait, two of three people pressed it twice. Which result goes in the report?
 
-- Both, each with the conditions it was seen under.
 - Only the wait result, since it is closer to what people would really get.
 - Only the click-through, because the wait was staged.
+- Both, each with the conditions it was seen under.
 
 <details>
 <summary>After your attempt</summary>
 
-Both, each with the conditions it was seen under. — They answer different questions. The click-through says the button is findable; the wait says what happens once it has been pressed.
-
 Only the wait result, since it is closer to what people would really get. — It is closer in one respect and it is still a staged wait. Replacing one result with another loses the part you already knew.
 
 Only the click-through, because the wait was staged. — Staged conditions still produced two people pressing twice, which nothing in the click-through could ever have shown.
+
+Both, each with the conditions it was seen under. — They answer different questions. The click-through says the button is findable; the wait says what happens once it has been pressed.
 
 Improve: If the changed field in step 4 keeps only one of the two results, add the other back with its conditions, then record the change in step 5.
 
@@ -6033,18 +6033,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have no running build at all. Can you still test what real content volume does?
 
+- You can approximate it by adding a note saying the real list will be much longer.
 - You can: fill the paper or click-through screen with the longest real names and the largest real numbers, and add as many rows as the real thing would hold.
 - You cannot: volume problems only appear in a page that is really loading.
-- You can approximate it by adding a note saying the real list will be much longer.
 
 <details>
 <summary>After your attempt</summary>
 
+You can approximate it by adding a note saying the real list will be much longer. — A note changes nothing you can look at. The point is to face the crowded screen and find out what it breaks.
+
 You can: fill the paper or click-through screen with the longest real names and the largest real numbers, and add as many rows as the real thing would hold. — Volume damage is visible on paper. Long titles wrap, the summary scrolls away, and the item you wanted ends up below everything else.
 
 You cannot: volume problems only appear in a page that is really loading. — Some do, such as slow drawing. Wrapping, scrolling and things pushed out of sight appear on a sheet of paper the moment you stop using three tidy examples.
-
-You can approximate it by adding a note saying the real list will be much longer. — A note changes nothing you can look at. The point is to face the crowded screen and find out what it breaks.
 
 Improve: If the content-swap field in step 2 still holds three tidy examples, replace them with your worst real ones and record the change in step 5.
 
@@ -6063,18 +6063,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your notes say the wait felt too long. What is missing?
 
-- The length in seconds, the device, the method and the number of items, without which nobody can repeat what you did.
-- A rating out of ten from the people who waited.
 - Nothing is missing, because how the wait felt is the finding.
+- A rating out of ten from the people who waited.
+- The length in seconds, the device, the method and the number of items, without which nobody can repeat what you did.
 
 <details>
 <summary>After your attempt</summary>
 
-The length in seconds, the device, the method and the number of items, without which nobody can repeat what you did. — A feeling cannot be checked by anyone, including you next month. Four facts turn it into something repeatable.
+Nothing is missing, because how the wait felt is the finding. — How it felt does matter, and it only becomes usable once you can say how long the wait was.
 
 A rating out of ten from the people who waited. — A rating is another feeling with a number attached to it. It still does not say how long the wait actually was.
 
-Nothing is missing, because how the wait felt is the finding. — How it felt does matter, and it only becomes usable once you can say how long the wait was.
+The length in seconds, the device, the method and the number of items, without which nobody can repeat what you did. — A feeling cannot be checked by anyone, including you next month. Four facts turn it into something repeatable.
 
 Improve: If the first-thing field in step 3 has no seconds in it, re-run the wait with a timer and write the sequence out, then record the change in step 5.
 
@@ -6587,21 +6587,21 @@ A supplied made up unmoderated result. Five people were sent one task: reach the
 
 Which limit is the one worth writing down first?
 
-- You cannot say why the fifth person gave up, and “couldn’t see it” is the whole account you will ever get.
-- Five people is too few to report a rate.
-- You cannot be sure the participants were representative.
 - You cannot check whether anyone was interrupted while doing it.
+- You cannot be sure the participants were representative.
+- Five people is too few to report a rate.
+- You cannot say why the fifth person gave up, and “couldn’t see it” is the whole account you will ever get.
 
 <details>
 <summary>After your attempt</summary>
 
-You cannot say why the fifth person gave up, and “couldn’t see it” is the whole account you will ever get. — The one failure is the most interesting line in the result, and the method has already closed the door on explaining it. Naming that is what tells you whether to follow up.
-
-Five people is too few to report a rate. — True of every study this size, and it is a limit about counting rather than about this method. An unmoderated run with five hundred people still could not tell you why.
+You cannot check whether anyone was interrupted while doing it. — A real limit of the method, and a smaller one than the missing why. Write it second.
 
 You cannot be sure the participants were representative. — A recruitment limit that belongs in your report and would apply just as much to a moderated session.
 
-You cannot check whether anyone was interrupted while doing it. — A real limit of the method, and a smaller one than the missing why. Write it second.
+Five people is too few to report a rate. — True of every study this size, and it is a limit about counting rather than about this method. An unmoderated run with five hundred people still could not tell you why.
+
+You cannot say why the fifth person gave up, and “couldn’t see it” is the whole account you will ever get. — The one failure is the most interesting line in the result, and the method has already closed the door on explaining it. Naming that is what tells you whether to follow up.
 
 Write your own limits in the same order: the one that damages your strongest finding goes first.
 
@@ -6649,18 +6649,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 An unmoderated run says four of five people reached the change screen and one gave up. What can you say about why she gave up?
 
+- You can say the route is hard to find, since one person in five failed.
 - Almost nothing, beyond the words she chose to type, and that gap belongs in the limits rather than being filled in.
 - You can work it out from where the other four succeeded.
-- You can say the route is hard to find, since one person in five failed.
 
 <details>
 <summary>After your attempt</summary>
 
+You can say the route is hard to find, since one person in five failed. — One outcome in five is a count, not a cause. It could be the route, the wording of your scenario, or her phone ringing.
+
 Almost nothing, beyond the words she chose to type, and that gap belongs in the limits rather than being filled in. — The gap is the method working exactly as designed. Guessing at it is how an unmoderated result turns into an invented finding.
 
 You can work it out from where the other four succeeded. — The four tell you the route exists and that some people find it. They say nothing about what happened in her session.
-
-You can say the route is hard to find, since one person in five failed. — One outcome in five is a count, not a cause. It could be the route, the wording of your scenario, or her phone ringing.
 
 Improve: If the limits-list field in step 4 does not name the missing why first, move it to the top and record the change in step 5.
 
@@ -6679,18 +6679,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is an unmoderated run more objective because you are not there to influence anyone?
 
-- It is unsupervised rather than objective: removing you removes your influence and your understanding at the same time.
 - It is more objective, because the absence of a moderator removes the main source of bias.
 - It is more objective, provided the instructions are well written.
+- It is unsupervised rather than objective: removing you removes your influence and your understanding at the same time.
 
 <details>
 <summary>After your attempt</summary>
 
-It is unsupervised rather than objective: removing you removes your influence and your understanding at the same time. — You also lose the chance to notice a misread instruction, which is a silent error nobody ever reports.
-
 It is more objective, because the absence of a moderator removes the main source of bias. — A moderator is one source among several. The instructions, the recruitment and your own reading of the outcomes all remain.
 
 It is more objective, provided the instructions are well written. — Well-written instructions reduce misreading. They do not turn behaviour without explanation into an unbiased result.
+
+It is unsupervised rather than objective: removing you removes your influence and your understanding at the same time. — You also lose the chance to notice a misread instruction, which is a silent error nobody ever reports.
 
 Improve: If the limits-list field in step 4 describes this method as unbiased or objective, rewrite that line as what you gain and what you lose, then record the change in step 5.
 
@@ -6709,18 +6709,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You designed the task set and there is nobody to send it to. What do you file?
 
-- The task set, the limits, and a dated line saying it was not run and what you tried.
 - Nothing at all: a study you never ran is not worth keeping.
 - The task set, written up as though a small run had happened.
+- The task set, the limits, and a dated line saying it was not run and what you tried.
 
 <details>
 <summary>After your attempt</summary>
 
-The task set, the limits, and a dated line saying it was not run and what you tried. — The design is the work. A dated gap is honest, and it also shows the decision was about the question rather than about the effort.
-
 Nothing at all: a study you never ran is not worth keeping. — The reasoning behind a method choice is one of the few things a reader can genuinely judge. Throwing it away loses that.
 
 The task set, written up as though a small run had happened. — That is an invented result, and it is the one thing that would make everything else you filed untrustworthy.
+
+The task set, the limits, and a dated line saying it was not run and what you tried. — The design is the work. A dated gap is honest, and it also shows the decision was about the question rather than about the effort.
 
 Improve: If the data-plan field in step 5 is empty because you have nobody to send it to, write today’s date and what you tried, then record the change in the last field of step 5.
 
@@ -7272,19 +7272,19 @@ A supplied made up study. Three people booked a class. Two could not tell whethe
 
 Which non-recommendation does this evidence license?
 
+- Do not build anything until more people have been tested.
 - Do not build the reminder feature yet, because nobody’s difficulty was forgetting, and one person asking for it is a request rather than a problem.
 - Do not build the reminder feature, because reminders are common elsewhere and add nothing new.
-- Do not build anything until more people have been tested.
 - Do not build the held-place message, because only two of three people met the problem.
 
 <details>
 <summary>After your attempt</summary>
 
+Do not build anything until more people have been tested. — That is a recommendation to stop, and it is not what this evidence says. Two of three people meeting one specific problem is enough to act on that one thing.
+
 Do not build the reminder feature yet, because nobody’s difficulty was forgetting, and one person asking for it is a request rather than a problem. — The strongest non-recommendation names something you were likely to build anyway. It also carries its own reversal: watch for someone who actually missed a class.
 
 Do not build the reminder feature, because reminders are common elsewhere and add nothing new. — The reason has to come from what you saw, not from what other products do. A reader cannot check the second kind of reason at all.
-
-Do not build anything until more people have been tested. — That is a recommendation to stop, and it is not what this evidence says. Two of three people meeting one specific problem is enough to act on that one thing.
 
 Do not build the held-place message, because only two of three people met the problem. — Two of three met the highest-harm problem in the study. Arguing against the repair you have most support for turns the section into caution rather than a finding.
 
@@ -7334,18 +7334,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Fifteen thorough pages, or two pages with the decision first. Which one changes more?
 
+- Fifteen pages, because the detail shows the work was done properly.
 - Two pages, because length reduces the chance anyone finishes it, and an unread recommendation changes nothing.
 - Fifteen pages, because a complete record is harder to argue with.
-- Fifteen pages, because the detail shows the work was done properly.
 
 <details>
 <summary>After your attempt</summary>
 
+Fifteen pages, because the detail shows the work was done properly. — The work being done properly is shown by the counts and the limits, and both of those fit on two pages.
+
 Two pages, because length reduces the chance anyone finishes it, and an unread recommendation changes nothing. — Thoroughness protects you from being questioned. It does not get the change made, and the two are easy to confuse while you are writing.
 
 Fifteen pages, because a complete record is harder to argue with. — Nobody argues with it because nobody reaches the end. The raw material still sits in your folder if anyone asks for it.
-
-Fifteen pages, because the detail shows the work was done properly. — The work being done properly is shown by the counts and the limits, and both of those fit on two pages.
 
 Improve: If the findings in step 2 will not fit on two pages, cut to the ones the decision rests on and record what you cut in step 5.
 
@@ -7365,17 +7365,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You write “67 per cent of participants were unsure”. What is wrong with it?
 
 - It is two of three people written as a rate, and the rate suggests a precision the study cannot support.
-- It is acceptable as long as you say somewhere that the sample was small.
 - The figure should be rounded to 70 per cent.
+- It is acceptable as long as you say somewhere that the sample was small.
 
 <details>
 <summary>After your attempt</summary>
 
 It is two of three people written as a rate, and the rate suggests a precision the study cannot support. — A percentage invites the reader to compare your three people with numbers from studies of thousands. The count does not.
 
-It is acceptable as long as you say somewhere that the sample was small. — The caveat travels badly. The number gets quoted onward; the sentence beside it does not.
-
 The figure should be rounded to 70 per cent. — Rounding changes the digits and keeps the problem, which is reporting three people as a proportion at all.
+
+It is acceptable as long as you say somewhere that the sample was small. — The caveat travels badly. The number gets quoted onward; the sentence beside it does not.
 
 Improve: Search the findings in step 2 for the per cent sign and the word most, rewrite each as a count of participants, then record the change in step 5.
 
@@ -7394,18 +7394,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your report recommends four things and argues against nothing. What does that suggest?
 
+- You should add a non-recommendation for balance, whether or not the evidence supports one.
 - The study may have confirmed what you already believed, and the thing not to build is the line that would show it did more than that.
 - It suggests nothing: a study that supports the plan is a good outcome.
-- You should add a non-recommendation for balance, whether or not the evidence supports one.
 
 <details>
 <summary>After your attempt</summary>
 
+You should add a non-recommendation for balance, whether or not the evidence supports one. — An invented non-recommendation is as unsupported as an invented finding. Look for the one your evidence actually gives you.
+
 The study may have confirmed what you already believed, and the thing not to build is the line that would show it did more than that. — Evidence that only ever agrees with you is worth a second look. The non-recommendation is where a reader sees the study could have changed your mind.
 
 It suggests nothing: a study that supports the plan is a good outcome. — It can be, and it is also what a study looks like when it was designed to agree. The check costs you one paragraph.
-
-You should add a non-recommendation for balance, whether or not the evidence supports one. — An invented non-recommendation is as unsupported as an invented finding. Look for the one your evidence actually gives you.
 
 Improve: Fill the not-build field in step 4 with what you saw and what would reverse it, then record the change in step 5.
 
@@ -8117,16 +8117,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A decision in your trail has nothing behind it. What do you write beside it?
 
-- Judgement, with the one thing that would test it.
 - The closest research finding you have, since it is roughly related.
+- Judgement, with the one thing that would test it.
 - Leave it blank and let the trail speak for itself.
 
 <details>
 <summary>After your attempt</summary>
 
-Judgement, with the one thing that would test it. — A marked judgement costs nothing and makes the evidence-led lines believable. The test you name also becomes your next question.
-
 The closest research finding you have, since it is roughly related. — Attaching a loosely related finding is how a trail becomes a story. A reader who follows the link finds it does not support the decision.
+
+Judgement, with the one thing that would test it. — A marked judgement costs nothing and makes the evidence-led lines believable. The test you name also becomes your next question.
 
 Leave it blank and let the trail speak for itself. — A blank reads as an oversight. A marked judgement reads as a decision whose status you know.
 
@@ -8177,16 +8177,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your summary says the design was validated by testing. What is wrong with that?
 
-- Nothing was validated: a small test found problems and a repair partly worked, and that is the sentence to write instead.
 - It is fine, since you did run a test and the repair mostly worked.
+- Nothing was validated: a small test found problems and a repair partly worked, and that is the sentence to write instead.
 - It is fine once you add the participant count.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing was validated: a small test found problems and a repair partly worked, and that is the sentence to write instead. — Validated implies a measured outcome that nobody can produce. What you actually did is more interesting, and it can be checked.
-
 It is fine, since you did run a test and the repair mostly worked. — Running a test licenses “I tested it and here is what happened”. It does not license a word that means the design was proven.
+
+Nothing was validated: a small test found problems and a repair partly worked, and that is the sentence to write instead. — Validated implies a measured outcome that nobody can produce. What you actually did is more interesting, and it can be checked.
 
 It is fine once you add the participant count. — The count helps every honest sentence and it cannot rescue this one, because the problem is the claim rather than the size.
 

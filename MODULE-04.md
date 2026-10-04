@@ -273,21 +273,21 @@ A supplied pair from the same made-up project. Reader’s model: “the list sho
 
 What is the consequence worth writing down?
 
-- She judges distance from the order, so she may travel across the city believing it was the closest option.
+- She will learn the real order after using it a few times.
 - The list is not sorted the way she expects, which is mildly confusing.
 - The promotion agreement is unfair to other studios.
-- She will learn the real order after using it a few times.
+- She judges distance from the order, so she may travel across the city believing it was the closest option.
 
 <details>
 <summary>After your attempt</summary>
 
-She judges distance from the order, so she may travel across the city believing it was the closest option. — The consequence is a wrong action taken confidently, which is the expensive kind. Ordering carries a meaning nobody declared.
+She will learn the real order after using it a few times. — Possibly, and the first time is where the cost lands. Design for the first time and record what the learning costs.
 
 The list is not sorted the way she expects, which is mildly confusing. — “Mildly confusing” is a feeling, not a consequence. Name what she does because of the mismatch.
 
 The promotion agreement is unfair to other studios. — That may be true and it is a business ethics question, not a contradiction between two models of how the thing works.
 
-She will learn the real order after using it a few times. — Possibly, and the first time is where the cost lands. Design for the first time and record what the learning costs.
+She judges distance from the order, so she may travel across the city believing it was the closest option. — The consequence is a wrong action taken confidently, which is the expensive kind. Ordering carries a meaning nobody declared.
 
 Write each of your own contradictions the same way: what she believes, what the design does, and what she does because of the gap.
 
@@ -342,18 +342,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your structure mirrors how the studio organises its classes internally, and it is entirely logical. Is that enough?
 
+- Yes, because people learn a structure after a few visits.
 - No. Logical to whom matters: a structure that mirrors an organisation is routinely unusable because readers do not know the organisation.
 - Yes, provided the labels are clear and consistent.
-- Yes, because people learn a structure after a few visits.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, because people learn a structure after a few visits. — Some do, and the first visit is where most decisions are made. Learning is a cost you are choosing to impose.
+
 No. Logical to whom matters: a structure that mirrors an organisation is routinely unusable because readers do not know the organisation. — Internal logic is real logic and it encodes knowledge the reader does not have. They look where their own model says to look.
 
 Yes, provided the labels are clear and consistent. — Clear labels on the wrong structure send people confidently to the wrong place.
-
-Yes, because people learn a structure after a few visits. — Some do, and the first visit is where most decisions are made. Learning is a cost you are choosing to impose.
 
 Improve: Reread your design model in step 3. If any part of the structure exists because of how you or the studio think about classes, write it as a contradiction in step 4 and record the change in step 5.
 
@@ -373,17 +373,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You wrote the reader’s model from your own understanding of the flow. What is wrong with that?
 
 - It produces a model with no friction in it, so there are no real contradictions to find.
-- Nothing, if you designed it for a reader like yourself.
 - It is acceptable as a starting point to be tested later.
+- Nothing, if you designed it for a reader like yourself.
 
 <details>
 <summary>After your attempt</summary>
 
 It produces a model with no friction in it, so there are no real contradictions to find. — You know where everything is and why. Writing that down as the reader’s belief guarantees the two models agree.
 
-Nothing, if you designed it for a reader like yourself. — Even then you know the decisions behind it, which no reader does. Your fluency is the least transferable thing about you.
-
 It is acceptable as a starting point to be tested later. — It is, if it is labelled as an assumption. Written as the reader’s model it will be treated as evidence.
+
+Nothing, if you designed it for a reader like yourself. — Even then you know the decisions behind it, which no reader does. Your fluency is the least transferable thing about you.
 
 Improve: Mark every line in your reader model in step 2 as observed, reported or assumed. If none are observed, go back to your Module 2 notes and find one, then record it in step 5.
 
@@ -402,18 +402,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You decide to teach the reader your model with a short explanation on the screen. What should the cost line say?
 
-- That explanations are frequently skipped, so the cost is a reader who acts on the old model anyway.
-- That there is no cost, since the explanation is short.
 - That the cost falls on you, in writing time.
+- That there is no cost, since the explanation is short.
+- That explanations are frequently skipped, so the cost is a reader who acts on the old model anyway.
 
 <details>
 <summary>After your attempt</summary>
 
-That explanations are frequently skipped, so the cost is a reader who acts on the old model anyway. — Teaching is a legitimate choice and it is the expensive one, because it relies on attention you have not been given.
+That the cost falls on you, in writing time. — That is your cost, and the one that matters is what happens to the reader who does not read it.
 
 That there is no cost, since the explanation is short. — Length is not the cost. The cost is that it competes with the task the reader came to do.
 
-That the cost falls on you, in writing time. — That is your cost, and the one that matters is what happens to the reader who does not read it.
+That explanations are frequently skipped, so the cost is a reader who acts on the old model anyway. — Teaching is a legitimate choice and it is the expensive one, because it relies on attention you have not been given.
 
 Improve: Write the cost of your choice in step 5 in terms of what happens to a reader who does not notice, then record the change.
 
@@ -883,21 +883,21 @@ A supplied demand from the same made-up flow: the reader chooses a class on one 
 
 Which conversion actually removes the memory demand?
 
-- Show the chosen class name and time on the confirming screen, with an option to change it.
 - Add a hint under the field reading “the class you selected earlier”.
-- Add a confirmation dialogue asking “are you sure this is the right class?”
 - Let her open the class list in a new tab to look it up.
+- Add a confirmation dialogue asking “are you sure this is the right class?”
+- Show the chosen class name and time on the confirming screen, with an option to change it.
 
 <details>
 <summary>After your attempt</summary>
 
-Show the chosen class name and time on the confirming screen, with an option to change it. — The answer is now in front of her and she checks rather than produces. The change option keeps her in control without asking her to remember.
-
 Add a hint under the field reading “the class you selected earlier”. — That names what to remember without supplying it. The demand is unchanged.
+
+Let her open the class list in a new tab to look it up. — Better than nothing and it moves the work to her: she must leave the task, find the class and come back holding the answer.
 
 Add a confirmation dialogue asking “are you sure this is the right class?” — She still has no way to check. Confirming something you cannot verify is not a check.
 
-Let her open the class list in a new tab to look it up. — Better than nothing and it moves the work to her: she must leave the task, find the class and come back holding the answer.
+Show the chosen class name and time on the confirming screen, with an option to change it. — The answer is now in front of her and she checks rather than produces. The change option keeps her in control without asking her to remember.
 
 Convert your own two demands by showing the value where it is needed, not by labelling what should be remembered.
 
@@ -975,16 +975,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You skipped the interruption test because your flow takes only two minutes. Why apply it anyway?
 
-- Because real use is interrupted regardless of how long the flow takes; two minutes on a bus is not two uninterrupted minutes.
 - It is unnecessary for short flows; the test is for long forms.
+- Because real use is interrupted regardless of how long the flow takes; two minutes on a bus is not two uninterrupted minutes.
 - Only if the flow involves payment.
 
 <details>
 <summary>After your attempt</summary>
 
-Because real use is interrupted regardless of how long the flow takes; two minutes on a bus is not two uninterrupted minutes. — The flow’s length is your measurement under ideal conditions. Interruption is the normal case, not the exception.
-
 It is unnecessary for short flows; the test is for long forms. — Short flows are more often done in fragments, precisely because they feel quick to start.
+
+Because real use is interrupted regardless of how long the flow takes; two minutes on a bus is not two uninterrupted minutes. — The flow’s length is your measurement under ideal conditions. Interruption is the normal case, not the exception.
 
 Only if the flow involves payment. — Payment raises the cost of failure and does not create the demand. Any carried value fails the same way.
 
@@ -1006,17 +1006,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 One demand cannot be removed: the reader must remember which email address they used. What should you write?
 
 - That it is genuinely unremovable, why, and what you did to soften it, such as showing a masked hint.
-- That the reader should use a password manager.
 - Nothing: unremovable demands are not part of the audit.
+- That the reader should use a password manager.
 
 <details>
 <summary>After your attempt</summary>
 
 That it is genuinely unremovable, why, and what you did to soften it, such as showing a masked hint. — Some demands are real. Recording why, and what you did to reduce the cost, is the honest end of the audit.
 
-That the reader should use a password manager. — That moves the demand onto a tool they may not have, and it is advice rather than design.
-
 Nothing: unremovable demands are not part of the audit. — They are the most important part, because they are what you are knowingly asking of people.
+
+That the reader should use a password manager. — That moves the demand onto a tool they may not have, and it is advice rather than design.
 
 Improve: Fill the unremovable box in step 5 with the reason and any softening you added, then record the change.
 
@@ -1493,21 +1493,21 @@ A supplied row from the same made-up screen: a link in body text reading “see 
 
 What is the smallest sound repair?
 
-- Give it a persistent underline, so it is identifiable as a link without a pointer.
-- Change its colour so it stands out from the body text.
 - Turn it into a button so it is obviously interactive.
+- Change its colour so it stands out from the body text.
 - Add a hint elsewhere saying which words are links.
+- Give it a persistent underline, so it is identifiable as a link without a pointer.
 
 <details>
 <summary>After your attempt</summary>
 
-Give it a persistent underline, so it is identifiable as a link without a pointer. — It restores the signifier on every device without adding anything new to the screen, and it is the convention readers already know.
+Turn it into a button so it is obviously interactive. — A button is a much heavier element for an inline reference and changes the reading of the sentence around it.
 
 Change its colour so it stands out from the body text. — Better than nothing and colour alone is exactly the failure the colour lesson warned about. It also fails in greyscale.
 
-Turn it into a button so it is obviously interactive. — A button is a much heavier element for an inline reference and changes the reading of the sentence around it.
-
 Add a hint elsewhere saying which words are links. — That asks the reader to hold a rule in mind, which is precisely the memory demand the previous lesson was removing.
+
+Give it a persistent underline, so it is identifiable as a link without a pointer. — It restores the signifier on every device without adding anything new to the screen, and it is the convention readers already know.
 
 Repair your own weakest signifier the same way: restore the cue where the reader is, without adding a new element.
 
@@ -1544,18 +1544,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your card is clickable and readers will discover that by hovering. What is wrong with relying on that?
 
-- Hover does not exist on touch devices, and it requires the reader to already suspect the thing is interactive.
-- Nothing, provided the site is mainly used on desktop.
 - It is acceptable if the card has a shadow.
+- Nothing, provided the site is mainly used on desktop.
+- Hover does not exist on touch devices, and it requires the reader to already suspect the thing is interactive.
 
 <details>
 <summary>After your attempt</summary>
 
-Hover does not exist on touch devices, and it requires the reader to already suspect the thing is interactive. — It is a signifier that only appears to people who already guessed. On a phone it never appears at all.
+It is acceptable if the card has a shadow. — A shadow may be a persistent signifier, in which case the shadow is doing the work and the hover is decoration.
 
 Nothing, provided the site is mainly used on desktop. — Even on desktop, hover only rewards a reader who was already exploring. It cannot invite the first action.
 
-It is acceptable if the card has a shadow. — A shadow may be a persistent signifier, in which case the shadow is doing the work and the hover is decoration.
+Hover does not exist on touch devices, and it requires the reader to already suspect the thing is interactive. — It is a signifier that only appears to people who already guessed. On a phone it never appears at all.
 
 Improve: Check your hover-dependent list in step 3. Give the most important one a signifier that is present without a pointer, and record it in step 5.
 
@@ -1575,17 +1575,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 A control has nothing in its feedback column. What should you do?
 
 - Leave it blank and treat it as the finding, then repair it deliberately.
-- Write “the next screen appears” to complete the row.
 - Remove the row, since it is incomplete.
+- Write “the next screen appears” to complete the row.
 
 <details>
 <summary>After your attempt</summary>
 
 Leave it blank and treat it as the finding, then repair it deliberately. — The blank is what the exercise is for. It usually explains a behaviour you have already seen, such as people pressing twice.
 
-Write “the next screen appears” to complete the row. — That is the result arriving, not confirmation that the press registered. On a slow connection there is a gap where nothing has happened.
-
 Remove the row, since it is incomplete. — Removing it hides the most valuable line in the table.
+
+Write “the next screen appears” to complete the row. — That is the result arriving, not confirmation that the press registered. On a slow connection there is a gap where nothing has happened.
 
 Improve: Restore any cell you filled in to make the table look complete, then repair the weakest feedback in step 4 and record it in step 5.
 
@@ -1604,16 +1604,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You removed the underline from links because the screen looked busy. What did that cost?
 
-- The signifier that told readers which words are interactive, on every device.
 - Nothing, since the links are still a different colour.
+- The signifier that told readers which words are interactive, on every device.
 - Only aesthetics; the links still work.
 
 <details>
 <summary>After your attempt</summary>
 
-The signifier that told readers which words are interactive, on every device. — Tidiness routinely removes signifiers, because signifiers are visual noise until you need them. Record what you took away.
-
 Nothing, since the links are still a different colour. — Colour alone fails in greyscale and for many readers. It also collides with the colour lesson’s rule.
+
+The signifier that told readers which words are interactive, on every device. — Tidiness routinely removes signifiers, because signifiers are visual noise until you need them. Record what you took away.
 
 Only aesthetics; the links still work. — They work for anyone who finds them. Finding them is what the underline was for.
 
@@ -2043,19 +2043,19 @@ A supplied note from the same made-up session: “The participant carelessly ski
 
 Which rewrite is useful?
 
-- The materials section sat below the Reserve button at this width, so it was not encountered before the decision, and nothing referred to it afterwards.
-- The participant did not read the materials section, which is common behaviour.
 - The materials section needs to be more prominent.
+- The participant did not read the materials section, which is common behaviour.
+- The materials section sat below the Reserve button at this width, so it was not encountered before the decision, and nothing referred to it afterwards.
 - The participant was in a hurry, which affected her reading.
 
 <details>
 <summary>After your attempt</summary>
 
-The materials section sat below the Reserve button at this width, so it was not encountered before the decision, and nothing referred to it afterwards. — It names what the design did, where, and what followed. It is checkable and it points straight at a repair.
+The materials section needs to be more prominent. — That is a repair, not an observation. Written here it hides what actually happened.
 
 The participant did not read the materials section, which is common behaviour. — Softer wording, same blame, and now with a claim about people in general that one session cannot support.
 
-The materials section needs to be more prominent. — That is a repair, not an observation. Written here it hides what actually happened.
+The materials section sat below the Reserve button at this width, so it was not encountered before the decision, and nothing referred to it afterwards. — It names what the design did, where, and what followed. It is checkable and it points straight at a repair.
 
 The participant was in a hurry, which affected her reading. — Speculation about her state, and unfalsifiable. It also excuses the layout.
 
@@ -2174,18 +2174,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You add a confirmation dialogue so people cannot get it wrong. What does that actually catch?
 
-- Some slips, briefly, until people learn to dismiss it; it does nothing for a mistake.
 - Both slips and mistakes, since it forces a pause.
 - Mistakes mainly, since it makes people think about the consequence.
+- Some slips, briefly, until people learn to dismiss it; it does nothing for a mistake.
 
 <details>
 <summary>After your attempt</summary>
 
-Some slips, briefly, until people learn to dismiss it; it does nothing for a mistake. — Someone whose intention is wrong confirms the wrong intention. The dialogue asks them to check a decision they believe is correct.
-
 Both slips and mistakes, since it forces a pause. — A pause helps only if the person has reason to doubt themselves. A mistake feels correct from the inside.
 
 Mistakes mainly, since it makes people think about the consequence. — It states a consequence they have already accepted, because their model says this is the right action.
+
+Some slips, briefly, until people learn to dismiss it; it does nothing for a mistake. — Someone whose intention is wrong confirms the wrong intention. The dialogue asks them to check a decision they believe is correct.
 
 Improve: Look at your interventions in step 4. If either is a warning or a confirmation, replace it with a constraint, a default or better information, and record it in step 5.
 
@@ -2650,21 +2650,21 @@ A supplied application of Jakob’s law from the same made-up project: “Other 
 
 When would following that make the design worse?
 
-- When the price at the top is incomplete, because materials are charged separately, so the familiar position teaches a wrong number.
-- It would never be worse; matching conventions always reduces effort.
 - When your design is more innovative than the sites you are copying.
 - When you have no competitors to copy.
+- It would never be worse; matching conventions always reduces effort.
+- When the price at the top is incomplete, because materials are charged separately, so the familiar position teaches a wrong number.
 
 <details>
 <summary>After your attempt</summary>
 
-When the price at the top is incomplete, because materials are charged separately, so the familiar position teaches a wrong number. — Conventions carry meaning as well as position. Matching the position while changing the meaning is worse than being unfamiliar.
-
-It would never be worse; matching conventions always reduces effort. — It reduces effort when the convention means the same thing. When it does not, familiarity makes the wrong reading more confident.
-
 When your design is more innovative than the sites you are copying. — Innovation is not a reason on its own. The reason is whether the convention’s meaning holds in your case.
 
 When you have no competitors to copy. — Readers bring expectations from every site they use, not only from competitors.
+
+It would never be worse; matching conventions always reduces effort. — It reduces effort when the convention means the same thing. When it does not, familiarity makes the wrong reading more confident.
+
+When the price at the top is incomplete, because materials are charged separately, so the familiar position teaches a wrong number. — Conventions carry meaning as well as position. Matching the position while changing the meaning is worse than being unfamiliar.
 
 Write your own three counterexamples the same way: name the situation in your product where the assumption fails.
 
@@ -2772,18 +2772,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Are fewer options always better because of Hick’s law?
 
-- No. It applies to comparable options being chosen among; removing an option someone needs ends their task rather than speeding it.
 - Yes: choice time rises with the number of options, so reducing them always helps.
 - Yes for navigation, no for content.
+- No. It applies to comparable options being chosen among; removing an option someone needs ends their task rather than speeding it.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It applies to comparable options being chosen among; removing an option someone needs ends their task rather than speeding it. — The law describes a regularity under conditions. Outside them, fewer options simply means less available.
-
 Yes: choice time rises with the number of options, so reducing them always helps. — Choice time is not the only cost. An absent option costs the whole task for the person who needed it.
 
 Yes for navigation, no for content. — The distinction is not navigation versus content; it is whether the options are genuinely interchangeable for this reader.
+
+No. It applies to comparable options being chosen among; removing an option someone needs ends their task rather than speeding it. — The law describes a regularity under conditions. Outside them, fewer options simply means less available.
 
 Improve: Reread your Hick counterexample in step 3. If it is generic, replace it with a specific option in your own product whose removal would end someone’s task, and record the change in step 5.
 
@@ -2802,18 +2802,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Two of the three laws point in opposite directions for your decision. What is the useful response?
 
-- Say what the disagreement is about, then choose with a stated reason and record what you overrode.
-- Follow the more established law.
 - Find a compromise that partly satisfies both.
+- Follow the more established law.
+- Say what the disagreement is about, then choose with a stated reason and record what you overrode.
 
 <details>
 <summary>After your attempt</summary>
 
-Say what the disagreement is about, then choose with a stated reason and record what you overrode. — A conflict makes the decision visible. Resolving it with a reason is judgement; averaging them is not.
+Find a compromise that partly satisfies both. — Sometimes right, and often it produces a design that serves neither reason. Say which one you are prioritising.
 
 Follow the more established law. — Age is not evidence about your case. The question is which assumption holds here.
 
-Find a compromise that partly satisfies both. — Sometimes right, and often it produces a design that serves neither reason. Say which one you are prioritising.
+Say what the disagreement is about, then choose with a stated reason and record what you overrode. — A conflict makes the decision visible. Resolving it with a reason is judgement; averaging them is not.
 
 Improve: If your conflict box in step 2 says the laws agree, look harder or say plainly that no conflict arose, then record it in step 5.
 
@@ -2832,16 +2832,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You wrote “this follows Fitts’s law” as the justification for a decision. What is missing?
 
-- The prediction it makes about what readers will do, and how you could check it.
 - A citation to the original research.
+- The prediction it makes about what readers will do, and how you could check it.
 - Nothing: a well-established law is sufficient justification.
 
 <details>
 <summary>After your attempt</summary>
 
-The prediction it makes about what readers will do, and how you could check it. — Naming a law is an appeal to authority. Turning it into a prediction makes it something your own work can confirm or refute.
-
 A citation to the original research. — A citation makes the claim traceable and still not testable in your product.
+
+The prediction it makes about what readers will do, and how you could check it. — Naming a law is an appeal to authority. Turning it into a prediction makes it something your own work can confirm or refute.
 
 Nothing: a well-established law is sufficient justification. — Established laws describe regularities under conditions. Your design either meets those conditions or does not, and only a prediction reveals which.
 
@@ -3255,17 +3255,17 @@ A supplied conversion from the same made-up project: “Attendees need a materia
 
 What is wrong with it?
 
-- The so-that clause repeats the solution, so the statement has no outcome and cannot be met any other way.
 - It is too specific about the page.
+- The so-that clause repeats the solution, so the statement has no outcome and cannot be met any other way.
 - Nothing: it names who, what and why.
 - It should say “users” rather than “attendees”.
 
 <details>
 <summary>After your attempt</summary>
 
-The so-that clause repeats the solution, so the statement has no outcome and cannot be met any other way. — A circular outcome is the commonest failure. It looks complete and permits exactly one answer, which is the one you started with.
-
 It is too specific about the page. — Specificity is not the fault; the fault is that the outcome restates the feature rather than naming what changes for the person.
+
+The so-that clause repeats the solution, so the statement has no outcome and cannot be met any other way. — A circular outcome is the commonest failure. It looks complete and permits exactly one answer, which is the one you started with.
 
 Nothing: it names who, what and why. — It names who and what twice. The why is missing, disguised as a repetition.
 
@@ -3448,17 +3448,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your need statement reads “Attendees need a reminder email so that they receive a reminder.” What is wrong?
 
 - The outcome repeats the solution, so only one response can ever satisfy it.
-- Nothing, if the reminder is what the stakeholder asked for.
 - It should specify the timing of the reminder.
+- Nothing, if the reminder is what the stakeholder asked for.
 
 <details>
 <summary>After your attempt</summary>
 
 The outcome repeats the solution, so only one response can ever satisfy it. — The so-that clause exists to open the field. Circular, it closes it and hides that no outcome was identified.
 
-Nothing, if the reminder is what the stakeholder asked for. — Then it is the request rewritten, and the conversion has done no work.
-
 It should specify the timing of the reminder. — More detail about the solution moves further from the need.
+
+Nothing, if the reminder is what the stakeholder asked for. — Then it is the request rewritten, and the conversion has done no work.
 
 Improve: Rewrite any circular so-that clause in step 3 to name what changes for the person, then record the change in step 5.
 
@@ -3478,17 +3478,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You could not write a so-that clause for one request. What should you do?
 
 - Record the difficulty as a finding: the request may have no outcome behind it, which is worth knowing.
-- Write the most plausible outcome so the table is complete.
 - Drop the request from the list.
+- Write the most plausible outcome so the table is complete.
 
 <details>
 <summary>After your attempt</summary>
 
 Record the difficulty as a finding: the request may have no outcome behind it, which is worth knowing. — Inventing an outcome to complete the table manufactures a justification. The gap is a real and useful result.
 
-Write the most plausible outcome so the table is complete. — That is a fabricated need, and it will be quoted later as though someone wanted it.
-
 Drop the request from the list. — Dropping it hides a request that will come back. Keep it with the difficulty recorded.
+
+Write the most plausible outcome so the table is complete. — That is a fabricated need, and it will be quoted later as though someone wanted it.
 
 Improve: Fill the hard-outcomes box in step 3 with any request you could not convert and why, then record it in step 5.
 
@@ -3938,21 +3938,21 @@ A supplied proposal from the same made-up project: replace the printed materials
 
 Which cost is most easily missed and most important to record?
 
-- The cost to people who do not use email or do not have a phone with them, who previously got the sheet at reception.
 - The cost to the organisation of writing the email content.
-- The cost to the reader of opening an email.
 - There is no cost: the proposal is cheaper and more current.
+- The cost to the reader of opening an email.
+- The cost to people who do not use email or do not have a phone with them, who previously got the sheet at reception.
 
 <details>
 <summary>After your attempt</summary>
 
-The cost to people who do not use email or do not have a phone with them, who previously got the sheet at reception. — Removing the old route disadvantages a group that used it. That cost is invisible in the proposal because those people are not the ones being designed for.
-
 The cost to the organisation of writing the email content. — Real and small, and it is the cost the organisation will notice by itself.
+
+There is no cost: the proposal is cheaper and more current. — Cheaper for the studio, and the saving is paid by whoever relied on the sheet.
 
 The cost to the reader of opening an email. — Worth noting and minor compared with losing the only route you had.
 
-There is no cost: the proposal is cheaper and more current. — Cheaper for the studio, and the saving is paid by whoever relied on the sheet.
+The cost to people who do not use email or do not have a phone with them, who previously got the sheet at reception. — Removing the old route disadvantages a group that used it. That cost is invisible in the proposal because those people are not the ones being designed for.
 
 Write your own third column the same way: who used the old route, and what happens to them.
 
@@ -4007,16 +4007,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your response genuinely helps readers. Is that enough to justify building it?
 
-- No. Helping is necessary and not sufficient: a cheaper response, or the existing workaround, may serve the need well enough.
 - Yes: user benefit is the point of design work.
+- No. Helping is necessary and not sufficient: a cheaper response, or the existing workaround, may serve the need well enough.
 - Yes, provided the organisation can afford it.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Helping is necessary and not sufficient: a cheaper response, or the existing workaround, may serve the need well enough. — The comparison is against the baseline and the alternatives, not against nothing. Helping while being the wrong thing to build is common.
-
 Yes: user benefit is the point of design work. — Benefit at any cost, ignoring who pays and what already works, is how effort goes into things nobody needed.
+
+No. Helping is necessary and not sufficient: a cheaper response, or the existing workaround, may serve the need well enough. — The comparison is against the baseline and the alternatives, not against nothing. Helping while being the wrong thing to build is common.
 
 Yes, provided the organisation can afford it. — Affordability is one cost among several, and it says nothing about whether the workaround already suffices.
 
@@ -4037,16 +4037,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your baseline says “currently there is no way to do this.” What is likely wrong?
 
-- People almost always have a workaround, and it is the thing your response actually has to beat.
 - Nothing, if the feature genuinely does not exist yet.
+- People almost always have a workaround, and it is the thing your response actually has to beat.
 - It is fine as long as research confirmed it.
 
 <details>
 <summary>After your attempt</summary>
 
-People almost always have a workaround, and it is the thing your response actually has to beat. — An empty baseline makes any proposal look necessary. The workaround is usually fast, trusted, and already in place.
-
 Nothing, if the feature genuinely does not exist yet. — The feature not existing is not the same as the need going unmet. People solve it some other way.
+
+People almost always have a workaround, and it is the thing your response actually has to beat. — An empty baseline makes any proposal look necessary. The workaround is usually fast, trusted, and already in place.
 
 It is fine as long as research confirmed it. — Research rarely confirms an absence of coping behaviour; it usually reveals more of it.
 
@@ -4067,18 +4067,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You listed “must work on mobile” as a constraint. Is it?
 
-- Probably a decision rather than a constraint; if it could be changed by someone deciding, mark it changeable and say what changing it would require.
-- Yes: most readers are on mobile, so it cannot change.
 - No: nothing is truly fixed, so the list is meaningless.
+- Yes: most readers are on mobile, so it cannot change.
+- Probably a decision rather than a constraint; if it could be changed by someone deciding, mark it changeable and say what changing it would require.
 
 <details>
 <summary>After your attempt</summary>
 
-Probably a decision rather than a constraint; if it could be changed by someone deciding, mark it changeable and say what changing it would require. — The distinction matters because constraints stop conversation and preferences should not. Marking it honestly keeps the option visible.
+No: nothing is truly fixed, so the list is meaningless. — Some things genuinely are fixed within your horizon, such as a legal requirement or a budget already spent.
 
 Yes: most readers are on mobile, so it cannot change. — That is a strong reason for the decision, which is what makes it a decision.
 
-No: nothing is truly fixed, so the list is meaningless. — Some things genuinely are fixed within your horizon, such as a legal requirement or a budget already spent.
+Probably a decision rather than a constraint; if it could be changed by someone deciding, mark it changeable and say what changing it would require. — The distinction matters because constraints stop conversation and preferences should not. Marking it honestly keeps the option visible.
 
 Improve: Go through your constraint list in step 5 and mark each fixed or changeable, adding what changing it would take, then record the change.
 
@@ -4464,21 +4464,21 @@ Two supplied stopping rules for the same made-up card test. Rule A: “If attend
 
 Why is B the usable rule?
 
-- Its thresholds are concrete, so a disappointing result cannot be reinterpreted as encouraging afterwards.
-- Because it uses numbers, and numbers are more scientific.
 - Because twenty bookers is a statistically valid sample.
 - B is worse, because it might stop a promising direction on a small sample.
+- Because it uses numbers, and numbers are more scientific.
+- Its thresholds are concrete, so a disappointing result cannot be reinterpreted as encouraging afterwards.
 
 <details>
 <summary>After your attempt</summary>
 
-Its thresholds are concrete, so a disappointing result cannot be reinterpreted as encouraging afterwards. — Written in advance with numbers, it constrains your future self. “Seem better prepared” can be read as success in almost any outcome.
-
-Because it uses numbers, and numbers are more scientific. — Numbers alone prove nothing. What matters is that the thresholds were fixed before the result arrived.
-
 Because twenty bookers is a statistically valid sample. — It is not, and it does not need to be. This is a decision rule for your own work, not a claim about a population.
 
 B is worse, because it might stop a promising direction on a small sample. — That risk is real and it is why the rule has a redirect band. Without any rule, nothing ever stops.
+
+Because it uses numbers, and numbers are more scientific. — Numbers alone prove nothing. What matters is that the thresholds were fixed before the result arrived.
+
+Its thresholds are concrete, so a disappointing result cannot be reinterpreted as encouraging afterwards. — Written in advance with numbers, it constrains your future self. “Seem better prepared” can be read as success in almost any outcome.
 
 Write your own three bands now, before building, and make them concrete enough to hold you to them.
 
@@ -4621,17 +4621,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Why write the stopping rule before building rather than after the result?
 
 - Because afterwards almost any result can be read as encouraging, and the rule stops that.
-- To save time when the results arrive.
 - It is a formality that funders expect.
+- To save time when the results arrive.
 
 <details>
 <summary>After your attempt</summary>
 
 Because afterwards almost any result can be read as encouraging, and the rule stops that. — It is a commitment made while you are still able to be impartial. Written after, it is a justification for what you already want.
 
-To save time when the results arrive. — Time is not the point. The point is that your judgement changes once you are invested in the outcome.
-
 It is a formality that funders expect. — It is a discipline for your own decision-making, whether or not anyone else reads it.
+
+To save time when the results arrive. — Time is not the point. The point is that your judgement changes once you are invested in the outcome.
 
 Improve: If any band in step 3 is vague, rewrite it with a concrete threshold, and record the change in step 5.
 
@@ -4651,17 +4651,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your build will involve twenty real people at the studio. What must be true?
 
 - They know what is happening, agree to it, and you collect nothing about them you do not need.
-- Nothing special: they are customers receiving a card, not research participants.
 - Only that the studio owner agrees.
+- Nothing special: they are customers receiving a card, not research participants.
 
 <details>
 <summary>After your attempt</summary>
 
 They know what is happening, agree to it, and you collect nothing about them you do not need. — A test involving real people is research, however informal, and consent and data minimisation apply to it.
 
-Nothing special: they are customers receiving a card, not research participants. — You are observing their behaviour to answer a question. That is what makes it research regardless of the label.
-
 Only that the studio owner agrees. — The owner can permit the activity on their premises. They cannot consent on behalf of the people you are observing.
+
+Nothing special: they are customers receiving a card, not research participants. — You are observing their behaviour to answer a question. That is what makes it research regardless of the label.
 
 Improve: Fill the ethics box in step 4 with what you will tell people and what you will not collect, then record the change in step 5.
 

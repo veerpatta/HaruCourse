@@ -318,19 +318,19 @@ Four supplied rows from the same made-up inventory. Row A: “What to bring”, 
 
 Which pair should your note call a content problem rather than a structure problem?
 
+- Both pairs, since both are duplicates.
 - A and B, because the two versions say different things and no arrangement of pages decides which is right.
 - C and D, because two unrelated things are sharing one label.
-- Both pairs, since both are duplicates.
 - Neither, because you cannot tell until the structure is drawn.
 
 <details>
 <summary>After your attempt</summary>
 
+Both pairs, since both are duplicates. — Only one pair is a duplicate. C and D are different things wearing the same name, which is the opposite situation and takes a different fix.
+
 A and B, because the two versions say different things and no arrangement of pages decides which is right. — The two copies disagree with each other. Until somebody decides what a person should actually bring, moving them or merging them only hides the disagreement.
 
 C and D, because two unrelated things are sharing one label. — That pair is real, and it is a naming and structure problem. Give each its own plain label and it is solved, which is not true of the pair that disagrees.
-
-Both pairs, since both are duplicates. — Only one pair is a duplicate. C and D are different things wearing the same name, which is the opposite situation and takes a different fix.
 
 Neither, because you cannot tell until the structure is drawn. — The flat list is exactly where this shows. Drawing a structure first would place the two versions of what to bring in two places and settle nothing.
 
@@ -398,18 +398,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your inventory has thirty-one rows and every one of them is a page in the menu. What is missing?
 
+- A few more pages, to push the number past forty.
 - The answers that are not pages: the sentence in a confirmation email, the thing only the owner can tell you, the file nobody opens.
 - Nothing, since anything worth having has been published somewhere.
-- A few more pages, to push the number past forty.
 
 <details>
 <summary>After your attempt</summary>
 
+A few more pages, to push the number past forty. — Forty is a threshold rather than a target, and padding it with pages leaves the list exactly as thin as it was.
+
 The answers that are not pages: the sentence in a confirmation email, the thing only the owner can tell you, the file nobody opens. — A page list organises the website. An inventory organises what a person needs to know, and most of that is not sitting on a page with a name.
 
 Nothing, since anything worth having has been published somewhere. — The most-asked question is usually the one being answered by hand, over and over, in a message. It never became a page precisely because somebody keeps covering for it.
-
-A few more pages, to push the number past forty. — Forty is a threshold rather than a target, and padding it with pages leaves the list exactly as thin as it was.
 
 Improve: Take the three tasks in your boundary box in step 1 and walk each one, writing down every question a person has to answer to finish it. Add every answer that is not already a row, then record what you added in step 5.
 
@@ -428,18 +428,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One row reads: label “Resources”, what it actually is “Resources”. Why does that row not count?
 
-- The second column exists to say what is inside, and repeating the label says nothing you did not already have.
 - It counts, because “Resources” is what the product calls it and the inventory records the product.
 - It counts once you have added who needs it.
+- The second column exists to say what is inside, and repeating the label says nothing you did not already have.
 
 <details>
 <summary>After your attempt</summary>
 
-The second column exists to say what is inside, and repeating the label says nothing you did not already have. — The row was meant to test whether the name matches the contents. Copying the name across removes the test and leaves the row looking finished.
-
 It counts, because “Resources” is what the product calls it and the inventory records the product. — The label column already records the product’s own words. The second column is yours, and it is where a mismatch becomes visible.
 
 It counts once you have added who needs it. — Who needs it is a third question and a useful one. It still does not tell you what is inside the thing.
+
+The second column exists to say what is inside, and repeating the label says nothing you did not already have. — The row was meant to test whether the name matches the contents. Copying the name across removes the test and leaves the row looking finished.
 
 Improve: Go back to your item rows in step 2 and finish “this tells someone …” for each one. Any row you cannot finish needs opening and reading. Record what you changed in step 5.
 
@@ -458,18 +458,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You filled the reachability column from memory, because you know the product well. What is wrong with that?
 
-- You know routes a first-time visitor does not, so what you recorded is your route rather than theirs.
 - Nothing, as long as the routes you wrote down really exist.
 - It is fine for pages and only wrong for the items buried in emails.
+- You know routes a first-time visitor does not, so what you recorded is your route rather than theirs.
 
 <details>
 <summary>After your attempt</summary>
 
-You know routes a first-time visitor does not, so what you recorded is your route rather than theirs. — The column is meant to show how hard a thing is to reach. Filled in from knowledge, it records that everything is reachable, which is true only for you.
-
 Nothing, as long as the routes you wrote down really exist. — They exist, and that is not the question. A route you can only take because you already know it is a route the column should be marking as a problem.
 
 It is fine for pages and only wrong for the items buried in emails. — Pages are where your knowledge helps you most. You go straight to one from a menu you have used a hundred times.
+
+You know routes a first-time visitor does not, so what you recorded is your route rather than theirs. — The column is meant to show how hard a thing is to reach. Filled in from knowledge, it records that everything is reachable, which is true only for you.
 
 Improve: Work through your two reachability boxes in step 3 again, pretending you have never used the product, and write what you actually had to do. Record the corrections in step 5.
 
@@ -1133,18 +1133,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your proposed label is “Preparation”, and no participant ever used the word. What should the row say?
 
-- The proposed label, with the word guess beside it, so nobody later reads it as something a person said.
-- The proposed label on its own, since the card sort will test it anyway.
 - A different label taken from the industry, so at least it is standard.
+- The proposed label on its own, since the card sort will test it anyway.
+- The proposed label, with the word guess beside it, so nobody later reads it as something a person said.
 
 <details>
 <summary>After your attempt</summary>
 
-The proposed label, with the word guess beside it, so nobody later reads it as something a person said. — A guess is allowed and often necessary. What is not allowed is a guess sitting in a table that reads throughout as though it all came from people.
+A different label taken from the industry, so at least it is standard. — Swapping one unevidenced word for another changes nothing about the evidence, and usually makes the word less familiar rather than more.
 
 The proposed label on its own, since the card sort will test it anyway. — The sort may never reach that item, and by then the table has been read by people who could not tell which rows were evidenced.
 
-A different label taken from the industry, so at least it is standard. — Swapping one unevidenced word for another changes nothing about the evidence, and usually makes the word less familiar rather than more.
+The proposed label, with the word guess beside it, so nobody later reads it as something a person said. — A guess is allowed and often necessary. What is not allowed is a guess sitting in a table that reads throughout as though it all came from people.
 
 Improve: Work down the evidence cells in your three rows in step 3 and in the rest of your table. Any cell you cannot fill with a participant’s word makes that row a guess. Record what you marked in step 5.
 
@@ -1193,18 +1193,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You are choosing between “Manage” and “Cancel or change a booking”. Which, and why?
 
-- The longer one, because a person scanning can tell whether their own task is inside it.
-- “Manage”, because short labels scan faster and the menu stays tidy.
 - Either, since people will click both and find out.
+- “Manage”, because short labels scan faster and the menu stays tidy.
+- The longer one, because a person scanning can tell whether their own task is inside it.
 
 <details>
 <summary>After your attempt</summary>
 
-The longer one, because a person scanning can tell whether their own task is inside it. — Length costs a little space. Ambiguity costs a wrong click, a back button, and some of the trust the person arrived with.
+Either, since people will click both and find out. — Some will. Someone already unsure of the site often leaves instead, and you never see that happen.
 
 “Manage”, because short labels scan faster and the menu stays tidy. — Scanning speed is not the same as scanning success. A short word that could mean four things is read quickly and answers nothing.
 
-Either, since people will click both and find out. — Some will. Someone already unsure of the site often leaves instead, and you never see that happen.
+The longer one, because a person scanning can tell whether their own task is inside it. — Length costs a little space. Ambiguity costs a wrong click, a back button, and some of the trust the person arrived with.
 
 Improve: Read only your proposed labels in step 5 as a stranger would, and list the ones that leave you unable to say what is inside. Rewrite each of those and record the rewrites in step 5.
 
@@ -1780,16 +1780,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You built a task scheme and a topic scheme, and the topic one has fewer overlaps. Does that make it better?
 
-- On its own, no. What matters is whether a person looking for a specific thing has an obvious first place to look.
 - Yes, because overlaps are what make a structure confusing.
+- On its own, no. What matters is whether a person looking for a specific thing has an obvious first place to look.
 - Yes, because fewer overlaps mean less to maintain.
 
 <details>
 <summary>After your attempt</summary>
 
-On its own, no. What matters is whether a person looking for a specific thing has an obvious first place to look. — A partition with no overlaps is usually bought by inventing categories that match nothing in anybody’s head. Tidiness was never the goal.
-
 Yes, because overlaps are what make a structure confusing. — Real information overlaps. The confusion comes from labels people cannot read, not from an item that could sensibly sit in two places.
+
+On its own, no. What matters is whether a person looking for a specific thing has an obvious first place to look. — A partition with no overlaps is usually bought by inventing categories that match nothing in anybody’s head. Tidiness was never the goal.
 
 Yes, because fewer overlaps mean less to maintain. — Maintenance is a real cost, and it belongs in the collision decision rather than in the choice of scheme. Cross-linking keeps the overlap and keeps one copy.
 
@@ -1810,16 +1810,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 An item genuinely belongs in two groups. What do you do?
 
-- Choose one of duplicate, cross-link or restructure, in writing, with the reason beside it.
 - Duplicate it, so that nobody can miss it.
+- Choose one of duplicate, cross-link or restructure, in writing, with the reason beside it.
 - Leave it in the better of the two homes and move on.
 
 <details>
 <summary>After your attempt</summary>
 
-Choose one of duplicate, cross-link or restructure, in writing, with the reason beside it. — All three are legitimate and each costs something different. The failure is putting it in one place, knowing that is wrong, and hoping.
-
 Duplicate it, so that nobody can miss it. — A defensible choice with one known cost: two copies drift apart and eventually say different things. Written down, it is a decision rather than an accident.
+
+Choose one of duplicate, cross-link or restructure, in writing, with the reason beside it. — All three are legitimate and each costs something different. The failure is putting it in one place, knowing that is wrong, and hoping.
 
 Leave it in the better of the two homes and move on. — That is the one option with no record. When the tree test sends people to the other place, you will not know that you had already seen it coming.
 
@@ -1841,17 +1841,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You organised by audience — first-timers and returning attendees — and it looks clean. What is the risk?
 
 - A person has to know which audience she is before she can choose, and frequently she cannot.
-- None, as long as the two audiences are named clearly.
 - Only that the two branches will duplicate content between them.
+- None, as long as the two audiences are named clearly.
 
 <details>
 <summary>After your attempt</summary>
 
 A person has to know which audience she is before she can choose, and frequently she cannot. — Somebody booking for her daughter is a parent and an attendee at once. The first choice becomes a question about identity rather than about the task.
 
-None, as long as the two audiences are named clearly. — Clear names do not help somebody who fits both, or who has never thought about herself in your terms at all.
-
 Only that the two branches will duplicate content between them. — Duplication is a maintenance cost and the smaller half of the problem. The larger half happens at the very first click.
+
+None, as long as the two audiences are named clearly. — Clear names do not help somebody who fits both, or who has never thought about herself in your terms at all.
 
 Improve: If either grouping in step 2 or step 3 is by audience, walk your three research tasks through it and write down who cannot tell which branch is hers, then record it in step 5.
 
@@ -1889,21 +1889,21 @@ A supplied decision from the same made-up project. The task scheme was carried f
 
 Which way of recording that trade-off is worth writing down?
 
-- “People deciding whether to book will now need one extra click to reach what to bring, and I will see it in the tree test as hesitation on the class page.”
-- “The task scheme is better overall, although it has some drawbacks.”
-- “Cross-linking is a compromise between duplicating and restructuring.”
 - “We can revisit this if people complain about it.”
+- “Cross-linking is a compromise between duplicating and restructuring.”
+- “The task scheme is better overall, although it has some drawbacks.”
+- “People deciding whether to book will now need one extra click to reach what to bring, and I will see it in the tree test as hesitation on the class page.”
 
 <details>
 <summary>After your attempt</summary>
 
-“People deciding whether to book will now need one extra click to reach what to bring, and I will see it in the tree test as hesitation on the class page.” — It names who pays, what they pay, and the specific thing a later test could show. That last part is what turns a note into a prediction.
-
-“The task scheme is better overall, although it has some drawbacks.” — It records a verdict and no cost. In three weeks nobody, including you, could say what was given up or check whether it mattered.
+“We can revisit this if people complain about it.” — Complaints arrive only from the few who bother. The tree test is a few days away and would show the hesitation whether or not anybody spoke up.
 
 “Cross-linking is a compromise between duplicating and restructuring.” — That describes the method rather than the consequence. It is true of every cross-link ever made and says nothing about this one.
 
-“We can revisit this if people complain about it.” — Complaints arrive only from the few who bother. The tree test is a few days away and would show the hesitation whether or not anybody spoke up.
+“The task scheme is better overall, although it has some drawbacks.” — It records a verdict and no cost. In three weeks nobody, including you, could say what was given up or check whether it mattered.
+
+“People deciding whether to book will now need one extra click to reach what to bring, and I will see it in the tree test as hesitation on the class page.” — It names who pays, what they pay, and the specific thing a later test could show. That last part is what turns a note into a prediction.
 
 Write your own trade-off as “people doing … will now have to …, and I will see it in the tree test as …”. If you cannot finish that sentence, the cost is not yet understood.
 
@@ -2410,18 +2410,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One task in your shallower map still takes four choices. Someone tells you the limit is three clicks. What do you do?
 
-- Count the uncertain choices instead, because distance is not what loses people.
-- Restructure until every task fits inside three clicks.
 - Leave it, since the number of clicks does not matter at all.
+- Restructure until every task fits inside three clicks.
+- Count the uncertain choices instead, because distance is not what loses people.
 
 <details>
 <summary>After your attempt</summary>
 
-Count the uncertain choices instead, because distance is not what loses people. — Four confident choices are shorter than two gambles. The number worth reducing is guesses, not steps.
+Leave it, since the number of clicks does not matter at all. — It matters as a rough symptom. A task taking nine steps is telling you something, even though three is folklore.
 
 Restructure until every task fits inside three clicks. — Forcing the count usually widens level one past what anyone can scan, or invents a parent group holding unrelated things.
 
-Leave it, since the number of clicks does not matter at all. — It matters as a rough symptom. A task taking nine steps is telling you something, even though three is folklore.
+Count the uncertain choices instead, because distance is not what loses people. — Four confident choices are shorter than two gambles. The number worth reducing is guesses, not steps.
 
 Improve: Look at your task depths in step 2. Beside each count, write how many of those choices you would be unsure of, then record the change in step 5.
 
@@ -2440,18 +2440,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A level-two group is called “More information” and you cannot write a sentence saying what is inside. What does that tell you?
 
+- It is acceptable as long as the items inside are labelled well.
 - The group is not real; it exists because two items had nowhere else to go.
 - The label needs work but the grouping underneath is sound.
-- It is acceptable as long as the items inside are labelled well.
 
 <details>
 <summary>After your attempt</summary>
 
+It is acceptable as long as the items inside are labelled well. — On a phone the items inside are on the next screen. The reader decides from the parent alone and never sees them.
+
 The group is not real; it exists because two items had nowhere else to go. — A group you cannot summarise cannot be scanned past either. The reader has to open it to find out, every single time.
 
 The label needs work but the grouping underneath is sound. — Renaming a container whose contents share nothing produces a second vague name. The contents are the problem, not the wording.
-
-It is acceptable as long as the items inside are labelled well. — On a phone the items inside are on the next screen. The reader decides from the parent alone and never sees them.
 
 Improve: Go back to your level-two boxes in step 3. Break up or rehome any group you marked vague, then record the change in step 5.
 
@@ -2519,8 +2519,8 @@ Which shape favours this task, and on what grounds?
 
 - Map B, because the refund rule can sit at level one where she reads it instead of guessing what a parent group contains.
 - Map A, because four groups are easier to scan than eight.
-- Map A, because three levels give the content room to be organised properly.
 - Neither: the content is the same, so the shape cannot affect the task.
+- Map A, because three levels give the content room to be organised properly.
 
 <details>
 <summary>After your attempt</summary>
@@ -2529,9 +2529,9 @@ Map B, because the refund rule can sit at level one where she reads it instead o
 
 Map A, because four groups are easier to scan than eight. — Scanning eight short labels takes seconds. Choosing between four vague parents and then choosing again takes longer and can go wrong at either step.
 
-Map A, because three levels give the content room to be organised properly. — Room to organise serves the person drawing the map. This task is judged by whether one worried person finds one rule.
-
 Neither: the content is the same, so the shape cannot affect the task. — Same content, different number of decisions. The shape changes how many uncertain choices the task costs, which is exactly what is being compared.
+
+Map A, because three levels give the content room to be organised properly. — Room to organise serves the person drawing the map. This task is judged by whether one worried person finds one rule.
 
 Do this for each of your three tasks and expect the answer to change between them. A shape that wins every task usually means the tasks were too alike.
 
@@ -3252,18 +3252,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your notes from the open sort read “she was unsure about the practical cards”. What is missing?
 
-- What she actually did with them, and anything she said while doing it.
-- A count of how many cards ended up in that pile.
 - Nothing: you were in the room and you saw it happen.
+- A count of how many cards ended up in that pile.
+- What she actually did with them, and anything she said while doing it.
 
 <details>
 <summary>After your attempt</summary>
 
-What she actually did with them, and anything she said while doing it. — Unsure is your reading. Without the movement and the words underneath it, nobody can check the reading, including you next month.
+Nothing: you were in the room and you saw it happen. — Being there is exactly why the sentence feels complete. A week later the sentence is all that survives, and it contains no evidence.
 
 A count of how many cards ended up in that pile. — Useful, and not the gap. The pile is already visible in the photograph; the hesitation is not visible anywhere.
 
-Nothing: you were in the room and you saw it happen. — Being there is exactly why the sentence feels complete. A week later the sentence is all that survives, and it contains no evidence.
+What she actually did with them, and anything she said while doing it. — Unsure is your reading. Without the movement and the words underneath it, nobody can check the reading, including you next month.
 
 Improve: Go back to your hesitation notes in step 2 and rewrite each conclusion as the movement and the words underneath it, then record the change in step 5.
 
@@ -3282,16 +3282,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your cards carry the new labels you proposed in the labelling lesson. Why does that spoil the open sort?
 
-- You would be testing your own wording back at yourself instead of learning how they group things.
 - It is acceptable, since those labels came from participant vocabulary in the first place.
+- You would be testing your own wording back at yourself instead of learning how they group things.
 - It only matters in the closed sort, where you supply the groups anyway.
 
 <details>
 <summary>After your attempt</summary>
 
-You would be testing your own wording back at yourself instead of learning how they group things. — A card that names its group tells the person where it goes. The sort then agrees with you and tells you nothing you had not already written.
-
 It is acceptable, since those labels came from participant vocabulary in the first place. — Coming from vocabulary makes a label plausible, not tested. This session is the test, and the card must not carry the answer on its face.
+
+You would be testing your own wording back at yourself instead of learning how they group things. — A card that names its group tells the person where it goes. The sort then agrees with you and tells you nothing you had not already written.
 
 It only matters in the closed sort, where you supply the groups anyway. — The closed sort is the one that already gives categories. It is the open sort that a leading card face quietly ruins.
 
@@ -3857,18 +3857,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 All four participants put an item in the same pile, but three of them picked it up twice before deciding. How do you classify it?
 
-- Ambiguous, because the placements were consistent and slow.
 - Agreement, because all four placed it identically in the end.
 - Disagreement, because the hesitation shows they were split in their own minds.
+- Ambiguous, because the placements were consistent and slow.
 
 <details>
 <summary>After your attempt</summary>
 
-Ambiguous, because the placements were consistent and slow. — Doubt before a placement predicts a wrong first click better than a clean split does. Agreement means placed the same way and placed easily.
-
 Agreement, because all four placed it identically in the end. — The final piles match and the route to them did not. Filing it as agreement is how you stop thinking about the item that will fail the tree test.
 
 Disagreement, because the hesitation shows they were split in their own minds. — Disagreement is about different placements. Keeping this one as ambiguous lets the two patterns do different work for you.
+
+Ambiguous, because the placements were consistent and slow. — Doubt before a placement predicts a wrong first click better than a clean split does. Agreement means placed the same way and placed easily.
 
 Improve: Re-read your hesitation notes and mark every slow placement in your classification in step 2, then record the change in step 5.
 
@@ -3887,16 +3887,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You want to rename a group. No participant said or did anything bearing on it. What happens to that change?
 
-- It goes on the preferences list, visible as your idea rather than as a finding.
 - Make the change and describe it as coming from the sort, since the sort shaped your thinking.
+- It goes on the preferences list, visible as your idea rather than as a finding.
 - Drop the idea, because only changes led by participants are allowed.
 
 <details>
 <summary>After your attempt</summary>
 
-It goes on the preferences list, visible as your idea rather than as a finding. — It may still be a good idea. Keeping it off the evidence list is what stops your traced changes being doubted alongside it.
-
 Make the change and describe it as coming from the sort, since the sort shaped your thinking. — Shaped thinking is not a trace. A reader who asks which participant did what finds nothing, and then starts wondering about your other changes.
+
+It goes on the preferences list, visible as your idea rather than as a finding. — It may still be a good idea. Keeping it off the evidence list is what stops your traced changes being doubted alongside it.
 
 Drop the idea, because only changes led by participants are allowed. — Preferences are allowed and frequently right. They are simply not evidence, and the separate list is where they say so.
 
@@ -3918,17 +3918,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You have four sorts and a spreadsheet that can draw a similarity matrix from them. Should you draw it?
 
 - Leave it out, because the picture would look far more certain than four people can support.
-- Draw it, since it summarises the placements faster than a table of counts.
 - Draw it, but add a note about the small number of participants underneath.
+- Draw it, since it summarises the placements faster than a table of counts.
 
 <details>
 <summary>After your attempt</summary>
 
 Leave it out, because the picture would look far more certain than four people can support. — Those techniques were built for thirty sorters or more. At four they produce the visual authority of statistics and none of the substance.
 
-Draw it, since it summarises the placements faster than a table of counts. — Speed is not the issue here. The diagram implies a distance measure that four placements cannot establish, and readers will believe the picture.
-
 Draw it, but add a note about the small number of participants underneath. — The note sits beside a picture that contradicts it, and the picture wins every time. A table of counts says the same thing without the overclaim.
+
+Draw it, since it summarises the placements faster than a table of counts. — Speed is not the issue here. The diagram implies a distance measure that four placements cannot establish, and readers will believe the picture.
 
 Improve: Rebuild any summary from your item table in step 1 as counts of people, remove any diagram implying a distance, and record the change in step 5.
 
@@ -3968,8 +3968,8 @@ Which sentence can honestly carry this result?
 
 - Three of four participants put the refund rule with the money cards, two of them hesitating first; one put it with cancelling.
 - 75 per cent of participants group the refund rule with payment.
-- Most users expect the refund rule to sit with payment.
 - The refund rule belongs with the money cards.
+- Most users expect the refund rule to sit with payment.
 
 <details>
 <summary>After your attempt</summary>
@@ -3978,9 +3978,9 @@ Three of four participants put the refund rule with the money cards, two of them
 
 75 per cent of participants group the refund rule with payment. — The same four people, dressed as a rate. A rate invites comparison with other rates, and there is nothing here worth comparing.
 
-Most users expect the refund rule to sit with payment. — Users is a far bigger word than participants, and most is a claim about a population. Four people in one afternoon support neither.
-
 The refund rule belongs with the money cards. — That is your decision, not the evidence. Write the decision separately so a reader can see what it rests on and disagree with it if they wish.
+
+Most users expect the refund rule to sit with payment. — Users is a far bigger word than participants, and most is a claim about a population. Four people in one afternoon support neither.
 
 Read your own write-up for sentences of the second and third kind, and rewrite each as a count of people with the hesitations kept in.
 
@@ -4416,21 +4416,21 @@ A supplied made-up record of one task with one person. She chose “Get help” 
 
 What is the most important thing to write in your table about this task?
 
-- That her first choice was “Get help”, and that she went back to the top before reaching the target.
+- That the target sat on the second sheet, so the second level is the problem.
 - That she arrived, because the task was completed.
 - How long she took, so you can compare it with the other tasks.
-- That the target sat on the second sheet, so the second level is the problem.
+- That her first choice was “Get help”, and that she went back to the top before reaching the target.
 
 <details>
 <summary>After your attempt</summary>
 
-That her first choice was “Get help”, and that she went back to the top before reaching the target. — The first choice is where the structure either works or fails, and a return to the top says a top-level label pointed her the wrong way. Neither is visible in a count of successes.
+That the target sat on the second sheet, so the second level is the problem. — How deep the target sits is a fact about your tree rather than about her. Her return to the top points at the level above, which is the opposite conclusion.
 
 That she arrived, because the task was completed. — Arriving hides the two moves before it. In a real product a person who backs out of a wrong branch often leaves instead of trying again.
 
 How long she took, so you can compare it with the other tasks. — Time is easy to record and hard to read with three people. The route she took says the same thing more plainly and cannot be mistaken for a score.
 
-That the target sat on the second sheet, so the second level is the problem. — How deep the target sits is a fact about your tree rather than about her. Her return to the top points at the level above, which is the opposite conclusion.
+That her first choice was “Get help”, and that she went back to the top before reaching the target. — The first choice is where the structure either works or fails, and a return to the top says a top-level label pointed her the wrong way. Neither is visible in a count of successes.
 
 Give your own table a column for first choice and a column for the whole path, and fill both before you write down whether the person arrived.
 
@@ -4531,18 +4531,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 All three people reached the target on every task, so you write that the structure works. What is missing from that sentence?
 
-- Two of them backed out of a wrong branch first, and one said afterwards she was not sure she was in the right place.
-- Nothing is missing, because reaching the target is the outcome that matters.
 - The success rate should be set beside a published benchmark.
+- Nothing is missing, because reaching the target is the outcome that matters.
+- Two of them backed out of a wrong branch first, and one said afterwards she was not sure she was in the right place.
 
 <details>
 <summary>After your attempt</summary>
 
-Two of them backed out of a wrong branch first, and one said afterwards she was not sure she was in the right place. — Arriving after two wrong branches is a different result from arriving directly. The path and the confidence are the only things that tell you which one you have.
+The success rate should be set beside a published benchmark. — Three people cannot produce a rate worth comparing with anything. Counts and first choices are what this sample can honestly carry.
 
 Nothing is missing, because reaching the target is the outcome that matters. — Reaching it is the outcome in a test. Leaving is the outcome in a real product, and backtracking is the only sign of that you get here.
 
-The success rate should be set beside a published benchmark. — Three people cannot produce a rate worth comparing with anything. Counts and first choices are what this sample can honestly carry.
+Two of them backed out of a wrong branch first, and one said afterwards she was not sure she was in the right place. — Arriving after two wrong branches is a different result from arriving directly. The path and the confidence are the only things that tell you which one you have.
 
 Improve: Go back to the results table in step 3 and fill the first-choice and path columns for every task and person, then record in step 5 what that changed.
 
@@ -4561,18 +4561,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your tasks reads “find the cancellation policy”, and the word Cancel appears on your top sheet. What have you tested?
 
+- It only makes the task easier, which is fine for a warm-up.
 - Whether the person can match a word, rather than whether they can work out where the thing lives.
 - Nothing is wrong, because they still have to pick the right branch.
-- It only makes the task easier, which is fine for a warm-up.
 
 <details>
 <summary>After your attempt</summary>
 
+It only makes the task easier, which is fine for a warm-up. — A warm-up is worth having and should still avoid handing over the label, or you will not know whether the person read the tree or read it back.
+
 Whether the person can match a word, rather than whether they can work out where the thing lives. — Matching letters is a different ability from finding. The task has to describe the situation and let the person choose the word.
 
 Nothing is wrong, because they still have to pick the right branch. — They do pick, and they pick by matching. The test can no longer tell you whether the grouping made any sense to them.
-
-It only makes the task easier, which is fine for a warm-up. — A warm-up is worth having and should still avoid handing over the label, or you will not know whether the person read the tree or read it back.
 
 Improve: Underline every word in your six tasks in step 2 that also appears on a sheet, rewrite those tasks as situations, and record the rewrites in step 5.
 
@@ -4591,18 +4591,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nobody agreed to take part, so you ran all six tasks on yourself. How should that appear in the record?
 
-- As a rehearsal, labelled permanently, with the dated recruitment gap beside it.
 - As results from one participant, since you did the tasks properly.
 - Leave it out and present only the paper tree.
+- As a rehearsal, labelled permanently, with the dated recruitment gap beside it.
 
 <details>
 <summary>After your attempt</summary>
 
-As a rehearsal, labelled permanently, with the dated recruitment gap beside it. — You already know the tree, so the run tells you the tasks are clear and nothing at all about the structure. Labelling it keeps it useful and keeps it honest.
-
 As results from one participant, since you did the tasks properly. — You cannot be a participant in your own tree. Presenting it as a result is the moment a portfolio stops being true.
 
 Leave it out and present only the paper tree. — The rehearsal is worth keeping, because it shows the tasks were run and the recruiting failed. The gap is a finding of its own.
+
+As a rehearsal, labelled permanently, with the dated recruitment gap beside it. — You already know the tree, so the run tells you the tasks are clear and nothing at all about the structure. Labelling it keeps it useful and keeps it honest.
 
 Improve: Set your entry in step 3 to the rehearsal option, write the dated recruitment gap into the sample line in step 5, and record the change there as well.
 
@@ -5281,18 +5281,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Four of six tasks failed. Your first instinct is to redraw the whole structure. What does that cost you?
 
+- Time, which is the only real drawback.
 - You discard the parts that worked and bring back risks you had already tested away.
 - Very little, because the structure clearly failed.
-- Time, which is the only real drawback.
 
 <details>
 <summary>After your attempt</summary>
 
+Time, which is the only real drawback. — Time is the smallest cost. The larger one is losing the evidence you already have about which parts people read correctly.
+
 You discard the parts that worked and bring back risks you had already tested away. — Failures usually concentrate in two or three labels. A wholesale redesign is a decision to argue for, not the default response to a table that looks bad.
 
 Very little, because the structure clearly failed. — The table shows failures, not where they sit. Until you split by first choice you do not know whether the top level was involved at all.
-
-Time, which is the only real drawback. — Time is the smallest cost. The larger one is losing the evidence you already have about which parts people read correctly.
 
 Improve: Fill the first-click split in step 2 before you change anything, then record in step 5 what the split changed about your plan.
 
@@ -5312,17 +5312,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You rename two labels and move an item, then re-test, and things improve. What have you learned?
 
 - That the three changes together helped, and nothing about which one did it.
-- That all three changes were improvements.
 - That the structure is now settled.
+- That all three changes were improvements.
 
 <details>
 <summary>After your attempt</summary>
 
 That the three changes together helped, and nothing about which one did it. — Had it gone the other way you would not know which change to undo. One change at a time is slower and is the only version that teaches you anything about your own judgement.
 
-That all three changes were improvements. — They may all be. One of them may also be making things worse while the other two carry it, and this result cannot separate them.
-
 That the structure is now settled. — Two people and one round settles nothing. It is a sign that one of your changes pointed the right way.
+
+That all three changes were improvements. — They may all be. One of them may also be making things worse while the other two carry it, and this result cannot separate them.
 
 Improve: Reduce your entry in step 4 to exactly one change, put the others back, and record in step 5 which changes you set aside for the next round.
 
@@ -5342,17 +5342,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your one change did not help: the same two people failed the same task in the same place. What goes in the report?
 
 - What you changed, what happened, and that the diagnosis behind it was wrong.
-- Leave it out and try a different change before writing anything.
 - That the test was too small to show a difference.
+- Leave it out and try a different change before writing anything.
 
 <details>
 <summary>After your attempt</summary>
 
 What you changed, what happened, and that the diagnosis behind it was wrong. — A change that did not work and was written down is worth more than one that worked and was never understood. It also stops you making the same change again in three weeks.
 
-Leave it out and try a different change before writing anything. — The second change would then trace back to no result at all. The record of the failed attempt is what makes the next diagnosis better.
-
 That the test was too small to show a difference. — The sample is small and that is not what happened here. Two people failed the same task in the same place, which is a result about your change.
+
+Leave it out and try a different change before writing anything. — The second change would then trace back to no result at all. The record of the failed attempt is what makes the next diagnosis better.
 
 Improve: Look at the change you recorded in step 4, then write the outcome plainly in step 5 including the failure, and put that failure back on the remaining-failures list in the same step.
 
@@ -5904,16 +5904,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 People take the right branch from the top and then cannot tell which of two labels holds their answer. Which is the cheaper test?
 
-- A closed card sort with just those two categories, because the question is whether the names are understood.
 - Another tree test, because the failure happened inside the tree.
+- A closed card sort with just those two categories, because the question is whether the names are understood.
 - A usability test, because you need to see the whole task.
 
 <details>
 <summary>After your attempt</summary>
 
-A closed card sort with just those two categories, because the question is whether the names are understood. — The branch is already working, so the shape of the structure is not what you are asking about. A sort with two categories takes about ten minutes a person.
-
 Another tree test, because the failure happened inside the tree. — It happened inside the tree and it is not a question about the shape of the tree. You would run the same test again and get the same two labels back.
+
+A closed card sort with just those two categories, because the question is whether the names are understood. — The branch is already working, so the shape of the structure is not what you are asking about. A sort with two categories takes about ten minutes a person.
 
 A usability test, because you need to see the whole task. — It would show you the struggle again with every other variable attached. You already know where the struggle sits.
 
@@ -5934,18 +5934,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 People go straight to search on every task and never open the menu. What would a tree test tell you?
 
-- Nothing about this, because a tree test removes the layout and the menu is exactly what is being ignored.
 - That the structure is sound, since they would use it during the test.
 - That search should be improved instead.
+- Nothing about this, because a tree test removes the layout and the menu is exactly what is being ignored.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing about this, because a tree test removes the layout and the menu is exactly what is being ignored. — The structure is not being consulted at all. A click test on a drawn or printed screen shows whether the component is seen and understood.
-
 That the structure is sound, since they would use it during the test. — They would use it because the test gives them nothing else to use. That says nothing about the screen they actually meet.
 
 That search should be improved instead. — That may be true and it is a different decision. First find out whether the menu is unseen, unreadable, or simply slower than typing.
+
+Nothing about this, because a tree test removes the layout and the menu is exactly what is being ignored. — The structure is not being consulted at all. A click test on a drawn or printed screen shows whether the component is seen and understood.
 
 Improve: Look at your symptom list in step 2 for anything about people walking past the menu, match it to a click test in step 3, and record the change in step 5.
 
@@ -5964,16 +5964,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 All your symptoms came from a walkthrough you did on your own, because nobody was available. How should the plan read?
 
-- Each symptom marked as coming from your own rehearsal, with the plan saying what would confirm it.
 - As symptoms observed in research, since you did observe them.
+- Each symptom marked as coming from your own rehearsal, with the plan saying what would confirm it.
 - Wait and write the plan once you have participants.
 
 <details>
 <summary>After your attempt</summary>
 
-Each symptom marked as coming from your own rehearsal, with the plan saying what would confirm it. — A walkthrough of your own produces suspicions and no findings. A plan built from suspicions is still a good plan as long as it says that is what they are.
-
 As symptoms observed in research, since you did observe them. — You observed yourself using something you already understand. Presenting that as research is the failure this whole module keeps naming.
+
+Each symptom marked as coming from your own rehearsal, with the plan saying what would confirm it. — A walkthrough of your own produces suspicions and no findings. A plan built from suspicions is still a good plan as long as it says that is what they are.
 
 Wait and write the plan once you have participants. — The plan is the deliverable and it is worth writing today. What it needs is a source beside every symptom, not a delay.
 
@@ -6490,21 +6490,21 @@ A supplied heading outline from another made-up class page, read aloud with noth
 
 Hearing only that, which judgement is the honest one?
 
-- Two of them, “Overview” and “Good to know”, could sit on any page in the site, so the outline is not yet a summary of this one.
-- The outline is sound, because five headings in order is a sensible shape for a page.
 - It fails because “What to bring” is too long to be a heading.
 - You cannot judge it without seeing the page design.
+- The outline is sound, because five headings in order is a sensible shape for a page.
+- Two of them, “Overview” and “Good to know”, could sit on any page in the site, so the outline is not yet a summary of this one.
 
 <details>
 <summary>After your attempt</summary>
 
-Two of them, “Overview” and “Good to know”, could sit on any page in the site, so the outline is not yet a summary of this one. — A heading earns its place by being unmovable. Those two would fit a booking page, a help page or an about page and nobody would notice.
-
-The outline is sound, because five headings in order is a sensible shape for a page. — Shape and order are only half of it. An outline can be perfectly nested and still tell a listener nothing about what is on the page.
-
 It fails because “What to bring” is too long to be a heading. — Length is the cheapest thing a heading has to spend. That is the one heading here a listener could act on.
 
 You cannot judge it without seeing the page design. — Hiding the design is the test. If the outline only makes sense beside the layout, then people who never see the layout have no structure at all.
+
+The outline is sound, because five headings in order is a sensible shape for a page. — Shape and order are only half of it. An outline can be perfectly nested and still tell a listener nothing about what is on the page.
+
+Two of them, “Overview” and “Good to know”, could sit on any page in the site, so the outline is not yet a summary of this one. — A heading earns its place by being unmovable. Those two would fit a booking page, a help page or an about page and nobody would notice.
 
 Read your own headings aloud with the page covered, and mark every one that could move to another page unnoticed.
 
@@ -6541,18 +6541,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You want a heading to look smaller, so you give it a lower level with nothing in between. What does that do?
 
-- It puts a gap in the outline, so anyone reading the headings alone hears a section that seems to be missing.
 - Nothing, as long as the wording of the heading is good.
 - It is fine if you note the intended level beside it.
+- It puts a gap in the outline, so anyone reading the headings alone hears a section that seems to be missing.
 
 <details>
 <summary>After your attempt</summary>
 
-It puts a gap in the outline, so anyone reading the headings alone hears a section that seems to be missing. — The level is a claim about what sits inside what. Used for size, it makes a claim you did not mean and cannot see on your own screen.
-
 Nothing, as long as the wording of the heading is good. — Good wording and a broken order are separate problems. The order is what somebody jumping from heading to heading is actually moving through.
 
 It is fine if you note the intended level beside it. — A note beside it helps you and reaches nobody else. The outline is what the page hands to a reader.
+
+It puts a gap in the outline, so anyone reading the headings alone hears a section that seems to be missing. — The level is a claim about what sits inside what. Used for size, it makes a claim you did not mean and cannot see on your own screen.
 
 Improve: Go back to your outline in step 2 and renumber it so every heading sits inside the one above. Record the change in the last box.
 
@@ -6571,16 +6571,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You read your headings aloud and they made sense to you. Is that enough?
 
-- Not on its own, because you know the page. Read them to somebody who has not seen it and ask what the page is about.
 - It is enough, since you took the headings from your labelling table.
+- Not on its own, because you know the page. Read them to somebody who has not seen it and ask what the page is about.
 - It is enough if the headings match the visual design.
 
 <details>
 <summary>After your attempt</summary>
 
-Not on its own, because you know the page. Read them to somebody who has not seen it and ask what the page is about. — You fill in the missing meaning from memory without noticing. A listener who cannot do that hears what the outline really says.
-
 It is enough, since you took the headings from your labelling table. — The table gives you the words people use. It cannot tell you whether five of those words in a row describe this particular page.
+
+Not on its own, because you know the page. Read them to somebody who has not seen it and ask what the page is about. — You fill in the missing meaning from memory without noticing. A listener who cannot do that hears what the outline really says.
 
 It is enough if the headings match the visual design. — Matching the design is the thing the test removes. The design has been rescuing the wording, which is why the wording never got fixed.
 
@@ -6602,17 +6602,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 The preliminary checks all came out clean. What can you claim?
 
 - That those particular checks found nothing, and no more than that. They are preliminary, and no disabled participant has used the page.
-- That the page is accessible.
 - That the page is accessible for the checks you ran, which covers most people.
+- That the page is accessible.
 
 <details>
 <summary>After your attempt</summary>
 
 That those particular checks found nothing, and no more than that. They are preliminary, and no disabled participant has used the page. — The checks find a few common faults quickly. The honest record names which ones you ran and stops there.
 
-That the page is accessible. — A small set of self-run checks cannot carry that claim. It is the sentence that gets repeated in a portfolio and then does not survive the first question.
-
 That the page is accessible for the checks you ran, which covers most people. — The second half is a guess about numbers you do not have. Name the checks that ran and leave the rest open.
+
+That the page is accessible. — A small set of self-run checks cannot carry that claim. It is the sentence that gets repeated in a portfolio and then does not survive the first question.
 
 Improve: Fill the not-verified box in step 5 with each check marked run, not applicable or not run, add the sentence about the missing session, then note the change in the last box.
 
@@ -7126,21 +7126,21 @@ A supplied zero-results screen from another made-up product. It reads: “No res
 
 What is the most serious thing missing here?
 
-- Any route that does not need the person to guess a different word — the structure to browse, or a person to ask.
-- The spelling advice, which blames the person for the failure.
 - A count of how many results came back, so they know it really is none.
 - Nothing serious: the screen names the query, which is the main thing.
+- Any route that does not need the person to guess a different word — the structure to browse, or a person to ask.
+- The spelling advice, which blames the person for the failure.
 
 <details>
 <summary>After your attempt</summary>
 
-Any route that does not need the person to guess a different word — the structure to browse, or a person to ask. — Everything on that screen sends them back to the box that just failed them. One route that works differently is what turns a dead end into a next move.
-
-The spelling advice, which blames the person for the failure. — It reads badly and it comes second. Rewording that sentence still leaves them with only one thing to try.
-
 A count of how many results came back, so they know it really is none. — They can already see it is none. A number changes nothing about what they can do next.
 
 Nothing serious: the screen names the query, which is the main thing. — Naming the query is genuinely useful, and it is where the screen should start rather than stop. On its own it is a polite dead end.
+
+Any route that does not need the person to guess a different word — the structure to browse, or a person to ask. — Everything on that screen sends them back to the box that just failed them. One route that works differently is what turns a dead end into a next move.
+
+The spelling advice, which blames the person for the failure. — It reads badly and it comes second. Rewording that sentence still leaves them with only one thing to try.
 
 Look at your own zero-results screen and count the routes forward that do not depend on typing another word. If the answer is none, add one.
 
@@ -7188,16 +7188,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your menu labels tested badly, and somebody suggests adding a search box instead of fixing them.
 
-- Search moves the failure somewhere you cannot see it, and a person searching after a failure is already having a poor time.
 - It is a fair trade, because most people search anyway.
+- Search moves the failure somewhere you cannot see it, and a person searching after a failure is already having a poor time.
 - It works if the search is good enough at matching similar words.
 
 <details>
 <summary>After your attempt</summary>
 
-Search moves the failure somewhere you cannot see it, and a person searching after a failure is already having a poor time. — A menu at least shows what exists. A search returning nothing tells them the thing is not there, which is often untrue.
-
 It is a fair trade, because most people search anyway. — Many do, and they type their own words. A search box sitting on content that uses different words fails them faster, not less often.
+
+Search moves the failure somewhere you cannot see it, and a person searching after a failure is already having a poor time. — A menu at least shows what exists. A search returning nothing tells them the thing is not there, which is often untrue.
 
 It works if the search is good enough at matching similar words. — Matching helps with spelling and word endings. It does nothing when the answer lives in an email or does not exist at all.
 
@@ -7218,18 +7218,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A person picks two filters and gets nothing back. What should the screen do?
 
-- Show which choice emptied the list, and let them undo that one on its own.
 - Say “no results” and leave the filters as they are.
 - Clear the filters automatically and show everything again.
+- Show which choice emptied the list, and let them undo that one on its own.
 
 <details>
 <summary>After your attempt</summary>
 
-Show which choice emptied the list, and let them undo that one on its own. — They made two choices and one of them did the damage. Without knowing which, their only move is to clear everything and start again.
-
 Say “no results” and leave the filters as they are. — Leaving the filters in place is the right half. Saying nothing about which one caused it is what makes the screen a trap.
 
 Clear the filters automatically and show everything again. — That takes the decision away from them and loses the one choice they cared about. They also cannot tell what happened.
+
+Show which choice emptied the list, and let them undo that one on its own. — They made two choices and one of them did the damage. Without knowing which, their only move is to clear everything and start again.
 
 Improve: Fill the empty-combination box in step 4 with what the person sees and which choice they can undo, then record the change in the last box.
 
@@ -7947,18 +7947,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One label is cut off on a button at 320 px. What is the first repair to try?
 
+- Leave the three dots, since people can work out the rest.
 - A shorter label that keeps the word telling it apart, or two separate items if no short version does.
 - A smaller size for that label so the whole thing fits.
-- Leave the three dots, since people can work out the rest.
 
 <details>
 <summary>After your attempt</summary>
 
+Leave the three dots, since people can work out the rest. — Sometimes they can, and “Change or cancel a…” is exactly the case where they cannot. Two different actions have become one unreadable one.
+
 A shorter label that keeps the word telling it apart, or two separate items if no short version does. — Cutting off removes the end of a label, which is usually the part carrying the difference. Shortening on purpose means you choose what survives.
 
 A smaller size for that label so the whole thing fits. — It fits, it is harder to read, and it will be cut off again in the next language. You have bought the space from the reader.
-
-Leave the three dots, since people can work out the rest. — Sometimes they can, and “Change or cancel a…” is exactly the case where they cannot. Two different actions have become one unreadable one.
 
 Improve: Take every cut-off label in your narrow-width box in step 3 and write a shorter or split version in step 4, then record the change in the last box.
 
@@ -7977,18 +7977,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your prototype cannot render Devanagari at all. What is the honest response?
 
-- Write the labels by hand at the same size, record what you saw, and mark the on-screen rendering as not tested.
 - Skip the second script and note that the layout is proportional.
 - Record it as clean, since nothing visibly broke.
+- Write the labels by hand at the same size, record what you saw, and mark the on-screen rendering as not tested.
 
 <details>
 <summary>After your attempt</summary>
 
-Write the labels by hand at the same size, record what you saw, and mark the on-screen rendering as not tested. — Hand-written labels still show you the length and the height the marks need. What they cannot show is whether the lettering supports the script, so that stays untested and says so.
-
 Skip the second script and note that the layout is proportional. — Proportions cannot tell you whether the lettering contains those characters or whether the row is tall enough. Both fail quietly.
 
 Record it as clean, since nothing visibly broke. — Nothing was rendered, so nothing could visibly break. Writing that down as a pass is the sentence that makes the whole note untrustworthy.
+
+Write the labels by hand at the same size, record what you saw, and mark the on-screen rendering as not tested. — Hand-written labels still show you the length and the height the marks need. What they cannot show is whether the lettering supports the script, so that stays untested and says so.
 
 Improve: Set the script-method box in step 2 to how you really produced it, move anything you could not see into the guesses box in step 5, then note it in the last box.
 
@@ -8007,16 +8007,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your change note lists eleven decisions with evidence, and three of them rest on labels no participant ever mentioned.
 
-- Move those three into the guesses, each with the sentence that would settle it.
 - Leave them, since they follow sensibly from the rest of the evidence.
+- Move those three into the guesses, each with the sentence that would settle it.
 - Remove them from the note, since you cannot support them.
 
 <details>
 <summary>After your attempt</summary>
 
-Move those three into the guesses, each with the sentence that would settle it. — A note separating the eight from the three is more useful than one claiming eleven. The three are where the next hour of work goes.
-
 Leave them, since they follow sensibly from the rest of the evidence. — Following sensibly is your reasoning, not anybody else’s behaviour. That is the exact place a preference gets written down as a finding.
+
+Move those three into the guesses, each with the sentence that would settle it. — A note separating the eight from the three is more useful than one claiming eleven. The three are where the next hour of work goes.
 
 Remove them from the note, since you cannot support them. — They are real decisions and the structure uses them. Deleting them hides a choice somebody else will have to rediscover later.
 

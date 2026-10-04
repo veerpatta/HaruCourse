@@ -474,18 +474,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A model summarised your interview notes into four themes. Do you have your findings?
 
+- Yes, as a first pass to refine by hand.
 - You have a plausible summary produced by something that cannot tell what your participant said from what people usually say.
 - Yes, if you read the themes and agree with them.
-- Yes, as a first pass to refine by hand.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, as a first pass to refine by hand. — A first pass anchors you. Having read four smooth themes, the contradiction is much harder to notice.
+
 You have a plausible summary produced by something that cannot tell what your participant said from what people usually say. — The parts that were surprising are the parts it smooths away, and those are the findings. The analysis is the work, and skipping it removes the thing that made the findings yours.
 
 Yes, if you read the themes and agree with them. — Agreeing with a plausible summary is easy, because plausible is what it was optimised for.
-
-Yes, as a first pass to refine by hand. — A first pass anchors you. Having read four smooth themes, the contradiction is much harder to notice.
 
 Improve: Write interview notes into your never list in step 3, with the reason in terms of what you promised. Record the change in step 5.
 
@@ -504,18 +504,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why write these rules now rather than when the situation arises?
 
+- Because the tools change quickly.
 - Because the situation arises under deadline pressure, when the useful answer has to be available rather than constructed.
 - Because rules made in advance are more defensible.
-- Because the tools change quickly.
 
 <details>
 <summary>After your attempt</summary>
 
+Because the tools change quickly. — The rules are about your obligations rather than about the tools, which is why they survive the tools changing.
+
 Because the situation arises under deadline pressure, when the useful answer has to be available rather than constructed. — The moment you most want to paste the notes in is the evening before a deadline. A rule written calmly is the only version that exists at that point.
 
 Because rules made in advance are more defensible. — They are, and the reason is what they do for you rather than how they look.
-
-Because the tools change quickly. — The rules are about your obligations rather than about the tools, which is why they survive the tools changing.
 
 Improve: Write where the rules live and which will be hardest in step 5. Record the change.
 
@@ -534,16 +534,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A model explains a technical term clearly. Can you repeat the explanation to a colleague?
 
-- After checking it against documentation. Plausible explanations routinely contain one detail that is wrong.
 - Yes, if it matches your understanding.
+- After checking it against documentation. Plausible explanations routinely contain one detail that is wrong.
 - Yes, if you ask it again and get the same answer.
 
 <details>
 <summary>After your attempt</summary>
 
-After checking it against documentation. Plausible explanations routinely contain one detail that is wrong. — The wrong detail is usually the specific one, which is the part you were going to repeat. Verification means a named source that is not the model.
-
 Yes, if it matches your understanding. — Your understanding is what you were trying to improve.
+
+After checking it against documentation. Plausible explanations routinely contain one detail that is wrong. — The wrong detail is usually the specific one, which is the part you were going to repeat. Verification means a named source that is not the model.
 
 Yes, if you ask it again and get the same answer. — That produces a second confident answer rather than a check.
 
@@ -1241,18 +1241,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The output cites an accessibility criterion. Do you need to check it?
 
-- Yes. Specifics are where the errors are, and a fabricated criterion would be quoted at an engineer as fact.
-- Only if it sounds unlikely.
 - No, standards are well documented enough to be reliable.
+- Only if it sounds unlikely.
+- Yes. Specifics are where the errors are, and a fabricated criterion would be quoted at an engineer as fact.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes. Specifics are where the errors are, and a fabricated criterion would be quoted at an engineer as fact. — Nothing in the tone distinguishes a real criterion from an invented one. The pattern across tasks is usually that specifics, sources and anything local are the unreliable parts.
+No, standards are well documented enough to be reliable. — They are well documented, which is what makes checking quick rather than unnecessary.
 
 Only if it sounds unlikely. — It will not sound unlikely. Plausibility is what these outputs are best at.
 
-No, standards are well documented enough to be reliable. — They are well documented, which is what makes checking quick rather than unnecessary.
+Yes. Specifics are where the errors are, and a fabricated criterion would be quoted at an engineer as fact. — Nothing in the tone distinguishes a real criterion from an invented one. The pattern across tasks is usually that specifics, sources and anything local are the unreliable parts.
 
 Improve: Check every specific claim against a named source in step 3 and record what was wrong. Note the change in step 5.
 
@@ -1271,18 +1271,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You kept a phrase you would not have written, because rewriting it felt fussy. Does that belong in the log?
 
+- No, that is normal editing.
 - Yes. It is the cost that never appears in a time count, and a pattern of them changes what your product says.
 - No, since the phrase was acceptable.
-- No, that is normal editing.
 
 <details>
 <summary>After your attempt</summary>
 
+No, that is normal editing. — Normal editing is choosing. This was declining to choose.
+
 Yes. It is the cost that never appears in a time count, and a pattern of them changes what your product says. — One phrase is nothing. Recorded over three tasks, it shows how much of the final text was chosen rather than accepted, which is the thing the time figure cannot see.
 
 No, since the phrase was acceptable. — Acceptable is the standard that lets it in. It is not the standard you apply to your own writing.
-
-No, that is normal editing. — Normal editing is choosing. This was declining to choose.
 
 Improve: Write what you accepted rather than chose in step 4, for each task. Record the change in step 5.
 
@@ -1962,18 +1962,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does showing a confidence score make a feature honest?
 
-- It makes it look quantitative. Most readers cannot convert a percentage into a decision, and a high number reads as certainty.
-- Yes, since it communicates uncertainty directly.
 - Yes, provided the scores are well calibrated.
+- Yes, since it communicates uncertainty directly.
+- It makes it look quantitative. Most readers cannot convert a percentage into a decision, and a high number reads as certainty.
 
 <details>
 <summary>After your attempt</summary>
 
-It makes it look quantitative. Most readers cannot convert a percentage into a decision, and a high number reads as certainty. — The score was meant to communicate doubt and is read as a guarantee. Showing the basis — what it used — lets somebody judge it for themselves, which is what the number was supposed to do.
+Yes, provided the scores are well calibrated. — Calibration makes the number true. It does not make it usable by somebody deciding whether to tap it.
 
 Yes, since it communicates uncertainty directly. — It communicates a number. What a reader does with 87 per cent is treat it as yes.
 
-Yes, provided the scores are well calibrated. — Calibration makes the number true. It does not make it usable by somebody deciding whether to tap it.
+It makes it look quantitative. Most readers cannot convert a percentage into a decision, and a high number reads as certainty. — The score was meant to communicate doubt and is read as a guarantee. Showing the basis — what it used — lets somebody judge it for themselves, which is what the number was supposed to do.
 
 Improve: Replace any score in step 3 with a basis line somebody could disagree with. Record the change in step 5.
 
@@ -2022,18 +2022,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your suggestion feature could be built as a sorted list with a good heading. Should you use a model?
 
+- Yes, since personalisation needs one.
 - Probably not. A rule you can explain beats a model you cannot, wherever it produces similar answers.
 - Yes, because a model improves over time.
-- Yes, since personalisation needs one.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, since personalisation needs one. — Personalisation from somebody’s own history is a sort. It needs a model when the pattern is genuinely beyond a rule, which is worth establishing rather than assuming.
+
 Probably not. A rule you can explain beats a model you cannot, wherever it produces similar answers. — Most recent first and most borrowed this month produced roughly the same suggestions when checked by hand. The rule is explainable, predictable, cheap and maintainable, and the design questions are identical either way.
 
 Yes, because a model improves over time. — That sentence cannot be acted on or argued with, which is what makes it a poor reason.
-
-Yes, since personalisation needs one. — Personalisation from somebody’s own history is a sort. It needs a model when the pattern is genuinely beyond a rule, which is worth establishing rather than assuming.
 
 Improve: Write the rule version in step 1 and say honestly whether it would do. Record the change in step 5.
 
@@ -2678,16 +2678,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 People can just ignore a suggestion they do not want. Is that control?
 
-- No. Ignoring is tolerance, especially where the suggestion holds the primary position and reappears after every action.
 - Yes, for a low-stakes feature like suggestions.
+- No. Ignoring is tolerance, especially where the suggestion holds the primary position and reappears after every action.
 - Yes, provided the suggestion is visually quiet.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Ignoring is tolerance, especially where the suggestion holds the primary position and reappears after every action. — Control means being able to change what the system does. The four controls exist because looking past something is the only option a person has when nothing else is offered.
-
 Yes, for a low-stakes feature like suggestions. — Low stakes each time, repeated daily. It is also the feature most likely to be ignorable by design rather than by accident.
+
+No. Ignoring is tolerance, especially where the suggestion holds the primary position and reappears after every action. — Control means being able to change what the system does. The four controls exist because looking past something is the only option a person has when nothing else is offered.
 
 Yes, provided the suggestion is visually quiet. — Quiet helps and it does not change what the system does.
 
@@ -2709,17 +2709,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Dismissing a suggestion does not change future suggestions. What should the interface do?
 
 - Say so plainly, because people assume it learns and are quietly disappointed for months otherwise.
-- Nothing; correction is a reasonable default expectation.
 - Imply it learns, since it may do so later.
+- Nothing; correction is a reasonable default expectation.
 
 <details>
 <summary>After your attempt</summary>
 
 Say so plainly, because people assume it learns and are quietly disappointed for months otherwise. — The same wrong suggestion returning weekly, with dismissals that appear to do nothing, is how somebody concludes the system ignores them. One sentence prevents it, and it may prompt you to make dismissals persist instead.
 
-Nothing; correction is a reasonable default expectation. — It is, which is exactly why an interface that does not correct has to say so.
-
 Imply it learns, since it may do so later. — That is a promise on behalf of a future version, made to somebody using this one.
+
+Nothing; correction is a reasonable default expectation. — It is, which is exactly why an interface that does not correct has to say so.
 
 Improve: Write the sentence in step 2 saying what a dismissal does. Record the change in step 5.
 
@@ -2738,18 +2738,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You added an off switch. Do you need to do anything else?
 
-- Walk the main task with the feature off. Features added as extras are often load-bearing without anybody noticing.
 - No, the switch is the control.
 - Only if the feature is central to the product.
+- Walk the main task with the feature off. Features added as extras are often load-bearing without anybody noticing.
 
 <details>
 <summary>After your attempt</summary>
 
-Walk the main task with the feature off. Features added as extras are often load-bearing without anybody noticing. — A switch that works, after which the task cannot be completed, is not a choice anybody can make. Walking it is ten minutes and it is the only way to find out.
-
 No, the switch is the control. — The switch is half of it. The product working without the feature is the other half.
 
 Only if the feature is central to the product. — The features that turn out to be load-bearing are exactly the ones nobody thought were central.
+
+Walk the main task with the feature off. Features added as extras are often load-bearing without anybody noticing. — A switch that works, after which the task cannot be completed, is not a choice anybody can make. Walking it is ten minutes and it is the only way to find out.
 
 Improve: Walk the task with the feature disabled in step 3 and record what broke. Note the change in step 5.
 
@@ -3257,16 +3257,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have added a feedback button for when the feature gets it wrong. Is that failure design?
 
-- No. It collects complaints while leaving the person with the same problem, no route forward and no correction.
 - Yes, since it lets the team improve the feature.
+- No. It collects complaints while leaving the person with the same problem, no route forward and no correction.
 - Yes, provided the feedback is acted on.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It collects complaints while leaving the person with the same problem, no route forward and no correction. — Failure design gives the person what they came for by another route. The report control can stay, underneath the thing that actually helps them.
-
 Yes, since it lets the team improve the feature. — It may, eventually, for somebody else. It does nothing for the person in front of it now.
+
+No. It collects complaints while leaving the person with the same problem, no route forward and no correction. — Failure design gives the person what they came for by another route. The report control can stay, underneath the thing that actually helps them.
 
 Yes, provided the feedback is acted on. — Acting on it still happens later and elsewhere.
 
@@ -3317,18 +3317,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your error wording says “Sorry, I misunderstood what you were looking for.” What is wrong with it?
 
+- It should say which part was misunderstood.
 - It claims a mind. Misunderstood implies an attempt to understand, which sets an expectation nothing can meet.
 - Nothing; a friendly tone helps in a failure.
-- It should say which part was misunderstood.
 
 <details>
 <summary>After your attempt</summary>
 
+It should say which part was misunderstood. — That would make the claim more specific rather than removing it.
+
 It claims a mind. Misunderstood implies an attempt to understand, which sets an expectation nothing can meet. — The next failure then feels like a betrayal rather than a limitation. Wording that describes what happened, without claiming intent, ages far better.
 
 Nothing; a friendly tone helps in a failure. — A friendly tone helps. Claiming comprehension is a separate thing that the tone is carrying.
-
-It should say which part was misunderstood. — That would make the claim more specific rather than removing it.
 
 Improve: Remove anything implying understanding or intention in step 5 and record what you changed.
 
@@ -4123,18 +4123,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is conversation more natural than a form?
 
-- Between people who share context. With a system that has none, it produces guessing, retries and somebody learning your vocabulary by failing at it.
-- Yes, which is why chat interfaces keep appearing.
 - Yes for open requests, no for precise ones.
+- Yes, which is why chat interfaces keep appearing.
+- Between people who share context. With a system that has none, it produces guessing, retries and somebody learning your vocabulary by failing at it.
 
 <details>
 <summary>After your attempt</summary>
 
-Between people who share context. With a system that has none, it produces guessing, retries and somebody learning your vocabulary by failing at it. — The first thing many people type is a request to find out what they can ask. A set of filters answers that question by existing.
+Yes for open requests, no for precise ones. — That is the useful version of the answer, and it is about the request rather than about naturalness.
 
 Yes, which is why chat interfaces keep appearing. — They keep appearing because they are easy to build and look modern. Naturalness between people does not transfer to a system with no shared context.
 
-Yes for open requests, no for precise ones. — That is the useful version of the answer, and it is about the request rather than about naturalness.
+Between people who share context. With a system that has none, it produces guessing, retries and somebody learning your vocabulary by failing at it. — The first thing many people type is a request to find out what they can ask. A set of filters answers that question by existing.
 
 Improve: Compare both versions for a first-time user in step 4, naming what each has to do. Record the change in step 5.
 
@@ -4154,17 +4154,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your conversational version handled a complicated request beautifully. Does that settle it?
 
 - No. The question is what most people are doing most of the time, and that is usually three choices they already know.
-- Yes, since it handles both the simple and the complex.
 - Yes, if the common case is also fast.
+- Yes, since it handles both the simple and the complex.
 
 <details>
 <summary>After your attempt</summary>
 
 No. The question is what most people are doing most of the time, and that is usually three choices they already know. — The impressive case was about one in ten. The common case is somebody typing three filters slowly, one message at a time, on a phone.
 
-Yes, since it handles both the simple and the complex. — It handles the simple slowly, which is most of the volume.
-
 Yes, if the common case is also fast. — Worth checking, and on a phone the composition cost makes it rarely so.
+
+Yes, since it handles both the simple and the complex. — It handles the simple slowly, which is most of the volume.
 
 Improve: Count the actions for the common case in both designs, in step 3, and use the numbers in your comparison. Record the change in step 5.
 
@@ -4183,18 +4183,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You chose the structured version. What should you record?
 
-- What the conversation did better, because a set of filters cannot express the long-tail request at all.
-- Nothing; the comparison already made the case.
 - That conversational interfaces are rarely the right choice.
+- Nothing; the comparison already made the case.
+- What the conversation did better, because a set of filters cannot express the long-tail request at all.
 
 <details>
 <summary>After your attempt</summary>
 
-What the conversation did better, because a set of filters cannot express the long-tail request at all. — Recording it is what leads to the usual right answer: structure as the primary route with a text field for what it cannot express. Without it, the decision hardens into a rule against chat.
+That conversational interfaces are rarely the right choice. — That is the rule this lesson is trying to avoid producing.
 
 Nothing; the comparison already made the case. — The case for choosing is not the same as the record of what was given up.
 
-That conversational interfaces are rarely the right choice. — That is the rule this lesson is trying to avoid producing.
+What the conversation did better, because a set of filters cannot express the long-tail request at all. — Recording it is what leads to the usual right answer: structure as the primary route with a text field for what it cannot express. Without it, the decision hardens into a rule against chat.
 
 Improve: Write what the rejected version did better in step 5, and consider whether the answer is both. Record the change.
 
@@ -4865,18 +4865,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should the explanation describe how the model works?
 
-- Almost nobody wants that and it does not help them act. What helps is what it used and what would change the result.
 - Yes, transparency means explaining the mechanism.
 - Yes, for readers who want the detail.
+- Almost nobody wants that and it does not help them act. What helps is what it used and what would change the result.
 
 <details>
 <summary>After your attempt</summary>
 
-Almost nobody wants that and it does not help them act. What helps is what it used and what would change the result. — Understanding the mechanism and predicting the output are different. Two people can follow a description of ranking signals perfectly and still not know what they will be shown tomorrow.
-
 Yes, transparency means explaining the mechanism. — Transparency that nobody can act on is a different value from the one this lesson is about.
 
 Yes, for readers who want the detail. — Worth having available. It is not what the interface explanation is for.
+
+Almost nobody wants that and it does not help them act. What helps is what it used and what would change the result. — Understanding the mechanism and predicting the output are different. Two people can follow a description of ranking signals perfectly and still not know what they will be shown tomorrow.
 
 Improve: Cut your chosen version in step 2 to what it used and what would change it. Record the change in step 5.
 
@@ -4896,17 +4896,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 How do you know whether your explanation is any good?
 
 - Ask two people to predict the next output from it, and whether they know how to change it.
-- Check it is accurate about the system.
 - Ask whether people find it clear.
+- Check it is accurate about the system.
 
 <details>
 <summary>After your attempt</summary>
 
 Ask two people to predict the next output from it, and whether they know how to change it. — It is the only test that separates an explanation from reassurance. Both halves matter: prediction without a lever leaves somebody informed and stuck.
 
-Check it is accurate about the system. — Accuracy is necessary and it is what the technical version had.
-
 Ask whether people find it clear. — People find reassuring wording very clear. Clarity is not the property being tested.
+
+Check it is accurate about the system. — Accuracy is necessary and it is what the technical version had.
 
 Improve: Run the prediction test in step 3 and write what they actually said. Record the change in step 5.
 
@@ -4925,18 +4925,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your two-sentence explanation leaves out how recency is weighted. Is that dishonest?
 
+- Yes, unless the detail is available elsewhere.
 - Not if it changes no prediction anybody would make. An omission is dishonest when it produces a confident wrong answer.
 - Yes, anything left out is a form of concealment.
-- Yes, unless the detail is available elsewhere.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, unless the detail is available elsewhere. — Having it elsewhere is good practice and not what decides whether the short version misleads.
+
 Not if it changes no prediction anybody would make. An omission is dishonest when it produces a confident wrong answer. — The test is the prediction rather than completeness. Listing every omission and checking each against that test is what makes the simplification defensible.
 
 Yes, anything left out is a form of concealment. — By that standard no explanation under a page is honest, and nobody reads a page.
-
-Yes, unless the detail is available elsewhere. — Having it elsewhere is good practice and not what decides whether the short version misleads.
 
 Improve: List your omissions in step 4 and check each against the prediction test. Record the change.
 
@@ -5640,17 +5640,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your privacy policy covers what the feature collects. Is that the disclosure?
 
 - No. Nobody reads it, so what people believe is whatever they assume, and they assume more than is true.
-- Yes, that is what a privacy policy is for.
 - Yes, if it is written clearly.
+- Yes, that is what a privacy policy is for.
 
 <details>
 <summary>After your attempt</summary>
 
 No. Nobody reads it, so what people believe is whatever they assume, and they assume more than is true. — The disclosure that informs anybody is the sentence in the interface at the moment the feature starts. A member assuming it uses everything the library knows is wrong in the expensive direction.
 
-Yes, that is what a privacy policy is for. — It is what it is for legally. It is not where anybody finds out.
-
 Yes, if it is written clearly. — Clarity does not cause it to be read.
+
+Yes, that is what a privacy policy is for. — It is what it is for legally. It is not where anybody finds out.
 
 Improve: Write the interface sentence in step 2 and say when it appears. Record the change in step 5.
 
@@ -5669,18 +5669,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Collecting what people looked at but did not borrow would improve suggestions slightly. Should you?
 
-- No. A marginal improvement is a weak reason to hold a record of what somebody considered and decided against.
 - Yes, if it is disclosed and deletable.
 - Yes, since it is behaviour on your own product.
+- No. A marginal improvement is a weak reason to hold a record of what somebody considered and decided against.
 
 <details>
 <summary>After your attempt</summary>
 
-No. A marginal improvement is a weak reason to hold a record of what somebody considered and decided against. — It is also the thing people assume is happening and dislike most. Refusing it, with the cost to the feature named, is a decision you can defend.
-
 Yes, if it is disclosed and deletable. — Controls make it optional. They do not make a marginal gain proportionate to the record.
 
 Yes, since it is behaviour on your own product. — Being available is not a reason. The test is whether the improvement justifies the record.
+
+No. A marginal improvement is a weak reason to hold a record of what somebody considered and decided against. — It is also the thing people assume is happening and dislike most. Refusing it, with the cost to the feature named, is a decision you can defend.
 
 Improve: Write your two refusals in step 4 with what the feature loses. Record the change in step 5.
 
@@ -6401,16 +6401,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your suggestions match what people go on to borrow 62 per cent of the time. Does the feature work?
 
-- Unknown. Somebody who always borrows the same sander produces a high score and gets no value from being told about it.
 - Yes, 62 per cent is a reasonable hit rate.
+- Unknown. Somebody who always borrows the same sander produces a high score and gets no value from being told about it.
 - Yes, if people are also tapping the suggestions.
 
 <details>
 <summary>After your attempt</summary>
 
-Unknown. Somebody who always borrows the same sander produces a high score and gets no value from being told about it. — Accuracy measures how often the model matched a label. Whether the feature helped is a separate question, and a definition of good in a person’s terms usually rewards the opposite of what accuracy does.
-
 Yes, 62 per cent is a reasonable hit rate. — A reasonable hit rate on a target that includes everything the person was going to do anyway.
+
+Unknown. Somebody who always borrows the same sander produces a high score and gets no value from being told about it. — Accuracy measures how often the model matched a label. Whether the feature helped is a separate question, and a definition of good in a person’s terms usually rewards the opposite of what accuracy does.
 
 Yes, if people are also tapping the suggestions. — Tapping moves with placement and wording, and a tap is not a judgement of usefulness.
 
@@ -6431,18 +6431,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Which error is usually underweighted: a wrong suggestion or a missing one?
 
-- The missing one, because it is invisible. Nobody complains about a suggestion they never saw.
-- The wrong one, since teams tolerate irrelevance.
 - Neither; they are usually treated equally.
+- The wrong one, since teams tolerate irrelevance.
+- The missing one, because it is invisible. Nobody complains about a suggestion they never saw.
 
 <details>
 <summary>After your attempt</summary>
 
-The missing one, because it is invisible. Nobody complains about a suggestion they never saw. — Wrong suggestions are visible and cost trust immediately, so teams tune for fewer of them. Saying which you prefer, and why, is what makes that a decision rather than a drift.
+Neither; they are usually treated equally. — They are rarely equally bad and almost never equally visible.
 
 The wrong one, since teams tolerate irrelevance. — Irrelevance is the most complained-about property of these features, which is why it gets the attention.
 
-Neither; they are usually treated equally. — They are rarely equally bad and almost never equally visible.
+The missing one, because it is invisible. Nobody complains about a suggestion they never saw. — Wrong suggestions are visible and cost trust immediately, so teams tune for fewer of them. Saying which you prefer, and why, is what makes that a decision rather than a drift.
 
 Improve: State your preference between the two errors in step 2, with a reason about people. Record the change in step 5.
 
@@ -6461,16 +6461,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your team reviewed a sample of suggestions and judged them good. Is that an evaluation?
 
-- No. The team knows how it works, knows the catalogue, and is not who it is for.
 - Yes, expert judgement is a legitimate method.
+- No. The team knows how it works, knows the catalogue, and is not who it is for.
 - Yes, as a first pass before user sessions.
 
 <details>
 <summary>After your attempt</summary>
 
-No. The team knows how it works, knows the catalogue, and is not who it is for. — It is the judgement of the least representative available readers. Five people outside the team, marking ten suggestions each in three categories, takes an afternoon and answers the question.
-
 Yes, expert judgement is a legitimate method. — Expert judgement is legitimate about craft. Whether a suggestion is something you had not thought of is not a question an expert can answer for you.
+
+No. The team knows how it works, knows the catalogue, and is not who it is for. — It is the judgement of the least representative available readers. Five people outside the team, marking ten suggestions each in three categories, takes an afternoon and answers the question.
 
 Yes, as a first pass before user sessions. — A first pass anchors everybody. If the sessions are happening, they can happen first.
 
@@ -7123,16 +7123,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Do you need the real model to test an AI feature?
 
-- No. You need the real experience of meeting the output, including the wrong ones, and scripting gives you control over exactly the case you need to observe.
 - Yes, otherwise the outputs will not be representative.
+- No. You need the real experience of meeting the output, including the wrong ones, and scripting gives you control over exactly the case you need to observe.
 - Yes, for the sessions to be credible to participants.
 
 <details>
 <summary>After your attempt</summary>
 
-No. You need the real experience of meeting the output, including the wrong ones, and scripting gives you control over exactly the case you need to observe. — A live model will not produce a plausible-but-wrong answer on demand. Writing it by hand is how you test the case the whole design was built around.
-
 Yes, otherwise the outputs will not be representative. — Representative outputs are not what the session needs. It needs the failure case, which is rare and central.
+
+No. You need the real experience of meeting the output, including the wrong ones, and scripting gives you control over exactly the case you need to observe. — A live model will not produce a plausible-but-wrong answer on demand. Writing it by hand is how you test the case the whole design was built around.
 
 Yes, for the sessions to be credible to participants. — Participants are told the responses are prepared, and it does not reduce what you learn from watching them.
 
@@ -7153,18 +7153,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should you tell participants the responses are scripted?
 
-- Yes. Faking a working system misrepresents what they are helping with, and it costs nothing to say.
 - No, it would change how they behave.
 - Only if they ask.
+- Yes. Faking a working system misrepresents what they are helping with, and it costs nothing to say.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes. Faking a working system misrepresents what they are helping with, and it costs nothing to say. — People still behave naturally with a prototype they know is prepared. What changes is that you have not misled somebody who agreed to help you.
-
 No, it would change how they behave. — It changes very little in practice, and it is the difference between a prototype and a deception.
 
 Only if they ask. — Waiting to be asked is choosing to mislead anybody who does not.
+
+Yes. Faking a working system misrepresents what they are helping with, and it costs nothing to say. — People still behave naturally with a prototype they know is prepared. What changes is that you have not misled somebody who agreed to help you.
 
 Improve: Add the sentence about prepared responses to your consent introduction in step 2. Record the change in step 5.
 
@@ -7183,16 +7183,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A participant is about to accept a wrong suggestion. What should you do?
 
-- Nothing. Whether somebody notices unprompted is the observation the session exists for.
 - Ask whether they have checked the details.
+- Nothing. Whether somebody notices unprompted is the observation the session exists for.
 - Let them continue and mention it afterwards.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing. Whether somebody notices unprompted is the observation the session exists for. — Helping at that moment is the natural thing to do and it deletes the result. The session where you speak produces nothing usable on the main question.
-
 Ask whether they have checked the details. — That is the prompt, phrased as a question. It answers the thing you were watching for.
+
+Nothing. Whether somebody notices unprompted is the observation the session exists for. — Helping at that moment is the natural thing to do and it deletes the result. The session where you speak produces nothing usable on the main question.
 
 Let them continue and mention it afterwards. — Afterwards is fine, and during the moment is what matters.
 
@@ -7828,17 +7828,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Are risk frameworks for large organisations?
 
 - The four questions apply to a feature built by two people, and answering them takes an hour. What differs is the ceremony, not the questions.
-- Largely, since a small team cannot discharge the obligations.
 - Yes, but a simplified version is worth doing.
+- Largely, since a small team cannot discharge the obligations.
 
 <details>
 <summary>After your attempt</summary>
 
 The four questions apply to a feature built by two people, and answering them takes an hour. What differs is the ceremony, not the questions. — Who decides, who is affected, how you would know, and what happens when it goes wrong are as real for a small product as a large one. The small product usually answers them faster and more honestly.
 
-Largely, since a small team cannot discharge the obligations. — Naming an obligation you cannot discharge is the finding. Not naming it does not remove it.
-
 Yes, but a simplified version is worth doing. — The four questions are the version. There is nothing to simplify.
+
+Largely, since a small team cannot discharge the obligations. — Naming an obligation you cannot discharge is the finding. Not naming it does not remove it.
 
 Improve: Write all four functions as questions about your own feature in step 1. Record the change in step 5.
 
@@ -7857,16 +7857,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your affected list contains only the people using the feature. What is missing?
 
-- The people it acts upon without their participation, such as providers whose classes are never suggested.
 - Nothing, if the feature only affects its users.
+- The people it acts upon without their participation, such as providers whose classes are never suggested.
 - Future users, who should also be considered.
 
 <details>
 <summary>After your attempt</summary>
 
-The people it acts upon without their participation, such as providers whose classes are never suggested. — That group loses bookings on the basis of a ranking they have not seen and cannot appeal. It is also where the harm signal comes from, and a usefulness measure would score the same concentration as success.
-
 Nothing, if the feature only affects its users. — A ranking affects everybody ranked, including those ranked last.
+
+The people it acts upon without their participation, such as providers whose classes are never suggested. — That group loses bookings on the basis of a ranking they have not seen and cannot appeal. It is also where the harm signal comes from, and a usefulness measure would score the same concentration as success.
 
 Future users, who should also be considered. — Worth thinking about and not the group being missed here.
 
@@ -7887,18 +7887,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nobody currently owns what happens when a provider complains. What should the map say?
 
-- Unowned. It is a finding, and writing it down is better than quietly assigning it to yourself.
 - That you own it, since you built the feature.
 - Nothing, until somebody actually complains.
+- Unowned. It is a finding, and writing it down is better than quietly assigning it to yourself.
 
 <details>
 <summary>After your attempt</summary>
 
-Unowned. It is a finding, and writing it down is better than quietly assigning it to yourself. — Most AI harm comes from nobody owning a question rather than from a technical failure. Taking it on by default at the end of a long day produces an owner who will not be there in six months.
-
 That you own it, since you built the feature. — That may be the right outcome and it should be a decision somebody made rather than a gap you filled.
 
 Nothing, until somebody actually complains. — The first complaint is the worst moment to discover that nobody answers it.
+
+Unowned. It is a finding, and writing it down is better than quietly assigning it to yourself. — Most AI harm comes from nobody owning a question rather than from a technical failure. Taking it on by default at the end of a long day produces an owner who will not be there in six months.
 
 Improve: Mark anything nobody owns as unowned in step 3 rather than assigning it. Record the change in step 5.
 
@@ -8589,18 +8589,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does saying no make you look unhelpful?
 
-- Saying no with a reason and an alternative makes you the person whose judgement is trusted.
 - Sometimes, which is why it should be used sparingly.
 - No, if the reasoning is technical enough.
+- Saying no with a reason and an alternative makes you the person whose judgement is trusted.
 
 <details>
 <summary>After your attempt</summary>
 
-Saying no with a reason and an alternative makes you the person whose judgement is trusted. — Saying yes to everything makes you the person who builds whatever was fashionable last quarter. The alternative is the part that turns a refusal into a contribution.
-
 Sometimes, which is why it should be used sparingly. — Used sparingly usually means used too late, after the fortnight has been spent.
 
 No, if the reasoning is technical enough. — Technical reasoning persuades technical people. Cost, risk and support persuade the person deciding.
+
+Saying no with a reason and an alternative makes you the person whose judgement is trusted. — Saying yes to everything makes you the person who builds whatever was fashionable last quarter. The alternative is the part that turns a refusal into a contribution.
 
 Improve: Write the alternative alongside your argument in step 3. Record the change in step 5.
 
@@ -8620,17 +8620,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 A proposal would be accurate most of the time, and a wrong output cannot be noticed by the person affected. What do you argue?
 
 - That it should not ship at any accuracy. Noticeable and correctable comes before the accuracy question.
-- That the accuracy needs to be higher first.
 - That it needs human review of every decision.
+- That the accuracy needs to be higher first.
 
 <details>
 <summary>After your attempt</summary>
 
 That it should not ship at any accuracy. Noticeable and correctable comes before the accuracy question. — A member told their fee stands, with no idea what was considered and no route to appeal, cannot detect or correct a wrong decision. The accuracy number never enters the argument.
 
-That the accuracy needs to be higher first. — That accepts the framing and turns an objection of principle into a negotiation about a threshold.
-
 That it needs human review of every decision. — A reasonable mitigation, and it usually removes the reason for building it at all.
+
+That the accuracy needs to be higher first. — That accepts the framing and turns an objection of principle into a negotiation about a threshold.
 
 Improve: Ask the noticeable-and-correctable question first for each proposal in step 2. Record the change in step 5.
 
@@ -8649,18 +8649,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You say “our research shows nobody wants this”, from three sessions. What does that cost?
 
-- Somebody will ask which research, and overstating once discounts everything you say afterwards.
 - Nothing, since the conclusion is probably right.
 - It weakens this argument only.
+- Somebody will ask which research, and overstating once discounts everything you say afterwards.
 
 <details>
 <summary>After your attempt</summary>
 
-Somebody will ask which research, and overstating once discounts everything you say afterwards. — Three sessions establish what three people did. The honest version — the common case is three taps and a text box is slower for everybody on a phone — is checkable and stronger.
-
 Nothing, since the conclusion is probably right. — Probably right, unsupportably stated, is the combination that does the damage.
 
 It weakens this argument only. — It weakens the next three, which is the more expensive part.
+
+Somebody will ask which research, and overstating once discounts everything you say afterwards. — Three sessions establish what three people did. The honest version — the common case is three taps and a text box is slower for everybody on a phone — is checkable and stronger.
 
 Improve: Replace any overstated claim in step 3 with something checkable from your own work. Record the change in step 5.
 

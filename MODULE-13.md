@@ -467,18 +467,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have four screens and one engineer. Does that justify a design system?
 
-- Possibly not a full one. Sometimes what is needed is three settled decisions and a page of documentation.
-- Yes, because consistency always pays back.
 - No, systems are for large teams only.
+- Yes, because consistency always pays back.
+- Possibly not a full one. Sometimes what is needed is three settled decisions and a page of documentation.
 
 <details>
 <summary>After your attempt</summary>
 
-Possibly not a full one. Sometimes what is needed is three settled decisions and a page of documentation. — A system pays back when the same decisions recur across people and time. Before that it is maintenance with no return, and the honest answer is to settle the three decisions that keep drifting.
+No, systems are for large teams only. — Size is not the test. The same person re-deciding the same thing every month is a real cost, and one page may fix it.
 
 Yes, because consistency always pays back. — Consistency pays back; the machinery for producing it does not always. The question is whether the decisions recur often enough to be worth documenting.
 
-No, systems are for large teams only. — Size is not the test. The same person re-deciding the same thing every month is a real cost, and one page may fix it.
+Possibly not a full one. Sometimes what is needed is three settled decisions and a page of documentation. — A system pays back when the same decisions recur across people and time. Before that it is maintenance with no return, and the honest answer is to settle the three decisions that keep drifting.
 
 Improve: Check your three problems in step 2 are things that have actually recurred, and replace any that have not. Record the change in step 5.
 
@@ -497,16 +497,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your purpose statement says the system provides a consistent, scalable foundation. What is wrong with it?
 
-- It names nobody and no cost, so it cannot be used to decide what to build first.
 - Nothing, though it could be more specific.
+- It names nobody and no cost, so it cannot be used to decide what to build first.
 - Scalable is the wrong word for a small product.
 
 <details>
 <summary>After your attempt</summary>
 
-It names nobody and no cost, so it cannot be used to decide what to build first. — A purpose exists to settle arguments. Three problems with people and costs attached will tell you which component to build first; a description of the system will not.
-
 Nothing, though it could be more specific. — Specificity is not a polish here. Without a person and a cost, the sentence cannot answer any question you will ask it.
+
+It names nobody and no cost, so it cannot be used to decide what to build first. — A purpose exists to settle arguments. Three problems with people and costs attached will tell you which component to build first; a description of the system will not.
 
 Scalable is the wrong word for a small product. — The vocabulary is a symptom. Replacing scalable with something else leaves the same unusable sentence.
 
@@ -1240,17 +1240,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You have published six spacing values and screens still look unrelated. What is missing?
 
 - A rule for when each value applies. Six permitted values used arbitrarily is arbitrary spacing with extra steps.
-- The scale has too many values.
 - The values are not being used, so it is an adoption problem.
+- The scale has too many values.
 
 <details>
 <summary>After your attempt</summary>
 
 A rule for when each value applies. Six permitted values used arbitrarily is arbitrary spacing with extra steps. — One sentence — the gap between groups always exceeds the gap within them — decides most of the cases the scale leaves open. That sentence is the foundation; the numbers are the input to it.
 
-The scale has too many values. — Fewer values would help a little by removing choices. The rule is what makes any number of values consistent.
-
 The values are not being used, so it is an adoption problem. — They are being used, which is why this is worth noticing. Permitted and consistent are different things.
+
+The scale has too many values. — Fewer values would help a little by removing choices. The rule is what makes any number of values consistent.
 
 Improve: Add a rule for when each value applies to your spacing group in step 1, and record the change in step 5.
 
@@ -1269,18 +1269,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Foundations feel like the easy part of the system. Are they?
 
-- They are the part everything else inherits, so a weak scale or an unmeasured pair propagates into every component.
 - Yes, because the values already exist from earlier modules.
 - Yes for spacing and type, no for colour.
+- They are the part everything else inherits, so a weak scale or an unmeasured pair propagates into every component.
 
 <details>
 <summary>After your attempt</summary>
 
-They are the part everything else inherits, so a weak scale or an unmeasured pair propagates into every component. — Fixing a foundation later means touching everything built on it. That is the opposite of easy, and it is why the reasons and rules matter more here than anywhere else in the system.
-
 Yes, because the values already exist from earlier modules. — The values exist. The rules, the reasons and the measured pairs are the work, and they are what components will inherit.
 
 Yes for spacing and type, no for colour. — Colour carries the contrast measurements, and a spacing scale with no rule propagates just as widely.
+
+They are the part everything else inherits, so a weak scale or an unmeasured pair propagates into every component. — Fixing a foundation later means touching everything built on it. That is the opposite of easy, and it is why the reasons and rules matter more here than anywhere else in the system.
 
 Improve: Add the reason to any group in step 1 that has only values and a rule. Record the change in step 5.
 
@@ -1299,18 +1299,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your do-and-do-not examples are invented rather than taken from your own screens. Does it matter?
 
-- Yes. Invented wrong examples tend to be absurd, and nobody was going to make them.
 - Not really, as long as the right usage is clear.
 - It matters only if somebody checks where they came from.
+- Yes. Invented wrong examples tend to be absurd, and nobody was going to make them.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes. Invented wrong examples tend to be absurd, and nobody was going to make them. — The mistakes worth showing are the plausible ones, which means the ones you actually made. A do-not nobody was tempted by teaches nothing.
-
 Not really, as long as the right usage is clear. — The right usage is usually obvious. The wrong one is where the teaching is, and only if it is a mistake somebody would make.
 
 It matters only if somebody checks where they came from. — Nobody will check. The example will simply fail to prevent the mistake it was meant to prevent.
+
+Yes. Invented wrong examples tend to be absurd, and nobody was going to make them. — The mistakes worth showing are the plausible ones, which means the ones you actually made. A do-not nobody was tempted by teaches nothing.
 
 Improve: Replace one invented do-not in step 4 with a mistake from your own screens. Record the change in step 5.
 
@@ -2000,18 +2000,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your component specification has the visual design, the variants and the states. Is it complete?
 
-- Not yet. Content rules, keyboard behaviour and a when-not-to-use section are what make it reusable, and they are what designers most often leave out.
 - Yes, since those three cover what the component looks like in every situation.
 - Nearly, apart from the colour values.
+- Not yet. Content rules, keyboard behaviour and a when-not-to-use section are what make it reusable, and they are what designers most often leave out.
 
 <details>
 <summary>After your attempt</summary>
 
-Not yet. Content rules, keyboard behaviour and a when-not-to-use section are what make it reusable, and they are what designers most often leave out. — The visual design is one part. What lets somebody build it without asking you is the anatomy, the decided grid, the content rules and the boundaries.
-
 Yes, since those three cover what the component looks like in every situation. — They cover appearance in every situation. Nothing yet says what happens to a title of eleven words, or which key does what.
 
 Nearly, apart from the colour values. — Colour comes from the foundations. The gaps are behaviour and content.
+
+Not yet. Content rules, keyboard behaviour and a when-not-to-use section are what make it reusable, and they are what designers most often leave out. — The visual design is one part. What lets somebody build it without asking you is the anatomy, the decided grid, the content rules and the boundaries.
 
 Improve: Add the missing sections in steps 3 and 4, and record the change in step 5.
 
@@ -2031,17 +2031,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You have listed loading and error alongside compact and unavailable as variants. What goes wrong?
 
 - They are states rather than variants, so nothing says what a compact card looks like while loading.
-- Nothing, provided all five are specified.
 - The list is simply too long.
+- Nothing, provided all five are specified.
 
 <details>
 <summary>After your attempt</summary>
 
 They are states rather than variants, so nothing says what a compact card looks like while loading. — A variant is chosen at design time; a state is entered at run time. Listing them together removes the second axis, and the combinations stop being visible.
 
-Nothing, provided all five are specified. — All five being specified leaves fifteen combinations of which five are covered.
-
 The list is simply too long. — Length is not the problem. The grid is usually more cells than the list, and it answers questions the list cannot.
+
+Nothing, provided all five are specified. — All five being specified leaves fifteen combinations of which five are covered.
 
 Improve: Rebuild the grid in step 2 with variants down and states across, and decide or exclude every cell. Record the change in step 5.
 
@@ -2060,16 +2060,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A content rule says the title should be an appropriate length. What is wrong with it?
 
-- Appropriate is decided by whoever builds it, so the decision has been handed back rather than made.
 - Nothing, since the designer will review the build.
+- Appropriate is decided by whoever builds it, so the decision has been handed back rather than made.
 - It should specify a character count instead.
 
 <details>
 <summary>After your attempt</summary>
 
-Appropriate is decided by whoever builds it, so the decision has been handed back rather than made. — Lines like this survive review because nobody can disagree with them. The buildable version names the number of lines, which end survives, and why.
-
 Nothing, since the designer will review the build. — Reviewing afterwards costs a round trip on something a sentence could have settled.
+
+Appropriate is decided by whoever builds it, so the decision has been handed back rather than made. — Lines like this survive review because nobody can disagree with them. The buildable version names the number of lines, which end survives, and why.
 
 It should specify a character count instead. — A character count is one way and often the wrong one, since two lines of a proportional typeface is not a fixed count. Lines and which end survives is usually better.
 
@@ -2773,18 +2773,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You plan to add the remaining states when a screen needs them. What is wrong with that?
 
+- It is inefficient to come back to the component twice.
 - The first screen using the component under real conditions needs them, and retrofitting means changing a design that assumed they did not exist.
 - Nothing, provided the specification lists them.
-- It is inefficient to come back to the component twice.
 
 <details>
 <summary>After your attempt</summary>
 
+It is inefficient to come back to the component twice. — That is the smallest cost. The real one is the screen that has to change.
+
 The first screen using the component under real conditions needs them, and retrofitting means changing a design that assumed they did not exist. — Loading, empty and error are not rare. Building them now costs an hour on the states page; building them later costs a redesign of whatever was laid out without room for them.
 
 Nothing, provided the specification lists them. — A specified state nobody has rendered is a guess. The build is what finds out whether it is possible.
-
-It is inefficient to come back to the component twice. — That is the smallest cost. The real one is the screen that has to change.
 
 Improve: Build any state in step 2 you were going to leave until later, and record what it showed. Note the change in step 5.
 
@@ -2803,18 +2803,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A state takes an hour and will not build properly. What is the most likely explanation?
 
-- The specification is asking for two incompatible things, and no amount of building resolves a contradiction.
 - Your CSS is not good enough yet.
 - The component needs to be rebuilt from scratch.
+- The specification is asking for two incompatible things, and no amount of building resolves a contradiction.
 
 <details>
 <summary>After your attempt</summary>
 
-The specification is asking for two incompatible things, and no amount of building resolves a contradiction. — A compact variant that must also show a status is the usual shape of it. That is a design decision, and it should be recorded as an open one rather than patched at the end of the afternoon.
-
 Your CSS is not good enough yet. — Sometimes true, and it is the comfortable assumption early on. Check the specification for a contradiction before assuming it.
 
 The component needs to be rebuilt from scratch. — A rebuild against the same contradictory specification produces the same hour.
+
+The specification is asking for two incompatible things, and no amount of building resolves a contradiction. — A compact variant that must also show a status is the usual shape of it. That is a design decision, and it should be recorded as an open one rather than patched at the end of the afternoon.
 
 Improve: Write that state into the hard-to-build field in step 2 with what it suggests, and into the specification problems in step 5. Record the change.
 
@@ -2834,17 +2834,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 The card needs a 6 pixel gap and your scale offers 4 and 8. What should you do?
 
 - Try 4 and 8 first. If neither works, that is a finding about the foundations rather than a reason to type 6.
-- Use 6, since the component has to look right.
 - Redesign the card so it does not need the gap.
+- Use 6, since the component has to look right.
 
 <details>
 <summary>After your attempt</summary>
 
 Try 4 and 8 first. If neither works, that is a finding about the foundations rather than a reason to type 6. — Usually one of them works and nobody can tell. When neither does, the scale genuinely lacks a step, and that belongs on the foundations page with a reason rather than inside one component.
 
-Use 6, since the component has to look right. — A raw value inside a component built from tokens is the first crack. The next one is easier to justify, and by the tenth the system permits everything.
-
 Redesign the card so it does not need the gap. — Possible and usually excessive. Trying the two neighbouring values takes thirty seconds.
+
+Use 6, since the component has to look right. — A raw value inside a component built from tokens is the first crack. The next one is easier to justify, and by the tenth the system permits everything.
 
 Improve: Record any value you needed in step 1 rather than adding it, and decide in step 5 whether the component or the foundations changes. Note the change.
 
@@ -3547,18 +3547,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Two things look almost identical. Is that a reason to make one a variant of the other?
 
-- No. Similar appearance is what a shared foundation produces, and it says nothing about what the reader is doing with each one.
-- Yes, since reusing the markup is simpler.
 - Yes, provided the differences can be handled with options.
+- Yes, since reusing the markup is simpler.
+- No. Similar appearance is what a shared foundation produces, and it says nothing about what the reader is doing with each one.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Similar appearance is what a shared foundation produces, and it says nothing about what the reader is doing with each one. — A tool card offers you something to choose; a booking summary is a record of something you own. The boxes look the same because both use your spacing and type.
+Yes, provided the differences can be handled with options. — Handled with options is the description of the problem. Each option is a place the two jobs are pulling apart.
 
 Yes, since reusing the markup is simpler. — Simpler this week. Reuse for a different job produces conditional behaviour, which is harder to maintain than two clear components.
 
-Yes, provided the differences can be handled with options. — Handled with options is the description of the problem. Each option is a place the two jobs are pulling apart.
+No. Similar appearance is what a shared foundation produces, and it says nothing about what the reader is doing with each one. — A tool card offers you something to choose; a booking summary is a record of something you own. The boxes look the same because both use your spacing and type.
 
 Improve: Answer the job question first for each case in step 2, before anything about appearance. Record the change in step 5.
 
@@ -3577,18 +3577,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your components has seven variants. What does that suggest?
 
-- That it is probably a family of related components rather than one component, and nobody can hold seven in their head.
-- That the component is unusually flexible, which is good.
 - That the variants should be reduced to four by removing three.
+- That the component is unusually flexible, which is good.
+- That it is probably a family of related components rather than one component, and nobody can hold seven in their head.
 
 <details>
 <summary>After your attempt</summary>
 
-That it is probably a family of related components rather than one component, and nobody can hold seven in their head. — Past about four, the abstraction is usually carrying more than one job. Splitting it normally shortens both specifications and removes conditional behaviour.
+That the variants should be reduced to four by removing three. — Sometimes right, and it assumes the three are unnecessary rather than that two jobs are present.
 
 That the component is unusually flexible, which is good. — Flexible and unpredictable are the same property described two ways. Screens start behaving differently for reasons nobody can explain.
 
-That the variants should be reduced to four by removing three. — Sometimes right, and it assumes the three are unnecessary rather than that two jobs are present.
+That it is probably a family of related components rather than one component, and nobody can hold seven in their head. — Past about four, the abstraction is usually carrying more than one job. Splitting it normally shortens both specifications and removes conditional behaviour.
 
 Improve: Examine anything over four in step 3 and say whether it is a family. Record the change in step 5.
 
@@ -3607,16 +3607,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is reuse always better?
 
-- No. Reusing a component for a different job creates conditional behaviour and screens that behave inconsistently for reasons nobody can explain.
 - Yes, since every reuse saves maintenance.
+- No. Reusing a component for a different job creates conditional behaviour and screens that behave inconsistently for reasons nobody can explain.
 - Yes, unless the visual difference is large.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Reusing a component for a different job creates conditional behaviour and screens that behave inconsistently for reasons nobody can explain. — Reuse is better when the job is the same. When it is not, two clear components are cheaper to maintain than one with a growing set of conditions.
-
 Yes, since every reuse saves maintenance. — It saves a component and adds conditions. Past a certain number of conditions, the shared component costs more than the two it replaced.
+
+No. Reusing a component for a different job creates conditional behaviour and screens that behave inconsistently for reasons nobody can explain. — Reuse is better when the job is the same. When it is not, two clear components are cheaper to maintain than one with a growing set of conditions.
 
 Yes, unless the visual difference is large. — Visual difference is the least reliable signal here. The job is the one that matters.
 
@@ -4292,16 +4292,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your documentation opens with what the component looks like. What is wrong with that order?
 
-- Readers arrive asking whether this is the component they need, and appearance does not answer it.
 - Nothing, since appearance is what identifies a component.
+- Readers arrive asking whether this is the component they need, and appearance does not answer it.
 - It is fine if the page is short.
 
 <details>
 <summary>After your attempt</summary>
 
-Readers arrive asking whether this is the component they need, and appearance does not answer it. — When to use, when not to, and the alternative answer the arriving question in fifteen seconds. Appearance is what the live example shows a moment later.
-
 Nothing, since appearance is what identifies a component. — It identifies it and does not tell anybody whether it fits their screen, which is what they are deciding.
+
+Readers arrive asking whether this is the component they need, and appearance does not answer it. — When to use, when not to, and the alternative answer the arriving question in fifteen seconds. Appearance is what the live example shows a moment later.
 
 It is fine if the page is short. — Short pages get skimmed from the top, so the order matters more rather than less.
 
@@ -4322,18 +4322,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have written an excellent content guidelines document covering every component. Why do titles still arrive too long?
 
-- Because the person typing is looking at the card, and the guidance is somewhere else describing a situation rather than the one in front of them.
-- Because the guidelines have not been read.
 - Because the rule needs enforcing rather than documenting.
+- Because the guidelines have not been read.
+- Because the person typing is looking at the card, and the guidance is somewhere else describing a situation rather than the one in front of them.
 
 <details>
 <summary>After your attempt</summary>
 
-Because the person typing is looking at the card, and the guidance is somewhere else describing a situation rather than the one in front of them. — Three lines under the live example do what eleven good pages elsewhere cannot. The general document is still the right place for the things that genuinely are general.
+Because the rule needs enforcing rather than documenting. — Enforcement is a different conversation, and a rule nobody can see while working is hard to enforce fairly.
 
 Because the guidelines have not been read. — They usually have, once, months ago. Reading is not the same as having it to hand while typing.
 
-Because the rule needs enforcing rather than documenting. — Enforcement is a different conversation, and a rule nobody can see while working is hard to enforce fairly.
+Because the person typing is looking at the card, and the guidance is somewhere else describing a situation rather than the one in front of them. — Three lines under the live example do what eleven good pages elsewhere cannot. The general document is still the right place for the things that genuinely are general.
 
 Improve: Move the length and truncation guidance onto the component pages in step 3, and say where. Record the change in step 5.
 
@@ -4352,18 +4352,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your reader asked a question you could not answer either. What kind of finding is that?
 
-- A decision nobody has made, which is the most valuable thing this test produces.
-- A gap in the documentation to fill later.
 - A sign the component is not ready to be documented.
+- A gap in the documentation to fill later.
+- A decision nobody has made, which is the most valuable thing this test produces.
 
 <details>
 <summary>After your attempt</summary>
 
-A decision nobody has made, which is the most valuable thing this test produces. — It cannot be fixed by writing, because there is nothing to write yet. Left alone it gets decided accidentally, on a screen, by whoever meets it first.
+A sign the component is not ready to be documented. — Nothing is ever fully decided before documentation. The value here is that the gap has surfaced deliberately.
 
 A gap in the documentation to fill later. — Filling it means deciding it, and calling it a documentation gap hides that a design decision is outstanding.
 
-A sign the component is not ready to be documented. — Nothing is ever fully decided before documentation. The value here is that the gap has surfaced deliberately.
+A decision nobody has made, which is the most valuable thing this test produces. — It cannot be fixed by writing, because there is nothing to write yet. Left alone it gets decided accidentally, on a screen, by whoever meets it first.
 
 Improve: Record any unanswerable question in step 4 as an open decision rather than a documentation task. Note the change in step 5.
 
@@ -5033,18 +5033,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Governance sounds like bureaucracy for a system with one designer. Is it?
 
+- No, and it should be as thorough as possible.
 - A paragraph naming the route, the decider and the response time is not bureaucracy, and skipping it costs more.
 - Yes, for a system this small it can be skipped.
-- No, and it should be as thorough as possible.
 
 <details>
 <summary>After your attempt</summary>
 
+No, and it should be as thorough as possible. — Thorough governance on a small system is the version that genuinely does become bureaucracy. One page is the target.
+
 A paragraph naming the route, the decider and the response time is not bureaucracy, and skipping it costs more. — Without a route in, people fork the system quietly, and you find out weeks later on a screen. The page can be one page.
 
 Yes, for a system this small it can be skipped. — Even alone, you are the person in three months who will not remember why something was rejected. The log is for that person.
-
-No, and it should be as thorough as possible. — Thorough governance on a small system is the version that genuinely does become bureaucracy. One page is the target.
 
 Improve: Check your governance page fits on one page in steps 1 to 3, and cut anything that does not decide something. Record the change in step 5.
 
@@ -5063,18 +5063,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your governance has careful criteria and says proposals will be reviewed regularly. What will happen?
 
-- Somebody will wait, get no answer, and build their own version on their screen.
-- Proposals will accumulate until you have time for them.
 - Nothing, since the criteria are the important part.
+- Proposals will accumulate until you have time for them.
+- Somebody will wait, get no answer, and build their own version on their screen.
 
 <details>
 <summary>After your attempt</summary>
 
-Somebody will wait, get no answer, and build their own version on their screen. — Waiting is what makes people route around a system, more than being refused. A number of days and a rule for silence are what the page is missing.
+Nothing, since the criteria are the important part. — Criteria decide what gets in once somebody is deciding. The timing decides whether anybody uses the route at all.
 
 Proposals will accumulate until you have time for them. — They will accumulate somewhere else: on screens, as components nobody documented.
 
-Nothing, since the criteria are the important part. — Criteria decide what gets in once somebody is deciding. The timing decides whether anybody uses the route at all.
+Somebody will wait, get no answer, and build their own version on their screen. — Waiting is what makes people route around a system, more than being refused. A number of days and a rule for silence are what the page is missing.
 
 Improve: Put a number of days and a rule for no response into step 2, and record the change in step 5.
 
@@ -5093,18 +5093,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You rejected a proposal and recorded only the decision. What is missing?
 
+- An apology, so the proposer is not discouraged.
 - The reason, without which the same proposal returns in six weeks and gets argued from scratch.
 - Nothing, since the answer was no.
-- An apology, so the proposer is not discouraged.
 
 <details>
 <summary>After your attempt</summary>
 
+An apology, so the proposer is not discouraged. — A clear reason is what stops it feeling arbitrary. Tone helps and is not the missing piece.
+
 The reason, without which the same proposal returns in six weeks and gets argued from scratch. — A rejection with a reason can be pointed at. A rejection without one looks like a mood, and the proposer is entitled to try again when the mood might differ.
 
 Nothing, since the answer was no. — The answer is the smallest part. What it rests on is what makes it durable.
-
-An apology, so the proposer is not discouraged. — A clear reason is what stops it feeling arbitrary. Tone helps and is not the missing piece.
 
 Improve: Write the reason beside the rejection in step 5, in the words you would use if it were raised again. Record the change.
 
@@ -5801,16 +5801,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Renaming one token is a one-word edit. Is it a patch?
 
-- No. Size is irrelevant; effect is what counts, and everybody using the old name has to change.
 - Yes, since nothing about the product looks different.
+- No. Size is irrelevant; effect is what counts, and everybody using the old name has to change.
 - Yes, if you also update all the uses yourself.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Size is irrelevant; effect is what counts, and everybody using the old name has to change. — A rename fails silently: the value falls back and things quietly lose their tint. That is a breaking change however little you typed.
-
 Yes, since nothing about the product looks different. — Nothing looks different in your file, where you also changed the uses. Everywhere else, something has quietly stopped working.
+
+No. Size is irrelevant; effect is what counts, and everybody using the old name has to change. — A rename fails silently: the value falls back and things quietly lose their tint. That is a breaking change however little you typed.
 
 Yes, if you also update all the uses yourself. — You can update the ones you can see. The classification is about everybody, including the screen somebody built last month.
 
@@ -5831,18 +5831,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You are changing the card’s default padding from 16 to 12. Nothing breaks. What is it?
 
-- Major. Every existing card changes appearance without anybody asking for it.
-- Minor, since nothing stops working.
 - Patch, since it is a refinement.
+- Minor, since nothing stops working.
+- Major. Every existing card changes appearance without anybody asking for it.
 
 <details>
 <summary>After your attempt</summary>
 
-Major. Every existing card changes appearance without anybody asking for it. — A changed default arrives everywhere at once. Nothing stops working, and every screen using the component now looks different from the day it was signed off.
+Patch, since it is a refinement. — Patch is for fixing something that was wrong. This is a different decision, applied retrospectively to everything.
 
 Minor, since nothing stops working. — Minor means something was added and existing use is untouched. Existing use is exactly what changed here.
 
-Patch, since it is a refinement. — Patch is for fixing something that was wrong. This is a different decision, applied retrospectively to everything.
+Major. Every existing card changes appearance without anybody asking for it. — A changed default arrives everywhere at once. Nothing stops working, and every screen using the component now looks different from the day it was signed off.
 
 Improve: Check whether any of your three changes alters a default, and reclassify it. Record the change in step 5.
 
@@ -5861,16 +5861,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your change note says what changed and why. Is that enough?
 
-- No. What the reader must do, and where, is the part they need and the part written last.
 - Yes, since they can search for it themselves.
+- No. What the reader must do, and where, is the part they need and the part written last.
 - Yes, provided the change is in the changelog.
 
 <details>
 <summary>After your attempt</summary>
 
-No. What the reader must do, and where, is the part they need and the part written last. — A note without a list of affected places is a warning. With the list it is an instruction somebody can follow in ten minutes.
-
 Yes, since they can search for it themselves. — They can, once they know to. The note is what tells them, and searching is the work you already did.
+
+No. What the reader must do, and where, is the part they need and the part written last. — A note without a list of affected places is a warning. With the list it is an instruction somebody can follow in ten minutes.
 
 Yes, provided the change is in the changelog. — The changelog says a change happened. The note says what to do about it.
 
@@ -6532,18 +6532,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your migrated screen reached 100 per cent adoption. Is that a good result?
 
+- Yes, provided the screen is representative.
 - It depends entirely on whether it was a real screen. A demonstration screen measures the system against itself.
 - Yes, since full coverage is the goal.
-- Yes, provided the screen is representative.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, provided the screen is representative. — Representative is the whole question, and a screen built to show the system off is not.
+
 It depends entirely on whether it was a real screen. A demonstration screen measures the system against itself. — A real screen built before the system existed is the only one that can tell you about fit. Sixty-two per cent with two named gaps is far more useful than a hundred with none.
 
 Yes, since full coverage is the goal. — Full coverage of a screen designed around the system is guaranteed rather than achieved.
-
-Yes, provided the screen is representative. — Representative is the whole question, and a screen built to show the system off is not.
 
 Improve: Migrate a screen built before the system existed in step 1, and record its figure. Note the change in step 5.
 
@@ -6563,17 +6563,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Adoption is low on one screen. Is that a rollout problem?
 
 - It is a fit problem first. If the system does not cover the real screens, no amount of advocacy changes the number.
-- Yes, people need to be persuaded to use it.
 - Yes, and better documentation would fix it.
+- Yes, people need to be persuaded to use it.
 
 <details>
 <summary>After your attempt</summary>
 
 It is a fit problem first. If the system does not cover the real screens, no amount of advocacy changes the number. — The blockers list is what separates the two. Missing components and wrong rules are fit; a system that covers everything and is still unused is rollout.
 
-Yes, people need to be persuaded to use it. — Persuasion cannot supply a component that does not exist. Read the blockers before deciding it is about willingness.
-
 Yes, and better documentation would fix it. — Documentation helps somebody use what exists. It does not help with what is missing.
+
+Yes, people need to be persuaded to use it. — Persuasion cannot supply a component that does not exist. Read the blockers before deciding it is about willingness.
 
 Improve: Make sure every blocker in step 4 names what the screen needed, so fit and rollout can be told apart. Record the change in step 5.
 
@@ -6592,18 +6592,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 To reach full adoption you would have to flatten a status distinction your research showed people using. Should you?
 
-- Not silently. Changing the product to fit the system is allowed, and it must be recorded when it removes something that works.
 - Yes, consistency is worth more than a small distinction.
 - No, the system should never change a product.
+- Not silently. Changing the product to fit the system is allowed, and it must be recorded when it removes something that works.
 
 <details>
 <summary>After your attempt</summary>
 
-Not silently. Changing the product to fit the system is allowed, and it must be recorded when it removes something that works. — The adoption figure is not the goal; it is a measure. Trading a working distinction for a higher number is a real decision, and it deserves a line rather than a quiet edit.
-
 Yes, consistency is worth more than a small distinction. — It may be, and that is the argument to have out loud. Made silently, it looks like the system quietly deciding the product.
 
 No, the system should never change a product. — Systems do simplify products, often usefully. The rule is that it is visible.
+
+Not silently. Changing the product to fit the system is allowed, and it must be recorded when it removes something that works. — The adoption figure is not the goal; it is a measure. Trading a working distinction for a higher number is a real decision, and it deserves a line rather than a quiet edit.
 
 Improve: Record any distinction you removed in the research-cost field in step 4, and note the change in step 5.
 
@@ -7319,18 +7319,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You wrote “all components are accessible” as your guarantee. What does it cost you?
 
+- It is too vague to be useful, but harmless.
 - It promises things no component can own, so it transfers responsibility you cannot carry onto a sentence you cannot keep.
 - Nothing, provided every component really has been checked.
-- It is too vague to be useful, but harmless.
 
 <details>
 <summary>After your attempt</summary>
 
+It is too vague to be useful, but harmless. — It is not harmless. Somebody will build a page on the strength of it.
+
 It promises things no component can own, so it transfers responsibility you cannot carry onto a sentence you cannot keep. — Four narrow statements with conditions are less impressive and actually true. The broad version is read as covering the page, which is where the failures are.
 
 Nothing, provided every component really has been checked. — Checked against what? The sentence names no conditions, so it covers cases nobody tested.
-
-It is too vague to be useful, but harmless. — It is not harmless. Somebody will build a page on the strength of it.
 
 Improve: Add the conditions to each guarantee in step 2, naming surfaces, variants or states. Record the change in step 5.
 
@@ -7350,17 +7350,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 One of your guarantees has no check attached. Does it matter?
 
 - Yes. Without a re-runnable check it decays silently the first time the component changes.
-- Not if you tested it once when you wrote it.
 - Not if the guarantee is obviously true.
+- Not if you tested it once when you wrote it.
 
 <details>
 <summary>After your attempt</summary>
 
 Yes. Without a re-runnable check it decays silently the first time the component changes. — A guarantee is a promise you keep re-making. The check is what makes it survive the next edit, and it also gives the next person a way to verify you.
 
-Not if you tested it once when you wrote it. — Once is when it was true. Components change, and nothing will announce that the guarantee has stopped holding.
-
 Not if the guarantee is obviously true. — Obviously true things are exactly what nobody rechecks after a change.
+
+Not if you tested it once when you wrote it. — Once is when it was true. Components change, and nothing will announce that the guarantee has stopped holding.
 
 Improve: Write a check for every guarantee in step 3 and run all of them today. Record the change in step 5.
 
@@ -8019,16 +8019,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is the design file the design system?
 
-- It is one representation. What people encounter is the built product, and a system whose authority lives in a file most of the team cannot open is overtaken within weeks.
 - Yes, since that is where the design decisions are made.
+- It is one representation. What people encounter is the built product, and a system whose authority lives in a file most of the team cannot open is overtaken within weeks.
 - Yes for designers, and the code is the system for engineers.
 
 <details>
 <summary>After your attempt</summary>
 
-It is one representation. What people encounter is the built product, and a system whose authority lives in a file most of the team cannot open is overtaken within weeks. — The file is genuinely useful. It stops being the system the first time a change is made in the build that afternoon and never reaches the file.
-
 Yes, since that is where the design decisions are made. — Decisions are made there and they are not what anybody uses. Six weeks of small build changes and the file describes something that does not exist.
+
+It is one representation. What people encounter is the built product, and a system whose authority lives in a file most of the team cannot open is overtaken within weeks. — The file is genuinely useful. It stops being the system the first time a change is made in the build that afternoon and never reaches the file.
 
 Yes for designers, and the code is the system for engineers. — Two authorities is the same as none, because nothing settles a disagreement.
 
@@ -8050,17 +8050,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 The build and the documentation disagree, and you have named the build authoritative. Is the build automatically right?
 
 - No. The authority decides which is true today; whether it is right is a separate question.
-- Yes, that is what authoritative means.
 - Yes, unless the documentation has a reason recorded.
+- Yes, that is what authoritative means.
 
 <details>
 <summary>After your attempt</summary>
 
 No. The authority decides which is true today; whether it is right is a separate question. — A truncation rule reasoned from real titles and built to one line is a defect in the build. The authority tells you where the fix goes rather than who was correct.
 
-Yes, that is what authoritative means. — It means the build is what people are getting. Two of the drifts you find will be things the build got wrong.
-
 Yes, unless the documentation has a reason recorded. — A recorded reason helps you decide, and the principle holds whether or not one was written down.
+
+Yes, that is what authoritative means. — It means the build is what people are getting. Two of the drifts you find will be things the build got wrong.
 
 Improve: For each drift in step 3, say which version is correct as well as which is authoritative. Record the change in step 5.
 
@@ -8079,18 +8079,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You fixed three drifts. Will the audit have to be repeated?
 
-- Yes, because drift is inevitable. The useful change is a process that updates every representation in the same change.
-- No, now that the representations agree.
 - Only if somebody else joins the work.
+- No, now that the representations agree.
+- Yes, because drift is inevitable. The useful change is a process that updates every representation in the same change.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, because drift is inevitable. The useful change is a process that updates every representation in the same change. — Fixing today’s three is maintenance. The process is what decides whether the next three appear in a fortnight or in a year.
+Only if somebody else joins the work. — One person produces drift perfectly well, by making a change in the build at four o’clock and meaning to update the file tomorrow.
 
 No, now that the representations agree. — They agree this afternoon. The next urgent change made in one place starts it again.
 
-Only if somebody else joins the work. — One person produces drift perfectly well, by making a change in the build at four o’clock and meaning to update the file tomorrow.
+Yes, because drift is inevitable. The useful change is a process that updates every representation in the same change. — Fixing today’s three is maintenance. The process is what decides whether the next three appear in a fortnight or in a year.
 
 Improve: Write the change process into step 4 and add it to the governance page. Record the change in step 5.
 
@@ -8764,17 +8764,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Is a bigger system a more mature system?
 
 - No. A system covering the real cases in twelve components is more mature than one with sixty nobody can navigate, and maturity shows in what has been removed.
-- Generally yes, since more coverage helps more cases.
 - Yes, if the components are well documented.
+- Generally yes, since more coverage helps more cases.
 
 <details>
 <summary>After your attempt</summary>
 
 No. A system covering the real cases in twelve components is more mature than one with sixty nobody can navigate, and maturity shows in what has been removed. — Every component is maintained, documented, versioned and read by everybody learning the system. An unused one takes all of that and returns nothing.
 
-Generally yes, since more coverage helps more cases. — Coverage of cases you have helps. Coverage of cases other products have is cost.
-
 Yes, if the components are well documented. — Documenting something nobody uses is more of the same cost, done more carefully.
+
+Generally yes, since more coverage helps more cases. — Coverage of cases you have helps. Coverage of cases other products have is cost.
 
 Improve: Deprecate at least one unused component in step 3, through your governance route. Record the change in step 5.
 
@@ -8793,18 +8793,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You reviewed the system and listed what it was missing compared with other design systems. What is wrong with that?
 
-- It produces components for a product you do not have. The useful review searches your own screens for what was built outside the system.
-- Nothing, since those components will be needed eventually.
 - It is a reasonable starting point to prioritise from.
+- Nothing, since those components will be needed eventually.
+- It produces components for a product you do not have. The useful review searches your own screens for what was built outside the system.
 
 <details>
 <summary>After your attempt</summary>
 
-It produces components for a product you do not have. The useful review searches your own screens for what was built outside the system. — A modal, tabs and pagination are what component sets usually contain. Your two real gaps were a flattened status distinction and a compact list row, and neither would appear on that list.
+It is a reasonable starting point to prioritise from. — It prioritises a list of things nobody has asked for above two things somebody has already worked around.
 
 Nothing, since those components will be needed eventually. — Eventually is what governance is for. Anticipation is how a system acquires components nobody uses.
 
-It is a reasonable starting point to prioritise from. — It prioritises a list of things nobody has asked for above two things somebody has already worked around.
+It produces components for a product you do not have. The useful review searches your own screens for what was built outside the system. — A modal, tabs and pagination are what component sets usually contain. Your two real gaps were a flattened status distinction and a compact list row, and neither would appear on that list.
 
 Improve: Search your screens for workarounds in step 2 and let those decide the additions. Record the change in step 5.
 
@@ -8823,18 +8823,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You are deprecating an unused component. Does it need to go through governance?
 
-- Yes. Removal is a major change, and a process its owner bypasses is not a process.
-- No, since nobody is using it.
 - No, governance is for additions.
+- No, since nobody is using it.
+- Yes. Removal is a major change, and a process its owner bypasses is not a process.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes. Removal is a major change, and a process its owner bypasses is not a process. — It is also how you find out that something you believe is unused is used on a page you had forgotten. The route and the version both matter.
+No, governance is for additions. — Removals break things, which is more than most additions do.
 
 No, since nobody is using it. — That is your view of who is using it, which is the thing a route exists to check.
 
-No, governance is for additions. — Removals break things, which is more than most additions do.
+Yes. Removal is a major change, and a process its owner bypasses is not a process. — It is also how you find out that something you believe is unused is used on a page you had forgotten. The route and the version both matter.
 
 Improve: Put the deprecation through your governance route in step 3 and record it in the log. Note the change in step 5.
 

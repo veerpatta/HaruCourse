@@ -10,6 +10,14 @@ const conditional: Record<string, {field:string; value:string; answers:string[]}
  'm05-l08-v1': [{field:'run-status',value:'No participant: protocol submitted with a dated gap',answers:['gap-note']}],
 };
 
+// Permanent record key for the optional transfer answer, and the formative
+// answer key that records the learner compared it with the anchors.
+export const transferField: WorksheetField = {
+ id:'transfer-decision', label:'Your decision for the new case, and why', kind:'long', optional:true,
+ hint:'Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.',
+};
+export const TRANSFER_COMPARE = 'transfer-compare';
+
 function laterModulePlan(input: Lesson): ActionPlan | undefined {
  const moduleNumber=Number(input.module?.slice(1));
  const a=input.apprenticeship;
@@ -32,8 +40,11 @@ function laterModulePlan(input: Lesson): ActionPlan | undefined {
 }
 
 export function withLessonActions(input: Lesson): Lesson {
- const plan = actionPlans[input.id] || laterModulePlan(input);
- if (!plan) return input; // Lesson 1's permanent action IDs remain untouched.
+ const found = actionPlans[input.id] || laterModulePlan(input);
+ if (!found) return input; // Lesson 1's permanent action IDs remain untouched.
+ // Material authored beside the guided overlay joins any reviewed plan material.
+ const extra = input.apprenticeship?.material || [];
+ const plan:ActionPlan = actionPlans[input.id] && extra.length ? {...found,material:[...(found.material||[]),...extra]} : found;
  const field = (f: WorksheetField): WorksheetField => {
    const rule=conditional[input.id]?.find(c=>c.answers.includes(f.id));
    return {...f, ...(plan.optional?.includes(f.id) ? {optional:true} : {}),
@@ -44,6 +55,13 @@ export function withLessonActions(input: Lesson): Lesson {
      ...(f.id==='improvement-made' ? {hint:'Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.'} : {})};
  };
  const a={...input.apprenticeship!,worksheet:input.apprenticeship!.worksheet!.map(s=>({...s,fields:s.fields.map(field)}))};
+ // "Use it on a new case": one optional explained decision on an unfamiliar
+ // scenario, saved under one permanent field. It joins the last step so the
+ // checker, the documents and the reader all see the same field once.
+ if(a.transfer && a.guide?.length===5){
+  a.worksheet=[...a.worksheet,{id:'transfer-case',title:'Use it on a new case',intro:'Optional for finishing practice. A reviewer needs it before recording that you can use this skill independently.',fields:[transferField]}];
+  a.guide=a.guide.map((g,i)=>i===4?{...g,fields:[...(g.fields||[]),transferField.id]}:g);
+ }
  if(input.id==='m05-l06-v1') a.guide=a.guide!.map((g,i)=>i===2?{...g,enough:'For an interview, keep their words separate from your interpretation. For rehearsal, leave Said empty and record only guide wording risks and the missing access.'}:g);
  // The action route replaces the earlier optional-code invitation before web foundations.
  const l:Lesson={...input,apprenticeship:a,actionPlan:plan,freeToolPath:plan.start,
@@ -82,7 +100,7 @@ export function actionQuestion(l:Lesson,a:LessonAction) {
  if(a.kind==='sort') {
    const sorter=a.guideIndex===undefined ? guide?.find(g=>g.sorter)?.sorter : guide?.[a.guideIndex]?.sorter;
    const item=sorter?.items[a.index!];
-   return sorter && item && {id:a.answerId || `sort-${item.id}`,question:item.text,options:sorter.options.map(label=>({label,feedback:item.feedback[label]}))};
+   return sorter && item && {id:a.answerId || `sort-${item.id}`,question:item.text,options:sorter.options.map(label=>({label,feedback:item.feedback[label],...(label===item.answer?{correct:true as const}:{})}))};
  }
 }
 

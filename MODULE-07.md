@@ -229,21 +229,21 @@ Six made up endings, recorded over one week at a small class-booking service. A:
 
 Your flow currently ends at A only. Which ending belongs on it next, and why?
 
+- All six at once, so that nothing is missed.
 - B, because ringing the provider is how this service most often ends, and a flow that cannot show it is describing a different product.
 - D, because abandoning at the price is the ending that costs money.
 - None of them, because these are endings rather than steps.
-- All six at once, so that nothing is missed.
 
 <details>
 <summary>After your attempt</summary>
+
+All six at once, so that nothing is missed. — Six at once on one page usually produces a drawing nobody can read. Add the evidenced endings first, and let the rest wait until each has a source.
 
 B, because ringing the provider is how this service most often ends, and a flow that cannot show it is describing a different product. — The endings that happen most are the ones the design has to account for. Drawing B forces a decision about what the screen says to someone who is about to pick up the phone.
 
 D, because abandoning at the price is the ending that costs money. — Abandonment does belong on the flow, and you have no evidence yet that it happens more often than the phone call. Draw both, and put the evidenced one first.
 
 None of them, because these are endings rather than steps. — An exit is one of the four kinds of node. A flow with a single ending is a happy path, and the other five endings are where people actually are.
-
-All six at once, so that nothing is missed. — Six at once on one page usually produces a drawing nobody can read. Add the evidenced endings first, and let the rest wait until each has a source.
 
 Add every ending you have evidence for to your own flow, and write the source beside each one.
 
@@ -369,18 +369,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your flow has one entry point and one ending, and you plan to add the error paths once the screens are designed. What goes wrong?
 
+- The flow becomes too long to fit on one page.
 - The screens get laid out on the assumption that everything worked, so the error states end up wherever there is space left.
 - Nothing, as long as the error paths are written before anything is built.
-- The flow becomes too long to fit on one page.
 
 <details>
 <summary>After your attempt</summary>
 
+The flow becomes too long to fit on one page. — Length is a drawing problem and you can split the page. The real cost is design decisions being made by accident.
+
 The screens get laid out on the assumption that everything worked, so the error states end up wherever there is space left. — A pending message needs three lines somewhere a person is already looking. Added late, it lands at the top of a page nobody reads.
 
 Nothing, as long as the error paths are written before anything is built. — Writing them before the build is better than never, and by then the layout has already been settled. The recovery paths are what the layout has to hold.
-
-The flow becomes too long to fit on one page. — Length is a drawing problem and you can split the page. The real cost is design decisions being made by accident.
 
 Improve: Add every ending you have evidence for to the exits box in step 3, and record what you added in step 5.
 
@@ -400,17 +400,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You drew “is a place still available?” as a fork the person chooses. Why is that a problem?
 
 - It is a system decision, and drawing it as a choice hides that the person can meet it with no warning.
-- It is not a problem, because the person does choose whether to carry on.
 - It should come off the flow, because availability belongs to the back end.
+- It is not a problem, because the person does choose whether to carry on.
 
 <details>
 <summary>After your attempt</summary>
 
 It is a system decision, and drawing it as a choice hides that the person can meet it with no warning. — The person never sees the fork. What they see is a place that was there a minute ago and is not now, which is a message somebody has to write.
 
-It is not a problem, because the person does choose whether to carry on. — They choose after the answer arrives. The fork itself is the system checking, and the design work is what the losing branch says.
-
 It should come off the flow, because availability belongs to the back end. — Its consequences are entirely in the interface. Leaving it off the flow is how the worst message in a product ends up unwritten.
+
+It is not a problem, because the person does choose whether to carry on. — They choose after the answer arrives. The fork itself is the system checking, and the design work is what the losing branch says.
 
 Improve: Move any fork the person never sees into the system-decisions box in step 3, and record the change in step 5.
 
@@ -429,16 +429,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your third screen asks for a payment method, and your flow carries no prerequisite notes. What is the risk?
 
-- You cannot see whether the person could possibly have that thing yet, which is the commonest structural fault in a first flow.
 - The order is fine as long as the fields are optional.
+- You cannot see whether the person could possibly have that thing yet, which is the commonest structural fault in a first flow.
 - It only matters where payment is involved.
 
 <details>
 <summary>After your attempt</summary>
 
-You cannot see whether the person could possibly have that thing yet, which is the commonest structural fault in a first flow. — Prerequisites written on the flow are what make the fault visible. Without them the screen order looks reasonable right up until someone tries it.
-
 The order is fine as long as the fields are optional. — An optional field still asks, and an ask a person cannot answer reads as a wall whether or not it is required.
+
+You cannot see whether the person could possibly have that thing yet, which is the commonest structural fault in a first flow. — Prerequisites written on the flow are what make the fault visible. Without them the screen order looks reasonable right up until someone tries it.
 
 It only matters where payment is involved. — It applies to anything the person has to be holding: a reference, a number they do not carry, a decision from someone else.
 
@@ -1174,17 +1174,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your first screen is hard to understand, so you plan a short tour explaining it. What is wrong with that?
 
 - A screen that needs a tour is itself the problem, and the tour hides it while being forgotten anyway.
-- Nothing, as long as the tour can be skipped.
 - It should be shown on the second visit instead.
+- Nothing, as long as the tour can be skipped.
 
 <details>
 <summary>After your attempt</summary>
 
 A screen that needs a tour is itself the problem, and the tour hides it while being forgotten anyway. — People read overlays as an obstacle and remember almost none of it. The work belongs in the screen: sensible defaults, a filled-in example, wording a person recognises.
 
-Nothing, as long as the tour can be skipped. — A skippable tour gets skipped, and the screen is still hard to understand for the person who skipped it.
-
 It should be shown on the second visit instead. — Moving it only changes when it is ignored. An explanation works at the moment of need, attached to the thing it explains.
+
+Nothing, as long as the tour can be skipped. — A skippable tour gets skipped, and the screen is still hard to understand for the person who skipped it.
 
 Improve: If anything in your must-know list in step 2 can only be explained by a tour, move it into the screen wording in step 4, and record the change in step 5.
 
@@ -1203,18 +1203,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your redrawn path has the same number of screens and fields before the first outcome as the old one. What does that tell you?
 
+- Counting is the wrong measure; what matters is how the path feels.
 - Nothing was actually deferred; the items were rearranged.
 - The old path was already as short as it could be.
-- Counting is the wrong measure; what matters is how the path feels.
 
 <details>
 <summary>After your attempt</summary>
 
+Counting is the wrong measure; what matters is how the path feels. — Feel is what let the original path grow. The count is the one part of this you can put in front of someone else without making a claim about users.
+
 Nothing was actually deferred; the items were rearranged. — The count before the first real outcome is the measurement. If it did not fall, the split you made in step 2 has not reached the path yet.
 
 The old path was already as short as it could be. — It might have been, and that is worth stating with the counts rather than assumed. Most first paths carry several asks with no action behind them.
-
-Counting is the wrong measure; what matters is how the path feels. — Feel is what let the original path grow. The count is the one part of this you can put in front of someone else without making a claim about users.
 
 Improve: Fill the before and after counts in step 3. If they match, move at least one item from must-know to can-wait in step 2, and record it in step 5.
 
@@ -1233,18 +1233,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your deferred items has no cost at all when you try to write one down. What does that suggest?
 
-- The request can probably be removed rather than deferred.
-- It is the safest deferral you have, so it can stay as it is.
 - It means the cost falls on you rather than on the person.
+- It is the safest deferral you have, so it can stay as it is.
+- The request can probably be removed rather than deferred.
 
 <details>
 <summary>After your attempt</summary>
 
-The request can probably be removed rather than deferred. — A deferral with nothing behind it is a request looking for a reason. Removing it is shorter than finding it a moment to live in.
+It means the cost falls on you rather than on the person. — Where that is true it is worth writing down. Where nothing at all changes because you waited, the item has no reason to exist.
 
 It is the safest deferral you have, so it can stay as it is. — Safe and pointless are not the same thing. It will reappear later as an interruption that buys nobody anything.
 
-It means the cost falls on you rather than on the person. — Where that is true it is worth writing down. Where nothing at all changes because you waited, the item has no reason to exist.
+The request can probably be removed rather than deferred. — A deferral with nothing behind it is a request looking for a reason. Removing it is shorter than finding it a moment to live in.
 
 Improve: Check every row of the deferral-triggers box in step 3 against the costs box in step 5. Any row with neither a trigger nor a cost comes out, and you note that in the last box.
 
@@ -1637,21 +1637,21 @@ A made up sign-in path. A person registered with a phone number and signs in wit
 
 Which of these is a recovery path, rather than the same wall drawn again?
 
-- Confirm the booking with its reference and the class date, then let her set a new number, with a route to a person if she has no reference either.
 - Send the code to the old number again, in case the first message was delayed.
-- Ask her the security question she chose when she registered.
 - Tell her to create a new account with her new number.
+- Confirm the booking with its reference and the class date, then let her set a new number, with a route to a person if she has no reference either.
+- Ask her the security question she chose when she registered.
 
 <details>
 <summary>After your attempt</summary>
 
-Confirm the booking with its reference and the class date, then let her set a new number, with a route to a person if she has no reference either. — It uses something she can still produce, and it names what happens when she can produce nothing. Both halves are needed, and a route to a person belongs on the flow.
-
 Send the code to the old number again, in case the first message was delayed. — The number is exactly what she has lost, so the second message arrives where the first one did. Repeating a step is not a different factor.
 
-Ask her the security question she chose when she registered. — This can work, and only where she was actually asked to set one and remembers the answer. If you cannot promise that, it is one more thing she may not have.
-
 Tell her to create a new account with her new number. — Her bookings stay with the old account, so the thing she came for is still out of reach. A new account moves the problem rather than solving it.
+
+Confirm the booking with its reference and the class date, then let her set a new number, with a route to a person if she has no reference either. — It uses something she can still produce, and it names what happens when she can produce nothing. Both halves are needed, and a route to a person belongs on the flow.
+
+Ask her the security question she chose when she registered. — This can work, and only where she was actually asked to set one and remembers the answer. If you cannot promise that, it is one more thing she may not have.
 
 Draw at least one recovery route on your own flow that uses something other than the lost factor, and draw the ending for someone who has nothing left.
 
@@ -1823,17 +1823,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 A sign-in attempt fails. Your screen shows one message at the top of the page and empties the fields. What does that produce?
 
 - The person cannot tell which field is wrong and has to type everything again, so the third attempt is where they leave.
-- It is acceptable, because clearing the fields is the safer choice.
 - It is fine as long as the message is politely worded.
+- It is acceptable, because clearing the fields is the safer choice.
 
 <details>
 <summary>After your attempt</summary>
 
 The person cannot tell which field is wrong and has to type everything again, so the third attempt is where they leave. — An error belongs beside the field it concerns, with what was typed still there. Clearing the form makes a small mistake cost the whole entry twice over.
 
-It is acceptable, because clearing the fields is the safer choice. — Clearing a phone number protects nobody and costs the person everything they typed. Where one field genuinely should not persist, say which, and keep the rest.
-
 It is fine as long as the message is politely worded. — Wording matters, and no amount of it can tell someone which of two fields to look at. The message has to be attached to a field.
+
+It is acceptable, because clearing the fields is the safer choice. — Clearing a phone number protects nobody and costs the person everything they typed. Where one field genuinely should not persist, say which, and keep the rest.
 
 Improve: Go through the message boxes in step 4 and attach every error to one named field, saying what was kept. Record what changed in step 5.
 
@@ -1852,18 +1852,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your flow keeps people signed in by default. On a phone shared by a family, what does that produce?
 
-- The next person to open it sees someone else’s bookings, without either of them having chosen that.
-- Nothing, because they can always sign out.
 - It is a rare case and not worth designing for.
+- Nothing, because they can always sign out.
+- The next person to open it sees someone else’s bookings, without either of them having chosen that.
 
 <details>
 <summary>After your attempt</summary>
 
-The next person to open it sees someone else’s bookings, without either of them having chosen that. — Staying signed in is a choice somebody should make in plain view. On a shared or borrowed phone the default quietly hands one person another person’s details.
+It is a rare case and not worth designing for. — A shared phone is ordinary in many households, and a borrowed one is ordinary everywhere. It is a normal condition rather than an edge.
 
 Nothing, because they can always sign out. — Signing out is a thing the first person has to remember at the end of a task they thought was finished. The design should offer it there.
 
-It is a rare case and not worth designing for. — A shared phone is ordinary in many households, and a borrowed one is ordinary everywhere. It is a normal condition rather than an edge.
+The next person to open it sees someone else’s bookings, without either of them having chosen that. — Staying signed in is a choice somebody should make in plain view. On a shared or borrowed phone the default quietly hands one person another person’s details.
 
 Improve: Write what the second person can see in the shared-walk box in step 5, then change the default or make the choice visible, and record the change in the last box.
 
@@ -2563,18 +2563,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A helper sees the refund control greyed out with no explanation beside it. What is wrong with that?
 
-- It says no without saying why, so she cannot tell whether she took a wrong turn, should sign in as someone else, or should ask a colleague.
 - Nothing is wrong: the control is visible, which is the point of not hiding it.
 - It should have been hidden, since she cannot use it.
+- It says no without saying why, so she cannot tell whether she took a wrong turn, should sign in as someone else, or should ask a colleague.
 
 <details>
 <summary>After your attempt</summary>
 
-It says no without saying why, so she cannot tell whether she took a wrong turn, should sign in as someone else, or should ask a colleague. — A disabled control with no reason is the worst of the three answers. It costs one sentence to say who can do it, and without that sentence people conclude the product is broken.
-
 Nothing is wrong: the control is visible, which is the point of not hiding it. — Visibility only helps if it carries the reason. A grey control with no words leaves her guessing, and most people guess badly.
 
 It should have been hidden, since she cannot use it. — She is the person being asked for the refund, so she needs to know it exists. Hiding it removes her route to pass the request on.
+
+It says no without saying why, so she cannot tell whether she took a wrong turn, should sign in as someone else, or should ask a colleague. — A disabled control with no reason is the worst of the three answers. It costs one sentence to say who can do it, and without that sentence people conclude the product is broken.
 
 Improve: Go through your unavailable boxes in step 4. Any disabled case without wording gets its sentence now, and record the change in step 5.
 
@@ -3190,8 +3190,8 @@ A made up filter combination on a class-booking product. “Saturday morning”,
 What should the empty screen do first?
 
 - Name the distance filter as the one that emptied the list, offer to remove it, and show that six classes are waiting.
-- Say “No results found” and leave the filters alone so she can adjust them herself.
 - Clear all the filters automatically and show everything again.
+- Say “No results found” and leave the filters alone so she can adjust them herself.
 - Show the nearest matches anyway, without saying which filter was relaxed.
 
 <details>
@@ -3199,9 +3199,9 @@ What should the empty screen do first?
 
 Name the distance filter as the one that emptied the list, offer to remove it, and show that six classes are waiting. — It says what happened, why, and gives one action with a visible reward. She does not have to take filters off one at a time to find the culprit.
 
-Say “No results found” and leave the filters alone so she can adjust them herself. — Accurate, and it hands her the whole search back to work out. She has four filters and no way of knowing which one did it.
-
 Clear all the filters automatically and show everything again. — That removes the emptiness by throwing away the work she did. Three of her four filters were fine and she now has to rebuild them from memory.
+
+Say “No results found” and leave the filters alone so she can adjust them herself. — Accurate, and it hands her the whole search back to work out. She has four filters and no way of knowing which one did it.
 
 Show the nearest matches anyway, without saying which filter was relaxed. — Quietly ignoring a filter is worse than an empty list, because she believes the results still meet what she asked for and may book something an hour away.
 
@@ -3240,18 +3240,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You go back from a class page and the results reload from the top with the filters cleared. Why does that matter more than it looks?
 
-- It stops people comparing, so they settle for whichever result they can still remember.
 - It is a small irritation and people are used to it.
 - It only matters when the list is long.
+- It stops people comparing, so they settle for whichever result they can still remember.
 
 <details>
 <summary>After your attempt</summary>
 
-It stops people comparing, so they settle for whichever result they can still remember. — Rebuilding a search is more work than accepting a good-enough answer, and most people accept. Your design has quietly chosen for them.
-
 It is a small irritation and people are used to it. — They are used to it, and they respond by opening fewer results. The cost is invisible because nobody complains about a booking they did make.
 
 It only matters when the list is long. — A short list still carries the narrowing that made it short. Losing four filters on ten results is the same loss of work.
+
+It stops people comparing, so they settle for whichever result they can still remember. — Rebuilding a search is more work than accepting a good-enough answer, and most people accept. Your design has quietly chosen for them.
 
 Improve: Add anything missing to the preserved-state box in step 2, walking your own flow again to find it, then record the change in step 5.
 
@@ -3270,18 +3270,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your result card carries eleven things, including the tutor’s biography. What is the test for keeping a field?
 
-- Whether you watched somebody compare on it while they were choosing.
 - Whether it is useful information about the class.
 - Whether removing it would leave an awkward gap in the layout.
+- Whether you watched somebody compare on it while they were choosing.
 
 <details>
 <summary>After your attempt</summary>
 
-Whether you watched somebody compare on it while they were choosing. — Your m05 notes already say what people mentioned while deciding. Fields with no observation behind them are the first ones to cut.
-
 Whether it is useful information about the class. — Almost everything is useful somewhere. The question is whether it is needed to choose between two classes, which is the only job a list has.
 
 Whether removing it would leave an awkward gap in the layout. — Layout is settled after content. A card built to fill a shape becomes hard to scan, which slows every comparison on the page.
+
+Whether you watched somebody compare on it while they were choosing. — Your m05 notes already say what people mentioned while deciding. Fields with no observation behind them are the first ones to cut.
 
 Improve: Cut any field in step 3 you cannot trace to something you watched, move it to the omissions box with its reason, and note the change in step 5.
 
@@ -3300,18 +3300,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A filter combination returns two hundred classes. What is the most useful thing that screen can do?
 
-- Suggest the one narrowing that would help most, and show the count it would leave behind.
 - Sort the results better and let her scroll.
 - Show how many results there are and leave the rest to her.
+- Suggest the one narrowing that would help most, and show the count it would leave behind.
 
 <details>
 <summary>After your attempt</summary>
 
-Suggest the one narrowing that would help most, and show the count it would leave behind. — Two hundred means she cannot start. A suggested next filter with its count lets her see the effect before committing to it.
-
 Sort the results better and let her scroll. — Sorting helps somebody who can already judge the list. Two hundred results is a starting problem rather than an ordering one.
 
 Show how many results there are and leave the rest to her. — The count names the problem without offering a move. She still has to guess which of your filters would cut it down.
+
+Suggest the one narrowing that would help most, and show the count it would leave behind. — Two hundred means she cannot start. A suggested next filter with its count lets her see the effect before committing to it.
 
 Improve: Fill the too-many box in step 4 with the suggested narrowing and the counts you would show, then record it in step 5.
 
@@ -3735,8 +3735,8 @@ What should that screen say?
 
 - What is known so far, that she must not pay again, when she will hear, and a reference she can quote.
 - “Payment failed. Please try again.”
-- Keep the circle turning until an answer arrives, so that nothing untrue is said.
 - “Something went wrong. Contact support.”
+- Keep the circle turning until an answer arrives, so that nothing untrue is said.
 
 <details>
 <summary>After your attempt</summary>
@@ -3745,9 +3745,9 @@ What is known so far, that she must not pay again, when she will hear, and a ref
 
 “Payment failed. Please try again.” — You do not know that it failed. If it did not, she pays twice, and a message that guesses in the reassuring direction costs her real money.
 
-Keep the circle turning until an answer arrives, so that nothing untrue is said. — Saying nothing is itself a message, and after ninety seconds it reads as broken. She closes the tab, and now nobody has told her where her money is.
-
 “Something went wrong. Contact support.” — It answers none of the three things she needs: what happened to the money, what she should not do next, and when she will know.
+
+Keep the circle turning until an answer arrives, so that nothing untrue is said. — Saying nothing is itself a message, and after ninety seconds it reads as broken. She closes the tab, and now nobody has told her where her money is.
 
 Write your own unknown state first, in her words. Then check that pending, failed and confirmed each answer the money question too.
 
@@ -3884,16 +3884,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You disable the pay button after the first tap. Is a double charge prevented?
 
-- Only on that page: she can press back, resend the form or reopen it, so the second identical request must be recognised and do nothing new.
 - It is, because the button cannot be pressed a second time.
+- Only on that page: she can press back, resend the form or reopen it, so the second identical request must be recognised and do nothing new.
 - A confirmation dialogue before the button would be safer still.
 
 <details>
 <summary>After your attempt</summary>
 
-Only on that page: she can press back, resend the form or reopen it, so the second identical request must be recognised and do nothing new. — Disabling is a courtesy on one screen. The real defence is a rule you agree with an engineer and write on the flow, because that is where the repeat arrives.
-
 It is, because the button cannot be pressed a second time. — The button is one route to the request. Closing the tab and reopening it, or pressing back and then forward, sends it again with the button never involved.
+
+Only on that page: she can press back, resend the form or reopen it, so the second identical request must be recognised and do nothing new. — Disabling is a courtesy on one screen. The real defence is a rule you agree with an engineer and write on the flow, because that is where the repeat arrives.
 
 A confirmation dialogue before the button would be safer still. — That adds a step for everybody and leaves the resend problem exactly where it was. The repeat comes from the browser rather than from her finger.
 
@@ -3914,18 +3914,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You looked at your paper screens and decided the wait would feel fine. What is the honest response?
 
+- Assume the message arrives quickly because it is only text.
 - Load a comparable live page with throttling on and the cache disabled, and write down the sequence and the seconds.
 - Paper cannot show timing, so note that the check was not possible and move on.
-- Assume the message arrives quickly because it is only text.
 
 <details>
 <summary>After your attempt</summary>
 
+Assume the message arrives quickly because it is only text. — Text does tend to arrive first, and that is the finding rather than the assumption. Writing the sequence down is what turns it into something you can point at.
+
 Load a comparable live page with throttling on and the cache disabled, and write down the sequence and the seconds. — Timing cannot be seen on paper. Any real page on a slow profile shows you the gap between the action and the first feedback, which is the thing you are designing around.
 
 Paper cannot show timing, so note that the check was not possible and move on. — Something can be checked without a prototype. Watching a comparable page on a slow connection is real evidence about the timing your design has to survive.
-
-Assume the message arrives quickly because it is only text. — Text does tend to arrive first, and that is the finding rather than the assumption. Writing the sequence down is what turns it into something you can point at.
 
 Improve: Run the throttled load and fill the sequence box in step 4, then record in step 5 what it changed about your pending wording.
 
@@ -4659,18 +4659,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have eleven cases and every one came from imagining what might go wrong. What is most likely missing?
 
-- The cases where somebody else changed something while your person was deciding: a place taken, a class cancelled, a price altered.
-- The wrong-input cases, since people mistype more often than anyone expects.
 - Nothing important: eleven cases from a flow you know well is a thorough list.
+- The wrong-input cases, since people mistype more often than anyone expects.
+- The cases where somebody else changed something while your person was deciding: a place taken, a class cancelled, a price altered.
 
 <details>
 <summary>After your attempt</summary>
 
-The cases where somebody else changed something while your person was deciding: a place taken, a class cancelled, a price altered. — Nobody imagines those, because they are not about your person at all. They are found by walking the flow with that one question written in front of you.
+Nothing important: eleven cases from a flow you know well is a thorough list. — A list from imagination reproduces what you already worry about. The systematic walk exists to find what you do not.
 
 The wrong-input cases, since people mistype more often than anyone expects. — Those are the easiest to imagine, so they are usually already on an intuitive list. They are rarely what it is short of.
 
-Nothing important: eleven cases from a flow you know well is a thorough list. — A list from imagination reproduces what you already worry about. The systematic walk exists to find what you do not.
+The cases where somebody else changed something while your person was deciding: a place taken, a class cancelled, a price altered. — Nobody imagines those, because they are not about your person at all. They are found by walking the flow with that one question written in front of you.
 
 Improve: Go back to changed-meanwhile-cases in step 2 and walk every wait node again with that single question. Record what you added in the last step.
 
@@ -4689,16 +4689,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your rows is a person believing a held place was a confirmed booking, and you have answered it with a confirmation dialogue. What is wrong with that?
 
-- A dialogue asks her to confirm something she already believes is true, so it changes nothing about her belief.
 - Nothing is wrong: a dialogue makes her stop and think.
+- A dialogue asks her to confirm something she already believes is true, so it changes nothing about her belief.
 - The dialogue needs a stronger warning colour.
 
 <details>
 <summary>After your attempt</summary>
 
-A dialogue asks her to confirm something she already believes is true, so it changes nothing about her belief. — Mistakes are answered by saying what is true before she acts. Name the state as held on the screen and in the message, with the time it expires.
-
 Nothing is wrong: a dialogue makes her stop and think. — It makes her stop. What she thinks in that moment is what she already thought, which is the wrong thing.
+
+A dialogue asks her to confirm something she already believes is true, so it changes nothing about her belief. — Mistakes are answered by saying what is true before she acts. Name the state as held on the screen and in the message, with the time it expires.
 
 The dialogue needs a stronger warning colour. — Colour changes how loudly the wrong information arrives. The content is the problem.
 
@@ -4719,16 +4719,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have ranked your cases by how likely each one is. Why is that the wrong order?
 
-- A rare failure that costs someone money or lost work does more harm than a common one that costs a moment.
 - Likelihood is fine, as long as you fix everything eventually.
+- A rare failure that costs someone money or lost work does more harm than a common one that costs a moment.
 - Because the likely ones are already handled by the interface.
 
 <details>
 <summary>After your attempt</summary>
 
-A rare failure that costs someone money or lost work does more harm than a common one that costs a moment. — Ranked by harm, the payment-unknown case rises above the mistyped name. Likelihood is the tie-breaker between two equally harmful cases.
-
 Likelihood is fine, as long as you fix everything eventually. — Nobody fixes everything. The order decides what gets designed at all, so it should be the order of what hurts.
+
+A rare failure that costs someone money or lost work does more harm than a common one that costs a moment. — Ranked by harm, the payment-unknown case rises above the mistyped name. Likelihood is the tie-breaker between two equally harmful cases.
 
 Because the likely ones are already handled by the interface. — Some are and some are not, and either way that is not what makes the ordering wrong.
 
@@ -5212,21 +5212,21 @@ A supplied class detail screen, made up for practice, drawn two ways. Version A:
 
 Which version is the better starting point, and for what reason?
 
-- Version B, because the things a person compares on come before the action and everything else follows.
+- Version B on a phone, and version A on a wide screen.
 - Version A, because the photograph draws people in and the description explains the class.
 - Neither can be judged until there is a visual design.
-- Version B on a phone, and version A on a wide screen.
+- Version B, because the things a person compares on come before the action and everything else follows.
 
 <details>
 <summary>After your attempt</summary>
 
-Version B, because the things a person compares on come before the action and everything else follows. — The order matches what someone is doing on this screen, which is deciding whether to book. The description is supporting material and sits where supporting material belongs.
+Version B on a phone, and version A on a wide screen. — Width changes the arrangement rather than the priority. If price and date matter most, they matter most at every width, which is the next lesson.
 
 Version A, because the photograph draws people in and the description explains the class. — That order serves someone who has already decided and is enjoying the page. Anyone still comparing has to scroll past the pleasant part to reach the price.
 
 Neither can be judged until there is a visual design. — Colour and type change how an order feels, not what the order is. This is the one question a plain frame answers better than a finished screen.
 
-Version B on a phone, and version A on a wide screen. — Width changes the arrangement rather than the priority. If price and date matter most, they matter most at every width, which is the next lesson.
+Version B, because the things a person compares on come before the action and everything else follows. — The order matches what someone is doing on this screen, which is deciding whether to book. The description is supporting material and sits where supporting material belongs.
 
 Now draw your own least certain screen a second way, and write what each order favours in the box below.
 
@@ -5275,17 +5275,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You do not have the wording for one label yet, so you write something plausible to fill the box. What does that cost you?
 
 - The frame can no longer show you that the real words do not fit, which is most of what it was for.
-- Very little, as long as you replace it later.
 - Some time, since you will have to draw the frame twice.
+- Very little, as long as you replace it later.
 
 <details>
 <summary>After your attempt</summary>
 
 The frame can no longer show you that the real words do not fit, which is most of what it was for. — Writing “unknown — needs a decision” keeps the gap visible and keeps the frame honest about its own length.
 
-Very little, as long as you replace it later. — Plausible text is extremely hard to spot later, precisely because it reads well. Nobody goes hunting for the sentence that looks right.
-
 Some time, since you will have to draw the frame twice. — Redrawing on paper is cheap. The cost is the problem you never found.
+
+Very little, as long as you replace it later. — Plausible text is extremely hard to spot later, precisely because it reads well. Nobody goes hunting for the sentence that looks right.
 
 Improve: Go through open-decisions in step 3 and replace every invented string on the frames with the real label or the words “unknown — needs a decision”. Record what you changed in the last step.
 
@@ -5305,17 +5305,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You show the frames to someone and they comment on the colours and the spacing. What has gone wrong?
 
 - The frames look finished enough to invite it, so the reading has moved off what is on the screen and in what order.
-- Nothing: comments on colour are useful at any stage.
 - They should have been asked to ignore the styling.
+- Nothing: comments on colour are useful at any stage.
 
 <details>
 <summary>After your attempt</summary>
 
 The frames look finished enough to invite it, so the reading has moved off what is on the screen and in what order. — One pen weight, no colour, no borrowed components. A rougher frame gets you the answer you actually needed.
 
-Nothing: comments on colour are useful at any stage. — They are useful when there are colour decisions to make. Given now, they cost you the only question these frames can answer.
-
 They should have been asked to ignore the styling. — People respond to what is in front of them. Asking someone to unsee it works far less well than not drawing it.
+
+Nothing: comments on colour are useful at any stage. — They are useful when there are colour decisions to make. Given now, they cost you the only question these frames can answer.
 
 Improve: Look at styling-left-out in step 3, strip any styling from the frames, and record it in the last step.
 
@@ -5334,18 +5334,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your branch has nine screens and states, and you have drawn six frames. What is most likely missing?
 
-- The exception states, which take minutes to draw and show at once whether the layout has room for an explanation.
-- The wide-screen versions of each frame.
 - Nothing: six frames for one branch is a reasonable number.
+- The wide-screen versions of each frame.
+- The exception states, which take minutes to draw and show at once whether the layout has room for an explanation.
 
 <details>
 <summary>After your attempt</summary>
 
-The exception states, which take minutes to draw and show at once whether the layout has room for an explanation. — A pending state with nowhere to put three lines of reassurance is a problem found with a pencil rather than in code.
+Nothing: six frames for one branch is a reasonable number. — The number is not the test. The test is whether every state in the flow has somewhere to be.
 
 The wide-screen versions of each frame. — Widths are the next lesson. This one is about whether the screens exist and hold the right things.
 
-Nothing: six frames for one branch is a reasonable number. — The number is not the test. The test is whether every state in the flow has somewhere to be.
+The exception states, which take minutes to draw and show at once whether the layout has room for an explanation. — A pending state with nowhere to put three lines of reassurance is a problem found with a pencil rather than in code.
 
 Improve: Use screen-list in step 2 as a checklist, draw the missing frames however uninteresting they look, and record it in the last step.
 
@@ -5747,21 +5747,21 @@ A supplied narrow layout of a made-up class detail screen, top to bottom: photog
 
 What is the first thing to change, and why?
 
-- Move date, time and price above the description, so she can decide without scrolling past a block of text.
 - Make the photograph smaller so more fits above the fold.
 - Shorten the class name so it fits on one line.
 - Hide the related classes list, since it matters least.
+- Move date, time and price above the description, so she can decide without scrolling past a block of text.
 
 <details>
 <summary>After your attempt</summary>
-
-Move date, time and price above the description, so she can decide without scrolling past a block of text. — They are the things she came for, and on a narrow screen anything below a long description is effectively out of sight. Nothing else on the list stops her deciding.
 
 Make the photograph smaller so more fits above the fold. — Shrinking it keeps something she did not come for in a position she has to read past. Its position is the problem rather than its size.
 
 Shorten the class name so it fits on one line. — Worth doing, and it wins one line. The decision information is still four items further down.
 
 Hide the related classes list, since it matters least. — That frees space at the bottom, which is not where the space is needed, and it takes something away from the first-time visitor who is most likely to be on a phone.
+
+Move date, time and price above the description, so she can decide without scrolling past a block of text. — They are the things she came for, and on a narrow screen anything below a long description is effectively out of sight. Nothing else on the list stops her deciding.
 
 Now read your own narrow drawings top to bottom and move anything a person is tracking above the first long block of text.
 
@@ -5880,16 +5880,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You drew the wide layout first because it is easier to see everything, then squeezed it down. What tends to go wrong?
 
-- The wide layout’s priorities survive the squeeze, so the narrow screen keeps a large image and a navigation row and pushes the price down.
 - Nothing, provided you check the narrow version afterwards.
+- The wide layout’s priorities survive the squeeze, so the narrow screen keeps a large image and a navigation row and pushes the price down.
 - The wide layout leaves too much empty space at narrow width.
 
 <details>
 <summary>After your attempt</summary>
 
-The wide layout’s priorities survive the squeeze, so the narrow screen keeps a large image and a navigation row and pushes the price down. — Deciding the narrow order first forces the priority question while there is no room to dodge it. Widening afterwards is much the easier direction.
-
 Nothing, provided you check the narrow version afterwards. — Checking finds the breakages and leaves the order that caused them, because reordering a finished wide layout feels like starting again.
+
+The wide layout’s priorities survive the squeeze, so the narrow screen keeps a large image and a navigation row and pushes the price down. — Deciding the narrow order first forces the priority question while there is no room to dodge it. Widening afterwards is much the easier direction.
 
 The wide layout leaves too much empty space at narrow width. — Space is not the failure. The failure is what ends up at the top.
 
@@ -5910,18 +5910,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 To make the narrow layout fit, you hide the what-to-bring section. What is the honest test of that decision?
 
-- Ask whether anyone needs it. If they do, hiding it removes it from the people most likely to be on a phone.
 - Whether the section is short enough to be worth keeping.
 - Whether it comes back at wider widths, since nothing is really lost.
+- Ask whether anyone needs it. If they do, hiding it removes it from the people most likely to be on a phone.
 
 <details>
 <summary>After your attempt</summary>
 
-Ask whether anyone needs it. If they do, hiding it removes it from the people most likely to be on a phone. — The narrow width is where your first-time and one-device visitors are. Move it down the order rather than away.
-
 Whether the section is short enough to be worth keeping. — Length decides where something goes, not whether anyone is allowed to have it.
 
 Whether it comes back at wider widths, since nothing is really lost. — It is lost to whoever is on the narrow screen, and they cannot know it exists in order to go looking for it.
+
+Ask whether anyone needs it. If they do, hiding it removes it from the people most likely to be on a phone. — The narrow width is where your first-time and one-device visitors are. Move it down the order rather than away.
 
 Improve: Add a justification beside every entry in may-hide in step 2, and move anything you cannot justify into the narrow order. Record it in the last step.
 
@@ -5940,18 +5940,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You skipped the enlarged-text check because your screens are pencil drawings. What is the honest response?
 
-- Letter the same screen a step larger throughout and see what collides; that is the paper version of the check.
-- Record that it cannot be checked on paper and move on.
 - Assume it is fine, because the layout has generous spacing.
+- Record that it cannot be checked on paper and move on.
+- Letter the same screen a step larger throughout and see what collides; that is the paper version of the check.
 
 <details>
 <summary>After your attempt</summary>
 
-Letter the same screen a step larger throughout and see what collides; that is the paper version of the check. — The check is about text growing inside a fixed width, and a pencil shows that well enough to find the collisions.
+Assume it is fine, because the layout has generous spacing. — Generous spacing is the first thing enlarged text consumes. Buttons, containers and fixed rows are where it collides.
 
 Record that it cannot be checked on paper and move on. — It can, roughly, and roughly is enough to find collisions. Skipping it means a layout that fails daily for a great many readers.
 
-Assume it is fine, because the layout has generous spacing. — Generous spacing is the first thing enlarged text consumes. Buttons, containers and fixed rows are where it collides.
+Letter the same screen a step larger throughout and see what collides; that is the paper version of the check. — The check is about text growing inside a fixed width, and a pencil shows that well enough to find the collisions.
 
 Improve: Fill enlarged-text-result in step 4 by redrawing one screen a step larger throughout, then record what you changed in the last step.
 
@@ -6437,21 +6437,21 @@ A supplied empty screen from a made-up class-booking product. The bookings list,
 
 What is the most useful thing to add first?
 
-- A sentence saying what will appear here and the one action that produces the first item.
 - An illustration, so the space does not look broken.
-- A message saying the list is empty.
+- A sentence saying what will appear here and the one action that produces the first item.
 - A larger, clearer plus button.
+- A message saying the list is empty.
 
 <details>
 <summary>After your attempt</summary>
 
-A sentence saying what will appear here and the one action that produces the first item. — The empty state is the first teaching this person gets. “Your bookings appear here — find a class to make your first one” gives the model and the next step in one line.
-
 An illustration, so the space does not look broken. — It fills the space and says nothing. She still does not know what this list is for or how to start it.
 
-A message saying the list is empty. — That is the one thing already obvious from looking. It uses the space without adding anything to it.
+A sentence saying what will appear here and the one action that produces the first item. — The empty state is the first teaching this person gets. “Your bookings appear here — find a class to make your first one” gives the model and the next step in one line.
 
 A larger, clearer plus button. — The action only helps once she knows what it will do. Size does not explain it.
+
+A message saying the list is empty. — That is the one thing already obvious from looking. It uses the space without adding anything to it.
 
 Now write your own empty state in the box below, in three parts: what appears here, why, and the one action that starts it.
 
@@ -6546,18 +6546,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One control is greyed out because the class is full, and another because no date has been chosen yet. Why should these not look and read the same?
 
+- The full class should simply be removed from the list.
 - One means not yet and the other means not for you now, and each needs a different sentence and a different way out.
 - They can look the same, as long as both are clearly grey.
-- The full class should simply be removed from the list.
 
 <details>
 <summary>After your attempt</summary>
 
+The full class should simply be removed from the list. — Removing it leaves her wondering whether she misremembered the class. Showing it as full and offering other dates keeps her oriented.
+
 One means not yet and the other means not for you now, and each needs a different sentence and a different way out. — Not yet asks her to complete something. Not for you now should offer the alternative, such as other dates or a way to ask somebody.
 
 They can look the same, as long as both are clearly grey. — Grey tells her she cannot press it. It never tells her which of the two situations she is in, so she cannot act on either.
-
-The full class should simply be removed from the list. — Removing it leaves her wondering whether she misremembered the class. Showing it as full and offering other dates keeps her oriented.
 
 Improve: Split component-disabled and component-unavailable in step 2 so each has its own trigger and its own sentence, then record the change in the last step.
 
@@ -6576,18 +6576,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your error state is signalled by the control turning red. What does the greyscale check show?
 
-- Red and the default state can become the same shade, so anyone who cannot tell them apart gets no signal at all.
 - Nothing much, since almost everybody can see red.
 - That the red is not strong enough and should be darker.
+- Red and the default state can become the same shade, so anyone who cannot tell them apart gets no signal at all.
 
 <details>
 <summary>After your attempt</summary>
 
-Red and the default state can become the same shade, so anyone who cannot tell them apart gets no signal at all. — Add a second signal that survives greyscale: a message beside the field, a small icon, a heavier border.
-
 Nothing much, since almost everybody can see red. — A great many people cannot distinguish it reliably, and neither can anyone in bright sunlight or on a poor screen.
 
 That the red is not strong enough and should be darker. — A darker red is still one signal on one channel. The point is to carry the meaning on a second channel as well.
+
+Red and the default state can become the same shade, so anyone who cannot tell them apart gets no signal at all. — Add a second signal that survives greyscale: a message beside the field, a small icon, a heavier border.
 
 Improve: Look at greyscale-result in step 5, add a second signal to every state that relied on colour, and record it in the last step.
 
@@ -7154,16 +7154,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your reader stops and asks what happens if the provider cancels the class. You tell her, and she carries on. What went wrong?
 
-- You answered a question the artefact could not answer, so the gap is still there and now it is unrecorded.
 - Nothing: answering questions is what a handover conversation is for.
+- You answered a question the artefact could not answer, so the gap is still there and now it is unrecorded.
 - She should have been given more context before reading.
 
 <details>
 <summary>After your attempt</summary>
 
-You answered a question the artefact could not answer, so the gap is still there and now it is unrecorded. — The question was evidence about the page. Once you supply the answer, the page is unchanged and the next reader meets the same silence.
-
 Nothing: answering questions is what a handover conversation is for. — A conversation is fine after the read. During it, every answer you give quietly removes a finding you came for.
+
+You answered a question the artefact could not answer, so the gap is still there and now it is unrecorded. — The question was evidence about the page. Once you supply the answer, the page is unchanged and the next reader meets the same silence.
 
 She should have been given more context before reading. — Context given in advance is exactly what the person building this in two weeks will not have.
 
@@ -7184,16 +7184,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Two labels on your wireflow are still guesses. Leaving them off the open-questions list makes the artefact look finished. What does that cost?
 
-- People build on the guesses, because being drawn confidently is what turns a guess into a fact.
 - Very little: they can be corrected later when someone notices.
+- People build on the guesses, because being drawn confidently is what turns a guess into a fact.
 - It is honest enough as long as you remember which ones they were.
 
 <details>
 <summary>After your attempt</summary>
 
-People build on the guesses, because being drawn confidently is what turns a guess into a fact. — Nobody queries a label that looks settled. The open-questions list is the only thing keeping a guess arguable once it is on the page.
-
 Very little: they can be corrected later when someone notices. — Noticing is the part that does not happen. A guess drawn in the same hand as everything else reads as a decision.
+
+People build on the guesses, because being drawn confidently is what turns a guess into a fact. — Nobody queries a label that looks settled. The open-questions list is the only thing keeping a guess arguable once it is on the page.
 
 It is honest enough as long as you remember which ones they were. — Your memory is not on the artefact, and the artefact is the thing that outlives the conversation.
 
@@ -7214,18 +7214,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The only person free to read your wireflow is someone who has watched you build it all week. What do you do?
 
+- Skip the step until a stranger is available.
 - Ask them anyway, mark it as a rehearsal read, and record that an uninvolved reader could not be found.
 - Report it as the uninvolved read, since they still asked questions.
-- Skip the step until a stranger is available.
 
 <details>
 <summary>After your attempt</summary>
 
+Skip the step until a stranger is available. — Waiting leaves you with nothing at all. A rehearsal read plus a dated note of who you could not reach is a complete answer for today.
+
 Ask them anyway, mark it as a rehearsal read, and record that an uninvolved reader could not be found. — A rehearsal read still catches missing conditions. What it cannot do is show what someone without your explanations sees, so the record says both.
 
 Report it as the uninvolved read, since they still asked questions. — They read it with your project already in their head. Reporting that as an uninvolved read makes the artefact look tested when it is not.
-
-Skip the step until a stranger is available. — Waiting leaves you with nothing at all. A rehearsal read plus a dated note of who you could not reach is a complete answer for today.
 
 Improve: Set the reader-status choice in step 5 honestly. If it was a rehearsal read or nobody was available, fill the reader-gap box with who you could not reach and the date, then note it in the improvement box.
 
@@ -7260,20 +7260,20 @@ A supplied moment from the same made-up handover. A friend who had never seen th
 What does her question tell you?
 
 - The word is doing work the artefact never explains, so she has found a gap on the page.
-- She lacks the background to read a wireflow, so the question does not count.
 - You should explain it to her, then carry on with the read.
 - It is a wording problem for later, not a wireflow problem.
+- She lacks the background to read a wireflow, so the question does not count.
 
 <details>
 <summary>After your attempt</summary>
 
 The word is doing work the artefact never explains, so she has found a gap on the page. — A reader stops where the page stops carrying her. The repair belongs on the page: a plainer word, or an annotation saying what that state means to a person.
 
-She lacks the background to read a wireflow, so the question does not count. — Someone who read everything else without stopping is reading it perfectly well. Discounting her question throws away the only thing the read produced.
-
 You should explain it to her, then carry on with the read. — Explaining ends the finding. The person building from this in two weeks will meet the same word with nobody sitting beside them.
 
 It is a wording problem for later, not a wireflow problem. — The word appears on the artefact and on the screen, so it is both. Recording it as a question keeps it attached to the place it was found.
+
+She lacks the background to read a wireflow, so the question does not count. — Someone who read everything else without stopping is reading it perfectly well. Discounting her question throws away the only thing the read produced.
 
 Write out every question your own reader asked, then mark which are changes to the page and which are changes to the design.
 
@@ -7975,18 +7975,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Two people wanted the cancellation deadline in days rather than a date. One person lost her filtered results and booked whatever she could still see. How do you rank them?
 
-- The lost results first, because it changed what she booked; the deadline wording second.
-- The deadline wording first, because two of the three raised it.
 - Equally, since both came up in the same test.
+- The deadline wording first, because two of the three raised it.
+- The lost results first, because it changed what she booked; the deadline wording second.
 
 <details>
 <summary>After your attempt</summary>
 
-The lost results first, because it changed what she booked; the deadline wording second. — Harm is what the problem costs the person. Three sessions cannot tell you how common either one is, so frequency is not a ranking you have earned.
+Equally, since both came up in the same test. — Both are real and only one of them changed a booking. The ranking exists so the next lesson repairs whatever costs most.
 
 The deadline wording first, because two of the three raised it. — Two out of three is not a rate, it is two people. Counting three sessions turns a formative test into a measurement it cannot carry.
 
-Equally, since both came up in the same test. — Both are real and only one of them changed a booking. The ranking exists so the next lesson repairs whatever costs most.
+The lost results first, because it changed what she booked; the deadline wording second. — Harm is what the problem costs the person. Three sessions cannot tell you how common either one is, so frequency is not a ranking you have earned.
 
 Improve: Reorder the harm-ranking box in step 5 by what each problem costs the person, then record what moved in the improvement box.
 
@@ -8005,18 +8005,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nobody consented, so you walked both tasks with your sister, who has heard about this project all week. How should that appear?
 
+- Leave it out and record that the test did not happen.
 - As a rehearsal, with a dated note of who you could not reach, and the prepared kit kept as the deliverable.
 - As a session, since she completed both tasks on the paper.
-- Leave it out and record that the test did not happen.
 
 <details>
 <summary>After your attempt</summary>
 
+Leave it out and record that the test did not happen. — Leaving it out throws away work you actually did. A dated gap plus the rehearsal notes is a complete and honest answer.
+
 As a rehearsal, with a dated note of who you could not reach, and the prepared kit kept as the deliverable. — A rehearsal checks your frames, your tasks and your own reflexes, which is real work. It cannot tell you what someone without your explanations does.
 
 As a session, since she completed both tasks on the paper. — She arrived knowing what you intended. Recording that as a session makes the ranked list look tested when it rests on someone who already knew the answers.
-
-Leave it out and record that the test did not happen. — Leaving it out throws away work you actually did. A dated gap plus the rehearsal notes is a complete and honest answer.
 
 Improve: Set the session-status choice in step 3 honestly, fill the access-gap box in step 5 with who you could not reach and the date, then note the change in the improvement box.
 
@@ -8601,17 +8601,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You repaired the two quickest problems because they were both done before lunch. What is wrong with that?
 
 - The ranking orders problems by what they cost a person, and repairing by speed leaves the costly ones untouched.
-- Nothing, as long as you get to the others eventually.
 - It is fine, since the quick fixes were on the list too.
+- Nothing, as long as you get to the others eventually.
 
 <details>
 <summary>After your attempt</summary>
 
 The ranking orders problems by what they cost a person, and repairing by speed leaves the costly ones untouched. — Quick fixes are quick because they are small. The problem that changed what somebody booked is still there, and now the list merely looks shorter.
 
-Nothing, as long as you get to the others eventually. — Eventually is where structural problems live. Whatever is not repaired today goes into the record as known and unfixed.
-
 It is fine, since the quick fixes were on the list too. — Being on the list is not the question. The ranking exists to decide the order, and speed is not the order it chose.
+
+Nothing, as long as you get to the others eventually. — Eventually is where structural problems live. Whatever is not repaired today goes into the record as known and unfixed.
 
 Improve: Check the harm-order box in step 1 against what you actually changed. If the top two are untouched, repair them and write why you started elsewhere, then note it in the improvement box in step 5.
 
@@ -8630,18 +8630,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You ran the re-test first and wrote the prediction afterwards, because you already knew what should have happened. Does that matter?
 
-- A prediction written after the result cannot be shown wrong, so mark it as retrospective in the record.
 - It makes no difference, since the prediction would have been the same either way.
 - It ruins the re-test, so the sessions have to be run again.
+- A prediction written after the result cannot be shown wrong, so mark it as retrospective in the record.
 
 <details>
 <summary>After your attempt</summary>
 
-A prediction written after the result cannot be shown wrong, so mark it as retrospective in the record. — Writing it first is what turns a re-test into evidence. Written afterwards it is a description of what happened, and the record should say which it is.
-
 It makes no difference, since the prediction would have been the same either way. — It feels the same and it cannot be checked. Knowing the outcome quietly shapes what you say you expected.
 
 It ruins the re-test, so the sessions have to be run again. — The sessions still happened and the observations stand. What is weakened is the prediction, and labelling it honestly is enough.
+
+A prediction written after the result cannot be shown wrong, so mark it as retrospective in the record. — Writing it first is what turns a re-test into evidence. Written afterwards it is a description of what happened, and the record should say which it is.
 
 Improve: Mark any prediction in step 1 that was written after the sessions as retrospective, then record the change in the improvement box in step 5.
 
@@ -8660,18 +8660,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The only person free for the re-test is the friend who took part in the first one. What do you do?
 
-- Run it, label it a rehearsal re-test, and record that nobody new was available and on what date.
 - Run it and count it, since she is seeing a version she has not seen before.
 - Skip the re-test and record the repairs as done.
+- Run it, label it a rehearsal re-test, and record that nobody new was available and on what date.
 
 <details>
 <summary>After your attempt</summary>
 
-Run it, label it a rehearsal re-test, and record that nobody new was available and on what date. — She can tell you whether she remembers the change. She cannot tell you whether it is clearer, because she already knows where everything is.
-
 Run it and count it, since she is seeing a version she has not seen before. — She has seen the flow, the screens and the problem. What looks like clarity is recognition of all the parts that did not change.
 
 Skip the re-test and record the repairs as done. — Repairs recorded as done with nothing behind them are exactly the kind of claim the limitations statement exists to prevent.
+
+Run it, label it a rehearsal re-test, and record that nobody new was available and on what date. — She can tell you whether she remembers the change. She cannot tell you whether it is clearer, because she already knows where everything is.
 
 Improve: Set the retest-status choice in step 3 honestly. If nobody new was available, add the date and who you could not reach to the not-established box in step 5, then note the change in the improvement box.
 

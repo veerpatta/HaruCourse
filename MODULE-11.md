@@ -553,16 +553,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your barriers reads “the colour contrast is poor throughout”. Why is that weaker than it looks?
 
-- It names no person, no task and no element, so nobody can fix it and nobody can check it.
 - It is fine as it stands, because contrast is measurable.
+- It names no person, no task and no element, so nobody can fix it and nobody can check it.
 - Contrast belongs in a later lesson, so it should not be in this list.
 
 <details>
 <summary>After your attempt</summary>
 
-It names no person, no task and no element, so nobody can fix it and nobody can check it. — Throughout is the word doing the damage. It sounds comprehensive and it points at nothing, so it survives every round of fixes unchanged.
-
 It is fine as it stands, because contrast is measurable. — Contrast is measurable, and this sentence measures nothing. The measurable version names an element and a ratio.
+
+It names no person, no task and no element, so nobody can fix it and nobody can check it. — Throughout is the word doing the damage. It sounds comprehensive and it points at nothing, so it survives every round of fixes unchanged.
 
 Contrast belongs in a later lesson, so it should not be in this list. — It belongs here if it stops someone. The problem is the writing, not the topic.
 
@@ -583,18 +583,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You ran the three situational tests and want to write “the product is accessible in daylight”. Is that allowed?
 
-- It is not. You checked one task, on your device, with your eyes, and that is what you can say.
 - It is, since you actually went outside and it worked.
 - It is, as long as you add that more testing is needed.
+- It is not. You checked one task, on your device, with your eyes, and that is what you can say.
 
 <details>
 <summary>After your attempt</summary>
 
-It is not. You checked one task, on your device, with your eyes, and that is what you can say. — The honest sentence is the narrow one: which task, which device, what you saw. It is smaller and it is defensible, and this module asks you to keep that boundary visible in every lesson.
-
 It is, since you actually went outside and it worked. — It worked for you, on your screen, at your brightness, with your vision. Each of those is a condition on the claim, and the sentence drops all four.
 
 It is, as long as you add that more testing is needed. — A general claim followed by a caveat is still quoted as the general claim. Narrow the sentence itself rather than appending a disclaimer to it.
+
+It is not. You checked one task, on your device, with your eyes, and that is what you can say. — The honest sentence is the narrow one: which task, which device, what you saw. It is smaller and it is defensible, and this module asks you to keep that boundary visible in every lesson.
 
 Improve: Rewrite your situational lines in step 4 to say which task, which device and what you saw, then record the change in step 5.
 
@@ -1321,17 +1321,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 A colleague suggests doing the accessibility audit at the end, once the design is finished. What is the strongest objection?
 
 - By then the expensive problems are structural, and the audit finds them when they are hardest to change.
-- Audits are unreliable, so it is better to check things yourself.
 - The standard requires accessibility work to happen during design.
+- Audits are unreliable, so it is better to check things yourself.
 
 <details>
 <summary>After your attempt</summary>
 
 By then the expensive problems are structural, and the audit finds them when they are hardest to change. — A layout with nowhere to put a visible focus ring, or a flow that depends on hover, cannot be repaired by adjusting a colour. Mapping barriers to criteria during design costs an hour and changes what gets built.
 
-Audits are unreliable, so it is better to check things yourself. — A good audit is more thorough than your own check. The problem is when it happens, not who does it.
-
 The standard requires accessibility work to happen during design. — The standard says what must be true of the result. It says nothing about when you do the work; the argument is practical rather than required.
+
+Audits are unreliable, so it is better to check things yourself. — A good audit is more thorough than your own check. The problem is when it happens, not who does it.
 
 Improve: Look at your translations in step 3. Any change that would need the layout rebuilt is a structural one — mark it as such, and record the change in step 5.
 
@@ -1380,16 +1380,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your barriers has no matching criterion. What should you do with it?
 
-- Record it as a product requirement of your own, marked as uncovered by the standard.
 - Find the closest criterion and map it there.
+- Record it as a product requirement of your own, marked as uncovered by the standard.
 - Drop it, since the module is about the standard.
 
 <details>
 <summary>After your attempt</summary>
 
-Record it as a product requirement of your own, marked as uncovered by the standard. — The standard is a floor and it does not cover everything that excludes people. A date format nobody in your audience reads is a real barrier with no criterion, and it is still yours to fix.
-
 Find the closest criterion and map it there. — A stretched mapping hides the barrier inside a criterion that does not describe it, and the change you actually need disappears from the list.
+
+Record it as a product requirement of your own, marked as uncovered by the standard. — The standard is a floor and it does not cover everything that excludes people. A date format nobody in your audience reads is a real barrier with no criterion, and it is still yours to fix.
 
 Drop it, since the module is about the standard. — The module starts from barriers precisely so the standard does not become the limit of the work. The barrier stays.
 
@@ -2081,18 +2081,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your designer instinct says the section heading should be large, so you set it as a page title. What is wrong with that?
 
-- Level says where you are in the structure; size says what to look at. Tying them together produces several page titles and no outline.
 - Nothing, as long as the visual hierarchy is clear.
 - The heading should simply be made smaller.
+- Level says where you are in the structure; size says what to look at. Tying them together produces several page titles and no outline.
 
 <details>
 <summary>After your attempt</summary>
 
-Level says where you are in the structure; size says what to look at. Tying them together produces several page titles and no outline. — A person navigating by structure hears each page title as a new place. Three of them on one screen means the screen has no shape at all, however well it reads visually.
-
 Nothing, as long as the visual hierarchy is clear. — The visual hierarchy is only one of the two hierarchies on the screen. The other one is what somebody hears, and it is currently wrong.
 
 The heading should simply be made smaller. — That fixes the level by damaging the design. The two decisions are separate: keep the size and change the level.
+
+Level says where you are in the structure; size says what to look at. Tying them together produces several page titles and no outline. — A person navigating by structure hears each page title as a new place. Three of them on one screen means the screen has no shape at all, however well it reads visually.
 
 Improve: Check both outlines in step 1 for more than one page title, correct them in step 2, and record the change in step 5.
 
@@ -2111,16 +2111,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You plan to leave the heading levels to the developer, who will see the visual design. What will happen?
 
-- They will infer level from size, which is the mistake you just spent this lesson correcting.
 - They will ask, since it is ambiguous.
+- They will infer level from size, which is the mistake you just spent this lesson correcting.
 - It will be fine, because developers know the structure rules.
 
 <details>
 <summary>After your attempt</summary>
 
-They will infer level from size, which is the mistake you just spent this lesson correcting. — There is no other information available to them. Heading level is a decision about hierarchy, so it belongs with the screen that states the hierarchy.
-
 They will ask, since it is ambiguous. — It does not look ambiguous from a visual design. It looks decided, which is why nobody asks.
+
+They will infer level from size, which is the mistake you just spent this lesson correcting. — There is no other information available to them. Heading level is a decision about hierarchy, so it belongs with the screen that states the hierarchy.
 
 It will be fine, because developers know the structure rules. — Knowing the rules does not tell them which of your sections belongs inside which. Only the design says that.
 
@@ -2846,18 +2846,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Every pair passes its ratio. Can you say the text on this screen is fine?
 
-- It cannot be said. The ratio covers one colour on another at a size, and says nothing about thin type, long lines, or text over a photograph.
 - It can, because the ratio is the actual standard.
 - It can for body text, though headings need a separate check.
+- It cannot be said. The ratio covers one colour on another at a size, and says nothing about thin type, long lines, or text over a photograph.
 
 <details>
 <summary>After your attempt</summary>
 
-It cannot be said. The ratio covers one colour on another at a size, and says nothing about thin type, long lines, or text over a photograph. — The ratio is a floor. A screen of 95-character lines in a hairline weight passes every check and is still tiring to read, and text over an image has a different ratio in every part of the image.
-
 It can, because the ratio is the actual standard. — It is the criterion, which is the minimum somebody may ship. Comfort, line length and weight sit outside it and still decide whether the text gets read.
 
 It can for body text, though headings need a separate check. — Headings are usually the safest case, because larger text is allowed a lower threshold and is easier to read anyway. The risk sits with the small, thin and quiet text.
+
+It cannot be said. The ratio covers one colour on another at a size, and says nothing about thin type, long lines, or text over a photograph. — The ratio is a floor. A screen of 95-character lines in a hairline weight passes every check and is still tiring to read, and text over an image has a different ratio in every part of the image.
 
 Improve: Add the line length and the lightest font weight you use to your comfort notes in step 4, and record the change in step 5.
 
@@ -2876,18 +2876,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 At 200 per cent the price panel clips. The quickest fix is to reduce that panel’s text size. Why is that the wrong fix?
 
-- It takes the enlargement away from the person who asked for it, and hides the layout problem instead of fixing it.
-- It is acceptable if the panel is secondary content.
 - It is fine as an interim fix while the layout is rebuilt.
+- It is acceptable if the panel is secondary content.
+- It takes the enlargement away from the person who asked for it, and hides the layout problem instead of fixing it.
 
 <details>
 <summary>After your attempt</summary>
 
-It takes the enlargement away from the person who asked for it, and hides the layout problem instead of fixing it. — The person set 200 per cent because that is what they can read. Overriding it in one panel means the panel is now the least readable thing on the screen, and the fixed-height container is still there.
+It is fine as an interim fix while the layout is rebuilt. — An interim fix that looks correct in a screenshot tends to become the permanent one, because nothing remains visibly broken to prompt the rebuild.
 
 It is acceptable if the panel is secondary content. — Secondary content still has to be readable, and price is rarely secondary. The container is the thing that is wrong.
 
-It is fine as an interim fix while the layout is rebuilt. — An interim fix that looks correct in a screenshot tends to become the permanent one, because nothing remains visibly broken to prompt the rebuild.
+It takes the enlargement away from the person who asked for it, and hides the layout problem instead of fixing it. — The person set 200 per cent because that is what they can read. Overriding it in one panel means the panel is now the least readable thing on the screen, and the fixed-height container is still there.
 
 Improve: Change that container in step 3 so it grows with its content, and write what it does now. Record the change in step 5.
 
@@ -3672,17 +3672,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You added an icon beside each status dot, and in greyscale all three icons look the same. What went wrong?
 
 - The icons differ by colour rather than by outline, so a second element was added but not a second signal.
-- Icons are the wrong choice; only text works.
 - The icons are too small for the difference to show.
+- Icons are the wrong choice; only text works.
 
 <details>
 <summary>After your attempt</summary>
 
 The icons differ by colour rather than by outline, so a second element was added but not a second signal. — Three circles in three colours are one shape. The test is whether the outlines differ when everything is black, and it is easy to fail while feeling the problem is solved.
 
-Icons are the wrong choice; only text works. — Text is the safest choice and icons can work, if their silhouettes genuinely differ. A tick and a cross survive greyscale perfectly well.
-
 The icons are too small for the difference to show. — Size would make identical shapes bigger and still identical. The problem is the shapes, not the scale.
+
+Icons are the wrong choice; only text works. — Text is the safest choice and icons can work, if their silhouettes genuinely differ. A tick and a cross survive greyscale perfectly well.
 
 Improve: Replace that signal in step 2 with a word, or with shapes whose outlines differ, then check it in greyscale again. Record the change in step 5.
 
@@ -4419,17 +4419,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Somebody says keyboard-only use is a niche case not worth this much effort. What is the strongest reply?
 
 - It covers people with motor impairments, switch and voice users, many screen-reader users, anyone with a broken trackpad, and it is what other assistive technology is built on.
-- Because the standard requires it.
 - Because experienced users prefer the keyboard.
+- Because the standard requires it.
 
 <details>
 <summary>After your attempt</summary>
 
 It covers people with motor impairments, switch and voice users, many screen-reader users, anyone with a broken trackpad, and it is what other assistive technology is built on. — Voice control commonly maps onto keyboard operation, and screen readers move through the same order. A keyboard failure is rarely only a keyboard failure.
 
-Because the standard requires it. — It does, and a requirement rarely changes anybody’s mind about effort. The reason the requirement exists is the stronger answer.
-
 Because experienced users prefer the keyboard. — Many do, and that is a convenience argument. It invites the reply that convenience can wait.
+
+Because the standard requires it. — It does, and a requirement rarely changes anybody’s mind about effort. The reason the requirement exists is the stronger answer.
 
 Improve: Add to your defect list in step 5 which of these groups each failure affects, so severity is arguable from the list itself. Record the change.
 
@@ -4448,18 +4448,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You could reach the date picker with tab, so tab order is fine there. Is the control accessible?
 
+- It is, if focus is visible on it.
 - Not necessarily. Reachable and operable are separate: focus landing on a control proves nothing about whether any key does anything.
 - It is, since the person can get to it and use enter.
-- It is, if focus is visible on it.
 
 <details>
 <summary>After your attempt</summary>
 
+It is, if focus is visible on it. — Visible focus tells the person where they are. It does not give them a way to act.
+
 Not necessarily. Reachable and operable are separate: focus landing on a control proves nothing about whether any key does anything. — This is the failure that looks like success. The tab order passes, focus moves correctly, and the person still cannot choose a date.
 
 It is, since the person can get to it and use enter. — Enter may open it and do nothing inside it. What matters is whether the task can be completed once focus is there.
-
-It is, if focus is visible on it. — Visible focus tells the person where they are. It does not give them a way to act.
 
 Improve: Go back through your attempt log in step 2 and mark every control you reached but could not operate. Record the change in step 5.
 
@@ -4478,18 +4478,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The quickest fix for the hover-only remove control is to say people can use the mouse for that one action. Is that acceptable?
 
+- It is acceptable as a note while the fix is scheduled.
 - It is not a repair at all. It restates the barrier as an instruction and leaves the task impossible for anybody without a pointer.
 - It is acceptable for a secondary action like removal.
-- It is acceptable as a note while the fix is scheduled.
 
 <details>
 <summary>After your attempt</summary>
 
+It is acceptable as a note while the fix is scheduled. — Written as a note, it stops looking like a defect, and a thing that does not look like a defect does not get scheduled.
+
 It is not a repair at all. It restates the barrier as an instruction and leaves the task impossible for anybody without a pointer. — Every function has to be available without a pointer. A documented workaround that requires the thing the person does not have changes nothing except the tone.
 
 It is acceptable for a secondary action like removal. — Removing an item is how somebody corrects a mistake. Leaving them unable to correct a mistake is not a secondary failure.
-
-It is acceptable as a note while the fix is scheduled. — Written as a note, it stops looking like a defect, and a thing that does not look like a defect does not get scheduled.
 
 Improve: Write that control into your defect list in step 5 with the expected keyboard behaviour from your key table, and record the change.
 
@@ -5259,17 +5259,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You darkened the placeholder text so it passes contrast, and it now carries the format hint clearly. Is the form fixed?
 
 - It is not. The hint vanishes the moment somebody types, so it is gone exactly when they are trying to follow it.
-- It is, since the hint is readable now.
 - It is, provided the hint is short.
+- It is, since the hint is readable now.
 
 <details>
 <summary>After your attempt</summary>
 
 It is not. The hint vanishes the moment somebody types, so it is gone exactly when they are trying to follow it. — Contrast was the measurable half of the problem. A placeholder is an instruction that removes itself on use, and no colour change alters that.
 
-It is, since the hint is readable now. — It is readable right up to the first keystroke. Anybody who pauses mid-entry, or comes back to check, has nothing to read.
-
 It is, provided the hint is short. — Length changes nothing about when it disappears. Short instructions vanish just as completely.
+
+It is, since the hint is readable now. — It is readable right up to the first keystroke. Anybody who pauses mid-entry, or comes back to check, has nothing to read.
 
 Improve: Move that hint to an associated line under the label in step 2, and record what moved where. Note the change in step 5.
 
@@ -5288,18 +5288,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your error summary appears at the top of the form when submission fails, and you saw it appear. Can you write that errors are announced?
 
-- It cannot be written. You confirmed it appears on screen, which is a different behaviour from anybody being told it appeared.
-- It can, because appearing is what announcing means.
 - It can, since you specified the announcement.
+- It can, because appearing is what announcing means.
+- It cannot be written. You confirmed it appears on screen, which is a different behaviour from anybody being told it appeared.
 
 <details>
 <summary>After your attempt</summary>
 
-It cannot be written. You confirmed it appears on screen, which is a different behaviour from anybody being told it appeared. — Appearing and being announced are two different things, and only one of them is visible to a sighted check. The honest record splits the line in two.
+It can, since you specified the announcement. — Specifying it is what makes it likely to get built. It is not evidence that it works.
 
 It can, because appearing is what announcing means. — For a person looking at the top of the form, the two coincide. For everybody else, the message can appear in silence.
 
-It can, since you specified the announcement. — Specifying it is what makes it likely to get built. It is not evidence that it works.
+It cannot be written. You confirmed it appears on screen, which is a different behaviour from anybody being told it appeared. — Appearing and being announced are two different things, and only one of them is visible to a sighted check. The honest record splits the line in two.
 
 Improve: Split that line in your untested list in step 4 into what you saw and what nobody has heard, then record the change in step 5.
 
@@ -6033,18 +6033,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The shortlist icon is a heart. What should its alt text say?
 
-- Add to shortlist — what pressing it does, matching the label you wrote in Module 8.
 - Heart icon, so the person knows what is on screen.
 - Save, since that is shorter and clearer.
+- Add to shortlist — what pressing it does, matching the label you wrote in Module 8.
 
 <details>
 <summary>After your attempt</summary>
 
-Add to shortlist — what pressing it does, matching the label you wrote in Module 8. — For a control, the shape is irrelevant and the action is everything. Matching the Module 8 wording stops the same control having two names.
-
 Heart icon, so the person knows what is on screen. — Knowing a heart is there tells the reader nothing about what it does, and they cannot see the visual convention that makes it obvious to you.
 
 Save, since that is shorter and clearer. — Shorter is good and a second name is not. If the panel says shortlist, this control says shortlist.
+
+Add to shortlist — what pressing it does, matching the label you wrote in Module 8. — For a control, the shape is irrelevant and the action is everything. Matching the Module 8 wording stops the same control having two names.
 
 Improve: Check each functional alt text in step 3 against your Module 8 action labels and fix any mismatch. Record the change in step 5.
 
@@ -6063,18 +6063,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A promotional image has the price set inside the picture, and you have put the price into the alt text. Is that finished?
 
-- It is not. Text inside an image cannot be searched, translated or enlarged, and alt text fixes only the fourth of those.
 - It is, since the information is now available to a screen reader.
 - It is, provided the alt text is an exact copy.
+- It is not. Text inside an image cannot be searched, translated or enlarged, and alt text fixes only the fourth of those.
 
 <details>
 <summary>After your attempt</summary>
 
-It is not. Text inside an image cannot be searched, translated or enlarged, and alt text fixes only the fourth of those. — The real repair is to take the words out of the image and make them real text. Alt text is the fallback for the rare case where the words genuinely cannot move.
-
 It is, since the information is now available to a screen reader. — One of four failures is closed. Somebody enlarging their text still gets an unchanged banner, and nobody can search for the offer.
 
 It is, provided the alt text is an exact copy. — An exact copy is the right thing to write when the text cannot move. It does not make the text findable, translatable or resizable.
+
+It is not. Text inside an image cannot be searched, translated or enlarged, and alt text fixes only the fourth of those. — The real repair is to take the words out of the image and make them real text. Alt text is the fallback for the rare case where the words genuinely cannot move.
 
 Improve: Move that text out of the image in step 4, or write down the reason it cannot move and reproduce it in full. Record the change in step 5.
 
@@ -6770,18 +6770,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your video is hosted on a platform that generates captions automatically. Is the captioning handled?
 
-- It is not. Automatic captions are frequently wrong with names, numbers and accents, and somebody has to check them.
 - It is, since automatic captions have become very accurate.
 - It is, as long as viewers can report errors.
+- It is not. Automatic captions are frequently wrong with names, numbers and accents, and somebody has to check them.
 
 <details>
 <summary>After your attempt</summary>
 
-It is not. Automatic captions are frequently wrong with names, numbers and accents, and somebody has to check them. — Wrong captions are worse than missing ones, because everybody assumes the work has been done. If the video carries information, correcting them is a task with a name against it.
-
 It is, since automatic captions have become very accurate. — They are good on clear speech in common accents. Names, measurements and technical words are exactly where they fail, and those are usually what matters.
 
 It is, as long as viewers can report errors. — That asks the people least able to check the captions to proofread them. The errors are invisible to the reader who depends on them.
+
+It is not. Automatic captions are frequently wrong with names, numbers and accents, and somebody has to check them. — Wrong captions are worse than missing ones, because everybody assumes the work has been done. If the video carries information, correcting them is a task with a name against it.
 
 Improve: Name the person who will correct the captions in step 2, or write that nobody has been found. Record the change in step 5.
 
@@ -6800,16 +6800,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your carousel now has a pause button, so it meets the criterion. Is there a better answer?
 
-- Often, yes: removing motion nobody asked for beats adding a control to manage it.
 - No, a pause control is what the criterion asks for.
+- Often, yes: removing motion nobody asked for beats adding a control to manage it.
 - No, because removing it loses content.
 
 <details>
 <summary>After your attempt</summary>
 
-Often, yes: removing motion nobody asked for beats adding a control to manage it. — A pause control is a thing to find, understand and press before the reading can start. If the carousel exists because the template had one, removing it solves the problem and shortens the page.
-
 No, a pause control is what the criterion asks for. — It is what the criterion accepts. The criterion is a floor, and meeting it is not the same as having made the right decision.
+
+Often, yes: removing motion nobody asked for beats adding a control to manage it. — A pause control is a thing to find, understand and press before the reading can start. If the carousel exists because the template had one, removing it solves the problem and shortens the page.
 
 No, because removing it loses content. — It loses the ability to feature an unbounded list. Whether that matters is a content decision worth making deliberately rather than inheriting.
 
@@ -7530,16 +7530,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You ran a screen-reader session and found six failures. Can you write that the product works for blind users?
 
-- It cannot be written. You found six real failures, and a sighted person who designed the product is not simulating anyone’s daily experience.
 - It can, since the failures found were real and have been fixed.
+- It cannot be written. You found six real failures, and a sighted person who designed the product is not simulating anyone’s daily experience.
 - It can, provided you note the session was short.
 
 <details>
 <summary>After your attempt</summary>
 
-It cannot be written. You found six real failures, and a sighted person who designed the product is not simulating anyone’s daily experience. — The findings are genuine and worth acting on. What the session cannot do is tell you how somebody who uses these tools every day would fare, because fluency, habits and settings all differ.
-
 It can, since the failures found were real and have been fixed. — Fixing what you found removes those six. It says nothing about what a competent daily user would meet in the first two minutes.
+
+It cannot be written. You found six real failures, and a sighted person who designed the product is not simulating anyone’s daily experience. — The findings are genuine and worth acting on. What the session cannot do is tell you how somebody who uses these tools every day would fare, because fluency, habits and settings all differ.
 
 It can, provided you note the session was short. — Length is the smallest of the differences. Seeing the screen and knowing the design matter far more than the twenty minutes.
 
@@ -7590,18 +7590,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The shortlist icon announces only “button”. Where does the repair belong?
 
-- With the build, since your alt-text table already says it should announce Add to shortlist.
 - With you, since the announcement is wrong.
 - Nowhere yet — it needs investigating first.
+- With the build, since your alt-text table already says it should announce Add to shortlist.
 
 <details>
 <summary>After your attempt</summary>
 
-With the build, since your alt-text table already says it should announce Add to shortlist. — The decision exists and was not applied. It goes to whoever builds it with the expected wording quoted, rather than being rewritten as though it were new.
-
 With you, since the announcement is wrong. — It would be yours if nothing said what should happen. Your table already does, which is why this is a defect rather than a gap.
 
 Nowhere yet — it needs investigating first. — The investigation is done: you know what it says and what it should say. That is a complete defect report.
+
+With the build, since your alt-text table already says it should announce Add to shortlist. — The decision exists and was not applied. It goes to whoever builds it with the expected wording quoted, rather than being rewritten as though it were new.
 
 Improve: Mark every finding in step 4 as specification or build, and check each one against your own earlier documents before deciding. Record the change in step 5.
 
@@ -8346,16 +8346,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You loaded the page on a throttled connection and it took a while. What should you write down?
 
-- The number of seconds until somebody could actually do something, and which throttle setting you used.
 - That the page is slow on poor connections.
+- The number of seconds until somebody could actually do something, and which throttle setting you used.
 - The total page weight, which is the underlying cause.
 
 <details>
 <summary>After your attempt</summary>
 
-The number of seconds until somebody could actually do something, and which throttle setting you used. — A number with its conditions is evidence. Time to usable is the figure that matters, because the person is waiting to act rather than waiting for everything to arrive.
-
 That the page is slow on poor connections. — Everybody already believes that, and nothing about it can be compared before and after a fix.
+
+The number of seconds until somebody could actually do something, and which throttle setting you used. — A number with its conditions is evidence. Time to usable is the figure that matters, because the person is waiting to act rather than waiting for everything to arrive.
 
 The total page weight, which is the underlying cause. — Weight is useful and it is not the experience. Two pages of the same weight can differ by ten seconds in when they become usable.
 
@@ -8376,18 +8376,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your notification on the lock screen names the class somebody booked. Why does this module care?
 
+- Because notifications should always be minimal.
 - A shared device is common, and the lock screen is read by whoever is near it, so the design has assumed a private phone.
 - It does not — that is a security question rather than an access one.
-- Because notifications should always be minimal.
 
 <details>
 <summary>After your attempt</summary>
 
+Because notifications should always be minimal. — A rule about brevity would fix this one by accident. The reasoning is about who else can see the screen.
+
 A shared device is common, and the lock screen is read by whoever is near it, so the design has assumed a private phone. — Access work includes the conditions people actually use the product in. One phone shared between a household changes what personal means, and the fix is a wording change.
 
 It does not — that is a security question rather than an access one. — It is both, and the assumption behind it is the same one this lesson is about: that everybody has their own device, connection and language.
-
-Because notifications should always be minimal. — A rule about brevity would fix this one by accident. The reasoning is about who else can see the screen.
 
 Improve: Rewrite that notification so it says what happened without naming the detail, and record it in step 5 with the change.
 
@@ -9085,18 +9085,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Three problems are still open, so you plan to publish the statement once they are fixed. Who does that decision serve?
 
-- You. The person deciding whether to attempt your product gets nothing in the meantime and finds out by losing an afternoon.
-- Users, who would otherwise be put off by a list of faults.
 - Nobody in particular; it is just good practice to finish first.
+- Users, who would otherwise be put off by a list of faults.
+- You. The person deciding whether to attempt your product gets nothing in the meantime and finds out by losing an afternoon.
 
 <details>
 <summary>After your attempt</summary>
 
-You. The person deciding whether to attempt your product gets nothing in the meantime and finds out by losing an afternoon. — A dated statement with three known problems lets somebody decide in thirty seconds. Waiting for a perfect one means the page never appears, because there are always three more.
+Nobody in particular; it is just good practice to finish first. — It is the practice that produces no statement at all, which is why this lesson argues against it directly.
 
 Users, who would otherwise be put off by a list of faults. — Being put off by a known fault is a decision made with information. Meeting it unannounced is the same fault without the choice.
 
-Nobody in particular; it is just good practice to finish first. — It is the practice that produces no statement at all, which is why this lesson argues against it directly.
+You. The person deciding whether to attempt your product gets nothing in the meantime and finds out by losing an afternoon. — A dated statement with three known problems lets somebody decide in thirty seconds. Waiting for a perfect one means the page never appears, because there are always three more.
 
 Improve: Move your three open items into the not-yet-fixed list in step 1 with intended dates, and keep the statement publishable today. Record the change in step 5.
 
@@ -9145,18 +9145,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You plan to recruit three participants who use assistive technology, over one week, with the usual voucher. What is most likely to go wrong?
 
+- Nothing, if the voucher is generous enough.
 - The lead time. Reaching people through an organisation takes longer, and a week produces no sessions rather than three.
 - The number: three is too few to conclude anything.
-- Nothing, if the voucher is generous enough.
 
 <details>
 <summary>After your attempt</summary>
 
+Nothing, if the voucher is generous enough. — Payment matters, and it is the second problem here rather than the first. No amount of money shortens a recruitment route.
+
 The lead time. Reaching people through an organisation takes longer, and a week produces no sessions rather than three. — A month is a realistic minimum, because there is a person in the middle with their own work, and participants need to be asked about accommodations before agreeing.
 
 The number: three is too few to conclude anything. — Three is a reasonable number for finding problems, and it is not the thing that stops the sessions happening.
-
-Nothing, if the voucher is generous enough. — Payment matters, and it is the second problem here rather than the first. No amount of money shortens a recruitment route.
 
 Improve: Set a lead time in weeks in step 4, say who you would go through, and replace any voucher with a figure you can defend. Record the change in step 5.
 

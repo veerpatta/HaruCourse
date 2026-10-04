@@ -355,18 +355,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The screen now looks finished, so you say the design is further along than it was. What is wrong with that?
 
-- Finish makes the design more expensive to change, not further along. The structural rework is still ahead of it.
 - Nothing is wrong: a finished screen is what gets built.
 - It is only wrong if the type scale is still unsettled.
+- Finish makes the design more expensive to change, not further along. The structural rework is still ahead of it.
 
 <details>
 <summary>After your attempt</summary>
 
-Finish makes the design more expensive to change, not further along. The structural rework is still ahead of it. — Polish sits on top of the structure. If the structure has not been tested, every hour of polish is an hour you will be reluctant to throw away.
-
 Nothing is wrong: a finished screen is what gets built. — A screen gets built from a structure somebody agreed. Polish on an untested structure is the part that gets rebuilt.
 
 It is only wrong if the type scale is still unsettled. — The scale is one of the cheap decisions. The costly one is the arrangement underneath it.
+
+Finish makes the design more expensive to change, not further along. The structural rework is still ahead of it. — Polish sits on top of the structure. If the structure has not been tested, every hour of polish is an hour you will be reluctant to throw away.
 
 Improve: Read your sentence in “What this version of the screen is for” in step 1. If it claims progress rather than naming a decision, rewrite it and record the change in step 5.
 
@@ -415,16 +415,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You cannot name a question that fidelity has made expensive. What does that suggest?
 
-- You have not yet noticed what you would now resist changing, and that resistance is the question.
 - The screen was already well structured, so nothing became expensive.
+- You have not yet noticed what you would now resist changing, and that resistance is the question.
 - It only matters once other people are reviewing the screen.
 
 <details>
 <summary>After your attempt</summary>
 
-You have not yet noticed what you would now resist changing, and that resistance is the question. — Ask which change would make you sigh. The sigh is the cost of the detail you added, and naming it keeps the question askable.
-
 The screen was already well structured, so nothing became expensive. — Adding type, spacing and colour always closes something. Good structure makes the closure safer rather than absent.
+
+You have not yet noticed what you would now resist changing, and that resistance is the question. — Ask which change would make you sigh. The sigh is the cost of the detail you added, and naming it keeps the question askable.
 
 It only matters once other people are reviewing the screen. — Reviewers are why it shows up, and the cost exists whether or not anyone else is looking.
 
@@ -1133,16 +1133,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You would rather build a component library first and design the screens afterwards. What goes wrong?
 
-- A library invented before real screens describes an imaginary product, and the first week of real work breaks it.
 - Nothing goes wrong, as long as the library follows a published design system.
+- A library invented before real screens describes an imaginary product, and the first week of real work breaks it.
 - It only wastes time if the product later changes direction.
 
 <details>
 <summary>After your attempt</summary>
 
-A library invented before real screens describes an imaginary product, and the first week of real work breaks it. — Components are a summary of what repeated. You cannot summarise screens you have not drawn yet.
-
 Nothing goes wrong, as long as the library follows a published design system. — A published system tells you how a component should behave. It cannot tell you which components your product actually repeats.
+
+A library invented before real screens describes an imaginary product, and the first week of real work breaks it. — Components are a summary of what repeated. You cannot summarise screens you have not drawn yet.
 
 It only wastes time if the product later changes direction. — The waste arrives sooner than that. It arrives the first time a real screen needs something the library never imagined.
 
@@ -1164,17 +1164,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 One of your comparison rows says two cards are “slightly different”. Why is that not yet a finding?
 
 - Nobody can act on it. A measured difference, such as 4px of padding or one weight step, can be called accidental or meaningful.
-- It is a finding and only needs to be written more formally.
 - It does not matter, because the merge removes the difference anyway.
+- It is a finding and only needs to be written more formally.
 
 <details>
 <summary>After your attempt</summary>
 
 Nobody can act on it. A measured difference, such as 4px of padding or one weight step, can be called accidental or meaningful. — The decision ahead of you is whether the difference carried meaning. You cannot judge a difference you have not named.
 
-It is a finding and only needs to be written more formally. — Formality is not the gap. The gap is that no number and no named property has been recorded.
-
 It does not matter, because the merge removes the difference anyway. — The merge removes it, and the loss list still has to say what was removed. That sentence needs the measurement.
+
+It is a finding and only needs to be written more formally. — Formality is not the gap. The gap is that no number and no named property has been recorded.
 
 Improve: Go back to your near-duplicate rows in step 3 and put a number or a named property on every difference, then record the change in step 5.
 
@@ -1926,18 +1926,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You make the important button a stronger colour and leave everything else as it was. Why is that weak?
 
-- Colour fails in greyscale, in sunlight, for some readers, and when someone later changes the palette.
-- It works as long as the colour meets the contrast threshold.
 - It is weak only for people who cannot distinguish certain colours.
+- It works as long as the colour meets the contrast threshold.
+- Colour fails in greyscale, in sunlight, for some readers, and when someone later changes the palette.
 
 <details>
 <summary>After your attempt</summary>
 
-Colour fails in greyscale, in sunlight, for some readers, and when someone later changes the palette. — Weight, size and containment survive all four. Colour is worth adding on top of them and is a poor place to keep the ranking.
+It is weak only for people who cannot distinguish certain colours. — That group matters and is not the whole problem. The same button is unrankable in bright sunlight and after a repaint.
 
 It works as long as the colour meets the contrast threshold. — Contrast makes the text readable against its background. It does not make one button outrank another.
 
-It is weak only for people who cannot distinguish certain colours. — That group matters and is not the whole problem. The same button is unrankable in bright sunlight and after a repaint.
+Colour fails in greyscale, in sunlight, for some readers, and when someone later changes the palette. — Weight, size and containment survive all four. Colour is worth adding on top of them and is a poor place to keep the ranking.
 
 Improve: Look at your three levels in step 2. If any two differ by colour alone, change weight or containment until they differ in two properties, and record the change in step 5.
 
@@ -1956,18 +1956,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One screen has two filled buttons and you do not want to demote either. What does that tell you?
 
+- A larger gap between the two buttons solves it.
 - The screen is doing two jobs, so either one action wins or the screen is split.
 - It is acceptable when the two actions are genuinely equal.
-- A larger gap between the two buttons solves it.
 
 <details>
 <summary>After your attempt</summary>
 
+A larger gap between the two buttons solves it. — Space stops mis-taps, which is worth doing. It still tells nobody which action the screen is for.
+
 The screen is doing two jobs, so either one action wins or the screen is split. — The reluctance is the finding. Write the two jobs down and the choice usually makes itself.
 
 It is acceptable when the two actions are genuinely equal. — Equal actions leave the person to decide with no help at all. Someone will press one while believing she pressed the other.
-
-A larger gap between the two buttons solves it. — Space stops mis-taps, which is worth doing. It still tells nobody which action the screen is for.
 
 Improve: Take each screen you marked in step 1 as carrying more than one main action, write the two jobs it does, then choose one or split the screen, and record it in step 5.
 
@@ -1986,18 +1986,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your cancellation dialogue offers “OK” and “Cancel”. What is the trouble?
 
-- Neither word says what will happen, so the person has to remember the question to answer it.
-- The only trouble is that “Cancel” is confusing next to cancelling a booking.
 - They are standard words, so people already understand them.
+- The only trouble is that “Cancel” is confusing next to cancelling a booking.
+- Neither word says what will happen, so the person has to remember the question to answer it.
 
 <details>
 <summary>After your attempt</summary>
 
-Neither word says what will happen, so the person has to remember the question to answer it. — Labels that name the outcome, such as “Keep my booking” and “Release my place”, can be read on their own.
+They are standard words, so people already understand them. — People understand how to press them. What they do not know is which one does the thing they wanted.
 
 The only trouble is that “Cancel” is confusing next to cancelling a booking. — That collision is real and it is one instance. “OK” carries no outcome anywhere it appears.
 
-They are standard words, so people already understand them. — People understand how to press them. What they do not know is which one does the thing they wanted.
+Neither word says what will happen, so the person has to remember the question to answer it. — Labels that name the outcome, such as “Keep my booking” and “Release my place”, can be read on their own.
 
 Improve: Read each label in step 3 aloud as “I want to …”. Rewrite any that does not finish the sentence, pair each destructive label with its safe alternative, and record the change in step 5.
 
@@ -2520,20 +2520,20 @@ A supplied booking form, made up for practice. Someone fills in six fields, mist
 What is the most serious thing wrong with this screen?
 
 - The six fields were cleared, so one mistake has cost the person five answers that were right.
+- The form validated on submission rather than as the person typed.
 - The banner does not say which field was wrong.
 - The message is red, and some people cannot distinguish that.
-- The form validated on submission rather than as the person typed.
 
 <details>
 <summary>After your attempt</summary>
 
 The six fields were cleared, so one mistake has cost the person five answers that were right. — Losing the input is the only failure here that takes back work already done. The rest of this screen is irritating; this is the part that makes people give up and ring instead.
 
+The form validated on submission rather than as the person typed. — Validating on submission is a reasonable choice. Checking a half-typed expiry date on every keystroke tells someone they are wrong while they are still working.
+
 The banner does not say which field was wrong. — A real problem and the second one to fix. It costs the person a hunt through the form, while the cleared fields cost them the form itself.
 
 The message is red, and some people cannot distinguish that. — Carrying meaning in colour alone is a genuine fault, and it matters more once the message actually says something. Here the wording is empty whatever colour it is.
-
-The form validated on submission rather than as the person typed. — Validating on submission is a reasonable choice. Checking a half-typed expiry date on every keystroke tells someone they are wrong while they are still working.
 
 Write your own failure path so every value survives, the summary names the first field with a problem, and the error sits at that field.
 
@@ -2581,18 +2581,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 To keep the form looking clean you put each field name inside the box as grey text. What happens?
 
+- It is fine as long as the grey text has enough contrast.
 - The name disappears the moment someone types, so nobody can check their answers before submitting.
 - Nothing much: people remember what they were asked a moment ago.
-- It is fine as long as the grey text has enough contrast.
 
 <details>
 <summary>After your attempt</summary>
 
+It is fine as long as the grey text has enough contrast. — Contrast helps the empty box and changes nothing about the filled one, because the words are no longer there to read.
+
 The name disappears the moment someone types, so nobody can check their answers before submitting. — The label is needed most at the end, when a person reads back what they entered. Grey text inside the box has gone by then.
 
 Nothing much: people remember what they were asked a moment ago. — People are interrupted mid-form constantly. Anyone who looks away, or comes back to fix one error, is reading a set of unlabelled boxes.
-
-It is fine as long as the grey text has enough contrast. — Contrast helps the empty box and changes nothing about the filled one, because the words are no longer there to read.
 
 Improve: Go back to your field table in step 2 and give every field a label that stays above the box. Move anything useful from the placeholder into the help line, then record the change in step 5.
 
@@ -2611,18 +2611,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your form rejects a submission and reloads with every box empty. Your reasoning was that the person can fill it in again. What is wrong?
 
-- One mistake now costs every correct answer, which is worse for the person than not validating at all.
 - It is acceptable if the error message is clear enough.
 - Only the field with the error needs to be preserved.
+- One mistake now costs every correct answer, which is worse for the person than not validating at all.
 
 <details>
 <summary>After your attempt</summary>
 
-One mistake now costs every correct answer, which is worse for the person than not validating at all. — Skipping validation at least lets the work through. Validation that clears the form takes the work away and gives nothing back.
-
 It is acceptable if the error message is clear enough. — A clear message explains what went wrong on a screen where everything the person typed has gone. The wording does not return the work.
 
 Only the field with the error needs to be preserved. — The field with the error is the one thing they were going to retype anyway. It is the five correct fields that must survive.
+
+One mistake now costs every correct answer, which is worse for the person than not validating at all. — Skipping validation at least lets the work through. Validation that clears the form takes the work away and gives nothing back.
 
 Improve: Rewrite the preserved-input box in step 4 so it describes every value still in place after a failure, then record the change in step 5.
 
@@ -2641,18 +2641,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nothing of your form is built, so you write “keyboard accessible: yes” on the specification. What is the honest version?
 
+- Tab through a similar form on a live site and report that result as yours.
 - Write what you actually did, and mark every claim you could not test as unchecked.
 - Leave the keyboard section out until something exists to test.
-- Tab through a similar form on a live site and report that result as yours.
 
 <details>
 <summary>After your attempt</summary>
 
+Tab through a similar form on a live site and report that result as yours. — Tabbing through someone else’s form is a useful rehearsal and it teaches you what to look for. Reporting it as your form’s result is a claim about something you have not tested.
+
 Write what you actually did, and mark every claim you could not test as unchecked. — An untested claim written as a result is the kind of thing that ships and fails. A named gap gets checked by whoever builds it.
 
 Leave the keyboard section out until something exists to test. — Leaving it out loses the requirement entirely. A stated gap survives into the build; a blank does not.
-
-Tab through a similar form on a live site and report that result as yours. — Tabbing through someone else’s form is a useful rehearsal and it teaches you what to look for. Reporting it as your form’s result is a claim about something you have not tested.
 
 Improve: Rewrite your notes in step 5 so each line says either what you did or what remains unchecked, then record that change in the last box.
 
@@ -3084,17 +3084,17 @@ A made-up phone header for a class booking product. It holds a logo, a search ic
 
 What should come out from behind the menu?
 
-- My bookings, because returning to a booking they already hold is what most people came to do.
 - Nothing: the icon is understood, so the menu costs almost nothing.
+- My bookings, because returning to a booking they already hold is what most people came to do.
 - Everything, since hiding navigation is always a mistake.
 - About us, because it explains the product to newcomers.
 
 <details>
 <summary>After your attempt</summary>
 
-My bookings, because returning to a booking they already hold is what most people came to do. — The visible set is decided by what people arrived for, and here that is the existing booking. Careers and Terms can stay behind the icon because almost nobody arrives wanting them.
-
 Nothing: the icon is understood, so the menu costs almost nothing. — Recognising the icon was never the problem. People do not open a menu to find out what a product offers, so anything essential behind it is effectively gone for anyone who does not already know it is there.
+
+My bookings, because returning to a booking they already hold is what most people came to do. — The visible set is decided by what people arrived for, and here that is the existing booking. Careers and Terms can stay behind the icon because almost nobody arrives wanting them.
 
 Everything, since hiding navigation is always a mistake. — Six visible destinations on a phone header leave no room for the screen itself. A narrow layout needs priority, which means some things do go behind the icon.
 
@@ -3223,16 +3223,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your current section is shown in the brand colour and nothing else. Why is that not enough?
 
-- Colour alone disappears in greyscale, in bright sunlight and for many readers, and the location signal goes with it.
 - It is enough as long as the colour has strong contrast against the background.
+- Colour alone disappears in greyscale, in bright sunlight and for many readers, and the location signal goes with it.
 - It is fine because the page title repeats the section name.
 
 <details>
 <summary>After your attempt</summary>
 
-Colour alone disappears in greyscale, in bright sunlight and for many readers, and the location signal goes with it. — A location signal has to survive conditions you do not control. Weight, a rule underneath or a shape change carries it when colour cannot.
-
 It is enough as long as the colour has strong contrast against the background. — Contrast makes the word readable. It does not say that this word means “you are here” rather than “this one is styled differently”.
+
+Colour alone disappears in greyscale, in bright sunlight and for many readers, and the location signal goes with it. — A location signal has to survive conditions you do not control. Weight, a rule underneath or a shape change carries it when colour cannot.
 
 It is fine because the page title repeats the section name. — The page title helps, and it sits somewhere else on the screen. The navigation still has to show which of its own items you are on.
 
@@ -3253,18 +3253,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 On the phone layout you moved every destination behind the menu icon so the header stays clean. What did that cost?
 
-- Anything people did not already know about is now effectively removed for them, because nobody opens a menu to browse.
-- Nothing, because the icon is widely recognised.
 - One extra tap, which is a small price for a clean header.
+- Nothing, because the icon is widely recognised.
+- Anything people did not already know about is now effectively removed for them, because nobody opens a menu to browse.
 
 <details>
 <summary>After your attempt</summary>
 
-Anything people did not already know about is now effectively removed for them, because nobody opens a menu to browse. — A menu serves people who already know what they are looking for. Everyone else sees a product that appears to do one thing.
+One extra tap, which is a small price for a clean header. — The tap is the smaller half of the cost. The larger half is that the destination is no longer part of what the product appears to offer.
 
 Nothing, because the icon is widely recognised. — Recognising the icon and deciding to open it are two different acts. The cost is a tap plus the decision to take it, paid by the people least likely to.
 
-One extra tap, which is a small price for a clean header. — The tap is the smaller half of the cost. The larger half is that the destination is no longer part of what the product appears to offer.
+Anything people did not already know about is now effectively removed for them, because nobody opens a menu to browse. — A menu serves people who already know what they are looking for. Everyone else sees a product that appears to do one thing.
 
 Improve: Rewrite the visibility rule in step 3 so at least the destination people came for stays visible, then record the change in step 5.
 
@@ -3284,17 +3284,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Back from a detail view returns the person to the top of an unfiltered list. What is wrong?
 
 - The filtering and the scroll position were the person’s work, and back has thrown it away.
-- Nothing: landing on a clean list is at least predictable.
 - The fix is to stop people leaving the list in the first place.
+- Nothing: landing on a clean list is at least predictable.
 
 <details>
 <summary>After your attempt</summary>
 
 The filtering and the scroll position were the person’s work, and back has thrown it away. — Going into a detail view and returning is one of the commonest moves in any product. Losing the list each time makes comparing two things nearly impossible.
 
-Nothing: landing on a clean list is at least predictable. — It is predictable and it is the wrong place. Predictability matters after the person’s work is preserved, not instead of it.
-
 The fix is to stop people leaving the list in the first place. — The detail view exists because people need what is in it. The list has to survive the trip rather than the trip being prevented.
+
+Nothing: landing on a clean list is at least predictable. — It is predictable and it is the wrong place. Predictability matters after the person’s work is preserved, not instead of it.
 
 Improve: Rewrite the detail-view back behaviour in step 4 to name the filters and the position that are preserved, then record the change in step 5.
 
@@ -3818,19 +3818,19 @@ A made-up class list at phone width. Three rows break. One class is called “Sa
 
 Which of these should you deal with first, and why?
 
-- The class with no places left showing “0”, because a number invites the person to try to book it.
-- The very long class name, because it wraps to four lines and pulls the row apart.
 - The missing price, because a blank cell looks like broken data.
+- The very long class name, because it wraps to four lines and pulls the row apart.
+- The class with no places left showing “0”, because a number invites the person to try to book it.
 - None of them: these are rare rows and the ordinary ones matter more.
 
 <details>
 <summary>After your attempt</summary>
 
-The class with no places left showing “0”, because a number invites the person to try to book it. — A zero reads as a value among other values, so people tap it and meet a dead end. Words such as “Full, see other dates” stop the wasted trip and offer the next move.
+The missing price, because a blank cell looks like broken data. — A blank does look broken, and “price on request” is worth writing. It leaves the person uncertain, while the zero actively sends them the wrong way.
 
 The very long class name, because it wraps to four lines and pulls the row apart. — A real problem and the second one to work on. A tall row is untidy; a full class that looks bookable sends someone down a path ending in nothing.
 
-The missing price, because a blank cell looks like broken data. — A blank does look broken, and “price on request” is worth writing. It leaves the person uncertain, while the zero actively sends them the wrong way.
+The class with no places left showing “0”, because a number invites the person to try to book it. — A zero reads as a value among other values, so people tap it and meet a dead end. Words such as “Full, see other dates” stop the wasted trip and offer the next move.
 
 None of them: these are rare rows and the ordinary ones matter more. — The ordinary rows were never going to break. Rare rows are exactly where a list stops working, and on paper they cost almost nothing to fix.
 
@@ -3881,17 +3881,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You put all eight attributes in the row so nobody has to open a detail view. What goes wrong?
 
 - A row carrying everything makes comparison harder, because the two things people compare on are buried among six they do not.
-- Nothing: more information is always better for the reader.
 - It is only a problem on a phone; a desktop table can carry eight.
+- Nothing: more information is always better for the reader.
 
 <details>
 <summary>After your attempt</summary>
 
 A row carrying everything makes comparison harder, because the two things people compare on are buried among six they do not. — A row exists for comparing, and comparison depends on what you left out. The detail view is where the rest belongs.
 
-Nothing: more information is always better for the reader. — More information is better in the detail view, where a person has already chosen. In a list it is the thing scanning has to fight through.
-
 It is only a problem on a phone; a desktop table can carry eight. — A desktop table can display eight, and people still compare on two or three. Width changes what fits, not what people are doing.
+
+Nothing: more information is always better for the reader. — More information is better in the detail view, where a person has already chosen. In a list it is the thing scanning has to fight through.
 
 Improve: Cut your attribute list in step 1 to the ones with a reason beside them, move the rest into the omissions box in step 2, then record the change in step 5.
 
@@ -3911,17 +3911,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your table has eight columns, so on a phone you let it scroll sideways. What is the objection?
 
 - Scrolling sideways separates each value from the row it belongs to, so people lose track of what they are reading.
-- Nothing: horizontal scrolling is a familiar pattern on a phone.
 - The fix is to shrink the text until all eight columns fit.
+- Nothing: horizontal scrolling is a familiar pattern on a phone.
 
 <details>
 <summary>After your attempt</summary>
 
 Scrolling sideways separates each value from the row it belongs to, so people lose track of what they are reading. — The identifying value scrolls away first, and it is the one thing every other value needs. Turning each row into a record keeps the heading with its values.
 
-Nothing: horizontal scrolling is a familiar pattern on a phone. — It is familiar in reference tables people read rather than act on. For a list somebody has to choose from, it is a poor default.
-
 The fix is to shrink the text until all eight columns fit. — Eight columns at phone width means text nobody can read, and those eight columns were probably too many in the first place.
+
+Nothing: horizontal scrolling is a familiar pattern on a phone. — It is familiar in reference tables people read rather than act on. For a list somebody has to choose from, it is a poor default.
 
 Improve: Redraw one row as a record in step 3, with an identifying heading and a label beside each value, then record the change in step 5.
 
@@ -3940,18 +3940,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You laid the list out using short, tidy sample names and round prices. What will that hide?
 
-- Every layout problem the real data causes: the long name, the large number, the missing value.
 - Nothing much: the real data will be similar in shape.
 - Only the rarest cases, which can be handled later.
+- Every layout problem the real data causes: the long name, the large number, the missing value.
 
 <details>
 <summary>After your attempt</summary>
 
-Every layout problem the real data causes: the long name, the large number, the missing value. — Tidy examples are the rows that were always going to work. The design is decided by the ones that are not tidy, and on paper they cost nothing to try.
-
 Nothing much: the real data will be similar in shape. — Real data is never similar in shape. One class name will be four times the length of the rest, and it will be the one in the screenshot.
 
 Only the rarest cases, which can be handled later. — Handled later means handled by whoever builds it, at the moment they are least able to change the layout.
+
+Every layout problem the real data causes: the long name, the large number, the missing value. — Tidy examples are the rows that were always going to work. The design is decided by the ones that are not tidy, and on paper they cost nothing to try.
 
 Improve: Lay out your longest real name and largest real number in step 4, write what broke, then record the change in step 5.
 
@@ -4684,18 +4684,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your modal explains the cancellation policy in four paragraphs so people can read it before deciding. What is wrong with that?
 
-- A modal covers the screen and holds the keyboard, so it is the worst place for anything a person needs to read carefully or compare.
 - Nothing, as long as the modal scrolls.
 - The paragraphs should be cut until they fit the box.
+- A modal covers the screen and holds the keyboard, so it is the worst place for anything a person needs to read carefully or compare.
 
 <details>
 <summary>After your attempt</summary>
 
-A modal covers the screen and holds the keyboard, so it is the worst place for anything a person needs to read carefully or compare. — Reference text needs room, scrolling and the freedom to look at something else. Put it on the page, or give it a screen of its own.
-
 Nothing, as long as the modal scrolls. — Scrolling inside a box that hides the thing being decided about is a small window onto a long document. The person still cannot see what they are agreeing about.
 
 The paragraphs should be cut until they fit the box. — Cutting a policy to fit a container changes what it says. The container is the thing that is wrong here.
+
+A modal covers the screen and holds the keyboard, so it is the worst place for anything a person needs to read carefully or compare. — Reference text needs room, scrolling and the freedom to look at something else. Put it on the page, or give it a screen of its own.
 
 Improve: Read the wording in modal-a and modal-b in step 3. Move any reference text onto the page or its own screen, and record the move in step 5.
 
@@ -5120,21 +5120,21 @@ Three supplied messages from a made-up booking product, all shown the same way: 
 
 Which of these is still delivered by a box that fades after four seconds?
 
+- C only. People watch for failures.
+- None of them. A message that fades has not been delivered at all.
 - A only. Nothing depends on the person seeing it, and it will happen again.
 - B and C as well. Four seconds is long enough to read a short sentence.
-- None of them. A message that fades has not been delivered at all.
-- C only. People watch for failures.
 
 <details>
 <summary>After your attempt</summary>
 
-A only. Nothing depends on the person seeing it, and it will happen again. — A missed save note costs nothing, so the quiet treatment fits. B carries a deadline and C carries money, and both are gone before someone looking at the form could read them.
-
-B and C as well. Four seconds is long enough to read a short sentence. — Four seconds is long enough to read one, and only if the person happens to be looking at that corner. During payment they are looking at the card field.
+C only. People watch for failures. — People watch for a failure once they suspect one. The failure arrives before the suspicion, and a fading box is how someone ends up unsure whether they have been charged.
 
 None of them. A message that fades has not been delivered at all. — The rule is about consequence rather than fading. For a saved draft, quiet and repeated is the right treatment.
 
-C only. People watch for failures. — People watch for a failure once they suspect one. The failure arrives before the suspicion, and a fading box is how someone ends up unsure whether they have been charged.
+A only. Nothing depends on the person seeing it, and it will happen again. — A missed save note costs nothing, so the quiet treatment fits. B carries a deadline and C carries money, and both are gone before someone looking at the form could read them.
+
+B and C as well. Four seconds is long enough to read a short sentence. — Four seconds is long enough to read one, and only if the person happens to be looking at that corner. During payment they are looking at the card field.
 
 Go back through your own four rows and mark any message that would be gone before it was read.
 
@@ -5358,17 +5358,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Success is green and failure is red, with the same icon and similar wording. What breaks?
 
 - Anyone who cannot separate those colours, or who reads the screen in bright light, is left with two messages that say the same thing.
-- Nothing, since red and green are understood everywhere.
 - Only the icons need to differ; the wording can stay as it is.
+- Nothing, since red and green are understood everywhere.
 
 <details>
 <summary>After your attempt</summary>
 
 Anyone who cannot separate those colours, or who reads the screen in bright light, is left with two messages that say the same thing. — Colour is the reinforcement, never the signal. The words and the shape have to carry the meaning on their own.
 
-Nothing, since red and green are understood everywhere. — They are widely learnt and not universally visible. A message that depends on telling them apart carries nothing for a good number of readers.
-
 Only the icons need to differ; the wording can stay as it is. — Different shapes help, and the sentence is still the part most people read. If the words do not say whether this is good or bad news, the shape is doing the work alone.
+
+Nothing, since red and green are understood everywhere. — They are widely learnt and not universally visible. A message that depends on telling them apart carries nothing for a good number of readers.
 
 Improve: Look at icon-shapes and rewritten-wording in step 3. Give each type its own shape and make each sentence state the outcome in words, then record it in step 5.
 
@@ -5387,18 +5387,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your payment failure says “Something went wrong.” What is missing?
 
+- An error code the support team can look up.
 - What happened, what it means for the money, and the one thing to do next.
 - An apology, so the tone matches the situation.
-- An error code the support team can look up.
 
 <details>
 <summary>After your attempt</summary>
 
+An error code the support team can look up. — A code helps whoever is contacted later, and it is not what the person needs in that moment. Give them the action first and the code after.
+
 What happened, what it means for the money, and the one thing to do next. — A failure with no route leaves the person guessing whether they have been charged and whether to try again. Say it in the message.
 
 An apology, so the tone matches the situation. — An apology is easy to add and changes nothing about what the person does next. The route forward is the part that helps.
-
-An error code the support team can look up. — A code helps whoever is contacted later, and it is not what the person needs in that moment. Give them the action first and the code after.
 
 Improve: Fill failure-routes in step 4 with one thing the person can do for each failure, then record what you changed in step 5.
 
@@ -5771,20 +5771,20 @@ Two supplied empty states for the same made-up bookings list. A is a grey illust
 What is B actually doing that A is not?
 
 - B says what belongs here, why the screen is blank and the one action that starts it, so the empty screen teaches.
-- B is longer, and a new person needs more words.
 - B has an action, and an action is what every empty state needs.
 - B has no illustration, and illustrations do not belong in empty states.
+- B is longer, and a new person needs more words.
 
 <details>
 <summary>After your attempt</summary>
 
 B says what belongs here, why the screen is blank and the one action that starts it, so the empty screen teaches. — Those three parts turn a blank area into the clearest lesson in the product. A has the same space and spends it on an apology.
 
-B is longer, and a new person needs more words. — Length is not the difference. A long empty state that still fails to say what appears here, or how to begin, teaches nothing.
-
 B has an action, and an action is what every empty state needs. — The action helps and is not enough on its own. An action with no explanation of what the list is for leaves a new person guessing.
 
 B has no illustration, and illustrations do not belong in empty states. — An illustration is fine beside wording that teaches. What fails in A is the sentence, not the picture.
+
+B is longer, and a new person needs more words. — Length is not the difference. A long empty state that still fails to say what appears here, or how to begin, teaches nothing.
 
 Read your own three empty states back and check each one names what appears here, why it is blank now, and what to do next.
 
@@ -5955,18 +5955,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your empty list says “No results.” Why is that the most expensive sentence on the screen?
 
-- It is what a new person meets first, and it spends the whole screen without saying what belongs here or how to begin.
 - It is too short, and an empty state should be a full paragraph.
 - Nothing is wrong: an empty list explains itself.
+- It is what a new person meets first, and it spends the whole screen without saying what belongs here or how to begin.
 
 <details>
 <summary>After your attempt</summary>
 
-It is what a new person meets first, and it spends the whole screen without saying what belongs here or how to begin. — An empty screen is the one moment when there is nothing to read but you. That space teaches, or it is wasted.
-
 It is too short, and an empty state should be a full paragraph. — Length is not the fault. A long message that still fails to say what appears here and how to start is the same shrug at greater cost.
 
 Nothing is wrong: an empty list explains itself. — It explains itself to you, who built it. To someone arriving for the first time it is a blank area with a note saying the blank is intentional.
+
+It is what a new person meets first, and it spends the whole screen without saying what belongs here or how to begin. — An empty screen is the one moment when there is nothing to read but you. That space teaches, or it is wasted.
 
 Improve: Rewrite empty-new in step 2 so it says what appears here, why it is blank now and the one action that starts it, then record the change in step 5.
 
@@ -5986,17 +5986,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 A step takes about twelve seconds. You replace the spinner with a faster one. What have you changed?
 
 - Nothing the person can use. A long wait needs a message naming what is being waited for, not a livelier animation.
-- The wait feels shorter, which is the whole problem solved.
 - It is worse, because spinners should never be used at all.
+- The wait feels shorter, which is the whole problem solved.
 
 <details>
 <summary>After your attempt</summary>
 
 Nothing the person can use. A long wait needs a message naming what is being waited for, not a livelier animation. — After a few seconds a spinner stops meaning “working” and starts meaning “stuck”. Words are what tell the difference.
 
-The wait feels shorter, which is the whole problem solved. — A faster spin reads as more effort for a moment and then as the same silence. The person still cannot tell whether to wait or start again.
-
 It is worse, because spinners should never be used at all. — A spinner is fine for a short wait where the outcome arrives quickly. Twelve seconds is not that wait.
+
+The wait feels shorter, which is the whole problem solved. — A faster spin reads as more effort for a moment and then as the same silence. The person still cannot tell whether to wait or start again.
 
 Improve: Write wait-messages in step 3 for about three seconds and about fifteen, naming what is being waited for, then record the change in step 5.
 
@@ -6565,21 +6565,21 @@ One made-up chart: of 22 people, 9 were unsure their payment had gone through an
 
 Which alternative text carries the same information to someone who cannot see it?
 
+- Most people were sure their payment had gone through.
 - Of 22 people reached through two WhatsApp groups, 9 were unsure their payment had gone through and 13 were sure.
 - A bar chart showing responses to the payment clarity question.
 - Two vertical bars, the right one taller than the left, with a light grid behind them.
-- Most people were sure their payment had gone through.
 
 <details>
 <summary>After your attempt</summary>
+
+Most people were sure their payment had gone through. — It carries a conclusion instead of the values, and “most” from thirteen of twenty-two is doing more work than the counts allow.
 
 Of 22 people reached through two WhatsApp groups, 9 were unsure their payment had gone through and 13 were sure. — It gives the comparison, both counts and the sample. A reader who never sees the bars can use it exactly as you can.
 
 A bar chart showing responses to the payment clarity question. — It names the subject and withholds the answer. The reader learns that a chart exists, which is not what the chart is for.
 
 Two vertical bars, the right one taller than the left, with a light grid behind them. — This describes the drawing. Someone could redraw the picture from it and still not know what anybody answered.
-
-Most people were sure their payment had gone through. — It carries a conclusion instead of the values, and “most” from thirteen of twenty-two is doing more work than the counts allow.
 
 Cover your own chart and read only your alternative text. If you cannot answer the question the chart was drawn to answer, rewrite it with the counts in it.
 
@@ -6635,17 +6635,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 All your values sit between 40 and 60, so you start the bar axis at 40 to make the difference visible. What is wrong?
 
 - On bars the length is the comparison, so a shortened axis shows a difference that is not there.
-- Nothing, as long as the axis is labelled with its starting value.
 - It is a problem for lines and fine for bars.
+- Nothing, as long as the axis is labelled with its starting value.
 
 <details>
 <summary>After your attempt</summary>
 
 On bars the length is the comparison, so a shortened axis shows a difference that is not there. — A bar twice as long reads as twice as much. Cutting the axis breaks that, and nobody looking at the picture knows you did it.
 
-Nothing, as long as the axis is labelled with its starting value. — The label helps the one careful reader. The shape of the bars is what everyone else carries away, and it is still untrue.
-
 It is a problem for lines and fine for bars. — It is the other way round. A line shows change, so its axis can start where the change is; a bar shows an amount by its length.
+
+Nothing, as long as the axis is labelled with its starting value. — The label helps the one careful reader. The shape of the bars is what everyone else carries away, and it is still untrue.
 
 Improve: Look at your axis-start box in step 3. If the axis does not begin at zero for bars, redraw the chart and record the change in the last step.
 
@@ -6665,17 +6665,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Nine of your twenty-two answers were unsure, so you write “41 per cent were unsure” on the chart. What does that do?
 
 - A percentage reads as a rate that would hold for other people, and twenty-two answers cannot support that.
-- It makes the chart clearer, because percentages are easier to compare.
 - It is fine as long as n appears somewhere on the chart.
+- It makes the chart clearer, because percentages are easier to compare.
 
 <details>
 <summary>After your attempt</summary>
 
 A percentage reads as a rate that would hold for other people, and twenty-two answers cannot support that. — The counts say what happened among the people you reached. The percentage quietly promises the same share elsewhere, which you have no way of knowing.
 
-It makes the chart clearer, because percentages are easier to compare. — Percentages compare well between large samples. From twenty-two they turn a small count into a claim about everyone.
-
 It is fine as long as n appears somewhere on the chart. — Putting n beside it helps, and the number people repeat afterwards is still the percentage. Write the counts where the percentage would have been.
+
+It makes the chart clearer, because percentages are easier to compare. — Percentages compare well between large samples. From twenty-two they turn a small count into a claim about everyone.
 
 Improve: Check your sample-line and underlying-numbers boxes in step 4. Replace any rate with the counts, keep n and the recruitment route, and record the change in the last step.
 
@@ -6694,16 +6694,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your alternative text reads “A bar chart comparing two answers.” What is missing?
 
-- The finding itself: the values, and the comparison the chart exists to show.
 - The colours and the shape of the bars.
+- The finding itself: the values, and the comparison the chart exists to show.
 - Nothing: the numbers are read out from the chart itself.
 
 <details>
 <summary>After your attempt</summary>
 
-The finding itself: the values, and the comparison the chart exists to show. — Someone using the text instead of the picture should end up knowing what you know. A description of the drawing leaves them with nothing to use.
-
 The colours and the shape of the bars. — Those belong to the picture. Adding more description makes the text longer and carries none of the information.
+
+The finding itself: the values, and the comparison the chart exists to show. — Someone using the text instead of the picture should end up knowing what you know. A description of the drawing leaves them with nothing to use.
 
 Nothing: the numbers are read out from the chart itself. — A drawn or photographed chart carries no numbers anything can read out. Whatever is not in the text is not available at all.
 
@@ -7078,19 +7078,19 @@ Four made-up names for one value: a mid grey used behind cards and behind the pa
 
 Which name is still true after the product gains a dark theme and the value becomes a near-black?
 
-- surface-raised, because it names what the value is for rather than what it looks like or where it sits.
-- light-grey, because anyone reading the sheet can picture it at once.
 - grey-200, because the number keeps the greys in order.
+- light-grey, because anyone reading the sheet can picture it at once.
+- surface-raised, because it names what the value is for rather than what it looks like or where it sits.
 - card-background, because it says exactly where it goes.
 
 <details>
 <summary>After your attempt</summary>
 
-surface-raised, because it names what the value is for rather than what it looks like or where it sits. — The role survives the change. The value behind it becomes near-black and every screen using it stays right with no rename.
+grey-200, because the number keeps the greys in order. — A numbered grey survives a value change and says nothing about when to use it, so two people pick different ones for the same job.
 
 light-grey, because anyone reading the sheet can picture it at once. — It is the easiest name to read today and the first to become a lie. A token called light-grey holding a near-black is worse than no name at all.
 
-grey-200, because the number keeps the greys in order. — A numbered grey survives a value change and says nothing about when to use it, so two people pick different ones for the same job.
+surface-raised, because it names what the value is for rather than what it looks like or where it sits. — The role survives the change. The value behind it becomes near-black and every screen using it stays right with no rename.
 
 card-background, because it says exactly where it goes. — It is honest until the header uses it too. A token named after one place it appears leaves you renaming or misusing it as soon as there is a second place.
 
@@ -7295,18 +7295,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You name a token light-grey and use it for card surfaces. A year later the product gains a dark theme. What happens to that name?
 
-- The name stops describing the value, so people either keep a wrong name or rename it everywhere it appears.
-- Nothing, because you can simply change the value behind it.
 - It only matters if someone outside your own work reads the sheet.
+- Nothing, because you can simply change the value behind it.
+- The name stops describing the value, so people either keep a wrong name or rename it everywhere it appears.
 
 <details>
 <summary>After your attempt</summary>
 
-The name stops describing the value, so people either keep a wrong name or rename it everywhere it appears. — A name tied to appearance survives only as long as the appearance does. The rename is not the real cost; the months of a wrong name being trusted are.
+It only matters if someone outside your own work reads the sheet. — You are that someone in six months. The sheet exists precisely because nobody remembers which grey was which.
 
 Nothing, because you can simply change the value behind it. — You can, and the sheet then tells every reader something untrue. Names are read far more often than values.
 
-It only matters if someone outside your own work reads the sheet. — You are that someone in six months. The sheet exists precisely because nobody remembers which grey was which.
+The name stops describing the value, so people either keep a wrong name or rename it everywhere it appears. — A name tied to appearance survives only as long as the appearance does. The rename is not the real cost; the months of a wrong name being trusted are.
 
 Improve: Check your colour-tokens and type-tokens boxes in step 2. Rewrite any name describing a colour, a size or a shape, and record the change in the last step.
 
@@ -7325,18 +7325,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A screen needs a gap slightly wider than any spacing token, so you add a new token for it. What does that do over a year?
 
-- The set grows until every value has a name and none of them has a rule.
-- Nothing, since more tokens give the design more flexibility.
 - It is fine, because the new value is used on that one screen.
+- Nothing, since more tokens give the design more flexibility.
+- The set grows until every value has a name and none of them has a rule.
 
 <details>
 <summary>After your attempt</summary>
 
-The set grows until every value has a name and none of them has a rule. — The sheet works by being small enough to hold in your head. Once it is not, people pick by eye again and the names stop meaning anything.
+It is fine, because the new value is used on that one screen. — A token used once is a value with a name attached. Either a second screen needs it, or the screen should move to the nearest token.
 
 Nothing, since more tokens give the design more flexibility. — More tokens give more places to be inconsistent. Flexibility nobody can remember is only choice coming back.
 
-It is fine, because the new value is used on that one screen. — A token used once is a value with a name attached. Either a second screen needs it, or the screen should move to the nearest token.
+The set grows until every value has a name and none of them has a rule. — The sheet works by being small enough to hold in your head. Once it is not, people pick by eye again and the names stop meaning anything.
 
 Improve: Look at your exceptions-found box in step 4. For each one ask whether a second screen needs it, sort it into missing-roles or accidents, and record what you decided in the last step.
 
@@ -7355,18 +7355,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The body text pair passes the contrast threshold, so you record that and stop measuring. What have you missed?
 
+- Only the colours, since type and spacing are not measured.
 - The quiet pairs — captions, placeholder text, disabled labels — which are the ones that usually fail.
 - Nothing, as long as the largest text passes as well.
-- Only the colours, since type and spacing are not measured.
 
 <details>
 <summary>After your attempt</summary>
 
+Only the colours, since type and spacing are not measured. — Type and spacing are not measured for contrast, and every text-on-surface pair is. The gap is the pairs you never listed.
+
 The quiet pairs — captions, placeholder text, disabled labels — which are the ones that usually fail. — Body text is chosen to be readable and rarely fails. The lighter text was chosen to be quiet, and quiet is the same thing as low contrast.
 
 Nothing, as long as the largest text passes as well. — Large text is judged against a lower threshold and tells you nothing about the small grey caption underneath it.
-
-Only the colours, since type and spacing are not measured. — Type and spacing are not measured for contrast, and every text-on-surface pair is. The gap is the pairs you never listed.
 
 Improve: Return to your pairs-measured box in step 3 and add every quiet pair you allow, including captions, placeholder and disabled text. Record what you found in the last step.
 
@@ -8064,17 +8064,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You cannot tell whether one of your lines is backed by evidence you hold or is a guess. What do you do?
 
 - Label it a guess and write what would settle it.
-- Label it evidence, since it came out of the research work.
 - Leave it unlabelled until you have checked the notes.
+- Label it evidence, since it came out of the research work.
 
 <details>
 <summary>After your attempt</summary>
 
 Label it a guess and write what would settle it. — A guess named as a guess stays checkable. A guess promoted to evidence is the thing that quietly misleads whoever reads this later, including you.
 
-Label it evidence, since it came out of the research work. — Coming out of the research period is not the same as being in the notes. If you cannot point at the line in your notes, it is not evidence.
-
 Leave it unlabelled until you have checked the notes. — Unlabelled lines are read as findings by default. Label it a guess now and change the label if the notes turn out to support it.
+
+Label it evidence, since it came out of the research work. — Coming out of the research period is not the same as being in the notes. If you cannot point at the line in your notes, it is not evidence.
 
 Improve: Look at your served-or-not and critique-labels boxes in step 3. Downgrade any line you cannot point to a note for, then record the change in the last step.
 

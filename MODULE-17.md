@@ -485,18 +485,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is strategy decided above you?
 
-- The written one is. The operating one is made of a thousand small decisions, many of them yours, and naming the pattern is available to anybody paying attention.
 - Yes, which is why designers should focus on execution.
 - No, designers should be in the strategy conversation.
+- The written one is. The operating one is made of a thousand small decisions, many of them yours, and naming the pattern is available to anybody paying attention.
 
 <details>
 <summary>After your attempt</summary>
 
-The written one is. The operating one is made of a thousand small decisions, many of them yours, and naming the pattern is available to anybody paying attention. — What gets cut first when time is short is a strategic choice made by whoever is deciding that afternoon. Writing it down is frequently enough to change it.
-
 Yes, which is why designers should focus on execution. — Execution is where the operating strategy is made. Every decision about what to cut is one.
 
 No, designers should be in the strategy conversation. — Being invited is a different thing from reading the pattern, which needs no invitation.
+
+The written one is. The operating one is made of a thousand small decisions, many of them yours, and naming the pattern is available to anybody paying attention. — What gets cut first when time is short is a strategic choice made by whoever is deciding that afternoon. Writing it down is frequently enough to change it.
 
 Improve: Check your three choices in step 3 come from behaviour rather than from anybody’s statements. Record the change in step 5.
 
@@ -515,18 +515,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your inferred strategy rules nothing out. What does that mean?
 
+- That you have not read the behaviour closely enough.
 - There is no strategy operating, and saying so plainly is the finding.
 - That the strategy is inclusive, which is a legitimate position.
-- That you have not read the behaviour closely enough.
 
 <details>
 <summary>After your attempt</summary>
 
+That you have not read the behaviour closely enough. — Possible, and the honest first answer is what you found rather than a second attempt to find something.
+
 There is no strategy operating, and saying so plainly is the finding. — A pattern that excludes nothing cannot be contradicted by any decision, so it is not guiding any. Manufacturing an exclusion to fill the field would hide the most useful thing you found.
 
 That the strategy is inclusive, which is a legitimate position. — Inclusive of everything means everything competes for the same week, decided by whoever asks loudest.
-
-That you have not read the behaviour closely enough. — Possible, and the honest first answer is what you found rather than a second attempt to find something.
 
 Improve: Write plainly in step 4 that nothing is ruled out, if that is what you found. Record the change in step 5.
 
@@ -546,17 +546,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 One of your implied choices is something nobody would defend out loud. What have you found?
 
 - An accidental choice, made by default rather than by decision, and usually the one that costs most.
-- A misreading of the behaviour.
 - Something to raise privately rather than write down.
+- A misreading of the behaviour.
 
 <details>
 <summary>After your attempt</summary>
 
 An accidental choice, made by default rather than by decision, and usually the one that costs most. — The first-time experience sacrificed four times running was never chosen by anybody. Nothing about it has been weighed, which is exactly why naming it tends to change it.
 
-A misreading of the behaviour. — Possible, and the pattern is the evidence. Nobody defending it is what makes it interesting rather than what makes it wrong.
-
 Something to raise privately rather than write down. — Written down as a pattern rather than as a criticism, it is a description. Raised privately it is an accusation.
+
+A misreading of the behaviour. — Possible, and the pattern is the evidence. Nobody defending it is what makes it interesting rather than what makes it wrong.
 
 Improve: Write how you can tell it was an accident in step 5, using behaviour rather than intent. Record the change.
 
@@ -1214,18 +1214,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody says business is not their area. What does that miss?
 
-- Every design decision is an economic decision about somebody’s time, money or risk. Declining to describe it removes you from the conversation rather than the effect.
-- It is a reasonable division of labour in a large team.
 - Designers should learn finance.
+- It is a reasonable division of labour in a large team.
+- Every design decision is an economic decision about somebody’s time, money or risk. Declining to describe it removes you from the conversation rather than the effect.
 
 <details>
 <summary>After your attempt</summary>
 
-Every design decision is an economic decision about somebody’s time, money or risk. Declining to describe it removes you from the conversation rather than the effect. — An unclear screen becomes a phone call, which is an hour of a two-person staff. Describing that does not require financial data or invented figures.
+Designers should learn finance. — Almost none of this is finance. It is describing what is exchanged and what it costs.
 
 It is a reasonable division of labour in a large team. — In a large team somebody else describes the effect of your decision, in terms you did not choose.
 
-Designers should learn finance. — Almost none of this is finance. It is describing what is exchanged and what it costs.
+Every design decision is an economic decision about somebody’s time, money or risk. Declining to describe it removes you from the conversation rather than the effect. — An unclear screen becomes a phone call, which is an hour of a two-person staff. Describing that does not require financial data or invented figures.
 
 Improve: Write the exchange in plain words in step 1, with no figures. Record the change in step 5.
 
@@ -1244,18 +1244,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your exchange says members get a sense of community and a sustainable way to do jobs. Is that the exchange?
 
-- It may be true of somebody and it is what the organisation says about itself. The real exchange is why people actually turned up.
-- Yes, those are genuine benefits of the service.
 - Yes, provided some members do value it.
+- Yes, those are genuine benefits of the service.
+- It may be true of somebody and it is what the organisation says about itself. The real exchange is why people actually turned up.
 
 <details>
 <summary>After your attempt</summary>
 
-It may be true of somebody and it is what the organisation says about itself. The real exchange is why people actually turned up. — Two conversations produced a deposit, a trip across town, and a job done without buying a tool. The trip is a cost in the exchange, which makes collection hours a design question rather than an operational detail.
+Yes, provided some members do value it. — Some do. The exchange has to describe the ordinary case, or the costs in it stay invisible.
 
 Yes, those are genuine benefits of the service. — Genuine and not what anybody weighed when deciding to come. The aspirational version hides the costs people actually pay.
 
-Yes, provided some members do value it. — Some do. The exchange has to describe the ordinary case, or the costs in it stay invisible.
+It may be true of somebody and it is what the organisation says about itself. The real exchange is why people actually turned up. — Two conversations produced a deposit, a trip across town, and a job done without buying a tool. The trip is a cost in the exchange, which makes collection hours a design question rather than an operational detail.
 
 Improve: Ask two people why they use it and rewrite the exchange from their answers, in step 1. Record the change in step 5.
 
@@ -1274,18 +1274,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You want to say unclear payments cost about thirty hours a year. Where did that come from?
 
+- Keep it and find a source later.
 - If you cannot say, remove it. An invented figure loses the argument the first time somebody checks.
 - It is a reasonable estimate and should be labelled as one.
-- Keep it and find a source later.
 
 <details>
 <summary>After your attempt</summary>
 
+Keep it and find a source later. — Later is after it has been repeated.
+
 If you cannot say, remove it. An invented figure loses the argument the first time somebody checks. — The describable version works: each unclear booking produces roughly one call, to a staff of two, and calls come at the times tools are being checked in. No number, no exposure, same argument.
 
 It is a reasonable estimate and should be labelled as one. — A labelled estimate is still the figure that gets quoted, as Module 15 established.
-
-Keep it and find a source later. — Later is after it has been repeated.
 
 Improve: Remove any unsourced number in step 5 and replace it with a description. Record the change.
 
@@ -1934,18 +1934,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Confirmations arrive the next morning because a spreadsheet is updated by hand each evening. Is that an operations problem?
 
-- It is the experience. A person waiting does not distinguish your interface from your staffing, and a design promising what the operation cannot deliver is at fault.
 - Yes, and the design should be judged separately.
 - Yes, and it should be escalated as a process issue.
+- It is the experience. A person waiting does not distinguish your interface from your staffing, and a design promising what the operation cannot deliver is at fault.
 
 <details>
 <summary>After your attempt</summary>
 
-It is the experience. A person waiting does not distinguish your interface from your staffing, and a design promising what the operation cannot deliver is at fault. — The available change is usually on the front stage: say the booking is held and confirmed by the morning, and give the person a reference as proof. The evening update can stay exactly as it is.
-
 Yes, and the design should be judged separately. — Nobody outside the organisation judges them separately.
 
 Yes, and it should be escalated as a process issue. — Worth raising, and meanwhile the promise is yours to fix this week.
+
+It is the experience. A person waiting does not distinguish your interface from your staffing, and a design promising what the operation cannot deliver is at fault. — The available change is usually on the front stage: say the booking is held and confirmed by the morning, and give the person a reference as proof. The evening update can stay exactly as it is.
 
 Improve: Make one front-stage change from a back-stage constraint in step 5, and record what the promise now says.
 
@@ -1964,18 +1964,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You cannot observe the back stage. Can you still blueprint it?
 
-- Yes, from what you can find out by asking, with anything you had to assume marked as an assumption.
-- No, a blueprint requires observation to be accurate.
 - Yes, by using a typical process for this kind of service.
+- No, a blueprint requires observation to be accurate.
+- Yes, from what you can find out by asking, with anything you had to assume marked as an assumption.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, from what you can find out by asking, with anything you had to assume marked as an assumption. — A blueprint with three marked assumptions is useful and honest. One drawn as fact, from guesswork, produces front-stage decisions built on an imagined process.
+Yes, by using a typical process for this kind of service. — A typical process is an assumption about all of it rather than about parts of it.
 
 No, a blueprint requires observation to be accurate. — Accuracy is the aim and marked assumptions are how you get there incrementally.
 
-Yes, by using a typical process for this kind of service. — A typical process is an assumption about all of it rather than about parts of it.
+Yes, from what you can find out by asking, with anything you had to assume marked as an assumption. — A blueprint with three marked assumptions is useful and honest. One drawn as fact, from guesswork, produces front-stage decisions built on an imagined process.
 
 Improve: Mark everything you assumed in step 5, and say what you would ask to confirm it. Record the change.
 
@@ -1994,18 +1994,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Everybody blames the payment provider for the delay, and your blueprint shows it responds in seconds. What have you found?
 
-- That the constraint is elsewhere, which is one of the most useful things a blueprint produces.
-- That the provider is not the only cause.
 - That the blueprint needs more detail on the provider.
+- That the provider is not the only cause.
+- That the constraint is elsewhere, which is one of the most useful things a blueprint produces.
 
 <details>
 <summary>After your attempt</summary>
 
-That the constraint is elsewhere, which is one of the most useful things a blueprint produces. — The delay is a person updating a spreadsheet each evening. Until the blueprint existed, effort would have gone into the provider, which was never the problem.
+That the blueprint needs more detail on the provider. — More detail on the thing that is fast is the opposite of what the finding suggests.
 
 That the provider is not the only cause. — It is not a cause at all, which is a stronger and more useful finding.
 
-That the blueprint needs more detail on the provider. — More detail on the thing that is fast is the opposite of what the finding suggests.
+That the constraint is elsewhere, which is one of the most useful things a blueprint produces. — The delay is a person updating a spreadsheet each evening. Until the blueprint existed, effort would have gone into the provider, which was never the problem.
 
 Improve: Mark the back-stage items that decide nothing, in step 4, so the decisive ones stand out. Record the change in step 5.
 
@@ -2675,18 +2675,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is the buyer the customer?
 
-- The buyer decides once; the everyday user decides whether it is still used in a year.
 - Yes, since the buyer holds the budget.
 - Yes for the first year, then the user matters.
+- The buyer decides once; the everyday user decides whether it is still used in a year.
 
 <details>
 <summary>After your attempt</summary>
 
-The buyer decides once; the everyday user decides whether it is still used in a year. — Products that optimise for the purchase decision accumulate resentment and lose renewals. Attendance reporting wins the sale and suppresses the usage the report then measures.
-
 Yes, since the buyer holds the budget. — The budget is renewed on the strength of usage, which the everyday user controls.
 
 Yes for the first year, then the user matters. — The first year is when the resentment accumulates.
+
+The buyer decides once; the everyday user decides whether it is still used in a year. — Products that optimise for the purchase decision accumulate resentment and lose renewals. Attendance reporting wins the sale and suppresses the usage the report then measures.
 
 Improve: Name who currently wins in both conflicts in step 3, and whether anybody decided that. Record the change in step 5.
 
@@ -2706,17 +2706,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 The buyer asks for named attendance reporting. What should you do?
 
 - Answer her accountability with an aggregate that names nobody, and say why the named version costs the usage she is buying.
-- Build it; she is paying and the request is reasonable.
 - Refuse it as a privacy matter.
+- Build it; she is paying and the request is reasonable.
 
 <details>
 <summary>After your attempt</summary>
 
 Answer her accountability with an aggregate that names nobody, and say why the named version costs the usage she is buying. — She has to show the scheme is used, which an aggregate does completely. The named version suppresses bookings and then reports the suppression as low usage.
 
-Build it; she is paying and the request is reasonable. — Reasonable from where she sits, and it destroys the thing she is buying.
-
 Refuse it as a privacy matter. — A refusal with nothing attached leaves her accountability unanswered, and she will get it from somebody else.
+
+Build it; she is paying and the request is reasonable. — Reasonable from where she sits, and it destroys the thing she is buying.
 
 Improve: Write what the buyer gets instead in step 5, answering the same accountability. Record the change.
 
@@ -3432,18 +3432,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You plan to monitor for unintended consequences after shipping. Is that enough?
 
-- Monitoring finds them after they have compounded and been attributed to something else. Tracing the likely loop before shipping costs an hour.
-- Yes, since you cannot predict every consequence.
 - Yes, provided the monitoring is thorough.
+- Yes, since you cannot predict every consequence.
+- Monitoring finds them after they have compounded and been attributed to something else. Tracing the likely loop before shipping costs an hour.
 
 <details>
 <summary>After your attempt</summary>
 
-Monitoring finds them after they have compounded and been attributed to something else. Tracing the likely loop before shipping costs an hour. — Six weeks of delay means the turned-away attendees get blamed on overbooking rather than on a cancellation button. Nobody connects them without the loop drawn in advance.
+Yes, provided the monitoring is thorough. — Thorough monitoring of the wrong thing, in the wrong week, finds nothing.
 
 Yes, since you cannot predict every consequence. — You cannot predict all of them, and the obvious loop is usually traceable in an hour.
 
-Yes, provided the monitoring is thorough. — Thorough monitoring of the wrong thing, in the wrong week, finds nothing.
+Monitoring finds them after they have compounded and been attributed to something else. Tracing the likely loop before shipping costs an hour. — Six weeks of delay means the turned-away attendees get blamed on overbooking rather than on a cancellation button. Nobody connects them without the loop drawn in advance.
 
 Improve: Trace the loop in step 2 with a delay on every arrow, before shipping. Record the change in step 5.
 
@@ -3462,18 +3462,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your fix for the loop is a confirmation asking whether the person is sure. What is wrong with it?
 
+- It adds friction, which was the thing you removed.
 - It asks somebody to solve a structural problem by being more considerate, and the people who read it are the least likely to be the problem.
 - Nothing, if the wording is good.
-- It adds friction, which was the thing you removed.
 
 <details>
 <summary>After your attempt</summary>
 
+It adds friction, which was the thing you removed. — It adds a little, and the deeper problem is who it asks to fix things.
+
 It asks somebody to solve a structural problem by being more considerate, and the people who read it are the least likely to be the problem. — A structural response changes what is easy, visible or automatic. Offering the place to a waiting list closes the loop where it does harm, without anybody having to be more careful.
 
 Nothing, if the wording is good. — Good wording makes a better warning. It is still a warning.
-
-It adds friction, which was the thing you removed. — It adds a little, and the deeper problem is who it asks to fix things.
 
 Improve: Replace any warning in step 4 with a change to what is easy or visible. Record the change in step 5.
 
@@ -3492,16 +3492,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You consider a fee for late cancellation. What should you check?
 
-- Whether it creates its own loop: people stop cancelling and simply do not turn up, which is worse and invisible until the class starts.
 - Whether the fee is large enough to change behaviour.
+- Whether it creates its own loop: people stop cancelling and simply do not turn up, which is worse and invisible until the class starts.
 - Whether members would accept it.
 
 <details>
 <summary>After your attempt</summary>
 
-Whether it creates its own loop: people stop cancelling and simply do not turn up, which is worse and invisible until the class starts. — It is a real incentive change rather than a warning, which is what makes it worth examining rather than dismissing. Every structural response needs the same check.
-
 Whether the fee is large enough to change behaviour. — It will change behaviour. The question is which behaviour.
+
+Whether it creates its own loop: people stop cancelling and simply do not turn up, which is worse and invisible until the class starts. — It is a real incentive change rather than a warning, which is what makes it worth examining rather than dismissing. Every structural response needs the same check.
 
 Whether members would accept it. — Worth knowing, and it is not what makes the response backfire.
 
@@ -4147,16 +4147,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 If the design is right, will it win?
 
-- Designs are adopted by people with their own accountabilities and constraints. Understanding those is not politics; it is the ordinary work of getting something built.
 - Usually, if it is explained well enough.
+- Designs are adopted by people with their own accountabilities and constraints. Understanding those is not politics; it is the ordinary work of getting something built.
 - No, which is why influence is a separate skill.
 
 <details>
 <summary>After your attempt</summary>
 
-Designs are adopted by people with their own accountabilities and constraints. Understanding those is not politics; it is the ordinary work of getting something built. — A developer objecting to work that threatens a committed date is not resisting change. The proposal was costing him the thing somebody else asks him about.
-
 Usually, if it is explained well enough. — Explaining it again is what people do when they have not understood the objection.
+
+Designs are adopted by people with their own accountabilities and constraints. Understanding those is not politics; it is the ordinary work of getting something built. — A developer objecting to work that threatens a committed date is not resisting change. The proposal was costing him the thing somebody else asks him about.
 
 No, which is why influence is a separate skill. — It is the same skill applied to a different constraint, which is what makes it learnable.
 
@@ -4886,18 +4886,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody says you need more research before deciding. What should you ask?
 
+- Whether the research is affordable.
 - Which finding would produce a different decision. If none would, decide now and record that.
 - How long the research would take.
-- Whether the research is affordable.
 
 <details>
 <summary>After your attempt</summary>
 
+Whether the research is affordable. — Also secondary. Research that would not change the decision is unaffordable at any price.
+
 Which finding would produce a different decision. If none would, decide now and record that. — Four of five things research could tell you are usually interesting and irrelevant to the choice in front of you. The fifth is often answerable in twenty minutes from a record that already exists.
 
 How long the research would take. — A good second question. Asked first, it turns the conversation into a negotiation about scheduling.
-
-Whether the research is affordable. — Also secondary. Research that would not change the decision is unaffordable at any price.
 
 Improve: List what research could tell you in step 3 and cross off everything that would not change the choice. Record the change in step 5.
 
@@ -4947,17 +4947,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You decided with an assumption you could not check. What must accompany it?
 
 - The assumption written down and a date to check whether it held.
-- A note that it was made under uncertainty.
 - Agreement from somebody else, so the risk is shared.
+- A note that it was made under uncertainty.
 
 <details>
 <summary>After your attempt</summary>
 
 The assumption written down and a date to check whether it held. — A decision with no way to find out it was wrong is a bet. The assumption and the date are what turn it back into a decision, and they cost two lines.
 
-A note that it was made under uncertainty. — Every decision is. Which assumption, and when you will look, is what makes it checkable.
-
 Agreement from somebody else, so the risk is shared. — Shared risk is not the same as a way of finding out.
+
+A note that it was made under uncertainty. — Every decision is. Which assumption, and when you will look, is what makes it checkable.
 
 Improve: Write the assumption and a check date in step 5, naming what you will look at. Record the change.
 
@@ -5608,18 +5608,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 There is plenty written about positioning. Why does this course not teach it?
 
+- Because the good sources are all books.
 - Plenty is published. Whether a specific page can be retrieved, is free, states its date and scope, and can have its limits written down is a different question, and most of it fails.
 - Because positioning is not a design topic.
-- Because the good sources are all books.
 
 <details>
 <summary>After your attempt</summary>
 
+Because the good sources are all books. — Several are, and a library is a legitimate route. The rule is not about format.
+
 Plenty is published. Whether a specific page can be retrieved, is free, states its date and scope, and can have its limits written down is a different question, and most of it fails. — The rule is about verifiability rather than quality. A persuasive undated article written to sell consulting cannot be checked, which is precisely what makes it unusable as a source.
 
 Because positioning is not a design topic. — It affects design decisions directly, which is why the gap is recorded rather than dismissed.
-
-Because the good sources are all books. — Several are, and a library is a legitimate route. The rule is not about format.
 
 Improve: Write the five checks out in step 2 from this course’s own rules. Record the change in step 5.
 
@@ -5668,18 +5668,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your candidate was rejected and the gap is still open. Is that a wasted lesson?
 
-- No. A documented rejection stops the same source being reconsidered and shows the gap was taken seriously.
 - Partly, since you have not learned about positioning.
 - Yes, unless you find a second candidate.
+- No. A documented rejection stops the same source being reconsidered and shows the gap was taken seriously.
 
 <details>
 <summary>After your attempt</summary>
 
-No. A documented rejection stops the same source being reconsidered and shows the gap was taken seriously. — It also produces the more useful half: a plan for closing it another way, and a list of what you will not claim until you have.
-
 Partly, since you have not learned about positioning. — You have learned that this course cannot source it and what to do about that, which is the transferable skill.
 
 Yes, unless you find a second candidate. — A second candidate is worth trying and the first verdict stands as work done either way.
+
+No. A documented rejection stops the same source being reconsidered and shows the gap was taken seriously. — It also produces the more useful half: a plan for closing it another way, and a list of what you will not claim until you have.
 
 Improve: Write the plan and what you will avoid claiming in step 5. Record the change.
 
@@ -6341,18 +6341,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is good design simply good design, whatever the context?
 
+- Yes, apart from the extra features business software needs.
 - The principles transfer and the priorities do not. A flow optimised for a confident first use, met hourly, produces a product people resent.
 - Yes, quality is quality in any context.
-- Yes, apart from the extra features business software needs.
 
 <details>
 <summary>After your attempt</summary>
 
+Yes, apart from the extra features business software needs. — The differences are not extra features. They are opposite answers to the same questions.
+
 The principles transfer and the priorities do not. A flow optimised for a confident first use, met hourly, produces a product people resent. — A warm confirmation is a kindness on a first booking and an obstacle on the two hundredth. Neither context is more sophisticated; they optimise different things.
 
 Yes, quality is quality in any context. — Quality in one context is density and keyboard operation; in the other it is space and reassurance. They are not the same drawing.
-
-Yes, apart from the extra features business software needs. — The differences are not extra features. They are opposite answers to the same questions.
 
 Improve: Write the structural reason for each of your three differences in step 4. Record the change in step 5.
 
@@ -6372,17 +6372,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Why does mandatory use change the design?
 
 - Frustration accumulates as resentment rather than losing you the user, so the thousandth use matters more than the first.
-- It means you can afford to make it harder to learn.
 - It does not, since usability applies either way.
+- It means you can afford to make it harder to learn.
 
 <details>
 <summary>After your attempt</summary>
 
 Frustration accumulates as resentment rather than losing you the user, so the thousandth use matters more than the first. — Somebody who chose your product and dislikes it leaves. Somebody who was given it stays, does the task forty minutes slower every month, and tells everybody the software is terrible.
 
-It means you can afford to make it harder to learn. — It means the trade is available and it has to be paid for with an introduction.
-
 It does not, since usability applies either way. — Usability applies and what to optimise changes completely.
+
+It means you can afford to make it harder to learn. — It means the trade is available and it has to be paid for with an introduction.
 
 Improve: Count how many times your business user will do the task in two years, in step 3, and design for that. Record the change in step 5.
 
@@ -6401,18 +6401,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You designed the business version and added an admin label to the consumer screen. What went wrong?
 
+- It needed more configuration options.
 - The administrator has their own task, with volume and repetition, and it was never designed.
 - Nothing, if the underlying task is the same.
-- It needed more configuration options.
 
 <details>
 <summary>After your attempt</summary>
 
+It needed more configuration options. — Options are what gets added instead of designing the task.
+
 The administrator has their own task, with volume and repetition, and it was never designed. — Twelve places across four classes, monthly, for two years is a different task from booking one place for yourself. Designing for the administrator last is how business software becomes hated.
 
 Nothing, if the underlying task is the same. — The task is not the same. The volume changes it entirely.
-
-It needed more configuration options. — Options are what gets added instead of designing the task.
 
 Improve: Design the administrator’s own task in step 3, from their volume rather than from the user’s screen. Record the change in step 5.
 
@@ -7083,16 +7083,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody says this is just persuasive design. What is the test?
 
-- Whether the person would object if they understood what had happened. Persuasion presents a real offer well; these patterns work by making attention fail.
 - Whether it increases completions.
+- Whether the person would object if they understood what had happened. Persuasion presents a real offer well; these patterns work by making attention fail.
 - Whether comparable products do it.
 
 <details>
 <summary>After your attempt</summary>
 
-Whether the person would object if they understood what had happened. Persuasion presents a real offer well; these patterns work by making attention fail. — A countdown that is true is urgency. One that resets, or that counts down to nothing, works only while nobody notices, and people do notice, later, loudly.
-
 Whether it increases completions. — It will. That is what makes the test a question about honesty rather than about effect.
+
+Whether the person would object if they understood what had happened. Persuasion presents a real offer well; these patterns work by making attention fail. — A countdown that is true is urgency. One that resets, or that counts down to nothing, works only while nobody notices, and people do notice, later, loudly.
 
 Whether comparable products do it. — Many do, and the ones that do are the source of most people’s distrust of the category.
 
@@ -7113,18 +7113,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You refuse a request by saying it is a dark pattern. What happens next?
 
-- The person still has their problem, somebody else builds a worse version three weeks later, and you are not asked again.
-- The request is dropped, since the objection is correct.
 - It escalates to somebody who decides.
+- The request is dropped, since the objection is correct.
+- The person still has their problem, somebody else builds a worse version three weeks later, and you are not asked again.
 
 <details>
 <summary>After your attempt</summary>
 
-The person still has their problem, somebody else builds a worse version three weeks later, and you are not asked again. — Refusing without an alternative loses the argument and the relationship. Naming the cost and offering the honest version keeps you in the conversation and usually gets the honest version built.
+It escalates to somebody who decides. — Sometimes, and you arrive at that conversation having offered nothing.
 
 The request is dropped, since the objection is correct. — Correctness does not make the abandonment problem go away.
 
-It escalates to somebody who decides. — Sometimes, and you arrive at that conversation having offered nothing.
+The person still has their problem, somebody else builds a worse version three weeks later, and you are not asked again. — Refusing without an alternative loses the argument and the relationship. Naming the cost and offering the honest version keeps you in the conversation and usually gets the honest version built.
 
 Improve: Design the honest alternative in step 3 and put it in the same sentence as the refusal in step 4. Record the change in step 5.
 
@@ -7143,18 +7143,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody proposes testing whether the countdown increases completions. Is that a reasonable compromise?
 
-- No. It will increase completions, and testing it turns a question about honesty into one about evidence.
 - Yes, evidence should settle disagreements.
 - Yes, if the test is short.
+- No. It will increase completions, and testing it turns a question about honesty into one about evidence.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It will increase completions, and testing it turns a question about honesty into one about evidence. — Giving way rarely looks like agreement. Softening it, testing it, or noting a reservation and standing aside all leave the thing built.
-
 Yes, evidence should settle disagreements. — Evidence settles questions about effect. This one is about whether the statement is true.
 
 Yes, if the test is short. — The length changes nothing about what is being agreed to.
+
+No. It will increase completions, and testing it turns a question about honesty into one about evidence. — Giving way rarely looks like agreement. Softening it, testing it, or noting a reservation and standing aside all leave the thing built.
 
 Improve: Write your line in step 5 so it covers false statements regardless of their effect. Record the change.
 
@@ -7764,16 +7764,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does leadership come with a title?
 
-- The published expectations describe behaviour: making decisions legible, influencing people who do not report to you, connecting design work to what the organisation is accountable for.
 - Largely, since influence follows authority.
+- The published expectations describe behaviour: making decisions legible, influencing people who do not report to you, connecting design work to what the organisation is accountable for.
 - No, and the expectations are aspirational rather than practisable.
 
 <details>
 <summary>After your attempt</summary>
 
-The published expectations describe behaviour: making decisions legible, influencing people who do not report to you, connecting design work to what the organisation is accountable for. — All of that is practisable on work you already have. Waiting for a title means arriving at the conversation with nothing to point at.
-
 Largely, since influence follows authority. — Authority helps and the expectations are written as behaviours precisely because they are not the same thing.
+
+The published expectations describe behaviour: making decisions legible, influencing people who do not report to you, connecting design work to what the organisation is accountable for. — All of that is practisable on work you already have. Waiting for a title means arriving at the conversation with nothing to point at.
 
 No, and the expectations are aspirational rather than practisable. — Three of this module’s lessons produced artefacts that evidence them directly.
 
@@ -7794,18 +7794,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You marked eleven of fourteen expectations as yes, based on understanding them. What is the problem?
 
-- In a level conversation somebody asks for an example, and understanding produces a description of the expectation rather than one.
 - Nothing, if you genuinely understand them.
 - Eleven is too many to work on at once.
+- In a level conversation somebody asks for an example, and understanding produces a description of the expectation rather than one.
 
 <details>
 <summary>After your attempt</summary>
 
-In a level conversation somebody asks for an example, and understanding produces a description of the expectation rather than one. — Four had artefacts; seven were things read about in this module. The honest version is much shorter and is the only one that produces a plan.
-
 Nothing, if you genuinely understand them. — Understanding is genuine and it is a different column.
 
 Eleven is too many to work on at once. — The number is not the issue; what is behind each one is.
+
+In a level conversation somebody asks for an example, and understanding produces a description of the expectation rather than one. — Four had artefacts; seven were things read about in this module. The honest version is much shorter and is the only one that produces a plan.
 
 Improve: Move anything without an artefact into the read-about list in step 2. Record the change in step 5.
 
@@ -7824,18 +7824,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You compared against one employer’s published levels. What must the comparison say?
 
-- That it is one employer’s expectation rather than a market standard.
 - Nothing; published expectations are broadly similar everywhere.
 - That the expectations may have changed since publication.
+- That it is one employer’s expectation rather than a market standard.
 
 <details>
 <summary>After your attempt</summary>
 
-That it is one employer’s expectation rather than a market standard. — Levels, titles and expectations vary enormously between organisations, and this course has no verified market-wide source. The comparison is still useful; it simply describes a comparison with one page.
-
 Nothing; published expectations are broadly similar everywhere. — They differ enough that the same work is two levels apart in two companies.
 
 That the expectations may have changed since publication. — Worth noting and much less important than whose expectations they are.
+
+That it is one employer’s expectation rather than a market standard. — Levels, titles and expectations vary enormously between organisations, and this course has no verified market-wide source. The comparison is still useful; it simply describes a comparison with one page.
 
 Improve: Put the one-employer note at the top of the comparison in step 5. Record the change.
 
@@ -8514,18 +8514,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is a strategy note something for people above you to write?
 
+- No, but it needs approval to be meaningful.
 - The note you write for your own project is the one that will actually govern your decisions for the next few months.
 - Largely, since strategy is set at a higher level.
-- No, but it needs approval to be meaningful.
 
 <details>
 <summary>After your attempt</summary>
 
+No, but it needs approval to be meaningful. — It governs your own decisions whether or not anybody approves it, and it is easier to discuss once written.
+
 The note you write for your own project is the one that will actually govern your decisions for the next few months. — A strategy in your head cannot be argued with, inherited or checked. Two pages is enough and is more than most projects have.
 
 Largely, since strategy is set at a higher level. — The written one is. The operating one, as the first lesson showed, is made of the decisions you take.
-
-No, but it needs approval to be meaningful. — It governs your own decisions whether or not anybody approves it, and it is easier to discuss once written.
 
 Improve: Check each choice in step 1 could be disagreed with, and rewrite any that could not. Record the change in step 5.
 
@@ -8544,18 +8544,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Every exclusion on your list is something you did not want to do anyway. What does that mean?
 
+- That the exclusions are correct.
 - Nothing is being given up, so the list rules nothing out and the strategy is not costing you anything.
 - That the project is well focused already.
-- That the exclusions are correct.
 
 <details>
 <summary>After your attempt</summary>
 
+That the exclusions are correct. — They may be, and a list of things nobody wanted is not a decision.
+
 Nothing is being given up, so the list rules nothing out and the strategy is not costing you anything. — An exclusion list is what somebody can hold you to. If none of it hurts, the note describes what was going to happen regardless.
 
 That the project is well focused already. — Or that the list was written to be easy to agree with.
-
-That the exclusions are correct. — They may be, and a list of things nobody wanted is not a decision.
 
 Improve: Put something you would like to do onto the exclusion list in step 2. Record the change in step 5.
 
@@ -8574,16 +8574,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You left your own limited time out of the constraints, because it reads as an excuse. What did that cost?
 
-- A plan for a different project, with every schedule in it wrong by a factor of two.
 - Nothing, since you know about it anyway.
+- A plan for a different project, with every schedule in it wrong by a factor of two.
 - Some credibility, if somebody notices.
 
 <details>
 <summary>After your attempt</summary>
 
-A plan for a different project, with every schedule in it wrong by a factor of two. — The flattering constraints are the external ones. The inconvenient ones — your hours, somebody’s availability — are usually the ones that actually decide what happens.
-
 Nothing, since you know about it anyway. — The note is what the schedule is built from, including by you in three months.
+
+A plan for a different project, with every schedule in it wrong by a factor of two. — The flattering constraints are the external ones. The inconvenient ones — your hours, somebody’s availability — are usually the ones that actually decide what happens.
 
 Some credibility, if somebody notices. — The cost is the plan rather than the impression.
 

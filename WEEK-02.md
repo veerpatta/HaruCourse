@@ -183,20 +183,20 @@ A supplied pair from the same made-up project. Question A: “Where do people lo
 Which method fits which question?
 
 - A needs an interview about a recent booking; B needs watching someone attempt the task on the screen.
+- A survey would answer both more cheaply.
 - Both need interviews, because you want to understand people’s thinking.
 - Both need a task, because watching behaviour always beats asking.
-- A survey would answer both more cheaply.
 
 <details>
 <summary>After your attempt</summary>
 
 A needs an interview about a recent booking; B needs watching someone attempt the task on the screen. — A is about what happened around the booking, over days, in places your screen cannot see. B is about what this screen does to someone in the next two minutes, which you can watch.
 
+A survey would answer both more cheaply. — A survey collects what people say they usually do, which is the least reliable version of A, and it cannot observe anyone failing to find a total.
+
 Both need interviews, because you want to understand people’s thinking. — For B an interview gets you a recollection or a guess. Watching someone hunt for the total is far more reliable than asking whether they could find it.
 
 Both need a task, because watching behaviour always beats asking. — Watching cannot reach last Tuesday evening. A is about a sequence that already happened elsewhere, and only an account of it can reach that.
-
-A survey would answer both more cheaply. — A survey collects what people say they usually do, which is the least reliable version of A, and it cannot observe anyone failing to find a total.
 
 Apply the same test to your own question: does it ask about something that already happened elsewhere, or about what this screen does to someone now?
 
@@ -392,17 +392,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You have a willing participant on Saturday and no study plan yet. What do you decide first?
 
 - The decision the evidence could change, then the question, then the method.
-- The method, since you only have one session and interviews fit most things.
 - The questions, so you are ready when they arrive.
+- The method, since you only have one session and interviews fit most things.
 
 <details>
 <summary>After your attempt</summary>
 
 The decision the evidence could change, then the question, then the method. — The order matters because it is what stops you collecting interesting material that changes nothing. A session without a decision behind it is a pleasant conversation.
 
-The method, since you only have one session and interviews fit most things. — Choosing the method first quietly decides what you can learn. Some questions cannot be reached by asking at all.
-
 The questions, so you are ready when they arrive. — Questions written before you know the decision tend to be about your screen. They produce agreement rather than evidence.
+
+The method, since you only have one session and interviews fit most things. — Choosing the method first quietly decides what you can learn. Some questions cannot be reached by asking at all.
 
 Improve: Reread your question in step 2. If it could be answered without changing your decision in step 1, rewrite it so an answer would move you, then record the change in step 5.
 
@@ -421,21 +421,21 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One person tells you they never open confirmation emails. What have you established?
 
-- That at least one person with relevant experience does not, which is enough to make you stop assuming everyone does.
 - That most people do not read confirmation emails.
 - Nothing: a single participant is not a sample.
 - That your email design needs work.
+- That at least one person with relevant experience does not, which is enough to make you stop assuming everyone does.
 
 <details>
 <summary>After your attempt</summary>
-
-That at least one person with relevant experience does not, which is enough to make you stop assuming everyone does. — One account cannot say how common it is, and it is real evidence that the behaviour exists. That is usually enough to change a design you were about to build on the opposite assumption.
 
 That most people do not read confirmation emails. — One person cannot support “most”. Written that way it will be repeated later without the caveat, and it will be treated as a number.
 
 Nothing: a single participant is not a sample. — Too dismissive. One clear account of a behaviour is a fact about the world; what it cannot give you is prevalence.
 
 That your email design needs work. — That jumps to a repair. If nobody opens it, better wording is not the answer, and you would have skipped past the finding.
+
+That at least one person with relevant experience does not, which is enough to make you stop assuming everyone does. — One account cannot say how common it is, and it is real evidence that the behaviour exists. That is usually enough to change a design you were about to build on the opposite assumption.
 
 Improve: Check the limitation box in step 5. If it does not say that this study cannot establish how common anything is, add that sentence and note it in step 5.
 
@@ -454,16 +454,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The easiest people to recruit are two designers you know. Why is that a problem worth writing down?
 
-- They read screens professionally, so their fluency is not typical, and the plan should record that limit.
 - It is not a problem, since anyone can attempt a booking task.
+- They read screens professionally, so their fluency is not typical, and the plan should record that limit.
 - You should cancel and wait for perfect participants.
 
 <details>
 <summary>After your attempt</summary>
 
-They read screens professionally, so their fluency is not typical, and the plan should record that limit. — Convenience is not disqualifying, and it does shape what you can conclude. Recording who you actually reached is what keeps the finding honest later.
-
 It is not a problem, since anyone can attempt a booking task. — Anyone can attempt it, and a designer will notice conventions a first-time visitor never sees, which is exactly what you were trying to observe.
+
+They read screens professionally, so their fluency is not typical, and the plan should record that limit. — Convenience is not disqualifying, and it does shape what you can conclude. Recording who you actually reached is what keeps the finding honest later.
 
 You should cancel and wait for perfect participants. — Waiting for the ideal participant usually means no evidence at all. Run it and record who they were.
 
@@ -1110,19 +1110,19 @@ Supplied practice notes. S1 looked for the materials list the evening before. S2
 
 Which finding do these four notes actually support?
 
-- People prepare at different moments, from before booking to the journey itself, so no single moment can be assumed.
 - Nobody reads the instructions before a class.
 - People want a reminder the day before the class.
+- People prepare at different moments, from before booking to the journey itself, so no single moment can be assumed.
 - Most people prepare at the last minute.
 
 <details>
 <summary>After your attempt</summary>
 
-People prepare at different moments, from before booking to the journey itself, so no single moment can be assumed. — It holds all four accounts, including S3 who did not check at all, and it says something a design has to answer: the information cannot live at one moment only.
-
 Nobody reads the instructions before a class. — S4 read them before booking. One counter-example is enough to sink a claim written as “nobody”, and it was in front of you.
 
 People want a reminder the day before the class. — Nobody said this. It is a recommendation dressed as a finding, and it fits only two of the four accounts.
+
+People prepare at different moments, from before booking to the journey itself, so no single moment can be assumed. — It holds all four accounts, including S3 who did not check at all, and it says something a design has to answer: the information cannot live at one moment only.
 
 Most people prepare at the last minute. — Two of four is not “most”, and four accounts cannot establish proportions at all. The word most is doing work the evidence cannot support.
 
@@ -1238,17 +1238,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Which of these belongs in the observation column?
 
-- S2 searched the confirmation email during the journey.
 - S2 was disorganised about preparing for the class.
+- S2 searched the confirmation email during the journey.
 - Add a reminder the day before.
 - People prepare at the last minute.
 
 <details>
 <summary>After your attempt</summary>
 
-S2 searched the confirmation email during the journey. — It says what happened and nothing about why. Anyone reading it can check it against the source note.
-
 S2 was disorganised about preparing for the class. — That is a judgement about a person. It cannot be checked, and it will quietly become the reason for a design decision later.
+
+S2 searched the confirmation email during the journey. — It says what happened and nothing about why. Anyone reading it can check it against the source note.
 
 Add a reminder the day before. — A recommendation, and the furthest thing from an observation. It belongs at the end, attached to a finding with sources.
 
@@ -1271,21 +1271,21 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Five notes support your finding and one contradicts it. What do you do with the sixth?
 
-- Keep it visible beside the finding and say what it means for your confidence.
-- Leave it out: five against one is a clear pattern.
-- Change the finding until everything agrees.
 - Start again with different groups.
+- Change the finding until everything agrees.
+- Leave it out: five against one is a clear pattern.
+- Keep it visible beside the finding and say what it means for your confidence.
 
 <details>
 <summary>After your attempt</summary>
 
-Keep it visible beside the finding and say what it means for your confidence. — The exception is where you learn something. Hiding it makes the finding look stronger and makes you worse at predicting what happens next.
-
-Leave it out: five against one is a clear pattern. — Counting notes is not measuring. With six accounts, one clear counter-example matters more than the tally.
+Start again with different groups. — Regrouping to escape a contradiction is how you end up with tidy findings nobody can use.
 
 Change the finding until everything agrees. — That usually produces something so vague it cannot be wrong. Better to keep a sharp finding and state where it fails.
 
-Start again with different groups. — Regrouping to escape a contradiction is how you end up with tidy findings nobody can use.
+Leave it out: five against one is a clear pattern. — Counting notes is not measuring. With six accounts, one clear counter-example matters more than the tally.
+
+Keep it visible beside the finding and say what it means for your confidence. — The exception is where you learn something. Hiding it makes the finding look stronger and makes you worse at predicting what happens next.
 
 Improve: Check the counter-evidence boxes in step 4. If either says none, look again for the note that does not fit and write it in, then say what changed in step 5.
 
@@ -1304,18 +1304,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You used the supplied practice notes. How may this work appear later in a portfolio?
 
-- Clearly labelled as a training exercise with supplied notes, never as interviews you conducted.
-- As research findings, since the analysis work was real.
 - It should not appear at all.
+- As research findings, since the analysis work was real.
+- Clearly labelled as a training exercise with supplied notes, never as interviews you conducted.
 
 <details>
 <summary>After your attempt</summary>
 
-Clearly labelled as a training exercise with supplied notes, never as interviews you conducted. — The method is genuinely yours to show. The participants are not, and a reader who discovers that later will doubt everything else you wrote.
+It should not appear at all. — It can appear, labelled. A worked synthesis with supplied notes shows exactly the skill a reviewer wants to see.
 
 As research findings, since the analysis work was real. — The analysis was real and the sources were invented. Presented as findings, the claim about people is false regardless of how careful the method was.
 
-It should not appear at all. — It can appear, labelled. A worked synthesis with supplied notes shows exactly the skill a reviewer wants to see.
+Clearly labelled as a training exercise with supplied notes, never as interviews you conducted. — The method is genuinely yours to show. The participants are not, and a reader who discovers that later will doubt everything else you wrote.
 
 Improve: Check the source label in step 2 and the wording of your findings. If a finding reads as though real people said it, add the supplied-notes label to the finding itself, then record the change in step 5.
 
@@ -1805,21 +1805,21 @@ Two supplied hypotheses for the same made-up change. A: “If the total cost app
 
 Which one can a short session actually test, and why?
 
+- Neither: a prototype cannot test anything about cost.
 - B, because it names something you could watch someone do or fail to do.
 - A, because liking the experience is what ultimately matters.
 - Both, if you ask a satisfaction question at the end.
-- Neither: a prototype cannot test anything about cost.
 
 <details>
 <summary>After your attempt</summary>
+
+Neither: a prototype cannot test anything about cost. — It can test whether the information can be found and understood, which is precisely what B claims. What it cannot test is whether more people would book.
 
 B, because it names something you could watch someone do or fail to do. — You can hand someone the task and see whether they can answer without going back. It can also come out badly, which is what makes it a test.
 
 A, because liking the experience is what ultimately matters. — Liking is real and you cannot observe it, and asked directly people are kind to the person who made the thing. Nothing in a session would settle it.
 
 Both, if you ask a satisfaction question at the end. — Adding a rating to B does not make A testable; it adds a number with no meaning to a session of one or two people.
-
-Neither: a prototype cannot test anything about cost. — It can test whether the information can be found and understood, which is precisely what B claims. What it cannot test is whether more people would book.
 
 Write yours in the same shape, then write the disconfirming signal before you test anything.
 
@@ -1886,17 +1886,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You score three options for effort out of five and pick the lowest. Is that measured evidence?
 
 - No. It is your estimate written as a number, and it should keep the reason beside it.
-- Yes, if you use the same scale for all three.
 - Yes, effort estimates are standard practice in product teams.
+- Yes, if you use the same scale for all three.
 
 <details>
 <summary>After your attempt</summary>
 
 No. It is your estimate written as a number, and it should keep the reason beside it. — Numbers look decided. Unless something measured the effort, the score is a judgement, and the reason is the part a reader can argue with.
 
-Yes, if you use the same scale for all three. — A consistent scale makes estimates comparable with each other. It does not turn any of them into a measurement.
-
 Yes, effort estimates are standard practice in product teams. — They are standard and they are still estimates. Teams that forget this build plans on numbers nobody checked.
+
+Yes, if you use the same scale for all three. — A consistent scale makes estimates comparable with each other. It does not turn any of them into a measurement.
 
 Improve: Reread your effort lines in step 2. Add the reason behind each estimate, and record the change in step 5.
 
@@ -1915,18 +1915,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your hypothesis says “users will find it easier”. What is missing?
 
+- Nothing, as long as you ask them afterwards whether it was easier.
 - Something you could watch: what a person would do or say that would show it, and what would show the opposite.
 - A number, such as a percentage improvement.
-- Nothing, as long as you ask them afterwards whether it was easier.
 
 <details>
 <summary>After your attempt</summary>
 
+Nothing, as long as you ask them afterwards whether it was easier. — Asked by the person who designed it, most people say yes. That answer cannot separate a good change from a polite participant.
+
 Something you could watch: what a person would do or say that would show it, and what would show the opposite. — Easier is a summary of an experience, not an event. Without an observable version, any session can be read as a success.
 
 A number, such as a percentage improvement. — A number you cannot collect is worse than a vague claim, because it looks rigorous. One or two people cannot produce a rate.
-
-Nothing, as long as you ask them afterwards whether it was easier. — Asked by the person who designed it, most people say yes. That answer cannot separate a good change from a polite participant.
 
 Improve: Rewrite your hypothesis in step 4 so its last part is something you could see, then fill the disconfirming signal and note the change in step 5.
 
@@ -2392,20 +2392,20 @@ A supplied self-pilot from the same made-up prototype. Walking the task, the aut
 Which of those three is not a prototype bug to fix before the session?
 
 - The full-class card: its emptiness is a design problem worth watching someone hit.
-- The missing prices: the person can ask you what things cost.
 - The missing card after Reserve: you can describe it aloud instead.
 - All three should be fixed, since a session should run smoothly.
+- The missing prices: the person can ask you what things cost.
 
 <details>
 <summary>After your attempt</summary>
 
 The full-class card: its emptiness is a design problem worth watching someone hit. — A missing price and a missing card stop the session working at all. A bare failure message is the design as it stands, and what someone does when they meet it is exactly what you want to see.
 
-The missing prices: the person can ask you what things cost. — Asking you turns the facilitator into part of the interface, and the task was about finding the cost. That has to be on the card.
-
 The missing card after Reserve: you can describe it aloud instead. — Describing it aloud means you are designing during the session and the person is reacting to your narration rather than the design.
 
 All three should be fixed, since a session should run smoothly. — Smoothness is not the goal. Fixing the bare failure card would remove the very moment most likely to teach you something.
+
+The missing prices: the person can ask you what things cost. — Asking you turns the facilitator into part of the interface, and the task was about finding the cost. That has to be on the card.
 
 Separate your own findings the same way: repair what stops the task, and leave the design weaknesses in place to be observed.
 
@@ -2535,18 +2535,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your task card says: “Use the filter to find Saturday’s pottery class and press Reserve.” What is wrong?
 
+- It is too long for someone to remember.
 - It contains the route, so you will watch someone follow instructions rather than find their way.
 - Nothing: being specific stops the person getting lost.
-- It is too long for someone to remember.
 
 <details>
 <summary>After your attempt</summary>
 
+It is too long for someone to remember. — Length is a small matter; you can leave the card with them. The route inside it is the problem.
+
 It contains the route, so you will watch someone follow instructions rather than find their way. — Naming the filter and the button hands over both decisions you wanted to observe. The session becomes a test of whether they can follow directions.
 
 Nothing: being specific stops the person getting lost. — Getting lost is the finding. If you steer them past it, you have removed the only part that could have taught you something.
-
-It is too long for someone to remember. — Length is a small matter; you can leave the card with them. The route inside it is the problem.
 
 Improve: Rewrite your task in step 4 as a goal and a situation with no interface words, then record the change in step 5.
 
@@ -2565,18 +2565,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have one evening. Do you spend it drawing more screens or on the failure card and the reset?
 
-- The failure card and the reset, because the session collapses without them.
-- More screens, so the person can explore naturally.
 - Neither: colour and typography make people take it seriously.
+- More screens, so the person can explore naturally.
+- The failure card and the reset, because the session collapses without them.
 
 <details>
 <summary>After your attempt</summary>
 
-The failure card and the reset, because the session collapses without them. — A missing failure card means improvising mid-session; no reset means the second attempt is not comparable. Extra screens rarely change what you learn.
+Neither: colour and typography make people take it seriously. — Polish on paper mostly buys politeness. People criticise a rough sketch more freely, which is what you want.
 
 More screens, so the person can explore naturally. — Exploration is pleasant and it is not the task. More surface makes every observation harder to attribute.
 
-Neither: colour and typography make people take it seriously. — Polish on paper mostly buys politeness. People criticise a rough sketch more freely, which is what you want.
+The failure card and the reset, because the session collapses without them. — A missing failure card means improvising mid-session; no reset means the second attempt is not comparable. Extra screens rarely change what you learn.
 
 Improve: Check step 1 and step 4: if you have no failure card or no reset, add them before any session, then note it in step 5.
 
@@ -2960,19 +2960,19 @@ A supplied line from someone else’s session: “The participant clicked Reserv
 
 How should this be recorded?
 
-- Observed: two presses and that sentence. Assisted: the facilitator confirmed it. Interpretation: the button gave no visible feedback.
-- Observed: the participant was unsure whether the booking worked.
 - Finding: the confirmation is broken and needs a loading state.
+- Observed: the participant was unsure whether the booking worked.
+- Observed: two presses and that sentence. Assisted: the facilitator confirmed it. Interpretation: the button gave no visible feedback.
 - Observed: the participant double-clicked, which is normal behaviour for older users.
 
 <details>
 <summary>After your attempt</summary>
 
-Observed: two presses and that sentence. Assisted: the facilitator confirmed it. Interpretation: the button gave no visible feedback. — All three parts are separated, so a reader can see what happened, what you did, and what you concluded. The missing feedback is a strong reading and it is still a reading.
+Finding: the confirmation is broken and needs a loading state. — That is a recommendation built on one moment, and it skips both the observation and the fact that you intervened.
 
 Observed: the participant was unsure whether the booking worked. — Unsure is your interpretation of the sentence and the second press. Close to certain, and still not what you saw.
 
-Finding: the confirmation is broken and needs a loading state. — That is a recommendation built on one moment, and it skips both the observation and the fact that you intervened.
+Observed: two presses and that sentence. Assisted: the facilitator confirmed it. Interpretation: the button gave no visible feedback. — All three parts are separated, so a reader can see what happened, what you did, and what you concluded. The missing feedback is a strong reading and it is still a reading.
 
 Observed: the participant double-clicked, which is normal behaviour for older users. — It adds a claim about a whole group from one person, and it explains away the very thing you should be curious about.
 
@@ -3107,18 +3107,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The participant finished the task after you told her where the details were. How should the outcome read?
 
-- Finished after help, with the help itself recorded and quoted.
 - Finished, since she completed it and the help was minor.
 - Did not finish, because she needed help.
+- Finished after help, with the help itself recorded and quoted.
 
 <details>
 <summary>After your attempt</summary>
 
-Finished after help, with the help itself recorded and quoted. — The same words that helped her would not be there in real use. Recording them is what stops a rescued attempt being counted as a success.
-
 Finished, since she completed it and the help was minor. — Minor help still supplied the missing piece. Reported as a completion, it makes the design look like it worked when you made it work.
 
 Did not finish, because she needed help. — Too severe and it loses information. She did finish; the honest record says what it took.
+
+Finished after help, with the help itself recorded and quoted. — The same words that helped her would not be there in real use. Recording them is what stops a rescued attempt being counted as a success.
 
 Improve: Check the help and outcome boxes in step 2. If you helped and the outcome says finished without help, correct it and record the change in step 5.
 
@@ -3137,18 +3137,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 After the repair you write: “This fixes the problem.” What is the honest version?
 
+- It is fine if the participant agreed the new version was better.
 - That you changed the design in response to evidence, and it needs another check before anyone can say it helped.
 - It is fine: the change directly addresses what you observed.
-- It is fine if the participant agreed the new version was better.
 
 <details>
 <summary>After your attempt</summary>
 
+It is fine if the participant agreed the new version was better. — Shown two versions by the person who made them, agreement is close to guaranteed and tells you very little.
+
 That you changed the design in response to evidence, and it needs another check before anyone can say it helped. — A repair is a response, not a result. The next check is the sentence that keeps it that way and tells you what to do next.
 
 It is fine: the change directly addresses what you observed. — Addressing an observation is the reason to try it. Whether it works for the next person is unknown until someone else meets it.
-
-It is fine if the participant agreed the new version was better. — Shown two versions by the person who made them, agreement is close to guaranteed and tells you very little.
 
 Improve: Reread your Revision and Next check sections in step 5. Rewrite any claim of a fix as an expectation with the observation that would test it, then note the change.
 
@@ -3167,21 +3167,21 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nobody was available, so you ran the task yourself. What can the report say?
 
-- That it was a self-pilot, what it found about the materials, and that no participant evidence exists yet.
-- That the flow works, since you completed it without difficulty.
-- The findings you would expect a participant to have produced.
 - Nothing, since the lesson needs a participant.
+- The findings you would expect a participant to have produced.
+- That the flow works, since you completed it without difficulty.
+- That it was a self-pilot, what it found about the materials, and that no participant evidence exists yet.
 
 <details>
 <summary>After your attempt</summary>
 
-That it was a self-pilot, what it found about the materials, and that no participant evidence exists yet. — A self-pilot finds broken paths, missing cards and unclear wording, which is real and worth reporting. It cannot tell you what a first-time visitor would do.
-
-That the flow works, since you completed it without difficulty. — You designed it, so you know where everything is. Your fluency is the least informative result available.
+Nothing, since the lesson needs a participant. — The lesson is complete with a self-pilot honestly reported. A dated recruitment gap is a result, not a failure.
 
 The findings you would expect a participant to have produced. — That is an invented participant. Once written it gets quoted, and everything else you report becomes suspect.
 
-Nothing, since the lesson needs a participant. — The lesson is complete with a self-pilot honestly reported. A dated recruitment gap is a result, not a failure.
+That the flow works, since you completed it without difficulty. — You designed it, so you know where everything is. Your fluency is the least informative result available.
+
+That it was a self-pilot, what it found about the materials, and that no participant evidence exists yet. — A self-pilot finds broken paths, missing cards and unclear wording, which is real and worth reporting. It cannot tell you what a first-time visitor would do.
 
 Improve: Check the session type in step 1 and the Evidence section in step 5. Make sure the session type appears in the first sentence of the report, then record the change.
 

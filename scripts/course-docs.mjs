@@ -12,6 +12,7 @@ const { lessons, publishedLessonIds, isPublishedLesson } = await import(
 );
 const {lessonOneExample, suppliedWalkthrough} = await import('../src/lessonOneFlow.ts');
 const {actionQuestion} = await import('../src/lessonActions.ts');
+const { displayOrder } = await import('../shared/choices.ts');
 const { baselineLesson } = await import('../src/course.ts');
 const { readingSelections, videoSelections } = await import('../src/reading.ts');
 const { activities } = await import('../src/apprenticeship.ts');
@@ -138,6 +139,9 @@ const catalog = [
     );
 }
 function output(path, text) {
+  // --contract validates the content rules without generating or comparing the
+  // Markdown views, so a module can be checked while other modules change.
+  if (process.argv.includes("--contract")) return;
   // Keep generated course views connected to the plan without rewriting teaching.
   const titleEnd = text.indexOf("\n");
   const planNote = "\n\n> Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Follow [the all-course action contract](docs/COURSE-AUTHORING.md#all-course-action-contract--13-september-2026). All 224 published teaching lessons use saved action flows. Published, teaching-refined, learner-validated and assessed remain separate states.";
@@ -229,7 +233,7 @@ function flowDoc(l) {
   const parts=l.flow.map(action=>{
     if(action.kind==='check' && !action.repairFields) action={...action,repairFields:action.index===0?['user-goal']:[1,2,3,4,5].flatMap(n=>[`entry-${n}-label`,`entry-${n}-check`])};
     const f=fields.find(f=>f.id===action.field);
-    const q=actionQuestion(l,action), g=a.guide[action.guideIndex], check=action.kind==='check' ? a.checks[action.index] : null;
+    const q0=actionQuestion(l,action), q=q0 && (action.kind==='sort' ? q0 : {...q0,options:displayOrder(q0.options,l.id+':'+q0.id)}), g=a.guide[action.guideIndex], check=action.kind==='check' ? a.checks[action.index] : null;
     return '### '+action.title+'\n\nSection: '+action.section+'. Stable action: '+action.id+'.\n\n'+action.instruction+'\n\n'
       +(action.body ? list(action.body)+'\n\n' : '')
       +(action.kind==='example' ? list(lessonOneExample)+'\n\n' : '')
