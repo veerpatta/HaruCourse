@@ -17,7 +17,7 @@ export const guided19: Record<string, Guided> = {
         { id: 'reviewer-question', label: 'In one sentence, what a reviewer is deciding about you', kind: 'long', hint: 'Whether you can be given real work. Write it in your own words and keep it in front of you for the rest of the module.' },
         { id: 'stop-reading', label: 'What would make them stop reading', kind: 'short', example: 'Example (made up): three screens with no reasoning, or a claim about impact with no number and no source.' },
       ] },
-      { id: 'claims', title: 'Three claims', intro: 'The claims your work can support. One at a time, and prefer the ones with the strongest artefacts.', fields: [
+      { id: 'claims', title: 'Your claims', intro: 'The claims your work can support. One at a time, and prefer the ones with the strongest artefacts.', fields: [
         ...[1, 2, 3].map((n) => ({ id: `claim-${n}`, label: `Claim ${n} · what it says about how you work`, kind: 'long' as const,
           ...(n === 1 ? { example: 'Example (made up): I turn research into a decision that can be traced back to what somebody said.' } : { optional: true, hint: 'Optional. With one project, one or two well-supported claims are enough; leave this empty rather than stretching thin evidence.' }) })),
         { id: 'candidates-dropped', label: 'Candidate claims you dropped, and why', kind: 'long' },
@@ -27,7 +27,7 @@ export const guided19: Record<string, Guided> = {
         { id: 'rejected-claims', label: 'Any claim you rejected because you could not point at an artefact', kind: 'short' },
       ] },
       { id: 'surplus', title: 'The surplus', fields: [
-        { id: 'supports-none', label: 'Work that supports none of the three claims', kind: 'long' },
+        { id: 'supports-none', label: 'Work that supports none of your claims', kind: 'long' },
         { id: 'excluded-not-deleted', label: 'How it is marked excluded rather than deleted', kind: 'short', hint: 'It may support a different claim later, or a different job. Excluded is a decision; deleted is a loss.' },
       ] },
       { id: 'skim', title: 'The ninety-second skim', fields: [
@@ -75,7 +75,7 @@ export const guided19: Record<string, Guided> = {
         ],
         start: 'Open the project folders and write the actual file names.',
         enough: 'Every claim has a file name beside it.' },
-      { expect: 'Work that supports none of the three claims, marked excluded rather than deleted.',
+      { expect: 'Work that supports none of your claims, marked excluded rather than deleted.',
         fields: ['supports-none', 'excluded-not-deleted'],
         terms: [
           { term: 'Surplus', meaning: 'Work that supports none of the claims. It makes the portfolio longer and the claims weaker, and it is often good work.' },
@@ -122,7 +122,7 @@ export const guided19: Record<string, Guided> = {
                 'looks like evidence and is not': 'Efficiency is a category the tally sheets do not cover, and it is the sentence a reviewer will ask about first.',
               } },
           ],
-          then: 'Now sort your own work against your three claims, and mark the surplus as excluded.',
+          then: 'Now sort your own work against your claims, and mark the surplus as excluded.',
           pattern: 'Two of these actively cost you. A persona and an impact claim both look like the evidence a reviewer wants, and both collapse under the first question, taking the rest of the portfolio with them.',
         },
         start: 'List everything you have, then mark what supports nothing.',
@@ -191,7 +191,7 @@ export const guided19: Record<string, Guided> = {
       },
     },
     saveRoute: {
-      auto: 'Your reviewer sentence, the three claims, the evidence and the surplus list save as you type, on this device first and then online.',
+      auto: 'Your reviewer sentence, your claims, the evidence and the surplus list save as you type, on this device first and then online.',
       external: 'Keep the claims page where you can see it for the rest of the module; every later lesson is checked against it.',
       creator: 'Your creator reads the file name beside each claim. A claim with a project beside it rather than a file is one nobody has checked.',
       next: 'Open Your work and choose Ready for review. The next lesson audits what you actually kept against these claims.',
@@ -207,7 +207,7 @@ export const guided19: Record<string, Guided> = {
         { id: 'marked-strength', label: 'Each item marked strong, thin or missing, with its evidence tier', kind: 'long', hint: 'Tier: real participant research, self-pilot, simulation or supplied practice. A demonstration with made-up records is never evidence of real use.' },
         { id: 'why-thin', label: 'Why anything is thin, including undated or late artefacts', kind: 'long', example: 'Example (made up): the first project’s session notes were written two days later and say so. Thin rather than missing, and it has to be said.' },
       ] },
-      { id: 'claims', title: 'Against the three claims', fields: [
+      { id: 'claims', title: 'Against your claims', fields: [
         { id: 'evidence-per-claim', label: 'For each claim: the strong evidence available', kind: 'long' },
         { id: 'thin-only', label: 'Any claim resting only on thin evidence', kind: 'short', hint: 'Flag it. A claim on thin evidence is one you will have to weaken or drop.' },
       ] },
@@ -407,7 +407,7 @@ export const guided19: Record<string, Guided> = {
         fields: ['strongest-evidence', 'jobs-assigned'],
         terms: [
           { term: 'A job', meaning: 'The one thing this case study is for. Matched to the project’s strongest evidence rather than to what the project was about.' },
-          { term: 'No other one does it', meaning: 'The test. Three case studies covering the same ground teach a reader one fact about you three times.' },
+          { term: 'No other one does it', meaning: 'The test. Case studies covering the same ground teach a reader one fact about you over and over.' },
         ],
         demo: {
           scenario: 'Made-up example. Choosing which projects become case studies, and choosing the ones I am proudest of.',
@@ -508,7 +508,7 @@ export const guided19: Record<string, Guided> = {
       { expect: 'What a reader learns from each case study that they did not learn from the previous one.',
         fields: ['repetition-check', 'improvement-made'],
         terms: [
-          { term: 'Repetition', meaning: 'Three case studies teaching the same fact. Reviewers notice it immediately, and it makes the portfolio feel longer than it is.' },
+          { term: 'Repetition', meaning: 'Case studies teaching the same fact. Reviewers notice it immediately, and it makes the portfolio feel longer than it is.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
         start: 'Write the one new thing each case study adds, in one line each.',
@@ -558,7 +558,7 @@ export const guided19: Record<string, Guided> = {
     saveRoute: {
       auto: 'Your jobs, promises, order and lengths save as you type, on this device first and then online.',
       external: 'Keep this plan beside the claims page. The next lesson writes to it directly.',
-      creator: 'Your creator reads the three promises. Three descriptions rather than three promises is the commonest thing to find here.',
+      creator: 'Your creator reads the promises. Descriptions rather than promises are the commonest thing to find here.',
       next: 'Open Your work and choose Ready for review. The next lesson writes the first case study against its promise.',
     },
   },
@@ -1486,7 +1486,7 @@ export const guided19: Record<string, Guided> = {
     saveRoute: {
       auto: 'Your measurements, the outcome sections, the inflation search and the rewrites save as you type, on this device first and then online.',
       external: 'The tally sheets and session records stay with the projects. The outcome sections point at them rather than restating them.',
-      creator: 'Your creator reads the unmeasured sections. A portfolio where all three projects have impact figures is one where at least one of them is invented.',
+      creator: 'Your creator reads the unmeasured sections. A portfolio where every project has an impact figure is one where at least one of them is invented.',
       next: 'Open Your work and choose Ready for review. The next lesson builds the portfolio itself and checks it as an interface.',
     },
   },
@@ -1577,7 +1577,7 @@ export const guided19: Record<string, Guided> = {
       { expect: 'What was checked and what was not, written on the site itself.',
         fields: ['pdf-check', 'checked-not-checked', 'improvement-made'],
         terms: [
-          { term: 'Written on the site', meaning: 'On an about page rather than in a document nobody sees. It is also the clearest demonstration of the third claim.' },
+          { term: 'Written on the site', meaning: 'On an about page rather than in a document nobody sees. It is also the clearest demonstration of a claim about stating limits.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
         sorter: {
@@ -1598,7 +1598,7 @@ export const guided19: Record<string, Guided> = {
               } },
             { id: 'not-tested-with', text: 'Not checked: no screen-reader testing, and no testing with anybody who uses assistive technology.', answer: 'honest as written',
               feedback: {
-                'honest as written': 'Two specific absences, stated. It is also the clearest possible demonstration of the third portfolio claim.',
+                'honest as written': 'Two specific absences, stated. It is also the clearest possible demonstration of a claim about stating limits.',
                 'claims more than was done': 'It claims nothing.',
                 'says nothing': 'It names exactly what is missing.',
               } },
@@ -1768,7 +1768,7 @@ export const guided19: Record<string, Guided> = {
               } },
             { id: 'limits-rushed', text: 'The limits section delivered in twenty seconds at the end, faster than everything else.', answer: 'fix it before the second take',
               feedback: {
-                'fix it before the second take': 'It is one of your three claims, and rushing it signals discomfort with the part you should be most comfortable with.',
+                'fix it before the second take': 'It supports your claim about stating limits, and rushing it signals discomfort with the part you should be most comfortable with.',
                 'leave it': 'The pace says something about how you hold the section.',
                 'the recording is doing its job': 'It showed you the discomfort, which now needs a slower delivery.',
               } },
@@ -2065,7 +2065,7 @@ export const guided19: Record<string, Guided> = {
       ] },
       { id: 'cold', title: 'A cold reader', fields: [
         { id: 'cold-reader-said', label: 'What a cold reader said the portfolio shows, close to their words, by role', kind: 'long', sensitive: true, hint: 'Somebody who has not seen any of it, reading it once without you explaining anything.' },
-        { id: 'matched-claims', label: 'Which of your three claims that matched, and which it did not', kind: 'long' },
+        { id: 'matched-claims', label: 'Which of your claims that matched, and which did not', kind: 'long' },
       ] },
       { id: 'publish', title: 'Publish deliberately', fields: [
         { id: 'published-what', label: 'What you shared or published, where, and when', kind: 'short' },
