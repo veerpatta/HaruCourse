@@ -1614,14 +1614,14 @@ export const module5: Lesson[] = [
     areas: [4],
     title: "From a pile of notes to findings you can defend",
     objective:
-      "Convert your raw material into at most seven findings, each carrying how many people showed it, the evidence behind it, your confidence, the decision it informs, and any evidence that contradicts it.",
+      "Convert your material — the supplied made-up notes N01 to N06 by default, or your own consented, de-identified summaries — into up to seven findings (three strong ones are enough), each carrying how many people showed it (zero is a count), the evidence behind it, your confidence, the decision it informs, and any evidence that contradicts it.",
     bringForward:
-      "Everything collected so far: interview notes, the observation record, any diary entries or survey responses, and the desk-research note. Analysis is the point at which these become one study rather than four activities.",
+      "The supplied made-up practice notes N01 to N06 by default, plus any de-identified summaries from your own consented sessions and the desk-research note. Raw notes stay in your private file and are read there, never pasted into the course. Analysis is the point at which these become one study rather than four activities.",
     why: "Synthesis is where research is usually lost. Notes get read once, the memorable quotation wins, and the finding that emerges is the one the researcher already suspected — not through dishonesty, but because nothing in the process forced the alternatives to be considered.",
     teach: [
       "Work upward in three separable layers, which is the discipline the assigned page is built on. An observation is what happened or was said. An interpretation is what you think it means. A decision is what should change as a result. Keeping them apart lets someone else disagree with your interpretation without disputing your observation, which is precisely what a good reviewer will want to do, and it is why the three-column notes from the interview lesson matter now.",
       "Group observations, but watch where the groups come from. Bringing your existing categories to the notes and sorting into them will produce the categories you brought. The alternative is to lay out individual observations, put together the ones that seem to belong, and only then name the group from what is in it — and to notice when a group is named after a solution rather than a pattern. A group called “needs a reminder feature” is not a finding; a group called “people check with someone else before paying” is.",
-      "Count people, not incidents. One talkative participant who mentioned the same difficulty five times is one person, and writing “mentioned five times” quietly turns them into five. Beside each finding write the number of participants who showed it and the total, and keep the single-participant findings: a severe problem seen once is worth acting on, provided you write it as one person's severe problem rather than as a pattern.",
+      "Count people, not incidents. One talkative participant who mentioned the same difficulty five times is one person, and writing “mentioned five times” quietly turns them into five. Beside each finding write the number of participants who showed it and the total, and keep the single-participant findings: a severe problem seen once is worth acting on, provided you write it as one person's severe problem rather than as a pattern. Zero is a count too: “none of the six notes mention the price” is an honest null finding, provided the material could have shown it, and so is a problem everyone expected that did not appear.",
       "Contradictions are findings. When two participants did opposite things, the honest record keeps both and asks what differed between them — device, experience, who else was involved, whether they had done it before. Resolving a contradiction by dropping the inconvenient half is the most common way a small study becomes wrong, and it is invisible in the final report, which is what makes it dangerous.",
     ],
     misconception:
@@ -1637,7 +1637,7 @@ export const module5: Lesson[] = [
       {
         minutes: 30,
         title: "Extract observations",
-        text: "Write each observation on its own line or card, in the participant's terms, with a participant label. Do not interpret yet. Include the boring ones and anything that surprised you.",
+        text: "Write each observation on its own line or card, in the participant's terms, with its label (N01 to N06 for the supplied notes, or a code such as P1, never a name). Do not interpret yet. Include the boring ones and anything that surprised you.",
       },
       {
         minutes: 30,
@@ -1717,7 +1717,7 @@ export const module5: Lesson[] = [
       {
         criterion: "Findings count participants and state confidence",
         evidence:
-          "Each finding shows how many participants of how many showed it, and a stated confidence with a reason.",
+          "Each finding shows how many participants of how many showed it, including honest null results (0 of 6) where the material could have shown them, and a stated confidence with a reason.",
         levels: [
           "No counts; findings stated as general user behaviour.",
           "Counts present but incidents counted as people, or confidence asserted without reason.",
@@ -1782,7 +1782,7 @@ export const module5: Lesson[] = [
     objective:
       "Write three job statements with functional and emotional success criteria and three need statements from your own evidence, each labelled as evidenced or assumed, and identify which of them would still be true if the product were rebuilt from nothing.",
     bringForward:
-      "Your findings table with its counts and confidence. Jobs and needs are written from evidence you hold, and anything written from expectation must be labelled as such.",
+      "Your findings table with its counts and confidence, made from the supplied practice notes by default. Jobs and needs are written from evidence you hold, and anything written from expectation must be labelled as such.",
     why: "Findings are about what happened. Jobs and needs are about what someone was trying to accomplish, stated so that they outlive the current design — which is what lets you evaluate a redesign, argue against a feature, or notice that a competitor is solving a different problem.",
     teach: [
       "A job statement describes what someone is trying to get done in a situation, with the criteria by which they would judge it done. The assigned article's sentence form combines a situation, a motivation and an outcome: when I am deciding whether to spend a Saturday on a class, I want to know what I am committing to, so that I can agree it with my family before I pay. Success has a functional side, which is measurable — they knew the total cost, the time and what to bring — and an emotional side, which is not, and which is often the part that decides: they did not feel foolish for asking.",
@@ -2117,9 +2117,9 @@ export const module5: Lesson[] = [
     why: "Research that nobody acts on is indistinguishable from research nobody did. The report is where a study becomes a decision, and it is also the last point at which honest limits can still be attached to the numbers before they travel without you.",
     teach: [
       "Lead with the finding, not the method. The assigned page's structure is a headline, the essential facts, why it matters and the evidence behind it — in that order, because a reader who stops after the headline should still have the finding, and a reader who continues should be able to reach the raw material. A report organised by method, walking through what you did before saying what you learned, buries the point behind your process and is read as a defence of the work rather than an argument about the product.",
-      "Write for the decision that is actually pending. If someone must choose what to build next month, the useful report tells them what changes and what stays, and says which findings are strong enough to act on now and which are not. A neutral summary of everything you learned, arranged by theme, hands the reader the analysis you were supposed to do. The strongest sentence in a research report is usually the one that names what should not be built.",
+      "Write for the decision that is actually pending. If someone must choose what to build next month, the useful report tells them what changes and what stays, and says which findings are strong enough to act on now and which are not. A neutral summary of everything you learned, arranged by theme, hands the reader the analysis you were supposed to do. The strongest sentence in a research report is usually the one that names what should not be built. A clean result is a result: if the problem everyone expected did not appear, say so as a headline with its count, and a justified recommendation to keep something as it is, is a valid outcome.",
       "Limitations are a section, not an apology. Say who took part, how they were recruited, who was excluded, how many, over what period, and what the study cannot establish — the exclusion sentences you wrote when you chose your methods go here almost unchanged. Placed openly, they make the rest more credible, and they protect the finding later: a number quoted without its limits will eventually be used to justify something it cannot support, and the limitations section is the only thing that travels with it.",
-      "Anonymise before sharing, and check it rather than assuming it. Names, workplaces, unusual job titles, distinctive circumstances and quotations that identify someone in a small community all need removing or blurring, and the assigned page on sharing does not cover this — the data-handling page does. Read the report as though you were the participant's colleague and check whether you could tell who it was. Then be honest about disagreement: if the findings contradict what the person receiving them believes, that is the whole value of the study, and it needs to be stated plainly and once, with the evidence, rather than hedged into invisibility.",
+      "Anonymise before sharing, and check it rather than assuming it; removing names does not make a report anonymous. Names, workplaces, unusual job titles, distinctive circumstances and quotations that identify someone in a small community all need removing or blurring, and the assigned page on sharing does not cover this — the data-handling page does. Read the report as though you were the participant's colleague and check whether you could tell who it was. Then be honest about disagreement: if the findings contradict what the person receiving them believes, that is the whole value of the study, and it needs to be stated plainly and once, with the evidence, rather than hedged into invisibility.",
     ],
     misconception:
       "“A thorough report is a complete report.” Length reduces the chance of action. Six findings with evidence and one clear recommendation will change more than thirty pages, and the discipline of cutting is where you discover which findings you actually believe. Keep the full material available for anyone who asks; do not make reading it the price of understanding the study.",
@@ -2144,7 +2144,7 @@ export const module5: Lesson[] = [
       {
         minutes: 25,
         title: "Recommend, and say what not to do",
-        text: "Write one recommended next step tied to a specific finding, and one thing the evidence says not to build, with the reason. Note which findings are not yet strong enough to act on.",
+        text: "Write one recommended next step tied to a specific finding, and one thing the evidence says not to build, with the reason; keeping something unchanged is a valid recommendation if a finding supports it. Note which findings are not yet strong enough to act on.",
       },
       {
         minutes: 15,
