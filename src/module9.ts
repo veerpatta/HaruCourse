@@ -699,7 +699,7 @@ export const module9: Lesson[] = [
     misconception:
       "“We will add reduced motion at the end.” Designed at the end it becomes “disable all animation”, which strips the explanatory work along with the decoration. Designing the alternative alongside the original takes minutes and keeps the meaning.",
     example:
-      "With the setting on, three of the five kept animations needed alternatives. The filter panel's scale-and-fade became a fade of 120ms with no movement, keeping the change legible. The detail view's expansion became a cross-fade, and the row it came from stayed highlighted so the relationship survived. The loading spinner — essential — became a small pulsing dot with the label “Booking…”, local rather than crossing the screen. The confirmation flourish was removed entirely under the setting, since it explained nothing. Testing was done on the researcher's own phone with the setting on, and the result recorded with the device and version.",
+      "Made-up example: with the setting on, three of the five kept animations needed alternatives. The filter panel's scale-and-fade became a fade of 120ms with no movement, keeping the change legible. The detail view's expansion became a cross-fade, and the row it came from stayed highlighted so the relationship survived. The loading spinner — essential — became a small pulsing dot with the label “Booking…”, local rather than crossing the screen. The confirmation flourish was removed entirely under the setting, since it explained nothing. Testing was done on the researcher's own phone with the setting on, and the result recorded with the device and version.",
     freeToolPath:
       "Your own device: the assigned page lists where the setting lives on Windows, macOS, iOS, Android and Linux. A local HTML file with a reduced-motion media query shows both versions side by side with no account or tooling.",
     outputs: [
@@ -878,7 +878,7 @@ export const module9: Lesson[] = [
     guided: true,
     title: "Gestures and what people can discover",
     objective:
-      "Specify the gestures your product uses, give every one a visible alternative, and record which were discoverable when someone tried the product without being told.",
+      "Specify the gestures your product uses, give every one a visible alternative and a recoverable outcome, and record which were discoverable when someone tried the product without being told, or read the supplied results and date the gap.",
     bringForward:
       "Your m08 list and card components and the m07 flows they appear in.",
     prerequisite: "Your m08 list components and the flows using them.",
@@ -899,12 +899,12 @@ export const module9: Lesson[] = [
     misconception:
       "“Gestures make the interface cleaner.” They make it emptier, which is not the same. The controls are still needed; they have been moved somewhere the person has to already know about, and the cleanliness is paid for by everyone who does not.",
     example:
-      "The shortlist row used swipe-left to remove, with no visible control. Three people were asked to remove an item without being told how; none swiped, two looked for a control and one opened the detail view. The revision kept the swipe as an accelerator and added a visible quiet remove control on every row. Removal became immediate with a five-second undo rather than a confirmation dialogue. Pull-to-refresh was left alone because it matched the platform convention, and a proposed two-finger gesture for changing dates was dropped: it was undiscoverable, unconventional and impossible one-handed.",
+      "Made-up example: the shortlist row used swipe-left to remove, with no visible control. Three people were asked to remove an item without being told how; none swiped, two looked for a control and one opened the detail view. The revision kept the swipe as an accelerator and added a visible quiet remove control on every row. Removal became immediate with a five-second undo rather than a confirmation dialogue. Pull-to-refresh was left alone because it matched the platform convention, and a proposed two-finger gesture for changing dates was dropped: it was undiscoverable, unconventional and impossible one-handed.",
     freeToolPath:
       "Paper prototypes work for discoverability: hand someone the printed screen and ask them to do the task, then watch what they reach for. For real gesture behaviour, open a local HTML page on your own phone.",
     outputs: [
       "A list of every gesture with its visible alternative",
-      "Discoverability results from three people who were not told",
+      "Discoverability results from people who were not told, or the supplied results with the gap dated",
       "Destructive gestures specified with undo or confirmation",
       "Any gesture removed for being unconventional or one-handed-impossible",
     ],
@@ -931,7 +931,7 @@ export const module9: Lesson[] = [
         minutes: 30,
         title: "Test discoverability",
         instructions: [
-          "Ask three people to complete the action without telling them how.",
+          "Ask three people to complete the action without telling them how; if nobody is available, read the supplied made-up results and date the gap.",
           "Record what each reached for first.",
           "Note anyone who gave up or used a longer route.",
         ],
@@ -941,6 +941,7 @@ export const module9: Lesson[] = [
         title: "Make destruction recoverable",
         instructions: [
           "For each destructive gesture, specify undo with a stated window.",
+          "Specify what happens when a swipe stops halfway or is released early.",
           "Reserve confirmation for actions that cannot be undone.",
           "Check the undo is reachable one-handed.",
         ],
@@ -974,7 +975,7 @@ export const module9: Lesson[] = [
     ],
     rubric: [
       "Every gesture has a visible alternative",
-      "Discoverability was tested with people who were not told",
+      "Discoverability was tested without telling people, or the gap is dated",
       "Destructive gestures are recoverable",
       "One-handed and low-dexterity use is considered",
     ],
@@ -994,13 +995,13 @@ export const module9: Lesson[] = [
         recheck: "The paired list.",
       },
       {
-        criterion: "Discoverability was tested with people who were not told",
+        criterion: "Discoverability was tested without telling people, or the gap is dated",
         evidence:
-          "Records from three people attempting the action unaided, with what each reached for.",
+          "De-identified records from three people attempting the action unaided, with what each reached for — or, on the rehearsal route, a dated statement that nobody was available and a reading of the supplied results labelled as practice.",
         levels: [
-          "Not tested.",
-          "Tested after explaining the gesture.",
-          "Three unaided attempts recorded with first actions.",
+          "Not tested and not acknowledged.",
+          "Tested after explaining the gesture, or supplied results written up as if they were your own.",
+          "Three unaided attempts recorded with first actions, or the rehearsal route followed honestly with the gap dated.",
           "As adequate, and the results changed the design rather than confirming it.",
         ],
         remediation:
@@ -1010,7 +1011,7 @@ export const module9: Lesson[] = [
       {
         criterion: "Destructive gestures are recoverable",
         evidence:
-          "Undo specified with a window, or a confirmation where the action is irreversible.",
+          "Undo specified with a window, or a confirmation where the action is irreversible, and a swipe released halfway returning the row untouched.",
         levels: [
           "Destructive gestures with no recovery.",
           "Confirmation on every swipe, removing the speed benefit.",
@@ -1100,7 +1101,7 @@ export const module9: Lesson[] = [
     misconception:
       "“Keyboard support means everything is reachable by tab.” Reachable is not usable. A composite where every element is a tab stop is technically reachable and practically unbearable, and a dialogue that traps focus with no escape is reachable and inescapable.",
     example:
-      "The date-selection component and the filter panel were specified before building. For the date component: one tab stop for the group, arrow keys to move between dates, enter or space to select, home and end for the first and last available, escape to close returning focus to the field. For the filter panel: focus moves into the panel when it opens, escape closes it and returns focus to the filter button, and tab cycles inside while it is open. A rough build was tested against the table and failed two rows — escape did nothing, and focus returned to the document top — both recorded as defects rather than as design changes.",
+      "Made-up example: the date-selection component and the filter panel were specified before building. For the date component: one tab stop for the group, arrow keys to move between dates, enter or space to select, home and end for the first and last available, escape to close returning focus to the field. For the filter panel: focus moves into the panel when it opens, escape closes it and returns focus to the filter button, and tab cycles inside while it is open. A rough build was tested against the table and failed two rows — escape did nothing, and focus returned to the document top — both recorded as defects rather than as design changes.",
     freeToolPath:
       "Writing the table needs nothing. Testing it needs a rough local HTML file and your own keyboard; where nothing is built, record every row as untested rather than assumed.",
     outputs: [
@@ -1300,7 +1301,7 @@ export const module9: Lesson[] = [
     misconception:
       "“Screen-reader support is a development task.” Where focus moves is a design decision with visible consequences for sighted keyboard users too. Left to implementation it becomes whatever the framework does, which is usually nothing or the document top.",
     example:
-      "Four rules were written. Opening the filter panel moves focus to its first control. Closing it — by escape or by the close control — returns focus to the filter button. Applying a filter leaves focus on the control and announces “12 classes match”, because moving focus to the list would lose the person's place in the filters. A validation error moves focus to the first field with a problem and the message is tied to that field. A fifth situation was found while testing: after removing a shortlist item, focus was landing on the document top, which was recorded as a defect with the expected behaviour — focus should move to the next item, or to the list heading when the list is now empty.",
+      "Made-up example: four rules were written. Opening the filter panel moves focus to its first control. Closing it — by escape or by the close control — returns focus to the filter button. Applying a filter leaves focus on the control and announces “12 classes match”, because moving focus to the list would lose the person's place in the filters. A validation error moves focus to the first field with a problem and the message is tied to that field. A fifth situation was found while testing: after removing a shortlist item, focus was landing on the document top, which was recorded as a defect with the expected behaviour — focus should move to the next item, or to the list heading when the list is now empty.",
     freeToolPath:
       "A rough local HTML page and your own keyboard. If a screen reader is already on your device — the assigned catalog entry names the free ones — try one step with it, and record that as a preliminary check rather than a test with disabled users.",
     outputs: [

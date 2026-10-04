@@ -401,7 +401,7 @@ export const guided09: Record<string, Guided> = {
         options: [
           { label: 'Distance sets duration, so a small nearby change now drags and a big one may look abrupt.', correct: true, was: ['Distance sets duration, so a small nearby change is now slow and a large one may be too quick to follow.'], feedback: 'A duration is not a brand value. A tick appearing beside a field and a panel crossing half the screen have different distances, so they need different times.' },
           { label: 'Very little, since one value is easier to remember, to specify and to build.', was: ['Nothing: one value is easier to remember and easier to build.'], feedback: 'One value is easier and it makes half the product feel sluggish. Three named values are almost as easy and fit the work being done.' },
-          { label: 'The number is the problem; 200 milliseconds would make a better single value.', was: ['The problem is the number, and 200 would be a better single value.'], feedback: 'Any single value has the same fault at a different point. The fix is to set duration from distance rather than to move the one number.' },
+          { label: 'The number is the problem; 200 milliseconds would make a better single value everywhere.', was: ['The problem is the number, and 200 would be a better single value.'], feedback: 'Any single value has the same fault at a different point. The fix is to set duration from distance rather than to move the one number.' },
         ],
         repair: 'Redo the half-and-double test in step 3 for your shortest and longest transitions, then rewrite their durations in step 2 and record it in step 5.',
         recheck: 'Your three durations are not all the same, and each has a distance behind it.',
@@ -436,7 +436,7 @@ export const guided09: Record<string, Guided> = {
   'm09-l04-v1': {
     route: textRoute,
     worksheet: [
-      { id: 'setting', title: 'The setting, turned on', intro: 'Your own device. If you cannot find the setting, say so plainly and use drawn frames instead.', fields: [
+      { id: 'setting', title: 'The setting, turned on', intro: 'Your own device. If you cannot find the setting, say so plainly and use the Reduce motion toggle in the state example from lesson 2 or 3, or drawn frames, instead.', fields: [
         { id: 'device-and-setting', label: 'The device you used, and where the setting lives on it', kind: 'short', example: 'Example (made up): my own Android phone, Settings, Accessibility, Remove animations.' },
         { id: 'what-changed', label: 'What visibly changed once the setting was on', kind: 'long', hint: 'Open two or three apps you use daily and watch what stops moving. If nothing changes, write that too, with today’s date.' },
       ] },
@@ -547,9 +547,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'The plan is to add reduced-motion support at the end, once the animations are settled. What goes wrong?',
         options: [
-          { label: 'Done at the end it becomes one switch that turns everything off, which strips out the explanations along with the decoration.', correct: true, feedback: 'Designed alongside the original, each animation gets its own quieter version and keeps its meaning. Designed afterwards, there is only time for a single blunt rule.' },
-          { label: 'Nothing goes wrong, as long as the switch is thorough.', feedback: 'Thoroughness is the problem here rather than the cure. A thorough off switch removes the loading signal and the origin of every panel.' },
-          { label: 'It costs slightly more time to do it late than to do it early.', feedback: 'The cost is not time, it is meaning. What is lost is the information the movement was carrying, and nobody notices it is gone.' },
+          { label: 'Done last, it becomes one switch that turns everything off, stripping explanations too.', correct: true, was: ['Done at the end it becomes one switch that turns everything off, which strips out the explanations along with the decoration.'], feedback: 'Designed alongside the original, each animation gets its own quieter version and keeps its meaning. Designed afterwards, there is only time for a single blunt rule.' },
+          { label: 'Very little goes wrong, as long as the switch is thorough and covers every screen.', was: ['Nothing goes wrong, as long as the switch is thorough.'], feedback: 'Thoroughness is the problem here rather than the cure. A thorough off switch removes the loading signal and the origin of every panel.' },
+          { label: 'It costs a little more time to do late than to do early, which is acceptable.', was: ['It costs slightly more time to do it late than to do it early.'], feedback: 'The cost is not time, it is meaning. What is lost is the information the movement was carrying, and nobody notices it is gone.' },
         ],
         repair: 'Give every animation in your pairs section in step 2 a reduced version now rather than a single rule, and record the change in step 5.',
         recheck: 'No animation in your list is handled only by a blanket off switch.',
@@ -557,9 +557,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'With the setting on, your loading indicator disappears completely. Is that acceptable?',
         options: [
-          { label: 'It is not, because the person is still waiting and now has nothing telling them the product is working.', correct: true, feedback: 'Essential motion has to survive in some form. A small dot fading in one place, beside a change of words, says the same thing without travel.' },
-          { label: 'It is, because the setting is a request for no motion and you are honouring it.', feedback: 'The request is for less movement, not for less information. Reduced is not removed, and a silent wait is a worse experience than a quiet signal.' },
-          { label: 'It is, as long as the outcome message eventually arrives.', feedback: 'The gap before that message is exactly the moment the person needs covering. Eventually is not an acknowledgement.' },
+          { label: 'She is still waiting, and with it gone nothing tells her the product is working.', correct: true, was: ['It is not, because the person is still waiting and now has nothing telling them the product is working.'], feedback: 'Essential motion has to survive in some form. A small dot fading in one place, beside a change of words, says the same thing without travel.' },
+          { label: 'Acceptable, because the setting asks for no motion and you are honouring the request.', was: ['It is, because the setting is a request for no motion and you are honouring it.'], feedback: 'The request is for less movement, not for less information. Reduced is not removed, and a silent wait is a worse experience than a quiet signal.' },
+          { label: 'Acceptable, as long as the outcome message eventually arrives to end the wait.', was: ['It is, as long as the outcome message eventually arrives.'], feedback: 'The gap before that message is exactly the moment the person needs covering. Eventually is not an acknowledgement.' },
         ],
         repair: 'Find your loading and progress items in step 2 and specify a small, local, non-repeating reduced version for each, then record it in step 5.',
         recheck: 'Every wait is signalled in both versions of your specification.',
@@ -567,9 +567,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'You turned the setting on, walked the task, and everything felt fine. What can you claim?',
         options: [
-          { label: 'That your reduced versions work on your device for you, and nothing about how they feel to people who need the setting.', correct: true, feedback: 'Your own walk is a check, not a test with affected users. Writing the limit down is what keeps the claim honest when someone reads your work later.' },
+          { label: 'Your reduced versions work for you on your device; nothing about how they feel to others.', correct: true, was: ['That your reduced versions work on your device for you, and nothing about how they feel to people who need the setting.'], feedback: 'Your own walk is a check, not a test with affected users. Writing the limit down is what keeps the claim honest when someone reads your work later.' },
           { label: 'That the reduced versions are comfortable for people with motion sensitivity.', feedback: 'You have no evidence about those people. One person’s comfortable walk says nothing about a symptom they do not experience.' },
-          { label: 'That reduced motion is now handled and the work is finished.', feedback: 'Handled on one device by one person, with the parts you happened to walk through. That is worth recording as exactly that much.' },
+          { label: 'That reduced motion is now handled across the product and the work is finished.', was: ['That reduced motion is now handled and the work is finished.'], feedback: 'Handled on one device by one person, with the parts you happened to walk through. That is worth recording as exactly that much.' },
         ],
         repair: 'Write the limit in your limits-statement box in step 5, naming the device and saying plainly who you have not tested with, then note it in step 5 as well.',
         recheck: 'Your record separates what you saw from what you have not established.',
@@ -605,12 +605,15 @@ export const guided09: Record<string, Guided> = {
       ] },
       { id: 'discovery', title: 'What people reached for', fields: [
         { id: 'discovery-route', label: 'How you found out', kind: 'choice', options: ['Three people tried it without being told', 'One or two people tried it', 'Nobody was available: I used the supplied made-up results and dated the gap'] },
-        { id: 'discovery-records', label: 'What each person reached for first, in the order they tried things', kind: 'long', hint: 'Write what they touched, not what you think they meant. Note anyone who gave up or took a longer route.' },
-        { id: 'discovery-reading', label: 'What that tells you about each gesture', kind: 'long' },
+        { id: 'discovery-records', label: 'What each person reached for first, in the order they tried things, with no names', kind: 'long', sensitive: true,
+          requiredWhen: { field: 'discovery-route', values: ['Three people tried it without being told', 'One or two people tried it'] },
+          hint: 'Write what they touched, not what you think they meant, as “person 1, person 2”. Note anyone who gave up or took a longer route. Raw notes stay in a private file with a date to delete them. Leave this empty on the rehearsal route.' },
+        { id: 'discovery-reading', label: 'What that tells you about each gesture', kind: 'long', hint: 'On the rehearsal route, say what the supplied results would suggest if they were real, then write that discoverability is untested for your design.' },
       ] },
       { id: 'recovery', title: 'Undoing a gesture nobody meant', fields: [
         { id: 'undo-spec', label: 'For each destructive gesture: what happens, how long undo lasts, and the words the person sees', kind: 'long' },
         { id: 'undo-reach', label: 'Where the undo sits, and whether one thumb can reach it', kind: 'short' },
+        { id: 'swipe-cancel', label: 'What happens when a swipe stops halfway or is released early, and how the row returns', kind: 'short', example: 'Example (made up): released before the halfway mark, the row slides back and nothing is removed; with reduced motion it simply snaps back.' },
       ] },
       { id: 'record', title: 'Save', fields: [
         { id: 'survivors', label: 'Which gestures survived, and the reason for each', kind: 'long' },
@@ -650,17 +653,17 @@ export const guided09: Record<string, Guided> = {
           material: 'Supplied made-up results. Three people were each asked to remove a class from a shortlist and told nothing else. The first pressed and held the row. The second opened the class page and looked for a control there. The third tapped the row twice, then said she would delete the whole shortlist and start again. Nobody swiped.',
           question: 'What do these three attempts tell you about the swipe?',
           options: [
-            { label: 'The swipe is a shortcut for people who already know it, and the real route is whatever those three could find.', correct: true, feedback: 'Three people wanted the action and none of them found the gesture. That makes the gesture an extra, and it makes the visible control the actual design.' },
-            { label: 'They needed a hint, so a short tip on first use would fix it.', feedback: 'A tip arrives once, before anybody wants to remove anything. All three were already trying, and none of them had a tip in mind.' },
-            { label: 'Three people is too few to conclude anything.', feedback: 'Three is small for counting how often something happens. It is plenty for showing that a hidden action can be missed, which is all this claims.' },
-            { label: 'The swipe should be deleted, since nobody used it.', feedback: 'Nobody found it, which is not the same as nobody wanting it. Kept as a shortcut beside a visible control it costs nothing and helps the people who do know.' },
+            { label: 'The swipe is only a shortcut; the real route is whatever those three reached for first.', correct: true, was: ['The swipe is a shortcut for people who already know it, and the real route is whatever those three could find.'], feedback: 'Three people wanted the action and none of them found the gesture. That makes the gesture an extra, and it makes the visible control the actual design.' },
+            { label: 'They needed a hint, so a short tip shown on first use would fix the problem.', was: ['They needed a hint, so a short tip on first use would fix it.'], feedback: 'A tip arrives once, before anybody wants to remove anything. All three were already trying, and none of them had a tip in mind.' },
+            { label: 'Three people is too few to conclude anything at all about the swipe or the row.', was: ['Three people is too few to conclude anything.'], feedback: 'Three is small for counting how often something happens. It is plenty for showing that a hidden action can be missed, which is all this claims.' },
+            { label: 'The swipe should be deleted from the design, since nobody used it at all.', was: ['The swipe should be deleted, since nobody used it.'], feedback: 'Nobody found it, which is not the same as nobody wanting it. Kept as a shortcut beside a visible control it costs nothing and helps the people who do know.' },
           ],
           then: 'Read your own records the same way. For each gesture, write whether it is now a shortcut or still the only route to its action.',
         },
         start: 'Ask anyone to hand: a flatmate, a colleague, a family member. Say the goal only, then say nothing at all while they try. If nobody is free today, use the supplied results above as practice, write today’s date, and record that discoverability is untested.',
         enough: 'Each attempt names what the person touched first. A rehearsal with supplied material is written down as untested, never as research.' },
-      { demo: { scenario: 'Made-up example. Writing undo for a swipe that removes a class, and putting the undo somewhere her thumb could not reach in time.', beats: [{ label: 'What I specified first', text: 'The row goes, and a message appears at the top of the screen saying “Removed”, with Undo beside it. It stays three seconds.' }, { label: 'Why the top felt right', text: 'That is where messages sit on most of the pages I had been looking at. Three seconds felt like the natural length of a message.' }, { label: 'What a phone in one hand does to it', text: 'She swiped with her thumb near the bottom of a tall screen. The undo is at the top, so she has to shuffle the phone up her hand to reach it, and by then it has gone.' }, { label: 'What the wording was hiding', text: '“Removed” does not say what was removed. On a shortlist of six similar classes she cannot tell from the message which one vanished, so she cannot tell whether she wants it back.' }, { label: 'What I wrote instead', text: 'The message sits low, near where the swipe happened. It says “Sunrise Flow removed” with Undo beside it, and it stays eight seconds.' }], wrongTurn: 'The wrong turn is treating undo as wording and forgetting it is a thing somebody has to physically get to. It is tempting because the sentence is the part you can write at a desk, and the reach is the part you only find out about holding a phone.', tradeoff: 'A message sitting low covers part of the list, and eight seconds keeps it in the way for longer than three did. The version that stayed out of the way was the version that expired while her hand was still moving.', uncertainty: 'Still unknown: whether eight seconds is long enough for somebody reading slowly, or holding a child, or working out what just happened. Watching people swipe by accident would settle it, and nobody has.' }, expect: 'Undo specified for every destructive gesture, with a window, the wording, and a place a thumb can reach.',
-        fields: ['undo-spec', 'undo-reach'],
+      { demo: { scenario: 'Made-up example. Writing undo for a swipe that removes a class, and putting the undo somewhere her thumb could not reach in time.', beats: [{ label: 'What I specified first', text: 'The row goes, and a message appears at the top of the screen saying “Removed”, with Undo beside it. It stays three seconds.' }, { label: 'Why the top felt right', text: 'That is where messages sit on most of the pages I had been looking at. Three seconds felt like the natural length of a message.' }, { label: 'What a phone in one hand does to it', text: 'She swiped with her thumb near the bottom of a tall screen. The undo is at the top, so she has to shuffle the phone up her hand to reach it, and by then it has gone.' }, { label: 'What the wording was hiding', text: '“Removed” does not say what was removed. On a shortlist of six similar classes she cannot tell from the message which one vanished, so she cannot tell whether she wants it back.' }, { label: 'What I wrote instead', text: 'The message sits low, near where the swipe happened. It says “Sunrise Flow removed” with Undo beside it, and it stays eight seconds.' }], wrongTurn: 'The wrong turn is treating undo as wording and forgetting it is a thing somebody has to physically get to. It is tempting because the sentence is the part you can write at a desk, and the reach is the part you only find out about holding a phone.', tradeoff: 'A message sitting low covers part of the list, and eight seconds keeps it in the way for longer than three did. The version that stayed out of the way was the version that expired while her hand was still moving.', uncertainty: 'Still unknown: whether eight seconds is long enough for somebody reading slowly, or holding a child, or working out what just happened. Watching people swipe by accident would settle it, and nobody has.' }, expect: 'Undo specified for every destructive gesture, with a window, the wording and a place a thumb can reach, and what an abandoned swipe does.',
+        fields: ['undo-spec', 'undo-reach', 'swipe-cancel'],
         terms: [
           { term: 'Slip', meaning: 'Doing the wrong thing while meaning the right thing. An accidental swipe is a slip, and slips want undo rather than a question.' },
           { term: 'Undo window', meaning: 'How many seconds the reversal stays available. Say the number; “briefly” gets built as whatever the developer had that day.' },
@@ -676,9 +679,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'Nobody was free to try your product. What do you write in the discoverability section?',
         options: [
-          { label: 'That discoverability is untested, with the date, and that the supplied results were used as practice only.', correct: true, feedback: 'A dated gap is a finding an engineer or a reviewer can act on. It also protects you from quoting a rehearsal as though somebody had really tried.' },
-          { label: 'Your own attempt, written up as a test.', feedback: 'You already know where everything is, so your attempt cannot show what a stranger would reach for. Your hand is the one hand that proves nothing.' },
-          { label: 'That the gesture is discoverable, since it is a common pattern elsewhere.', feedback: 'Common elsewhere is an argument, not a record. The whole point of this lesson is that arguments about gestures lose to three people reaching for the wrong thing.' },
+          { label: 'That discoverability is untested, dated, with the supplied results used only as practice.', correct: true, was: ['That discoverability is untested, with the date, and that the supplied results were used as practice only.'], feedback: 'A dated gap is a finding an engineer or a reviewer can act on. It also protects you from quoting a rehearsal as though somebody had really tried.' },
+          { label: 'Your own attempt at the task, written up carefully as a test of discoverability.', was: ['Your own attempt, written up as a test.'], feedback: 'You already know where everything is, so your attempt cannot show what a stranger would reach for. Your hand is the one hand that proves nothing.' },
+          { label: 'That the gesture is discoverable, since it is a common pattern in other apps.', was: ['That the gesture is discoverable, since it is a common pattern elsewhere.'], feedback: 'Common elsewhere is an argument, not a record. The whole point of this lesson is that arguments about gestures lose to three people reaching for the wrong thing.' },
         ],
         repair: 'Set the choice in step 3 to the honest option and write the date beside it, then record what you changed in step 5.',
         recheck: 'The discoverability section says plainly whether anybody tried it, and when.',
@@ -686,19 +689,19 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'One person out of three found your swipe. What have you learned?',
         options: [
-          { label: 'The swipe is a shortcut for the one, and the visible control is the route for everybody else.', correct: true, feedback: 'A gesture nobody discovers is not a feature. Beside a visible control it becomes a genuine accelerator instead of a barrier.' },
-          { label: 'One in three is promising, so a small teaching hint would raise the rest.', feedback: 'Hints appear once and at the wrong moment. Teaching people a route they did not need to learn is more expensive than showing them a control.' },
-          { label: 'Nothing: one success out of three is within normal variation.', feedback: 'Two people could not do a thing they were asked to do. That is not variation to wait out, it is the finding.' },
+          { label: 'The swipe is a shortcut for that one; the visible control is the route for the rest.', correct: true, was: ['The swipe is a shortcut for the one, and the visible control is the route for everybody else.'], feedback: 'A gesture nobody discovers is not a feature. Beside a visible control it becomes a genuine accelerator instead of a barrier.' },
+          { label: 'One in three is promising, so a short teaching hint would bring the rest along.', was: ['One in three is promising, so a small teaching hint would raise the rest.'], feedback: 'Hints appear once and at the wrong moment. Teaching people a route they did not need to learn is more expensive than showing them a control.' },
+          { label: 'Very little, since one success in three is within the normal range of variation.', was: ['Nothing: one success out of three is within normal variation.'], feedback: 'Two people could not do a thing they were asked to do. That is not variation to wait out, it is the finding.' },
         ],
         repair: 'If any line in your pairs list in step 2 still has no visible control, add one now, then record the change in step 5.',
         recheck: 'Every gesture in the list has a visible control beside it.',
       },
       {
-        question: 'A swipe on your list removes an item permanently. Confirmation dialogue, or undo?',
+        question: 'A swipe on your list removes an item. Should it ask for confirmation first, or offer undo afterwards?',
         options: [
           { label: 'Undo with a stated window, because an accidental swipe is a slip rather than a decision.', correct: true, feedback: 'A dialogue after every swipe punishes the many people who meant it. Undo costs the careful person nothing and rescues the person whose thumb slid.' },
-          { label: 'A confirmation dialogue, because removal cannot be taken back.', feedback: 'It can be taken back if you design it to be. Reserve the dialogue for the rare action you genuinely cannot reverse, such as closing an account.' },
-          { label: 'Neither: the item can be added to the shortlist again.', feedback: 'Adding it again is a new task, and it assumes she noticed and remembers which class it was. Recovery has to be offered, not left to her memory.' },
+          { label: 'A confirmation dialogue, because a removed item cannot be taken back afterwards.', was: ['A confirmation dialogue, because removal cannot be taken back.'], feedback: 'It can be taken back if you design it to be. Reserve the dialogue for the rare action you genuinely cannot reverse, such as closing an account.' },
+          { label: 'Neither is needed, because the item can simply be added to the shortlist again.', was: ['Neither: the item can be added to the shortlist again.'], feedback: 'Adding it again is a new task, and it assumes she noticed and remembers which class it was. Recovery has to be offered, not left to her memory.' },
         ],
         repair: 'Write the undo window and the exact wording into your undo box in step 4, then record the change in step 5.',
         recheck: 'Every destructive gesture names a number of seconds and the words the person sees.',
@@ -801,9 +804,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'Your date picker has thirty-one tab stops, one per day. Is that keyboard support?',
         options: [
-          { label: 'It is reachable and not usable: the grid should be one tab stop with arrow keys moving inside it.', correct: true, feedback: 'Tab is for moving between components and arrows for moving within one. Thirty-one stops means every keyboard user pays for the grid on the way past it.' },
-          { label: 'Yes, since every date can be reached without a mouse.', feedback: 'Reachable is the low bar the pattern exists to raise. A person going to the Book button below has to press tab thirty-one times to get there.' },
-          { label: 'It depends on how many dates are usually available.', feedback: 'Even a week of dates is seven stops on the way to everything below. The rule does not soften with fewer items.' },
+          { label: 'It is reachable but not usable: the grid should be one tab stop, with arrows inside.', correct: true, was: ['It is reachable and not usable: the grid should be one tab stop with arrow keys moving inside it.'], feedback: 'Tab is for moving between components and arrows for moving within one. Thirty-one stops means every keyboard user pays for the grid on the way past it.' },
+          { label: 'It is full support, because every date can be reached without using a mouse.', was: ['Yes, since every date can be reached without a mouse.'], feedback: 'Reachable is the low bar the pattern exists to raise. A person going to the Book button below has to press tab thirty-one times to get there.' },
+          { label: 'It depends on how many dates are usually available in the month on screen.', was: ['It depends on how many dates are usually available.'], feedback: 'Even a week of dates is seven stops on the way to everything below. The rule does not soften with fewer items.' },
         ],
         repair: 'Rewrite your composite’s rows in step 2 so tab reaches the group once and the arrows move inside, then record the change in step 5.',
         recheck: 'The composite has one tab row and separate arrow rows, with the edge behaviour stated.',
@@ -811,9 +814,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'Your table says nothing about where focus goes when the panel closes. What happens?',
         options: [
-          { label: 'It gets decided at build time, and the usual result is focus falling to the top of the document.', correct: true, feedback: 'A silent specification is not neutral. The framework does whatever it does, and the person who closed a panel finds themselves at the start of the page.' },
-          { label: 'Nothing: focus naturally returns to the control that opened the panel.', feedback: 'That is the behaviour you want, and it does not happen on its own. It happens because somebody wrote it down.' },
-          { label: 'It is a development detail rather than a design decision.', feedback: 'Where somebody stands after a change is as much a design decision as where the panel sits. Left out, it becomes an accident.' },
+          { label: 'It is decided at build time, often by accident, and focus can fall to the top of the page.', correct: true, was: ['It gets decided at build time, and the usual result is focus falling to the top of the document.'], feedback: 'A silent specification is not neutral. A custom panel does whatever its code happens to do, and the person who closed it can find themselves at the start of the page.' },
+          { label: 'Focus returns to the Filters button on its own, whatever the panel is built from.', was: ['Nothing: focus naturally returns to the control that opened the panel.'], feedback: 'Some built-in dialogues do return focus, and a custom panel often does not. Writing the destination down is what makes it happen either way.' },
+          { label: 'Very little: where focus lands is a development detail, not a design decision.', was: ['It is a development detail rather than a design decision.'], feedback: 'Where somebody stands after a change is as much a design decision as where the panel sits. Left out, it becomes an accident.' },
         ],
         repair: 'Fill the focus box in step 3 with three sentences per component: on open, on close, on cancel, then record the change in step 5.',
         recheck: 'Both components name a destination for focus in all three situations.',
@@ -823,7 +826,7 @@ export const guided09: Record<string, Guided> = {
         options: [
           { label: 'Every row marked untested, said plainly, with what you looked for and could not find.', correct: true, feedback: 'An untested table is still the most useful thing an engineer can be handed. It says what is expected and admits nothing has been checked.' },
           { label: 'Every row marked as passing, since the behaviour is what the pattern specifies.', feedback: 'The pattern says what should happen. Your results column is only for what did happen, and nothing happened yet.' },
-          { label: 'Leave the results column out until there is a build.', feedback: 'A missing column reads as an oversight. An untested column reads as a person who knows exactly where they stand.' },
+          { label: 'Leave the results column out entirely until there is a build to test against.', was: ['Leave the results column out until there is a build.'], feedback: 'A missing column reads as an oversight. An untested column reads as a person who knows exactly where they stand.' },
         ],
         repair: 'Set the choice in step 4 to the untested option and write untested against every row in your results box, then record it in step 5.',
         recheck: 'No row in either table is blank.',
@@ -957,9 +960,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'You decide focus should jump to the first result whenever a filter changes the list. What does that cost?',
         options: [
-          { label: 'It takes the person out of the filters mid-task; announcing the new count keeps her place and still tells her.', correct: true, feedback: 'Moving somebody is the strongest thing you can do and a changed count is a small piece of news. Match the size of the response to the size of the event.' },
-          { label: 'Nothing: it shows the change immediately, which is the point.', feedback: 'It shows the change by relocating her. She now has to find her way back to the filter she was about to use.' },
-          { label: 'It only affects people using a screen reader.', feedback: 'A sighted keyboard user is moved just as far. Focus is everybody’s position, not an assistive-technology detail.' },
+          { label: 'It pulls her out of the filters mid-task; announcing the new count keeps her place.', correct: true, was: ['It takes the person out of the filters mid-task; announcing the new count keeps her place and still tells her.'], feedback: 'Moving somebody is the strongest thing you can do and a changed count is a small piece of news. Match the size of the response to the size of the event.' },
+          { label: 'Very little, because it shows her the change immediately, which is the point.', was: ['Nothing: it shows the change immediately, which is the point.'], feedback: 'It shows the change by relocating her. She now has to find her way back to the filter she was about to use.' },
+          { label: 'It costs only people using screen readers, who hear the list from the top.', was: ['It only affects people using a screen reader.'], feedback: 'A sighted keyboard user is moved just as far. Focus is everybody’s position, not an assistive-technology detail.' },
         ],
         repair: 'Rewrite your replace rule in step 2 so focus stays and the change is announced, with the words written out, then record the change in step 5.',
         recheck: 'The replace rule says focus stays and gives the exact sentence that is announced.',
@@ -969,7 +972,7 @@ export const guided09: Record<string, Guided> = {
         options: [
           { label: 'To the first field with a problem, with its message attached to that field.', correct: true, feedback: 'She lands on the thing she has to change, with the reason beside it. Nothing else has to be hunted for.' },
           { label: 'To the top of the page, so she can read the summary of all three.', feedback: 'A summary at the top is useful and it leaves her a search. Put the summary there and still send focus to the first field.' },
-          { label: 'Nowhere: the red borders make the problems visible.', feedback: 'Red borders are invisible to anybody not looking at that part of the screen, and to anybody who does not see red as red. Focus is what carries the person there.' },
+          { label: 'Nowhere in particular, because the red borders already make all three visible.', was: ['Nowhere: the red borders make the problems visible.'], feedback: 'Red borders are invisible to anybody not looking at that part of the screen, and to anybody who does not see red as red. Focus is what carries the person there.' },
         ],
         repair: 'Fill your error rule in step 2 with a named destination and where the message sits, then record the change in step 5.',
         recheck: 'The error rule names a field, not a region.',
@@ -977,9 +980,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'You tabbed through and twice could not tell where you were. What do you write down?',
         options: [
-          { label: 'The two steps by name, and what the outline needs to look like on those particular surfaces.', correct: true, feedback: 'A named step and a named surface is something you can fix. An invisible outline is not a styling detail, it is a lost position.' },
-          { label: 'A note that focus styling will be settled during the build.', feedback: 'Left to the build it becomes the browser default or nothing at all, on exactly the surfaces where it already failed.' },
-          { label: 'Nothing, since the browser default outline is usually fine.', feedback: 'You have just watched it not be fine, twice. That observation is worth more than the general rule.' },
+          { label: 'The two steps by name, and what the outline must look like on those two surfaces.', correct: true, was: ['The two steps by name, and what the outline needs to look like on those particular surfaces.'], feedback: 'A named step and a named surface is something you can fix. An invisible outline is not a styling detail, it is a lost position.' },
+          { label: 'A note that focus styling will be settled properly during the build itself.', was: ['A note that focus styling will be settled during the build.'], feedback: 'Left to the build it becomes the browser default or nothing at all, on exactly the surfaces where it already failed.' },
+          { label: 'Very little, since the browser’s default outline is usually good enough.', was: ['Nothing, since the browser default outline is usually fine.'], feedback: 'You have just watched it not be fine, twice. That observation is worth more than the general rule.' },
         ],
         repair: 'Add the two steps to your tab-through notes in step 4 and describe the outline against those surfaces, then record the change in step 5.',
         recheck: 'Every surface colour in your design has an outline described against it.',
