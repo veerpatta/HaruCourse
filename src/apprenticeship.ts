@@ -269,9 +269,9 @@ const detectiveGuide: GuideStep[] = [
 const framing: Guided = {
   route: textRoute,
   worksheet: [
-    { id: 'review', title: 'Explanations you have not verified', intro: 'From your Lesson 1 table: the inferred or unknown entries that still read like facts.', fields: numbered('unverified', (n) => `Unverified explanation ${n}`, 2, 'short', (n) => (n === 1 ? { example: 'Example (made up): Attendees skip the materials list because it is below the fold.' } : {})) },
-    { id: 'frames', title: 'Three problem frames', intro: 'Person, situation, unmet goal and consequence. No feature names: not checkbox, reminder, app or button.', fields: numbered('frame', (n) => `Frame ${n}`, 3, 'long', (n) => (n === 1 ? { hint: 'One sentence each for who, when, what they need and what goes wrong if they do not get it.', example: 'Example (made up): A first-time attendee, the evening before a pottery workshop, needs to know what to bring, otherwise she arrives without an apron and loses the first twenty minutes.' } : {})) },
-    { id: 'assumptions', title: 'Six assumptions', intro: 'Each one: the claim, what happens if it is wrong, and your confidence (low, medium or high).', fields: [
+    { id: 'review', title: 'Explanations you have not verified', intro: 'From your Lesson 1 table: the inferred or unknown entries that still read like facts. No Lesson 1 table? Use explanations someone might give for the practice brief.', fields: numbered('unverified', (n) => `Unverified explanation ${n}`, 2, 'short', (n) => (n === 1 ? { hint: 'No Lesson 1 table? Write one reason someone might give for why first-time attendees arrive without aprons, worded as the guess it is.', example: 'Example (made up): Attendees skip the materials list because it is below the fold.' } : {})) },
+    { id: 'frames', title: 'Three problem frames', intro: 'Person, situation, unmet goal and consequence. No feature names: not checkbox, reminder, app or button. Mark anything the brief does not state with (assumed).', fields: numbered('frame', (n) => `Frame ${n}`, 3, 'long', (n) => (n === 1 ? { hint: 'One sentence each for who, when, what they need and what goes wrong if they do not get it. Put (assumed) after every detail you added that the brief or your Lesson 1 evidence does not state.', example: 'Example (made up): A first-time attendee, the evening before (assumed), needs to know what to bring, otherwise she arrives without an apron and loses the first twenty minutes (assumed).' } : {})) },
+    { id: 'assumptions', title: 'Six assumptions', intro: 'Each one: the claim, what happens if it is wrong, and your confidence (low, medium or high). The details you marked (assumed) in your frames belong here too.', fields: [
       ...numbered('assumption', (n) => `Assumption ${n}`, 6, 'short', (n) => (n === 1 ? { example: 'Example (made up): Attendees read the confirmation email · if wrong, nobody sees the list · confidence low.' } : {})),
       { id: 'priority-1', label: 'First uncertainty to investigate', kind: 'short', hint: 'The one where being wrong costs most and you know least.' },
       { id: 'priority-1-evidence', label: 'What evidence would change your mind about it?', kind: 'short', example: 'Example (made up): Three attendees say they never open the confirmation email.' },
@@ -286,26 +286,26 @@ const framing: Guided = {
     { id: 'decide', title: 'Decide', fields: [
       { id: 'decision', label: 'The next investigation you will do', kind: 'long', hint: 'Which uncertainty, with whom, and what you will look for.' },
       { id: 'decision-reason', label: 'Why this one first', kind: 'short' },
-      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long', hint: 'The Check section sends you back to one answer. Name which one and why you changed it.' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions, or why no change was needed', kind: 'long', hint: 'The Check section sends you back to one answer. Name which one and why you changed it.' },
     ] },
   ],
   checks: [
     {
-      question: 'Which of these is a problem frame rather than a disguised feature?',
+      question: 'The brief says only that some first-time attendees arrive without aprons. Which line is a problem frame rather than a disguised feature?',
       options: [
-        { label: 'A first-time attendee, the evening before, cannot tell what to bring, so she arrives without materials and misses the start.', correct: true, feedback: 'It names a person, a moment, what she needs and what it costs her. A reminder, a printed list or a phone call could all answer it, which is exactly the point.' },
-        { label: 'Attendees need a reminder email the day before the workshop.', feedback: 'This is one answer wearing the clothes of a problem. Written this way, only one response can ever win, and you never find out whether email is read at all.' },
-        { label: 'The booking page needs a clearer materials section.', feedback: 'It names a page and a section, so it has already decided that the trouble is on that screen. The person may never reach that screen.' },
+        { label: 'A first-time attendee arrives without an apron because she could not tell what to bring (assumed).', correct: true, was: ['A first-time attendee, the evening before, cannot tell what to bring, so she arrives without materials and misses the start.'], feedback: 'It names a person, a moment and what goes wrong for her, and the one detail the brief never gave — why it happens — is marked as assumed. A reminder, a printed list or spare aprons could all answer it.' },
+        { label: 'Attendees need a reminder email the day before the class, so nobody arrives without an apron.', was: ['Attendees need a reminder email the day before the workshop.'], feedback: 'This is one answer wearing the clothes of a problem. Written this way only one response can win, and you never find out whether email is read at all.' },
+        { label: 'The booking page needs a clearer materials section, placed where first-time attendees cannot miss it.', was: ['The booking page needs a clearer materials section.'], feedback: 'It names a page and a section, so it has already decided the trouble is on that screen. The brief does not say anyone reached that screen, or looked for the list there.' },
       ],
-      repair: 'Reread your three frames in step 2. If any of them contains a feature word — reminder, email, checkbox, page, button — rewrite it as what the person needs to have happen, then record the change in step 5.',
-      recheck: 'Each frame names a person and a moment, and someone else could propose a response you had not thought of.',
+      repair: 'Reread your three frames in step 2. If any contains a feature word — reminder, email, checkbox, page, button — rewrite it as what the person needs to have happen, and put (assumed) after any detail the brief did not give. Record the change in step 5.',
+      recheck: 'Each frame names a person and a moment, every detail the brief did not give is marked (assumed), and someone else could propose a response you had not thought of.',
     },
     {
       question: 'Two assumptions are both unverified. Which do you investigate first?',
       options: [
-        { label: 'The one where being wrong would do the most damage and you have the least evidence.', correct: true, feedback: 'Consequence and uncertainty together. An assumption you are confident about, or one that costs nothing if wrong, can wait however interesting it is.' },
-        { label: 'The one that is quickest and cheapest to check.', feedback: 'Tempting, and sometimes it is the same assumption. On its own it leads you to answer easy questions while the expensive one stays untested.' },
-        { label: 'The one your three responses all depend on.', feedback: 'Closer, because a shared dependency raises the consequence. Still incomplete: if you already have good evidence for it, checking again buys little.' },
+        { label: 'The one where being wrong would do the most damage and your evidence is thinnest.', correct: true, was: ['The one where being wrong would do the most damage and you have the least evidence.'], feedback: 'Consequence and uncertainty together. An assumption you are confident about, or one that costs nothing if wrong, can wait however interesting it is.' },
+        { label: 'The one that is quickest and cheapest to check, so you learn something useful today.', was: ['The one that is quickest and cheapest to check.'], feedback: 'Tempting, and sometimes it is the same assumption. On its own it leads you to answer easy questions while the expensive one stays untested.' },
+        { label: 'The one your three responses all depend on, since it touches every option.', was: ['The one your three responses all depend on.'], feedback: 'Closer, because a shared dependency raises the consequence. Still incomplete: if you already have good evidence for it, checking again buys little.' },
       ],
       repair: 'Look at your two priority uncertainties in step 3. If either was chosen because it was easy, swap it for the one with the worse consequence, and say why in step 5.',
       recheck: 'Each priority names what would happen if you were wrong, and each has evidence that could disprove it.',
@@ -313,9 +313,9 @@ const framing: Guided = {
     {
       question: 'You write beside an assumption: “Nothing could really disprove this.” What does that tell you?',
       options: [
-        { label: 'It is not an investigation yet — it needs a specific thing you could see that would change your mind.', correct: true, feedback: 'An assumption nothing could contradict cannot be tested, only defended. Naming what would change your mind is what turns it into work you can do.' },
-        { label: 'It is a strong assumption, so you can safely build on it.', feedback: 'Unfalsifiable is not the same as well supported. It usually means the claim is vague rather than certain.' },
-        { label: 'It should be deleted from the list.', feedback: 'Deleting it hides it. Sharpen it instead until you can say what evidence would count against it.' },
+        { label: 'Sharpen it until you can name a thing you could see that would change your mind.', correct: true, was: ['It is not an investigation yet — it needs a specific thing you could see that would change your mind.'], feedback: 'An assumption nothing could contradict cannot be tested, only defended. Making the claim more specific until something could count against it turns it into work you can do.' },
+        { label: 'It is well supported, so you can safely build on it and move to the next assumption.', was: ['It is a strong assumption, so you can safely build on it.'], feedback: 'Unfalsifiable is not the same as well supported. It usually means the claim is vague rather than certain, and building on it hides the risk.' },
+        { label: 'It is untestable, so delete it from the list and spend the time on the others.', was: ['It should be deleted from the list.'], feedback: 'Deleting it hides it, and the risk stays inside your frames. Sharpen it instead until you can say what evidence would count against it.' },
       ],
       repair: 'Take the priority uncertainty with the weakest evidence line and replace it with one concrete observation that would change your mind. Record it in step 5.',
       recheck: 'Both evidence lines name something a person could say or do, not a feeling.',
@@ -324,29 +324,30 @@ const framing: Guided = {
   saveRoute: {
     auto: 'Your frames, assumptions and responses save as you type: on this device first, then online. The line above the steps says “Saved online” once the server has them.',
     external: 'Nothing is uploaded. If you sketched the responses on paper, keep the sheet and write its file name or location in Your work so you can find it beside the frames.',
-    creator: 'Your creator can read this worksheet, your notes and your work reference once you choose Ready for review in Your work. He cannot edit them.',
+    creator: 'Your creator can read this worksheet, your notes and your work reference as soon as they save online; choosing Ready for review in Your work tells him a version is ready to read. He cannot edit them.',
     next: 'Open Your work, add anything the worksheet did not ask for, then choose Ready for review. Lesson 3 turns your first priority uncertainty into interview questions, so keep it where you can see it.',
   },
   guide: [
-    { expect: 'Two explanations from Lesson 1 that you wrote down but never checked.', fields: ['unverified-1', 'unverified-2'],
+    { expect: 'Two explanations from Lesson 1 that you wrote down but never checked, or two guesses about the practice brief.', fields: ['unverified-1', 'unverified-2'],
       terms: [{ term: 'Verified', meaning: 'You saw it happen, or someone told you it happened to them. Everything else is a guess, however sensible.' }],
-      start: 'Open your Lesson 1 worksheet and look only at the rows labelled inferred or unknown.', enough: 'Each line is something you believe about other people, not something you observed yourself.' },
-    { expect: 'Three frames, each naming a person, a situation, an unmet goal and a consequence, with no feature words.', fields: ['frame-1', 'frame-2', 'frame-3'],
+      start: 'Open your Lesson 1 worksheet and look only at the rows labelled inferred or unknown. Without it, read the practice brief and write two reasons someone might give for it.', enough: 'Each line is something you believe about other people, not something you observed yourself.' },
+    { expect: 'Three frames, each naming a person, a situation, an unmet goal and a consequence, with no feature words and every added detail marked (assumed).', fields: ['frame-1', 'frame-2', 'frame-3'],
       demo: {
-        scenario: 'Made-up example. The workshop report says only: “Attendees turn up unprepared.” Here is the frame being written, including the version that had to be thrown away.',
+        scenario: 'Made-up example. The organiser’s brief says only: “Some first-time attendees arrive without aprons. Could we send a reminder?” Here is the frame being written, including the version that had to be thrown away and the details that had to be marked.',
         beats: [
-          { label: 'What the report actually says', text: 'People arrive without materials. That is the symptom somebody noticed. It does not say who, when, or what they were doing beforehand.' },
+          { label: 'What the brief actually says', text: 'Some first-time attendees arrive without aprons, and the organiser already has a fix in mind. It does not say when they prepare, whether a materials list exists, or what arriving without one costs.' },
           { label: 'My first attempt', text: '“Attendees need a reminder email with the materials list the day before.” I wrote it in about four seconds.' },
           { label: 'Why I threw it away', text: 'It decides that the answer is an email. If nobody opens the email, or if the list only exists in the organiser’s head, that frame cannot lead anywhere useful.' },
           { label: 'The frame I kept', text: 'A first-time attendee, the evening before, cannot tell what to bring, so she arrives without an apron and loses the first twenty minutes of a two-hour class.' },
+          { label: 'What I had to mark', text: '“The evening before”, “twenty minutes” and “a two-hour class” are mine, not the brief’s. Each got (assumed) beside it and a line on my assumptions list. Only “first-time” and “without an apron” came from the organiser.' },
           { label: 'What that opens up', text: 'Now an email, a line on the ticket, a text message, or the studio simply keeping spare aprons are all candidates, and they can be compared.' },
         ],
-        wrongTurn: 'The wrong turn is the fast one: writing the response you already have in mind and calling it the problem. It feels productive and it quietly closes every other option.',
+        wrongTurn: 'Two wrong turns sit close together. One is writing the response you already have in mind and calling it the problem. The other is adding vivid details — the evening before, twenty minutes — without marking them, so a guess reads like something the organiser reported.',
         tradeoff: 'The longer frame takes more thought and can sound like avoiding the question when someone wants a fix today. It buys you the ability to be wrong about the fix without being wrong about the work.',
-        uncertainty: 'Still unknown: whether attendees ever see the confirmation email, and whether the studio can supply spares. Both are assumptions for the next step.',
+        uncertainty: 'Still unknown: whether attendees ever see the confirmation email, when they actually prepare, and whether the studio can supply spares. Every (assumed) in the frame is on that list.',
       },
-      terms: [{ term: 'Problem frame', meaning: 'A description of who is stuck, when, and what it costs them. It does not say what to build.' }, { term: 'Feature', meaning: 'A thing you could build: a reminder, a checkbox, a page. If a frame contains one, it has jumped to a solution.' }],
-      start: 'Write “A [kind of person], [when], needs [goal], otherwise [what goes wrong].” three times with different people or moments.', enough: 'You could hand each frame to another designer and they could propose something you did not think of.' },
+      terms: [{ term: 'Problem frame', meaning: 'A description of who is stuck, when, and what it costs them. It does not say what to build.' }, { term: 'Feature', meaning: 'A thing you could build: a reminder, a checkbox, a page. If a frame contains one, it has jumped to a solution.' }, { term: 'Assumption marker', meaning: 'Writing (assumed) after a detail you supplied yourself. The frame stays concrete, and the detail stays something to check rather than a fact.' }],
+      start: 'Write “A [kind of person], [when], needs [goal], otherwise [what goes wrong].” three times with different people or moments, then put (assumed) after each detail you supplied.', enough: 'You could hand each frame to another designer and they could propose something you did not think of, and they could tell which details came from the brief.' },
     { expect: 'Six assumptions with consequence and confidence, and the two you will investigate with what would change your mind.',
       fields: ['assumption-1', 'assumption-2', 'assumption-3', 'assumption-4', 'assumption-5', 'assumption-6', 'priority-1', 'priority-1-evidence', 'priority-2', 'priority-2-evidence'],
       reveal: { first: 1, group: 1, count: 6, addLabel: 'Add another assumption', note: 'One at a time. Six is the target; each is something your frames quietly depend on.' },
@@ -354,10 +355,10 @@ const framing: Guided = {
         material: 'A supplied pair from the same made-up workshop. Assumption A: “Attendees read the confirmation email.” Nobody has checked; if it is wrong, every message you send is unread. Assumption B: “Attendees would prefer a printed list to a text message.” Nobody has checked; if it is wrong, you send the same information in a slightly different form.',
         question: 'Which one do you investigate first, and why?',
         options: [
-          { label: 'A, because being wrong about it breaks every other response you might choose.', correct: true, feedback: 'Both are unchecked, so uncertainty does not separate them. Consequence does: if the email is never read, a better-worded email cannot help, and neither can anything else delivered that way.' },
-          { label: 'B, because preference questions are quick to ask people.', feedback: 'Speed is a real consideration, but here it buys the cheap answer. You would learn a format preference while still not knowing whether any message arrives.' },
-          { label: 'Neither: ask about both in the same conversation to save time.', feedback: 'Reasonable in practice, and it still needs an order. Asked together, the preference question usually eats the time, because people find it easier to answer than recalling what they actually did.' },
-          { label: 'A, because printed lists cost money and email is free.', feedback: 'The right assumption for the wrong reason. Cost belongs in the response comparison, not in deciding which uncertainty threatens the work most.' },
+          { label: 'A, because if it is wrong, every message you send goes unread.', correct: true, was: ['A, because being wrong about it breaks every other response you might choose.'], feedback: 'Both are unchecked, so uncertainty does not separate them. Consequence does: if the email is never read, a better-worded email cannot help, and neither can anything else delivered that way.' },
+          { label: 'B, because preference questions are quick to ask and easy to act on.', was: ['B, because preference questions are quick to ask people.'], feedback: 'Speed is a real consideration, but here it buys the cheap answer. You would learn a format preference while still not knowing whether any message arrives.' },
+          { label: 'Neither first: ask about both in one conversation to save time.', was: ['Neither: ask about both in the same conversation to save time.'], feedback: 'Reasonable in practice, and it still needs an order. Asked together, the preference question often eats the time, because people find it easier to answer than recalling what they actually did.' },
+          { label: 'A, because printed lists cost money while email costs nothing.', was: ['A, because printed lists cost money and email is free.'], feedback: 'The right assumption for the wrong reason. Cost belongs in the response comparison, not in deciding which uncertainty threatens the work most.' },
         ],
         then: 'Apply the same test to your own six: for each, ask what breaks if it is wrong, then pick the two where the damage is worst and the evidence thinnest.',
       },
@@ -369,9 +370,24 @@ const framing: Guided = {
       start: 'Write the information change first; it is usually the cheapest and shows whether a screen is needed at all.', enough: 'No two responses are variations of the same idea, and every weakness is one you would say to the organiser.' },
     { terms: [{ term: 'Investigation', meaning: 'The smallest piece of work that could change your mind about one uncertainty: who you would ask, and what you would look for.' }, { term: 'Priority uncertainty', meaning: 'The one you picked in step 3 because being wrong about it costs most and you know least.' }, { term: 'Check questions', meaning: 'The questions in the Check section. They exist to send you back to one earlier answer and change it before you save.' }], expect: 'One chosen investigation, the reason it comes first, and the change the Check questions sent you back to make.',
       fields: ['decision', 'decision-reason', 'improvement-made'],
-      start: 'Pick the priority uncertainty from step 3 and name a person you could actually ask. Answer the Check questions before the last box.',
-      enough: 'The reason compares the cost of being wrong, not which response you like, and the last box names one answer you actually changed.' },
+      start: 'Pick the priority uncertainty from step 3 and name the kind of person you could actually ask. Answer the Check questions before the last box.',
+      enough: 'The reason compares the cost of being wrong, not which response you like, and the last box names one answer you changed or explains why it already met the check.' },
   ],
+  material: [
+    'Practice brief, made up for this lesson. Use it if you have no Lesson 1 evidence. The organiser of a small pottery studio writes: “Some first-time attendees arrive without aprons. Could we send a reminder?”',
+    'Stated in the brief: some first-time attendees arrive without aprons, and the organiser has proposed a reminder.',
+    'Not stated, so anything you write about it is an assumption: how many people, when they prepare, whether a materials list exists or was sent, read or understood, and what arriving unprepared costs them or the class.',
+    'When a frame adds a detail to make it concrete — “the evening before”, “misses the first twenty minutes” — keep it and put (assumed) after it. It then becomes something to check rather than a fact nobody reported.',
+  ],
+  transfer: {
+    scenario: 'Made-up case: A neighbourhood tool library lends drills and ladders. Its coordinator writes: “Lots of borrowers return tools late. Can we add an overdue fine?” Nothing else is known: not how many borrowers, how late, why, or what a late return costs the next person waiting.',
+    prompt: 'Write one problem frame for this case that names no feature. Put (assumed) after every detail you add beyond the coordinator’s note, and explain why you chose that person and that moment.',
+    anchors: {
+      weak: 'Restates the fix as the need (“borrowers need a fine” or “a reminder text”), or adds vivid details — “they forget over the weekend”, “the next borrower waits a week” — as if the coordinator had reported them.',
+      adequate: 'Names a person, a moment, an unmet goal and a consequence with no feature in it — for example a borrower who needs to know when a drill is due back, otherwise the next person waits — and every added detail is marked (assumed).',
+      strong: 'Adequate, plus says which marked assumption matters most to check first and why (such as whether late returns actually delay anyone), and notes that a fine is one response among several, alongside reminders or longer loans.',
+    },
+  },
 };
 
 const interviewing: Guided = {
@@ -379,7 +395,7 @@ const interviewing: Guided = {
   worksheet: [
     { id: 'prepare', title: 'Purpose and consent', fields: [
       { id: 'purpose', label: 'What this conversation is for, in one sentence', kind: 'short', example: 'Example (made up): To learn what people did the last time they prepared for a workshop, so I know whether the materials list is the real problem.' },
-      { id: 'consent-intro', label: 'What you will say before starting', kind: 'long', hint: 'Who you are, what the notes are for, that they can stop or skip any question, and whether you will record. Ask before recording.', example: 'Example (made up): I am practising interviewing for a design course. I will take written notes, no recording unless you agree, and nothing will be shared with your name. You can stop at any time.' },
+      { id: 'consent-intro', label: 'What you will say before starting', kind: 'long', hint: 'Who you are, what the notes are for, who will read them (your course reviewer can read what you type here), when you will delete them, that they can skip or stop, and whether you will record. Ask before recording.', example: 'Example (made up): I am practising interviewing for a design course. I will take written notes, with no recording unless you agree. My reviewer will read a short summary without your name or anything that identifies you, and I will delete my notes by the end of the month. You can skip a question or stop at any time.' },
     ] },
     { id: 'write', title: 'Your questions', intro: 'About a recent real experience, never about a feature you have in mind.', fields: [
       { id: 'uncertainty', label: 'The uncertainty from Lesson 2 these questions serve', kind: 'short' },
@@ -388,29 +404,29 @@ const interviewing: Guided = {
       { id: 'followup-2', label: 'Neutral follow-up 2', kind: 'short', hint: 'A follow-up that works after any answer: “Can you say more about that?”' },
     ] },
     { id: 'practice', title: 'The conversation', fields: [
-      { id: 'session-status', label: 'What actually happened', kind: 'choice', options: ['Real conversation with a consenting adult', 'Rehearsal only: no participant evidence collected'], hint: 'Choose honestly. A rehearsal is useful and is not participant evidence.' },
-      { id: 'observations', label: 'What the person said or did (observations only)', kind: 'long', hint: 'No names or identifying details. If you were not given permission to quote, paraphrase.' },
-      { id: 'interpretations', label: 'What you think it means (interpretations)', kind: 'long' },
-      { id: 'quotes', label: 'Exact words worth keeping, if consented', kind: 'long', hint: 'Leave empty if you did not ask permission to quote.' },
+      { id: 'session-status', label: 'What actually happened', kind: 'choice', options: ['Real conversation with a consenting adult', 'Rehearsal only: no participant evidence collected'], hint: 'Choose honestly. Rehearsal only is a complete result for this lesson: your guide, your consent wording and what reading it aloud taught you. It is not participant evidence.' },
+      { id: 'observations', label: 'A de-identified summary of what the person said or did (observations only)', kind: 'long', sensitive: true, hint: 'Raw notes stay on paper or in a private file on your own device, with a date to delete them. Here, write a short summary with no names, and leave out details such as a job, a street or a family event that could identify them: removing the name alone does not make notes anonymous. Leave empty after a rehearsal.' },
+      { id: 'interpretations', label: 'What you think it means (interpretations)', kind: 'long', sensitive: true, hint: 'Your reading of the summary above, kept apart from it. Leave empty after a rehearsal.' },
+      { id: 'quotes', label: 'A few exact words worth keeping, only if they agreed to be quoted', kind: 'long', sensitive: true, hint: 'Leave empty if you did not ask permission to quote, and leave out anything in the words that would identify them.' },
     ] },
     { id: 'distinguish', title: 'Follow-up questions', fields: [
-      { id: 'followups-next', label: 'Questions the conversation raised for next time', kind: 'long' },
+      { id: 'followups-next', label: 'Questions the conversation or rehearsal raised for next time', kind: 'long', hint: 'After a rehearsal, these come from where you stumbled and what you realised you still do not know.' },
     ] },
     { id: 'improve', title: 'Improve one question', fields: [
       { id: 'weak-question', label: 'The weakest question, as written', kind: 'short' },
       { id: 'improved-question', label: 'The same question, rewritten', kind: 'short', example: 'Example (made up): Before: Would a reminder have helped? After: What happened the day before the class?' },
       { id: 'next-research-question', label: 'Your next research question', kind: 'short' },
-      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long', hint: 'Name the question or note you changed, and why.' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions, or why no change was needed', kind: 'long', hint: 'Name the question or note you changed, and why.' },
     ] },
   ],
   checks: [
     {
       question: 'Which question is most likely to tell you what actually happened?',
       options: [
-        { label: 'Tell me about the last class you signed up for. What did you do the evening before?', correct: true, feedback: 'It asks about one real occasion the person can remember, and it does not tell them which part you care about, so the surprising detail has room to arrive.' },
-        { label: 'Would a reminder the day before have helped you prepare?', feedback: 'It hands over the answer. Most people say yes to a helpful-sounding thing, and you learn what they predict about themselves rather than what they did.' },
-        { label: 'Do you usually find booking pages confusing?', feedback: 'It asks for a general habit and a judgement at once. “Usually” answers are reconstructions, and “confusing” invites agreement with your own suspicion.' },
-        { label: 'How important is it to you to know what to bring?', feedback: 'Almost nobody says it is unimportant. Importance questions produce flat, agreeable answers that cannot separate one situation from another.' },
+        { label: 'Think of the last class you booked. What did you do the evening before it?', correct: true, was: ['Tell me about the last class you signed up for. What did you do the evening before?'], feedback: 'It asks about one real occasion the person can remember, and it does not tell them which part you care about, so the surprising detail has room to arrive.' },
+        { label: 'Would a reminder the day before the class have helped you get ready for it?', was: ['Would a reminder the day before have helped you prepare?'], feedback: 'It hands over the answer. Many people say yes to a helpful-sounding thing, and you learn what they predict about themselves rather than what they did.' },
+        { label: 'Do you usually find class booking pages confusing when you first open them?', was: ['Do you usually find booking pages confusing?'], feedback: 'It asks for a general habit and a judgement at once. “Usually” answers are reconstructions, and “confusing” invites agreement with your own suspicion.' },
+        { label: 'How important is it to you to know exactly what to bring to a class?', was: ['How important is it to you to know what to bring?'], feedback: 'Almost nobody says it is unimportant. Importance questions produce flat, agreeable answers that cannot separate one situation from another.' },
       ],
       repair: 'Read your six questions in step 2 aloud. Rewrite any that name a feature, ask for a prediction, or contain the word you hope to hear, then record the change in step 5.',
       recheck: 'Every question can be answered by telling a story about one occasion, and none of them mentions your idea.',
@@ -418,29 +434,29 @@ const interviewing: Guided = {
     {
       question: 'You rehearsed the questions alone because nobody was available. What may you write in your notes?',
       options: [
-        { label: 'That you rehearsed, what felt awkward to ask, and that no participant evidence exists yet.', correct: true, feedback: 'A rehearsal tests your questions, which is real work worth recording. What it cannot produce is anything about other people, so the honest note says so plainly.' },
-        { label: 'Your own answers to the questions, marked as a first data point.', feedback: 'You already know your own design and intentions, so your answers cannot stand in for a participant’s. Recording them as data quietly turns your assumptions into findings.' },
-        { label: 'A likely answer based on what people in your position usually say.', feedback: 'That is an invented participant. Once it is written down it will be quoted later as though someone said it.' },
-        { label: 'Nothing — an interview without a participant is a failure.', feedback: 'Too harsh, and it hides useful work. The guide, the consent wording and the awkward questions you found are the output; the recruitment gap is a dated fact, not a failure.' },
+        { label: 'Rehearsal: which questions felt awkward, and that no participant evidence exists yet.', correct: true, was: ['That you rehearsed, what felt awkward to ask, and that no participant evidence exists yet.'], feedback: 'A rehearsal tests your questions, which is real work worth recording. What it cannot produce is anything about other people, so the honest note says so plainly.' },
+        { label: 'Your own answers to the questions, clearly marked as the first data point you have.', was: ['Your own answers to the questions, marked as a first data point.'], feedback: 'You already know your own design and intentions, so your answers cannot stand in for a participant’s. Recording them as data quietly turns your assumptions into findings.' },
+        { label: 'The answers a typical attendee would probably give, clearly marked as estimates for now.', was: ['A likely answer based on what people in your position usually say.'], feedback: 'That is an invented participant, however carefully it is labelled. Once it is written down it will be quoted later as though someone said it.' },
+        { label: 'Nothing at all, since an interview without a participant has failed.', was: ['Nothing — an interview without a participant is a failure.'], feedback: 'Too harsh, and it hides useful work. The guide, the consent wording and the awkward questions you found are the output; the recruitment gap is a dated fact, not a failure.' },
       ],
-      repair: 'Check the session-status choice in step 3. If it says a real conversation happened, be sure someone actually consented; if not, choose rehearsal and empty the observations box, then say what you changed in step 5.',
+      repair: 'Check the session-status choice in step 3. If it says a real conversation happened, be sure someone actually consented; if not, choose rehearsal and empty the observations and interpretations boxes, then say what you changed in step 5.',
       recheck: 'The status matches what happened, and nothing in the observations box is something you supplied yourself.',
     },
     {
       question: 'Halfway through, the person mentions something upsetting about a family member. What do you do?',
       options: [
-        { label: 'Stop the topic, remind them they can skip anything or stop, and leave it out of your notes.', correct: true, feedback: 'Consent is a running permission, not a form signed once. The material is not yours to keep simply because it was said while you were listening.' },
-        { label: 'Write it down carefully — it is honest context about their life.', feedback: 'It may well be true and relevant, and it was still shared in a moment they did not choose. Keeping it in notes you may show someone else breaks the terms they agreed to.' },
-        { label: 'Keep going and decide afterwards whether to include it.', feedback: 'Deciding later means it is already written down. The moment to protect them is while it is happening, not while you edit.' },
+        { label: 'Pause the topic, remind them they can skip or stop, and keep it out of your notes.', correct: true, was: ['Stop the topic, remind them they can skip anything or stop, and leave it out of your notes.'], feedback: 'Consent is a running permission, not a form signed once. The material is not yours to keep simply because it was said while you were listening.' },
+        { label: 'Write it all down carefully, since it is honest and useful context about their life.', was: ['Write it down carefully — it is honest context about their life.'], feedback: 'It may well be true and relevant, and it was still shared in a moment they did not choose. Keeping it in notes your reviewer can read breaks the terms they agreed to.' },
+        { label: 'Keep the conversation going and decide afterwards whether to include it.', was: ['Keep going and decide afterwards whether to include it.'], feedback: 'Deciding later means it is already written down. The moment to protect them is while it is happening, not while you edit.' },
       ],
-      repair: 'Reread your consent wording in step 1. If it does not say plainly that they can skip a question or stop at any time, add that sentence and note it in step 5.',
-      recheck: 'The consent introduction names what the notes are for, that they can stop, and whether anything is recorded.',
+      repair: 'Reread your consent wording in step 1. If it does not say plainly that they can skip a question or stop at any time, who will read the notes and when you will delete them, add that and note it in step 5.',
+      recheck: 'The consent introduction names what the notes are for, who will read them, when they will be deleted, that they can stop, and whether anything is recorded.',
     },
   ],
   saveRoute: {
     auto: 'Your purpose, consent wording, questions and notes save as you type, on this device first and then online. Watch for “Saved online” above the steps.',
-    external: 'Nothing is uploaded, and no participant’s name, contact details or recording belongs in this worksheet. Keep any consent record or audio in your own private folder and refer to it only by a file name.',
-    creator: 'Your creator can read the worksheet, your notes and your work reference once you choose Ready for review. Write your notes so that a person reading them cannot identify the participant.',
+    external: 'Nothing is uploaded, and no participant’s name, contact details or recording belongs in this worksheet. Keep raw notes, any consent record and any audio in your own private folder or on paper, decide the date you will delete them, and refer to them here only by a file name.',
+    creator: 'Your creator can read every answer here, including your notes, once they save. Write only a de-identified summary: no names, and no combination of details — a job, a street, an unusual event — that would let someone work out who it was. Removing the name alone does not make notes anonymous.',
     next: 'Open Your work and choose Ready for review. Lesson 4 takes the task you asked about and maps it, including the moments where it goes wrong, so keep your observations to hand.',
   },
   guide: [
@@ -465,28 +481,37 @@ const interviewing: Guided = {
       example: 'Example (made up): Leading: “Was the materials list hard to find?” Open: “How did you find out what to bring?”',
       terms: [{ term: 'Leading question', meaning: 'A question that contains the answer you hope for. “Was it confusing?” tells them it was confusing.' }, { term: 'Open question', meaning: 'One that cannot be answered yes or no and does not name your idea.' }],
       start: 'Write “Tell me about the last time you…” six times and finish each with a different moment from the experience.', enough: 'No question mentions a feature, a screen or the future; each can be answered by telling a story.' },
-    { expect: 'Honest status, then observations kept apart from interpretations. A rehearsal with no participant is a valid result.',
+    { expect: 'Honest status, then a de-identified summary kept apart from interpretations. A rehearsal with no participant is a complete result: leave both boxes empty.',
       fields: ['session-status', 'observations', 'interpretations', 'quotes'],
       supported: {
-        material: 'A supplied line from someone else’s notes, written straight after a real consented conversation: “She looked for the price, couldn’t find it on the first screen, went back twice, and said ‘I never know what these things cost until the end’ — she was clearly frustrated by the whole booking process.”',
+        material: 'A made-up practice line, written as if straight after a consented conversation: “She looked for the price, couldn’t find it on the first screen, went back twice, and said ‘I never know what these things cost until the end’ — she was clearly frustrated by the whole booking process.”',
         question: 'How should this be split between observations and interpretations?',
         options: [
-          { label: 'Observed: she searched for the price, returned twice, and said that sentence. Inferred: that she was frustrated by the process as a whole.', correct: true, feedback: 'Her actions and her words are what you can point to. “Clearly frustrated by the whole process” is your reading, and it stretches one moment into a verdict on everything.' },
-          { label: 'All observed: her behaviour and her frustration were both visible in the room.', feedback: 'You saw behaviour and heard a sentence. Frustration is a reasonable interpretation of them, but writing it as observed removes the step where someone could disagree with you.' },
-          { label: 'Observed: the quotation only. Everything else is your summary of what she did.', feedback: 'Too strict. Actions you watched — searching, going back twice — are as observable as the words; describing them is not interpretation.' },
-          { label: 'Inferred: memory is unreliable, so notes written afterwards are all interpretation.', feedback: 'Notes written immediately are the normal record of a session. Treating everything as interpretation would leave you nothing to reason from.' },
+          { label: 'Observed: her search, going back twice and her sentence. Inferred: frustration with the whole process.', correct: true, was: ['Observed: she searched for the price, returned twice, and said that sentence. Inferred: that she was frustrated by the process as a whole.'], feedback: 'Her actions and her words are what you can point to. “Clearly frustrated by the whole process” is your reading, and it stretches one moment into a verdict on everything.' },
+          { label: 'All observed: her behaviour and her frustration were both plainly visible to you in the room at the time.', was: ['All observed: her behaviour and her frustration were both visible in the room.'], feedback: 'You saw behaviour and heard a sentence. Frustration is a reasonable interpretation of them, but writing it as observed removes the step where someone could disagree with you.' },
+          { label: 'Observed: the quotation only. Everything else is your own summary of what she did, so it is inferred.', was: ['Observed: the quotation only. Everything else is your summary of what she did.'], feedback: 'Too strict. Actions you watched — searching, going back twice — are as observable as the words; describing them is not interpretation.' },
+          { label: 'All inferred: memory is unreliable, so notes written after a session are interpretation.', was: ['Inferred: memory is unreliable, so notes written afterwards are all interpretation.'], feedback: 'Notes written immediately are the normal record of a session. Treating everything as interpretation would leave you nothing to reason from.' },
         ],
-        then: 'Split your own notes the same way: what you could point to on one side, your reading of it on the other, and the exact words only if you were given permission to keep them.',
+        then: 'Split your own notes the same way: what you could point to on one side, your reading of it on the other, and the exact words only if you were given permission to keep them. Only the de-identified summary goes into the course.',
       },
-      terms: [{ term: 'Observation', meaning: 'What was said or done, as close to their words as you can.' }, { term: 'Interpretation', meaning: 'Your reading of why. Keep it in its own box so nobody mistakes it for what they said.' }],
-      start: 'If nobody is available today, read the questions aloud, note where you stumbled, choose “Rehearsal only” and leave observations empty.', enough: 'Every line in observations could be checked against what was said; nothing private or identifying is written down.' },
+      terms: [{ term: 'Observation', meaning: 'What was said or done, as close to their words as you can.' }, { term: 'Interpretation', meaning: 'Your reading of why. Keep it in its own box so nobody mistakes it for what they said.' }, { term: 'De-identified summary', meaning: 'A short account with names removed and any other detail that could point to the person — a job, a place, an unusual event — left out.' }],
+      start: 'If nobody is available today, read the questions aloud, note where you stumbled, choose “Rehearsal only” and leave observations empty.', enough: 'After a conversation: every line in observations could be checked against what was said, and nothing identifying is written down. After a rehearsal: the status says so and the participant boxes are empty.' },
     { terms: [{ term: 'Follow-up question', meaning: 'A question for a later conversation, raised by something you did not understand this time.' }, { term: 'Conclusion', meaning: 'A statement about what is true or what to do. It belongs in a later step, not in this list.' }], demo: { scenario: 'Made-up example. Turning the interpretations box into follow-up questions, and finding that the first list was a list of fixes.', beats: [{ label: 'What was in my interpretations box', text: 'Three guesses written beside some practice notes: that she looked for the price first, that she may not read anything sent in advance, and that she expected the materials list on the ticket. All three are mine, not hers.' }, { label: 'My first list', text: 'Move the price higher. Stop relying on email. Put the list on the ticket. I wrote them in about a minute and felt organised.' }, { label: 'Why none of them is a follow-up', text: 'Every line is something I would do. Nobody can answer a to-do list, and each line has already settled what the guess means. My guesses had quietly become decisions.' }, { label: 'The repair', text: '“The last time you booked a class, where did you look first?” Now the price guess can survive or fall, and there is room for an answer I did not predict.' }, { label: 'The one I nearly kept', text: '“Did the hidden price put you off?” It is shaped like a question, so it looked safe. The only thing it can do is agree with me. Rewritten: “What made you go back to the earlier screen?”' }], wrongTurn: 'The wrong turn is writing what you will change instead of what you still do not know. A fix list looks like progress, and it closes the question you were meant to carry into the next conversation.', tradeoff: 'Keeping these as questions leaves the design undecided for another week, and somebody may ask what you have actually produced. What you have is a shorter list of things you would otherwise have built on a guess.', uncertainty: 'Still unknown: whether any of these follow-ups matter to anyone but me. A rehearsal cannot tell you that, and the next conversation may raise something that makes all three look small.' }, expect: 'The questions the conversation raised, separated from what you observed.', fields: ['followups-next'],
       start: 'Reread the interpretations box; each guess is a follow-up question.', enough: 'Each item is a question, not a conclusion.' },
     { terms: [{ term: 'Weak question', meaning: 'The one you would least like to ask again. Usually it is the one you could hear steering the answer as you said it.' }, { term: 'Check questions', meaning: 'The questions in the Check section. They exist to send you back to one earlier answer and change it before you save.' }], expect: 'One rewritten question, your next research question, and the change the Check questions sent you back to make.',
       fields: ['weak-question', 'improved-question', 'next-research-question', 'improvement-made'],
       start: 'Pick the question you felt awkward asking; that is usually the leading one. Answer the Check questions before the last box.',
-      enough: 'The rewrite asks about a past event and would work with a stranger, and the last box names one thing you actually changed.' },
+      enough: 'The rewrite asks about a past event and would work with a stranger, and the last box names one thing you changed or explains why it already met the check.' },
   ],
+  transfer: {
+    scenario: 'Made-up case: You are helping a community choir understand why some new members stop coming after their first month. You have drafted three questions for adults who joined this year: “Would a buddy system help you stay?”, “Do you find rehearsals too long?” and “Tell me about the last rehearsal you went to.”',
+    prompt: 'Choose the weakest of the three questions and rewrite it so it asks about a real recent occasion. Explain why your version steers the person less than the original.',
+    anchors: {
+      weak: 'Keeps the buddy-system question, or rewrites it as another prediction (“Would more support help?”), or swaps one leading word for another, so the person can still hear which answer is wanted.',
+      adequate: 'Rewrites a leading or prediction question as a story about one recent occasion, such as “Think of a rehearsal you missed. What happened that week?”, and explains that it names no idea and cannot be answered yes or no.',
+      strong: 'Adequate, plus adds a neutral follow-up (“What did you expect to happen then?”), notes that one person’s account cannot show how common leaving is, and keeps the consent wording and de-identified notes in view.',
+    },
+  },
 };
 
 const flowMapping: Guided = {
@@ -516,16 +541,16 @@ const flowMapping: Guided = {
     { id: 'revise', title: 'Revise and save', fields: [
       { id: 'repair', label: 'What changed, and why', kind: 'long' },
       { id: 'photo-reference', label: 'File name or location of the paper flow (photo or scan)', kind: 'short', hint: 'A name only; nothing is uploaded here.' },
-      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long', hint: 'Name the branch or box you changed, and why.' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions, or why no change was needed', kind: 'long', hint: 'Name the branch or box you changed, and why.' },
     ] },
   ],
   checks: [
     {
       question: 'A visitor reaches “Sorry, this workshop is full.” The box has no arrow leaving it. What is wrong?',
       options: [
-        { label: 'It is a dead end: the person is told the bad news with nothing they can do next.', correct: true, feedback: 'A failure is only handled when the person can act — see another date, join a waiting list, or leave knowing where they stand. A message alone stops the flow.' },
+        { label: 'A dead end: the person hears the bad news and has nothing they can do next.', correct: true, was: ['It is a dead end: the person is told the bad news with nothing they can do next.'], feedback: 'A failure is only handled when the person can act — see another date, join a waiting list, or leave knowing where they stand. A message alone stops the flow.' },
         { label: 'Nothing: the workshop really is full, so the flow has finished honestly.', feedback: 'Honest, and unfinished. The task was to get a place; being told no ends this route but not the need, and the flow should show where that need goes.' },
-        { label: 'The message should be softer so people are less disappointed.', feedback: 'Wording matters and it is not the structural problem. A gently worded dead end is still a dead end.' },
+        { label: 'The message should be softer and apologise, so people feel less disappointed.', was: ['The message should be softer so people are less disappointed.'], feedback: 'Wording matters and it is not the structural problem. A gently worded dead end is still a dead end.' },
       ],
       repair: 'Look at your three failure branches in step 3. Any whose next action is only a message needs a real action the person can take. Change one and record it in step 5.',
       recheck: 'Every failure box has an arrow out of it, and each next action is something the person does rather than something the system says.',
@@ -533,9 +558,9 @@ const flowMapping: Guided = {
     {
       question: 'Your flow shows: Home → Details → Reserve → Payment → Confirmation. What is missing?',
       options: [
-        { label: 'The actions and decisions between the screens, and what the person needed to know before committing.', correct: true, feedback: 'That is a list of places, not a flow. What turns one box into the next, and what has to be true before Reserve, is where the design decisions live.' },
-        { label: 'Nothing: the five screens cover the whole task from start to finish.', feedback: 'They cover the happy path only, and even there the arrows are unlabelled, so anyone reading it has to guess what causes each move.' },
-        { label: 'The visual design of each screen.', feedback: 'Not at this stage. A flow is about order, decisions and recovery; how the screens look comes later and cannot fix a missing decision.' },
+        { label: 'The actions and decisions between screens, and what the person must know before Reserve.', correct: true, was: ['The actions and decisions between the screens, and what the person needed to know before committing.'], feedback: 'That is a list of places, not a flow. What turns one box into the next, and what has to be true before Reserve, is where the design decisions live.' },
+        { label: 'Nothing: the five screens cover the whole task, from the start right through to the finish.', was: ['Nothing: the five screens cover the whole task from start to finish.'], feedback: 'They cover the happy path only, and even there the arrows are unlabelled, so anyone reading it has to guess what causes each move.' },
+        { label: 'The visual design of each screen, so a reader can picture the finished flow.', was: ['The visual design of each screen.'], feedback: 'Not at this stage. A flow is about order, decisions and recovery; how the screens look comes later and cannot fix a missing decision.' },
       ],
       repair: 'Reread your successful path in step 2. If your boxes are screen names, label each arrow with the action that causes the move, and make sure the price and what to bring appear before the Reserve arrow. Note the change in step 5.',
       recheck: 'Every arrow carries an action, and the information list from step 1 appears before commitment.',
@@ -543,9 +568,9 @@ const flowMapping: Guided = {
     {
       question: 'Payment is submitted and the connection drops before any answer arrives. What should the flow do?',
       options: [
-        { label: 'Say clearly that the result is not yet known and offer a way to check, keeping what was entered.', correct: true, feedback: 'Unknown is a real state and deserves its own box. Telling someone it failed when it may have succeeded is how people pay twice.' },
-        { label: 'Show a failure message so the person can try again straight away.', feedback: 'This is the expensive mistake. You do not know it failed, and a confident retry can produce a second booking and a second charge.' },
-        { label: 'Retry automatically in the background until it succeeds.', feedback: 'Silent retries hide the state from the person and can repeat the charge. Any retry has to be their decision, after they know where things stand.' },
+        { label: 'Say the result is not yet known, offer a way to check, and keep what was entered.', correct: true, was: ['Say clearly that the result is not yet known and offer a way to check, keeping what was entered.'], feedback: 'Unknown is a real state and deserves its own box. Telling someone it failed when it may have succeeded is how people pay twice.' },
+        { label: 'Show a failure message straight away, so the person can try paying again quickly.', was: ['Show a failure message so the person can try again straight away.'], feedback: 'This is the expensive mistake. You do not know it failed, and a confident retry can produce a second booking and a second charge.' },
+        { label: 'Retry the payment automatically in the background until it finally succeeds.', was: ['Retry automatically in the background until it succeeds.'], feedback: 'Silent retries hide the state from the person and can repeat the charge. Any retry has to be their decision, after they know where things stand.' },
       ],
       repair: 'Check your interrupted-confirmation branch in step 3. If its message says the booking failed, rewrite it as an unknown state with a way to check, then record it in step 5.',
       recheck: 'The interrupted branch distinguishes “we are checking” from “this failed”, and keeps the entered values.',
@@ -583,10 +608,10 @@ const flowMapping: Guided = {
         material: 'A supplied branch from the same made-up flow. The person types an email address without an @ and presses Reserve. Someone has drafted three versions of what happens next.',
         question: 'Which one handles the failure properly?',
         options: [
-          { label: '“That email address is missing an @. Check it and press Reserve again.” The name and date they typed stay on screen.', correct: true, feedback: 'It says what is wrong, where, and what to do, and it does not punish them by emptying the form. Everything they can act on is in one place.' },
-          { label: '“Invalid input. Please try again.” The form is cleared so they can start cleanly.', feedback: 'Two failures at once: it does not say which field or what is wrong with it, and clearing the form makes the person retype work they had already done correctly.' },
-          { label: 'The Reserve button quietly does nothing until the address is valid.', feedback: 'The person presses a button and the world does not change, so they cannot tell whether the app is broken, slow, or waiting for them.' },
-          { label: '“That email address is missing an @.” No further instruction, since the problem is now obvious.', feedback: 'Close, and it stops one step short. It names the fault without saying what to do, and it does not promise that their other answers survived.' },
+          { label: '“That email address is missing an @. Check it and press Reserve again.” Name and date stay.', correct: true, was: ['“That email address is missing an @. Check it and press Reserve again.” The name and date they typed stay on screen.'], feedback: 'It says what is wrong, where, and what to do, and it keeps the name and date they typed instead of emptying the form. Everything they can act on is in one place.' },
+          { label: '“Invalid input. Please try again.” The whole form is cleared so they can start again cleanly.', was: ['“Invalid input. Please try again.” The form is cleared so they can start cleanly.'], feedback: 'Two failures at once: it does not say which field or what is wrong with it, and clearing the form makes the person retype work they had already done correctly.' },
+          { label: 'The Reserve button quietly does nothing at all until the email address is valid.', was: ['The Reserve button quietly does nothing until the address is valid.'], feedback: 'The person presses a button and the world does not change, so they cannot tell whether the app is broken, slow, or waiting for them.' },
+          { label: '“That email address is missing an @.” No further instruction, since the problem is now clear.', was: ['“That email address is missing an @.” No further instruction, since the problem is now obvious.'], feedback: 'Close, and it stops one step short. It names the fault without saying what to do, and it does not promise that their other answers survived.' },
         ],
         then: 'Write your own three branches the same way: name what is wrong, say what the person does next, and state what is preserved.',
       },
@@ -597,8 +622,17 @@ const flowMapping: Guided = {
     { terms: [{ term: 'Repair', meaning: 'The change you make to one branch, drawn again on a fresh sheet so the first version survives beside it.' }, { term: 'Check questions', meaning: 'The questions in the Check section. They exist to send you back to one earlier answer and change it before you save.' }], expect: 'What changed on the sheet and why, where the photo lives, and the change the Check questions sent you back to make.',
       fields: ['repair', 'photo-reference', 'improvement-made'],
       start: 'Redraw only the repaired branch on a fresh sheet; keep the original. Answer the Check questions before the last box.',
-      enough: 'Someone reading the change could find the branch on the original sheet, and the last box names one thing you actually changed.' },
+      enough: 'Someone reading the change could find the branch on the original sheet, and the last box names one thing you changed or explains why it already met the check.' },
   ],
+  transfer: {
+    scenario: 'Made-up case: A town library lets members reserve a meeting room online. Members choose a date, a time and a room size, then reach a box that says “No rooms free at that time.” In the current flow that box has no arrow leaving it.',
+    prompt: 'Decide what the “No rooms free” box should offer the member next, and explain why your next action keeps them moving towards their goal rather than only reporting the bad news.',
+    anchors: {
+      weak: 'Rewords the message (“Sorry, nothing available, please try later”) or softens its tone, but leaves the box with no arrow out, so the member is still stuck at a dead end.',
+      adequate: 'Adds a real next action the member can take — nearby times, another room size or a waiting list — keeps the date and size they chose, and explains that a failure is handled only when the person can act.',
+      strong: 'Adequate, plus names a trade-off (offering alternatives needs up-to-date availability) or a check to run, such as watching whether members pick an offered time or leave the page.',
+    },
+  },
 };
 
 const screenMaking: Guided = {
@@ -612,11 +646,11 @@ const screenMaking: Guided = {
       { id: 'reservation-wide', label: 'Reservation form · wide', kind: 'long' },
     ] },
     { id: 'specify', title: 'Annotations', fields: [
-      { id: 'reading-order', label: 'Reading and focus order', kind: 'long', hint: 'Number the elements in the order a keyboard or screen reader would meet them.' },
+      { id: 'reading-order', label: 'Reading order, Tab order, and which hints are tied to their fields', kind: 'long', hint: 'First number every element, text included, in the order a screen reader reads down the page. Then list the Tab stops: only fields, buttons and links. Plain hint text is not a Tab stop, so say which hints the builder must tie to their field to be read out when it gets focus.', example: 'Example (made up): Reading: 1 heading, 2 Name, 3 hint about the list, 4 Email, 5 Date, 6 Reserve. Tab: Name → Email → Date → Reserve. Hint 3 tied to Email, no Tab stop of its own.' },
       { id: 'persistent-labels', label: 'Which labels stay visible while typing, and why', kind: 'short' },
       { id: 'stacking', label: 'What stacks, wraps or moves between wide and narrow', kind: 'long', hint: 'Content reflows; it does not shrink.' },
       { id: 'error-recovery', label: 'How an error keeps what was typed and says how to fix it', kind: 'short' },
-      { id: 'checks-needed', label: 'Keyboard and screen-reader checks that still need a built version', kind: 'long', hint: 'A drawing cannot prove these. List them as still to do.' },
+      { id: 'checks-needed', label: 'Keyboard and screen-reader checks that still need a built version', kind: 'long', hint: 'A drawing cannot prove these. List them as still to do: for example, that Tab visits only the controls in your order, and that each tied hint and error is read out when its field gets focus.' },
     ] },
     { id: 'critique', title: 'Critique', fields: [
       { id: 'error-state', label: 'The error state you added', kind: 'long', example: 'Example (made up): Email field empty on submit: red text under the field, “Enter the email address for your confirmation”, typed name kept.' },
@@ -625,26 +659,26 @@ const screenMaking: Guided = {
     { id: 'submit', title: 'Save', fields: [
       { id: 'unresolved', label: 'The main unresolved issue for review', kind: 'short' },
       { id: 'photo-reference', label: 'File names or location of the screen sketches', kind: 'short', hint: 'Names only; nothing is uploaded here.' },
-      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long', hint: 'Name the screen or annotation you changed, and why.' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions, or why no change was needed', kind: 'long', hint: 'Name the screen or annotation you changed, and why.' },
     ] },
   ],
   checks: [
     {
       question: 'Your annotations say the screens are keyboard accessible. What do the sketches actually establish?',
       options: [
-        { label: 'What you intend: the order, the labels and the recovery. Whether it works can only be known once it is built and tested.', correct: true, feedback: 'A drawing records a design decision. Focus order, announcement and keyboard traps are properties of running code, so the honest note names the checks still to do.' },
-        { label: 'That the design is accessible, since the reading order and labels are specified.', feedback: 'Specifying them is necessary and not sufficient. A build can ignore the order, mislabel a field, or trap focus in a dialog, and only testing reveals it.' },
-        { label: 'Nothing about accessibility at all, so the annotations are pointless.', feedback: 'Too far the other way. The annotations are what a developer builds from and what a tester checks against; they just are not evidence of the result.' },
+        { label: 'Your intended order, labels and recovery; whether they work needs a built, tested version.', correct: true, was: ['What you intend: the order, the labels and the recovery. Whether it works can only be known once it is built and tested.'], feedback: 'A drawing records a design decision. Tab order, what a screen reader announces and keyboard traps are properties of running code, so the honest note names the checks still to do.' },
+        { label: 'That the design is accessible, because the reading order and the labels are all specified.', was: ['That the design is accessible, since the reading order and labels are specified.'], feedback: 'Specifying them is necessary and not sufficient. A build can ignore the order, mislabel a field, or trap focus in a dialog, and only testing reveals it.' },
+        { label: 'Nothing about accessibility at all, so the annotations can be left out of the handoff.', was: ['Nothing about accessibility at all, so the annotations are pointless.'], feedback: 'Too far the other way. The annotations are what a developer builds from and what a tester checks against; they just are not evidence of the result.' },
       ],
-      repair: 'Reread your annotations in step 3. Replace any sentence that claims the screens are accessible with the specific checks that still need a built version, and record the change in step 5.',
-      recheck: 'No annotation claims a result; the list of checks still needed names keyboard and screen-reader steps.',
+      repair: 'Reread your annotations in step 3. Replace any sentence that claims the screens are accessible with the specific checks that still need a built version, and check that reading order and Tab order are written as two lists. Record the change in step 5.',
+      recheck: 'No annotation claims a result; the list of checks still needed names keyboard and screen-reader steps, and Tab stops are listed separately from reading order.',
     },
     {
       question: 'On the phone version you shrink the whole desktop layout so everything still fits. What is wrong with that?',
       options: [
-        { label: 'Shrinking makes text and targets smaller; the content should reflow into one column and keep its size.', correct: true, feedback: 'Reflow rearranges what is there so it stays readable and tappable. Scaling down keeps the arrangement and takes away legibility and touch targets.' },
-        { label: 'Nothing, as long as the person can pinch to zoom.', feedback: 'Zooming shifts the work onto the reader, and a zoomed page usually requires sideways scrolling to read a single line.' },
-        { label: 'It is wrong only if the text falls below twelve pixels.', feedback: 'A size threshold is not the issue. Even at a readable size, a scaled desktop layout puts the price and the button in places built for a wide screen.' },
+        { label: 'Text and tap targets get smaller; content should reflow into one column at full size.', correct: true, was: ['Shrinking makes text and targets smaller; the content should reflow into one column and keep its size.'], feedback: 'Reflow rearranges what is there so it stays readable and tappable. Scaling down keeps the arrangement and takes away legibility and touch targets.' },
+        { label: 'Nothing, as long as the person can pinch to zoom in on whatever part they need to read.', was: ['Nothing, as long as the person can pinch to zoom.'], feedback: 'Zooming shifts the work onto the reader, and a zoomed page usually needs sideways scrolling to read a single line.' },
+        { label: 'It is wrong only if the body text falls below twelve pixels high on the phone screen.', was: ['It is wrong only if the text falls below twelve pixels.'], feedback: 'A size threshold is not the issue. Even at a readable size, a scaled desktop layout puts the price and the button in places built for a wide screen.' },
       ],
       repair: 'Look at your narrow and wide descriptions in step 2. If the narrow one is the wide one made smaller, rewrite it as a single column in the order the person needs, and say what changed in step 5.',
       recheck: 'The narrow version states what stacks and what moves, and the materials and price still sit above Reserve.',
@@ -652,9 +686,9 @@ const screenMaking: Guided = {
     {
       question: 'A label sits inside the field as grey placeholder text and disappears when typing starts. Why replace it?',
       options: [
-        { label: 'Once it is gone the person cannot check what the field was for, and an error message has nothing to point at.', correct: true, feedback: 'The label is needed most while filling in and while correcting. A placeholder removes it exactly then, and it usually fails contrast as well.' },
-        { label: 'Placeholders are always forbidden in accessible design.', feedback: 'Placeholders are fine as an extra hint beside a real label. The problem is using one as the only label.' },
-        { label: 'Because grey text looks unfinished.', feedback: 'Appearance is not the reason. The reason is that the information vanishes at the moment it is needed.' },
+        { label: 'Once typing starts nobody can see what the field was for, and an error has no label to point to.', correct: true, was: ['Once it is gone the person cannot check what the field was for, and an error message has nothing to point at.'], feedback: 'The label is needed most while filling in and while correcting. A placeholder removes it exactly then, and placeholder grey often fails contrast as well.' },
+        { label: 'Placeholders are forbidden in accessible design, so any form field that uses one fails a review.', was: ['Placeholders are always forbidden in accessible design.'], feedback: 'Placeholders are fine as an extra hint beside a real label. The problem is using one as the only label.' },
+        { label: 'Grey text inside a field looks unfinished and makes the whole form seem less polished.', was: ['Because grey text looks unfinished.'], feedback: 'Appearance is not the reason. The reason is that the information vanishes at the moment it is needed.' },
       ],
       repair: 'Check your persistent-label annotation in step 3. If any field relies on placeholder text alone, give it a visible label that stays, then record it in step 5.',
       recheck: 'Every field keeps a visible label while being typed into, and the error text can name it.',
@@ -686,27 +720,40 @@ const screenMaking: Guided = {
       },
       terms: [{ term: 'Hierarchy', meaning: 'What you see first, second and third. It should follow the next decision the person has to make.' }, { term: 'Reflow', meaning: 'Content rearranging into one column on a phone rather than shrinking the desktop layout.' }],
       start: 'Draw the phone version first; the wide version is the same list placed side by side.', enough: 'What to bring and the price appear above Reserve at both widths.' },
-    { expect: 'Order, labels, stacking, error recovery, and an honest list of checks that need a built version.', fields: ['reading-order', 'persistent-labels', 'stacking', 'error-recovery', 'checks-needed'],
+    { expect: 'Reading order, Tab order and tied hints, labels, stacking, error recovery, and an honest list of checks that need a built version.', fields: ['reading-order', 'persistent-labels', 'stacking', 'error-recovery', 'checks-needed'],
       supported: {
-        material: 'A supplied phone sketch of the reservation form, made up for practice. Down the page: the heading “Reserve your place”, then Name, then Email, then a note reading “We will send your materials list here”, then the Date chooser, then the Reserve button. The note about the materials list is drawn in small grey text beside the Email field.',
-        question: 'What should the reading and focus order annotation say about that grey note?',
+        material: 'A supplied phone sketch of the reservation form, made up for practice. Down the page: the heading “Reserve your place”, then Name, then Email, then a note reading “We will send your materials list here”, then the Date chooser, then the Reserve button. The note about the materials list is drawn in small grey text beside the Email field. It is plain text: nothing happens if you press it.',
+        question: 'What should the annotation say about that grey note?',
         options: [
-          { label: 'It must come before the Email field in the order, because it explains what the address will be used for.', correct: true, feedback: 'Anyone hearing the page read aloud, or tabbing through it, meets the field before the note if it is placed beside it. The explanation only helps if it arrives first.' },
-          { label: 'It can sit anywhere, because it is only a hint rather than a label.', feedback: 'Position is exactly what decides whether a hint is heard in time. A hint met after the answer has been typed is decoration.' },
-          { label: 'It should be removed, because a field with a visible label needs no further text.', feedback: 'The label says what to type; this note says why it is wanted, which changes whether someone is willing to give it.' },
-          { label: 'It should become placeholder text inside the Email field to save space.', feedback: 'That is two problems: it disappears the moment typing starts, and small grey text inside a field is the least readable place on the screen.' },
+          { label: 'Read it before Email and tie it to that field, but give it no Tab stop of its own.', correct: true, was: ['It must come before the Email field in the order, because it explains what the address will be used for.'], feedback: 'Three things meet that note differently. A screen reader reading down the page should reach it before the field. Tab skips plain text and lands on Email, so the note must be tied to the field to be read out at that moment. A sighted keyboard user simply sees it beside the box.' },
+          { label: 'Let it sit anywhere in the reading order, since a hint is extra help rather than a label.', was: ['It can sit anywhere, because it is only a hint rather than a label.'], feedback: 'Position decides whether a hint arrives in time. Read after the address has been typed, it no longer helps anyone decide whether to give it.' },
+          { label: 'Give it its own Tab stop just before Email, so keyboard users land on it first.', was: ['It should be removed, because a field with a visible label needs no further text.'], feedback: 'Tab stops are for things you can operate. A stop on plain text adds a key press that does nothing, and a screen-reader user tabbing to Email usually hears nothing about the note unless it is tied to the field.' },
+          { label: 'Turn it into placeholder text inside the Email field to save space on a phone.', was: ['It should become placeholder text inside the Email field to save space.'], feedback: 'That is two problems: it disappears the moment typing starts, and small grey text inside a field is the least readable place on the screen.' },
         ],
-        then: 'Number every element on your own sketch in the order you would want it read aloud, and check that each explanation arrives before the thing it explains.',
+        then: 'Number every element on your own sketch in reading order, circle only the controls Tab should reach, and mark each hint that must be tied to its field.',
       },
-      terms: [{ term: 'Focus order', meaning: 'The sequence the Tab key moves through. It should match the reading order.' }],
-      start: 'Number every element on the phone sketch in the order you would want it read aloud.', enough: 'Nothing here claims the screens are accessible; it says what was designed and what still needs testing.' },
+      terms: [
+        { term: 'Reading order', meaning: 'Everything on the screen, text included, in the order a screen reader reads it when someone moves down the page.' },
+        { term: 'Focus order', meaning: 'The shorter sequence the Tab key moves through: only controls such as fields, buttons and links. It should follow the reading order.' },
+        { term: 'Tied hint', meaning: 'Hint text connected to its field in the built page, so a screen reader reads it out when that field receives focus. Text drawn beside a field is not connected until a builder connects it.' },
+      ],
+      start: 'Number every element in reading order first; then circle only the ones Tab should stop on.', enough: 'Reading order and Tab order are two separate lists, hints are tied to fields rather than given Tab stops, and nothing claims the screens are accessible.' },
     { terms: [{ term: 'Error state', meaning: 'What the screen shows when something is missing or wrong: the message, where it sits, and what stays on screen.' }, { term: 'Collision', meaning: 'Two things wanting the same space, so one is pushed over the other or off the edge.' }], demo: { scenario: 'Made-up example. Adding an error state to the reservation sketch, and the two repairs it needed before it was any use.', beats: [{ label: 'The state I was missing', text: 'Every sketch showed the form filled in neatly. Nothing showed what she sees when she presses Reserve with the email box empty.' }, { label: 'My first attempt', text: 'A red outline round the Email box. It reads clearly on the sketch and took one pencil stroke.' }, { label: 'Why it is not enough', text: 'The colour is carrying the whole message. Anyone who cannot see the red, or who is hearing the page read aloud, is told nothing — and even seeing it, she is not told what is wanted or whether her typed name survived.' }, { label: 'The state I kept', text: 'Under the field, in words: “Enter the email address for your confirmation.” A line at the top says one thing needs attention, the name and date she typed stay where they are, and the outline remains as a second signal rather than the only one.' }, { label: 'What the longer label did', text: 'I rewrote “What to bring” as “What to bring to your first session” and it wrapped onto two lines, pushing the Reserve button into the message. My first fix was to set that label in smaller text, which is a way of hiding it. I let it wrap and moved the button down instead.' }], wrongTurn: 'The wrong turn is letting colour carry the meaning. A red outline looks like a finished error state, costs one stroke to draw, and says nothing at all to somebody who is not looking straight at it.', tradeoff: 'Words under the field and a line at the top make the screen busier and taller, and the form stops looking calm on the page. It buys somebody the ability to fix the thing without guessing what is wanted.', uncertainty: 'Still unknown: whether the message is announced when it appears, or whether she is left to hunt for it. A drawing cannot settle that, so it belongs on the list of checks that need a built version.' }, expect: 'One added error state and one change from trying longer labels or larger text.', fields: ['error-state', 'longer-labels'],
       start: 'Rewrite one label twice as long on the sketch and see what it collides with.', enough: 'The error says what was wrong and how to fix it, and the typed values survive.' },
     { terms: [{ term: 'Unresolved issue', meaning: 'The thing you would most want a second opinion on. Naming it is part of the work, not a confession.' }, { term: 'Check questions', meaning: 'The questions in the Check section. They exist to send you back to one earlier answer and change it before you save.' }], expect: 'The unresolved issue, where the sketches live, and the change the Check questions sent you back to make.',
       fields: ['unresolved', 'photo-reference', 'improvement-made'],
       start: 'Choose the issue you would most want a second opinion on, not the smallest one. Answer the Check questions before the last box.',
-      enough: 'Your work has a reference or the worksheet is filled, and the last box names one thing you actually changed.' },
+      enough: 'Your work has a reference or the worksheet is filled, and the last box names one thing you changed or explains why it already met the check.' },
   ],
+  transfer: {
+    scenario: 'Made-up case: A community garden’s plot-request form has Name, Phone and Submit. Beside the Phone field, in small grey text, sits the note “Only used to tell you when a plot is free.” The form’s designer suggests giving the note its own Tab stop so that keyboard users land on it.',
+    prompt: 'Decide how your annotation should handle that note for someone using a screen reader and for someone using only a keyboard, and explain why your answer differs from the designer’s Tab-stop idea.',
+    anchors: {
+      weak: 'Agrees to a Tab stop on the note, or treats reading order and Tab order as one list, so plain text becomes an extra key press that does nothing.',
+      adequate: 'Places the note before the Phone field in reading order, ties it to the field so it is read out when the field gets focus, and keeps Tab stops for controls only, explaining that plain text is not something you operate.',
+      strong: 'Adequate, plus says the order and the tie must be checked in a built version with a keyboard and a screen reader, and notes that the note’s wording also affects whether people are willing to give their number.',
+    },
+  },
 };
 
 const repairClinic: Guided = {
@@ -719,7 +766,7 @@ const repairClinic: Guided = {
     { id: 'critique', title: 'The critique', fields: [
       { id: 'observation', label: 'What you can point to', kind: 'long', example: 'Example (made up): The Reserve button is greyed out on the full workshop with no text explaining why.' },
       { id: 'task-impact', label: 'What it stops the person doing', kind: 'short' },
-      { id: 'evidence', label: 'The evidence for this, and its source label', kind: 'short', hint: 'Observed in your walkthrough, said by a participant, or a heuristic risk?' },
+      { id: 'evidence', label: 'The evidence for this, and its source label', kind: 'short', sensitive: true, hint: 'Your own walkthrough, a heuristic risk, or something a participant said or did? If a participant, summarise it without their name or any detail that could identify them.' },
       { id: 'uncertainty', label: 'What you are not sure about', kind: 'short' },
     ] },
     { id: 'repair', title: 'The repair', fields: [
@@ -732,17 +779,17 @@ const repairClinic: Guided = {
     ] },
     { id: 'save', title: 'Save', fields: [
       { id: 'limitations', label: 'What this repair still does not prove', kind: 'long' },
-      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long', hint: 'Name the part of the critique or repair you changed, and why.' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions, or why no change was needed', kind: 'long', hint: 'Name the part of the critique or repair you changed, and why.' },
     ] },
   ],
   checks: [
     {
       question: 'Which critique can somebody act on?',
       options: [
-        { label: 'On the full workshop, Reserve is greyed out with no explanation, so the visitor cannot tell whether to wait or look at another date.', correct: true, feedback: 'It points at one thing on the screen and says what it stops the person doing. Someone else could find it and judge whether the repair worked.' },
-        { label: 'The reservation screen feels cluttered and a bit dated.', feedback: 'It records an impression without naming what is affected. Two people can disagree about it forever and nothing changes for the visitor.' },
-        { label: 'Users are confused by the booking flow.', feedback: 'It sounds like evidence and is a guess about other people. Unless you watched someone, the honest version says what you saw and marks the confusion as inferred.' },
-        { label: 'The button colour does not match the studio’s brand.', feedback: 'A real observation about consistency, and no stated effect on the task. It may be worth fixing later; it is not the weak point this lesson is for.' },
+        { label: 'On the full workshop, Reserve is greyed out with no reason, so visitors cannot tell what to do.', correct: true, was: ['On the full workshop, Reserve is greyed out with no explanation, so the visitor cannot tell whether to wait or look at another date.'], feedback: 'It points at one thing on the screen and says what it stops the person doing: deciding whether to wait or pick another date. Someone else could find it and judge whether the repair worked.' },
+        { label: 'The reservation screen feels cluttered and rather dated next to all of the studio’s other pages.', was: ['The reservation screen feels cluttered and a bit dated.'], feedback: 'It records an impression without naming what is affected. Two people can disagree about it forever and nothing changes for the visitor.' },
+        { label: 'Users are confused by the booking flow and give up before they reach the payment step.', was: ['Users are confused by the booking flow.'], feedback: 'It sounds like evidence and is a guess about other people. Unless you watched someone, the honest version says what you saw and marks the confusion as inferred.' },
+        { label: 'The Reserve button colour does not match the studio’s brand guide or its printed posters.', was: ['The button colour does not match the studio’s brand.'], feedback: 'A real observation about consistency, and no stated effect on the task. It may be worth fixing later; it is not the weak point this lesson is for.' },
       ],
       repair: 'Reread your observation and task-impact boxes in step 2. If the critique names a feeling rather than something on the screen, rewrite it and record the change in step 5.',
       recheck: 'The observation could be verified by someone looking at your artefact, and the impact names a task the person cannot finish.',
@@ -750,9 +797,9 @@ const repairClinic: Guided = {
     {
       question: 'You repaired the disabled button and also changed the type scale, the spacing and the photograph. What has that cost you?',
       options: [
-        { label: 'You can no longer tell which change did anything, so neither version teaches you much.', correct: true, feedback: 'A comparison only works when one thing moved. Bundling changes feels efficient and destroys the reason for keeping a before version at all.' },
-        { label: 'Nothing, as long as the screen is better overall.', feedback: '“Better overall” is the judgement you were trying to test. Without a bounded change you are back to taste.' },
-        { label: 'Only time, since the extra changes were quick.', feedback: 'The cost is not effort but explanation: you have lost the ability to say why the screen improved.' },
+        { label: 'You can no longer tell which change did anything, so the comparison teaches little.', correct: true, was: ['You can no longer tell which change did anything, so neither version teaches you much.'], feedback: 'A comparison only works when one thing moved. Bundling changes feels efficient and destroys the reason for keeping a before version at all.' },
+        { label: 'Nothing, as long as the repaired screen is clearly better overall than the original.', was: ['Nothing, as long as the screen is better overall.'], feedback: '“Better overall” is the judgement you were trying to test. Without a bounded change you are back to taste.' },
+        { label: 'Only the extra time, since each of the additional changes was quick to make.', was: ['Only time, since the extra changes were quick.'], feedback: 'The cost is not effort but explanation: you have lost the ability to say why the screen improved.' },
       ],
       repair: 'Look at your repair box in step 3. If it lists changes beyond the one criterion, undo the extras on the copy or state plainly that this is a redesign rather than a bounded repair. Say what you did in step 5.',
       recheck: 'The repair changes one named thing, and the original is untouched and findable.',
@@ -760,9 +807,9 @@ const repairClinic: Guided = {
     {
       question: 'After the repair you write: “This fixes the problem.” Why is that too strong?',
       options: [
-        { label: 'You have changed the design, not observed anyone using it; until someone does, the improvement is intended rather than shown.', correct: true, feedback: 'A repair is a hypothesis with better reasoning behind it. Saying so keeps the next test honest and stops the claim hardening into a fact.' },
-        { label: 'Because no design is ever finished.', feedback: 'True and unhelpfully general. The specific problem is that nothing yet distinguishes your intention from the result.' },
-        { label: 'It is fine if the heuristic clearly supports the change.', feedback: 'A heuristic flags a risk; it cannot report that a person succeeded. It is the reason for trying, not evidence of the outcome.' },
+        { label: 'Nobody has used the repaired version yet, so the improvement is intended, not shown.', correct: true, was: ['You have changed the design, not observed anyone using it; until someone does, the improvement is intended rather than shown.'], feedback: 'A repair is a hypothesis with better reasoning behind it. Saying so keeps the next test honest and stops the claim hardening into a fact.' },
+        { label: 'Because no design is ever truly finished, so every claim of a fix is premature.', was: ['Because no design is ever finished.'], feedback: 'True and unhelpfully general. The specific problem is that nothing yet distinguishes your intention from the result.' },
+        { label: 'It is not too strong if a usability heuristic clearly supports the specific change you made.', was: ['It is fine if the heuristic clearly supports the change.'], feedback: 'A heuristic flags a risk; it cannot report that a person succeeded. It is the reason for trying, not evidence of the outcome.' },
       ],
       repair: 'Reread your limitations box in step 5. If any sentence claims the problem is fixed, rewrite it as what you would need to watch to find out, then note the change.',
       recheck: 'The record separates what you changed from what remains untested, and names one observation that would settle it.',
@@ -794,26 +841,35 @@ const repairClinic: Guided = {
       },
       terms: [{ term: 'Heuristic', meaning: 'A rule of thumb from experience. It flags a risk; it cannot prove anyone failed.' }, { term: 'Taste', meaning: 'A preference about looks. Keep it out unless it affects the task.' }],
       start: 'Write the observation as if describing a photo to someone on the phone.', enough: 'The evidence line names a source: your walkthrough, a participant, or a heuristic.' },
-    { terms: [{ term: 'Bounded repair', meaning: 'A change limited to the one concern you named. Everything else on the artefact stays exactly as it was.' }, { term: 'Original', meaning: 'The untouched version, copied or photographed before you change anything. It is what lets you explain the repair later.' }], demo: { scenario: 'Made-up example. One repair to a booking screen, where the first attempt changed something the critique had never named.', beats: [{ label: 'The concern I had written', text: 'On the full workshop, Reserve is greyed out with no explanation, so a visitor cannot tell whether to wait or to look at another date.' }, { label: 'What I did first', text: 'I redrew the whole card: new heading, a photograph of the studio, a warmer tone. The sheet looked better and the grey button was still sitting there unexplained.' }, { label: 'The question that caught it', text: 'Which of those changes answers the concern I wrote in step 2? None of them did. I had repaired the thing I disliked, not the thing I had named.' }, { label: 'Keeping the original', text: 'I photographed the untouched sheet and called it reserve-before, then worked on a copy called reserve-after. Two minutes, and it made everything after it explainable.' }, { label: 'The change I kept', text: 'Under the grey button: “Fully booked. Next session Thursday evening”, with the date as the thing you can press. Nothing else on the sheet moved.' }], wrongTurn: 'The wrong turn is repairing whatever you dislike most about the screen. It is the change your hand wants to make, it always improves the look, and it can leave the named concern exactly where it was.', tradeoff: 'A bounded repair leaves the screen visibly imperfect, and everything you did not touch will keep bothering you each time you look at it. In exchange the two versions differ in one thing, so the comparison can say something.', uncertainty: 'Still unknown: whether the next date is what she wants, or whether she would rather be told when a place frees up. The repair answers one of those and guesses at the other.' }, expect: 'The original kept safe and one bounded change.', fields: ['original-reference', 'repair'],
+    { terms: [{ term: 'Bounded repair', meaning: 'A change limited to the one concern you named. Everything else on the artefact stays exactly as it was.' }, { term: 'Original', meaning: 'The untouched version, copied or photographed before you change anything. It is what lets you explain the repair later.' }], demo: { scenario: 'Made-up example. One repair to a booking screen, where the first attempt changed something the critique had never named.', beats: [{ label: 'The concern I had written', text: 'On the full workshop, Reserve is greyed out with no explanation, so a visitor cannot tell whether to wait or to look at another date.' }, { label: 'What I did first', text: 'I redrew the whole card: new heading, a photograph of the studio, a warmer tone. The sheet looked better and the grey button was still sitting there unexplained.' }, { label: 'The question that caught it', text: 'Which of those changes answers the concern I wrote in step 2? None of them did. I had repaired the thing I disliked, not the thing I had named.' }, { label: 'Keeping the original', text: 'I photographed the untouched sheet and called it reserve-before, then worked on a copy called reserve-after. Two minutes, and it made everything after it explainable.' }, { label: 'The change I kept', text: 'Under the grey button: “Fully booked. Next session Thursday evening”, with the date as the thing you can press. Nothing else on the sheet moved.' }], wrongTurn: 'The wrong turn is repairing whatever you dislike most about the screen. It is the change your hand wants to make, it usually improves the look, and it can leave the named concern exactly where it was.', tradeoff: 'A bounded repair leaves the screen visibly imperfect, and everything you did not touch will keep bothering you each time you look at it. In exchange the two versions differ in one thing, so the comparison can say something.', uncertainty: 'Still unknown: whether the next date is what she wants, or whether she would rather be told when a place frees up. The repair answers one of those and guesses at the other.' }, expect: 'The original kept safe and one bounded change.', fields: ['original-reference', 'repair'],
       start: 'Copy or photograph the original before touching it.', enough: 'Everything you changed serves the one criterion; nothing else moved.' },
     { terms: [{ term: 'Before and after', meaning: 'The two versions side by side, differing in one thing only, so the difference has a cause you can name.' }, { term: 'Check', meaning: 'Something you could watch or count that would show whether the repair helped, including the case where it did not.' }], expect: 'A before/after comparison and a concrete way to check it.', fields: ['comparison', 'check'],
       supported: {
         material: 'A supplied pair from the same made-up repair. Before: the confirmation screen says only “Thank you”. After: it shows the class name, the date and time, the address, and one line saying what to bring, with the same “Thank you” heading.',
         question: 'Which way of checking whether the repair helped is worth writing down?',
         options: [
-          { label: 'Watch two people finish a booking and see whether they can say, without scrolling back, which evening they are coming and what to bring.', correct: true, feedback: 'It names who, what they do, and what you would see. It could also come out badly, which is what makes it a check rather than a demonstration.' },
-          { label: 'Ask two people whether the new screen is clearer than the old one.', feedback: 'Shown two versions by the person who made them, people tend to prefer the newer one. You learn about politeness rather than about the task.' },
-          { label: 'Count how much longer people spend on the confirmation screen.', feedback: 'Longer could mean reading carefully or being lost, and the number cannot tell you which. A measure you cannot interpret is not yet a check.' },
-          { label: 'Compare the two screens against the usability heuristics again.', feedback: 'Useful for deciding what to try; it cannot report what happened. Re-reading a rule tells you about the design, not about a person using it.' },
+          { label: 'Watch two people book, then see if they can say which evening and what to bring.', correct: true, was: ['Watch two people finish a booking and see whether they can say, without scrolling back, which evening they are coming and what to bring.'], feedback: 'It names who, what they do, and what you would see — ideally without them scrolling back. It could also come out badly, which is what makes it a check rather than a demonstration.' },
+          { label: 'Ask two people whether the new confirmation screen is clearer than the old one.', was: ['Ask two people whether the new screen is clearer than the old one.'], feedback: 'Shown two versions by the person who made them, people tend to prefer the newer one. You learn about politeness rather than about the task.' },
+          { label: 'Count how much longer people spend on the new confirmation screen than the old.', was: ['Count how much longer people spend on the confirmation screen.'], feedback: 'Longer could mean reading carefully or being lost, and the number cannot tell you which. A measure you cannot interpret is not yet a check.' },
+          { label: 'Compare both screens against the ten usability heuristics again, one item at a time.', was: ['Compare the two screens against the usability heuristics again.'], feedback: 'Useful for deciding what to try; it cannot report what happened. Re-reading a rule tells you about the design, not about a person using it.' },
         ],
         then: 'Write your own check the same way: a person, a task, and the specific thing you would watch for that could show the repair did not help.',
       },
       start: 'Put both sheets next to each other and describe the first thing you notice in each.', enough: 'The check is something you could watch or count, not “it looks clearer”.' },
     { terms: [{ term: 'Limitation', meaning: 'What this piece of work cannot show, however well it went. Writing it down is part of the work, not an apology.' }, { term: 'Untested', meaning: 'Changed on good reasoning and not yet put in front of anybody. It stays untested until somebody uses it.' }], expect: 'What still needs testing, and the change the Check questions sent you back to make.',
       fields: ['limitations', 'improvement-made'],
-      start: 'Finish the sentence “This repair would be proven wrong if…”, then answer the Check questions before the last box.',
-      enough: 'The repair is described as untested, not as fixed, and the last box names one thing you actually changed.' },
+      start: 'Finish the sentence “This repair would be shown not to help if…”, then answer the Check questions before the last box.',
+      enough: 'The repair is described as untested, not as fixed, and the last box names one thing you changed or explains why it already met the check.' },
   ],
+  transfer: {
+    scenario: 'Made-up case: A bike-share app’s return screen shows a grey “End ride” button that cannot be pressed when the dock is full, with no text explaining why. A teammate’s critique reads: “This screen feels clunky and old-fashioned.” You keep a copy of the screen as it is now.',
+    prompt: 'Write one critique of this screen that someone could act on, and the single repair you would make. Explain why that repair answers your critique and nothing more.',
+    anchors: {
+      weak: 'Keeps the comment about taste (“make it look modern”), or redesigns the whole screen at once — new colours, layout and icons — so nobody could tell which change mattered.',
+      adequate: 'Names what can be seen (a disabled End ride button with no reason) and its effect on the task (the rider cannot tell how to finish), and proposes one bounded repair, such as a line naming the nearest dock with space.',
+      strong: 'Adequate, plus keeps the original for comparison, says the repair is untested until a rider uses it, and names a check, such as watching whether riders find another dock without help.',
+    },
+  },
 };
 
 const decisionNote: Guided = {
@@ -825,7 +881,7 @@ const decisionNote: Guided = {
     ] },
     { id: 'write', title: 'The one-page note', intro: 'Short bullets under each heading; a page at most.', fields: [
       { id: 'context', label: 'Context', kind: 'long' },
-      { id: 'evidence', label: 'Evidence, with its source labels', kind: 'long', hint: 'Observed, reported by a participant, or assumed. Say which.' },
+      { id: 'evidence', label: 'Evidence, with its source labels', kind: 'long', sensitive: true, hint: 'Observed in your own walkthrough, reported by a participant, or assumed. Say which. No participant yet? Your walkthrough and your labelled assumptions are enough. Summarise any participant report without names or identifying details.' },
       { id: 'options', label: 'Options considered', kind: 'long' },
       { id: 'choice', label: 'The choice', kind: 'long' },
       { id: 'trade-off', label: 'The trade-off', kind: 'long' },
@@ -840,16 +896,16 @@ const decisionNote: Guided = {
       { id: 'gap-2', label: 'Gap 2', kind: 'short' },
       { id: 'repair', label: 'One small repair (reduce scope until it fits a session)', kind: 'short' },
       { id: 'next-action', label: 'Your next learning action', kind: 'short' },
-      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long', hint: 'Name the sentence or section you changed, and why.' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions, or why no change was needed', kind: 'long', hint: 'Name the sentence or section you changed, and why.' },
     ] },
   ],
   checks: [
     {
       question: 'Your note ends: “This change will make booking much easier for users.” What is wrong with that sentence?',
       options: [
-        { label: 'Nothing has been built or used, so the outcome is intended rather than observed; it should say what you expect and how you would find out.', correct: true, feedback: 'An unshipped design can show reasoning. Written as a result, the sentence will be quoted back at you later as though it had been measured.' },
-        { label: 'Nothing, as long as the reasoning behind it is sound.', feedback: 'Sound reasoning is why the change is worth trying. It is not a report of what happened, and the sentence is written as one.' },
-        { label: 'It should name the percentage improvement expected.', feedback: 'That would be worse: an invented number is harder to challenge than a vague claim and no more true.' },
+        { label: 'It reports an outcome nobody has observed; it should say what you expect and how to check.', correct: true, was: ['Nothing has been built or used, so the outcome is intended rather than observed; it should say what you expect and how you would find out.'], feedback: 'An unshipped design can show reasoning. Written as a result, the sentence will be quoted back at you later as though it had been measured.' },
+        { label: 'Nothing is wrong with it, as long as the reasoning behind the change is sound.', was: ['Nothing, as long as the reasoning behind it is sound.'], feedback: 'Sound reasoning is why the change is worth trying. It is not a report of what happened, and the sentence is written as one.' },
+        { label: 'It should name the percentage improvement you expect, so the claim can be measured.', was: ['It should name the percentage improvement expected.'], feedback: 'That would be worse: an invented number is harder to challenge than a vague claim and no more true.' },
       ],
       repair: 'Reread your choice and next-check sections in step 2. Rewrite any sentence that states an outcome as an expectation with the observation that would test it, then record the change in step 5.',
       recheck: 'No sentence claims a result; the next check names something you could watch.',
@@ -857,9 +913,9 @@ const decisionNote: Guided = {
     {
       question: 'Your note gives one option and the choice you made. What is missing?',
       options: [
-        { label: 'A real alternative and the reason you set it aside — otherwise the reader cannot tell whether a decision was made at all.', correct: true, feedback: 'A decision means something else could have happened. Without the rejected option the note reads as a description of what you built.' },
-        { label: 'Nothing, if the choice was obviously correct.', feedback: 'An obviously correct choice is the easiest to write an alternative for, and the reason it was obvious is worth stating.' },
-        { label: 'A list of every idea you considered.', feedback: 'Too much. One serious alternative with the reason it lost is more useful than an exhaustive list nobody reads.' },
+        { label: 'One real alternative and why you set it aside, so the reader can see a decision was made.', correct: true, was: ['A real alternative and the reason you set it aside — otherwise the reader cannot tell whether a decision was made at all.'], feedback: 'A decision means something else could have happened. Without the rejected option the note reads as a description of what you built.' },
+        { label: 'Nothing, if the choice was obviously correct and nobody on the team disagreed with it.', was: ['Nothing, if the choice was obviously correct.'], feedback: 'An obviously correct choice is the easiest to write an alternative for, and the reason it was obvious is worth stating.' },
+        { label: 'A complete list of every idea you considered, so the reader sees how widely you searched.', was: ['A list of every idea you considered.'], feedback: 'Too much. One serious alternative with the reason it lost is more useful than an exhaustive list nobody reads.' },
       ],
       repair: 'Look at your options section in step 2. Add one alternative you genuinely considered and the reason you did not take it, then note the change in step 5.',
       recheck: 'The note names at least one alternative and why it was set aside, and the trade-off says what the choice cost.',
@@ -867,9 +923,9 @@ const decisionNote: Guided = {
     {
       question: 'Reading it aloud, you find yourself saying “it just feels more intuitive.” What does that tell you?',
       options: [
-        { label: 'That part of the note has no evidence behind it and needs the observation or reasoning that made you believe it.', correct: true, feedback: 'Words like intuitive, clean and obvious mark the places where the argument stopped. Saying it aloud is the quickest way to find them.' },
-        { label: 'That the design is working, since it feels natural to you.', feedback: 'It feels natural to the person who made it, who knows where everything is. That is the least reliable reader you have.' },
-        { label: 'That you should remove the sentence and move on.', feedback: 'Deleting hides the gap. Either supply the reason or say plainly that this part is a preference.' },
+        { label: 'That part has no evidence yet; add what made you believe it, or call it a preference.', correct: true, was: ['That part of the note has no evidence behind it and needs the observation or reasoning that made you believe it.'], feedback: 'Words like intuitive, clean and obvious mark the places where the argument stopped. Saying it aloud is the quickest way to find them.' },
+        { label: 'That the design is working, since it already feels natural and easy to you as its maker.', was: ['That the design is working, since it feels natural to you.'], feedback: 'It feels natural to the person who made it, who knows where everything is. That is the least reliable reader you have.' },
+        { label: 'That the sentence is weak, so you should remove it from the note and move on.', was: ['That you should remove the sentence and move on.'], feedback: 'Deleting hides the gap. Either supply the reason or say plainly that this part is a preference.' },
       ],
       repair: 'Take the sentence that felt weakest when spoken and either give it a source label or mark it as an untested preference, then record what you changed in step 5.',
       recheck: 'Every claim in the note carries a source: observed, reported, assumed, or an explicit preference.',
@@ -878,7 +934,7 @@ const decisionNote: Guided = {
   saveRoute: {
     auto: 'The whole note saves as you type, on this device first and then online. There is nothing else to press.',
     external: 'If you would rather write the page in your own document, do that and keep the file; then paste the six sections here or put the file name in Your work, so the note and its review stay together.',
-    creator: 'Your creator reads the note, the strength, the two gaps and your next action once you choose Ready for review. This is the piece he can respond to most usefully, because it shows your reasoning rather than the artefact alone.',
+    creator: 'Your creator can read the note, the strength, the two gaps and your next action as soon as they save online; Ready for review tells him this version is ready. This is the piece he can respond to most usefully, because it shows your reasoning rather than the artefact alone.',
     next: 'Open Your work and choose Ready for review. This lesson is optional and it closes Module 1; Module 2 begins by choosing what evidence you need next, which your two gaps already point at.',
   },
   guide: [
@@ -908,10 +964,10 @@ const decisionNote: Guided = {
         material: 'A supplied paragraph from someone else’s decision note, made up for practice: “Attendees want to know what to bring. I watched two people miss the materials line at the bottom of the page. Moving it above Reserve will reduce no-shows, and the studio agrees it is worth trying.”',
         question: 'Which sentence needs a source label most urgently before this note is shared?',
         options: [
-          { label: '“Moving it above Reserve will reduce no-shows” — a prediction about an outcome nobody has measured.', correct: true, feedback: 'It is the only sentence that claims a result, and results are what get repeated in later documents. It should say what is expected and how it would be checked.' },
-          { label: '“Attendees want to know what to bring” — a general claim about people.', feedback: 'It does need a label, and it is the softer problem: a reader can see it is a summary. The outcome claim will be quoted as a fact.' },
-          { label: '“I watched two people miss the materials line” — a small sample.', feedback: 'Small, and honestly stated. It already says who and what was observed; two people is a limitation to note, not an unlabelled claim.' },
-          { label: '“The studio agrees it is worth trying” — an opinion presented as support.', feedback: 'Worth attributing, and it is not evidence about people using the design, so nobody is likely to mistake it for one.' },
+          { label: '“Moving it above Reserve will reduce no-shows” — an outcome nobody has measured.', correct: true, was: ['“Moving it above Reserve will reduce no-shows” — a prediction about an outcome nobody has measured.'], feedback: 'It is the only sentence that claims a result, and results are what get repeated in later documents. It should say what is expected and how it would be checked.' },
+          { label: '“Attendees want to know what to bring” — a broad, general claim about all people.', was: ['“Attendees want to know what to bring” — a general claim about people.'], feedback: 'It does need a label, and it is the softer problem: a reader can see it is a summary. The outcome claim will be quoted as a fact.' },
+          { label: '“I watched two people miss the materials line” — a very small sample of people.', was: ['“I watched two people miss the materials line” — a small sample.'], feedback: 'Small, and honestly stated. It already says who and what was observed; two people is a limitation to note, not an unlabelled claim.' },
+          { label: '“The studio agrees it is worth trying” — an opinion presented as if it were support.', was: ['“The studio agrees it is worth trying” — an opinion presented as support.'], feedback: 'Worth attributing, and it is not evidence about people using the design, so nobody is likely to mistake it for one.' },
         ],
         then: 'Read your own six sections and mark each claim observed, reported or assumed. Any sentence about an outcome needs the check that would test it.',
       },
@@ -921,9 +977,18 @@ const decisionNote: Guided = {
       start: 'Look at the Module 1 review criteria; the two you cannot evidence are your gaps.', enough: 'The repair names an artefact and fits in one sitting.' },
     { terms: [{ term: 'Repair', meaning: 'The one change a Check question sends you back to make. It is deliberately small.' }, { term: 'Optional lesson', meaning: 'A lesson you may skip without leaving a hole in the module. Stopping here is a complete answer.' }], expect: 'The note is saved, and the change the Check questions sent you back to make. This lesson is optional.',
       fields: ['improvement-made'],
-      start: 'Answer the Check questions, make the one repair each points at, then say here what you changed. Choose Ready for review in Your work if you want creator input.',
-      enough: 'The last box names one sentence you actually changed. Nothing more is required; stopping here is fine.' },
+      start: 'Answer the Check questions, make any repair each points at, then say here what you changed or why no change was needed. Choose Ready for review in Your work if you want creator input.',
+      enough: 'The last box names one sentence you changed, or explains why the note already met the check. Nothing more is required; stopping here is fine.' },
   ],
+  transfer: {
+    scenario: 'Made-up case: A park clean-up group used to ask volunteers for their availability at the end of its sign-up page. A designer moved that question to the first step. Her note says: “Volunteers will now sign up twice as fast.” She has walked through the new page herself; nobody else has used it yet.',
+    prompt: 'Rewrite her claim so it matches the evidence she actually has. Explain why your version is more honest, and say what she should check next.',
+    anchors: {
+      weak: 'Keeps a measured-sounding outcome (“will be faster”, “twice as fast”) or swaps in a different number, treating her own walkthrough as evidence about other volunteers.',
+      adequate: 'States the change and its intended effect as an expectation, labels the evidence as her own walkthrough, and names a check, such as watching two volunteers sign up and noting where they hesitate.',
+      strong: 'Adequate, plus names the alternative she set aside (availability last) and what it costs, and says which result from the check would make her move the question back.',
+    },
+  },
 };
 
 
@@ -947,24 +1012,24 @@ const studyPlan: Guided = {
       { id: 'question', label: 'The research question', kind: 'short', hint: 'What you do not know, written so an answer would change the decision above.', example: 'Example (made up): when do people decide what to take to a class, and where do they look?' },
       { id: 'method', label: 'Interview about the past, or watch someone do a task?', kind: 'choice', options: ['Interview about a recent experience', 'Watch someone attempt a task', 'Both, in one short session'] },
       { id: 'method-why', label: 'Why that method answers this question', kind: 'long', hint: 'An interview reaches what happened before and around; watching reaches what the screen does to someone now.' },
-      { id: 'criteria', label: 'Who would count as a relevant person', kind: 'short', hint: 'Describe the experience they need, not a name.', example: 'Example (made up): anyone who has booked a class, course or workshop in the last few months.' },
+      { id: 'criteria', label: 'Who would count as a relevant person', kind: 'short', hint: 'Describe the experience they need, not a name. Keep to adults and an everyday topic: health, money worries, children or anything else sensitive need qualified review, so leave them out of this practice.', example: 'Example (made up): anyone who has booked a class, course or workshop in the last few months.' },
       { id: 'useful-evidence', label: 'What you would need to hear or see to be satisfied', kind: 'long' },
     ] },
     { id: 'materials', title: 'What you will say and how you will take notes', fields: [
-      { id: 'consent-intro', label: 'Your consent introduction, word for word', kind: 'long', hint: 'Who you are, what the notes are for, that they can skip or stop, and whether anything is recorded.' },
+      { id: 'consent-intro', label: 'Your consent introduction, word for word', kind: 'long', hint: 'Who you are, what the notes are for, who will read them (your course reviewer can read what you type here), when you will delete them, that they can skip or stop, and whether anything is recorded.' },
       { id: 'task-or-questions', label: 'The task or the opening questions', kind: 'long', hint: 'A task states a goal without naming buttons. Questions ask about a real recent occasion.' },
       { id: 'note-columns', label: 'The headings you will use while taking notes', kind: 'short', example: 'Example (made up): what they did · their words · what I think it means · what I still need to ask.' },
     ] },
     { id: 'access', title: 'Who you can actually reach', fields: [
-      { id: 'access-status', label: 'Where recruitment stands today', kind: 'choice', options: ['Someone has agreed', 'Asked, waiting for a reply', 'Nobody available: rehearsal only'], hint: 'Choose honestly. Rehearsal only is a real, recordable outcome.' },
-      { id: 'access-gap', label: 'If nobody is available, who would you need and how might you reach them?', kind: 'long', hint: 'Dating the gap is the finding. Leave it if someone has agreed.' },
+      { id: 'access-status', label: 'Where recruitment stands today', kind: 'choice', options: ['Someone has agreed', 'Asked, waiting for a reply', 'Nobody available: rehearsal only'], hint: 'Choose honestly. Rehearsal only is a complete result for this lesson: the prepared plan, a dated access note and what reading it aloud taught you.' },
+      { id: 'access-gap', label: 'Your dated access note: who you still need and how you might reach them (no names)', kind: 'long', sensitive: true, hint: 'Waiting or rehearsal only: write today’s date, the kind of person you still need and a route to them, never a name or contact detail. If someone has agreed, write the date they agreed and “no gap”.' },
       { id: 'rehearsal-notes', label: 'What reading it aloud taught you', kind: 'long', hint: 'Which sentence was awkward, which question you wanted to answer for them.' },
     ] },
     { id: 'review', title: 'One way this could mislead you', fields: [
       { id: 'bias', label: 'One way your plan could push the answer', kind: 'long', example: 'Example (made up): I would be showing my own screen and asking if it is clear, so agreeing is the polite answer.' },
       { id: 'bias-fix', label: 'What you changed because of it', kind: 'short' },
       { id: 'limitation', label: 'What this study cannot tell you, however it goes', kind: 'short' },
-      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long', hint: 'Name which answer you changed and why.' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions, or why no change was needed', kind: 'long', hint: 'Name which answer you changed and why.' },
     ] },
   ],
   guide: [
@@ -995,10 +1060,10 @@ const studyPlan: Guided = {
         material: 'A supplied pair from the same made-up project. Question A: “Where do people look for what to bring, and when?” Question B: “Can a first-time visitor tell, from this screen, what the class costs in total?”',
         question: 'Which method fits which question?',
         options: [
-          { label: 'A needs an interview about a recent booking; B needs watching someone attempt the task on the screen.', correct: true, feedback: 'A is about what happened around the booking, over days, in places your screen cannot see. B is about what this screen does to someone in the next two minutes, which you can watch.' },
-          { label: 'Both need interviews, because you want to understand people’s thinking.', feedback: 'For B an interview gets you a recollection or a guess. Watching someone hunt for the total is far more reliable than asking whether they could find it.' },
-          { label: 'Both need a task, because watching behaviour always beats asking.', feedback: 'Watching cannot reach last Tuesday evening. A is about a sequence that already happened elsewhere, and only an account of it can reach that.' },
-          { label: 'A survey would answer both more cheaply.', feedback: 'A survey collects what people say they usually do, which is the least reliable version of A, and it cannot observe anyone failing to find a total.' },
+          { label: 'A: an interview about a recent booking. B: watching someone attempt the task on screen.', correct: true, was: ['A needs an interview about a recent booking; B needs watching someone attempt the task on the screen.'], feedback: 'A is about what happened around the booking, over days, in places your screen cannot see. B is about what this screen does to someone in the next two minutes, which you can watch.' },
+          { label: 'Both need interviews, because what you want to understand is the thinking behind each.', was: ['Both need interviews, because you want to understand people’s thinking.'], feedback: 'For B an interview gets you a recollection or a guess. Watching someone hunt for the total is far more reliable than asking whether they could find it.' },
+          { label: 'Both need a task, because watching what people do beats asking them about it.', was: ['Both need a task, because watching behaviour always beats asking.'], feedback: 'Watching cannot reach last Tuesday evening. A is about a sequence that already happened elsewhere, and only an account of it can reach that.' },
+          { label: 'A short survey would answer both questions more cheaply and reach more people.', was: ['A survey would answer both more cheaply.'], feedback: 'A survey collects what people say they usually do, which is the least reliable version of A, and it cannot observe anyone failing to find a total.' },
         ],
         then: 'Apply the same test to your own question: does it ask about something that already happened elsewhere, or about what this screen does to someone now?',
       },
@@ -1016,14 +1081,14 @@ const studyPlan: Guided = {
       ],
       start: 'Write the consent sentences first; they are the part you will be most nervous about saying.',
       enough: 'Nothing in the task tells the person where to click, and the consent wording says they can stop.' },
-    { expect: 'An honest recruitment status, and either a dated gap or what rehearsing aloud taught you.',
+    { expect: 'An honest recruitment status, a dated access note, and what rehearsing aloud taught you. With nobody available, this is the complete rehearsal result.',
       fields: ['access-status', 'access-gap', 'rehearsal-notes'],
       terms: [
         { term: 'Recruitment gap', meaning: 'A dated record that nobody was available. It is a real result of the work, not a failure to report.' },
         { term: 'Self-pilot', meaning: 'Running your own materials past yourself. It checks the materials; it tells you nothing about other people.' },
       ],
       start: 'If you are unsure whether to ask someone, write the message you would send. Deciding is easier once it exists.',
-      enough: 'The status matches reality, and if nobody is available the plan is still finished and ready.' },
+      enough: 'The status matches reality, the access note is dated and names no one, and if nobody is available the plan is still finished: nothing in it describes a participant.' },
     { terms: [{ term: 'Bias', meaning: 'Anything in your plan that makes one answer easier to give than another.' }, { term: 'Limitation', meaning: 'What the study cannot tell you even if it goes perfectly. You write it before you start, not afterwards.' }], demo: { scenario: 'Made-up example. Reading a finished study plan back aloud and finding the order that had already decided the answer.', beats: [{ label: 'The plan I was happy with', text: 'Explain the class, show what it involves, then ask her when she last worked out what to take somewhere.' }, { label: 'Why I put it in that order', text: 'So she would know what I meant. It felt like being considerate rather than like shaping anything.' }, { label: 'What that order does', text: 'By the time I ask, I have handed her the class, the materials and the moment I care about. Whatever she says next has my words sitting inside it.' }, { label: 'What I changed', text: 'The question about her last booking goes first, before I describe anything at all. The screen comes out afterwards, or not at all.' }, { label: 'The limitation I still wrote down', text: 'One session with one person cannot say how common anything is, however carefully the order is arranged. That sentence stays in whatever happens.' }], wrongTurn: 'The wrong turn is explaining the thing first so that the person knows what you mean. It feels like courtesy, and it puts your words in her mouth before she has answered.', tradeoff: 'Asking cold means part of the session goes somewhere you did not plan, and you may run out of time before the part you cared about. What you get is an account that was hers before it was yours.', uncertainty: 'Still unknown: whether she would have described that booking the same way on another day. One account carries the day it was told on.' }, expect: 'One way the plan could push the answer, what you changed, the limitation you accept, and the repair the Check questions asked for.',
       fields: ['bias', 'bias-fix', 'limitation', 'improvement-made'],
       start: 'Ask what answer you are hoping for; the bias is usually whatever makes that answer easy to give.',
@@ -1041,12 +1106,12 @@ const studyPlan: Guided = {
       recheck: 'The question names something you do not know, and each possible answer leads somewhere different.',
     },
     {
-      question: 'One person tells you they never open confirmation emails. What have you established?',
+      question: 'One person who booked a class last month tells you they never open confirmation emails. What have you established?',
       options: [
-        { label: 'That at least one person with relevant experience does not, which is enough to make you stop assuming everyone does.', correct: true, feedback: 'One account cannot say how common it is, and it is real evidence that the behaviour exists. That is usually enough to change a design you were about to build on the opposite assumption.' },
-        { label: 'That most people do not read confirmation emails.', feedback: 'One person cannot support “most”. Written that way it will be repeated later without the caveat, and it will be treated as a number.' },
-        { label: 'Nothing: a single participant is not a sample.', feedback: 'Too dismissive. One clear account of a behaviour is a fact about the world; what it cannot give you is prevalence.' },
-        { label: 'That your email design needs work.', feedback: 'That jumps to a repair. If nobody opens it, better wording is not the answer, and you would have skipped past the finding.' },
+        { label: 'That at least one relevant person does not, so you cannot assume that everyone does.', correct: true, was: ['That at least one person with relevant experience does not, which is enough to make you stop assuming everyone does.'], feedback: 'One account cannot say how common it is, and it is real evidence that the behaviour exists. That is usually enough to change a design you were about to build on the opposite assumption.' },
+        { label: 'That most people probably do not read confirmation emails, at least for classes.', was: ['That most people do not read confirmation emails.'], feedback: 'One person cannot support “most”. Written that way it will be repeated later without the caveat, and it will be treated as a number.' },
+        { label: 'Nothing yet, because a single participant is not a sample of anything at all.', was: ['Nothing: a single participant is not a sample.'], feedback: 'Too dismissive. One clear account of a behaviour is a fact about the world; what it cannot give you is prevalence.' },
+        { label: 'That your confirmation email design needs work before the next class goes out.', was: ['That your email design needs work.'], feedback: 'That jumps to a repair. If nobody opens it, better wording is not the answer, and you would have skipped past the finding.' },
       ],
       repair: 'Check the limitation box in step 5. If it does not say that this study cannot establish how common anything is, add that sentence and note it in step 5.',
       recheck: 'The limitation distinguishes what one or two accounts can show from what they cannot.',
@@ -1054,9 +1119,9 @@ const studyPlan: Guided = {
     {
       question: 'The easiest people to recruit are two designers you know. Why is that a problem worth writing down?',
       options: [
-        { label: 'They read screens professionally, so their fluency is not typical, and the plan should record that limit.', correct: true, feedback: 'Convenience is not disqualifying, and it does shape what you can conclude. Recording who you actually reached is what keeps the finding honest later.' },
-        { label: 'It is not a problem, since anyone can attempt a booking task.', feedback: 'Anyone can attempt it, and a designer will notice conventions a first-time visitor never sees, which is exactly what you were trying to observe.' },
-        { label: 'You should cancel and wait for perfect participants.', feedback: 'Waiting for the ideal participant usually means no evidence at all. Run it and record who they were.' },
+        { label: 'They read screens for a living, so their ease is untypical; the plan should record that.', correct: true, was: ['They read screens professionally, so their fluency is not typical, and the plan should record that limit.'], feedback: 'Convenience is not disqualifying, and it does shape what you can conclude. Recording who you actually reached is what keeps the finding honest later.' },
+        { label: 'It is not a problem, since anyone at all can attempt a booking task and give feedback.', was: ['It is not a problem, since anyone can attempt a booking task.'], feedback: 'Anyone can attempt it, and a designer will notice conventions a first-time visitor never sees, which is exactly what you were trying to observe.' },
+        { label: 'It means you should cancel and wait until you can recruit ideal participants instead.', was: ['You should cancel and wait for perfect participants.'], feedback: 'Waiting for the ideal participant usually means no evidence at all. Run it and record who they were.' },
       ],
       repair: 'Reread your criteria in step 2. If they describe who is easy to reach rather than the experience needed, rewrite them, and note in step 5 what you would record about whoever you actually get.',
       recheck: 'The criteria name the experience that makes an answer relevant, and the limitation says who you actually reached.',
@@ -1064,9 +1129,18 @@ const studyPlan: Guided = {
   ],
   saveRoute: {
     auto: 'The plan, consent wording, questions and access status save as you type, on this device first and then online.',
-    external: 'No participant’s name, contact details or recording belongs here. Keep any consent record in your own private folder and refer to it only by a file name.',
-    creator: 'Your creator can read the plan and the recruitment status once you choose Ready for review. A plan with nobody available is a complete answer to this lesson.',
+    external: 'No participant’s name, contact details or recording belongs here. Keep any consent record in your own private folder, decide the date you will delete it, and refer to it only by a file name.',
+    creator: 'Your creator can read the plan and the recruitment status as soon as they save online; Ready for review tells him a version is ready. No-participant route: a plan with nobody available is complete when it holds the prepared materials, a dated access note and what rehearsing aloud taught you. It records no participant and claims nothing about people.',
     next: 'Open Your work and choose Ready for review. Lesson 2 turns notes into findings, and it supplies practice notes if your session has not happened yet.',
+  },
+  transfer: {
+    scenario: 'Made-up case: A volunteer-run repair café is deciding whether to ask people to describe their broken item when they book, or only when they arrive. One volunteer says: “Let’s send a survey to everyone on the mailing list.” Nobody has written down what the café needs to find out.',
+    prompt: 'Write the research question this decision needs, choose between an interview about a recent visit and watching someone use the booking page, and explain why that method can reach your question.',
+    anchors: {
+      weak: 'Accepts the survey, or picks a method first (“interviews are always best”) without a question, or asks people to predict their own behaviour (“Would you describe your item when booking?”).',
+      adequate: 'Writes a question whose answer would change the decision (such as what people know about their item before they arrive), picks an interview about their last visit or a task observation, and says what that method reaches that the other cannot.',
+      strong: 'Adequate, plus names who would count as relevant, one limit (a few accounts cannot show how common anything is) and what to record if nobody is available: a dated access note and a rehearsed guide.',
+    },
   },
 };
 
@@ -1636,7 +1710,7 @@ export const activities: Record<string, Activity> = {
     first: '[ask about a specific past occasion] | [uncertainty] | [follow-up] | [anonymous ID or REHEARSAL] | [leave blank until session] | [separate inference]',
     hints: ['Ask what happened last time instead of whether someone likes your proposed feature.', 'If recruiting is delayed, rehearse reading the questions aloud and flag leading wording. Leave participant findings blank.'],
     adequate: 'Questions invite past experiences; consent and withdrawal are explained; notes distinguish real participation from rehearsal.',
-    handoff: 'Use anonymized observations in your flow; keep recruitment gaps visible.',
+    handoff: 'Use de-identified observations in your flow — never raw notes — and keep recruitment gaps visible.',
     coach: 'Review my interview questions for leading wording. Ask me to repair one question at a time. Do not answer as a real participant or supply research findings.',
     alternative: 'Underline words that suggest an answer, remove them, and rehearse the question aloud without explaining your proposed solution.',
     ...interviewing,
@@ -1650,16 +1724,16 @@ export const activities: Record<string, Activity> = {
     adequate: 'A reader can trace the path and recover from failure without guessing what an arrow means.',
     coach: 'Ask me what each arrow means and what happens after the failure I injected. Do not redraw my flow; make me say where a person ends up when there are no places left.',
     alternative: 'Cover your labels and hand the sheet to yourself an hour later. Trace the failure route with a finger. Anywhere you have to remember what an arrow meant, write the meaning on the sheet.',
-    handoff: 'Bring the numbered flow to the three-screen interface exercise.',
+    handoff: 'Bring the numbered flow to the screen exercise in Lesson 5.',
     ...flowMapping,
   },
   'week1-day5-v1': {
     activity: 'Screen construction workshop', visual: true,
-    mission: 'Turn your numbered flow into three paper screens. Use real labels and content so another person can follow the task without your narration.',
+    mission: 'Turn your numbered flow into two paper screens, the workshop details and the reservation form, each at a narrow and a wide width. Use real labels and content so another person can follow the task without your narration.',
     columns: 'Screen / flow node | Main action | Information needed | State / error | Why this order',
     first: '[screen name and node] | [verb + object] | [actual content] | [feedback] | [goal supported]',
     hints: ['Draw screen boundaries first, then place the information needed before the main action.', 'Cover your annotations and try following only the visible labels. Add missing feedback where you must explain aloud.'],
-    adequate: 'Three screens trace to the flow, with legible labels, feedback and a reason for information priority.',
+    adequate: 'Both screens at both widths trace to the flow, with legible labels, feedback, a reason for information priority, and reading order kept separate from Tab order.',
     coach: 'Ask me to read one screen aloud as though I had never seen it. Challenge any label that only makes sense because I drew it. Do not write my labels for me.',
     alternative: 'Give the three screens to someone with no explanation, or reread them cold tomorrow. Note every place a word had to be explained; those are the labels to rewrite.',
     handoff: 'Save the original screens before critique so revisions remain comparable.',
