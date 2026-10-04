@@ -668,6 +668,11 @@ export const week2 = [
         answer:
           "Mark when and how you intervened so assisted task completion is not counted as independent success.",
       },
+      {
+        question: "Nobody was available. Can you still finish this lesson?",
+        answer:
+          "Yes. Run a labelled self-pilot, record what it shows about the materials, mark the participant answers as self-pilot, and open the report by saying no participant evidence exists yet.",
+      },
     ],
     rubric: [
       "Session type and consent clear",
@@ -675,6 +680,64 @@ export const week2 = [
       "Revision matches an important issue",
       "Results and limitations communicated",
     ],
+    criteria: [
+      {
+        criterion: "Session type and consent clear",
+        evidence:
+          "The session type stated honestly in the status and in the first sentence of the report; for a session, the consent words used, with no names; for a self-pilot, the status “Self-pilot only” and participant answers marked self-pilot.",
+        levels: [
+          "The session type is missing or misstated, such as a self-pilot reported as a session.",
+          "The type appears in the status but not the report, or a real session has no consent words recorded.",
+          "The type is clear in both places; a session has its consent words, and a self-pilot is reported as one with no participant claims. A labelled self-pilot meets this criterion in full.",
+          "As adequate, and the report says what the session type means for how far its conclusions reach.",
+        ],
+        remediation:
+          "Put the session type in the first sentence of the report. For a session, add the consent words you used; for a self-pilot, replace any participant claim with what your own attempt showed.",
+        recheck: "The status, the consent box if there was a session, and the report’s first sentence.",
+      },
+      {
+        criterion: "Observed behavior separated from cause",
+        evidence:
+          "Two observations describing actions and words — or, on a self-pilot, what your own attempt showed — with any help recorded where it happened and possible reasons kept in separate boxes.",
+        levels: [
+          "Observations are conclusions (“she was confused”), or help given is not recorded.",
+          "Most lines describe behaviour, but one carries a judgement, or the outcome hides help that was given.",
+          "Observations describe behaviour, help is recorded beside the outcome, and reasons sit in their own boxes.",
+          "As adequate, and the work names something that argues against its own reading.",
+        ],
+        remediation:
+          "Replace each judgement word with the action that made you think it. Record any help and correct the outcome to match.",
+        recheck: "The two observations, the help given and the outcome.",
+      },
+      {
+        criterion: "Revision matches an important issue",
+        evidence:
+          "The original kept, one bounded change, and a reason linking that change to the observation that matters most for finishing the task.",
+        levels: [
+          "No revision, or the original was overwritten.",
+          "The revision changes several things, or addresses a minor issue while a blocker remains.",
+          "One bounded change addressing the most severe observation, with the original kept.",
+          "As adequate, and the work lists other changes deliberately left for later, each with the observation it is guessing about.",
+        ],
+        remediation:
+          "Compare the two observations by their effect on finishing the task, and keep only the change that answers the more severe one.",
+        recheck: "The severity reason and the before and after versions.",
+      },
+      {
+        criterion: "Results and limitations communicated",
+        evidence:
+          "A short report under Evidence, Decision, Revision and Next check, with no claim that the repair worked and a next check naming a person and a task.",
+        levels: [
+          "No report, or the report claims the problem is fixed.",
+          "The report overclaims — assisted success counted as success, or a self-pilot treated as a finding — or the next check is vague.",
+          "An honest four-part report whose next check names who would do what; a self-pilot report states that no participant evidence exists yet.",
+          "As adequate, and the report says which result in the next check would make you undo the repair.",
+        ],
+        remediation:
+          "Rewrite any claim of a fix as an expectation, and make the next check name a person and a task.",
+        recheck: "The four report sections.",
+      },
+    ] satisfies Criterion[],
     portfolio:
       "A complete small practice loop, not a validated business-impact case study.",
     resource: {
@@ -686,7 +749,7 @@ export const week2 = [
       "In a usability session, ask someone to attempt the task and observe what they do. Avoid teaching the interface while testing it. If you help, record the intervention so assisted success is not mistaken for independent success.",
       "Capture the action, result, and context of a difficulty before proposing a cause. “Asked what to bring after reading the summary” is a useful observation. “People are careless” is a judgment that does not explain the interaction.",
       "Choose a small repair based on task impact and evidence. Preserve the original, state the intended improvement, and list what needs another check. Revising a design does not by itself establish that the revision works.",
-      "Use the participant booked earlier if available. Otherwise run a self-pilot and label it accordingly; leave the research finding unconfirmed. One small session is a learning exercise, not a broad validation or proof of business impact. Ask your creator to review the evidence before claiming completion.",
+      "Use the participant booked earlier if available. Otherwise run a self-pilot and label it accordingly; leave the research finding unconfirmed. One small session is a learning exercise, not a broad validation or proof of business impact. Ask your creator to review the evidence before calling any part of it a finding.",
     ],
     prerequisite:
       "Bring Lesson 4’s prototype, scenario and note template, plus your consent plan.",

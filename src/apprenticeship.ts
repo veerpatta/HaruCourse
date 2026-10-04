@@ -1563,18 +1563,18 @@ const observing: Guided = {
   route: paperRoute('the before and after versions of the screen you repair'),
   worksheet: [
     { id: 'prepare', title: 'Before you start', fields: [
-      { id: 'session-status', label: 'What is actually happening', kind: 'choice', options: ['A consenting adult is taking part', 'Self-pilot only: nobody was available'], hint: 'Choose honestly. A self-pilot is a complete answer to this lesson.' },
-      { id: 'consent-confirmed', label: 'If someone is taking part, what you said before starting', kind: 'long', hint: 'Voluntary, can stop, what the notes are for, no recording without asking.' },
+      { id: 'session-status', label: 'What is actually happening', kind: 'choice', options: ['A consenting adult is taking part', 'Self-pilot only: nobody was available'], hint: 'Choose honestly. Self-pilot only is a complete result: you attempt the task yourself, record what it shows about the materials, mark the participant answers as self-pilot, and say that no participant evidence exists yet.' },
+      { id: 'consent-confirmed', label: 'If someone is taking part, what you said before starting', kind: 'long', sensitive: true, hint: 'The words you used: voluntary, can stop, what the notes are for, who will read them, when they will be deleted, no recording without asking. Never a name or signature; keep any consent record in your private folder.' },
     ] },
     { id: 'observe', title: 'What happened', intro: 'Behaviour first. Reasons come in the next step.', fields: [
-      { id: 'observation-1', label: 'Observation 1 · what they did or said', kind: 'long', example: 'Example (made up): she asked whether “materials supplied” included a sketchbook, then went back to the class list.' },
-      { id: 'observation-2', label: 'Observation 2 · what they did or said', kind: 'long' },
-      { id: 'help-given', label: 'Any help you gave, and when', kind: 'long', hint: 'Record it. Help changes what the outcome can mean.', example: 'Example (made up): after two minutes I said “the details are on the class page”, which is how she found it.' },
-      { id: 'task-outcome', label: 'How the attempt ended', kind: 'choice', options: ['Finished without help', 'Finished after help from me', 'Did not finish', 'Self-pilot: not applicable'] },
+      { id: 'observation-1', label: 'Observation 1 · what they did or said, without identifying details (on a self-pilot, what you found)', kind: 'long', sensitive: true, hint: 'Raw notes stay on paper or in a private file with a date to delete them; write a short de-identified summary here. On a self-pilot, write what your own attempt showed about the materials.', example: 'Example (made up): she asked whether “materials supplied” included a sketchbook, then went back to the class list.' },
+      { id: 'observation-2', label: 'Observation 2 · what they did or said, without identifying details (on a self-pilot, what you found)', kind: 'long', sensitive: true },
+      { id: 'help-given', label: 'Any help you gave, and when', kind: 'long', sensitive: true, hint: 'Record it. Help changes what the outcome can mean. On a self-pilot, write “None: self-pilot”.', example: 'Example (made up): after two minutes I said “the details are on the class page”, which is how she found it.' },
+      { id: 'task-outcome', label: 'How the attempt ended', kind: 'choice', sensitive: true, options: ['Finished without help', 'Finished after help from me', 'Did not finish', 'Self-pilot: not applicable'] },
     ] },
     { id: 'interpret', title: 'What it might mean', fields: [
-      { id: 'explanation-1', label: 'A possible reason for observation 1', kind: 'long' },
-      { id: 'explanation-2', label: 'A possible reason for observation 2', kind: 'long' },
+      { id: 'explanation-1', label: 'A possible reason for observation 1', kind: 'long', sensitive: true },
+      { id: 'explanation-2', label: 'A possible reason for observation 2', kind: 'long', sensitive: true },
       { id: 'contrary', label: 'Anything that argues against your reading', kind: 'short' },
       { id: 'severity', label: 'Which of the two matters more for finishing the task, and why', kind: 'long' },
     ] },
@@ -1584,12 +1584,12 @@ const observing: Guided = {
       { id: 'expected-change', label: 'What you expect to be different, and what stays untested', kind: 'long' },
     ] },
     { id: 'report', title: 'The short report', fields: [
-      { id: 'report-evidence', label: 'Evidence', kind: 'long', hint: 'What you saw, with the session type beside it.' },
+      { id: 'report-evidence', label: 'Evidence', kind: 'long', sensitive: true, hint: 'What you saw, summarised without identifying details, with the session type in the first sentence: self-pilot, or a session with a consenting adult.' },
       { id: 'report-decision', label: 'Decision', kind: 'short' },
       { id: 'report-revision', label: 'Revision', kind: 'short' },
       { id: 'report-next-check', label: 'Next check', kind: 'short', hint: 'Who would you watch, doing what, to find out whether the repair helped?' },
       { id: 'photo-reference', label: 'Where the before and after versions live', kind: 'short' },
-      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions, or why no change was needed', kind: 'long' },
     ] },
   ],
   guide: [
@@ -1601,7 +1601,7 @@ const observing: Guided = {
       ],
       start: 'If nobody is available, choose self-pilot now and keep going. The lesson works either way.',
       enough: 'The status matches what is really happening today.' },
-    { expect: 'Two observations, any help you gave, and how the attempt ended.',
+    { expect: 'Two observations, any help you gave, and how the attempt ended; on a self-pilot, what your own attempt showed and “None” for help.',
       fields: ['observation-1', 'observation-2', 'help-given', 'task-outcome'],
       demo: {
         scenario: 'Made-up example. Two lines from a session, written first the way that hides what happened.',
@@ -1620,17 +1620,17 @@ const observing: Guided = {
         { term: 'Assisted completion', meaning: 'Finishing after you intervened. It is not the same result as finishing alone, and the notes must show which happened.' },
       ],
       start: 'Let them work. Wait longer than feels comfortable before saying anything, and write down whatever you say.',
-      enough: 'Nothing in the observation boxes is a word like confused, frustrated or careless.' },
+      enough: 'Nothing in the observation boxes is a word like confused, frustrated or careless. On a self-pilot, they describe your own attempt, help says none and the outcome says not applicable.' },
     { expect: 'A possible reason for each observation, anything arguing against it, and which one matters more.',
       fields: ['explanation-1', 'explanation-2', 'contrary', 'severity'],
       supported: {
-        material: 'A supplied line from someone else’s session: “The participant clicked Reserve twice, then said ‘I don’t know if that worked’. The facilitator confirmed the booking had gone through.”',
+        material: 'A made-up line from someone else’s session notes: “The participant clicked Reserve twice, then said ‘I don’t know if that worked’. The facilitator confirmed the booking had gone through.”',
         question: 'How should this be recorded?',
         options: [
-          { label: 'Observed: two presses and that sentence. Assisted: the facilitator confirmed it. Interpretation: the button gave no visible feedback.', correct: true, feedback: 'All three parts are separated, so a reader can see what happened, what you did, and what you concluded. The missing feedback is a strong reading and it is still a reading.' },
-          { label: 'Observed: the participant was unsure whether the booking worked.', feedback: 'Unsure is your interpretation of the sentence and the second press. Close to certain, and still not what you saw.' },
-          { label: 'Finding: the confirmation is broken and needs a loading state.', feedback: 'That is a recommendation built on one moment, and it skips both the observation and the fact that you intervened.' },
-          { label: 'Observed: the participant double-clicked, which is normal behaviour for older users.', feedback: 'It adds a claim about a whole group from one person, and it explains away the very thing you should be curious about.' },
+          { label: 'Observed: two presses and the sentence. Assisted: facilitator confirmed. Inferred: no visible feedback.', was: ['Observed: two presses and that sentence. Assisted: the facilitator confirmed it. Interpretation: the button gave no visible feedback.'], correct: true, feedback: 'All three parts are separated, so a reader can see what happened, what you did, and what you concluded. The missing feedback is a strong reading and it is still a reading.' },
+          { label: 'Observed: the participant was unsure whether the booking had worked, so pressed again.', was: ['Observed: the participant was unsure whether the booking worked.'], feedback: 'Unsure is your interpretation of the sentence and the second press. Close to certain, and still not what you saw.' },
+          { label: 'Finding: the confirmation step is broken and needs a loading state before the next session.', was: ['Finding: the confirmation is broken and needs a loading state.'], feedback: 'That is a recommendation built on one moment, and it skips both the observation and the fact that you intervened.' },
+          { label: 'Observed: the participant double-clicked, which is normal behaviour for older users anyway.', was: ['Observed: the participant double-clicked, which is normal behaviour for older users.'], feedback: 'It adds a claim about a whole group from one person, and it explains away the very thing you should be curious about.' },
         ],
         then: 'Split your own two observations the same way, and make sure any help you gave is recorded beside the outcome rather than inside it.',
       },
@@ -1653,17 +1653,17 @@ const observing: Guided = {
       options: [
         { label: 'Finished after help, with the help itself recorded and quoted.', correct: true, feedback: 'The same words that helped her would not be there in real use. Recording them is what stops a rescued attempt being counted as a success.' },
         { label: 'Finished, since she completed it and the help was minor.', feedback: 'Minor help still supplied the missing piece. Reported as a completion, it makes the design look like it worked when you made it work.' },
-        { label: 'Did not finish, because she needed help.', feedback: 'Too severe and it loses information. She did finish; the honest record says what it took.' },
+        { label: 'Did not finish, because she needed help to reach the end of the task.', was: ['Did not finish, because she needed help.'], feedback: 'Too severe and it loses information. She did finish; the honest record says what it took.' },
       ],
-      repair: 'Check the help and outcome boxes in step 2. If you helped and the outcome says finished without help, correct it and record the change in step 5.',
+      repair: 'Check the help and outcome boxes in step 2. If you helped and the outcome says finished without help, correct it and record the change in step 5. On a self-pilot, the outcome should read “Self-pilot: not applicable” and help should say none.',
       recheck: 'The outcome names whether help was given, and the help is written down where it happened.',
     },
     {
       question: 'After the repair you write: “This fixes the problem.” What is the honest version?',
       options: [
-        { label: 'That you changed the design in response to evidence, and it needs another check before anyone can say it helped.', correct: true, feedback: 'A repair is a response, not a result. The next check is the sentence that keeps it that way and tells you what to do next.' },
-        { label: 'It is fine: the change directly addresses what you observed.', feedback: 'Addressing an observation is the reason to try it. Whether it works for the next person is unknown until someone else meets it.' },
-        { label: 'It is fine if the participant agreed the new version was better.', feedback: 'Shown two versions by the person who made them, agreement is close to guaranteed and tells you very little.' },
+        { label: 'You changed the design in response to evidence; another check must show whether it helped.', was: ['That you changed the design in response to evidence, and it needs another check before anyone can say it helped.'], correct: true, feedback: 'A repair is a response, not a result. The next check is the sentence that keeps it that way and tells you what to do next.' },
+        { label: 'The original sentence is fine, because the change directly addresses what you observed.', was: ['It is fine: the change directly addresses what you observed.'], feedback: 'Addressing an observation is the reason to try it. Whether it works for the next person is unknown until someone else meets it.' },
+        { label: 'The original is fine if the participant agreed that the new version was the better one.', was: ['It is fine if the participant agreed the new version was better.'], feedback: 'Shown two versions by the person who made them, agreement is likely and tells you very little.' },
       ],
       repair: 'Reread your Revision and Next check sections in step 5. Rewrite any claim of a fix as an expectation with the observation that would test it, then note the change.',
       recheck: 'The report separates what changed from what remains untested, and the next check names a person and a task.',
@@ -1671,10 +1671,10 @@ const observing: Guided = {
     {
       question: 'Nobody was available, so you ran the task yourself. What can the report say?',
       options: [
-        { label: 'That it was a self-pilot, what it found about the materials, and that no participant evidence exists yet.', correct: true, feedback: 'A self-pilot finds broken paths, missing cards and unclear wording, which is real and worth reporting. It cannot tell you what a first-time visitor would do.' },
-        { label: 'That the flow works, since you completed it without difficulty.', feedback: 'You designed it, so you know where everything is. Your fluency is the least informative result available.' },
-        { label: 'The findings you would expect a participant to have produced.', feedback: 'That is an invented participant. Once written it gets quoted, and everything else you report becomes suspect.' },
-        { label: 'Nothing, since the lesson needs a participant.', feedback: 'The lesson is complete with a self-pilot honestly reported. A dated recruitment gap is a result, not a failure.' },
+        { label: 'Self-pilot: what it found in the materials, and that no participant evidence exists yet.', was: ['That it was a self-pilot, what it found about the materials, and that no participant evidence exists yet.'], correct: true, feedback: 'A self-pilot finds broken paths, missing cards and unclear wording, which is real and worth reporting. It cannot tell you what a first-time visitor would do.' },
+        { label: 'That the flow works, since you completed every step of it without any difficulty.', was: ['That the flow works, since you completed it without difficulty.'], feedback: 'You designed it, so you know where everything is. Your fluency is the least informative result available.' },
+        { label: 'The findings you would expect a first-time participant to have produced, marked as likely.', was: ['The findings you would expect a participant to have produced.'], feedback: 'That is an invented participant. Once written it gets quoted, and everything else you report becomes suspect.' },
+        { label: 'Nothing yet, since this lesson cannot be completed without a real participant.', was: ['Nothing, since the lesson needs a participant.'], feedback: 'The lesson is complete with a self-pilot honestly reported. A dated recruitment gap is a result, not a failure.' },
       ],
       repair: 'Check the session type in step 1 and the Evidence section in step 5. Make sure the session type appears in the first sentence of the report, then record the change.',
       recheck: 'A reader learns in the first line whether a participant took part, and no conclusion outruns that.',
@@ -1683,8 +1683,17 @@ const observing: Guided = {
   saveRoute: {
     auto: 'Your notes, interpretations and report save as you type, on this device first and then online.',
     external: 'Keep the before and after screens, and any consent record, in your own private folder. No participant name or contact detail belongs in this worksheet, and nothing is uploaded.',
-    creator: 'Your creator reads the report, the observations and the limits once you choose Ready for review. This is practice evidence for later reasoning, not a portfolio case study.',
+    creator: 'Your creator can read the report, the observations and the limits as soon as they save online; Ready for review tells him a version is ready. This is practice evidence for later reasoning, not a portfolio case study. No-participant route: a self-pilot is complete when the status says self-pilot, the observations describe your own attempt, help says none, the outcome says not applicable, and the report opens with “Self-pilot” and says no participant evidence exists yet.',
     next: 'Open Your work and choose Ready for review. This closes Module 2; Module 3 returns to visual foundations with the evidence you have gathered.',
+  },
+  transfer: {
+    scenario: 'Made-up case: Nobody was available, so you walked through your own paper prototype of a ferry ticket booking. You noticed that the return-date card never says which port the return sailing leaves from, and you hesitated over the luggage question. Your draft report begins: “Users struggle with the luggage question.”',
+    prompt: 'Rewrite the first sentence of the report so it matches what actually happened, and explain why your version is honest about the session type and about what it can and cannot show.',
+    anchors: {
+      weak: 'Keeps a claim about users or travellers (“people find the luggage question confusing”), or writes the findings a participant might have produced, although nobody else took part.',
+      adequate: 'Opens with “Self-pilot:” and reports what the walk-through found in the materials — the missing return port and your own hesitation — and states that no participant evidence exists yet.',
+      strong: 'Adequate, plus proposes one bounded repair (add the return port), keeps the original card, and names a next check with a real person and a task, written as still to do.',
+    },
   },
 };
 
