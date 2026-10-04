@@ -1,4 +1,4 @@
-import { withLegacyText } from "./teaching";
+import { withLegacyText, type Criterion } from "./teaching";
 export const week2 = [
   {
     id: "week2-day1-v1",
@@ -26,6 +26,11 @@ export const week2 = [
         answer:
           "A bounded observation from that person and a chance to improve the method, not population-wide prevalence.",
       },
+      {
+        question: "Nobody replied. Is your study plan finished?",
+        answer:
+          "Yes, if it holds the prepared materials, a dated access note and what rehearsing aloud taught you. That is a complete rehearsal result; it is not research about anyone.",
+      },
     ],
     rubric: [
       "A clear decision and uncertainty",
@@ -33,6 +38,64 @@ export const week2 = [
       "Participant criteria and limitations",
       "Voluntary participation and minimal data",
     ],
+    criteria: [
+      {
+        criterion: "A clear decision and uncertainty",
+        evidence:
+          "A decision from Module 1 you cannot yet defend, what getting it wrong costs the person, and a research question whose possible answers would lead to different choices.",
+        levels: [
+          "No decision, or a method chosen with no question behind it.",
+          "A question exists, but no answer to it would change the decision, or the decision is vague.",
+          "A specific decision, its stake for the person, and a question whose answers would move it.",
+          "As adequate, and the plan says what you would do under two different answers.",
+        ],
+        remediation:
+          "Write the two answers you might get and what you would do after each. If both lead to the same action, rewrite the question.",
+        recheck: "The decision, the question and the two-answers note.",
+      },
+      {
+        criterion: "Method matches the question",
+        evidence:
+          "A chosen method — an interview about a recent experience, watching a task, or both — with a reason naming what it reaches that the other cannot.",
+        levels: [
+          "No method, or a method with no reason.",
+          "A method is named, but the reason is generic (“interviews give insight”) or the method cannot reach the question.",
+          "The method fits the question, and the reason says what it reaches that the alternative cannot.",
+          "As adequate, and the plan names what the chosen method will miss and how that limits the decision.",
+        ],
+        remediation:
+          "Ask whether the question is about something that already happened elsewhere (interview) or about what this screen does to someone now (task). Change the method if it does not fit, and rewrite the reason.",
+        recheck: "The method choice and its reason.",
+      },
+      {
+        criterion: "Participant criteria and limitations",
+        evidence:
+          "Criteria describing the experience that makes an answer relevant (no names), an honest recruitment status with a dated access note, and a limitation stating what the study cannot show even if it goes perfectly.",
+        levels: [
+          "No criteria or limitation, or participants are named.",
+          "The criteria describe whoever is easiest to reach, the status does not match reality, or the limitation is missing.",
+          "Experience-based criteria, a status that matches reality with a dated access note, and a stated limitation. On the rehearsal route, the dated note and the rehearsed materials meet this criterion; no participant is needed.",
+          "As adequate, and the plan says what it would record about whoever is actually reached and how that bounds the conclusion.",
+        ],
+        remediation:
+          "Rewrite the criteria as the experience a person needs. Set the status to what is true today, date the access note, and add one sentence on what the study cannot establish.",
+        recheck: "The criteria, the status, the access note and the limitation.",
+      },
+      {
+        criterion: "Voluntary participation and minimal data",
+        evidence:
+          "Consent wording that says what the notes are for, who will read them, when they will be deleted, that the person can skip or stop, and whether anything is recorded; no names, contacts or private booking details anywhere in the plan.",
+        levels: [
+          "No consent wording, or the plan asks for private or identifying details.",
+          "The consent wording leaves out the right to stop, who reads the notes or deletion, or the plan collects more than it needs.",
+          "Complete consent wording and a plan that collects only what the question needs, with no names or contacts in the worksheet.",
+          "As adequate, and the plan says where any consent record is kept privately and when the notes will be deleted.",
+        ],
+        remediation:
+          "Add the missing consent elements, then remove any detail the question does not need.",
+        recheck: "The consent introduction and the data the plan collects.",
+      },
+    ] satisfies Criterion[],
     portfolio:
       "A research-plan artifact; keep proposed evidence distinct from collected evidence.",
     resource: {
@@ -44,7 +107,7 @@ export const week2 = [
       "Start with a decision, not a method. If you need to understand how people prepare for a workshop, a conversation about a recent visit can reveal context. If you need to know whether a materials summary is understandable, observe someone using it. A survey does not automatically answer either question well.",
       "Write a research question as an uncertainty: “When do attendees look for preparation instructions?” Then name the evidence that would help and the choice it would influence. This makes it easier to avoid collecting interesting but irrelevant information.",
       "Recruit people with experience related to the task, rather than choosing only whoever is easiest to reach. For this small practice study, one willing adult with a recent booking experience can help rehearse your method, but cannot represent the whole audience. Document that limitation.",
-      "Keep participant access separate from study quality. If nobody is available during this module, improve the plan and do a clearly labelled self-walkthrough. Do not turn a fictional persona or an AI-generated interview into participant evidence. Never collect private booking or payment details for this exercise.",
+      "Keep participant access separate from study quality. If nobody is available during this module, improve the plan, rehearse it aloud alone and record a dated access note; that is a complete result for this lesson. Do not turn a fictional persona or an AI-generated interview into participant evidence. Never collect private booking or payment details for this exercise.",
     ],
     prerequisite:
       "Bring Module 1 Lesson 5’s flow, screens and unresolved questions.",
@@ -138,6 +201,64 @@ export const week2 = [
       "Counter-evidence is retained",
       "Simulated data is labelled",
     ],
+    criteria: [
+      {
+        criterion: "Sources can be traced",
+        evidence:
+          "Numbered observations, each with a source label (a session code or a supplied note), and findings that cite the note numbers that support them.",
+        levels: [
+          "Findings with no note numbers, or observations with no sources.",
+          "Some observations lack sources, or a finding cites notes that do not support it.",
+          "Every observation has a source, and every finding names its supporting note numbers.",
+          "As adequate, and a reader could follow one implication back through a finding to a single note without asking you.",
+        ],
+        remediation:
+          "Give every observation a number and a source. For each finding, list the note numbers that support it, and mark any finding with none as unsupported.",
+        recheck: "The numbered observations and the findings with their note numbers.",
+      },
+      {
+        criterion: "Observations and interpretations differ",
+        evidence:
+          "Observation lines describe what happened with no “because”, judgement or recommendation in them; interpretations and implications sit in their own boxes.",
+        levels: [
+          "Observations mix in judgements (“disorganised”) or recommendations (“add a reminder”).",
+          "Most lines are observations, but one or two carry a reason or a judgement inside them.",
+          "Every observation line could be checked against its source, and interpretations are kept separate.",
+          "As adequate, and the work shows one raw line split into an observation and an interpretation, with the reason.",
+        ],
+        remediation:
+          "Find every observation containing because, so, wanted or a judgement about the person, and move the second half to an interpretation or a finding.",
+        recheck: "The six observation lines.",
+      },
+      {
+        criterion: "Counter-evidence is retained",
+        evidence:
+          "A note that fits neither group kept visible, each finding naming what argues against it, and a confidence level that reflects that.",
+        levels: [
+          "Contradicting notes are dropped, or findings claim “all”, “most” or “nobody”.",
+          "A contradiction is noted but not linked to any finding, or the confidence ignores it.",
+          "Each finding names its counter-evidence, and its confidence reflects it.",
+          "As adequate, and the work suggests what the exception might mean, such as a different context.",
+        ],
+        remediation:
+          "For each finding, find the note that fits least and write it under “what argues against it”. Remove most, all and nobody.",
+        recheck: "The two findings with their counter-evidence and confidence.",
+      },
+      {
+        criterion: "Simulated data is labelled",
+        evidence:
+          "The source type is set, and any finding drawn from supplied notes says “simulated training data” where it is written; real notes appear only as de-identified summaries, kept apart from supplied ones.",
+        levels: [
+          "Supplied notes are presented as interviews or real findings.",
+          "The source type is set, but findings drawn from supplied notes do not repeat the label.",
+          "The label travels with every finding, and real and supplied notes are kept apart. Working only from the supplied notes meets this criterion in full.",
+          "As adequate, and the work says plainly what the exercise practised (the method) and what it cannot claim (anything about real people).",
+        ],
+        remediation:
+          "Add the supplied-notes label to each finding drawn from them, and separate any real notes from supplied ones.",
+        recheck: "The source type and the wording of both findings.",
+      },
+    ] satisfies Criterion[],
     portfolio:
       "A synthesis exercise; real study findings require real evidence.",
     resource: {
@@ -236,6 +357,63 @@ export const week2 = [
       "Bounded scope",
       "Observable signal and counter-evidence",
     ],
+    criteria: [
+      {
+        criterion: "Several meaningfully different options",
+        evidence:
+          "Three options that would succeed or fail for different reasons — at least one without a screen — each with its expected effect for the person and an effort estimate with its reason.",
+        levels: [
+          "One option, or none described as an outcome for the person.",
+          "Three options that are variations of one idea (the same list in three places), or estimates with no reasons.",
+          "Three options that differ in kind, each with an expected effect and a reasoned estimate.",
+          "As adequate, and the comparison names which option is cheapest to be wrong about, and why.",
+        ],
+        remediation:
+          "Ask whether two options would fail for the same reason. If so, replace one with a change somewhere else — what the person is told, what the organiser does, or no screen at all.",
+        recheck: "The three options with their effect and effort lines.",
+      },
+      {
+        criterion: "Choice linked to evidence",
+        evidence:
+          "The chosen option cites the finding it answers, with that finding’s source label and limits still attached, and states what the choice costs.",
+        levels: [
+          "No choice, or a choice with no link to a finding.",
+          "The choice names a finding but drops its limits or source label, or rests on preference.",
+          "The choice cites its finding with source label and limits, and names its cost. A finding from the supplied practice notes, kept labelled, meets this criterion.",
+          "As adequate, and the choice explains why it teaches more than the others even if it is less appealing to build.",
+        ],
+        remediation:
+          "Copy the finding’s source label and limits beside the choice, and finish the sentence “I chose this because the finding…”.",
+        recheck: "The finding, its limits and the choice with its reason.",
+      },
+      {
+        criterion: "Bounded scope",
+        evidence:
+          "An excluded list naming what the test leaves out, so that what remains is the smallest set that could show the signal.",
+        levels: [
+          "No scope stated, or the test covers several changes at once.",
+          "An excluded list exists, but the test still bundles changes unrelated to the hypothesis.",
+          "One change under test, with unrelated work written down as excluded.",
+          "As adequate, and the excluded list includes something you wanted to do, with the reason it waits.",
+        ],
+        remediation: "Move everything not needed to observe your signal into the excluded list.",
+        recheck: "The excluded list and what remains in the test.",
+      },
+      {
+        criterion: "Observable signal and counter-evidence",
+        evidence:
+          "A hypothesis in the form “If [change], [who] can [observable behaviour]”, a success signal, a disconfirming signal written before testing, and a task with no route in it.",
+        levels: [
+          "No hypothesis, or one about liking or satisfaction.",
+          "A hypothesis exists but ends in a feeling, or the disconfirming signal is missing.",
+          "An observable hypothesis with both signals and a neutral task.",
+          "As adequate, and the signals say what you would do next under each result.",
+        ],
+        remediation:
+          "Rewrite the last part of the hypothesis as something a person in the room could see, then write what you would see if it failed.",
+        recheck: "The hypothesis, both signals and the task.",
+      },
+    ] satisfies Criterion[],
     portfolio: "A prioritization decision with explicit assumptions.",
     resource: {
       title: "GOV.UK: how discovery works",
@@ -325,6 +503,11 @@ export const week2 = [
         answer:
           "No. It can represent intended behavior; distinguish simulated states from implemented functionality.",
       },
+      {
+        question: "Should the failure card be left bare so you can watch people hit it?",
+        answer:
+          "No. A failure card with no way forward is a dead end you already know about, and it stops the task. Give it the recovery you planned, and leave wording you are unsure about in place to observe instead.",
+      },
     ],
     rubric: [
       "Prototype addresses the hypothesis",
@@ -332,6 +515,64 @@ export const week2 = [
       "Scenario avoids instructions to the answer",
       "Limitations documented",
     ],
+    criteria: [
+      {
+        criterion: "Prototype addresses the hypothesis",
+        evidence:
+          "The hypothesis carried from Lesson 3 and a list of three or four screens, each needed to attempt the task, with one failure card that shows a way forward.",
+        levels: [
+          "No hypothesis, or screens unrelated to it.",
+          "The prototype includes screens the task does not need, or lacks the screen where the signal would be seen.",
+          "Only the screens the task needs, including a failure card with a way forward.",
+          "As adequate, and the work says which screen the signal will be seen on, and what was cut and why.",
+        ],
+        remediation:
+          "Walk the task and cross out any screen you never pass through; add the one the signal needs.",
+        recheck: "The screen list and the hypothesis.",
+      },
+      {
+        criterion: "Relevant actions and recovery work",
+        evidence:
+          "Every action on the task path leads somewhere, the failure card offers another date, a fix or a way back, invented content is marked, and the self-pilot’s fixes are recorded.",
+        levels: [
+          "Actions lead nowhere, or there is no failure card.",
+          "A dead end remains — including a failure card that only reports bad news — or the self-pilot found breaks that were not fixed.",
+          "The primary and recovery paths both work in a self-pilot, fixes are recorded, and each dead control has a sentence ready.",
+          "As adequate, and the self-pilot separates bugs fixed now from wording or layout deliberately left in place to observe.",
+        ],
+        remediation:
+          "Rerun the self-pilot along the failure path. If any card has no way forward, draw it, then record what you fixed.",
+        recheck: "The pilot findings, the fixes and the failure card.",
+      },
+      {
+        criterion: "Scenario avoids instructions to the answer",
+        evidence:
+          "A task card stating a goal and a situation with no button, link or filter named, and a reset that returns every card to the start.",
+        levels: [
+          "No task card, or a card that lists the steps to take.",
+          "The card names a control or the route, or there is no reset.",
+          "A goal-and-situation task with no interface words, and a written reset.",
+          "As adequate, and the work notes how the invented situation might shape what people do.",
+        ],
+        remediation:
+          "Cross out every interface word on the task card and replace it with what the person wants to achieve.",
+        recheck: "The task card and the reset.",
+      },
+      {
+        criterion: "Limitations documented",
+        evidence:
+          "A list of what paper cannot establish — keyboard and screen-reader behaviour, real payment, speed, anything a server does — and the walk-through labelled as a self-pilot.",
+        levels: [
+          "No limitations, or the self-pilot is reported as a test with a person.",
+          "Limitations are vague, or keyboard, screen-reader or server behaviour is missing.",
+          "Specific limitations listed, and the self-pilot labelled as such.",
+          "As adequate, and each limitation names what a later build or session would need to check it.",
+        ],
+        remediation:
+          "Add keyboard, screen-reader, payment and server behaviour to the list, and label your walk-through as a self-pilot.",
+        recheck: "The limitations list.",
+      },
+    ] satisfies Criterion[],
     portfolio: "A prototype with a reason for its fidelity and scope.",
     resource: {
       title: "GOV.UK: moderated usability testing",
@@ -427,6 +668,11 @@ export const week2 = [
         answer:
           "Mark when and how you intervened so assisted task completion is not counted as independent success.",
       },
+      {
+        question: "Nobody was available. Can you still finish this lesson?",
+        answer:
+          "Yes. Run a labelled self-pilot, record what it shows about the materials, mark the participant answers as self-pilot, and open the report by saying no participant evidence exists yet.",
+      },
     ],
     rubric: [
       "Session type and consent clear",
@@ -434,6 +680,64 @@ export const week2 = [
       "Revision matches an important issue",
       "Results and limitations communicated",
     ],
+    criteria: [
+      {
+        criterion: "Session type and consent clear",
+        evidence:
+          "The session type stated honestly in the status and in the first sentence of the report; for a session, the consent words used, with no names; for a self-pilot, the status “Self-pilot only” and participant answers marked self-pilot.",
+        levels: [
+          "The session type is missing or misstated, such as a self-pilot reported as a session.",
+          "The type appears in the status but not the report, or a real session has no consent words recorded.",
+          "The type is clear in both places; a session has its consent words, and a self-pilot is reported as one with no participant claims. A labelled self-pilot meets this criterion in full.",
+          "As adequate, and the report says what the session type means for how far its conclusions reach.",
+        ],
+        remediation:
+          "Put the session type in the first sentence of the report. For a session, add the consent words you used; for a self-pilot, replace any participant claim with what your own attempt showed.",
+        recheck: "The status, the consent box if there was a session, and the report’s first sentence.",
+      },
+      {
+        criterion: "Observed behavior separated from cause",
+        evidence:
+          "Two observations describing actions and words — or, on a self-pilot, what your own attempt showed — with any help recorded where it happened and possible reasons kept in separate boxes.",
+        levels: [
+          "Observations are conclusions (“she was confused”), or help given is not recorded.",
+          "Most lines describe behaviour, but one carries a judgement, or the outcome hides help that was given.",
+          "Observations describe behaviour, help is recorded beside the outcome, and reasons sit in their own boxes.",
+          "As adequate, and the work names something that argues against its own reading.",
+        ],
+        remediation:
+          "Replace each judgement word with the action that made you think it. Record any help and correct the outcome to match.",
+        recheck: "The two observations, the help given and the outcome.",
+      },
+      {
+        criterion: "Revision matches an important issue",
+        evidence:
+          "The original kept, one bounded change, and a reason linking that change to the observation that matters most for finishing the task.",
+        levels: [
+          "No revision, or the original was overwritten.",
+          "The revision changes several things, or addresses a minor issue while a blocker remains.",
+          "One bounded change addressing the most severe observation, with the original kept.",
+          "As adequate, and the work lists other changes deliberately left for later, each with the observation it is guessing about.",
+        ],
+        remediation:
+          "Compare the two observations by their effect on finishing the task, and keep only the change that answers the more severe one.",
+        recheck: "The severity reason and the before and after versions.",
+      },
+      {
+        criterion: "Results and limitations communicated",
+        evidence:
+          "A short report under Evidence, Decision, Revision and Next check, with no claim that the repair worked and a next check naming a person and a task.",
+        levels: [
+          "No report, or the report claims the problem is fixed.",
+          "The report overclaims — assisted success counted as success, or a self-pilot treated as a finding — or the next check is vague.",
+          "An honest four-part report whose next check names who would do what; a self-pilot report states that no participant evidence exists yet.",
+          "As adequate, and the report says which result in the next check would make you undo the repair.",
+        ],
+        remediation:
+          "Rewrite any claim of a fix as an expectation, and make the next check name a person and a task.",
+        recheck: "The four report sections.",
+      },
+    ] satisfies Criterion[],
     portfolio:
       "A complete small practice loop, not a validated business-impact case study.",
     resource: {
@@ -445,7 +749,7 @@ export const week2 = [
       "In a usability session, ask someone to attempt the task and observe what they do. Avoid teaching the interface while testing it. If you help, record the intervention so assisted success is not mistaken for independent success.",
       "Capture the action, result, and context of a difficulty before proposing a cause. “Asked what to bring after reading the summary” is a useful observation. “People are careless” is a judgment that does not explain the interaction.",
       "Choose a small repair based on task impact and evidence. Preserve the original, state the intended improvement, and list what needs another check. Revising a design does not by itself establish that the revision works.",
-      "Use the participant booked earlier if available. Otherwise run a self-pilot and label it accordingly; leave the research finding unconfirmed. One small session is a learning exercise, not a broad validation or proof of business impact. Ask your creator to review the evidence before claiming completion.",
+      "Use the participant booked earlier if available. Otherwise run a self-pilot and label it accordingly; leave the research finding unconfirmed. One small session is a learning exercise, not a broad validation or proof of business impact. Ask your creator to review the evidence before calling any part of it a finding.",
     ],
     prerequisite:
       "Bring Lesson 4’s prototype, scenario and note template, plus your consent plan.",

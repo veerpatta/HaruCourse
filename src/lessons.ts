@@ -19,7 +19,7 @@ import { module18 } from './module18';
 import { module19 } from './module19';
 import { module20 } from './module20';
 import { modules } from './modules';
-import { adaptPublished, type Lesson } from './teaching';
+import { adaptPublished, type Criterion, type Lesson } from './teaching';
 import { withLessonActions } from './lessonActions';
 import { week2 } from "./week2";
 import { withLegacyText } from "./teaching";
@@ -137,14 +137,20 @@ const week1 = [
       "A stakeholder report suggests a problem; it does not prove its cause.",
       "Explore alternatives before narrowing the response.",
       "Check assumptions with serious consequences and weak evidence first.",
+      "Any detail you add beyond the brief — who, when, what it costs — is an assumption. Keep it in the frame and mark it (assumed) so it gets checked.",
     ],
     example:
-      "A reminder, materials summary, and checkbox are different responses to workshop preparation. A click on a checkbox does not prove comprehension.",
+      "Made-up example: the brief says only that first-time attendees arrive without aprons. A frame saying she checks “the evening before” marks that detail (assumed), because nobody reported it. A reminder, a materials summary and a checkbox are different responses; a click on a checkbox does not prove comprehension.",
     check: [
       {
         question: "Which assumption should be investigated first?",
         answer:
           "One with weak evidence whose failure would materially change the design or harm users.",
+      },
+      {
+        question: "The brief never says when attendees prepare. May your frame say “the evening before”?",
+        answer:
+          "Yes, if you mark it (assumed). Added details make a frame concrete; unmarked, they turn a guess into a fact nobody reported.",
       },
     ],
     rubric: [
@@ -152,6 +158,50 @@ const week1 = [
       "A way to reduce uncertainty",
       "Alternatives compared against constraints",
     ],
+    criteria: [
+      {
+        criterion: "Needs without prescribed features",
+        evidence:
+          "Three frames that each name a person, a moment, an unmet goal and a consequence, contain no feature word (reminder, email, checkbox, page, button), and mark every detail the brief did not state as (assumed).",
+        levels: [
+          "No frames, or every frame names a feature to build.",
+          "Frames exist, but at least one names a feature or a screen, or adds details such as when people prepare as if the brief had reported them.",
+          "Three feature-free frames, each naming a person, a moment, a goal and a consequence, with every added detail marked (assumed).",
+          "As adequate, and the frames differ in person or moment so they would lead to different responses, with a note on which marked assumption matters most.",
+        ],
+        remediation:
+          "Take the frame that names a feature, delete the feature word and write what the person needs to have happen instead. Then underline every detail the brief did not give and put (assumed) after it.",
+        recheck: "The rewritten frame beside the original, with each added detail marked (assumed).",
+      },
+      {
+        criterion: "A way to reduce uncertainty",
+        evidence:
+          "Six assumptions with consequence and confidence, two priorities chosen because being wrong costs most and the evidence is thinnest, and for each priority something a person could say or do that would change your mind.",
+        levels: [
+          "No priorities, or nothing named that could change your mind.",
+          "Priorities are chosen for ease or interest, or the evidence line is a feeling (“people would like it”) rather than something observable.",
+          "Two priorities justified by consequence and uncertainty, each with a concrete observation that would disprove it.",
+          "As adequate, and the write-up compares the cost of being wrong for two assumptions and says what you would do differently under each answer.",
+        ],
+        remediation:
+          "For each priority write two lines: “If this is wrong, then…” and “I would change my mind if I saw…”. Swap any priority whose consequence line turns out to be trivial.",
+        recheck: "The two priorities with their consequence and disconfirming-evidence lines.",
+      },
+      {
+        criterion: "Alternatives compared against constraints",
+        evidence:
+          "Three responses that differ in kind — for example one information change, one process change and one interface change — each with a constraint it must respect and a weakness you would say to the organiser.",
+        levels: [
+          "Fewer than two responses, or none has a constraint.",
+          "Three responses that are variations of one idea (three ways to send the same list), or constraints and weaknesses are missing or vague.",
+          "Three responses that differ in kind, each with a stated constraint and an honest weakness.",
+          "As adequate, and the decision says which constraint rules a response in or out, and what would make you revisit the response you set aside.",
+        ],
+        remediation:
+          "Check whether two responses would fail for the same reason. If they would, replace one with a change in a different place — what people are told, what the studio does or what a screen shows — and give it a constraint and a weakness.",
+        recheck: "The three responses with their constraint and weakness lines, and one sentence on why they cannot all fail for the same reason.",
+      },
+    ] satisfies Criterion[],
     portfolio: "Keep the decision log as early reasoning evidence.",
     resource: {
       title: "Design Council: the Double Diamond",
@@ -160,7 +210,7 @@ const week1 = [
     },
     explanation: [
       "A useful frame describes a person, situation, unmet goal, and consequence. “Attendees need to know what to bring before leaving home” leaves room for alternatives. “Attendees need a checkbox” already chooses a feature.",
-      "A stakeholder report is a lead, not proof of frequency or cause. Assumptions are not necessarily false; they are claims that still need checking. Write what would change your mind.",
+      "A stakeholder report is a lead, not proof of frequency or cause. Assumptions are not necessarily false; they are claims that still need checking. Write what would change your mind. Details you add to make a frame concrete — when it happens, who it happens to, what it costs — are assumptions too: mark them (assumed) so they are checked rather than quietly believed.",
       "Expand options before narrowing them. Discover and define focus on understanding the problem; develop and deliver focus on responses. These are modes of work, not mandatory one-way stages.",
       "Distinguish constraints such as time or device access from preferences. Investigate assumptions that combine weak evidence with serious consequences if wrong.",
     ],
@@ -174,6 +224,7 @@ const week1 = [
     ],
     repairs: [
       "If the frame prescribes a feature, remove it and state the unmet goal.",
+      "If a frame states a detail the brief never gave, mark it (assumed) and add it to your assumptions.",
       "If the priority has no rationale, compare the cost of being wrong for two assumptions.",
       "If nothing could change your mind, add one concrete disconfirming observation.",
     ],
@@ -182,7 +233,7 @@ const week1 = [
         minutes: 20,
         title: "Review",
         instructions: [
-          "Read your earlier notes.",
+          "Read your earlier notes, or the practice brief if you have none.",
           "Mark explanations you have not verified.",
         ],
       },
@@ -192,6 +243,7 @@ const week1 = [
         instructions: [
           "Write three person–situation–goal–consequence statements about workshop attendance.",
           "Remove feature names such as checkbox or reminder.",
+          "Put (assumed) after any detail the brief or your evidence does not state.",
         ],
       },
       {
@@ -229,16 +281,21 @@ const week1 = [
     teach: [
       "A research question states an uncertainty; an interview question starts a conversation.",
       "Ask about a recent experience instead of predicting future behavior.",
-      "Explain consent and note use before beginning; ask permission before recording.",
+      "Before beginning, explain what the notes are for, who will read them and when they will be deleted; ask permission before recording.",
       "One conversation cannot establish how common a behavior is.",
     ],
     example:
-      "Replace “Was checkout confusing because the button was hidden?” with “What happened when you tried to finish?” Then ask what the person expected.",
+      "Made-up example: replace “Was checkout confusing because the button was hidden?” with “What happened when you tried to finish?” Then ask what the person expected.",
     check: [
       {
         question: "What if no participant is available?",
         answer:
-          "Improve the guide and arrange a later conversation. Mark evidence missing rather than inventing findings.",
+          "Improve the guide and arrange a later conversation. Mark evidence missing rather than inventing findings. A rehearsal with the guide, the consent wording and what you learned reading it aloud is a complete result for this lesson.",
+      },
+      {
+        question: "Your notes have no names in them. Are they anonymous?",
+        answer:
+          "Not necessarily. A job, a street or an unusual event can identify someone. Type only a de-identified summary into the course, and keep raw notes private with a date to delete them.",
       },
     ],
     rubric: [
@@ -246,6 +303,50 @@ const week1 = [
       "Neutral questions about experience",
       "Consent and limitations explicit",
     ],
+    criteria: [
+      {
+        criterion: "Questions address uncertainty",
+        evidence:
+          "A one-sentence purpose and an uncertainty carried from Lesson 2, with six questions that each connect to it, so a reader could say which decision the answers would inform.",
+        levels: [
+          "No uncertainty is named, or the questions are unrelated to it.",
+          "An uncertainty is named, but several questions drift to general opinions or to the feature you already have in mind.",
+          "Every question connects to the named uncertainty, and the purpose says what the answers could change.",
+          "As adequate, and the guide cuts or reorders a question with a stated reason, such as one whose answer could not change the decision.",
+        ],
+        remediation:
+          "Beside each question, write which part of the uncertainty it serves. Cut or rewrite any question that serves none.",
+        recheck: "The six questions, each with its link to the uncertainty.",
+      },
+      {
+        criterion: "Neutral questions about experience",
+        evidence:
+          "Six open questions about a specific recent occasion and two follow-ups that work after any answer; none names a feature, asks for a prediction or contains the answer you hope for.",
+        levels: [
+          "Questions ask people to judge or predict, such as “Would you use…?”.",
+          "Most questions ask about the past, but one or two still lead (“Was it confusing?”) or name your idea.",
+          "All questions ask about a recent real occasion without naming your idea, and the follow-ups are neutral.",
+          "As adequate, and the weakest question is shown before and after, with the reason the rewrite steers less.",
+        ],
+        remediation:
+          "Read the questions aloud. Rewrite any that names a feature, asks “would you…”, or contains the word you hope to hear, starting from “Tell me about the last time…”.",
+        recheck: "The weakest question before and after the rewrite.",
+      },
+      {
+        criterion: "Consent and limitations explicit",
+        evidence:
+          "Consent wording that says what the notes are for, who will read them, when they will be deleted, that the person can skip or stop, and whether anything is recorded; a session status that matches what happened; and either a de-identified summary of a real conversation or, on the rehearsal route, the status “Rehearsal only” with the participant boxes left empty.",
+        levels: [
+          "No consent wording, or the notes contain names or identifying details, or a rehearsal is presented as a conversation.",
+          "Consent wording leaves out who reads the notes, when they are deleted or the right to stop, or the session status is unclear.",
+          "Complete consent wording and a status that matches what happened: a real conversation appears only as a de-identified summary, and a rehearsal leaves the participant boxes empty.",
+          "As adequate, and the limits are stated plainly: one conversation cannot show how common anything is, and a rehearsal tests the guide rather than anyone’s experience.",
+        ],
+        remediation:
+          "Add any missing consent element — purpose, who reads the notes, deletion date, the right to stop, recording. Then check the status: if nobody consented, choose rehearsal and empty the participant boxes.",
+        recheck: "The consent introduction and the session status, with the participant boxes matching the status.",
+      },
+    ] satisfies Criterion[],
     portfolio: "Count research findings only when actually collected.",
     resource: {
       title: "GOV.UK: using in-depth interviews",
@@ -255,7 +356,7 @@ const week1 = [
     explanation: [
       "Begin with the uncertainty an interview should reduce. A research question guides your study; a participant question is the plain-language prompt used in conversation.",
       "Ask about a recent specific experience. “Tell me about your last class booking” invites an account of behavior. “Would you use our helpful reminder?” invites prediction and agreement. Follow up without supplying the answer.",
-      "Explain the purpose, voluntary participation, and use of notes. Ask permission before recording. Avoid unnecessary identifying data and do not paste private research into AI tools.",
+      "Explain the purpose, voluntary participation, who will read the notes and when they will be deleted. Ask permission before recording. Avoid unnecessary identifying data and do not paste private research into AI tools. Keep raw notes on paper or in a private file with a deletion date, and type only a de-identified summary into the course: removing a name does not make notes anonymous, because a job, a street or an unusual event can still identify someone. Keep practice to adults and everyday topics; anything involving health or children needs qualified review first.",
       "One conversation does not establish prevalence. Separate quotations from interpretations. Label role-play as practice; never invent participants or findings when someone is unavailable.",
     ],
     prerequisite:
@@ -293,8 +394,9 @@ const week1 = [
         minutes: 35,
         title: "Practice",
         instructions: [
-          "With consent, hold a 15-minute practice conversation.",
+          "With consent, hold a 15-minute practice conversation with an adult about an everyday booking; keep away from health or other sensitive topics.",
           "If nobody is available, rehearse the guide and mark “No participant evidence collected.”",
+          "Keep raw notes on paper or in a private file with a deletion date; type only a de-identified summary here.",
           "Exclude identifying details and private research from AI tools.",
         ],
       },
@@ -325,10 +427,10 @@ const week1 = [
       "A task flow connects a trigger, actions, decisions and an outcome.",
       "Every failure needs an explanation and a next action.",
       "Group and label information using the visitor’s task language.",
-      "Show price and preparation requirements before commitment.",
+      "Show price and preparation requirements before commitment, so nobody promises a place before knowing what it costs and what to bring.",
     ],
     example:
-      "Workshop full → explain availability → offer another date. A payment timeout should distinguish checking status from confirmed failure to reduce accidental repeat payments.",
+      "Made-up example: workshop full → explain availability → offer another date. A payment timeout should distinguish checking status from confirmed failure to reduce accidental repeat payments.",
     check: [
       {
         question: "What is missing from a list of screens?",
@@ -341,6 +443,50 @@ const week1 = [
       "Three recoverable exceptions",
       "Prerequisites before commitment",
     ],
+    criteria: [
+      {
+        criterion: "Clear primary outcome",
+        evidence:
+          "A trigger written from the person’s side, an outcome stating what is true for the person at the end rather than which screen shows, and a list of what they need to know before committing.",
+        levels: [
+          "No outcome, or the outcome is a screen name such as “Confirmation page”.",
+          "An outcome exists but is vague or system-centred, or the information list leaves out price, date and time, or what to bring.",
+          "A trigger, a person-centred outcome and a complete before-commitment list.",
+          "As adequate, and the outcome is used to judge the branches: a failure counts as handled only if the person can still reach the outcome or leave knowing where they stand.",
+        ],
+        remediation:
+          "Rewrite the outcome as “She has … and knows …”. Then check the information list against price, date and time, what to bring, the refund rule and places left.",
+        recheck: "The rewritten outcome and the completed information list.",
+      },
+      {
+        criterion: "Three recoverable exceptions",
+        evidence:
+          "Branches for a full workshop, invalid input and an interrupted confirmation, each with a message saying what happened and a next action the person can take; the interrupted branch treats the result as unknown rather than failed.",
+        levels: [
+          "No failure branches.",
+          "Branches exist, but at least one ends in a message only — a dead end — or the interrupted branch tells the person it failed.",
+          "Three branches, each with a message and a next action the person takes, entered values kept, and an unknown-state message for the interruption.",
+          "As adequate, and the walkthrough found and repaired a dead end, with the cost of the repair noted.",
+        ],
+        remediation:
+          "For each failure, finish the sentence “Next, the person can…”. Any branch where the only answer is “read a message” needs a real action added.",
+        recheck: "The three failure branches with their next actions.",
+      },
+      {
+        criterion: "Prerequisites before commitment",
+        evidence:
+          "On the successful path, price, date and what to bring appear before the Reserve arrow, and every arrow is labelled with the action that causes the move.",
+        levels: [
+          "No path, or a list of screen names with unlabelled arrows.",
+          "A path exists, but required information appears after Reserve or at payment, or some arrows carry no action.",
+          "Required information sits before Reserve and every arrow carries an action.",
+          "As adequate, and the flow notes an assumption about when people look for this information and how it could be checked.",
+        ],
+        remediation:
+          "Trace the path with a finger and stop at Reserve. Anything the person needs that appears after that point moves before it; label every arrow that has no action.",
+        recheck: "The redrawn successful path with the moved information and labelled arrows.",
+      },
+    ] satisfies Criterion[],
     portfolio: "Early untested flow evidence for the practice project.",
     resource: {
       title: "Design Council: the Double Diamond",
@@ -418,11 +564,11 @@ const week1 = [
     teach: [
       "Hierarchy helps someone make the next decision.",
       "Responsive layouts reflow content instead of shrinking it.",
-      "Persistent labels, clear errors and logical reading order support access.",
+      "Persistent labels, clear errors and a logical order support access. Reading order covers everything; Tab order covers controls only, and a hint is tied to its field rather than given a Tab stop.",
       "Mockups specify accessibility intent; runtime tests verify implemented behavior.",
     ],
     example:
-      "The Email label stays visible after typing. The materials summary stays before Reserve on mobile instead of disappearing into a desktop sidebar.",
+      "Made-up example: the Email label stays visible after typing, and the note explaining why the address is wanted is read before the field and tied to it, with no Tab stop of its own. The materials summary stays before Reserve on mobile instead of disappearing into a desktop sidebar.",
     check: [
       {
         question: "Does a mockup prove keyboard accessibility?",
@@ -433,6 +579,11 @@ const week1 = [
         answer:
           "It identifies the value after typing, when a placeholder is no longer visible.",
       },
+      {
+        question: "Should a hint beside a field get its own Tab stop?",
+        answer:
+          "No. Tab moves between controls only. Place the hint before its field in reading order and tie it to the field, so a screen reader reads it out when the field receives focus.",
+      },
     ],
     rubric: [
       "Task-based hierarchy",
@@ -440,6 +591,64 @@ const week1 = [
       "Labels and recovery",
       "Evidence-bounded accessibility claims",
     ],
+    criteria: [
+      {
+        criterion: "Task-based hierarchy",
+        evidence:
+          "Details and reservation screens at narrow and wide widths, listed top to bottom, with date, price and what to bring above Reserve and reassurance such as photographs below the decision.",
+        levels: [
+          "No screens, or an order that follows looks rather than the decision.",
+          "Screens exist, but price or what to bring sits below Reserve at one width, or the order is unexplained.",
+          "At both widths, everything the decision needs sits above Reserve, in an order tied to that decision.",
+          "As adequate, and the trade-off is named — for example a less striking page in exchange for no scrolling back and forth.",
+        ],
+        remediation:
+          "Ask what the person must decide on this screen, then reorder the narrow version so everything that decision needs comes before Reserve.",
+        recheck: "The reordered narrow screen, listed top to bottom.",
+      },
+      {
+        criterion: "Explained responsive behavior",
+        evidence:
+          "A note saying what stacks, wraps, stays visible and moves between wide and narrow, with content reflowing at a readable size rather than shrinking, and what changed when a label got longer or text larger.",
+        levels: [
+          "Only one width, or the narrow version is the wide one scaled down.",
+          "Both widths exist, but the change between them is not explained, or longer text was not tried.",
+          "Stacking and wrapping are explained, content keeps its size, and the longer-label result is recorded.",
+          "As adequate, and a collision found by the longer-label test was repaired without shrinking text, with the reason.",
+        ],
+        remediation:
+          "Write three lines: what stacks, what wraps, and what stays above Reserve. Then lengthen one label on the sketch and record what it collides with.",
+        recheck: "The stacking note and the longer-label result.",
+      },
+      {
+        criterion: "Labels and recovery",
+        evidence:
+          "Visible labels that stay while typing; an error state that says in words what is wrong and how to fix it while keeping typed values; and an order annotation that separates reading order (everything, in sequence), Tab order (controls only) and hints tied to their fields.",
+        levels: [
+          "Placeholder-only labels, no error state, or no order annotation.",
+          "Labels and an error exist, but the error clears the form or relies on colour alone, or the annotation treats reading order and Tab order as one list or gives hint text a Tab stop.",
+          "Persistent labels, a worded error that keeps typed values, and separate reading and Tab orders with each hint tied to its field.",
+          "As adequate, and the annotation explains why each hint must arrive before its field and what a builder has to do to tie it.",
+        ],
+        remediation:
+          "Rewrite the order annotation as two lists — reading order first, then Tab stops (fields, buttons and links only) — and mark each hint as tied to its field. Then check that the error names the problem in words and keeps what was typed.",
+        recheck: "The two order lists and the revised error state.",
+      },
+      {
+        criterion: "Evidence-bounded accessibility claims",
+        evidence:
+          "No annotation claims the screens are accessible; a list names the keyboard and screen-reader checks that need a built version, such as the Tab order and whether tied hints and errors are read out.",
+        levels: [
+          "The work claims the design is accessible, or names no checks.",
+          "Checks are listed only vaguely (“test accessibility”), or one sentence still claims a result from the sketch.",
+          "Specific checks still needed are listed, and nothing claims a result from a drawing.",
+          "As adequate, and each check says what would count as a failure — for example Tab stopping on the hint, or an error not being read out.",
+        ],
+        remediation:
+          "Replace any sentence saying the screens are accessible with the specific check that would show it, written as still to do.",
+        recheck: "The list of checks that still need a built version.",
+      },
+    ] satisfies Criterion[],
     portfolio: "Creator review is required before portfolio-ready claims.",
     resource: {
       title: "W3C: introduction to web accessibility",
@@ -450,13 +659,14 @@ const week1 = [
       "Hierarchy expresses what matters for the next decision. Size, spacing, grouping, language, and contrast work together. Do not rely on color alone for essential meaning.",
       "Responsive design means reflow and priority, not shrinking a desktop layout. Explain what stacks, wraps, stays visible, and moves. Longer labels and larger text reveal hidden assumptions.",
       "Accessibility concerns whether people can perceive, understand, navigate, and operate the experience. A mockup can specify labels and focus order; implemented keyboard and screen-reader behavior require runtime testing.",
+      "Three orders are easy to confuse. Reading order is everything a screen reader reads, text included, as someone moves down the page. Focus order is the shorter list of controls — fields, buttons, links — that the Tab key visits. A hint beside a field is not a control, so it gets no Tab stop. Place it before the field so anyone reading down the page meets it first, and note that the builder must tie it to the field so a screen reader reads it out when that field receives focus; someone tabbing straight to the field would otherwise usually not hear it.",
       "Use persistent input labels, plain instructions, nearby error messages, and a logical reading order. Explain how to correct an error and retain entered values. Record what you checked and what remains untested.",
     ],
     prerequisite:
       "Bring Lesson 4’s flow. Use paper or a familiar tool; no new software is required.",
     outputs: [
       "Details and reservation screens at narrow and wide widths",
-      "Reading order, labels, recovery and stacking annotations",
+      "Reading order, Tab order, labels, recovery and stacking annotations",
       "One error state",
       "An unresolved issue for review",
     ],
@@ -464,6 +674,7 @@ const week1 = [
       "If the next action is hard to find, reorder information around the task.",
       "If mobile is just a smaller desktop, show what stacks and wraps.",
       "If an error has no recovery, add corrective text and retained input.",
+      "If reading order and Tab order are one list, or a hint has its own Tab stop, separate them and tie the hint to its field.",
       "Replace any accessibility pass claim with the specific checks performed and still needed.",
     ],
     steps: [
@@ -488,7 +699,8 @@ const week1 = [
         minutes: 25,
         title: "Specify",
         instructions: [
-          "Annotate persistent labels, reading/focus order and stacking.",
+          "Annotate persistent labels, stacking, reading order and Tab order (controls only).",
+          "Mark each hint as tied to its field, not given a Tab stop of its own.",
           "Explain how errors retain input and can be corrected.",
           "List keyboard and screen-reader checks that need implementation.",
         ],
@@ -538,6 +750,50 @@ const week1 = [
       "Repair addresses the issue",
       "Limitations preserved",
     ],
+    criteria: [
+      {
+        criterion: "Task-impact priority",
+        evidence:
+          "One chosen weak point written as something anyone could point to, what it stops the person doing, where the evidence came from (your walkthrough, a heuristic or a participant) and what remains uncertain.",
+        levels: [
+          "No critique, or a critique of taste only (“feels dated”).",
+          "An observation is named, but its effect on the task is missing, or a guess about other people is written as observed.",
+          "A specific observation, its effect on the task, a labelled source and an honest uncertainty.",
+          "As adequate, and the choice is justified against another candidate weakness: why this one blocks the task more.",
+        ],
+        remediation:
+          "Rewrite the critique as “On [screen], [what you can point to], so the person cannot [task].” Label the source, and move any claim about people to inferred.",
+        recheck: "The rewritten critique with its source label.",
+      },
+      {
+        criterion: "Repair addresses the issue",
+        evidence:
+          "An untouched original kept where it can be found, and one bounded change that answers the named concern while everything else stays as it was.",
+        levels: [
+          "No repair, or the original was overwritten.",
+          "A repair exists, but it changes several things at once or does not touch the named concern.",
+          "One bounded change that answers the concern, with the original kept for comparison.",
+          "As adequate, and the write-up names what the repair deliberately left alone, and why.",
+        ],
+        remediation:
+          "List every difference between the two versions. Undo any that do not serve the named concern, or relabel the work honestly as a redesign rather than a bounded repair.",
+        recheck: "The before and after versions, with their single difference named.",
+      },
+      {
+        criterion: "Limitations preserved",
+        evidence:
+          "The record calls the repair untested, says what it cannot prove, and names an observation — a person, a task and what you would watch for — that could show it did not help.",
+        levels: [
+          "The repair is described as fixing the problem.",
+          "Limitations are mentioned only vaguely, or the check cannot fail (“it looks clearer”).",
+          "The repair is called untested, and the check names who would do what and what would count as not helping.",
+          "As adequate, and the record notes a way the repair could make something else harder, with how you would watch for it.",
+        ],
+        remediation:
+          "Finish the sentence “This repair would be shown not to help if…”, and replace any claim that the problem is fixed.",
+        recheck: "The limitations box and the check.",
+      },
+    ] satisfies Criterion[],
     portfolio: "Potential iteration evidence with an honest explanation.",
     resource: {
       title: "W3C: introduction to web accessibility",
@@ -629,6 +885,50 @@ const week1 = [
       "Evidence-matched claims",
       "Gap-based next steps",
     ],
+    criteria: [
+      {
+        criterion: "Clear choice and alternative",
+        evidence:
+          "A one-page note naming the decision, at least one alternative genuinely considered with the reason it was set aside, and the trade-off the choice carries.",
+        levels: [
+          "No decision named, or the note only describes what was built.",
+          "A choice is stated, but there is no real alternative, or the alternative has no reason for being set aside.",
+          "A choice, one serious alternative with its reason, and an honest trade-off.",
+          "As adequate, and the note says what evidence would make you switch to the alternative.",
+        ],
+        remediation:
+          "Add one alternative you genuinely considered and finish the sentence “I set it aside because…”. Then write what the choice made worse.",
+        recheck: "The options, choice and trade-off sections.",
+      },
+      {
+        criterion: "Evidence-matched claims",
+        evidence:
+          "Every claim carries a source label — observed, reported by a participant, assumed, or an explicit preference — and no sentence states an outcome nobody has observed. Your own walkthrough and labelled assumptions are enough evidence for this lesson if you have had no participant.",
+        levels: [
+          "Claims of results, or “research showed”, with nothing behind them.",
+          "Most claims are labelled, but one states an unobserved outcome or turns one conversation into “research”.",
+          "All claims labelled, outcomes written as expectations with a check, and thin evidence acknowledged — even when the only evidence is your own walkthrough.",
+          "As adequate, and the spoken run-through found an unsupported word such as “intuitive”, with the note showing how it was repaired.",
+        ],
+        remediation:
+          "Mark each sentence observed, reported, assumed or preference. Rewrite any outcome claim as “I expect… and I would check by…”.",
+        recheck: "The evidence and choice sections with their source labels.",
+      },
+      {
+        criterion: "Gap-based next steps",
+        evidence:
+          "One strength you can point to evidence for, two gaps a reviewer would ask about rather than a wish list, one repair small enough for one sitting, and a next learning action.",
+        levels: [
+          "No gaps or next action.",
+          "The gaps are wishes (“add more screens”), or the repair is too large for one sitting.",
+          "Two honest gaps tied to criteria you cannot yet evidence, a bounded repair and a next action.",
+          "As adequate, and the next action is chosen by which gap matters most, with the reason.",
+        ],
+        remediation:
+          "Look at the review criteria you could not evidence; those are your gaps. Cut the repair until it fits one sitting.",
+        recheck: "The strength, the two gaps, the repair and the next action.",
+      },
+    ] satisfies Criterion[],
     portfolio: "Rehearsal for a future case-study presentation.",
     resource: {
       title: "Design Council: the Double Diamond",
