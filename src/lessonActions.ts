@@ -3,9 +3,10 @@ import type { LessonAction } from './lessonOneFlow';
 import { actionPlans, type ActionPlan } from './moduleActionPlans';
 import { lessonOneCriteria, lessonOneQuestions, lessonOneTransfer } from './lessonOneFlow';
 
-const conditional: Record<string, {field:string; value:string; answers:string[]}[]> = {
+const conditional: Record<string, {field:string; value:string|string[]; answers:string[]}[]> = {
+ 'week2-day1-v1': [{field:'access-status',value:['Asked, waiting for a reply','Nobody available: rehearsal only'],answers:['access-gap']}],
  'week1-day3-v1': [{field:'session-status',value:'Real conversation with a consenting adult',answers:['observations','interpretations']}],
- 'week2-day5-v1': [{field:'session-status',value:'A consenting adult is taking part',answers:['consent-confirmed']}],
+ 'week2-day5-v1': [{field:'session-status',value:'A consenting adult is taking part',answers:['consent-confirmed','help-given']}],
  'm05-l06-v1': [{field:'session-status',value:'A consented interview took place',answers:['said']}],
  'm05-l07-v1': [{field:'session-status',value:'A consented observation took place',answers:['actions','environment','workarounds','unsaid-1','unsaid-2','unsaid-3']}],
  'm05-l08-v1': [{field:'run-status',value:'No participant: protocol submitted with a dated gap',answers:['gap-note']}],
@@ -59,7 +60,7 @@ export function withLessonActions(input: Lesson): Lesson {
  const field = (f: WorksheetField): WorksheetField => {
    const rule=conditional[input.id]?.find(c=>c.answers.includes(f.id));
    return {...f, ...(plan.optional?.includes(f.id) ? {optional:true} : {}),
-     ...(rule ? {requiredWhen:{field:rule.field,values:[rule.value]}} : {}),
+     ...(rule ? {requiredWhen:{field:rule.field,values:Array.isArray(rule.value)?rule.value:[rule.value]}} : {}),
      ...(/photo-reference|sheet-reference|state-table-reference/.test(f.id) ? {hint:'Write a file location, or describe where you keep the paper version. A photo is optional; nothing is uploaded here.'} : {}),
      ...(input.id==='m05-l02-v1' && f.id==='will-run' ? {label:'The two feasible methods for your next study'} : {}),
      ...(input.id==='m05-l06-v1' && ['inferred','worked','failed','wish-asked','reconstructed'].includes(f.id) ? {hint:'After a real interview, write a de-identified summary (codes such as P1, no names); raw notes stay in your private file. For rehearsal, describe only your guide wording, where you stumbled and what you would revise. Label it rehearsal; do not invent a participant response. If nothing failed or was reconstructed, say so.'} : {}),
@@ -84,7 +85,7 @@ export function withLessonActions(input: Lesson): Lesson {
  input.teach.forEach((text,index)=>flow.push({id:`learn-${index+1}`,section:'learn',step:1,kind:'teach',index,title:beginner?shortTitle(text,index):`Understand the idea · ${index+1}`,instruction:text}));
  flow.push({id:'worked-example',section:'learn',step:1,kind:'teach',title:beginner?'See the idea in a supplied example':'Connect the idea to an example',instruction:beginner?'Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.':'Illustrative teaching example. This is not research you conducted or evidence about your own design.',body:[input.example]});
  flow.push({id:'workspace',section:'learn',step:1,kind:'setup',title:beginner?'Choose where you will do the work':'Get your practice ready',instruction:plan.start,body:['Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.']});
- if(plan.material)flow.push({id:'supplied-material',section:'learn',step:1,kind:'teach',title:'Keep these source notes beside you',instruction:'Use your own consented notes, or the labelled training notes below. Do not mix their source labels.',body:plan.material});
+ if(plan.material)flow.push({id:'supplied-material',section:'learn',step:1,kind:'teach',title:'Keep these source notes beside you',instruction:input.id==='week1-day2-v1'?'Use your own Lesson 1 evidence, or the practice brief below. Anything it does not state is an assumption.':'Use your own consented, de-identified notes, or the labelled training notes below. Do not mix their source labels.',body:plan.material});
  const fields=a.worksheet!.flatMap(s=>s.fields);
  function step(index:number,section:LessonAction['section']) {
    const g=a.guide![index];

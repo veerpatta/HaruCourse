@@ -44,7 +44,7 @@ export const numbered = (
 // The last field of the last section on every refined lesson, by contract.
 export const improvementMade: WorksheetField = {
   id: 'improvement-made',
-  label: 'What you changed after the Check questions',
+  label: 'What you changed after the Check questions, or why no change was needed',
   kind: 'long',
   hint: 'The Check section sends you back to one specific answer. Write which one you changed and why.',
 };

@@ -95,9 +95,9 @@ const detectiveChecks: ActiveCheck[] = [
   {
     question: 'A friend says: “The fix is obvious — make the Reserve button bigger.” Is that a problem statement?',
     options: [
-      { label: 'No. It names a repair before saying who is stuck and how anyone would know.', correct: true, feedback: 'It may even be the right repair, but it skips the part that tells you whether it is: who struggled, with what task, and what you saw.' },
-      { label: 'Yes, because a small button is a real usability problem.', feedback: 'Size might be the cause, or the price might be unclear, or the date might be missing. A problem statement names the person and the difficulty, so more than one repair can compete.' },
-      { label: 'Yes, as long as you tested the bigger button afterwards.', feedback: 'Testing a repair only tells you whether that repair worked. It cannot tell you what people were actually struggling with, because you never wrote it down.' },
+      { label: 'It names a fix before saying who is stuck or what shows it.', was: ['No. It names a repair before saying who is stuck and how anyone would know.'], correct: true, feedback: 'It may even be the right repair, but it skips the part that tells you whether it is: who struggled, with what task, and what you saw.' },
+      { label: 'It is, because a small button is a real usability problem.', was: ['Yes, because a small button is a real usability problem.'], feedback: 'Size might be the cause, or the price might be unclear, or the date might be missing. A problem statement names the person and the difficulty, so more than one repair can compete.' },
+      { label: 'It is, provided the bigger button gets tested afterwards.', was: ['Yes, as long as you tested the bigger button afterwards.'], feedback: 'Testing a repair only tells you whether that repair worked. It cannot tell you what people were actually struggling with, because you never wrote it down.' },
     ],
     repair: 'Reread your user goal in step 3. If it names a screen, a button or a page, rewrite it as something the person needs to have happen, then note the change in step 5.',
     recheck: 'The user goal reads as an outcome for a person, and your two improvements are still ways of reaching it rather than the goal itself.',
