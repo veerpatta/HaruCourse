@@ -1808,7 +1808,7 @@ export const activities: Record<string, Activity> = {
     mission: 'Arrange the same content at narrow, middle and wide widths. Decide where the structure must change because content no longer fits.',
     columns: 'Width | Columns | Outer margin | Gap | Content failure | Structural change | Reading order',
     first: '[width and unit] | [count] | [value] | [value] | [what stops working] | [your response] | [sequence]',
-    hints: ['Use the spacing scale, but let content failure explain the change point.', 'Paper frames model layout intent; mark real browser behavior as untested unless you actually resize a working page.'],
+    hints: ['Use the spacing scale, but let content failure explain the change point.', 'Paper frames specify layout intent and cannot reflow. Watch real reflow and clipping in the lesson demo or a real page, and mark your own layout’s browser behavior as untested until a working page is resized.'],
     adequate: 'Three layouts preserve task priority and explain content-driven changes rather than merely shrinking everything.',
     handoff: 'Add grid decisions and their limits to the token documentation.'
   },
@@ -1874,7 +1874,7 @@ export const activities: Record<string, Activity> = {
     activity: 'Error recovery workshop', visual: true,
     mission: 'Classify failures as slips or mistakes, rewrite blameful messages and design prevention plus recovery for one of each.',
     columns: 'Failure / source | Intended action | Slip / mistake and why | Prevention | Recovery message | Next action',
-    first: '[observed failure or hypothetical scenario] | [intent] | [reasoning] | [design] | [your text] | [action]',
+    first: '[observed failure (code, no name) or practice note F1–F4] | [intent] | [reasoning] | [design] | [your text] | [action]',
     hints: ['Do not infer intent from a click alone. Mark uncertain classifications.', 'A useful message explains the issue and a recoverable next step without blaming the person.'],
     adequate: 'Prevention and recovery respond to different failure causes and preserve useful user input where possible.',
     handoff: 'Use a recovery decision as a test case for the UX-law counterexample exercise.'
@@ -1894,7 +1894,7 @@ export const activities: Record<string, Activity> = {
     activity: 'Request translation studio',
     mission: 'Translate feature requests into needs that allow several solutions. Use your existing requests and label supplied or invented practice requests as hypothetical.',
     columns: 'Request / source | Person | Situation | Needed outcome | Evidence status | Alternative responses',
-    first: '[request] | [person] | [context] | [need without feature] | [real / hypothesis] | [options]',
+    first: '[request] | [role or code, no name] | [context] | [need without feature] | [real / practice / hypothesis] | [options]',
     hints: ['A need statement describes what someone must accomplish, not the control they asked for.', 'Keep the original request beside the translation so you can explain what changed.'],
     adequate: 'Needs retain the person’s goal while allowing different responses and exposing evidence gaps.',
     handoff: 'Bring the needs and alternatives into value-under-constraint decisions.'
