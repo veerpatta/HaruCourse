@@ -948,7 +948,7 @@ export const module18: Lesson[] = [
     rubric: [
       "Structure and flow precede interface",
       "System mismatches are recorded",
-      "An exception table covers the domain's real failures",
+      "An exception table covers the domain's real failures, including who may see what",
       "Skipped methods are listed with reasons",
     ],
     criteria: [
@@ -982,17 +982,17 @@ export const module18: Lesson[] = [
       },
       {
         criterion:
-          "An exception table covers the domain's real failures",
+          "An exception table covers the domain's real failures, including who may see what",
         evidence:
-          "A table with the domain's specific failures, not generic ones.",
+          "A table with the domain's specific failures, not generic ones, and a written rule that one person can never see another person's record.",
         levels: [
           "No table.",
-          "Generic failures copied from the earlier project.",
-          "Domain-specific failures with wording.",
+          "Generic failures copied from the earlier project, or no rule about who may see what.",
+          "Domain-specific failures with wording, and the access rule with its rows.",
           "As adequate, and one failure came from something a participant described.",
         ],
         remediation:
-          "Walk the flow asking what could go wrong in this shop, not in general.",
+          "Walk the flow asking what could go wrong in this shop, not in general, and what a mistyped or neighbouring reference would show.",
         recheck: "The exception table.",
       },
       {
@@ -1013,7 +1013,7 @@ export const module18: Lesson[] = [
     repairs: [
       "If screens came first, draw the flow and reconcile.",
       "If mismatches were absorbed, record them and decide each.",
-      "If the exception table is generic, rebuild it from this domain.",
+      "If the exception table is generic or silent on who may see what, rebuild it from this domain.",
       "If skips are unrecorded, list them with honest reasons.",
     ],
     portfolio:
@@ -1052,41 +1052,42 @@ export const module18: Lesson[] = [
     guided: true,
     title: "Build it, test it, repair it",
     objective:
-      "Build a working prototype, test it with at least three people including one who was not part of the research, repair the highest-harm problem and re-test it.",
-    bringForward: "Your designs, states and exception table.",
-    prerequisite: "Your designs and access to participants.",
+      "Build a prototype with made-up records only, test it — with three people including one outside the research, or on your honest route — repair the highest-harm problem, re-test it, and run the privacy and access-control stop gate.",
+    bringForward: "Your designs, states, exception table and access rule.",
+    prerequisite: "Your designs, and testers or a stated self-pilot route.",
     why: "The loop from build to test to repair is the whole of practical design, and doing it once more alone is what makes it a capability rather than a memory.",
     teach: [
       "Build what the question needs, at the lowest fidelity that answers it.",
       "Test with someone outside the research, who brings no context.",
       "Rank by harm, repair one thing, predict, re-test.",
-      "Report the failed repair as readily as the successful one.",
-      "Record the conditions: device, connection, setting.",
+      "Use made-up records only, and run the stop gate before any real person relies on it.",
+      "Record the conditions, and report the failed repair as readily as the successful one.",
     ],
     explanation: [
       "The build should serve the questions still open. For a status page, that is usually a running page with real timing, because the questions are about whether people understand a state and whether they would still ring. Paper cannot answer either.",
       "Testing with someone outside the research matters here because your participants now share your framing. A fresh person meets the design as a stranger would, and the difference between the two groups is frequently the finding.",
       "The repair loop is the m10 discipline: rank by harm, change one thing, write the prediction, re-test with someone new, and report the result whatever it is. A failed repair in a portfolio project is more convincing than a success, because it shows the loop was real.",
-      "Conditions belong in the record. A status page tested on a laptop in a quiet room proves less than one tested on a customer's phone outside a shop, and stating which you did is what lets a reader weigh the result.",
+      "Conditions belong in the record. A status page tested on a laptop in a quiet room proves less than one tested on a customer's phone outside a shop, and stating which you did is what lets a reader weigh the result. With nobody outside the research available, a self-pilot — you walking the tasks cold after a break — is allowed if it is labelled self-pilot; it is never reported as testing with other people.",
+      "The privacy and access-control stop gate comes before any real use. Using made-up (synthetic) records only, try to reach another customer's record: type a neighbouring job number, a mistyped one, open a link meant for someone else, and read the file's source. If any of those shows another person's job, the gate has not passed, and the prototype stays a local demonstration with made-up records. A single HTML file that contains every job cannot pass, because anybody holding the file can read every record in it. Making a version that passes needs a properly built system and is outside a design prototype's job; say so rather than shipping it.",
     ],
     misconception:
-      "“I will test it with the people I interviewed.” They will do well, because they helped you build the framing. Include at least one person who has never heard of the project.",
+      "“It works in testing, so the shop can start using it.” A prototype that holds every job in one file can pass every usability test and still show one customer another customer's repair. Testing tells you whether people understand it; the stop gate tells you whether it is safe for real records.",
     example:
-      "A running page was built with real timing and a deliberate stale-data case. Three tests: the shop owner, one customer from the research, and one person who had never heard of the project. The last one produced the finding: she read the status as a promise rather than an estimate and said she would arrive at that time, which is exactly the behaviour that generates the second phone call. The repair changed the wording from a time to a window and stated when it was last updated. Prediction written first: nobody should describe it as a promise. Re-tested with two new people; one still did, and that was reported.",
+      "A running page was built with three made-up jobs, real timing and a deliberate stale-data case. Four tests on the learner's own phone, handed over in person: the shop owner, both customers from the research, and one person who had never heard of the project. The last one produced the finding: she read the status as a promise rather than an estimate and said she would arrive at that time, which is exactly the behaviour that generates the second phone call. The repair changed the wording from a time to a window and stated when it was last updated. Prediction written first: nobody should describe it as a promise. Re-tested with two new people; one of the two still did, and that was reported. Then the stop gate, with the made-up jobs: typing a neighbouring job number showed another job, and every job was readable in the file's source. Not passed — so the page stays a local demonstration with made-up records, and no real customer details go into it.",
     freeToolPath:
-      "A local HTML file opened on the participants' phones, as in m12. No hosting or account is needed.",
+      "Paper, a clickable mock-up, or a local HTML file if you took the technical track — filled with made-up records only and shown on your own device, in person. Nothing is hosted.",
     outputs: [
-      "A working prototype answering the open questions",
-      "Tests with three people, one outside the research",
+      "A prototype with made-up records answering the open questions",
+      "Tests with three people, one outside the research — or a labelled self-pilot on the single-person or practice route",
       "One repair with a prediction written first, and a re-test",
-      "Conditions recorded for every session",
+      "Conditions recorded for every session, and the stop-gate result",
     ],
     steps: [
       {
         minutes: 35,
         title: "Build",
         instructions: [
-          "Build the lowest-fidelity thing that answers the open questions.",
+          "Build the lowest-fidelity thing that answers the open questions, using made-up records only.",
           "Include the states and one deliberate failure case.",
         ],
       },
@@ -1094,8 +1095,8 @@ export const module18: Lesson[] = [
         minutes: 40,
         title: "Test",
         instructions: [
-          "Test with three people, including one outside the research.",
-          "Record expectation, action, outcome and hesitation.",
+          "Test with three people, including one outside the research, or run a labelled self-pilot.",
+          "Record expectation, action, outcome and hesitation, summarised without names.",
           "Record device, connection and setting.",
         ],
       },
@@ -1111,15 +1112,17 @@ export const module18: Lesson[] = [
         minutes: 20,
         title: "Repair and re-test",
         instructions: [
-          "Change one thing and re-test with someone new.",
+          "Change one thing and re-test with someone new, or self-pilot again after a break.",
           "Record the result including a failure.",
         ],
       },
       {
-        minutes: 5,
-        title: "File it",
+        minutes: 15,
+        title: "Run the stop gate and file it",
         instructions: [
-          "Save both versions, the records and the outcome.",
+          "With made-up records only, try to reach another person's record: a neighbouring number, a mistyped one, the file's source.",
+          "If any shows another person's record, it stays a local demonstration with made-up records.",
+          "Save both versions, the records and the gate result.",
         ],
       },
     ],
@@ -1139,41 +1142,46 @@ export const module18: Lesson[] = [
         answer:
           "Because it shows the loop was real. A project where every change worked reads as a narrative rather than a record.",
       },
+      {
+        question: "What does the stop gate decide?",
+        answer:
+          "Whether any real person's records may go into the prototype. Until a version shows, with made-up records, that nobody can reach another person's record, it stays a local demonstration.",
+      },
     ],
     rubric: [
       "The build answers the open questions at appropriate fidelity",
-      "Three tests including one outside the research",
+      "Testing includes someone outside the research, or a labelled self-pilot",
       "One repair with a prediction and a re-test",
-      "Conditions recorded for every session",
+      "Conditions and the stop-gate result are recorded",
     ],
     criteria: [
       {
         criterion:
           "The build answers the open questions at appropriate fidelity",
         evidence:
-          "A prototype whose fidelity is justified by the questions it answers.",
+          "A prototype with made-up records whose fidelity is justified by the questions it answers.",
         levels: [
-          "Fidelity chosen by preference.",
+          "Fidelity chosen by preference, or real people's details in it.",
           "Appropriate but missing the failure case.",
-          "Appropriate with states and one deliberate failure.",
-          "As adequate, and it runs on a participant's own device.",
+          "Appropriate with states, one deliberate failure and made-up records only.",
+          "As adequate, and it was tried on a phone like the ones customers carry.",
         ],
         remediation:
           "Check each open question against what the prototype can show; add what is missing.",
         recheck: "The prototype.",
       },
       {
-        criterion: "Three tests including one outside the research",
+        criterion: "Testing includes someone outside the research, or a labelled self-pilot",
         evidence:
-          "Three session records, one with a person new to the project.",
+          "Three session summaries, one with a person new to the project — or, on the single-person or practice route, a self-pilot labelled as such with a dated note of who could not be reached.",
         levels: [
-          "Fewer than three, or all research participants.",
-          "Three, all with prior context.",
-          "Three including one stranger.",
-          "As adequate, and the difference between the groups is analysed.",
+          "No testing, or a self-pilot reported as testing with others.",
+          "Sessions only with people who share your framing.",
+          "Three including one stranger, or an honestly labelled self-pilot.",
+          "As adequate, and the difference between the groups — or what a self-pilot cannot show — is analysed.",
         ],
         remediation:
-          "Run one session with someone who has never heard of the project.",
+          "Run one session with someone who has never heard of the project, or label your self-pilot and record who you could not reach.",
         recheck: "The session records.",
       },
       {
@@ -1191,25 +1199,25 @@ export const module18: Lesson[] = [
         recheck: "The repair record.",
       },
       {
-        criterion: "Conditions recorded for every session",
+        criterion: "Conditions and the stop-gate result are recorded",
         evidence:
-          "Device, connection and setting noted per session.",
+          "Device, connection and setting per session, and a dated stop-gate result tested with made-up records.",
         levels: [
-          "Not recorded.",
-          "Recorded for some sessions.",
-          "Recorded for all.",
-          "As adequate, and at least one session happened in the real setting.",
+          "Not recorded, or real records used before the gate.",
+          "Conditions for some sessions, or the gate assumed rather than tried.",
+          "Conditions for all, and the gate tried with made-up records and its result stated.",
+          "As adequate, and a failed gate is stated with what a safe version would need.",
         ],
         remediation:
-          "Add the conditions to each record; without them the results cannot be weighed.",
-        recheck: "The condition records.",
+          "Add the conditions to each record, then try the gate with made-up records and write the result.",
+        recheck: "The condition records and the gate result.",
       },
     ],
     repairs: [
       "If the prototype cannot answer a question, add what it needs.",
-      "If all participants were insiders, test with a stranger.",
+      "If all participants were insiders, test with a stranger or label a self-pilot.",
       "If several things changed, revert and repair one.",
-      "If conditions are missing, record them for each session.",
+      "If conditions or the gate result are missing, record them.",
     ],
     portfolio:
       "A build-test-repair loop run alone, with one failed repair reported, is the strongest single piece of evidence this course produces.",
@@ -1246,13 +1254,13 @@ export const module18: Lesson[] = [
     guided: true,
     title: "Getting critique you did not choose",
     objective:
-      "Have someone outside the project critique the work against your own stated intent, and record what you changed, what you defended and why.",
+      "Have someone outside the project critique the work against your own stated intent — or, where nobody can be reached, run a self-review labelled as such — and record what you changed, what you defended and why.",
     bringForward: "Your critique practice and the project's stated intent.",
     prerequisite: "Your prototype and the recorded intent for it.",
     why: "Working alone removes the person who would have told you the thing you cannot see, and you have to go and find them.",
     teach: [
       "Ask for critique against your stated intent, not for opinions.",
-      "Choose someone who will disagree with you.",
+      "Choose someone who will disagree with you; a self-review is labelled self-review, never outside critique.",
       "Record what you changed and what you defended, with reasons.",
       "A defence is legitimate; an unexamined dismissal is not.",
       "Ask specifically about what you are least sure of.",
@@ -1262,6 +1270,7 @@ export const module18: Lesson[] = [
       "Choosing a reviewer who will disagree is harder than it sounds, because the comfortable choice is someone who will be encouraging. A developer will ask what happens when the data is late; a person who runs a small business will ask who updates it on a Sunday. Both questions are better than praise.",
       "Recording defences matters as much as recording changes. Some critique is wrong, or right about a constraint you already considered and accepted, and saying so with the reason is a professional act. What is not acceptable is dismissing something because considering it would be inconvenient.",
       "Naming your least certain areas directs attention where it helps. If you are unsure whether the stale-data wording works, say so, rather than hoping the reviewer will find it themselves.",
+      "If nobody outside the project can be reached — on the practice route, or alone — a self-review against your written intent is still worth doing, after a break, with the reviewer questions written out. Label it self-review, list who you could not reach, and keep the questions an outside reviewer would still need to answer. It finds drift from your intent; it cannot find the thing you cannot see, so it is never reported as outside critique.",
     ],
     misconception:
       "“Critique is for finding what is wrong.” Critique tests whether the work does what you said it would. That is why it needs your intent stated first, and why a reviewer who does not know the intent can only give preferences.",
@@ -1271,7 +1280,7 @@ export const module18: Lesson[] = [
       "One conversation each, in person or by call. No tool is required.",
     outputs: [
       "A stated intent given to reviewers before the work",
-      "Critique from at least two people, one who disagrees",
+      "Critique from at least two people, one who disagrees — or a labelled self-review with the questions still open",
       "A record of changes made with reasons",
       "A record of critique defended, with reasons",
     ],
@@ -1289,7 +1298,7 @@ export const module18: Lesson[] = [
         title: "Choose reviewers",
         instructions: [
           "Choose two people with different vantage points.",
-          "Prefer someone likely to disagree with you.",
+          "Prefer someone likely to disagree with you; with nobody available, plan a labelled self-review.",
         ],
       },
       {
@@ -1336,7 +1345,7 @@ export const module18: Lesson[] = [
     ],
     rubric: [
       "Intent was stated before the work was shown",
-      "At least two reviewers, one likely to disagree",
+      "At least two reviewers, one likely to disagree, or a labelled self-review",
       "Changes recorded with reasons",
       "Defences recorded with reasons",
     ],
@@ -1356,15 +1365,15 @@ export const module18: Lesson[] = [
         recheck: "The intent statement.",
       },
       {
-        criterion: "At least two reviewers, one likely to disagree",
-        evidence: "Two critique records from different vantage points.",
+        criterion: "At least two reviewers, one likely to disagree, or a labelled self-review",
+        evidence: "Two critique records from different vantage points — or, where nobody could be reached, a self-review labelled as such, with who was unreachable and the questions left open.",
         levels: [
-          "One reviewer, or none.",
+          "No critique, or a self-review presented as outside critique.",
           "Two reviewers with similar views.",
-          "Two with different vantage points.",
-          "As adequate, and one reviewer works in the domain.",
+          "Two with different vantage points, or an honestly labelled self-review.",
+          "As adequate, and one reviewer works in the domain, or the self-review names what only an outsider could check.",
         ],
-        remediation: "Find a second reviewer whose work differs from yours.",
+        remediation: "Find a second reviewer whose work differs from yours, or label your self-review and list who you could not reach.",
         recheck: "The critique records.",
       },
       {
@@ -1436,33 +1445,34 @@ export const module18: Lesson[] = [
     guided: true,
     title: "Measuring what this project can actually measure",
     objective:
-      "Choose one measure the project can honestly support, collect it before and after, and report it as counts with its conditions.",
-    bringForward: "Your m16 measurement work and its rules.",
-    prerequisite: "Your prototype in use, or a baseline you can count.",
+      "Choose one measure the project can honestly support and collect the before. Collect an after only for a change that is really in use and holds nobody's records or passed the stop gate — otherwise report the before and a plan — always as counts with conditions.",
+    bringForward: "Your Module 15 measurement work, and your stop-gate result from lesson 6.",
+    prerequisite: "Your stop-gate result, and someone who can count the before — or the supplied practice counts.",
     why: "A project that claims an improvement without a before is a story; a project that counts one thing honestly is evidence.",
     teach: [
       "Choose one measure tied to the problem, not to activity.",
-      "Collect the before, even roughly, before you change anything.",
-      "Counts, not percentages, at this size.",
-      "Record conditions: what else changed, and over what period.",
-      "State plainly if the measure did not move.",
+      "Collect the before before anything changes; it needs no prototype at all.",
+      "Measure an after only for a change in real use that holds nobody's records or passed the stop gate.",
+      "Counts with periods and conditions, not percentages; if it did not move, say so.",
+      "If the before was missed, make no before-and-after claim; report what you have.",
     ],
     explanation: [
       "The measure should be the thing the problem is about. For a shop interrupted by calls, that is calls about progress — countable by tally on the counter. Page views would be activity and would tell you nothing about whether the interruptions stopped.",
-      "The before is the part most people skip, and skipping it makes everything after unusable. Even a rough count over five days, taken before the page exists, converts the whole project from an assertion into a comparison. Ask the person to tally, and check they actually did.",
-      "Counts at this size, always. Eleven calls in five days becoming four in five days is a real observation. The same expressed as a sixty-four per cent reduction is a claim the sample cannot support, and it is exactly the sentence that would be quoted back at you.",
+      "The before is the part most people skip. Even a rough count over five days, taken before anything changes, turns the project from an assertion into a comparison. Ask the person to tally, and check they actually did. If the change went into use before anybody counted, a before-and-after cannot be made at all: report the after count with its period, label anyone's memory of earlier weeks as recollection rather than a baseline, and claim no change.",
+      "Only a change that is safe for real use can have an after. If your prototype failed the stop gate in lesson 6, it is not that change — it stays a demonstration with made-up records. What can go into use is something that holds nobody's records, such as new wording on a paper slip, or a properly built version that has passed the gate. With nothing in real use, the honest result is the before count and a written plan for the after.",
+      "Counts at this size, always. Eleven calls in five days becoming seven in five days is a real observation. The same expressed as a thirty-six per cent reduction is a claim the sample cannot support, and it is exactly the sentence that would be quoted back at you.",
       "Conditions surround the number. A quiet week, a festival, one repair that went wrong and generated six calls on its own — any of these move the count more than your design does, and the honest report names them rather than hoping nobody asks.",
     ],
     misconception:
       "“No measurable change means the project failed.” It means the measure did not move in this period under these conditions, which is a finding. Reporting it is what separates the work from marketing.",
     example:
-      "Measure chosen: calls asking about repair progress, tallied by the owner on a sheet by the till. Before: eleven over five working days. The page was introduced and given to customers as a link on the job slip. After: four over five working days, with the conditions recorded — one of the five days was a public holiday with reduced trade, and two customers had been told about the page directly by the owner, which is not how it would normally spread. The report says eleven then four, names both conditions, and does not convert either into a rate.",
+      "Measure chosen: calls asking about repair progress, tallied by the owner on a sheet by the till. Before: eleven over five working days, counted before anything changed. The page could not be the change: it failed the stop gate in lesson 6 and stayed a demonstration with made-up jobs. What went into real use was the testing finding — the owner wrote a window rather than a single day on each paper job slip and said he would ring if it slipped, which holds nobody's records. After: seven over the next five working days, with the conditions recorded — one of the five days was a public holiday with reduced trade, and the owner explained the new wording in person to two regular customers, which is not how most customers would meet it. The report says eleven then seven, names both conditions, says the page was not what changed, and converts nothing into a rate.",
     freeToolPath:
       "A paper tally sheet. This is the appropriate instrument at this scale and costs nothing.",
     outputs: [
       "One measure tied to the problem",
       "A before count collected prior to any change",
-      "An after count over a comparable period",
+      "An after count over a comparable period, only for a change safely in real use — or a written plan",
       "Conditions recorded, and the result stated as counts",
     ],
     steps: [
@@ -1486,7 +1496,8 @@ export const module18: Lesson[] = [
         minutes: 20,
         title: "Introduce and collect the after",
         instructions: [
-          "Introduce the change and collect over a comparable period.",
+          "Introduce only a change that holds nobody's records, or a version that passed the stop gate.",
+          "Collect over a comparable period, or write the after plan if nothing is in real use.",
           "Note anything unusual about either period.",
         ],
       },
@@ -1494,7 +1505,7 @@ export const module18: Lesson[] = [
         minutes: 20,
         title: "Report as counts",
         instructions: [
-          "Write both counts with their periods.",
+          "Write both counts with their periods, or the before count with its plan.",
           "Do not convert to percentages.",
         ],
       },
@@ -1503,7 +1514,7 @@ export const module18: Lesson[] = [
         title: "Record the conditions",
         instructions: [
           "List everything else that could explain the difference.",
-          "State what the measure cannot show.",
+          "State what the measure cannot show; if no before was collected, say no comparison is possible.",
         ],
       },
     ],
@@ -1511,7 +1522,7 @@ export const module18: Lesson[] = [
       {
         question: "Why not a percentage?",
         answer:
-          "Because at eleven and four, a rate implies a precision the sample cannot support and invites a claim you would have to withdraw.",
+          "Because at eleven and seven, a rate implies a precision the sample cannot support and invites a claim you would have to withdraw.",
       },
       {
         question: "Why is the before the critical step?",
@@ -1523,11 +1534,16 @@ export const module18: Lesson[] = [
         answer:
           "Report it. The measure did not move in this period under these conditions, and that is a finding worth more than a story.",
       },
+      {
+        question: "What if the change went live before anybody counted?",
+        answer:
+          "Then no before-and-after can be reported. Give the after count with its period, label any memory of earlier weeks as recollection, and claim no change.",
+      },
     ],
     rubric: [
       "The measure reflects the problem, not activity",
-      "A before was collected prior to the change",
-      "Results are reported as counts with periods",
+      "A before was collected prior to the change, or no comparison is claimed",
+      "Results are counts with periods, for a change safely in real use",
       "Conditions and limits are recorded",
     ],
     criteria: [
@@ -1546,28 +1562,28 @@ export const module18: Lesson[] = [
         recheck: "The measure.",
       },
       {
-        criterion: "A before was collected prior to the change",
-        evidence: "A dated baseline count over a defined period.",
+        criterion: "A before was collected prior to the change, or no comparison is claimed",
+        evidence: "A dated baseline count over a defined period, taken before anything changed — or, where it was missed, the after reported alone with no comparison claimed.",
         levels: [
-          "No before.",
-          "Estimated retrospectively.",
-          "Collected before the change over a defined period.",
+          "No before, and a change claimed anyway.",
+          "A memory of earlier weeks presented as a baseline.",
+          "Collected before the change over a defined period, or no comparison claimed where it was missed.",
           "As adequate, and the collection method is the same in both periods.",
         ],
         remediation:
-          "If the change is already live, say so and label the baseline as an estimate.",
+          "If the change is already in use and no before was collected, drop the before-and-after: report the after count with its period, label any recollection as recollection, and claim no change.",
         recheck: "The baseline.",
       },
       {
-        criterion: "Results are reported as counts with periods",
-        evidence: "Both counts with their periods, no rates.",
+        criterion: "Results are counts with periods, for a change safely in real use",
+        evidence: "Counts with their periods and no rates, for a change that holds nobody's records or passed the stop gate — or the before count with a plan when nothing is in real use.",
         levels: [
-          "Percentages or rates.",
+          "Percentages, or an after measured on something that failed the stop gate.",
           "Counts without periods.",
-          "Counts with periods.",
+          "Counts with periods for a safe change, or the before with a plan.",
           "As adequate, and the periods are comparable in trading terms.",
         ],
-        remediation: "Replace every rate with the underlying counts.",
+        remediation: "Replace every rate with the underlying counts, and measure an after only for a change that is safe for real use.",
         recheck: "The report.",
       },
       {
@@ -1587,12 +1603,12 @@ export const module18: Lesson[] = [
     ],
     repairs: [
       "If the measure is activity, replace it with one tied to the problem.",
-      "If there is no before, label the comparison honestly.",
+      "If there is no before, report the after alone and claim no change.",
       "If rates appear, restore the counts.",
       "If conditions are missing, list the confounds.",
     ],
     portfolio:
-      "A before and after in counts, with conditions and confounds named, is rare in junior portfolios and immediately credible.",
+      "A before and after in counts, with conditions and confounds named — or an honest baseline with a plan — is rare in junior portfolios and immediately credible.",
     resource: sharing,
     resources: [
       {
@@ -1628,15 +1644,15 @@ export const module18: Lesson[] = [
     guided: true,
     title: "Leaving something behind that survives you",
     objective:
-      "Hand the work over so the person can keep using or maintaining it without you, and record what they would need if you disappeared.",
-    bringForward: "Your prototype, your documentation habits and your system.",
-    prerequisite: "A working prototype and a person who might use it.",
+      "Hand over what the person can safely keep using without you — something that holds nobody's records, or a version that passed the stop gate — give anything else only as a labelled demonstration with made-up records, and record what they would need if you disappeared.",
+    bringForward: "Your prototype, your stop-gate result, your documentation habits and your system.",
+    prerequisite: "Your stop-gate result and a person who might use the work — or, on the practice route, a written handover for the supplied brief.",
     why: "A project that only works while you are present is a demonstration; one that survives your absence is a piece of design.",
     teach: [
       "Ask what happens on the day you stop being available.",
       "Write instructions for the person, not for a designer.",
-      "Hand over the source, the decisions and the known gaps.",
-      "Say plainly what is unfinished and unsafe to rely on.",
+      "Hand over the source, the decisions, the known gaps and the stop-gate result.",
+      "Only what passed the gate, or holds nobody's records, goes into real use; the rest is a labelled demonstration.",
       "Get their agreement about what happens next.",
     ],
     explanation: [
@@ -1644,17 +1660,18 @@ export const module18: Lesson[] = [
       "Instructions written for the person are short, in their language, and describe the two or three things they actually do. A page of design rationale is not a handover; a card by the till saying how to change a job's status is.",
       "The handover package is source, decisions and gaps. The decisions matter because whoever comes next — including you in six months — will otherwise re-litigate them. The gaps matter because someone will otherwise trust something that was never finished.",
       "Ending explicitly is part of professional practice. Whether the shop keeps using it, stops, or asks you for more, the agreement should be stated rather than left to drift, and what you agreed belongs in the record.",
+      "The stop gate decides what a handover can be. A prototype that failed it is handed over as a demonstration: made-up records only, a first line saying it must not be given real people's details, and what a safe version would need. Handing it over for real use with a known exposure written in the gaps list is not honesty; it is the harm the gate exists to stop. On the practice route, write the handover for the supplied brief's owner and label it unagreed.",
     ],
     misconception:
       "“Handing over is the last five minutes of a project.” It is a design constraint from the start. A tool that only you can operate was designed wrong, and you find that out at handover if you never asked earlier.",
     example:
-      "The handover: a printed card by the till with three steps for updating a job, written in the owner's words rather than the interface's; the HTML file and a short note on where it lives and how to change the shop's phone number; a decisions page covering why there are no accounts and why the status is a window rather than a time; and a gaps page saying the page has never been tested on a slow connection, has no protection against a mistyped job number showing another customer's job, and should not be relied on if the shop takes more than about twenty jobs a week. The owner agreed to try it for a month and to say if it stopped being useful.",
+      "The handover: a printed card by the till with the three things the owner actually does with the new slip wording, in his words — write a window, not a day; ring before the window ends if it will be late; ring when it is ready. The page goes over as a demonstration file containing made-up jobs only, its first line saying it failed the stop gate — a neighbouring job number shows another job and every job is readable in the file — so real customer details must never go into it, and what a safe version would need: a properly built lookup that returns only the matching job, an unguessable reference on each slip, no names on the page, re-tested with made-up records. A decisions page covers why the slip shows a window rather than a day. A gaps page says the demonstration was never tested on a slow connection or with a screen reader, and that the window stops being honest when parts take longer than the longest window he writes. The owner agreed to keep using the slip wording for a month and say if calls rose, and agreed not to put customer details into the demonstration.",
     freeToolPath:
       "A printed card and two Markdown files. No hosting, account or tool is required.",
     outputs: [
       "Instructions written for the person who will use it",
-      "A handover package: source, decisions and gaps",
-      "A plain statement of what is unfinished or unsafe",
+      "A handover package: source, decisions, gaps and the stop-gate result",
+      "A plain statement of what is unfinished or unsafe, and what goes over only as a demonstration",
       "An agreed next step with the person",
     ],
     steps: [
@@ -1686,7 +1703,7 @@ export const module18: Lesson[] = [
         minutes: 20,
         title: "State the unfinished parts",
         instructions: [
-          "List what is untested or unsafe to rely on.",
+          "List what is untested or unsafe to rely on, starting with the stop-gate result.",
           "Say at what point it would stop working.",
         ],
       },
@@ -1719,7 +1736,7 @@ export const module18: Lesson[] = [
     rubric: [
       "The work does not require your presence",
       "Instructions are written for the user and tested",
-      "The package contains source, decisions and gaps",
+      "The package contains source, decisions, gaps and the stop-gate status",
       "An explicit next step is agreed and dated",
     ],
     criteria: [
@@ -1740,11 +1757,11 @@ export const module18: Lesson[] = [
       {
         criterion: "Instructions are written for the user and tested",
         evidence:
-          "Short instructions in their language, tried with them.",
+          "Short instructions in their language, tried with them — or, on the practice route, checked against the supplied owner's own words and labelled untested.",
         levels: [
           "None, or design documentation offered as instructions.",
-          "Written but untested.",
-          "Written in their language and tested.",
+          "Written but untested, and not labelled so.",
+          "Written in their language and tested, or honestly labelled untested on the practice route.",
           "As adequate, and their confusion changed the wording.",
         ],
         remediation:
@@ -1752,20 +1769,20 @@ export const module18: Lesson[] = [
         recheck: "The instructions.",
       },
       {
-        criterion: "The package contains source, decisions and gaps",
-        evidence: "Three artefacts handed over together.",
+        criterion: "The package contains source, decisions, gaps and the stop-gate status",
+        evidence: "Source, decisions and gaps handed over together, with the stop-gate result stated first on anything that holds records.",
         levels: [
-          "Source only.",
-          "Source and some notes.",
-          "All three present.",
+          "Source only, or a prototype that failed the gate handed over for real use.",
+          "Source and some notes, with the gate status missing.",
+          "All present, and anything that failed the gate labelled a demonstration with made-up records.",
           "As adequate, and each decision has its reason in one sentence.",
         ],
-        remediation: "Write the decisions and gaps pages now.",
+        remediation: "Write the decisions and gaps pages now, and put the stop-gate result at the top.",
         recheck: "The package.",
       },
       {
         criterion: "An explicit next step is agreed and dated",
-        evidence: "A recorded agreement about what happens next.",
+        evidence: "A recorded agreement about what happens next — on the practice route, a proposed next step labelled unagreed.",
         levels: [
           "Project left to drift.",
           "Informal understanding.",
@@ -1833,14 +1850,14 @@ export const module18: Lesson[] = [
     ],
     explanation: [
       "The material already exists. Your exclusions from the plan, deviations from fieldwork, skipped methods from the design, confounds from the measurement and untested areas from the handover are the limitations page; the work is collecting and sharpening them rather than generating new ones.",
-      "Specificity is what makes the page useful. “Small sample” tells a reader nothing. “Five participants, all reached through the owner, none of whom had stopped using the shop” tells them exactly which conclusions are unavailable and which still stand.",
-      "The two kinds of limit are different and readers conflate them. A study limit is what you do not know; a design limit is what the thing does not do. Not knowing whether customers who left would use the page is a study limit. Not handling a mistyped job number is a design limit. Separating them keeps both honest.",
+      "Specificity is what makes the page useful. “Small sample” tells a reader nothing. “Three research participants, all reached through the owner, none of whom had stopped using the shop” tells them exactly which conclusions are unavailable and which still stand.",
+      "The two kinds of limit are different and readers conflate them. A study limit is what you do not know; a design limit is what the thing does not do. Not knowing whether customers who left would use the page is a study limit. Never having tested it on a slow connection is a design limit. A mistyped job number that shows another customer's job is neither: it is a blocking defect, the reason the page failed the stop gate, and it goes on the repair list. Separating the three keeps all of them honest.",
       "Saying what would close each limit turns the page from a disclaimer into a plan. Four conversations with customers who stopped coming; one test on a slow connection; a second measurement period without a public holiday. Each is small, specific and shows you know what the next step is.",
     ],
     misconception:
       "“Listing limitations weakens the project.” It does the opposite. Unstated limits get found by the reader and cost you their trust in everything else; stated ones bound your claims and make the rest credible.",
     example:
-      "The page has two sections. Study limits: five participants all reached through the owner; nobody who had stopped using the shop; one interview with a third party present; the measurement covered two five-day periods, one containing a public holiday; nothing establishes whether this problem exists in other repair shops. Design limits: no protection against a mistyped job number; never tested on a slow connection; no screen-reader pass; unmaintained if the owner stops updating it; unsuitable above roughly twenty jobs a week. Each has a closing step, and two are marked as the next things worth doing.",
+      "The page has two sections and a repair list. Study limits: three research participants, all reached through the owner; nobody who had stopped using the shop; one interview with a third party present; the measurement covered two five-day periods, one containing a public holiday; what was measured was the slip wording, not the page, which never went into real use; nothing establishes whether this problem exists in other repair shops. Design limits of the demonstration: never tested on a slow connection; no screen-reader pass; unmaintained if the owner stops updating it; unsuitable above roughly twenty jobs a week. Repair list, not limits: the failed stop gate — a neighbouring job number shows another customer's job — which keeps the page a demonstration until a properly built version passes. Each limit has a closing step, and two are marked as the next things worth doing.",
     freeToolPath: "One Markdown page.",
     outputs: [
       "A limitations page drawn from your own records",
@@ -2009,11 +2026,11 @@ export const module18: Lesson[] = [
     level: 5,
     areas: [4, 10, 17],
     guided: true,
-    title: "Retrospective across three projects",
+    title: "Retrospective across your projects",
     objective:
-      "Compare this project with your two earlier ones and identify what has actually improved, what has not, and what you will do differently next.",
-    bringForward: "All three projects and their records.",
-    prerequisite: "Two earlier projects with records.",
+      "Compare this project with your earlier one or two — two projects on the core path, three if you took the full library — and identify what has actually improved, what has not, and what you will do differently next.",
+    bringForward: "Every project you have done and their records.",
+    prerequisite: "At least one earlier project with records.",
     why: "Improvement you cannot name is improvement you cannot repeat, and the comparison is the only evidence you have of a trajectory.",
     teach: [
       "Compare on process, not on how good the outcome looks.",
@@ -2025,16 +2042,16 @@ export const module18: Lesson[] = [
     explanation: [
       "Comparing outcomes is misleading because the projects had different problems and different access. Comparing process is not: did you write the exclusions before fieldwork this time? Did the repair loop close? Did you record deviations? Those are the same questions across all three.",
       "Naming the evidence for an improvement keeps you honest. “My research got better” is an impression; “in project one I wrote no exclusions, in project three I wrote them before fieldwork and the report used them” is a fact you can point at.",
-      "The thing that did not improve is the more useful half. If you still cut the accessibility pass under time pressure in all three projects, that is a pattern rather than an accident, and it will follow you into paid work unless you name it.",
+      "The thing that did not improve is the more useful half. If you still cut the accessibility pass under time pressure in every project, that is a pattern rather than an accident — twice for the same reason is already one — and it will follow you into paid work unless you name it.",
       "Improvement comes from habits, not from intentions. If the write-up quality improved, it was probably because you started writing within the hour, and that habit is what transfers. Naming the mechanism is what lets you keep it.",
     ],
     misconception:
       "“The third project is better because it looks better.” Presentation improves fastest and means least. The question is whether the process held under pressure, and that is visible only in the records.",
     example:
-      "Improved: exclusions written before fieldwork in projects two and three, not in one, and in three the report used them directly. Improved: the repair loop closed with a re-test in both two and three; in one there was no re-test at all. Not improved: the screen-reader pass was skipped in all three, each time for time, which is a pattern rather than a series of accidents. Habit responsible for the first improvement: writing the plan in a fixed order that puts exclusions before recruitment. Next project: schedule the accessibility pass as a dated task before the build starts, because leaving it until the end has now failed three times.",
+      "Two projects, on the core path: Project 1 and the independent project. Improved: exclusions written before fieldwork in the independent project and not in Project 1, and its report used them directly. Improved: the repair loop closed with a re-test this time; in Project 1 there was no re-test at all. Not improved: the screen-reader pass was skipped in both, each time for time, which is a pattern rather than two accidents. Habit responsible for the first improvement: writing the plan in a fixed order that puts exclusions before recruitment. Next project: schedule the accessibility pass as a dated task before the build starts, because leaving it until the end has now failed twice. A learner who also did Project 2 asks the same questions of three.",
     freeToolPath: "Your own records and one page of writing.",
     outputs: [
-      "A process comparison across three projects",
+      "A process comparison across your projects",
       "One improvement with its evidence and its habit",
       "One thing that did not improve, named honestly",
       "One specific change for the next project",
@@ -2044,7 +2061,7 @@ export const module18: Lesson[] = [
         minutes: 25,
         title: "Build the comparison",
         instructions: [
-          "List the same five process questions for all three projects.",
+          "List the same five process questions for every project you have done.",
           "Answer each from the records, not from memory.",
         ],
       },
@@ -2060,7 +2077,7 @@ export const module18: Lesson[] = [
         minutes: 20,
         title: "Name what did not improve",
         instructions: [
-          "Find something that failed in all three.",
+          "Find something that failed in every project.",
           "Write why, without excusing it.",
         ],
       },
@@ -2090,7 +2107,7 @@ export const module18: Lesson[] = [
       {
         question: "Why is the unimproved thing more useful?",
         answer:
-          "Because a failure across all three is a pattern that will follow you into paid work unless you name it.",
+          "Because a failure in every project is a pattern that will follow you into paid work unless you name it.",
       },
       {
         question: "Why identify the habit?",
@@ -2108,7 +2125,7 @@ export const module18: Lesson[] = [
       {
         criterion: "The comparison is on process and drawn from records",
         evidence:
-          "The same questions answered for three projects, citing records.",
+          "The same questions answered for every project, citing records.",
         levels: [
           "Impressions of outcome quality.",
           "Process questions answered from memory.",
@@ -2135,7 +2152,7 @@ export const module18: Lesson[] = [
       },
       {
         criterion: "A persistent failure is named honestly",
-        evidence: "Something absent from all three projects, with the reason.",
+        evidence: "Something absent from every project, with the reason.",
         levels: [
           "None named.",
           "Named but excused.",
@@ -2163,11 +2180,11 @@ export const module18: Lesson[] = [
     repairs: [
       "If the comparison is about outcomes, redo it on process.",
       "If the improvement has no mechanism, find the habit.",
-      "If nothing failed, look harder — three projects always show a pattern.",
+      "If nothing failed, look harder — two or three projects nearly always show a pattern.",
       "If the change is an intention, give it a date and a trigger.",
     ],
     portfolio:
-      "A retrospective across three projects shows a trajectory rather than a snapshot, which is what a reviewer is actually trying to assess.",
+      "A retrospective across two or three projects shows a trajectory rather than a snapshot, which is what a reviewer is actually trying to assess.",
     resource: standard,
     resources: [
       {
@@ -2210,19 +2227,19 @@ export const module18: Lesson[] = [
       "Order the record by what happened, not by what looks best.",
       "Every claim needs an artefact behind it.",
       "Include the failures; they are load-bearing.",
-      "Name the dates, the counts and the people by role.",
+      "Name the dates, the counts, the people by role, and each item's evidence tier.",
       "Store it so it survives a lost laptop.",
     ],
     explanation: [
       "Chronological order is the honest order and the easiest to check. A record arranged to build a narrative is already a case study, and case studies written before the record exists tend to acquire claims the record cannot support.",
       "The claim-to-artefact check is mechanical and worth doing: read each sentence that asserts something, and find the file that supports it. Anything unsupported either gets its artefact attached, gets weakened to what the evidence shows, or gets deleted.",
-      "The failures carry weight. The recruitment that did not work, the repair that did not fix the problem, the measurement confounded by a public holiday — these are what make the successes believable, and removing them removes the credibility of everything left.",
+      "The failures carry weight. The recruitment that did not work, the repair that did not fix the problem, the measurement confounded by a public holiday, the prototype that failed the stop gate — these are what make the successes believable, and removing them removes the credibility of everything left.",
       "Anonymity and durability are both practical. People appear by role, consent records stay out of anything shareable, and the whole record lives in at least two places, because losing three months of work to a failed drive is a common and entirely avoidable ending.",
     ],
     misconception:
       "“I will write it up properly later.” Later, the details will be gone and the write-up will quietly become fiction. The record is assembled now, from artefacts that exist.",
     example:
-      "The record has twelve numbered folders matching the lessons, an index page listing what is in each, and a claims check: nineteen assertions, seventeen with artefacts, one weakened from “customers stopped calling” to “calls about progress fell from eleven to four over comparable five-day periods, one containing a public holiday”, and one deleted because nothing supported it. Participants appear as owner, customer A, customer B, customer C and outside tester. Consent records are stored separately and are not part of anything shareable. The whole thing exists on the laptop and in one other place.",
+      "The record has twelve numbered folders matching the lessons, an index page listing what is in each, and a claims check: nineteen assertions, seventeen with artefacts, one weakened from “the page stopped customers calling” to “after the owner began writing a window rather than a day on job slips, calls about progress went from eleven to seven over comparable five-day periods, one containing a public holiday; the page itself stayed a demonstration with made-up jobs”, and one deleted because nothing supported it. Every evidence item is labelled by tier: real participant research, self-pilot, or supplied practice. Participants appear by role: owner, customer A, customer B, and outside testers 1 to 3. Consent records are stored separately and are not part of anything shareable. The whole thing exists on the laptop and in one other place.",
     freeToolPath:
       "Folders and Markdown files, plus one free backup location. No paid storage is required.",
     outputs: [
