@@ -16,7 +16,7 @@ export const guided20: Record<string, Guided> = {
       ] },
       { id: 'plan', title: 'The evidence plan', fields: [
         { id: 'plan-count-sources', label: 'How many vacancies, from where, over what window', kind: 'long', hint: 'At least twelve, from employers’ own career pages, inside one window of about two weeks.' },
-        { id: 'plan-fields', label: 'The fields you will record for each one', kind: 'long', example: 'Example (made up): employer, direct URL, retrieval date, exact title, stated seniority, location, stated remote policy, stated India eligibility.' },
+        { id: 'plan-fields', label: 'The fields you will record for each one', kind: 'long', hint: 'Keep eligibility, work location and hours as three fields. One sentence in a listing usually answers one of them and leaves the others silent.', example: 'Example (made up): employer, direct URL, retrieval date, exact title, stated seniority, then three fit fields: who they can hire and from where; remote, or the city and office days; required hours, converted to IST.' },
       ] },
       { id: 'sources', title: 'The source rule', fields: [
         { id: 'source-rule', label: 'The rule: what counts as evidence', kind: 'long' },
@@ -45,6 +45,7 @@ export const guided20: Record<string, Guided> = {
         terms: [
           { term: 'A window', meaning: 'A fixed period, about two weeks, in which everything is gathered. It makes the sample datable and stops it drifting across months.' },
           { term: 'Fields decided first', meaning: 'What you record for every listing. Deciding after you start means the early captures are missing what the later ones have.' },
+          { term: 'Three fit fields', meaning: 'Who the employer can hire and from where; where the work happens; what hours it needs, in IST. Remote answers only the second, so each gets its own field.' },
         ],
         demo: {
           scenario: 'Made-up example. Writing an evidence plan, and writing it after starting to gather.',
@@ -80,8 +81,8 @@ export const guided20: Record<string, Guided> = {
           beats: [
             { label: 'What I did', text: 'Gathered fourteen listings, counted them, then wrote the limits section under the findings, as the last thing.' },
             { label: 'What I wrote', text: 'That the sample was small and from one window. Both true, and both chosen because the findings had already survived them.' },
-            { label: 'What I left out', text: 'That every employer in the sample has a public careers page, which is a particular kind of company: larger, more formal, more likely to hire from abroad.' },
-            { label: 'Why that one was missing', text: 'Nine of my fourteen mentioned remote work. Naming the public-board bias would have said that my most interesting finding is partly an artefact of how I gathered.' },
+            { label: 'What I left out', text: 'That every employer in the sample has a public careers page, which may mean a particular kind of company: larger, more formal, perhaps more used to hiring from other countries.' },
+            { label: 'Why that one was missing', text: 'Six of my fourteen were remote. Naming the public-board bias would have said that my most interesting finding is partly an artefact of how I gathered.' },
             { label: 'What writing them first would have done', text: 'The bias is obvious before you have a result to protect. Written in advance it is a method note; written afterwards it is a concession you are reluctant to make.' },
           ],
           wrongTurn: 'The wrong turn is writing limits at the end, because that is where they appear in the document. Once you know your findings, the limits you write are the ones your findings survive.',
@@ -122,12 +123,12 @@ export const guided20: Record<string, Guided> = {
             { id: 'india-hard', text: '“Companies abroad will not hire from India at junior level.”', answer: 'opinion — useful, uncited',
               feedback: {
                 'cites a dated source': 'No employer, date or count is offered.',
-                'opinion — useful, uncited': 'Often said, sometimes by people with real experience of being turned down. In my fourteen, two stated eligibility from India explicitly and nine stated nothing at all.',
+                'opinion — useful, uncited': 'Often said, sometimes by people with real experience of being turned down. In my fourteen, two said they can employ people based in India, one required the right to work in the UK, and eleven said nothing about who they can hire.',
                 'a number about the aggregator': 'There is no number.',
               } },
-            { id: 'two-of-fourteen', text: '“Two of the fourteen listings said explicitly that they can employ from India; nine said nothing either way.”', answer: 'cites a dated source',
+            { id: 'two-of-fourteen', text: '“Of the fourteen listings I captured between the second and the thirteenth of March, two said they can employ people based in India and eleven said nothing about who they can hire.”', answer: 'cites a dated source',
               feedback: {
-                'cites a dated source': 'Counts out of a stated sample, including the nine silences, which are the most useful part.',
+                'cites a dated source': 'Counts out of a stated, dated sample, including the eleven silences, which are the most useful part.',
                 'opinion — useful, uncited': 'It gives its numbers and its denominator.',
                 'a number about the aggregator': 'These are captures from employers’ own pages.',
               } },
@@ -148,9 +149,9 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Somebody must know what the hiring market wants. Why does this course not tell you?',
         options: [
-          { label: 'Because it holds two dated captures, which is not a study, and teaching a conclusion from that would be inventing one.', correct: true, feedback: 'Many people will tell you confidently. Almost none cite a dated, multi-employer sample, and the ones who can will also tell you how narrow it is.' },
-          { label: 'Because hiring differs too much by country to generalise.', feedback: 'True and not the reason. The reason is that this course does not hold the evidence.' },
-          { label: 'Because the market changes too quickly to teach.', feedback: 'It does change quickly, which is why your sample expires. The absence here is of evidence rather than of currency.' },
+          { label: 'Its own evidence is two dated captures, and a conclusion drawn from two would be invented.', correct: true, feedback: 'Two captures from one day is not a study. Many people will tell you confidently what the market wants; few can cite a dated, multi-employer sample, and the ones who can will also tell you how narrow it is.', was: ['Because it holds two dated captures, which is not a study, and teaching a conclusion from that would be inventing one.'] },
+          { label: 'Hiring differs so much between countries and cities that no course could generalise about it.', feedback: 'Often true, and not the reason given here. The reason is that this course does not hold the evidence, which is also why you gather your own.', was: ['Because hiring differs too much by country to generalise.'] },
+          { label: 'The market moves so quickly that anything taught now would be out of date within months.', feedback: 'It does change quickly, which is why your own sample expires. The absence here is of evidence rather than of currency.', was: ['Because the market changes too quickly to teach.'] },
         ],
         repair: 'Write what the two captures do and do not establish in step 1. Record the change in step 5.',
         recheck: 'Your account adds nothing the course’s own note does not say.',
@@ -158,9 +159,9 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'A job site says four thousand remote design roles are open. Can you cite that?',
         options: [
-          { label: 'No. It is a number about what one site indexed under one query, counting duplicates, reposts and expired listings.', correct: true, feedback: 'Two sites give two different totals for the same day. Use an aggregator to collect employer names, then go to the employer’s own page for anything you will cite.' },
-          { label: 'Yes, with the site and the date named.', feedback: 'Naming the source does not give the number a denominator anybody can check.' },
-          { label: 'Yes, as a rough indication of demand.', feedback: 'Rough indication is doing a lot of work for a number that counts the same job four times.' },
+          { label: 'As a fact about one site’s search only: it counts duplicates, reposts and expired listings.', correct: true, feedback: 'Two sites give two different totals for the same day. Use an aggregator to collect employer names, then go to the employer’s own page for anything you will cite as evidence.', was: ['No. It is a number about what one site indexed under one query, counting duplicates, reposts and expired listings.'] },
+          { label: 'As evidence of demand, once the site, the search words and the date are written beside it.', feedback: 'Naming the source dates the number without giving it a denominator anybody can check.', was: ['Yes, with the site and the date named.'] },
+          { label: 'As a rough indication of demand, rounded down to allow for duplicates and reposts.', feedback: 'Rounding down guesses at an error nobody has measured, for a number that may count one job several times.', was: ['Yes, as a rough indication of demand.'] },
         ],
         repair: 'Write the source rule in step 3, separating finding from citing. Record the change in step 5.',
         recheck: 'Your rule lets you use an aggregator without citing one.',
@@ -168,14 +169,29 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Why write the sample’s limits before gathering rather than after?',
         options: [
-          { label: 'Because once you have findings, the limits you write are the ones your findings survive.', correct: true, feedback: 'The public-board bias is obvious before you have a result to protect. Written in advance it is a method note; written afterwards it is a concession.' },
-          { label: 'Because it saves time later.', feedback: 'It takes the same time either way. The difference is what you are willing to write.' },
-          { label: 'Because the plan should be complete before starting.', feedback: 'Tidy, and the real reason is about what you know when you write them.' },
+          { label: 'Once findings exist, the limits you choose tend to be the ones your findings survive.', correct: true, feedback: 'The public-board bias is obvious before you have a result to protect. Written in advance it is a method note; written afterwards it is a concession you are reluctant to make.', was: ['Because once you have findings, the limits you write are the ones your findings survive.'] },
+          { label: 'Limits written first take less time, because nothing has to be reread or rechecked later.', feedback: 'It takes about the same time either way. The difference is what you are willing to write once you know your findings.', was: ['Because it saves time later.'] },
+          { label: 'A plan should be complete before gathering starts, and limits are part of a complete plan.', feedback: 'Tidy and true, and it misses the reason: what you know when you write them changes what you write.', was: ['Because the plan should be complete before starting.'] },
         ],
         repair: 'Write the limits in step 4 now, before any gathering. Record the change in step 5.',
         recheck: 'At least one limit would weaken a finding you would like to have.',
       },
     ],
+    material: [
+      'The course’s own record, not made up: RESOURCE-LIBRARY.md row V01 and its vacancy table, gathered on 6 September 2026 from employers’ own boards, without an account.',
+      'Eight vacancy URLs were attempted. Captured: one full description (Atomicwork, Lead Product Designer, Bengaluru, hybrid, India-based, minimum three years) and one partial (HackerRank, Senior Product Designer, Bangalore: the application form loaded, the description did not, and the form asked about relocating and attending an office three days a week). Neither showed a posting date.',
+      'Not captured: six listings had already expired to the employer’s board index, and one host returned HTTP 403, a refusal.',
+      'The record lists nine outcomes for eight URLs and does not say which URL had two. Treat both captures as expired until re-checked; together they cannot show demand, pay, how common any requirement is, or what a junior role expects.',
+    ],
+    transfer: {
+      scenario: 'Made-up case: Your neighbour is deciding whether to pay for a course to become a bicycle mechanic. A shop owner told him “there’s huge demand, every shop is short of mechanics”, and a classifieds site shows 340 results for “bike mechanic” in his city today. He asks whether that settles it.',
+      prompt: 'Decide what each of the two claims can and cannot support, and name one dated check he could make before paying. Explain why.',
+      anchors: {
+        weak: 'Treats the shop owner’s remark or the 340 results as evidence of demand, or dismisses both without suggesting any check.',
+        adequate: 'Calls the remark an experienced opinion and the 340 a number about one site’s search (duplicates, reposts, expired ads), and suggests gathering dated listings from shops’ own pages or noticeboards.',
+        strong: 'Adequate, plus writes the limits before gathering — a dozen listings cannot show demand or pay, and they expire — and notes the owner may be describing his own shop, which is worth asking about as opinion.',
+      },
+    },
     saveRoute: {
       auto: 'Your account of the course’s limit, the plan, the source rule and the limits save as you type, on this device first and then online.',
       external: 'Nothing needs an account and nothing is published. The plan is for you, and the next lesson gathers against it.',
@@ -191,16 +207,18 @@ export const guided20: Record<string, Guided> = {
         { id: 'aggregator-note', label: 'Where you used an aggregator to find a name rather than a number', kind: 'short' },
       ] },
       { id: 'capture', title: 'Capture', fields: [
-        { id: 'captured-fields', label: 'Your capture table: one row per listing, every planned field filled', kind: 'long', hint: 'Employer, URL, retrieval date, title, seniority, location, remote policy, India eligibility.' },
+        { id: 'captured-fields', label: 'Your capture table: one row per listing, every planned field filled', kind: 'long', hint: 'Employer, URL, retrieval date, title and stated seniority. Eligibility, work location and hours get their own answers in step 4.' },
         { id: 'verbatim-requirements', label: 'The requirements, copied word for word rather than summarised', kind: 'long', hint: 'Summarising now loses the wording, and the wording is the evidence.' },
       ] },
       { id: 'failures', title: 'The failures', fields: [
         { id: 'failures-list', label: 'Every failure with its reason and date', kind: 'long', example: 'Example (made up): seven expired to a board index between finding and capture; three had no public careers page; two required an account, refused.' },
-        { id: 'failure-rate', label: 'Pages opened against listings captured', kind: 'short' },
+        { id: 'failure-rate', label: 'Pages opened, listings captured and failures, as three counts that add up', kind: 'short', example: 'Example (made up): twenty-six pages opened, fourteen listings captured, twelve failures (seven expired, three with no careers page, two account-gated).' },
       ] },
-      { id: 'eligibility', title: 'Eligibility, as stated', fields: [
-        { id: 'eligibility-stated', label: 'What each listing actually states about location and eligibility', kind: 'long' },
-        { id: 'nothing-stated', label: 'The listings that state nothing, recorded as stating nothing', kind: 'long', hint: 'Silence is the commonest case and it is data. Do not convert it into a yes or a no.' },
+      { id: 'eligibility', title: 'Eligibility, location and hours, as stated', fields: [
+        { id: 'eligibility-stated', label: 'Country eligibility, per listing: who they say they can hire and from where, in their words', kind: 'long', hint: 'Countries, work authorisation, visa sponsorship, contractor or employee. Copy the words. Remote is not an answer to this one.' },
+        { id: 'location-stated', label: 'Work location, per listing: remote, hybrid with the city and office days, or on-site and the city', kind: 'long', hint: 'Record the city and the number of office days for hybrid. Where the work happens says nothing about who can be hired.' },
+        { id: 'hours-stated', label: 'Working hours, per listing: any required overlap or core hours, and the same hours in IST', kind: 'long', hint: 'India does not change its clocks; Europe and the United States do, so note the date you converted.', example: 'Example (made up): “core hours 9:00–13:00 US Eastern” is 19:30–23:30 IST while the US is on standard time, and 18:30–22:30 IST in its summer.' },
+        { id: 'nothing-stated', label: 'For each listing, which of the three it leaves unstated, recorded as not stated', kind: 'long', hint: 'Silence is common and it is data. Do not convert it into a yes or a no, or borrow an answer from another field.' },
       ] },
       { id: 'close', title: 'Close the window', fields: [
         { id: 'totals', label: 'Total captured, total attempted, and the dates the window opened and closed', kind: 'short' },
@@ -241,7 +259,7 @@ export const guided20: Record<string, Guided> = {
       { expect: 'Every failure recorded with a reason and a date, and the rate of pages opened to listings captured.',
         fields: ['failures-list', 'failure-rate'],
         terms: [
-          { term: 'Failure rate', meaning: 'Pages opened against listings captured. It is the honest denominator, and it is usually about half.' },
+          { term: 'Failure rate', meaning: 'Pages opened against listings captured, with the failures between them. It is the honest denominator; in the made-up example, fourteen were captured from twenty-six opened.' },
           { term: 'Account-gated', meaning: 'A listing that will not load without signing up. This course records it as a refusal rather than treating it as an obstacle to work around.' },
         ],
         demo: {
@@ -259,46 +277,47 @@ export const guided20: Record<string, Guided> = {
         },
         start: 'Write the failures as they happen rather than reconstructing them at the end.',
         enough: 'Your record says how many pages produced how many listings.' },
-      { expect: 'What each listing states about location and eligibility, with silences recorded as silences.',
-        fields: ['eligibility-stated', 'nothing-stated'],
+      { expect: 'Each listing’s eligibility, work location and hours recorded separately in its own words, with silences recorded as silences.',
+        fields: ['eligibility-stated', 'location-stated', 'hours-stated', 'nothing-stated'],
         terms: [
-          { term: 'Stated eligibility', meaning: 'Words in the listing about who may be employed and from where. Rare, specific and worth copying exactly.' },
-          { term: 'Hybrid', meaning: 'Almost always an office, some days a week, in a named city. Record which city, because hybrid alone tells you nothing.' },
-          { term: 'Silence', meaning: 'Most listings say nothing about eligibility. It is neither permission nor refusal, and it must not be recorded as either.' },
+          { term: 'Stated eligibility', meaning: 'Words in the listing about who may be employed and from where, including work authorisation and visa sponsorship. Often missing, and worth copying exactly when present.' },
+          { term: 'Work location', meaning: 'Where the work happens: remote, hybrid with a named city and number of office days, or on-site. Hybrid alone tells you nothing, so record the city and the days.' },
+          { term: 'Time-zone overlap', meaning: 'Hours you must share with a team elsewhere. Convert them to IST with the date, because Europe and the United States move their clocks and India does not.' },
+          { term: 'Silence', meaning: 'Many listings say nothing on one or more of the three. Silence is neither permission nor refusal, and it must not be recorded as either.' },
         ],
         sorter: {
-          intro: 'Six made up lines from captured listings. For each one, decide what you can record.',
+          intro: 'Six made up lines from captured listings. For each one, decide what it lets you write in the country-eligibility field: who they can hire, and from where.',
           options: ['states eligibility', 'states nothing — record the silence', 'your inference, not theirs'],
           items: [
-            { id: 'anywhere-india', text: '“We can employ contractors in India, Brazil and Poland; employment elsewhere is through our EOR partner.”', answer: 'states eligibility',
+            { id: 'anywhere-india', text: '“We can hire people in India, Brazil and Poland as contractors; elsewhere we employ through an employer-of-record partner.”', answer: 'states eligibility',
               feedback: {
-                'states eligibility': 'Specific, and it names the arrangement as well as the country. Copy it exactly, including the word contractors.',
-                'states nothing — record the silence': 'It names India directly.',
-                'your inference, not theirs': 'No inference is needed.',
+                'states eligibility': 'Specific, and it names the arrangement as well as the countries. Copy it exactly, including the word contractors.',
+                'states nothing — record the silence': 'It names India directly as a country they can hire in.',
+                'your inference, not theirs': 'No inference is needed; the countries are in their words.',
               } },
             { id: 'remote-first', text: '“We are a remote-first company.”', answer: 'states nothing — record the silence',
               feedback: {
-                'states eligibility': 'Remote-first describes how the company works, not who it may employ.',
-                'states nothing — record the silence': 'It is about working arrangements, not eligibility. Most remote-first companies still employ in a short list of countries.',
+                'states eligibility': 'Remote-first describes how the company works, not who it may employ or from where.',
+                'states nothing — record the silence': 'It describes working arrangements, which belong in the location field if the role itself is remote. About who they can hire it says nothing.',
                 'your inference, not theirs': 'Recording it as silence is the opposite of inferring from it.',
               } },
-            { id: 'remote-means-can', text: 'A listing says remote, and you record that they can employ from India.', answer: 'your inference, not theirs',
+            { id: 'remote-means-can', text: 'A listing says remote, and you record that they can employ people based in India.', answer: 'your inference, not theirs',
               feedback: {
-                'states eligibility': 'The listing said remote, which is about place of work.',
-                'states nothing — record the silence': 'The listing is silent; the row is not, because you filled the silence.',
-                'your inference, not theirs': 'This is the commonest error in the whole capture, and it converts nine silences into nine yeses.',
+                'states eligibility': 'The listing said remote, which is about where the work happens.',
+                'states nothing — record the silence': 'The listing is silent on eligibility; the row is not, because you filled the silence.',
+                'your inference, not theirs': 'A common error. In a sample like the made-up fourteen it would turn eleven silences into eleven yeses.',
               } },
-            { id: 'hybrid-bengaluru', text: '“Hybrid — three days a week in our Bengaluru office.”', answer: 'states eligibility',
+            { id: 'hybrid-bengaluru', text: '“Hybrid — three days a week in our Bengaluru office.”', answer: 'states nothing — record the silence',
               feedback: {
-                'states eligibility': 'It states a place of work precisely, which settles eligibility for anybody who cannot be in Bengaluru three days a week.',
-                'states nothing — record the silence': 'It is specific about both the pattern and the city.',
-                'your inference, not theirs': 'Nothing is being inferred; record the city and the number of days.',
+                'states eligibility': 'It settles where you must be three days a week, which is the location field. Who they are able to hire there is a separate question this line does not answer.',
+                'states nothing — record the silence': 'It states the work location precisely: Bengaluru, three office days a week. About who they can hire it says nothing, so the eligibility field records not stated.',
+                'your inference, not theirs': 'Nothing is inferred yet. Writing “India only” in the eligibility field would be; that reading belongs in your inference list.',
               } },
-            { id: 'timezone-overlap', text: '“Four hours of overlap with Central European Time required.”', answer: 'states eligibility',
+            { id: 'timezone-overlap', text: '“Four hours of overlap with Central European Time required.”', answer: 'states nothing — record the silence',
               feedback: {
-                'states eligibility': 'A working-hours condition that is checkable against where you are. Record the hours rather than judging them.',
-                'states nothing — record the silence': 'It states a concrete requirement.',
-                'your inference, not theirs': 'The overlap requirement is theirs; whether you can meet it is a separate line.',
+                'states eligibility': 'It is checkable against where you are, and it is about hours, not about who may be hired. A company can hire in India and still need European hours.',
+                'states nothing — record the silence': 'It states working hours precisely, and they go in the hours field, converted to IST with the date. About who they can hire it says nothing.',
+                'your inference, not theirs': 'The overlap requirement is theirs; whether you can meet it is a separate line in your own notes.',
               } },
             { id: 'us-based-inferred', text: 'The company is based in the United States, so you record that it is unlikely to hire from India.', answer: 'your inference, not theirs',
               feedback: {
@@ -307,11 +326,11 @@ export const guided20: Record<string, Guided> = {
                 'your inference, not theirs': 'It may well be right and it belongs in a separate inference list, where somebody can see it is yours.',
               } },
           ],
-          then: 'Now go through your own rows and mark every eligibility entry as stated or inferred.',
-          pattern: 'Three of these state something checkable, one is a silence that sounds like a statement, and two are your judgement sitting in a field meant for theirs. The inferences are the ones that will later be reported as findings.',
+          then: 'Now go through your own rows: for each listing, check that eligibility, location and hours each hold the listing’s words or say not stated.',
+          pattern: 'One of these states eligibility; three state something precise about the company, the place or the hours and nothing about who can be hired; two are your judgement in a field meant for theirs. The precise-but-silent lines are the ones most often filed under the wrong field.',
         },
-        start: 'Copy the eligibility wording rather than deciding what it means.',
-        enough: 'Every eligibility entry is either their words or marked as yours.' },
+        start: 'Fill all three fields for one listing before moving to the next, copying the listing’s words.',
+        enough: 'For every listing, each of the three fields holds the listing’s words or says not stated.' },
       { expect: 'The window closed, with totals and dated local copies.',
         fields: ['totals', 'copies-where', 'improvement-made'],
         terms: [
@@ -326,38 +345,47 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Can you capture the listing from the job board where you found it?',
         options: [
-          { label: 'No. Go to the employer’s own page: board copies can be stale, retitled, or posted by an agency with no employer named.', correct: true, feedback: 'Checking three of twelve board captures found one filled a week earlier, one retitled and one with no employer at all. The consistency of a board is the board’s, not the employers’.' },
-          { label: 'Yes, if you record the board and the date.', feedback: 'That dates your copy of somebody else’s copy, which may not match what the employer published.' },
-          { label: 'Yes, for employers whose own site has no careers page.', feedback: 'That case is recorded as a failure rather than filled in from the board.' },
+          { label: 'Use the board to find the employer, then capture from the employer’s own careers page.', correct: true, feedback: 'Board copies can be stale, retitled, or posted by an agency with no employer named. Checking three of twelve board captures found one filled a week earlier, one retitled and one with no employer at all.', was: ['No. Go to the employer’s own page: board copies can be stale, retitled, or posted by an agency with no employer named.'] },
+          { label: 'Capture from the board whenever you record the board’s name and the date you copied it.', feedback: 'That dates your copy of somebody else’s copy, which may not match what the employer published.', was: ['Yes, if you record the board and the date.'] },
+          { label: 'Capture from the board for employers whose own website has no careers page at all.', feedback: 'That case is recorded as a failure rather than filled in from the board.', was: ['Yes, for employers whose own site has no careers page.'] },
         ],
         repair: 'Re-capture any board listing from the employer’s own page in step 2, or record it as a failure in step 3. Note the change in step 5.',
         recheck: 'Every row has a direct employer URL.',
       },
       {
-        question: 'Seven listings expired before you could capture them and two demanded an account. What do you do with those?',
+        question: 'You opened twenty-six employer pages and captured fourteen listings. Seven had expired, three companies had no careers page and two pages demanded an account. What do you do with those twelve?',
         options: [
-          { label: 'Record them, with reasons and dates, and report fourteen captured from twenty-six attempted.', correct: true, feedback: 'The failure rate says how the sample was selected and how quickly this evidence decays. Expiry within days is arguably the most useful thing the gathering found.' },
-          { label: 'Leave them out; they produced no data.', feedback: 'They produce the denominator, which is what makes the fourteen interpretable.' },
-          { label: 'Create accounts for the two gated ones to complete the sample.', feedback: 'This course records a gate as a refusal. Two missing listings cost less than an account you did not want.' },
+          { label: 'Record each with its reason and date, and report fourteen captured from twenty-six attempted.', correct: true, feedback: 'The failure counts say how the sample was selected and how quickly this evidence decays. Expiry within days is arguably the most useful thing the gathering found.', was: ['Record them, with reasons and dates, and report fourteen captured from twenty-six attempted.'] },
+          { label: 'Leave them out of the record, since a page that produced no listing gives you nothing to compare.', feedback: 'They produce the denominator, which is what makes the fourteen interpretable.', was: ['Leave them out; they produced no data.'] },
+          { label: 'Create accounts for the two gated listings so that the sample is as complete as possible.', feedback: 'This course records a gate as a refusal. Two missing listings cost less than an account you did not want.', was: ['Create accounts for the two gated ones to complete the sample.'] },
         ],
-        repair: 'Write every failure with its reason and date in step 3, and the rate. Note the change in step 5.',
+        repair: 'Write every failure with its reason and date in step 3, and the three counts. Note the change in step 5.',
         recheck: 'Your record says how many pages produced how many listings.',
       },
       {
-        question: 'A listing says “remote-first” and nothing about eligibility. What goes in the eligibility field?',
+        question: 'A listing says “remote-first” and nothing about who they can hire or what hours they need. What goes in your three fit fields?',
         options: [
-          { label: 'That the listing states nothing, recorded as a silence rather than as a yes or a no.', correct: true, feedback: 'Remote-first describes how the company works. Most remote-first companies still employ in a short list of countries, and nine silences converted into nine yeses is the commonest error in the whole capture.' },
-          { label: 'That they can probably employ from India.', feedback: 'That is your inference in a field meant for their words, and it will later be reported as a finding.' },
-          { label: 'That eligibility is unclear and needs asking.', feedback: 'Reasonable as a next step, and the field still records what the listing said, which is nothing.' },
+          { label: 'Location: their words, remote-first. Eligibility and hours: not stated, each recorded as a silence.', correct: true, feedback: 'Remote-first describes how the company works, not who it can hire or when. Filling the other two fields from it would put your guess where the listing’s words belong.', was: ['That the listing states nothing, recorded as a silence rather than as a yes or a no.'] },
+          { label: 'Location: remote. Eligibility: open to India, since remote-first companies hire widely. Hours: flexible.', feedback: 'That is your inference in two fields meant for their words, and it will later be reported as a finding.', was: ['That they can probably employ from India.'] },
+          { label: 'All three fields stay blank until you have asked the employer and had a reply.', feedback: 'Asking is a reasonable next step, and the fields still record what the listing said, which is one statement and two silences.', was: ['That eligibility is unclear and needs asking.'] },
         ],
-        repair: 'Mark every eligibility entry in step 4 as stated or inferred, and move the inferences out. Note the change in step 5.',
+        repair: 'Check every fit entry in step 4 holds the listing’s words or says not stated, and move any inference out. Note the change in step 5.',
         recheck: 'No silence has been converted into an answer.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: You are comparing evening cookery classes for a cousin. A listings site shows twelve. On the schools’ own pages, three classes no longer exist, one school needs an account to show dates, and two prices differ from the listings site.',
+      prompt: 'Decide what goes in your record for each problem and which figures count as captured, then explain why you chose that source as the evidence.',
+      anchors: {
+        weak: 'Keeps the listings site’s details because they are quicker, or records only the classes that worked, with no failures and no source.',
+        adequate: 'Captures eight from the schools’ own pages, using the school’s price where it differs; records four failures (three gone, one account-gated) with dates; reports eight captured from twelve attempted.',
+        strong: 'Adequate, plus treats the price mismatches as a sign the listings site is stale, saves a dated copy of each school page, and says what the eight cannot show, such as whether places are still free.',
+      },
+    },
     saveRoute: {
-      auto: 'Your employer list, capture table, failures and eligibility notes save as you type, on this device first and then online.',
+      auto: 'Your employer list, capture table, failures and the three fit fields save as you type, on this device first and then online.',
       external: 'The dated text copies stay in your own folder. Nothing is uploaded, and no listing that demanded an account was opened.',
-      creator: 'Your creator reads the failure rate and the eligibility column. A column with no silences in it usually means the silences were filled in.',
+      creator: 'Your creator reads the failure counts and the three fit fields. A fit column with no silences in it usually means the silences were filled in.',
       next: 'Open Your work and choose Ready for review. The next lesson compares the listings without inventing a market.',
     },
   },
@@ -367,6 +395,7 @@ export const guided20: Record<string, Guided> = {
       { id: 'counts', title: 'Counts, not percentages', fields: [
         { id: 'counts-written', label: 'Each requirement as a count out of your sample', kind: 'long', example: 'Example (made up): eleven of fourteen ask for a portfolio; nine ask for case studies showing process; six state a years minimum, from two to five.' },
         { id: 'sample-window', label: 'Your sample size and the window, written beside the counts', kind: 'short' },
+        { id: 'fit-counts', label: 'Eligibility, work location and hours, each counted separately out of your sample', kind: 'long', hint: 'Each set should add up to your sample size, silences included. Remote is a location count, not an eligibility count.', example: 'Example (made up): eligibility — two can employ people based in India, one UK right to work only, eleven not stated; location — six remote, five hybrid, three on-site; hours — four stated, ten not stated.' },
       ] },
       { id: 'contradictions', title: 'Keep the contradictions', fields: [
         { id: 'contradictions-kept', label: 'Requirements the listings disagree about, recorded as disagreements', kind: 'long', example: 'Example (made up): three expect the designer to run research; two say research is handled by a research team.' },
@@ -387,8 +416,8 @@ export const guided20: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'Each requirement written as a count out of your sample, with the size and window beside it.',
-        fields: ['counts-written', 'sample-window'],
+      { expect: 'Each requirement as a count out of your sample, the three fit fields counted separately, with the size and window beside them.',
+        fields: ['counts-written', 'sample-window', 'fit-counts'],
         terms: [
           { term: 'A count out of a sample', meaning: 'Nine of fourteen. It carries its own denominator, so nobody can mistake it for a rate across an industry.' },
           { term: 'Why not percentages', meaning: 'Sixty-four per cent of fourteen implies a sample nobody had. Module 15 made the same point about three participants.' },
@@ -489,8 +518,8 @@ export const guided20: Record<string, Guided> = {
             { id: 'remote-india-hard', text: '“Remote roles rarely consider candidates in India.”', answer: 'an inference — move it',
               feedback: {
                 'reportable as written': 'Rarely is a rate across a population you did not sample.',
-                'a market claim — rewrite as a count': 'The nearest count is two of fourteen state India eligibility and nine state nothing, which does not support rarely either way.',
-                'an inference — move it': 'Silence is not refusal. This is your reading of nine silences, and it belongs where a reader can see whose reading it is.',
+                'a market claim — rewrite as a count': 'The nearest counts are six remote listings, and two of fourteen saying they can employ people based in India with eleven saying nothing. Neither supports rarely, and remote is a different field from eligibility.',
+                'an inference — move it': 'Silence is not refusal. This is your reading of eleven silences, and it belongs where a reader can see whose reading it is.',
               } },
           ],
           then: 'Now search your own writing for the market, employers want and any per cent sign.',
@@ -501,11 +530,11 @@ export const guided20: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'You write that seventy-nine per cent of listings require a portfolio. Eleven of fourteen did. Is the percentage fine?',
+        question: 'You write that seventy-nine per cent of listings require a portfolio. Eleven of your fourteen did. What should the sentence say?',
         options: [
-          { label: 'No. It removes the denominator, so it reads as a property of the hiring market rather than of your fourteen listings.', correct: true, feedback: 'Seventy-nine per cent of what? The honest answer — fourteen listings, public boards, eleven days — undoes the sentence. Eleven of fourteen carries its own answer.' },
-          { label: 'It is fine with the sample size stated nearby.', feedback: 'Nearby is not in the sentence, and the sentence is what gets quoted.' },
-          { label: 'It is fine since the arithmetic is right.', feedback: 'The arithmetic is right and the implication is not.' },
+          { label: 'Eleven of the fourteen I captured, with the dates, so the denominator travels with the claim.', correct: true, feedback: 'Seventy-nine per cent of what? The honest answer — fourteen listings, public boards, eleven days — undoes the sentence. Eleven of fourteen carries its own answer.', was: ['No. It removes the denominator, so it reads as a property of the hiring market rather than of your fourteen listings.'] },
+          { label: 'Seventy-nine per cent, with a footnote giving the sample size and the dates of the window.', feedback: 'A footnote is not in the sentence, and the sentence is what gets quoted.', was: ['It is fine with the sample size stated nearby.'] },
+          { label: 'Seventy-nine per cent, since eleven divided by fourteen is 0.786 and rounding it is honest arithmetic.', feedback: 'The arithmetic is right and the implication is not: a percentage reads as a property of the hiring market rather than of your fourteen listings.', was: ['It is fine since the arithmetic is right.'] },
         ],
         repair: 'Rewrite every finding in step 1 as a count with its window in the same sentence. Record the change in step 5.',
         recheck: 'No finding in your writing is a percentage.',
@@ -513,24 +542,33 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Three listings want the designer to run research; two say a research team does it. What do you write?',
         options: [
-          { label: 'Both, as a disagreement, because it means these are two different jobs with one title.', correct: true, feedback: 'Some research involvement describes no job. Keeping the split gives you two applications: interviews and synthesis for one group, a decision record using somebody else’s findings for the other.' },
-          { label: 'That employers generally expect some research involvement.', feedback: 'A sentence both groups squeeze into and neither wants, describing a job nobody advertised.' },
-          { label: 'The majority position, since three is more than two.', feedback: 'Three against two in fourteen settles nothing, and the minority is a real kind of job.' },
+          { label: 'Both, kept as a disagreement: they describe two different jobs that share one title.', correct: true, feedback: 'Some research involvement describes no job. Keeping the split gives you two applications: interviews and synthesis for one group, a decision record using somebody else’s findings for the other.', was: ['Both, as a disagreement, because it means these are two different jobs with one title.'] },
+          { label: 'That employers generally expect some research involvement, which covers all five listings.', feedback: 'A sentence both groups squeeze into and neither wants, describing a job nobody advertised.', was: ['That employers generally expect some research involvement.'] },
+          { label: 'The majority position, three to two, with the minority mentioned as an exception.', feedback: 'Three against two in fourteen settles nothing, and the minority is a real kind of job rather than an exception.', was: ['The majority position, since three is more than two.'] },
         ],
         repair: 'Record the disagreement and what it tells you in step 2. Note the change in step 5.',
         recheck: 'At least one disagreement is kept rather than averaged.',
       },
       {
-        question: 'Nine of your listings said nothing about eligibility. Can you write that remote roles rarely consider candidates in India?',
+        question: 'Six of your fourteen listings are remote. Two say they can employ people based in India; eleven say nothing about who they can hire. Can you write that remote roles rarely consider candidates in India?',
         options: [
-          { label: 'No. Silence is not refusal, and rarely is a rate across a population you did not sample.', correct: true, feedback: 'The nearest count — two state eligibility, nine state nothing — supports neither direction. If you believe it, it goes in the inference list marked as yours.' },
-          { label: 'Yes, since only two stated it explicitly.', feedback: 'Two stating it and nine saying nothing is not evidence that the nine would refuse.' },
-          { label: 'Yes, if you say it is your impression.', feedback: 'Closer, and the place for it is the inference list rather than a sentence among the findings.' },
+          { label: 'Remote is about where the work happens and silence is not refusal, so neither supports rarely.', correct: true, feedback: 'If you believe it, it goes in the inference list marked as yours. The counts — six remote, two stating India, eleven silent — describe your fourteen and point in no direction about remote roles in general.', was: ['No. Silence is not refusal, and rarely is a rate across a population you did not sample.'] },
+          { label: 'Only two of the fourteen stated India explicitly, so rarely is a fair summary of this sample.', feedback: 'Two stating it and eleven saying nothing is not evidence that the eleven would refuse, and remote is a separate field.', was: ['Yes, since only two stated it explicitly.'] },
+          { label: 'As your own impression, placed among the findings with the two counts in the next sentence.', feedback: 'Closer, and the place for an impression is the inference list rather than a sentence among the findings.', was: ['Yes, if you say it is your impression.'] },
         ],
         repair: 'Move it to the inference list in step 3, marked as yours. Note the change in step 5.',
         recheck: 'Every line in the stated list could be quoted from a capture.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: A friend copied twenty reviews of a local gym from the gym’s own website over one week. Fifteen mention friendly staff, six complain about crowding at 7 p.m., and two say the showers were cold. She wants to post: “Seventy-five per cent of members love the staff, and evenings are always overcrowded.”',
+      prompt: 'Decide how she should rewrite that sentence so it stays true to her twenty reviews, and explain what it cannot claim.',
+      anchors: {
+        weak: 'Keeps the percentage or “always”, or treats twenty reviews as describing all members.',
+        adequate: 'Rewrites as counts with the sample and window — fifteen of twenty reviews on the gym’s own site that week mention friendly staff; six mention crowding at 7 p.m. — and drops “members love” and “always”.',
+        strong: 'Adequate, plus names who the sample misses (reviews the gym chose to show, people who never write reviews) and that it dates, and keeps any “members feel” reading in a separate list marked as her inference.',
+      },
+    },
     saveRoute: {
       auto: 'Your counts, contradictions, inference list, limits and sweep save as you type, on this device first and then online.',
       external: 'The captures stay in your own folder. Nothing here is published, and the comparison is for your own preparation.',
@@ -560,6 +598,9 @@ export const guided20: Record<string, Guided> = {
       { id: 'against', title: 'Read it against one listing', fields: [
         { id: 'listing-check', label: 'One captured listing, read requirement by requirement against your matrix', kind: 'long' },
         { id: 'today-evidenced', label: 'What you could evidence today, and what you could not', kind: 'long' },
+        { id: 'fit-eligibility', label: 'For that listing, country eligibility: their words about who they can hire and from where, and whether that includes you', kind: 'long', hint: 'If the listing is silent, write not stated and turn it into a question to ask, not a yes or a no.' },
+        { id: 'fit-location', label: 'For that listing, work location: remote, or the city and office days, and whether you can work there', kind: 'short' },
+        { id: 'fit-hours', label: 'For that listing, working hours: their required hours or overlap, the same hours in IST, and whether you can keep them', kind: 'long', example: 'Example (made up): four hours’ overlap with Central European Time; in winter CET 9:00–17:00 is 13:30–21:30 IST, so a 10:00–19:00 IST day overlaps from 13:30 to 19:00.' },
         improvementMade,
       ] },
     ],
@@ -610,7 +651,7 @@ export const guided20: Record<string, Guided> = {
             { id: 'shipped-production', text: 'Shipping to production, where nothing has been deployed to real users by an organisation.', answer: 'absent',
               feedback: {
                 evidenced: 'Nothing has shipped.',
-                partial: 'Partial implies some of it exists. A prototype used by one shop owner is a different row.',
+                partial: 'Partial implies some of it exists. A demonstration page shown to one shop owner is a different row.',
                 absent: 'Information rather than a verdict, and it is the row to rank against how often it appeared in your sample.',
               } },
             { id: 'constraints-memory', text: 'Working with constraints, which was true of all three projects and appears in one decision record and nowhere else.', answer: 'partial',
@@ -625,10 +666,10 @@ export const guided20: Record<string, Guided> = {
                 partial: 'Tempting, and the row asks what you can show somebody who wants to see the tool used.',
                 absent: 'Absent with a note that the course exists. A certificate beside an empty cell is the exact thing the next lesson is about.',
               } },
-            { id: 'team-engineers', text: 'Working in a team with engineers, where all three projects were done alone and one had a friend build the working version at weekends.', answer: 'absent',
+            { id: 'team-engineers', text: 'Working in a team with engineers, where all three projects were done alone and a friend who writes software reviewed one project’s HTML and fixed a date bug.', answer: 'absent',
               feedback: {
-                evidenced: 'One person building something for you at weekends is not working in a team.',
-                partial: 'The handover to that friend is adjacent evidence worth naming, and the row itself is empty.',
+                evidenced: 'One person reviewing your code once is not working in a team.',
+                partial: 'The review is adjacent evidence worth naming, credited by role, and the row itself is empty.',
                 absent: 'Almost certainly your top-ranked absence, and it is the one that cannot be closed alone.',
               } },
           ],
@@ -650,7 +691,7 @@ export const guided20: Record<string, Guided> = {
             { label: 'What I argued to myself', text: 'That one real measurement with matched periods is more than most junior applicants hold, so the row should be evidenced.' },
             { label: 'What was true in that', text: 'All of it. It is a good measurement, carefully done, and the argument is not dishonest.' },
             { label: 'What upgrading cost', text: 'The reason disappeared. Partial with one project measured, two not tells me what to do next; evidenced tells me nothing and will not survive being asked about the other two.' },
-            { label: 'What I wrote instead', text: 'Partial: measured once, with matched five-day periods and a public holiday confound recorded. Not measured in the other two projects.' },
+            { label: 'What I wrote instead', text: 'Partial: measured once — after the shop changed its job slips, the owner’s tally went from eleven progress-chasing calls over five working days to seven over the next five, one uncontrolled comparison. Not measured in the other two projects.' },
           ],
           wrongTurn: 'The wrong turn is upgrading a partial because it compares well to other people, which is a different question from what the cell asks. The reason written beside a partial is the part you actually use.',
           tradeoff: 'A matrix with fewer evidenced rows is less encouraging to look at on a bad day.',
@@ -666,23 +707,35 @@ export const guided20: Record<string, Guided> = {
         ],
         start: 'Count the listings mentioning each absence and order by the count.',
         enough: 'The ranking carries its sample and window with it.' },
-      { expect: 'One captured listing read against the matrix, with what you could evidence today.',
-        fields: ['listing-check', 'today-evidenced', 'improvement-made'],
+      { expect: 'One captured listing read against the matrix: what you could evidence today, and fit checked separately for eligibility, location and hours.',
+        fields: ['listing-check', 'today-evidenced', 'fit-eligibility', 'fit-location', 'fit-hours', 'improvement-made'],
         terms: [
           { term: 'Reading against one listing', meaning: 'The matrix in use. It turns twenty-one abstract rows into a specific answer about one job.' },
           { term: 'Today', meaning: 'What you could show this afternoon. Not what you could prepare, learn or explain.' },
+          { term: 'Three fit lines', meaning: 'Can they hire you where you are; can you work where the work happens; can you keep the hours in IST. Remote answers only the second.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
+        supported: {
+          material: 'A made-up captured listing, dated as an illustration only: “Product Designer. Fully remote. We can employ people based in India through our local entity. Core collaboration hours 9:00–13:00 US Eastern.” You live in Pune and work 10:00–19:00 IST. US Eastern time is 10½ hours behind IST in the US winter and 9½ hours behind in its summer; India does not change its clocks.',
+          question: 'Which fit reading keeps the three constraints apart?',
+          options: [
+            { label: 'Eligibility and location fit; the hours do not, since their core hours fall almost wholly after your day.', correct: true, feedback: 'Three separate answers. Their words settle eligibility and remote settles location. 9:00–13:00 Eastern is 19:30–23:30 IST in the US winter and 18:30–22:30 in its summer, so the hours are the open question: worth asking whether they flex, not assuming.' },
+            { label: 'A good fit overall: remote and open to India, so the hours can be worked out after an offer arrives.', feedback: 'The hours are a stated requirement, not a detail for later. Four evening hours every working day is a real condition to decide on before applying.' },
+            { label: 'Not a real fit: a company with US core hours will not genuinely hire from India, whatever it says.', feedback: 'The listing states eligibility in its own words. Replacing them with your judgement about US companies is an inference in a field meant for theirs.' },
+            { label: 'A fit on all three: fully remote work means you can choose your own hours wherever you live.', feedback: 'Remote describes where the work happens. The listing states the hours separately, and they are fixed.' },
+          ],
+          then: 'Now write your own three fit lines for the listing you chose, converting any hours to IST with the date.',
+        },
         start: 'Pick a listing you would actually apply to and go requirement by requirement.',
-        enough: 'You can say which of its requirements you could evidence this afternoon.' },
+        enough: 'You can say which requirements you could evidence today, and each fit line quotes the listing or says not stated.' },
     ],
     checks: [
       {
         question: 'You can definitely work with constraints — all three projects had them. Does the row get marked evidenced?',
         options: [
-          { label: 'Only if you can name a file. Constraints get worked around rather than written down, so the doing often leaves no trace.', correct: true, feedback: 'Six of sixteen evidenced marks lost their file in one pass. Capability and evidence are different columns, and the matrix asks about the second.' },
-          { label: 'Yes, since it is true of every project.', feedback: 'True and unshowable is exactly what partial is for.' },
-          { label: 'Yes, because an interviewer will ask about it rather than read a file.', feedback: 'They will ask, and the answer is much better when a decision record sits behind it.' },
+          { label: 'Only if you can name the file that shows it; otherwise it is partial, with that reason written.', correct: true, feedback: 'Constraints get worked around rather than written down, so the doing often leaves no trace. In one pass, six of sixteen evidenced marks lost their file; capability and evidence are different columns.', was: ['Only if you can name a file. Constraints get worked around rather than written down, so the doing often leaves no trace.'] },
+          { label: 'Evidenced, since it is true of every project and you could describe each constraint in detail.', feedback: 'True and unshowable is exactly what partial is for; describing it is a memory, not an artefact.', was: ['Yes, since it is true of every project.'] },
+          { label: 'Evidenced, because an interviewer will ask you about it rather than open a file to check.', feedback: 'They will ask, and the answer is much stronger when a decision record sits behind it.', was: ['Yes, because an interviewer will ask about it rather than read a file.'] },
         ],
         repair: 'Put a file name beside every evidenced mark in step 2 and downgrade the ones with none. Record the change in step 5.',
         recheck: 'No evidenced mark is missing a file name.',
@@ -690,24 +743,33 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Your matrix has a lot of empty cells. Does that mean you are not ready?',
         options: [
-          { label: 'It means you can name which cells are empty. Everybody’s matrix has them; most people cannot say which.', correct: true, feedback: 'Absence is information rather than a verdict. Ranked by how often each appeared in your sample, the empty cells become a plan.' },
-          { label: 'It means there is more to do before applying.', feedback: 'There always is, and waiting for a full matrix has its own cost. The next lesson closes one.' },
-          { label: 'It depends on how many are empty.', feedback: 'It depends far more on which, and on how often those appeared in your listings.' },
+          { label: 'It means you can name your gaps, which is what lets you prepare for them and apply honestly.', correct: true, feedback: 'Absence is information rather than a verdict. Most people’s matrices have empty cells and few can say which; ranked by how often each appeared in your sample, yours become a plan.', was: ['It means you can name which cells are empty. Everybody’s matrix has them; most people cannot say which.'] },
+          { label: 'It means there is more to close before applying, starting with the absences that appeared most often.', feedback: 'There always is more, and waiting for a full matrix has its own cost. The next lesson closes one gap; the rest can be named honestly.', was: ['It means there is more to do before applying.'] },
+          { label: 'It depends on how many cells are empty compared with how many are marked evidenced.', feedback: 'It depends far more on which cells, and on how often those appeared in your listings.', was: ['It depends on how many are empty.'] },
         ],
         repair: 'Rank the absences by frequency in step 4 and attach the sample caveat. Record the change in step 5.',
         recheck: 'The ranking carries its sample and window with it.',
       },
       {
-        question: 'One project has a careful before-and-after measurement; two have nothing. Evidenced or partial?',
+        question: 'One project has a careful before-and-after count — eleven progress-chasing calls over five working days, then seven over the next five; two projects have nothing. Evidenced or partial?',
         options: [
-          { label: 'Partial, with the reason: measured once, with the conditions, and not measured in the other two.', correct: true, feedback: 'The reason is the part you use. Evidenced tells you nothing and does not survive being asked about the other two projects.' },
-          { label: 'Evidenced, since one careful measurement is more than most people hold.', feedback: 'Comparing to other applicants answers a different question from the one the cell asks.' },
-          { label: 'Evidenced, with a footnote about the other two.', feedback: 'That is a partial with its reason, marked a level up.' },
+          { label: 'Partial, with the reason beside it: measured once, with its conditions, not in the other two.', correct: true, feedback: 'The reason is the part you use. Evidenced tells you nothing and does not survive being asked about the other two projects.', was: ['Partial, with the reason: measured once, with the conditions, and not measured in the other two.'] },
+          { label: 'Evidenced, since one careful measurement over matched periods is more than most junior applicants hold.', feedback: 'Comparing yourself with other applicants answers a different question from the one the cell asks.', was: ['Evidenced, since one careful measurement is more than most people hold.'] },
+          { label: 'Evidenced, with a footnote saying the other two projects were never measured at all.', feedback: 'That is a partial with its reason, marked a level up.', was: ['Evidenced, with a footnote about the other two.'] },
         ],
         repair: 'Write what is missing beside every partial in step 3 rather than how close it is. Record the change in step 5.',
         recheck: 'Every partial says what would make it evidenced.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: A city museum’s listing for weekend volunteer guides asks for confident public speaking, knowledge of local history, experience guiding groups of twenty or more, and two Saturdays a month. Priya has given three talks at her book club (notes and the club’s emailed thanks kept), has read widely on local history but written nothing, has never guided a group, and is free most Saturdays.',
+      prompt: 'Mark each requirement evidenced, partial or absent, and decide which gap to work on first. Explain each mark by what she could point at.',
+      anchors: {
+        weak: 'Marks local history evidenced because she knows a lot, or marks group guiding partial because she has given talks.',
+        adequate: 'Public speaking evidenced (talk notes, emailed thanks); local history partial (knowledge, no artefact); group guiding absent; Saturdays answered as a fit question rather than as evidence.',
+        strong: 'Adequate, plus ranks the gaps with a closable first step, such as writing a short walking route to turn local history into an artefact, and notes the club’s thanks shows the talks happened, not how good they were.',
+      },
+    },
     saveRoute: {
       auto: 'Your rows, marks, partial reasons and ranking save as you type, on this device first and then online.',
       external: 'The matrix is a working document for the months after this course, so keep a copy in your own folder too.',
@@ -727,8 +789,8 @@ export const guided20: Record<string, Guided> = {
         { id: 'work-date', label: 'The date you will do it by', kind: 'short', hint: 'Without a date it does not happen. A fortnight is usually enough.' },
       ] },
       { id: 'do', title: 'Do it', fields: [
-        { id: 'what-happened', label: 'What happened, including anything that went wrong', kind: 'long' },
-        { id: 'consent-artefact', label: 'The artefact, its date, and the consent if another person was involved', kind: 'long', hint: 'Same rules as Module 6: what they agreed to, in writing, before anything is recorded.' },
+        { id: 'what-happened', label: 'What happened to the work, including anything that went wrong', kind: 'long', sensitive: true, hint: 'Describe anybody involved by role only, and record what the work did, never anything about a person’s health or circumstances. Raw notes stay in a private folder with a deletion date.' },
+        { id: 'consent-artefact', label: 'The artefact and its date, and if another person was involved, where their consent record is kept (not the record itself)', kind: 'long', sensitive: true, hint: 'Same rules as Module 5: what they agreed to, in writing, before anything is recorded. Write the file name and date here; the signed record stays in your private folder.' },
       ] },
       { id: 'update', title: 'Update the matrix', fields: [
         { id: 'cell-updated', label: 'The cell, its new mark and the artefact behind it', kind: 'long' },
@@ -773,7 +835,7 @@ export const guided20: Record<string, Guided> = {
       { expect: 'The work done, with what went wrong, the artefact dated, and consent where somebody else was involved.',
         fields: ['what-happened', 'consent-artefact'],
         terms: [
-          { term: 'Consent first', meaning: 'The same rules as Module 6. What you are doing, what will be recorded, where it may appear, and what they can withdraw.' },
+          { term: 'Consent first', meaning: 'The same rules as Module 5. What you are doing, what will be recorded, where it may appear, and what they can withdraw.' },
           { term: 'What went wrong', meaning: 'Part of the artefact. A session where two things failed is better evidence than one where nothing did.' },
         ],
         demo: {
@@ -783,13 +845,13 @@ export const guided20: Record<string, Guided> = {
             { label: 'What the matrix cell said afterwards', text: 'Partial. Exactly what it said before, because the row asks what you can show somebody about testing with disabled people, and I had a certificate about knowing things.' },
             { label: 'What closed it', text: 'Forty minutes with somebody who uses a screen reader daily, arranged through a local organisation, with consent and a small thank-you.' },
             { label: 'What that session produced', text: 'Two failures my keyboard pass had missed, both in the same form, a repair made that week, and a re-test in a second short session.' },
-            { label: 'What the cell says now', text: 'Evidenced, with a dated recording, the repair, and the re-test. The certificate sits beside it and carries none of the weight.' },
+            { label: 'What the cell says now', text: 'Evidenced, with dated session notes about the page, the repair and the re-test; the consent record stays in a private folder. The certificate sits beside it and carries none of the weight.' },
           ],
           wrongTurn: 'The wrong turn is closing a gap with a course, because courses are available, scheduled and finish with something that looks like proof. A certificate is evidence of a course; an artefact is evidence of the skill.',
           tradeoff: 'Arranging a session with a real person takes longer than a course, involves being turned down, and depends on somebody else’s time.',
           uncertainty: 'Still unknown: whether one session generalises. It is one person’s experience of one page, and the artefact says so.',
         },
-        start: 'Write and send the consent before arranging anything else.',
+        start: 'If another person is involved, write and send the consent before arranging anything else; working solo, write down the artefact you expect first.',
         enough: 'You have a dated artefact and, where another person was involved, their consent in writing.' },
       { expect: 'The matrix cell updated with the new artefact, and the previous mark kept visible.',
         fields: ['cell-updated', 'history-kept'],
@@ -831,14 +893,14 @@ export const guided20: Record<string, Guided> = {
             { id: 'redesign-famous-app', text: 'Redesigning a well-known app’s screens as a personal exercise, to show product thinking.', answer: 'a badge on the same gap',
               feedback: {
                 'closes it with an artefact': 'It produces screens, with no problem, no research and no outcome behind them.',
-                'a badge on the same gap': 'The commonest version of this mistake, and Module 19 covered what a folder of screens can evidence: taste.',
+                'a badge on the same gap': 'A common version of this mistake, and Module 19 covered what a folder of screens can evidence: taste.',
                 'needs a role you do not have': 'It needs nothing, which is the difficulty.',
               } },
-            { id: 'handover-friend', text: 'Writing a handover document for the friend who built your prototype, with the decisions and the reasons.', answer: 'closes it with an artefact',
+            { id: 'handover-friend', text: 'Writing a handover note for the shop owner that explains your project’s decisions and the reasons for them.', answer: 'closes it with an artefact',
               feedback: {
                 'closes it with an artefact': 'A real artefact from real work with another person. It is not team experience, and it is the nearest adjacent evidence to it.',
                 'a badge on the same gap': 'Something was written, used and can be read.',
-                'needs a role you do not have': 'The friend already exists; the document did not.',
+                'needs a role you do not have': 'The owner already exists; the note did not.',
               } },
             { id: 'analytics-at-scale', text: 'Working with analytics on a product with a hundred thousand users.', answer: 'needs a role you do not have',
               feedback: {
@@ -857,19 +919,19 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Your top-ranked gap is working with engineers. Should that be the one you close?',
         options: [
-          { label: 'Only if you can close it with the access you already have. Frequency says which gap matters; access says which one you can close this month.', correct: true, feedback: 'Three weeks of open-source approaches produced one reply and no work. Dropping to the second-ranked gap produced a dated artefact in a fortnight.' },
-          { label: 'Yes, since it appeared in most of your listings.', feedback: 'It is the reason it is ranked first and not the reason it is closable.' },
-          { label: 'Yes, and give it longer than a fortnight.', feedback: 'Longer may work and it depends on other people deciding to include you, which is not a plan you control.' },
+          { label: 'Only if your current access lets you close it; otherwise take the highest gap you can close.', correct: true, feedback: 'Frequency says which gap matters; access says which one you can close this month. Three weeks of open-source approaches produced one reply and no work, while the second-ranked gap produced a dated artefact in a fortnight.', was: ['Only if you can close it with the access you already have. Frequency says which gap matters; access says which one you can close this month.'] },
+          { label: 'It should be, because it appeared in more of your listings than any other absence did.', feedback: 'That is why it is ranked first, not why it is closable.', was: ['Yes, since it appeared in most of your listings.'] },
+          { label: 'It should be, given longer than a fortnight and approached through several projects at once.', feedback: 'Longer may work, and it depends on other people deciding to include you, which is not a plan you control.', was: ['Yes, and give it longer than a fortnight.'] },
         ],
         repair: 'Choose a closable gap in step 1 and write why the one above it is not this month’s work. Record the change in step 5.',
         recheck: 'Your chosen gap can be closed with the access you already have.',
       },
       {
-        question: 'You completed a twelve-hour accessibility course with a certificate. Does the cell move?',
+        question: 'Your accessibility cell is partial because every check was self-run. You then complete a twelve-hour accessibility course with a certificate. Does the cell move?',
         options: [
-          { label: 'No. The row asks what you can show about testing with disabled people, and a certificate shows a completed course.', correct: true, feedback: 'Forty minutes with somebody who uses a screen reader produced two missed failures, a repair and a re-test. That moved the cell; the certificate sits beside it.' },
-          { label: 'Yes, since the course taught the skill.', feedback: 'It taught knowledge about it, which is worth having and is not the artefact the cell asks for.' },
-          { label: 'Partly — it should move from absent to partial.', feedback: 'The cell was already partial from self-run checks, and the course did not change what could be shown.' },
+          { label: 'It stays partial: the row asks what you can show about testing, and the certificate shows a course.', correct: true, feedback: 'Forty minutes with somebody who uses a screen reader produced two missed failures, a repair and a re-test; that moved the cell. The certificate sits beside it and carries none of the weight.', was: ['No. The row asks what you can show about testing with disabled people, and a certificate shows a completed course.'] },
+          { label: 'It moves to evidenced, since the course taught the skill the row describes and ended with an assessment.', feedback: 'It taught knowledge about the skill, which is worth having and is not the artefact the cell asks for.', was: ['Yes, since the course taught the skill.'] },
+          { label: 'It moves up a level, from partial to evidenced, with the certificate named as the artefact.', feedback: 'Naming the certificate as the artefact is the badge on the same gap: it shows the course, not the testing.', was: ['Partly — it should move from absent to partial.'] },
         ],
         repair: 'Do the smallest real work in step 3 and update the cell with the artefact in step 4. Record the change in step 5.',
         recheck: 'The cell names a dated artefact rather than a course.',
@@ -877,14 +939,23 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Shipping to production cannot be closed alone. What goes in your matrix?',
         options: [
-          { label: 'An honest statement of the gap with the nearest adjacent evidence named.', correct: true, feedback: 'Nobody closes it alone, and saying so is the answer rather than a confession. A handover document is not team experience and it is the closest artefact to it.' },
-          { label: 'A plan for how you would close it given the chance.', feedback: 'Fine to mention and it evidences nothing today.' },
-          { label: 'Nothing — leave the cell empty.', feedback: 'The empty cell is right and the sentence beside it is what you will actually use when asked.' },
+          { label: 'The cell stays absent, with a sentence naming the gap and your nearest adjacent evidence.', correct: true, feedback: 'Nobody closes it alone, and saying so is the answer rather than a confession. A handover note is not team experience and it is the closest artefact to it.', was: ['An honest statement of the gap with the nearest adjacent evidence named.'] },
+          { label: 'A plan for how you would close it given the chance, so that the cell reads as work in progress.', feedback: 'Fine to mention, and it evidences nothing today; a cell marked in progress invites the question you cannot answer.', was: ['A plan for how you would close it given the chance.'] },
+          { label: 'Nothing at all: leave the cell empty so that nobody reads it as more than it is.', feedback: 'The empty cell is right, and the sentence beside it is what you will actually use when asked.', was: ['Nothing — leave the cell empty.'] },
         ],
         repair: 'Write the honest sentence and the adjacent evidence in step 5. Record the change there too.',
         recheck: 'The statement names the gap and the nearest artefact you hold.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: Ravi wants to move from shop work to a junior bookkeeping job. His absences, ranked by how often listings named them: a specific accounting package, reconciling real accounts, and running payroll; spreadsheet formulas are partial (self-taught, no file to show). He has free evenings and a friend who runs a small café and keeps paper receipts.',
+      prompt: 'Choose one gap to close this month and the smallest work that would leave an artefact. Explain why that gap, and what he should say about one he cannot close yet.',
+      anchors: {
+        weak: 'Signs up for a course or certificate in the accounting package and calls the gap closed, or plans to tackle all of them at once.',
+        adequate: 'Chooses a gap his access allows, such as reconciling one month of the café’s receipts with the owner’s agreement, leaving a dated workbook as the artefact; the rest stay ranked.',
+        strong: 'Adequate, plus states payroll as needing a role he does not have, names the nearest adjacent evidence, and keeps the café’s figures private, sharing only a summary the owner has agreed to.',
+      },
+    },
     saveRoute: {
       auto: 'Your chosen gap, plan, what happened and the updated cell save as you type, on this device first and then online.',
       external: 'Recordings and consent records stay in your own folder. Nothing is published, and nothing here needs a paid course or a subscription.',
@@ -897,11 +968,13 @@ export const guided20: Record<string, Guided> = {
     worksheet: [
       { id: 'draft', title: 'Draft one page', fields: [
         { id: 'draft-entries', label: 'Your entries, in plain structure, on one page', kind: 'long' },
-        { id: 'did-happened', label: 'For each entry: what you did, and what happened', kind: 'long', hint: 'Two lines. What happened is a count where you measured, and a plain statement where you did not.' },
+        { id: 'did-happened', label: 'For each entry: what you did, and what happened', kind: 'long', hint: 'Two lines. What happened is a count with its period where you measured, and a plain statement where you did not. Avoid reduced or increased unless the evidence can carry the cause.' },
       ] },
       { id: 'map', title: 'Map every line', fields: [
         { id: 'traced-lines', label: 'Each line traced to a matrix cell or an artefact', kind: 'long' },
         { id: 'removed-rewritten', label: 'What you removed or rewrote because nothing was behind it', kind: 'long' },
+        { id: 'revision-source', label: 'One requirement from a vacancy you captured: the employer, the retrieval date and the requirement in its own words', kind: 'long', hint: 'Use your own capture from the gathering lesson, not this lesson’s examples. An expired listing still counts: the capture is what it said that day.' },
+        { id: 'revision-line', label: 'One of your lines before and after revising it to answer that requirement, and the artefact behind the after', kind: 'long', hint: 'Keep counts with their period, say who did what, and keep any condition that weakens the result. If you cannot evidence what the listing asks, leave it unclaimed.', example: 'Example (made up): before, “Measured the impact of a status page.” After, “Set up a tally with the owner: eleven progress-chasing calls in five working days before the shop changed its job slips, seven in the five after.” Artefact: the two tally sheets.' },
       ] },
       { id: 'labels', title: 'Label the categories', fields: [
         { id: 'categories-labelled', label: 'Each project marked self-directed, course or paid', kind: 'long' },
@@ -912,7 +985,7 @@ export const guided20: Record<string, Guided> = {
         { id: 'plain-read', label: 'What it looks like pasted into a plain text editor', kind: 'long' },
       ] },
       { id: 'challenge', title: 'The challenge pass', fields: [
-        { id: 'challenger-found', label: 'The lines somebody else challenged and you could not defend', kind: 'long' },
+        { id: 'challenger-found', label: 'The lines that were challenged and could not be defended, and who challenged: a person, by role, or your own labelled self-review', kind: 'long', hint: 'Nobody available? Wait a day, then ask of each line: what file is behind this, over what period, who did it? Label the result self-review; someone else’s challenge is still to come.' },
         { id: 'what-changed', label: 'What you rewrote or removed as a result', kind: 'long' },
         improvementMade,
       ] },
@@ -921,7 +994,7 @@ export const guided20: Record<string, Guided> = {
       { expect: 'A one-page draft in plain structure, each entry saying what you did and what happened.',
         fields: ['draft-entries', 'did-happened'],
         terms: [
-          { term: 'What happened', meaning: 'The outcome line. A count where you measured, and nothing was measured where you did not. Both are better than improved.' },
+          { term: 'What happened', meaning: 'The outcome line: a count with its period where you measured, and nothing was measured where you did not. Both are better than improved.' },
           { term: 'One page', meaning: 'What gets read. Everything that matters about three self-directed projects fits, and the second page is where unsupported lines collect.' },
         ],
         demo: {
@@ -929,7 +1002,7 @@ export const guided20: Record<string, Guided> = {
           beats: [
             { label: 'What I built', text: 'Two columns, a colour band, a skills section with proficiency bars, and my name set in something distinctive. It looked like the work of somebody who can design.' },
             { label: 'What happened when I pasted it into a plain text box', text: 'The columns interleaved. My job titles landed inside the middle of project descriptions, and one line read designed working alone Bengaluru 2024 research synthesis.' },
-            { label: 'Why that matters', text: 'Application systems extract the text. So does anybody copying a line into a message. A resume that cannot be parsed is not read carefully; it is skimmed and set aside.' },
+            { label: 'Why that matters', text: 'Many application systems extract the text. So does anybody copying a line into a message. A resume that cannot be parsed is not read carefully; it is skimmed and set aside.' },
             { label: 'What the bars were saying', text: 'Accessibility at seventy per cent. A number with no denominator, about a skill, invented. My own matrix says partial, with a reason.' },
             { label: 'What I have now', text: 'One column, plain headings, real text in the PDF, and the matrix words instead of bars. The portfolio shows the design.' },
           ],
@@ -937,28 +1010,41 @@ export const guided20: Record<string, Guided> = {
           tradeoff: 'A plain resume looks like everybody else’s at a glance, which is uncomfortable for exactly the reason it works.',
           uncertainty: 'Still unknown: whether any of the companies I applied to parse automatically. Two of the fourteen listings used a system that visibly did.',
         },
+        supported: {
+          material: 'Made-up record from the course’s practice repair-shop project. After the shop changed how it wrote its job slips, the owner’s tally showed eleven progress-chasing calls over the five working days before the change and seven over the five working days after. Nothing else was controlled. The status page you designed was only a demonstration that no customer used. You did the research; the owner kept the tally.',
+          question: 'Which outcome line could you defend under questioning?',
+          options: [
+            { label: 'Owner’s tally after the job-slip change: eleven progress calls in five working days before, seven in five after.', correct: true, feedback: 'Counts, each with its period, who kept them, and what changed. It claims what was counted and leaves the cause open, which is what survives the follow-up. Say separately that the page was a demonstration.' },
+            { label: 'Reduced progress calls from eleven a day to seven a day with a new status page, over two matched weeks.', feedback: 'The tally was eleven over five working days, not eleven a day; a day multiplies the claim by five. The page was a demonstration nobody used, so it cannot have reduced anything.' },
+            { label: 'Cut progress calls by 36 per cent in the first working week after the new job slips were introduced.', feedback: 'Four fewer calls out of eleven is 36 per cent, and the percentage is the part that travels without its tiny counts and its single uncontrolled comparison. Cut also claims the cause.' },
+            { label: 'Improved the shop’s customer communication, which the owner confirmed had reduced his interruptions.', feedback: 'The owner’s impression is worth quoting as his, and the line turns it into an outcome nobody measured.' },
+          ],
+          then: 'Now write your own what-happened lines with each count’s period, who counted, and what changed, leaving the cause open unless your evidence can carry it.',
+        },
         start: 'Write it as plain text first, and format afterwards.',
         enough: 'Every entry has a did line and a happened line.' },
-      { expect: 'Every line traced to a matrix cell or an artefact, with the untraceable ones removed or rewritten.',
-        fields: ['traced-lines', 'removed-rewritten'],
+      { expect: 'Every line traced to a matrix cell or artefact, untraceable ones removed or rewritten, and one line revised against a requirement from your captures.',
+        fields: ['traced-lines', 'removed-rewritten', 'revision-source', 'revision-line'],
         terms: [
           { term: 'Tracing', meaning: 'Putting the matrix beside the resume and checking line against cell. It takes twenty minutes and it is what makes the document defensible.' },
           { term: 'Untraceable', meaning: 'Nothing behind it. Either weaken it to what the artefact supports, or take it out.' },
+          { term: 'A count and its period', meaning: 'Eleven calls in five working days is not eleven a day; writing a day multiplies the claim by five. The period travels with the count.' },
+          { term: 'Revising against a capture', meaning: 'Rewriting one of your own lines to answer a requirement from a vacancy you captured, using only what your artefact supports. Not adopting a model line.' },
         ],
         sorter: {
-          intro: 'Six made up resume lines from a learner with three self-directed projects. For each one, decide what it is.',
+          intro: 'Seven made up resume lines from a learner with three self-directed projects. For each one, decide what it is.',
           options: ['maps to an artefact', 'claims more than the artefact', 'unverifiable — cut it'],
           items: [
-            { id: 'eleven-to-seven', text: '“Designed a job-status page for a repair shop; progress calls fell from eleven to seven a day over matched five-day periods.”', answer: 'maps to an artefact',
+            { id: 'eleven-to-seven', text: '“Researched how a repair shop handled progress calls; after it changed its job slips, the owner’s tally went from eleven calls over five working days to seven over the next five.”', answer: 'maps to an artefact',
               feedback: {
-                'maps to an artefact': 'Two tally sheets sit behind it, and the periods are stated. It survives the obvious follow-up question.',
-                'claims more than the artefact': 'It claims exactly what was counted, including the matching.',
+                'maps to an artefact': 'Two tally sheets sit behind it, the periods are stated, and the owner is named as the counter. It claims a count, not a cause, so it survives the obvious follow-up question.',
+                'claims more than the artefact': 'It claims exactly what was counted, per period, and leaves the cause open.',
                 'unverifiable — cut it': 'The sheets exist and are dated.',
               } },
             { id: 'led-design', text: '“Led design on three products.”', answer: 'claims more than the artefact',
               feedback: {
                 'maps to an artefact': 'The projects are real; led implies people led.',
-                'claims more than the artefact': 'Designed, working alone is the same work stated accurately. Led is the single commonest inflation on a junior resume.',
+                'claims more than the artefact': 'Designed, working alone is the same work stated accurately. Led is a very common inflation on a junior resume.',
                 'unverifiable — cut it': 'The underlying work is real and worth keeping.',
               } },
             { id: 'passionate-user-centred', text: '“Passionate about user-centred design.”', answer: 'unverifiable — cut it',
@@ -975,7 +1061,7 @@ export const guided20: Record<string, Guided> = {
               } },
             { id: 'not-measured', text: '“Redesigned a booking flow as self-directed practice; nothing was measured, and the prototype was tested with five people.”', answer: 'maps to an artefact',
               feedback: {
-                'maps to an artefact': 'Session notes behind it, and the absence stated rather than papered over. Nothing was measured is a line that gets respect in interviews.',
+                'maps to an artefact': 'Session notes behind it, and the absence stated rather than papered over. Nothing was measured is a line that tends to hold up in interviews.',
                 'claims more than the artefact': 'It claims less than most people would.',
                 'unverifiable — cut it': 'The notes and the prototype both exist.',
               } },
@@ -985,9 +1071,15 @@ export const guided20: Record<string, Guided> = {
                 'claims more than the artefact': 'There is real iteration behind it, and engagement is a measurement nobody took. State the change and the re-test instead.',
                 'unverifiable — cut it': 'The iteration record is real; only the outcome word is unsupported.',
               } },
+            { id: 'calls-a-day', text: '“My status page cut the shop’s progress calls from eleven a day to seven a day.”', answer: 'claims more than the artefact',
+              feedback: {
+                'maps to an artefact': 'The sheets show eleven calls over five working days, after a job-slip change, which is a different and much smaller claim.',
+                'claims more than the artefact': 'Three inflations in one line: a day multiplies the counts by five, cut claims a cause, and the status page was a demonstration nobody used.',
+                'unverifiable — cut it': 'There is an artefact behind it; the line misreports what the artefact says.',
+              } },
           ],
           then: 'Now put your matrix beside your draft and trace each line to a cell or a file.',
-          pattern: 'Two of these map cleanly, two are real work described too largely, and two say nothing a reader could check. The two inflations both come from borrowing a word — led, engagement — that belongs to a bigger job than the one you did.',
+          pattern: 'Two of these map cleanly, three are real work described too largely, and two say nothing a reader could check. The inflations come from borrowing a word — led, engagement, cut — or a unit, a day, that makes the work bigger than the record.',
         },
         start: 'Open the matrix beside the draft and go line by line.',
         enough: 'Every remaining line has a cell or a file behind it.' },
@@ -1007,11 +1099,12 @@ export const guided20: Record<string, Guided> = {
         ],
         start: 'Export, then select a line in the PDF and copy it.',
         enough: 'The pasted version reads in a sensible order.' },
-      { expect: 'Somebody else challenging every line, with what you could not defend rewritten.',
+      { expect: 'Every line challenged — by somebody else, or by a labelled self-review if nobody is available — with what you could not defend rewritten.',
         fields: ['challenger-found', 'what-changed', 'improvement-made'],
         terms: [
           { term: 'The challenge pass', meaning: 'Somebody asking, of each line, what is behind this. Twenty minutes, and it finds what your own reading cannot.' },
           { term: 'Could not defend', meaning: 'The answer came out vague, or louder. Both mean the line claims more than the artefact.' },
+          { term: 'Self-review', meaning: 'The solo route: the same questions put to each line a day later. Better than a re-read, weaker than another person, and labelled as such.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
         demo: {
@@ -1027,26 +1120,26 @@ export const guided20: Record<string, Guided> = {
           tradeoff: 'It means handing a document you are slightly proud of to somebody who has been asked to question every line of it.',
           uncertainty: 'Still unknown: how many remain. She was not a designer, and a designer might have pushed on different lines.',
         },
-        start: 'Hand it to somebody and ask them to question every line, not to proofread.',
+        start: 'Hand it to somebody and ask them to question every line, not to proofread. Nobody available: put the three questions to each line a day later.',
         enough: 'You recorded what you could not defend and what changed.' },
     ],
     checks: [
       {
         question: 'You are a designer. Should the resume show design?',
         options: [
-          { label: 'No. It should be clear and extractable; the portfolio shows design. A resume that cannot be parsed is skimmed and set aside.', correct: true, feedback: 'Two columns interleaved in plain text produced designed working alone Bengaluru 2024 research synthesis. Application systems and people copying lines both extract text.' },
-          { label: 'Yes, in a restrained way that still parses.', feedback: 'Restrained and parsing is just plain, arrived at cautiously.' },
-          { label: 'Yes, since it is a chance to demonstrate craft.', feedback: 'The craft on show is layout of a document nobody asked you to lay out.' },
+          { label: 'It should be clear and extractable as plain text; the portfolio is where the design is shown.', correct: true, feedback: 'Two columns pasted into plain text produced designed working alone Bengaluru 2024 research synthesis. Many application systems, and anybody copying a line, extract the text first.', was: ['No. It should be clear and extractable; the portfolio shows design. A resume that cannot be parsed is skimmed and set aside.'] },
+          { label: 'It should show design with restraint: a careful two-column layout that still reads as text.', feedback: 'Two columns are exactly what interleaves when extracted; restrained and parsing is just plain, arrived at cautiously.', was: ['Yes, in a restrained way that still parses.'] },
+          { label: 'It should show design, since a designer’s resume is the first sample of craft anyone sees.', feedback: 'The craft on show would be the layout of a document nobody asked you to lay out; the portfolio is the sample.', was: ['Yes, since it is a chance to demonstrate craft.'] },
         ],
         repair: 'Check the export in step 4: select a line, copy it, and read the plain-text version. Record the change in step 5.',
         recheck: 'The pasted version reads in a sensible order.',
       },
       {
-        question: 'Your resume says “led design on three products”. All three were done alone. Is that acceptable shorthand?',
+        question: 'Your resume says “led design on three products”. All three were self-directed and you worked alone. What should the line say?',
         options: [
-          { label: 'No. Led implies people led. Designed, working alone is the same work stated accurately.', correct: true, feedback: 'It is the commonest inflation on a junior resume, and it is the first line a challenge pass catches. The work behind it is real and worth keeping.' },
-          { label: 'Yes, since you did lead the design decisions.', feedback: 'Everybody who designs alone makes the decisions, and led is not the word for it.' },
-          { label: 'Yes, if the category label says self-directed.', feedback: 'The label helps and the verb still claims a team.' },
+          { label: 'Designed, working alone, on three self-directed projects: the same work, stated accurately.', correct: true, feedback: 'Led implies people led. It is a common inflation on a junior resume and the first line a challenge pass catches; the work behind it is real and worth keeping.', was: ['No. Led implies people led. Designed, working alone is the same work stated accurately.'] },
+          { label: 'Led design on three products, since you made every design decision on each of them yourself.', feedback: 'Everybody who designs alone makes the decisions, and led is not the word for that.', was: ['Yes, since you did lead the design decisions.'] },
+          { label: 'Led design on three products, with each entry’s category label saying self-directed practice.', feedback: 'The label helps, and the verb still claims a team.', was: ['Yes, if the category label says self-directed.'] },
         ],
         repair: 'Trace the line to a matrix cell in step 2 and rewrite it. Record the change in step 5.',
         recheck: 'Every remaining line has a cell or a file behind it.',
@@ -1054,18 +1147,34 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Why have somebody else challenge each line rather than re-reading it yourself?',
         options: [
-          { label: 'Because your own reading supplies the evidence from memory, and theirs asks what is behind this.', correct: true, feedback: 'Four lines could not be defended in one twenty-minute pass. An answer that comes out vague, or louder, marks a line claiming more than the artefact.' },
-          { label: 'To catch typing errors and formatting problems.', feedback: 'A proofread is a different job. Ask for challenge rather than correction.' },
-          { label: 'Because a second opinion on wording is useful.', feedback: 'It is, and the point here is which lines have nothing behind them.' },
+          { label: 'Your own reading supplies the evidence from memory; theirs asks what is behind each line.', correct: true, feedback: 'Four lines could not be defended in one twenty-minute pass. With nobody available, the written questions put a day later are the labelled substitute, and they are weaker for the same reason.', was: ['Because your own reading supplies the evidence from memory, and theirs asks what is behind this.'] },
+          { label: 'A second reader catches the typing errors and formatting slips that you stop seeing yourself.', feedback: 'A proofread is a different job; ask for challenge rather than correction.', was: ['To catch typing errors and formatting problems.'] },
+          { label: 'A second opinion on wording makes each line read more smoothly to somebody who has not met you.', feedback: 'Smoother wording is useful, and the point here is which lines have nothing behind them.', was: ['Because a second opinion on wording is useful.'] },
         ],
         repair: 'Run the challenge pass in step 5 and record what you could not defend.',
         recheck: 'You recorded what you could not defend and what changed.',
       },
     ],
+    material: [
+      'Made-up evidence record from the course’s practice repair-shop project, used in this lesson’s examples. It is not your data; use your own records for your own lines.',
+      'Research: five sessions — two interviews, one observation and two short conversations — all reached through the owner. Before the project, the owner estimated six to ten progress calls a day; he had never counted them.',
+      'What changed: the shop changed how it wrote its job slips. The status page was only a demonstration; no customer used it.',
+      'Count: the owner’s tally recorded eleven progress-chasing calls over the five working days before the job-slip change and seven over the five working days after. It is one uncontrolled comparison, and he thinks he missed a few marks on the busiest day.',
+      'Who did what: the learner did the research and designed and built the demonstration page alone; the owner changed the job slips and kept the tally; a friend who writes software reviewed the page’s HTML and fixed one date bug.',
+    ],
+    transfer: {
+      scenario: 'Made-up case: A friend applying to supervise a café wrote on his CV: “Increased weekend sales by 40% through better staff scheduling.” His notes: he took over the weekend rota for four weekends, which the manager approved; the till averaged about 250 sales a weekend over the four weekends before and about 350 over the four after; the café launched a weekend brunch menu the same month.',
+      prompt: 'Rewrite the line so it survives questioning, and explain each change you made.',
+      anchors: {
+        weak: 'Keeps “40%” or “increased sales through”, or drops the numbers entirely without saying why.',
+        adequate: 'States what he did (drafted the weekend rota, approved by the manager) and the counts with their period — about 250 sales a weekend before, 350 after, four weekends each — without claiming the rota caused the rise.',
+        strong: 'Adequate, plus names the brunch menu as a competing explanation, in the line or ready for the interview, and keeps ownership exact: he drafted, the manager approved.',
+      },
+    },
     saveRoute: {
       auto: 'Your draft, the trace, the labels and the challenge notes save as you type, on this device first and then online.',
       external: 'The PDF stays in your own folder. No resume service, template subscription or review product is needed at any point.',
-      creator: 'Your creator reads the lines you could not defend. Four or five is normal on a first pass; none usually means the challenge was a proofread.',
+      creator: 'Your creator reads the challenged lines, your line revised against a capture, and what changed. A record with no challenged lines should say which questions were asked, so a challenge can be told apart from a proofread.',
       next: 'Open Your work and choose Ready for review. The next lesson takes the same discipline to what you send an employer.',
     },
   },
@@ -1073,7 +1182,7 @@ export const guided20: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'data', title: 'Decide the data first', fields: [
-        { id: 'data-include', label: 'The personal information that will appear', kind: 'long', example: 'Example (made up): first name and surname, city, and an email address used only for this.' },
+        { id: 'data-include', label: 'The kinds of personal information that will appear, listed by type rather than the details themselves', kind: 'long', hint: 'Write “city” or “an email used only for this”, not the address itself. The details go on your profile; this answer syncs to the course.', example: 'Example (made up): first name and surname, city, and an email address used only for this.' },
         { id: 'data-exclude', label: 'What will not appear, decided before writing', kind: 'long', hint: 'Default to less. You can add later; you cannot remove something from an index.' },
       ] },
       { id: 'profile', title: 'Write it', fields: [
@@ -1081,8 +1190,8 @@ export const guided20: Record<string, Guided> = {
         { id: 'what-you-show', label: 'The three projects and what each one shows, in one line each', kind: 'long' },
       ] },
       { id: 'others', title: 'Other people', fields: [
-        { id: 'names-to-roles', label: 'Names replaced by roles where you have no permission', kind: 'long' },
-        { id: 'permission-checked', label: 'Client, employer and business names checked against what was agreed', kind: 'long', example: 'Example (made up): a small repair business rather than the shop’s name; the owner agreed to the work being shown, not to being identified.' },
+        { id: 'names-to-roles', label: 'The roles you used in place of names where you have no permission, not the names themselves', kind: 'long', sensitive: true, hint: 'Write “the shop owner” or “a screen-reader user”. Keep any list of real names out of this course.' },
+        { id: 'permission-checked', label: 'Each client, employer or business you mention, by description, and what was agreed about naming it', kind: 'long', sensitive: true, example: 'Example (made up): a small repair business rather than the shop’s name; the owner agreed to the work being shown, not to being identified.' },
       ] },
       { id: 'consistency', title: 'Consistency with the resume', fields: [
         { id: 'resume-compare', label: 'The profile read line by line beside the resume', kind: 'long' },
@@ -1112,7 +1221,7 @@ export const guided20: Record<string, Guided> = {
           ],
           wrongTurn: 'The wrong turn is treating the form as the decision, because every field looks required and completeness feels professional. A profile is permanent and indexed, so filling a field is publishing, and publishing is not reversible.',
           tradeoff: 'A sparse profile gives somebody less reason to believe you exist, and one person did ask for a phone number before a call.',
-          uncertainty: 'Still unknown: whether the city helps or narrows things. It stays because remote listings ask about overlap hours and the city answers that without an address.',
+          uncertainty: 'Still unknown: whether the city helps or narrows things. It stays because remote listings ask about overlap hours, and a city answers the time-zone question without an address. It says nothing about eligibility, which a listing has to state.',
         },
         start: 'Write both lists before opening any profile form.',
         enough: 'Nothing appears on your profile that is not on the include list.' },
@@ -1135,7 +1244,7 @@ export const guided20: Record<string, Guided> = {
             { id: 'mobile-number', text: 'Your mobile number.', answer: 'decide deliberately — usually leave it out',
               feedback: {
                 'fine to publish': 'Published once, it is copied permanently, and deleting the field does not stop the calls.',
-                'decide deliberately — usually leave it out': 'Anybody who needs it can be given it after an email. Four recruitment calls a fortnight is the usual result of publishing it.',
+                'decide deliberately — usually leave it out': 'Anybody who needs it can be given it after an email. In the made-up example, publishing it brought four recruitment calls in a fortnight.',
                 'somebody else’s to publish': 'It is yours to publish, and the question is whether to.',
               } },
             { id: 'shop-name', text: 'The name of the repair shop whose owner agreed to the work being shown.', answer: 'somebody else’s to publish',
@@ -1156,7 +1265,7 @@ export const guided20: Record<string, Guided> = {
                 'decide deliberately — usually leave it out': 'A decision with consequences at work. Prior roles with dates carry the history without announcing the present.',
                 'somebody else’s to publish': 'The fact of your employment is yours to state; the timing is what needs thought.',
               } },
-            { id: 'colleague-name', text: 'The name of the friend who built your prototype, in the project line.', answer: 'somebody else’s to publish',
+            { id: 'colleague-name', text: 'The name of the friend who reviewed your code and fixed a date bug, in the project line.', answer: 'somebody else’s to publish',
               feedback: {
                 'fine to publish': 'Naming somebody is publishing information about them.',
                 'decide deliberately — usually leave it out': 'It is not a decision you can make alone, which is a stronger constraint than deliberation.',
@@ -1211,9 +1320,9 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'The profile form has fields for a phone number, a personal email and your current employer. Fill them in?',
         options: [
-          { label: 'Only what is on your include list. A public profile is permanent and indexed, so filling a field is publishing.', correct: true, feedback: 'Deleting the fields later removes them from the page and not from everywhere they were copied to. Recruitment calls continued for months afterwards.' },
-          { label: 'Yes — a complete profile looks more professional.', feedback: 'Completeness is what the form rewards, and it is not what a reader is deciding on.' },
-          { label: 'Yes, and remove them if it becomes a problem.', feedback: 'That is exactly the sequence that does not work, because removal is not retroactive.' },
+          { label: 'Only those on the include list you wrote first: on a public profile, filling a field is publishing.', correct: true, feedback: 'A public profile is permanent and indexed. Deleting a field later removes it from the page and not from everywhere it was copied to; in the made-up example, recruitment calls continued for months.', was: ['Only what is on your include list. A public profile is permanent and indexed, so filling a field is publishing.'] },
+          { label: 'All of them, because a complete profile looks more professional to the people who read it.', feedback: 'Completeness is what the form rewards, and it is not what a reader is deciding on.', was: ['Yes — a complete profile looks more professional.'] },
+          { label: 'All of them for now, removing any that cause a problem later, once you see how people actually use them.', feedback: 'That is the sequence that does not work, because removal is not retroactive.', was: ['Yes, and remove them if it becomes a problem.'] },
         ],
         repair: 'Write the include and exclude lists in step 1, then edit the profile to match. Record the change in step 5.',
         recheck: 'Nothing appears on your profile that is not on the include list.',
@@ -1221,24 +1330,33 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'The shop owner was pleased with the work and agreed to it being shown. Can you name the shop on your profile?',
         options: [
-          { label: 'No, not without asking. Agreeing to the work being shown is not agreeing to be identified, and a profile line is indexed against the name.', correct: true, feedback: 'He would rather not, because the project is about how badly the old process worked and his customers can read. A small repair business carries the same weight.' },
-          { label: 'Yes — naming him is proper credit for his generosity.', feedback: 'A generous instinct that publishes information about somebody who has not agreed to it.' },
-          { label: 'Yes, since the case study already describes the project.', feedback: 'The case study is read by people who go looking. A profile line is searchable against the shop.' },
+          { label: 'Ask him first: agreeing to show the work is not agreeing to be named, and a profile is indexed.', correct: true, feedback: 'In the made-up example he would rather not, because the project is about how badly the old process worked and his customers can read. A small repair business carries the same weight.', was: ['No, not without asking. Agreeing to the work being shown is not agreeing to be identified, and a profile line is indexed against the name.'] },
+          { label: 'Name the shop, since crediting him publicly is the proper return for his generosity and time.', feedback: 'A generous instinct that publishes information about somebody who has not agreed to it.', was: ['Yes — naming him is proper credit for his generosity.'] },
+          { label: 'Name the shop, since the case study already describes the project and readers will work it out.', feedback: 'The case study is read by people who go looking; a profile line is searchable against the shop’s name.', was: ['Yes, since the case study already describes the project.'] },
         ],
         repair: 'Check every proper noun in step 3 against what was agreed, and replace what is not permitted. Record the change in step 5.',
         recheck: 'Every name on the page is yours or permitted.',
       },
       {
-        question: 'Does more detail make a profile more credible?',
+        question: 'You could add three more paragraphs about your values and interests. Does more detail make a profile more credible?',
         options: [
-          { label: 'No. Specific evidence makes it credible; volume makes it skimmable and generic.', correct: true, feedback: 'Three sentences and a link outperform six paragraphs of adjectives. Three project lines saying what each shows are the part anybody reads.' },
-          { label: 'Yes, within reason — a reader wants to know who you are.', feedback: 'They want to know what you can show, which takes three lines.' },
-          { label: 'Yes for a career changer, who has more to explain.', feedback: 'The transition account is ninety seconds when asked. A profile is not where it goes.' },
+          { label: 'Specific evidence does; volume makes a profile skimmable and generic, so three project lines win.', correct: true, feedback: 'Three sentences and a link are more likely to be read than six paragraphs of adjectives. Project lines saying what each shows are the part anybody reads.', was: ['No. Specific evidence makes it credible; volume makes it skimmable and generic.'] },
+          { label: 'More detail does, within reason, because a reader wants a sense of who you are as a person.', feedback: 'They want to know what you can show, which takes three lines.', was: ['Yes, within reason — a reader wants to know who you are.'] },
+          { label: 'More detail does for a career changer, who has more of a story to explain than other applicants.', feedback: 'The transition account is ninety seconds when asked; a profile is not where it goes.', was: ['Yes for a career changer, who has more to explain.'] },
         ],
         repair: 'Cut the profile in step 2 to the projects, what each shows, and a link. Record the change in step 5.',
         recheck: 'A stranger could tell what you do and what to look at.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: A friend who tutors adults in spreadsheets is making a public page to find clients. Her draft includes her full home address “so people can find me”, her personal mobile number, a photo of a session with two learners’ faces visible, a quote from a learner with his full name, and her qualifications.',
+      prompt: 'Decide what stays, what goes and what needs somebody else’s permission, and explain each decision.',
+      anchors: {
+        weak: 'Keeps everything because more detail looks credible, or removes only the address.',
+        adequate: 'Keeps the qualifications and a contact route she controls; replaces the address with an area; drops the mobile; removes the photo and the named quote unless those learners agree, using a role instead.',
+        strong: 'Adequate, plus notes that removal is not retroactive, so she decides before publishing, and offers alternatives: a photo without faces, a quote credited by role with the permission recorded.',
+      },
+    },
     saveRoute: {
       auto: 'Your data decisions, the profile draft, the role replacements and the consistency check save as you type, on this device first and then online.',
       external: 'Publishing happens on your own page or a platform of your choosing, by you. Nothing here is published from this app.',
@@ -1250,7 +1368,7 @@ export const guided20: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'happened', title: 'What actually happened', fields: [
-        { id: 'what-happened', label: 'The real reason you moved, including the unflattering parts', kind: 'long', hint: 'Boredom, a bad brief, needing more money, being made redundant. All of these are true reasons that people accept.' },
+        { id: 'what-happened', label: 'The real reason you moved, including the unflattering parts', kind: 'long', hint: 'Boredom, a bad brief, needing more money, being made redundant. All of these are true reasons that people accept. Describe former employers and colleagues without naming them.' },
         { id: 'removed-inevitable', label: 'What you removed because it was shaped to sound inevitable', kind: 'long' },
       ] },
       { id: 'transfer', title: 'What transferred, and what did not', fields: [
@@ -1263,10 +1381,10 @@ export const guided20: Record<string, Guided> = {
       ] },
       { id: 'cut', title: 'Cut to ninety seconds', fields: [
         { id: 'timings', label: 'Your timings across rehearsals', kind: 'short', example: 'Example (made up): 105, 95, 88, 90 seconds.' },
-        { id: 'kept-specifics', label: 'What you cut, and the specifics you kept', kind: 'long', hint: 'Cut transitions and scene-setting. Keep the counts, the projects and the one thing that went wrong.' },
+        { id: 'kept-specifics', label: 'What you cut, and the specifics you kept', kind: 'long', hint: 'Cut transitions and scene-setting. Keep the counts with their periods, the projects and the one thing that went wrong.' },
       ] },
       { id: 'rehearse', title: 'Say it to somebody', fields: [
-        { id: 'heard-back', label: 'What they said they heard, in their words', kind: 'long' },
+        { id: 'heard-back', label: 'What your listener said they heard, in their words but without their name — or, solo, what you heard on playback, labelled self-review', kind: 'long', sensitive: true },
         { id: 'sounded-rehearsed', label: 'Anything that sounded rehearsed or overclaimed, and what you did about it', kind: 'long' },
         improvementMade,
       ] },
@@ -1332,7 +1450,7 @@ export const guided20: Record<string, Guided> = {
             { id: 'passionate-users', text: '“I am passionate about designing things that genuinely help people.”', answer: 'rests on enthusiasm',
               feedback: {
                 'rests on evidence': 'Nobody could check it, and everybody says it.',
-                'rests on enthusiasm': 'The commonest closing sentence there is, which is why it closes nothing.',
+                'rests on enthusiasm': 'A very common closing sentence, which is why it closes nothing.',
                 'disparages the old field': 'It implies the old work did not help people, faintly, and it is mostly enthusiasm.',
               } },
             { id: 'screen-reader-close', text: '“The last gap I closed was testing with a screen-reader user, which found two failures my own keyboard pass had missed.”', answer: 'rests on evidence',
@@ -1374,23 +1492,23 @@ export const guided20: Record<string, Guided> = {
         },
         start: 'Read it aloud with a timer before cutting anything.',
         enough: 'It fits the time with its specifics intact.' },
-      { expect: 'The account said to somebody, with what they heard and anything that sounded rehearsed.',
+      { expect: 'The account said to somebody — or recorded and played back a day later if nobody is available — with what was heard and anything that sounded rehearsed.',
         fields: ['heard-back', 'sounded-rehearsed', 'improvement-made'],
         terms: [
           { term: 'What they heard', meaning: 'Their account of it, in their words. It is the only way to find out what the ninety seconds actually conveys.' },
           { term: 'Sounding rehearsed', meaning: 'A phrase that arrives too smoothly. It signals a prepared answer, which makes everything after it sound prepared too.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
-        start: 'Ask them to tell you back what they heard rather than whether it was good.',
-        enough: 'You wrote their words rather than your summary of them.' },
+        start: 'Ask them to tell you back what they heard rather than whether it was good. Solo: record it, wait a day, and write what a stranger would have heard.',
+        enough: 'You wrote what was heard rather than whether it was good, labelled as theirs or as your own playback.' },
     ],
     checks: [
       {
         question: 'Do you need a compelling story about why you changed fields?',
         options: [
-          { label: 'You need a true one, told briefly. Interviewers hear constructed narratives constantly and discount them.', correct: true, feedback: 'Eight years of not knowing whether the work worked, and one wrong brief nobody had checked, produces follow-up questions. Always been drawn to never has.' },
-          { label: 'Yes — the story is what makes you memorable.', feedback: 'Specifics make you memorable. The story is what everybody else brings.' },
-          { label: 'Yes, if it is true as well as compelling.', feedback: 'Shaping a true account into an inevitable one is where the specifics get smoothed out.' },
+          { label: 'A true account told briefly, with specifics, does more than a story shaped to sound inevitable.', correct: true, feedback: 'Interviewers often hear constructed narratives and tend to discount them. Eight years of not knowing whether the work worked, and one wrong brief nobody had checked, produces follow-up questions; always been drawn to does not.', was: ['You need a true one, told briefly. Interviewers hear constructed narratives constantly and discount them.'] },
+          { label: 'A compelling story is what makes you memorable when the interviewer has met ten other people.', feedback: 'Specifics make you memorable; a shaped story is what many other applicants bring.', was: ['Yes — the story is what makes you memorable.'] },
+          { label: 'A compelling story works if it is also true, so shape the real events into a clear narrative arc.', feedback: 'Shaping a true account into an inevitable one is where the specifics get smoothed out.', was: ['Yes, if it is true as well as compelling.'] },
         ],
         repair: 'Remove what was shaped to sound inevitable in step 1 and write what happened. Record the change in step 5.',
         recheck: 'Nothing in it is there because it sounds good.',
@@ -1398,24 +1516,33 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Your account runs to two minutes forty. What do you cut?',
         options: [
-          { label: 'Transitions and scene-setting. The counts, the projects and the thing that went wrong all stay.', correct: true, feedback: 'Cutting the specifics leaves ninety seconds of joining material and produces no follow-up question, which is the whole point of the ninety seconds.' },
-          { label: 'The longest sentences, which are usually the detailed ones.', feedback: 'Those are the specifics, and they are the only part that gives somebody something to ask about.' },
-          { label: 'One of the two lists, since transfer and non-transfer overlap.', feedback: 'They do different jobs, and the non-transfer list is the one people remember.' },
+          { label: 'Transitions and scene-setting; the counts, the projects and the thing that went wrong all stay.', correct: true, feedback: 'Cutting the specifics leaves ninety seconds of joining material and produces no follow-up question, which is the point of the ninety seconds.', was: ['Transitions and scene-setting. The counts, the projects and the thing that went wrong all stay.'] },
+          { label: 'The longest sentences first, which are usually the detailed ones, until it fits ninety seconds.', feedback: 'Those are the specifics, and they are the only part that gives somebody something to ask about.', was: ['The longest sentences, which are usually the detailed ones.'] },
+          { label: 'One of the two lists, since what transferred and what did not overlap enough to merge them.', feedback: 'They do different jobs, and the non-transfer list is the one people remember.', was: ['One of the two lists, since transfer and non-transfer overlap.'] },
         ],
         repair: 'Cut transitions rather than specifics in step 4 and time it again. Record the change in step 5.',
         recheck: 'It fits the time with its specifics intact.',
       },
       {
-        question: 'Is it safe to say that your old agency never spoke to users?',
+        question: 'As far as you saw, your old agency never spoke to users. Should your transition account say so?',
         options: [
-          { label: 'No. It is a complaint about former colleagues, and it tells a listener how you will speak about them later.', correct: true, feedback: 'The same fact is usable without it: one brief was wrong and nobody had asked anyone. That is about the work rather than the people, and it also stops you undercutting your own transfer list.' },
-          { label: 'Yes, if it is true and said neutrally.', feedback: 'Never and ever rarely arrive neutrally, and the listener hears the pattern rather than the fact.' },
-          { label: 'Yes — it explains why you left.', feedback: 'The wrong brief explains that, with a specific instead of a verdict on an organisation.' },
+          { label: 'Say what happened on the work instead: one brief was wrong and nobody had asked anyone.', correct: true, feedback: 'The same fact, said about the work rather than the people. A verdict on former colleagues tells a listener how you might speak about them later, and it undercuts your own transfer list.', was: ['No. It is a complaint about former colleagues, and it tells a listener how you will speak about them later.'] },
+          { label: 'Say it plainly, since it is true as far as you saw and a neutral tone keeps it from sounding bitter.', feedback: 'Never rarely arrives neutrally, and the listener hears the pattern rather than the fact.', was: ['Yes, if it is true and said neutrally.'] },
+          { label: 'Say it, because it is the clearest explanation of why you left and why research matters to you.', feedback: 'The wrong brief explains that, with a specific instead of a verdict on an organisation.', was: ['Yes — it explains why you left.'] },
         ],
         repair: 'Rewrite the closing sentence in step 3 to rest on evidence. Record the change in step 5.',
         recheck: 'Your closing sentence names something somebody could ask about.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: Arjun worked five years as a hotel receptionist and wants an operations role at a delivery company. His draft answer to “Why the change?” says he has “always been fascinated by logistics” and that “hotels waste people’s talent”. What happened: he rebuilt the hotel’s luggage-storage log after repeated mix-ups, logged eight mix-ups in the month before and two in the month after, and has never managed a budget or a team.',
+      prompt: 'Rewrite the core of his answer and explain what you kept, cut and added.',
+      anchors: {
+        weak: 'Keeps the destiny line or the complaint about hotels, or claims his log stopped the mix-ups.',
+        adequate: 'Says what happened (the log he rebuilt), names what transferred and what did not (no budget or team), drops the complaint, and ends on the evidence: eight mix-ups in the month before, two in the month after.',
+        strong: 'Adequate, plus keeps the counts with their periods without claiming the log caused the fall, and stays near ninety seconds by cutting scene-setting rather than specifics.',
+      },
+    },
     saveRoute: {
       auto: 'Your account, the two lists, the closing sentence and the timings save as you type, on this device first and then online.',
       external: 'Any recording you make stays in your own folder. The account is reused in the profile and in outreach, so keep it where you can find it.',
@@ -1427,11 +1554,11 @@ export const guided20: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'who', title: 'Choose the people', fields: [
-        { id: 'recipients-chosen', label: 'Who you are writing to, and why each one', kind: 'long', hint: 'A specific person connected to work you have actually read, rather than a general address.' },
+        { id: 'recipients-chosen', label: 'Each recipient by role and organisation, not their name or address, and why them', kind: 'long', sensitive: true, hint: 'A specific person connected to work you have actually read, rather than a general address. Keep names and addresses in your own email, not here.' },
         { id: 'what-you-read', label: 'What you read of theirs, named precisely', kind: 'long' },
       ] },
       { id: 'write', title: 'Write each one from scratch', fields: [
-        { id: 'drafts', label: 'Your drafts, two short paragraphs each', kind: 'long', hint: 'Written here, sent by you from your own email. Nothing is sent from this app.' },
+        { id: 'drafts', label: 'Your drafts, two short paragraphs each', kind: 'long', sensitive: true, hint: 'Written here, sent by you from your own email if at all; nothing is sent from this app. Leave the greeting as [name] so the person’s name stays out of this answer.' },
         { id: 'specific-named', label: 'The specific thing each message names', kind: 'long' },
       ] },
       { id: 'ask', title: 'The ask', fields: [
@@ -1444,7 +1571,7 @@ export const guided20: Record<string, Guided> = {
       ] },
       { id: 'send', title: 'Check, then send by hand', fields: [
         { id: 'claims-checked', label: 'Every claim in every message checked against your matrix', kind: 'long' },
-        { id: 'sent-record', label: 'What you sent, to whom, on what date, and what came back', kind: 'long' },
+        { id: 'sent-record', label: 'What you sent, to which role and organisation, on what date, and what came back — or not sent yet', kind: 'long', sensitive: true, hint: 'Summarise any reply in a line; the messages themselves stay in your email. Keeping drafts unsent is a complete outcome.' },
         improvementMade,
       ] },
     ],
@@ -1469,8 +1596,8 @@ export const guided20: Record<string, Guided> = {
             { label: 'What I did', text: 'Wrote a message I was pleased with, then sent it to thirty people with the name and company changed. It was honest, specific about my own work, and well written.' },
             { label: 'What came back', text: 'One reply out of thirty, and it asked which of their projects I meant.' },
             { label: 'Why that question', text: 'The paragraph about their work had to fit thirty companies, so it said things like the thoughtfulness of your product decisions. It named nothing, because it could not.' },
-            { label: 'What six messages produced', text: 'Two replies. One named an accessibility decision in their published design notes and asked a real question about it; the other answered a listing’s line about designers running their own research.' },
-            { label: 'What the difference actually was', text: 'Not effort per message. Whether there was anything in it that could only have been written to that person.' },
+            { label: 'What six messages produced', text: 'Two replies, one bounced address and three silences. Of the two that replied, one named an accessibility decision in their published design notes and asked a real question about it; the other answered a listing’s line about designers running their own research.' },
+            { label: 'What I think the difference was', text: 'Not effort per message. Whether there was anything in it that could only have been written to that person.' },
           ],
           wrongTurn: 'The wrong turn is scaling a good message, because the message is good and the only apparent cost is your time. Anything that must fit thirty recipients names nothing, and the recognisable generic paragraph is attached to your name permanently.',
           tradeoff: 'Six messages in two weeks feels far too slow when you want work, and thirty produced one confused reply.',
@@ -1510,7 +1637,7 @@ export const guided20: Record<string, Guided> = {
               feedback: {
                 'small and answerable': 'There is nothing to answer, so answering means writing an essay.',
                 'too large for a stranger': 'It is unbounded rather than costly, which amounts to the same silence.',
-                'not really an ask': 'The commonest ending to an outreach message, and the one that most reliably gets nothing back.',
+                'not really an ask': 'A very common ending to an outreach message, and one that rarely gets anything back.',
               } },
             { id: 'review-portfolio', text: '“Could you review my portfolio and tell me what to improve?”', answer: 'too large for a stranger',
               feedback: {
@@ -1551,7 +1678,7 @@ export const guided20: Record<string, Guided> = {
         },
         start: 'Write both rules before sending the first message.',
         enough: 'The rules are specific enough to break knowingly rather than by drift.' },
-      { expect: 'Every claim checked against the matrix, and the messages sent by hand with the replies recorded.',
+      { expect: 'Every claim checked against the matrix, and any message you send sent by hand, with what came back recorded.',
         fields: ['claims-checked', 'sent-record', 'improvement-made'],
         terms: [
           { term: 'Checking the claims', meaning: 'The same trace as the resume. A message is where an inflation slips in, because it is informal and written quickly.' },
@@ -1565,19 +1692,19 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'You have written one good message. Does sending it to thirty people give you thirty chances?',
         options: [
-          { label: 'No. Anything that must fit thirty recipients names nothing specific, and the recognisable generic paragraph is attached to your name.', correct: true, feedback: 'Thirty produced one reply asking which of their projects was meant. Six written from scratch produced two, because each contained something that could only have been written to that person.' },
-          { label: 'Yes, if the message is honest and well written.', feedback: 'It was both. The paragraph about their work is the one that cannot survive being reused.' },
-          { label: 'Yes, provided you change more than the name.', feedback: 'Changing more of it is writing it from scratch, slowly.' },
+          { label: 'Fewer than it looks: a message that must fit thirty people can name nothing specific to any of them.', correct: true, feedback: 'In the made-up example thirty produced one reply, asking which project was meant; six written from scratch produced two. Numbers that small prove little, and the paragraph about their work is the one that cannot survive being reused.', was: ['No. Anything that must fit thirty recipients names nothing specific, and the recognisable generic paragraph is attached to your name.'] },
+          { label: 'Thirty real chances, as long as the message itself is honest, specific about you and well written.', feedback: 'It was all of those. The paragraph about their work is the one that cannot survive being reused.', was: ['Yes, if the message is honest and well written.'] },
+          { label: 'Thirty real chances, provided you change the company details and the opening line as well as each name.', feedback: 'Changing more of it is writing it from scratch, slowly.', was: ['Yes, provided you change more than the name.'] },
         ],
         repair: 'Rewrite each message from scratch in step 2 after reading something of theirs. Record the change in step 5.',
         recheck: 'Each message contains something that could only have been written to that person.',
       },
       {
-        question: 'Is asking a stranger to refer you for a role a reasonable ask?',
+        question: 'You have never spoken to this person. Is asking them to refer you for a role a reasonable first ask?',
         options: [
-          { label: 'No. It asks them to spend their own credibility inside their company on somebody they have not met.', correct: true, feedback: 'The same person might do it after twenty minutes of conversation. One question or twenty minutes is what a stranger can grant without arranging anything.' },
-          { label: 'Yes, if you ask politely and make it easy to decline.', feedback: 'Politeness does not change what is being asked for.' },
-          { label: 'Yes, since the worst case is no reply.', feedback: 'The worse case is a reply that now has to say no, which ends the exchange.' },
+          { label: 'It is too large: it asks them to spend their credibility at work on somebody they have not met.', correct: true, feedback: 'The same person might do it after twenty minutes of conversation. One question or twenty minutes is what a stranger can grant without arranging anything.', was: ['No. It asks them to spend their own credibility inside their company on somebody they have not met.'] },
+          { label: 'It is reasonable if you ask politely, keep it brief, and make it easy for them to decline without guilt.', feedback: 'Politeness does not change what is being asked for.', was: ['Yes, if you ask politely and make it easy to decline.'] },
+          { label: 'It is reasonable because the worst outcome is no reply, which costs you nothing at all.', feedback: 'A reply that has to say no ends the exchange, which costs more than silence.', was: ['Yes, since the worst case is no reply.'] },
         ],
         repair: 'Replace any oversized ask in step 3 with one question or twenty minutes. Record the change in step 5.',
         recheck: 'Every ask could be granted in a few minutes.',
@@ -1585,14 +1712,23 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Three people have not replied after two weeks. What now?',
         options: [
-          { label: 'One follow-up each, after about ten days, adding something rather than repeating. Then silence is the answer.', correct: true, feedback: 'One of three answered the single follow-up. A third message makes your name memorable in the wrong way, in a field where people talk to each other.' },
-          { label: 'Keep following up; persistence is usually advised.', feedback: 'A non-reply costs nothing. A third message converts it into a bad impression.' },
-          { label: 'Nothing — a non-reply is a no.', feedback: 'Often true, and one follow-up is cheap and does sometimes produce a conversation.' },
+          { label: 'One follow-up each that adds something new, then treat further silence as the answer.', correct: true, feedback: 'In the made-up example one of three answered the single follow-up. A third message makes your name memorable in the wrong way, in a field where people talk to each other.', was: ['One follow-up each, after about ten days, adding something rather than repeating. Then silence is the answer.'] },
+          { label: 'Keep following up every few days, since persistence is widely advised and messages get buried.', feedback: 'A non-reply costs nothing; a third message converts it into a bad impression.', was: ['Keep following up; persistence is usually advised.'] },
+          { label: 'Nothing more: a non-reply after two weeks is a no, and a follow-up only adds pressure.', feedback: 'Often true, and one follow-up is cheap and does sometimes produce a conversation.', was: ['Nothing — a non-reply is a no.'] },
         ],
         repair: 'Write the follow-up interval and the limit of one in step 4, before sending anything. Record the change in step 5.',
         recheck: 'Your rules are specific enough to break knowingly rather than by drift.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: A friend wants to ask a local furniture restorer whether she could watch him work for an afternoon. Her draft, which she plans to send to twenty workshops at once, reads: “Dear Sir/Madam, I am passionate about restoration and would love any opportunities or advice you can give. Could you also recommend me to other workshops?”',
+      prompt: 'Decide what she should change before sending anything, and explain why each change matters.',
+      anchors: {
+        weak: 'Fixes the greeting or the tone only, or approves sending it to all twenty.',
+        adequate: 'One workshop at a time, naming something specific she has seen of his work; replaces the vague and large asks with one small one (an afternoon, or one question); drops the recommendation request.',
+        strong: 'Adequate, plus sets a follow-up rule (one, after about ten days, adding something), treats silence as normal, and keeps the message to two short paragraphs.',
+      },
+    },
     saveRoute: {
       auto: 'Your recipient list, drafts, asks, rules and the record of what came back save as you type, on this device first and then online.',
       external: 'Nothing is sent from this app. You send each message yourself, from your own email, one at a time, and no outreach tool or sequencing service is used.',
@@ -1604,15 +1740,16 @@ export const guided20: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'examples', title: 'Three real examples', fields: [
-        { id: 'three-examples', label: 'Three instances, each with the situation, what you did and what happened', kind: 'long', hint: 'Instances with dates and names of things, not policies. A disagreement, a failure, a recruitment problem.' },
+        { id: 'three-examples', label: 'Three instances, each with the situation, what you did and what happened', kind: 'long', sensitive: true, hint: 'Instances with dates and names of things, not policies. A disagreement, a failure, a recruitment problem. Describe other people by role, never by name.' },
         { id: 'survives-followups', label: 'For each, the three follow-up questions it would have to survive', kind: 'long' },
+        { id: 'example-revised', label: 'One example revised to answer a requirement from a vacancy you captured: the requirement with its date, then the example before and after', kind: 'long', hint: 'Revise your own example; do not adopt a model answer. Keep counts with their periods and who did what. If none of your examples can answer the requirement, say so.' },
       ] },
       { id: 'wrong', title: 'The one where you were wrong', fields: [
-        { id: 'wrong-example', label: 'An example where you were wrong, told plainly', kind: 'long' },
+        { id: 'wrong-example', label: 'An example where you were wrong, told plainly', kind: 'long', sensitive: true, hint: 'Other people appear by role only.' },
         { id: 'what-changed-after', label: 'What you did differently afterwards', kind: 'long', hint: 'The example ends here rather than on the mistake. Without this it is a confession; with it, it is calibration.' },
       ] },
       { id: 'run', title: 'Run the practice', fields: [
-        { id: 'interruptions', label: 'Where you were interrupted and how it went', kind: 'long', example: 'Example (made up): four interruptions, twice on the measurement and twice on the sample.' },
+        { id: 'interruptions', label: 'Where you were interrupted and how it went — by a partner, or by timed slips on the solo route', kind: 'long', example: 'Example (made up): four interruptions, twice on the measurement and twice on the sample.' },
         { id: 'recording-where', label: 'Where the recording is kept', kind: 'short' },
       ] },
       { id: 'review', title: 'Review it', fields: [
@@ -1626,8 +1763,8 @@ export const guided20: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'Three real instances in situation, action and result form, each able to survive three follow-ups.',
-        fields: ['three-examples', 'survives-followups'],
+      { expect: 'Three real instances in situation-action-result form, each able to survive three follow-ups, and one revised against a requirement from your captures.',
+        fields: ['three-examples', 'survives-followups', 'example-revised'],
         terms: [
           { term: 'An instance', meaning: 'One occasion, with a date and a specific thing that happened. I usually try to is a policy, and it is what people give when they have not prepared.' },
           { term: 'Three questions deep', meaning: 'The depth a real example survives and a constructed one does not. Detail runs out on the second question and the answer starts generalising.' },
@@ -1658,7 +1795,7 @@ export const guided20: Record<string, Guided> = {
             { id: 'i-usually-try', text: '“I usually try to find the shared goal and work back from there.”', answer: 'a policy, not an instance',
               feedback: {
                 'a real instance': 'Nothing happened in it.',
-                'a policy, not an instance': 'The commonest answer to a disagreement question, and the follow-up is always can you give me an example.',
+                'a policy, not an instance': 'A very common answer to a disagreement question, and the follow-up is usually can you give me an example.',
                 'would collapse under follow-up': 'It has nothing to collapse; the example that follows might.',
               } },
             { id: 'big-stakeholder', text: '“At my agency I once convinced a large client to abandon a redesign by presenting user research.”', answer: 'would collapse under follow-up',
@@ -1699,13 +1836,24 @@ export const guided20: Record<string, Guided> = {
         ],
         start: 'Choose one where you were plainly wrong rather than unlucky.',
         enough: 'The example ends on what changed rather than on the mistake.' },
-      { expect: 'A practice walkthrough of one project under interruption, recorded.',
+      { expect: 'A practice walkthrough of one project under interruption — a partner’s, or timed slips on the solo route — recorded.',
         fields: ['interruptions', 'recording-where'],
         terms: [
           { term: 'One project', meaning: 'Walked through properly. Three badly is the alternative, and range is already visible in the portfolio.' },
           { term: 'Interruption', meaning: 'What actually happens. A walkthrough rehearsed uninterrupted falls apart the first time somebody stops you at minute three.' },
         ],
-        start: 'Ask your partner to interrupt at least four times, whether or not it feels natural.',
+        supported: {
+          material: 'A made-up interruption during a walkthrough of the practice repair-shop project. The interviewer asks: “So what changed after your work?” Your notes: before the project the owner estimated six to ten progress calls a day but had never counted. After the shop changed how it wrote job slips, his tally showed eleven calls over the five working days before the change and seven over the five after. The status page was a demonstration that no customer used.',
+          question: 'Which answer keeps the units, the ownership and the uncertainty?',
+          options: [
+            { label: 'After the shop changed its job slips, his tally went from eleven calls in five working days to seven in the next five.', correct: true, feedback: 'The owner kept the tally, each count keeps its five-day period, and the change is named without claiming it caused the fall. Say next that one comparison like this cannot rule out an ordinary quieter week; conceding first moves the conversation on.' },
+            { label: 'Calls fell from six to ten a day to seven, so the change roughly halved his interruptions within a week.', feedback: 'Six to ten a day was his uncounted estimate; seven is a count over five working days. One sentence comparing them mixes a guess per day with a tally per period, and halved is arithmetic on neither.' },
+            { label: 'We cut his progress calls by more than a third with the status page, and he said the week felt calmer.', feedback: 'We claims a team, cut claims the cause, more than a third turns four calls into a rate, and the status page was a demonstration nobody used. His feeling is worth quoting as his, not as a result.' },
+            { label: 'Calls dropped from eleven a day to seven a day across two matched working weeks after the job-slip change.', feedback: 'The tally was eleven over five working days, not eleven a day; a day multiplies both counts by five. Dropped after the change also slides towards a cause the comparison cannot show.' },
+          ],
+          then: 'Now say your own measurement answer aloud with each count’s period, who counted, and the condition you cannot separate.',
+        },
+        start: 'Ask your partner to interrupt at least four times, whether or not it feels natural. Solo: write eight interruption questions on slips and set a timer to ring at random.',
         enough: 'You were stopped mid-section and picked the thread back up.' },
       { expect: 'Two specific weaknesses from the recording, and whether you conceded before defending.',
         fields: ['two-weaknesses', 'conceded-first'],
@@ -1740,11 +1888,11 @@ export const guided20: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Should you walk through all three projects to show range?',
+        question: 'An interviewer says “walk me through your work”. Should you cover all three projects to show range?',
         options: [
-          { label: 'No. You will show one properly or three badly; range is visible in the portfolio and the conversation is for depth.', correct: true, feedback: 'One project under interruption, four times, twice on the measurement and twice on the sample, is what a walkthrough actually has to survive.' },
-          { label: 'Yes, briefly, to establish breadth first.', feedback: 'Brief walkthroughs of three projects is the shape that leaves no time for the follow-ups.' },
-          { label: 'Yes, if they ask about range specifically.', feedback: 'If they ask, show them. Unasked, one project properly.' },
+          { label: 'One project, walked through properly; range is already visible in the portfolio itself.', correct: true, feedback: 'One project under interruption, four times, twice on the measurement and twice on the sample, is what a walkthrough actually has to survive. Show more if they ask.', was: ['No. You will show one properly or three badly; range is visible in the portfolio and the conversation is for depth.'] },
+          { label: 'All three briefly to establish breadth, then go deeper on whichever one they react to.', feedback: 'Brief walkthroughs of three projects is the shape that leaves no time for the follow-ups.', was: ['Yes, briefly, to establish breadth first.'] },
+          { label: 'All three, since walk me through your work usually means the whole portfolio, not one piece.', feedback: 'Sometimes it does, and asking which they want is better than guessing; unasked, one project properly.', was: ['Yes, if they ask about range specifically.'] },
         ],
         repair: 'Run the practice on one project, with at least four interruptions, in step 3. Record the change in step 5.',
         recheck: 'You were stopped mid-section and picked the thread back up.',
@@ -1752,9 +1900,9 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'You have prepared good answers about how you handle disagreement. Is that enough?',
         options: [
-          { label: 'No. The first follow-up is always for an example, and one assembled under pressure loses its detail at the second question.', correct: true, feedback: 'Three occasions with dates — a disagreement settled by testing, a failed repair, a recruitment that produced nobody — survive three questions because everything asked for is in the records.' },
-          { label: 'Yes, since the questions are asked generally.', feedback: 'They are phrased generally and answered specifically, which is what the follow-up is for.' },
-          { label: 'Yes, with an example ready in case they ask.', feedback: 'Ready means written and checked against three follow-ups, which is this step.' },
+          { label: 'Prepared occasions are needed too: the follow-up usually asks for an example, and improvised ones thin out.', correct: true, feedback: 'Three occasions with dates — a disagreement settled by testing, a failed repair, a recruitment that produced nobody — survive three questions because everything asked for is in the records.', was: ['No. The first follow-up is always for an example, and one assembled under pressure loses its detail at the second question.'] },
+          { label: 'Prepared approaches are enough, because behavioural questions are phrased generally and answered that way.', feedback: 'They are phrased generally and answered specifically, which is what the follow-up is for.', was: ['Yes, since the questions are asked generally.'] },
+          { label: 'Prepared approaches plus one example loosely in mind are enough, ready in case they ask for one.', feedback: 'Loosely in mind is what loses its detail at the second question; ready means written and checked against three follow-ups.', was: ['Yes, with an example ready in case they ask.'] },
         ],
         repair: 'Write three occasions with dates in step 1 and the three follow-ups each must survive. Record the change in step 5.',
         recheck: 'Each example is one occasion rather than a habit.',
@@ -1762,14 +1910,29 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Your practice partner said it went well. Is that your review?',
         options: [
-          { label: 'No. Watch the recording and name two specific weaknesses; a listener following the content cannot hear the shape of your answers.', correct: true, feedback: 'Twice, a why was answered with a what, and the limits answer defended before conceding. Both are invisible in conversation and audible on playback.' },
-          { label: 'It is a useful signal, combined with your own sense of it.', feedback: 'Both are impressions of the content. The recording catches the order of your sentences.' },
-          { label: 'Yes, if they were asked to be critical.', feedback: 'Being asked to be critical produces general criticism, which is the thing you cannot act on.' },
+          { label: 'The recording is: watch it and name two specific weaknesses a listener could not hear.', correct: true, feedback: 'Twice, a why was answered with a what, and the limits answer defended before conceding. Both are invisible to a listener following the content and audible on playback.', was: ['No. Watch the recording and name two specific weaknesses; a listener following the content cannot hear the shape of your answers.'] },
+          { label: 'Their view is a useful signal once combined with your own sense of how the practice went.', feedback: 'Both are impressions of the content; the recording catches the order of your sentences.', was: ['It is a useful signal, combined with your own sense of it.'] },
+          { label: 'Their view is the review, as long as you asked them beforehand to be properly critical.', feedback: 'Being asked to be critical produces general criticism, which is the thing you cannot act on.', was: ['Yes, if they were asked to be critical.'] },
         ],
         repair: 'Watch the recording in step 4 and write two specific weaknesses. Record the change in step 5.',
         recheck: 'Both weaknesses are things somebody could act on.',
       },
     ],
+    material: [
+      'Made-up evidence record from the course’s practice repair-shop project, used in this lesson’s examples. It is not your data; prepare your answers from your own records.',
+      'Before the project, the owner estimated six to ten progress calls a day; he had never counted them. After the shop changed how it wrote job slips, his tally showed eleven progress-chasing calls over the five working days before the change and seven over the five after: one uncontrolled comparison.',
+      'The status page was only a demonstration; no customer used it. The learner did the research and built the demonstration alone; the owner changed the job slips and kept the tally.',
+      'Solo interruption slips, made up: “Why that and not something else?” “How many people was that?” “Who counted?” “What would you do differently?” “What does that number not show?” “Was that you or the owner?” “What did you leave out?” “How do you know?”',
+    ],
+    transfer: {
+      scenario: 'Made-up case: In a practice interview for a library-systems role, Leela is asked, “Tell me about a time you improved a process.” She answers: “We completely transformed how returns were handled and cut waiting times by half.” Her notes: she alone redesigned the returns-shelf labels; the desk supervisor timed queues at about 12 minutes on average across three Saturdays before and about 6 across three Saturdays after; a second staff member started on Saturdays in the same month.',
+      prompt: 'Rewrite her answer so it would survive three follow-up questions, and explain what you changed and why.',
+      anchors: {
+        weak: 'Keeps “we”, “transformed” or “cut by half”, or removes the numbers rather than stating them with their period.',
+        adequate: 'Says she redesigned the labels; gives the supervisor’s timings (about 12 then about 6 minutes, three Saturdays each); does not claim the labels caused the fall.',
+        strong: 'Adequate, plus concedes the second staff member as a competing explanation before defending, and prepares the likely follow-ups: who timed it, over how many Saturdays.',
+      },
+    },
     saveRoute: {
       auto: 'Your three examples, the wrong one, the interruptions and the two weaknesses save as you type, on this device first and then online.',
       external: 'The recordings are private working material and stay in your own folder. No interview-practice platform, coaching subscription or paid mock service is used.',
@@ -1793,7 +1956,7 @@ export const guided20: Record<string, Guided> = {
         { id: 'alternative-offered', label: 'The alternative you offer instead', kind: 'long', example: 'Example (made up): a two-hour neutral exercise, or a walkthrough of an existing project.' },
       ] },
       { id: 'live', title: 'Practise a live exercise', fields: [
-        { id: 'live-practice', label: 'The problem you were given and how the forty minutes went', kind: 'long' },
+        { id: 'live-practice', label: 'The problem you worked on (set by a partner, or a supplied made-up one) and how the forty minutes went', kind: 'long', hint: 'Solo route: record yourself thinking aloud and label it a rehearsal.' },
         { id: 'constraints-asked', label: 'The questions you asked before drawing anything', kind: 'long' },
       ] },
       { id: 'review', title: 'Review', fields: [
@@ -1904,7 +2067,7 @@ export const guided20: Record<string, Guided> = {
           uncertainty: 'Still unknown: how many interviewers mind the questions. My practice partner found two of the three obvious and the third useful.',
         },
         start: 'Ask three questions before drawing anything at all.',
-        enough: 'Your partner heard your reasoning rather than watching you draw in silence.' },
+        enough: 'Your reasoning is audible — to a partner, or on your own recording — rather than silent drawing.' },
       { expect: 'Where you started drawing before asking, with one section repeated.',
         fields: ['drew-before-asking', 'repeated-section', 'improvement-made'],
         terms: [
@@ -1912,16 +2075,16 @@ export const guided20: Record<string, Guided> = {
           { term: 'Repeating a section', meaning: 'Ten minutes with the correction, rather than the whole exercise again.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
-        start: 'Ask your partner at which minute you first drew something.',
+        start: 'Ask your partner, or check your recording, for the minute you first drew something.',
         enough: 'You know where the drawing started and what you had not asked yet.' },
     ],
     checks: [
       {
         question: 'A take-home says four hours. You have eleven to spare. Does doing more show enthusiasm?',
         options: [
-          { label: 'No. It shows you cannot scope, which is what a timed exercise exists to test.', correct: true, feedback: 'The feedback on eleven hours of work was that they could not tell how it would go against a real deadline, because nothing had been cut. It is also quietly unfair to candidates who fit the time.' },
-          { label: 'Yes, as long as you do not say how long it took.', feedback: 'Not saying makes it worse: the submission is then unlabelled work of unknown cost.' },
-          { label: 'Yes, since the strongest submission wins.', feedback: 'The strongest submission is the one that fits the time and explains its cuts.' },
+          { label: 'It mainly shows you did not scope, which is what a timed exercise exists to test.', correct: true, feedback: 'In the made-up example, the feedback on eleven hours of work was that they could not tell how it would go against a real deadline, because nothing had been cut. It is also quietly unfair to candidates who fit the time.', was: ['No. It shows you cannot scope, which is what a timed exercise exists to test.'] },
+          { label: 'It shows commitment, as long as you leave out how long the submission actually took.', feedback: 'Leaving it out makes it worse: the submission is then unlabelled work of unknown cost.', was: ['Yes, as long as you do not say how long it took.'] },
+          { label: 'It shows enthusiasm, and the strongest submission is usually the one that gets the job.', feedback: 'The strongest submission for this purpose is the one that fits the time and explains its cuts.', was: ['Yes, since the strongest submission wins.'] },
         ],
         repair: 'Write the fixed-time rule and the cuts sentence in step 1. Record the change in step 5.',
         recheck: 'Your rule says what moves when the time runs out.',
@@ -1929,9 +2092,9 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'A brief asks for three production-ready screens redesigning a live page of their product. What do you do?',
         options: [
-          { label: 'Decline in two sentences, without accusation, and offer a neutral exercise or a walkthrough instead.', correct: true, feedback: 'The output is usable by them on a page that exists, which makes it work rather than assessment. Most briefs that cross the line are thoughtless, and the alternative is usually accepted.' },
-          { label: 'Do it — it is a chance to show what you can do on a real product.', feedback: 'It is a chance to do unpaid production work, and the assessment value to you is the same as a neutral brief.' },
-          { label: 'Do a reduced version and say you cut the scope.', feedback: 'A smaller piece of their production work is still their production work.' },
+          { label: 'Decline in two sentences without accusation, offering a neutral exercise or a walkthrough.', correct: true, feedback: 'The output is usable by them on a page that exists, which makes it work rather than assessment. Many briefs that cross the line are thoughtless rather than exploitative, and an alternative is often accepted.', was: ['Decline in two sentences, without accusation, and offer a neutral exercise or a walkthrough instead.'] },
+          { label: 'Do it, since it is a rare chance to show what you can do on a real, live product that people use.', feedback: 'It is a chance to do unpaid production work, and its assessment value to you is the same as a neutral brief’s.', was: ['Do it — it is a chance to show what you can do on a real product.'] },
+          { label: 'Do a reduced version in the stated time and explain in a note which parts you cut and why.', feedback: 'A smaller piece of their production work is still their production work.', was: ['Do a reduced version and say you cut the scope.'] },
         ],
         repair: 'Draft the decline and the alternative in step 3. Record the change in step 5.',
         recheck: 'The decline is two sentences and offers something instead.',
@@ -1939,14 +2102,29 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'In a forty-minute live exercise, when should you start drawing?',
         options: [
-          { label: 'After asking who it is for, what exists now and what is fixed. Thinking aloud is what is being assessed.', correct: true, feedback: 'Silence followed by a good sketch tells them almost nothing. Drawing early comes from wanting to look productive, and it is the usual failure.' },
-          { label: 'Straight away, to use the time well.', feedback: 'Forty minutes of drawing from an unexamined brief is the answer to a question nobody asked.' },
-          { label: 'After a minute or two of clarifying.', feedback: 'Closer, and three real questions about constraints take longer than that and change what you draw.' },
+          { label: 'After asking who it is for, what exists already and what is fixed, thinking aloud throughout.', correct: true, feedback: 'Silence followed by a good sketch tells them little. In the made-up example, the answer to the second question showed that half the screens redesigned something out of scope.', was: ['After asking who it is for, what exists now and what is fixed. Thinking aloud is what is being assessed.'] },
+          { label: 'Straight away, sketching while you talk, so that none of the forty minutes is spent in silence.', feedback: 'Talking while sketching an unexamined brief still answers a question nobody asked.', was: ['Straight away, to use the time well.'] },
+          { label: 'After a minute or two of general clarifying, so that most of the time goes into the drawing.', feedback: 'Closer, and three real questions about constraints usually take longer than that and change what you draw.', was: ['After a minute or two of clarifying.'] },
         ],
         repair: 'Ask three questions before drawing in step 4, then repeat that section in step 5.',
-        recheck: 'Your partner heard your reasoning rather than watching you draw in silence.',
+        recheck: 'Your reasoning is audible — to a partner, or on your own recording — rather than silent drawing.',
       },
     ],
+    material: [
+      'Made-up live-exercise problems for the solo route. Set forty minutes, write three questions before drawing, answer each only from the stated facts or mark it unknown, and think aloud into a recording. Label it solo rehearsal.',
+      'Problem A: a small lending library wants members to know when a reserved book is ready. Stated facts: members are adults; most reserve online; staff update the system once a day.',
+      'Problem B: a community sports hall wants fewer no-shows for booked badminton courts. Stated facts: bookings come by phone and online; a no-show leaves a court empty for an hour.',
+      'Problem C: a weekly farmers’ market wants shoppers to know which stalls are open before they travel. Stated facts: stallholders decide on the morning; many shoppers come by bus.',
+    ],
+    transfer: {
+      scenario: 'Made-up case: A bakery chain asks a freelance illustrator to “show what she can do” by designing its new seasonal menu board — final, print-ready artwork for its twelve shops — with no fee and a one-week deadline. The best entry, it says, wins a year’s contract.',
+      prompt: 'Decide whether she should do it, negotiate it or decline it, and explain why, including what she could offer instead.',
+      anchors: {
+        weak: 'Does the full menu board to win the contract, or refuses rudely without offering anything.',
+        adequate: 'Declines because print-ready artwork for their live shops is real work they would use; offers a short neutral exercise or a walkthrough of past work; two sentences, no accusation.',
+        strong: 'Adequate, plus notes a paid trial would also be fair, asks what they are assessing, and observes that unpaid, winner-takes-all terms extract the most work from the most candidates.',
+      },
+    },
     saveRoute: {
       auto: 'Your protocol, questions, decline, alternative and review notes save as you type, on this device first and then online.',
       external: 'Submissions go from you to the company, by you. If a brief requires a paid tool, say so and propose an alternative rather than buying one.',
@@ -1958,8 +2136,8 @@ export const guided20: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'record', title: 'The record', fields: [
-        { id: 'record-table', label: 'Your table: date, employer, role, route, what was sent, response and its date', kind: 'long' },
-        { id: 'backfilled', label: 'Everything you have already sent, entered', kind: 'long', hint: 'Including the outreach messages from the earlier lesson and anything before this course.' },
+        { id: 'record-table', label: 'Your table: date, employer, role, the role’s eligibility, location and hours, route, what was sent, response and its date', kind: 'long', sensitive: true, hint: 'Organisations and roles only: no names, email addresses or quoted replies. Keep the full log in your own file.' },
+        { id: 'backfilled', label: 'Everything you have already sent, entered', kind: 'long', sensitive: true, hint: 'Including the outreach messages from the earlier lesson and anything before this course. Organisations and roles only, no names.' },
       ] },
       { id: 'cadence', title: 'A cadence you can hold', fields: [
         { id: 'weekly-cadence', label: 'The weekly number you could hold for three months', kind: 'short', example: 'Example (made up): two applications and one outreach message a week.' },
@@ -1999,7 +2177,7 @@ export const guided20: Record<string, Guided> = {
           beats: [
             { label: 'What I did', text: 'Eleven applications in the first week, every evening, anything that looked plausible. It felt like the only responsible way to treat something this important.' },
             { label: 'What week three looked like', text: 'Two applications, both rushed, and four evenings avoiding it entirely.' },
-            { label: 'What the record showed', text: 'Of the eleven, nine were roles my matrix said I could evidence almost nothing for. The two considered ones both produced replies.' },
+            { label: 'What the record showed', text: 'Of the eleven, nine were roles my matrix said I could evidence almost nothing for. The two considered ones both produced replies: two out of two, too few to prove anything, and enough to change how I spent my evenings.' },
             { label: 'What volume had cost', text: 'Not just the evenings. Nine hurried applications with a generic covering note, each carrying my name, sent to companies I might apply to properly later.' },
             { label: 'What the cadence is now', text: 'Two applications and one message a week, with a rest day written down. Slower in a week and far faster over three months, because it is still running.' },
           ],
@@ -2097,9 +2275,9 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Should you apply to everything and see what sticks?',
         options: [
-          { label: 'No. Volume without records teaches you nothing and burns the effort you will need in month three.', correct: true, feedback: 'Eleven applications in week one, two rushed ones in week three. Nine of the eleven were roles the matrix could evidence almost nothing for, and the two considered ones both produced replies.' },
-          { label: 'Early on, yes, to find out what the responses look like.', feedback: 'The responses to hurried applications tell you about hurried applications, and each one carries your name.' },
-          { label: 'Yes, if you keep a record of all of it.', feedback: 'The record helps and the cadence is what is still running in week twelve.' },
+          { label: 'A held, recorded cadence teaches more; volume burns the effort you will need in month three.', correct: true, feedback: 'In the made-up example: eleven applications in week one, two rushed ones in week three. Nine of the eleven were roles the matrix could evidence almost nothing for; the two considered ones both got replies, too few to prove anything and enough to change the plan.', was: ['No. Volume without records teaches you nothing and burns the effort you will need in month three.'] },
+          { label: 'Applying widely early on is the quickest way to learn what responses in this field look like.', feedback: 'The responses to hurried applications tell you about hurried applications, and each one carries your name.', was: ['Early on, yes, to find out what the responses look like.'] },
+          { label: 'Applying to everything works if you keep a careful record of every application and reply.', feedback: 'The record helps, and the cadence is what is still running in week twelve.', was: ['Yes, if you keep a record of all of it.'] },
         ],
         repair: 'Halve your weekly number in step 2 and write the rest day. Record the change in step 5.',
         recheck: 'The rest day is written down rather than intended.',
@@ -2107,9 +2285,9 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Your vacancy comparison is three months old. Can you still use it?',
         options: [
-          { label: 'Only with its gathering date attached, and it is time to repeat the pass.', correct: true, feedback: 'Vacancies expire within weeks. The second pass takes about two hours because the employer list already exists, and an undated conclusion quietly becomes a belief about the market.' },
-          { label: 'Yes — hiring patterns do not change that fast.', feedback: 'The individual listings certainly do, and they are what the comparison is made of.' },
-          { label: 'No, and the old one should be discarded.', feedback: 'Keep it with its date. Two dated passes are more informative than one.' },
+          { label: 'With its gathering date attached, yes, and it is time to repeat the vacancy pass.', correct: true, feedback: 'Vacancies expire within weeks. The second pass takes about two hours because the employer list already exists, and an undated conclusion quietly becomes a belief about the market.', was: ['Only with its gathering date attached, and it is time to repeat the pass.'] },
+          { label: 'As it stands, since hiring patterns rarely change much in three months for roles like these.', feedback: 'The individual listings certainly change, and they are what the comparison is made of; eligibility and hours can change between postings too.', was: ['Yes — hiring patterns do not change that fast.'] },
+          { label: 'Not at all: discard it and start a fresh comparison so old listings cannot mislead you.', feedback: 'Keep it with its date. Two dated passes are more informative than one.', was: ['No, and the old one should be discarded.'] },
         ],
         repair: 'Set the re-gathering interval in step 3 and date every existing conclusion. Record the change in step 5.',
         recheck: 'Every conclusion you hold carries the date it came from.',
@@ -2117,18 +2295,27 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Why write the standing rules now rather than deciding case by case?',
         options: [
-          { label: 'Because the pressure to break them arrives in month three, when your judgement is worst and every case has a reasonable argument.', correct: true, feedback: 'A line written in week one — every project carries its category label — was written by somebody with no reason to be generous to himself. In month three the rule made the decision.' },
-          { label: 'Because rules are easier to follow than judgements.', feedback: 'They are not, under pressure. The reason is when they were written rather than that they are rules.' },
-          { label: 'Because you may forget what you decided.', feedback: 'You will remember. What erodes is the willingness, not the memory.' },
+          { label: 'Pressure arrives in month three, when judgement is worst and every case has a good argument.', correct: true, feedback: 'In the made-up example, a line written in week one — every project carries its category label — was written by somebody with no reason to be generous to himself. In month three the rule made the decision.', was: ['Because the pressure to break them arrives in month three, when your judgement is worst and every case has a reasonable argument.'] },
+          { label: 'Rules are easier to follow than judgements, so deciding everything in advance saves effort.', feedback: 'Under pressure they are not easier. The reason is when they were written rather than that they are rules.', was: ['Because rules are easier to follow than judgements.'] },
+          { label: 'You may forget what you decided in week one unless the decisions are written down somewhere.', feedback: 'You will remember. What erodes is the willingness, not the memory.', was: ['Because you may forget what you decided.'] },
         ],
         repair: 'Write the standing rules in step 5 and put them where you will see them in a bad week.',
         recheck: 'The rules are somewhere you will see them in a bad week.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: After six weeks looking for part-time translation work, Sam has sent forty applications, most in the first week. He keeps no record and says “nobody wants translators any more”. He remembers that his only two replies both came from agencies he had written to personally.',
+      prompt: 'Decide what he should set up for the next month and how he should review it. Explain why, including what his two replies can and cannot tell him.',
+      anchors: {
+        weak: 'Tells him to send more applications, or accepts “nobody wants translators” as the finding.',
+        adequate: 'A simple record (date, organisation, route, what was sent, response), a weekly number he can hold with a rest day, and a monthly review from the record; the market claim is replaced by his own counts.',
+        strong: 'Adequate, plus treats two replies from personal messages as a pattern worth testing, not proof, and dates any conclusion so it is re-checked rather than believed.',
+      },
+    },
     saveRoute: {
       auto: 'Your record table, cadence, re-gathering interval, review questions and standing rules save as you type, on this device first and then online.',
       external: 'The record is yours and stays with you. No applicant tracker, subscription or premium board tier is required for any of it.',
-      creator: 'Your creator reads the cadence and the standing rules. A cadence above three or four a week usually does not survive to month three.',
+      creator: 'Your creator reads the cadence and the standing rules, and asks whether the weekly number has already been held for a month rather than only planned.',
       next: 'Open Your work and choose Ready for review. This is the end of the course and the start of the practice: a portfolio, a matrix, a method for gathering your own evidence, and rules you wrote while you were calm.',
     },
   },
