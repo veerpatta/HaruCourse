@@ -1,3 +1,23 @@
+## Improvement-plan contract — 4 October 2026
+
+The creator authorized implementing the *Haru Course Improvement Plan* (4 October 2026). This section supersedes earlier rules where they conflict. Evidence and limits: [improvement-plan verification](VERIFICATION-IMPROVEMENT-PLAN.md); per-module corrections: [content corrections register](CONTENT-CORRECTIONS-REGISTER.md); learner gate: [pilot test script](PILOT-TEST-SCRIPT.md).
+
+**Lesson pattern.** Every lesson provides: a small goal in a familiar situation; a visible worked example; a supported attempt; independent practice on a different case; a useful check with weak / adequate / strong anchors (`criteria` levels 1–3; Lesson 1 and Modules 1–2 now carry full criteria); save and return; and **later retrieval** through `apprenticeship.transfer` — a made-up scenario, a prompt that asks for a decision and its reason, and three anchors shown only after the learner writes. The app injects one optional field `transfer-decision` into the last step; it never reopens finished practice and is the evidence a reviewer needs before recording *demonstrated independently*.
+
+**Questions.** Saved choices store the option label, so an edited label keeps every earlier wording in `Choice.was` (`shared/choices.ts` maps old answers). Options display in a stable order keyed by lesson and question, never the authored order; sorter labels keep one fixed scale. `node scripts/check-questions.mjs --strict` fails when the defensible option is more than 15% longer than the longest alternative, outside 0.7–1.3× their mean, the longest in over half of all questions, or concentrated in one display position. The defensible answer must follow from facts in the question or supplied material (`material` on a guided entry).
+
+**Routes and privacy.** A supplied, rehearsal or no-participant route must be completable without real participant evidence in fields, checks, criteria and the finish gate. Every answer that could describe another person carries `sensitive: true`: the reader states who can read it, asks for a de-identified summary, and the device refuses to upload an email address or phone number found in it (`src/privacy.ts`). Raw research stays in private local notes with a deletion date. No novice research with health data or minors without qualified review.
+
+**Core path and tracks.** `src/corePath.ts` defines the recommended path (six stages, 131 lessons, a reason for each), the optional technical extension (coding lessons in Modules 12–13) and four skippable visual-refresh lessons that a learner may satisfy with an existing artefact (`learning.demonstrated`, server-checked). Core and full-library progress are separate denominators; the 221-lesson library figure keeps its meaning.
+
+**Sessions.** `src/sessions.ts` groups each flow into three sittings with pause points (Lesson 1 authors its own). Sessions change no IDs or completion rules.
+
+**Review loop and progress states.** Work saved, practice finished, reviewed against criteria and demonstrated independently are separate. A review request (`learning.review`) names criterion, question and version; nothing is sent. Self-review (`learning.selfReview`) is labelled and never counts. Only a creator review with a criterion and outcome (feedback columns from migration 0004) records reviewed or demonstrated; AI critique cannot. Earlier versions stay in `submission_history` and the repair trail compares them.
+
+**Load.** Polling asks `/api/course-records?since=<version>` once a minute; a learner's records version moves on every save or feedback row (migration 0004 triggers), so an unchanged poll reads one row.
+
+Run `npm run docs:generate`, `npm run test:content`, `node scripts/check-questions.mjs --strict`, `npm run test:worksheet`, `npm run test:actions`, `npm run test:learning`, `npm run build`, plus `scripts/test-cloud.mjs` and `scripts/test-review-cloud.mjs` against a local worker when the backend changes.
+
 ## Beginner orientation and visual guidance contract — 14 September 2026
 
 Every published teaching lesson uses the shared orientation layer in `src/orientation.tsx`. Learn shows the selected module's challenge, output, starting material, tools, approximate effort and a text-equivalent Bring → Practise → Keep diagram. Lesson cards preview Learn, Do, Keep, time and prerequisite readiness before opening. Lesson entry shows Learn / Do / Keep / Need plus the Learn → Do → Check → Keep path; the independent diagnostic remains uncoached and does not receive this layer.

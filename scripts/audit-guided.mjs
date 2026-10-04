@@ -30,7 +30,8 @@ for (const l of publishedLessons) {
     if (n > 1) say('field ' + id + ' is claimed by ' + n + ' steps');
   }
   if (!ids.includes('improvement-made')) say('no improvement-made field');
-  else if (a.worksheet[a.worksheet.length - 1].fields.at(-1).id !== 'improvement-made')
+  // The optional transfer section (4 October 2026) is appended after it.
+  else if (a.worksheet.filter(w => w.id !== 'transfer-case').at(-1).fields.at(-1).id !== 'improvement-made')
     say('improvement-made is not the last field of the last section');
 
   for (const f of fields) {
