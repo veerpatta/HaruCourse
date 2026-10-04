@@ -27,7 +27,7 @@ export const guided09: Record<string, Guided> = {
         { id: 'decoration-kept', label: 'Any decoration you kept, and why it costs nothing', kind: 'short' },
       ] },
       { id: 'rule', title: 'The rule, and saving', fields: [
-        { id: 'motion-rule', label: 'When your product animates, and when it does not', kind: 'long', hint: 'Write it so it would settle an argument you are not in the room for.' },
+        { id: 'motion-rule', label: 'When your product animates, and when it does not', kind: 'long', hint: 'Write it so it would settle an argument you are not in the room for, and include what happens when someone has asked their device for less motion.' },
         { id: 'time-given-back', label: 'The total time your removals gave back across one task', kind: 'short' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
@@ -132,8 +132,8 @@ export const guided09: Record<string, Guided> = {
         question: 'You are told the product “feels dated” and asked to add motion. What do you do first?',
         options: [
           { label: 'Ask what question each proposed animation would answer, and add none that answers nothing.', correct: true, feedback: 'Movement that answers no question adds waiting rather than quality. What people read as polish is nearly always fast acknowledgement, not the amount of movement.' },
-          { label: 'Add a transition between screens, since every current product has one.', feedback: 'A transition between screens taxes every navigation in the product. It is usually the most expensive item on the list and it explains nothing.' },
-          { label: 'Animate the things people look at most, so the product feels alive.', feedback: 'Those are the things people are trying to read. Movement there costs reading time and returns nothing.' },
+          { label: 'Add a transition between screens first, since nearly every current product has one.', was: ['Add a transition between screens, since every current product has one.'], feedback: 'A transition between screens taxes every navigation in the product. It is usually the most expensive item on the list and it explains nothing.' },
+          { label: 'Animate the things people look at most often, so the whole product feels more alive.', was: ['Animate the things people look at most, so the product feels alive.'], feedback: 'Those are the things people are trying to read. Movement there costs reading time and returns nothing.' },
         ],
         repair: 'Look at your answers-nothing box in step 2. Move each of those items into the removals box in step 4, then record the change in step 5.',
         recheck: 'Nothing you kept is there because it looks current.',
@@ -141,9 +141,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'A screen slides in from the right when you tap a class, and you labelled it continuity. What is worth checking?',
         options: [
-          { label: 'Whether anything was actually to the right a moment before, since otherwise the movement claims a relationship that does not exist.', correct: true, feedback: 'Continuity works by showing where something came from. Where there was no “there”, a slide is a direction invented to fill time.' },
-          { label: 'Whether 400 milliseconds matches the other durations in the product.', feedback: 'Consistency matters when you write the rule, and a matching duration cannot rescue an animation that explains nothing.' },
-          { label: 'Whether the easing is soft enough at both ends.', feedback: 'Softening the ends makes an unexplained movement pleasanter. It is still 400 milliseconds of waiting for nothing.' },
+          { label: 'Whether anything was really to the right a moment before; if not, the slide invents a place.', correct: true, was: ['Whether anything was actually to the right a moment before, since otherwise the movement claims a relationship that does not exist.'], feedback: 'Continuity works by showing where something came from. Where there was no “there”, a slide is a direction invented to fill time.' },
+          { label: 'Whether its 400 milliseconds matches the durations used everywhere else in the product.', was: ['Whether 400 milliseconds matches the other durations in the product.'], feedback: 'Consistency matters when you write the rule, and a matching duration cannot rescue an animation that explains nothing.' },
+          { label: 'Whether the easing is soft enough at both ends to make the slide feel pleasant.', was: ['Whether the easing is soft enough at both ends.'], feedback: 'Softening the ends makes an unexplained movement pleasanter. It is still 400 milliseconds of waiting for nothing.' },
         ],
         repair: 'Re-read every item you labelled continuity in step 2. Where nothing was on screen for it to come from, relabel it and record the relabel in step 5.',
         recheck: 'Every continuity item names something on screen that it came from.',
@@ -159,6 +159,15 @@ export const guided09: Record<string, Guided> = {
         recheck: 'Every kept decoration is free, unrepeated and out of the way of taps.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a coffee pre-order app has four animations. Each of its four screens slides in over 350ms; the cup sizes pulse gently for as long as the screen is open; a “ready for collection” banner glows once when the café marks the order ready; and confetti falls on the final screen while nothing is pending.',
+      prompt: 'Decide which animations to keep and which to remove, and explain why, including the time the removals give back.',
+      anchors: {
+        weak: 'Keeps everything because motion makes the app feel modern, or removes all four, including the glow that reports a change the person did not cause.',
+        adequate: 'Removes the slides (4 × 350ms = 1.4 seconds of waiting per order) and the endless pulse, keeps the one-off glow as attention motion, and keeps the confetti only because it delays nothing and does not repeat.',
+        strong: 'As adequate, plus a written rule for when the app animates, a reduced-motion version of the glow, and a note that the durations are estimates until checked on a real phone.',
+      },
+    },
     saveRoute: {
       auto: 'The list, the classification, the costs and the rule save as you type, on this device first and then online.',
       external: 'Nothing here needs a file. Keep your Module 8 screens and state notes to hand; most of the list comes from them.',
@@ -172,6 +181,8 @@ export const guided09: Record<string, Guided> = {
       { id: 'moments', title: 'Three moments, one control', intro: 'Pick the control that matters most: usually the one that spends money or books a place.', fields: [
         { id: 'three-moments', label: 'For one control: the press, the acknowledgement and the outcome, as three separate lines', kind: 'long', example: 'Example (made up): press, the button darkens under the finger; acknowledgement, the label becomes “Booking…” and the control stops accepting presses; outcome, “Booked. Saturday 10am.”' },
         { id: 'slow-case', label: 'What the person sees if the reply takes four seconds', kind: 'short', hint: 'If the honest answer is “nothing”, that is the finding this lesson exists for.' },
+        { id: 'example-states', label: 'In the state example: what changed at idle, pressed, saving, saved and failed', kind: 'long', hint: 'Switch the Save control through each state and write what you saw: words, shape, whether it still takes presses. No example on your screen, such as in a printed copy? Draw the five states side by side and say so.' },
+        { id: 'failure-retry', label: 'What your control shows if the outcome fails, and how the person retries without losing anything', kind: 'long', example: 'Example (made up): “Not booked. Your place is still free. Try again”, with the button active again and the chosen date kept.' },
       ] },
       { id: 'controls', title: 'Three controls specified', intro: 'Press, hover and focus for each. Hover is the one that does not exist on a phone.', fields: [
         { id: 'control-1', label: 'Control 1 · what changes on press, on hover and on focus', kind: 'long' },
@@ -186,6 +197,7 @@ export const guided09: Record<string, Guided> = {
       { id: 'testing', title: 'Keyboard and touch', fields: [
         { id: 'tab-pass', label: 'Where the keyboard stops, in order, and where you could not see the focus', kind: 'long', hint: 'Where nothing is built, number the stops on a printed screen and mark every row untested.' },
         { id: 'phone-check', label: 'What you could not reach when you opened the same design on a phone', kind: 'long' },
+        { id: 'reduced-motion-version', label: 'With Reduce motion on: what still tells the person the press registered and the outcome is coming, without movement', kind: 'long', hint: 'Turn on Reduce motion in the state example first and watch which changes remain. Words and a steady mark carry it; a spinning shape does not.' },
         { id: 'worst-repair', label: 'The worst failure you found, and what you changed', kind: 'short' },
       ] },
       { id: 'limits', title: 'What is not settled', fields: [
@@ -194,8 +206,8 @@ export const guided09: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'One control written as three separate moments, and an honest answer about what a four-second wait looks like today.',
-        fields: ['three-moments', 'slow-case'],
+      { expect: 'What the state example showed at each state, one control written as three moments, what a four-second wait looks like today, and the failure with its retry.',
+        fields: ['example-states', 'three-moments', 'slow-case', 'failure-retry'],
         terms: [
           { term: 'Acknowledgement', meaning: 'The immediate sign that the press registered. It is not the result, and it must not pretend to be.' },
           { term: 'Outcome', meaning: 'What actually happened, which may arrive seconds later or not at all.' },
@@ -213,7 +225,7 @@ export const guided09: Record<string, Guided> = {
           tradeoff: 'Three moments is more to specify and more to build than one line, and most of the time the middle one is on screen for a blink. The blink is what prevents the duplicate booking.',
           uncertainty: 'Still unknown: how long the wait really is for your users. Until something runs on a real connection, four seconds is an assumption rather than a measurement.',
         },
-        start: 'Write the three moments as three lines, then read the middle one aloud. If it is empty, the person meets silence.',
+        start: 'Open the state example in this lesson and switch the Save control through all five states before you write anything. Then write your own three moments as three lines and read the middle one aloud. If it is empty, the person meets silence.',
         enough: 'The acknowledgement line describes something visible that does not claim the outcome.' },
       { expect: 'Press, hover and focus specified for three controls, each state separable without colour, and each acknowledgement carrying a change of words.',
         fields: ['control-1', 'control-2', 'control-3', 'greyscale-check'],
@@ -225,10 +237,10 @@ export const guided09: Record<string, Guided> = {
           material: 'A supplied made up case. Pressing Book sends a request that takes about four seconds on a slow connection. Four proposals for what the person sees during those four seconds.',
           question: 'Which proposal acknowledges the press without claiming an outcome that has not happened?',
           options: [
-            { label: 'The button darkens on touch, its label becomes “Booking…”, it stops accepting presses, and the result message replaces it when the reply arrives.', correct: true, feedback: 'The press, the acknowledgement and the outcome stay separate, and the person can always tell which of the three they are in.' },
-            { label: 'The confirmation message appears the moment Book is pressed, and is taken away again if the booking turns out to have failed.', feedback: 'This tells the person something that is not yet true. Removing a confirmation afterwards is far worse than a short honest wait.' },
-            { label: 'A spinning shape covers the whole screen until the reply arrives.', feedback: 'It does acknowledge the press, and it also takes the screen away, so the person cannot re-read what they are booking while they wait.' },
-            { label: 'Nothing changes, because four seconds is short and the message will arrive on its own.', feedback: 'Four silent seconds is where second presses come from, and a second press can make a second booking.' },
+            { label: 'It darkens on touch, its label becomes “Booking…”, it stops taking presses, and the result replaces it.', correct: true, was: ['The button darkens on touch, its label becomes “Booking…”, it stops accepting presses, and the result message replaces it when the reply arrives.'], feedback: 'The press, the acknowledgement and the outcome stay separate, and the person can always tell which of the three they are in.' },
+            { label: 'The confirmation appears the moment Book is pressed, and is withdrawn if the booking then fails.', was: ['The confirmation message appears the moment Book is pressed, and is taken away again if the booking turns out to have failed.'], feedback: 'This tells the person something that is not yet true. Removing a confirmation afterwards is far worse than a short honest wait.' },
+            { label: 'A spinning shape covers the whole screen until the reply arrives, so nothing can be pressed twice.', was: ['A spinning shape covers the whole screen until the reply arrives.'], feedback: 'It does acknowledge the press, and it also takes the screen away, so the person cannot re-read what they are booking while they wait.' },
+            { label: 'Nothing changes for four seconds, because the result message will arrive soon enough on its own.', was: ['Nothing changes, because four seconds is short and the message will arrive on its own.'], feedback: 'Four silent seconds is where second presses come from, and a second press can make a second booking.' },
           ],
           then: 'Write the middle moment for each of your three controls, and give it a change of words rather than only a shape that spins.',
         },
@@ -238,8 +250,8 @@ export const guided09: Record<string, Guided> = {
         fields: ['hover-only-list', 'hover-resolved'],
         start: 'Open your design on your phone and try every action you can name. Anything you cannot reach is hidden behind hover.',
         enough: 'Nothing essential is left that only a pointer can find.' },
-      { terms: [{ term: 'Keyboard pass', meaning: 'Going through a whole screen using the Tab key alone and writing down each stop in the order it comes.' }, { term: 'Phone pass', meaning: 'Opening the same design at phone size and trying to finish the task with one hand, writing down whatever you could not get to.' }, { term: 'Reach', meaning: 'Whether a thumb can actually get to a control on a phone held in one hand, rather than whether the control fits on the screen.' }], expect: 'A recorded keyboard pass naming where focus was invisible, a phone pass naming what you could not reach, and one repair.',
-        fields: ['tab-pass', 'phone-check', 'worst-repair'],
+      { terms: [{ term: 'Keyboard pass', meaning: 'Going through a whole screen using the Tab key alone and writing down each stop in the order it comes.' }, { term: 'Phone pass', meaning: 'Opening the same design at phone size and trying to finish the task with one hand, writing down whatever you could not get to.' }, { term: 'Reach', meaning: 'Whether a thumb can actually get to a control on a phone held in one hand, rather than whether the control fits on the screen.' }], expect: 'A keyboard pass naming where focus was invisible, a phone pass naming what you could not reach, the reduced-motion version, and one repair.',
+        fields: ['tab-pass', 'phone-check', 'reduced-motion-version', 'worst-repair'],
         start: 'Where nothing is built, print the screen and number the stops in the order a keyboard would reach them, then mark every row untested.',
         enough: 'The notes say what you saw, not what you intended.' },
       { terms: [{ term: 'Verify', meaning: 'To check something against the thing itself running, rather than against your drawing of it.' }, { term: 'Build', meaning: 'A version that actually runs, on a real device, on a real connection, with real timing.' }, { term: 'Limit', meaning: 'A plain sentence saying what your check does not establish, written beside the finding it belongs to.' }], expect: 'An honest note of what you could not verify without a build, and the repair the Check questions asked for.',
@@ -251,9 +263,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'Your remove control appears only when the pointer rests on the row. What breaks?',
         options: [
-          { label: 'On a touch screen there is no hover, so the control never appears and the action has no route at all.', correct: true, feedback: 'A finger has no resting state. Anything only a pointer can reveal is missing entirely for most of your users.' },
-          { label: 'Nothing breaks, because people can tap and hold to get the same result.', feedback: 'Tap and hold is a different gesture with its own meaning on each platform, and nothing on the screen tells anyone to try it.' },
-          { label: 'It only breaks for people who have never used a mouse.', feedback: 'It breaks for everyone on a phone, whatever they have used before. The pointer is what is missing, not the experience.' },
+          { label: 'On a touch screen nothing hovers, so the control never appears and the action has no route.', correct: true, was: ['On a touch screen there is no hover, so the control never appears and the action has no route at all.'], feedback: 'A finger has no resting state. Anything only a pointer can reveal is missing entirely for anyone on a touch screen.' },
+          { label: 'Very little, because people can press and hold the row to reach the same control.', was: ['Nothing breaks, because people can tap and hold to get the same result.'], feedback: 'Press and hold is a different gesture with its own meaning on each platform, and nothing on the screen tells anyone to try it.' },
+          { label: 'It breaks only for people who have never used a mouse, which is a small group.', was: ['It only breaks for people who have never used a mouse.'], feedback: 'It breaks for everyone on a phone, whatever they have used before. The pointer is what is missing, not the experience.' },
         ],
         repair: 'Give every item in your hover-only-list box in step 3 a visible route in the hover-resolved box, or delete it, then record the change in step 5.',
         recheck: 'Every action in your design can be reached with a finger alone.',
@@ -262,8 +274,8 @@ export const guided09: Record<string, Guided> = {
         question: 'You removed the focus outline because it clashed with the design. What have you removed?',
         options: [
           { label: 'The only sign a keyboard user has of where they are on the screen.', correct: true, feedback: 'Focus is position, not decoration. With the outline gone the person is still moving through the page and can no longer see where they have got to.' },
-          { label: 'A browser default that the design replaces automatically.', feedback: 'Nothing replaces it unless you specify a replacement. Removing it without one leaves the person with no indication at all.' },
-          { label: 'Something only screen-reader users rely on.', feedback: 'A screen reader announces position aloud. The visible outline is for people who are looking at the screen and using a keyboard.' },
+          { label: 'A browser default, which the design system quietly replaces with its own.', was: ['A browser default that the design replaces automatically.'], feedback: 'Nothing replaces it unless you specify a replacement. Removing it without one leaves the person with no indication at all.' },
+          { label: 'Something that only people using screen readers ever rely on.', was: ['Something only screen-reader users rely on.'], feedback: 'A screen reader announces position aloud. The visible outline is for people who are looking at the screen and using a keyboard.' },
         ],
         repair: 'Add a focus line to each control in step 2, specifying an outline that stays visible on every background you use, and record it in step 5.',
         recheck: 'Every control has a focus state you can see on every surface it sits on.',
@@ -271,14 +283,23 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'Your pressed state is the same button in a slightly different blue. What is the risk?',
         options: [
-          { label: 'Someone who cannot separate those two blues sees no change at all, so the press goes unacknowledged for them.', correct: true, feedback: 'A state carried by colour alone is a state some people never receive. Add a second signal: a border, a shift, a change of words.' },
-          { label: 'Very little, as long as the two blues are far enough apart on the colour wheel.', feedback: 'Distance on a colour wheel is not the same as distance for a person with reduced colour vision, or for anyone outdoors in bright light.' },
-          { label: 'It is only a problem if the button is small.', feedback: 'Size changes how easy the button is to hit, not whether the change of state can be seen once it happens.' },
+          { label: 'Anyone who cannot separate those two blues sees no change, so the press goes unacknowledged.', correct: true, was: ['Someone who cannot separate those two blues sees no change at all, so the press goes unacknowledged for them.'], feedback: 'A state carried by colour alone is a state some people never receive. Add a second signal: a border, a shift, a change of words.' },
+          { label: 'Very little, as long as the two blues sit far enough apart on the colour wheel.', was: ['Very little, as long as the two blues are far enough apart on the colour wheel.'], feedback: 'Distance on a colour wheel is not the same as distance for a person with reduced colour vision, or for anyone outdoors in bright light.' },
+          { label: 'It is a risk only on small buttons, where the colour change covers so few pixels.', was: ['It is only a problem if the button is small.'], feedback: 'Size changes how easy the button is to hit, not whether the change of state can be seen once it happens.' },
         ],
         repair: 'Use your greyscale-check box in step 2. For any state that disappears without colour, add a second signal to that control and record it in step 5.',
         recheck: 'Every state in your three controls survives with the colour taken out.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a library app’s “Renew all” button takes up to five seconds to reply. Nothing on screen changes until the reply arrives, and some members press it twice and receive two renewal emails. When the network fails, the button simply returns to normal with no message.',
+      prompt: 'Specify what the button shows from press to outcome, including failure, and explain why each part is there.',
+      anchors: {
+        weak: 'Makes the reply faster or adds a spinner alone, and leaves the failure silent.',
+        adequate: 'A pressed state on touch, then an immediate label change such as “Renewing…” with the button not accepting presses, then the outcome; a failure says what happened and offers a retry that keeps the request.',
+        strong: 'As adequate, plus a reduced-motion version where the label change carries the state with nothing spinning, a visible focus state for keyboard users, and a note that five seconds needs checking on a slow phone.',
+      },
+    },
     saveRoute: {
       auto: 'The three moments, the control specifications and the test notes save as you type, on this device first and then online.',
       external: 'Keep your Module 8 action specification and state tables open beside this; the three controls should come from there.',
@@ -305,9 +326,11 @@ export const guided09: Record<string, Guided> = {
       { id: 'reject', title: 'One rejected, the rest sequenced', fields: [
         { id: 'rejected', label: 'The transition you removed, what it cost, and what it explained', kind: 'long' },
         { id: 'competing', label: 'Anywhere two transitions ran at once, and how you sequenced or dropped them', kind: 'short' },
+        { id: 'interrupted', label: 'What happens if a transition is interrupted part way, such as escape pressed while the panel is still opening', kind: 'short', example: 'Example (made up): the panel reverses from wherever it has reached and shrinks back into the filter button; it never jumps.' },
       ] },
       { id: 'rule', title: 'The rule, and saving', fields: [
         { id: 'move-or-fade-rule', label: 'When your product moves something, and when it simply fades', kind: 'long' },
+        { id: 'reduced-versions', label: 'Each kept transition with Reduce motion on: what replaces the movement, and what still shows where things came from', kind: 'long', hint: 'Usually a short fade in place, with the thing that caused it kept marked. Check it against the Reduce motion toggle in the state example.' },
         { id: 'frames-reference', label: 'Where the frames and timings live', kind: 'short', hint: 'File names or “paper, in my folder”. Naming a file does not upload it.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
@@ -344,21 +367,21 @@ export const guided09: Record<string, Guided> = {
           material: 'A supplied made up timing test. The same panel transition was tried at three durations. At 100 milliseconds the panel seemed to appear rather than travel. At 200 the travel was visible and the panel was ready before the hand had moved. At 400 the person was waiting for it.',
           question: 'Which duration do you keep, and on what grounds?',
           options: [
-            { label: '200 milliseconds, because it is the shortest one where the travel is still visible enough to show where the panel came from.', correct: true, feedback: 'Duration is set by the work the movement has to do. The shortest that still explains is the right one, and here that is the middle value.' },
-            { label: '100 milliseconds, because faster is always better.', feedback: 'Faster is usually better and is not a rule. At 100 the panel arrives without showing its journey, so the time is spent and the explanation never lands.' },
-            { label: '400 milliseconds, because the movement is easier to follow.', feedback: 'Easier to follow stops being useful once the relationship has landed. Everything after that point is the person waiting.' },
-            { label: 'Any of the three, since the difference is too small for a person to notice.', feedback: 'The gap between 100 and 400 milliseconds is roughly the gap between instant and slow. It is one of the few timing differences almost everybody feels.' },
+            { label: '200 milliseconds: the shortest of the three at which the panel still visibly travels from its button.', correct: true, was: ['200 milliseconds, because it is the shortest one where the travel is still visible enough to show where the panel came from.'], feedback: 'Duration is set by the work the movement has to do. The shortest that still explains is the right one, and here that is the middle value.' },
+            { label: '100 milliseconds, because a faster transition always feels more responsive to the person using it.', was: ['100 milliseconds, because faster is always better.'], feedback: 'Faster is usually better and is not a rule. At 100 the panel arrives without showing its journey, so the time is spent and the explanation never lands.' },
+            { label: '400 milliseconds, because the slower movement is easier to follow for everyone watching the panel.', was: ['400 milliseconds, because the movement is easier to follow.'], feedback: 'Easier to follow stops being useful once the relationship has landed. Everything after that point is the person waiting.' },
+            { label: 'Any of the three, since the difference between them is too small for most people to notice at all.', was: ['Any of the three, since the difference is too small for a person to notice.'], feedback: 'The gap between 100 and 400 milliseconds is roughly the gap between instant and slow. It is one of the few timing differences almost everybody feels.' },
           ],
           then: 'Run the same test on your own three, and write down which route you used: drawn frames flicked by hand, or a free prototyping tool.',
         },
-        start: 'Draw the first and last frame of each transition, then flick between them at the speed you intend and at half that speed.',
+        start: 'Draw the first and last frame of each transition, then flick between them at the speed you intend and at half that speed. To see a working no-code comparison, open the state example in this lesson and switch Reduce motion on and off: the change stays visible while the movement goes.',
         enough: 'Each duration has a reason attached that is about distance and legibility, not about a house number.' },
-      { terms: [{ term: 'Sequence', meaning: 'To run one movement after another instead of together, so there is one thing to follow at a time.' }, { term: 'Competing motion', meaning: 'Two or more movements in the same view at the same moment, each asking for the attention only one of them can have.' }, { term: 'Cost', meaning: 'What is lost by removing something, written down so a later reader can see it was a choice rather than an oversight.' }], demo: { scenario: 'Made-up example. Three transitions firing together when a note is deleted, and cutting the wrong one of the three.', beats: [{ label: 'What was happening at once', text: 'Deleting a note ran three movements in the same moment. The row collapsing shut, the rows below sliding up to close the gap, and an undo bar rising from the bottom edge. All of them around 250 milliseconds.' }, { label: 'Which one I removed', text: 'The undo bar entrance. I chose it because it was the newest of the three and I was the least attached to it.' }, { label: 'What that cost', text: 'The undo bar is the only thing saying the deletion can still be taken back. Removing its entrance did not remove the bar; it made the bar arrive with no announcement, in a corner nobody was looking at.' }, { label: 'The question I had skipped', text: 'Which of the three carries the relationship. The row collapsing is what shows this note is the one that went. The rows sliding up say the same fact a second time, more slowly.' }, { label: 'What I did instead', text: 'Dropped the slide of the rows below. Kept the row collapsing at 200 milliseconds. Let the undo bar rise 100 milliseconds after that one finishes, so there is one thing to follow, then another.' }], wrongTurn: 'The wrong turn is choosing what to cut by how attached you are to it. It is tempting because you have to cut something and the newest thing feels cheapest to lose, and the transitions you have lived with longest are exactly the ones you have stopped seeing.', tradeoff: 'Sequencing adds the second movement onto the end of the first, so the deletion now takes longer from beginning to end than the version where everything happened together. You are paying time for legibility and there is no arrangement where it is free.', uncertainty: 'Still unknown: whether a 100 millisecond gap reads as after rather than alongside. That judgement was made with your own eyes on your own machine, and a device dropping frames may close the gap.' }, expect: 'One transition removed with its cost and what it explained recorded, and no two transitions running at once in the same view.',
-        fields: ['rejected', 'competing'],
+      { terms: [{ term: 'Sequence', meaning: 'To run one movement after another instead of together, so there is one thing to follow at a time.' }, { term: 'Competing motion', meaning: 'Two or more movements in the same view at the same moment, each asking for the attention only one of them can have.' }, { term: 'Cost', meaning: 'What is lost by removing something, written down so a later reader can see it was a choice rather than an oversight.' }], demo: { scenario: 'Made-up example. Three transitions firing together when a note is deleted, and cutting the wrong one of the three.', beats: [{ label: 'What was happening at once', text: 'Deleting a note ran three movements in the same moment. The row collapsing shut, the rows below sliding up to close the gap, and an undo bar rising from the bottom edge. All of them around 250 milliseconds.' }, { label: 'Which one I removed', text: 'The undo bar entrance. I chose it because it was the newest of the three and I was the least attached to it.' }, { label: 'What that cost', text: 'The undo bar is the only thing saying the deletion can still be taken back. Removing its entrance did not remove the bar; it made the bar arrive with no announcement, in a corner nobody was looking at.' }, { label: 'The question I had skipped', text: 'Which of the three carries the relationship. The row collapsing is what shows this note is the one that went. The rows sliding up say the same fact a second time, more slowly.' }, { label: 'What I did instead', text: 'Dropped the slide of the rows below. Kept the row collapsing at 200 milliseconds. Let the undo bar rise 100 milliseconds after that one finishes, so there is one thing to follow, then another.' }], wrongTurn: 'The wrong turn is choosing what to cut by how attached you are to it. It is tempting because you have to cut something and the newest thing feels cheapest to lose, and the transitions you have lived with longest are exactly the ones you have stopped seeing.', tradeoff: 'Sequencing adds the second movement onto the end of the first, so the deletion now takes longer from beginning to end than the version where everything happened together. You are paying time for legibility and there is no arrangement where it is free.', uncertainty: 'Still unknown: whether a 100 millisecond gap reads as after rather than alongside. That judgement was made with your own eyes on your own machine, and a device dropping frames may close the gap.' }, expect: 'One transition removed with its cost and what it explained, no two transitions running at once in the same view, and what an interruption does.',
+        fields: ['rejected', 'competing', 'interrupted'],
         start: 'Find the one that delays the most and explains the least. That is almost always the rejection.',
         enough: 'The rejection note says what the transition cost, not only that you did not like it.' },
-      { terms: [{ term: 'Fade', meaning: 'A change from see-through to solid in place, with no travel. It says this is different now and claims nothing about where it came from.' }, { term: 'Move-or-fade rule', meaning: 'The sentence that settles, for any new change you meet later, whether the product travels it or simply fades it.' }], expect: 'A rule for what your product moves and what it fades, where the frames live, and the repair the Check questions asked for.',
-        fields: ['move-or-fade-rule', 'frames-reference', 'improvement-made'],
+      { terms: [{ term: 'Fade', meaning: 'A change from see-through to solid in place, with no travel. It says this is different now and claims nothing about where it came from.' }, { term: 'Move-or-fade rule', meaning: 'The sentence that settles, for any new change you meet later, whether the product travels it or simply fades it.' }], expect: 'A rule for what your product moves and what it fades, each transition’s reduced-motion version, where the frames live, and the repair the Check questions asked for.',
+        fields: ['move-or-fade-rule', 'reduced-versions', 'frames-reference', 'improvement-made'],
         start: 'Test your rule against the transition you rejected. If the rule would have allowed it, the rule is too loose.',
         enough: 'The rule decides a case you have not met yet.' },
     ],
@@ -366,9 +389,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'A settings screen replaces the class list. Nothing on the list turns into anything on the settings screen. What transition is honest?',
         options: [
-          { label: 'A short fade, because nothing moved from anywhere and a slide would claim a direction that does not exist.', correct: true, feedback: 'A fade says “this is different now” and claims nothing more. That is exactly true, and it is the cheapest thing you can say.' },
-          { label: 'A slide from the right, because that is the usual direction for going deeper.', feedback: 'The convention describes a spatial relationship. Where there is no such relationship, the convention becomes a small untruth that also costs time.' },
-          { label: 'A slide from the right, but faster, so the cost is smaller.', feedback: 'Shortening it reduces the cost and not the claim. The direction is still invented, and the person still learns nothing from it.' },
+          { label: 'A short fade, because nothing moved from anywhere and a slide would invent a direction.', correct: true, was: ['A short fade, because nothing moved from anywhere and a slide would claim a direction that does not exist.'], feedback: 'A fade says “this is different now” and claims nothing more. That is exactly true, and it is the cheapest thing you can say.' },
+          { label: 'A slide from the right, because that is the usual direction for going deeper in an app.', was: ['A slide from the right, because that is the usual direction for going deeper.'], feedback: 'The convention describes a spatial relationship. Where there is no such relationship, the convention becomes a small untruth that also costs time.' },
+          { label: 'A slide from the right made faster, so that the cost of the movement stays small.', was: ['A slide from the right, but faster, so the cost is smaller.'], feedback: 'Shortening it reduces the cost and not the claim. The direction is still invented, and the person still learns nothing from it.' },
         ],
         repair: 'Move that item into your no-origin box in step 1, respecify it as a fade in step 2, and record the change in step 5.',
         recheck: 'Everything that moves has a place on screen it moved from.',
@@ -376,9 +399,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'You have set every transition in the product to 250 milliseconds so it feels consistent. What is wrong with that?',
         options: [
-          { label: 'Distance sets duration, so a small nearby change is now slow and a large one may be too quick to follow.', correct: true, feedback: 'A duration is not a brand value. A tick appearing beside a field and a panel crossing half the screen have different distances, so they need different times.' },
-          { label: 'Nothing: one value is easier to remember and easier to build.', feedback: 'One value is easier and it makes half the product feel sluggish. Three named values are almost as easy and fit the work being done.' },
-          { label: 'The problem is the number, and 200 would be a better single value.', feedback: 'Any single value has the same fault at a different point. The fix is to set duration from distance rather than to move the one number.' },
+          { label: 'Distance sets duration, so a small nearby change now drags and a big one may look abrupt.', correct: true, was: ['Distance sets duration, so a small nearby change is now slow and a large one may be too quick to follow.'], feedback: 'A duration is not a brand value. A tick appearing beside a field and a panel crossing half the screen have different distances, so they need different times.' },
+          { label: 'Very little, since one value is easier to remember, to specify and to build.', was: ['Nothing: one value is easier to remember and easier to build.'], feedback: 'One value is easier and it makes half the product feel sluggish. Three named values are almost as easy and fit the work being done.' },
+          { label: 'The number is the problem; 200 milliseconds would make a better single value.', was: ['The problem is the number, and 200 would be a better single value.'], feedback: 'Any single value has the same fault at a different point. The fix is to set duration from distance rather than to move the one number.' },
         ],
         repair: 'Redo the half-and-double test in step 3 for your shortest and longest transitions, then rewrite their durations in step 2 and record it in step 5.',
         recheck: 'Your three durations are not all the same, and each has a distance behind it.',
@@ -386,14 +409,23 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'A panel slides in while the list behind it fades out and the heading changes size. What should you do?',
         options: [
-          { label: 'Choose the one carrying the relationship, then sequence or drop the others so a person has one thing to follow.', correct: true, feedback: 'Two movements at once compete for the same attention and neither is read. Sequencing costs a little time; running them together costs the explanation.' },
-          { label: 'Keep all three but shorten each, so the whole thing is over quickly.', feedback: 'Three short movements at once is still three things happening at once. Speed does not make simultaneous movement legible.' },
-          { label: 'Keep all three and stagger the easings so they feel different from each other.', feedback: 'Different easings make them distinguishable in a slow-motion recording. At real speed the eye still has three things to track.' },
+          { label: 'Keep the movement that carries the relationship and sequence or drop the other two.', correct: true, was: ['Choose the one carrying the relationship, then sequence or drop the others so a person has one thing to follow.'], feedback: 'Two movements at once compete for the same attention and neither is read. Sequencing costs a little time; running them together costs the explanation.' },
+          { label: 'Keep all three but shorten each one, so the whole change is over very quickly.', was: ['Keep all three but shorten each, so the whole thing is over quickly.'], feedback: 'Three short movements at once is still three things happening at once. Speed does not make simultaneous movement legible.' },
+          { label: 'Keep all three and give each its own easing, so they feel distinct from each other.', was: ['Keep all three and stagger the easings so they feel different from each other.'], feedback: 'Different easings make them distinguishable in a slow-motion recording. At real speed the eye still has three things to track.' },
         ],
         repair: 'Record the clash in your competing box in step 4, drop or sequence the extra movements in step 2, and note the change in step 5.',
         recheck: 'In every view, one thing moves at a time.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: in a weather app, tapping a day in the week list opens that day’s hourly forecast, which slides up from the bottom edge over 500ms. Opening Settings slides a screen in from the right, also over 500ms, though nothing on the forecast relates to it. Pressing back while the hourly panel is still moving makes it jump straight to closed.',
+      prompt: 'Decide the transition for each of the two changes, and what should happen when back is pressed mid-movement. Explain why.',
+      anchors: {
+        weak: 'Keeps the same 500ms slide for both so the app feels consistent, and ignores the interrupted case.',
+        adequate: 'The hourly view expands from the tapped day (around 200 to 250ms) so its origin shows; Settings fades briefly because nothing moved; back mid-movement reverses from wherever the panel is.',
+        strong: 'As adequate, plus a reduced-motion version (short fades with the tapped day kept highlighted), a try at half and double the duration, and a note that timing needs a real phone.',
+      },
+    },
     saveRoute: {
       auto: 'The relationship map, the three specifications, the timing tests and the rule save as you type, on this device first and then online.',
       external: 'The frames stay on paper or in your own folder. Photograph them if you like and write the file name in step 5; naming a file does not upload it.',
@@ -543,6 +575,15 @@ export const guided09: Record<string, Guided> = {
         recheck: 'Your record separates what you saw from what you have not established.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a houseplant-care app has a header photo that drifts as you scroll, a watering timer drawn as a ring that sweeps round as the minutes pass, and a tick that bounces when you mark a plant as watered. A person has turned on reduced motion on her phone.',
+      prompt: 'Decide what happens to each of the three animations with the setting on, and explain why.',
+      anchors: {
+        weak: 'Switches every animation off, including the timer ring, so she loses the time remaining.',
+        adequate: 'Removes the drifting header, keeps the timer’s information as a number that updates without sweeping, and shows the tick at once, because each keeps what she learns without large movement.',
+        strong: 'As adequate, plus a check with the setting on, on a device like hers, and a stated limit: one person’s check does not show how it feels to people who need the setting.',
+      },
+    },
     saveRoute: {
       auto: 'The device note, both versions of each animation, the removals and the limits save as you type, on this device first and then online.',
       external: 'Nothing here needs a file. Keep your lesson 3 transition specifications open beside this, since each one needs its reduced pair.',
@@ -663,6 +704,15 @@ export const guided09: Record<string, Guided> = {
         recheck: 'Every destructive gesture names a number of seconds and the words the person sees.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a news app’s saved-articles list lets people archive an article only by swiping right, and share it only by pressing and holding. Archiving removes the article from the list at once. Nothing on the screen shows that either gesture exists.',
+      prompt: 'Decide what you would add or change for archiving and sharing, and explain why.',
+      anchors: {
+        weak: 'Adds a first-use tutorial or tooltip so people learn the gestures, keeping them as the only routes.',
+        adequate: 'Adds a visible archive control and a visible share control on each article, keeps the gestures as shortcuts, and gives archiving an undo with a stated window.',
+        strong: 'As adequate, plus what happens when a swipe is released halfway, whether the undo is reachable one-handed, and a plan to watch people try it unaided, or a dated note that nobody has.',
+      },
+    },
     saveRoute: {
       auto: 'Your gesture list, the pairs and the discoverability records save as you type, on this device first and then online.',
       external: 'Nothing here needs a file. Keep your m08 list and card components to hand, because the visible controls belong to them.',
@@ -779,6 +829,15 @@ export const guided09: Record<string, Guided> = {
         recheck: 'No row in either table is blank.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a cinema’s seat map is a grid of 120 seats, and every seat is its own tab stop. Pressing Escape closes the seat map but sends focus to the top of the page. Enter selects a seat; Space does nothing.',
+      prompt: 'Write the key rows you would change for this seat map, and explain why each change matters.',
+      anchors: {
+        weak: 'Says every seat is reachable by Tab, so keyboard support is done, or only adds a skip link.',
+        adequate: 'One tab stop for the grid with arrow keys moving between seats, Enter and Space both selecting, and Escape closing the map and returning focus to the “Choose seats” button.',
+        strong: 'As adequate, plus what the arrows do at the edges and over unavailable seats, and every row marked untested until it is tried in a build or a comparable product.',
+      },
+    },
     saveRoute: {
       auto: 'Both key tables, the focus sentences and the results save as you type, on this device first and then online.',
       external: 'Nothing is uploaded. Keep the assigned pattern pages open in a tab while you write; the tables are worth nothing if they drift from the conventions.',
@@ -926,6 +985,15 @@ export const guided09: Record<string, Guided> = {
         recheck: 'Every surface colour in your design has an outline described against it.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: on a hardware shop’s click-and-collect page, changing the “collect from” shop refreshes the stock list and sends focus to the top of the page. Pressing “Add to basket” opens a mini-basket that takes focus every time, even when the person is adding several items in a row.',
+      prompt: 'Decide what focus should do in each situation and what, if anything, is announced. Explain why.',
+      anchors: {
+        weak: 'Moves focus to every new piece of content so nothing is missed, or leaves both behaviours as they are.',
+        adequate: 'Leaves focus on the shop selector and announces the new stock count; leaves focus on the item after adding and announces “Added, basket has 3 items”, opening the basket only when asked.',
+        strong: 'As adequate, plus a visible focus indicator on every surface involved and a plain note that screen-reader behaviour stays untested until someone who uses one tries it.',
+      },
+    },
     saveRoute: {
       auto: 'The four rules, the movement list and the tab-through notes save as you type, on this device first and then online.',
       external: 'Nothing is uploaded. Keep your key tables from the last lesson beside this; the two documents are meant to be read together.',
@@ -1042,6 +1110,15 @@ export const guided09: Record<string, Guided> = {
         recheck: 'The rule names a grip, a long press or a mode, and the scrolling check says ordinary scrolling still works.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a music app lets people reorder songs in a playlist only by dragging a row. The team has added a keyboard route, focusing a song and pressing Alt with the up or down arrow, and now says the playlist is usable by anyone who cannot drag.',
+      prompt: 'Decide whether that claim holds and what you would add, and explain why.',
+      anchors: {
+        weak: 'Agrees that the keyboard route covers everyone who cannot drag, so nothing more is needed.',
+        adequate: 'Says the claim fails: some people can tap or click but cannot drag or use keys, so a single-pointer route is needed too, such as tap Move then tap the destination, or Move up and Move down buttons.',
+        strong: 'As adequate, plus a cancel on each route, an undo that names the new position, what moves under reduced motion, and a test of both routes on the same list before claiming anything.',
+      },
+    },
     saveRoute: {
       auto: 'The three signals, the key table, the undo wording and the touch rule save as you type, on this device first and then online.',
       external: 'The three sketches stay on paper or in your own folder. Photograph them if you like and write the file name in the signals boxes; naming a file does not upload it.',
@@ -1163,6 +1240,15 @@ export const guided09: Record<string, Guided> = {
         recheck: 'The restoration list names the row, the position and the filters separately.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a campsite booking list on a phone with 640 points of usable height keeps three things fixed: a 60-point header, a 48-point map toggle and a 72-point “Book” bar. More pitches load on their own as you near the bottom, and returning from a pitch’s page puts you back at the top.',
+      prompt: 'Decide what stays fixed, how the list should end and what returning should restore. Explain why, with the numbers.',
+      anchors: {
+        weak: 'Keeps all three fixed because each is useful, and keeps endless loading and the reset to the top.',
+        adequate: 'Totals 180 of 640 points (about 28%), lets the header scroll away and return, moves Book to the pitch page, uses load-more with a count so the footer is reachable, and restores the pitch and filters on return.',
+        strong: 'As adequate, plus a rule that new pitches never push the list down under a finger, reserved space while loading, and a check on a real phone of how many rows stay visible.',
+      },
+    },
     saveRoute: {
       auto: 'Your measurements, decisions and rules save as you type, on this device first and then online.',
       external: 'The paper viewport and the measured drawing stay in your own folder. Note the file name here if you photograph them; naming a file does not upload it.',
@@ -1282,6 +1368,15 @@ export const guided09: Record<string, Guided> = {
         recheck: 'The three states are still distinguishable with the colour removed.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a shared shopping-list app saves an edited item as soon as you tap away, with no message. Offline, edits vanish when the app reloads. If you leave mid-edit the change is thrown away, and there is no Cancel while editing.',
+      prompt: 'Specify what the person sees when an edit saves, fails, is cancelled and is left half-done. Explain your choices.',
+      anchors: {
+        weak: 'Says saving on its own is simpler, so no message is needed, or adds a message for failures only.',
+        adequate: 'A visible “Saved” with a time; on failure the text stays on the phone with “Not saved yet” and Retry; Cancel restores the old value; leaving keeps a draft or saves, with the reason stated.',
+        strong: 'As adequate, plus a reduced-motion version of the saved state, what happens if another person edits the same item meanwhile, and a note that the timing needs testing in a build.',
+      },
+    },
     saveRoute: {
       auto: 'The three states, the wording and the failure message save as you type, on this device first and then online.',
       external: 'Nothing here needs a file. If you drew the three states, keep the sheet in your own folder and note its name.',
@@ -1400,6 +1495,15 @@ export const guided09: Record<string, Guided> = {
         recheck: 'Every reduced pair still tells the person what the original told them.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: an art gallery’s audio-guide app uses durations of 150, 180, 200, 220, 300 and 450 milliseconds across its screens. Its only motion rule reads “keep motion elegant”. Nothing says what happens when a visitor has asked for reduced motion.',
+      prompt: 'Propose the named durations and one rule for this sheet, and explain why they would settle future decisions.',
+      anchors: {
+        weak: 'Keeps all six values or the “elegant” rule, so the next proposal can still pick any number.',
+        adequate: 'Merges values within 50ms into about three named roles (such as quick 150 and moderate 250), writes a countable rule such as “one thing animates at a time”, and pairs each role with a reduced-motion version.',
+        strong: 'As adequate, plus a decision on 450ms (justified as its own role, or removed) and a test of the rule against an animation it ought to refuse.',
+      },
+    },
     saveRoute: {
       auto: 'The sheet, the rules and the exception list save as you type, on this device first and then online.',
       external: 'Nothing here needs a file. Keep your m08 token sheet beside this one; they are two halves of the same document.',
@@ -1553,6 +1657,15 @@ export const guided09: Record<string, Guided> = {
         recheck: 'The re-test result reads as an observation, whichever way it went.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: in three sessions on participants’ own phones, two people pressed “Unlock car” twice because nothing changed for several seconds, one could not find “End trip”, and one said the map colours look dull. The designer wants to fix all four in one pass before testing again.',
+      prompt: 'Rank the findings by harm, choose the one repair to make first, and write the prediction you would check. Explain your ranking.',
+      anchors: {
+        weak: 'Fixes the dull colours first, or changes everything at once so the re-test cannot show which change helped.',
+        adequate: 'Ranks the double unlock first (repeated actions can send duplicate requests), then End trip, with the colours last as a preference; makes one change, with a prediction written first such as “nobody presses Unlock twice”.',
+        strong: 'As adequate, plus a re-test with someone new on a different phone, or a labelled rehearsal, and an untested list naming screen-reader use and older devices.',
+      },
+    },
     saveRoute: {
       auto: 'The session records, the ranking and the repair save as you type, on this device first and then online.',
       external: 'Recordings and photographs stay in your own folder. Note the file names here; naming a file does not upload it.',

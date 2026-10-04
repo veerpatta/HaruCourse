@@ -92,7 +92,7 @@ export const module9: Lesson[] = [
     misconception:
       "“Motion makes an interface feel modern.” It makes an interface feel slower when it delays action, and it makes an interface feel confusing when several things move at once. What reads as quality is usually immediate feedback and continuity, not the amount of movement.",
     example:
-      "An audit of the booking flow found eleven animations. Four were feedback and stayed. Three were continuity — the filter panel sliding from the control that opened it, the detail view expanding from its row — and stayed. Two were attention: one legitimate, marking a place that had just been taken by someone else, and one an animated banner promoting a class, which was demoted to a static card. Two were decoration: a bouncing icon on the confirmation screen, kept because it cost nothing and did not delay anything, and an animated page transition that added 400ms to every navigation, which was removed and immediately made the whole flow feel faster.",
+      "Made-up example: an audit of the booking flow found eleven animations. Four were feedback and stayed. Three were continuity — the filter panel sliding from the control that opened it, the detail view expanding from its row — and stayed. Two were attention: one legitimate, marking a place that had just been taken by someone else, and one an animated banner promoting a class, which was demoted to a static card. Two were decoration: a bouncing icon on the confirmation screen, kept because it cost nothing and did not delay anything, and an animated page transition that added 400ms to every navigation, which was removed and immediately made the whole flow feel faster.",
     freeToolPath:
       "The audit is written work. Where you need to see a transition, a local HTML file with a few CSS rules shows real timing honestly; guessing at durations on paper is where most bad motion decisions are made.",
     outputs: [
@@ -280,20 +280,20 @@ export const module9: Lesson[] = [
     teach: [
       "Acknowledge the press immediately, even when the result takes seconds.",
       "Separate three moments: the press, the acknowledgement and the outcome.",
-      "Hover does not exist on touch. Never hide anything essential behind it.",
+      "Touch screens have no hover, so anything essential needs a route that works without it.",
       "Focus feedback is not optional styling; it is how keyboard users see where they are.",
       "If a control cannot respond instantly, change its label or state rather than doing nothing.",
     ],
     explanation: [
       "Three moments need designing, and products routinely design only the third. The press is when the person's finger is down and the control should look pressed. The acknowledgement is the instant afterwards, when the interface must show it heard — a state change, a label change, a disabled control with a spinner beside it. The outcome may take a second or ten, and it is the only one most teams specify, which is why so many products feel unresponsive while being technically fast.",
-      "On a touch screen there is no hover, so anything that only appears on hover does not exist for most of your users. This is a structural rule rather than a preference: if an action is available on hover in a list row, it must also be reachable by another means, and a design where the only route to “remove” is hovering is a design that excludes every phone.",
+      "On a touch screen there is no hover, so anything that only appears on hover does not exist for anyone using a touch screen. This is a structural rule rather than a preference: if an action is available on hover in a list row, it must also be reachable by another means, and a design where the only route to “remove” is hovering is a design that excludes every phone.",
       "Focus feedback is what a keyboard user has instead of a cursor. It must be visible against every background it can appear on, it must not be removed for aesthetic reasons, and it should be tested by pressing tab rather than assumed from the specification. This connects directly to the pattern guidance in this module: a component's keyboard behaviour and its focus appearance are the same design problem.",
       "When something genuinely cannot respond instantly, say so in the control itself. A button that becomes “Booking…” with a spinner tells the person their tap registered; a button that stays identical for two seconds tells them nothing, and the reasonable response to nothing is to try again.",
     ],
     misconception:
       "“The action completes quickly, so feedback is unnecessary.” Quickly on your machine and quickly on a five-year-old phone on a slow connection are different. Feedback costs nothing when the response is fast and saves the interaction when it is not.",
     example:
-      "The book button did nothing visible until the server replied, which on a throttled connection took four seconds; in the m07 paper test one participant had tapped twice. Rebuilt into three moments: pressed state on touch-down, immediate change to “Booking…” with the control disabled and a spinner, and the outcome message when the server replied. Hover-only reveal of the “remove from shortlist” control was replaced with a permanently visible quiet control. Focus rings were specified against both the light surface and the tinted panel, and the tab pass found one control that could be reached but showed no focus at all.",
+      "Made-up example: the book button did nothing visible until the server replied, which on a throttled connection took four seconds; in the m07 paper test one participant had tapped twice. Rebuilt into three moments: pressed state on touch-down, immediate change to “Booking…” with the control disabled and a spinner, and the outcome message when the server replied. Hover-only reveal of the “remove from shortlist” control was replaced with a permanently visible quiet control. Focus rings were specified against both the light surface and the tinted panel, and the tab pass found one control that could be reached but showed no focus at all.",
     freeToolPath:
       "A local HTML file with three buttons and a few CSS rules shows press, hover and focus honestly, including what happens on a touch screen if you open it on your phone. Paper cannot show feedback timing.",
     outputs: [
@@ -301,6 +301,7 @@ export const module9: Lesson[] = [
       "The three moments separated: press, acknowledgement, outcome",
       "A list of anything currently hover-only, with its touch route",
       "A tab pass recording where focus was invisible",
+      "A failure state with a retry, and a reduced-motion version of the acknowledgement",
     ],
     steps: [
       {
@@ -308,7 +309,8 @@ export const module9: Lesson[] = [
         title: "Read and separate",
         instructions: [
           "Read the assigned status heuristic and the keyboard pattern for one component you use.",
-          "Write the three moments for one control: press, acknowledgement, outcome.",
+          "Open the state example in this lesson and switch the Save control through idle, pressed, saving, saved and failed, noting what changes each time.",
+          "Write the three moments for one control: press, acknowledgement, outcome, plus what it shows if the outcome fails.",
         ],
       },
       {
@@ -317,7 +319,7 @@ export const module9: Lesson[] = [
         instructions: [
           "For three controls, specify what changes on press, on hover and on focus.",
           "Make each state distinguishable without colour.",
-          "Give the acknowledgement a label change, not only a spinner.",
+          "Give the acknowledgement a label change, not only a spinner, and give the failure a retry that keeps the person's work.",
         ],
       },
       {
@@ -335,6 +337,7 @@ export const module9: Lesson[] = [
         instructions: [
           "Tab through your controls and record where focus is invisible.",
           "Open the same page on a phone and check every control is reachable.",
+          "Turn on Reduce motion in the state example, then write what still shows your acknowledgement without movement.",
           "Repair the worst failure you find.",
         ],
       },
@@ -356,7 +359,7 @@ export const module9: Lesson[] = [
       {
         question: "What is wrong with hover-only controls?",
         answer:
-          "Hover does not exist on touch screens, so the control does not exist for most people. Anything essential needs a route that works without a pointer.",
+          "Hover does not exist on touch screens, so the control does not exist for anyone using one. Anything essential needs a route that works without a resting pointer.",
       },
       {
         question: "Why is focus feedback not a styling preference?",
@@ -366,7 +369,7 @@ export const module9: Lesson[] = [
     ],
     rubric: [
       "Press, hover and focus are specified for three controls",
-      "Acknowledgement is separated from outcome",
+      "Acknowledgement, outcome and failure are separated",
       "Nothing essential depends on hover",
       "A tab pass is recorded with failures named",
     ],
@@ -386,13 +389,13 @@ export const module9: Lesson[] = [
         recheck: "The state specifications and greyscale check.",
       },
       {
-        criterion: "Acknowledgement is separated from outcome",
+        criterion: "Acknowledgement, outcome and failure are separated",
         evidence:
-          "A specification showing an immediate acknowledgement distinct from the later result, including a label change.",
+          "A specification showing an immediate acknowledgement distinct from the later result, including a label change, a failure state with a retry that keeps the person's work, and a reduced-motion version.",
         levels: [
           "Only the outcome is specified.",
-          "An acknowledgement exists but is a spinner alone with no label change.",
-          "Immediate acknowledgement with a label change, then the outcome.",
+          "An acknowledgement exists but is a spinner alone with no label change, or failure is unspecified.",
+          "Immediate acknowledgement with a label change, then the outcome, a failure with a retry, and a reduced-motion version that keeps the state visible.",
           "As adequate, and the acknowledgement prevents a second submission explicitly.",
         ],
         remediation:
@@ -492,7 +495,7 @@ export const module9: Lesson[] = [
     misconception:
       "“Animation makes the change feel smooth.” It makes the change legible when it shows a relationship, and it makes the product slow when it does not. Smoothness is not the goal; understanding what happened is.",
     example:
-      "Three transitions were designed. The filter panel scales and fades from the filter button, about 200ms, entering fast and settling — it explains where the panel came from and where it returns to. The detail view expands from its row over about 250ms, and the row stays in place beneath so the person knows what to go back to. The confirmation replaces the payment screen with a plain fade of 120ms, deliberately not a slide, because nothing moved anywhere and a slide would have implied a direction that does not exist. A fourth candidate — a staggered animation of every list row on load — was dropped: it delayed reading by half a second and explained nothing.",
+      "Made-up example: three transitions were designed. The filter panel scales and fades from the filter button, about 200ms, entering fast and settling — it explains where the panel came from and where it returns to. The detail view expands from its row over about 250ms, and the row stays in place beneath so the person knows what to go back to. The confirmation replaces the payment screen with a plain fade of 120ms, deliberately not a slide, because nothing moved anywhere and a slide would have implied a direction that does not exist. A fourth candidate — a staggered animation of every list row on load — was dropped: it delayed reading by half a second and explained nothing.",
     freeToolPath:
       "A local HTML file with CSS transitions lets you feel durations honestly and change them in seconds. Paper storyboards work for the spatial relationship; they cannot tell you whether 400ms is too slow, and it usually is.",
     outputs: [
@@ -500,6 +503,7 @@ export const module9: Lesson[] = [
       "A stated reason for each: what relationship it explains",
       "One rejected transition with the reason recorded",
       "A rule for what your product fades and what it moves",
+      "A reduced-motion version and an interruption rule for each kept transition",
     ],
     steps: [
       {
@@ -526,6 +530,7 @@ export const module9: Lesson[] = [
           "Build the transitions roughly in a local file or storyboard the frames.",
           "Try each at half and double your chosen duration.",
           "Keep the shortest that still reads as connected.",
+          "Switch Reduce motion on and off in the state example to see a change stay visible without movement.",
         ],
       },
       {
@@ -535,6 +540,7 @@ export const module9: Lesson[] = [
           "Find a transition that explains nothing and remove it.",
           "Check no two transitions run at once in the same view.",
           "Sequence or drop where they compete.",
+          "Decide what happens if a transition is interrupted, such as escape pressed while the panel is still opening.",
         ],
       },
       {
@@ -542,6 +548,7 @@ export const module9: Lesson[] = [
         title: "Write the rule",
         instructions: [
           "Write when your product moves something and when it simply fades.",
+          "Write each kept transition's reduced-motion version beside it.",
           "Record the rejected transition and why.",
           "Save the three specifications with their timings.",
         ],
@@ -565,20 +572,20 @@ export const module9: Lesson[] = [
       },
     ],
     rubric: [
-      "Each transition states the relationship it explains",
+      "Each transition states the relationship it explains, with and without motion",
       "Duration follows distance and was tested at two speeds",
-      "Dismissal reverses entry",
+      "Dismissal and interruption reverse the entry",
       "One transition was rejected with the reason recorded",
     ],
     criteria: [
       {
-        criterion: "Each transition states the relationship it explains",
+        criterion: "Each transition states the relationship it explains, with and without motion",
         evidence:
-          "A written origin and destination per transition, with what the person learns from it.",
+          "A written origin and destination per transition, with what the person learns from it, and a reduced-motion version that keeps that explanation.",
         levels: [
           "Transitions specified as effects with no relationship stated.",
-          "Relationships asserted but not matched to what actually causes the change.",
-          "Each names its true origin and what it explains.",
+          "Relationships asserted but not matched to what actually causes the change, or no reduced-motion version.",
+          "Each names its true origin and what it explains, with a reduced-motion version that keeps the explanation.",
           "As adequate, and one transition was changed to a fade because no real relationship existed.",
         ],
         remediation:
@@ -600,13 +607,13 @@ export const module9: Lesson[] = [
         recheck: "The timing test notes.",
       },
       {
-        criterion: "Dismissal reverses entry",
+        criterion: "Dismissal and interruption reverse the entry",
         evidence:
-          "A specified exit for each transition that returns content to where it came from.",
+          "A specified exit for each transition that returns content to where it came from, including when the person dismisses it part way through.",
         levels: [
           "Exits unspecified.",
-          "Exits specified but unrelated to the entry.",
-          "Each exit reverses its entry.",
+          "Exits specified but unrelated to the entry, or the interrupted case left open.",
+          "Each exit reverses its entry, from wherever the movement has reached when interrupted.",
           "As adequate, and exits are shorter than entries, which is how dismissal usually reads best.",
         ],
         remediation:
