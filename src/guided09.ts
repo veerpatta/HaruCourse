@@ -1181,7 +1181,7 @@ export const guided09: Record<string, Guided> = {
           scenario: 'Made-up example. Keeping three things fixed on a phone, then measuring what they cost.',
           beats: [
             { label: 'What I drew first', text: 'A logo header, a filter bar and a book button, all fixed. Everything important, always available. It felt generous.' },
-            { label: 'What the ruler said', text: '190 points of a 640 point screen gone before a single class row appeared. Close to a third of what she can see.' },
+            { label: 'What the ruler said', text: '190 points of a 640 point screen gone before a single class row appeared. Nearly 30 per cent of what she can see.' },
             { label: 'The test I applied', text: 'For each one: what is she doing with this while she scrolls? The logo, nothing. The book button belongs to a class she has not chosen yet.' },
             { label: 'What I changed', text: 'The logo header scrolls away and comes back when she scrolls up. The book button moved to the detail view. The filter summary stayed.' },
             { label: 'What that gave back', text: '126 points, which is about two more class rows visible at every moment of every scroll.' },
@@ -1202,10 +1202,10 @@ export const guided09: Record<string, Guided> = {
           material: 'A supplied made-up design. The class list loads twenty more rows on its own every time the person nears the bottom, for as long as there are results. The footer holds the contact link, the refund policy and the accessibility statement.',
           question: 'What has this design done, and what would you change first?',
           options: [
-            { label: 'It has removed the end of the page, so the footer is unreachable. Replace the automatic loading with a load-more control.', correct: true, feedback: 'The footer sits at the end, and continuous loading means the end keeps moving away. A load-more control gives the page a bottom again.' },
-            { label: 'It has slowed the list down, because twenty rows at a time is heavy on a phone.', feedback: 'Weight is worth watching and it is not the failure here. Even a fast loader still pushes the footer out of reach every time.' },
-            { label: 'It has done nothing wrong, because those links are also in the menu.', feedback: 'That is a real repair and it is the second one, not the first. If they are only in the footer today, they are gone today.' },
-            { label: 'It has buried the policies, so move them above the list where they are seen first.', feedback: 'That puts rarely wanted content in front of the content people came for. The footer is the right place; it just has to be reachable.' },
+            { label: 'It removed the end of the page, so the footer is out of reach; swap the loading for a load-more control.', correct: true, was: ['It has removed the end of the page, so the footer is unreachable. Replace the automatic loading with a load-more control.'], feedback: 'The footer sits at the end, and continuous loading means the end keeps moving away. A load-more control gives the page a bottom again.' },
+            { label: 'It slowed the list down, because twenty rows at a time is heavy for a phone; load ten at a time instead.', was: ['It has slowed the list down, because twenty rows at a time is heavy on a phone.'], feedback: 'Weight is worth watching and it is not the failure here. Even a fast loader still pushes the footer out of reach every time.' },
+            { label: 'It has done nothing wrong, because those same links can surely be reached from the menu on every page.', was: ['It has done nothing wrong, because those links are also in the menu.'], feedback: 'Nothing in the design says the links are in the menu. If they live only in the footer today, they are unreachable today; a second route is a good later repair, not a reason to leave the footer out of reach.' },
+            { label: 'It buried the policies, so move them above the list where every person will see them first.', was: ['It has buried the policies, so move them above the list where they are seen first.'], feedback: 'That puts rarely wanted content in front of the content people came for. The footer is the right place; it just has to be reachable.' },
           ],
           then: 'Try to reach the footer on your own design, or on a comparable page, and write down what happened.',
         },
@@ -1224,9 +1224,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'A fixed header, a fixed filter bar and a fixed action button each look justified on their own. What is wrong with judging them one at a time?',
         options: [
-          { label: 'They share one small screen, and the space they take is permanent. Added together they can remove a third of a phone viewport before any content appears.', correct: true, feedback: 'The cost is a total, not a series of separate small costs. Adding the heights up is what makes the trade visible at all.' },
-          { label: 'Nothing, provided each one is genuinely useful.', feedback: 'Usefulness is not the whole test on a phone. Three useful things can still leave too little room for the content people came for.' },
-          { label: 'The problem is that fixed elements are slow to draw.', feedback: 'Drawing speed is not the issue. The cost is height, and it is paid on every screen for the whole session.' },
+          { label: 'They share one small screen: added together they can take nearly a third of it, permanently.', correct: true, was: ['They share one small screen, and the space they take is permanent. Added together they can remove a third of a phone viewport before any content appears.'], feedback: 'The cost is a total, not a series of separate small costs. Adding the heights up is what makes the trade visible at all.' },
+          { label: 'Very little, provided each of the three is genuinely useful to the person scrolling.', was: ['Nothing, provided each one is genuinely useful.'], feedback: 'Usefulness is not the whole test on a phone. Three useful things can still leave too little room for the content people came for.' },
+          { label: 'The real problem is that fixed elements are slow for an older phone to redraw.', was: ['The problem is that fixed elements are slow to draw.'], feedback: 'Drawing speed is not the issue. The cost is height, and it is paid on every screen for the whole session.' },
         ],
         repair: 'If your sticky-share in step 1 is above a quarter of the viewport, go back to step 2 and drop or demote one element, then record the change in step 5.',
         recheck: 'The new total in step 2 is smaller, and every element left has a stated use during scrolling.',
@@ -1278,6 +1278,7 @@ export const guided09: Record<string, Guided> = {
       { id: 'states', title: 'Viewing, editing, saved', intro: 'Three states, written as what a person sees. Exact words, not descriptions of words.', fields: [
         { id: 'viewing-state', label: 'Viewing · how it shows that the value can be changed', kind: 'long', hint: 'Something visible without hovering. Hover does not exist on a phone.' },
         { id: 'editing-state', label: 'Editing · what changes, and how she cancels or finishes', kind: 'long' },
+        { id: 'cancel-restore', label: 'What Cancel restores, and what she sees straight after cancelling', kind: 'short', example: 'Example (made up): the note goes back to exactly what it said before editing began, and a quiet “Not changed” shows for a moment.' },
         { id: 'saved-state', label: 'Saved · the exact words, and how long they stay before settling', kind: 'long', example: 'Example (made up): “Saved 12:04” for six seconds, then a small grey “Saved” that stays until the next edit.' },
       ] },
       { id: 'leaving', title: 'Leaving in the middle', fields: [
@@ -1292,6 +1293,7 @@ export const guided09: Record<string, Guided> = {
       ] },
       { id: 'record', title: 'Check and record', fields: [
         { id: 'greyscale-check', label: 'What happened when you looked at the three states with the colour removed', kind: 'long', hint: 'Print in grey, or turn the colour down on a screenshot until only lightness is left.' },
+        { id: 'reduced-states', label: 'Your saving, saved and failed states with Reduce motion on: what changes, with no movement', kind: 'long', hint: 'Turn on Reduce motion in the state example first and note what still changes. Words and a steady mark should carry each state.' },
         { id: 'unverified', label: 'What you could not check without something built', kind: 'long' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
@@ -1305,8 +1307,8 @@ export const guided09: Record<string, Guided> = {
         ],
         start: 'Choose something small and real: a note, a date, a display name.',
         enough: 'The value is one you could draw in three states on a single sheet.' },
-      { expect: 'Three states written as what a person sees, with the saved wording and how long it stays.',
-        fields: ['viewing-state', 'editing-state', 'saved-state'],
+      { expect: 'Three states written as what a person sees, the saved wording and how long it stays, and what Cancel restores.',
+        fields: ['viewing-state', 'editing-state', 'cancel-restore', 'saved-state'],
         demo: {
           scenario: 'Made-up example. Taking the save button off a booking note, and finding that the person no longer knew she was safe.',
           beats: [
@@ -1321,7 +1323,7 @@ export const guided09: Record<string, Guided> = {
           uncertainty: 'Still unknown: whether six seconds is long enough for someone who looks away mid-edit. That needs watching a person, not deciding at a desk.',
         },
         terms: [{ term: 'State', meaning: 'What the same thing looks like at a different moment. One note, three appearances.' }],
-        start: 'Draw the three side by side on one sheet before you write any wording.',
+        start: 'Open the state example in this lesson and switch it through idle, saving, saved and failed with Retry. Then draw your three states side by side on one sheet before you write any wording. No example on screen, as in a printed copy? Draw the states and say so.',
         enough: 'Someone could tell which state they were in from the drawing alone, with the labels covered.' },
       { terms: [{ term: 'Leaving mid-edit', meaning: 'A person moving away with a change half typed: a notification tapped, a tab closed, a phone going to sleep.' }, { term: 'Draft', meaning: 'A half-finished change held aside rather than stored over the old value, and offered back to her when she returns.' }, { term: 'Return view', meaning: 'What she meets when she comes back: the old value, her draft, or a line telling her which of the two she is looking at.' }], expect: 'A stated behaviour for leaving part way through, the reason for it, and what she meets on her return.',
         fields: ['leaving-choice', 'leaving-reason', 'return-view'],
@@ -1329,10 +1331,10 @@ export const guided09: Record<string, Guided> = {
           material: 'A supplied made-up case. Someone is half way through typing a note on a booking. She taps a notification and the app closes. She comes back four hours later.',
           question: 'Which behaviour would you specify, and what makes it defensible?',
           options: [
-            { label: 'Keep the half-typed note as a draft, show it in the editing state on her return, and say when it was last changed.', correct: true, feedback: 'Her words are kept, and nothing half-finished was stored under her name as though she meant it. The time tells her what she is looking at four hours later.' },
-            { label: 'Store what was typed, quietly, as if she had finished.', feedback: 'It keeps her words and it also publishes half a sentence as though it were final. On a shared booking someone else may read it before she does.' },
-            { label: 'Throw it away, since she left without finishing.', feedback: 'Leaving is rarely a decision. A notification is not the same as pressing cancel, and discarding is the one outcome she cannot reverse.' },
-            { label: 'Ask her to confirm before the app closes.', feedback: 'A tap on a notification does not wait for a question, and a question she never sees settles nothing. Keep the text and ask her later, when she is back.' },
+            { label: 'Keep it as a draft, show it in the editing state on her return, and say when it was changed.', correct: true, was: ['Keep the half-typed note as a draft, show it in the editing state on her return, and say when it was last changed.'], feedback: 'Her words are kept, and nothing half-finished was stored under her name as though she meant it. The time tells her what she is looking at four hours later.' },
+            { label: 'Store what was typed straight away, quietly, as though she had finished writing the note.', was: ['Store what was typed, quietly, as if she had finished.'], feedback: 'It keeps her words and it also publishes half a sentence as though it were final. On a shared booking someone else may read it before she does.' },
+            { label: 'Throw the half-typed note away, since she left the app without finishing or saving it.', was: ['Throw it away, since she left without finishing.'], feedback: 'Leaving is rarely a decision. A notification is not the same as pressing cancel, and discarding is the one outcome she cannot reverse.' },
+            { label: 'Ask her to confirm what to do with the note before the app finishes closing down.', was: ['Ask her to confirm before the app closes.'], feedback: 'A tap on a notification does not wait for a question, and a question she never sees settles nothing. Keep the text and ask her later, when she is back.' },
           ],
           then: 'Write your own choice, and beside it the one thing each other choice would have cost her.',
         },
@@ -1343,8 +1345,8 @@ export const guided09: Record<string, Guided> = {
         terms: [{ term: 'Kept locally', meaning: 'Held on her own device, so a reload or a dropped connection does not take the words with it.' }],
         start: 'Write the message before the mechanism. The words tell you what the mechanism has to do.',
         enough: 'The message says what happened, where the text is, and what to do next.' },
-      { terms: [{ term: 'Greyscale check', meaning: 'Looking at your drawing with every colour taken out, to see whether the states still tell themselves apart.' }, { term: 'Build', meaning: 'A working version of the product that somebody can actually use, rather than a drawing of one.' }, { term: 'Unverified', meaning: 'Something you wrote down but could not check, usually because it needs timing or a real failure that paper cannot show you.' }], expect: 'The greyscale check, what you could not verify without a build, and the repair the Check questions asked for.',
-        fields: ['greyscale-check', 'unverified', 'improvement-made'],
+      { terms: [{ term: 'Greyscale check', meaning: 'Looking at your drawing with every colour taken out, to see whether the states still tell themselves apart.' }, { term: 'Build', meaning: 'A working version of the product that somebody can actually use, rather than a drawing of one.' }, { term: 'Unverified', meaning: 'Something you wrote down but could not check, usually because it needs timing or a real failure that paper cannot show you.' }], expect: 'The greyscale check, your states with Reduce motion on, what you could not verify without a build, and the repair the Check questions asked for.',
+        fields: ['greyscale-check', 'reduced-states', 'unverified', 'improvement-made'],
         start: 'Look at the three states with the colour removed and ask which one you are in.',
         enough: 'The unverified list names timing and failure behaviour, which a drawing cannot show.' },
     ],
@@ -1352,9 +1354,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'You remove the save button and the value stores itself. What have you taken on?',
         options: [
-          { label: 'The whole job of telling her where her change stands, which the button used to do simply by being pressed.', correct: true, feedback: 'The button was feedback as much as a control. Without it, every save and every failure has to announce itself in words.' },
-          { label: 'Nothing, as long as saving is reliable.', feedback: 'Reliability is invisible. Even a save that always works leaves her guessing, because nothing on the screen says so.' },
-          { label: 'Only the failure case, since a save that works needs no message.', feedback: 'A save that works is exactly when she needs to know. Silence after typing reads the same whether it worked or not.' },
+          { label: 'The whole job of telling her where her change stands, which pressing the button used to do.', correct: true, was: ['The whole job of telling her where her change stands, which the button used to do simply by being pressed.'], feedback: 'The button was feedback as much as a control. Without it, every save and every failure has to announce itself in words.' },
+          { label: 'Very little, provided the saving itself is reliable and almost never fails for anyone.', was: ['Nothing, as long as saving is reliable.'], feedback: 'Reliability is invisible. Even a save that always works leaves her guessing, because nothing on the screen says so.' },
+          { label: 'Only the failure case, since a save that works needs no message on the screen at all.', was: ['Only the failure case, since a save that works needs no message.'], feedback: 'A save that works is exactly when she needs to know. Silence after typing reads the same whether it worked or not.' },
         ],
         repair: 'If your saved-state in step 2 has no exact wording and no duration, write both now and record the change in step 5.',
         recheck: 'The saved state has words a person would read and a stated length of time.',
@@ -1372,9 +1374,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'Your viewing state and your editing state differ only by a blue border. What is the risk?',
         options: [
-          { label: 'Someone who cannot tell those two blues apart cannot tell whether she is typing into the value or only looking at it.', correct: true, feedback: 'One colour is one channel. Add a difference in shape: a background, a heavier border, or a visible cancel and done pair.' },
-          { label: 'There is none, since a blue border is a common convention.', feedback: 'Common does not mean perceivable. The convention still has to reach people who do not see that difference.' },
-          { label: 'The risk is only on small screens, where the border is thin.', feedback: 'A thin border makes it worse and is not the root of it. The state is carried by one colour and nothing else.' },
+          { label: 'Anyone who cannot see that blue cannot tell whether she is typing into it or just looking.', correct: true, was: ['Someone who cannot tell those two blues apart cannot tell whether she is typing into the value or only looking at it.'], feedback: 'One colour is one channel. Add a difference in shape: a background, a heavier border, or a visible cancel and done pair.' },
+          { label: 'There is little risk, since a blue border is a widely used convention for editing.', was: ['There is none, since a blue border is a common convention.'], feedback: 'Common does not mean perceivable. The convention still has to reach people who do not see that difference.' },
+          { label: 'The risk is only on small screens, where a thin blue border is easy to miss.', was: ['The risk is only on small screens, where the border is thin.'], feedback: 'A thin border makes it worse and is not the root of it. The state is carried by one colour and nothing else.' },
         ],
         repair: 'If your greyscale-check in step 5 could not tell viewing from editing, change the editing state in step 2, then record what you changed in step 5.',
         recheck: 'The three states are still distinguishable with the colour removed.',
@@ -1462,9 +1464,9 @@ export const guided09: Record<string, Guided> = {
           question: 'Which reduced-motion pair keeps what the movement was explaining?',
           options: [
             { label: 'A 120ms fade in place, with the filter button staying marked while the panel is open.', correct: true, feedback: 'The movement was saying this came from that. Keeping the button marked says the same thing without moving anything across the screen.' },
-            { label: 'Remove the transition entirely, so the panel simply appears.', feedback: 'That deletes the explanation along with the movement. She now has a panel and no idea what produced it.' },
-            { label: 'Keep the slide, at 100ms instead of 250ms.', feedback: 'Faster movement is still movement, and speed can make it harder to follow rather than gentler. The request was for less, not quicker.' },
-            { label: 'Replace it with a slower 400ms slide, so it feels gentler.', feedback: 'Slow and gentle are not the same thing. A long slide across the screen is the pattern the setting is asking you to stop.' },
+            { label: 'Remove the transition entirely, so the panel simply appears in place with no change.', was: ['Remove the transition entirely, so the panel simply appears.'], feedback: 'That deletes the explanation along with the movement. She now has a panel and no idea what produced it.' },
+            { label: 'Keep the slide but run it at 100ms instead of 250ms, so it is over almost at once.', was: ['Keep the slide, at 100ms instead of 250ms.'], feedback: 'Faster movement is still movement, and speed can make it harder to follow rather than gentler. The request was for less, not quicker.' },
+            { label: 'Replace it with a slower 400ms slide, so the movement feels gentler on the eye.', was: ['Replace it with a slower 400ms slide, so it feels gentler.'], feedback: 'Slow and gentle are not the same thing. A long slide across the screen is the pattern the setting is asking you to stop.' },
           ],
           then: 'Work down your own sheet and write the pair for every row, including the rows where the honest pair is no change at all.',
         },
@@ -1480,8 +1482,8 @@ export const guided09: Record<string, Guided> = {
         question: 'You name a duration card-flip, after the only place it is used. What happens when the card stops flipping?',
         options: [
           { label: 'The name points at nothing, and nobody can tell whether a new component should use it.', correct: true, feedback: 'A name describing a place stops being true when the place changes. A name describing a role keeps deciding cases long afterwards.' },
-          { label: 'You rename it, which takes a minute.', feedback: 'Renaming is easy and the lost reason is not recoverable. Nobody remembers why it was that number, so the next person simply picks a new one.' },
-          { label: 'Nothing, because the value still works.', feedback: 'The number still works, and the sheet has stopped doing its job, which is settling the next decision without a meeting.' },
+          { label: 'You rename it to match the new component, which takes a minute and loses nothing.', was: ['You rename it, which takes a minute.'], feedback: 'Renaming is easy and the lost reason is not recoverable. Nobody remembers why it was that number, so the next person simply picks a new one.' },
+          { label: 'Very little, because the number behind the name still works exactly as before.', was: ['Nothing, because the value still works.'], feedback: 'The number still works, and the sheet has stopped doing its job, which is settling the next decision without a meeting.' },
         ],
         repair: 'Rename any value in step 2 that is named after a screen or a component, then record the change in step 5.',
         recheck: 'Every name describes a role, and would survive a redesign.',
@@ -1489,9 +1491,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'One of your rules reads “animations should feel snappy”. Does it settle anything?',
         options: [
-          { label: 'It does not, because two people can both follow it and choose different values. A rule has to rule something out.', correct: true, feedback: 'Rewrite it as the thing it forbids: what must never move, what may not animate, how many things may move at once.' },
-          { label: 'It settles the general direction, which is enough for a sheet.', feedback: 'A direction is a preference. The next proposal will describe itself as snappy, and your sheet will have nothing to say about it.' },
-          { label: 'It settles it, provided the durations are written underneath.', feedback: 'The durations already sit on the sheet. The rules are there to decide when those durations are used at all.' },
+          { label: 'Very little: two people could both follow it and still pick opposite values.', correct: true, was: ['It does not, because two people can both follow it and choose different values. A rule has to rule something out.'], feedback: 'A rule has to rule something out. Rewrite it as the thing it forbids: what must never move, what may not animate, how many things may move at once.' },
+          { label: 'It settles the general direction, which is all a sheet of rules needs to do.', was: ['It settles the general direction, which is enough for a sheet.'], feedback: 'A direction is a preference. The next proposal will describe itself as snappy, and your sheet will have nothing to say about it.' },
+          { label: 'It settles the question, provided the duration values are written underneath.', was: ['It settles it, provided the durations are written underneath.'], feedback: 'The durations already sit on the sheet. The rules are there to decide when those durations are used at all.' },
         ],
         repair: 'Rewrite any rule in step 3 that could not settle a disagreement, then record what you changed in step 5.',
         recheck: 'Every rule names something it forbids or something it permits.',
@@ -1499,9 +1501,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'Under reduced motion you switch every transition off. What is lost?',
         options: [
-          { label: 'The explanation the movement was carrying, which people asking for less motion still need.', correct: true, feedback: 'The request is for less movement, not less information. Replace each movement with a gentler change that says the same thing.' },
-          { label: 'Nothing, since the setting is asking for no animation.', feedback: 'The setting asks for reduced motion. Switching everything off is the version that strips the explanation out along with the decoration.' },
-          { label: 'Only the decoration, which is the point of the setting.', feedback: 'Decoration should indeed go. The panel that entered from a button was explaining where it came from, and that goes with it.' },
+          { label: 'The explanation the movement carried, which people asking for less motion still need.', correct: true, was: ['The explanation the movement was carrying, which people asking for less motion still need.'], feedback: 'The request is for less movement, not less information. Replace each movement with a gentler change that says the same thing.' },
+          { label: 'Very little, since the setting is a request to switch off animation altogether.', was: ['Nothing, since the setting is asking for no animation.'], feedback: 'The setting asks for reduced motion. Switching everything off is the version that strips the explanation out along with the decoration.' },
+          { label: 'Only the decoration, and removing decoration is the whole point of the setting.', was: ['Only the decoration, which is the point of the setting.'], feedback: 'Decoration should indeed go. The panel that entered from a button was explaining where it came from, and that goes with it.' },
         ],
         repair: 'Look at your meaning-check in step 4. Any pair that lost its explanation needs a gentler change rather than a removal, and the change recorded in step 5.',
         recheck: 'Every reduced pair still tells the person what the original told them.',
@@ -1529,22 +1531,24 @@ export const guided09: Record<string, Guided> = {
       { id: 'plan', title: 'Two tasks and a focus', fields: [
         { id: 'tasks', label: 'The two tasks you will ask for, in the words you will actually say', kind: 'long', hint: 'Say the goal, never the route. “Remove the second class from your shortlist” and not “swipe the row”.' },
         { id: 'focus-per-session', label: 'The single thing each session is watching for', kind: 'short', example: 'Example (made up): session one watches for what happens after a tap; session two watches whether the remove control is found at all.' },
-        { id: 'access-route', label: 'Who you can actually ask, and the honest route if the answer is nobody', kind: 'long', hint: 'If nobody is available, say so plainly and use the rehearsal route in this step. A rehearsal is never written up as research.' },
+        { id: 'access-route', label: 'Who you can actually ask, described by kind of person with no names or contact details, and the honest route if the answer is nobody', kind: 'long', sensitive: true, hint: 'Such as “two neighbours who use their phones daily”. If nobody is available, say so plainly and use the rehearsal route in this step. A rehearsal is never written up as research.' },
+        { id: 'session-status', label: 'What actually happened with sessions', kind: 'choice', options: ['Three people tried it on their own phones', 'One or two people tried it', 'Nobody was available: rehearsal only, dated'] },
       ] },
-      { id: 'sessions', title: 'What happened', intro: 'One record per person. Write what they did, not what you think it means.', fields: [
-        { id: 'session-1', label: 'Person 1 · device, what they did, where they hesitated, what they could not find', kind: 'long' },
-        { id: 'session-2', label: 'Person 2 · device, what they did, where they hesitated, what they could not find', kind: 'long' },
-        { id: 'session-3', label: 'Person 3 · device, what they did, where they hesitated, what they could not find', kind: 'long' },
-        { id: 'double-taps', label: 'Every moment someone acted twice, and where it happened', kind: 'short' },
+      { id: 'sessions', title: 'What happened', intro: 'One record per person, as “person 1, person 2”, never by name. Write what they did, not what you think it means. On the rehearsal route, fill only the rehearsal box.', fields: [
+        { id: 'session-1', label: 'Person 1 · device, what they did, where they hesitated, what they could not find', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three people tried it on their own phones', 'One or two people tried it'] }, hint: 'No names, contact details or recordings here; raw notes stay in a private file with a date to delete them.' },
+        { id: 'session-2', label: 'Person 2 · device, what they did, where they hesitated, what they could not find', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three people tried it on their own phones'] } },
+        { id: 'session-3', label: 'Person 3 · device, what they did, where they hesitated, what they could not find', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three people tried it on their own phones'] } },
+        { id: 'rehearsal-record', label: 'Rehearsal only: the phone you used, what you did on each task twice, and where you hesitated, labelled rehearsal', kind: 'long', requiredWhen: { field: 'session-status', values: ['Nobody was available: rehearsal only, dated'] }, example: 'Example (made up): rehearsal, 5 October, an old phone I did not design on. Task 1 twice: no second tap, but I knew where Book was. Task 2: the remove control took me a moment to find.' },
+        { id: 'double-taps', label: 'Every moment someone acted twice, and where it happened, with no names', kind: 'short', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three people tried it on their own phones', 'One or two people tried it'] } },
       ] },
       { id: 'rank', title: 'Ranked by harm', fields: [
-        { id: 'ranked-list', label: 'Everything you found, in order of what it cost the person', kind: 'long', hint: 'Repeated actions and lost work sit above confusion. Confusion sits above slowness.' },
-        { id: 'worst-finding', label: 'The worst one, in a sentence, with who it happened to', kind: 'short' },
+        { id: 'ranked-list', label: 'Everything you found, in order of what it cost the person', kind: 'long', hint: 'Repeated actions and lost work sit above confusion. Confusion sits above slowness. On the rehearsal route, rank your rehearsal notes beside the six made-up findings from the practice in this step, and label the ranking practice.' },
+        { id: 'worst-finding', label: 'The worst one, in a sentence, with which session it came from (no names)', kind: 'short', sensitive: true },
       ] },
       { id: 'repair', title: 'Predict, then repair', fields: [
         { id: 'prediction', label: 'Written before you change anything: what the repair should change, and how you would see it', kind: 'long', example: 'Example (made up): with the button changing on touch-down, nobody should tap it a second time.' },
         { id: 'one-change', label: 'The one thing you changed', kind: 'short' },
-        { id: 'retest-result', label: 'What happened on the re-test, including if the repair did not help or made something else worse', kind: 'long', hint: 'A repair that failed is a finding. Write it as it happened and leave the prediction beside it, unedited.' },
+        { id: 'retest-result', label: 'What happened on the re-test, including if the repair did not help or made something else worse', kind: 'long', sensitive: true, hint: 'A repair that failed is a finding. Write it as it happened and leave the prediction beside it, unedited.' },
       ] },
       { id: 'untested', title: 'What you did not establish', fields: [
         { id: 'untested-list', label: 'Every interaction claim you could not verify', kind: 'long' },
@@ -1554,18 +1558,18 @@ export const guided09: Record<string, Guided> = {
     ],
     guide: [
       { expect: 'Two tasks in the words you will say, one thing each session is watching for, and an honest route for who you can ask.',
-        fields: ['tasks', 'focus-per-session', 'access-route'],
+        fields: ['tasks', 'focus-per-session', 'access-route', 'session-status'],
         terms: [
           { term: 'Task', meaning: 'A goal you hand someone. It never names the control, or you have already taught them the answer.' },
           { term: 'Rehearsal', meaning: 'You walking the task yourself when nobody is available. It tells you about your design and nothing at all about people.' },
         ],
         start: 'Write each task as the sentence a friend would say to you, then take out every word that names a control. If nobody is available at all, run both tasks yourself twice on a phone you did not design on, write it down as a rehearsal, and say plainly that no participant was involved.',
         enough: 'Neither task could be completed by following your wording literally.' },
-      { expect: 'One written record per person, on their own device where possible, and a count of every repeated action.',
-        fields: ['session-1', 'session-2', 'session-3', 'double-taps'],
+      { expect: 'One de-identified record per person on their own device, or one dated rehearsal record, and a count of every repeated action you saw.',
+        fields: ['session-1', 'session-2', 'session-3', 'rehearsal-record', 'double-taps'],
         terms: [{ term: 'Second tap', meaning: 'Someone pressing the same thing again. It nearly always means nothing told them the first press had worked.' }],
         start: 'Say the task, then stop talking. Silence is the instrument.',
-        enough: 'Each record names a device and describes actions rather than opinions.' },
+        enough: 'Each record names a device and describes actions rather than opinions. A rehearsal says rehearsal and names no participant.' },
       { terms: [{ term: 'Harm', meaning: 'Something that cost the person: lost work, an action she had to repeat, money, or time she does not get back.' }, { term: 'Finding', meaning: 'One thing you saw happen, written as the action itself rather than as your explanation of it.' }, { term: 'Preference', meaning: 'Something you would rather were different, which cost the person nothing at all.' }], expect: 'Everything you found, ordered by what it cost the person, with the worst one named.',
         fields: ['ranked-list', 'worst-finding'],
         demo: {
@@ -1641,9 +1645,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'You ran all three sessions on your own laptop, because it was easier to set up. What did that cost you?',
         options: [
-          { label: 'The conditions where feedback failures appear: a slower connection, a smaller screen and a finger instead of a pointer.', correct: true, feedback: 'A second tap almost never happens on the machine you designed on. Testing there hides the failure you were looking for.' },
-          { label: 'Nothing, since the interactions are the same on any device.', feedback: 'The interactions are the same and the conditions are not. Timing and touch accuracy are exactly what this lesson is testing.' },
-          { label: 'Only the touch behaviour, which you can check separately.', feedback: 'Touch is one part of it. Connection speed and screen size change what people see and how long they wait to see it.' },
+          { label: 'The conditions feedback failures need: a slower connection, a small screen and a finger.', correct: true, was: ['The conditions where feedback failures appear: a slower connection, a smaller screen and a finger instead of a pointer.'], feedback: 'A second tap almost never happens on the machine you designed on. Testing there hides the failure you were looking for.' },
+          { label: 'Very little, since the interactions themselves behave the same on every device.', was: ['Nothing, since the interactions are the same on any device.'], feedback: 'The interactions are the same and the conditions are not. Timing and touch accuracy are exactly what this lesson is testing.' },
+          { label: 'Only the touch behaviour, which you can check separately on a phone afterwards.', was: ['Only the touch behaviour, which you can check separately.'], feedback: 'Touch is one part of it. Connection speed and screen size change what people see and how long they wait to see it.' },
         ],
         repair: 'Re-run at least one session on a phone you did not design on, add it to your record in step 2, then note the change in step 5.',
         recheck: 'At least one session record names a device that is not yours.',
@@ -1651,9 +1655,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'You make the repair, then write down what you expected it to do. Why is that weaker than writing it first?',
         options: [
-          { label: 'Whatever happened will look like what you expected, because you wrote the expectation after seeing it.', correct: true, feedback: 'A prediction is only useful while it can still turn out wrong. Written afterwards, it can only ever agree with the result.' },
-          { label: 'It is the same, as long as the prediction is honest.', feedback: 'Honesty is not the issue. Nobody can un-see a result, and memory quietly rewrites what was expected to match it.' },
-          { label: 'It is weaker only if somebody else reads it.', feedback: 'The person it misleads most is you, when you decide whether the repair worked and whether to keep going.' },
+          { label: 'Any result will match it, because you wrote the expectation after seeing what happened.', correct: true, was: ['Whatever happened will look like what you expected, because you wrote the expectation after seeing it.'], feedback: 'A prediction is only useful while it can still turn out wrong. Written afterwards, it can only ever agree with the result.' },
+          { label: 'It is just as strong, provided the prediction you write afterwards is an honest one.', was: ['It is the same, as long as the prediction is honest.'], feedback: 'Honesty is not the issue. Nobody can un-see a result, and memory quietly rewrites what was expected to match it.' },
+          { label: 'It is weaker only if someone else reads it, since you know what you really expected.', was: ['It is weaker only if somebody else reads it.'], feedback: 'The person it misleads most is you, when you decide whether the repair worked and whether to keep going.' },
         ],
         repair: 'If your prediction in step 4 was written after the change, say so in that field and write a fresh prediction for the next repair, then record it in step 5.',
         recheck: 'The prediction stands as written, with the re-test result sitting beside it.',
@@ -1661,9 +1665,9 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'You re-test and the repair did not help. What do you write?',
         options: [
-          { label: 'What happened, beside the prediction it disagreed with, and what you now think you had wrong.', correct: true, feedback: 'A repair that failed tells you the cause was misread. That is worth more than a repair that worked for a reason nobody checked.' },
-          { label: 'Nothing yet, since you should repair it properly first.', feedback: 'The failed attempt is the evidence that your explanation was wrong. Repairing again without recording it loses the only thing you learned.' },
-          { label: 'That the finding was probably not real after all.', feedback: 'The finding was watched happening. What failed is your explanation of why, and those are two different things.' },
+          { label: 'What happened, beside the prediction it disagreed with, and what you now think was wrong.', correct: true, was: ['What happened, beside the prediction it disagreed with, and what you now think you had wrong.'], feedback: 'A repair that failed tells you the cause was misread. That is worth more than a repair that worked for a reason nobody checked.' },
+          { label: 'Nothing yet: repair it properly first, then write up the version that finally worked.', was: ['Nothing yet, since you should repair it properly first.'], feedback: 'The failed attempt is the evidence that your explanation was wrong. Repairing again without recording it loses the only thing you learned.' },
+          { label: 'That the original finding was probably not real, since the repair made no difference.', was: ['That the finding was probably not real after all.'], feedback: 'The finding was watched happening. What failed is your explanation of why, and those are two different things.' },
         ],
         repair: 'If your retest-result in step 4 is empty, or records only success, write what actually happened including anything that did not improve, then note it in step 5.',
         recheck: 'The re-test result reads as an observation, whichever way it went.',

@@ -1719,7 +1719,7 @@ export const module9: Lesson[] = [
     misconception:
       "“Sticky headers keep navigation available.” They keep it visible, at the cost of content, on the device with the least of it. Available means reachable; a header that returns when the person scrolls up is usually the better trade.",
     example:
-      "The class list had a sticky header with a logo, a sticky filter bar and a sticky book button — 190 pixels of a 640-pixel viewport. Rebuilt: the logo header scrolls away and returns on scroll up, the filter summary stays because people were observed checking it, and the book button appears only on the detail view where it belongs. The list loads twenty at a time with a count — “Showing 20 of 63” — and a load-more control, so the footer stays reachable. Returning from a detail view restores the row and the filters. New results are appended below the fold only.",
+      "Made-up example: the class list had a sticky header with a logo, a sticky filter bar and a sticky book button — 190 pixels of a 640-pixel viewport. Rebuilt: the logo header scrolls away and returns on scroll up, the filter summary stays because people were observed checking it, and the book button appears only on the detail view where it belongs. The list loads twenty at a time with a count — “Showing 20 of 63” — and a load-more control, so the footer stays reachable. Returning from a detail view restores the row and the filters. New results are appended below the fold only.",
     freeToolPath:
       "Paper at phone size, with a window cut out to represent the viewport, shows exactly how much a sticky element costs. A local HTML page shows real scroll and restore behaviour.",
     outputs: [
@@ -1920,7 +1920,7 @@ export const module9: Lesson[] = [
     misconception:
       "“Autosave is simpler for the user.” It is simpler when it works and worse when it does not, because it removes the moment the person knew they were safe. Simplicity here is paid for with a specific, visible save state.",
     example:
-      "The note on a booking saved automatically with no feedback. Redesigned: the value shows an edit affordance on hover and focus; entering edit shows a bordered field with cancel and done controls; on blur the change saves and the label becomes “Saved 12:04” for several seconds before fading to a small “Saved” marker. If the save fails, the field keeps the text, shows “Not saved — check your connection” and offers retry, and the text is retained locally so a reload does not lose it. Cancel restores the previous value, and leaving mid-edit saves rather than discarding — with that decision recorded, because the alternative was defensible too.",
+      "Made-up example: the note on a booking saved automatically with no feedback. Redesigned: the value shows a small pencil and the word Edit at all times, so a phone user can see it is editable; entering edit shows a bordered field with cancel and done controls; on blur the change saves and the label becomes “Saved 12:04” for several seconds before fading to a small “Saved” marker. If the save fails, the field keeps the text, shows “Not saved — check your connection” and offers retry, and the text is retained locally so a reload does not lose it. Cancel restores the previous value, and leaving mid-edit saves rather than discarding — with that decision recorded, because the alternative was defensible too.",
     freeToolPath:
       "Write the three states out on paper with the exact wording, then check the transitions in a local HTML file if you want to feel the timing of the saved indicator.",
     outputs: [
@@ -1928,6 +1928,7 @@ export const module9: Lesson[] = [
       "A visible save confirmation with its wording and duration",
       "Behaviour for leaving mid-edit, stated and justified",
       "Failure handling that retains the text and offers retry",
+      "A Cancel that restores the previous value, and a reduced-motion version of the saving, saved and failed states",
     ],
     steps: [
       {
@@ -1942,8 +1943,9 @@ export const module9: Lesson[] = [
         minutes: 30,
         title: "Design the three states",
         instructions: [
+          "Open the state example in this lesson and step through saving, saved and failed with Retry before writing your own wording.",
           "Specify how viewing shows that the value is editable.",
-          "Specify the editing state with a cancel and a done route.",
+          "Specify the editing state with a cancel and a done route, and what Cancel restores.",
           "Specify the saved state with its wording and how long it shows.",
         ],
       },
@@ -1970,6 +1972,7 @@ export const module9: Lesson[] = [
         title: "Check and record",
         instructions: [
           "Check the three states are distinguishable in greyscale.",
+          "Turn on Reduce motion in the state example, then write how your saving, saved and failed states read without movement.",
           "Record what you could not verify without a build.",
           "Save the specification with the wording.",
         ],
@@ -1994,8 +1997,8 @@ export const module9: Lesson[] = [
     ],
     rubric: [
       "Viewing, editing and saved are visually distinct",
-      "The save confirmation is specific and timed",
-      "Leaving mid-edit has a stated, justified behaviour",
+      "The save confirmation is specific, timed and survives reduced motion",
+      "Leaving and cancelling mid-edit have stated, justified behaviours",
       "Failure retains the text and offers a retry",
     ],
     criteria: [
@@ -2014,9 +2017,9 @@ export const module9: Lesson[] = [
         recheck: "The three states.",
       },
       {
-        criterion: "The save confirmation is specific and timed",
+        criterion: "The save confirmation is specific, timed and survives reduced motion",
         evidence:
-          "Wording for the saved state and how long it remains before settling.",
+          "Wording for the saved state, how long it remains before settling, and how saving, saved and failed still read with Reduce motion on.",
         levels: [
           "No confirmation.",
           "A generic tick with no wording or duration.",
@@ -2028,13 +2031,13 @@ export const module9: Lesson[] = [
         recheck: "The confirmation specification.",
       },
       {
-        criterion: "Leaving mid-edit has a stated, justified behaviour",
+        criterion: "Leaving and cancelling mid-edit have stated, justified behaviours",
         evidence:
-          "A chosen behaviour with a reason and what the person sees on return.",
+          "A chosen leaving behaviour with a reason and what the person sees on return, and a Cancel that restores the previous value.",
         levels: [
           "Undecided.",
-          "Decided without a reason or a return state.",
-          "Chosen, justified, with the return state specified.",
+          "Decided without a reason or a return state, or no Cancel.",
+          "Leaving chosen, justified, with the return state specified, and Cancel restoring the previous value.",
           "As adequate, and the alternative you rejected is recorded with its trade-off.",
         ],
         remediation:
@@ -2120,7 +2123,7 @@ export const module9: Lesson[] = [
     misconception:
       "“Motion values belong in the code.” The numbers can live in code; the decisions and their reasons cannot, or the next person changes 200 to 320 because it felt nicer on their machine and nobody can say why it was 200.",
     example:
-      "The sheet came to three durations — instant 0ms for state changes, quick 150ms for small movement, moderate 250ms for panels — three easings, and seven rules including “nothing animates while a person is typing”, “the price and remaining places never move”, and “only one thing animates at a time in a view”. Every duration carried its reduced-motion pair, mostly a 120ms fade. Applying the sheet to three components surfaced two exceptions: a 400ms transition nobody could justify, which became moderate, and a genuine missing role for a long list re-sort, which was added deliberately as a fourth duration with the reason recorded.",
+      "Made-up example: the sheet came to three durations — instant 0ms for state changes, quick 150ms for small movement, moderate 250ms for panels — three easings, and seven rules including “nothing animates while a person is typing”, “the price and remaining places never move”, and “only one thing animates at a time in a view”. Every duration carried its reduced-motion pair, mostly a 120ms fade. Applying the sheet to three components surfaced two exceptions: a 400ms transition nobody could justify, which became moderate, and a genuine missing role for a long list re-sort, which was added deliberately as a fourth duration with the reason recorded.",
     freeToolPath:
       "A written table plus the rules. If you want to compare durations honestly, a local HTML file with three buttons using your three values takes ten minutes and settles arguments quickly.",
     outputs: [
@@ -2299,7 +2302,7 @@ export const module9: Lesson[] = [
     guided: true,
     title: "Test the interactions and repair one",
     objective:
-      "Test your interactions with at least three people on a real device, rank what you find by harm, repair the worst with a prediction written first, and record what remains untested.",
+      "Test your interactions with up to three people on their own devices — or, if nobody is available, run a dated rehearsal and say so — rank what you find by harm, repair the worst with a prediction written first, and record what remains untested.",
     bringForward:
       "Your interaction sheet, key tables, focus rules and specified components.",
     prerequisite: "Your interaction specifications and, if possible, a rough build.",
@@ -2320,11 +2323,11 @@ export const module9: Lesson[] = [
     misconception:
       "“It works on my machine, so the interaction is fine.” Your machine has a precise pointer, a fast connection, a large screen and a person who knows where everything is. None of those describe your users.",
     example:
-      "Three sessions on the participants' own phones. Two double-tapped the book button, because the acknowledgement appeared only after the server replied on a slow connection — the worst finding by harm, since it produced duplicate requests. One could not find the remove control at all, having never met a swipe pattern. One had reduced motion enabled on her own device, which surfaced that the filter panel simply appeared with no fade, unexplained. The prediction for the repair was written first: with an immediate acknowledgement, nobody should tap twice. Re-tested with two new people on their own phones, neither did. The remaining findings were ranked and left recorded rather than repaired in the same pass.",
+      "Made-up example: three sessions on the participants' own phones. Two double-tapped the book button, because the acknowledgement appeared only after the server replied on a slow connection — the worst finding by harm, since it produced duplicate requests. One could not find the remove control at all, having never met a swipe pattern. One had reduced motion enabled on her own device, which surfaced that the filter panel simply appeared with no fade, unexplained. The prediction for the repair was written first: with an immediate acknowledgement, nobody should tap twice. Re-tested with two new people on their own phones, neither did. The remaining findings were ranked and left recorded rather than repaired in the same pass.",
     freeToolPath:
       "A rough local HTML page opened on the participants' own phones over a shared connection, or a paper prototype for the parts that are about order rather than timing. No testing platform or device lab is required.",
     outputs: [
-      "Session records from three people on their own devices",
+      "De-identified session records from people on their own devices, or a dated rehearsal record",
       "A count of double taps and where they happened",
       "One repair with its prediction written beforehand and re-tested",
       "A ranked list of remaining problems and an untested list",
@@ -2343,7 +2346,7 @@ export const module9: Lesson[] = [
         minutes: 40,
         title: "Run three sessions",
         instructions: [
-          "Run the tasks on each participant's own phone where possible.",
+          "Run the tasks on each participant's own phone where possible; if nobody is available, walk both tasks yourself twice on a phone you did not design on and label it rehearsal.",
           "Record double taps, hesitations and anything they could not find.",
           "Do not explain gestures or controls during the task.",
         ],
@@ -2362,7 +2365,7 @@ export const module9: Lesson[] = [
         instructions: [
           "Write what the repair should change before making it.",
           "Change one thing only.",
-          "Re-test with at least one person who has not seen it.",
+          "Re-test with at least one person who has not seen it, or re-walk it as a labelled rehearsal and write that no participant has seen it.",
         ],
       },
       {
@@ -2402,11 +2405,11 @@ export const module9: Lesson[] = [
       {
         criterion: "Sessions were run on participants' own devices",
         evidence:
-          "Records naming the devices used, or an explicit note where a participant's device was unavailable.",
+          "Records naming the devices used, or an explicit note where a participant's device was unavailable — or, on the rehearsal route, a dated statement that nobody was available and a self-run walkthrough on a device you did not design on, labelled rehearsal.",
         levels: [
-          "Tested only on the designer's machine.",
+          "Tested only on the designer's machine, with no limit stated.",
           "Mixed, without recording which device each session used.",
-          "Participants' own devices used and recorded.",
+          "Participants' own devices used and recorded, or a rehearsal on another device clearly labelled as rehearsal.",
           "As adequate, and at least one older or slower device is included deliberately.",
         ],
         remediation:
@@ -2420,7 +2423,7 @@ export const module9: Lesson[] = [
         levels: [
           "Repeated actions attributed to the participant.",
           "Noted without counting or locating.",
-          "Counted, located and treated as feedback defects.",
+          "Counted, located and treated as feedback defects — or, on the rehearsal route, none claimed, with the supplied practice findings used for ranking.",
           "As adequate, and each is linked to the specific acknowledgement that was missing.",
         ],
         remediation:
@@ -2434,7 +2437,7 @@ export const module9: Lesson[] = [
         levels: [
           "Repairs made without prediction or re-test.",
           "Several changes made together.",
-          "One change, predicted first, re-tested with a fresh participant.",
+          "One change, predicted first, re-tested with a fresh participant — or re-walked as a labelled rehearsal with the gap stated.",
           "As adequate, and a prediction that failed is analysed rather than explained away.",
         ],
         remediation:
