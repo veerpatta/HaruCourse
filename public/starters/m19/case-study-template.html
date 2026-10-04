@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Project name] · Case study</title>
+<!--
+  HaruCourse case-study template (Module 19).
+
+  How to use it
+  1. Save this file into your own project folder, for example
+     Projects/project-1/case-study.html. It is one file: everything it needs is inside it.
+  2. Open it in a plain text editor (Notepad on Windows, TextEdit in plain-text mode on a Mac)
+     and replace every [bracketed placeholder]. Open it in your browser to see the result.
+  3. Every claim follows the same pattern: the claim, then the artefact behind it and that
+     artefact's evidence tier. If you cannot name the artefact, weaken or cut the claim.
+  4. Leave a heading in place with "Not done in this project: …" rather than filling it with
+     something that did not happen. A stated gap is part of the case study.
+  5. Phone preview without hosting: Print, choose "Save as PDF", and send the PDF to yourself
+     through a channel you already use; or send this single file and open it on the phone.
+     Images saved as separate files must travel with it, so prefer the PDF for previews.
+  6. Accessible PDF: the HTML is the accessible master. After saving a PDF, open it and check
+     the headings, the reading order and that link text says where it goes; browsers differ in
+     whether they add the tags screen readers use.
+  7. Never paste raw interview notes, names, contact details, consent records or photographs of
+     real people's details into this file. Describe, recreate with invented details, or leave out.
+-->
+<style>
+  :root {
+    --paper: #fffdf8;
+    --ink: #1f2a24;
+    --muted: #46554c;
+    --accent: #2f5d46;
+    --line: #d8d2c4;
+    --tint: #eef3ee;
+    --note: #f6f0e3;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 1.0625rem/1.6 Georgia, "Times New Roman", serif;
+  }
+  a { color: var(--accent); text-underline-offset: 0.15em; }
+  a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .skip { position: absolute; left: -999px; top: 0; background: var(--ink); color: var(--paper); padding: 0.5rem 1rem; }
+  .skip:focus { left: 0.5rem; top: 0.5rem; }
+  main { max-width: 42rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+  header.study { border-bottom: 2px solid var(--accent); padding-bottom: 1rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: 0.25rem 0 0.75rem; }
+  h2 { font-size: 1.3rem; line-height: 1.25; margin: 2.25rem 0 0.5rem; color: var(--accent); }
+  h3 { font-size: 1.05rem; margin: 1.25rem 0 0.25rem; }
+  p, li { max-width: 38rem; }
+  .meta { color: var(--muted); font-size: 0.95rem; margin: 0; }
+  .promise { font-size: 1.1rem; border-left: 4px solid var(--accent); padding: 0.25rem 0 0.25rem 0.75rem; }
+  .howto { background: var(--note); border: 1px solid var(--line); padding: 0.75rem 1rem; margin: 1rem 0; font-size: 0.95rem; }
+  .howto summary { cursor: pointer; font-weight: bold; }
+  .tier-key { list-style: none; padding: 0; margin: 0.5rem 0; display: grid; gap: 0.35rem; }
+  .tier { display: inline-block; font: 600 0.8rem/1.4 system-ui, sans-serif; background: var(--tint); color: #1f3d2e; border: 1px solid #b9cbbd; border-radius: 0.25rem; padding: 0 0.4rem; white-space: nowrap; }
+  .claim { margin: 0.75rem 0; }
+  .evidence { display: block; font: 0.85rem/1.45 system-ui, sans-serif; color: var(--muted); margin-top: 0.15rem; }
+  .gap { color: var(--muted); font-style: italic; }
+  figure { margin: 1rem 0; }
+  figure img { max-width: 100%; height: auto; border: 1px solid var(--line); }
+  figcaption { font-size: 0.9rem; color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  caption { text-align: left; font-weight: bold; margin-bottom: 0.4rem; }
+  th, td { border: 1px solid var(--line); padding: 0.4rem; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+  th { background: var(--tint); }
+  .table-wrap { overflow-x: auto; }
+  footer { margin-top: 2.5rem; border-top: 1px solid var(--line); padding-top: 0.75rem; color: var(--muted); font-size: 0.9rem; }
+  @media (max-width: 26rem) {
+    body { font-size: 1rem; }
+    h1 { font-size: 1.45rem; }
+    main { padding: 1rem 0.75rem 2.5rem; }
+  }
+  @media print {
+    @page { margin: 18mm; }
+    body { background: #fff; color: #000; font-size: 11pt; }
+    main { max-width: none; padding: 0; }
+    .skip, .howto { display: none; }
+    a { color: #000; }
+    a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; }
+    h2, h3 { break-after: avoid; page-break-after: avoid; }
+    figure, table, .claim { break-inside: avoid; page-break-inside: avoid; }
+    .tier { border-color: #000; background: none; color: #000; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#study">Skip to the case study</a>
+<main id="study">
+  <header class="study">
+    <p class="meta">[Project category: self-directed / course / paid / employment] · [Dates] · [Your role, in the first person]</p>
+    <h1>[A title that names the problem, not just the project]</h1>
+    <p class="promise">[Promise: one sentence a reader could check, e.g. “This case study shows a finding from three people becoming one design decision, and what happened when it was tested.”]</p>
+    <p>[Opening: the problem in the person's words, without their name, with a count if you have one — then the outcome you actually observed, or “not deployed; no measurement taken”.]</p>
+    <details class="howto">
+      <summary>How to use this template (hidden when printed; delete when done)</summary>
+      <p>Replace every [bracketed placeholder]. Each claim names its artefact and evidence tier. Leave a stated gap rather than filling a section with something that did not happen. To preview on a phone without hosting, print to PDF and send it to yourself. Keep raw notes, names and consent records out of this file.</p>
+    </details>
+    <p class="meta" id="tiers"><strong>Evidence tiers used in this case study</strong></p>
+    <ul class="tier-key">
+      <li><span class="tier">Real participant research</span> people who agreed to take part, in a real setting</li>
+      <li><span class="tier">Self-pilot</span> I tested my own work myself</li>
+      <li><span class="tier">Simulation</span> scripted or made-up responses, or a demonstration with made-up records</li>
+      <li><span class="tier">Supplied practice</span> material the course supplied, labelled practice</li>
+    </ul>
+  </header>
+
+  <section aria-labelledby="h-context">
+    <h2 id="h-context">1. Context, users and business need</h2>
+    <p>[Who the service is for, who runs it, and what the organisation needs. Keep background to a sentence or two.]</p>
+    <p class="claim">[Claim about the context.]
+      <span class="evidence">Artefact: [file name, e.g. brief.md] · Tier: <span class="tier">[tier]</span></span></p>
+  </section>
+
+  <section aria-labelledby="h-research">
+    <h2 id="h-research">2. Research question, access, consent and limitations</h2>
+    <p>[The question you set out to answer. Who you could reach, how, and who you could not. What people agreed to. What this study cannot establish.]</p>
+    <p class="claim">[Claim about access or method, e.g. “Three people took part, all reached through the owner.”]
+      <span class="evidence">Artefact: [access record] · Tier: <span class="tier">[tier]</span></span></p>
+    <p class="gap">[If a route was practice or rehearsal, say so here, e.g. “No participants could be reached; this project used the supplied practice brief.”]</p>
+  </section>
+
+  <section aria-labelledby="h-synthesis">
+    <h2 id="h-synthesis">3. Sources, competitive alternatives and synthesis</h2>
+    <p>[What you read or compared, and how observations became findings. Keep counts and any contradiction.]</p>
+    <p class="claim">[Finding with its count, e.g. “Two of two customers had rung to ask about progress.”]
+      <span class="evidence">Artefact: [synthesis page] · Tier: <span class="tier">[tier]</span></span></p>
+  </section>
+
+  <section aria-labelledby="h-problem">
+    <h2 id="h-problem">4. Problem and evidence</h2>
+    <p>[The one problem you chose, why, and the evidence behind choosing it. Include the exclusions here, beside the findings they bound.]</p>
+    <p class="claim">[Claim about the problem.]
+      <span class="evidence">Artefact: [framing page] · Tier: <span class="tier">[tier]</span></span></p>
+  </section>
+
+  <section aria-labelledby="h-journey">
+    <h2 id="h-journey">5. Journey, structure and competing flows</h2>
+    <p>[How people move through the service, the flows you compared, and the one you chose with the reason.]</p>
+    <figure>
+      <!-- Replace the paragraph below with an image saved in this same folder, for example:
+      <img src="flow.png" alt="What the image shows that matters to the argument" width="640" height="400"> -->
+      <p class="gap">[Image goes here: a flow, a before-and-after pair, or rough work, with alternative text that carries the argument.]</p>
+      <figcaption>[A caption that argues, e.g. “The failure branches were drawn before any screen existed.”] Source: [file] · <span class="tier">[tier]</span></figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="h-decisions">
+    <h2 id="h-decisions">6. Wireframes, UI, system and prototype decisions</h2>
+    <h3>The decision in depth</h3>
+    <p>[One decision: the options, the evidence, the trade-off and what you gave up.]</p>
+    <h3>Other decisions, briefly</h3>
+    <ul>
+      <li>[Decision and one-line reason]</li>
+      <li>[Decision and one-line reason]</li>
+    </ul>
+    <p class="gap">[If the prototype held made-up records only, or failed a privacy check, say so: “Demonstration with made-up records; not safe for real customer details.”]</p>
+  </section>
+
+  <section aria-labelledby="h-testing">
+    <h2 id="h-testing">7. Testing, accessibility and revisions</h2>
+    <p>[Who tested it (by role), the conditions, the change you made, the prediction written beforehand and the re-test result — including what did not work.]</p>
+    <p class="claim">[Result as a count, e.g. “After the change, one of two re-testers still read the time as a promise.”]
+      <span class="evidence">Artefact: [test record] · Tier: <span class="tier">[tier]</span></span></p>
+    <p>[Accessibility checks run, and checks not run, stated separately.]</p>
+  </section>
+
+  <section aria-labelledby="h-outcomes">
+    <h2 id="h-outcomes">8. Outcomes actually measured, or a proposed measurement plan</h2>
+    <p>[Counts with their periods and conditions, for a change that was actually in use. Or one plain sentence: “Not deployed; no measurement taken,” followed by the process outcome or a measurement plan. No percentages from small counts.]</p>
+    <p class="claim">[Measured outcome.]
+      <span class="evidence">Artefact: [tally sheets or records] · Tier: <span class="tier">[tier]</span></span></p>
+  </section>
+
+  <section aria-labelledby="h-reflection">
+    <h2 id="h-reflection">9. Trade-offs, reflection and next questions</h2>
+    <p>[What you would do differently, the limits of the study and of the design, and the smallest next step for each.]</p>
+  </section>
+
+  <section aria-labelledby="h-trace">
+    <h2 id="h-trace">Claim trace</h2>
+    <div class="table-wrap">
+      <table>
+        <caption>Every claim in this case study and what supports it</caption>
+        <thead>
+          <tr><th scope="col">Claim</th><th scope="col">Artefact</th><th scope="col">Evidence tier</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>[Claim]</td><td>[File name]</td><td>[Tier]</td></tr>
+          <tr><td>[Claim]</td><td>[File name]</td><td>[Tier]</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>[Checked: headings read alone, keyboard path, contrast, alternative text. Not checked: e.g. screen-reader testing.] · [Last updated: date]</p>
+  </footer>
+</main>
+</body>
+</html>
