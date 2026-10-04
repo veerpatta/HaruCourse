@@ -2019,8 +2019,8 @@ export const module15: Lesson[] = [
     title: "A measurement plan you could actually run",
     objective:
       "Write a measurement plan for your project that uses only what you can obtain, states what each measure supports, and names the questions it leaves unanswered.",
-    bringForward: "Your metric tree, instrumentation plan and refusals.",
-    prerequisite: "Your metric tree and instrumentation decisions.",
+    bringForward: "Your metric tree, and your instrumentation plan and refusals if you studied that lesson.",
+    prerequisite: "Your metric tree; instrumentation decisions help but are not required.",
     why: "A plan that assumes analytics you do not have is a wish. A plan built from counts, records and conversations is a thing you can start on Monday.",
     teach: [
       "Build from what you can obtain: provider records, manual counts, conversations.",

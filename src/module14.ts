@@ -2026,7 +2026,7 @@ export const module14: Lesson[] = [
     ],
     explanation: [
       "Releasing part of something is normal and worth deciding rather than discovering. Holding a state back, releasing to a subset of people, or shipping behind a flag are all ways of reducing the cost of being wrong, and each has a design consequence: someone will meet a partial version, and that version needs to make sense on its own.",
-      "Deciding what to look at before shipping is what separates learning from relief. The assigned measuring guidance is about defining success in advance, and the design version is narrower: what would tell you this worked, what would tell you it did not, and where would you see either. Written afterwards, the answer is always the number that looks best.",
+      "Deciding what to look at before shipping is what separates learning from relief. The assigned measuring guidance is about defining success in advance, and the design version is narrower: what would tell you this worked, what would tell you it did not, and where would you see either. Written afterwards, the answer tends to be the number that looks best.",
       "The reversal condition is the honest half. If support contacts about payment confusion do not fall, or if people still ring rather than using the flow, what will you do? Naming that before release stops a feature persisting on the strength of the effort it took. It is a decision rule and a trigger to investigate, not a verdict on cause: an uncontrolled count cannot show that the design did or did not cause what happened.",
       "Be careful about what can be measured. Some things are countable — completions, contacts, repeat payments — and some are not, and asking a few people afterwards is a legitimate method rather than a failure. What is not legitimate is treating a released feature as evidence that the design was right; a release tells you what happened after it, and only if you decided to look.",
     ],
@@ -2191,7 +2191,7 @@ export const module14: Lesson[] = [
         ...semver,
         section: "The rules for what a release means and cannot be changed.",
         purpose:
-          "Connects the release decision to the versioning discipline from m13.",
+          "Connects the release decision to versioning discipline; it stands alone if you did not study m13.",
         minutes: "10–15",
         limits:
           "Free reading, no account, CC BY 3.0. Verified 2026-09-06. Written for software APIs; the release-immutability idea is what transfers.",

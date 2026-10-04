@@ -2085,7 +2085,7 @@ export const guided14: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'events', title: 'What happened', fields: [
-        { id: 'events-list', label: 'The events of this delivery, without names attached to failures', kind: 'long', hint: 'What happened, not who did it. Names belong on the things that went well.' },
+        { id: 'events-list', label: 'The events of this delivery, without names attached to failures', kind: 'long', sensitive: true, hint: 'What happened, not who did it. Names belong on the things that went well.' },
         { id: 'went-well', label: 'What went well', kind: 'long' },
       ] },
       { id: 'cost', title: 'What each problem cost', fields: [

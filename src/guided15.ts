@@ -252,7 +252,7 @@ export const guided15: Record<string, Guided> = {
       { expect: 'Three explanations for the largest drop that the numbers cannot distinguish, each with the evidence that would separate it.',
         fields: ['three-explanations', 'what-separates'],
         terms: [
-          { term: 'Competing explanation', meaning: 'A different reason that fits the same numbers exactly. There are always several, and a funnel cannot choose between them.' },
+          { term: 'Competing explanation', meaning: 'A different reason that fits the same numbers exactly. There are usually several, and a funnel cannot choose between them.' },
           { term: 'Separating evidence', meaning: 'What you would have to observe or ask to tell two explanations apart. It is what turns a funnel into a research question.' },
         ],
         sorter: {
@@ -1058,7 +1058,7 @@ export const guided15: Record<string, Guided> = {
             { label: 'What would explain it', text: 'A second payment made on a different card, or by somebody ringing the library, would not appear as a duplicate in the provider’s records at all.' },
             { label: 'What I did', text: 'Kept both, wrote the possible explanation, and added one question to the next three sessions: what did you actually do next? The count may be an undercount, which is a finding neither method produced alone.' },
           ],
-          wrongTurn: 'The wrong turn is resolving a contradiction by declaring one side unrepresentative, because the small sample is always the easier one to dismiss. A disagreement between methods is usually about what each one can see.',
+          wrongTurn: 'The wrong turn is resolving a contradiction by declaring one side unrepresentative, because the small sample is usually the easier one to dismiss. A disagreement between methods is usually about what each one can see.',
           tradeoff: 'Keeping the contradiction means the report has no single number in it and ends with a question rather than a figure.',
           uncertainty: 'Still unknown: whether the records undercount, and by how much. Three people cannot establish it, and the next three sessions have a question that might.',
         },
