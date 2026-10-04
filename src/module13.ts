@@ -4,6 +4,11 @@ import { withLegacyText, type Lesson } from "./teaching";
 // a system is a set of decisions with owners, versions and documentation —
 // not a file of components — and that its value is measured by whether other
 // people can use it without asking her.
+// Core lessons (no coding): 1, 3, 5, 6, 8 and 10, with 2, 7 and 12 as
+// no-code library lessons. Lessons 4, 9 and 11 are the optional technical
+// extension. Core learners bring Project 1 screens and states rather than a
+// coded Project 2 prototype, and use the supplied working component in
+// public/starters/m13/component-states.html wherever a built one was needed.
 const components = {
   title: "GOV.UK Design System: components",
   id: "R17",
@@ -62,8 +67,8 @@ export const module13: Lesson[] = [
     objective:
       "Write the purpose of your system as three problems it solves for named people, and identify what it will not attempt.",
     bringForward:
-      "Your m08 component inventory and token sheet, and your m12 built pages.",
-    prerequisite: "Your inventory, token sheet and built pages.",
+      "Your m08 component inventory and token sheet, and your Project 1 screens and states (core) or your Project 2 prototype (technical extension).",
+    prerequisite: "Your inventory, token sheet and screens. No coding is needed.",
     why: "Systems built without a stated purpose become libraries nobody uses and everybody works around.",
     teach: [
       "A system exists to make decisions once and reuse them, not to store components.",
@@ -81,9 +86,9 @@ export const module13: Lesson[] = [
     misconception:
       "“We need a design system.” Sometimes what is needed is three settled decisions and a page of documentation. A full system is worth building when the same decisions recur across people and time; before that it is an investment with no return.",
     example:
-      "The system's purpose was written as three problems: I re-decide button hierarchy and spacing on every screen and they drift; an engineer has to ask me what each state should do, which costs a day per feature; and accessibility decisions get remade badly under time pressure. The people served: the learner in three months, one engineer, and any reviewer reading a case study. Out of scope, stated: marketing pages, anything about brand illustration, and any component used only once. The cost was written too: about a day a month of maintenance, and the loss of some freedom on individual screens.",
+      "Example (made up): the system's purpose was written as three problems: I re-decide button hierarchy and spacing on every screen and they drift; an engineer has to ask me what each state should do, which costs a day per feature; and accessibility decisions get remade badly under time pressure. The people served: the learner in three months, one engineer, and any reviewer reading a case study. Out of scope, stated: marketing pages, anything about brand illustration, and any component used only once. The cost was written too: about a day a month of maintenance, and the loss of some freedom on individual screens.",
     freeToolPath:
-      "Written work. The system itself will live in Markdown and a stylesheet; no design tool, subscription or documentation platform is needed.",
+      "Written work. The system itself will live in Markdown, plus a stylesheet on the technical extension; no design tool, subscription or documentation platform is needed.",
     outputs: [
       "Three problems the system solves, each with the person affected",
       "A named audience for the system",
@@ -277,14 +282,14 @@ export const module13: Lesson[] = [
     misconception:
       "“Foundations are the easy part.” They are the part everything else inherits. A weak spacing scale or an unmeasured colour pair propagates into every component, and fixing it later means touching everything.",
     example:
-      "The foundations page documented six groups. Colour: five neutrals and three semantic colours, each with permitted usages, forbidden usages and measured ratios for every text pair. Type: six steps with their jobs, minimum sizes and line-height rules. Spacing: six values with a rule that spacing between groups is always larger than spacing within them. Radius: two values with a rule about which components use which. Elevation: two levels with the statement that elevation never carries meaning alone. Motion: three durations with their reduced-motion pairs. Each group carried one do-and-do-not pair drawn from a real mistake.",
+      "Example (made up): the foundations page documented six groups. Colour: five neutrals and three semantic colours, each with permitted usages, forbidden usages and measured ratios for every text pair. Type: six steps with their jobs, minimum sizes and line-height rules. Spacing: six values with a rule that spacing between groups is always larger than spacing within them. Radius: two values with a rule about which components use which. Elevation: two levels with the statement that elevation never carries meaning alone. Motion: three durations with their reduced-motion pairs. Each group carried one do-and-do-not pair drawn from a real mistake.",
     freeToolPath:
       "A Markdown page plus your stylesheet's custom properties. Screenshots or hand-drawn examples for the do-and-do-not pairs; no documentation platform or design tool is required.",
     outputs: [
       "Six foundation groups documented with values and rules",
       "A reason recorded for each group's key decisions",
       "Measured contrast for every permitted text pair",
-      "One do-and-do-not pair per group, drawn from a real mistake",
+      "One do-and-do-not pair per group, drawn from a real misuse and labelled by source",
     ],
     steps: [
       {
@@ -316,14 +321,14 @@ export const module13: Lesson[] = [
         title: "Show the wrong usage",
         instructions: [
           "For each group, produce one do-and-do-not example.",
-          "Draw each from a mistake you have actually made.",
+          "Draw each from a real misuse: your screens, the step 5 check or the supplied material, labelled.",
         ],
       },
       {
         minutes: 15,
         title: "Check against a screen",
         instructions: [
-          "Take one built screen and check every value against the foundations.",
+          "Take one screen (a Project 1 drawing, a built page or the supplied component) and check every value.",
           "Record any value in use that the foundations do not permit.",
           "Save the foundations page.",
         ],
@@ -343,14 +348,14 @@ export const module13: Lesson[] = [
       {
         question: "Why show wrong usage?",
         answer:
-          "Because a do-and-do-not pair communicates a rule faster than a paragraph, and it pre-empts the specific misuse you have already seen.",
+          "Because a do-and-do-not pair communicates a rule faster than a paragraph, and a real misuse, labelled with its source, pre-empts a mistake somebody would actually make.",
       },
     ],
     rubric: [
       "Each foundation group has values, rules and reasons",
       "Contrast is measured and permitted pairs listed",
       "Motion values include reduced-motion pairs",
-      "Do-and-do-not pairs come from real mistakes",
+      "Do-and-do-not pairs come from real misuses, labelled by source",
     ],
     criteria: [
       {
@@ -396,17 +401,17 @@ export const module13: Lesson[] = [
         recheck: "The motion foundations.",
       },
       {
-        criterion: "Do-and-do-not pairs come from real mistakes",
+        criterion: "Do-and-do-not pairs come from real misuses, labelled by source",
         evidence:
-          "One pair per group, each traceable to something that actually went wrong.",
+          "One pair per group, each traceable to a real misuse: your own screens, the value check or the supplied material.",
         levels: [
           "No examples.",
-          "Invented examples.",
-          "Examples drawn from real mistakes in your work.",
+          "Invented examples presented as if they had happened.",
+          "Examples from real misuses, each with its source named.",
           "As adequate, and each names the consequence of the wrong usage.",
         ],
         remediation:
-          "Look back through your screens for misuse you have already committed and photograph both versions.",
+          "Look through your screens, your value check and the supplied material for real misuses; never invent one to fill a gap.",
         recheck: "The example pairs.",
       },
     ],
@@ -414,7 +419,7 @@ export const module13: Lesson[] = [
       "If foundations are values only, add usage rules and reasons.",
       "If contrast is unmeasured, measure and split permitted from forbidden.",
       "If motion is missing, bring it in with reduced pairs.",
-      "If examples are invented, replace them with real mistakes.",
+      "If examples are invented, replace them with real, labelled misuses.",
     ],
     portfolio:
       "A foundations page with reasons and forbidden pairs demonstrates systems thinking that a colour swatch grid cannot.",
@@ -473,7 +478,7 @@ export const module13: Lesson[] = [
     misconception:
       "“The component is the visual design.” The visual design is one part. The specification that makes it reusable is the anatomy, the state grid, the content rules and the boundaries — and those are what an engineer needs and a designer forgets.",
     example:
-      "The class card was specified. Anatomy: container, image slot (optional), title, meta row, status area, action. Variants: default, compact, unavailable. States for each: default, hover, focus, loading, error. Content rules: title truncates to two lines keeping the beginning, meta row wraps rather than truncating, status area always shows text as well as colour, image slot may be absent without changing layout height. Keyboard: the whole card is not a target — the title is the link and the action is a button, matching the m09 tables. When not to use: not for a single featured item, where a dedicated layout reads better; not as a navigation element.",
+      "Example (made up): the class card was specified. Anatomy: container, image slot (optional), title, meta row, status area, action. Variants: default, compact, unavailable. States for each: default, hover, focus, loading, error. Content rules: title truncates to two lines keeping the beginning, meta row wraps rather than truncating, status area always shows text as well as colour, image slot may be absent without changing layout height. Keyboard: the whole card is not a target — the title is the link and the action is a button, matching the m09 tables. When not to use: not for a single featured item, where a dedicated layout reads better; not as a navigation element.",
     freeToolPath:
       "A Markdown page with a table for the state grid, plus screenshots or drawings of the variants. Building the component in HTML and CSS makes the states demonstrable and costs an evening.",
     outputs: [
@@ -519,8 +524,8 @@ export const module13: Lesson[] = [
         minutes: 15,
         title: "Test the specification",
         instructions: [
-          "Give it to someone and ask what they would build.",
-          "Record every question they had to ask you.",
+          "Give it to someone, or rebuild from it yourself after a gap and call it a solo rehearsal.",
+          "Record every question raised, without answering it at once.",
           "Save the specification and the questions.",
         ],
       },
@@ -649,28 +654,28 @@ export const module13: Lesson[] = [
     title: "Build it, and prove the states exist",
     objective:
       "Build your specified component in HTML and CSS with every state demonstrable, and publish a page showing all of them at once.",
-    bringForward: "Your component specification and m12 build skills.",
-    prerequisite: "Your component specification and a text editor.",
-    why: "A specified state that has never been rendered is a guess. Building the grid is what turns the specification into a system.",
+    bringForward: "Your Lesson 3 specification and the supplied component-states.html. The M12 extension helps but is not required.",
+    prerequisite: "Notepad, a browser, your component specification and the supplied component-states.html.",
+    why: "Part of the optional technical extension: core learners can use the supplied working component (component-states.html) and the specification lessons instead. A specified state that has never been rendered is a guess. Building the grid is what turns the specification into a system.",
     teach: [
       "Build from the foundations: every value comes from a token.",
       "Every state in the grid must be demonstrable on demand.",
       "A single page showing all states is the system's most useful artefact.",
       "Build the awkward content case, not the tidy one.",
-      "If a state is hard to build, the specification may be wrong.",
+      "Hard to build? Check your build, then the supplied component, before blaming the specification.",
     ],
     explanation: [
       "Building from tokens is what keeps the component consistent with everything else, and it is the moment your foundations get tested: a component that needs a value the foundations do not have has found either a missing role or an unnecessary variation, exactly as in m08.",
       "A demonstrable state is one you can show without simulating a server or waiting for an error. Building a page where every state is rendered side by side — every variant against every state — is unglamorous and repays itself constantly: in review, in handover, in testing, and in noticing that two states look identical.",
       "The awkward content case belongs in that page. Show the long title, the missing image and the unusual number beside the tidy versions, because those are the ones that break and the ones people forget to check when they change something.",
-      "Difficulty is information. A state that is awkward to build often indicates a specification problem: two states that need to be visible simultaneously, a variant that is really a different component, or content rules that contradict each other. Record the difficulty rather than working around it silently.",
+      "Difficulty is information, and it has more than one cause. Climb a short ladder before deciding: first, does the inspector show a rule winning that you did not expect? Second, does the same state build in the supplied working component, which would point to your build or an unfamiliar technique? Only then suspect the specification: two states that must be visible at once, a variant that is really a different component, or content rules that contradict each other. Record what each rung showed rather than working around it silently.",
     ],
     misconception:
       "“The states can be added when they are needed.” They are needed on the first screen that uses the component under real conditions, and adding them later means retrofitting them into a design that assumed they did not exist.",
     example:
-      "The class card was built in about eighty lines, every value from a token. The states page shows three variants against five states, plus three content cases: a very long title, a missing image and a class with one place left. Building revealed two specification problems. The loading and unavailable states looked nearly identical in greyscale and needed a second distinguishing signal. And the compact variant could not accommodate the status text at all, which meant it was either a different component or the status rule needed changing — recorded as an open decision rather than patched.",
+      "Example (made up): the class card was built in about eighty lines, every value from a token. The states page shows three variants against five states, plus three content cases: a very long title, a missing image and a class with one place left. Building revealed two specification problems. The loading and unavailable states looked nearly identical in greyscale and needed a second distinguishing signal. And the compact variant could not accommodate the status text at all, which meant it was either a different component or the status rule needed changing — recorded as an open decision rather than patched.",
     freeToolPath:
-      "A text editor and a browser, using your token custom properties from m12. The states page is one HTML file; no framework, build step or documentation tool is required.",
+      "Notepad and a browser, starting from the supplied component-states.html (save it in Documents\\HaruCourse\\Practice\\m13-l04-v1, make its one marked change, save with Ctrl+S, reload with F5). The states page is one HTML file; no framework, build step or documentation tool.",
     outputs: [
       "The component built from tokens",
       "A page showing every variant against every state",
@@ -682,7 +687,8 @@ export const module13: Lesson[] = [
         minutes: 30,
         title: "Build the default",
         instructions: [
-          "Build the component using only token values.",
+          "Open component-states.html, make its one marked change, save and reload.",
+          "Build your component using only token values.",
           "Record any value you needed that the foundations do not have.",
         ],
       },
@@ -732,9 +738,9 @@ export const module13: Lesson[] = [
           "Either the foundations lack a real role, or the component is asking for an unnecessary variation. Both need a decision rather than a one-off value.",
       },
       {
-        question: "What does a hard-to-build state usually mean?",
+        question: "What should you check when a state is hard to build?",
         answer:
-          "That the specification has a problem: contradictory rules, two states needing to coexist, or a variant that is really a separate component.",
+          "In order: a rule winning in the inspector, then whether the supplied component builds the same state. Only then suspect the specification: contradictory rules, two states needing to coexist, or a variant that is really a separate component.",
       },
     ],
     rubric: [
@@ -793,8 +799,8 @@ export const module13: Lesson[] = [
         levels: [
           "Problems worked around silently.",
           "Noticed but not recorded.",
-          "Recorded with the decision or the open question.",
-          "As adequate, and one problem is left open rather than patched.",
+          "Recorded with the decision or open question, or none found, with the checks named.",
+          "As adequate, and each problem names the ladder that ruled out a build cause.",
         ],
         remediation:
           "Write down every moment the build did not match the specification.",
@@ -845,8 +851,8 @@ export const module13: Lesson[] = [
     title: "Variant, or a different component?",
     objective:
       "Decide for three borderline cases whether they are variants of an existing component or new components, using a written test you can reuse.",
-    bringForward: "Your component inventory and the built component.",
-    prerequisite: "Your inventory and one built component.",
+    bringForward: "Your component inventory and your Lesson 3 component, built if you took the extension, or the supplied component-states.html.",
+    prerequisite: "Your inventory and one specified component, built or supplied. No coding is needed.",
     why: "Every system eventually accumulates a component with eleven variants that nobody can hold in their head. The decision rule is what prevents it.",
     teach: [
       "A variant shares the component's job and differs in emphasis or density.",
@@ -864,7 +870,7 @@ export const module13: Lesson[] = [
     misconception:
       "“Reuse is always better.” Reusing a component for a different job creates a component with conditional behaviour, which is harder to maintain than two clear components and produces screens that behave inconsistently for reasons nobody can explain.",
     example:
-      "Three borderline cases were tested. The compact card: same job, same content rules, one fewer state — a variant. The booking summary: different job (a record of something you own, not an option to choose), different required fields, different actions — a separate component, despite looking almost identical. The promotional card: different job again, and its own content rules — separate, and marked out of scope entirely, since marketing surfaces were excluded in lesson 1. The test was written down and applied to two further cases the following week without re-argument.",
+      "Example (made up): three borderline cases were tested. The compact card: same job, same content rules, one fewer state — a variant. The booking summary: different job (a record of something you own, not an option to choose), different required fields, different actions — a separate component, despite looking almost identical. The promotional card: different job again, and its own content rules — separate, and marked out of scope entirely, since marketing surfaces were excluded in lesson 1. The test was written down and applied to two further cases the following week without re-argument.",
     freeToolPath:
       "Written decisions plus your existing inventory. Nothing new is built here.",
     outputs: [
@@ -1041,8 +1047,8 @@ export const module13: Lesson[] = [
     title: "Documentation someone will actually read",
     objective:
       "Write the documentation for two components so that a person can use them correctly without asking you, and test it by watching someone try.",
-    bringForward: "Your component specifications and states pages.",
-    prerequisite: "Two specified components.",
+    bringForward: "Your Lesson 3 specification, and the supplied button and text input (component-states.html) as your second component.",
+    prerequisite: "Two components: the one you specified and the supplied one, whose anatomy, states and tokens are written on its page.",
     why: "Undocumented systems are systems that only work while you are available. The test is not whether it is written; it is whether it is used.",
     teach: [
       "Lead with when to use it, not with what it looks like.",
@@ -1060,14 +1066,14 @@ export const module13: Lesson[] = [
     misconception:
       "“The components are self-explanatory.” They are to you. Every question someone has to ask is a small tax, and in a system meant to save time, those taxes are the thing you were trying to remove.",
     example:
-      "The card and the button pages were rewritten. Each opens with when to use it, when not to, and the alternative. Then a live example with the code beside it, the anatomy, the state grid, the content rules — including maximum label length and truncation behaviour — and the keyboard behaviour. Two people were then asked to build a screen using them. Four questions came up: what happens with two actions, whether the compact variant may be used in a grid, what the maximum title length actually is, and whether the card is clickable as a whole. All four became sentences on the pages.",
+      "Example (made up): the card and the button pages were rewritten. Each opens with when to use it, when not to, and the alternative. Then a live example with the code beside it, the anatomy, the state grid, the content rules — including maximum label length and truncation behaviour — and the keyboard behaviour. Two people were then asked to build a screen using them. Four questions came up: what happens with two actions, whether the compact variant may be used in a grid, what the maximum title length actually is, and whether the card is clickable as a whole. All four became sentences on the pages.",
     freeToolPath:
-      "Markdown files beside your code, or one HTML page per component with the live example embedded. No documentation platform, account or static-site tool is required.",
+      "Markdown files, with the supplied component page (or your own build) as the live example, its markup or a labelled screenshot. No documentation platform, account or static-site tool is required.",
     outputs: [
       "Two component pages opening with when to use and when not to",
       "Live examples with the code beside them",
       "Content rules placed where a writer will find them",
-      "A record of the questions a real reader had to ask",
+      "A record of the questions raised, labelled as a real-reader test or a solo rehearsal",
     ],
     steps: [
       {
@@ -1083,7 +1089,7 @@ export const module13: Lesson[] = [
         minutes: 30,
         title: "Bring code and design together",
         instructions: [
-          "Embed the live component or its markup beside the specification.",
+          "Put the live component, its markup or a labelled screenshot beside the specification.",
           "Include the state grid and anatomy on the same page.",
         ],
       },
@@ -1099,8 +1105,8 @@ export const module13: Lesson[] = [
         minutes: 25,
         title: "Test the documentation",
         instructions: [
-          "Ask someone to build a small screen using only the pages.",
-          "Record every question they ask without answering immediately.",
+          "Ask someone to build a small screen from the pages, or rehearse alone after a gap.",
+          "Record every question without answering at once, and label which route you used.",
         ],
       },
       {
@@ -1127,14 +1133,14 @@ export const module13: Lesson[] = [
       {
         question: "How do you know the documentation works?",
         answer:
-          "Someone completes a task with it and asks you nothing. Every question they do ask is a defect in the page.",
+          "Someone new completes a task with it and asks you nothing; every question they ask is a defect in the page. A solo cold read finds some gaps and is rehearsal, not validation.",
       },
     ],
     rubric: [
       "Pages open with when to use and when not to",
       "Live examples sit beside the specification",
       "Content rules are where a writer will find them",
-      "Reader questions were recorded and turned into content",
+      "Questions from a reader or a labelled solo rehearsal became content",
     ],
     criteria: [
       {
@@ -1154,15 +1160,15 @@ export const module13: Lesson[] = [
       {
         criterion: "Live examples sit beside the specification",
         evidence:
-          "A working example and its markup on the same page as the specification.",
+          "A working example, its markup or a labelled screenshot, on the same page as the specification.",
         levels: [
-          "Static images only.",
-          "Example present, code elsewhere.",
-          "Example and code together with the specification.",
-          "As adequate, and the example is the built component rather than a copy.",
+          "No example at all.",
+          "Example present, kept on a separate page.",
+          "An example (live, its markup or a labelled screenshot) beside the specification.",
+          "As adequate, and the example is the working component rather than a copy.",
         ],
         remediation:
-          "Embed the component you built in m13 lesson 4 and put the markup next to it.",
+          "Put the supplied component, or your Lesson 4 build, beside the specification with its markup or a labelled screenshot.",
         recheck: "The page with its example.",
       },
       {
@@ -1180,17 +1186,17 @@ export const module13: Lesson[] = [
         recheck: "The content section.",
       },
       {
-        criterion: "Reader questions were recorded and turned into content",
+        criterion: "Questions from a reader or a labelled solo rehearsal became content",
         evidence:
-          "A list of questions from a real reader with the sentences added.",
+          "Questions from a real reader, or from a solo cold read labelled as rehearsal, with the sentences added.",
         levels: [
-          "Documentation untested.",
+          "Documentation untested, or a solo read described as a reader test.",
           "Tested with questions answered verbally only.",
-          "Questions recorded and turned into page content.",
-          "As adequate, and questions you could not answer are recorded as open decisions.",
+          "Questions recorded, turned into page content and labelled by route.",
+          "As adequate, open questions recorded as decisions; a rehearsal names what a real reader could still reveal.",
         ],
         remediation:
-          "Ask someone to build a screen from the pages alone and write down every question.",
+          "Ask someone to build a screen from the pages alone, or rebuild from them yourself after a gap, and write down every question.",
         recheck: "The question list and the updated pages.",
       },
     ],
@@ -1198,7 +1204,7 @@ export const module13: Lesson[] = [
       "If pages open with appearance, move purpose and boundaries to the top.",
       "If code lives elsewhere, bring it onto the page.",
       "If content rules are separate, move them to the component.",
-      "If nobody tested the pages, watch someone build from them.",
+      "If nobody tested the pages, watch someone build from them, or rehearse alone and label it.",
     ],
     portfolio:
       "Documentation with a record of the questions it failed to answer, and the fixes, shows that you treat documentation as a designed artefact.",
@@ -1257,7 +1263,7 @@ export const module13: Lesson[] = [
     misconception:
       "“Governance is bureaucracy.” Governance is the difference between a system people use and one they route around. A paragraph naming the route, the decider and the response time is enough for a small system, and skipping it costs more.",
     example:
-      "The governance was one page. To propose: open an issue with the screens where it is needed, what existing component you tried, and why it did not fit. Decider: the learner, until someone else joins. Response time: within a week. Criteria: needed in at least two screens, not achievable by composing existing components, and specifiable with states and content rules. Decisions are recorded in a log with the reason. Three proposals in the first month: one accepted, one rejected because composition covered it, and one deferred pending a second use — all recorded, and the rejected one was not re-raised.",
+      "Example (made up): the governance was one page. To propose: open an issue with the screens where it is needed, what existing component you tried, and why it did not fit. Decider: the learner, until someone else joins. Response time: within a week. Criteria: needed in at least two screens, not achievable by composing existing components, and specifiable with states and content rules. Decisions are recorded in a log with the reason. Three proposals in the first month: one accepted, one rejected because composition covered it, and one deferred pending a second use — all recorded, and the rejected one was not re-raised.",
     freeToolPath:
       "A Markdown page and a decision log file. Issue trackers help and are not required; the process matters more than the tool.",
     outputs: [
@@ -1295,7 +1301,7 @@ export const module13: Lesson[] = [
         minutes: 30,
         title: "Run it on three cases",
         instructions: [
-          "Apply the process to three real proposals from your own backlog.",
+          "Apply it to three proposals from your own work, or the supplied proposals in the source notes.",
           "Accept, reject or defer each, recording the reason.",
         ],
       },
@@ -1386,7 +1392,7 @@ export const module13: Lesson[] = [
           "As adequate, and a deferral is recorded with what would change it.",
         ],
         remediation:
-          "Apply the process to three real proposals and record each outcome with a reason.",
+          "Apply the process to three proposals, your own or supplied, and record each outcome with a reason.",
         recheck: "The decision log.",
       },
     ],
@@ -1435,8 +1441,8 @@ export const module13: Lesson[] = [
     title: "Versions and breaking changes",
     objective:
       "Version your system, classify three real changes as major, minor or patch, and write the change note that tells people what to do.",
-    bringForward: "Your component pages and the changes you have already made.",
-    prerequisite: "Your documented components and their change history.",
+    bringForward: "Your component pages and three changes you have made or plan to make.",
+    prerequisite: "Your documented components, and any changes made or planned. No coding is needed.",
     why: "A system that changes silently is a system people stop trusting. Versioning is how a change becomes something others can plan around.",
     teach: [
       "Major means people must change something; minor adds; patch fixes.",
@@ -1448,13 +1454,13 @@ export const module13: Lesson[] = [
     explanation: [
       "The assigned specification is written for software interfaces and its rules transfer cleanly: a change that forces others to alter their work is major, one that adds without breaking is minor, and a fix that changes nothing about how it is used is a patch. Applying it to a design system means treating your tokens, component names and behaviour as the interface, because that is what other people build against.",
       "The rule that a released version is never modified matters more in design than people expect. Quietly changing a token's value after release means two screens built a week apart look different for reasons nobody recorded, and the difference is found much later by someone who cannot explain it.",
-      "Breaking changes in a design system are often invisible to the person making them. Renaming a token, removing a variant, changing a default, tightening a content rule — each forces work on everyone who used the old one. Classifying honestly is uncomfortable and is what makes the version number meaningful.",
+      "Breaking changes in a design system are often invisible to the person making them. Renaming a token, removing a variant, changing a default, tightening a content rule — each forces work on everyone who used the old one. Whether a purely visual change to a default counts as major is a policy your system must write down; this lesson treats it as major because every screen has to be re-checked. Classifying honestly is uncomfortable and is what makes the version number meaningful.",
       "The change note is what turns a version into communication. What changed, why, what you must do, and by when. The specification says nothing about how to communicate, so this part is your own: written well, it is read; written as a list of commits, it is not.",
     ],
     misconception:
-      "“It is a small change, so it is a patch.” Size is irrelevant; effect is what counts. Renaming one token is a one-character change and forces work on everyone who used it, which makes it major.",
+      "“It is a small change, so it is a patch.” Size is irrelevant; effect is what counts. Renaming one token is a one-word edit and forces work on everyone who used it, which makes it major.",
     example:
-      "The system was versioned 1.0.0 at the point the two components were documented. Three changes followed. Adding the compact card variant: minor, since nothing existing changed. Fixing the focus ring's contrast on the tinted surface: patch, because usage is unchanged. Renaming surface-alt to surface-muted for consistency: major, because every use must change, and it was released with the old name deprecated for one minor version, a change note explaining the rename, and a list of the four places it appeared. The rename was deliberately delayed until it could travel with another major change.",
+      "Example (made up): the system was versioned 1.0.0 at the point the two components were documented. Three changes followed. Adding the compact card variant: minor, since nothing existing changed. Fixing the focus ring's contrast on the tinted surface: patch, because usage is unchanged. Renaming surface-alt to surface-muted for consistency: major, because every use must change, and it was released with the old name deprecated for one minor version, a change note explaining the rename, and a list of the four places it appeared. The rename was deliberately delayed until it could travel with another major change.",
     freeToolPath:
       "A version number in your documentation and a changelog file. Nothing else is required; the discipline is the deliverable.",
     outputs: [
@@ -1511,7 +1517,7 @@ export const module13: Lesson[] = [
       {
         question: "What makes a change major?",
         answer:
-          "That it forces others to change their work. Size is irrelevant: a one-character rename that everyone must follow is major.",
+          "That it forces others to change their work. Size is irrelevant: a one-word rename that everyone must follow is major.",
       },
       {
         question: "Why must a released version never be edited?",
@@ -1632,9 +1638,9 @@ export const module13: Lesson[] = [
     title: "Getting it adopted",
     objective:
       "Migrate two existing screens onto the system, measure how much of each now comes from it, and record what blocked full adoption.",
-    bringForward: "Your built screens and the system's components.",
-    prerequisite: "Your system and two existing screens.",
-    why: "A system nobody has adopted has no effect. Migration is where you learn whether it fits the product it was built from.",
+    bringForward: "Two screens made before the system (Project 1 drawings or Project 2 pages) and the system's components.",
+    prerequisite: "Your system and two screens that existed before it.",
+    why: "Part of the optional technical extension: core learners can use the supplied working component (component-states.html) and the specification lessons instead. A system nobody has adopted has no effect. Migration is where you learn whether it fits the product it was built from.",
     teach: [
       "Measure adoption: what proportion of a screen comes from the system.",
       "Migrate a real screen, not a demonstration one.",
@@ -1651,7 +1657,7 @@ export const module13: Lesson[] = [
     misconception:
       "“Adoption is a rollout problem.” It is a fit problem first. If the system does not cover the real screens, no amount of advocacy will get it adopted, and the blockers list is what tells you which is which.",
     example:
-      "Two screens were migrated. The class list reached 90 per cent system-provided after two blockers were fixed: a missing filter chip and a spacing value that did not exist. The booking summary reached 55 per cent, and the reasons were recorded: it needs a component the system deliberately does not cover — a receipt-style record — and its status treatment carries a distinction the system's status component flattens. The second was explicitly not resolved by simplifying the screen, since the distinction was one the m05 research had shown people using.",
+      "Example (made up): two screens were migrated. The class list reached 90 per cent system-provided after two blockers were fixed: a missing filter chip and a spacing value that did not exist. The booking summary reached 55 per cent, and the reasons were recorded: it needs a component the system deliberately does not cover — a receipt-style record — and its status treatment carries a distinction the system's status component flattens. The second was explicitly not resolved by simplifying the screen, since earlier research notes had shown people using the distinction.",
     freeToolPath:
       "Your existing files. Counting elements by hand on two screens takes fifteen minutes and is accurate enough to steer decisions.",
     outputs: [
@@ -1829,8 +1835,8 @@ export const module13: Lesson[] = [
     title: "What the system guarantees",
     objective:
       "Write the accessibility guarantees your system makes, prove each with a check, and state plainly what remains the responsibility of whoever uses it.",
-    bringForward: "Your m11 checks and your component specifications.",
-    prerequisite: "Your m11 results and component pages.",
+    bringForward: "Your m11 checks, your component specification, and the supplied component-states.html to check against.",
+    prerequisite: "Your m11 results and component pages, and the supplied component or your own build. No coding is needed.",
     why: "A system's greatest accessibility value is making the right thing the default. Its greatest risk is people assuming it guarantees more than it does.",
     teach: [
       "Guarantee only what you have tested in the component itself.",
@@ -1848,9 +1854,9 @@ export const module13: Lesson[] = [
     misconception:
       "“We use an accessible design system, so the product is accessible.” The system can make the defaults right. Structure, content, order, and testing remain with the person building the page, and most real failures live there.",
     example:
-      "Four guarantees were written. Focus rings meet contrast on all permitted surfaces — checked by measurement, with the surfaces listed. Interactive components match their documented keyboard behaviour — checked by walking each key table. States are distinguishable without colour — checked in greyscale. Text tokens meet the contrast threshold in their permitted pairs — checked by measurement. Four responsibilities were written opposite: page heading order, alternative text for images you supply, reading order of your composition, and testing the assembled page. The statement ended by saying the system claims no conformance, since conformance is a property of a page.",
+      "Example (made up): four guarantees were written. Focus rings meet contrast on all permitted surfaces — checked by measurement, with the surfaces listed. Interactive components match their documented keyboard behaviour — checked by walking each key table. States are distinguishable without colour — checked in greyscale. Text tokens meet the contrast threshold in their permitted pairs — checked by measurement. Four responsibilities were written opposite: page heading order, alternative text for images you supply, reading order of your composition, and testing the assembled page. The statement ended by saying the system claims no conformance, since conformance is a property of a page.",
     freeToolPath:
-      "Your existing checks written up as a repeatable list. No auditing tool or service is required at this scale.",
+      "Your existing checks written up as a repeatable list, run on the supplied component page (which has a greyscale button) or your own build. No auditing tool or service is required at this scale.",
     outputs: [
       "A list of guarantees the system makes",
       "A re-runnable check per guarantee",
@@ -1879,7 +1885,7 @@ export const module13: Lesson[] = [
         title: "Attach a check to each",
         instructions: [
           "Write the check that proves each guarantee.",
-          "Run every check now and record the result.",
+          "Run every check now on the supplied component or your build, and record the result.",
         ],
       },
       {
@@ -2024,9 +2030,9 @@ export const module13: Lesson[] = [
     title: "One source of truth, and the copies",
     objective:
       "Decide which representation of your system is authoritative, write how the others stay in step, and find the drift that already exists.",
-    bringForward: "Your documentation, built components and any design files.",
-    prerequisite: "Your documentation and built components.",
-    why: "Every system has a design representation and a code representation, and they diverge. Deciding which one is true is what prevents arguments nobody can settle.",
+    bringForward: "Your documentation, your drawings, and a build: your own or the supplied component-states.html.",
+    prerequisite: "Your documentation, drawings and a built component, your own or supplied.",
+    why: "Part of the optional technical extension: core learners can use the supplied working component (component-states.html) and the specification lessons instead. Every system has a design representation and a code representation, and they diverge. Deciding which one is true is what prevents arguments nobody can settle.",
     teach: [
       "Name the authoritative representation explicitly.",
       "The others are copies and must state that they are.",
@@ -2043,7 +2049,7 @@ export const module13: Lesson[] = [
     misconception:
       "“The design file is the design system.” It is one representation. What people encounter is the built product, and a system whose authority lives in a file most of the team cannot open will be overtaken by the code within weeks.",
     example:
-      "The code was named authoritative, with the documentation generated from or checked against it and any design file marked a working copy carrying the version it reflected. An audit of three components found three drifts already: the card's padding differed by 4 pixels between the drawing and the build, the button had a disabled state in the drawing that had never been built, and the documentation described a truncation rule the component did not implement. Each was recorded, and the change process was rewritten to require the documentation update in the same change as the code.",
+      "Example (made up): the code was named authoritative, with the documentation generated from or checked against it and any design file marked a working copy carrying the version it reflected. An audit of three components found three drifts already: the card's padding differed by 4 pixels between the drawing and the build, the button had a disabled state in the drawing that had never been built, and the documentation described a truncation rule the component did not implement. Each was recorded, and the change process was rewritten to require the documentation update in the same change as the code.",
     freeToolPath:
       "Your existing files. The audit is a comparison by eye and by measurement; nothing needs syncing software.",
     outputs: [
@@ -2222,8 +2228,8 @@ export const module13: Lesson[] = [
     objective:
       "Review the system against how it has actually been used, remove or deprecate at least one thing, and write the six-month plan with its maintenance cost.",
     bringForward:
-      "Your adoption figures, blockers, decision log and drift audit.",
-    prerequisite: "Your adoption data and decision log.",
+      "Your decision log and changelog; adoption figures and the drift audit if you took the extension lessons, otherwise the supplied usage notes.",
+    prerequisite: "Your decision log and screens or drawings. No coding is needed.",
     why: "Systems accumulate. Reviewing what is unused and removing it is the maintenance work that keeps a system usable.",
     teach: [
       "Review against use, not against completeness.",
@@ -2241,7 +2247,7 @@ export const module13: Lesson[] = [
     misconception:
       "“A bigger system is a more mature system.” A system that covers the real cases in twelve components is more mature than one with sixty that nobody can navigate. Maturity shows in what has been removed.",
     example:
-      "The review found three unused components, two of which had been built speculatively in the first week; both were deprecated with a note, and the third was kept because a planned screen needed it, with the reason recorded. Two workarounds were found in the learner's own screens: a status treatment the system flattened and a compact list row that did not exist. The first became a governance proposal; the second was accepted as a minor addition. The plan estimated three hours a month, listed what would be skipped if that was not available — the drift audit first, documentation last — and named the review date.",
+      "Example (made up): the review found three unused components, two of which had been built speculatively in the first week; both were deprecated with a note, and the third was kept because a planned screen needed it, with the reason recorded. Two workarounds were found in the learner's own screens: a status treatment the system flattened and a compact list row that did not exist. The first became a governance proposal; the second was accepted as a minor addition. The plan estimated three hours a month, listed what would be skipped if that was not available — the drift audit first, documentation last — and named the review date.",
     freeToolPath:
       "Your existing artefacts and a written plan. Nothing new is required.",
     outputs: [
@@ -2255,7 +2261,7 @@ export const module13: Lesson[] = [
         minutes: 25,
         title: "Review against use",
         instructions: [
-          "List every component and where it is actually used.",
+          "List every component and where it is actually used, in screens, drawings or the supplied notes.",
           "Mark anything used nowhere.",
         ],
       },
@@ -2263,7 +2269,7 @@ export const module13: Lesson[] = [
         minutes: 25,
         title: "Find the workarounds",
         instructions: [
-          "Look through your screens for one-offs built instead of using the system.",
+          "Look through your screens or drawings for one-offs made instead of using the system.",
           "For each, name what did not fit.",
         ],
       },
@@ -2321,7 +2327,7 @@ export const module13: Lesson[] = [
       {
         criterion: "Usage is reviewed and unused components identified",
         evidence:
-          "A list of components with where each is used, and the unused ones marked.",
+          "A list of components with where each is used, from screens, drawings or the supplied notes, and the unused ones marked.",
         levels: [
           "No usage review.",
           "Usage described from memory.",
@@ -2354,7 +2360,7 @@ export const module13: Lesson[] = [
         levels: [
           "Not examined.",
           "Workarounds noticed without decisions.",
-          "Each with a cause and a decision.",
+          "Each with a cause and a decision, or none found with where you looked.",
           "As adequate, and at least one has entered the governance process as a proposal.",
         ],
         remediation:

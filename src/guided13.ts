@@ -3,7 +3,16 @@
 // CSS, so every lesson shows one small complete thing before expanding it, and
 // governance is introduced through ordinary team situations rather than as
 // abstract rules. Nothing needs a documentation platform or a design tool.
-import { improvementMade, revealOne, textRoute, type Guided } from './guided';
+// Core lessons need no coding: learners bring Project 1 screens and states
+// and use the supplied working component in public/starters/m13/. Lessons 4,
+// 9 and 11 are the optional technical extension.
+import { improvementMade, revealOne, textRoute, type Guided, type Route } from './guided';
+
+const componentRoute = (id: string, what: string): Route => ({
+  recommended: `Optional technical extension: core learners can use the supplied working component and the specification lessons instead. To practise ${what}, download component-states.html (on the course site, the address ending /starters/m13/component-states.html) and save it in Documents\\HaruCourse\\Practice\\${id}. If Windows saved it as component-states.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click), make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here.`,
+  alternative: 'If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may work from your own Project 2 build instead; note its folder in Your work. Nothing is uploaded.',
+});
+const suppliedComponent = 'Supplied working component (made up practice material): component-states.html, a button and a text input for the Northside Tool Library, version 1.0.0. Open it from the course site at the address ending /starters/m13/component-states.html, or download it. Its page shows every state in labelled grids, its tokens, measured contrast on the plain background, keyboard behaviour, content rules and one open decision.';
 
 export const guided13: Record<string, Guided> = {
   'm13-l01-v1': {
@@ -38,7 +47,7 @@ export const guided13: Record<string, Guided> = {
           { term: 'Design system', meaning: 'A set of decisions made once and reused, with the documentation that lets somebody else use them. It is not a folder of components.' },
           { term: 'Drift', meaning: 'The same decision made slightly differently in different places, by you, over time. It is the evidence that a decision was never actually settled.' },
         ],
-        start: 'Open three of your own screens side by side and measure the same gap on each.',
+        start: 'Open three of your own screens side by side (Project 1 drawings count) and measure the same gap on each.',
         enough: 'Your drift examples name a measurement or a word rather than a general feeling of inconsistency.' },
       { expect: 'Three problems, each stated as a problem for a named person, with at least one costing somebody else time.',
         fields: ['problem-1', 'problem-2', 'problem-3'],
@@ -184,6 +193,11 @@ export const guided13: Record<string, Guided> = {
   },
   'm13-l02-v1': {
     route: textRoute,
+    material: [
+      suppliedComponent,
+      'A misuse you can check yourself (made up practice material): the supplied component’s token table says space-3 is 12px, but its stylesheet declares 16px, which is what every button and field uses. Inspect a button’s padding to confirm it.',
+      'Another real misuse to look for there: the success message colour is measured only on the plain background. Measure it on the tinted panel before trusting it everywhere.',
+    ],
     worksheet: [
       { id: 'decisions', title: 'From values to decisions', intro: 'A foundation is a value plus a rule for when to use it. Take the groups one at a time.', fields: [
         ...[1, 2, 3, 4, 5, 6].map((n) => ({ id: `group-${n}`, label: `Group ${n} · the values, the rule for using them, and why these values`, kind: 'long' as const,
@@ -198,10 +212,10 @@ export const guided13: Record<string, Guided> = {
         { id: 'reduced-pairs', label: 'The reduced-motion pair for each one', kind: 'long' },
       ] },
       { id: 'wrong', title: 'One wrong usage per group', fields: [
-        { id: 'do-not-pairs', label: 'For each group: one do and one do-not, drawn from a mistake you actually made', kind: 'long', example: 'Example (made up): do use the status colour with its word beside it. Do not use it alone, as I did on the results card until the greyscale check in Module 11.' },
+        { id: 'do-not-pairs', label: 'For each group: one do and one do-not, from a real misuse, with where it came from', kind: 'long', hint: 'Your own screens, the value check in step 5 or the supplied material. Never invent a mistake to fill a gap; leave a group without one and say so.', example: 'Example (made up): do use the status colour with its word beside it. Do not use it alone, as I did on the results card until the greyscale check in Module 11.' },
       ] },
       { id: 'check', title: 'Check against a real screen', fields: [
-        { id: 'screen-checked', label: 'Which screen you checked, value by value', kind: 'short' },
+        { id: 'screen-checked', label: 'Which screen you checked, value by value: a Project 1 drawing, a built page or the supplied component', kind: 'short' },
         { id: 'not-permitted', label: 'Every value in use that the foundations do not permit', kind: 'long', hint: 'There will be some. Deciding whether to add the value or change the screen is the point of this step.' },
         improvementMade,
       ] },
@@ -248,7 +262,7 @@ export const guided13: Record<string, Guided> = {
         fields: ['do-not-pairs'],
         terms: [
           { term: 'Do-and-do-not', meaning: 'The right usage beside the wrong one. The wrong one is what people learn from, because it names the mistake they were about to make.' },
-          { term: 'From a real mistake', meaning: 'Taken from your own screens rather than invented. Invented wrong examples tend to be absurd, and nobody was going to make them.' },
+          { term: 'From a real misuse', meaning: 'Taken from your own screens, a value check or supplied material, with the source named. Invented wrong examples tend to be absurd, and nobody was going to make them.' },
         ],
         sorter: {
           intro: 'Six foundation entries from a made up tool-library system. For each one, decide what it is missing, if anything.',
@@ -294,8 +308,8 @@ export const guided13: Record<string, Guided> = {
           then: 'Now read your own six groups the same way, and fix whichever part is missing.',
           pattern: 'Rules go missing more often than values, and reasons go missing more often than rules. A value with no reason survives until somebody with stronger taste arrives; a value with no rule does not survive a fortnight.',
         },
-        start: 'For each group, find a screen where you got it wrong and use that as the do-not.',
-        enough: 'Every do-not is something you actually did, not something nobody would do.' },
+        start: 'For each group, find a real misuse on your screens, in your step 5 check or in the supplied material, and use that as the do-not.',
+        enough: 'Every do-not is a real misuse with its source named; a group with none says so.' },
       { expect: 'One built screen checked value by value, with every value in use that the foundations do not permit.',
         fields: ['screen-checked', 'not-permitted', 'improvement-made'],
         terms: [
@@ -315,7 +329,7 @@ export const guided13: Record<string, Guided> = {
           tradeoff: 'Changing seven values on a finished screen is fiddly, and two of them looked very slightly better before.',
           uncertainty: 'Still unknown: whether the tinted panel should exist at all, since it is the thing that forced a new grey. That is a question for the component review rather than for the foundations.',
         },
-        start: 'Open the inspector on one screen and read the computed values rather than trusting the stylesheet.',
+        start: 'Measure a Project 1 drawing, or open the supplied component and read the computed values in the inspector rather than trusting its table.',
         enough: 'For each unpermitted value you decided whether to add it to the foundations or change the screen.' },
     ],
     checks: [
@@ -378,8 +392,9 @@ export const guided13: Record<string, Guided> = {
         { id: 'when-not', label: 'When not to use this component, and what to use instead', kind: 'long', hint: 'This is the section that stops a component being applied to things it was never for.' },
       ] },
       { id: 'test', title: 'Test the specification', fields: [
-        { id: 'given-to', label: 'Who you gave it to, or how you tested it alone', kind: 'short', hint: 'If nobody is available, leave it a day and build from it yourself without looking at the screens. Write that here.' },
-        { id: 'questions-asked', label: 'Every question they had to ask you', kind: 'long', hint: 'Each question is a hole in the specification. That is the whole result of this step.' },
+        { id: 'spec-test-route', label: 'How the specification was tested', kind: 'choice', options: ['Another person read it and said what they would build', 'Solo rehearsal: I rebuilt from it myself after a gap'] },
+        { id: 'given-to', label: 'Who read it, as a role and not a name, or how you tested it alone', kind: 'short', sensitive: true, hint: 'If nobody is available, leave it a day and rebuild from it yourself without looking at the screens. That is rehearsal, not a reader test.' },
+        { id: 'questions-asked', label: 'Every question raised, in short, with no names (yours, if solo)', kind: 'long', sensitive: true, hint: 'Each question is a hole in the specification. Keep any raw notes private and local, with a date to delete them.' },
         improvementMade,
       ] },
     ],
@@ -475,7 +490,7 @@ export const guided13: Record<string, Guided> = {
         start: 'Copy the keyboard rows from your Module 9 table rather than writing them again.',
         enough: 'Each prohibition names an alternative.' },
       { expect: 'The specification given to somebody, or built from cold by you, with every question they had to ask recorded.',
-        fields: ['given-to', 'questions-asked', 'improvement-made'],
+        fields: ['spec-test-route', 'given-to', 'questions-asked', 'improvement-made'],
         terms: [
           { term: 'Testing a specification', meaning: 'Giving it to somebody and asking what they would build. Every question they ask is a hole, and the questions are the result.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
@@ -494,7 +509,7 @@ export const guided13: Record<string, Guided> = {
           uncertainty: 'Still unknown: how many holes remain that this reader happened not to hit. One reader finds the holes one reader finds.',
         },
         start: 'Hand it over without explaining anything, and write down every question rather than answering it immediately.',
-        enough: 'The questions are recorded as holes in the document rather than as things you explained away.' },
+        enough: 'The questions are recorded as holes in the document, and the route says whether a reader or a solo rehearsal found them.' },
     ],
     checks: [
       {
@@ -536,16 +551,17 @@ export const guided13: Record<string, Guided> = {
     },
   },
   'm13-l04-v1': {
-    route: textRoute,
+    route: componentRoute('m13-l04-v1', 'building a component with every state'),
+    material: [suppliedComponent],
     worksheet: [
       { id: 'default', title: 'Build the default', fields: [
-        { id: 'built-where', label: 'Where the component and its states page live', kind: 'short', hint: 'One HTML file and your existing stylesheet, in your own folder. No framework or build step.' },
+        { id: 'built-where', label: 'Where the component and its states page live', kind: 'short', hint: 'Start from the supplied component-states.html, saved in your own folder. One HTML file; no framework or build step.' },
         { id: 'tokens-only', label: 'How you kept every value coming from a token', kind: 'short' },
         { id: 'missing-tokens', label: 'Any value you needed that the foundations do not have', kind: 'long', hint: 'Do not quietly add it. Write it here and decide in step 5 whether the foundations or the component is wrong.' },
       ] },
       { id: 'states', title: 'Every state, demonstrable', fields: [
         { id: 'states-built', label: 'Which states you built, and how each one can be shown on demand', kind: 'long', hint: 'Showable on demand means a class you can add, or a copy of the markup on the page. Not something that only appears if the network is slow.' },
-        { id: 'hard-to-build', label: 'Any state that was hard to build, and what that suggested about the specification', kind: 'long' },
+        { id: 'hard-to-build', label: 'Any state that was hard to build, the checks you ran, and what they suggested', kind: 'long', hint: 'The ladder: is a rule winning in the inspector? Does the same state build in the supplied component? Only then suspect the specification.' },
       ] },
       { id: 'page', title: 'The states page', fields: [
         { id: 'page-layout', label: 'How the page is laid out, and how each cell is labelled', kind: 'long', example: 'Example (made up): three variants down the page, five states across each row, with the variant and state named above every cell.' },
@@ -556,7 +572,7 @@ export const guided13: Record<string, Guided> = {
         { id: 'rules-held', label: 'Which content rules held, and which did not', kind: 'long' },
       ] },
       { id: 'revealed', title: 'What the build revealed', fields: [
-        { id: 'spec-problems', label: 'Every specification problem the build found', kind: 'long' },
+        { id: 'spec-problems', label: 'Every specification problem the build found, or that you found none after the checks', kind: 'long' },
         { id: 'grey-keyboard', label: 'What the greyscale and keyboard checks showed on the states page', kind: 'long', hint: 'A states page is the easiest place in the whole system to run both, because everything is visible at once.' },
         improvementMade,
       ] },
@@ -577,19 +593,19 @@ export const guided13: Record<string, Guided> = {
           { term: 'Hard to build', meaning: 'A signal, not an obstacle. A state that fights the markup usually means the specification asked for something the component is not shaped for.' },
         ],
         demo: {
-          scenario: 'Made-up example. Building the states of a tool card, and treating a difficult state as a coding problem.',
+          scenario: 'Made-up example. Building the states of a tool card, and jumping to a verdict about a difficult state.',
           beats: [
             { label: 'What was difficult', text: 'The loading state on the compact variant. I spent an hour on it and every version either changed the card’s height or lost the status line.' },
-            { label: 'What I assumed', text: 'That I was not good enough at CSS yet. It was my second week of building and that assumption was comfortable.' },
-            { label: 'What was actually wrong', text: 'The compact variant has no room for the status text at all. The loading state has to reserve that room, and the variant’s whole reason for existing is not having it.' },
-            { label: 'What that meant', text: 'Either the compact card is a different component, or the status rule is wrong. Both are design decisions, and neither is fixable in CSS.' },
-            { label: 'What I recorded', text: 'The hour as a finding rather than a failure, and the question as an open decision for the variant lesson rather than something patched at three in the afternoon.' },
+            { label: 'First rung: the inspector', text: 'I selected the card and read the Styles panel. No rule I had not expected was winning, and the computed height matched what I had set, so it was not a hidden conflict.' },
+            { label: 'Second rung: a working version', text: 'The supplied component builds its loading state in minutes, but it has no compact variant. So the technique was fine; something about compact was different.' },
+            { label: 'Third rung: the specification', text: 'The compact variant has no room for the status text, and every card must show its status. Two rules contradict each other, and no CSS can satisfy both.' },
+            { label: 'What I recorded', text: 'The three checks and the contradiction, as an open decision for the variant lesson rather than something patched at three in the afternoon.' },
           ],
-          wrongTurn: 'The wrong turn is treating a state that will not build as a problem with your skill, because early on that is always plausible. A state that fights the markup is usually a specification saying two incompatible things.',
+          wrongTurn: 'The wrong turn is jumping to a verdict, either “my CSS is not good enough” or “the specification is wrong”, without the two quick checks in between. Each verdict is right some of the time, and only the checks tell you which time this is.',
           tradeoff: 'Stopping to record it leaves a visibly incomplete states page, and somebody looking at it will assume you ran out of time.',
           uncertainty: 'Still unknown: whether the compact variant should exist at all. It was added because a screen felt cramped, which is a weaker reason than I thought when I wrote it.',
         },
-        start: 'Build the state you are least sure about first, before the easy ones.',
+        start: 'Build the state you are least sure about first. If it fights you, climb the ladder before deciding why.',
         enough: 'Every state can be shown by you, deliberately, in a second.' },
       { expect: 'One page showing every variant against every state, with each cell labelled so it reads without explanation.',
         fields: ['page-layout', 'page-readable'],
@@ -670,7 +686,7 @@ export const guided13: Record<string, Guided> = {
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
         start: 'Turn on greyscale with the whole states page open, and look across the rows rather than down them.',
-        enough: 'The specification problems are written as open decisions rather than as things you patched.' },
+        enough: 'Any specification problems are written as open decisions, each with the checks that ruled out a build cause. None found is an honest result.' },
     ],
     checks: [
       {
@@ -707,12 +723,13 @@ export const guided13: Record<string, Guided> = {
     saveRoute: {
       auto: 'Your build notes, the states, the page layout, the awkward cases and the specification problems save as you type, on this device first and then online.',
       external: 'The component, the stylesheet and the states page stay in your own folder. The states page is the artefact to keep; later lessons and your portfolio both use it.',
-      creator: 'Your creator reads the specification problems and the hard-to-build note. A build that revealed nothing usually means the specification was too vague to contradict.',
+      creator: 'Your creator reads the specification problems, the hard-to-build note and the checks behind them. A build that revealed nothing is fine when the checks say why.',
       next: 'Open Your work and choose Ready for review. The next lesson settles whether the compact card is a variant at all.',
     },
   },
   'm13-l05-v1': {
     route: textRoute,
+    material: [suppliedComponent],
     worksheet: [
       { id: 'test', title: 'Write the test once', intro: 'Four questions, each answerable in a sentence. You will reuse this rather than arguing each case from scratch.', fields: [
         { id: 'test-job', label: 'The question about the job it does', kind: 'short', example: 'Example (made up): does it do the same job for the reader, or a different one?' },
@@ -892,13 +909,14 @@ export const guided13: Record<string, Guided> = {
   },
   'm13-l06-v1': {
     route: textRoute,
+    material: [suppliedComponent, 'Second component bridge: if you specified only one component in Lesson 3, document the supplied button and text input as your second. Its anatomy, states, tokens, keys and content rules are already written on its page, so the work here is the documentation, not the specification.'],
     worksheet: [
       { id: 'structure', title: 'Open with when to use it', fields: [
-        { id: 'when-to-use', label: 'For each of your two components: when to use it, when not to, and what to use instead', kind: 'long', hint: 'This goes first, before anything about appearance. It is the question people actually arrive with.' },
+        { id: 'when-to-use', label: 'For each of your two components: when to use it, when not to, and what to use instead', kind: 'long', hint: 'This goes first, before anything about appearance. Your second component can be the supplied button and text input.' },
         { id: 'example-placed', label: 'What the first example shows, and where it sits on the page', kind: 'short' },
       ] },
       { id: 'together', title: 'Code and design in one place', fields: [
-        { id: 'code-beside', label: 'How the markup and the specification sit together on the page', kind: 'long', hint: 'A live example with its markup beside it. If the two live in different documents they will disagree within a month.' },
+        { id: 'code-beside', label: 'How the example and the specification sit together on the page', kind: 'long', hint: 'The supplied component page, its markup, or a labelled screenshot of it beside the specification. Apart, they disagree within a month.' },
         { id: 'grid-included', label: 'How the state grid and anatomy appear on the same page', kind: 'short' },
       ] },
       { id: 'writer', title: 'For the person writing the content', fields: [
@@ -906,9 +924,10 @@ export const guided13: Record<string, Guided> = {
         { id: 'guidance-placed', label: 'Where you put it, and why there', kind: 'short', hint: 'With the component. A separate content document is a document nobody opens while building a screen.' },
       ] },
       { id: 'test', title: 'Watch somebody use it', fields: [
-        { id: 'reader-task', label: 'Who you asked and what small screen they built', kind: 'short', hint: 'If nobody is available, leave it three days and build a screen yourself from the pages alone. Write that here.' },
-        { id: 'questions-raised', label: 'Every question they asked, recorded rather than answered', kind: 'long' },
-        { id: 'could-not-answer', label: 'Any question you could not answer either', kind: 'long', hint: 'These are the most valuable ones. They are decisions nobody has made yet.' },
+        { id: 'reader-route', label: 'How the pages were tested', kind: 'choice', options: ['Another person built a screen from the pages (real-reader test)', 'Solo rehearsal: I built from the pages myself after a gap'] },
+        { id: 'reader-task', label: 'Who built from the pages, as a role and not a name, or that you did, and what small screen', kind: 'short', sensitive: true, hint: 'If nobody is available, leave it three days and build a screen yourself from the pages alone. That is rehearsal, not validation.' },
+        { id: 'questions-raised', label: 'Every question raised, in short and with no names, recorded rather than answered', kind: 'long', sensitive: true, hint: 'Keep raw notes private and local, with a date to delete them. On a solo rehearsal, these are your own questions.' },
+        { id: 'could-not-answer', label: 'Any question you could not answer either', kind: 'long', sensitive: true, hint: 'These are the most valuable ones. They are decisions nobody has made yet.' },
       ] },
       { id: 'fix', title: 'Fix and record', fields: [
         { id: 'questions-fixed', label: 'Each question, and the sentence you added to the page', kind: 'long' },
@@ -930,8 +949,8 @@ export const guided13: Record<string, Guided> = {
           { term: 'Live example', meaning: 'The real component rendered on the documentation page, rather than a picture of it. It cannot go out of date the way a screenshot can.' },
           { term: 'One place', meaning: 'Design and code in the same document. Split across two, they disagree within a month and nobody knows which is current.' },
         ],
-        start: 'Embed the component itself rather than a screenshot, so the page cannot drift from the build.',
-        enough: 'Nothing on the page is a picture of something that exists elsewhere.' },
+        start: 'Link or embed the working component itself where you can; a screenshot must say which version it shows.',
+        enough: 'Every example on the page is the working component or is labelled with the version it shows.' },
       { expect: 'Content guidance written for a writer, placed with the component rather than in a separate document.',
         fields: ['content-guidance', 'guidance-placed'],
         terms: [
@@ -954,7 +973,7 @@ export const guided13: Record<string, Guided> = {
         start: 'Put the length and truncation rules three lines under the live example, where somebody typing will see them.',
         enough: 'Nothing a writer needs is in a different document.' },
       { expect: 'Somebody building a small screen from the pages alone, with every question recorded rather than answered.',
-        fields: ['reader-task', 'questions-raised', 'could-not-answer'],
+        fields: ['reader-route', 'reader-task', 'questions-raised', 'could-not-answer'],
         terms: [
           { term: 'Testing documentation', meaning: 'Watching somebody use it. Whether it is written is not the test; whether it is used without asking you is.' },
           { term: 'A question you cannot answer', meaning: 'A decision nobody has made. It is the most valuable output of this step and the easiest to talk past.' },
@@ -1016,8 +1035,8 @@ export const guided13: Record<string, Guided> = {
           tradeoff: 'A reader who knows nothing is slower, asks things you consider obvious, and the session is less comfortable. That discomfort is the result.',
           uncertainty: 'Still unknown: whether four questions is a good or bad score. One reader finds one reader’s holes, and the number means little on its own.',
         },
-        start: 'Hand over the pages and say you will answer everything at the end.',
-        enough: 'The questions are written down in their own words, not summarised into what you think they meant.' },
+        start: 'Hand over the pages and say you will answer everything at the end, or put the pages away for three days and rebuild from them alone.',
+        enough: 'The questions are written down, the route is labelled, and a solo rehearsal is not described as a reader test.' },
       { expect: 'Each question turned into a sentence on the page, and the repair the Check questions asked for.',
         fields: ['questions-fixed', 'improvement-made'],
         terms: [
@@ -1062,12 +1081,18 @@ export const guided13: Record<string, Guided> = {
     saveRoute: {
       auto: 'Your page structure, the content guidance, the reader’s questions and the fixes save as you type, on this device first and then online.',
       external: 'The documentation pages live beside the components in your own folder, as Markdown or as HTML with the live example embedded. No documentation platform is needed.',
-      creator: 'Your creator reads the questions your reader asked and which of them you could not answer. A documentation test that produced no questions was probably not a test.',
+      creator: 'Your creator reads the questions raised, which of them you could not answer, and whether a real reader or a solo rehearsal produced them.',
       next: 'Open Your work and choose Ready for review. The next lesson decides who gets to change any of this.',
     },
   },
   'm13-l07-v1': {
     route: textRoute,
+    material: [
+      'Supplied proposals for practice (made up), if your own work has none to run:',
+      'P1 · A date chip showing “Today” or “Tomorrow” on tool cards. Wanted on the listing and the booking summary; nothing existing shows a relative date; can be specified with states.',
+      'P2 · A large banner for the spring repair fair, used once on the home page in April.',
+      'P3 · A card with a “New” badge. A badge component already exists and can be placed on the existing card.',
+    ],
     worksheet: [
       { id: 'route', title: 'How somebody proposes a change', fields: [
         { id: 'proposal-route', label: 'Where a proposal goes, and in what form', kind: 'long', hint: 'A file, an issue, a message. The tool matters less than it being written down and findable.' },
@@ -1081,7 +1106,7 @@ export const guided13: Record<string, Guided> = {
       { id: 'criteria', title: 'What gets in', fields: [
         { id: 'acceptance-criteria', label: 'What a new component must satisfy to be accepted', kind: 'long', hint: 'A minimum number of uses, a composition check, and whether it can be specified with states and content rules.' },
       ] },
-      { id: 'run', title: 'Run it on three real proposals', intro: 'From your own backlog. One at a time, with the decision and the reason.', fields: [
+      { id: 'run', title: 'Run it on three proposals', intro: 'From your own work, or the supplied proposals in the source notes. One at a time, with the decision and the reason.', fields: [
         ...[1, 2, 3].map((n) => ({ id: `proposal-${n}`, label: `Proposal ${n} · what it is, the evidence, the decision and the reason`, kind: 'long' as const,
           ...(n === 1 ? { example: 'Example (made up): a filter chip. Needed on two screens, nothing existing fits, specifiable. Accepted.' } : {}) })),
       ] },
@@ -1193,7 +1218,7 @@ export const guided13: Record<string, Guided> = {
           then: 'Now run your own three proposals through your criteria and record the answers with their reasons.',
           pattern: 'Three different kinds of no. Not enough uses, composition already covers it, and out of scope are all rejections, and they read very differently to the person who proposed. A defer needs a named condition or it is silence with better manners.',
         },
-        start: 'Take the proposal you already have an opinion about and answer the criteria before reading your opinion back.',
+        start: 'Take the proposal you already have an opinion about, yours or supplied, and answer the criteria before reading your opinion back.',
         enough: 'Each decision cites a criterion rather than a preference.' },
       { expect: 'A decision log started, with the rejection written so it does not have to be argued again.',
         fields: ['log-location', 'rejection-recorded', 'improvement-made'],
@@ -1258,7 +1283,7 @@ export const guided13: Record<string, Guided> = {
       ] },
       { id: 'note', title: 'The change note', fields: [
         { id: 'change-note', label: 'For the largest change: what changed, why, and what the reader must do', kind: 'long' },
-        { id: 'places-affected', label: 'Every place it affects', kind: 'long', hint: 'Search your own stylesheet and documentation. A change note without a list of places is a warning rather than an instruction.' },
+        { id: 'places-affected', label: 'Every place it affects', kind: 'long', hint: 'Search your documentation, specifications and, if you have one, your stylesheet. A change note without a list of places is a warning rather than an instruction.' },
         { id: 'stops-working', label: 'The version or date by which the old form stops working', kind: 'short' },
       ] },
       { id: 'deprecation', title: 'The deprecation rule', fields: [
@@ -1336,7 +1361,7 @@ export const guided13: Record<string, Guided> = {
               } },
             { id: 'default-change', text: 'Changing the card’s default padding from 16 to 12, which affects every existing card.', answer: 'major',
               feedback: {
-                major: 'Every existing use changes appearance without anybody asking. A changed default is a breaking change even though nothing stops working.',
+                major: 'Every existing use changes appearance without anybody asking, so every screen must be re-checked. Some systems call visual-only changes minor; this lesson’s written rule treats them as major.',
                 minor: 'Nothing is being added, and existing use is affected.',
                 patch: 'It is not a fix; it is a different decision, and it arrives everywhere at once.',
               } },
@@ -1422,7 +1447,7 @@ export const guided13: Record<string, Guided> = {
     },
   },
   'm13-l09-v1': {
-    route: textRoute,
+    route: componentRoute('m13-l09-v1', 'migrating a screen onto the system'),
     worksheet: [
       { id: 'first', title: 'Migrate one real screen', fields: [
         { id: 'screen-1', label: 'Which real screen, and why this one', kind: 'short', hint: 'A real one. A screen built to demonstrate the system will reach a hundred per cent and prove nothing.' },
@@ -1599,6 +1624,7 @@ export const guided13: Record<string, Guided> = {
   },
   'm13-l10-v1': {
     route: textRoute,
+    material: [suppliedComponent],
     worksheet: [
       { id: 'separate', title: 'What a component can own alone', fields: [
         { id: 'component-owned', label: 'Accessibility properties a component can guarantee by itself', kind: 'long', example: 'Example (made up): its own focus ring contrast, its documented keyboard behaviour, states distinguishable without colour.' },
@@ -1610,7 +1636,7 @@ export const guided13: Record<string, Guided> = {
       ] },
       { id: 'checks', title: 'A check per guarantee', fields: [
         { id: 'checks-written', label: 'The check that proves each guarantee, written so it can be re-run', kind: 'long', hint: 'Re-run means somebody else could do it when the component changes, in a few minutes.' },
-        { id: 'checks-results', label: 'The result of running every check now', kind: 'long', hint: 'Run them today. A guarantee whose check has never been run is a claim.' },
+        { id: 'checks-results', label: 'The result of running every check now, and what you ran it on', kind: 'long', hint: 'Run them today on the supplied component or your own build. A guarantee whose check has never been run is a claim.' },
       ] },
       { id: 'responsibilities', title: 'What is left to the person building the page', fields: [
         { id: 'user-responsibilities', label: 'What remains the page author’s job, specifically', kind: 'long', example: 'Example (made up): the page heading order, the alternative text for images you supply, the reading order of your composition, and testing the assembled page.' },
@@ -1701,7 +1727,7 @@ export const guided13: Record<string, Guided> = {
           then: 'Now sort your own candidate guarantees the same way, and move anything in the second group into the responsibilities list.',
           pattern: 'The line falls between one component and several arranged together. Anything that only exists once things are composed belongs to the page author, and conformance belongs to nobody as a standing promise.',
         },
-        start: 'Run the greyscale check on your states page first; it is the quickest of the four.',
+        start: 'Run the greyscale check first, on the supplied component page (it has a greyscale button) or your own states page.',
         enough: 'Every guarantee has a result beside it from today.' },
       { expect: 'A specific list of what remains the page author’s job.',
         fields: ['user-responsibilities'],
@@ -1772,7 +1798,8 @@ export const guided13: Record<string, Guided> = {
     },
   },
   'm13-l11-v1': {
-    route: textRoute,
+    route: componentRoute('m13-l11-v1', 'a drift audit across representations'),
+    material: [suppliedComponent],
     worksheet: [
       { id: 'authority', title: 'Which one is true', fields: [
         { id: 'authoritative', label: 'Which representation is authoritative, and why', kind: 'long', hint: 'The one people actually encounter is usually the built code. Whatever you choose, say why.' },
@@ -1947,13 +1974,20 @@ export const guided13: Record<string, Guided> = {
   },
   'm13-l12-v1': {
     route: textRoute,
+    material: [
+      'Supplied usage notes (made up), for learners without adoption figures or a drift audit: the Northside system has six components.',
+      'Card: on 6 screens. Button: on 9 screens. Filter chip: on 2 screens, added last month through governance.',
+      'Statistics tile: built in the first week, on no screen. Tabs: built because other systems have one, on no screen, nothing planned.',
+      'Notification banner: on no screen yet; the booking flow being designed this month needs it.',
+      'Workaround seen in drawings: the booking screen shows “overdue” and “due today” separately, while the status component offers only “late”.',
+    ],
     worksheet: [
       { id: 'use', title: 'Review against use', fields: [
-        { id: 'usage-list', label: 'Every component and where it is actually used', kind: 'long', hint: 'Search your screens. Where you believe it is used is not the same as where it is.' },
+        { id: 'usage-list', label: 'Every component and where it is actually used', kind: 'long', hint: 'Search your screens or drawings, or use the supplied usage notes and say so. Where you believe it is used is not the same as where it is.' },
         { id: 'used-nowhere', label: 'Anything used nowhere', kind: 'long' },
       ] },
       { id: 'workarounds', title: 'What people built instead', fields: [
-        { id: 'workarounds-found', label: 'Every one-off built on a screen instead of using the system', kind: 'long', hint: 'Your own screens count. A workaround you built yourself is the clearest evidence of a gap.' },
+        { id: 'workarounds-found', label: 'Every one-off on a screen or drawing instead of using the system', kind: 'long', hint: 'Your own screens and drawings count. If you find none, say where you looked; do not invent one.' },
         { id: 'what-did-not-fit', label: 'For each: what did not fit', kind: 'long' },
       ] },
       { id: 'act', title: 'Remove and add, through the process', fields: [
