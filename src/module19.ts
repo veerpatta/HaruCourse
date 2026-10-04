@@ -1,6 +1,8 @@
 import { withLegacyText, type Lesson } from "./teaching";
-// Module 19 turns the three project records into three case studies and one
-// spoken presentation. It teaches no new design method. Its whole subject is
+// Module 19 turns project records into case studies and one spoken
+// presentation. Lessons 1, 4, 5 and 8 sit early on the core path, straight
+// after Project 1, and must work with one project's evidence; the rest extend
+// to two case studies on the core path, or three on the full library. It teaches no new design method. Its whole subject is
 // the honest translation of evidence into a claim, which is where most
 // portfolios quietly stop being true — so every lesson here checks a sentence
 // against the artefact that is supposed to support it.
@@ -55,33 +57,34 @@ export const module19: Lesson[] = [
     guided: true,
     title: "What a portfolio has to do in ninety seconds",
     objective:
-      "Establish what a reviewer is trying to find out, and write the three claims your portfolio has to support.",
-    bringForward: "Your three project records.",
-    prerequisite: "Three completed project records.",
+      "Establish what a reviewer is trying to find out, and write the claims — up to three — that the evidence you have actually supports. After Project 1 that is one project; later it is two or three.",
+    bringForward: "Your project record: Project 1 if you are here early, or every project record you have.",
+    prerequisite: "At least one project record with its artefacts.",
     why: "A portfolio built without knowing what question it answers becomes a gallery, and a gallery answers nothing.",
     teach: [
       "A reviewer is deciding whether you can be given real work.",
       "They skim first and read only if the skim earns it.",
-      "Decide the three claims your work supports before writing anything.",
-      "Every claim will be checked against an artefact.",
+      "Decide the claims your work supports before writing anything: up to three, fewer if one project is all you have.",
+      "Every claim will be checked against an artefact, and the artefact's evidence tier travels with it.",
       "Beautiful screens without reasoning read as decoration.",
     ],
     explanation: [
       "The reviewer's question is narrow: could this person be handed a real problem and make it better without constant supervision? Everything in the portfolio either helps answer that or takes up space. Knowing the question is what lets you cut.",
       "The first pass is a skim of a minute or two, and it decides whether there is a second pass. That means the top of each case study has to carry the problem, your role and the outcome, because that is all a skim will reach.",
-      "Writing your three claims first inverts the usual order and prevents the common failure, which is assembling everything you have and hoping a story emerges. Three claims — for example that you can turn research into a decision, that you repair work when testing shows it failing, and that you state limits — give every later choice a test.",
+      "Writing your claims first inverts the usual order and prevents the common failure, which is assembling everything you have and hoping a story emerges. Up to three claims — for example that you can turn research into a decision, that you repair work when testing shows it failing, and that you state limits — give every later choice a test. One project can support one or two of them; that is enough to start, and later projects add evidence rather than replacing it.",
+      "Every artefact carries its evidence tier, and the claim inherits it: real participant research, a self-pilot (you testing your own work), a simulation (scripted or made-up responses), or supplied practice (material the course gave you). All four are legitimate work. Only the first is research with people, and a claim that rests on practice says so.",
       "Craft still matters, but craft alone reads as decoration in this discipline, because a screen cannot show whether the problem was worth solving. Your visual background is an advantage only when it sits alongside the reasoning.",
     ],
     misconception:
-      "“The portfolio should show everything I have done.” It should support three claims. Work that supports none of them makes the portfolio longer and the claims weaker.",
+      "“The portfolio should show everything I have done.” It should support a few claims. Work that supports none of them makes the portfolio longer and the claims weaker.",
     example:
-      "Three claims chosen: I turn research into a decision that can be traced; I test and repair rather than defending the first version; I state what my work does not establish. Each was written with the project that best supports it and the specific artefact behind it — the synthesis and framing page for the first, the repair-and-re-test record for the second, and the limitations page for the third. A fourth candidate claim, about building interfaces from a system, was dropped for now because the evidence was thinner and three is what a skim can hold.",
+      "Written straight after a first project, with one project record: two claims chosen. I turn research into a decision that can be traced, backed by the synthesis page (real participant research, three people); and I test and repair rather than defending the first version, backed by the repair-and-re-test record (two testers). A third candidate — I state what my work does not establish — was held back because the limitations page was still a draft. A fourth, about building interfaces from a system, was dropped because nothing in this project shows it. Later, with the independent project, the held claim gained its artefact and became the third.",
     freeToolPath:
       "Writing only. No portfolio tool, template or subscription is needed at this stage, and choosing one now would be premature.",
     outputs: [
       "A written statement of what a reviewer is deciding",
-      "Three claims your portfolio will support",
-      "The project and artefact behind each claim",
+      "Up to three claims your evidence supports — one project is enough to start",
+      "The project, artefact and evidence tier behind each claim",
       "A list of work that supports none of them",
     ],
     steps: [
@@ -95,17 +98,17 @@ export const module19: Lesson[] = [
       },
       {
         minutes: 30,
-        title: "Choose three claims",
+        title: "Choose your claims",
         instructions: [
-          "List candidate claims your three projects could support.",
-          "Choose three, preferring the ones with the strongest artefacts.",
+          "List candidate claims your project or projects could support.",
+          "Choose up to three, preferring the ones with the strongest artefacts.",
         ],
       },
       {
         minutes: 25,
         title: "Attach the evidence",
         instructions: [
-          "For each claim, name the project and the specific artefact.",
+          "For each claim, name the project, the specific artefact and its evidence tier.",
           "Reject any claim whose artefact you cannot point to.",
         ],
       },
@@ -113,7 +116,7 @@ export const module19: Lesson[] = [
         minutes: 20,
         title: "Identify the surplus",
         instructions: [
-          "List work that supports none of the three claims.",
+          "List work that supports none of your claims.",
           "Mark it as excluded rather than deleting it.",
         ],
       },
@@ -121,7 +124,7 @@ export const module19: Lesson[] = [
         minutes: 15,
         title: "Sanity-check the skim",
         instructions: [
-          "Ask whether a ninety-second skim would reach all three claims.",
+          "Ask whether a ninety-second skim would reach every claim.",
           "Save the claims and their evidence.",
         ],
       },
@@ -138,6 +141,11 @@ export const module19: Lesson[] = [
           "Because otherwise you assemble everything you have and hope a story emerges. Claims first give every later choice a test to pass.",
       },
       {
+        question: "Why stop at the claims one project can support?",
+        answer:
+          "Because a claim stretched over thin evidence fails at the first question. One project with two supported claims is a real start; the next project adds to it.",
+      },
+      {
         question: "Why exclude work rather than include it?",
         answer:
           "Because work supporting none of the claims lengthens the portfolio and dilutes the claims a skim can actually reach.",
@@ -145,8 +153,8 @@ export const module19: Lesson[] = [
     ],
     rubric: [
       "The reviewer's question is stated",
-      "Three claims are chosen deliberately",
-      "Each claim names a specific artefact",
+      "Claims are chosen deliberately, within what the evidence supports",
+      "Each claim names a specific artefact and its evidence tier",
       "Surplus work is identified and excluded",
     ],
     criteria: [
@@ -164,25 +172,25 @@ export const module19: Lesson[] = [
         recheck: "The statement.",
       },
       {
-        criterion: "Three claims are chosen deliberately",
-        evidence: "Exactly three claims, chosen from a longer list.",
+        criterion: "Claims are chosen deliberately, within what the evidence supports",
+        evidence: "One to three claims, chosen from a longer list — fewer when one project is all you have.",
         levels: [
           "No claims, or an undifferentiated list.",
-          "Three claims without alternatives considered.",
-          "Three chosen from candidates.",
-          "As adequate, and the rejected claims are recorded with reasons.",
+          "Claims chosen without alternatives considered, or stretched to three on thin evidence.",
+          "Up to three chosen from candidates, each supportable now.",
+          "As adequate, and the rejected or held-back claims are recorded with reasons.",
         ],
         remediation:
-          "List every claim your projects could support and choose the best-evidenced three.",
+          "List every claim your project or projects could support and keep only the best-evidenced, up to three.",
         recheck: "The claims list.",
       },
       {
-        criterion: "Each claim names a specific artefact",
-        evidence: "A project and a named artefact behind each claim.",
+        criterion: "Each claim names a specific artefact and its evidence tier",
+        evidence: "A project, a named artefact and its tier — real participant research, self-pilot, simulation or supplied practice — behind each claim.",
         levels: [
           "Claims with no evidence attached.",
-          "Projects named, artefacts vague.",
-          "Specific artefacts named.",
+          "Projects named, artefacts vague, or tiers missing.",
+          "Specific artefacts named with their tiers.",
           "As adequate, and at least one candidate claim was dropped for weak evidence.",
         ],
         remediation:
@@ -199,13 +207,13 @@ export const module19: Lesson[] = [
           "As adequate, and it is kept aside rather than deleted.",
         ],
         remediation:
-          "Test each piece of work against the three claims and set aside what fails.",
+          "Test each piece of work against your claims and set aside what fails.",
         recheck: "The exclusion list.",
       },
     ],
     repairs: [
       "If the reviewer's question is unstated, write it before continuing.",
-      "If claims outnumber three, choose by strength of evidence.",
+      "If claims outnumber three or outrun the evidence, choose by strength of evidence.",
       "If a claim has no artefact, drop it or find the evidence.",
       "If nothing was excluded, test each piece against the claims again.",
     ],
@@ -246,31 +254,31 @@ export const module19: Lesson[] = [
     guided: true,
     title: "Auditing what you actually kept",
     objective:
-      "Audit all three project records against the three claims, and record precisely which evidence exists, which is thin and which is missing.",
-    bringForward: "Your three claims and three project records.",
+      "Audit every project record you have — two on the core path, three on the full library — against your claims, and record precisely which evidence exists, which is thin, which is missing, and each item's evidence tier.",
+    bringForward: "Your claims and every project record you have.",
     prerequisite: "The claims and evidence map from lesson 1.",
     why: "You can only write case studies from what you kept, and finding the gaps now is cheaper than discovering them mid-sentence.",
     teach: [
       "Audit the records, not your memory of the projects.",
-      "Mark each piece of evidence strong, thin or missing.",
+      "Mark each piece of evidence strong, thin or missing, and label its tier: real participant research, self-pilot, simulation or supplied practice.",
       "Missing evidence is a finding, not a reason to embellish.",
       "Some gaps can still be closed; identify those first.",
       "Never reconstruct an artefact and present it as contemporaneous.",
     ],
     explanation: [
       "Memory is generous about your own work. The audit has to be done against the files: open each folder, list what is there, and mark what each item can support. The difference between what you remember doing and what you can show is usually larger than expected and always worth knowing.",
-      "Three states are enough. Strong means an artefact a reviewer could read and believe; thin means it exists but is partial or undated; missing means there is nothing. Anything thin or missing constrains what the case study can say.",
+      "Three states are enough. Strong means an artefact a reviewer could read and believe; thin means it exists but is partial or undated; missing means there is nothing. Anything thin or missing constrains what the case study can say. Strength is separate from tier: a strong self-pilot record is still a self-pilot, and a demonstration with made-up records is never evidence of real use.",
       "The temptation at this point is to redraw a flow, rewrite notes more neatly or produce the synthesis you meant to do. Making a missing artefact now and presenting it as part of the project is fabrication, and it is the specific dishonesty this discipline punishes hardest because it is so easy to check.",
-      "Some gaps are genuinely closable. If the third project's participant is still reachable, a short follow-up conversation is real new evidence, dated today, and can be presented as exactly that. Closing a gap honestly and closing it by invention look similar on the page and are entirely different acts.",
+      "Some gaps are genuinely closable. If a project's participant is still reachable, a short follow-up conversation is real new evidence, dated today, and can be presented as exactly that. Closing a gap honestly and closing it by invention look similar on the page and are entirely different acts.",
     ],
     misconception:
       "“I will tidy up the artefacts before showing them.” Tidying presentation is fine; producing a document that never existed and dating it to the project is not. The line is whether the evidence existed when you claim it did.",
     example:
-      "The audit covered three projects and produced a table of twenty-six artefacts. Strong: two synthesis pages, one repair-and-re-test record, one limitations page, one handover package. Thin: the first project's session notes, which were written two days later and say so; the second project's flow, which is undated. Missing: any accessibility evidence from projects one and two, and any before-measurement from project two. Two gaps were closable — a keyboard pass on the second project's prototype, run today and labelled with today's date, and a short follow-up with the shop owner. The rest were recorded as permanent limits.",
+      "The audit covered two projects on the core path — Project 1 and the independent project — and produced a table of nineteen artefacts, each with its tier. Strong: two synthesis pages (real participant research), one repair-and-re-test record, one limitations page, one handover package. Thin: Project 1's session notes, which were written two days later and say so, and its undated flow. Labelled by tier: the status-page screenshots are a demonstration with made-up records, never real use. Missing: any accessibility evidence from Project 1. Two gaps were closable — a keyboard pass on Project 1's prototype, run today and labelled with today's date, and a short follow-up with the shop owner. The rest were recorded as permanent limits.",
     freeToolPath: "A table in a text file and the project folders.",
     outputs: [
-      "An audit table of every artefact across three projects",
-      "Each item marked strong, thin or missing",
+      "An audit table of every artefact across your projects",
+      "Each item marked strong, thin or missing, with its evidence tier",
       "A list of closable gaps with dates",
       "A list of permanent gaps to be stated as limits",
     ],
@@ -287,7 +295,7 @@ export const module19: Lesson[] = [
         minutes: 25,
         title: "Mark the strength",
         instructions: [
-          "Mark each item strong, thin or missing.",
+          "Mark each item strong, thin or missing, and label its evidence tier.",
           "Note why anything is thin, including undated or late artefacts.",
         ],
       },
@@ -295,7 +303,7 @@ export const module19: Lesson[] = [
         minutes: 25,
         title: "Test against the claims",
         instructions: [
-          "For each of your three claims, list the strong evidence available.",
+          "For each of your claims, list the strong evidence available.",
           "Flag any claim that rests only on thin evidence.",
         ],
       },
@@ -335,7 +343,7 @@ export const module19: Lesson[] = [
     ],
     rubric: [
       "The audit is drawn from the files",
-      "Every artefact is marked strong, thin or missing",
+      "Every artefact is marked strong, thin or missing, with its tier",
       "Claims are tested against available evidence",
       "Closable and permanent gaps are separated",
     ],
@@ -353,8 +361,8 @@ export const module19: Lesson[] = [
         recheck: "The inventory.",
       },
       {
-        criterion: "Every artefact is marked strong, thin or missing",
-        evidence: "A three-state mark on each item with reasons for thin ones.",
+        criterion: "Every artefact is marked strong, thin or missing, with its tier",
+        evidence: "A three-state mark and an evidence tier on each item, with reasons for thin ones.",
         levels: [
           "Unmarked.",
           "Marked without reasons.",
@@ -433,27 +441,27 @@ export const module19: Lesson[] = [
     guided: true,
     title: "Deciding what each case study is for",
     objective:
-      "Assign each of the three projects a single job in the portfolio, and write the one-sentence promise each case study makes.",
+      "Assign each project — two on the core path, three on the full library — a single job in the portfolio, and write the one-sentence promise each case study makes.",
     bringForward: "Your claims and your audit table.",
-    prerequisite: "The audit table and the three claims.",
-    why: "Three case studies that all say the same thing are one case study repeated, and reviewers notice.",
+    prerequisite: "The audit table and your claims.",
+    why: "Case studies that all say the same thing are one case study repeated, and reviewers notice.",
     teach: [
       "Give each case study one job, matched to its strongest evidence.",
       "Write the promise as one sentence a reader could check.",
       "Order them so the strongest is first.",
-      "Cover different skills across the three, not the same one three times.",
+      "Cover different skills across the case studies, not the same one twice.",
       "Decide the length each deserves; they need not be equal.",
     ],
     explanation: [
-      "One job per case study is the discipline that makes three feel like a portfolio rather than an archive. If project one has the best research trail and project three has the only measurement, those are their jobs, and everything in each is selected to serve it.",
-      "The promise sentence is what the case study will demonstrate, written so it could be checked. “Shows that I can turn five conversations into a framed problem and a decision” is checkable; “shows my UX process” is not.",
+      "One job per case study is the discipline that makes two or three feel like a portfolio rather than an archive. If one project has the best research trail and another has the only measurement, those are their jobs, and everything in each is selected to serve it.",
+      "The promise sentence is what the case study will demonstrate, written so it could be checked. “Shows that I can turn three conversations into a framed problem and a decision” is checkable; “shows my UX process” is not.",
       "Order matters because the skim is sequential and attention decays. The strongest case study goes first even if it is not the most recent, and the weakest may not belong in the portfolio at all.",
       "Equal length is a mistake beginners make out of fairness. A project with a thin record deserves a shorter, more focused case study, and the shortness itself reads as judgement rather than as a gap.",
     ],
     misconception:
-      "“Each case study should show my whole process.” Then all three show the same thing and the reader learns one fact about you three times. Give each a job the others do not do.",
+      "“Each case study should show my whole process.” Then every case study shows the same thing and the reader learns one fact about you twice or three times. Give each a job the others do not do.",
     example:
-      "Project three took the research-to-decision job because its synthesis and framing were strongest and it had the only measurement. Project two took the iteration job, built entirely around a repair that failed on the first attempt and worked on the second. Project one took the craft-and-constraint job, kept short because its records were thin, focused on the interface work and the accessibility repair, and explicit that its research was a single conversation. Order: three, two, one. Lengths planned at roughly 900, 700 and 400 words.",
+      "On the core path, two case studies. The independent project took the research-to-decision job because its synthesis and framing were strongest and it had the only measurement. Project 1 took the iteration job, built around a repair that failed on the first attempt and worked on the second, kept shorter because its notes were thin. Order: independent project first. Lengths planned at roughly 900 and 600 words. A learner who also did Project 2 gives it a third job, such as craft under constraint, kept short if its records are thin.",
     freeToolPath: "Writing only.",
     outputs: [
       "One job assigned to each case study",
@@ -498,7 +506,7 @@ export const module19: Lesson[] = [
         minutes: 20,
         title: "Check for repetition",
         instructions: [
-          "Read the three promises together.",
+          "Read the promises together.",
           "If two overlap, change one job or drop a case study.",
         ],
       },
@@ -529,15 +537,15 @@ export const module19: Lesson[] = [
     criteria: [
       {
         criterion: "Each case study has a distinct job",
-        evidence: "Three jobs, none duplicated.",
+        evidence: "One job per case study, none duplicated.",
         levels: [
-          "All three show the same thing.",
+          "Every case study shows the same thing.",
           "Two overlap.",
-          "Three distinct jobs.",
+          "A distinct job for each case study.",
           "As adequate, and each job matches that project's strongest evidence.",
         ],
         remediation:
-          "Compare the three jobs and reassign until none repeats another.",
+          "Compare the jobs and reassign until none repeats another.",
         recheck: "The job assignments.",
       },
       {
@@ -586,7 +594,7 @@ export const module19: Lesson[] = [
       "If lengths are equal, make them follow the evidence.",
     ],
     portfolio:
-      "The three promises are the contract each case study has to keep, and the last lesson checks them again before publishing.",
+      "The promises are the contract each case study has to keep, and the last lesson checks them again before anything is shared.",
     resource: portfolioProcess,
     resources: [
       {
@@ -602,7 +610,7 @@ export const module19: Lesson[] = [
         ...roleDescription,
         section: "The responsibilities a designer is expected to cover.",
         purpose:
-          "Helps spread the three jobs across different responsibilities.",
+          "Helps spread the jobs across different responsibilities.",
         minutes: "30–45",
         limits:
           "Free reading, no account. Verified 2026-09-06. One employer's expectations; treat it as an example, not as the market.",
@@ -620,41 +628,42 @@ export const module19: Lesson[] = [
     guided: true,
     title: "The case study skeleton",
     objective:
-      "Write the first case study to a fixed structure — problem, evidence, decision, iteration, limits — with every claim traced to an artefact.",
-    bringForward: "Your strongest project and its promise sentence.",
-    prerequisite: "The promise and audit for your strongest project.",
+      "Write a first, short case study from one project — the editable template supplied — to a fixed argument: problem, evidence, decision, iteration, limits, with every claim traced to an artefact and its evidence tier.",
+    bringForward: "Your strongest project — Project 1 if you are here early — and the claims from lesson 1.",
+    prerequisite: "One project record and your claims.",
     why: "A structure stops the case study becoming a chronology, which is the form most junior portfolios take and the one reviewers skip.",
     teach: [
       "Five sections: problem, evidence, decision, iteration, limits.",
       "Lead with the outcome and the problem, not with the process.",
-      "Every claim names its artefact.",
+      "Every claim names its artefact and that artefact's evidence tier.",
       "Show one decision in depth rather than every decision briefly.",
       "The limits section is not optional.",
     ],
     explanation: [
       "The five sections work because they answer the reviewer's questions in order: what was wrong, how do you know, what did you do about it, what happened when you tested it, and what does this not prove. A chronology answers none of them and asks the reader to do the work.",
       "Leading with problem and outcome respects the skim. The reader who stops after two paragraphs should still know what the project was and what came of it; the reader who continues gets the reasoning.",
-      "Tracing claims to artefacts is the mechanical check from m18 applied to prose. Each assertion either has a file behind it or gets weakened. Doing it while writing is far easier than retrofitting it later.",
+      "Tracing claims to artefacts is a mechanical check applied to prose: each assertion either has a file behind it or gets weakened. Doing it while writing is far easier than retrofitting it later. Say each artefact's tier — real participant research, self-pilot, simulation or supplied practice — where the claim is made.",
+      "You do not need a portfolio tool. Open the editable case-study template supplied with this lesson (starters/m19/case-study-template.html on the course site), save a copy in your project folder, and edit it in any text editor; the annotated example beside it shows what credible sections look like, and one weak claim with its repair. The template's nine headings hold the five-part argument: problem and evidence in the first four, decision in the fifth and sixth, iteration in the seventh, outcome in the eighth, and limits in the last. Unfinished headings can stay as stated gaps.",
       "Depth over breadth: one decision explained properly — the options, the evidence, the trade-off, the thing you gave up — teaches a reviewer more than eight decisions listed. It is also the part they will ask about in an interview, so choose one you can defend.",
     ],
     misconception:
       "“The case study should follow the order I did the work in.” The work's order was messy and full of dead ends. The reader needs the reasoning, arranged for understanding, with the dead ends kept where they are instructive.",
     example:
-      "The first case study runs: problem, in the shop owner's words with the count of interrupted calls; evidence, five participants, what was found, what contradicted, and the exclusions; decision, one framed problem and the not-building list, with the appetite; iteration, the wording repair that failed for one of two re-testers and what that meant; limits, the study and design limits page in short form. Nineteen claims, each with a named artefact. One claim about the owner's time saved was cut because nothing measured it.",
-    freeToolPath: "A Markdown file. No portfolio platform is required yet.",
+      "A first case study from one project, written in the template: problem, in the shop owner's words with his estimate of six to ten progress calls a day, marked as his estimate; evidence, three research participants, what was found, what contradicted, and the exclusions; decision, one framed problem and the not-building list, with the appetite; iteration, the wording repair that failed for one of two re-testers, from a page that was a demonstration with made-up jobs; limits, in short form. Nineteen claims, each with a named artefact and its tier. One claim about the owner's time saved was cut because nothing measured it.",
+    freeToolPath: "The supplied single-file HTML template, or a Markdown file, edited in any text editor. No portfolio platform is required.",
     outputs: [
-      "One case study in five sections",
+      "One short case study from one project, in the template or five sections",
       "Problem and outcome in the first two paragraphs",
       "One decision explained in depth",
-      "A claim-to-artefact trace for the whole piece",
+      "A claim-to-artefact trace, with evidence tiers, for the whole piece",
     ],
     steps: [
       {
         minutes: 25,
         title: "Draft the problem",
         instructions: [
-          "Write the problem in the person's words, with a count if you have one.",
-          "State the outcome in the same opening.",
+          "Open the case-study template and save a copy in your project folder, or start a Markdown file.",
+          "Write the problem in the person's words, with a count if you have one, and the outcome in the same opening.",
         ],
       },
       {
@@ -662,7 +671,7 @@ export const module19: Lesson[] = [
         title: "Write the evidence section",
         instructions: [
           "Give participant counts, the key findings and one contradiction.",
-          "Include the exclusions.",
+          "Include the exclusions, and label the evidence tier.",
         ],
       },
       {
@@ -685,7 +694,7 @@ export const module19: Lesson[] = [
         minutes: 20,
         title: "Trace the claims",
         instructions: [
-          "List every assertion and name its artefact.",
+          "List every assertion and name its artefact and evidence tier.",
           "Weaken or cut anything unsupported.",
         ],
       },
@@ -711,7 +720,7 @@ export const module19: Lesson[] = [
       "The five sections are present and in order",
       "Problem and outcome appear in the opening",
       "One decision is explained in depth",
-      "Every claim traces to an artefact",
+      "Every claim traces to an artefact and its tier",
     ],
     criteria: [
       {
@@ -753,8 +762,8 @@ export const module19: Lesson[] = [
         recheck: "The decision section.",
       },
       {
-        criterion: "Every claim traces to an artefact",
-        evidence: "A claim list with artefacts named.",
+        criterion: "Every claim traces to an artefact and its tier",
+        evidence: "A claim list with artefacts and evidence tiers named.",
         levels: [
           "No trace performed.",
           "Traced informally.",
@@ -773,7 +782,7 @@ export const module19: Lesson[] = [
       "If claims are untraced, trace them and cut what fails.",
     ],
     portfolio:
-      "This is the first of the three case studies and the template for the other two.",
+      "This is your first case study, written from one project. It becomes the model for the next, and it improves as better evidence arrives.",
     resource: sharing,
     resources: [
       {
@@ -809,8 +818,8 @@ export const module19: Lesson[] = [
     title: "Stating your role without inflating it",
     objective:
       "Write an accurate role statement for each project, distinguishing self-directed practice from paid or team work, and name every person who contributed.",
-    bringForward: "Your three projects and their records.",
-    prerequisite: "The three project records.",
+    bringForward: "Your project or projects and their records — one is enough if you are here early.",
+    prerequisite: "At least one project record.",
     why: "Role inflation is the most commonly detected dishonesty in portfolios, and the easiest to avoid.",
     teach: [
       "Say plainly whether the work was paid, course or self-directed.",
@@ -821,17 +830,17 @@ export const module19: Lesson[] = [
     ],
     explanation: [
       "The category comes first: paid client work, employment, course exercise or self-directed practice. Reviewers ask this within the first two questions, and having it already on the page converts a suspicious question into a settled fact.",
-      "Naming what others did protects you. If the shop owner updated the page, if a friend who writes code helped with the timing logic, if a reviewer's critique produced a change, say so. It costs you nothing and its absence, discovered later, costs everything.",
+      "Naming what others did protects you. If the shop owner kept the tally sheet, if a friend who writes code helped with the timing logic, if a reviewer's critique produced a change, say so. It costs you nothing and its absence, discovered later, costs everything.",
       "The grammatical tell is “we”. Solo projects written in the first person plural read as team projects, and reviewers have learned to probe it. If you were alone, write “I”; if there were two of you, say so and say who did what.",
-      "Self-directed work is not a lesser category. A project run alone, with real participants and honest limits, demonstrates more initiative than a team project where your contribution was two screens. The only thing that damages it is presenting it as something else.",
+      "Self-directed work is not a lesser category. A project run alone, with honest limits, demonstrates more initiative than a team project where your contribution was two screens — and so does a course project on supplied practice material, labelled as practice. The only thing that damages either is presenting it as something else.",
     ],
     misconception:
       "“Saying it was a course project will make it count for less.” Saying nothing and being asked is far worse. A labelled self-directed project with real evidence beats an ambiguously framed one every time.",
     example:
-      "Project three: self-directed practice, unpaid, conducted with the owner's agreement. I did the research, synthesis, design, build and testing. The owner arranged access to two customers and updated the page during the trial. A friend who writes software reviewed the HTML and corrected a date-handling bug — named with their permission. Two reviewers critiqued the work; one comment changed the wording. First person singular throughout, checked by searching the draft for “we”, which appeared four times and was wrong each time.",
+      "The repair-shop project: self-directed practice, unpaid, conducted with the owner's agreement. I did the research, synthesis, design, the demonstration build and the testing. The owner arranged access to two customers, kept the tally sheet in both counting weeks and changed how he wrote job slips. A friend who writes software reviewed the HTML and corrected a date-handling bug — credited by role, at their request. Two reviewers critiqued the work; one comment changed the wording. First person singular throughout, checked by searching the draft for “we”, which appeared four times and was wrong each time.",
     freeToolPath: "Writing, plus a search of your own draft.",
     outputs: [
-      "A category for each project: paid, course or self-directed",
+      "A category for each project you show — paid, course or self-directed — with practice material labelled",
       "A statement of what you did and what others did",
       "Contributors credited with permission",
       "A draft checked for false plurals",
@@ -1011,12 +1020,12 @@ export const module19: Lesson[] = [
       "Consent to take part in research is not consent to appear in a public portfolio, and the distinction is real rather than pedantic. Read what you told participants. If it said the notes would be used for the project, publishing a photograph of their shop goes beyond it, and the remedy is to ask them now.",
       "Anonymising well means removing what identifies while keeping what evidences. “Customer B, collecting a repaired phone, said she had already rung twice” is anonymous and specific. “A user expressed frustration” is anonymous and useless.",
       "Images are the common failure. A photograph of a workshop shows other people's property and possibly other people; a screenshot of a real record shows real names and numbers. Recreate with clearly synthetic data, label it as recreated, and say what was changed.",
-      "Where consent does not cover publication and cannot be obtained, describe the evidence rather than showing it. “Five sessions, notes retained privately” is honest and still supports a claim; publishing without cover is a breach whatever it adds.",
+      "Where consent does not cover publication and cannot be obtained, describe the evidence rather than showing it. “Five sessions, notes retained privately” is honest and still supports a claim; publishing without cover is a breach whatever it adds. Names removed does not mean anonymous: a job, a street or a turn of phrase can identify somebody to anybody who knows them.",
     ],
     misconception:
       "“It is anonymous, so it is fine.” Anonymity is one requirement. Consent for this use is another, and a photograph of an identifiable place fails both regardless of whether a name appears.",
     example:
-      "The consent script said notes would be used for a personal learning project and could be shown in a portfolio, which covered publication for two projects but not the first, where the wording stopped at the project. For the first project the research is described rather than shown. Participants appear as owner, customer A, B and C. Two quotations were trimmed to remove a street name and a phone model that identified an individual. The status page screenshot was recreated with an invented job number and the label “recreated with synthetic data; timings and job number are invented, layout unchanged”.",
+      "The consent script said notes would be used for a personal learning project and could be shown in a portfolio, which covered publication for the independent project but not Project 1, where the wording stopped at the project. For Project 1 the research is described rather than shown. In the repair-shop case study, participants appear as the owner, customer A and customer B, and testers as outside testers 1 to 3. Two quotations were trimmed to remove a street name and a phone model that identified an individual. The status-page screenshots needed no recreation — the page only ever held made-up jobs — and carry the label “demonstration with made-up records; never in real use”. A photograph of a real job slip was recreated with invented details and labelled as such.",
     freeToolPath:
       "Text editing and any image editor you already have. Recreation with synthetic data needs no new tool.",
     outputs: [
@@ -1187,9 +1196,9 @@ export const module19: Lesson[] = [
     guided: true,
     title: "Showing the work, and what an image cannot prove",
     objective:
-      "Choose and caption the images for all three case studies so each one carries an argument rather than decorating the page.",
+      "Choose and caption the images for every case study — two on the core path, three on the full library — so each one carries an argument rather than decorating the page.",
     bringForward: "Your artefacts, sketches, screens and records.",
-    prerequisite: "The three case studies in draft.",
+    prerequisite: "Your case studies in draft.",
     why: "Images are the fastest way to communicate and the easiest way to imply something you have not shown.",
     teach: [
       "Every image needs a reason to be there and a caption that says it.",
@@ -1207,7 +1216,7 @@ export const module19: Lesson[] = [
     misconception:
       "“More images make the case study more convincing.” Unargued images make it longer. One before-and-after pair with a caption that names the test result does more than twelve screens.",
     example:
-      "Project three keeps six images: the paper flow with the failure branches; a photograph of the synthesis cards, recreated because the originals had a participant's name; the exception table; the status page before and after the wording repair, captioned with the re-test result including the person who still read it as a promise; and the handover card. Twelve other images were cut, including four screens that showed nothing the flow did not. Every caption states an argument, and every image has alternative text written to carry the same information.",
+      "The repair-shop case study keeps six images: the paper flow with the failure branches; a photograph of the synthesis cards, recreated because the originals had a participant's name; the exception table; the status page before and after the wording repair, captioned with the re-test result including the person who still read it as a promise, and labelled a demonstration with made-up jobs; and the handover card. Twelve other images were cut, including four screens that showed nothing the flow did not. Every caption states an argument, and every image has alternative text written to carry the same information.",
     freeToolPath:
       "A phone camera for paper work and your existing editor for recreations. No stock imagery, mockup generator or paid template is needed.",
     outputs: [
@@ -1378,30 +1387,31 @@ export const module19: Lesson[] = [
     guided: true,
     title: "Writing the outcome when there is no outcome",
     objective:
-      "Write an honest outcome section for each case study, using counts where you have them and saying plainly where you have none.",
-    bringForward: "Your measurement records and limitations pages.",
-    prerequisite: "The measurement and limits material from all three projects.",
+      "Write an honest outcome section for each case study — starting with one project — using counts where you have them, saying plainly where you have none, and labelling every result's evidence tier.",
+    bringForward: "Your measurement records and limitations pages — from one project if you are here early.",
+    prerequisite: "The measurement and limits material from at least one project.",
     why: "The outcome section is where portfolios most often stop being true, because it is the section everyone feels they must fill.",
     teach: [
       "Report what you measured, in counts, with the period.",
       "Where nothing was measured, say so in one plain sentence.",
       "Do not convert a small count into a percentage.",
-      "Process outcomes are legitimate: a decision changed, a repair worked.",
+      "Process outcomes are legitimate: a decision changed, a repair worked — labelled with their tier.",
       "Never claim business impact you did not observe.",
     ],
     explanation: [
-      "Where you have counts, give them with the period and the conditions, exactly as m18 required. Eleven calls in five days becoming four in five days, with the public holiday named, is a real outcome and reads as one because of the detail rather than despite it.",
+      "Where you have counts, give them with the period and the conditions, exactly as the measurement lessons required. Eleven progress calls in five working days becoming seven in the next five, after the slip wording changed, with the public holiday named, is a real outcome and reads as one because of the detail rather than despite it.",
       "Where you measured nothing, one plain sentence closes the section: the design was not deployed and no measurement was taken. A reviewer reads that as accuracy. What they read as inaccuracy is a paragraph of hedged language implying an improvement that was never observed.",
       "The percentage temptation is strongest here and should be refused hardest. A rate derived from single-digit counts looks like a business result and is a claim you would have to withdraw the moment anyone asked how many people that was.",
-      "Process outcomes count. “The test showed two of three people reading the status as a promise, so the wording changed and one of two re-testers still did” is an outcome about the work. It is smaller than a business result and it is true, which is the trade this whole course makes.",
+      "Process outcomes count. “A tester who had never heard of the project read the time as a promise, so the wording changed and one of two re-testers still did” is an outcome about the work. It is smaller than a business result and it is true, which is the trade this whole course makes.",
+      "Label the tier of every outcome. A demonstration with made-up records has no real-use outcome at all — say so; a self-pilot result is your own walkthrough; a simulation used scripted responses; supplied practice was the course's material. None of these becomes impact by being written up well.",
     ],
     misconception:
       "“Without a measurable result the project looks like a failure.” Without an honest result the whole portfolio looks unreliable. A project with no measurement, plainly stated, costs you one sentence; a fabricated result costs you the interview.",
     example:
-      "Three outcome sections. Project three: calls about progress fell from eleven over five working days to four over the following five, one of which was a public holiday; the owner continued using the page for a month. Project two: not deployed; the outcome is the repair loop — two of three testers failed the task before the change, one of three after, on the same task with different people. Project one: no measurement of any kind, stated in one sentence, with the note that the accessibility repair was verified only by my own keyboard check and never tested with anyone who uses a screen reader.",
+      "Written first for one project, straight after Project 1: not deployed; the outcome is the repair loop — two of three testers failed the task before the change, one of three after, on the same task with different people (real participant testing). Later, the repair-shop project: calls about progress went from eleven over five working days to seven over the following five, one of which was a public holiday, after the owner began writing a window on job slips; the status page itself was a demonstration with made-up jobs and was never in real use, which the section says. A project with no measurement of any kind gets one sentence, with the note that its accessibility repair was verified only by my own keyboard check (a self-pilot) and never tested with anyone who uses a screen reader.",
     freeToolPath: "Your existing records and plain writing.",
     outputs: [
-      "An outcome section per case study",
+      "An outcome section per case study, beginning with one project",
       "Counts with periods and conditions where measured",
       "A plain sentence where nothing was measured",
       "No percentages derived from small counts",
@@ -1411,8 +1421,8 @@ export const module19: Lesson[] = [
         minutes: 25,
         title: "Gather what exists",
         instructions: [
-          "Collect every measurement from the three projects.",
-          "Note the period and conditions for each.",
+          "Collect every measurement from the project or projects you are writing up.",
+          "Note the period, the conditions and the evidence tier for each.",
         ],
       },
       {
@@ -1567,13 +1577,13 @@ export const module19: Lesson[] = [
     guided: true,
     title: "Making the portfolio itself usable",
     objective:
-      "Build and check the portfolio as a designed artefact: readable on a phone, navigable by keyboard, and honest about what you checked.",
-    bringForward: "Your three case studies and your accessibility practice.",
-    prerequisite: "Three drafted case studies.",
+      "Build and check the portfolio as a designed artefact — readable on your own phone without any hosting, navigable by keyboard, available as an accessible PDF, and honest about what you checked.",
+    bringForward: "Your case studies — two on the core path, three on the full library — and your accessibility practice.",
+    prerequisite: "Your drafted case studies.",
     why: "The portfolio is the one interface a reviewer will definitely use, and it is assessed whether or not you intended it to be.",
     teach: [
       "The portfolio is evidence of your craft before anyone reads a word.",
-      "Most reviewers arrive on a phone; design for that first.",
+      "Most reviewers arrive on a phone: check it on your own phone privately, through a PDF or the single file sent to yourself.",
       "Headings, focus order and contrast are the minimum.",
       "Run the checks you can and record what you could not check.",
       "Keep it plain; a heavy site is a slow site.",
@@ -1581,7 +1591,9 @@ export const module19: Lesson[] = [
     explanation: [
       "A reviewer forms an opinion from the page before reading the argument. A portfolio with unreadable line lengths, text over images and no visible focus contradicts every claim inside it, and the contradiction is noticed even when it is not articulated.",
       "Phones dominate first contact — a link opened between meetings, on a train, on a slow connection. That means the case study opening has to work in a narrow column, images must not be required to understand the argument, and the whole thing should load without waiting.",
-      "The minimum is the m13 and m14 work applied to your own site: a heading structure that makes sense read alone, a visible focus indicator, contrast that holds, alternative text on every image, and a keyboard path through the whole thing. These are the criteria you claim to apply, so failing them here is expensive.",
+      "You can read it on your own phone without publishing anything. Either print each page to PDF in your browser (Print, then choose Save as PDF as the destination) and send the PDF to yourself through a channel you already use, or send the single HTML file itself and open it from the phone's files, if its browser allows local files. A page that loads images from a separate folder will show them missing on the phone unless the folder travels too, which a PDF avoids. The browser's desktop phone view is emulation: useful for width, and no substitute for holding the phone.",
+      "A PDF can also be the version you send to a reviewer. Browser Save as PDF keeps your text as real text, but whether it adds the headings and reading-order tags that screen readers use varies by browser, so open the PDF and check the headings, the reading order and that link text says where it goes. Keep the HTML as the accessible master and treat the PDF as a copy.",
+      "The minimum is the accessibility work from Module 11 applied to your own site: a heading structure that makes sense read alone, a visible focus indicator, contrast that holds, alternative text on every image, and a keyboard path through the whole thing. These are the criteria you claim to apply, so failing them here is expensive.",
       "Record what you checked and what you did not, exactly as in the projects. A line saying you ran a keyboard pass and a contrast check but have not tested with a screen reader is more credible than silence, and far more credible than an accessibility badge you cannot support.",
     ],
     misconception:
@@ -1589,27 +1601,27 @@ export const module19: Lesson[] = [
     example:
       "The portfolio is a single HTML file per case study plus one index, sharing one stylesheet from the design system. Checks run and recorded: heading structure read alone; keyboard path through every link with a visible focus ring; contrast on text and on the focus indicator; alternative text on all nineteen images; the whole site opened on a phone over a mobile connection with images loading last. Not checked, and stated on the about page: no screen-reader testing and no testing with anyone who uses assistive technology.",
     freeToolPath:
-      "Plain HTML and CSS opened in a browser, as in m12. A portfolio does not require a builder, a template or a subscription.",
+      "The supplied single-file template, or your own plain HTML and CSS, opened in a browser; a browser's Save as PDF for the phone check and the PDF copy. A portfolio does not require a builder, a hosting account or a subscription.",
     outputs: [
-      "A portfolio that reads on a narrow screen",
+      "A portfolio that reads on your own phone, checked privately through a PDF or the single file",
       "A heading structure and keyboard path that work",
       "Alternative text and contrast checked",
-      "A written record of what was and was not checked",
+      "An accessible PDF copy checked for headings, reading order and link text, and a written record of what was and was not checked",
     ],
     steps: [
       {
         minutes: 30,
         title: "Build the pages",
         instructions: [
-          "Build an index and one page per case study.",
-          "Use your existing stylesheet rather than a new visual language.",
+          "Build an index and one page per case study, from the supplied template or your own HTML.",
+          "Use one stylesheet rather than a new visual language on every page.",
         ],
       },
       {
         minutes: 25,
         title: "Check the narrow screen",
         instructions: [
-          "Open it at phone width and read a whole case study.",
+          "Save a case study as PDF or send the single file to yourself, and read it whole on your own phone.",
           "Fix line lengths, image sizes and anything that requires zooming.",
         ],
       },
@@ -1625,8 +1637,8 @@ export const module19: Lesson[] = [
         minutes: 20,
         title: "Check the images",
         instructions: [
-          "Confirm alternative text on every image.",
-          "Confirm the argument survives with images off.",
+          "Confirm alternative text on every image and that the argument survives with images off.",
+          "Save a PDF copy and check its headings, reading order and link text.",
         ],
       },
       {
@@ -1656,23 +1668,23 @@ export const module19: Lesson[] = [
       },
     ],
     rubric: [
-      "The portfolio reads well on a narrow screen",
+      "The portfolio reads well on a real phone, checked without hosting",
       "Heading structure and keyboard path work",
       "Images have alternative text and contrast holds",
       "Checks performed and skipped are recorded",
     ],
     criteria: [
       {
-        criterion: "The portfolio reads well on a narrow screen",
-        evidence: "A case study read end to end at phone width.",
+        criterion: "The portfolio reads well on a real phone, checked without hosting",
+        evidence: "A case study read end to end on your own phone, opened from a PDF or the single file sent to yourself.",
         levels: [
-          "Requires zooming or horizontal scrolling.",
+          "Requires zooming or horizontal scrolling, or only checked by desktop emulation.",
           "Readable with effort.",
-          "Comfortable at phone width.",
+          "Comfortable on a real phone.",
           "As adequate, and it loads usefully before images arrive.",
         ],
         remediation:
-          "Fix line length and image sizing, then read it on a phone again.",
+          "Fix line length and image sizing, then send it to your phone again and read it there.",
         recheck: "The narrow-screen read.",
       },
       {
@@ -1776,7 +1788,7 @@ export const module19: Lesson[] = [
     misconception:
       "“I will just talk through the slides.” Slides read aloud are slower than reading and less clear than either. Prepare the spoken version as its own artefact with its own five points.",
     example:
-      "Ten minutes, five points: the shop owner's problem with the call count; five participants and the contradiction between speed and certainty; the decision to build a status page and the not-building list; the wording repair, its prediction, and the person who still read it as a promise; and the limits, including that nobody who stopped using the shop was reached. First recording ran fourteen minutes, spent four on context and said “about two thirds” once. Second recording ran ten and a half, opened with the count, and used the exact numbers.",
+      "Ten minutes, five points: the shop owner's problem with the call count; three research participants and the contradiction between speed and certainty; the decision to build a status page and the not-building list; the wording repair, its prediction, and the person who still read it as a promise; and the limits, including that nobody who stopped using the shop was reached. First recording ran fourteen minutes, spent four on context and said “about two thirds” once. Second recording ran ten and a half, opened with the count, and used the exact numbers.",
     freeToolPath:
       "A phone camera or the recorder you already have. No presentation software or meeting subscription is required.",
     outputs: [
@@ -1944,7 +1956,7 @@ export const module19: Lesson[] = [
     objective:
       "Prepare honest answers to the hardest questions your portfolio invites, and practise saying what you do not know.",
     bringForward: "Your case studies, limits and audit table.",
-    prerequisite: "The three case studies and the audit table.",
+    prerequisite: "Your case studies and the audit table.",
     why: "The questions that decide the outcome are the ones aimed at your weakest evidence, and they are predictable.",
     teach: [
       "List the questions your own limits invite.",
@@ -1962,7 +1974,7 @@ export const module19: Lesson[] = [
     misconception:
       "“A good answer defends the work.” A good answer tells the truth about the work. Interviewers are testing calibration more than results, and a well-defended overclaim fails that test completely.",
     example:
-      "Twelve questions were drawn from the three limitations pages, including: what do customers who never came back think; how do you know the page was used at all; was the fall in calls just a quiet week; why did you not test with a screen-reader user; and what would you do differently with a month. Each got a written answer conceding first. Two answers were “I do not know”, each with the smallest next step attached. All twelve were practised aloud; the quiet-week question was the one that produced hesitation, so it was rehearsed until the concession came first.",
+      "Twelve questions were drawn from the limitations pages, including: what do customers who never came back think; why did the page never go in front of real customers; was the fall in calls just a quiet week; why did you not test with a screen-reader user; and what would you do differently with a month. Each got a written answer conceding first. Two answers were “I do not know”, each with the smallest next step attached. All twelve were practised aloud; the quiet-week question was the one that produced hesitation, so it was rehearsed until the concession came first.",
     freeToolPath: "Your own records, writing and speaking aloud.",
     outputs: [
       "A question list drawn from your own limits",
@@ -2130,33 +2142,34 @@ export const module19: Lesson[] = [
     guided: true,
     title: "Final check and publishing",
     objective:
-      "Check the finished portfolio against its three promises and every honesty rule this course holds, then publish it deliberately.",
+      "Check the finished portfolio against its promises and every honesty rule this course holds, then share it deliberately: privately as a PDF or files, or — only if you choose — as a published site, checked on the day.",
     bringForward: "Everything from this module.",
-    prerequisite: "The complete portfolio and the three promises.",
+    prerequisite: "The complete portfolio and its promises.",
     why: "The last check is the only thing standing between an honest portfolio and one that quietly overclaims.",
     teach: [
       "Check each case study against the promise it made.",
       "Run a claim sweep across the whole portfolio, not per page.",
-      "Verify any hosting choice the way you verify a resource.",
+      "Sharing privately is complete; publishing is optional, and any host is verified on the day like a resource.",
       "Ask one person to read it cold and tell you what it says.",
-      "Publish deliberately, and record what you published and when.",
+      "Share or publish deliberately, and record what went where and when.",
     ],
     explanation: [
       "The promise check is mechanical: read the promise, read the case study, and decide whether a stranger would agree it was kept. A promise that is not kept means either the case study changes or the promise does, and the second option is usually right.",
       "Claims travel between pages. A number softened in one case study can appear inflated on the index page, and an about page written last is where unsupported summaries collect. Sweep the whole thing at once, including navigation, headings and the about page.",
-      "Hosting is a choice with the same properties as a resource: it has a cost, an account requirement and terms. Whatever you choose, check it against this course's rules — free without a card, no trial that expires into a charge — and record what you verified and when, because the answer changes over time.",
-      "A cold reader is the last useful instrument. Ask someone who does not know the projects to read it and tell you what you can do; the gap between their answer and your three claims is the portfolio's actual message, and it is usually not the one you intended.",
+      "Publishing is a choice, not a requirement. A PDF or the files sent privately to a reviewer is a complete portfolio. If you do publish, hosting has the same properties as a resource: a cost, an account requirement and terms. Check it against this course's rules — free without a card, no trial that expires into a charge — and record what you verified and when, because the answer changes over time.",
+      "One free route, checked on 5 October 2026 against GitHub's own documentation (docs.github.com/en/pages): GitHub Pages. GitHub Free costs nothing, and on it a Pages site must come from a public repository — everything you upload is public, and GitHub states that Pages sites are publicly available on the internet. Steps: create a free account; choose New repository, name it yourusername.github.io, set it to Public and create it; choose Add file, then Upload files, and upload index.html and your other pages; open Settings, then Pages, choose Deploy from a branch under Build and deployment, pick the main branch and the / (root) folder, and Save. GitHub says changes can take up to 10 minutes to publish. To unpublish, delete the repository (Settings, Danger Zone); GitHub notes that deleting a public repository does not delete copies others have forked. Re-check these terms yourself before publishing, and never upload consent records or raw research.",
+      "A cold reader is the last useful instrument. Ask someone who does not know the projects to read it and tell you what you can do; the gap between their answer and your claims is the portfolio's actual message, and it is usually not the one you intended.",
     ],
     misconception:
       "“It is finished when it looks finished.” It is finished when the promises are kept, the claims are supported, and a cold reader arrives at the message you intended.",
     example:
-      "The check produced eleven changes. Two promises were kept as written; one was rewritten, because the second case study promised to show a repair loop and actually showed a single change with no re-test, so the promise now says that. The claim sweep found three unsupported sentences on the index page and one on the about page, all softened. The hosting option was checked against the course's rules on the day of publishing and the verification date recorded. A cold reader said the portfolio showed someone who tests things and admits what did not work, which matched two claims of three; the third was strengthened in the index.",
+      "The check produced eleven changes. One promise was kept as written; one was rewritten, because the second case study promised to show a repair loop and actually showed a single change with no re-test, so the promise now says that. The claim sweep found three unsupported sentences on the index page and one on the about page, all softened, including one that called the demonstration page “launched”. The portfolio went to two reviewers as a PDF; publishing on GitHub Pages was checked against the course's rules on the day and the date recorded, then deferred. A cold reader said the portfolio showed someone who tests things and admits what did not work, which matched two claims of three; the third was strengthened in the index.",
     freeToolPath:
-      "The portfolio files, one conversation and a checklist. If a host requires a card or a trial that becomes a charge, choose another route or share the files directly.",
+      "The portfolio files, one conversation and a checklist. Sharing a PDF or the files privately needs no account; if a host requires a card or a trial that becomes a charge, choose another route or share the files directly.",
     outputs: [
       "A promise check per case study, with any promise rewritten",
       "A whole-portfolio claim sweep including the index and about pages",
-      "A verified, recorded hosting decision",
+      "A recorded sharing decision — private PDF or files, or a host verified on the day",
       "A cold reader's account of what the portfolio says",
     ],
     steps: [
@@ -2178,10 +2191,10 @@ export const module19: Lesson[] = [
       },
       {
         minutes: 20,
-        title: "Verify the hosting",
+        title: "Choose how to share it",
         instructions: [
-          "Check cost, account and terms against this course's rules.",
-          "Record what you verified and the date.",
+          "Decide between sharing privately — a PDF or the files — and publishing.",
+          "If publishing, check cost, account and public visibility against this course's rules on the day, and record what you verified and the date.",
         ],
       },
       {
@@ -2189,15 +2202,15 @@ export const module19: Lesson[] = [
         title: "Cold read",
         instructions: [
           "Ask someone unfamiliar to read it and say what you can do.",
-          "Compare their answer with your three claims.",
+          "Compare their answer with your claims.",
         ],
       },
       {
         minutes: 20,
-        title: "Publish and record",
+        title: "Share or publish, and record",
         instructions: [
-          "Publish deliberately and note the date and what was included.",
-          "Keep the version you published.",
+          "Share or publish deliberately and note the date, the place and what was included.",
+          "Keep the version you shared.",
         ],
       },
     ],
@@ -2215,13 +2228,13 @@ export const module19: Lesson[] = [
       {
         question: "Why treat hosting like a resource?",
         answer:
-          "Because it has a cost, an account requirement and terms that change. Verify it and record the date, as with any other source.",
+          "Because it has a cost, an account requirement and terms that change, and on a free plan everything may be public. Verify it on the day and record the date — or share privately instead.",
       },
     ],
     rubric: [
       "Each promise is checked and reconciled",
       "The claim sweep covers every page",
-      "The hosting decision is verified and recorded",
+      "The sharing decision is deliberate and recorded",
       "A cold reader's account is compared with the claims",
     ],
     criteria: [
@@ -2252,17 +2265,17 @@ export const module19: Lesson[] = [
         recheck: "The sweep record.",
       },
       {
-        criterion: "The hosting decision is verified and recorded",
-        evidence: "A dated note of cost, account requirement and terms.",
+        criterion: "The sharing decision is deliberate and recorded",
+        evidence: "A note of how the portfolio is shared — privately as a PDF or files, or published — and, if published, a dated check of cost, account and public visibility.",
         levels: [
-          "Unverified.",
+          "Published without checking, or shared without a record.",
           "Checked without recording.",
-          "Verified and dated.",
-          "As adequate, and an option requiring a card was rejected.",
+          "A private route recorded, or a host verified and dated.",
+          "As adequate, and what stays private is listed alongside.",
         ],
         remediation:
-          "Check the terms today and write down what you found and when.",
-        recheck: "The hosting note.",
+          "Write how you are sharing it; if publishing, check the terms today and write down what you found and when.",
+        recheck: "The sharing note.",
       },
       {
         criterion:
@@ -2283,11 +2296,11 @@ export const module19: Lesson[] = [
     repairs: [
       "If a promise is unkept, rewrite it to match the evidence.",
       "If the sweep skipped a page, sweep it.",
-      "If hosting is unverified, check the terms before publishing.",
+      "If a host is unverified, check the terms before publishing, or share privately.",
       "If nobody read it cold, find a reader before publishing.",
     ],
     portfolio:
-      "This is the portfolio itself: three case studies, one recorded walkthrough, a prepared question list, and a published version with its date.",
+      "This is the portfolio itself: two case studies on the core path or three on the full library, a recorded walkthrough, a prepared question list, and a shared or published version with its date.",
     resource: portfolioProcess,
     resources: [
       {

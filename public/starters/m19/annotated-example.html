@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Annotated example case study (fictional)</title>
+<!--
+  HaruCourse Module 19 · annotated example. Everything on this page is invented:
+  the library, the people, the counts and the files. It shows what credible case-study
+  sections look like, with a margin note beside each one, and one deliberately weak
+  claim with its repair. Do not copy its wording; copy its habits.
+-->
+<style>
+  :root { --paper: #fffdf8; --ink: #1f2a24; --muted: #46554c; --accent: #2f5d46; --line: #d8d2c4; --tint: #eef3ee; --note: #f6f0e3; --warn: #7a2e1f; }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 1.0625rem/1.6 Georgia, "Times New Roman", serif; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  main { max-width: 64rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+  .banner { background: var(--note); border: 2px dashed var(--accent); padding: 0.75rem 1rem; margin-bottom: 1.25rem; }
+  h1 { font-size: 1.7rem; line-height: 1.2; margin: 0.5rem 0; }
+  h2 { font-size: 1.25rem; color: var(--accent); margin: 0 0 0.4rem; }
+  .meta { color: var(--muted); font-size: 0.95rem; }
+  .tier { display: inline-block; font: 600 0.8rem/1.4 system-ui, sans-serif; background: var(--tint); color: #1f3d2e; border: 1px solid #b9cbbd; border-radius: 0.25rem; padding: 0 0.4rem; }
+  .evidence { display: block; font: 0.85rem/1.45 system-ui, sans-serif; color: var(--muted); }
+  .pair { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.5rem; padding: 1.25rem 0; border-top: 1px solid var(--line); }
+  .note { background: var(--note); border-left: 4px solid var(--accent); padding: 0.6rem 0.8rem; font: 0.92rem/1.5 system-ui, sans-serif; }
+  .note strong { display: block; margin-bottom: 0.2rem; }
+  .weak { border-left-color: var(--warn); }
+  .weak-claim { text-decoration: line-through; text-decoration-color: var(--warn); }
+  .repair { border: 1px solid var(--accent); padding: 0.4rem 0.6rem; margin-top: 0.4rem; }
+  @media (min-width: 52rem) {
+    .pair { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 1.5rem; }
+  }
+  @media print {
+    body { background: #fff; color: #000; font-size: 11pt; }
+    .pair { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); break-inside: avoid; page-break-inside: avoid; }
+    .note { background: none; border-left: 2px solid #000; }
+    .banner { border: 1px solid #000; background: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="banner"><strong>Fictional example.</strong> The library, every person, every number and every file named here are invented for teaching. The margin notes explain why each part is credible; one claim is deliberately weak, and its note shows the repair.</p>
+
+  <header>
+    <p class="meta">Self-directed course project · four weeks of evenings · I did the research, design and testing alone</p>
+    <h1>Members kept arriving for rooms that were not theirs: fixing the library’s booking confirmation</h1>
+    <p><strong>Promise:</strong> this case study shows a finding from three members becoming one wording decision, and what happened when the new wording was tested with people who had not seen it.</p>
+  </header>
+
+  <div class="pair">
+    <section aria-labelledby="h1s">
+      <h2 id="h1s">1. Context, users and business need</h2>
+      <p>A small community library lends two meeting rooms. Members book by email and receive a short confirmation. The librarian wants fewer clashes at the door without adding software she must maintain.</p>
+    </section>
+    <aside class="note" aria-label="Margin note on context"><strong>Why this is credible</strong>Two sentences of background, then the need in the organisation’s own terms. Nothing here is a claim that needs evidence beyond the brief.</aside>
+  </div>
+
+  <div class="pair">
+    <section aria-labelledby="h2s">
+      <h2 id="h2s">2. Research question, access, consent and limitations</h2>
+      <p>Question: what makes members turn up for the wrong room or the wrong time? I interviewed the librarian and three members she introduced, after explaining that notes would be used for this project and could appear, without names, in a portfolio.
+        <span class="evidence">Artefact: access-record.md · Tier: <span class="tier">Real participant research</span></span></p>
+      <p>Nobody who had stopped booking was reached, because recruitment went through the librarian.</p>
+    </section>
+    <aside class="note" aria-label="Margin note on research"><strong>Why this is credible</strong>It says who was reached, how, what they agreed to, and who is missing. The exclusion bounds every later claim about “members”.</aside>
+  </div>
+
+  <div class="pair">
+    <section aria-labelledby="h3s">
+      <h2 id="h3s">3. Sources, competitive alternatives and synthesis</h2>
+      <p>Three of three members had once arrived at the right time in the wrong room. The librarian believed the problem was members not reading emails; all three members described confirmations that named the room by a number they did not recognise.
+        <span class="evidence">Artefact: synthesis-page.md · Tier: <span class="tier">Real participant research</span></span></p>
+    </section>
+    <aside class="note" aria-label="Margin note on synthesis"><strong>Why this is credible</strong>Counts travel with the finding, and the contradiction between the librarian and the members is kept rather than averaged into one theme.</aside>
+  </div>
+
+  <div class="pair">
+    <section aria-labelledby="h4s">
+      <h2 id="h4s">4. Problem and evidence</h2>
+      <p>The confirmation names rooms by number (“Room 2”), while the building’s signs name them by colour. Chosen because three of three members raised it, and it explains the clashes the librarian sees.
+        <span class="evidence">Artefact: framing.md, read back to the librarian · Tier: <span class="tier">Real participant research</span></span></p>
+    </section>
+    <aside class="note" aria-label="Margin note on the problem"><strong>Why this is credible</strong>One problem, with the reason it was chosen and a read-back that the person could have disagreed with.</aside>
+  </div>
+
+  <div class="pair">
+    <section aria-labelledby="h5s">
+      <h2 id="h5s">5. Journey, structure and competing flows</h2>
+      <p>Two flows were compared: sending a map with every confirmation, or naming the room by the colour on its door. The map was rejected because it doubled the librarian’s work for each booking.</p>
+    </section>
+    <aside class="note" aria-label="Margin note on flows"><strong>Why this is credible</strong>A rejected alternative with a cost-based reason shows a decision, not just an output.</aside>
+  </div>
+
+  <div class="pair">
+    <section aria-labelledby="h6s">
+      <h2 id="h6s">6. Wireframes, UI, system and prototype decisions</h2>
+      <p>The decision in depth: lead with the colour and the time window (“Green Room, 6–8 pm”) and put the number second. It costs a slightly longer subject line, and it matches what members see at the door.</p>
+    </section>
+    <aside class="note" aria-label="Margin note on decisions"><strong>Why this is credible</strong>One decision with its trade-off named. The other choices would get a line each rather than a paragraph each.</aside>
+  </div>
+
+  <div class="pair">
+    <section aria-labelledby="h7s">
+      <h2 id="h7s">7. Testing, accessibility and revisions</h2>
+      <p>Prediction written first: nobody would name the wrong room. Two people who had never used the library read the old and new confirmations on a phone. With the old one, both named the wrong room; with the new one, one of two still did, because “Green” appeared twice in the email.
+        <span class="evidence">Artefact: test-record.md · Tier: <span class="tier">Real participant research</span></span></p>
+      <p>Checked: the email reads in order with images off, and the colour is always written as a word. Not checked: a screen reader.</p>
+    </section>
+    <aside class="note" aria-label="Margin note on testing"><strong>Why this is credible</strong>A prediction made in advance, a count, and a partial failure reported plainly. Checks run and not run are separated.</aside>
+  </div>
+
+  <div class="pair">
+    <section aria-labelledby="h8s">
+      <h2 id="h8s">8. Outcomes actually measured, or a proposed measurement plan</h2>
+      <p class="weak-claim">Members found the new confirmation much clearer, and clashes dropped.</p>
+      <div class="repair">
+        <p><strong>Repaired:</strong> Not yet in use; no outcome measured. Plan: the librarian tallies door clashes for four opening days before the new wording and four after, with the same tally sheet.
+          <span class="evidence">Artefact: measurement-plan.md · Tier: <span class="tier">Proposed, not measured</span></span></p>
+      </div>
+    </section>
+    <aside class="note weak" aria-label="Margin note on the weak claim"><strong>The deliberately weak claim</strong>“Much clearer” rests on two testers, and “clashes dropped” on nothing at all: the wording was never used for real. The repair says what happened, what did not, and how it would be measured.</aside>
+  </div>
+
+  <div class="pair">
+    <section aria-labelledby="h9s">
+      <h2 id="h9s">9. Trade-offs, reflection and next questions</h2>
+      <p>Next: remove the second “Green” from the email and re-test with two new people; reach one member who stopped booking.</p>
+    </section>
+    <aside class="note" aria-label="Margin note on reflection"><strong>Why this is credible</strong>Each limit has a small, specific next step rather than “more research would help”.</aside>
+  </div>
+</main>
+</body>
+</html>
