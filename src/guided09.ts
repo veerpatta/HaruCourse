@@ -142,7 +142,7 @@ export const guided09: Record<string, Guided> = {
         question: 'A screen slides in from the right when you tap a class, and you labelled it continuity. What is worth checking?',
         options: [
           { label: 'Whether anything was really to the right a moment before; if not, the slide invents a place.', correct: true, was: ['Whether anything was actually to the right a moment before, since otherwise the movement claims a relationship that does not exist.'], feedback: 'Continuity works by showing where something came from. Where there was no “there”, a slide is a direction invented to fill time.' },
-          { label: 'Whether its 400 milliseconds matches the durations used everywhere else in the product.', was: ['Whether 400 milliseconds matches the other durations in the product.'], feedback: 'Consistency matters when you write the rule, and a matching duration cannot rescue an animation that explains nothing.' },
+          { label: 'Whether its 400 milliseconds matches the durations used everywhere else across the whole product.', was: ['Whether 400 milliseconds matches the other durations in the product.'], feedback: 'Consistency matters when you write the rule, and a matching duration cannot rescue an animation that explains nothing.' },
           { label: 'Whether the easing is soft enough at both ends to make the slide feel pleasant.', was: ['Whether the easing is soft enough at both ends.'], feedback: 'Softening the ends makes an unexplained movement pleasanter. It is still 400 milliseconds of waiting for nothing.' },
         ],
         repair: 'Re-read every item you labelled continuity in step 2. Where nothing was on screen for it to come from, relabel it and record the relabel in step 5.',
@@ -239,7 +239,7 @@ export const guided09: Record<string, Guided> = {
           options: [
             { label: 'It darkens on touch, its label becomes “Booking…”, it stops taking presses, and the result replaces it.', correct: true, was: ['The button darkens on touch, its label becomes “Booking…”, it stops accepting presses, and the result message replaces it when the reply arrives.'], feedback: 'The press, the acknowledgement and the outcome stay separate, and the person can always tell which of the three they are in.' },
             { label: 'The confirmation appears the moment Book is pressed, and is withdrawn if the booking then fails.', was: ['The confirmation message appears the moment Book is pressed, and is taken away again if the booking turns out to have failed.'], feedback: 'This tells the person something that is not yet true. Removing a confirmation afterwards is far worse than a short honest wait.' },
-            { label: 'A spinning shape covers the whole screen until the reply arrives, so nothing can be pressed twice.', was: ['A spinning shape covers the whole screen until the reply arrives.'], feedback: 'It does acknowledge the press, and it also takes the screen away, so the person cannot re-read what they are booking while they wait.' },
+            { label: 'A spinning shape covers the whole screen until the reply arrives, so nothing can be pressed a second time.', was: ['A spinning shape covers the whole screen until the reply arrives.'], feedback: 'It does acknowledge the press, and it also takes the screen away, so the person cannot re-read what they are booking while they wait.' },
             { label: 'Nothing changes for four seconds, because the result message will arrive soon enough on its own.', was: ['Nothing changes, because four seconds is short and the message will arrive on its own.'], feedback: 'Four silent seconds is where second presses come from, and a second press can make a second booking.' },
           ],
           then: 'Write the middle moment for each of your three controls, and give it a change of words rather than only a shape that spins.',
@@ -368,7 +368,7 @@ export const guided09: Record<string, Guided> = {
           question: 'Which duration do you keep, and on what grounds?',
           options: [
             { label: '200 milliseconds: the shortest of the three at which the panel still visibly travels from its button.', correct: true, was: ['200 milliseconds, because it is the shortest one where the travel is still visible enough to show where the panel came from.'], feedback: 'Duration is set by the work the movement has to do. The shortest that still explains is the right one, and here that is the middle value.' },
-            { label: '100 milliseconds, because a faster transition always feels more responsive to the person using it.', was: ['100 milliseconds, because faster is always better.'], feedback: 'Faster is usually better and is not a rule. At 100 the panel arrives without showing its journey, so the time is spent and the explanation never lands.' },
+            { label: '100 milliseconds, because a faster transition always feels more responsive to the person who is using it.', was: ['100 milliseconds, because faster is always better.'], feedback: 'Faster is usually better and is not a rule. At 100 the panel arrives without showing its journey, so the time is spent and the explanation never lands.' },
             { label: '400 milliseconds, because the slower movement is easier to follow for everyone watching the panel.', was: ['400 milliseconds, because the movement is easier to follow.'], feedback: 'Easier to follow stops being useful once the relationship has landed. Everything after that point is the person waiting.' },
             { label: 'Any of the three, since the difference between them is too small for most people to notice at all.', was: ['Any of the three, since the difference is too small for a person to notice.'], feedback: 'The gap between 100 and 400 milliseconds is roughly the gap between instant and slow. It is one of the few timing differences almost everybody feels.' },
           ],
@@ -401,7 +401,7 @@ export const guided09: Record<string, Guided> = {
         options: [
           { label: 'Distance sets duration, so a small nearby change now drags and a big one may look abrupt.', correct: true, was: ['Distance sets duration, so a small nearby change is now slow and a large one may be too quick to follow.'], feedback: 'A duration is not a brand value. A tick appearing beside a field and a panel crossing half the screen have different distances, so they need different times.' },
           { label: 'Very little, since one value is easier to remember, to specify and to build.', was: ['Nothing: one value is easier to remember and easier to build.'], feedback: 'One value is easier and it makes half the product feel sluggish. Three named values are almost as easy and fit the work being done.' },
-          { label: 'The number is the problem; 200 milliseconds would make a better single value everywhere.', was: ['The problem is the number, and 200 would be a better single value.'], feedback: 'Any single value has the same fault at a different point. The fix is to set duration from distance rather than to move the one number.' },
+          { label: 'The number is the problem; 200 milliseconds would make a much better single value everywhere.', was: ['The problem is the number, and 200 would be a better single value.'], feedback: 'Any single value has the same fault at a different point. The fix is to set duration from distance rather than to move the one number.' },
         ],
         repair: 'Redo the half-and-double test in step 3 for your shortest and longest transitions, then rewrite their durations in step 2 and record it in step 5.',
         recheck: 'Your three durations are not all the same, and each has a distance behind it.',
@@ -548,7 +548,7 @@ export const guided09: Record<string, Guided> = {
         question: 'The plan is to add reduced-motion support at the end, once the animations are settled. What goes wrong?',
         options: [
           { label: 'Done last, it becomes one switch that turns everything off, stripping explanations too.', correct: true, was: ['Done at the end it becomes one switch that turns everything off, which strips out the explanations along with the decoration.'], feedback: 'Designed alongside the original, each animation gets its own quieter version and keeps its meaning. Designed afterwards, there is only time for a single blunt rule.' },
-          { label: 'Very little goes wrong, as long as the switch is thorough and covers every screen.', was: ['Nothing goes wrong, as long as the switch is thorough.'], feedback: 'Thoroughness is the problem here rather than the cure. A thorough off switch removes the loading signal and the origin of every panel.' },
+          { label: 'Very little goes wrong, as long as the switch is thorough and covers every single screen.', was: ['Nothing goes wrong, as long as the switch is thorough.'], feedback: 'Thoroughness is the problem here rather than the cure. A thorough off switch removes the loading signal and the origin of every panel.' },
           { label: 'It costs a little more time to do late than to do early, which is acceptable.', was: ['It costs slightly more time to do it late than to do it early.'], feedback: 'The cost is not time, it is meaning. What is lost is the information the movement was carrying, and nobody notices it is gone.' },
         ],
         repair: 'Give every animation in your pairs section in step 2 a reduced version now rather than a single rule, and record the change in step 5.',
@@ -691,7 +691,7 @@ export const guided09: Record<string, Guided> = {
         options: [
           { label: 'The swipe is a shortcut for that one; the visible control is the route for the rest.', correct: true, was: ['The swipe is a shortcut for the one, and the visible control is the route for everybody else.'], feedback: 'A gesture nobody discovers is not a feature. Beside a visible control it becomes a genuine accelerator instead of a barrier.' },
           { label: 'One in three is promising, so a short teaching hint would bring the rest along.', was: ['One in three is promising, so a small teaching hint would raise the rest.'], feedback: 'Hints appear once and at the wrong moment. Teaching people a route they did not need to learn is more expensive than showing them a control.' },
-          { label: 'Very little, since one success in three is within the normal range of variation.', was: ['Nothing: one success out of three is within normal variation.'], feedback: 'Two people could not do a thing they were asked to do. That is not variation to wait out, it is the finding.' },
+          { label: 'Very little, since one success in three is well within the normal range of variation.', was: ['Nothing: one success out of three is within normal variation.'], feedback: 'Two people could not do a thing they were asked to do. That is not variation to wait out, it is the finding.' },
         ],
         repair: 'If any line in your pairs list in step 2 still has no visible control, add one now, then record the change in step 5.',
         recheck: 'Every gesture in the list has a visible control beside it.',
@@ -1072,7 +1072,7 @@ export const guided09: Record<string, Guided> = {
           question: 'What is still missing before someone who can point and tap, but cannot drag, can reorder the list?',
           options: [
             { label: 'A route that needs only taps or clicks, such as tap Move and then tap where it should go.', correct: true, was: ['Escape to abandon the move and put the row back, plus what is said at each step.'], feedback: 'Someone using a mouse, a stylus or one finger may be able to tap but not hold and drag, and may not use a keyboard at all. WCAG 2.2 success criterion 2.5.7 asks for this single-pointer route separately from the keyboard one.' },
-            { label: 'Nothing is missing, because the keyboard route already serves anyone who cannot drag.', was: ['Nothing: picking up, moving and dropping completes the task.'], feedback: 'This is the common mix-up. The keyboard route serves people who do not use a pointer; it does nothing for a person tapping a phone screen who cannot drag. The two needs are judged separately.' },
+            { label: 'Nothing is missing, because the keyboard route already serves everyone who is unable to drag.', was: ['Nothing: picking up, moving and dropping completes the task.'], feedback: 'This is the common mix-up. The keyboard route serves people who do not use a pointer; it does nothing for a person tapping a phone screen who cannot drag. The two needs are judged separately.' },
             { label: 'A modifier key so the arrow keys can jump ten rows at a time in a long shortlist.', was: ['A modifier key so the arrows jump ten rows at a time.'], feedback: 'A convenience for long lists, and still a keyboard feature. The person who can tap but not drag has no route at all yet.' },
             { label: 'A confirmation dialogue after every drop, so that any mistaken move can be caught.', was: ['A confirmation dialogue after the drop.'], feedback: 'A move is a slip, so undo suits it better than a question, and a dialogue still gives no way to move a row without dragging.' },
           ],
@@ -1095,7 +1095,7 @@ export const guided09: Record<string, Guided> = {
         question: 'Your reorder works by dragging and by keyboard. A colleague says the keyboard route already covers anyone who cannot drag. What is missing?',
         options: [
           { label: 'A tap-or-click route with no drag; some people can point but can neither drag nor use keys.', correct: true, was: ['The keyboard route changes the visual design, because it needs something to focus and somewhere for the announcement to live.'], feedback: 'The two needs are different. A keyboard route serves people who do not use a pointer; a single-pointer route — tap Move, then tap the destination — serves people who can tap or click but cannot hold and drag. Designing both early also decides what each row must show.' },
-          { label: 'Nothing that matters, since the keyboard route reaches every arrangement the drag does.', was: ['Nothing much: keys are an engineering concern once the layout is settled.'], feedback: 'Reaching every arrangement is necessary for each route, and it does not make one route serve the other group. A person tapping with one finger who cannot drag has no keyboard in hand.' },
+          { label: 'Nothing that matters, since the keyboard route already reaches every arrangement the drag does.', was: ['Nothing much: keys are an engineering concern once the layout is settled.'], feedback: 'Reaching every arrangement is necessary for each route, and it does not make one route serve the other group. A person tapping with one finger who cannot drag has no keyboard in hand.' },
           { label: 'Only a short tutorial, so people who cannot drag learn that the keyboard route exists.', was: ['It only delays the accessibility work to a later week.'], feedback: 'A tutorial explains a route; it does not create one. The person who can tap but cannot drag still has nothing to tap.' },
         ],
         repair: 'If your pointer-route in step 3 is empty or needs a drag anywhere, write the taps that move a row to any position, try them in the reorder example, record what happened in pointer-test, then record the change in step 5.',
@@ -1115,7 +1115,7 @@ export const guided09: Record<string, Guided> = {
         question: 'On a phone, your whole row is draggable. What breaks?',
         options: [
           { label: 'Scrolling and dragging become one gesture, so the list must guess which she meant.', correct: true, was: ['Scrolling and dragging become the same gesture, so the list has to guess which one she meant.'], feedback: 'A grip, or a long press, tells the two apart deliberately. Without one, every attempt to scroll the list risks rearranging it.' },
-          { label: 'Very little, because a phone can usually tell a slow drag from a quick scroll.', was: ['Nothing: a phone can tell a slow drag from a fast scroll.'], feedback: 'Sometimes it can, and the person who moves slowly because her hand shakes is exactly the one it gets wrong.' },
+          { label: 'Very little, because a modern phone can usually tell a slow drag from a quick scroll.', was: ['Nothing: a phone can tell a slow drag from a fast scroll.'], feedback: 'Sometimes it can, and the person who moves slowly because her hand shakes is exactly the one it gets wrong.' },
           { label: 'Only the look of the row suffers, since it appears the same in either state.', was: ['Only the visual design suffers, since the row looks the same either way.'], feedback: 'The row looking the same is the problem. Nothing on it says which of the two things a press is about to do.' },
         ],
         repair: 'Fill the touch rule in step 4 with what has to be touched or held to begin a drag, then record what you changed in step 5.',
@@ -1332,7 +1332,7 @@ export const guided09: Record<string, Guided> = {
           question: 'Which behaviour would you specify, and what makes it defensible?',
           options: [
             { label: 'Keep it as a draft, show it in the editing state on her return, and say when it was changed.', correct: true, was: ['Keep the half-typed note as a draft, show it in the editing state on her return, and say when it was last changed.'], feedback: 'Her words are kept, and nothing half-finished was stored under her name as though she meant it. The time tells her what she is looking at four hours later.' },
-            { label: 'Store what was typed straight away, quietly, as though she had finished writing the note.', was: ['Store what was typed, quietly, as if she had finished.'], feedback: 'It keeps her words and it also publishes half a sentence as though it were final. On a shared booking someone else may read it before she does.' },
+            { label: 'Store what was typed straight away, quietly, as though she had already finished writing the note.', was: ['Store what was typed, quietly, as if she had finished.'], feedback: 'It keeps her words and it also publishes half a sentence as though it were final. On a shared booking someone else may read it before she does.' },
             { label: 'Throw the half-typed note away, since she left the app without finishing or saving it.', was: ['Throw it away, since she left without finishing.'], feedback: 'Leaving is rarely a decision. A notification is not the same as pressing cancel, and discarding is the one outcome she cannot reverse.' },
             { label: 'Ask her to confirm what to do with the note before the app finishes closing down.', was: ['Ask her to confirm before the app closes.'], feedback: 'A tap on a notification does not wait for a question, and a question she never sees settles nothing. Keep the text and ask her later, when she is back.' },
           ],
@@ -1355,7 +1355,7 @@ export const guided09: Record<string, Guided> = {
         question: 'You remove the save button and the value stores itself. What have you taken on?',
         options: [
           { label: 'The whole job of telling her where her change stands, which pressing the button used to do.', correct: true, was: ['The whole job of telling her where her change stands, which the button used to do simply by being pressed.'], feedback: 'The button was feedback as much as a control. Without it, every save and every failure has to announce itself in words.' },
-          { label: 'Very little, provided the saving itself is reliable and almost never fails for anyone.', was: ['Nothing, as long as saving is reliable.'], feedback: 'Reliability is invisible. Even a save that always works leaves her guessing, because nothing on the screen says so.' },
+          { label: 'Very little, provided the saving itself is reliable and almost never fails for anyone at all.', was: ['Nothing, as long as saving is reliable.'], feedback: 'Reliability is invisible. Even a save that always works leaves her guessing, because nothing on the screen says so.' },
           { label: 'Only the failure case, since a save that works needs no message on the screen at all.', was: ['Only the failure case, since a save that works needs no message.'], feedback: 'A save that works is exactly when she needs to know. Silence after typing reads the same whether it worked or not.' },
         ],
         repair: 'If your saved-state in step 2 has no exact wording and no duration, write both now and record the change in step 5.',
@@ -1366,7 +1366,7 @@ export const guided09: Record<string, Guided> = {
         options: [
           { label: 'Nothing visible, with the text sitting there looking stored.', correct: true, feedback: 'A silent failure lets her walk away believing the change exists. She finds out later, when it matters and cannot be repaired.' },
           { label: 'A message saying the save did not happen.', feedback: 'That is what should happen. The message is how she learns in time to do something about it.' },
-          { label: 'The text being kept on her device until a save succeeds.', feedback: 'That is also what should happen. Keeping the words locally is what makes a retry possible at all.' },
+          { label: 'The text being kept safely on her device until a later save succeeds.', was: ['The text being kept on her device until a save succeeds.'], feedback: 'That is also what should happen. Keeping the words locally is what makes a retry possible at all.' },
         ],
         repair: 'If your failure-message in step 4 is empty or vague, write the exact words and say where the text is kept, then record it in step 5.',
         recheck: 'The failure state says what happened, that the text is safe, and what to do next.',
@@ -1464,7 +1464,7 @@ export const guided09: Record<string, Guided> = {
           question: 'Which reduced-motion pair keeps what the movement was explaining?',
           options: [
             { label: 'A 120ms fade in place, with the filter button staying marked while the panel is open.', correct: true, feedback: 'The movement was saying this came from that. Keeping the button marked says the same thing without moving anything across the screen.' },
-            { label: 'Remove the transition entirely, so the panel simply appears in place with no change.', was: ['Remove the transition entirely, so the panel simply appears.'], feedback: 'That deletes the explanation along with the movement. She now has a panel and no idea what produced it.' },
+            { label: 'Remove the transition entirely, so the panel simply appears in place with no change at all.', was: ['Remove the transition entirely, so the panel simply appears.'], feedback: 'That deletes the explanation along with the movement. She now has a panel and no idea what produced it.' },
             { label: 'Keep the slide but run it at 100ms instead of 250ms, so it is over almost at once.', was: ['Keep the slide, at 100ms instead of 250ms.'], feedback: 'Faster movement is still movement, and speed can make it harder to follow rather than gentler. The request was for less, not quicker.' },
             { label: 'Replace it with a slower 400ms slide, so the movement feels gentler on the eye.', was: ['Replace it with a slower 400ms slide, so it feels gentler.'], feedback: 'Slow and gentle are not the same thing. A long slide across the screen is the pattern the setting is asking you to stop.' },
           ],
@@ -1656,7 +1656,7 @@ export const guided09: Record<string, Guided> = {
         question: 'You make the repair, then write down what you expected it to do. Why is that weaker than writing it first?',
         options: [
           { label: 'Any result will match it, because you wrote the expectation after seeing what happened.', correct: true, was: ['Whatever happened will look like what you expected, because you wrote the expectation after seeing it.'], feedback: 'A prediction is only useful while it can still turn out wrong. Written afterwards, it can only ever agree with the result.' },
-          { label: 'It is just as strong, provided the prediction you write afterwards is an honest one.', was: ['It is the same, as long as the prediction is honest.'], feedback: 'Honesty is not the issue. Nobody can un-see a result, and memory quietly rewrites what was expected to match it.' },
+          { label: 'It is just as strong, provided the prediction you write down afterwards is an honest one.', was: ['It is the same, as long as the prediction is honest.'], feedback: 'Honesty is not the issue. Nobody can un-see a result, and memory quietly rewrites what was expected to match it.' },
           { label: 'It is weaker only if someone else reads it, since you know what you really expected.', was: ['It is weaker only if somebody else reads it.'], feedback: 'The person it misleads most is you, when you decide whether the repair worked and whether to keep going.' },
         ],
         repair: 'If your prediction in step 4 was written after the change, say so in that field and write a fresh prediction for the next repair, then record it in step 5.',
@@ -1666,7 +1666,7 @@ export const guided09: Record<string, Guided> = {
         question: 'You re-test and the repair did not help. What do you write?',
         options: [
           { label: 'What happened, beside the prediction it disagreed with, and what you now think was wrong.', correct: true, was: ['What happened, beside the prediction it disagreed with, and what you now think you had wrong.'], feedback: 'A repair that failed tells you the cause was misread. That is worth more than a repair that worked for a reason nobody checked.' },
-          { label: 'Nothing yet: repair it properly first, then write up the version that finally worked.', was: ['Nothing yet, since you should repair it properly first.'], feedback: 'The failed attempt is the evidence that your explanation was wrong. Repairing again without recording it loses the only thing you learned.' },
+          { label: 'Nothing yet: repair it properly first, then write up only the version that finally worked.', was: ['Nothing yet, since you should repair it properly first.'], feedback: 'The failed attempt is the evidence that your explanation was wrong. Repairing again without recording it loses the only thing you learned.' },
           { label: 'That the original finding was probably not real, since the repair made no difference.', was: ['That the finding was probably not real after all.'], feedback: 'The finding was watched happening. What failed is your explanation of why, and those are two different things.' },
         ],
         repair: 'If your retest-result in step 4 is empty, or records only success, write what actually happened including anything that did not improve, then note it in step 5.',
