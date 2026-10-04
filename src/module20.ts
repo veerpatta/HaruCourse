@@ -57,21 +57,22 @@ export const module20: Lesson[] = [
     why: "Career advice is the area where confident claims are cheapest to make and most expensive to believe.",
     teach: [
       "This course holds two dated vacancy captures, which is not a study.",
-      "No demand, pay, remote eligibility or junior expectation is taught here.",
-      "You gather the evidence yourself, dated, from employers' own boards.",
+      "No demand, pay, eligibility rule or junior expectation is taught here.",
+      "You gather it yourself, dated, from employers' own pages, recording eligibility, work location and hours as separate facts.",
       "Vacancies are evidence of what one employer wrote, not opportunities.",
       "Advice that cannot cite a dated source is opinion.",
     ],
     explanation: [
-      "The course's own catalog records what happened when it tried to gather hiring evidence: eight vacancy URLs attempted on one day, one full capture, one partial, six already expired to a board index and one host refusing the request. That failure rate is the most useful thing the attempt produced, because it tells you vacancy evidence decays within weeks and has to be gathered fresh by whoever needs it.",
+      "The course's own catalog records what happened when it tried to gather hiring evidence on 6 September 2026: eight vacancy URLs attempted, one full capture, one partial capture, six listings already expired to a board index, and one host refusing the request. That is nine outcomes for eight URLs, and the record does not say which URL had two, so an honest restatement keeps the mismatch visible rather than tidying it away. The expiry is the most useful thing the attempt produced, because it tells you vacancy evidence decays within weeks and has to be gathered fresh by whoever needs it.",
       "Two captures cannot establish demand, salary, prevalence, remote eligibility or what a junior role expects in India. So this module teaches none of those things. What it teaches is the method: which sources count, what to record, how to compare, and what the resulting sample can and cannot support — the same discipline the research modules applied to participants.",
       "Employers' own boards are the evidence. An aggregator's count of “design jobs in Bengaluru” is a number about the aggregator, mixing duplicates, expired posts and reposts; it is not employer evidence and cannot be cited as such. The rule is the same one you applied to resources: go to the source, record the date, record what it actually says.",
       "A vacancy is evidence that on a stated date an employer published a stated set of expectations. It is not evidence that the role is open, that it will be filled, that the expectations are real rather than aspirational, or that anyone in your position would be considered. Holding that distinction is what stops a career search becoming a series of private conclusions about your own worth.",
+      "Decide now to record three things separately for every listing, because one sentence in a listing usually answers only one of them. Country eligibility is who the employer says it can hire and from where, including work authorisation and visa sponsorship. Work location is where the work happens: remote, hybrid with a named city and number of office days, or on-site. Working hours are any required overlap or core hours, converted to Indian Standard Time with the date you converted them, because Europe and the United States change their clocks and India does not. “Remote” answers the second question and says nothing about the first or the third.",
     ],
     misconception:
       "“Somebody must know what the market wants.” Many people will tell you confidently. Almost none of them will cite a dated, multi-employer sample, and the ones who can will also tell you how narrow it is.",
     example:
-      "The evidence plan: at least twelve vacancies from employers' own career pages, gathered within one two-week window, each recorded with employer, URL, retrieval date, title, seniority, location, stated remote policy and stated India eligibility. Aggregators may be used to find employer names and are never cited as evidence. The plan states in advance what twelve vacancies cannot show — demand, pay, how common a requirement is across the market, or whether any of them would consider the learner — and that the sample expires and must be re-gathered if the search continues past a month.",
+      "Made-up example plan: at least twelve vacancies from employers' own career pages, gathered within one two-week window. Each is recorded with employer, URL, retrieval date, exact title and stated seniority, plus three fit fields kept apart: who the employer says it can hire and from where; where the work happens (remote, or the city and office days for hybrid and on-site roles); and any required hours or overlap, converted to IST. Aggregators may be used to find employer names and are never cited as evidence. The plan states in advance what twelve vacancies cannot show — demand, pay, how common a requirement is across the market, or whether any of them would consider the learner — and that the sample expires and must be re-gathered if the search continues past a month.",
     freeToolPath:
       "A browser and a spreadsheet or text table. Every employer career page used here is public and needs no account; no job-board subscription, resume service or paid tool is required at any point in this module.",
     outputs: [
@@ -94,7 +95,7 @@ export const module20: Lesson[] = [
         title: "Write the evidence plan",
         instructions: [
           "Decide how many vacancies, from where, and over what window.",
-          "List the fields you will record for each.",
+          "List the fields you will record for each, keeping eligibility, work location and hours as three separate fields.",
         ],
       },
       {
@@ -168,7 +169,7 @@ export const module20: Lesson[] = [
           "No plan.",
           "A target count only.",
           "Sources, fields and window all named.",
-          "As adequate, and the fields include stated India eligibility.",
+          "As adequate, and eligibility, work location and working hours are three separate fields.",
         ],
         remediation: "Write the plan before gathering anything.",
         recheck: "The plan.",
@@ -251,21 +252,21 @@ export const module20: Lesson[] = [
     why: "This is the only hiring evidence you will have, and nobody else is going to gather it for you.",
     teach: [
       "Go to the employer's own careers page, not the aggregator's copy.",
-      "Record employer, URL, date, title, seniority, location and eligibility.",
+      "Record employer, URL, date, title and seniority, then eligibility, work location and hours as three separate fields.",
       "Copy the stated requirements verbatim; do not summarise yet.",
       "Record every failure: expired, blocked, or no longer listed.",
       "Save a local copy; the page will be gone in weeks.",
     ],
     explanation: [
-      "Aggregators are useful for finding employer names and useless as evidence, because their copy of a listing may be stale, edited or duplicated. Once you have a name, go to that company's own careers page and take the listing from there, which is also where the honest statement of location and eligibility usually lives.",
-      "The fields matter because comparison later depends on them. Seniority as stated, not as you interpret it; location as written including whether hybrid means an office; and any explicit statement about who may apply from where. Verbatim requirements now, analysis in the next lesson.",
+      "Aggregators are useful for finding employer names and useless as evidence, because their copy of a listing may be stale, edited or duplicated. Once you have a name, go to that company's own careers page and take the listing from there, which is where any current statement about eligibility, location and hours will be.",
+      "The fields matter because comparison later depends on them. Seniority as stated, not as you interpret it. Then three fit fields that are easy to merge and must stay apart: country eligibility (who the employer says it can hire, from which countries, and whether it sponsors visas), work location (remote, hybrid with the city and office days, or on-site and the city), and working hours (any required overlap or core hours, with the same hours in IST). A listing that says remote has answered the second and said nothing about the first or the third. Verbatim requirements now, analysis in the next lesson.",
       "Failures are data. When six of eight URLs have already expired, that is the strongest single fact about vacancy evidence and it belongs in your record with the date. It also protects you from a false conclusion later, when a thin sample looks like thin demand rather than like fast expiry.",
       "Save a local copy of each listing — text is enough. In a month you will want to check what a listing actually said, and the page will very likely be gone. This is the same discipline as the course's own catalog: record what you saw and when you saw it.",
     ],
     misconception:
       "“Twelve vacancies will show me what the market wants.” Twelve vacancies show what twelve employers published on twelve dates. That is genuinely useful for preparing, and it is not a market picture.",
     example:
-      "Over eleven days, twenty-six employer career pages were opened and fourteen listings captured. Recorded: employer, direct URL, retrieval date, exact title, stated years of experience, stated location and whether hybrid meant an office, stated remote policy, and any explicit statement about eligibility to work from India. Failures recorded: seven listings had expired to a board index between finding and capture, three companies had no public careers page, and two pages would not load without an account, which was refused. Every captured listing was saved as text with its date at the top.",
+      "Made-up example. Over eleven days, twenty-six employer career pages were opened and fourteen listings captured. Recorded: employer, direct URL, retrieval date, exact title, stated years of experience, and three separate fit fields — who the employer says it can hire and from where, where the work happens (remote, or the city and office days), and any required hours with the same hours in IST. Where a listing said nothing on one of the three, the field says not stated. Failures recorded: seven listings had expired to a board index between finding and capture, three companies had no public careers page, and two pages would not load without an account, which was refused. Every captured listing was saved as text with its date at the top.",
     freeToolPath:
       "A browser, copy and paste, and a folder of text files. Nothing here requires an account, and any listing that demands one to be read is recorded as a refusal rather than an obstacle to work around.",
     outputs: [
@@ -302,10 +303,10 @@ export const module20: Lesson[] = [
       },
       {
         minutes: 20,
-        title: "Check the eligibility field",
+        title: "Check the three fit fields",
         instructions: [
-          "For each, record what is actually stated about location and eligibility.",
-          "Where nothing is stated, record that rather than inferring.",
+          "For each listing, record eligibility, work location and hours separately, in the listing's own words.",
+          "Where one of the three is not stated, record that rather than inferring it from the others.",
         ],
       },
       {
@@ -357,11 +358,12 @@ export const module20: Lesson[] = [
       {
         criterion:
           "All planned fields are recorded, verbatim where required",
-        evidence: "A complete row per listing with requirements quoted.",
+        evidence:
+          "A complete row per listing with requirements quoted and eligibility, location and hours as separate entries.",
         levels: [
           "Fields missing or summarised.",
-          "Most fields present.",
-          "All fields, requirements verbatim.",
+          "Most fields present, or the three fit fields merged into one.",
+          "All fields, requirements verbatim, the three fit fields kept separate.",
           "As adequate, and interpretation was deferred to the next lesson.",
         ],
         remediation: "Return to the saved copies and complete the fields.",
@@ -442,22 +444,22 @@ export const module20: Lesson[] = [
     prerequisite: "At least twelve captured listings.",
     why: "The comparison is useful for preparing and dangerous for concluding, and the difference is entirely in how you write it.",
     teach: [
-      "Report counts out of your sample, never percentages.",
+      "At this size, report counts out of your sample, not percentages: a percentage of fourteen implies a sample you do not have.",
       "Say “nine of fourteen listings I captured”, with the dates.",
       "Keep contradictions; listings disagree and that is information.",
-      "Separate stated requirements from implied ones.",
+      "Separate stated requirements from implied ones, and count eligibility, work location and hours separately.",
       "Write what the comparison cannot support before using it.",
     ],
     explanation: [
       "Counts out of a named sample keep the claim the right size. “Nine of the fourteen listings I captured between the third and the fourteenth asked for a portfolio with case studies” is true and useful. “Sixty-four per cent of design roles require case studies” is a market claim your sample cannot carry, and it is one sentence away.",
       "Contradictions are the interesting part. If four listings ask for research skills and three explicitly say research is done by a separate team, that disagreement tells you the role's shape varies by company far more than any average would. Averaging it away destroys the only real finding.",
-      "Stated and implied requirements need separating. A listing that names a specific design tool has stated a requirement; a listing that mentions shipping weekly implies a pace but has not stated a skill. Your matrix in the next lesson is built from stated requirements, with implications recorded separately and marked as your inference.",
+      "Stated and implied requirements need separating. A listing that names a specific design tool has stated a requirement; a listing that mentions shipping weekly implies a pace but has not stated a skill. Your matrix in the next lesson is built from stated requirements, with implications recorded separately and marked as your inference. The same discipline applies to the three fit fields: six remote listings are six statements about where the work happens, and they say nothing about whether those employers can hire someone based in India or what hours they need.",
       "Then write the limits: your sample is what you could reach, in one window, from companies with public career pages, in English, which excludes most employers. It cannot show demand, pay, how common anything is, or whether these employers would consider you. It expires, and you must say when it was gathered whenever you use it.",
     ],
     misconception:
       "“The pattern across a dozen listings is the market.” It is the pattern across a dozen listings — biased toward companies with public boards, current in one window, and silent about every employer you could not reach.",
     example:
-      "Fourteen listings, gathered over eleven days. Counts recorded: eleven of fourteen ask for a portfolio; nine ask for case studies showing process; six state a years-of-experience minimum, ranging from two to five; four mention accessibility explicitly; three name a specific design tool and one names four interchangeable ones; two state remote eligibility from India explicitly and nine state nothing about eligibility at all. Contradiction kept: three listings expect the designer to run research, two say research is handled by a research team. Limits written: English-language listings from employers with public boards, one window, no evidence about pay, demand, or these employers' actual practice.",
+      "Made-up example. Fourteen listings, gathered over eleven days. Counts recorded: eleven of fourteen ask for a portfolio; nine ask for case studies showing process; six state a years-of-experience minimum, ranging from two to five; four mention accessibility explicitly; three name a specific design tool and one names four interchangeable ones. The fit fields are counted separately, each adding up to fourteen: eligibility — two say they can employ people based in India, one requires the right to work in the UK, eleven say nothing; work location — six remote, five hybrid with a named city, three on-site; hours — four state an overlap or core hours, ten say nothing. Contradiction kept: three listings expect the designer to run research, two say research is handled by a research team. Limits written: English-language listings from employers with public boards, one window, no evidence about pay, demand, or these employers' actual practice.",
     freeToolPath: "Your capture table and plain writing.",
     outputs: [
       "A comparison written as counts out of your sample",
@@ -472,6 +474,7 @@ export const module20: Lesson[] = [
         instructions: [
           "Count how many listings state each requirement.",
           "Write every count as a number out of your sample size.",
+          "Count eligibility, work location and hours as three separate sets, each adding up to your sample with silences included.",
         ],
       },
       {
@@ -559,11 +562,12 @@ export const module20: Lesson[] = [
       },
       {
         criterion: "Stated requirements are separated from inferences",
-        evidence: "Two lists, with inferences marked as yours.",
+        evidence:
+          "Two lists, with inferences marked as yours, and eligibility, location and hours counted apart.",
         levels: [
-          "Merged.",
+          "Merged, or remote counted as eligibility.",
           "Partly separated.",
-          "Cleanly separated and marked.",
+          "Cleanly separated and marked, with the three fit fields counted apart.",
           "As adequate, and each inference names what it is inferred from.",
         ],
         remediation:
@@ -644,17 +648,19 @@ export const module20: Lesson[] = [
       "The three states carry the same meaning they did in the portfolio audit. Evidenced means an artefact a stranger could read and believe. Partial means something exists but is thin, undated or self-assessed. Absent means nothing — and writing that down is more useful than any amount of reframing.",
       "The temptation is to upgrade a partial into an evidenced by generous reading. A keyboard pass you ran yourself is real evidence of a self-check and is not evidence of testing with disabled people; the honest mark is partial with a note. This matters practically: the cell you upgrade is the question you cannot answer in an interview.",
       "Ranking absences by frequency in your sample tells you which gap to close first, without pretending the ranking is a market truth. If accessibility appeared in four of fourteen and a specific tool in three, that is a reason to prefer one piece of preparation this month, not a conclusion about the profession.",
+      "Finally, read the matrix against one listing you would actually apply to, and check fit as three separate questions before any of its requirements. Can they hire you where you are, in their own words or not stated? Can you work where the work happens? Can you keep their hours once converted to IST? A listing can fit on all three and still ask for things your matrix cannot evidence, or match your evidence well and need hours you cannot keep. Keeping the questions apart is what stops “remote” being read as “open to me”.",
     ],
     misconception:
       "“The matrix will show I am not ready.” It will show precisely which cells are empty, which is what readiness means in practice. Everyone's matrix has empty cells; most people cannot say which.",
     example:
-      "Twenty-one requirement rows against three projects. Evidenced: research planning and synthesis, iteration with a re-test, writing decisions down, working with constraints, prototyping, structure and flows, and stating limits. Partial: accessibility, marked partial because every check was self-run and none involved a disabled person; measurement, marked partial because only one project had a before; and design systems, marked partial because the system was built and used but never adopted by anyone else. Absent: working in a team with engineers, shipping to production, working with analytics at scale, and any specific enterprise tool. Absences ranked by appearance in the sample, with team collaboration first.",
+      "Made-up example. Twenty-one requirement rows against three projects. Evidenced: research planning and synthesis, iteration with a re-test, writing decisions down, working with constraints, prototyping, structure and flows, and stating limits. Partial: accessibility, marked partial because every check was self-run and none involved a disabled person; measurement, marked partial because only one project had a before; and design systems, marked partial because the system was built and used but never adopted by anyone else. Absent: working in a team with engineers, shipping to production, working with analytics at scale, and any specific enterprise tool. Absences ranked by appearance in the sample, with team collaboration first. Read against one captured listing: eligibility, in its words, can employ people based in India; location remote; hours four hours' overlap with Central European Time, which a 10:00–19:00 IST working day covers. All three fit, which is a separate question from the four requirements the matrix could not evidence.",
     freeToolPath: "A table in a text file or spreadsheet.",
     outputs: [
       "A matrix of stated requirements against your evidence",
       "Each cell marked evidenced, partial or absent",
       "Notes explaining every partial",
       "Absences ranked by frequency in your sample",
+      "A fit check for one listing: eligibility, work location and hours in IST, on three separate lines",
     ],
     steps: [
       {
@@ -690,11 +696,12 @@ export const module20: Lesson[] = [
         ],
       },
       {
-        minutes: 20,
+        minutes: 30,
         title: "Check against a listing",
         instructions: [
           "Take one captured listing and read your matrix against it.",
           "Note which of its requirements you could evidence today.",
+          "Check fit on three separate lines: can they hire you where you are, can you work where the work happens, can you keep their hours in IST.",
         ],
       },
     ],
@@ -720,6 +727,7 @@ export const module20: Lesson[] = [
       "Cells are marked with artefacts named",
       "Partials are explained rather than upgraded",
       "Absences are ranked by frequency in the sample",
+      "Fit with one listing is checked on three separate constraints",
     ],
     criteria: [
       {
@@ -754,7 +762,7 @@ export const module20: Lesson[] = [
           "Partials upgraded to evidenced.",
           "Marked without explanation.",
           "Explained honestly.",
-          "As adequate, and at least one partial was downgraded on reflection.",
+          "As adequate, and every evidenced mark was re-read, with any downgrade, or the reason for keeping it, recorded.",
         ],
         remediation:
           "Re-read each evidenced cell and downgrade what you could not defend.",
@@ -773,12 +781,27 @@ export const module20: Lesson[] = [
           "Count how often each absent requirement appeared and reorder.",
         recheck: "The ranked absences.",
       },
+      {
+        criterion: "Fit with one listing is checked on three separate constraints",
+        evidence:
+          "For one captured listing: eligibility, work location and hours in IST, each quoting the listing or saying not stated, with your answer beside it.",
+        levels: [
+          "Not checked, or remote read as eligibility.",
+          "Checked as one overall judgement.",
+          "Three separate lines, each from the listing's words or marked not stated.",
+          "As adequate, and an unstated constraint becomes a question to ask rather than an assumption.",
+        ],
+        remediation:
+          "Write the three lines again from the listing's own words, converting any hours to IST with the date.",
+        recheck: "The three fit lines.",
+      },
     ],
     repairs: [
       "If rows came from generic advice, rebuild from your captures.",
       "If cells lack artefacts, name them or downgrade the mark.",
       "If a partial was upgraded, restore the honest mark.",
       "If absences are unranked, rank them by frequency in your sample.",
+      "If fit was judged as one thing, split it into eligibility, work location and hours.",
     ],
     portfolio:
       "The matrix is the working document for the rest of this module and for the months after it.",
@@ -829,14 +852,14 @@ export const module20: Lesson[] = [
     ],
     explanation: [
       "One gap. The ranked list will tempt you into a plan covering four, which becomes four half-finished efforts and no artefact. Choose the highest-ranked gap you can actually close with the access you have, and leave the rest ranked for later.",
-      "The best gaps to close are the ones involving another person, because they produce evidence that cannot be self-generated. Contributing a design to an open-source project, working with someone who writes code, or running a session with a person who uses assistive technology all produce artefacts and all involve someone who could corroborate them.",
+      "The best gaps to close are the ones involving another person, because they produce evidence that cannot be self-generated. Contributing a design to an open-source project, working with someone who writes code, or running a session with a person who uses assistive technology all produce artefacts and all involve someone who could corroborate them. If you have no such access, a solo artefact still counts — a dated check, a repair and a re-check, labelled as self-run — and the cell moves only as far as that artefact supports, which is often to partial rather than evidenced. Where another person is involved, ask for consent first, describe them by role, record what happened to the work rather than anything about their health or circumstances, and keep consent records and raw notes in a private folder with a deletion date.",
       "A completed course is evidence that you completed a course. It may be worth doing for the learning, but it does not fill a cell in the matrix, and presenting it as though it does is a small dishonesty that a single question exposes. The artefact is the point.",
       "Some gaps genuinely cannot be closed by an individual — shipping to production at scale, working in an established team, operating an analytics system with real traffic. The correct handling is to say so directly: this is absent, it requires a role to acquire, and here is the nearest thing I have done. That answer is respected; a fabricated equivalent is not.",
     ],
     misconception:
       "“I should close all my gaps before applying.” You will not, and waiting is itself a cost. Close the one that is closable, name the rest accurately, and apply with an honest matrix.",
     example:
-      "The top-ranked absence was working with engineers, which cannot be manufactured alone. The second was accessibility tested with a disabled person rather than self-checked. That one was closable: a local organisation was approached, one person who uses a screen reader agreed to a forty-minute session on the status page with consent and a small thank-you, and the session produced a recording of two failures the self-check had missed, a repair and a re-test. The cell moved from partial to evidenced with a dated artefact. The engineering gap was written as an honest absence with the nearest adjacent evidence named.",
+      "Made-up example. The top-ranked absence was working with engineers, which cannot be manufactured alone. The second was accessibility tested with a disabled person rather than self-checked. That one was closable: a local organisation was approached, one person who uses a screen reader agreed to a forty-minute session on the status page with consent and a small thank-you, and the session produced dated notes of two failures the self-check had missed — what the page did, nothing about the person — then a repair and a re-test. The consent record stayed in a private folder. The cell moved from partial to evidenced with a dated artefact. The engineering gap was written as an honest absence with the nearest adjacent evidence named.",
     freeToolPath:
       "The access you already have, plus a conversation. If closing a gap would require a paid course, a subscription or a certificate, it is the wrong gap to close this way.",
     outputs: [
@@ -867,7 +890,7 @@ export const module20: Lesson[] = [
         title: "Do it",
         instructions: [
           "Do the work, with consent where another person is involved.",
-          "Keep the artefact and date it.",
+          "Keep the artefact and date it; keep consent records and raw notes in a private folder with a deletion date, never in this course.",
         ],
       },
       {
@@ -930,7 +953,7 @@ export const module20: Lesson[] = [
           "A course or certificate.",
           "Work without an artefact.",
           "An artefact with a date.",
-          "As adequate, and another person was involved and consented.",
+          "As adequate, and another person was involved with consent — or, working solo, the artefact states plainly what a self-run check cannot show.",
         ],
         remediation:
           "Do the smallest piece of real work that leaves something behind.",
@@ -1012,28 +1035,30 @@ export const module20: Lesson[] = [
     why: "A resume is a set of claims you will be asked to defend, and most are written as if they will not be.",
     teach: [
       "Every line maps to an artefact or comes out.",
-      "Say what you did and what happened, in counts.",
+      "Say what you did and what happened, in counts with their period, and who did what.",
       "Name the project category: self-directed, course or paid.",
       "One page, plain, readable as text by a machine and a person.",
       "Have someone challenge every line before you send it.",
     ],
     explanation: [
-      "The mapping rule does the work. Write the resume, then put the matrix beside it and check each line against a cell. Anything that cannot be traced is either rewritten to what you can show or removed, and this pass usually removes a third of a first draft.",
-      "Lines should say what you did and what happened, with counts where you have them. “Ran five research sessions in a repair shop and reduced progress-chasing calls from eleven to four over comparable five-day periods” is checkable and specific. “Improved customer experience through user-centred design” is neither.",
+      "The mapping rule does the work. Write the resume, then put the matrix beside it and check each line against a cell. Anything that cannot be traced is either rewritten to what you can show or removed, and on a first draft this pass often catches several lines.",
+      "Lines should say what you did and what happened, with counts where you have them, the period each count covers, and who did what. “Ran five research sessions for a repair shop and built a job-status page; the owner's tally of progress calls was eleven in the five working days before it and seven in the five after, one of them a public holiday” is checkable. Notice what it does not say. Not “reduced calls”, which claims the page caused the fall when a holiday sits inside the comparison. Not “eleven to seven a day”, which multiplies both counts by five. Not “cut calls by 36 per cent”, which turns two small counts into a rate. “Improved customer experience through user-centred design” is checkable by nobody.",
       "Category labelling belongs on the resume as much as in the portfolio. Self-directed projects listed alongside employment, with nothing distinguishing them, is the most common way a resume becomes misleading without a single false sentence in it.",
       "Format matters for a practical reason: many resumes are read first by software that extracts text, and a design-heavy PDF with text in images extracts as nothing. Plain structure, real text, one page. It is also, incidentally, the accessible choice, which you should be able to explain.",
+      "Then revise against a real listing rather than a template. Take one requirement from a vacancy you captured, with its employer and retrieval date, and rewrite one of your own lines to answer it using only what your artefacts support. If the listing asks for something you cannot evidence, the honest revision leaves it unclaimed rather than borrowing the listing's wording. The challenge pass works best with another person; if nobody is available, put the line-by-line questions to the resume a day later and label the result self-review, because someone else's challenge is still to come.",
     ],
     misconception:
       "“A designer's resume should show design.” It should be clear and extractable. Your portfolio shows design; a resume that cannot be parsed shows nothing at all.",
     example:
-      "One page. Three project entries, each labelled self-directed practice, each with two lines: what was done and what happened, including the project where nothing was measured, stated as such. A short section listing evidenced skills only, taken directly from the matrix, with partials excluded. Prior graphic design work summarised in three lines with real dates. A friend was asked to challenge every line; four could not be defended and were rewritten, one was removed, and the phrase “led design” was corrected to “designed, working alone” on all three entries.",
+      "Made-up example. One page. Three project entries, each labelled self-directed practice, each with two lines: what was done and what happened, including the project where nothing was measured, stated as such. A short section listing evidenced skills only, taken directly from the matrix, with partials excluded. Prior graphic design work summarised in three lines with real dates. A friend was asked to challenge every line; four could not be defended and were rewritten, one was removed, and the phrase “led design” was corrected to “designed, working alone” on all three entries. One line was then revised against a listing captured on 9 March that asked designers to measure outcomes: “Measured the impact of a status page” became “Set up a tally with the owner: eleven progress calls in five working days before the page, seven in the five after, one a public holiday.”",
     freeToolPath:
       "A text editor and any word processor you already have, exported to PDF with real text. No resume service, template subscription or review product is needed.",
     outputs: [
       "A one-page resume with every line mapped to an artefact",
-      "Outcomes stated in counts, or stated as unmeasured",
+      "Outcomes stated in counts with their period, or stated as unmeasured",
       "Project categories labelled",
       "A record of the challenge pass and what changed",
+      "One line revised against a requirement from a vacancy you captured, with its artefact",
     ],
     steps: [
       {
@@ -1041,15 +1066,16 @@ export const module20: Lesson[] = [
         title: "Draft",
         instructions: [
           "Write the resume in plain structure, one page.",
-          "Use what you did and what happened for each entry.",
+          "Use what you did and what happened for each entry, keeping every count with its period.",
         ],
       },
       {
-        minutes: 25,
+        minutes: 35,
         title: "Map to the matrix",
         instructions: [
           "Check each line against a matrix cell.",
           "Rewrite or remove anything untraceable.",
+          "Revise one line against one requirement from a vacancy you captured, without claiming past the artefact.",
         ],
       },
       {
@@ -1072,7 +1098,7 @@ export const module20: Lesson[] = [
         minutes: 25,
         title: "The challenge pass",
         instructions: [
-          "Ask someone to challenge every line and note what you could not defend.",
+          "Ask someone to challenge every line and note what you could not defend; if nobody is available, put the questions to it a day later and label it self-review.",
           "Rewrite those lines and record what changed.",
         ],
       },
@@ -1081,7 +1107,7 @@ export const module20: Lesson[] = [
       {
         question: "What happens to a line you cannot trace?",
         answer:
-          "It is rewritten to what you can show, or removed. In a first draft this usually accounts for about a third of the lines.",
+          "It is rewritten to what you can show, or removed. On a first draft that is often several lines.",
       },
       {
         question: "Why label the project category?",
@@ -1099,6 +1125,7 @@ export const module20: Lesson[] = [
       "Outcomes are counts or honest absences",
       "Project categories are labelled",
       "The challenge pass was run and recorded",
+      "One line is revised against a captured vacancy",
     ],
     criteria: [
       {
@@ -1117,15 +1144,15 @@ export const module20: Lesson[] = [
       {
         criterion: "Outcomes are counts or honest absences",
         evidence:
-          "Counts where measured, plain statements where not.",
+          "Counts with their period where measured, plain statements where not.",
         levels: [
-          "Improvement language without numbers.",
-          "Some counts, some vague claims.",
-          "Counts or honest absences throughout.",
+          "Improvement language without numbers, or a rate made from small counts.",
+          "Some counts, some vague claims, or counts without their period.",
+          "Counts with their period, or honest absences, throughout, and no causal verb the evidence cannot carry.",
           "As adequate, and one entry states plainly that nothing was measured.",
         ],
         remediation:
-          "Replace every vague improvement with what you actually observed.",
+          "Replace every vague improvement with what was counted, over what period, and by whom.",
         recheck: "The entries.",
       },
       {
@@ -1142,23 +1169,39 @@ export const module20: Lesson[] = [
       },
       {
         criterion: "The challenge pass was run and recorded",
-        evidence: "Someone else's challenge and the resulting changes.",
+        evidence:
+          "A challenge record — someone else's, or a labelled self-review on the solo route — and the resulting changes.",
         levels: [
           "Not run.",
-          "Self-reviewed only.",
-          "Run with someone and changes recorded.",
-          "As adequate, and at least one line was removed as a result.",
+          "Re-read without the challenge questions.",
+          "Run with someone, or on the solo route a dated written self-challenge labelled self-review, with changes recorded.",
+          "As adequate, and every challenged line ends rewritten, removed, or kept with the artefact that answered the challenge.",
         ],
         remediation:
-          "Ask someone to challenge each line and record what you could not defend.",
+          "Ask someone to challenge each line and record what you could not defend; with nobody available, run the written questions a day later and label it.",
         recheck: "The change record.",
+      },
+      {
+        criterion: "One line is revised against a captured vacancy",
+        evidence:
+          "A requirement quoted from your own dated capture, one line before and after, and the artefact behind the after.",
+        levels: [
+          "No revision, or a template line adopted.",
+          "Revised to echo the listing's wording.",
+          "Revised to answer the requirement within what the artefact supports, with units and ownership kept.",
+          "As adequate, and anything the listing asks that you cannot evidence is left unclaimed and noted.",
+        ],
+        remediation:
+          "Pick one requirement from a capture and rewrite one line using only your own artefact.",
+        recheck: "The before and after lines.",
       },
     ],
     repairs: [
       "If a line is untraceable, rewrite it or remove it.",
-      "If outcomes are vague, restore the counts or say nothing was measured.",
+      "If outcomes are vague, restore the counts with their period or say nothing was measured.",
       "If categories are missing, label every entry.",
       "If nobody challenged it, run the pass before sending it anywhere.",
+      "If no line was revised against a capture, revise one now from your own records.",
     ],
     portfolio:
       "The resume and its trace to the matrix are one artefact; keeping them together makes the next revision much faster.",
@@ -1218,7 +1261,7 @@ export const module20: Lesson[] = [
     misconception:
       "“More detail makes a profile more credible.” Specific evidence makes it credible; volume makes it skimmable and generic. Three sentences and a link outperform six paragraphs of adjectives.",
     example:
-      "Four sentences: what she does, the three projects and what each shows, the honest note that the work is self-directed practice built during a structured programme, and a link. Personal data decided in advance: city and a controlled email address; no phone number, no address, no personal details. Participants appear as roles; the shop is described as a small repair business without its name, since the owner agreed to the work being shown but not to being identified. The profile was checked line by line against the resume, and one seniority phrase was removed for inconsistency.",
+      "Made-up example. Four sentences: what she does, the three projects and what each shows, the honest note that the work is self-directed practice built during a structured programme, and a link. Personal data decided in advance: city and a controlled email address; no phone number, no address, no personal details. Participants appear as roles; the shop is described as a small repair business without its name, since the owner agreed to the work being shown but not to being identified. The profile was checked line by line against the resume, and one seniority phrase was removed for inconsistency.",
     freeToolPath:
       "A page on your own portfolio site. If you also use a platform, no paid tier, promotion or profile-review service is required.",
     outputs: [
@@ -1337,7 +1380,7 @@ export const module20: Lesson[] = [
           "Contradictions present.",
           "Broadly consistent, unchecked.",
           "Checked and reconciled.",
-          "As adequate, and a claim was removed for being unsupported in both.",
+          "As adequate, and any claim unsupported in both documents was removed or given its artefact.",
         ],
         remediation: "Read them side by side and correct what disagrees.",
         recheck: "The comparison.",
@@ -1402,12 +1445,12 @@ export const module20: Lesson[] = [
       "Being specific about the transfer is what makes it credible. Graphic design gives typography, hierarchy, colour discipline, working to a brief and finishing things, and it does not give research methods, systems thinking or the practice of testing your own work. Saying both is what distinguishes a serious answer from a pitch.",
       "Ninety seconds, because it is an opener rather than the interview. Practise it to length; the version that runs four minutes crowds out the questions you actually want to be asked.",
       "Never disparage the old field. It reads as disloyalty and as a preview of how you will talk about this employer later, and it is also untrue: the skills are real and you are using them.",
-      "End on what exists. “I have three projects, one with a measured before and after, and a portfolio with the limits written down” is a better closing sentence than any statement of passion, because it invites the next question toward your evidence.",
+      "End on what exists. “I have three projects, one with a measured before and after, and a portfolio with the limits written down” is a better closing sentence than any statement of passion, because it invites the next question toward your evidence. When that question comes, the count travels with its period, its owner and its limit — the owner's tally of eleven progress calls in five working days, then seven in the next five, with a public holiday in the second — never as a rate or a per-day figure.",
     ],
     misconception:
-      "“I need a compelling story.” You need a true one, told briefly. Interviewers hear constructed narratives constantly and discount them; a plain account with specifics stands out precisely because it is unpolished.",
+      "“I need a compelling story.” You need a true one, told briefly. Interviewers often hear constructed narratives and tend to discount them; a plain account with specifics stands out precisely because it is unpolished.",
     example:
-      "Ninety seconds, four beats. What happened: years of producing material that looked right and being unable to tell whether it worked, and a job where the brief was wrong and nobody had asked anyone. What transferred: typography, hierarchy, working to constraints, finishing. What did not: research, systems, testing her own work, which is what the last two years were for. Where that leaves her: three projects, one with a measured before and after, and a portfolio that states what it does not establish. Rehearsed four times, timed at 105, 95, 88 and 90 seconds, with one phrase removed for sounding rehearsed.",
+      "Made-up example. Ninety seconds, four beats. What happened: years of producing material that looked right and being unable to tell whether it worked, and a job where the brief was wrong and nobody had asked anyone. What transferred: typography, hierarchy, working to constraints, finishing. What did not: research, systems, testing her own work, which is what the last two years were for. Where that leaves her: three projects, one with a measured before and after, and a portfolio that states what it does not establish. Rehearsed four times, timed at 105, 95, 88 and 90 seconds, with one phrase removed for sounding rehearsed.",
     freeToolPath: "Writing and speaking aloud, with a timer.",
     outputs: [
       "A written ninety-second account, true in every particular",
@@ -1452,7 +1495,7 @@ export const module20: Lesson[] = [
         minutes: 20,
         title: "Rehearse and check",
         instructions: [
-          "Say it to someone and ask what they heard.",
+          "Say it to someone and ask what they heard; with nobody available, record it, listen back a day later and label it self-review.",
           "Remove anything that sounded rehearsed or overclaimed.",
         ],
       },
@@ -1461,7 +1504,7 @@ export const module20: Lesson[] = [
       {
         question: "Why not shape it into a compelling narrative?",
         answer:
-          "Because interviewers hear constructed stories constantly and discount them. A plain account with specifics is more persuasive.",
+          "Because interviewers often hear constructed stories and tend to discount them. A plain account with specifics is usually more persuasive.",
       },
       {
         question: "Why name what did not transfer?",
@@ -1585,7 +1628,7 @@ export const module20: Lesson[] = [
       "Accept silence; a follow-up is one message, not a campaign.",
     ],
     explanation: [
-      "Specificity is the whole method. A message that names something particular — a decision in their published work, a problem their listing described, a page you actually read — is answered at a rate that generic messages are not, and writing it takes fifteen minutes rather than three.",
+      "Specificity is the whole method. A message that names something particular — a decision in their published work, a problem their listing described, a page you actually read — is more likely to be answered than a generic one, and writing it takes fifteen minutes rather than three.",
       "The structure is short: what you noticed, what you have made that is relevant, and what you are asking for. Two paragraphs. Anything longer is asking a stranger for time before you have given them a reason.",
       "Bulk and automation are excluded here as a matter of practice, not of squeamishness. Mass messages are recognisable, they are frequently a nuisance to the recipient, and they associate your name with that behaviour permanently. This course does not send anything automatically and neither should you.",
       "Ask small. A specific question about their work, or twenty minutes of conversation, is answerable. “Can you refer me” is not, from a stranger, and asking it converts a possible relationship into a closed one.",
@@ -1594,7 +1637,7 @@ export const module20: Lesson[] = [
     misconception:
       "“More messages means more chances.” More messages means a lower quality bar, recognisably generic text, and a name attached to it. Ten written properly beat a hundred sent.",
     example:
-      "Six messages over two weeks, each written from scratch. One named a specific accessibility decision in the company's published design notes and asked a real question about it. One responded to a listing's line about designers running their own research and described the repair-shop project's five sessions in two sentences with a link. Each asked for twenty minutes or an answer to one question. Two replied, one with a conversation and one with a decline. Three did not reply and received one follow-up each after ten days; one of those then replied. Nothing was automated, and no message was reused.",
+      "Made-up example. Six messages over two weeks, each written from scratch. One named a specific accessibility decision in the company's published design notes and asked a real question about it. One responded to a listing's line about designers running their own research and described the repair-shop project's five sessions in two sentences with a link. Each asked for twenty minutes or an answer to one question. Two replied, one with a conversation and one with a decline; one bounced because the address no longer existed; three did not reply and received one follow-up each after ten days, and one of those then replied. That is three replies from six messages, too few to say which wording worked. Nothing was automated, and no message was reused.",
     freeToolPath:
       "Your own email. No outreach tool, sequencing service, contact database or paid platform is required, and none may be used here.",
     outputs: [
@@ -1641,7 +1684,7 @@ export const module20: Lesson[] = [
         title: "Check before sending",
         instructions: [
           "Check every claim in each message against your matrix.",
-          "Send them yourself, one at a time.",
+          "Send any you choose to yourself, one at a time; keeping a draft unsent is a complete outcome here.",
         ],
       },
     ],
@@ -1649,7 +1692,7 @@ export const module20: Lesson[] = [
       {
         question: "Why write each message individually?",
         answer:
-          "Because specificity is what gets answered, and generic messages are recognisable. Fifteen minutes each beats three minutes each at scale.",
+          "Because specific messages are more likely to be answered, and generic ones are recognisable. Fifteen minutes each is better spent than three minutes each at scale.",
       },
       {
         question: "Why ask small?",
@@ -1696,11 +1739,11 @@ export const module20: Lesson[] = [
       },
       {
         criterion: "Automation and bulk sending are excluded by rule",
-        evidence: "A written rule, and messages sent by hand.",
+        evidence: "A written rule, and any messages sent by hand.",
         levels: [
           "Bulk or automated sending used.",
           "Manual but templated.",
-          "Written rule and manual sending.",
+          "Written rule, and any sending done by hand.",
           "As adequate, and no outreach tool or contact database was used.",
         ],
         remediation:
@@ -1779,12 +1822,14 @@ export const module20: Lesson[] = [
       "Behavioural questions want a specific instance, and the reliable shape is the situation, what you did, and what happened. Vague answers about how you generally approach things are the most common failure and the easiest to fix: prepare three real instances and use them.",
       "The follow-up is what tests truth. An invented example survives one question and fails the second, because the details do not exist to be asked about. Every example you prepare should be one you could answer three questions deep.",
       "Include one where you were wrong, because it will be asked and because it is the strongest example you have. The failed repair from m18, the finding you misread, the participant you should have recruited — each has a real ending and shows the calibration the whole interview is testing.",
-      "Practise with someone who interrupts, since real interviews do. The prepared paragraph delivered uninterrupted is not the skill; answering the question actually asked, briefly, is.",
+      "Practise with someone who interrupts, since real interviews do. The prepared paragraph delivered uninterrupted is not the skill; answering the question actually asked, briefly, is. If nobody is available, write eight interruption questions on slips, set a timer to ring at random, and answer the top slip when it rings; label it a solo rehearsal, because it practises recovering from interruption, not reading a real interviewer.",
+      "Numbers get the hardest follow-ups, so prepare them from your records rather than from memory. Keep each count with its period and its owner, keep an estimate apart from a count, and concede the condition you cannot separate before defending the rest. “His tally was eleven calls in five working days, then seven in the next five, with a public holiday in the second” survives three questions; “calls fell from eleven a day to seven” does not survive the first.",
+      "Revise against a real listing rather than a model answer. Take one requirement from a vacancy you captured and rework one of your own examples so it answers that requirement, keeping its counts, its owner and its limits. If none of your examples can answer it, that is the honest finding, and it belongs in your matrix rather than in an improvised story.",
     ],
     misconception:
       "“I should show all three projects to prove range.” You will show one properly or three badly. Range is visible in the portfolio; the conversation is for depth.",
     example:
-      "A ninety-minute practice with someone who had not seen the work. Ten-minute walkthrough of project three, interrupted four times, twice on the measurement and twice on the sample. Three behavioural examples prepared: a disagreement with a reviewer that was resolved by testing rather than argument; a failed repair with what it changed; and a recruitment failure with what was done instead. The interviewer pushed three questions deep on the second, which held because it was real. Two weaknesses noted afterwards: drifting into the interface when asked about a decision, and answering a question about limits by defending the work before conceding.",
+      "Made-up example. A ninety-minute practice with someone who had not seen the work. Ten-minute walkthrough of project three, interrupted four times, twice on the measurement and twice on the sample. Asked what changed, the answer gave the owner's tally — eleven progress calls in five working days before the page, seven in the five after — and said the public holiday in the second period could not be separated from the page. Three behavioural examples prepared: a disagreement with a reviewer that was resolved by testing rather than argument; a failed repair with what it changed; and a recruitment failure with what was done instead. The interviewer pushed three questions deep on the second, which held because it was real. Two weaknesses noted afterwards: drifting into the interface when asked about a decision, and answering a question about limits by defending the work before conceding.",
     freeToolPath:
       "One person and a recorder. No interview-practice platform, coaching subscription or paid mock service is required.",
     outputs: [
@@ -1792,14 +1837,16 @@ export const module20: Lesson[] = [
       "Three real behavioural examples in situation-action-result form",
       "One example where you were wrong",
       "A recording and a note of two weaknesses",
+      "One example revised against a requirement from a vacancy you captured",
     ],
     steps: [
       {
-        minutes: 25,
+        minutes: 30,
         title: "Prepare the examples",
         instructions: [
           "Write three real instances with situation, action and result.",
           "Check each could survive three follow-up questions.",
+          "Revise one so it answers a requirement from a vacancy you captured, keeping its counts, its owner and its limits.",
         ],
       },
       {
@@ -1814,7 +1861,7 @@ export const module20: Lesson[] = [
         minutes: 35,
         title: "Run the practice",
         instructions: [
-          "Ask someone to interrupt and to push follow-ups.",
+          "Ask someone to interrupt and to push follow-ups; with nobody available, use timed interruption slips and label it a solo rehearsal.",
           "Record it.",
         ],
       },
@@ -1857,6 +1904,7 @@ export const module20: Lesson[] = [
       "Three real examples in situation-action-result form",
       "An example where you were wrong, with the change",
       "A recording reviewed with two weaknesses named",
+      "Figures in the story keep their period, owner and limits",
     ],
     criteria: [
       {
@@ -1865,7 +1913,7 @@ export const module20: Lesson[] = [
         levels: [
           "Uninterrupted monologue, or several projects.",
           "One project, few interruptions.",
-          "One project, interrupted and handled.",
+          "One project, interrupted and handled — by a partner, or by timed slips on the labelled solo route.",
           "As adequate, and the answers stayed brief under pressure.",
         ],
         remediation:
@@ -1910,12 +1958,27 @@ export const module20: Lesson[] = [
         remediation: "Watch the recording and write two specific weaknesses.",
         recheck: "The review notes.",
       },
+      {
+        criterion: "Figures in the story keep their period, owner and limits",
+        evidence:
+          "The measurement answer as said in practice: counts with their periods, who counted, and the condition that limits them.",
+        levels: [
+          "A rate, a per-day figure made from a period count, or a causal verb.",
+          "Counts given, with the period or the owner missing.",
+          "Counts with their periods and owner, and the limiting condition conceded.",
+          "As adequate, and any estimate is kept apart from the count it might be confused with.",
+        ],
+        remediation:
+          "Rewrite the measurement answer from your records and say it aloud again.",
+        recheck: "The rewritten answer.",
+      },
     ],
     repairs: [
       "If you covered three projects, redo it with one.",
       "If an example is general, replace it with an instance.",
       "If nothing went wrong in your examples, use the failed repair.",
       "If it was not recorded, run it again and record it.",
+      "If a figure lost its period or owner, rewrite it from your records.",
     ],
     portfolio:
       "The practice recordings are private working material, but the prepared examples are reusable in every conversation that follows.",
@@ -1967,12 +2030,12 @@ export const module20: Lesson[] = [
       "Asking what is being assessed is legitimate and informative. If they are assessing research judgement, the deliverable is different from one assessing interface craft, and an employer who cannot answer has told you something useful about how the work is run.",
       "Declaring the time and the cuts is the strongest part of a submission. “Four hours: I did the structure, the main flow and the error states, and did not do visual polish or a second flow, because the states seemed more likely to be what you are assessing” demonstrates exactly the judgement the exercise is meant to test.",
       "Some take-homes are real work. A brief that asks you to redesign a live feature of their product, produce production-ready screens, or solve a problem their team is currently working on is asking for unpaid labour. Declining that, politely and with a reason, is the correct professional response, and an offer to do a shorter neutral exercise instead is reasonable.",
-      "Live exercises assess reasoning, not output. Think aloud, ask about constraints and users, state your assumptions, and say what you would check. A confident wrong answer scores worse than a well-reasoned uncertain one.",
+      "Live exercises assess reasoning, not output. Think aloud, ask about constraints and users, state your assumptions, and say what you would check. A confident wrong answer usually lands worse than a well-reasoned uncertain one. If nobody can set you a problem, take one of the supplied made-up problems, give yourself forty minutes and record yourself thinking aloud; label it a solo rehearsal.",
     ],
     misconception:
       "“Doing more than asked shows enthusiasm.” It shows you cannot scope, which is a core part of the job. The candidate who fits the time and explains the cuts is the one demonstrating the skill.",
     example:
-      "Two exercises. The first, a four-hour take-home about an onboarding flow, was fixed at four hours: structure, main flow and five error states delivered, visual design and a second flow cut, with a note saying so and why. The second brief asked for three production-ready screens redesigning a live page of the company's product, and was declined in two sentences — the work was theirs to be paid for — with an offer to do a two-hour neutral exercise or to walk through an existing project instead. That offer was accepted. A live exercise was practised twice with someone playing the interviewer, focusing on asking about constraints before drawing anything.",
+      "Made-up example. Two exercises. The first, a four-hour take-home about an onboarding flow, was fixed at four hours: structure, main flow and five error states delivered, visual design and a second flow cut, with a note saying so and why. The second brief asked for three production-ready screens redesigning a live page of the company's product, and was declined in two sentences — the work was theirs to be paid for — with an offer to do a two-hour neutral exercise or to walk through an existing project instead. That offer was accepted. A live exercise was practised twice with someone playing the interviewer, focusing on asking about constraints before drawing anything.",
     freeToolPath:
       "Whatever you already use for design work, plus a timer. No paid tool should be required by a brief; if one is, say so and propose an alternative.",
     outputs: [
@@ -2010,7 +2073,7 @@ export const module20: Lesson[] = [
         minutes: 35,
         title: "Practise a live exercise",
         instructions: [
-          "Have someone give you a problem and forty minutes.",
+          "Have someone give you a problem and forty minutes; solo, take a supplied made-up problem, record yourself and label it a rehearsal.",
           "Ask about constraints first and think aloud throughout.",
         ],
       },
@@ -2037,7 +2100,7 @@ export const module20: Lesson[] = [
       {
         question: "What does a live exercise assess?",
         answer:
-          "Reasoning. Asking about constraints, stating assumptions and saying what you would check scores better than a confident wrong answer.",
+          "Reasoning. Asking about constraints, stating assumptions and saying what you would check usually lands better than a confident wrong answer.",
       },
     ],
     rubric: [
@@ -2087,7 +2150,8 @@ export const module20: Lesson[] = [
       },
       {
         criterion: "Live exercise practice focused on reasoning aloud",
-        evidence: "A practised exercise where constraints were asked first.",
+        evidence:
+          "A practised exercise where constraints were asked first — with a partner, or recorded solo on a supplied problem and labelled a rehearsal.",
         levels: [
           "Not practised.",
           "Practised, drawing first.",
@@ -2154,14 +2218,14 @@ export const module20: Lesson[] = [
     explanation: [
       "The record is a small table and it does more than it looks. What was sent, to whom, on what date, and what came back — that is enough to see which of your messages get answered, which listings never respond, and whether the pattern is changing. Without it, months of effort become an undifferentiated feeling.",
       "Cadence should be sustainable. Two carefully written applications a week, held for three months, produces more than fifteen in one week followed by nothing. Decide the number, put it in the record, and treat exceeding it as a warning rather than as progress.",
-      "The vacancy evidence expires. Your captures were current in one window and mostly will not exist in a month, so a search running past that needs a fresh pass, which is quicker the second time. Anything you concluded from the old sample carries its date whenever you use it.",
-      "Monthly review against the matrix is what keeps the search connected to reality: which cells changed, which absences still block, and whether the gap you closed made a difference to what came back. The alternative is reviewing against how you feel, which after eight weeks of silence is not an instrument you should trust.",
+      "The vacancy evidence expires. Your captures were current in one window and mostly will not exist in a month, so a search running past that needs a fresh pass, which is quicker the second time. Re-capture the three fit fields too, because an employer's eligibility, location or hours can change between postings. Anything you concluded from the old sample carries its date whenever you use it.",
+      "Monthly review against the matrix is what keeps the search connected to reality: which cells changed, which absences still block, and whether replies changed after the gap you closed. With a handful of applications, a change in replies is a reason to look closer, not proof that the gap caused it. The alternative is reviewing against how you feel, which after eight weeks of silence is not an instrument you should trust.",
       "Write the standing rules now, while nothing is at stake: no fabricated experience, no inflated role, no automated outreach, no unpaid production work, no claim you cannot evidence, and a rest day. Under pressure these decisions get made badly, and a rule written in advance is what you fall back on.",
     ],
     misconception:
       "“I should apply to everything and see what sticks.” Volume without records teaches you nothing and burns the effort you will need in month three. A held cadence with a record improves; a spray does not.",
     example:
-      "The record is one table: date, employer, role, route, what was sent, response and date of response. Cadence: two applications and one outreach message a week, one rest day, reviewed on the first of each month. The vacancy pass is repeated every six weeks, taking about two hours the second time. The monthly review asks three questions: which matrix cells changed, which absence appears most often in refusals, and what the response pattern suggests about the messages rather than about her. Standing rules written and kept visible, including that nothing is automated and no unpaid production work is done.",
+      "Made-up example. The record is one table: date, employer, role, the role's eligibility, work location and hours, route, what was sent, response and date of response. Cadence: two applications and one outreach message a week, one rest day, reviewed on the first of each month. The vacancy pass is repeated every six weeks, taking about two hours the second time. The monthly review asks three questions: which matrix cells changed, which absence appears most often in refusals, and what the response pattern suggests about the messages rather than about her. Standing rules written and kept visible, including that nothing is automated and no unpaid production work is done.",
     freeToolPath:
       "A spreadsheet or text table and a calendar reminder. No applicant tracker, subscription or premium job-board tier is required.",
     outputs: [
@@ -2175,7 +2239,7 @@ export const module20: Lesson[] = [
         minutes: 20,
         title: "Build the record",
         instructions: [
-          "Create the table with date, employer, route, sent and response.",
+          "Create the table with date, employer, the role's eligibility, location and hours, route, sent and response.",
           "Add everything you have already sent.",
         ],
       },
