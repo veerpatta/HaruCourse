@@ -395,6 +395,7 @@ export const guided20: Record<string, Guided> = {
       { id: 'counts', title: 'Counts, not percentages', fields: [
         { id: 'counts-written', label: 'Each requirement as a count out of your sample', kind: 'long', example: 'Example (made up): eleven of fourteen ask for a portfolio; nine ask for case studies showing process; six state a years minimum, from two to five.' },
         { id: 'sample-window', label: 'Your sample size and the window, written beside the counts', kind: 'short' },
+        { id: 'fit-counts', label: 'Eligibility, work location and hours, each counted separately out of your sample', kind: 'long', hint: 'Each set should add up to your sample size, silences included. Remote is a location count, not an eligibility count.', example: 'Example (made up): eligibility — two can employ people based in India, one UK right to work only, eleven not stated; location — six remote, five hybrid, three on-site; hours — four stated, ten not stated.' },
       ] },
       { id: 'contradictions', title: 'Keep the contradictions', fields: [
         { id: 'contradictions-kept', label: 'Requirements the listings disagree about, recorded as disagreements', kind: 'long', example: 'Example (made up): three expect the designer to run research; two say research is handled by a research team.' },
@@ -415,8 +416,8 @@ export const guided20: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'Each requirement written as a count out of your sample, with the size and window beside it.',
-        fields: ['counts-written', 'sample-window'],
+      { expect: 'Each requirement as a count out of your sample, the three fit fields counted separately, with the size and window beside them.',
+        fields: ['counts-written', 'sample-window', 'fit-counts'],
         terms: [
           { term: 'A count out of a sample', meaning: 'Nine of fourteen. It carries its own denominator, so nobody can mistake it for a rate across an industry.' },
           { term: 'Why not percentages', meaning: 'Sixty-four per cent of fourteen implies a sample nobody had. Module 15 made the same point about three participants.' },
@@ -517,8 +518,8 @@ export const guided20: Record<string, Guided> = {
             { id: 'remote-india-hard', text: '“Remote roles rarely consider candidates in India.”', answer: 'an inference — move it',
               feedback: {
                 'reportable as written': 'Rarely is a rate across a population you did not sample.',
-                'a market claim — rewrite as a count': 'The nearest count is two of fourteen state India eligibility and nine state nothing, which does not support rarely either way.',
-                'an inference — move it': 'Silence is not refusal. This is your reading of nine silences, and it belongs where a reader can see whose reading it is.',
+                'a market claim — rewrite as a count': 'The nearest counts are six remote listings, and two of fourteen saying they can employ people based in India with eleven saying nothing. Neither supports rarely, and remote is a different field from eligibility.',
+                'an inference — move it': 'Silence is not refusal. This is your reading of eleven silences, and it belongs where a reader can see whose reading it is.',
               } },
           ],
           then: 'Now search your own writing for the market, employers want and any per cent sign.',
@@ -529,11 +530,11 @@ export const guided20: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'You write that seventy-nine per cent of listings require a portfolio. Eleven of fourteen did. Is the percentage fine?',
+        question: 'You write that seventy-nine per cent of listings require a portfolio. Eleven of your fourteen did. What should the sentence say?',
         options: [
-          { label: 'No. It removes the denominator, so it reads as a property of the hiring market rather than of your fourteen listings.', correct: true, feedback: 'Seventy-nine per cent of what? The honest answer — fourteen listings, public boards, eleven days — undoes the sentence. Eleven of fourteen carries its own answer.' },
-          { label: 'It is fine with the sample size stated nearby.', feedback: 'Nearby is not in the sentence, and the sentence is what gets quoted.' },
-          { label: 'It is fine since the arithmetic is right.', feedback: 'The arithmetic is right and the implication is not.' },
+          { label: 'Eleven of the fourteen I captured, with the dates, so the denominator travels with the claim.', correct: true, feedback: 'Seventy-nine per cent of what? The honest answer — fourteen listings, public boards, eleven days — undoes the sentence. Eleven of fourteen carries its own answer.', was: ['No. It removes the denominator, so it reads as a property of the hiring market rather than of your fourteen listings.'] },
+          { label: 'Seventy-nine per cent, with a footnote giving the sample size and the dates of the window.', feedback: 'A footnote is not in the sentence, and the sentence is what gets quoted.', was: ['It is fine with the sample size stated nearby.'] },
+          { label: 'Seventy-nine per cent, since eleven divided by fourteen is 0.786 and rounding it is honest arithmetic.', feedback: 'The arithmetic is right and the implication is not: a percentage reads as a property of the hiring market rather than of your fourteen listings.', was: ['It is fine since the arithmetic is right.'] },
         ],
         repair: 'Rewrite every finding in step 1 as a count with its window in the same sentence. Record the change in step 5.',
         recheck: 'No finding in your writing is a percentage.',
@@ -541,24 +542,33 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Three listings want the designer to run research; two say a research team does it. What do you write?',
         options: [
-          { label: 'Both, as a disagreement, because it means these are two different jobs with one title.', correct: true, feedback: 'Some research involvement describes no job. Keeping the split gives you two applications: interviews and synthesis for one group, a decision record using somebody else’s findings for the other.' },
-          { label: 'That employers generally expect some research involvement.', feedback: 'A sentence both groups squeeze into and neither wants, describing a job nobody advertised.' },
-          { label: 'The majority position, since three is more than two.', feedback: 'Three against two in fourteen settles nothing, and the minority is a real kind of job.' },
+          { label: 'Both, kept as a disagreement: they describe two different jobs that share one title.', correct: true, feedback: 'Some research involvement describes no job. Keeping the split gives you two applications: interviews and synthesis for one group, a decision record using somebody else’s findings for the other.', was: ['Both, as a disagreement, because it means these are two different jobs with one title.'] },
+          { label: 'That employers generally expect some research involvement, which covers all five listings.', feedback: 'A sentence both groups squeeze into and neither wants, describing a job nobody advertised.', was: ['That employers generally expect some research involvement.'] },
+          { label: 'The majority position, three to two, with the minority mentioned as an exception.', feedback: 'Three against two in fourteen settles nothing, and the minority is a real kind of job rather than an exception.', was: ['The majority position, since three is more than two.'] },
         ],
         repair: 'Record the disagreement and what it tells you in step 2. Note the change in step 5.',
         recheck: 'At least one disagreement is kept rather than averaged.',
       },
       {
-        question: 'Nine of your listings said nothing about eligibility. Can you write that remote roles rarely consider candidates in India?',
+        question: 'Six of your fourteen listings are remote. Two say they can employ people based in India; eleven say nothing about who they can hire. Can you write that remote roles rarely consider candidates in India?',
         options: [
-          { label: 'No. Silence is not refusal, and rarely is a rate across a population you did not sample.', correct: true, feedback: 'The nearest count — two state eligibility, nine state nothing — supports neither direction. If you believe it, it goes in the inference list marked as yours.' },
-          { label: 'Yes, since only two stated it explicitly.', feedback: 'Two stating it and nine saying nothing is not evidence that the nine would refuse.' },
-          { label: 'Yes, if you say it is your impression.', feedback: 'Closer, and the place for it is the inference list rather than a sentence among the findings.' },
+          { label: 'Remote is about where the work happens and silence is not refusal, so neither supports rarely.', correct: true, feedback: 'If you believe it, it goes in the inference list marked as yours. The counts — six remote, two stating India, eleven silent — describe your fourteen and point in no direction about remote roles in general.', was: ['No. Silence is not refusal, and rarely is a rate across a population you did not sample.'] },
+          { label: 'Only two of the fourteen stated India explicitly, so rarely is a fair summary of this sample.', feedback: 'Two stating it and eleven saying nothing is not evidence that the eleven would refuse, and remote is a separate field.', was: ['Yes, since only two stated it explicitly.'] },
+          { label: 'As your own impression, placed among the findings with the two counts in the next sentence.', feedback: 'Closer, and the place for an impression is the inference list rather than a sentence among the findings.', was: ['Yes, if you say it is your impression.'] },
         ],
         repair: 'Move it to the inference list in step 3, marked as yours. Note the change in step 5.',
         recheck: 'Every line in the stated list could be quoted from a capture.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: A friend copied twenty reviews of a local gym from the gym’s own website over one week. Fifteen mention friendly staff, six complain about crowding at 7 p.m., and two say the showers were cold. She wants to post: “Seventy-five per cent of members love the staff, and evenings are always overcrowded.”',
+      prompt: 'Decide how she should rewrite that sentence so it stays true to her twenty reviews, and explain what it cannot claim.',
+      anchors: {
+        weak: 'Keeps the percentage or “always”, or treats twenty reviews as describing all members.',
+        adequate: 'Rewrites as counts with the sample and window — fifteen of twenty reviews on the gym’s own site that week mention friendly staff; six mention crowding at 7 p.m. — and drops “members love” and “always”.',
+        strong: 'Adequate, plus names who the sample misses (reviews the gym chose to show, people who never write reviews) and that it dates, and keeps any “members feel” reading in a separate list marked as her inference.',
+      },
+    },
     saveRoute: {
       auto: 'Your counts, contradictions, inference list, limits and sweep save as you type, on this device first and then online.',
       external: 'The captures stay in your own folder. Nothing here is published, and the comparison is for your own preparation.',
@@ -588,6 +598,9 @@ export const guided20: Record<string, Guided> = {
       { id: 'against', title: 'Read it against one listing', fields: [
         { id: 'listing-check', label: 'One captured listing, read requirement by requirement against your matrix', kind: 'long' },
         { id: 'today-evidenced', label: 'What you could evidence today, and what you could not', kind: 'long' },
+        { id: 'fit-eligibility', label: 'For that listing, country eligibility: their words about who they can hire and from where, and whether that includes you', kind: 'long', hint: 'If the listing is silent, write not stated and turn it into a question to ask, not a yes or a no.' },
+        { id: 'fit-location', label: 'For that listing, work location: remote, or the city and office days, and whether you can work there', kind: 'short' },
+        { id: 'fit-hours', label: 'For that listing, working hours: their required hours or overlap, the same hours in IST, and whether you can keep them', kind: 'long', example: 'Example (made up): four hours’ overlap with Central European Time; in winter CET 9:00–17:00 is 13:30–21:30 IST, so a 10:00–19:00 IST day overlaps from 13:30 to 19:00.' },
         improvementMade,
       ] },
     ],
@@ -638,7 +651,7 @@ export const guided20: Record<string, Guided> = {
             { id: 'shipped-production', text: 'Shipping to production, where nothing has been deployed to real users by an organisation.', answer: 'absent',
               feedback: {
                 evidenced: 'Nothing has shipped.',
-                partial: 'Partial implies some of it exists. A prototype used by one shop owner is a different row.',
+                partial: 'Partial implies some of it exists. A demonstration page shown to one shop owner is a different row.',
                 absent: 'Information rather than a verdict, and it is the row to rank against how often it appeared in your sample.',
               } },
             { id: 'constraints-memory', text: 'Working with constraints, which was true of all three projects and appears in one decision record and nowhere else.', answer: 'partial',
@@ -653,10 +666,10 @@ export const guided20: Record<string, Guided> = {
                 partial: 'Tempting, and the row asks what you can show somebody who wants to see the tool used.',
                 absent: 'Absent with a note that the course exists. A certificate beside an empty cell is the exact thing the next lesson is about.',
               } },
-            { id: 'team-engineers', text: 'Working in a team with engineers, where all three projects were done alone and one had a friend build the working version at weekends.', answer: 'absent',
+            { id: 'team-engineers', text: 'Working in a team with engineers, where all three projects were done alone and a friend who writes software reviewed one project’s HTML and fixed a date bug.', answer: 'absent',
               feedback: {
-                evidenced: 'One person building something for you at weekends is not working in a team.',
-                partial: 'The handover to that friend is adjacent evidence worth naming, and the row itself is empty.',
+                evidenced: 'One person reviewing your code once is not working in a team.',
+                partial: 'The review is adjacent evidence worth naming, credited by role, and the row itself is empty.',
                 absent: 'Almost certainly your top-ranked absence, and it is the one that cannot be closed alone.',
               } },
           ],
@@ -678,7 +691,7 @@ export const guided20: Record<string, Guided> = {
             { label: 'What I argued to myself', text: 'That one real measurement with matched periods is more than most junior applicants hold, so the row should be evidenced.' },
             { label: 'What was true in that', text: 'All of it. It is a good measurement, carefully done, and the argument is not dishonest.' },
             { label: 'What upgrading cost', text: 'The reason disappeared. Partial with one project measured, two not tells me what to do next; evidenced tells me nothing and will not survive being asked about the other two.' },
-            { label: 'What I wrote instead', text: 'Partial: measured once, with matched five-day periods and a public holiday confound recorded. Not measured in the other two projects.' },
+            { label: 'What I wrote instead', text: 'Partial: measured once — after the shop changed its job slips, the owner’s tally went from eleven progress-chasing calls over five working days to seven over the next five, one uncontrolled comparison. Not measured in the other two projects.' },
           ],
           wrongTurn: 'The wrong turn is upgrading a partial because it compares well to other people, which is a different question from what the cell asks. The reason written beside a partial is the part you actually use.',
           tradeoff: 'A matrix with fewer evidenced rows is less encouraging to look at on a bad day.',
@@ -694,23 +707,35 @@ export const guided20: Record<string, Guided> = {
         ],
         start: 'Count the listings mentioning each absence and order by the count.',
         enough: 'The ranking carries its sample and window with it.' },
-      { expect: 'One captured listing read against the matrix, with what you could evidence today.',
-        fields: ['listing-check', 'today-evidenced', 'improvement-made'],
+      { expect: 'One captured listing read against the matrix: what you could evidence today, and fit checked separately for eligibility, location and hours.',
+        fields: ['listing-check', 'today-evidenced', 'fit-eligibility', 'fit-location', 'fit-hours', 'improvement-made'],
         terms: [
           { term: 'Reading against one listing', meaning: 'The matrix in use. It turns twenty-one abstract rows into a specific answer about one job.' },
           { term: 'Today', meaning: 'What you could show this afternoon. Not what you could prepare, learn or explain.' },
+          { term: 'Three fit lines', meaning: 'Can they hire you where you are; can you work where the work happens; can you keep the hours in IST. Remote answers only the second.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
+        supported: {
+          material: 'A made-up captured listing, dated as an illustration only: “Product Designer. Fully remote. We can employ people based in India through our local entity. Core collaboration hours 9:00–13:00 US Eastern.” You live in Pune and work 10:00–19:00 IST. US Eastern time is 10½ hours behind IST in the US winter and 9½ hours behind in its summer; India does not change its clocks.',
+          question: 'Which fit reading keeps the three constraints apart?',
+          options: [
+            { label: 'Eligibility and location fit; the hours do not, since their core hours fall almost wholly after your day.', correct: true, feedback: 'Three separate answers. Their words settle eligibility and remote settles location. 9:00–13:00 Eastern is 19:30–23:30 IST in the US winter and 18:30–22:30 in its summer, so the hours are the open question: worth asking whether they flex, not assuming.' },
+            { label: 'A good fit overall: remote and open to India, so the hours can be worked out after an offer arrives.', feedback: 'The hours are a stated requirement, not a detail for later. Four evening hours every working day is a real condition to decide on before applying.' },
+            { label: 'Not a real fit: a company with US core hours will not genuinely hire from India, whatever it says.', feedback: 'The listing states eligibility in its own words. Replacing them with your judgement about US companies is an inference in a field meant for theirs.' },
+            { label: 'A fit on all three: fully remote work means you can choose your own hours wherever you live.', feedback: 'Remote describes where the work happens. The listing states the hours separately, and they are fixed.' },
+          ],
+          then: 'Now write your own three fit lines for the listing you chose, converting any hours to IST with the date.',
+        },
         start: 'Pick a listing you would actually apply to and go requirement by requirement.',
-        enough: 'You can say which of its requirements you could evidence this afternoon.' },
+        enough: 'You can say which requirements you could evidence today, and each fit line quotes the listing or says not stated.' },
     ],
     checks: [
       {
         question: 'You can definitely work with constraints — all three projects had them. Does the row get marked evidenced?',
         options: [
-          { label: 'Only if you can name a file. Constraints get worked around rather than written down, so the doing often leaves no trace.', correct: true, feedback: 'Six of sixteen evidenced marks lost their file in one pass. Capability and evidence are different columns, and the matrix asks about the second.' },
-          { label: 'Yes, since it is true of every project.', feedback: 'True and unshowable is exactly what partial is for.' },
-          { label: 'Yes, because an interviewer will ask about it rather than read a file.', feedback: 'They will ask, and the answer is much better when a decision record sits behind it.' },
+          { label: 'Only if you can name the file that shows it; otherwise it is partial, with that reason written.', correct: true, feedback: 'Constraints get worked around rather than written down, so the doing often leaves no trace. In one pass, six of sixteen evidenced marks lost their file; capability and evidence are different columns.', was: ['Only if you can name a file. Constraints get worked around rather than written down, so the doing often leaves no trace.'] },
+          { label: 'Evidenced, since it is true of every project and you could describe each constraint in detail.', feedback: 'True and unshowable is exactly what partial is for; describing it is a memory, not an artefact.', was: ['Yes, since it is true of every project.'] },
+          { label: 'Evidenced, because an interviewer will ask you about it rather than open a file to check.', feedback: 'They will ask, and the answer is much stronger when a decision record sits behind it.', was: ['Yes, because an interviewer will ask about it rather than read a file.'] },
         ],
         repair: 'Put a file name beside every evidenced mark in step 2 and downgrade the ones with none. Record the change in step 5.',
         recheck: 'No evidenced mark is missing a file name.',
@@ -718,24 +743,33 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Your matrix has a lot of empty cells. Does that mean you are not ready?',
         options: [
-          { label: 'It means you can name which cells are empty. Everybody’s matrix has them; most people cannot say which.', correct: true, feedback: 'Absence is information rather than a verdict. Ranked by how often each appeared in your sample, the empty cells become a plan.' },
-          { label: 'It means there is more to do before applying.', feedback: 'There always is, and waiting for a full matrix has its own cost. The next lesson closes one.' },
-          { label: 'It depends on how many are empty.', feedback: 'It depends far more on which, and on how often those appeared in your listings.' },
+          { label: 'It means you can name your gaps, which is what lets you prepare for them and apply honestly.', correct: true, feedback: 'Absence is information rather than a verdict. Most people’s matrices have empty cells and few can say which; ranked by how often each appeared in your sample, yours become a plan.', was: ['It means you can name which cells are empty. Everybody’s matrix has them; most people cannot say which.'] },
+          { label: 'It means there is more to close before applying, starting with the absences that appeared most often.', feedback: 'There always is more, and waiting for a full matrix has its own cost. The next lesson closes one gap; the rest can be named honestly.', was: ['It means there is more to do before applying.'] },
+          { label: 'It depends on how many cells are empty compared with how many are marked evidenced.', feedback: 'It depends far more on which cells, and on how often those appeared in your listings.', was: ['It depends on how many are empty.'] },
         ],
         repair: 'Rank the absences by frequency in step 4 and attach the sample caveat. Record the change in step 5.',
         recheck: 'The ranking carries its sample and window with it.',
       },
       {
-        question: 'One project has a careful before-and-after measurement; two have nothing. Evidenced or partial?',
+        question: 'One project has a careful before-and-after count — eleven progress-chasing calls over five working days, then seven over the next five; two projects have nothing. Evidenced or partial?',
         options: [
-          { label: 'Partial, with the reason: measured once, with the conditions, and not measured in the other two.', correct: true, feedback: 'The reason is the part you use. Evidenced tells you nothing and does not survive being asked about the other two projects.' },
-          { label: 'Evidenced, since one careful measurement is more than most people hold.', feedback: 'Comparing to other applicants answers a different question from the one the cell asks.' },
-          { label: 'Evidenced, with a footnote about the other two.', feedback: 'That is a partial with its reason, marked a level up.' },
+          { label: 'Partial, with the reason beside it: measured once, with its conditions, not in the other two.', correct: true, feedback: 'The reason is the part you use. Evidenced tells you nothing and does not survive being asked about the other two projects.', was: ['Partial, with the reason: measured once, with the conditions, and not measured in the other two.'] },
+          { label: 'Evidenced, since one careful measurement over matched periods is more than most junior applicants hold.', feedback: 'Comparing yourself with other applicants answers a different question from the one the cell asks.', was: ['Evidenced, since one careful measurement is more than most people hold.'] },
+          { label: 'Evidenced, with a footnote saying the other two projects were never measured at all.', feedback: 'That is a partial with its reason, marked a level up.', was: ['Evidenced, with a footnote about the other two.'] },
         ],
         repair: 'Write what is missing beside every partial in step 3 rather than how close it is. Record the change in step 5.',
         recheck: 'Every partial says what would make it evidenced.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: A city museum’s listing for weekend volunteer guides asks for confident public speaking, knowledge of local history, experience guiding groups of twenty or more, and two Saturdays a month. Priya has given three talks at her book club (notes and the club’s emailed thanks kept), has read widely on local history but written nothing, has never guided a group, and is free most Saturdays.',
+      prompt: 'Mark each requirement evidenced, partial or absent, and decide which gap to work on first. Explain each mark by what she could point at.',
+      anchors: {
+        weak: 'Marks local history evidenced because she knows a lot, or marks group guiding partial because she has given talks.',
+        adequate: 'Public speaking evidenced (talk notes, emailed thanks); local history partial (knowledge, no artefact); group guiding absent; Saturdays answered as a fit question rather than as evidence.',
+        strong: 'Adequate, plus ranks the gaps with a closable first step, such as writing a short walking route to turn local history into an artefact, and notes the club’s thanks shows the talks happened, not how good they were.',
+      },
+    },
     saveRoute: {
       auto: 'Your rows, marks, partial reasons and ranking save as you type, on this device first and then online.',
       external: 'The matrix is a working document for the months after this course, so keep a copy in your own folder too.',
