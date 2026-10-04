@@ -319,7 +319,7 @@ export const guided13: Record<string, Guided> = {
         },
         start: 'For each group, find a real misuse on your screens, in your step 5 check or in the supplied material, and use that as the do-not.',
         enough: 'Every do-not is a real misuse with its source named; a group with none says so.' },
-      { expect: 'One built screen checked value by value, with every value in use that the foundations do not permit.',
+      { expect: 'One screen (a drawing, a built page or the supplied component) checked value by value, with every value the foundations do not permit.',
         fields: ['screen-checked', 'not-permitted', 'improvement-made'],
         terms: [
           { term: 'Value in use but not permitted', meaning: 'Something on a real screen that the foundations do not allow. Either the foundations are wrong or the screen is, and both are useful findings.' },
